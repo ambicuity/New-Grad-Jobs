@@ -1,0 +1,98 @@
+# Configuration for New Grad Jobs Aggregator
+
+# Job filtering settings
+filters:
+  # Maximum age of job postings in days
+  max_age_days: 7
+  
+  # New grad signals to look for in job titles (case insensitive)
+  new_grad_signals:
+    - "new grad"
+    - "new graduate" 
+    - "entry level"
+    - "entry-level"
+    - "graduate"
+    - "junior"
+    - "associate"
+    - "trainee"
+    - "campus"
+    - "recent graduate"
+    - "fresh graduate"
+    
+  # Track signals to look for in job titles/descriptions (case insensitive)
+  track_signals:
+    - "software"
+    - "engineer"
+    - "developer"
+    - "programming"
+    - "data"
+    - "data science"
+    - "data scientist"
+    - "data engineer"
+    - "data analyst"
+    - "machine learning"
+    - "ml"
+    - "ai"
+    - "artificial intelligence"
+    - "network"
+    - "network engineer"
+    - "infrastructure"
+    - "sre"
+    - "site reliability"
+    - "site reliability engineer"
+    - "devops"
+    - "platform"
+    - "cloud"
+    - "backend"
+    - "frontend"
+    - "full stack"
+    - "fullstack"
+
+# API endpoints and company configurations
+apis:
+  greenhouse:
+    # Greenhouse job board API endpoints for major tech companies
+    companies:
+      - name: "Airbnb"
+        url: "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs"
+      - name: "Stripe"
+        url: "https://boards-api.greenhouse.io/v1/boards/stripe/jobs"
+      - name: "Uber"
+        url: "https://boards-api.greenhouse.io/v1/boards/uber/jobs"
+      - name: "Lyft"
+        url: "https://boards-api.greenhouse.io/v1/boards/lyft/jobs"
+      - name: "DoorDash"
+        url: "https://boards-api.greenhouse.io/v1/boards/doordash/jobs"
+      - name: "Robinhood"
+        url: "https://boards-api.greenhouse.io/v1/boards/robinhood/jobs"
+      - name: "Square"
+        url: "https://boards-api.greenhouse.io/v1/boards/square/jobs"
+      - name: "Coinbase"
+        url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
+      - name: "Palantir"
+        url: "https://boards-api.greenhouse.io/v1/boards/palantir/jobs"
+        
+  lever:
+    # Lever job board API endpoints for major tech companies  
+    companies:
+      - name: "Netflix"
+        url: "https://api.lever.co/v0/postings/netflix"
+      - name: "Coursera"
+        url: "https://api.lever.co/v0/postings/coursera"
+      - name: "Twitch"
+        url: "https://api.lever.co/v0/postings/twitch"
+      - name: "Grammarly"
+        url: "https://api.lever.co/v0/postings/grammarly"
+      - name: "Figma"
+        url: "https://api.lever.co/v0/postings/figma"
+
+# README generation settings
+readme:
+  title: "🎓 New Grad Jobs"
+  subtitle: "Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles"
+  table_headers:
+    - "Company"
+    - "Role"
+    - "Location" 
+    - "Posted"
+    - "Apply"
