@@ -9,6 +9,7 @@ import yaml
 import json
 import re
 import sys
+import time
 from datetime import datetime, timedelta
 from dateutil import parser as date_parser
 from typing import List, Dict, Any
@@ -24,49 +25,111 @@ def load_config() -> Dict[str, Any]:
         print(f"Error loading config: {e}")
         sys.exit(1)
 
-def fetch_greenhouse_jobs(company_name: str, url: str) -> List[Dict[str, Any]]:
-    """Fetch jobs from Greenhouse API"""
+def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
-    try:
-        print(f"Fetching jobs from {company_name} (Greenhouse)...")
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        
-        for job in data.get('jobs', []):
-            jobs.append({
-                'company': company_name,
-                'title': job.get('title', ''),
-                'location': job.get('location', {}).get('name', 'Remote'),
-                'url': job.get('absolute_url', ''),
-                'posted_at': job.get('updated_at') or job.get('created_at'),
-                'source': 'Greenhouse'
-            })
-    except Exception as e:
-        print(f"Error fetching from {company_name}: {e}")
+    for attempt in range(max_retries + 1):
+        try:
+            if attempt > 0:
+                print(f"  🔄 Retry {attempt} for {company_name}...")
+                time.sleep(1)  # Wait before retry
+            
+            print(f"Fetching jobs from {company_name} (Greenhouse)...")
+            response = requests.get(url, timeout=15)
+            response.raise_for_status()
+            data = response.json()
+            
+            if not isinstance(data, dict) or 'jobs' not in data:
+                print(f"  ⚠️  {company_name}: Unexpected API response format")
+                continue
+            
+            for job in data.get('jobs', []):
+                jobs.append({
+                    'company': company_name,
+                    'title': job.get('title', ''),
+                    'location': job.get('location', {}).get('name', 'Remote'),
+                    'url': job.get('absolute_url', ''),
+                    'posted_at': job.get('updated_at') or job.get('created_at'),
+                    'source': 'Greenhouse'
+                })
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            break  # Success, exit retry loop
+            
+        except requests.exceptions.Timeout:
+            if attempt < max_retries:
+                print(f"  ⏱️  {company_name} request timed out, retrying...")
+                continue
+            else:
+                print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+        except requests.exceptions.RequestException as e:
+            if "404" in str(e):
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                break  # Don't retry 404s
+            elif attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
     
     return jobs
 
-def fetch_lever_jobs(company_name: str, url: str) -> List[Dict[str, Any]]:
-    """Fetch jobs from Lever API"""
+def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Lever API with retry logic"""
     jobs = []
-    try:
-        print(f"Fetching jobs from {company_name} (Lever)...")
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        
-        for job in data:
-            jobs.append({
-                'company': company_name,
-                'title': job.get('text', ''),
-                'location': job.get('categories', {}).get('location', 'Remote'),
-                'url': job.get('hostedUrl', ''),
-                'posted_at': job.get('createdAt'),
-                'source': 'Lever'
-            })
-    except Exception as e:
-        print(f"Error fetching from {company_name}: {e}")
+    for attempt in range(max_retries + 1):
+        try:
+            if attempt > 0:
+                print(f"  🔄 Retry {attempt} for {company_name}...")
+                time.sleep(1)  # Wait before retry
+            
+            print(f"Fetching jobs from {company_name} (Lever)...")
+            response = requests.get(url, timeout=15)
+            response.raise_for_status()
+            data = response.json()
+            
+            if not isinstance(data, list):
+                print(f"  ⚠️  {company_name}: Unexpected API response format")
+                continue
+            
+            for job in data:
+                jobs.append({
+                    'company': company_name,
+                    'title': job.get('text', ''),
+                    'location': job.get('categories', {}).get('location', 'Remote'),
+                    'url': job.get('hostedUrl', ''),
+                    'posted_at': job.get('createdAt'),
+                    'source': 'Lever'
+                })
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            break  # Success, exit retry loop
+            
+        except requests.exceptions.Timeout:
+            if attempt < max_retries:
+                print(f"  ⏱️  {company_name} request timed out, retrying...")
+                continue
+            else:
+                print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+        except requests.exceptions.RequestException as e:
+            if "404" in str(e):
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                break  # Don't retry 404s
+            elif attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
     
     return jobs
 

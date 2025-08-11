@@ -53,38 +53,77 @@ apis:
   greenhouse:
     # Greenhouse job board API endpoints for major tech companies
     companies:
+      # Original working companies
       - name: "Airbnb"
         url: "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs"
       - name: "Stripe"
         url: "https://boards-api.greenhouse.io/v1/boards/stripe/jobs"
-      - name: "Uber"
-        url: "https://boards-api.greenhouse.io/v1/boards/uber/jobs"
       - name: "Lyft"
         url: "https://boards-api.greenhouse.io/v1/boards/lyft/jobs"
-      - name: "DoorDash"
-        url: "https://boards-api.greenhouse.io/v1/boards/doordash/jobs"
       - name: "Robinhood"
         url: "https://boards-api.greenhouse.io/v1/boards/robinhood/jobs"
-      - name: "Square"
-        url: "https://boards-api.greenhouse.io/v1/boards/square/jobs"
       - name: "Coinbase"
         url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
-      - name: "Palantir"
-        url: "https://boards-api.greenhouse.io/v1/boards/palantir/jobs"
+      - name: "Block (Square)"
+        url: "https://boards-api.greenhouse.io/v1/boards/block/jobs"
+      
+      # Additional working companies discovered
+      - name: "Dropbox"
+        url: "https://boards-api.greenhouse.io/v1/boards/dropbox/jobs"
+      - name: "Twilio"
+        url: "https://boards-api.greenhouse.io/v1/boards/twilio/jobs"
+      - name: "Discord"
+        url: "https://boards-api.greenhouse.io/v1/boards/discord/jobs"
+      - name: "Reddit"
+        url: "https://boards-api.greenhouse.io/v1/boards/reddit/jobs"
+      - name: "Pinterest"
+        url: "https://boards-api.greenhouse.io/v1/boards/pinterest/jobs"
+      - name: "LinkedIn"
+        url: "https://boards-api.greenhouse.io/v1/boards/linkedin/jobs"
+      - name: "GitLab"
+        url: "https://boards-api.greenhouse.io/v1/boards/gitlab/jobs"
+      - name: "Databricks"
+        url: "https://boards-api.greenhouse.io/v1/boards/databricks/jobs"
+      - name: "MongoDB"
+        url: "https://boards-api.greenhouse.io/v1/boards/mongodb/jobs"
+      - name: "Elastic"
+        url: "https://boards-api.greenhouse.io/v1/boards/elastic/jobs"
+      - name: "HashiCorp"
+        url: "https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs"
+        
+      # Even more companies discovered in second round
+      - name: "Asana"
+        url: "https://boards-api.greenhouse.io/v1/boards/asana/jobs"
+      - name: "Okta"
+        url: "https://boards-api.greenhouse.io/v1/boards/okta/jobs"
+      - name: "Datadog"
+        url: "https://boards-api.greenhouse.io/v1/boards/datadog/jobs"
+      - name: "New Relic"
+        url: "https://boards-api.greenhouse.io/v1/boards/newrelic/jobs"
+      - name: "Fastly"
+        url: "https://boards-api.greenhouse.io/v1/boards/fastly/jobs"
+      - name: "Cloudflare"
+        url: "https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs"
+      - name: "Amplitude"
+        url: "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs"
+      - name: "Mixpanel"
+        url: "https://boards-api.greenhouse.io/v1/boards/mixpanel/jobs"
+      - name: "LaunchDarkly"
+        url: "https://boards-api.greenhouse.io/v1/boards/launchdarkly/jobs"
+      - name: "PagerDuty"
+        url: "https://boards-api.greenhouse.io/v1/boards/pagerduty/jobs"
+      - name: "Postman"
+        url: "https://boards-api.greenhouse.io/v1/boards/postman/jobs"
+      - name: "Vercel"
+        url: "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
         
   lever:
     # Lever job board API endpoints for major tech companies  
     companies:
       - name: "Netflix"
         url: "https://api.lever.co/v0/postings/netflix"
-      - name: "Coursera"
-        url: "https://api.lever.co/v0/postings/coursera"
-      - name: "Twitch"
-        url: "https://api.lever.co/v0/postings/twitch"
-      - name: "Grammarly"
-        url: "https://api.lever.co/v0/postings/grammarly"
-      - name: "Figma"
-        url: "https://api.lever.co/v0/postings/figma"
+      # Note: Coursera, Twitch, Grammarly, Figma no longer available on Lever
+      # Removed broken endpoints to prevent 404 errors
 
 # README generation settings
 readme:
