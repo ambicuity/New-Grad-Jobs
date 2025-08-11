@@ -133,6 +133,80 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
     
     return jobs
 
+def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Google Careers API with retry logic"""
+    all_jobs = []
+    
+    for search_term in search_terms:
+        jobs = []
+        for attempt in range(max_retries + 1):
+            try:
+                if attempt > 0:
+                    print(f"  🔄 Retry {attempt} for Google search '{search_term}'...")
+                    time.sleep(1)  # Wait before retry
+                
+                print(f"Searching Google careers for '{search_term}'...")
+                # Build the search URL with USA location filter
+                search_query = search_term.replace(' ', '%20')
+                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
+                
+                response = requests.get(url, timeout=15)
+                response.raise_for_status()
+                data = response.json()
+                
+                if not isinstance(data, dict) or 'jobs' not in data:
+                    print(f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
+                    continue
+                
+                for job in data.get('jobs', []):
+                    # Extract location information from Google's format
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':  # Only USA locations
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
+                    
+                    if not location_names:  # Skip jobs without USA locations
+                        continue
+                    
+                    location_str = '; '.join(location_names)
+                    
+                    jobs.append({
+                        'company': 'Google',
+                        'title': job.get('title', ''),
+                        'location': location_str,
+                        'url': job.get('apply_url', ''),
+                        'posted_at': job.get('created') or job.get('publish_date'),
+                        'source': 'Google Careers'
+                    })
+                
+                print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
+                all_jobs.extend(jobs)
+                break  # Success, exit retry loop
+                
+            except requests.exceptions.Timeout:
+                if attempt < max_retries:
+                    print(f"  ⏱️  Google search '{search_term}' timed out, retrying...")
+                    continue
+                else:
+                    print(f"  ❌ Google search '{search_term}' timed out after {max_retries + 1} attempts")
+            except requests.exceptions.RequestException as e:
+                if attempt < max_retries:
+                    print(f"  ⚠️  Request error for Google search '{search_term}': {e}, retrying...")
+                    continue
+                else:
+                    print(f"  ❌ Request error for Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+            except Exception as e:
+                if attempt < max_retries:
+                    print(f"  ⚠️  Error fetching Google search '{search_term}': {e}, retrying...")
+                    continue
+                else:
+                    print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+    
+    return all_jobs
+
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains new grad signals"""
     title_lower = title.lower()
@@ -149,7 +223,12 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         return False
     
     try:
-        posted_date = date_parser.parse(posted_at)
+        # Handle timestamp integers (from Lever API)
+        if isinstance(posted_at, (int, float)):
+            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+        else:
+            posted_date = date_parser.parse(posted_at)
+        
         # Remove timezone info for comparison
         posted_date = posted_date.replace(tzinfo=None)
         cutoff_date = datetime.now() - timedelta(days=max_age_days)
@@ -326,7 +405,12 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
 def format_posted_date(posted_at: str) -> str:
     """Format posted date for display"""
     try:
-        posted_date = date_parser.parse(posted_at)
+        # Handle timestamp integers (from Lever API)
+        if isinstance(posted_at, (int, float)):
+            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+        else:
+            posted_date = date_parser.parse(posted_at)
+            
         now = datetime.now()
         diff = now - posted_date.replace(tzinfo=None)
         
@@ -346,7 +430,19 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     readme_config = config['readme']
     
     # Sort jobs by posted date (most recent first)
-    jobs.sort(key=lambda x: date_parser.parse(x['posted_at']) if x['posted_at'] else datetime.min, reverse=True)
+    def get_sort_date(job):
+        posted_at = job['posted_at']
+        if not posted_at:
+            return datetime.min
+        try:
+            if isinstance(posted_at, (int, float)):
+                return datetime.fromtimestamp(posted_at / 1000)
+            else:
+                return date_parser.parse(posted_at)
+        except:
+            return datetime.min
+    
+    jobs.sort(key=get_sort_date, reverse=True)
     
     readme_content = f"""# {readme_config['title']}
 
@@ -399,12 +495,14 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Track Focus:** Software, Data Science/Engineering, Machine Learning, Network Engineering, Site Reliability Engineering (SRE), DevOps
 - **Recency:** Jobs posted within the last {config['filters']['max_age_days']} days
 - **Location:** USA-based positions only
-- **Sources:** Greenhouse and Lever job boards
+- **Sources:** Greenhouse, Lever, and Google Careers job boards
 
 ### Companies Monitored
 **Greenhouse:** {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
 
 **Lever:** {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
+
+**Google Careers:** Direct API searches for new graduate positions
 
 ---
 
@@ -432,6 +530,11 @@ def main():
     for company in config['apis']['lever']['companies']:
         jobs = fetch_lever_jobs(company['name'], company['url'])
         all_jobs.extend(jobs)
+    
+    # Fetch from Google Careers
+    if 'google' in config['apis'] and 'search_terms' in config['apis']['google']:
+        google_jobs = fetch_google_jobs(config['apis']['google']['search_terms'])
+        all_jobs.extend(google_jobs)
     
     print(f"Total jobs fetched: {len(all_jobs)}")
     

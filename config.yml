@@ -117,13 +117,71 @@ apis:
       - name: "Vercel"
         url: "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
         
+      # Third round: Major tech and startup companies
+      - name: "Figma"
+        url: "https://boards-api.greenhouse.io/v1/boards/figma/jobs"
+      - name: "Airtable"
+        url: "https://boards-api.greenhouse.io/v1/boards/airtable/jobs"
+      - name: "Instacart"
+        url: "https://boards-api.greenhouse.io/v1/boards/instacart/jobs"
+      - name: "Roblox"
+        url: "https://boards-api.greenhouse.io/v1/boards/roblox/jobs"
+      - name: "SpaceX"
+        url: "https://boards-api.greenhouse.io/v1/boards/spacex/jobs"
+      - name: "Anthropic"
+        url: "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs"
+      - name: "Nuro"
+        url: "https://boards-api.greenhouse.io/v1/boards/nuro/jobs"
+      - name: "Waymo"
+        url: "https://boards-api.greenhouse.io/v1/boards/waymo/jobs"
+      - name: "Gemini"
+        url: "https://boards-api.greenhouse.io/v1/boards/gemini/jobs"
+        
+      # Fourth round: Fintech companies
+      - name: "Brex"
+        url: "https://boards-api.greenhouse.io/v1/boards/brex/jobs"
+      - name: "Chime"
+        url: "https://boards-api.greenhouse.io/v1/boards/chime/jobs"
+      - name: "Ripple"
+        url: "https://boards-api.greenhouse.io/v1/boards/ripple/jobs"
+      - name: "Upstart"
+        url: "https://boards-api.greenhouse.io/v1/boards/upstart/jobs"
+      - name: "Affirm"
+        url: "https://boards-api.greenhouse.io/v1/boards/affirm/jobs"
+      - name: "Betterment"
+        url: "https://boards-api.greenhouse.io/v1/boards/betterment/jobs"
+      - name: "SoFi"
+        url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
+      - name: "Twitch"
+        url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
+        
   lever:
     # Lever job board API endpoints for major tech companies  
     companies:
       - name: "Netflix"
         url: "https://api.lever.co/v0/postings/netflix"
+      - name: "Spotify"
+        url: "https://api.lever.co/v0/postings/spotify"
+      - name: "Palantir"
+        url: "https://api.lever.co/v0/postings/palantir"
+      - name: "Plaid"
+        url: "https://api.lever.co/v0/postings/plaid"
+      - name: "Atlassian"
+        url: "https://api.lever.co/v0/postings/atlassian"
       # Note: Coursera, Twitch, Grammarly, Figma no longer available on Lever
       # Removed broken endpoints to prevent 404 errors
+
+  google:
+    # Google careers API - searches for new grad positions
+    search_terms:
+      - "new graduate software engineer"
+      - "entry level software engineer" 
+      - "junior software engineer"
+      - "associate software engineer"
+      - "campus graduate engineer"
+      - "new grad data scientist"
+      - "entry level data engineer"
+      - "junior data scientist"
 
 # README generation settings
 readme:
