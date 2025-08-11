@@ -158,6 +158,141 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         print(f"Error parsing date {posted_at}: {e}")
         return False
 
+def is_usa_location(location: str) -> bool:
+    """Check if job location is in the USA"""
+    if not location:
+        return False
+    
+    location_lower = location.lower().strip()
+    
+    # Handle explicit non-USA indicators
+    non_usa_indicators = [
+        'uk', 'united kingdom', 'england', 'london', 'manchester', 'edinburgh',
+        'canada', 'toronto', 'vancouver', 'montreal', 'ottawa',
+        'mexico', 'mexico city',
+        'japan', 'tokyo', 'osaka',
+        'germany', 'berlin', 'munich',
+        'france', 'paris',
+        'netherlands', 'amsterdam',
+        'ireland', 'dublin',
+        'israel', 'tel aviv',
+        'australia', 'sydney', 'melbourne',
+        'india', 'bangalore', 'mumbai', 'hyderabad', 'chennai', 'delhi',
+        'singapore',
+        'china', 'beijing', 'shanghai',
+        'sweden', 'stockholm',
+        'denmark', 'copenhagen',
+        'norway', 'oslo',
+        'finland', 'helsinki',
+        'switzerland', 'zurich',
+        'spain', 'madrid', 'barcelona',
+        'italy', 'milan', 'rome',
+        'belgium', 'brussels',
+        'austria', 'vienna',
+        'poland', 'warsaw',
+        'czech republic', 'prague',
+        'hungary', 'budapest',
+        'romania', 'bucharest',
+        'bulgaria', 'sofia',
+        'greece', 'athens',
+        'portugal', 'lisbon',
+        'brazil', 'sao paulo', 'rio de janeiro',
+        'argentina', 'buenos aires',
+        'chile', 'santiago',
+        'colombia', 'bogota',
+        'peru', 'lima',
+        'luxembourg', 'luxembourg city'
+    ]
+    
+    # Check for non-USA indicators
+    for indicator in non_usa_indicators:
+        if indicator in location_lower:
+            return False
+    
+    # USA state abbreviations and names
+    usa_states = [
+        'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
+        'california', 'ca', 'colorado', 'co', 'connecticut', 'ct', 
+        'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
+        'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
+        'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
+        'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi', 
+        'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
+        'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
+        'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
+        'north carolina', 'nc', 'north dakota', 'nd', 'ohio', 'oh',
+        'oklahoma', 'ok', 'oregon', 'or', 'pennsylvania', 'pa',
+        'rhode island', 'ri', 'south carolina', 'sc', 'south dakota', 'sd',
+        'tennessee', 'tn', 'texas', 'tx', 'utah', 'ut', 'vermont', 'vt',
+        'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
+        'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
+    ]
+    
+    # USA cities (major ones)
+    usa_cities = [
+        'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
+        'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
+        'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
+        'seattle', 'denver', 'washington', 'boston', 'el paso', 'nashville',
+        'detroit', 'oklahoma city', 'portland', 'las vegas', 'memphis',
+        'louisville', 'baltimore', 'milwaukee', 'albuquerque', 'tucson',
+        'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'long beach',
+        'colorado springs', 'raleigh', 'miami', 'virginia beach', 'omaha',
+        'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans',
+        'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu',
+        'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton',
+        'henderson', 'saint paul', 'st. paul', 'cincinnati', 'pittsburgh',
+        'greensboro', 'anchorage', 'plano', 'lincoln', 'orlando', 'irvine',
+        'newark', 'durham', 'chula vista', 'toledo', 'fort wayne', 'st. petersburg',
+        'laredo', 'jersey city', 'chandler', 'madison', 'lubbock', 'scottsdale',
+        'reno', 'buffalo', 'gilbert', 'glendale', 'north las vegas', 'winston-salem',
+        'chesapeake', 'norfolk', 'fremont', 'garland', 'irving', 'hialeah',
+        'richmond', 'boise', 'spokane', 'baton rouge', 'tacoma', 'san bernardino',
+        'modesto', 'fontana', 'des moines', 'moreno valley', 'santa clarita',
+        'fayetteville', 'birmingham', 'oxnard', 'rochester', 'port st. lucie',
+        'grand rapids', 'huntsville', 'salt lake city', 'grand prairie',
+        'mckinney', 'montgomery', 'akron', 'little rock', 'augusta', 'shreveport',
+        'mobile', 'worcester', 'knoxville', 'newport news', 'chattanooga',
+        'providence', 'fort lauderdale', 'elk grove', 'ontario', 'salem',
+        'santa rosa', 'dayton', 'eugene', 'palmdale', 'salinas', 'springfield',
+        'pasadena', 'rockford', 'pomona', 'corona', 'paterson', 'overland park',
+        'sioux falls', 'alexandria', 'hayward', 'murfreesboro', 'pearland',
+        'hartford', 'fargo', 'sunnyvale', 'escondido', 'lakewood', 'hollywood',
+        'torrance', 'bridgeport', 'orange', 'garden grove', 'oceanside',
+        'jackson', 'fort collins', 'rancho cucamonga', 'cape coral', 'santa maria',
+        'vancouver', 'sioux city', 'springfield', 'peoria', 'pembroke pines',
+        'elk grove', 'lancaster', 'corona', 'eugene', 'palmdale', 'salinas',
+        'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
+        'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland'
+    ]
+    
+    # Check for explicit USA indicators
+    usa_indicators = [
+        'united states', 'usa', 'us', 'america', 'remote - usa', 'remote usa',
+        'usa remote', 'us remote', 'remote - us'
+    ]
+    
+    for indicator in usa_indicators:
+        if indicator in location_lower:
+            return True
+    
+    # Check for USA states
+    for state in usa_states:
+        if state in location_lower:
+            return True
+    
+    # Check for USA cities
+    for city in usa_cities:
+        if city in location_lower:
+            return True
+    
+    # Handle "Remote" locations without explicit country - treat as potentially USA
+    if location_lower in ['remote', 'anywhere']:
+        return True
+    
+    # If we can't determine, default to False to be safe
+    return False
+
 def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Filter jobs based on configuration criteria"""
     filtered_jobs = []
@@ -165,6 +300,7 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
     
     for job in jobs:
         title = job.get('title', '')
+        location = job.get('location', '')
         posted_at = job.get('posted_at', '')
         
         # Check for new grad signals
@@ -177,6 +313,10 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
             
         # Check if job is recent enough
         if not is_recent_job(posted_at, filters['max_age_days']):
+            continue
+        
+        # Check if job location is in USA
+        if not is_usa_location(location):
             continue
             
         filtered_jobs.append(job)
@@ -258,6 +398,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **New Grad Signals:** new grad, new graduate, entry-level, graduate, junior, associate, trainee, campus, recent graduate
 - **Track Focus:** Software, Data Science/Engineering, Machine Learning, Network Engineering, Site Reliability Engineering (SRE), DevOps
 - **Recency:** Jobs posted within the last {config['filters']['max_age_days']} days
+- **Location:** USA-based positions only
 - **Sources:** Greenhouse and Lever job boards
 
 ### Companies Monitored
