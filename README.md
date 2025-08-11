@@ -43,4 +43,13 @@ This repository automatically scrapes new graduate job opportunities from variou
 
 ---
 
+## Contributors
+
+**2**
+
+- **@ambicuity** - Ritesh Rana
+- **@Copilot** - Copilot
+
+---
+
 *This list is automatically updated every 5 minutes. Star ⭐ this repo to stay updated!*
