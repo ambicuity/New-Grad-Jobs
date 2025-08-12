@@ -29,6 +29,19 @@ filters:
     - "graduate program"
     - "new college grad"
     - "campus hire"
+    - "university hire"
+    - "college hire"
+    - "college graduate"
+    - "university graduate"
+    - "recent grad"
+    - "Level I"
+    - "Level 1"
+    - "Engineer I"
+    - "Engineer 1"
+    - "Software Engineer I"
+    - "Software Engineer 1"
+    - "Developer I"
+    - "Developer 1"
     
   # Track signals to look for in job titles/descriptions (case insensitive)
   track_signals:
@@ -171,6 +184,34 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Retool"
         url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
+      
+      # Newly discovered companies
+      - name: "Roku"
+        url: "https://boards-api.greenhouse.io/v1/boards/roku/jobs"
+      - name: "Grammarly"
+        url: "https://boards-api.greenhouse.io/v1/boards/grammarly/jobs"
+      - name: "Mercury"
+        url: "https://boards-api.greenhouse.io/v1/boards/mercury/jobs"
+      - name: "Pendo"
+        url: "https://boards-api.greenhouse.io/v1/boards/pendo/jobs"
+      - name: "Lattice"
+        url: "https://boards-api.greenhouse.io/v1/boards/lattice/jobs"
+      - name: "Gusto"
+        url: "https://boards-api.greenhouse.io/v1/boards/gusto/jobs"
+      - name: "Webflow"
+        url: "https://boards-api.greenhouse.io/v1/boards/webflow/jobs"
+      - name: "Benchling"
+        url: "https://boards-api.greenhouse.io/v1/boards/benchling/jobs"
+        
+      # Additional round of companies
+      - name: "Checkr"
+        url: "https://boards-api.greenhouse.io/v1/boards/checkr/jobs"
+      - name: "Carta"
+        url: "https://boards-api.greenhouse.io/v1/boards/carta/jobs"
+      - name: "Faire"
+        url: "https://boards-api.greenhouse.io/v1/boards/faire/jobs"
+      - name: "Codecademy"
+        url: "https://boards-api.greenhouse.io/v1/boards/codecademy/jobs"
         
   lever:
     # Lever job board API endpoints for major tech companies  
@@ -191,14 +232,23 @@ apis:
   google:
     # Google careers API - searches for new grad positions
     search_terms:
-      - "new graduate software engineer"
-      - "entry level software engineer" 
-      - "junior software engineer"
-      - "associate software engineer"
-      - "campus graduate engineer"
-      - "new grad data scientist"
-      - "entry level data engineer"
-      - "junior data scientist"
+      - "\"new grad\" software engineer"
+      - "\"new graduate\" software engineer"
+      - "\"entry level\" software engineer" 
+      - "\"junior\" software engineer"
+      - "\"associate\" software engineer"
+      - "\"early career\" software engineer"
+      - "\"campus\" software engineer"
+      - "\"new grad\" data scientist"
+      - "\"new graduate\" data scientist"
+      - "\"entry level\" data engineer"
+      - "\"junior\" data scientist"
+      - "\"new grad\" backend engineer"
+      - "\"new grad\" frontend engineer"
+      - "\"new grad\" full stack engineer"
+      - "\"new grad\" machine learning"
+      - "\"new grad\" ML engineer"
+      - "\"university graduate\" software"
 
 # README generation settings
 readme:

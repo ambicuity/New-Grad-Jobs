@@ -389,6 +389,18 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         location = job.get('location', '')
         posted_at = job.get('posted_at', '')
         
+        title_lower = title.lower()
+        
+        # Exclude senior/principal/staff level positions regardless of other criteria
+        # Be very strict about excluding non-entry level positions
+        if any(exclusion in title_lower for exclusion in [
+            "senior", "sr.", "principal", "staff", "lead", "director", "manager", "head",
+            " ii ", " iii ", " iv ", " v ", " vi ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ",
+            "level 2", "level 3", "level 4", "level 5", "level ii", "level iii",
+            "engineer ii", "engineer iii", "engineer iv", "engineer 2", "engineer 3", "engineer 4"
+        ]):
+            continue
+        
         # Check for new grad signals
         if not has_new_grad_signal(title, filters['new_grad_signals']):
             continue
