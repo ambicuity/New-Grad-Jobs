@@ -165,24 +165,12 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
       - name: "Twitch"
         url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
-      
-      # Additional companies from reference repo
-      - name: "Meta"
-        url: "https://boards-api.greenhouse.io/v1/boards/meta/jobs"  
-      - name: "Apple"
-        url: "https://boards-api.greenhouse.io/v1/boards/apple/jobs"
-      - name: "Microsoft"
-        url: "https://boards-api.greenhouse.io/v1/boards/microsoft/jobs"
-      - name: "Amazon"
-        url: "https://boards-api.greenhouse.io/v1/boards/amazon/jobs"
-      - name: "Tesla"
-        url: "https://boards-api.greenhouse.io/v1/boards/tesla/jobs"
-      - name: "Uber"
-        url: "https://boards-api.greenhouse.io/v1/boards/uber/jobs"
-      - name: "ByteDance"
-        url: "https://boards-api.greenhouse.io/v1/boards/bytedance/jobs"
-      - name: "TikTok"
-        url: "https://boards-api.greenhouse.io/v1/boards/tiktok/jobs"
+        
+      # Additional working companies
+      - name: "Scale AI"  
+        url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
+      - name: "Retool"
+        url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
         
   lever:
     # Lever job board API endpoints for major tech companies  
@@ -198,7 +186,7 @@ apis:
       - name: "Atlassian"
         url: "https://api.lever.co/v0/postings/atlassian"
       # Note: Coursera, Twitch, Grammarly, Figma no longer available on Lever
-      # Removed broken endpoints to prevent 404 errors
+      # Many other companies have moved away from Lever API
 
   google:
     # Google careers API - searches for new grad positions
