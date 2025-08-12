@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-12 16:56:38 UTC
+🔄 **Last updated:** 2025-08-12 17:24:10 UTC
 
 📊 **Total jobs found:** 31
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
+| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
@@ -26,8 +28,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
-| Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 2025-07-31 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
-| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-07-31 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-07-22 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 2025-07-21 | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
