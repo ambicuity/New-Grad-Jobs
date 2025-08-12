@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-12 14:32:58 UTC
+🔄 **Last updated:** 2025-08-12 14:35:01 UTC
 
 📊 **Total jobs found:** 31
 
@@ -58,9 +58,9 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Sources:** Greenhouse, Lever, and Google Careers job boards
 
 ### Companies Monitored
-**Greenhouse:** Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Anduril, OpenAI, Scale AI, Sentry, Retool
+**Greenhouse:** Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool
 
-**Lever:** Netflix, Spotify, Palantir, Plaid, Atlassian, Canva, Notion, Scale AI, Benchling
+**Lever:** Netflix, Spotify, Palantir, Plaid, Atlassian
 
 **Google Careers:** Direct API searches for new graduate positions
 
