@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-12 23:35:03 UTC
+🔄 **Last updated:** 2025-08-12 23:48:03 UTC
 
-📊 **Total jobs found:** 33
+📊 **Total jobs found:** 32
 
 ---
 
@@ -44,7 +44,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
-| Palantir | Forward Deployed Software Engineer, New Grad - Commercial | New York, NY | 2025-06-13 | [Apply](https://jobs.lever.co/palantir/2e6b0ac8-83e9-4be5-a3aa-cf319f751728) |
 
 ---
 
