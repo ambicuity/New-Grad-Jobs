@@ -200,6 +200,56 @@ apis:
       - "entry level data engineer"
       - "junior data scientist"
 
+  # JobSpy - Open source Python library for scraping major job sites
+  jobspy:
+    enabled: true
+    sites:
+      - "indeed" 
+    search_terms:
+      - "new graduate software engineer"
+      - "entry level software engineer"
+    location: "United States"
+    results_wanted: 25
+    hours_old: 168  # Only jobs posted in last week (7 days)
+    
+  # Third-party job scraping APIs (configuration ready for future implementation)
+  scraper_apis:
+    # ScraperAPI - Handles proxy rotation, CAPTCHA solving, JS rendering
+    scraper_api:
+      enabled: false
+      api_key: "${SCRAPER_API_KEY}"  # Set via environment variable
+      endpoints:
+        - "indeed.com"
+        - "linkedin.com/jobs"
+        - "glassdoor.com"
+    
+    # SerpApi - Google Jobs API alternative
+    serp_api:
+      enabled: false
+      api_key: "${SERP_API_KEY}"  # Set via environment variable
+      search_engine: "google_jobs"
+      location: "United States"
+      
+    # Zyte (Scrapinghub) - Enterprise job scraping service
+    zyte:
+      enabled: false
+      api_key: "${ZYTE_API_KEY}"  # Set via environment variable
+      project_id: "${ZYTE_PROJECT_ID}"
+      
+    # Bright Data - Proxy network and job scraper API  
+    bright_data:
+      enabled: false
+      username: "${BRIGHT_DATA_USERNAME}"
+      password: "${BRIGHT_DATA_PASSWORD}"
+      endpoint: "brd-customer-hl_username-zone-jobs"
+      
+    # ScrapingBee - General web scraping API with AI extraction
+    scraping_bee:
+      enabled: false
+      api_key: "${SCRAPING_BEE_API_KEY}"
+      render_js: true
+      premium_proxy: true
+
 # README generation settings
 readme:
   title: "🎓 New Grad Jobs"

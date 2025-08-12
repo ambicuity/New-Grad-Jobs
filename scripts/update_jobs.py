@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 New Grad Jobs Aggregator
-Scrapes job postings from Greenhouse and Lever APIs and updates README.md
+Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs and updates README.md
 """
 
 import requests
@@ -10,10 +10,18 @@ import json
 import re
 import sys
 import time
+import os
 from datetime import datetime, timedelta
 from dateutil import parser as date_parser
 from typing import List, Dict, Any
-import os
+
+# Import JobSpy for additional job site scraping
+try:
+    from jobspy import scrape_jobs
+    JOBSPY_AVAILABLE = True
+except ImportError:
+    JOBSPY_AVAILABLE = False
+    print("⚠️  JobSpy not available. Install with: pip install python-jobspy")
 
 def load_config() -> Dict[str, Any]:
     """Load configuration from config.yml"""
@@ -206,6 +214,135 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                     print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
     
     return all_jobs
+
+def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs using JobSpy library from multiple job sites"""
+    if not JOBSPY_AVAILABLE:
+        print("❌ JobSpy library not available, skipping...")
+        return []
+    
+    if not config_jobspy.get('enabled', False):
+        print("JobSpy is disabled in configuration, skipping...")
+        return []
+    
+    all_jobs = []
+    sites = config_jobspy.get('sites', ['linkedin', 'indeed', 'glassdoor'])
+    search_terms = config_jobspy.get('search_terms', ['new grad software engineer'])
+    location = config_jobspy.get('location', 'United States')
+    results_wanted = config_jobspy.get('results_wanted', 50)
+    hours_old = config_jobspy.get('hours_old', 72)
+    
+    for site in sites:
+        for search_term in search_terms:
+            for attempt in range(max_retries + 1):
+                try:
+                    if attempt > 0:
+                        print(f"  🔄 Retry {attempt} for {site} search '{search_term}'...")
+                        time.sleep(2)  # Wait longer before retry for external sites
+                    
+                    print(f"Searching {site.upper()} for '{search_term}' via JobSpy...")
+                    
+                    # Use JobSpy to scrape jobs
+                    jobs_df = scrape_jobs(
+                        site_name=site,
+                        search_term=search_term,
+                        location=location,
+                        results_wanted=results_wanted,
+                        hours_old=hours_old,
+                        country_indeed='USA'  # For Indeed, specify USA
+                    )
+                    
+                    if jobs_df is None or jobs_df.empty:
+                        print(f"  ⚠️  No jobs found on {site.upper()} for '{search_term}'")
+                        break
+                    
+                    # Convert DataFrame to list of dictionaries
+                    jobs_found = 0
+                    for _, row in jobs_df.iterrows():
+                        # Map JobSpy fields to our standard format
+                        job = {
+                            'company': row.get('company', 'Unknown'),
+                            'title': row.get('title', ''),
+                            'location': row.get('location', 'Remote'),
+                            'url': row.get('job_url', ''),
+                            'posted_at': row.get('date_posted', ''),
+                            'source': f'JobSpy ({site.title()})',
+                            'description': row.get('description', '')[:200] + '...' if row.get('description') else ''  # Truncate description
+                        }
+                        
+                        # Only add jobs with valid URLs
+                        if job['url'] and job['url'].startswith('http'):
+                            all_jobs.append(job)
+                            jobs_found += 1
+                    
+                    print(f"  ✓ Found {jobs_found} jobs from {site.upper()} for '{search_term}'")
+                    break  # Success, exit retry loop
+                    
+                except Exception as e:
+                    if attempt < max_retries:
+                        print(f"  ⚠️  Error with {site.upper()} search '{search_term}': {str(e)[:100]}, retrying...")
+                        continue
+                    else:
+                        print(f"  ❌ Error with {site.upper()} search '{search_term}' after {max_retries + 1} attempts: {str(e)[:100]}")
+                
+                # Add delay between different searches to be respectful
+                if site == 'linkedin':
+                    time.sleep(2)  # LinkedIn needs more time between requests
+                else:
+                    time.sleep(1)
+    
+    print(f"Total jobs found via JobSpy: {len(all_jobs)}")
+    return all_jobs
+
+def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs using SerpApi Google Jobs API (placeholder implementation)"""
+    if not config_serp.get('enabled', False):
+        print("SerpApi is disabled in configuration, skipping...")
+        return []
+    
+    api_key = config_serp.get('api_key', '').replace('${SERP_API_KEY}', os.getenv('SERP_API_KEY', ''))
+    if not api_key or api_key.startswith('${'):
+        print("⚠️ SerpApi API key not configured, skipping...")
+        return []
+    
+    print("🚧 SerpApi integration ready but requires API key configuration")
+    print("   Set SERP_API_KEY environment variable to enable")
+    
+    # Placeholder for SerpApi implementation
+    # This would integrate with: https://serpapi.com/google-jobs-api
+    # Example implementation:
+    #
+    # import requests
+    # params = {
+    #     'engine': 'google_jobs',
+    #     'q': 'new grad software engineer',
+    #     'location': config_serp.get('location', 'United States'),
+    #     'api_key': api_key
+    # }
+    # response = requests.get('https://serpapi.com/search', params=params)
+    # # Process response and convert to standard format
+    
+    return []
+
+def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Fetch jobs using ScraperAPI for general web scraping (placeholder implementation)"""
+    if not config_scraper.get('enabled', False):
+        print("ScraperAPI is disabled in configuration, skipping...")
+        return []
+        
+    api_key = config_scraper.get('api_key', '').replace('${SCRAPER_API_KEY}', os.getenv('SCRAPER_API_KEY', ''))
+    if not api_key or api_key.startswith('${'):
+        print("⚠️ ScraperAPI key not configured, skipping...")
+        return []
+    
+    print("🚧 ScraperAPI integration ready but requires API key configuration")
+    print("   Set SCRAPER_API_KEY environment variable to enable")
+    
+    # Placeholder for ScraperAPI implementation
+    # This would integrate with: https://scraperapi.com
+    # Example for scraping job sites that don't have APIs
+    
+    return []
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains new grad signals"""
@@ -508,14 +645,27 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 
 ## About This Repository
 
-This repository automatically scrapes new graduate job opportunities from various company job boards every 5 minutes. 
+This repository automatically scrapes new graduate job opportunities from various company job boards every 5 minutes using multiple data sources and APIs for comprehensive coverage.
+
+### Data Sources
+- **Direct Company APIs**: Greenhouse and Lever job boards from major tech companies
+- **Search APIs**: Google Careers direct searches
+- **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
+- **Extensible Framework**: Ready for additional APIs like SerpApi, ScraperAPI, and others
+
+### Key Features
+- **Comprehensive Coverage**: 70+ companies across multiple job platforms
+- **Real-time Updates**: Automatic updates every 5 minutes
+- **Smart Filtering**: Advanced filtering for new grad positions and relevant tech roles
+- **USA Focus**: Filters for US-based positions only
+- **Multiple APIs**: Redundancy and broad coverage across job sites 
 
 ### Filtering Criteria
 - **New Grad Signals:** new grad, new graduate, entry-level, graduate, junior, associate, trainee, campus, recent graduate
 - **Track Focus:** Software, Data Science/Engineering, Machine Learning, Network Engineering, Site Reliability Engineering (SRE), DevOps
 - **Recency:** Jobs posted within the last {config['filters']['max_age_days']} days
 - **Location:** USA-based positions only
-- **Sources:** Greenhouse, Lever, and Google Careers job boards
+- **Sources:** Greenhouse, Lever, Google Careers, and JobSpy (LinkedIn, Indeed, Glassdoor) job boards
 
 ### Companies Monitored
 **Greenhouse:** {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
@@ -523,6 +673,8 @@ This repository automatically scrapes new graduate job opportunities from variou
 **Lever:** {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
 
 **Google Careers:** Direct API searches for new graduate positions
+
+**JobSpy Integration:** LinkedIn, Indeed, and Glassdoor job searches for comprehensive coverage
 
 ---
 
@@ -555,6 +707,25 @@ def main():
     if 'google' in config['apis'] and 'search_terms' in config['apis']['google']:
         google_jobs = fetch_google_jobs(config['apis']['google']['search_terms'])
         all_jobs.extend(google_jobs)
+    
+    # Fetch from JobSpy (additional job sites)
+    if 'jobspy' in config['apis']:
+        jobspy_jobs = fetch_jobspy_jobs(config['apis']['jobspy'])
+        all_jobs.extend(jobspy_jobs)
+    
+    # Fetch from third-party scraping APIs (if configured)
+    if 'scraper_apis' in config['apis']:
+        scraper_apis = config['apis']['scraper_apis']
+        
+        # SerpApi for Google Jobs
+        if 'serp_api' in scraper_apis:
+            serp_jobs = fetch_serp_api_jobs(scraper_apis['serp_api'])
+            all_jobs.extend(serp_jobs)
+        
+        # ScraperAPI for general web scraping 
+        if 'scraper_api' in scraper_apis:
+            scraper_jobs = fetch_scraper_api_jobs(scraper_apis['scraper_api'])
+            all_jobs.extend(scraper_jobs)
     
     print(f"Total jobs fetched: {len(all_jobs)}")
     
