@@ -2,8 +2,8 @@
 
 # Job filtering settings
 filters:
-  # Maximum age of job postings in days
-  max_age_days: 7
+  # Maximum age of job postings in days  
+  max_age_days: 60
   
   # New grad signals to look for in job titles (case insensitive)
   new_grad_signals:
@@ -18,6 +18,17 @@ filters:
     - "campus"
     - "recent graduate"
     - "fresh graduate"
+    - "2024 start"
+    - "2025 start"
+    - "2026 start"
+    - "university grad"
+    - "college grad"
+    - "early career"
+    - "intern conversion"
+    - "rotational program"
+    - "graduate program"
+    - "new college grad"
+    - "campus hire"
     
   # Track signals to look for in job titles/descriptions (case insensitive)
   track_signals:
@@ -154,6 +165,24 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
       - name: "Twitch"
         url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
+      
+      # Additional companies from reference repo
+      - name: "Meta"
+        url: "https://boards-api.greenhouse.io/v1/boards/meta/jobs"  
+      - name: "Apple"
+        url: "https://boards-api.greenhouse.io/v1/boards/apple/jobs"
+      - name: "Microsoft"
+        url: "https://boards-api.greenhouse.io/v1/boards/microsoft/jobs"
+      - name: "Amazon"
+        url: "https://boards-api.greenhouse.io/v1/boards/amazon/jobs"
+      - name: "Tesla"
+        url: "https://boards-api.greenhouse.io/v1/boards/tesla/jobs"
+      - name: "Uber"
+        url: "https://boards-api.greenhouse.io/v1/boards/uber/jobs"
+      - name: "ByteDance"
+        url: "https://boards-api.greenhouse.io/v1/boards/bytedance/jobs"
+      - name: "TikTok"
+        url: "https://boards-api.greenhouse.io/v1/boards/tiktok/jobs"
         
   lever:
     # Lever job board API endpoints for major tech companies  

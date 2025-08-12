@@ -247,16 +247,16 @@ def is_usa_location(location: str) -> bool:
     # Handle explicit non-USA indicators
     non_usa_indicators = [
         'uk', 'united kingdom', 'england', 'london', 'manchester', 'edinburgh',
-        'canada', 'toronto', 'vancouver', 'montreal', 'ottawa',
+        'canada', 'toronto', 'vancouver', 'montreal', 'ottawa', 
         'mexico', 'mexico city',
         'japan', 'tokyo', 'osaka',
         'germany', 'berlin', 'munich',
         'france', 'paris',
-        'netherlands', 'amsterdam',
+        'netherlands', 'amsterdam', 
         'ireland', 'dublin',
         'israel', 'tel aviv',
         'australia', 'sydney', 'melbourne',
-        'india', 'bangalore', 'mumbai', 'hyderabad', 'chennai', 'delhi',
+        'india', 'bangalore', 'mumbai', 'hyderabad', 'chennai', 'delhi', 'bengaluru',
         'singapore',
         'china', 'beijing', 'shanghai',
         'sweden', 'stockholm',
@@ -280,7 +280,14 @@ def is_usa_location(location: str) -> bool:
         'chile', 'santiago',
         'colombia', 'bogota',
         'peru', 'lima',
-        'luxembourg', 'luxembourg city'
+        'luxembourg', 'luxembourg city',
+        'philippines', 'manila',
+        'thailand', 'bangkok',
+        'vietnam', 'ho chi minh',
+        'malaysia', 'kuala lumpur',
+        'south korea', 'seoul',
+        'anz', 'anzac', 'emea',
+        'europe', 'asia', 'apac'
     ]
     
     # Check for non-USA indicators
@@ -385,9 +392,20 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         # Check for new grad signals
         if not has_new_grad_signal(title, filters['new_grad_signals']):
             continue
-            
-        # Check for track signals
-        if not has_track_signal(title, filters['track_signals']):
+        
+        # For jobs with clear new grad signals, track signals are optional
+        # This matches the reference repo approach where "New Grad Software Engineer" doesn't need additional keywords
+        has_track = has_track_signal(title, filters['track_signals'])
+        
+        # Strong new grad signals that don't need additional track signals
+        strong_new_grad_signals = [
+            "new grad", "new graduate", "graduate program", "campus", "university grad", 
+            "college grad", "early career", "2025 start", "2026 start"
+        ]
+        has_strong_new_grad = any(signal.lower() in title.lower() for signal in strong_new_grad_signals)
+        
+        # Accept if: has strong new grad signal OR (has new grad signal AND track signal)
+        if not (has_strong_new_grad or has_track):
             continue
             
         # Check if job is recent enough
@@ -438,7 +456,9 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
             if isinstance(posted_at, (int, float)):
                 return datetime.fromtimestamp(posted_at / 1000)
             else:
-                return date_parser.parse(posted_at)
+                parsed_date = date_parser.parse(posted_at)
+                # Remove timezone info for comparison
+                return parsed_date.replace(tzinfo=None)
         except:
             return datetime.min
     
