@@ -10,7 +10,12 @@ on:
   
   # Run on push to main branch for testing
   push:
-    branches: [ main ]
+    branches: [main]
+
+# Prevent concurrent executions of the same workflow
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
 
 jobs:
   update-jobs:
@@ -58,34 +63,64 @@ jobs:
         git add README.md
         git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
         
-        # Pull latest changes and push with retry logic
-        max_retries=3
+        # Add random delay to reduce concurrent execution conflicts
+        sleep $((RANDOM % 10 + 5))
+        
+        # Pull latest changes and push with improved retry logic
+        max_retries=5
         retry_count=0
         
         while [ $retry_count -lt $max_retries ]; do
-          # Pull latest changes first
-          if git pull --rebase origin main; then
-            # Try to push
-            if git push origin main; then
-              echo "Successfully pushed changes"
-              break
-            else
-              echo "Push failed, retrying..."
+          echo "Attempt $((retry_count + 1)) of $max_retries"
+          
+          # Always fetch latest changes first
+          if ! git fetch origin main; then
+            echo "Failed to fetch origin/main, retrying..."
+            retry_count=$((retry_count + 1))
+            sleep $((RANDOM % 5 + 3))
+            continue
+          fi
+          
+          # Check if we need to rebase
+          if ! git diff --quiet HEAD origin/main; then
+            echo "Remote has changes, rebasing..."
+            if ! git rebase origin/main; then
+              echo "Rebase failed, checking for conflicts..."
+              if git status --porcelain | grep -q "^UU\|^AA\|^DD"; then
+                echo "Rebase conflicts detected, aborting and retrying..."
+                git rebase --abort
+                # Reset to original commit and try again
+                git reset --hard HEAD~1
+                git add README.md
+                git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
+              else
+                echo "Rebase failed for unknown reason, aborting..."
+                git rebase --abort
+              fi
+              retry_count=$((retry_count + 1))
+              sleep $((RANDOM % 8 + 5))
+              continue
             fi
+          fi
+          
+          # Try to push
+          if git push origin main; then
+            echo "Successfully pushed changes"
+            break
           else
-            echo "Pull/rebase failed, retrying..."
+            echo "Push failed, will retry..."
+            retry_count=$((retry_count + 1))
+            
+            if [ $retry_count -eq $max_retries ]; then
+              echo "Failed to push after $max_retries attempts"
+              exit 1
+            fi
+            
+            # Exponential backoff with jitter
+            sleep_time=$((2 ** retry_count + RANDOM % 5))
+            echo "Waiting ${sleep_time} seconds before retry..."
+            sleep $sleep_time
           fi
-          
-          retry_count=$((retry_count + 1))
-          echo "Retry attempt $retry_count of $max_retries"
-          
-          if [ $retry_count -eq $max_retries ]; then
-            echo "Failed to push after $max_retries attempts"
-            exit 1
-          fi
-          
-          # Wait a bit before retrying to avoid rapid consecutive failures
-          sleep 5
         done
         
     - name: No changes
