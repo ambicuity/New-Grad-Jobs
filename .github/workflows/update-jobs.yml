@@ -10,7 +10,7 @@ on:
   
   # Run on push to main branch for testing
   push:
-    branches: [ main ]
+    branches: [main]
 
 # Prevent concurrent executions of the same workflow
 concurrency:
