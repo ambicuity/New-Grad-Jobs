@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-12 15:33:01 UTC
+🔄 **Last updated:** 2025-08-12 15:37:19 UTC
 
 📊 **Total jobs found:** 31
 
@@ -55,7 +55,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Track Focus:** Software, Data Science/Engineering, Machine Learning, Network Engineering, Site Reliability Engineering (SRE), DevOps
 - **Recency:** Jobs posted within the last 60 days
 - **Location:** USA-based positions only
-- **Sources:** Greenhouse, Lever, and Google Careers job boards
+- **Sources:** Greenhouse, Lever, Google Careers, and JobSpy (LinkedIn, Indeed, Glassdoor) job boards
 
 ### Companies Monitored
 **Greenhouse:** Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool
@@ -63,6 +63,8 @@ This repository automatically scrapes new graduate job opportunities from variou
 **Lever:** Netflix, Spotify, Palantir, Plaid, Atlassian
 
 **Google Careers:** Direct API searches for new graduate positions
+
+**JobSpy Integration:** LinkedIn, Indeed, and Glassdoor job searches for comprehensive coverage
 
 ---
 
