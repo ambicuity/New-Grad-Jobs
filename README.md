@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-12 15:11:56 UTC
+🔄 **Last updated:** 2025-08-12 15:17:05 UTC
 
-📊 **Total jobs found:** 32
+📊 **Total jobs found:** 53
 
 ---
 
@@ -13,11 +13,19 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Applied Intuition | Software Engineer - New Grad | Mountain View, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/appliedintuition/jobs/4592025005?gh_jid=4592025005) |
+| Applied Intuition | Embedded Software Engineer - New Grad | Mountain View, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/appliedintuition/jobs/4592027005?gh_jid=4592027005) |
+| Neuralink | Software Engineer Intern | Austin, Texas, United States; Fremont, California, United States | 3 days ago | [Apply](https://boards.greenhouse.io/neuralink/jobs/6672977003?gh_jid=6672977003) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Roblox | [Summer 2026] Software Engineer Intern    | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7114765?gh_jid=7114765) |
+| One Medical | Early Career - Primary Care Physician | New York, NY | 5 days ago | [Apply](http://www.onemedical.com/careers/all-departments/6522440?gh_jid=6522440) |
+| One Medical | Early Career - Primary Care Physician | San Francisco, CA | 5 days ago | [Apply](http://www.onemedical.com/careers/all-departments/7015274?gh_jid=7015274) |
+| One Medical | Early Career - Primary Care Physician  | San Francisco, CA | 5 days ago | [Apply](http://www.onemedical.com/careers/all-departments/7015273?gh_jid=7015273) |
+| One Medical | Lab Services Specialist/ Member Support Specialist Trainee | Seattle, WA | 5 days ago | [Apply](http://www.onemedical.com/careers/all-departments/7133832?gh_jid=7133832) |
+| One Medical | Lab Services Specialist/ Member Support Specialist Trainee | Bellevue, WA | 5 days ago | [Apply](http://www.onemedical.com/careers/all-departments/6868814?gh_jid=6868814) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Plaid | Experienced Software Engineer - Python Tooling & Developer Infrastructure | San Francisco | 2025-07-31 | [Apply](https://jobs.lever.co/plaid/bd309130-9ff0-4d84-8878-20a05f0c1e58) |
 | SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
@@ -30,10 +38,23 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | New Relic | Software Engineer 1  | Portland, Oregon, USA | 2025-07-29 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4673806008?gh_jid=4673806008) |
 | Twitch | Software Development Engineer I - Frontend & Mobile | San Francisco, CA | 2025-07-28 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8093301002) |
 | Pinterest | Machine Learning Engineer I | San Francisco, CA, US; Remote, US | 2025-07-26 | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=6864992) |
+| Neuralink | Software Engineer Intern, Robotics | Austin, Texas, United States; Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003) |
+| Neuralink | Software Engineer Intern, Infrastructure | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/5469298003?gh_jid=5469298003) |
+| Neuralink | Software Engineer Intern, Implant | Austin, Texas, United States; Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6569018003?gh_jid=6569018003) |
+| Neuralink | Software Engineer Intern, Hippocampus | Austin, Texas, United States; Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003) |
+| Neuralink | Software Engineer Intern, BCI Applications | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6594422003?gh_jid=6594422003) |
+| Neuralink | Machine Learning Engineer Intern | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6594261003?gh_jid=6594261003) |
+| Neuralink | Firmware Engineer Intern | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6648992003?gh_jid=6648992003) |
+| Neuralink | Embedded Software Engineer Intern | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6283663003?gh_jid=6283663003) |
+| Neuralink | Electrical Engineer Intern, Robotics and Surgery Engineering | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6607398003?gh_jid=6607398003) |
+| Neuralink | Electrical Engineer Intern, Implant Embedded Systems | Fremont, California, United States | 2025-07-25 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6283660003?gh_jid=6283660003) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-07-22 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 2025-07-21 | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-07-21 | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
+| Neuralink | Software Engineer, Hippocampus Team  | Austin, Texas, United States; Fremont, California, United States | 2025-07-18 | [Apply](https://boards.greenhouse.io/neuralink/jobs/6491911003?gh_jid=6491911003) |
+| Applied Intuition | Research Scientist - New Grad | Mountain View, California, United States | 2025-07-12 | [Apply](https://boards.greenhouse.io/appliedintuition/jobs/4489211005?gh_jid=4489211005) |
+| Applied Intuition | Software Engineer - Developer Infrastructure  | Mountain View, California, United States | 2025-07-12 | [Apply](https://boards.greenhouse.io/appliedintuition/jobs/4581501005?gh_jid=4581501005) |
 | Google | Hardware Signal Integrity Test Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-07-01 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRoCP-THV1bTBRGH7xbh6PvDg7mfxsmdmqfMzFaDSLWfEjsASXckS8D3h_fUJCw_0hm2dPs9pKC5DLIcKQf3Y0ncQ5IrnuAW1qakto6OZSo4Nt4_cekIrxa__KSNxA%3D%3D_V2&jobTitle=Hardware+Signal+Integrity+Test+Engineer&loc=US) |
 | Palantir | Software Engineer, New Grad - Production Infrastructure | Seattle, WA | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4d5a144e-87ea-45e2-a68c-3fad590629af) |
 | Palantir | Software Engineer, New Grad - Production Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |
@@ -59,7 +80,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Sources:** Greenhouse, Lever, and Google Careers job boards
 
 ### Companies Monitored
-**Greenhouse:** Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool, Roku, Grammarly, Mercury, Pendo, Lattice, Gusto, Webflow, Benchling, Checkr, Carta, Faire, Codecademy
+**Greenhouse:** Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool, Roku, Grammarly, Mercury, Pendo, Lattice, Gusto, Webflow, Benchling, Checkr, Carta, Faire, Codecademy, Mudflap, One Medical, Applied Intuition, Neuralink
 
 **Lever:** Netflix, Spotify, Palantir, Plaid, Atlassian
 

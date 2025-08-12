@@ -213,6 +213,16 @@ apis:
       - name: "Codecademy"
         url: "https://boards-api.greenhouse.io/v1/boards/codecademy/jobs"
         
+      # Additional companies found in research
+      - name: "Mudflap"
+        url: "https://boards-api.greenhouse.io/v1/boards/mudflap/jobs"
+      - name: "One Medical"
+        url: "https://boards-api.greenhouse.io/v1/boards/onemedical/jobs"
+      - name: "Applied Intuition"
+        url: "https://boards-api.greenhouse.io/v1/boards/appliedintuition/jobs"
+      - name: "Neuralink"
+        url: "https://boards-api.greenhouse.io/v1/boards/neuralink/jobs"
+        
   lever:
     # Lever job board API endpoints for major tech companies  
     companies:
