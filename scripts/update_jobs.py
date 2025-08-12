@@ -645,7 +645,20 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 
 ## About This Repository
 
-This repository automatically scrapes new graduate job opportunities from various company job boards every 5 minutes. 
+This repository automatically scrapes new graduate job opportunities from various company job boards every 5 minutes using multiple data sources and APIs for comprehensive coverage.
+
+### Data Sources
+- **Direct Company APIs**: Greenhouse and Lever job boards from major tech companies
+- **Search APIs**: Google Careers direct searches
+- **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
+- **Extensible Framework**: Ready for additional APIs like SerpApi, ScraperAPI, and others
+
+### Key Features
+- **Comprehensive Coverage**: 70+ companies across multiple job platforms
+- **Real-time Updates**: Automatic updates every 5 minutes
+- **Smart Filtering**: Advanced filtering for new grad positions and relevant tech roles
+- **USA Focus**: Filters for US-based positions only
+- **Multiple APIs**: Redundancy and broad coverage across job sites 
 
 ### Filtering Criteria
 - **New Grad Signals:** new grad, new graduate, entry-level, graduate, junior, associate, trainee, campus, recent graduate
