@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-13 17:23:11 UTC
+🔄 **Last updated:** 2025-08-13 17:39:10 UTC
 
 📊 **Total jobs found:** 33
 
@@ -12,11 +12,11 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Fastly | Associate Software Engineer, New College Graduate | New York City, NY | Today | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7163180) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
-| Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
+| Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
