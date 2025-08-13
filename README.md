@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-13 15:55:55 UTC
+🔄 **Last updated:** 2025-08-13 16:26:20 UTC
 
-📊 **Total jobs found:** 32
+📊 **Total jobs found:** 33
 
 ---
 
@@ -27,8 +27,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
-| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
+| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
+| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
@@ -42,6 +42,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Defense | Washington, D.C. | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/18d901fc-93bb-4d18-9f04-c72031e20d79) |
 | Palantir | Software Engineer, New Grad - Defense | Palo Alto, CA | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/f362d7aa-360d-4059-ab38-f482742693b3) |
 | Palantir | Software Engineer, New Grad - Defense | New York, NY | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/0a838e66-1ab0-4fc4-b4d3-4671c0352278) |
+| Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 
