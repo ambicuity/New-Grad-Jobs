@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-13 14:29:33 UTC
+🔄 **Last updated:** 2025-08-13 14:50:22 UTC
 
-📊 **Total jobs found:** 33
+📊 **Total jobs found:** 32
 
 ---
 
@@ -18,7 +18,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
@@ -42,7 +42,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Defense | Washington, D.C. | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/18d901fc-93bb-4d18-9f04-c72031e20d79) |
 | Palantir | Software Engineer, New Grad - Defense | Palo Alto, CA | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/f362d7aa-360d-4059-ab38-f482742693b3) |
 | Palantir | Software Engineer, New Grad - Defense | New York, NY | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/0a838e66-1ab0-4fc4-b4d3-4671c0352278) |
-| Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 
