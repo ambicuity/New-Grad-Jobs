@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-13 18:16:36 UTC
+🔄 **Last updated:** 2025-08-13 18:47:00 UTC
 
 📊 **Total jobs found:** 32
 
@@ -12,6 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
+| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
@@ -25,9 +28,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
-| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
