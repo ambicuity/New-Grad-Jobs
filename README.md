@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-14 21:54:33 UTC
+🔄 **Last updated:** 2025-08-14 22:20:03 UTC
 
-📊 **Total jobs found:** 31
+📊 **Total jobs found:** 32
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Cloudflare | Associate Solutions Engineer, New Grad | In-Office | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7166986?gh_jid=7166986) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
