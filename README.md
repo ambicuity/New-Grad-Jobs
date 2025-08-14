@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-14 14:29:28 UTC
+🔄 **Last updated:** 2025-08-14 14:49:16 UTC
 
 📊 **Total jobs found:** 32
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
