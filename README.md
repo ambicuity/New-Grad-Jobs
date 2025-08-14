@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-14 21:27:11 UTC
+🔄 **Last updated:** 2025-08-14 21:44:06 UTC
 
-📊 **Total jobs found:** 32
+📊 **Total jobs found:** 31
 
 ---
 
@@ -41,7 +41,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Defense | Washington, D.C. | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/18d901fc-93bb-4d18-9f04-c72031e20d79) |
 | Palantir | Software Engineer, New Grad - Defense | Palo Alto, CA | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/f362d7aa-360d-4059-ab38-f482742693b3) |
 | Palantir | Software Engineer, New Grad - Defense | New York, NY | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/0a838e66-1ab0-4fc4-b4d3-4671c0352278) |
-| Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 
