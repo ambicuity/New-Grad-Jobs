@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-15 18:58:48 UTC
+🔄 **Last updated:** 2025-08-15 19:22:48 UTC
 
 📊 **Total jobs found:** 34
 
@@ -12,7 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Chime | Product Security Engineer (New Grad) | San Francisco, CA | Today | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
+| Chime | Product Security Engineer (New Grad) | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Cloudflare | Associate Solutions Engineer, New Grad | In-Office | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7166986?gh_jid=7166986) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
