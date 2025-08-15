@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-15 18:00:35 UTC
+🔄 **Last updated:** 2025-08-15 18:41:55 UTC
 
-📊 **Total jobs found:** 33
+📊 **Total jobs found:** 34
 
 ---
 
@@ -13,9 +13,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | Today | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
-| Cloudflare | Associate Solutions Engineer, New Grad | In-Office | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7166986?gh_jid=7166986) |
+| Cloudflare | Associate Solutions Engineer, New Grad | In-Office | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7166986?gh_jid=7166986) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
@@ -43,6 +43,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Defense | Washington, D.C. | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/18d901fc-93bb-4d18-9f04-c72031e20d79) |
 | Palantir | Software Engineer, New Grad - Defense | Palo Alto, CA | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/f362d7aa-360d-4059-ab38-f482742693b3) |
 | Palantir | Software Engineer, New Grad - Defense | New York, NY | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/0a838e66-1ab0-4fc4-b4d3-4671c0352278) |
+| Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 | Google | Hardware Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWW2nPaAH-aQHw4XrAh3O3dxbUaqOCSf6oKCJu1PMb6IEjsAgOFyA_BNYjCP5k525wPYPEMGzkSEoXu3Qfx0ohot_riLHLxbW8QPYAR5BDCleXwb-Q8nCUcdGnqW1Q%3D%3D_V2&jobTitle=Hardware+Engineer&loc=US) |
 
