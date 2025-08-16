@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-16 13:59:57 UTC
+🔄 **Last updated:** 2025-08-16 14:25:47 UTC
 
 📊 **Total jobs found:** 31
 
@@ -16,9 +16,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Associate Solutions Engineer, New Grad | In-Office | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7166986?gh_jid=7166986) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
-| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
-| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
+| Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
+| Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
