@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-16 11:53:30 UTC
+🔄 **Last updated:** 2025-08-16 12:33:22 UTC
 
 📊 **Total jobs found:** 31
 
@@ -26,7 +26,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
-| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-08-08 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-08-08 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-08-08 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
