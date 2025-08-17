@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-17 12:52:26 UTC
+🔄 **Last updated:** 2025-08-17 13:24:35 UTC
 
 📊 **Total jobs found:** 31
 
@@ -23,8 +23,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 4 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
-| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
+| Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
+| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-08-08 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
