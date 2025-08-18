@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-18 13:52:40 UTC
+🔄 **Last updated:** 2025-08-18 14:12:07 UTC
 
-📊 **Total jobs found:** 23
+📊 **Total jobs found:** 26
 
 ---
 
@@ -34,6 +34,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Google | Hardware Signal Integrity Test Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-07-01 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRoCP-THV1bTBRGH7xbh6PvDg7mfxsmdmqfMzFaDSLWfEjsASXckS8D3h_fUJCw_0hm2dPs9pKC5DLIcKQf3Y0ncQ5IrnuAW1qakto6OZSo4Nt4_cekIrxa__KSNxA%3D%3D_V2&jobTitle=Hardware+Signal+Integrity+Test+Engineer&loc=US) |
+| Palantir | Software Engineer, New Grad - Production Infrastructure | Seattle, WA | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4d5a144e-87ea-45e2-a68c-3fad590629af) |
+| Palantir | Software Engineer, New Grad - Production Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |
+| Palantir | Software Engineer, New Grad - Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4) |
 | Google | Mechanical Product Design Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-24 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckR9obpF-Gwd91iMlCzqmAbFazBTM1W7iVTfnjlSRSeHQEjsASXckS4jO11ynbtBFB0CpGaWA1o07ZukL8jjbsbZ0U3pMLGpjUernqJObLmrceinPNloPsrrRF1hDyg%3D%3D_V2&jobTitle=Mechanical+Product+Design+Engineer&loc=US) |
 
 ---
