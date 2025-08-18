@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-17 23:59:32 UTC
+🔄 **Last updated:** 2025-08-18 02:26:42 UTC
 
-📊 **Total jobs found:** 31
+📊 **Total jobs found:** 27
 
 ---
 
@@ -23,7 +23,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Cloudflare | Associate Customer Solutions Engineer, ANZ | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6743073?gh_jid=6743073) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
@@ -40,9 +39,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Production Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |
 | Palantir | Software Engineer, New Grad - Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4) |
 | Google | Mechanical Product Design Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-24 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckR9obpF-Gwd91iMlCzqmAbFazBTM1W7iVTfnjlSRSeHQEjsASXckS4jO11ynbtBFB0CpGaWA1o07ZukL8jjbsbZ0U3pMLGpjUernqJObLmrceinPNloPsrrRF1hDyg%3D%3D_V2&jobTitle=Mechanical+Product+Design+Engineer&loc=US) |
-| Palantir | Software Engineer, New Grad - Defense | Washington, D.C. | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/18d901fc-93bb-4d18-9f04-c72031e20d79) |
-| Palantir | Software Engineer, New Grad - Defense | Palo Alto, CA | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/f362d7aa-360d-4059-ab38-f482742693b3) |
-| Palantir | Software Engineer, New Grad - Defense | New York, NY | 2025-06-19 | [Apply](https://jobs.lever.co/palantir/0a838e66-1ab0-4fc4-b4d3-4671c0352278) |
 
 ---
 
