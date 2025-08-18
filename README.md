@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-18 17:26:10 UTC
+🔄 **Last updated:** 2025-08-18 17:45:23 UTC
 
 📊 **Total jobs found:** 27
 
@@ -21,8 +21,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
-| Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 6 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
+| Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 6 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-08-11 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-08-11 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
