@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-19 11:55:15 UTC
+🔄 **Last updated:** 2025-08-19 12:42:24 UTC
 
 📊 **Total jobs found:** 28
 
@@ -22,7 +22,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
