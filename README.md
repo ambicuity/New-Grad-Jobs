@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-19 12:42:24 UTC
+🔄 **Last updated:** 2025-08-19 13:20:29 UTC
 
 📊 **Total jobs found:** 28
 
@@ -21,7 +21,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
-| Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
+| Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
@@ -31,7 +31,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 6 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 6 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
-| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
+| Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-08-12 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-08-11 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
