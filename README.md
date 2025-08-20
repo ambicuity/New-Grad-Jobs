@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-20 05:45:35 UTC
+🔄 **Last updated:** 2025-08-20 05:56:59 UTC
 
 📊 **Total jobs found:** 27
 
@@ -25,7 +25,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
