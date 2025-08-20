@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-20 17:50:14 UTC
+🔄 **Last updated:** 2025-08-20 18:13:38 UTC
 
-📊 **Total jobs found:** 27
+📊 **Total jobs found:** 28
 
 ---
 
@@ -18,9 +18,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 1 day ago | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
 | Palantir | Software Engineer, New Grad - Production Infrastructure | Washington, D.C. | 1 day ago | [Apply](https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
-| Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
+| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
+| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
 | SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
 | SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
 | SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
@@ -31,6 +31,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-08-12 | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 2025-08-12 | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
+| Palantir | Developer Experience Designer, New Grad | New York, NY | 2025-08-12 | [Apply](https://jobs.lever.co/palantir/02fe0b60-6fc4-46dd-b0e3-e0d3da3aaa4d) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-08-12 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
