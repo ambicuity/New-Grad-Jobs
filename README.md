@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-21 14:55:53 UTC
+🔄 **Last updated:** 2025-08-21 15:25:17 UTC
 
 📊 **Total jobs found:** 28
 
@@ -21,9 +21,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
-| SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
-| SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
-| SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
+| SpaceX | Dec 2025 New Graduate Engineer, Software (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8026923002?gh_jid=8026923002) |
+| SpaceX | December 2025 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8027699002?gh_jid=8027699002) |
+| SpaceX | Fall 2025 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/7907335002?gh_jid=7907335002) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7028673?gh_jid=7028673) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
