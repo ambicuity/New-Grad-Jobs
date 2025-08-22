@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-22 10:37:15 UTC
+🔄 **Last updated:** 2025-08-22 10:50:35 UTC
 
 📊 **Total jobs found:** 28
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | Today | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 3 days ago | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
