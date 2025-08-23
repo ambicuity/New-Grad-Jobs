@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-23 11:25:26 UTC
+🔄 **Last updated:** 2025-08-23 11:38:18 UTC
 
-📊 **Total jobs found:** 29
+📊 **Total jobs found:** 28
 
 ---
 
@@ -40,7 +40,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Palantir | Software Engineer, New Grad - Production Infrastructure | Seattle, WA | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4d5a144e-87ea-45e2-a68c-3fad590629af) |
 | Palantir | Software Engineer, New Grad - Production Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |
 | Palantir | Software Engineer, New Grad - Infrastructure | New York, NY | 2025-06-26 | [Apply](https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4) |
-| Google | Mechanical Product Design Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-06-24 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckR9obpF-Gwd91iMlCzqmAbFazBTM1W7iVTfnjlSRSeHQEjsASXckS4jO11ynbtBFB0CpGaWA1o07ZukL8jjbsbZ0U3pMLGpjUernqJObLmrceinPNloPsrrRF1hDyg%3D%3D_V2&jobTitle=Mechanical+Product+Design+Engineer&loc=US) |
 
 ---
 
