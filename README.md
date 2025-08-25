@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-25 20:30:06 UTC
+🔄 **Last updated:** 2025-08-25 20:45:35 UTC
 
-📊 **Total jobs found:** 25
+📊 **Total jobs found:** 26
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
 | Robinhood | Government Affairs Associate | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
