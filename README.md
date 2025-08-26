@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-26 14:52:54 UTC
+🔄 **Last updated:** 2025-08-26 15:16:34 UTC
 
 📊 **Total jobs found:** 47
 
@@ -32,12 +32,12 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
 | Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 6 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 6 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-08-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 2025-08-19 | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
