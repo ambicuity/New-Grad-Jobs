@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-25 23:51:36 UTC
+🔄 **Last updated:** 2025-08-26 00:58:52 UTC
 
-📊 **Total jobs found:** 27
+📊 **Total jobs found:** 26
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
 | Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
@@ -31,14 +32,12 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-08-18 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Roblox | [2025] Senior Machine Learning Engineer, Discovery - PhD New Grad | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/6580444?gh_jid=6580444) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-08-12 | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 2025-08-12 | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Palantir | Developer Experience Designer, New Grad | New York, NY | 2025-08-12 | [Apply](https://jobs.lever.co/palantir/02fe0b60-6fc4-46dd-b0e3-e0d3da3aaa4d) |
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-08-12 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
-| Google | Hardware Signal Integrity Test Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-07-01 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRoCP-THV1bTBRGH7xbh6PvDg7mfxsmdmqfMzFaDSLWfEjsASXckS8D3h_fUJCw_0hm2dPs9pKC5DLIcKQf3Y0ncQ5IrnuAW1qakto6OZSo4Nt4_cekIrxa__KSNxA%3D%3D_V2&jobTitle=Hardware+Signal+Integrity+Test+Engineer&loc=US) |
 
 ---
 
