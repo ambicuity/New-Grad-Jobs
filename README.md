@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-26 09:31:22 UTC
+🔄 **Last updated:** 2025-08-26 09:47:48 UTC
 
 📊 **Total jobs found:** 27
 
@@ -20,8 +20,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 6 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
-| Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 6 days ago | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
-| Palantir | Software Engineer, New Grad - Production Infrastructure | Washington, D.C. | 6 days ago | [Apply](https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6) |
+| Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 2025-08-19 | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
+| Palantir | Software Engineer, New Grad - Production Infrastructure | Washington, D.C. | 2025-08-19 | [Apply](https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-08-18 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-08-18 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Software Engineer - New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-08-18 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865698002) |
