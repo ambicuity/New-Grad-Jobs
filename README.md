@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-26 00:58:52 UTC
+🔄 **Last updated:** 2025-08-26 02:44:19 UTC
 
-📊 **Total jobs found:** 26
+📊 **Total jobs found:** 27
 
 ---
 
@@ -38,6 +38,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-08-12 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
+| Google | Hardware Signal Integrity Test Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-07-01 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRoCP-THV1bTBRGH7xbh6PvDg7mfxsmdmqfMzFaDSLWfEjsASXckS8D3h_fUJCw_0hm2dPs9pKC5DLIcKQf3Y0ncQ5IrnuAW1qakto6OZSo4Nt4_cekIrxa__KSNxA%3D%3D_V2&jobTitle=Hardware+Signal+Integrity+Test+Engineer&loc=US) |
 
 ---
 
