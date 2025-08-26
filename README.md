@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-26 13:08:06 UTC
+🔄 **Last updated:** 2025-08-26 13:44:20 UTC
 
-📊 **Total jobs found:** 30
+📊 **Total jobs found:** 33
 
 ---
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
+| Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
@@ -42,6 +44,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Internal Tools Engineer, Developer GTM (Recent New Grad) | Hybrid | 2025-08-12 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7017492?gh_jid=7017492) |
 | SpaceX | Maintenance Warehouse Associate (Starlink) | Bastrop, TX | 2025-07-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8052934002?gh_jid=8052934002) |
 | Spotify | Associate Machine Learning Engineer | New York, NY | 2025-07-22 | [Apply](https://jobs.lever.co/spotify/21c24edb-f625-4895-ad23-5a6320d54813) |
+| Google | Hardware Signal Integrity Test Engineer, Platforms, University Graduate | Sunnyvale, CA, USA | 2025-07-01 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRoCP-THV1bTBRGH7xbh6PvDg7mfxsmdmqfMzFaDSLWfEjsASXckS8D3h_fUJCw_0hm2dPs9pKC5DLIcKQf3Y0ncQ5IrnuAW1qakto6OZSo4Nt4_cekIrxa__KSNxA%3D%3D_V2&jobTitle=Hardware+Signal+Integrity+Test+Engineer&loc=US) |
 
 ---
 
