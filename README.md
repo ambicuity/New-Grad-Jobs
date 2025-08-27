@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-27 18:44:48 UTC
+🔄 **Last updated:** 2025-08-27 18:56:38 UTC
 
 📊 **Total jobs found:** 46
 
@@ -36,7 +36,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
-| Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
+| Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
 | Robinhood | Government Affairs Associate | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Chime | Product Security Engineer (New Grad) | San Francisco, CA | 2025-08-19 | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
