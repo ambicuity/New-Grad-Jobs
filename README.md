@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-28 22:53:36 UTC
+🔄 **Last updated:** 2025-08-28 23:15:54 UTC
 
-📊 **Total jobs found:** 42
+📊 **Total jobs found:** 44
 
 ---
 
@@ -15,6 +15,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 1 day ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
+| Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2 days ago | N/A |
+| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2 days ago | N/A |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2 days ago | N/A |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
