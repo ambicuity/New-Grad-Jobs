@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-08-31 20:13:09 UTC
+🔄 **Last updated:** 2025-08-31 20:33:07 UTC
 
 📊 **Total jobs found:** 58
 
@@ -16,8 +16,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 3 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
@@ -46,7 +46,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 5 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 5 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 5 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 6 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
 | Robinhood | Government Affairs Associate | Washington, DC | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
