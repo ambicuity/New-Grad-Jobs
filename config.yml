@@ -172,6 +172,50 @@ apis:
       - name: "Retool"
         url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
         
+      # Fifth round: Additional verified tech companies (2024)
+      - name: "Unity Technologies"
+        url: "https://boards-api.greenhouse.io/v1/boards/unity3d/jobs"
+      - name: "Peloton"
+        url: "https://boards-api.greenhouse.io/v1/boards/peloton/jobs"
+      - name: "Grammarly"
+        url: "https://boards-api.greenhouse.io/v1/boards/grammarly/jobs"
+      - name: "Coursera"
+        url: "https://boards-api.greenhouse.io/v1/boards/coursera/jobs"
+      - name: "Khan Academy"
+        url: "https://boards-api.greenhouse.io/v1/boards/khanacademy/jobs"
+      - name: "Duolingo"
+        url: "https://boards-api.greenhouse.io/v1/boards/duolingo/jobs"
+      - name: "Calendly"
+        url: "https://boards-api.greenhouse.io/v1/boards/calendly/jobs"
+      - name: "Webflow"
+        url: "https://boards-api.greenhouse.io/v1/boards/webflow/jobs"
+      - name: "CircleCI"
+        url: "https://boards-api.greenhouse.io/v1/boards/circleci/jobs"
+      - name: "PlanetScale"
+        url: "https://boards-api.greenhouse.io/v1/boards/planetscale/jobs"
+      - name: "Algolia"
+        url: "https://boards-api.greenhouse.io/v1/boards/algolia/jobs"
+      - name: "Intercom"
+        url: "https://boards-api.greenhouse.io/v1/boards/intercom/jobs"
+      - name: "Cockroach Labs"
+        url: "https://boards-api.greenhouse.io/v1/boards/cockroachlabs/jobs"
+      - name: "Sumo Logic"
+        url: "https://boards-api.greenhouse.io/v1/boards/sumologic/jobs"
+      - name: "Magic Leap"
+        url: "https://boards-api.greenhouse.io/v1/boards/magicleap/jobs"
+      - name: "Samsara"
+        url: "https://boards-api.greenhouse.io/v1/boards/samsara/jobs"
+      - name: "Benchling"
+        url: "https://boards-api.greenhouse.io/v1/boards/benchling/jobs"
+      - name: "Checkr"
+        url: "https://boards-api.greenhouse.io/v1/boards/checkr/jobs"
+      - name: "Flexport"
+        url: "https://boards-api.greenhouse.io/v1/boards/flexport/jobs"
+      - name: "Bird"
+        url: "https://boards-api.greenhouse.io/v1/boards/bird/jobs"
+      - name: "Calm"
+        url: "https://boards-api.greenhouse.io/v1/boards/calm/jobs"
+        
   lever:
     # Lever job board API endpoints for major tech companies  
     companies:
@@ -205,11 +249,16 @@ apis:
     enabled: true
     sites:
       - "indeed" 
+      - "linkedin"
+      # - "glassdoor"  # Temporarily disabled due to API issues
     search_terms:
       - "new graduate software engineer"
       - "entry level software engineer"
+      - "junior software engineer" 
+      - "new grad data scientist"
+      - "entry level data engineer"
     location: "United States"
-    results_wanted: 25
+    results_wanted: 20  # Reduced per site to manage total volume
     hours_old: 168  # Only jobs posted in last week (7 days)
     
   # Third-party job scraping APIs (configuration ready for future implementation)
