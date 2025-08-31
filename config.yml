@@ -250,7 +250,7 @@ apis:
     sites:
       - "indeed" 
       - "linkedin"
-      - "glassdoor"
+      # - "glassdoor"  # Temporarily disabled due to API issues
     search_terms:
       - "new graduate software engineer"
       - "entry level software engineer"
