@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-02 22:55:22 UTC
+🔄 **Last updated:** 2025-09-02 23:16:38 UTC
 
-📊 **Total jobs found:** 73
+📊 **Total jobs found:** 74
 
 ---
 
@@ -28,7 +28,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Software (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8144023002?gh_jid=8144023002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
-| New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
+| New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 1 day ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | Robinhood | Government Affairs Associate | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
@@ -43,6 +43,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
 | Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
+| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
