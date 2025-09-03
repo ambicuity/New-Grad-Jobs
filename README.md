@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-03 16:15:26 UTC
+🔄 **Last updated:** 2025-09-03 16:41:45 UTC
 
 📊 **Total jobs found:** 72
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
@@ -32,17 +33,16 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 2 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
-| Robinhood | Government Affairs Associate | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
-| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
-| Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
+| Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
-| Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 6 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-08-27 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
+| Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
 | Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
