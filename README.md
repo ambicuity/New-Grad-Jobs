@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-03 12:30:32 UTC
+🔄 **Last updated:** 2025-09-03 13:06:37 UTC
 
 📊 **Total jobs found:** 76
 
@@ -31,7 +31,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
-| Magic Leap | Associate Software Systems Engineer | Austin, TX | 1 day ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
+| Magic Leap | Associate Software Systems Engineer | Austin, TX | 2 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | Robinhood | Government Affairs Associate | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
