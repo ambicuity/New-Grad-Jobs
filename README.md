@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-03 15:24:33 UTC
+🔄 **Last updated:** 2025-09-03 15:40:47 UTC
 
 📊 **Total jobs found:** 76
 
@@ -16,8 +16,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
-| Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
-| Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
+| Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
+| Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
@@ -36,8 +36,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
