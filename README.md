@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-06 13:18:28 UTC
+🔄 **Last updated:** 2025-09-06 13:32:31 UTC
 
 📊 **Total jobs found:** 76
 
@@ -12,7 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
+| Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
