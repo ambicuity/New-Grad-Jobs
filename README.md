@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-06 10:44:39 UTC
+🔄 **Last updated:** 2025-09-06 10:56:22 UTC
 
 📊 **Total jobs found:** 76
 
@@ -17,8 +17,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
