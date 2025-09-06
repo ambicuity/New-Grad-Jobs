@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-06 16:36:17 UTC
+🔄 **Last updated:** 2025-09-06 16:47:48 UTC
 
 📊 **Total jobs found:** 76
 
@@ -23,7 +23,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 2 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
-| Coursera | Account Manager, Coursera for Campus | United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5611708004) |
+| Coursera | Account Manager, Coursera for Campus | United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5611708004) |
 | Robinhood | Government Affairs Associate | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
