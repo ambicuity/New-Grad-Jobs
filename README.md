@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-08 14:49:15 UTC
+🔄 **Last updated:** 2025-09-08 15:01:13 UTC
 
-📊 **Total jobs found:** 76
+📊 **Total jobs found:** 78
 
 ---
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
+| Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | 3 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
@@ -21,7 +23,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Global Operations Specialist - New Grad | Atlanta, Georgia, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7113786?gh_jid=7113786) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 4 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | Coursera | Account Manager, Coursera for Campus | United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5611708004) |
 | Robinhood | Government Affairs Associate | Washington, DC | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
