@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-09 19:15:09 UTC
+🔄 **Last updated:** 2025-09-09 19:27:55 UTC
 
-📊 **Total jobs found:** 74
+📊 **Total jobs found:** 73
 
 ---
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
+| Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
@@ -19,8 +21,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
-| Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
-| Robinhood | Government Affairs Associate | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
@@ -49,7 +49,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 2025-09-01 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-08-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
-| Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 2025-08-27 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-08-27 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
