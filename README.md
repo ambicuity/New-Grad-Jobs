@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-09 15:58:56 UTC
+🔄 **Last updated:** 2025-09-09 16:33:48 UTC
 
 📊 **Total jobs found:** 81
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Twilio | Software Engineer, Early Career - Messaging API | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckV2ZsmFF-Z-bCWaqA4kOAnncQ0pCQwgKEtItt2lyuo8lEjsASXckS_sVweSG37DZvLwfHEZ_pp9LSc2XpbTP9XXkDnCeG4lgF385JOX5ePB8cPWf3pf77mJmRper8Q%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckV2ZsmFF-Z-bCWaqA4kOAnncQ0pCQwgKEtItt2lyuo8lEjsASXckS_sVweSG37DZvLwfHEZ_pp9LSc2XpbTP9XXkDnCeG4lgF385JOX5ePB8cPWf3pf77mJmRper8Q%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
@@ -25,7 +26,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Twilio | Software Engineer, Early Career - Messaging API | Remote - US | 4 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
