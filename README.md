@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-09 21:20:50 UTC
+🔄 **Last updated:** 2025-09-09 21:32:44 UTC
 
 📊 **Total jobs found:** 74
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
@@ -48,7 +49,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 2025-09-01 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-08-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 2025-08-27 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-08-27 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVgU2z6nXOsAx7LpkOYtvl0LFC2pWewQ3P0ePjUaTa8PEjsASXckS1zddeey3pB_TT8iUK5yjqc_eAAWqLageorLcaoWy5E9HZz9aPAKigd3LB3jqogH35_T3vsbcQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
