@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-10 18:52:03 UTC
+🔄 **Last updated:** 2025-09-10 19:10:47 UTC
 
 📊 **Total jobs found:** 75
 
@@ -27,9 +27,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
-| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 6 days ago | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | Coursera | Account Manager, Coursera for Campus | United States | 2025-09-03 | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5611708004) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
