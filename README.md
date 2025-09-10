@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-10 19:39:09 UTC
+🔄 **Last updated:** 2025-09-10 19:50:51 UTC
 
-📊 **Total jobs found:** 70
+📊 **Total jobs found:** 69
 
 ---
 
@@ -14,7 +14,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | --- | --- | --- | --- | --- |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
@@ -50,7 +50,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 2025-09-01 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 2025-08-27 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-08-27 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaamE4hVwCeHMprkjAiqFs8-d6WvSvqcdD8Jf7IxQ76_EjsASXckSyv9tQfNSQTPiAXzjsOEiVEwO6igGUqZIwEesMGwyBy5fHIruuo5dPSPlUUMRTwp4Kbk0AJpgw%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
