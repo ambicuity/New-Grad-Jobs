@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-11 18:59:12 UTC
+🔄 **Last updated:** 2025-09-11 19:19:55 UTC
 
-📊 **Total jobs found:** 76
+📊 **Total jobs found:** 77
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7055880?t=gh_src=&gh_jid=7055880) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
