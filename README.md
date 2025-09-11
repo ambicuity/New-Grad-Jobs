@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-11 00:00:27 UTC
+🔄 **Last updated:** 2025-09-11 01:59:36 UTC
 
 📊 **Total jobs found:** 75
 
@@ -21,8 +21,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
-| Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
-| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
+| Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
+| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
