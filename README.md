@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-11 17:34:04 UTC
+🔄 **Last updated:** 2025-09-11 17:45:11 UTC
 
 📊 **Total jobs found:** 76
 
@@ -18,7 +18,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
