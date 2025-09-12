@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-12 06:22:35 UTC
+🔄 **Last updated:** 2025-09-12 06:47:10 UTC
 
-📊 **Total jobs found:** 72
+📊 **Total jobs found:** 74
 
 ---
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckbd1pjI0o8yzbbDqcn2sya2mKT1pjmrtd43D6i1xHzryEjsASXckS1U7Z4JF2IYzu5wD4P6Htwdmluw2AGfnepcb-lpm04OCni_z0h1wgTXB_6QlEqhP6gNFPjuaVQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
+| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf3vVMMWkbAFRLZs6jvCA3Hu9uhccUpKVtymQ-mG-RRjEjsASXckS3bKKvyAUEfbrKe2-opHOAFWYI4TGuKKnjIb0L5CQ4VEaFEzGSNCLxRIdyI1tJfGN1eIhsWYEg%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf3vVMMWkbAFRLZs6jvCA3Hu9uhccUpKVtymQ-mG-RRjEjsASXckS3bKKvyAUEfbrKe2-opHOAFWYI4TGuKKnjIb0L5CQ4VEaFEzGSNCLxRIdyI1tJfGN1eIhsWYEg%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
