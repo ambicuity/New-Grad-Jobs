@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-12 17:53:07 UTC
+🔄 **Last updated:** 2025-09-12 18:17:10 UTC
 
-📊 **Total jobs found:** 73
+📊 **Total jobs found:** 72
 
 ---
 
@@ -17,7 +17,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
-| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf3vVMMWkbAFRLZs6jvCA3Hu9uhccUpKVtymQ-mG-RRjEjsASXckS3bKKvyAUEfbrKe2-opHOAFWYI4TGuKKnjIb0L5CQ4VEaFEzGSNCLxRIdyI1tJfGN1eIhsWYEg%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
