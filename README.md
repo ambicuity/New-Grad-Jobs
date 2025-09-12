@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-12 17:09:23 UTC
+🔄 **Last updated:** 2025-09-12 17:29:14 UTC
 
-📊 **Total jobs found:** 78
+📊 **Total jobs found:** 77
 
 ---
 
@@ -15,10 +15,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Twilio | Software Engineer, Early Career - Messaging API | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/6987416) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
-| Google | User Experience Design Apprenticeship, March 2026 Start | New York, NY, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckbd1pjI0o8yzbbDqcn2sya2mKT1pjmrtd43D6i1xHzryEjsASXckS1U7Z4JF2IYzu5wD4P6Htwdmluw2AGfnepcb-lpm04OCni_z0h1wgTXB_6QlEqhP6gNFPjuaVQ%3D%3D_V2&jobTitle=User+Experience+Design+Apprenticeship&loc=US) |
-| Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf3vVMMWkbAFRLZs6jvCA3Hu9uhccUpKVtymQ-mG-RRjEjsASXckS3bKKvyAUEfbrKe2-opHOAFWYI4TGuKKnjIb0L5CQ4VEaFEzGSNCLxRIdyI1tJfGN1eIhsWYEg%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Google | Data Analytics Apprenticeship, March 2026 Start | New York, NY, USA; Atlanta, GA, USA; Chicago, IL, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf3vVMMWkbAFRLZs6jvCA3Hu9uhccUpKVtymQ-mG-RRjEjsASXckS3bKKvyAUEfbrKe2-opHOAFWYI4TGuKKnjIb0L5CQ4VEaFEzGSNCLxRIdyI1tJfGN1eIhsWYEg%3D%3D_V2&jobTitle=Data+Analytics+Apprenticeship&loc=US) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
@@ -39,8 +38,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 2025-09-05 | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 2025-09-04 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 2025-09-04 | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | Coursera | Account Manager, Coursera for Campus | United States | 2025-09-03 | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5611708004) |
