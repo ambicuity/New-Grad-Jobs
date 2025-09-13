@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-13 07:26:13 UTC
+🔄 **Last updated:** 2025-09-13 07:39:00 UTC
 
-📊 **Total jobs found:** 76
+📊 **Total jobs found:** 75
 
 ---
 
@@ -12,7 +12,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | Today | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
