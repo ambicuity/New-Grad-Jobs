@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-14 11:43:00 UTC
+🔄 **Last updated:** 2025-09-14 11:54:34 UTC
 
 📊 **Total jobs found:** 75
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
-| Robinhood | Account Maintenance Associate | Clearwater, FL | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7055880?t=gh_src=&gh_jid=7055880) |
+| Robinhood | Account Maintenance Associate | Clearwater, FL | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7055880?t=gh_src=&gh_jid=7055880) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 3 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
@@ -29,7 +29,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Robinhood | Government Affairs Associate | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
+| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 5 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 5 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 5 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
