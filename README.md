@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-15 19:34:41 UTC
+🔄 **Last updated:** 2025-09-15 19:46:25 UTC
 
 📊 **Total jobs found:** 82
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
+| Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7055880?t=gh_src=&gh_jid=7055880) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | Software Engineer, New Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8155283002?gh_jid=8155283002) |
@@ -27,12 +29,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 3 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
-| Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
-| Robinhood | Account Maintenance Associate | Clearwater, FL | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7055880?t=gh_src=&gh_jid=7055880) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 4 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
@@ -42,8 +42,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-09-08 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 2025-09-05 | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 2025-09-04 | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
