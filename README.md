@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-15 13:36:23 UTC
+🔄 **Last updated:** 2025-09-15 13:48:12 UTC
 
-📊 **Total jobs found:** 79
+📊 **Total jobs found:** 81
 
 ---
 
@@ -12,8 +12,12 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | Today | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
+| Cloudflare | Associate Customer Solutions Engineer | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
+| Duolingo | AI Research Engineer, New Graduate (Masters or PhD) | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 2 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 2 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 2 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
@@ -27,17 +31,15 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 4 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 5 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 6 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 6 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 6 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 2025-09-05 | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Cloudflare | Associate Customer Solutions Engineer | Hybrid | 2025-09-04 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
