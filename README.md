@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-16 14:15:59 UTC
+🔄 **Last updated:** 2025-09-16 14:39:04 UTC
 
-📊 **Total jobs found:** 81
+📊 **Total jobs found:** 84
 
 ---
 
@@ -12,6 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | Today | N/A |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | Today | N/A |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | Today | N/A |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | Today | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
