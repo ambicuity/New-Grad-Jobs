@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-16 13:53:26 UTC
+🔄 **Last updated:** 2025-09-16 14:15:59 UTC
 
 📊 **Total jobs found:** 81
 
@@ -35,7 +35,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
-| Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
+| Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 2025-09-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-09-09 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 2025-09-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-09-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
