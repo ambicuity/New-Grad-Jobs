@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-16 17:26:16 UTC
+🔄 **Last updated:** 2025-09-16 17:40:55 UTC
 
-📊 **Total jobs found:** 84
+📊 **Total jobs found:** 83
 
 ---
 
@@ -26,7 +26,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
