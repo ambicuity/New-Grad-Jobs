@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-16 15:13:24 UTC
+🔄 **Last updated:** 2025-09-16 15:34:23 UTC
 
 📊 **Total jobs found:** 84
 
@@ -26,18 +26,18 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 3 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 3 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 3 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
-| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 3 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Global Positioning System Cloud Infrastructure | Reston, VA, USA | 4 days ago | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 5 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
-| Robinhood | Government Affairs Associate | Washington, DC | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
+| Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 2025-09-09 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
+| Robinhood | Government Affairs Associate | Washington, DC | 2025-09-09 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Global Operations Specialist - New Grad | Los Angeles, California, United States | 2025-09-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/7236827?gh_jid=7236827) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-09-09 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Associate Product Manager (2026) | San Francisco, CA • New York, NY | 2025-09-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5621649004?gh_jid=5621649004) |
