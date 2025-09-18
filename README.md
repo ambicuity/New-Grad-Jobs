@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-18 14:16:29 UTC
+🔄 **Last updated:** 2025-09-18 14:37:28 UTC
 
 📊 **Total jobs found:** 85
 
@@ -24,9 +24,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
-| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 1 day ago | N/A |
-| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 1 day ago | N/A |
-| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 1 day ago | N/A |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2 days ago | N/A |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2 days ago | N/A |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2 days ago | N/A |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7254693?t=gh_src=&gh_jid=7254693) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
 | Duolingo | Software Engineer, New Graduate | Pittsburgh, PA | 3 days ago | [Apply](https://careers.duolingo.com/jobs/8155283002?gh_jid=8155283002) |
