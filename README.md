@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-18 16:26:38 UTC
+🔄 **Last updated:** 2025-09-18 16:45:57 UTC
 
 📊 **Total jobs found:** 85
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
-| SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
+| SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
@@ -52,8 +52,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-09-08 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 2025-09-05 | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Magic Leap | Associate Software Systems Engineer | Austin, TX | 2025-09-04 | [Apply](https://job-boards.greenhouse.io/magicleap/jobs/7081257) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
