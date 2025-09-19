@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-19 19:45:27 UTC
+🔄 **Last updated:** 2025-09-19 19:57:30 UTC
 
 📊 **Total jobs found:** 86
 
@@ -20,8 +20,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | Today | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
-| SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
-| SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
+| SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
+| SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
