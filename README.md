@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-20 11:53:21 UTC
+🔄 **Last updated:** 2025-09-20 12:28:10 UTC
 
 📊 **Total jobs found:** 86
 
@@ -23,7 +23,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
-| Cloudflare | Associate Customer Solutions Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
+| Cloudflare | Associate Customer Solutions Engineer | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
