@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-21 15:16:33 UTC
+🔄 **Last updated:** 2025-09-21 15:30:55 UTC
 
 📊 **Total jobs found:** 82
 
@@ -24,9 +24,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
-| Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
-| Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
+| Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
+| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
