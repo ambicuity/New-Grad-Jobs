@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-23 07:58:47 UTC
+🔄 **Last updated:** 2025-09-23 08:35:14 UTC
 
-📊 **Total jobs found:** 83
+📊 **Total jobs found:** 84
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Coinbase | Associate Manager, Complaints | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7248320?gh_jid=7248320) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | Today | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | Today | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
@@ -36,9 +37,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 6 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 6 days ago | N/A |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 6 days ago | N/A |
-| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 6 days ago | N/A |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7254693?t=gh_src=&gh_jid=7254693) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 2025-09-15 | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
+| Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
@@ -55,8 +56,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-09-08 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 2025-09-05 | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-04 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
