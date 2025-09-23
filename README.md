@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-23 20:38:45 UTC
+🔄 **Last updated:** 2025-09-23 20:50:34 UTC
 
-📊 **Total jobs found:** 85
+📊 **Total jobs found:** 84
 
 ---
 
@@ -35,7 +35,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 2025-09-16 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
-| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | 2025-09-16 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7254693?t=gh_src=&gh_jid=7254693) |
