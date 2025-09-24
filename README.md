@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-24 16:50:02 UTC
+🔄 **Last updated:** 2025-09-24 17:02:14 UTC
 
-📊 **Total jobs found:** 82
+📊 **Total jobs found:** 85
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | Today | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
@@ -19,7 +20,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Associate Manager, Complaints | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7248320?gh_jid=7248320) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
-| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | Today | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
@@ -47,6 +47,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
+| Google | Associate Software Engineer, Google Public Sector, Cloud Infrastructure | Reston, VA, USA | 2025-09-12 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVNZBbEZEkHPhtGkWe-1Ox3kPNmto5gfNmAQld8zWXZdEjsASXckS6KexeYSYUXFns206GDdBacAmCyexZMaGbxyoew8JCrHFlsk2gSTv3VnfxJrAa8nKR1at2xpeQ%3D%3D_V2&jobTitle=Associate+Software+Engineer&loc=US) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 2025-09-12 | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 2025-09-11 | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2025-09-11 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
@@ -69,6 +70,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Software (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8144023002?gh_jid=8144023002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
+| Google | Associate Technical Solutions Engineer, Deployment and Support, Public Sector | Reston, VA, USA | 2025-08-27 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckRMmz0G65MwOaranFClcxir4F6IAqyZjADbBqQhY4xS3EjoASXckS7UBlyOkItRXKa8pN-rH1HCzAibH3a4Ok2dEdU3Iaf5nWPokD_4jvkY9YKW3rtiEyFwv6v-E_V2&jobTitle=Associate+Technical+Solutions+Engineer&loc=US) |
+| Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
