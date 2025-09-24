@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-24 15:28:39 UTC
+🔄 **Last updated:** 2025-09-24 15:44:08 UTC
 
-📊 **Total jobs found:** 80
+📊 **Total jobs found:** 81
 
 ---
 
@@ -12,8 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Coinbase | Associate Manager, Complaints | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7248320?gh_jid=7248320) |
@@ -39,6 +39,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | 2025-09-16 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7254693?t=gh_src=&gh_jid=7254693) |
