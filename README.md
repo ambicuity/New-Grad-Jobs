@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-24 08:58:18 UTC
+🔄 **Last updated:** 2025-09-24 09:28:43 UTC
 
-📊 **Total jobs found:** 82
+📊 **Total jobs found:** 81
 
 ---
 
@@ -32,7 +32,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
-| Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
+| Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | Cloudflare | Associate Customer Solutions Engineer | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7230679?gh_jid=7230679) |
@@ -75,7 +75,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQvzerP2JPvVejlhnKXNFmO6FM-Dw0Ro__woxbxSyl41EjsASXckS4TLFL_nNo4UurLUPHnKmiEd8vI4gduX5o5pnvi98j6E16OUhyheSxHmTWyU-qptk6K2EQFIPA%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
-| Google | Software Engineer, PhD, Early Career, Infrastructure, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Austin, TX, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVc-hqc8Mfy8TEjImPUHx0VmQ9kQ9CTDN8PM-_fdBJMnEjsASXckS-JBAexAvjEFm9McCTVJZ-NYL1N-ki1ogeKscLhYagOnaWypLCuEAPMZsM1Xbi9WsHjLrGuCJg%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Infrastructure, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Austin, TX, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVc-hqc8Mfy8TEjImPUHx0VmQ9kQ9CTDN8PM-_fdBJMnEjsASXckS-JBAexAvjEFm9McCTVJZ-NYL1N-ki1ogeKscLhYagOnaWypLCuEAPMZsM1Xbi9WsHjLrGuCJg%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Infrastructure, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Austin, TX, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVc-hqc8Mfy8TEjImPUHx0VmQ9kQ9CTDN8PM-_fdBJMnEjsASXckS-JBAexAvjEFm9McCTVJZ-NYL1N-ki1ogeKscLhYagOnaWypLCuEAPMZsM1Xbi9WsHjLrGuCJg%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Google | Software Engineer, PhD, Early Career, Infrastructure, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Austin, TX, USA; Kirkland, WA, USA; Los Angeles, CA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckVc-hqc8Mfy8TEjImPUHx0VmQ9kQ9CTDN8PM-_fdBJMnEjsASXckS-JBAexAvjEFm9McCTVJZ-NYL1N-ki1ogeKscLhYagOnaWypLCuEAPMZsM1Xbi9WsHjLrGuCJg%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
