@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-25 14:54:23 UTC
+🔄 **Last updated:** 2025-09-25 15:18:51 UTC
 
 📊 **Total jobs found:** 85
 
@@ -25,7 +25,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
-| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
+| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 3 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
