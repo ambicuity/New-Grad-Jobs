@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-26 19:50:36 UTC
+🔄 **Last updated:** 2025-09-26 20:11:01 UTC
 
-📊 **Total jobs found:** 85
+📊 **Total jobs found:** 84
 
 ---
 
@@ -89,7 +89,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Google | Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start | Sunnyvale, CA, USA; Atlanta, GA, USA; Kirkland, WA, USA; Madison, WI, USA; Mountain View, CA, USA; New York, NY, USA; Raleigh, NC, USA; Durham, NC, USA; San Bruno, CA, USA; Seattle, WA, USA | 2025-08-26 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeYz1B-u5NbhAHYeBKz8za-fw00UT4XUcBVn_yPGzicDEjsASXckS88W464drpXUZRWh39KLsIpEiJTUx6Xu3ayH8bw_QxrWmpyTUGOn7EyCIsdhfuw-KtPc3YAjuQ%3D%3D_V2&jobTitle=Software+Engineer&loc=US) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-08-25 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Roblox | Recruiter, Early Career Talent  | San Mateo, CA, United States | 2025-08-25 | [Apply](https://careers.roblox.com/jobs/6928130?gh_jid=6928130) |
-| Chime | Product Security Engineer (New Grad) | San Francisco, CA | 2025-08-19 | [Apply](https://boards.greenhouse.io/chime/jobs/8101747002?gh_jid=8101747002) |
 | Palantir | Software Engineer, New Grad - Infrastructure | Palo Alto, CA | 2025-08-19 | [Apply](https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d) |
 | Palantir | Software Engineer, New Grad - Production Infrastructure | Washington, D.C. | 2025-08-19 | [Apply](https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | 2025-08-13 | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
