@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-26 15:57:22 UTC
+🔄 **Last updated:** 2025-09-26 16:30:25 UTC
 
 📊 **Total jobs found:** 80
 
@@ -12,9 +12,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
+| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | Today | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| MongoDB | Associate Account Executive, Voyage AI Embedding & Reranking Models | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7128872) |
 | Coinbase | Associate Manager, Complaints | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7248320?gh_jid=7248320) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
@@ -30,7 +31,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
