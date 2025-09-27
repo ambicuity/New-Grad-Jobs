@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-27 03:51:05 UTC
+🔄 **Last updated:** 2025-09-27 04:12:54 UTC
 
 📊 **Total jobs found:** 85
 
@@ -27,10 +27,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2 days ago | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
-| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
-| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
+| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 4 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
