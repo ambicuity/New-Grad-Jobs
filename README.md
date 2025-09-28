@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-28 13:00:18 UTC
+🔄 **Last updated:** 2025-09-28 13:28:35 UTC
 
-📊 **Total jobs found:** 76
+📊 **Total jobs found:** 77
 
 ---
 
@@ -26,7 +26,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
-| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 3 days ago | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
+| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 4 days ago | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
@@ -44,6 +44,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 2025-09-15 | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
