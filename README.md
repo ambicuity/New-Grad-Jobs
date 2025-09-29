@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-29 04:21:03 UTC
+🔄 **Last updated:** 2025-09-29 04:42:42 UTC
 
-📊 **Total jobs found:** 79
+📊 **Total jobs found:** 80
 
 ---
 
@@ -44,6 +44,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-09-17 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Google | Associate Product Manager, University Graduate, 2026 Start | Mountain View, CA, USA; New York, NY, USA; San Bruno, CA, USA; San Francisco, CA, USA; San Jose, CA, USA; Sunnyvale, CA, USA | 2025-09-16 | [Apply](https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckSnD3Ev5jiA-pGu8cRt-7rbRS1iGtNF4CQOMQL9jgF3sEjsAbDj5iKy-Eyb7ngkCevhqe5EkCiPQ7PyG3msQS4m6jMp2VP-DOB0zS_TffqnoqCOj-SzV9qtEcy60XQ%3D%3D_V2&jobTitle=Associate+Product+Manager&loc=US) |
 | Roblox | [2026] Associate Product Manager, Early Career | San Mateo, CA, United States | 2025-09-15 | [Apply](https://careers.roblox.com/jobs/7167343?gh_jid=7167343) |
