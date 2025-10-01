@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-09-30 23:55:38 UTC
+🔄 **Last updated:** 2025-10-01 01:44:18 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,6 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | Today | [Apply](https://www.pinterestcareers.com/job-form?gh_jid=7211012) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
@@ -31,10 +34,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-09-22 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-09-22 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 2025-09-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
