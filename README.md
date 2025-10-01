@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-01 14:44:38 UTC
+🔄 **Last updated:** 2025-10-01 14:56:51 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,7 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Robinhood | Account Maintenance Associate | Clearwater, FL; Gainesville, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7279982?t=gh_src=&gh_jid=7279982) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
+| Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
@@ -21,7 +23,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Robinhood | Account Maintenance Associate | Clearwater, FL; Gainesville, FL | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7279982?t=gh_src=&gh_jid=7279982) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
@@ -49,7 +50,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 2025-09-11 | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2025-09-11 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 2025-09-11 | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
-| Robinhood | Government Affairs Associate | Washington, DC | 2025-09-09 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-09-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
