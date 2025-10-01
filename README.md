@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-01 18:53:52 UTC
+🔄 **Last updated:** 2025-10-01 19:13:19 UTC
 
-📊 **Total jobs found:** 58
+📊 **Total jobs found:** 57
 
 ---
 
@@ -29,7 +29,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Coinbase | Associate General Counsel, Privacy & Data Protection | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7232602?gh_jid=7232602) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 2025-09-24 | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
