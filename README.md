@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-02 11:09:08 UTC
+🔄 **Last updated:** 2025-10-02 11:25:56 UTC
 
 📊 **Total jobs found:** 56
 
@@ -23,16 +23,16 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
-| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
-| Samsara | (New Grad) Software Engineering | San Francisco, CA | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
+| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
+| Samsara | (New Grad) Software Engineering | San Francisco, CA | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 2025-09-24 | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-09-22 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
