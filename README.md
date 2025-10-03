@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-03 18:52:48 UTC
+🔄 **Last updated:** 2025-10-03 19:10:53 UTC
 
-📊 **Total jobs found:** 56
+📊 **Total jobs found:** 57
 
 ---
 
@@ -12,6 +12,11 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
+| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
+| Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | Today | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
@@ -33,10 +38,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 6 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-09-26 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-26 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
-| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-09-24 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-09-22 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 2025-09-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
