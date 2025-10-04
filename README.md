@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-04 09:54:54 UTC
+🔄 **Last updated:** 2025-10-04 10:17:01 UTC
 
 📊 **Total jobs found:** 57
 
@@ -17,8 +17,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | Today | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
-| Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
-| Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
+| Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
+| Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
