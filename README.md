@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-04 17:56:46 UTC
+🔄 **Last updated:** 2025-10-04 18:27:49 UTC
 
 📊 **Total jobs found:** 57
 
@@ -19,12 +19,12 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL; Gainesville, FL | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7279982?t=gh_src=&gh_jid=7279982) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 3 days ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
