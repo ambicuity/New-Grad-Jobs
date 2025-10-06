@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-06 20:20:24 UTC
+🔄 **Last updated:** 2025-10-06 20:38:08 UTC
 
 📊 **Total jobs found:** 56
 
@@ -33,8 +33,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
