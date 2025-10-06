@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-06 11:54:04 UTC
+🔄 **Last updated:** 2025-10-06 12:34:35 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,8 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
@@ -22,7 +22,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
-| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 3 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
+| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 4 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL; Gainesville, FL | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7279982?t=gh_src=&gh_jid=7279982) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
