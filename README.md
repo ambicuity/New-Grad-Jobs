@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-06 10:55:52 UTC
+🔄 **Last updated:** 2025-10-06 11:17:41 UTC
 
 📊 **Total jobs found:** 57
 
@@ -32,9 +32,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Robinhood | Government Affairs Associate | Washington, DC | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
-| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
-| Samsara | (New Grad) Software Engineering | San Francisco, CA | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
+| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
+| Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-09-26 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-09-26 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-26 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
