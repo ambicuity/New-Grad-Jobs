@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-07 20:15:33 UTC
+🔄 **Last updated:** 2025-10-07 20:34:50 UTC
 
-📊 **Total jobs found:** 57
+📊 **Total jobs found:** 56
 
 ---
 
@@ -12,22 +12,21 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Okta | Associate Site Reliability Engineer | Bellevue, Washington | Today | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
+| Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | Today | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
 | Twilio | Junior Software Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Unity Technologies | Junior Software Engineer, Quality | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/7288924?gh_jid=7288924) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Global Operations Coordinator- [NEW GRAD] | Dallas, Texas, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202520?gh_jid=7202520) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 4 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 4 days ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 5 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7262831?gh_jid=7262831) |
-| Okta | Associate Site Reliability Engineer | Bellevue, Washington | 5 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
-| Robinhood | Account Maintenance Associate | Clearwater, FL; Gainesville, FL | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7279982?t=gh_src=&gh_jid=7279982) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
