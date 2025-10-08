@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-08 16:12:12 UTC
+🔄 **Last updated:** 2025-10-08 16:40:13 UTC
 
 📊 **Total jobs found:** 55
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | Today | [Apply](https://www.okta.com/company/careers/opportunity/7294145?gh_jid=7294145) |
-| Okta | Associate Site Reliability Engineer | Bellevue, Washington | Today | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
+| Okta | Associate Site Reliability Engineer | Bellevue, Washington | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
@@ -27,7 +27,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 6 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2025-10-01 | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 2025-10-01 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
