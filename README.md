@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-09 11:55:19 UTC
+🔄 **Last updated:** 2025-10-09 12:40:20 UTC
 
 📊 **Total jobs found:** 54
 
@@ -24,7 +24,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 6 days ago | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 6 days ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 6 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
+| Pinterest | Software Engineer University Grad  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-10-02 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211012) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-10-01 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
