@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-11 14:16:20 UTC
+🔄 **Last updated:** 2025-10-11 14:31:12 UTC
 
 📊 **Total jobs found:** 57
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | Today | [Apply](https://www.okta.com/company/careers/opportunity/7294145?gh_jid=7294145) |
-| Twilio | Junior Software Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
+| Twilio | Junior Software Engineer | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 1 day ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
