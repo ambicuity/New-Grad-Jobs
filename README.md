@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-12 15:54:26 UTC
+🔄 **Last updated:** 2025-10-12 16:20:05 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,11 +12,11 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7294145?gh_jid=7294145) |
+| Okta | Developer Support Associate - New Graduate, Summer 2025 | Bellevue, Washington; Chicago, Illinois | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7294145?gh_jid=7294145) |
 | Twilio | Junior Software Engineer | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Datadog | Datadog for Startups Associate | New York, New York, USA | 2 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
+| Datadog | Datadog for Startups Associate | New York, New York, USA | 3 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 3 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 4 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
