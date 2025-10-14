@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-14 17:54:54 UTC
+🔄 **Last updated:** 2025-10-14 18:25:12 UTC
 
 📊 **Total jobs found:** 51
 
@@ -12,8 +12,11 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
+| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
+| SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
@@ -33,8 +36,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-10-01 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-09-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-09-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
@@ -42,7 +43,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-09-26 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-26 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-09-22 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-09-19 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 2025-09-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
