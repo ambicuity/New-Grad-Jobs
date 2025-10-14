@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-14 11:59:13 UTC
+🔄 **Last updated:** 2025-10-14 12:58:27 UTC
 
 📊 **Total jobs found:** 50
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Denver, CO; Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Robinhood | Government Affairs Associate | Washington, DC | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7176288?t=gh_src=&gh_jid=7176288) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
@@ -31,7 +32,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-10-01 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2025-10-01 | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-09-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-09-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
