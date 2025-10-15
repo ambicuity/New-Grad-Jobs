@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-15 15:55:18 UTC
+🔄 **Last updated:** 2025-10-15 16:21:40 UTC
 
 📊 **Total jobs found:** 50
 
@@ -21,7 +21,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Datadog | Datadog for Startups Associate | New York, New York, USA | 5 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
+| Datadog | Datadog for Startups Associate | New York, New York, USA | 6 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 6 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-10-07 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
