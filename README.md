@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-16 18:53:26 UTC
+🔄 **Last updated:** 2025-10-16 19:11:35 UTC
 
-📊 **Total jobs found:** 51
+📊 **Total jobs found:** 53
 
 ---
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
+| Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7302860?t=gh_src=&gh_jid=7302860) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
