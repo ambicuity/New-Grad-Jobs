@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-17 19:40:42 UTC
+🔄 **Last updated:** 2025-10-17 19:52:10 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
@@ -36,8 +38,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 2025-10-03 | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-03 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-10-01 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-01 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
