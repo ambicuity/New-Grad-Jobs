@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-17 08:28:58 UTC
+🔄 **Last updated:** 2025-10-17 08:50:34 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=6447851) |
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7302860?t=gh_src=&gh_jid=7302860) |
@@ -23,10 +26,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-10-09 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-10-09 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-10-07 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-10-06 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
