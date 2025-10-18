@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-18 16:20:53 UTC
+🔄 **Last updated:** 2025-10-18 16:41:12 UTC
 
 📊 **Total jobs found:** 51
 
@@ -23,7 +23,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, Routing - New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7066706) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7302860?t=gh_src=&gh_jid=7302860) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
+| SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Westlake, TX | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
