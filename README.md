@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-20 11:54:52 UTC
+🔄 **Last updated:** 2025-10-20 12:39:21 UTC
 
 📊 **Total jobs found:** 51
 
@@ -29,7 +29,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
-| SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
+| SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-10-09 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-10-09 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-10-06 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
