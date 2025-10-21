@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-21 15:57:23 UTC
+🔄 **Last updated:** 2025-10-21 16:34:01 UTC
 
-📊 **Total jobs found:** 51
+📊 **Total jobs found:** 52
 
 ---
 
@@ -12,8 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
+| Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | Today | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Duolingo | Software Engineer, 2025 Recent Graduate | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8167507002?gh_jid=8167507002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
