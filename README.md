@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-23 14:55:48 UTC
+🔄 **Last updated:** 2025-10-23 15:22:26 UTC
 
-📊 **Total jobs found:** 51
+📊 **Total jobs found:** 52
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | Today | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2 days ago | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
