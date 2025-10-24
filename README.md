@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-24 11:45:16 UTC
+🔄 **Last updated:** 2025-10-24 11:57:12 UTC
 
 📊 **Total jobs found:** 53
 
@@ -15,7 +15,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7302860?t=gh_src=&gh_jid=7302860) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
-| Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | Today | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
+| Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2 days ago | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
