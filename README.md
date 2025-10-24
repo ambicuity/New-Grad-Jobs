@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-24 04:01:33 UTC
+🔄 **Last updated:** 2025-10-24 04:32:27 UTC
 
 📊 **Total jobs found:** 53
 
@@ -27,9 +27,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 6 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
-| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 2025-10-15 | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2025-10-14 | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-10-09 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
