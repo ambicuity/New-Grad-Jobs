@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-25 18:56:57 UTC
+🔄 **Last updated:** 2025-10-25 19:18:03 UTC
 
 📊 **Total jobs found:** 53
 
@@ -19,7 +19,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Okta | Solutions Engineering Associate, Okta | Massachusetts; New Jersey; New York, New York | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7291346?gh_jid=7291346) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 4 days ago | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
