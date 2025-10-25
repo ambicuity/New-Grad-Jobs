@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-25 20:58:05 UTC
+🔄 **Last updated:** 2025-10-25 21:22:18 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
@@ -46,7 +47,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-09-26 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-26 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-09-22 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 2025-09-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
