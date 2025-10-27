@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-27 12:39:37 UTC
+🔄 **Last updated:** 2025-10-27 13:21:41 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
+| Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
@@ -41,8 +43,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-10-06 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-10-06 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-06 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Unity Technologies | Junior Graphics Developer | Vilnius, Lithuania | 2025-10-03 | [Apply](https://unity.com/careers/positions/7099785?gh_jid=7099785) |
-| Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-03 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-10-01 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
