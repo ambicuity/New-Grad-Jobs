@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-28 14:55:42 UTC
+🔄 **Last updated:** 2025-10-28 15:23:38 UTC
 
 📊 **Total jobs found:** 52
 
@@ -12,8 +12,11 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
+| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
+| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
-| Twilio | Junior Software Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
+| Twilio | Junior Software Engineer | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
@@ -47,7 +50,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-09-29 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-09-26 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-09-22 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Databricks | Software Engineering New Grad (2026) | Belgrade, Serbia | 2025-09-19 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002) |
 | SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2025-09-18 | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
@@ -55,8 +57,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 2025-09-12 | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Roblox | [2026] Associate Product Designer, Early Career | San Mateo, CA, United States | 2025-09-11 | [Apply](https://careers.roblox.com/jobs/7167345?gh_jid=7167345) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2025-09-11 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
-| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-09-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
-| Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-09-08 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 2025-09-02 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
