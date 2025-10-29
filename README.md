@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-29 15:45:14 UTC
+🔄 **Last updated:** 2025-10-29 15:57:45 UTC
 
 📊 **Total jobs found:** 52
 
@@ -15,7 +15,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
+| New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Twilio | Junior Software Engineer | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7274071) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2 days ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
