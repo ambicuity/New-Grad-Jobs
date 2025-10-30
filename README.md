@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-10-30 19:59:01 UTC
+🔄 **Last updated:** 2025-10-30 20:30:35 UTC
 
 📊 **Total jobs found:** 51
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
@@ -29,8 +31,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-10-23 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-10-22 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-20 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-10-20 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-10-20 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-10-17 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-17 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
