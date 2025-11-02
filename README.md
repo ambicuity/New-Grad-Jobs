@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-02 03:52:24 UTC
+🔄 **Last updated:** 2025-11-02 04:17:31 UTC
 
 📊 **Total jobs found:** 43
 
@@ -25,7 +25,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | New Relic | Associate Software Engineer- K8s Agents | Portland, Oregon, USA | 5 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4891935008?gh_jid=4891935008) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 5 days ago | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-10-25 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-10-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-10-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
