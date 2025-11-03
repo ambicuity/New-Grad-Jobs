@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-03 17:59:59 UTC
+🔄 **Last updated:** 2025-11-03 18:37:52 UTC
 
 📊 **Total jobs found:** 44
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | GitLab | Associate Support Engineer (AMER) | Remote, Americas | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 4 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
@@ -35,7 +36,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-10-23 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-10-22 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-10-20 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-10-17 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-10-17 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
