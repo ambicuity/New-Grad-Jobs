@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-03 01:26:45 UTC
+🔄 **Last updated:** 2025-11-03 03:06:58 UTC
 
 📊 **Total jobs found:** 44
 
@@ -12,7 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| GitLab | Associate Support Engineer | Remote | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
+| GitLab | Associate Support Engineer (AMER) | Remote, Americas | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 3 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
