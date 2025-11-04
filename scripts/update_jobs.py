@@ -668,9 +668,9 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Sources:** Greenhouse, Lever, Google Careers, and JobSpy (LinkedIn, Indeed, Glassdoor) job boards
 
 ### Companies Monitored
-**Greenhouse:** {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
+**Greenhouse:** {', '.join(sorted([company['name'] for company in config['apis']['greenhouse']['companies']]))}
 
-**Lever:** {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
+**Lever:** {', '.join(sorted([company['name'] for company in config['apis']['lever']['companies']]))}
 
 **Google Careers:** Direct API searches for new graduate positions
 
