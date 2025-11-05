@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-05 16:21:46 UTC
+🔄 **Last updated:** 2025-11-05 16:48:52 UTC
 
 📊 **Total jobs found:** 45
 
@@ -16,15 +16,15 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| SpaceX | NDE Inspector Trainee | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8240536002?gh_jid=8240536002) |
+| SpaceX | NDE Inspector Trainee | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8240536002?gh_jid=8240536002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | GitLab | Associate Support Engineer (AMER) | Remote, Americas | 2 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
-| Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
-| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
-| Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 5 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
+| Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
+| Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
+| Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
+| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-10-29 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
@@ -40,8 +40,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Robinhood | Customer Experience Associate, Pathways - New Graduates | Westlake, TX | 2025-10-23 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7202639?t=gh_src=&gh_jid=7202639) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 2025-10-15 | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2025-10-14 | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
