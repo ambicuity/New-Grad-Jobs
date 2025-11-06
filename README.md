@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-06 15:49:47 UTC
+🔄 **Last updated:** 2025-11-06 16:01:39 UTC
 
 📊 **Total jobs found:** 52
 
@@ -41,8 +41,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
 | Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 6 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 6 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-10-29 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Figma | Early Career, Data Scientist (2026) | San Francisco, CA • New York, NY | 2025-10-28 | [Apply](https://boards.greenhouse.io/figma/jobs/5615025004?gh_jid=5615025004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-10-28 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
