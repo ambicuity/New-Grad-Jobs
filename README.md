@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-07 11:22:55 UTC
+🔄 **Last updated:** 2025-11-07 11:37:44 UTC
 
 📊 **Total jobs found:** 51
 
