@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-09 23:47:32 UTC
+🔄 **Last updated:** 2025-11-09 23:59:05 UTC
 
 📊 **Total jobs found:** 53
 
@@ -17,7 +17,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 3 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | SpaceX | NDE Inspector Trainee | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8240536002?gh_jid=8240536002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
