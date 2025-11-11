@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-11 22:34:51 UTC
+🔄 **Last updated:** 2025-11-11 22:47:20 UTC
 
-📊 **Total jobs found:** 56
+📊 **Total jobs found:** 57
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | Today | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 1 day ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
 | Fastly | Associate Customer Support Engineer | San Francisco, CA | 1 day ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386952) |
 | Fastly | Associate Customer Support Engineer | Denver, CO | 1 day ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386966) |
