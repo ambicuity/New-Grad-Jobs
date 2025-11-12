@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-12 17:55:49 UTC
+🔄 **Last updated:** 2025-11-12 18:29:59 UTC
 
-📊 **Total jobs found:** 56
+📊 **Total jobs found:** 55
 
 ---
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
-| Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 1 day ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
+| Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 2 days ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
 | Fastly | Associate Customer Support Engineer | San Francisco, CA | 2 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386952) |
 | Fastly | Associate Customer Support Engineer | Denver, CO | 2 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386966) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
@@ -47,7 +47,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Databricks | Data Scientist - New Grad (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866554002) |
-| Databricks | Software Engineer - New Grad, Distributed Data Systems (2026 Start) | Bellevue, Washington; Mountain View, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6865704002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-10-29 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
