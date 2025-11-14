@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-14 11:01:46 UTC
+🔄 **Last updated:** 2025-11-14 11:25:46 UTC
 
 📊 **Total jobs found:** 55
 
@@ -17,8 +17,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 1 day ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
 | Fastly | Associate Customer Support Engineer | Denver, CO | 3 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386966) |
 | Fastly | Associate Customer Support Engineer | San Francisco, CA | 3 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7386952) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-11-07 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-11-07 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 2025-11-06 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-11-06 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | Okta | Associate Site Reliability Engineer | Bellevue, Washington | 2025-11-06 | [Apply](https://www.okta.com/company/careers/opportunity/7247309?gh_jid=7247309) |
