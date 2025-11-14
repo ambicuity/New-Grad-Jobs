@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-14 17:56:26 UTC
+🔄 **Last updated:** 2025-11-14 18:33:03 UTC
 
 📊 **Total jobs found:** 53
 
@@ -17,7 +17,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
-| Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 1 day ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
+| Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 2 days ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-11-07 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-11-07 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 2025-11-06 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
