@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-14 17:01:47 UTC
+🔄 **Last updated:** 2025-11-14 17:28:15 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
@@ -40,7 +41,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Software (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8121675002?gh_jid=8121675002) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-04 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 2025-11-04 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-11-04 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-11-03 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
