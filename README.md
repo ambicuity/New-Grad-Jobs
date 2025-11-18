@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-18 11:53:35 UTC
+🔄 **Last updated:** 2025-11-18 12:34:41 UTC
 
 📊 **Total jobs found:** 52
 
@@ -19,7 +19,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 4 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
 | Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 5 days ago | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
