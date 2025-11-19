@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-19 22:43:44 UTC
+🔄 **Last updated:** 2025-11-19 22:55:15 UTC
 
 📊 **Total jobs found:** 53
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | Today | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | Today | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
@@ -22,7 +23,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | Data Scientist, Intern (Undergraduate) | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8162869002?gh_jid=8162869002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
