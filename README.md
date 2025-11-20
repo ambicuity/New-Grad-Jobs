@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-20 13:53:18 UTC
+🔄 **Last updated:** 2025-11-20 14:15:43 UTC
 
 📊 **Total jobs found:** 53
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| Duolingo | Data Scientist, Intern (Undergraduate) | Pittsburgh, PA | 1 day ago | [Apply](https://careers.duolingo.com/jobs/8162869002?gh_jid=8162869002) |
+| Duolingo | Data Scientist, Intern (Undergraduate) | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8162869002?gh_jid=8162869002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
