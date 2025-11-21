@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-21 19:29:57 UTC
+🔄 **Last updated:** 2025-11-21 19:41:52 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career (Funnel) | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7324378?gh_jid=7324378) |
@@ -57,7 +58,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | SpaceX | New Graduate Engineer, Software (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8121675002?gh_jid=8121675002) |
-| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 2025-11-04 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-11-03 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
