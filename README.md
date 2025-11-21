@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-21 17:36:41 UTC
+🔄 **Last updated:** 2025-11-21 17:48:28 UTC
 
 📊 **Total jobs found:** 57
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
