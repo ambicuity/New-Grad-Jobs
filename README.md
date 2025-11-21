@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-21 08:52:08 UTC
+🔄 **Last updated:** 2025-11-21 09:14:55 UTC
 
 📊 **Total jobs found:** 58
 
@@ -25,10 +25,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 1 day ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
-| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
+| Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
+| Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Duolingo | Data Scientist, Intern (Undergraduate) | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8162869002?gh_jid=8162869002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
