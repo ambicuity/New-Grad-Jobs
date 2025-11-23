@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-23 11:18:19 UTC
+🔄 **Last updated:** 2025-11-23 11:30:40 UTC
 
 📊 **Total jobs found:** 57
 
@@ -25,7 +25,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
-| Datadog | Datadog for Startups Associate | New York, New York, USA | 3 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
+| Datadog | Datadog for Startups Associate | New York, New York, USA | 4 days ago | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
