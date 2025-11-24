@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-24 22:59:35 UTC
+🔄 **Last updated:** 2025-11-24 23:27:05 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
@@ -35,7 +36,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-11-17 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-11-14 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-11-14 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-11-14 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-11-13 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 2025-11-12 | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
 | Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 2025-11-12 | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
