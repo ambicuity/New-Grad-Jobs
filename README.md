@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-24 14:16:03 UTC
+🔄 **Last updated:** 2025-11-24 14:42:42 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,8 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
+| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career (Funnel) | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7324378?gh_jid=7324378) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
@@ -66,8 +66,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
