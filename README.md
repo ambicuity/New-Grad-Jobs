@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-25 16:35:08 UTC
+🔄 **Last updated:** 2025-11-25 16:57:37 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,9 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
