@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-25 19:33:07 UTC
+🔄 **Last updated:** 2025-11-25 19:45:15 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Roblox | [2025] Senior Machine Learning Engineer - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/6595289?gh_jid=6595289) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
@@ -24,7 +25,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 6 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
@@ -67,8 +67,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
