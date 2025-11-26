@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-26 17:42:10 UTC
+🔄 **Last updated:** 2025-11-26 17:53:48 UTC
 
 📊 **Total jobs found:** 59
 
@@ -27,7 +27,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-11-19 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-11-19 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-11-19 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
