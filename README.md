@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-11-27 10:56:20 UTC
+🔄 **Last updated:** 2025-11-27 11:20:42 UTC
 
 📊 **Total jobs found:** 59
 
@@ -24,7 +24,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
-| New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
+| New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
@@ -68,8 +68,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
