@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-01 20:28:32 UTC
+🔄 **Last updated:** 2025-12-01 20:43:22 UTC
 
-📊 **Total jobs found:** 61
+📊 **Total jobs found:** 60
 
 ---
 
@@ -62,7 +62,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | SpaceX | New Graduate Engineer, Software (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8121675002?gh_jid=8121675002) |
-| Duolingo |  Data Scientist, New Graduate | Pittsburgh, PA | 2025-11-03 | [Apply](https://careers.duolingo.com/jobs/8162849002?gh_jid=8162849002) |
 | Databricks | Associate Product Manager, New Grad (2026 Start) | Bellevue, Washington; Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7586263002) |
 | Databricks | Data Science Intern (2026 Start) | Mountain View, California; San Francisco, California | 2025-10-30 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
