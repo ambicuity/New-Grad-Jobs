@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-01 19:58:24 UTC
+🔄 **Last updated:** 2025-12-01 20:28:32 UTC
 
-📊 **Total jobs found:** 62
+📊 **Total jobs found:** 61
 
 ---
 
@@ -38,7 +38,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-11-19 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
-| Duolingo | Data Scientist, Intern (Undergraduate) | Pittsburgh, PA | 2025-11-18 | [Apply](https://careers.duolingo.com/jobs/8162869002?gh_jid=8162869002) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-11-18 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-11-14 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-11-14 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
