@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-02 16:25:25 UTC
+🔄 **Last updated:** 2025-12-02 16:54:15 UTC
 
 📊 **Total jobs found:** 60
 
@@ -15,8 +15,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 1 day ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 5 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
 | Spotify | Associate Machine Learning Engineer, Trust & Safety Intelligence | New York, NY | 5 days ago | [Apply](https://jobs.lever.co/spotify/74471c7c-e0ee-417d-8a83-b69185e1e116) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
