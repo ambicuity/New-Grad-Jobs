@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-02 20:48:28 UTC
+🔄 **Last updated:** 2025-12-02 20:59:48 UTC
 
 📊 **Total jobs found:** 60
 
@@ -19,7 +19,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 5 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
-| Spotify | Associate Machine Learning Engineer, Trust & Safety Intelligence | New York, NY | 5 days ago | [Apply](https://jobs.lever.co/spotify/74471c7c-e0ee-417d-8a83-b69185e1e116) |
+| Spotify | Associate Machine Learning Engineer, Trust & Safety Intelligence | New York, NY | 6 days ago | [Apply](https://jobs.lever.co/spotify/74471c7c-e0ee-417d-8a83-b69185e1e116) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
@@ -69,8 +69,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
