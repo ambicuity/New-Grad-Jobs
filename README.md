@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-02 12:46:43 UTC
+🔄 **Last updated:** 2025-12-02 13:29:17 UTC
 
 📊 **Total jobs found:** 60
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
-| SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
+| SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 1 day ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
@@ -24,7 +24,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 6 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Roblox | [2026] Software Engineer, Security - Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7403999?gh_jid=7403999) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
