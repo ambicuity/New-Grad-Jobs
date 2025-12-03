@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-03 20:48:34 UTC
+🔄 **Last updated:** 2025-12-03 21:00:34 UTC
 
-📊 **Total jobs found:** 60
+📊 **Total jobs found:** 59
 
 ---
 
@@ -35,7 +35,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2025-11-21 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-11-19 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
-| Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-11-19 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-11-18 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
