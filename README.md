@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-03 14:02:26 UTC
+🔄 **Last updated:** 2025-12-03 14:34:47 UTC
 
 📊 **Total jobs found:** 60
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
@@ -34,8 +36,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-11-19 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Datadog | Datadog for Startups Associate | New York, New York, USA | 2025-11-19 | [Apply](https://careers.datadoghq.com/detail/7307667/?gh_jid=7307667) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-11-19 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-11-19 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-11-18 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
@@ -69,8 +69,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Datadog | Campus Programs Operations Associate - NYC | New York, New York, USA | 2025-10-21 | [Apply](https://careers.datadoghq.com/detail/7338982/?gh_jid=7338982) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
