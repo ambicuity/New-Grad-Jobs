@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-04 23:01:21 UTC
+🔄 **Last updated:** 2025-12-04 23:28:51 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
@@ -28,7 +29,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7403999?gh_jid=7403999) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-11-24 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
