@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-05 07:29:48 UTC
+🔄 **Last updated:** 2025-12-05 07:44:08 UTC
 
 📊 **Total jobs found:** 58
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
-| GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 3 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
+| GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 4 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | New Relic | Associate Technical Support Engineer (EST) | Atlanta, Georgia, USA; Charlotte, North Carolina, USA; Miami, Florida, USA; Nashville, Tennessee, USA; New Orleans, Louisiana, USA | 2025-11-27 | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4924025008?gh_jid=4924025008) |
