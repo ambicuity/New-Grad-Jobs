@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-08 19:27:10 UTC
+🔄 **Last updated:** 2025-12-08 19:41:27 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,6 +12,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
+| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
+| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
+| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 3 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
@@ -28,10 +32,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
-| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
-| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2025-11-25 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2025-11-21 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-11-19 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
@@ -67,8 +67,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
