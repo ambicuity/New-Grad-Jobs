@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-09 22:41:47 UTC
+🔄 **Last updated:** 2025-12-09 22:53:46 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | Today | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
@@ -29,7 +30,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-01 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | 2025-12-01 | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
-| GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 2025-12-01 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2025-11-26 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
