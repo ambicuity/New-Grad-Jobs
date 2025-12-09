@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-09 16:59:26 UTC
+🔄 **Last updated:** 2025-12-09 17:30:12 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,9 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
