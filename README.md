@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-09 15:35:01 UTC
+🔄 **Last updated:** 2025-12-09 15:50:27 UTC
 
 📊 **Total jobs found:** 57
 
@@ -12,9 +12,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Twitch | Graduate Data Science Intern | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
@@ -34,7 +35,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2025-11-21 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-11-19 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
-| Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-11-19 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-11-18 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
