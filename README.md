@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-10 15:45:33 UTC
+🔄 **Last updated:** 2025-12-10 15:59:56 UTC
 
 📊 **Total jobs found:** 57
 
@@ -13,7 +13,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
-| Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | Today | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
+| Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
