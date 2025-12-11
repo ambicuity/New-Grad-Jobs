@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-11 16:01:01 UTC
+🔄 **Last updated:** 2025-12-11 16:45:11 UTC
 
 📊 **Total jobs found:** 57
 
@@ -25,8 +25,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 6 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2025-12-03 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-01 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
@@ -66,8 +66,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
-| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
+| Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
