@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-12 18:53:17 UTC
+🔄 **Last updated:** 2025-12-12 19:14:32 UTC
 
 📊 **Total jobs found:** 59
 
@@ -12,8 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | GitLab | Associate Support Engineer (EMEA) | Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 1 day ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 2 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
