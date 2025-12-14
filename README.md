@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-14 11:54:33 UTC
+🔄 **Last updated:** 2025-12-14 12:35:21 UTC
 
 📊 **Total jobs found:** 60
 
@@ -17,7 +17,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | GitLab | Associate Support Engineer (EMEA) | Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
-| Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
+| Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 3 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 3 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
