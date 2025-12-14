@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-14 13:09:13 UTC
+🔄 **Last updated:** 2025-12-14 13:38:26 UTC
 
 📊 **Total jobs found:** 60
 
@@ -19,7 +19,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | GitLab | Associate Support Engineer (EMEA) | Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 3 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 3 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
