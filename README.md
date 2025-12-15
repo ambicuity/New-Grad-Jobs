@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-15 14:01:39 UTC
+🔄 **Last updated:** 2025-12-15 14:39:50 UTC
 
 📊 **Total jobs found:** 60
 
@@ -23,10 +23,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 5 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 6 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
-| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
-| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
+| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
+| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
+| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-04 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
@@ -69,8 +69,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Unity Technologies | Junior Test Engineer | Vilnius, Lithuania | 2025-10-27 | [Apply](https://unity.com/careers/positions/1469079?gh_jid=1469079) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 2025-10-23 | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
-| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Area Manager - New Grad | Dallas, Texas, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7125819?gh_jid=7125819) |
+| Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2025-10-17 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 
 ---
