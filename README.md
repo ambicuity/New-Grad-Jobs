@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-15 14:39:50 UTC
+🔄 **Last updated:** 2025-12-15 15:00:21 UTC
 
 📊 **Total jobs found:** 60
 
@@ -14,9 +14,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | --- | --- | --- | --- | --- |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
-| GitLab | Associate Support Engineer (EMEA) | Remote | 3 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| GitLab | Associate Support Engineer (EMEA) | Remote | 4 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 4 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 4 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
