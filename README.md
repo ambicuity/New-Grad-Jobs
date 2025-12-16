@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-15 23:55:55 UTC
+🔄 **Last updated:** 2025-12-16 01:49:58 UTC
 
-📊 **Total jobs found:** 59
+📊 **Total jobs found:** 60
 
 ---
 
@@ -12,9 +12,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Grammarly | Early Career Program | San Francisco | Today | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | GitLab | Associate Support Engineer (EMEA) | Remote | Today | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 1 day ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
