@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-16 19:55:48 UTC
+🔄 **Last updated:** 2025-12-16 20:27:03 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,13 +12,13 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Grammarly | Early Career Program | San Francisco | Today | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | Today | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 1 day ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | GitLab | Associate Support Engineer (EMEA) | Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 5 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
