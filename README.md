@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-16 21:58:47 UTC
+🔄 **Last updated:** 2025-12-16 22:28:10 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Grammarly | Early Career Program | San Francisco | Today | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | Today | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
@@ -30,8 +32,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2025-12-08 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-04 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-12-04 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2025-12-03 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-01 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
