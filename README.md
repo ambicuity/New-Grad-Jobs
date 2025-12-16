@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-16 13:04:23 UTC
+🔄 **Last updated:** 2025-12-16 13:48:50 UTC
 
 📊 **Total jobs found:** 57
 
@@ -20,7 +20,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 5 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
-| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 5 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
+| Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 6 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-12-09 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 2025-12-08 | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
