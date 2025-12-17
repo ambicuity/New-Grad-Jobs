@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-17 16:15:08 UTC
+🔄 **Last updated:** 2025-12-17 16:50:16 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,16 +12,16 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Grammarly | Early Career Program | San Francisco | 1 day ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 2 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 6 days ago | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-12-09 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
