@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-19 09:13:35 UTC
+🔄 **Last updated:** 2025-12-19 09:40:52 UTC
 
 📊 **Total jobs found:** 58
 
@@ -25,7 +25,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Grammarly | Early Career Program | San Francisco | 2 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
-| Okta | Associate Software Engineer in Test | Bellevue, Washington | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
+| Okta | Associate Software Engineer in Test | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
