@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-19 15:16:12 UTC
+🔄 **Last updated:** 2025-12-19 15:41:45 UTC
 
 📊 **Total jobs found:** 59
 
@@ -27,7 +27,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Grammarly | Early Career Program | San Francisco | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
-| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
+| Roblox | [2026] Software Engineer, Early Career | San Mateo, CA, United States | 2025-12-12 | [Apply](https://careers.roblox.com/jobs/7114754?gh_jid=7114754) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
