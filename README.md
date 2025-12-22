@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-22 17:53:16 UTC
+🔄 **Last updated:** 2025-12-22 18:24:41 UTC
 
-📊 **Total jobs found:** 58
+📊 **Total jobs found:** 59
 
 ---
 
@@ -12,6 +12,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | Today | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
 | Grammarly | Early Career Program | San Francisco | 2 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 3 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 4 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
