@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-23 23:44:13 UTC
+🔄 **Last updated:** 2025-12-23 23:56:19 UTC
 
 📊 **Total jobs found:** 59
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
@@ -29,7 +31,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-12-16 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-12-16 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 2025-12-16 | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-12-14 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
@@ -37,7 +38,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 2025-12-08 | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2025-12-03 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-01 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | SpaceX | Sr. Satellite Policy Associate - International Policy (Starlink Regulatory Affairs) | Washington, DC | 2025-12-01 | [Apply](https://boards.greenhouse.io/spacex/jobs/8310350002?gh_jid=8310350002) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2025-11-26 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2025-11-25 | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
