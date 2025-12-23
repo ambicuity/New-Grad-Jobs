@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-23 12:47:25 UTC
+🔄 **Last updated:** 2025-12-23 13:28:30 UTC
 
 📊 **Total jobs found:** 58
 
@@ -13,9 +13,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
-| Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | Today | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
+| Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
 | Grammarly | Early Career Program | San Francisco | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
-| Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 3 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
+| Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 4 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
