@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-24 11:49:35 UTC
+🔄 **Last updated:** 2025-12-24 12:00:47 UTC
 
 📊 **Total jobs found:** 60
 
@@ -21,7 +21,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Grammarly | Early Career Program | San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 5 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
-| Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
+| Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
 | Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
