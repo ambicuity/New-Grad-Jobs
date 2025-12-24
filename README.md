@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-24 20:25:35 UTC
+🔄 **Last updated:** 2025-12-24 20:44:47 UTC
 
 📊 **Total jobs found:** 60
 
@@ -18,7 +18,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
-| Grammarly | Early Career Program | San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
+| Grammarly | Early Career Program | San Francisco | 5 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 5 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Americas | 6 days ago | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | Roblox | Recruiting Manager, Early Careers | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7351444?gh_jid=7351444) |
