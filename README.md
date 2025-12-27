@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-27 18:18:53 UTC
+🔄 **Last updated:** 2025-12-27 18:47:38 UTC
 
 📊 **Total jobs found:** 58
 
@@ -14,8 +14,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | --- | --- | --- | --- | --- |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Waymo | Applied Research Scientist, Perception  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 4 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 4 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | 5 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
