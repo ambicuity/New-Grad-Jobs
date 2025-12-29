@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-29 13:59:03 UTC
+🔄 **Last updated:** 2025-12-29 14:32:34 UTC
 
 📊 **Total jobs found:** 58
 
@@ -17,7 +17,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 5 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
-| Affirm | Software Engineer, Early Career | New York, New York, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| Affirm | Software Engineer, Early Career | New York, New York, United States | 2025-12-22 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Okta | Associate Software Engineer in Test | Chicago, Illinois; New York, New York; Washington, DC | 2025-12-22 | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
 | Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
