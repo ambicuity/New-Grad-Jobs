@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-29 15:54:48 UTC
+🔄 **Last updated:** 2025-12-29 16:25:48 UTC
 
-📊 **Total jobs found:** 58
+📊 **Total jobs found:** 56
 
 ---
 
@@ -68,8 +68,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | SpaceX | New Graduate Engineer, Software (Starlink) | Redmond, WA | 2025-11-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8121675002?gh_jid=8121675002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2025-10-30 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 
 ---
 
