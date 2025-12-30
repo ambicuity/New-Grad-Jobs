@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-30 19:50:07 UTC
+🔄 **Last updated:** 2025-12-30 20:01:39 UTC
 
 📊 **Total jobs found:** 55
 
@@ -12,9 +12,9 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
@@ -35,7 +35,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | Today | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
-| Waymo | Applied Research Scientist, Perception  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
+| Waymo | Applied Research Scientist, Perception  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 2025-12-23 | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-23 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-12-23 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 2025-12-23 | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
