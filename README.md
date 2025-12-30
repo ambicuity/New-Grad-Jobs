@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2025-12-30 17:21:43 UTC
+🔄 **Last updated:** 2025-12-30 17:43:31 UTC
 
 📊 **Total jobs found:** 56
 
@@ -15,7 +15,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | Today | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
 | Waymo | Applied Research Scientist, Perception  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 6 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
