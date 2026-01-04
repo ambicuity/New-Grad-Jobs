@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-04 17:13:49 UTC
+🔄 **Last updated:** 2026-01-04 17:34:24 UTC
 
 📊 **Total jobs found:** 55
 
@@ -34,7 +34,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 5 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 5 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA | 5 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Waymo | Applied Research Scientist, Perception  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 2025-12-23 | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) | 2025-12-23 | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) |
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-12-23 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
