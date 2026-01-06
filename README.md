@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-06 16:01:55 UTC
+🔄 **Last updated:** 2026-01-06 16:43:30 UTC
 
 📊 **Total jobs found:** 58
 
@@ -12,6 +12,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Flexport | Area Manager - New Grad | Phillipsburg, New Jersey, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7202397?gh_jid=7202397) |
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
@@ -20,8 +22,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | Today | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
@@ -56,8 +58,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2025-12-16 | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2025-12-16 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 2025-12-16 | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
