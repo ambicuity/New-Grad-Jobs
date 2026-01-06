@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-06 16:43:30 UTC
+🔄 **Last updated:** 2026-01-06 17:04:23 UTC
 
 📊 **Total jobs found:** 58
 
@@ -19,7 +19,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | Today | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
-| Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | Today | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
+| Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 1 day ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
