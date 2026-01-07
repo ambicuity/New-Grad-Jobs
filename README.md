@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-07 19:18:52 UTC
+🔄 **Last updated:** 2026-01-07 19:38:14 UTC
 
 📊 **Total jobs found:** 59
 
@@ -12,6 +12,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
+| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
+| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
+| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | Today | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | Today | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | Today | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
@@ -54,11 +58,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
-| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
-| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
-| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 2025-12-16 | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
 | Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
