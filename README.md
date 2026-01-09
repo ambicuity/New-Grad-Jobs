@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-09 21:00:46 UTC
+🔄 **Last updated:** 2026-01-09 21:31:18 UTC
 
 📊 **Total jobs found:** 59
 
@@ -23,8 +23,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 2 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
-| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
+| Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Reddit | Junior Full-Stack Software Engineer - Business Manager | Remote - United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7517898) |
 | Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 4 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
@@ -39,8 +39,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
+| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
