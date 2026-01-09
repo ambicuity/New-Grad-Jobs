@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-09 13:23:13 UTC
+🔄 **Last updated:** 2026-01-09 13:54:44 UTC
 
 📊 **Total jobs found:** 59
 
@@ -15,7 +15,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| SoFi | Campus Relationship Director | Frisco, TX  | Today | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
+| SoFi | Campus Relationship Director | Frisco, TX  | 1 day ago | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 1 day ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
