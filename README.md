@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-09 11:21:42 UTC
+🔄 **Last updated:** 2026-01-09 11:39:27 UTC
 
-📊 **Total jobs found:** 60
+📊 **Total jobs found:** 59
 
 ---
 
@@ -63,7 +63,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 2025-12-16 | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
-| Unity Technologies | Junior Software Quality Engineer \| Bisection Team | Vilnius, Lithuania | 2025-12-11 | [Apply](https://unity.com/careers/positions/7452919?gh_jid=7452919) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2025-12-09 | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2025-12-03 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
