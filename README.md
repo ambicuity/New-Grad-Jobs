@@ -2,9 +2,9 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-11 17:58:55 UTC
+🔄 **Last updated:** 2026-01-11 18:40:39 UTC
 
-📊 **Total jobs found:** 59
+📊 **Total jobs found:** 58
 
 ---
 
@@ -27,10 +27,10 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 4 days ago | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Reddit | Junior Full-Stack Software Engineer - Business Manager | Remote - United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7517898) |
 | Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
-| Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
-| Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
-| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
-| Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
+| Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
+| Flexport | Global Operations Associate, Airfreight | Los Angeles, California, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7373060?gh_jid=7373060) |
+| Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
+| Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
@@ -70,7 +70,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2025-11-18 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-11-14 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) |
-| Gemini | Senior Associate, Blockchain Investigations | New York, New York; San Francisco, California | 2025-11-12 | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7376616&gh_jid=7376616) |
 
 ---
 
