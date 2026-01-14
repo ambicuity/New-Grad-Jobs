@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-14 13:03:04 UTC
+🔄 **Last updated:** 2026-01-14 13:50:00 UTC
 
 📊 **Total jobs found:** 57
 
@@ -17,18 +17,18 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | Today | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | Today | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
-| Twitch | Graduate Data Science Intern | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
+| Twitch | Graduate Data Science Intern | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Spotify | Associate Manager, Paid Media | New York, NY | 1 day ago | [Apply](https://jobs.lever.co/spotify/77268df8-939b-4b47-ac1f-ee67988539e7) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
-| SoFi | Campus Relationship Director | Frisco, TX  | 5 days ago | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
+| SoFi | Campus Relationship Director | Frisco, TX  | 6 days ago | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
 | Coinbase | Business Operations Senior Associate / Manager, Platform | Remote - USA | 6 days ago | [Apply](https://www.coinbase.com/careers/positions/7087061?gh_jid=7087061) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
 | Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
-| Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 6 days ago | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
+| Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 2026-01-07 | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2026-01-07 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2026-01-07 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
 | Reddit | Junior Full-Stack Software Engineer - Business Manager | Remote - United States | 2026-01-06 | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7517898) |
