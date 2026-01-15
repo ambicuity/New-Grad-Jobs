@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-15 16:03:11 UTC
+🔄 **Last updated:** 2026-01-15 16:50:37 UTC
 
 📊 **Total jobs found:** 59
 
@@ -26,8 +26,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
-| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
-| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
+| Samsara | Account Development Representative (New Grad) | Atlanta, GA | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
+| Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Spotify | Associate Manager, Paid Media | New York, NY | 2 days ago | [Apply](https://jobs.lever.co/spotify/77268df8-939b-4b47-ac1f-ee67988539e7) |
@@ -43,13 +43,13 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
-| SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
+| SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
