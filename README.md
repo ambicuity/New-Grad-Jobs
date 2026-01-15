@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-15 14:17:03 UTC
+🔄 **Last updated:** 2026-01-15 14:46:44 UTC
 
 📊 **Total jobs found:** 59
 
@@ -28,7 +28,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
-| Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
+| Scale AI | Software Engineer - New Grad | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
 | Spotify | Associate Manager, Paid Media | New York, NY | 2 days ago | [Apply](https://jobs.lever.co/spotify/77268df8-939b-4b47-ac1f-ee67988539e7) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
