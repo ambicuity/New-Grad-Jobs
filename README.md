@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-15 00:01:49 UTC
+🔄 **Last updated:** 2026-01-15 02:25:42 UTC
 
 📊 **Total jobs found:** 59
 
@@ -12,6 +12,13 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 
 | Company | Role | Location | Posted | Apply |
 | --- | --- | --- | --- | --- |
+| Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
+| Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
+| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
+| Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
+| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
+| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
+| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | SpaceX | NDE Inspector Radiographic Trainee (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | Today | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | Waymo | Machine Learning Engineer, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7539786) |
@@ -19,7 +26,6 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
-| Roblox | [2026] Senior Machine Learning Engineer, Recommendation Systems - PhD Early Career | San Mateo, CA, United States | 1 day ago | [Apply](https://careers.roblox.com/jobs/7350081?gh_jid=7350081) |
 | Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
@@ -28,11 +34,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
-| Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career  | San Mateo, CA, United States | 6 days ago | [Apply](https://careers.roblox.com/jobs/7323437?gh_jid=7323437) |
 | SoFi | Campus Relationship Director | Frisco, TX  | 6 days ago | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
-| Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career | San Mateo, CA, United States | 2026-01-07 | [Apply](https://careers.roblox.com/jobs/7403998?gh_jid=7403998) |
-| Roblox | [2026] Senior Machine Learning Engineer, Natural Language Processing - PhD Early Career | San Mateo, CA, United States | 2026-01-07 | [Apply](https://careers.roblox.com/jobs/7324377?gh_jid=7324377) |
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 2026-01-07 | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
 | Duolingo | AI Research Engineer, New PhD Graduate | Pittsburgh, PA | 2026-01-07 | [Apply](https://careers.duolingo.com/jobs/8151163002?gh_jid=8151163002) |
 | Duolingo | AI Research Engineer, New PhD Graduate | New York, NY | 2026-01-07 | [Apply](https://careers.duolingo.com/jobs/8169815002?gh_jid=8169815002) |
@@ -40,16 +43,16 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
-| SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
+| SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
+| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
@@ -63,11 +66,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) | 2025-12-23 | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) |
 | Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
-| Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
-| Roblox | [2026] Senior Machine Learning Engineer,  Engine Optimization - PhD Early Career | San Mateo, CA, United States | 2025-12-17 | [Apply](https://careers.roblox.com/jobs/7421746?gh_jid=7421746) |
 | Okta | Associate Software Engineer in Test | Bellevue, Washington | 2025-12-16 | [Apply](https://www.okta.com/company/careers/opportunity/7473031?gh_jid=7473031) |
 | Spotify | Associate Director, Programmatic Platform Operations | New York, NY | 2025-12-12 | [Apply](https://jobs.lever.co/spotify/1c59f08a-6f03-451e-a4d5-966684acef74) |
-| Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2025-12-03 | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 | Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
