@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-16 13:23:44 UTC
+🔄 **Last updated:** 2026-01-16 13:55:30 UTC
 
 📊 **Total jobs found:** 59
 
@@ -50,7 +50,7 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Spotify | Associate Manager, Paid Media | New York, NY | 3 days ago | [Apply](https://jobs.lever.co/spotify/77268df8-939b-4b47-ac1f-ee67988539e7) |
 | Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
 | Stripe | Software Engineer, New Grad | San Francisco, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | SoFi | Campus Relationship Director | Frisco, TX  | 2026-01-08 | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA | 2026-01-07 | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) |
