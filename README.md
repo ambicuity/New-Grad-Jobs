@@ -2,7 +2,7 @@
 
 Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles
 
-🔄 **Last updated:** 2026-01-16 16:41:47 UTC
+🔄 **Last updated:** 2026-01-16 17:02:43 UTC
 
 📊 **Total jobs found:** 59
 
@@ -48,8 +48,8 @@ Automatically updated list of new graduate job opportunities in Software, Data, 
 | Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
 | Scale AI | Software Engineer - New Grad | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | Twitch | Graduate Data Science Intern | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) |
-| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
-| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
+| Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| Stripe | Software Engineer, New Grad | San Francisco, Seattle | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | SoFi | Campus Relationship Director | Frisco, TX  | 2026-01-08 | [Apply](https://sofi.com/careers/job/7570620003?gh_jid=7570620003) |
 | Affirm | Software Engineer, Early Career | New York, New York, United States | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
