@@ -779,10 +779,23 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
     filtered_jobs = []
     filters = config['filters']
     
+    # Get exclusion signals (default to common senior keywords if not in config)
+    exclusion_signals = filters.get('exclusion_signals', [
+        'senior', 'sr.', 'sr ', 'staff', 'principal', 'lead', 'manager', 
+        'director', 'vp', 'vice president', 'head of', 'architect',
+        'distinguished', 'fellow', 'intern', 'internship'
+    ])
+    
     for job in jobs:
         title = job.get('title', '')
+        title_lower = title.lower()
         location = job.get('location', '')
         posted_at = job.get('posted_at', '')
+        
+        # FIRST: Check for exclusion signals (filter OUT senior/staff roles)
+        is_excluded = any(signal.lower() in title_lower for signal in exclusion_signals)
+        if is_excluded:
+            continue
         
         # Check for new grad signals
         if not has_new_grad_signal(title, filters['new_grad_signals']):
@@ -794,9 +807,10 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         # Strong new grad signals that don't need additional track signals
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad", 
-            "college grad", "early career", "2025 start", "2026 start"
+            "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
+            "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
-        has_strong_new_grad = any(signal.lower() in title.lower() for signal in strong_new_grad_signals)
+        has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
         
         # Accept if: has strong new grad signal OR (has new grad signal AND track signal)
         if not (has_strong_new_grad or has_track):

@@ -7,28 +7,74 @@ filters:
   
   # New grad signals to look for in job titles (case insensitive)
   new_grad_signals:
+    # Explicit new grad keywords
     - "new grad"
     - "new graduate" 
-    - "entry level"
-    - "entry-level"
-    - "graduate"
-    - "junior"
-    - "associate"
-    - "trainee"
-    - "campus"
     - "recent graduate"
     - "fresh graduate"
+    - "university grad"
+    - "college grad"
+    - "new college grad"
+    - "campus hire"
+    - "campus"
+    
+    # Entry level keywords
+    - "entry level"
+    - "entry-level"
+    - "early career"
+    - "early-career"
+    - "junior"
+    - "trainee"
+    - "associate"
+    - "intern conversion"
+    
+    # Year-based programs
     - "2024 start"
     - "2025 start"
     - "2026 start"
-    - "university grad"
-    - "college grad"
-    - "early career"
-    - "intern conversion"
-    - "rotational program"
+    - "2025"
+    - "2026"
+    - "class of"
+    
+    # Level indicators (common at tech companies)
+    - "level 1"
+    - "level 2"
+    - "level i"
+    - "level ii"
+    - " I "
+    - " II "
+    - " L3"
+    - " L4"
+    - " E3"
+    - " E4"
+    - " SDE I"
+    - " SDE II"
+    - " SWE I"
+    - " SWE II"
+    
+    # Programs
     - "graduate program"
-    - "new college grad"
-    - "campus hire"
+    - "rotational program"
+    - "development program"
+    - "analyst program"
+    - "engineering program"
+    
+    # Additional common titles
+    - "software engineer"
+    - "software developer"
+    - "data engineer"
+    - "data scientist"
+    - "machine learning engineer"
+    - "ml engineer"
+    - "product analyst"
+    - "business analyst"
+    - "systems engineer"
+    - "infrastructure engineer"
+    - "security engineer"
+    - "network engineer"
+    - "devops engineer"
+    - "site reliability"
+    - "sre"
     
   # Track signals to look for in job titles/descriptions (case insensitive)
   track_signals:
@@ -58,8 +104,30 @@ filters:
     - "frontend"
     - "full stack"
     - "fullstack"
-
-# API endpoints and company configurations
+    
+  # Exclusion signals - jobs with these keywords are filtered OUT
+  exclusion_signals:
+    - "senior"
+    - "sr."
+    - "sr "
+    - "staff"
+    - "principal"
+    - "lead"
+    - "manager"
+    - "director"
+    - "vp"
+    - "vice president"
+    - "head of"
+    - "architect"
+    - "distinguished"
+    - "fellow"
+    - "10+ years"
+    - "8+ years"
+    - "7+ years"
+    - "6+ years"
+    - "5+ years"
+    - "intern"
+    - "internship"
 apis:
   greenhouse:
     # Greenhouse job board API endpoints for major tech companies
