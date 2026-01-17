@@ -163,10 +163,10 @@
 | 🚀 Anthropic | Software Engineer, Enterprise Foundations | San Francisco, CA \| New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4667572008) |
 | 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
-| 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
-| 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
-| 🚀 Roblox | Software Engineer, Reliability  | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7269377?gh_jid=7269377) |
+| 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
+| 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
+| 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
+| 🚀 Roblox | Software Engineer, Reliability  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7269377?gh_jid=7269377) |
 | 🚀 Nuro | Software Engineer, Infrastructure | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7540514) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
 | 🚀 Nuro | Software Engineer, Teleoperation | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7481633) |
@@ -549,12 +549,12 @@
 | 🚀 Reddit | Machine Learning Engineer, Ads | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7131932) |
 | 🚀 Waymo | Machine Learning Engineer, Audio Perception | Mountain View, CA, USA; San Francisco, CA, USA | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7248697) |
 | 🔥 Block (Square) | Machine Learning Engineer (Modeling), Families Risk | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4947767008?gh_jid=4947767008) |
-| 🚀 Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
-| 🚀 Roblox | Data Scientist - Analytical Data Product - Social (Temporary) | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7276845?gh_jid=7276845) |
-| 🚀 Roblox | Data Scientist, Creator Content | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7345143?gh_jid=7345143) |
-| 🚀 Roblox | Data Scientist, Creator Success | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7371463?gh_jid=7371463) |
-| 🚀 Roblox | Data Scientist, People Analytics | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7125944?gh_jid=7125944) |
-| 🚀 Roblox | Data Scientist, People Science | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7346551?gh_jid=7346551) |
+| 🚀 Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
+| 🚀 Roblox | Data Scientist - Analytical Data Product - Social (Temporary) | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7276845?gh_jid=7276845) |
+| 🚀 Roblox | Data Scientist, Creator Content | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7345143?gh_jid=7345143) |
+| 🚀 Roblox | Data Scientist, Creator Success | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7371463?gh_jid=7371463) |
+| 🚀 Roblox | Data Scientist, People Analytics | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7125944?gh_jid=7125944) |
+| 🚀 Roblox | Data Scientist, People Science | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7346551?gh_jid=7346551) |
 | Sumo Logic | Machine Learning Engineer | United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306807) |
 | 🚀 Discord | Data Scientist, Analytics - Ads Reporting | San Francisco Bay Area | 3 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8343789002) |
 | 🚀 Waymo | ML Engineer, Foundation Model Infrastructure | Mountain View, CA, USA; Remote US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536801) |
@@ -796,4 +796,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-17 21:35:51 UTC*
+*Last updated: 2026-01-17 21:48:48 UTC*
