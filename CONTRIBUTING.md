@@ -63,7 +63,7 @@ Found a bug or have a suggestion?
 
 Unlike manually-maintained job lists, this repository:
 
-1. **Scrapes 70+ company job boards** every 5 minutes using:
+1. **Scrapes 150+ company job boards** every 5 minutes using:
    - Greenhouse API
    - Lever API  
    - Google Careers API

@@ -6,7 +6,7 @@
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
@@ -129,13 +129,13 @@
 This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
 
 ### 🔌 Data Sources
-- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
+- **Direct Company APIs**: Greenhouse and Lever job boards from 150+ tech companies
 - **Search APIs**: Google Careers direct searches
 - **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
 - **Community Submissions**: User-submitted jobs via GitHub Issues
 
 ### ⚡ Key Features
-- **Comprehensive Coverage**: 70+ companies across multiple platforms
+- **Comprehensive Coverage**: 150+ companies across multiple platforms
 - **Real-time Updates**: Automatic updates every 5 minutes
 - **Smart Filtering**: Advanced filtering for new grad positions
 - **USA Focus**: Filters for US-based positions only
@@ -151,7 +151,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 ### 🏢 Companies Monitored
 
 <details>
-<summary>Click to expand (70+ companies)</summary>
+<summary>Click to expand (150+ companies)</summary>
 
 **Greenhouse**: Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool, Unity Technologies, Peloton, Grammarly, Coursera, Khan Academy, Duolingo, Calendly, Webflow, CircleCI, PlanetScale, Algolia, Intercom, Cockroach Labs, Sumo Logic, Magic Leap, Samsara, Benchling, Checkr, Flexport, Bird, Calm
 
