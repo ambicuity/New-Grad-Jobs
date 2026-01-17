@@ -132,13 +132,19 @@ function updateCounts() {
     const visibleCount = filteredJobs.length;
     const totalCount = allJobs.length;
 
-    elements.visibleCount.textContent = visibleCount;
-    elements.totalCount.textContent = totalCount;
+    if (elements.visibleCount) {
+        elements.visibleCount.textContent = visibleCount;
+    }
+    if (elements.totalCount) {
+        elements.totalCount.textContent = totalCount;
+    }
 
     // Update header job count
-    const statNumber = elements.jobCount.querySelector('.stat-number');
-    if (statNumber) {
-        statNumber.textContent = totalCount;
+    if (elements.jobCount) {
+        const statNumber = elements.jobCount.querySelector('.stat-number');
+        if (statNumber) {
+            statNumber.textContent = totalCount;
+        }
     }
 
     // Update hero stat
