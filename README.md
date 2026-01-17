@@ -6,7 +6,7 @@
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
@@ -99,8 +99,8 @@
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
@@ -115,9 +115,9 @@
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | Flexport | Senior Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410630?gh_jid=7410630) |
-| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
-| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | 🚀 Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
 | 🚀 Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
@@ -129,13 +129,13 @@
 This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
 
 ### 🔌 Data Sources
-- **Direct Company APIs**: Greenhouse and Lever job boards from 150+ tech companies
+- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
 - **Search APIs**: Google Careers direct searches
 - **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
 - **Community Submissions**: User-submitted jobs via GitHub Issues
 
 ### ⚡ Key Features
-- **Comprehensive Coverage**: 150+ companies across multiple platforms
+- **Comprehensive Coverage**: 70+ companies across multiple platforms
 - **Real-time Updates**: Automatic updates every 5 minutes
 - **Smart Filtering**: Advanced filtering for new grad positions
 - **USA Focus**: Filters for US-based positions only
@@ -151,7 +151,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 ### 🏢 Companies Monitored
 
 <details>
-<summary>Click to expand (150+ companies)</summary>
+<summary>Click to expand (70+ companies)</summary>
 
 **Greenhouse**: Airbnb, Stripe, Lyft, Robinhood, Coinbase, Block (Square), Dropbox, Twilio, Discord, Reddit, Pinterest, LinkedIn, GitLab, Databricks, MongoDB, Elastic, HashiCorp, Asana, Okta, Datadog, New Relic, Fastly, Cloudflare, Amplitude, Mixpanel, LaunchDarkly, PagerDuty, Postman, Vercel, Figma, Airtable, Instacart, Roblox, SpaceX, Anthropic, Nuro, Waymo, Gemini, Brex, Chime, Ripple, Upstart, Affirm, Betterment, SoFi, Twitch, Scale AI, Retool, Unity Technologies, Peloton, Grammarly, Coursera, Khan Academy, Duolingo, Calendly, Webflow, CircleCI, PlanetScale, Algolia, Intercom, Cockroach Labs, Sumo Logic, Magic Leap, Samsara, Benchling, Checkr, Flexport, Bird, Calm
 
@@ -177,4 +177,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-17 19:20:00 UTC*
+*Last updated: 2026-01-17 19:27:43 UTC*
