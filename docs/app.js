@@ -1,6 +1,7 @@
 /**
  * New Grad Jobs - Interactive Job Board
  * Fetches jobs from jobs.json and renders them with search and filter
+ * Features: Theme toggle, bookmarks, copy link, back to top
  */
 
 // ============================================
@@ -8,6 +9,7 @@
 // ============================================
 let allJobs = [];
 let filteredJobs = [];
+let bookmarkedJobs = new Set(JSON.parse(localStorage.getItem('bookmarkedJobs') || '[]'));
 let currentFilters = {
     search: '',
     category: 'all',
@@ -31,8 +33,94 @@ const elements = {
     visibleCount: document.getElementById('visible-count'),
     totalCount: document.getElementById('total-count'),
     lastUpdated: document.getElementById('last-updated'),
-    resetFilters: document.getElementById('reset-filters')
+    resetFilters: document.getElementById('reset-filters'),
+    themeToggle: document.getElementById('theme-toggle'),
+    backToTop: document.getElementById('back-to-top'),
+    toast: document.getElementById('toast')
 };
+
+// ============================================
+// Theme Management
+// ============================================
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    document.documentElement.setAttribute('data-theme', theme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+// ============================================
+// Toast Notifications
+// ============================================
+function showToast(message, type = 'default') {
+    if (!elements.toast) return;
+
+    elements.toast.textContent = message;
+    elements.toast.className = `toast visible ${type}`;
+
+    setTimeout(() => {
+        elements.toast.classList.remove('visible');
+    }, 2500);
+}
+
+// ============================================
+// Back to Top
+// ============================================
+function handleScroll() {
+    if (!elements.backToTop) return;
+
+    if (window.scrollY > 500) {
+        elements.backToTop.classList.add('visible');
+    } else {
+        elements.backToTop.classList.remove('visible');
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// ============================================
+// Bookmark Management
+// ============================================
+function toggleBookmark(jobUrl) {
+    if (bookmarkedJobs.has(jobUrl)) {
+        bookmarkedJobs.delete(jobUrl);
+        showToast('Bookmark removed', 'default');
+    } else {
+        bookmarkedJobs.add(jobUrl);
+        showToast('Job bookmarked! ⭐', 'success');
+    }
+
+    localStorage.setItem('bookmarkedJobs', JSON.stringify([...bookmarkedJobs]));
+
+    // Update UI
+    const btn = document.querySelector(`[data-bookmark-url="${CSS.escape(jobUrl)}"]`);
+    if (btn) {
+        btn.classList.toggle('bookmarked', bookmarkedJobs.has(jobUrl));
+        btn.innerHTML = bookmarkedJobs.has(jobUrl) ? '★' : '☆';
+    }
+}
+
+function copyJobLink(jobUrl, jobTitle) {
+    navigator.clipboard.writeText(jobUrl).then(() => {
+        showToast('Link copied! 📋', 'success');
+    }).catch(() => {
+        showToast('Failed to copy link', 'default');
+    });
+}
 
 // ============================================
 // Data Fetching
@@ -84,6 +172,7 @@ function renderJobs(jobs) {
         const tierLabel = job.company_tier?.label || '';
         const categoryEmoji = job.category?.emoji || '💼';
         const categoryName = job.category?.name || 'Other';
+        const isBookmarked = bookmarkedJobs.has(job.url);
 
         // Build flags
         let flagsHtml = '';
@@ -103,8 +192,11 @@ function renderJobs(jobs) {
             ? `<span class="${applyButtonClass}">${applyButtonText}</span>`
             : `<a href="${escapeHtml(job.url)}" class="${applyButtonClass}" target="_blank" rel="noopener">${applyButtonText}</a>`;
 
+        // Staggered animation delay (cap at 0.5s for performance)
+        const animationDelay = Math.min(index * 0.03, 0.5);
+
         return `
-            <article class="job-card" style="animation-delay: ${Math.min(index * 0.05, 0.25)}s">
+            <article class="job-card" style="--animation-delay: ${animationDelay}s">
                 <div class="job-info">
                     <div class="job-header">
                         <span class="company-name">${tierEmoji ? tierEmoji + ' ' : ''}${escapeHtml(job.company)}</span>
@@ -118,7 +210,22 @@ function renderJobs(jobs) {
                     </div>
                 </div>
                 <div class="job-actions">
-                    ${applyLink}
+                    <div class="job-action-buttons">
+                        <button 
+                            class="action-icon${isBookmarked ? ' bookmarked' : ''}" 
+                            data-bookmark-url="${escapeHtml(job.url)}"
+                            onclick="toggleBookmark('${escapeHtml(job.url)}')"
+                            aria-label="${isBookmarked ? 'Remove bookmark' : 'Bookmark job'}"
+                            title="${isBookmarked ? 'Remove bookmark' : 'Bookmark job'}"
+                        >${isBookmarked ? '★' : '☆'}</button>
+                        <button 
+                            class="action-icon" 
+                            onclick="copyJobLink('${escapeHtml(job.url)}', '${escapeHtml(job.title)}')"
+                            aria-label="Copy job link"
+                            title="Copy link"
+                        >🔗</button>
+                        ${applyLink}
+                    </div>
                     <span class="posted-date">${escapeHtml(job.posted_display || 'Unknown')}</span>
                 </div>
             </article>
@@ -298,7 +405,16 @@ function escapeHtml(text) {
 // Initialization
 // ============================================
 async function init() {
+    // Initialize theme
+    initTheme();
+
     // Set up event listeners (with null checks)
+    if (elements.themeToggle) {
+        elements.themeToggle.addEventListener('click', toggleTheme);
+    }
+    if (elements.backToTop) {
+        elements.backToTop.addEventListener('click', scrollToTop);
+    }
     if (elements.searchInput) {
         elements.searchInput.addEventListener('input', handleSearch);
     }
@@ -322,6 +438,9 @@ async function init() {
     if (elements.resetFilters) {
         elements.resetFilters.addEventListener('click', resetFilters);
     }
+
+    // Scroll listener for back to top
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Fetch and render jobs
     const data = await fetchJobs();
@@ -347,10 +466,14 @@ async function init() {
                 <h3>Could not load jobs</h3>
                 <p>Please try refreshing the page</p>
             `;
+            elements.loading.style.display = 'flex';
+            elements.loading.style.flexDirection = 'column';
+            elements.loading.style.alignItems = 'center';
+            elements.loading.style.justifyContent = 'center';
+            elements.loading.style.padding = '4rem';
         }
     }
 }
 
 // Start the app
 document.addEventListener('DOMContentLoaded', init);
-

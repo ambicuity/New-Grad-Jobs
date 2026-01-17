@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,9 @@
     <title>New Grad Jobs | Entry Level Tech Positions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,6 +31,23 @@
                 <span class="logo-text">New Grad Jobs</span>
             </div>
             <div class="header-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
                 <a href="https://github.com/ambicuity/New-Grad-Jobs" class="github-link" target="_blank" rel="noopener">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <path
@@ -42,6 +61,13 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- Floating Blob Shapes -->
+        <div class="blob-container">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
         <div class="hero-content">
             <h1>Find Your <span class="gradient-text">New-Grad</span> Dream Job</h1>
             <p class="hero-subtitle">
@@ -150,10 +176,32 @@
     <!-- Job Listings -->
     <main class="jobs-section">
         <div class="jobs-container" id="jobs-container">
-            <!-- Loading State -->
+            <!-- Loading State - Skeleton -->
             <div class="loading" id="loading">
-                <div class="loading-spinner"></div>
-                <p>Loading jobs...</p>
+                <div class="skeleton-card">
+                    <div class="skeleton-info">
+                        <div class="skeleton-line short"></div>
+                        <div class="skeleton-line medium"></div>
+                        <div class="skeleton-line short"></div>
+                    </div>
+                    <div class="skeleton-btn"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-info">
+                        <div class="skeleton-line short"></div>
+                        <div class="skeleton-line long"></div>
+                        <div class="skeleton-line medium"></div>
+                    </div>
+                    <div class="skeleton-btn"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-info">
+                        <div class="skeleton-line medium"></div>
+                        <div class="skeleton-line short"></div>
+                        <div class="skeleton-line short"></div>
+                    </div>
+                    <div class="skeleton-btn"></div>
+                </div>
             </div>
         </div>
     </main>
@@ -165,6 +213,16 @@
         <p>Try adjusting your search or filters</p>
         <button class="btn-secondary" id="reset-filters">Reset Filters</button>
     </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"></path>
+        </svg>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
