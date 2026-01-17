@@ -119,7 +119,6 @@ STARTUPS = {
     'SpruceID', 'Netic', 'D3', 'Promise', 'Lightfield', 'Fermat', 'N1',
     'OffDeal', 'Eventual', 'Mechanize', 'Remi', 'TrueBuilt', 'Uare.ai',
 }
-}
 
 # Job categories based on title keywords
 CATEGORY_PATTERNS = {
