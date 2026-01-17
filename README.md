@@ -42,7 +42,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| 🚀 Scale AI | Software Engineer - New Grad | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
+| 🚀 Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | 🚀 Okta | Solutions Engineering Associate, Auth0 | Georgia; Massachusetts; New York, New York; Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361) |
 | Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | 🚀 Reddit | Junior Full-Stack Software Engineer - Business Manager | Remote - United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7517898) |
@@ -177,4 +177,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-17 14:15:57 UTC*
+*Last updated: 2026-01-17 14:38:57 UTC*

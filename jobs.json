@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-17T14:15:57.807224",
+    "generated_at": "2026-01-17T14:38:57.368622",
     "total_jobs": 58,
     "categories": [
       {
@@ -62,7 +62,7 @@
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4605996005",
       "posted_at": "2026-01-16T14:20:43",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
