@@ -309,7 +309,7 @@
 | 🚀 SoFi | Software Engineer, Measurement & Ads | San Francisco, CA; Seattle, Washington | 4 days ago | [Apply](https://sofi.com/careers/job/7581781003?gh_jid=7581781003) |
 | 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
 | 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 4 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
-| 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
+| 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
 | 🚀 Cloudflare | Software Engineer, Enterprise Readiness | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6467350?gh_jid=6467350) |
 | 🚀 Affirm | Software Engineer, Backend (Marketplace Experience) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579879003) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Product) | Bastrop, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002) |
@@ -796,4 +796,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-17 20:43:10 UTC*
+*Last updated: 2026-01-17 20:55:35 UTC*
