@@ -159,6 +159,12 @@ function updateCounts() {
     if (statNumber) {
         statNumber.textContent = totalCount;
     }
+
+    // Update hero stat
+    const heroCount = document.getElementById('job-count-hero');
+    if (heroCount) {
+        heroCount.textContent = totalCount;
+    }
 }
 
 function updateLastUpdated(timestamp) {
