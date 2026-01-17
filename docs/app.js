@@ -65,25 +65,33 @@ function updateThemeIcon(theme) {
 // Data Fetching
 // ============================================
 async function fetchJobs() {
-    try {
-        // Try to fetch from the repo root first (for GitHub Pages)
-        let response = await fetch('../jobs.json');
+    // Try multiple paths for different deployment scenarios
+    const paths = [
+        './jobs.json',                              // Same directory (GitHub Pages /docs)
+        '../jobs.json',                             // Parent directory
+        '/New-Grad-Jobs/docs/jobs.json',           // GitHub Pages with repo name
+        '/New-Grad-Jobs/jobs.json',                // GitHub Pages root
+        'jobs.json'                                 // Relative path
+    ];
 
-        if (!response.ok) {
-            // Fallback to local path
-            response = await fetch('./jobs.json');
+    for (const path of paths) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) {
+                const data = await response.json();
+                if (data && data.jobs) {
+                    console.log('Loaded jobs from:', path);
+                    return data;
+                }
+            }
+        } catch (error) {
+            // Continue to next path
+            console.log('Failed to load from:', path);
         }
-
-        if (!response.ok) {
-            throw new Error('Failed to fetch jobs');
-        }
-
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching jobs:', error);
-        return null;
     }
+
+    console.error('Could not load jobs from any path');
+    return null;
 }
 
 // ============================================
