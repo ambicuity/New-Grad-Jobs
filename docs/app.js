@@ -1,6 +1,6 @@
 /**
  * New Grad Jobs - Interactive Job Board
- * Fetches jobs from jobs.json and renders them with search, filter, and theme toggle
+ * Fetches jobs from jobs.json and renders them with search and filter
  */
 
 // ============================================
@@ -31,35 +31,8 @@ const elements = {
     visibleCount: document.getElementById('visible-count'),
     totalCount: document.getElementById('total-count'),
     lastUpdated: document.getElementById('last-updated'),
-    themeToggle: document.getElementById('theme-toggle'),
     resetFilters: document.getElementById('reset-filters')
 };
-
-// ============================================
-// Theme Management
-// ============================================
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-    document.documentElement.setAttribute('data-theme', theme);
-    updateThemeIcon(theme);
-}
-
-function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-}
-
-function updateThemeIcon(theme) {
-    const themeIcon = elements.themeToggle.querySelector('.theme-icon');
-    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-}
 
 // ============================================
 // Data Fetching
