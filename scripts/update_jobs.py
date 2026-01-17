@@ -29,18 +29,28 @@ except ImportError:
 # ============================================================================
 
 FAANG_PLUS = {
+    # Original FAANG
     'Google', 'Meta', 'Facebook', 'Amazon', 'Apple', 'Netflix', 'Microsoft',
+    # Extended FAANG+
     'NVIDIA', 'Tesla', 'Adobe', 'Salesforce', 'Oracle', 'IBM', 'Intel',
     'Cisco', 'Qualcomm', 'AMD', 'Uber', 'Lyft', 'Airbnb', 'Stripe', 'PayPal',
     'Block (Square)', 'Visa', 'Mastercard', 'Goldman Sachs', 'Morgan Stanley',
-    'JPMorgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw',
-    # Defense/Aerospace
+    'JPMorgan', 'J.P. Morgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw',
+    # Defense/Aerospace Giants
     'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
     'General Dynamics', 'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII',
+    'Huntington Ingalls Industries',
     # Finance/Insurance
     'Wells Fargo', 'Travelers', 'Charles Schwab', 'American Express', 'AMEX',
+    'Bank of America', 'Capital One', 'Fidelity', 'State Street', 'TD Bank',
+    'Truist Bank', 'Global Payments',
     # Tech Giants
-    'TikTok', 'ByteDance', 'Snap', 'Autodesk', 'Akamai', 'DXC Technology'
+    'TikTok', 'ByteDance', 'Snap', 'Autodesk', 'Akamai', 'DXC Technology',
+    'Yahoo', 'Intuit', 'HP', 'Hewlett Packard', 'HPE', 'Hewlett Packard Enterprise',
+    'Honeywell', 'Cadence Design Systems', 'Microchip Technology',
+    # Entertainment
+    'Electronic Arts', 'EA', 'Walt Disney Company', 'Disney', 'Nike',
+    'McDonald\'s', 'Expedia Group', 'TripAdvisor',
 }
 
 UNICORNS = {
@@ -54,25 +64,40 @@ UNICORNS = {
     'Cruise', 'Aurora', 'Rivian', 'Lucid', 'Chime', 'Brex', 'Affirm',
     'SoFi', 'Upstart', 'Checkout.com', 'Revolut', 'Nubank', 'Klarna',
     'Grammarly', 'Duolingo', 'Coursera', 'Khan Academy',
-    'Sierra Space', 'Relativity Space', 'Qumulo', 'Zealthy'
+    'Sierra Space', 'Relativity Space', 'Qumulo', 'Zealthy',
+    # New from SimplifyJobs
+    'Verkada', 'Samsara', 'Glean', 'Sigma Computing', 'Cerebras', 'Cerebras Systems',
+    'Applied Intuition', 'Fireworks AI', 'Suno', 'Sierra', 'WhatNot',
+    'Whoop', 'Benchling', 'Marqeta', 'Circle', 'Zip', 'Finix', 'Valon',
+    'True Anomaly', 'Anduril', 'Shield AI', 'Blue Origin', 'Rocket Lab', 'Rocket Lab USA',
+    'Etsy', 'Chewy', 'StubHub', 'SeatGeek', 'Ticketmaster', 'Fanatics',
+    'Underdog Fantasy', 'Glide', 'TRM Labs', 'Pattern Data', 'Crusoe',
+    'Replit', 'Continue', 'Meshy', 'WeRide', 'Trexquant',
 }
 
 # Defense & Aerospace sector
 DEFENSE = {
     'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
-    'General Dynamics', 'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII',
-    'Booz Allen Hamilton', 'Leidos', 'SAIC', 'General Atomics', 'Anduril',
-    'Shield AI', 'SpaceX', 'Sierra Space', 'Relativity Space', 'Blue Origin'
+    'General Dynamics', 'General Dynamics Mission Systems', 'General Dynamics Information Technology',
+    'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII', 'Huntington Ingalls Industries',
+    'Booz Allen Hamilton', 'Booz Allen', 'Leidos', 'SAIC', 'General Atomics', 'Anduril',
+    'Shield AI', 'SpaceX', 'Sierra Space', 'Relativity Space', 'Blue Origin',
+    'Rocket Lab', 'Rocket Lab USA', 'True Anomaly', 'KBR', 'CACI', 'Peraton', 'Amentum',
+    'AMERICAN SYSTEMS', 'T-Rex Solutions', 'Wyetech', 'Altamira Technologies',
 }
 
 # Finance sector
 FINANCE = {
-    'Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'J.P. Morgan', 'Bloomberg',
-    'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw', 'DE Shaw', 'DRW',
-    'Wells Fargo', 'Charles Schwab', 'American Express', 'AMEX', 'Visa',
-    'Mastercard', 'PayPal', 'Block (Square)', 'Square', 'Stripe', 'Plaid',
+    'Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'J.P. Morgan', 'JP Morgan Chase', 'Bloomberg',
+    'Two Sigma', 'Citadel', 'Citadel Securities', 'Jane Street', 'D.E. Shaw', 'DE Shaw', 'DRW',
+    'Wolverine Trading', 'Trexquant',
+    'Wells Fargo', 'Charles Schwab', 'American Express', 'AMEX', 'Visa', 'Mastercard',
+    'PayPal', 'Block (Square)', 'Square', 'Stripe', 'Plaid',
     'Robinhood', 'Coinbase', 'Chime', 'Brex', 'Affirm', 'SoFi', 'Upstart',
-    'Travelers', 'Fidelity', 'BlackRock', 'Capital One', 'Bank of America'
+    'Travelers', 'Fidelity', 'BlackRock', 'Capital One', 'Bank of America',
+    'State Street', 'TD Bank', 'Truist Bank', 'Global Payments',
+    'Apex Fintech Solutions', 'Marqeta', 'Circle', 'Finix', 'Zip', 'Valon',
+    'GM financial', 'Nelnet', 'Aflac',
 }
 
 # Healthcare sector
@@ -80,14 +105,20 @@ HEALTHCARE = {
     'iRhythm', 'Epic Systems', 'Cerner', 'Philips Healthcare', 'Siemens Healthineers',
     'GE Healthcare', 'Medtronic', 'Johnson & Johnson', 'Pfizer', 'Moderna',
     'UnitedHealth', 'Anthem', 'CVS Health', 'Cigna', 'Humana', 'Oscar Health',
-    'Tempus', 'Flatiron Health', 'Veracyte', 'Illumina', 'Thermo Fisher'
+    'Tempus', 'Flatiron Health', 'Veracyte', 'Illumina', 'Thermo Fisher',
+    'Boston Scientific', 'MultiCare Health System', 'BlueCross BlueShield',
+    'Citizen Health', 'Solace Health', 'Healthfirst', 'Candid Health', 'MedImpact',
 }
 
 # Startups (early-stage, smaller companies)
 STARTUPS = {
     'Vercel', 'Supabase', 'PlanetScale', 'Railway', 'Zepto', 'Zepz',
     'Zealthy', 'Qumulo', 'Runway', 'Hugging Face', 'Weights & Biases',
-    'Cohere', 'Mistral', 'Perplexity', 'Replit', 'Modal', 'Resend'
+    'Cohere', 'Mistral', 'Perplexity', 'Replit', 'Modal', 'Resend',
+    'Glide', 'Continue', 'Meshy', 'Suno', 'Fireworks AI', 'Nexthop.ai',
+    'SpruceID', 'Netic', 'D3', 'Promise', 'Lightfield', 'Fermat', 'N1',
+    'OffDeal', 'Eventual', 'Mechanize', 'Remi', 'TrueBuilt', 'Uare.ai',
+}
 }
 
 # Job categories based on title keywords
