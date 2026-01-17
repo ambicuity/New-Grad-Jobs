@@ -54,9 +54,40 @@ UNICORNS = {
     'Cruise', 'Aurora', 'Rivian', 'Lucid', 'Chime', 'Brex', 'Affirm',
     'SoFi', 'Upstart', 'Checkout.com', 'Revolut', 'Nubank', 'Klarna',
     'Grammarly', 'Duolingo', 'Coursera', 'Khan Academy',
-    # Additional companies
-    'Sierra Space', 'Relativity Space', 'Booz Allen Hamilton', 'DRW',
-    'iRhythm', 'Qumulo', 'Zealthy'
+    'Sierra Space', 'Relativity Space', 'Qumulo', 'Zealthy'
+}
+
+# Defense & Aerospace sector
+DEFENSE = {
+    'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
+    'General Dynamics', 'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII',
+    'Booz Allen Hamilton', 'Leidos', 'SAIC', 'General Atomics', 'Anduril',
+    'Shield AI', 'SpaceX', 'Sierra Space', 'Relativity Space', 'Blue Origin'
+}
+
+# Finance sector
+FINANCE = {
+    'Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'J.P. Morgan', 'Bloomberg',
+    'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw', 'DE Shaw', 'DRW',
+    'Wells Fargo', 'Charles Schwab', 'American Express', 'AMEX', 'Visa',
+    'Mastercard', 'PayPal', 'Block (Square)', 'Square', 'Stripe', 'Plaid',
+    'Robinhood', 'Coinbase', 'Chime', 'Brex', 'Affirm', 'SoFi', 'Upstart',
+    'Travelers', 'Fidelity', 'BlackRock', 'Capital One', 'Bank of America'
+}
+
+# Healthcare sector
+HEALTHCARE = {
+    'iRhythm', 'Epic Systems', 'Cerner', 'Philips Healthcare', 'Siemens Healthineers',
+    'GE Healthcare', 'Medtronic', 'Johnson & Johnson', 'Pfizer', 'Moderna',
+    'UnitedHealth', 'Anthem', 'CVS Health', 'Cigna', 'Humana', 'Oscar Health',
+    'Tempus', 'Flatiron Health', 'Veracyte', 'Illumina', 'Thermo Fisher'
+}
+
+# Startups (early-stage, smaller companies)
+STARTUPS = {
+    'Vercel', 'Supabase', 'PlanetScale', 'Railway', 'Zepto', 'Zepz',
+    'Zealthy', 'Qumulo', 'Runway', 'Hugging Face', 'Weights & Biases',
+    'Cohere', 'Mistral', 'Perplexity', 'Replit', 'Modal', 'Resend'
 }
 
 # Job categories based on title keywords
@@ -177,13 +208,28 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     }
 
 def get_company_tier(company_name: str) -> Dict[str, Any]:
-    """Get company tier classification"""
+    """Get company tier classification including sectors"""
+    # Check primary tiers first
     if company_name in FAANG_PLUS:
-        return {'tier': 'faang_plus', 'emoji': '🔥', 'label': 'FAANG+'}
+        tier_info = {'tier': 'faang_plus', 'emoji': '🔥', 'label': 'FAANG+'}
     elif company_name in UNICORNS:
-        return {'tier': 'unicorn', 'emoji': '🚀', 'label': 'Unicorn'}
+        tier_info = {'tier': 'unicorn', 'emoji': '🚀', 'label': 'Unicorn'}
     else:
-        return {'tier': 'other', 'emoji': '', 'label': ''}
+        tier_info = {'tier': 'other', 'emoji': '', 'label': ''}
+    
+    # Add sector classifications (can overlap with tier)
+    sectors = []
+    if company_name in DEFENSE:
+        sectors.append('defense')
+    if company_name in FINANCE:
+        sectors.append('finance')
+    if company_name in HEALTHCARE:
+        sectors.append('healthcare')
+    if company_name in STARTUPS:
+        sectors.append('startup')
+    
+    tier_info['sectors'] = sectors
+    return tier_info
 
 def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
     """Detect sponsorship and citizenship requirements"""

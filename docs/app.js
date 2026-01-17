@@ -302,9 +302,13 @@ function applyFilters() {
             }
         }
 
-        // Company tier filter
+        // Company tier filter (also checks sectors for Defense/Finance/Healthcare/Startup)
         if (tier !== 'all') {
-            if (job.company_tier?.tier !== tier) {
+            const jobTier = job.company_tier?.tier;
+            const jobSectors = job.company_tier?.sectors || [];
+
+            // Check if tier matches directly OR if it's in the sectors array
+            if (jobTier !== tier && !jobSectors.includes(tier)) {
                 return false;
             }
         }
