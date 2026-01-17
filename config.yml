@@ -244,16 +244,15 @@ apis:
       - "entry level data engineer"
       - "junior data scientist"
 
-  # JobSpy - Open source Python library for scraping major job sites
-  # NOTE: We use only generic searches here since Greenhouse/Lever APIs already cover specific companies
-  # This keeps the workflow fast (~2 min instead of 10+ min)
+  # JobSpy - PARALLEL scraping from Indeed/LinkedIn
+  # Now uses ThreadPoolExecutor with 10 workers - 150+ searches in ~2 min
   jobspy:
     enabled: true
     sites:
       - "indeed" 
       - "linkedin"
     search_terms:
-      # Generic new grad searches (these catch ALL companies on job boards)
+      # ===== GENERIC SEARCHES (catch-all) =====
       - "new graduate software engineer"
       - "entry level software engineer"
       - "junior software engineer" 
@@ -264,26 +263,124 @@ apis:
       - "university graduate engineer"
       - "campus hire software"
       - "associate software engineer"
-      # High-value specific searches (top priority companies without Greenhouse/Lever)
-      - "TikTok new grad"
-      - "ByteDance new grad"
+      
+      # ===== FAANG+ =====
       - "Google new grad"
       - "Amazon new grad"
       - "Microsoft new grad"
       - "Apple new grad"
       - "Meta new grad"
+      - "Netflix new grad"
       - "NVIDIA new grad"
       - "Tesla new grad"
-      - "Palantir new grad"
-      - "DoorDash new grad"
+      - "Adobe new grad"
+      - "Salesforce new grad"
+      - "Oracle new grad"
+      - "IBM new grad"
+      - "Intel new grad"
+      - "Cisco new grad"
+      - "Qualcomm new grad"
+      - "Uber new grad"
+      - "Lyft new grad"
+      - "PayPal new grad"
+      - "Visa new grad"
+      - "Mastercard new grad"
+      
+      # ===== DEFENSE & AEROSPACE =====
+      - "Raytheon new grad"
+      - "RTX new grad"
+      - "Lockheed Martin new grad"
+      - "Boeing new grad"
+      - "Northrop Grumman new grad"
+      - "General Dynamics new grad"
+      - "L3Harris new grad"
+      - "Leidos new grad"
+      - "CACI new grad"
+      - "Peraton new grad"
+      - "Booz Allen new grad"
+      - "SAIC new grad"
+      - "Amentum new grad"
+      - "Blue Origin new grad"
+      - "Anduril new grad"
+      
+      # ===== FINANCE & TRADING =====
+      - "Goldman Sachs new grad"
+      - "Morgan Stanley new grad"
+      - "JPMorgan new grad"
+      - "Bloomberg new grad"
+      - "Two Sigma new grad"
       - "Citadel new grad"
       - "Jane Street new grad"
-      - "Two Sigma new grad"
-      - "Goldman Sachs new grad"
-      - "JPMorgan new grad"
+      - "DRW new grad"
+      - "Wells Fargo new grad"
+      - "Bank of America new grad"
+      - "Capital One new grad"
+      - "Fidelity new grad"
+      - "American Express new grad"
+      - "Travelers new grad"
+      - "Affirm new grad"
+      
+      # ===== UNICORNS =====
+      - "TikTok new grad"
+      - "ByteDance new grad"
+      - "OpenAI new grad"
+      - "Anthropic new grad"
+      - "Databricks new grad"
+      - "Snowflake new grad"
+      - "Palantir new grad"
+      - "Scale AI new grad"
+      - "Figma new grad"
+      - "Notion new grad"
+      - "Discord new grad"
+      - "Snap new grad"
+      - "Roblox new grad"
+      - "DoorDash new grad"
+      - "Instacart new grad"
+      - "Cloudflare new grad"
+      - "Datadog new grad"
+      - "MongoDB new grad"
+      - "Samsara new grad"
+      - "Verkada new grad"
+      - "Glean new grad"
+      - "SpaceX new grad"
+      - "Rivian new grad"
+      
+      # ===== CONSUMER TECH =====
+      - "Electronic Arts new grad"
+      - "Disney new grad"
+      - "Nike new grad"
+      - "Yahoo new grad"
+      - "Etsy new grad"
+      - "Chewy new grad"
+      - "Expedia new grad"
+      - "Fanatics new grad"
+      
+      # ===== ENTERPRISE TECH =====
+      - "Intuit new grad"
+      - "Autodesk new grad"
+      - "HP new grad"
+      - "Honeywell new grad"
+      - "UiPath new grad"
+      - "Applied Intuition new grad"
+      - "Cerebras new grad"
+      
+      # ===== HEALTHCARE =====
+      - "Medtronic new grad"
+      - "Boston Scientific new grad"
+      - "GE Healthcare new grad"
+      
+      # ===== FINTECH =====
+      - "Robinhood new grad"
+      - "Coinbase new grad"
+      - "Plaid new grad"
+      - "Chime new grad"
+      - "Brex new grad"
+      - "SoFi new grad"
+      - "Upstart new grad"
+      
     location: "United States"
     results_wanted: 50
-    hours_old: 168  # Only jobs posted in last week (7 days)
+    hours_old: 168
     
   # Third-party job scraping APIs (configuration ready for future implementation)
   scraper_apis:
