@@ -258,7 +258,7 @@ apis:
       - "junior software engineer" 
       - "new grad data scientist"
       - "entry level data engineer"
-      # Company-specific searches (for companies without Greenhouse/Lever APIs)
+      # Company-specific searches (ALL companies from user list)
       - "TikTok new grad"
       - "ByteDance new grad"
       - "Qualcomm new grad"
@@ -276,8 +276,34 @@ apis:
       - "Travelers new grad"
       - "DXC Technology new grad"
       - "Snap new grad"
+      - "Cloudflare new grad"
+      - "Bio-Techne new grad"
+      - "Forward Financing new grad"
+      - "Stafl Systems new grad"
+      - "UST new grad"
+      - "Florida International University new grad"
+      - "Gordon Food Service new grad"
+      - "Kinesis Money new grad"
+      - "iRhythm new grad"
+      - "UST HealthProof new grad"
+      - "AMEX new grad"
+      - "American Express new grad"
+      - "Snap-on new grad"
+      - "Allen Control Systems new grad"
+      - "Relativity new grad"
+      - "Zealthy new grad"
+      - "Molex new grad"
+      - "Qumulo new grad"
+      - "Lassonde new grad"
+      - "Pasco Police Department new grad"
+      - "RTX new grad"
+      - "Lockheed Martin new grad"
+      - "Northrop Grumman new grad"
+      - "Boeing new grad"
+      - "General Dynamics new grad"
+      - "L3Harris new grad"
     location: "United States"
-    results_wanted: 30  # Increased per site to capture company-specific results
+    results_wanted: 50  # Increased to capture all company-specific results
     hours_old: 168  # Only jobs posted in last week (7 days)
     
   # Third-party job scraping APIs (configuration ready for future implementation)
