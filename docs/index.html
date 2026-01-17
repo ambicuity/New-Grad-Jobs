@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatically updated list of new grad job opportunities in Software, Data, ML, and SRE roles. Updated every 5 minutes.">
+    <meta name="keywords" content="new grad jobs, entry level jobs, software engineer jobs, tech jobs, 2026 jobs">
+    <meta property="og:title" content="New Grad Jobs - 2026 Entry Level Tech Positions">
+    <meta property="og:description" content="Fully automated job board for new graduates. 70+ companies, updated every 5 minutes.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>New Grad Jobs | 2026 Entry Level Tech Positions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-emoji">🎓</span>
+                <span class="logo-text">New Grad Jobs</span>
+            </div>
+            <div class="header-stats">
+                <span class="stat" id="job-count">
+                    <span class="stat-number">--</span>
+                    <span class="stat-label">Jobs</span>
+                </span>
+                <span class="stat">
+                    <span class="stat-number">70+</span>
+                    <span class="stat-label">Companies</span>
+                </span>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="https://github.com/ambicuity/New-Grad-Jobs" class="github-link" target="_blank" rel="noopener">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>Star</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream <span class="gradient-text">New Grad</span> Job</h1>
+            <p class="hero-subtitle">
+                <strong>Fully automated</strong> job board for 2025 & 2026 graduates. 
+                Updated <strong>every 5 minutes</strong> from 70+ company APIs.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search jobs, companies, locations..."
+                        autocomplete="off"
+                    >
+                    <button class="search-clear" id="search-clear" aria-label="Clear search">×</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <label class="filter-label">Category</label>
+                <div class="filter-chips" id="category-filters">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="software_engineering">💻 Software</button>
+                    <button class="chip" data-filter="data_ml">🤖 ML/AI</button>
+                    <button class="chip" data-filter="data_engineering">📊 Data</button>
+                    <button class="chip" data-filter="infrastructure_sre">🏗️ SRE</button>
+                    <button class="chip" data-filter="product_management">📱 PM</button>
+                    <button class="chip" data-filter="quant_finance">📈 Quant</button>
+                    <button class="chip" data-filter="hardware">🔧 Hardware</button>
+                </div>
+            </div>
+
+            <!-- Company Tier Filter -->
+            <div class="filter-group">
+                <label class="filter-label">Company</label>
+                <div class="filter-chips" id="tier-filters">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="faang_plus">🔥 FAANG+</button>
+                    <button class="chip" data-filter="unicorn">🚀 Unicorn</button>
+                </div>
+            </div>
+
+            <!-- Location Filter -->
+            <div class="filter-group">
+                <label class="filter-label">Location</label>
+                <select class="filter-select" id="location-filter">
+                    <option value="all">All Locations</option>
+                    <option value="remote">Remote</option>
+                    <option value="san francisco">San Francisco Bay Area</option>
+                    <option value="new york">New York</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="austin">Austin</option>
+                    <option value="los angeles">Los Angeles</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Info -->
+    <section class="results-info">
+        <div class="results-container">
+            <p class="results-text">
+                Showing <strong id="visible-count">--</strong> of <strong id="total-count">--</strong> jobs
+            </p>
+            <p class="last-updated">
+                Last updated: <span id="last-updated">--</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <main class="jobs-section">
+        <div class="jobs-container" id="jobs-container">
+            <!-- Loading State -->
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading jobs...</p>
+            </div>
+            
+            <!-- Jobs will be rendered here -->
+        </div>
+    </main>
+
+    <!-- Empty State -->
+    <div class="empty-state hidden" id="empty-state">
+        <div class="empty-icon">🔍</div>
+        <h3>No jobs found</h3>
+        <p>Try adjusting your search or filters</p>
+        <button class="btn-secondary" id="reset-filters">Reset Filters</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎓 New Grad Jobs</h4>
+                <p>Automated job board for new graduates. Updated every 5 minutes from 70+ companies.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="https://github.com/ambicuity/New-Grad-Jobs">GitHub Repository</a></li>
+                    <li><a href="https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml">Submit a Job</a></li>
+                    <li><a href="https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md">Contributing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Data Sources</h4>
+                <ul>
+                    <li>Greenhouse API</li>
+                    <li>Lever API</li>
+                    <li>Google Careers</li>
+                    <li>LinkedIn, Indeed, Glassdoor</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with ❤️ for new grads • <a href="https://github.com/ambicuity/New-Grad-Jobs">Star ⭐ on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

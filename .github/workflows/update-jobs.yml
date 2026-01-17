@@ -60,7 +60,11 @@ jobs:
       run: |
         git config --local user.email "riteshrana36@gmail.com"
         git config --local user.name "ambicuity"
-        git add README.md
+        
+        # Copy jobs.json to docs folder for GitHub Pages
+        cp jobs.json docs/jobs.json
+        
+        git add README.md jobs.json docs/jobs.json
         git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
         
         # Add random delay to reduce concurrent execution conflicts
@@ -91,7 +95,8 @@ jobs:
                 git rebase --abort
                 # Reset to original commit and try again
                 git reset --hard HEAD~1
-                git add README.md
+                cp jobs.json docs/jobs.json
+                git add README.md jobs.json docs/jobs.json
                 git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
               else
                 echo "Rebase failed for unknown reason, aborting..."

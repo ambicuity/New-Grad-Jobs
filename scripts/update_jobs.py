@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 New Grad Jobs Aggregator
-Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs and updates README.md
+Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs 
+and updates README.md and jobs.json
 """
 
 import requests
@@ -13,7 +14,7 @@ import time
 import os
 from datetime import datetime, timedelta
 from dateutil import parser as date_parser
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 # Import JobSpy for additional job site scraping
 try:
@@ -22,6 +23,114 @@ try:
 except ImportError:
     JOBSPY_AVAILABLE = False
     print("⚠️  JobSpy not available. Install with: pip install python-jobspy")
+
+# ============================================================================
+# COMPANY CLASSIFICATIONS
+# ============================================================================
+
+FAANG_PLUS = {
+    'Google', 'Meta', 'Facebook', 'Amazon', 'Apple', 'Netflix', 'Microsoft',
+    'NVIDIA', 'Tesla', 'Adobe', 'Salesforce', 'Oracle', 'IBM', 'Intel',
+    'Cisco', 'Qualcomm', 'AMD', 'Uber', 'Lyft', 'Airbnb', 'Stripe', 'PayPal',
+    'Block (Square)', 'Visa', 'Mastercard', 'Goldman Sachs', 'Morgan Stanley',
+    'JPMorgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw'
+}
+
+UNICORNS = {
+    'SpaceX', 'OpenAI', 'Anthropic', 'Databricks', 'Snowflake', 'Palantir',
+    'Plaid', 'Robinhood', 'Coinbase', 'Ripple', 'Discord', 'Reddit',
+    'Pinterest', 'Snap', 'Instacart', 'DoorDash', 'Figma', 'Notion',
+    'Airtable', 'Canva', 'Scale AI', 'Roblox', 'Unity Technologies',
+    'Twitch', 'GitLab', 'HashiCorp', 'Datadog', 'MongoDB', 'Elastic',
+    'Cloudflare', 'Okta', 'Twilio', 'Atlassian', 'Asana', 'Dropbox',
+    'Zoom', 'Slack', 'Vercel', 'Supabase', 'PlanetScale', 'Nuro', 'Waymo',
+    'Cruise', 'Aurora', 'Rivian', 'Lucid', 'Chime', 'Brex', 'Affirm',
+    'SoFi', 'Upstart', 'Checkout.com', 'Revolut', 'Nubank', 'Klarna',
+    'Grammarly', 'Duolingo', 'Coursera', 'Khan Academy'
+}
+
+# Job categories based on title keywords
+CATEGORY_PATTERNS = {
+    'software_engineering': {
+        'name': 'Software Engineering',
+        'emoji': '💻',
+        'keywords': [
+            'software engineer', 'software developer', 'swe', 'full stack',
+            'fullstack', 'frontend', 'front-end', 'backend', 'back-end',
+            'web developer', 'mobile developer', 'ios developer', 'android developer',
+            'application developer', 'systems engineer', 'platform engineer',
+            'solutions engineer', 'integration engineer', 'api engineer'
+        ]
+    },
+    'data_ml': {
+        'name': 'Data Science & ML',
+        'emoji': '🤖',
+        'keywords': [
+            'data scientist', 'machine learning', 'ml engineer', 'ai engineer',
+            'deep learning', 'nlp', 'computer vision', 'research scientist',
+            'applied scientist', 'research engineer', 'ai research'
+        ]
+    },
+    'data_engineering': {
+        'name': 'Data Engineering',
+        'emoji': '📊',
+        'keywords': [
+            'data engineer', 'data analyst', 'analytics engineer', 'bi developer',
+            'business intelligence', 'etl', 'data platform', 'data infrastructure'
+        ]
+    },
+    'infrastructure_sre': {
+        'name': 'Infrastructure & SRE',
+        'emoji': '🏗️',
+        'keywords': [
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'cloud engineer', 'systems administrator', 'network engineer',
+            'security engineer', 'devsecops', 'reliability engineer'
+        ]
+    },
+    'product_management': {
+        'name': 'Product Management',
+        'emoji': '📱',
+        'keywords': [
+            'product manager', 'program manager', 'technical program manager',
+            'tpm', 'product owner', 'product lead'
+        ]
+    },
+    'quant_finance': {
+        'name': 'Quantitative Finance',
+        'emoji': '📈',
+        'keywords': [
+            'quantitative', 'quant', 'trading', 'trader', 'strategist',
+            'quantitative analyst', 'quantitative developer', 'algo'
+        ]
+    },
+    'hardware': {
+        'name': 'Hardware Engineering',
+        'emoji': '🔧',
+        'keywords': [
+            'hardware engineer', 'electrical engineer', 'mechanical engineer',
+            'embedded', 'firmware', 'asic', 'fpga', 'chip', 'silicon',
+            'rf engineer', 'antenna', 'circuit', 'pcb'
+        ]
+    },
+    'other': {
+        'name': 'Other',
+        'emoji': '💼',
+        'keywords': []
+    }
+}
+
+# Sponsorship/visa keywords
+NO_SPONSORSHIP_KEYWORDS = [
+    'no sponsorship', 'not sponsor', 'cannot sponsor', 'will not sponsor',
+    'u.s. citizens only', 'us citizens only', 'citizens only',
+    'must be authorized', 'authorization required', 'no visa'
+]
+
+US_CITIZENSHIP_KEYWORDS = [
+    'u.s. citizen', 'us citizen', 'american citizen', 'citizenship required',
+    'security clearance', 'clearance required', 'top secret', 'ts/sci'
+]
 
 def load_config() -> Dict[str, Any]:
     """Load configuration from config.yml"""
@@ -32,6 +141,54 @@ def load_config() -> Dict[str, Any]:
     except Exception as e:
         print(f"Error loading config: {e}")
         sys.exit(1)
+
+def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
+    """Categorize a job based on its title and description"""
+    title_lower = title.lower()
+    desc_lower = description.lower() if description else ''
+    combined = f"{title_lower} {desc_lower}"
+    
+    for category_id, category_info in CATEGORY_PATTERNS.items():
+        if category_id == 'other':
+            continue
+        for keyword in category_info['keywords']:
+            if keyword in combined:
+                return {
+                    'id': category_id,
+                    'name': category_info['name'],
+                    'emoji': category_info['emoji']
+                }
+    
+    # Default to 'other' if no match
+    return {
+        'id': 'other',
+        'name': CATEGORY_PATTERNS['other']['name'],
+        'emoji': CATEGORY_PATTERNS['other']['emoji']
+    }
+
+def get_company_tier(company_name: str) -> Dict[str, Any]:
+    """Get company tier classification"""
+    if company_name in FAANG_PLUS:
+        return {'tier': 'faang_plus', 'emoji': '🔥', 'label': 'FAANG+'}
+    elif company_name in UNICORNS:
+        return {'tier': 'unicorn', 'emoji': '🚀', 'label': 'Unicorn'}
+    else:
+        return {'tier': 'other', 'emoji': '', 'label': ''}
+
+def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
+    """Detect sponsorship and citizenship requirements"""
+    combined = f"{title.lower()} {description.lower() if description else ''}"
+    
+    return {
+        'no_sponsorship': any(kw in combined for kw in NO_SPONSORSHIP_KEYWORDS),
+        'us_citizenship_required': any(kw in combined for kw in US_CITIZENSHIP_KEYWORDS)
+    }
+
+def is_job_closed(title: str, description: str = '') -> bool:
+    """Check if job appears to be closed"""
+    combined = f"{title.lower()} {description.lower() if description else ''}"
+    closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
+    return any(indicator in combined for indicator in closed_indicators)
 
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
@@ -52,13 +209,15 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 continue
             
             for job in data.get('jobs', []):
+                description = job.get('content', '') or ''
                 jobs.append({
                     'company': company_name,
                     'title': job.get('title', ''),
                     'location': job.get('location', {}).get('name', 'Remote'),
                     'url': job.get('absolute_url', ''),
                     'posted_at': job.get('updated_at') or job.get('created_at'),
-                    'source': 'Greenhouse'
+                    'source': 'Greenhouse',
+                    'description': description[:500] if description else ''
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -106,13 +265,15 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 continue
             
             for job in data:
+                description = job.get('description', '') or job.get('descriptionPlain', '') or ''
                 jobs.append({
                     'company': company_name,
                     'title': job.get('text', ''),
                     'location': job.get('categories', {}).get('location', 'Remote'),
                     'url': job.get('hostedUrl', ''),
                     'posted_at': job.get('createdAt'),
-                    'source': 'Lever'
+                    'source': 'Lever',
+                    'description': description[:500] if description else ''
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -180,6 +341,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         continue
                     
                     location_str = '; '.join(location_names)
+                    description = job.get('description', '') or ''
                     
                     jobs.append({
                         'company': 'Google',
@@ -187,7 +349,8 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         'location': location_str,
                         'url': job.get('apply_url', ''),
                         'posted_at': job.get('created') or job.get('publish_date'),
-                        'source': 'Google Careers'
+                        'source': 'Google Careers',
+                        'description': description[:500] if description else ''
                     })
                 
                 print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
@@ -259,6 +422,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                     # Convert DataFrame to list of dictionaries
                     jobs_found = 0
                     for _, row in jobs_df.iterrows():
+                        description = row.get('description', '') or ''
                         # Map JobSpy fields to our standard format
                         job = {
                             'company': row.get('company', 'Unknown'),
@@ -267,7 +431,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                             'url': row.get('job_url', ''),
                             'posted_at': row.get('date_posted', ''),
                             'source': f'JobSpy ({site.title()})',
-                            'description': row.get('description', '')[:200] + '...' if row.get('description') else ''  # Truncate description
+                            'description': description[:500] if description else ''
                         }
                         
                         # Only add jobs with valid URLs
@@ -308,20 +472,6 @@ def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> Li
     print("🚧 SerpApi integration ready but requires API key configuration")
     print("   Set SERP_API_KEY environment variable to enable")
     
-    # Placeholder for SerpApi implementation
-    # This would integrate with: https://serpapi.com/google-jobs-api
-    # Example implementation:
-    #
-    # import requests
-    # params = {
-    #     'engine': 'google_jobs',
-    #     'q': 'new grad software engineer',
-    #     'location': config_serp.get('location', 'United States'),
-    #     'api_key': api_key
-    # }
-    # response = requests.get('https://serpapi.com/search', params=params)
-    # # Process response and convert to standard format
-    
     return []
 
 def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -337,10 +487,6 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
     
     print("🚧 ScraperAPI integration ready but requires API key configuration")
     print("   Set SCRAPER_API_KEY environment variable to enable")
-    
-    # Placeholder for ScraperAPI implementation
-    # This would integrate with: https://scraperapi.com
-    # Example for scraping job sites that don't have APIs
     
     return []
 
@@ -531,7 +677,6 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
             continue
         
         # For jobs with clear new grad signals, track signals are optional
-        # This matches the reference repo approach where "New Grad Software Engineer" doesn't need additional keywords
         has_track = has_track_signal(title, filters['track_signals'])
         
         # Strong new grad signals that don't need additional track signals
@@ -557,6 +702,37 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
     
     return filtered_jobs
 
+def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Add categorization, company tier, and flags to jobs"""
+    enriched = []
+    
+    for job in jobs:
+        title = job.get('title', '')
+        description = job.get('description', '')
+        company = job.get('company', '')
+        
+        # Add categorization
+        category = categorize_job(title, description)
+        job['category'] = category
+        
+        # Add company tier
+        tier = get_company_tier(company)
+        job['company_tier'] = tier
+        
+        # Add sponsorship flags
+        flags = detect_sponsorship_flags(title, description)
+        job['flags'] = flags
+        
+        # Check if closed
+        job['is_closed'] = is_job_closed(title, description)
+        
+        # Generate unique ID
+        job['id'] = f"{company}-{title}-{job.get('location', '')}".lower().replace(' ', '-')[:100]
+        
+        enriched.append(job)
+    
+    return enriched
+
 def format_posted_date(posted_at: str) -> str:
     """Format posted date for display"""
     try:
@@ -580,9 +756,82 @@ def format_posted_date(posted_at: str) -> str:
     except:
         return "Unknown"
 
+def get_iso_date(posted_at) -> str:
+    """Get ISO format date string"""
+    try:
+        if isinstance(posted_at, (int, float)):
+            posted_date = datetime.fromtimestamp(posted_at / 1000)
+        else:
+            posted_date = date_parser.parse(posted_at)
+        return posted_date.replace(tzinfo=None).isoformat()
+    except:
+        return ""
+
+def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
+    """Generate JSON data structure for jobs"""
+    
+    # Calculate category counts
+    category_counts = {}
+    for category_id in CATEGORY_PATTERNS.keys():
+        category_counts[category_id] = 0
+    
+    for job in jobs:
+        cat_id = job.get('category', {}).get('id', 'other')
+        category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
+    
+    # Sort jobs by date
+    def get_sort_date(job):
+        posted_at = job.get('posted_at')
+        if not posted_at:
+            return datetime.min
+        try:
+            if isinstance(posted_at, (int, float)):
+                return datetime.fromtimestamp(posted_at / 1000)
+            else:
+                return date_parser.parse(posted_at).replace(tzinfo=None)
+        except:
+            return datetime.min
+    
+    jobs.sort(key=get_sort_date, reverse=True)
+    
+    # Build JSON structure
+    json_jobs = []
+    for job in jobs:
+        json_jobs.append({
+            'id': job.get('id', ''),
+            'company': job.get('company', ''),
+            'title': job.get('title', ''),
+            'location': job.get('location', ''),
+            'url': job.get('url', ''),
+            'posted_at': get_iso_date(job.get('posted_at')),
+            'posted_display': format_posted_date(job.get('posted_at', '')),
+            'source': job.get('source', ''),
+            'category': job.get('category', {}),
+            'company_tier': job.get('company_tier', {}),
+            'flags': job.get('flags', {}),
+            'is_closed': job.get('is_closed', False)
+        })
+    
+    return {
+        'meta': {
+            'generated_at': datetime.now().isoformat(),
+            'total_jobs': len(jobs),
+            'categories': [
+                {
+                    'id': cat_id,
+                    'name': cat_info['name'],
+                    'emoji': cat_info['emoji'],
+                    'count': category_counts.get(cat_id, 0)
+                }
+                for cat_id, cat_info in CATEGORY_PATTERNS.items()
+                if category_counts.get(cat_id, 0) > 0
+            ]
+        },
+        'jobs': json_jobs
+    }
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
-    """Generate README content with job listings"""
-    readme_config = config['readme']
+    """Generate README content with job listings - SimplifyJobs style"""
     
     # Sort jobs by posted date (most recent first)
     def get_sort_date(job):
@@ -594,91 +843,167 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
                 return datetime.fromtimestamp(posted_at / 1000)
             else:
                 parsed_date = date_parser.parse(posted_at)
-                # Remove timezone info for comparison
                 return parsed_date.replace(tzinfo=None)
         except:
             return datetime.min
     
     jobs.sort(key=get_sort_date, reverse=True)
     
-    readme_content = f"""# {readme_config['title']}
+    # Calculate category counts
+    category_counts = {}
+    for job in jobs:
+        cat_id = job.get('category', {}).get('id', 'other')
+        category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
+    
+    # Build README
+    readme_content = f"""# 🎓 2026 New Grad Positions
 
-{readme_config['subtitle']}
+[![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
+[![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
+[![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 
-🔄 **Last updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
+**Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-📊 **Total jobs found:** {len(jobs)}
+🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+
+🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
 ---
 
-## Available Positions
+## 📂 Browse {len(jobs)} Jobs by Category
 
 """
     
-    if not jobs:
-        readme_content += "No new grad positions found matching the criteria. Check back later!\n"
-        return readme_content
+    # Add category links
+    for cat_id, cat_info in CATEGORY_PATTERNS.items():
+        count = category_counts.get(cat_id, 0)
+        if count > 0:
+            anchor = cat_info['name'].lower().replace(' ', '-').replace('&', '').replace('  ', '-')
+            readme_content += f"{cat_info['emoji']} [{cat_info['name']}](#{anchor}) ({count})\n\n"
     
-    # Create table header
-    headers = readme_config['table_headers']
-    readme_content += "| " + " | ".join(headers) + " |\n"
-    readme_content += "|" + "|".join([" --- " for _ in headers]) + "|\n"
-    
-    # Add job rows
-    for job in jobs:
-        company = job.get('company', 'Unknown')
-        title = job.get('title', 'Unknown')
-        location = job.get('location', 'Remote')
-        posted = format_posted_date(job.get('posted_at', ''))
-        url = job.get('url', '#')
-        
-        # Escape pipe characters in content
-        title = title.replace('|', '\\|')
-        location = location.replace('|', '\\|')
-        
-        apply_link = f"[Apply]({url})" if url and url != '#' else "N/A"
-        
-        readme_content += f"| {company} | {title} | {location} | {posted} | {apply_link} |\n"
-    
-    readme_content += f"""
+    readme_content += """---
+
+## 🚀 Legend
+
+| Icon | Meaning |
+|------|---------|
+| 🔥 | FAANG+ Company |
+| 🚀 | Unicorn Startup |
+| 🛂 | No Visa Sponsorship |
+| 🇺🇸 | US Citizenship Required |
+| 🔒 | Position Closed |
+
 ---
 
-## About This Repository
+"""
+    
+    # Group jobs by category
+    jobs_by_category = {}
+    for job in jobs:
+        cat_id = job.get('category', {}).get('id', 'other')
+        if cat_id not in jobs_by_category:
+            jobs_by_category[cat_id] = []
+        jobs_by_category[cat_id].append(job)
+    
+    # Generate tables for each category
+    for cat_id, cat_info in CATEGORY_PATTERNS.items():
+        cat_jobs = jobs_by_category.get(cat_id, [])
+        if not cat_jobs:
+            continue
+        
+        readme_content += f"## {cat_info['emoji']} {cat_info['name']} New Grad Roles\n\n"
+        readme_content += "[Back to top](#-2026-new-grad-positions)\n\n"
+        readme_content += "| Company | Role | Location | Posted | Apply |\n"
+        readme_content += "|---------|------|----------|--------|-------|\n"
+        
+        for job in cat_jobs:
+            company = job.get('company', 'Unknown')
+            title = job.get('title', 'Unknown')
+            location = job.get('location', 'Remote')
+            posted = format_posted_date(job.get('posted_at', ''))
+            url = job.get('url', '#')
+            
+            # Add company tier emoji
+            tier_emoji = job.get('company_tier', {}).get('emoji', '')
+            if tier_emoji:
+                company = f"{tier_emoji} {company}"
+            
+            # Add flags
+            flags = job.get('flags', {})
+            flag_str = ""
+            if flags.get('no_sponsorship'):
+                flag_str += " 🛂"
+            if flags.get('us_citizenship_required'):
+                flag_str += " 🇺🇸"
+            if job.get('is_closed'):
+                flag_str += " 🔒"
+            
+            # Escape pipe characters
+            title = title.replace('|', '\\|')
+            location = location.replace('|', '\\|')
+            
+            apply_link = f"[Apply]({url})" if url and url != '#' and not job.get('is_closed') else "🔒"
+            
+            readme_content += f"| {company} | {title}{flag_str} | {location} | {posted} | {apply_link} |\n"
+        
+        readme_content += "\n"
+    
+    readme_content += f"""---
 
-This repository automatically scrapes new graduate job opportunities from various company job boards every 5 minutes using multiple data sources and APIs for comprehensive coverage.
+## 📊 About This Repository
 
-### Data Sources
-- **Direct Company APIs**: Greenhouse and Lever job boards from major tech companies
+This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
+
+### 🔌 Data Sources
+- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
 - **Search APIs**: Google Careers direct searches
 - **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
-- **Extensible Framework**: Ready for additional APIs like SerpApi, ScraperAPI, and others
+- **Community Submissions**: User-submitted jobs via GitHub Issues
 
-### Key Features
-- **Comprehensive Coverage**: 70+ companies across multiple job platforms
+### ⚡ Key Features
+- **Comprehensive Coverage**: 70+ companies across multiple platforms
 - **Real-time Updates**: Automatic updates every 5 minutes
-- **Smart Filtering**: Advanced filtering for new grad positions and relevant tech roles
+- **Smart Filtering**: Advanced filtering for new grad positions
 - **USA Focus**: Filters for US-based positions only
-- **Multiple APIs**: Redundancy and broad coverage across job sites 
+- **Category Organization**: Jobs organized by role type
+- **Company Badges**: FAANG+ and unicorn companies highlighted
 
-### Filtering Criteria
-- **New Grad Signals:** new grad, new graduate, entry-level, graduate, junior, associate, trainee, campus, recent graduate
-- **Track Focus:** Software, Data Science/Engineering, Machine Learning, Network Engineering, Site Reliability Engineering (SRE), DevOps
-- **Recency:** Jobs posted within the last {config['filters']['max_age_days']} days
-- **Location:** USA-based positions only
-- **Sources:** Greenhouse, Lever, Google Careers, and JobSpy (LinkedIn, Indeed, Glassdoor) job boards
+### 🎯 Filtering Criteria
+- **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
+- **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
+- **Recency**: Jobs posted within the last {config['filters']['max_age_days']} days
+- **Location**: USA-based positions only
 
-### Companies Monitored
-**Greenhouse:** {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
+### 🏢 Companies Monitored
 
-**Lever:** {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
+<details>
+<summary>Click to expand (70+ companies)</summary>
 
-**Google Careers:** Direct API searches for new graduate positions
+**Greenhouse**: {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
 
-**JobSpy Integration:** LinkedIn, Indeed, and Glassdoor job searches for comprehensive coverage
+**Lever**: {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
+
+**Google Careers**: Direct API searches
+
+**JobSpy**: LinkedIn, Indeed, Glassdoor
+
+</details>
 
 ---
 
-*This list is automatically updated every 5 minutes. Star ⭐ this repo to stay updated!*
+## 🤝 Contributing
+
+Found a job we're missing? Want to report a closed position?
+
+1. [Submit a new job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml)
+2. [Report a closed job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=edit_role.yml)
+3. [Report a bug](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=bug_report.yml)
+
+---
+
+⭐ **Star this repo** to stay updated with the latest new grad opportunities!
+
+*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}*
 """
     
     return readme_content
@@ -733,15 +1058,31 @@ def main():
     filtered_jobs = filter_jobs(all_jobs, config)
     print(f"Jobs after filtering: {len(filtered_jobs)}")
     
+    # Enrich jobs with categorization and flags
+    enriched_jobs = enrich_jobs(filtered_jobs)
+    print(f"Jobs enriched with categories and flags")
+    
+    # Generate JSON data
+    jobs_json = generate_jobs_json(enriched_jobs, config)
+    
+    # Write JSON file
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
+    try:
+        with open(json_path, 'w') as f:
+            json.dump(jobs_json, f, indent=2)
+        print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
+    except Exception as e:
+        print(f"Error writing jobs.json: {e}")
+    
     # Generate README content
-    readme_content = generate_readme(filtered_jobs, config)
+    readme_content = generate_readme(enriched_jobs, config)
     
     # Write to README file
     readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
     try:
         with open(readme_path, 'w') as f:
             f.write(readme_content)
-        print(f"README.md updated successfully with {len(filtered_jobs)} jobs")
+        print(f"README.md updated successfully with {len(enriched_jobs)} jobs")
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)

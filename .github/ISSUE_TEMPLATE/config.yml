@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/ambicuity/New-Grad-Jobs/discussions
+    about: Ask questions or share feedback
+  - name: ⭐ Star this repo
+    url: https://github.com/ambicuity/New-Grad-Jobs
+    about: Star to stay updated with new jobs!

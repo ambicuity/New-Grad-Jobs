@@ -1,0 +1,101 @@
+name: "🆕 New Role"
+description: Submit a new job posting that's not in our list
+title: "[New Role]: "
+labels: ["new-role"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a new job! Please fill out the form below.
+        
+        **Before submitting**, please:
+        - Search existing issues to avoid duplicates
+        - Verify the job is for new graduates/entry-level
+        - Confirm the position is in the USA or remote (US)
+        - Check that the application link works
+
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      description: The name of the company
+      placeholder: e.g., Google, Stripe, SpaceX
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Job Title
+      description: The exact job title as listed
+      placeholder: e.g., Software Engineer - New Grad
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where is the job located?
+      placeholder: e.g., San Francisco, CA / Remote - USA / New York, NY
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Application URL
+      description: Direct link to the job application
+      placeholder: https://careers.company.com/job/12345
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What type of role is this?
+      options:
+        - 💻 Software Engineering
+        - 🤖 Data Science & ML
+        - 📊 Data Engineering
+        - 🏗️ Infrastructure & SRE
+        - 📱 Product Management
+        - 📈 Quantitative Finance
+        - 🔧 Hardware Engineering
+        - 💼 Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: flags
+    attributes:
+      label: Additional Information
+      description: Check all that apply
+      options:
+        - label: "🛂 Does NOT offer visa sponsorship"
+        - label: "🇺🇸 Requires US Citizenship"
+        - label: "🔥 FAANG+ company (Google, Meta, Amazon, Apple, Netflix, Microsoft, etc.)"
+        - label: "🚀 Unicorn startup (valued at $1B+)"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information about this role
+      placeholder: e.g., This is part of their rotational program, requires security clearance, etc.
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: Please confirm the following
+      options:
+        - label: I have verified this job is for new graduates or entry-level candidates
+          required: true
+        - label: I have verified this job is located in the USA or is remote (US)
+          required: true
+        - label: I have verified the application link works
+          required: true
+        - label: I have searched existing issues and this job is not already submitted
+          required: true

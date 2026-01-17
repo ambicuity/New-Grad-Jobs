@@ -1,0 +1,59 @@
+name: "✏️ Edit Role"
+description: Report a closed job or request changes to an existing listing
+title: "[Edit Role]: "
+labels: ["edit-role"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a closed job or request changes to an existing listing.
+
+  - type: input
+    id: url
+    attributes:
+      label: Job Application URL
+      description: The URL of the job you want to edit (right-click "Apply" → Copy link address)
+      placeholder: https://careers.company.com/job/12345
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: What needs to change?
+      description: Select the type of edit needed
+      options:
+        - 🔒 Mark as closed (job no longer accepting applications)
+        - 📝 Update job title
+        - 📍 Update location
+        - 🔗 Update application URL
+        - 🏷️ Update category
+        - ❌ Remove listing (spam/not a real job)
+        - 🔄 Other change
+    validations:
+      required: true
+
+  - type: textarea
+    id: new_value
+    attributes:
+      label: New Value (if applicable)
+      description: If updating a field, provide the correct value here
+      placeholder: e.g., New title, new location, new URL, etc.
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Edit
+      description: Please explain why this change is needed
+      placeholder: e.g., Application page returns 404, job posting says "closed", etc.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: Please confirm
+      options:
+        - label: I have verified this change is accurate
+          required: true
