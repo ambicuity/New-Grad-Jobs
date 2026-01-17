@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-17T18:00:34.046725",
+    "generated_at": "2026-01-17T18:11:41.366728",
     "total_jobs": 58,
     "categories": [
       {
@@ -47,7 +47,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -72,7 +75,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -97,7 +101,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -122,7 +127,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -147,7 +153,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -172,7 +179,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -197,7 +205,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -222,7 +231,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -247,7 +259,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -272,7 +287,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -297,7 +315,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -322,32 +343,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
-      "posted_at": "2026-01-15T13:23:19",
-      "posted_display": "2 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -372,7 +371,38 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "New Graduate Engineer, Mechanical (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
+      "posted_at": "2026-01-15T13:23:19",
+      "posted_display": "2 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -397,7 +427,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -422,7 +455,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -447,7 +483,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -472,7 +511,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -497,7 +539,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -522,7 +567,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -547,7 +595,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -572,7 +623,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -597,7 +651,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -622,7 +677,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -647,7 +703,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -672,7 +729,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -697,7 +755,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -722,7 +781,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -747,7 +807,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -772,7 +833,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -797,7 +861,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -822,7 +887,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -847,7 +915,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -872,7 +941,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -897,7 +967,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -922,7 +995,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -947,7 +1021,10 @@
       "company_tier": {
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
-        "label": "FAANG+"
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -972,7 +1049,10 @@
       "company_tier": {
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
-        "label": "FAANG+"
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -997,7 +1077,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -1022,7 +1105,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -1047,7 +1133,10 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -1072,7 +1161,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1097,7 +1187,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1122,7 +1213,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1147,7 +1239,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1172,7 +1265,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1197,57 +1291,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-bastrop,-tx",
-      "company": "SpaceX",
-      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
-      "posted_at": "2025-12-31T11:15:39",
-      "posted_display": "2025-12-31",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
-      "posted_at": "2025-12-31T11:15:39",
-      "posted_display": "2025-12-31",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1272,7 +1317,66 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
+      "posted_at": "2025-12-31T11:15:39",
+      "posted_display": "2025-12-31",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-bastrop,-tx",
+      "company": "SpaceX",
+      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
+      "posted_at": "2025-12-31T11:15:39",
+      "posted_display": "2025-12-31",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -1297,7 +1401,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1322,7 +1427,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1347,7 +1453,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1372,7 +1479,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1397,7 +1505,8 @@
       "company_tier": {
         "tier": "other",
         "emoji": "",
-        "label": ""
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1422,7 +1531,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1447,7 +1557,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -1472,7 +1583,8 @@
       "company_tier": {
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
-        "label": "Unicorn"
+        "label": "Unicorn",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
