@@ -319,22 +319,30 @@ function escapeHtml(text) {
 // Initialization
 // ============================================
 async function init() {
-    // Set up theme
-    initTheme();
-
-    // Set up event listeners
-    elements.themeToggle.addEventListener('click', toggleTheme);
-    elements.searchInput.addEventListener('input', handleSearch);
-    elements.searchClear.addEventListener('click', () => {
-        elements.searchInput.value = '';
-        elements.searchClear.classList.remove('visible');
-        currentFilters.search = '';
-        applyFilters();
-    });
-    elements.categoryFilters.addEventListener('click', handleChipClick);
-    elements.tierFilters.addEventListener('click', handleChipClick);
-    elements.locationFilter.addEventListener('change', handleLocationChange);
-    elements.resetFilters.addEventListener('click', resetFilters);
+    // Set up event listeners (with null checks)
+    if (elements.searchInput) {
+        elements.searchInput.addEventListener('input', handleSearch);
+    }
+    if (elements.searchClear) {
+        elements.searchClear.addEventListener('click', () => {
+            elements.searchInput.value = '';
+            elements.searchClear.classList.remove('visible');
+            currentFilters.search = '';
+            applyFilters();
+        });
+    }
+    if (elements.categoryFilters) {
+        elements.categoryFilters.addEventListener('click', handleChipClick);
+    }
+    if (elements.tierFilters) {
+        elements.tierFilters.addEventListener('click', handleChipClick);
+    }
+    if (elements.locationFilter) {
+        elements.locationFilter.addEventListener('change', handleLocationChange);
+    }
+    if (elements.resetFilters) {
+        elements.resetFilters.addEventListener('click', resetFilters);
+    }
 
     // Fetch and render jobs
     const data = await fetchJobs();
@@ -344,7 +352,9 @@ async function init() {
         filteredJobs = [...allJobs];
 
         // Hide loading
-        elements.loading.style.display = 'none';
+        if (elements.loading) {
+            elements.loading.style.display = 'none';
+        }
 
         // Render
         renderJobs(filteredJobs);
@@ -352,13 +362,16 @@ async function init() {
         updateLastUpdated(data.meta?.generated_at);
     } else {
         // Show error state
-        elements.loading.innerHTML = `
-            <div class="empty-icon">⚠️</div>
-            <h3>Could not load jobs</h3>
-            <p>Please try refreshing the page</p>
-        `;
+        if (elements.loading) {
+            elements.loading.innerHTML = `
+                <div class="empty-icon">⚠️</div>
+                <h3>Could not load jobs</h3>
+                <p>Please try refreshing the page</p>
+            `;
+        }
     }
 }
 
 // Start the app
 document.addEventListener('DOMContentLoaded', init);
+
