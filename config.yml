@@ -252,13 +252,32 @@ apis:
       - "linkedin"
       # - "glassdoor"  # Temporarily disabled due to API issues
     search_terms:
+      # Generic new grad searches
       - "new graduate software engineer"
       - "entry level software engineer"
       - "junior software engineer" 
       - "new grad data scientist"
       - "entry level data engineer"
+      # Company-specific searches (for companies without Greenhouse/Lever APIs)
+      - "TikTok new grad"
+      - "ByteDance new grad"
+      - "Qualcomm new grad"
+      - "DRW new grad"
+      - "IBM new grad"
+      - "Wells Fargo new grad"
+      - "Booz Allen Hamilton new grad"
+      - "Raytheon new grad"
+      - "Collins Aerospace new grad"
+      - "Autodesk new grad"
+      - "Akamai new grad"
+      - "Charles Schwab new grad"
+      - "Sierra Space new grad"
+      - "HII new grad"
+      - "Travelers new grad"
+      - "DXC Technology new grad"
+      - "Snap new grad"
     location: "United States"
-    results_wanted: 20  # Reduced per site to manage total volume
+    results_wanted: 30  # Increased per site to capture company-specific results
     hours_old: 168  # Only jobs posted in last week (7 days)
     
   # Third-party job scraping APIs (configuration ready for future implementation)

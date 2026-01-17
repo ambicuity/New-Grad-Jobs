@@ -33,7 +33,14 @@ FAANG_PLUS = {
     'NVIDIA', 'Tesla', 'Adobe', 'Salesforce', 'Oracle', 'IBM', 'Intel',
     'Cisco', 'Qualcomm', 'AMD', 'Uber', 'Lyft', 'Airbnb', 'Stripe', 'PayPal',
     'Block (Square)', 'Visa', 'Mastercard', 'Goldman Sachs', 'Morgan Stanley',
-    'JPMorgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw'
+    'JPMorgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw',
+    # Defense/Aerospace
+    'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
+    'General Dynamics', 'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII',
+    # Finance/Insurance
+    'Wells Fargo', 'Travelers', 'Charles Schwab', 'American Express', 'AMEX',
+    # Tech Giants
+    'TikTok', 'ByteDance', 'Snap', 'Autodesk', 'Akamai', 'DXC Technology'
 }
 
 UNICORNS = {
@@ -46,7 +53,10 @@ UNICORNS = {
     'Zoom', 'Slack', 'Vercel', 'Supabase', 'PlanetScale', 'Nuro', 'Waymo',
     'Cruise', 'Aurora', 'Rivian', 'Lucid', 'Chime', 'Brex', 'Affirm',
     'SoFi', 'Upstart', 'Checkout.com', 'Revolut', 'Nubank', 'Klarna',
-    'Grammarly', 'Duolingo', 'Coursera', 'Khan Academy'
+    'Grammarly', 'Duolingo', 'Coursera', 'Khan Academy',
+    # Additional companies
+    'Sierra Space', 'Relativity Space', 'Booz Allen Hamilton', 'DRW',
+    'iRhythm', 'Qumulo', 'Zealthy'
 }
 
 # Job categories based on title keywords
