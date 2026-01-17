@@ -61,72 +61,38 @@ jobs:
         git config --local user.email "riteshrana36@gmail.com"
         git config --local user.name "ambicuity"
         
+        # Pull latest changes first (job data files can be safely overwritten)
+        git fetch origin main
+        git reset --soft origin/main
+        
         # Copy jobs.json to docs folder for GitHub Pages
         cp jobs.json docs/jobs.json
         
-        git add README.md jobs.json docs/jobs.json
+        # Stage and commit
+        git add README.md jobs.json docs/jobs.json docs/CNAME
+        
+        # Check if there are actually changes to commit
+        if git diff --cached --quiet; then
+          echo "No changes to commit after merge"
+          exit 0
+        fi
+        
         git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
         
-        # Add random delay to reduce concurrent execution conflicts
-        sleep $((RANDOM % 10 + 5))
-        
-        # Pull latest changes and push with improved retry logic
-        max_retries=5
-        retry_count=0
-        
-        while [ $retry_count -lt $max_retries ]; do
-          echo "Attempt $((retry_count + 1)) of $max_retries"
-          
-          # Always fetch latest changes first
-          if ! git fetch origin main; then
-            echo "Failed to fetch origin/main, retrying..."
-            retry_count=$((retry_count + 1))
-            sleep $((RANDOM % 5 + 3))
-            continue
-          fi
-          
-          # Check if we need to rebase
-          if ! git diff --quiet HEAD origin/main; then
-            echo "Remote has changes, rebasing..."
-            if ! git rebase origin/main; then
-              echo "Rebase failed, checking for conflicts..."
-              if git status --porcelain | grep -q "^UU\|^AA\|^DD"; then
-                echo "Rebase conflicts detected, aborting and retrying..."
-                git rebase --abort
-                # Reset to original commit and try again
-                git reset --hard HEAD~1
-                cp jobs.json docs/jobs.json
-                git add README.md jobs.json docs/jobs.json
-                git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
-              else
-                echo "Rebase failed for unknown reason, aborting..."
-                git rebase --abort
-              fi
-              retry_count=$((retry_count + 1))
-              sleep $((RANDOM % 8 + 5))
-              continue
-            fi
-          fi
-          
-          # Try to push
+        # Push with retry
+        max_retries=3
+        for i in $(seq 1 $max_retries); do
+          echo "Push attempt $i of $max_retries"
           if git push origin main; then
             echo "Successfully pushed changes"
-            break
-          else
-            echo "Push failed, will retry..."
-            retry_count=$((retry_count + 1))
-            
-            if [ $retry_count -eq $max_retries ]; then
-              echo "Failed to push after $max_retries attempts"
-              exit 1
-            fi
-            
-            # Exponential backoff with jitter
-            sleep_time=$((2 ** retry_count + RANDOM % 5))
-            echo "Waiting ${sleep_time} seconds before retry..."
-            sleep $sleep_time
+            exit 0
           fi
+          echo "Push failed, pulling and retrying..."
+          git pull --rebase origin main || git rebase --abort
+          sleep $((i * 2))
         done
+        echo "Failed to push after $max_retries attempts"
+        exit 1
         
     - name: No changes
       if: steps.changes.outputs.changed == 'false'  
