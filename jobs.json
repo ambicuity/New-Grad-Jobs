@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T20:49:36.027261",
+    "generated_at": "2026-01-18T21:00:44.466808",
     "total_jobs": 852,
     "categories": [
       {
@@ -2897,11 +2897,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-software-engineer,-monetization-bay-area,-ca,-united-states-of-america",
+      "id": "block-(square)-software-engineer,-monetization-seattle,-wa,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Software Engineer, Monetization",
-      "location": "Bay Area, CA, United States of America",
-      "url": "http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008",
+      "location": "Seattle, WA, United States of America",
+      "url": "http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008",
       "posted_at": "2026-01-15T17:49:27",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -2925,11 +2925,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-software-engineer,-monetization-seattle,-wa,-united-states-of-america",
+      "id": "block-(square)-software-engineer,-monetization-bay-area,-ca,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Software Engineer, Monetization",
-      "location": "Seattle, WA, United States of America",
-      "url": "http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008",
+      "location": "Bay Area, CA, United States of America",
+      "url": "http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008",
       "posted_at": "2026-01-15T17:49:27",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -12205,7 +12205,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002",
       "posted_at": "2026-01-12T20:53:16",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",

@@ -128,8 +128,8 @@
 | 🚀 Anthropic | Software Engineer, ML Networking | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4926242008) |
 | 🚀 Anthropic | Machine Learning Systems Engineer, RL Engineering | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952051008) |
 | 🚀 Anthropic | Software Engineer, Accelerator Build Infrastructure | San Francisco, CA \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4943668008) |
-| 🔥 Block (Square) | Software Engineer, Monetization | Bay Area, CA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Seattle, WA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008) |
+| 🔥 Block (Square) | Software Engineer, Monetization | Bay Area, CA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008) |
 | 🔥 Lyft | Software Engineer, Fulfillment Core Services | Seattle, WA | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362270002?gh_jid=8362270002) |
 | Postman | Frontend Software Engineer, Growth Engineering | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7359054003) |
 | Postman | Fullstack Software Engineer, Growth | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7489490003) |
@@ -378,7 +378,7 @@
 | 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 5 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
 | 🔥 Stripe | Software Engineer, Commercial Experience | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7436194) |
 | 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 5 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
-| 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
+| 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
 | 🚀 Cloudflare | Software Engineer, Enterprise Readiness | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6467350?gh_jid=6467350) |
 | 🚀 Affirm | Software Engineer, Backend (Marketplace Experience) | Remote US | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579879003) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Product) | Bastrop, TX | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002) |
@@ -989,4 +989,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 20:49:36 UTC*
+*Last updated: 2026-01-18 21:00:44 UTC*
