@@ -17,6 +17,10 @@ let currentFilters = {
     location: 'all'
 };
 
+// Pagination state
+let currentPage = 1;
+const JOBS_PER_PAGE = 25;
+
 // ============================================
 // DOM Elements
 // ============================================
@@ -162,12 +166,22 @@ function renderJobs(jobs) {
     if (jobs.length === 0) {
         elements.jobContainer.innerHTML = '';
         elements.emptyState.classList.remove('hidden');
+        renderPagination(0, 0);
         return;
     }
 
     elements.emptyState.classList.add('hidden');
 
-    const html = jobs.map((job, index) => {
+    // Pagination calculations
+    const totalPages = Math.ceil(jobs.length / JOBS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIndex = (currentPage - 1) * JOBS_PER_PAGE;
+    const endIndex = Math.min(startIndex + JOBS_PER_PAGE, jobs.length);
+    const pageJobs = jobs.slice(startIndex, endIndex);
+
+    const html = pageJobs.map((job, index) => {
         const tierEmoji = job.company_tier?.emoji || '';
         const tierLabel = job.company_tier?.label || '';
         const categoryEmoji = job.category?.emoji || '💼';
@@ -233,6 +247,75 @@ function renderJobs(jobs) {
     }).join('');
 
     elements.jobContainer.innerHTML = html;
+    renderPagination(totalPages, jobs.length);
+}
+
+// ============================================
+// Pagination Controls
+// ============================================
+function renderPagination(totalPages, totalJobs) {
+    // Remove existing pagination
+    const existingPagination = document.querySelector('.pagination');
+    if (existingPagination) existingPagination.remove();
+
+    if (totalPages <= 1) return;
+
+    const startItem = (currentPage - 1) * JOBS_PER_PAGE + 1;
+    const endItem = Math.min(currentPage * JOBS_PER_PAGE, totalJobs);
+
+    const paginationHtml = `
+        <div class="pagination">
+            <span class="pagination-info">Showing ${startItem}-${endItem} of ${totalJobs} jobs</span>
+            <div class="pagination-controls">
+                <button class="pagination-btn" onclick="goToPage(1)" ${currentPage === 1 ? 'disabled' : ''}>« First</button>
+                <button class="pagination-btn" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>‹ Prev</button>
+                ${generatePageNumbers(totalPages)}
+                <button class="pagination-btn" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next ›</button>
+                <button class="pagination-btn" onclick="goToPage(${totalPages})" ${currentPage === totalPages ? 'disabled' : ''}>Last »</button>
+            </div>
+        </div>
+    `;
+
+    elements.jobContainer.insertAdjacentHTML('afterend', paginationHtml);
+}
+
+function generatePageNumbers(totalPages) {
+    let pages = [];
+    const maxVisible = 5;
+
+    let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let end = Math.min(totalPages, start + maxVisible - 1);
+
+    if (end - start < maxVisible - 1) {
+        start = Math.max(1, end - maxVisible + 1);
+    }
+
+    if (start > 1) {
+        pages.push(`<button class="pagination-btn" onclick="goToPage(1)">1</button>`);
+        if (start > 2) pages.push(`<span class="pagination-ellipsis">...</span>`);
+    }
+
+    for (let i = start; i <= end; i++) {
+        pages.push(`<button class="pagination-btn${i === currentPage ? ' active' : ''}" onclick="goToPage(${i})">${i}</button>`);
+    }
+
+    if (end < totalPages) {
+        if (end < totalPages - 1) pages.push(`<span class="pagination-ellipsis">...</span>`);
+        pages.push(`<button class="pagination-btn" onclick="goToPage(${totalPages})">${totalPages}</button>`);
+    }
+
+    return pages.join('');
+}
+
+function goToPage(page) {
+    const totalPages = Math.ceil(filteredJobs.length / JOBS_PER_PAGE);
+    if (page < 1 || page > totalPages) return;
+
+    currentPage = page;
+    renderJobs(filteredJobs);
+
+    // Smooth scroll to jobs section
+    document.getElementById('jobs-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function updateCounts() {
@@ -330,6 +413,8 @@ function applyFilters() {
         return true;
     });
 
+    // Reset to page 1 when filters change
+    currentPage = 1;
     renderJobs(filteredJobs);
     updateCounts();
 }
