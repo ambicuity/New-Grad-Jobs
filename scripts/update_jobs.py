@@ -498,7 +498,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     
     print(f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites and {len(countries)} countries")
     print(f"   Countries: {', '.join([c['code'] for c in countries])}")
-    print(f"   Using 10 concurrent workers for maximum speed...")
+    print(f"   Using 25 concurrent workers for maximum speed...")
     
     all_jobs = []
     completed = 0
@@ -544,15 +544,15 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 
             except Exception as e:
                 if attempt < max_retries:
-                    time.sleep(1)  # Brief delay before retry
+                    time.sleep(0.3)  # Brief delay before retry (optimized)
                     continue
                 return {'site': site, 'term': search_term, 'jobs': [], 'count': 0, 'error': str(e)[:100]}
         
         return {'site': site, 'term': search_term, 'jobs': [], 'count': 0, 'error': 'Max retries exceeded'}
     
     # Use ThreadPoolExecutor for parallel execution
-    # 10 workers provides good throughput without overwhelming rate limits
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
+    with ThreadPoolExecutor(max_workers=25) as executor:
         # Submit all tasks
         future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
         

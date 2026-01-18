@@ -312,13 +312,14 @@ apis:
       - "entry level data engineer"
       - "junior data scientist"
 
-  # JobSpy - PARALLEL scraping from Indeed/LinkedIn
-  # Now uses ThreadPoolExecutor with 10 workers - 150+ searches in ~2 min
+  # JobSpy - PARALLEL scraping from Indeed
+  # OPTIMIZED: LinkedIn disabled (429 rate limits waste ~4 min)
+  # Uses ThreadPoolExecutor with 25 workers for maximum speed
   jobspy:
     enabled: true
     sites:
-      - "indeed" 
-      - "linkedin"
+      - "indeed"
+      # LinkedIn disabled - rate limited (429 errors), Indeed provides better coverage
     search_terms:
       # ===== GENERIC SEARCHES (catch-all) =====
       - "new graduate software engineer"
@@ -494,7 +495,7 @@ apis:
         location: "Canada"
       - code: "India"
         location: "India"
-    results_wanted: 50
+    results_wanted: 30  # Reduced from 50 for faster responses
     hours_old: 168
     
   # Third-party job scraping APIs (configuration ready for future implementation)
