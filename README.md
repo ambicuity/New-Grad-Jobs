@@ -6,7 +6,7 @@
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
