@@ -446,7 +446,54 @@ apis:
       - "SoFi new grad"
       - "Upstart new grad"
       
-    location: "United States"
+      # ===== CANADA-BASED COMPANIES =====
+      - "Shopify new grad"
+      - "Wealthsimple new grad"
+      - "Hootsuite new grad"
+      - "Clio new grad"
+      - "Lightspeed new grad"
+      - "Coveo new grad"
+      - "Thinkific new grad"
+      - "ApplyBoard new grad"
+      - "Klue new grad"
+      - "Clearbanc new grad"
+      
+      # ===== INDIA-BASED COMPANIES =====
+      - "Flipkart new grad"
+      - "Zomato new grad"
+      - "Swiggy new grad"
+      - "Paytm new grad"
+      - "Razorpay new grad"
+      - "Zerodha new grad"
+      - "CRED new grad"
+      - "PhonePe new grad"
+      - "Myntra new grad"
+      - "Ola new grad"
+      - "Meesho new grad"
+      - "Groww new grad"
+      - "Freshworks new grad"
+      - "Zoho new grad"
+      - "Infosys new grad"
+      - "TCS new grad"
+      - "Wipro new grad"
+      - "HCL new grad"
+      
+      # ===== INTERNATIONAL GENERIC =====
+      - "Canada new grad software engineer"
+      - "India new grad software engineer"
+      - "Toronto new grad software"
+      - "Vancouver new grad software"
+      - "Bangalore new grad software"
+      - "Hyderabad new grad software"
+      - "Mumbai new grad software"
+    # Countries to search - international job sourcing
+    countries:
+      - code: "USA"
+        location: "United States"
+      - code: "Canada"
+        location: "Canada"
+      - code: "India"
+        location: "India"
     results_wanted: 50
     hours_old: 168
     
