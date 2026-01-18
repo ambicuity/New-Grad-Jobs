@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T17:51:31.349294",
+    "generated_at": "2026-01-18T17:53:09.847583",
     "total_jobs": 855,
     "categories": [
       {
@@ -601,7 +601,7 @@
       "location": "Palo Alto, CA",
       "url": "https://jobs.lever.co/palantir/c62264f5-5da8-40fe-9b44-f7f0f0012e11",
       "posted_at": "2026-01-16T17:52:11.312000",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Lever",
       "category": {
         "id": "software_engineering",
@@ -627,7 +627,7 @@
       "location": "Seattle, WA",
       "url": "https://jobs.lever.co/palantir/0edf7365-49f0-4263-818a-19409ec4f430",
       "posted_at": "2026-01-16T17:51:52.386000",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Lever",
       "category": {
         "id": "software_engineering",
@@ -2877,7 +2877,7 @@
       "location": "Mountain View, CA, USA; San Francisco, CA, USA",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7248697",
       "posted_at": "2026-01-15T17:52:51",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12367,7 +12367,7 @@
       "location": "Remote US",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7579879003",
       "posted_at": "2026-01-12T17:52:20",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
