@@ -646,7 +646,7 @@
 | 🚀 Chime | Product Security Engineer | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
 | 🚀 Elastic | Platform - Site Reliability Engineer II (Networking) | United States | 1 day ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=6950250&gh_jid=6950250) |
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 1 day ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
-| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
+| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
 | 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
 | 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
 | 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
@@ -796,4 +796,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 00:39:29 UTC*
+*Last updated: 2026-01-18 00:49:45 UTC*

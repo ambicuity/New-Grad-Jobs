@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T00:39:28.996886",
+    "generated_at": "2026-01-18T00:49:45.561985",
     "total_jobs": 659,
     "categories": [
       {
@@ -1497,7 +1497,7 @@
       "location": "San Francisco, CA",
       "url": "https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188",
       "posted_at": "2026-01-16T00:47:32",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
