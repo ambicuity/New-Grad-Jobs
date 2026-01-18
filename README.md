@@ -376,7 +376,7 @@
 | 🚀 Airtable | Software Engineer, Observability | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 4 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8182781002) |
 | 🚀 Cloudflare | Systems Engineer, Data | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453) |
 | 🚀 SoFi | Software Engineer, Measurement & Ads | San Francisco, CA; Seattle, Washington | 4 days ago | [Apply](https://sofi.com/careers/job/7581781003?gh_jid=7581781003) |
-| 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
+| 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 5 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
 | 🔥 Stripe | Software Engineer, Commercial Experience | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7436194) |
 | 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 5 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
 | 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 09:46:17 UTC*
+*Last updated: 2026-01-18 09:58:08 UTC*
