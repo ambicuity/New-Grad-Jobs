@@ -14,12 +14,76 @@ let currentFilters = {
     search: '',
     category: 'all',
     tier: 'all',
-    location: 'all'
+    country: 'all',
+    state: 'all'
 };
 
 // Pagination state
 let currentPage = 1;
 const JOBS_PER_PAGE = 25;
+
+// State/Province data by country
+const statesByCountry = {
+    usa: [
+        { value: 'california', label: 'California' },
+        { value: 'new york', label: 'New York' },
+        { value: 'texas', label: 'Texas' },
+        { value: 'washington', label: 'Washington' },
+        { value: 'massachusetts', label: 'Massachusetts' },
+        { value: 'illinois', label: 'Illinois' },
+        { value: 'colorado', label: 'Colorado' },
+        { value: 'georgia', label: 'Georgia' },
+        { value: 'florida', label: 'Florida' },
+        { value: 'virginia', label: 'Virginia' },
+        { value: 'north carolina', label: 'North Carolina' },
+        { value: 'pennsylvania', label: 'Pennsylvania' },
+        { value: 'new jersey', label: 'New Jersey' },
+        { value: 'arizona', label: 'Arizona' },
+        { value: 'oregon', label: 'Oregon' },
+        { value: 'maryland', label: 'Maryland' },
+        { value: 'michigan', label: 'Michigan' },
+        { value: 'ohio', label: 'Ohio' },
+        { value: 'minnesota', label: 'Minnesota' },
+        { value: 'utah', label: 'Utah' },
+        { value: 'tennessee', label: 'Tennessee' },
+        { value: 'indiana', label: 'Indiana' },
+        { value: 'missouri', label: 'Missouri' },
+        { value: 'wisconsin', label: 'Wisconsin' },
+        { value: 'nevada', label: 'Nevada' },
+        { value: 'washington dc', label: 'Washington D.C.' }
+    ],
+    canada: [
+        { value: 'ontario', label: 'Ontario' },
+        { value: 'british columbia', label: 'British Columbia' },
+        { value: 'quebec', label: 'Quebec' },
+        { value: 'alberta', label: 'Alberta' },
+        { value: 'manitoba', label: 'Manitoba' },
+        { value: 'saskatchewan', label: 'Saskatchewan' },
+        { value: 'nova scotia', label: 'Nova Scotia' },
+        { value: 'new brunswick', label: 'New Brunswick' },
+        { value: 'toronto', label: 'Toronto' },
+        { value: 'vancouver', label: 'Vancouver' },
+        { value: 'montreal', label: 'Montreal' },
+        { value: 'ottawa', label: 'Ottawa' },
+        { value: 'calgary', label: 'Calgary' }
+    ],
+    india: [
+        { value: 'bangalore', label: 'Bangalore / Karnataka' },
+        { value: 'hyderabad', label: 'Hyderabad / Telangana' },
+        { value: 'mumbai', label: 'Mumbai / Maharashtra' },
+        { value: 'delhi', label: 'Delhi / NCR' },
+        { value: 'pune', label: 'Pune' },
+        { value: 'chennai', label: 'Chennai / Tamil Nadu' },
+        { value: 'kolkata', label: 'Kolkata / West Bengal' },
+        { value: 'gurgaon', label: 'Gurgaon / Gurugram' },
+        { value: 'noida', label: 'Noida' },
+        { value: 'ahmedabad', label: 'Ahmedabad / Gujarat' },
+        { value: 'kerala', label: 'Kerala' },
+        { value: 'karnataka', label: 'Karnataka' },
+        { value: 'maharashtra', label: 'Maharashtra' },
+        { value: 'tamil nadu', label: 'Tamil Nadu' }
+    ]
+};
 
 // ============================================
 // DOM Elements
@@ -32,7 +96,8 @@ const elements = {
     searchClear: document.getElementById('search-clear'),
     categoryFilters: document.getElementById('category-filters'),
     tierFilters: document.getElementById('tier-filters'),
-    locationFilter: document.getElementById('location-filter'),
+    countryFilter: document.getElementById('country-filter'),
+    stateFilter: document.getElementById('state-filter'),
     jobCount: document.getElementById('job-count'),
     visibleCount: document.getElementById('visible-count'),
     totalCount: document.getElementById('total-count'),
@@ -366,7 +431,7 @@ function updateLastUpdated(timestamp) {
 // Filtering
 // ============================================
 function applyFilters() {
-    const { search, category, tier, location } = currentFilters;
+    const { search, category, tier, country, state } = currentFilters;
     const searchLower = search.toLowerCase();
 
     filteredJobs = allJobs.filter(job => {
@@ -396,17 +461,41 @@ function applyFilters() {
             }
         }
 
-        // Location filter
-        if (location !== 'all') {
+        // Country filter
+        if (country !== 'all') {
             const jobLocation = job.location.toLowerCase();
-            if (location === 'remote') {
+            if (country === 'remote') {
                 if (!jobLocation.includes('remote')) {
                     return false;
                 }
-            } else {
-                if (!jobLocation.includes(location)) {
+            } else if (country === 'usa') {
+                // Check for USA indicators
+                const usaIndicators = ['usa', 'united states', 'us', 'america', 'remote - us', 'usa remote'];
+                const usaStates = ['california', 'new york', 'texas', 'washington', 'massachusetts', 'illinois', 'colorado', 'georgia', 'florida', 'virginia', 'north carolina', 'pennsylvania', 'arizona', 'oregon', 'maryland'];
+                const isUSA = usaIndicators.some(ind => jobLocation.includes(ind)) || usaStates.some(st => jobLocation.includes(st));
+                if (!isUSA && !jobLocation.includes('remote')) {
                     return false;
                 }
+            } else if (country === 'canada') {
+                const canadaIndicators = ['canada', 'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'ontario', 'british columbia', 'quebec', 'alberta'];
+                const isCanada = canadaIndicators.some(ind => jobLocation.includes(ind));
+                if (!isCanada) {
+                    return false;
+                }
+            } else if (country === 'india') {
+                const indiaIndicators = ['india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune', 'chennai', 'kolkata', 'gurgaon', 'noida', 'ahmedabad'];
+                const isIndia = indiaIndicators.some(ind => jobLocation.includes(ind));
+                if (!isIndia) {
+                    return false;
+                }
+            }
+        }
+
+        // State/Province filter
+        if (state !== 'all') {
+            const jobLocation = job.location.toLowerCase();
+            if (!jobLocation.includes(state)) {
+                return false;
             }
         }
 
@@ -424,13 +513,18 @@ function resetFilters() {
         search: '',
         category: 'all',
         tier: 'all',
-        location: 'all'
+        country: 'all',
+        state: 'all'
     };
 
     // Reset UI
     elements.searchInput.value = '';
     elements.searchClear.classList.remove('visible');
-    elements.locationFilter.value = 'all';
+    if (elements.countryFilter) elements.countryFilter.value = 'all';
+    if (elements.stateFilter) {
+        elements.stateFilter.innerHTML = '<option value="all">All States/Provinces</option>';
+        elements.stateFilter.value = 'all';
+    }
 
     // Reset chips
     document.querySelectorAll('#category-filters .chip').forEach(chip => {
@@ -441,6 +535,26 @@ function resetFilters() {
     });
 
     applyFilters();
+}
+
+// Populate state dropdown based on country selection
+function populateStates(country) {
+    if (!elements.stateFilter) return;
+
+    // Reset state dropdown
+    elements.stateFilter.innerHTML = '<option value="all">All States/Provinces</option>';
+    currentFilters.state = 'all';
+
+    // Get states for selected country
+    const states = statesByCountry[country];
+    if (states && states.length > 0) {
+        states.forEach(state => {
+            const option = document.createElement('option');
+            option.value = state.value;
+            option.textContent = state.label;
+            elements.stateFilter.appendChild(option);
+        });
+    }
 }
 
 // ============================================
@@ -521,8 +635,18 @@ async function init() {
     if (elements.tierFilters) {
         elements.tierFilters.addEventListener('click', handleChipClick);
     }
-    if (elements.locationFilter) {
-        elements.locationFilter.addEventListener('change', handleLocationChange);
+    if (elements.countryFilter) {
+        elements.countryFilter.addEventListener('change', (e) => {
+            currentFilters.country = e.target.value;
+            populateStates(e.target.value);
+            applyFilters();
+        });
+    }
+    if (elements.stateFilter) {
+        elements.stateFilter.addEventListener('change', (e) => {
+            currentFilters.state = e.target.value;
+            applyFilters();
+        });
     }
     if (elements.resetFilters) {
         elements.resetFilters.addEventListener('click', resetFilters);
