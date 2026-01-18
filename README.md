@@ -70,7 +70,7 @@
 | 🔥 Stripe | Software Engineer, Product Security Data Platforms | Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7545459) |
 | 🚀 PlanetScale | Software Engineer - Insights | San Francisco Bay Area or Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/planetscale/jobs/4107018009) |
 | 🚀 Okta | Software Engineer in Test II- TCORE  | Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
-| PagerDuty | Software Engineer I - Product Development  | San Francisco | 1 day ago | [Apply](https://job-boards.greenhouse.io/pagerduty/jobs/5722204004) |
+| PagerDuty | Software Engineer I - Product Development  | San Francisco | 2 days ago | [Apply](https://job-boards.greenhouse.io/pagerduty/jobs/5722204004) |
 | 🚀 Waymo | Motion Systems Engineer, Actuators | Mountain View, Ca, USA | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490150) |
 | 🚀 Scale AI | Software Engineer - New Grad | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
 | 🚀 Unity Technologies | Développeur(se) logiciel  / Software Engineer | Montreal, Canada | 2 days ago | [Apply](https://unity.com/careers/positions/7523815?gh_jid=7523815) |
@@ -220,7 +220,7 @@
 | 🚀 Asana | Software Engineer, Product | Vancouver, BC | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6937795?gh_jid=6937795) |
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Toronto, Canada | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6099228) |
 | 🚀 Robinhood | Software Engineer, Data Governance | Bellevue, WA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7390553?t=gh_src=&gh_jid=7390553) |
-| 🚀 Anthropic | Software Engineer, Cybersecurity Products | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5063007008) |
+| 🚀 Anthropic | Software Engineer, Cybersecurity Products | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5063007008) |
 | 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
 | 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
 | 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
@@ -337,16 +337,16 @@
 | 🚀 Benchling |  Software Engineer, Full Stack (Registry and Inventory) | Boston, MA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7416988?gh_jid=7416988) |
 | 🚀 Robinhood | Software Engineer, Data Engineering | Toronto, Canada | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438) |
 | 🔥 Airbnb | Software Engineer, Search Infrastructure | Brazil | 4 days ago | [Apply](https://careers.airbnb.com/positions/7365942?gh_jid=7365942) |
-| 🚀 Scale AI | Mission Software Engineer, Public Sector | Boston, Massachusetts ; Honolulu, HI; San Diego, CA; San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4481921005) |
-| 🚀 Scale AI | Software Engineer | Argentina; Uruguay | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4612282005) |
-| 🚀 Scale AI | Software Engineer, Enterprise | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4536653005) |
-| 🚀 Scale AI | Software Engineer, Enterprise AI | New York, NY; San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4513943005) |
-| 🚀 Scale AI | Software Engineer, Full Stack – Scale GP | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4637485005) |
-| 🚀 Scale AI | Software Engineer, Gen AI | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4591300005) |
-| 🚀 Scale AI | Software Engineer, Infrastructure & Security | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4363623005) |
-| 🚀 Scale AI | Software Engineer, Public Sector | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4302243005) |
-| 🚀 Scale AI | Software Engineer - Robotics & Autonomous Systems | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4618065005) |
-| 🚀 SpaceX | IT Linux Systems Engineer | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372793002?gh_jid=8372793002) |
+| 🚀 Scale AI | Mission Software Engineer, Public Sector | Boston, Massachusetts ; Honolulu, HI; San Diego, CA; San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4481921005) |
+| 🚀 Scale AI | Software Engineer | Argentina; Uruguay | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4612282005) |
+| 🚀 Scale AI | Software Engineer, Enterprise | London, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4536653005) |
+| 🚀 Scale AI | Software Engineer, Enterprise AI | New York, NY; San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4513943005) |
+| 🚀 Scale AI | Software Engineer, Full Stack – Scale GP | San Francisco, CA; New York, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4637485005) |
+| 🚀 Scale AI | Software Engineer, Gen AI | San Francisco, CA; New York, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4591300005) |
+| 🚀 Scale AI | Software Engineer, Infrastructure & Security | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4363623005) |
+| 🚀 Scale AI | Software Engineer, Public Sector | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4302243005) |
+| 🚀 Scale AI | Software Engineer - Robotics & Autonomous Systems | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4618065005) |
+| 🚀 SpaceX | IT Linux Systems Engineer | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372793002?gh_jid=8372793002) |
 | 🚀 Benchling | Software Engineer, Backend (Developer Tooling) | San Francisco, CA | 5 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7255921?gh_jid=7255921) |
 | 🚀 Twitch | Software Engineer | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8345959002) |
 | 🚀 Twitch | Software Engineer | Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8346106002) |
@@ -733,8 +733,8 @@
 | 🚀 Dropbox | Data Scientist | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7486229?gh_jid=7486229) |
 | 🚀 Dropbox | Machine Learning Engineer, Dash | Remote - Denmark | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7384408?gh_jid=7384408) |
 | 🚀 Dropbox | Machine Learning Engineer, Dash | Remote - Germany | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7384405?gh_jid=7384405) |
-| 🚀 Scale AI | Machine Learning Engineer - Model Evaluations, Public Sector | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4631848005) |
-| 🚀 Scale AI | Machine Learning Engineer, Public Sector | San Francisco, CA; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4281519005) |
+| 🚀 Scale AI | Machine Learning Engineer - Model Evaluations, Public Sector | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4631848005) |
+| 🚀 Scale AI | Machine Learning Engineer, Public Sector | San Francisco, CA; New York, NY; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4281519005) |
 | 🚀 Grammarly | Machine Learning Engineer, Agents  | San Francisco  | 5 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7535210) |
 | 🚀 Instacart | Data Scientist | Canada - Remote (ON, AB, BC, or NS Only) | 5 days ago | [Apply](https://instacart.careers/job/?gh_jid=6298376) |
 | 🚀 Upstart | Machine Learning Engineer | United States \| Remote | 5 days ago | [Apply](https://careers.upstart.com/jobs?gh_jid=6709289) |
@@ -842,11 +842,11 @@
 | 🚀 Anthropic | Software Security Engineer | Zürich, CH | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5056795008) |
 | 🚀 Waymo | Network Engineer  | London, UK | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7435901) |
 | 🚀 Vercel |  IT Infrastructure Engineer  | Hybrid - San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5623421004) |
-| 🚀 Scale AI | AI Infrastructure Engineer, Core Infrastructure | San Francisco, CA; Seattle, WA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4624681005) |
-| 🚀 Scale AI | AI Infrastructure Engineer, Model Serving Platform | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520320005) |
-| 🚀 Scale AI | DevOps Engineer, IPS | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520295005) |
-| 🚀 Scale AI | DevOps Engineer, IPS | Doha, Qatar  | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4613839005) |
-| 🚀 Scale AI | Security Engineer, Product Security | San Francisco, CA; Seattle, WA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4647404005) |
+| 🚀 Scale AI | AI Infrastructure Engineer, Core Infrastructure | San Francisco, CA; Seattle, WA; New York, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4624681005) |
+| 🚀 Scale AI | AI Infrastructure Engineer, Model Serving Platform | San Francisco, CA; New York, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520320005) |
+| 🚀 Scale AI | DevOps Engineer, IPS | London, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520295005) |
+| 🚀 Scale AI | DevOps Engineer, IPS | Doha, Qatar  | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4613839005) |
+| 🚀 Scale AI | Security Engineer, Product Security | San Francisco, CA; Seattle, WA; New York, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4647404005) |
 | 🔥 Stripe | Security Engineer, New Grad  | Seattle, WA; San Francisco, CA; Toronto, CAN | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7477571) |
 | 🚀 SpaceX | Site Reliability Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002) |
 | 🚀 GitLab | Intermediate Site Reliability Engineer, Database Operations | Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8199072002) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 14:29:48 UTC*
+*Last updated: 2026-01-18 14:47:46 UTC*
