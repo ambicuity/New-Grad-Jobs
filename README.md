@@ -130,7 +130,7 @@
 | 🚀 Anthropic | Software Engineer, Accelerator Build Infrastructure | San Francisco, CA \| Seattle, WA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4943668008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Seattle, WA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008) |
-| 🔥 Lyft | Software Engineer, Fulfillment Core Services | Seattle, WA | 2 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362270002?gh_jid=8362270002) |
+| 🔥 Lyft | Software Engineer, Fulfillment Core Services | Seattle, WA | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362270002?gh_jid=8362270002) |
 | Postman | Frontend Software Engineer, Growth Engineering | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7359054003) |
 | Postman | Fullstack Software Engineer, Growth | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7489490003) |
 | Postman | Software Engineer, Ecosystem | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7574033003) |
@@ -198,8 +198,8 @@
 | 🚀 Instacart | Software Engineer II | Canada - Remote (ON, AB, BC, or NS Only) | 3 days ago | [Apply](https://instacart.careers/job/?gh_jid=6209738) |
 | 🚀 Nuro | Software Engineer, Infrastructure | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7540514) |
 | 🚀 Coinbase | Software Engineer - Customer Agent Interactions System | Remote - Brazil | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7539703?gh_jid=7539703) |
-| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
-| 🚀 Nuro | Software Engineer, Teleoperation | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7481633) |
+| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
+| 🚀 Nuro | Software Engineer, Teleoperation | Mountain View, California (HQ) | 4 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7481633) |
 | 🚀 SoFi | Software Engineer - Data, Member Growth | CA - San Francisco; WA - Seattle | 4 days ago | [Apply](https://sofi.com/careers/job/7586755003?gh_jid=7586755003) |
 | 🚀 Waymo | Software Engineer | Mountain View, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429873) |
 | 🚀 Discord | Software Engineer, Mobile | San Francisco Bay Area | 4 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8177727002) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 17:38:58 UTC*
+*Last updated: 2026-01-18 17:47:29 UTC*
