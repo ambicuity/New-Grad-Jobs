@@ -754,10 +754,25 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = 8) ->
 
 
 def get_job_key(job: Dict[str, Any]) -> str:
-    """Generate unique key for job deduplication"""
-    company = job.get('company', '').lower().strip()
-    title = job.get('title', '').lower().strip()
-    url = job.get('url', '').lower().strip()
+    """Generate unique key for job deduplication
+    
+    Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
+    """
+    def safe_str(value) -> str:
+        """Safely convert any value to lowercase string"""
+        if value is None:
+            return ''
+        if isinstance(value, float):
+            # Handle NaN and other floats
+            import math
+            if math.isnan(value):
+                return ''
+            return str(value)
+        return str(value).lower().strip()
+    
+    company = safe_str(job.get('company', ''))
+    title = safe_str(job.get('title', ''))
+    url = safe_str(job.get('url', ''))
     return f"{company}|{title}|{url}"
 
 
