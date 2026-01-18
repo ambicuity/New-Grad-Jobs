@@ -142,48 +142,48 @@
 | New Relic | Software Engineer 2 | Hyderabad, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4920941008) |
 | New Relic | Software Engineer-Kubernetes  | Portland, Oregon, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4991096008) |
 | 🚀 Cloudflare | Software Engineer - Network Platforms | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7541032?gh_jid=7541032) |
-| 🚀 SpaceX | Application Software Engineer | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002) |
-| 🚀 SpaceX | Application Software Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002) |
-| 🚀 SpaceX | Application Software Engineer, Data - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211824002?gh_jid=8211824002) |
-| 🚀 SpaceX | Avionics Systems Engineer (Crew Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8055023002?gh_jid=8055023002) |
-| 🚀 SpaceX | Factory Software Engineer, Consumer Products (Starlink)  | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8048838002?gh_jid=8048838002) |
-| 🚀 SpaceX | Full Stack Software Engineer (Starlink) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8098597002?gh_jid=8098597002) |
-| 🚀 SpaceX | Full Stack Software Engineer (Starlink Ground Network) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211878002?gh_jid=8211878002) |
-| 🚀 SpaceX | Full Stack Software Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196255002?gh_jid=8196255002) |
-| 🚀 SpaceX | OS/Platform Software Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8202579002?gh_jid=8202579002) |
-| 🚀 SpaceX | RF Silicon Software Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196633002?gh_jid=8196633002) |
-| 🚀 SpaceX | RF Software Engineer (Starshield)  | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8200227002?gh_jid=8200227002) |
-| 🚀 SpaceX | Satellite Systems Software Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213757002?gh_jid=8213757002) |
-| 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171587002?gh_jid=8171587002) |
-| 🚀 SpaceX | Security Software Engineer | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002) |
-| 🚀 SpaceX | Security Software Engineer (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8165986002?gh_jid=8165986002) |
-| 🚀 SpaceX | Software Engineer, Beam Planning (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186590002?gh_jid=8186590002) |
-| 🚀 SpaceX | Software Engineer (Components) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002) |
-| 🚀 SpaceX | Software Engineer, Data - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196386002?gh_jid=8196386002) |
-| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002) |
-| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002) |
-| 🚀 SpaceX | Software Engineer (Direct To Cell) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8170023002?gh_jid=8170023002) |
-| 🚀 SpaceX | Software Engineer (Dynamics) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8207970002?gh_jid=8207970002) |
-| 🚀 SpaceX | Software Engineer, Embedded Software (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166009002?gh_jid=8166009002) |
-| 🚀 SpaceX | Software Engineer, Flight Software (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166002002?gh_jid=8166002002) |
-| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002) |
-| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002) |
-| 🚀 SpaceX | Software Engineer, Geospatial Data (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8085781002?gh_jid=8085781002) |
-| 🚀 SpaceX | Software Engineer, GNC Simulations (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8067647002?gh_jid=8067647002) |
-| 🚀 SpaceX | Software Engineer, GNC (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8151502002?gh_jid=8151502002) |
-| 🚀 SpaceX | Software Engineer, Hardware Test & Automation (Optical Payloads) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211187002?gh_jid=8211187002) |
-| 🚀 SpaceX | Software Engineer, High Performance Computing | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186487002?gh_jid=8186487002) |
-| 🚀 SpaceX | Software Engineer, HITL - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8194797002?gh_jid=8194797002) |
-| 🚀 SpaceX | Software Engineer (Network Performance) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209981002?gh_jid=8209981002) |
-| 🚀 SpaceX | Software Engineer, Propulsion Simulation & Data Analysis | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002) |
-| 🚀 SpaceX | Software Engineer, Security (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8085006002?gh_jid=8085006002) |
-| 🚀 SpaceX | Software Engineer, Simulation (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8126560002?gh_jid=8126560002) |
-| 🚀 SpaceX | Software Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192197002?gh_jid=8192197002) |
-| 🚀 SpaceX | Software Engineer (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8184586002?gh_jid=8184586002) |
-| 🚀 SpaceX | Software Engineer (Starshield) - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186526002?gh_jid=8186526002) |
-| 🚀 SpaceX | Software Engineer (Vehicle Engineering) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8198657002?gh_jid=8198657002) |
-| 🚀 SpaceX | Systems Engineer, Flight Termination System (Starship) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8165107002?gh_jid=8165107002) |
-| 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Seattle, SF | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7528260) |
+| 🚀 SpaceX | Application Software Engineer | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002) |
+| 🚀 SpaceX | Application Software Engineer | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002) |
+| 🚀 SpaceX | Application Software Engineer, Data - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211824002?gh_jid=8211824002) |
+| 🚀 SpaceX | Avionics Systems Engineer (Crew Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8055023002?gh_jid=8055023002) |
+| 🚀 SpaceX | Factory Software Engineer, Consumer Products (Starlink)  | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8048838002?gh_jid=8048838002) |
+| 🚀 SpaceX | Full Stack Software Engineer (Starlink) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8098597002?gh_jid=8098597002) |
+| 🚀 SpaceX | Full Stack Software Engineer (Starlink Ground Network) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211878002?gh_jid=8211878002) |
+| 🚀 SpaceX | Full Stack Software Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196255002?gh_jid=8196255002) |
+| 🚀 SpaceX | OS/Platform Software Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8202579002?gh_jid=8202579002) |
+| 🚀 SpaceX | RF Silicon Software Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196633002?gh_jid=8196633002) |
+| 🚀 SpaceX | RF Software Engineer (Starshield)  | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8200227002?gh_jid=8200227002) |
+| 🚀 SpaceX | Satellite Systems Software Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213757002?gh_jid=8213757002) |
+| 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171587002?gh_jid=8171587002) |
+| 🚀 SpaceX | Security Software Engineer | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002) |
+| 🚀 SpaceX | Security Software Engineer (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8165986002?gh_jid=8165986002) |
+| 🚀 SpaceX | Software Engineer, Beam Planning (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186590002?gh_jid=8186590002) |
+| 🚀 SpaceX | Software Engineer (Components) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002) |
+| 🚀 SpaceX | Software Engineer, Data - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196386002?gh_jid=8196386002) |
+| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002) |
+| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002) |
+| 🚀 SpaceX | Software Engineer (Direct To Cell) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8170023002?gh_jid=8170023002) |
+| 🚀 SpaceX | Software Engineer (Dynamics) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8207970002?gh_jid=8207970002) |
+| 🚀 SpaceX | Software Engineer, Embedded Software (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166009002?gh_jid=8166009002) |
+| 🚀 SpaceX | Software Engineer, Flight Software (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166002002?gh_jid=8166002002) |
+| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002) |
+| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002) |
+| 🚀 SpaceX | Software Engineer, Geospatial Data (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8085781002?gh_jid=8085781002) |
+| 🚀 SpaceX | Software Engineer, GNC Simulations (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8067647002?gh_jid=8067647002) |
+| 🚀 SpaceX | Software Engineer, GNC (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8151502002?gh_jid=8151502002) |
+| 🚀 SpaceX | Software Engineer, Hardware Test & Automation (Optical Payloads) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211187002?gh_jid=8211187002) |
+| 🚀 SpaceX | Software Engineer, High Performance Computing | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186487002?gh_jid=8186487002) |
+| 🚀 SpaceX | Software Engineer, HITL - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8194797002?gh_jid=8194797002) |
+| 🚀 SpaceX | Software Engineer (Network Performance) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209981002?gh_jid=8209981002) |
+| 🚀 SpaceX | Software Engineer, Propulsion Simulation & Data Analysis | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002) |
+| 🚀 SpaceX | Software Engineer, Security (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8085006002?gh_jid=8085006002) |
+| 🚀 SpaceX | Software Engineer, Simulation (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8126560002?gh_jid=8126560002) |
+| 🚀 SpaceX | Software Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192197002?gh_jid=8192197002) |
+| 🚀 SpaceX | Software Engineer (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8184586002?gh_jid=8184586002) |
+| 🚀 SpaceX | Software Engineer (Starshield) - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186526002?gh_jid=8186526002) |
+| 🚀 SpaceX | Software Engineer (Vehicle Engineering) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8198657002?gh_jid=8198657002) |
+| 🚀 SpaceX | Systems Engineer, Flight Termination System (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8165107002?gh_jid=8165107002) |
+| 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Seattle, SF | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7528260) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 Anthropic | Software Engineer, Enterprise Foundations | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4667572008) |
 | 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
@@ -227,66 +227,66 @@
 | 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
 | 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
 | 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
-| 🚀 Anthropic | IT Systems Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4887952008) |
-| 🚀 Anthropic | Machine Learning Systems Engineer, Research Tools | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952079008) |
-| 🚀 Anthropic | Security Software Engineer, D&R Platform | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4595463008) |
-| 🚀 Anthropic | Software Engineer, Android | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4899511008) |
-| 🚀 Anthropic | Software Engineer, Beneficial Deployments  | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4942024008) |
-| 🚀 Anthropic | Software Engineer, Business Technology  | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982198008) |
-| 🚀 Anthropic | Software Engineer, Claude Code | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4816199008) |
-| 🚀 Anthropic | Software Engineer, Desktop | San Francisco, CA \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4980420008) |
-| 🚀 Anthropic | Software Engineer, Growth | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5042025008) |
-| 🚀 Anthropic | Software Engineer, iOS | San Francisco, CA, New York City, NY, Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4572744008) |
-| 🚀 Anthropic | Software Engineer, Labs | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5017202008) |
-| 🚀 Anthropic | Software Engineer, Languages | New York City, NY; San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4935567008) |
-| 🚀 Anthropic | Software Engineer, Platform | New York City, NY; San Francisco, CA; Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4955107008) |
-| 🚀 Anthropic | Software Engineer, Public Sector | San Francisco, CA \| New York City, NY \| Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4902636008) |
-| 🚀 Anthropic | Software Engineer, Safeguards | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4951844008) |
-| 🚀 Anthropic | Software Engineer, Sandboxing (Systems) | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5025591008) |
-| 🚀 Waymo | Backend Software Engineer | Warsaw, Masovian Voivodeship, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7460326) |
-| 🚀 Waymo | Backend Software Engineer, Driver Validation | Warsaw, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430505) |
-| 🚀 Waymo | Machine Learning SWE Infra | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438635) |
-| 🚀 Waymo | Onboard Developer Platform Software Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461052) |
-| 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461103) |
-| 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7412386) |
-| 🚀 Waymo | Software Engineer, Applied Machine Learning, Planner Technology | Mountain View, California | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7163224) |
-| 🚀 Waymo | Software Engineer, Backend  | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438627) |
-| 🚀 Waymo | Software Engineer Backend - Simulation | Mountain View | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
-| 🚀 Waymo | Software Engineer, Bulk/Interactive Inference | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7466529) |
-| 🚀 Waymo | Software Engineer, Calibration Systems | Mountain View, California, United States; San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7456229) |
-| 🚀 Waymo | Software Engineer, Commercialization Onboard Platform | Mountain View, CA, USA ;  San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426815) |
-| 🚀 Waymo | Software Engineer, Data & Evaluation | Mountain View, CA, USA ; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7428871) |
-| 🚀 Waymo | Software Engineer/Data Scientist, Large Model Evaluation | Mountain View, California, USA; San Francisco, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7487849) |
-| 🚀 Waymo | Software Engineer, Embedded Systems (BMC) | Taipei City, Taipei, Taiwan; Hsinchu, Taiwan | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7509080) |
-| 🚀 Waymo | Software Engineer, Event Response | San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430650) |
-| 🚀 Waymo | Software Engineer, Fleet Orchestration & Optimization | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430364) |
-| 🚀 Waymo | Software Engineer, Fleet Response | Mountain View, CA, USA ; San Francisco, CA, USA  | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7473934) |
-| 🚀 Waymo | Software Engineer, Fleet Response (Backend) | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429883) |
-| 🚀 Waymo | Software Engineer, Fleet Response (Full Stack) | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429906) |
-| 🚀 Waymo | Software Engineer, Labeling Infrastructure | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7416895) |
-| 🚀 Waymo | Software Engineer, Logs Infrastructure | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7389370) |
-| 🚀 Waymo | Software Engineer, Marketplace Optimization | Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7459734) |
-| 🚀 Waymo | Software Engineer, ML Efficiency | Mountain View, CA, USA; New York, CA, USA; Seattle, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7443590) |
-| 🚀 Waymo | Software Engineer, ML Inference, Simulation Infrastructure | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7353876) |
-| 🚀 Waymo | Software Engineer, ML Tools | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426718) |
-| 🚀 Waymo | Software Engineer, Onboard Reliability Infra | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461072) |
-| 🚀 Waymo | Software Engineer, Perception Evaluation and Test Automation | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7449712) |
-| 🚀 Waymo | Software Engineer, Perception Optimization | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7450565) |
-| 🚀 Waymo | Software Engineer, Planner Reasoning | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7259110) |
-| 🚀 Waymo | Software Engineer, Planner Reasoning, ML Infrastructure | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7483979) |
-| 🚀 Waymo | Software Engineer, Planner, Route and Motion Generation | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7219345) |
-| 🚀 Waymo | Software Engineer, Planner Vehicle Dynamics | Mountain View, California | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7141380) |
-| 🚀 Waymo | Software Engineer, Quantitative Evaluations | Mountain View, CA, USA; San Francisco, CA, USA  | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7466534) |
-| 🚀 Waymo | Software Engineer, Simulation Infrastructure | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430555) |
-| 🚀 Waymo | Software Engineer, Test Automation Infrastructure | San Francisco, CA, US; Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7532414) |
-| 🚀 Waymo | Software Engineer, Trip Platform | Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7433503) |
-| 🚀 Waymo | Software Engineer, Trip Platform | Warsaw, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7527351) |
-| 🚀 Waymo | Software Engineer, Vehicle Roadside Assistance | San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430652) |
-| 🚀 Waymo | Systems Engineer, Conflict Behavior | Mountain View, CA, USA ; San Francisco, CA USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490337) |
-| 🚀 Waymo | Systems Engineer, Networks | Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7510381) |
-| 🚀 Waymo | Systems Engineer, Perception | Mountain View, CA, US; San Francisco, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7367785) |
-| 🚀 Waymo | Systems Engineer, Sensing  | Mountain View, CA, US;San Francisco, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6511655) |
-| 🚀 Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
+| 🚀 Anthropic | IT Systems Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4887952008) |
+| 🚀 Anthropic | Machine Learning Systems Engineer, Research Tools | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952079008) |
+| 🚀 Anthropic | Security Software Engineer, D&R Platform | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4595463008) |
+| 🚀 Anthropic | Software Engineer, Android | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4899511008) |
+| 🚀 Anthropic | Software Engineer, Beneficial Deployments  | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4942024008) |
+| 🚀 Anthropic | Software Engineer, Business Technology  | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982198008) |
+| 🚀 Anthropic | Software Engineer, Claude Code | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4816199008) |
+| 🚀 Anthropic | Software Engineer, Desktop | San Francisco, CA \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4980420008) |
+| 🚀 Anthropic | Software Engineer, Growth | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5042025008) |
+| 🚀 Anthropic | Software Engineer, iOS | San Francisco, CA, New York City, NY, Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4572744008) |
+| 🚀 Anthropic | Software Engineer, Labs | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5017202008) |
+| 🚀 Anthropic | Software Engineer, Languages | New York City, NY; San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4935567008) |
+| 🚀 Anthropic | Software Engineer, Platform | New York City, NY; San Francisco, CA; Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4955107008) |
+| 🚀 Anthropic | Software Engineer, Public Sector | San Francisco, CA \| New York City, NY \| Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4902636008) |
+| 🚀 Anthropic | Software Engineer, Safeguards | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4951844008) |
+| 🚀 Anthropic | Software Engineer, Sandboxing (Systems) | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5025591008) |
+| 🚀 Waymo | Backend Software Engineer | Warsaw, Masovian Voivodeship, Poland | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7460326) |
+| 🚀 Waymo | Backend Software Engineer, Driver Validation | Warsaw, Poland | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430505) |
+| 🚀 Waymo | Machine Learning SWE Infra | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438635) |
+| 🚀 Waymo | Onboard Developer Platform Software Engineer | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461052) |
+| 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461103) |
+| 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7412386) |
+| 🚀 Waymo | Software Engineer, Applied Machine Learning, Planner Technology | Mountain View, California | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7163224) |
+| 🚀 Waymo | Software Engineer, Backend  | Mountain View, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438627) |
+| 🚀 Waymo | Software Engineer Backend - Simulation | Mountain View | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
+| 🚀 Waymo | Software Engineer, Bulk/Interactive Inference | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7466529) |
+| 🚀 Waymo | Software Engineer, Calibration Systems | Mountain View, California, United States; San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7456229) |
+| 🚀 Waymo | Software Engineer, Commercialization Onboard Platform | Mountain View, CA, USA ;  San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426815) |
+| 🚀 Waymo | Software Engineer, Data & Evaluation | Mountain View, CA, USA ; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7428871) |
+| 🚀 Waymo | Software Engineer/Data Scientist, Large Model Evaluation | Mountain View, California, USA; San Francisco, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7487849) |
+| 🚀 Waymo | Software Engineer, Embedded Systems (BMC) | Taipei City, Taipei, Taiwan; Hsinchu, Taiwan | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7509080) |
+| 🚀 Waymo | Software Engineer, Event Response | San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430650) |
+| 🚀 Waymo | Software Engineer, Fleet Orchestration & Optimization | Mountain View, CA, USA; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430364) |
+| 🚀 Waymo | Software Engineer, Fleet Response | Mountain View, CA, USA ; San Francisco, CA, USA  | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7473934) |
+| 🚀 Waymo | Software Engineer, Fleet Response (Backend) | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429883) |
+| 🚀 Waymo | Software Engineer, Fleet Response (Full Stack) | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429906) |
+| 🚀 Waymo | Software Engineer, Labeling Infrastructure | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7416895) |
+| 🚀 Waymo | Software Engineer, Logs Infrastructure | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7389370) |
+| 🚀 Waymo | Software Engineer, Marketplace Optimization | Mountain View, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7459734) |
+| 🚀 Waymo | Software Engineer, ML Efficiency | Mountain View, CA, USA; New York, CA, USA; Seattle, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7443590) |
+| 🚀 Waymo | Software Engineer, ML Inference, Simulation Infrastructure | Mountain View, CA, USA; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7353876) |
+| 🚀 Waymo | Software Engineer, ML Tools | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426718) |
+| 🚀 Waymo | Software Engineer, Onboard Reliability Infra | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461072) |
+| 🚀 Waymo | Software Engineer, Perception Evaluation and Test Automation | Mountain View, CA, USA; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7449712) |
+| 🚀 Waymo | Software Engineer, Perception Optimization | Mountain View, California, United States, San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7450565) |
+| 🚀 Waymo | Software Engineer, Planner Reasoning | Mountain View, CA, USA; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7259110) |
+| 🚀 Waymo | Software Engineer, Planner Reasoning, ML Infrastructure | Mountain View, California, United States, San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7483979) |
+| 🚀 Waymo | Software Engineer, Planner, Route and Motion Generation | Mountain View, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7219345) |
+| 🚀 Waymo | Software Engineer, Planner Vehicle Dynamics | Mountain View, California | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7141380) |
+| 🚀 Waymo | Software Engineer, Quantitative Evaluations | Mountain View, CA, USA; San Francisco, CA, USA  | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7466534) |
+| 🚀 Waymo | Software Engineer, Simulation Infrastructure | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430555) |
+| 🚀 Waymo | Software Engineer, Test Automation Infrastructure | San Francisco, CA, US; Mountain View, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7532414) |
+| 🚀 Waymo | Software Engineer, Trip Platform | Mountain View, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7433503) |
+| 🚀 Waymo | Software Engineer, Trip Platform | Warsaw, Poland | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7527351) |
+| 🚀 Waymo | Software Engineer, Vehicle Roadside Assistance | San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430652) |
+| 🚀 Waymo | Systems Engineer, Conflict Behavior | Mountain View, CA, USA ; San Francisco, CA USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490337) |
+| 🚀 Waymo | Systems Engineer, Networks | Mountain View, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7510381) |
+| 🚀 Waymo | Systems Engineer, Perception | Mountain View, CA, US; San Francisco, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7367785) |
+| 🚀 Waymo | Systems Engineer, Sensing  | Mountain View, CA, US;San Francisco, CA, US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6511655) |
+| 🚀 Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
 | 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7491863?gh_jid=7491863) |
 | 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7491860?gh_jid=7491860) |
 | 🔥 Lyft | Software Engineer, Road Safety | Toronto, Canada | 4 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8295524002?gh_jid=8295524002) |
@@ -348,24 +348,24 @@
 | 🚀 Scale AI | Software Engineer - Robotics & Autonomous Systems | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4618065005) |
 | 🚀 SpaceX | IT Linux Systems Engineer | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372793002?gh_jid=8372793002) |
 | 🚀 Benchling | Software Engineer, Backend (Developer Tooling) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7255921?gh_jid=7255921) |
-| 🚀 Twitch | Software Engineer | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8345959002) |
-| 🚀 Twitch | Software Engineer | Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8346106002) |
-| 🚀 Twitch | Software Engineer, Creator Monetization | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8347863002) |
-| 🚀 Twitch | Software Engineer I | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8334351002) |
-| 🚀 Twitch | Software Engineer I | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8217817002) |
-| 🚀 Twitch | Software Engineer I | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342111002) |
-| 🚀 Twitch | Software Engineer I | Irvine, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342165002) |
-| 🚀 Twitch | Software Engineer I | Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342168002) |
-| 🚀 Twitch | Software Engineer I | Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8360103002) |
-| 🚀 Twitch | Software Engineer I - Ads Demand Enablement | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8162197002) |
-| 🚀 Twitch | Software Engineer I, Builder Frameworks | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8362817002) |
-| 🚀 Twitch | Software Engineer II | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8180481002) |
-| 🚀 Twitch | Software Engineer II | Irvine, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8184232002) |
-| 🚀 Twitch | Software Engineer II, Android | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8326458002) |
-| 🚀 Twitch | Software Engineer, ML | Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8213985002) |
-| 🚀 Twitch | Software Engineer, ML | New York City | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221643002) |
-| 🚀 Twitch | Software Engineer, ML Products | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8183360002) |
-| 🚀 Chime | Mobile Software Engineer | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8350779002?gh_jid=8350779002) |
+| 🚀 Twitch | Software Engineer | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8345959002) |
+| 🚀 Twitch | Software Engineer | Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8346106002) |
+| 🚀 Twitch | Software Engineer, Creator Monetization | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8347863002) |
+| 🚀 Twitch | Software Engineer I | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8334351002) |
+| 🚀 Twitch | Software Engineer I | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8217817002) |
+| 🚀 Twitch | Software Engineer I | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342111002) |
+| 🚀 Twitch | Software Engineer I | Irvine, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342165002) |
+| 🚀 Twitch | Software Engineer I | Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8342168002) |
+| 🚀 Twitch | Software Engineer I | Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8360103002) |
+| 🚀 Twitch | Software Engineer I - Ads Demand Enablement | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8162197002) |
+| 🚀 Twitch | Software Engineer I, Builder Frameworks | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8362817002) |
+| 🚀 Twitch | Software Engineer II | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8180481002) |
+| 🚀 Twitch | Software Engineer II | Irvine, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8184232002) |
+| 🚀 Twitch | Software Engineer II, Android | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8326458002) |
+| 🚀 Twitch | Software Engineer, ML | Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8213985002) |
+| 🚀 Twitch | Software Engineer, ML | New York City | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221643002) |
+| 🚀 Twitch | Software Engineer, ML Products | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8183360002) |
+| 🚀 Chime | Mobile Software Engineer | San Francisco, CA | 5 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8350779002?gh_jid=8350779002) |
 | 🚀 Chime | Software Engineer, Growth | San Francisco, CA | 5 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/7913323002?gh_jid=7913323002) |
 | 🚀 Instacart | Software Developer in Test II | Canada - Remote (ON, AB, BC, or NS Only) | 5 days ago | [Apply](https://instacart.careers/job/?gh_jid=7431196) |
 | 🚀 Instacart | Software Engineer II, Marketing Enablement & Technology | United States - Remote | 5 days ago | [Apply](https://instacart.careers/job/?gh_jid=7450259) |
@@ -401,7 +401,7 @@
 | 🔥 Airbnb | iOS Software Engineer, Listing Clients | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7438414?gh_jid=7438414) |
 | 🔥 Airbnb | iOS Software Engineer, Guest & Host | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7336167?gh_jid=7336167) |
 | 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
-| 🔥 Lyft | Software Engineer, Customer Care | Toronto, Canada | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8359671002?gh_jid=8359671002) |
+| 🔥 Lyft | Software Engineer, Customer Care | Toronto, Canada | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8359671002?gh_jid=8359671002) |
 | 🚀 Affirm | Software Engineer, Early Career | London | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579641003) |
 | 🚀 Cloudflare | Systems Engineer - Traffic Management  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7469429?gh_jid=7469429) |
 | 🔥 Lyft | Software Engineer, Backend | Ukraine Anywhere | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8366705002?gh_jid=8366705002) |
@@ -704,26 +704,26 @@
 | 🚀 Waymo | ML Engineer, Foundation Model Infrastructure | Mountain View, CA, USA; Remote US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536801) |
 | 🚀 Waymo | ML Engineer, Foundation Model Evaluation | Mountain View, CA, USA; Remote US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536948) |
 | 🚀 Waymo | Machine Learning Engineer, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7539786) |
-| 🚀 Anthropic | Data Scientist, Marketing | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4983584008) |
-| 🚀 Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
-| 🚀 Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
-| 🚀 Waymo | Data Scientist | Mountain View, California, USA; San Francisco, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455592) |
-| 🚀 Waymo | Data Scientist  | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6608598) |
-| 🚀 Waymo | Machine Learning Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
-| 🚀 Waymo | Machine Learning Engineer | London, England, United Kingdom | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7474033) |
-| 🚀 Waymo | Machine Learning Engineer, ADV Systems | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446320) |
-| 🚀 Waymo | Machine Learning Engineer, Data & Systems  | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446301) |
-| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429811) |
-| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429791) |
-| 🚀 Waymo | Machine Learning Engineer, Mapping | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7090492) |
-| 🚀 Waymo | Machine Learning Engineer, ML Flywheel | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426598) |
-| 🚀 Waymo | Machine Learning Engineer, ML Resources | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7424806) |
-| 🚀 Waymo | Machine Learning Engineer, Model Optimization | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446322) |
-| 🚀 Waymo | Machine Learning Engineer, Perception Modeling | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446279) |
-| 🚀 Waymo | Machine Learning Engineer, Prediction & Planning | Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6506689) |
-| 🚀 Waymo | Machine Learning Engineer, Runtime & Optimization | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6506008) |
-| 🚀 Waymo | Machine Learning Engineer, Simulation Realism | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6499165) |
-| 🚀 Waymo | Machine Learning Engineer, Simulation Realism  | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6688617) |
+| 🚀 Anthropic | Data Scientist, Marketing | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4983584008) |
+| 🚀 Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
+| 🚀 Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
+| 🚀 Waymo | Data Scientist | Mountain View, California, USA; San Francisco, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455592) |
+| 🚀 Waymo | Data Scientist  | Mountain View, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6608598) |
+| 🚀 Waymo | Machine Learning Engineer | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
+| 🚀 Waymo | Machine Learning Engineer | London, England, United Kingdom | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7474033) |
+| 🚀 Waymo | Machine Learning Engineer, ADV Systems | Mountain View, California, United States, San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446320) |
+| 🚀 Waymo | Machine Learning Engineer, Data & Systems  | Mountain View, California, United States, San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446301) |
+| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429811) |
+| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429791) |
+| 🚀 Waymo | Machine Learning Engineer, Mapping | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7090492) |
+| 🚀 Waymo | Machine Learning Engineer, ML Flywheel | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426598) |
+| 🚀 Waymo | Machine Learning Engineer, ML Resources | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7424806) |
+| 🚀 Waymo | Machine Learning Engineer, Model Optimization | Mountain View, California, United States, San Francisco, California, United States | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446322) |
+| 🚀 Waymo | Machine Learning Engineer, Perception Modeling | Mountain View, CA, USA; San Francisco, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446279) |
+| 🚀 Waymo | Machine Learning Engineer, Prediction & Planning | Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6506689) |
+| 🚀 Waymo | Machine Learning Engineer, Runtime & Optimization | Mountain View, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6506008) |
+| 🚀 Waymo | Machine Learning Engineer, Simulation Realism | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6499165) |
+| 🚀 Waymo | Machine Learning Engineer, Simulation Realism  | Mountain View, CA, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6688617) |
 | 🚀 Grammarly | Machine Learning Engineer, Agents | San Francisco; Hybrid | 4 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6392339) |
 | 🚀 Coinbase | Data Scientist II - Product Analytics | Remote - UK | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202) |
 | 🚀 Coinbase | Data Scientist II - Product Analytics | Berlin, Germany | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/6746206?gh_jid=6746206) |
@@ -783,13 +783,13 @@
 |---------|------|----------|--------|-------|
 | 🚀 Anthropic | Data Engineer, Economic Research | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5071132008) |
 | 🚀 Anthropic | People Analytics Data Engineer | San Francisco, CA \| Seattle, WA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956333008) |
-| 🚀 SpaceX | Data Engineer (Direct To Cell) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186579002?gh_jid=8186579002) |
-| 🚀 SpaceX | Data Engineer, Ground Network Engineering (Gateway)  | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002) |
-| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002) |
-| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002) |
-| 🚀 Anthropic | Analytics Data Engineer | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956672008) |
-| 🚀 Waymo | Data Engineer | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438328) |
-| 🚀 Brex | Data Engineer | San Francisco, California, United States | 3 days ago | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
+| 🚀 SpaceX | Data Engineer (Direct To Cell) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186579002?gh_jid=8186579002) |
+| 🚀 SpaceX | Data Engineer, Ground Network Engineering (Gateway)  | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002) |
+| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002) |
+| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002) |
+| 🚀 Anthropic | Analytics Data Engineer | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956672008) |
+| 🚀 Waymo | Data Engineer | Mountain View, California, USA | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438328) |
+| 🚀 Brex | Data Engineer | San Francisco, California, United States | 4 days ago | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
 | Spotify | Data Engineer, Ads Product & Tech | New York, NY | 5 days ago | [Apply](https://jobs.lever.co/spotify/6698ffb1-ad8f-4173-bf81-884357eaba0d) |
 | 🔥 Lyft |  Data Engineer | Toronto, Canada | 2026-01-07 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362291002?gh_jid=8362291002) |
 | 🔥 Lyft | Data Engineer, Decision Apps | Toronto, Canada | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8071011002?gh_jid=8071011002) |
@@ -817,13 +817,13 @@
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Poland | 2 days ago | [Apply](https://jobs.dropbox.com/listing/7508176?gh_jid=7508176) |
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Mexico | 2 days ago | [Apply](https://jobs.dropbox.com/listing/7508179?gh_jid=7508179) |
 | 🚀 Benchling | Application Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
-| 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
-| 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
-| 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
-| 🚀 SpaceX | Network Security Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208775002?gh_jid=8208775002) |
-| 🚀 SpaceX | Security Engineer (Security Operations) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002) |
-| 🚀 SpaceX | Security Engineer (Security Operations) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002) |
-| 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
+| 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
+| 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
+| 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
+| 🚀 SpaceX | Network Security Engineer | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208775002?gh_jid=8208775002) |
+| 🚀 SpaceX | Security Engineer (Security Operations) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002) |
+| 🚀 SpaceX | Security Engineer (Security Operations) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002) |
+| 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
 | 🚀 SpaceX | Network Engineer (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002) |
 | 🚀 Datadog | Security Engineer II, Threat Detection | Paris, France | 3 days ago | [Apply](https://careers.datadoghq.com/detail/7379791/?gh_jid=7379791) |
 | 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
@@ -834,13 +834,13 @@
 | 🚀 Asana | Security Engineer, Red Team  | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192729?gh_jid=7192729) |
 | 🚀 Asana | Security Engineer, Threat Response | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192741?gh_jid=7192741) |
 | 🚀 MongoDB | Site Reliability Engineer 3 | New York City | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
-| 🚀 Anthropic | Application Security Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4502508008) |
-| 🚀 Anthropic | Infrastructure Engineer, Sandboxing | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5030680008) |
-| 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
-| 🚀 Anthropic | Security Engineer, Detection & Response | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982193008) |
-| 🚀 Anthropic | Security Engineer, Operating Systems | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4929693008) |
-| 🚀 Anthropic | Software Security Engineer | Zürich, CH | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5056795008) |
-| 🚀 Waymo | Network Engineer  | London, UK | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7435901) |
+| 🚀 Anthropic | Application Security Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4502508008) |
+| 🚀 Anthropic | Infrastructure Engineer, Sandboxing | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5030680008) |
+| 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
+| 🚀 Anthropic | Security Engineer, Detection & Response | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982193008) |
+| 🚀 Anthropic | Security Engineer, Operating Systems | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4929693008) |
+| 🚀 Anthropic | Software Security Engineer | Zürich, CH | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5056795008) |
+| 🚀 Waymo | Network Engineer  | London, UK | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7435901) |
 | 🚀 Vercel |  IT Infrastructure Engineer  | Hybrid - San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5623421004) |
 | 🚀 Scale AI | AI Infrastructure Engineer, Core Infrastructure | San Francisco, CA; Seattle, WA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4624681005) |
 | 🚀 Scale AI | AI Infrastructure Engineer, Model Serving Platform | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520320005) |
@@ -898,21 +898,21 @@
 | 🚀 Samsara | Sales Engineer II - Specialist | Remote - NYC | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443) |
 | 🚀 Reddit | On Campus Ambassador, India (Contractor) | Remote - India | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090049) |
 | 🚀 Reddit | On Campus Ambassador, Philippines (Contractor) | Remote - Philippines | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090134) |
-| 🚀 SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
-| 🚀 SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
-| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
-| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
-| 🚀 SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
-| 🚀 SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
-| 🚀 SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
-| 🚀 SpaceX | New Graduate Engineer, Software (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8144023002?gh_jid=8144023002) |
-| 🚀 SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
-| 🚀 SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
-| 🚀 SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
+| 🚀 SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
+| 🚀 SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
+| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
+| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
+| 🚀 SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
+| 🚀 SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
+| 🚀 SpaceX | New Graduate Engineer, Software | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8145483002?gh_jid=8145483002) |
+| 🚀 SpaceX | New Graduate Engineer, Software (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8144023002?gh_jid=8144023002) |
+| 🚀 SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166932002?gh_jid=8166932002) |
+| 🚀 SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
+| 🚀 SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | 🚀 SpaceX | NDE Inspector Radiographic Trainee (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002) |
 | Intercom | Early Careers and Partnerships Recruiter | Dublin, Ireland | 4 days ago | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7538382) |
 | 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7456081) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 12:53:58 UTC*
+*Last updated: 2026-01-18 13:27:33 UTC*
