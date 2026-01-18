@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T18:48:47.214726",
+    "generated_at": "2026-01-18T19:00:01.850246",
     "total_jobs": 855,
     "categories": [
       {
@@ -521,7 +521,7 @@
       "location": "New York, NY",
       "url": "https://jobs.lever.co/spotify/6dfd1d6f-5efc-473a-aa48-8026eea476fc",
       "posted_at": "2026-01-16T18:57:13.601000",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Lever",
       "category": {
         "id": "data_ml",
@@ -2851,7 +2851,7 @@
       "location": "San Francisco, CA | Seattle, WA",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/4943668008",
       "posted_at": "2026-01-15T18:59:29",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -5835,7 +5835,7 @@
       "location": "Starbase, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002",
       "posted_at": "2026-01-14T18:50:19",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
