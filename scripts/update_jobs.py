@@ -610,6 +610,174 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
     
     return []
 
+# ============================================================================
+# PARALLEL FETCHING FUNCTIONS (Performance Optimization)
+# ============================================================================
+
+def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = 15) -> List[Dict[str, Any]]:
+    """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
+    
+    Parallelizes ~70+ company API calls for ~5x speed improvement.
+    """
+    all_jobs = []
+    total = len(companies)
+    completed = 0
+    errors = 0
+    
+    print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
+    
+    def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        return fetch_greenhouse_jobs(company['name'], company['url'])
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_company = {executor.submit(fetch_single, c): c for c in companies}
+        
+        for future in as_completed(future_to_company):
+            completed += 1
+            company = future_to_company[future]
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+            except Exception as e:
+                errors += 1
+                print(f"  ❌ {company['name']}: {e}")
+    
+    print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
+    return all_jobs
+
+
+def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = 10) -> List[Dict[str, Any]]:
+    """Fetch all Lever jobs in parallel using ThreadPoolExecutor"""
+    all_jobs = []
+    total = len(companies)
+    completed = 0
+    errors = 0
+    
+    print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
+    
+    def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        return fetch_lever_jobs(company['name'], company['url'])
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_company = {executor.submit(fetch_single, c): c for c in companies}
+        
+        for future in as_completed(future_to_company):
+            completed += 1
+            company = future_to_company[future]
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+            except Exception as e:
+                errors += 1
+                print(f"  ❌ {company['name']}: {e}")
+    
+    print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
+    return all_jobs
+
+
+def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = 8) -> List[Dict[str, Any]]:
+    """Fetch Google Careers jobs in parallel for all search terms"""
+    all_jobs = []
+    total = len(search_terms)
+    completed = 0
+    errors = 0
+    
+    print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
+    
+    def fetch_single_term(search_term: str) -> List[Dict[str, Any]]:
+        """Fetch jobs for a single search term"""
+        jobs = []
+        max_retries = 2
+        
+        for attempt in range(max_retries + 1):
+            try:
+                if attempt > 0:
+                    time.sleep(1)
+                
+                search_query = search_term.replace(' ', '%20')
+                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
+                
+                response = requests.get(url, timeout=15)
+                response.raise_for_status()
+                data = response.json()
+                
+                if not isinstance(data, dict) or 'jobs' not in data:
+                    continue
+                
+                for job in data.get('jobs', []):
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
+                    
+                    if not location_names:
+                        continue
+                    
+                    location_str = '; '.join(location_names)
+                    description = job.get('description', '') or ''
+                    
+                    jobs.append({
+                        'company': 'Google',
+                        'title': job.get('title', ''),
+                        'location': location_str,
+                        'url': job.get('apply_url', ''),
+                        'posted_at': job.get('created') or job.get('publish_date'),
+                        'source': 'Google Careers',
+                        'description': description[:500] if description else ''
+                    })
+                
+                print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
+                break
+                
+            except Exception as e:
+                if attempt >= max_retries:
+                    print(f"  ❌ Google '{search_term}': {str(e)[:50]}")
+        
+        return jobs
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_term = {executor.submit(fetch_single_term, term): term for term in search_terms}
+        
+        for future in as_completed(future_to_term):
+            completed += 1
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+            except Exception as e:
+                errors += 1
+    
+    print(f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
+    return all_jobs
+
+
+def get_job_key(job: Dict[str, Any]) -> str:
+    """Generate unique key for job deduplication"""
+    company = job.get('company', '').lower().strip()
+    title = job.get('title', '').lower().strip()
+    url = job.get('url', '').lower().strip()
+    return f"{company}|{title}|{url}"
+
+
+def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Remove duplicate jobs based on company, title, and URL"""
+    seen_keys = set()
+    unique_jobs = []
+    
+    for job in jobs:
+        key = get_job_key(job)
+        if key not in seen_keys:
+            seen_keys.add(key)
+            unique_jobs.append(job)
+    
+    duplicates_removed = len(jobs) - len(unique_jobs)
+    if duplicates_removed > 0:
+        print(f"🔄 Deduplication: Removed {duplicates_removed} duplicate jobs")
+    
+    return unique_jobs
+
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains new grad signals"""
     title_lower = title.lower()
@@ -1097,36 +1265,67 @@ Found a job we're missing? Want to report a closed position?
     return readme_content
 
 def main():
-    """Main function to scrape jobs and update README"""
-    print("Starting job aggregation...")
+    """Main function to scrape jobs and update README
+    
+    PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
+    to reduce execution time from ~7 min to ~1-2 min.
+    """
+    import time as perf_time
+    start_time = perf_time.time()
+    
+    print("🚀 Starting job aggregation (PARALLEL MODE)...")
+    print("=" * 60)
     
     # Load configuration
     config = load_config()
     
-    # Collect all jobs
+    # Collect all jobs using parallel fetchers
     all_jobs = []
     
-    # Fetch from Greenhouse
-    for company in config['apis']['greenhouse']['companies']:
-        jobs = fetch_greenhouse_jobs(company['name'], company['url'])
-        all_jobs.extend(jobs)
+    # Phase 1: Fetch from all API sources IN PARALLEL
+    print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
     
-    # Fetch from Lever  
-    for company in config['apis']['lever']['companies']:
-        jobs = fetch_lever_jobs(company['name'], company['url'])
-        all_jobs.extend(jobs)
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {}
+        
+        # Submit Greenhouse parallel fetch
+        if 'greenhouse' in config['apis'] and config['apis']['greenhouse'].get('companies'):
+            futures['greenhouse'] = executor.submit(
+                fetch_all_greenhouse_jobs_parallel, 
+                config['apis']['greenhouse']['companies']
+            )
+        
+        # Submit Lever parallel fetch
+        if 'lever' in config['apis'] and config['apis']['lever'].get('companies'):
+            futures['lever'] = executor.submit(
+                fetch_all_lever_jobs_parallel,
+                config['apis']['lever']['companies']
+            )
+        
+        # Submit Google parallel fetch
+        if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
+            futures['google'] = executor.submit(
+                fetch_google_jobs_parallel,
+                config['apis']['google']['search_terms']
+            )
+        
+        # Submit JobSpy fetch (already parallelized internally)
+        if 'jobspy' in config['apis']:
+            futures['jobspy'] = executor.submit(
+                fetch_jobspy_jobs,
+                config['apis']['jobspy']
+            )
+        
+        # Collect results from all futures
+        for source, future in futures.items():
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+                print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
+            except Exception as e:
+                print(f"  ❌ {source.upper()} failed: {e}")
     
-    # Fetch from Google Careers
-    if 'google' in config['apis'] and 'search_terms' in config['apis']['google']:
-        google_jobs = fetch_google_jobs(config['apis']['google']['search_terms'])
-        all_jobs.extend(google_jobs)
-    
-    # Fetch from JobSpy (additional job sites)
-    if 'jobspy' in config['apis']:
-        jobspy_jobs = fetch_jobspy_jobs(config['apis']['jobspy'])
-        all_jobs.extend(jobspy_jobs)
-    
-    # Fetch from third-party scraping APIs (if configured)
+    # Fetch from third-party scraping APIs (if configured) - these are usually disabled
     if 'scraper_apis' in config['apis']:
         scraper_apis = config['apis']['scraper_apis']
         
@@ -1140,15 +1339,24 @@ def main():
             scraper_jobs = fetch_scraper_api_jobs(scraper_apis['scraper_api'])
             all_jobs.extend(scraper_jobs)
     
-    print(f"Total jobs fetched: {len(all_jobs)}")
+    print(f"\n📊 Total jobs fetched: {len(all_jobs)}")
+    
+    # Phase 2: Deduplicate jobs
+    print("\n🔄 Phase 2: Deduplicating jobs...")
+    all_jobs = deduplicate_jobs(all_jobs)
+    print(f"   Jobs after deduplication: {len(all_jobs)}")
+    
+
+    # Phase 3: Filter, enrich, and output
+    print("\n⚙️ Phase 3: Filtering and enriching jobs...")
     
     # Filter jobs
     filtered_jobs = filter_jobs(all_jobs, config)
-    print(f"Jobs after filtering: {len(filtered_jobs)}")
+    print(f"   Jobs after filtering: {len(filtered_jobs)}")
     
     # Enrich jobs with categorization and flags
     enriched_jobs = enrich_jobs(filtered_jobs)
-    print(f"Jobs enriched with categories and flags")
+    print(f"   Jobs enriched with categories and flags")
     
     # Generate JSON data
     jobs_json = generate_jobs_json(enriched_jobs, config)
@@ -1174,6 +1382,14 @@ def main():
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)
+    
+    # Report execution time
+    elapsed = perf_time.time() - start_time
+    print("\n" + "=" * 60)
+    print(f"✅ Job aggregation complete!")
+    print(f"⏱️  Total execution time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
+    print(f"📊 Final job count: {len(enriched_jobs)}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
