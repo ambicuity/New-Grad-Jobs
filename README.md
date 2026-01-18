@@ -377,7 +377,7 @@
 | 🚀 SoFi | Software Engineer, Measurement & Ads | San Francisco, CA; Seattle, Washington | 5 days ago | [Apply](https://sofi.com/careers/job/7581781003?gh_jid=7581781003) |
 | 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 5 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
 | 🔥 Stripe | Software Engineer, Commercial Experience | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7436194) |
-| 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 5 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
+| 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 6 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
 | 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
 | 🚀 Cloudflare | Software Engineer, Enterprise Readiness | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6467350?gh_jid=6467350) |
 | 🚀 Affirm | Software Engineer, Backend (Marketplace Experience) | Remote US | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579879003) |
@@ -805,7 +805,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| 🚀 Anthropic | ML Infrastructure Engineer, Safeguards | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4778843008) |
+| 🚀 Anthropic | ML Infrastructure Engineer, Safeguards | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4778843008) |
 | 🚀 MongoDB | Product Security Engineer | Dublin | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7484912) |
 | 🚀 Chime | Product Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
 | 🚀 Elastic | Platform Security - Site Reliability Engineer II | Spain | 2 days ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=7434535&gh_jid=7434535) |
@@ -989,4 +989,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 22:41:14 UTC*
+*Last updated: 2026-01-18 22:54:07 UTC*

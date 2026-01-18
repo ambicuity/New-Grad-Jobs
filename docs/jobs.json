@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T22:41:14.453866",
+    "generated_at": "2026-01-18T22:54:07.009998",
     "total_jobs": 852,
     "categories": [
       {
@@ -49,7 +49,7 @@
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/4778843008",
       "posted_at": "2026-01-17T22:49:30",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -12179,7 +12179,7 @@
       "location": "Fayetteville, NC",
       "url": "https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e",
       "posted_at": "2026-01-12T22:44:10.743000",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Lever",
       "category": {
         "id": "software_engineering",
