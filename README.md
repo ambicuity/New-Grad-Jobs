@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/jobs-659-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![Jobs](https://img.shields.io/badge/jobs-870-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
@@ -12,19 +12,19 @@
 
 ---
 
-## 📂 Browse 659 Jobs by Category
+## 📂 Browse 870 Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (489)
+💻 [Software Engineering](#software-engineering) (641)
 
-🤖 [Data Science & ML](#data-science--ml) (71)
+🤖 [Data Science & ML](#data-science--ml) (92)
 
-📊 [Data Engineering](#data-engineering) (16)
+📊 [Data Engineering](#data-engineering) (21)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (50)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (67)
 
 🔧 [Hardware Engineering](#hardware-engineering) (2)
 
-💼 [Other](#other) (31)
+💼 [Other](#other) (47)
 
 ---
 
@@ -47,10 +47,18 @@
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | 🚀 Cloudflare | Software Engineer, Network Performance & Reliability | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310) |
+| 🚀 Twilio | Software Engineer, Commerce Platform  | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070269) |
 | 🚀 Twilio | Software Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070250) |
+| 🚀 Twilio | Software Engineer (L3) | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7359642) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7362957) |
+| 🚀 Twilio | Cloud Software Engineer | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7484699) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7472456) |
+| 🚀 Twilio | Software Engineer (P3) | Bengaluru, India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7532698) |
+| 🚀 Twilio | Software Engineer (L3) | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7537795) |
+| 🚀 Waymo | Software Engineer, Fullstack | Warsaw, Masovian Voivodeship, Poland | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7512147) |
+| 🚀 Waymo | Software Engineer, Backend | Warsaw, Masovian Voivodeship | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7527054) |
 | 🔥 Block (Square) | Software Engineer- Finance & Supply Chain Engineering | Bay Area, CA, United States of America | 1 day ago | [Apply](http://block.xyz/careers/jobs/4936931008?gh_jid=4936931008) |
+| Intercom | Software Engineer | Berlin, Germany | 1 day ago | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7371989) |
 | 🚀 Twitch | Software Engineer, Safety ML | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8378879002) |
 | 🚀 Cloudflare | Fullstack Software Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7542471?gh_jid=7542471) |
 | 🚀 SpaceX | Wi-Fi Software Engineer (Starlink)  | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8379209002?gh_jid=8379209002) |
@@ -58,14 +66,18 @@
 | 🚀 Palantir | Forward Deployed Software Engineer - Autonomous Systems C2 | Seattle, WA | 1 day ago | [Apply](https://jobs.lever.co/palantir/0edf7365-49f0-4263-818a-19409ec4f430) |
 | 🚀 Cloudflare | Software Engineer, Product Growth and Experimentation | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6885717?gh_jid=6885717) |
 | Postman | Software Engineer (Frontend) - Ecosystems | San Francisco, California, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7580179003) |
+| 🔥 Lyft | Software Engineer, Search & AI Entry | Toronto, Canada | 1 day ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8378394002?gh_jid=8378394002) |
 | 🔥 Stripe | Software Engineer, Product Security Data Platforms | Seattle | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7545459) |
 | 🚀 PlanetScale | Software Engineer - Insights | San Francisco Bay Area or Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/planetscale/jobs/4107018009) |
 | 🚀 Okta | Software Engineer in Test II- TCORE  | Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7491928?gh_jid=7491928) |
 | PagerDuty | Software Engineer I - Product Development  | San Francisco | 1 day ago | [Apply](https://job-boards.greenhouse.io/pagerduty/jobs/5722204004) |
 | 🚀 Waymo | Motion Systems Engineer, Actuators | Mountain View, Ca, USA | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490150) |
 | 🚀 Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
+| 🚀 Unity Technologies | Développeur(se) logiciel  / Software Engineer | Montreal, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523815?gh_jid=7523815) |
 | 🚀 Unity Technologies | Software Engineer | Remote, USA | 1 day ago | [Apply](https://unity.com/careers/positions/7435121?gh_jid=7435121) |
+| 🚀 Unity Technologies | Software Engineer / Développeur(se) logiciel  | Remote, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523810?gh_jid=7523810) |
 | 🚀 Unity Technologies | Software Engineer - SyncSketch | Remote, USA | 1 day ago | [Apply](https://unity.com/careers/positions/7435113?gh_jid=7435113) |
+| 🚀 Unity Technologies | Software Engineer - SyncSketch/ Développeur(se) Logiciel | Remote, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523945?gh_jid=7523945) |
 | 🚀 Databricks | Software Engineer IV | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8378574002) |
 | 🚀 Waymo | Software Engineer, Planner | Mountain View, CA | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7459622) |
 | 🚀 Cloudflare | Network Software Engineer | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343755?gh_jid=7343755) |
@@ -78,17 +90,26 @@
 | 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
 | 🚀 Okta | Solutions Engineering Associate, Auth0 | Georgia; Massachusetts; New York, New York; Washington, DC | 1 day ago | [Apply](https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361) |
 | 🚀 Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
+| 🚀 Samsara | (New Grad) Software Engineering | London - UK2 | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002) |
 | 🚀 Samsara | Software Engineer, Full Stack - Safety | Remote - US | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937) |
+| 🚀 Samsara | Software Engineer, Full Stack - Safety | Remote - Canada | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7362939?gh_jid=7362939) |
+| 🚀 Samsara | Software Engineer II | London, England, United Kingdom | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221) |
+| 🚀 Samsara | Software Engineer II | Remote - UK | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726) |
 | 🚀 Samsara | Software Engineer II, Fleet Safety | Remote - US | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7276275?gh_jid=7276275) |
 | 🚀 Samsara | Software Engineer II - Mobile Platform | San Francisco - SF9 | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7312588?gh_jid=7312588) |
 | 🚀 Samsara | Software Engineer II, New Product | Remote - US | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161) |
+| 🚀 Samsara | Software Engineer II, New Product | Toronto, Canada | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440) |
+| 🚀 Samsara | Software Engineer - Post Sales Systems | Remote - Canada | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7392891?gh_jid=7392891) |
 | 🚀 Samsara | Software Engineer - Safety | Remote - US | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7296895?gh_jid=7296895) |
+| 🚀 Samsara | Software Engineer - Salesforce | Bengaluru - BLR1 | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7457904?gh_jid=7457904) |
 | 🚀 Samsara | Software Engineer - Training | Remote - SF Bay Area | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7306930?gh_jid=7306930) |
 | 🚀 Coursera | Software Engineer II, Backend | United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/coursera/jobs/5500578004) |
 | 🚀 Cloudflare | Systems Engineer - Data Analytics Team | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7000601?gh_jid=7000601) |
+| 🚀 Twilio | Software Engineer- Video Signalling (Java and Rust) | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7394811) |
 | 🚀 Twilio | Software Engineer- L2 | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7406218) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7188174) |
 | 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 1 day ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
+| 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 1 day ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
 | 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 2 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7414993) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415013) |
@@ -101,7 +122,9 @@
 | 🚀 Reddit | iOS Software Engineer, i18n: Grow Global and Local Communities | Los Angeles, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7512048) |
 | 🚀 Reddit | iOS Software Engineer, i18n: Grow Global and Local Communities | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7414834) |
 | 🚀 Reddit | Machine Learning Engineer, Search and Answers | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6534982) |
+| 🚀 Reddit | Software Engineer | Remote - Ontario, Canada | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6909093) |
 | 🚀 Reddit | Software Engineer, Ads | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6469397) |
+| 🚀 Reddit | Software Engineer, Ads | Remote - Ontario, Canada | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6512458) |
 | 🚀 Anthropic | Software Engineer, ML Networking | San Francisco, CA \| New York City, NY \| Seattle, WA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4926242008) |
 | 🚀 Anthropic | Machine Learning Systems Engineer, RL Engineering | San Francisco, CA \| New York City, NY \| Seattle, WA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952051008) |
 | 🚀 Anthropic | Software Engineer, Accelerator Build Infrastructure | San Francisco, CA \| Seattle, WA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4943668008) |
@@ -111,10 +134,12 @@
 | Postman | Frontend Software Engineer, Growth Engineering | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7359054003) |
 | Postman | Fullstack Software Engineer, Growth | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7489490003) |
 | Postman | Software Engineer, Ecosystem | San Francisco, California, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7574033003) |
+| Postman | Software Engineer, IAM | Hyderabad, Telangana, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/5952084003) |
 | 🚀 Waymo | Software Engineer, Onboard Evaluation | Mountain View, California  | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6562547) |
 | 🚀 Waymo | Software Engineer, Hardware Test and Calibration | Taipei, Taiwan | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7540245) |
 | 🔥 Lyft | ML Software Engineer, Integrity | New York, NY | 2 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8375199002?gh_jid=8375199002) |
 | 🔥 Lyft | ML Software Engineer, Integrity | San Francisco, CA | 2 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8374907002?gh_jid=8374907002) |
+| New Relic | Software Engineer 2 | Hyderabad, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4920941008) |
 | New Relic | Software Engineer-Kubernetes  | Portland, Oregon, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4991096008) |
 | 🚀 Cloudflare | Software Engineer - Network Platforms | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7541032?gh_jid=7541032) |
 | 🚀 SpaceX | Application Software Engineer | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002) |
@@ -163,11 +188,16 @@
 | 🚀 Anthropic | Software Engineer, Enterprise Foundations | San Francisco, CA \| New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4667572008) |
 | 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
+| 🚀 MongoDB | Software Engineer 3, Query Execution | Dublin | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7533978) |
 | 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
 | 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
 | 🚀 Roblox | Software Engineer, Reliability  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7269377?gh_jid=7269377) |
+| 🚀 Instacart | Software Engineer II, Paid MarTech |  Canada - Remote (ON, AB or BC Only) | 3 days ago | [Apply](https://instacart.careers/job/?gh_jid=6461659) |
+| 🚀 Instacart | Software Engineer II-  Frontend, Core Experience  | Canada - Remote (ON, AB, BC, or NS Only) | 3 days ago | [Apply](https://instacart.careers/job/?gh_jid=6907655) |
+| 🚀 Instacart | Software Engineer II | Canada - Remote (ON, AB, BC, or NS Only) | 3 days ago | [Apply](https://instacart.careers/job/?gh_jid=6209738) |
 | 🚀 Nuro | Software Engineer, Infrastructure | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7540514) |
+| 🚀 Coinbase | Software Engineer - Customer Agent Interactions System | Remote - Brazil | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/7539703?gh_jid=7539703) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
 | 🚀 Nuro | Software Engineer, Teleoperation | Mountain View, California (HQ) | 3 days ago | [Apply](https://nuro.ai/careersitem?gh_jid=7481633) |
 | 🚀 SoFi | Software Engineer - Data, Member Growth | CA - San Francisco; WA - Seattle | 3 days ago | [Apply](https://sofi.com/careers/job/7586755003?gh_jid=7586755003) |
@@ -176,15 +206,26 @@
 | 🚀 Discord | Software Engineer, Payments | San Francisco Bay Area | 3 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8304667002) |
 | 🚀 Discord | Software Engineer - Realtime Infrastructure | San Francisco Bay Area | 3 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8328560002) |
 | 🚀 Robinhood | Software Engineer, Streaming Infrastructure | Bellevue, WA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Identity & Auth Platform | Remote - Mexico | 3 days ago | [Apply](https://jobs.dropbox.com/listing/7409359?gh_jid=7409359) |
+| 🚀 MongoDB | Software Engineer 3 | Toronto | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7522856) |
+| 🚀 Asana | IT Network and Systems Engineer | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7339515?gh_jid=7339515) |
+| 🚀 Asana | Junior Software Engineer | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6440856?gh_jid=6440856) |
+| 🚀 Asana | Software Engineer | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/5844714?gh_jid=5844714) |
 | 🚀 Asana | Software Engineer, AI Agents | San Francisco | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7348136?gh_jid=7348136) |
 | 🚀 Asana | Software Engineer, AI Integrations | San Francisco | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6708757?gh_jid=6708757) |
+| 🚀 Asana | Software Engineer, Backend | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6169243?gh_jid=6169243) |
 | 🚀 Asana | Software Engineer, CI/CD | San Francisco | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7299272?gh_jid=7299272) |
 | 🚀 Asana | Software Engineer, Product | New York City | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6751685?gh_jid=6751685) |
 | 🚀 Asana | Software Engineer, Product | San Francisco | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7106554?gh_jid=7106554) |
+| 🚀 Asana | Software Engineer, Product | Vancouver, BC | 3 days ago | [Apply](https://www.asana.com/jobs/apply/6937795?gh_jid=6937795) |
+| 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Toronto, Canada | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6099228) |
 | 🚀 Robinhood | Software Engineer, Data Governance | Bellevue, WA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7390553?t=gh_src=&gh_jid=7390553) |
 | 🚀 Anthropic | Software Engineer, Cybersecurity Products | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5063007008) |
 | 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
 | 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
+| 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
+| 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
+| 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
 | 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
 | 🚀 Anthropic | IT Systems Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4887952008) |
 | 🚀 Anthropic | Machine Learning Systems Engineer, Research Tools | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952079008) |
@@ -202,6 +243,8 @@
 | 🚀 Anthropic | Software Engineer, Public Sector | San Francisco, CA \| New York City, NY \| Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4902636008) |
 | 🚀 Anthropic | Software Engineer, Safeguards | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4951844008) |
 | 🚀 Anthropic | Software Engineer, Sandboxing (Systems) | San Francisco, CA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5025591008) |
+| 🚀 Waymo | Backend Software Engineer | Warsaw, Masovian Voivodeship, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7460326) |
+| 🚀 Waymo | Backend Software Engineer, Driver Validation | Warsaw, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430505) |
 | 🚀 Waymo | Machine Learning SWE Infra | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438635) |
 | 🚀 Waymo | Onboard Developer Platform Software Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461052) |
 | 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7461103) |
@@ -237,19 +280,29 @@
 | 🚀 Waymo | Software Engineer, Simulation Infrastructure | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430555) |
 | 🚀 Waymo | Software Engineer, Test Automation Infrastructure | San Francisco, CA, US; Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7532414) |
 | 🚀 Waymo | Software Engineer, Trip Platform | Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7433503) |
+| 🚀 Waymo | Software Engineer, Trip Platform | Warsaw, Poland | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7527351) |
 | 🚀 Waymo | Software Engineer, Vehicle Roadside Assistance | San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7430652) |
 | 🚀 Waymo | Systems Engineer, Conflict Behavior | Mountain View, CA, USA ; San Francisco, CA USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490337) |
 | 🚀 Waymo | Systems Engineer, Networks | Mountain View, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7510381) |
 | 🚀 Waymo | Systems Engineer, Perception | Mountain View, CA, US; San Francisco, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7367785) |
 | 🚀 Waymo | Systems Engineer, Sensing  | Mountain View, CA, US;San Francisco, CA, US | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6511655) |
 | 🚀 Affirm | Software Engineer, Early Career | Chicago, Illinois, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) |
+| 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - Canada: Select locations | 3 days ago | [Apply](https://jobs.dropbox.com/listing/7491863?gh_jid=7491863) |
 | 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - US: Select locations | 3 days ago | [Apply](https://jobs.dropbox.com/listing/7491860?gh_jid=7491860) |
+| 🔥 Lyft | Software Engineer, Road Safety | Toronto, Canada | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8295524002?gh_jid=8295524002) |
 | Betterment | Software Engineer, Backend | Betterment HQ - New York City | 3 days ago | [Apply](https://www.betterment.com/careers/current-openings/job?gh_jid=7220394&gh_jid=7220394) |
+| 🔥 Lyft | Software Engineer, Frontend - Mapping Experiences | Toronto, Canada | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8367669002?gh_jid=8367669002) |
+| 🚀 Brex | Software Engineer II, Activation | São Paulo, São Paulo, Brazil | 3 days ago | [Apply](https://www.brex.com/careers/8340253002?gh_jid=8340253002) |
 | 🚀 Cloudflare | Software Engineer, KV  | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433) |
 | 🚀 Palantir | Software Engineer - Core Interfaces | Palo Alto, CA | 4 days ago | [Apply](https://jobs.lever.co/palantir/cf76738e-3030-42fa-92ac-a9446df956fc) |
 | 🚀 SpaceX | Software Engineer, Beam Planning (Starlink)    | Sunnyvale, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8373117002?gh_jid=8373117002) |
 | 🚀 SpaceX | Embedded Software Engineer (Starlink)  | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8368715002?gh_jid=8368715002) |
+| 🚀 Vercel | Software Engineer, Accounts | Hybrid - Berlin | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5431123004) |
+| 🚀 Vercel | Software Engineer, Accounts | Hybrid - Berlin | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5430088004) |
 | 🚀 Vercel | Software Engineer, AI SDK | Hybrid - San Francisco, New York City | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5474915004) |
+| 🚀 Vercel | Software Engineer, Build Compute | Remote - United Kingdom, Germany | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5727182004) |
+| 🚀 Vercel | Software Engineer, Builds | Hybrid - London, Berlin | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5647732004) |
+| 🚀 Vercel | Software Engineer, Builds | Remote - United Kingdom, Germany | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5648078004) |
 | 🚀 Vercel | Software Engineer, CDN | Hybrid - San Francisco, New York City | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5179639004) |
 | 🚀 Vercel | Software Engineer, CDN Security | Remote - United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5473266004) |
 | 🚀 Vercel | Software Engineer, CI/CD | Remote - United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5532019004) |
@@ -262,16 +315,31 @@
 | 🚀 Vercel | Software Engineer, Support Platform | Hybrid - San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5611527004) |
 | 🚀 Vercel | Software Engineer - Trust & Safety | Hybrid - San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5649459004) |
 | 🚀 Vercel | Software Engineer (Web Performance), v0 | Hybrid - San Francisco, New York City | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5704320004) |
+| 🚀 Dropbox | CX Software Engineer | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7181370?gh_jid=7181370) |
 | 🚀 Dropbox | CX Software Engineer, GTM Platforms | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7181369?gh_jid=7181369) |
+| 🚀 Dropbox | Fullstack Product Software Engineer, Core Web Experience | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/6936210?gh_jid=6936210) |
 | 🚀 Dropbox | Fullstack Product Software Engineer, Core Web Experience  | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/6936207?gh_jid=6936207) |
 | 🚀 Dropbox | Fullstack Product Software Engineer, DocSend | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7344968?gh_jid=7344968) |
+| 🚀 Dropbox | Fullstack Product Software Engineer, DocSend | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7344971?gh_jid=7344971) |
 | 🚀 Dropbox | Fullstack Product Software Engineer, Growth Monetization | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7344952?gh_jid=7344952) |
+| 🚀 Dropbox | Fullstack Product Software Engineer, Growth Monetization | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7344955?gh_jid=7344955) |
+| 🚀 Dropbox | Infrastructure Software Engineer, API Platform | Remote - Mexico | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7387420?gh_jid=7387420) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Data Observability | Remote - Poland | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7341950?gh_jid=7341950) |
 | 🚀 Dropbox | Infrastructure Software Engineer, Developer Platform | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7446067?gh_jid=7446067) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Developer Platform | Remote - Mexico | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7446072?gh_jid=7446072) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Developer Platform | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7446070?gh_jid=7446070) |
 | 🚀 Dropbox | Infrastructure Software Engineer, Metadata  | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7356504?gh_jid=7356504) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Metadata  | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7356507?gh_jid=7356507) |
+| 🚀 Dropbox | iOS Software Engineer, Mobile Infrastructure | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7053880?gh_jid=7053880) |
+| 🚀 Dropbox | iOS Software Engineer, Mobile Infrastructure | Remote - Mexico | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7182020?gh_jid=7182020) |
 | 🚀 Dropbox | iOS Software Engineer, Mobile Infrastructure | Remote - US: All locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7053876?gh_jid=7053876) |
 | 🚀 Benchling | Software Engineer, Full Stack (Registry and Inventory) | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7416341?gh_jid=7416341) |
 | 🚀 Benchling |  Software Engineer, Full Stack (Registry and Inventory) | Boston, MA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7416988?gh_jid=7416988) |
+| 🚀 Robinhood | Software Engineer, Data Engineering | Toronto, Canada | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438) |
+| 🔥 Airbnb | Software Engineer, Search Infrastructure | Brazil | 4 days ago | [Apply](https://careers.airbnb.com/positions/7365942?gh_jid=7365942) |
 | 🚀 Scale AI | Mission Software Engineer, Public Sector | Boston, Massachusetts ; Honolulu, HI; San Diego, CA; San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4481921005) |
+| 🚀 Scale AI | Software Engineer | Argentina; Uruguay | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4612282005) |
+| 🚀 Scale AI | Software Engineer, Enterprise | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4536653005) |
 | 🚀 Scale AI | Software Engineer, Enterprise AI | New York, NY; San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4513943005) |
 | 🚀 Scale AI | Software Engineer, Full Stack – Scale GP | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4637485005) |
 | 🚀 Scale AI | Software Engineer, Gen AI | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4591300005) |
@@ -299,6 +367,7 @@
 | 🚀 Twitch | Software Engineer, ML Products | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8183360002) |
 | 🚀 Chime | Mobile Software Engineer | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8350779002?gh_jid=8350779002) |
 | 🚀 Chime | Software Engineer, Growth | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/7913323002?gh_jid=7913323002) |
+| 🚀 Instacart | Software Developer in Test II | Canada - Remote (ON, AB, BC, or NS Only) | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=7431196) |
 | 🚀 Instacart | Software Engineer II, Marketing Enablement & Technology | United States - Remote | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=7450259) |
 | 🚀 Figma | Software Engineer, Web Platform | San Francisco, CA • New York, NY • United States | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004) |
 | 🚀 Chime | Software Engineer, Financial Platform | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8183064002?gh_jid=8183064002) |
@@ -308,63 +377,116 @@
 | 🚀 Cloudflare | Systems Engineer, Data | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453) |
 | 🚀 SoFi | Software Engineer, Measurement & Ads | San Francisco, CA; Seattle, Washington | 4 days ago | [Apply](https://sofi.com/careers/job/7581781003?gh_jid=7581781003) |
 | 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
+| 🔥 Stripe | Software Engineer, Commercial Experience | Bengaluru | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7436194) |
 | 🚀 Palantir | Forward Deployed Software Engineer - US Government | Fayetteville, NC | 5 days ago | [Apply](https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e) |
 | 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
 | 🚀 Cloudflare | Software Engineer, Enterprise Readiness | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6467350?gh_jid=6467350) |
 | 🚀 Affirm | Software Engineer, Backend (Marketplace Experience) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579879003) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Product) | Bastrop, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002) |
 | 🔥 Stripe | Software Engineer, Bridge | San Francisco, NY, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7277110) |
+| 🔥 Stripe | Software Engineer, Change data capture | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7365356) |
+| 🔥 Stripe | Software Engineer, Core Infrastructure | Sydney | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7409386) |
+| 🔥 Stripe | Software Engineering, New Grad | Singapore | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7176977) |
+| 🔥 Stripe | Software Engineer, Money Movement  | London | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7208537) |
+| 🔥 Stripe | Software Engineer, New Grad | Barcelona | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7213871) |
+| 🔥 Stripe | Software Engineer, New Grad | Dublin | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7206515) |
+| 🔥 Stripe | Software Engineer, New Grad | Toronto | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7206505) |
 | 🔥 Stripe | Software Engineer, New Grad | San Francisco, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
+| 🔥 Stripe | Software Engineer, Operations Platform | Bengaluru, India | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7108247) |
+| 🔥 Stripe | Software Engineer, Sales Systems | Bengaluru, India | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7525368) |
+| 🔥 Stripe | Software Engineer,Service Ecosystem Sustainability  | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6967304) |
 | 🔥 Stripe | Software Engineer - Smart Contract, Bridge | San Francisco or New York | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7507904) |
 | 🚀 SoFi | Software Engineer, Member Insights | Seattle, Washington | 5 days ago | [Apply](https://sofi.com/careers/job/7583531003?gh_jid=7583531003) |
 | 🚀 SoFi | Software Engineer, AI Financial Actions | Seattle, Washington; San Francisco, CA | 5 days ago | [Apply](https://sofi.com/careers/job/7585172003?gh_jid=7585172003) |
 | 🔥 Airbnb | iOS Software Engineer, Listing Clients | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7438414?gh_jid=7438414) |
 | 🔥 Airbnb | iOS Software Engineer, Guest & Host | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7336167?gh_jid=7336167) |
 | 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| 🔥 Lyft | Software Engineer, Customer Care | Toronto, Canada | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8359671002?gh_jid=8359671002) |
+| 🚀 Affirm | Software Engineer, Early Career | London | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579641003) |
 | 🚀 Cloudflare | Systems Engineer - Traffic Management  | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7469429?gh_jid=7469429) |
+| 🔥 Lyft | Software Engineer, Backend | Ukraine Anywhere | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8366705002?gh_jid=8366705002) |
 | 🚀 Upstart | Software Engineer, Core Pricing | United States \| Remote | 5 days ago | [Apply](https://careers.upstart.com/jobs?gh_jid=7103246) |
 | 🚀 Airtable | Software Engineer, Product Backend (2-8 YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845291002) |
+| 🚀 Coinbase | Software Engineer, Full-stack (EAA) | Remote - India | 2026-01-09 | [Apply](https://www.coinbase.com/careers/positions/5739771?gh_jid=5739771) |
 | 🚀 Airtable | Software Engineer, Product Backend (8+ YOE) | San Francisco, CA; Remote (Seattle, WA only) | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845287002) |
 | 🚀 SoFi | Full-Stack Software Engineer, Benefits and Rewards | CA - San Francisco | 2026-01-09 | [Apply](https://sofi.com/careers/job/7581360003?gh_jid=7581360003) |
 | 🔥 Lyft | Software Engineer, Lyft Business | San Francisco, CA | 2026-01-09 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8326337002?gh_jid=8326337002) |
 | 🔥 Airbnb | Software Engineer, KV Stores & Caching | United States | 2026-01-09 | [Apply](https://careers.airbnb.com/positions/7527407?gh_jid=7527407) |
 | 🚀 Benchling | Software Engineer, Developer Enablement | San Francisco, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/benchling/jobs/7522089?gh_jid=7522089) |
 | 🚀 SpaceX | Full Stack Software Engineer (Starshield) | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002) |
+| 🚀 Datadog | Software Engineer - Backend Generalist | Bordeaux, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/4825718/?gh_jid=4825718) |
+| 🚀 Datadog | Software Engineer - Data & Analytics Platform | Paris, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/6629519/?gh_jid=6629519) |
+| 🚀 Datadog | Software Engineer - Developer Experience | Madrid, Spain; Paris, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/6092052/?gh_jid=6092052) |
+| 🚀 Datadog | Software Engineer with Systems Depth | Bordeaux, France; Grenoble, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/6158712/?gh_jid=6158712) |
 | 🚀 SpaceX | Software Engineer, Displays Software (Starship) | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8345913002?gh_jid=8345913002) |
+| 🚀 Figma | Software Engineer, Graphics - Figma Weave (Tel Aviv, Israel or London, United Kingdom)  | Tel Aviv, Israel • London, England | 2026-01-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5692548004?gh_jid=5692548004) |
+| Algolia | Software Engineer - Search Platform | London, England; Paris, France | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/algolia/jobs/5166189004) |
 | 🚀 SpaceX | Software Engineer (Direct To Cell) | Sunnyvale, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8364374002?gh_jid=8364374002) |
+| Flexport | Software Engineer II, AI Platform | Amsterdam, Netherlands | 2026-01-09 | [Apply](https://boards.greenhouse.io/flexport/jobs/7491374?gh_jid=7491374) |
+| 🚀 Grammarly | Software Engineer, Front-End | Berlin; Hybrid | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/5856195) |
 | 🚀 Plaid | Software Engineer - Intelligent Tooling | San Francisco | 2026-01-08 | [Apply](https://jobs.lever.co/plaid/9d0008bb-dc57-47a1-90ce-46cd3145445d) |
 | 🚀 Benchling | Software Engineer, Backend (Usage & Billing Platform) | San Francisco, CA | 2026-01-08 | [Apply](https://boards.greenhouse.io/benchling/jobs/7421648?gh_jid=7421648) |
 | 🚀 Ripple | Software Engineer | New York, NY, United States | 2026-01-08 | [Apply](https://ripple.com/careers/all-jobs/job/7309457?gh_jid=7309457) |
 | 🚀 Ripple | Software Engineer II | Reykjavík, Reykjavík, Iceland | 2026-01-08 | [Apply](https://ripple.com/careers/all-jobs/job/7003425?gh_jid=7003425) |
 | 🚀 Ripple | Software Engineer II | San Francisco, CA, United States | 2026-01-08 | [Apply](https://ripple.com/careers/all-jobs/job/7470865?gh_jid=7470865) |
+| 🚀 Ripple | Software Engineer II | Geneva, Switzerland | 2026-01-08 | [Apply](https://ripple.com/careers/all-jobs/job/7134182?gh_jid=7134182) |
+| Amplitude | Full Stack Engineer II (Activation) | Vancouver, BC, Canada | 2026-01-08 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8359322002) |
+| 🚀 Unity Technologies | Software Engineer, Platform Services Abstraction | Stratford-upon-Avon, United Kingdom | 2026-01-08 | [Apply](https://unity.com/careers/positions/7522572?gh_jid=7522572) |
+| 🚀 Unity Technologies | Software Engineer, Platform Services Abstraction | Brighton, United Kingdom | 2026-01-08 | [Apply](https://unity.com/careers/positions/7522570?gh_jid=7522570) |
+| 🚀 Brex | Software Engineer II, Credit Limit Engineering | São Paulo, São Paulo, Brazil | 2026-01-08 | [Apply](https://www.brex.com/careers/8358804002?gh_jid=8358804002) |
+| 🚀 Coinbase | Software Engineer, Backend (Consumer) | Remote - UK | 2026-01-08 | [Apply](https://www.coinbase.com/careers/positions/5954689?gh_jid=5954689) |
 | 🚀 Grammarly | Software Engineer, Frontend (Latin America) | LATAM; Remote | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7339850) |
+| 🚀 Grammarly | Software Engineer, Frontend | San Francisco or Remote (US, Canada, Argentina, Brazil, Mexico) | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7271992) |
+| 🚀 Grammarly | Software Engineer, Backend (Superhuman Mail) | San Francisco or Remote (US, Canada, Argentina, Brazil, Mexico) | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7339557) |
 | 🚀 Affirm | Software Engineer | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7499741003) |
 | 🚀 Affirm | Software Engineer | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7560426003) |
 | 🚀 Affirm | Software Engineer, Early Career | New York, New York, United States | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
+| 🚀 Affirm | Software Engineer I, Back-end (Collections) | Remote Poland | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7538088003) |
+| 🚀 Affirm | Software Engineer I, Back-end (Collections) | Remote Spain | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7538090003) |
 | 🚀 Affirm | Software Engineer II, Backend (Credit Decisioning) | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7550577003) |
+| 🚀 Affirm | Software Engineer II, Backend (Identity Decisioning)    | Remote Canada | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7543980003) |
 | 🚀 Affirm | Software Engineer II, Backend (Identity Decisioning)    | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7543978003) |
 | 🚀 Affirm | Software Engineer II, Backend (Infrastructure) | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7548338003) |
+| 🚀 Affirm | Software Engineer II, Backend (Infrastructure) | Remote Canada | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7548340003) |
 | 🚀 Upstart | Software Engineer, PL Applicant Experience  | United States \| Remote | 2026-01-07 | [Apply](https://careers.upstart.com/jobs?gh_jid=7292160) |
+| 🔥 Lyft | Software Engineer, Ads Infrastructure | Toronto, Canada | 2026-01-07 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362272002?gh_jid=8362272002) |
 | 🚀 Upstart | Software Engineer, Financial Operations | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=7353754) |
 | 🚀 Upstart | Software Engineer, Offer Delivery | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=7383554) |
 | 🚀 Brex | Software Engineer II, Frontend Platform  | New York, New York, United States | 2026-01-06 | [Apply](https://www.brex.com/careers/8353867002?gh_jid=8353867002) |
+| 🚀 Brex | Software Engineer II, Frontend Platform  | Vancouver, British Columbia, Canada | 2026-01-06 | [Apply](https://www.brex.com/careers/8353866002?gh_jid=8353866002) |
+| 🚀 Brex | Software Engineer II, Frontend | Vancouver, British Columbia, Canada | 2026-01-06 | [Apply](https://www.brex.com/careers/8301383002?gh_jid=8301383002) |
 | 🚀 Upstart | Software Engineer, Auto Retail | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=7121079) |
 | Checkr | Backend Software Engineer II | Denver, Colorado, United States; San Francisco, California, United States | 2026-01-06 | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7438937) |
 | Checkr | Software Engineer II | Denver, Colorado, United States; San Francisco, California, United States | 2026-01-06 | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7296759) |
 | 🚀 Upstart | Software Engineer, Auto Refi + Auto Secured Personal Loans | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=7036210) |
+| 🚀 Coinbase |  Software Engineer (EAA) | Remote - India | 2026-01-06 | [Apply](https://www.coinbase.com/careers/positions/6817252?gh_jid=6817252) |
 | 🚀 SpaceX | Fluids Systems Engineer, Solar Cell Factory (Starlink) | Bastrop, TX | 2026-01-06 | [Apply](https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002) |
 | 🚀 Upstart | Software Engineer, Distribution Platform | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=6594937) |
 | 🚀 Upstart | Software Engineer, Verifications | United States \| Remote | 2026-01-06 | [Apply](https://careers.upstart.com/jobs?gh_jid=7252104) |
+| 🔥 Lyft | Software Engineer, Developer Experience - AI  | Toronto, Canada | 2026-01-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8295506002?gh_jid=8295506002) |
 | 🚀 Upstart | Software Engineer, Servicing  | United States \| Remote | 2026-01-05 | [Apply](https://careers.upstart.com/jobs?gh_jid=7461914) |
 | 🚀 Upstart | Software Engineer, Home Lending | United States \| Remote | 2026-01-05 | [Apply](https://careers.upstart.com/jobs?gh_jid=6489706) |
 | 🚀 Airtable | Software Engineer, Product Frontend (2-8 YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 2026-01-05 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845265002) |
 | 🚀 SpaceX | GNC Software Engineer (Falcon) | Hawthorne, CA | 2026-01-05 | [Apply](https://boards.greenhouse.io/spacex/jobs/8359233002?gh_jid=8359233002) |
+| Flexport | Software Engineer Ⅰ, Forwarding App | Shenzhen, Guangdong, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/6733464?gh_jid=6733464) |
+| Flexport | Software Engineer Ⅰ, Forwarding Tech - Commerce | Shenzhen, Guangdong, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7064368?gh_jid=7064368) |
+| Flexport | Software Engineer Ⅱ, Forwarding Tech - Commerce | Shanghai, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7119973?gh_jid=7119973) |
+| Flexport | Software Engineer Ⅱ, Forwarding Tech - Commerce | Shenzhen, Guangdong, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/6668690?gh_jid=6668690) |
+| Flexport | Software Engineer I, Forwarding App | Beijing, Beijing, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7340223?gh_jid=7340223) |
+| Flexport | Software Engineer I, Forwarding Tech - Commerce, Planning, Procurement | Shanghai, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5781558?gh_jid=5781558) |
+| Flexport | Software Engineer II, Forwarding App | Beijing, Beijing, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7340219?gh_jid=7340219) |
+| Flexport | Software Engineer II, Forwarding App | Shenzhen, Guangdong, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/6733423?gh_jid=6733423) |
+| Flexport | Software Engineer II, Forwarding Tech - Commerce, Planning, Procurement | Shanghai, China | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5781629?gh_jid=5781629) |
 | Flexport | Software Engineer II, Freight Operation Technology | Bellevue, Washington, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7463180?gh_jid=7463180) |
 | Flexport | Software Engineer II, Import Team | Bellevue, Washington, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7075215?gh_jid=7075215) |
 | Flexport | Software Engineer II, Omnichannel Engineering | Bellevue, Washington, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7134003?gh_jid=7134003) |
 | Flexport | Software Engineer II, Trucking | Bellevue, Washington, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7403941?gh_jid=7403941) |
 | 🚀 Benchling | Software Engineer, Schemas & Object Framework | San Francisco, CA | 2026-01-05 | [Apply](https://boards.greenhouse.io/benchling/jobs/7456737?gh_jid=7456737) |
+| 🚀 Brex | Software Engineer II, Frontend Platform | São Paulo, São Paulo, Brazil | 2026-01-05 | [Apply](https://www.brex.com/careers/8359908002?gh_jid=8359908002) |
 | 🚀 Benchling | Software Engineer, Backend (Performance and Observability) | San Francisco, CA | 2026-01-05 | [Apply](https://boards.greenhouse.io/benchling/jobs/7347464?gh_jid=7347464) |
+| 🔥 Lyft | Software Engineer, Android | Toronto, Canada | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8124265002?gh_jid=8124265002) |
+| 🔥 Lyft | Software Engineer, Android (Pay)  | Toronto, Canada | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8093388002?gh_jid=8093388002) |
+| 🔥 Lyft | C++ Software Engineer  | Toronto, Canada | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8284495002?gh_jid=8284495002) |
 | 🚀 PlanetScale | Software Engineer - Surfaces | San Francisco Bay Area or Remote | 2026-01-05 | [Apply](https://job-boards.greenhouse.io/planetscale/jobs/4091110009) |
 | 🚀 PlanetScale | Software Engineer - Infrastructure | San Francisco Bay Area or Remote | 2026-01-05 | [Apply](https://job-boards.greenhouse.io/planetscale/jobs/4036240009) |
 | 🔥 Block (Square) | Software Engineer, SFS Bank Platform | New York, NY, United States of America | 2026-01-05 | [Apply](http://block.xyz/careers/jobs/4978926008?gh_jid=4978926008) |
@@ -413,7 +535,10 @@
 | 🚀 SpaceX | Software Engineer, Test Engineering and Operations | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8224317002?gh_jid=8224317002) |
 | 🚀 SpaceX | Software Engineer (Thermal & Fluid Analysis)  | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8222759002?gh_jid=8222759002) |
 | 🚀 SpaceX | Video & Voice Systems Engineer | Vandenberg, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324656002?gh_jid=8324656002) |
+| 🔥 Lyft | Software Engineer, Android | Mexico City, Mexico | 2025-12-31 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8283026002?gh_jid=8283026002) |
 | 🚀 Cloudflare | Systems Engineer, FL | Hybrid | 2025-12-30 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7251646?gh_jid=7251646) |
+| 🚀 Databricks | Software Engineer- Fullstack- Tokyo | Tokyo, Japan | 2025-12-28 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8345074002) |
+| 🚀 Databricks | Software Engineer- Fullstack- Singapore | Singapore | 2025-12-28 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8341810002) |
 | 🚀 Cloudflare | Distributed Systems Engineer, Analytical Database Platform | Hybrid | 2025-12-24 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/4886734?gh_jid=4886734) |
 | 🚀 Cloudflare | Distributed Systems Engineer - Data Platform - Analytics and Alerts | Hybrid | 2025-12-24 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7340474?gh_jid=7340474) |
 | 🚀 Cloudflare | Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval) | Hybrid | 2025-12-24 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7267602?gh_jid=7267602) |
@@ -444,11 +569,15 @@
 | 🚀 Benchling | Software Engineer, New Grad (2026) | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7386982?gh_jid=7386982) |
 | 🚀 Benchling | Software Engineer, Scientific Models (Platform) | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7396257?gh_jid=7396257) |
 | 🚀 Cloudflare | Software Engineer - Traffic Management  | Hybrid | 2025-12-19 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7477711?gh_jid=7477711) |
+| 🔥 Airbnb | Software Engineer, Community Support Engineering(AI Products) | Beijing, China | 2025-12-19 | [Apply](https://careers.airbnb.com/positions/7461111?gh_jid=7461111) |
 | 🚀 Airtable |  People Systems Engineer, Airtable Specialist | San Francisco, CA; Remote - West Coast | 2025-12-18 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8222508002) |
 | 🚀 Airtable | Software Engineer, Android | San Francisco, CA; New York City, NY | 2025-12-18 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7953553002) |
 | 🚀 Airtable | Software Engineer, Infrastructure (8+ YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 2025-12-18 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845295002) |
+| 🚀 Coinbase | Software Engineer, Full Stack (EAA) | Remote - Brazil | 2025-12-18 | [Apply](https://www.coinbase.com/careers/positions/7477280?gh_jid=7477280) |
 | Amplitude | Software Engineer II, Capabilities | San Francisco, CA | 2025-12-18 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8344493002) |
 | 🚀 Cloudflare | Software Engineer, Identity Access Management | Hybrid | 2025-12-18 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6621615?gh_jid=6621615) |
+| 🚀 Okta | Software Engineer II, Login (Auth0) | Toronto, Ontario, Canada | 2025-12-17 | [Apply](https://www.okta.com/company/careers/opportunity/7376766?gh_jid=7376766) |
+| 🚀 Okta | Software Engineer II - Data Platform | Toronto, Ontario, Canada | 2025-12-17 | [Apply](https://www.okta.com/company/careers/opportunity/7437664?gh_jid=7437664) |
 | 🚀 Grammarly | Software Engineer, Data Platform | New York City; Hybrid | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7336882) |
 | 🔥 Lyft | Software Engineer, iOS | New York, NY | 2025-12-17 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8341067002?gh_jid=8341067002) |
 | 🚀 Grammarly | Software Engineer, Front-End | San Francisco; Hybrid | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/5856147) |
@@ -486,44 +615,67 @@
 | 🚀 Cloudflare | Systems Engineer, Fullstack | In-Office | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7421905?gh_jid=7421905) |
 | 🚀 Cloudflare | Systems Engineer, Metrics and Alerting | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6673579?gh_jid=6673579) |
 | 🚀 Cloudflare | Systems Engineer, Workers Authoring and Testing | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7104011?gh_jid=7104011) |
+| 🚀 Grammarly | Software Engineer, Android | Berlin; Hybrid | 2025-12-16 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6624431) |
 | 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Blockchain Enablement) | Remote - USA | 2025-12-13 | [Apply](https://www.coinbase.com/careers/positions/7233872?gh_jid=7233872) |
+| 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Blockchain Nodes) | Remote - Canada | 2025-12-13 | [Apply](https://www.coinbase.com/careers/positions/7067679?gh_jid=7067679) |
 | 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Blockchain Nodes) | Remote - USA | 2025-12-13 | [Apply](https://www.coinbase.com/careers/positions/7059314?gh_jid=7059314) |
 | Amplitude | Software Engineer II, Backend/Data Systems | San Francisco, CA | 2025-12-12 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8316249002) |
 | 🔥 Lyft | Software Engineer, Android | San Francisco, CA | 2025-12-12 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8326835002?gh_jid=8326835002) |
 | 🔥 Lyft | Software Engineer, Security | Seattle, WA | 2025-12-12 | [Apply](https://app.careerpuck.com/job-board/lyft/job/7806122002?gh_jid=7806122002) |
+| 🚀 Pinterest | Software Engineer, iOS | Toronto, ON, CA | 2025-12-12 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6922682) |
 | Amplitude | Software Engineer I, Query | San Francisco, CA | 2025-12-11 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8224986002) |
 | 🚀 Coinbase | Software Engineer, Backend - AI Tools DevX | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7075311?gh_jid=7075311) |
 | 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform  | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7059317?gh_jid=7059317) |
+| 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform  | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7059313?gh_jid=7059313) |
+| 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Staking Data) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7337063?gh_jid=7337063) |
 | 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Staking Data) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7337062?gh_jid=7337062) |
+| 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Wallets) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7316840?gh_jid=7316840) |
 | 🚀 Coinbase | Software Engineer, Backend - Blockchain Platform (Wallets) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7326905?gh_jid=7326905) |
 | 🚀 Coinbase | Software Engineer, Backend  (Consumer - Coinbase Card) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6535287?gh_jid=6535287) |
 | 🚀 Coinbase | Software Engineer, Backend (Consumer - Coinbase One) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7135188?gh_jid=7135188) |
+| 🚀 Coinbase | Software Engineer, Backend - (Consumer - Country Growth) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7396637?gh_jid=7396637) |
 | 🚀 Coinbase | Software Engineer, Backend  (Consumer - Growth) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6650914?gh_jid=6650914) |
+| 🚀 Coinbase | Software Engineer, Backend (Consumer - Growth) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6650921?gh_jid=6650921) |
+| 🚀 Coinbase | Software Engineer, Backend - (Consumer - Products) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5961451?gh_jid=5961451) |
+| 🚀 Coinbase | Software Engineer, Backend (Consumer - Stablecoin) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6570379?gh_jid=6570379) |
 | 🚀 Coinbase | Software Engineer, Backend (Consumer - Stablecoin) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5948501?gh_jid=5948501) |
 | 🚀 Coinbase | Software Engineer, Backend  (Consumer - Trading) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6812261?gh_jid=6812261) |
+| 🚀 Coinbase | Software Engineer, Backend  (Consumer - Trading) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6869392?gh_jid=6869392) |
 | 🚀 Coinbase | Software Engineer, Backend (Developer - x402) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7306942?gh_jid=7306942) |
 | 🚀 Coinbase | Software Engineer, Backend - Financial Hub | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7009446?gh_jid=7009446) |
 | 🚀 Coinbase | Software Engineer, Backend (Institutional - Markets, Derivatives) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6968491?gh_jid=6968491) |
 | 🚀 Coinbase | Software Engineer, Backend (Platform - Core Automation) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7364902?gh_jid=7364902) |
 | 🚀 Coinbase | Software Engineer, Blockchain Platform (Staking Validators) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7114605?gh_jid=7114605) |
+| 🚀 Coinbase | Software Engineer, Blockchain Platform (Staking Validators) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7338853?gh_jid=7338853) |
 | 🚀 Coinbase | Software Engineer, Data Platform | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7392802?gh_jid=7392802) |
+| 🚀 Coinbase | Software Engineer, Frontend (Coinbase One) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6222470?gh_jid=6222470) |
 | 🚀 Coinbase | Software Engineer, Frontend (Consumer - Coinbase One) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7135192?gh_jid=7135192) |
+| 🚀 Coinbase | Software Engineer, Frontend (Consumer - Growth) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6652883?gh_jid=6652883) |
+| 🚀 Coinbase | Software Engineer, Frontend - Consumer Products  | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5961369?gh_jid=5961369) |
 | 🚀 Coinbase | Software Engineer, Frontend (Consumer - Trading) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6821664?gh_jid=6821664) |
 | 🚀 Coinbase | Software Engineer, Frontend (Consumer - Trust and Loyalty) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5948954?gh_jid=5948954) |
 | 🚀 Coinbase | Software Engineer, Frontend - Developer Experience | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7075489?gh_jid=7075489) |
 | 🚀 Coinbase | Software Engineer, Frontend (Developer - Foundations)  | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5948946?gh_jid=5948946) |
+| 🚀 Coinbase | Software Engineer, Frontend - Risk Platform  | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5948929?gh_jid=5948929) |
 | 🚀 Coinbase | Software Engineer, Frontend - Risk Platform  | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6946930?gh_jid=6946930) |
 | 🚀 Coinbase | Software Engineer, Frontend - Risk Platform: EVENT | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7378510?gh_jid=7378510) |
+| 🚀 Coinbase | Software Engineer, Frontend - Risk Platform: EVENT | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7378508?gh_jid=7378508) |
+| 🚀 Coinbase | Software Engineer, Frontend (Trust and Loyalty) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6204422?gh_jid=6204422) |
 | 🚀 Coinbase | Software Engineer, Full Stack (EAA) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6652031?gh_jid=6652031) |
 | Amplitude | Software Engineer II, Growth Platform | San Francisco, CA | 2025-12-10 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8329697002) |
 | 🚀 Brex | Software Engineer II, Product  | San Francisco, California, United States | 2025-12-10 | [Apply](https://www.brex.com/careers/8318332002?gh_jid=8318332002) |
 | 🚀 Brex | Software Engineer II, Product  | New York, New York, United States | 2025-12-10 | [Apply](https://www.brex.com/careers/8318331002?gh_jid=8318331002) |
 | 🚀 Brex | Software Engineer II, Product  | Seattle, Washington, United States | 2025-12-10 | [Apply](https://www.brex.com/careers/8318333002?gh_jid=8318333002) |
+| 🚀 Unity Technologies | Développeur(se) de logiciels, Editor, Expérience développeur(se)  / Editor Software Developer, Developer Experience | Montreal, Canada | 2025-12-09 | [Apply](https://unity.com/careers/positions/7335646?gh_jid=7335646) |
 | 🔥 Block (Square) | Software Engineer - Android Connected Devices | Bay Area, CA, United States of America | 2025-12-08 | [Apply](http://block.xyz/careers/jobs/4984008008?gh_jid=4984008008) |
 | Amplitude | Software Engineer II, AI Security  | San Francisco, CA | 2025-12-08 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8237669002) |
 | Amplitude | Software Engineer II, Web | San Francisco, CA | 2025-12-08 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8223035002) |
+| 🔥 Lyft | Software Engineer, Fullstack | Mexico City, Mexico | 2025-12-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8326345002?gh_jid=8326345002) |
 | 🔥 Block (Square) | Software Engineer, Access | Bay Area, CA, United States of America | 2025-12-02 | [Apply](http://block.xyz/careers/jobs/4988836008?gh_jid=4988836008) |
+| 🔥 Lyft | Backend Software Engineer | Montreal, Canada | 2025-12-02 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8044757002?gh_jid=8044757002) |
 | 🚀 Figma | Software Engineer, Distributed Systems | San Francisco, CA • New York, NY • United States | 2025-11-20 | [Apply](https://boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004) |
+| 🚀 Pinterest | Software Engineer, Backend | Mexico City, MX; Remote, MX | 2025-11-19 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=5039778) |
+| 🚀 Pinterest |  Software Engineer II, Full Stack | Mexico City, MX; Remote, MX | 2025-11-19 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6142084) |
 | 🚀 Figma | Software Engineer, AI Platforms | San Francisco, CA • New York, NY • United States | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004) |
 | 🚀 Figma | Software Engineer, Full Stack | San Francisco, CA • New York, NY • United States | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004) |
 | 🚀 Figma | Early Career, Software Engineer (2026)  | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616603004?gh_jid=5616603004) |
@@ -545,9 +697,12 @@
 | 🚀 Robinhood | Data Scientist | Ljubljana, Slovenia | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7542570?t=gh_src=&gh_jid=7542570) |
 | 🚀 Pinterest | Machine Learning Engineer II, LLM Applied Science | San Francisco, CA, US; Remote, CA, US | 1 day ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7290922) |
 | Spotify | Data Scientist - Finance Data & Insights, Ads and Podcasts | New York, NY | 1 day ago | [Apply](https://jobs.lever.co/spotify/6dfd1d6f-5efc-473a-aa48-8026eea476fc) |
+| 🚀 Elastic | Security Research Engineer II – Threat Research & Detection Engineering | Canada | 1 day ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=7445067&gh_jid=7445067) |
 | 🚀 Reddit | Data Scientist, Ads | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6580815) |
 | 🚀 Reddit | Machine Learning Engineer, Ads | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7131932) |
+| 🚀 Reddit | Machine Learning Engineer, Ads | Remote - Ontario, Canada | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7131934) |
 | 🚀 Waymo | Machine Learning Engineer, Audio Perception | Mountain View, CA, USA; San Francisco, CA, USA | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7248697) |
+| New Relic | Machine Learning Engineer | Bangalore, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4650154008) |
 | 🔥 Block (Square) | Machine Learning Engineer (Modeling), Families Risk | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4947767008?gh_jid=4947767008) |
 | 🚀 Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | 🚀 Roblox | Data Scientist - Analytical Data Product - Social (Temporary) | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7276845?gh_jid=7276845) |
@@ -566,6 +721,7 @@
 | 🚀 Waymo | Data Scientist | Mountain View, California, USA; San Francisco, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455592) |
 | 🚀 Waymo | Data Scientist  | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6608598) |
 | 🚀 Waymo | Machine Learning Engineer | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
+| 🚀 Waymo | Machine Learning Engineer | London, England, United Kingdom | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7474033) |
 | 🚀 Waymo | Machine Learning Engineer, ADV Systems | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446320) |
 | 🚀 Waymo | Machine Learning Engineer, Data & Systems  | Mountain View, California, United States, San Francisco, California, United States | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446301) |
 | 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429811) |
@@ -580,26 +736,41 @@
 | 🚀 Waymo | Machine Learning Engineer, Simulation Realism | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6499165) |
 | 🚀 Waymo | Machine Learning Engineer, Simulation Realism  | Mountain View, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6688617) |
 | 🚀 Grammarly | Machine Learning Engineer, Agents | San Francisco; Hybrid | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6392339) |
+| 🚀 Coinbase | Data Scientist II - Product Analytics | Remote - UK | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202) |
+| 🚀 Coinbase | Data Scientist II - Product Analytics | Berlin, Germany | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/6746206?gh_jid=6746206) |
 | 🚀 Coinbase | Data Scientist II - Product | Remote - USA | 3 days ago | [Apply](https://www.coinbase.com/careers/positions/5090295?gh_jid=5090295) |
+| 🔥 Lyft | Machine Learning Engineer, Mapping | Toronto, Canada | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8284517002?gh_jid=8284517002) |
 | 🚀 Dropbox | Data Scientist | Remote - US: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7486226?gh_jid=7486226) |
+| 🚀 Dropbox | Data Scientist | Remote - Canada: Select locations | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7486229?gh_jid=7486229) |
+| 🚀 Dropbox | Machine Learning Engineer, Dash | Remote - Denmark | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7384408?gh_jid=7384408) |
+| 🚀 Dropbox | Machine Learning Engineer, Dash | Remote - Germany | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7384405?gh_jid=7384405) |
 | 🚀 Scale AI | Machine Learning Engineer - Model Evaluations, Public Sector | San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4631848005) |
 | 🚀 Scale AI | Machine Learning Engineer, Public Sector | San Francisco, CA; New York, NY; Washington, DC | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4281519005) |
 | 🚀 Grammarly | Machine Learning Engineer, Agents  | San Francisco  | 4 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7535210) |
+| 🚀 Instacart | Data Scientist | Canada - Remote (ON, AB, BC, or NS Only) | 5 days ago | [Apply](https://instacart.careers/job/?gh_jid=6298376) |
 | 🚀 Upstart | Machine Learning Engineer | United States \| Remote | 5 days ago | [Apply](https://careers.upstart.com/jobs?gh_jid=6709289) |
+| 🔥 Stripe | Data Scientist | Toronto | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7357460) |
+| 🔥 Stripe | Data Scientist, EMEA | London | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7516102) |
 | 🔥 Stripe | Machine Learning Engineer, Foundation Model | US - San Francisco; Seattle; New York City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7275014) |
 | 🔥 Stripe | Machine Learning Engineer, Identity Product | San Francisco, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6363655) |
 | 🔥 Stripe | Machine Learning Engineer, Payments ML Accelerator | Seattle; San Francisco; New York City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7079044) |
 | 🔥 Stripe | PhD Machine Learning Engineer, New Grad | San Francisco, New York City, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7216668) |
+| 🚀 Figma | Data Scientist - Developer Tools (London, United Kingdom) | London, England | 2026-01-09 | [Apply](https://boards.greenhouse.io/figma/jobs/5753818004?gh_jid=5753818004) |
+| 🔥 Lyft | Machine Learning Engineer, Mapping | Toronto, Canada | 2026-01-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8332299002?gh_jid=8332299002) |
+| 🔥 Lyft | Data Scientist, Algorithms - Lyft Ads | Toronto, Canada | 2026-01-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8329946002?gh_jid=8329946002) |
 | 🔥 Lyft | Data Scientist, Algorithms - Optimization | New York, NY | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002) |
 | 🔥 Lyft | Data Scientist, Algorithms - Optimization  | Seattle, WA | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002) |
 | 🚀 Airtable | Data Scientist, GTM Analytics | San Francisco, CA; New York City, NY; Austin, TX | 2026-01-03 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8169952002) |
 | 🚀 Airtable | Data Scientist, Product Analytics | San Francisco, CA; New York City, NY; Austin, TX | 2026-01-03 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8170306002) |
+| Spotify | Data Engineer - Financial Engineering | Toronto | 2025-12-30 | [Apply](https://jobs.lever.co/spotify/c4b93062-9730-40ab-9e6d-3361dc1985b3) |
 | Intercom | Forward Deployed Data Scientist | San Francisco, California | 2025-12-23 | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7410458) |
+| 🚀 Pinterest | Machine Learning Engineer II | Toronto, ON, CA | 2025-12-22 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7473497) |
 | 🚀 Pinterest | Machine Learning Engineer / Economist, Ads Marketplace | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-12-19 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7195341) |
 | 🚀 Pinterest | Machine Learning Engineer, Monetization Engineering | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US | 2025-12-19 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6121543) |
 | 🚀 Pinterest | Machine Learning Engineer, Core Engineering | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US | 2025-12-19 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6121450) |
 | LaunchDarkly | Data Scientist | Remote - US | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/launchdarkly/jobs/6725848003) |
 | Spotify | Data Scientist  - Business Analytics | New York, NY | 2025-12-18 | [Apply](https://jobs.lever.co/spotify/27596acc-85c1-4c45-b4b9-669d1b37e068) |
+| 🚀 Okta |  AI/ML Engineer  II- Intelligence Accelerator | Toronto, Ontario, Canada | 2025-12-17 | [Apply](https://www.okta.com/company/careers/opportunity/7435092?gh_jid=7435092) |
 | 🚀 Grammarly | Data Scientist | San Francisco; Hybrid | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6458934) |
 | 🚀 Cloudflare | Machine Learning Engineer, Cloudforce One Threat Intelligence  | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7172175?gh_jid=7172175) |
 | 🔥 Block (Square) | Data Scientist - Risk | Bay Area, CA, United States of America | 2025-12-16 | [Apply](http://block.xyz/careers/jobs/5025529008?gh_jid=5025529008) |
@@ -609,9 +780,11 @@
 | Spotify | Machine Learning Engineer | New York, NY | 2025-12-10 | [Apply](https://jobs.lever.co/spotify/7032c810-478c-42fc-9807-25553e978343) |
 | 🔥 Lyft | Data Scientist, Algorithms - Lyft Ads | New York, NY | 2025-12-10 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8330595002?gh_jid=8330595002) |
 | 🔥 Lyft | Data Scientist, Algorithms - Lyft Ads | San Francisco, CA | 2025-12-10 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8330398002?gh_jid=8330398002) |
+| 🚀 Coinbase | Machine Learning Engineer, Risk AI/ML  | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7391820?gh_jid=7391820) |
 | 🔥 Block (Square) | AI Research Infrastructure Engineer | Bay Area, CA, United States of America | 2025-12-02 | [Apply](http://block.xyz/careers/jobs/4973591008?gh_jid=4973591008) |
 | 🔥 Block (Square) | Machine Learning Engineer (Modeling), Risk | New York, NY, United States of America | 2025-12-02 | [Apply](http://block.xyz/careers/jobs/4989853008?gh_jid=4989853008) |
 | 🔥 Block (Square) | Machine Learning Engineer (Modeling), Risk | Bay Area, CA, United States of America | 2025-12-02 | [Apply](http://block.xyz/careers/jobs/4680661008?gh_jid=4680661008) |
+| Spotify | Data Scientist - Company Planning and Execution (CPE) | London | 2025-12-01 | [Apply](https://jobs.lever.co/spotify/5cf8c17c-ad44-463c-9da1-9cf4739b7c4f) |
 | 🚀 Figma | Data Scientist   | San Francisco, CA • New York, NY • United States | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5552580004?gh_jid=5552580004) |
 
 ## 📊 Data Engineering New Grad Roles
@@ -630,11 +803,16 @@
 | 🚀 Waymo | Data Engineer | Mountain View, California, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438328) |
 | 🚀 Brex | Data Engineer | San Francisco, California, United States | 3 days ago | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
 | Spotify | Data Engineer, Ads Product & Tech | New York, NY | 5 days ago | [Apply](https://jobs.lever.co/spotify/6698ffb1-ad8f-4173-bf81-884357eaba0d) |
+| 🔥 Lyft |  Data Engineer | Toronto, Canada | 2026-01-07 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362291002?gh_jid=8362291002) |
+| 🔥 Lyft | Data Engineer, Decision Apps | Toronto, Canada | 2026-01-05 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8071011002?gh_jid=8071011002) |
 | 🚀 SpaceX | Data Engineer (Starlink Growth) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8243150002?gh_jid=8243150002) |
 | 🚀 SpaceX | Data Engineer (Starlink Growth) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8240611002?gh_jid=8240611002) |
 | 🚀 SpaceX | Data Engineer - Top Secret Clearance (Application Software, Data) 🇺🇸 | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8299581002?gh_jid=8299581002) |
 | 🚀 Airtable | Data Engineer | San Francisco, CA | 2025-12-18 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8124953002) |
+| Intercom | Data Infrastructure Engineer | Dublin, Ireland | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7241965) |
+| Spotify | Data Engineer - Financial Engineering | London | 2025-12-16 | [Apply](https://jobs.lever.co/spotify/2409d291-1a14-4fad-aed6-8f1911f8ecea) |
 | Spotify | Data Engineer II - Gen AI - Music | New York, NY | 2025-12-09 | [Apply](https://jobs.lever.co/spotify/87ac8be9-799d-414f-b855-70a1cf2729b4) |
+| Spotify | Data Infrastructure Engineer  - Data Platform | London | 2025-11-28 | [Apply](https://jobs.lever.co/spotify/deee653b-ec92-47f1-9faa-237170b32d1f) |
 | 🚀 Figma | Data Engineer | San Francisco, CA • New York, NY • United States | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004) |
 
 ## 🏗️ Infrastructure & SRE New Grad Roles
@@ -643,9 +821,13 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| 🚀 MongoDB | Product Security Engineer | Dublin | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7484912) |
 | 🚀 Chime | Product Security Engineer | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
+| 🚀 Elastic | Platform Security - Site Reliability Engineer II | Spain | 1 day ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=7434535&gh_jid=7434535) |
 | 🚀 Elastic | Platform - Site Reliability Engineer II (Networking) | United States | 1 day ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=6950250&gh_jid=6950250) |
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 1 day ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
+| 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Poland | 1 day ago | [Apply](https://jobs.dropbox.com/listing/7508176?gh_jid=7508176) |
+| 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Mexico | 1 day ago | [Apply](https://jobs.dropbox.com/listing/7508179?gh_jid=7508179) |
 | 🚀 Benchling | Application Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
 | 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
 | 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
@@ -655,23 +837,34 @@
 | 🚀 SpaceX | Security Engineer (Security Operations) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002) |
 | 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
 | 🚀 SpaceX | Network Engineer (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002) |
+| 🚀 Datadog | Security Engineer II, Threat Detection | Paris, France | 2 days ago | [Apply](https://careers.datadoghq.com/detail/7379791/?gh_jid=7379791) |
 | 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
 | Checkr | Security Engineer | Denver, Colorado, United States; San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7342475) |
 | 🚀 Airtable | Product Security Engineer | San Francisco, CA; Remote (Seattle, WA only) | 3 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8194662002) |
 | 🚀 Asana | Corporate Security Engineer | San Francisco | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7441441?gh_jid=7441441) |
+| 🚀 Asana | Security Engineer, Detection Engineering | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7350641?gh_jid=7350641) |
+| 🚀 Asana | Security Engineer, Red Team  | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192729?gh_jid=7192729) |
+| 🚀 Asana | Security Engineer, Threat Response | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192741?gh_jid=7192741) |
 | 🚀 MongoDB | Site Reliability Engineer 3 | New York City | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
 | 🚀 Anthropic | Application Security Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4502508008) |
 | 🚀 Anthropic | Infrastructure Engineer, Sandboxing | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5030680008) |
 | 🚀 Anthropic | ML Infrastructure Engineer, Safeguards | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4778843008) |
+| 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
 | 🚀 Anthropic | Security Engineer, Detection & Response | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982193008) |
 | 🚀 Anthropic | Security Engineer, Operating Systems | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4929693008) |
 | 🚀 Anthropic | Software Security Engineer | Zürich, CH | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5056795008) |
+| 🚀 Waymo | Network Engineer  | London, UK | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7435901) |
 | 🚀 Vercel |  IT Infrastructure Engineer  | Hybrid - San Francisco | 4 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5623421004) |
 | 🚀 Scale AI | AI Infrastructure Engineer, Core Infrastructure | San Francisco, CA; Seattle, WA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4624681005) |
 | 🚀 Scale AI | AI Infrastructure Engineer, Model Serving Platform | San Francisco, CA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520320005) |
+| 🚀 Scale AI | DevOps Engineer, IPS | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4520295005) |
 | 🚀 Scale AI | DevOps Engineer, IPS | Doha, Qatar  | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4613839005) |
 | 🚀 Scale AI | Security Engineer, Product Security | San Francisco, CA; Seattle, WA; New York, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4647404005) |
+| 🔥 Stripe | Security Engineer, New Grad  | Seattle, WA; San Francisco, CA; Toronto, CAN | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7477571) |
 | 🚀 SpaceX | Site Reliability Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002) |
+| 🚀 GitLab | Intermediate Site Reliability Engineer, Database Operations | Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8199072002) |
+| 🚀 GitLab | Intermediate Site Reliability Engineer, Environment Automation | Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8242652002) |
+| 🚀 GitLab | Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services | Remote, Americas; Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8358825002) |
 | 🚀 Datadog | Security Engineer II, Risk Engineering | New York, New York, USA | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/7373580/?gh_jid=7373580) |
 | 🚀 Databricks | Product Security Engineer | United States | 2026-01-07 | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8026646002) |
 | 🚀 SpaceX | Kubernetes Platform Infrastructure Engineer (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8217557002?gh_jid=8217557002) |
@@ -688,10 +881,12 @@
 | 🚀 Cloudflare | Security Engineer - Security Technology Delivery | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7412507?gh_jid=7412507) |
 | 🚀 Cloudflare | Systems Reliability Engineer (SRE) - Edge | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7144320?gh_jid=7144320) |
 | 🚀 Cloudflare | Systems Reliability Engineer (SRE), Edge | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7370630?gh_jid=7370630) |
+| Algolia | Site Reliability Engineer | Paris, France; Remote - France | 2025-12-10 | [Apply](https://job-boards.greenhouse.io/algolia/jobs/5655170004) |
 | 🚀 Coinbase | Offensive Security Engineer, Assessments (Web3) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6995309?gh_jid=6995309) |
 | 🚀 Coinbase |  Site Reliability Engineer - Platform | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6367696?gh_jid=6367696) |
 | Amplitude | Application Security Engineer II (AI Security) | San Francisco, CA | 2025-12-08 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8211359002) |
 | 🔥 Block (Square) | Embedded Site Reliability Engineer | Bay Area, CA, United States of America | 2025-12-02 | [Apply](http://block.xyz/careers/jobs/4967291008?gh_jid=4967291008) |
+| 🚀 Okta | Site Reliability Engineer (Auth0) | Barcelona, Spain | 2025-11-24 | [Apply](https://www.okta.com/company/careers/opportunity/7325605?gh_jid=7325605) |
 | 🚀 Figma | Security Engineer | San Francisco, CA • New York, NY • United States | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5551463004?gh_jid=5551463004) |
 
 ## 🔧 Hardware Engineering New Grad Roles
@@ -710,10 +905,13 @@
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | 🚀 SpaceX | New Graduate Engineer, Software (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8376990002?gh_jid=8376990002) |
+| Peloton | Retail and Cafe Associate | London, England | 1 day ago | [Apply](https://careers.onepeloton.com/en/all-jobs/?gh_jid=7535518) |
 | 🚀 Samsara | Account Development Representative (New Grad) | Atlanta, GA | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384) |
 | 🚀 Samsara | Account Development Representative (New Grad)  | Phoenix, Arizona | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397) |
 | 🚀 Samsara | Sales Engineer II - Specialist | Remote - US | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502) |
 | 🚀 Samsara | Sales Engineer II - Specialist | Remote - NYC | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443) |
+| 🚀 Reddit | On Campus Ambassador, India (Contractor) | Remote - India | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090049) |
+| 🚀 Reddit | On Campus Ambassador, Philippines (Contractor) | Remote - Philippines | 2 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090134) |
 | 🚀 SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
@@ -730,15 +928,28 @@
 | 🚀 SpaceX | Spring 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149272002?gh_jid=8149272002) |
 | 🚀 SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | 🚀 SpaceX | NDE Inspector Radiographic Trainee (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002) |
+| Intercom | Early Careers and Partnerships Recruiter | Dublin, Ireland | 3 days ago | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7538382) |
+| 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7456081) |
+| 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=5902523) |
+| Flexport | Air Operations Associate | Bangkok, Bangkok, Thailand | 5 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7529422?gh_jid=7529422) |
+| 🚀 GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Canada; Remote, Chile; Remote, Costa Rica; Remote, Mexico; Remote, US | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
+| 🚀 GitLab | Associate Support Engineer (EMEA) | Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
 | 🚀 Datadog | Sales Development Representative - Summer 2026 Graduates (Portuguese Speaking) | Boston, Massachusetts, USA | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/7252012/?gh_jid=7252012) |
 | 🚀 Datadog | Sales Development Representative - Summer 2026 Graduates (Spanish Speaking) | Boston, Massachusetts, USA | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/7251992/?gh_jid=7251992) |
+| Amplitude | Product Engineer II (Activation) | Vancouver, BC, Canada | 2026-01-08 | [Apply](https://job-boards.greenhouse.io/amplitude/jobs/8362767002) |
 | Flexport | Air Operations Associate | Taipei, Taipei, Taiwan | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7410643?gh_jid=7410643) |
+| Flexport | Air Operations Associate | Seoul, Seoul, South Korea | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7493132?gh_jid=7493132) |
+| Flexport | Air Operations Associate, Hanoi | Hanoi, Hanoi, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366306?gh_jid=7366306) |
+| Flexport | Air Operations Associate, Ho Chi Minh City | Ho Chi Minh City, Ho Chi Minh City, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366295?gh_jid=7366295) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
+| Intercom | Graduate Product Engineer Dublin, 2026 | Dublin, Ireland; London, England | 2025-12-16 | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7317849) |
+| 🔥 Lyft | Stagiaire en Génie Industriel (Été 2026) | Longueuil, Canada | 2025-12-11 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8332244002?gh_jid=8332244002) |
 | 🚀 Figma | Inside Sales Representative - Early Career (2026) | New York, NY | 2025-12-02 | [Apply](https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004) |
+| 🔥 Lyft | Stagiaire - Spécialiste en Gestion de Comptes Techniques (été 2026) | Montreal, Canada | 2025-11-23 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8291056002?gh_jid=8291056002) |
 | 🚀 Figma | Early Career, Product Designer (2026) | San Francisco, CA • New York, NY | 2025-11-19 | [Apply](https://boards.greenhouse.io/figma/jobs/5616455004?gh_jid=5616455004) |
 
 ---
@@ -796,4 +1007,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 00:49:45 UTC*
+*Last updated: 2026-01-18 01:03:12 UTC*
