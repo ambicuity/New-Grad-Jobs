@@ -470,6 +470,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     
     Uses ThreadPoolExecutor to run multiple searches concurrently, dramatically
     reducing time from 10+ minutes to ~1-2 minutes for 150+ search terms.
+    Now supports multiple countries: USA, Canada, India
     """
     if not JOBSPY_AVAILABLE:
         print("❌ JobSpy library not available, skipping...")
@@ -481,15 +482,22 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     
     sites = config_jobspy.get('sites', ['linkedin', 'indeed'])
     search_terms = config_jobspy.get('search_terms', ['new grad software engineer'])
-    location = config_jobspy.get('location', 'United States')
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
     
-    # Build list of all (site, search_term) combinations
-    search_tasks = [(site, term) for site in sites for term in search_terms]
+    # Countries to search - USA, Canada, India
+    countries = config_jobspy.get('countries', [
+        {'code': 'USA', 'location': 'United States'},
+        {'code': 'Canada', 'location': 'Canada'},
+        {'code': 'India', 'location': 'India'}
+    ])
+    
+    # Build list of all (site, search_term, country) combinations
+    search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
     total_tasks = len(search_tasks)
     
-    print(f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites")
+    print(f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites and {len(countries)} countries")
+    print(f"   Countries: {', '.join([c['code'] for c in countries])}")
     print(f"   Using 10 concurrent workers for maximum speed...")
     
     all_jobs = []
@@ -497,8 +505,8 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     errors = 0
     
     def search_single(args):
-        """Worker function to search a single site/term combination"""
-        site, search_term = args
+        """Worker function to search a single site/term/country combination"""
+        site, search_term, country = args
         jobs_list = []
         
         for attempt in range(max_retries + 1):
@@ -507,10 +515,10 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 jobs_df = scrape_jobs(
                     site_name=site,
                     search_term=search_term,
-                    location=location,
+                    location=country['location'],
                     results_wanted=results_wanted,
                     hours_old=hours_old,
-                    country_indeed='USA'
+                    country_indeed=country['code']
                 )
                 
                 if jobs_df is None or jobs_df.empty:
@@ -632,63 +640,19 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         print(f"Error parsing date {posted_at}: {e}")
         return False
 
-def is_usa_location(location: str) -> bool:
-    """Check if job location is in the USA"""
+def is_valid_location(location: str) -> bool:
+    """Check if job location is in target countries (USA, Canada, India) or Remote"""
     if not location:
         return False
     
     location_lower = location.lower().strip()
     
-    # Handle explicit non-USA indicators
-    non_usa_indicators = [
-        'uk', 'united kingdom', 'england', 'london', 'manchester', 'edinburgh',
-        'canada', 'toronto', 'vancouver', 'montreal', 'ottawa', 
-        'mexico', 'mexico city',
-        'japan', 'tokyo', 'osaka',
-        'germany', 'berlin', 'munich',
-        'france', 'paris',
-        'netherlands', 'amsterdam', 
-        'ireland', 'dublin',
-        'israel', 'tel aviv',
-        'australia', 'sydney', 'melbourne',
-        'india', 'bangalore', 'mumbai', 'hyderabad', 'chennai', 'delhi', 'bengaluru',
-        'singapore',
-        'china', 'beijing', 'shanghai',
-        'sweden', 'stockholm',
-        'denmark', 'copenhagen',
-        'norway', 'oslo',
-        'finland', 'helsinki',
-        'switzerland', 'zurich',
-        'spain', 'madrid', 'barcelona',
-        'italy', 'milan', 'rome',
-        'belgium', 'brussels',
-        'austria', 'vienna',
-        'poland', 'warsaw',
-        'czech republic', 'prague',
-        'hungary', 'budapest',
-        'romania', 'bucharest',
-        'bulgaria', 'sofia',
-        'greece', 'athens',
-        'portugal', 'lisbon',
-        'brazil', 'sao paulo', 'rio de janeiro',
-        'argentina', 'buenos aires',
-        'chile', 'santiago',
-        'colombia', 'bogota',
-        'peru', 'lima',
-        'luxembourg', 'luxembourg city',
-        'philippines', 'manila',
-        'thailand', 'bangkok',
-        'vietnam', 'ho chi minh',
-        'malaysia', 'kuala lumpur',
-        'south korea', 'seoul',
-        'anz', 'anzac', 'emea',
-        'europe', 'asia', 'apac'
-    ]
+    # Handle "Remote" locations - include them
+    if location_lower in ['remote', 'anywhere', 'worldwide']:
+        return True
     
-    # Check for non-USA indicators
-    for indicator in non_usa_indicators:
-        if indicator in location_lower:
-            return False
+    if 'remote' in location_lower:
+        return True
     
     # USA state abbreviations and names
     usa_states = [
@@ -714,45 +678,37 @@ def is_usa_location(location: str) -> bool:
         'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
         'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
         'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
-        'seattle', 'denver', 'washington', 'boston', 'el paso', 'nashville',
-        'detroit', 'oklahoma city', 'portland', 'las vegas', 'memphis',
-        'louisville', 'baltimore', 'milwaukee', 'albuquerque', 'tucson',
-        'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'long beach',
-        'colorado springs', 'raleigh', 'miami', 'virginia beach', 'omaha',
-        'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans',
-        'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu',
-        'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton',
-        'henderson', 'saint paul', 'st. paul', 'cincinnati', 'pittsburgh',
-        'greensboro', 'anchorage', 'plano', 'lincoln', 'orlando', 'irvine',
-        'newark', 'durham', 'chula vista', 'toledo', 'fort wayne', 'st. petersburg',
-        'laredo', 'jersey city', 'chandler', 'madison', 'lubbock', 'scottsdale',
-        'reno', 'buffalo', 'gilbert', 'glendale', 'north las vegas', 'winston-salem',
-        'chesapeake', 'norfolk', 'fremont', 'garland', 'irving', 'hialeah',
-        'richmond', 'boise', 'spokane', 'baton rouge', 'tacoma', 'san bernardino',
-        'modesto', 'fontana', 'des moines', 'moreno valley', 'santa clarita',
-        'fayetteville', 'birmingham', 'oxnard', 'rochester', 'port st. lucie',
-        'grand rapids', 'huntsville', 'salt lake city', 'grand prairie',
-        'mckinney', 'montgomery', 'akron', 'little rock', 'augusta', 'shreveport',
-        'mobile', 'worcester', 'knoxville', 'newport news', 'chattanooga',
-        'providence', 'fort lauderdale', 'elk grove', 'ontario', 'salem',
-        'santa rosa', 'dayton', 'eugene', 'palmdale', 'salinas', 'springfield',
-        'pasadena', 'rockford', 'pomona', 'corona', 'paterson', 'overland park',
-        'sioux falls', 'alexandria', 'hayward', 'murfreesboro', 'pearland',
-        'hartford', 'fargo', 'sunnyvale', 'escondido', 'lakewood', 'hollywood',
-        'torrance', 'bridgeport', 'orange', 'garden grove', 'oceanside',
-        'jackson', 'fort collins', 'rancho cucamonga', 'cape coral', 'santa maria',
-        'vancouver', 'sioux city', 'springfield', 'peoria', 'pembroke pines',
-        'elk grove', 'lancaster', 'corona', 'eugene', 'palmdale', 'salinas',
+        'seattle', 'denver', 'boston', 'atlanta', 'miami', 'portland', 'las vegas',
+        'detroit', 'nashville', 'baltimore', 'milwaukee', 'raleigh', 'tampa',
         'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
-        'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland'
+        'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
     ]
     
-    # Check for explicit USA indicators
+    # USA indicators
     usa_indicators = [
-        'united states', 'usa', 'us', 'america', 'remote - usa', 'remote usa',
-        'usa remote', 'us remote', 'remote - us'
+        'united states', 'usa', 'us', 'america'
     ]
     
+    # Canada provinces and cities
+    canada_indicators = [
+        'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba', 
+        'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
+        'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
+        'quebec city', 'hamilton', 'kitchener', 'waterloo', 'london', 'victoria'
+    ]
+    
+    # India states and cities
+    india_indicators = [
+        'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
+        'chennai', 'kolkata', 'gurgaon', 'gurugram', 'noida', 'ahmedabad', 'jaipur',
+        'kochi', 'thiruvananthapuram', 'coimbatore', 'indore', 'nagpur', 'lucknow',
+        'chandigarh', 'bhubaneswar', 'visakhapatnam', 'mysore', 'mangalore',
+        'karnataka', 'maharashtra', 'telangana', 'tamil nadu', 'kerala', 'andhra pradesh',
+        'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
+        'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
+    ]
+    
+    # Check for USA indicators
     for indicator in usa_indicators:
         if indicator in location_lower:
             return True
@@ -767,9 +723,15 @@ def is_usa_location(location: str) -> bool:
         if city in location_lower:
             return True
     
-    # Handle "Remote" locations without explicit country - treat as potentially USA
-    if location_lower in ['remote', 'anywhere']:
-        return True
+    # Check for Canada indicators
+    for indicator in canada_indicators:
+        if indicator in location_lower:
+            return True
+    
+    # Check for India indicators
+    for indicator in india_indicators:
+        if indicator in location_lower:
+            return True
     
     # If we can't determine, default to False to be safe
     return False
@@ -821,7 +783,7 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
             continue
         
         # Check if job location is in USA
-        if not is_usa_location(location):
+        if not is_valid_location(location):
             continue
             
         filtered_jobs.append(job)
