@@ -46,7 +46,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| 🚀 Cloudflare | Software Engineer, Network Performance & Reliability | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310) |
+| 🚀 Cloudflare | Software Engineer, Network Performance & Reliability | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310) |
 | 🚀 Twilio | Software Engineer, Commerce Platform  | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070269) |
 | 🚀 Twilio | Software Engineer | Remote - US | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070250) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7359642) |
@@ -73,12 +73,12 @@
 | PagerDuty | Software Engineer I - Product Development  | San Francisco | 1 day ago | [Apply](https://job-boards.greenhouse.io/pagerduty/jobs/5722204004) |
 | 🚀 Waymo | Motion Systems Engineer, Actuators | Mountain View, Ca, USA | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7490150) |
 | 🚀 Scale AI | Software Engineer - New Grad | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4605996005) |
-| 🚀 Unity Technologies | Développeur(se) logiciel  / Software Engineer | Montreal, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523815?gh_jid=7523815) |
-| 🚀 Unity Technologies | Software Engineer | Remote, USA | 1 day ago | [Apply](https://unity.com/careers/positions/7435121?gh_jid=7435121) |
-| 🚀 Unity Technologies | Software Engineer / Développeur(se) logiciel  | Remote, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523810?gh_jid=7523810) |
-| 🚀 Unity Technologies | Software Engineer - SyncSketch | Remote, USA | 1 day ago | [Apply](https://unity.com/careers/positions/7435113?gh_jid=7435113) |
-| 🚀 Unity Technologies | Software Engineer - SyncSketch/ Développeur(se) Logiciel | Remote, Canada | 1 day ago | [Apply](https://unity.com/careers/positions/7523945?gh_jid=7523945) |
-| 🚀 Databricks | Software Engineer IV | Mountain View, California; San Francisco, California | 1 day ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8378574002) |
+| 🚀 Unity Technologies | Développeur(se) logiciel  / Software Engineer | Montreal, Canada | 2 days ago | [Apply](https://unity.com/careers/positions/7523815?gh_jid=7523815) |
+| 🚀 Unity Technologies | Software Engineer | Remote, USA | 2 days ago | [Apply](https://unity.com/careers/positions/7435121?gh_jid=7435121) |
+| 🚀 Unity Technologies | Software Engineer / Développeur(se) logiciel  | Remote, Canada | 2 days ago | [Apply](https://unity.com/careers/positions/7523810?gh_jid=7523810) |
+| 🚀 Unity Technologies | Software Engineer - SyncSketch | Remote, USA | 2 days ago | [Apply](https://unity.com/careers/positions/7435113?gh_jid=7435113) |
+| 🚀 Unity Technologies | Software Engineer - SyncSketch/ Développeur(se) Logiciel | Remote, Canada | 2 days ago | [Apply](https://unity.com/careers/positions/7523945?gh_jid=7523945) |
+| 🚀 Databricks | Software Engineer IV | Mountain View, California; San Francisco, California | 2 days ago | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8378574002) |
 | 🚀 Waymo | Software Engineer, Planner | Mountain View, CA | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7459622) |
 | 🚀 Cloudflare | Network Software Engineer | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343755?gh_jid=7343755) |
 | 🚀 Cloudflare | Software Engineer - Cloudflare One | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7299144?gh_jid=7299144) |
@@ -221,12 +221,12 @@
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Toronto, Canada | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6099228) |
 | 🚀 Robinhood | Software Engineer, Data Governance | Bellevue, WA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7390553?t=gh_src=&gh_jid=7390553) |
 | 🚀 Anthropic | Software Engineer, Cybersecurity Products | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5063007008) |
-| 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
-| 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
-| 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
-| 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
-| 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
-| 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
+| 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
+| 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
+| 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
+| 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
+| 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
+| 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
 | 🚀 Anthropic | IT Systems Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4887952008) |
 | 🚀 Anthropic | Machine Learning Systems Engineer, Research Tools | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952079008) |
 | 🚀 Anthropic | Security Software Engineer, D&R Platform | San Francisco, CA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4595463008) |
@@ -388,10 +388,10 @@
 | 🔥 Stripe | Software Engineer, Core Infrastructure | Sydney | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7409386) |
 | 🔥 Stripe | Software Engineering, New Grad | Singapore | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7176977) |
 | 🔥 Stripe | Software Engineer, Money Movement  | London | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7208537) |
-| 🔥 Stripe | Software Engineer, New Grad | San Francisco, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | 🔥 Stripe | Software Engineer, New Grad | Dublin | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7206515) |
 | 🔥 Stripe | Software Engineer, New Grad | Barcelona | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7213871) |
 | 🔥 Stripe | Software Engineer, New Grad | Toronto | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7206505) |
+| 🔥 Stripe | Software Engineer, New Grad | San Francisco, Seattle | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | 🔥 Stripe | Software Engineer, Operations Platform | Bengaluru, India | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7108247) |
 | 🔥 Stripe | Software Engineer, Sales Systems | Bengaluru, India | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7525368) |
 | 🔥 Stripe | Software Engineer,Service Ecosystem Sustainability  | Bengaluru | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6967304) |
@@ -400,7 +400,7 @@
 | 🚀 SoFi | Software Engineer, AI Financial Actions | Seattle, Washington; San Francisco, CA | 5 days ago | [Apply](https://sofi.com/careers/job/7585172003?gh_jid=7585172003) |
 | 🔥 Airbnb | iOS Software Engineer, Listing Clients | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7438414?gh_jid=7438414) |
 | 🔥 Airbnb | iOS Software Engineer, Guest & Host | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7336167?gh_jid=7336167) |
-| 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
+| 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | 🔥 Lyft | Software Engineer, Customer Care | Toronto, Canada | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8359671002?gh_jid=8359671002) |
 | 🚀 Affirm | Software Engineer, Early Career | London | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579641003) |
 | 🚀 Cloudflare | Systems Engineer - Traffic Management  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7469429?gh_jid=7469429) |
@@ -833,7 +833,7 @@
 | 🚀 Asana | Security Engineer, Detection Engineering | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7350641?gh_jid=7350641) |
 | 🚀 Asana | Security Engineer, Red Team  | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192729?gh_jid=7192729) |
 | 🚀 Asana | Security Engineer, Threat Response | Warsaw | 3 days ago | [Apply](https://www.asana.com/jobs/apply/7192741?gh_jid=7192741) |
-| 🚀 MongoDB | Site Reliability Engineer 3 | New York City | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
+| 🚀 MongoDB | Site Reliability Engineer 3 | New York City | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
 | 🚀 Anthropic | Application Security Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4502508008) |
 | 🚀 Anthropic | Infrastructure Engineer, Sandboxing | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5030680008) |
 | 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
@@ -915,8 +915,8 @@
 | 🚀 SpaceX | Summer 2026 Graduate Engineer | Flexible - Any SpaceX Site | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8149273002?gh_jid=8149273002) |
 | 🚀 SpaceX | NDE Inspector Radiographic Trainee (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002) |
 | Intercom | Early Careers and Partnerships Recruiter | Dublin, Ireland | 4 days ago | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7538382) |
-| 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7456081) |
 | 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=5902523) |
+| 🔥 Stripe | Operations Associate, Financial Crimes (AML Investigations) | Mexico City | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7456081) |
 | Flexport | Air Operations Associate | Bangkok, Bangkok, Thailand | 6 days ago | [Apply](https://boards.greenhouse.io/flexport/jobs/7529422?gh_jid=7529422) |
 | 🚀 GitLab | Associate Support Engineer (AMER - PST / MST) | Remote, Canada; Remote, Chile; Remote, Costa Rica; Remote, Mexico; Remote, US | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8231973002) |
 | 🚀 GitLab | Associate Support Engineer (EMEA) | Remote, EMEA | 2026-01-09 | [Apply](https://job-boards.greenhouse.io/gitlab/jobs/8324426002) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 13:27:33 UTC*
+*Last updated: 2026-01-18 13:50:43 UTC*

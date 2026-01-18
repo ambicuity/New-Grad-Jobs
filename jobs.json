@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T13:27:33.621190",
+    "generated_at": "2026-01-18T13:50:43.133104",
     "total_jobs": 855,
     "categories": [
       {
@@ -75,7 +75,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310",
       "posted_at": "2026-01-17T13:41:50",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1051,7 +1051,7 @@
       "location": "Montreal, Canada",
       "url": "https://unity.com/careers/positions/7523815?gh_jid=7523815",
       "posted_at": "2026-01-16T13:47:36",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1077,7 +1077,7 @@
       "location": "Remote, USA",
       "url": "https://unity.com/careers/positions/7435121?gh_jid=7435121",
       "posted_at": "2026-01-16T13:47:36",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1103,7 +1103,7 @@
       "location": "Remote, Canada",
       "url": "https://unity.com/careers/positions/7523810?gh_jid=7523810",
       "posted_at": "2026-01-16T13:47:36",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1129,7 +1129,7 @@
       "location": "Remote, USA",
       "url": "https://unity.com/careers/positions/7435113?gh_jid=7435113",
       "posted_at": "2026-01-16T13:47:33",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1155,7 +1155,7 @@
       "location": "Remote, Canada",
       "url": "https://unity.com/careers/positions/7523945?gh_jid=7523945",
       "posted_at": "2026-01-16T13:47:33",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1181,7 +1181,7 @@
       "location": "Mountain View, California; San Francisco, California",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8378574002",
       "posted_at": "2026-01-16T13:37:01",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6755,7 +6755,7 @@
       "location": "New York City",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7145126",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -6781,7 +6781,7 @@
       "location": "New York City",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7460387",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6807,7 +6807,7 @@
       "location": "San Francisco",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7235322",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6833,7 +6833,7 @@
       "location": "Sydney",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7253772",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6859,7 +6859,7 @@
       "location": "Dublin",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=6677731",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6885,7 +6885,7 @@
       "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6911,7 +6911,7 @@
       "location": "British Columbia; Calgary",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-01-14T13:41:20",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12561,7 +12561,7 @@
       "company": "Stripe",
       "title": "Operations Associate, Financial Crimes (AML Investigations)",
       "location": "Mexico City",
-      "url": "https://stripe.com/jobs/search?gh_jid=7456081",
+      "url": "https://stripe.com/jobs/search?gh_jid=5902523",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -12589,7 +12589,7 @@
       "company": "Stripe",
       "title": "Operations Associate, Financial Crimes (AML Investigations)",
       "location": "Mexico City",
-      "url": "https://stripe.com/jobs/search?gh_jid=5902523",
+      "url": "https://stripe.com/jobs/search?gh_jid=7456081",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -12809,34 +12809,6 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-san-francisco,-seattle",
-      "company": "Stripe",
-      "title": "Software Engineer, New Grad",
-      "location": "San Francisco, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
-      "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "stripe-software-engineer,-new-grad-dublin",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
@@ -12898,6 +12870,34 @@
       "title": "Software Engineer, New Grad",
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=7206505",
+      "posted_at": "2026-01-12T16:58:24",
+      "posted_display": "5 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "stripe-software-engineer,-new-grad-san-francisco,-seattle",
+      "company": "Stripe",
+      "title": "Software Engineer, New Grad",
+      "location": "San Francisco, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -13147,7 +13147,7 @@
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7485068003",
       "posted_at": "2026-01-12T13:33:25",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
