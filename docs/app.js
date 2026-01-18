@@ -729,3 +729,4 @@ async function init() {
 
 // Start the app
 document.addEventListener('DOMContentLoaded', init);
+// Force rebuild Sat Jan 17 18:46:08 CST 2026
