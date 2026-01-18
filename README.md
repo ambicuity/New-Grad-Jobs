@@ -87,7 +87,7 @@
 | 🚀 Cloudflare | Systems Engineer - Browser Isolation | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7346457?gh_jid=7346457) |
 | 🚀 Cloudflare | Systems Engineer, Cloudflare Tunnel | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343801?gh_jid=7343801) |
 | 🚀 Cloudflare | Systems Engineer, Gateway | Hybrid | 1 day ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343763?gh_jid=7343763) |
-| 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
+| 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
 | 🚀 Okta | Solutions Engineering Associate, Auth0 | Georgia; Massachusetts; New York, New York; Washington, DC | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361) |
 | 🚀 Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
 | 🚀 Samsara | (New Grad) Software Engineering | London - UK2 | 2 days ago | [Apply](https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002) |
@@ -186,7 +186,7 @@
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Seattle, SF | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7528260) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 Anthropic | Software Engineer, Enterprise Foundations | San Francisco, CA \| New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4667572008) |
-| 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
+| 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
 | 🚀 MongoDB | Software Engineer 3, Query Execution | Dublin | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7533978) |
 | 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
@@ -371,7 +371,7 @@
 | 🚀 Instacart | Software Engineer II, Marketing Enablement & Technology | United States - Remote | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=7450259) |
 | 🚀 Figma | Software Engineer, Web Platform | San Francisco, CA • New York, NY • United States | 4 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004) |
 | 🚀 Chime | Software Engineer, Financial Platform | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8183064002?gh_jid=8183064002) |
-| 🚀 Cloudflare | Software Engineer, Testing at Scale Org  | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7532643?gh_jid=7532643) |
+| 🚀 Cloudflare | Software Engineer, Testing at Scale Org  | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7532643?gh_jid=7532643) |
 | 🚀 Airtable | Software Engineer, Infrastructure (2-8 YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 5 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845293002) |
 | 🚀 Airtable | Software Engineer, Observability | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 5 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8182781002) |
 | 🚀 Cloudflare | Systems Engineer, Data | Hybrid | 5 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453) |
@@ -402,7 +402,7 @@
 | 🔥 Airbnb | iOS Software Engineer, Guest & Host | Remote, USA | 5 days ago | [Apply](https://careers.airbnb.com/positions/7336167?gh_jid=7336167) |
 | 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | 🔥 Lyft | Software Engineer, Customer Care | Toronto, Canada | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8359671002?gh_jid=8359671002) |
-| 🚀 Affirm | Software Engineer, Early Career | London | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579641003) |
+| 🚀 Affirm | Software Engineer, Early Career | London | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579641003) |
 | 🚀 Cloudflare | Systems Engineer - Traffic Management  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7469429?gh_jid=7469429) |
 | 🔥 Lyft | Software Engineer, Backend | Ukraine Anywhere | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8366705002?gh_jid=8366705002) |
 | 🚀 Upstart | Software Engineer, Core Pricing | United States \| Remote | 6 days ago | [Apply](https://careers.upstart.com/jobs?gh_jid=7103246) |
@@ -992,4 +992,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 11:50:22 UTC*
+*Last updated: 2026-01-18 12:02:31 UTC*
