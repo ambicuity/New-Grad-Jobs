@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T19:49:07.019438",
-    "total_jobs": 855,
+    "generated_at": "2026-01-18T20:00:28.568463",
+    "total_jobs": 853,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 630
+        "count": 628
       },
       {
         "id": "data_ml",
@@ -469,7 +469,7 @@
       "location": "Berlin, Germany",
       "url": "https://job-boards.greenhouse.io/intercom/jobs/7371989",
       "posted_at": "2026-01-16T19:55:45",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -5781,7 +5781,7 @@
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7540514",
       "posted_at": "2026-01-14T19:49:43",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -22806,58 +22806,6 @@
       "url": "https://boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004",
       "posted_at": "2025-11-20T11:37:36",
       "posted_display": "2025-11-20",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "pinterest-software-engineer,-backend-mexico-city,-mx;-remote,-mx",
-      "company": "Pinterest",
-      "title": "Software Engineer, Backend",
-      "location": "Mexico City, MX; Remote, MX",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=5039778",
-      "posted_at": "2025-11-19T19:54:18",
-      "posted_display": "2025-11-19",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "pinterest--software-engineer-ii,-full-stack-mexico-city,-mx;-remote,-mx",
-      "company": "Pinterest",
-      "title": " Software Engineer II, Full Stack",
-      "location": "Mexico City, MX; Remote, MX",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6142084",
-      "posted_at": "2025-11-19T19:54:18",
-      "posted_display": "2025-11-19",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
