@@ -188,10 +188,10 @@
 | 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
 | 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
 | 🚀 MongoDB | Software Engineer 3, Query Execution | Dublin | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7533978) |
-| 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
-| 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
-| 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
-| 🚀 Roblox | Software Engineer, Reliability  | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7269377?gh_jid=7269377) |
+| 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
+| 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
+| 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
+| 🚀 Roblox | Software Engineer, Reliability  | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7269377?gh_jid=7269377) |
 | 🚀 Instacart | Software Engineer II, Paid MarTech |  Canada - Remote (ON, AB or BC Only) | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=6461659) |
 | 🚀 Instacart | Software Engineer II-  Frontend, Core Experience  | Canada - Remote (ON, AB, BC, or NS Only) | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=6907655) |
 | 🚀 Instacart | Software Engineer II | Canada - Remote (ON, AB, BC, or NS Only) | 4 days ago | [Apply](https://instacart.careers/job/?gh_jid=6209738) |
@@ -690,12 +690,12 @@
 | 🚀 Waymo | Machine Learning Engineer, Audio Perception | Mountain View, CA, USA; San Francisco, CA, USA | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7248697) |
 | New Relic | Machine Learning Engineer | Bangalore, India | 3 days ago | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/4650154008) |
 | 🔥 Block (Square) | Machine Learning Engineer (Modeling), Families Risk | Bay Area, CA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/4947767008?gh_jid=4947767008) |
-| 🚀 Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
-| 🚀 Roblox | Data Scientist - Analytical Data Product - Social (Temporary) | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7276845?gh_jid=7276845) |
-| 🚀 Roblox | Data Scientist, Creator Content | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7345143?gh_jid=7345143) |
-| 🚀 Roblox | Data Scientist, Creator Success | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7371463?gh_jid=7371463) |
-| 🚀 Roblox | Data Scientist, People Analytics | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7125944?gh_jid=7125944) |
-| 🚀 Roblox | Data Scientist, People Science | San Mateo, CA, United States | 3 days ago | [Apply](https://careers.roblox.com/jobs/7346551?gh_jid=7346551) |
+| 🚀 Roblox | [2026] Data Scientist, Social - PhD Early Career | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
+| 🚀 Roblox | Data Scientist - Analytical Data Product - Social (Temporary) | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7276845?gh_jid=7276845) |
+| 🚀 Roblox | Data Scientist, Creator Content | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7345143?gh_jid=7345143) |
+| 🚀 Roblox | Data Scientist, Creator Success | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7371463?gh_jid=7371463) |
+| 🚀 Roblox | Data Scientist, People Analytics | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7125944?gh_jid=7125944) |
+| 🚀 Roblox | Data Scientist, People Science | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7346551?gh_jid=7346551) |
 | Sumo Logic | Machine Learning Engineer | United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306807) |
 | 🚀 Discord | Data Scientist, Analytics - Ads Reporting | San Francisco Bay Area | 4 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8343789002) |
 | 🚀 Waymo | ML Engineer, Foundation Model Infrastructure | Mountain View, CA, USA; Remote US | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536801) |
@@ -823,7 +823,7 @@
 | 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
 | 🚀 SpaceX | Network Engineer (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002) |
 | 🚀 Datadog | Security Engineer II, Threat Detection | Paris, France | 3 days ago | [Apply](https://careers.datadoghq.com/detail/7379791/?gh_jid=7379791) |
-| 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
+| 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
 | Checkr | Security Engineer | Denver, Colorado, United States; San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7342475) |
 | 🚀 Airtable | Product Security Engineer | San Francisco, CA; Remote (Seattle, WA only) | 4 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8194662002) |
 | 🚀 Asana | Corporate Security Engineer | San Francisco | 4 days ago | [Apply](https://www.asana.com/jobs/apply/7441441?gh_jid=7441441) |
@@ -989,4 +989,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 21:28:05 UTC*
+*Last updated: 2026-01-18 21:43:29 UTC*
