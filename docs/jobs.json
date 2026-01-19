@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T22:52:29.559577",
+    "generated_at": "2026-01-19T23:15:12.204413",
     "total_jobs": 842,
     "categories": [
       {
@@ -3809,11 +3809,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -3837,11 +3837,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4117,11 +4117,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4145,11 +4145,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4201,11 +4201,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4229,11 +4229,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -7921,11 +7921,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
+      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
+      "location": "London, England, United Kingdom",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -7947,11 +7947,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
+      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "London, England, United Kingdom",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -8029,7 +8029,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -8055,7 +8055,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -16907,11 +16907,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
+      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -16935,11 +16935,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
+      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",

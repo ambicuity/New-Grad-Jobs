@@ -506,8 +506,8 @@
 | 🚀 SpaceX | IT Systems Engineer, Launch | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8233514002?gh_jid=8233514002) |
 | 🚀 SpaceX | IT Systems Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002) |
 | 🚀 SpaceX | Power Systems Engineer (Starship Avionics) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002) |
-| 🚀 SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002) |
 | 🚀 SpaceX | Security Software Engineer (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002) |
+| 🚀 SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002) |
 | 🚀 SpaceX | Security Software Engineer (Starshield) | Washington, DC | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8225074002?gh_jid=8225074002) |
 | 🚀 SpaceX | Security Software Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002) |
 | 🚀 SpaceX | Software Engineer | McGregor, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324788002?gh_jid=8324788002) |
@@ -698,12 +698,12 @@
 | 🚀 Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7488508) |
 | 🚀 Waymo | Data Scientist | Mountain View, California, USA; San Francisco, California, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455592) |
 | 🚀 Waymo | Data Scientist  | Mountain View, California, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6608598) |
-| 🚀 Waymo | Machine Learning Engineer | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
 | 🚀 Waymo | Machine Learning Engineer | London, England, United Kingdom | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7474033) |
+| 🚀 Waymo | Machine Learning Engineer | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
 | 🚀 Waymo | Machine Learning Engineer, ADV Systems | Mountain View, California, United States, San Francisco, California, United States | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446320) |
 | 🚀 Waymo | Machine Learning Engineer, Data & Systems  | Mountain View, California, United States, San Francisco, California, United States | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7446301) |
-| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429791) |
 | 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429811) |
+| 🚀 Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429791) |
 | 🚀 Waymo | Machine Learning Engineer, Mapping | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7090492) |
 | 🚀 Waymo | Machine Learning Engineer, ML Flywheel | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426598) |
 | 🚀 Waymo | Machine Learning Engineer, ML Resources | Mountain View, CA, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7424806) |
@@ -774,8 +774,8 @@
 | 🚀 Anthropic | People Analytics Data Engineer | San Francisco, CA \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956333008) |
 | 🚀 SpaceX | Data Engineer (Direct To Cell) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186579002?gh_jid=8186579002) |
 | 🚀 SpaceX | Data Engineer, Ground Network Engineering (Gateway)  | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002) |
-| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002) |
 | 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002) |
+| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002) |
 | 🚀 Anthropic | Analytics Data Engineer | San Francisco, CA \| New York City, NY \| Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956672008) |
 | 🚀 Waymo | Data Engineer | Mountain View, California, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438328) |
 | 🚀 Brex | Data Engineer | San Francisco, California, United States | 5 days ago | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
@@ -888,11 +888,11 @@
 | 🚀 Reddit | On Campus Ambassador, Philippines (Contractor) | Remote - Philippines | 4 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090134) |
 | 🚀 SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
-| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
+| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
@@ -979,4 +979,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 22:52:29 UTC*
+*Last updated: 2026-01-19 23:15:12 UTC*
