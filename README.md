@@ -133,7 +133,7 @@
 | 🚀 Reddit | Software Engineer, Ads | Remote - United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6469397) |
 | 🚀 Reddit | Software Engineer, Ads | Remote - Ontario, Canada | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/6512458) |
 | 🚀 Anthropic | Software Engineer, ML Networking | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4926242008) |
-| 🚀 Anthropic | Machine Learning Systems Engineer, RL Engineering | San Francisco, CA \| New York City, NY \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952051008) |
+| 🚀 Anthropic | Machine Learning Systems Engineer, RL Engineering | San Francisco, CA \| New York City, NY \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4952051008) |
 | 🚀 Anthropic | Software Engineer, Accelerator Build Infrastructure | San Francisco, CA \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4943668008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Bay Area, CA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Seattle, WA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008) |
@@ -160,8 +160,8 @@
 | 🚀 SpaceX | OS/Platform Software Engineer (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8202579002?gh_jid=8202579002) |
 | 🚀 SpaceX | RF Software Engineer (Starshield)  | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8200227002?gh_jid=8200227002) |
 | 🚀 SpaceX | Satellite Systems Software Engineer (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213757002?gh_jid=8213757002) |
-| 🚀 SpaceX | Security Software Engineer | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002) |
 | 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171587002?gh_jid=8171587002) |
+| 🚀 SpaceX | Security Software Engineer | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002) |
 | 🚀 SpaceX | Security Software Engineer (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8165986002?gh_jid=8165986002) |
 | 🚀 SpaceX | Software Engineer, Beam Planning (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186590002?gh_jid=8186590002) |
 | 🚀 SpaceX | Software Engineer (Components) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002) |
@@ -172,8 +172,8 @@
 | 🚀 SpaceX | Software Engineer (Dynamics) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8207970002?gh_jid=8207970002) |
 | 🚀 SpaceX | Software Engineer, Embedded Software (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166009002?gh_jid=8166009002) |
 | 🚀 SpaceX | Software Engineer, Flight Software (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166002002?gh_jid=8166002002) |
-| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002) |
 | 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002) |
+| 🚀 SpaceX | Software Engineer, Flight Software (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002) |
 | 🚀 SpaceX | Software Engineer, Geospatial Data (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8085781002?gh_jid=8085781002) |
 | 🚀 SpaceX | Software Engineer, GNC Simulations (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8067647002?gh_jid=8067647002) |
 | 🚀 SpaceX | Software Engineer, GNC (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8151502002?gh_jid=8151502002) |
@@ -508,8 +508,8 @@
 | 🚀 SpaceX | IT Systems Engineer, Launch | Starbase, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8233514002?gh_jid=8233514002) |
 | 🚀 SpaceX | IT Systems Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002) |
 | 🚀 SpaceX | Power Systems Engineer (Starship Avionics) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002) |
-| 🚀 SpaceX | Security Software Engineer (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002) |
 | 🚀 SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002) |
+| 🚀 SpaceX | Security Software Engineer (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002) |
 | 🚀 SpaceX | Security Software Engineer (Starshield) | Washington, DC | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8225074002?gh_jid=8225074002) |
 | 🚀 SpaceX | Security Software Engineer - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002) |
 | 🚀 SpaceX | Software Engineer | McGregor, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8324788002?gh_jid=8324788002) |
@@ -773,11 +773,11 @@
 |---------|------|----------|--------|-------|
 | 🔥 Stripe | Data Engineer, Data Engineering Solutions | Bengaluru | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7529428) |
 | 🚀 Anthropic | Data Engineer, Economic Research | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5071132008) |
-| 🚀 Anthropic | People Analytics Data Engineer | San Francisco, CA \| Seattle, WA | 3 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956333008) |
+| 🚀 Anthropic | People Analytics Data Engineer | San Francisco, CA \| Seattle, WA | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956333008) |
 | 🚀 SpaceX | Data Engineer (Direct To Cell) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186579002?gh_jid=8186579002) |
 | 🚀 SpaceX | Data Engineer, Ground Network Engineering (Gateway)  | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002) |
-| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002) |
 | 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002) |
+| 🚀 SpaceX | Data Engineer, Regulatory (Starlink) | Washington, DC | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002) |
 | 🚀 Anthropic | Analytics Data Engineer | San Francisco, CA \| New York City, NY \| Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4956672008) |
 | 🚀 Waymo | Data Engineer | Mountain View, California, USA | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438328) |
 | 🚀 Brex | Data Engineer | San Francisco, California, United States | 5 days ago | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
@@ -811,8 +811,8 @@
 | 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
 | 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
 | 🚀 SpaceX | Network Security Engineer | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208775002?gh_jid=8208775002) |
-| 🚀 SpaceX | Security Engineer (Security Operations) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002) |
 | 🚀 SpaceX | Security Engineer (Security Operations) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002) |
+| 🚀 SpaceX | Security Engineer (Security Operations) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002) |
 | 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
 | 🚀 SpaceX | Network Engineer (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002) |
 | 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
@@ -825,8 +825,8 @@
 | 🚀 MongoDB | Site Reliability Engineer 3 | New York City | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
 | 🚀 Anthropic | Application Security Engineer | Remote-Friendly (Travel-Required) \| San Francisco, CA \| Seattle, WA \| New York City, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4502508008) |
 | 🚀 Anthropic | Infrastructure Engineer, Sandboxing | San Francisco, CA \| New York City, NY \| Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5030680008) |
-| 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
 | 🚀 Anthropic | Security Engineer, Detection & Response | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4982193008) |
+| 🚀 Anthropic | Security Engineer, Detection & Response | London, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4596677008) |
 | 🚀 Anthropic | Security Engineer, Operating Systems | San Francisco, CA \| New York City, NY \| Seattle, WA | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4929693008) |
 | 🚀 Anthropic | Software Security Engineer | Zürich, CH | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5056795008) |
 | 🚀 Waymo | Network Engineer  | London, UK | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7435901) |
@@ -890,8 +890,8 @@
 | 🚀 Reddit | On Campus Ambassador, Philippines (Contractor) | Remote - Philippines | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7090134) |
 | 🚀 SpaceX | NDE Inspector Trainee (Starship) | Starbase, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8187492002?gh_jid=8187492002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136339002?gh_jid=8136339002) |
-| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
+| 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
@@ -917,9 +917,9 @@
 | Flexport | Air Operations Associate, Hanoi | Hanoi, Hanoi, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366306?gh_jid=7366306) |
 | Flexport | Air Operations Associate, Ho Chi Minh City | Ho Chi Minh City, Ho Chi Minh City, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366295?gh_jid=7366295) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
-| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
-| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Intercom | Graduate Product Engineer Dublin, 2026 | Dublin, Ireland; London, England | 2025-12-16 | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7317849) |
 | 🔥 Lyft | Stagiaire en Génie Industriel (Été 2026) | Longueuil, Canada | 2025-12-11 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8332244002?gh_jid=8332244002) |
@@ -981,4 +981,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 19:20:41 UTC*
+*Last updated: 2026-01-19 19:37:33 UTC*

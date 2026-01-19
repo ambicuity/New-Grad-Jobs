@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T19:20:41.392154",
+    "generated_at": "2026-01-19T19:37:33.107131",
     "total_jobs": 844,
     "categories": [
       {
@@ -3065,7 +3065,7 @@
       "location": "San Francisco, CA | New York City, NY | Seattle, WA",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/4952051008",
       "posted_at": "2026-01-15T19:31:25",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -3091,7 +3091,7 @@
       "location": "San Francisco, CA | Seattle, WA",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/4956333008",
       "posted_at": "2026-01-15T19:30:32",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_engineering",
@@ -3727,11 +3727,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -3755,11 +3755,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4035,11 +4035,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4063,11 +4063,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4427,34 +4427,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Security Engineer (Security Operations)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
-      "posted_at": "2026-01-15T13:23:19",
-      "posted_display": "4 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-security-engineer-(security-operations)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Engineer (Security Operations)",
@@ -4483,11 +4455,39 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-redmond,-wa",
+      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Security Engineer (Security Operations)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
+      "posted_at": "2026-01-15T13:23:19",
+      "posted_display": "4 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-security-software-engineer-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Security Software Engineer",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8171587002?gh_jid=8171587002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4511,11 +4511,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-hawthorne,-ca",
+      "id": "spacex-security-software-engineer-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Software Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8171587002?gh_jid=8171587002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8171600002?gh_jid=8171600002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4847,11 +4847,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
+      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4875,11 +4875,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -7273,11 +7273,11 @@
       "is_closed": false
     },
     {
-      "id": "anthropic-security-engineer,-detection-&-response-london,-uk",
+      "id": "anthropic-security-engineer,-detection-&-response-san-francisco,-ca-|-new-york-city,-ny-|-seattle,-w",
       "company": "Anthropic",
       "title": "Security Engineer, Detection & Response",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4596677008",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4982193008",
       "posted_at": "2026-01-14T13:17:10",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -7299,11 +7299,11 @@
       "is_closed": false
     },
     {
-      "id": "anthropic-security-engineer,-detection-&-response-san-francisco,-ca-|-new-york-city,-ny-|-seattle,-w",
+      "id": "anthropic-security-engineer,-detection-&-response-london,-uk",
       "company": "Anthropic",
       "title": "Security Engineer, Detection & Response",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4982193008",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4596677008",
       "posted_at": "2026-01-14T13:17:10",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -16457,11 +16457,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-bastrop,-tx",
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -16513,11 +16513,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -16961,11 +16961,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
+      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -16989,11 +16989,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
+      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
