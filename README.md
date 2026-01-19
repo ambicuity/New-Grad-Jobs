@@ -110,7 +110,7 @@
 | 🚀 Twilio | Software Engineer- L2 | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7406218) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7188174) |
 | 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
-| 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 2 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
+| 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
 | 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 3 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7414993) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415013) |
@@ -160,8 +160,8 @@
 | 🚀 SpaceX | Software Engineer, Beam Planning (Starshield) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8186590002?gh_jid=8186590002) |
 | 🚀 SpaceX | Software Engineer (Components) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002) |
 | 🚀 SpaceX | Software Engineer, Data - Top Secret Clearance 🇺🇸 | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8196386002?gh_jid=8196386002) |
-| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002) |
 | 🚀 SpaceX | Software Engineer, Design Software (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002) |
+| 🚀 SpaceX | Software Engineer, Design Software (Starship) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002) |
 | 🚀 SpaceX | Software Engineer (Direct To Cell) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8170023002?gh_jid=8170023002) |
 | 🚀 SpaceX | Software Engineer (Dynamics) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8207970002?gh_jid=8207970002) |
 | 🚀 SpaceX | Software Engineer, Embedded Software (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8166009002?gh_jid=8166009002) |
@@ -900,8 +900,8 @@
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002) |
 | 🚀 SpaceX | New Graduate Engineer, Electrical (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Cape Canaveral)  | Cape Canaveral, FL | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002) |
-| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002) |
+| 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143964002?gh_jid=8143964002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Raptor) | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8136948002?gh_jid=8136948002) |
 | 🚀 SpaceX | New Graduate Engineer, Propulsion (Starship) | Starbase, TX | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8143997002?gh_jid=8143997002) |
@@ -925,8 +925,8 @@
 | Flexport | Air Operations Associate, Hanoi | Hanoi, Hanoi, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366306?gh_jid=7366306) |
 | Flexport | Air Operations Associate, Ho Chi Minh City | Ho Chi Minh City, Ho Chi Minh City, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366295?gh_jid=7366295) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
-| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
 | 🚀 Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
 | Intercom | Graduate Product Engineer Dublin, 2026 | Dublin, Ireland; London, England | 2025-12-16 | [Apply](https://job-boards.greenhouse.io/intercom/jobs/7317849) |
@@ -989,4 +989,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 05:47:38 UTC*
+*Last updated: 2026-01-19 06:03:29 UTC*
