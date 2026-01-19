@@ -110,7 +110,7 @@
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7188174) |
 | 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
 | 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 2 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
-| 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 2 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
+| 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 3 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | San Francisco, CA | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7414993) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | New York City, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415013) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | Remote - United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415052) |
@@ -813,7 +813,7 @@
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 2 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Poland | 2 days ago | [Apply](https://jobs.dropbox.com/listing/7508176?gh_jid=7508176) |
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Mexico | 2 days ago | [Apply](https://jobs.dropbox.com/listing/7508179?gh_jid=7508179) |
-| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
+| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 3 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
 | 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
 | 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
 | 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
@@ -989,4 +989,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-18 23:50:36 UTC*
+*Last updated: 2026-01-19 00:54:02 UTC*
