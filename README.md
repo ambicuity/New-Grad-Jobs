@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/jobs-847-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![Jobs](https://img.shields.io/badge/jobs-846-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
@@ -12,9 +12,9 @@
 
 ---
 
-## 📂 Browse 847 Jobs by Category
+## 📂 Browse 846 Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (623)
+💻 [Software Engineering](#software-engineering) (622)
 
 🤖 [Data Science & ML](#data-science--ml) (91)
 
@@ -46,6 +46,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| 🚀 Twilio | Software Engineer, Commerce Platform  | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070269) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7359642) |
 | 🚀 Twilio | Software Engineer- Video Signalling (Java and Rust) | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7394811) |
 | 🚀 Twilio | Cloud Software Engineer | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7484699) |
@@ -59,7 +60,6 @@
 | 🚀 Unity Technologies | Software Engineer, Embedded Android | Remote, Germany | Today | [Apply](https://unity.com/careers/positions/7189304?gh_jid=7189304) |
 | 🚀 Elastic | Full Stack Software Engineer II | Bangalore, India | Today | [Apply](https://jobs.elastic.co/jobs?gh_jid=7386039&gh_jid=7386039) |
 | 🚀 Cloudflare | Software Engineer, Network Performance & Reliability | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310) |
-| 🚀 Twilio | Software Engineer, Commerce Platform  | Remote - Ireland | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070269) |
 | 🚀 Twilio | Software Engineer | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070250) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7362957) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7472456) |
@@ -96,12 +96,12 @@
 | 🚀 Cloudflare | Systems Engineer, Gateway | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343763?gh_jid=7343763) |
 | 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
 | 🚀 Okta | Solutions Engineering Associate, Auth0 | Georgia; Massachusetts; New York, New York; Washington, DC | 3 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361) |
-| 🚀 Samsara | (New Grad) Software Engineering | London - UK2 | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002) |
 | 🚀 Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
-| 🚀 Samsara | Software Engineer, Full Stack - Safety | Remote - US | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937) |
+| 🚀 Samsara | (New Grad) Software Engineering | London - UK2 | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002) |
 | 🚀 Samsara | Software Engineer, Full Stack - Safety | Remote - Canada | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7362939?gh_jid=7362939) |
-| 🚀 Samsara | Software Engineer II | London, England, United Kingdom | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221) |
+| 🚀 Samsara | Software Engineer, Full Stack - Safety | Remote - US | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937) |
 | 🚀 Samsara | Software Engineer II | Remote - UK | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726) |
+| 🚀 Samsara | Software Engineer II | London, England, United Kingdom | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221) |
 | 🚀 Samsara | Software Engineer II, Fleet Safety | Remote - US | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7276275?gh_jid=7276275) |
 | 🚀 Samsara | Software Engineer II - Mobile Platform | San Francisco - SF9 | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7312588?gh_jid=7312588) |
 | 🚀 Samsara | Software Engineer II, New Product | Toronto, Canada | 3 days ago | [Apply](https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440) |
@@ -210,8 +210,8 @@
 | 🚀 Discord | Software Engineer, Mobile | San Francisco Bay Area | 4 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8177727002) |
 | 🚀 Discord | Software Engineer, Payments | San Francisco Bay Area | 4 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8304667002) |
 | 🚀 Discord | Software Engineer - Realtime Infrastructure | San Francisco Bay Area | 4 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8328560002) |
-| 🚀 Robinhood | Software Engineer, Streaming Infrastructure | Bellevue, WA | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770) |
-| 🚀 Dropbox | Infrastructure Software Engineer, Identity & Auth Platform | Remote - Mexico | 4 days ago | [Apply](https://jobs.dropbox.com/listing/7409359?gh_jid=7409359) |
+| 🚀 Robinhood | Software Engineer, Streaming Infrastructure | Bellevue, WA | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Identity & Auth Platform | Remote - Mexico | 5 days ago | [Apply](https://jobs.dropbox.com/listing/7409359?gh_jid=7409359) |
 | 🚀 MongoDB | Software Engineer 3 | Toronto | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7522856) |
 | 🚀 Asana | IT Network and Systems Engineer | Warsaw | 5 days ago | [Apply](https://www.asana.com/jobs/apply/7339515?gh_jid=7339515) |
 | 🚀 Asana | Junior Software Engineer | Warsaw | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6440856?gh_jid=6440856) |
@@ -220,9 +220,9 @@
 | 🚀 Asana | Software Engineer, AI Integrations | San Francisco | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6708757?gh_jid=6708757) |
 | 🚀 Asana | Software Engineer, Backend | Warsaw | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6169243?gh_jid=6169243) |
 | 🚀 Asana | Software Engineer, CI/CD | San Francisco | 5 days ago | [Apply](https://www.asana.com/jobs/apply/7299272?gh_jid=7299272) |
+| 🚀 Asana | Software Engineer, Product | Vancouver, BC | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6937795?gh_jid=6937795) |
 | 🚀 Asana | Software Engineer, Product | San Francisco | 5 days ago | [Apply](https://www.asana.com/jobs/apply/7106554?gh_jid=7106554) |
 | 🚀 Asana | Software Engineer, Product | New York City | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6751685?gh_jid=6751685) |
-| 🚀 Asana | Software Engineer, Product | Vancouver, BC | 5 days ago | [Apply](https://www.asana.com/jobs/apply/6937795?gh_jid=6937795) |
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Toronto, Canada | 5 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=6099228) |
 | 🚀 Robinhood | Software Engineer, Data Governance | Bellevue, WA | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7390553?t=gh_src=&gh_jid=7390553) |
 | 🚀 Anthropic | Software Engineer, Cybersecurity Products | San Francisco, CA \| New York City, NY \| Seattle, WA; Washington, DC | 5 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5063007008) |
@@ -418,7 +418,6 @@
 | 🔥 Airbnb | Software Engineer, KV Stores & Caching | United States | 2026-01-09 | [Apply](https://careers.airbnb.com/positions/7527407?gh_jid=7527407) |
 | 🚀 Benchling | Software Engineer, Developer Enablement | San Francisco, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/benchling/jobs/7522089?gh_jid=7522089) |
 | 🚀 SpaceX | Full Stack Software Engineer (Starshield) | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002) |
-| 🚀 Datadog | Software Engineer - Backend Generalist | Bordeaux, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/4825718/?gh_jid=4825718) |
 | 🚀 Datadog | Software Engineer - Developer Experience | Madrid, Spain; Paris, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/6092052/?gh_jid=6092052) |
 | 🚀 Datadog | Software Engineer with Systems Depth | Bordeaux, France; Grenoble, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France | 2026-01-09 | [Apply](https://careers.datadoghq.com/detail/6158712/?gh_jid=6158712) |
 | 🚀 SpaceX | Software Engineer, Displays Software (Starship) | Hawthorne, CA | 2026-01-09 | [Apply](https://boards.greenhouse.io/spacex/jobs/8345913002?gh_jid=8345913002) |
@@ -855,8 +854,8 @@
 | 🚀 Benchling | Security Engineer | San Francisco, CA | 2025-12-19 | [Apply](https://boards.greenhouse.io/benchling/jobs/7454234?gh_jid=7454234) |
 | 🚀 Grammarly | Security Engineer | Seattle; Hybrid | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7473639) |
 | 🚀 Grammarly | Security Engineer | San Francisco; Hybrid | 2025-12-17 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7473638) |
-| 🚀 Cloudflare | Application Security Engineer | In-Office | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7185996?gh_jid=7185996) |
 | 🚀 Cloudflare | Application Security Engineer | Distributed; Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7345819?gh_jid=7345819) |
+| 🚀 Cloudflare | Application Security Engineer | In-Office | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7185996?gh_jid=7185996) |
 | 🚀 Cloudflare | Security Engineer - Security Technology Delivery | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7412507?gh_jid=7412507) |
 | 🚀 Cloudflare | Systems Reliability Engineer (SRE) - Edge | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7144320?gh_jid=7144320) |
 | 🚀 Cloudflare | Systems Reliability Engineer (SRE), Edge | Hybrid | 2025-12-17 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7370630?gh_jid=7370630) |
@@ -984,4 +983,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 15:31:50 UTC*
+*Last updated: 2026-01-19 15:54:30 UTC*

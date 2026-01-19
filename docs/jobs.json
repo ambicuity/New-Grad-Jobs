@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T15:31:50.110491",
-    "total_jobs": 847,
+    "generated_at": "2026-01-19T15:54:29.955660",
+    "total_jobs": 846,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 623
+        "count": 622
       },
       {
         "id": "data_ml",
@@ -42,6 +42,32 @@
     ]
   },
   "jobs": [
+    {
+      "id": "twilio-software-engineer,-commerce-platform--remote---ireland",
+      "company": "Twilio",
+      "title": "Software Engineer, Commerce Platform ",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070269",
+      "posted_at": "2026-01-19T10:35:12",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "stripe-data-engineer,-data-engineering-solutions-bengaluru",
       "company": "Stripe",
@@ -441,32 +467,6 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310",
       "posted_at": "2026-01-17T13:41:50",
-      "posted_display": "2 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer,-commerce-platform--remote---ireland",
-      "company": "Twilio",
-      "title": "Software Engineer, Commerce Platform ",
-      "location": "Remote - Ireland",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070269",
-      "posted_at": "2026-01-17T03:59:21",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
@@ -1777,11 +1777,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-(new-grad)-software-engineering-london---uk2",
+      "id": "samsara-(new-grad)-software-engineering-san-francisco,-ca,-united-states",
       "company": "Samsara",
       "title": "(New Grad) Software Engineering",
-      "location": "London - UK2",
-      "url": "https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002",
+      "location": "San Francisco, CA, United States",
+      "url": "https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -1803,11 +1803,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-(new-grad)-software-engineering-san-francisco,-ca,-united-states",
+      "id": "samsara-(new-grad)-software-engineering-london---uk2",
       "company": "Samsara",
       "title": "(New Grad) Software Engineering",
-      "location": "San Francisco, CA, United States",
-      "url": "https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579",
+      "location": "London - UK2",
+      "url": "https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -1881,32 +1881,6 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer,-full-stack---safety-remote---us",
-      "company": "Samsara",
-      "title": "Software Engineer, Full Stack - Safety",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937",
-      "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "3 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "samsara-software-engineer,-full-stack---safety-remote---canada",
       "company": "Samsara",
       "title": "Software Engineer, Full Stack - Safety",
@@ -1933,11 +1907,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
+      "id": "samsara-software-engineer,-full-stack---safety-remote---us",
       "company": "Samsara",
-      "title": "Software Engineer II",
-      "location": "London, England, United Kingdom",
-      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
+      "title": "Software Engineer, Full Stack - Safety",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -1964,6 +1938,32 @@
       "title": "Software Engineer II",
       "location": "Remote - UK",
       "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
+      "posted_at": "2026-01-16T11:13:05",
+      "posted_display": "3 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
+      "company": "Samsara",
+      "title": "Software Engineer II",
+      "location": "London, England, United Kingdom",
+      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -6333,7 +6333,7 @@
       "location": "Bellevue, WA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770",
       "posted_at": "2026-01-14T15:46:55",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6361,7 +6361,7 @@
       "location": "Remote - Mexico",
       "url": "https://jobs.dropbox.com/listing/7409359?gh_jid=7409359",
       "posted_at": "2026-01-14T15:42:05",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6693,6 +6693,32 @@
       "is_closed": false
     },
     {
+      "id": "asana-software-engineer,-product-vancouver,-bc",
+      "company": "Asana",
+      "title": "Software Engineer, Product",
+      "location": "Vancouver, BC",
+      "url": "https://www.asana.com/jobs/apply/6937795?gh_jid=6937795",
+      "posted_at": "2026-01-14T15:29:10",
+      "posted_display": "5 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "asana-software-engineer,-product-san-francisco",
       "company": "Asana",
       "title": "Software Engineer, Product",
@@ -6724,32 +6750,6 @@
       "title": "Software Engineer, Product",
       "location": "New York City",
       "url": "https://www.asana.com/jobs/apply/6751685?gh_jid=6751685",
-      "posted_at": "2026-01-14T15:29:10",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "asana-software-engineer,-product-vancouver,-bc",
-      "company": "Asana",
-      "title": "Software Engineer, Product",
-      "location": "Vancouver, BC",
-      "url": "https://www.asana.com/jobs/apply/6937795?gh_jid=6937795",
       "posted_at": "2026-01-14T15:29:10",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -13907,32 +13907,6 @@
       "is_closed": false
     },
     {
-      "id": "datadog-software-engineer---backend-generalist-bordeaux,-france;-lyon,-france;-madrid,-spain;-nantes",
-      "company": "Datadog",
-      "title": "Software Engineer - Backend Generalist",
-      "location": "Bordeaux, France; Lyon, France; Madrid, Spain; Nantes, France; Paris, France; Sophia Antipolis, France",
-      "url": "https://careers.datadoghq.com/detail/4825718/?gh_jid=4825718",
-      "posted_at": "2026-01-09T12:55:41",
-      "posted_display": "2026-01-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "datadog-software-engineer---developer-experience-madrid,-spain;-paris,-france",
       "company": "Datadog",
       "title": "Software Engineer - Developer Experience",
@@ -19567,11 +19541,11 @@
       "is_closed": false
     },
     {
-      "id": "cloudflare-application-security-engineer-in-office",
+      "id": "cloudflare-application-security-engineer-distributed;-hybrid",
       "company": "Cloudflare",
       "title": "Application Security Engineer",
-      "location": "In-Office",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7185996?gh_jid=7185996",
+      "location": "Distributed; Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7345819?gh_jid=7345819",
       "posted_at": "2025-12-17T08:51:23",
       "posted_display": "2025-12-17",
       "source": "Greenhouse",
@@ -19593,11 +19567,11 @@
       "is_closed": false
     },
     {
-      "id": "cloudflare-application-security-engineer-distributed;-hybrid",
+      "id": "cloudflare-application-security-engineer-in-office",
       "company": "Cloudflare",
       "title": "Application Security Engineer",
-      "location": "Distributed; Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7345819?gh_jid=7345819",
+      "location": "In-Office",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7185996?gh_jid=7185996",
       "posted_at": "2025-12-17T08:51:23",
       "posted_display": "2025-12-17",
       "source": "Greenhouse",
