@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T16:28:51.909018",
-    "total_jobs": 846,
+    "generated_at": "2026-01-19T16:58:47.487018",
+    "total_jobs": 845,
     "categories": [
       {
         "id": "software_engineering",
@@ -13,7 +13,7 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16",
-        "count": 91
+        "count": 90
       },
       {
         "id": "data_engineering",
@@ -969,7 +969,7 @@
       "location": "Redmond, WA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8376990002?gh_jid=8376990002",
       "posted_at": "2026-01-16T16:46:29",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -3299,7 +3299,7 @@
       "location": "Mountain View, California ",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=6562547",
       "posted_at": "2026-01-15T16:58:21",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -3325,7 +3325,7 @@
       "location": "Taipei, Taiwan",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7540245",
       "posted_at": "2026-01-15T16:55:00",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6125,7 +6125,7 @@
       "location": "Mountain View, CA, US",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7429873",
       "posted_at": "2026-01-14T16:37:32",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6151,7 +6151,7 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/discord/jobs/8343789002",
       "posted_at": "2026-01-14T16:30:07",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -6177,7 +6177,7 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/discord/jobs/8177727002",
       "posted_at": "2026-01-14T16:30:07",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6203,7 +6203,7 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/discord/jobs/8304667002",
       "posted_at": "2026-01-14T16:30:07",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6229,7 +6229,7 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/discord/jobs/8328560002",
       "posted_at": "2026-01-14T16:30:07",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6693,11 +6693,11 @@
       "is_closed": false
     },
     {
-      "id": "asana-software-engineer,-product-new-york-city",
+      "id": "asana-software-engineer,-product-vancouver,-bc",
       "company": "Asana",
       "title": "Software Engineer, Product",
-      "location": "New York City",
-      "url": "https://www.asana.com/jobs/apply/6751685?gh_jid=6751685",
+      "location": "Vancouver, BC",
+      "url": "https://www.asana.com/jobs/apply/6937795?gh_jid=6937795",
       "posted_at": "2026-01-14T15:29:10",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -6719,11 +6719,11 @@
       "is_closed": false
     },
     {
-      "id": "asana-software-engineer,-product-vancouver,-bc",
+      "id": "asana-software-engineer,-product-new-york-city",
       "company": "Asana",
       "title": "Software Engineer, Product",
-      "location": "Vancouver, BC",
-      "url": "https://www.asana.com/jobs/apply/6937795?gh_jid=6937795",
+      "location": "New York City",
+      "url": "https://www.asana.com/jobs/apply/6751685?gh_jid=6751685",
       "posted_at": "2026-01-14T15:29:10",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -10371,7 +10371,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7181370?gh_jid=7181370",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10397,7 +10397,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7181369?gh_jid=7181369",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10423,7 +10423,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7486226?gh_jid=7486226",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -10449,7 +10449,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7486229?gh_jid=7486229",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -10475,7 +10475,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/6936210?gh_jid=6936210",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10501,7 +10501,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/6936207?gh_jid=6936207",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10527,7 +10527,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7344971?gh_jid=7344971",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10553,7 +10553,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7344968?gh_jid=7344968",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10579,7 +10579,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7344955?gh_jid=7344955",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10605,7 +10605,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7344952?gh_jid=7344952",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10631,7 +10631,7 @@
       "location": "Remote - Mexico",
       "url": "https://jobs.dropbox.com/listing/7387420?gh_jid=7387420",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10657,7 +10657,7 @@
       "location": "Remote - Poland",
       "url": "https://jobs.dropbox.com/listing/7341950?gh_jid=7341950",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10683,7 +10683,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7446067?gh_jid=7446067",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10709,7 +10709,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7446070?gh_jid=7446070",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10735,7 +10735,7 @@
       "location": "Remote - Mexico",
       "url": "https://jobs.dropbox.com/listing/7446072?gh_jid=7446072",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10761,7 +10761,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7356504?gh_jid=7356504",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10787,7 +10787,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7356507?gh_jid=7356507",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10813,7 +10813,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7053880?gh_jid=7053880",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10839,7 +10839,7 @@
       "location": "Remote - Mexico",
       "url": "https://jobs.dropbox.com/listing/7182020?gh_jid=7182020",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10865,7 +10865,7 @@
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7053876?gh_jid=7053876",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10891,7 +10891,7 @@
       "location": "Remote - Germany",
       "url": "https://jobs.dropbox.com/listing/7384405?gh_jid=7384405",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -10917,7 +10917,7 @@
       "location": "Remote - Denmark",
       "url": "https://jobs.dropbox.com/listing/7384408?gh_jid=7384408",
       "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12117,32 +12117,6 @@
       "is_closed": false
     },
     {
-      "id": "grammarly-machine-learning-engineer,-agents--san-francisco-",
-      "company": "Grammarly",
-      "title": "Machine Learning Engineer, Agents ",
-      "location": "San Francisco ",
-      "url": "https://job-boards.greenhouse.io/grammarly/jobs/7535210",
-      "posted_at": "2026-01-13T12:15:52",
-      "posted_display": "6 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "cloudflare-software-engineer,-testing-at-scale-org--hybrid",
       "company": "Cloudflare",
       "title": "Software Engineer, Testing at Scale Org ",
@@ -12553,7 +12527,7 @@
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=7357460",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12581,7 +12555,7 @@
       "location": "London",
       "url": "https://stripe.com/jobs/search?gh_jid=7516102",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12609,7 +12583,7 @@
       "location": "US - San Francisco; Seattle; New York City",
       "url": "https://stripe.com/jobs/search?gh_jid=7275014",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12637,7 +12611,7 @@
       "location": "San Francisco, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=6363655",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12665,7 +12639,7 @@
       "location": "Seattle; San Francisco; New York City",
       "url": "https://stripe.com/jobs/search?gh_jid=7079044",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12693,7 +12667,7 @@
       "location": "Mexico City",
       "url": "https://stripe.com/jobs/search?gh_jid=7456081",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -12721,7 +12695,7 @@
       "location": "Mexico City",
       "url": "https://stripe.com/jobs/search?gh_jid=5902523",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -12749,7 +12723,7 @@
       "location": "San Francisco, New York City, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7216668",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12777,7 +12751,7 @@
       "location": "Seattle, WA; San Francisco, CA; Toronto, CAN",
       "url": "https://stripe.com/jobs/search?gh_jid=7477571",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -12805,7 +12779,7 @@
       "location": "San Francisco, NY, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7277110",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12833,7 +12807,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=7365356",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12861,7 +12835,7 @@
       "location": "Singapore",
       "url": "https://stripe.com/jobs/search?gh_jid=7176977",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12889,7 +12863,7 @@
       "location": "London",
       "url": "https://stripe.com/jobs/search?gh_jid=7208537",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12917,7 +12891,7 @@
       "location": "San Francisco, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12945,7 +12919,7 @@
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=7206505",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12973,7 +12947,7 @@
       "location": "Barcelona",
       "url": "https://stripe.com/jobs/search?gh_jid=7213871",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13001,7 +12975,7 @@
       "location": "Dublin",
       "url": "https://stripe.com/jobs/search?gh_jid=7206515",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13029,7 +13003,7 @@
       "location": "Bengaluru, India",
       "url": "https://stripe.com/jobs/search?gh_jid=7108247",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13057,7 +13031,7 @@
       "location": "Bengaluru, India",
       "url": "https://stripe.com/jobs/search?gh_jid=7525368",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13085,7 +13059,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=6967304",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13113,7 +13087,7 @@
       "location": "San Francisco or New York",
       "url": "https://stripe.com/jobs/search?gh_jid=7507904",
       "posted_at": "2026-01-12T16:58:24",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13141,7 +13115,7 @@
       "location": "Seattle, Washington",
       "url": "https://sofi.com/careers/job/7583531003?gh_jid=7583531003",
       "posted_at": "2026-01-12T16:56:07",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13169,7 +13143,7 @@
       "location": "Seattle, Washington; San Francisco, CA",
       "url": "https://sofi.com/careers/job/7585172003?gh_jid=7585172003",
       "posted_at": "2026-01-12T16:49:18",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
