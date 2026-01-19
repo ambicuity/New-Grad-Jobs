@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T10:46:26.191274",
+    "generated_at": "2026-01-19T11:03:13.632834",
     "total_jobs": 853,
     "categories": [
       {
@@ -2223,7 +2223,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7000601?gh_jid=7000601",
       "posted_at": "2026-01-16T11:02:09",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -5515,7 +5515,7 @@
       "location": "Bay Area, CA, United States of America",
       "url": "http://block.xyz/careers/jobs/4947767008?gh_jid=4947767008",
       "posted_at": "2026-01-15T10:47:35",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12303,7 +12303,7 @@
       "location": "San Francisco, CA; Seattle, Washington",
       "url": "https://sofi.com/careers/job/7581781003?gh_jid=7581781003",
       "posted_at": "2026-01-13T10:47:04",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12961,11 +12961,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-barcelona",
+      "id": "stripe-software-engineer,-new-grad-dublin",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "Barcelona",
-      "url": "https://stripe.com/jobs/search?gh_jid=7213871",
+      "location": "Dublin",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206515",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -13017,11 +13017,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-dublin",
+      "id": "stripe-software-engineer,-new-grad-toronto",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "Dublin",
-      "url": "https://stripe.com/jobs/search?gh_jid=7206515",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206505",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -13045,11 +13045,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-toronto",
+      "id": "stripe-software-engineer,-new-grad-barcelona",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=7206505",
+      "location": "Barcelona",
+      "url": "https://stripe.com/jobs/search?gh_jid=7213871",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -13433,7 +13433,7 @@
       "location": "United States | Remote",
       "url": "https://careers.upstart.com/jobs?gh_jid=7103246",
       "posted_at": "2026-01-12T10:56:56",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
