@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T05:05:31.982908",
+    "generated_at": "2026-01-19T05:47:38.010307",
     "total_jobs": 852,
     "categories": [
       {
@@ -9599,7 +9599,7 @@
       "location": "Toronto, Canada",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8284517002?gh_jid=8284517002",
       "posted_at": "2026-01-14T05:41:44",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -12559,7 +12559,7 @@
       "company": "Stripe",
       "title": "Operations Associate, Financial Crimes (AML Investigations)",
       "location": "Mexico City",
-      "url": "https://stripe.com/jobs/search?gh_jid=7456081",
+      "url": "https://stripe.com/jobs/search?gh_jid=5902523",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -12587,7 +12587,7 @@
       "company": "Stripe",
       "title": "Operations Associate, Financial Crimes (AML Investigations)",
       "location": "Mexico City",
-      "url": "https://stripe.com/jobs/search?gh_jid=5902523",
+      "url": "https://stripe.com/jobs/search?gh_jid=7456081",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -12779,11 +12779,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-san-francisco,-seattle",
+      "id": "stripe-software-engineer,-new-grad-barcelona",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "San Francisco, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
+      "location": "Barcelona",
+      "url": "https://stripe.com/jobs/search?gh_jid=7213871",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -12835,11 +12835,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-barcelona",
+      "id": "stripe-software-engineer,-new-grad-toronto",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "Barcelona",
-      "url": "https://stripe.com/jobs/search?gh_jid=7213871",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206505",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -12863,11 +12863,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-toronto",
+      "id": "stripe-software-engineer,-new-grad-san-francisco,-seattle",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=7206505",
+      "location": "San Francisco, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "posted_at": "2026-01-12T16:58:24",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
