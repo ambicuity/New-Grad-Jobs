@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T11:03:13.632834",
-    "total_jobs": 853,
+    "generated_at": "2026-01-19T11:33:28.172649",
+    "total_jobs": 852,
     "categories": [
       {
         "id": "software_engineering",
@@ -19,7 +19,7 @@
         "id": "data_engineering",
         "name": "Data Engineering",
         "emoji": "\ud83d\udcca",
-        "count": 20
+        "count": 19
       },
       {
         "id": "infrastructure_sre",
@@ -1703,7 +1703,7 @@
       "location": "Georgia; Massachusetts; New York, New York; Washington, DC",
       "url": "https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361",
       "posted_at": "2026-01-16T11:14:26",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1729,7 +1729,7 @@
       "location": "Atlanta, GA",
       "url": "https://www.samsara.com/company/careers/roles/7169384?gh_jid=7169384",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1755,7 +1755,7 @@
       "location": "Phoenix, Arizona",
       "url": "https://www.samsara.com/company/careers/roles/7169397?gh_jid=7169397",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1781,7 +1781,7 @@
       "location": "London - UK2",
       "url": "https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1807,7 +1807,7 @@
       "location": "San Francisco, CA, United States",
       "url": "https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1833,7 +1833,7 @@
       "location": "Remote - NYC",
       "url": "https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1859,7 +1859,7 @@
       "location": "Remote - US",
       "url": "https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1885,7 +1885,7 @@
       "location": "Remote - Canada",
       "url": "https://www.samsara.com/company/careers/roles/7362939?gh_jid=7362939",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1911,7 +1911,7 @@
       "location": "Remote - US",
       "url": "https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1937,7 +1937,7 @@
       "location": "Remote - UK",
       "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1963,7 +1963,7 @@
       "location": "London, England, United Kingdom",
       "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1989,7 +1989,7 @@
       "location": "Remote - US",
       "url": "https://www.samsara.com/company/careers/roles/7276275?gh_jid=7276275",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2015,7 +2015,7 @@
       "location": "San Francisco - SF9",
       "url": "https://www.samsara.com/company/careers/roles/7312588?gh_jid=7312588",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2041,7 +2041,7 @@
       "location": "Toronto, Canada",
       "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2067,7 +2067,7 @@
       "location": "Remote - US",
       "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2093,7 +2093,7 @@
       "location": "Remote - Canada",
       "url": "https://www.samsara.com/company/careers/roles/7392891?gh_jid=7392891",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2119,7 +2119,7 @@
       "location": "Remote - US",
       "url": "https://www.samsara.com/company/careers/roles/7296895?gh_jid=7296895",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2145,7 +2145,7 @@
       "location": "Bengaluru - BLR1",
       "url": "https://www.samsara.com/company/careers/roles/7457904?gh_jid=7457904",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2171,7 +2171,7 @@
       "location": "Remote - SF Bay Area",
       "url": "https://www.samsara.com/company/careers/roles/7306930?gh_jid=7306930",
       "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2197,7 +2197,7 @@
       "location": "United States",
       "url": "https://job-boards.greenhouse.io/coursera/jobs/5500578004",
       "posted_at": "2026-01-16T11:09:00",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12277,7 +12277,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453",
       "posted_at": "2026-01-13T11:12:34",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13407,7 +13407,7 @@
       "location": "Ukraine Anywhere",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8366705002?gh_jid=8366705002",
       "posted_at": "2026-01-12T11:25:57",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-12",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -22703,32 +22703,6 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spotify-data-infrastructure-engineer----data-platform-london",
-      "company": "Spotify",
-      "title": "Data Infrastructure Engineer  - Data Platform",
-      "location": "London",
-      "url": "https://jobs.lever.co/spotify/deee653b-ec92-47f1-9faa-237170b32d1f",
-      "posted_at": "2025-11-28T09:01:16.969000",
-      "posted_display": "2025-11-28",
-      "source": "Lever",
-      "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
       },
       "company_tier": {
         "tier": "other",
