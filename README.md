@@ -72,7 +72,7 @@
 | 🚀 SpaceX | Wi-Fi Software Engineer (Starlink)  | Bastrop, TX | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8379209002?gh_jid=8379209002) |
 | 🚀 Palantir | Forward Deployed Software Engineer - Autonomous Systems C2 | Palo Alto, CA | 2 days ago | [Apply](https://jobs.lever.co/palantir/c62264f5-5da8-40fe-9b44-f7f0f0012e11) |
 | 🚀 Palantir | Forward Deployed Software Engineer - Autonomous Systems C2 | Seattle, WA | 2 days ago | [Apply](https://jobs.lever.co/palantir/0edf7365-49f0-4263-818a-19409ec4f430) |
-| 🚀 Cloudflare | Software Engineer, Product Growth and Experimentation | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6885717?gh_jid=6885717) |
+| 🚀 Cloudflare | Software Engineer, Product Growth and Experimentation | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6885717?gh_jid=6885717) |
 | Postman | Software Engineer (Frontend) - Ecosystems | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7580179003) |
 | 🔥 Lyft | Software Engineer, Search & AI Entry | Toronto, Canada | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8378394002?gh_jid=8378394002) |
 | 🔥 Stripe | Software Engineer, Product Security Data Platforms | Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7545459) |
@@ -137,10 +137,10 @@
 | 🔥 Block (Square) | Software Engineer, Monetization | Seattle, WA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008) |
 | 🔥 Block (Square) | Software Engineer, Monetization | Bay Area, CA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008) |
 | 🔥 Lyft | Software Engineer, Fulfillment Core Services | Seattle, WA | 3 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8362270002?gh_jid=8362270002) |
-| Postman | Frontend Software Engineer, Growth Engineering | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7359054003) |
-| Postman | Fullstack Software Engineer, Growth | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7489490003) |
-| Postman | Software Engineer, Ecosystem | San Francisco, California, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7574033003) |
-| Postman | Software Engineer, IAM | Hyderabad, Telangana, India | 3 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/5952084003) |
+| Postman | Frontend Software Engineer, Growth Engineering | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7359054003) |
+| Postman | Fullstack Software Engineer, Growth | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7489490003) |
+| Postman | Software Engineer, Ecosystem | San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7574033003) |
+| Postman | Software Engineer, IAM | Hyderabad, Telangana, India | 4 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/5952084003) |
 | 🚀 Waymo | Software Engineer, Onboard Evaluation | Mountain View, California  | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6562547) |
 | 🚀 Waymo | Software Engineer, Hardware Test and Calibration | Taipei, Taiwan | 4 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7540245) |
 | 🔥 Lyft | ML Software Engineer, Integrity | New York, NY | 4 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8375199002?gh_jid=8375199002) |
@@ -387,7 +387,7 @@
 | 🚀 SpaceX | Application Software Engineer, Data | Hawthorne, CA | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8371372002?gh_jid=8371372002) |
 | 🚀 Cloudflare | Software Engineer, Enterprise Readiness | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/6467350?gh_jid=6467350) |
 | 🚀 Affirm | Software Engineer, Backend (Marketplace Experience) | Remote US | 6 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7579879003) |
-| 🚀 SpaceX | Quality Systems Engineer (Starlink Product) | Bastrop, TX | 6 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002) |
+| 🚀 SpaceX | Quality Systems Engineer (Starlink Product) | Bastrop, TX | 2026-01-12 | [Apply](https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002) |
 | 🔥 Stripe | Software Engineer, Bridge | San Francisco, NY, Seattle | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7277110) |
 | 🔥 Stripe | Software Engineer, Change data capture | Bengaluru | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7365356) |
 | 🔥 Stripe | Software Engineering, New Grad | Singapore | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7176977) |
@@ -691,7 +691,7 @@
 | 🚀 Roblox | Data Scientist, Creator Success | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7371463?gh_jid=7371463) |
 | 🚀 Roblox | Data Scientist, People Analytics | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7125944?gh_jid=7125944) |
 | 🚀 Roblox | Data Scientist, People Science | San Mateo, CA, United States | 4 days ago | [Apply](https://careers.roblox.com/jobs/7346551?gh_jid=7346551) |
-| Sumo Logic | Machine Learning Engineer | United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306807) |
+| Sumo Logic | Machine Learning Engineer | United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306807) |
 | 🚀 Discord | Data Scientist, Analytics - Ads Reporting | San Francisco Bay Area | 5 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8343789002) |
 | 🚀 Waymo | ML Engineer, Foundation Model Infrastructure | Mountain View, CA, USA; Remote US | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536801) |
 | 🚀 Waymo | ML Engineer, Foundation Model Evaluation | Mountain View, CA, USA; Remote US | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536948) |
@@ -801,7 +801,7 @@
 |---------|------|----------|--------|-------|
 | 🚀 Anthropic | ML Infrastructure Engineer, Safeguards | San Francisco, CA | 1 day ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4778843008) |
 | 🚀 MongoDB | Product Security Engineer | Dublin | 2 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7484912) |
-| 🚀 Chime | Product Security Engineer | San Francisco, CA | 2 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
+| 🚀 Chime | Product Security Engineer | San Francisco, CA | 3 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
 | 🚀 Elastic | Platform Security - Site Reliability Engineer II | Spain | 3 days ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=7434535&gh_jid=7434535) |
 | 🚀 Elastic | Platform - Site Reliability Engineer II (Networking) | United States | 3 days ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=6950250&gh_jid=6950250) |
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
@@ -817,7 +817,7 @@
 | 🚀 SpaceX | Site Reliability Engineer, GNC (Falcon) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209991002?gh_jid=8209991002) |
 | 🚀 SpaceX | Network Engineer (Starshield) | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002) |
 | 🚀 Robinhood | Offensive Security Engineer | Bellevue, WA; Menlo Park, CA | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803) |
-| Checkr | Security Engineer | Denver, Colorado, United States; San Francisco, California, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7342475) |
+| Checkr | Security Engineer | Denver, Colorado, United States; San Francisco, California, United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/checkr/jobs/7342475) |
 | 🚀 Airtable | Product Security Engineer | San Francisco, CA; Remote (Seattle, WA only) | 5 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8194662002) |
 | 🚀 Asana | Corporate Security Engineer | San Francisco | 5 days ago | [Apply](https://www.asana.com/jobs/apply/7441441?gh_jid=7441441) |
 | 🚀 Asana | Security Engineer, Detection Engineering | Warsaw | 5 days ago | [Apply](https://www.asana.com/jobs/apply/7350641?gh_jid=7350641) |
@@ -982,4 +982,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 16:58:47 UTC*
+*Last updated: 2026-01-19 17:32:29 UTC*
