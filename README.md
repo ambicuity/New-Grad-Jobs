@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/jobs-843-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![Jobs](https://img.shields.io/badge/jobs-851-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
@@ -12,15 +12,15 @@
 
 ---
 
-## 📂 Browse 843 Jobs by Category
+## 📂 Browse 851 Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (621)
+💻 [Software Engineering](#software-engineering) (628)
 
 🤖 [Data Science & ML](#data-science--ml) (90)
 
 📊 [Data Engineering](#data-engineering) (20)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (65)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (66)
 
 🔧 [Hardware Engineering](#hardware-engineering) (2)
 
@@ -46,6 +46,13 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Sumo Logic | Software Engineer I - SRE | Noida, Uttar Pradesh, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7407235) |
+| Sumo Logic | Software Engineer I -SDET | Noida, Uttar Pradesh, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7382415) |
+| Sumo Logic | Software Engineer II | Bengaluru , Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/6580797) |
+| Sumo Logic | Software Engineer II | Noida, Uttar Pradesh, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/6580796) |
+| Sumo Logic | Software Engineer II | Noida, Uttar Pradesh, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7485849) |
+| Sumo Logic |  Software Engineer II | Bengaluru, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7522454) |
+| Sumo Logic | Software Engineer II |  India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306647) |
 | Sumo Logic | Software Engineer II | Noida, Uttar Pradesh, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306639) |
 | 🔥 Stripe | Software Engineer, Cloud Infrastructure | IN-Bengaluru | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7174299) |
 | 🚀 MongoDB | Software Engineer 3 | Gurugram | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7543827) |
@@ -54,13 +61,13 @@
 | 🚀 MongoDB | Software Engineer 3 | Toronto | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7522856) |
 | 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
 | 🚀 MongoDB | Software Engineer 3, Query Execution | Dublin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7533978) |
-| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
+| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
 | 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
 | 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
-| 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
 | 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
+| 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
 | Sumo Logic | Software Engineer II - Core Platform  | United States | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7485892) |
 | 🚀 SpaceX | Security Software Engineer | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8380536002?gh_jid=8380536002) |
 | 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8380527002?gh_jid=8380527002) |
@@ -115,7 +122,7 @@
 | 🚀 Cloudflare | Systems Engineer - Browser Isolation | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7346457?gh_jid=7346457) |
 | 🚀 Cloudflare | Systems Engineer, Cloudflare Tunnel | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343801?gh_jid=7343801) |
 | 🚀 Cloudflare | Systems Engineer, Gateway | Hybrid | 3 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7343763?gh_jid=7343763) |
-| 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
+| 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA; New York, NY | 4 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578) |
 | 🚀 Okta | Solutions Engineering Associate, Auth0 | Georgia; Massachusetts; New York, New York; Washington, DC | 4 days ago | [Apply](https://www.okta.com/company/careers/opportunity/7544361?gh_jid=7544361) |
 | 🚀 Samsara | (New Grad) Software Engineering | London - UK2 | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7336002?gh_jid=7336002) |
 | 🚀 Samsara | (New Grad) Software Engineering | San Francisco, CA, United States | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579) |
@@ -377,8 +384,8 @@
 | 🚀 Figma | Software Engineer, Web Platform | San Francisco, CA • New York, NY • United States | 6 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004) |
 | 🚀 Chime | Software Engineer, Financial Platform | San Francisco, CA | 6 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8183064002?gh_jid=8183064002) |
 | 🚀 Cloudflare | Software Engineer, Testing at Scale Org  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7532643?gh_jid=7532643) |
-| 🚀 Airtable | Software Engineer, Infrastructure (2-8 YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 6 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845293002) |
-| 🚀 Airtable | Software Engineer, Observability | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 6 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8182781002) |
+| 🚀 Airtable | Software Engineer, Infrastructure (2-8 YOE) | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 2026-01-13 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/7845293002) |
+| 🚀 Airtable | Software Engineer, Observability | San Francisco, CA; New York, NY; Remote (Seattle, WA only) | 2026-01-13 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8182781002) |
 | 🚀 Cloudflare | Systems Engineer, Data | Hybrid | 2026-01-13 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453) |
 | 🚀 SoFi | Software Engineer, Measurement & Ads | San Francisco, CA; Seattle, Washington | 2026-01-13 | [Apply](https://sofi.com/careers/job/7581781003?gh_jid=7581781003) |
 | 🔥 Block (Square) | Software Engineer- Cash App Card | Bay Area, CA, United States of America | 2026-01-13 | [Apply](http://block.xyz/careers/jobs/5065077008?gh_jid=5065077008) |
@@ -798,6 +805,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Sumo Logic | Security Engineer | Noida, India | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7412591) |
 | 🚀 MongoDB | Product Security Engineer | Dublin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7484912) |
 | 🚀 MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7145126) |
 | 🚀 Anthropic | ML Infrastructure Engineer, Safeguards | San Francisco, CA | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4778843008) |
@@ -980,4 +988,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-20 11:41:52 UTC*
+*Last updated: 2026-01-20 11:56:22 UTC*

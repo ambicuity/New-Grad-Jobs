@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T11:41:52.303187",
-    "total_jobs": 843,
+    "generated_at": "2026-01-20T11:56:22.626606",
+    "total_jobs": 851,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 621
+        "count": 628
       },
       {
         "id": "data_ml",
@@ -25,7 +25,7 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f",
-        "count": 65
+        "count": 66
       },
       {
         "id": "hardware",
@@ -42,6 +42,214 @@
     ]
   },
   "jobs": [
+    {
+      "id": "sumo-logic-security-engineer-noida,-india",
+      "company": "Sumo Logic",
+      "title": "Security Engineer",
+      "location": "Noida, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7412591",
+      "posted_at": "2026-01-20T06:49:26",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-i---sre-noida,-uttar-pradesh,-india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer I - SRE",
+      "location": "Noida, Uttar Pradesh, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7407235",
+      "posted_at": "2026-01-20T06:48:40",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-i--sdet-noida,-uttar-pradesh,-india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer I -SDET",
+      "location": "Noida, Uttar Pradesh, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7382415",
+      "posted_at": "2026-01-20T06:48:23",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-ii-bengaluru-,-karnataka,-india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer II",
+      "location": "Bengaluru , Karnataka, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/6580797",
+      "posted_at": "2026-01-20T06:47:57",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-ii-noida,-uttar-pradesh,-india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer II",
+      "location": "Noida, Uttar Pradesh, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/6580796",
+      "posted_at": "2026-01-20T06:47:56",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-ii-noida,-uttar-pradesh,-india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer II",
+      "location": "Noida, Uttar Pradesh, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7485849",
+      "posted_at": "2026-01-20T06:46:54",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic--software-engineer-ii-bengaluru,-karnataka,-india",
+      "company": "Sumo Logic",
+      "title": " Software Engineer II",
+      "location": "Bengaluru, Karnataka, India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7522454",
+      "posted_at": "2026-01-20T06:46:53",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumo-logic-software-engineer-ii--india",
+      "company": "Sumo Logic",
+      "title": "Software Engineer II",
+      "location": " India",
+      "url": "https://job-boards.greenhouse.io/sumologic/jobs/7306647",
+      "posted_at": "2026-01-20T06:46:28",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "sumo-logic-software-engineer-ii-noida,-uttar-pradesh,-india",
       "company": "Sumo Logic",
@@ -305,11 +513,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-alberta;-british-columbia;-man",
+      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-united-states",
       "company": "MongoDB",
       "title": "Software Engineer 3 (SE3), Developer Productivity (Backstage)",
-      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527311",
+      "location": "United States",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527309",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -331,11 +539,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-united-states",
+      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-alberta;-british-columbia;-man",
       "company": "MongoDB",
       "title": "Software Engineer 3 (SE3), Developer Productivity (Backstage)",
-      "location": "United States",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527309",
+      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527311",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -435,11 +643,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
+      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "British Columbia; Calgary",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
+      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -461,11 +669,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
+      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
+      "location": "British Columbia; Calgary",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2285,7 +2493,7 @@
       "location": "Menlo Park, CA; New York, NY",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&gh_jid=7263578",
       "posted_at": "2026-01-16T11:54:46",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12179,7 +12387,7 @@
       "location": "San Francisco, CA; New York, NY; Remote (Seattle, WA only)",
       "url": "https://job-boards.greenhouse.io/airtable/jobs/7845293002",
       "posted_at": "2026-01-13T11:42:58",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-13",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12205,7 +12413,7 @@
       "location": "San Francisco, CA; New York, NY; Remote (Seattle, WA only)",
       "url": "https://job-boards.greenhouse.io/airtable/jobs/8182781002",
       "posted_at": "2026-01-13T11:41:53",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-13",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
