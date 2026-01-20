@@ -64,7 +64,7 @@
 | 🚀 Cloudflare | Distributed Systems Engineer - Data Platform - Logs and Audit Logs | Hybrid | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7340469?gh_jid=7340469) |
 | 🚀 Unity Technologies | Software Engineer, Embedded Android | Vilnius, Lithuania | Today | [Apply](https://unity.com/careers/positions/7172385?gh_jid=7172385) |
 | 🚀 Unity Technologies | Software Engineer, Embedded Android | Remote, Germany | Today | [Apply](https://unity.com/careers/positions/7189304?gh_jid=7189304) |
-| 🚀 Elastic | Full Stack Software Engineer II | Bangalore, India | Today | [Apply](https://jobs.elastic.co/jobs?gh_jid=7386039&gh_jid=7386039) |
+| 🚀 Elastic | Full Stack Software Engineer II | Bangalore, India | 1 day ago | [Apply](https://jobs.elastic.co/jobs?gh_jid=7386039&gh_jid=7386039) |
 | 🚀 Cloudflare | Software Engineer, Network Performance & Reliability | Hybrid | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310) |
 | 🚀 Twilio | Software Engineer | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7070250) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7362957) |
@@ -120,7 +120,7 @@
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 3 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7188174) |
 | 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 3 days ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
 | 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
-| 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 3 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
+| 🚀 SoFi | Software Engineer, Underwriting | UT - Cottonwood Heights | 4 days ago | [Apply](https://sofi.com/careers/job/7575332003?gh_jid=7575332003) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | Chicago, IL | 4 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415003) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | Remote - United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415052) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415013) |
@@ -389,10 +389,10 @@
 | 🔥 Stripe | Software Engineer, Change data capture | Bengaluru | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7365356) |
 | 🔥 Stripe | Software Engineering, New Grad | Singapore | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7176977) |
 | 🔥 Stripe | Software Engineer, Money Movement  | London | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7208537) |
-| 🔥 Stripe | Software Engineer, New Grad | Toronto | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7206505) |
-| 🔥 Stripe | Software Engineer, New Grad | Barcelona | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7213871) |
-| 🔥 Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | 🔥 Stripe | Software Engineer, New Grad | Dublin | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7206515) |
+| 🔥 Stripe | Software Engineer, New Grad | Barcelona | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7213871) |
+| 🔥 Stripe | Software Engineer, New Grad | Toronto | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7206505) |
+| 🔥 Stripe | Software Engineer, New Grad | San Francisco, Seattle | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7210112) |
 | 🔥 Stripe | Software Engineer, Operations Platform | Bengaluru, India | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7108247) |
 | 🔥 Stripe | Software Engineer, Sales Systems | Bengaluru, India | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=7525368) |
 | 🔥 Stripe | Software Engineer,Service Ecosystem Sustainability  | Bengaluru | 2026-01-12 | [Apply](https://stripe.com/jobs/search?gh_jid=6967304) |
@@ -803,7 +803,7 @@
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 3 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Poland | 3 days ago | [Apply](https://jobs.dropbox.com/listing/7508176?gh_jid=7508176) |
 | 🚀 Dropbox | Security Engineer, Identity & Access Management | Remote - Mexico | 3 days ago | [Apply](https://jobs.dropbox.com/listing/7508179?gh_jid=7508179) |
-| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 3 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
+| 🚀 Benchling | Application Security Engineer | San Francisco, CA | 4 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7430188?gh_jid=7430188) |
 | 🚀 SpaceX | Application Security Engineer | Hawthorne, CA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8203611002?gh_jid=8203611002) |
 | 🚀 SpaceX | Network Engineer (Starlink) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8213701002?gh_jid=8213701002) |
 | 🚀 SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8209876002?gh_jid=8209876002) |
@@ -978,4 +978,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-19 23:52:14 UTC*
+*Last updated: 2026-01-20 01:06:16 UTC*
