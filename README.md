@@ -206,7 +206,7 @@
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Seattle, SF | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7528260) |
 | 🚀 Anthropic | Software Engineer, Enterprise Foundations | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4667572008) |
 | 🚀 Cloudflare | Software Engineer - Registrar   | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224) |
-| 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 4 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
+| 🚀 SpaceX | Quality Systems Engineer (Starlink Aviation) | Woodinville, WA | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002) |
 | 🚀 Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) |
 | 🚀 Roblox | Software Engineer, Creator Knowledge  | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7514717?gh_jid=7514717) |
 | 🚀 Roblox | Software Engineer, Interoperability | San Mateo, CA, United States | 5 days ago | [Apply](https://careers.roblox.com/jobs/7417005?gh_jid=7417005) |
@@ -299,8 +299,8 @@
 | 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - Canada: Select locations | 5 days ago | [Apply](https://jobs.dropbox.com/listing/7491863?gh_jid=7491863) |
 | 🚀 Dropbox | Product Backend Software Engineer, Search Platform | Remote - US: Select locations | 5 days ago | [Apply](https://jobs.dropbox.com/listing/7491860?gh_jid=7491860) |
 | 🔥 Lyft | Software Engineer, Road Safety | Toronto, Canada | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8295524002?gh_jid=8295524002) |
-| Betterment | Software Engineer, Backend | Betterment HQ - New York City | 5 days ago | [Apply](https://www.betterment.com/careers/current-openings/job?gh_jid=7220394&gh_jid=7220394) |
-| 🔥 Lyft | Software Engineer, Frontend - Mapping Experiences | Toronto, Canada | 5 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8367669002?gh_jid=8367669002) |
+| Betterment | Software Engineer, Backend | Betterment HQ - New York City | 6 days ago | [Apply](https://www.betterment.com/careers/current-openings/job?gh_jid=7220394&gh_jid=7220394) |
+| 🔥 Lyft | Software Engineer, Frontend - Mapping Experiences | Toronto, Canada | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8367669002?gh_jid=8367669002) |
 | 🚀 Brex | Software Engineer II, Activation | São Paulo, São Paulo, Brazil | 6 days ago | [Apply](https://www.brex.com/careers/8340253002?gh_jid=8340253002) |
 | 🚀 Cloudflare | Software Engineer, KV  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433) |
 | 🚀 Palantir | Software Engineer - Core Interfaces | Palo Alto, CA | 6 days ago | [Apply](https://jobs.lever.co/palantir/cf76738e-3030-42fa-92ac-a9446df956fc) |
@@ -980,4 +980,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-20 11:20:03 UTC*
+*Last updated: 2026-01-20 11:41:52 UTC*
