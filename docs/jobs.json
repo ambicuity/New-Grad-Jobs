@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T08:48:28.318260",
+    "generated_at": "2026-01-20T09:20:47.477004",
     "total_jobs": 841,
     "categories": [
       {
@@ -42,6 +42,32 @@
     ]
   },
   "jobs": [
+    {
+      "id": "mongodb-software-engineer-3-gurugram",
+      "company": "MongoDB",
+      "title": "Software Engineer 3",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7543827",
+      "posted_at": "2026-01-20T04:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "anthropic-it-systems-engineer-remote-friendly-(travel-required)-|-san-francisco,-ca-|-seattle,-wa-|-",
       "company": "Anthropic",
@@ -355,11 +381,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
+      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
+      "location": "British Columbia; Calgary",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -381,11 +407,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
+      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "British Columbia; Calgary",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
+      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -545,11 +571,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
+      "id": "samsara-software-engineer-ii,-new-product-remote---us",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Toronto, Canada",
-      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -571,11 +597,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-remote---us",
+      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
+      "location": "Toronto, Canada",
+      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2305,32 +2331,6 @@
       "is_closed": false
     },
     {
-      "id": "samsara-(new-grad)-software-engineering-san-francisco,-ca,-united-states",
-      "company": "Samsara",
-      "title": "(New Grad) Software Engineering",
-      "location": "San Francisco, CA, United States",
-      "url": "https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579",
-      "posted_at": "2026-01-16T11:13:05",
-      "posted_display": "3 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "samsara-(new-grad)-software-engineering-london---uk2",
       "company": "Samsara",
       "title": "(New Grad) Software Engineering",
@@ -2357,11 +2357,37 @@
       "is_closed": false
     },
     {
-      "id": "samsara-sales-engineer-ii---specialist-remote---nyc",
+      "id": "samsara-(new-grad)-software-engineering-san-francisco,-ca,-united-states",
+      "company": "Samsara",
+      "title": "(New Grad) Software Engineering",
+      "location": "San Francisco, CA, United States",
+      "url": "https://www.samsara.com/company/careers/roles/7172579?gh_jid=7172579",
+      "posted_at": "2026-01-16T11:13:05",
+      "posted_display": "3 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "samsara-sales-engineer-ii---specialist-remote---us",
       "company": "Samsara",
       "title": "Sales Engineer II - Specialist",
-      "location": "Remote - NYC",
-      "url": "https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -2383,11 +2409,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-sales-engineer-ii---specialist-remote---us",
+      "id": "samsara-sales-engineer-ii---specialist-remote---nyc",
       "company": "Samsara",
       "title": "Sales Engineer II - Specialist",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502",
+      "location": "Remote - NYC",
+      "url": "https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -2461,11 +2487,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
+      "id": "samsara-software-engineer-ii-remote---uk",
       "company": "Samsara",
       "title": "Software Engineer II",
-      "location": "London, England, United Kingdom",
-      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
+      "location": "Remote - UK",
+      "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -2487,11 +2513,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii-remote---uk",
+      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
       "company": "Samsara",
       "title": "Software Engineer II",
-      "location": "Remote - UK",
-      "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
+      "location": "London, England, United Kingdom",
+      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "3 days ago",
       "source": "Greenhouse",
@@ -2805,7 +2831,7 @@
       "location": "Bay Area, CA, United States of America",
       "url": "http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008",
       "posted_at": "2026-01-16T09:17:29",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -3864,32 +3890,6 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "new-relic-software-engineer-2-hyderabad,-india",
-      "company": "New Relic",
-      "title": "Software Engineer 2",
-      "location": "Hyderabad, India",
-      "url": "https://job-boards.greenhouse.io/newrelic/jobs/4920941008",
-      "posted_at": "2026-01-15T14:04:49",
-      "posted_display": "4 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
         "sectors": []
       },
       "flags": {
@@ -9757,7 +9757,7 @@
       "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
       "url": "https://www.brex.com/careers/8340253002?gh_jid=8340253002",
       "posted_at": "2026-01-14T09:13:25",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -9785,7 +9785,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433",
       "posted_at": "2026-01-14T08:58:31",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -14521,11 +14521,11 @@
       "is_closed": false
     },
     {
-      "id": "affirm-software-engineer-i,-back-end-(collections)-remote-spain",
+      "id": "affirm-software-engineer-i,-back-end-(collections)-remote-poland",
       "company": "Affirm",
       "title": "Software Engineer I, Back-end (Collections)",
-      "location": "Remote Spain",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7538090003",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7538088003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",
@@ -14549,11 +14549,11 @@
       "is_closed": false
     },
     {
-      "id": "affirm-software-engineer-i,-back-end-(collections)-remote-poland",
+      "id": "affirm-software-engineer-i,-back-end-(collections)-remote-spain",
       "company": "Affirm",
       "title": "Software Engineer I, Back-end (Collections)",
-      "location": "Remote Poland",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7538088003",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7538090003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",
@@ -14605,11 +14605,11 @@
       "is_closed": false
     },
     {
-      "id": "affirm-software-engineer-ii,-backend-(identity-decisioning)----remote-canada",
+      "id": "affirm-software-engineer-ii,-backend-(identity-decisioning)----remote-us",
       "company": "Affirm",
       "title": "Software Engineer II, Backend (Identity Decisioning)   ",
-      "location": "Remote Canada",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7543980003",
+      "location": "Remote US",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7543978003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",
@@ -14633,11 +14633,11 @@
       "is_closed": false
     },
     {
-      "id": "affirm-software-engineer-ii,-backend-(identity-decisioning)----remote-us",
+      "id": "affirm-software-engineer-ii,-backend-(identity-decisioning)----remote-canada",
       "company": "Affirm",
       "title": "Software Engineer II, Backend (Identity Decisioning)   ",
-      "location": "Remote US",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7543978003",
+      "location": "Remote Canada",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7543980003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",
