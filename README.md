@@ -72,14 +72,14 @@
 | 🚀 MongoDB | Software Engineer 3 | Toronto | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7522856) |
 | 🚀 MongoDB | Software Engineer 3, Atlas Growth | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7460387) |
 | 🚀 MongoDB | Software Engineer 3, Query Execution | Dublin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7533978) |
-| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | United States | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527309) |
+| 🚀 MongoDB | Software Engineer 3 (SE3), Developer Productivity (Backstage) | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7527311) |
 | 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
 | 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
 | 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
 | 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
 | 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
-| Sumo Logic | Software Engineer II - Core Platform  | United States | Today | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7485892) |
+| Sumo Logic | Software Engineer II - Core Platform  | United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7485892) |
 | 🚀 SpaceX | Security Software Engineer | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8380536002?gh_jid=8380536002) |
 | 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8380527002?gh_jid=8380527002) |
 | 🚀 Samsara | Software Engineer II, New Product | Toronto, Canada | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440) |
@@ -237,8 +237,8 @@
 | 🚀 Discord | Software Engineer, Mobile | San Francisco Bay Area | 5 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8177727002) |
 | 🚀 Discord | Software Engineer, Payments | San Francisco Bay Area | 5 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8304667002) |
 | 🚀 Discord | Software Engineer - Realtime Infrastructure | San Francisco Bay Area | 5 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8328560002) |
-| 🚀 Robinhood | Software Engineer, Streaming Infrastructure | Bellevue, WA | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770) |
-| 🚀 Dropbox | Infrastructure Software Engineer, Identity & Auth Platform | Remote - Mexico | 5 days ago | [Apply](https://jobs.dropbox.com/listing/7409359?gh_jid=7409359) |
+| 🚀 Robinhood | Software Engineer, Streaming Infrastructure | Bellevue, WA | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770) |
+| 🚀 Dropbox | Infrastructure Software Engineer, Identity & Auth Platform | Remote - Mexico | 6 days ago | [Apply](https://jobs.dropbox.com/listing/7409359?gh_jid=7409359) |
 | 🚀 Asana | IT Network and Systems Engineer | Warsaw | 6 days ago | [Apply](https://www.asana.com/jobs/apply/7339515?gh_jid=7339515) |
 | 🚀 Asana | Junior Software Engineer | Warsaw | 6 days ago | [Apply](https://www.asana.com/jobs/apply/6440856?gh_jid=6440856) |
 | 🚀 Asana | Software Engineer | Warsaw | 6 days ago | [Apply](https://www.asana.com/jobs/apply/5844714?gh_jid=5844714) |
@@ -358,7 +358,7 @@
 | 🚀 Dropbox | iOS Software Engineer, Mobile Infrastructure | Remote - Mexico | 6 days ago | [Apply](https://jobs.dropbox.com/listing/7182020?gh_jid=7182020) |
 | 🚀 Benchling | Software Engineer, Full Stack (Registry and Inventory) | San Francisco, CA | 6 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7416341?gh_jid=7416341) |
 | 🚀 Benchling |  Software Engineer, Full Stack (Registry and Inventory) | Boston, MA | 6 days ago | [Apply](https://boards.greenhouse.io/benchling/jobs/7416988?gh_jid=7416988) |
-| 🚀 Robinhood | Software Engineer, Data Engineering | Toronto, Canada | 6 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438) |
+| 🚀 Robinhood | Software Engineer, Data Engineering | Toronto, Canada | 2026-01-13 | [Apply](https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438) |
 | 🔥 Airbnb | Software Engineer, Search Infrastructure | Brazil | 2026-01-13 | [Apply](https://careers.airbnb.com/positions/7365942?gh_jid=7365942) |
 | 🚀 Scale AI | Mission Software Engineer, Public Sector | Boston, Massachusetts ; Honolulu, HI; San Diego, CA; San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC | 2026-01-13 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4481921005) |
 | 🚀 Scale AI | Software Engineer | Argentina; Uruguay | 2026-01-13 | [Apply](https://job-boards.greenhouse.io/scaleai/jobs/4612282005) |
@@ -708,7 +708,7 @@
 | Sumo Logic | Machine Learning Engineer | United States | 5 days ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7306807) |
 | 🚀 Discord | Data Scientist, Analytics - Ads Reporting | San Francisco Bay Area | 5 days ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8343789002) |
 | 🚀 Waymo | ML Engineer, Foundation Model Infrastructure | Mountain View, CA, USA; Remote US | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536801) |
-| 🚀 Waymo | ML Engineer, Foundation Model Evaluation | Mountain View, CA, USA; Remote US | 5 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536948) |
+| 🚀 Waymo | ML Engineer, Foundation Model Evaluation | Mountain View, CA, USA; Remote US | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7536948) |
 | 🚀 Waymo | Machine Learning Engineer, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7539786) |
 | 🚀 Anthropic | Data Scientist, Marketing | San Francisco, CA \| New York City, NY | 6 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4983584008) |
 | 🚀 Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad) | Mountain View, CA USA;  San Francisco, CA USA; | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7467839) |
@@ -996,4 +996,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-20 15:40:43 UTC*
+*Last updated: 2026-01-20 16:02:40 UTC*

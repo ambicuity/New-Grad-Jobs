@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T15:40:43.792084",
+    "generated_at": "2026-01-20T16:02:40.550042",
     "total_jobs": 859,
     "categories": [
       {
@@ -857,11 +857,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-alberta;-british-columbia;-man",
+      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-united-states",
       "company": "MongoDB",
       "title": "Software Engineer 3 (SE3), Developer Productivity (Backstage)",
-      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527311",
+      "location": "United States",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527309",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -883,11 +883,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-united-states",
+      "id": "mongodb-software-engineer-3-(se3),-developer-productivity-(backstage)-alberta;-british-columbia;-man",
       "company": "MongoDB",
       "title": "Software Engineer 3 (SE3), Developer Productivity (Backstage)",
-      "location": "United States",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527309",
+      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7527311",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -1073,7 +1073,7 @@
       "location": "United States",
       "url": "https://job-boards.greenhouse.io/sumologic/jobs/7485892",
       "posted_at": "2026-01-19T15:47:54",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7149,7 +7149,7 @@
       "location": "Mountain View, CA, USA; Remote US",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7536948",
       "posted_at": "2026-01-14T16:01:12",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7175,7 +7175,7 @@
       "location": "Bellevue, WA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7489770?t=gh_src=&gh_jid=7489770",
       "posted_at": "2026-01-14T15:46:55",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7203,7 +7203,7 @@
       "location": "Remote - Mexico",
       "url": "https://jobs.dropbox.com/listing/7409359?gh_jid=7409359",
       "posted_at": "2026-01-14T15:42:05",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -11577,7 +11577,7 @@
       "location": "Toronto, Canada",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438",
       "posted_at": "2026-01-13T15:56:31",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-13",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
