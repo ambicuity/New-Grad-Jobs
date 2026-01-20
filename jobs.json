@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T16:50:07.879177",
-    "total_jobs": 859,
+    "generated_at": "2026-01-20T17:19:14.131956",
+    "total_jobs": 856,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 634
+        "count": 631
       },
       {
         "id": "data_ml",
@@ -1345,11 +1345,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
+      "id": "samsara-software-engineer-ii,-new-product-remote---us",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Toronto, Canada",
-      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -1371,11 +1371,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-remote---us",
+      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
+      "location": "Toronto, Canada",
+      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -1676,32 +1676,6 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "elastic-full-stack-software-engineer-ii-bangalore,-india",
-      "company": "Elastic",
-      "title": "Full Stack Software Engineer II",
-      "location": "Bangalore, India",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=7386039&gh_jid=7386039",
-      "posted_at": "2026-01-18T23:59:02",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
         "sectors": []
       },
       "flags": {
@@ -2165,7 +2139,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/6885717?gh_jid=6885717",
       "posted_at": "2026-01-16T17:05:46",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2191,7 +2165,7 @@
       "location": "San Francisco, CA",
       "url": "https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002",
       "posted_at": "2026-01-16T17:00:39",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -3183,11 +3157,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii-remote---uk",
+      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
       "company": "Samsara",
       "title": "Software Engineer II",
-      "location": "Remote - UK",
-      "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
+      "location": "London, England, United Kingdom",
+      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -3209,11 +3183,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii-london,-england,-united-kingdom",
+      "id": "samsara-software-engineer-ii-remote---uk",
       "company": "Samsara",
       "title": "Software Engineer II",
-      "location": "London, England, United Kingdom",
-      "url": "https://www.samsara.com/company/careers/roles/7291221?gh_jid=7291221",
+      "location": "Remote - UK",
+      "url": "https://www.samsara.com/company/careers/roles/7351726?gh_jid=7351726",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4365,7 +4339,7 @@
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7359054003",
       "posted_at": "2026-01-15T17:01:09",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4391,7 +4365,7 @@
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7489490003",
       "posted_at": "2026-01-15T17:01:09",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4417,7 +4391,7 @@
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7574033003",
       "posted_at": "2026-01-15T17:01:09",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4443,7 +4417,7 @@
       "location": "Hyderabad, Telangana, India",
       "url": "https://job-boards.greenhouse.io/postman/jobs/5952084003",
       "posted_at": "2026-01-15T17:01:09",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4469,7 +4443,7 @@
       "location": "Mountain View, California ",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=6562547",
       "posted_at": "2026-01-15T16:58:21",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4495,7 +4469,7 @@
       "location": "Taipei, Taiwan",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7540245",
       "posted_at": "2026-01-15T16:55:00",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4647,11 +4621,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-hawthorne,-ca",
+      "id": "spacex-application-software-engineer-bastrop,-tx",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4675,11 +4649,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-bastrop,-tx",
+      "id": "spacex-application-software-engineer-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4815,11 +4789,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4843,11 +4817,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5123,11 +5097,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5151,11 +5125,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5207,11 +5181,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5235,11 +5209,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5515,11 +5489,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-engineer-(security-operations)-redmond,-wa",
+      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Security Engineer (Security Operations)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5543,11 +5517,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
+      "id": "spacex-security-engineer-(security-operations)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Engineer (Security Operations)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5711,11 +5685,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-design-software-(starship)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-design-software-(starship)-starbase,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Design Software (Starship)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5739,11 +5713,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-design-software-(starship)-starbase,-tx",
+      "id": "spacex-software-engineer,-design-software-(starship)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Design Software (Starship)",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5851,11 +5825,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
+      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5879,11 +5853,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -7053,7 +7027,7 @@
       "location": "United States",
       "url": "https://job-boards.greenhouse.io/sumologic/jobs/7306807",
       "posted_at": "2026-01-14T17:05:28",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -8561,11 +8535,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
+      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "London, England, United Kingdom",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -8587,11 +8561,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
+      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
+      "location": "London, England, United Kingdom",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -8669,7 +8643,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -8695,7 +8669,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -9033,7 +9007,7 @@
       "company": "Waymo",
       "title": "Onboard Infrastructure Software Engineer",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461103",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7412386",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -9059,7 +9033,7 @@
       "company": "Waymo",
       "title": "Onboard Infrastructure Software Engineer",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7412386",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461103",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -10559,7 +10533,7 @@
       "company": "Vercel",
       "title": "Software Engineer, Accounts",
       "location": "Hybrid - Berlin",
-      "url": "https://job-boards.greenhouse.io/vercel/jobs/5431123004",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5430088004",
       "posted_at": "2026-01-13T18:09:59",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -10587,7 +10561,7 @@
       "company": "Vercel",
       "title": "Software Engineer, Accounts",
       "location": "Hybrid - Berlin",
-      "url": "https://job-boards.greenhouse.io/vercel/jobs/5430088004",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5431123004",
       "posted_at": "2026-01-13T18:09:59",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -10863,11 +10837,11 @@
       "is_closed": false
     },
     {
-      "id": "vercel-software-engineer,-deployment-infrastructure-remote---united-states",
+      "id": "vercel-software-engineer,-deployment-infrastructure-hybrid---san-francisco,-new-york-city",
       "company": "Vercel",
       "title": "Software Engineer, Deployment Infrastructure",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/vercel/jobs/5499505004",
+      "location": "Hybrid - San Francisco, New York City",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
       "posted_at": "2026-01-13T18:09:59",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -10891,11 +10865,11 @@
       "is_closed": false
     },
     {
-      "id": "vercel-software-engineer,-deployment-infrastructure-hybrid---san-francisco,-new-york-city",
+      "id": "vercel-software-engineer,-deployment-infrastructure-remote---united-states",
       "company": "Vercel",
       "title": "Software Engineer, Deployment Infrastructure",
-      "location": "Hybrid - San Francisco, New York City",
-      "url": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5499505004",
       "posted_at": "2026-01-13T18:09:59",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -11397,58 +11371,6 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-infrastructure-software-engineer,-developer-platform-remote---us:-select-locations",
-      "company": "Dropbox",
-      "title": "Infrastructure Software Engineer, Developer Platform",
-      "location": "Remote - US: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7446067?gh_jid=7446067",
-      "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "2026-01-13",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "dropbox-infrastructure-software-engineer,-developer-platform-remote---canada:-select-locations",
-      "company": "Dropbox",
-      "title": "Infrastructure Software Engineer, Developer Platform",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7446070?gh_jid=7446070",
-      "posted_at": "2026-01-13T16:46:24",
-      "posted_display": "2026-01-13",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "dropbox-infrastructure-software-engineer,-metadata--remote---canada:-select-locations",
       "company": "Dropbox",
       "title": "Infrastructure Software Engineer, Metadata ",
@@ -11501,11 +11423,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-ios-software-engineer,-mobile-infrastructure-remote---canada:-select-locations",
+      "id": "dropbox-ios-software-engineer,-mobile-infrastructure-remote---mexico",
       "company": "Dropbox",
       "title": "iOS Software Engineer, Mobile Infrastructure",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7053880?gh_jid=7053880",
+      "location": "Remote - Mexico",
+      "url": "https://jobs.dropbox.com/listing/7182020?gh_jid=7182020",
       "posted_at": "2026-01-13T16:46:24",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -11553,11 +11475,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-ios-software-engineer,-mobile-infrastructure-remote---mexico",
+      "id": "dropbox-ios-software-engineer,-mobile-infrastructure-remote---canada:-select-locations",
       "company": "Dropbox",
       "title": "iOS Software Engineer, Mobile Infrastructure",
-      "location": "Remote - Mexico",
-      "url": "https://jobs.dropbox.com/listing/7182020?gh_jid=7182020",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7053880?gh_jid=7053880",
       "posted_at": "2026-01-13T16:46:24",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -16903,6 +16825,34 @@
       "is_closed": false
     },
     {
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
+      "posted_at": "2025-12-31T11:15:39",
+      "posted_display": "2025-12-31",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
@@ -16936,34 +16886,6 @@
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
       "location": "Bastrop, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
-      "posted_at": "2025-12-31T11:15:39",
-      "posted_display": "2025-12-31",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -21549,11 +21471,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend---blockchain-platform-(wallets)-remote---canada",
+      "id": "coinbase-software-engineer,-backend---blockchain-platform-(wallets)-remote---usa",
       "company": "Coinbase",
       "title": "Software Engineer, Backend - Blockchain Platform (Wallets)",
-      "location": "Remote - Canada",
-      "url": "https://www.coinbase.com/careers/positions/7316840?gh_jid=7316840",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/7326905?gh_jid=7326905",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -21577,11 +21499,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend---blockchain-platform-(wallets)-remote---usa",
+      "id": "coinbase-software-engineer,-backend---blockchain-platform-(wallets)-remote---canada",
       "company": "Coinbase",
       "title": "Software Engineer, Backend - Blockchain Platform (Wallets)",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/7326905?gh_jid=7326905",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/7316840?gh_jid=7316840",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -21773,11 +21695,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend-(consumer---stablecoin)-remote---canada",
+      "id": "coinbase-software-engineer,-backend-(consumer---stablecoin)-remote---usa",
       "company": "Coinbase",
       "title": "Software Engineer, Backend (Consumer - Stablecoin)",
-      "location": "Remote - Canada",
-      "url": "https://www.coinbase.com/careers/positions/6570379?gh_jid=6570379",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/5948501?gh_jid=5948501",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -21801,11 +21723,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend-(consumer---stablecoin)-remote---usa",
+      "id": "coinbase-software-engineer,-backend-(consumer---stablecoin)-remote---canada",
       "company": "Coinbase",
       "title": "Software Engineer, Backend (Consumer - Stablecoin)",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/5948501?gh_jid=5948501",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/6570379?gh_jid=6570379",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -22527,11 +22449,11 @@
       "is_closed": false
     },
     {
-      "id": "brex-software-engineer-ii,-product--san-francisco,-california,-united-states",
+      "id": "brex-software-engineer-ii,-product--new-york,-new-york,-united-states",
       "company": "Brex",
       "title": "Software Engineer II, Product ",
-      "location": "San Francisco, California, United States",
-      "url": "https://www.brex.com/careers/8318332002?gh_jid=8318332002",
+      "location": "New York, New York, United States",
+      "url": "https://www.brex.com/careers/8318331002?gh_jid=8318331002",
       "posted_at": "2025-12-10T11:03:20",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -22555,11 +22477,11 @@
       "is_closed": false
     },
     {
-      "id": "brex-software-engineer-ii,-product--new-york,-new-york,-united-states",
+      "id": "brex-software-engineer-ii,-product--san-francisco,-california,-united-states",
       "company": "Brex",
       "title": "Software Engineer II, Product ",
-      "location": "New York, New York, United States",
-      "url": "https://www.brex.com/careers/8318331002?gh_jid=8318331002",
+      "location": "San Francisco, California, United States",
+      "url": "https://www.brex.com/careers/8318332002?gh_jid=8318332002",
       "posted_at": "2025-12-10T11:03:20",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
