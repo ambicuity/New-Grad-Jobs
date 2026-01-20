@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T21:31:00.010840",
-    "total_jobs": 853,
+    "generated_at": "2026-01-20T21:47:18.266481",
+    "total_jobs": 852,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 626
+        "count": 625
       },
       {
         "id": "data_ml",
@@ -42,6 +42,34 @@
     ]
   },
   "jobs": [
+    {
+      "id": "block-(square)-machine-learning-engineer-(modeling),-families-risk-boston,-ma,-united-states-of-amer",
+      "company": "Block (Square)",
+      "title": "Machine Learning Engineer (Modeling), Families Risk",
+      "location": "Boston, MA, United States of America",
+      "url": "http://block.xyz/careers/jobs/5078716008?gh_jid=5078716008",
+      "posted_at": "2026-01-20T16:32:57",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "block-(square)-machine-learning-engineer-(modeling),-families-risk-seattle,-wa,-united-states-of-ame",
       "company": "Block (Square)",
@@ -2611,11 +2639,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-remote---us",
+      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
+      "location": "Toronto, Canada",
+      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -2637,11 +2665,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer-ii,-new-product-toronto,-canada",
+      "id": "samsara-software-engineer-ii,-new-product-remote---us",
       "company": "Samsara",
       "title": "Software Engineer II, New Product",
-      "location": "Toronto, Canada",
-      "url": "https://www.samsara.com/company/careers/roles/7231440?gh_jid=7231440",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/7210161?gh_jid=7210161",
       "posted_at": "2026-01-19T12:44:45",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -4291,11 +4319,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer,-full-stack---safety-remote---us",
+      "id": "samsara-software-engineer,-full-stack---safety-remote---canada",
       "company": "Samsara",
       "title": "Software Engineer, Full Stack - Safety",
-      "location": "Remote - US",
-      "url": "https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937",
+      "location": "Remote - Canada",
+      "url": "https://www.samsara.com/company/careers/roles/7362939?gh_jid=7362939",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4317,11 +4345,11 @@
       "is_closed": false
     },
     {
-      "id": "samsara-software-engineer,-full-stack---safety-remote---canada",
+      "id": "samsara-software-engineer,-full-stack---safety-remote---us",
       "company": "Samsara",
       "title": "Software Engineer, Full Stack - Safety",
-      "location": "Remote - Canada",
-      "url": "https://www.samsara.com/company/careers/roles/7362939?gh_jid=7362939",
+      "location": "Remote - US",
+      "url": "https://www.samsara.com/company/careers/roles/7362937?gh_jid=7362937",
       "posted_at": "2026-01-16T11:13:05",
       "posted_display": "4 days ago",
       "source": "Greenhouse",
@@ -4761,11 +4789,11 @@
       "is_closed": false
     },
     {
-      "id": "reddit-android-software-engineer,-ad-formats-remote---united-states",
+      "id": "reddit-android-software-engineer,-ad-formats-san-francisco,-ca",
       "company": "Reddit",
       "title": "Android Software Engineer, Ad Formats",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7415052",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7414993",
       "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4787,11 +4815,11 @@
       "is_closed": false
     },
     {
-      "id": "reddit-android-software-engineer,-ad-formats-san-francisco,-ca",
+      "id": "reddit-android-software-engineer,-ad-formats-remote---united-states",
       "company": "Reddit",
       "title": "Android Software Engineer, Ad Formats",
-      "location": "San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7414993",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7415052",
       "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4891,11 +4919,11 @@
       "is_closed": false
     },
     {
-      "id": "reddit-ios-software-engineer,-ad-formats-remote---united-states",
+      "id": "reddit-ios-software-engineer,-ad-formats-new-york-city,-ny",
       "company": "Reddit",
       "title": "iOS Software Engineer, Ad Formats",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7415041",
+      "location": "New York City, NY",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7414849",
       "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -4943,37 +4971,11 @@
       "is_closed": false
     },
     {
-      "id": "reddit-ios-software-engineer,-ad-formats-new-york-city,-ny",
+      "id": "reddit-ios-software-engineer,-ad-formats-remote---united-states",
       "company": "Reddit",
       "title": "iOS Software Engineer, Ad Formats",
-      "location": "New York City, NY",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7414849",
-      "posted_at": "2026-01-15T20:41:37",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "reddit-ios-software-engineer,-i18n:-grow-global-and-local-communities-chicago,-il",
-      "company": "Reddit",
-      "title": "iOS Software Engineer, i18n: Grow Global and Local Communities",
-      "location": "Chicago, IL",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/7512046",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7415041",
       "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5026,6 +5028,32 @@
       "title": "iOS Software Engineer, i18n: Grow Global and Local Communities",
       "location": "Los Angeles, CA",
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7512048",
+      "posted_at": "2026-01-15T20:41:37",
+      "posted_display": "5 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "reddit-ios-software-engineer,-i18n:-grow-global-and-local-communities-chicago,-il",
+      "company": "Reddit",
+      "title": "iOS Software Engineer, i18n: Grow Global and Local Communities",
+      "location": "Chicago, IL",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7512046",
       "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -5203,32 +5231,6 @@
       "is_closed": false
     },
     {
-      "id": "reddit-software-engineer,-ads-remote---ontario,-canada",
-      "company": "Reddit",
-      "title": "Software Engineer, Ads",
-      "location": "Remote - Ontario, Canada",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/6512458",
-      "posted_at": "2026-01-15T20:41:37",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "reddit-software-engineer,-ads-remote---united-states",
       "company": "Reddit",
       "title": "Software Engineer, Ads",
@@ -5255,18 +5257,18 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer,-audio-perception-mountain-view,-ca,-usa;-san-francisco,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Audio Perception",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7248697",
-      "posted_at": "2026-01-15T17:52:51",
+      "id": "reddit-software-engineer,-ads-remote---ontario,-canada",
+      "company": "Reddit",
+      "title": "Software Engineer, Ads",
+      "location": "Remote - Ontario, Canada",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/6512458",
+      "posted_at": "2026-01-15T20:41:37",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "unicorn",
@@ -7503,7 +7505,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7463634?gh_jid=7463634",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7529,7 +7531,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7357095?gh_jid=7357095",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7555,7 +7557,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7276845?gh_jid=7276845",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7581,7 +7583,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7345143?gh_jid=7345143",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7607,7 +7609,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7371463?gh_jid=7371463",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7633,7 +7635,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7125944?gh_jid=7125944",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7659,7 +7661,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7346551?gh_jid=7346551",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -7685,7 +7687,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7514717?gh_jid=7514717",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7711,7 +7713,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7417005?gh_jid=7417005",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7737,7 +7739,7 @@
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7269377?gh_jid=7269377",
       "posted_at": "2026-01-14T21:42:24",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7763,7 +7765,7 @@
       "location": "Bellevue, WA; Menlo Park, CA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7353803?t=gh_src=&gh_jid=7353803",
       "posted_at": "2026-01-14T21:33:08",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -8865,7 +8867,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -8891,7 +8893,7 @@
       "company": "Waymo",
       "title": "Machine Learning Engineer - Mapping",
       "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -18459,32 +18461,6 @@
       "is_closed": false
     },
     {
-      "id": "nuro-software-engineer,-machine-learning-infrastructure-mountain-view,-california-(hq)",
-      "company": "Nuro",
-      "title": "Software Engineer, Machine Learning Infrastructure",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7407019",
-      "posted_at": "2025-12-23T18:45:25",
-      "posted_display": "2025-12-23",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "nuro-software-engineer,-machine-learning,-sensor-simulation-mountain-view,-california-(hq)",
       "company": "Nuro",
       "title": "Software Engineer, Machine Learning, Sensor Simulation",
@@ -21311,34 +21287,6 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend---blockchain-platform--remote---canada",
-      "company": "Coinbase",
-      "title": "Software Engineer, Backend - Blockchain Platform ",
-      "location": "Remote - Canada",
-      "url": "https://www.coinbase.com/careers/positions/7059313?gh_jid=7059313",
-      "posted_at": "2025-12-10T13:34:44",
-      "posted_display": "2025-12-10",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "coinbase-software-engineer,-backend---blockchain-platform--remote---usa",
       "company": "Coinbase",
       "title": "Software Engineer, Backend - Blockchain Platform ",
@@ -21367,11 +21315,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend---blockchain-platform-(staking-data)-remote---usa",
+      "id": "coinbase-software-engineer,-backend---blockchain-platform--remote---canada",
       "company": "Coinbase",
-      "title": "Software Engineer, Backend - Blockchain Platform (Staking Data)",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/7337062?gh_jid=7337062",
+      "title": "Software Engineer, Backend - Blockchain Platform ",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/7059313?gh_jid=7059313",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -21400,6 +21348,34 @@
       "title": "Software Engineer, Backend - Blockchain Platform (Staking Data)",
       "location": "Remote - Canada",
       "url": "https://www.coinbase.com/careers/positions/7337063?gh_jid=7337063",
+      "posted_at": "2025-12-10T13:34:44",
+      "posted_display": "2025-12-10",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "coinbase-software-engineer,-backend---blockchain-platform-(staking-data)-remote---usa",
+      "company": "Coinbase",
+      "title": "Software Engineer, Backend - Blockchain Platform (Staking Data)",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/7337062?gh_jid=7337062",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -22235,11 +22211,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-frontend---risk-platform:-event-remote---canada",
+      "id": "coinbase-software-engineer,-frontend---risk-platform:-event-remote---usa",
       "company": "Coinbase",
       "title": "Software Engineer, Frontend - Risk Platform: EVENT",
-      "location": "Remote - Canada",
-      "url": "https://www.coinbase.com/careers/positions/7378508?gh_jid=7378508",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/7378510?gh_jid=7378510",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -22263,11 +22239,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-frontend---risk-platform:-event-remote---usa",
+      "id": "coinbase-software-engineer,-frontend---risk-platform:-event-remote---canada",
       "company": "Coinbase",
       "title": "Software Engineer, Frontend - Risk Platform: EVENT",
-      "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/7378510?gh_jid=7378510",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/7378508?gh_jid=7378508",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -22699,11 +22675,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-bay-area,-ca,-united-states-of-america",
+      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-new-york,-ny,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Machine Learning Engineer (Modeling), Risk",
-      "location": "Bay Area, CA, United States of America",
-      "url": "http://block.xyz/careers/jobs/4680661008?gh_jid=4680661008",
+      "location": "New York, NY, United States of America",
+      "url": "http://block.xyz/careers/jobs/4989853008?gh_jid=4989853008",
       "posted_at": "2025-12-02T16:53:33",
       "posted_display": "2025-12-02",
       "source": "Greenhouse",
@@ -22727,11 +22703,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-new-york,-ny,-united-states-of-america",
+      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-bay-area,-ca,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Machine Learning Engineer (Modeling), Risk",
-      "location": "New York, NY, United States of America",
-      "url": "http://block.xyz/careers/jobs/4989853008?gh_jid=4989853008",
+      "location": "Bay Area, CA, United States of America",
+      "url": "http://block.xyz/careers/jobs/4680661008?gh_jid=4680661008",
       "posted_at": "2025-12-02T16:53:33",
       "posted_display": "2025-12-02",
       "source": "Greenhouse",
