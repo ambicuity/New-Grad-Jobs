@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-01-21T17:16:42.147674",
-    "total_jobs": 843,
+    "generated_at": "2026-01-21T18:08:22.766078",
+    "total_jobs": 841,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 615
+        "count": 614
       },
       {
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16",
-        "count": 98
+        "count": 97
       },
       {
         "id": "data_engineering",
@@ -42,6 +42,528 @@
     ]
   },
   "jobs": [
+    {
+      "id": "robinhood-software-engineer,-data-engineering-toronto,-canada",
+      "company": "Robinhood",
+      "title": "Software Engineer, Data Engineering",
+      "location": "Toronto, Canada",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438",
+      "posted_at": "2026-01-21T12:47:56",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-cloud-software-engineer-remote---ireland",
+      "company": "Twilio",
+      "title": "Cloud Software Engineer",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7484699",
+      "posted_at": "2026-01-21T12:45:39",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-(l3)-remote---india",
+      "company": "Twilio",
+      "title": "Software Engineer (L3)",
+      "location": "Remote - India",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7537795",
+      "posted_at": "2026-01-21T12:45:39",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-(p3)-bengaluru,-india",
+      "company": "Twilio",
+      "title": "Software Engineer (P3)",
+      "location": "Bengaluru, India",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7532698",
+      "posted_at": "2026-01-21T12:45:39",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer--l2-remote---us",
+      "company": "Twilio",
+      "title": "Software Engineer- L2",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7406218",
+      "posted_at": "2026-01-21T12:45:38",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer--video-signalling-(java-and-rust)-remote---ireland",
+      "company": "Twilio",
+      "title": "Software Engineer- Video Signalling (Java and Rust)",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7394811",
+      "posted_at": "2026-01-21T12:45:38",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-(l3)-remote---us",
+      "company": "Twilio",
+      "title": "Software Engineer (L3)",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7362957",
+      "posted_at": "2026-01-21T12:45:37",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-(l3)-remote---india",
+      "company": "Twilio",
+      "title": "Software Engineer (L3)",
+      "location": "Remote - India",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7359642",
+      "posted_at": "2026-01-21T12:45:37",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-machine-learning-engineer-remote---us",
+      "company": "Twilio",
+      "title": "Machine Learning Engineer",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7059734",
+      "posted_at": "2026-01-21T12:45:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-remote---us",
+      "company": "Twilio",
+      "title": "Software Engineer",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070250",
+      "posted_at": "2026-01-21T12:45:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer,-commerce-platform--remote---ireland",
+      "company": "Twilio",
+      "title": "Software Engineer, Commerce Platform ",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070269",
+      "posted_at": "2026-01-21T12:45:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "twilio-software-engineer-(l3)-remote---us",
+      "company": "Twilio",
+      "title": "Software Engineer (L3)",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7188174",
+      "posted_at": "2026-01-21T12:45:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "anthropic-software-engineer,-safeguards-infrastructure--london,-uk",
+      "company": "Anthropic",
+      "title": "Software Engineer, Safeguards Infrastructure ",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5074908008",
+      "posted_at": "2026-01-21T12:42:56",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-network-software-engineer-hybrid",
+      "company": "Cloudflare",
+      "title": "Network Software Engineer",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343755?gh_jid=7343755",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-software-engineer---cloudflare-one-hybrid",
+      "company": "Cloudflare",
+      "title": "Software Engineer - Cloudflare One",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7299144?gh_jid=7299144",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-software-engineer---network-services-hybrid",
+      "company": "Cloudflare",
+      "title": "Software Engineer - Network Services",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343760?gh_jid=7343760",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-systems-engineer-hybrid",
+      "company": "Cloudflare",
+      "title": "Systems Engineer",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343780?gh_jid=7343780",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-systems-engineer---browser-isolation-hybrid",
+      "company": "Cloudflare",
+      "title": "Systems Engineer - Browser Isolation",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7346457?gh_jid=7346457",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-systems-engineer,-cloudflare-tunnel-hybrid",
+      "company": "Cloudflare",
+      "title": "Systems Engineer, Cloudflare Tunnel",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343801?gh_jid=7343801",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "cloudflare-systems-engineer,-gateway-hybrid",
+      "company": "Cloudflare",
+      "title": "Systems Engineer, Gateway",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343763?gh_jid=7343763",
+      "posted_at": "2026-01-21T12:37:04",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "sofi-marketing-associate-\u2013-direct-mail\t(contractor)-ca---san-francisco-hq",
       "company": "SoFi",
@@ -369,188 +891,6 @@
       "is_closed": false
     },
     {
-      "id": "cloudflare-network-software-engineer-hybrid",
-      "company": "Cloudflare",
-      "title": "Network Software Engineer",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343755?gh_jid=7343755",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-software-engineer---cloudflare-one-hybrid",
-      "company": "Cloudflare",
-      "title": "Software Engineer - Cloudflare One",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7299144?gh_jid=7299144",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-software-engineer---network-services-hybrid",
-      "company": "Cloudflare",
-      "title": "Software Engineer - Network Services",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343760?gh_jid=7343760",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-systems-engineer-hybrid",
-      "company": "Cloudflare",
-      "title": "Systems Engineer",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343780?gh_jid=7343780",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-systems-engineer---browser-isolation-hybrid",
-      "company": "Cloudflare",
-      "title": "Systems Engineer - Browser Isolation",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7346457?gh_jid=7346457",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-systems-engineer,-cloudflare-tunnel-hybrid",
-      "company": "Cloudflare",
-      "title": "Systems Engineer, Cloudflare Tunnel",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343801?gh_jid=7343801",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cloudflare-systems-engineer,-gateway-hybrid",
-      "company": "Cloudflare",
-      "title": "Systems Engineer, Gateway",
-      "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/7343763?gh_jid=7343763",
-      "posted_at": "2026-01-21T10:58:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "duolingo-qa-specialist,-new-graduate-new-york,-ny",
       "company": "Duolingo",
       "title": "QA Specialist, New Graduate",
@@ -603,168 +943,12 @@
       "is_closed": false
     },
     {
-      "id": "twilio-software-engineer,-commerce-platform--remote---ireland",
-      "company": "Twilio",
-      "title": "Software Engineer, Commerce Platform ",
-      "location": "Remote - Ireland",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070269",
-      "posted_at": "2026-01-21T10:32:44",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "waymo-systems-engineer,-behavioral-requirements-mountain-view,-ca;-us,-san-francisco,-ca;us",
       "company": "Waymo",
       "title": "Systems Engineer, Behavioral Requirements",
       "location": "Mountain View, CA; US, San Francisco, CA;US",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7545185",
       "posted_at": "2026-01-21T10:31:57",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(l3)-remote---india",
-      "company": "Twilio",
-      "title": "Software Engineer (L3)",
-      "location": "Remote - India",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7359642",
-      "posted_at": "2026-01-21T10:30:33",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer--video-signalling-(java-and-rust)-remote---ireland",
-      "company": "Twilio",
-      "title": "Software Engineer- Video Signalling (Java and Rust)",
-      "location": "Remote - Ireland",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7394811",
-      "posted_at": "2026-01-21T10:30:05",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-cloud-software-engineer-remote---ireland",
-      "company": "Twilio",
-      "title": "Cloud Software Engineer",
-      "location": "Remote - Ireland",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7484699",
-      "posted_at": "2026-01-21T10:29:36",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(p3)-bengaluru,-india",
-      "company": "Twilio",
-      "title": "Software Engineer (P3)",
-      "location": "Bengaluru, India",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7532698",
-      "posted_at": "2026-01-21T10:26:33",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(l3)-remote---india",
-      "company": "Twilio",
-      "title": "Software Engineer (L3)",
-      "location": "Remote - India",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7537795",
-      "posted_at": "2026-01-21T10:26:16",
       "posted_display": "Today",
       "source": "Greenhouse",
       "category": {
@@ -1211,7 +1395,7 @@
       "location": "San Francisco, CA, US; Seattle, WA, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7262403",
       "posted_at": "2026-01-20T18:06:08",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1237,7 +1421,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7356504?gh_jid=7356504",
       "posted_at": "2026-01-20T17:45:26",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1263,7 +1447,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7356507?gh_jid=7356507",
       "posted_at": "2026-01-20T17:45:26",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1289,7 +1473,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=7529428",
       "posted_at": "2026-01-20T17:44:41",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_engineering",
@@ -1317,7 +1501,7 @@
       "location": "Bengaluru, India",
       "url": "https://stripe.com/jobs/search?gh_jid=7525368",
       "posted_at": "2026-01-20T17:44:40",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1345,7 +1529,7 @@
       "location": "London",
       "url": "https://stripe.com/jobs/search?gh_jid=7516102",
       "posted_at": "2026-01-20T17:44:39",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1373,7 +1557,7 @@
       "location": "San Francisco or New York",
       "url": "https://stripe.com/jobs/search?gh_jid=7507904",
       "posted_at": "2026-01-20T17:44:39",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1401,7 +1585,7 @@
       "location": "Seattle, WA; San Francisco, CA; Toronto, CAN",
       "url": "https://stripe.com/jobs/search?gh_jid=7477571",
       "posted_at": "2026-01-20T17:44:38",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -1429,7 +1613,7 @@
       "location": "Mexico City",
       "url": "https://stripe.com/jobs/search?gh_jid=7456081",
       "posted_at": "2026-01-20T17:44:36",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -1457,7 +1641,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=7436194",
       "posted_at": "2026-01-20T17:44:34",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1485,7 +1669,33 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/6330388?gh_jid=6330388",
       "posted_at": "2026-01-20T17:44:29",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "dropbox-infrastructure-software-engineer-remote---us:-select-locations",
+      "company": "Dropbox",
+      "title": "Infrastructure Software Engineer",
+      "location": "Remote - US: Select locations",
+      "url": "https://jobs.dropbox.com/listing/6330390?gh_jid=6330390",
+      "posted_at": "2026-01-20T17:44:28",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1511,7 +1721,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=7365356",
       "posted_at": "2026-01-20T17:44:28",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1533,39 +1743,13 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-infrastructure-software-engineer-remote---us:-select-locations",
-      "company": "Dropbox",
-      "title": "Infrastructure Software Engineer",
-      "location": "Remote - US: Select locations",
-      "url": "https://jobs.dropbox.com/listing/6330390?gh_jid=6330390",
-      "posted_at": "2026-01-20T17:44:28",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "stripe-data-scientist-toronto",
       "company": "Stripe",
       "title": "Data Scientist",
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=7357460",
       "posted_at": "2026-01-20T17:44:27",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1593,7 +1777,7 @@
       "location": "US - San Francisco; Seattle; New York City",
       "url": "https://stripe.com/jobs/search?gh_jid=7275014",
       "posted_at": "2026-01-20T17:44:22",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1621,7 +1805,7 @@
       "location": "San Francisco, NY, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7277110",
       "posted_at": "2026-01-20T17:44:22",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1649,7 +1833,7 @@
       "location": "San Francisco, New York City, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7216668",
       "posted_at": "2026-01-20T17:44:21",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1677,7 +1861,7 @@
       "location": "Barcelona",
       "url": "https://stripe.com/jobs/search?gh_jid=7213871",
       "posted_at": "2026-01-20T17:44:21",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1705,35 +1889,7 @@
       "location": "London",
       "url": "https://stripe.com/jobs/search?gh_jid=7208537",
       "posted_at": "2026-01-20T17:44:20",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "stripe-software-engineer,-new-grad-dublin",
-      "company": "Stripe",
-      "title": "Software Engineer, New Grad",
-      "location": "Dublin",
-      "url": "https://stripe.com/jobs/search?gh_jid=7206515",
-      "posted_at": "2026-01-20T17:44:20",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1761,7 +1917,35 @@
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=7206505",
       "posted_at": "2026-01-20T17:44:20",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "stripe-software-engineer,-new-grad-dublin",
+      "company": "Stripe",
+      "title": "Software Engineer, New Grad",
+      "location": "Dublin",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206515",
+      "posted_at": "2026-01-20T17:44:20",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1789,7 +1973,7 @@
       "location": "San Francisco, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "posted_at": "2026-01-20T17:44:20",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1817,7 +2001,7 @@
       "location": "IN-Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=7174299",
       "posted_at": "2026-01-20T17:44:18",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1845,7 +2029,7 @@
       "location": "Singapore",
       "url": "https://stripe.com/jobs/search?gh_jid=7176977",
       "posted_at": "2026-01-20T17:44:18",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1873,7 +2057,7 @@
       "location": "Seattle; San Francisco; New York City",
       "url": "https://stripe.com/jobs/search?gh_jid=7079044",
       "posted_at": "2026-01-20T17:44:16",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1901,7 +2085,7 @@
       "location": "Bengaluru, India",
       "url": "https://stripe.com/jobs/search?gh_jid=7108247",
       "posted_at": "2026-01-20T17:44:16",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1929,7 +2113,7 @@
       "location": "Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=7545459",
       "posted_at": "2026-01-20T17:44:14",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1957,7 +2141,7 @@
       "location": "Bengaluru",
       "url": "https://stripe.com/jobs/search?gh_jid=6967304",
       "posted_at": "2026-01-20T17:44:14",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1985,7 +2169,7 @@
       "location": "San Francisco, Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=6363655",
       "posted_at": "2026-01-20T17:44:07",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -2013,7 +2197,7 @@
       "location": "Toronto, Canada",
       "url": "https://stripe.com/jobs/search?gh_jid=6099228",
       "posted_at": "2026-01-20T17:44:05",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2041,7 +2225,7 @@
       "location": "Mexico City",
       "url": "https://stripe.com/jobs/search?gh_jid=5902523",
       "posted_at": "2026-01-20T17:44:03",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -2069,7 +2253,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7144320?gh_jid=7144320",
       "posted_at": "2026-01-20T17:34:15",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2705,11 +2889,11 @@
       "is_closed": false
     },
     {
-      "id": "anthropic-security-engineer,-detection-&-response-san-francisco,-ca-|-new-york-city,-ny-|-seattle,-w",
+      "id": "anthropic-security-engineer,-detection-&-response-london,-uk",
       "company": "Anthropic",
       "title": "Security Engineer, Detection & Response",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4982193008",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4596677008",
       "posted_at": "2026-01-20T12:39:51",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -2731,11 +2915,11 @@
       "is_closed": false
     },
     {
-      "id": "anthropic-security-engineer,-detection-&-response-london,-uk",
+      "id": "anthropic-security-engineer,-detection-&-response-san-francisco,-ca-|-new-york-city,-ny-|-seattle,-w",
       "company": "Anthropic",
       "title": "Security Engineer, Detection & Response",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4596677008",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4982193008",
       "posted_at": "2026-01-20T12:39:51",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -3855,11 +4039,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
+      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
+      "location": "British Columbia; Calgary",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -3881,11 +4065,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
+      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "British Columbia; Calgary",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
+      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -4277,84 +4461,6 @@
       "is_closed": false
     },
     {
-      "id": "twilio-software-engineer-remote---us",
-      "company": "Twilio",
-      "title": "Software Engineer",
-      "location": "Remote - US",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7070250",
-      "posted_at": "2026-01-17T03:59:13",
-      "posted_display": "4 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(l3)-remote---us",
-      "company": "Twilio",
-      "title": "Software Engineer (L3)",
-      "location": "Remote - US",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7362957",
-      "posted_at": "2026-01-17T03:58:30",
-      "posted_display": "4 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(l3)-remote---us",
-      "company": "Twilio",
-      "title": "Software Engineer (L3)",
-      "location": "Remote - US",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7472456",
-      "posted_at": "2026-01-17T03:57:42",
-      "posted_display": "4 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "robinhood-data-scientist-ljubljana,-slovenia",
       "company": "Robinhood",
       "title": "Data Scientist",
@@ -4627,7 +4733,7 @@
       "location": "Palo Alto, CA",
       "url": "https://jobs.lever.co/palantir/c62264f5-5da8-40fe-9b44-f7f0f0012e11",
       "posted_at": "2026-01-16T17:52:11.312000",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Lever",
       "category": {
         "id": "software_engineering",
@@ -4653,7 +4759,7 @@
       "location": "Seattle, WA",
       "url": "https://jobs.lever.co/palantir/0edf7365-49f0-4263-818a-19409ec4f430",
       "posted_at": "2026-01-16T17:51:52.386000",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Lever",
       "category": {
         "id": "software_engineering",
@@ -5537,58 +5643,6 @@
       "is_closed": false
     },
     {
-      "id": "twilio-software-engineer--l2-remote---us",
-      "company": "Twilio",
-      "title": "Software Engineer- L2",
-      "location": "Remote - US",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7406218",
-      "posted_at": "2026-01-16T10:18:26",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "twilio-software-engineer-(l3)-remote---us",
-      "company": "Twilio",
-      "title": "Software Engineer (L3)",
-      "location": "Remote - US",
-      "url": "https://job-boards.greenhouse.io/twilio/jobs/7188174",
-      "posted_at": "2026-01-16T10:18:25",
-      "posted_display": "5 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "block-(square)-information-systems-engineer,-supply-chain-engineering-bay-area,-ca,-united-states-of",
       "company": "Block (Square)",
       "title": "Information Systems Engineer, Supply Chain Engineering",
@@ -6221,7 +6275,7 @@
       "location": "Seattle, WA, United States of America",
       "url": "http://block.xyz/careers/jobs/5057143008?gh_jid=5057143008",
       "posted_at": "2026-01-15T17:49:27",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6249,7 +6303,7 @@
       "location": "Bay Area, CA, United States of America",
       "url": "http://block.xyz/careers/jobs/5010827008?gh_jid=5010827008",
       "posted_at": "2026-01-15T17:49:27",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6277,7 +6331,7 @@
       "location": "Seattle, WA",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8362270002?gh_jid=8362270002",
       "posted_at": "2026-01-15T17:45:50",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -6505,32 +6559,6 @@
       "is_closed": false
     },
     {
-      "id": "new-relic-software-engineer-kubernetes--portland,-oregon,-usa",
-      "company": "New Relic",
-      "title": "Software Engineer-Kubernetes ",
-      "location": "Portland, Oregon, USA",
-      "url": "https://job-boards.greenhouse.io/newrelic/jobs/4991096008",
-      "posted_at": "2026-01-15T14:04:49",
-      "posted_display": "6 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "cloudflare-software-engineer---network-platforms-hybrid",
       "company": "Cloudflare",
       "title": "Software Engineer - Network Platforms",
@@ -6585,11 +6613,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-bastrop,-tx",
+      "id": "spacex-application-software-engineer-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -6613,11 +6641,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-hawthorne,-ca",
+      "id": "spacex-application-software-engineer-bastrop,-tx",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7061,11 +7089,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7089,11 +7117,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123850002?gh_jid=8123850002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7453,11 +7481,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
+      "id": "spacex-security-engineer-(security-operations)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Engineer (Security Operations)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7481,11 +7509,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-engineer-(security-operations)-redmond,-wa",
+      "id": "spacex-security-engineer-(security-operations)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Security Engineer (Security Operations)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208779002?gh_jid=8208779002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8201865002?gh_jid=8201865002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7649,11 +7677,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-design-software-(starship)-starbase,-tx",
+      "id": "spacex-software-engineer,-design-software-(starship)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Design Software (Starship)",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -7677,11 +7705,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-design-software-(starship)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-design-software-(starship)-starbase,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Design Software (Starship)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8032526002?gh_jid=8032526002",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8032543002?gh_jid=8032543002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "6 days ago",
       "source": "Greenhouse",
@@ -8857,7 +8885,7 @@
       "location": "Denver, Colorado, United States; San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/checkr/jobs/7342475",
       "posted_at": "2026-01-14T17:19:32",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-14",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -9321,32 +9349,6 @@
       "is_closed": false
     },
     {
-      "id": "asana-software-engineer,-product-new-york-city",
-      "company": "Asana",
-      "title": "Software Engineer, Product",
-      "location": "New York City",
-      "url": "https://www.asana.com/jobs/apply/6751685?gh_jid=6751685",
-      "posted_at": "2026-01-14T15:29:10",
-      "posted_display": "2026-01-14",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "asana-software-engineer,-product-san-francisco",
       "company": "Asana",
       "title": "Software Engineer, Product",
@@ -9378,6 +9380,32 @@
       "title": "Software Engineer, Product",
       "location": "Vancouver, BC",
       "url": "https://www.asana.com/jobs/apply/6937795?gh_jid=6937795",
+      "posted_at": "2026-01-14T15:29:10",
+      "posted_display": "2026-01-14",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "asana-software-engineer,-product-new-york-city",
+      "company": "Asana",
+      "title": "Software Engineer, Product",
+      "location": "New York City",
+      "url": "https://www.asana.com/jobs/apply/6751685?gh_jid=6751685",
       "posted_at": "2026-01-14T15:29:10",
       "posted_display": "2026-01-14",
       "source": "Greenhouse",
@@ -9609,11 +9637,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
+      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "London, England, United Kingdom",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "2026-01-14",
       "source": "Greenhouse",
@@ -9635,11 +9663,11 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer-mountain-view,-ca,-usa",
+      "id": "waymo-machine-learning-engineer-london,-england,-united-kingdom",
       "company": "Waymo",
       "title": "Machine Learning Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
+      "location": "London, England, United Kingdom",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7474033",
       "posted_at": "2026-01-14T13:15:06",
       "posted_display": "2026-01-14",
       "source": "Greenhouse",
@@ -12521,34 +12549,6 @@
       "is_closed": false
     },
     {
-      "id": "robinhood-software-engineer,-data-engineering-toronto,-canada",
-      "company": "Robinhood",
-      "title": "Software Engineer, Data Engineering",
-      "location": "Toronto, Canada",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&gh_jid=7454438",
-      "posted_at": "2026-01-13T15:56:31",
-      "posted_display": "2026-01-13",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "airbnb-software-engineer,-search-infrastructure-brazil",
       "company": "Airbnb",
       "title": "Software Engineer, Search Infrastructure",
@@ -13097,11 +13097,11 @@
       "is_closed": false
     },
     {
-      "id": "twitch-software-engineer-i-san-francisco,-ca",
+      "id": "twitch-software-engineer-i-seattle,-wa",
       "company": "Twitch",
       "title": "Software Engineer I",
-      "location": "San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/twitch/jobs/8217817002",
+      "location": "Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8360103002",
       "posted_at": "2026-01-13T13:21:49",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -13149,11 +13149,11 @@
       "is_closed": false
     },
     {
-      "id": "twitch-software-engineer-i-irvine,-ca",
+      "id": "twitch-software-engineer-i-san-francisco,-ca",
       "company": "Twitch",
       "title": "Software Engineer I",
-      "location": "Irvine, CA",
-      "url": "https://job-boards.greenhouse.io/twitch/jobs/8342165002",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8217817002",
       "posted_at": "2026-01-13T13:21:49",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -13201,11 +13201,11 @@
       "is_closed": false
     },
     {
-      "id": "twitch-software-engineer-i-seattle,-wa",
+      "id": "twitch-software-engineer-i-irvine,-ca",
       "company": "Twitch",
       "title": "Software Engineer I",
-      "location": "Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/twitch/jobs/8360103002",
+      "location": "Irvine, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8342165002",
       "posted_at": "2026-01-13T13:21:49",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -13279,11 +13279,11 @@
       "is_closed": false
     },
     {
-      "id": "twitch-software-engineer-ii-san-francisco,-ca",
+      "id": "twitch-software-engineer-ii-irvine,-ca",
       "company": "Twitch",
       "title": "Software Engineer II",
-      "location": "San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/twitch/jobs/8180481002",
+      "location": "Irvine, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8184232002",
       "posted_at": "2026-01-13T13:21:49",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -13305,11 +13305,11 @@
       "is_closed": false
     },
     {
-      "id": "twitch-software-engineer-ii-irvine,-ca",
+      "id": "twitch-software-engineer-ii-san-francisco,-ca",
       "company": "Twitch",
       "title": "Software Engineer II",
-      "location": "Irvine, CA",
-      "url": "https://job-boards.greenhouse.io/twitch/jobs/8184232002",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8180481002",
       "posted_at": "2026-01-13T13:21:49",
       "posted_display": "2026-01-13",
       "source": "Greenhouse",
@@ -13721,34 +13721,6 @@
         "emoji": "\ud83d\ude80",
         "label": "Unicorn",
         "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "upstart-machine-learning-engineer-united-states-|-remote",
-      "company": "Upstart",
-      "title": "Machine Learning Engineer",
-      "location": "United States | Remote",
-      "url": "https://careers.upstart.com/jobs?gh_jid=6709289",
-      "posted_at": "2026-01-12T18:16:23",
-      "posted_display": "2026-01-12",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "finance"
-        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -15455,32 +15427,6 @@
       "is_closed": false
     },
     {
-      "id": "lyft-machine-learning-engineer,-mapping-toronto,-canada",
-      "company": "Lyft",
-      "title": "Machine Learning Engineer, Mapping",
-      "location": "Toronto, Canada",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8332299002?gh_jid=8332299002",
-      "posted_at": "2026-01-06T01:16:32",
-      "posted_display": "2026-01-06",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "lyft-data-scientist,-algorithms---lyft-ads-toronto,-canada",
       "company": "Lyft",
       "title": "Data Scientist, Algorithms - Lyft Ads",
@@ -16727,6 +16673,34 @@
       "is_closed": false
     },
     {
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
+      "posted_at": "2025-12-31T11:15:39",
+      "posted_display": "2025-12-31",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
@@ -16783,39 +16757,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
-      "posted_at": "2025-12-31T11:15:39",
-      "posted_display": "2025-12-31",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-data-engineer-(starlink-growth)-hawthorne,-ca",
+      "id": "spacex-data-engineer-(starlink-growth)-redmond,-wa",
       "company": "SpaceX",
       "title": "Data Engineer (Starlink Growth)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8240611002?gh_jid=8240611002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8243150002?gh_jid=8243150002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -16839,11 +16785,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer-(starlink-growth)-redmond,-wa",
+      "id": "spacex-data-engineer-(starlink-growth)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Data Engineer (Starlink Growth)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8243150002?gh_jid=8243150002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8240611002?gh_jid=8240611002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -17231,11 +17177,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
+      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -17259,11 +17205,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
+      "id": "spacex-security-software-engineer-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8219953002?gh_jid=8219953002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8324498002?gh_jid=8324498002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -22439,11 +22385,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-bay-area,-ca,-united-states-of-america",
+      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-new-york,-ny,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Machine Learning Engineer (Modeling), Risk",
-      "location": "Bay Area, CA, United States of America",
-      "url": "http://block.xyz/careers/jobs/4680661008?gh_jid=4680661008",
+      "location": "New York, NY, United States of America",
+      "url": "http://block.xyz/careers/jobs/4989853008?gh_jid=4989853008",
       "posted_at": "2025-12-02T16:53:33",
       "posted_display": "2025-12-02",
       "source": "Greenhouse",
@@ -22467,11 +22413,11 @@
       "is_closed": false
     },
     {
-      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-new-york,-ny,-united-states-of-america",
+      "id": "block-(square)-machine-learning-engineer-(modeling),-risk-bay-area,-ca,-united-states-of-america",
       "company": "Block (Square)",
       "title": "Machine Learning Engineer (Modeling), Risk",
-      "location": "New York, NY, United States of America",
-      "url": "http://block.xyz/careers/jobs/4989853008?gh_jid=4989853008",
+      "location": "Bay Area, CA, United States of America",
+      "url": "http://block.xyz/careers/jobs/4680661008?gh_jid=4680661008",
       "posted_at": "2025-12-02T16:53:33",
       "posted_display": "2025-12-02",
       "source": "Greenhouse",
