@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-21T08:47:14.980265",
+    "generated_at": "2026-01-21T09:19:45.281965",
     "total_jobs": 846,
     "categories": [
       {
@@ -42,6 +42,32 @@
     ]
   },
   "jobs": [
+    {
+      "id": "waymo-software-engineer-backend---simulation-mountain-view",
+      "company": "Waymo",
+      "title": "Software Engineer Backend - Simulation",
+      "location": "Mountain View",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7307289",
+      "posted_at": "2026-01-21T03:56:42",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "nuro-software-engineer,-networking-&-real-time-systems-mountain-view,-california-(hq)",
       "company": "Nuro",
@@ -2949,7 +2975,7 @@
       "location": "Remote Spain",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7538090003",
       "posted_at": "2026-01-20T09:00:10",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -3439,11 +3465,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
+      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
+      "location": "British Columbia; Calgary",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -3465,11 +3491,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-data-migration-british-columbia;-calgary",
+      "id": "mongodb-software-engineer,-data-migration-california;-colorado;-montana;-nevada;-new-mexico;-oregon;",
       "company": "MongoDB",
       "title": "Software Engineer, Data Migration",
-      "location": "British Columbia; Calgary",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
+      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-01-19T22:39:41",
       "posted_display": "1 day ago",
       "source": "Greenhouse",
@@ -5439,7 +5465,7 @@
       "location": "Bay Area, CA, United States of America",
       "url": "http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008",
       "posted_at": "2026-01-16T09:17:29",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10025,32 +10051,6 @@
       "is_closed": false
     },
     {
-      "id": "waymo-software-engineer-backend---simulation-mountain-view",
-      "company": "Waymo",
-      "title": "Software Engineer Backend - Simulation",
-      "location": "Mountain View",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7307289",
-      "posted_at": "2026-01-14T13:15:06",
-      "posted_display": "6 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "waymo-software-engineer,-bulk/interactive-inference-mountain-view,-ca,-usa",
       "company": "Waymo",
       "title": "Software Engineer, Bulk/Interactive Inference",
@@ -11237,7 +11237,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433",
       "posted_at": "2026-01-14T08:58:31",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-14",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -14931,7 +14931,7 @@
       "company": "Affirm",
       "title": "Software Engineer",
       "location": "Remote US",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7499741003",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7560426003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",
@@ -14959,7 +14959,7 @@
       "company": "Affirm",
       "title": "Software Engineer",
       "location": "Remote US",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7560426003",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7499741003",
       "posted_at": "2026-01-07T15:52:04",
       "posted_display": "2026-01-07",
       "source": "Greenhouse",

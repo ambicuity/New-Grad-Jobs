@@ -46,6 +46,7 @@
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| 🚀 Waymo | Software Engineer Backend - Simulation | Mountain View | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
 | 🚀 Nuro | Software Engineer, Networking & Real-Time Systems | Mountain View, California (HQ) | Today | [Apply](https://nuro.ai/careersitem?gh_jid=7481633) |
 | 🚀 Affirm | Software Engineer, Early Career | San Francisco, California, United States | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) |
 | 🔥 Stripe | Software Engineer, Machine Learning Infrastructure | Seattle, SF | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7528260) |
@@ -122,7 +123,7 @@
 | 🚀 SpaceX | Embedded Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8379277002?gh_jid=8379277002) |
 | 🚀 SpaceX | Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8379301002?gh_jid=8379301002) |
 | 🔥 Lyft | Software Engineer, Rider | Toronto, Canada | Today | [Apply](https://app.careerpuck.com/job-board/lyft/job/8381169002?gh_jid=8381169002) |
-| 🚀 Affirm | Software Engineer I, Back-end (Collections) | Remote Spain | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7538090003) |
+| 🚀 Affirm | Software Engineer I, Back-end (Collections) | Remote Spain | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7538090003) |
 | Sumo Logic | Software Engineer I - SRE | Noida, Uttar Pradesh, India | 1 day ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7407235) |
 | Sumo Logic | Software Engineer I -SDET | Noida, Uttar Pradesh, India | 1 day ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7382415) |
 | Sumo Logic | Software Engineer II | Bengaluru , Karnataka, India | 1 day ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/6580797) |
@@ -139,8 +140,8 @@
 | 🚀 MongoDB | Software Engineer 3, Search Systems Replication & Routing | San Francisco | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7235322) |
 | 🚀 MongoDB | Software Engineer 3, Storage Engines | Sydney | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7253772) |
 | 🚀 MongoDB | Software Engineer, Catalog and Routing | Dublin | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=6677731) |
-| 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
 | 🚀 MongoDB | Software Engineer, Data Migration | British Columbia; Calgary | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311708) |
+| 🚀 MongoDB | Software Engineer, Data Migration | California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington | 1 day ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7311666) |
 | Sumo Logic | Software Engineer II - Core Platform  | United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/sumologic/jobs/7485892) |
 | 🚀 SpaceX | Security Software Engineer | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8380536002?gh_jid=8380536002) |
 | 🚀 SpaceX | Security Software Engineer | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8380527002?gh_jid=8380527002) |
@@ -200,7 +201,7 @@
 | 🚀 Cloudflare | Systems Engineer - Data Analytics Team | Hybrid | 4 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7000601?gh_jid=7000601) |
 | 🚀 Twilio | Software Engineer- L2 | Remote - US | 4 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7406218) |
 | 🚀 Twilio | Software Engineer (L3) | Remote - US | 4 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7188174) |
-| 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 4 days ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
+| 🔥 Block (Square) | Information Systems Engineer, Supply Chain Engineering | Bay Area, CA, United States of America | 5 days ago | [Apply](http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008) |
 | 🚀 Grammarly | Software Engineer, Full-Stack - Platform Team | Berlin; Hybrid | 5 days ago | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6429372) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | New York City, NY | 5 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7415013) |
 | 🚀 Reddit | Android Software Engineer, Ad Formats | San Francisco, CA | 5 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/7414993) |
@@ -297,7 +298,6 @@
 | 🚀 Waymo | Onboard Infrastructure Software Engineer | Mountain View, CA, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7412386) |
 | 🚀 Waymo | Software Engineer, Applied Machine Learning, Planner Technology | Mountain View, California | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7163224) |
 | 🚀 Waymo | Software Engineer, Backend  | Mountain View, California, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7438627) |
-| 🚀 Waymo | Software Engineer Backend - Simulation | Mountain View | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
 | 🚀 Waymo | Software Engineer, Bulk/Interactive Inference | Mountain View, CA, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7466529) |
 | 🚀 Waymo | Software Engineer, Calibration Systems | Mountain View, California, United States; San Francisco, California, United States | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7456229) |
 | 🚀 Waymo | Software Engineer, Commercialization Onboard Platform | Mountain View, CA, USA ;  San Francisco, CA, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7426815) |
@@ -338,7 +338,7 @@
 | 🔥 Lyft | Software Engineer, Road Safety | Toronto, Canada | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8295524002?gh_jid=8295524002) |
 | Betterment | Software Engineer, Backend | Betterment HQ - New York City | 6 days ago | [Apply](https://www.betterment.com/careers/current-openings/job?gh_jid=7220394&gh_jid=7220394) |
 | 🔥 Lyft | Software Engineer, Frontend - Mapping Experiences | Toronto, Canada | 6 days ago | [Apply](https://app.careerpuck.com/job-board/lyft/job/8367669002?gh_jid=8367669002) |
-| 🚀 Cloudflare | Software Engineer, KV  | Hybrid | 6 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433) |
+| 🚀 Cloudflare | Software Engineer, KV  | Hybrid | 2026-01-14 | [Apply](https://boards.greenhouse.io/cloudflare/jobs/7493433?gh_jid=7493433) |
 | 🚀 Palantir | Software Engineer - Core Interfaces | Palo Alto, CA | 2026-01-13 | [Apply](https://jobs.lever.co/palantir/cf76738e-3030-42fa-92ac-a9446df956fc) |
 | 🚀 SpaceX | Software Engineer, Beam Planning (Starlink)    | Sunnyvale, CA | 2026-01-13 | [Apply](https://boards.greenhouse.io/spacex/jobs/8373117002?gh_jid=8373117002) |
 | 🚀 SpaceX | Embedded Software Engineer (Starlink)  | Bastrop, TX | 2026-01-13 | [Apply](https://boards.greenhouse.io/spacex/jobs/8368715002?gh_jid=8368715002) |
@@ -449,8 +449,8 @@
 | 🚀 Grammarly | Software Engineer, Frontend (Latin America) | LATAM; Remote | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7339850) |
 | 🚀 Grammarly | Software Engineer, Frontend | San Francisco or Remote (US, Canada, Argentina, Brazil, Mexico) | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7271992) |
 | 🚀 Grammarly | Software Engineer, Backend (Superhuman Mail) | San Francisco or Remote (US, Canada, Argentina, Brazil, Mexico) | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7339557) |
-| 🚀 Affirm | Software Engineer | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7499741003) |
 | 🚀 Affirm | Software Engineer | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7560426003) |
+| 🚀 Affirm | Software Engineer | Remote US | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7499741003) |
 | 🚀 Affirm | Software Engineer, Early Career | New York, New York, United States | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485072003) |
 | 🚀 Affirm | Software Engineer I, Back-end (Collections) | Remote Poland | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7538088003) |
 | 🚀 Affirm | Software Engineer II, Backend (Infrastructure) | Remote Canada | 2026-01-07 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7548340003) |
@@ -983,4 +983,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-21 08:47:15 UTC*
+*Last updated: 2026-01-21 09:19:45 UTC*
