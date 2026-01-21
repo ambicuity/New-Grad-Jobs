@@ -1500,24 +1500,6 @@ def main():
     print(f"   Jobs enriched with categories and flags")
     
     # Generate JSON data
-    # Sanitize jobs to remove NaN values
-    import math
-    def sanitize_value(v):
-        if isinstance(v, float):
-            if math.isnan(v) or math.isinf(v):
-                return None
-        return v
-
-    def deep_sanitize(obj):
-        if isinstance(obj, dict):
-            return {k: deep_sanitize(v) for k, v in obj.items()}
-        elif isinstance(obj, list):
-            return [deep_sanitize(v) for v in obj]
-        else:
-            return sanitize_value(obj)
-            
-    enriched_jobs = deep_sanitize(enriched_jobs)
-    
     jobs_json = generate_jobs_json(enriched_jobs, config)
     
     # Write JSON file
