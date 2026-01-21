@@ -943,11 +943,11 @@
       "is_closed": false
     },
     {
-      "id": "fivetran-site-reliability-engineer-ii-denver,-colorado,-united-states,-amer",
+      "id": "fivetran-site-reliability-engineer-ii-dublin,-dublin,-ireland,-emea",
       "company": "Fivetran",
       "title": "Site Reliability Engineer II",
-      "location": "Denver, Colorado, United States, AMER",
-      "url": "https://www.fivetran.com/careers/job?gh_jid=7582820003",
+      "location": "Dublin, Dublin, Ireland, EMEA",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7542088003",
       "posted_at": "2026-01-21T12:11:39",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -1803,7 +1803,7 @@
       "location": "Remote - USA",
       "url": "https://www.wiz.io/careers/job/4421449006/:title?gh_jid=4421449006",
       "posted_at": "2026-01-20T19:01:59",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -1829,7 +1829,7 @@
       "location": "New York City; Hybrid",
       "url": "https://job-boards.greenhouse.io/grammarly/jobs/7336882",
       "posted_at": "2026-01-20T19:00:20",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1855,7 +1855,7 @@
       "location": "Mountain View, California, USA",
       "url": "https://careers.withwaymo.com/jobs?gh_jid=7539951",
       "posted_at": "2026-01-20T18:59:08",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1881,7 +1881,7 @@
       "location": "United States - Remote",
       "url": "https://instacart.careers/job/?gh_jid=7450259",
       "posted_at": "2026-01-20T18:55:23",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1907,7 +1907,7 @@
       "location": "Costa Mesa, California, United States",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029465007?gh_jid=5029465007",
       "posted_at": "2026-01-20T18:48:10",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -2479,11 +2479,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-software-engineer,-new-grad-san-francisco,-seattle",
+      "id": "stripe-software-engineer,-new-grad-dublin",
       "company": "Stripe",
       "title": "Software Engineer, New Grad",
-      "location": "San Francisco, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
+      "location": "Dublin",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206515",
       "posted_at": "2026-01-20T17:44:20",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3781,11 +3781,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-ground-software-engineer,-space-washington,-district-of-columbia,-united-states",
+      "id": "anduril-ground-software-engineer,-space-costa-mesa,-california,-united-states",
       "company": "Anduril",
       "title": "Ground Software Engineer, Space",
-      "location": "Washington, District of Columbia, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4767772007?gh_jid=4767772007",
+      "location": "Costa Mesa, California, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3809,11 +3809,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-ground-software-engineer,-space-costa-mesa,-california,-united-states",
+      "id": "anduril-ground-software-engineer,-space-washington,-district-of-columbia,-united-states",
       "company": "Anduril",
       "title": "Ground Software Engineer, Space",
-      "location": "Costa Mesa, California, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4767772007?gh_jid=4767772007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4005,7 +4005,7 @@
       "is_closed": false
     },
     {
-      "id": "anduril-mission-software-engineer,-air-vehicle-autonomy,-frontend-seattle,-washington,-united-states",
+      "id": "anduril-mission-software-engineer,-air-vehicle-autonomy,-c++-washington,-district-of-columbia,-unite",
       "company": "Anduril",
       "title": "Mission Software Engineer, Air Vehicle Autonomy, Frontend",
       "location": "Seattle, Washington, United States",
@@ -4145,6 +4145,34 @@
       "is_closed": false
     },
     {
+      "id": "anduril-mission-software-engineer,-air-vehicle-autonomy,-genswe-washington,-district-of-columbia,-un",
+      "company": "Anduril",
+      "title": "Mission Software Engineer, Air Vehicle Autonomy, GenSWE",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007",
+      "posted_at": "2026-01-20T15:28:22",
+      "posted_display": "1 day ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "anduril-mission-software-engineer,-vehicle-software,-active-clearance-costa-mesa,-california,-united",
       "company": "Anduril",
       "title": "Mission Software Engineer, Vehicle Software, Active Clearance",
@@ -4233,7 +4261,7 @@
       "company": "Anduril",
       "title": "Mission Software Engineer, Vehicle Software, GenSWE",
       "location": "Costa Mesa, California, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4672868007?gh_jid=4672868007",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4926663007?gh_jid=4926663007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4261,7 +4289,7 @@
       "company": "Anduril",
       "title": "Mission Software Engineer, Vehicle Software, GenSWE",
       "location": "Costa Mesa, California, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4926663007?gh_jid=4926663007",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4672868007?gh_jid=4672868007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4404,6 +4432,34 @@
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4673939007?gh_jid=4673939007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "anduril-robotics-software-engineer,-air-vehicle-autonomy-seattle,-washington,-united-states",
+      "company": "Anduril",
+      "title": "Robotics Software Engineer, Air Vehicle Autonomy",
+      "location": "Seattle, Washington, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4674090007?gh_jid=4674090007",
+      "posted_at": "2026-01-20T15:28:22",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4733,11 +4789,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-software-engineer,-air-defense-irvine,-california,-united-states",
+      "id": "anduril-software-engineer,-air-defense-broomfield,-colorado,-united-states",
       "company": "Anduril",
       "title": "Software Engineer, Air Defense",
-      "location": "Irvine, California, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4930986007?gh_jid=4930986007",
+      "location": "Broomfield, Colorado, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5016812007?gh_jid=5016812007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4929,6 +4985,34 @@
       "is_closed": false
     },
     {
+      "id": "anduril-software-engineer,-connected-warfare-seattle,-washington,-united-states",
+      "company": "Anduril",
+      "title": "Software Engineer, Connected Warfare",
+      "location": "Seattle, Washington, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4541903007?gh_jid=4541903007",
+      "posted_at": "2026-01-20T15:28:22",
+      "posted_display": "1 day ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "anduril-software-engineer,-connected-warfare-costa-mesa,-california,-united-states",
       "company": "Anduril",
       "title": "Software Engineer, Connected Warfare",
@@ -5097,11 +5181,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-software-engineer,-device-infrastructure-atlanta,-georgia,-united-states",
+      "id": "anduril-software-engineer,-device-infrastructure-costa-mesa,-california,-united-states",
       "company": "Anduril",
       "title": "Software Engineer, Device Infrastructure",
-      "location": "Atlanta, Georgia, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5006927007?gh_jid=5006927007",
+      "location": "Costa Mesa, California, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4775866007?gh_jid=4775866007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -5125,11 +5209,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-software-engineer,-device-infrastructure-costa-mesa,-california,-united-states",
+      "id": "anduril-software-engineer,-device-infrastructure-atlanta,-georgia,-united-states",
       "company": "Anduril",
       "title": "Software Engineer, Device Infrastructure",
-      "location": "Costa Mesa, California, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4775866007?gh_jid=4775866007",
+      "location": "Atlanta, Georgia, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5006927007?gh_jid=5006927007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -5409,7 +5493,7 @@
       "company": "Anduril",
       "title": "Software Engineer, Imaging",
       "location": "Lexington, Massachusetts, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4967445007?gh_jid=4967445007",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4967446007?gh_jid=4967446007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -6021,11 +6105,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-systems-engineer-huntsville,-alabama,-united-states",
+      "id": "anduril-systems-engineer-broomfield,-colorado,-united-states",
       "company": "Anduril",
       "title": "Systems Engineer",
-      "location": "Huntsville, Alabama, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007",
+      "location": "Broomfield, Colorado, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4996190007?gh_jid=4996190007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -6049,11 +6133,11 @@
       "is_closed": false
     },
     {
-      "id": "anduril-systems-engineer-broomfield,-colorado,-united-states",
+      "id": "anduril-systems-engineer-huntsville,-alabama,-united-states",
       "company": "Anduril",
       "title": "Systems Engineer",
-      "location": "Broomfield, Colorado, United States",
-      "url": "https://boards.greenhouse.io/andurilindustries/jobs/4996190007?gh_jid=4996190007",
+      "location": "Huntsville, Alabama, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007",
       "posted_at": "2026-01-20T15:28:22",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -8885,7 +8969,7 @@
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twitch/jobs/8378879002",
       "posted_at": "2026-01-16T19:00:31",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -8911,7 +8995,7 @@
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7542471?gh_jid=7542471",
       "posted_at": "2026-01-16T18:40:48",
-      "posted_display": "4 days ago",
+      "posted_display": "5 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -10717,7 +10801,7 @@
       "location": "Office - Washington-Seattle",
       "url": "https://www.opendoor.com/careers/open-positions?gh_jid=4600965006",
       "posted_at": "2026-01-15T18:52:32",
-      "posted_display": "5 days ago",
+      "posted_display": "6 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -11239,11 +11323,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-bastrop,-tx",
+      "id": "spacex-application-software-engineer-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -11267,11 +11351,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-hawthorne,-ca",
+      "id": "spacex-application-software-engineer-bastrop,-tx",
       "company": "SpaceX",
       "title": "Application Software Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8211826002?gh_jid=8211826002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -11407,11 +11491,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -11435,11 +11519,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-engineer,-regulatory-(starlink)-washington,-dc",
+      "id": "spacex-data-engineer,-regulatory-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Data Engineer, Regulatory (Starlink)",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8116298002?gh_jid=8116298002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8116279002?gh_jid=8116279002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -11799,11 +11883,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8123867002?gh_jid=8123867002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
       "posted_at": "2026-01-15T13:23:19",
       "posted_display": "5 days ago",
       "source": "Greenhouse",
@@ -13481,7 +13565,7 @@
       "location": "Remote - Brazil",
       "url": "https://www.coinbase.com/careers/positions/7539703?gh_jid=7539703",
       "posted_at": "2026-01-14T19:02:20",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-14",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13509,7 +13593,7 @@
       "location": "Starbase, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8375551002?gh_jid=8375551002",
       "posted_at": "2026-01-14T18:50:19",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-01-14",
       "source": "Greenhouse",
       "category": {
         "id": "other",
@@ -16061,11 +16145,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-data-scientist-ii---product-analytics-remote---uk",
+      "id": "coinbase-data-scientist-ii---product-analytics-berlin,-germany",
       "company": "Coinbase",
       "title": "Data Scientist II - Product Analytics",
-      "location": "Remote - UK",
-      "url": "https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202",
+      "location": "Berlin, Germany",
+      "url": "https://www.coinbase.com/careers/positions/6746206?gh_jid=6746206",
       "posted_at": "2026-01-14T10:26:33",
       "posted_display": "2026-01-14",
       "source": "Greenhouse",
@@ -16089,11 +16173,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-data-scientist-ii---product-analytics-berlin,-germany",
+      "id": "coinbase-data-scientist-ii---product-analytics-remote---uk",
       "company": "Coinbase",
       "title": "Data Scientist II - Product Analytics",
-      "location": "Berlin, Germany",
-      "url": "https://www.coinbase.com/careers/positions/6746206?gh_jid=6746206",
+      "location": "Remote - UK",
+      "url": "https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202",
       "posted_at": "2026-01-14T10:26:33",
       "posted_display": "2026-01-14",
       "source": "Greenhouse",
@@ -19573,11 +19657,11 @@
       "is_closed": false
     },
     {
-      "id": "ripple-software-engineer-ii-san-francisco,-ca,-united-states",
+      "id": "ripple-software-engineer-ii-geneva,-switzerland",
       "company": "Ripple",
       "title": "Software Engineer II",
-      "location": "San Francisco, CA, United States",
-      "url": "https://ripple.com/careers/all-jobs/job/7470865?gh_jid=7470865",
+      "location": "Geneva, Switzerland",
+      "url": "https://ripple.com/careers/all-jobs/job/7134182?gh_jid=7134182",
       "posted_at": "2026-01-08T16:28:35",
       "posted_display": "2026-01-08",
       "source": "Greenhouse",
@@ -21800,8 +21884,8 @@
       "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002",
       "posted_at": "2025-12-31T11:15:39",
       "posted_display": "2025-12-31",
       "source": "Greenhouse",
@@ -26877,11 +26961,11 @@
       "is_closed": false
     },
     {
-      "id": "coinbase-software-engineer,-backend--(consumer---trading)-remote---usa",
+      "id": "coinbase-software-engineer,-backend-(consumer---stablecoin)-remote---usa",
       "company": "Coinbase",
-      "title": "Software Engineer, Backend  (Consumer - Trading)",
+      "title": "Software Engineer, Backend (Consumer - Stablecoin)",
       "location": "Remote - USA",
-      "url": "https://www.coinbase.com/careers/positions/6812261?gh_jid=6812261",
+      "url": "https://www.coinbase.com/careers/positions/5948501?gh_jid=5948501",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -26910,6 +26994,34 @@
       "title": "Software Engineer, Backend  (Consumer - Trading)",
       "location": "Remote - Canada",
       "url": "https://www.coinbase.com/careers/positions/6869392?gh_jid=6869392",
+      "posted_at": "2025-12-10T13:34:44",
+      "posted_display": "2025-12-10",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "coinbase-software-engineer,-backend--(consumer---trading)-remote---usa",
+      "company": "Coinbase",
+      "title": "Software Engineer, Backend  (Consumer - Trading)",
+      "location": "Remote - USA",
+      "url": "https://www.coinbase.com/careers/positions/6812261?gh_jid=6812261",
       "posted_at": "2025-12-10T13:34:44",
       "posted_display": "2025-12-10",
       "source": "Greenhouse",
@@ -30908,9 +31020,9 @@
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -31175,6 +31287,58 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "acturis-ltd-database-migration-analyst-(new-graduate)-victoria,-bc,-ca",
+      "company": "Acturis Ltd",
+      "title": "Database Migration Analyst (New Graduate)",
+      "location": "Victoria, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=5a96bdd0fd7ae235",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "matroid-software-engineer,-product-palo-alto,-ca,-us",
+      "company": "Matroid",
+      "title": "Software Engineer, Product",
+      "location": "Palo Alto, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=10f3163b82ee9b2d",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -32034,21 +32198,45 @@
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
-        "us_citizenship_required": true
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "rbc-summer-2026-student---business-product-analyst,-commercial-channels-vancouver,-bc,-ca",
+      "company": "RBC",
+      "title": "Summer 2026 Student - Business Product Analyst, Commercial Channels",
+      "location": "Vancouver, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=2dad85cc9890ae00",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
       },
       "is_closed": false
     },
@@ -32246,9 +32434,9 @@
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -33211,11 +33399,63 @@
       "is_closed": false
     },
     {
-      "id": "the-university-of-michigan-pde-career-program-assistant-for-masters-students--gssa-for-fall-2026-ann",
-      "company": "The University of Michigan",
-      "title": "PDE Career Program Assistant for Masters Students- GSSA for Fall 2026",
-      "location": "Ann Arbor, MI, US",
-      "url": "https://www.indeed.com/viewjob?jk=9cf5f77539260a69",
+      "id": "great-hearts-academies-special-education-teacher-(middle/high-school)-(2026-2027)-scottsdale,-az,-us",
+      "company": "Great Hearts Academies",
+      "title": "Special Education Teacher (Middle/High School) (2026-2027)",
+      "location": "Scottsdale, AZ, US",
+      "url": "https://www.indeed.com/viewjob?jk=b54fdd18978278c9",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "suny-brockport-administrative-assistant-1/trainee--undergraduate-admissions--ny-helps-brockport,-ny,",
+      "company": "SUNY Brockport",
+      "title": "Administrative Assistant 1/Trainee- Undergraduate Admissions- NY HELPS",
+      "location": "Brockport, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=8ed47d3ec9b82d3c",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "federal-reserve-bank-of-kansas-city-entry-level-analyst---summer-2026-kansas-city,-mo,-us",
+      "company": "Federal Reserve Bank of Kansas City",
+      "title": "Entry Level Analyst - Summer 2026",
+      "location": "Kansas City, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=d52f21f63e8eb0cc",
       "posted_at": "",
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
@@ -33354,9 +33594,9 @@
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "other",
@@ -33371,24 +33611,54 @@
       "is_closed": false
     },
     {
-      "id": "pembroke-hospital-registered-nurse-(rn)---new-graduate-pembroke,-ma,-us",
-      "company": "Pembroke Hospital",
-      "title": "Registered Nurse (RN) - New Graduate",
-      "location": "Pembroke, MA, US",
-      "url": "https://www.indeed.com/viewjob?jk=6553961a4dc31c12",
+      "id": "td-bank-data-scientist-iii-(us)-new-york,-ny,-us",
+      "company": "TD Bank",
+      "title": "Data Scientist III (US)",
+      "location": "New York, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=0b37d0d5df224650",
       "posted_at": "",
       "posted_display": "Unknown",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "td-bank-data-scientist-ii-(us)-new-york,-ny,-us",
+      "company": "TD Bank",
+      "title": "Data Scientist II (US)",
+      "location": "New York, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=3a06134089703759",
+      "posted_at": "",
+      "posted_display": "Unknown",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -33547,88 +33817,6 @@
         "emoji": "",
         "label": "",
         "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "capgemini-genai--data-scientist-/-ml-engineer---ai-&-analytic-seattle,-wa,-us",
-      "company": "Capgemini",
-      "title": "GenAI- Data Scientist / ML Engineer - AI & Analytic",
-      "location": "Seattle, WA, US",
-      "url": "https://www.indeed.com/viewjob?jk=3c5c3d0687b8bcae",
-      "posted_at": "",
-      "posted_display": "Unknown",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "td-bank-data-scientist-iii-(us)-new-york,-ny,-us",
-      "company": "TD Bank",
-      "title": "Data Scientist III (US)",
-      "location": "New York, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=0b37d0d5df224650",
-      "posted_at": "",
-      "posted_display": "Unknown",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "td-bank-data-scientist-ii-(us)-new-york,-ny,-us",
-      "company": "TD Bank",
-      "title": "Data Scientist II (US)",
-      "location": "New York, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=3a06134089703759",
-      "posted_at": "",
-      "posted_display": "Unknown",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
       },
       "flags": {
         "no_sponsorship": false,

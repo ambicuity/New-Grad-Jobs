@@ -798,6 +798,7 @@
 | 🚀 Coinbase | Software Engineer, Backend (Consumer - Stablecoin) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/5948501?gh_jid=5948501) |
 | 🚀 Coinbase | Software Engineer, Backend  (Consumer - Trading) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6812261?gh_jid=6812261) |
 | 🚀 Coinbase | Software Engineer, Backend  (Consumer - Trading) | Remote - Canada | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6869392?gh_jid=6869392) |
+| 🚀 Coinbase | Software Engineer, Backend  (Consumer - Trading) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6812261?gh_jid=6812261) |
 | 🚀 Coinbase | Software Engineer, Backend (Developer - x402) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7306942?gh_jid=7306942) |
 | 🚀 Coinbase | Software Engineer, Backend - Financial Hub | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/7009446?gh_jid=7009446) |
 | 🚀 Coinbase | Software Engineer, Backend (Institutional - Markets, Derivatives) | Remote - USA | 2025-12-10 | [Apply](https://www.coinbase.com/careers/positions/6968491?gh_jid=6968491) |
@@ -861,6 +862,9 @@
 | Capgemini | Associate Software Engineer | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=59af1e540618ea6c) |
 | The Whiting-Turner Contracting Company | Entry-Level Engineer | Lake Oswego, OR, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=0e16d91a4ce90dec) |
 | AeroVironment | Software Engineer I (Applications) | Simi Valley, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=eb94e3ac75f715d3) |
+| Amazon.com | Software Engineer II, Twitch | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=45dc957096bbf14c) |
+| Amazon.com | Software Engineer II, Twitch | Seattle, WA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=d8ab0dc3355fe9cd) |
+| The Whiting-Turner Contracting Company | Entry-Level Engineer | Lake Oswego, OR, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=0e16d91a4ce90dec) |
 | NIBCO INC. | Software Engineer Trainee | Elkhart, IN, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f90865f352fbf364) |
 | BlackRock | Java Developer, Aladdin Engineering, Associate | HR, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=65bd5fc0271caaa8) |
 | ASSA ABLOY Group | DevOps Engineer | TN, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=8c4913fb75960d46) |
@@ -951,8 +955,8 @@
 | 🚀 Waymo | Machine Learning Engineer, Simulation Realism | Mountain View, CA, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6499165) |
 | 🚀 Waymo | Machine Learning Engineer, Simulation Realism  | Mountain View, CA, USA | 6 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=6688617) |
 | 🚀 Grammarly | Machine Learning Engineer, Agents | San Francisco; Hybrid | 2026-01-14 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6392339) |
-| 🚀 Coinbase | Data Scientist II - Product Analytics | Remote - UK | 2026-01-14 | [Apply](https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202) |
 | 🚀 Coinbase | Data Scientist II - Product Analytics | Berlin, Germany | 2026-01-14 | [Apply](https://www.coinbase.com/careers/positions/6746206?gh_jid=6746206) |
+| 🚀 Coinbase | Data Scientist II - Product Analytics | Remote - UK | 2026-01-14 | [Apply](https://www.coinbase.com/careers/positions/6746202?gh_jid=6746202) |
 | 🚀 Coinbase | Data Scientist II - Product | Remote - USA | 2026-01-14 | [Apply](https://www.coinbase.com/careers/positions/5090295?gh_jid=5090295) |
 | 🔥 Lyft | Machine Learning Engineer, Mapping | Toronto, Canada | 2026-01-14 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8284517002?gh_jid=8284517002) |
 | 🚀 Dropbox | Data Scientist | Remote - US: Select locations | 2026-01-13 | [Apply](https://jobs.dropbox.com/listing/7486226?gh_jid=7486226) |
@@ -1053,6 +1057,9 @@
 | Fivetran | Site Reliability Engineer II | Toronto, Ontario, Canada | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7582829003) |
 | Fivetran | Site Reliability Engineer II | Oakland, California, United States, AMER | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7581670003) |
 | Fivetran | Site Reliability Engineer II | Denver, Colorado, United States, AMER | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7582820003) |
+| Fivetran | Site Reliability Engineer II | Toronto, Ontario, Canada | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7582829003) |
+| Fivetran | Site Reliability Engineer II | Oakland, California, United States, AMER | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7581670003) |
+| Fivetran | Site Reliability Engineer II | Dublin, Dublin, Ireland, EMEA | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7542088003) |
 | SingleStore | Site Reliability Engineer | India | Today | [Apply](https://job-boards.greenhouse.io/singlestore/jobs/7432205) |
 | 🚀 Datadog | Security Engineer II, Risk Engineering | New York, New York, USA | Today | [Apply](https://careers.datadoghq.com/detail/7373580/?gh_jid=7373580) |
 | Fireblocks | Information Security Engineer | Tel Aviv-Yafo, Tel Aviv District, Israel | Today | [Apply](https://job-boards.greenhouse.io/fireblocks/jobs/4646139006) |
@@ -1141,6 +1148,10 @@
 | TD | Security Engineer - Data Base Engineer-2 | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=4f95f4d79a495b57) |
 | TD | Engineer II - DevSecOps Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=84738de1d79b651f) |
 | TD | Engineer II - DevSecOps Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=536b126355953dcb) |
+| Sunnybrook Health Sciences Centre | Research Assistant (SRI) - Physical Sciences - Casual 2026-16050 | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=e4242191ea10ad32) |
+| Darktrace | Cyber Infrastructure Engineer | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=2fddb48026d9145d) |
+| JPMorganChase | Site Reliability Engineer III | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=01d9ec4cbc68839a) |
+| VT Netzwelt | Associate Test Engineer | PB, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=db46205ae29ea585) |
 | NTT DATA | MS Network Engineer | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=5c28bb02d175159f) |
 | NTT DATA | MS Network Engineer | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=868d8ab7c5f58e51) |
 | Hatch | Structural Engineer-in-Training (EIT) - New Graduate | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=7302868da256dfd8) |
@@ -1244,6 +1255,7 @@
 | Flexport | Air Operations Associate, Ho Chi Minh City | Ho Chi Minh City, Ho Chi Minh City, Vietnam | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/7366295?gh_jid=7366295) |
 | Flexport | Inbound Sales Development Representative - New Grad | Chicago, Illinois, United States | 2026-01-05 | [Apply](https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Hawthorne, CA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002) |
 | 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2025-12-31 | [Apply](https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002) |
 | 🚀 Grammarly | Early Career Program | San Francisco | 2025-12-19 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7474047) |
@@ -1314,9 +1326,9 @@
 | Rice University | Graduate and Undergraduate Program Administrator | Houston, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=ae3dddfdf22214fa) |
 | 🔥 Mastercard | Technical Program Management Analyst I, Launch Program 2026 - New York City, NY | New York, NY, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=591d26d6bc149c73) |
 | Turner Construction Company | Project Coordinator, New Graduate \| Construction | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=c9ec5620f161e974) |
+| Rice University | Graduate and Undergraduate Program Administrator | Houston, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=ae3dddfdf22214fa) |
 | Intelligent Consulting Engineers & Builders Pvt Ltd | Trainee -Human Resources Operations and Administration | UP, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=15f74b6a723a3ea5) |
 | Genpact | Management Trainee RTR | RJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=d7ba4b19783b0903) |
-| Doane Grant Thornton LLP | Analyst, US Corporate Tax [New Grad 2026] | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=d88c3ba0ade78b84) |
 | OMERS | Student, Global Equities Portfolio Analytics (Summer 2026, 4 Months) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a5f9a9ff88b5f04f) |
 | 🔥 Wells Fargo | Engineering Associate - Application Development | Irving, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c7094a22a7b0940f) |
 | 🔥 Wells Fargo | Engineering Associate - Application Modernization | Chandler, AZ, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=d277bf7f92816b4d) |
