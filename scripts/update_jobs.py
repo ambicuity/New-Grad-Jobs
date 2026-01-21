@@ -12,10 +12,11 @@ import re
 import sys
 import time
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from dateutil import parser as date_parser
 from typing import List, Dict, Any, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urlparse
 
 # Import JobSpy for additional job site scraping
 try:
@@ -465,6 +466,119 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
     
     return all_jobs
 
+def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Workday API"""
+    all_jobs = []
+    
+    for company in companies:
+        company_name = company.get('name')
+        workday_url = company.get('workday_url')
+        
+        if not company_name or not workday_url:
+            continue
+            
+        print(f"Fetching jobs from {company_name} (Workday)...")
+        
+        # Construct Workday API URL
+        # Pattern: https://<host>/wday/cxs/<tenant>/<site>/jobs
+        try:
+            parsed = urlparse(workday_url)
+            host = parsed.netloc
+            site_path = parsed.path.strip('/')
+            
+            # Extract tenant and site from URL
+            # Example: https://nvidia.wd5.myworkdayjobs.com/NVIDIA_External_Career_Site
+            # Tenant: nvidia, Site: NVIDIA_External_Career_Site
+            
+            # If host starts with tenant name (e.g. nvidia.wd5...), use that
+            # Otherwise, try to extract from path or config
+            
+            # Simple heuristic for now: 
+            # Subdomain is usually "tenant.wdN" or just "tenant"
+            # We need the "tenant" for the API path.
+            
+            subdomin_parts = host.split('.')
+            tenant = subdomin_parts[0] # Default guess
+            
+            # Site ID is the last part of the path
+            site_id = site_path.split('/')[-1]
+            
+            api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+            
+            jobs = []
+            offset = 0
+            limit = 20
+            
+            while True:
+                payload = {
+                    "appliedFacets": {},
+                    "limit": limit,
+                    "offset": offset,
+                    "searchText": "" # Fetch all, filter locally
+                }
+                
+                headers = {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                }
+                
+                response = requests.post(api_url, json=payload, headers=headers, timeout=15)
+                
+                if response.status_code == 404:
+                     # Try alternative tenant extraction if 404
+                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                     # In that case, tenant is matching path[0]
+                     path_parts = site_path.split('/')
+                     if len(path_parts) >= 2:
+                         tenant = path_parts[0]
+                         site_id = path_parts[-1]
+                         api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+                         response = requests.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=15)
+
+                if not response.ok:
+                    print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
+                    break
+                    
+                data = response.json()
+                job_items = data.get('jobPostings', [])
+                
+                if not job_items:
+                    break
+                    
+                for item in job_items:
+                    title = item.get('title', '')
+                    external_path = item.get('externalPath', '')
+                    job_url = f"https://{host}{external_path}"
+                    posted_on = item.get('postedOn', '')
+                    
+                    # Convert posted_on to approximate date if possible, or just leave text
+                    # Workday sends "Posted Yesterday", "Posted 30+ Days Ago"
+                    # We might need to parse this or just use current date if it says "Today"
+                    
+                    jobs.append({
+                        'company': company_name,
+                        'title': title,
+                        'location': item.get('locationsText', 'Remote'),
+                        'url': job_url,
+                        'posted_at': posted_on, # Raw string for now, loop will parse if date format
+                        'source': 'Workday',
+                        'description': '' # Not fetching full desc to save requests
+                    })
+                
+                offset += limit
+                if len(jobs) >= 200: # Safety limit
+                    break
+                
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            all_jobs.extend(jobs)
+            
+        except Exception as e:
+            print(f"  ❌ Error processing {company_name}: {e}")
+            continue
+
+    return all_jobs
+
 def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs using JobSpy library from multiple job sites - PARALLEL VERSION
     
@@ -809,8 +923,13 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         return False
     
     try:
+        # Handle already parsed date objects
+        if isinstance(posted_at, (datetime, date)):
+             posted_date = posted_at
+             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
+                 posted_date = datetime.combine(posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
-        if isinstance(posted_at, (int, float)):
+        elif isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
         else:
             posted_date = date_parser.parse(posted_at)
@@ -1329,6 +1448,13 @@ def main():
             futures['jobspy'] = executor.submit(
                 fetch_jobspy_jobs,
                 config['apis']['jobspy']
+            )
+            
+        # Submit Workday parallel fetch
+        if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
+             futures['workday'] = executor.submit(
+                fetch_workday_jobs,
+                config['apis']['workday']['companies']
             )
         
         # Collect results from all futures

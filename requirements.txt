@@ -2,3 +2,4 @@ requests>=2.31.0
 PyYAML>=6.0.1
 python-dateutil>=2.8.2
 python-jobspy>=1.1.16
+playwright>=1.41.0
