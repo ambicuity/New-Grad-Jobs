@@ -641,10 +641,22 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 # Convert DataFrame to list of dictionaries
                 for _, row in jobs_df.iterrows():
                     description = row.get('description', '') or ''
+                    
+                    # Sanitize pandas NaN values (they serialize as invalid JSON)
+                    company = row.get('company', 'Unknown')
+                    if company is None or (isinstance(company, float) and str(company) == 'nan'):
+                        company = 'Unknown'
+                    title = row.get('title', '')
+                    if title is None or (isinstance(title, float) and str(title) == 'nan'):
+                        title = ''
+                    location = row.get('location', 'Remote')
+                    if location is None or (isinstance(location, float) and str(location) == 'nan'):
+                        location = 'Remote'
+                    
                     job = {
-                        'company': row.get('company', 'Unknown'),
-                        'title': row.get('title', ''),
-                        'location': row.get('location', 'Remote'),
+                        'company': str(company),
+                        'title': str(title),
+                        'location': str(location),
                         'url': row.get('job_url', ''),
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
