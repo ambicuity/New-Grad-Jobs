@@ -983,4 +983,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-21 07:47:47 UTC*
+*Last updated: 2026-01-21 08:00:34 UTC*
