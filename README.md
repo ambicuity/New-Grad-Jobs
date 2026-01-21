@@ -61,8 +61,8 @@
 | 🔥 Stripe | Software Engineer - Smart Contract, Bridge | San Francisco or New York | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7507904) |
 | 🔥 Stripe | Software Engineer, Commercial Experience | Bengaluru | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7436194) |
 | 🚀 Dropbox | Infrastructure Software Engineer | Remote - Canada: Select locations | Today | [Apply](https://jobs.dropbox.com/listing/6330388?gh_jid=6330388) |
-| 🔥 Stripe | Software Engineer, Change data capture | Bengaluru | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7365356) |
 | 🚀 Dropbox | Infrastructure Software Engineer | Remote - US: Select locations | Today | [Apply](https://jobs.dropbox.com/listing/6330390?gh_jid=6330390) |
+| 🔥 Stripe | Software Engineer, Change data capture | Bengaluru | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7365356) |
 | 🔥 Stripe | Software Engineer, Bridge | San Francisco, NY, Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7277110) |
 | 🔥 Stripe | Software Engineer, New Grad | Barcelona | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7213871) |
 | 🔥 Stripe | Software Engineer, Money Movement  | London | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7208537) |
@@ -979,4 +979,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-01-21 11:43:07 UTC*
+*Last updated: 2026-01-21 11:57:11 UTC*
