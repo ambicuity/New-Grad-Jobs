@@ -3,9 +3,19 @@
 New Grad Jobs Aggregator
 Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs 
 and updates README.md and jobs.json
+
+Performance Optimizations:
+- Connection pooling with persistent sessions
+- HTTP/1.1 keep-alive for connection reuse
+- Increased parallelism (50+ concurrent workers)
+- Compressed responses (gzip/brotli)
+- Reduced timeouts with better retry logic
+- DNS caching and TCP connection reuse
 """
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import yaml
 import json
 import re
@@ -17,6 +27,7 @@ from dateutil import parser as date_parser
 from typing import List, Dict, Any, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
+from functools import lru_cache
 
 # Import JobSpy for additional job site scraping
 try:
@@ -25,6 +36,53 @@ try:
 except ImportError:
     JOBSPY_AVAILABLE = False
     print("⚠️  JobSpy not available. Install with: pip install python-jobspy")
+
+# ============================================================================
+# PERFORMANCE OPTIMIZATION: CONNECTION POOLING & SESSION MANAGEMENT
+# ============================================================================
+
+def create_optimized_session() -> requests.Session:
+    """
+    Create a requests session with optimized settings for high-performance scraping:
+    - Connection pooling (50 connections per host)
+    - Automatic retries with exponential backoff
+    - HTTP keep-alive for connection reuse
+    - Compression support (gzip, deflate, br)
+    - DNS caching via connection pooling
+    """
+    session = requests.Session()
+    
+    # Configure retry strategy with exponential backoff
+    retry_strategy = Retry(
+        total=3,  # Max 3 retries
+        backoff_factor=0.3,  # Wait 0.3, 0.6, 1.2 seconds between retries
+        status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
+        allowed_methods=["GET", "POST"],  # Retry GET and POST
+    )
+    
+    # Configure HTTP adapter with connection pooling
+    adapter = HTTPAdapter(
+        max_retries=retry_strategy,
+        pool_connections=100,  # Number of connection pools to cache (one per unique host)
+        pool_maxsize=50,  # Maximum size of each connection pool (connections per host)
+        pool_block=False  # Don't block on connection pool exhaustion
+    )
+    
+    # Mount adapter for both HTTP and HTTPS
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    
+    # Set default headers for compression and keep-alive
+    session.headers.update({
+        'Accept-Encoding': 'gzip, deflate, br',  # Request compressed responses
+        'Connection': 'keep-alive',  # Reuse TCP connections
+        'User-Agent': 'NewGradJobs-Aggregator/2.0 (Performance-Optimized)'
+    })
+    
+    return session
+
+# Global session for connection reuse across all requests
+HTTP_SESSION = create_optimized_session()
 
 # ============================================================================
 # COMPANY CLASSIFICATIONS
@@ -239,8 +297,12 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
         'emoji': CATEGORY_PATTERNS['other']['emoji']
     }
 
+@lru_cache(maxsize=512)  # Cache company tier lookups for faster repeated access
 def get_company_tier(company_name: str) -> Dict[str, Any]:
-    """Get company tier classification including sectors"""
+    """Get company tier classification including sectors
+    
+    Cached for performance since company names are repeated across multiple jobs.
+    """
     # Check primary tiers first
     if company_name in FAANG_PLUS:
         tier_info = {'tier': 'faang_plus', 'emoji': '🔥', 'label': 'FAANG+'}
@@ -288,7 +350,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
             
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = requests.get(url, timeout=15)
+            response = HTTP_SESSION.get(url, timeout=8)  # Reduced timeout for faster failure
             response.raise_for_status()
             data = response.json()
             
@@ -344,7 +406,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
             
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = requests.get(url, timeout=15)
+            response = HTTP_SESSION.get(url, timeout=8)  # Reduced timeout for faster failure
             response.raise_for_status()
             data = response.json()
             
@@ -407,7 +469,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
                 
-                response = requests.get(url, timeout=15)
+                response = HTTP_SESSION.get(url, timeout=8)
                 response.raise_for_status()
                 data = response.json()
                 
@@ -523,7 +585,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
                 
-                response = requests.post(api_url, json=payload, headers=headers, timeout=15)
+                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=10)
                 
                 if response.status_code == 404:
                      # Try alternative tenant extraction if 404
@@ -534,7 +596,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                          tenant = path_parts[0]
                          site_id = path_parts[-1]
                          api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                         response = requests.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=15)
+                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=10)
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -728,15 +790,20 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 # PARALLEL FETCHING FUNCTIONS (Performance Optimization)
 # ============================================================================
 
-def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = 15) -> List[Dict[str, Any]]:
+def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
     
-    Parallelizes ~70+ company API calls for ~5x speed improvement.
+    Parallelizes ~70+ company API calls with optimized worker count.
+    Auto-scales workers based on company count for maximum efficiency.
     """
     all_jobs = []
     total = len(companies)
     completed = 0
     errors = 0
+    
+    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 50
+    if max_workers is None:
+        max_workers = min(50, max(20, total // 2))
     
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
     
@@ -760,12 +827,19 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     return all_jobs
 
 
-def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = 10) -> List[Dict[str, Any]]:
-    """Fetch all Lever jobs in parallel using ThreadPoolExecutor"""
+def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
+    """Fetch all Lever jobs in parallel using ThreadPoolExecutor
+    
+    Auto-scales workers based on company count for optimal performance.
+    """
     all_jobs = []
     total = len(companies)
     completed = 0
     errors = 0
+    
+    # AUTO-SCALE: Use 1 worker per company for small lists, max 30
+    if max_workers is None:
+        max_workers = min(30, max(10, total))
     
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
     
@@ -789,12 +863,16 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     return all_jobs
 
 
-def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = 8) -> List[Dict[str, Any]]:
+def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch Google Careers jobs in parallel for all search terms"""
     all_jobs = []
     total = len(search_terms)
     completed = 0
     errors = 0
+    
+    # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 25
+    if max_workers is None:
+        max_workers = min(25, max(8, total * 3))
     
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
     
@@ -811,7 +889,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = 8) ->
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
                 
-                response = requests.get(url, timeout=15)
+                response = HTTP_SESSION.get(url, timeout=8)
                 response.raise_for_status()
                 data = response.json()
                 
@@ -1276,20 +1354,20 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         else:
             history = []
     except Exception as e:
-        logger.warning(f"Could not load market history: {e}")
+        print(f"  ⚠️  Could not load market history: {e}")
         history = []
     
     # Check if today's snapshot already exists (avoid duplicates)
     existing_dates = {entry['date'] for entry in history}
     if today not in existing_dates:
         history.append(snapshot)
-        logger.info(f"Added market snapshot for {today}: {len(jobs)} jobs")
+        print(f"  ✓ Added market snapshot for {today}: {len(jobs)} jobs")
     else:
         # Update today's snapshot if it exists
         for i, entry in enumerate(history):
             if entry['date'] == today:
                 history[i] = snapshot
-                logger.info(f"Updated market snapshot for {today}: {len(jobs)} jobs")
+                print(f"  ✓ Updated market snapshot for {today}: {len(jobs)} jobs")
                 break
     
     # Keep only last 90 days
@@ -1316,9 +1394,9 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         os.makedirs(os.path.dirname(history_path), exist_ok=True)
         with open(history_path, 'w', encoding='utf-8') as f:
             json.dump(history_data, f, indent=2, ensure_ascii=False)
-        logger.info(f"Saved market history: {len(history)} snapshots (last 90 days)")
+        print(f"  ✓ Saved market history: {len(history)} snapshots (last 90 days)")
     except Exception as e:
-        logger.error(f"Failed to save market history: {e}")
+        print(f"  ❌ Failed to save market history: {e}")
 
 def predict_hiring_trends() -> None:
     """
@@ -1328,7 +1406,7 @@ def predict_hiring_trends() -> None:
     api_key = os.environ.get('GOOGLE_API_KEY')
     
     if not api_key:
-        logger.warning("GOOGLE_API_KEY not found - skipping ML predictions")
+        print("  ⚠️  GOOGLE_API_KEY not found - skipping ML predictions")
         return
     
     # Check if predictions were already generated today
@@ -1343,17 +1421,17 @@ def predict_hiring_trends() -> None:
                 
                 # Check if predictions were generated today
                 if generated_date.startswith(today):
-                    logger.info(f"Predictions already generated today ({today}) - skipping")
+                    print(f"  ✓ Predictions already generated today ({today}) - skipping")
                     return
     except Exception as e:
-        logger.warning(f"Could not check existing predictions: {e}")
+        print(f"  ⚠️  Could not check existing predictions: {e}")
     
     # Load market history
     history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
     
     try:
         if not os.path.exists(history_path):
-            logger.info("Market history not found - predictions available after data collection")
+            print("  ℹ️  Market history not found - predictions available after data collection")
             return
             
         with open(history_path, 'r', encoding='utf-8') as f:
@@ -1361,11 +1439,11 @@ def predict_hiring_trends() -> None:
             snapshots = history_data.get('snapshots', [])
         
         if len(snapshots) < 7:
-            logger.info(f"Not enough data for predictions ({len(snapshots)} days, need 7+)")
+            print(f"  ℹ️  Not enough data for predictions ({len(snapshots)} days, need 7+)")
             return
             
     except Exception as e:
-        logger.error(f"Failed to load market history: {e}")
+        print(f"  ❌ Failed to load market history: {e}")
         return
     
     # Prepare data summary for Gemini
@@ -1445,11 +1523,11 @@ Respond in JSON format:
             }
         }
         
-        response = requests.post(
+        response = HTTP_SESSION.post(
             f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}',
             headers=headers,
             json=payload,
-            timeout=30
+            timeout=20  # Reduced from 30s
         )
         
         if response.status_code == 200:
@@ -1481,15 +1559,15 @@ Respond in JSON format:
                 with open(predictions_path, 'w', encoding='utf-8') as f:
                     json.dump(predictions, f, indent=2, ensure_ascii=False)
                 
-                logger.info(f"Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
-                logger.warning("No predictions in Gemini response")
+                print("  ⚠️  No predictions in Gemini response")
                 
         else:
-            logger.error(f"Gemini API error: {response.status_code} - {response.text}")
+            print(f"  ❌ Gemini API error: {response.status_code} - {response.text}")
             
     except Exception as e:
-        logger.error(f"Failed to generate predictions: {e}")
+        print(f"  ❌ Failed to generate predictions: {e}")
 
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
@@ -1690,7 +1768,9 @@ def main():
     # Phase 1: Fetch from all API sources IN PARALLEL
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
     
-    with ThreadPoolExecutor(max_workers=4) as executor:
+    # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
+    # Increased from 4 to 8 workers to handle all sources without blocking
+    with ThreadPoolExecutor(max_workers=8) as executor:
         futures = {}
         
         # Submit Greenhouse parallel fetch
