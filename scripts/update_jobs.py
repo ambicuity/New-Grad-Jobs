@@ -1331,6 +1331,23 @@ def predict_hiring_trends() -> None:
         logger.warning("GOOGLE_API_KEY not found - skipping ML predictions")
         return
     
+    # Check if predictions were already generated today
+    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+    today = datetime.now().strftime('%Y-%m-%d')
+    
+    try:
+        if os.path.exists(predictions_path):
+            with open(predictions_path, 'r', encoding='utf-8') as f:
+                existing_predictions = json.load(f)
+                generated_date = existing_predictions.get('generated_at', '')
+                
+                # Check if predictions were generated today
+                if generated_date.startswith(today):
+                    logger.info(f"Predictions already generated today ({today}) - skipping")
+                    return
+    except Exception as e:
+        logger.warning(f"Could not check existing predictions: {e}")
+    
     # Load market history
     history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
     
