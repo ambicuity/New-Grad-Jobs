@@ -1454,11 +1454,9 @@ h3 {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
     transition: all var(--transition-normal);
     box-shadow: var(--shadow-md);
+    text-align: center;
 }
 
 .stat-card:hover {
@@ -1467,20 +1465,8 @@ h3 {
     border-color: var(--border-color-hover);
 }
 
-.stat-icon {
-    font-size: 2.5rem;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent-gradient);
-    border-radius: var(--radius-md);
-    flex-shrink: 0;
-}
-
 .stat-content {
-    flex: 1;
+    width: 100%;
 }
 
 .stat-label {
@@ -1493,11 +1479,12 @@ h3 {
 }
 
 .stat-value {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: var(--text-primary);
     line-height: 1;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .stat-sublabel {
@@ -1529,21 +1516,17 @@ h3 {
 }
 
 .comparison-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
     margin-bottom: 1.5rem;
-}
-
-.comparison-header .icon {
-    font-size: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .comparison-header h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 0;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .comparison-value {
@@ -1635,12 +1618,6 @@ h3 {
     border-radius: var(--radius-lg);
 }
 
-.comparison-message .icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
 .comparison-message p {
     color: var(--text-secondary);
     font-size: 1.125rem;
@@ -1662,9 +1639,6 @@ h3 {
 }
 
 .prediction-outlook {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
     padding: 1.5rem;
     border-radius: var(--radius-md);
     border: 2px solid;
@@ -1685,15 +1659,12 @@ h3 {
     border-color: rgba(239, 68, 68, 0.3);
 }
 
-.outlook-emoji {
-    font-size: 3rem;
-}
-
 .outlook-content h3 {
     color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 0 0.5rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .confidence {
@@ -1724,21 +1695,19 @@ h3 {
 }
 
 .prediction-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
     margin-bottom: 1.25rem;
-}
-
-.prediction-header .icon {
-    font-size: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .prediction-header h4 {
     color: var(--text-primary);
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     margin: 0;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .prediction-value {
@@ -1799,8 +1768,9 @@ h3 {
 .trend-section h4 {
     color: var(--text-primary);
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 0 1rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .trend-section ul {
@@ -1837,8 +1807,9 @@ h3 {
 .insights-section h4 {
     color: var(--text-primary);
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 0 1rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .ai-insights {
@@ -1867,12 +1838,6 @@ h3 {
     border-radius: var(--radius-lg);
 }
 
-.prediction-message .icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
 .prediction-message p {
     color: var(--text-secondary);
     font-size: 1.125rem;
@@ -1891,9 +1856,7 @@ h3 {
     font-weight: 800;
     color: var(--text-primary);
     margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 /* Chart Containers */
@@ -2047,9 +2010,8 @@ h3 {
     border-color: var(--border-color-hover);
 }
 
-.insight-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.insight-content {
+    width: 100%;
 }
 
 .insight-title {
@@ -2059,13 +2021,15 @@ h3 {
     letter-spacing: 0.5px;
     font-weight: 600;
     margin-bottom: 0.75rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .insight-value {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 .insight-description {

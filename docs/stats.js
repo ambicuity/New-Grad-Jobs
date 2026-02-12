@@ -294,7 +294,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     // Most popular category
     const topCategory = categories.reduce((max, cat) => cat.count > max.count ? cat : max, categories[0]);
     insights.push({
-        icon: topCategory.emoji,
         title: 'Most In-Demand Role',
         value: topCategory.name,
         description: `${topCategory.count} positions (${Math.round(topCategory.count / jobs.length * 100)}% of all jobs)`
@@ -302,7 +301,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     
     // Top hiring company
     insights.push({
-        icon: '🏆',
         title: 'Top Hiring Company',
         value: topCompanies[0][0],
         description: `${topCompanies[0][1]} open positions right now`
@@ -310,7 +308,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     
     // Location diversity
     insights.push({
-        icon: '🌍',
         title: 'Geographic Reach',
         value: `${topLocations.length}+ countries`,
         description: `Opportunities available globally with ${topLocations[0][0]} leading at ${topLocations[0][1]} jobs`
@@ -320,7 +317,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     const faangCount = jobs.filter(j => j.company_tier?.tier === 'faang_plus').length;
     if (faangCount > 0) {
         insights.push({
-            icon: '🔥',
             title: 'FAANG+ Opportunities',
             value: `${faangCount} positions`,
             description: `${Math.round(faangCount / jobs.length * 100)}% of all jobs are at top-tier companies`
@@ -331,7 +327,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     const remoteCount = jobs.filter(j => /remote/i.test(j.location)).length;
     if (remoteCount > 0) {
         insights.push({
-            icon: '🏠',
             title: 'Remote-Friendly',
             value: `${remoteCount} remote jobs`,
             description: `${Math.round(remoteCount / jobs.length * 100)}% of positions offer remote work`
@@ -341,7 +336,6 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
     // Sponsorship info
     const sponsorshipCount = jobs.filter(j => !j.flags?.no_sponsorship).length;
     insights.push({
-        icon: '✈️',
         title: 'Visa Sponsorship',
         value: `${sponsorshipCount} jobs`,
         description: `${Math.round(sponsorshipCount / jobs.length * 100)}% don't explicitly exclude sponsorship`
@@ -397,7 +391,6 @@ function renderComparisons(comparisons) {
         html += `
             <div class="comparison-card">
                 <div class="comparison-header">
-                    <span class="icon">📈</span>
                     <h3>Week-over-Week</h3>
                 </div>
                 <div class="comparison-value ${colorClass}">
@@ -431,7 +424,6 @@ function renderComparisons(comparisons) {
         html += `
             <div class="comparison-card">
                 <div class="comparison-header">
-                    <span class="icon">📊</span>
                     <h3>Month-over-Month</h3>
                 </div>
                 <div class="comparison-value ${colorClass}">
@@ -467,7 +459,6 @@ function renderPredictions(predictions) {
     if (!predictions) {
         container.innerHTML = `
             <div class="prediction-message">
-                <span class="icon">🔮</span>
                 <p>AI predictions available after 7 days of data collection</p>
             </div>
         `;
@@ -475,9 +466,9 @@ function renderPredictions(predictions) {
     }
     
     const outlookConfig = {
-        bullish: { emoji: '📈', color: 'positive', label: 'Bullish' },
-        neutral: { emoji: '➡️', color: 'neutral', label: 'Neutral' },
-        bearish: { emoji: '📉', color: 'negative', label: 'Bearish' }
+        bullish: { color: 'positive', label: 'Bullish' },
+        neutral: { color: 'neutral', label: 'Neutral' },
+        bearish: { color: 'negative', label: 'Bearish' }
     };
     
     const outlook = outlookConfig[predictions.outlook] || outlookConfig.neutral;
@@ -485,7 +476,6 @@ function renderPredictions(predictions) {
     let html = `
         <div class="predictions-header">
             <div class="prediction-outlook ${outlook.color}">
-                <span class="outlook-emoji">${outlook.emoji}</span>
                 <div class="outlook-content">
                     <h3>Market Outlook: ${outlook.label}</h3>
                     <p class="confidence">Confidence: ${predictions.confidence}%</p>
@@ -496,7 +486,6 @@ function renderPredictions(predictions) {
         <div class="predictions-grid">
             <div class="prediction-card">
                 <div class="prediction-header">
-                    <span class="icon">📅</span>
                     <h4>7-Day Forecast</h4>
                 </div>
                 <div class="prediction-value">
@@ -511,7 +500,6 @@ function renderPredictions(predictions) {
             
             <div class="prediction-card">
                 <div class="prediction-header">
-                    <span class="icon">📆</span>
                     <h4>30-Day Forecast</h4>
                 </div>
                 <div class="prediction-value">
@@ -527,14 +515,14 @@ function renderPredictions(predictions) {
         
         <div class="trends-container">
             <div class="trend-section growing">
-                <h4>🚀 Growing Categories</h4>
+                <h4>Growing Categories</h4>
                 <ul>
                     ${predictions.growing_categories.map(cat => `<li>${cat}</li>`).join('')}
                 </ul>
             </div>
             
             <div class="trend-section declining">
-                <h4>📊 Declining Categories</h4>
+                <h4>Declining Categories</h4>
                 <ul>
                     ${predictions.declining_categories.map(cat => `<li>${cat}</li>`).join('')}
                 </ul>
@@ -542,7 +530,7 @@ function renderPredictions(predictions) {
         </div>
         
         <div class="insights-section">
-            <h4>💡 AI Insights</h4>
+            <h4>AI Insights</h4>
             <ul class="ai-insights">
                 ${predictions.insights.map(insight => `<li>${insight}</li>`).join('')}
             </ul>
@@ -726,7 +714,6 @@ function renderTopLocations(topLocations) {
 function renderInsights(insights) {
     const html = insights.map(insight => `
         <div class="insight-card">
-            <div class="insight-icon">${insight.icon}</div>
             <div class="insight-content">
                 <h3 class="insight-title">${insight.title}</h3>
                 <div class="insight-value">${escapeHtml(insight.value)}</div>
