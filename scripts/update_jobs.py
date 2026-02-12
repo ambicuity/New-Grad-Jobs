@@ -1810,6 +1810,20 @@ def main():
     # Load configuration
     config = load_config()
     
+    # DEBUG: Print company counts from config
+    gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
+    lever_count = len(config['apis'].get('lever', {}).get('companies', []))
+    workday_count = len(config['apis'].get('workday', {}).get('companies', []))
+    total_companies = gh_count + lever_count + workday_count
+    print(f"\n📋 Configuration loaded:")
+    print(f"   Greenhouse: {gh_count} companies")
+    print(f"   Lever: {lever_count} companies")
+    print(f"   Workday: {workday_count} companies")
+    print(f"   TOTAL: {total_companies} companies")
+    if total_companies < 10000:
+        print(f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
+    print("="  * 60)
+    
     # Collect all jobs using parallel fetchers
     all_jobs = []
     
