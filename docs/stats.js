@@ -89,6 +89,118 @@ async function fetchJobsData() {
     throw new Error('Could not load jobs data');
 }
 
+async function fetchMarketHistory() {
+    const paths = ['./market-history.json', '../market-history.json', '/New-Grad-Jobs/docs/market-history.json'];
+    
+    for (const path of paths) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) {
+                return await response.json();
+            }
+        } catch (error) {
+            console.log(`Failed to fetch market history from ${path}`);
+        }
+    }
+    
+    // Return empty structure if file doesn't exist yet
+    return { meta: {}, snapshots: [] };
+}
+
+async function fetchPredictions() {
+    const paths = ['./predictions.json', '../predictions.json', '/New-Grad-Jobs/docs/predictions.json'];
+    
+    for (const path of paths) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) {
+                return await response.json();
+            }
+        } catch (error) {
+            console.log(`Failed to fetch predictions from ${path}`);
+        }
+    }
+    
+    // Return null if no predictions available yet
+    return null;
+}
+
+function calculateComparisons(currentData, historyData) {
+    const snapshots = historyData.snapshots || [];
+    
+    if (snapshots.length === 0) {
+        return {
+            weekOverWeek: null,
+            monthOverMonth: null,
+            message: 'Collecting data... Comparisons available after 7 days'
+        };
+    }
+    
+    const today = new Date();
+    const weekAgo = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000);
+    const monthAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
+    
+    // Find snapshots closest to week and month ago
+    const weekSnapshot = findClosestSnapshot(snapshots, weekAgo);
+    const monthSnapshot = findClosestSnapshot(snapshots, monthAgo);
+    
+    const currentTotal = currentData.totalJobs;
+    
+    const comparisons = {
+        weekOverWeek: null,
+        monthOverMonth: null
+    };
+    
+    if (weekSnapshot) {
+        const weekTotal = weekSnapshot.total_jobs;
+        const weekChange = currentTotal - weekTotal;
+        const weekPercent = ((weekChange / weekTotal) * 100).toFixed(1);
+        
+        comparisons.weekOverWeek = {
+            change: weekChange,
+            percent: weekPercent,
+            previous: weekTotal,
+            current: currentTotal,
+            direction: weekChange > 0 ? 'up' : weekChange < 0 ? 'down' : 'stable'
+        };
+    }
+    
+    if (monthSnapshot) {
+        const monthTotal = monthSnapshot.total_jobs;
+        const monthChange = currentTotal - monthTotal;
+        const monthPercent = ((monthChange / monthTotal) * 100).toFixed(1);
+        
+        comparisons.monthOverMonth = {
+            change: monthChange,
+            percent: monthPercent,
+            previous: monthTotal,
+            current: currentTotal,
+            direction: monthChange > 0 ? 'up' : monthChange < 0 ? 'down' : 'stable'
+        };
+    }
+    
+    return comparisons;
+}
+
+function findClosestSnapshot(snapshots, targetDate) {
+    if (snapshots.length === 0) return null;
+    
+    const targetTime = targetDate.getTime();
+    let closest = null;
+    let minDiff = Infinity;
+    
+    snapshots.forEach(snapshot => {
+        const snapshotDate = new Date(snapshot.date);
+        const diff = Math.abs(snapshotDate.getTime() - targetTime);
+        if (diff < minDiff) {
+            minDiff = diff;
+            closest = snapshot;
+        }
+    });
+    
+    return closest;
+}
+
 // ============================================
 // Data Analysis
 // ============================================
@@ -257,6 +369,187 @@ function renderStats(analysis) {
             timeZoneName: 'short'
         });
     }
+}
+
+function renderComparisons(comparisons) {
+    const container = document.getElementById('comparisons-container');
+    if (!container) return;
+    
+    // Check if we have data
+    if (comparisons.message) {
+        container.innerHTML = `
+            <div class="comparison-message">
+                <span class="icon">📊</span>
+                <p>${comparisons.message}</p>
+            </div>
+        `;
+        return;
+    }
+    
+    let html = '';
+    
+    // Week-over-week comparison
+    if (comparisons.weekOverWeek) {
+        const wow = comparisons.weekOverWeek;
+        const arrow = wow.direction === 'up' ? '↑' : wow.direction === 'down' ? '↓' : '→';
+        const colorClass = wow.direction === 'up' ? 'positive' : wow.direction === 'down' ? 'negative' : 'neutral';
+        
+        html += `
+            <div class="comparison-card">
+                <div class="comparison-header">
+                    <span class="icon">📈</span>
+                    <h3>Week-over-Week</h3>
+                </div>
+                <div class="comparison-value ${colorClass}">
+                    <span class="arrow">${arrow}</span>
+                    <span class="percent">${Math.abs(wow.percent)}%</span>
+                </div>
+                <div class="comparison-details">
+                    <div class="detail-row">
+                        <span>Current:</span>
+                        <strong>${wow.current.toLocaleString()} jobs</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Last Week:</span>
+                        <strong>${wow.previous.toLocaleString()} jobs</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Change:</span>
+                        <strong>${wow.change > 0 ? '+' : ''}${wow.change.toLocaleString()} jobs</strong>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Month-over-month comparison
+    if (comparisons.monthOverMonth) {
+        const mom = comparisons.monthOverMonth;
+        const arrow = mom.direction === 'up' ? '↑' : mom.direction === 'down' ? '↓' : '→';
+        const colorClass = mom.direction === 'up' ? 'positive' : mom.direction === 'down' ? 'negative' : 'neutral';
+        
+        html += `
+            <div class="comparison-card">
+                <div class="comparison-header">
+                    <span class="icon">📊</span>
+                    <h3>Month-over-Month</h3>
+                </div>
+                <div class="comparison-value ${colorClass}">
+                    <span class="arrow">${arrow}</span>
+                    <span class="percent">${Math.abs(mom.percent)}%</span>
+                </div>
+                <div class="comparison-details">
+                    <div class="detail-row">
+                        <span>Current:</span>
+                        <strong>${mom.current.toLocaleString()} jobs</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Last Month:</span>
+                        <strong>${mom.previous.toLocaleString()} jobs</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Change:</span>
+                        <strong>${mom.change > 0 ? '+' : ''}${mom.change.toLocaleString()} jobs</strong>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    container.innerHTML = html;
+}
+
+function renderPredictions(predictions) {
+    const container = document.getElementById('predictions-container');
+    if (!container) return;
+    
+    // Check if predictions are available
+    if (!predictions) {
+        container.innerHTML = `
+            <div class="prediction-message">
+                <span class="icon">🔮</span>
+                <p>AI predictions available after 7 days of data collection</p>
+            </div>
+        `;
+        return;
+    }
+    
+    const outlookConfig = {
+        bullish: { emoji: '📈', color: 'positive', label: 'Bullish' },
+        neutral: { emoji: '➡️', color: 'neutral', label: 'Neutral' },
+        bearish: { emoji: '📉', color: 'negative', label: 'Bearish' }
+    };
+    
+    const outlook = outlookConfig[predictions.outlook] || outlookConfig.neutral;
+    
+    let html = `
+        <div class="predictions-header">
+            <div class="prediction-outlook ${outlook.color}">
+                <span class="outlook-emoji">${outlook.emoji}</span>
+                <div class="outlook-content">
+                    <h3>Market Outlook: ${outlook.label}</h3>
+                    <p class="confidence">Confidence: ${predictions.confidence}%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="predictions-grid">
+            <div class="prediction-card">
+                <div class="prediction-header">
+                    <span class="icon">📅</span>
+                    <h4>7-Day Forecast</h4>
+                </div>
+                <div class="prediction-value">
+                    <span class="number">${predictions.predictions['7_days'].total_jobs.toLocaleString()}</span>
+                    <span class="label">Expected Jobs</span>
+                </div>
+                <div class="prediction-change ${predictions.predictions['7_days'].change_percent >= 0 ? 'positive' : 'negative'}">
+                    ${predictions.predictions['7_days'].change_percent >= 0 ? '↑' : '↓'} 
+                    ${Math.abs(predictions.predictions['7_days'].change_percent).toFixed(1)}% change
+                </div>
+            </div>
+            
+            <div class="prediction-card">
+                <div class="prediction-header">
+                    <span class="icon">📆</span>
+                    <h4>30-Day Forecast</h4>
+                </div>
+                <div class="prediction-value">
+                    <span class="number">${predictions.predictions['30_days'].total_jobs.toLocaleString()}</span>
+                    <span class="label">Expected Jobs</span>
+                </div>
+                <div class="prediction-change ${predictions.predictions['30_days'].change_percent >= 0 ? 'positive' : 'negative'}">
+                    ${predictions.predictions['30_days'].change_percent >= 0 ? '↑' : '↓'} 
+                    ${Math.abs(predictions.predictions['30_days'].change_percent).toFixed(1)}% change
+                </div>
+            </div>
+        </div>
+        
+        <div class="trends-container">
+            <div class="trend-section growing">
+                <h4>🚀 Growing Categories</h4>
+                <ul>
+                    ${predictions.growing_categories.map(cat => `<li>${cat}</li>`).join('')}
+                </ul>
+            </div>
+            
+            <div class="trend-section declining">
+                <h4>📊 Declining Categories</h4>
+                <ul>
+                    ${predictions.declining_categories.map(cat => `<li>${cat}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="insights-section">
+            <h4>💡 AI Insights</h4>
+            <ul class="ai-insights">
+                ${predictions.insights.map(insight => `<li>${insight}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+    
+    container.innerHTML = html;
 }
 
 function renderCharts(analysis) {
@@ -478,14 +771,25 @@ async function init() {
     elements.totalJobs.textContent = 'Loading...';
     
     try {
-        // Fetch data
-        jobsData = await fetchJobsData();
+        // Fetch data (parallel for speed)
+        const [jobsDataResult, marketHistory, predictions] = await Promise.all([
+            fetchJobsData(),
+            fetchMarketHistory(),
+            fetchPredictions()
+        ]);
+        
+        jobsData = jobsDataResult;
         
         // Analyze data
         const analysis = analyzeData(jobsData);
         
+        // Calculate comparisons
+        const comparisons = calculateComparisons(analysis, marketHistory);
+        
         // Render everything
         renderStats(analysis);
+        renderComparisons(comparisons);
+        renderPredictions(predictions);
         renderCharts(analysis);
         renderTopCompanies(analysis.topCompanies);
         renderTopLocations(analysis.topLocations);

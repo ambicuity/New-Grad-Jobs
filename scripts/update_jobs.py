@@ -1220,6 +1220,260 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         'jobs': json_jobs
     }
 
+def save_market_history(jobs: List[Dict[str, Any]]) -> None:
+    """
+    Save daily market snapshot for historical tracking, comparisons, and ML predictions.
+    Stores daily snapshots in docs/market-history.json with 90-day retention.
+    """
+    from collections import Counter
+    
+    # Create today's snapshot
+    today = datetime.now().strftime('%Y-%m-%d')
+    
+    # Count jobs by category
+    category_counts = Counter()
+    for job in jobs:
+        for category in job.get('categories', []):
+            category_counts[category] += 1
+    
+    # Count jobs by tier
+    tier_counts = Counter()
+    for job in jobs:
+        tier = job.get('company_tier', {}).get('tier', 'other')
+        tier_counts[tier] += 1
+    
+    # Get top 10 companies by job count
+    company_counts = Counter(job.get('company', 'Unknown') for job in jobs)
+    top_companies = [
+        {'company': company, 'jobs': count}
+        for company, count in company_counts.most_common(10)
+    ]
+    
+    # Calculate average jobs per company
+    unique_companies = len(company_counts)
+    avg_jobs_per_company = round(len(jobs) / unique_companies, 2) if unique_companies > 0 else 0
+    
+    # Create snapshot object
+    snapshot = {
+        'date': today,
+        'total_jobs': len(jobs),
+        'categories': dict(category_counts),
+        'tiers': dict(tier_counts),
+        'top_companies': top_companies,
+        'unique_companies': unique_companies,
+        'avg_jobs_per_company': avg_jobs_per_company,
+        'timestamp': datetime.now().isoformat()
+    }
+    
+    # Load existing history
+    history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
+    
+    try:
+        if os.path.exists(history_path):
+            with open(history_path, 'r', encoding='utf-8') as f:
+                history_data = json.load(f)
+                history = history_data.get('snapshots', [])
+        else:
+            history = []
+    except Exception as e:
+        logger.warning(f"Could not load market history: {e}")
+        history = []
+    
+    # Check if today's snapshot already exists (avoid duplicates)
+    existing_dates = {entry['date'] for entry in history}
+    if today not in existing_dates:
+        history.append(snapshot)
+        logger.info(f"Added market snapshot for {today}: {len(jobs)} jobs")
+    else:
+        # Update today's snapshot if it exists
+        for i, entry in enumerate(history):
+            if entry['date'] == today:
+                history[i] = snapshot
+                logger.info(f"Updated market snapshot for {today}: {len(jobs)} jobs")
+                break
+    
+    # Keep only last 90 days
+    cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
+    history = [entry for entry in history if entry['date'] >= cutoff_date]
+    
+    # Sort by date (oldest to newest)
+    history.sort(key=lambda x: x['date'])
+    
+    # Save back to file
+    history_data = {
+        'meta': {
+            'last_updated': datetime.now().isoformat(),
+            'total_snapshots': len(history),
+            'date_range': {
+                'start': history[0]['date'] if history else None,
+                'end': history[-1]['date'] if history else None
+            }
+        },
+        'snapshots': history
+    }
+    
+    try:
+        os.makedirs(os.path.dirname(history_path), exist_ok=True)
+        with open(history_path, 'w', encoding='utf-8') as f:
+            json.dump(history_data, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved market history: {len(history)} snapshots (last 90 days)")
+    except Exception as e:
+        logger.error(f"Failed to save market history: {e}")
+
+def predict_hiring_trends() -> None:
+    """
+    Use Google Gemini API to analyze market history and predict future hiring trends.
+    Requires GOOGLE_API_KEY environment variable.
+    """
+    api_key = os.environ.get('GOOGLE_API_KEY')
+    
+    if not api_key:
+        logger.warning("GOOGLE_API_KEY not found - skipping ML predictions")
+        return
+    
+    # Load market history
+    history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
+    
+    try:
+        if not os.path.exists(history_path):
+            logger.info("Market history not found - predictions available after data collection")
+            return
+            
+        with open(history_path, 'r', encoding='utf-8') as f:
+            history_data = json.load(f)
+            snapshots = history_data.get('snapshots', [])
+        
+        if len(snapshots) < 7:
+            logger.info(f"Not enough data for predictions ({len(snapshots)} days, need 7+)")
+            return
+            
+    except Exception as e:
+        logger.error(f"Failed to load market history: {e}")
+        return
+    
+    # Prepare data summary for Gemini
+    total_jobs_trend = [s['total_jobs'] for s in snapshots[-30:]]  # Last 30 days
+    category_trends = {}
+    tier_trends = {}
+    
+    # Aggregate category trends
+    for snapshot in snapshots[-30:]:
+        for category, count in snapshot.get('categories', {}).items():
+            if category not in category_trends:
+                category_trends[category] = []
+            category_trends[category].append(count)
+    
+    # Aggregate tier trends
+    for snapshot in snapshots[-30:]:
+        for tier, count in snapshot.get('tiers', {}).items():
+            if tier not in tier_trends:
+                tier_trends[tier] = []
+            tier_trends[tier].append(count)
+    
+    # Call Gemini API
+    try:
+        headers = {
+            'Content-Type': 'application/json'
+        }
+        
+        prompt = f"""Analyze this new graduate tech hiring market data and provide predictions for the next 30 days.
+
+Historical Data (last {len(total_jobs_trend)} days):
+- Total Jobs Trend: {total_jobs_trend}
+- Category Trends: {json.dumps({k: v[-7:] for k, v in list(category_trends.items())[:5]})}  
+- Company Tier Trends: {json.dumps({k: v[-7:] for k, v in tier_trends.items()})}
+
+Current Status:
+- Current Total: {total_jobs_trend[-1] if total_jobs_trend else 0} jobs
+- 7-Day Average: {sum(total_jobs_trend[-7:]) // 7 if len(total_jobs_trend) >= 7 else 0} jobs
+- 30-Day Average: {sum(total_jobs_trend) // len(total_jobs_trend) if total_jobs_trend else 0} jobs
+
+Please provide:
+1. Overall market outlook (bullish/neutral/bearish)
+2. Predicted total jobs in 7 days
+3. Predicted total jobs in 30 days
+4. Top 3 growing categories
+5. Top 3 declining categories
+6. Confidence level (0-100%)
+7. Key insights (2-3 sentences)
+
+Respond in JSON format:
+{{
+  "outlook": "bullish|neutral|bearish",
+  "predictions": {{
+    "7_days": {{
+      "total_jobs": <number>,
+      "change_percent": <number>
+    }},
+    "30_days": {{
+      "total_jobs": <number>,
+      "change_percent": <number>
+    }}
+  }},
+  "growing_categories": ["category1", "category2", "category3"],
+  "declining_categories": ["category1", "category2", "category3"],
+  "confidence": <number>,
+  "insights": ["insight1", "insight2", "insight3"]
+}}"""
+
+        payload = {
+            'contents': [{
+                'parts': [{'text': prompt}]
+            }],
+            'generationConfig': {
+                'temperature': 0.4,
+                'topK': 32,
+                'topP': 1,
+                'maxOutputTokens': 2048,
+            }
+        }
+        
+        response = requests.post(
+            f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}',
+            headers=headers,
+            json=payload,
+            timeout=30
+        )
+        
+        if response.status_code == 200:
+            result = response.json()
+            
+            # Parse Gemini response
+            if 'candidates' in result and len(result['candidates']) > 0:
+                content = result['candidates'][0]['content']['parts'][0]['text']
+                
+                # Extract JSON from response (handle markdown code blocks)
+                content = content.strip()
+                if '```json' in content:
+                    content = content.split('```json')[1].split('```')[0].strip()
+                elif '```' in content:
+                    content = content.split('```')[1].split('```')[0].strip()
+                
+                predictions = json.loads(content)
+                
+                # Add metadata
+                predictions['generated_at'] = datetime.now().isoformat()
+                predictions['data_points'] = len(snapshots)
+                predictions['date_range'] = {
+                    'start': snapshots[0]['date'],
+                    'end': snapshots[-1]['date']
+                }
+                
+                # Save predictions
+                predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+                with open(predictions_path, 'w', encoding='utf-8') as f:
+                    json.dump(predictions, f, indent=2, ensure_ascii=False)
+                
+                logger.info(f"Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+            else:
+                logger.warning("No predictions in Gemini response")
+                
+        else:
+            logger.error(f"Gemini API error: {response.status_code} - {response.text}")
+            
+    except Exception as e:
+        logger.error(f"Failed to generate predictions: {e}")
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
     
@@ -1519,6 +1773,12 @@ def main():
     enriched_jobs = deep_sanitize(enriched_jobs)
     
     jobs_json = generate_jobs_json(enriched_jobs, config)
+    
+    # ========== Save Historical Market Data ==========
+    save_market_history(enriched_jobs)
+    
+    # ========== Generate ML Predictions ==========
+    predict_hiring_trends()
     
     # Write JSON file
     json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
