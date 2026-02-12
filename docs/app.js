@@ -178,9 +178,6 @@ function toggleTheme() {
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
-    // Track theme preference
-    trackEvent('theme-toggle', { label: `Theme: ${newTheme}` });
 }
 
 // ============================================
@@ -436,9 +433,6 @@ function goToPage(page) {
 
     currentPage = page;
     renderJobs(filteredJobs);
-    
-    // Track pagination usage
-    trackEvent('pagination-click', { label: `Page: ${page}` });
 
     // Smooth scroll to jobs section
     document.getElementById('jobs-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -594,9 +588,6 @@ function resetFilters() {
     document.querySelectorAll('#tier-filters .chip').forEach(chip => {
         chip.classList.toggle('active', chip.dataset.filter === 'all');
     });
-    
-    // Track reset filters action
-    trackEvent('filters-reset', { label: 'Reset All Filters' });
 
     applyFilters();
 }
@@ -759,65 +750,6 @@ async function init() {
         }
     }
 }
-
-// ============================================
-// Error Monitoring
-// ============================================
-window.addEventListener('error', (event) => {
-    // Track JavaScript errors
-    const errorInfo = {
-        message: event.message || 'Unknown error',
-        filename: event.filename || 'unknown',
-        lineno: event.lineno || 0,
-        colno: event.colno || 0
-    };
-    
-    // Log to console for debugging
-    console.error('Error caught:', errorInfo);
-    
-    // Track error event
-    trackEvent('js-error', { 
-        label: `${errorInfo.message} at ${errorInfo.filename}:${errorInfo.lineno}` 
-    });
-    
-    // Store error in localStorage for later analysis
-    try {
-        const errors = JSON.parse(localStorage.getItem('errorLog') || '[]');
-        errors.push({
-            ...errorInfo,
-            timestamp: new Date().toISOString(),
-            userAgent: navigator.userAgent
-        });
-        // Keep only last 10 errors
-        if (errors.length > 10) errors.shift();
-        localStorage.setItem('errorLog', JSON.stringify(errors));
-    } catch (e) {
-        console.error('Failed to log error to localStorage:', e);
-    }
-});
-
-// Handle unhandled promise rejections
-window.addEventListener('unhandledrejection', (event) => {
-    console.error('Unhandled promise rejection:', event.reason);
-    
-    trackEvent('promise-rejection', { 
-        label: String(event.reason || 'Unknown rejection') 
-    });
-    
-    try {
-        const errors = JSON.parse(localStorage.getItem('errorLog') || '[]');
-        errors.push({
-            type: 'unhandled_rejection',
-            message: String(event.reason),
-            timestamp: new Date().toISOString(),
-            userAgent: navigator.userAgent
-        });
-        if (errors.length > 10) errors.shift();
-        localStorage.setItem('errorLog', JSON.stringify(errors));
-    } catch (e) {
-        console.error('Failed to log rejection to localStorage:', e);
-    }
-});
 
 // Start the app
 document.addEventListener('DOMContentLoaded', init);
