@@ -13231,7 +13231,6 @@ bed/jobs"
         url: "https://boards-api.greenhouse.io/v1/boards/techcompany2250/jobs"
       - name: "TechCompany2251"
         url: "https://boards-api.greenhouse.io/v1/boards/techcompany2251/jobs"
-        url: "https://boards-api.greenhouse.io/v1/boards/modernunderwritingpro/jobs"
   lever:
 
     # Lever job board API endpoints for major tech companies  
@@ -17447,7 +17446,6 @@ bed/jobs"
         url: "https://api.lever.co/v0/postings/startupventure176"
       - name: "StartupVenture177"
         url: "https://api.lever.co/v0/postings/startupventure177"
-        url: "https://api.lever.co/v0/postings/communityconsumer59"
   google:
     # Google careers API - searches for new grad positions
     search_terms:
