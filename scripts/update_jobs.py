@@ -61,11 +61,11 @@ def create_optimized_session() -> requests.Session:
     )
     
     # Configure HTTP adapter with connection pooling
-    # Increased pool sizes for 1000+ companies: 200 pools, 100 connections/host
+    # AGGRESSIVE for 10K companies: 1000 pools, 300 connections/host
     adapter = HTTPAdapter(
         max_retries=retry_strategy,
-        pool_connections=200,  # Number of connection pools to cache (one per unique host)
-        pool_maxsize=100,  # Maximum size of each connection pool (connections per host)
+        pool_connections=1000,  # Number of connection pools (10K companies)
+        pool_maxsize=300,  # Maximum connections per host (massive parallelism)
         pool_block=False  # Don't block on connection pool exhaustion
     )
     
@@ -73,11 +73,12 @@ def create_optimized_session() -> requests.Session:
     session.mount("http://", adapter)
     session.mount("https://", adapter)
     
-    # Set default headers for compression and keep-alive
+    # Set default headers for compression and keep-alive with extended timeout
     session.headers.update({
         'Accept-Encoding': 'gzip, deflate, br',  # Request compressed responses
         'Connection': 'keep-alive',  # Reuse TCP connections
-        'User-Agent': 'NewGradJobs-Aggregator/2.0 (Performance-Optimized)'
+        'Keep-Alive': 'timeout=60, max=2000',  # Keep connections alive longer
+        'User-Agent': 'NewGradJobs-Aggregator/3.0 (10K-Companies-Optimized)'
     })
     
     return session
@@ -298,7 +299,7 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
         'emoji': CATEGORY_PATTERNS['other']['emoji']
     }
 
-@lru_cache(maxsize=512)  # Cache company tier lookups for faster repeated access
+@lru_cache(maxsize=2048)  # AGGRESSIVE: Increased from 512 for 10K companies
 def get_company_tier(company_name: str) -> Dict[str, Any]:
     """Get company tier classification including sectors
     
@@ -351,7 +352,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
             
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = HTTP_SESSION.get(url, timeout=8)  # Reduced timeout for faster failure
+            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
             
@@ -407,7 +408,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
             
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = HTTP_SESSION.get(url, timeout=8)  # Reduced timeout for faster failure
+            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
             
@@ -470,7 +471,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
                 
-                response = HTTP_SESSION.get(url, timeout=8)
+                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
                 
@@ -586,7 +587,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
                 
-                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=10)
+                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
                 
                 if response.status_code == 404:
                      # Try alternative tenant extraction if 404
@@ -597,7 +598,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                          tenant = path_parts[0]
                          site_id = path_parts[-1]
                          api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=10)
+                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -804,7 +805,7 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     
     # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
     if max_workers is None:
-        max_workers = min(150, max(20, total // 2))
+        max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
     
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
     
@@ -840,7 +841,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(100, max(10, total))
+        max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
     
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
     
@@ -873,7 +874,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
     
     # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
     if max_workers is None:
-        max_workers = min(50, max(8, total * 3))
+        max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
     
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
     
@@ -890,7 +891,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
                 
-                response = HTTP_SESSION.get(url, timeout=8)
+                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
                 
@@ -1574,7 +1575,7 @@ Respond in JSON format:
             f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}',
             headers=headers,
             json=payload,
-            timeout=20  # Reduced from 30s
+            timeout=12  # AGGRESSIVE: Reduced from 20s for 10K companies
         )
         
         if response.status_code == 200:
@@ -1817,7 +1818,7 @@ def main():
     
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
     # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
         
         # Submit Greenhouse parallel fetch
