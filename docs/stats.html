@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time job market insights and trends for new graduates. Live data from 150+ companies.">
+    <meta name="keywords" content="job market trends, new grad statistics, tech hiring trends, job market data">
+    <meta property="og:title" content="Job Market Insights | New Grad Jobs">
+    <meta property="og:description" content="Real-time analytics and trends from the new grad job market. Updated every 5 minutes.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Job Market Insights | New Grad Jobs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script data-goatcounter="https://riteshrana.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-emoji">🎓</span>
+                <span class="logo-text">New Grad Jobs</span>
+            </div>
+            <div class="header-actions">
+                <a href="index.html" class="nav-link">🏠 Jobs</a>
+                <a href="stats.html" class="nav-link active">📊 Insights</a>
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="https://github.com/ambicuity/New-Grad-Jobs" class="github-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    <span>Star on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="blob-container">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1>📊 Job Market <span class="gradient-text">Insights</span></h1>
+            <p class="hero-subtitle">Real-time analytics from 150+ companies • Updated every 5 minutes</p>
+            <div class="stats-last-updated">Last updated: <span id="last-updated">--</span></div>
+        </div>
+    </section>
+
+    <!-- Overview Stats -->
+    <section class="stats-overview">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-content">
+                    <div class="stat-label">Total Jobs</div>
+                    <div class="stat-value" id="total-jobs">--</div>
+                    <div class="stat-sublabel">Active positions</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏢</div>
+                <div class="stat-content">
+                    <div class="stat-label">Companies</div>
+                    <div class="stat-value" id="total-companies">--</div>
+                    <div class="stat-sublabel">Hiring now</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌍</div>
+                <div class="stat-content">
+                    <div class="stat-label">Countries</div>
+                    <div class="stat-value" id="total-countries">--</div>
+                    <div class="stat-sublabel">Worldwide</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-content">
+                    <div class="stat-label">Today</div>
+                    <div class="stat-value" id="jobs-today">--</div>
+                    <div class="stat-sublabel">New positions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Breakdown -->
+    <section class="stats-section">
+        <h2 class="section-title">📂 Jobs by Category</h2>
+        <div class="chart-container">
+            <canvas id="category-chart"></canvas>
+        </div>
+    </section>
+
+    <!-- Company Tier Breakdown -->
+    <section class="stats-section">
+        <h2 class="section-title">🏢 Jobs by Company Tier</h2>
+        <div class="chart-container">
+            <canvas id="tier-chart"></canvas>
+        </div>
+    </section>
+
+    <!-- Location Breakdown -->
+    <section class="stats-section">
+        <h2 class="section-title">🌎 Jobs by Location</h2>
+        <div class="location-stats">
+            <div class="chart-container-horizontal">
+                <canvas id="location-chart"></canvas>
+            </div>
+            <div class="top-locations" id="top-locations">
+                <!-- Generated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Companies -->
+    <section class="stats-section">
+        <h2 class="section-title">🔥 Top Hiring Companies</h2>
+        <div class="top-companies-grid" id="top-companies">
+            <!-- Generated dynamically -->
+        </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section class="stats-section">
+        <h2 class="section-title">💡 Key Insights</h2>
+        <div class="insights-grid" id="insights-container">
+            <!-- Generated dynamically -->
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"></path>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎓 New Grad Jobs</h4>
+                <p>Automated job board for new graduates. Updated every 5 minutes from 150+ company APIs.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Job Board</a></li>
+                    <li><a href="stats.html">Market Insights</a></li>
+                    <li><a href="https://github.com/ambicuity/New-Grad-Jobs">GitHub Repository</a></li>
+                    <li><a href="https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml">Submit a Job</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Data Sources</h4>
+                <ul>
+                    <li>Greenhouse API</li>
+                    <li>Lever API</li>
+                    <li>LinkedIn & Indeed</li>
+                    <li>Workday Integration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-tagline">Built by <strong>engineer</strong>, for engineers</p>
+            <p>Made By: <strong>Ritesh Rana</strong></p>
+            <p>Contact: <a href="mailto:contact@riteshrana.engineer">contact@riteshrana.engineer</a></p>
+        </div>
+    </footer>
+
+    <script src="stats.js"></script>
+</body>
+
+</html>
