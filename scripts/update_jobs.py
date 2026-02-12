@@ -61,10 +61,11 @@ def create_optimized_session() -> requests.Session:
     )
     
     # Configure HTTP adapter with connection pooling
+    # Increased pool sizes for 1000+ companies: 200 pools, 100 connections/host
     adapter = HTTPAdapter(
         max_retries=retry_strategy,
-        pool_connections=100,  # Number of connection pools to cache (one per unique host)
-        pool_maxsize=50,  # Maximum size of each connection pool (connections per host)
+        pool_connections=200,  # Number of connection pools to cache (one per unique host)
+        pool_maxsize=100,  # Maximum size of each connection pool (connections per host)
         pool_block=False  # Don't block on connection pool exhaustion
     )
     
@@ -801,9 +802,9 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     completed = 0
     errors = 0
     
-    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 50
+    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
     if max_workers is None:
-        max_workers = min(50, max(20, total // 2))
+        max_workers = min(150, max(20, total // 2))
     
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
     
@@ -837,9 +838,9 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     completed = 0
     errors = 0
     
-    # AUTO-SCALE: Use 1 worker per company for small lists, max 30
+    # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(30, max(10, total))
+        max_workers = min(100, max(10, total))
     
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
     
@@ -870,9 +871,9 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
     completed = 0
     errors = 0
     
-    # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 25
+    # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
     if max_workers is None:
-        max_workers = min(25, max(8, total * 3))
+        max_workers = min(50, max(8, total * 3))
     
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
     
@@ -1815,8 +1816,8 @@ def main():
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
     
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
-    # Increased from 4 to 8 workers to handle all sources without blocking
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futures = {}
         
         # Submit Greenhouse parallel fetch
