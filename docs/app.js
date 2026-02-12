@@ -22,6 +22,20 @@ let currentFilters = {
 let currentPage = 1;
 const JOBS_PER_PAGE = 25;
 
+/**
+ * Track custom events in GoatCounter
+ * Falls back gracefully if GoatCounter not loaded or blocked
+ */
+function trackEvent(eventName, eventData = {}) {
+    if (typeof goatcounter !== 'undefined' && goatcounter.count) {
+        goatcounter.count({
+            path: eventName,
+            title: eventData.label || eventName,
+            event: true
+        });
+    }
+}
+
 // State/Province data by country
 const statesByCountry = {
     usa: [
@@ -207,9 +221,11 @@ function toggleBookmark(jobUrl) {
     if (bookmarkedJobs.has(jobUrl)) {
         bookmarkedJobs.delete(jobUrl);
         showToast('Bookmark removed', 'default');
+        trackEvent('bookmark-removed', { label: 'Bookmark Removed' });
     } else {
         bookmarkedJobs.add(jobUrl);
         showToast('Job bookmarked! ⭐', 'success');
+        trackEvent('bookmark-added', { label: 'Bookmark Added' });
     }
 
     localStorage.setItem('bookmarkedJobs', JSON.stringify([...bookmarkedJobs]));
@@ -308,7 +324,7 @@ function renderJobs(jobs) {
         const applyButtonText = job.is_closed ? '🔒 Closed' : 'Apply →';
         const applyLink = job.is_closed
             ? `<span class="${applyButtonClass}">${applyButtonText}</span>`
-            : `<a href="${escapeHtml(job.url)}" class="${applyButtonClass}" target="_blank" rel="noopener">${applyButtonText}</a>`;
+            : `<a href="${escapeHtml(job.url)}" class="${applyButtonClass}" target="_blank" rel="noopener" onclick="trackEvent('job-click', {label: '${escapeHtml(job.company)}'});">${applyButtonText}</a>`;
 
         // Staggered animation delay (cap at 0.5s for performance)
         const animationDelay = Math.min(index * 0.03, 0.5);
@@ -608,7 +624,13 @@ function handleSearch(e) {
 
     // Debounce search
     clearTimeout(handleSearch.timeout);
-    handleSearch.timeout = setTimeout(applyFilters, 150);
+    handleSearch.timeout = setTimeout(() => {
+        applyFilters();
+        // Track search usage (only if non-empty and at least 3 chars)
+        if (value.length >= 3) {
+            trackEvent('search-used', { label: `Search: ${value.substring(0, 20)}` });
+        }
+    }, 150);
 }
 
 function handleChipClick(e) {
@@ -678,12 +700,14 @@ async function init() {
         elements.countryFilter.addEventListener('change', (e) => {
             currentFilters.country = e.target.value;
             populateStates(e.target.value);
+            trackEvent('filter-country', { label: `Country: ${e.target.value}` });
             applyFilters();
         });
     }
     if (elements.stateFilter) {
         elements.stateFilter.addEventListener('change', (e) => {
             currentFilters.state = e.target.value;
+            trackEvent('filter-state', { label: `State: ${e.target.value}` });
             applyFilters();
         });
     }

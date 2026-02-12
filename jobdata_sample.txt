@@ -1,0 +1,503 @@
+SAMPLE OF 100 JOBS FROM JOBDATAAPI (Total Available: 31M+)
+================================================================================
+
+1. Mitarbeiter:in Straßenerhaltung
+   Company: ASFINAG
+   Location: Salzburg, AT, 5020
+   Posted: No Date
+----------------------------------------
+2. BHS Design reviewer
+   Company: Egis Group
+   Location: Riyadh, Riyadh Province, Saudi Arabia
+   Posted: No Date
+----------------------------------------
+3. Payroll Officer
+   Company: Elia Group
+   Location: Brussel, BE, 1000
+   Posted: No Date
+----------------------------------------
+4. Payroll Officer
+   Company: Elia Group
+   Location: Bruxelles, BE, 1000
+   Posted: No Date
+----------------------------------------
+5. Payroll Officer
+   Company: Elia Group
+   Location: Brussels, BE, 1000
+   Posted: No Date
+----------------------------------------
+6. Elektroingenieurin Anlagentechnik für Umspannwerke und Großanlagen (m/w/d)
+   Company: Elia Group
+   Location: Berlin, BE, DE, 10557
+   Posted: No Date
+----------------------------------------
+7. Electrical Engineer for Substation and Plant Engineering (f/m/d)
+   Company: Elia Group
+   Location: Berlin, BE, DE, 10557
+   Posted: No Date
+----------------------------------------
+8. Overhead Line Inspector / Technician (f/m/d)
+   Company: Elia Group
+   Location: Güstrow, MV, DE, 18273
+   Posted: No Date
+----------------------------------------
+9. Baukontrolleurin / Monteurin Freileitungen (m/w/d)
+   Company: Elia Group
+   Location: Güstrow, MV, DE, 18273
+   Posted: No Date
+----------------------------------------
+10. Referentin für Engpassmanagementkonzepte in der Systemführung (m/w/d)
+   Company: Elia Group
+   Location: Neuenhagen, BB, DE, 15366
+   Posted: No Date
+----------------------------------------
+11. Specialist System Operation Congestion Management Concepts (f/m/d)
+   Company: Elia Group
+   Location: Neuenhagen, BB, DE, 15366
+   Posted: No Date
+----------------------------------------
+12. Commercial Landscape Maintenance Production Manager
+   Company: The Davey Tree Expert Company
+   Location: Hawaii National Park, HI, US, 96718
+   Posted: No Date
+----------------------------------------
+13. Groundperson | Utility Line Clearance
+   Company: The Davey Tree Expert Company
+   Location: Lima, OH, US, 45801
+   Posted: No Date
+----------------------------------------
+14. CDL Preferred Foreman | Utility Line Clearance
+   Company: The Davey Tree Expert Company
+   Location: Lima, OH, US, 45801
+   Posted: No Date
+----------------------------------------
+15. Climbing Arborist Crew Lead | San Antonio, TX
+   Company: The Davey Tree Expert Company
+   Location: San Antonio, TX, US, 78266
+   Posted: No Date
+----------------------------------------
+16. Trimmer | Utility Line Clearance
+   Company: The Davey Tree Expert Company
+   Location: Lima, OH, US, 45801
+   Posted: No Date
+----------------------------------------
+17. Climbing Arborist Crew Lead | S Houston, TX
+   Company: The Davey Tree Expert Company
+   Location: Houston, TX, US, 77080
+   Posted: No Date
+----------------------------------------
+18. Climbing Arborist Crew Lead  | W San Antonio
+   Company: The Davey Tree Expert Company
+   Location: San Antonio, TX, US, 78255
+   Posted: No Date
+----------------------------------------
+19. Climbing Arborist Crew Lead | N Houston
+   Company: The Davey Tree Expert Company
+   Location: Houston, TX, US, 77080
+   Posted: No Date
+----------------------------------------
+20. Experienced Climbing Arborist | S Houston, TX
+   Company: The Davey Tree Expert Company
+   Location: Houston, TX, US, 77080
+   Posted: No Date
+----------------------------------------
+21. Climbing Arborist Crew Lead  | Dallas, TX
+   Company: The Davey Tree Expert Company
+   Location: Richardson, TX, US, 75081
+   Posted: No Date
+----------------------------------------
+22. Experienced Climbing Arborist | Austin, TX
+   Company: The Davey Tree Expert Company
+   Location: Austin, TX, US, 78758
+   Posted: No Date
+----------------------------------------
+23. Experienced Climbing Arborist | Dallas, TX
+   Company: The Davey Tree Expert Company
+   Location: Richardson, TX, US, 75081
+   Posted: No Date
+----------------------------------------
+24. Climbing Arborist Crew Lead | Austin, TX
+   Company: The Davey Tree Expert Company
+   Location: Austin, TX, US, 78758
+   Posted: No Date
+----------------------------------------
+25. Experienced Climbing Arborist | Leander, TX
+   Company: The Davey Tree Expert Company
+   Location: Leander, TX, US, 78641
+   Posted: No Date
+----------------------------------------
+26. Experienced Climbing Arborist | N Houston
+   Company: The Davey Tree Expert Company
+   Location: Houston, TX, US, 77080
+   Posted: No Date
+----------------------------------------
+27. Experienced Climbing Arborist | W San Antonio, TX
+   Company: The Davey Tree Expert Company
+   Location: San Antonio, TX, US, 78255
+   Posted: No Date
+----------------------------------------
+28. Landscape Maintenance Crew Leader | Houston, TX
+   Company: The Davey Tree Expert Company
+   Location: Houston, TX, US, 77071
+   Posted: No Date
+----------------------------------------
+29. Experienced Climbing Arborist | San Antonio, TX
+   Company: The Davey Tree Expert Company
+   Location: San Antonio, TX, US, 78266
+   Posted: No Date
+----------------------------------------
+30. Trimmer A
+   Company: The Davey Tree Expert Company
+   Location: Hartwell, GA, US, 30643
+   Posted: No Date
+----------------------------------------
+31. Traveling Utility Trimmer
+   Company: The Davey Tree Expert Company
+   Location: Bloomington, IN, US, 47401
+   Posted: No Date
+----------------------------------------
+32. Landscape Crew Leader | Ham Lake, MN
+   Company: The Davey Tree Expert Company
+   Location: Ham Lake, MN, US, 55304
+   Posted: No Date
+----------------------------------------
+33. Climbing Arborist Crew Lead | Leander, TX
+   Company: The Davey Tree Expert Company
+   Location: Leander, TX, US, 78641
+   Posted: No Date
+----------------------------------------
+34. Project Implementation Manager
+   Company: The Davey Tree Expert Company
+   Location: Green Bay, WI, US, 54301
+   Posted: No Date
+----------------------------------------
+35. Consulting Utility Forester
+   Company: The Davey Tree Expert Company
+   Location: Springfield, MA, US, 01108
+   Posted: No Date
+----------------------------------------
+36. Plant and Tree Care Technician
+   Company: The Davey Tree Expert Company
+   Location: Mashpee, MA, US, 02649
+   Posted: No Date
+----------------------------------------
+37. Spray Technician
+   Company: The Davey Tree Expert Company
+   Location: Boise, ID, US, 83705
+   Posted: No Date
+----------------------------------------
+38. Trimmer Trainee
+   Company: The Davey Tree Expert Company
+   Location: Boise, ID, US, 83702
+   Posted: No Date
+----------------------------------------
+39. Climbing Arborist
+   Company: The Davey Tree Expert Company
+   Location: San Antonio, TX, US, 78255
+   Posted: No Date
+----------------------------------------
+40. Plant Healthcare Tree/ Shrub  Technician
+   Company: The Davey Tree Expert Company
+   Location: Wilmington, DE, US, 19809
+   Posted: No Date
+----------------------------------------
+41. Fachfrau / Fachmann Gesundheit EFZ für die Inhouse-Spitex 40-60%
+   Company: Tertianum
+   Location: Thun, BE, CH, 3600
+   Posted: No Date
+----------------------------------------
+42. Lernende/r Fachfrau/-mann Gesundheit
+   Company: Tertianum
+   Location: Kirchlindach, BE, CH, 3038
+   Posted: No Date
+----------------------------------------
+43. Bildungsverantwortliche Pflege
+   Company: Tertianum
+   Location: Frauenfeld, TG, CH, 8500
+   Posted: No Date
+----------------------------------------
+44. Leiter/in Hotellerie
+   Company: Tertianum
+   Location: Thun, BE, CH, 3600
+   Posted: No Date
+----------------------------------------
+45. Teamleitung Langzeitpflege 80-100%
+   Company: Tertianum
+   Location: Frauenfeld, TG, CH, 8500
+   Posted: No Date
+----------------------------------------
+46. Account Manager (Sales & Onboarding Specialist)
+   Company: Simplesat
+   Location: Khet Phaya Thai, Krung Thep Maha Nakhon, Thailand
+   Posted: No Date
+----------------------------------------
+47. Teamleider projectcontrol met een brede financiële blik
+   Company: Universiteit Leiden
+   Location: Leiden, NL
+   Posted: No Date
+----------------------------------------
+48. Sales Manager- Mid Market
+   Company: HubSpot
+   Location: Office - Bengaluru, India
+   Posted: No Date
+----------------------------------------
+49. Team Lead Group Reporting & Controlling (f/m/x)
+   Company: AUTO1 Group
+   Location: Berlin, Germany
+   Posted: No Date
+----------------------------------------
+50. Account Manager (Sales & Onboarding Specialist)
+   Company: Simplesat
+   Location: Pasig, NCR, Philippines
+   Posted: No Date
+----------------------------------------
+51. Document Controller
+   Company: Egis Group
+   Location: Dubai, Dubai, United Arab Emirates
+   Posted: No Date
+----------------------------------------
+52. Income Auditor
+   Company: Accor
+   Location: Viman Nagar, Pune, MH, India
+   Posted: No Date
+----------------------------------------
+53. Maitre d'
+   Company: Hillstone Restaurant Group
+   Location: Denver, CO, United States
+   Posted: No Date
+----------------------------------------
+54. Financial Analyst II
+   Company: Hollister Incorporated
+   Location: Ballina, MY, IE, F26 F3X5
+   Posted: No Date
+----------------------------------------
+55. Operations Lead / Decant ~ BHN (Thurs - Sat, 5:00pm - 5:00am)
+   Company: adidas
+   Location: Wilkes-Barre, PA, US
+   Posted: No Date
+----------------------------------------
+56. Vendeur Expert(H/F/D) - 35H - Factory Outlet/Ile Saint Denis
+   Company: adidas
+   Location: Ile Saint-Denis, FR
+   Posted: No Date
+----------------------------------------
+57. Senior Manager Brand Communications BU Originals, Basketball & Partnerships, Brand adidas
+   Company: adidas
+   Location: Tokyo, Tokyo, JP
+   Posted: No Date
+----------------------------------------
+58. Director Content Planning
+   Company: adidas
+   Location: Shanghai, SH, CN
+   Posted: No Date
+----------------------------------------
+59. Manager WHS Marketing Visual Direction
+   Company: adidas
+   Location: Portland, OR, US
+   Posted: No Date
+----------------------------------------
+60. Asst. Manager Digital Merchandising
+   Company: adidas
+   Location: Woodbridge, CA
+   Posted: No Date
+----------------------------------------
+61. Manager GBS HR Services
+   Company: adidas
+   Location: Dalian, LN, CN
+   Posted: No Date
+----------------------------------------
+62. P/T Retail Store Associate - Houston Galleria, 6534, Houston, TX
+   Company: adidas
+   Location: Houston, TX, US
+   Posted: No Date
+----------------------------------------
+63. Full Time Team Lead, adidas Outlet Store Grandview Corners (#2032)
+   Company: adidas
+   Location: Langley, CA
+   Posted: No Date
+----------------------------------------
+64. Merchandising Manager, Apparel, Basketball
+   Company: adidas
+   Location: Los Angeles, CA, US
+   Posted: No Date
+----------------------------------------
+65. Retail Lead - Columbus, 6298, Sunbury, OH
+   Company: adidas
+   Location: Sunbury, OH, US
+   Posted: No Date
+----------------------------------------
+66. Flagship Marketing Activation Manager adidas (H/F/D)
+   Company: adidas
+   Location: Paris, FR
+   Posted: No Date
+----------------------------------------
+67. Store Manager - adidas Oshawa Retail Store #2065
+   Company: adidas
+   Location: Edmonton, CA
+   Posted: No Date
+----------------------------------------
+68. Senior Manager Sales (Madrid, ES, Comunidad )
+   Company: adidas
+   Location: Madrid, ES, Comunidad
+   Posted: No Date
+----------------------------------------
+69. P/T Retail Store Associate - Williamsburg, 6235, Williamsburg, VA
+   Company: adidas
+   Location: Williamsburg, VA, US
+   Posted: No Date
+----------------------------------------
+70. Senior Specialist Buyer Value Channel - EM South
+   Company: adidas
+   Location: Cape Town, Western Cape, ZA
+   Posted: No Date
+----------------------------------------
+71. Senior Specialist Financial Analyst - EM South
+   Company: adidas
+   Location: Cape Town, Western Cape, ZA
+   Posted: No Date
+----------------------------------------
+72. Senior Specialist Buyer eCommerce - EM South
+   Company: adidas
+   Location: Cape Town, Western Cape, ZA
+   Posted: No Date
+----------------------------------------
+73. Director, Quality
+   Company: adidas
+   Location: Jakarta, JK, ID
+   Posted: No Date
+----------------------------------------
+74. Assistant Manager, KAM
+   Company: adidas
+   Location: Manila, 00, PH
+   Posted: No Date
+----------------------------------------
+75. Senior Specialist Account Operations - temp until 30.9.2027
+   Company: adidas
+   Location: Prague, CZ
+   Posted: No Date
+----------------------------------------
+76. Retail Sales Associate V&A Waterfront
+   Company: adidas
+   Location: Cape Town, Western Cape, ZA
+   Posted: No Date
+----------------------------------------
+77. Senior Manager, FP&A - Omnichannel
+   Company: adidas
+   Location: Petaling Jaya, 10, MY
+   Posted: No Date
+----------------------------------------
+78. Specialist GBS Acct & Sales Ops Italian Speaker (Temporary)
+   Company: adidas
+   Location: Porto, 13, PT
+   Posted: No Date
+----------------------------------------
+79. Junior Software Developer - Frontend
+   Company: adidas
+   Location: Zaragoza, ES, Aragon
+   Posted: No Date
+----------------------------------------
+80. Assistant Manager, B2C & Inventory/Claims Operations
+   Company: adidas
+   Location: Jakarta, JK, ID
+   Posted: No Date
+----------------------------------------
+81. Director of Marketing & Communication
+   Company: Accor
+   Location: Phuket, PHUKET, Thailand
+   Posted: No Date
+----------------------------------------
+82. Manager/Senior Manager, Revenue Strategy & Operations (Korea GTM)
+   Company: Airwallex
+   Location: KR - Seoul
+   Posted: No Date
+----------------------------------------
+83. 医药代表-心血管及内分泌代谢-北京
+   Company: Merck Group
+   Location: Beijing, Beijing, CN, 100016
+   Posted: No Date
+----------------------------------------
+84. Area Business Director, West
+   Company: Merck Group
+   Location: Boston, Massachusetts, US, 02210
+   Posted: No Date
+----------------------------------------
+85. Associate Director, Medical Writing
+   Company: Merck Group
+   Location: Tokyo, Tokyo, JP, 106-0041
+   Posted: No Date
+----------------------------------------
+86. Packaging Operator 1 - 1st Shift
+   Company: Merck Group
+   Location: Sheboygan Falls, Wisconsin, US, 53085-2814
+   Posted: No Date
+----------------------------------------
+87. Manufacturing Operator 2 - 12 Hour Night Shift
+   Company: Merck Group
+   Location: Sheboygan Falls, Wisconsin, US, 53085-2814
+   Posted: No Date
+----------------------------------------
+88. Manufacturing Operator 2 - 12 Hour Night Shift
+   Company: Merck Group
+   Location: Sheboygan Falls, Wisconsin, US, 53085-2814
+   Posted: No Date
+----------------------------------------
+89. Associate Director, Market Access Channel Analytics Lead - Seaport  MA
+   Company: Merck Group
+   Location: Boston, Massachusetts, US, 02210
+   Posted: No Date
+----------------------------------------
+90. Manufacturing Operator 2 - 12 Hour Day Shift
+   Company: Merck Group
+   Location: Sheboygan Falls, Wisconsin, US, 53085-2814
+   Posted: No Date
+----------------------------------------
+91. Supply Chain Planner
+   Company: Merck Group
+   Location: Jaffrey, New Hampshire, US, 03452
+   Posted: No Date
+----------------------------------------
+92. Chemielaborant (m/w/d) für Analyse und Materialforschung
+   Company: Merck Group
+   Location: Gernsheim, Hessen, DE, 64579
+   Posted: No Date
+----------------------------------------
+93. Regional Marketing Liaison- HIV - East
+   Company: Merck Group
+   Location: Boston, Massachusetts, US, 02210
+   Posted: No Date
+----------------------------------------
+94. HR Generalist Europe (all genders)
+   Company: Merck Group
+   Location: Warszawa, Mazowieckie, PL, 00-203
+   Posted: No Date
+----------------------------------------
+95. Senior Production Scientist
+   Company: Merck Group
+   Location: Miamisburg, Ohio, US, 45342-4309
+   Posted: No Date
+----------------------------------------
+96. Regional Marketing Liaison - HIV - West
+   Company: Merck Group
+   Location: Boston, Massachusetts, US, 02210
+   Posted: No Date
+----------------------------------------
+97. Patient Safety Associate
+   Company: Merck Group
+   Location: Alger, Algeria, DZ, 16035 DZA
+   Posted: No Date
+----------------------------------------
+98. Production Planner
+   Company: Merck Group
+   Location: Cork, Cork, IE, T23 A5NR
+   Posted: No Date
+----------------------------------------
+99. Lagerarbeiter / Kommissionierer Rohstoff & Packmittel (m/w/d)
+   Company: Merck Group
+   Location: Schnelldorf, Bayern, DE, 91625
+   Posted: No Date
+----------------------------------------
+100. Mitarbeiter Chemische Produktion (m/w/d) Voll-/Teilzeit
+   Company: Merck Group
+   Location: Gernsheim, Hessen, DE, 64579
+   Posted: No Date
+----------------------------------------
