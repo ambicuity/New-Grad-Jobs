@@ -995,6 +995,46 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
+def normalize_date_string(posted_at: str) -> str:
+    """
+    Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
+    to ISO format dates that date_parser can handle.
+    
+    Handles formats like:
+    - "Posted Today" -> today's date
+    - "Posted Yesterday" -> yesterday's date  
+    - "Posted 2 Days Ago" -> 2 days ago
+    - "Posted 30+ Days Ago" -> 30 days ago
+    """
+    if not isinstance(posted_at, str):
+        return posted_at
+    
+    posted_at_lower = posted_at.lower().strip()
+    now = datetime.now()
+    
+    # Handle "Posted Today" or "Today"
+    if 'today' in posted_at_lower:
+        return now.strftime('%Y-%m-%d')
+    
+    # Handle "Posted Yesterday" or "Yesterday"
+    if 'yesterday' in posted_at_lower:
+        return (now - timedelta(days=1)).strftime('%Y-%m-%d')
+    
+    # Handle "Posted X Days Ago" or "X Days Ago"
+    days_match = re.search(r'(\d+)\s*days?\s+ago', posted_at_lower)
+    if days_match:
+        days = int(days_match.group(1))
+        return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+    
+    # Handle "Posted 30+ Days Ago" or "30+ Days Ago"
+    days_plus_match = re.search(r'(\d+)\+\s*days?\s+ago', posted_at_lower)
+    if days_plus_match:
+        days = int(days_plus_match.group(1))
+        return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+    
+    # Return original if no pattern matches
+    return posted_at
+
 def is_recent_job(posted_at: str, max_age_days: int) -> bool:
     """Check if job was posted within the specified number of days"""
     if not posted_at:
@@ -1010,7 +1050,9 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         elif isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
         else:
-            posted_date = date_parser.parse(posted_at)
+            # Normalize human-readable date strings before parsing
+            normalized_date = normalize_date_string(posted_at)
+            posted_date = date_parser.parse(normalized_date)
         
         # Remove timezone info for comparison
         posted_date = posted_date.replace(tzinfo=None)
@@ -1208,7 +1250,9 @@ def format_posted_date(posted_at: str) -> str:
         if isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
         else:
-            posted_date = date_parser.parse(posted_at)
+            # Normalize human-readable date strings before parsing
+            normalized_date = normalize_date_string(posted_at)
+            posted_date = date_parser.parse(normalized_date)
             
         now = datetime.now()
         diff = now - posted_date.replace(tzinfo=None)
@@ -1230,7 +1274,9 @@ def get_iso_date(posted_at) -> str:
         if isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(posted_at / 1000)
         else:
-            posted_date = date_parser.parse(posted_at)
+            # Normalize human-readable date strings before parsing
+            normalized_date = normalize_date_string(posted_at)
+            posted_date = date_parser.parse(normalized_date)
         return posted_date.replace(tzinfo=None).isoformat()
     except:
         return ""
