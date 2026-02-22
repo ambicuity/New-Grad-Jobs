@@ -14,7 +14,7 @@
 
 ## 📂 Browse 1883 Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (1229)
+💻 [Software Engineering](#software-engineering) (1228)
 
 🤖 [Data Science & ML](#data-science--ml) (169)
 
@@ -26,7 +26,7 @@
 
 🔧 [Hardware Engineering](#hardware-engineering) (14)
 
-💼 [Other](#other) (234)
+💼 [Other](#other) (235)
 
 ---
 
@@ -321,28 +321,28 @@
 | Klaviyo | Software Engineer II - Custom Objects  | Boston, MA | 1 day ago | [Apply](https://www.klaviyo.com/careers/jobs?gh_jid=7532495003) |
 | Klaviyo | Software Engineer II - Editors | Boston, MA | 1 day ago | [Apply](https://www.klaviyo.com/careers/jobs?gh_jid=7528839003) |
 | Klaviyo | Software Engineer II - Integrations  | Boston, MA | 1 day ago | [Apply](https://www.klaviyo.com/careers/jobs?gh_jid=7453479003) |
-| Sezzle | Junior Software Engineer (Mexico) | Mexico, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7598109003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (Mexico) | Mexico, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7598107003) |
-| Sezzle | Junior Software Engineer (Venezuela) | Venezuela, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7586431003) |
-| Sezzle | Software Engineer II with Accounting Experience (Brazil) | Brazil, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544020003) |
-| Sezzle | Software Engineer II with Accounting Experience (Chile) | Chile, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544025003) |
-| Sezzle | Software Engineer II with Accounting Experience (Mexico) | Mexico, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544015003) |
-| Sezzle | Junior Software Engineer (Brazil) | Brazil, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7541127003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (Brazil) | Brazil, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7541130003) |
-| Sezzle | Software Engineer II with Accounting Experience  | Türkiye, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527806003) |
-| Sezzle | Software Engineer II with Accounting Experience (Argentina) | Argentina, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527803003) |
-| Sezzle | Junior Software Engineer with Accounting Experience  | Türkiye, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668069003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (LATAM) | Colombia, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668068003) |
-| Sezzle | Software Engineer II with Accounting Experience (Colombia) | Colombia, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527801003) |
-| Sezzle | Software Engineer II with Accounting Experience (LATAM) | Latin America | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527791003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (Argentina) | Argentina, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668066003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (Chile) | Chile, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668067003) |
-| Sezzle | Junior Software Engineer with Accounting Experience (LATAM) | Latin America | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668065003) |
-| Sezzle | Junior Software Engineer (Turkey) | Türkiye, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6275706003) |
-| Sezzle | Junior Software Engineer (Argentina) | Argentina, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110231003) |
-| Sezzle | Junior Software Engineer (Chile) | Chile, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110233003) |
-| Sezzle | Junior Software Engineer (LATAM) | Latin America | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/5761145003) |
-| Sezzle | Junior Software Engineer (Colombia) | Colombia, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110238003) |
+| Sezzle | Junior Software Engineer (Mexico) | Mexico, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7598109003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (Mexico) | Mexico, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7598107003) |
+| Sezzle | Junior Software Engineer (Venezuela) | Venezuela, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7586431003) |
+| Sezzle | Software Engineer II with Accounting Experience (Brazil) | Brazil, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544020003) |
+| Sezzle | Software Engineer II with Accounting Experience (Chile) | Chile, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544025003) |
+| Sezzle | Software Engineer II with Accounting Experience (Mexico) | Mexico, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7544015003) |
+| Sezzle | Junior Software Engineer (Brazil) | Brazil, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7541127003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (Brazil) | Brazil, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7541130003) |
+| Sezzle | Software Engineer II with Accounting Experience  | Türkiye, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527806003) |
+| Sezzle | Software Engineer II with Accounting Experience (Argentina) | Argentina, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527803003) |
+| Sezzle | Junior Software Engineer with Accounting Experience  | Türkiye, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668069003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (LATAM) | Colombia, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668068003) |
+| Sezzle | Software Engineer II with Accounting Experience (Colombia) | Colombia, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527801003) |
+| Sezzle | Software Engineer II with Accounting Experience (LATAM) | Latin America | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7527791003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (Argentina) | Argentina, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668066003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (Chile) | Chile, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668067003) |
+| Sezzle | Junior Software Engineer with Accounting Experience (LATAM) | Latin America | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6668065003) |
+| Sezzle | Junior Software Engineer (Turkey) | Türkiye, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6275706003) |
+| Sezzle | Junior Software Engineer (Argentina) | Argentina, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110231003) |
+| Sezzle | Junior Software Engineer (Chile) | Chile, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110233003) |
+| Sezzle | Junior Software Engineer (LATAM) | Latin America | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/5761145003) |
+| Sezzle | Junior Software Engineer (Colombia) | Colombia, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/6110238003) |
 | Toast | Software Engineer II, Enterprise | Canada (remote) | 2 days ago | [Apply](https://careers.toasttab.com/jobs?gh_jid=7587103) |
 | 🚀 Roblox | [2026 Canada] Software Engineer, Geometry - Early Career | Vancouver, British Columbia, Canada | 2 days ago | [Apply](https://careers.roblox.com/jobs/7558821?gh_jid=7558821) |
 | 🚀 Roblox | [2026] Software Engineer, Creator - Early Career | San Mateo, CA, United States | 2 days ago | [Apply](https://careers.roblox.com/jobs/7557909?gh_jid=7557909) |
@@ -556,7 +556,7 @@
 | Scopely | Software Engineer - Web/Fullstack | US - Sunnyvale, United States | 4 days ago | [Apply](https://job-boards.greenhouse.io/scopely/jobs/5105578008) |
 | Graphcore | 2026 Graduate Software Engineer - AI/ ML Test Systems | Bristol, UK | 4 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8245655002) |
 | Postman | Software Engineer - Frontend, Performance and Monitoring | Bengaluru, Karnataka, India | 4 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7583237003) |
-| Tamara | Product Engineer II - Backend | India | 4 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4762941101) |
+| Tamara | Product Engineer II - Backend | India | 5 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4762941101) |
 | Vonage | Software Engineer - Java / Kotlin  | Barcelona, Spain (Work from Home - Spain) | 5 days ago | [Apply](https://job-boards.greenhouse.io/vonage/jobs/8374229002) |
 | Postman | Software Engineer, API Design & Governance (FE) | Bengaluru, Karnataka, India | 5 days ago | [Apply](https://job-boards.greenhouse.io/postman/jobs/7627671003) |
 | StockX | Software Engineer - Core Services | Bangalore, India | 5 days ago | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8377954002) |
@@ -1156,9 +1156,16 @@
 | 🚀 PlanetScale | Software Engineer - Infrastructure | San Francisco Bay Area or Remote | 2026-01-05 | [Apply](https://job-boards.greenhouse.io/planetscale/jobs/4036240009) |
 | 🚀 Grammarly | Software Engineer, Back-End | Kyiv; Hybrid | 2026-01-05 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6467233) |
 | Kodiak Robotics | Software Engineer, Computational Geometry (Autonomy) | San Francisco Bay Area | 2025-12-31 | [Apply](https://job-boards.greenhouse.io/kodiak/jobs/4028529009) |
+| KBR | Model Based Systems Engineer (MBSE) | Beavercreek, OH, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=8763126ec88fa1c6) |
+| KBR | Model Based Systems Engineer (MBSE) | Beavercreek, OH, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c11d9320e83d2f17) |
+| 🔥 L3Harris | Specialist, Systems Engineer | Aurora, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c500026408478d10) |
+| Dhara Consulting Group | Software Engineers -DevSecOps (Associate and Experienced) | Berkeley, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=9603180e9da9b009) |
+| A Thinking Ape | Junior Software Development Engineer - Live Ops | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=ef0f32e940af10ec) |
+| 🔥 Wells Fargo | Software Engineer | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=19b1eac9369c5490) |
+| Xylem | Jr Software Engineer | TN, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=3598f7886c27055b) |
+| Scotiabank | Software Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=47d59a5bf2e4f409) |
 | TD | Software Engineer II (Mainframe) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=935383a16e8ebdf1) |
 | Lumentum Operations | System Software Engineer | Ottawa, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=349bf3bd486196c6) |
-| Xylem | Jr Software Engineer | TN, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=3598f7886c27055b) |
 | Anblicks | Software Engineer – Java | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=2c9330125a23892b) |
 | gekinformation | Software Engineer | KL, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=f127c1a4174d05ff) |
 | Anblicks | Software Engineer – Java | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=bcfc0adcdadb4ee5) |
@@ -1169,18 +1176,14 @@
 | Accenture | Custom Software Engineer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=8d78a2410e78810b) |
 | Accenture | Custom Software Engineer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=44ec690ba1c233b9) |
 | Accenture | Custom Software Engineer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=b0833750492be528) |
-| A Thinking Ape | Junior Software Development Engineer - Live Ops | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=ef0f32e940af10ec) |
-| Teknorix | Software Engineer - iOS / Android | Verna, GA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=54a39c4716744882) |
-| GEA Group Aktiengesellschaft | Automation SCADA Software Engineer | GJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=11aa6a378caa2b0e) |
-| 🔥 Wells Fargo | Software Engineer | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=19b1eac9369c5490) |
-| McGill University | Software Developer | Montréal, QC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=f8ead7be7c67476b) |
 | Dhara Consulting Group | Software Engineer-Developer (Development) | Daytona Beach, FL, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=24b50974331dc2e8) |
 | 🔥 Boeing | Software Engineer–Developer (Development) | Daytona Beach, FL, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=cbaed061990557f9) |
 | None | Systems Engineer | Brooklyn, NY, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=3c984986e9a4a18a) |
+| 🔥 Salesforce | Software Engineering AMTS/MTS (College Grad) | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b92a67a6ddcf4bc4) |
 | Jerry | Associate Software Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1299191a5429f148) |
 | Manulife | Associate Full Stack Software Engineer | Waterloo, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=d952bc6e8d08b528) |
-| Dhara Consulting Group | Software Engineers -DevSecOps (Associate and Experienced) | Berkeley, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=9603180e9da9b009) |
-| Scotiabank | Software Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=47d59a5bf2e4f409) |
+| 🔥 NVIDIA | Compiler Engineer, Compute Front-End - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=24e1088e8f257d38) |
+| GEA Group Aktiengesellschaft | Automation SCADA Software Engineer | GJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=11aa6a378caa2b0e) |
 | KRS Solutions | Associate Software Engineer | GJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=059d7a85d4022370) |
 | Add Pearlinfo Pvt. Ltd. | Associate Software Engineer | GJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=5c97939821192f10) |
 | Empower | Software Engineer Full stack | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=31294cb684a7b7d2) |
@@ -1191,34 +1194,30 @@
 | NatWest Group | Software Engineer, Microsoft Exchange | TN, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=35e47008b1ea78b9) |
 | NatWest Group | Software Engineer, ReactJS | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=d6209797ddf996d8) |
 | Accenture | Custom Software Engineer | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=c3e179a165727c7e) |
-| 🔥 NVIDIA | Compiler Engineer, Compute Front-End - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=24e1088e8f257d38) |
-| 🔥 Salesforce | Software Engineering AMTS/MTS (College Grad) | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b92a67a6ddcf4bc4) |
-| Alpha Plus Technologies Pvt. Ltd. | Software Developer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=d382ed3e728ec89e) |
-| KBR | Model Based Systems Engineer (MBSE) | Beavercreek, OH, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=8763126ec88fa1c6) |
-| KBR | Model Based Systems Engineer (MBSE) | Beavercreek, OH, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c11d9320e83d2f17) |
-| 🔥 L3Harris | Specialist, Systems Engineer | Aurora, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c500026408478d10) |
+| Teknorix | Software Engineer - iOS / Android | Verna, GA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=54a39c4716744882) |
+| McGill University | Software Developer | Montréal, QC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=f8ead7be7c67476b) |
 | JPMorganChase | Software Engineer III - SRE | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=75deedfc19220a33) |
 | 🔥 L3Harris | Scientist, Systems Engineering | Clifton, NJ, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=5a4bcd4937264bc1) |
+| MTSI | Systems Engineer and Platform SME- JSE | Las Vegas, NV, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=58d5b01b45533997) |
 | MetLife | Junior Software Engineer | Whippany, NJ, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=27a8a2a71007930a) |
 | MetLife | Junior Software Engineer | Cary, NC, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f4bc362de25dc1c7) |
 | MetLife | Junior Software Engineer | Cary, NC, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=61795e8b4c6bd374) |
 | 🔥 Visa | Software Engineer, New College Grad - 2026, Austin, TX | Austin, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f37d1f5ef653d035) |
 | MetLife | Junior Software Engineer | Cary, NC, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=4387c130a5f162f6) |
 | MetLife | Junior Software Engineer | Cary, NC, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=ad2f0865c9b1aca2) |
-| MTSI | Systems Engineer and Platform SME- JSE | Las Vegas, NV, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=58d5b01b45533997) |
 | Snap Inc. | Software Engineer C++, Level 4 | New York, NY, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=476fba652465933b) |
 | University Charter School | Math Coach 2026-2027 | Livingston, AL, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=149ccae1b699bc15) |
 | IXL Learning | Software Developer, New Grad | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=2390b2debccc68c5) |
 | 🔥 PayPal | Software Engineer | San Jose, California, United States of America | 1 day ago | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0134877-1) |
 | 🔥 PayPal | Software Engineer - Java | San Jose, California, United States of America | 1 day ago | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer---Java_R0133240-1) |
-| 🔥 PayPal | Software Engineer, Fraud Intelligence Systems | Dublin, County Dublin, Ireland | 2026-02-14 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Dublin-County-Dublin-Ireland/Software-Engineer--Fraud-Intelligence-Systems_R0133662-1) |
-| 🔥 PayPal | Web Software Engineer | San Jose, California, United States of America | 2026-02-13 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Web-Software-Engineer_R0134512) |
-| 🔥 PayPal | Software Engineer 3 | Scottsdale, Arizona, United States of America | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Scottsdale-Arizona-United-States-of-America/Software-Engineer-3_R0135065) |
-| 🔥 PayPal | Software Engineer 2 | San Jose, California, United States of America | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-2_R0135060) |
-| 🔥 PayPal | Software Engineer - Java | 2 Locations | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Software-Engineer---Java_R0129211-1) |
-| 🔥 PayPal | Software Engineer - BE Python | San Jose, California, United States of America | 2026-02-11 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer---BE-Python_R0134422-1) |
-| 🔥 PayPal | Software Engineer in Test - (Mobile) | 2 Locations | 2026-02-11 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-in-Test----Mobile-_R0134871-1) |
-| 🔥 PayPal | iOS Software Engineer | Bangalore, Karnataka, India | 2026-02-11 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Bangalore-Karnataka-India/iOS-Software-Engineer_R0134312-1) |
+| 🔥 PayPal | Software Engineer, Fraud Intelligence Systems | Dublin, County Dublin, Ireland | 2026-02-15 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Dublin-County-Dublin-Ireland/Software-Engineer--Fraud-Intelligence-Systems_R0133662-1) |
+| 🔥 PayPal | Web Software Engineer | San Jose, California, United States of America | 2026-02-14 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Web-Software-Engineer_R0134512) |
+| 🔥 PayPal | Software Engineer 3 | Scottsdale, Arizona, United States of America | 2026-02-13 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Scottsdale-Arizona-United-States-of-America/Software-Engineer-3_R0135065) |
+| 🔥 PayPal | Software Engineer 2 | San Jose, California, United States of America | 2026-02-13 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-2_R0135060) |
+| 🔥 PayPal | Software Engineer - Java | 2 Locations | 2026-02-13 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Software-Engineer---Java_R0129211-1) |
+| 🔥 PayPal | Software Engineer - BE Python | San Jose, California, United States of America | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer---BE-Python_R0134422-1) |
+| 🔥 PayPal | Software Engineer in Test - (Mobile) | 2 Locations | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-in-Test----Mobile-_R0134871-1) |
+| 🔥 PayPal | iOS Software Engineer | Bangalore, Karnataka, India | 2026-02-12 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Bangalore-Karnataka-India/iOS-Software-Engineer_R0134312-1) |
 | 🔥 Mastercard | Software Engineer II-3 | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-3_R-261173-1) |
 | 🔥 Mastercard | Software Engineer II - Golang | London, England (Angel Lane) | 3 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/London-England-Angel-Lane/Software-Engineer-II---Golang_R-261023) |
 | 🔥 Mastercard | Software Engineer II | O'Fallon, Missouri | 4 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-269309) |
@@ -1228,36 +1227,36 @@
 | 🔥 NVIDIA | Compiler Engineer, Compute Front-End - New College Grad 2026 | 3 Locations | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Senior-Compiler-Engineer---Compute-Front-End--New-College-Grad-2026_JR2013488) |
 | 🔥 NVIDIA | Systems Software Engineer, AI Infrastructure | 6 Locations | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/India-Bengaluru/Systems-Software-Engineer--AI-Infrastructure_JR2013276) |
 | 🔥 Intel | EDA Tools Software Engineer | 4 Locations | 1 day ago | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/EDA-Tools-Software-Engineer_JR0280882) |
-| 🔥 Intel | Facilities Chemical/Gas Systems Engineer | US, Arizona, Phoenix | 2026-02-13 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Facilities-Chemical-Gas-Systems-Engineer_JR0280486-1) |
-| 🔥 Intel | Software Engineer – Execution Engineering | US, California, Santa Clara | 2026-02-12 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Software-Engineer---Execution-Engineering_JR0280788) |
-| 🔥 Intel | Software Engineer for VTC Simics development | India, Bangalore | 2026-02-10 | [Apply](https://intel.wd1.myworkdayjobs.com/job/India-Bangalore/Software-Engineer-for-VTC-Simics-development_JR0280748) |
+| 🔥 Intel | Facilities Chemical/Gas Systems Engineer | US, Arizona, Phoenix | 2026-02-14 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Facilities-Chemical-Gas-Systems-Engineer_JR0280486-1) |
+| 🔥 Intel | Software Engineer – Execution Engineering | US, California, Santa Clara | 2026-02-13 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Software-Engineer---Execution-Engineering_JR0280788) |
+| 🔥 Intel | Software Engineer for VTC Simics development | India, Bangalore | 2026-02-11 | [Apply](https://intel.wd1.myworkdayjobs.com/job/India-Bangalore/Software-Engineer-for-VTC-Simics-development_JR0280748) |
 | Dell | Software Engineer C OR C++ OR JAVA with Linux and distributed systems | 2 Locations | 1 day ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C-OR-C---OR-JAVA-with-Linux-and-distributed-systems_R285936) |
 | Dell | Software Engineer(C, Linux, Kernel, Device Drivers) | 2 Locations | 1 day ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C--Linux--Kernel--Device-Drivers-_R285944) |
 | Dell | Software Engineer(C, C++ or Golang, Kubernetes, Storage, Systems Programming) | 2 Locations | 2 days ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C--C---or-Golang--Kubernetes--Storage--Systems-Programming-_R285953) |
 | Dell | Software Engineer (Quality Engineer,Python,SDET) | 2 Locations | 3 days ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer--Quality-Engineer-Python-SDET-_R285948) |
-| Dell | Software Engineer_Python_Automation_Storage | Bangalore, India | 2026-02-13 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-Python-Automation-Storage_R285955) |
-| Dell | Software Engineer-Java, Spring, Storage, FileSystem, DataProtection | 2 Locations | 2026-02-13 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-Java--Spring--Storage--FileSystem--DataProtection_R285952) |
-| Dell | Software Engineer_RxJava | Bangalore, India | 2026-02-13 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-RxJava_R285956) |
-| Dell | Software Engineer(C, C++,Filesystem, Data Protection) | Bangalore, India | 2026-02-13 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C--C---Filesystem--Data-Protection-_R285951) |
-| Dell | Software Engineer_C C++_Data Mobility | Bangalore, India | 2026-02-13 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C-C---Data-Mobility_R285958) |
-| 🔥 HP | Linux Systems Software Developer- HP Wolf Security | Cambridge, Cambridgeshire, United Kingdom | 2026-02-14 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Cambridge-Cambridgeshire-United-Kingdom/Linux-Systems-Software-Developer--HP-Wolf-Security_3158398-1) |
-| 🔥 HP | Embedded Firmware and Software Engineer | 2 Locations | 2026-02-11 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Embedded-Firmware-and-Software-Engineer_3156667-1) |
-| 🔥 HP | Systems Software Engineer | Spring, Texas, United States of America | 2026-02-06 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Systems-Software-Engineer_3158475-2) |
-| Workday | Software Developer - Authentication | IND.Chennai | 2026-02-10 | [Apply](https://workday.wd5.myworkdayjobs.com/job/INDChennai/Software-Developer---Authentication_JR-0104218-1) |
+| Dell | Software Engineer_Python_Automation_Storage | Bangalore, India | 2026-02-14 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-Python-Automation-Storage_R285955) |
+| Dell | Software Engineer-Java, Spring, Storage, FileSystem, DataProtection | 2 Locations | 2026-02-14 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-Java--Spring--Storage--FileSystem--DataProtection_R285952) |
+| Dell | Software Engineer_RxJava | Bangalore, India | 2026-02-14 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-RxJava_R285956) |
+| Dell | Software Engineer(C, C++,Filesystem, Data Protection) | Bangalore, India | 2026-02-14 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C--C---Filesystem--Data-Protection-_R285951) |
+| Dell | Software Engineer_C C++_Data Mobility | Bangalore, India | 2026-02-14 | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bangalore-India/Software-Engineer-C-C---Data-Mobility_R285958) |
+| 🔥 HP | Linux Systems Software Developer- HP Wolf Security | Cambridge, Cambridgeshire, United Kingdom | 2026-02-15 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Cambridge-Cambridgeshire-United-Kingdom/Linux-Systems-Software-Developer--HP-Wolf-Security_3158398-1) |
+| 🔥 HP | Embedded Firmware and Software Engineer | 2 Locations | 2026-02-12 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Embedded-Firmware-and-Software-Engineer_3156667-1) |
+| 🔥 HP | Systems Software Engineer | Spring, Texas, United States of America | 2026-02-07 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Systems-Software-Engineer_3158475-2) |
+| Workday | Software Developer - Authentication | IND.Chennai | 2026-02-11 | [Apply](https://workday.wd5.myworkdayjobs.com/job/INDChennai/Software-Developer---Authentication_JR-0104218-1) |
 | 🔥 Autodesk | Software Engineer | Singapore, SGP | 1 day ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Singapore-SGP/Software-Engineer_26WD95537-1) |
 | 🔥 Autodesk | Java Software Engineer | Atlanta, GA, USA | 4 days ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Java-Software-Engineer_26WD95170-2) |
-| 🔥 Autodesk | Software Developer | Toronto, ON, CAN | 2026-02-12 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Toronto-ON-CAN/Software-Developer_25WD93886) |
-| 🔥 Autodesk | Software Developer | 2 Locations | 2026-02-11 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Montreal-QC-CAN/Software-Developer_25WD93695-1) |
-| 🔥 Autodesk | Software Engineer | Bengaluru, IND | 2026-02-11 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer_26WD94921-1) |
-| 🔥 Autodesk | Software Engineer | Singapore, SGP | 2026-02-11 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Singapore-SGP/Software-Engineer_26WD95352) |
-| 🔥 Autodesk | Software Engineer - C++ (Fusion AI Features) | Pune, IND | 2026-02-09 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer---C----Fusion-AI-Features-_25WD93948-1) |
-| Pfizer | Associate, Commercial Analytics AI Solutions and Engineering Full Stack Engineer | 2 Locations | 2026-02-12 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/Costa-Rica---Escazu/Associate--Commercial-Analytics-AI-Solutions-and-Engineering-Full-Stack-Engineer_4951495) |
-| Walmart | SOFTWARE ENGINEER III | IN KA BANGALORE Home Office Building 11 | 2026-02-06 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-11/SOFTWARE-ENGINEER-III_R-2363934) |
-| Walmart | SOFTWARE ENGINEER III, INFORMATION SECURITY | IN KA BANGALORE Home Office Building 11 | 2026-01-22 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-11/SOFTWARE-ENGINEER-III--INFORMATION-SECURITY_R-2372696) |
-| Walmart | Software Engineer - Android | Reston, VA | 2026-01-22 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Reston-VA/Software-Engineer---Android_R-1715700-1) |
-| Walmart | Software Engineer - Android | Sunnyvale, CA | 2026-01-22 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/Software-Engineer---Android_R-1694188-1) |
-| Walmart | Software Engineer - Android | Bentonville, AR | 2026-01-22 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer---Android_R-1717052-1) |
-| Walmart | Software Engineer - iOS | Bentonville, AR | 2026-01-22 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer---iOS_R-1717051-1) |
+| 🔥 Autodesk | Software Developer | Toronto, ON, CAN | 2026-02-13 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Toronto-ON-CAN/Software-Developer_25WD93886) |
+| 🔥 Autodesk | Software Developer | 2 Locations | 2026-02-12 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Montreal-QC-CAN/Software-Developer_25WD93695-1) |
+| 🔥 Autodesk | Software Engineer | Bengaluru, IND | 2026-02-12 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer_26WD94921-1) |
+| 🔥 Autodesk | Software Engineer | Singapore, SGP | 2026-02-12 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Singapore-SGP/Software-Engineer_26WD95352) |
+| 🔥 Autodesk | Software Engineer - C++ (Fusion AI Features) | Pune, IND | 2026-02-10 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer---C----Fusion-AI-Features-_25WD93948-1) |
+| Pfizer | Associate, Commercial Analytics AI Solutions and Engineering Full Stack Engineer | 2 Locations | 2026-02-13 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/Costa-Rica---Escazu/Associate--Commercial-Analytics-AI-Solutions-and-Engineering-Full-Stack-Engineer_4951495) |
+| Walmart | SOFTWARE ENGINEER III | IN KA BANGALORE Home Office Building 11 | 2026-02-07 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-11/SOFTWARE-ENGINEER-III_R-2363934) |
+| Walmart | SOFTWARE ENGINEER III, INFORMATION SECURITY | IN KA BANGALORE Home Office Building 11 | 2026-01-23 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-11/SOFTWARE-ENGINEER-III--INFORMATION-SECURITY_R-2372696) |
+| Walmart | Software Engineer - Android | Reston, VA | 2026-01-23 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Reston-VA/Software-Engineer---Android_R-1715700-1) |
+| Walmart | Software Engineer - Android | Sunnyvale, CA | 2026-01-23 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/Software-Engineer---Android_R-1694188-1) |
+| Walmart | Software Engineer - Android | Bentonville, AR | 2026-01-23 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer---Android_R-1717052-1) |
+| Walmart | Software Engineer - iOS | Bentonville, AR | 2026-01-23 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer---iOS_R-1717051-1) |
 | 🔥 Northrop Grumman | Cyber Systems Engineer 3 | United States-Alabama-Huntsville | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Cyber-Systems-Engineer-3_R10223632) |
 | 🔥 Northrop Grumman | SDS - Model-Based Processes Systems Engineer - 17683 | United States-Utah-Roy | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/SDS---Model-Based-Processes-Systems-Engineer---17683_R10223289) |
 | 🔥 Northrop Grumman | Systems Engineer - Level 3 | United States-Arizona-Chandler | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Principal-Engineer-Systems---Level-3_R10215398) |
@@ -1333,7 +1332,7 @@
 | 🚀 Coinbase | Data Scientist II - Institutional | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/7583647?gh_jid=7583647) |
 | 🚀 Coinbase | Data Scientist II - Platform | Remote - USA | 4 days ago | [Apply](https://www.coinbase.com/careers/positions/6679661?gh_jid=6679661) |
 | Scopely | Data Scientist - Pikmin Bloom | JP - Tokyo, Japan | 4 days ago | [Apply](https://job-boards.greenhouse.io/scopely/jobs/5106674008) |
-| Tamara | Machine Learning Engineer | Dubai, United Arab Emirates | 4 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4674802101) |
+| Tamara | Machine Learning Engineer | Dubai, United Arab Emirates | 5 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4674802101) |
 | Graphcore | 2026 Graduate Machine Learning Engineer - Applied AI | Bristol, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8234675002) |
 | Graphcore | 2026 Graduate Machine Learning Engineer - Applied AI | Cambridge, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8243816002) |
 | Braze | Forward-Deployed Data Scientist II | Bucharest | 5 days ago | [Apply](https://boards.greenhouse.io/braze/jobs/7597777?gh_jid=7597777) |
@@ -1430,27 +1429,27 @@
 | Celonis | Product Data Scientist | Bangalore, India | 2026-01-12 | [Apply](https://job-boards.greenhouse.io/celonis/jobs/7566428003?gh_jid=7566428003) |
 | 🔥 Lyft | Data Scientist, Algorithms - Lyft Ads | Toronto, Canada | 2026-01-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8329946002?gh_jid=8329946002) |
 | Spotify | Data Engineer - Financial Engineering | Toronto | 2025-12-30 | [Apply](https://jobs.lever.co/spotify/c4b93062-9730-40ab-9e6d-3361dc1985b3) |
+| Tacoma-Pierce County Health Department | Data Scientist | Tacoma, WA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=af508fb3d8602fdd) |
+| 🔥 NVIDIA | AI Developer Technology Engineer, Financial Sector - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=2dab27180f176e04) |
+| 🔥 NVIDIA | System Design Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f8bebbee273bc2a9) |
+| 🔥 NVIDIA | CAD Engineer, Physical Design - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b078ef687cda587c) |
 | Scotiabank | Data Scientist - Global Artificial Intelligence | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=0353bcbced9a5ce9) |
 | TD | Data Scientist III | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=53355e3b4180e625) |
 | TD | Data Scientist III | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3e107d82afdc65dd) |
 | TD | Data Scientist III (B3617) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=49d0fda7525c977e) |
-| 🔥 NVIDIA | AI Developer Technology Engineer, Financial Sector - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=2dab27180f176e04) |
-| 🔥 NVIDIA | System Design Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f8bebbee273bc2a9) |
-| 🔥 NVIDIA | CAD Engineer, Physical Design - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b078ef687cda587c) |
-| Tacoma-Pierce County Health Department | Data Scientist | Tacoma, WA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=af508fb3d8602fdd) |
-| 🔥 Adobe | Machine Learning Engineer 2 | Noida | 2026-02-13 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-2_R165280) |
-| 🔥 Adobe | Machine Learning Engineer - Infra | 3 Locations | 2026-02-12 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Machine-Learning-Engineer---Infra_R165019-1) |
-| 🔥 Adobe | AI/ML Engineer – Gen AI Assistant & Experience Engineering | 2 Locations | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/AI-ML-Engineer---Gen-AI-Assistant---Experience-Engineering_R163986) |
-| 🔥 Adobe | ML Engineer – Gen AI Assistant & Experience Engineering | 2 Locations | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/ML-Engineer---Gen-AI-Assistant---Experience-Engineering_R163987) |
-| 🔥 Adobe | Machine Learning Engineer 4 | Bangalore | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Machine-Learning-Engineer-4_R161411) |
+| 🔥 Adobe | Machine Learning Engineer 2 | Noida | 2026-02-14 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-2_R165280) |
+| 🔥 Adobe | Machine Learning Engineer - Infra | 3 Locations | 2026-02-13 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Machine-Learning-Engineer---Infra_R165019-1) |
+| 🔥 Adobe | AI/ML Engineer – Gen AI Assistant & Experience Engineering | 2 Locations | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/AI-ML-Engineer---Gen-AI-Assistant---Experience-Engineering_R163986) |
+| 🔥 Adobe | ML Engineer – Gen AI Assistant & Experience Engineering | 2 Locations | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/ML-Engineer---Gen-AI-Assistant---Experience-Engineering_R163987) |
+| 🔥 Adobe | Machine Learning Engineer 4 | Bangalore | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Machine-Learning-Engineer-4_R161411) |
 | 🔥 Adobe | 2026 University Graduate - Research Scientist/Engineer | San Jose | 1 day ago | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Jose/XMLNAME-2026-University-Graduate---Research-Scientist-Engineer_R160686) |
 | 🔥 PayPal | Machine Learning Engineer | 2 Locations | 4 days ago | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Chicago-Illinois-United-States-of-America/Machine-Learning-Engineer_R0134783-1) |
-| 🔥 PayPal | Data Scientist - PEP Risk | Dublin, County Dublin, Ireland | 2026-02-14 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Dublin-County-Dublin-Ireland/Sr-Data-Scientist_R0128363-1) |
-| 🔥 Intel | Data Scientist | US, Arizona, Phoenix | 2026-02-11 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Data-Scientist_JR0280682) |
+| 🔥 PayPal | Data Scientist - PEP Risk | Dublin, County Dublin, Ireland | 2026-02-15 | [Apply](https://paypal.wd1.myworkdayjobs.com/job/Dublin-County-Dublin-Ireland/Sr-Data-Scientist_R0128363-1) |
+| 🔥 Intel | Data Scientist | US, Arizona, Phoenix | 2026-02-12 | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Data-Scientist_JR0280682) |
 | 🔥 HP | Data Scientist | Bengaluru, Karnataka, India | Today | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Data-Scientist_3159087-1) |
 | 🔥 HP | Data Scientist | Bengaluru, Karnataka, India | Today | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Data-Scientist_3159088-1) |
 | 🔥 HP | Supply Chain Analytics Data Scientist | 2 Locations | 1 day ago | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Supply-Chain-Analytics-Program-Manager_3148643-1) |
-| 🔥 HP | AI Data Scientist | 2 Locations | 2026-02-13 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/AI-Data-Scientist_3151305-2) |
+| 🔥 HP | AI Data Scientist | 2 Locations | 2026-02-14 | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/AI-Data-Scientist_3151305-2) |
 | Citi | Data Scientist | Belfast  United Kingdom | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Belfast--United-Kingdom/Data-Scientist_25918923) |
 | 🔥 Northrop Grumman | Missile Operations Research Engineer Level 2 (AHT) | United States-California-Northridge | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/Missile-Operations-Research-Engineer-Level-2--AHT-_R10222789) |
 
@@ -1491,10 +1490,10 @@
 | 🚀 Brex | Data Engineer | San Francisco, California, United States | 2026-01-14 | [Apply](https://www.brex.com/careers/8366850002?gh_jid=8366850002) |
 | Financial Fabric | Associate Data Analyst | WB, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=dea893aa38609a09) |
 | TD | Data Engineer III | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1c6d573d65e7d0e6) |
-| 🔥 Adobe | Data Engineer | 6 Locations | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Francisco/Data-Engineer_R164245) |
+| 🔥 Adobe | Data Engineer | 6 Locations | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/San-Francisco/Data-Engineer_R164245) |
 | 🔥 Mastercard | Data Engineer II | Arlington, Virginia | 1 day ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Data-Engineer-II_R-271529) |
 | 🔥 Autodesk | Data Engineer | Bengaluru, IND | 1 day ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Data-Engineer_26WD95094-1) |
-| 🔥 Autodesk | Data Engineer | Toronto, ON, CAN | 2026-02-13 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Toronto-ON-CAN/Data-Engineer_26WD95509) |
+| 🔥 Autodesk | Data Engineer | Toronto, ON, CAN | 2026-02-14 | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Toronto-ON-CAN/Data-Engineer_26WD95509) |
 | Citi | Pyspark Data Engineer | Chennai Tamil Nadu India | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Python-Data-Engineer_26936201) |
 | CVS Health | Data Engineer | 50 Locations | 1 day ago | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/Treehouse/Analytic-Data-Engineer_R0790701-1) |
 | 🔥 Boeing | Flight Data Engineer | USA - Seattle, WA | 1 day ago | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Flight-Data-Engineer_JR2026497380) |
@@ -1540,13 +1539,13 @@
 | Appian | Information Security Engineer (2026 Graduates)  | McLean, Virginia | 1 day ago | [Apply](https://job-boards.greenhouse.io/appian/jobs/7547394) |
 | 🚀 Chime | Product Security Engineer | San Francisco, CA | 1 day ago | [Apply](https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002) |
 | Graphcore | Software Infrastructure Engineer | Bristol, UK; Cambridge, UK | 1 day ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8375821002) |
-| Sezzle | DevOps Engineer II (LATAM) | Argentina, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612384003) |
-| Sezzle | DevOps Engineer II (LATAM) | Chile, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612385003) |
-| Sezzle | DevOps Engineer II (LATAM) | Brazil, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612388003) |
-| Sezzle | DevOps Engineer II (LATAM) | Mexico, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612390003) |
-| Sezzle | DevOps Engineer II (LATAM) | Türkiye, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612387003) |
-| Sezzle | DevOps Engineer II (LATAM) | Latin America | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612383003) |
-| Sezzle | DevOps Engineer II (LATAM) | Colombia, Remote | 1 day ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612386003) |
+| Sezzle | DevOps Engineer II (LATAM) | Argentina, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612384003) |
+| Sezzle | DevOps Engineer II (LATAM) | Chile, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612385003) |
+| Sezzle | DevOps Engineer II (LATAM) | Brazil, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612388003) |
+| Sezzle | DevOps Engineer II (LATAM) | Mexico, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612390003) |
+| Sezzle | DevOps Engineer II (LATAM) | Türkiye, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612387003) |
+| Sezzle | DevOps Engineer II (LATAM) | Latin America | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612383003) |
+| Sezzle | DevOps Engineer II (LATAM) | Colombia, Remote | 2 days ago | [Apply](https://job-boards.greenhouse.io/sezzle/jobs/7612386003) |
 | 🔥 Block (Square) | Embedded Site Reliability Engineer | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4967291008?gh_jid=4967291008) |
 | Block | Embedded Site Reliability Engineer | Bay Area, CA, United States of America | 2 days ago | [Apply](http://block.xyz/careers/jobs/4967291008?gh_jid=4967291008) |
 | Flatiron Health | Application Security Engineer | NY office | 2 days ago | [Apply](https://flatiron.com/careers/open-positions/job?gh_jid=7512197) |
@@ -1664,22 +1663,22 @@
 | Dashlane | Security Engineer  | Paris, France | 2026-01-19 | [Apply](https://job-boards.greenhouse.io/dashlane/jobs/7387235) |
 | Zoox | Site Reliability Engineer | Foster City, CA | 2026-01-16 | [Apply](https://jobs.lever.co/zoox/886ba538-d38a-40af-ac28-833752b4458f) |
 | 🚀 Grammarly | Site Reliability Engineer | San Francisco; Hybrid | 2026-01-16 | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/6994860) |
-| Omada Rail Systems | CAD Technician - Highways (New Graduate) | North Bay, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=5e7e586b0fb7daac) |
-| DBS Bank | Associate, Quality Assurance Engineer, Regional Product Delivery | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=547bba858b7e0f0b) |
-| DBS Bank | Associate, Quality Assurance Engineer, Regional Product Delivery | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=72832187abca4f44) |
-| Kiewit Corporation | Traffic/MOT Engineer-in-Training - Kiewit Infrastructure Engineers | Burnaby, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=ce32fec08c68e7b9) |
-| Volvo Group | Graduate Apprentice Trainee | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=51c122f5ec3dc92d) |
-| NTT DATA | Network Engineer (ACI) - L2 | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=fb89301202e3713b) |
-| Volvo Group | Graduate Apprentice Trainee (GAT) | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=2bdd4e5d1820fa19) |
-| Comprinno Technologies Pvt. Ltd. | DevOps Engineer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=393195e26f8a418d) |
-| ExxonMobil | Controls Systems Administrator - May 2026 | Cold Lake, AB, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=2049f6ab4aa5917d) |
-| Enovate Digital | Office Assistant– Fresher / Trainee | DL, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=b5d6c906c56103ba) |
-| BlackRock | Associate, Application Engineer | HR, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=4a1699f256966be5) |
 | Dhara Consulting Group | Product Security Engineer (Product Security Engineer) | Hazelwood, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=28b5834cfb24bdf9) |
-| Western Union | Associate, Solution Engineering | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=82a05009f33abdec) |
+| ExxonMobil | Controls Systems Administrator - May 2026 | Cold Lake, AB, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=2049f6ab4aa5917d) |
+| Hatch | Coordinator, Campus Talent Acquisition | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=4a9e48897ea9971d) |
+| Omada Rail Systems | CAD Technician - Highways (New Graduate) | North Bay, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=5e7e586b0fb7daac) |
+| Enovate Digital | Office Assistant– Fresher / Trainee | DL, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=b5d6c906c56103ba) |
+| Kiewit Corporation | Traffic/MOT Engineer-in-Training - Kiewit Infrastructure Engineers | Burnaby, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=ce32fec08c68e7b9) |
 | Thomas Jefferson University & Jefferson Health | Network Engineer III | Philadelphia, PA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=d95a9c8ba1cd22e2) |
 | Franklin Electric | Network Engineer | Fort Wayne, IN, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=46c4fc5ea42c6d62) |
-| Hatch | Coordinator, Campus Talent Acquisition | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=4a9e48897ea9971d) |
+| DBS Bank | Associate, Quality Assurance Engineer, Regional Product Delivery | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=547bba858b7e0f0b) |
+| DBS Bank | Associate, Quality Assurance Engineer, Regional Product Delivery | TS, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=72832187abca4f44) |
+| BlackRock | Associate, Application Engineer | HR, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=4a1699f256966be5) |
+| Volvo Group | Graduate Apprentice Trainee (GAT) | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=2bdd4e5d1820fa19) |
+| Comprinno Technologies Pvt. Ltd. | DevOps Engineer | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=393195e26f8a418d) |
+| Volvo Group | Graduate Apprentice Trainee | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=51c122f5ec3dc92d) |
+| NTT DATA | Network Engineer (ACI) - L2 | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=fb89301202e3713b) |
+| Western Union | Associate, Solution Engineering | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=82a05009f33abdec) |
 | 🔥 Lockheed Martin | Reliability Engineer - Early Career | Littleton, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=a3978f8119c3f540) |
 | LIVIC Civil | Entry Level Civil Engineer / Designer - Infrastructure | Wormleysburg, PA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=205311cf3afa3719) |
 | LIVIC Civil | Entry Level Civil Engineer / Designer - Infrastructure | Northumberland, PA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f5f9f60472a4d7fd) |
@@ -1689,9 +1688,9 @@
 | Volvo Group | Graduate Apprentice Trainee (GAT) | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=112e7b054981e805) |
 | Volvo Group | Graduate Apprentice Trainee | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=dd819029c9cf8bdd) |
 | SUBNET Solutions Inc. | Students and New Grads Opportunities | Calgary, AB, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=71100a57ce22894d) |
-| 🔥 Adobe | Site Reliability Engineer - Adobe Developer Platforms | Bucharest | 2026-01-28 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bucharest/Site-Reliability-Engineer---Adobe-Developer-Platforms_R164746) |
-| 🔥 Adobe | Site Reliability Engineer 4 | Bangalore | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Site-Reliability-Engineer-4_R162488) |
-| 🔥 Adobe | Site Reliability Engineer - 4 | Bangalore | 2026-01-22 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Site-Reliability-Engineer---4_R162484) |
+| 🔥 Adobe | Site Reliability Engineer - Adobe Developer Platforms | Bucharest | 2026-01-29 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bucharest/Site-Reliability-Engineer---Adobe-Developer-Platforms_R164746) |
+| 🔥 Adobe | Site Reliability Engineer 4 | Bangalore | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Site-Reliability-Engineer-4_R162488) |
+| 🔥 Adobe | Site Reliability Engineer - 4 | Bangalore | 2026-01-23 | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Site-Reliability-Engineer---4_R162484) |
 | 🔥 Intel | Government Information Security Engineer | 4 Locations | 1 day ago | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/Government-Information-Security-Engineer_JR0276257) |
 | 🔥 Intel | HPC Network Engineer | US, New Mexico, Albuquerque | 2 days ago | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-New-Mexico-Albuquerque/HPC-Network-Engineer_JR0280863) |
 | Dell | AI Security Engineer \| IAM (Brasil, remoto) | Sao Paulo, Brazil | 2 days ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Sao-Paulo-Brazil/AI-Security-Engineer---IAM--Brasil--remoto-_R284359) |
@@ -1722,11 +1721,11 @@
 | Graphcore | 2026 Graduate Firmware Engineer | Bristol, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8238597002) |
 | Graphcore | 2026 Graduate Silicon Engineer | Bristol, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8360495002) |
 | Graphcore | 2026 Graduate Silicon Engineer | Cambridge, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8360506002) |
-| Panshul Technologies | GET (Graduate Engineer Trainee) | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=867aa46cc1374b5c) |
 | GTA Machining Solutions | Junior Mechanical Engineer | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=bb6f76558ce2b97e) |
+| Panshul Technologies | GET (Graduate Engineer Trainee) | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=867aa46cc1374b5c) |
+| 🔥 NVIDIA | Formal Verification Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=de5760e687e6e9c4) |
 | Vertiv | Associate Engineer Firmware Engineering VIII | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=83a84bb336e469f4) |
 | Vertiv | Associate Engineer Firmware Engineering VIII | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=71c6ac8f73c45be0) |
-| 🔥 NVIDIA | Formal Verification Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=de5760e687e6e9c4) |
 | 🔥 NVIDIA | ASIC Clocks Verification Engineer - New College Grad 2026 | US, CA, Santa Clara | 1 day ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Clocks-Verification-Engineer---New-College-Grad-2026_JR2013336) |
 | 🔥 Northrop Grumman | Electrical Engineer level 1/2 | United States-West Virginia-Rocket Center | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-West-Virginia-Rocket-Center/Electrical-Engineer-level-1-2_R10223497) |
 | 🔥 Northrop Grumman | Electrical Engineer level 1/2 | United States-West Virginia-Rocket Center | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-West-Virginia-Rocket-Center/Electrical-Engineer-level-1-2_R10223495) |
@@ -1789,7 +1788,7 @@
 | 🚀 Samsara | Account Development Representative (New Grad) | Phoenix, Arizona, United States | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468) |
 | 🚀 Samsara | Account Development Representative (New Grad) | Atlanta, Georgia, United States | 4 days ago | [Apply](https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553) |
 | Wrike | Associate IT Helpdesk Engineer | Bangalore | 4 days ago | [Apply](https://job-boards.greenhouse.io/wrike/jobs/4629492005) |
-| Tamara | Engineer II (Web) | India | 4 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4680072101) |
+| Tamara | Engineer II (Web) | India | 5 days ago | [Apply](https://job-boards.eu.greenhouse.io/tamara/jobs/4680072101) |
 | 🚀 SpaceX | Machine Maintenance Associate (Starlink) | Bastrop, TX | 5 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8420866002?gh_jid=8420866002) |
 | StockX | Associate Software Development Engineer in Test | Bangalore, India | 5 days ago | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8335822002) |
 | Graphcore | 2026 Graduate UX Designer | Bristol, UK | 5 days ago | [Apply](https://job-boards.greenhouse.io/graphcore/jobs/8413496002) |
@@ -1851,11 +1850,11 @@
 | 🚀 Samsara | Sales Engineer II - Specialist | Remote - US | 2026-01-16 | [Apply](https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502) |
 | Gusto | Future Opportunities: Early Career Sales Talent | United States - Atlanta, GA - Remote, United States - Chicago, IL - Remote, United States - Denver, CO, United States - Las Vegas, NV - Remote, United States - Phoenix, AZ - Remote | 2026-01-12 | [Apply](https://job-boards.greenhouse.io/gusto/jobs/7378983) |
 | Celonis | Associate Value Engineering - Orbit India | Bangalore, India | 2026-01-12 | [Apply](https://job-boards.greenhouse.io/celonis/jobs/7488790003?gh_jid=7488790003) |
+| CloudThat Technologies | Social Media Trainee | Kormangala, KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=a3bd2009348cd398) |
+| Paladin Technologies | Technology Trainee | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=514fee38ddddd830) |
+| Tetra Tech | Junior Pavement Management Engineer | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=bf5add16d7e1abd2) |
 | Empower | Associate Engineer Software | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=5871821f343bc670) |
-| CBCL Limited | Junior to Intermediate Geotechnical Engineer | Bedford, NS, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3067fdf159a01c93) |
-| TD | Microsoft Purview Engineer / Engineer II (B3617) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=c7264beb2dce4bfe) |
-| TD | Engineer II (Cloud Security AI Test Automation Engineer) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1a8db636594a0aa7) |
-| Polar Racking | Mechanical / Mechatronics Engineering - Recent Graduate | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=4d5f90e2ea7da317) |
+| York University | Undergraduate Program Administrator | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=7c6fadc15be11235) |
 | Tech-long Packaging Machinery India Pvt Ltd | GET (Graduate Engineer Trainee) | GJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=1066708e5f85cf8f) |
 | ChargePoint | Associate Technical Support Engineer - Voice process | KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=53ff24d1a36a1645) |
 | StruEngineers | Quality Assurance Associate (Revit)- Pune, India (Not hiring 2025) | MH, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=d41bce61f2134593) |
@@ -1863,43 +1862,43 @@
 | Sun Life | Student, Talent Brand Content and Storytelling (Summer 2026) | Waterloo, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3bd62876a1376017) |
 | Sun Life | Student, Talent Brand Content and Storytelling (Summer 2026) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=ea22bd096f0376a7) |
 | Sun Life | Student, Talent Brand Content and Storytelling (Summer 2026) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=7955fff549eeaec0) |
-| Paladin Technologies | Technology Trainee | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=514fee38ddddd830) |
-| Tetra Tech | Junior Pavement Management Engineer | Vancouver, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=bf5add16d7e1abd2) |
-| York University | SU 26 - Markham Campus Communications and Website Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=fe59e9115833f085) |
-| York University | SU 26 - Bilingual Recruitment for tour and Campus Ambassadors (Videographer-Photographer) | Lawrence, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a300891ca9610a81) |
-| York University | SU 26 - Markham Campus Creative Technologies Social Media and PR Assistant (Social Media and Marketing Assistant) | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=fd72f9bfef023ff9) |
-| York University | SU 26 - Markham Campus Social Media and Marketing Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a9e488467e00b9d8) |
-| York University | SU 26 - Markham Campus Computer Lab Support Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=65ebeea5f962e4ca) |
-| HighBhp Info Solutions | Receptionist Cum Telecaller, Kolkata 2026 | WB, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=21dd291ba8697793) |
-| 🔥 Boeing | Manufacturing Engineer (Entry-Level or Associate) | Berkeley, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=75ac2648110e7868) |
 | Dhara Consulting Group | Aerodynamics Engineer (Associate) | Oklahoma City, OK, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=6ed09999971a30a1) |
 | 🔥 Boeing | Aerodynamics Engineer (Associate) | Oklahoma City, OK, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=79ad2be3bab3cfd2) |
-| Phantom Screens | Junior Engineer | Abbotsford, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=cb7e2436c0f03daf) |
-| Phantom Screens | Junior Engineer | Abbotsford, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=8e9be6a553110636) |
-| CommonSpirit Health | New Grad RN Summer 2026 St. Anthony North Emergency | Westminster, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c01d0fe8ce4d943e) |
+| 🔥 Boeing | Manufacturing Engineer (Entry-Level or Associate) | Berkeley, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=75ac2648110e7868) |
 | 🔥 Charles Schwab | Associate - Software Development & Engineering | Southlake, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=cd039e5d18a0cc86) |
 | 🔥 Charles Schwab | Associate - Data and Rep Technology | Southlake, TX, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=0b6db5122fe4bbac) |
 | State of Iowa | Transportation Engineer Associate | Ames, IA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=fb6262ad4378a1ad) |
 | Colorado Department of Transportation | Engineer-in-Training I - Limon | Limon, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=47e396e97d3585df) |
 | Teradyne | Field Application Engineer, New College Graduate (Teradyne, San Jose, CA) | San Jose, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=05e439cba7b791de) |
-| Aptiv | Associate Engineer - Board Support Packages | Ottawa, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3ff0dd919406c665) |
-| Manulife | Associate Quality Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a850e6189e992929) |
-| CloudThat Technologies | Social Media Trainee | Kormangala, KA, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=a3bd2009348cd398) |
-| 🔥 NVIDIA | CPU Verification Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=bd3068191a59a5db) |
-| York University | Undergraduate Program Administrator | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=7c6fadc15be11235) |
-| Queen's University | Graduate Program Assistant | Kingston, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=23293db0f5a42393) |
+| 🔥 Uber | 2026 Finance Development Program, United States | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=76c0d4d2a85f29de) |
 | State of Florida | ENGINEER TRAINEE | Miami, FL, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=7ee47a16a8042749) |
 | Atrium Health | CT Technologist I, New Graduate, Atrium Health Wake Forest Baptist | Winston-Salem, NC, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=dea3c568548a4c2a) |
-| 🔥 Uber | 2026 Finance Development Program, United States | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=76c0d4d2a85f29de) |
-| 🔥 Northrop Grumman | Fall 2026 Co-op Tooling Engineer | Iuka, MS, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=5220120f1ada9366) |
-| City University of New York | Business Data and Reporting Analyst, Level 2 (Provisional) - Human Resources | Staten Island, NY, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=135e31a6f092eabd) |
-| 🔥 Salesforce | Sales Development Representative Apprentice (Early Career) | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=78a26d479053c059) |
+| Aptiv | Associate Engineer - Board Support Packages | Ottawa, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3ff0dd919406c665) |
+| Manulife | Associate Quality Engineer | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a850e6189e992929) |
+| Phantom Screens | Junior Engineer | Abbotsford, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=cb7e2436c0f03daf) |
+| Phantom Screens | Junior Engineer | Abbotsford, BC, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=8e9be6a553110636) |
 | CoxHealth | Certified Nurse Assistant, Nurse Assistant, and NA Trainee - Medical Unit - Night Shift - Weekend Option | Branson, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=046aab8a3a3cb770) |
 | Tenet Healthcare | New Graduate Registered Nurse (RN) | Worcester, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=29287a305a000d96) |
 | Tenet Healthcare | New Graduate Registered Nurse (RN) | Framingham, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=2774b942a42451a4) |
+| 🔥 NVIDIA | CPU Verification Engineer - New College Grad 2026 | Santa Clara, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=bd3068191a59a5db) |
+| HighBhp Info Solutions | Receptionist Cum Telecaller, Kolkata 2026 | WB, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=21dd291ba8697793) |
+| CBCL Limited | Junior to Intermediate Geotechnical Engineer | Bedford, NS, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=3067fdf159a01c93) |
+| TD | Microsoft Purview Engineer / Engineer II (B3617) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=c7264beb2dce4bfe) |
+| TD | Engineer II (Cloud Security AI Test Automation Engineer) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1a8db636594a0aa7) |
+| Polar Racking | Mechanical / Mechatronics Engineering - Recent Graduate | Mississauga, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=4d5f90e2ea7da317) |
+| CommonSpirit Health | New Grad RN Summer 2026 St. Anthony North Emergency | Westminster, CO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c01d0fe8ce4d943e) |
+| Queen's University | Graduate Program Assistant | Kingston, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=23293db0f5a42393) |
+| York University | SU 26 - Markham Campus Communications and Website Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=fe59e9115833f085) |
+| York University | SU 26 - Bilingual Recruitment for tour and Campus Ambassadors (Videographer-Photographer) | Lawrence, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a300891ca9610a81) |
+| York University | SU 26 - Markham Campus Creative Technologies Social Media and PR Assistant (Social Media and Marketing Assistant) | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=fd72f9bfef023ff9) |
+| York University | SU 26 - Markham Campus Social Media and Marketing Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=a9e488467e00b9d8) |
+| York University | SU 26 - Markham Campus Computer Lab Support Assistant | Markham, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=65ebeea5f962e4ca) |
+| 🔥 Northrop Grumman | Fall 2026 Co-op Tooling Engineer | Iuka, MS, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=5220120f1ada9366) |
+| City University of New York | Business Data and Reporting Analyst, Level 2 (Provisional) - Human Resources | Staten Island, NY, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=135e31a6f092eabd) |
+| Wonderbrands | Supply Chain & Operations Analyst (Open to New Graduates) | Etobicoke, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1434cd1af4f203cf) |
+| 🔥 Salesforce | Sales Development Representative Apprentice (Early Career) | San Francisco, CA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=78a26d479053c059) |
 | University of Tennessee Health Science Center | Administrative Associate, Department of Civil and Chemical Engineering, College of Engineering and Computer Science | Chattanooga, TN, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=eff96bc95614e5a7) |
 | University of Tennessee | Administrative Associate, Department of Civil and Chemical Engineering, College of Engineering and Computer Science | Chattanooga, TN, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=9338ae66ef2478ea) |
-| Wonderbrands | Supply Chain & Operations Analyst (Open to New Graduates) | Etobicoke, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=1434cd1af4f203cf) |
 | State of Michigan | Departmental Analyst (Trainee) 9-P11 (Career Pathways) Office of Organizational Development | Lansing, MI, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=76ab62176b6c3b4b) |
 | Scotiabank | SOAR: New Graduate Development Experience - Summer 2026 | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=8ef8d6bcc73b994f) |
 | CGI | Summer 2026 Co-op: Business Analyst - Account Support (8 Months) | Toronto, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=8190c1b954c33be6) |
@@ -1908,15 +1907,16 @@
 | Fargo Public Schools | 2026-2027 School Year - Speech Language Pathologist | Fargo, ND, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=9b8910e16758208c) |
 | Essentia Health | New Grad Nurse | Fargo, ND, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=6c03fce769685446) |
 | Mitsubishi Electric Automation, Inc. | Commercial Sales Trainee | Vernon Hills, IL, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=d5609e27495c301f) |
-| St. Augustine Preparatory Academy | 26-27 North Campus Middle School Math/Science Teacher | Glendale, WI, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b2d7306ebc783d56) |
+| Johnson & Johnson | Production Engineering Co-Op - Fall 2026 | Danvers, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=85859d67370b6c0e) |
+| None | New Grad Therapy Jobs – Physical Therapist (PT) | US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=c51745045f68ccb0) |
 | Genpact | Domain Trainee- Claims | UP, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=8f19e86d5a72d7ff) |
 | Genpact | Management Trainee | RJ, IN | Unknown | [Apply](https://in.indeed.com/viewjob?jk=1893fa8dcc0ac9ed) |
 | CLV Group Inc. | New Grad Pricing Analyst - Oakville, Ontario | Oakville, ON, CA | Unknown | [Apply](https://ca.indeed.com/viewjob?jk=cace6ab6df7e69c6) |
-| Johnson & Johnson | Production Engineering Co-Op - Fall 2026 | Danvers, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=85859d67370b6c0e) |
-| Fuller Hospital | Registered Nurse (RN) - New Graduate | South Attleboro, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=512efd3e398dbef1) |
-| Pembroke Hospital | Registered Nurse (RN) - New Graduate | Pembroke, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f2fc3c9bb241f01f) |
+| St. Augustine Preparatory Academy | 26-27 North Campus Middle School Math/Science Teacher | Glendale, WI, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=b2d7306ebc783d56) |
 | Stanley Electric | ENGINEER I (EL2) | London, OH, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=0e9793def45098d7) |
 | ISC Constructors, LLC | Civil Engineer – Entry Level | Baton Rouge, LA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=8009fdc8f44505d7) |
+| Fuller Hospital | Registered Nurse (RN) - New Graduate | South Attleboro, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=512efd3e398dbef1) |
+| Pembroke Hospital | Registered Nurse (RN) - New Graduate | Pembroke, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=f2fc3c9bb241f01f) |
 | SOUTHEAST BEHAVIORAL HOSPITAL | Registered Nurse (RN) - New Graduate | Cape Girardeau, MO, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=ba91fd6c8b605ac9) |
 | Arbour Hospital | Registered Nurse (RN) - New Graduate | Jamaica Plain, MA, US | Unknown | [Apply](https://www.indeed.com/viewjob?jk=8a286c83522e9431) |
 | 🔥 Mastercard | Product Management Associate Product Specialist, Launch Graduate Program 2026 - Copenhagen, Denmark | Copenhagen, Denmark (Arne Jacobsens) | 1 day ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Copenhagen-Denmark-Arne-Jacobsens/Product-Management-Associate-Product-Specialist--Launch-Graduate-Program-2026---Copenhagen--Denmark_R-255419-1) |
@@ -1929,12 +1929,12 @@
 | 🔥 NVIDIA | CPU Verification Engineer - New College Grad 2026 | US, CA, Santa Clara | 2 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/CPU-Verification-Engineer---New-College-Grad-2026_JR2013504) |
 | 🔥 NVIDIA | Formal Verification Engineer - New College Grad 2026 | US, CA, Santa Clara | 2 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Formal-Verification-Engineer---New-College-Grad-2026_JR2011512) |
 | Dell | Small Business Germany, Early Career Sales Account Executive | Bratislava, Slovakia | 4 days ago | [Apply](https://dell.wd1.myworkdayjobs.com/job/Bratislava-Slovakia/Small-Business-Germany--Early-Career-Sales-Account-Executive_R278063) |
-| Workday | Snr Associate Software Development Engineer - Application Development | Ireland, Dublin | 2026-02-12 | [Apply](https://workday.wd5.myworkdayjobs.com/job/Ireland-Dublin/Snr-Associate-Software-Development-Engineer---Application-Development_JR-0104344) |
+| Workday | Snr Associate Software Development Engineer - Application Development | Ireland, Dublin | 2026-02-13 | [Apply](https://workday.wd5.myworkdayjobs.com/job/Ireland-Dublin/Snr-Associate-Software-Development-Engineer---Application-Development_JR-0104344) |
 | Citi | Technology - Application Development, Placement Analyst, Belfast, 2026 | Belfast  United Kingdom | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Belfast--United-Kingdom/Technology---Application-Development--Placement-Analyst--Belfast--2026_25920708) |
 | Pfizer | Graduate Trainee - Medical Affairs | United Kingdom - Walton Oaks | 5 days ago | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/United-Kingdom---Walton-Oaks/Graduate-Trainee---Medical-Affairs_4951397) |
-| Pfizer | Associate-Equipment Maintenance Downstream | India - Vizag | 2026-02-13 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate-Equipment-Maintenance-Downstream_4951376) |
-| Pfizer | Associate-Equipment Maintenance (Downstream) | India - Vizag | 2026-02-13 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate-Equipment-Maintenance--Downstream-_4940502) |
-| Pfizer | Associate - Equipment Maintenance | India - Vizag | 2026-02-13 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate---Equipment-Maintenance_4945691) |
+| Pfizer | Associate-Equipment Maintenance Downstream | India - Vizag | 2026-02-14 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate-Equipment-Maintenance-Downstream_4951376) |
+| Pfizer | Associate-Equipment Maintenance (Downstream) | India - Vizag | 2026-02-14 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate-Equipment-Maintenance--Downstream-_4940502) |
+| Pfizer | Associate - Equipment Maintenance | India - Vizag | 2026-02-14 | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate---Equipment-Maintenance_4945691) |
 | Medtronic | Quality Engineer II (Risk Management / New Product Development) | 2 Locations | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Quality-Engineer-II--Risk-Management---New-Product-Development-_R56730-1) |
 | Medtronic | Design Quality Engineer II (Surgical Robotics) | North Haven, Connecticut, United States of America | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/North-Haven-Connecticut-United-States-of-America/Design-Quality-Engineer-II--Surgical-Robotics-_R57681-1) |
 | Medtronic | Associate Clinical Specialist, Pain Interventions - Grand Rapids/ Traverse City, MI | Grand Rapids, Michigan, United States of America | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Grand-Rapids-Michigan-United-States-of-America/Associate-Clinical-Specialist--Pain-Interventions---Grand-Rapids--Traverse-City--MI_R58572-1) |
@@ -1943,7 +1943,7 @@
 | Medtronic | R&D Engineer II - Memphis, TN | Memphis, Tennessee, United States of America | 3 days ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Memphis-Tennessee-United-States-of-America/R-D-Engineer-II---Memphis--TN_R58910-1) |
 | Medtronic | Manufacturing Engineering Technician, Mid-level III - Grand Rapids, MI | Grand Rapids, Michigan, United States of America | 3 days ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Grand-Rapids-Michigan-United-States-of-America/Manufacturing-Engineering-Technician--Mid-level-III---Grand-Rapds--MI_R59865-1) |
 | Walmart | (USA) Coach/Ops Mgr Trainee | (USA) OH YOUNGSTOWN 03860 WM SUPERCENTER | 3 days ago | [Apply](https://walmart.wd5.myworkdayjobs.com/job/USA-OH-YOUNGSTOWN-03860-WM-SUPERCENTER/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2421170) |
-| Walmart | (USA) Coach/Ops Mgr Trainee | Evergreen, CO | 2026-02-06 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Evergreen-CO/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2409261-1) |
+| Walmart | (USA) Coach/Ops Mgr Trainee | Evergreen, CO | 2026-02-07 | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Evergreen-CO/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2409261-1) |
 | Walmart | (CAN) Dairy Frozen Associate | (CAN) ON KAPUSKASING 03041 WAL-MART | Today | [Apply](https://walmart.wd5.myworkdayjobs.com/job/CAN-ON-KAPUSKASING-03041-WAL-MART/XMLNAME--CAN--Dairy-Frozen-Associate_R-2424370) |
 | Walmart | (can) Dairy Frozen Associate  -Temporary, Part Time | E. London, ON | Today | [Apply](https://walmart.wd5.myworkdayjobs.com/job/E-London-ON/XMLNAME--can--Dairy-Frozen-Associate---Temporary--Part-Time_R-2424350) |
 | Walmart | (CAN) Dairy Frozen Associate | Campbell River, BC | Today | [Apply](https://walmart.wd5.myworkdayjobs.com/job/Campbell-River-BC/XMLNAME--CAN--Dairy-Frozen-Associate_R-2424340) |
@@ -2029,4 +2029,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-02-21 23:38:12 UTC*
+*Last updated: 2026-02-22 00:10:30 UTC*
