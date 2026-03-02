@@ -1279,7 +1279,8 @@ def format_posted_date(posted_at: str) -> str:
             return f"{diff.days} days ago"
         else:
             return posted_date.strftime("%Y-%m-%d")
-    except Exception:
+    except Exception as e:
+        print(f"Warning: could not format date '{posted_at}': {e}")
         return "Unknown"
 
 def get_iso_date(posted_at) -> str:
@@ -1292,7 +1293,8 @@ def get_iso_date(posted_at) -> str:
             normalized_date = normalize_date_string(posted_at)
             posted_date = date_parser.parse(normalized_date)
         return posted_date.replace(tzinfo=None).isoformat()
-    except Exception:
+    except Exception as e:
+        print(f"Warning: could not parse ISO date '{posted_at}': {e}")
         return ""
 
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
