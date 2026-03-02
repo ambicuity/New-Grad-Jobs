@@ -41,7 +41,7 @@ function toggleTheme() {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
+
     // Update charts for new theme
     updateChartsTheme();
 }
@@ -50,7 +50,7 @@ function updateChartsTheme() {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     const textColor = isDark ? '#f8fafc' : '#0f172a';
     const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
-    
+
     Object.values(charts).forEach(chart => {
         if (chart.options.scales) {
             if (chart.options.scales.x) {
@@ -74,7 +74,7 @@ function updateChartsTheme() {
 // ============================================
 async function fetchJobsData() {
     const paths = ['./jobs.json', '../jobs.json', '/New-Grad-Jobs/docs/jobs.json'];
-    
+
     for (const path of paths) {
         try {
             const response = await fetch(path);
@@ -85,13 +85,13 @@ async function fetchJobsData() {
             console.log(`Failed to fetch from ${path}`);
         }
     }
-    
+
     throw new Error('Could not load jobs data');
 }
 
 async function fetchMarketHistory() {
     const paths = ['./market-history.json', '../market-history.json', '/New-Grad-Jobs/docs/market-history.json'];
-    
+
     for (const path of paths) {
         try {
             const response = await fetch(path);
@@ -102,14 +102,14 @@ async function fetchMarketHistory() {
             console.log(`Failed to fetch market history from ${path}`);
         }
     }
-    
+
     // Return empty structure if file doesn't exist yet
     return { meta: {}, snapshots: [] };
 }
 
 async function fetchPredictions() {
     const paths = ['./predictions.json', '../predictions.json', '/New-Grad-Jobs/docs/predictions.json'];
-    
+
     for (const path of paths) {
         try {
             const response = await fetch(path);
@@ -120,14 +120,14 @@ async function fetchPredictions() {
             console.log(`Failed to fetch predictions from ${path}`);
         }
     }
-    
+
     // Return null if no predictions available yet
     return null;
 }
 
 function calculateComparisons(currentData, historyData) {
     const snapshots = historyData.snapshots || [];
-    
+
     if (snapshots.length === 0) {
         return {
             weekOverWeek: null,
@@ -135,27 +135,27 @@ function calculateComparisons(currentData, historyData) {
             message: 'Collecting data... Comparisons available after 7 days'
         };
     }
-    
+
     const today = new Date();
     const weekAgo = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000);
     const monthAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
-    
+
     // Find snapshots closest to week and month ago
     const weekSnapshot = findClosestSnapshot(snapshots, weekAgo);
     const monthSnapshot = findClosestSnapshot(snapshots, monthAgo);
-    
+
     const currentTotal = currentData.totalJobs;
-    
+
     const comparisons = {
         weekOverWeek: null,
         monthOverMonth: null
     };
-    
+
     if (weekSnapshot) {
         const weekTotal = weekSnapshot.total_jobs;
         const weekChange = currentTotal - weekTotal;
         const weekPercent = ((weekChange / weekTotal) * 100).toFixed(1);
-        
+
         comparisons.weekOverWeek = {
             change: weekChange,
             percent: weekPercent,
@@ -164,12 +164,12 @@ function calculateComparisons(currentData, historyData) {
             direction: weekChange > 0 ? 'up' : weekChange < 0 ? 'down' : 'stable'
         };
     }
-    
+
     if (monthSnapshot) {
         const monthTotal = monthSnapshot.total_jobs;
         const monthChange = currentTotal - monthTotal;
         const monthPercent = ((monthChange / monthTotal) * 100).toFixed(1);
-        
+
         comparisons.monthOverMonth = {
             change: monthChange,
             percent: monthPercent,
@@ -178,17 +178,17 @@ function calculateComparisons(currentData, historyData) {
             direction: monthChange > 0 ? 'up' : monthChange < 0 ? 'down' : 'stable'
         };
     }
-    
+
     return comparisons;
 }
 
 function findClosestSnapshot(snapshots, targetDate) {
     if (snapshots.length === 0) return null;
-    
+
     const targetTime = targetDate.getTime();
     let closest = null;
     let minDiff = Infinity;
-    
+
     snapshots.forEach(snapshot => {
         const snapshotDate = new Date(snapshot.date);
         const diff = Math.abs(snapshotDate.getTime() - targetTime);
@@ -197,7 +197,7 @@ function findClosestSnapshot(snapshots, targetDate) {
             closest = snapshot;
         }
     });
-    
+
     return closest;
 }
 
@@ -206,24 +206,24 @@ function findClosestSnapshot(snapshots, targetDate) {
 // ============================================
 function analyzeData(data) {
     const jobs = data.jobs;
-    
+
     // Basic counts
     const totalJobs = data.meta.total_jobs;
     const companies = [...new Set(jobs.map(j => j.company))];
     const countries = [...new Set(jobs.map(j => extractCountry(j.location)))];
     const today = new Date().toDateString();
     const jobsToday = jobs.filter(j => new Date(j.posted_at).toDateString() === today).length;
-    
+
     // Category breakdown
     const categories = data.meta.categories;
-    
+
     // Company tier breakdown
     const tierCounts = {};
     jobs.forEach(job => {
         const tier = job.company_tier?.tier || 'other';
         tierCounts[tier] = (tierCounts[tier] || 0) + 1;
     });
-    
+
     // Location breakdown (top 15)
     const locationCounts = {};
     jobs.forEach(job => {
@@ -233,7 +233,7 @@ function analyzeData(data) {
     const topLocations = Object.entries(locationCounts)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15);
-    
+
     // Top companies (top 20)
     const companyCounts = {};
     jobs.forEach(job => {
@@ -242,10 +242,10 @@ function analyzeData(data) {
     const topCompanies = Object.entries(companyCounts)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 20);
-    
+
     // Insights
     const insights = generateInsights(jobs, categories, topCompanies, topLocations);
-    
+
     return {
         totalJobs,
         totalCompanies: companies.length,
@@ -261,7 +261,7 @@ function analyzeData(data) {
 
 function extractCountry(location) {
     if (!location) return 'Unknown';
-    
+
     // USA patterns
     if (/\b(USA|United States|US)\b/i.test(location) || /\b[A-Z]{2}\b/.test(location.split(',').pop())) {
         return 'USA';
@@ -282,7 +282,7 @@ function extractCountry(location) {
     if (/Remote/i.test(location)) {
         return 'Remote';
     }
-    
+
     // Extract last part (usually country)
     const parts = location.split(',').map(p => p.trim());
     return parts[parts.length - 1] || 'Other';
@@ -290,7 +290,7 @@ function extractCountry(location) {
 
 function generateInsights(jobs, categories, topCompanies, topLocations) {
     const insights = [];
-    
+
     // Most popular category
     const topCategory = categories.reduce((max, cat) => cat.count > max.count ? cat : max, categories[0]);
     insights.push({
@@ -298,21 +298,21 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
         value: topCategory.name,
         description: `${topCategory.count} positions (${Math.round(topCategory.count / jobs.length * 100)}% of all jobs)`
     });
-    
+
     // Top hiring company
     insights.push({
         title: 'Top Hiring Company',
         value: topCompanies[0][0],
         description: `${topCompanies[0][1]} open positions right now`
     });
-    
+
     // Location diversity
     insights.push({
         title: 'Geographic Reach',
         value: `${topLocations.length}+ countries`,
         description: `Opportunities available globally with ${topLocations[0][0]} leading at ${topLocations[0][1]} jobs`
     });
-    
+
     // FAANG+ opportunities
     const faangCount = jobs.filter(j => j.company_tier?.tier === 'faang_plus').length;
     if (faangCount > 0) {
@@ -322,7 +322,7 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
             description: `${Math.round(faangCount / jobs.length * 100)}% of all jobs are at top-tier companies`
         });
     }
-    
+
     // Remote opportunities
     const remoteCount = jobs.filter(j => /remote/i.test(j.location)).length;
     if (remoteCount > 0) {
@@ -332,7 +332,7 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
             description: `${Math.round(remoteCount / jobs.length * 100)}% of positions offer remote work`
         });
     }
-    
+
     // Sponsorship info
     const sponsorshipCount = jobs.filter(j => !j.flags?.no_sponsorship).length;
     insights.push({
@@ -340,7 +340,7 @@ function generateInsights(jobs, categories, topCompanies, topLocations) {
         value: `${sponsorshipCount} jobs`,
         description: `${Math.round(sponsorshipCount / jobs.length * 100)}% don't explicitly exclude sponsorship`
     });
-    
+
     return insights;
 }
 
@@ -352,7 +352,7 @@ function renderStats(analysis) {
     elements.totalCompanies.textContent = analysis.totalCompanies;
     elements.totalCountries.textContent = analysis.totalCountries + '+';
     elements.jobsToday.textContent = analysis.jobsToday;
-    
+
     if (jobsData.meta.generated_at) {
         const date = new Date(jobsData.meta.generated_at);
         elements.lastUpdated.textContent = date.toLocaleString('en-US', {
@@ -368,7 +368,7 @@ function renderStats(analysis) {
 function renderComparisons(comparisons) {
     const container = document.getElementById('comparisons-container');
     if (!container) return;
-    
+
     // Check if we have data
     if (comparisons.message) {
         container.innerHTML = `
@@ -379,15 +379,15 @@ function renderComparisons(comparisons) {
         `;
         return;
     }
-    
+
     let html = '';
-    
+
     // Week-over-week comparison
     if (comparisons.weekOverWeek) {
         const wow = comparisons.weekOverWeek;
         const arrow = wow.direction === 'up' ? '↑' : wow.direction === 'down' ? '↓' : '→';
         const colorClass = wow.direction === 'up' ? 'positive' : wow.direction === 'down' ? 'negative' : 'neutral';
-        
+
         html += `
             <div class="comparison-card">
                 <div class="comparison-header">
@@ -414,13 +414,13 @@ function renderComparisons(comparisons) {
             </div>
         `;
     }
-    
+
     // Month-over-month comparison
     if (comparisons.monthOverMonth) {
         const mom = comparisons.monthOverMonth;
         const arrow = mom.direction === 'up' ? '↑' : mom.direction === 'down' ? '↓' : '→';
         const colorClass = mom.direction === 'up' ? 'positive' : mom.direction === 'down' ? 'negative' : 'neutral';
-        
+
         html += `
             <div class="comparison-card">
                 <div class="comparison-header">
@@ -447,14 +447,14 @@ function renderComparisons(comparisons) {
             </div>
         `;
     }
-    
+
     container.innerHTML = html;
 }
 
 function renderPredictions(predictions) {
     const container = document.getElementById('predictions-container');
     if (!container) return;
-    
+
     // Check if predictions are available
     if (!predictions) {
         container.innerHTML = `
@@ -464,15 +464,15 @@ function renderPredictions(predictions) {
         `;
         return;
     }
-    
+
     const outlookConfig = {
         bullish: { color: 'positive', label: 'Bullish' },
         neutral: { color: 'neutral', label: 'Neutral' },
         bearish: { color: 'negative', label: 'Bearish' }
     };
-    
+
     const outlook = outlookConfig[predictions.outlook] || outlookConfig.neutral;
-    
+
     let html = `
         <div class="predictions-header">
             <div class="prediction-outlook ${outlook.color}">
@@ -482,7 +482,7 @@ function renderPredictions(predictions) {
                 </div>
             </div>
         </div>
-        
+
         <div class="predictions-grid">
             <div class="prediction-card">
                 <div class="prediction-header">
@@ -493,11 +493,11 @@ function renderPredictions(predictions) {
                     <span class="label">Expected Jobs</span>
                 </div>
                 <div class="prediction-change ${predictions.predictions['7_days'].change_percent >= 0 ? 'positive' : 'negative'}">
-                    ${predictions.predictions['7_days'].change_percent >= 0 ? '↑' : '↓'} 
+                    ${predictions.predictions['7_days'].change_percent >= 0 ? '↑' : '↓'}
                     ${Math.abs(predictions.predictions['7_days'].change_percent).toFixed(1)}% change
                 </div>
             </div>
-            
+
             <div class="prediction-card">
                 <div class="prediction-header">
                     <h4>30-Day Forecast</h4>
@@ -507,12 +507,12 @@ function renderPredictions(predictions) {
                     <span class="label">Expected Jobs</span>
                 </div>
                 <div class="prediction-change ${predictions.predictions['30_days'].change_percent >= 0 ? 'positive' : 'negative'}">
-                    ${predictions.predictions['30_days'].change_percent >= 0 ? '↑' : '↓'} 
+                    ${predictions.predictions['30_days'].change_percent >= 0 ? '↑' : '↓'}
                     ${Math.abs(predictions.predictions['30_days'].change_percent).toFixed(1)}% change
                 </div>
             </div>
         </div>
-        
+
         <div class="trends-container">
             <div class="trend-section growing">
                 <h4>Growing Categories</h4>
@@ -520,7 +520,7 @@ function renderPredictions(predictions) {
                     ${predictions.growing_categories.map(cat => `<li>${cat}</li>`).join('')}
                 </ul>
             </div>
-            
+
             <div class="trend-section declining">
                 <h4>Declining Categories</h4>
                 <ul>
@@ -528,7 +528,7 @@ function renderPredictions(predictions) {
                 </ul>
             </div>
         </div>
-        
+
         <div class="insights-section">
             <h4>AI Insights</h4>
             <ul class="ai-insights">
@@ -536,7 +536,7 @@ function renderPredictions(predictions) {
             </ul>
         </div>
     `;
-    
+
     container.innerHTML = html;
 }
 
@@ -544,7 +544,7 @@ function renderCharts(analysis) {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     const textColor = isDark ? '#f8fafc' : '#0f172a';
     const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
-    
+
     // Category Chart
     const categoryCtx = document.getElementById('category-chart').getContext('2d');
     charts.category = new Chart(categoryCtx, {
@@ -554,7 +554,7 @@ function renderCharts(analysis) {
             datasets: [{
                 data: analysis.categories.map(c => c.count),
                 backgroundColor: [
-                    '#6366f1', '#8b5cf6', '#a855f7', '#ec4899', 
+                    '#6366f1', '#8b5cf6', '#a855f7', '#ec4899',
                     '#f59e0b', '#10b981', '#3b82f6'
                 ],
                 borderWidth: 0
@@ -566,7 +566,7 @@ function renderCharts(analysis) {
             plugins: {
                 legend: {
                     position: 'bottom',
-                    labels: { 
+                    labels: {
                         color: textColor,
                         padding: 15,
                         font: { size: 12 }
@@ -587,7 +587,7 @@ function renderCharts(analysis) {
             }
         }
     });
-    
+
     // Tier Chart
     const tierLabels = {
         'faang_plus': '🔥 FAANG+',
@@ -598,10 +598,10 @@ function renderCharts(analysis) {
         'startup': '⚡ Startup',
         'other': '🏢 Other'
     };
-    
+
     const tierData = Object.entries(analysis.tierCounts)
         .sort((a, b) => b[1] - a[1]);
-    
+
     const tierCtx = document.getElementById('tier-chart').getContext('2d');
     charts.tier = new Chart(tierCtx, {
         type: 'bar',
@@ -641,7 +641,7 @@ function renderCharts(analysis) {
             }
         }
     });
-    
+
     // Location Chart
     const locationCtx = document.getElementById('location-chart').getContext('2d');
     charts.location = new Chart(locationCtx, {
@@ -695,7 +695,7 @@ function renderTopCompanies(topCompanies) {
             </div>
         </div>
     `).join('');
-    
+
     elements.topCompanies.innerHTML = html;
 }
 
@@ -707,7 +707,7 @@ function renderTopLocations(topLocations) {
             <div class="location-count">${count}</div>
         </div>
     `).join('');
-    
+
     elements.topLocations.innerHTML = html;
 }
 
@@ -721,7 +721,7 @@ function renderInsights(insights) {
             </div>
         </div>
     `).join('');
-    
+
     elements.insightsContainer.innerHTML = html;
 }
 
@@ -753,10 +753,10 @@ function scrollToTop() {
 async function init() {
     // Initialize theme
     initTheme();
-    
+
     // Show loading state
     elements.totalJobs.textContent = 'Loading...';
-    
+
     try {
         // Fetch data (parallel for speed)
         const [jobsDataResult, marketHistory, predictions] = await Promise.all([
@@ -764,15 +764,15 @@ async function init() {
             fetchMarketHistory(),
             fetchPredictions()
         ]);
-        
+
         jobsData = jobsDataResult;
-        
+
         // Analyze data
         const analysis = analyzeData(jobsData);
-        
+
         // Calculate comparisons
         const comparisons = calculateComparisons(analysis, marketHistory);
-        
+
         // Render everything
         renderStats(analysis);
         renderComparisons(comparisons);
@@ -781,7 +781,7 @@ async function init() {
         renderTopCompanies(analysis.topCompanies);
         renderTopLocations(analysis.topLocations);
         renderInsights(analysis.insights);
-        
+
     } catch (error) {
         console.error('Failed to load data:', error);
         elements.totalJobs.textContent = 'Error';
@@ -791,7 +791,7 @@ async function init() {
             setTimeout(() => elements.toast.classList.remove('visible'), 3000);
         }
     }
-    
+
     // Set up event listeners
     if (elements.themeToggle) {
         elements.themeToggle.addEventListener('click', toggleTheme);

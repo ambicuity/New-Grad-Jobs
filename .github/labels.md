@@ -1,6 +1,6 @@
 # GitHub Labels — New Grad Jobs
 
-All labels used in this repository, grouped by category.  
+All labels used in this repository, grouped by category.
 To recreate them after a fork or fresh repo setup, run the shell script below.
 
 ---

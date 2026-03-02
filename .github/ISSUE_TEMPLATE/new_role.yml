@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for submitting a new job! Please fill out the form below.
-        
+
         **Before submitting**, please:
         - Search existing issues to avoid duplicates
         - Verify the job is for new graduates/entry-level

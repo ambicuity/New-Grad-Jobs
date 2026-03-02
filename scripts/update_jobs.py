@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 New Grad Jobs Aggregator
-Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs 
+Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs
 and updates README.md and jobs.json
 
 Performance Optimizations:
@@ -13,21 +13,22 @@ Performance Optimizations:
 - DNS caching and TCP connection reuse
 """
 
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-import yaml
 import json
+import os
 import re
 import sys
 import time
-import os
-from datetime import datetime, timedelta, date
-from dateutil import parser as date_parser
-from typing import List, Dict, Any
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urlparse
+from datetime import date, datetime, timedelta
 from functools import lru_cache
+from typing import Any, Dict, List
+from urllib.parse import urlparse
+
+import requests
+import yaml
+from dateutil import parser as date_parser
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # Import JobSpy for additional job site scraping
 try:
@@ -51,7 +52,7 @@ def create_optimized_session() -> requests.Session:
     - DNS caching via connection pooling
     """
     session = requests.Session()
-    
+
     # Configure retry strategy with exponential backoff
     retry_strategy = Retry(
         total=3,  # Max 3 retries
@@ -59,7 +60,7 @@ def create_optimized_session() -> requests.Session:
         status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
         allowed_methods=["GET", "POST"],  # Retry GET and POST
     )
-    
+
     # Configure HTTP adapter with connection pooling
     # AGGRESSIVE for 10K companies: 1000 pools, 300 connections/host
     adapter = HTTPAdapter(
@@ -68,11 +69,11 @@ def create_optimized_session() -> requests.Session:
         pool_maxsize=300,  # Maximum connections per host (massive parallelism)
         pool_block=False  # Don't block on connection pool exhaustion
     )
-    
+
     # Mount adapter for both HTTP and HTTPS
     session.mount("http://", adapter)
     session.mount("https://", adapter)
-    
+
     # Set default headers for compression and keep-alive with extended timeout
     session.headers.update({
         'Accept-Encoding': 'gzip, deflate, br',  # Request compressed responses
@@ -80,7 +81,7 @@ def create_optimized_session() -> requests.Session:
         'Keep-Alive': 'timeout=60, max=2000',  # Keep connections alive longer
         'User-Agent': 'NewGradJobs-Aggregator/3.0 (10K-Companies-Optimized)'
     })
-    
+
     return session
 
 # Global session for connection reuse across all requests
@@ -280,7 +281,7 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
-    
+
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
@@ -291,7 +292,7 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
                     'name': category_info['name'],
                     'emoji': category_info['emoji']
                 }
-    
+
     # Default to 'other' if no match
     return {
         'id': 'other',
@@ -302,7 +303,7 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
 @lru_cache(maxsize=2048)  # AGGRESSIVE: Increased from 512 for 10K companies
 def get_company_tier(company_name: str) -> Dict[str, Any]:
     """Get company tier classification including sectors
-    
+
     Cached for performance since company names are repeated across multiple jobs.
     """
     # Check primary tiers first
@@ -312,7 +313,7 @@ def get_company_tier(company_name: str) -> Dict[str, Any]:
         tier_info = {'tier': 'unicorn', 'emoji': '🚀', 'label': 'Unicorn'}
     else:
         tier_info = {'tier': 'other', 'emoji': '', 'label': ''}
-    
+
     # Add sector classifications (can overlap with tier)
     sectors = []
     if company_name in DEFENSE:
@@ -323,14 +324,14 @@ def get_company_tier(company_name: str) -> Dict[str, Any]:
         sectors.append('healthcare')
     if company_name in STARTUPS:
         sectors.append('startup')
-    
+
     tier_info['sectors'] = sectors
     return tier_info
 
 def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
     """Detect sponsorship and citizenship requirements"""
     combined = f"{title.lower()} {description.lower() if description else ''}"
-    
+
     return {
         'no_sponsorship': any(kw in combined for kw in NO_SPONSORSHIP_KEYWORDS),
         'us_citizenship_required': any(kw in combined for kw in US_CITIZENSHIP_KEYWORDS)
@@ -350,16 +351,16 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
             if attempt > 0:
                 print(f"  🔄 Retry {attempt} for {company_name}...")
                 time.sleep(1)  # Wait before retry
-            
+
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
             response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
-            
+
             if not isinstance(data, dict) or 'jobs' not in data:
                 print(f"  ⚠️  {company_name}: Unexpected API response format")
                 continue
-            
+
             for job in data.get('jobs', []):
                 description = job.get('content', '') or ''
                 jobs.append({
@@ -373,7 +374,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
-            
+
         except requests.exceptions.Timeout:
             if attempt < max_retries:
                 print(f"  ⏱️  {company_name} request timed out, retrying...")
@@ -395,7 +396,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 continue
             else:
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
-    
+
     return jobs
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
@@ -406,16 +407,16 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
             if attempt > 0:
                 print(f"  🔄 Retry {attempt} for {company_name}...")
                 time.sleep(1)  # Wait before retry
-            
+
             print(f"Fetching jobs from {company_name} (Lever)...")
             response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
-            
+
             if not isinstance(data, list):
                 print(f"  ⚠️  {company_name}: Unexpected API response format")
                 continue
-            
+
             for job in data:
                 description = job.get('description', '') or job.get('descriptionPlain', '') or ''
                 jobs.append({
@@ -429,7 +430,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
-            
+
         except requests.exceptions.Timeout:
             if attempt < max_retries:
                 print(f"  ⏱️  {company_name} request timed out, retrying...")
@@ -451,13 +452,13 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 continue
             else:
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
-    
+
     return jobs
 
 def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers API with retry logic"""
     all_jobs = []
-    
+
     for search_term in search_terms:
         jobs = []
         for attempt in range(max_retries + 1):
@@ -465,20 +466,20 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 if attempt > 0:
                     print(f"  🔄 Retry {attempt} for Google search '{search_term}'...")
                     time.sleep(1)  # Wait before retry
-                
+
                 print(f"Searching Google careers for '{search_term}'...")
                 # Build the search URL with USA location filter
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
-                
+
                 response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
-                
+
                 if not isinstance(data, dict) or 'jobs' not in data:
                     print(f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
                     continue
-                
+
                 for job in data.get('jobs', []):
                     # Extract location information from Google's format
                     locations = job.get('locations', [])
@@ -488,13 +489,13 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                             display_name = loc.get('display', '')
                             if display_name:
                                 location_names.append(display_name)
-                    
+
                     if not location_names:  # Skip jobs without USA locations
                         continue
-                    
+
                     location_str = '; '.join(location_names)
                     description = job.get('description', '') or ''
-                    
+
                     jobs.append({
                         'company': 'Google',
                         'title': job.get('title', ''),
@@ -504,11 +505,11 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         'source': 'Google Careers',
                         'description': description[:500] if description else ''
                     })
-                
+
                 print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
                 all_jobs.extend(jobs)
                 break  # Success, exit retry loop
-                
+
             except requests.exceptions.Timeout:
                 if attempt < max_retries:
                     print(f"  ⏱️  Google search '{search_term}' timed out, retrying...")
@@ -527,52 +528,52 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                     continue
                 else:
                     print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
-    
+
     return all_jobs
 
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
     all_jobs = []
-    
+
     for company in companies:
         company_name = company.get('name')
         workday_url = company.get('workday_url')
-        
+
         if not company_name or not workday_url:
             continue
-            
+
         print(f"Fetching jobs from {company_name} (Workday)...")
-        
+
         # Construct Workday API URL
         # Pattern: https://<host>/wday/cxs/<tenant>/<site>/jobs
         try:
             parsed = urlparse(workday_url)
             host = parsed.netloc
             site_path = parsed.path.strip('/')
-            
+
             # Extract tenant and site from URL
             # Example: https://nvidia.wd5.myworkdayjobs.com/NVIDIA_External_Career_Site
             # Tenant: nvidia, Site: NVIDIA_External_Career_Site
-            
+
             # If host starts with tenant name (e.g. nvidia.wd5...), use that
             # Otherwise, try to extract from path or config
-            
-            # Simple heuristic for now: 
+
+            # Simple heuristic for now:
             # Subdomain is usually "tenant.wdN" or just "tenant"
             # We need the "tenant" for the API path.
-            
+
             subdomin_parts = host.split('.')
             tenant = subdomin_parts[0] # Default guess
-            
+
             # Site ID is the last part of the path
             site_id = site_path.split('/')[-1]
-            
+
             api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-            
+
             jobs = []
             offset = 0
             limit = 20
-            
+
             while True:
                 payload = {
                     "appliedFacets": {},
@@ -580,15 +581,15 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     "offset": offset,
                     "searchText": "" # Fetch all, filter locally
                 }
-                
+
                 headers = {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
-                
+
                 response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
-                
+
                 if response.status_code == 404:
                      # Try alternative tenant extraction if 404
                      # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
@@ -603,23 +604,23 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
                     break
-                    
+
                 data = response.json()
                 job_items = data.get('jobPostings', [])
-                
+
                 if not job_items:
                     break
-                    
+
                 for item in job_items:
                     title = item.get('title', '')
                     external_path = item.get('externalPath', '')
                     job_url = f"https://{host}{external_path}"
                     posted_on = item.get('postedOn', '')
-                    
+
                     # Convert posted_on to approximate date if possible, or just leave text
                     # Workday sends "Posted Yesterday", "Posted 30+ Days Ago"
                     # We might need to parse this or just use current date if it says "Today"
-                    
+
                     jobs.append({
                         'company': company_name,
                         'title': title,
@@ -629,14 +630,14 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         'source': 'Workday',
                         'description': '' # Not fetching full desc to save requests
                     })
-                
+
                 offset += limit
                 if len(jobs) >= 200: # Safety limit
                     break
-                
+
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             all_jobs.extend(jobs)
-            
+
         except Exception as e:
             print(f"  ❌ Error processing {company_name}: {e}")
             continue
@@ -645,7 +646,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
 
 def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs using JobSpy library from multiple job sites - PARALLEL VERSION
-    
+
     Uses ThreadPoolExecutor to run multiple searches concurrently, dramatically
     reducing time from 10+ minutes to ~1-2 minutes for 150+ search terms.
     Now supports multiple countries: USA, Canada, India
@@ -653,40 +654,40 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     if not JOBSPY_AVAILABLE:
         print("❌ JobSpy library not available, skipping...")
         return []
-    
+
     if not config_jobspy.get('enabled', False):
         print("JobSpy is disabled in configuration, skipping...")
         return []
-    
+
     sites = config_jobspy.get('sites', ['linkedin', 'indeed'])
     search_terms = config_jobspy.get('search_terms', ['new grad software engineer'])
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
-    
+
     # Countries to search - USA, Canada, India
     countries = config_jobspy.get('countries', [
         {'code': 'USA', 'location': 'United States'},
         {'code': 'Canada', 'location': 'Canada'},
         {'code': 'India', 'location': 'India'}
     ])
-    
+
     # Build list of all (site, search_term, country) combinations
     search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
     total_tasks = len(search_tasks)
-    
+
     print(f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites and {len(countries)} countries")
     print(f"   Countries: {', '.join([c['code'] for c in countries])}")
     print(f"   Using 25 concurrent workers for maximum speed...")
-    
+
     all_jobs = []
     completed = 0
     errors = 0
-    
+
     def search_single(args):
         """Worker function to search a single site/term/country combination"""
         site, search_term, country = args
         jobs_list = []
-        
+
         for attempt in range(max_retries + 1):
             try:
                 # Use JobSpy to scrape jobs
@@ -698,10 +699,10 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                     hours_old=hours_old,
                     country_indeed=country['code']
                 )
-                
+
                 if jobs_df is None or jobs_df.empty:
                     return {'site': site, 'term': search_term, 'jobs': [], 'count': 0, 'error': None}
-                
+
                 # Convert DataFrame to list of dictionaries
                 for _, row in jobs_df.iterrows():
                     description = row.get('description', '') or ''
@@ -714,31 +715,31 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'source': f'JobSpy ({site.title()})',
                         'description': description[:500] if description else ''
                     }
-                    
+
                     if job['url'] and job['url'].startswith('http'):
                         jobs_list.append(job)
-                
+
                 return {'site': site, 'term': search_term, 'jobs': jobs_list, 'count': len(jobs_list), 'error': None}
-                
+
             except Exception as e:
                 if attempt < max_retries:
                     time.sleep(0.3)  # Brief delay before retry (optimized)
                     continue
                 return {'site': site, 'term': search_term, 'jobs': [], 'count': 0, 'error': str(e)[:100]}
-        
+
         return {'site': site, 'term': search_term, 'jobs': [], 'count': 0, 'error': 'Max retries exceeded'}
-    
+
     # Use ThreadPoolExecutor for parallel execution
     # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
     with ThreadPoolExecutor(max_workers=25) as executor:
         # Submit all tasks
         future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
-        
+
         # Process results as they complete
         for future in as_completed(future_to_task):
             completed += 1
             result = future.result()
-            
+
             if result['error']:
                 errors += 1
                 print(f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
@@ -747,13 +748,13 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 print(f"  [{completed}/{total_tasks}] ✓ {result['site'].upper()} '{result['term']}': {result['count']} jobs")
             else:
                 print(f"  [{completed}/{total_tasks}] ⚠️ {result['site'].upper()} '{result['term']}': No jobs found")
-    
+
     print(f"\n✅ Parallel search complete!")
     print(f"   Total jobs found via JobSpy: {len(all_jobs)}")
     print(f"   Successful searches: {completed - errors}/{total_tasks}")
     if errors > 0:
         print(f"   ⚠️ Errors: {errors}")
-    
+
     return all_jobs
 
 def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
@@ -761,15 +762,15 @@ def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> Li
     if not config_serp.get('enabled', False):
         print("SerpApi is disabled in configuration, skipping...")
         return []
-    
+
     api_key = config_serp.get('api_key', '').replace('${SERP_API_KEY}', os.getenv('SERP_API_KEY', ''))
     if not api_key or api_key.startswith('${'):
         print("⚠️ SerpApi API key not configured, skipping...")
         return []
-    
+
     print("🚧 SerpApi integration ready but requires API key configuration")
     print("   Set SERP_API_KEY environment variable to enable")
-    
+
     return []
 
 def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -777,15 +778,15 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
     if not config_scraper.get('enabled', False):
         print("ScraperAPI is disabled in configuration, skipping...")
         return []
-        
+
     api_key = config_scraper.get('api_key', '').replace('${SCRAPER_API_KEY}', os.getenv('SCRAPER_API_KEY', ''))
     if not api_key or api_key.startswith('${'):
         print("⚠️ ScraperAPI key not configured, skipping...")
         return []
-    
+
     print("🚧 ScraperAPI integration ready but requires API key configuration")
     print("   Set SCRAPER_API_KEY environment variable to enable")
-    
+
     return []
 
 # ============================================================================
@@ -794,7 +795,7 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 
 def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
-    
+
     Parallelizes ~70+ company API calls with optimized worker count.
     Auto-scales workers based on company count for maximum efficiency.
     """
@@ -802,19 +803,19 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     total = len(companies)
     completed = 0
     errors = 0
-    
+
     # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
     if max_workers is None:
         max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
-    
+
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
-    
+
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         return fetch_greenhouse_jobs(company['name'], company['url'])
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
-        
+
         for future in as_completed(future_to_company):
             completed += 1
             company = future_to_company[future]
@@ -824,33 +825,33 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
             except Exception as e:
                 errors += 1
                 print(f"  ❌ {company['name']}: {e}")
-    
+
     print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
 
 
 def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Lever jobs in parallel using ThreadPoolExecutor
-    
+
     Auto-scales workers based on company count for optimal performance.
     """
     all_jobs = []
     total = len(companies)
     completed = 0
     errors = 0
-    
+
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
         max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
-    
+
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
-    
+
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         return fetch_lever_jobs(company['name'], company['url'])
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
-        
+
         for future in as_completed(future_to_company):
             completed += 1
             company = future_to_company[future]
@@ -860,7 +861,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
             except Exception as e:
                 errors += 1
                 print(f"  ❌ {company['name']}: {e}")
-    
+
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
 
@@ -871,33 +872,33 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
     total = len(search_terms)
     completed = 0
     errors = 0
-    
+
     # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
     if max_workers is None:
         max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
-    
+
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
-    
+
     def fetch_single_term(search_term: str) -> List[Dict[str, Any]]:
         """Fetch jobs for a single search term"""
         jobs = []
         max_retries = 2
-        
+
         for attempt in range(max_retries + 1):
             try:
                 if attempt > 0:
                     time.sleep(1)
-                
+
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
-                
+
                 response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
-                
+
                 if not isinstance(data, dict) or 'jobs' not in data:
                     continue
-                
+
                 for job in data.get('jobs', []):
                     locations = job.get('locations', [])
                     location_names = []
@@ -906,13 +907,13 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                             display_name = loc.get('display', '')
                             if display_name:
                                 location_names.append(display_name)
-                    
+
                     if not location_names:
                         continue
-                    
+
                     location_str = '; '.join(location_names)
                     description = job.get('description', '') or ''
-                    
+
                     jobs.append({
                         'company': 'Google',
                         'title': job.get('title', ''),
@@ -922,19 +923,19 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                         'source': 'Google Careers',
                         'description': description[:500] if description else ''
                     })
-                
+
                 print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
                 break
-                
+
             except Exception as e:
                 if attempt >= max_retries:
                     print(f"  ❌ Google '{search_term}': {str(e)[:50]}")
-        
+
         return jobs
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_term = {executor.submit(fetch_single_term, term): term for term in search_terms}
-        
+
         for future in as_completed(future_to_term):
             completed += 1
             try:
@@ -942,14 +943,14 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 all_jobs.extend(jobs)
             except Exception as e:
                 errors += 1
-    
+
     print(f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
     return all_jobs
 
 
 def get_job_key(job: Dict[str, Any]) -> str:
     """Generate unique key for job deduplication
-    
+
     Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
     """
     def safe_str(value) -> str:
@@ -963,7 +964,7 @@ def get_job_key(job: Dict[str, Any]) -> str:
                 return ''
             return str(value)
         return str(value).lower().strip()
-    
+
     company = safe_str(job.get('company', ''))
     title = safe_str(job.get('title', ''))
     url = safe_str(job.get('url', ''))
@@ -974,17 +975,17 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Remove duplicate jobs based on company, title, and URL"""
     seen_keys = set()
     unique_jobs = []
-    
+
     for job in jobs:
         key = get_job_key(job)
         if key not in seen_keys:
             seen_keys.add(key)
             unique_jobs.append(job)
-    
+
     duplicates_removed = len(jobs) - len(unique_jobs)
     if duplicates_removed > 0:
         print(f"🔄 Deduplication: Removed {duplicates_removed} duplicate jobs")
-    
+
     return unique_jobs
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
@@ -1001,39 +1002,39 @@ def normalize_date_string(posted_at: str) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
-    
+
     Handles formats like:
     - "Posted Today" -> today's date
-    - "Posted Yesterday" -> yesterday's date  
+    - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
     """
     if not isinstance(posted_at, str):
         return posted_at
-    
+
     posted_at_lower = posted_at.lower().strip()
     now = datetime.now()
-    
+
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
         return now.strftime('%Y-%m-%d')
-    
+
     # Handle "Posted Yesterday" or "Yesterday"
     if 'yesterday' in posted_at_lower:
         return (now - timedelta(days=1)).strftime('%Y-%m-%d')
-    
+
     # Handle "Posted X Days Ago" or "X Days Ago"
     days_match = re.search(r'(\d+)\s*days?\s+ago', posted_at_lower)
     if days_match:
         days = int(days_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
-    
+
     # Handle "Posted 30+ Days Ago" or "30+ Days Ago"
     days_plus_match = re.search(r'(\d+)\+\s*days?\s+ago', posted_at_lower)
     if days_plus_match:
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
-    
+
     # Return original if no pattern matches
     return posted_at
 
@@ -1041,7 +1042,7 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
     """Check if job was posted within the specified number of days"""
     if not posted_at:
         return False
-    
+
     try:
         # Handle already parsed date objects
         if isinstance(posted_at, (datetime, date)):
@@ -1055,7 +1056,7 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at)
             posted_date = date_parser.parse(normalized_date)
-        
+
         # Remove timezone info for comparison
         posted_date = posted_date.replace(tzinfo=None)
         cutoff_date = datetime.now() - timedelta(days=max_age_days)
@@ -1068,24 +1069,24 @@ def is_valid_location(location: str) -> bool:
     """Check if job location is in target countries (USA, Canada, India) or Remote"""
     if not location:
         return False
-    
+
     location_lower = location.lower().strip()
-    
+
     # Handle "Remote" locations - include them
     if location_lower in ['remote', 'anywhere', 'worldwide']:
         return True
-    
+
     if 'remote' in location_lower:
         return True
-    
+
     # USA state abbreviations and names
     usa_states = [
         'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
-        'california', 'ca', 'colorado', 'co', 'connecticut', 'ct', 
+        'california', 'ca', 'colorado', 'co', 'connecticut', 'ct',
         'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
         'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
         'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
-        'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi', 
+        'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi',
         'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
         'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
         'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
@@ -1096,7 +1097,7 @@ def is_valid_location(location: str) -> bool:
         'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
         'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
     ]
-    
+
     # USA cities (major ones)
     usa_cities = [
         'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
@@ -1107,20 +1108,20 @@ def is_valid_location(location: str) -> bool:
         'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
         'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
     ]
-    
+
     # USA indicators
     usa_indicators = [
         'united states', 'usa', 'us', 'america'
     ]
-    
+
     # Canada provinces and cities
     canada_indicators = [
-        'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba', 
+        'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba',
         'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
         'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
         'quebec city', 'hamilton', 'kitchener', 'waterloo', 'london', 'victoria'
     ]
-    
+
     # India states and cities
     india_indicators = [
         'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
@@ -1131,32 +1132,32 @@ def is_valid_location(location: str) -> bool:
         'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
         'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
     ]
-    
+
     # Check for USA indicators
     for indicator in usa_indicators:
         if indicator in location_lower:
             return True
-    
+
     # Check for USA states
     for state in usa_states:
         if state in location_lower:
             return True
-    
+
     # Check for USA cities
     for city in usa_cities:
         if city in location_lower:
             return True
-    
+
     # Check for Canada indicators
     for indicator in canada_indicators:
         if indicator in location_lower:
             return True
-    
+
     # Check for India indicators
     for indicator in india_indicators:
         if indicator in location_lower:
             return True
-    
+
     # If we can't determine, default to False to be safe
     return False
 
@@ -1164,85 +1165,85 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
     """Filter jobs based on configuration criteria"""
     filtered_jobs = []
     filters = config['filters']
-    
+
     # Get exclusion signals (default to common senior keywords if not in config)
     exclusion_signals = filters.get('exclusion_signals', [
-        'senior', 'sr.', 'sr ', 'staff', 'principal', 'lead', 'manager', 
+        'senior', 'sr.', 'sr ', 'staff', 'principal', 'lead', 'manager',
         'director', 'vp', 'vice president', 'head of', 'architect',
         'distinguished', 'fellow', 'intern', 'internship'
     ])
-    
+
     for job in jobs:
         title = job.get('title', '')
         title_lower = title.lower()
         location = job.get('location', '')
         posted_at = job.get('posted_at', '')
-        
+
         # FIRST: Check for exclusion signals (filter OUT senior/staff roles)
         is_excluded = any(signal.lower() in title_lower for signal in exclusion_signals)
         if is_excluded:
             continue
-        
+
         # Check for new grad signals
         if not has_new_grad_signal(title, filters['new_grad_signals']):
             continue
-        
+
         # For jobs with clear new grad signals, track signals are optional
         has_track = has_track_signal(title, filters['track_signals'])
-        
+
         # Strong new grad signals that don't need additional track signals
         strong_new_grad_signals = [
-            "new grad", "new graduate", "graduate program", "campus", "university grad", 
+            "new grad", "new graduate", "graduate program", "campus", "university grad",
             "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
             "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
         has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
-        
+
         # Accept if: has strong new grad signal OR (has new grad signal AND track signal)
         if not (has_strong_new_grad or has_track):
             continue
-            
+
         # Check if job is recent enough
         if not is_recent_job(posted_at, filters['max_age_days']):
             continue
-        
+
         # Check if job location is in USA
         if not is_valid_location(location):
             continue
-            
+
         filtered_jobs.append(job)
-    
+
     return filtered_jobs
 
 def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Add categorization, company tier, and flags to jobs"""
     enriched = []
-    
+
     for job in jobs:
         title = job.get('title', '')
         description = job.get('description', '')
         company = job.get('company', '')
-        
+
         # Add categorization
         category = categorize_job(title, description)
         job['category'] = category
-        
+
         # Add company tier
         tier = get_company_tier(company)
         job['company_tier'] = tier
-        
+
         # Add sponsorship flags
         flags = detect_sponsorship_flags(title, description)
         job['flags'] = flags
-        
+
         # Check if closed
         job['is_closed'] = is_job_closed(title, description)
-        
+
         # Generate unique ID
         job['id'] = f"{company}-{title}-{job.get('location', '')}".lower().replace(' ', '-')[:100]
-        
+
         enriched.append(job)
-    
+
     return enriched
 
 def format_posted_date(posted_at: str) -> str:
@@ -1255,10 +1256,10 @@ def format_posted_date(posted_at: str) -> str:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at)
             posted_date = date_parser.parse(normalized_date)
-            
+
         now = datetime.now()
         diff = now - posted_date.replace(tzinfo=None)
-        
+
         if diff.days == 0:
             return "Today"
         elif diff.days == 1:
@@ -1285,16 +1286,16 @@ def get_iso_date(posted_at) -> str:
 
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
     """Generate JSON data structure for jobs"""
-    
+
     # Calculate category counts
     category_counts = {}
     for category_id in CATEGORY_PATTERNS.keys():
         category_counts[category_id] = 0
-    
+
     for job in jobs:
         cat_id = job.get('category', {}).get('id', 'other')
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
-    
+
     # Sort jobs by date
     def get_sort_date(job):
         posted_at = job.get('posted_at')
@@ -1307,9 +1308,9 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
                 return date_parser.parse(posted_at).replace(tzinfo=None)
         except Exception:
             return datetime.min
-    
+
     jobs.sort(key=get_sort_date, reverse=True)
-    
+
     # Build JSON structure
     json_jobs = []
     for job in jobs:
@@ -1327,7 +1328,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'flags': job.get('flags', {}),
             'is_closed': job.get('is_closed', False)
         })
-    
+
     return {
         'meta': {
             'generated_at': datetime.now().isoformat(),
@@ -1352,33 +1353,33 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
     from collections import Counter
-    
+
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
-    
+
     # Count jobs by category
     category_counts = Counter()
     for job in jobs:
         for category in job.get('categories', []):
             category_counts[category] += 1
-    
+
     # Count jobs by tier
     tier_counts = Counter()
     for job in jobs:
         tier = job.get('company_tier', {}).get('tier', 'other')
         tier_counts[tier] += 1
-    
+
     # Get top 10 companies by job count
     company_counts = Counter(job.get('company', 'Unknown') for job in jobs)
     top_companies = [
         {'company': company, 'jobs': count}
         for company, count in company_counts.most_common(10)
     ]
-    
+
     # Calculate average jobs per company
     unique_companies = len(company_counts)
     avg_jobs_per_company = round(len(jobs) / unique_companies, 2) if unique_companies > 0 else 0
-    
+
     # Create snapshot object
     snapshot = {
         'date': today,
@@ -1390,10 +1391,10 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'avg_jobs_per_company': avg_jobs_per_company,
         'timestamp': datetime.now().isoformat()
     }
-    
+
     # Load existing history
     history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
-    
+
     try:
         if os.path.exists(history_path):
             with open(history_path, 'r', encoding='utf-8') as f:
@@ -1404,7 +1405,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     except Exception as e:
         print(f"  ⚠️  Could not load market history: {e}")
         history = []
-    
+
     # Check if today's snapshot already exists (avoid duplicates)
     existing_dates = {entry['date'] for entry in history}
     if today not in existing_dates:
@@ -1417,14 +1418,14 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
                 history[i] = snapshot
                 print(f"  ✓ Updated market snapshot for {today}: {len(jobs)} jobs")
                 break
-    
+
     # Keep only last 90 days
     cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
     history = [entry for entry in history if entry['date'] >= cutoff_date]
-    
+
     # Sort by date (oldest to newest)
     history.sort(key=lambda x: x['date'])
-    
+
     # Save back to file
     history_data = {
         'meta': {
@@ -1437,7 +1438,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         },
         'snapshots': history
     }
-    
+
     try:
         os.makedirs(os.path.dirname(history_path), exist_ok=True)
         with open(history_path, 'w', encoding='utf-8') as f:
@@ -1452,78 +1453,78 @@ def predict_hiring_trends() -> None:
     Requires GOOGLE_API_KEY environment variable.
     """
     api_key = os.environ.get('GOOGLE_API_KEY')
-    
+
     if not api_key:
         print("  ⚠️  GOOGLE_API_KEY not found - skipping ML predictions")
         return
-    
+
     # Check if predictions were already generated today
     predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
     today = datetime.now().strftime('%Y-%m-%d')
-    
+
     try:
         if os.path.exists(predictions_path):
             with open(predictions_path, 'r', encoding='utf-8') as f:
                 existing_predictions = json.load(f)
                 generated_date = existing_predictions.get('generated_at', '')
-                
+
                 # Check if predictions were generated today
                 if generated_date.startswith(today):
                     print(f"  ✓ Predictions already generated today ({today}) - skipping")
                     return
     except Exception as e:
         print(f"  ⚠️  Could not check existing predictions: {e}")
-    
+
     # Load market history
     history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
-    
+
     try:
         if not os.path.exists(history_path):
             print("  ℹ️  Market history not found - predictions available after data collection")
             return
-            
+
         with open(history_path, 'r', encoding='utf-8') as f:
             history_data = json.load(f)
             snapshots = history_data.get('snapshots', [])
-        
+
         if len(snapshots) < 7:
             print(f"  ℹ️  Not enough data for predictions ({len(snapshots)} days, need 7+)")
             return
-            
+
     except Exception as e:
         print(f"  ❌ Failed to load market history: {e}")
         return
-    
+
     # Prepare data summary for Gemini
     total_jobs_trend = [s['total_jobs'] for s in snapshots[-30:]]  # Last 30 days
     category_trends = {}
     tier_trends = {}
-    
+
     # Aggregate category trends
     for snapshot in snapshots[-30:]:
         for category, count in snapshot.get('categories', {}).items():
             if category not in category_trends:
                 category_trends[category] = []
             category_trends[category].append(count)
-    
+
     # Aggregate tier trends
     for snapshot in snapshots[-30:]:
         for tier, count in snapshot.get('tiers', {}).items():
             if tier not in tier_trends:
                 tier_trends[tier] = []
             tier_trends[tier].append(count)
-    
+
     # Call Gemini API
     try:
         headers = {
             'Content-Type': 'application/json'
         }
-        
+
         prompt = f"""Analyze this new graduate tech hiring market data and provide predictions for the next 30 days.
 
 Historical Data (last {len(total_jobs_trend)} days):
 - Total Jobs Trend: {total_jobs_trend}
-- Category Trends: {json.dumps({k: v[-7:] for k, v in list(category_trends.items())[:5]})}  
+- Category Trends: {json.dumps({k: v[-7:] for k, v in list(category_trends.items())[:5]})}
 - Company Tier Trends: {json.dumps({k: v[-7:] for k, v in tier_trends.items()})}
 
 Current Status:
@@ -1570,30 +1571,30 @@ Respond in JSON format:
                 'maxOutputTokens': 2048,
             }
         }
-        
+
         response = HTTP_SESSION.post(
             f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}',
             headers=headers,
             json=payload,
             timeout=12  # AGGRESSIVE: Reduced from 20s for 10K companies
         )
-        
+
         if response.status_code == 200:
             result = response.json()
-            
+
             # Parse Gemini response
             if 'candidates' in result and len(result['candidates']) > 0:
                 content = result['candidates'][0]['content']['parts'][0]['text']
-                
+
                 # Extract JSON from response (handle markdown code blocks)
                 content = content.strip()
                 if '```json' in content:
                     content = content.split('```json')[1].split('```')[0].strip()
                 elif '```' in content:
                     content = content.split('```')[1].split('```')[0].strip()
-                
+
                 predictions = json.loads(content)
-                
+
                 # Add metadata
                 predictions['generated_at'] = datetime.now().isoformat()
                 predictions['data_points'] = len(snapshots)
@@ -1601,19 +1602,19 @@ Respond in JSON format:
                     'start': snapshots[0]['date'],
                     'end': snapshots[-1]['date']
                 }
-                
+
                 # Save predictions
                 predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
                 with open(predictions_path, 'w', encoding='utf-8') as f:
                     json.dump(predictions, f, indent=2, ensure_ascii=False)
-                
+
                 print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
                 print("  ⚠️  No predictions in Gemini response")
-                
+
         else:
             print(f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
-            
+
     except Exception as e:
         error_msg = str(e)
         if api_key:
@@ -1622,7 +1623,7 @@ Respond in JSON format:
 
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
-    
+
     # Sort jobs by posted date (most recent first)
     def get_sort_date(job):
         posted_at = job['posted_at']
@@ -1636,15 +1637,15 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
                 return parsed_date.replace(tzinfo=None)
         except Exception:
             return datetime.min
-    
+
     jobs.sort(key=get_sort_date, reverse=True)
-    
+
     # Calculate category counts
     category_counts = {}
     for job in jobs:
         cat_id = job.get('category', {}).get('id', 'other')
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
-    
+
     # Build README
     readme_content = f"""# 🎓 2026 New Grad Positions
 
@@ -1663,14 +1664,14 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 ## 📂 Browse {len(jobs)} Jobs by Category
 
 """
-    
+
     # Add category links
     for cat_id, cat_info in CATEGORY_PATTERNS.items():
         count = category_counts.get(cat_id, 0)
         if count > 0:
             anchor = cat_info['name'].lower().replace(' ', '-').replace('&', '').replace('  ', '-')
             readme_content += f"{cat_info['emoji']} [{cat_info['name']}](#{anchor}) ({count})\n\n"
-    
+
     readme_content += """---
 
 ## 🚀 Legend
@@ -1686,7 +1687,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 ---
 
 """
-    
+
     # Group jobs by category
     jobs_by_category = {}
     for job in jobs:
@@ -1694,30 +1695,30 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
         if cat_id not in jobs_by_category:
             jobs_by_category[cat_id] = []
         jobs_by_category[cat_id].append(job)
-    
+
     # Generate tables for each category
     for cat_id, cat_info in CATEGORY_PATTERNS.items():
         cat_jobs = jobs_by_category.get(cat_id, [])
         if not cat_jobs:
             continue
-        
+
         readme_content += f"## {cat_info['emoji']} {cat_info['name']} New Grad Roles\n\n"
         readme_content += "[Back to top](#-2026-new-grad-positions)\n\n"
         readme_content += "| Company | Role | Location | Posted | Apply |\n"
         readme_content += "|---------|------|----------|--------|-------|\n"
-        
+
         for job in cat_jobs:
             company = job.get('company', 'Unknown')
             title = job.get('title', 'Unknown')
             location = job.get('location', 'Remote')
             posted = format_posted_date(job.get('posted_at', ''))
             url = job.get('url', '#')
-            
+
             # Add company tier emoji
             tier_emoji = job.get('company_tier', {}).get('emoji', '')
             if tier_emoji:
                 company = f"{tier_emoji} {company}"
-            
+
             # Add flags
             flags = job.get('flags', {})
             flag_str = ""
@@ -1727,17 +1728,17 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
                 flag_str += " 🇺🇸"
             if job.get('is_closed'):
                 flag_str += " 🔒"
-            
+
             # Escape pipe characters
             title = title.replace('|', '\\|')
             location = location.replace('|', '\\|')
-            
+
             apply_link = f"[Apply]({url})" if url and url != '#' and not job.get('is_closed') else "🔒"
-            
+
             readme_content += f"| {company} | {title}{flag_str} | {location} | {posted} | {apply_link} |\n"
-        
+
         readme_content += "\n"
-    
+
     readme_content += f"""---
 
 ## 📊 About This Repository
@@ -1795,24 +1796,24 @@ Found a job we're missing? Want to report a closed position?
 
 *Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}*
 """
-    
+
     return readme_content
 
 def main():
     """Main function to scrape jobs and update README
-    
+
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
     """
     import time as perf_time
     start_time = perf_time.time()
-    
+
     print("🚀 Starting job aggregation (PARALLEL MODE)...")
     print("=" * 60)
-    
+
     # Load configuration
     config = load_config()
-    
+
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
@@ -1826,53 +1827,53 @@ def main():
     if total_companies < 10000:
         print(f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
     print("="  * 60)
-    
+
     # Collect all jobs using parallel fetchers
     all_jobs = []
-    
+
     # Phase 1: Fetch from all API sources IN PARALLEL
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
-    
+
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
     # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
     with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
-        
+
         # Submit Greenhouse parallel fetch
         if 'greenhouse' in config['apis'] and config['apis']['greenhouse'].get('companies'):
             futures['greenhouse'] = executor.submit(
-                fetch_all_greenhouse_jobs_parallel, 
+                fetch_all_greenhouse_jobs_parallel,
                 config['apis']['greenhouse']['companies']
             )
-        
+
         # Submit Lever parallel fetch
         if 'lever' in config['apis'] and config['apis']['lever'].get('companies'):
             futures['lever'] = executor.submit(
                 fetch_all_lever_jobs_parallel,
                 config['apis']['lever']['companies']
             )
-        
+
         # Submit Google parallel fetch
         if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
             futures['google'] = executor.submit(
                 fetch_google_jobs_parallel,
                 config['apis']['google']['search_terms']
             )
-        
+
         # Submit JobSpy fetch (already parallelized internally)
         if 'jobspy' in config['apis']:
             futures['jobspy'] = executor.submit(
                 fetch_jobspy_jobs,
                 config['apis']['jobspy']
             )
-            
+
         # Submit Workday parallel fetch
         if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
              futures['workday'] = executor.submit(
                 fetch_workday_jobs,
                 config['apis']['workday']['companies']
             )
-        
+
         # Collect results from all futures
         for source, future in futures.items():
             try:
@@ -1881,40 +1882,40 @@ def main():
                 print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
             except Exception as e:
                 print(f"  ❌ {source.upper()} failed: {e}")
-    
+
     # Fetch from third-party scraping APIs (if configured) - these are usually disabled
     if 'scraper_apis' in config['apis']:
         scraper_apis = config['apis']['scraper_apis']
-        
+
         # SerpApi for Google Jobs
         if 'serp_api' in scraper_apis:
             serp_jobs = fetch_serp_api_jobs(scraper_apis['serp_api'])
             all_jobs.extend(serp_jobs)
-        
-        # ScraperAPI for general web scraping 
+
+        # ScraperAPI for general web scraping
         if 'scraper_api' in scraper_apis:
             scraper_jobs = fetch_scraper_api_jobs(scraper_apis['scraper_api'])
             all_jobs.extend(scraper_jobs)
-    
+
     print(f"\n📊 Total jobs fetched: {len(all_jobs)}")
-    
+
     # Phase 2: Deduplicate jobs
     print("\n🔄 Phase 2: Deduplicating jobs...")
     all_jobs = deduplicate_jobs(all_jobs)
     print(f"   Jobs after deduplication: {len(all_jobs)}")
-    
+
 
     # Phase 3: Filter, enrich, and output
     print("\n⚙️ Phase 3: Filtering and enriching jobs...")
-    
+
     # Filter jobs
     filtered_jobs = filter_jobs(all_jobs, config)
     print(f"   Jobs after filtering: {len(filtered_jobs)}")
-    
+
     # Enrich jobs with categorization and flags
     enriched_jobs = enrich_jobs(filtered_jobs)
     print(f"   Jobs enriched with categories and flags")
-    
+
     # Generate JSON data
     # Sanitize jobs to remove NaN values
     import math
@@ -1931,17 +1932,17 @@ def main():
             return [deep_sanitize(v) for v in obj]
         else:
             return sanitize_value(obj)
-            
+
     enriched_jobs = deep_sanitize(enriched_jobs)
-    
+
     jobs_json = generate_jobs_json(enriched_jobs, config)
-    
+
     # ========== Save Historical Market Data ==========
     save_market_history(enriched_jobs)
-    
+
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
-    
+
     # Write JSON file
     json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
     try:
@@ -1950,10 +1951,10 @@ def main():
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
     except Exception as e:
         print(f"Error writing jobs.json: {e}")
-    
+
     # Generate README content
     readme_content = generate_readme(enriched_jobs, config)
-    
+
     # Write to README file
     readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
     try:
@@ -1963,7 +1964,7 @@ def main():
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)
-    
+
     # Report execution time
     elapsed = perf_time.time() - start_time
     print("\n" + "=" * 60)

@@ -16,13 +16,13 @@ The scraper has been optimized to handle **1000+ companies** with enterprise-gra
 - Can handle 300+ Greenhouse companies in parallel
 
 **Lever:**
-- Previous: max 30 workers  
+- Previous: max 30 workers
 - **New: max 100 workers**
 - Can handle 100+ Lever companies in parallel
 
 **Google Careers:**
 - Previous: max 25 workers
-- **New: max 50 workers**  
+- **New: max 50 workers**
 - Can handle 15+ search terms in parallel
 
 **Master Orchestrator:**
@@ -87,7 +87,7 @@ Worker counts now scale automatically based on company count:
 - 🔥 CPU: 80-95% utilization (optimal)
 
 **Self-Hosted Runner (8+ cores):**
-- ✅ Can handle 1000+ companies  
+- ✅ Can handle 1000+ companies
 - ⏱️ Execution: 10-12 minutes
 - 💾 Memory: ~3-4GB peak usage
 - 🔥 CPU: 90-100% utilization
@@ -126,13 +126,13 @@ apis:
       - name: "NewCompany2"
         url: "https://boards-api.greenhouse.io/v1/boards/newcompany2/jobs"
       # ... add up to 1000 companies
-  
+
   lever:
     companies:
       - name: "StartupCo"
         url: "https://api.lever.co/v0/postings/startupco?mode=json"
       # ... add more
-  
+
   workday:
     enabled: true
     companies:
@@ -217,7 +217,7 @@ For 1000 companies, aim for this distribution:
 
 **Why this distribution?**
 - Greenhouse is fastest (2-3s per company)
-- Lever is medium speed (3-5s per company)  
+- Lever is medium speed (3-5s per company)
 - Workday is slower (5-8s per company)
 - Balanced distribution maximizes parallelism
 
@@ -277,7 +277,7 @@ response = HTTP_SESSION.get(url, timeout=12)  # Instead of 8
 # .github/workflows/update-jobs-batch-1.yml
 - run: python scripts/update_jobs.py --companies 1-500
 
-# .github/workflows/update-jobs-batch-2.yml  
+# .github/workflows/update-jobs-batch-2.yml
 - run: python scripts/update_jobs.py --companies 501-1000
 
 # .github/workflows/update-jobs-batch-3.yml
@@ -324,7 +324,7 @@ conn = sqlite3.connect('jobs.db')
 - Time: 15-20 minutes
 
 **Recommended:**
-- CPU: 8+ cores (self-hosted runner)  
+- CPU: 8+ cores (self-hosted runner)
 - RAM: 8GB
 - Network: 50+ Mbps
 - Time: 10-12 minutes
@@ -433,7 +433,7 @@ Before scaling to 1000 companies:
 With the implemented optimizations, the scraper can now handle:
 
 - ✅ **1000+ companies** in 12-15 minutes
-- ✅ **70-75% faster** than previous implementation  
+- ✅ **70-75% faster** than previous implementation
 - ✅ **Enterprise-grade** connection pooling (200 pools, 100 connections/host)
 - ✅ **Auto-scaling** workers (up to 150 parallel requests)
 - ✅ **Production-ready** for GitHub Actions and self-hosted runners

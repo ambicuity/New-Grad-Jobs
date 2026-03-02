@@ -25,7 +25,7 @@ from functools import lru_cache
 @lru_cache(maxsize=1)
 def create_optimized_session() -> requests.Session:
     """Create an optimized HTTP session with connection pooling and retry strategy
-    
+
     Features:
     - Connection pooling: Reuses TCP connections (50 per host, 100 total)
     - Automatic retries: 3 attempts with exponential backoff
@@ -33,7 +33,7 @@ def create_optimized_session() -> requests.Session:
     - Keep-alive: Maintains persistent connections
     """
     session = requests.Session()
-    
+
     # Configure retry strategy with exponential backoff
     retry_strategy = Retry(
         total=3,
@@ -41,7 +41,7 @@ def create_optimized_session() -> requests.Session:
         status_forcelist=[429, 500, 502, 503, 504],
         allowed_methods=["HEAD", "GET", "POST", "OPTIONS"]
     )
-    
+
     # Create HTTPAdapter with connection pooling
     adapter = HTTPAdapter(
         max_retries=retry_strategy,
@@ -49,18 +49,18 @@ def create_optimized_session() -> requests.Session:
         pool_maxsize=50,
         pool_block=False
     )
-    
+
     # Mount adapter for HTTP and HTTPS
     session.mount("http://", adapter)
     session.mount("https://", adapter)
-    
+
     # Add headers for compression and keep-alive
     session.headers.update({
         'Accept-Encoding': 'gzip, deflate, br',
         'Connection': 'keep-alive',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
     })
-    
+
     return session
 
 # Global session instance - reused across all API calls
@@ -77,7 +77,7 @@ HTTP_SESSION = create_optimized_session()
 @lru_cache(maxsize=512)  # Cache company tier lookups for faster repeated access
 def get_company_tier(company_name: str) -> Dict[str, Any]:
     """Get company tier classification including sectors
-    
+
     Cached for performance since company names are repeated across multiple jobs.
     """
     # ... existing implementation ...

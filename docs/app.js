@@ -178,7 +178,7 @@ function toggleTheme() {
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
+
     // Track theme preference
     trackEvent('theme-toggle', { label: `Theme: ${newTheme}` });
 }
@@ -348,15 +348,15 @@ function renderJobs(jobs) {
                 </div>
                 <div class="job-actions">
                     <div class="job-action-buttons">
-                        <button 
-                            class="action-icon${isBookmarked ? ' bookmarked' : ''}" 
+                        <button
+                            class="action-icon${isBookmarked ? ' bookmarked' : ''}"
                             data-bookmark-url="${escapeHtml(job.url)}"
                             onclick="toggleBookmark('${escapeHtml(job.url)}')"
                             aria-label="${isBookmarked ? 'Remove bookmark' : 'Bookmark job'}"
                             title="${isBookmarked ? 'Remove bookmark' : 'Bookmark job'}"
                         >${isBookmarked ? '★' : '☆'}</button>
-                        <button 
-                            class="action-icon" 
+                        <button
+                            class="action-icon"
                             onclick="copyJobLink('${escapeHtml(job.url)}', '${escapeHtml(job.title)}')"
                             aria-label="Copy job link"
                             title="Copy link"
@@ -436,7 +436,7 @@ function goToPage(page) {
 
     currentPage = page;
     renderJobs(filteredJobs);
-    
+
     // Track pagination usage
     trackEvent('pagination-click', { label: `Page: ${page}` });
 
@@ -594,7 +594,7 @@ function resetFilters() {
     document.querySelectorAll('#tier-filters .chip').forEach(chip => {
         chip.classList.toggle('active', chip.dataset.filter === 'all');
     });
-    
+
     // Track reset filters action
     trackEvent('filters-reset', { label: 'Reset All Filters' });
 
@@ -771,15 +771,15 @@ window.addEventListener('error', (event) => {
         lineno: event.lineno || 0,
         colno: event.colno || 0
     };
-    
+
     // Log to console for debugging
     console.error('Error caught:', errorInfo);
-    
+
     // Track error event
-    trackEvent('js-error', { 
-        label: `${errorInfo.message} at ${errorInfo.filename}:${errorInfo.lineno}` 
+    trackEvent('js-error', {
+        label: `${errorInfo.message} at ${errorInfo.filename}:${errorInfo.lineno}`
     });
-    
+
     // Store error in localStorage for later analysis
     try {
         const errors = JSON.parse(localStorage.getItem('errorLog') || '[]');
@@ -799,11 +799,11 @@ window.addEventListener('error', (event) => {
 // Handle unhandled promise rejections
 window.addEventListener('unhandledrejection', (event) => {
     console.error('Unhandled promise rejection:', event.reason);
-    
-    trackEvent('promise-rejection', { 
-        label: String(event.reason || 'Unknown rejection') 
+
+    trackEvent('promise-rejection', {
+        label: String(event.reason || 'Unknown rejection')
     });
-    
+
     try {
         const errors = JSON.parse(localStorage.getItem('errorLog') || '[]');
         errors.push({

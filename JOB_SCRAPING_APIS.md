@@ -14,7 +14,7 @@ JobSpy is an open-source Python library that scrapes jobs from popular job sites
 jobspy:
   enabled: true
   sites:
-    - "indeed" 
+    - "indeed"
     - "linkedin"
     - "glassdoor"
   search_terms:
@@ -33,7 +33,7 @@ jobspy:
 
 ### 2. Existing APIs (Maintained)
 - **Greenhouse API**: Company-specific job boards
-- **Lever API**: Company-specific job boards  
+- **Lever API**: Company-specific job boards
 - **Google Careers API**: Direct Google job searches
 
 ## Ready for Configuration APIs

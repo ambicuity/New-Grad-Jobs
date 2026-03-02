@@ -20,7 +20,7 @@ HTTP_SESSION = create_optimized_session()
 - **HTTP Keep-Alive enabled** - reuses TCP connections across requests
 - **Connection recycling** - closes connections older than 60 seconds
 
-**Impact:** 
+**Impact:**
 - Eliminates TCP handshake overhead after first request to each domain
 - **Saves 100-200ms per API call** = 15-30 seconds total for 150+ companies
 - Enables **2-3x more concurrent requests** without overwhelming servers

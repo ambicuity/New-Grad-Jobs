@@ -24,9 +24,9 @@ Fixes # <!-- Issue number, e.g. Fixes #42 -->
 
 <!-- List the key changes in this PR. Be specific — include function names, config keys, files. -->
 
-- 
-- 
-- 
+-
+-
+-
 
 ---
 

@@ -29,7 +29,7 @@ git checkout README.md                       # Revert auto-generated changes if 
 
 ### Expected Behavior
 - Script scrapes 70+ company APIs making 50+ HTTP requests
-- Updates README.md with job listings table and current timestamp  
+- Updates README.md with job listings table and current timestamp
 - May show API timeout warnings (normal) and date parsing errors (harmless)
 - JobSpy import warnings are normal if library unavailable but won't break execution
 
@@ -40,7 +40,7 @@ git checkout README.md                       # Revert auto-generated changes if 
 /
 ├── .github/workflows/update-jobs.yml  # Automation (runs every 5 min)
 ├── config.yml                         # Central configuration (261 lines)
-├── scripts/update_jobs.py             # Main script (749 lines) 
+├── scripts/update_jobs.py             # Main script (749 lines)
 ├── README.md                          # AUTO-GENERATED - never edit manually
 ├── requirements.txt                   # Dependencies (4 packages)
 └── JOB_SCRAPING_APIS.md              # API documentation
@@ -55,7 +55,7 @@ git checkout README.md                       # Revert auto-generated changes if 
 **Key Functions**:
 - `load_config()` - Loads YAML configuration
 - `fetch_greenhouse_jobs()` - Fetches from company APIs (with retry logic)
-- `filter_jobs()` - Applies filtering criteria  
+- `filter_jobs()` - Applies filtering criteria
 - `generate_readme()` - Creates markdown table output
 - `main()` - Orchestrates entire pipeline
 
@@ -105,6 +105,6 @@ git checkout README.md  # If testing locally
 
 **Critical Notes:**
 - **README.md is auto-generated** - never manually edit, changes overwritten every 5 minutes
-- **Allow adequate timeout** - script makes 50+ API calls, needs 4-6 minutes minimum  
+- **Allow adequate timeout** - script makes 50+ API calls, needs 4-6 minutes minimum
 - **Configuration drives behavior** - modify config.yml not Python hardcoded values
 - **Trust these instructions** - repository thoroughly analyzed, search only if info incomplete
