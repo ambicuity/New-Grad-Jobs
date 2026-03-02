@@ -279,4 +279,3 @@ Every contribution is recognized! When your PR is merged, a maintainer will add 
 ---
 
 Thank you for helping new graduates land their first job. Every contribution matters. 🚀
-

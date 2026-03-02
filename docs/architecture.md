@@ -16,13 +16,13 @@ flowchart TD
     subgraph Core["2. Core Engine (scripts/update_jobs.py)"]
         config[fa:fa-file-code Load config.yml<br/>Filters, Categories, Sources]
         session(fa:fa-bolt Optimized HTTP Session<br/>Keep-alive, Retries, Connection Pools)
-        
+
         %% Fetching
         subgraph Fetching["3. Parallel Data Fetching (ThreadPoolExecutor)"]
             direct_api[fa:fa-server Direct APIs<br/>Greenhouse, Lever, Google]
             jobspy_api[fa:fa-spider Python-JobSpy<br/>LinkedIn, Indeed, Glassdoor]
         end
-        
+
         %% Processing Pipeline
         subgraph Pipeline["4. Processing Pipeline"]
             norm[1. Normalize Schema]
@@ -31,7 +31,7 @@ flowchart TD
             sponsorship[4. Detect Sponsorship]
             dedup[5. Deduplicate by Hash]
         end
-        
+
     end
 
     %% Storage and Output
@@ -51,20 +51,20 @@ flowchart TD
     filter --> categorize
     categorize --> sponsorship
     sponsorship --> dedup
-    
+
     dedup --> json
     dedup --> readme
-    
+
     json -.-> git_commit[GitHub Git Commit]
     readme -.-> git_commit
-    
+
     git_commit -.-> gh_pages
-    
+
     classDef trigger fill:#e1bee7,stroke:#8e24aa,stroke-width:2px;
     classDef core fill:#bbdefb,stroke:#1976d2,stroke-width:2px;
     classDef process fill:#c8e6c9,stroke:#388e3c,stroke-width:2px;
     classDef output fill:#ffe0b2,stroke:#f57c00,stroke-width:2px;
-    
+
     class Trigger trigger;
     class Core core;
     class Pipeline process;

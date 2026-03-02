@@ -1,6 +1,6 @@
 # 🎓 Welcome to the New-Grad-Jobs Wiki
 
-> [!NOTE]  
+> [!NOTE]
 > **Mission Statement:** This project is a hyper-focused aggregator for entry-level tech roles; it is *not* a full-stack recruiting software, nor will it ever require a traditional database to host.
 
 ## ⚡ Quick Links

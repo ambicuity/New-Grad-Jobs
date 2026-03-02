@@ -1,6 +1,6 @@
 # 🗺️ Infrastructure Map
 
-Because this project operates as a "Foundation of One" with zero-cost infrastructure, the map is remarkably simple. 
+Because this project operates as a "Foundation of One" with zero-cost infrastructure, the map is remarkably simple.
 
 If the original maintainer disappears, this document explains exactly what secrets, dependencies, and levers keep the application running.
 
@@ -12,7 +12,7 @@ All core infrastructure is provided natively by GitHub for free.
 
 ## 🔑 CI/CD Secrets
 The repository relies on the automated GitHub token provisioning. There are **NO external API keys** required to run the scraper, as it hits exclusively public endpoints.
-- `GITHUB_TOKEN`: Automatically injected by Actions. Required for the `update-jobs` workflow to commit the generated JSON and Markdown back to the `main` branch. 
+- `GITHUB_TOKEN`: Automatically injected by Actions. Required for the `update-jobs` workflow to commit the generated JSON and Markdown back to the `main` branch.
   *(Ensure Action permissions are set to Read & Write in repository settings).*
 
 ## 📦 Third-Party Dependencies (SaaS / Ext)

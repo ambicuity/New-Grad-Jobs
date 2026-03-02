@@ -2,7 +2,7 @@
 
 This is a chronological ledger of major technical pivots and architectural decisions (`ADRs`) that fundamentally shape the New Grad Jobs project.
 
-> [!NOTE]  
+> [!NOTE]
 > If you are proposing a massive refactor, check this ledger first. The pivot you want to make has likely already been evaluated!
 
 ### Historical Ledger
@@ -10,7 +10,7 @@ This is a chronological ledger of major technical pivots and architectural decis
 * **March 2026: The AI-Ready Layer & Taboos**
   * **Context**: Repetitive pull requests attempting to "modernize" the repo with React and PostgreSQL.
   * **Pivot**: Explicitly defined the "Architectural Taboos" in `.cursorrules` forbidding heavy databases and frontend frameworks to ensure zero-cost hosting. Ported architecture from undocumented knowledge to ADRs.
-  
+
 * **February 2026: Migrated Core Engine to `update_jobs.py` Monolith**
   * **Pivot**: Consolidated multiple scattered Python files into a single, high-performance scraper script to decrease contributor onboarding friction. [See ADR-0001: Zero-Cost Scraper Architecture](https://github.com/ambicuity/New-Grad-Jobs/blob/main/docs/adr/0001-python-scraper-architecture.md).
 

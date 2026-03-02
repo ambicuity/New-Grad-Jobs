@@ -39,4 +39,3 @@ dependencies:
   - changed-files:
     - any-glob-to-any-file: 'requirements.txt'
     - any-glob-to-any-file: 'pyproject.toml'
-
