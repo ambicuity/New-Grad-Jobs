@@ -16,7 +16,7 @@ Check out the [`CONTRIBUTING.md`](./CONTRIBUTING.md) for local setup, branching 
 
 **Community & Architecture**:
 - 🏛️ **Governance**: We operate under a BDFL model. See [`GOVERNANCE.md`](./GOVERNANCE.md).
-- 🧠 **Architecture**: Core design choices are documented in [`docs/adr/`](./docs/adr/).
+- 🧠 **Architecture**: The full system design is visualized in [`docs/architecture.md`](./docs/architecture.md), and core decisions are documented in [`docs/adr/`](./docs/adr/).
 - 📦 **DevContainers**: An out-of-the-box dev container is provided in `.devcontainer` for hermetic builds!
 
 **Quick Links:**
