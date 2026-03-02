@@ -108,3 +108,10 @@ git checkout README.md  # If testing locally
 - **Allow adequate timeout** - script makes 50+ API calls, needs 4-6 minutes minimum
 - **Configuration drives behavior** - modify config.yml not Python hardcoded values
 - **Trust these instructions** - repository thoroughly analyzed, search only if info incomplete
+
+## 🚫 Architectural Taboos (STRICT)
+To prevent "Idea Groundhog Day" and architectural drift, the following are strictly prohibited unless explicitly ordered by the user:
+1. **No External Databases**: Do NOT introduce PostgreSQL, MongoDB, Redis, or heavy ORMs. The project relies purely on static JSON and Markdown state.
+2. **No Frontend Frameworks**: Do NOT introduce React, Vue, Next.js, or Tailwind. The GitHub Pages site uses 100% Vanilla JS and CSS.
+3. **No External Orchestrators**: Do NOT introduce Airflow, Temporal, or external Cron services. We rely exclusively on GitHub Actions.
+4. **No Raw Requests**: All HTTP calls MUST use the custom `create_optimized_session()` from `scripts/update_jobs.py` to ensure correct retries and headers.

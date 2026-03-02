@@ -1,20 +1,23 @@
 # CODEOWNERS
 # Maintainers are automatically requested to review PRs touching these paths.
-# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Default owner for everything not matched below
-*                               @ambicuity
+*                               @ambicuity/core-maintainers
 
-# Core scraper — requires maintainer sign-off
-scripts/update_jobs.py          @ambicuity
-config.yml                      @ambicuity
+# Core scraper — requires core maintainer sign-off
+scripts/update_jobs.py          @ambicuity/core-maintainers
+config.yml                      @ambicuity/core-maintainers
 
-# GitHub Actions workflows — requires maintainer sign-off
-.github/workflows/              @ambicuity
+# GitHub Actions & Tooling workflows
+.devcontainer/                  @ambicuity/devops
+.github/workflows/              @ambicuity/devops
+Makefile                        @ambicuity/devops
 
-# GitHub Pages website
-docs/                           @ambicuity
+# Docs and GitHub Pages website
+docs/                           @ambicuity/tech-writers
+CONTRIBUTING.md                 @ambicuity/tech-writers
+README.md                       @ambicuity/tech-writers
 
-# Security-sensitive files — always route to maintainer
-SECURITY.md                     @ambicuity
-.github/CODEOWNERS              @ambicuity
+# Security-sensitive files
+SECURITY.md                     @ambicuity/security
+.github/CODEOWNERS              @ambicuity/security

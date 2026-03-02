@@ -22,59 +22,59 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 
 ---
 
-## 1. Ways to Contribute
+## 1. Ways to Contribute (The Sprints)
 
-| Type | How |
-|------|-----|
-| 🐛 Bug report | Open a [bug report issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) |
-| 🆕 Missing job | Open a [new role issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) |
-| ✏️ Stale/closed job | Open an [edit role issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) |
-| 💡 Feature idea | Open a [feature request issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) |
-| 🏗️ Large change | Open an [architecture proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) first |
-| 🤝 Code contribution | Fork → Branch → PR (see below) |
-| 🌐 Translation | See [Internationalization](#9-good-first-issues) |
+We organize work into clear tiers. If you are new here, look for issues tagged appropriately to get started:
+
+- [`good first issue`](https://github.com/ambicuity/New-Grad-Jobs/labels/good%20first%20issue) — Great for your first PR. Small, scoped, and well-defined tasks (e.g., adding a missing company endpoint).
+- [`help wanted`](https://github.com/ambicuity/New-Grad-Jobs/labels/help%20wanted) — Medium complexity tasks where maintainer support is available.
+- [`architecture proposal`](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=architecture_proposal.yml) — For proposing major structural changes. Discuss these before writing code!
+
+**Non-coding contributions:**
+- 🐛 **Bug report** or 🆕 **Missing job**: Use our [Issue Templates](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose).
+- 🌐 **Translation**: Add a translated README (e.g. `README.zh-CN.md`).
 
 ---
 
-## 2. Local Development Setup
+## 2. Local Development Setup (The Setup)
+
+We believe in a "single command setup". You do not need to decipher a 10-page guide to run this project.
 
 ### Prerequisites
 
-- Python **3.11+** (check: `python --version`)
+- Python **3.11+**
 - Git
+- `make`
 
-### Step-by-step
+### The Single Command
 
 ```bash
-# 1. Fork the repo on GitHub, then clone your fork
+# 1. Fork the repo, clone it, and enter the directory
 git clone https://github.com/<your-username>/New-Grad-Jobs.git
 cd New-Grad-Jobs
 
-# 2. Create and activate a virtual environment (strongly recommended)
-python -m venv .venv
-source .venv/bin/activate          # macOS/Linux
-# .venv\Scripts\activate           # Windows
+# 2. Run the automated setup
+make setup
+```
 
-# 3. Install all dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+The `make setup` command automatically:
+1. Creates a Python virtual environment (`.venv`).
+2. Installs all project and testing dependencies.
+3. Configures `pre-commit` hooks to run on every commit.
 
-# 4. (Optional) Install Playwright browsers for any browser-based scraping
-playwright install chromium
+*(Alternatively, if you use DevContainers, just open this repository in VS Code and click "Reopen in Container". Everything is pre-configured!)*
 
-# 5. Verify your environment is clean — run the test suite
-python test_config.py
+### Verification
 
-# 6. Run a full scraper cycle locally to validate your setup
-#    ⚠️ This takes 4–6 minutes and makes 50+ external API calls
-cd scripts
-python update_jobs.py
+```bash
+# Activate the environment
+source .venv/bin/activate
 
-# 7. Validate syntax only (fast, no network calls)
-python -m py_compile update_jobs.py
+# Run the tests to ensure everything is green
+make test
 
-# 8. Revert the auto-generated README after local testing
-git checkout README.md
+# To run the scraper locally (takes 4-6 minutes)
+make run
 ```
 
 ### Key local files
@@ -121,7 +121,23 @@ New-Grad-Jobs/
 
 ---
 
-## 4. Branching & Commit Standards
+## 4. Branching & Commit Standards (The Workflow)
+
+We use **GitHub Flow** (Trunk-based development). This means:
+1. `main` is always deployable and green.
+2. All feature work happens in short-lived branches created from `main`.
+
+### Git Workflow: Rebase > Merge
+
+To keep our Git history clean and linear, we prefer **rebasing** over merge commits when syncing your feature branch with `main`.
+
+```bash
+# When main has new commits, update your branch:
+git fetch origin
+git rebase origin/main
+```
+
+When your PR is merged, it will be "Squash and Merged" to maintain a single atomic commit per feature.
 
 ### Branch naming
 
@@ -132,7 +148,6 @@ feat/add-workday-scraper
 fix/issue-123-greenhouse-timeout
 docs/update-contributing-guide
 chore/pin-dependency-versions
-refactor/dedup-logic-cleanup
 ```
 
 ### Commit messages (Conventional Commits)
@@ -147,18 +162,9 @@ Types:
   fix      – bug fix
   docs     – documentation only
   chore    – maintenance (deps, CI config, etc.)
-  refactor – code restructuring with no behavior change
-  test     – adding or updating tests
-  perf     – performance improvement
-
-Examples:
-  feat(scraper): add Workday API support for 15 companies
-  fix(filter): correctly handle missing date fields from Lever
-  docs(contributing): add setup steps for Windows
-  chore(deps): pin requests to 2.31.0
 ```
 
-This format enables automated changelog generation via [Release Please](https://github.com/googleapis/release-please).
+This format enables our **Semantic Release** pipeline to automatically generate changelogs and version bumps.
 
 ---
 
