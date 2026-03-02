@@ -1,0 +1,91 @@
+name: Issue Ops - Auto Assigner
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  auto-assign:
+    name: Assign Issue and Welcome
+    runs-on: ubuntu-latest
+    # Barrier: Only run if it's an issue, NOT a Pull Request
+    if: ${{ !github.event.issue.pull_request }}
+    steps:
+      - name: Parse Comment and Execute
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commentBody = context.payload.comment.body.toLowerCase();
+            const triggerRegex = /(^\.take|^\/assign|i would like to work on this)/i;
+
+            // 1. Check if the comment contains our trigger phrases
+            if (!triggerRegex.test(commentBody)) {
+              console.log("No trigger phrase detected. Exiting.");
+              return;
+            }
+
+            const issueNumber = context.issue.number;
+            const user = context.payload.comment.user.login;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // 2. Fetch current issue data to check existing assignees
+            const { data: issue } = await github.rest.issues.get({
+              owner,
+              repo,
+              issue_number: issueNumber
+            });
+
+            // 3. BARRIER: Check if someone is already assigned
+            if (issue.assignees && issue.assignees.length > 0) {
+              const assignedToUser = issue.assignees.some(assignee => assignee.login === user);
+              
+              if (assignedToUser) {
+                 console.log("User is already assigned.");
+                 return; 
+              }
+
+              // Apologize and reject the new assignment request
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: `Hey @${user}, thanks for offering to help! 🙏 However, this issue is already assigned. Feel free to look for other unassigned issues!`
+              });
+              return;
+            }
+
+            // 4. ACTION: Assign the user
+            await github.rest.issues.addAssignees({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              assignees: [user]
+            });
+
+            // 5. ACTION: Add the label
+            // Note: The 'status: in-progress' label must exist in the repository or this will create it implicitly/fail depending on repo settings, usually it creates it.
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              labels: ['status: in-progress']
+            });
+
+            // 6. ACTION: Post the Welcome / Rules comment
+            const welcomeMsg = `👋 Welcome @${user}! You've been assigned to this issue.\n\n` +
+              `### Next Steps:\n` +
+              `1. 📖 Please review our [CONTRIBUTING.md](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md) before starting.\n` +
+              `2. 💻 Set up your local environment and branch.\n` +
+              `3. ⏳ **The Barrier Rule:** We ask that you open a PR within 7 days. If you need more time, just leave a comment. If we don't hear from you, we may unassign you so others can help.\n\n` +
+              `*To unassign yourself at any time, just leave a comment saying \`/unassign\`.* Happy coding! 🚀`;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              body: welcomeMsg
+            });
