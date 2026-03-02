@@ -1,0 +1,25 @@
+name: All Contributors — Auto-Credit
+
+on:
+  # Respond to maintainer's "@all-contributors add" comments
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  add-contributor:
+    name: Add Contributor
+    runs-on: ubuntu-latest
+    # Only trigger on the bot command pattern
+    if: >
+      contains(github.event.comment.body, '@all-contributors') &&
+      contains(github.event.comment.body, 'add')
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: all-contributors/all-contributors-bot@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

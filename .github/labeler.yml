@@ -12,6 +12,10 @@ enhancement:
   - changed-files:
     - any-glob-to-any-file: 'scripts/**'
     - any-glob-to-any-file: 'generate_companies.py'
+  - head-branch: ['^feat/', 'feat/']
+
+bug:
+  - head-branch: ['^fix/', 'fix/']
 
 config:
   - changed-files:
@@ -21,3 +25,18 @@ tests:
   - changed-files:
     - any-glob-to-any-file: 'test_*.py'
     - any-glob-to-any-file: 'tests/**'
+
+chore:
+  - head-branch: ['^chore/', 'chore/']
+
+frontend:
+  - changed-files:
+    - any-glob-to-any-file: 'docs/*.js'
+    - any-glob-to-any-file: 'docs/*.css'
+    - any-glob-to-any-file: 'docs/*.html'
+
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file: 'requirements.txt'
+    - any-glob-to-any-file: 'pyproject.toml'
+

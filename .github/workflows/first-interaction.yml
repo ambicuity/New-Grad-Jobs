@@ -27,12 +27,14 @@ jobs:
 
             Every report and contribution helps thousands of new graduates find their first tech job. We appreciate you! 🚀
           pr-message: |
-            👋 Thank you for your first pull request to **New Grad Jobs**!
+            👋 Welcome to the project, and thank you so much for opening this PR!
+
+            Our CI bots are currently running some automated checks on your code. In the meantime, if you find this project useful or enjoyed contributing, we'd love it if you gave the repo a ⭐️! It helps other developers find our work.
+
+            I will be with you shortly to review your changes.
 
             Before your PR is reviewed, please confirm:
             - [ ] All checklist items in the PR template are addressed
             - [ ] `python test_config.py` passes locally
             - [ ] If you modified `scripts/`, run `python -m py_compile scripts/update_jobs.py`
             - [ ] You have **not** manually edited `README.md` (it's auto-generated)
-
-            A maintainer will review your changes soon. Thank you for contributing! 🎉
