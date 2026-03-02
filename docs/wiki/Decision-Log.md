@@ -7,6 +7,10 @@ This is a chronological ledger of major technical pivots and architectural decis
 
 ### Historical Ledger
 
+* **March 2026: Triple-Layer AI Code Review Strategy**
+  * **Context**: Solo-maintained repo receiving increasing PRs from new contributors. Manual review of every PR is unsustainable.
+  * **Pivot**: Deployed GitHub Copilot (speed), Gemini Code Assist (depth), and CodeRabbit (engineering standards) as a layered auto-review stack. Each AI catches a different class of bugs; the maintainer only reviews what survives all three. [See AI-Review-Tooling](AI-Review-Tooling).
+
 * **March 2026: The AI-Ready Layer & Taboos**
   * **Context**: Repetitive pull requests attempting to "modernize" the repo with React and PostgreSQL.
   * **Pivot**: Explicitly defined the "Architectural Taboos" in `.cursorrules` forbidding heavy databases and frontend frameworks to ensure zero-cost hosting. Ported architecture from undocumented knowledge to ADRs.
