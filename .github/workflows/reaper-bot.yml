@@ -27,8 +27,8 @@ jobs:
             const PING_AFTER_DAYS = 2;
             const UNASSIGN_AFTER_DAYS = 7;
 
-            // Fetch all open, assigned issues
-            const { data: issues } = await github.rest.issues.listForRepo({
+            // Fetch all open issues across pages
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner, repo,
               state: 'open',
               per_page: 100
@@ -39,11 +39,15 @@ jobs:
               if (issue.pull_request) continue;
               // Skip unassigned
               if (!issue.assignees || issue.assignees.length === 0) continue;
+              // Skip issues that are not explicitly marked as in progress
+              const hasInProgressLabel = issue.labels.some(l => l.name === 'status: in-progress');
+              if (!hasInProgressLabel) continue;
 
               const updatedAt = new Date(issue.updated_at).getTime();
               const daysInactive = (now - updatedAt) / msPerDay;
               const hasAwaitingLabel = issue.labels.some(l => l.name === 'awaiting-response');
               const assignees = issue.assignees.map(a => a.login);
+              const assigneeMentions = assignees.map(a => `@${a}`).join(' ');
 
               // ── Phase 2: Unassign if awaiting-response for 7+ days ──
               // Check this FIRST to avoid re-pinging on the same run
@@ -52,7 +56,7 @@ jobs:
 
                 await github.rest.issues.createComment({
                   owner, repo, issue_number: issue.number,
-                  body: `It looks like you've been busy, @${assignees[0]}! To keep the project moving, I'm going to remove your assignment for now so someone else can jump in.\n\nFeel free to reassign yourself or grab a new issue when you have more time. Thanks for your interest! 🚀`
+                  body: `It looks like you've been busy, ${assigneeMentions}! To keep the project moving, I'm going to remove your assignment for now so someone else can jump in.\n\nFeel free to reassign yourself or grab a new issue when you have more time. Thanks for your interest! 🚀`
                 });
 
                 await github.rest.issues.removeAssignees({
@@ -78,7 +82,7 @@ jobs:
 
                 await github.rest.issues.createComment({
                   owner, repo, issue_number: issue.number,
-                  body: `Hi @${assignees[0]}! 👋 Just checking in. Are you still working on this?\n\n` +
+                  body: `Hi ${assigneeMentions}! 👋 Just checking in. Are you still working on this?\n\n` +
                     `* Reply with **\`/working\`** if you are still on it!\n` +
                     `* Reply with **\`/need help\`** if you are stuck.\n\n` +
                     `If we don't hear back in 7 days, we'll gently unassign this so someone else can pick it up. No pressure!`

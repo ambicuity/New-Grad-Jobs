@@ -13,10 +13,13 @@ jobs:
   add-contributor:
     name: Add Contributor
     runs-on: ubuntu-latest
-    # Only trigger on the bot command pattern
+    # Only trigger on the bot command pattern from trusted actors
     if: >
       contains(github.event.comment.body, '@all-contributors') &&
-      contains(github.event.comment.body, 'add')
+      contains(github.event.comment.body, 'add') &&
+      (github.event.comment.author_association == 'OWNER' ||
+       github.event.comment.author_association == 'MEMBER' ||
+       github.event.comment.author_association == 'COLLABORATOR')
     steps:
       - uses: actions/checkout@v4
 

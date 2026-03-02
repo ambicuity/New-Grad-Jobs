@@ -31,9 +31,9 @@ chore:
 
 frontend:
   - changed-files:
-    - any-glob-to-any-file: 'docs/*.js'
-    - any-glob-to-any-file: 'docs/*.css'
-    - any-glob-to-any-file: 'docs/*.html'
+    - any-glob-to-any-file: 'docs/**/*.js'
+    - any-glob-to-any-file: 'docs/**/*.css'
+    - any-glob-to-any-file: 'docs/**/*.html'
 
 dependencies:
   - changed-files:
