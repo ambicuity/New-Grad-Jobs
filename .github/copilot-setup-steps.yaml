@@ -1,0 +1,27 @@
+# Copilot Coding Agent Setup
+
+# This file provisions the isolated Copilot coding agent environment.
+# It is equivalent to a "before all" block — run once before the agent starts working.
+# Dependencies installed here are available across all agent tasks in this repo.
+
+steps:
+  - name: Set up Python 3.11
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.11'
+
+  - name: Install project dependencies
+    run: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+
+  - name: Install dev dependencies
+    run: |
+      pip install pytest pytest-cov flake8 isort pre-commit
+
+  - name: Verify environment
+    run: |
+      python --version
+      pip list
+      python -m py_compile scripts/update_jobs.py
+      echo "✅ Environment ready for Copilot agent"

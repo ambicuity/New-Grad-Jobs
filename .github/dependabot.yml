@@ -1,0 +1,32 @@
+version: 2
+
+updates:
+  # GitHub Actions ecosystem
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    commit-message:
+      prefix: "chore(ci)"
+    labels:
+      - "ci-cd"
+      - "automated pr"
+    open-pull-requests-limit: 5
+
+  # Python pip ecosystem
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "dependencies"
+      - "automated pr"
+    open-pull-requests-limit: 5
+    # Ignore playwright minor/patch updates — frequent breaking changes
+    ignore:
+      - dependency-name: "playwright"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]

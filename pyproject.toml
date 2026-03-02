@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "new-grad-jobs"
+version = "1.0.0"
+description = "Automated new grad job aggregator scraping Greenhouse, Lever, Google Careers, and more."
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "PyYAML>=6.0.1",
+    "python-dateutil>=2.8.2",
+    "python-jobspy>=1.1.16",
+    "playwright>=1.41.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "flake8>=7.0",
+    "isort>=5.13",
+    "pre-commit>=3.7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=scripts --cov-report=term-missing --cov-report=xml"
+python_files = "test_*.py"
+python_functions = "test_*"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["scripts"]
+
+[tool.flake8]
+max-line-length = 120
+select = ["E9", "F63", "F7", "F82"]
+per-file-ignores = [
+    "test_*.py:F401",
+]
+
+[tool.coverage.run]
+source = ["scripts"]
+omit = ["tests/*", ".venv/*"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 0

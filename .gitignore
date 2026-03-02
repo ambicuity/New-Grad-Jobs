@@ -1,27 +1,93 @@
+# ============================================================
 # Python
+# ============================================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
 .Python
-env/
+.installed.cfg
+pip-selfcheck.json
+
+# Virtual environments
+.venv/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
+.conda/
 
-# IDEs
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+nosetests.xml
+
+# ============================================================
+# IDEs & Editors
+# ============================================================
 .vscode/
 .idea/
 *.swp
 *.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.c9/
 
-# OS
+# ============================================================
+# OS Artifacts
+# ============================================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# Logs
+# ============================================================
+# Logs & Temp Files
+# ============================================================
 *.log
+*.tmp
+*.temp
+*.bak
 
-# Test files
+# ============================================================
+# Project-specific: Never accidentally commit these
+# ============================================================
+# Auto-generated every 5 minutes — do not edit manually
+# README.md  <-- intentionally NOT ignored (tracked by git)
+
+# Local test scripts
 scripts/test_with_mock_data.py
+scripts/local_test_*.py
+
+# Playwright browser binaries (large)
+.playwright/
+
+# Local environment variable files
+.env
+.env.local
+.env.*.local

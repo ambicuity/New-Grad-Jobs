@@ -1,0 +1,11 @@
+{
+    ".": {
+        "release-type": "python",
+        "package-name": "new-grad-jobs",
+        "changelog-path": "CHANGELOG.md",
+        "versioning": "default",
+        "bump-minor-pre-major": false,
+        "bump-patch-for-minor-pre-major": false,
+        "extra-files": []
+    }
+}

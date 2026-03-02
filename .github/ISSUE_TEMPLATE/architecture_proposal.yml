@@ -1,0 +1,80 @@
+name: "🏗️ Architecture / Epic Proposal"
+description: Propose a major structural change, new data source, or large feature epic
+title: "[ARCH] "
+labels: ["architecture", "discussion", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for proposals that require significant design discussion before any code is written — e.g. adding a new scraping backend, redesigning the data pipeline, migrating the frontend to a framework, or overhauling filtering logic.
+
+        **Please open this issue and get alignment from a maintainer _before_ writing code.** This prevents wasted effort.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "1. Summary"
+      description: A concise (1–3 sentence) explanation of the proposed change
+      placeholder: e.g. "Add a Workday API scraper backend to cover 50+ enterprise companies that use Workday as their ATS."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "2. Motivation & Expected Outcome"
+      description: Why is this change needed? What problem does it solve? What is the measurable win?
+      placeholder: |
+        - Current gap: X companies use Workday but we have zero coverage
+        - Expected outcome: +200 job listings per update cycle
+        - User impact: New grads at large enterprises are currently invisible from the board
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: "3. Detailed Design"
+      description: |
+        Explain the design in enough detail that a contributor familiar with the codebase could implement it.
+        Include: data flow changes, new functions/modules, API schemas, config changes, performance implications.
+      placeholder: |
+        Proposed function signature:
+        `fetch_workday_jobs(companies: List[Dict], session: Session) -> List[Dict]`
+
+        API endpoint pattern: `POST https://<tenant>.myworkdayjobs.com/wday/cxs/<tenant>/<site>/jobs`
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "4. Drawbacks & Risks"
+      description: Why should we NOT do this? What are the trade-offs, maintenance burden, or risk factors?
+      placeholder: |
+        - Workday aggressively rate-limits at ~20 req/min; need throttling logic
+        - Adds complexity to the parallel fetch phase
+        - Workday HTML structure changes frequently — brittle if we use page scraping
+    validations:
+      required: true
+
+  - type: textarea
+    id: unresolved
+    attributes:
+      label: "5. Unresolved Questions"
+      description: What do we still need to research or decide before implementation?
+      placeholder: |
+        - Should tenant slugs live in config.yml or be auto-detected?
+        - Do we use POST (JSON API) or GET (HTML scraping)?
+        - What's our fallback if the API returns 403?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission checklist
+      options:
+        - label: I have searched existing issues and this proposal is not already filed
+          required: true
+        - label: I understand that major proposals require maintainer approval before coding begins
+          required: true

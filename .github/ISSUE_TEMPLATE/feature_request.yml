@@ -1,0 +1,64 @@
+name: "✨ Feature Request"
+description: Suggest an improvement or new capability for the project
+title: "[FEAT] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! Before submitting, please:
+        - Search [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) to avoid duplicates
+        - For **major structural changes**, use the Architecture Proposal template instead
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this affect?
+      description: Select the component you'd like improved
+      options:
+        - 🤖 Job scraper (Python / config.yml)
+        - 🌐 Website / frontend (docs/)
+        - ⚙️ GitHub Actions / CI pipeline
+        - 📊 Data quality / filtering
+        - 🗂️ Documentation
+        - 🏷️ Company classification / categorization
+        - 🔍 Search & filtering on the job board
+        - 🌍 New geography / country support
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the pain point or gap this feature would address
+      placeholder: |
+        e.g. "I often waste time checking closed jobs because the scraper doesn't..."
+        e.g. "The website doesn't allow me to filter by..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the change you'd like to see, in as much detail as you can
+      placeholder: |
+        e.g. "Add a `closed_at` field that is detected by..."
+        e.g. "Implement a date-range filter in app.js that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you think about? Why did you prefer your proposed solution?
+      placeholder: e.g. "I considered using a third-party widget but it would add a dependency to the frontend..."
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, references, links to similar implementations, or anything else helpful

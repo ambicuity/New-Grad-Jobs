@@ -1,0 +1,38 @@
+name: First Interaction Welcome
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  first-interaction:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Welcome, and thank you for opening your first issue on **New Grad Jobs**!
+
+            A maintainer will review this shortly. In the meantime:
+            - Check the [CONTRIBUTING guide](../blob/main/CONTRIBUTING.md) for setup instructions
+            - Browse [existing issues](../../issues) to avoid duplicates
+            - If this is a job listing request, use the [New Role template](../../issues/new?template=new_role.yml)
+
+            Every report and contribution helps thousands of new graduates find their first tech job. We appreciate you! 🚀
+          pr-message: |
+            👋 Thank you for your first pull request to **New Grad Jobs**!
+
+            Before your PR is reviewed, please confirm:
+            - [ ] All checklist items in the PR template are addressed
+            - [ ] `python test_config.py` passes locally
+            - [ ] If you modified `scripts/`, run `python -m py_compile scripts/update_jobs.py`
+            - [ ] You have **not** manually edited `README.md` (it's auto-generated)
+
+            A maintainer will review your changes soon. Thank you for contributing! 🎉

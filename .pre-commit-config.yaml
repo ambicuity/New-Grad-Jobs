@@ -1,0 +1,39 @@
+repos:
+  # --- Python Formatting & Linting ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: ['--unsafe']   # Allow custom YAML tags in config.yml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=2048']  # Block files larger than 2MB (jobs.json is auto-generated)
+        exclude: '^(jobs\.json|docs/jobs\.json)$'
+      - id: detect-private-key
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  # --- Python Syntax & Import Sorting ---
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: ['--select=E9,F63,F7,F82', '--max-line-length=120']
+        files: ^scripts/.*\.py$
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ['--profile=black', '--line-length=120']
+        files: ^scripts/.*\.py$
+
+  # --- Secret Detection ---
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks
+        name: Detect secrets (gitleaks)
