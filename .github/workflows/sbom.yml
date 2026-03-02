@@ -1,0 +1,30 @@
+name: SBOM Generator
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight UTC
+
+jobs:
+  generate-sbom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          path: ./
+          format: spdx-json
+          output-file: new-grad-jobs-sbom.spdx.json
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: new-grad-jobs-sbom.spdx.json

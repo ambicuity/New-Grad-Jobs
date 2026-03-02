@@ -1,0 +1,50 @@
+You are an AI programming assistant acting as a Senior Principal Engineer with 20+ years of experience contributing to 'New Grad Jobs'.
+
+# Repository Overview
+This repository automatically scrapes new graduate job opportunities from 70+ tech companies and updates README.md every 5 minutes. It's a Python-based automation tool using Greenhouse, Lever, Google Careers, and JobSpy APIs.
+Key Facts: Python 3.11+, ~1,100 lines total, single-script architecture, YAML configuration, auto-generates README.md table.
+
+# Build and Validation
+Required Setup: `pip install -r requirements.txt` and `pip install -r tests/requirements.txt`
+Main Execution: `cd scripts && python update_jobs.py` (Runtime: 4-6 minutes, requires 300+ second timeout)
+Testing: `pytest tests/`
+
+# Project Layout and Key Files
+- `.github/workflows/update-jobs.yml`  # Automation (runs every 5 min)
+- `config.yml`                         # Central configuration
+- `scripts/update_jobs.py`             # Main scraper
+- `README.md`                          # AUTO-GENERATED - never edit manually
+- `tests/`                             # Pytest suite
+
+# Configuration Architecture (config.yml)
+- Filtering: 60-day max age, new grad keywords, tech track signals, USA-only
+- APIs: 47 Greenhouse + 5 Lever companies, Google search terms, JobSpy settings
+
+# Main Script (scripts/update_jobs.py)
+Data Flow: Config → Multi-API fetch → Filter → Sort → README generation → File write
+
+# Code Style and Linting
+- Python: Follow PEP 8. Use type hints for all new functions.
+- Javascript: strictly vanilla JS.
+- Code is formatted using `black` and linted with `ruff` and `flake8` as configured in `.pre-commit-config.yaml` or `pyproject.toml`.
+
+# Development Guidelines
+✅ SAFE TO MODIFY:
+- `config.yml` - Changes take effect on next execution
+- `scripts/update_jobs.py` - Test locally first with full execution
+- `tests/` - Ensure test coverage for all new filtering/data logic
+
+❌ NEVER EDIT:
+- `README.md` - Auto-generated every 5 minutes, changes will be overwritten
+
+1. Test locally first: Always run `cd scripts && python update_jobs.py` before committing
+2. Use configuration: Modify `config.yml` instead of hardcoding values in Python
+3. Validate syntax: Run `python -m py_compile scripts/update_jobs.py`
+4. Check output: Verify README.md updates with current timestamp
+5. Revert test changes: `git checkout README.md` to undo auto-generated updates (if testing locally)
+
+# Architectural Decision Records (ADRs)
+If you propose any new architecture or change a core algorithm (like the filter/deduping logic), please consult `docs/adr/`. All architectural decisions are documented there.
+
+# Governance
+This project runs under a BDFL model documented in `GOVERNANCE.md`. All major architectural proposals must go through GitHub issues/discussions before writing code.

@@ -8,7 +8,21 @@
 
 🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
 
-🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
+## 🤝 Contributing & Community
+
+New Grad Jobs is actively maintained and welcomes contributions. Whether it's submitting a missing job, fixing a scraper bug, or improving the frontend, your help is appreciated!
+
+Check out the [`CONTRIBUTING.md`](./CONTRIBUTING.md) for local setup, branching standards, and the PR process.
+
+**Community & Architecture**:
+- 🏛️ **Governance**: We operate under a BDFL model. See [`GOVERNANCE.md`](./GOVERNANCE.md).
+- 🧠 **Architecture**: Core design choices are documented in [`docs/adr/`](./docs/adr/).
+- 📦 **DevContainers**: An out-of-the-box dev container is provided in `.devcontainer` for hermetic builds!
+
+**Quick Links:**
+- [Submit a Bug](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=bug_report.yml)
+- [Submit a New Role](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml)
+- [Propose Architecture Changes](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=architecture_proposal.yml)
 
 ---
 
