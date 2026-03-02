@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs
+from update_jobs import filter_jobs, deduplicate_jobs
 
 
 def _make_job(
@@ -45,9 +45,10 @@ def _default_config():
     """Return a minimal config matching the production structure."""
     return {
         "filtering": {
-            "max_days_old": 7,
-            "title_keywords": ["new grad", "entry level", "junior", "associate", "0-1 years"],
-            "exclude_keywords": ["senior", "staff", "principal", "director", "manager", "lead", "vp", "intern"],
+            "max_age_days": 7,
+            "new_grad_signals": ["new grad", "entry level", "junior", "associate", "0-1 years"],
+            "exclusion_signals": ["senior", "staff", "principal", "director", "manager", "lead", "vp", "intern"],
+            "track_signals": ["software", "engineer", "developer"],
             "locations": ["usa", "us", "united states", "remote"],
             "min_title_length": 5,
         }
@@ -116,8 +117,8 @@ class TestFilterJobsDeduplication:
 
     def test_duplicate_urls_are_removed(self):
         url = "https://example.com/job/123"
-        jobs = [_make_job(url=url), _make_job(title="New Grad SWE", url=url)]
-        result = filter_jobs(jobs, _default_config())
+        jobs = [_make_job(url=url), _make_job(url=url)]
+        result = deduplicate_jobs(jobs)
         assert len(result) == 1
 
     def test_different_urls_both_kept(self):
@@ -125,9 +126,9 @@ class TestFilterJobsDeduplication:
             _make_job(url="https://example.com/job/1"),
             _make_job(url="https://example.com/job/2"),
         ]
-        result = filter_jobs(jobs, _default_config())
+        result = deduplicate_jobs(jobs)
         assert len(result) == 2
 
     def test_empty_input_returns_empty(self):
-        result = filter_jobs([], _default_config())
+        result = deduplicate_jobs([])
         assert result == []

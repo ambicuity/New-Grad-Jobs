@@ -1164,7 +1164,7 @@ def is_valid_location(location: str) -> bool:
 def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Filter jobs based on configuration criteria"""
     filtered_jobs = []
-    filters = config['filters']
+    filters = config.get('filtering', config.get('filters', {}))
 
     # Get exclusion signals (default to common senior keywords if not in config)
     exclusion_signals = filters.get('exclusion_signals', [
