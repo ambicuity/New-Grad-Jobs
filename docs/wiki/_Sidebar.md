@@ -1,0 +1,10 @@
+- [Home](Home)
+- [Project Roadmap](Roadmap)
+- [System Architecture](../architecture.md)
+- **Guidelines**
+  - [Governance](../../GOVERNANCE.md)
+  - [Contributing](../../CONTRIBUTING.md)
+- **Architecture Decisions**
+  - [0001: Zero-Cost Scraper Architecture](../adr/0001-python-scraper-architecture.md)
+  - [0003: Filtering Algorithm](../adr/0003-filtering-algorithm.md)
+  - [0004: Deduplication Strategy](../adr/0004-deduplication-strategy.md)
