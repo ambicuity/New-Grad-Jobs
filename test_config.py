@@ -1,30 +1,51 @@
 #!/usr/bin/env python3
-import yaml
 import sys
 
-try:
-    with open('config.yml', 'r') as f:
-        config = yaml.safe_load(f)
+import yaml
 
-    gh = len(config['apis']['greenhouse']['companies'])
-    lever = len(config['apis']['lever']['companies'])
-    workday = len(config['apis'].get('workday', {}).get('companies', []))
 
-    print(f"✅ YAML loaded successfully!")
-    print(f"Greenhouse: {gh} companies")
-    print(f"Lever: {lever} companies")
-    print(f"Workday: {workday} companies")
-    print(f"TOTAL: {gh + lever + workday} companies")
+def validate_config(config_path: str = "config.yml") -> int:
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            config = yaml.safe_load(f)
 
-    if gh + lever + workday < 10000:
-        print(f"\n⚠️  WARNING: Expected ~10,000 companies but only loaded {gh + lever + workday}!")
-        sys.exit(1)
-    else:
-        print(f"\n✅ All companies loaded correctly!")
-        sys.exit(0)
+        apis = config["apis"]
+        gh = len(apis["greenhouse"]["companies"])
+        lever = len(apis["lever"]["companies"])
+        workday = len(apis.get("workday", {}).get("companies", []))
 
-except Exception as e:
-    print(f"❌ Error: {e}")
-    import traceback
-    traceback.print_exc()
-    sys.exit(1)
+        print("✅ YAML loaded successfully!")
+        print(f"Greenhouse: {gh} companies")
+        print(f"Lever: {lever} companies")
+        print(f"Workday: {workday} companies")
+
+        total = gh + lever + workday
+        print(f"TOTAL: {total} companies")
+
+        if total < 10000:
+            print(f"\n⚠️  WARNING: Expected ~10,000 companies but only loaded {total}!")
+            return 1
+
+        print("\n✅ All companies loaded correctly!")
+        return 0
+
+    except FileNotFoundError:
+        print(f"❌ Config file not found: {config_path}")
+        return 1
+    except yaml.YAMLError as err:
+        print(f"❌ Invalid YAML in {config_path}: {err}")
+        return 1
+    except KeyError as err:
+        print(f"❌ Missing required config key: {err}")
+        return 1
+    except TypeError as err:
+        print(f"❌ Invalid config structure in {config_path}: {err}")
+        return 1
+
+
+def main() -> int:
+    return validate_config("config.yml")
+
+
+if __name__ == "__main__":
+    sys.exit(main())
