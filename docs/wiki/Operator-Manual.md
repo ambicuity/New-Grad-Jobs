@@ -39,11 +39,11 @@ As a solo maintainer, your time is precious. Do not become a slave to your own C
 
 Here is exactly what you should care about:
 
-1. **The Gatekeeper (`CI — Lint & Validate`)**: 
+1. **The Gatekeeper (`CI — Lint & Validate`)**:
    * **Why it matters**: This tests your actual Python scraper structure. If this fails on a PR, **do not merge**. It means `update_jobs.py` has a syntax error or `config.yml` is corrupted, which would crash your daily cron job.
-2. **Dependabot CI (`dependabot-auto-merge`)**: 
+2. **Dependabot CI (`dependabot-auto-merge`)**:
    * **Why it matters**: Since we configured auto-merge for minor/patch updates, you only need to look at Dependabot PRs if the Gatekeeper tests fail. If they pass, the bot handles everything.
-3. **Pre-commit (`Code Hygiene`)**: 
+3. **Pre-commit (`Code Hygiene`)**:
    * **Why it matters**: It automatically catches messy formatting (like trailing spaces or missing newlines) so you don't have to leave nitpicky review comments. If it fails, just ask the contributor to run `pre-commit run --all-files` locally before you merge.
 4. **CodeQL / Trivy (`Security Scans`)**:
    * **Why it matters**: They check for vulnerable dependencies or leaked secrets. GitHub will send you an email alert if a critical vulnerability is found. You only need to look at these if you get an alert.

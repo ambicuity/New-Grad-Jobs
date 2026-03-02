@@ -13,5 +13,6 @@
 
 ### ⚖️ Project Governance
 - [Project Roadmap](Roadmap)
+- [Repository Ruleset](Repository-Ruleset) (Branch Protection & Policies)
 - [Governance Model](https://github.com/ambicuity/New-Grad-Jobs/blob/main/GOVERNANCE.md)
 - [Succession Plan](Succession-Plan) (The "ICE" Protocol)
