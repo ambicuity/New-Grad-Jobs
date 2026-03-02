@@ -1,0 +1,68 @@
+name: PR Size Labeler
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  size-label:
+    name: Label PR by Size
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const prNumber = context.payload.pull_request.number;
+
+            // Fetch PR diff stats
+            const { data: pr } = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: prNumber
+            });
+
+            const linesChanged = (pr.additions || 0) + (pr.deletions || 0);
+
+            // Size thresholds (tuned for a config-heavy repo)
+            const sizeMap = [
+              { max: 10,   label: 'size/XS' },
+              { max: 50,   label: 'size/S' },
+              { max: 200,  label: 'size/M' },
+              { max: 500,  label: 'size/L' },
+              { max: Infinity, label: 'size/XL' }
+            ];
+
+            const sizeLabel = sizeMap.find(s => linesChanged <= s.max).label;
+            const allSizeLabels = sizeMap.map(s => s.label);
+
+            // Remove any existing size labels first
+            const { data: existingLabels } = await github.rest.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number: prNumber
+            });
+
+            for (const label of existingLabels) {
+              if (allSizeLabels.includes(label.name) && label.name !== sizeLabel) {
+                await github.rest.issues.removeLabel({
+                  owner,
+                  repo,
+                  issue_number: prNumber,
+                  name: label.name
+                });
+              }
+            }
+
+            // Apply the correct size label
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: prNumber,
+              labels: [sizeLabel]
+            });
+
+            console.log(`PR #${prNumber}: ${linesChanged} lines changed → ${sizeLabel}`);

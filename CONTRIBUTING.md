@@ -19,6 +19,7 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 7. [Adding a Company or Job](#7-adding-a-company-or-job)
 8. [Code Style](#8-code-style)
 9. [Good First Issues](#9-good-first-issues)
+10. [Bot Commands (Slash Commands)](#10-bot-commands-slash-commands)
 
 ---
 
@@ -250,4 +251,32 @@ New here? Look for issues tagged:
 
 ---
 
+## 10. Bot Commands (Slash Commands)
+
+Our repository uses bots to automate the contributor workflow. You can interact with them by posting a comment on any issue:
+
+| Command | What it does |
+|---------|-------------|
+| `/assign` or `.take` | Assigns the issue to you and marks it as in-progress |
+| `/working` | Tells the bot you're still actively working (resets inactivity timer) |
+| `/need help` | Pings the maintainer and adds a `help-needed` label |
+| `/unassign` | Removes yourself from the issue so someone else can pick it up |
+
+### How the lifecycle works
+
+1. **Claim an issue** → Comment `/assign` on any unassigned issue.
+2. **Work on it** → You have 7 days to open a PR. If you need more time, just comment `/working`.
+3. **Stuck?** → Comment `/need help` and a maintainer will assist you.
+4. **Life happens?** → Comment `/unassign` to gracefully step away. No hard feelings.
+5. **Went silent?** → After 2 days of inactivity, the bot will check in. After 7 days with no response, it will gently unassign you so someone else can help.
+
+---
+
+## 🏆 Contributors
+
+Every contribution is recognized! When your PR is merged, a maintainer will add you to our [Contributors Hall of Fame](./CONTRIBUTORS.md).
+
+---
+
 Thank you for helping new graduates land their first job. Every contribution matters. 🚀
+

@@ -1,0 +1,94 @@
+name: Contributor Slash Commands
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  handle-commands:
+    name: Process Slash Commands
+    runs-on: ubuntu-latest
+    # Only run on issue comments (not PR comments) starting with a slash
+    if: >
+      !github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/')
+    steps:
+      - name: Process Commands
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const comment = context.payload.comment.body.trim().toLowerCase();
+            const author = context.payload.comment.user.login;
+            const issueNumber = context.payload.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // ── /working ──
+            if (comment.startsWith('/working')) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issueNumber,
+                body: `Awesome, @${author}! Take your time. I've marked this as active and removed any inactivity warnings. 👍`
+              });
+
+              // Remove the warning label if it exists
+              try {
+                await github.rest.issues.removeLabel({
+                  owner, repo, issue_number: issueNumber,
+                  name: 'awaiting-response'
+                });
+              } catch (e) { /* Label wasn't there — safe to ignore */ }
+              return;
+            }
+
+            // ── /need help ──
+            if (comment.startsWith('/need help') || comment.startsWith('/needhelp')) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issueNumber,
+                body: `Hang tight, @${author}! I've pinged the maintainer to come give you a hand. 🛠️`
+              });
+
+              await github.rest.issues.addLabels({
+                owner, repo, issue_number: issueNumber,
+                labels: ['help-needed']
+              });
+              return;
+            }
+
+            // ── /unassign ──
+            if (comment.startsWith('/unassign')) {
+              const { data: issue } = await github.rest.issues.get({
+                owner, repo, issue_number: issueNumber
+              });
+
+              const isAssigned = issue.assignees.some(a => a.login === author);
+              if (!isAssigned) {
+                console.log(`${author} is not assigned to #${issueNumber}. Ignoring.`);
+                return;
+              }
+
+              await github.rest.issues.removeAssignees({
+                owner, repo, issue_number: issueNumber,
+                assignees: [author]
+              });
+
+              // Clean up status labels
+              for (const label of ['status: in-progress', 'awaiting-response']) {
+                try {
+                  await github.rest.issues.removeLabel({
+                    owner, repo, issue_number: issueNumber,
+                    name: label
+                  });
+                } catch (e) { /* Safe to ignore */ }
+              }
+
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issueNumber,
+                body: `Thanks for letting us know, @${author}. You've been unassigned. This issue is now open for anyone else to pick up. We appreciate your time! 🙏`
+              });
+              return;
+            }

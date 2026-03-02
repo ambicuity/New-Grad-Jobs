@@ -1,0 +1,52 @@
+name: Auto-Thank on Merge
+
+on:
+  pull_request_target:
+    types: [closed]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  thank-contributor:
+    name: Thank Contributor on Merge
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Skip bot PRs (dependabot, renovate, etc.)
+            if (author.includes('[bot]') || author === 'dependabot[bot]') {
+              console.log(`Skipping bot PR by ${author}`);
+              return;
+            }
+
+            // Check if this is the contributor's first merged PR
+            const { data: prs } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${owner}/${repo} author:${author} type:pr is:merged`,
+            });
+
+            const isFirstMerge = prs.total_count <= 1;
+
+            let message;
+            if (isFirstMerge) {
+              message = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
+                `Welcome to the contributors of New Grad Jobs! Your change is now live and helping thousands of new graduates find their first tech job.\n\n` +
+                `A maintainer will add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) shortly. Thank you for making this project better! 🙏`;
+            } else {
+              message = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
+            }
+
+            await github.rest.issues.createComment({
+              owner, repo,
+              issue_number: pr.number,
+              body: message
+            });
