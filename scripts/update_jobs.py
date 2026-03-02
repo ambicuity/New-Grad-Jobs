@@ -24,7 +24,7 @@ import time
 import os
 from datetime import datetime, timedelta, date
 from dateutil import parser as date_parser
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 from functools import lru_cache
@@ -1267,7 +1267,7 @@ def format_posted_date(posted_at: str) -> str:
             return f"{diff.days} days ago"
         else:
             return posted_date.strftime("%Y-%m-%d")
-    except:
+    except Exception:
         return "Unknown"
 
 def get_iso_date(posted_at) -> str:
@@ -1280,7 +1280,7 @@ def get_iso_date(posted_at) -> str:
             normalized_date = normalize_date_string(posted_at)
             posted_date = date_parser.parse(normalized_date)
         return posted_date.replace(tzinfo=None).isoformat()
-    except:
+    except Exception:
         return ""
 
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
@@ -1305,7 +1305,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
                 return datetime.fromtimestamp(posted_at / 1000)
             else:
                 return date_parser.parse(posted_at).replace(tzinfo=None)
-        except:
+        except Exception:
             return datetime.min
     
     jobs.sort(key=get_sort_date, reverse=True)
@@ -1612,10 +1612,13 @@ Respond in JSON format:
                 print("  ⚠️  No predictions in Gemini response")
                 
         else:
-            print(f"  ❌ Gemini API error: {response.status_code} - {response.text}")
+            print(f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
             
     except Exception as e:
-        print(f"  ❌ Failed to generate predictions: {e}")
+        error_msg = str(e)
+        if api_key:
+            error_msg = error_msg.replace(api_key, '***REDACTED***')
+        print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
@@ -1631,7 +1634,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
             else:
                 parsed_date = date_parser.parse(posted_at)
                 return parsed_date.replace(tzinfo=None)
-        except:
+        except Exception:
             return datetime.min
     
     jobs.sort(key=get_sort_date, reverse=True)

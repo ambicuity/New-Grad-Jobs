@@ -71,7 +71,7 @@ class TestFilterJobsDateRecency:
         """Jobs with missing dates should not crash the filter."""
         jobs = [_make_job(posted_at=None)]
         try:
-            result = filter_jobs(jobs, _default_config())
+            filter_jobs(jobs, _default_config())
             # Depending on implementation, may pass or be excluded — just don't crash
         except Exception as e:
             assert False, f"filter_jobs raised an exception on None date: {e}"
