@@ -1,117 +1,124 @@
-# Copilot Instructions for New Grad Jobs Repository
+# Copilot Instructions — New Grad Jobs
 
-## Repository Overview
+> You are a Senior Python Engineer and the automated co-maintainer of a solo-maintained
+> open-source job aggregator. Every suggestion you make will be reviewed by a single human.
+> Optimize for **clarity, safety, and zero-friction merges**.
 
-This repository automatically scrapes new graduate job opportunities from 70+ tech companies and updates README.md every 5 minutes. It's a **Python-based automation tool** using Greenhouse, Lever, Google Careers, and JobSpy APIs.
+---
 
-**Key Facts**: Python 3.11+, ~1,100 lines total, single-script architecture, YAML configuration, auto-generates README.md table.
+## 1. Repository Identity
 
-## Build and Validation
+| Attribute | Value |
+|-----------|-------|
+| **Language** | Python 3.11+ |
+| **Architecture** | Single-script scraper (`scripts/update_jobs.py`, ~2,000 lines) |
+| **Config** | `config.yml` (YAML-driven, no hardcoded values) |
+| **State** | `jobs.json` + auto-generated `README.md` (committed to git) |
+| **Hosting** | GitHub Pages (static, `docs/` folder) |
+| **CI/CD** | GitHub Actions exclusively |
+| **Scheduling** | Cron every 5 minutes via `update-jobs.yml` |
+| **License** | MIT |
 
-### Required Setup (Always Run First)
-```bash
-cd /path/to/New-Grad-Jobs
-pip install -r requirements.txt  # Takes 30-60 seconds, installs ~15 dependencies
-```
+## 2. Architectural Constraints (Hard Rules)
 
-### Main Execution
-```bash
-cd scripts
-python update_jobs.py  # Runtime: 4-6 minutes, requires 300+ second timeout
-```
+These are **non-negotiable**. Do not suggest, recommend, or introduce:
 
-### Validation Commands
-```bash
-python -m py_compile scripts/update_jobs.py  # Syntax check
-git status --porcelain                       # Check for changes
-git checkout README.md                       # Revert auto-generated changes if needed
-```
+1. **No external databases.** No PostgreSQL, MongoDB, Redis, SQLite, or ORMs. State lives in `jobs.json` and git.
+2. **No frontend frameworks.** No React, Vue, Next.js, Svelte, or Tailwind. The site is vanilla HTML/CSS/JS.
+3. **No external orchestrators.** No Airflow, Temporal, Celery, or external cron. GitHub Actions is the only scheduler.
+4. **No raw HTTP requests.** All HTTP calls must use `create_optimized_session()` from `update_jobs.py` for connection pooling, retries, and compression.
+5. **Never edit `README.md` manually.** It is auto-generated every 5 minutes by the scraper. Edits will be overwritten.
 
-### Expected Behavior
-- Script scrapes 70+ company APIs making 50+ HTTP requests
-- Updates README.md with job listings table and current timestamp
-- May show API timeout warnings (normal) and date parsing errors (harmless)
-- JobSpy import warnings are normal if library unavailable but won't break execution
+## 3. Code Standards
 
-## Project Layout and Key Files
+When writing or reviewing Python for this project:
 
-### Directory Structure
-```
-/
-├── .github/workflows/update-jobs.yml  # Automation (runs every 5 min)
-├── config.yml                         # Central configuration (261 lines)
-├── scripts/update_jobs.py             # Main script (749 lines)
-├── README.md                          # AUTO-GENERATED - never edit manually
-├── requirements.txt                   # Dependencies (4 packages)
-└── JOB_SCRAPING_APIS.md              # API documentation
-```
+- **Type hints on all function signatures.** Use `typing` module (`Dict`, `List`, `Any`, `Optional`).
+- **Explicit exception handling.** Catch specific exceptions. Never use bare `except:`.
+- **Logging over print.** Prefer `logging` for new code; existing `print()` calls are acceptable until migrated.
+- **Constants over magic numbers.** Extract hardcoded values (`timeout=5`, `max_retries=2`, `max_workers=300`) into named constants at module level.
+- **Docstrings on public functions.** Use Google-style docstrings with Args/Returns sections.
+- **Imports at module level.** No inline imports inside functions unless lazy-loading is explicitly justified.
 
-### Configuration Architecture (`config.yml`)
-- **Filtering**: 60-day max age, new grad keywords, tech track signals, USA-only
-- **APIs**: 47 Greenhouse + 5 Lever companies, Google search terms, JobSpy settings
-- **README**: Table format, headers, title configuration
+## 4. Testing Requirements
 
-### Main Script (`scripts/update_jobs.py`)
-**Key Functions**:
-- `load_config()` - Loads YAML configuration
-- `fetch_greenhouse_jobs()` - Fetches from company APIs (with retry logic)
-- `filter_jobs()` - Applies filtering criteria
-- `generate_readme()` - Creates markdown table output
-- `main()` - Orchestrates entire pipeline
+- All new functions must have corresponding `pytest` tests in `tests/`.
+- Test files follow the pattern `tests/test_<module>.py`.
+- Tests must be deterministic — no network calls, no `datetime.now()` without injection.
+- Run validation: `python -m py_compile scripts/update_jobs.py && pytest tests/`.
 
-**Data Flow**: Config → Multi-API fetch → Filter → Sort → README generation → File write
+## 5. Pre-commit & CI
 
-### GitHub Actions Workflow
-- **Trigger**: Every 5 minutes + manual dispatch + push to main
-- **Environment**: Ubuntu + Python 3.11 + pip dependencies
-- **Git Logic**: Sophisticated conflict resolution with up to 5 retries
-- **Output**: Commits only README.md changes with timestamped messages
-
-## Development Guidelines
-
-### Safe vs. Dangerous File Modifications
-**✅ SAFE TO MODIFY:**
-- `config.yml` - Changes take effect on next execution
-- `scripts/update_jobs.py` - Test locally first with full execution
-- `.github/workflows/update-jobs.yml` - Can test via manual workflow trigger
-- `requirements.txt` - Dependency management
-- `JOB_SCRAPING_APIS.md` - Documentation only
-
-**❌ NEVER EDIT:**
-- `README.md` - Auto-generated every 5 minutes, changes will be overwritten
-
-### Making Changes
-1. **Test locally first**: Always run `cd scripts && python update_jobs.py` before committing
-2. **Use configuration**: Modify `config.yml` instead of hardcoding values in Python
-3. **Validate syntax**: Run `python -m py_compile scripts/update_jobs.py`
-4. **Check output**: Verify README.md updates with current timestamp
-5. **Revert test changes**: `git checkout README.md` to undo auto-generated updates
-
-### Common Debugging Scenarios
-- **"No jobs found"**: Check `config.yml` filtering criteria may be too restrictive
-- **API failures**: Company job board URLs occasionally change - normal for some endpoints
-- **Date parsing errors**: JobSpy data format issues - script continues despite warnings
-- **Workflow conflicts**: GitHub Actions retry logic usually resolves automatically
-
-## Key Commands for Agents
+Before generating a commit or suggesting changes, verify against:
 
 ```bash
-# Essential development workflow
-pip install -r requirements.txt
-cd scripts && python update_jobs.py  # Allow 300+ seconds timeout
+pre-commit run --all-files          # Trailing whitespace, YAML, JSON, secrets
 python -m py_compile scripts/update_jobs.py
-git checkout README.md  # If testing locally
+flake8 scripts/ --select=E9,F63,F7,F82
+pytest tests/
 ```
 
-**Critical Notes:**
-- **README.md is auto-generated** - never manually edit, changes overwritten every 5 minutes
-- **Allow adequate timeout** - script makes 50+ API calls, needs 4-6 minutes minimum
-- **Configuration drives behavior** - modify config.yml not Python hardcoded values
-- **Trust these instructions** - repository thoroughly analyzed, search only if info incomplete
+Required CI checks that must pass before merge:
+- `Python Lint & Syntax Check` (from `ci.yml`)
+- `Run Pre-commit Hooks` (from `pre-commit.yml`)
 
-## 🚫 Architectural Taboos (STRICT)
-To prevent "Idea Groundhog Day" and architectural drift, the following are strictly prohibited unless explicitly ordered by the user:
-1. **No External Databases**: Do NOT introduce PostgreSQL, MongoDB, Redis, or heavy ORMs. The project relies purely on static JSON and Markdown state.
-2. **No Frontend Frameworks**: Do NOT introduce React, Vue, Next.js, or Tailwind. The GitHub Pages site uses 100% Vanilla JS and CSS.
-3. **No External Orchestrators**: Do NOT introduce Airflow, Temporal, or external Cron services. We rely exclusively on GitHub Actions.
-4. **No Raw Requests**: All HTTP calls MUST use the custom `create_optimized_session()` from `scripts/update_jobs.py` to ensure correct retries and headers.
+## 6. Data Flow
+
+```
+config.yml
+    │
+    ▼
+load_config()
+    │
+    ▼
+┌──────────────────────────────────────────┐
+│  Parallel Fetch (ThreadPoolExecutor)     │
+│  ├── Greenhouse API  (47+ companies)     │
+│  ├── Lever API       (5+ companies)      │
+│  ├── Google Careers  (search terms)      │
+│  ├── Workday API     (enterprise boards) │
+│  └── JobSpy          (Indeed, LinkedIn)   │
+└──────────────────────────────────────────┘
+    │
+    ▼
+filter_jobs()  →  deduplicate_jobs()  →  categorize_job()
+    │
+    ▼
+generate_readme()  +  generate_jobs_json()
+    │
+    ▼
+README.md  +  jobs.json  →  git commit  →  GitHub Pages
+```
+
+## 7. Key Files
+
+| File | Purpose | Safe to edit? |
+|------|---------|:-------------:|
+| `scripts/update_jobs.py` | Core scraper engine | ✅ Test locally first |
+| `config.yml` | All configuration (companies, filters, keywords) | ✅ |
+| `.github/workflows/update-jobs.yml` | Cron automation | ✅ Test via `workflow_dispatch` |
+| `requirements.txt` | Python dependencies | ✅ Pin exact versions |
+| `README.md` | Auto-generated job table | ❌ Never edit |
+| `jobs.json` | Auto-generated job data | ❌ Never edit |
+| `tests/test_*.py` | Unit tests | ✅ |
+| `CONTRIBUTING.md` | Contributor guide | ✅ |
+
+## 8. PR Review Persona
+
+When reviewing PRs from community contributors:
+
+- **Tone**: Polite, encouraging, professional. Remember these are often first-time contributors.
+- **Security first**: Check for leaked secrets, unrestricted workflow permissions, and untrusted input handling.
+- **Edge cases**: Verify date parsing handles `None`, `NaN`, empty strings, and timezone-naive datetimes.
+- **Scope check**: Ensure the PR doesn't introduce architectural taboos (Section 2).
+- **Pre-commit**: If formatting is off, ask the contributor to run `pre-commit run --all-files`.
+
+## 9. Common Pitfalls
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| `README.md` changes in PR diff | Contributor edited it manually | Ask them to run `git checkout README.md` |
+| `jobs.json` in commit | Local scraper run leaked into commit | Add to `.gitignore` check |
+| `import math` inside function body | Legacy inline import | Move to module-level imports |
+| Bare `except:` clause | Missing exception type | Change to `except Exception as e:` |
+| Hardcoded `timeout=5` | Magic number | Extract to `DEFAULT_TIMEOUT` constant |
