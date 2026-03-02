@@ -278,15 +278,26 @@ def load_config() -> Dict[str, Any]:
 
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     """Categorize a job based on its title and description"""
+    import re
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
+
+    # Priority check for TPM to avoid matching generic 'infrastructure' or 'program' first
+    if re.search(r'\btpm\b', combined):
+        return {
+            'id': 'product_management',
+            'name': CATEGORY_PATTERNS['product_management']['name'],
+            'emoji': CATEGORY_PATTERNS['product_management']['emoji']
+        }
 
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
         for keyword in category_info['keywords']:
-            if keyword in combined:
+            # Use word boundaries for exact phrase matching, safely escape the keyword
+            pattern = r'\b' + re.escape(keyword) + r'\b'
+            if re.search(pattern, combined):
                 return {
                     'id': category_id,
                     'name': category_info['name'],
