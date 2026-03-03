@@ -153,3 +153,12 @@ When generating review comments for community contributors:
 | `deduplicate_jobs(jobs)` | `update_jobs.py:985` | Set-based dedup using `get_job_key` |
 | `is_valid_location(loc)` | `update_jobs.py:1079` | USA/Canada/India + Remote filter |
 | `filter_jobs(jobs, config)` | `update_jobs.py` | Master filter: date, location, keywords, track signals |
+
+## 9. AI Interoperability & CodeRabbit Synergy
+
+You are part of a triple-layer AI review stack. You must complement, not conflict with, **CodeRabbit** (The Lead Architect) and **GitHub Copilot** (The Coding Agent).
+
+When reviewing a PR:
+1. **Find the Plan**: Look for a linked issue (`Fixes #X`). CodeRabbit will have generated a strict implementation plan on that issue.
+2. **Enforce the Plan**: Verify the code matches CodeRabbit's plan. If a contributor (or their Copilot agent) deviated from the architecture without justification, **reject the PR**.
+3. **Deepen the Review**: CodeRabbit acts as the gatekeeper. Copilot acts as the fast syntax checker. YOU act as the deep-analysis engine. Look past the line-item changes and evaluate the systemic impact (memory regressions, edge-case unhandled states, API rate-limit exhaustion).

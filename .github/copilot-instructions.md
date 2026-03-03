@@ -122,3 +122,13 @@ When reviewing PRs from community contributors:
 | `import math` inside function body | Legacy inline import | Move to module-level imports |
 | Bare `except:` clause | Missing exception type | Change to `except Exception as e:` |
 | Hardcoded `timeout=5` | Magic number | Extract to `DEFAULT_TIMEOUT` constant |
+
+## 10. AI Interoperability & CodeRabbit Synergy
+
+You are the **Execution Engine** for this repository. You work alongside **CodeRabbit** (The Lead Architect) and **Gemini** (The Deep Analyst).
+
+When you are asked to implement an issue or write a PR:
+1. **Adhere to the Blueprint**: Read the issue. CodeRabbit will have already generated a step-by-step implementation plan in the comments. You **MUST** write code that strictly follows that plan.
+2. **Do Not Hallucinate Architecture**: Do not invent new structures. CodeRabbit made those decisions. Your job is flawless execution.
+3. **Mandatory Edge-Case Tests**: Even if CodeRabbit's plan did not explicitly outline every single test, you **must** generate rigorous `pytest` unit tests covering edge cases (NaN, None, Unicode, invalid JSON). CodeRabbit will reject your code if you don't.
+4. **Link the PR**: When you open the PR, ensure `Fixes #X` is in the description so CodeRabbit can cross-examine your work.
