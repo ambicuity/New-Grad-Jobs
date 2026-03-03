@@ -1697,6 +1697,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
 [![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
@@ -1823,6 +1824,16 @@ This repository automatically scrapes new graduate job opportunities from variou
 
 **JobSpy**: LinkedIn, Indeed, Glassdoor
 
+</details>
+
+---
+
+### 🧪 Test Coverage
+
+<details>
+<summary>Click to view Codecov Sunburst Graph</summary>
+<br>
+<img src="https://codecov.io/github/ambicuity/New-Grad-Jobs/graphs/sunburst.svg?token=1D0TO5UL1T" alt="Codecov Sunburst Graph" />
 </details>
 
 ---
