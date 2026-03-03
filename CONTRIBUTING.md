@@ -11,19 +11,27 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 ## Table of Contents
 
 1. [Ways to Contribute](#1-ways-to-contribute)
-2. [Local Development Setup](#2-local-development-setup)
-3. [Project Architecture](#3-project-architecture)
-4. [Branching & Commit Standards](#4-branching--commit-standards)
-5. [Pull Request Guidelines](#5-pull-request-guidelines)
-6. [Reporting Issues](#6-reporting-issues)
-7. [Adding a Company or Job](#7-adding-a-company-or-job)
-8. [Code Style](#8-code-style)
-9. [Good First Issues](#9-good-first-issues)
-10. [Bot Commands (Slash Commands)](#10-bot-commands-slash-commands)
+2. [The AI-Assisted Workflow](#2-the-ai-assisted-workflow-highly-recommended)
+3. [Local Development Setup](#3-local-development-setup)
+4. [Full Contribution Lifecycle](#4-full-contribution-lifecycle)
+   - [Phase 1: Claiming the Issue](#phase-1-claiming-the-issue--alignment)
+   - [Phase 2: Git Hygiene & Local Setup](#phase-2-git-hygiene--local-setup)
+   - [Phase 3: Development & Code Standards](#phase-3-development--code-standards)
+   - [Phase 4: Conflict Prevention & Committing](#phase-4-conflict-prevention-the-rebase--committing)
+   - [Phase 5: Opening the Pull Request](#phase-5-opening-the-pull-request)
+   - [Phase 6: Code Review & History Cleanup](#phase-6-code-review--history-cleanup)
+5. [Project Architecture](#5-project-architecture)
+6. [Branching & Commit Standards](#6-branching--commit-standards)
+7. [Pull Request Checklist](#7-pull-request-checklist)
+8. [Reporting Issues](#8-reporting-issues)
+9. [Adding a Company or Job](#9-adding-a-company-or-job)
+10. [Code Style](#10-code-style)
+11. [Good First Issues](#11-good-first-issues)
+12. [Bot Commands (Slash Commands)](#12-bot-commands-slash-commands)
 
 ---
 
-## 1. Ways to Contribute (The Sprints)
+## 1. Ways to Contribute
 
 We organize work into clear tiers. If you are new here, look for issues tagged appropriately to get started:
 
@@ -53,7 +61,7 @@ To write code for this repository, follow this exact workflow:
 
 ---
 
-## 2. Local Development Setup (The Setup)
+## 3. Local Development Setup
 
 We believe in a "single command setup". You do not need to decipher a 10-page guide to run this project.
 
@@ -66,7 +74,7 @@ We believe in a "single command setup". You do not need to decipher a 10-page gu
 ### The Single Command
 
 ```bash
-# 1. Fork the repo, clone it, and enter the directory
+# 1. Fork the repo on GitHub, then clone YOUR fork
 git clone https://github.com/<your-username>/New-Grad-Jobs.git
 cd New-Grad-Jobs
 
@@ -107,7 +115,296 @@ make run
 
 ---
 
-## 3. Project Architecture
+## 4. Full Contribution Lifecycle
+
+This section documents the **end-to-end lifecycle** of a contribution, from claiming an issue to getting your PR merged with a clean history. Follow every phase in order.
+
+---
+
+### Phase 1: Claiming the Issue & Alignment
+
+**Before writing a single line of code**, you must claim and fully understand the issue.
+
+#### 1.1 — Claim the issue
+
+Comment on the issue with the bot command:
+
+```
+/assign
+```
+
+This assigns the issue to you and signals to other contributors that it is being worked on. Do not start work until you are assigned — it prevents duplicate effort.
+
+#### 1.2 — Clarify scope before coding
+
+Read the issue description carefully. If anything is ambiguous — especially for `architecture` or `help wanted` issues — ask clarifying questions in the issue thread **before** writing code.
+
+Good questions to ask:
+- Is the expected behavior clearly defined?
+- Are there specific files or functions I should or should not touch?
+- Are there existing tests I must not break?
+
+> **Rule:** The cost of a clarifying question is 5 minutes. The cost of building the wrong thing is a reverted PR.
+
+---
+
+### Phase 2: Git Hygiene & Local Setup
+
+This phase ensures your local environment is correctly isolated from the upstream repository.
+
+#### 2.1 — Fork and clone
+
+If you haven't already, fork the repo on GitHub, then clone **your fork** (not the upstream):
+
+```bash
+git clone https://github.com/<your-username>/New-Grad-Jobs.git
+cd New-Grad-Jobs
+```
+
+#### 2.2 — Add the upstream remote (CRITICAL)
+
+```bash
+git remote add upstream https://github.com/ambicuity/New-Grad-Jobs.git
+```
+
+Verify the remotes are set up correctly:
+
+```bash
+git remote -v
+# Expected output:
+# origin    https://github.com/<your-username>/New-Grad-Jobs.git (fetch)
+# origin    https://github.com/<your-username>/New-Grad-Jobs.git (push)
+# upstream  https://github.com/ambicuity/New-Grad-Jobs.git (fetch)
+# upstream  https://github.com/ambicuity/New-Grad-Jobs.git (push)
+```
+
+You will **never** push to `upstream`. `upstream` is read-only — it is only used to pull the latest changes from the maintainer's repository.
+
+#### 2.3 — Create a dedicated feature branch
+
+**Never work on `main`**. Create a short-lived, descriptively named branch:
+
+```bash
+git checkout -b feat/add-workday-microsoft
+# or
+git checkout -b fix/issue-123-greenhouse-timeout
+# or
+git checkout -b docs/update-contributing-guide
+```
+
+Branch naming convention:
+
+| Prefix | When to use |
+|--------|-------------|
+| `feat/` | New feature or new company scraper |
+| `fix/` | Bug fix |
+| `docs/` | Documentation only |
+| `chore/` | Maintenance (deps, CI config, etc.) |
+
+---
+
+### Phase 3: Development & Code Standards
+
+#### 3.1 — Run the local environment first
+
+Before writing code, confirm the test suite is green on your machine:
+
+```bash
+source .venv/bin/activate
+make test
+```
+
+If tests fail before your changes, **stop and report it** — do not proceed on a broken base.
+
+#### 3.2 — Implement only what the issue describes
+
+Stay strictly within the scope of the issue. Do **not**:
+- Rename unrelated variables or refactor functions you didn't touch.
+- Fix style issues in lines you didn't author.
+- Add unrelated features "while you're in there".
+
+Code review scope creep is one of the most common reasons PRs are rejected.
+
+#### 3.3 — Write tests for your changes
+
+If your change adds or modifies any function in `scripts/update_jobs.py`, add a corresponding test in `tests/`:
+
+```bash
+# Run only your new tests to confirm they pass
+pytest tests/test_your_module.py -v
+
+# Run the full suite to confirm you haven't broken anything
+make test
+```
+
+Tests must be **deterministic** — inject `datetime` via parameters. No live network calls in tests.
+
+#### 3.4 — Run the pre-commit hooks
+
+Our pre-commit suite runs whitespace checks, YAML/JSON validation, import sorting, and secret detection. Run it manually before committing:
+
+```bash
+pre-commit run --all-files
+```
+
+Fix any errors it reports before proceeding.
+
+#### 3.5 — Syntax and style check
+
+```bash
+# Syntax check (required — must produce zero output)
+python -m py_compile scripts/update_jobs.py
+
+# Style check (optional but recommended)
+python -m flake8 scripts/ --max-line-length=120
+```
+
+---
+
+### Phase 4: Conflict Prevention (The Rebase) & Committing
+
+This is the most commonly skipped phase — and the one that causes the most pain at review time.
+
+#### 4.1 — Fetch and rebase onto upstream (CRITICAL)
+
+Before pushing your branch, always sync with the upstream `main`:
+
+```bash
+# Step 1: Fetch all changes from the upstream repository
+git fetch upstream
+
+# Step 2: Rebase your feature branch on top of upstream/main
+git rebase upstream/main
+```
+
+> **Why rebase instead of merge?** Rebasing places your commits on top of the latest upstream commits, producing a clean, linear history with no merge commits. Our PRs are squash-merged, so a clean rebase prevents conflicts at merge time.
+
+If you encounter rebase conflicts:
+
+```bash
+# After resolving conflicts in the affected files:
+git add <resolved-files>
+git rebase --continue
+
+# To abort the rebase and return to your previous state:
+git rebase --abort
+```
+
+#### 4.2 — Write atomic, logical commits
+
+Each commit should represent one logical unit of work. Avoid:
+- `"fix"` (too vague)
+- `"WIP"` / `"temp"` commits
+- Mixing unrelated changes in a single commit
+
+Good commit examples:
+```
+feat(config): add Microsoft to Workday scraper targets
+fix(greenhouse): handle paginated response beyond 100 jobs
+docs(contributing): add upstream remote setup instructions
+test(filter): add edge case for None location field
+```
+
+We enforce [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <short summary in imperative mood>
+
+Types:
+  feat     – new feature or new company added to scraper
+  fix      – bug fix
+  docs     – documentation only
+  test     – adding missing tests
+  chore    – maintenance (deps, CI config, etc.)
+  refactor – code change that is neither a fix nor a feature
+```
+
+---
+
+### Phase 5: Opening the Pull Request
+
+#### 5.1 — Push your branch to your fork
+
+```bash
+git push origin feat/add-workday-microsoft
+```
+
+#### 5.2 — Open the PR against the correct base branch
+
+Open the PR against **`main`** in the upstream repository (`ambicuity/New-Grad-Jobs`). Do **not** target your own fork's `main`.
+
+GitHub will default to the correct base if your fork is set up properly.
+
+#### 5.3 — Use the PR template
+
+Fill out the PR description template completely. Partial descriptions slow down review.
+
+For scraper changes, include:
+- Which API/source was modified
+- Sample output showing jobs found (or a zero-output explanation)
+- Whether any timeouts or errors were seen in local testing
+
+#### 5.4 — Link the issue to auto-close it
+
+Include one of these in the PR description to automatically close the issue when the PR is merged:
+
+```
+Fixes #123
+Closes #456
+Resolves #789
+```
+
+This is a **hard requirement**. Unlinked PRs will be asked to add the link before review begins.
+
+#### 5.5 — Title your PR
+
+Use a Conventional Commit title, or just name the PR `@coderabbitai` and the bot will generate the correct title for you automatically.
+
+---
+
+### Phase 6: Code Review & History Cleanup
+
+#### 6.1 — Responding to review feedback
+
+When a maintainer or CodeRabbit requests changes:
+- Respond to **every comment**, even if just to acknowledge.
+- If you disagree with a suggestion, explain your reasoning clearly. We prefer a short discussion over a silent revert.
+- Do not close the PR and open a new one to avoid review comments.
+
+#### 6.2 — Interactive rebase to squash messy commits (CRITICAL)
+
+After rounds of review, your branch will likely have accumulated noisy commits like `"address review feedback"`, `"fix typo in test"`, `"forgot to add import"`. Before your PR is merged, clean these up:
+
+```bash
+# Squash all commits back to a clean set of logical commits
+git rebase -i upstream/main
+```
+
+In the interactive editor, `pick` your first meaningful commit and `squash` or `fixup` the rest:
+
+```
+pick a1b2c3d feat(config): add Microsoft to Workday targets
+fixup d4e5f6g fix: address review feedback
+fixup 7h8i9j0 fix: forgot to add import
+```
+
+The result should be one (or a small number of) clean, atomic commits with proper Conventional Commit messages.
+
+#### 6.3 — Force-push safely after rebasing
+
+After rebasing or squashing, you must force-push your branch. Always use `--force-with-lease` — it is a safety net that will refuse to overwrite commits someone else may have pushed to your branch:
+
+```bash
+git push origin feat/add-workday-microsoft --force-with-lease
+```
+
+> **Never use `git push --force`** without `--lease`. Bare `--force` can destroy commits without warning.
+
+The PR will automatically update with the cleaned history. No need to close and reopen it.
+
+---
+
+## 5. Project Architecture
 
 ```
 New-Grad-Jobs/
@@ -138,78 +435,38 @@ New-Grad-Jobs/
 
 ---
 
-## 4. Branching & Commit Standards (The Workflow)
+## 6. Branching & Commit Standards
 
 We use **GitHub Flow** (Trunk-based development). This means:
 1. `main` is always deployable and green.
 2. All feature work happens in short-lived branches created from `main`.
 
-### Git Workflow: Rebase > Merge
-
-To keep our Git history clean and linear, we prefer **rebasing** over merge commits when syncing your feature branch with `main`.
-
-```bash
-# When main has new commits, update your branch:
-git fetch origin
-git rebase origin/main
-```
-
-When your PR is merged, it will be "Squash and Merged" to maintain a single atomic commit per feature.
-
-### Branch naming
-
-Create a branch from `main` using one of these prefixes:
-
-```
-feat/add-workday-scraper
-fix/issue-123-greenhouse-timeout
-docs/update-contributing-guide
-chore/pin-dependency-versions
-```
-
-### Commit messages & PR Titles (Conventional Commits)
-
-We rigidly enforce [Conventional Commits](https://www.conventionalcommits.org/) for all Pull Requests:
-
-```
-<type>(<scope>): <short summary>
-
-Types:
-  feat     – new feature or new company added to scraper
-  fix      – bug fix
-  docs     – documentation only
-  chore    – maintenance (deps, CI config, etc.)
-```
-
-This format enables our **Semantic Release** pipeline to automatically generate changelogs and version bumps.
-
-🤖 **Want AI to name your PR for you?**
-You don't have to guess the right title! Just name your PR `@coderabbitai`. CodeRabbit will analyze your changes and automatically rename the PR to a perfect, compliant Conventional Commit title.
+When your PR is merged, it will be "Squash and Merged" to maintain a single atomic commit per feature. This is why clean, rebased history matters — the single squash commit is what lands in `main`.
 
 ---
 
-## 5. Pull Request Guidelines
+## 7. Pull Request Checklist
 
-Before opening a PR, please confirm:
+Before opening a PR, confirm every item below:
 
-- [ ] You have linked the PR to an existing issue using `Fixes #<number>`.
-- [ ] You have verified that your code strictly follows the CodeRabbit implementation plan on the linked issue.
-- [ ] `python -m py_compile scripts/update_jobs.py` passes with no errors
-- [ ] `python test_config.py` passes
-- [ ] You have tested any scraper changes locally (via `cd scripts && python update_jobs.py`)
-- [ ] You have reverted `README.md` (`git checkout README.md`) if it was modified during testing
-- [ ] Your changes are scoped to the described problem — no unrelated modifications
-- [ ] Your commit messages follow the Conventional Commits format above
-- [ ] You have updated relevant documentation (`config.yml` comments, `JOB_SCRAPING_APIS.md`, etc.)
-
-**For scraper changes**, please include in your PR description:
-- Which API/source was modified
-- Sample output showing jobs found (or zero-output explanation)
-- Whether any timeouts or errors were seen in local testing
+- [ ] I have commented `/assign` on the issue and have been officially assigned.
+- [ ] I have added `upstream` as a remote (`git remote add upstream https://github.com/ambicuity/New-Grad-Jobs.git`).
+- [ ] I am working on a feature branch — **not** on `main`.
+- [ ] I ran `git fetch upstream && git rebase upstream/main` before pushing.
+- [ ] `python -m py_compile scripts/update_jobs.py` passes with no errors.
+- [ ] `make test` passes with no failures.
+- [ ] `pre-commit run --all-files` passes with no errors.
+- [ ] I have reverted `README.md` if it was modified during testing: `git checkout README.md`.
+- [ ] I have verified any scraper changes locally (`cd scripts && python update_jobs.py`).
+- [ ] My changes are scoped to the described problem — no unrelated modifications.
+- [ ] Commit messages follow the Conventional Commits format.
+- [ ] The PR is linked to the issue with `Fixes #<number>` in the description.
+- [ ] The PR is opened against `main` in the **upstream** repository, not my fork.
+- [ ] I have updated relevant documentation (`config.yml` comments, `JOB_SCRAPING_APIS.md`, etc.) if applicable.
 
 ---
 
-## 6. Reporting Issues
+## 8. Reporting Issues
 
 Use the structured issue templates:
 
@@ -226,7 +483,7 @@ Use the structured issue templates:
 
 ---
 
-## 7. Adding a Company or Job
+## 9. Adding a Company or Job
 
 ### Adding a company to the scraper (code contribution)
 
@@ -246,7 +503,7 @@ Use the **[New Role issue template](https://github.com/ambicuity/New-Grad-Jobs/i
 
 ---
 
-## 8. Code Style
+## 10. Code Style
 
 - **Python**: Follow [PEP 8](https://pep8.org/). Use type hints for all new functions.
 - **JavaScript** (`docs/app.js`, `docs/stats.js`): Vanilla JS, no frameworks. Follow existing patterns.
@@ -261,7 +518,7 @@ python -m flake8 scripts/ --max-line-length=120 --ignore=E501  # Style (optional
 
 ---
 
-## 9. Good First Issues
+## 11. Good First Issues
 
 New here? Look for issues tagged:
 
@@ -273,7 +530,7 @@ New here? Look for issues tagged:
 
 ---
 
-## 10. Bot Commands (Slash Commands)
+## 12. Bot Commands (Slash Commands)
 
 Our repository uses bots to automate the contributor workflow. You can interact with them by posting a comment on any issue:
 
