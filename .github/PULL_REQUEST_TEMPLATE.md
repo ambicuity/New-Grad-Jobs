@@ -2,6 +2,8 @@
 <!--
 CRITICAL: You MUST link the issue this PR solves. CodeRabbit will cross-examine your code against the issue's plan.
 If there is no linked issue, or your code does not match the generated plan, your PR will be rejected.
+
+🤖 LAZY TITLING: Want a perfect PR title? Name this PR `@coderabbitai` and our AI will name it for you!
 -->
 **Fixes:** #<issue_number>
 

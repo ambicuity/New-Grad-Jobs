@@ -48,7 +48,8 @@ To write code for this repository, follow this exact workflow:
 3. **Refine the Plan**: If the plan looks wrong or you have questions, reply to the issue with `@coderabbitai clarify <your question>`. CodeRabbit will update the plan.
 4. **Write the Code**: You can hand CodeRabbit's exact plan to Cursor, GitHub Copilot, or write it yourself.
 5. **Open a PR**: You **must** link the PR to the issue (`Fixes #123`).
-6. **The Gatekeeper**: CodeRabbit will cross-examine your code against its original plan. If you skipped tests or cut corners, it will block your PR before a human ever looks at it.
+6. **Auto-Title your PR**: Make the title of your PR literally just `@coderabbitai`. CodeRabbit will read your code and automatically rename the PR to a perfect Conventional Commit title (e.g., `feat: add workday scraper`).
+7. **The Gatekeeper**: CodeRabbit will cross-examine your code against its original plan. If you skipped tests or cut corners, it will block your PR before a human ever looks at it.
 
 ---
 
@@ -166,9 +167,9 @@ docs/update-contributing-guide
 chore/pin-dependency-versions
 ```
 
-### Commit messages (Conventional Commits)
+### Commit messages & PR Titles (Conventional Commits)
 
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
+We rigidly enforce [Conventional Commits](https://www.conventionalcommits.org/) for all Pull Requests:
 
 ```
 <type>(<scope>): <short summary>
@@ -181,6 +182,9 @@ Types:
 ```
 
 This format enables our **Semantic Release** pipeline to automatically generate changelogs and version bumps.
+
+🤖 **Want AI to name your PR for you?**
+You don't have to guess the right title! Just name your PR `@coderabbitai`. CodeRabbit will analyze your changes and automatically rename the PR to a perfect, compliant Conventional Commit title.
 
 ---
 
