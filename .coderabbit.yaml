@@ -1,6 +1,8 @@
 # .coderabbit.yaml — New Grad Jobs
-# CodeRabbit configuration for a solo-maintained OSS repository.
-# Strategy: Automate the planning, enforce the execution.
+# Senior-level AI review configuration for a solo-maintained OSS repository.
+# Philosophy: CodeRabbit is the Lead Architect. It plans before code is written,
+# and enforces architectural intent during review. Correctness is table stakes.
+# The target is production-grade systems thinking.
 # Docs: https://docs.coderabbit.ai/
 
 language: "en-US"
@@ -9,9 +11,7 @@ early_access: true
 # ============================================================================
 # ISSUE ENRICHMENT — The Lead Architect
 # When a contributor opens an issue with a trigger label, CodeRabbit
-# researches the full codebase and posts a step-by-step implementation plan
-# directly on the issue. Contributors interact with @coderabbitai before
-# writing a single line of code.
+# researches the full codebase and posts a step-by-step implementation plan.
 # ============================================================================
 issue_enrichment:
   planning:
@@ -19,100 +19,123 @@ issue_enrichment:
     auto_planning:
       enabled: true
       labels:
-        - "plan-me"        # Explicit opt-in trigger
-        - "feature"        # All feature requests get a plan
-        - "bug"            # All bugs get a root-cause plan
-        - "enhancement"    # Enhancements get a plan
-        - "intermediate"   # Intermediate difficulty issues get a plan
-        - "advanced"       # Advanced issues always get a plan
+        - "plan-me"
+        - "feature"
+        - "bug"
+        - "enhancement"
+        - "intermediate"
+        - "advanced"
 
 # ============================================================================
-# CODE REVIEWS — The Gatekeeper
-# CodeRabbit cross-references every PR against the linked issue's plan.
-# If the contributor cut corners, skipped tests, or hallucinated code,
-# CodeRabbit blocks them before the maintainer needs to look at it.
+# CODE REVIEWS — The Senior Engineer
+# Reviews must go beyond syntax. Every plan and review must demonstrate
+# production-grade systems thinking: flow control, observability, failure modes.
 # ============================================================================
 reviews:
   profile: "assertive"
   request_changes_workflow: true
-
-  # CRITICAL: Cross-examines submitted code against the original issue plan.
-  # If the PR doesn't actually solve the linked issue, CodeRabbit will say so.
   assess_linked_issues: true
 
-  # Auto-review all PRs immediately on open/sync — no manual trigger needed.
   auto_review:
     enabled: true
-    drafts: false          # Skip draft PRs
+    drafts: false
     base_branches:
       - "main"
 
   # ===== PATH-SPECIFIC REVIEW DIRECTIVES =====
-  # These are injected into CodeRabbit's context when it reviews each file.
   path_instructions:
 
     # ── Core Scraper Engine ──────────────────────────────────────────────────
     - path: "scripts/update_jobs.py"
       instructions: |
-        This is the mission-critical scraper engine. Apply peak scrutiny.
-        1. ALL HTTP calls must use `create_optimized_session()`. Reject any `requests.get()` calls.
-        2. ALL exception handlers must catch specific exceptions — no bare `except:` clauses.
+        This file is the entire data pipeline. Apply senior-level scrutiny, not just linting.
+
+        ## Correctness (Non-Negotiable)
+        1. ALL HTTP calls must use `create_optimized_session()`. Bare `requests.get()` is a hard reject.
+        2. No bare `except:` clauses. Catch specific exceptions and log them with context.
         3. `ThreadPoolExecutor` workers must not mutate shared state without locks.
-        4. Date parsing must handle: None, NaN, float, empty string, Unix ms timestamps (Lever), and "Posted X Days Ago" strings (JobSpy).
-        5. Any new function must have a Google-style docstring and full type hints.
-        6. Magic numbers (timeouts, max_workers, page sizes) must be extracted to constants.
+        4. Date parsing must handle: None, NaN, float, empty string, Unix ms timestamps (Lever),
+           and "Posted X Days Ago" strings (JobSpy). Review `is_recent_job()` carefully.
+        5. Every new public function requires a Google-style docstring and full type hints.
+
+        ## Systems Thinking (Distinguish Good Plans from Great Ones)
+        6. CONCURRENCY ≠ RATE LIMITING. If a PR adds a `threading.Semaphore` to limit
+           concurrent requests, flag that this controls simultaneous connections, not
+           requests-per-second. A semaphore of N=50 can still send 50 requests in 1ms.
+           A mature solution requires a token bucket or per-domain executor partition.
+        7. Reject hardcoded concurrency limits (e.g., `greenhouse_max=50`) without documented
+           rationale. Ask: Is this based on actual API documentation? Per-IP? Per-second?
+        8. If a PR adds rate limiting logic, demand observability: the code must log when
+           a domain semaphore is contended, when a 429 is received, and how long backoff waited.
+        9. Flag any implementation that adds control flow without logging. We must be able
+           to diagnose production behavior from GitHub Actions logs alone.
+        10. Magic numbers (timeouts, max_workers, page sizes, rate limits) must be extracted
+            to named constants at the module level with a comment explaining their origin.
+
+        ## Architecture
+        11. If a PR introduces a new abstraction (class, manager, dispatcher), question whether
+            it should live in `update_jobs.py` or be extracted to a separate module. The file
+            is already ~2000 lines. New architectural patterns with significant scope belong
+            in their own file.
+        12. Reject any introduction of: PostgreSQL, MongoDB, Redis, React, Airflow, or Celery.
+            State lives in git. Orchestration is GitHub Actions.
 
     # ── Configuration ────────────────────────────────────────────────────────
     - path: "config.yml"
       instructions: |
-        All parameters that control scraper behavior live here, not in Python.
-        Reject any PR that hardcodes a value in `update_jobs.py` that should live in `config.yml`.
-        Validate that required top-level keys are present: `filtering`, `greenhouse`, `lever`, `readme`.
+        All parameters controlling scraper behavior belong here, not in Python.
+        1. Reject PRs that hardcode in `update_jobs.py` what should be in `config.yml`.
+        2. Validate required top-level keys: `filtering`, `greenhouse`, `lever`, `readme`.
+        3. If a PR adds a new config key, confirm it is read and used in `update_jobs.py`.
+        4. Reject any secrets or API tokens committed to this file.
 
     # ── GitHub Actions Workflows ─────────────────────────────────────────────
     - path: ".github/workflows/**"
       instructions: |
         SECURITY-CRITICAL. Apply zero-trust review.
-        1. Workflow permissions must be minimally scoped (`contents: read` unless write is explicitly justified).
+        1. Workflow permissions must be minimally scoped (`contents: read` unless write is justified).
         2. Flag any `pull_request_target` trigger — these have write access to the base repo.
         3. All `actions/` steps must pin to a full commit SHA, not a mutable tag like `@v3`.
-        4. Reject any workflow that echoes or logs GitHub secrets.
-        5. Verify that bot-facing `github-script` steps only expose the minimum required GitHub API methods.
+        4. Reject any workflow that echoes or logs GitHub secrets or tokens.
+        5. `github-script` steps must only expose the minimum required GitHub API methods.
+        6. Flag any new workflow that could be triggered by external contributors without
+           a stale-check or approval gate.
 
     # ── Tests ────────────────────────────────────────────────────────────────
     - path: "tests/**"
       instructions: |
-        Tests must be deterministic and offline.
-        1. No live network calls — mock all HTTP requests.
+        Tests must be deterministic, offline, and meaningful.
+        1. No live network calls. All HTTP must be mocked (use `unittest.mock.patch`).
         2. No `datetime.now()` without injection — parameterize the reference date.
-        3. Edge cases are mandatory: empty inputs, None, NaN, Unicode strings, very long titles.
-        4. Every new function in `update_jobs.py` must have at least one corresponding test.
+        3. Edge cases are mandatory: empty inputs, None, NaN, Unicode strings, very long titles,
+           timezone-aware ISO timestamps (e.g., `2024-01-01T10:00:00+05:30`).
+        4. Every new function in `update_jobs.py` must have at least one test.
+        5. Reject tests that only cover the happy path. A test without an edge case is
+           a test that will fail in production.
+        6. Coverage for a new function should be verifiable by reading the test file alone.
 
     # ── Documentation ────────────────────────────────────────────────────────
     - path: "docs/**"
       instructions: |
-        Enforce documentation quality.
-        1. All markdown must use proper heading hierarchy (single H1, sequential H2/H3).
+        1. All markdown uses proper heading hierarchy (single H1, sequential H2/H3).
         2. Code blocks must specify a language identifier.
-        3. Tables must have aligned headers.
-        4. No broken internal links.
+        3. No broken internal links.
+        4. `README.md` is auto-generated every 5 minutes. Any PR touching it is an automatic reject.
 
     # ── Catch-all ────────────────────────────────────────────────────────────
     - path: "**/*"
       instructions: |
-        SOLO MAINTAINER ANTI-LAZY-AI DIRECTIVE:
-        This repository is solo-maintained. Every PR must be self-contained and production-ready.
-        1. The contributor must NOT have blindly copy-pasted an AI-generated plan without verification.
-        2. Demand unit tests that cover edge cases, not just the happy path.
-        3. Flag any breaking changes to public-facing data fields in `jobs.json`.
-        4. Reject PRs that touch `README.md` directly — it is auto-generated.
-        5. Reject PRs that touch `jobs.json` directly — it is auto-generated.
-        6. Reject any introduction of: PostgreSQL, MongoDB, Redis, React, Vue, Next.js, Tailwind, Airflow, Temporal.
+        GLOBAL STANDARDS — applies to every file in every PR.
+        1. Every PR must link to an issue via `Fixes #N`. No issue link = no merge.
+        2. Reject PRs that touch `README.md` or `jobs.json` directly — both are auto-generated.
+        3. Reject any introduction of new runtime dependencies not already in `requirements.txt`
+           without a documented justification for why the existing stdlib is insufficient.
+        4. Reject PRs that are clearly unreviewed AI output: no tests, no docstrings, and
+           blindly copied from the issue plan without adaptation.
+        5. PRs should be small and focused. Flag PRs that change more than 3 unrelated areas.
 
 # ============================================================================
 # CHAT — The On-Demand Advisor
-# Contributors can interact with @coderabbitai directly on issues and PRs
-# to get clarifications, ask follow-up questions, or request plan refinements.
 # ============================================================================
 chat:
   auto_reply: true
