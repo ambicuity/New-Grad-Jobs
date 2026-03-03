@@ -1,0 +1,25 @@
+name: PR Auto-Merge on Maintainer Approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enable-auto-merge:
+    name: Enable squash auto-merge after approval
+    runs-on: ubuntu-latest
+    # Only act when the maintainer approves; skip Dependabot PRs (handled separately)
+    if: |
+      github.event.review.state == 'approved' &&
+      github.event.review.user.login == 'ambicuity' &&
+      github.event.pull_request.user.login != 'dependabot[bot]'
+    steps:
+      - name: Enable squash auto-merge
+        run: gh pr merge "$PR_URL" --auto --squash
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
