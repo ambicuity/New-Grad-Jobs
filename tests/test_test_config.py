@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 from test_config import validate_config
@@ -22,12 +21,7 @@ apis:
 """,
     )
 
-    old = os.getcwd()
-    os.chdir(tmp_path)
-    try:
-        code = validate_config()
-    finally:
-        os.chdir(old)
+    code = validate_config(str(tmp_path / "config.yml"))
 
     out = capsys.readouterr().out
     assert code == 1  # under 10k still intentional warning path
@@ -71,3 +65,14 @@ apis:
 
     assert code == 1
     assert "Missing required config key" in out
+
+
+def test_validate_config_empty_file(tmp_path, capsys):
+    bad = tmp_path / "bad.yml"
+    _write(bad, "")
+
+    code = validate_config(str(bad))
+    out = capsys.readouterr().out
+
+    assert code == 1
+    assert "Invalid config structure" in out

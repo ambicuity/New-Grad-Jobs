@@ -3,6 +3,8 @@ import sys
 
 import yaml
 
+MIN_EXPECTED_COMPANIES = 10000
+
 
 def validate_config(config_path: str = "config.yml") -> int:
     try:
@@ -22,8 +24,8 @@ def validate_config(config_path: str = "config.yml") -> int:
         total = gh + lever + workday
         print(f"TOTAL: {total} companies")
 
-        if total < 10000:
-            print(f"\n⚠️  WARNING: Expected ~10,000 companies but only loaded {total}!")
+        if total < MIN_EXPECTED_COMPANIES:
+            print(f"\n⚠️  WARNING: Expected ~{MIN_EXPECTED_COMPANIES:,} companies but only loaded {total}!")
             return 1
 
         print("\n✅ All companies loaded correctly!")
