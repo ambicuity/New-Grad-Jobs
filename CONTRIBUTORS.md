@@ -23,10 +23,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ---
 
-**Want to be added?** A maintainer will add you after your PR is merged, or you can comment on any issue:
-
-```
-@all-contributors please add @<your-username> for <contribution-type>
-```
-
-Contribution types: `code`, `doc`, `bug`, `design`, `ideas`, `infra`, `test`, `review`, `tutorial`, `maintenance`.
+**Want to be added?** A maintainer will add you automatically after your PR is merged. No action needed on your part.
