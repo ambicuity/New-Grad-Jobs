@@ -37,6 +37,21 @@ We organize work into clear tiers. If you are new here, look for issues tagged a
 
 ---
 
+## 2. The AI-Assisted Workflow (Highly Recommended)
+
+We are a solo-maintained repository, which means we rely heavily on AI to help manage contributions. We use **CodeRabbit** as our Lead Architect.
+
+To write code for this repository, follow this exact workflow:
+
+1. **Open an Issue**: Use the [AI-Assisted Task](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose) template or add the `plan-me` label to a Bug/Feature issue.
+2. **Wait 10 Minutes**: CodeRabbit will automatically scan our entire codebase and reply to your issue with a step-by-step Implementation Plan.
+3. **Refine the Plan**: If the plan looks wrong or you have questions, reply to the issue with `@coderabbitai clarify <your question>`. CodeRabbit will update the plan.
+4. **Write the Code**: You can hand CodeRabbit's exact plan to Cursor, GitHub Copilot, or write it yourself.
+5. **Open a PR**: You **must** link the PR to the issue (`Fixes #123`).
+6. **The Gatekeeper**: CodeRabbit will cross-examine your code against its original plan. If you skipped tests or cut corners, it will block your PR before a human ever looks at it.
+
+---
+
 ## 2. Local Development Setup (The Setup)
 
 We believe in a "single command setup". You do not need to decipher a 10-page guide to run this project.
@@ -173,6 +188,8 @@ This format enables our **Semantic Release** pipeline to automatically generate 
 
 Before opening a PR, please confirm:
 
+- [ ] You have linked the PR to an existing issue using `Fixes #<number>`.
+- [ ] You have verified that your code strictly follows the CodeRabbit implementation plan on the linked issue.
 - [ ] `python -m py_compile scripts/update_jobs.py` passes with no errors
 - [ ] `python test_config.py` passes
 - [ ] You have tested any scraper changes locally (via `cd scripts && python update_jobs.py`)
@@ -192,10 +209,11 @@ Before opening a PR, please confirm:
 
 Use the structured issue templates:
 
+- **[🤖 AI-Assisted Task](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=01_ai_assisted_task.yml)** — Start here! CodeRabbit will analyze the repo and generate a step-by-step coding plan for your idea.
 - **[Bug Report](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=bug_report.yml)** — broken links, scraper failures, incorrect listings
+- **[Feature Request](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=feature_request.yml)** — suggest an improvement
 - **[New Role](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml)** — submit a job our scraper missed
 - **[Edit Role](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=edit_role.yml)** — report a closed or incorrect listing
-- **[Feature Request](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=feature_request.yml)** — suggest an improvement
 - **[Architecture Proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=architecture_proposal.yml)** — major structural changes
 
 > 💬 Not sure if it's an issue? Start a [Discussion](https://github.com/ambicuity/New-Grad-Jobs/discussions) instead.
