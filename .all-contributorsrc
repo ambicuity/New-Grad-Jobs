@@ -9,6 +9,20 @@
   "imageSize": 100,
   "commit": false,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "ambicuity",
+      "name": "Ritesh Rana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44251619?v=4",
+      "profile": "https://github.com/ambicuity",
+      "contributions": [
+        "code",
+        "infra",
+        "doc",
+        "maintenance",
+        "ideas"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
