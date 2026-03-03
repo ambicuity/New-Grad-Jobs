@@ -1808,7 +1808,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 ### 🎯 Filtering Criteria
 - **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
 - **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
-- **Recency**: Jobs posted within the last {config['filters']['max_age_days']} days
+- **Recency**: Jobs posted within the last {config.get('filtering', {}).get('max_age_days', 60)} days
 - **Location**: USA-based positions only
 
 ### 🏢 Companies Monitored
