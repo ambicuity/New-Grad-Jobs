@@ -4,7 +4,7 @@ build-backend = "setuptools.backends.legacy:build"
 
 [project]
 name = "new-grad-jobs"
-version = "1.0.0"
+version = "0.1.0"
 description = "Automated new grad job aggregator scraping Greenhouse, Lever, Google Careers, and more."
 requires-python = ">=3.11"
 dependencies = [
