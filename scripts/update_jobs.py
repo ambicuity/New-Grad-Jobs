@@ -93,6 +93,11 @@ HTTP_SESSION = create_optimized_session()
 # COMPANY CLASSIFICATIONS
 # ============================================================================
 
+# FAANG_PLUS: Companies classified as the "FAANG+" company tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "FAANG+" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both FAANG_PLUS and a sector set (e.g., DEFENSE) simultaneously.
 FAANG_PLUS = {
     # Original FAANG
     'Google', 'Meta', 'Facebook', 'Amazon', 'Apple', 'Netflix', 'Microsoft',
@@ -118,6 +123,11 @@ FAANG_PLUS = {
     'McDonald\'s', 'Expedia Group', 'TripAdvisor',
 }
 
+# UNICORNS: High-growth private companies classified as the "Unicorn" company tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "Unicorn" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both UNICORNS and a sector set (e.g., FINANCE) simultaneously.
 UNICORNS = {
     'SpaceX', 'OpenAI', 'Anthropic', 'Databricks', 'Snowflake', 'Palantir',
     'Plaid', 'Robinhood', 'Coinbase', 'Ripple', 'Discord', 'Reddit',
@@ -140,7 +150,11 @@ UNICORNS = {
     'Replit', 'Continue', 'Meshy', 'WeRide', 'Trexquant',
 }
 
-# Defense & Aerospace sector
+# DEFENSE: Companies classified globally under the defense and aerospace sector tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "Defense" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both DEFENSE and a tier set (e.g., FAANG_PLUS) simultaneously.
 DEFENSE = {
     'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
     'General Dynamics', 'General Dynamics Mission Systems', 'General Dynamics Information Technology',
@@ -151,7 +165,11 @@ DEFENSE = {
     'AMERICAN SYSTEMS', 'T-Rex Solutions', 'Wyetech', 'Altamira Technologies',
 }
 
-# Finance sector
+# FINANCE: Companies classified globally under the finance and banking sector tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "Finance" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both FINANCE and a tier set (e.g., UNICORNS) simultaneously.
 FINANCE = {
     'Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'J.P. Morgan', 'JP Morgan Chase', 'Bloomberg',
     'Two Sigma', 'Citadel', 'Citadel Securities', 'Jane Street', 'D.E. Shaw', 'DE Shaw', 'DRW',
@@ -165,7 +183,11 @@ FINANCE = {
     'GM financial', 'Nelnet', 'Aflac',
 }
 
-# Healthcare sector
+# HEALTHCARE: Companies classified globally under the healthcare and biotech sector tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "Healthcare" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both HEALTHCARE and a tier set (e.g., STARTUPS) simultaneously.
 HEALTHCARE = {
     'iRhythm', 'Epic Systems', 'Cerner', 'Philips Healthcare', 'Siemens Healthineers',
     'GE Healthcare', 'Medtronic', 'Johnson & Johnson', 'Pfizer', 'Moderna',
@@ -175,7 +197,11 @@ HEALTHCARE = {
     'Citizen Health', 'Solace Health', 'Healthfirst', 'Candid Health', 'MedImpact',
 }
 
-# Startups (early-stage, smaller companies)
+# STARTUPS: Early-stage or smaller companies classified as the "Startup" tier.
+# Consumed by: get_company_tier() at line ~302.
+# This classification surfaces in the frontend's "Startup" company-tier filter.
+# To add a company: append its name exactly as it appears in job API responses.
+# A company may appear in both STARTUPS and a sector set simultaneously.
 STARTUPS = {
     'Vercel', 'Supabase', 'PlanetScale', 'Railway', 'Zepto', 'Zepz',
     'Zealthy', 'Qumulo', 'Runway', 'Hugging Face', 'Weights & Biases',
@@ -185,7 +211,13 @@ STARTUPS = {
     'OffDeal', 'Eventual', 'Mechanize', 'Remi', 'TrueBuilt', 'Uare.ai',
 }
 
-# Job categories based on title keywords
+# CATEGORY_PATTERNS: Job categories based on exact title keywords.
+# Consumed by: categorize_job() at line ~280.
+# This classification determines the category emoji, section, and grouping in the frontend output.
+# To add a new category: create a new dictionary key with 'name', 'emoji', and a 'keywords' list.
+# To add a new keyword to a category: append the lowercase keyword to the appropriate 'keywords' list.
+# Note on matching: Keywords are matched using word boundaries (exact phrase matching using regex '\b').
+# If no keyword matches naturally, the job defaults to the 'other' category block.
 CATEGORY_PATTERNS = {
     'software_engineering': {
         'name': 'Software Engineering',
