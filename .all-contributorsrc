@@ -31,6 +31,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rvac-bucky",
+      "name": "rvac-bucky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/263012179?v=4",
+      "profile": "https://github.com/rvac-bucky",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
