@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta
 from functools import lru_cache
@@ -279,10 +280,10 @@ def load_config() -> Dict[str, Any]:
 
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     """Categorize a job based on its title and description"""
-    import re
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
+
 
     # Priority check for TPM to avoid matching generic 'infrastructure' or 'program' first
     if re.search(r'\btpm\b', combined):
@@ -1365,10 +1366,9 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Save daily market snapshot for historical tracking, comparisons, and ML predictions.
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
-    from collections import Counter
-
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
+
 
     # Count jobs by category
     category_counts = Counter()
@@ -1530,7 +1530,8 @@ def predict_hiring_trends() -> None:
     # Call Gemini API
     try:
         headers = {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'x-goog-api-key': api_key
         }
 
         prompt = f"""Analyze this new graduate tech hiring market data and provide predictions for the next 30 days.
@@ -1586,7 +1587,7 @@ Respond in JSON format:
         }
 
         response = HTTP_SESSION.post(
-            f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}',
+            'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
             headers=headers,
             json=payload,
             timeout=12  # AGGRESSIVE: Reduced from 20s for 10K companies
@@ -1630,9 +1631,8 @@ Respond in JSON format:
 
     except Exception as e:
         error_msg = str(e)
-        if api_key:
-            error_msg = error_msg.replace(api_key, '***REDACTED***')
         print(f"  ❌ Failed to generate predictions: {error_msg}")
+
 
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
@@ -1818,11 +1818,11 @@ def main():
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
     """
-    import time as perf_time
-    start_time = perf_time.time()
+    start_time = time.time()
 
     print("🚀 Starting job aggregation (PARALLEL MODE)...")
     print("=" * 60)
+
 
     # Load configuration
     config = load_config()
@@ -1931,7 +1931,6 @@ def main():
 
     # Generate JSON data
     # Sanitize jobs to remove NaN values
-    import math
     def sanitize_value(v):
         if isinstance(v, float):
             if math.isnan(v) or math.isinf(v):
@@ -1979,7 +1978,7 @@ def main():
         sys.exit(1)
 
     # Report execution time
-    elapsed = perf_time.time() - start_time
+    elapsed = time.time() - start_time
     print("\n" + "=" * 60)
     print(f"✅ Job aggregation complete!")
     print(f"⏱️  Total execution time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
