@@ -1,7 +1,7 @@
 name: "🐛 Bug Report"
 description: Report a bug or issue with the repository
 title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "plan-me"]
 body:
   - type: markdown
     attributes:

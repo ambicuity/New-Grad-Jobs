@@ -1,0 +1,130 @@
+# .coderabbit.yaml — New Grad Jobs
+# CodeRabbit configuration for a solo-maintained OSS repository.
+# Strategy: Automate the planning, enforce the execution.
+# Docs: https://docs.coderabbit.ai/
+
+language: "en-US"
+early_access: true
+
+# ============================================================================
+# ISSUE ENRICHMENT — The Lead Architect
+# When a contributor opens an issue with a trigger label, CodeRabbit
+# researches the full codebase and posts a step-by-step implementation plan
+# directly on the issue. Contributors interact with @coderabbitai before
+# writing a single line of code.
+# ============================================================================
+issue_enrichment:
+  planning:
+    enabled: true
+    auto_planning:
+      enabled: true
+      labels:
+        - "plan-me"        # Explicit opt-in trigger
+        - "feature"        # All feature requests get a plan
+        - "bug"            # All bugs get a root-cause plan
+        - "enhancement"    # Enhancements get a plan
+        - "intermediate"   # Intermediate difficulty issues get a plan
+        - "advanced"       # Advanced issues always get a plan
+
+# ============================================================================
+# CODE REVIEWS — The Gatekeeper
+# CodeRabbit cross-references every PR against the linked issue's plan.
+# If the contributor cut corners, skipped tests, or hallucinated code,
+# CodeRabbit blocks them before the maintainer needs to look at it.
+# ============================================================================
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+
+  # CRITICAL: Cross-examines submitted code against the original issue plan.
+  # If the PR doesn't actually solve the linked issue, CodeRabbit will say so.
+  assess_linked_issues: true
+
+  # Auto-review all PRs immediately on open/sync — no manual trigger needed.
+  auto_review:
+    enabled: true
+    drafts: false          # Skip draft PRs
+    base_branches:
+      - "main"
+
+  # ===== PATH-SPECIFIC REVIEW DIRECTIVES =====
+  # These are injected into CodeRabbit's context when it reviews each file.
+  path_instructions:
+
+    # ── Core Scraper Engine ──────────────────────────────────────────────────
+    - path: "scripts/update_jobs.py"
+      instructions: |
+        This is the mission-critical scraper engine. Apply peak scrutiny.
+        1. ALL HTTP calls must use `create_optimized_session()`. Reject any `requests.get()` calls.
+        2. ALL exception handlers must catch specific exceptions — no bare `except:` clauses.
+        3. `ThreadPoolExecutor` workers must not mutate shared state without locks.
+        4. Date parsing must handle: None, NaN, float, empty string, Unix ms timestamps (Lever), and "Posted X Days Ago" strings (JobSpy).
+        5. Any new function must have a Google-style docstring and full type hints.
+        6. Magic numbers (timeouts, max_workers, page sizes) must be extracted to constants.
+
+    # ── Configuration ────────────────────────────────────────────────────────
+    - path: "config.yml"
+      instructions: |
+        All parameters that control scraper behavior live here, not in Python.
+        Reject any PR that hardcodes a value in `update_jobs.py` that should live in `config.yml`.
+        Validate that required top-level keys are present: `filtering`, `greenhouse`, `lever`, `readme`.
+
+    # ── GitHub Actions Workflows ─────────────────────────────────────────────
+    - path: ".github/workflows/**"
+      instructions: |
+        SECURITY-CRITICAL. Apply zero-trust review.
+        1. Workflow permissions must be minimally scoped (`contents: read` unless write is explicitly justified).
+        2. Flag any `pull_request_target` trigger — these have write access to the base repo.
+        3. All `actions/` steps must pin to a full commit SHA, not a mutable tag like `@v3`.
+        4. Reject any workflow that echoes or logs GitHub secrets.
+        5. Verify that bot-facing `github-script` steps only expose the minimum required GitHub API methods.
+
+    # ── Tests ────────────────────────────────────────────────────────────────
+    - path: "tests/**"
+      instructions: |
+        Tests must be deterministic and offline.
+        1. No live network calls — mock all HTTP requests.
+        2. No `datetime.now()` without injection — parameterize the reference date.
+        3. Edge cases are mandatory: empty inputs, None, NaN, Unicode strings, very long titles.
+        4. Every new function in `update_jobs.py` must have at least one corresponding test.
+
+    # ── Documentation ────────────────────────────────────────────────────────
+    - path: "docs/**"
+      instructions: |
+        Enforce documentation quality.
+        1. All markdown must use proper heading hierarchy (single H1, sequential H2/H3).
+        2. Code blocks must specify a language identifier.
+        3. Tables must have aligned headers.
+        4. No broken internal links.
+
+    # ── Catch-all ────────────────────────────────────────────────────────────
+    - path: "**/*"
+      instructions: |
+        SOLO MAINTAINER ANTI-LAZY-AI DIRECTIVE:
+        This repository is solo-maintained. Every PR must be self-contained and production-ready.
+        1. The contributor must NOT have blindly copy-pasted an AI-generated plan without verification.
+        2. Demand unit tests that cover edge cases, not just the happy path.
+        3. Flag any breaking changes to public-facing data fields in `jobs.json`.
+        4. Reject PRs that touch `README.md` directly — it is auto-generated.
+        5. Reject PRs that touch `jobs.json` directly — it is auto-generated.
+        6. Reject any introduction of: PostgreSQL, MongoDB, Redis, React, Vue, Next.js, Tailwind, Airflow, Temporal.
+
+# ============================================================================
+# CHAT — The On-Demand Advisor
+# Contributors can interact with @coderabbitai directly on issues and PRs
+# to get clarifications, ask follow-up questions, or request plan refinements.
+# ============================================================================
+chat:
+  auto_reply: true
+
+# ============================================================================
+# KNOWLEDGE BASE — The Memory
+# CodeRabbit learns from its own past reviews to maintain consistency.
+# ============================================================================
+knowledge_base:
+  learnings:
+    scope: "auto"
+  issues:
+    scope: "auto"
+  pull_requests:
+    scope: "auto"

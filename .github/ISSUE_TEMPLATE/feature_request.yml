@@ -1,7 +1,7 @@
 name: "✨ Feature Request"
 description: Suggest an improvement or new capability for the project
 title: "[FEAT] "
-labels: ["enhancement", "needs-triage"]
+labels: ["enhancement", "needs-triage", "plan-me"]
 body:
   - type: markdown
     attributes:
