@@ -21,7 +21,7 @@ jobs:
        github.event.comment.author_association == 'MEMBER' ||
        github.event.comment.author_association == 'COLLABORATOR')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: all-contributors/all-contributors-bot@v1
         with:
