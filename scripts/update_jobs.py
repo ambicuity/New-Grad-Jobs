@@ -14,6 +14,7 @@ Performance Optimizations:
 """
 
 import json
+import math
 import os
 import re
 import sys
@@ -970,7 +971,6 @@ def get_job_key(job: Dict[str, Any]) -> str:
             return ''
         if isinstance(value, float):
             # Handle NaN and other floats
-            import math
             if math.isnan(value):
                 return ''
             return str(value)
