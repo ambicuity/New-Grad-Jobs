@@ -15,7 +15,7 @@ jobs:
     if: ${{ !github.event.issue.pull_request }}
     steps:
       - name: Parse Comment and Execute
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const commentBody = context.payload.comment.body.toLowerCase();
