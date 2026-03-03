@@ -34,11 +34,18 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run unit tests with coverage
-        run: pytest tests/ -v --cov=scripts --cov-report=term-missing --cov-report=xml
+        run: pytest tests/ -v --cov=scripts --cov-report=term-missing --cov-report=xml --junitxml=junit.xml -o junit_family=legacy
 
-      - name: Upload coverage report
+      - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         if: ${{ !cancelled() }}
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
           fail_ci_if_error: false
+
+      - name: Upload test results to Codecov
+        uses: codecov/test-results-action@v1
+        if: ${{ !cancelled() }}
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
