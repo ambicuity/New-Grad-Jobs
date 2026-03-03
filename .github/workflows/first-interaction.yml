@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/first-interaction@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: |
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_message: |
             👋 Welcome, and thank you for opening your first issue on **New Grad Jobs**!
 
             A maintainer will review this shortly. In the meantime:
@@ -26,15 +26,9 @@ jobs:
             - If this is a job listing request, use the [New Role template](../../issues/new?template=new_role.yml)
 
             Every report and contribution helps thousands of new graduates find their first tech job. We appreciate you! 🚀
-          pr-message: |
-            👋 Welcome to the project, and thank you so much for opening this PR!
+          pr_message: |
+            👋 Thank you for your first pull request to **New Grad Jobs**!
 
-            Our CI bots are currently running some automated checks on your code. In the meantime, if you find this project useful or enjoyed contributing, we'd love it if you gave the repo a ⭐️! It helps other developers find our work.
+            Our CI bots are running checks on your code now. A maintainer will review your changes shortly.
 
-            I will be with you shortly to review your changes.
-
-            Before your PR is reviewed, please confirm:
-            - [ ] All checklist items in the PR template are addressed
-            - [ ] `python test_config.py` passes locally
-            - [ ] If you modified `scripts/`, run `python -m py_compile scripts/update_jobs.py`
-            - [ ] You have **not** manually edited `README.md` (it's auto-generated)
+            If you find this project useful, we'd love a ⭐️ — it helps other developers find our work. 🚀
