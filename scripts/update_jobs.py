@@ -43,7 +43,7 @@ DEFAULT_GOOGLE_MAX_WORKERS: int = 100
 
 # Constants for fixed worker pools
 DEFAULT_JOBSPY_WORKERS: int = 25
-DEFAULT_ORCHESTRATOR_WORKERS: int = 10
+DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 
 # Import JobSpy for additional job site scraping
 try:
