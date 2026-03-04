@@ -32,6 +32,19 @@ from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# Worker pool configuration constants
+# Constants for the auto-scaling functions
+DEFAULT_GREENHOUSE_MIN_WORKERS: int = 30
+DEFAULT_GREENHOUSE_MAX_WORKERS: int = 300
+DEFAULT_LEVER_MIN_WORKERS: int = 15
+DEFAULT_LEVER_MAX_WORKERS: int = 200
+DEFAULT_GOOGLE_MIN_WORKERS: int = 12
+DEFAULT_GOOGLE_MAX_WORKERS: int = 100
+
+# Constants for fixed worker pools
+DEFAULT_JOBSPY_WORKERS: int = 25
+DEFAULT_ORCHESTRATOR_WORKERS: int = 20
+
 # Import JobSpy for additional job site scraping
 try:
     from jobspy import scrape_jobs
@@ -776,7 +789,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
 
     # Use ThreadPoolExecutor for parallel execution
     # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
-    with ThreadPoolExecutor(max_workers=25) as executor:
+    with ThreadPoolExecutor(max_workers=DEFAULT_JOBSPY_WORKERS) as executor:
         # Submit all tasks
         future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
 
@@ -851,7 +864,7 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
 
     # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
     if max_workers is None:
-        max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
+        max_workers = min(DEFAULT_GREENHOUSE_MAX_WORKERS, max(DEFAULT_GREENHOUSE_MIN_WORKERS, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
@@ -887,7 +900,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
+        max_workers = min(DEFAULT_LEVER_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total))  # AGGRESSIVE: 15-200 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
@@ -920,7 +933,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
 
     # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
     if max_workers is None:
-        max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
+        max_workers = min(DEFAULT_GOOGLE_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
 
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
 
@@ -1892,7 +1905,7 @@ def main():
 
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
     # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
-    with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
+    with ThreadPoolExecutor(max_workers=DEFAULT_ORCHESTRATOR_WORKERS) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
 
         # Submit Greenhouse parallel fetch
