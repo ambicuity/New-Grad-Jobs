@@ -18,9 +18,11 @@ import math
 import os
 import re
 import sys
+import threading
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from contextlib import contextmanager
 from datetime import date, datetime, timedelta
 from functools import lru_cache
 from typing import Any, Dict, List
@@ -88,6 +90,79 @@ def create_optimized_session() -> requests.Session:
 
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
+
+
+class DomainConcurrencyLimiter:
+    """Thread-safe per-domain concurrency limiter using native Python primitives.
+
+    Domains with configured limits are guarded by a BoundedSemaphore. Domains
+    without explicit limits are left unthrottled.
+    """
+
+    def __init__(self, limits: Dict[str, int]):
+        self._limits = {
+            domain.lower(): limit
+            for domain, limit in limits.items()
+            if isinstance(limit, int) and limit > 0
+        }
+        self._lock = threading.Lock()
+        self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
+
+    def _domain_for_url(self, url: str) -> str:
+        return (urlparse(url).netloc or "").split(":")[0].lower()
+
+    def _limit_for_domain(self, domain: str) -> int:
+        if domain in self._limits:
+            return self._limits[domain]
+
+        # Support subdomains matching, e.g. jobs.api.greenhouse.io -> api.greenhouse.io
+        for configured_domain, limit in self._limits.items():
+            if domain.endswith(f".{configured_domain}"):
+                return limit
+
+        return 0
+
+    def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
+        limit = self._limit_for_domain(domain)
+        if limit <= 0:
+            return None
+
+        with self._lock:
+            semaphore = self._semaphores.get(domain)
+            if semaphore is None:
+                semaphore = threading.BoundedSemaphore(limit)
+                self._semaphores[domain] = semaphore
+            return semaphore
+
+    @contextmanager
+    def acquire(self, url: str):
+        domain = self._domain_for_url(url)
+        semaphore = self._get_semaphore(domain)
+        if semaphore is None:
+            yield
+            return
+
+        semaphore.acquire()
+        try:
+            yield
+        finally:
+            semaphore.release()
+
+
+# Cap greenhouse API concurrency while leaving other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+
+
+def limited_get(url: str, **kwargs):
+    """HTTP GET wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.get(url, **kwargs)
+
+
+def limited_post(url: str, **kwargs):
+    """HTTP POST wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.post(url, **kwargs)
 
 # ============================================================================
 # COMPANY CLASSIFICATIONS
@@ -398,7 +473,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -454,7 +529,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -517,7 +592,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
 
@@ -633,7 +708,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
 
-                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
                 if response.status_code == 404:
                      # Try alternative tenant extraction if 404
@@ -644,7 +719,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                          tenant = path_parts[0]
                          site_id = path_parts[-1]
                          api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                         response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -937,7 +1012,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
 
@@ -1618,7 +1693,7 @@ Respond in JSON format:
             }
         }
 
-        response = HTTP_SESSION.post(
+        response = limited_post(
             'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
             headers=headers,
             json=payload,
