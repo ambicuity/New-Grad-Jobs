@@ -89,6 +89,8 @@ def create_optimized_session() -> requests.Session:
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
 
+# Default timeout for HTTP requests (can be overridden via parameter)
+DEFAULT_TIMEOUT = 5
 # ============================================================================
 # COMPANY CLASSIFICATIONS
 # ============================================================================
@@ -388,7 +390,7 @@ def is_job_closed(title: str, description: str = '') -> bool:
     closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
 
-def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
     for attempt in range(max_retries + 1):
@@ -398,7 +400,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = HTTP_SESSION.get(url, timeout=timeout)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -444,7 +446,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
 
     return jobs
 
-def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
     jobs = []
     for attempt in range(max_retries + 1):
@@ -454,7 +456,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = HTTP_SESSION.get(url, timeout=timeout)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -500,7 +502,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
 
     return jobs
 
-def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_google_jobs(search_terms: List[str], max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers API with retry logic"""
     all_jobs = []
 
@@ -517,7 +519,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 search_query = search_term.replace(' ', '%20')
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = HTTP_SESSION.get(url, timeout=timeout)  # AGGRESSIVE: 5s for 10K
                 response.raise_for_status()
                 data = response.json()
 
