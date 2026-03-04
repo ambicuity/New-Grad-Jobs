@@ -900,7 +900,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(DEFAULT_LEVER_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total))  # AGGRESSIVE: 15-200 workers for 10K
+        max_workers = min(DEFAULT_LEVER_MAX_WORKERS, max(DEFAULT_LEVER_MIN_WORKERS, total))  # AGGRESSIVE: 15-200 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
