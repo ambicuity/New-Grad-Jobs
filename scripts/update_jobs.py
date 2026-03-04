@@ -41,6 +41,17 @@ except ImportError:
     print("⚠️  JobSpy not available. Install with: pip install python-jobspy")
 
 # ============================================================================
+# CONSTANTS
+# ============================================================================
+
+# Default countries used by JobSpy when none are specified in configuration.
+DEFAULT_JOBSPY_COUNTRIES: List[Dict[str, str]] = [
+    {'code': 'USA', 'location': 'United States'},
+    {'code': 'Canada', 'location': 'Canada'},
+    {'code': 'India', 'location': 'India'},
+]
+
+# ============================================================================
 # PERFORMANCE OPTIMIZATION: CONNECTION POOLING & SESSION MANAGEMENT
 # ============================================================================
 
@@ -709,12 +720,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
 
-    # Countries to search - USA, Canada, India
-    countries = config_jobspy.get('countries', [
-        {'code': 'USA', 'location': 'United States'},
-        {'code': 'Canada', 'location': 'Canada'},
-        {'code': 'India', 'location': 'India'}
-    ])
+    countries = config_jobspy.get('countries', DEFAULT_JOBSPY_COUNTRIES)
 
     # Build list of all (site, search_term, country) combinations
     search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
