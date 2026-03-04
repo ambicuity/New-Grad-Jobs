@@ -356,9 +356,68 @@ Resolves #789
 
 This is a **hard requirement**. Unlinked PRs will be asked to add the link before review begins.
 
-#### 5.5 — Title your PR
+#### 5.5 — Title your PR correctly (most common mistake)
 
-Use a Conventional Commit title, or just name the PR `@coderabbitai` and the bot will generate the correct title for you automatically.
+> [!IMPORTANT]
+> **The bot will reject your PR automatically if the title is wrong.** It will post a
+> comment explaining the correct format. Fix the title and the check will re-run.
+
+##### Format
+
+```
+<type>(<scope>): <short summary in imperative mood, lowercase, no period>
+```
+
+##### Types — pick the one that matches your change
+
+| Type | Use when… | Example |
+|------|-----------|---------|
+| `feat` | You added a new feature or new company | `feat(config): add Stripe to Greenhouse companies` |
+| `fix` | You fixed a bug | `fix(scraper): handle None date in normalize_date_string` |
+| `docs` | Documentation only, no code change | `docs(contributing): clarify assignment workflow` |
+| `test` | Added or fixed tests, no production code change | `test(filter): add edge case for empty location string` |
+| `chore` | Maintenance — deps, CI config, housekeeping | `chore(ci): bump actions/checkout from v3 to v4` |
+| `refactor` | Code change that is neither a fix nor a feature | `refactor(scraper): extract date parsing into helper` |
+| `perf` | Performance improvement | `perf(scraper): cache company tier lookups with lru_cache` |
+
+##### Scopes — optional but recommended
+
+Use the area of the repo your change touches:
+
+| Scope | When to use |
+|-------|-------------|
+| `scraper` | Changes to `scripts/update_jobs.py` |
+| `config` | Changes to `config.yml` |
+| `filter` | Changes to `filter_jobs()` or related logic |
+| `dedup` | Changes to `deduplicate_jobs()` or `get_job_key()` |
+| `ci` | GitHub Actions workflow changes |
+| `docs` | Markdown files, `docs/` website |
+| `tests` | Files under `tests/` |
+| `frontend` | HTML/CSS/JS in `docs/` |
+
+##### Real examples from this repo
+
+```
+✅ feat(config): add Palantir and Two Sigma to Greenhouse companies
+✅ fix(scraper): skip jobs with NaN posted_at instead of crashing
+✅ fix(filter): handle Unicode characters in company names
+✅ docs(readme): update contribution steps in CONTRIBUTING.md
+✅ test(dedup): add test for get_job_key with math.nan input
+✅ chore(ci): pin trivy-action to v0.28.0 for reproducibility
+✅ refactor(scraper): move sponsorship detection to detect_sponsorship_flags()
+✅ perf(scraper): reduce max_workers from 300 to 100 for Workday endpoints
+
+❌ Update config                          ← no type, no scope
+❌ Fixed the bug                          ← no type, too vague
+❌ feat: Added new companies to the list  ← not imperative mood, has capital letter
+❌ WIP: testing stuff                     ← not a valid type
+```
+
+##### Shortcut: let the bot do it
+
+Name your PR exactly `@coderabbitai` as the title. CodeRabbit will read your
+diff and rename it to a correct Conventional Commit title automatically within
+a few seconds of opening the PR.
 
 ---
 
