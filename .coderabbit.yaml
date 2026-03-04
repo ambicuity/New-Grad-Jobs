@@ -93,13 +93,12 @@ reviews:
     - path: ".github/workflows/**"
       instructions: |
         SECURITY-CRITICAL. Apply zero-trust review.
-        1. Workflow permissions must be minimally scoped (`contents: read` unless write is justified).
-        2. Flag any `pull_request_target` trigger — these have write access to the base repo.
-        3. All `actions/` steps must pin to a full commit SHA, not a mutable tag like `@v3`.
+        1. Workflow permissions must be minimally scoped (`contents: read` unless write is justified and documented).
+        2. Flag any `pull_request_target` trigger — these have write access to the base repo and can be exploited if the workflow checks out untrusted code.
+        3. All `actions/` steps should pin to a specific version tag (e.g. `@v7`). Pinning to a full commit SHA is encouraged for high-risk steps but is not required for standard actions already in use. Do NOT flag Dependabot PRs that bump from one version tag to another.
         4. Reject any workflow that echoes or logs GitHub secrets or tokens.
-        5. `github-script` steps must only expose the minimum required GitHub API methods.
-        6. Flag any new workflow that could be triggered by external contributors without
-           a stale-check or approval gate.
+        5. `github-script` steps must only use the minimum required GitHub API methods.
+        6. Flag any new workflow triggereable by external contributors without an approval gate or user-allowlist check.
 
     # ── Tests ────────────────────────────────────────────────────────────────
     - path: "tests/**"

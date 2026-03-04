@@ -1,0 +1,136 @@
+name: "🧠 Advanced Issue"
+description: A high-impact task for contributors with deep familiarity with the scraper codebase
+title: "[Advanced]: "
+labels: ["advanced", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Thanks for contributing! 🚀
+
+        This template is for **Advanced Issues** — work that requires deep familiarity with
+        `update_jobs.py` and confidence making changes that may span multiple functions or
+        affect core behavior (pagination, deduplication, threading, date parsing).
+
+        Before creating an Advanced Issue, consider opening an
+        [Architecture Proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=architecture_proposal.yml)
+        if the change touches the overall data flow or job schema.
+        ---
+
+  - type: textarea
+    id: intro
+    attributes:
+      label: "🧠 Advanced Contributors"
+      description: Who is this issue for?
+      value: |
+        This issue is for contributors who are already very familiar with this codebase
+        and its architectural patterns.
+
+        You should feel comfortable:
+        - Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit
+        - Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations
+        - Navigating `filter_jobs()`, `deduplicate_jobs()`, `get_job_key()`, and `normalize_date_string()`
+        - Reasoning about API contract changes (Greenhouse, Lever, Workday, JobSpy)
+        - Understanding the git commit flow in `update-jobs.yml`
+        - Writing rigorous, deterministic tests without live network calls
+
+        > [!IMPORTANT]
+        > **You must be assigned before starting** — comment `/assign` to claim this issue.
+        > PRs submitted without a prior assignment will be closed.
+
+        New contributors should start with **Good First Issues** or **Beginner Issues** first.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > ### 🧭 What we consider an Advanced Issue in this repo
+        >
+        > This issue typically:
+        > - Requires **deep understanding of the scraper architecture** (not just a single function)
+        > - May touch **shared utilities** used across multiple API sources (e.g. `get_job_key`, `normalize_date_string`)
+        > - May involve **non-trivial refactors**, thread-safety changes, or behavior extensions
+        > - Has **medium to high risk** if implemented incorrectly — could break 5-minute job updates
+        > - Requires careful consideration of **backward compatibility** with `jobs.json` schema
+        > - Requires updating **tests, CI, and documentation together**
+        >
+        > **What this issue is NOT:**
+        > - A simple config addition or keyword fix
+        > - A narrowly scoped utility function change
+        > - A task solvable by following an existing pattern
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🐞 Problem Description"
+      description: |
+        Describe the problem in depth. You may assume the reader understands the full scraper
+        architecture. Explain: what the current behavior is, why it is insufficient, which
+        components are involved, and any relevant historical or design context.
+      value: |
+        Describe the problem here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "💡 Proposed / Expected Solution"
+      description: |
+        Describe the intended direction or design. Include the high-level approach,
+        which components will change, what will NOT change, and key trade-offs.
+        This does not need to be a complete implementation plan — CodeRabbit will
+        generate a detailed plan after this issue is submitted.
+      value: |
+        Describe the proposed solution here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "✅ Acceptance Criteria"
+      description: What must be true for this issue to be considered complete?
+      value: |
+        - [ ] All described behavior changes are implemented correctly
+        - [ ] Thread-safety is preserved (no shared mutable state without locks)
+        - [ ] All edge cases handled: None, NaN, empty string, Unicode, malformed API responses
+        - [ ] All existing `pytest tests/` pass
+        - [ ] New tests added for every changed code path (deterministic — no live network calls)
+        - [ ] `pre-commit run --all-files` passes
+        - [ ] `jobs.json` schema remains backward compatible with docs/app.js
+        - [ ] PR is linked to this issue with `Fixes #<number>`
+        - [ ] PR title follows Conventional Commits format
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "🏗️ Which area does this touch?"
+      options:
+        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "⚙️ Configuration (config.yml)"
+        - "🌐 Frontend / website (docs/)"
+        - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
+        - "🧪 Tests (tests/)"
+        - "📚 Documentation (*.md, docs/wiki/)"
+        - "🏷️ Company data / classification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "🔗 Additional Context"
+      description: Links to relevant code, API docs, prior issues, related functions, or error logs.
+      placeholder: |
+        - Function: `deduplicate_jobs()` at update_jobs.py:985
+        - Related: `get_job_key()` at update_jobs.py:962
+        - Prior discussion: #42
+        - Architecture reference: docs/architecture.md

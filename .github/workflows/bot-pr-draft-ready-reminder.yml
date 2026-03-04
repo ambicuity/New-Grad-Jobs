@@ -1,0 +1,77 @@
+name: Draft PR Ready-for-Review Reminder
+
+on:
+  schedule:
+    # Run every Tuesday at 10:00 UTC — gives time after Monday's inactivity check
+    - cron: '0 10 * * 2'
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+
+jobs:
+  draft-reminder:
+    name: Remind Draft PR Authors to Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check draft PRs for age and remind
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const now = Date.now();
+            const MS_PER_DAY = 1000 * 60 * 60 * 24;
+            const REMIND_AFTER_DAYS = 5;
+
+            const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
+
+            // Fetch all open PRs — filter for drafts
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner, repo, state: 'open', per_page: 100
+            });
+
+            const draftPRs = pulls.filter(pr => pr.draft);
+            console.log(`Found ${draftPRs.length} draft PR(s).`);
+
+            for (const pr of draftPRs) {
+              const author = pr.user.login;
+              if (EXEMPT_USERS.includes(author)) continue;
+
+              const createdAt = new Date(pr.created_at).getTime();
+              const daysOpen = (now - createdAt) / MS_PER_DAY;
+
+              if (daysOpen < REMIND_AFTER_DAYS) {
+                console.log(`Draft PR #${pr.number}: ${daysOpen.toFixed(1)}d old. Too soon to remind.`);
+                continue;
+              }
+
+              // Check if we've already reminded recently (look for prior bot comment)
+              const comments = await github.rest.issues.listComments({
+                owner, repo, issue_number: pr.number
+              });
+
+              const alreadyNudged = comments.data.some(c =>
+                c.user.login === 'github-actions[bot]' &&
+                c.body.includes('still working on this draft PR')
+              );
+
+              if (alreadyNudged) {
+                console.log(`Draft PR #${pr.number}: Already reminded. Skipping.`);
+                continue;
+              }
+
+              console.log(`Draft PR #${pr.number} by ${author}: ${daysOpen.toFixed(1)}d old. Sending reminder.`);
+
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: pr.number,
+                body: `👋 Hi @${author}! Are you still working on this draft PR?\n\n` +
+                  `It's been **${Math.floor(daysOpen)} days** since it was opened. If it's ready for review, ` +
+                  `please click **"Ready for Review"** to take it out of draft mode — that's when the maintainer ` +
+                  `and automated CI checks will start evaluating it.\n\n` +
+                  `If you need more time, no worries — just leave a comment so we know it's still in progress. ` +
+                  `If you're stuck, comment \`/need help\` and the maintainer will assist. 🙏`
+              });
+            }

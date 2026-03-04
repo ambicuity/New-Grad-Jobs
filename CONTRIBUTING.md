@@ -551,6 +551,49 @@ Our repository uses bots to automate the contributor workflow. You can interact 
 
 ---
 
+## 13. When Will My PR Be Merged?
+
+The maintainer (`@ambicuity`) merges PRs manually after reviewing. Here is the exact decision matrix:
+
+### ✅ Ready to Merge — all of the following must be true:
+
+| Check | Required? |
+|-------|-----------|
+| All required CI checks are green | ✅ Yes |
+| At least one maintainer approval (`@ambicuity`) | ✅ Yes |
+| PR body contains `Fixes #N` / `Closes #N` | ✅ Yes |
+| PR title follows Conventional Commits format | ✅ Yes |
+| No merge conflicts with `main` | ✅ Yes |
+| PR has been open ≥ 24 hours (except trivial config additions) | ✅ Yes |
+
+### ⚠️ Partial Red — Some failures are acceptable:
+
+| Failing Check | Can We Merge? | Why |
+|---------------|--------------|-----|
+| Codecov upload | ✅ Yes | Informational only — token issues don't block correctness |
+| Check Dead Links (on config-only PRs) | ✅ Yes | README link checker fires false positives on `config.yml` PRs |
+| All-Contributors bot | ✅ Yes | Community recognition — never blocks a merge |
+
+### ❌ Hard Blockers — Do NOT merge:
+
+| Failing Check | Why It Blocks |
+|---------------|--------------|
+| `CI — Lint & Validate` | Syntax errors or broken config will break the scraper |
+| `Test Suite (pytest)` | Failing tests = known regression |
+| `Code Hygiene (Pre-commit)` | Secrets, malformed YAML, broken imports |
+| `CodeQL Security Scan` | Security vulnerability in merged code |
+| `Trivy` | Known dependency CVE at CRITICAL/HIGH severity |
+| `Validate Job Submissions` | Malformed `jobs.json` will break GitHub Pages |
+| `PR Title Check` | PR cannot be auto-merged without a clean commit message |
+| `Linked Issue Enforcer` | Every community PR must be tied to a tracked issue |
+| Merge conflict | Cannot squash-merge a conflicted PR |
+
+### Auto-Merge (Dependabot)
+
+Dependabot patch and minor updates are **automatically approved and squash-merged** once all CI checks pass. No manual action needed. Major version bumps require explicit maintainer review.
+
+---
+
 ## 🏆 Contributors
 
 Every contribution is recognized! When your PR is merged, a maintainer will add you to our [Contributors Hall of Fame](./CONTRIBUTORS.md).

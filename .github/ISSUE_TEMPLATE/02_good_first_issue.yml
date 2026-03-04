@@ -1,0 +1,104 @@
+name: "🌟 Good First Issue"
+description: A small, well-scoped task for contributors new to this repo
+title: "[Good First Issue]: "
+labels: ["good first issue", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Welcome to New Grad Jobs! 🎓
+
+        This template creates a **Good First Issue** — a small, guided task that helps new
+        contributors learn the codebase and contribution workflow.
+
+        **Good First Issues are pre-approved by the maintainer.** A contributor can claim it
+        immediately by commenting `/assign`.
+
+        ---
+
+  - type: textarea
+    id: newcomer-intro
+    attributes:
+      label: "🆕 Newcomer Friendly"
+      description: Pre-filled onboarding context — leave as-is unless you need to add task-specific notes.
+      value: |
+        This is a **Good First Issue** — a guided, well-scoped task designed for contributors
+        who are new to this repository.
+
+        #### What you'll do
+        - ✅ Read a small part of the codebase
+        - ✅ Make a focused, well-defined change
+        - ✅ Write or extend a test
+        - ✅ Submit and merge a pull request
+
+        #### Support
+        The maintainer actively monitors Good First Issues and will respond to questions
+        within 24–48 hours.
+
+        > [!IMPORTANT]
+        > **This issue does not require prior scraping or API experience.**
+        >
+        > - Basic Python and Git are sufficient
+        > - You must be assigned before starting — comment `/assign` to claim this issue
+        > - Read [CONTRIBUTING.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md)
+        >   before opening a PR
+
+        > [!NOTE]
+        > ⏱️ **Typical time to complete:** 30–90 minutes (once local setup is done)
+        > 🧩 **Difficulty:** Small, well-contained change
+        > 🎓 **Best for:** First-time contributors
+
+        **🏁 When this issue is complete, you will have:**
+        - ✅ A merged PR in a real open-source project
+        - ✅ Your name in the [Contributors Hall of Fame](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTORS.md)
+        - ✅ Confidence to take on larger issues next
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > #### 📋 What makes a Good First Issue in this repo?
+        >
+        > **Often a good fit:**
+        > - Adding a missing company to `config.yml` (Greenhouse, Lever endpoint)
+        > - Fixing a keyword in `categorize_job()` or `get_company_tier()`
+        > - Correcting a typo or broken link in documentation
+        > - Adding a test case for an existing, already-working function
+        > - Small CSS/HTML improvements to `docs/`
+        >
+        > **Not a good fit for GFI:**
+        > - Changes to `filter_jobs()`, `deduplicate_jobs()`, or date parsing
+        > - New scraping source integrations (Workday, Google Careers)
+        > - Architectural changes to `update_jobs.py`
+        >
+        > Those belong in **Beginner**, **Intermediate**, or **Advanced** issues.
+
+  - type: textarea
+    id: task
+    attributes:
+      label: "👾 Task Description"
+      description: |
+        Describe the task clearly enough for someone new to the codebase to understand and complete it.
+        Include the exact file and function to change. Provide a concrete before/after example where possible.
+      value: |
+        _Replace this with the specific task._
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "✅ Acceptance Criteria"
+      description: What must be true for this issue to be considered complete?
+      value: |
+        - [ ] The change is implemented in the correct file/function
+        - [ ] Existing tests still pass (`make test`)
+        - [ ] A test covering the new case is added (if applicable)
+        - [ ] PR is linked to this issue with `Fixes #<number>`
+        - [ ] PR title follows Conventional Commits format
+    validations:
+      required: true

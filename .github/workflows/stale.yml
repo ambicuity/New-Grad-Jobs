@@ -48,6 +48,6 @@ jobs:
 
           # ---- Exemptions ----
           # Never mark these as stale
-          exempt-issue-labels: 'pinned,security,good first issue,help wanted,architecture'
-          exempt-pr-labels: 'pinned,security,work-in-progress'
+          exempt-issue-labels: 'pinned,security,good first issue,good first issue candidate,help wanted,architecture,beginner,intermediate,advanced,needs-triage,plan-me,blocked'
+          exempt-pr-labels: 'pinned,security,work-in-progress,merge-conflict'
           exempt-all-assignees: true

@@ -1,7 +1,11 @@
 # GitHub Labels — New Grad Jobs
 
 All labels used in this repository, grouped by category.
-To recreate them after a fork or fresh repo setup, run the shell script below.
+To create or recreate them after a fork or fresh repo setup, run:
+
+```bash
+bash .github/create-labels.sh
+```
 
 ---
 
@@ -21,13 +25,25 @@ To recreate them after a fork or fresh repo setup, run the shell script below.
 | Label | Color | Description |
 |-------|-------|-------------|
 | `needs-triage` | `#ededed` | Awaiting maintainer review and categorization |
-| `in-progress` | `#fbca04` | Actively being worked on |
+| `status: in-progress` | `#fbca04` | Actively being worked on |
+| `awaiting-response` | `#d4c5f9` | Waiting for the contributor to respond or update |
 | `stale` | `#cccccc` | No activity in 30+ days |
 | `blocked` | `#b60205` | Cannot proceed until a blocker is resolved |
 | `help wanted` | `#008672` | Extra attention needed from the community |
 | `good first issue` | `#7057ff` | Good for newcomers — welcoming entry point |
+| `good first issue candidate` | `#e4e669` | Potential GFI — needs maintainer review before assignment |
+| `plan-me` | `#0075ca` | Triggers CodeRabbit to generate an implementation plan |
+| `merge-conflict` | `#e11d48` | This PR has merge conflicts that must be resolved |
 | `duplicate` | `#cfd3d7` | This issue or PR already exists in the tracker |
 | `wontfix` | `#ffffff` | This will not be worked on |
+
+### 🧩 Difficulty Tier Labels
+| Label | Color | Description |
+|-------|-------|-------------|
+| `good first issue` | `#7057ff` | Guided, small task — no prior codebase experience needed |
+| `beginner` | `#c2e0c6` | Requires some prior contribution; beyond GFI |
+| `intermediate` | `#ffd33d` | Requires codebase familiarity; 2–3 functions involved |
+| `advanced` | `#e6192a` | Requires deep scraper knowledge; high-impact change |
 
 ### 🟢 Job Data Labels
 | Label | Color | Description |
@@ -67,12 +83,8 @@ To recreate them after a fork or fresh repo setup, run the shell script below.
 | `role: ai-ml` | `#7057ff` | Data Science, AI, or Machine Learning |
 | `role: product` | `#a2eeef` | Product Management (PM) |
 
----
-
-## Setup Script
-
-Run this once from the repo root to create all labels (requires `gh` CLI authenticated):
-
-```bash
-bash .github/create-labels.sh
-```
+### 🤖 Automation Labels
+| Label | Color | Description |
+|-------|-------|-------------|
+| `automated pr` | `#0e8a16` | PR created by an automation (Dependabot, Actions bot) |
+| `ci-cd` | `#bfdadc` | Changes to GitHub Actions workflows or CI configuration |
