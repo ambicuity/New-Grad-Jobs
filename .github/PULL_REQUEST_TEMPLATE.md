@@ -39,32 +39,39 @@ Fixes #
 
 ## Changes Made
 
-<!-- List the files you changed and why. -->
-- `scripts/update_jobs.py` — 
-- `config.yml` — 
-- `tests/` — 
+<!-- Which files changed and why? Delete rows that don't apply. -->
+
+| File | What changed |
+|------|-------------|
+| `scripts/update_jobs.py` | |
+| `config.yml` | |
+| `tests/` | |
+| Other | |
 
 ## Testing
 
-<!-- How did you verify this works locally? -->
+<!-- How did you verify this locally before pushing? -->
+
 - [ ] `python -m py_compile scripts/update_jobs.py` — no errors
 - [ ] `make test` — all tests pass
-- [ ] `pre-commit run --all-files` — no errors
-- [ ] Scraper tested locally if applicable: `cd scripts && python update_jobs.py`
-
-## Self-Review Checklist
-
-- [ ] I am assigned to the linked issue (I commented `/assign` first)
-- [ ] My branch is rebased on the latest `main` (`git fetch upstream && git rebase upstream/main`)
-- [ ] I have NOT modified `README.md` or `jobs.json` (both are auto-generated — run `git checkout README.md` if you did)
-- [ ] My changes are scoped to the described problem — no unrelated edits
-- [ ] Commit messages follow Conventional Commits format (`feat:`, `fix:`, `docs:`, etc.)
-- [ ] If I added a function in `update_jobs.py`, I added a test in `tests/`
+- [ ] `pre-commit run --all-files` — clean
 
 ## Notes for Reviewer
 
-<!-- Anything unusual about the approach? Leave blank if straightforward. -->
+<!-- Anything non-obvious about the approach? Leave blank if straightforward. -->
 
 ---
 
-> 🤖 **Tip:** Title your PR `@coderabbitai` and CodeRabbit will generate a compliant Conventional Commit title automatically.
+> **📋 What is checked automatically by CI — you do not need to self-certify these:**
+>
+> | Check | Enforced by |
+> |-------|-------------|
+> | PR title follows Conventional Commits | `bot-pr-title-check` — auto-rejects on open |
+> | PR links to an assigned issue | `bot-linked-issue-enforcer` + `bot-assignment-check` |
+> | `README.md` and `jobs.json` not manually edited | `bot-pr-protected-files` — hard CI failure |
+> | Branch is up to date with `main` | Branch protection — merge blocked if behind |
+> | Python syntax and lint (E9/F-class) | `ci.yml` — required status check |
+> | All unit tests pass | `tests.yml` — required status check |
+> | Pre-commit hooks (secrets, YAML, whitespace) | `pre-commit.yml` — required status check |
+> | Security scan (CodeQL + Trivy) | `codeql.yml` + `trivy.yml` |
+
