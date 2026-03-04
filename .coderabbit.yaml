@@ -20,11 +20,6 @@ issue_enrichment:
       enabled: true
       labels:
         - "plan-me"
-        - "feature"
-        - "bug"
-        - "enhancement"
-        - "intermediate"
-        - "advanced"
 
 # ============================================================================
 # CODE REVIEWS — The Senior Engineer
