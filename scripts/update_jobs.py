@@ -303,7 +303,8 @@ CATEGORY_PATTERNS = {
             'fullstack', 'frontend', 'front-end', 'backend', 'back-end',
             'web developer', 'mobile developer', 'ios developer', 'android developer',
             'application developer', 'systems engineer', 'platform engineer',
-            'solutions engineer', 'integration engineer', 'api engineer'
+            'solutions engineer', 'integration engineer', 'api engineer',
+            'developer advocate', 'devrel'
         ]
     },
     'data_ml': {
