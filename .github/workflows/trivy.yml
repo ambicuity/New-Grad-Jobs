@@ -3,8 +3,6 @@ name: Vulnerability Scanner (Trivy)
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
     - cron: '30 4 * * 0' # Run every Sunday at 04:30 AM
 
