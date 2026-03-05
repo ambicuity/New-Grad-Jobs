@@ -9,7 +9,6 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "angular",
-  "skipCi": true,
   "contributors": [
     {
       "login": "ambicuity",

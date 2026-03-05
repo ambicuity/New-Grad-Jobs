@@ -42,7 +42,7 @@ jobs:
             if (isFirstMerge) {
               thankMessage = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
                 `Welcome to the contributors of New Grad Jobs! Your change is now live and helping thousands of new graduates find their first tech job.\n\n` +
-                `You've been automatically added to our [Contributors Hall of Fame](CONTRIBUTORS.md). Thank you for making this project better! 🙏`;
+                `We'll add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) automatically shortly. Thank you for making this project better! 🙏`;
             } else {
               thankMessage = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
             }
@@ -55,12 +55,11 @@ jobs:
 
             // --- Step 2: Auto-detect contribution type ---
 
-            // 2a. Detect from changed file paths
-            const { data: files } = await github.rest.pulls.listFiles({
-              owner, repo,
-              pull_number: pr.number,
-              per_page: 100
-            });
+            // 2a. Detect from changed file paths (paginated to handle large PRs)
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              { owner, repo, pull_number: pr.number, per_page: 100 }
+            );
 
             const types = new Set();
             const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.figma'];
