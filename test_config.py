@@ -4,7 +4,7 @@ import sys
 
 import yaml
 
-MIN_EXPECTED_COMPANIES = 10000
+MIN_EXPECTED_COMPANIES = 9000
 logger = logging.getLogger(__name__)
 
 

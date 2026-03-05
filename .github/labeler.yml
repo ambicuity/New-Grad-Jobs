@@ -2,6 +2,9 @@ ci-cd:
   - changed-files:
     - any-glob-to-any-file: '.github/workflows/**'
     - any-glob-to-any-file: '.github/actions/**'
+    - any-glob-to-any-file: 'Makefile'
+    - any-glob-to-any-file: 'pyproject.toml'
+    - any-glob-to-any-file: '.pre-commit-config.yaml'
 
 documentation:
   - changed-files:
@@ -48,11 +51,3 @@ intermediate:
 
 advanced:
   - head-branch: ['^advanced/', 'advanced/']
-
-ci-cd:
-  - changed-files:
-    - any-glob-to-any-file: '.github/workflows/**'
-    - any-glob-to-any-file: '.github/actions/**'
-    - any-glob-to-any-file: 'Makefile'
-    - any-glob-to-any-file: 'pyproject.toml'
-    - any-glob-to-any-file: '.pre-commit-config.yaml'
