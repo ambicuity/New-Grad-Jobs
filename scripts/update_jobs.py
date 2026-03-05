@@ -111,27 +111,28 @@ class DomainConcurrencyLimiter:
     def _domain_for_url(self, url: str) -> str:
         return (urlparse(url).netloc or "").split(":")[0].lower()
 
-    def _limit_for_domain(self, domain: str) -> int:
+    def _matched_domain(self, domain: str) -> str | None:
         if domain in self._limits:
-            return self._limits[domain]
+            return domain
 
         # Support subdomains matching, e.g. jobs.api.greenhouse.io -> api.greenhouse.io
-        for configured_domain, limit in self._limits.items():
+        for configured_domain in self._limits:
             if domain.endswith(f".{configured_domain}"):
-                return limit
+                return configured_domain
 
-        return 0
+        return None
 
     def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
-        limit = self._limit_for_domain(domain)
-        if limit <= 0:
+        matched_domain = self._matched_domain(domain)
+        if matched_domain is None:
             return None
 
+        limit = self._limits[matched_domain]
         with self._lock:
-            semaphore = self._semaphores.get(domain)
+            semaphore = self._semaphores.get(matched_domain)
             if semaphore is None:
                 semaphore = threading.BoundedSemaphore(limit)
-                self._semaphores[domain] = semaphore
+                self._semaphores[matched_domain] = semaphore
             return semaphore
 
     @contextmanager
