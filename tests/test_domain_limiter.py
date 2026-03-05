@@ -87,8 +87,9 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
 
     def fake_limited_get(url, **kwargs):
         called_urls.append(url)
+        host = urlparse(url).netloc
 
-        if "api.greenhouse.io" in url:
+        if host == "api.greenhouse.io":
             return _FakeResponse(
                 {
                     "jobs": [
@@ -103,7 +104,7 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
                 }
             )
 
-        if "api.lever.co" in url:
+        if host == "api.lever.co":
             return _FakeResponse(
                 [
                     {
@@ -116,7 +117,7 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
                 ]
             )
 
-        if "careers.google.com" in url:
+        if host == "careers.google.com":
             return _FakeResponse(
                 {
                     "jobs": [
