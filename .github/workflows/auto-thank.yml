@@ -1,4 +1,4 @@
-name: Auto-Thank on Merge
+name: Auto-Thank & Credit on Merge
 
 on:
   pull_request_target:
@@ -9,8 +9,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  thank-contributor:
-    name: Thank Contributor on Merge
+  thank-and-credit:
+    name: Thank & Credit Contributor
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
@@ -29,6 +29,8 @@ jobs:
               return;
             }
 
+            // --- Step 1: Thank-you message ---
+
             // Check if this is the contributor's first merged PR
             const { data: prs } = await github.rest.search.issuesAndPullRequests({
               q: `repo:${owner}/${repo} author:${author} type:pr is:merged`,
@@ -36,17 +38,64 @@ jobs:
 
             const isFirstMerge = prs.total_count <= 1;
 
-            let message;
+            let thankMessage;
             if (isFirstMerge) {
-              message = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
+              thankMessage = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
                 `Welcome to the contributors of New Grad Jobs! Your change is now live and helping thousands of new graduates find their first tech job.\n\n` +
-                `A maintainer will add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) shortly. Thank you for making this project better! 🙏`;
+                `You've been automatically added to our [Contributors Hall of Fame](CONTRIBUTORS.md). Thank you for making this project better! 🙏`;
             } else {
-              message = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
+              thankMessage = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
             }
 
             await github.rest.issues.createComment({
               owner, repo,
               issue_number: pr.number,
-              body: message
+              body: thankMessage
             });
+
+            // --- Step 2: Auto-detect contribution type from changed files ---
+
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner, repo,
+              pull_number: pr.number,
+              per_page: 100
+            });
+
+            const types = new Set();
+            for (const file of files) {
+              const f = file.filename;
+              if (f.startsWith('tests/') || f.startsWith('test_')) {
+                types.add('test');
+              }
+              if (f.startsWith('.github/workflows/') || f.startsWith('.github/actions/')) {
+                types.add('infra');
+              }
+              if (f.endsWith('.md') && f !== 'README.md') {
+                types.add('doc');
+              }
+              if (f.endsWith('.py') || f.startsWith('scripts/')) {
+                types.add('code');
+              }
+              if (f.endsWith('.yml') && f.startsWith('config')) {
+                types.add('code');
+              }
+            }
+
+            // Default to 'code' if nothing matched
+            if (types.size === 0) {
+              types.add('code');
+            }
+
+            const contributionTypes = [...types].join(', ');
+
+            // --- Step 3: Post all-contributors command ---
+
+            const creditMessage = `@all-contributors please add @${author} for ${contributionTypes}`;
+
+            await github.rest.issues.createComment({
+              owner, repo,
+              issue_number: pr.number,
+              body: creditMessage
+            });
+
+            console.log(`Posted credit for @${author}: ${contributionTypes}`);
