@@ -23,7 +23,7 @@ import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
@@ -1119,7 +1119,7 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: str) -> str:
+def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
@@ -1134,7 +1134,9 @@ def normalize_date_string(posted_at: str) -> str:
         return posted_at
 
     posted_at_lower = posted_at.lower().strip()
-    now = datetime.now()
+    if now_utc is None:
+        now_utc = datetime.now(timezone.utc)
+    now = now_utc.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -1159,28 +1161,40 @@ def normalize_date_string(posted_at: str) -> str:
     # Return original if no pattern matches
     return posted_at
 
+def _as_utc_naive(dt: datetime) -> datetime:
+    """Normalize datetime to UTC, then return timezone-naive value."""
+    if dt.tzinfo is None:
+        # Treat naive datetimes as already UTC to keep comparisons deterministic.
+        return dt
+    return dt.astimezone(timezone.utc).replace(tzinfo=None)
+
+
 def is_recent_job(posted_at: str, max_age_days: int) -> bool:
     """Check if job was posted within the specified number of days"""
-    if not posted_at:
+    if posted_at is None:
+        return False
+
+    if isinstance(posted_at, float) and math.isnan(posted_at):
         return False
 
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle already parsed date objects
         if isinstance(posted_at, (datetime, date)):
-             posted_date = posted_at
-             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
-                 posted_date = datetime.combine(posted_date, datetime.min.time())
+            posted_date = posted_at
+            if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
+                posted_date = datetime.combine(posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
         elif isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        # Remove timezone info for comparison
-        posted_date = posted_date.replace(tzinfo=None)
-        cutoff_date = datetime.now() - timedelta(days=max_age_days)
+        posted_date = _as_utc_naive(posted_date)
+        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as e:
         print(f"Error parsing date {posted_at}: {e}")

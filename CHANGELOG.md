@@ -46,6 +46,7 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - add `'developer advocate'` and `'devrel'` to `software_engineering` keyword list in `categorize_job()` so DevRel roles are no longer classified as `other` ([#87](https://github.com/ambicuity/New-Grad-Jobs/issues/87))
 - add domain-aware concurrency limiter for scraper HTTP calls, capping `api.greenhouse.io` concurrency while preserving high parallelism for other domains
+- normalize timezone-aware date handling in `is_recent_job` by standardizing parsed values to UTC before recency comparison; add explicit guards/tests for `None`, `NaN`, UTC-offset strings, aware datetimes, and boundary windows
 - stabilize CI workflow reliability: fix duplicate key in `.github/labeler.yml` and update Trivy action reference to a valid release
 - calibrate config sanity threshold in `test_config.py` to match current source volume baseline
 
