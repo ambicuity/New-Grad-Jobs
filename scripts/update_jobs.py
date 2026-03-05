@@ -332,10 +332,9 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'cybersecurity', 'infosec', 'devops', 'infrastructure', 'platform',
             'cloud engineer', 'systems administrator', 'network engineer',
-            'security engineer', 'devsecops', 'reliability engineer',
-            'cybersecurity', 'infosec'
+            'security engineer', 'devsecops', 'reliability engineer'
         ]
     },
     'product_management': {
@@ -1288,14 +1287,12 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         if isinstance(posted_at, (datetime, date)):
             posted_date = posted_at
             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
-
                 posted_date = datetime.combine(
                     posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
         elif isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(
                 posted_at / 1000, tz=timezone.utc)
-
         else:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at, now_utc)
