@@ -53,8 +53,9 @@ jobs:
               body: thankMessage
             });
 
-            // --- Step 2: Auto-detect contribution type from changed files ---
+            // --- Step 2: Auto-detect contribution type ---
 
+            // 2a. Detect from changed file paths
             const { data: files } = await github.rest.pulls.listFiles({
               owner, repo,
               pull_number: pr.number,
@@ -62,23 +63,74 @@ jobs:
             });
 
             const types = new Set();
+            const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.figma'];
+
             for (const file of files) {
               const f = file.filename;
-              if (f.startsWith('tests/') || f.startsWith('test_')) {
+              const lower = f.toLowerCase();
+
+              // Code — source files
+              if (lower.endsWith('.py') || lower.endsWith('.js') || lower.endsWith('.ts') ||
+                  lower.endsWith('.jsx') || lower.endsWith('.tsx') || lower.endsWith('.sh') ||
+                  f.startsWith('scripts/')) {
+                types.add('code');
+              }
+
+              // Test — test files
+              if (f.startsWith('tests/') || f.startsWith('test_') || lower.includes('_test.') ||
+                  lower.includes('.test.') || lower.includes('spec.')) {
                 types.add('test');
               }
-              if (f.startsWith('.github/workflows/') || f.startsWith('.github/actions/')) {
-                types.add('infra');
-              }
-              if (f.endsWith('.md') && f !== 'README.md') {
+
+              // Documentation — markdown and docs
+              if ((lower.endsWith('.md') || lower.endsWith('.rst') || lower.endsWith('.txt') ||
+                   f.startsWith('docs/')) && f !== 'README.md') {
                 types.add('doc');
               }
-              if (f.endsWith('.py') || f.startsWith('scripts/')) {
+
+              // Infrastructure — CI/CD, workflows, build config
+              if (f.startsWith('.github/workflows/') || f.startsWith('.github/actions/') ||
+                  lower === 'dockerfile' || lower === 'docker-compose.yml' ||
+                  lower.endsWith('.dockerfile') || lower === 'makefile') {
+                types.add('infra');
+              }
+
+              // Design — CSS, HTML, images, UI assets
+              if (lower.endsWith('.css') || lower.endsWith('.scss') || lower.endsWith('.sass') ||
+                  lower.endsWith('.html') || f.startsWith('assets/') || f.startsWith('static/') ||
+                  f.startsWith('images/') || imageExts.some(ext => lower.endsWith(ext))) {
+                types.add('design');
+              }
+
+              // Maintenance — config, dependencies, tooling
+              if (lower === '.gitignore' || lower === '.editorconfig' || lower === '.prettierrc' ||
+                  lower === 'pyproject.toml' || lower === 'setup.cfg' || lower === 'setup.py' ||
+                  lower === 'requirements.txt' || lower === 'package.json' ||
+                  lower === 'package-lock.json' || lower === '.pre-commit-config.yaml' ||
+                  lower === '.all-contributorsrc' || lower === '.flake8') {
+                types.add('maintenance');
+              }
+
+              // Config (maps to code — config.yml drives scraping behavior)
+              if (lower === 'config.yml' || lower === 'config.yaml') {
                 types.add('code');
               }
-              if (f.endsWith('.yml') && f.startsWith('config')) {
-                types.add('code');
-              }
+            }
+
+            // 2b. Detect from PR labels
+            const labelNames = (pr.labels || []).map(l => l.name.toLowerCase());
+
+            if (labelNames.some(l => l.includes('bug') || l.includes('fix'))) {
+              types.add('bug');
+            }
+            if (labelNames.some(l => l.includes('security') || l.includes('vulnerability'))) {
+              types.add('security');
+            }
+            if (labelNames.some(l => l.includes('enhancement') || l.includes('feature') || l.includes('idea'))) {
+              types.add('ideas');
+            }
+            if (labelNames.some(l => l.includes('documentation') || l.includes('docs'))) {
+              types.add('doc');
             }
 
             // Default to 'code' if nothing matched
