@@ -64,12 +64,9 @@ jobs:
         title: "fix(scraper): 🤖 Update job listings"
         body: |
           Automated job aggregation update.
-
-          Fixes #98
         branch: "chore/auto-update-jobs"
         branch-suffix: "timestamp"
         delete-branch: true
-        labels: "automated-pr, auto-merge"
 
     - name: No changes
       if: steps.changes.outputs.changed == 'false'
