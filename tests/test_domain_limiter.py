@@ -145,9 +145,8 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
     assert len(google_jobs) == 1
 
     called_hosts = {urlparse(url).netloc for url in called_urls}
-    assert "api.greenhouse.io" in called_hosts
-    assert "api.lever.co" in called_hosts
-    assert "careers.google.com" in called_hosts
+    expected_hosts = {"api.greenhouse.io", "api.lever.co", "careers.google.com"}
+    assert expected_hosts.issubset(called_hosts)
 
 
 def test_limiter_integrates_with_workday_post_path(monkeypatch):
