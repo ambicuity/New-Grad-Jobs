@@ -16,6 +16,39 @@ early_access: true
 issue_enrichment:
   planning:
     enabled: true
+    instructions: |
+      ## CRITICAL: Repository Policy Enforcement for AI Agent Prompts
+
+      Every AI agent prompt you generate MUST include the following instructions
+      verbatim. PRs that violate these rules will be automatically blocked by CI.
+
+      ### PR Title (Conventional Commits — enforced by CI)
+      The PR title MUST follow Conventional Commits format:
+        `<type>(<scope>): <description>`
+      Examples: `fix(scraper): ...`, `feat(config): ...`, `refactor(tests): ...`
+      If the agent names the PR generically (e.g., "Fix dates"), CI will reject it.
+
+      ### PR Description (Linked Issue Enforcer — enforced by CI)
+      The PR description MUST include the line `Fixes #<issue_number>` on its own line.
+      Without this, the Linked Issue Enforcer check will block the PR from merging.
+
+      ### Changelog (PR Changelog Reminder — enforced by CI)
+      The agent MUST update `CHANGELOG.md` by adding a concise entry under `## [Unreleased]`
+      in the appropriate section (`### Fixed`, `### Added`, `### Changed`).
+      Omitting this will cause the PR Changelog Reminder check to flag it.
+
+      ### Scope Control (Clean Diff Policy)
+      The agent MUST NOT:
+        - Reformat or change whitespace on lines not directly related to the fix
+        - Perform bulk auto-formatting, import reordering, or style cleanups
+        - Touch `README.md` or `jobs.json` (both are auto-generated and protected by CI)
+      Only modify the specific lines of logic described in the issue.
+
+      ### Pre-merge Verification
+      Before opening the PR, the agent should run (or instruct the contributor to run):
+        - `pytest -q -o addopts='' tests/` — all tests must pass
+        - `pre-commit run --all-files` — all hooks must pass
+      Do not open a PR that would fail these checks.
     auto_planning:
       enabled: true
       labels:
