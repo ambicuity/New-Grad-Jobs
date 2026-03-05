@@ -90,6 +90,14 @@ class TestCategorizeJob:
         result = categorize_job("Embedded Firmware Engineer")
         assert result["id"] == "hardware"
 
+    def test_developer_advocate(self):
+        result = categorize_job("Developer Advocate")
+        assert result["id"] == "software_engineering"
+
+    def test_devrel(self):
+        result = categorize_job("DevRel Engineer")
+        assert result["id"] == "software_engineering"
+
     def test_unmatched_title_returns_other(self):
         result = categorize_job("Office Manager")
         assert result["id"] == "other"
