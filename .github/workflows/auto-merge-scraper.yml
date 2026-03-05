@@ -1,0 +1,19 @@
+name: Auto-merge Scraper PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, labeled]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'auto-merge') && github.actor == 'github-actions[bot]'
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Enable Auto-Merge
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}

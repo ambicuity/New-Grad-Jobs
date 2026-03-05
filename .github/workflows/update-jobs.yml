@@ -55,44 +55,21 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
         fi
 
-    - name: Commit and push changes
+    - name: Commit and Create Pull Request
       if: steps.changes.outputs.changed == 'true'
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-
-        # Pull latest changes first (job data files can be safely overwritten)
-        git fetch origin main
-        git reset --soft origin/main
-
-        # Copy jobs.json to docs folder for GitHub Pages
-        cp jobs.json docs/jobs.json
-
-        # Stage and commit
-        git add README.md jobs.json docs/jobs.json docs/CNAME
-
-        # Check if there are actually changes to commit
-        if git diff --cached --quiet; then
-          echo "No changes to commit after merge"
-          exit 0
-        fi
-
-        git commit -m "🤖 Update job listings - $(date -u '+%Y-%m-%d %H:%M UTC')"
-
-        # Push with retry
-        max_retries=3
-        for i in $(seq 1 $max_retries); do
-          echo "Push attempt $i of $max_retries"
-          if git push origin main; then
-            echo "Successfully pushed changes"
-            exit 0
-          fi
-          echo "Push failed, pulling and retrying..."
-          git pull --rebase origin main || git rebase --abort
-          sleep $((i * 2))
-        done
-        echo "Failed to push after $max_retries attempts"
-        exit 1
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "🤖 Update job listings"
+        title: "fix(scraper): 🤖 Update job listings"
+        body: |
+          Automated job aggregation update.
+          
+          Fixes #98
+        branch: "chore/auto-update-jobs"
+        branch-suffix: "timestamp"
+        delete-branch: true
+        labels: "automated-pr, auto-merge"
 
     - name: No changes
       if: steps.changes.outputs.changed == 'false'
