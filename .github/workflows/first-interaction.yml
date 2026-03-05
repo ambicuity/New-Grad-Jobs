@@ -30,6 +30,12 @@ jobs:
               return;
             }
 
+            // Skip the repo owner — no need to welcome yourself
+            if (author === owner) {
+              console.log(`Skipping repo owner: ${author}`);
+              return;
+            }
+
             // Check if contributor is already in the Hall of Fame
             let isNewContributor = true;
             let prCount = 0;
