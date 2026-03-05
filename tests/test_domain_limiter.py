@@ -5,6 +5,7 @@ import os
 import sys
 import threading
 import time
+from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -142,9 +143,10 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
     assert len(lever_jobs) == 1
     assert len(google_jobs) == 1
 
-    assert any("api.greenhouse.io" in url for url in called_urls)
-    assert any("api.lever.co" in url for url in called_urls)
-    assert any("careers.google.com" in url for url in called_urls)
+    called_hosts = {urlparse(url).netloc for url in called_urls}
+    assert "api.greenhouse.io" in called_hosts
+    assert "api.lever.co" in called_hosts
+    assert "careers.google.com" in called_hosts
 
 
 def test_limiter_integrates_with_workday_post_path(monkeypatch):
