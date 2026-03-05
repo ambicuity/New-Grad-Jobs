@@ -592,9 +592,15 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 print(f"Searching Google careers for '{search_term}'...")
                 # Build the search URL with USA location filter
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
                 response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -1012,9 +1018,15 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     time.sleep(1)
 
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
                 response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -1129,8 +1141,18 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+
+    Also handles native datetime.date / datetime.datetime objects returned by
+    Workday / JobSpy API clients, coercing them to their ISO-format string so
+    that downstream dateparser never receives a non-string argument.
     """
     if not isinstance(posted_at, str):
+        # Coerce native date/datetime objects to ISO string rather than
+        # returning them raw, which causes dateparser to emit:
+        #   "Parser must be a string or character stream, not date"
+        if hasattr(posted_at, 'isoformat'):
+            return posted_at.isoformat()
+
         return posted_at
 
     posted_at_lower = posted_at.lower().strip()

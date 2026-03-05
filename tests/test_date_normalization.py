@@ -22,12 +22,36 @@ def test_is_recent_job_empty_string_returns_false():
     assert is_recent_job('', 7) is False
 
 
+from datetime import date
+
+
 def test_normalize_date_string_jobspy_human_readable_variants():
     now = FIXED_NOW_UTC.replace(tzinfo=None)
     assert normalize_date_string('Posted Today', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
     assert normalize_date_string('Yesterday', FIXED_NOW_UTC) == (now - timedelta(days=1)).strftime('%Y-%m-%d')
     assert normalize_date_string('Posted 2 Days Ago', FIXED_NOW_UTC) == (now - timedelta(days=2)).strftime('%Y-%m-%d')
     assert normalize_date_string('30+ Days Ago', FIXED_NOW_UTC) == (now - timedelta(days=30)).strftime('%Y-%m-%d')
+
+
+def test_normalize_date_string_native_date_object_returns_iso_string():
+    """Regression: native date/datetime objects must be coerced to ISO string.
+
+    Workday and JobSpy API clients can return already-parsed date/datetime
+    objects.  Previously the function returned them unchanged, causing
+    dateparser to emit hundreds of 'Parser must be a string or character
+    stream, not date' warnings during CI runs.
+    """
+    d = date(2026, 3, 5)
+    result = normalize_date_string(d)
+    assert isinstance(result, str), "Expected ISO string, got non-string type"
+    assert result == '2026-03-05'
+
+    dt = datetime(2026, 3, 5, 12, 30, 0)
+    result_dt = normalize_date_string(dt)
+    assert isinstance(result_dt, str), "Expected ISO string, got non-string type"
+    assert result_dt.startswith('2026-03-05')
+
+
 
 
 def test_normalize_date_string_preserves_utc_offset_strings():
