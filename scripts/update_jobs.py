@@ -1119,7 +1119,7 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: str) -> str:
+def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
@@ -1134,7 +1134,9 @@ def normalize_date_string(posted_at: str) -> str:
         return posted_at
 
     posted_at_lower = posted_at.lower().strip()
-    now = datetime.now()
+    if now_utc is None:
+        now_utc = datetime.now(timezone.utc)
+    now = now_utc.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -1176,6 +1178,8 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         return False
 
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle already parsed date objects
         if isinstance(posted_at, (datetime, date)):
             posted_date = posted_at
@@ -1186,11 +1190,11 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
             posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
         posted_date = _as_utc_naive(posted_date)
-        cutoff_date = datetime.now(timezone.utc).replace(tzinfo=None) - timedelta(days=max_age_days)
+        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as e:
         print(f"Error parsing date {posted_at}: {e}")
