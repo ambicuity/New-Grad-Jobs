@@ -15,8 +15,13 @@ jobs:
   add-contributor:
     name: Add Contributor
     runs-on: ubuntu-latest
-    # Only respond to the bot command — any commenter can trigger this
-    if: contains(github.event.comment.body, '@all-contributors')
+    # Only the maintainer or the auto-thank workflow (github-actions[bot]) can trigger
+    if: |
+      contains(github.event.comment.body, '@all-contributors')
+      && (
+        github.event.comment.user.login == 'ambicuity'
+        || github.event.comment.user.login == 'github-actions[bot]'
+      )
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 

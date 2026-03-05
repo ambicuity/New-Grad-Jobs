@@ -7,8 +7,8 @@
     "CONTRIBUTORS.md"
   ],
   "imageSize": 100,
-  "commit": false,
-  "commitConvention": "none",
+  "commit": true,
+  "commitConvention": "angular",
   "contributors": [
     {
       "login": "ambicuity",
