@@ -31,15 +31,25 @@ jobs:
 
             // --- Step 1: Thank-you message ---
 
-            // Check if this is the contributor's first merged PR
-            const { data: prs } = await github.rest.search.issuesAndPullRequests({
-              q: `repo:${owner}/${repo} author:${author} type:pr is:merged`,
-            });
-
-            const isFirstMerge = prs.total_count <= 1;
+            // Check if contributor is already in the Hall of Fame (.all-contributorsrc)
+            let isNewContributor = true;
+            try {
+              const { data: rcFile } = await github.rest.repos.getContent({
+                owner, repo,
+                path: '.all-contributorsrc',
+              });
+              const rcContent = JSON.parse(
+                Buffer.from(rcFile.content, 'base64').toString('utf-8')
+              );
+              const existingLogins = (rcContent.contributors || []).map(c => c.login.toLowerCase());
+              isNewContributor = !existingLogins.includes(author.toLowerCase());
+            } catch (err) {
+              // If file doesn't exist or can't be read, treat as new contributor
+              console.log(`Could not read .all-contributorsrc: ${err.message}`);
+            }
 
             let thankMessage;
-            if (isFirstMerge) {
+            if (isNewContributor) {
               thankMessage = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
                 `Welcome to the contributors of New Grad Jobs! Your change is now live and helping thousands of new graduates find their first tech job.\n\n` +
                 `We'll add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) automatically shortly. Thank you for making this project better! 🙏`;
