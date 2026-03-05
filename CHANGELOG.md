@@ -42,6 +42,12 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- add domain-aware concurrency limiter for scraper HTTP calls, capping `api.greenhouse.io` concurrency while preserving high parallelism for other domains
+- stabilize CI workflow reliability: fix duplicate key in `.github/labeler.yml` and update Trivy action reference to a valid release
+- calibrate config sanity threshold in `test_config.py` to match current source volume baseline
+
 ### Added
 
 - `CONTRIBUTING.md` rewritten with full dev-environment setup, Conventional Commits guide, and ASCII architecture diagram

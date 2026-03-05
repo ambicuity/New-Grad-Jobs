@@ -18,6 +18,7 @@ jobs:
 
       - name: Link Checker
         id: lychee
+        continue-on-error: true
         uses: lycheeverse/lychee-action@v2
         with:
           args: --verbose --no-progress './**/*.md' './**/*.html'

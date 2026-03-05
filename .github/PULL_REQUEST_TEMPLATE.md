@@ -74,4 +74,3 @@ Fixes #
 > | All unit tests pass | `tests.yml` — required status check |
 > | Pre-commit hooks (secrets, YAML, whitespace) | `pre-commit.yml` — required status check |
 > | Security scan (CodeQL + Trivy) | `codeql.yml` + `trivy.yml` |
-
