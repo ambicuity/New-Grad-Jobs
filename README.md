@@ -1330,7 +1330,6 @@ Check out the [`CONTRIBUTING.md`](./CONTRIBUTING.md) for local setup, branching 
 | Opendoor | Data Scientist | Office - Washington-Seattle | 4 days ago | [Apply](https://www.opendoor.com/careers/open-positions?gh_jid=4613844006) |
 | Braze | Forward-Deployed Data Scientist | New York City | 4 days ago | [Apply](https://boards.greenhouse.io/braze/jobs/7329180?gh_jid=7329180) |
 | 🚀 Anthropic | Data Scientist | San Francisco, CA \| New York City, NY | 4 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5098499008) |
-| Epic Games | Machine Learning Engineer | London,England,United Kingdom | 4 days ago | [Apply](https://epicgames.com/careers/jobs/5528619004?gh_jid=5528619004) |
 | 🔥 Stripe | Data Scientist | Toronto | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7357460) |
 | 🔥 Stripe | Machine Learning Engineer, Payments ML Accelerator | Seattle; San Francisco; New York City | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7079044) |
 | 🔥 Stripe | Machine Learning Engineer, Stripe Assistant  | Seattle; San Francisco; New York City; Remote | 4 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7629052) |
