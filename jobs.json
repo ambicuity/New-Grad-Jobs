@@ -1,7 +1,7 @@
 {
   "meta": {
     "generated_at": "2026-03-02T20:53:54.079821",
-    "total_jobs": 1854,
+    "total_jobs": 1855,
     "categories": [
       {
         "id": "software_engineering",
@@ -12366,6 +12366,32 @@
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
         "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "epic-games-machine-learning-engineer-london,england,united-kingdom",
+      "company": "Epic Games",
+      "title": "Machine Learning Engineer",
+      "location": "London,England,United Kingdom",
+      "url": "https://epicgames.com/careers/jobs/5528619004?gh_jid=5528619004",
+      "posted_at": "2026-02-26T16:01:35",
+      "posted_display": "4 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
         "sectors": []
       },
       "flags": {
