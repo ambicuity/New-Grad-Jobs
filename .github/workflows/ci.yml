@@ -73,3 +73,31 @@ jobs:
 
       - name: Run unit tests
         run: python test_config.py
+
+      - name: Check for duplicate API URLs in config.yml
+        run: |
+          python - <<'EOF'
+          import yaml, sys
+          with open("config.yml") as f:
+              config = yaml.safe_load(f)
+          urls = []
+          for section in ['greenhouse', 'lever', 'workday']:
+              companies = config.get('apis', config).get(section, {}).get('companies', [])
+              for c in companies:
+                  url = c.get('url', c.get('workday_url', ''))
+                  if url:
+                      urls.append((section, c.get('name', ''), url))
+          seen = {}
+          duplicates = []
+          for section, name, url in urls:
+              if url in seen:
+                  duplicates.append(f"  DUPLICATE: {url} ({name} in {section}) already defined as {seen[url]}")
+              else:
+                  seen[url] = f"{name} in {section}"
+          if duplicates:
+              print("❌ Duplicate API URLs found in config.yml:")
+              for d in duplicates:
+                  print(d)
+              sys.exit(1)
+          print(f"✅ No duplicate URLs found across {len(urls)} entries.")
+          EOF

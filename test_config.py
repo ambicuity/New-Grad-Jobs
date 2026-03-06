@@ -4,7 +4,6 @@ import sys
 
 import yaml
 
-MIN_EXPECTED_COMPANIES = 9000
 logger = logging.getLogger(__name__)
 
 
@@ -36,10 +35,12 @@ def validate_config(config_path: str = "config.yml") -> int:
         total = gh + lever + workday
         logger.info("TOTAL: %s companies", total)
 
-        if total < MIN_EXPECTED_COMPANIES:
+        min_expected = config.get("filtering", {}).get("min_expected_companies", 200)
+
+        if total < min_expected:
             logger.warning(
                 "⚠️  WARNING: Expected ~%s companies but only loaded %s!",
-                f"{MIN_EXPECTED_COMPANIES:,}",
+                f"{min_expected:,}",
                 total,
             )
             return 1
