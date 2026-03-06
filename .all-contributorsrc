@@ -50,6 +50,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ArvinFarrelP",
+      "name": "ArvinFarrelP",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99516005?v=4",
+      "profile": "https://github.com/ArvinFarrelP",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
