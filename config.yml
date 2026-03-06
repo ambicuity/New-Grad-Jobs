@@ -239,6 +239,8 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Retool"
         url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
+      - name: "FakeCompanyTest"
+        url: "https://boards-api.greenhouse.io/v1/boards/fakedoesnotexist12345/jobs"
         
       # Fifth round: Additional verified tech companies (2024)
       - name: "Unity Technologies"
