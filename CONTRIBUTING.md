@@ -36,6 +36,8 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 10. [Code Style](#10-code-style)
 11. [Good First Issues](#11-good-first-issues)
 12. [Bot Commands (Slash Commands)](#12-bot-commands-slash-commands)
+13. [When Will My PR Be Merged?](#13-when-will-my-pr-be-merged)
+14. [Security & Signed Releases](#14-security--signed-releases)
 
 ---
 
@@ -658,6 +660,18 @@ The maintainer (`@ambicuity`) merges PRs manually after reviewing. Here is the e
 ### Auto-Merge (Dependabot)
 
 Dependabot patch and minor updates are **automatically approved and squash-merged** once all CI checks pass. No manual action needed. Major version bumps require explicit maintainer review.
+
+---
+
+## 14. Security & Signed Releases
+
+New Grad Jobs takes supply chain security seriously. We have achieved a **10/10** on the OpenSSF Scorecard for Signed Releases!
+
+### What Does This Mean for You?
+Every release of this repository is automatically packaged and cryptographically signed using **Sigstore** (keyless OIDC signing).
+When you download a release from our Releases page, you'll also find a `.sig` file alongside the `.tar.gz` archive.
+
+If you are just contributing code, you don't need to do anything! Our automated `release-please.yml` workflow takes care of the signing automatically whenever a new version is published.
 
 ---
 

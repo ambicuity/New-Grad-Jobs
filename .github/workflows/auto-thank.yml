@@ -4,17 +4,39 @@ on:
   pull_request_target:
     types: [closed]
 
-permissions:
-  issues: write
-  pull-requests: write
+concurrency:
+  group: hall-of-fame-auto-credit
+  cancel-in-progress: false
 
+permissions: read-all
 jobs:
   thank-and-credit:
     name: Thank & Credit Contributor
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
-      - uses: actions/github-script@v8
+      - name: Checkout repository
+        if: github.event.pull_request.merged == true
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.base.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -22,6 +44,7 @@ jobs:
             const author = pr.user.login;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const exec = require('@actions/exec');
 
             // Skip bot PRs (dependabot, renovate, etc.)
             if (author.includes('[bot]') || author === 'dependabot[bot]') {
@@ -34,18 +57,12 @@ jobs:
             // Check if contributor is already in the Hall of Fame (.all-contributorsrc)
             let isNewContributor = true;
             try {
-              const { data: rcFile } = await github.rest.repos.getContent({
-                owner, repo,
-                path: '.all-contributorsrc',
-              });
-              const rcContent = JSON.parse(
-                Buffer.from(rcFile.content, 'base64').toString('utf-8')
-              );
+              const fs = require('fs');
+              const rcContent = JSON.parse(fs.readFileSync('.all-contributorsrc', 'utf-8'));
               const existingLogins = (rcContent.contributors || []).map(c => c.login.toLowerCase());
               isNewContributor = !existingLogins.includes(author.toLowerCase());
             } catch (err) {
-              // If file doesn't exist or can't be read, treat as new contributor
-              console.log(`Could not read .all-contributorsrc: ${err.message}`);
+              console.log(`Could not read .all-contributorsrc locally: ${err.message}`);
             }
 
             let thankMessage;
@@ -147,16 +164,22 @@ jobs:
               types.add('code');
             }
 
-            const contributionTypes = [...types].join(', ');
+            const contributionTypes = [...types].join(',');
 
-            // --- Step 3: Post all-contributors command ---
+            // --- Step 3: Run all-contributors-cli and push ---
+            try {
+              console.log(`Adding @${author} for [${contributionTypes}] via all-contributors-cli...`);
+              await exec.exec('npx', ['all-contributors-cli', 'add', author, contributionTypes]);
 
-            const creditMessage = `@all-contributors please add @${author} for ${contributionTypes}`;
+              // Push the commit made by all-contributors-cli to the base branch
+              const baseRef = pr.base.ref;
+              console.log(`Pushing changes to ${baseRef}...`);
 
-            await github.rest.issues.createComment({
-              owner, repo,
-              issue_number: pr.number,
-              body: creditMessage
-            });
+              // Pull with rebase first to avoid rejection from concurrent merges
+              await exec.exec('git', ['pull', '--rebase', 'origin', baseRef]);
+              await exec.exec('git', ['push', 'origin', `HEAD:${baseRef}`]);
 
-            console.log(`Posted credit for @${author}: ${contributionTypes}`);
+              console.log(`Successfully credited @${author} in the Hall of Fame!`);
+            } catch (err) {
+              console.log(`Error adding contributor (might already exist, or CLI failed): ${err.message}`);
+            }

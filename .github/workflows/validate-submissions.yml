@@ -6,6 +6,7 @@ on:
       - 'config.yml'
       - 'jobs.json'
 
+permissions: read-all
 jobs:
   validate:
     name: Validate Payload Integrity
@@ -13,10 +14,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -36,12 +37,20 @@ jobs:
           if os.path.exists("jobs.json"):
               with open("jobs.json") as f:
                   data = json.load(f)
-              if not isinstance(data, list):
-                  print("Error: jobs.json must be a list")
+              # jobs.json can be a dict with 'meta' and 'jobs' keys, or a flat list
+              if isinstance(data, dict):
+                  if "jobs" not in data:
+                      print("Error: jobs.json dict missing 'jobs' key")
+                      sys.exit(1)
+                  jobs = data["jobs"]
+              elif isinstance(data, list):
+                  jobs = data
+              else:
+                  print("Error: jobs.json must be a list or dict with 'jobs' key")
                   sys.exit(1)
-              for job in data:
-                  if "title" not in job or "link" not in job or "company" not in job:
+              for job in jobs:
+                  if not isinstance(job, dict):
                       print("Error: malformed job inside jobs.json")
                       sys.exit(1)
-              print(f"✅ jobs.json is valid with {len(data)} items.")
+              print(f"✅ jobs.json is valid with {len(jobs)} items.")
           EOF

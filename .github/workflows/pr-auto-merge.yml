@@ -4,13 +4,13 @@ on:
   pull_request_review:
     types: [submitted]
 
-permissions:
-  contents: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
   enable-auto-merge:
     name: Enable squash auto-merge after approval
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     # Only act when the maintainer approves; skip Dependabot PRs (handled separately)
     if: |

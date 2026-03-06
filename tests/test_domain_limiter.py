@@ -197,3 +197,58 @@ def test_limiter_integrates_with_workday_post_path(monkeypatch):
     assert len(jobs) == 1
     assert jobs[0]["company"] == "Acme"
     assert any("wday/cxs" in url for url in called_urls)
+
+
+def test_workday_404_retry_uses_path_tenant(monkeypatch):
+    called_urls = []
+
+    class _WorkdayResponse:
+        def __init__(self, payload, status_code=200):
+            self._payload = payload
+            self.status_code = status_code
+
+        @property
+        def ok(self):
+            return 200 <= self.status_code < 300
+
+        def json(self):
+            return self._payload
+
+    def fake_limited_post(url, **kwargs):
+        called_urls.append(url)
+        payload = kwargs.get("json", {})
+        offset = payload.get("offset", 0)
+
+        if len(called_urls) == 1:
+            return _WorkdayResponse({}, status_code=404)
+
+        if offset == 0:
+            return _WorkdayResponse(
+                {
+                    "jobPostings": [
+                        {
+                            "title": "Software Engineer, New Grad",
+                            "externalPath": "/en-US/recruiting/acme/Acme/job/123",
+                            "postedOn": "Posted Today",
+                            "locationsText": "Remote",
+                        }
+                    ]
+                }
+            )
+
+        return _WorkdayResponse({"jobPostings": []})
+
+    monkeypatch.setattr("update_jobs.limited_post", fake_limited_post)
+
+    jobs = fetch_workday_jobs(
+        [
+            {
+                "name": "Acme",
+                "workday_url": "https://foo.wd5.myworkdayjobs.com/acme/Acme_External_Careers",
+            }
+        ]
+    )
+
+    assert len(jobs) == 1
+    assert called_urls[0] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/foo/Acme_External_Careers/jobs"
+    assert called_urls[1] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/acme/Acme_External_Careers/jobs"
