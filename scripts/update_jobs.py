@@ -747,6 +747,30 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
 
     return all_jobs
 
+
+def build_workday_api_url(host: str, site_path: str) -> str:
+    """Build the Workday CXS jobs endpoint from a host and site path."""
+    clean_host = host.strip()
+    if not clean_host:
+        raise ValueError("host is required")
+
+    path_parts = [part for part in site_path.strip('/').split('/') if part]
+    if not path_parts:
+        raise ValueError("site_path must include at least one segment")
+
+    host_parts = [part for part in clean_host.split('.') if part]
+    if not host_parts:
+        raise ValueError("host is required")
+
+    tenant = host_parts[0]
+    if re.fullmatch(r"wd\d+", tenant.lower()) and len(path_parts) >= 2:
+        # For URLs like wd5.myworkdayjobs.com/<tenant>/<site>, tenant lives in the path.
+        tenant = path_parts[0]
+
+    site_id = path_parts[-1]
+    return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
+
+
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
     all_jobs = []
@@ -765,26 +789,8 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
         try:
             parsed = urlparse(workday_url)
             host = parsed.netloc
-            site_path = parsed.path.strip('/')
-
-            # Extract tenant and site from URL
-            # Example: https://nvidia.wd5.myworkdayjobs.com/NVIDIA_External_Career_Site
-            # Tenant: nvidia, Site: NVIDIA_External_Career_Site
-
-            # If host starts with tenant name (e.g. nvidia.wd5...), use that
-            # Otherwise, try to extract from path or config
-
-            # Simple heuristic for now:
-            # Subdomain is usually "tenant.wdN" or just "tenant"
-            # We need the "tenant" for the API path.
-
-            subdomin_parts = host.split('.')
-            tenant = subdomin_parts[0] # Default guess
-
-            # Site ID is the last part of the path
-            site_id = site_path.split('/')[-1]
-
-            api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+            site_path = parsed.path
+            api_url = build_workday_api_url(host, site_path)
 
             jobs = []
             offset = 0
@@ -810,11 +816,9 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                      # Try alternative tenant extraction if 404
                      # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
                      # In that case, tenant is matching path[0]
-                     path_parts = site_path.split('/')
+                     path_parts = [part for part in site_path.strip('/').split('/') if part]
                      if len(path_parts) >= 2:
-                         tenant = path_parts[0]
-                         site_id = path_parts[-1]
-                         api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+                         api_url = build_workday_api_url(host, f"/{path_parts[0]}/{path_parts[-1]}")
                          response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
