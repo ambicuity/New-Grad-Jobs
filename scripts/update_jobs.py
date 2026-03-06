@@ -862,7 +862,7 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     completed = 0
     errors = 0
 
-    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
+    # AUTO-SCALE: Use 1 worker per 3 companies, min 30, max 300 for 1000+ companies
     if max_workers is None:
         max_workers = min(DEFAULT_GREENHOUSE_MAX_WORKERS, max(DEFAULT_GREENHOUSE_MIN_WORKERS, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
 
