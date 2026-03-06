@@ -2,10 +2,11 @@ name: Vulnerability Scanner (Trivy)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   schedule:
     - cron: '30 4 * * 0' # Run every Sunday at 04:30 AM
 
+permissions: read-all
 jobs:
   trivy:
     name: Trivy Security Scan

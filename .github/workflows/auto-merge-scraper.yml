@@ -3,6 +3,7 @@ name: Auto-merge Scraper PRs
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review, labeled]
+permissions: read-all
 
 jobs:
   auto-merge:

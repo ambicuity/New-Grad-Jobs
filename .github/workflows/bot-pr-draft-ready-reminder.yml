@@ -6,12 +6,12 @@ on:
     - cron: '0 10 * * 2'
   workflow_dispatch:
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   draft-reminder:
     name: Remind Draft PR Authors to Publish
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check draft PRs for age and remind

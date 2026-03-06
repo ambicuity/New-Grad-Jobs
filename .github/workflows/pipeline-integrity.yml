@@ -11,6 +11,7 @@ on:
       - 'docs/jobs.json'
       - 'requirements.txt'
 
+permissions: read-all
 jobs:
   integrity:
     name: Pipeline Integrity Check

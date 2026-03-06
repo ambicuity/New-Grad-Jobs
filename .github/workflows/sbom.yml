@@ -9,6 +9,7 @@ on:
   schedule:
     - cron: '0 0 * * *' # Daily at midnight UTC
 
+permissions: read-all
 jobs:
   generate-sbom:
     runs-on: ubuntu-latest

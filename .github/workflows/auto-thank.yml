@@ -4,13 +4,13 @@ on:
   pull_request_target:
     types: [closed]
 
-permissions:
-  issues: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
   thank-and-credit:
     name: Thank & Credit Contributor
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:

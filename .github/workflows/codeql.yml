@@ -9,6 +9,7 @@ on:
     # Runs every Monday at 08:00 UTC
     - cron: '0 8 * * 1'
 
+permissions: read-all
 jobs:
   analyze:
     name: Analyze Python

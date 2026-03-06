@@ -8,13 +8,13 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
-permissions:
-  pull-requests: write
-  issues: read
-
+permissions: read-all
 jobs:
   assignment-check:
     name: Verify PR Author is Assigned to Linked Issue
+    permissions:
+      pull-requests: write
+      issues: read
     runs-on: ubuntu-latest
     steps:
       - name: Check assignment

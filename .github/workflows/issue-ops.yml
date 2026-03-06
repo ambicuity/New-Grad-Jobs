@@ -4,12 +4,12 @@ on:
   issue_comment:
     types: [created]
 
-permissions:
-  issues: write
-
+permissions: read-all
 jobs:
   auto-assign:
     name: Assign Issue and Welcome
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     # Barrier: Only run if it's an issue, NOT a Pull Request
     if: ${{ !github.event.issue.pull_request }}

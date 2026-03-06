@@ -9,13 +9,13 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
-permissions:
-  pull-requests: write
-  statuses: write
-
+permissions: read-all
 jobs:
   protected-files:
     name: Protected Files Check
+    permissions:
+      pull-requests: write
+      statuses: write
     runs-on: ubuntu-latest
     steps:
       - name: Check for auto-generated file edits

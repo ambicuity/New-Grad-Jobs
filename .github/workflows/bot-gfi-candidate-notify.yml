@@ -8,12 +8,12 @@ on:
   issues:
     types: [labeled]
 
-permissions:
-  issues: write
-
+permissions: read-all
 jobs:
   notify-maintainer:
     name: Ping Maintainer on GFI Candidate
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     if: github.event.label.name == 'good first issue candidate'
     steps:

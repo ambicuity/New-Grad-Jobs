@@ -9,12 +9,12 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   detect-conflicts:
     name: Label Conflicted PRs
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check open PRs for merge conflicts

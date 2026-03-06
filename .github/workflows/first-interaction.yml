@@ -6,14 +6,14 @@ on:
   pull_request_target:
     types: [opened]
 
-permissions:
-  contents: read
-  issues: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
   welcome:
     name: Welcome Contributor
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v8

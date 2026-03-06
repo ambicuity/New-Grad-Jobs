@@ -6,6 +6,7 @@ on:
       - 'config.yml'
       - 'jobs.json'
 
+permissions: read-all
 jobs:
   validate:
     name: Validate Payload Integrity

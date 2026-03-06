@@ -6,12 +6,12 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-permissions:
-  issues: write
-
+permissions: read-all
 jobs:
   manage-assignees:
     name: Check Inactivity and Manage Assignees
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Ping inactive assignees and auto-unassign

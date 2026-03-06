@@ -7,13 +7,13 @@ on:
   pull_request_review_comment:
     types: [created]
 
-permissions:
-  contents: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
   add-contributor:
     name: Add Contributor
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     # Only the maintainer or the auto-thank workflow (github-actions[bot]) can trigger
     if: |

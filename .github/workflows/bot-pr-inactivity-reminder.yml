@@ -6,12 +6,12 @@ on:
     - cron: '0 9 * * 1'
   workflow_dispatch:
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   pr-inactivity:
     name: Ping Inactive PR Authors
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check open PRs for inactivity

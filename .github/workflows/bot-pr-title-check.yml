@@ -4,13 +4,13 @@ on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
 
-permissions:
-  pull-requests: write
-  statuses: write
-
+permissions: read-all
 jobs:
   title-check:
     name: Validate PR Title Format
+    permissions:
+      pull-requests: write
+      statuses: write
     runs-on: ubuntu-latest
     steps:
       - name: Check PR title follows Conventional Commits

@@ -4,12 +4,12 @@ on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   linked-issue:
     name: Require Linked Issue
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check for linked issue in PR body

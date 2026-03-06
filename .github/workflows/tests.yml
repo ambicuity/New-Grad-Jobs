@@ -11,6 +11,7 @@ on:
       - 'requirements.txt'
       - 'pyproject.toml'
 
+permissions: read-all
 jobs:
   test:
     name: Run Unit Tests

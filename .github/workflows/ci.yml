@@ -11,6 +11,7 @@ on:
       - 'requirements.txt'
       - '.github/workflows/**'
 
+permissions: read-all
 jobs:
   lint-and-validate:
     name: Python Lint & Syntax Check

@@ -14,12 +14,12 @@ on:
       - '.github/ISSUE_TEMPLATE/**'
       - '.github/workflows/**'
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   changelog-reminder:
     name: Remind contributor to update CHANGELOG.md
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check for CHANGELOG update
