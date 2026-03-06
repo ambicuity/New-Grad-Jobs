@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml docs/predictions.json
+          git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml docs/predictions.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
