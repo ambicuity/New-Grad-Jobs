@@ -1,0 +1,105 @@
+name: Board Freshness Watchdog
+
+on:
+  schedule:
+    # Every 20 minutes
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+
+jobs:
+  watchdog:
+    name: Check Board Freshness
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Check docs/jobs.json freshness via GitHub API
+        id: freshness
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get the timestamp of the most recent commit that touched docs/jobs.json
+          LAST_COMMIT=$(gh api \
+            "repos/${{ github.repository }}/commits?path=docs/jobs.json&per_page=1" \
+            --jq '.[0].commit.committer.date')
+
+          echo "Last commit to docs/jobs.json: $LAST_COMMIT"
+
+          if [ -z "$LAST_COMMIT" ] || [ "$LAST_COMMIT" = "null" ]; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+            echo "⚠️  Could not determine last commit date — skipping alert"
+            exit 0
+          fi
+
+          # Calculate staleness in minutes
+          LAST_TS=$(date -d "$LAST_COMMIT" +%s)
+          NOW_TS=$(date +%s)
+          AGE_MINUTES=$(( (NOW_TS - LAST_TS) / 60 ))
+
+          echo "Age: ${AGE_MINUTES} minutes"
+          echo "age_minutes=${AGE_MINUTES}" >> "$GITHUB_OUTPUT"
+          echo "last_commit=${LAST_COMMIT}" >> "$GITHUB_OUTPUT"
+
+          # Alert threshold: 30 minutes (>4 missed 5-min cron cycles)
+          if [ "$AGE_MINUTES" -gt 30 ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+            echo "🚨 STALE: docs/jobs.json is ${AGE_MINUTES} minutes old"
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+            echo "✅ Fresh: docs/jobs.json updated ${AGE_MINUTES} minutes ago"
+          fi
+
+      - name: File stale board issue (if not already open)
+        if: steps.freshness.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AGE: ${{ steps.freshness.outputs.age_minutes }}
+          LAST_COMMIT: ${{ steps.freshness.outputs.last_commit }}
+        run: |
+          TITLE="🚨 Board is stale — scraper may have stopped"
+
+          # Check if an open issue with this title already exists (avoid spam)
+          EXISTING=$(gh issue list \
+            --state open \
+            --label "type: bug" \
+            --search "$TITLE" \
+            --json number \
+            --jq '.[0].number')
+
+          if [ -n "$EXISTING" ] && [ "$EXISTING" != "null" ]; then
+            echo "Issue #${EXISTING} already open — skipping duplicate"
+            exit 0
+          fi
+
+          gh issue create \
+            --title "$TITLE" \
+            --label "type: bug,priority: critical" \
+            --body "## 🚨 Automated Alert: Board is Stale
+
+          The watchdog detected that \`docs/jobs.json\` has not been updated in **${AGE} minutes**.
+
+          | Field | Value |
+          |-------|-------|
+          | Last updated | \`${LAST_COMMIT}\` |
+          | Stale for | ${AGE} minutes |
+          | Update cycle | Every 5 minutes |
+
+          ## What to check
+
+          1. **Actions tab**: Is the \`Update New Grad Jobs\` workflow failing? Check [Actions](https://github.com/${{ github.repository }}/actions/workflows/update-jobs.yml)
+          2. **Branch protection**: Did a new ruleset get added that blocks direct push?
+          3. **Scraper errors**: Is the scraper producing 0 jobs (all sources failing)?
+
+          ## Auto-close
+
+          Close this issue once the board is confirmed fresh again.
+
+          *Filed automatically by the Board Freshness Watchdog workflow.*"
+
+          echo "🚨 Stale board issue created"
+
+      - name: Log OK status
+        if: steps.freshness.outputs.stale == 'false'
+        run: echo "✅ Board is fresh — no action needed"
