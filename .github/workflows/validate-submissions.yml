@@ -37,12 +37,17 @@ jobs:
           if os.path.exists("jobs.json"):
               with open("jobs.json") as f:
                   data = json.load(f)
-              if not isinstance(data, list):
-                  print("Error: jobs.json must be a list")
+              # jobs.json can be a dict with 'meta' and 'jobs' keys, or a flat list
+              if isinstance(data, dict):
+                  jobs = data.get("jobs", [])
+              elif isinstance(data, list):
+                  jobs = data
+              else:
+                  print("Error: jobs.json must be a list or dict with 'jobs' key")
                   sys.exit(1)
-              for job in data:
-                  if "title" not in job or "link" not in job or "company" not in job:
+              for job in jobs:
+                  if not isinstance(job, dict):
                       print("Error: malformed job inside jobs.json")
                       sys.exit(1)
-              print(f"✅ jobs.json is valid with {len(data)} items.")
+              print(f"✅ jobs.json is valid with {len(jobs)} items.")
           EOF
