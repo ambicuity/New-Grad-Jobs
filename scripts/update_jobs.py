@@ -613,10 +613,10 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                     locations = job.get('locations', [])
                     location_names = []
                     for loc in locations:
-                        if loc.get('country_code') == 'US':  # Only USA locations
-                            display_name = loc.get('display', '')
-                            if display_name:
-                                location_names.append(display_name)
+                        # if loc.get('country_code') == 'US':  # Only USA locations but deprecated as of 2026-03, no longer provided by API
+                        display_name = loc.get('display', '')
+                        if display_name:
+                            location_names.append(display_name)
 
                     if not location_names:  # Skip jobs without USA locations
                         continue
