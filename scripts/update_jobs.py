@@ -1811,6 +1811,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
 [![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
