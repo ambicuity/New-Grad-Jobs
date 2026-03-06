@@ -173,6 +173,29 @@ jobs:
                   if dupes:
                       results.append(("⚠️", "Duplicate slugs", f"Found duplicate Greenhouse slugs: {list(set(dupes))}"))
                       # Warn but don't block
+                      
+                  # Run the external URL verifier script
+                  print("\n--- Running URL Verifier ---")
+                  url_verify = subprocess.run(
+                      ["python3", ".github/scripts/verify_new_urls.py"],
+                      capture_output=True, text=True
+                  )
+                  print(url_verify.stdout)
+                  if url_verify.stderr:
+                      print(url_verify.stderr, file=sys.stderr)
+                  
+                  if url_verify.returncode != 0:
+                      # Extract just the failures for the summary table
+                      failures = [line.strip() for line in url_verify.stdout.splitlines() if line.startswith("- http")]
+                      err_msg = "<br>".join(failures) if failures else "URL verification failed (see logs)"
+                      results.append(("❌", "New URLs verified", err_msg))
+                      auto_merge_safe = False
+                  else:
+                      if "No new URLs found" in url_verify.stdout or "No changes to config" in url_verify.stdout:
+                          results.append(("⏭️", "New URLs verified", "No new URLs added"))
+                      else:
+                          results.append(("✅", "New URLs verified", "All new URLs returned 200 OK"))
+
               except yaml.YAMLError as e:
                   results.append(("❌", "config.yml YAML parse", str(e)))
                   auto_merge_safe = False
@@ -181,6 +204,7 @@ jobs:
                   auto_merge_safe = False
           else:
               results.append(("⏭️", "config.yml schema", "Not changed — skipped"))
+              results.append(("⏭️", "New URLs verified", "Not changed — skipped"))
 
           # ── Check 2: Python syntax (any .py files changed) ──────────────
           py_files = [f for f in changed if f.endswith(".py")]
