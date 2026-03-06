@@ -27,6 +27,8 @@ from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
+from xml.sax.saxutils import escape as xml_escape
+import random
 
 import requests
 import yaml
@@ -46,7 +48,6 @@ except ImportError:
 # PERFORMANCE OPTIMIZATION: CONNECTION POOLING & SESSION MANAGEMENT
 # ============================================================================
 
-
 def create_optimized_session() -> requests.Session:
     """
     Create a requests session with optimized settings for high-performance scraping:
@@ -62,8 +63,7 @@ def create_optimized_session() -> requests.Session:
     retry_strategy = Retry(
         total=3,  # Max 3 retries
         backoff_factor=0.3,  # Wait 0.3, 0.6, 1.2 seconds between retries
-        # Retry on these HTTP codes
-        status_forcelist=[429, 500, 502, 503, 504],
+        status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
         allowed_methods=["GET", "POST"],  # Retry GET and POST
     )
 
@@ -90,9 +90,11 @@ def create_optimized_session() -> requests.Session:
 
     return session
 
-
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
+
+# Module-level lock for thread-safe counter updates in parallel fetchers
+_COUNTER_LOCK = threading.Lock()
 
 
 class DomainConcurrencyLimiter:
@@ -171,7 +173,6 @@ def limited_post(url: str, **kwargs):
 # ============================================================================
 # COMPANY CLASSIFICATIONS
 # ============================================================================
-
 
 # FAANG_PLUS: Companies classified as the "FAANG+" company tier.
 # Consumed by: get_company_tier() at line ~302.
@@ -332,7 +333,7 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'cybersecurity', 'infosec', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]
@@ -381,7 +382,6 @@ US_CITIZENSHIP_KEYWORDS = [
     'security clearance', 'clearance required', 'top secret', 'ts/sci'
 ]
 
-
 def load_config() -> Dict[str, Any]:
     """Load configuration from config.yml"""
     config_path = os.path.join(os.path.dirname(__file__), '..', 'config.yml')
@@ -392,12 +392,12 @@ def load_config() -> Dict[str, Any]:
         print(f"Error loading config: {e}")
         sys.exit(1)
 
-
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     """Categorize a job based on its title and description"""
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
+
 
     # Priority check for TPM to avoid matching generic 'infrastructure' or 'program' first
     if re.search(r'\btpm\b', combined):
@@ -427,7 +427,6 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
         'emoji': CATEGORY_PATTERNS['other']['emoji']
     }
 
-
 @lru_cache(maxsize=2048)  # AGGRESSIVE: Increased from 512 for 10K companies
 def get_company_tier(company_name: str) -> Dict[str, Any]:
     """Get company tier classification including sectors
@@ -456,7 +455,6 @@ def get_company_tier(company_name: str) -> Dict[str, Any]:
     tier_info['sectors'] = sectors
     return tier_info
 
-
 def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
     """Detect sponsorship and citizenship requirements"""
     combined = f"{title.lower()} {description.lower() if description else ''}"
@@ -466,14 +464,11 @@ def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, boo
         'us_citizenship_required': any(kw in combined for kw in US_CITIZENSHIP_KEYWORDS)
     }
 
-
 def is_job_closed(title: str, description: str = '') -> bool:
     """Check if job appears to be closed"""
     combined = f"{title.lower()} {description.lower() if description else ''}"
-    closed_indicators = ['closed', 'no longer accepting',
-                         'position filled', 'expired']
+    closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
-
 
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
@@ -485,8 +480,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            # AGGRESSIVE: 5s for 10K companies
-            response = limited_get(url, timeout=5)
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -513,31 +507,24 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 print(f"  ⏱️  {company_name} request timed out, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+                print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
         except requests.exceptions.RequestException as e:
             if "404" in str(e):
-                print(
-                    f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
                 break  # Don't retry 404s
             elif attempt < max_retries:
-                print(
-                    f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
         except Exception as e:
             if attempt < max_retries:
-                print(
-                    f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
+                print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
-
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
@@ -549,8 +536,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            # AGGRESSIVE: 5s for 10K companies
-            response = limited_get(url, timeout=5)
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -559,8 +545,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 continue
 
             for job in data:
-                description = job.get('description', '') or job.get(
-                    'descriptionPlain', '') or ''
+                description = job.get('description', '') or job.get('descriptionPlain', '') or ''
                 jobs.append({
                     'company': company_name,
                     'title': job.get('text', ''),
@@ -578,31 +563,24 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 print(f"  ⏱️  {company_name} request timed out, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+                print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
         except requests.exceptions.RequestException as e:
             if "404" in str(e):
-                print(
-                    f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
                 break  # Don't retry 404s
             elif attempt < max_retries:
-                print(
-                    f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
         except Exception as e:
             if attempt < max_retries:
-                print(
-                    f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
                 continue
             else:
-                print(
-                    f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
+                print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
-
 
 def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers API with retry logic"""
@@ -613,8 +591,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
         for attempt in range(max_retries + 1):
             try:
                 if attempt > 0:
-                    print(
-                        f"  🔄 Retry {attempt} for Google search '{search_term}'...")
+                    print(f"  🔄 Retry {attempt} for Google search '{search_term}'...")
                     time.sleep(1)  # Wait before retry
 
                 print(f"Searching Google careers for '{search_term}'...")
@@ -625,19 +602,15 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                # AGGRESSIVE: 5s for 10K
-                response = limited_get(url, timeout=5)
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 404:
-                    print(
-                        f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
-
                 response.raise_for_status()
                 data = response.json()
 
                 if not isinstance(data, dict) or 'jobs' not in data:
-                    print(
-                        f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
+                    print(f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
                     continue
 
                 for job in data.get('jobs', []):
@@ -666,38 +639,30 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         'description': description[:500] if description else ''
                     })
 
-                print(
-                    f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
+                print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
                 all_jobs.extend(jobs)
                 break  # Success, exit retry loop
 
             except requests.exceptions.Timeout:
                 if attempt < max_retries:
-                    print(
-                        f"  ⏱️  Google search '{search_term}' timed out, retrying...")
+                    print(f"  ⏱️  Google search '{search_term}' timed out, retrying...")
                     continue
                 else:
-                    print(
-                        f"  ❌ Google search '{search_term}' timed out after {max_retries + 1} attempts")
+                    print(f"  ❌ Google search '{search_term}' timed out after {max_retries + 1} attempts")
             except requests.exceptions.RequestException as e:
                 if attempt < max_retries:
-                    print(
-                        f"  ⚠️  Request error for Google search '{search_term}': {e}, retrying...")
+                    print(f"  ⚠️  Request error for Google search '{search_term}': {e}, retrying...")
                     continue
                 else:
-                    print(
-                        f"  ❌ Request error for Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+                    print(f"  ❌ Request error for Google search '{search_term}' after {max_retries + 1} attempts: {e}")
             except Exception as e:
                 if attempt < max_retries:
-                    print(
-                        f"  ⚠️  Error fetching Google search '{search_term}': {e}, retrying...")
+                    print(f"  ⚠️  Error fetching Google search '{search_term}': {e}, retrying...")
                     continue
                 else:
-                    print(
-                        f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+                    print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
 
     return all_jobs
-
 
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
@@ -731,7 +696,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             # We need the "tenant" for the API path.
 
             subdomin_parts = host.split('.')
-            tenant = subdomin_parts[0]  # Default guess
+            tenant = subdomin_parts[0] # Default guess
 
             # Site ID is the last part of the path
             site_id = site_path.split('/')[-1]
@@ -747,7 +712,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     "appliedFacets": {},
                     "limit": limit,
                     "offset": offset,
-                    "searchText": ""  # Fetch all, filter locally
+                    "searchText": "" # Fetch all, filter locally
                 }
 
                 headers = {
@@ -756,24 +721,21 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
 
-                response = limited_post(
-                    api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
                 if response.status_code == 404:
-                    # Try alternative tenant extraction if 404
-                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    # In that case, tenant is matching path[0]
-                    path_parts = site_path.split('/')
-                    if len(path_parts) >= 2:
-                        tenant = path_parts[0]
-                        site_id = path_parts[-1]
-                        api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                        response = limited_post(api_url, json=payload, headers={
-                                                'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                     # Try alternative tenant extraction if 404
+                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                     # In that case, tenant is matching path[0]
+                     path_parts = site_path.split('/')
+                     if len(path_parts) >= 2:
+                         tenant = path_parts[0]
+                         site_id = path_parts[-1]
+                         api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+                         response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
-                    print(
-                        f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
+                    print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
                     break
 
                 data = response.json()
@@ -797,13 +759,13 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         'title': title,
                         'location': item.get('locationsText', 'Remote'),
                         'url': job_url,
-                        'posted_at': posted_on,  # Raw string for now, loop will parse if date format
+                        'posted_at': posted_on, # Raw string for now, loop will parse if date format
                         'source': 'Workday',
-                        'description': ''  # Not fetching full desc to save requests
+                        'description': '' # Not fetching full desc to save requests
                     })
 
                 offset += limit
-                if len(jobs) >= 200:  # Safety limit
+                if len(jobs) >= 200: # Safety limit
                     break
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -814,7 +776,6 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             continue
 
     return all_jobs
-
 
 def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs using JobSpy library from multiple job sites - PARALLEL VERSION
@@ -832,8 +793,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
         return []
 
     sites = config_jobspy.get('sites', ['linkedin', 'indeed'])
-    search_terms = config_jobspy.get(
-        'search_terms', ['new grad software engineer'])
+    search_terms = config_jobspy.get('search_terms', ['new grad software engineer'])
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
 
@@ -845,12 +805,10 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     ])
 
     # Build list of all (site, search_term, country) combinations
-    search_tasks = [(site, term, country)
-                    for site in sites for term in search_terms for country in countries]
+    search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
     total_tasks = len(search_tasks)
 
-    print(
-        f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites and {len(countries)} countries")
+    print(f"🚀 Starting PARALLEL job search: {total_tasks} searches across {len(sites)} sites and {len(countries)} countries")
     print(f"   Countries: {', '.join([c['code'] for c in countries])}")
     print(f"   Using 25 concurrent workers for maximum speed...")
 
@@ -908,25 +866,23 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
     with ThreadPoolExecutor(max_workers=25) as executor:
         # Submit all tasks
-        future_to_task = {executor.submit(
-            search_single, task): task for task in search_tasks}
+        future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
 
         # Process results as they complete
         for future in as_completed(future_to_task):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             result = future.result()
 
             if result['error']:
-                errors += 1
-                print(
-                    f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
+                with _COUNTER_LOCK:
+                    errors += 1
+                print(f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
             elif result['count'] > 0:
                 all_jobs.extend(result['jobs'])
-                print(
-                    f"  [{completed}/{total_tasks}] ✓ {result['site'].upper()} '{result['term']}': {result['count']} jobs")
+                print(f"  [{completed}/{total_tasks}] ✓ {result['site'].upper()} '{result['term']}': {result['count']} jobs")
             else:
-                print(
-                    f"  [{completed}/{total_tasks}] ⚠️ {result['site'].upper()} '{result['term']}': No jobs found")
+                print(f"  [{completed}/{total_tasks}] ⚠️ {result['site'].upper()} '{result['term']}': No jobs found")
 
     print(f"\n✅ Parallel search complete!")
     print(f"   Total jobs found via JobSpy: {len(all_jobs)}")
@@ -936,15 +892,13 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
 
     return all_jobs
 
-
 def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs using SerpApi Google Jobs API (placeholder implementation)"""
     if not config_serp.get('enabled', False):
         print("SerpApi is disabled in configuration, skipping...")
         return []
 
-    api_key = config_serp.get('api_key', '').replace(
-        '${SERP_API_KEY}', os.getenv('SERP_API_KEY', ''))
+    api_key = config_serp.get('api_key', '').replace('${SERP_API_KEY}', os.getenv('SERP_API_KEY', ''))
     if not api_key or api_key.startswith('${'):
         print("⚠️ SerpApi API key not configured, skipping...")
         return []
@@ -954,15 +908,13 @@ def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> Li
 
     return []
 
-
 def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Fetch jobs using ScraperAPI for general web scraping (placeholder implementation)"""
     if not config_scraper.get('enabled', False):
         print("ScraperAPI is disabled in configuration, skipping...")
         return []
 
-    api_key = config_scraper.get('api_key', '').replace(
-        '${SCRAPER_API_KEY}', os.getenv('SCRAPER_API_KEY', ''))
+    api_key = config_scraper.get('api_key', '').replace('${SCRAPER_API_KEY}', os.getenv('SCRAPER_API_KEY', ''))
     if not api_key or api_key.startswith('${'):
         print("⚠️ ScraperAPI key not configured, skipping...")
         return []
@@ -975,7 +927,6 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 # ============================================================================
 # PARALLEL FETCHING FUNCTIONS (Performance Optimization)
 # ============================================================================
-
 
 def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
@@ -990,31 +941,29 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
 
     # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
     if max_workers is None:
-        # AGGRESSIVE: 30-300 workers for 10K
-        max_workers = min(300, max(30, total // 3))
+        max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
 
-    print(
-        f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
+    print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         return fetch_greenhouse_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_company = {executor.submit(
-            fetch_single, c): c for c in companies}
+        future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
-    print(
-        f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
+    print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
 
 
@@ -1030,31 +979,29 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        # AGGRESSIVE: 15-200 workers for 10K
-        max_workers = min(200, max(15, total))
+        max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
 
-    print(
-        f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
+    print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         return fetch_lever_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_company = {executor.submit(
-            fetch_single, c): c for c in companies}
+        future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
-    print(
-        f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
+    print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
 
 
@@ -1067,11 +1014,9 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
 
     # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
     if max_workers is None:
-        # AGGRESSIVE: 5x multiplier for 10K
-        max_workers = min(100, max(12, total * 5))
+        max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
 
-    print(
-        f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
+    print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
 
     def fetch_single_term(search_term: str) -> List[Dict[str, Any]]:
         """Fetch jobs for a single search term"""
@@ -1089,13 +1034,10 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                # AGGRESSIVE: 5s for 10K
-                response = limited_get(url, timeout=5)
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 404:
-                    print(
-                        f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
-
                 response.raise_for_status()
                 data = response.json()
 
@@ -1137,8 +1079,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
         return jobs
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_term = {executor.submit(
-            fetch_single_term, term): term for term in search_terms}
+        future_to_term = {executor.submit(fetch_single_term, term): term for term in search_terms}
 
         for future in as_completed(future_to_term):
             completed += 1
@@ -1148,8 +1089,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
             except Exception as e:
                 errors += 1
 
-    print(
-        f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
+    print(f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
     return all_jobs
 
 
@@ -1192,18 +1132,15 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     return unique_jobs
 
-
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains new grad signals"""
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-
 def has_track_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains track signals"""
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
-
 
 def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
     """
@@ -1257,7 +1194,6 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
     # Return original if no pattern matches
     return posted_at
 
-
 def _as_utc_naive(dt: datetime) -> datetime:
     """Normalize datetime to UTC, then return timezone-naive value."""
     if dt.tzinfo is None:
@@ -1281,24 +1217,30 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         if isinstance(posted_at, (datetime, date)):
             posted_date = posted_at
             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
-                posted_date = datetime.combine(
-                    posted_date, datetime.min.time())
+                posted_date = datetime.combine(posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
         elif isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(
-                posted_at / 1000, tz=timezone.utc)
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
         posted_date = _as_utc_naive(posted_date)
-        cutoff_date = now_utc.replace(
-            tzinfo=None) - timedelta(days=max_age_days)
+        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as e:
         print(f"Error parsing date {posted_at}: {e}")
         return False
+
+def _location_matches(location_lower: str, term: str) -> bool:
+    """Match a location term using word boundaries for short terms (<=3 chars)
+    to prevent false positives like 'al' matching 'Montreal' or 'in' matching 'Berlin'.
+    Longer terms use fast substring matching since they are unambiguous.
+    """
+    if len(term) <= 3:
+        return bool(re.search(r'\b' + re.escape(term) + r'\b', location_lower))
+    return term in location_lower
 
 
 def is_valid_location(location: str) -> bool:
@@ -1369,34 +1311,17 @@ def is_valid_location(location: str) -> bool:
         'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
     ]
 
-    # Check for USA indicators
-    for indicator in usa_indicators:
-        if indicator in location_lower:
-            return True
+    # All indicator lists to check
+    all_indicators = [usa_indicators, usa_states, usa_cities,
+                      canada_indicators, india_indicators]
 
-    # Check for USA states
-    for state in usa_states:
-        if state in location_lower:
-            return True
-
-    # Check for USA cities
-    for city in usa_cities:
-        if city in location_lower:
-            return True
-
-    # Check for Canada indicators
-    for indicator in canada_indicators:
-        if indicator in location_lower:
-            return True
-
-    # Check for India indicators
-    for indicator in india_indicators:
-        if indicator in location_lower:
-            return True
+    for indicator_list in all_indicators:
+        for term in indicator_list:
+            if _location_matches(location_lower, term):
+                return True
 
     # If we can't determine, default to False to be safe
     return False
-
 
 def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Filter jobs based on configuration criteria"""
@@ -1417,8 +1342,7 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         posted_at = job.get('posted_at', '')
 
         # FIRST: Check for exclusion signals (filter OUT senior/staff roles)
-        is_excluded = any(
-            signal.lower() in title_lower for signal in exclusion_signals)
+        is_excluded = any(signal.lower() in title_lower for signal in exclusion_signals)
         if is_excluded:
             continue
 
@@ -1430,13 +1354,14 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         has_track = has_track_signal(title, filters['track_signals'])
 
         # Strong new grad signals that don't need additional track signals
+        # P4: Generic role titles removed — they belong in track_signals only.
+        # Without a co-occurring new-grad keyword, "Software Engineer" alone
+        # should not bypass the track-signal requirement.
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad",
             "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
-            "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
-        has_strong_new_grad = any(
-            signal.lower() in title_lower for signal in strong_new_grad_signals)
+        has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
 
         # Accept if: has strong new grad signal OR (has new grad signal AND track signal)
         if not (has_strong_new_grad or has_track):
@@ -1453,7 +1378,6 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         filtered_jobs.append(job)
 
     return filtered_jobs
-
 
 def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Add categorization, company tier, and flags to jobs"""
@@ -1480,21 +1404,18 @@ def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         job['is_closed'] = is_job_closed(title, description)
 
         # Generate unique ID
-        job['id'] = f"{company}-{title}-{job.get('location', '')}".lower().replace(
-            ' ', '-')[:100]
+        job['id'] = f"{company}-{title}-{job.get('location', '')}".lower().replace(' ', '-')[:100]
 
         enriched.append(job)
 
     return enriched
-
 
 def format_posted_date(posted_at: str) -> str:
     """Format posted date for display"""
     try:
         # Handle timestamp integers (from Lever API)
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(
-                posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
         else:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at)
@@ -1512,10 +1433,8 @@ def format_posted_date(posted_at: str) -> str:
         else:
             return posted_date.strftime("%Y-%m-%d")
     except Exception as e:
-        print(
-            f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
+        print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
-
 
 def get_iso_date(posted_at) -> str:
     """Get ISO format date string"""
@@ -1528,10 +1447,8 @@ def get_iso_date(posted_at) -> str:
             posted_date = date_parser.parse(normalized_date)
         return posted_date.replace(tzinfo=None).isoformat()
     except Exception as e:
-        print(
-            f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
+        print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
-
 
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
     """Generate JSON data structure for jobs"""
@@ -1546,19 +1463,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
 
     # Sort jobs by date
-    def get_sort_date(job):
-        posted_at = job.get('posted_at')
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                return date_parser.parse(posted_at).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Build JSON structure
     json_jobs = []
@@ -1596,7 +1501,6 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         'jobs': json_jobs
     }
 
-
 def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     """
     Save daily market snapshot for historical tracking, comparisons, and ML predictions.
@@ -1604,6 +1508,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     """
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
+
 
     # Count jobs by category
     category_counts = Counter()
@@ -1626,8 +1531,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
 
     # Calculate average jobs per company
     unique_companies = len(company_counts)
-    avg_jobs_per_company = round(
-        len(jobs) / unique_companies, 2) if unique_companies > 0 else 0
+    avg_jobs_per_company = round(len(jobs) / unique_companies, 2) if unique_companies > 0 else 0
 
     # Create snapshot object
     snapshot = {
@@ -1642,8 +1546,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     }
 
     # Load existing history
-    history_path = os.path.join(os.path.dirname(
-        __file__), '..', 'docs', 'market-history.json')
+    history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
 
     try:
         if os.path.exists(history_path):
@@ -1666,8 +1569,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         for i, entry in enumerate(history):
             if entry['date'] == today:
                 history[i] = snapshot
-                print(
-                    f"  ✓ Updated market snapshot for {today}: {len(jobs)} jobs")
+                print(f"  ✓ Updated market snapshot for {today}: {len(jobs)} jobs")
                 break
 
     # Keep only last 90 days
@@ -1694,11 +1596,9 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         os.makedirs(os.path.dirname(history_path), exist_ok=True)
         with open(history_path, 'w', encoding='utf-8') as f:
             json.dump(history_data, f, indent=2, ensure_ascii=False)
-        print(
-            f"  ✓ Saved market history: {len(history)} snapshots (last 90 days)")
+        print(f"  ✓ Saved market history: {len(history)} snapshots (last 90 days)")
     except Exception as e:
         print(f"  ❌ Failed to save market history: {e}")
-
 
 def predict_hiring_trends() -> None:
     """
@@ -1712,8 +1612,7 @@ def predict_hiring_trends() -> None:
         return
 
     # Check if predictions were already generated today
-    predictions_path = os.path.join(os.path.dirname(
-        __file__), '..', 'docs', 'predictions.json')
+    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
     today = datetime.now().strftime('%Y-%m-%d')
 
     try:
@@ -1724,20 +1623,17 @@ def predict_hiring_trends() -> None:
 
                 # Check if predictions were generated today
                 if generated_date.startswith(today):
-                    print(
-                        f"  ✓ Predictions already generated today ({today}) - skipping")
+                    print(f"  ✓ Predictions already generated today ({today}) - skipping")
                     return
     except Exception as e:
         print(f"  ⚠️  Could not check existing predictions: {e}")
 
     # Load market history
-    history_path = os.path.join(os.path.dirname(
-        __file__), '..', 'docs', 'market-history.json')
+    history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
 
     try:
         if not os.path.exists(history_path):
-            print(
-                "  ℹ️  Market history not found - predictions available after data collection")
+            print("  ℹ️  Market history not found - predictions available after data collection")
             return
 
         with open(history_path, 'r', encoding='utf-8') as f:
@@ -1745,8 +1641,7 @@ def predict_hiring_trends() -> None:
             snapshots = history_data.get('snapshots', [])
 
         if len(snapshots) < 7:
-            print(
-                f"  ℹ️  Not enough data for predictions ({len(snapshots)} days, need 7+)")
+            print(f"  ℹ️  Not enough data for predictions ({len(snapshots)} days, need 7+)")
             return
 
     except Exception as e:
@@ -1754,8 +1649,7 @@ def predict_hiring_trends() -> None:
         return
 
     # Prepare data summary for Gemini
-    total_jobs_trend = [s['total_jobs']
-                        for s in snapshots[-30:]]  # Last 30 days
+    total_jobs_trend = [s['total_jobs'] for s in snapshots[-30:]]  # Last 30 days
     category_trends = {}
     tier_trends = {}
 
@@ -1849,59 +1743,64 @@ Respond in JSON format:
                 # Extract JSON from response (handle markdown code blocks)
                 content = content.strip()
                 if '```json' in content:
-                    content = content.split('```json')[
-                        1].split('```')[0].strip()
+                    content = content.split('```json')[1].split('```')[0].strip()
                 elif '```' in content:
                     content = content.split('```')[1].split('```')[0].strip()
 
                 predictions = json.loads(content)
 
-                # Add metadata
-                predictions['generated_at'] = datetime.now().isoformat()
-                predictions['data_points'] = len(snapshots)
-                predictions['date_range'] = {
-                    'start': snapshots[0]['date'],
-                    'end': snapshots[-1]['date']
-                }
+                # S6: Validate required keys before trusting LLM output
+                required_keys = {'outlook', 'predictions', 'confidence', 'insights'}
+                missing = required_keys - set(predictions.keys())
+                if missing:
+                    print(f"  ⚠️  Gemini response missing keys {missing} — skipping prediction update")
+                elif predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
+                    print(f"  ⚠️  Invalid outlook value '{predictions.get('outlook')}' — skipping prediction update")
+                elif not isinstance(predictions.get('confidence'), (int, float)):
+                    print(f"  ⚠️  Invalid confidence type — skipping prediction update")
+                else:
+                    # Add metadata
+                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['data_points'] = len(snapshots)
+                    predictions['date_range'] = {
+                        'start': snapshots[0]['date'],
+                        'end': snapshots[-1]['date']
+                    }
 
-                # Save predictions
-                predictions_path = os.path.join(os.path.dirname(
-                    __file__), '..', 'docs', 'predictions.json')
-                with open(predictions_path, 'w', encoding='utf-8') as f:
-                    json.dump(predictions, f, indent=2, ensure_ascii=False)
+                    # Save predictions
+                    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+                    with open(predictions_path, 'w', encoding='utf-8') as f:
+                        json.dump(predictions, f, indent=2, ensure_ascii=False)
 
-                print(
-                    f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                    print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
                 print("  ⚠️  No predictions in Gemini response")
 
         else:
-            print(
-                f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
+            print(f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
 
     except Exception as e:
         error_msg = str(e)
         print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 
+def extract_sort_date(job: Dict[str, Any]) -> datetime:
+    """Extract and parse posted_at for sorting."""
+    posted_at = job.get('posted_at')
+    if not posted_at:
+        return datetime.min
+    try:
+        if isinstance(posted_at, (int, float)):
+            return datetime.fromtimestamp(posted_at / 1000)
+        return date_parser.parse(posted_at).replace(tzinfo=None)
+    except Exception:
+        return datetime.min
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
 
     # Sort jobs by posted date (most recent first)
-    def get_sort_date(job):
-        posted_at = job['posted_at']
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                parsed_date = date_parser.parse(posted_at)
-                return parsed_date.replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Calculate category counts
     category_counts = {}
@@ -1916,12 +1815,18 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
 [![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
 🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
+
+> [!NOTE]
+> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
+> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
+> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
 
 ---
 
@@ -1933,8 +1838,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     for cat_id, cat_info in CATEGORY_PATTERNS.items():
         count = category_counts.get(cat_id, 0)
         if count > 0:
-            anchor = cat_info['name'].lower().replace(
-                ' ', '-').replace('&', '').replace('  ', '-')
+            anchor = cat_info['name'].lower().replace(' ', '-').replace('&', '').replace('  ', '-')
             readme_content += f"{cat_info['emoji']} [{cat_info['name']}](#{anchor}) ({count})\n\n"
 
     readme_content += """---
@@ -1998,8 +1902,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
             title = title.replace('|', '\\|')
             location = location.replace('|', '\\|')
 
-            apply_link = f"[Apply]({url})" if url and url != '#' and not job.get(
-                'is_closed') else "🔒"
+            apply_link = f"[Apply]({url})" if url and url != '#' and not job.get('is_closed') else "🔒"
 
             readme_content += f"| {company} | {title}{flag_str} | {location} | {posted} | {apply_link} |\n"
 
@@ -2076,6 +1979,139 @@ Found a job we're missing? Want to report a closed position?
     return readme_content
 
 
+def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
+    """Generate an RSS 2.0 feed from the most recent jobs.
+
+    Writes docs/feed.xml so users can subscribe via any feed reader.
+    Zero-cost, zero-infra solution for job alerts.
+    """
+    feed_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'feed.xml')
+
+    # Sort by date descending, take top N
+    jobs.sort(key=extract_sort_date, reverse=True)
+    sorted_jobs = jobs[:max_items]
+
+    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+    items = []
+    for job in sorted_jobs:
+        company = job.get('company', 'Unknown')
+        title = job.get('title', 'Unknown')
+        url = job.get('url', '')
+        location = job.get('location', 'Remote')
+        category = job.get('category', {}).get('name', 'General')
+        posted_at_dt = extract_sort_date(job)
+        pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
+
+        items.append(f"""    <item>
+      <title>{xml_escape(title)} at {xml_escape(company)}</title>
+      <link>{xml_escape(url)}</link>
+      <description>New grad role at {xml_escape(company)} in {xml_escape(location)}. Category: {xml_escape(category)}</description>
+      <pubDate>{pubDate}</pubDate>
+      <guid isPermaLink="true">{xml_escape(url)}</guid>
+    </item>""")
+
+    rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Grad Jobs</title>
+    <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
+    <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
+    <language>en-us</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+    <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+
+    try:
+        os.makedirs(os.path.dirname(feed_path), exist_ok=True)
+        with open(feed_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
+        print(f"📡 RSS feed generated with {len(sorted_jobs)} items → docs/feed.xml")
+    except Exception as e:
+        print(f"⚠️  Failed to write RSS feed: {e}")
+
+
+def generate_health_json(jobs: List[Dict[str, Any]],
+                         source_counts: Dict[str, int],
+                         start_time: float) -> None:
+    """Generate docs/health.json for monitoring and staleness detection.
+
+    Status values:
+      - ok: all sources returned jobs and total > 0
+      - degraded: at least one source returned 0 jobs
+      - failed: total job count is 0
+    """
+    health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
+
+    total_jobs = len(jobs)
+    zero_sources = [s for s, c in source_counts.items() if c == 0]
+
+    if total_jobs == 0:
+        status = 'failed'
+    elif zero_sources:
+        status = 'degraded'
+    else:
+        status = 'ok'
+
+    health = {
+        'status': status,
+        'last_run': datetime.utcnow().isoformat() + 'Z',
+        'total_jobs': total_jobs,
+        'source_counts': source_counts,
+        'zero_sources': zero_sources,
+        'run_duration_seconds': round(time.time() - start_time, 1),
+    }
+
+    try:
+        os.makedirs(os.path.dirname(health_path), exist_ok=True)
+        with open(health_path, 'w', encoding='utf-8') as f:
+            json.dump(health, f, indent=2)
+        print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
+    except Exception as e:
+        print(f"⚠️  Failed to write health.json: {e}")
+
+
+def check_job_url_health(jobs: List[Dict[str, Any]],
+                          sample_pct: float = 0.05,
+                          max_checks: int = 50) -> None:
+    """HEAD-request a random sample of job URLs to detect dead links.
+
+    Updates each sampled job in-place with `url_verified` (bool).
+    Best-effort — failures are logged but never block the pipeline.
+    """
+    sample_size = min(max_checks, max(1, int(len(jobs) * sample_pct)))
+    sample = random.sample(jobs, min(sample_size, len(jobs)))
+    verified = 0
+    dead = 0
+
+    for job in sample:
+        url = job.get('url', '')
+        if not url or not url.startswith('http'):
+            continue
+            
+        try:
+            parsed = urllib.parse.urlparse(url)
+            hostname = parsed.hostname or ''
+            if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
+                continue
+
+            resp = HTTP_SESSION.head(url, timeout=4, allow_redirects=True)
+            if resp.status_code < 400:
+                job['url_verified'] = True
+                verified += 1
+            else:
+                job['url_verified'] = False
+                dead += 1
+        except Exception:
+            job['url_verified'] = False
+            dead += 1
+
+    print(f"🔍 URL health check: {verified} verified, {dead} dead/unreachable out of {sample_size} sampled")
+
+
 def main():
     """Main function to scrape jobs and update README
 
@@ -2086,6 +2122,7 @@ def main():
 
     print("🚀 Starting job aggregation (PARALLEL MODE)...")
     print("=" * 60)
+
 
     # Load configuration
     config = load_config()
@@ -2100,10 +2137,8 @@ def main():
     print(f"   Lever: {lever_count} companies")
     print(f"   Workday: {workday_count} companies")
     print(f"   TOTAL: {total_companies} companies")
-    if total_companies < 10000:
-        print(
-            f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
-    print("=" * 60)
+    # P6: Removed stale 10K company warning — config has ~200 companies by design.
+    print("="  * 60)
 
     # Collect all jobs using parallel fetchers
     all_jobs = []
@@ -2113,8 +2148,7 @@ def main():
 
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
     # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
-    # AGGRESSIVE: 20 parallel APIs
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
 
         # Submit Greenhouse parallel fetch
@@ -2131,8 +2165,10 @@ def main():
                 config['apis']['lever']['companies']
             )
 
-        # Submit Google parallel fetch
-        if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
+        # Submit Google parallel fetch (P5: gated on enabled flag)
+        if ('google' in config['apis']
+                and config['apis']['google'].get('enabled', True)
+                and config['apis']['google'].get('search_terms')):
             futures['google'] = executor.submit(
                 fetch_google_jobs_parallel,
                 config['apis']['google']['search_terms']
@@ -2147,18 +2183,21 @@ def main():
 
         # Submit Workday parallel fetch
         if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
-            futures['workday'] = executor.submit(
+             futures['workday'] = executor.submit(
                 fetch_workday_jobs,
                 config['apis']['workday']['companies']
             )
 
         # Collect results from all futures
+        source_counts = {}  # C1: Track per-source job counts for health.json
         for source, future in futures.items():
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
+                source_counts[source] = len(jobs)
                 print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
             except Exception as e:
+                source_counts[source] = 0
                 print(f"  ❌ {source.upper()} failed: {e}")
 
     # Fetch from third-party scraping APIs (if configured) - these are usually disabled
@@ -2182,6 +2221,7 @@ def main():
     all_jobs = deduplicate_jobs(all_jobs)
     print(f"   Jobs after deduplication: {len(all_jobs)}")
 
+
     # Phase 3: Filter, enrich, and output
     print("\n⚙️ Phase 3: Filtering and enriching jobs...")
 
@@ -2192,6 +2232,9 @@ def main():
     # Enrich jobs with categorization and flags
     enriched_jobs = enrich_jobs(filtered_jobs)
     print(f"   Jobs enriched with categories and flags")
+
+    # C3: Check a sample of job URLs for dead links
+    check_job_url_health(enriched_jobs)
 
     # Generate JSON data
     # Sanitize jobs to remove NaN values
@@ -2219,9 +2262,10 @@ def main():
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
 
-    # Write JSON file
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
+    # Write JSON file to docs/ (GitHub Pages source directory)
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'jobs.json')
     try:
+        os.makedirs(os.path.dirname(json_path), exist_ok=True)
         with open(json_path, 'w') as f:
             json.dump(jobs_json, f, indent=2)
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
@@ -2241,15 +2285,19 @@ def main():
         print(f"Error writing README.md: {e}")
         sys.exit(1)
 
+    # ========== Generate RSS Feed ==========
+    generate_rss_feed(enriched_jobs)
+
+    # ========== Generate Health Report ==========
+    generate_health_json(enriched_jobs, source_counts, start_time)
+
     # Report execution time
     elapsed = time.time() - start_time
     print("\n" + "=" * 60)
     print(f"✅ Job aggregation complete!")
-    print(
-        f"⏱️  Total execution time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
+    print(f"⏱️  Total execution time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
     print(f"📊 Final job count: {len(enriched_jobs)}")
     print("=" * 60)
-
 
 if __name__ == "__main__":
     main()

@@ -6,16 +6,17 @@ These tests validate that jobs are correctly classified into categories
 like Software Engineering, Data ML, Quant Finance, etc., based on title keywords.
 """
 
-from update_jobs import (
-    categorize_job,
-    get_company_tier,
-    detect_sponsorship_flags,
-)
 import sys
 import os
 
 # Ensure the scripts directory is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from update_jobs import (
+    categorize_job,
+    get_company_tier,
+    detect_sponsorship_flags,
+)
 
 
 class TestCategorizeJob:
