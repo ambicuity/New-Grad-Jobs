@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T14:25:57.864571",
+    "last_updated": "2026-03-06T15:07:55.822566",
     "total_snapshots": 2,
     "date_range": {
       "start": "2026-03-05",
@@ -65,12 +65,12 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1461,
+      "total_jobs": 1465,
       "categories": {},
       "tiers": {
-        "unicorn": 813,
-        "other": 431,
-        "faang_plus": 217
+        "unicorn": 812,
+        "faang_plus": 219,
+        "other": 434
       },
       "top_companies": [
         {
@@ -87,7 +87,7 @@
         },
         {
           "company": "Cloudflare",
-          "jobs": 55
+          "jobs": 54
         },
         {
           "company": "Anthropic",
@@ -95,7 +95,7 @@
         },
         {
           "company": "Lyft",
-          "jobs": 31
+          "jobs": 32
         },
         {
           "company": "MongoDB",
@@ -114,9 +114,9 @@
           "jobs": 26
         }
       ],
-      "unique_companies": 222,
-      "avg_jobs_per_company": 6.58,
-      "timestamp": "2026-03-06T14:25:57.864378"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 6.54,
+      "timestamp": "2026-03-06T15:07:55.822383"
     }
   ]
 }
