@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from test_config import MIN_EXPECTED_COMPANIES, validate_config
+from test_config import validate_config
 
 
 def _write(path: Path, content: str) -> None:
@@ -32,10 +32,12 @@ apis:
 
 
 def test_validate_config_threshold_success(tmp_path, caplog) -> None:
-    companies = ", ".join(f"c{i}" for i in range(MIN_EXPECTED_COMPANIES))
+    companies = ", ".join(f"c{i}" for i in range(5))
     _write(
         tmp_path / "config.yml",
         f"""
+filtering:
+  min_expected_companies: 5
 apis:
   greenhouse:
     companies: [{companies}]
@@ -51,7 +53,7 @@ apis:
 
     logs = caplog.text
     assert code == 0
-    assert f"TOTAL: {MIN_EXPECTED_COMPANIES} companies" in logs
+    assert "TOTAL: 5 companies" in logs
     assert "WARNING" not in logs
 
 
