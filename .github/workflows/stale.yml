@@ -5,6 +5,7 @@ on:
     # Runs daily at 02:00 UTC
     - cron: '0 2 * * *'
   workflow_dispatch:
+permissions: read-all
 
 jobs:
   stale:
@@ -15,7 +16,7 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639 # v9
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -48,6 +49,6 @@ jobs:
 
           # ---- Exemptions ----
           # Never mark these as stale
-          exempt-issue-labels: 'pinned,security,good first issue,help wanted,architecture'
-          exempt-pr-labels: 'pinned,security,work-in-progress'
+          exempt-issue-labels: 'pinned,security,good first issue,good first issue candidate,help wanted,architecture,beginner,intermediate,advanced,needs-triage,plan-me,blocked'
+          exempt-pr-labels: 'pinned,security,work-in-progress,merge-conflict'
           exempt-all-assignees: true

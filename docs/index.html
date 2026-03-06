@@ -20,8 +20,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script data-goatcounter="https://riteshrana.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="New Grad Jobs RSS Feed" href="feed.xml">
+    <script data-goatcounter="https://riteshrana.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
@@ -130,13 +130,19 @@
             <div class="filter-group">
                 <label class="filter-label">Category</label>
                 <div class="filter-chips" id="category-filters">
-                    <button class="chip active" data-filter="all">All</button>
-                    <button class="chip" data-filter="software_engineering">💻 Software</button>
-                    <button class="chip" data-filter="data_ml">🤖 ML/AI</button>
-                    <button class="chip" data-filter="data_engineering">📊 Data</button>
-                    <button class="chip" data-filter="infrastructure_sre">🏗️ SRE</button>
-                    <button class="chip" data-filter="product_management">📱 PM</button>
-                    <button class="chip" data-filter="quant_finance">📈 Quant</button>
+                    <button class="chip active" data-filter="all" aria-label="Show all categories">All</button>
+                    <button class="chip" data-filter="software_engineering" aria-label="Filter: Software Engineering">💻
+                        Software</button>
+                    <button class="chip" data-filter="data_ml" aria-label="Filter: Machine Learning and AI">🤖
+                        ML/AI</button>
+                    <button class="chip" data-filter="data_engineering" aria-label="Filter: Data Engineering">📊
+                        Data</button>
+                    <button class="chip" data-filter="infrastructure_sre"
+                        aria-label="Filter: Site Reliability Engineering">🏗️ SRE</button>
+                    <button class="chip" data-filter="product_management" aria-label="Filter: Product Management">📱
+                        PM</button>
+                    <button class="chip" data-filter="quant_finance" aria-label="Filter: Quantitative Finance">📈
+                        Quant</button>
                 </div>
             </div>
 
@@ -144,13 +150,16 @@
             <div class="filter-group">
                 <label class="filter-label">Company</label>
                 <div class="filter-chips" id="tier-filters">
-                    <button class="chip active" data-filter="all">All</button>
-                    <button class="chip" data-filter="faang_plus">🔥 FAANG+</button>
-                    <button class="chip" data-filter="unicorn">🚀 Unicorn</button>
-                    <button class="chip" data-filter="defense">🛡️ Defense</button>
-                    <button class="chip" data-filter="finance">💰 Finance</button>
-                    <button class="chip" data-filter="healthcare">🏥 Healthcare</button>
-                    <button class="chip" data-filter="startup">⚡ Startup</button>
+                    <button class="chip active" data-filter="all" aria-label="Show all company tiers">All</button>
+                    <button class="chip" data-filter="faang_plus" aria-label="Filter: FAANG+ companies">🔥
+                        FAANG+</button>
+                    <button class="chip" data-filter="unicorn" aria-label="Filter: Unicorn companies">🚀
+                        Unicorn</button>
+                    <button class="chip" data-filter="defense" aria-label="Filter: Defense sector">🛡️ Defense</button>
+                    <button class="chip" data-filter="finance" aria-label="Filter: Finance sector">💰 Finance</button>
+                    <button class="chip" data-filter="healthcare" aria-label="Filter: Healthcare sector">🏥
+                        Healthcare</button>
+                    <button class="chip" data-filter="startup" aria-label="Filter: Startup companies">⚡ Startup</button>
                 </div>
             </div>
 
@@ -182,9 +191,13 @@
             <p class="results-text">
                 Showing <strong id="visible-count">--</strong> of <strong id="total-count">--</strong> jobs
             </p>
-            <p class="last-updated">
-                Last updated: <span id="last-updated">--</span>
-            </p>
+            <div class="results-actions">
+                <button class="btn-secondary btn-small" id="export-bookmarks-bar" onclick="exportBookmarks()"
+                    aria-label="Export bookmarked jobs as JSON">Export Bookmarks ⬇</button>
+                <p class="last-updated">
+                    Last updated: <span id="last-updated">--</span>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -227,10 +240,12 @@
         <h3>No jobs found</h3>
         <p>Try adjusting your search or filters</p>
         <button class="btn-secondary" id="reset-filters">Reset Filters</button>
+        <button class="btn-secondary" id="export-bookmarks" onclick="exportBookmarks()"
+            aria-label="Export bookmarked jobs as JSON">Export Bookmarks ⬇</button>
     </div>
 
     <!-- Toast Notification -->
-    <div class="toast" id="toast"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">

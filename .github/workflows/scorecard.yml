@@ -1,0 +1,47 @@
+name: OpenSSF Scorecard
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Weekly on Monday at 09:00 UTC — runs after CodeQL to avoid runner contention
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+# Keep permissions minimal — Scorecard only needs to read the repo and write security events
+permissions: read-all
+
+jobs:
+  analysis:
+    name: Scorecard Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write  # Upload SARIF to GitHub Security tab
+      id-token: write         # Required for Scorecard's OIDC-based provenance
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false  # Avoid leaking GITHUB_TOKEN to Scorecard subprocess
+
+      - name: Run Scorecard analysis
+        uses: ossf/scorecard-action@4eaacf0543bb3f2c246792bd56e8cdeffafb205a # v2.4.3
+        with:
+          results_file: scorecard-results.sarif
+          results_format: sarif
+          # publish_results: true makes the score publicly visible at
+          # https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs
+          publish_results: true
+
+      - name: Upload SARIF artifact (7-day retention)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: scorecard-sarif
+          path: scorecard-results.sarif
+          retention-days: 7
+
+      - name: Upload SARIF to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@0d579ffd059c29b07949a3cce3983f0780820c98 # v4
+        with:
+          sarif_file: scorecard-results.sarif

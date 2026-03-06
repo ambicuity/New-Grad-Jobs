@@ -1,0 +1,89 @@
+name: PR Title Check (Conventional Commits)
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions: read-all
+jobs:
+  title-check:
+    name: Validate PR Title Format
+    permissions:
+      pull-requests: write
+      statuses: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR title follows Conventional Commits
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const title = context.payload.pull_request.title;
+            const author = context.payload.pull_request.user.login;
+            const prNumber = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Conventional commit prefix regex — allows optional scope
+            // e.g. feat: ..., fix(api): ..., chore!: ...
+            const CONVENTIONAL = /^(feat|fix|docs|style|refactor|test|chore|ci|perf|revert|build)(\([a-zA-Z0-9_-]+\))?!?:\s.+/;
+
+            // Maintainer PRs (automation, dependabot) are exempt
+            const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
+            if (EXEMPT_USERS.includes(author)) {
+              console.log(`Exempting PR by ${author}.`);
+              return;
+            }
+
+            if (CONVENTIONAL.test(title)) {
+              console.log(`✅ PR title is valid: "${title}"`);
+              return;
+            }
+
+            const bold = (s) => `**${s}**`;
+            const body = [
+              '## ❌ PR Title Does Not Follow Conventional Commits',
+              '',
+              `Your PR title: \`${title}\``,
+              '',
+              bold('Required format:') + ' `<type>(<scope>): <description>`',
+              '',
+              '| Type | When to use |',
+              '|------|-------------|',
+              '| `feat` | New feature or company addition |',
+              '| `fix` | Bug fix |',
+              '| `docs` | Documentation changes |',
+              '| `chore` | Maintenance, config changes |',
+              '| `ci` | Workflow/CI changes |',
+              '| `refactor` | Code cleanup without behavior change |',
+              '| `test` | Adding or fixing tests |',
+              '',
+              bold('Examples:'),
+              '- `` feat(config): add Stripe to Greenhouse list ``',
+              '- `` fix(scraper): handle null date from Lever API ``',
+              '- `` docs: update CONTRIBUTING.md with new steps ``',
+              '',
+              'Please edit your PR title and resubmit. The check will re-run automatically.',
+            ].join('\n');
+
+            // Post a review comment (or update the existing one)
+            const comments = await github.rest.issues.listComments({
+              owner, repo, issue_number: prNumber
+            });
+
+            const existing = comments.data.find(c =>
+              c.user.login === 'github-actions[bot]' &&
+              c.body.includes('PR Title Does Not Follow Conventional Commits')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existing.id, body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prNumber, body
+              });
+            }
+
+            core.setFailed(`PR title "${title}" does not follow Conventional Commits format.`);

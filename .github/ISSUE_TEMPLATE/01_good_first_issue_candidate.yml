@@ -1,0 +1,84 @@
+name: "🌱 Good First Issue Candidate"
+description: Propose a potential Good First Issue (needs maintainer review before anyone starts)
+title: "[Good First Issue Candidate]: "
+labels: ["good first issue candidate", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Thanks for proposing a Good First Issue! 😊
+
+        This template is for tasks that *might* be a great entry point for new contributors
+        but still need a maintainer to review scope, confirm feasibility, and promote to a
+        confirmed Good First Issue before anyone starts working on it.
+
+        ---
+
+  - type: textarea
+    id: candidate-notice
+    attributes:
+      label: ⚠️ Candidate — Not Yet Confirmed
+      value: |
+        > This issue is **not yet a confirmed Good First Issue**.
+        > It is being evaluated for scope and suitability.
+        >
+        > **Please wait for maintainer confirmation before asking to be assigned.**
+        >
+        > Once promoted, it will be labelled `good first issue` and opened for claiming.
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 What needs to be done?
+      description: |
+        Describe the proposed task clearly. Be specific enough that a maintainer can evaluate
+        whether it is the right size and scope for a new contributor.
+        Reference specific files, functions, or line numbers if you know them.
+      placeholder: |
+        e.g. "The `categorize_job()` function in `scripts/update_jobs.py` does not handle
+        job titles that contain 'Staff Engineer'. These should map to `software_engineering`
+        but currently fall through to 'Other'."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "🏗️ Which area does this touch?"
+      options:
+        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "⚙️ Configuration (config.yml)"
+        - "🌐 Frontend / website (docs/)"
+        - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
+        - "🧪 Tests (tests/)"
+        - "📚 Documentation (*.md, docs/wiki/)"
+        - "🏷️ Company data / classification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: "💡 Why is this a good entry point for new contributors?"
+      description: Explain why a contributor new to this repo could tackle this without deep context.
+      placeholder: |
+        e.g. "The fix is isolated to a single function, there's a directly analogous keyword
+        already handled on line 290, and the test in `tests/test_categorize.py` shows exactly
+        how to add a new case."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreements
+    attributes:
+      label: "✅ Pre-submission Checklist"
+      options:
+        - label: "I have searched [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) and this is not a duplicate."
+          required: true
+        - label: "I understand a maintainer must confirm this before contributors start working."
+          required: true

@@ -27,3 +27,16 @@ Please **do not** open issues for:
 - Career advice or job application tips (use [Discussions](https://github.com/ambicuity/New-Grad-Jobs/discussions) instead)
 - Off-topic questions unrelated to this repository
 - Security disclosures (email us privately — see [SECURITY.md](../SECURITY.md))
+
+## What This Project Will Not Do
+
+To keep this sustainable as a solo-run project, the following are explicitly out of scope. Issues requesting them will be closed without comment:
+
+- **Personalised job application advice** — use [Discussions](https://github.com/ambicuity/New-Grad-Jobs/discussions) for job search guidance
+- **Adding companies with no public ATS URL** — every `config.yml` entry must have a verifiable Greenhouse, Lever, or Workday API endpoint
+- **Scraping sites that require login** — authentication-gated scraping creates legal, ethical, and maintenance risk
+- **Real-time notifications (email / Slack / Discord bots)** — this is a static-site push tool; build your own webhook consumer on top of `jobs.json`
+- **Filtering by salary, required GPA, or years of experience** — this data is not reliably present in source API responses
+
+> [!NOTE]
+> If you're unsure whether your request is in scope, start a [Discussion](https://github.com/ambicuity/New-Grad-Jobs/discussions) before opening an issue.

@@ -1,0 +1,68 @@
+name: GFI Candidate Notification
+
+# When the `good first issue candidate` label is added to an issue,
+# post a comment pinging @ambicuity to review and promote/reject it.
+# Prevents GFI candidates from silently piling up unreviewed.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions: read-all
+jobs:
+  notify-maintainer:
+    name: Ping Maintainer on GFI Candidate
+    permissions:
+      issues: write
+    runs-on: ubuntu-latest
+    if: github.event.label.name == 'good first issue candidate'
+    steps:
+      - name: Post maintainer review request
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue = context.payload.issue;
+            const issueNumber = issue.number;
+            const opener = issue.user.login;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Avoid posting duplicate notifications
+            const comments = await github.rest.issues.listComments({
+              owner, repo, issue_number: issueNumber
+            });
+            const alreadyNotified = comments.data.some(c =>
+              c.user.login === 'github-actions[bot]' &&
+              c.body.includes('GFI Candidate — Maintainer Review Needed')
+            );
+            if (alreadyNotified) {
+              console.log('Already notified maintainer. Skipping.');
+              return;
+            }
+
+            const bold = (s) => `**${s}**`;
+            const body = [
+              '## GFI Candidate — Maintainer Review Needed',
+              '',
+              `@ambicuity — @${opener} has proposed this as a **Good First Issue Candidate**.`,
+              '',
+              'Please review this issue and decide:',
+              '',
+              `| Action | How |`,
+              `|--------|-----|`,
+              `| ✅ Promote to GFI | Add \`good first issue\` label and remove \`good first issue candidate\` |`,
+              `| 🔧 Needs more detail | Reply with what's missing (scope, file references, etc.) |`,
+              `| ❌ Not a good fit | Close the issue with an explanation |`,
+              '',
+              bold('Reminder:') + ' Contributors should NOT be assigned until this is promoted to a confirmed GFI.',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              body
+            });
+
+            console.log(`Notified maintainer about GFI candidate on issue #${issueNumber}`);

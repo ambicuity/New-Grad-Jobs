@@ -1,57 +1,72 @@
 name: "🐛 Bug Report"
-description: Report a bug or issue with the repository
+description: Report a bug or issue with the scraper, portal, or CI pipeline
 title: "[Bug]: "
-labels: ["bug", "plan-me"]
+labels: ["bug", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a bug! Please fill out the form below.
+        ## Thanks for reporting a bug! 🐛
+
+        Before submitting:
+        1. Search [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) to avoid duplicates
+        2. If it's a security vulnerability, email `contact@riteshrana.engineer` **do NOT open a public issue**
+
+        > [!IMPORTANT]
+        > If you plan to fix this bug yourself, **you must claim the issue first** by commenting
+        > `/assign`. PRs submitted without a prior assignment will be closed.
 
   - type: dropdown
     id: type
     attributes:
-      label: Bug Type
-      description: What type of issue are you experiencing?
+      label: "Bug Type"
+      description: What kind of issue are you experiencing?
       options:
-        - Broken link in README
-        - Missing jobs that should appear
-        - Duplicate job listings
-        - Incorrect job information
-        - Website issue (if applicable)
-        - GitHub Actions failing
-        - Other
+        - "Scraper: missing jobs that should appear"
+        - "Scraper: duplicate job listings"
+        - "Scraper: incorrect job information (title, location, date)"
+        - "Scraper: API error / timeout for a specific source"
+        - "Portal: website not loading or showing stale data"
+        - "Portal: filter or search not working correctly"
+        - "Portal: broken link or incorrect data displayed"
+        - "CI: a GitHub Actions workflow is failing unexpectedly"
+        - "Config: company entry in config.yml is incorrect"
+        - "Other"
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: A clear description of the bug
-      placeholder: Describe what's happening...
+      label: "Description"
+      description: What happened and what did you expect to happen?
     validations:
       required: true
 
   - type: textarea
-    id: expected
-    attributes:
-      label: Expected Behavior
-      description: What should happen instead?
-      placeholder: Describe what you expected...
-
-  - type: textarea
     id: steps
     attributes:
-      label: Steps to Reproduce
+      label: "Steps to Reproduce"
       description: How can we reproduce this issue?
       placeholder: |
         1. Go to '...'
-        2. Click on '...'
-        3. See error
+        2. Filter by '...'
+        3. See error / missing data
 
   - type: textarea
-    id: additional
+    id: context
     attributes:
-      label: Additional Context
-      description: Any other relevant information, screenshots, etc.
+      label: "Additional Context"
+      description: |
+        Attach any relevant information: company name, job URL, error logs from GitHub Actions,
+        browser console errors (if portal issue), or a screenshot.
+      placeholder: |
+        Company: Stripe
+        Job URL: https://boards.greenhouse.io/stripe/jobs/12345
+
+        GitHub Actions run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/...
+
+        Error log:
+        ```
+        requests.exceptions.ConnectionError: ...
+        ```

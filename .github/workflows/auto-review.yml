@@ -1,0 +1,365 @@
+name: Automated PR Review
+
+# Fully automated review for contributor PRs.
+# For config.yml changes (company additions/edits): validates, comments, auto-merges on pass.
+# For script/workflow changes: validates, comments with analysis, but does NOT auto-merge
+# (those require human judgment — too risky to auto-merge code changes).
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+permissions: read-all
+
+jobs:
+  auto-review:
+    name: Automated PR Review
+    runs-on: ubuntu-latest
+    # Don't run on the bot's own auto-update PRs
+    if: github.actor != 'github-actions[bot]'
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+
+      # ── Scam Guard (runs FIRST — hard gate) ──────────────────────────────
+      - name: Scam detection — payment-address and AI stubs
+        id: scam
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          python3 - <<'PYEOF'
+          import re, os, sys, subprocess
+
+          pr_text = (os.getenv("PR_BODY","") or "") + " " + (os.getenv("PR_TITLE","") or "")
+
+          # Also scan bodies of added/modified source files
+          # Skip data files (.json, .xml) — they contain hex strings (SHAs, API IDs)
+          # that false-positive against the EVM wallet regex.
+          SKIP_EXTENSIONS = {'.json', '.xml', '.csv'}
+          result = subprocess.run(
+              ["git", "diff", "--name-only", "origin/main...HEAD"],
+              capture_output=True, text=True
+          )
+          for fpath in result.stdout.strip().splitlines():
+              if any(fpath.lower().endswith(ext) for ext in SKIP_EXTENSIONS):
+                  continue
+              try:
+                  pr_text += " " + open(fpath).read()
+              except Exception:
+                  pass
+
+          scam_patterns = [
+              (r'0x[0-9a-fA-F]{40}', "evm_wallet_address"),
+              (r'\bbc1q[0-9a-z]{6,}\b', "bitcoin_bech32_address"),
+              (r'(?i)\bpayment\s+address\b', "payment_address_phrase"),
+              (r'(?i)\btip\s+jar\b', "tip_jar_phrase"),
+              (r'(?i)\b(EVM|Solana|BTC|ETH)\s*:', "crypto_label"),
+          ]
+
+          hits = []
+          for pattern, label in scam_patterns:
+              m = re.search(pattern, pr_text)
+              if m:
+                  hits.append(f"{label}: {m.group()[:60]}")
+
+          gho = os.environ["GITHUB_OUTPUT"]
+          if hits:
+              print(f"SCAM DETECTED: {hits}")
+              with open(gho, "a") as f:
+                  f.write("detected=true\n")
+          else:
+              print("No payment solicitation detected")
+              with open(gho, "a") as f:
+                  f.write("detected=false\n")
+          PYEOF
+
+      - name: Close and comment on scam PR
+        if: steps.scam.outputs.detected == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR_NUMBER" --body "🚨 **This PR has been automatically closed.**
+
+          Payment solicitation (cryptocurrency wallet addresses or digital tipping links) was detected in the PR description or changed files. This repository does not pay contributors.
+
+          @ambicuity — please review and block the contributor if appropriate."
+
+          gh pr close "$PR_NUMBER"
+          exit 1
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ── Classify the PR ───────────────────────────────────────────────────
+      - name: Classify changed files
+        id: classify
+        run: |
+          # Get list of changed files against main
+          git fetch origin main --quiet
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          echo "Changed files:"
+          echo "$CHANGED"
+
+          CONFIG_ONLY=true
+          HAS_SCRIPT=false
+          HAS_WORKFLOW=false
+          HAS_DOCS=false
+          HAS_TEST=false
+
+          while IFS= read -r file; do
+            case "$file" in
+              config.yml) ;;
+              scripts/*.py) CONFIG_ONLY=false; HAS_SCRIPT=true ;;
+              .github/workflows/*.yml) CONFIG_ONLY=false; HAS_WORKFLOW=true ;;
+              docs/*) HAS_DOCS=true ;;
+              tests/*.py) HAS_TEST=true ;;
+              *.md) ;;  # markdown-only changes are low-risk
+              "") ;;
+              *) CONFIG_ONLY=false ;;
+            esac
+          done <<< "$CHANGED"
+
+          echo "config_only=${CONFIG_ONLY}" >> "$GITHUB_OUTPUT"
+          echo "has_script=${HAS_SCRIPT}" >> "$GITHUB_OUTPUT"
+          echo "has_workflow=${HAS_WORKFLOW}" >> "$GITHUB_OUTPUT"
+          echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      # ── Run all validation checks ─────────────────────────────────────────
+      - name: Run validation checks
+        id: validate
+        run: |
+          python - <<'PYEOF'
+          import yaml, sys, json, re, ast, pathlib, subprocess, os
+
+          results = []
+          auto_merge_safe = True
+
+          changed = os.environ.get("CHANGED_FILES", "").strip().splitlines()
+
+          # ── Check 1: config.yml syntax ──────────────────────────────────
+          if "config.yml" in changed:
+              try:
+                  with open("config.yml") as f:
+                      config = yaml.safe_load(f)
+
+                  required_keys = ["filtering", "readme"]
+                  missing = [k for k in required_keys if k not in config]
+                  if missing:
+                      results.append(("❌", "config.yml schema", f"Missing required keys: {missing}"))
+                      auto_merge_safe = False
+                  else:
+                      gh = config.get("greenhouse", {}).get("companies", [])
+                      lv = config.get("lever", {}).get("companies", [])
+                      wd = config.get("workday", {}).get("companies", [])
+                      results.append(("✅", "config.yml schema", f"Valid. Greenhouse: {len(gh)}, Lever: {len(lv)}, Workday: {len(wd)} companies"))
+
+                  # Check for duplicate company slugs in greenhouse
+                  gh_slugs = [c.get("slug","") if isinstance(c, dict) else c for c in gh]
+                  dupes = [s for s in gh_slugs if gh_slugs.count(s) > 1 and s]
+                  if dupes:
+                      results.append(("⚠️", "Duplicate slugs", f"Found duplicate Greenhouse slugs: {list(set(dupes))}"))
+                      # Warn but don't block
+
+                  # Run the external URL verifier script
+                  print("\n--- Running URL Verifier ---")
+                  url_verify = subprocess.run(
+                      ["python3", ".github/scripts/verify_new_urls.py"],
+                      capture_output=True, text=True
+                  )
+                  print(url_verify.stdout)
+                  if url_verify.stderr:
+                      print(url_verify.stderr, file=sys.stderr)
+
+                  if url_verify.returncode != 0:
+                      err_msg = "URL verification failed"
+                      if os.path.exists(".url_failures"):
+                          with open(".url_failures") as f:
+                              failures = [line.strip() for line in f if line.strip()]
+                          if failures:
+                              err_msg = "<br>".join(failures)
+                      results.append(("❌", "New URLs verified", err_msg))
+                      auto_merge_safe = False
+                  else:
+                      if "No new URLs found" in url_verify.stdout or "No changes to config.yml found" in url_verify.stdout:
+                          results.append(("⏭️", "New URLs verified", "No new URLs added"))
+                      else:
+                          results.append(("✅", "New URLs verified", "All new URLs returned 200 OK"))
+
+              except yaml.YAMLError as e:
+                  results.append(("❌", "config.yml YAML parse", str(e)))
+                  auto_merge_safe = False
+              except Exception as e:
+                  results.append(("❌", "config.yml", str(e)))
+                  auto_merge_safe = False
+          else:
+              results.append(("⏭️", "config.yml schema", "Not changed — skipped"))
+              results.append(("⏭️", "New URLs verified", "Not changed — skipped"))
+
+          # ── Check 2: Python syntax (any .py files changed) ──────────────
+          py_files = [f for f in changed if f.endswith(".py")]
+          if py_files:
+              for pyf in py_files:
+                  if not pathlib.Path(pyf).exists():
+                      continue
+                  result = subprocess.run(
+                      ["python3", "-m", "py_compile", pyf],
+                      capture_output=True, text=True
+                  )
+                  if result.returncode != 0:
+                      results.append(("❌", f"Syntax: {pyf}", result.stderr.strip()))
+                      auto_merge_safe = False
+                  else:
+                      results.append(("✅", f"Syntax: {pyf}", "No syntax errors"))
+          else:
+              results.append(("⏭️", "Python syntax", "No .py files changed"))
+
+          # ── Check 3: update_jobs.py output path contract ─────────────────
+          if "scripts/update_jobs.py" in changed:
+              with open("scripts/update_jobs.py") as f:
+                  tree = ast.parse(f.read())
+              violations = []
+              for node in ast.walk(tree):
+                  if isinstance(node, ast.Assign):
+                      for t in node.targets:
+                          if isinstance(t, ast.Name) and t.id == "json_path":
+                              args = " ".join(ast.unparse(a) for a in node.value.args)
+                              if "jobs.json" in args and "docs" not in args:
+                                  violations.append(f"line {node.lineno}")
+              if violations:
+                  results.append(("❌", "Output path contract", f"json_path writes to root at {violations}. Must target docs/jobs.json"))
+                  auto_merge_safe = False
+              else:
+                  results.append(("✅", "Output path contract", "json_path correctly targets docs/"))
+
+          # ── Check 4: docs/jobs.json structure (if changed) ───────────────
+          if "docs/jobs.json" in changed and pathlib.Path("docs/jobs.json").exists():
+              try:
+                  with open("docs/jobs.json") as f:
+                      data = json.load(f)
+                  missing = [k for k in ("meta", "jobs") if k not in data]
+                  if missing:
+                      results.append(("❌", "docs/jobs.json structure", f"Missing keys: {missing}"))
+                      auto_merge_safe = False
+                  else:
+                      results.append(("✅", "docs/jobs.json structure", f"Valid ({len(data['jobs']):,} jobs)"))
+              except Exception as e:
+                  results.append(("❌", "docs/jobs.json parse", str(e)))
+                  auto_merge_safe = False
+
+          # ── Check 5: Protected files (workflow files must not disable CI) ─
+          wf_files = [f for f in changed if f.startswith(".github/workflows/")]
+          if wf_files:
+              auto_merge_safe = False  # Never auto-merge workflow changes
+              results.append(("🔒", "Workflow changes", f"Changed: {wf_files} — requires maintainer review"))
+
+          # Write outputs
+          summary_lines = ["| Status | Check | Detail |", "|--------|-------|--------|"]
+          for icon, name, detail in results:
+              summary_lines.append(f"| {icon} | **{name}** | {detail} |")
+
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"AUTO_MERGE_SAFE={'true' if auto_merge_safe else 'false'}\n")
+              summary = "\n".join(summary_lines)
+              # Write multiline to env
+              f.write("CHECK_SUMMARY<<DELIM\n")
+              f.write(summary + "\n")
+              f.write("DELIM\n")
+
+          print("\n".join(f"{i} {n}: {d}" for i,n,d in results))
+          all_failed = all(i == "❌" for i,_,_ in results if i != "⏭️")
+          if any(i == "❌" for i,_,_ in results):
+              sys.exit(1)
+          PYEOF
+        env:
+          CHANGED_FILES: ${{ steps.classify.outputs.changed_files }}
+
+      # ── Post review comment ───────────────────────────────────────────────
+      - name: Post automated review comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          CONFIG_ONLY: ${{ steps.classify.outputs.config_only }}
+          VALIDATE_RESULT: ${{ steps.validate.outcome }}
+        run: |
+          if [ "$VALIDATE_RESULT" = "success" ]; then
+            VERDICT="## ✅ Automated Review Passed
+
+          All checks passed. This PR is safe to merge."
+            if [ "$CONFIG_ONLY" = "true" ]; then
+              VERDICT="$VERDICT
+
+          > **Auto-merge enabled** — this is a config-only change and will be merged automatically once CI checks complete."
+            else
+              VERDICT="$VERDICT
+
+          > **Maintainer review recommended** — this PR changes code/workflows beyond config."
+            fi
+          else
+            VERDICT="## ❌ Automated Review Failed
+
+          One or more checks failed. Please fix the issues below before this PR can be merged."
+          fi
+
+          BODY="${VERDICT}
+
+          ---
+
+          ${CHECK_SUMMARY}
+
+          ---
+          *🤖 Automated review by [pipeline-integrity](https://github.com/${{ github.repository }}/blob/main/.github/workflows/auto-review.yml) · $(date -u '+%Y-%m-%d %H:%M UTC')*"
+
+          # Delete previous bot review comment if it exists (keeps thread clean)
+          PREV=$(gh api "repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
+            --jq '.[] | select(.user.login=="github-actions[bot]") | select(.body | startswith("## ")) | .id' | head -1)
+          if [ -n "$PREV" ]; then
+            gh api --method DELETE "repos/${{ github.repository }}/issues/comments/${PREV}" 2>/dev/null || true
+          fi
+
+          echo "$BODY" | gh pr comment "$PR_NUMBER" --body-file -
+
+      # ── Auto-merge config-only PRs that passed ────────────────────────────
+      - name: Auto-merge config-only PR
+        if: |
+          steps.validate.outcome == 'success' &&
+          steps.classify.outputs.config_only == 'true' &&
+          github.event.pull_request.draft == false
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          echo "Config-only PR passed all checks — enabling auto-merge"
+          gh pr merge "$PR_NUMBER" --auto --squash \
+            --subject "$(gh pr view $PR_NUMBER --json title --jq .title)" \
+            --body "Auto-merged by automated review: all integrity checks passed ✅"
+
+      # ── Request changes on failure ────────────────────────────────────────
+      - name: Request changes on failure
+        if: steps.validate.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr review "$PR_NUMBER" --request-changes \
+            --body "Automated review failed — see comment above for details on which checks failed and what to fix."

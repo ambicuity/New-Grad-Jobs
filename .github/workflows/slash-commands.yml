@@ -4,13 +4,13 @@ on:
   issue_comment:
     types: [created]
 
-permissions:
-  issues: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
   handle-commands:
     name: Process Slash Commands
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     # Only run on issue comments (not PR comments) using supported slash commands
     if: >
@@ -22,7 +22,7 @@ jobs:
       )
     steps:
       - name: Process Commands
-        uses: actions/github-script@v8
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

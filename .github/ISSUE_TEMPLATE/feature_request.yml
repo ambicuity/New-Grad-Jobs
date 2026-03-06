@@ -1,64 +1,70 @@
 name: "✨ Feature Request"
-description: Suggest an improvement or new capability for the project
-title: "[FEAT] "
-labels: ["enhancement", "needs-triage", "plan-me"]
+description: Suggest an improvement to the scraper, portal, or project infrastructure
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an improvement! Before submitting, please:
-        - Search [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) to avoid duplicates
-        - For **major structural changes**, use the Architecture Proposal template instead
+        ## Thanks for suggesting a feature! ✨
 
-  - type: dropdown
-    id: area
-    attributes:
-      label: Which area does this affect?
-      description: Select the component you'd like improved
-      options:
-        - 🤖 Job scraper (Python / config.yml)
-        - 🌐 Website / frontend (docs/)
-        - ⚙️ GitHub Actions / CI pipeline
-        - 📊 Data quality / filtering
-        - 🗂️ Documentation
-        - 🏷️ Company classification / categorization
-        - 🔍 Search & filtering on the job board
-        - 🌍 New geography / country support
-        - Other
-    validations:
-      required: true
+        Before submitting:
+        - Search [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) to see if this has been discussed
+        - For major architectural changes, use the [Architecture Proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=architecture_proposal.yml) template instead
+        - For adding a specific company, use the [New Role](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml) template instead
 
   - type: textarea
     id: problem
     attributes:
-      label: What problem does this solve?
-      description: Describe the pain point or gap this feature would address
+      label: "Problem"
+      description: What problem are you trying to solve? What currently doesn't work well?
       placeholder: |
-        e.g. "I often waste time checking closed jobs because the scraper doesn't..."
-        e.g. "The website doesn't allow me to filter by..."
+        e.g. "I'm always frustrated that the portal doesn't show when a job was posted relative to today..."
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: Proposed solution
-      description: Describe the change you'd like to see, in as much detail as you can
+      label: "Proposed Solution"
+      description: What do you propose? Be as specific as possible.
       placeholder: |
-        e.g. "Add a `closed_at` field that is detected by..."
-        e.g. "Implement a date-range filter in app.js that..."
+        e.g. "Add a 'Days Ago' field computed from `posted_at` and displayed on each job card in docs/app.js..."
     validations:
       required: true
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered
-      description: What other approaches did you think about? Why did you prefer your proposed solution?
-      placeholder: e.g. "I considered using a third-party widget but it would add a dependency to the frontend..."
+      label: "Alternatives Considered"
+      description: What other approaches did you consider? Why is your proposal better?
 
-  - type: textarea
-    id: context
+  - type: dropdown
+    id: area
     attributes:
-      label: Additional context
-      description: Mockups, references, links to similar implementations, or anything else helpful
+      label: "🏗️ Which area does this affect?"
+      options:
+        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "⚙️ Configuration (config.yml)"
+        - "🌐 Frontend / website (docs/)"
+        - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
+        - "🧪 Tests (tests/)"
+        - "📚 Documentation (*.md, docs/wiki/)"
+        - "🏷️ Company data / classification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: "Constraints Check"
+      description: |
+        This project has hard architectural constraints. Please confirm your proposal respects them.
+      options:
+        - label: "This does NOT require an external database (PostgreSQL, Redis, SQLite, etc.)"
+          required: true
+        - label: "This does NOT require a frontend framework (React, Vue, Next.js, Tailwind)"
+          required: true
+        - label: "This does NOT require an external orchestrator (Airflow, Celery, etc.)"
+          required: true

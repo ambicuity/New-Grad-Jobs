@@ -1,0 +1,129 @@
+name: "🧩 Intermediate Issue"
+description: A well-documented task for contributors with familiarity with the codebase
+title: "[Intermediate]: "
+labels: ["intermediate", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Thanks for contributing! 😊
+
+        This template creates an **Intermediate Issue** — for contributors who are already
+        comfortable navigating this codebase and contribution workflow.
+
+        The goal is a task that requires understanding existing patterns and making decisions,
+        but does not require architectural design from scratch.
+        ---
+
+  - type: textarea
+    id: intro
+    attributes:
+      label: "🧩 Intermediate Contributors"
+      description: Who is this issue for?
+      value: |
+        This issue is intended for contributors who already have experience with this repository
+        and the contribution workflow.
+
+        You should feel comfortable:
+        - Navigating `scripts/update_jobs.py`, `config.yml`, and `tests/`
+        - Understanding how `filter_jobs()`, `deduplicate_jobs()`, and `categorize_job()` work
+        - Following existing patterns without step-by-step guidance
+        - Writing non-trivial pytest tests with mocking
+
+        > [!IMPORTANT]
+        > **You must be assigned before starting** — comment `/assign` to claim this issue.
+        > PRs submitted without a prior assignment will be closed.
+
+        If you are new to this repo, please start with a
+        [Good First Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3A%22good+first+issue%22+no%3Aassignee)
+        or a [Beginner Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3Abeginner+no%3Aassignee)
+        first.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > ### 🧭 What we consider an Intermediate Issue in this repo
+        >
+        > This issue generally:
+        > - Requires **knowledge of 2–3 existing functions** (e.g. `filter_jobs`, `normalize_date_string`, `get_job_key`)
+        > - Is **narrowly scoped** — touches one area without cascading structural changes
+        > - Is **medium risk** — does not change deduplication keys, date parsing logic from scratch, or pagination
+        > - May involve **refactors, edge case handling, or small feature additions**
+        > - Has **similar patterns elsewhere** in the scraper for reference
+        >
+        > **What this issue is NOT:**
+        > - A simple config addition (that belongs in Good First Issue)
+        > - A new scraping source integration (that belongs in Advanced)
+        > - A breaking change to the job schema
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🐞 Problem Description"
+      description: |
+        Describe the problem clearly and precisely.
+        You may assume the reader can navigate `update_jobs.py` and understands the data flow.
+        Explain: what is wrong or missing, where it lives in the codebase, and why it matters.
+      value: |
+        Describe the problem here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "💡 Expected Solution"
+      description: |
+        Describe the intended outcome. This does NOT need to be a full implementation plan,
+        but should explain what should change, what should NOT change, and any constraints.
+      value: |
+        Describe the expected solution here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "✅ Acceptance Criteria"
+      description: What must be true for this issue to be considered complete?
+      value: |
+        - [ ] Problem is resolved per the description above
+        - [ ] Edge cases handled: None, NaN, empty string, Unicode, malformed data
+        - [ ] All existing `pytest tests/` pass
+        - [ ] New tests added for changed logic (deterministic — no live network calls)
+        - [ ] `pre-commit run --all-files` passes
+        - [ ] PR is linked to this issue with `Fixes #<number>`
+        - [ ] PR title follows Conventional Commits format
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "🏗️ Which area does this touch?"
+      options:
+        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "⚙️ Configuration (config.yml)"
+        - "🌐 Frontend / website (docs/)"
+        - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
+        - "🧪 Tests (tests/)"
+        - "📚 Documentation (*.md, docs/wiki/)"
+        - "🏷️ Company data / classification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "🔗 Additional Context"
+      description: Links to relevant code, API docs, prior issues, or error logs.
+      placeholder: |
+        - Related function: `normalize_date_string()` at update_jobs.py:1012
+        - Related issue: #42
+        - Greenhouse API docs: https://developers.greenhouse.io/job-board

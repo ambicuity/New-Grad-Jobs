@@ -43,13 +43,18 @@ create_label "security"      "ee0701"  "Security vulnerability or concern"
 echo ""
 echo "── Status Labels ────────────────────────────────────"
 create_label "needs-triage"    "ededed"  "Awaiting maintainer review and categorization"
-create_label "in-progress"     "fbca04"  "Actively being worked on"
+create_label "status: in-progress"   "fbca04"  "Actively being worked on"
+create_label "awaiting-response"  "d4c5f9"  "Waiting for the contributor to respond or update"
 create_label "stale"           "cccccc"  "No activity in 30+ days"
 create_label "blocked"         "b60205"  "Cannot proceed until a blocker is resolved"
 create_label "help wanted"     "008672"  "Extra attention needed from the community"
 create_label "good first issue" "7057ff" "Good for newcomers — welcoming entry point"
+create_label "good first issue candidate" "e4e669" "Potential GFI — needs maintainer review before assignment"
+create_label "plan-me"         "0075ca"  "Triggers CodeRabbit to generate an implementation plan"
 create_label "duplicate"       "cfd3d7"  "This issue or PR already exists"
 create_label "wontfix"         "ffffff"  "This will not be worked on"
+create_label "merge-conflict"  "e11d48"  "This PR has merge conflicts that must be resolved"
+create_label "automated pr"    "0e8a16"  "PR created by an automation (Dependabot, Actions bot)"
 
 # ============================================================
 # JOB DATA LABELS
@@ -98,6 +103,16 @@ create_label "role: swe"                "0075ca"  "Software Engineering"
 create_label "role: systems-engineering" "1d76db" "Hardware, Network, or Systems Engineering"
 create_label "role: ai-ml"             "7057ff"  "Data Science, AI, or Machine Learning"
 create_label "role: product"           "a2eeef"  "Product Management (PM)"
+
+# ============================================================
+# DIFFICULTY TIER LABELS (issue complexity tiers)
+# ============================================================
+echo ""
+echo "── Difficulty Tier Labels ───────────────────────────"
+create_label "beginner"      "c2e0c6"  "Requires some prior contribution experience; beyond GFI"
+create_label "intermediate"  "ffd33d"  "Requires codebase familiarity; 2-3 functions involved"
+create_label "advanced"      "e6192a"  "Requires deep scraper knowledge; high-impact change"
+create_label "ci-cd"         "bfdadc"  "Changes to GitHub Actions workflows or CI configuration"
 
 echo ""
 echo "✅  Done! All labels have been processed for ${REPO}."

@@ -1,0 +1,84 @@
+name: Merge Conflict Detector
+
+on:
+  # Label conflicted PRs whenever new commits land on main
+  push:
+    branches: [main]
+  # Also run daily to catch PRs that drifted without any push
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions: read-all
+jobs:
+  detect-conflicts:
+    name: Label Conflicted PRs
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check open PRs for merge conflicts
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Fetch all open PRs (paginated)
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner, repo, state: 'open', per_page: 100
+            });
+
+            console.log(`Checking ${pulls.length} open PR(s) for merge conflicts...`);
+
+            for (const pr of pulls) {
+              const prNumber = pr.number;
+              const author = pr.user.login;
+
+              // GitHub sets mergeable_state async — fetch fresh copy
+              const { data: freshPR } = await github.rest.pulls.get({
+                owner, repo, pull_number: prNumber
+              });
+
+              const hasConflictLabel = pr.labels.some(l => l.name === 'merge-conflict');
+
+              if (freshPR.mergeable === false) {
+                // ── Conflicted: ensure label + comment ──
+                if (!hasConflictLabel) {
+                  console.log(`PR #${prNumber} has conflicts. Adding label.`);
+
+                  await github.rest.issues.addLabels({
+                    owner, repo, issue_number: prNumber,
+                    labels: ['merge-conflict']
+                  });
+
+                  await github.rest.issues.createComment({
+                    owner, repo, issue_number: prNumber,
+                    body: `👋 Hi @${author}! This PR has a merge conflict with \`main\` and can't be merged until it's resolved.\n\n` +
+                      `**To fix it:**\n` +
+                      `\`\`\`bash\n` +
+                      `git fetch origin\n` +
+                      `git rebase origin/main\n` +
+                      `# Resolve any conflicts, then:\n` +
+                      `git add .\n` +
+                      `git rebase --continue\n` +
+                      `git push --force-with-lease\n` +
+                      `\`\`\`\n\n` +
+                      `This label will be removed automatically once the conflict is resolved. 🙏`
+                  });
+                }
+              } else if (freshPR.mergeable === true && hasConflictLabel) {
+                // ── Conflict resolved: remove label ──
+                console.log(`PR #${prNumber} conflict resolved. Removing label.`);
+
+                try {
+                  await github.rest.issues.removeLabel({
+                    owner, repo, issue_number: prNumber,
+                    name: 'merge-conflict'
+                  });
+                } catch (e) { /* Label already removed — safe to ignore */ }
+              } else {
+                console.log(`PR #${prNumber}: mergeable=${freshPR.mergeable} (GitHub still computing). Skipping.`);
+              }
+            }

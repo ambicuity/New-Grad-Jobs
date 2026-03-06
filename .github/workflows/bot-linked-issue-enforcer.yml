@@ -1,0 +1,95 @@
+name: Linked Issue Enforcer
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions: read-all
+jobs:
+  linked-issue:
+    name: Require Linked Issue
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for linked issue in PR body
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+            const body = pr.body || '';
+            const prNumber = pr.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Maintainer and bot PRs are exempt (dependabot, automated scraper commits, etc.)
+            const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
+            if (EXEMPT_USERS.includes(author)) {
+              console.log(`Exempting PR by ${author} from linked issue requirement.`);
+              return;
+            }
+
+            // Match "Fixes #N", "Closes #N", "Resolves #N" (case-insensitive)
+            const LINKED_ISSUE_RE = /(fixes|closes|resolves)\s+#\d+/i;
+
+            if (LINKED_ISSUE_RE.test(body)) {
+              console.log('PR body contains a linked issue reference.');
+
+              // Clean up any previous failure comment
+              const comments = await github.rest.issues.listComments({
+                owner, repo, issue_number: prNumber
+              });
+              const existing = comments.data.find(c =>
+                c.user.login === 'github-actions[bot]' &&
+                c.body.includes('does not link to an issue')
+              );
+              if (existing) {
+                await github.rest.issues.deleteComment({
+                  owner, repo, comment_id: existing.id
+                });
+              }
+              return;
+            }
+
+            // Post or update failure comment — use join() to avoid ** triggering YAML alias parser
+            const bold = (s) => `**${s}**`;
+            const failureBody = [
+              '## This PR Does Not Link to an Issue',
+              '',
+              'Every community PR must reference an existing issue using one of:',
+              '',
+              '- `` Fixes #123 ``',
+              '- `` Closes #123 ``',
+              '- `` Resolves #123 ``',
+              '',
+              bold('Why?') + ' This ensures every change has a tracked discussion, helps the maintainer',
+              'verify the PR matches the approved plan, and keeps the project history navigable.',
+              '',
+              bold('Steps:'),
+              `1. If an issue exists, add \`Fixes #<issue-number>\` to your PR description.`,
+              `2. If no issue exists yet, [open one first](https://github.com/${owner}/${repo}/issues/new/choose), then link it here.`,
+              '',
+              'This check will pass automatically once you update the PR body.',
+            ].join('\n');
+
+            const comments = await github.rest.issues.listComments({
+              owner, repo, issue_number: prNumber
+            });
+            const existing = comments.data.find(c =>
+              c.user.login === 'github-actions[bot]' &&
+              c.body.includes('does not link to an issue')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existing.id, body: failureBody
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prNumber, body: failureBody
+              });
+            }
+
+            core.setFailed('PR body must contain a linked issue reference (e.g. "Fixes #123").');

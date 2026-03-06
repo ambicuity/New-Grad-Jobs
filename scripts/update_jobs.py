@@ -18,13 +18,17 @@ import math
 import os
 import re
 import sys
+import threading
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date, datetime, timedelta
+from contextlib import contextmanager
+from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
+from xml.sax.saxutils import escape as xml_escape
+import random
 
 import requests
 import yaml
@@ -104,6 +108,83 @@ def create_optimized_session() -> requests.Session:
 
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
+
+# Module-level lock for thread-safe counter updates in parallel fetchers
+_COUNTER_LOCK = threading.Lock()
+
+
+class DomainConcurrencyLimiter:
+    """Thread-safe per-domain concurrency limiter using native Python primitives.
+
+    Domains with configured limits are guarded by a BoundedSemaphore. Domains
+    without explicit limits are left unthrottled.
+    """
+
+    def __init__(self, limits: Dict[str, int]):
+        self._limits = {
+            domain.lower(): limit
+            for domain, limit in limits.items()
+            if isinstance(limit, int) and limit > 0
+        }
+        self._lock = threading.Lock()
+        self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
+
+    def _domain_for_url(self, url: str) -> str:
+        return (urlparse(url).netloc or "").split(":")[0].lower()
+
+    def _matched_domain(self, domain: str) -> str | None:
+        if domain in self._limits:
+            return domain
+
+        # Support subdomains matching, e.g. jobs.api.greenhouse.io -> api.greenhouse.io
+        for configured_domain in self._limits:
+            if domain.endswith(f".{configured_domain}"):
+                return configured_domain
+
+        return None
+
+    def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
+        matched_domain = self._matched_domain(domain)
+        if matched_domain is None:
+            return None
+
+        limit = self._limits[matched_domain]
+        with self._lock:
+            semaphore = self._semaphores.get(matched_domain)
+            if semaphore is None:
+                semaphore = threading.BoundedSemaphore(limit)
+                self._semaphores[matched_domain] = semaphore
+            return semaphore
+
+    @contextmanager
+    def acquire(self, url: str):
+        domain = self._domain_for_url(url)
+        semaphore = self._get_semaphore(domain)
+        if semaphore is None:
+            yield
+            return
+
+        semaphore.acquire()
+        try:
+            yield
+        finally:
+            semaphore.release()
+
+
+# Cap greenhouse API concurrency while leaving other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+
+
+def limited_get(url: str, **kwargs):
+    """HTTP GET wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.get(url, **kwargs)
+
+
+def limited_post(url: str, **kwargs):
+    """HTTP POST wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.post(url, **kwargs)
 
 # ============================================================================
 # COMPANY CLASSIFICATIONS
@@ -243,7 +324,8 @@ CATEGORY_PATTERNS = {
             'fullstack', 'frontend', 'front-end', 'backend', 'back-end',
             'web developer', 'mobile developer', 'ios developer', 'android developer',
             'application developer', 'systems engineer', 'platform engineer',
-            'solutions engineer', 'integration engineer', 'api engineer'
+            'solutions engineer', 'integration engineer', 'api engineer',
+            'developer advocate', 'devrel'
         ]
     },
     'data_ml': {
@@ -267,7 +349,7 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]
@@ -414,7 +496,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -470,7 +552,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -531,9 +613,15 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 print(f"Searching Google careers for '{search_term}'...")
                 # Build the search URL with USA location filter
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -649,7 +737,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
 
-                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
                 if response.status_code == 404:
                      # Try alternative tenant extraction if 404
@@ -660,7 +748,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                          tenant = path_parts[0]
                          site_id = path_parts[-1]
                          api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                         response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -798,11 +886,13 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
 
         # Process results as they complete
         for future in as_completed(future_to_task):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             result = future.result()
 
             if result['error']:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
             elif result['count'] > 0:
                 all_jobs.extend(result['jobs'])
@@ -878,13 +968,15 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -914,13 +1006,15 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -951,9 +1045,15 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     time.sleep(1)
 
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -1058,7 +1158,7 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: str) -> str:
+def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
@@ -1068,12 +1168,24 @@ def normalize_date_string(posted_at: str) -> str:
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+
+    Also handles native datetime.date / datetime.datetime objects returned by
+    Workday / JobSpy API clients, coercing them to their ISO-format string so
+    that downstream dateparser never receives a non-string argument.
     """
     if not isinstance(posted_at, str):
+        # Coerce native date/datetime objects to ISO string rather than
+        # returning them raw, which causes dateparser to emit:
+        #   "Parser must be a string or character stream, not date"
+        if hasattr(posted_at, 'isoformat'):
+            return posted_at.isoformat()
+
         return posted_at
 
     posted_at_lower = posted_at.lower().strip()
-    now = datetime.now()
+    if now_utc is None:
+        now_utc = datetime.now(timezone.utc)
+    now = now_utc.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -1098,32 +1210,54 @@ def normalize_date_string(posted_at: str) -> str:
     # Return original if no pattern matches
     return posted_at
 
+def _as_utc_naive(dt: datetime) -> datetime:
+    """Normalize datetime to UTC, then return timezone-naive value."""
+    if dt.tzinfo is None:
+        # Treat naive datetimes as already UTC to keep comparisons deterministic.
+        return dt
+    return dt.astimezone(timezone.utc).replace(tzinfo=None)
+
+
 def is_recent_job(posted_at: str, max_age_days: int) -> bool:
     """Check if job was posted within the specified number of days"""
-    if not posted_at:
+    if posted_at is None:
+        return False
+
+    if isinstance(posted_at, float) and math.isnan(posted_at):
         return False
 
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle already parsed date objects
         if isinstance(posted_at, (datetime, date)):
-             posted_date = posted_at
-             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
-                 posted_date = datetime.combine(posted_date, datetime.min.time())
+            posted_date = posted_at
+            if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
+                posted_date = datetime.combine(posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
         elif isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        # Remove timezone info for comparison
-        posted_date = posted_date.replace(tzinfo=None)
-        cutoff_date = datetime.now() - timedelta(days=max_age_days)
+        posted_date = _as_utc_naive(posted_date)
+        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as e:
         print(f"Error parsing date {posted_at}: {e}")
         return False
+
+def _location_matches(location_lower: str, term: str) -> bool:
+    """Match a location term using word boundaries for short terms (<=3 chars)
+    to prevent false positives like 'al' matching 'Montreal' or 'in' matching 'Berlin'.
+    Longer terms use fast substring matching since they are unambiguous.
+    """
+    if len(term) <= 3:
+        return bool(re.search(r'\b' + re.escape(term) + r'\b', location_lower))
+    return term in location_lower
+
 
 def is_valid_location(location: str) -> bool:
     """Check if job location is in target countries (USA, Canada, India) or Remote"""
@@ -1193,30 +1327,14 @@ def is_valid_location(location: str) -> bool:
         'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
     ]
 
-    # Check for USA indicators
-    for indicator in usa_indicators:
-        if indicator in location_lower:
-            return True
+    # All indicator lists to check
+    all_indicators = [usa_indicators, usa_states, usa_cities,
+                      canada_indicators, india_indicators]
 
-    # Check for USA states
-    for state in usa_states:
-        if state in location_lower:
-            return True
-
-    # Check for USA cities
-    for city in usa_cities:
-        if city in location_lower:
-            return True
-
-    # Check for Canada indicators
-    for indicator in canada_indicators:
-        if indicator in location_lower:
-            return True
-
-    # Check for India indicators
-    for indicator in india_indicators:
-        if indicator in location_lower:
-            return True
+    for indicator_list in all_indicators:
+        for term in indicator_list:
+            if _location_matches(location_lower, term):
+                return True
 
     # If we can't determine, default to False to be safe
     return False
@@ -1252,10 +1370,12 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         has_track = has_track_signal(title, filters['track_signals'])
 
         # Strong new grad signals that don't need additional track signals
+        # P4: Generic role titles removed — they belong in track_signals only.
+        # Without a co-occurring new-grad keyword, "Software Engineer" alone
+        # should not bypass the track-signal requirement.
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad",
             "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
-            "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
         has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
 
@@ -1359,19 +1479,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
 
     # Sort jobs by date
-    def get_sort_date(job):
-        posted_at = job.get('posted_at')
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                return date_parser.parse(posted_at).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Build JSON structure
     json_jobs = []
@@ -1634,7 +1742,7 @@ Respond in JSON format:
             }
         }
 
-        response = HTTP_SESSION.post(
+        response = limited_post(
             'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
             headers=headers,
             json=payload,
@@ -1657,20 +1765,30 @@ Respond in JSON format:
 
                 predictions = json.loads(content)
 
-                # Add metadata
-                predictions['generated_at'] = datetime.now().isoformat()
-                predictions['data_points'] = len(snapshots)
-                predictions['date_range'] = {
-                    'start': snapshots[0]['date'],
-                    'end': snapshots[-1]['date']
-                }
+                # S6: Validate required keys before trusting LLM output
+                required_keys = {'outlook', 'predictions', 'confidence', 'insights'}
+                missing = required_keys - set(predictions.keys())
+                if missing:
+                    print(f"  ⚠️  Gemini response missing keys {missing} — skipping prediction update")
+                elif predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
+                    print(f"  ⚠️  Invalid outlook value '{predictions.get('outlook')}' — skipping prediction update")
+                elif not isinstance(predictions.get('confidence'), (int, float)):
+                    print(f"  ⚠️  Invalid confidence type — skipping prediction update")
+                else:
+                    # Add metadata
+                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['data_points'] = len(snapshots)
+                    predictions['date_range'] = {
+                        'start': snapshots[0]['date'],
+                        'end': snapshots[-1]['date']
+                    }
 
-                # Save predictions
-                predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
-                with open(predictions_path, 'w', encoding='utf-8') as f:
-                    json.dump(predictions, f, indent=2, ensure_ascii=False)
+                    # Save predictions
+                    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+                    with open(predictions_path, 'w', encoding='utf-8') as f:
+                        json.dump(predictions, f, indent=2, ensure_ascii=False)
 
-                print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                    print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
                 print("  ⚠️  No predictions in Gemini response")
 
@@ -1682,24 +1800,23 @@ Respond in JSON format:
         print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 
+def extract_sort_date(job: Dict[str, Any]) -> datetime:
+    """Extract and parse posted_at for sorting."""
+    posted_at = job.get('posted_at')
+    if not posted_at:
+        return datetime.min
+    try:
+        if isinstance(posted_at, (int, float)):
+            return datetime.fromtimestamp(posted_at / 1000)
+        return date_parser.parse(posted_at).replace(tzinfo=None)
+    except Exception:
+        return datetime.min
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
 
     # Sort jobs by posted date (most recent first)
-    def get_sort_date(job):
-        posted_at = job['posted_at']
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                parsed_date = date_parser.parse(posted_at)
-                return parsed_date.replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Calculate category counts
     category_counts = {}
@@ -1714,12 +1831,18 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
 [![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
 🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
+
+> [!NOTE]
+> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
+> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
+> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
 
 ---
 
@@ -1824,7 +1947,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 ### 🎯 Filtering Criteria
 - **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
 - **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
-- **Recency**: Jobs posted within the last {config['filters']['max_age_days']} days
+- **Recency**: Jobs posted within the last {config.get('filtering', {}).get('max_age_days', 60)} days
 - **Location**: USA-based positions only
 
 ### 🏢 Companies Monitored
@@ -1870,6 +1993,140 @@ Found a job we're missing? Want to report a closed position?
 """
 
     return readme_content
+
+
+def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
+    """Generate an RSS 2.0 feed from the most recent jobs.
+
+    Writes docs/feed.xml so users can subscribe via any feed reader.
+    Zero-cost, zero-infra solution for job alerts.
+    """
+    feed_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'feed.xml')
+
+    # Sort by date descending, take top N
+    jobs.sort(key=extract_sort_date, reverse=True)
+    sorted_jobs = jobs[:max_items]
+
+    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+    items = []
+    for job in sorted_jobs:
+        company = job.get('company', 'Unknown')
+        title = job.get('title', 'Unknown')
+        url = job.get('url', '')
+        location = job.get('location', 'Remote')
+        category = job.get('category', {}).get('name', 'General')
+        posted_at_dt = extract_sort_date(job)
+        pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
+
+        items.append(f"""    <item>
+      <title>{xml_escape(title)} at {xml_escape(company)}</title>
+      <link>{xml_escape(url)}</link>
+      <description>New grad role at {xml_escape(company)} in {xml_escape(location)}. Category: {xml_escape(category)}</description>
+      <pubDate>{pubDate}</pubDate>
+      <guid isPermaLink="true">{xml_escape(url)}</guid>
+    </item>""")
+
+    rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Grad Jobs</title>
+    <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
+    <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
+    <language>en-us</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+    <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+
+    try:
+        os.makedirs(os.path.dirname(feed_path), exist_ok=True)
+        with open(feed_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
+        print(f"📡 RSS feed generated with {len(sorted_jobs)} items → docs/feed.xml")
+    except Exception as e:
+        print(f"⚠️  Failed to write RSS feed: {e}")
+
+
+def generate_health_json(jobs: List[Dict[str, Any]],
+                         source_counts: Dict[str, int],
+                         start_time: float) -> None:
+    """Generate docs/health.json for monitoring and staleness detection.
+
+    Status values:
+      - ok: all sources returned jobs and total > 0
+      - degraded: at least one source returned 0 jobs
+      - failed: total job count is 0
+    """
+    health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
+
+    total_jobs = len(jobs)
+    zero_sources = [s for s, c in source_counts.items() if c == 0]
+
+    if total_jobs == 0:
+        status = 'failed'
+    elif zero_sources:
+        status = 'degraded'
+    else:
+        status = 'ok'
+
+    health = {
+        'status': status,
+        'last_run': datetime.utcnow().isoformat() + 'Z',
+        'total_jobs': total_jobs,
+        'source_counts': source_counts,
+        'zero_sources': zero_sources,
+        'run_duration_seconds': round(time.time() - start_time, 1),
+    }
+
+    try:
+        os.makedirs(os.path.dirname(health_path), exist_ok=True)
+        with open(health_path, 'w', encoding='utf-8') as f:
+            json.dump(health, f, indent=2)
+        print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
+    except Exception as e:
+        print(f"⚠️  Failed to write health.json: {e}")
+
+
+def check_job_url_health(jobs: List[Dict[str, Any]],
+                          sample_pct: float = 0.05,
+                          max_checks: int = 50) -> None:
+    """HEAD-request a random sample of job URLs to detect dead links.
+
+    Updates each sampled job in-place with `url_verified` (bool).
+    Best-effort — failures are logged but never block the pipeline.
+    """
+    sample_size = min(max_checks, max(1, int(len(jobs) * sample_pct)))
+    sample = random.sample(jobs, min(sample_size, len(jobs)))
+    verified = 0
+    dead = 0
+
+    for job in sample:
+        url = job.get('url', '')
+        if not url or not url.startswith('http'):
+            continue
+            
+        try:
+            parsed = urllib.parse.urlparse(url)
+            hostname = parsed.hostname or ''
+            if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
+                continue
+
+            resp = HTTP_SESSION.head(url, timeout=4, allow_redirects=True)
+            if resp.status_code < 400:
+                job['url_verified'] = True
+                verified += 1
+            else:
+                job['url_verified'] = False
+                dead += 1
+        except Exception:
+            job['url_verified'] = False
+            dead += 1
+
+    print(f"🔍 URL health check: {verified} verified, {dead} dead/unreachable out of {sample_size} sampled")
+
 
 def main():
     """Main function to scrape jobs and update README
@@ -1919,8 +2176,7 @@ def main():
     print(f"   Lever: {lever_count} companies")
     print(f"   Workday: {workday_count} companies")
     print(f"   TOTAL: {total_companies} companies")
-    if total_companies < 10000:
-        print(f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
+    # P6: Removed stale 10K company warning — config has ~200 companies by design.
     print("="  * 60)
 
     # Collect all jobs using parallel fetchers
@@ -1948,8 +2204,10 @@ def main():
                 config['apis']['lever']['companies']
             )
 
-        # Submit Google parallel fetch
-        if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
+        # Submit Google parallel fetch (P5: gated on enabled flag)
+        if ('google' in config['apis']
+                and config['apis']['google'].get('enabled', True)
+                and config['apis']['google'].get('search_terms')):
             futures['google'] = executor.submit(
                 fetch_google_jobs_parallel,
                 config['apis']['google']['search_terms']
@@ -1970,12 +2228,15 @@ def main():
             )
 
         # Collect results from all futures
+        source_counts = {}  # C1: Track per-source job counts for health.json
         for source, future in futures.items():
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
+                source_counts[source] = len(jobs)
                 print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
             except Exception as e:
+                source_counts[source] = 0
                 print(f"  ❌ {source.upper()} failed: {e}")
 
     # Fetch from third-party scraping APIs (if configured) - these are usually disabled
@@ -2011,6 +2272,9 @@ def main():
     enriched_jobs = enrich_jobs(filtered_jobs)
     print(f"   Jobs enriched with categories and flags")
 
+    # C3: Check a sample of job URLs for dead links
+    check_job_url_health(enriched_jobs)
+
     # Generate JSON data
     # Sanitize jobs to remove NaN values
     def sanitize_value(v):
@@ -2037,9 +2301,10 @@ def main():
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
 
-    # Write JSON file
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
+    # Write JSON file to docs/ (GitHub Pages source directory)
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'jobs.json')
     try:
+        os.makedirs(os.path.dirname(json_path), exist_ok=True)
         with open(json_path, 'w') as f:
             json.dump(jobs_json, f, indent=2)
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
@@ -2058,6 +2323,12 @@ def main():
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)
+
+    # ========== Generate RSS Feed ==========
+    generate_rss_feed(enriched_jobs)
+
+    # ========== Generate Health Report ==========
+    generate_health_json(enriched_jobs, source_counts, start_time)
 
     # Report execution time
     elapsed = time.time() - start_time

@@ -1,0 +1,83 @@
+name: PR Inactivity Reminder
+
+on:
+  schedule:
+    # Run every Monday at 09:00 UTC — start of the week, catches stale PRs
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions: read-all
+jobs:
+  pr-inactivity:
+    name: Ping Inactive PR Authors
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check open PRs for inactivity
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const now = Date.now();
+            const MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+            // Days thresholds
+            const NUDGE_AFTER_DAYS   = 7;   // Gentle reminder
+            const WARNING_AFTER_DAYS = 14;  // stale.yml will start acting at 14d
+
+            // PRs exempt from nudging (maintainer, bots)
+            const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
+
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner, repo, state: 'open', per_page: 100
+            });
+
+            console.log(`Checking ${pulls.length} open PR(s) for inactivity...`);
+
+            for (const pr of pulls) {
+              const author = pr.user.login;
+              if (EXEMPT_USERS.includes(author)) continue;
+              if (pr.draft) continue; // Draft PRs handled by draft-ready-reminder
+
+              const updatedAt = new Date(pr.updated_at).getTime();
+              const daysInactive = (now - updatedAt) / MS_PER_DAY;
+
+              const hasNudgeLabel = pr.labels.some(l => l.name === 'awaiting-response');
+
+              if (daysInactive >= NUDGE_AFTER_DAYS && daysInactive < WARNING_AFTER_DAYS && !hasNudgeLabel) {
+                console.log(`PR #${pr.number} by ${author}: ${daysInactive.toFixed(1)}d inactive. Nudging.`);
+
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: pr.number,
+                  body: `👋 Hi @${author}! Your PR has been open for ${Math.floor(daysInactive)} days with no recent activity.\n\n` +
+                    `If you're still working on it, please:\n` +
+                    `- Rebase on the latest \`main\`: \`git rebase origin/main\`\n` +
+                    `- Address any open review comments\n` +
+                    `- Push your changes\n\n` +
+                    `If you need help or have questions, drop a comment and the maintainer will assist. ` +
+                    `This PR will be marked stale at 14 days of inactivity and closed at 21 days per our [stale policy](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md). 🙏`
+                });
+
+                await github.rest.issues.addLabels({
+                  owner, repo, issue_number: pr.number,
+                  labels: ['awaiting-response']
+                });
+
+              } else if (daysInactive < NUDGE_AFTER_DAYS && hasNudgeLabel) {
+                // PR was updated after nudge — remove the label
+                try {
+                  await github.rest.issues.removeLabel({
+                    owner, repo, issue_number: pr.number,
+                    name: 'awaiting-response'
+                  });
+                  console.log(`PR #${pr.number}: Back to active. Removed awaiting-response label.`);
+                } catch (e) { /* Safe to ignore */ }
+
+              } else {
+                console.log(`PR #${pr.number}: ${daysInactive.toFixed(1)}d inactive. No action needed.`);
+              }
+            }
