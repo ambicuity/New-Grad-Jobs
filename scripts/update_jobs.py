@@ -2111,9 +2111,10 @@ def main():
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
 
-    # Write JSON file
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
+    # Write JSON file to docs/ (GitHub Pages source directory)
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'jobs.json')
     try:
+        os.makedirs(os.path.dirname(json_path), exist_ok=True)
         with open(json_path, 'w') as f:
             json.dump(jobs_json, f, indent=2)
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
