@@ -41,12 +41,17 @@ jobs:
 
           pr_text = (os.getenv("PR_BODY","") or "") + " " + (os.getenv("PR_TITLE","") or "")
 
-          # Also scan bodies of all added/modified files
+          # Also scan bodies of added/modified source files
+          # Skip data files (.json, .xml) — they contain hex strings (SHAs, API IDs)
+          # that false-positive against the EVM wallet regex.
+          SKIP_EXTENSIONS = {'.json', '.xml', '.csv', '.html'}
           result = subprocess.run(
               ["git", "diff", "--name-only", "origin/main...HEAD"],
               capture_output=True, text=True
           )
           for fpath in result.stdout.strip().splitlines():
+              if any(fpath.endswith(ext) for ext in SKIP_EXTENSIONS):
+                  continue
               try:
                   pr_text += " " + open(fpath).read()
               except Exception:

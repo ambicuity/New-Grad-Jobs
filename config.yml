@@ -2,14 +2,14 @@
 
 # Job filtering settings
 filtering:
-  # Maximum age of job postings in days  
+  # Maximum age of job postings in days
   max_age_days: 60
-  
+
   # New grad signals to look for in job titles (case insensitive)
   new_grad_signals:
     # Explicit new grad keywords
     - "new grad"
-    - "new graduate" 
+    - "new graduate"
     - "recent graduate"
     - "fresh graduate"
     - "university grad"
@@ -17,7 +17,7 @@ filtering:
     - "new college grad"
     - "campus hire"
     - "campus"
-    
+
     # Entry level keywords
     - "entry level"
     - "entry-level"
@@ -27,7 +27,7 @@ filtering:
     - "trainee"
     - "associate"
     - "intern conversion"
-    
+
     # Year-based programs
     - "2024 start"
     - "2025 start"
@@ -35,7 +35,7 @@ filtering:
     - "2025"
     - "2026"
     - "class of"
-    
+
     # Level indicators (common at tech companies)
     - "level 1"
     - "level 2"
@@ -51,14 +51,14 @@ filtering:
     - " SDE II"
     - " SWE I"
     - " SWE II"
-    
+
     # Programs
     - "graduate program"
     - "rotational program"
     - "development program"
     - "analyst program"
     - "engineering program"
-    
+
     # Additional common titles
     - "software engineer"
     - "software developer"
@@ -75,7 +75,7 @@ filtering:
     - "devops engineer"
     - "site reliability"
     - "sre"
-    
+
   # Track signals to look for in job titles/descriptions (case insensitive)
   track_signals:
     - "software"
@@ -104,7 +104,7 @@ filtering:
     - "frontend"
     - "full stack"
     - "fullstack"
-    
+
   # Exclusion signals - jobs with these keywords are filtered OUT
   exclusion_signals:
     - "senior"
@@ -145,7 +145,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
       - name: "Block (Square)"
         url: "https://boards-api.greenhouse.io/v1/boards/block/jobs"
-      
+
       # Additional working companies discovered
       - name: "Dropbox"
         url: "https://boards-api.greenhouse.io/v1/boards/dropbox/jobs"
@@ -169,7 +169,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/elastic/jobs"
       - name: "HashiCorp"
         url: "https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs"
-        
+
       # Even more companies discovered in second round
       - name: "Asana"
         url: "https://boards-api.greenhouse.io/v1/boards/asana/jobs"
@@ -195,7 +195,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/postman/jobs"
       - name: "Vercel"
         url: "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
-        
+
       # Third round: Major tech and startup companies
       - name: "Figma"
         url: "https://boards-api.greenhouse.io/v1/boards/figma/jobs"
@@ -215,7 +215,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/waymo/jobs"
       - name: "Gemini"
         url: "https://boards-api.greenhouse.io/v1/boards/gemini/jobs"
-        
+
       # Fourth round: Fintech companies
       - name: "Brex"
         url: "https://boards-api.greenhouse.io/v1/boards/brex/jobs"
@@ -233,13 +233,13 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
       - name: "Twitch"
         url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
-        
+
       # Additional working companies
-      - name: "Scale AI"  
+      - name: "Scale AI"
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Retool"
         url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
-        
+
       # Fifth round: Additional verified tech companies (2024)
       - name: "Unity Technologies"
         url: "https://boards-api.greenhouse.io/v1/boards/unity3d/jobs"
@@ -283,11 +283,11 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/bird/jobs"
       - name: "Calm"
         url: "https://boards-api.greenhouse.io/v1/boards/calm/jobs"
-        
+
       # ============================================
       # EXPANSION: 130+ Additional Greenhouse Companies
       # ============================================
-      
+
       # --- AI/ML Companies ---
       - name: "OpenAI"
         url: "https://boards-api.greenhouse.io/v1/boards/openai/jobs"
@@ -317,7 +317,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/mosaicml/jobs"
       - name: "Inflection AI"
         url: "https://boards-api.greenhouse.io/v1/boards/inflection/jobs"
-        
+
       # --- Developer Tools & Infrastructure ---
       - name: "Supabase"
         url: "https://boards-api.greenhouse.io/v1/boards/supabase/jobs"
@@ -365,7 +365,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/deno/jobs"
       - name: "Bun"
         url: "https://boards-api.greenhouse.io/v1/boards/oven/jobs"
-        
+
       # --- Cloud & Data Infrastructure ---
       - name: "Snowflake"
         url: "https://boards-api.greenhouse.io/v1/boards/snowflake/jobs"
@@ -395,7 +395,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/neondatabase/jobs"
       - name: "Yugabyte"
         url: "https://boards-api.greenhouse.io/v1/boards/yugabyte/jobs"
-        
+
       # --- Cybersecurity ---
       - name: "CrowdStrike"
         url: "https://boards-api.greenhouse.io/v1/boards/crowdstrike/jobs"
@@ -419,7 +419,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/huntress/jobs"
       - name: "Abnormal Security"
         url: "https://boards-api.greenhouse.io/v1/boards/abnormalsecurity/jobs"
-        
+
       # --- Fintech & Payments ---
       - name: "Plaid"
         url: "https://boards-api.greenhouse.io/v1/boards/plaid/jobs"
@@ -447,7 +447,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/moderntreasury/jobs"
       - name: "Column"
         url: "https://boards-api.greenhouse.io/v1/boards/column/jobs"
-        
+
       # --- Healthcare Tech ---
       - name: "Ro"
         url: "https://boards-api.greenhouse.io/v1/boards/ro/jobs"
@@ -469,7 +469,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/oscar/jobs"
       - name: "Veeva"
         url: "https://boards-api.greenhouse.io/v1/boards/veeva/jobs"
-        
+
       # --- E-commerce & Marketplace ---
       - name: "Shopify"
         url: "https://boards-api.greenhouse.io/v1/boards/shopify/jobs"
@@ -489,7 +489,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/goat/jobs"
       - name: "StockX"
         url: "https://boards-api.greenhouse.io/v1/boards/stockx/jobs"
-        
+
       # --- Autonomous Vehicles & Robotics ---
       - name: "Cruise"
         url: "https://boards-api.greenhouse.io/v1/boards/cruise/jobs"
@@ -509,7 +509,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/locusrobotics/jobs"
       - name: "Berkshire Grey"
         url: "https://boards-api.greenhouse.io/v1/boards/berkshiregrey/jobs"
-        
+
       # --- Gaming & Entertainment ---
       - name: "Epic Games"
         url: "https://boards-api.greenhouse.io/v1/boards/epicgames/jobs"
@@ -525,7 +525,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scopely/jobs"
       - name: "Jam City"
         url: "https://boards-api.greenhouse.io/v1/boards/jamcity/jobs"
-        
+
       # --- Real Estate Tech ---
       - name: "Zillow"
         url: "https://boards-api.greenhouse.io/v1/boards/zillow/jobs"
@@ -537,7 +537,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/compass/jobs"
       - name: "Blend"
         url: "https://boards-api.greenhouse.io/v1/boards/blend/jobs"
-        
+
       # --- Enterprise SaaS ---
       - name: "Notion"
         url: "https://boards-api.greenhouse.io/v1/boards/notion/jobs"
@@ -567,7 +567,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/contentful/jobs"
       - name: "Sanity"
         url: "https://boards-api.greenhouse.io/v1/boards/sanity/jobs"
-        
+
       # --- Mobility & Transportation ---
       - name: "DoorDash"
         url: "https://boards-api.greenhouse.io/v1/boards/doordash/jobs"
@@ -579,7 +579,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/getaround/jobs"
       - name: "Via"
         url: "https://boards-api.greenhouse.io/v1/boards/ridewithvia/jobs"
-        
+
       # --- Crypto & Web3 ---
       # S7: Coinbase entry removed — duplicate of line 144
       - name: "Kraken"
@@ -596,7 +596,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/paxos/jobs"
       - name: "Anchorage"
         url: "https://boards-api.greenhouse.io/v1/boards/anchorage/jobs"
-        
+
       # --- HR & Recruiting Tech ---
       - name: "Greenhouse"
         url: "https://boards-api.greenhouse.io/v1/boards/greenhouse/jobs"
@@ -610,7 +610,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/rippling/jobs"
       - name: "Justworks"
         url: "https://boards-api.greenhouse.io/v1/boards/justworks/jobs"
-        
+
       # --- Communication & Collaboration ---
       - name: "Slack"
         url: "https://boards-api.greenhouse.io/v1/boards/slack/jobs"
@@ -622,10 +622,10 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/dialpad/jobs"
       - name: "Front"
         url: "https://boards-api.greenhouse.io/v1/boards/frontapp/jobs"
-        
+
 
   lever:
-    # Lever job board API endpoints for major tech companies  
+    # Lever job board API endpoints for major tech companies
     companies:
       - name: "Netflix"
         url: "https://api.lever.co/v0/postings/netflix"
@@ -647,7 +647,7 @@ apis:
     # Google careers API - searches for new grad positions
     search_terms:
       - "new graduate software engineer"
-      - "entry level software engineer" 
+      - "entry level software engineer"
       - "junior software engineer"
       - "associate software engineer"
       - "campus graduate engineer"
@@ -667,7 +667,7 @@ apis:
       # ===== GENERIC SEARCHES (catch-all) =====
       - "new graduate software engineer"
       - "entry level software engineer"
-      - "junior software engineer" 
+      - "junior software engineer"
       - "new grad data scientist"
       - "entry level data engineer"
       - "new grad 2025"
@@ -675,7 +675,7 @@ apis:
       - "university graduate engineer"
       - "campus hire software"
       - "associate software engineer"
-      
+
       # ===== FAANG+ =====
       - "Google new grad"
       - "Amazon new grad"
@@ -697,7 +697,7 @@ apis:
       - "PayPal new grad"
       - "Visa new grad"
       - "Mastercard new grad"
-      
+
       # ===== DEFENSE & AEROSPACE =====
       - "Raytheon new grad"
       - "RTX new grad"
@@ -714,7 +714,7 @@ apis:
       - "Amentum new grad"
       - "Blue Origin new grad"
       - "Anduril new grad"
-      
+
       # ===== FINANCE & TRADING =====
       - "Goldman Sachs new grad"
       - "Morgan Stanley new grad"
@@ -731,7 +731,7 @@ apis:
       - "American Express new grad"
       - "Travelers new grad"
       - "Affirm new grad"
-      
+
       # ===== UNICORNS =====
       - "TikTok new grad"
       - "ByteDance new grad"
@@ -756,7 +756,7 @@ apis:
       - "Glean new grad"
       - "SpaceX new grad"
       - "Rivian new grad"
-      
+
       # ===== CONSUMER TECH =====
       - "Electronic Arts new grad"
       - "Disney new grad"
@@ -766,7 +766,7 @@ apis:
       - "Chewy new grad"
       - "Expedia new grad"
       - "Fanatics new grad"
-      
+
       # ===== ENTERPRISE TECH =====
       - "Intuit new grad"
       - "Autodesk new grad"
@@ -775,12 +775,12 @@ apis:
       - "UiPath new grad"
       - "Applied Intuition new grad"
       - "Cerebras new grad"
-      
+
       # ===== HEALTHCARE =====
       - "Medtronic new grad"
       - "Boston Scientific new grad"
       - "GE Healthcare new grad"
-      
+
       # ===== FINTECH =====
       - "Robinhood new grad"
       - "Coinbase new grad"
@@ -789,7 +789,7 @@ apis:
       - "Brex new grad"
       - "SoFi new grad"
       - "Upstart new grad"
-      
+
       # ===== CANADA-BASED COMPANIES =====
       - "Shopify new grad"
       - "Wealthsimple new grad"
@@ -801,7 +801,7 @@ apis:
       - "ApplyBoard new grad"
       - "Klue new grad"
       - "Clearbanc new grad"
-      
+
       # ===== INDIA-BASED COMPANIES =====
       - "Flipkart new grad"
       - "Zomato new grad"
@@ -821,7 +821,7 @@ apis:
       - "TCS new grad"
       - "Wipro new grad"
       - "HCL new grad"
-      
+
       # ===== INTERNATIONAL GENERIC =====
       - "Canada new grad software engineer"
       - "India new grad software engineer"
@@ -840,7 +840,7 @@ apis:
         location: "India"
     results_wanted: 30  # Reduced from 50 for faster responses
     hours_old: 168
-    
+
   # Third-party job scraping APIs (configuration ready for future implementation)
   scraper_apis:
     # ScraperAPI - Handles proxy rotation, CAPTCHA solving, JS rendering
@@ -851,27 +851,27 @@ apis:
         - "indeed.com"
         - "linkedin.com/jobs"
         - "glassdoor.com"
-    
+
     # SerpApi - Google Jobs API alternative
     serp_api:
       enabled: false
       api_key: "${SERP_API_KEY}"  # Set via environment variable
       search_engine: "google_jobs"
       location: "United States"
-      
+
     # Zyte (Scrapinghub) - Enterprise job scraping service
     zyte:
       enabled: false
       api_key: "${ZYTE_API_KEY}"  # Set via environment variable
       project_id: "${ZYTE_PROJECT_ID}"
-      
-    # Bright Data - Proxy network and job scraper API  
+
+    # Bright Data - Proxy network and job scraper API
     bright_data:
       enabled: false
       username: "${BRIGHT_DATA_USERNAME}"
       password: "${BRIGHT_DATA_PASSWORD}"
       endpoint: "brd-customer-hl_username-zone-jobs"
-      
+
     # ScrapingBee - General web scraping API with AI extraction
     scraping_bee:
       enabled: false
@@ -903,11 +903,11 @@ apis:
         workday_url: "https://visa.wd5.myworkdayjobs.com/Visa_External_Career_Site"
       - name: "Mastercard"
         workday_url: "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers"
-        
+
       # ============================================
       # EXPANSION: 40+ Additional Workday Companies
       # ============================================
-      
+
       # --- Big Tech & Enterprise ---
       - name: "NVIDIA"
         workday_url: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
@@ -937,7 +937,7 @@ apis:
         workday_url: "https://autodesk.wd1.myworkdayjobs.com/Ext"
       - name: "Splunk"
         workday_url: "https://splunk.wd1.myworkdayjobs.com/splunk"
-        
+
       # --- Finance & Banking ---
       - name: "JPMorgan"
         workday_url: "https://jpmc.wd1.myworkdayjobs.com/JPMorgan_Careers"
@@ -957,7 +957,7 @@ apis:
         workday_url: "https://schws.wd1.myworkdayjobs.com/careers"
       - name: "Fidelity"
         workday_url: "https://fil.wd1.myworkdayjobs.com/external"
-        
+
       # --- Consulting & Professional Services ---
       - name: "Deloitte"
         workday_url: "https://deloitte.wd1.myworkdayjobs.com/DeloitteCareers"
@@ -971,7 +971,7 @@ apis:
         workday_url: "https://mckinsey.wd3.myworkdayjobs.com/McKinsey_Externals"
       - name: "BCG"
         workday_url: "https://bcg.wd3.myworkdayjobs.com/BCGCareers"
-        
+
       # --- Healthcare & Pharma ---
       - name: "Johnson & Johnson"
         workday_url: "https://jnjc.wd5.myworkdayjobs.com/JNJC_External"
@@ -989,7 +989,7 @@ apis:
         workday_url: "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers"
       - name: "Medtronic"
         workday_url: "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers"
-        
+
       # --- Retail & Consumer ---
       - name: "Target"
         workday_url: "https://target.wd5.myworkdayjobs.com/targetcareers"
@@ -1005,7 +1005,7 @@ apis:
         workday_url: "https://pepsico.wd1.myworkdayjobs.com/pepsico"
       - name: "Procter & Gamble"
         workday_url: "https://pg.wd1.myworkdayjobs.com/pg-careers"
-        
+
       # --- Aerospace & Defense ---
       - name: "Lockheed Martin"
         workday_url: "https://lockheedmartin.wd5.myworkdayjobs.com/search"
@@ -1019,7 +1019,7 @@ apis:
         workday_url: "https://l3harris.wd5.myworkdayjobs.com/search"
       - name: "Boeing"
         workday_url: "https://boeing.wd1.myworkdayjobs.com/external_careers"
-        
+
     search_filters:
       title_keywords:
         - "new grad"
@@ -1036,6 +1036,6 @@ readme:
   table_headers:
     - "Company"
     - "Role"
-    - "Location" 
+    - "Location"
     - "Posted"
     - "Apply"
