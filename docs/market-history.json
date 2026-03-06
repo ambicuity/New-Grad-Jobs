@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "last_updated": "2026-03-06T00:11:59.679008",
+    "total_snapshots": 1,
+    "date_range": {
+      "start": "2026-03-06",
+      "end": "2026-03-06"
+    }
+  },
+  "snapshots": [
+    {
+      "date": "2026-03-06",
+      "total_jobs": 1470,
+      "categories": {},
+      "tiers": {
+        "faang_plus": 223,
+        "other": 434,
+        "unicorn": 813
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 146
+        },
+        {
+          "company": "Anduril",
+          "jobs": 137
+        },
+        {
+          "company": "Waymo",
+          "jobs": 79
+        },
+        {
+          "company": "Cloudflare",
+          "jobs": 54
+        },
+        {
+          "company": "Anthropic",
+          "jobs": 41
+        },
+        {
+          "company": "Lyft",
+          "jobs": 33
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 29
+        },
+        {
+          "company": "Stripe",
+          "jobs": 28
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 28
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 26
+        }
+      ],
+      "unique_companies": 235,
+      "avg_jobs_per_company": 6.26,
+      "timestamp": "2026-03-06T00:11:59.678923"
+    }
+  ]
+}
