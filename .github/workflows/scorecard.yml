@@ -26,7 +26,7 @@ jobs:
           persist-credentials: false  # Avoid leaking GITHUB_TOKEN to Scorecard subprocess
 
       - name: Run Scorecard analysis
-        uses: ossf/scorecard-action@v2.4.0
+        uses: ossf/scorecard-action@v2.4.3
         with:
           results_file: scorecard-results.sarif
           results_format: sarif
