@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 19:46:39 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 20:07:15 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 15:02:54 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</guid>
+    </item>
+    <item>
+      <title>Software Engineer, QA at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7615452?gh_jid=7615452</link>
+      <description>New grad role at Unity Technologies in Remote, Washington, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 15:00:01 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7615452?gh_jid=7615452</guid>
+    </item>
     <item>
       <title>Security Engineer, Bridge at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
@@ -128,17 +142,17 @@
     </item>
     <item>
       <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
-      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
+      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
     </item>
     <item>
       <title>Software Engineer at Scopely</title>
@@ -184,17 +198,10 @@
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
-      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
+      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
+      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
-      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
@@ -205,10 +212,17 @@
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
-      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
+      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
+      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
+      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4982193008</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Offensive Security at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5105509008</link>
-      <description>New grad role at Anthropic in Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5105509008</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer, Detection &amp; Response Platform at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4595463008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4595463008</guid>
     </item>
   </channel>
 </rss>
