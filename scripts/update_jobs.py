@@ -33,7 +33,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 # Worker pool configuration constants
-# Constants for the auto-scaling functions
+# These default values act as fallback constants. The active pool sizes
+# are read from config.yml under 'worker_pools' during startup.
+# Minimums are baseline parallel requests; maximums represent empirically-tested API rate limit boundaries.
 DEFAULT_GREENHOUSE_MIN_WORKERS: int = 30
 DEFAULT_GREENHOUSE_MAX_WORKERS: int = 300
 DEFAULT_LEVER_MIN_WORKERS: int = 15
@@ -44,6 +46,7 @@ DEFAULT_GOOGLE_MAX_WORKERS: int = 100
 # Constants for fixed worker pools
 DEFAULT_JOBSPY_WORKERS: int = 25
 DEFAULT_ORCHESTRATOR_WORKERS: int = 20
+
 
 # Import JobSpy for additional job site scraping
 try:
@@ -1882,6 +1885,29 @@ def main():
 
     # Load configuration
     config = load_config()
+
+    # Load worker pool configurations from config.yml with fallbacks
+    global DEFAULT_GREENHOUSE_MIN_WORKERS, DEFAULT_GREENHOUSE_MAX_WORKERS
+    global DEFAULT_LEVER_MIN_WORKERS, DEFAULT_LEVER_MAX_WORKERS
+    global DEFAULT_GOOGLE_MIN_WORKERS, DEFAULT_GOOGLE_MAX_WORKERS
+    global DEFAULT_JOBSPY_WORKERS, DEFAULT_ORCHESTRATOR_WORKERS
+
+    pools = config.get('worker_pools', {})
+    DEFAULT_GREENHOUSE_MIN_WORKERS = pools.get('greenhouse_min_workers', DEFAULT_GREENHOUSE_MIN_WORKERS)
+    DEFAULT_GREENHOUSE_MAX_WORKERS = pools.get('greenhouse_max_workers', DEFAULT_GREENHOUSE_MAX_WORKERS)
+    DEFAULT_LEVER_MIN_WORKERS = pools.get('lever_min_workers', DEFAULT_LEVER_MIN_WORKERS)
+    DEFAULT_LEVER_MAX_WORKERS = pools.get('lever_max_workers', DEFAULT_LEVER_MAX_WORKERS)
+    DEFAULT_GOOGLE_MIN_WORKERS = pools.get('google_min_workers', DEFAULT_GOOGLE_MIN_WORKERS)
+    DEFAULT_GOOGLE_MAX_WORKERS = pools.get('google_max_workers', DEFAULT_GOOGLE_MAX_WORKERS)
+    DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
+    DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
+
+    print(f"   Worker pools configured:")
+    print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
+    print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
+    print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
+    print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
+    print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
 
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
