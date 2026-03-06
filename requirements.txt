@@ -3,3 +3,6 @@ PyYAML==6.0.3
 python-dateutil==2.9.0.post0
 python-jobspy>=1.1.82
 playwright==1.51.0
+pre-commit==4.5.1
+pytest==9.0.2
+pytest-cov==7.0.0
