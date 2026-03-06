@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
   # Only run on push when scraper inputs/config change.
-  # This avoids self-trigger loops from the workflow's own README/jobs.json commits to main.
+  # This avoids self-trigger loops from workflow commits to generated docs files on main.
   push:
     branches: [main]
     paths:
@@ -22,7 +22,8 @@ concurrency:
   group: update-jobs
   cancel-in-progress: true
 
-permissions: read-all
+permissions:
+  contents: read
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
