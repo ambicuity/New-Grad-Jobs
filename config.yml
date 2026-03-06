@@ -1,7 +1,7 @@
 # Configuration for New Grad Jobs Aggregator
 
 # Job filtering settings
-filters:
+filtering:
   # Maximum age of job postings in days  
   max_age_days: 60
   
