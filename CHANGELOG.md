@@ -49,6 +49,7 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - normalize timezone-aware date handling in `is_recent_job` by standardizing parsed values to UTC before recency comparison; add explicit guards/tests for `None`, `NaN`, UTC-offset strings, aware datetimes, and boundary windows
 - stabilize CI workflow reliability: fix duplicate key in `.github/labeler.yml` and update Trivy action reference to a valid release
 - calibrate config sanity threshold in `test_config.py` to match current source volume baseline
+- scope `update-jobs` workflow push trigger to scraper inputs and generated docs behavior to prevent recursive self-trigger loops on `main`
 
 ### Added
 
