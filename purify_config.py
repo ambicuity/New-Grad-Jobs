@@ -83,7 +83,7 @@ delete_indent = 0
 for line in lines:
     stripped = line.lstrip()
     indent = len(line) - len(stripped)
-    
+
     # Empty line or comment
     if not stripped or stripped.startswith("#"):
         if delete_mode:
@@ -91,24 +91,24 @@ for line in lines:
         else:
             new_lines.append(line)
             continue
-            
+
     # If the line has same or less indent than the delete block, we exit delete_mode
     if delete_mode and indent <= delete_indent:
         delete_mode = False
-        
+
     if not delete_mode:
         if stripped.startswith("- name:"):
             # Try to extract the name. Sometimes it's `- name: "Name"`
             parts = stripped.split("name:", 1)
             if len(parts) == 2:
                 name_val = parts[1].strip().strip("\"'")
-                
+
                 is_fake = False
                 for r in regexes:
                     if r.search(name_val):
                         is_fake = True
                         break
-                
+
                 if is_fake:
                     delete_mode = True
                     delete_indent = indent

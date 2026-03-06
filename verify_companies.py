@@ -4,13 +4,13 @@ file_path = "/Users/ritesh/Downloads/submission_folder/New-Grad-Jobs/config.yml"
 
 with open(file_path, 'r') as f:
     config = yaml.safe_load(f)
-    
+
 companies = []
 
 if 'apis' in config:
     if 'greenhouse' in config['apis'] and 'companies' in config['apis']['greenhouse']:
         companies.extend([c['name'] for c in config['apis']['greenhouse']['companies']])
-        
+
     if 'lever' in config['apis'] and 'companies' in config['apis']['lever']:
         companies.extend([c['name'] for c in config['apis']['lever']['companies']])
 
