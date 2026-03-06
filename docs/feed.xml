@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 20:07:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 20:51:41 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 15:35:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</guid>
+    </item>
+    <item>
+      <title>RF Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 15:34:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at LaunchDarkly</title>
+      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</link>
+      <description>New grad role at LaunchDarkly in Remote - US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 15:22:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</guid>
+    </item>
     <item>
       <title>Data Scientist at Opendoor</title>
       <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5098025008</guid>
-    </item>
-    <item>
-      <title>Platform Security Engineer, Operating Systems at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4929693008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4929693008</guid>
-    </item>
-    <item>
-      <title>Recruiting Data Engineering &amp; Analytics at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4886415008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | Seattle, WA. Category: Other</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4886415008</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4982193008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4982193008</guid>
     </item>
   </channel>
 </rss>

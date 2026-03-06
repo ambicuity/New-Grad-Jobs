@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T20:07:14.912643",
+    "last_updated": "2026-03-06T20:51:41.526239",
     "total_snapshots": 2,
     "date_range": {
       "start": "2026-03-05",
@@ -65,11 +65,11 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1260,
+      "total_jobs": 1223,
       "categories": {},
       "tiers": {
-        "other": 408,
-        "unicorn": 694,
+        "unicorn": 676,
+        "other": 389,
         "faang_plus": 158
       },
       "top_companies": [
@@ -79,15 +79,15 @@
         },
         {
           "company": "Anduril",
-          "jobs": 131
+          "jobs": 124
         },
         {
           "company": "Waymo",
-          "jobs": 70
+          "jobs": 68
         },
         {
           "company": "Anthropic",
-          "jobs": 42
+          "jobs": 41
         },
         {
           "company": "Lyft",
@@ -110,13 +110,13 @@
           "jobs": 20
         },
         {
-          "company": "Stripe",
-          "jobs": 19
+          "company": "Opendoor",
+          "jobs": 18
         }
       ],
-      "unique_companies": 237,
-      "avg_jobs_per_company": 5.32,
-      "timestamp": "2026-03-06T20:07:14.912492"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 5.27,
+      "timestamp": "2026-03-06T20:51:41.526062"
     }
   ]
 }
