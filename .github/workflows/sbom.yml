@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Generate SBOM
-        uses: anchore/sbom-action@v0
+        uses: anchore/sbom-action@17ae1740179002c89186b61233e0f892c3118b11 # v0
         with:
           path: ./
           format: spdx-json
           output-file: new-grad-jobs-sbom.spdx.json
 
       - name: Upload SBOM
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
         with:
           name: sbom
           path: new-grad-jobs-sbom.spdx.json

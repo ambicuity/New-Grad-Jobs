@@ -21,12 +21,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           persist-credentials: false  # Avoid leaking GITHUB_TOKEN to Scorecard subprocess
 
       - name: Run Scorecard analysis
-        uses: ossf/scorecard-action@v2.4.3
+        uses: ossf/scorecard-action@4eaacf0543bb3f2c246792bd56e8cdeffafb205a # v2.4.3
         with:
           results_file: scorecard-results.sarif
           results_format: sarif
@@ -35,13 +35,13 @@ jobs:
           publish_results: true
 
       - name: Upload SARIF artifact (7-day retention)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: scorecard-sarif
           path: scorecard-results.sarif
           retention-days: 7
 
       - name: Upload SARIF to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@0d579ffd059c29b07949a3cce3983f0780820c98 # v4
         with:
           sarif_file: scorecard-results.sarif
