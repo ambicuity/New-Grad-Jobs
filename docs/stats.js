@@ -8,6 +8,10 @@
 // ============================================
 let jobsData = null;
 let charts = {};
+let isMobileMenuOpen = false;
+
+const MOBILE_MENU_BREAKPOINT = 768;
+const FOCUSABLE_SELECTOR = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 // ============================================
 // DOM Elements
@@ -22,9 +26,127 @@ const elements = {
     topLocations: document.getElementById('top-locations'),
     insightsContainer: document.getElementById('insights-container'),
     themeToggle: document.getElementById('theme-toggle'),
+    mobileMenuToggle: document.getElementById('mobile-menu-toggle'),
+    mobileMenu: document.getElementById('mobile-menu'),
     backToTop: document.getElementById('back-to-top'),
     toast: document.getElementById('toast')
 };
+
+function getMobileMenuFocusableElements() {
+    if (!elements.mobileMenu) return [];
+    return Array.from(elements.mobileMenu.querySelectorAll(FOCUSABLE_SELECTOR));
+}
+
+function setMobileMenuFocusableState(isOpen) {
+    const focusableElements = getMobileMenuFocusableElements();
+    focusableElements.forEach((el) => {
+        if (isOpen) {
+            el.removeAttribute('tabindex');
+        } else {
+            el.setAttribute('tabindex', '-1');
+        }
+    });
+}
+
+function openMobileMenu() {
+    if (!elements.mobileMenu || !elements.mobileMenuToggle) return;
+
+    isMobileMenuOpen = true;
+    elements.mobileMenu.classList.add('open');
+    elements.mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    elements.mobileMenu.setAttribute('aria-hidden', 'false');
+    setMobileMenuFocusableState(true);
+
+    const [firstFocusable] = getMobileMenuFocusableElements();
+    if (firstFocusable) {
+        firstFocusable.focus();
+    }
+}
+
+function closeMobileMenu(restoreFocus = true) {
+    if (!elements.mobileMenu || !elements.mobileMenuToggle) return;
+
+    isMobileMenuOpen = false;
+    elements.mobileMenu.classList.remove('open');
+    elements.mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    elements.mobileMenu.setAttribute('aria-hidden', 'true');
+    setMobileMenuFocusableState(false);
+
+    if (restoreFocus) {
+        elements.mobileMenuToggle.focus();
+    }
+}
+
+function toggleMobileMenu() {
+    if (isMobileMenuOpen) {
+        closeMobileMenu();
+    } else {
+        openMobileMenu();
+    }
+}
+
+function handleMobileMenuKeydown(event) {
+    if (!isMobileMenuOpen || !elements.mobileMenu) return;
+
+    if (event.key === 'Escape') {
+        event.preventDefault();
+        closeMobileMenu();
+        return;
+    }
+
+    if (event.key !== 'Tab') return;
+
+    const focusableElements = getMobileMenuFocusableElements();
+    if (focusableElements.length === 0) return;
+
+    const firstFocusable = focusableElements[0];
+    const lastFocusable = focusableElements.at(-1);
+
+    if (event.shiftKey && document.activeElement === firstFocusable) {
+        event.preventDefault();
+        lastFocusable.focus();
+    } else if (!event.shiftKey && document.activeElement === lastFocusable) {
+        event.preventDefault();
+        firstFocusable.focus();
+    }
+}
+
+function handleMobileMenuOutsideClick(event) {
+    if (!isMobileMenuOpen || !elements.mobileMenu || !elements.mobileMenuToggle) return;
+
+    const clickedInsideMenu = elements.mobileMenu.contains(event.target);
+    const clickedToggle = elements.mobileMenuToggle.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+        closeMobileMenu();
+    }
+}
+
+function handleMobileMenuResize() {
+    if (window.innerWidth > MOBILE_MENU_BREAKPOINT && isMobileMenuOpen) {
+        closeMobileMenu(false);
+    }
+}
+
+function initMobileMenu() {
+    if (!elements.mobileMenu || !elements.mobileMenuToggle) return;
+
+    setMobileMenuFocusableState(false);
+    elements.mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    elements.mobileMenu.setAttribute('aria-hidden', 'true');
+
+    elements.mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    elements.mobileMenu.addEventListener('click', (event) => {
+        const link = event.target.closest('a');
+        if (link) {
+            closeMobileMenu();
+        }
+    });
+
+    document.addEventListener('keydown', handleMobileMenuKeydown);
+    document.addEventListener('click', handleMobileMenuOutsideClick);
+    window.addEventListener('resize', handleMobileMenuResize, { passive: true });
+}
 
 // ============================================
 // Theme Management
@@ -753,6 +875,7 @@ function scrollToTop() {
 async function init() {
     // Initialize theme
     initTheme();
+    initMobileMenu();
 
     // Show loading state
     elements.totalJobs.textContent = 'Loading...';
