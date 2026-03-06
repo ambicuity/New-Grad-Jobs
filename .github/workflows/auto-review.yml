@@ -92,9 +92,9 @@ jobs:
 
           Payment solicitation (cryptocurrency wallet addresses or digital tipping links) was detected in the PR description or changed files. This repository does not pay contributors.
 
-          @ambicuity — please review and block the contributor if appropriate."
+          @ambicuity — please review and block the contributor if appropriate." || echo "⚠️ Could not post comment (fork permission restriction)"
 
-          gh pr close "$PR_NUMBER"
+          gh pr close "$PR_NUMBER" || echo "⚠️ Could not close PR (fork permission restriction)"
           exit 1
 
       - name: Set up Python
@@ -337,7 +337,7 @@ jobs:
             gh api --method DELETE "repos/${{ github.repository }}/issues/comments/${PREV}" 2>/dev/null || true
           fi
 
-          echo "$BODY" | gh pr comment "$PR_NUMBER" --body-file -
+          echo "$BODY" | gh pr comment "$PR_NUMBER" --body-file - || echo "⚠️ Could not post comment (likely fork permission restriction)"
 
       # ── Auto-merge config-only PRs that passed ────────────────────────────
       - name: Auto-merge config-only PR
@@ -352,7 +352,7 @@ jobs:
           echo "Config-only PR passed all checks — enabling auto-merge"
           gh pr merge "$PR_NUMBER" --auto --squash \
             --subject "$(gh pr view $PR_NUMBER --json title --jq .title)" \
-            --body "Auto-merged by automated review: all integrity checks passed ✅"
+            --body "Auto-merged by automated review: all integrity checks passed ✅" || echo "⚠️ Could not auto-merge (likely fork permission restriction)"
 
       # ── Request changes on failure ────────────────────────────────────────
       - name: Request changes on failure
@@ -362,4 +362,4 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           gh pr review "$PR_NUMBER" --request-changes \
-            --body "Automated review failed — see comment above for details on which checks failed and what to fix."
+            --body "Automated review failed — see comment above for details on which checks failed and what to fix." || echo "⚠️ Could not request changes (likely fork permission restriction)"

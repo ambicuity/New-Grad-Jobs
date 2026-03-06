@@ -71,6 +71,16 @@
         "test",
         "ideas"
       ]
+    },
+    {
+      "login": "madhavgairola",
+      "name": "mdhv",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214257149?v=4",
+      "profile": "https://github.com/madhavgairola",
+      "contributions": [
+        "doc",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7
