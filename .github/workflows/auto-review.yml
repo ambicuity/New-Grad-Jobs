@@ -26,6 +26,71 @@ jobs:
         with:
           fetch-depth: 0
 
+      # ── Scam Guard (runs FIRST — hard gate) ──────────────────────────────
+      - name: Scam detection — payment addresses and AI stubs
+        id: scam
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          python3 - <<'PYEOF'
+          import re, os, sys, subprocess
+
+          pr_text = (os.getenv("PR_BODY","") or "") + " " + (os.getenv("PR_TITLE","") or "")
+
+          # Also scan bodies of all added/modified files
+          result = subprocess.run(
+              ["git", "diff", "--name-only", "origin/main...HEAD"],
+              capture_output=True, text=True
+          )
+          for fpath in result.stdout.strip().splitlines():
+              try:
+                  pr_text += " " + open(fpath).read()
+              except Exception:
+                  pass
+
+          scam_patterns = [
+              (r'0x[0-9a-fA-F]{40}', "EVM wallet address"),
+              (r'\bbc1q[0-9a-z]{6,}\b', "Bitcoin bech32 address"),
+              (r'(?i)\bpayment\s+address\b', "payment address phrase"),
+              (r'(?i)\btip\s+jar\b', "tip jar phrase"),
+              (r'(?i)\b(EVM|Solana|BTC|ETH)\s*:', "crypto label"),
+          ]
+
+          hits = []
+          for pattern, label in scam_patterns:
+              m = re.search(pattern, pr_text)
+              if m:
+                  hits.append(f"{label}: {m.group()[:60]}")
+
+          gho = os.environ["GITHUB_OUTPUT"]
+          if hits:
+              print(f"SCAM DETECTED: {hits}")
+              with open(gho, "a") as f:
+                  f.write("detected=true\n")
+          else:
+              print("No payment solicitation detected")
+              with open(gho, "a") as f:
+                  f.write("detected=false\n")
+          PYEOF
+
+      - name: Close and comment on scam PR
+        if: steps.scam.outputs.detected == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR_NUMBER" --body "🚨 **This PR has been automatically closed.**
+
+          Payment solicitation (cryptocurrency wallet addresses or tip jar links) was detected in the PR description or changed files. This repository does not pay contributors.
+
+          @ambicuity — please review and block the contributor if appropriate."
+
+          gh pr close "$PR_NUMBER"
+          exit 1
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
