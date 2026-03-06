@@ -1904,7 +1904,7 @@ def main():
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
 
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
-    # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
+    # # Increased to 20 workers (DEFAULT_ORCHESTRATOR_WORKERS) to handle all sources at maximum parallelism for 1000+ companies
     with ThreadPoolExecutor(max_workers=DEFAULT_ORCHESTRATOR_WORKERS) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
 
