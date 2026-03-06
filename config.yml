@@ -2,6 +2,9 @@
 
 # Job filtering settings
 filtering:
+  # Minimum expected number of companies across all APIs
+  min_expected_companies: 200
+
   # Maximum age of job postings in days
   max_age_days: 60
 
@@ -581,7 +584,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/ridewithvia/jobs"
 
       # --- Crypto & Web3 ---
-      # S7: Coinbase entry removed — duplicate of line 144
+      # S7: Coinbase entry removed — duplicate of original entry
       - name: "Kraken"
         url: "https://boards-api.greenhouse.io/v1/boards/kraken/jobs"
       - name: "Alchemy"

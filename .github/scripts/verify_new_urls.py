@@ -33,11 +33,9 @@ def verify_url(session, url):
         # We use GET because some ATS endpoints reject HEAD requests
         # We set timeout to 10s to prevent hanging
         response = session.get(url, timeout=10)
-
-        # 200 OK or 401 Unauthorized (Auth required but endpoint exists)
-        if response.status_code in [200, 401]:
-            return True, response.status_code
-
+    except Exception as e:
+        return False, str(e)
+    else:
         # If it's a JSON endpoint, but returns HTML (often a 404 or redirect to login)
         content_type = response.headers.get('content-type', '')
         if response.status_code == 200 and 'json' not in content_type:
@@ -45,10 +43,11 @@ def verify_url(session, url):
             if 'boards-api.greenhouse.io' in url or 'api.lever.co' in url:
                 return False, f"{response.status_code} but returned {content_type} (expected JSON)"
 
-        return False, response.status_code
+        # 200 OK or 401 Unauthorized (Auth required but endpoint exists)
+        if response.status_code in [200, 401]:
+            return True, response.status_code
 
-    except Exception as e:
-        return False, str(e)
+        return False, response.status_code
 
 import subprocess
 

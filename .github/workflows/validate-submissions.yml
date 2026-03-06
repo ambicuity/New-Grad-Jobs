@@ -39,7 +39,10 @@ jobs:
                   data = json.load(f)
               # jobs.json can be a dict with 'meta' and 'jobs' keys, or a flat list
               if isinstance(data, dict):
-                  jobs = data.get("jobs", [])
+                  if "jobs" not in data:
+                      print("Error: jobs.json dict missing 'jobs' key")
+                      sys.exit(1)
+                  jobs = data["jobs"]
               elif isinstance(data, list):
                   jobs = data
               else:

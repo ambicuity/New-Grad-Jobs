@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T04:58:19.954499",
+    "last_updated": "2026-03-06T14:25:57.864571",
     "total_snapshots": 2,
     "date_range": {
       "start": "2026-03-05",
@@ -65,12 +65,12 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1466,
+      "total_jobs": 1461,
       "categories": {},
       "tiers": {
         "unicorn": 813,
         "other": 431,
-        "faang_plus": 222
+        "faang_plus": 217
       },
       "top_companies": [
         {
@@ -83,7 +83,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 79
+          "jobs": 78
         },
         {
           "company": "Cloudflare",
@@ -95,7 +95,7 @@
         },
         {
           "company": "Lyft",
-          "jobs": 33
+          "jobs": 31
         },
         {
           "company": "MongoDB",
@@ -114,9 +114,9 @@
           "jobs": 26
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 6.35,
-      "timestamp": "2026-03-06T04:58:19.954310"
+      "unique_companies": 222,
+      "avg_jobs_per_company": 6.58,
+      "timestamp": "2026-03-06T14:25:57.864378"
     }
   ]
 }

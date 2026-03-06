@@ -44,13 +44,13 @@ jobs:
           # Also scan bodies of added/modified source files
           # Skip data files (.json, .xml) — they contain hex strings (SHAs, API IDs)
           # that false-positive against the EVM wallet regex.
-          SKIP_EXTENSIONS = {'.json', '.xml', '.csv', '.html'}
+          SKIP_EXTENSIONS = {'.json', '.xml', '.csv'}
           result = subprocess.run(
               ["git", "diff", "--name-only", "origin/main...HEAD"],
               capture_output=True, text=True
           )
           for fpath in result.stdout.strip().splitlines():
-              if any(fpath.endswith(ext) for ext in SKIP_EXTENSIONS):
+              if any(fpath.lower().endswith(ext) for ext in SKIP_EXTENSIONS):
                   continue
               try:
                   pr_text += " " + open(fpath).read()
@@ -90,7 +90,7 @@ jobs:
         run: |
           gh pr comment "$PR_NUMBER" --body "🚨 **This PR has been automatically closed.**
 
-          Payment solicitation (cryptocurrency wallet addresses or tip_jar links) was detected in the PR description or changed files. This repository does not pay contributors.
+          Payment solicitation (cryptocurrency wallet addresses or digital tipping links) was detected in the PR description or changed files. This repository does not pay contributors.
 
           @ambicuity — please review and block the contributor if appropriate."
 
