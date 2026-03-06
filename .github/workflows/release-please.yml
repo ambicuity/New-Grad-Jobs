@@ -4,10 +4,10 @@ on:
   push:
     branches: [main]
 
-# Minimal permissions — release-please only needs to write PRs and push tags/release notes
 permissions:
   contents: write
   pull-requests: write
+  id-token: write # Required for keyless signing with Sigstore OIDC
 
 jobs:
   release-please:
@@ -16,10 +16,35 @@ jobs:
 
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # Config and manifest files live at the repo root
-          # release-please reads Conventional Commit titles (already enforced by bot-pr-title-check)
-          # and bumps CHANGELOG.md + pyproject.toml automatically on every merge to main.
           config-file: .release-please-config.json
           manifest-file: .release-please-manifest.json
+
+      # --- Everything below this line ONLY runs when a Release is actually published ---
+      
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+
+      - name: Install Cosign for Keyless Signing
+        if: ${{ steps.release.outputs.release_created }}
+        uses: sigstore/cosign-installer@v3.5.0
+
+      - name: Create Archive, Sign, and Attach to Release
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.release.outputs.tag_name }}
+        run: |
+          # 1. Generate an archive of the repository state at this release
+          ARCHIVE="new-grad-jobs-${TAG}.tar.gz"
+          git archive --format=tar.gz -o "$ARCHIVE" HEAD
+
+          # 2. Cryptographically sign the archive using Sigstore (generates .sig file)
+          cosign sign-blob --yes --output-signature "${ARCHIVE}.sig" "${ARCHIVE}"
+
+          # 3. Upload the archive and its signature file to the GitHub Release assets
+          # This satisfies the OpenSSF 'SignedReleases' check
+          gh release upload "${TAG}" "${ARCHIVE}" "${ARCHIVE}.sig"
