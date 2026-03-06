@@ -170,15 +170,15 @@ jobs:
             try {
               console.log(`Adding @${author} for [${contributionTypes}] via all-contributors-cli...`);
               await exec.exec('npx', ['all-contributors-cli', 'add', author, contributionTypes]);
-              
+
               // Push the commit made by all-contributors-cli to the base branch
               const baseRef = pr.base.ref;
               console.log(`Pushing changes to ${baseRef}...`);
-              
+
               // Pull with rebase first to avoid rejection from concurrent merges
               await exec.exec('git', ['pull', '--rebase', 'origin', baseRef]);
               await exec.exec('git', ['push', 'origin', `HEAD:${baseRef}`]);
-              
+
               console.log(`Successfully credited @${author} in the Hall of Fame!`);
             } catch (err) {
               console.log(`Error adding contributor (might already exist, or CLI failed): ${err.message}`);
