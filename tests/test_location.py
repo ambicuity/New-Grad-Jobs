@@ -4,8 +4,8 @@ Unit tests for is_valid_location() in scripts/update_jobs.py.
 
 Covers:
   - True positives: USA states/cities, Canada, India, Remote
-  - False positives prevented by word-boundary matching (C4 fix)
-  - Edge cases: empty string, None-like values
+  - False positives prevented by word-boundary matching
+  - Edge cases: empty string, None-like values, Unicode, mixed case
 """
 
 import sys
@@ -65,10 +65,12 @@ class TestValidLocationFalsePositives:
         """Montreal returns True because it matches Canada indicators, not because of the 'al' false positive string matcher."""
         assert is_valid_location("Montreal") is True  # Montreal matches Canada indicators
 
-    def test_london_uk(self):
-        """'London' is in both Canada and UK lists — Canada match is valid."""
-        # London appears in canada_indicators, so this is expected True
-        assert is_valid_location("London, UK") is True
+    def test_london_england_rejected(self):
+        """Ambiguous city name should not auto-match Canada without Canadian context."""
+        assert is_valid_location("London, England") is False
+
+    def test_london_ontario_accepted(self):
+        assert is_valid_location("London, Ontario") is True
 
     def test_paris_france(self):
         assert is_valid_location("Paris, France") is False
@@ -79,6 +81,18 @@ class TestValidLocationFalsePositives:
     def test_beijing_china(self):
         """'in' should NOT match 'Beijing'."""
         assert is_valid_location("Beijing, China") is False
+
+    def test_rome_italy(self):
+        """'me' should NOT match inside 'Rome'."""
+        assert is_valid_location("Rome, Italy") is False
+
+    def test_shanghai_china(self):
+        """'hi' should NOT match inside 'Shanghai'."""
+        assert is_valid_location("Shanghai, China") is False
+
+    def test_aarhus_denmark(self):
+        """'us' should NOT match inside 'Aarhus'."""
+        assert is_valid_location("Aarhus, Denmark") is False
 
     def test_singapore(self):
         assert is_valid_location("Singapore") is False
@@ -110,3 +124,9 @@ class TestValidLocationEdgeCases:
     def test_or_in_word(self):
         """'or' inside a word like 'Lahore' should NOT match Oregon."""
         assert is_valid_location("Lahore, Pakistan") is False
+
+    def test_unicode_foreign_city(self):
+        assert is_valid_location("München, Germany") is False
+
+    def test_mixed_case_state_abbreviation(self):
+        assert is_valid_location("Indianapolis, iN") is True

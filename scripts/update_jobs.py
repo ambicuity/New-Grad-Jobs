@@ -398,6 +398,73 @@ US_CITIZENSHIP_KEYWORDS = [
     'security clearance', 'clearance required', 'top secret', 'ts/sci'
 ]
 
+# Location indicators used by is_valid_location(). Keep these at module scope so
+# we do not rebuild large lists for every job (~2000+ calls per run).
+REMOTE_LOCATION_TERMS = frozenset({'remote', 'anywhere', 'worldwide'})
+
+USA_STATE_TERMS = (
+    'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
+    'california', 'ca', 'colorado', 'co', 'connecticut', 'ct',
+    'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
+    'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
+    'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
+    'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi',
+    'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
+    'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
+    'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
+    'north carolina', 'nc', 'north dakota', 'nd', 'ohio', 'oh',
+    'oklahoma', 'ok', 'oregon', 'or', 'pennsylvania', 'pa',
+    'rhode island', 'ri', 'south carolina', 'sc', 'south dakota', 'sd',
+    'tennessee', 'tn', 'texas', 'tx', 'utah', 'ut', 'vermont', 'vt',
+    'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
+    'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
+)
+
+USA_CITY_TERMS = (
+    'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
+    'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
+    'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
+    'seattle', 'denver', 'boston', 'atlanta', 'miami', 'portland', 'las vegas',
+    'detroit', 'nashville', 'baltimore', 'milwaukee', 'raleigh', 'tampa',
+    'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
+    'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
+)
+
+USA_INDICATOR_TERMS = ('united states', 'usa', 'us', 'america')
+
+CANADA_INDICATOR_TERMS = (
+    'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba',
+    'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
+    'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
+    'quebec city', 'hamilton', 'kitchener', 'waterloo', 'victoria',
+    'london, ontario', 'london, on', 'london on'
+)
+
+INDIA_INDICATOR_TERMS = (
+    'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
+    'chennai', 'kolkata', 'gurgaon', 'gurugram', 'noida', 'ahmedabad', 'jaipur',
+    'kochi', 'thiruvananthapuram', 'coimbatore', 'indore', 'nagpur', 'lucknow',
+    'chandigarh', 'bhubaneswar', 'visakhapatnam', 'mysore', 'mangalore',
+    'karnataka', 'maharashtra', 'telangana', 'tamil nadu', 'kerala', 'andhra pradesh',
+    'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
+    'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
+)
+
+LOCATION_TERMS = frozenset(
+    USA_INDICATOR_TERMS
+    + USA_STATE_TERMS
+    + USA_CITY_TERMS
+    + CANADA_INDICATOR_TERMS
+    + INDIA_INDICATOR_TERMS
+)
+
+LOCATION_TERM_PATTERN = re.compile(
+    r'\b(?:'
+    + '|'.join(re.escape(term) for term in sorted(LOCATION_TERMS, key=len, reverse=True))
+    + r')\b',
+    re.IGNORECASE,
+)
+
 def load_config() -> Dict[str, Any]:
     """Load configuration from config.yml"""
     config_path = os.path.join(os.path.dirname(__file__), '..', 'config.yml')
@@ -1249,95 +1316,20 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         print(f"Error parsing date {posted_at}: {e}")
         return False
 
-def _location_matches(location_lower: str, term: str) -> bool:
-    """Match a location term using word boundaries for short terms (<=3 chars)
-    to prevent false positives like 'al' matching 'Montreal' or 'in' matching 'Berlin'.
-    Longer terms use fast substring matching since they are unambiguous.
-    """
-    if len(term) <= 3:
-        return bool(re.search(r'\b' + re.escape(term) + r'\b', location_lower))
-    return term in location_lower
-
-
 def is_valid_location(location: str) -> bool:
     """Check if job location is in target countries (USA, Canada, India) or Remote"""
     if not location:
         return False
 
     location_lower = location.lower().strip()
+    if not location_lower:
+        return False
 
     # Handle "Remote" locations - include them
-    if location_lower in ['remote', 'anywhere', 'worldwide']:
+    if location_lower in REMOTE_LOCATION_TERMS or 'remote' in location_lower:
         return True
 
-    if 'remote' in location_lower:
-        return True
-
-    # USA state abbreviations and names
-    usa_states = [
-        'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
-        'california', 'ca', 'colorado', 'co', 'connecticut', 'ct',
-        'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
-        'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
-        'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
-        'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi',
-        'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
-        'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
-        'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
-        'north carolina', 'nc', 'north dakota', 'nd', 'ohio', 'oh',
-        'oklahoma', 'ok', 'oregon', 'or', 'pennsylvania', 'pa',
-        'rhode island', 'ri', 'south carolina', 'sc', 'south dakota', 'sd',
-        'tennessee', 'tn', 'texas', 'tx', 'utah', 'ut', 'vermont', 'vt',
-        'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
-        'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
-    ]
-
-    # USA cities (major ones)
-    usa_cities = [
-        'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
-        'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
-        'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
-        'seattle', 'denver', 'boston', 'atlanta', 'miami', 'portland', 'las vegas',
-        'detroit', 'nashville', 'baltimore', 'milwaukee', 'raleigh', 'tampa',
-        'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
-        'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
-    ]
-
-    # USA indicators
-    usa_indicators = [
-        'united states', 'usa', 'us', 'america'
-    ]
-
-    # Canada provinces and cities
-    canada_indicators = [
-        'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba',
-        'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
-        'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
-        'quebec city', 'hamilton', 'kitchener', 'waterloo', 'london', 'victoria'
-    ]
-
-    # India states and cities
-    india_indicators = [
-        'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
-        'chennai', 'kolkata', 'gurgaon', 'gurugram', 'noida', 'ahmedabad', 'jaipur',
-        'kochi', 'thiruvananthapuram', 'coimbatore', 'indore', 'nagpur', 'lucknow',
-        'chandigarh', 'bhubaneswar', 'visakhapatnam', 'mysore', 'mangalore',
-        'karnataka', 'maharashtra', 'telangana', 'tamil nadu', 'kerala', 'andhra pradesh',
-        'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
-        'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
-    ]
-
-    # All indicator lists to check
-    all_indicators = [usa_indicators, usa_states, usa_cities,
-                      canada_indicators, india_indicators]
-
-    for indicator_list in all_indicators:
-        for term in indicator_list:
-            if _location_matches(location_lower, term):
-                return True
-
-    # If we can't determine, default to False to be safe
-    return False
+    return bool(LOCATION_TERM_PATTERN.search(location_lower))
 
 def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Filter jobs based on configuration criteria"""
