@@ -2109,7 +2109,7 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
             continue
             
         try:
-            parsed = urllib.parse.urlparse(url)
+            parsed = urlparse(url)
             hostname = parsed.hostname or ''
             if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
                 continue
