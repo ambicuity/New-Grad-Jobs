@@ -774,8 +774,14 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     # In that case, tenant is matching path[0]
                     path_parts = [part for part in site_path.strip('/').split('/') if part]
                     if len(path_parts) >= 2:
-                        api_url = build_workday_api_url(host, f"/{path_parts[0]}/{path_parts[-1]}")
-                        response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                        fallback_tenant = path_parts[0]
+                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                            fallback_tenant = path_parts[1]
+
+                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                        if fallback_api_url != api_url:
+                            api_url = fallback_api_url
+                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
