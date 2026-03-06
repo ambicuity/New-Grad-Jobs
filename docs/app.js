@@ -748,6 +748,9 @@ function escapeHtml(text) {
 async function init() {
     // Initialize theme
     initTheme();
+    if (typeof window.initMobileMenu === 'function') {
+        window.initMobileMenu();
+    }
 
     // Set up event listeners (with null checks)
     if (elements.themeToggle) {

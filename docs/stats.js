@@ -753,6 +753,9 @@ function scrollToTop() {
 async function init() {
     // Initialize theme
     initTheme();
+    if (typeof window.initMobileMenu === 'function') {
+        window.initMobileMenu();
+    }
 
     // Show loading state
     elements.totalJobs.textContent = 'Loading...';
