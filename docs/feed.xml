@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 21:20:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 21:29:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Support Engineer (AMER - PST / MST) at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8231973002</link>
+      <description>New grad role at GitLab in Remote, US. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8231973002</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8242652002</link>
+      <description>New grad role at GitLab in Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8242652002</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8358825002</link>
+      <description>New grad role at GitLab in Remote, Americas; Remote, EMEA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8358825002</guid>
+    </item>
     <item>
       <title>Systems Engineer, Rocket Motor Systems at Anduril</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4952079008</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, RL Engineering at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4952051008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4952051008</guid>
-    </item>
-    <item>
-      <title>ML Infrastructure Engineer, Safeguards at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4778843008</link>
-      <description>New grad role at Anthropic in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4778843008</guid>
-    </item>
-    <item>
-      <title>Model Quality Software Engineer, Claude Code at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5098025008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5098025008</guid>
     </item>
   </channel>
 </rss>
