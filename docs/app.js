@@ -567,6 +567,9 @@ function applyFilters() {
     currentPage = 1;
     renderJobs(filteredJobs);
     updateCounts();
+
+    // P1: Sync filter state to URL for shareable links
+    syncFiltersToUrl();
 }
 
 function resetFilters() {
@@ -599,6 +602,71 @@ function resetFilters() {
     trackEvent('filters-reset', { label: 'Reset All Filters' });
 
     applyFilters();
+}
+
+// P1: Sync currentFilters to URL search params
+function syncFiltersToUrl() {
+    const params = new URLSearchParams();
+    for (const [key, val] of Object.entries(currentFilters)) {
+        if (val && val !== 'all' && val !== '') {
+            params.set(key, val);
+        }
+    }
+    const qs = params.toString();
+    const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+    window.history.replaceState(null, '', url);
+}
+
+// P1: Restore filters from URL on page load
+function restoreFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const validKeys = ['search', 'category', 'tier', 'country', 'state'];
+    let hasParams = false;
+    for (const key of validKeys) {
+        if (params.has(key)) {
+            currentFilters[key] = params.get(key);
+            hasParams = true;
+        }
+    }
+    if (hasParams) {
+        // Sync UI elements with restored filters
+        if (currentFilters.search && elements.searchInput) {
+            elements.searchInput.value = currentFilters.search;
+        }
+        if (currentFilters.country !== 'all' && elements.countryFilter) {
+            elements.countryFilter.value = currentFilters.country;
+            populateStates(currentFilters.country);
+        }
+        if (currentFilters.state !== 'all' && elements.stateFilter) {
+            elements.stateFilter.value = currentFilters.state;
+        }
+        // Sync chip UI
+        document.querySelectorAll('#category-filters .chip').forEach(chip => {
+            chip.classList.toggle('active', chip.dataset.filter === currentFilters.category);
+        });
+        document.querySelectorAll('#tier-filters .chip').forEach(chip => {
+            chip.classList.toggle('active', chip.dataset.filter === currentFilters.tier);
+        });
+    }
+    return hasParams;
+}
+
+// P2: Export bookmarked jobs as a downloadable JSON file
+function exportBookmarks() {
+    if (bookmarkedJobs.size === 0) {
+        showToast('No bookmarks to export');
+        return;
+    }
+    const bookmarked = allJobs.filter(j => bookmarkedJobs.has(j.url));
+    const blob = new Blob([JSON.stringify(bookmarked, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `bookmarked-jobs-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    trackEvent('bookmarks-export', { label: `Exported ${bookmarked.length} bookmarks` });
+    showToast(`Exported ${bookmarked.length} bookmarked jobs`);
 }
 
 // Populate state dropdown based on country selection
@@ -739,9 +807,15 @@ async function init() {
             elements.loading.style.display = 'none';
         }
 
-        // Render
-        renderJobs(filteredJobs);
-        updateCounts();
+        // P1: Restore filters from URL params before first render
+        const hadUrlFilters = restoreFiltersFromUrl();
+
+        if (hadUrlFilters) {
+            applyFilters();
+        } else {
+            renderJobs(filteredJobs);
+            updateCounts();
+        }
         updateLastUpdated(data.meta?.generated_at);
     } else {
         // Show error state
