@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T12:27:21.026090",
+    "last_updated": "2026-03-06T13:38:33.035882",
     "total_snapshots": 2,
     "date_range": {
       "start": "2026-03-05",
@@ -65,12 +65,12 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1464,
+      "total_jobs": 1471,
       "categories": {},
       "tiers": {
-        "other": 442,
+        "other": 440,
         "unicorn": 812,
-        "faang_plus": 210
+        "faang_plus": 219
       },
       "top_companies": [
         {
@@ -95,7 +95,7 @@
         },
         {
           "company": "Lyft",
-          "jobs": 32
+          "jobs": 31
         },
         {
           "company": "MongoDB",
@@ -114,9 +114,9 @@
           "jobs": 26
         }
       ],
-      "unique_companies": 231,
+      "unique_companies": 232,
       "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-03-06T12:27:21.025923"
+      "timestamp": "2026-03-06T13:38:33.035709"
     }
   ]
 }
