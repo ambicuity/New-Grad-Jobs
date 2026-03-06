@@ -1,5 +1,9 @@
 # Contributing to New Grad Jobs
 
+> [!TIP]
+> **Quick Start (3 steps):** `git clone` → `pip install -r requirements.txt` →
+> open an issue, get assigned, then open a PR. Full details below.
+
 First off — **thank you** for taking the time to contribute! 🎉
 
 > [!TIP]
