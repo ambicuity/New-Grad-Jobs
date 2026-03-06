@@ -27,6 +27,8 @@ from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
+from xml.sax.saxutils import escape as xml_escape
+import random
 
 import requests
 import yaml
@@ -1461,19 +1463,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
 
     # Sort jobs by date
-    def get_sort_date(job):
-        posted_at = job.get('posted_at')
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                return date_parser.parse(posted_at).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Build JSON structure
     json_jobs = []
@@ -1794,24 +1784,23 @@ Respond in JSON format:
         print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 
+def extract_sort_date(job: Dict[str, Any]) -> datetime:
+    """Extract and parse posted_at for sorting."""
+    posted_at = job.get('posted_at')
+    if not posted_at:
+        return datetime.min
+    try:
+        if isinstance(posted_at, (int, float)):
+            return datetime.fromtimestamp(posted_at / 1000)
+        return date_parser.parse(posted_at).replace(tzinfo=None)
+    except Exception:
+        return datetime.min
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
 
     # Sort jobs by posted date (most recent first)
-    def get_sort_date(job):
-        posted_at = job['posted_at']
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                parsed_date = date_parser.parse(posted_at)
-                return parsed_date.replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Calculate category counts
     category_counts = {}
@@ -1996,38 +1985,30 @@ def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
     Writes docs/feed.xml so users can subscribe via any feed reader.
     Zero-cost, zero-infra solution for job alerts.
     """
-    from xml.sax.saxutils import escape as xml_escape
-
     feed_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'feed.xml')
 
     # Sort by date descending, take top N
-    def _sort_date(job):
-        pa = job.get('posted_at')
-        if not pa:
-            return datetime.min
-        try:
-            if isinstance(pa, (int, float)):
-                return datetime.fromtimestamp(pa / 1000)
-            return date_parser.parse(pa).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    sorted_jobs = sorted(jobs, key=_sort_date, reverse=True)[:max_items]
+    jobs.sort(key=extract_sort_date, reverse=True)
+    sorted_jobs = jobs[:max_items]
 
     now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
 
     items = []
     for job in sorted_jobs:
-        title = xml_escape(f"{job.get('company', '')} — {job.get('title', '')}")
-        link = xml_escape(job.get('url', ''))
-        location = xml_escape(job.get('location', ''))
-        posted = job.get('posted_display', 'Unknown')
-        desc = xml_escape(f"Location: {location} | Posted: {posted}")
+        company = job.get('company', 'Unknown')
+        title = job.get('title', 'Unknown')
+        url = job.get('url', '')
+        location = job.get('location', 'Remote')
+        category = job.get('category', {}).get('name', 'General')
+        posted_at_dt = extract_sort_date(job)
+        pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
+
         items.append(f"""    <item>
-      <title>{title}</title>
-      <link>{link}</link>
-      <description>{desc}</description>
-      <guid isPermaLink="true">{link}</guid>
+      <title>{xml_escape(title)} at {xml_escape(company)}</title>
+      <link>{xml_escape(url)}</link>
+      <description>New grad role at {xml_escape(company)} in {xml_escape(location)}. Category: {xml_escape(category)}</description>
+      <pubDate>{pubDate}</pubDate>
+      <guid isPermaLink="true">{xml_escape(url)}</guid>
     </item>""")
 
     rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -2101,8 +2082,6 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
     Updates each sampled job in-place with `url_verified` (bool).
     Best-effort — failures are logged but never block the pipeline.
     """
-    import random
-
     sample_size = min(max_checks, max(1, int(len(jobs) * sample_pct)))
     sample = random.sample(jobs, min(sample_size, len(jobs)))
     verified = 0
@@ -2112,7 +2091,13 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
         url = job.get('url', '')
         if not url or not url.startswith('http'):
             continue
+            
         try:
+            parsed = urllib.parse.urlparse(url)
+            hostname = parsed.hostname or ''
+            if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
+                continue
+
             resp = HTTP_SESSION.head(url, timeout=4, allow_redirects=True)
             if resp.status_code < 400:
                 job['url_verified'] = True

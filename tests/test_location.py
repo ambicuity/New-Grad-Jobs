@@ -62,7 +62,7 @@ class TestValidLocationFalsePositives:
         assert is_valid_location("Berlin, Germany") is False
 
     def test_montreal_no_al(self):
-        """'al' (Alabama) should NOT match 'Montreal'."""
+        """Montreal returns True because it matches Canada indicators, not because of the 'al' false positive string matcher."""
         assert is_valid_location("Montreal") is True  # Montreal matches Canada indicators
 
     def test_london_uk(self):
