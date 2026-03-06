@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       # ── Scam Guard (runs FIRST — hard gate) ──────────────────────────────
-      - name: Scam detection — payment addresses and AI stubs
+      - name: Scam detection — payment-address and AI stubs
         id: scam
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -90,7 +90,7 @@ jobs:
         run: |
           gh pr comment "$PR_NUMBER" --body "🚨 **This PR has been automatically closed.**
 
-          Payment solicitation (cryptocurrency wallet addresses or tip jar links) was detected in the PR description or changed files. This repository does not pay contributors.
+          Payment solicitation (cryptocurrency wallet addresses or tip_jar links) was detected in the PR description or changed files. This repository does not pay contributors.
 
           @ambicuity — please review and block the contributor if appropriate."
 
