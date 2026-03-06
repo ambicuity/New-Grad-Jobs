@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 20:07:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 21:20:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer, Rocket Motor Systems at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007</link>
+      <description>New grad role at Anduril in Huntsville, Alabama, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 16:07:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 15:35:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</guid>
+    </item>
+    <item>
+      <title>RF Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 15:34:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at LaunchDarkly</title>
+      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</link>
+      <description>New grad role at LaunchDarkly in Remote - US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 15:22:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</guid>
+    </item>
     <item>
       <title>Data Scientist at Opendoor</title>
       <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
@@ -107,13 +135,6 @@
     </item>
     <item>
       <title>Mission Software Engineer at Anduril</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5062353007?gh_jid=5062353007</link>
-      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 13:57:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5062353007?gh_jid=5062353007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer at Anduril</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</link>
       <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 13:57:21 +0000</pubDate>
@@ -142,17 +163,17 @@
     </item>
     <item>
       <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
       <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
     </item>
     <item>
       <title>Software Engineer at Scopely</title>
@@ -198,27 +219,6 @@
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
-      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</link>
-      <description>New grad role at Wiz in Remote - Netherlands. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
-      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
       <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
       <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
@@ -230,6 +230,27 @@
       <description>New grad role at Wiz in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
+      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
+      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</link>
+      <description>New grad role at Wiz in Remote - Netherlands. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</guid>
     </item>
     <item>
       <title>Security Engineer II - SaaS Applications at Wiz</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5098025008</guid>
-    </item>
-    <item>
-      <title>Platform Security Engineer, Operating Systems at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4929693008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4929693008</guid>
-    </item>
-    <item>
-      <title>Recruiting Data Engineering &amp; Analytics at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4886415008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | Seattle, WA. Category: Other</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4886415008</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/4982193008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4982193008</guid>
     </item>
   </channel>
 </rss>
