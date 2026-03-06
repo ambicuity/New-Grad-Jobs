@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 22:53:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 23:23:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Rapid Integration and Test at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4637573007?gh_jid=4637573007</link>
+      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 18:17:56 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4637573007?gh_jid=4637573007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Vehicle Management Systems  at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4956802007?gh_jid=4956802007</link>
+      <description>New grad role at Anduril in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 18:16:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4956802007?gh_jid=4956802007</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, 3D Object Detection  (PhD New Grad) at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7539786</link>
@@ -254,27 +268,6 @@
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
-      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</link>
-      <description>New grad role at Wiz in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
-      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
       <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
       <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
@@ -286,6 +279,27 @@
       <description>New grad role at Wiz in Remote - Netherlands. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
+      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
+      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</link>
+      <description>New grad role at Wiz in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</guid>
     </item>
     <item>
       <title>Security Engineer II - SaaS Applications at Wiz</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anthropic in Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4502508008</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, Reinforcement Learning at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5098984008</link>
-      <description>New grad role at Anthropic in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5098984008</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer, Sandboxing at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5030680008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5030680008</guid>
     </item>
   </channel>
 </rss>
