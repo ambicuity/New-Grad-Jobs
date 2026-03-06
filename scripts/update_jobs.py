@@ -682,7 +682,26 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
 
 
 def build_workday_api_url(host: str, site_path: str) -> str:
-    """Build the Workday CXS jobs endpoint from a host and site path."""
+    """Build a Workday CXS jobs API endpoint URL.
+
+    Args:
+        host: Workday hostname (for example, ``acme.wd5.myworkdayjobs.com``).
+        site_path: Path portion from the careers URL (for example,
+            ``/Acme_External_Careers`` or ``/tenant/Acme_External_Careers``).
+
+    Returns:
+        A full Workday jobs API URL in the format
+        ``https://<host>/wday/cxs/<tenant>/<site>/jobs``.
+
+    Raises:
+        ValueError: If ``host`` or ``site_path`` is not a non-empty string with
+            at least one path segment.
+    """
+    if not isinstance(host, str):
+        raise ValueError("host must be a string")
+    if not isinstance(site_path, str):
+        raise ValueError("site_path must be a string")
+
     clean_host = host.strip()
     if not clean_host:
         raise ValueError("host is required")
@@ -698,7 +717,11 @@ def build_workday_api_url(host: str, site_path: str) -> str:
     tenant = host_parts[0]
     if re.fullmatch(r"wd\d+", tenant.lower()) and len(path_parts) >= 2:
         # For URLs like wd5.myworkdayjobs.com/<tenant>/<site>, tenant lives in the path.
-        tenant = path_parts[0]
+        # Locale-prefixed variants can be /en-US/<tenant>/<site>.
+        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+            tenant = path_parts[1]
+        else:
+            tenant = path_parts[0]
 
     site_id = path_parts[-1]
     return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
@@ -746,13 +769,13 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                 response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
                 if response.status_code == 404:
-                     # Try alternative tenant extraction if 404
-                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                     # In that case, tenant is matching path[0]
-                     path_parts = [part for part in site_path.strip('/').split('/') if part]
-                     if len(path_parts) >= 2:
-                         api_url = build_workday_api_url(host, f"/{path_parts[0]}/{path_parts[-1]}")
-                         response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                    # Try alternative tenant extraction if 404
+                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                    # In that case, tenant is matching path[0]
+                    path_parts = [part for part in site_path.strip('/').split('/') if part]
+                    if len(path_parts) >= 2:
+                        api_url = build_workday_api_url(host, f"/{path_parts[0]}/{path_parts[-1]}")
+                        response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
