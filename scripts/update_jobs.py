@@ -632,9 +632,6 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
 
-                # AGGRESSIVE: 5s for 10K
-                response = limited_get(url, timeout=5)
-
                 response.raise_for_status()
                 data = response.json()
 
@@ -1098,9 +1095,6 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     print(
                         f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
-
-                # AGGRESSIVE: 5s for 10K
-                response = limited_get(url, timeout=5)
 
                 response.raise_for_status()
                 data = response.json()
