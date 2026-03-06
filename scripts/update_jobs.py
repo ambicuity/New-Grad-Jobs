@@ -333,7 +333,7 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]

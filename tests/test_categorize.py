@@ -105,7 +105,8 @@ class TestCategorizeJob:
 
     def test_description_keyword_match(self):
         """Verify that description keywords can also match categories."""
-        result = categorize_job("Engineer", "Looking for a machine learning specialist")
+        result = categorize_job(
+            "Engineer", "Looking for a machine learning specialist")
         assert result["id"] == "data_ml"
 
     def test_empty_title_returns_other(self):
@@ -166,11 +167,13 @@ class TestDetectSponsorshipFlags:
     """Tests for the detect_sponsorship_flags() function."""
 
     def test_no_sponsorship_detected(self):
-        result = detect_sponsorship_flags("Engineer", "We do not sponsor visas. No sponsorship available.")
+        result = detect_sponsorship_flags(
+            "Engineer", "We do not sponsor visas. No sponsorship available.")
         assert result["no_sponsorship"] is True
 
     def test_us_citizenship_required(self):
-        result = detect_sponsorship_flags("Engineer", "Requires security clearance and US citizenship.")
+        result = detect_sponsorship_flags(
+            "Engineer", "Requires security clearance and US citizenship.")
         assert result["us_citizenship_required"] is True
 
     def test_both_flags_detected(self):
@@ -182,15 +185,27 @@ class TestDetectSponsorshipFlags:
         assert result["us_citizenship_required"] is True
 
     def test_no_flags_detected_when_clean(self):
-        result = detect_sponsorship_flags("Software Engineer", "Open to all candidates globally.")
+        result = detect_sponsorship_flags(
+            "Software Engineer", "Open to all candidates globally.")
         assert result["no_sponsorship"] is False
         assert result["us_citizenship_required"] is False
 
     def test_flag_in_title(self):
-        result = detect_sponsorship_flags("No sponsorship Software Engineer", "")
+        result = detect_sponsorship_flags(
+            "No sponsorship Software Engineer", "")
         assert result["no_sponsorship"] is True
 
     def test_empty_inputs(self):
         result = detect_sponsorship_flags("", "")
         assert result["no_sponsorship"] is False
         assert result["us_citizenship_required"] is False
+
+
+def test_categorize_cybersecurity_engineer():
+    result = categorize_job("Cybersecurity Engineer")
+    assert result["id"] == "infrastructure_sre"
+
+
+def test_categorize_infosec_analyst():
+    result = categorize_job("Infosec Analyst")
+    assert result["id"] == "infrastructure_sre"
