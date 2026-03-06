@@ -22,15 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
-      actions: write
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        fetch-depth: 0  # Fetch full history for proper rebasing
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -47,28 +45,14 @@ jobs:
         cd scripts
         python update_jobs.py
 
-    - name: Check for changes
-      id: changes
+    - name: Commit and push changes
       run: |
-        if git diff --quiet; then
-          echo "changed=false" >> "$GITHUB_OUTPUT"
-        else
-          echo "changed=true" >> "$GITHUB_OUTPUT"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add jobs.json README.md
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
         fi
-
-    - name: Commit and Create Pull Request
-      if: steps.changes.outputs.changed == 'true'
-      uses: peter-evans/create-pull-request@v6
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "🤖 Update job listings"
-        title: "fix(scraper): 🤖 Update job listings"
-        body: |
-          Automated job aggregation update.
-        branch: "chore/auto-update-jobs"
-        branch-suffix: "timestamp"
-        delete-branch: true
-
-    - name: No changes
-      if: steps.changes.outputs.changed == 'false'
-      run: echo "No new jobs found, README unchanged"
+        git commit -m "🤖 Update job listings [skip ci]"
+        git push origin main
