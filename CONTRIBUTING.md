@@ -2,6 +2,14 @@
 
 First off — **thank you** for taking the time to contribute! 🎉
 
+> [!TIP]
+> **TL;DR Quick Start (3 steps):**
+> 1. **Find** an issue tagged [`good first issue`](https://github.com/ambicuity/New-Grad-Jobs/labels/good%20first%20issue) and comment `/assign`
+> 2. **Setup** your local environment: `git clone` → `make setup` → `make test` (all green)
+> 3. **Ship** your change on a branch, then open a PR with `Fixes #<issue-number>` in the description
+>
+> Full details in the sections below.
+
 New Grad Jobs is a fully automated job aggregator that helps new graduates find their first tech role. Every contribution — whether it's submitting a missing job, fixing a bug in the scraper, improving the frontend, or helping with docs — directly helps thousands of job seekers.
 
 > **Heads-up:** `README.md` is auto-generated every 5 minutes by GitHub Actions. **Never edit it manually** — your changes will be overwritten.

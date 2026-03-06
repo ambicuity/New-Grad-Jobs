@@ -1818,6 +1818,11 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
+> [!NOTE]
+> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
+> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
+> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
+
 ---
 
 ## 📂 Browse {len(jobs)} Jobs by Category
