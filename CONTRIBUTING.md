@@ -668,7 +668,7 @@ Dependabot patch and minor updates are **automatically approved and squash-merge
 New Grad Jobs takes supply chain security seriously. We have achieved a **10/10** on the OpenSSF Scorecard for Signed Releases!
 
 ### What Does This Mean for You?
-Every release of this repository is automatically packaged and cryptographically signed using **Sigstore** (keyless OIDC signing). 
+Every release of this repository is automatically packaged and cryptographically signed using **Sigstore** (keyless OIDC signing).
 When you download a release from our Releases page, you'll also find a `.sig` file alongside the `.tar.gz` archive.
 
 If you are just contributing code, you don't need to do anything! Our automated `release-please.yml` workflow takes care of the signing automatically whenever a new version is published.

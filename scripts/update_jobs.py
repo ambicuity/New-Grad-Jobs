@@ -16,6 +16,7 @@ Performance Optimizations:
 import json
 import math
 import os
+import random
 import re
 import sys
 import threading
@@ -27,12 +28,29 @@ from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
+from xml.sax.saxutils import escape as xml_escape
 
 import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+# Worker pool configuration constants
+# These default values act as fallback constants. The active pool sizes
+# are read from config.yml under 'worker_pools' during startup.
+# Minimums are baseline parallel requests; maximums represent empirically-tested API rate limit boundaries.
+DEFAULT_GREENHOUSE_MIN_WORKERS: int = 30
+DEFAULT_GREENHOUSE_MAX_WORKERS: int = 300
+DEFAULT_LEVER_MIN_WORKERS: int = 15
+DEFAULT_LEVER_MAX_WORKERS: int = 200
+DEFAULT_GOOGLE_MIN_WORKERS: int = 12
+DEFAULT_GOOGLE_MAX_WORKERS: int = 100
+
+# Constants for fixed worker pools
+DEFAULT_JOBSPY_WORKERS: int = 25
+DEFAULT_ORCHESTRATOR_WORKERS: int = 20
+
 
 # Import JobSpy for additional job site scraping
 try:
@@ -90,6 +108,9 @@ def create_optimized_session() -> requests.Session:
 
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
+
+# Module-level lock for thread-safe counter updates in parallel fetchers
+_COUNTER_LOCK = threading.Lock()
 
 
 class DomainConcurrencyLimiter:
@@ -328,7 +349,7 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]
@@ -859,17 +880,19 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
 
     # Use ThreadPoolExecutor for parallel execution
     # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
-    with ThreadPoolExecutor(max_workers=25) as executor:
+    with ThreadPoolExecutor(max_workers=DEFAULT_JOBSPY_WORKERS) as executor:
         # Submit all tasks
         future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
 
         # Process results as they complete
         for future in as_completed(future_to_task):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             result = future.result()
 
             if result['error']:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
             elif result['count'] > 0:
                 all_jobs.extend(result['jobs'])
@@ -932,9 +955,9 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     completed = 0
     errors = 0
 
-    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
+    # AUTO-SCALE: Use 1 worker per 3 companies, min 30, max 300 for 1000+ companies
     if max_workers is None:
-        max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
+        max_workers = min(DEFAULT_GREENHOUSE_MAX_WORKERS, max(DEFAULT_GREENHOUSE_MIN_WORKERS, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
@@ -945,13 +968,15 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -970,7 +995,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
+        max_workers = min(DEFAULT_LEVER_MAX_WORKERS, max(DEFAULT_LEVER_MIN_WORKERS, total))  # AGGRESSIVE: 15-200 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
@@ -981,13 +1006,15 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -1001,9 +1028,9 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
     completed = 0
     errors = 0
 
-    # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
+    # AUTO-SCALE: Use 5 workers per search term (they're fast API calls), min 12, max 100
     if max_workers is None:
-        max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
+        max_workers = min(DEFAULT_GOOGLE_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
 
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
 
@@ -1222,6 +1249,16 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         print(f"Error parsing date {posted_at}: {e}")
         return False
 
+def _location_matches(location_lower: str, term: str) -> bool:
+    """Match a location term using word boundaries for short terms (<=3 chars)
+    to prevent false positives like 'al' matching 'Montreal' or 'in' matching 'Berlin'.
+    Longer terms use fast substring matching since they are unambiguous.
+    """
+    if len(term) <= 3:
+        return bool(re.search(r'\b' + re.escape(term) + r'\b', location_lower))
+    return term in location_lower
+
+
 def is_valid_location(location: str) -> bool:
     """Check if job location is in target countries (USA, Canada, India) or Remote"""
     if not location:
@@ -1290,30 +1327,14 @@ def is_valid_location(location: str) -> bool:
         'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
     ]
 
-    # Check for USA indicators
-    for indicator in usa_indicators:
-        if indicator in location_lower:
-            return True
+    # All indicator lists to check
+    all_indicators = [usa_indicators, usa_states, usa_cities,
+                      canada_indicators, india_indicators]
 
-    # Check for USA states
-    for state in usa_states:
-        if state in location_lower:
-            return True
-
-    # Check for USA cities
-    for city in usa_cities:
-        if city in location_lower:
-            return True
-
-    # Check for Canada indicators
-    for indicator in canada_indicators:
-        if indicator in location_lower:
-            return True
-
-    # Check for India indicators
-    for indicator in india_indicators:
-        if indicator in location_lower:
-            return True
+    for indicator_list in all_indicators:
+        for term in indicator_list:
+            if _location_matches(location_lower, term):
+                return True
 
     # If we can't determine, default to False to be safe
     return False
@@ -1349,10 +1370,12 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         has_track = has_track_signal(title, filters['track_signals'])
 
         # Strong new grad signals that don't need additional track signals
+        # P4: Generic role titles removed — they belong in track_signals only.
+        # Without a co-occurring new-grad keyword, "Software Engineer" alone
+        # should not bypass the track-signal requirement.
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad",
             "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
-            "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
         has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
 
@@ -1456,19 +1479,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
 
     # Sort jobs by date
-    def get_sort_date(job):
-        posted_at = job.get('posted_at')
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                return date_parser.parse(posted_at).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Build JSON structure
     json_jobs = []
@@ -1754,20 +1765,30 @@ Respond in JSON format:
 
                 predictions = json.loads(content)
 
-                # Add metadata
-                predictions['generated_at'] = datetime.now().isoformat()
-                predictions['data_points'] = len(snapshots)
-                predictions['date_range'] = {
-                    'start': snapshots[0]['date'],
-                    'end': snapshots[-1]['date']
-                }
+                # S6: Validate required keys before trusting LLM output
+                required_keys = {'outlook', 'predictions', 'confidence', 'insights'}
+                missing = required_keys - set(predictions.keys())
+                if missing:
+                    print(f"  ⚠️  Gemini response missing keys {missing} — skipping prediction update")
+                elif predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
+                    print(f"  ⚠️  Invalid outlook value '{predictions.get('outlook')}' — skipping prediction update")
+                elif not isinstance(predictions.get('confidence'), (int, float)):
+                    print(f"  ⚠️  Invalid confidence type — skipping prediction update")
+                else:
+                    # Add metadata
+                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['data_points'] = len(snapshots)
+                    predictions['date_range'] = {
+                        'start': snapshots[0]['date'],
+                        'end': snapshots[-1]['date']
+                    }
 
-                # Save predictions
-                predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
-                with open(predictions_path, 'w', encoding='utf-8') as f:
-                    json.dump(predictions, f, indent=2, ensure_ascii=False)
+                    # Save predictions
+                    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+                    with open(predictions_path, 'w', encoding='utf-8') as f:
+                        json.dump(predictions, f, indent=2, ensure_ascii=False)
 
-                print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                    print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
                 print("  ⚠️  No predictions in Gemini response")
 
@@ -1779,24 +1800,23 @@ Respond in JSON format:
         print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 
+def extract_sort_date(job: Dict[str, Any]) -> datetime:
+    """Extract and parse posted_at for sorting."""
+    posted_at = job.get('posted_at')
+    if not posted_at:
+        return datetime.min
+    try:
+        if isinstance(posted_at, (int, float)):
+            return datetime.fromtimestamp(posted_at / 1000)
+        return date_parser.parse(posted_at).replace(tzinfo=None)
+    except Exception:
+        return datetime.min
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
 
     # Sort jobs by posted date (most recent first)
-    def get_sort_date(job):
-        posted_at = job['posted_at']
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                parsed_date = date_parser.parse(posted_at)
-                return parsed_date.replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Calculate category counts
     category_counts = {}
@@ -1974,6 +1994,140 @@ Found a job we're missing? Want to report a closed position?
 
     return readme_content
 
+
+def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
+    """Generate an RSS 2.0 feed from the most recent jobs.
+
+    Writes docs/feed.xml so users can subscribe via any feed reader.
+    Zero-cost, zero-infra solution for job alerts.
+    """
+    feed_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'feed.xml')
+
+    # Sort by date descending, take top N
+    jobs.sort(key=extract_sort_date, reverse=True)
+    sorted_jobs = jobs[:max_items]
+
+    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+    items = []
+    for job in sorted_jobs:
+        company = job.get('company', 'Unknown')
+        title = job.get('title', 'Unknown')
+        url = job.get('url', '')
+        location = job.get('location', 'Remote')
+        category = job.get('category', {}).get('name', 'General')
+        posted_at_dt = extract_sort_date(job)
+        pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
+
+        items.append(f"""    <item>
+      <title>{xml_escape(title)} at {xml_escape(company)}</title>
+      <link>{xml_escape(url)}</link>
+      <description>New grad role at {xml_escape(company)} in {xml_escape(location)}. Category: {xml_escape(category)}</description>
+      <pubDate>{pubDate}</pubDate>
+      <guid isPermaLink="true">{xml_escape(url)}</guid>
+    </item>""")
+
+    rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Grad Jobs</title>
+    <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
+    <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
+    <language>en-us</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+    <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+
+    try:
+        os.makedirs(os.path.dirname(feed_path), exist_ok=True)
+        with open(feed_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
+        print(f"📡 RSS feed generated with {len(sorted_jobs)} items → docs/feed.xml")
+    except Exception as e:
+        print(f"⚠️  Failed to write RSS feed: {e}")
+
+
+def generate_health_json(jobs: List[Dict[str, Any]],
+                         source_counts: Dict[str, int],
+                         start_time: float) -> None:
+    """Generate docs/health.json for monitoring and staleness detection.
+
+    Status values:
+      - ok: all sources returned jobs and total > 0
+      - degraded: at least one source returned 0 jobs
+      - failed: total job count is 0
+    """
+    health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
+
+    total_jobs = len(jobs)
+    zero_sources = [s for s, c in source_counts.items() if c == 0]
+
+    if total_jobs == 0:
+        status = 'failed'
+    elif zero_sources:
+        status = 'degraded'
+    else:
+        status = 'ok'
+
+    health = {
+        'status': status,
+        'last_run': datetime.utcnow().isoformat() + 'Z',
+        'total_jobs': total_jobs,
+        'source_counts': source_counts,
+        'zero_sources': zero_sources,
+        'run_duration_seconds': round(time.time() - start_time, 1),
+    }
+
+    try:
+        os.makedirs(os.path.dirname(health_path), exist_ok=True)
+        with open(health_path, 'w', encoding='utf-8') as f:
+            json.dump(health, f, indent=2)
+        print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
+    except Exception as e:
+        print(f"⚠️  Failed to write health.json: {e}")
+
+
+def check_job_url_health(jobs: List[Dict[str, Any]],
+                          sample_pct: float = 0.05,
+                          max_checks: int = 50) -> None:
+    """HEAD-request a random sample of job URLs to detect dead links.
+
+    Updates each sampled job in-place with `url_verified` (bool).
+    Best-effort — failures are logged but never block the pipeline.
+    """
+    sample_size = min(max_checks, max(1, int(len(jobs) * sample_pct)))
+    sample = random.sample(jobs, min(sample_size, len(jobs)))
+    verified = 0
+    dead = 0
+
+    for job in sample:
+        url = job.get('url', '')
+        if not url or not url.startswith('http'):
+            continue
+
+        try:
+            parsed = urlparse(url)
+            hostname = parsed.hostname or ''
+            if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
+                continue
+
+            resp = HTTP_SESSION.head(url, timeout=4, allow_redirects=True)
+            if resp.status_code < 400:
+                job['url_verified'] = True
+                verified += 1
+            else:
+                job['url_verified'] = False
+                dead += 1
+        except Exception:
+            job['url_verified'] = False
+            dead += 1
+
+    print(f"🔍 URL health check: {verified} verified, {dead} dead/unreachable out of {sample_size} sampled")
+
+
 def main():
     """Main function to scrape jobs and update README
 
@@ -1989,6 +2143,29 @@ def main():
     # Load configuration
     config = load_config()
 
+    # Load worker pool configurations from config.yml with fallbacks
+    global DEFAULT_GREENHOUSE_MIN_WORKERS, DEFAULT_GREENHOUSE_MAX_WORKERS
+    global DEFAULT_LEVER_MIN_WORKERS, DEFAULT_LEVER_MAX_WORKERS
+    global DEFAULT_GOOGLE_MIN_WORKERS, DEFAULT_GOOGLE_MAX_WORKERS
+    global DEFAULT_JOBSPY_WORKERS, DEFAULT_ORCHESTRATOR_WORKERS
+
+    pools = config.get('worker_pools', {})
+    DEFAULT_GREENHOUSE_MIN_WORKERS = pools.get('greenhouse_min_workers', DEFAULT_GREENHOUSE_MIN_WORKERS)
+    DEFAULT_GREENHOUSE_MAX_WORKERS = pools.get('greenhouse_max_workers', DEFAULT_GREENHOUSE_MAX_WORKERS)
+    DEFAULT_LEVER_MIN_WORKERS = pools.get('lever_min_workers', DEFAULT_LEVER_MIN_WORKERS)
+    DEFAULT_LEVER_MAX_WORKERS = pools.get('lever_max_workers', DEFAULT_LEVER_MAX_WORKERS)
+    DEFAULT_GOOGLE_MIN_WORKERS = pools.get('google_min_workers', DEFAULT_GOOGLE_MIN_WORKERS)
+    DEFAULT_GOOGLE_MAX_WORKERS = pools.get('google_max_workers', DEFAULT_GOOGLE_MAX_WORKERS)
+    DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
+    DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
+
+    print(f"   Worker pools configured:")
+    print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
+    print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
+    print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
+    print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
+    print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
+
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
@@ -1999,8 +2176,7 @@ def main():
     print(f"   Lever: {lever_count} companies")
     print(f"   Workday: {workday_count} companies")
     print(f"   TOTAL: {total_companies} companies")
-    if total_companies < 10000:
-        print(f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
+    # P6: Removed stale 10K company warning — config has ~200 companies by design.
     print("="  * 60)
 
     # Collect all jobs using parallel fetchers
@@ -2010,8 +2186,8 @@ def main():
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
 
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
-    # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
-    with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
+    # Increased to 20 workers (DEFAULT_ORCHESTRATOR_WORKERS) to handle all sources at maximum parallelism for 1000+ companies
+    with ThreadPoolExecutor(max_workers=DEFAULT_ORCHESTRATOR_WORKERS) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
 
         # Submit Greenhouse parallel fetch
@@ -2028,8 +2204,10 @@ def main():
                 config['apis']['lever']['companies']
             )
 
-        # Submit Google parallel fetch
-        if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
+        # Submit Google parallel fetch (P5: gated on enabled flag)
+        if ('google' in config['apis']
+                and config['apis']['google'].get('enabled', True)
+                and config['apis']['google'].get('search_terms')):
             futures['google'] = executor.submit(
                 fetch_google_jobs_parallel,
                 config['apis']['google']['search_terms']
@@ -2050,12 +2228,15 @@ def main():
             )
 
         # Collect results from all futures
+        source_counts = {}  # C1: Track per-source job counts for health.json
         for source, future in futures.items():
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
+                source_counts[source] = len(jobs)
                 print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
             except Exception as e:
+                source_counts[source] = 0
                 print(f"  ❌ {source.upper()} failed: {e}")
 
     # Fetch from third-party scraping APIs (if configured) - these are usually disabled
@@ -2090,6 +2271,9 @@ def main():
     # Enrich jobs with categorization and flags
     enriched_jobs = enrich_jobs(filtered_jobs)
     print(f"   Jobs enriched with categories and flags")
+
+    # C3: Check a sample of job URLs for dead links
+    check_job_url_health(enriched_jobs)
 
     # Generate JSON data
     # Sanitize jobs to remove NaN values
@@ -2139,6 +2323,12 @@ def main():
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)
+
+    # ========== Generate RSS Feed ==========
+    generate_rss_feed(enriched_jobs)
+
+    # ========== Generate Health Report ==========
+    generate_health_json(enriched_jobs, source_counts, start_time)
 
     # Report execution time
     elapsed = time.time() - start_time
