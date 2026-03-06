@@ -16,6 +16,7 @@ Performance Optimizations:
 import json
 import math
 import os
+import random
 import re
 import sys
 import threading
@@ -28,7 +29,6 @@ from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
 from xml.sax.saxutils import escape as xml_escape
-import random
 
 import requests
 import yaml
@@ -2107,9 +2107,9 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
         url = job.get('url', '')
         if not url or not url.startswith('http'):
             continue
-            
+
         try:
-            parsed = urllib.parse.urlparse(url)
+            parsed = urlparse(url)
             hostname = parsed.hostname or ''
             if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
                 continue
