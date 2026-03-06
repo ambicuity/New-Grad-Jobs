@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T15:56:35.361264",
+    "last_updated": "2026-03-06T16:09:01.132737",
     "total_snapshots": 2,
     "date_range": {
       "start": "2026-03-05",
@@ -65,12 +65,12 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1232,
+      "total_jobs": 1236,
       "categories": {},
       "tiers": {
+        "other": 379,
         "unicorn": 692,
-        "faang_plus": 163,
-        "other": 377
+        "faang_plus": 165
       },
       "top_companies": [
         {
@@ -110,13 +110,13 @@
           "jobs": 20
         },
         {
-          "company": "Stripe",
-          "jobs": 19
+          "company": "Boeing",
+          "jobs": 20
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 5.68,
-      "timestamp": "2026-03-06T15:56:35.361054"
+      "unique_companies": 219,
+      "avg_jobs_per_company": 5.64,
+      "timestamp": "2026-03-06T16:09:01.132568"
     }
   ]
 }
