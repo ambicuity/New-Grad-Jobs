@@ -46,11 +46,20 @@ jobs:
           cd scripts
           python update_jobs.py
 
+      - name: Sanity check — verify job output is non-empty
+        run: |
+          JOB_COUNT=$(python -c "import json; data=json.load(open('docs/jobs.json')); print(data['meta']['total_jobs'])")
+          echo "Job count: $JOB_COUNT"
+          if [ "$JOB_COUNT" -eq 0 ]; then
+            echo "::error::Sanity check failed: jobs.json contains 0 jobs. Aborting commit."
+            exit 1
+          fi
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md docs/jobs.json docs/market-history.json
+          git add README.md docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml docs/predictions.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

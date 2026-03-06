@@ -581,8 +581,7 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/ridewithvia/jobs"
         
       # --- Crypto & Web3 ---
-      - name: "Coinbase"
-        url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
+      # S7: Coinbase entry removed — duplicate of line 144
       - name: "Kraken"
         url: "https://boards-api.greenhouse.io/v1/boards/kraken/jobs"
       - name: "Alchemy"
@@ -642,6 +641,9 @@ apis:
       # Many other companies have moved away from Lever API
 
   google:
+    # P5: Google Careers API deprecated (returns 404 since late 2025).
+    # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.
+    enabled: false
     # Google careers API - searches for new grad positions
     search_terms:
       - "new graduate software engineer"
