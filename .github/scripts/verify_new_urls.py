@@ -94,8 +94,11 @@ def main():
         print("\n" + "="*50)
         print("🚨 URL VERIFICATION FAILED 🚨")
         print("="*50)
-        for url, info in failures:
-            print(f"- {url} : {info}")
+        with open(".url_failures", "w") as f:
+            for url, info in failures:
+                msg = f"- {url} ({info})"
+                print(msg)
+                f.write(msg + "\n")
         print("\nPlease fix or remove these URLs before merging.")
         return 1
         
