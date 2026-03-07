@@ -200,6 +200,11 @@ class TestDetectSponsorshipFlags:
         assert result["no_sponsorship"] is False
         assert result["us_citizenship_required"] is False
 
+    def test_empty_description_only(self) -> None:
+        result = detect_sponsorship_flags("Software Engineer", "")
+        assert result["no_sponsorship"] is False
+        assert result["us_citizenship_required"] is False
+
 
 def test_categorize_cybersecurity_engineer():
     result = categorize_job("Cybersecurity Engineer")
