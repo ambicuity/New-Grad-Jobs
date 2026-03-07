@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-07T00:55:54.836191",
+    "last_updated": "2026-03-07T03:16:48.496101",
     "total_snapshots": 3,
     "date_range": {
       "start": "2026-03-05",
@@ -120,17 +120,21 @@
     },
     {
       "date": "2026-03-07",
-      "total_jobs": 1100,
+      "total_jobs": 1228,
       "categories": {},
       "tiers": {
-        "unicorn": 544,
-        "faang_plus": 156,
-        "other": 400
+        "unicorn": 668,
+        "faang_plus": 155,
+        "other": 405
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 146
+          "jobs": 147
+        },
+        {
+          "company": "Anduril",
+          "jobs": 124
         },
         {
           "company": "Waymo",
@@ -163,15 +167,11 @@
         {
           "company": "Opendoor",
           "jobs": 18
-        },
-        {
-          "company": "Stripe",
-          "jobs": 17
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 4.76,
-      "timestamp": "2026-03-07T00:55:54.836057"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 5.39,
+      "timestamp": "2026-03-07T03:16:48.495917"
     }
   ]
 }
