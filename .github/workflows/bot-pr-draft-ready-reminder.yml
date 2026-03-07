@@ -6,16 +6,16 @@ on:
     - cron: '0 10 * * 2'
   workflow_dispatch:
 
-permissions:
-  pull-requests: write
-
+permissions: read-all
 jobs:
   draft-reminder:
     name: Remind Draft PR Authors to Publish
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Check draft PRs for age and remind
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

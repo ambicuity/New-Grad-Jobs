@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Grad Jobs</title>
+    <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
+    <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2026 23:23:32 +0000</lastBuildDate>
+    <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Rapid Integration and Test at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4637573007?gh_jid=4637573007</link>
+      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 18:17:56 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4637573007?gh_jid=4637573007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Vehicle Management Systems  at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4956802007?gh_jid=4956802007</link>
+      <description>New grad role at Anduril in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 18:16:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4956802007?gh_jid=4956802007</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7539786</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 17:15:05 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7539786</guid>
+    </item>
+    <item>
+      <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 17:14:49 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7467839</guid>
+    </item>
+    <item>
+      <title>Associate Support Engineer (AMER - PST / MST) at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8231973002</link>
+      <description>New grad role at GitLab in Remote, US. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8231973002</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8242652002</link>
+      <description>New grad role at GitLab in Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8242652002</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8358825002</link>
+      <description>New grad role at GitLab in Remote, Americas; Remote, EMEA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 16:19:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8358825002</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Rocket Motor Systems at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007</link>
+      <description>New grad role at Anduril in Huntsville, Alabama, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 16:07:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5016223007?gh_jid=5016223007</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 15:35:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8446263002?gh_jid=8446263002</guid>
+    </item>
+    <item>
+      <title>RF Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 15:34:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at LaunchDarkly</title>
+      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</link>
+      <description>New grad role at LaunchDarkly in Remote - US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 15:22:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7655955003</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 15:02:54 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</guid>
+    </item>
+    <item>
+      <title>Software Engineer, QA at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7615452?gh_jid=7615452</link>
+      <description>New grad role at Unity Technologies in Remote, Washington, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 15:00:01 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7615452?gh_jid=7615452</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
+      <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:44 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
+      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:40 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
+    </item>
+    <item>
+      <title>Security Engineer, New Grad  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
+      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:39 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
+      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:39 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:31 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
+      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:31 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
+    </item>
+    <item>
+      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
+      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:30 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:28 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:37:27 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Twitch Chat at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8447271002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:08:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8447271002</guid>
+    </item>
+    <item>
+      <title> Software Engineer, Full-Stack at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/7308798</link>
+      <description>New grad role at Grammarly in NA; Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:07:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7308798</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 14:03:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</guid>
+    </item>
+    <item>
+      <title>Mission Software Engineer at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</link>
+      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 13:57:21 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer, Intelligence Systems at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5066769007?gh_jid=5066769007</link>
+      <description>New grad role at Anduril in Reston, Virginia, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 13:42:48 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5066769007?gh_jid=5066769007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Enterprise AI Products at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4941996008</link>
+      <description>New grad role at Anthropic in New York City, NY; San Francisco, CA | New York City, NY. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 13:41:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4941996008</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Frontend  at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643068006</link>
+      <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 13:09:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643068006</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
+      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 12:30:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5066028008</link>
+      <description>New grad role at Scopely in US - Culver City, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 12:02:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5066028008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Maritime at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5051550007?gh_jid=5051550007</link>
+      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 11:59:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5051550007?gh_jid=5051550007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Maritime at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</link>
+      <description>New grad role at Anduril in Quincy, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 11:59:38 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</guid>
+    </item>
+    <item>
+      <title>Propulsion Test Infrastructure Engineer at Anduril</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5030310007?gh_jid=5030310007</link>
+      <description>New grad role at Anduril in Santa Ana, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:48:26 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5030310007?gh_jid=5030310007</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8379277002?gh_jid=8379277002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 11:41:20 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8379277002?gh_jid=8379277002</guid>
+    </item>
+    <item>
+      <title>Software Engineer at SoFi</title>
+      <link>https://sofi.com/careers/job/7655735003?gh_jid=7655735003</link>
+      <description>New grad role at SoFi in UT - Cottonwood Heights ; UT - Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 11:27:42 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7655735003?gh_jid=7655735003</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
+      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</link>
+      <description>New grad role at Wiz in Remote - Netherlands. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</link>
+      <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
+      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</link>
+      <description>New grad role at Wiz in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</guid>
+    </item>
+    <item>
+      <title>Security Engineer II - SaaS Applications at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4650182006/:title?gh_jid=4650182006</link>
+      <description>New grad role at Wiz in Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:00:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4650182006/:title?gh_jid=4650182006</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4421449006/:title?gh_jid=4421449006</link>
+      <description>New grad role at Wiz in Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 11:00:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4421449006/:title?gh_jid=4421449006</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L3) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
+      <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 10:36:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 10:35:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
+    </item>
+    <item>
+      <title>Cloud Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 10:34:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
+    </item>
+    <item>
+      <title>Associate Application Engineer, Finance  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7594444</link>
+      <description>New grad role at Twilio in Remote - India. Category: Other</description>
+      <pubDate>Fri, 06 Mar 2026 10:30:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7594444</guid>
+    </item>
+    <item>
+      <title>Analytics Data Engineer at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4956672008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Data Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4956672008</guid>
+    </item>
+    <item>
+      <title>Application Security Engineer at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4502508008</link>
+      <description>New grad role at Anthropic in Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 06 Mar 2026 09:54:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4502508008</guid>
+    </item>
+  </channel>
+</rss>

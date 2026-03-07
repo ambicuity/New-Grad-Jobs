@@ -6,16 +6,16 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-permissions:
-  issues: write
-
+permissions: read-all
 jobs:
   manage-assignees:
     name: Check Inactivity and Manage Assignees
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Ping inactive assignees and auto-unassign
-        uses: actions/github-script@v8
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

@@ -5,6 +5,7 @@ on:
     # Every 20 minutes
     - cron: '*/20 * * * *'
   workflow_dispatch:
+permissions: read-all
 
 jobs:
   watchdog:

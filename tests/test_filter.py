@@ -111,6 +111,14 @@ class TestFilterJobsKeywords:
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
+    def test_generic_swe_without_new_grad_keyword_excluded(self):
+        """P4: 'Software Engineer' alone should no longer bypass the new-grad check.
+        It was removed from strong_new_grad_signals to reduce false positives.
+        """
+        jobs = [_make_job(title="Software Engineer")]
+        result = filter_jobs(jobs, _default_config())
+        assert len(result) == 0
+
 
 class TestFilterJobsDeduplication:
     """Duplicate URLs should only appear once."""

@@ -50,6 +50,37 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ArvinFarrelP",
+      "name": "ArvinFarrelP",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99516005?v=4",
+      "profile": "https://github.com/ArvinFarrelP",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "vbhavh",
+      "name": "Vaibhav Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95634443?v=4",
+      "profile": "https://github.com/vbhavh",
+      "contributions": [
+        "code",
+        "test",
+        "ideas"
+      ]
+    },
+    {
+      "login": "madhavgairola",
+      "name": "mdhv",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214257149?v=4",
+      "profile": "https://github.com/madhavgairola",
+      "contributions": [
+        "doc",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7

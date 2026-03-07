@@ -4,18 +4,19 @@ on:
   schedule:
     - cron: '0 0 * * 0' # Run every Sunday at midnight
   workflow_dispatch:
+permissions: read-all
 
 jobs:
   lychee:
     name: Check Dead Links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Link Checker
         id: lychee
         continue-on-error: true
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
         with:
           args: >-
             --verbose --no-progress
@@ -28,7 +29,7 @@ jobs:
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != '0' && github.event_name != 'pull_request'
-        uses: peter-evans/create-issue-from-file@v6
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6
         with:
           title: Link Checker Report
           content-filepath: ./lychee/out.md
