@@ -81,6 +81,17 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "kellyn-astro",
+      "name": "kellyn-astro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/266200304?v=4",
+      "profile": "https://github.com/kellyn-astro",
+      "contributions": [
+        "code",
+        "test",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

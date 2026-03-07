@@ -16,6 +16,9 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vbhavh"><img src="https://avatars.githubusercontent.com/u/95634443?v=4?s=100" width="100px;" alt="Vaibhav Singh"/><br /><sub><b>Vaibhav Singh</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=vbhavh" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=vbhavh" title="Tests">⚠️</a> <a href="#ideas-vbhavh" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/madhavgairola"><img src="https://avatars.githubusercontent.com/u/214257149?v=4?s=100" width="100px;" alt="mdhv"/><br /><sub><b>mdhv</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=madhavgairola" title="Documentation">📖</a> <a href="#design-madhavgairola" title="Design">🎨</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kellyn-astro"><img src="https://avatars.githubusercontent.com/u/266200304?v=4?s=100" width="100px;" alt="kellyn-astro"/><br /><sub><b>kellyn-astro</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Tests">⚠️</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
