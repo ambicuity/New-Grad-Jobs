@@ -18,6 +18,7 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kellyn-astro"><img src="https://avatars.githubusercontent.com/u/266200304?v=4?s=100" width="100px;" alt="kellyn-astro"/><br /><sub><b>kellyn-astro</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Tests">⚠️</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=kellyn-astro" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://p-r-e-m-i-u-m.github.io/AmanGenAI/"><img src="https://avatars.githubusercontent.com/u/233445760?v=4?s=100" width="100px;" alt="🄂ʏᴇᴅ 🄰ʙᴅᴜʟ 🄰ᴍᴀ🄝 ✧"/><br /><sub><b>🄂ʏᴇᴅ 🄰ʙᴅᴜʟ 🄰ᴍᴀ🄝 ✧</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=P-r-e-m-i-u-m" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=P-r-e-m-i-u-m" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
