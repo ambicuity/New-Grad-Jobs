@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 07:57:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 08:40:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7642536?gh_jid=7642536</link>
+      <description>New grad role at Coinbase in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Sat, 07 Mar 2026 03:30:11 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7642536?gh_jid=7642536</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Developer (Wallets and Onchain Tools)  at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</link>
+      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Sat, 07 Mar 2026 03:16:37 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</guid>
+    </item>
     <item>
       <title>Inside Sales Representative - Early Career (2026) at Figma</title>
       <link>https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004</link>
@@ -37,10 +51,10 @@
     </item>
     <item>
       <title>Oracle Fusion Software Developer at Anduril</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</link>
-      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5061446007?gh_jid=5061446007</link>
+      <description>New grad role at Anduril in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 19:58:48 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5061446007?gh_jid=5061446007</guid>
     </item>
     <item>
       <title>Oracle Fusion Software Developer at Anduril</title>
@@ -58,10 +72,10 @@
     </item>
     <item>
       <title>Oracle Fusion Software Developer at Anduril</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5061446007?gh_jid=5061446007</link>
-      <description>New grad role at Anduril in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</link>
+      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 19:58:48 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5061446007?gh_jid=5061446007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</guid>
     </item>
     <item>
       <title>Systems Engineer, Omen at Anduril</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 18:24:00 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7450565</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Device Infrastructure at Anduril</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5006927007?gh_jid=5006927007</link>
-      <description>New grad role at Anduril in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 18:22:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5006927007?gh_jid=5006927007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Device Infrastructure at Anduril</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4775866007?gh_jid=4775866007</link>
-      <description>New grad role at Anduril in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 18:22:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4775866007?gh_jid=4775866007</guid>
     </item>
   </channel>
 </rss>
