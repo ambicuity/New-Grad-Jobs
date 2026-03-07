@@ -11,7 +11,7 @@ else
     PYTHON := python3
     VENV := .venv
     VENV_PYTHON := $(VENV)/bin/$(PYTHON)
-    VENV_PIP := $(VENV)/bin/$(PIP)
+    VENV_PIP := $(VENV)/bin/pip
 endif
 
 
