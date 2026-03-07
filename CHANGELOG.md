@@ -53,6 +53,7 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Added
 
+- add sponsorship-flag regression test for non-empty title with empty description
 - `CONTRIBUTING.md` rewritten with full dev-environment setup, Conventional Commits guide, and ASCII architecture diagram
 - `CODE_OF_CONDUCT.md` — Contributor Covenant v2.1
 - `SECURITY.md` — private vulnerability disclosure policy with supported-versions table
