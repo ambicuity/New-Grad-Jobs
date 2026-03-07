@@ -148,7 +148,7 @@ apis:
       - name: "Algolia"
         url: "https://boards-api.greenhouse.io/v1/boards/algolia/jobs"
       - name: "Amplitude"
-        url: "https://boards-api.greenhouse.io/v1/boards/calendly/jobs"
+        url: "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs"
       - name: "Calm"
         url: "https://boards-api.greenhouse.io/v1/boards/calm/jobs"
       - name: "Carta"
