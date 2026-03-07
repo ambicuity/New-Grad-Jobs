@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-07T17:45:13.649045",
+    "last_updated": "2026-03-07T18:01:14.482884",
     "total_snapshots": 3,
     "date_range": {
       "start": "2026-03-05",
@@ -120,12 +120,12 @@
     },
     {
       "date": "2026-03-07",
-      "total_jobs": 1204,
+      "total_jobs": 1023,
       "categories": {},
       "tiers": {
-        "unicorn": 669,
+        "unicorn": 493,
         "faang_plus": 153,
-        "other": 382
+        "other": 377
       },
       "top_companies": [
         {
@@ -133,16 +133,8 @@
           "jobs": 147
         },
         {
-          "company": "Anduril",
-          "jobs": 124
-        },
-        {
           "company": "Waymo",
           "jobs": 68
-        },
-        {
-          "company": "Anthropic",
-          "jobs": 41
         },
         {
           "company": "Northrop Grumman",
@@ -167,11 +159,19 @@
         {
           "company": "Opendoor",
           "jobs": 18
+        },
+        {
+          "company": "Stripe",
+          "jobs": 17
+        },
+        {
+          "company": "Nuro",
+          "jobs": 17
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 5.38,
-      "timestamp": "2026-03-07T17:45:13.648862"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.69,
+      "timestamp": "2026-03-07T18:01:14.482693"
     }
   ]
 }
