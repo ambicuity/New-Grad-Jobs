@@ -133,7 +133,6 @@ filtering:
     - "internship"
 apis:
   greenhouse:
-    # Greenhouse job board API endpoints for major tech companies
     companies:
       # Original working companies
       - name: "Airbnb"
@@ -148,8 +147,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
       - name: "Block (Square)"
         url: "https://boards-api.greenhouse.io/v1/boards/block/jobs"
-
-      # Additional working companies discovered
       - name: "Dropbox"
         url: "https://boards-api.greenhouse.io/v1/boards/dropbox/jobs"
       - name: "Twilio"
@@ -170,10 +167,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/mongodb/jobs"
       - name: "Elastic"
         url: "https://boards-api.greenhouse.io/v1/boards/elastic/jobs"
-      - name: "HashiCorp"
-        url: "https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs"
-
-      # Even more companies discovered in second round
       - name: "Asana"
         url: "https://boards-api.greenhouse.io/v1/boards/asana/jobs"
       - name: "Okta"
@@ -198,8 +191,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/postman/jobs"
       - name: "Vercel"
         url: "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
-
-      # Third round: Major tech and startup companies
       - name: "Figma"
         url: "https://boards-api.greenhouse.io/v1/boards/figma/jobs"
       - name: "Airtable"
@@ -218,8 +209,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/waymo/jobs"
       - name: "Gemini"
         url: "https://boards-api.greenhouse.io/v1/boards/gemini/jobs"
-
-      # Fourth round: Fintech companies
       - name: "Brex"
         url: "https://boards-api.greenhouse.io/v1/boards/brex/jobs"
       - name: "Chime"
@@ -236,14 +225,10 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
       - name: "Twitch"
         url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
-
-      # Additional working companies
       - name: "Scale AI"
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Retool"
         url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
-
-      # Fifth round: Additional verified tech companies (2024)
       - name: "Unity Technologies"
         url: "https://boards-api.greenhouse.io/v1/boards/unity3d/jobs"
       - name: "Peloton"
@@ -276,8 +261,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/magicleap/jobs"
       - name: "Samsara"
         url: "https://boards-api.greenhouse.io/v1/boards/samsara/jobs"
-      - name: "Benchling"
-        url: "https://boards-api.greenhouse.io/v1/boards/benchling/jobs"
       - name: "Checkr"
         url: "https://boards-api.greenhouse.io/v1/boards/checkr/jobs"
       - name: "Flexport"
@@ -286,62 +269,10 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/bird/jobs"
       - name: "Calm"
         url: "https://boards-api.greenhouse.io/v1/boards/calm/jobs"
-
-      # ============================================
-      # EXPANSION: 130+ Additional Greenhouse Companies
-      # ============================================
-
-      # --- AI/ML Companies ---
-      - name: "OpenAI"
-        url: "https://boards-api.greenhouse.io/v1/boards/openai/jobs"
-      - name: "Hugging Face"
-        url: "https://boards-api.greenhouse.io/v1/boards/huggingface/jobs"
-      - name: "Cohere"
-        url: "https://boards-api.greenhouse.io/v1/boards/cohere/jobs"
       - name: "Stability AI"
         url: "https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs"
       - name: "Runway"
         url: "https://boards-api.greenhouse.io/v1/boards/runwayml/jobs"
-      - name: "Midjourney"
-        url: "https://boards-api.greenhouse.io/v1/boards/midjourney/jobs"
-      - name: "Weights & Biases"
-        url: "https://boards-api.greenhouse.io/v1/boards/wandb/jobs"
-      - name: "Anyscale"
-        url: "https://boards-api.greenhouse.io/v1/boards/anyscale/jobs"
-      - name: "Deepgram"
-        url: "https://boards-api.greenhouse.io/v1/boards/deepgram/jobs"
-      - name: "Character AI"
-        url: "https://boards-api.greenhouse.io/v1/boards/character/jobs"
-      - name: "Perplexity"
-        url: "https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs"
-      - name: "Adept AI"
-        url: "https://boards-api.greenhouse.io/v1/boards/adept/jobs"
-      - name: "Mosaic ML"
-        url: "https://boards-api.greenhouse.io/v1/boards/mosaicml/jobs"
-      - name: "Inflection AI"
-        url: "https://boards-api.greenhouse.io/v1/boards/inflection/jobs"
-
-      # --- Developer Tools & Infrastructure ---
-      - name: "Supabase"
-        url: "https://boards-api.greenhouse.io/v1/boards/supabase/jobs"
-      - name: "Railway"
-        url: "https://boards-api.greenhouse.io/v1/boards/railway/jobs"
-      - name: "Render"
-        url: "https://boards-api.greenhouse.io/v1/boards/render/jobs"
-      - name: "Fly.io"
-        url: "https://boards-api.greenhouse.io/v1/boards/flyio/jobs"
-      - name: "Netlify"
-        url: "https://boards-api.greenhouse.io/v1/boards/netlify/jobs"
-      - name: "Cloudinary"
-        url: "https://boards-api.greenhouse.io/v1/boards/cloudinary/jobs"
-      - name: "Auth0"
-        url: "https://boards-api.greenhouse.io/v1/boards/auth0/jobs"
-      - name: "Snyk"
-        url: "https://boards-api.greenhouse.io/v1/boards/snyk/jobs"
-      - name: "Sentry"
-        url: "https://boards-api.greenhouse.io/v1/boards/sentry/jobs"
-      - name: "Segment"
-        url: "https://boards-api.greenhouse.io/v1/boards/segment/jobs"
       - name: "Grafana Labs"
         url: "https://boards-api.greenhouse.io/v1/boards/grafanalabs/jobs"
       - name: "Chronosphere"
@@ -354,32 +285,10 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/pulumi/jobs"
       - name: "Temporal"
         url: "https://boards-api.greenhouse.io/v1/boards/temporal/jobs"
-      - name: "Prisma"
-        url: "https://boards-api.greenhouse.io/v1/boards/prisma/jobs"
-      - name: "Cypress"
-        url: "https://boards-api.greenhouse.io/v1/boards/cypress/jobs"
-      - name: "Sourcegraph"
-        url: "https://boards-api.greenhouse.io/v1/boards/sourcegraph/jobs"
-      - name: "Gitpod"
-        url: "https://boards-api.greenhouse.io/v1/boards/gitpod/jobs"
-      - name: "Replit"
-        url: "https://boards-api.greenhouse.io/v1/boards/replit/jobs"
-      - name: "Deno"
-        url: "https://boards-api.greenhouse.io/v1/boards/deno/jobs"
-      - name: "Bun"
-        url: "https://boards-api.greenhouse.io/v1/boards/oven/jobs"
-
-      # --- Cloud & Data Infrastructure ---
-      - name: "Snowflake"
-        url: "https://boards-api.greenhouse.io/v1/boards/snowflake/jobs"
-      - name: "Confluent"
-        url: "https://boards-api.greenhouse.io/v1/boards/confluent/jobs"
-      - name: "Fivetran"
-        url: "https://boards-api.greenhouse.io/v1/boards/fivetran/jobs"
-      - name: "dbt Labs"
-        url: "https://boards-api.greenhouse.io/v1/boards/dbtlabs/jobs"
-      - name: "Airbyte"
-        url: "https://boards-api.greenhouse.io/v1/boards/airbyte/jobs"
+      - name: "Railway"
+        url: "https://boards-api.greenhouse.io/v1/boards/railway/jobs"
+      - name: "Cloudinary"
+        url: "https://boards-api.greenhouse.io/v1/boards/cloudinary/jobs"
       - name: "Starburst"
         url: "https://boards-api.greenhouse.io/v1/boards/starburst/jobs"
       - name: "Tecton"
@@ -388,50 +297,26 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/imply/jobs"
       - name: "SingleStore"
         url: "https://boards-api.greenhouse.io/v1/boards/singlestore/jobs"
-      - name: "Timescale"
-        url: "https://boards-api.greenhouse.io/v1/boards/timescale/jobs"
       - name: "ClickHouse"
         url: "https://boards-api.greenhouse.io/v1/boards/clickhouse/jobs"
       - name: "Materialize"
         url: "https://boards-api.greenhouse.io/v1/boards/materialize/jobs"
-      - name: "Neon"
-        url: "https://boards-api.greenhouse.io/v1/boards/neondatabase/jobs"
       - name: "Yugabyte"
         url: "https://boards-api.greenhouse.io/v1/boards/yugabyte/jobs"
-
-      # --- Cybersecurity ---
-      - name: "CrowdStrike"
-        url: "https://boards-api.greenhouse.io/v1/boards/crowdstrike/jobs"
-      - name: "Palo Alto Networks"
-        url: "https://boards-api.greenhouse.io/v1/boards/paloaltonetworks/jobs"
-      - name: "SentinelOne"
-        url: "https://boards-api.greenhouse.io/v1/boards/sentinelone/jobs"
-      - name: "Lacework"
-        url: "https://boards-api.greenhouse.io/v1/boards/lacework/jobs"
       - name: "Wiz"
         url: "https://boards-api.greenhouse.io/v1/boards/wizinc/jobs"
       - name: "Orca Security"
         url: "https://boards-api.greenhouse.io/v1/boards/orcasecurity/jobs"
       - name: "Tanium"
         url: "https://boards-api.greenhouse.io/v1/boards/tanium/jobs"
-      - name: "Arctic Wolf"
-        url: "https://boards-api.greenhouse.io/v1/boards/arcticwolf/jobs"
-      - name: "1Password"
-        url: "https://boards-api.greenhouse.io/v1/boards/1password/jobs"
       - name: "Huntress"
         url: "https://boards-api.greenhouse.io/v1/boards/huntress/jobs"
       - name: "Abnormal Security"
         url: "https://boards-api.greenhouse.io/v1/boards/abnormalsecurity/jobs"
-
-      # --- Fintech & Payments ---
-      - name: "Plaid"
-        url: "https://boards-api.greenhouse.io/v1/boards/plaid/jobs"
       - name: "Marqeta"
         url: "https://boards-api.greenhouse.io/v1/boards/marqeta/jobs"
       - name: "Mercury"
         url: "https://boards-api.greenhouse.io/v1/boards/mercury/jobs"
-      - name: "Ramp"
-        url: "https://boards-api.greenhouse.io/v1/boards/ramp/jobs"
       - name: "Carta"
         url: "https://boards-api.greenhouse.io/v1/boards/carta/jobs"
       - name: "Deel"
@@ -450,8 +335,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/moderntreasury/jobs"
       - name: "Column"
         url: "https://boards-api.greenhouse.io/v1/boards/column/jobs"
-
-      # --- Healthcare Tech ---
       - name: "Ro"
         url: "https://boards-api.greenhouse.io/v1/boards/ro/jobs"
       - name: "Hims & Hers"
@@ -472,18 +355,8 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/oscar/jobs"
       - name: "Veeva"
         url: "https://boards-api.greenhouse.io/v1/boards/veeva/jobs"
-
-      # --- E-commerce & Marketplace ---
-      - name: "Shopify"
-        url: "https://boards-api.greenhouse.io/v1/boards/shopify/jobs"
-      - name: "Etsy"
-        url: "https://boards-api.greenhouse.io/v1/boards/etsy/jobs"
       - name: "Faire"
         url: "https://boards-api.greenhouse.io/v1/boards/faire/jobs"
-      - name: "Bolt"
-        url: "https://boards-api.greenhouse.io/v1/boards/bolt/jobs"
-      - name: "Whatnot"
-        url: "https://boards-api.greenhouse.io/v1/boards/whatnot/jobs"
       - name: "Poshmark"
         url: "https://boards-api.greenhouse.io/v1/boards/poshmark/jobs"
       - name: "Mercari"
@@ -492,8 +365,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/goat/jobs"
       - name: "StockX"
         url: "https://boards-api.greenhouse.io/v1/boards/stockx/jobs"
-
-      # --- Autonomous Vehicles & Robotics ---
       - name: "Cruise"
         url: "https://boards-api.greenhouse.io/v1/boards/cruise/jobs"
       - name: "Aurora"
@@ -512,8 +383,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/locusrobotics/jobs"
       - name: "Berkshire Grey"
         url: "https://boards-api.greenhouse.io/v1/boards/berkshiregrey/jobs"
-
-      # --- Gaming & Entertainment ---
       - name: "Epic Games"
         url: "https://boards-api.greenhouse.io/v1/boards/epicgames/jobs"
       - name: "Riot Games"
@@ -528,63 +397,24 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scopely/jobs"
       - name: "Jam City"
         url: "https://boards-api.greenhouse.io/v1/boards/jamcity/jobs"
-
-      # --- Real Estate Tech ---
-      - name: "Zillow"
-        url: "https://boards-api.greenhouse.io/v1/boards/zillow/jobs"
-      - name: "Redfin"
-        url: "https://boards-api.greenhouse.io/v1/boards/redfin/jobs"
       - name: "Opendoor"
         url: "https://boards-api.greenhouse.io/v1/boards/opendoor/jobs"
-      - name: "Compass"
-        url: "https://boards-api.greenhouse.io/v1/boards/compass/jobs"
       - name: "Blend"
         url: "https://boards-api.greenhouse.io/v1/boards/blend/jobs"
-
-      # --- Enterprise SaaS ---
-      - name: "Notion"
-        url: "https://boards-api.greenhouse.io/v1/boards/notion/jobs"
-      - name: "Coda"
-        url: "https://boards-api.greenhouse.io/v1/boards/coda/jobs"
-      - name: "Monday.com"
-        url: "https://boards-api.greenhouse.io/v1/boards/mondaydotcom/jobs"
-      - name: "Miro"
-        url: "https://boards-api.greenhouse.io/v1/boards/miro/jobs"
-      - name: "Loom"
-        url: "https://boards-api.greenhouse.io/v1/boards/loom/jobs"
-      - name: "Canva"
-        url: "https://boards-api.greenhouse.io/v1/boards/canva/jobs"
       - name: "Lucid"
         url: "https://boards-api.greenhouse.io/v1/boards/lucidsoftware/jobs"
-      - name: "Gong"
-        url: "https://boards-api.greenhouse.io/v1/boards/gong/jobs"
-      - name: "Highspot"
-        url: "https://boards-api.greenhouse.io/v1/boards/highspot/jobs"
-      - name: "Outreach"
-        url: "https://boards-api.greenhouse.io/v1/boards/outreach/jobs"
       - name: "Salesloft"
         url: "https://boards-api.greenhouse.io/v1/boards/salesloft/jobs"
       - name: "ZoomInfo"
         url: "https://boards-api.greenhouse.io/v1/boards/zoominfo/jobs"
       - name: "Contentful"
         url: "https://boards-api.greenhouse.io/v1/boards/contentful/jobs"
-      - name: "Sanity"
-        url: "https://boards-api.greenhouse.io/v1/boards/sanity/jobs"
-
-      # --- Mobility & Transportation ---
-      - name: "DoorDash"
-        url: "https://boards-api.greenhouse.io/v1/boards/doordash/jobs"
-      - name: "Uber"
-        url: "https://boards-api.greenhouse.io/v1/boards/uber/jobs"
       - name: "Lime"
         url: "https://boards-api.greenhouse.io/v1/boards/lime/jobs"
       - name: "Getaround"
         url: "https://boards-api.greenhouse.io/v1/boards/getaround/jobs"
       - name: "Via"
         url: "https://boards-api.greenhouse.io/v1/boards/ridewithvia/jobs"
-
-      # --- Crypto & Web3 ---
-      # S7: Coinbase entry removed — duplicate of original entry
       - name: "Kraken"
         url: "https://boards-api.greenhouse.io/v1/boards/kraken/jobs"
       - name: "Alchemy"
@@ -599,8 +429,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/paxos/jobs"
       - name: "Anchorage"
         url: "https://boards-api.greenhouse.io/v1/boards/anchorage/jobs"
-
-      # --- HR & Recruiting Tech ---
       - name: "Greenhouse"
         url: "https://boards-api.greenhouse.io/v1/boards/greenhouse/jobs"
       - name: "Lever"
@@ -609,23 +437,10 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/lattice/jobs"
       - name: "Culture Amp"
         url: "https://boards-api.greenhouse.io/v1/boards/cultureamp/jobs"
-      - name: "Rippling"
-        url: "https://boards-api.greenhouse.io/v1/boards/rippling/jobs"
       - name: "Justworks"
         url: "https://boards-api.greenhouse.io/v1/boards/justworks/jobs"
-
-      # --- Communication & Collaboration ---
-      - name: "Slack"
-        url: "https://boards-api.greenhouse.io/v1/boards/slack/jobs"
-      - name: "Zoom"
-        url: "https://boards-api.greenhouse.io/v1/boards/zoom/jobs"
-      - name: "Hopin"
-        url: "https://boards-api.greenhouse.io/v1/boards/hopin/jobs"
       - name: "Dialpad"
         url: "https://boards-api.greenhouse.io/v1/boards/dialpad/jobs"
-      - name: "Front"
-        url: "https://boards-api.greenhouse.io/v1/boards/frontapp/jobs"
-
 
   lever:
     # Lever job board API endpoints for major tech companies
