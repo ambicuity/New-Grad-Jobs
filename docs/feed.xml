@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 17:20:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 17:45:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Lifecycle at Upstart</title>
@@ -296,17 +296,17 @@
     </item>
     <item>
       <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
-      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
-      <pubDate>Fri, 06 Mar 2026 18:52:06 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=6099228</link>
       <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Fri, 06 Mar 2026 18:52:06 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
+      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
+      <pubDate>Fri, 06 Mar 2026 18:52:06 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
     </item>
     <item>
       <title>Software Engineer, New Grad at Stripe</title>
