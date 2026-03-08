@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 23:56:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 01:57:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Simulation at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8443290002?gh_jid=8443290002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 07 Mar 2026 20:38:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8443290002?gh_jid=8443290002</guid>
+    </item>
     <item>
       <title>Software Engineer, Lifecycle at Upstart</title>
       <link>https://careers.upstart.com/jobs?gh_jid=7650830</link>
@@ -331,17 +338,17 @@
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</link>
-      <description>New grad role at Wiz in Remote - France. Category: Infrastructure &amp; SRE</description>
+      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
+      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595653006/:title?gh_jid=4595653006</guid>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</link>
-      <description>New grad role at Wiz in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <link>https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</link>
+      <description>New grad role at Wiz in Remote - Netherlands. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4579802006/:title?gh_jid=4579802006</guid>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595651006/:title?gh_jid=4595651006</guid>
     </item>
     <item>
       <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Wiz in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4595652006/:title?gh_jid=4595652006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product &amp; Production Infrastructure at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</link>
-      <description>New grad role at Wiz in Remote - Germany. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 06 Mar 2026 11:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4595650006/:title?gh_jid=4595650006</guid>
     </item>
   </channel>
 </rss>
