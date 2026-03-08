@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-08T17:16:20.285140",
+    "last_updated": "2026-03-08T17:46:13.047577",
     "total_snapshots": 4,
     "date_range": {
       "start": "2026-03-05",
@@ -179,8 +179,8 @@
       "categories": {},
       "tiers": {
         "unicorn": 493,
-        "faang_plus": 153,
-        "other": 362
+        "faang_plus": 154,
+        "other": 361
       },
       "top_companies": [
         {
@@ -193,7 +193,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
+          "jobs": 30
         },
         {
           "company": "Dropbox",
@@ -226,7 +226,7 @@
       ],
       "unique_companies": 212,
       "avg_jobs_per_company": 4.75,
-      "timestamp": "2026-03-08T17:16:20.284915"
+      "timestamp": "2026-03-08T17:46:13.047404"
     }
   ]
 }
