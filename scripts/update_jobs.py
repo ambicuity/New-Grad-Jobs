@@ -665,24 +665,6 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
 
     return jobs
 
-
-def extract_google_location_names(locations: Any) -> List[str]:
-    """Return non-empty Google job location display names."""
-    if not isinstance(locations, list):
-        return []
-
-    location_names = []
-    for loc in locations:
-        if not isinstance(loc, dict):
-            continue
-
-        display_name = loc.get('display', '')
-        if isinstance(display_name, str) and display_name:
-            location_names.append(display_name)
-
-    return location_names
-
-
 def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers API with retry logic"""
     all_jobs = []
@@ -715,9 +697,16 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                     continue
 
                 for job in data.get('jobs', []):
-                    location_names = extract_google_location_names(job.get('locations', []))
+                    # Extract location information from Google's format
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':  # Only USA locations
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
 
-                    if not location_names:
+                    if not location_names:  # Skip jobs without USA locations
                         continue
 
                     location_str = '; '.join(location_names)
@@ -733,7 +722,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                         'description': description[:500] if description else ''
                     })
 
-                print(f"  ✓ Found {len(jobs)} jobs from Google search '{search_term}'")
+                print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
                 all_jobs.extend(jobs)
                 break  # Success, exit retry loop
 
@@ -1172,7 +1161,13 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     continue
 
                 for job in data.get('jobs', []):
-                    location_names = extract_google_location_names(job.get('locations', []))
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
 
                     if not location_names:
                         continue

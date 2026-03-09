@@ -11,7 +11,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from update_jobs import (  # noqa: E402
     DomainConcurrencyLimiter,
-    fetch_google_jobs,
     fetch_google_jobs_parallel,
     fetch_greenhouse_jobs,
     fetch_lever_jobs,
@@ -148,33 +147,6 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
     called_hosts = {urlparse(url).netloc for url in called_urls}
     expected_hosts = {"api.greenhouse.io", "api.lever.co", "careers.google.com"}
     assert expected_hosts.issubset(called_hosts)
-
-
-def test_google_fetchers_accept_display_only_locations(monkeypatch):
-    def fake_limited_get(url, **kwargs):
-        return _FakeResponse(
-            {
-                "jobs": [
-                    {
-                        "title": "Software Engineer",
-                        "locations": [{"display": "Toronto, ON"}],
-                        "apply_url": "https://example.com/google/2",
-                        "created": "2026-03-01T00:00:00Z",
-                        "description": "new grad",
-                    }
-                ]
-            }
-        )
-
-    monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-
-    sequential_jobs = fetch_google_jobs(["software engineer"])
-    parallel_jobs = fetch_google_jobs_parallel(["software engineer"], max_workers=1)
-
-    assert len(sequential_jobs) == 1
-    assert sequential_jobs[0]["location"] == "Toronto, ON"
-    assert len(parallel_jobs) == 1
-    assert parallel_jobs[0]["location"] == "Toronto, ON"
 
 
 def test_limiter_integrates_with_workday_post_path(monkeypatch):
