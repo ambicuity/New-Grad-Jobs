@@ -1,20 +1,42 @@
-name: Auto-Thank on Merge
+name: Auto-Thank & Credit on Merge
 
 on:
   pull_request_target:
     types: [closed]
 
-permissions:
-  issues: write
-  pull-requests: write
+concurrency:
+  group: hall-of-fame-auto-credit
+  cancel-in-progress: false
 
+permissions: read-all
 jobs:
-  thank-contributor:
-    name: Thank Contributor on Merge
+  thank-and-credit:
+    name: Thank & Credit Contributor
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
-      - uses: actions/github-script@v8
+      - name: Checkout repository
+        if: github.event.pull_request.merged == true
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.base.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -29,24 +51,134 @@ jobs:
               return;
             }
 
-            // Check if this is the contributor's first merged PR
-            const { data: prs } = await github.rest.search.issuesAndPullRequests({
-              q: `repo:${owner}/${repo} author:${author} type:pr is:merged`,
-            });
+            // --- Step 1: Thank-you message ---
 
-            const isFirstMerge = prs.total_count <= 1;
+            // Check if contributor is already in the Hall of Fame (.all-contributorsrc)
+            let isNewContributor = true;
+            try {
+              const fs = require('fs');
+              const rcContent = JSON.parse(fs.readFileSync('.all-contributorsrc', 'utf-8'));
+              const existingLogins = (rcContent.contributors || []).map(c => c.login.toLowerCase());
+              isNewContributor = !existingLogins.includes(author.toLowerCase());
+            } catch (err) {
+              console.log(`Could not read .all-contributorsrc locally: ${err.message}`);
+            }
 
-            let message;
-            if (isFirstMerge) {
-              message = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
+            let thankMessage;
+            if (isNewContributor) {
+              thankMessage = `🎉 **Congratulations on your first merged PR, @${author}!** 🎉\n\n` +
                 `Welcome to the contributors of New Grad Jobs! Your change is now live and helping thousands of new graduates find their first tech job.\n\n` +
-                `A maintainer will add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) shortly. Thank you for making this project better! 🙏`;
+                `We'll add you to our [Contributors Hall of Fame](CONTRIBUTORS.md) automatically shortly. Thank you for making this project better! 🙏`;
             } else {
-              message = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
+              thankMessage = `✅ Merged! Thanks again, @${author}. Your contribution is live. 🚀`;
             }
 
             await github.rest.issues.createComment({
               owner, repo,
               issue_number: pr.number,
-              body: message
+              body: thankMessage
             });
+
+            // --- Step 2: Auto-detect contribution type ---
+
+            // 2a. Detect from changed file paths (paginated to handle large PRs)
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              { owner, repo, pull_number: pr.number, per_page: 100 }
+            );
+
+            const types = new Set();
+            const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.figma'];
+
+            for (const file of files) {
+              const f = file.filename;
+              const lower = f.toLowerCase();
+
+              // Code — source files
+              if (lower.endsWith('.py') || lower.endsWith('.js') || lower.endsWith('.ts') ||
+                  lower.endsWith('.jsx') || lower.endsWith('.tsx') || lower.endsWith('.sh') ||
+                  f.startsWith('scripts/')) {
+                types.add('code');
+              }
+
+              // Test — test files
+              if (f.startsWith('tests/') || f.startsWith('test_') || lower.includes('_test.') ||
+                  lower.includes('.test.') || lower.includes('spec.')) {
+                types.add('test');
+              }
+
+              // Documentation — markdown and docs
+              if ((lower.endsWith('.md') || lower.endsWith('.rst') || lower.endsWith('.txt') ||
+                   f.startsWith('docs/')) && f !== 'README.md') {
+                types.add('doc');
+              }
+
+              // Infrastructure — CI/CD, workflows, build config
+              if (f.startsWith('.github/workflows/') || f.startsWith('.github/actions/') ||
+                  lower === 'dockerfile' || lower === 'docker-compose.yml' ||
+                  lower.endsWith('.dockerfile') || lower === 'makefile') {
+                types.add('infra');
+              }
+
+              // Design — CSS, HTML, images, UI assets
+              if (lower.endsWith('.css') || lower.endsWith('.scss') || lower.endsWith('.sass') ||
+                  lower.endsWith('.html') || f.startsWith('assets/') || f.startsWith('static/') ||
+                  f.startsWith('images/') || imageExts.some(ext => lower.endsWith(ext))) {
+                types.add('design');
+              }
+
+              // Maintenance — config, dependencies, tooling
+              if (lower === '.gitignore' || lower === '.editorconfig' || lower === '.prettierrc' ||
+                  lower === 'pyproject.toml' || lower === 'setup.cfg' || lower === 'setup.py' ||
+                  lower === 'requirements.txt' || lower === 'package.json' ||
+                  lower === 'package-lock.json' || lower === '.pre-commit-config.yaml' ||
+                  lower === '.all-contributorsrc' || lower === '.flake8') {
+                types.add('maintenance');
+              }
+
+              // Config (maps to code — config.yml drives scraping behavior)
+              if (lower === 'config.yml' || lower === 'config.yaml') {
+                types.add('code');
+              }
+            }
+
+            // 2b. Detect from PR labels
+            const labelNames = (pr.labels || []).map(l => l.name.toLowerCase());
+
+            if (labelNames.some(l => l.includes('bug') || l.includes('fix'))) {
+              types.add('bug');
+            }
+            if (labelNames.some(l => l.includes('security') || l.includes('vulnerability'))) {
+              types.add('security');
+            }
+            if (labelNames.some(l => l.includes('enhancement') || l.includes('feature') || l.includes('idea'))) {
+              types.add('ideas');
+            }
+            if (labelNames.some(l => l.includes('documentation') || l.includes('docs'))) {
+              types.add('doc');
+            }
+
+            // Default to 'code' if nothing matched
+            if (types.size === 0) {
+              types.add('code');
+            }
+
+            const contributionTypes = [...types].join(',');
+
+            // --- Step 3: Run all-contributors-cli and push ---
+            try {
+              console.log(`Adding @${author} for [${contributionTypes}] via all-contributors-cli...`);
+              await exec.exec('npx', ['all-contributors-cli', 'add', author, contributionTypes]);
+
+              // Push the commit made by all-contributors-cli to the base branch
+              const baseRef = pr.base.ref;
+              console.log(`Pushing changes to ${baseRef}...`);
+
+              // Pull with rebase first to avoid rejection from concurrent merges
+              await exec.exec('git', ['pull', '--rebase', 'origin', baseRef]);
+              await exec.exec('git', ['push', 'origin', `HEAD:${baseRef}`]);
+
+              console.log(`Successfully credited @${author} in the Hall of Fame!`);
+            } catch (err) {
+              console.log(`Error adding contributor (might already exist, or CLI failed): ${err.message}`);
+            }

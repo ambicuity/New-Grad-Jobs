@@ -1,0 +1,41 @@
+{
+    "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+    "release-type": "python",
+    "package-name": "new-grad-jobs",
+    "changelog-sections": [
+        {
+            "type": "feat",
+            "section": "Features"
+        },
+        {
+            "type": "fix",
+            "section": "Bug Fixes"
+        },
+        {
+            "type": "perf",
+            "section": "Performance Improvements"
+        },
+        {
+            "type": "docs",
+            "section": "Documentation"
+        },
+        {
+            "type": "chore",
+            "section": "Maintenance",
+            "hidden": true
+        },
+        {
+            "type": "refactor",
+            "section": "Refactors",
+            "hidden": true
+        },
+        {
+            "type": "test",
+            "section": "Tests",
+            "hidden": true
+        }
+    ],
+    "bump-minor-pre-major": true,
+    "pull-request-title-pattern": "chore(release): release ${version}",
+    "include-component-in-tag": false
+}

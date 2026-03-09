@@ -1,0 +1,49 @@
+name: Release Please
+
+on:
+  push:
+    branches: [main]
+
+permissions: read-all
+jobs:
+  release-please:
+    name: Create Release PR
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: .release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+      # --- Everything below this line ONLY runs when a Release is actually published ---
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Install Cosign for Keyless Signing
+        if: ${{ steps.release.outputs.release_created }}
+        uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
+
+      - name: Create Archive, Sign, and Attach to Release
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.release.outputs.tag_name }}
+        run: |
+          # 1. Generate an archive of the repository state at this release
+          ARCHIVE="new-grad-jobs-${TAG}.tar.gz"
+          git archive --format=tar.gz -o "$ARCHIVE" HEAD
+
+          # 2. Cryptographically sign the archive using Sigstore (generates .sig file)
+          cosign sign-blob --yes --output-signature "${ARCHIVE}.sig" "${ARCHIVE}"
+
+          # 3. Upload the archive and its signature file to the GitHub Release assets
+          # This satisfies the OpenSSF 'SignedReleases' check
+          gh release upload "${TAG}" "${ARCHIVE}" "${ARCHIVE}.sig"

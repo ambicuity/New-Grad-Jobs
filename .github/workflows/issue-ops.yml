@@ -4,18 +4,18 @@ on:
   issue_comment:
     types: [created]
 
-permissions:
-  issues: write
-
+permissions: read-all
 jobs:
   auto-assign:
     name: Assign Issue and Welcome
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     # Barrier: Only run if it's an issue, NOT a Pull Request
     if: ${{ !github.event.issue.pull_request }}
     steps:
       - name: Parse Comment and Execute
-        uses: actions/github-script@v8
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           script: |
             const commentBody = context.payload.comment.body.toLowerCase();

@@ -16,21 +16,41 @@ Performance Optimizations:
 import json
 import math
 import os
+import random
 import re
 import sys
+import threading
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date, datetime, timedelta
+from contextlib import contextmanager
+from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
 from urllib.parse import urlparse
+from xml.sax.saxutils import escape as xml_escape
 
 import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+# Worker pool configuration constants
+# These default values act as fallback constants. The active pool sizes
+# are read from config.yml under 'worker_pools' during startup.
+# Minimums are baseline parallel requests; maximums represent empirically-tested API rate limit boundaries.
+DEFAULT_GREENHOUSE_MIN_WORKERS: int = 30
+DEFAULT_GREENHOUSE_MAX_WORKERS: int = 300
+DEFAULT_LEVER_MIN_WORKERS: int = 15
+DEFAULT_LEVER_MAX_WORKERS: int = 200
+DEFAULT_GOOGLE_MIN_WORKERS: int = 12
+DEFAULT_GOOGLE_MAX_WORKERS: int = 100
+
+# Constants for fixed worker pools
+DEFAULT_JOBSPY_WORKERS: int = 25
+DEFAULT_ORCHESTRATOR_WORKERS: int = 20
+
 
 # Import JobSpy for additional job site scraping
 try:
@@ -99,6 +119,83 @@ def create_optimized_session() -> requests.Session:
 
 # Global session for connection reuse across all requests
 HTTP_SESSION = create_optimized_session()
+
+# Module-level lock for thread-safe counter updates in parallel fetchers
+_COUNTER_LOCK = threading.Lock()
+
+
+class DomainConcurrencyLimiter:
+    """Thread-safe per-domain concurrency limiter using native Python primitives.
+
+    Domains with configured limits are guarded by a BoundedSemaphore. Domains
+    without explicit limits are left unthrottled.
+    """
+
+    def __init__(self, limits: Dict[str, int]):
+        self._limits = {
+            domain.lower(): limit
+            for domain, limit in limits.items()
+            if isinstance(limit, int) and limit > 0
+        }
+        self._lock = threading.Lock()
+        self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
+
+    def _domain_for_url(self, url: str) -> str:
+        return (urlparse(url).netloc or "").split(":")[0].lower()
+
+    def _matched_domain(self, domain: str) -> str | None:
+        if domain in self._limits:
+            return domain
+
+        # Support subdomains matching, e.g. jobs.api.greenhouse.io -> api.greenhouse.io
+        for configured_domain in self._limits:
+            if domain.endswith(f".{configured_domain}"):
+                return configured_domain
+
+        return None
+
+    def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
+        matched_domain = self._matched_domain(domain)
+        if matched_domain is None:
+            return None
+
+        limit = self._limits[matched_domain]
+        with self._lock:
+            semaphore = self._semaphores.get(matched_domain)
+            if semaphore is None:
+                semaphore = threading.BoundedSemaphore(limit)
+                self._semaphores[matched_domain] = semaphore
+            return semaphore
+
+    @contextmanager
+    def acquire(self, url: str):
+        domain = self._domain_for_url(url)
+        semaphore = self._get_semaphore(domain)
+        if semaphore is None:
+            yield
+            return
+
+        semaphore.acquire()
+        try:
+            yield
+        finally:
+            semaphore.release()
+
+
+# Cap greenhouse API concurrency while leaving other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+
+
+def limited_get(url: str, **kwargs):
+    """HTTP GET wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.get(url, **kwargs)
+
+
+def limited_post(url: str, **kwargs):
+    """HTTP POST wrapped with domain-aware concurrency limiting."""
+    with DOMAIN_LIMITER.acquire(url):
+        return HTTP_SESSION.post(url, **kwargs)
 
 # ============================================================================
 # COMPANY CLASSIFICATIONS
@@ -238,7 +335,8 @@ CATEGORY_PATTERNS = {
             'fullstack', 'frontend', 'front-end', 'backend', 'back-end',
             'web developer', 'mobile developer', 'ios developer', 'android developer',
             'application developer', 'systems engineer', 'platform engineer',
-            'solutions engineer', 'integration engineer', 'api engineer'
+            'solutions engineer', 'integration engineer', 'api engineer',
+            'developer advocate', 'devrel'
         ]
     },
     'data_ml': {
@@ -262,7 +360,7 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]
@@ -310,6 +408,73 @@ US_CITIZENSHIP_KEYWORDS = [
     'u.s. citizen', 'us citizen', 'american citizen', 'citizenship required',
     'security clearance', 'clearance required', 'top secret', 'ts/sci'
 ]
+
+# Location indicators used by is_valid_location(). Keep these at module scope so
+# we do not rebuild large lists for every job (~2000+ calls per run).
+REMOTE_LOCATION_TERMS = frozenset({'remote', 'anywhere', 'worldwide'})
+
+USA_STATE_TERMS = (
+    'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
+    'california', 'ca', 'colorado', 'co', 'connecticut', 'ct',
+    'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
+    'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
+    'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
+    'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi',
+    'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
+    'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
+    'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
+    'north carolina', 'nc', 'north dakota', 'nd', 'ohio', 'oh',
+    'oklahoma', 'ok', 'oregon', 'or', 'pennsylvania', 'pa',
+    'rhode island', 'ri', 'south carolina', 'sc', 'south dakota', 'sd',
+    'tennessee', 'tn', 'texas', 'tx', 'utah', 'ut', 'vermont', 'vt',
+    'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
+    'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
+)
+
+USA_CITY_TERMS = (
+    'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
+    'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
+    'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
+    'seattle', 'denver', 'boston', 'atlanta', 'miami', 'portland', 'las vegas',
+    'detroit', 'nashville', 'baltimore', 'milwaukee', 'raleigh', 'tampa',
+    'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
+    'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
+)
+
+USA_INDICATOR_TERMS = ('united states', 'usa', 'us', 'america')
+
+CANADA_INDICATOR_TERMS = (
+    'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba',
+    'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
+    'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
+    'quebec city', 'hamilton', 'kitchener', 'waterloo', 'victoria',
+    'london, ontario', 'london, on', 'london on'
+)
+
+INDIA_INDICATOR_TERMS = (
+    'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
+    'chennai', 'kolkata', 'gurgaon', 'gurugram', 'noida', 'ahmedabad', 'jaipur',
+    'kochi', 'thiruvananthapuram', 'coimbatore', 'indore', 'nagpur', 'lucknow',
+    'chandigarh', 'bhubaneswar', 'visakhapatnam', 'mysore', 'mangalore',
+    'karnataka', 'maharashtra', 'telangana', 'tamil nadu', 'kerala', 'andhra pradesh',
+    'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
+    'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
+)
+
+LOCATION_TERMS = frozenset(
+    USA_INDICATOR_TERMS
+    + USA_STATE_TERMS
+    + USA_CITY_TERMS
+    + CANADA_INDICATOR_TERMS
+    + INDIA_INDICATOR_TERMS
+)
+
+LOCATION_TERM_PATTERN = re.compile(
+    r'\b(?:'
+    + '|'.join(re.escape(term) for term in sorted(LOCATION_TERMS, key=len, reverse=True))
+    + r')\b',
+    re.IGNORECASE,
+)
 
 def load_config() -> Dict[str, Any]:
     """Load configuration from config.yml"""
@@ -409,7 +574,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -465,7 +630,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -526,9 +691,15 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 print(f"Searching Google careers for '{search_term}'...")
                 # Build the search URL with USA location filter
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -587,6 +758,53 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
 
     return all_jobs
 
+
+def build_workday_api_url(host: str, site_path: str) -> str:
+    """Build a Workday CXS jobs API endpoint URL.
+
+    Args:
+        host: Workday hostname (for example, ``acme.wd5.myworkdayjobs.com``).
+        site_path: Path portion from the careers URL (for example,
+            ``/Acme_External_Careers`` or ``/tenant/Acme_External_Careers``).
+
+    Returns:
+        A full Workday jobs API URL in the format
+        ``https://<host>/wday/cxs/<tenant>/<site>/jobs``.
+
+    Raises:
+        ValueError: If ``host`` or ``site_path`` is not a non-empty string with
+            at least one path segment.
+    """
+    if not isinstance(host, str):
+        raise ValueError("host must be a string")
+    if not isinstance(site_path, str):
+        raise ValueError("site_path must be a string")
+
+    clean_host = host.strip()
+    if not clean_host:
+        raise ValueError("host is required")
+
+    path_parts = [part for part in site_path.strip('/').split('/') if part]
+    if not path_parts:
+        raise ValueError("site_path must include at least one segment")
+
+    host_parts = [part for part in clean_host.split('.') if part]
+    if not host_parts:
+        raise ValueError("host is required")
+
+    tenant = host_parts[0]
+    if re.fullmatch(r"wd\d+", tenant.lower()) and len(path_parts) >= 2:
+        # For URLs like wd5.myworkdayjobs.com/<tenant>/<site>, tenant lives in the path.
+        # Locale-prefixed variants can be /en-US/<tenant>/<site>.
+        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+            tenant = path_parts[1]
+        else:
+            tenant = path_parts[0]
+
+    site_id = path_parts[-1]
+    return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
+
+
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
     all_jobs = []
@@ -605,26 +823,8 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
         try:
             parsed = urlparse(workday_url)
             host = parsed.netloc
-            site_path = parsed.path.strip('/')
-
-            # Extract tenant and site from URL
-            # Example: https://nvidia.wd5.myworkdayjobs.com/NVIDIA_External_Career_Site
-            # Tenant: nvidia, Site: NVIDIA_External_Career_Site
-
-            # If host starts with tenant name (e.g. nvidia.wd5...), use that
-            # Otherwise, try to extract from path or config
-
-            # Simple heuristic for now:
-            # Subdomain is usually "tenant.wdN" or just "tenant"
-            # We need the "tenant" for the API path.
-
-            subdomin_parts = host.split('.')
-            tenant = subdomin_parts[0] # Default guess
-
-            # Site ID is the last part of the path
-            site_id = site_path.split('/')[-1]
-
-            api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
+            site_path = parsed.path
+            api_url = build_workday_api_url(host, site_path)
 
             jobs = []
             offset = 0
@@ -644,18 +844,22 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
 
-                response = HTTP_SESSION.post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
                 if response.status_code == 404:
-                     # Try alternative tenant extraction if 404
-                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                     # In that case, tenant is matching path[0]
-                     path_parts = site_path.split('/')
-                     if len(path_parts) >= 2:
-                         tenant = path_parts[0]
-                         site_id = path_parts[-1]
-                         api_url = f"https://{host}/wday/cxs/{tenant}/{site_id}/jobs"
-                         response = HTTP_SESSION.post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                    # Try alternative tenant extraction if 404
+                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                    # In that case, tenant is matching path[0]
+                    path_parts = [part for part in site_path.strip('/').split('/') if part]
+                    if len(path_parts) >= 2:
+                        fallback_tenant = path_parts[0]
+                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                            fallback_tenant = path_parts[1]
+
+                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                        if fallback_api_url != api_url:
+                            api_url = fallback_api_url
+                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -782,17 +986,19 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
 
     # Use ThreadPoolExecutor for parallel execution
     # 25 workers for Indeed-only mode (LinkedIn disabled due to rate limits)
-    with ThreadPoolExecutor(max_workers=25) as executor:
+    with ThreadPoolExecutor(max_workers=DEFAULT_JOBSPY_WORKERS) as executor:
         # Submit all tasks
         future_to_task = {executor.submit(search_single, task): task for task in search_tasks}
 
         # Process results as they complete
         for future in as_completed(future_to_task):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             result = future.result()
 
             if result['error']:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  [{completed}/{total_tasks}] ❌ {result['site'].upper()} '{result['term']}': {result['error']}")
             elif result['count'] > 0:
                 all_jobs.extend(result['jobs'])
@@ -855,9 +1061,9 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     completed = 0
     errors = 0
 
-    # AUTO-SCALE: Use 1 worker per 2 companies, min 20, max 150 for 1000+ companies
+    # AUTO-SCALE: Use 1 worker per 3 companies, min 30, max 300 for 1000+ companies
     if max_workers is None:
-        max_workers = min(300, max(30, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
+        max_workers = min(DEFAULT_GREENHOUSE_MAX_WORKERS, max(DEFAULT_GREENHOUSE_MIN_WORKERS, total // 3))  # AGGRESSIVE: 30-300 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
@@ -868,13 +1074,15 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Greenhouse parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -893,7 +1101,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     # AUTO-SCALE: Use 1 worker per company for small lists, max 100 for 1000+ companies
     if max_workers is None:
-        max_workers = min(200, max(15, total))  # AGGRESSIVE: 15-200 workers for 10K
+        max_workers = min(DEFAULT_LEVER_MAX_WORKERS, max(DEFAULT_LEVER_MIN_WORKERS, total))  # AGGRESSIVE: 15-200 workers for 10K
 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
@@ -904,13 +1112,15 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
         future_to_company = {executor.submit(fetch_single, c): c for c in companies}
 
         for future in as_completed(future_to_company):
-            completed += 1
+            with _COUNTER_LOCK:
+                completed += 1
             company = future_to_company[future]
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
             except Exception as e:
-                errors += 1
+                with _COUNTER_LOCK:
+                    errors += 1
                 print(f"  ❌ {company['name']}: {e}")
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
@@ -924,9 +1134,9 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
     completed = 0
     errors = 0
 
-    # AUTO-SCALE: Use 3 workers per search term (they're fast API calls), min 8, max 50
+    # AUTO-SCALE: Use 5 workers per search term (they're fast API calls), min 12, max 100
     if max_workers is None:
-        max_workers = min(100, max(12, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
+        max_workers = min(DEFAULT_GOOGLE_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
 
     print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
 
@@ -941,9 +1151,15 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     time.sleep(1)
 
                 search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = HTTP_SESSION.get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
                 response.raise_for_status()
                 data = response.json()
 
@@ -1048,7 +1264,7 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: str) -> str:
+def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
@@ -1058,12 +1274,24 @@ def normalize_date_string(posted_at: str) -> str:
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+
+    Also handles native datetime.date / datetime.datetime objects returned by
+    Workday / JobSpy API clients, coercing them to their ISO-format string so
+    that downstream dateparser never receives a non-string argument.
     """
     if not isinstance(posted_at, str):
+        # Coerce native date/datetime objects to ISO string rather than
+        # returning them raw, which causes dateparser to emit:
+        #   "Parser must be a string or character stream, not date"
+        if hasattr(posted_at, 'isoformat'):
+            return posted_at.isoformat()
+
         return posted_at
 
     posted_at_lower = posted_at.lower().strip()
-    now = datetime.now()
+    if now_utc is None:
+        now_utc = datetime.now(timezone.utc)
+    now = now_utc.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -1088,28 +1316,40 @@ def normalize_date_string(posted_at: str) -> str:
     # Return original if no pattern matches
     return posted_at
 
+def _as_utc_naive(dt: datetime) -> datetime:
+    """Normalize datetime to UTC, then return timezone-naive value."""
+    if dt.tzinfo is None:
+        # Treat naive datetimes as already UTC to keep comparisons deterministic.
+        return dt
+    return dt.astimezone(timezone.utc).replace(tzinfo=None)
+
+
 def is_recent_job(posted_at: str, max_age_days: int) -> bool:
     """Check if job was posted within the specified number of days"""
-    if not posted_at:
+    if posted_at is None:
+        return False
+
+    if isinstance(posted_at, float) and math.isnan(posted_at):
         return False
 
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle already parsed date objects
         if isinstance(posted_at, (datetime, date)):
-             posted_date = posted_at
-             if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
-                 posted_date = datetime.combine(posted_date, datetime.min.time())
+            posted_date = posted_at
+            if isinstance(posted_date, date) and not isinstance(posted_date, datetime):
+                posted_date = datetime.combine(posted_date, datetime.min.time())
         # Handle timestamp integers (from Lever API)
         elif isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        # Remove timezone info for comparison
-        posted_date = posted_date.replace(tzinfo=None)
-        cutoff_date = datetime.now() - timedelta(days=max_age_days)
+        posted_date = _as_utc_naive(posted_date)
+        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as e:
         print(f"Error parsing date {posted_at}: {e}")
@@ -1121,95 +1361,14 @@ def is_valid_location(location: str) -> bool:
         return False
 
     location_lower = location.lower().strip()
+    if not location_lower:
+        return False
 
     # Handle "Remote" locations - include them
-    if location_lower in ['remote', 'anywhere', 'worldwide']:
+    if location_lower in REMOTE_LOCATION_TERMS or 'remote' in location_lower:
         return True
 
-    if 'remote' in location_lower:
-        return True
-
-    # USA state abbreviations and names
-    usa_states = [
-        'alabama', 'al', 'alaska', 'ak', 'arizona', 'az', 'arkansas', 'ar',
-        'california', 'ca', 'colorado', 'co', 'connecticut', 'ct',
-        'delaware', 'de', 'florida', 'fl', 'georgia', 'ga', 'hawaii', 'hi',
-        'idaho', 'id', 'illinois', 'il', 'indiana', 'in', 'iowa', 'ia',
-        'kansas', 'ks', 'kentucky', 'ky', 'louisiana', 'la', 'maine', 'me',
-        'maryland', 'md', 'massachusetts', 'ma', 'michigan', 'mi',
-        'minnesota', 'mn', 'mississippi', 'ms', 'missouri', 'mo',
-        'montana', 'mt', 'nebraska', 'ne', 'nevada', 'nv', 'new hampshire', 'nh',
-        'new jersey', 'nj', 'new mexico', 'nm', 'new york', 'ny',
-        'north carolina', 'nc', 'north dakota', 'nd', 'ohio', 'oh',
-        'oklahoma', 'ok', 'oregon', 'or', 'pennsylvania', 'pa',
-        'rhode island', 'ri', 'south carolina', 'sc', 'south dakota', 'sd',
-        'tennessee', 'tn', 'texas', 'tx', 'utah', 'ut', 'vermont', 'vt',
-        'virginia', 'va', 'washington', 'wa', 'west virginia', 'wv',
-        'wisconsin', 'wi', 'wyoming', 'wy', 'district of columbia', 'dc'
-    ]
-
-    # USA cities (major ones)
-    usa_cities = [
-        'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
-        'san antonio', 'san diego', 'dallas', 'san jose', 'austin', 'jacksonville',
-        'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis',
-        'seattle', 'denver', 'boston', 'atlanta', 'miami', 'portland', 'las vegas',
-        'detroit', 'nashville', 'baltimore', 'milwaukee', 'raleigh', 'tampa',
-        'mountain view', 'palo alto', 'menlo park', 'redwood city', 'cupertino',
-        'santa clara', 'sunnyvale', 'bellevue', 'redmond', 'kirkland', 'irvine'
-    ]
-
-    # USA indicators
-    usa_indicators = [
-        'united states', 'usa', 'us', 'america'
-    ]
-
-    # Canada provinces and cities
-    canada_indicators = [
-        'canada', 'ontario', 'quebec', 'british columbia', 'alberta', 'manitoba',
-        'saskatchewan', 'nova scotia', 'new brunswick', 'newfoundland', 'prince edward island',
-        'toronto', 'vancouver', 'montreal', 'ottawa', 'calgary', 'edmonton', 'winnipeg',
-        'quebec city', 'hamilton', 'kitchener', 'waterloo', 'london', 'victoria'
-    ]
-
-    # India states and cities
-    india_indicators = [
-        'india', 'bangalore', 'bengaluru', 'hyderabad', 'mumbai', 'delhi', 'pune',
-        'chennai', 'kolkata', 'gurgaon', 'gurugram', 'noida', 'ahmedabad', 'jaipur',
-        'kochi', 'thiruvananthapuram', 'coimbatore', 'indore', 'nagpur', 'lucknow',
-        'chandigarh', 'bhubaneswar', 'visakhapatnam', 'mysore', 'mangalore',
-        'karnataka', 'maharashtra', 'telangana', 'tamil nadu', 'kerala', 'andhra pradesh',
-        'gujarat', 'rajasthan', 'west bengal', 'uttar pradesh', 'madhya pradesh',
-        'haryana', 'punjab', 'bihar', 'odisha', 'jharkhand', 'uttarakhand'
-    ]
-
-    # Check for USA indicators
-    for indicator in usa_indicators:
-        if indicator in location_lower:
-            return True
-
-    # Check for USA states
-    for state in usa_states:
-        if state in location_lower:
-            return True
-
-    # Check for USA cities
-    for city in usa_cities:
-        if city in location_lower:
-            return True
-
-    # Check for Canada indicators
-    for indicator in canada_indicators:
-        if indicator in location_lower:
-            return True
-
-    # Check for India indicators
-    for indicator in india_indicators:
-        if indicator in location_lower:
-            return True
-
-    # If we can't determine, default to False to be safe
-    return False
+    return bool(LOCATION_TERM_PATTERN.search(location_lower))
 
 def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Filter jobs based on configuration criteria"""
@@ -1242,10 +1401,12 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         has_track = has_track_signal(title, filters['track_signals'])
 
         # Strong new grad signals that don't need additional track signals
+        # P4: Generic role titles removed — they belong in track_signals only.
+        # Without a co-occurring new-grad keyword, "Software Engineer" alone
+        # should not bypass the track-signal requirement.
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad",
             "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
-            "software engineer", "data engineer", "data scientist", "ml engineer"
         ]
         has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
 
@@ -1349,19 +1510,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
 
     # Sort jobs by date
-    def get_sort_date(job):
-        posted_at = job.get('posted_at')
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                return date_parser.parse(posted_at).replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Build JSON structure
     json_jobs = []
@@ -1624,7 +1773,7 @@ Respond in JSON format:
             }
         }
 
-        response = HTTP_SESSION.post(
+        response = limited_post(
             'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
             headers=headers,
             json=payload,
@@ -1647,20 +1796,30 @@ Respond in JSON format:
 
                 predictions = json.loads(content)
 
-                # Add metadata
-                predictions['generated_at'] = datetime.now().isoformat()
-                predictions['data_points'] = len(snapshots)
-                predictions['date_range'] = {
-                    'start': snapshots[0]['date'],
-                    'end': snapshots[-1]['date']
-                }
+                # S6: Validate required keys before trusting LLM output
+                required_keys = {'outlook', 'predictions', 'confidence', 'insights'}
+                missing = required_keys - set(predictions.keys())
+                if missing:
+                    print(f"  ⚠️  Gemini response missing keys {missing} — skipping prediction update")
+                elif predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
+                    print(f"  ⚠️  Invalid outlook value '{predictions.get('outlook')}' — skipping prediction update")
+                elif not isinstance(predictions.get('confidence'), (int, float)):
+                    print(f"  ⚠️  Invalid confidence type — skipping prediction update")
+                else:
+                    # Add metadata
+                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['data_points'] = len(snapshots)
+                    predictions['date_range'] = {
+                        'start': snapshots[0]['date'],
+                        'end': snapshots[-1]['date']
+                    }
 
-                # Save predictions
-                predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
-                with open(predictions_path, 'w', encoding='utf-8') as f:
-                    json.dump(predictions, f, indent=2, ensure_ascii=False)
+                    # Save predictions
+                    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
+                    with open(predictions_path, 'w', encoding='utf-8') as f:
+                        json.dump(predictions, f, indent=2, ensure_ascii=False)
 
-                print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                    print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
             else:
                 print("  ⚠️  No predictions in Gemini response")
 
@@ -1672,24 +1831,23 @@ Respond in JSON format:
         print(f"  ❌ Failed to generate predictions: {error_msg}")
 
 
+def extract_sort_date(job: Dict[str, Any]) -> datetime:
+    """Extract and parse posted_at for sorting."""
+    posted_at = job.get('posted_at')
+    if not posted_at:
+        return datetime.min
+    try:
+        if isinstance(posted_at, (int, float)):
+            return datetime.fromtimestamp(posted_at / 1000)
+        return date_parser.parse(posted_at).replace(tzinfo=None)
+    except Exception:
+        return datetime.min
+
 def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
     """Generate README content with job listings - SimplifyJobs style"""
 
     # Sort jobs by posted date (most recent first)
-    def get_sort_date(job):
-        posted_at = job['posted_at']
-        if not posted_at:
-            return datetime.min
-        try:
-            if isinstance(posted_at, (int, float)):
-                return datetime.fromtimestamp(posted_at / 1000)
-            else:
-                parsed_date = date_parser.parse(posted_at)
-                return parsed_date.replace(tzinfo=None)
-        except Exception:
-            return datetime.min
-
-    jobs.sort(key=get_sort_date, reverse=True)
+    jobs.sort(key=extract_sort_date, reverse=True)
 
     # Calculate category counts
     category_counts = {}
@@ -1704,12 +1862,18 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
 [![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
 🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
+
+> [!NOTE]
+> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
+> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
+> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
 
 ---
 
@@ -1861,6 +2025,140 @@ Found a job we're missing? Want to report a closed position?
 
     return readme_content
 
+
+def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
+    """Generate an RSS 2.0 feed from the most recent jobs.
+
+    Writes docs/feed.xml so users can subscribe via any feed reader.
+    Zero-cost, zero-infra solution for job alerts.
+    """
+    feed_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'feed.xml')
+
+    # Sort by date descending, take top N
+    jobs.sort(key=extract_sort_date, reverse=True)
+    sorted_jobs = jobs[:max_items]
+
+    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+    items = []
+    for job in sorted_jobs:
+        company = job.get('company', 'Unknown')
+        title = job.get('title', 'Unknown')
+        url = job.get('url', '')
+        location = job.get('location', 'Remote')
+        category = job.get('category', {}).get('name', 'General')
+        posted_at_dt = extract_sort_date(job)
+        pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
+
+        items.append(f"""    <item>
+      <title>{xml_escape(title)} at {xml_escape(company)}</title>
+      <link>{xml_escape(url)}</link>
+      <description>New grad role at {xml_escape(company)} in {xml_escape(location)}. Category: {xml_escape(category)}</description>
+      <pubDate>{pubDate}</pubDate>
+      <guid isPermaLink="true">{xml_escape(url)}</guid>
+    </item>""")
+
+    rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Grad Jobs</title>
+    <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
+    <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
+    <language>en-us</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+    <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+
+    try:
+        os.makedirs(os.path.dirname(feed_path), exist_ok=True)
+        with open(feed_path, 'w', encoding='utf-8') as f:
+            f.write(rss_xml)
+        print(f"📡 RSS feed generated with {len(sorted_jobs)} items → docs/feed.xml")
+    except Exception as e:
+        print(f"⚠️  Failed to write RSS feed: {e}")
+
+
+def generate_health_json(jobs: List[Dict[str, Any]],
+                         source_counts: Dict[str, int],
+                         start_time: float) -> None:
+    """Generate docs/health.json for monitoring and staleness detection.
+
+    Status values:
+      - ok: all sources returned jobs and total > 0
+      - degraded: at least one source returned 0 jobs
+      - failed: total job count is 0
+    """
+    health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
+
+    total_jobs = len(jobs)
+    zero_sources = [s for s, c in source_counts.items() if c == 0]
+
+    if total_jobs == 0:
+        status = 'failed'
+    elif zero_sources:
+        status = 'degraded'
+    else:
+        status = 'ok'
+
+    health = {
+        'status': status,
+        'last_run': datetime.utcnow().isoformat() + 'Z',
+        'total_jobs': total_jobs,
+        'source_counts': source_counts,
+        'zero_sources': zero_sources,
+        'run_duration_seconds': round(time.time() - start_time, 1),
+    }
+
+    try:
+        os.makedirs(os.path.dirname(health_path), exist_ok=True)
+        with open(health_path, 'w', encoding='utf-8') as f:
+            json.dump(health, f, indent=2)
+        print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
+    except Exception as e:
+        print(f"⚠️  Failed to write health.json: {e}")
+
+
+def check_job_url_health(jobs: List[Dict[str, Any]],
+                          sample_pct: float = 0.05,
+                          max_checks: int = 50) -> None:
+    """HEAD-request a random sample of job URLs to detect dead links.
+
+    Updates each sampled job in-place with `url_verified` (bool).
+    Best-effort — failures are logged but never block the pipeline.
+    """
+    sample_size = min(max_checks, max(1, int(len(jobs) * sample_pct)))
+    sample = random.sample(jobs, min(sample_size, len(jobs)))
+    verified = 0
+    dead = 0
+
+    for job in sample:
+        url = job.get('url', '')
+        if not url or not url.startswith('http'):
+            continue
+
+        try:
+            parsed = urlparse(url)
+            hostname = parsed.hostname or ''
+            if hostname in ('localhost', '127.0.0.1', '169.254.169.254', '0.0.0.0') or hostname.startswith(('192.168.', '10.', '172.')):
+                continue
+
+            resp = HTTP_SESSION.head(url, timeout=4, allow_redirects=True)
+            if resp.status_code < 400:
+                job['url_verified'] = True
+                verified += 1
+            else:
+                job['url_verified'] = False
+                dead += 1
+        except Exception:
+            job['url_verified'] = False
+            dead += 1
+
+    print(f"🔍 URL health check: {verified} verified, {dead} dead/unreachable out of {sample_size} sampled")
+
+
 def main():
     """Main function to scrape jobs and update README
 
@@ -1876,6 +2174,29 @@ def main():
     # Load configuration
     config = load_config()
 
+    # Load worker pool configurations from config.yml with fallbacks
+    global DEFAULT_GREENHOUSE_MIN_WORKERS, DEFAULT_GREENHOUSE_MAX_WORKERS
+    global DEFAULT_LEVER_MIN_WORKERS, DEFAULT_LEVER_MAX_WORKERS
+    global DEFAULT_GOOGLE_MIN_WORKERS, DEFAULT_GOOGLE_MAX_WORKERS
+    global DEFAULT_JOBSPY_WORKERS, DEFAULT_ORCHESTRATOR_WORKERS
+
+    pools = config.get('worker_pools', {})
+    DEFAULT_GREENHOUSE_MIN_WORKERS = pools.get('greenhouse_min_workers', DEFAULT_GREENHOUSE_MIN_WORKERS)
+    DEFAULT_GREENHOUSE_MAX_WORKERS = pools.get('greenhouse_max_workers', DEFAULT_GREENHOUSE_MAX_WORKERS)
+    DEFAULT_LEVER_MIN_WORKERS = pools.get('lever_min_workers', DEFAULT_LEVER_MIN_WORKERS)
+    DEFAULT_LEVER_MAX_WORKERS = pools.get('lever_max_workers', DEFAULT_LEVER_MAX_WORKERS)
+    DEFAULT_GOOGLE_MIN_WORKERS = pools.get('google_min_workers', DEFAULT_GOOGLE_MIN_WORKERS)
+    DEFAULT_GOOGLE_MAX_WORKERS = pools.get('google_max_workers', DEFAULT_GOOGLE_MAX_WORKERS)
+    DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
+    DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
+
+    print(f"   Worker pools configured:")
+    print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
+    print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
+    print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
+    print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
+    print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
+
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
@@ -1886,8 +2207,7 @@ def main():
     print(f"   Lever: {lever_count} companies")
     print(f"   Workday: {workday_count} companies")
     print(f"   TOTAL: {total_companies} companies")
-    if total_companies < 10000:
-        print(f"   ⚠️  WARNING: Expected ~10,000 but only loaded {total_companies}!")
+    # P6: Removed stale 10K company warning — config has ~200 companies by design.
     print("="  * 60)
 
     # Collect all jobs using parallel fetchers
@@ -1897,8 +2217,8 @@ def main():
     print("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
 
     # Master parallel fetcher: runs Greenhouse, Lever, Google, JobSpy, Workday concurrently
-    # Increased to 10 workers to handle all sources at maximum parallelism for 1000+ companies
-    with ThreadPoolExecutor(max_workers=20) as executor:  # AGGRESSIVE: 20 parallel APIs
+    # Increased to 20 workers (DEFAULT_ORCHESTRATOR_WORKERS) to handle all sources at maximum parallelism for 1000+ companies
+    with ThreadPoolExecutor(max_workers=DEFAULT_ORCHESTRATOR_WORKERS) as executor:  # AGGRESSIVE: 20 parallel APIs
         futures = {}
 
         # Submit Greenhouse parallel fetch
@@ -1915,8 +2235,10 @@ def main():
                 config['apis']['lever']['companies']
             )
 
-        # Submit Google parallel fetch
-        if 'google' in config['apis'] and config['apis']['google'].get('search_terms'):
+        # Submit Google parallel fetch (P5: gated on enabled flag)
+        if ('google' in config['apis']
+                and config['apis']['google'].get('enabled', True)
+                and config['apis']['google'].get('search_terms')):
             futures['google'] = executor.submit(
                 fetch_google_jobs_parallel,
                 config['apis']['google']['search_terms']
@@ -1937,12 +2259,15 @@ def main():
             )
 
         # Collect results from all futures
+        source_counts = {}  # C1: Track per-source job counts for health.json
         for source, future in futures.items():
             try:
                 jobs = future.result()
                 all_jobs.extend(jobs)
+                source_counts[source] = len(jobs)
                 print(f"  ✅ {source.upper()}: {len(jobs)} jobs collected")
             except Exception as e:
+                source_counts[source] = 0
                 print(f"  ❌ {source.upper()} failed: {e}")
 
     # Fetch from third-party scraping APIs (if configured) - these are usually disabled
@@ -1978,6 +2303,9 @@ def main():
     enriched_jobs = enrich_jobs(filtered_jobs)
     print(f"   Jobs enriched with categories and flags")
 
+    # C3: Check a sample of job URLs for dead links
+    check_job_url_health(enriched_jobs)
+
     # Generate JSON data
     # Sanitize jobs to remove NaN values
     def sanitize_value(v):
@@ -2004,9 +2332,10 @@ def main():
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
 
-    # Write JSON file
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'jobs.json')
+    # Write JSON file to docs/ (GitHub Pages source directory)
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'jobs.json')
     try:
+        os.makedirs(os.path.dirname(json_path), exist_ok=True)
         with open(json_path, 'w') as f:
             json.dump(jobs_json, f, indent=2)
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
@@ -2025,6 +2354,12 @@ def main():
     except Exception as e:
         print(f"Error writing README.md: {e}")
         sys.exit(1)
+
+    # ========== Generate RSS Feed ==========
+    generate_rss_feed(enriched_jobs)
+
+    # ========== Generate Health Report ==========
+    generate_health_json(enriched_jobs, source_counts, start_time)
 
     # Report execution time
     elapsed = time.time() - start_time

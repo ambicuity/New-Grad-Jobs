@@ -2,6 +2,14 @@
 
 First off — **thank you** for taking the time to contribute! 🎉
 
+> [!TIP]
+> **TL;DR Quick Start (3 steps):**
+> 1. **Find** an issue tagged [`good first issue`](https://github.com/ambicuity/New-Grad-Jobs/labels/good%20first%20issue) and comment `/assign`
+> 2. **Setup** your local environment: `git clone` → `make setup` → `make test` (all green)
+> 3. **Ship** your change on a branch, then open a PR with `Fixes #<issue-number>` in the description
+>
+> Full details in the sections below.
+
 New Grad Jobs is a fully automated job aggregator that helps new graduates find their first tech role. Every contribution — whether it's submitting a missing job, fixing a bug in the scraper, improving the frontend, or helping with docs — directly helps thousands of job seekers.
 
 > **Heads-up:** `README.md` is auto-generated every 5 minutes by GitHub Actions. **Never edit it manually** — your changes will be overwritten.
@@ -28,6 +36,8 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 10. [Code Style](#10-code-style)
 11. [Good First Issues](#11-good-first-issues)
 12. [Bot Commands (Slash Commands)](#12-bot-commands-slash-commands)
+13. [When Will My PR Be Merged?](#13-when-will-my-pr-be-merged)
+14. [Security & Signed Releases](#14-security--signed-releases)
 
 ---
 
@@ -356,9 +366,68 @@ Resolves #789
 
 This is a **hard requirement**. Unlinked PRs will be asked to add the link before review begins.
 
-#### 5.5 — Title your PR
+#### 5.5 — Title your PR correctly (most common mistake)
 
-Use a Conventional Commit title, or just name the PR `@coderabbitai` and the bot will generate the correct title for you automatically.
+> [!IMPORTANT]
+> **The bot will reject your PR automatically if the title is wrong.** It will post a
+> comment explaining the correct format. Fix the title and the check will re-run.
+
+##### Format
+
+```
+<type>(<scope>): <short summary in imperative mood, lowercase, no period>
+```
+
+##### Types — pick the one that matches your change
+
+| Type | Use when… | Example |
+|------|-----------|---------|
+| `feat` | You added a new feature or new company | `feat(config): add Stripe to Greenhouse companies` |
+| `fix` | You fixed a bug | `fix(scraper): handle None date in normalize_date_string` |
+| `docs` | Documentation only, no code change | `docs(contributing): clarify assignment workflow` |
+| `test` | Added or fixed tests, no production code change | `test(filter): add edge case for empty location string` |
+| `chore` | Maintenance — deps, CI config, housekeeping | `chore(ci): bump actions/checkout from v3 to v4` |
+| `refactor` | Code change that is neither a fix nor a feature | `refactor(scraper): extract date parsing into helper` |
+| `perf` | Performance improvement | `perf(scraper): cache company tier lookups with lru_cache` |
+
+##### Scopes — optional but recommended
+
+Use the area of the repo your change touches:
+
+| Scope | When to use |
+|-------|-------------|
+| `scraper` | Changes to `scripts/update_jobs.py` |
+| `config` | Changes to `config.yml` |
+| `filter` | Changes to `filter_jobs()` or related logic |
+| `dedup` | Changes to `deduplicate_jobs()` or `get_job_key()` |
+| `ci` | GitHub Actions workflow changes |
+| `docs` | Markdown files, `docs/` website |
+| `tests` | Files under `tests/` |
+| `frontend` | HTML/CSS/JS in `docs/` |
+
+##### Real examples from this repo
+
+```
+✅ feat(config): add Palantir and Two Sigma to Greenhouse companies
+✅ fix(scraper): skip jobs with NaN posted_at instead of crashing
+✅ fix(filter): handle Unicode characters in company names
+✅ docs(readme): update contribution steps in CONTRIBUTING.md
+✅ test(dedup): add test for get_job_key with math.nan input
+✅ chore(ci): pin trivy-action to v0.28.0 for reproducibility
+✅ refactor(scraper): move sponsorship detection to detect_sponsorship_flags()
+✅ perf(scraper): reduce max_workers from 300 to 100 for Workday endpoints
+
+❌ Update config                          ← no type, no scope
+❌ Fixed the bug                          ← no type, too vague
+❌ feat: Added new companies to the list  ← not imperative mood, has capital letter
+❌ WIP: testing stuff                     ← not a valid type
+```
+
+##### Shortcut: let the bot do it
+
+Name your PR exactly `@coderabbitai` as the title. CodeRabbit will read your
+diff and rename it to a correct Conventional Commit title automatically within
+a few seconds of opening the PR.
 
 ---
 
@@ -548,6 +617,61 @@ Our repository uses bots to automate the contributor workflow. You can interact 
 3. **Stuck?** → Comment `/need help` and a maintainer will assist you.
 4. **Life happens?** → Comment `/unassign` to gracefully step away. No hard feelings.
 5. **Went silent?** → After 2 days of inactivity, the bot will check in. After 7 days with no response, it will gently unassign you so someone else can help.
+
+---
+
+## 13. When Will My PR Be Merged?
+
+The maintainer (`@ambicuity`) merges PRs manually after reviewing. Here is the exact decision matrix:
+
+### ✅ Ready to Merge — all of the following must be true:
+
+| Check | Required? |
+|-------|-----------|
+| All required CI checks are green | ✅ Yes |
+| At least one maintainer approval (`@ambicuity`) | ✅ Yes |
+| PR body contains `Fixes #N` / `Closes #N` | ✅ Yes |
+| PR title follows Conventional Commits format | ✅ Yes |
+| No merge conflicts with `main` | ✅ Yes |
+| PR has been open ≥ 24 hours (except trivial config additions) | ✅ Yes |
+
+### ⚠️ Partial Red — Some failures are acceptable:
+
+| Failing Check | Can We Merge? | Why |
+|---------------|--------------|-----|
+| Codecov upload | ✅ Yes | Informational only — token issues don't block correctness |
+| Check Dead Links (on config-only PRs) | ✅ Yes | README link checker fires false positives on `config.yml` PRs |
+| All-Contributors bot | ✅ Yes | Community recognition — never blocks a merge |
+
+### ❌ Hard Blockers — Do NOT merge:
+
+| Failing Check | Why It Blocks |
+|---------------|--------------|
+| `CI — Lint & Validate` | Syntax errors or broken config will break the scraper |
+| `Test Suite (pytest)` | Failing tests = known regression |
+| `Code Hygiene (Pre-commit)` | Secrets, malformed YAML, broken imports |
+| `CodeQL Security Scan` | Security vulnerability in merged code |
+| `Trivy` | Known dependency CVE at CRITICAL/HIGH severity |
+| `Validate Job Submissions` | Malformed `jobs.json` will break GitHub Pages |
+| `PR Title Check` | PR cannot be auto-merged without a clean commit message |
+| `Linked Issue Enforcer` | Every community PR must be tied to a tracked issue |
+| Merge conflict | Cannot squash-merge a conflicted PR |
+
+### Auto-Merge (Dependabot)
+
+Dependabot patch and minor updates are **automatically approved and squash-merged** once all CI checks pass. No manual action needed. Major version bumps require explicit maintainer review.
+
+---
+
+## 14. Security & Signed Releases
+
+New Grad Jobs takes supply chain security seriously. We have achieved a **10/10** on the OpenSSF Scorecard for Signed Releases!
+
+### What Does This Mean for You?
+Every release of this repository is automatically packaged and cryptographically signed using **Sigstore** (keyless OIDC signing).
+When you download a release from our Releases page, you'll also find a `.sig` file alongside the `.tar.gz` archive.
+
+If you are just contributing code, you don't need to do anything! Our automated `release-please.yml` workflow takes care of the signing automatically whenever a new version is published.
 
 ---
 

@@ -4,8 +4,8 @@ contact_links:
     url: https://github.com/ambicuity/New-Grad-Jobs/discussions
     about: Questions, feedback, and general job search chat — use Discussions, not Issues
   - name: 🔒 Report a Security Vulnerability
-    url: mailto:contact@riteshrana.engineer
-    about: Please email privately — do NOT open a public issue for security bugs
+    url: https://github.com/ambicuity/New-Grad-Jobs/security/advisories/new
+    about: Use GitHub Private Vulnerability Reporting — do NOT open a public issue for security bugs
   - name: ⭐ Star this repo
     url: https://github.com/ambicuity/New-Grad-Jobs
     about: Star to stay updated with new jobs and help others discover the project!

@@ -1,0 +1,121 @@
+name: PR Assignment Check
+
+# Verifies that the PR author is actually assigned to the linked issue.
+# Prevents contributors from submitting PRs for issues assigned to someone else.
+# Exempts the maintainer and bots.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions: read-all
+jobs:
+  assignment-check:
+    name: Verify PR Author is Assigned to Linked Issue
+    permissions:
+      pull-requests: write
+      issues: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check assignment
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+            const body = pr.body || '';
+            const prNumber = pr.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Maintainer and bots are always allowed
+            const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
+            if (EXEMPT_USERS.includes(author)) {
+              console.log(`Exempt user ${author} — skipping assignment check.`);
+              return;
+            }
+
+            // Extract issue number from "Fixes #N", "Closes #N", "Resolves #N"
+            const issueMatch = body.match(/(fixes|closes|resolves)\s+#(\d+)/i);
+            if (!issueMatch) {
+              // bot-linked-issue-enforcer handles the missing-link case — don't double-post
+              console.log('No linked issue found in PR body — deferring to linked-issue-enforcer.');
+              return;
+            }
+
+            const issueNumber = parseInt(issueMatch[2], 10);
+
+            // Fetch the issue and check assignees
+            let issue;
+            try {
+              const response = await github.rest.issues.get({
+                owner, repo, issue_number: issueNumber
+              });
+              issue = response.data;
+            } catch (err) {
+              console.log(`Could not fetch issue #${issueNumber}: ${err.message}`);
+              return;
+            }
+
+            const assignees = (issue.assignees || []).map(a => a.login);
+            if (assignees.includes(author)) {
+              console.log(`${author} is assigned to #${issueNumber}. Check passed.`);
+
+              // Clean up any prior failure comment
+              const comments = await github.rest.issues.listComments({
+                owner, repo, issue_number: prNumber
+              });
+              const staleComment = comments.data.find(c =>
+                c.user.login === 'github-actions[bot]' &&
+                c.body.includes('not assigned to the linked issue')
+              );
+              if (staleComment) {
+                await github.rest.issues.deleteComment({
+                  owner, repo, comment_id: staleComment.id
+                });
+              }
+              return;
+            }
+
+            // Author is not assigned — post a failure comment
+            const bold = (s) => `**${s}**`;
+            const failureBody = [
+              '## PR Author Is Not Assigned to the Linked Issue',
+              '',
+              `@${author}, this PR references issue #${issueNumber}, but you are not assigned to it.`,
+              '',
+              bold('Why this matters:') + ' Only one contributor works on an issue at a time.',
+              'If two people submit PRs for the same issue, one of them will be wasted effort.',
+              '',
+              bold('How to fix:'),
+              `1. Go to issue #${issueNumber} and check if it is already assigned to someone else.`,
+              '2. If it is unassigned, comment `/assign` on the issue to claim it.',
+              '3. If it is assigned to someone else, please pick a different unassigned issue.',
+              '',
+              'This check will pass automatically once you are assigned to the issue.',
+            ].join('\n');
+
+            // Post or update the failure comment
+            const allComments = await github.rest.issues.listComments({
+              owner, repo, issue_number: prNumber
+            });
+            const existingComment = allComments.data.find(c =>
+              c.user.login === 'github-actions[bot]' &&
+              c.body.includes('not assigned to the linked issue')
+            );
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existingComment.id, body: failureBody
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prNumber, body: failureBody
+              });
+            }
+
+            core.setFailed(
+              `${author} is not assigned to linked issue #${issueNumber}. ` +
+              `Comment /assign on the issue first.`
+            );

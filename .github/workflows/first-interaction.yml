@@ -1,4 +1,4 @@
-name: First Interaction Welcome
+name: PR & Issue Welcome
 
 on:
   issues:
@@ -6,29 +6,105 @@ on:
   pull_request_target:
     types: [opened]
 
-permissions:
-  issues: write
-  pull-requests: write
-
+permissions: read-all
 jobs:
-  first-interaction:
+  welcome:
+    name: Welcome Contributor
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/first-interaction@v3
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          issue_message: |
-            👋 Welcome, and thank you for opening your first issue on **New Grad Jobs**!
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const author = context.payload.sender.login;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
 
-            A maintainer will review this shortly. In the meantime:
-            - Check the [CONTRIBUTING guide](../blob/main/CONTRIBUTING.md) for setup instructions
-            - Browse [existing issues](../../issues) to avoid duplicates
-            - If this is a job listing request, use the [New Role template](../../issues/new?template=new_role.yml)
+            // Skip bots
+            if (author.includes('[bot]') || author === 'dependabot[bot]') {
+              console.log(`Skipping bot: ${author}`);
+              return;
+            }
 
-            Every report and contribution helps thousands of new graduates find their first tech job. We appreciate you! 🚀
-          pr_message: |
-            👋 Thank you for your first pull request to **New Grad Jobs**!
+            // Skip the repo owner — no need to welcome yourself
+            if (author === owner) {
+              console.log(`Skipping repo owner: ${author}`);
+              return;
+            }
 
-            Our CI bots are running checks on your code now. A maintainer will review your changes shortly.
+            // Check if contributor is already in the Hall of Fame
+            let isNewContributor = true;
+            let prCount = 0;
+            try {
+              const { data: rcFile } = await github.rest.repos.getContent({
+                owner, repo,
+                path: '.all-contributorsrc',
+              });
+              const rcContent = JSON.parse(
+                Buffer.from(rcFile.content, 'base64').toString('utf-8')
+              );
+              const existingLogins = (rcContent.contributors || []).map(c => c.login.toLowerCase());
+              isNewContributor = !existingLogins.includes(author.toLowerCase());
+            } catch (err) {
+              console.log(`Could not read .all-contributorsrc: ${err.message}`);
+            }
 
-            If you find this project useful, we'd love a ⭐️ — it helps other developers find our work. 🚀
+            // For returning contributors, count their merged PRs
+            if (!isNewContributor) {
+              const { data: prs } = await github.rest.search.issuesAndPullRequests({
+                q: `repo:${owner}/${repo} author:${author} type:pr is:merged`,
+              });
+              prCount = prs.total_count;
+            }
+
+            // --- Handle Issues ---
+            if (context.eventName === 'issues') {
+              const issueNumber = context.payload.issue.number;
+              let message;
+
+              if (isNewContributor) {
+                message = `👋 Welcome, and thank you for opening your first issue on **New Grad Jobs**!\n\n` +
+                  `A maintainer will review this shortly. In the meantime:\n` +
+                  `- Check the [CONTRIBUTING guide](../blob/main/CONTRIBUTING.md) for setup instructions\n` +
+                  `- Browse [existing issues](../../issues) to avoid duplicates\n` +
+                  `- If this is a job listing request, use the [New Role template](../../issues/new?template=new_role.yml)\n\n` +
+                  `Every report and contribution helps thousands of new graduates find their first tech job. We appreciate you! 🚀`;
+              } else {
+                message = `👋 Welcome back, @${author}! Thanks for opening another issue.\n\n` +
+                  `You've already contributed **${prCount} merged PR${prCount !== 1 ? 's' : ''}** to this project — we value your continued involvement. ` +
+                  `A maintainer will review this shortly. 🙏`;
+              }
+
+              await github.rest.issues.createComment({
+                owner, repo,
+                issue_number: issueNumber,
+                body: message
+              });
+              return;
+            }
+
+            // --- Handle Pull Requests ---
+            if (context.eventName === 'pull_request_target') {
+              const prNumber = context.payload.pull_request.number;
+              let message;
+
+              if (isNewContributor) {
+                message = `👋 Thank you for your first pull request to **New Grad Jobs**!\n\n` +
+                  `Our CI bots are running checks on your code now. A maintainer will review your changes shortly.\n\n` +
+                  `If you find this project useful, we'd love a ⭐️ — it helps other developers find our work. 🚀`;
+              } else {
+                message = `👋 Welcome back, @${author}! Great to see PR **#${prNumber}** from you.\n\n` +
+                  `You've contributed **${prCount} merged PR${prCount !== 1 ? 's' : ''}** so far — thank you for your continued support! ` +
+                  `CI is running now, and a maintainer will review shortly. 🚀`;
+              }
+
+              await github.rest.issues.createComment({
+                owner, repo,
+                issue_number: prNumber,
+                body: message
+              });
+            }

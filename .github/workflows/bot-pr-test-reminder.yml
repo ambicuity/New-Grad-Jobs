@@ -1,0 +1,116 @@
+name: Test Coverage Reminder
+
+# Advisory check: if update_jobs.py is modified but no files in tests/ are
+# changed, posts a one-time comment asking the contributor to add tests.
+# Non-blocking (does not fail CI) — CodeRabbit enforces test requirements at review.
+# Exempts the maintainer, bots, and config-only changes.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'scripts/update_jobs.py'
+
+permissions: read-all
+jobs:
+  test-reminder:
+    name: Test Coverage Reminder
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for tests alongside scraper changes
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const author = pr.user.login;
+            const prNumber = pr.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const EXEMPT_USERS = ['ambicuity', 'github-actions[bot]', 'dependabot[bot]'];
+            if (EXEMPT_USERS.includes(author)) {
+              console.log(`Exempt user ${author} — skipping test reminder.`);
+              return;
+            }
+
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner, repo, pull_number: prNumber
+            });
+
+            const filenames = files.map(f => f.filename);
+            const touchedScraper = filenames.includes('scripts/update_jobs.py');
+            const touchedTests = filenames.some(f => f.startsWith('tests/'));
+
+            if (!touchedScraper || touchedTests) {
+              console.log('Tests present or scraper not modified. No reminder needed.');
+
+              // Remove prior reminder if tests were added in a later push
+              if (touchedTests) {
+                const comments = await github.rest.issues.listComments({
+                  owner, repo, issue_number: prNumber
+                });
+                const prior = comments.data.find(c =>
+                  c.user.login === 'github-actions[bot]' &&
+                  c.body.includes('no test file was changed')
+                );
+                if (prior) {
+                  await github.rest.issues.deleteComment({
+                    owner, repo, comment_id: prior.id
+                  });
+                  console.log('Removed prior test coverage reminder (tests now present).');
+                }
+              }
+              return;
+            }
+
+            // Check if we already reminded on a prior push
+            const allComments = await github.rest.issues.listComments({
+              owner, repo, issue_number: prNumber
+            });
+            const alreadyPosted = allComments.data.some(c =>
+              c.user.login === 'github-actions[bot]' &&
+              c.body.includes('no test file was changed')
+            );
+            if (alreadyPosted) {
+              console.log('Already posted test reminder. Skipping.');
+              return;
+            }
+
+            const bold = (s) => `**${s}**`;
+            const body = [
+              '## Reminder: Add Tests for Scraper Changes',
+              '',
+              `@${author} — this PR modifies \`scripts/update_jobs.py\` but`,
+              'no test file was changed in `tests/`.',
+              '',
+              bold('Why tests matter here:'),
+              '- The scraper runs every 5 minutes in production with no manual oversight.',
+              '- Edge cases (None, NaN, Unicode, empty strings) will silently break data.',
+              '- A missing test today is a 2AM incident report tomorrow.',
+              '',
+              bold('What to add:'),
+              '- A `pytest` test in `tests/test_*.py` covering your change.',
+              '- Test the happy path AND at least one edge case (None, empty, malformed).',
+              '- No live network calls — mock HTTP with `unittest.mock.patch`.',
+              '',
+              '```python',
+              '# Example: tests/test_scraper.py',
+              'def test_normalize_date_returns_none_for_empty_string():',
+              '    assert normalize_date_string("") is None',
+              '',
+              'def test_normalize_date_handles_nan():',
+              '    import math',
+              '    assert normalize_date_string(math.nan) is None',
+              '```',
+              '',
+              '_This is a reminder only — it does not block merging._',
+              '_CodeRabbit will require tests during review if the change warrants them._',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: prNumber, body
+            });
+            console.log('Posted test coverage reminder.');

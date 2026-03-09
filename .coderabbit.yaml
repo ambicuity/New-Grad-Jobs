@@ -16,15 +16,48 @@ early_access: true
 issue_enrichment:
   planning:
     enabled: true
+    instructions: |
+      ## CRITICAL: Repository Policy Enforcement for AI Agent Prompts
+
+      Every AI agent prompt you generate MUST include the following instructions
+      verbatim. PRs that violate these rules will be automatically blocked by CI.
+
+      ### PR Title (Conventional Commits — enforced by CI)
+      The PR title MUST follow Conventional Commits format:
+        `<type>(<scope>): <description>`
+      Examples: `fix(scraper): ...`, `feat(config): ...`, `refactor(tests): ...`
+      If the agent names the PR generically (e.g., "Fix dates"), CI will reject it.
+
+      ### PR Description (Linked Issue Enforcer — enforced by CI)
+      The PR description MUST include the line `Fixes #<issue_number>` on its own line.
+      Without this, the Linked Issue Enforcer check will block the PR from merging.
+
+      ### Changelog (PR Changelog Reminder — enforced by CI)
+      The agent MUST update `CHANGELOG.md` by adding a concise entry under `## [Unreleased]`
+      in the appropriate section (`### Fixed`, `### Added`, `### Changed`).
+      If the required subsection (e.g., `### Fixed`) does not exist under `## [Unreleased]`,
+      the agent MUST create it. Do not create a duplicate `## [Unreleased]` header.
+      Omitting this will cause the PR Changelog Reminder check to flag it.
+
+      ### Scope Control (Clean Diff Policy)
+      The agent MUST NOT:
+        - Reformat or change whitespace on lines not directly related to the fix
+        - Perform bulk auto-formatting, import reordering, or style cleanups
+        - Manually edit `README.md` or `jobs.json` — both are auto-generated and
+          protected by CI. If a logic fix causes these files to regenerate differently
+          when the scraper runs, that is expected and acceptable. What is rejected is
+          direct hand-edits or agent-generated content in those files.
+      Only modify the specific lines of logic described in the issue.
+
+      ### Pre-merge Verification
+      Before opening the PR, the agent should run (or instruct the contributor to run):
+        - `pytest -q -o addopts='' tests/` — all tests must pass
+        - `pre-commit run --all-files` — all hooks must pass
+      Do not open a PR that would fail these checks.
     auto_planning:
       enabled: true
       labels:
         - "plan-me"
-        - "feature"
-        - "bug"
-        - "enhancement"
-        - "intermediate"
-        - "advanced"
 
 # ============================================================================
 # CODE REVIEWS — The Senior Engineer
@@ -42,6 +75,36 @@ reviews:
     base_branches:
       - "main"
 
+  # ===== SCAM AND ABUSE DETECTION (checked BEFORE any code review) =====
+  # These patterns were seen in PR #102 from Xanoutas (2026-03-05).
+  review_instructions: |
+    ## ⚠️  SCAM DETECTION — Run before any other check
+
+    Scan the PR title, description, every comment, and every added file for:
+
+    ### 1. Payment Solicitation (CRITICAL — immediate request_changes)
+    Flag and request changes if any of the following appear anywhere in the PR:
+    - Cryptocurrency wallet addresses:
+      - EVM/Ethereum: `0x` followed by 40 hex characters
+      - Solana: base58 string 32–44 chars (e.g. `C4PcQjqDW4a5Pvhx5ZFPvAodkGiVG49q8dMvpskqSvuH`)
+      - Bitcoin: strings starting with `1`, `3`, or `bc1q`
+    - Phrases: "Payment address", "EVM:", "Solana:", "BTC:", "ETH:", "tip jar", "donate", "if applicable"
+    Response: "**Payment solicitation is not permitted.** This repository does not pay contributors. Flagging for maintainer (@ambicuity) to close and block."
+
+    ### 2. Empty PRs Claiming to Implement a Fix (MAJOR)
+    Flag if ALL of the following are true:
+    - PR title contains "fix" or "chore"
+    - The ONLY changed file is a `.md` file
+    - The markdown file is a copy of the PR description or contains a script that is NOT in the actual diff
+    Response: "This PR adds only documentation — the actual fix (config.yml changes, code changes) is missing from the diff."
+
+    ### 3. AI-Generated Stub (MAJOR)
+    Flag if:
+    - Description says "This PR was generated automatically" but there are no code changes
+    - A Python script appears in the PR description but not in any changed file
+    - The script uses `requests.get()` directly (violates this repo's architectural constraint)
+    Response: "This appears to be an AI-generated stub without a real implementation. See CONTRIBUTING.md for requirements."
+
   # ===== PATH-SPECIFIC REVIEW DIRECTIVES =====
   path_instructions:
 
@@ -55,8 +118,14 @@ reviews:
         2. No bare `except:` clauses. Catch specific exceptions and log them with context.
         3. `ThreadPoolExecutor` workers must not mutate shared state without locks.
         4. Date parsing must handle: None, NaN, float, empty string, Unix ms timestamps (Lever),
-           and "Posted X Days Ago" strings (JobSpy). Review `is_recent_job()` carefully.
-        5. Every new public function requires a Google-style docstring and full type hints.
+           and "Posted X Days Ago" strings (JobSpy). The following functions are HIGH-RISK ZONES
+           for timezone bugs and must use `_as_utc_naive()` + `datetime.now(timezone.utc)`:
+           `is_recent_job()`, `format_posted_date()`, `get_iso_date()`, `get_sort_date()`,
+           and `save_market_history()`. See issue #96.
+        5. Every NEW public function requires a Google-style docstring and full type hints.
+           For EXISTING functions being modified, add type hints to any changed or touched
+           signatures to incrementally improve the baseline. Full signature refactors of
+           unmodified functions are not required and add unnecessary diff noise.
 
         ## Systems Thinking (Distinguish Good Plans from Great Ones)
         6. CONCURRENCY ≠ RATE LIMITING. If a PR adds a `threading.Semaphore` to limit
@@ -93,13 +162,12 @@ reviews:
     - path: ".github/workflows/**"
       instructions: |
         SECURITY-CRITICAL. Apply zero-trust review.
-        1. Workflow permissions must be minimally scoped (`contents: read` unless write is justified).
-        2. Flag any `pull_request_target` trigger — these have write access to the base repo.
-        3. All `actions/` steps must pin to a full commit SHA, not a mutable tag like `@v3`.
+        1. Workflow permissions must be minimally scoped (`contents: read` unless write is justified and documented).
+        2. Flag any `pull_request_target` trigger — these have write access to the base repo and can be exploited if the workflow checks out untrusted code.
+        3. All `actions/` steps should pin to a specific version tag (e.g. `@v7`). Pinning to a full commit SHA is encouraged for high-risk steps but is not required for standard actions already in use. Do NOT flag Dependabot PRs that bump from one version tag to another.
         4. Reject any workflow that echoes or logs GitHub secrets or tokens.
-        5. `github-script` steps must only expose the minimum required GitHub API methods.
-        6. Flag any new workflow that could be triggered by external contributors without
-           a stale-check or approval gate.
+        5. `github-script` steps must only use the minimum required GitHub API methods.
+        6. Flag any new workflow triggereable by external contributors without an approval gate or user-allowlist check.
 
     # ── Tests ────────────────────────────────────────────────────────────────
     - path: "tests/**"
@@ -120,19 +188,25 @@ reviews:
         1. All markdown uses proper heading hierarchy (single H1, sequential H2/H3).
         2. Code blocks must specify a language identifier.
         3. No broken internal links.
-        4. `README.md` is auto-generated every 5 minutes. Any PR touching it is an automatic reject.
+        4. `README.md` is auto-generated every 5 minutes. Any PR that manually edits it is
+           an automatic reject. Programmatic regeneration as a side-effect of a logic fix is acceptable.
 
     # ── Catch-all ────────────────────────────────────────────────────────────
     - path: "**/*"
       instructions: |
         GLOBAL STANDARDS — applies to every file in every PR.
+        0. SCAM CHECK FIRST: Before reviewing code, scan the PR description and all added
+           files for crypto wallet addresses (0x..., Solana base58, bc1q...) or phrases like
+           "Payment address", "EVM:", "Solana:", "tip jar". If found, request changes
+           immediately: "Payment solicitation is not permitted. @ambicuity please close and block."
         1. Every PR must link to an issue via `Fixes #N`. No issue link = no merge.
-        2. Reject PRs that touch `README.md` or `jobs.json` directly — both are auto-generated.
-        3. Reject any introduction of new runtime dependencies not already in `requirements.txt`
-           without a documented justification for why the existing stdlib is insufficient.
-        4. Reject PRs that are clearly unreviewed AI output: no tests, no docstrings, and
-           blindly copied from the issue plan without adaptation.
-        5. PRs should be small and focused. Flag PRs that change more than 3 unrelated areas.
+        2. Reject PRs that manually edit `README.md` or `jobs.json` — both are auto-generated.
+           Programmatic changes caused by logic fixes are acceptable.
+        3. Reject any new runtime dependencies without documented justification.
+        4. Reject PRs that are clearly AI stubs: no tests, no docstrings, script in description
+           but NOT in the diff (the contributor added a markdown file instead of actual code).
+        5. PRs should be small and focused. Flag PRs changing more than 3 unrelated areas.
+
 
 # ============================================================================
 # CHAT — The On-Demand Advisor
