@@ -110,6 +110,16 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "sebmuehlbauer",
+      "name": "sebmuehlbauer",
+      "avatar_url": "https://avatars.githubusercontent.com/sebmuehlbauer",
+      "profile": "https://github.com/sebmuehlbauer",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7
