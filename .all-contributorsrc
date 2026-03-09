@@ -102,6 +102,18 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "half-measures",
+      "name": "Mick",
+      "avatar_url": "https://avatars.githubusercontent.com/u/210384441?v=4",
+      "profile": "https://github.com/half-measures",
+      "contributions": [
+        "doc",
+        "infra",
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
