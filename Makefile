@@ -1,19 +1,11 @@
 .PHONY: setup test clean lint format run help
 
 # Global variables
-# Detect if we are on Windows or Linux/Mac
-ifeq ($(OS),Windows_NT)
-    PYTHON := python
-    VENV := .venv
-    VENV_PYTHON := $(VENV)/Scripts/python.exe
-    VENV_PIP := $(VENV)/Scripts/pip.exe
-else
-    PYTHON := python3
-    VENV := .venv
-    VENV_PYTHON := $(VENV)/bin/$(PYTHON)
-    VENV_PIP := $(VENV)/bin/pip
-endif
-
+PYTHON := python3
+PIP := pip
+VENV := .venv
+VENV_PYTHON := $(VENV)/bin/$(PYTHON)
+VENV_PIP := $(VENV)/bin/$(PIP)
 
 help: ## Show this help menu
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
