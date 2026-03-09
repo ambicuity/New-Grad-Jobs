@@ -44,7 +44,6 @@ jobs:
             const author = pr.user.login;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const exec = require('@actions/exec');
 
             // Skip bot PRs (dependabot, renovate, etc.)
             if (author.includes('[bot]') || author === 'dependabot[bot]') {

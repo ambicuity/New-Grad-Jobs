@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-03-06T23:23:31.893247",
-    "total_snapshots": 2,
+    "last_updated": "2026-03-09T02:42:33.862316",
+    "total_snapshots": 5,
     "date_range": {
       "start": "2026-03-05",
-      "end": "2026-03-06"
+      "end": "2026-03-09"
     }
   },
   "snapshots": [
@@ -65,12 +65,12 @@
     },
     {
       "date": "2026-03-06",
-      "total_jobs": 1229,
+      "total_jobs": 1228,
       "categories": {},
       "tiers": {
-        "unicorn": 672,
-        "other": 399,
-        "faang_plus": 158
+        "faang_plus": 158,
+        "unicorn": 673,
+        "other": 397
       },
       "top_companies": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 25
+          "jobs": 26
         },
         {
           "company": "Oscar Health",
@@ -114,9 +114,174 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 5.41,
-      "timestamp": "2026-03-06T23:23:31.893075"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 5.43,
+      "timestamp": "2026-03-06T23:50:47.367074"
+    },
+    {
+      "date": "2026-03-07",
+      "total_jobs": 1008,
+      "categories": {},
+      "tiers": {
+        "unicorn": 493,
+        "faang_plus": 152,
+        "other": 363
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 147
+        },
+        {
+          "company": "Waymo",
+          "jobs": 68
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 27
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 27
+        },
+        {
+          "company": "Lyft",
+          "jobs": 26
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 22
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 20
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 18
+        },
+        {
+          "company": "Stripe",
+          "jobs": 17
+        },
+        {
+          "company": "Nuro",
+          "jobs": 17
+        }
+      ],
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.73,
+      "timestamp": "2026-03-07T23:56:14.141157"
+    },
+    {
+      "date": "2026-03-08",
+      "total_jobs": 993,
+      "categories": {},
+      "tiers": {
+        "unicorn": 493,
+        "faang_plus": 152,
+        "other": 348
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 147
+        },
+        {
+          "company": "Waymo",
+          "jobs": 68
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 30
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 27
+        },
+        {
+          "company": "Lyft",
+          "jobs": 26
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 22
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 20
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 18
+        },
+        {
+          "company": "Stripe",
+          "jobs": 17
+        },
+        {
+          "company": "Nuro",
+          "jobs": 17
+        }
+      ],
+      "unique_companies": 211,
+      "avg_jobs_per_company": 4.71,
+      "timestamp": "2026-03-08T23:58:55.838489"
+    },
+    {
+      "date": "2026-03-09",
+      "total_jobs": 997,
+      "categories": {},
+      "tiers": {
+        "unicorn": 493,
+        "faang_plus": 152,
+        "other": 352
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 147
+        },
+        {
+          "company": "Waymo",
+          "jobs": 68
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 30
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 27
+        },
+        {
+          "company": "Lyft",
+          "jobs": 26
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 22
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 20
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 18
+        },
+        {
+          "company": "Stripe",
+          "jobs": 17
+        },
+        {
+          "company": "Nuro",
+          "jobs": 17
+        }
+      ],
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.66,
+      "timestamp": "2026-03-09T02:42:33.862106"
     }
   ]
 }

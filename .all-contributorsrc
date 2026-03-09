@@ -81,6 +81,27 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "kellyn-astro",
+      "name": "kellyn-astro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/266200304?v=4",
+      "profile": "https://github.com/kellyn-astro",
+      "contributions": [
+        "code",
+        "test",
+        "doc"
+      ]
+    },
+    {
+      "login": "P-r-e-m-i-u-m",
+      "name": "🄂ʏᴇᴅ 🄰ʙᴅᴜʟ 🄰ᴍᴀ🄝 ✧",
+      "avatar_url": "https://avatars.githubusercontent.com/u/233445760?v=4",
+      "profile": "https://p-r-e-m-i-u-m.github.io/AmanGenAI/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
