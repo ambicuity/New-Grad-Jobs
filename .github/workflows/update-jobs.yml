@@ -74,4 +74,14 @@ jobs:
             exit 0
           fi
           git commit -m "🤖 Update job listings [skip ci]"
-          git push origin main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt, retrying..."
+            sleep 5
+          done
+          echo "::error::Failed to push updated job listings after 3 attempts."
+          exit 1
