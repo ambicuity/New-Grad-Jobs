@@ -66,13 +66,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull-rebase BEFORE staging so the working tree is clean for rebase.
-          # Doing this inside the retry loop (after git commit) causes:
-          #   "error: cannot rebase: You have unstaged changes."
-          git fetch origin main
-          git rebase origin/main
+          # Pull-rebase BEFORE staging, using autostash because the scraper
+          # just modified the files in the working directory (making it dirty).
+          git config pull.rebase true
+          git pull origin main --autostash
 
-          git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
+          git add README.md docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
           fi
