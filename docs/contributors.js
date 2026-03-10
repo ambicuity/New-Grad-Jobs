@@ -153,4 +153,37 @@ async function loadContributors() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadContributors);
+// ============================================
+// Theme Management
+// ============================================
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    document.documentElement.setAttribute('data-theme', theme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    // Initialize mobile menu if ui.js loaded
+    if (typeof window.initMobileMenu === 'function') {
+        window.initMobileMenu();
+    }
+    
+    loadContributors();
+});
