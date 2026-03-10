@@ -819,6 +819,21 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             offset = 0
             limit = 20
 
+            # Workday now requires a CSRF token for the /jobs POST endpoint.
+            # We must fetch the initial career page to get the CALYPSO_CSRF_TOKEN cookie.
+            csrf_token = ""
+            user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            
+            try:
+                init_resp = limited_get(
+                    workday_url, 
+                    headers={'User-Agent': user_agent}, 
+                    timeout=6
+                )
+                csrf_token = init_resp.cookies.get("CALYPSO_CSRF_TOKEN", "")
+            except Exception as e:
+                print(f"  ⚠️  Failed to fetch CSRF token for {company_name}: {e}")
+
             while True:
                 payload = {
                     "appliedFacets": {},
@@ -830,10 +845,21 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                 headers = {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                    'User-Agent': user_agent
                 }
+                
+                req_cookies = {}
+                if csrf_token:
+                    headers['X-Calypso-Csrf-Token'] = csrf_token
+                    req_cookies['CALYPSO_CSRF_TOKEN'] = csrf_token
 
-                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(
+                    api_url, 
+                    json=payload, 
+                    headers=headers, 
+                    cookies=req_cookies,
+                    timeout=6
+                )
 
                 if response.status_code == 404:
                     # Try alternative tenant extraction if 404
@@ -848,7 +874,13 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
                         if fallback_api_url != api_url:
                             api_url = fallback_api_url
-                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                            response = limited_post(
+                                api_url, 
+                                json=payload, 
+                                headers=headers, 
+                                cookies=req_cookies,
+                                timeout=6
+                            )
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
