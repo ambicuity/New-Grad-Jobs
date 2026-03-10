@@ -118,6 +118,33 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "mitre88",
+      "name": "Dr Alex Mitre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30060514?v=4",
+      "profile": "https://github.com/mitre88",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "by22Jy",
+      "name": "by22Jy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/122969909?v=4",
+      "profile": "https://github.com/by22Jy",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "justaishing",
+      "name": "Fidha Ayisha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/266112220?v=4",
+      "profile": "https://github.com/justaishing",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
