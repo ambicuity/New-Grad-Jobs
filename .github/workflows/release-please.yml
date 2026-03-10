@@ -29,7 +29,7 @@ jobs:
 
       - name: Install Cosign for Keyless Signing
         if: ${{ steps.release.outputs.release_created }}
-        uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
+        uses: sigstore/cosign-installer@ba7bc0a3fef59531c69a25acd34668d6d3fe6f22 # v4.1.0
 
       - name: Create Archive, Sign, and Attach to Release
         if: ${{ steps.release.outputs.release_created }}
