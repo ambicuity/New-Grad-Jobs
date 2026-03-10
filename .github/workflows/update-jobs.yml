@@ -65,6 +65,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Pull-rebase BEFORE staging so the working tree is clean for rebase.
+          # Doing this inside the retry loop (after git commit) causes:
+          #   "error: cannot rebase: You have unstaged changes."
+          git fetch origin main
+          git rebase origin/main
+
           git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
@@ -74,14 +81,19 @@ jobs:
             exit 0
           fi
           git commit -m "🤖 Update job listings [skip ci]"
+
+          # Push-only retry loop (rebase already done above).
           for attempt in 1 2 3; do
-            git fetch origin main
-            git rebase origin/main
             if git push origin HEAD:main; then
+              echo "✅ Push succeeded on attempt ${attempt}"
               exit 0
             fi
-            echo "Push rejected on attempt $attempt, retrying..."
+            echo "Push rejected on attempt ${attempt} (concurrent write race), retrying..."
+            # Another concurrent scraper may have pushed; fast-forward and retry.
+            git fetch origin main
+            git rebase origin/main
             sleep 5
           done
           echo "::error::Failed to push updated job listings after 3 attempts."
           exit 1
+
