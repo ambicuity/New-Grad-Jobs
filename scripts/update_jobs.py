@@ -92,7 +92,7 @@ def create_optimized_session() -> requests.Session:
     retry_strategy = Retry(
         total=3,  # Max 3 retries
         backoff_factor=0.3,  # Wait 0.3, 0.6, 1.2 seconds between retries
-        status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
+        status_forcelist=[422, 429, 500, 502, 503, 504],  # Retry on these HTTP codes (422 = Workday CSRF expired)
         allowed_methods=["GET", "POST"],  # Retry GET and POST
     )
 
@@ -807,6 +807,37 @@ def build_workday_api_url(host: str, site_path: str) -> str:
     return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
 
 
+def get_workday_csrf_token(host: str, session: requests.Session) -> str:
+    """Acquire the X-Calypso-CSRF-Token required by the Workday CXS jobs API.
+
+    Workday's CXS API (``/wday/cxs/.../jobs``) began requiring the
+    ``X-Calypso-CSRF-Token`` header as of early 2026.  The token is issued
+    by the careers homepage as a ``Set-Cookie: CALYPSO_CSRF_TOKEN=<value>``
+    response cookie and must be echoed back as a request header on every
+    subsequent POST.
+
+    Args:
+        host: Workday hostname, e.g. ``boeing.wd1.myworkdayjobs.com``.
+        session: The shared ``requests.Session`` to use for the GET request
+            so that cookies are persisted for the lifetime of the session.
+
+    Returns:
+        The CSRF token string, or an empty string if acquisition fails
+        (graceful degradation — callers should still attempt the POST).
+    """
+    try:
+        careers_url = f"https://{host}/"
+        resp = session.get(careers_url, timeout=DEFAULT_TIMEOUT, allow_redirects=True)
+        # Prefer the header value; fall back to the Set-Cookie cookie.
+        token = resp.headers.get("X-Calypso-CSRF-Token", "")
+        if not token:
+            token = resp.cookies.get("CALYPSO_CSRF_TOKEN", "")
+        return token
+    except Exception as exc:
+        print(f"  ⚠️  Could not acquire Workday CSRF token for {host}: {exc}")
+        return ""
+
+
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
     all_jobs = []
@@ -828,6 +859,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             site_path = parsed.path
             api_url = build_workday_api_url(host, site_path)
 
+            # Acquire CSRF token required by Workday CXS API (mandatory since early 2026).
+            # The token is obtained from a GET to the careers homepage and echoed back
+            # as X-Calypso-CSRF-Token on every POST to the jobs endpoint.
+            csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+
             jobs = []
             offset = 0
             limit = 20
@@ -837,7 +873,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     "appliedFacets": {},
                     "limit": limit,
                     "offset": offset,
-                    "searchText": "" # Fetch all, filter locally
+                    "searchText": ""  # Fetch all, filter locally
                 }
 
                 headers = {
@@ -845,13 +881,14 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'Accept': 'application/json',
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
+                if csrf_token:
+                    headers['X-Calypso-CSRF-Token'] = csrf_token
 
-                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
                 if response.status_code == 404:
-                    # Try alternative tenant extraction if 404
+                    # Try alternative tenant extraction if 404.
                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    # In that case, tenant is matching path[0]
                     path_parts = [part for part in site_path.strip('/').split('/') if part]
                     if len(path_parts) >= 2:
                         fallback_tenant = path_parts[0]
@@ -861,7 +898,20 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
                         if fallback_api_url != api_url:
                             api_url = fallback_api_url
-                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                            response = limited_post(
+                                api_url,
+                                json=payload,
+                                headers=headers,
+                                timeout=6
+                            )
+
+                if response.status_code == 422:
+                    # CSRF token expired mid-run — re-acquire and retry once.
+                    print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
+                    csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+                    if csrf_token:
+                        headers['X-Calypso-CSRF-Token'] = csrf_token
+                    response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -879,22 +929,18 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     job_url = f"https://{host}{external_path}"
                     posted_on = item.get('postedOn', '')
 
-                    # Convert posted_on to approximate date if possible, or just leave text
-                    # Workday sends "Posted Yesterday", "Posted 30+ Days Ago"
-                    # We might need to parse this or just use current date if it says "Today"
-
                     jobs.append({
                         'company': company_name,
                         'title': title,
                         'location': item.get('locationsText', 'Remote'),
                         'url': job_url,
-                        'posted_at': posted_on, # Raw string for now, loop will parse if date format
+                        'posted_at': posted_on,
                         'source': 'Workday',
-                        'description': '' # Not fetching full desc to save requests
+                        'description': ''  # Not fetching full description to save requests
                     })
 
                 offset += limit
-                if len(jobs) >= 200: # Safety limit
+                if len(jobs) >= 200:  # Safety limit
                     break
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1055,7 +1101,7 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
 
-    Parallelizes ~70+ company API calls with optimized worker count.
+    Parallelizes ~150+ company API calls with optimized worker count.
     Auto-scales workers based on company count for maximum efficiency.
     """
     all_jobs = []
@@ -1868,7 +1914,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 

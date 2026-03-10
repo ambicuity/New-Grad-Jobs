@@ -1,0 +1,60 @@
+name: Generate Contributors JSON
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.all-contributorsrc'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Regenerate docs/contributors.json
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Generate contributors.json from .all-contributorsrc
+        run: |
+          python3 - <<'EOF'
+          import json
+          from datetime import datetime, timezone
+
+          with open('.all-contributorsrc', 'r', encoding='utf-8') as f:
+              rc = json.load(f)
+
+          output = {
+              'projectName': rc.get('projectName', ''),
+              'projectOwner': rc.get('projectOwner', ''),
+              'contributors': rc.get('contributors', []),
+              'generatedAt': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+          }
+
+          with open('docs/contributors.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, indent=2, ensure_ascii=False)
+
+          count = len(output['contributors'])
+          print(f'✅ Written docs/contributors.json with {count} contributor(s).')
+          EOF
+
+      - name: Commit and push (if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/contributors.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to contributors.json — skipping commit."
+          else
+            git commit -m "chore(contributors): regenerate docs/contributors.json [skip ci]"
+            git push
+          fi

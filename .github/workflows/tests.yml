@@ -45,6 +45,8 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
+          flags: unittests
+          name: coverage-report
           fail_ci_if_error: false
 
       - name: Upload test results to Codecov
@@ -52,3 +54,5 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unittests
+

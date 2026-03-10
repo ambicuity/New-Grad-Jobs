@@ -1,0 +1,39 @@
+## Codecov Project Configuration
+## See: https://docs.codecov.com/docs/codecovyml-reference
+
+# Coverage targets
+coverage:
+  status:
+    project:
+      default:
+        target: auto          # Track % coverage vs base branch
+        threshold: 1%         # Allow 1% drop before failing
+        informational: true   # Don't fail CI; just report
+    patch:
+      default:
+        target: auto
+        threshold: 5%
+        informational: true
+
+# Pull request comment configuration
+# This produces the heat-map + diff table shown in the target screenshot.
+comment:
+  layout: "reach,diff,flags,tree,betaprofiling"
+  behavior: default           # Post once; update on new pushes
+  require_changes: false      # Always comment even if no diff
+  require_base: false         # Comment even if base has no coverage
+  require_head: true          # Only comment if head has coverage
+  hide_project_coverage: false
+  show_carryforward_flags: false
+
+# Flags allow tracking coverage by test suite
+flag_management:
+  default_rules:
+    carryforward: false
+
+# Ignore generated and vendor paths
+ignore:
+  - "docs/**"
+  - "**/__pycache__/**"
+  - ".venv/**"
+  - "tests/**"
