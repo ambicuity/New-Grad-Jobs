@@ -1,9 +1,6 @@
 ---
 name: config-editor
-description: >
-  Expert on the config.yml configuration file for the New Grad Jobs scraper.
-  Knows the schema, company board URLs, filtering rules, and keyword lists.
-  Use this agent for adding companies, modifying filters, or changing scraper configuration.
+description: "Expert on the config.yml configuration file for the New Grad Jobs scraper. Knows the schema, company board URLs, filtering rules, and keyword lists. Use this agent for adding companies, modifying filters, or changing scraper configuration."
 ---
 
 # Config Editor

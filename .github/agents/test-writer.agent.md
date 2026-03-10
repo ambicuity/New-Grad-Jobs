@@ -1,9 +1,6 @@
 ---
 name: test-writer
-description: >
-  Expert pytest test writer for the New Grad Jobs repository.
-  Creates deterministic, offline tests with mandatory edge case coverage.
-  Use this agent for writing tests, improving coverage, or reviewing test quality.
+description: "Expert pytest test writer for the New Grad Jobs repository. Creates deterministic, offline tests with mandatory edge case coverage. Use this agent for writing tests, improving coverage, or reviewing test quality."
 ---
 
 # Test Writer

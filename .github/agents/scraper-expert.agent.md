@@ -1,10 +1,6 @@
 ---
 name: scraper-expert
-description: >
-  Deep expert on the New Grad Jobs scraper engine (scripts/update_jobs.py).
-  Knows every API integration (Greenhouse, Lever, Workday, Google Careers, JobSpy),
-  date parsing edge cases, deduplication, filtering, and thread safety.
-  Use this agent for any work touching the scraper, data pipeline, or HTTP calls.
+description: "Deep expert on the New Grad Jobs scraper engine (scripts/update_jobs.py). Knows every API integration (Greenhouse, Lever, Workday, Google Careers, JobSpy), date parsing edge cases, deduplication, filtering, and thread safety. Use this agent for any work touching the scraper, data pipeline, or HTTP calls."
 ---
 
 # Scraper Expert

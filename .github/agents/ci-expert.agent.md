@@ -1,10 +1,6 @@
 ---
 name: ci-expert
-description: >
-  Expert on the 39 GitHub Actions workflows in the New Grad Jobs repository.
-  Knows all triggers, permissions, security rules, pre-commit hooks, and how
-  workflows interact. Use this agent for CI/CD changes, workflow modifications,
-  or debugging Actions failures.
+description: "Expert on the 39 GitHub Actions workflows in the New Grad Jobs repository. Knows all triggers, permissions, security rules, pre-commit hooks, and how workflows interact. Use this agent for CI/CD changes, workflow modifications, or debugging Actions failures."
 ---
 
 # CI Expert
