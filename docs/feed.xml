@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 00:06:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 02:52:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Creator Sponsorships at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8345959002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 10 Mar 2026 22:23:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8345959002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Community Tech - Publishing Platform at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 10 Mar 2026 20:12:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</guid>
+    </item>
+    <item>
+      <title>Network Engineer II at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 10 Mar 2026 20:07:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</guid>
+    </item>
     <item>
       <title>Software Engineer, Riot Client - Publishing Platform at Riot Games</title>
       <link>https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</link>
@@ -253,13 +274,6 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7664878?gh_jid=7664878</guid>
     </item>
     <item>
-      <title>Software Engineer II, Community Tech - Publishing Platform at Riot Games</title>
-      <link>https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</link>
-      <description>New grad role at Riot Games in Los Angeles, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 14:08:07 +0000</pubDate>
-      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</guid>
-    </item>
-    <item>
       <title>Machine Learning Engineer  at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/7697512</link>
       <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
@@ -342,20 +356,6 @@
       <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 07:04:32 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7590373003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (AI Agents) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7629069003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 07:04:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7629069003</guid>
-    </item>
-    <item>
-      <title>Software Engineer- AI at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 03:31:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</guid>
     </item>
   </channel>
 </rss>
