@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 16:18:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 17:18:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Backend (Superhuman Mail) at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/7339557</link>
+      <description>New grad role at Grammarly in San Francisco, CA; United States; Canada; Argentina; Mexico; Brazil. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 12:15:44 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7339557</guid>
+    </item>
     <item>
       <title>Software Engineer II - Passwordless  at Okta</title>
       <link>https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</link>
@@ -342,13 +349,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 14:43:31 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7664878?gh_jid=7664878</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer  at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/7697512</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 10 Mar 2026 13:55:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7697512</guid>
     </item>
     <item>
       <title>Associate Software Engineer (New Grad) at Okta</title>
