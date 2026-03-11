@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 04:30:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 05:40:06 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Creator Sponsorships at Twitch</title>
@@ -41,13 +41,6 @@
       <description>New grad role at Riot Games in Los Angeles, USA. Category: Other</description>
       <pubDate>Tue, 10 Mar 2026 19:59:29 +0000</pubDate>
       <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7551644?gh_jid=7551644</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II, Applied Research Science at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7697137</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 10 Mar 2026 19:57:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7697137</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 07:04:17 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7629069003</guid>
+    </item>
+    <item>
+      <title>Software Engineer- AI at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
+      <pubDate>Tue, 10 Mar 2026 03:31:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</guid>
     </item>
   </channel>
 </rss>
