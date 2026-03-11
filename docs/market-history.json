@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T14:31:33.956397",
+    "last_updated": "2026-03-11T15:30:35.710138",
     "total_snapshots": 7,
     "date_range": {
       "start": "2026-03-05",
@@ -340,12 +340,12 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 997,
+      "total_jobs": 1002,
       "categories": {},
       "tiers": {
+        "other": 366,
         "unicorn": 485,
-        "other": 359,
-        "faang_plus": 153
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -377,21 +377,21 @@
           "jobs": 19
         },
         {
-          "company": "Boeing",
-          "jobs": 18
-        },
-        {
           "company": "Nuro",
           "jobs": 17
         },
         {
           "company": "Action Behavior Centers - ABA Therapy for Autism",
           "jobs": 17
+        },
+        {
+          "company": "Boeing",
+          "jobs": 17
         }
       ],
-      "unique_companies": 212,
-      "avg_jobs_per_company": 4.7,
-      "timestamp": "2026-03-11T14:31:33.956178"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.6,
+      "timestamp": "2026-03-11T15:30:35.709896"
     }
   ]
 }
