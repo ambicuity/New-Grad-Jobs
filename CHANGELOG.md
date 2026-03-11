@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org).
 This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Features
+
+* **scraper:** support `hours ago` and `minutes ago` patterns in `normalize_date_string()`, resolving them to today's date ([#80](https://github.com/ambicuity/New-Grad-Jobs/issues/80))
+
 ## 0.1.0 (2026-03-03)
 
 

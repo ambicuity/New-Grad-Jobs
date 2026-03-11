@@ -1322,6 +1322,8 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+    - "Posted 3 Hours Ago" -> today's date
+    - "45 Minutes Ago" -> today's date
 
     Also handles native datetime.date / datetime.datetime objects returned by
     Workday / JobSpy API clients, coercing them to their ISO-format string so
@@ -1360,6 +1362,16 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
     if days_plus_match:
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+
+    # Handle "Posted X Hours Ago" or "X Hour Ago" — resolve to today
+    hours_match = re.search(r'(\d+)\s*hours?\s+ago', posted_at_lower)
+    if hours_match:
+        return now.strftime('%Y-%m-%d')
+
+    # Handle "Posted X Minutes Ago" or "X Minute Ago" — resolve to today
+    minutes_match = re.search(r'(\d+)\s*minutes?\s+ago', posted_at_lower)
+    if minutes_match:
+        return now.strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
