@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 22:19:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 22:50:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>IT Systems Engineer - Top Secret Clearance at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 18:18:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</guid>
+    </item>
     <item>
       <title>IT Network Infrastructure Engineer, Launch at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8458745002?gh_jid=8458745002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Runtime &amp; Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506008</link>
-      <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506008</guid>
     </item>
   </channel>
 </rss>
