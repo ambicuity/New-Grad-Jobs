@@ -31,6 +31,10 @@ class TestCategorizeJob:
         result = categorize_job("SWE Intern - 2025")
         assert result["id"] == "software_engineering"
 
+    def test_swe_abbreviation(self):
+        result = categorize_job("SWE Intern - 2026")
+        assert result["id"] == "software_engineering"
+
     def test_frontend_engineer(self):
         result = categorize_job("Frontend Engineer - React")
         assert result["id"] == "software_engineering"
