@@ -5,34 +5,48 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 15:30:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 16:18:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II - Passwordless  at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</link>
+      <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 12:11:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</guid>
+    </item>
+    <item>
+      <title>Software Engineer, PCBA (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8456289002?gh_jid=8456289002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 11:46:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8456289002?gh_jid=8456289002</guid>
+    </item>
     <item>
       <title>Software Engineer, Fullstack (Support Core) at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8407060002</link>
       <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 10:54:50 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 11:33:47 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407060002</guid>
     </item>
     <item>
       <title>Software Engineer, Fullstack (Sell Core) at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8407054002</link>
       <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 10:54:46 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 11:33:44 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407054002</guid>
     </item>
     <item>
       <title>Software Engineer, Support Core at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8407044002</link>
       <description>New grad role at Dialpad in San Ramon, US. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 10:54:43 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 11:33:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407044002</guid>
     </item>
     <item>
       <title>Software Engineer (Integrations) at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
       <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 10:54:36 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 11:33:34 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
     </item>
     <item>
@@ -316,13 +330,6 @@
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/6671235003?gh_jid=6671235003</guid>
     </item>
     <item>
-      <title>Software Engineer II - Passwordless  at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</link>
-      <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 15:49:29 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</guid>
-    </item>
-    <item>
       <title>Software Engineer, Autonomy Visualization at Nuro</title>
       <link>https://nuro.ai/careersitem?gh_jid=7701347</link>
       <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 13:49:41 +0000</pubDate>
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7401519?gh_jid=7401519</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2, AMP at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523893</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 12:33:32 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523893</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T15:30:35.710138",
+    "last_updated": "2026-03-11T16:18:28.401144",
     "total_snapshots": 7,
     "date_range": {
       "start": "2026-03-05",
@@ -340,12 +340,12 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 1002,
+      "total_jobs": 978,
       "categories": {},
       "tiers": {
-        "other": 366,
-        "unicorn": 485,
-        "faang_plus": 151
+        "unicorn": 484,
+        "other": 346,
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -357,11 +357,11 @@
           "jobs": 68
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 29
+          "company": "Lyft",
+          "jobs": 27
         },
         {
-          "company": "Lyft",
+          "company": "Northrop Grumman",
           "jobs": 27
         },
         {
@@ -377,21 +377,21 @@
           "jobs": 19
         },
         {
+          "company": "Boeing",
+          "jobs": 18
+        },
+        {
           "company": "Nuro",
           "jobs": 17
         },
         {
           "company": "Action Behavior Centers - ABA Therapy for Autism",
           "jobs": 17
-        },
-        {
-          "company": "Boeing",
-          "jobs": 17
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.6,
-      "timestamp": "2026-03-11T15:30:35.709896"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.72,
+      "timestamp": "2026-03-11T16:18:28.400924"
     }
   ]
 }
