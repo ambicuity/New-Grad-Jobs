@@ -914,7 +914,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
                 if not response.ok:
-                    print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
+                    try:
+                        error_body = response.json()
+                    except Exception:
+                        error_body = response.text[:500]
+                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code} — {error_body}")
                     break
 
                 data = response.json()
