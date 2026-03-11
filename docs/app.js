@@ -267,7 +267,7 @@ async function fetchJobs() {
 
     for (const path of paths) {
         try {
-            const response = await fetch(path);
+            const response = await fetch(path, { priority: 'high' });
             if (response.ok) {
                 const data = await response.json();
                 if (data && data.jobs) {
