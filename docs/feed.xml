@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 10:57:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 11:34:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
+      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 07:00:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 07:00:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
+    </item>
     <item>
       <title>Software Engineer, Creator Sponsorships at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8345959002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 07:04:32 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7590373003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (AI Agents) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7629069003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 07:04:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7629069003</guid>
-    </item>
-    <item>
-      <title>Software Engineer- AI at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 03:31:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</guid>
     </item>
   </channel>
 </rss>
