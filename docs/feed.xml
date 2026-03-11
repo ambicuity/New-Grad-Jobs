@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 02:52:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 04:30:43 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Creator Sponsorships at Twitch</title>
@@ -316,13 +316,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
     </item>
     <item>
-      <title>Associate Application Engineer, Finance  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7594444</link>
-      <description>New grad role at Twilio in Remote - India. Category: Other</description>
-      <pubDate>Tue, 10 Mar 2026 10:25:38 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7594444</guid>
-    </item>
-    <item>
       <title>Software Engineer, Assist at Algolia</title>
       <link>https://job-boards.greenhouse.io/algolia/jobs/5803235004</link>
       <description>New grad role at Algolia in Remote - France. Category: Software Engineering</description>
@@ -356,6 +349,13 @@
       <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 07:04:32 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7590373003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (AI Agents) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7629069003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 10 Mar 2026 07:04:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7629069003</guid>
     </item>
   </channel>
 </rss>
