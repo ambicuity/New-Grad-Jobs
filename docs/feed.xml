@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 17:18:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 18:11:30 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>DevOps Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8451384002</link>
+      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 11 Mar 2026 13:58:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8451384002</guid>
+    </item>
+    <item>
+      <title>Full-Stack Software Engineer, Ads at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8362007002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 13:32:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8362007002</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Conflict Behavior at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7490337</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA ; San Francisco, CA USA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 13:27:30 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7490337</guid>
+    </item>
     <item>
       <title>Software Engineer, Backend (Superhuman Mail) at Grammarly</title>
       <link>https://job-boards.greenhouse.io/grammarly/jobs/7339557</link>
@@ -86,17 +107,17 @@
     </item>
     <item>
       <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 07:00:42 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7527309</link>
       <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
       <pubDate>Wed, 11 Mar 2026 07:00:42 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527309</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 (SE3), Developer Productivity (Backstage) at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7527311</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 07:00:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7527311</guid>
     </item>
     <item>
       <title>Software Engineer, Creator Sponsorships at Twitch</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 16:24:30 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/6671235003?gh_jid=6671235003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Autonomy Visualization at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7701347</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 15:23:58 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7701347</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Assessments at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7664878?gh_jid=7664878</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 14:43:31 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7664878?gh_jid=7664878</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer (New Grad) at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7401519?gh_jid=7401519</link>
-      <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 13:49:41 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7401519?gh_jid=7401519</guid>
     </item>
   </channel>
 </rss>

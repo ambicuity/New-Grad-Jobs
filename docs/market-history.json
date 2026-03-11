@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T17:18:11.031435",
+    "last_updated": "2026-03-11T18:11:30.389054",
     "total_snapshots": 7,
     "date_range": {
       "start": "2026-03-05",
@@ -340,12 +340,12 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 1003,
+      "total_jobs": 974,
       "categories": {},
       "tiers": {
+        "other": 347,
         "unicorn": 483,
-        "other": 368,
-        "faang_plus": 152
+        "faang_plus": 144
       },
       "top_companies": [
         {
@@ -357,12 +357,12 @@
           "jobs": 68
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 31
-        },
-        {
           "company": "Lyft",
           "jobs": 27
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 25
         },
         {
           "company": "Dropbox",
@@ -373,25 +373,25 @@
           "jobs": 20
         },
         {
-          "company": "Oscar Health",
-          "jobs": 19
+          "company": "Boeing",
+          "jobs": 20
         },
         {
-          "company": "Boeing",
-          "jobs": 18
+          "company": "Oscar Health",
+          "jobs": 19
         },
         {
           "company": "Nuro",
           "jobs": 17
         },
         {
-          "company": "Walmart",
-          "jobs": 17
+          "company": "Affirm",
+          "jobs": 16
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 4.67,
-      "timestamp": "2026-03-11T17:18:11.031238"
+      "unique_companies": 196,
+      "avg_jobs_per_company": 4.97,
+      "timestamp": "2026-03-11T18:11:30.388845"
     }
   ]
 }
