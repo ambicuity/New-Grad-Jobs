@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T23:06:51.842127",
+    "last_updated": "2026-03-11T23:42:52.610882",
     "total_snapshots": 7,
     "date_range": {
       "start": "2026-03-05",
@@ -340,12 +340,12 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 986,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
+        "other": 369,
         "unicorn": 483,
-        "other": 365,
-        "faang_plus": 138
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -365,6 +365,10 @@
           "jobs": 22
         },
         {
+          "company": "Boeing",
+          "jobs": 21
+        },
+        {
           "company": "MongoDB",
           "jobs": 20
         },
@@ -373,25 +377,21 @@
           "jobs": 20
         },
         {
-          "company": "Boeing",
-          "jobs": 20
-        },
-        {
           "company": "Oscar Health",
           "jobs": 19
         },
         {
           "company": "Walmart",
-          "jobs": 17
+          "jobs": 19
         },
         {
-          "company": "Affirm",
+          "company": "Abnormal Security",
           "jobs": 16
         }
       ],
       "unique_companies": 215,
-      "avg_jobs_per_company": 4.59,
-      "timestamp": "2026-03-11T23:06:51.841868"
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-11T23:42:52.610665"
     }
   ]
 }

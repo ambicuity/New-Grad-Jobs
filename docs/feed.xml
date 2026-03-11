@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 23:06:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 23:42:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Community Tech - Publishing Platform at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 19:22:05 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</guid>
+    </item>
+    <item>
+      <title>AI Security Engineer at Amplitude</title>
+      <link>https://job-boards.greenhouse.io/amplitude/jobs/8399495002</link>
+      <description>New grad role at Amplitude in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 11 Mar 2026 19:10:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8399495002</guid>
+    </item>
+    <item>
+      <title>Full Stack Engineer II (Activation) at Amplitude</title>
+      <link>https://job-boards.greenhouse.io/amplitude/jobs/8359322002</link>
+      <description>New grad role at Amplitude in Vancouver, BC, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 19:10:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8359322002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, AI Security at Amplitude</title>
+      <link>https://job-boards.greenhouse.io/amplitude/jobs/8393339002</link>
+      <description>New grad role at Amplitude in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 19:10:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8393339002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend/Data Systems at Amplitude</title>
+      <link>https://job-boards.greenhouse.io/amplitude/jobs/8316249002</link>
+      <description>New grad role at Amplitude in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 19:10:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8316249002</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Dev Accelerator at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 19:03:52 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</guid>
+    </item>
     <item>
       <title>IT Systems Engineer - Top Secret Clearance at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</link>
@@ -314,48 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7090492</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7090492</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, ML Flywheel at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426598</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426598</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, ML Resources at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7424806</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7424806</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Model Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446322</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446322</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Perception Modeling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446279</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446279</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
     </item>
   </channel>
 </rss>
