@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 23:50:58 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:06:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Riot Client - Publishing Platform at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</link>
+      <description>New grad role at Riot Games in Los Angeles, USA; Mercer Island, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 10 Mar 2026 19:59:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</guid>
+    </item>
+    <item>
+      <title>Associate QA Engineer, Game Analysis - VALORANT at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7551644?gh_jid=7551644</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Other</description>
+      <pubDate>Tue, 10 Mar 2026 19:59:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7551644?gh_jid=7551644</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II, Applied Research Science at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7697137</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 10 Mar 2026 19:57:20 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7697137</guid>
+    </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8406031002?gh_jid=8406031002</link>
@@ -253,13 +274,6 @@
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7401519?gh_jid=7401519</guid>
     </item>
     <item>
-      <title>Software Engineer, Riot Client - Publishing Platform at Riot Games</title>
-      <link>https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</link>
-      <description>New grad role at Riot Games in Los Angeles, USA; Mercer Island, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 13:35:38 +0000</pubDate>
-      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</guid>
-    </item>
-    <item>
       <title>Software Engineer 2, AMP at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523893</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
@@ -342,20 +356,6 @@
       <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 03:31:45 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196</guid>
-    </item>
-    <item>
-      <title>Hardware Systems Engineer at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/7082275?gh_jid=7082275</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 03:14:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7082275?gh_jid=7082275</guid>
-    </item>
-    <item>
-      <title>Inside Sales Representative - Early Career (2026) at Figma</title>
-      <link>https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004</link>
-      <description>New grad role at Figma in San Francisco, CA • New York, NY. Category: Other</description>
-      <pubDate>Tue, 10 Mar 2026 01:52:13 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5726175004?gh_jid=5726175004</guid>
     </item>
   </channel>
 </rss>
