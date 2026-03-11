@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T08:09:14.034630",
+    "last_updated": "2026-03-11T09:03:50.255479",
     "total_snapshots": 7,
     "date_range": {
       "start": "2026-03-05",
@@ -340,12 +340,12 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 1003,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
         "unicorn": 485,
-        "other": 365,
-        "faang_plus": 153
+        "other": 344,
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -365,12 +365,12 @@
           "jobs": 27
         },
         {
-          "company": "Boeing",
-          "jobs": 25
-        },
-        {
           "company": "Dropbox",
           "jobs": 22
+        },
+        {
+          "company": "Boeing",
+          "jobs": 21
         },
         {
           "company": "MongoDB",
@@ -381,17 +381,17 @@
           "jobs": 19
         },
         {
-          "company": "Accenture",
-          "jobs": 18
+          "company": "Nuro",
+          "jobs": 17
         },
         {
-          "company": "Nuro",
+          "company": "Action Behavior Centers - ABA Therapy for Autism",
           "jobs": 17
         }
       ],
-      "unique_companies": 201,
-      "avg_jobs_per_company": 4.99,
-      "timestamp": "2026-03-11T08:09:14.034425"
+      "unique_companies": 200,
+      "avg_jobs_per_company": 4.88,
+      "timestamp": "2026-03-11T09:03:50.255224"
     }
   ]
 }
