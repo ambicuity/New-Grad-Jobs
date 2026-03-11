@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 18:11:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 19:15:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer II at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</link>
+      <description>New grad role at Samsara in Remote - US. Category: Data Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 14:29:20 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</guid>
+    </item>
+    <item>
+      <title>AI Security Engineer at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
+      <description>New grad role at Gusto in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 11 Mar 2026 14:13:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7590298</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Insider Risk at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7637315003?gh_jid=7637315003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 14:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7637315003?gh_jid=7637315003</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Insider Risk at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7636366003?gh_jid=7636366003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Wed, 11 Mar 2026 14:11:01 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7636366003?gh_jid=7636366003</guid>
+    </item>
     <item>
       <title>DevOps Engineer III at ZoomInfo</title>
       <link>https://www.zoominfo.com/careers?gh_jid=8451384002</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
       <pubDate>Tue, 10 Mar 2026 16:45:32 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Commerce) at Flexport</title>
-      <link>https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</link>
-      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 16:45:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Generalist) at Flexport</title>
-      <link>https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</link>
-      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 16:45:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 16:29:25 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Full Stack), Messaging Security Products at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/6671235003?gh_jid=6671235003</link>
-      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
-      <pubDate>Tue, 10 Mar 2026 16:24:30 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/6671235003?gh_jid=6671235003</guid>
     </item>
   </channel>
 </rss>
