@@ -39,6 +39,10 @@ class TestCategorizeJob:
         result = categorize_job("Backend Engineer (Python)")
         assert result["id"] == "software_engineering"
 
+    def test_backend_go_engineer(self):
+        result = categorize_job("Backend Engineer (Go)")
+        assert result["id"] == "software_engineering"    
+
     def test_ml_engineer(self):
         result = categorize_job("ML Engineer - NLP")
         assert result["id"] == "data_ml"
