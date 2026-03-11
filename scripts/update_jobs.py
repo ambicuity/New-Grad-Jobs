@@ -1725,6 +1725,13 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
 
 def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
     """Normalize human-readable date strings to ISO format dates.
+    Handles formats like:
+    - "Posted Today" -> today's date
+    - "Posted Yesterday" -> yesterday's date
+    - "Posted 2 Days Ago" -> 2 days ago
+    - "Posted 30+ Days Ago" -> 30 days ago
+    - "Posted 3 Hours Ago" -> today's date
+    - "45 Minutes Ago" -> today's date
 
     Args:
         posted_at (Any): Raw date string or date/datetime object.
