@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-12T05:46:02.963209",
+    "last_updated": "2026-03-12T06:41:27.060239",
     "total_snapshots": 8,
     "date_range": {
       "start": "2026-03-05",
@@ -420,12 +420,12 @@
           "jobs": 22
         },
         {
-          "company": "Accenture",
+          "company": "Boeing",
           "jobs": 22
         },
         {
-          "company": "Boeing",
-          "jobs": 22
+          "company": "Accenture",
+          "jobs": 21
         },
         {
           "company": "MongoDB",
@@ -444,9 +444,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.64,
-      "timestamp": "2026-03-12T05:46:02.963012"
+      "unique_companies": 221,
+      "avg_jobs_per_company": 4.57,
+      "timestamp": "2026-03-12T06:41:27.060025"
     }
   ]
 }
