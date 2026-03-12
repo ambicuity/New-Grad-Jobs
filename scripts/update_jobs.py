@@ -1270,15 +1270,15 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
 def get_job_key(job: Dict[str, Any]) -> str:
     """Generate unique key for job deduplication
 
-    Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
+    Handles non-string values (NaN, None, float, infinity) that may come from JobSpy/pandas.
     """
     def safe_str(value) -> str:
         """Safely convert any value to lowercase string"""
         if value is None:
             return ''
         if isinstance(value, float):
-            # Handle NaN and other floats
-            if math.isnan(value):
+            # Handle NaN, infinity, and other floats
+            if math.isnan(value) or math.isinf(value):
                 return ''
             return str(value)
         return str(value).lower().strip()

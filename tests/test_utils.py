@@ -28,6 +28,26 @@ def test_get_job_key_handles_nan()->None:
     assert "|" in result
     assert "nan" not in result.lower()
 
+def test_get_job_key_handles_inf() -> None:
+    """Test that get_job_key handles math.inf values without crashing."""
+    job_with_inf = {
+        'company': 'Tech Corp',
+        'title': math.inf,
+        'url': 'https://example.com'
+    }
+    result = get_job_key(job_with_inf)
+    assert result == "tech corp||https://example.com"
+    assert "inf" not in result.lower()
+
+    job_with_neg_inf = {
+        'company': 'Tech Corp',
+        'title': -math.inf,
+        'url': 'https://example.com'
+    }
+    result_neg = get_job_key(job_with_neg_inf)
+    assert result_neg == "tech corp||https://example.com"
+
+
 def test_get_job_key_all_missing()->None:
     """Test when all fields are either None/NaN."""
     job_empty = {

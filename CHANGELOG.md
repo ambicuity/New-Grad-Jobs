@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org).
 This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Bug Fixes
+
+* **scraper:** handle `math.inf` and `-math.inf` in `get_job_key` `safe_str` helper to prevent unpredictable deduplication behavior ([#81](https://github.com/ambicuity/New-Grad-Jobs/issues/81))
+
 ## 0.1.0 (2026-03-03)
 
 
