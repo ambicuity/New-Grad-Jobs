@@ -1375,20 +1375,27 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return unique_jobs
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains new grad signals"""
-    #1. fast exit to save compute if not signals
+    """Check if job title contains new grad signals
+
+        Args:
+        title: The job title to check.
+        signals: List of signal keywords to match
+
+        Returns:
+        True if any signal is found in the (job) title, False otherwise.
+    """
     if not signals:
         return False
-    #2. Type guard; if not a string, not a signal.
-    elif not isinstance(title, str):
+    # Type guard: if not a string, not a signal.
+    if not isinstance(title, str):
         return False #Handle NaN and None values gracefully
-    #3. Handle edge cases where string itself might be 'nan'
-    elif title.strip().lower() in {'nan', 'none'}:
+    #Handle edge cases where string itself might be 'nan'
+    if title.strip().lower() in {'nan', 'none'}:
         return False
 
     #Let regex do more lifting, below we check signals in a single pass over job titles
     combined_signals = "|".join(re.escape(s.lower()) for s in signals)
-    pattern = rf"\b({combined_signals})\b" #Regex pattern to match any signal as a whole word, case-insensitive
+    pattern = rf"\b({combined_signals})\b"
 
     return bool(re.search(pattern, title.lower()))
 
