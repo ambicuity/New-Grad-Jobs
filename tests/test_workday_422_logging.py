@@ -11,8 +11,10 @@ Verifies that when limited_post returns a non-2xx response, fetch_workday_jobs:
 All network calls are mocked — no live requests.
 """
 
+import json
 import os
 import sys
+from typing import Any
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -26,11 +28,18 @@ from update_jobs import fetch_workday_jobs  # noqa: E402
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _make_company(name="Goldman Sachs", url="https://goldmansachs.wd5.myworkdayjobs.com/GS_Careers"):
+def _make_company(
+    name: str = "Goldman Sachs",
+    url: str = "https://goldmansachs.wd5.myworkdayjobs.com/GS_Careers",
+) -> dict[str, str]:
     return {"name": name, "workday_url": url}
 
 
-def _make_response(status_code: int, json_data=None, text: str = ""):
+def _make_response(
+    status_code: int,
+    json_data: Any | None = None,
+    text: str = "",
+) -> MagicMock:
     """Return a mock response object mimicking requests.Response."""
     mock = MagicMock()
     mock.status_code = status_code
@@ -38,7 +47,7 @@ def _make_response(status_code: int, json_data=None, text: str = ""):
     if json_data is not None:
         mock.json.return_value = json_data
     else:
-        mock.json.side_effect = Exception("no JSON body")
+        mock.json.side_effect = json.JSONDecodeError("no JSON body", "", 0)
     mock.text = text
     return mock
 
@@ -99,6 +108,25 @@ class TestWorkday422LoggingWithJsonBody:
         # Both errorCode and the field name must surface
         assert "MISSING_REQUIRED_FIELD" in out
         assert "locale" in out
+
+    def test_422_unicode_company_and_body(self, capsys):
+        error_payload = {
+            "errorCode": "UNICODE_ERROR",
+            "message": "Błąd: nieprawidłowy znak — ☃",
+        }
+        mock_response = _make_response(422, json_data=error_payload)
+
+        with (
+            patch("update_jobs.limited_post", return_value=mock_response),
+            patch("update_jobs.get_workday_csrf_token", return_value=""),
+            patch("update_jobs.HTTP_SESSION", MagicMock()),
+        ):
+            fetch_workday_jobs([_make_company(name="Główny Bank 💼")])
+
+        out = capsys.readouterr().out
+        assert "HTTP 422" in out
+        assert "Główny Bank 💼" in out
+        assert "Błąd: nieprawidłowy znak — ☃" in out
 
 
 # ---------------------------------------------------------------------------
@@ -204,7 +232,7 @@ class TestWorkday200SuccessPathUnchanged:
 
         call_count = {"n": 0}
 
-        def fake_limited_post(*args, **kwargs):
+        def fake_limited_post(*_args: Any, **_kwargs: Any) -> MagicMock:
             call_count["n"] += 1
             return ok_response_1 if call_count["n"] == 1 else ok_response_2
 
