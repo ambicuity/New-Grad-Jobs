@@ -36,6 +36,12 @@ from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
+try:
+    import numpy as np
+except ImportError:
+    np = None
+
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
 # are read from config.yml under 'worker_pools' during startup.
@@ -57,11 +63,11 @@ DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 DEFAULT_TIMEOUT: int = 5
 
 # Default page limit for Workday API pagination.
-# Tracked in issue #43: Extract hardcoded limit to constant.
+# Validated against Workday CXS API defaults; overriden by config.yml if present.
 WORKDAY_PAGE_LIMIT: int = 20
 
 # Maximum total jobs to fetch per company from Workday for safety/performance.
-# Guardrail to prevent infinite loops or excessive memory usage on large tenants.
+# Guardrail to prevent infinite loops; overriden by config.yml if present.
 WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 
 # Default countries used by JobSpy when none are specified in configuration.
@@ -846,8 +852,11 @@ def get_workday_csrf_token(host: str, session: requests.Session) -> str:
         return ""
 
 
-def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API"""
+def fetch_workday_jobs(companies: List[Dict[str, str]],
+                       page_limit: int = 20,
+                       max_total_limit: int = 200,
+                       max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Workday API with pagination and safety limits."""
     all_jobs = []
 
     for company in companies:
@@ -878,7 +887,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             while True:
                 payload = {
                     "appliedFacets": {},
-                    "limit": WORKDAY_PAGE_LIMIT,
+                    "limit": page_limit,
                     "offset": offset,
                     "searchText": ""  # Fetch all, filter locally
                 }
@@ -950,9 +959,9 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         'description': ''  # Not fetching full description to save requests
                     })
 
-                offset += WORKDAY_PAGE_LIMIT
-                if len(jobs) >= WORKDAY_MAX_JOBS_PER_COMPANY:
-                    print(f"  ℹ️  {company_name}: Reached safety limit of {WORKDAY_MAX_JOBS_PER_COMPANY} jobs. Truncating.")
+                offset += page_limit
+                if len(jobs) >= max_total_limit:
+                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
                     break
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1285,16 +1294,13 @@ def get_job_key(job: Dict[str, Any]) -> str:
         if value is None:
             return ''
         if isinstance(value, float):
-            # Handle NaN, Inf and other floats. Checks for numpy types if available.
+            # Handle NaN, Inf and other floats. Robustly handles NumPy types if available.
             is_nan = math.isnan(value)
             is_inf = math.isinf(value)
-            try:
-                import numpy as np
-                if isinstance(value, np.floating):
-                    is_nan = np.isnan(value)
-                    is_inf = np.isinf(value)
-            except ImportError:
-                pass
+
+            if np is not None and isinstance(value, np.floating):
+                is_nan = np.isnan(value)
+                is_inf = np.isinf(value)
 
             if is_nan or is_inf:
                 return ''
@@ -2260,12 +2266,19 @@ def main():
     DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
     DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
 
+    # Load Workday limits from config.yml with fallbacks
+    global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY
+    workday_cfg = config.get('apis', {}).get('workday', {})
+    WORKDAY_PAGE_LIMIT = workday_cfg.get('page_limit', WORKDAY_PAGE_LIMIT)
+    WORKDAY_MAX_JOBS_PER_COMPANY = workday_cfg.get('max_jobs_per_company', WORKDAY_MAX_JOBS_PER_COMPANY)
+
     print(f"   Worker pools configured:")
     print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
     print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
     print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
     print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
+    print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
 
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
@@ -2325,7 +2338,9 @@ def main():
         if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
              futures['workday'] = executor.submit(
                 fetch_workday_jobs,
-                config['apis']['workday']['companies']
+                config['apis']['workday']['companies'],
+                page_limit=WORKDAY_PAGE_LIMIT,
+                max_total_limit=WORKDAY_MAX_JOBS_PER_COMPANY
             )
 
         # Collect results from all futures
