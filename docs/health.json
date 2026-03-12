@@ -1,13 +1,18 @@
 {
   "status": "ok",
-  "last_run": "2026-03-12T05:16:07.757986Z",
-  "total_jobs": 1013,
+  "last_run": "2026-03-12T05:46:03.118566Z",
+  "total_jobs": 1011,
   "source_counts": {
     "greenhouse": 13734,
     "lever": 490,
-    "jobspy": 2831,
+    "jobspy": 2830,
     "workday": 3400
   },
   "zero_sources": [],
+<<<<<<< Updated upstream
   "run_duration_seconds": 304.6
 }
+=======
+  "run_duration_seconds": 294.7
+}
+>>>>>>> Stashed changes
