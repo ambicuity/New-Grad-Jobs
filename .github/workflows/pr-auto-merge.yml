@@ -12,11 +12,13 @@ jobs:
       contents: write
       pull-requests: write
     runs-on: ubuntu-latest
-    # Only act when the maintainer approves; skip Dependabot PRs (handled separately)
+    # Only act when the maintainer approves on same-repo PRs. Fork PR review
+    # events get a read-only GITHUB_TOKEN, which cannot enable auto-merge.
     if: |
       github.event.review.state == 'approved' &&
       github.event.review.user.login == 'ambicuity' &&
-      github.event.pull_request.user.login != 'dependabot[bot]'
+      github.event.pull_request.user.login != 'dependabot[bot]' &&
+      github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Enable squash auto-merge
         run: gh pr merge "$PR_URL" --auto --squash
