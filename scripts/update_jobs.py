@@ -897,44 +897,48 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                     'Accept': 'application/json',
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
-                if csrf_token:
-                    headers['X-Calypso-CSRF-Token'] = csrf_token
 
-                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
+                response = None
+                for attempt in range(max_retries + 1):
+                    if attempt > 0:
+                        time.sleep(1)
 
-                if response.status_code == 404:
-                    # Try alternative tenant extraction if 404.
-                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    path_parts = [part for part in site_path.strip('/').split('/') if part]
-                    if len(path_parts) >= 2:
-                        fallback_tenant = path_parts[0]
-                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
-                            fallback_tenant = path_parts[1]
-
-                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
-                        if fallback_api_url != api_url:
-                            api_url = fallback_api_url
-                            response = limited_post(
-                                api_url,
-                                json=payload,
-                                headers=headers,
-                                timeout=6
-                            )
-
-                if response.status_code == 422:
-                    # CSRF token expired mid-run — re-acquire and retry once.
-                    print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
-                    csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
                     if csrf_token:
                         headers['X-Calypso-CSRF-Token'] = csrf_token
+
                     response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
-                if not response.ok:
+                    # Initial structural check for 404 (only on first attempt)
+                    if response.status_code == 404 and attempt == 0:
+                        path_parts = [part for part in site_path.strip('/').split('/') if part]
+                        if len(path_parts) >= 2:
+                            fallback_tenant = path_parts[0]
+                            if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                                fallback_tenant = path_parts[1]
+
+                            fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                            if fallback_api_url != api_url:
+                                api_url = fallback_api_url
+                                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
+
+                    # CSRF token expired or transient issue mid-run
+                    if response.status_code == 422:
+                        print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token (attempt {attempt+1}/{max_retries+1})...")
+                        csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+                        continue # Retry with new token
+
+                    if response.ok:
+                        break # Success
+
+                    if attempt < max_retries:
+                        print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
+
+                if not response or not response.ok:
                     try:
-                        error_body = response.json()
+                        error_body = response.json() if response else "No response"
                     except (json.JSONDecodeError, ValueError):
-                        error_body = response.text[:500]
-                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code} — {error_body}")
+                        error_body = response.text[:500] if response else "No response"
+                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code if response else 'N/A'} — {error_body}")
                     break
 
                 data = response.json()
