@@ -167,7 +167,7 @@ class TestHasNewGradSignal:
         """An empty title should not cause an error and should return False."""
         assert not has_new_grad_signal("", ["new grad"])
 
-    def test_none_title(self):
+    def test_whitespace_title(self):
         assert not has_new_grad_signal(" ", ["New Grad"])
 
     def test_nan_title(self):
@@ -179,3 +179,12 @@ class TestHasNewGradSignal:
     def test_very_long_title(self):
         long_title = "A" * 10000 + " New Grad"
         assert has_new_grad_signal(long_title, ["New Grad"])
+
+    def test_hyphenated_signal_matches(self):
+        """Hyphenated signals from production config should match correctly."""
+        assert has_new_grad_signal("Entry-Level Software Engineer", ["entry-level"])
+        assert has_new_grad_signal("Early-Career Developer", ["early-career"])
+
+    def test_hyphenated_signal_word_boundary(self):
+        """Hyphenated signals should not match partial words."""
+        assert not has_new_grad_signal("Reentry-Level Position", ["entry-level"])
