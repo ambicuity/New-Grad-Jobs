@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs
+from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal
 
 
 def _make_job(
@@ -140,3 +140,21 @@ class TestFilterJobsDeduplication:
     def test_empty_input_returns_empty(self):
         result = deduplicate_jobs([])
         assert result == []
+
+class TestHasNewGradSignal:
+    """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""
+
+    def test_matches_valid_signal(self):
+        assert has_new_grad_signal("Software Engineer, New Grad", ["New Grad"])
+
+    def test_case_insensitivity(self):
+        assert has_new_grad_signal("SOFTWARE ENGINEER", ["software"])
+
+    def test_returns_false_on_no_match(self):
+        assert not has_new_grad_signal("Senior Dev", ["New Grad"])
+
+    def test_empty_signals_list(self):
+        assert not has_new_grad_signal("Software Engineer", [])
+
+    def test_missing_match_signal(self):
+        assert not has_new_grad_signal("Senior Lead", ["junior", "grad", "entry level"])
