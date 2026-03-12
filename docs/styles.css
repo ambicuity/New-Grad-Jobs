@@ -950,7 +950,7 @@ h3 {
     animation-delay: var(--animation-delay, 0s);
     opacity: 0;
     content-visibility: auto;
-    contain-intrinsic-size: 0 80px;
+    contain-intrinsic-size: 0 128px;
 }
 
 .job-card:hover {

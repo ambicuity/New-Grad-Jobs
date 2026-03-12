@@ -685,7 +685,10 @@ function restoreFiltersFromUrl() {
         }
         if (currentFilters.country !== 'all' && elements.countryFilter) {
             elements.countryFilter.value = currentFilters.country;
-            populateStates(currentFilters.country);
+            populateStates(currentFilters.country, {
+                resetSelection: false,
+                preferredState: currentFilters.state
+            });
         }
         if (currentFilters.state !== 'all' && elements.stateFilter) {
             elements.stateFilter.value = currentFilters.state;
@@ -720,12 +723,11 @@ function exportBookmarks() {
 }
 
 // Populate state dropdown based on country selection
-function populateStates(country) {
+function populateStates(country, { resetSelection = true, preferredState = 'all' } = {}) {
     if (!elements.stateFilter) return;
 
     // Reset state dropdown
     elements.stateFilter.innerHTML = '<option value="all">All States/Provinces</option>';
-    currentFilters.state = 'all';
 
     // Get states for selected country
     const states = statesByCountry[country];
@@ -737,6 +739,12 @@ function populateStates(country) {
             elements.stateFilter.appendChild(option);
         });
     }
+
+    const hasPreferredState = preferredState !== 'all' && states?.some(state => state.value === preferredState);
+    const nextState = !resetSelection && hasPreferredState ? preferredState : 'all';
+
+    elements.stateFilter.value = nextState;
+    currentFilters.state = nextState;
 }
 
 // ============================================
@@ -829,6 +837,8 @@ async function loadAndRenderJobs() {
         return;
     }
 
+    jobsLoadStarted = false;
+
     // Show error state
     if (elements.loading) {
         elements.loading.innerHTML = `
@@ -899,7 +909,7 @@ async function init() {
     if (elements.countryFilter) {
         elements.countryFilter.addEventListener('change', (e) => {
             currentFilters.country = e.target.value;
-            populateStates(e.target.value);
+            populateStates(e.target.value, { resetSelection: true });
             trackEvent('filter-country', { label: `Country: ${e.target.value}` });
             applyFilters();
         });
