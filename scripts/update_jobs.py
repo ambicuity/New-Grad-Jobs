@@ -143,7 +143,17 @@ _COUNTER_LOCK = threading.Lock()
 
 
 def _coerce_positive_int(value: Any, default: int, name: str) -> int:
-    """Parse a positive integer or fall back to the provided default."""
+    """
+    Parse a value as a positive integer, falling back to a default on failure.
+
+    Args:
+        value: The input value to parse (str, int, or None).
+        default: The fallback value if parsing fails or result is non-positive.
+        name: Parameter name for logging warnings.
+
+    Returns:
+        int: A positive integer (>= 1).
+    """
     if value is None:
         return default
     if isinstance(value, bool):
@@ -534,7 +544,16 @@ def load_config() -> Dict[str, Any]:
         sys.exit(1)
 
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
-    """Categorize a job based on its title and description"""
+    """
+    Categorize a job post based on keywords in title and description.
+
+    Args:
+        title: The job title.
+        description: The job description content.
+
+    Returns:
+        Dict[str, Any]: Category information including 'id', 'name', and 'emoji'.
+    """
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
@@ -746,7 +765,17 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
     return jobs
 
 def fetch_google_jobs(search_terms: List[str], max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers API with retry logic"""
+    """
+    Fetch jobs from Google Careers API using multiple search terms.
+
+    Args:
+        search_terms: List of search queries (e.g., job titles).
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects.
+    """
     all_jobs = []
 
     for search_term in search_terms:
@@ -909,7 +938,18 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                        page_limit: int | None = None,
                        max_total_limit: int | None = None,
                        max_retries: int = 2) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API with pagination and safety limits."""
+    """
+    Fetch jobs from Workday CXS API with pagination and safety limits.
+
+    Args:
+        companies: List of Workday career site configurations.
+        page_limit: Number of jobs per page (overrides config).
+        max_total_limit: Safety cap for jobs per company (overrides config).
+        max_retries: Number of retry attempts on transient failure (e.g. CSRF expiry).
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects.
+    """
     page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, 'page_limit')
     max_total_limit = _coerce_positive_int(
         max_total_limit,
