@@ -620,8 +620,8 @@ def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, boo
     Detect sponsorship and citizenship requirements in job title or description.
 
     Returns:
-        Dict[str, bool]: Dictionary indicating if 'requires_citizenship' or
-            'sponsorship_not_available' was detected.
+        Dict[str, bool]: Dictionary indicating if 'us_citizenship_required' or
+            'no_sponsorship' was detected.
     """
     combined = f"{title.lower()} {description.lower() if description else ''}"
 
@@ -645,6 +645,9 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
         url: Greenhouse board API URL.
         max_retries: Number of retry attempts on transient failure.
         timeout: Request timeout in seconds.
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects from Greenhouse.
     """
     jobs = []
     for attempt in range(max_retries + 1):
@@ -709,6 +712,9 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
         url: Lever board API URL.
         max_retries: Number of retry attempts on transient failure.
         timeout: Request timeout in seconds.
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects from Lever.
     """
     jobs = []
     for attempt in range(max_retries + 1):
@@ -1402,8 +1408,8 @@ def get_job_key(job: Dict[str, Any]) -> str:
         """
         Safely convert a value to a string, handling NumPy types and special float values.
 
-        Specifically handles np.nan and np.inf by converting them to "nan" and "inf"
-        to ensure predictable output even when pandas/numpy types are present.
+        Specifically handles np.nan and np.inf by converting them to an empty string
+        to ensure predictable output for the job key.
         """
         if value is None:
             return ''

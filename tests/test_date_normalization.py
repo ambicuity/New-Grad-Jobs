@@ -33,6 +33,8 @@ def test_normalize_date_string_jobspy_human_readable_variants():
     assert normalize_date_string('30+ Days Ago', FIXED_NOW_UTC) == (now - timedelta(days=30)).strftime('%Y-%m-%d')
     assert normalize_date_string('Posted 3 hours ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
     assert normalize_date_string('45 minutes ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
+    assert normalize_date_string('1 hour ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
+    assert normalize_date_string('1 minute ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
 
 
 def test_normalize_date_string_native_date_object_returns_iso_string():

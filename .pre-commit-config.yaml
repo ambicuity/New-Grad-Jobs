@@ -4,9 +4,9 @@ repos:
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
-        exclude: '^(jobs\.json|docs/.*\.json|docs/index\.html|docs/feed\.xml)$'
+        exclude: '^(jobs\.json|docs/.*)$'
       - id: end-of-file-fixer
-        exclude: '^(jobs\.json|docs/.*\.json|docs/index\.html|docs/feed\.xml)$'
+        exclude: '^(jobs\.json|docs/.*)$'
       - id: check-yaml
         args: ['--unsafe']   # Allow custom YAML tags in config.yml
       - id: check-json
