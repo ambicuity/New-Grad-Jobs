@@ -1277,8 +1277,8 @@ def get_job_key(job: Dict[str, Any]) -> str:
         if value is None:
             return ''
         if isinstance(value, float):
-            # Handle NaN and other floats
-            if math.isnan(value):
+            # Handle NaN, Inf and other floats
+            if math.isnan(value) or math.isinf(value):
                 return ''
             return str(value)
         return str(value).lower().strip()
