@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 15:16:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 16:22:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Developer in Test II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=7431196</link>
+      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 12:04:39 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7431196</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Assessments at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7664878?gh_jid=7664878</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 11:34:13 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7664878?gh_jid=7664878</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend (Superhuman Mail) at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/7339557</link>
+      <description>New grad role at Grammarly in San Francisco, CA; United States; Canada; Argentina; Mexico; Brazil. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 11:18:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7339557</guid>
+    </item>
     <item>
       <title>Software Engineer, Autonomous Vehicle at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8459316002?gh_jid=8459316002</link>
@@ -65,10 +86,10 @@
     </item>
     <item>
       <title>GTM Systems Engineer (AI &amp; Automation) at Lucid</title>
-      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5778431004</link>
-      <description>New grad role at Lucid in Raleigh, NC. Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5778437004</link>
+      <description>New grad role at Lucid in Salt Lake City, UT. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 09:54:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5778431004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5778437004</guid>
     </item>
     <item>
       <title>GTM Systems Engineer (AI &amp; Automation) at Lucid</title>
@@ -79,10 +100,10 @@
     </item>
     <item>
       <title>GTM Systems Engineer (AI &amp; Automation) at Lucid</title>
-      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5778437004</link>
-      <description>New grad role at Lucid in Salt Lake City, UT. Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5778431004</link>
+      <description>New grad role at Lucid in Raleigh, NC. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 09:54:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5778437004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5778431004</guid>
     </item>
     <item>
       <title>Software Engineer, Developer (Wallets and Onchain Tools)  at Coinbase</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
       <pubDate>Wed, 11 Mar 2026 22:09:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7456229</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Commercialization Onboard Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426815</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA ;  San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 22:09:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426815</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7428871</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA ; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 22:09:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7428871</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Embedded Systems / Robotics  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Wed, 11 Mar 2026 22:09:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
     </item>
   </channel>
 </rss>
