@@ -184,9 +184,11 @@ class DomainConcurrencyLimiter:
         self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
 
     def _domain_for_url(self, url: str) -> str:
+        """Extract the base hostname from a URL for domain matching."""
         return (urlparse(url).netloc or "").split(":")[0].lower()
 
     def _matched_domain(self, domain: str) -> str | None:
+        """Find the most specific configured domain that matches the input domain."""
         if domain in self._limits:
             return domain
 
@@ -198,6 +200,7 @@ class DomainConcurrencyLimiter:
         return None
 
     def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
+        """Get or create the BoundedSemaphore for a given domain."""
         matched_domain = self._matched_domain(domain)
         if matched_domain is None:
             return None
@@ -212,6 +215,7 @@ class DomainConcurrencyLimiter:
 
     @contextmanager
     def acquire(self, url: str):
+        """Context manager to acquire/release the domain's concurrency semaphore."""
         domain = self._domain_for_url(url)
         semaphore = self._get_semaphore(domain)
         if semaphore is None:
