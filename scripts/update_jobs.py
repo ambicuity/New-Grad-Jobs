@@ -63,12 +63,14 @@ DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 DEFAULT_TIMEOUT: int = 5
 
 # Default page limit for Workday API pagination.
-# Validated against Workday CXS API defaults; overriden by config.yml if present.
-WORKDAY_PAGE_LIMIT: int = 20
+# Validated against Workday CXS API defaults; overridden by config.yml if present.
+DEFAULT_WORKDAY_PAGE_LIMIT: int = 20
+WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
 
 # Maximum total jobs to fetch per company from Workday for safety/performance.
-# Guardrail to prevent infinite loops; overriden by config.yml if present.
-WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
+# Guardrail to prevent infinite loops; overridden by config.yml if present.
+DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
+WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -138,6 +140,31 @@ HTTP_SESSION = create_optimized_session()
 
 # Module-level lock for thread-safe counter updates in parallel fetchers
 _COUNTER_LOCK = threading.Lock()
+
+
+def _coerce_positive_int(value: Any, default: int, name: str) -> int:
+    """Parse a positive integer or fall back to the provided default."""
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+    if isinstance(value, int):
+        parsed = value
+    elif isinstance(value, str):
+        try:
+            parsed = int(value.strip())
+        except ValueError:
+            print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+            return default
+    else:
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+
+    if parsed <= 0:
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+    return parsed
 
 
 class DomainConcurrencyLimiter:
@@ -853,10 +880,16 @@ def get_workday_csrf_token(host: str, session: requests.Session) -> str:
 
 
 def fetch_workday_jobs(companies: List[Dict[str, str]],
-                       page_limit: int = 20,
-                       max_total_limit: int = 200,
+                       page_limit: int | None = None,
+                       max_total_limit: int | None = None,
                        max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API with pagination and safety limits."""
+    page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, 'page_limit')
+    max_total_limit = _coerce_positive_int(
+        max_total_limit,
+        WORKDAY_MAX_JOBS_PER_COMPANY,
+        'max_total_limit',
+    )
     all_jobs = []
 
     for company in companies:
@@ -947,7 +980,12 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                 if not job_items:
                     break
 
-                for item in job_items:
+                remaining = max_total_limit - len(jobs)
+                if remaining <= 0:
+                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
+                    break
+
+                for item in job_items[:remaining]:
                     title = item.get('title', '')
                     external_path = item.get('externalPath', '')
                     job_url = f"https://{host}{external_path}"
@@ -963,10 +1001,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                         'description': ''  # Not fetching full description to save requests
                     })
 
-                offset += page_limit
                 if len(jobs) >= max_total_limit:
                     print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
                     break
+
+                offset += page_limit
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             all_jobs.extend(jobs)
@@ -2271,11 +2310,19 @@ def main():
     DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
     DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
 
-    # Load Workday limits from config.yml with fallbacks
+    # Load Workday limits from config.yml with validated fallbacks
     global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY
     workday_cfg = config.get('apis', {}).get('workday', {})
-    WORKDAY_PAGE_LIMIT = workday_cfg.get('page_limit', WORKDAY_PAGE_LIMIT)
-    WORKDAY_MAX_JOBS_PER_COMPANY = workday_cfg.get('max_jobs_per_company', WORKDAY_MAX_JOBS_PER_COMPANY)
+    WORKDAY_PAGE_LIMIT = _coerce_positive_int(
+        workday_cfg.get('page_limit'),
+        DEFAULT_WORKDAY_PAGE_LIMIT,
+        'apis.workday.page_limit',
+    )
+    WORKDAY_MAX_JOBS_PER_COMPANY = _coerce_positive_int(
+        workday_cfg.get('max_jobs_per_company'),
+        DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY,
+        'apis.workday.max_jobs_per_company',
+    )
 
     print(f"   Worker pools configured:")
     print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
