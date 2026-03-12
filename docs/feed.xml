@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 21:11:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 21:52:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>2026 - Next in Tech Summit, NORAM at MongoDB</title>
@@ -44,10 +44,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7644278</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7644278</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -58,10 +58,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7644278</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7644278</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -121,17 +121,17 @@
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
-      <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
+      <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
     </item>
     <item>
       <title>Software Engineer at SoFi</title>
