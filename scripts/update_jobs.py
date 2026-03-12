@@ -597,7 +597,13 @@ def get_company_tier(company_name: str) -> Dict[str, Any]:
     return tier_info
 
 def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
-    """Detect sponsorship and citizenship requirements"""
+    """
+    Detect sponsorship and citizenship requirements in job title or description.
+
+    Returns:
+        Dict[str, bool]: Dictionary indicating if 'requires_citizenship' or
+            'sponsorship_not_available' was detected.
+    """
     combined = f"{title.lower()} {description.lower() if description else ''}"
 
     return {
@@ -612,7 +618,15 @@ def is_job_closed(title: str, description: str = '') -> bool:
     return any(indicator in combined for indicator in closed_indicators)
 
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Greenhouse API with retry logic"""
+    """
+    Fetch jobs from Greenhouse board API.
+
+    Args:
+        company_name: Name of the company for logging.
+        url: Greenhouse board API URL.
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+    """
     jobs = []
     for attempt in range(max_retries + 1):
         try:
@@ -668,7 +682,15 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
     return jobs
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Lever API with retry logic"""
+    """
+    Fetch jobs from Lever board API.
+
+    Args:
+        company_name: Name of the company for logging.
+        url: Lever board API URL.
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+    """
     jobs = []
     for attempt in range(max_retries + 1):
         try:
@@ -1336,8 +1358,13 @@ def get_job_key(job: Dict[str, Any]) -> str:
 
     Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
     """
-    def safe_str(value) -> str:
-        """Safely convert any value to lowercase string"""
+    def safe_str(value: Any) -> str:
+        """
+        Safely convert a value to a string, handling NumPy types and special float values.
+
+        Specifically handles np.nan and np.inf by converting them to "nan" and "inf"
+        to ensure predictable output even when pandas/numpy types are present.
+        """
         if value is None:
             return ''
         # Check for built-in floats or NumPy floating types
