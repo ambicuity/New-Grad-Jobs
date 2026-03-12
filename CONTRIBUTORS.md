@@ -25,6 +25,9 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/by22Jy"><img src="https://avatars.githubusercontent.com/u/122969909?v=4?s=100" width="100px;" alt="by22Jy"/><br /><sub><b>by22Jy</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=by22Jy" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/justaishing"><img src="https://avatars.githubusercontent.com/u/266112220?v=4?s=100" width="100px;" alt="Fidha Ayisha"/><br /><sub><b>Fidha Ayisha</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=justaishing" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/harryautomazione"><img src="https://avatars.githubusercontent.com/u/249752958?v=4?s=100" width="100px;" alt="harryautomazione"/><br /><sub><b>harryautomazione</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Tests">⚠️</a></td>
+    </tr>
   </tbody>
 </table>
 

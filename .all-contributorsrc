@@ -148,6 +148,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "harryautomazione",
+      "name": "harryautomazione",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249752958?v=4",
+      "profile": "https://github.com/harryautomazione",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
