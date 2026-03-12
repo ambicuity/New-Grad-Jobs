@@ -803,6 +803,36 @@ function escapeHtml(text) {
 // ============================================
 // Initialization
 // ============================================
+function showJobsRetryState(message = 'Please try refreshing the page') {
+    if (!elements.loading) return;
+
+    elements.loading.innerHTML = `
+        <div class="empty-icon">⚠️</div>
+        <h3>Could not load jobs</h3>
+        <p>${escapeHtml(message)}</p>
+        <button class="btn-secondary" id="jobs-retry-button" type="button">Retry</button>
+    `;
+    elements.loading.style.display = 'flex';
+    elements.loading.style.flexDirection = 'column';
+    elements.loading.style.alignItems = 'center';
+    elements.loading.style.justifyContent = 'center';
+    elements.loading.style.padding = '4rem';
+
+    document.getElementById('jobs-retry-button')?.addEventListener('click', () => {
+        jobsLoadStarted = false;
+        elements.loading.innerHTML = `
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p>Retrying jobs…</p>
+        `;
+        elements.loading.style.display = 'flex';
+        elements.loading.style.flexDirection = 'column';
+        elements.loading.style.alignItems = 'center';
+        elements.loading.style.justifyContent = 'center';
+        elements.loading.style.padding = '4rem';
+        loadAndRenderJobs();
+    }, { once: true });
+}
+
 async function loadAndRenderJobs() {
     if (jobsLoadStarted) return;
     jobsLoadStarted = true;
@@ -838,20 +868,7 @@ async function loadAndRenderJobs() {
     }
 
     jobsLoadStarted = false;
-
-    // Show error state
-    if (elements.loading) {
-        elements.loading.innerHTML = `
-            <div class="empty-icon">⚠️</div>
-            <h3>Could not load jobs</h3>
-            <p>Please try refreshing the page</p>
-        `;
-        elements.loading.style.display = 'flex';
-        elements.loading.style.flexDirection = 'column';
-        elements.loading.style.alignItems = 'center';
-        elements.loading.style.justifyContent = 'center';
-        elements.loading.style.padding = '4rem';
-    }
+    showJobsRetryState();
 }
 
 function scheduleJobsLoad() {
