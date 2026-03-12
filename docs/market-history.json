@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-12T02:55:57.555865",
+    "last_updated": "2026-03-12T05:16:07.603933",
     "total_snapshots": 8,
     "date_range": {
       "start": "2026-03-05",
@@ -395,12 +395,12 @@
     },
     {
       "date": "2026-03-12",
-      "total_jobs": 1042,
+      "total_jobs": 1013,
       "categories": {},
       "tiers": {
         "unicorn": 485,
-        "other": 416,
-        "faang_plus": 141
+        "other": 392,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -412,10 +412,6 @@
           "jobs": 68
         },
         {
-          "company": "Accenture",
-          "jobs": 30
-        },
-        {
           "company": "Lyft",
           "jobs": 27
         },
@@ -424,8 +420,12 @@
           "jobs": 22
         },
         {
+          "company": "Accenture",
+          "jobs": 22
+        },
+        {
           "company": "Boeing",
-          "jobs": 21
+          "jobs": 22
         },
         {
           "company": "MongoDB",
@@ -440,13 +440,13 @@
           "jobs": 19
         },
         {
-          "company": "Pearson",
-          "jobs": 19
+          "company": "Abnormal Security",
+          "jobs": 16
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.78,
-      "timestamp": "2026-03-12T02:55:57.555504"
+      "unique_companies": 220,
+      "avg_jobs_per_company": 4.6,
+      "timestamp": "2026-03-12T05:16:07.603720"
     }
   ]
 }
