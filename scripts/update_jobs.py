@@ -1050,14 +1050,14 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     completed = 0
     errors = 0
 
-    def search_single(args) -> List[Dict[str, Any]]:
+    def search_single(args: tuple[str, str, Dict[str, str]]) -> Dict[str, Any]:
         """Worker function to search a single site/term/country combination
-        
+
         Args:
             args (tuple): site, search_term, country
-            
+
         Returns:
-            List[Dict[str, Any]]: List of normalized job objects.
+            Dict[str, Any]: Search metadata plus normalized jobs for one task.
         """
         site, search_term, country = args
         jobs_list = []
@@ -1188,10 +1188,10 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         """Worker function for Greenhouse fetch
-        
+
         Args:
             company (Dict[str, str]): Company metadata.
-            
+
         Returns:
             List[Dict[str, Any]]: List of normalized jobs.
         """
@@ -1234,10 +1234,10 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
         """Worker function for Lever fetch
-        
+
         Args:
             company (Dict[str, str]): Company metadata.
-            
+
         Returns:
             List[Dict[str, Any]]: List of normalized jobs.
         """
