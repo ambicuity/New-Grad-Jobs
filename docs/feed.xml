@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 23:42:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 00:04:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Network Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 11 Mar 2026 19:47:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002</guid>
+    </item>
     <item>
       <title>Software Engineer II, Community Tech - Publishing Platform at Riot Games</title>
       <link>https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 11 Mar 2026 15:46:25 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
     </item>
   </channel>
 </rss>
