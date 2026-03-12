@@ -60,6 +60,10 @@ DEFAULT_TIMEOUT: int = 5
 # Tracked in issue #43: Extract hardcoded limit to constant.
 WORKDAY_PAGE_LIMIT: int = 20
 
+# Maximum total jobs to fetch per company from Workday for safety/performance.
+# Guardrail to prevent infinite loops or excessive memory usage on large tenants.
+WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
+
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
 DEFAULT_JOBSPY_COUNTRIES: List[Dict[str, str]] = [
@@ -947,7 +951,8 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     })
 
                 offset += WORKDAY_PAGE_LIMIT
-                if len(jobs) >= 200:  # Safety limit
+                if len(jobs) >= WORKDAY_MAX_JOBS_PER_COMPANY:
+                    print(f"  ℹ️  {company_name}: Reached safety limit of {WORKDAY_MAX_JOBS_PER_COMPANY} jobs. Truncating.")
                     break
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1280,8 +1285,18 @@ def get_job_key(job: Dict[str, Any]) -> str:
         if value is None:
             return ''
         if isinstance(value, float):
-            # Handle NaN, Inf and other floats
-            if math.isnan(value) or math.isinf(value):
+            # Handle NaN, Inf and other floats. Checks for numpy types if available.
+            is_nan = math.isnan(value)
+            is_inf = math.isinf(value)
+            try:
+                import numpy as np
+                if isinstance(value, np.floating):
+                    is_nan = np.isnan(value)
+                    is_inf = np.isinf(value)
+            except ImportError:
+                pass
+
+            if is_nan or is_inf:
                 return ''
             return str(value)
         return str(value).lower().strip()
