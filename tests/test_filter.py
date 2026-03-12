@@ -161,15 +161,17 @@ class TestHasNewGradSignal:
 
     def test_partial_word_does_not_match(self):
         """A signal should match a whole word, not a substring of another word."""
-        assert not has_new_grad_signal("Software Upgrading", ["grad"])### rewrite rerquired
+        assert not has_new_grad_signal("Software Upgrading", ["grad"])
 
     def test_empty_title(self):
         """An empty title should not cause an error and should return False."""
         assert not has_new_grad_signal("", ["new grad"])
 
     def test_none_title(self):
-    # Document expected behavior: crash or graceful handling
         assert not has_new_grad_signal(" ", ["New Grad"])
+
+    def test_nan_title(self):
+        assert not has_new_grad_signal(float('nan'), ["New Grad"])
 
     def test_unicode_title(self):
         assert has_new_grad_signal("软件工程师 New Grad", ["New Grad"])
