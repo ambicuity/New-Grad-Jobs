@@ -1293,14 +1293,15 @@ def get_job_key(job: Dict[str, Any]) -> str:
         """Safely convert any value to lowercase string"""
         if value is None:
             return ''
-        if isinstance(value, float):
-            # Handle NaN, Inf and other floats. Robustly handles NumPy types if available.
-            is_nan = math.isnan(value)
-            is_inf = math.isinf(value)
-
+        # Check for built-in floats or NumPy floating types
+        if isinstance(value, float) or (np is not None and isinstance(value, np.floating)):
+            # Robustly handle NaN and Inf for both built-in and NumPy floats
             if np is not None and isinstance(value, np.floating):
                 is_nan = np.isnan(value)
                 is_inf = np.isinf(value)
+            else:
+                is_nan = math.isnan(value)
+                is_inf = math.isinf(value)
 
             if is_nan or is_inf:
                 return ''
