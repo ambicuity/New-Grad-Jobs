@@ -143,7 +143,17 @@ _COUNTER_LOCK = threading.Lock()
 
 
 def _coerce_positive_int(value: Any, default: int, name: str) -> int:
-    """Parse a positive integer or fall back to the provided default."""
+    """
+    Parse a value as a positive integer, falling back to a default on failure.
+
+    Args:
+        value: The input value to parse (str, int, or None).
+        default: The fallback value if parsing fails or result is non-positive.
+        name: Parameter name for logging warnings.
+
+    Returns:
+        int: A positive integer (>= 1).
+    """
     if value is None:
         return default
     if isinstance(value, bool):
@@ -184,9 +194,11 @@ class DomainConcurrencyLimiter:
         self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
 
     def _domain_for_url(self, url: str) -> str:
+        """Extract the base hostname from a URL for domain matching."""
         return (urlparse(url).netloc or "").split(":")[0].lower()
 
     def _matched_domain(self, domain: str) -> str | None:
+        """Find the most specific configured domain that matches the input domain."""
         if domain in self._limits:
             return domain
 
@@ -198,6 +210,7 @@ class DomainConcurrencyLimiter:
         return None
 
     def _get_semaphore(self, domain: str) -> threading.BoundedSemaphore | None:
+        """Get or create the BoundedSemaphore for a given domain."""
         matched_domain = self._matched_domain(domain)
         if matched_domain is None:
             return None
@@ -212,6 +225,7 @@ class DomainConcurrencyLimiter:
 
     @contextmanager
     def acquire(self, url: str):
+        """Context manager to acquire/release the domain's concurrency semaphore."""
         domain = self._domain_for_url(url)
         semaphore = self._get_semaphore(domain)
         if semaphore is None:
@@ -530,7 +544,16 @@ def load_config() -> Dict[str, Any]:
         sys.exit(1)
 
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
-    """Categorize a job based on its title and description"""
+    """
+    Categorize a job post based on keywords in title and description.
+
+    Args:
+        title: The job title.
+        description: The job description content.
+
+    Returns:
+        Dict[str, Any]: Category information including 'id', 'name', and 'emoji'.
+    """
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
     combined = f"{title_lower} {desc_lower}"
@@ -593,7 +616,13 @@ def get_company_tier(company_name: str) -> Dict[str, Any]:
     return tier_info
 
 def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
-    """Detect sponsorship and citizenship requirements"""
+    """
+    Detect sponsorship and citizenship requirements in job title or description.
+
+    Returns:
+        Dict[str, bool]: Dictionary indicating if 'requires_citizenship' or
+            'sponsorship_not_available' was detected.
+    """
     combined = f"{title.lower()} {description.lower() if description else ''}"
 
     return {
@@ -608,7 +637,15 @@ def is_job_closed(title: str, description: str = '') -> bool:
     return any(indicator in combined for indicator in closed_indicators)
 
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Greenhouse API with retry logic"""
+    """
+    Fetch jobs from Greenhouse board API.
+
+    Args:
+        company_name: Name of the company for logging.
+        url: Greenhouse board API URL.
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+    """
     jobs = []
     for attempt in range(max_retries + 1):
         try:
@@ -664,7 +701,15 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
     return jobs
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Lever API with retry logic"""
+    """
+    Fetch jobs from Lever board API.
+
+    Args:
+        company_name: Name of the company for logging.
+        url: Lever board API URL.
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+    """
     jobs = []
     for attempt in range(max_retries + 1):
         try:
@@ -720,7 +765,17 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
     return jobs
 
 def fetch_google_jobs(search_terms: List[str], max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers API with retry logic"""
+    """
+    Fetch jobs from Google Careers API using multiple search terms.
+
+    Args:
+        search_terms: List of search queries (e.g., job titles).
+        max_retries: Number of retry attempts on transient failure.
+        timeout: Request timeout in seconds.
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects.
+    """
     all_jobs = []
 
     for search_term in search_terms:
@@ -883,7 +938,18 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                        page_limit: int | None = None,
                        max_total_limit: int | None = None,
                        max_retries: int = 2) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API with pagination and safety limits."""
+    """
+    Fetch jobs from Workday CXS API with pagination and safety limits.
+
+    Args:
+        companies: List of Workday career site configurations.
+        page_limit: Number of jobs per page (overrides config).
+        max_total_limit: Safety cap for jobs per company (overrides config).
+        max_retries: Number of retry attempts on transient failure (e.g. CSRF expiry).
+
+    Returns:
+        List[Dict[str, Any]]: List of normalized job objects.
+    """
     page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, 'page_limit')
     max_total_limit = _coerce_positive_int(
         max_total_limit,
@@ -1332,8 +1398,13 @@ def get_job_key(job: Dict[str, Any]) -> str:
 
     Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
     """
-    def safe_str(value) -> str:
-        """Safely convert any value to lowercase string"""
+    def safe_str(value: Any) -> str:
+        """
+        Safely convert a value to a string, handling NumPy types and special float values.
+
+        Specifically handles np.nan and np.inf by converting them to "nan" and "inf"
+        to ensure predictable output even when pandas/numpy types are present.
+        """
         if value is None:
             return ''
         # Check for built-in floats or NumPy floating types
@@ -1432,6 +1503,10 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
     if days_plus_match:
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+
+    # Handle "X hours ago" or "X minutes ago" (resolve to today)
+    if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
