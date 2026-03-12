@@ -5,15 +5,8 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 19:59:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 20:43:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>Software Engineer, Autonomous Vehicle at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8459316002?gh_jid=8459316002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 15:33:05 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8459316002?gh_jid=8459316002</guid>
-    </item>
     <item>
       <title>Software Engineer, Autonomous Vehicle at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8459156002?gh_jid=8459156002</link>
@@ -65,6 +58,13 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7644278</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
@@ -76,13 +76,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
     </item>
     <item>
       <title>Software Engineer 3, AMP at MongoDB</title>
@@ -135,17 +128,17 @@
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
       <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 15:24:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
     <item>
       <title>Software Engineer at SoFi</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Scale AI in New York, NY; San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 12:49:04 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4513943005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full Stack – Scale GP at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4637485005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
+      <pubDate>Thu, 12 Mar 2026 12:49:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4637485005</guid>
     </item>
   </channel>
 </rss>
