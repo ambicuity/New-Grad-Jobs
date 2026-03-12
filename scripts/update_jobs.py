@@ -56,6 +56,10 @@ DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 # Override per-call by passing timeout=<int> if a specific source needs more headroom.
 DEFAULT_TIMEOUT: int = 5
 
+# Default page limit for Workday API pagination.
+# Tracked in issue #43: Extract hardcoded limit to constant.
+WORKDAY_PAGE_LIMIT: int = 20
+
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
 DEFAULT_JOBSPY_COUNTRIES: List[Dict[str, str]] = [
@@ -866,12 +870,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
 
             jobs = []
             offset = 0
-            limit = 20
 
             while True:
                 payload = {
                     "appliedFacets": {},
-                    "limit": limit,
+                    "limit": WORKDAY_PAGE_LIMIT,
                     "offset": offset,
                     "searchText": ""  # Fetch all, filter locally
                 }
@@ -943,7 +946,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         'description': ''  # Not fetching full description to save requests
                     })
 
-                offset += limit
+                offset += WORKDAY_PAGE_LIMIT
                 if len(jobs) >= 200:  # Safety limit
                     break
 
