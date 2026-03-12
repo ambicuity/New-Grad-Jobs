@@ -1376,8 +1376,15 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains new grad signals"""
-    title_lower = title.lower()
-    return any(signal.lower() in title_lower for signal in signals)
+    if not signals:
+        return False #Get empty signals out first to save compute
+    #Let regex do more lifting, below we check signals in a single pass over job titles
+    combined_signals = "|".join(re.escape(s.lower()) for s in signals)
+    pattern = rf"\b({combined_signals})\b" #Regex pattern to match any signal as a whole word, case-insensitive
+
+    return bool(re.search(pattern, title.lower()))
+
+
 
 def has_track_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains track signals"""
