@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-12T09:07:09.318023",
+    "last_updated": "2026-03-12T14:15:41.382067",
     "total_snapshots": 8,
     "date_range": {
       "start": "2026-03-05",
@@ -395,12 +395,12 @@
     },
     {
       "date": "2026-03-12",
-      "total_jobs": 984,
+      "total_jobs": 1007,
       "categories": {},
       "tiers": {
         "unicorn": 485,
-        "other": 361,
-        "faang_plus": 138
+        "other": 386,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -428,25 +428,25 @@
           "jobs": 20
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 20
+          "company": "Oscar Health",
+          "jobs": 18
         },
         {
-          "company": "Oscar Health",
-          "jobs": 19
+          "company": "Affirm",
+          "jobs": 17
         },
         {
           "company": "Abnormal Security",
           "jobs": 16
         },
         {
-          "company": "Affirm",
+          "company": "Nuro",
           "jobs": 16
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 4.58,
-      "timestamp": "2026-03-12T09:07:09.317796"
+      "unique_companies": 221,
+      "avg_jobs_per_company": 4.56,
+      "timestamp": "2026-03-12T14:15:41.381865"
     }
   ]
 }
