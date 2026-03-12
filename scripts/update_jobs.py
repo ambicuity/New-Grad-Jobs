@@ -1050,8 +1050,15 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     completed = 0
     errors = 0
 
-    def search_single(args):
-        """Worker function to search a single site/term/country combination"""
+    def search_single(args) -> List[Dict[str, Any]]:
+        """Worker function to search a single site/term/country combination
+        
+        Args:
+            args (tuple): site, search_term, country
+            
+        Returns:
+            List[Dict[str, Any]]: List of normalized job objects.
+        """
         site, search_term, country = args
         jobs_list = []
 
@@ -1180,6 +1187,14 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        """Worker function for Greenhouse fetch
+        
+        Args:
+            company (Dict[str, str]): Company metadata.
+            
+        Returns:
+            List[Dict[str, Any]]: List of normalized jobs.
+        """
         return fetch_greenhouse_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -1218,6 +1233,14 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        """Worker function for Lever fetch
+        
+        Args:
+            company (Dict[str, str]): Company metadata.
+            
+        Returns:
+            List[Dict[str, Any]]: List of normalized jobs.
+        """
         return fetch_lever_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
