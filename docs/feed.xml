@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 10:38:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 11:13:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 06:49:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+    </item>
     <item>
       <title>Software Engineer, Trust at Airbnb</title>
       <link>https://careers.airbnb.com/positions/7546654?gh_jid=7546654</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Kirkland, Washington, USA. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7609435</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Multiverse at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7531397</link>
-      <description>New grad role at Waymo in San Francisco, CA, USA; Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7531397</guid>
     </item>
   </channel>
 </rss>
