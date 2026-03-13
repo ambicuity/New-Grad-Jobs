@@ -5,21 +5,21 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 05:41:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 06:37:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 1 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5143355008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 01:57:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5143355008</guid>
+    </item>
     <item>
       <title>Software Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
       <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 01:17:26 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
-    </item>
-    <item>
-      <title>Software Engineer 1 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5143355008</link>
-      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 00:41:38 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5143355008</guid>
     </item>
     <item>
       <title>Software Engineer at Twilio</title>
@@ -114,17 +114,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Mapping at Waymo</title>
