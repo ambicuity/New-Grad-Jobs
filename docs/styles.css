@@ -133,6 +133,7 @@ body::before {
     animation: meshFloat 20s ease-in-out infinite;
     pointer-events: none;
     z-index: 0;
+    contain: strict;
 }
 
 @keyframes meshFloat {
@@ -448,6 +449,7 @@ h3 {
     top: 10%;
     left: 10%;
     animation-delay: 0s;
+    will-change: transform;
 }
 
 .blob-2 {
@@ -457,6 +459,7 @@ h3 {
     top: 20%;
     right: 15%;
     animation-delay: -5s;
+    will-change: transform;
 }
 
 .blob-3 {
@@ -466,6 +469,7 @@ h3 {
     bottom: 20%;
     left: 30%;
     animation-delay: -10s;
+    will-change: transform;
 }
 
 @keyframes blobFloat {
@@ -847,6 +851,7 @@ h3 {
 .jobs-container {
     display: grid;
     gap: 0.75rem;
+    contain: layout style paint;
 }
 
 /* Skeleton Loading */
@@ -859,8 +864,7 @@ h3 {
 }
 
 .skeleton-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
+    background: var(--bg-card);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-md);
     padding: 1.25rem 1.5rem;
@@ -931,11 +935,9 @@ h3 {
     }
 }
 
-/* Job Card - Glassmorphism */
+/* Job Card - Optimized (backdrop-filter removed for GPU perf — retained on .header only) */
 .job-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
+    background: var(--bg-card);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-md);
     padding: 1.25rem 1.5rem;
@@ -948,7 +950,7 @@ h3 {
     animation-delay: var(--animation-delay, 0s);
     opacity: 0;
     content-visibility: auto;
-    contain-intrinsic-size: 0 80px;
+    contain-intrinsic-size: 0 128px;
 }
 
 .job-card:hover {
@@ -1394,6 +1396,32 @@ h3 {
 
     .blob {
         opacity: 0.4;
+    }
+}
+
+/* Halt animations for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+
+    .blob,
+    .blob-1,
+    .blob-2,
+    .blob-3,
+    body::before {
+        animation: none !important;
+    }
+
+    .job-card {
+        animation: none !important;
+        opacity: 1;
+    }
+
+    .skeleton-line,
+    .skeleton-btn {
+        animation: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
 

@@ -24,6 +24,8 @@ const JOBS_PER_PAGE = 25;
 
 // Hero animation state — ensures count-up fires only on initial load
 let heroAnimated = false;
+let jobsLoadStarted = false;
+let jobsObserver = null;
 
 /**
  * Track custom events in GoatCounter
@@ -267,7 +269,7 @@ async function fetchJobs() {
 
     for (const path of paths) {
         try {
-            const response = await fetch(path);
+            const response = await fetch(path, { priority: 'high' });
             if (response.ok) {
                 const data = await response.json();
                 if (data && data.jobs) {
@@ -535,6 +537,11 @@ function updateLastUpdated(timestamp) {
 // Filtering
 // ============================================
 function applyFilters() {
+    if (!allJobs.length) {
+        loadAndRenderJobs();
+        return;
+    }
+
     const { search, category, tier, country, state } = currentFilters;
     const searchLower = search.toLowerCase();
 
@@ -678,7 +685,10 @@ function restoreFiltersFromUrl() {
         }
         if (currentFilters.country !== 'all' && elements.countryFilter) {
             elements.countryFilter.value = currentFilters.country;
-            populateStates(currentFilters.country);
+            populateStates(currentFilters.country, {
+                resetSelection: false,
+                preferredState: currentFilters.state
+            });
         }
         if (currentFilters.state !== 'all' && elements.stateFilter) {
             elements.stateFilter.value = currentFilters.state;
@@ -713,12 +723,11 @@ function exportBookmarks() {
 }
 
 // Populate state dropdown based on country selection
-function populateStates(country) {
+function populateStates(country, { resetSelection = true, preferredState = 'all' } = {}) {
     if (!elements.stateFilter) return;
 
     // Reset state dropdown
     elements.stateFilter.innerHTML = '<option value="all">All States/Provinces</option>';
-    currentFilters.state = 'all';
 
     // Get states for selected country
     const states = statesByCountry[country];
@@ -730,6 +739,12 @@ function populateStates(country) {
             elements.stateFilter.appendChild(option);
         });
     }
+
+    const hasPreferredState = preferredState !== 'all' && states?.some(state => state.value === preferredState);
+    const nextState = !resetSelection && hasPreferredState ? preferredState : 'all';
+
+    elements.stateFilter.value = nextState;
+    currentFilters.state = nextState;
 }
 
 // ============================================
@@ -788,6 +803,95 @@ function escapeHtml(text) {
 // ============================================
 // Initialization
 // ============================================
+function showJobsRetryState(message = 'Please try refreshing the page') {
+    if (!elements.loading) return;
+
+    elements.loading.innerHTML = `
+        <div class="empty-icon">⚠️</div>
+        <h3>Could not load jobs</h3>
+        <p>${escapeHtml(message)}</p>
+        <button class="btn-secondary" id="jobs-retry-button" type="button">Retry</button>
+    `;
+    elements.loading.style.display = 'flex';
+    elements.loading.style.flexDirection = 'column';
+    elements.loading.style.alignItems = 'center';
+    elements.loading.style.justifyContent = 'center';
+    elements.loading.style.padding = '4rem';
+
+    document.getElementById('jobs-retry-button')?.addEventListener('click', () => {
+        jobsLoadStarted = false;
+        elements.loading.innerHTML = `
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p>Retrying jobs…</p>
+        `;
+        elements.loading.style.display = 'flex';
+        elements.loading.style.flexDirection = 'column';
+        elements.loading.style.alignItems = 'center';
+        elements.loading.style.justifyContent = 'center';
+        elements.loading.style.padding = '4rem';
+        loadAndRenderJobs();
+    }, { once: true });
+}
+
+async function loadAndRenderJobs() {
+    if (jobsLoadStarted) return;
+    jobsLoadStarted = true;
+
+    if (jobsObserver) {
+        jobsObserver.disconnect();
+        jobsObserver = null;
+    }
+
+    const data = await fetchJobs();
+
+    if (data && data.jobs) {
+        allJobs = data.jobs;
+        filteredJobs = [...allJobs];
+
+        // Hide loading
+        if (elements.loading) {
+            elements.loading.style.display = 'none';
+        }
+
+        // P1: Restore filters from URL params before first render
+        const hadUrlFilters = restoreFiltersFromUrl();
+        const hasPendingFilters = Object.values(currentFilters).some(value => value && value !== 'all');
+
+        if (hadUrlFilters || hasPendingFilters) {
+            applyFilters();
+        } else {
+            renderJobs(filteredJobs);
+            updateCounts();
+        }
+        updateLastUpdated(data.meta?.generated_at);
+        return;
+    }
+
+    jobsLoadStarted = false;
+    showJobsRetryState();
+}
+
+function scheduleJobsLoad() {
+    const hasDeepLinkFilters = window.location.search.length > 0 || window.location.hash === '#jobs';
+    if (hasDeepLinkFilters) {
+        loadAndRenderJobs();
+        return;
+    }
+
+    const jobsTrigger = document.getElementById('jobs-container');
+    if ('IntersectionObserver' in window && jobsTrigger) {
+        jobsObserver = new IntersectionObserver((entries) => {
+            if (entries.some(entry => entry.isIntersecting)) {
+                loadAndRenderJobs();
+            }
+        }, { rootMargin: '200px 0px' });
+        jobsObserver.observe(jobsTrigger);
+        return;
+    }
+
+    window.addEventListener('load', () => window.setTimeout(loadAndRenderJobs, 1500), { once: true });
+}
+
 async function init() {
     // Initialize theme
     initTheme();
@@ -822,7 +926,7 @@ async function init() {
     if (elements.countryFilter) {
         elements.countryFilter.addEventListener('change', (e) => {
             currentFilters.country = e.target.value;
-            populateStates(e.target.value);
+            populateStates(e.target.value, { resetSelection: true });
             trackEvent('filter-country', { label: `Country: ${e.target.value}` });
             applyFilters();
         });
@@ -841,43 +945,7 @@ async function init() {
     // Scroll listener for back to top
     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Fetch and render jobs
-    const data = await fetchJobs();
-
-    if (data && data.jobs) {
-        allJobs = data.jobs;
-        filteredJobs = [...allJobs];
-
-        // Hide loading
-        if (elements.loading) {
-            elements.loading.style.display = 'none';
-        }
-
-        // P1: Restore filters from URL params before first render
-        const hadUrlFilters = restoreFiltersFromUrl();
-
-        if (hadUrlFilters) {
-            applyFilters();
-        } else {
-            renderJobs(filteredJobs);
-            updateCounts();
-        }
-        updateLastUpdated(data.meta?.generated_at);
-    } else {
-        // Show error state
-        if (elements.loading) {
-            elements.loading.innerHTML = `
-                <div class="empty-icon">⚠️</div>
-                <h3>Could not load jobs</h3>
-                <p>Please try refreshing the page</p>
-            `;
-            elements.loading.style.display = 'flex';
-            elements.loading.style.flexDirection = 'column';
-            elements.loading.style.alignItems = 'center';
-            elements.loading.style.justifyContent = 'center';
-            elements.loading.style.padding = '4rem';
-        }
-    }
+    scheduleJobsLoad();
 }
 
 // ============================================
