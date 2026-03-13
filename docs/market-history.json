@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-13T15:31:00.675853",
+    "last_updated": "2026-03-13T16:09:49.456456",
     "total_snapshots": 9,
     "date_range": {
       "start": "2026-03-05",
@@ -450,12 +450,12 @@
     },
     {
       "date": "2026-03-13",
-      "total_jobs": 968,
+      "total_jobs": 946,
       "categories": {},
       "tiers": {
-        "other": 350,
-        "unicorn": 480,
-        "faang_plus": 138
+        "unicorn": 482,
+        "other": 331,
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -471,12 +471,12 @@
           "jobs": 28
         },
         {
-          "company": "Boeing",
-          "jobs": 25
+          "company": "Dropbox",
+          "jobs": 24
         },
         {
-          "company": "Dropbox",
-          "jobs": 22
+          "company": "Boeing",
+          "jobs": 21
         },
         {
           "company": "Oscar Health",
@@ -499,9 +499,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.44,
-      "timestamp": "2026-03-13T15:31:00.675628"
+      "unique_companies": 206,
+      "avg_jobs_per_company": 4.59,
+      "timestamp": "2026-03-13T16:09:49.456255"
     }
   ]
 }
