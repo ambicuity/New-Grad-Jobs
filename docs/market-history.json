@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-13T00:07:56.056033",
+    "last_updated": "2026-03-13T02:56:24.113676",
     "total_snapshots": 9,
     "date_range": {
       "start": "2026-03-05",
@@ -450,11 +450,11 @@
     },
     {
       "date": "2026-03-13",
-      "total_jobs": 974,
+      "total_jobs": 983,
       "categories": {},
       "tiers": {
         "unicorn": 481,
-        "other": 353,
+        "other": 362,
         "faang_plus": 140
       },
       "top_companies": [
@@ -479,6 +479,10 @@
           "jobs": 22
         },
         {
+          "company": "Deloitte",
+          "jobs": 21
+        },
+        {
           "company": "MongoDB",
           "jobs": 18
         },
@@ -493,15 +497,11 @@
         {
           "company": "Abnormal Security",
           "jobs": 16
-        },
-        {
-          "company": "Nuro",
-          "jobs": 16
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-03-13T00:07:56.055837"
+      "unique_companies": 212,
+      "avg_jobs_per_company": 4.64,
+      "timestamp": "2026-03-13T02:56:24.113442"
     }
   ]
 }
