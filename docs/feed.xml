@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 22:08:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 22:47:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Test &amp; Automation (Starlink Mobile) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8451679002?gh_jid=8451679002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 18:35:38 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451679002?gh_jid=8451679002</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Full Stack - Portal Platform at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7660888003?gh_jid=7660888003</link>
+      <description>New grad role at Abnormal Security in Remote - UK. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 18:09:51 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7660888003?gh_jid=7660888003</guid>
+    </item>
     <item>
       <title>Software Engineer, User Co-Experience at Roblox</title>
       <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 10:35:03 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 10:34:18 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 10:27:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
     </item>
   </channel>
 </rss>
