@@ -174,16 +174,16 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    
+
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
         themeToggle.addEventListener('click', toggleTheme);
     }
-    
+
     // Initialize mobile menu if ui.js loaded
     if (typeof window.initMobileMenu === 'function') {
         window.initMobileMenu();
     }
-    
+
     loadContributors();
 });

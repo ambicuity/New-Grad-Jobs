@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-03-11T04:30:43.032769",
-    "total_snapshots": 7,
+    "last_updated": "2026-03-13T14:36:46.408076",
+    "total_snapshots": 9,
     "date_range": {
       "start": "2026-03-05",
-      "end": "2026-03-11"
+      "end": "2026-03-13"
     }
   },
   "snapshots": [
@@ -340,44 +340,40 @@
     },
     {
       "date": "2026-03-11",
-      "total_jobs": 990,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
-        "unicorn": 486,
-        "other": 353,
-        "faang_plus": 151
+        "other": 369,
+        "unicorn": 483,
+        "faang_plus": 139
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 149
+          "jobs": 154
         },
         {
           "company": "Waymo",
           "jobs": 68
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 28
-        },
-        {
           "company": "Lyft",
           "jobs": 27
-        },
-        {
-          "company": "Accenture",
-          "jobs": 27
-        },
-        {
-          "company": "Boeing",
-          "jobs": 23
         },
         {
           "company": "Dropbox",
           "jobs": 22
         },
         {
+          "company": "Boeing",
+          "jobs": 21
+        },
+        {
           "company": "MongoDB",
+          "jobs": 20
+        },
+        {
+          "company": "Northrop Grumman",
           "jobs": 20
         },
         {
@@ -385,13 +381,127 @@
           "jobs": 19
         },
         {
-          "company": "Nuro",
-          "jobs": 17
+          "company": "Walmart",
+          "jobs": 19
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 16
         }
       ],
-      "unique_companies": 198,
-      "avg_jobs_per_company": 5.0,
-      "timestamp": "2026-03-11T04:30:43.032606"
+      "unique_companies": 215,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-11T23:42:52.610665"
+    },
+    {
+      "date": "2026-03-12",
+      "total_jobs": 974,
+      "categories": {},
+      "tiers": {
+        "unicorn": 481,
+        "other": 353,
+        "faang_plus": 140
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 157
+        },
+        {
+          "company": "Waymo",
+          "jobs": 67
+        },
+        {
+          "company": "Lyft",
+          "jobs": 28
+        },
+        {
+          "company": "Boeing",
+          "jobs": 26
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 22
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 18
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 18
+        },
+        {
+          "company": "Affirm",
+          "jobs": 17
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 16
+        },
+        {
+          "company": "Nuro",
+          "jobs": 16
+        }
+      ],
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.68,
+      "timestamp": "2026-03-12T23:51:05.882088"
+    },
+    {
+      "date": "2026-03-13",
+      "total_jobs": 964,
+      "categories": {},
+      "tiers": {
+        "other": 346,
+        "unicorn": 480,
+        "faang_plus": 138
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 157
+        },
+        {
+          "company": "Waymo",
+          "jobs": 67
+        },
+        {
+          "company": "Lyft",
+          "jobs": 28
+        },
+        {
+          "company": "Boeing",
+          "jobs": 26
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 22
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 18
+        },
+        {
+          "company": "Affirm",
+          "jobs": 17
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 16
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 16
+        },
+        {
+          "company": "Nuro",
+          "jobs": 16
+        }
+      ],
+      "unique_companies": 209,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-13T14:36:46.407834"
     }
   ]
 }

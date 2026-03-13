@@ -35,7 +35,9 @@
       "profile": "https://github.com/rvac-bucky",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "infra",
+        "test"
       ]
     },
     {
@@ -106,7 +108,8 @@
       "profile": "https://github.com/half-measures",
       "contributions": [
         "code",
-        "test"
+        "test",
+        "doc"
       ]
     },
     {
@@ -144,6 +147,17 @@
       "profile": "https://github.com/justaishing",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "harryautomazione",
+      "name": "harryautomazione",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249752958?v=4",
+      "profile": "https://github.com/harryautomazione",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
       ]
     }
   ],

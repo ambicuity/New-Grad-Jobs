@@ -36,6 +36,12 @@ from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
+try:
+    import numpy as np
+except ImportError:
+    np = None
+
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
 # are read from config.yml under 'worker_pools' during startup.
@@ -55,6 +61,16 @@ DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 # Sourced from empirical testing: p95 latency for Greenhouse/Lever/Google APIs is <2s.
 # Override per-call by passing timeout=<int> if a specific source needs more headroom.
 DEFAULT_TIMEOUT: int = 5
+
+# Default page limit for Workday API pagination.
+# Validated against Workday CXS API defaults; overridden by config.yml if present.
+DEFAULT_WORKDAY_PAGE_LIMIT: int = 20
+WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
+
+# Maximum total jobs to fetch per company from Workday for safety/performance.
+# Guardrail to prevent infinite loops; overridden by config.yml if present.
+DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
+WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -124,6 +140,31 @@ HTTP_SESSION = create_optimized_session()
 
 # Module-level lock for thread-safe counter updates in parallel fetchers
 _COUNTER_LOCK = threading.Lock()
+
+
+def _coerce_positive_int(value: Any, default: int, name: str) -> int:
+    """Parse a positive integer or fall back to the provided default."""
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+    if isinstance(value, int):
+        parsed = value
+    elif isinstance(value, str):
+        try:
+            parsed = int(value.strip())
+        except ValueError:
+            print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+            return default
+    else:
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+
+    if parsed <= 0:
+        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
+        return default
+    return parsed
 
 
 class DomainConcurrencyLimiter:
@@ -838,8 +879,17 @@ def get_workday_csrf_token(host: str, session: requests.Session) -> str:
         return ""
 
 
-def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API"""
+def fetch_workday_jobs(companies: List[Dict[str, str]],
+                       page_limit: int | None = None,
+                       max_total_limit: int | None = None,
+                       max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Workday API with pagination and safety limits."""
+    page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, 'page_limit')
+    max_total_limit = _coerce_positive_int(
+        max_total_limit,
+        WORKDAY_MAX_JOBS_PER_COMPANY,
+        'max_total_limit',
+    )
     all_jobs = []
 
     for company in companies:
@@ -866,12 +916,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
 
             jobs = []
             offset = 0
-            limit = 20
 
             while True:
                 payload = {
                     "appliedFacets": {},
-                    "limit": limit,
+                    "limit": page_limit,
                     "offset": offset,
                     "searchText": ""  # Fetch all, filter locally
                 }
@@ -881,40 +930,48 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'Accept': 'application/json',
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
-                if csrf_token:
-                    headers['X-Calypso-CSRF-Token'] = csrf_token
 
-                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
+                response = None
+                for attempt in range(max_retries + 1):
+                    if attempt > 0:
+                        time.sleep(1)
 
-                if response.status_code == 404:
-                    # Try alternative tenant extraction if 404.
-                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    path_parts = [part for part in site_path.strip('/').split('/') if part]
-                    if len(path_parts) >= 2:
-                        fallback_tenant = path_parts[0]
-                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
-                            fallback_tenant = path_parts[1]
-
-                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
-                        if fallback_api_url != api_url:
-                            api_url = fallback_api_url
-                            response = limited_post(
-                                api_url,
-                                json=payload,
-                                headers=headers,
-                                timeout=6
-                            )
-
-                if response.status_code == 422:
-                    # CSRF token expired mid-run — re-acquire and retry once.
-                    print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
-                    csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
                     if csrf_token:
                         headers['X-Calypso-CSRF-Token'] = csrf_token
+
                     response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
-                if not response.ok:
-                    print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
+                    # Initial structural check for 404 (only on first attempt)
+                    if response.status_code == 404 and attempt == 0:
+                        path_parts = [part for part in site_path.strip('/').split('/') if part]
+                        if len(path_parts) >= 2:
+                            fallback_tenant = path_parts[0]
+                            if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                                fallback_tenant = path_parts[1]
+
+                            fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                            if fallback_api_url != api_url:
+                                api_url = fallback_api_url
+                                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
+
+                    # CSRF token expired or transient issue mid-run
+                    if response.status_code == 422:
+                        print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token (attempt {attempt+1}/{max_retries+1})...")
+                        csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+                        continue # Retry with new token
+
+                    if response.ok:
+                        break # Success
+
+                    if attempt < max_retries:
+                        print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
+
+                if not response or not response.ok:
+                    try:
+                        error_body = response.json() if response else "No response"
+                    except (json.JSONDecodeError, ValueError):
+                        error_body = response.text[:500] if response else "No response"
+                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code if response else 'N/A'} — {error_body}")
                     break
 
                 data = response.json()
@@ -923,7 +980,12 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                 if not job_items:
                     break
 
-                for item in job_items:
+                remaining = max_total_limit - len(jobs)
+                if remaining <= 0:
+                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
+                    break
+
+                for item in job_items[:remaining]:
                     title = item.get('title', '')
                     external_path = item.get('externalPath', '')
                     job_url = f"https://{host}{external_path}"
@@ -939,9 +1001,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         'description': ''  # Not fetching full description to save requests
                     })
 
-                offset += limit
-                if len(jobs) >= 200:  # Safety limit
+                if len(jobs) >= max_total_limit:
+                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
                     break
+
+                offset += page_limit
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             all_jobs.extend(jobs)
@@ -1272,9 +1336,17 @@ def get_job_key(job: Dict[str, Any]) -> str:
         """Safely convert any value to lowercase string"""
         if value is None:
             return ''
-        if isinstance(value, float):
-            # Handle NaN and other floats
-            if math.isnan(value):
+        # Check for built-in floats or NumPy floating types
+        if isinstance(value, float) or (np is not None and isinstance(value, np.floating)):
+            # Robustly handle NaN and Inf for both built-in and NumPy floats
+            if np is not None and isinstance(value, np.floating):
+                is_nan = np.isnan(value)
+                is_inf = np.isinf(value)
+            else:
+                is_nan = math.isnan(value)
+                is_inf = math.isinf(value)
+
+            if is_nan or is_inf:
                 return ''
             return str(value)
         return str(value).lower().strip()
@@ -2238,12 +2310,27 @@ def main():
     DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
     DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
 
+    # Load Workday limits from config.yml with validated fallbacks
+    global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY
+    workday_cfg = config.get('apis', {}).get('workday', {})
+    WORKDAY_PAGE_LIMIT = _coerce_positive_int(
+        workday_cfg.get('page_limit'),
+        DEFAULT_WORKDAY_PAGE_LIMIT,
+        'apis.workday.page_limit',
+    )
+    WORKDAY_MAX_JOBS_PER_COMPANY = _coerce_positive_int(
+        workday_cfg.get('max_jobs_per_company'),
+        DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY,
+        'apis.workday.max_jobs_per_company',
+    )
+
     print(f"   Worker pools configured:")
     print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
     print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
     print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
     print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
+    print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
 
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
@@ -2303,7 +2390,9 @@ def main():
         if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
              futures['workday'] = executor.submit(
                 fetch_workday_jobs,
-                config['apis']['workday']['companies']
+                config['apis']['workday']['companies'],
+                page_limit=WORKDAY_PAGE_LIMIT,
+                max_total_limit=WORKDAY_MAX_JOBS_PER_COMPANY
             )
 
         # Collect results from all futures

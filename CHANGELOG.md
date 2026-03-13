@@ -44,6 +44,8 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Fixed
 
+- extract hardcoded Workday API pagination and safety limits to configurable constants `WORKDAY_PAGE_LIMIT` and `WORKDAY_MAX_JOBS_PER_COMPANY` ([#43](https://github.com/ambicuity/New-Grad-Jobs/issues/43)); runtime limits are now overridable via `config.yml`.
+- enhance `safe_str` in `get_job_key` to robustly handle `numpy.floating` NaNs and Infs when deduping jobs originating from JobSpy/pandas; NumPy import hoisted to module-level for hot-path optimization.
 - add `'developer advocate'` and `'devrel'` to `software_engineering` keyword list in `categorize_job()` so DevRel roles are no longer classified as `other` ([#87](https://github.com/ambicuity/New-Grad-Jobs/issues/87))
 - add domain-aware concurrency limiter for scraper HTTP calls, capping `api.greenhouse.io` concurrency while preserving high parallelism for other domains
 - normalize timezone-aware date handling in `is_recent_job` by standardizing parsed values to UTC before recency comparison; add explicit guards/tests for `None`, `NaN`, UTC-offset strings, aware datetimes, and boundary windows
