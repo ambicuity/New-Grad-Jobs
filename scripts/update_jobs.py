@@ -1394,7 +1394,15 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
         return False
 
     #Let regex do more lifting, below we check signals in a single pass over job titles
-    combined_signals = "|".join(re.escape(s.lower()) for s in signals)
+
+    normalized_signals = [
+        re.escape(s.strip().lower())
+        for s in signals
+        if isinstance(s, str) and s.strip()
+    ]
+    if not normalized_signals:
+        return False
+    combined_signals = "|".join(normalized_signals)
     pattern = rf"\b({combined_signals})\b"
 
     return bool(re.search(pattern, title.lower()))
