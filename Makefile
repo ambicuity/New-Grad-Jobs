@@ -15,10 +15,8 @@ setup: ## First-time setup: creates virtualenv, installs all requirements (prod,
 	$(PYTHON) -m venv $(VENV)
 	@echo "=> Upgrading pip..."
 	$(VENV_PIP) install --upgrade pip
-	@echo "=> Installing project dependencies..."
-	$(VENV_PIP) install -r requirements.txt
-	@echo "=> Installing test dependencies..."
-	$(VENV_PIP) install -r tests/requirements.txt
+	@echo "=> Installing project dependencies with dev extras..."
+	$(VENV_PIP) install -e ".[dev]"
 	@echo "=> Installing pre-commit hooks..."
 	$(VENV_PYTHON) -m pre_commit install
 	@echo "=> (Optional) Installing Playwright browsers..."
