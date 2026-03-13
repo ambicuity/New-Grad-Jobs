@@ -71,7 +71,7 @@ jobs:
           git config pull.rebase true
           git pull origin main --autostash
 
-          git add README.md docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
+          git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
           fi
