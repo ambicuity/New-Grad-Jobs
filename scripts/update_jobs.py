@@ -1375,9 +1375,51 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return unique_jobs
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains new grad signals"""
-    title_lower = title.lower()
-    return any(signal.lower() in title_lower for signal in signals)
+    """Check if job title contains new grad signals.
+
+    We do a case-insensitive search across job titles found in signals (which is
+    found in the config file) and return True if any signal is found.
+    We match only whole words, preventing partial matches, and handle
+    Null, NaNs, and non-string values.
+
+    Args:
+        title: The job title to check.
+        signals: List of signal keywords to match.
+
+    Returns:
+        True if any signal is found in the (job) title, False otherwise.
+
+    Examples:
+    >>> has_new_grad_signal("Software Engineer Intern", ["intern", "new grad"]) -> True
+    True
+    """
+    # Fast exit if empty or null, saving compute.
+    if not signals:
+        return False
+    # Type guard: if not a string, not a signal.
+    if not isinstance(title, str):
+        return False #Handle NaN and None values gracefully
+    # Handle edge cases where string itself might be 'nan' or none.
+    if title.strip().lower() in {'nan', 'none'}:
+        return False
+
+    # Let regex do more lifting, below we normalize signals- lower-case, stripped, and escape regex
+
+    normalized_signals = [
+        re.escape(s.strip().lower())
+        for s in signals
+        if isinstance(s, str) and s.strip()
+    ]
+    # Exit if no valid, non-empty signals after normalization.
+    if not normalized_signals:
+        return False
+    # Build regex and execute search.
+    combined_signals = "|".join(normalized_signals)
+    pattern = rf"\b({combined_signals})\b"
+
+    return bool(re.search(pattern, title.lower()))
+
+
 
 def has_track_signal(title: str, signals: List[str]) -> bool:
     """Check if job title contains track signals"""
