@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 20:23:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 21:02:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer in Test II at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7369387?gh_jid=7369387</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 16:50:07 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7369387?gh_jid=7369387</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Justworks</title>
+      <link>https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</link>
+      <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 16:28:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</guid>
+    </item>
     <item>
       <title>Software Engineer at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8461006002</link>
@@ -170,17 +184,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 11:33:29 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
       <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 11:33:29 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 11:33:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
       <title>Software Engineer 3, AMP at MongoDB</title>
@@ -232,6 +246,13 @@
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
     <item>
+      <title>Software Engineer, Support Platform at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5611527004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 11:20:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5611527004</guid>
+    </item>
+    <item>
       <title>Air Operations Associate, Gurgaon at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</link>
       <description>New grad role at Flexport in New Delhi, India. Category: Other</description>
@@ -281,13 +302,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
     </item>
     <item>
-      <title>Software Engineer, Support Platform at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5611527004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 11:20:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5611527004</guid>
-    </item>
-    <item>
       <title>Software Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
       <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
@@ -316,13 +330,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661922</guid>
     </item>
     <item>
-      <title>Software Engineer at Justworks</title>
-      <link>https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</link>
-      <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 09:25:33 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</guid>
-    </item>
-    <item>
       <title>Associate Sales Engineer at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7649893?gh_jid=7649893</link>
       <description>New grad role at Samsara in Remote - UK. Category: Other</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 18:58:20 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7412386</guid>
-    </item>
-    <item>
-      <title>Blockchain Security Engineer at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7701657?gh_jid=7701657</link>
-      <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 12 Mar 2026 18:41:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7701657?gh_jid=7701657</guid>
     </item>
   </channel>
 </rss>

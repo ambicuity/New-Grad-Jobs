@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-13T20:23:51.180800",
+    "last_updated": "2026-03-13T21:02:54.592652",
     "total_snapshots": 9,
     "date_range": {
       "start": "2026-03-05",
@@ -450,12 +450,12 @@
     },
     {
       "date": "2026-03-13",
-      "total_jobs": 961,
+      "total_jobs": 963,
       "categories": {},
       "tiers": {
         "unicorn": 484,
-        "other": 348,
-        "faang_plus": 129
+        "other": 352,
+        "faang_plus": 127
       },
       "top_companies": [
         {
@@ -464,7 +464,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 68
+          "jobs": 67
         },
         {
           "company": "Lyft",
@@ -483,6 +483,10 @@
           "jobs": 18
         },
         {
+          "company": "MetLife",
+          "jobs": 18
+        },
+        {
           "company": "Affirm",
           "jobs": 17
         },
@@ -493,15 +497,11 @@
         {
           "company": "MongoDB",
           "jobs": 16
-        },
-        {
-          "company": "Nuro",
-          "jobs": 16
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 4.43,
-      "timestamp": "2026-03-13T20:23:51.180559"
+      "unique_companies": 209,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-13T21:02:54.592442"
     }
   ]
 }
