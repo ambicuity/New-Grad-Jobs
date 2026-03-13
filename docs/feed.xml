@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 11:13:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 11:51:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Sales Engineer at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7649893?gh_jid=7649893</link>
+      <description>New grad role at Samsara in Remote - UK. Category: Other</description>
+      <pubDate>Fri, 13 Mar 2026 07:20:04 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7649893?gh_jid=7649893</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426718</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Model Lifecycle at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7609435</link>
-      <description>New grad role at Waymo in Kirkland, Washington, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7609435</guid>
     </item>
   </channel>
 </rss>
