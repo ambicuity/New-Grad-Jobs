@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-13T17:02:18.420180",
+    "last_updated": "2026-03-13T17:47:47.061986",
     "total_snapshots": 9,
     "date_range": {
       "start": "2026-03-05",
@@ -450,11 +450,11 @@
     },
     {
       "date": "2026-03-13",
-      "total_jobs": 950,
+      "total_jobs": 971,
       "categories": {},
       "tiers": {
-        "other": 334,
         "unicorn": 484,
+        "other": 355,
         "faang_plus": 132
       },
       "top_companies": [
@@ -487,21 +487,21 @@
           "jobs": 17
         },
         {
+          "company": "Opendoor",
+          "jobs": 16
+        },
+        {
           "company": "MongoDB",
           "jobs": 16
         },
         {
           "company": "Abnormal Security",
           "jobs": 16
-        },
-        {
-          "company": "Nuro",
-          "jobs": 16
         }
       ],
-      "unique_companies": 209,
-      "avg_jobs_per_company": 4.55,
-      "timestamp": "2026-03-13T17:02:18.419923"
+      "unique_companies": 212,
+      "avg_jobs_per_company": 4.58,
+      "timestamp": "2026-03-13T17:47:47.061742"
     }
   ]
 }

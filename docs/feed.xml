@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2026 17:02:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 17:47:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Mechanical/Thermal Tooling, Satellites (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391468002?gh_jid=8391468002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 13:37:13 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391468002?gh_jid=8391468002</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Mechanical - Satellites (Starlink)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
+      <pubDate>Fri, 13 Mar 2026 13:32:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Electrical - Satellites (Starlink)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
+      <pubDate>Fri, 13 Mar 2026 13:32:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7716833</link>
+      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 13:25:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7716833</guid>
+    </item>
+    <item>
+      <title>Antenna Software Engineer, Satellites (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8357946002?gh_jid=8357946002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 13:22:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8357946002?gh_jid=8357946002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Reliability at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7705523</link>
+      <description>New grad role at Checkr in Denver, Colorado, United States; San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 13 Mar 2026 12:59:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7705523</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</link>
+      <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 13 Mar 2026 12:57:43 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
+    </item>
     <item>
       <title>Software Engineer - Product at Mercury</title>
       <link>https://job-boards.greenhouse.io/mercury/jobs/5267749004</link>
@@ -93,10 +142,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 11:33:29 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -107,10 +156,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 11:33:29 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
     </item>
     <item>
       <title>Software Engineer 3, AMP at MongoDB</title>
@@ -307,55 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6608598</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7455853</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7455853</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, 3D Object Detection  (PhD New Grad) at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7539786</link>
-      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7539786</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, ADV Systems at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446320</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446320</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Data &amp; Systems  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446301</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446301</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7090492</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 12 Mar 2026 18:11:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7090492</guid>
     </item>
   </channel>
 </rss>
