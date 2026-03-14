@@ -127,20 +127,33 @@ class TestCategorizeJob:
         assert "name" in result
         assert "emoji" in result
 
-    def test_network_engineer(self):
+    def test_network_engineer(self) -> None:
         """Regression: plain 'Network Engineer' maps to infrastructure_sre."""
         result = categorize_job("Network Engineer")
         assert result["id"] == "infrastructure_sre"
 
-    def test_network_security_engineer(self):
+    def test_network_security_engineer(self) -> None:
         """Regression: plain 'Network Security Engineer' maps to infrastructure_sre."""
         result = categorize_job("Network Security Engineer")
         assert result["id"] == "infrastructure_sre"
 
-    def test_systems_engineer_networks(self):
+    def test_systems_engineer_networks(self) -> None:
         """Regression: plain 'Systems Engineer, Networks' maps to infrastructure_sre."""
         result = categorize_job("Systems Engineer, Networks")
         assert result["id"] == "infrastructure_sre"
+
+    def test_network_in_description_does_not_override_title(self) -> None:
+        """Guard: description-only mentions should not change the title category."""
+        result = categorize_job(
+            "Software Engineer",
+            "Build services on a high-performance network fabric.",
+        )
+        assert result["id"] == "software_engineering"
+
+    def test_network_domain_software_role_stays_software_engineering(self) -> None:
+        """Regression: software roles in a network domain stay software-engineering."""
+        result = categorize_job("Software Engineer, Starlink Network")
+        assert result["id"] == "software_engineering"
 
 
 class TestGetCompanyTier:

@@ -543,13 +543,15 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'name': CATEGORY_PATTERNS['product_management']['name'],
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
         }
-    
-    # Priority check for networking roles to avoid matching 'systems engineer' first
-    if re.search(r'\bnetwork', combined):
+
+    # Keep this override narrow so network-adjacent software/data roles
+    # continue to use the category keyword ordering below.
+    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
+        category_id = 'infrastructure_sre'
         return {
-            'id': 'infrastructure_sre',
-            'name': CATEGORY_PATTERNS['infrastructure_sre']['name'],
-            'emoji': CATEGORY_PATTERNS['infrastructure_sre']['emoji']
+            'id': category_id,
+            'name': CATEGORY_PATTERNS[category_id]['name'],
+            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
         }
 
     for category_id, category_info in CATEGORY_PATTERNS.items():
