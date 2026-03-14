@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from update_jobs import (  # noqa: E402
+    DOMAIN_LIMITER,
     DomainConcurrencyLimiter,
     fetch_google_jobs_parallel,
     fetch_greenhouse_jobs,
@@ -80,6 +81,13 @@ def test_domain_limiter_leaves_other_domains_unthrottled():
         t.join()
 
     assert not failures
+
+
+def test_repo_domain_limiter_matches_real_greenhouse_hosts() -> None:
+    """Verifies the repo-level limiter covers the real Greenhouse host patterns."""
+    assert DOMAIN_LIMITER._matched_domain("boards-api.greenhouse.io") == "greenhouse.io"
+    assert DOMAIN_LIMITER._matched_domain("foo.api.greenhouse.io") == "greenhouse.io"
+    assert DOMAIN_LIMITER._matched_domain("api.lever.co") is None
 
 
 def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
