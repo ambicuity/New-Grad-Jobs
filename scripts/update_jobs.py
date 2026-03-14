@@ -225,8 +225,9 @@ class DomainConcurrencyLimiter:
             semaphore.release()
 
 
-# Cap greenhouse API concurrency while leaving other domains unthrottled.
-DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+# Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
+# other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
 
 
 def limited_get(url: str, **kwargs):
