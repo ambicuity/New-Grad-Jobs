@@ -543,6 +543,14 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'name': CATEGORY_PATTERNS['product_management']['name'],
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
         }
+    
+    # Priority check for networking roles to avoid matching 'systems engineer' first
+    if re.search(r'\bnetwork', combined):
+        return {
+            'id': 'infrastructure_sre',
+            'name': CATEGORY_PATTERNS['infrastructure_sre']['name'],
+            'emoji': CATEGORY_PATTERNS['infrastructure_sre']['emoji']
+        }
 
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
