@@ -27,6 +27,7 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/harryautomazione"><img src="https://avatars.githubusercontent.com/u/249752958?v=4?s=100" width="100px;" alt="harryautomazione"/><br /><sub><b>harryautomazione</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harryautomazione" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ddlKillMe"><img src="https://avatars.githubusercontent.com/u/107548778?v=4?s=100" width="100px;" alt="Luis Dan"/><br /><sub><b>Luis Dan</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=ddlKillMe" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=ddlKillMe" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=ddlKillMe" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>

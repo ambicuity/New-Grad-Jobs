@@ -157,6 +157,17 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "ddlKillMe",
+      "name": "Luis Dan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107548778?v=4",
+      "profile": "https://github.com/ddlKillMe",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
