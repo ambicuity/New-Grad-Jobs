@@ -60,7 +60,7 @@ def _readme_open_violations(tree: ast.Module) -> list[str]:
         elif isinstance(fn, ast.Attribute) and fn.attr == "open":
             # Path("README.md").open() — check the receiver, not the call args
             receiver_str = ast.unparse(fn.value)
-            if "README" in receiver_str or "readme" in receiver_str.lower():
+            if "readme" in receiver_str.lower():
                 violations.append(
                     f"line {node.lineno}: <expr>.open() on {receiver_str!r}"
                 )
@@ -77,9 +77,9 @@ def _check_open_args(node: ast.Call, violations: list[str]) -> None:
     if node.args:
         candidates.append(ast.unparse(node.args[0]))
     # Keyword arg named "file"
-    for kw in node.keywords:
-        if kw.arg == "file":
-            candidates.append(ast.unparse(kw.value))
+    candidates.extend(
+        ast.unparse(kw.value) for kw in node.keywords if kw.arg == "file"
+    )
     for arg_str in candidates:
         if "README" in arg_str or "readme" in arg_str.lower():
             violations.append(f"line {node.lineno}: open({arg_str!r})")
