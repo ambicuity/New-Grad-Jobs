@@ -254,23 +254,24 @@ def test_workday_404_retry_uses_path_tenant(monkeypatch):
     assert called_urls[1] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/acme/Acme_External_Careers/jobs"
 
 
-def test_domain_limiter_subdomain_matching():
-    limiter = DomainConcurrencyLimiter({
-        "greenhouse.io": 1,
-        "myworkdayjobs.com": 1
-    })
-
+def test_domain_limiter_throttles_greenhouse_subdomains():
+    """Verifies that the limiter correctly throttles Greenhouse subdomains."""
+    limiter = DomainConcurrencyLimiter({"greenhouse.io": 1})
     active = 0
     max_active = 0
     lock = threading.Lock()
+    start_barrier = threading.Barrier(2)
 
     def worker(url):
         nonlocal active, max_active
+        start_barrier.wait()
         with limiter.acquire(url):
-            active += 1
-            max_active = max(max_active, active)
+            with lock:
+                active += 1
+                max_active = max(max_active, active)
             time.sleep(0.05)
-            active -= 1
+            with lock:
+                active -= 1
 
     threads = [
         threading.Thread(target=worker, args=("https://boards-api.greenhouse.io/v1/jobs",)),
@@ -281,8 +282,25 @@ def test_domain_limiter_subdomain_matching():
 
     assert max_active == 1
 
+
+def test_domain_limiter_throttles_workday_subdomains():
+    """Verifies that the limiter correctly throttles Workday suffixes."""
+    limiter = DomainConcurrencyLimiter({"myworkdayjobs.com": 1})
     active = 0
     max_active = 0
+    lock = threading.Lock()
+    start_barrier = threading.Barrier(2)
+
+    def worker(url):
+        nonlocal active, max_active
+        start_barrier.wait()
+        with limiter.acquire(url):
+            with lock:
+                active += 1
+                max_active = max(max_active, active)
+            time.sleep(0.05)
+            with lock:
+                active -= 1
 
     threads = [
         threading.Thread(target=worker, args=("https://wd5.myworkdayjobs.com/Acme",)),
@@ -293,6 +311,10 @@ def test_domain_limiter_subdomain_matching():
 
     assert max_active == 1
 
+
+def test_domain_limiter_does_not_throttle_unrelated_domains():
+    """Verifies that unrelated domains remain unthrottled."""
+    limiter = DomainConcurrencyLimiter({"greenhouse.io": 1})
     unthrottled_barrier = threading.Barrier(5)
     failures = []
 
