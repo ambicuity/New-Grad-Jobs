@@ -119,6 +119,7 @@ make run
 | `config.yml` | Central configuration — companies, filters, search terms | ✅ Yes |
 | `scripts/update_jobs.py` | Core scraper + filterer + README generator | ✅ Yes |
 | `.github/workflows/update-jobs.yml` | GitHub Actions job | ✅ Yes (test via manual trigger) |
+| `pyproject.toml` | Project metadata and dependencies (including dev/test extras) | ✅ Yes |
 | `requirements.txt` | Python dependencies | ✅ Yes |
 | `docs/` | GitHub Pages website (HTML/CSS/JS) | ✅ Yes |
 | `README.md` | **AUTO-GENERATED** — never edit manually | ❌ Never |
