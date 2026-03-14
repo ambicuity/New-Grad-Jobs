@@ -1433,6 +1433,12 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     Returns:
         str: ISO formatted date (YYYY-MM-DD) or original string if no match.
     """
+    if posted_at is None:
+        return ''
+
+    if isinstance(posted_at, float) and math.isnan(posted_at):
+        return ''
+
     if not isinstance(posted_at, str):
         # Coerce native date/datetime objects to ISO string rather than
         # returning them raw, which causes dateparser to emit:
@@ -1440,7 +1446,7 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         if hasattr(posted_at, 'isoformat'):
             return posted_at.isoformat()
 
-        return posted_at
+        return str(posted_at)
 
     posted_at_lower = posted_at.lower().strip()
     if now_utc is None:
@@ -1628,16 +1634,17 @@ def format_posted_date(posted_at: Any) -> str:
         str: Human-readable formatted date string.
     """
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle timestamp integers (from Lever API)
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)  # Convert milliseconds to seconds
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        now = datetime.now()
-        diff = now - posted_date.replace(tzinfo=None)
+        diff = now_utc.replace(tzinfo=None) - _as_utc_naive(posted_date)
 
         if diff.days == 0:
             return "Today"
@@ -1660,15 +1667,15 @@ def get_iso_date(posted_at: Any) -> str:
     Returns:
         str: ISO formatted date-time string.
     """
-    """Get ISO format date string"""
     try:
+        now_utc = datetime.now(timezone.utc)
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
-        return posted_date.replace(tzinfo=None).isoformat()
+        return _as_utc_naive(posted_date).isoformat()
     except Exception as e:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
