@@ -39,22 +39,56 @@ def test_scraper_does_not_define_generate_readme() -> None:
     )
 
 
-def test_scraper_does_not_open_readme() -> None:
-    """update_jobs.py must not open() a path containing 'README'."""
-    tree = _scraper_ast()
+def _readme_open_violations(tree: ast.Module) -> list[str]:
+    """Return a list of AST violation strings for any open() call that targets README.
+
+    Handles:
+    - positional arg:   open("README.md", ...)
+    - keyword arg:      open(file="README.md", ...)
+    - attribute open:   Path("README.md").open(...)  /  pathlib.Path(...).open(...)
+    """
     violations = []
     for node in ast.walk(tree):
-        if isinstance(node, ast.Call):
-            fn = node.func
-            fn_name = (
-                fn.id if isinstance(fn, ast.Name)
-                else fn.attr if isinstance(fn, ast.Attribute)
-                else ""
-            )
-            if fn_name == "open" and node.args:
-                arg_str = ast.unparse(node.args[0])
-                if "README" in arg_str or "readme" in arg_str.lower():
-                    violations.append(f"line {node.lineno}: open({arg_str!r})")
+        if not isinstance(node, ast.Call):
+            continue
+        fn = node.func
+
+        # open(...) as a plain name or attribute (e.g. builtins.open)
+        if isinstance(fn, ast.Name) and fn.id == "open":
+            _check_open_args(node, violations)
+
+        elif isinstance(fn, ast.Attribute) and fn.attr == "open":
+            # Path("README.md").open() — check the receiver, not the call args
+            receiver_str = ast.unparse(fn.value)
+            if "README" in receiver_str or "readme" in receiver_str.lower():
+                violations.append(
+                    f"line {node.lineno}: <expr>.open() on {receiver_str!r}"
+                )
+            # Also check any args passed to .open() itself
+            _check_open_args(node, violations)
+
+    return violations
+
+
+def _check_open_args(node: ast.Call, violations: list[str]) -> None:
+    """Append a violation string if any open() argument names a README path."""
+    candidates: list[str] = []
+    # Positional arg[0] is the file path
+    if node.args:
+        candidates.append(ast.unparse(node.args[0]))
+    # Keyword arg named "file"
+    for kw in node.keywords:
+        if kw.arg == "file":
+            candidates.append(ast.unparse(kw.value))
+    for arg_str in candidates:
+        if "README" in arg_str or "readme" in arg_str.lower():
+            violations.append(f"line {node.lineno}: open({arg_str!r})")
+
+
+def test_scraper_does_not_open_readme() -> None:
+    """update_jobs.py must not open() a path containing 'README' (any form)."""
+    tree = _scraper_ast()
+    violations = _readme_open_violations(tree)
     assert not violations, (
         "update_jobs.py opens a README path — README.md generation "
         "was re-introduced.  See issue #156.\n" + "\n".join(violations)
