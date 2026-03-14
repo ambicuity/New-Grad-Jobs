@@ -10,7 +10,6 @@ again without a test failure surfacing the violation.
 """
 import ast
 import re
-import sys
 import pathlib
 
 ROOT = pathlib.Path(__file__).parent.parent
