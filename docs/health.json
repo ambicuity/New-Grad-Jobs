@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "last_run": "2026-03-14T19:44:31.630843Z",
+  "last_run": "2026-03-14T20:02:58.580534Z",
   "total_jobs": 958,
   "source_counts": {
     "greenhouse": 13685,
@@ -9,5 +9,5 @@
     "workday": 3400
   },
   "zero_sources": [],
-  "run_duration_seconds": 299.5
+  "run_duration_seconds": 307.5
 }
