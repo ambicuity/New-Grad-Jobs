@@ -254,7 +254,7 @@ def test_workday_404_retry_uses_path_tenant(monkeypatch):
     assert called_urls[1] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/acme/Acme_External_Careers/jobs"
 
 
-def test_domain_limiter_throttles_greenhouse_subdomains():
+def test_domain_limiter_throttles_greenhouse_subdomains() -> None:
     """Verifies that the limiter correctly throttles Greenhouse subdomains."""
     limiter = DomainConcurrencyLimiter({"greenhouse.io": 1})
     active = 0
@@ -262,7 +262,7 @@ def test_domain_limiter_throttles_greenhouse_subdomains():
     lock = threading.Lock()
     start_barrier = threading.Barrier(2)
 
-    def worker(url):
+    def worker(url: str) -> None:
         nonlocal active, max_active
         start_barrier.wait()
         with limiter.acquire(url):
@@ -277,13 +277,15 @@ def test_domain_limiter_throttles_greenhouse_subdomains():
         threading.Thread(target=worker, args=("https://boards-api.greenhouse.io/v1/jobs",)),
         threading.Thread(target=worker, args=("https://foo.api.greenhouse.io/v1/jobs",)),
     ]
-    for t in threads: t.start()
-    for t in threads: t.join()
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
 
     assert max_active == 1
 
 
-def test_domain_limiter_throttles_workday_subdomains():
+def test_domain_limiter_throttles_workday_subdomains() -> None:
     """Verifies that the limiter correctly throttles Workday suffixes."""
     limiter = DomainConcurrencyLimiter({"myworkdayjobs.com": 1})
     active = 0
@@ -291,7 +293,7 @@ def test_domain_limiter_throttles_workday_subdomains():
     lock = threading.Lock()
     start_barrier = threading.Barrier(2)
 
-    def worker(url):
+    def worker(url: str) -> None:
         nonlocal active, max_active
         start_barrier.wait()
         with limiter.acquire(url):
@@ -306,19 +308,21 @@ def test_domain_limiter_throttles_workday_subdomains():
         threading.Thread(target=worker, args=("https://wd5.myworkdayjobs.com/Acme",)),
         threading.Thread(target=worker, args=("https://wd5.myworkdayjobs.com/Beta",)),
     ]
-    for t in threads: t.start()
-    for t in threads: t.join()
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
 
     assert max_active == 1
 
 
-def test_domain_limiter_does_not_throttle_unrelated_domains():
+def test_domain_limiter_does_not_throttle_unrelated_domains() -> None:
     """Verifies that unrelated domains remain unthrottled."""
     limiter = DomainConcurrencyLimiter({"greenhouse.io": 1})
     unthrottled_barrier = threading.Barrier(5)
     failures = []
 
-    def unthrottled_worker():
+    def unthrottled_worker() -> None:
         try:
             with limiter.acquire("https://unrelated-domain.com/jobs"):
                 unthrottled_barrier.wait(timeout=1)
@@ -326,7 +330,9 @@ def test_domain_limiter_does_not_throttle_unrelated_domains():
             failures.append(exc)
 
     unthrottled_threads = [threading.Thread(target=unthrottled_worker) for _ in range(5)]
-    for t in unthrottled_threads: t.start()
-    for t in unthrottled_threads: t.join()
+    for t in unthrottled_threads:
+        t.start()
+    for t in unthrottled_threads:
+        t.join()
 
     assert not failures
