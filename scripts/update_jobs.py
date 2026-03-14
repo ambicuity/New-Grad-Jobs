@@ -544,6 +544,16 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
         }
 
+    # Keep this override narrow so network-adjacent software/data roles
+    # continue to use the category keyword ordering below.
+    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
+        category_id = 'infrastructure_sre'
+        return {
+            'id': category_id,
+            'name': CATEGORY_PATTERNS[category_id]['name'],
+            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
+        }
+
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue

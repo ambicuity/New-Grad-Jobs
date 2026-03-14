@@ -10,7 +10,7 @@ import sys
 import os
 
 # Ensure the scripts directory is importable
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from update_jobs import (
     categorize_job,
@@ -113,8 +113,7 @@ class TestCategorizeJob:
 
     def test_description_keyword_match(self):
         """Verify that description keywords can also match categories."""
-        result = categorize_job(
-            "Engineer", "Looking for a machine learning specialist")
+        result = categorize_job("Engineer", "Looking for a machine learning specialist")
         assert result["id"] == "data_ml"
 
     def test_empty_title_returns_other(self):
@@ -127,6 +126,34 @@ class TestCategorizeJob:
         assert "id" in result
         assert "name" in result
         assert "emoji" in result
+
+    def test_network_engineer(self) -> None:
+        """Regression: plain 'Network Engineer' maps to infrastructure_sre."""
+        result = categorize_job("Network Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_network_security_engineer(self) -> None:
+        """Regression: plain 'Network Security Engineer' maps to infrastructure_sre."""
+        result = categorize_job("Network Security Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_systems_engineer_networks(self) -> None:
+        """Regression: plain 'Systems Engineer, Networks' maps to infrastructure_sre."""
+        result = categorize_job("Systems Engineer, Networks")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_network_in_description_does_not_override_title(self) -> None:
+        """Guard: description-only mentions should not change the title category."""
+        result = categorize_job(
+            "Software Engineer",
+            "Build services on a high-performance network fabric.",
+        )
+        assert result["id"] == "software_engineering"
+
+    def test_network_domain_software_role_stays_software_engineering(self) -> None:
+        """Regression: software roles in a network domain stay software-engineering."""
+        result = categorize_job("Software Engineer, Starlink Network")
+        assert result["id"] == "software_engineering"
 
 
 class TestGetCompanyTier:
@@ -176,31 +203,33 @@ class TestDetectSponsorshipFlags:
 
     def test_no_sponsorship_detected(self):
         result = detect_sponsorship_flags(
-            "Engineer", "We do not sponsor visas. No sponsorship available.")
+            "Engineer", "We do not sponsor visas. No sponsorship available."
+        )
         assert result["no_sponsorship"] is True
 
     def test_us_citizenship_required(self):
         result = detect_sponsorship_flags(
-            "Engineer", "Requires security clearance and US citizenship.")
+            "Engineer", "Requires security clearance and US citizenship."
+        )
         assert result["us_citizenship_required"] is True
 
     def test_both_flags_detected(self):
         result = detect_sponsorship_flags(
             "Software Engineer",
-            "U.S. citizens only. Cannot sponsor work authorization."
+            "U.S. citizens only. Cannot sponsor work authorization.",
         )
         assert result["no_sponsorship"] is True
         assert result["us_citizenship_required"] is True
 
     def test_no_flags_detected_when_clean(self):
         result = detect_sponsorship_flags(
-            "Software Engineer", "Open to all candidates globally.")
+            "Software Engineer", "Open to all candidates globally."
+        )
         assert result["no_sponsorship"] is False
         assert result["us_citizenship_required"] is False
 
     def test_flag_in_title(self):
-        result = detect_sponsorship_flags(
-            "No sponsorship Software Engineer", "")
+        result = detect_sponsorship_flags("No sponsorship Software Engineer", "")
         assert result["no_sponsorship"] is True
 
     def test_empty_inputs(self):
