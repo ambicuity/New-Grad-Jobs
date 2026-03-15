@@ -317,6 +317,88 @@ class TestSourceCooldownTrackerThreadSafety:
 
         assert all(results), "All concurrent readers should see is_tripped=True"
 
+    def test_concurrent_try_admit_no_overshoot(self):
+        """Concurrent try_admit() calls must never allow more than threshold admissions."""
+        threshold = 5
+        tracker = _fresh_tracker(threshold=threshold)
+        url = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        admitted = []
+        lock = threading.Lock()
+
+        def worker():
+            result = tracker.try_admit(url)
+            with lock:
+                admitted.append(result)
+
+        threads = [threading.Thread(target=worker) for _ in range(20)]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+
+        admitted_count = sum(admitted)
+        assert admitted_count <= threshold, (
+            f"try_admit() admitted {admitted_count} callers — exceeds threshold {threshold}. "
+            "TOCTOU race condition detected."
+        )
+        assert tracker.is_tripped(url), "Tracker must be tripped after threshold admissions."
+
+
+class TestTryAdmitUnit:
+    """Direct unit tests for the try_admit() atomic method."""
+
+    def test_returns_true_below_threshold(self):
+        tracker = _fresh_tracker(threshold=3)
+        url = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        assert tracker.try_admit(url) is True, "First call below threshold must return True"
+        assert tracker.try_admit(url) is True, "Second call below threshold must return True"
+
+    def test_returns_false_and_trips_at_threshold(self):
+        threshold = 3
+        tracker = _fresh_tracker(threshold=threshold)
+        url = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        for _ in range(threshold - 1):
+            tracker.try_admit(url)
+        # threshold-th call must trip and return False
+        result = tracker.try_admit(url)
+        assert result is False, "threshold-th call must return False"
+        assert tracker.is_tripped(url), "Domain must be tripped after threshold-th call"
+
+    def test_returns_false_without_incrementing_when_already_tripped(self):
+        threshold = 2
+        tracker = _fresh_tracker(threshold=threshold)
+        url = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        # Trip it
+        for _ in range(threshold):
+            tracker.try_admit(url)
+        count_after_trip = tracker.counts().get(tracker.domain_key(url), 0)
+        # Call again — must not increment
+        tracker.try_admit(url)
+        assert tracker.counts().get(tracker.domain_key(url), 0) == count_after_trip, (
+            "try_admit() must not increment count when already tripped"
+        )
+
+    def test_different_domains_are_independent(self):
+        tracker = _fresh_tracker(threshold=2)
+        url_a = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        url_b = "https://jobs.lever.co/acme/jobs"
+        # Trip domain A
+        for _ in range(2):
+            tracker.try_admit(url_a)
+        assert tracker.is_tripped(url_a)
+        # Domain B must still admit
+        assert tracker.try_admit(url_b) is True, "Separate domain must still be admitted"
+
+    def test_try_admit_consistent_with_counts(self):
+        threshold = 4
+        tracker = _fresh_tracker(threshold=threshold)
+        url = "https://api.greenhouse.io/v1/boards/acme/jobs"
+        admitted = sum(1 for _ in range(10) if tracker.try_admit(url))
+        # Exactly threshold-1 calls should be admitted (True), threshold-th trips (False)
+        assert admitted == threshold - 1, (
+            f"Expected {threshold - 1} admitted calls before trip, got {admitted}"
+        )
+
 
 # ===========================================================================
 # Module-level constant / singleton verification
