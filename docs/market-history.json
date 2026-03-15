@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-15T00:04:19.925987",
+    "last_updated": "2026-03-15T03:32:06.003230",
     "total_snapshots": 11,
     "date_range": {
       "start": "2026-03-05",
@@ -560,11 +560,11 @@
     },
     {
       "date": "2026-03-15",
-      "total_jobs": 951,
+      "total_jobs": 973,
       "categories": {},
       "tiers": {
-        "other": 345,
-        "faang_plus": 126,
+        "other": 370,
+        "faang_plus": 123,
         "unicorn": 480
       },
       "top_companies": [
@@ -577,16 +577,16 @@
           "jobs": 67
         },
         {
+          "company": "Accenture",
+          "jobs": 31
+        },
+        {
           "company": "Lyft",
           "jobs": 27
         },
         {
           "company": "Dropbox",
           "jobs": 25
-        },
-        {
-          "company": "Boeing",
-          "jobs": 19
         },
         {
           "company": "Oscar Health",
@@ -597,21 +597,21 @@
           "jobs": 18
         },
         {
+          "company": "Boeing",
+          "jobs": 18
+        },
+        {
           "company": "Affirm",
           "jobs": 17
         },
         {
           "company": "Opendoor",
           "jobs": 16
-        },
-        {
-          "company": "MongoDB",
-          "jobs": 16
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.66,
-      "timestamp": "2026-03-15T00:04:19.925754"
+      "unique_companies": 196,
+      "avg_jobs_per_company": 4.96,
+      "timestamp": "2026-03-15T03:32:06.002998"
     }
   ]
 }
