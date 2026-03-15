@@ -16,6 +16,8 @@ import threading
 from typing import Dict
 from urllib.parse import urlparse
 
+__all__ = ["SourceCooldownTracker", "SOURCE_COOLDOWN_THRESHOLD", "SOURCE_COOLDOWN"]
+
 
 class SourceCooldownTracker:
     """Thread-safe per-domain 403 circuit breaker for HTTP fetchers.
