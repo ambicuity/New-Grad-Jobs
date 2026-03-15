@@ -225,6 +225,139 @@ class DomainConcurrencyLimiter:
             semaphore.release()
 
 
+class SourceCooldownTracker:
+    """Thread-safe per-domain 403 circuit breaker for HTTP fetchers.
+
+    Tracks the number of HTTP 403 Forbidden responses received from each domain
+    within a single run. Once a domain accumulates ``threshold`` 403 responses it
+    is *tripped*: all subsequent requests to any URL sharing that domain are
+    skipped for the remainder of the run.
+
+    Design constraints
+    ------------------
+    - Entirely in-memory and stateless across runs (no files, DB, or external
+      cache).  A fresh instance is created at module load; each process run
+      starts clean.
+    - Thread-safe: safe to call from concurrent fetcher worker threads.
+    - Complements :class:`DomainConcurrencyLimiter` (which caps parallelism);
+      this class stops fetching when a source is actively rejecting requests.
+
+    Domain key derivation
+    ---------------------
+    Takes the last two components of the hostname so that subdomains are
+    grouped with their parent::
+
+        api.greenhouse.io   → greenhouse.io
+        boards-api.greenhouse.io → greenhouse.io
+        goldmansachs.wd5.myworkdayjobs.com → myworkdayjobs.com
+        careers.google.com  → google.com
+
+    Callers may also pass a plain domain string (``"greenhouse.io"``) or a
+    full URL — both are normalised to the same key.
+    """
+
+    def __init__(self, threshold: int = 5):
+        if isinstance(threshold, bool) or not isinstance(threshold, int) or threshold < 1:
+            raise ValueError(f"threshold must be a positive integer, got {threshold!r}")
+        self._threshold = threshold
+        self._lock = threading.Lock()
+        self._counts: Dict[str, int] = {}
+        self._tripped: set = set()
+
+    @staticmethod
+    def domain_key(url_or_domain: str) -> str:
+        """Derive a stable, normalised domain key from a URL or hostname.
+
+        Maps subdomains to their parent so that counts aggregate correctly
+        across the varied sub-hosts used by a single API provider.
+
+        Args:
+            url_or_domain: A full URL (``https://api.greenhouse.io/…``) or a
+                bare hostname / domain string (``"api.greenhouse.io"``).
+
+        Returns:
+            The last two dot-separated components of the host in lower-case,
+            e.g. ``"greenhouse.io"``.  Returns the full host if it has fewer
+            than two components.
+        """
+        s = (url_or_domain or "").strip().lower()
+        if s.startswith(("http://", "https://")):
+            netloc = urlparse(s).netloc or ""
+            host = netloc.split(":")[0]
+        else:
+            host = s.split(":")[0]
+        parts = [p for p in host.split(".") if p]
+        if len(parts) >= 2:
+            return ".".join(parts[-2:])
+        return host
+
+    def record_403(self, source: str) -> bool:
+        """Record one HTTP 403 response from ``source``.
+
+        Thread-safe.  If this call causes the domain to reach the configured
+        threshold, the source is tripped and an explicit log line is emitted.
+
+        Args:
+            source: URL or domain that returned 403.
+
+        Returns:
+            ``True`` on the exact call that trips the cooldown (threshold just
+            reached), ``False`` in all other cases (already tripped, or count
+            still below threshold).
+        """
+        key = self.domain_key(source)
+        with self._lock:
+            if key in self._tripped:
+                return False  # already tripped — no state change
+            self._counts[key] = self._counts.get(key, 0) + 1
+            if self._counts[key] >= self._threshold:
+                self._tripped.add(key)
+                print(
+                    f"  🚫 COOLDOWN TRIPPED: '{key}' has returned {self._threshold} "
+                    f"403 responses in this run — skipping for remainder of run"
+                )
+                return True
+        return False
+
+    def is_tripped(self, source: str) -> bool:
+        """Return ``True`` if the source domain is in cooldown for this run.
+
+        Args:
+            source: URL or domain to check.
+
+        Returns:
+            ``True`` if the cooldown has been tripped for this domain.
+        """
+        key = self.domain_key(source)
+        with self._lock:
+            return key in self._tripped
+
+    def counts(self) -> Dict[str, int]:
+        """Return a snapshot of the current 403 counts per domain key.
+
+        Intended for logging and test assertions only.
+        """
+        with self._lock:
+            return dict(self._counts)
+
+    def tripped_sources(self) -> set:
+        """Return the set of currently tripped domain keys.
+
+        Intended for logging and test assertions only.
+        """
+        with self._lock:
+            return set(self._tripped)
+
+
+# Default 403 threshold before a source is put into cooldown for the run.
+# Five 403s from the same domain indicates the source is actively blocking us,
+# not a transient per-company access denial.
+SOURCE_COOLDOWN_THRESHOLD: int = 5
+
+# Module-level singleton — one tracker per process run, reset on each invocation.
+# Thread-safe; shared across all parallel fetcher workers.
+SOURCE_COOLDOWN = SourceCooldownTracker(threshold=SOURCE_COOLDOWN_THRESHOLD)
+
 # Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
 # other domains unthrottled.
 DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
@@ -621,6 +754,12 @@ def is_job_closed(title: str, description: str = '') -> bool:
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
+
+    # Skip immediately if this domain is in cooldown (too many 403s this run).
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -629,6 +768,17 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
             response = limited_get(url, timeout=timeout)
+
+            # Handle 403 before raise_for_status — record for cooldown tracking.
+            if response.status_code == 403:
+                SOURCE_COOLDOWN.record_403(url)
+                count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                if SOURCE_COOLDOWN.is_tripped(url):
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                else:
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                break  # 403 is not retriable; move on to next company
+
             response.raise_for_status()
             data = response.json()
 
@@ -677,6 +827,12 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
     jobs = []
+
+    # Skip immediately if this domain is in cooldown (too many 403s this run).
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -685,6 +841,17 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 
             print(f"Fetching jobs from {company_name} (Lever)...")
             response = limited_get(url, timeout=timeout)
+
+            # Handle 403 before raise_for_status — record for cooldown tracking.
+            if response.status_code == 403:
+                SOURCE_COOLDOWN.record_403(url)
+                count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                if SOURCE_COOLDOWN.is_tripped(url):
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                else:
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                break  # 403 is not retriable; move on to next company
+
             response.raise_for_status()
             data = response.json()
 
@@ -910,6 +1077,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
         if not company_name or not workday_url:
             continue
 
+        # Skip immediately if this Workday domain is in cooldown.
+        if SOURCE_COOLDOWN.is_tripped(workday_url):
+            print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(workday_url)}' in cooldown (403 threshold exceeded)")
+            continue
+
         print(f"Fetching jobs from {company_name} (Workday)...")
 
         # Construct Workday API URL
@@ -971,13 +1143,24 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                         csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
                         continue # Retry with new token
 
+                    # 403 Forbidden — record for cooldown tracking; do not retry.
+                    if response.status_code == 403:
+                        SOURCE_COOLDOWN.record_403(api_url)
+                        count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(api_url), 0)
+                        if SOURCE_COOLDOWN.is_tripped(api_url):
+                            print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
+                        else:
+                            print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                        break  # Break inner retry loop — skip generic error guard below
+
                     if response.ok:
                         break # Success
 
                     if attempt < max_retries:
                         print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
 
-                if not response or not response.ok:
+                # Log generic non-OK outcome only when it was not a handled 403.
+                if (not response or not response.ok) and (not response or response.status_code != 403):
                     try:
                         error_body = response.json() if response else "No response"
                     except (json.JSONDecodeError, ValueError):
@@ -1302,10 +1485,24 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
+                # Check cooldown before making a request.
+                if SOURCE_COOLDOWN.is_tripped(url):
+                    print(f"  ⏭️  Google '{search_term}': skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown")
+                    return jobs
+
                 response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 404:
                     print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
+                # Handle 403 before raise_for_status — record for cooldown tracking.
+                if response.status_code == 403:
+                    SOURCE_COOLDOWN.record_403(url)
+                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                    if SOURCE_COOLDOWN.is_tripped(url):
+                        print(f"  🚫 Google '{search_term}': 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                    else:
+                        print(f"  ⚠️  Google '{search_term}': 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                    break  # 403 is not retriable
                 response.raise_for_status()
                 data = response.json()
 
