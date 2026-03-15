@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-03-14T15:51:56.345341",
-    "total_snapshots": 10,
+    "last_updated": "2026-03-15T15:07:39.521955",
+    "total_snapshots": 11,
     "date_range": {
       "start": "2026-03-05",
-      "end": "2026-03-14"
+      "end": "2026-03-15"
     }
   },
   "snapshots": [
@@ -505,12 +505,12 @@
     },
     {
       "date": "2026-03-14",
-      "total_jobs": 960,
+      "total_jobs": 952,
       "categories": {},
       "tiers": {
         "other": 346,
-        "faang_plus": 128,
-        "unicorn": 486
+        "faang_plus": 126,
+        "unicorn": 480
       },
       "top_companies": [
         {
@@ -531,7 +531,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 21
+          "jobs": 19
         },
         {
           "company": "Oscar Health",
@@ -555,8 +555,63 @@
         }
       ],
       "unique_companies": 205,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-03-14T15:51:56.345095"
+      "avg_jobs_per_company": 4.64,
+      "timestamp": "2026-03-14T23:43:11.547225"
+    },
+    {
+      "date": "2026-03-15",
+      "total_jobs": 1024,
+      "categories": {},
+      "tiers": {
+        "other": 418,
+        "faang_plus": 126,
+        "unicorn": 480
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 159
+        },
+        {
+          "company": "Waymo",
+          "jobs": 67
+        },
+        {
+          "company": "Accenture",
+          "jobs": 31
+        },
+        {
+          "company": "Lyft",
+          "jobs": 27
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 25
+        },
+        {
+          "company": "Boeing",
+          "jobs": 19
+        },
+        {
+          "company": "Oscar Health",
+          "jobs": 18
+        },
+        {
+          "company": "MetLife",
+          "jobs": 18
+        },
+        {
+          "company": "Affirm",
+          "jobs": 17
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 16
+        }
+      ],
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.81,
+      "timestamp": "2026-03-15T15:07:39.521682"
     }
   ]
 }

@@ -251,8 +251,9 @@ class DomainConcurrencyLimiter:
             semaphore.release()
 
 
-# Cap greenhouse API concurrency while leaving other domains unthrottled.
-DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+# Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
+# other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
 
 
 def limited_get(url: str, **kwargs):
@@ -568,6 +569,16 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'id': 'product_management',
             'name': CATEGORY_PATTERNS['product_management']['name'],
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
+        }
+
+    # Keep this override narrow so network-adjacent software/data roles
+    # continue to use the category keyword ordering below.
+    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
+        category_id = 'infrastructure_sre'
+        return {
+            'id': category_id,
+            'name': CATEGORY_PATTERNS[category_id]['name'],
+            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
         }
 
     for category_id, category_info in CATEGORY_PATTERNS.items():
