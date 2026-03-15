@@ -140,7 +140,12 @@ def test_workflow_does_not_stage_readme() -> None:
 def test_workflow_stages_docs_files() -> None:
     """update-jobs.yml must stage the required docs/ artifacts."""
     content = WORKFLOW.read_text(encoding="utf-8")
-    required = ["docs/jobs.json", "docs/health.json", "docs/feed.xml"]
+    required = [
+        "docs/jobs.json",
+        "docs/market-history.json",
+        "docs/health.json",
+        "docs/feed.xml",
+    ]
     missing = [f for f in required if f not in content]
     assert not missing, (
         "update-jobs.yml is missing required docs/ artifacts in git add: "
