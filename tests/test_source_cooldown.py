@@ -17,7 +17,7 @@ import os
 import sys
 import threading
 from typing import Any
-from unittest.mock import MagicMock, call, patch
+from unittest.mock import MagicMock
 
 import pytest
 
