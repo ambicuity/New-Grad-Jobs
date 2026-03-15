@@ -26,8 +26,9 @@ def _scraper_ast() -> ast.Module:
 
 
 def test_scraper_does_not_define_generate_readme() -> None:
-    """generate_readme function must not exist in update_jobs.py."""
+    """generate_readme must not be defined or called in update_jobs.py."""
     tree = _scraper_ast()
+    # Check: no function definition
     defined = [
         node.name
         for node in ast.walk(tree)
@@ -35,6 +36,20 @@ def test_scraper_does_not_define_generate_readme() -> None:
     ]
     assert "generate_readme" not in defined, (
         "generate_readme is defined in update_jobs.py — README.md "
+        "generation was re-introduced.  See issue #156."
+    )
+    # Check: no call site (ast.Name or ast.Attribute)
+    called = [
+        node
+        for node in ast.walk(tree)
+        if isinstance(node, ast.Call) and (
+            (isinstance(node.func, ast.Name) and node.func.id == "generate_readme")
+            or (isinstance(node.func, ast.Attribute) and node.func.attr == "generate_readme")
+        )
+    ]
+    assert not called, (
+        f"generate_readme is called at line(s) "
+        f"{[n.lineno for n in called]} in update_jobs.py — README.md "
         "generation was re-introduced.  See issue #156."
     )
 
@@ -123,9 +138,12 @@ def test_workflow_does_not_stage_readme() -> None:
 
 
 def test_workflow_stages_docs_files() -> None:
-    """update-jobs.yml must stage at least one docs/ file."""
+    """update-jobs.yml must stage the required docs/ artifacts."""
     content = WORKFLOW.read_text(encoding="utf-8")
-    assert "git add docs/" in content or "git add docs/jobs.json" in content, (
-        "update-jobs.yml does not stage any docs/ files.  "
-        "Expected 'git add docs/jobs.json ...'  See issue #156."
+    required = ["docs/jobs.json", "docs/health.json", "docs/feed.xml"]
+    missing = [f for f in required if f not in content]
+    assert not missing, (
+        "update-jobs.yml is missing required docs/ artifacts in git add: "
+        + ", ".join(missing)
+        + "  See issue #156."
     )
