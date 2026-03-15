@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-15T16:06:19.550445",
+    "last_updated": "2026-03-15T16:52:30.979091",
     "total_snapshots": 11,
     "date_range": {
       "start": "2026-03-05",
@@ -563,8 +563,8 @@
       "total_jobs": 994,
       "categories": {},
       "tiers": {
-        "other": 391,
-        "faang_plus": 123,
+        "other": 392,
+        "faang_plus": 122,
         "unicorn": 480
       },
       "top_companies": [
@@ -578,7 +578,7 @@
         },
         {
           "company": "Lyft",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "Dropbox",
@@ -609,9 +609,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.87,
-      "timestamp": "2026-03-15T16:06:19.550214"
+      "unique_companies": 205,
+      "avg_jobs_per_company": 4.85,
+      "timestamp": "2026-03-15T16:52:30.978820"
     }
   ]
 }
