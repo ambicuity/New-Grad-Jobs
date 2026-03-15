@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-15T10:44:58.681392",
+    "last_updated": "2026-03-15T11:08:36.106647",
     "total_snapshots": 11,
     "date_range": {
       "start": "2026-03-05",
@@ -560,10 +560,10 @@
     },
     {
       "date": "2026-03-15",
-      "total_jobs": 962,
+      "total_jobs": 1009,
       "categories": {},
       "tiers": {
-        "other": 360,
+        "other": 407,
         "faang_plus": 122,
         "unicorn": 480
       },
@@ -605,13 +605,13 @@
           "jobs": 17
         },
         {
-          "company": "Walmart",
-          "jobs": 17
+          "company": "Opendoor",
+          "jobs": 16
         }
       ],
-      "unique_companies": 194,
-      "avg_jobs_per_company": 4.96,
-      "timestamp": "2026-03-15T10:44:58.681196"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.85,
+      "timestamp": "2026-03-15T11:08:36.106435"
     }
   ]
 }
