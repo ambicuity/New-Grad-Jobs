@@ -195,7 +195,7 @@ jobs:
                       fn_name = fn.attr
                   if fn_name == "open" and node.args:
                       arg_str = ast.unparse(node.args[0])
-                      if "README" in arg_str or "readme" in arg_str.lower():
+                      if "readme" in arg_str.lower():
                           violations.append(f"  Line {node.lineno}: open({arg_str!r}, ...)")
 
           # Also reject presence of generate_readme function definition
