@@ -187,9 +187,9 @@ class TestWorkday422LoggingWithTextFallback:
 # ---------------------------------------------------------------------------
 
 class TestWorkdayNon422ErrorLogging:
-    """Other non-2xx codes (403, 500) should also capture the body."""
+    """Other non-2xx codes (500, 503) should capture the error body."""
 
-    @pytest.mark.parametrize("status_code", [403, 500, 503])
+    @pytest.mark.parametrize("status_code", [500, 503])
     def test_non_422_errors_also_log_body(self, status_code, capsys):
         error_payload = {"errorCode": "INTERNAL_ERROR", "message": "server exploded"}
         mock_response = _make_response(status_code, json_data=error_payload)
@@ -204,6 +204,22 @@ class TestWorkdayNon422ErrorLogging:
         out = capsys.readouterr().out
         assert str(status_code) in out
         assert "INTERNAL_ERROR" in out
+
+    def test_403_logs_via_cooldown_path(self, capsys):
+        """403 is handled by the cooldown tracker and logs its own message — not the generic error body."""
+        mock_response = _make_response(403, json_data={"errorCode": "FORBIDDEN"})
+
+        with (
+            patch("update_jobs.limited_post", return_value=mock_response),
+            patch("update_jobs.get_workday_csrf_token", return_value=""),
+            patch("update_jobs.HTTP_SESSION", MagicMock()),
+        ):
+            fetch_workday_jobs([_make_company()])
+
+        out = capsys.readouterr().out
+        assert "403" in out
+        # Cooldown-specific log — not the generic error body
+        assert "Workday 403 Forbidden" in out
 
 
 # ---------------------------------------------------------------------------

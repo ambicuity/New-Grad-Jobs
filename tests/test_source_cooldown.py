@@ -608,6 +608,26 @@ class TestWorkdayCooldownIntegration:
         jobs = fetch_workday_jobs([self._company])
         assert len(jobs) == 1
 
+    def test_403_does_not_retry(self, monkeypatch):
+        """A single 403 from Workday must not trigger a retry — call_count must be 1."""
+        tracker = _fresh_tracker(threshold=5)
+        monkeypatch.setattr(update_jobs, "SOURCE_COOLDOWN", tracker)
+        monkeypatch.setattr(update_jobs, "SOURCE_COOLDOWN_THRESHOLD", 5)
+        monkeypatch.setattr(update_jobs, "get_workday_csrf_token", lambda host, session: "token")
+
+        call_count = 0
+
+        def counting_post(url, **kw):
+            nonlocal call_count
+            call_count += 1
+            return _make_response(403)
+
+        monkeypatch.setattr(update_jobs, "limited_post", counting_post)
+        fetch_workday_jobs([self._company])
+        assert call_count == 1, (
+            f"Expected exactly 1 HTTP call on 403 (no retry), got {call_count}"
+        )
+
     def test_403_records_count(self, monkeypatch):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(update_jobs, "SOURCE_COOLDOWN", tracker)

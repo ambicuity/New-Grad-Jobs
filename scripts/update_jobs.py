@@ -1151,7 +1151,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                             print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
                         else:
                             print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                        break  # Break inner retry loop; outer while will then break
+                        break  # Break inner retry loop — skip generic error guard below
 
                     if response.ok:
                         break # Success
@@ -1159,7 +1159,8 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                     if attempt < max_retries:
                         print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
 
-                if not response or not response.ok:
+                # Log generic non-OK outcome only when it was not a handled 403.
+                if (not response or not response.ok) and (not response or response.status_code != 403):
                     try:
                         error_body = response.json() if response else "No response"
                     except (json.JSONDecodeError, ValueError):
