@@ -220,6 +220,9 @@ class TestWorkdayNon422ErrorLogging:
         assert "403" in out
         # Cooldown-specific log — not the generic error body
         assert "Workday 403 Forbidden" in out
+        # Generic error log and success footer must NOT appear after a 403
+        assert "Workday API error" not in out
+        assert "✓ Found" not in out
 
 
 # ---------------------------------------------------------------------------

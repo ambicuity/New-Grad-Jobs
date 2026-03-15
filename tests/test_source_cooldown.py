@@ -24,11 +24,13 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 import update_jobs  # noqa: E402 — must import module so we can patch its globals
-from update_jobs import (  # noqa: E402
-    DOMAIN_LIMITER,
+from source_cooldown import (  # noqa: E402
     SOURCE_COOLDOWN,
     SOURCE_COOLDOWN_THRESHOLD,
     SourceCooldownTracker,
+)
+from update_jobs import (  # noqa: E402
+    DOMAIN_LIMITER,
     fetch_greenhouse_jobs,
     fetch_lever_jobs,
     fetch_workday_jobs,
