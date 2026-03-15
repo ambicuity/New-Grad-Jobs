@@ -1,29 +1,30 @@
 # New-Grad-Jobs Test Improver Memory (Mar 2026)
 
 ## Commands
-- **Test**: `~/.local/bin/pytest tests/ -q` (or `python -m pytest tests/`)
+- **Test**: `python -m pytest tests/ -q`
 - **Coverage**: auto via pyproject.toml addopts
 - **Lint**: `flake8 <file> --select=E9,F63,F7,F82`
 - **Install**: `pip install --break-system-packages pytest pytest-cov flake8`
 
 ## Coverage
-- Current (Mar 14): update_jobs.py 46%, total 42%, 166 tests (↑5 tests from Mar 13)
+- Current (Mar 15): update_jobs.py 46%, total 42%, 200 tests
 
 ## Backlog
-1. `is_recent_job()` with int ms timestamps (1375-1404)
-2. `deduplicate_jobs()` end-to-end (1290-1303)
-3. `has_new_grad_signal()` / `has_track_signal()` (1307-1313)
-4. `extract_sort_date()` (1882-1892)
-5. `generate_jobs_json()` (1552-1581)
+1. `is_recent_job()` - ✅ Already well-tested in test_date_normalization.py
+2. ~~`deduplicate_jobs()` end-to-end~~ ✅ DONE (PR #152)
+3. `has_new_grad_signal()` / `has_track_signal()` (lines ~1307-1313)
+4. `extract_sort_date()` (lines ~1882-1892)
+5. `generate_jobs_json()` (lines ~1552-1581)
 
 ## Completed
-- PR #151: enrichment tests (49 tests, +4pp), draft status - awaiting maintainer review
+- PR #151: enrichment tests (49 tests, +4pp), draft - awaiting maintainer review
+- PR #152: deduplication tests (25 tests), draft, created Mar 15
 
 ## Status
-- PR #151: Open, draft, no CI checks run (created Mar 11, still pending review)
-- Issue #152: Monthly Activity updated with latest test counts and run history
-- Issue #157: Workflow failure from Mar 12 - Test Improver already investigated and commented
-- Next: Task 2 (identify new opportunities), Task 3 (implement more tests when PR #151 is merged)
+- PR #151: Open, draft, created Mar 11 (enrichment functions)
+- PR #152: Open, draft, created Mar 15 (deduplication)
+- Monthly Activity #153: Created for March 2026
+- Next: Monitor PR review, consider Task 2 (identify more opportunities) or Task 3 (implement more tests)
 
 ## Last Updated
-- Run ID: 23081130613 (2026-03-14 05:14 UTC)
+- Run ID: 23104295954 (2026-03-15 05:39 UTC)
