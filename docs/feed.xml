@@ -5,55 +5,174 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 19:44:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 20:26:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Security Engineer at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
+      <description>New grad role at Gusto in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 16:16:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7590298</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 16:00:24 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7357460</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7357460</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
+    </item>
+    <item>
+      <title>Operations Associate, New Grad at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7544545</link>
+      <description>New grad role at Stripe in Bengaluru, India. Category: Other</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7544545</guid>
+    </item>
+    <item>
+      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
+      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
+      <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
+    </item>
+    <item>
+      <title>Security Engineer, New Grad  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
+      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
+      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Core Technology at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
+      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data &amp; AI at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
+      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=6099228</link>
+      <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
+    </item>
+    <item>
+      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
+      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
+    </item>
     <item>
       <title>Air Operations Associate, Chennai at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7721147?gh_jid=7721147</link>
       <description>New grad role at Flexport in Chennai. Category: Other</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7721147?gh_jid=7721147</guid>
     </item>
     <item>
       <title>Inbound Sales Development Representative - New Grad at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324</link>
       <description>New grad role at Flexport in Chicago, Illinois, United States. Category: Other</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324</guid>
     </item>
     <item>
       <title>Ocean Operations Associate, Mumbai at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848</link>
       <description>New grad role at Flexport in Mumbai, India. Category: Other</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848</guid>
     </item>
     <item>
       <title>Software Engineer I, Finance at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7354795?gh_jid=7354795</link>
       <description>New grad role at Flexport in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7354795?gh_jid=7354795</guid>
     </item>
     <item>
       <title>Software Engineer I (Generalist) at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661</link>
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661</guid>
     </item>
     <item>
       <title>Software Engineer II (Commerce) at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</link>
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</guid>
     </item>
     <item>
       <title>Software Engineer II (Generalist) at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</link>
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:25:33 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 15:46:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
     </item>
     <item>
@@ -104,13 +223,6 @@
       <description>New grad role at Algolia in Remote - United States. Category: Other</description>
       <pubDate>Mon, 16 Mar 2026 13:53:07 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/algolia/jobs/5818284004</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 13:45:56 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
     </item>
     <item>
       <title>Enablement Systems Engineer at Datadog</title>
@@ -244,118 +356,6 @@
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 20:17:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4648098006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Pricing MLOps at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4648092006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 20:17:53 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4648092006</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7357460</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7357460</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
-    </item>
-    <item>
-      <title>Operations Associate, New Grad at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7544545</link>
-      <description>New grad role at Stripe in Bengaluru, India. Category: Other</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7544545</guid>
-    </item>
-    <item>
-      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
-      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
-      <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
-    </item>
-    <item>
-      <title>Security Engineer, New Grad  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
-      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Core Technology at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
-      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
-      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=6099228</link>
-      <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
-      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
-    </item>
-    <item>
-      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
-      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 19:00:45 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
     </item>
   </channel>
 </rss>
