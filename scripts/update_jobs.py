@@ -225,8 +225,9 @@ class DomainConcurrencyLimiter:
             semaphore.release()
 
 
-# Cap greenhouse API concurrency while leaving other domains unthrottled.
-DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
+# Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
+# other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
 
 
 def limited_get(url: str, **kwargs):
@@ -542,6 +543,16 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'id': 'product_management',
             'name': CATEGORY_PATTERNS['product_management']['name'],
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
+        }
+
+    # Keep this override narrow so network-adjacent software/data roles
+    # continue to use the category keyword ordering below.
+    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
+        category_id = 'infrastructure_sre'
+        return {
+            'id': category_id,
+            'name': CATEGORY_PATTERNS[category_id]['name'],
+            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
         }
 
     for category_id, category_info in CATEGORY_PATTERNS.items():
@@ -1050,8 +1061,15 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     completed = 0
     errors = 0
 
-    def search_single(args):
-        """Worker function to search a single site/term/country combination"""
+    def search_single(args: tuple[str, str, Dict[str, str]]) -> Dict[str, Any]:
+        """Worker function to search a single site/term/country combination
+
+        Args:
+            args (tuple): site, search_term, country
+
+        Returns:
+            Dict[str, Any]: Search metadata plus normalized jobs for one task.
+        """
         site, search_term, country = args
         jobs_list = []
 
@@ -1180,6 +1198,14 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        """Worker function for Greenhouse fetch
+
+        Args:
+            company (Dict[str, str]): Company metadata.
+
+        Returns:
+            List[Dict[str, Any]]: List of normalized jobs.
+        """
         return fetch_greenhouse_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -1218,6 +1244,14 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
+        """Worker function for Lever fetch
+
+        Args:
+            company (Dict[str, str]): Company metadata.
+
+        Returns:
+            List[Dict[str, Any]]: List of normalized jobs.
+        """
         return fetch_lever_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -1422,25 +1456,34 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
 
 
 def has_track_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains track signals"""
+    """Check if job title contains track signal keywords (e.g. 'software', 'data').
+
+    Args:
+        title (str): The job title to check.
+        signals (List[str]): List of keywords to search for.
+
+    Returns:
+        bool: True if any signal is found in the title.
+    """
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
-    """
-    Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
-    to ISO format dates that date_parser can handle.
+def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
+    """Normalize human-readable date strings to ISO format dates.
 
-    Handles formats like:
-    - "Posted Today" -> today's date
-    - "Posted Yesterday" -> yesterday's date
-    - "Posted 2 Days Ago" -> 2 days ago
-    - "Posted 30+ Days Ago" -> 30 days ago
+    Args:
+        posted_at (Any): Raw date string or date/datetime object.
+        now_utc (datetime | None): Current UTC time for relative calculations.
 
-    Also handles native datetime.date / datetime.datetime objects returned by
-    Workday / JobSpy API clients, coercing them to their ISO-format string so
-    that downstream dateparser never receives a non-string argument.
+    Returns:
+        str: ISO formatted date (YYYY-MM-DD) or original string if no match.
     """
+    if posted_at is None:
+        return ''
+
+    if isinstance(posted_at, float) and math.isnan(posted_at):
+        return ''
+
     if not isinstance(posted_at, str):
         # Coerce native date/datetime objects to ISO string rather than
         # returning them raw, which causes dateparser to emit:
@@ -1448,7 +1491,7 @@ def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> st
         if hasattr(posted_at, 'isoformat'):
             return posted_at.isoformat()
 
-        return posted_at
+        return str(posted_at)
 
     posted_at_lower = posted_at.lower().strip()
     if now_utc is None:
@@ -1518,7 +1561,14 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         return False
 
 def is_valid_location(location: str) -> bool:
-    """Check if job location is in target countries (USA, Canada, India) or Remote"""
+    """Check if job location is in target countries (USA, Canada, India) or Remote.
+
+    Args:
+        location (str): Job location string.
+
+    Returns:
+        bool: True if location is valid/targeted, False otherwise.
+    """
     if not location:
         return False
 
@@ -1619,19 +1669,27 @@ def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     return enriched
 
-def format_posted_date(posted_at: str) -> str:
-    """Format posted date for display"""
+def format_posted_date(posted_at: Any) -> str:
+    """Format posted date for display (e.g., 'Today', '2 days ago').
+
+    Args:
+        posted_at (Any): Raw date string, timestamp, or date object.
+
+    Returns:
+        str: Human-readable formatted date string.
+    """
     try:
+        now_utc = datetime.now(timezone.utc)
+
         # Handle timestamp integers (from Lever API)
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)  # Convert milliseconds to seconds
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)  # Convert milliseconds to seconds
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        now = datetime.now()
-        diff = now - posted_date.replace(tzinfo=None)
+        diff = now_utc.replace(tzinfo=None) - _as_utc_naive(posted_date)
 
         if diff.days == 0:
             return "Today"
@@ -1645,16 +1703,24 @@ def format_posted_date(posted_at: str) -> str:
         print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
 
-def get_iso_date(posted_at) -> str:
-    """Get ISO format date string"""
+def get_iso_date(posted_at: Any) -> str:
+    """Get ISO format date string (YYYY-MM-DDTHH:MM:SS) from various inputs.
+
+    Args:
+        posted_at (Any): Raw date string, timestamp, or date object.
+
+    Returns:
+        str: ISO formatted date-time string.
+    """
     try:
+        now_utc = datetime.now(timezone.utc)
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000)
+            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at)
+            normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
-        return posted_date.replace(tzinfo=None).isoformat()
+        return _as_utc_naive(posted_date).isoformat()
     except Exception as e:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
