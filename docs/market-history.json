@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T00:07:11.302988",
+    "last_updated": "2026-03-16T03:37:02.631318",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -618,8 +618,8 @@
       "total_jobs": 997,
       "categories": {},
       "tiers": {
-        "other": 388,
-        "faang_plus": 130,
+        "other": 387,
+        "faang_plus": 131,
         "unicorn": 479
       },
       "top_companies": [
@@ -641,7 +641,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 20
+          "jobs": 19
         },
         {
           "company": "Oscar Health",
@@ -666,7 +666,7 @@
       ],
       "unique_companies": 209,
       "avg_jobs_per_company": 4.77,
-      "timestamp": "2026-03-16T00:07:11.302733"
+      "timestamp": "2026-03-16T03:37:02.631122"
     }
   ]
 }
