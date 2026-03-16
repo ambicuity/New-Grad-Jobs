@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 17:37:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 18:39:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer, Motion Control  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7586057</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 14:03:01 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7586057</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Rider at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8452280002?gh_jid=8452280002</link>
+      <description>New grad role at Lyft in New York, NY. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 14:00:22 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8452280002?gh_jid=8452280002</guid>
+    </item>
+    <item>
+      <title>Junior Developer Support Engineer at Algolia</title>
+      <link>https://job-boards.greenhouse.io/algolia/jobs/5818284004</link>
+      <description>New grad role at Algolia in Remote - United States. Category: Other</description>
+      <pubDate>Mon, 16 Mar 2026 13:53:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/algolia/jobs/5818284004</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 13:45:56 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
+    </item>
     <item>
       <title>Enablement Systems Engineer at Datadog</title>
       <link>https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</link>
@@ -328,34 +356,6 @@
       <description>New grad role at SoFi in WA - Seattle. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 17:47:13 +0000</pubDate>
       <guid isPermaLink="true">https://sofi.com/careers/job/7645856003?gh_jid=7645856003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Driver Earnings at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8367642002?gh_jid=8367642002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 17:45:14 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8367642002?gh_jid=8367642002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, High Performance Computing (Starlink)    at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8450116002?gh_jid=8450116002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 16:58:25 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8450116002?gh_jid=8450116002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Low Latency Computing (Starlink)    at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8450095002?gh_jid=8450095002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 16:58:25 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8450095002?gh_jid=8450095002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Beam Planning (Starlink)    at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8450082002?gh_jid=8450082002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 16:58:24 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8450082002?gh_jid=8450082002</guid>
     </item>
   </channel>
 </rss>

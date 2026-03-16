@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T17:37:40.401388",
+    "last_updated": "2026-03-16T18:39:13.867601",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,12 +615,12 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 976,
+      "total_jobs": 973,
       "categories": {},
       "tiers": {
         "unicorn": 482,
-        "other": 372,
-        "faang_plus": 122
+        "faang_plus": 124,
+        "other": 367
       },
       "top_companies": [
         {
@@ -641,11 +641,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "Accenture",
-          "jobs": 21
+          "jobs": 20
         },
         {
           "company": "Oscar Health",
@@ -664,9 +664,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.78,
-      "timestamp": "2026-03-16T17:37:40.401127"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.7,
+      "timestamp": "2026-03-16T18:39:13.867364"
     }
   ]
 }
