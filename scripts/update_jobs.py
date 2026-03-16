@@ -2553,18 +2553,12 @@ def main():
     except Exception as e:
         print(f"Error writing jobs.json: {e}")
 
-    # Generate README content
-    readme_content = generate_readme(enriched_jobs, config)
-
-    # Write to README file
-    readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
-    try:
-        with open(readme_path, 'w') as f:
-            f.write(readme_content)
-        print(f"README.md updated successfully with {len(enriched_jobs)} jobs")
-    except Exception as e:
-        print(f"Error writing README.md: {e}")
-        sys.exit(1)
+    # README generation is intentionally skipped here.
+    # README.md is auto-generated on-demand via a separate workflow
+    # (e.g. generate-readme.yml) and is not staged by update-jobs.yml.
+    # See: .github/workflows/pipeline-integrity.yml for the staging contract.
+    # See: issue #156 for the decision record.
+    print("Skipping README.md generation (not part of update-jobs staging contract)")
 
     # ========== Generate RSS Feed ==========
     generate_rss_feed(enriched_jobs)
