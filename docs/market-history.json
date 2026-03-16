@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T05:37:24.172700",
+    "last_updated": "2026-03-16T07:02:49.192393",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,11 +615,11 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 993,
+      "total_jobs": 989,
       "categories": {},
       "tiers": {
-        "other": 390,
-        "faang_plus": 124,
+        "other": 387,
+        "faang_plus": 123,
         "unicorn": 479
       },
       "top_companies": [
@@ -644,15 +644,15 @@
           "jobs": 18
         },
         {
-          "company": "Accenture",
-          "jobs": 18
-        },
-        {
           "company": "MetLife",
           "jobs": 18
         },
         {
           "company": "Affirm",
+          "jobs": 17
+        },
+        {
+          "company": "Walmart",
           "jobs": 17
         },
         {
@@ -664,9 +664,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 211,
-      "avg_jobs_per_company": 4.71,
-      "timestamp": "2026-03-16T05:37:24.172440"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.64,
+      "timestamp": "2026-03-16T07:02:49.192149"
     }
   ]
 }
