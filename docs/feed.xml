@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 12:13:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 13:59:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Application Security Engineer at Starburst</title>
+      <link>https://job-boards.greenhouse.io/starburst/jobs/5119301008</link>
+      <description>New grad role at Starburst in Boston, MA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 09:03:27 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/starburst/jobs/5119301008</guid>
+    </item>
+    <item>
+      <title> Software Engineer - Platform InfraCore | Canada | Remote   at Grafana Labs</title>
+      <link>https://job-boards.greenhouse.io/grafanalabs/jobs/5809025004</link>
+      <description>New grad role at Grafana Labs in Canada (Remote). Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 08:59:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grafanalabs/jobs/5809025004</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 08:40:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
+    </item>
     <item>
       <title>Software Engineer at Lattice</title>
       <link>https://lattice.com/job?gh_jid=8463880002</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Mercury in San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 12:51:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/5267749004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Hardware Test &amp; Automation (Optical Payloads) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8211187002?gh_jid=8211187002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 12:40:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8211187002?gh_jid=8211187002</guid>
-    </item>
-    <item>
-      <title>IT Network Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8456295002?gh_jid=8456295002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 13 Mar 2026 12:11:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8456295002?gh_jid=8456295002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer -  VLM/LLM Integration at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7707980</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, US; Seattle, WA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 13 Mar 2026 12:09:11 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7707980</guid>
     </item>
   </channel>
 </rss>
