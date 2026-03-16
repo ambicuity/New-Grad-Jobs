@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T16:21:54.751268",
+    "last_updated": "2026-03-16T17:37:40.401388",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,17 +615,17 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 974,
+      "total_jobs": 976,
       "categories": {},
       "tiers": {
-        "unicorn": 481,
+        "unicorn": 482,
         "other": 372,
-        "faang_plus": 121
+        "faang_plus": 122
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 160
+          "jobs": 161
         },
         {
           "company": "Waymo",
@@ -641,7 +641,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 22
+          "jobs": 24
+        },
+        {
+          "company": "Accenture",
+          "jobs": 21
         },
         {
           "company": "Oscar Health",
@@ -658,15 +662,11 @@
         {
           "company": "MongoDB",
           "jobs": 16
-        },
-        {
-          "company": "Nuro",
-          "jobs": 16
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 4.49,
-      "timestamp": "2026-03-16T16:21:54.750987"
+      "unique_companies": 204,
+      "avg_jobs_per_company": 4.78,
+      "timestamp": "2026-03-16T17:37:40.401127"
     }
   ]
 }
