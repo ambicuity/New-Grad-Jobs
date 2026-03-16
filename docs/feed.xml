@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 23:05:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 23:47:46 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (Vehicle Engineering) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8397542002?gh_jid=8397542002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 19:16:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397542002?gh_jid=8397542002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Special Projects) - Top Secret Clearance at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8306500002?gh_jid=8306500002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 19:05:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8306500002?gh_jid=8306500002</guid>
+    </item>
     <item>
       <title>Ground Software Engineer, LabVIEW (Falcon &amp; Dragon) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8306482002?gh_jid=8306482002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 13:04:28 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4652235006</guid>
-    </item>
-    <item>
-      <title>Software Engineer - FullStack at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 13:04:11 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 12:50:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
     </item>
   </channel>
 </rss>
