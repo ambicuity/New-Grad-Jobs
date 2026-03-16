@@ -34,6 +34,7 @@ import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
+from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
 from urllib3.util.retry import Retry
 
 # Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
@@ -224,14 +225,6 @@ class DomainConcurrencyLimiter:
         finally:
             semaphore.release()
 
-
-# SourceCooldownTracker, SOURCE_COOLDOWN_THRESHOLD, and SOURCE_COOLDOWN are
-# defined in source_cooldown.py and re-exported here for backward compatibility.
-from source_cooldown import (  # noqa: E402
-    SOURCE_COOLDOWN,
-    SOURCE_COOLDOWN_THRESHOLD,
-    SourceCooldownTracker,
-)
 
 # Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
 # other domains unthrottled.

@@ -16,7 +16,7 @@ All network calls are mocked — no live requests.
 import os
 import sys
 import threading
-from typing import Any
+from typing import Any, ClassVar
 from unittest.mock import MagicMock
 
 import pytest
@@ -89,16 +89,16 @@ class TestSourceCooldownTrackerInit:
         assert tracker._threshold == 1
 
     def test_threshold_zero_raises(self):
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match=r"threshold must be a positive integer"):
             SourceCooldownTracker(threshold=0)
 
     def test_threshold_negative_raises(self):
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match=r"threshold must be a positive integer"):
             SourceCooldownTracker(threshold=-3)
 
     def test_threshold_bool_true_raises(self):
         # bool is a subclass of int; True == 1 but should still be rejected
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match=r"threshold must be a positive integer"):
             SourceCooldownTracker(threshold=True)
 
     def test_threshold_string_raises(self):
@@ -182,7 +182,7 @@ class TestSourceCooldownTrackerRecordAndTrip:
 
     def test_counts_increment_before_trip(self):
         tracker = _fresh_tracker(threshold=5)
-        for i in range(3):
+        for _ in range(3):
             tracker.record_403(GH_URL)
         key = SourceCooldownTracker.domain_key(GH_URL)
         assert tracker.counts()[key] == 3
@@ -660,7 +660,7 @@ class TestLeverCooldownIntegration:
 class TestWorkdayCooldownIntegration:
     """Validates fetch_workday_jobs respects the cooldown."""
 
-    _company = {"name": "Acme", "workday_url": WORKDAY_URL}
+    _company: ClassVar[dict] = {"name": "Acme", "workday_url": WORKDAY_URL}
 
     def _page_response(self, offset=0):
         if offset == 0:

@@ -13,7 +13,6 @@ Public API
 from __future__ import annotations
 
 import threading
-from typing import Dict
 from urllib.parse import urlparse
 
 __all__ = ["SourceCooldownTracker", "SOURCE_COOLDOWN_THRESHOLD", "SOURCE_COOLDOWN"]
@@ -50,12 +49,12 @@ class SourceCooldownTracker:
     full URL — both are normalised to the same key.
     """
 
-    def __init__(self, threshold: int = 5):
+    def __init__(self, threshold: int = 5) -> None:
         if isinstance(threshold, bool) or not isinstance(threshold, int) or threshold < 1:
             raise ValueError(f"threshold must be a positive integer, got {threshold!r}")
         self._threshold = threshold
         self._lock = threading.Lock()
-        self._counts: Dict[str, int] = {}
+        self._counts: dict[str, int] = {}
         self._tripped: set = set()
 
     @staticmethod
@@ -168,7 +167,7 @@ class SourceCooldownTracker:
         with self._lock:
             return key in self._tripped
 
-    def counts(self) -> Dict[str, int]:
+    def counts(self) -> dict[str, int]:
         """Return a snapshot of the current 403 counts per domain key.
 
         Intended for logging and test assertions only.
