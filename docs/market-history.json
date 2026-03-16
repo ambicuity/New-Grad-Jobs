@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T08:18:00.639021",
+    "last_updated": "2026-03-16T09:21:06.839745",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,11 +615,11 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 998,
+      "total_jobs": 965,
       "categories": {},
       "tiers": {
-        "other": 397,
-        "faang_plus": 122,
+        "other": 366,
+        "faang_plus": 120,
         "unicorn": 479
       },
       "top_companies": [
@@ -644,10 +644,6 @@
           "jobs": 18
         },
         {
-          "company": "MetLife",
-          "jobs": 18
-        },
-        {
           "company": "Walmart",
           "jobs": 18
         },
@@ -656,17 +652,21 @@
           "jobs": 17
         },
         {
-          "company": "Accenture",
-          "jobs": 17
+          "company": "Opendoor",
+          "jobs": 16
         },
         {
-          "company": "Opendoor",
+          "company": "MongoDB",
+          "jobs": 16
+        },
+        {
+          "company": "Nuro",
           "jobs": 16
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 4.48,
-      "timestamp": "2026-03-16T08:18:00.638768"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.53,
+      "timestamp": "2026-03-16T09:21:06.839509"
     }
   ]
 }
