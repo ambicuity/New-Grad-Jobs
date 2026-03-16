@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T07:02:49.192393",
+    "last_updated": "2026-03-16T08:18:00.639021",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,11 +615,11 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 989,
+      "total_jobs": 998,
       "categories": {},
       "tiers": {
-        "other": 387,
-        "faang_plus": 123,
+        "other": 397,
+        "faang_plus": 122,
         "unicorn": 479
       },
       "top_companies": [
@@ -648,25 +648,25 @@
           "jobs": 18
         },
         {
+          "company": "Walmart",
+          "jobs": 18
+        },
+        {
           "company": "Affirm",
           "jobs": 17
         },
         {
-          "company": "Walmart",
+          "company": "Accenture",
           "jobs": 17
         },
         {
           "company": "Opendoor",
           "jobs": 16
-        },
-        {
-          "company": "MongoDB",
-          "jobs": 16
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.64,
-      "timestamp": "2026-03-16T07:02:49.192149"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 4.48,
+      "timestamp": "2026-03-16T08:18:00.638768"
     }
   ]
 }
