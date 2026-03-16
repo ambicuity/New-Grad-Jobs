@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 15:08:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 16:21:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>IT Network Engineer, Launch at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8463201002?gh_jid=8463201002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 11:26:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8463201002?gh_jid=8463201002</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 11:11:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 11:11:26 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
     <item>
       <title>Software Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Fri, 13 Mar 2026 13:37:13 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391468002?gh_jid=8391468002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Mechanical - Satellites (Starlink)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Fri, 13 Mar 2026 13:32:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Electrical - Satellites (Starlink)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Fri, 13 Mar 2026 13:32:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Fastly</title>
-      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7716833</link>
-      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 13:25:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7716833</guid>
     </item>
   </channel>
 </rss>
