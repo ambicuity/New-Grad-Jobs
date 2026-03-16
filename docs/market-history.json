@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-16T20:26:58.487304",
+    "last_updated": "2026-03-16T21:09:05.107124",
     "total_snapshots": 12,
     "date_range": {
       "start": "2026-03-05",
@@ -615,12 +615,12 @@
     },
     {
       "date": "2026-03-16",
-      "total_jobs": 980,
+      "total_jobs": 984,
       "categories": {},
       "tiers": {
-        "other": 377,
-        "faang_plus": 122,
-        "unicorn": 481
+        "other": 379,
+        "unicorn": 482,
+        "faang_plus": 123
       },
       "top_companies": [
         {
@@ -644,10 +644,6 @@
           "jobs": 23
         },
         {
-          "company": "Accenture",
-          "jobs": 20
-        },
-        {
           "company": "Oscar Health",
           "jobs": 18
         },
@@ -656,17 +652,21 @@
           "jobs": 17
         },
         {
-          "company": "Walmart",
-          "jobs": 17
+          "company": "Opendoor",
+          "jobs": 16
         },
         {
-          "company": "Opendoor",
+          "company": "MongoDB",
+          "jobs": 16
+        },
+        {
+          "company": "Nuro",
           "jobs": 16
         }
       ],
-      "unique_companies": 214,
-      "avg_jobs_per_company": 4.58,
-      "timestamp": "2026-03-16T20:26:58.487058"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.51,
+      "timestamp": "2026-03-16T21:09:05.106861"
     }
   ]
 }

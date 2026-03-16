@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 20:26:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 21:09:05 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Retirement Developer Infrastructure Engineer at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7615358</link>
+      <description>New grad role at Gusto in Denver, CO;San Francisco, CA;New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 16 Mar 2026 16:56:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7615358</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 16:46:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
     <item>
       <title>AI Security Engineer at Gusto</title>
       <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Lattice in Canada. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 02:17:51 +0000</pubDate>
       <guid isPermaLink="true">https://lattice.com/job?gh_jid=8463880002</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5123824008</link>
-      <description>New grad role at New Relic in Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 01:08:22 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5123824008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, MLOps - Pricing  at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4648098006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 13 Mar 2026 20:17:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4648098006</guid>
     </item>
   </channel>
 </rss>
