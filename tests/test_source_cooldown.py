@@ -337,9 +337,9 @@ class TestSourceCooldownTrackerThreadSafety:
             t.join()
 
         admitted_count = sum(admitted)
-        assert admitted_count <= threshold, (
-            f"try_admit() admitted {admitted_count} callers — exceeds threshold {threshold}. "
-            "TOCTOU race condition detected."
+        assert admitted_count == threshold - 1, (
+            f"try_admit() admitted {admitted_count} callers — expected exactly {threshold - 1} "
+            f"(threshold-1). TOCTOU race condition detected or admission count incorrect."
         )
         assert tracker.is_tripped(url), "Tracker must be tripped after threshold admissions."
 
