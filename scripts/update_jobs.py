@@ -2355,7 +2355,11 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
 
 
 def main():
-    """Main function to scrape jobs and update README
+    """Scrape job listings and write pipeline artifacts to docs/.
+
+    Side effects:
+    - Writes docs/jobs.json, docs/market-history.json, docs/health.json, docs/feed.xml
+    - README.md is intentionally NOT written here; use a dedicated workflow if needed
 
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
