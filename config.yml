@@ -434,6 +434,9 @@ apis:
     # P5: Google Careers API deprecated (returns 404 since late 2024).
     # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.
     enabled: true
+    MAX_PAGES: 3 #This refers to the HTML pages that we return. Since this is google, we want to be careful
+    # The Google HTML careers page only returns 20 results per page, but we cut it early to avoid hitting google too hard.
+    # In this case, 3 pages would mean about 60 jobs returned give or take.
     # Google careers API - searches for new grad positions
     search_terms:
       - "new graduate software engineer"

@@ -719,9 +719,27 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 
     return jobs
 
-def fetch_google_jobs(search_terms: List[str], max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers by scraping the search results"""
-    MAX_PAGES = 3 # Put an upper limit on the number of pages we return to avoid rate limits
+def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+    """Fetch jobs from Google Careers by scraping the search results
+    This function takes a List of str, in this case URL from fetch_page and returns a dict of strs.
+    I managed to match it to how the prev/other api functions return.
+    The orginal API call has retrys and ties into the global retry system. I have left that off as each page we
+    add can mean this adds up quickly. We want to be careful with google.
+
+    Input: List[str]
+
+    Output: List[Dict[str. Any]]
+    {
+    'company': 'Company Name',
+    'title': 'Job Title',
+    'location': 'City, State',
+    'url': 'Direct URL',
+    'posted_at': 'Timestamp',
+    'source': 'Greenhouse',
+    'description': 'Text Snippet'
+}
+    """
+    MAX_PAGES = max_pages # Put an upper limit on the number of pages we return to avoid rate limits
     all_jobs = []
     seen_urls = set() # O(1) deduplication
 
@@ -834,7 +852,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 1, timeout: in
                     desc_text = re.sub(r'<[^>]+>', ' ', desc_html)
                     desc_text = re.sub(r'\s+', ' ', desc_text).strip()
                     description = desc_text[:500]
-
+                    # Deduplicate in O(1) using a set for faster processing.
                     if link not in seen_urls:
                         seen_urls.add(link)
                         all_jobs.append({
@@ -850,15 +868,15 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 1, timeout: in
                 except Exception as e:
                     job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
                     print(f"⚠️  Google: Error parsing job data (ID: {job_id}): {e}")
-
+            # If no new jobs were added at all, most likely hit the end of the unique pages
             if new_jobs == 0:
                 jobs_found_on_page = False
             else:
-                if page >= MAX_PAGES:
+                if page >= MAX_PAGES: # MAX_PAGES set above in order to limit any excessive GET requests
                     jobs_found_on_page = False
                 else:
-                    page += 1
-    print("✓ Found Google Career Jobs returned: ", len(job))
+                    page += 1 # +1 to add to the page URL rather than look for the next page link.
+    print("✓ Found Google Career Jobs returned: ", len(all_jobs)) # Print total number of jobs found for logs
     return all_jobs
 
 
@@ -2345,7 +2363,8 @@ def main():
         if 'google' in config['apis'] and config['apis']['google'].get('enabled') and config['apis']['google'].get('search_terms'):
             futures['google'] = executor.submit(
                 fetch_google_jobs,
-                config['apis']['google']['search_terms']
+                search_terms=config['apis']['google']['search_terms'],
+                max_pages=config['apis']['google'].get('MAX_PAGES', 3) # Get MAX_PAGES var from config.yml
             )
 
         # Submit JobSpy fetch (already parallelized internally)
