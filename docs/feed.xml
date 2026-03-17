@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 18:52:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 19:50:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist II, Growth Marketing at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=6483005</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 15:36:15 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6483005</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, tvScientific at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 15:20:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
+    </item>
     <item>
       <title>Software Engineer (Contractor) at Flatiron Health</title>
       <link>https://flatiron.com/careers/open-positions/job?gh_jid=7681161</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Postman in San Francisco, California, United States. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 18:22:40 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7359054003</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Figma</title>
-      <link>https://boards.greenhouse.io/figma/jobs/5829751004?gh_jid=5829751004</link>
-      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 17:53:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5829751004?gh_jid=5829751004</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 16 Mar 2026 17:49:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
     </item>
   </channel>
 </rss>
