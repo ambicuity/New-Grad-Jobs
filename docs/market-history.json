@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-17T08:06:08.677045",
+    "last_updated": "2026-03-17T09:09:58.540461",
     "total_snapshots": 13,
     "date_range": {
       "start": "2026-03-05",
@@ -670,11 +670,11 @@
     },
     {
       "date": "2026-03-17",
-      "total_jobs": 986,
+      "total_jobs": 955,
       "categories": {},
       "tiers": {
         "unicorn": 487,
-        "other": 373,
+        "other": 342,
         "faang_plus": 126
       },
       "top_companies": [
@@ -699,10 +699,6 @@
           "jobs": 23
         },
         {
-          "company": "Accenture",
-          "jobs": 23
-        },
-        {
           "company": "NVIDIA",
           "jobs": 19
         },
@@ -717,11 +713,15 @@
         {
           "company": "MongoDB",
           "jobs": 16
+        },
+        {
+          "company": "Nuro",
+          "jobs": 16
         }
       ],
-      "unique_companies": 212,
-      "avg_jobs_per_company": 4.65,
-      "timestamp": "2026-03-17T08:06:08.676728"
+      "unique_companies": 204,
+      "avg_jobs_per_company": 4.68,
+      "timestamp": "2026-03-17T09:09:58.540206"
     }
   ]
 }
