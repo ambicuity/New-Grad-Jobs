@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:07:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 02:58:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Borrow at SoFi</title>
+      <link>https://sofi.com/careers/job/7655008003?gh_jid=7655008003</link>
+      <description>New grad role at SoFi in Cottonwood Heights, UT. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 21:32:12 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7655008003?gh_jid=7655008003</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ARC Team at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4673771005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 21:10:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4673771005</guid>
+    </item>
+    <item>
+      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
+      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
+      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 16 Mar 2026 20:03:25 +0000</pubDate>
+      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
+    </item>
     <item>
       <title>Sales Engineer 4 - Associate Specialist at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258</link>
@@ -218,13 +239,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7536572</guid>
     </item>
     <item>
-      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
-      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
-      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 17:28:03 +0000</pubDate>
-      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
-    </item>
-    <item>
       <title>IT Systems Engineer - Top Secret Clearance at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
@@ -342,20 +356,6 @@
       <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
-      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
-    </item>
-    <item>
-      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
     </item>
   </channel>
 </rss>
