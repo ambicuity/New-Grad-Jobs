@@ -1484,6 +1484,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
 
+    # Handle "X hours ago" or "X minutes ago" (resolve to today)
+    if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
+
     # Return original if no pattern matches
     return posted_at
 
