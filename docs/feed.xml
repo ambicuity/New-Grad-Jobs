@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 18:01:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 18:52:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (Contractor) at Flatiron Health</title>
+      <link>https://flatiron.com/careers/open-positions/job?gh_jid=7681161</link>
+      <description>New grad role at Flatiron Health in NY office. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 14:29:38 +0000</pubDate>
+      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=7681161</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Dev Accelerator at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 14:29:01 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</guid>
+    </item>
+    <item>
+      <title>Cloud Infrastructure Engineer II , Platform Infrastructure at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7224694003?gh_jid=7224694003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada; Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 17 Mar 2026 14:28:55 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7224694003?gh_jid=7224694003</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 (Fullstack), Threat Narrative at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7658409003?gh_jid=7658409003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada; Remote - USA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 14:28:19 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7658409003?gh_jid=7658409003</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Frontier AI Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4363623005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 14:21:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4363623005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ARC Team at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4673771005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 14:21:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4673771005</guid>
+    </item>
     <item>
       <title>Security Engineer II - SaaS Applications at Wiz</title>
       <link>https://www.wiz.io/careers/job/4664212006/:title?gh_jid=4664212006</link>
@@ -127,13 +169,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7667832?gh_jid=7667832</guid>
     </item>
     <item>
-      <title>Software Engineer, ARC Team at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4673771005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 21:10:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4673771005</guid>
-    </item>
-    <item>
       <title>Sales Engineer 4 - Associate Specialist at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258</link>
       <description>New grad role at Samsara in Remote - US. Category: Other</description>
@@ -163,17 +198,17 @@
     </item>
     <item>
       <title>Account Development Representative (New Grad) at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</link>
-      <description>New grad role at Samsara in Atlanta, Georgia, United States. Category: Other</description>
-      <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</guid>
-    </item>
-    <item>
-      <title>Account Development Representative (New Grad) at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</link>
       <description>New grad role at Samsara in Phoenix, Arizona, United States. Category: Other</description>
       <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</guid>
+    </item>
+    <item>
+      <title>Account Development Representative (New Grad) at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</link>
+      <description>New grad role at Samsara in Atlanta, Georgia, United States. Category: Other</description>
+      <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</guid>
     </item>
     <item>
       <title>Sales Engineer II - Specialist at Samsara</title>
@@ -288,13 +323,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
     </item>
     <item>
-      <title>Software Engineer, Frontier AI Infrastructure at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4363623005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 18:37:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4363623005</guid>
-    </item>
-    <item>
       <title>Software Engineer II at Checkr</title>
       <link>https://job-boards.greenhouse.io/checkr/jobs/7296759</link>
       <description>New grad role at Checkr in San Francisco, California, United States. Category: Software Engineering</description>
@@ -328,34 +356,6 @@
       <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 16 Mar 2026 17:49:32 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 17:49:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7536572</link>
-      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 17:49:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7536572</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 17:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8245295002?gh_jid=8245295002</guid>
-    </item>
-    <item>
-      <title>Retirement Developer Infrastructure Engineer at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/7615358</link>
-      <description>New grad role at Gusto in Denver, CO;San Francisco, CA;New York, NY. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 16:56:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7615358</guid>
     </item>
   </channel>
 </rss>
