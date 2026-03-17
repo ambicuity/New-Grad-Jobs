@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import is_recent_job, normalize_date_string
+from update_jobs import format_posted_date, get_iso_date, is_recent_job, normalize_date_string
 
 
 FIXED_NOW_UTC = datetime(2026, 3, 4, 12, 0, 0, tzinfo=timezone.utc)
@@ -31,6 +31,10 @@ def test_normalize_date_string_jobspy_human_readable_variants():
     assert normalize_date_string('Yesterday', FIXED_NOW_UTC) == (now - timedelta(days=1)).strftime('%Y-%m-%d')
     assert normalize_date_string('Posted 2 Days Ago', FIXED_NOW_UTC) == (now - timedelta(days=2)).strftime('%Y-%m-%d')
     assert normalize_date_string('30+ Days Ago', FIXED_NOW_UTC) == (now - timedelta(days=30)).strftime('%Y-%m-%d')
+    assert normalize_date_string('Posted 3 hours ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
+    assert normalize_date_string('45 minutes ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
+    assert normalize_date_string('1 hour ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
+    assert normalize_date_string('1 minute ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
 
 
 def test_normalize_date_string_native_date_object_returns_iso_string():
@@ -57,6 +61,11 @@ def test_normalize_date_string_native_date_object_returns_iso_string():
 def test_normalize_date_string_preserves_utc_offset_strings():
     value = '2026-03-01T12:34:56+05:30'
     assert normalize_date_string(value, FIXED_NOW_UTC) == value
+
+
+def test_normalize_date_string_returns_string_for_none_and_nan():
+    assert normalize_date_string(None) == ''
+    assert normalize_date_string(float('nan')) == ''
 
 
 def test_is_recent_job_handles_utc_offset_string_by_normalizing_to_utc(monkeypatch):
@@ -104,6 +113,34 @@ def test_is_recent_job_boundary_behavior_for_recent_window(monkeypatch):
 
     assert is_recent_job(just_inside, 7) is True
     assert is_recent_job(just_outside, 7) is False
+
+
+def test_format_posted_date_handles_posted_today_without_negative_day_drift(monkeypatch):
+    just_after_midnight_utc = datetime(2026, 3, 4, 0, 30, 0, tzinfo=timezone.utc)
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(just_after_midnight_utc))
+
+    assert format_posted_date('Posted Today') == 'Today'
+
+
+def test_format_posted_date_normalizes_timezone_aware_strings(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    value = '2026-03-01T12:34:56+05:30'
+    assert format_posted_date(value) == '3 days ago'
+
+
+def test_get_iso_date_normalizes_timezone_aware_strings_to_utc(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    value = '2026-03-01T12:34:56+05:30'
+    assert get_iso_date(value) == '2026-03-01T07:04:56'
+
+
+def test_get_iso_date_handles_unix_millis_in_utc(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=timezone.utc).timestamp() * 1000)
+    assert get_iso_date(recent_ms) == '2024-03-09T10:00:00'
 
 
 def _fixed_datetime_class(fixed_now: datetime):

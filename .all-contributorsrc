@@ -35,9 +35,7 @@
       "profile": "https://github.com/rvac-bucky",
       "contributions": [
         "code",
-        "doc",
-        "infra",
-        "test"
+        "doc"
       ]
     },
     {
@@ -154,6 +152,28 @@
       "name": "harryautomazione",
       "avatar_url": "https://avatars.githubusercontent.com/u/249752958?v=4",
       "profile": "https://github.com/harryautomazione",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "ddlKillMe",
+      "name": "Luis Dan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107548778?v=4",
+      "profile": "https://github.com/ddlKillMe",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "Aalerti",
+      "name": "Aalerti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/151652106?v=4",
+      "profile": "https://github.com/Aalerti",
       "contributions": [
         "doc",
         "code",
