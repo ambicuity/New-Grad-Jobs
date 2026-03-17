@@ -5,21 +5,42 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 19:50:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 20:30:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
+    </item>
+    <item>
+      <title>Security Engineer at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7536572</link>
+      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7536572</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, tvScientific at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 15:49:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
+    </item>
     <item>
       <title>Data Scientist II, Growth Marketing at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=6483005</link>
       <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 17 Mar 2026 15:36:15 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6483005</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 15:20:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
     </item>
     <item>
       <title>Software Engineer (Contractor) at Flatiron Health</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 18:47:15 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Checkr</title>
-      <link>https://job-boards.greenhouse.io/checkr/jobs/7296759</link>
-      <description>New grad role at Checkr in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 18:29:50 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7296759</guid>
-    </item>
-    <item>
-      <title>Backend Software Engineer II at Checkr</title>
-      <link>https://job-boards.greenhouse.io/checkr/jobs/7438937</link>
-      <description>New grad role at Checkr in Denver, Colorado, United States; San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 18:28:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7438937</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Postman</title>
-      <link>https://job-boards.greenhouse.io/postman/jobs/7359054003</link>
-      <description>New grad role at Postman in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 18:22:40 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7359054003</guid>
     </item>
   </channel>
 </rss>
