@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-17T21:58:55.322944",
+    "last_updated": "2026-03-17T22:39:20.383801",
     "total_snapshots": 13,
     "date_range": {
       "start": "2026-03-05",
@@ -670,17 +670,17 @@
     },
     {
       "date": "2026-03-17",
-      "total_jobs": 957,
+      "total_jobs": 949,
       "categories": {},
       "tiers": {
-        "unicorn": 483,
+        "unicorn": 482,
         "faang_plus": 119,
-        "other": 355
+        "other": 348
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 161
+          "jobs": 160
         },
         {
           "company": "Waymo",
@@ -696,7 +696,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 21
+          "jobs": 20
         },
         {
           "company": "Abnormal Security",
@@ -715,13 +715,13 @@
           "jobs": 17
         },
         {
-          "company": "Accenture",
-          "jobs": 17
+          "company": "Nuro",
+          "jobs": 16
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.39,
-      "timestamp": "2026-03-17T21:58:55.322718"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.46,
+      "timestamp": "2026-03-17T22:39:20.383546"
     }
   ]
 }
