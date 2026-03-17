@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-17T09:09:58.540461",
+    "last_updated": "2026-03-17T10:11:45.710235",
     "total_snapshots": 13,
     "date_range": {
       "start": "2026-03-05",
@@ -670,12 +670,12 @@
     },
     {
       "date": "2026-03-17",
-      "total_jobs": 955,
+      "total_jobs": 956,
       "categories": {},
       "tiers": {
         "unicorn": 487,
-        "other": 342,
-        "faang_plus": 126
+        "other": 346,
+        "faang_plus": 123
       },
       "top_companies": [
         {
@@ -688,7 +688,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 28
+          "jobs": 26
         },
         {
           "company": "Lyft",
@@ -699,11 +699,11 @@
           "jobs": 23
         },
         {
-          "company": "NVIDIA",
-          "jobs": 19
+          "company": "Oscar Health",
+          "jobs": 18
         },
         {
-          "company": "Oscar Health",
+          "company": "NVIDIA",
           "jobs": 18
         },
         {
@@ -719,9 +719,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-03-17T09:09:58.540206"
+      "unique_companies": 211,
+      "avg_jobs_per_company": 4.53,
+      "timestamp": "2026-03-17T10:11:45.709988"
     }
   ]
 }
