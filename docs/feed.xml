@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 16:54:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 18:01:46 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer II - SaaS Applications at Wiz</title>
+      <link>https://www.wiz.io/careers/job/4664212006/:title?gh_jid=4664212006</link>
+      <description>New grad role at Wiz in Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 17 Mar 2026 13:51:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.wiz.io/careers/job/4664212006/:title?gh_jid=4664212006</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Borrow at SoFi</title>
+      <link>https://sofi.com/careers/job/7655008003?gh_jid=7655008003</link>
+      <description>New grad role at SoFi in Cottonwood Heights, UT. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 13:45:49 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7655008003?gh_jid=7655008003</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fullstack at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7670800</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 13:20:29 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7670800</guid>
+    </item>
+    <item>
+      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
+      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
+      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 13:15:14 +0000</pubDate>
+      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
+    </item>
     <item>
       <title>Full-Stack Product Software Engineer, Simplify Sharing at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7491863?gh_jid=7491863</link>
@@ -106,13 +134,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4673771005</guid>
     </item>
     <item>
-      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
-      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
-      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 20:03:25 +0000</pubDate>
-      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
-    </item>
-    <item>
       <title>Sales Engineer 4 - Associate Specialist at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258</link>
       <description>New grad role at Samsara in Remote - US. Category: Other</description>
@@ -142,17 +163,17 @@
     </item>
     <item>
       <title>Account Development Representative (New Grad) at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</link>
-      <description>New grad role at Samsara in Phoenix, Arizona, United States. Category: Other</description>
-      <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</guid>
-    </item>
-    <item>
-      <title>Account Development Representative (New Grad) at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</link>
       <description>New grad role at Samsara in Atlanta, Georgia, United States. Category: Other</description>
       <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</guid>
+    </item>
+    <item>
+      <title>Account Development Representative (New Grad) at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</link>
+      <description>New grad role at Samsara in Phoenix, Arizona, United States. Category: Other</description>
+      <pubDate>Mon, 16 Mar 2026 19:53:13 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</guid>
     </item>
     <item>
       <title>Sales Engineer II - Specialist at Samsara</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Gusto in Denver, CO;San Francisco, CA;New York, NY. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 16 Mar 2026 16:56:26 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7615358</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 16:46:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
-    </item>
-    <item>
-      <title>AI Security Engineer at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
-      <description>New grad role at Gusto in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 16:16:56 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7590298</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 16:00:24 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
     </item>
   </channel>
 </rss>
