@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 11:13:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 12:00:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (Security) at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/7667832?gh_jid=7667832</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 07:52:02 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7667832?gh_jid=7667832</guid>
+    </item>
     <item>
       <title>Software Engineer, Borrow at SoFi</title>
       <link>https://sofi.com/careers/job/7655008003?gh_jid=7655008003</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
-      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
     </item>
   </channel>
 </rss>
