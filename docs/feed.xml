@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 14:44:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 15:51:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Agents at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6392339</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 11:09:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6392339</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6458934</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 11:08:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6458934</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full-Stack at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/7333571</link>
+      <description>New grad role at Grammarly in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 11:07:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7333571</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Engineering at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/7336882</link>
+      <description>New grad role at Grammarly in New York City, NY. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 11:06:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7336882</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Engineering at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6259939</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 11:05:48 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6259939</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full-Stack at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6356355</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 11:05:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6356355</guid>
+    </item>
     <item>
       <title>Software Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
@@ -314,48 +356,6 @@
       <description>New grad role at Stripe in Bengaluru, India. Category: Other</description>
       <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7544545</guid>
-    </item>
-    <item>
-      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
-      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
-      <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
-    </item>
-    <item>
-      <title>Security Engineer, New Grad  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
-      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Core Technology at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
-      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Mon, 16 Mar 2026 15:49:36 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
     </item>
   </channel>
 </rss>
