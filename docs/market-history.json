@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-17T22:39:20.383801",
+    "last_updated": "2026-03-17T23:10:03.675876",
     "total_snapshots": 13,
     "date_range": {
       "start": "2026-03-05",
@@ -670,12 +670,12 @@
     },
     {
       "date": "2026-03-17",
-      "total_jobs": 949,
+      "total_jobs": 954,
       "categories": {},
       "tiers": {
         "unicorn": 482,
-        "faang_plus": 119,
-        "other": 348
+        "faang_plus": 131,
+        "other": 341
       },
       "top_companies": [
         {
@@ -715,13 +715,13 @@
           "jobs": 17
         },
         {
-          "company": "Nuro",
-          "jobs": 16
+          "company": "NVIDIA",
+          "jobs": 17
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.46,
-      "timestamp": "2026-03-17T22:39:20.383546"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-17T23:10:03.675376"
     }
   ]
 }
