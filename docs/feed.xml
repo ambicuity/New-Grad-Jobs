@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 22:08:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 22:53:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Monetization Engineering at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=6121543</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 18:13:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6121543</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Core Engineering at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=6121450</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 18:04:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6121450</guid>
+    </item>
     <item>
       <title>Software Engineer II, Backend (Consumer Authentication) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7666050003</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; New York, CA, USA; Seattle, CA, USA. Category: Software Engineering</description>
       <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7443590</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Tools at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426718</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426718</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Model Lifecycle at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7609435</link>
-      <description>New grad role at Waymo in Kirkland, Washington, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7609435</guid>
     </item>
   </channel>
 </rss>
