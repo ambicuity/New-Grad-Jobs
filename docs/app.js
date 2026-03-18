@@ -651,7 +651,7 @@ function renderActiveFilters() {
     if (currentFilters.search) addChip(`Search: ${currentFilters.search}`, 'search');
 
     if (currentFilters.category !== 'all') {
-        const activeCatBtn = document.querySelector(`#category-filters .chip[data-filter="${currentFilters.category}"]`);
+        const activeCatBtn = document.querySelector(`#category-filters .chip[data-filter="${CSS.escape(currentFilters.category)}"]`);
         if (activeCatBtn) {
             const labelText = activeCatBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
             addChip(`Category: ${labelText}`, 'category');
@@ -659,7 +659,7 @@ function renderActiveFilters() {
     }
 
     if (currentFilters.tier !== 'all') {
-        const activeTierBtn = document.querySelector(`#tier-filters .chip[data-filter="${currentFilters.tier}"]`);
+        const activeTierBtn = document.querySelector(`#tier-filters .chip[data-filter="${CSS.escape(currentFilters.tier)}"]`);
         if (activeTierBtn) {
             const labelText = activeTierBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
             addChip(`Company: ${labelText}`, 'tier');
