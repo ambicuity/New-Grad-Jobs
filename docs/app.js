@@ -631,6 +631,7 @@ function renderActiveFilters() {
 
     elements.activeFilterChips.innerHTML = '';
     let hasActiveFilters = false;
+    const getFallbackChipLabel = (value) => value.replace(/[_-]+/g, ' ').trim();
 
     const addChip = (label, filterType) => {
         hasActiveFilters = true;
@@ -655,6 +656,9 @@ function renderActiveFilters() {
         if (activeCatBtn) {
             const labelText = activeCatBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
             addChip(`Category: ${labelText}`, 'category');
+        } else {
+            const fallbackLabel = getFallbackChipLabel(currentFilters.category) || currentFilters.category;
+            addChip(`Category: ${fallbackLabel}`, 'category');
         }
     }
 
@@ -663,6 +667,9 @@ function renderActiveFilters() {
         if (activeTierBtn) {
             const labelText = activeTierBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
             addChip(`Company: ${labelText}`, 'tier');
+        } else {
+            const fallbackLabel = getFallbackChipLabel(currentFilters.tier) || currentFilters.tier;
+            addChip(`Company: ${fallbackLabel}`, 'tier');
         }
     }
 
