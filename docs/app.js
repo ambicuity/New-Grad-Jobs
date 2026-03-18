@@ -638,7 +638,12 @@ function renderActiveFilters() {
         chip.className = 'active-chip';
         chip.innerHTML = `
             ${escapeHtml(label)}
-            <span class="active-chip-remove" data-type="${filterType}">×</span>
+            <button
+                type="button"
+                class="active-chip-remove"
+                data-type="${filterType}"
+                aria-label="Remove ${escapeHtml(label)} filter"
+            >×</button>
         `;
         elements.activeFilterChips.appendChild(chip);
     };
