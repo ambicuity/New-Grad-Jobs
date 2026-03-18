@@ -44,6 +44,7 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Fixed
 
+- fix `make setup` failure from missing `tests/requirements.txt` by consolidating dev dependencies into `pyproject.toml[dev]` extras ([#132](https://github.com/ambicuity/New-Grad-Jobs/issues/132)); Makefile now installs all dependencies via single editable install command.
 - extract hardcoded Workday API pagination and safety limits to configurable constants `WORKDAY_PAGE_LIMIT` and `WORKDAY_MAX_JOBS_PER_COMPANY` ([#43](https://github.com/ambicuity/New-Grad-Jobs/issues/43)); runtime limits are now overridable via `config.yml`.
 - enhance `safe_str` in `get_job_key` to robustly handle `numpy.floating` NaNs and Infs when deduping jobs originating from JobSpy/pandas; NumPy import hoisted to module-level for hot-path optimization.
 - add support for `'hours ago'` and `'minutes ago'` relative time formats in `normalize_date_string()` to improve JobSpy/LinkedIn data parsing ([#79](https://github.com/ambicuity/New-Grad-Jobs/issues/79)).
