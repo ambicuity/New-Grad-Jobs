@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 16:22:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 17:38:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7728865</link>
+      <description>New grad role at Reddit in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 12:52:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7728865</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7728853</link>
+      <description>New grad role at Reddit in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 12:51:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7728853</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7727269</link>
+      <description>New grad role at Reddit in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 18 Mar 2026 12:49:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7727269</guid>
+    </item>
+    <item>
+      <title>Software Engineer III, Machine Learning at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7729051</link>
+      <description>New grad role at Reddit in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 18 Mar 2026 12:47:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7729051</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7729066</link>
+      <description>New grad role at Reddit in New York City, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 12:43:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7729066</guid>
+    </item>
+    <item>
+      <title>Enablement Systems Engineer at Datadog</title>
+      <link>https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</link>
+      <description>New grad role at Datadog in New York, New York, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 18 Mar 2026 12:34:28 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</guid>
+    </item>
     <item>
       <title>Marketing Data Scientist, Reporting at SoFi</title>
       <link>https://sofi.com/careers/job/7615949003?gh_jid=7615949003</link>
@@ -314,48 +356,6 @@
       <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
       <pubDate>Tue, 17 Mar 2026 17:00:48 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7536572</link>
-      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 17 Mar 2026 16:08:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7536572</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 15:49:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Contractor) at Flatiron Health</title>
-      <link>https://flatiron.com/careers/open-positions/job?gh_jid=7681161</link>
-      <description>New grad role at Flatiron Health in NY office. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 14:29:38 +0000</pubDate>
-      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=7681161</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 - Dev Accelerator at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</link>
-      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 14:29:01 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</guid>
     </item>
   </channel>
 </rss>
