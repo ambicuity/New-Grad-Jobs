@@ -2314,6 +2314,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
         os.makedirs(os.path.dirname(health_path), exist_ok=True)
         with open(health_path, 'w', encoding='utf-8') as f:
             json.dump(health, f, indent=2)
+            f.write('\n')
         print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
     except Exception as e:
         print(f"⚠️  Failed to write health.json: {e}")
