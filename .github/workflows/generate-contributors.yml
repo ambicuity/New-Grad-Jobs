@@ -1,10 +1,11 @@
-name: Generate Contributors JSON
+name: Generate Contributor Artifacts
 
 on:
   push:
     branches: [main]
     paths:
       - '.all-contributorsrc'
+      - 'CONTRIBUTORS.md'
   workflow_dispatch:
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 
 jobs:
   generate:
-    name: Regenerate docs/contributors.json
+    name: Regenerate CONTRIBUTORS.md + docs/contributors.json
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +22,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 20
+
+      - name: Regenerate CONTRIBUTORS.md from .all-contributorsrc
+        run: npx all-contributors-cli generate
 
       - name: Generate contributors.json from .all-contributorsrc
         run: |
@@ -50,11 +59,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add docs/contributors.json
+          git add CONTRIBUTORS.md docs/contributors.json
 
           if git diff --staged --quiet; then
-            echo "No changes to contributors.json — skipping commit."
+            echo "No contributor artifact changes — skipping commit."
           else
-            git commit -m "chore(contributors): regenerate docs/contributors.json [skip ci]"
+            git commit -m "chore(contributors): sync contributor artifacts [skip ci]"
             git push
           fi
