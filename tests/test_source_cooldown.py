@@ -16,8 +16,10 @@ All network calls are mocked — no live requests.
 import os
 import sys
 import threading
-from typing import Any, ClassVar
+from typing import Any
 from unittest.mock import MagicMock
+
+import requests
 
 import pytest
 
@@ -552,7 +554,6 @@ class TestGreenhouseCooldownIntegration:
 
     def test_timeout_does_not_record(self, monkeypatch):
         """A requests.exceptions.Timeout must not increment the 403 counter."""
-        import requests
         tracker = _fresh_tracker(threshold=3)
         monkeypatch.setattr(update_jobs, "SOURCE_COOLDOWN", tracker)
 
@@ -660,7 +661,9 @@ class TestLeverCooldownIntegration:
 class TestWorkdayCooldownIntegration:
     """Validates fetch_workday_jobs respects the cooldown."""
 
-    _company: ClassVar[dict] = {"name": "Acme", "workday_url": WORKDAY_URL}
+    @staticmethod
+    def _company() -> dict[str, str]:
+        return {"name": "Acme", "workday_url": WORKDAY_URL}
 
     def _page_response(self, offset=0):
         if offset == 0:
@@ -689,7 +692,7 @@ class TestWorkdayCooldownIntegration:
             return self._page_response(offset=payload.get("offset", 0))
 
         monkeypatch.setattr(update_jobs, "limited_post", fake_post)
-        jobs = fetch_workday_jobs([self._company])
+        jobs = fetch_workday_jobs([self._company()])
         assert len(jobs) == 1
 
     def test_403_does_not_retry(self, monkeypatch):
@@ -707,7 +710,7 @@ class TestWorkdayCooldownIntegration:
             return _make_response(403)
 
         monkeypatch.setattr(update_jobs, "limited_post", counting_post)
-        fetch_workday_jobs([self._company])
+        fetch_workday_jobs([self._company()])
         assert call_count == 1, (
             f"Expected exactly 1 HTTP call on 403 (no retry), got {call_count}"
         )
@@ -719,7 +722,7 @@ class TestWorkdayCooldownIntegration:
         monkeypatch.setattr(update_jobs, "get_workday_csrf_token", lambda host, session: "token")
         monkeypatch.setattr(update_jobs, "limited_post", lambda url, **kw: _make_response(403))
 
-        fetch_workday_jobs([self._company])
+        fetch_workday_jobs([self._company()])
         # domain key from the Workday API URL built internally will be myworkdayjobs.com
         assert "myworkdayjobs.com" in tracker.counts()
         assert tracker.counts()["myworkdayjobs.com"] >= 1
@@ -731,7 +734,7 @@ class TestWorkdayCooldownIntegration:
         monkeypatch.setattr(update_jobs, "get_workday_csrf_token", lambda host, session: "token")
         monkeypatch.setattr(update_jobs, "limited_post", lambda url, **kw: _make_response(403))
 
-        fetch_workday_jobs([self._company])
+        fetch_workday_jobs([self._company()])
         out = capsys.readouterr().out
         assert "403" in out
         assert "Acme" in out
@@ -751,7 +754,7 @@ class TestWorkdayCooldownIntegration:
             return self._page_response()
 
         monkeypatch.setattr(update_jobs, "limited_post", counting_post)
-        jobs = fetch_workday_jobs([self._company])
+        jobs = fetch_workday_jobs([self._company()])
         assert jobs == []
         assert call_count == 0
 
@@ -780,7 +783,7 @@ class TestWorkdayCooldownIntegration:
         monkeypatch.setattr(update_jobs, "limited_post", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
-            fetch_workday_jobs([self._company], max_retries=0)
+            fetch_workday_jobs([self._company()], max_retries=0)
 
         assert "myworkdayjobs.com" not in tracker.counts()
 

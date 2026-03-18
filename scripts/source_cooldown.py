@@ -55,7 +55,7 @@ class SourceCooldownTracker:
         self._threshold = threshold
         self._lock = threading.Lock()
         self._counts: dict[str, int] = {}
-        self._tripped: set = set()
+        self._tripped: set[str] = set()
 
     @staticmethod
     def domain_key(url_or_domain: str) -> str:
