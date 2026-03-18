@@ -649,7 +649,7 @@ function renderActiveFilters() {
     };
 
     if (currentFilters.search) addChip(`Search: ${currentFilters.search}`, 'search');
-    
+
     if (currentFilters.category !== 'all') {
         const activeCatBtn = document.querySelector(`#category-filters .chip[data-filter="${currentFilters.category}"]`);
         if (activeCatBtn) {
@@ -1002,7 +1002,7 @@ async function init() {
     if (elements.resetFilters) {
         elements.resetFilters.addEventListener('click', resetFilters);
     }
-    
+
     if (elements.clearAllFiltersBtn) {
         elements.clearAllFiltersBtn.addEventListener('click', resetFilters);
     }
