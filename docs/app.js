@@ -163,7 +163,10 @@ const elements = {
     resetFilters: document.getElementById('reset-filters'),
     themeToggle: document.getElementById('theme-toggle'),
     backToTop: document.getElementById('back-to-top'),
-    toast: document.getElementById('toast')
+    toast: document.getElementById('toast'),
+    activeFiltersSummary: document.getElementById('active-filters-summary'),
+    activeFilterChips: document.getElementById('active-filter-chips'),
+    clearAllFiltersBtn: document.getElementById('clear-all-filters-btn')
 };
 
 // ============================================
@@ -620,6 +623,59 @@ function applyFilters() {
 
     // P1: Sync filter state to URL for shareable links
     syncFiltersToUrl();
+    renderActiveFilters();
+}
+
+function renderActiveFilters() {
+    if (!elements.activeFiltersSummary || !elements.activeFilterChips) return;
+
+    elements.activeFilterChips.innerHTML = '';
+    let hasActiveFilters = false;
+
+    const addChip = (label, filterType) => {
+        hasActiveFilters = true;
+        const chip = document.createElement('div');
+        chip.className = 'active-chip';
+        chip.innerHTML = `
+            ${escapeHtml(label)}
+            <span class="active-chip-remove" data-type="${filterType}">×</span>
+        `;
+        elements.activeFilterChips.appendChild(chip);
+    };
+
+    if (currentFilters.search) addChip(`Search: ${currentFilters.search}`, 'search');
+    
+    if (currentFilters.category !== 'all') {
+        const activeCatBtn = document.querySelector(`#category-filters .chip[data-filter="${currentFilters.category}"]`);
+        if (activeCatBtn) {
+            const labelText = activeCatBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
+            addChip(`Category: ${labelText}`, 'category');
+        }
+    }
+
+    if (currentFilters.tier !== 'all') {
+        const activeTierBtn = document.querySelector(`#tier-filters .chip[data-filter="${currentFilters.tier}"]`);
+        if (activeTierBtn) {
+            const labelText = activeTierBtn.textContent.replace(/[^\x20-\x7E]/g, '').trim();
+            addChip(`Company: ${labelText}`, 'tier');
+        }
+    }
+
+    if (currentFilters.country !== 'all') {
+        const countryLabel = elements.countryFilter?.options[elements.countryFilter.selectedIndex]?.text.replace(/[^\x20-\x7E]/g, '').trim() || currentFilters.country;
+        addChip(`Country: ${countryLabel}`, 'country');
+    }
+
+    if (currentFilters.state !== 'all') {
+        const stateLabel = elements.stateFilter?.options[elements.stateFilter.selectedIndex]?.text || currentFilters.state;
+        addChip(`State: ${stateLabel}`, 'state');
+    }
+
+    if (hasActiveFilters) {
+        elements.activeFiltersSummary.classList.remove('hidden');
+    } else {
+        elements.activeFiltersSummary.classList.add('hidden');
+    }
 }
 
 function resetFilters() {
@@ -940,6 +996,40 @@ async function init() {
     }
     if (elements.resetFilters) {
         elements.resetFilters.addEventListener('click', resetFilters);
+    }
+    
+    if (elements.clearAllFiltersBtn) {
+        elements.clearAllFiltersBtn.addEventListener('click', resetFilters);
+    }
+
+    if (elements.activeFilterChips) {
+        elements.activeFilterChips.addEventListener('click', (e) => {
+            if (e.target.classList.contains('active-chip-remove')) {
+                const type = e.target.dataset.type;
+                if (type === 'search') {
+                    elements.searchInput.value = '';
+                    if (elements.searchClear) elements.searchClear.classList.remove('visible');
+                    currentFilters.search = '';
+                } else if (type === 'category' || type === 'tier') {
+                    currentFilters[type] = 'all';
+                    document.querySelectorAll(`#${type}-filters .chip`).forEach(chip => {
+                        chip.classList.toggle('active', chip.dataset.filter === 'all');
+                    });
+                } else if (type === 'country') {
+                    currentFilters.country = 'all';
+                    if (elements.countryFilter) elements.countryFilter.value = 'all';
+                    currentFilters.state = 'all';
+                    if (elements.stateFilter) {
+                        elements.stateFilter.innerHTML = '<option value="all">All States/Provinces</option>';
+                        elements.stateFilter.value = 'all';
+                    }
+                } else if (type === 'state') {
+                    currentFilters.state = 'all';
+                    if (elements.stateFilter) elements.stateFilter.value = 'all';
+                }
+                applyFilters();
+            }
+        });
     }
 
     // Scroll listener for back to top
