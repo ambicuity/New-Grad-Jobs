@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 02:40:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 03:52:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Site Reliability Engineer at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6994860</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 17 Mar 2026 23:46:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6994860</guid>
+    </item>
     <item>
       <title>IT Systems Engineer, DevOps at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
       <pubDate>Tue, 17 Mar 2026 11:53:52 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7636366003?gh_jid=7636366003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Agents at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/6392339</link>
-      <description>New grad role at Grammarly in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 11:09:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6392339</guid>
     </item>
   </channel>
 </rss>
