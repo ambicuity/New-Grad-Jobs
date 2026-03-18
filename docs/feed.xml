@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 21:58:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 08:36:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Site Reliability Engineer at Grammarly</title>
+      <link>https://job-boards.greenhouse.io/grammarly/jobs/6994860</link>
+      <description>New grad role at Grammarly in San Francisco, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 17 Mar 2026 23:46:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6994860</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer, DevOps at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 20:17:06 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer (Components) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 19:17:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</guid>
+    </item>
+    <item>
+      <title>Data Scientist II, Growth Marketing at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=6483005</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 19:16:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6483005</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Components) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 17 Mar 2026 18:51:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8215236002?gh_jid=8215236002</guid>
+    </item>
     <item>
       <title>Software Engineer I, Monetization ML at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8417224002</link>
@@ -134,6 +169,13 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
     </item>
     <item>
+      <title>Data Scientist, Subscriptions at Spotify</title>
+      <link>https://jobs.lever.co/spotify/a95830ad-c11f-49da-85a7-04ce47ce532c</link>
+      <description>New grad role at Spotify in New York, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 17 Mar 2026 17:25:06 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/spotify/a95830ad-c11f-49da-85a7-04ce47ce532c</guid>
+    </item>
+    <item>
       <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
@@ -216,13 +258,6 @@
       <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 17 Mar 2026 15:49:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
-    </item>
-    <item>
-      <title>Data Scientist II, Growth Marketing at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=6483005</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 15:36:15 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6483005</guid>
     </item>
     <item>
       <title>Software Engineer (Contractor) at Flatiron Health</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
       <pubDate>Tue, 17 Mar 2026 11:53:52 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7636366003?gh_jid=7636366003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Agents at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/6392339</link>
-      <description>New grad role at Grammarly in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 11:09:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6392339</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/6458934</link>
-      <description>New grad role at Grammarly in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 17 Mar 2026 11:08:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6458934</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Full-Stack at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/7333571</link>
-      <description>New grad role at Grammarly in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 11:07:03 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7333571</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Engineering at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/7336882</link>
-      <description>New grad role at Grammarly in New York City, NY. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 11:06:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/7336882</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Engineering at Grammarly</title>
-      <link>https://job-boards.greenhouse.io/grammarly/jobs/6259939</link>
-      <description>New grad role at Grammarly in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 11:05:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/grammarly/jobs/6259939</guid>
     </item>
   </channel>
 </rss>

@@ -28,6 +28,11 @@ jobs:
             const prNumber = pr.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const logCommentWarning = (action, error) => {
+              console.warn(
+                `Unable to ${action} PR comment (likely fork token restrictions): ${error.message}`
+              );
+            };
 
             // Maintainer and the scraper bot are allowed to touch these
             const EXEMPT_USERS = ['ambicuity', 'github-actions[bot]', 'dependabot[bot]'];
@@ -58,9 +63,13 @@ jobs:
                 c.body.includes('auto-generated')
               );
               if (prior) {
-                await github.rest.issues.deleteComment({
-                  owner, repo, comment_id: prior.id
-                });
+                try {
+                  await github.rest.issues.deleteComment({
+                    owner, repo, comment_id: prior.id
+                  });
+                } catch (error) {
+                  logCommentWarning('delete', error);
+                }
               }
               return;
             }
@@ -102,14 +111,18 @@ jobs:
               c.body.includes('auto-generated')
             );
 
-            if (existing) {
-              await github.rest.issues.updateComment({
-                owner, repo, comment_id: existing.id, body
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner, repo, issue_number: prNumber, body
-              });
+            try {
+              if (existing) {
+                await github.rest.issues.updateComment({
+                  owner, repo, comment_id: existing.id, body
+                });
+              } else {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: prNumber, body
+                });
+              }
+            } catch (error) {
+              logCommentWarning('create or update', error);
             }
 
             core.setFailed(

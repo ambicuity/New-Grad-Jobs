@@ -29,6 +29,11 @@ jobs:
             const prNumber = pr.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const logCommentWarning = (action, error) => {
+              console.warn(
+                `Unable to ${action} PR comment (likely fork token restrictions): ${error.message}`
+              );
+            };
 
             const EXEMPT_USERS = ['ambicuity', 'github-actions[bot]', 'dependabot[bot]'];
             if (EXEMPT_USERS.includes(author)) {
@@ -57,10 +62,14 @@ jobs:
                   c.body.includes('no test file was changed')
                 );
                 if (prior) {
-                  await github.rest.issues.deleteComment({
-                    owner, repo, comment_id: prior.id
-                  });
-                  console.log('Removed prior test coverage reminder (tests now present).');
+                  try {
+                    await github.rest.issues.deleteComment({
+                      owner, repo, comment_id: prior.id
+                    });
+                    console.log('Removed prior test coverage reminder (tests now present).');
+                  } catch (error) {
+                    logCommentWarning('delete', error);
+                  }
                 }
               }
               return;
@@ -110,7 +119,11 @@ jobs:
               '_CodeRabbit will require tests during review if the change warrants them._',
             ].join('\n');
 
-            await github.rest.issues.createComment({
-              owner, repo, issue_number: prNumber, body
-            });
-            console.log('Posted test coverage reminder.');
+            try {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prNumber, body
+              });
+              console.log('Posted test coverage reminder.');
+            } catch (error) {
+              logCommentWarning('create', error);
+            }
