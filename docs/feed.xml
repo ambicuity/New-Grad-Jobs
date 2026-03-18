@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 19:39:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 20:10:24 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 16:01:35 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
+    </item>
     <item>
       <title>Software Engineer, Financial Platform at Chime</title>
       <link>https://boards.greenhouse.io/chime/jobs/8183064002?gh_jid=8183064002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
       <pubDate>Tue, 17 Mar 2026 17:31:19 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7528260</link>
-      <description>New grad role at Stripe in Seattle, SF. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 17:31:18 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7528260</guid>
     </item>
   </channel>
 </rss>
