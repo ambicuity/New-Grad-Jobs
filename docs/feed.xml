@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 20:10:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 20:59:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Backend Software Engineer, Big Business Banking at SoFi</title>
+      <link>https://sofi.com/careers/job/7670755003?gh_jid=7670755003</link>
+      <description>New grad role at SoFi in CA - San Francisco; WA - Seattle. Category: Software Engineering</description>
+      <pubDate>Wed, 18 Mar 2026 16:23:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7670755003?gh_jid=7670755003</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Stripe in Bengaluru, India. Category: Other</description>
       <pubDate>Tue, 17 Mar 2026 17:31:21 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7544545</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Tue, 17 Mar 2026 17:31:19 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
     </item>
   </channel>
 </rss>
