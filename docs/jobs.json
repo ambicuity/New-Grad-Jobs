@@ -1,31 +1,31 @@
 {
   "meta": {
-    "generated_at": "2026-03-18T22:53:12.114124",
-    "total_jobs": 940,
+    "generated_at": "2026-03-18T23:24:48.581195",
+    "total_jobs": 949,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 537
+        "count": 535
       },
       {
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16",
-        "count": 103
+        "count": 104
       },
       {
         "id": "data_engineering",
         "name": "Data Engineering",
         "emoji": "\ud83d\udcca",
-        "count": 17
+        "count": 16
       },
       {
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f",
-        "count": 98
+        "count": 99
       },
       {
         "id": "hardware",
@@ -37,11 +37,63 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc",
-        "count": 179
+        "count": 189
       }
     ]
   },
   "jobs": [
+    {
+      "id": "abnormal-security-software-engineer-2---dev-accelerator-remote---canada;-remote---usa",
+      "company": "Abnormal Security",
+      "title": "Software Engineer 2 - Dev Accelerator",
+      "location": "Remote - Canada; Remote - USA",
+      "url": "https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003",
+      "posted_at": "2026-03-18T23:11:41",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "circleci-software-engineer-toronto,-ontario",
+      "company": "CircleCI",
+      "title": "Software Engineer",
+      "location": "Toronto, Ontario",
+      "url": "http://www.circleci.com/careers/jobs/8420901002/?gh_jid=8420901002",
+      "posted_at": "2026-03-18T22:55:57",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "pinterest-machine-learning-engineer,-monetization-engineering-san-francisco,-ca,-us;-palo-alto,-ca,-",
       "company": "Pinterest",
@@ -3029,7 +3081,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002",
       "posted_at": "2026-03-17T23:17:50",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -3057,7 +3109,7 @@
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6483005",
       "posted_at": "2026-03-17T23:16:57",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -3969,32 +4021,6 @@
       "is_closed": false
     },
     {
-      "id": "abnormal-security-software-engineer-2---dev-accelerator-remote---usa",
-      "company": "Abnormal Security",
-      "title": "Software Engineer 2 - Dev Accelerator",
-      "location": "Remote - USA",
-      "url": "https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003",
-      "posted_at": "2026-03-17T18:29:01",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "abnormal-security-cloud-infrastructure-engineer-ii-,-platform-infrastructure-remote---canada;-remote",
       "company": "Abnormal Security",
       "title": "Cloud Infrastructure Engineer II , Platform Infrastructure",
@@ -4785,7 +4811,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8397542002?gh_jid=8397542002",
       "posted_at": "2026-03-16T23:16:00",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4813,7 +4839,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8306500002?gh_jid=8306500002",
       "posted_at": "2026-03-16T23:05:07",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4841,7 +4867,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8306482002?gh_jid=8306482002",
       "posted_at": "2026-03-16T22:56:50",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4869,7 +4895,7 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/discord/jobs/8447216002",
       "posted_at": "2026-03-16T22:54:37",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -6895,32 +6921,6 @@
       "is_closed": false
     },
     {
-      "id": "circleci-full-stack-software-engineer,-web-experiences-toronto,-ontario",
-      "company": "CircleCI",
-      "title": "Full-Stack Software Engineer, Web Experiences",
-      "location": "Toronto, Ontario",
-      "url": "http://www.circleci.com/careers/jobs/8420901002/?gh_jid=8420901002",
-      "posted_at": "2026-03-12T17:26:26",
-      "posted_display": "6 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-test-engineering-and-operations-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Test Engineering and Operations",
@@ -7877,7 +7877,7 @@
       "location": "Los Angeles, USA",
       "url": "https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851",
       "posted_at": "2026-03-11T23:22:05",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-03-11",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -7903,7 +7903,7 @@
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/amplitude/jobs/8399495002",
       "posted_at": "2026-03-11T23:10:23",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-03-11",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -7929,7 +7929,7 @@
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/amplitude/jobs/8393339002",
       "posted_at": "2026-03-11T23:10:23",
-      "posted_display": "6 days ago",
+      "posted_display": "2026-03-11",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -11669,11 +11669,11 @@
       "is_closed": false
     },
     {
-      "id": "abnormal-security-software-engineer-2---backend---behavioral-security-products-remote---uk",
+      "id": "abnormal-security-software-engineer-2---backend---behavioral-security-products-remote---singapore",
       "company": "Abnormal Security",
       "title": "Software Engineer 2 - Backend - Behavioral Security Products",
-      "location": "Remote - UK",
-      "url": "https://abnormal.ai/careers/jobs/6593836003?gh_jid=6593836003",
+      "location": "Remote - Singapore",
+      "url": "https://abnormal.ai/careers/jobs/7540592003?gh_jid=7540592003",
       "posted_at": "2026-03-03T15:38:15",
       "posted_display": "2026-03-03",
       "source": "Greenhouse",
@@ -11695,11 +11695,11 @@
       "is_closed": false
     },
     {
-      "id": "abnormal-security-software-engineer-2---backend---behavioral-security-products-remote---singapore",
+      "id": "abnormal-security-software-engineer-2---backend---behavioral-security-products-remote---uk",
       "company": "Abnormal Security",
       "title": "Software Engineer 2 - Backend - Behavioral Security Products",
-      "location": "Remote - Singapore",
-      "url": "https://abnormal.ai/careers/jobs/7540592003?gh_jid=7540592003",
+      "location": "Remote - UK",
+      "url": "https://abnormal.ai/careers/jobs/6593836003?gh_jid=6593836003",
       "posted_at": "2026-03-03T15:38:15",
       "posted_display": "2026-03-03",
       "source": "Greenhouse",
@@ -11825,11 +11825,11 @@
       "is_closed": false
     },
     {
-      "id": "abnormal-security-software-engineer-ii---message-infrastructure-remote---usa",
+      "id": "abnormal-security-software-engineer-ii---message-infrastructure-remote---canada",
       "company": "Abnormal Security",
       "title": "Software Engineer II - Message Infrastructure",
-      "location": "Remote - USA",
-      "url": "https://abnormal.ai/careers/jobs/7589246003?gh_jid=7589246003",
+      "location": "Remote - Canada",
+      "url": "https://abnormal.ai/careers/jobs/7593031003?gh_jid=7593031003",
       "posted_at": "2026-03-03T15:38:15",
       "posted_display": "2026-03-03",
       "source": "Greenhouse",
@@ -11851,11 +11851,11 @@
       "is_closed": false
     },
     {
-      "id": "abnormal-security-software-engineer-ii---message-infrastructure-remote---canada",
+      "id": "abnormal-security-software-engineer-ii---message-infrastructure-remote---usa",
       "company": "Abnormal Security",
       "title": "Software Engineer II - Message Infrastructure",
-      "location": "Remote - Canada",
-      "url": "https://abnormal.ai/careers/jobs/7593031003?gh_jid=7593031003",
+      "location": "Remote - USA",
+      "url": "https://abnormal.ai/careers/jobs/7589246003?gh_jid=7589246003",
       "posted_at": "2026-03-03T15:38:15",
       "posted_display": "2026-03-03",
       "source": "Greenhouse",
@@ -12451,58 +12451,6 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "opendoor-software-engineer,-financial-systems-seattle,-washington,-united-states",
-      "company": "Opendoor",
-      "title": "Software Engineer, Financial Systems",
-      "location": "Seattle, Washington, United States",
-      "url": "https://www.opendoor.com/careers/open-positions?gh_jid=4656378006",
-      "posted_at": "2026-02-26T23:49:57",
-      "posted_display": "2026-02-26",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "opendoor-software-engineer,-financial-systems-toronto",
-      "company": "Opendoor",
-      "title": "Software Engineer, Financial Systems",
-      "location": "Toronto",
-      "url": "https://www.opendoor.com/careers/open-positions?gh_jid=4643080006",
-      "posted_at": "2026-02-26T23:49:57",
-      "posted_display": "2026-02-26",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -18301,136 +18249,6 @@
       "is_closed": false
     },
     {
-      "id": "government-of-alberta-junior-bridge-engineer-lethbridge,-ab,-ca",
-      "company": "Government Of Alberta",
-      "title": "Junior Bridge Engineer",
-      "location": "Lethbridge, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=318661239b6530d4",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "celestica-associate-engineer,-smt-process-engineering-newmarket,-on,-ca",
-      "company": "Celestica",
-      "title": "Associate Engineer, SMT Process Engineering",
-      "location": "Newmarket, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=7d03945b68ccd2d4",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "celestica-associate-engineer,-manufacturing-engineering-newmarket,-on,-ca",
-      "company": "Celestica",
-      "title": "Associate Engineer, Manufacturing Engineering",
-      "location": "Newmarket, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=e171019797680f85",
-      "posted_at": "2026-03-13T00:00:00",
-      "posted_display": "5 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "genpact-management-trainee-hr,-in",
-      "company": "Genpact",
-      "title": "Management Trainee",
-      "location": "HR, IN",
-      "url": "https://in.indeed.com/viewjob?jk=e6d4d6b1ce84d7ba",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "deloitte-t&t---eaid---data-engineer---consultant---pune-mh,-in",
-      "company": "Deloitte",
-      "title": "T&T - EAID - Data Engineer - Consultant - Pune",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=1bd8d78f6787b9c7",
-      "posted_at": "2026-03-12T00:00:00",
-      "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "nan-hardware-integration-engineer-(junior)-brossard,-qc,-ca",
       "company": null,
       "title": "Hardware Integration Engineer (Junior)",
@@ -18601,6 +18419,162 @@
         "id": "hardware",
         "name": "Hardware Engineering",
         "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "genpact-management-trainee-hr,-in",
+      "company": "Genpact",
+      "title": "Management Trainee",
+      "location": "HR, IN",
+      "url": "https://in.indeed.com/viewjob?jk=e6d4d6b1ce84d7ba",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "deloitte-t&t---eaid---data-engineer---consultant---pune-mh,-in",
+      "company": "Deloitte",
+      "title": "T&T - EAID - Data Engineer - Consultant - Pune",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=1bd8d78f6787b9c7",
+      "posted_at": "2026-03-12T00:00:00",
+      "posted_display": "6 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "government-of-alberta-junior-bridge-engineer-lethbridge,-ab,-ca",
+      "company": "Government Of Alberta",
+      "title": "Junior Bridge Engineer",
+      "location": "Lethbridge, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=318661239b6530d4",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "celestica-associate-engineer,-smt-process-engineering-newmarket,-on,-ca",
+      "company": "Celestica",
+      "title": "Associate Engineer, SMT Process Engineering",
+      "location": "Newmarket, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=7d03945b68ccd2d4",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "celestica-associate-engineer,-manufacturing-engineering-newmarket,-on,-ca",
+      "company": "Celestica",
+      "title": "Associate Engineer, Manufacturing Engineering",
+      "location": "Newmarket, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=e171019797680f85",
+      "posted_at": "2026-03-13T00:00:00",
+      "posted_display": "5 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "capgemini-associate-manufacturing-&-process-engineer-montr\u00e9al,-qc,-ca",
+      "company": "Capgemini",
+      "title": "Associate Manufacturing & Process Engineer",
+      "location": "Montr\u00e9al, QC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=3d785ffb744d0530",
+      "posted_at": "2026-03-12T00:00:00",
+      "posted_display": "6 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -18835,32 +18809,6 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "black-&-veatch-associate-engineer---instrumentation-&-controls-mh,-in",
-      "company": "Black & Veatch",
-      "title": "Associate Engineer - Instrumentation & Controls",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=f5064b6df3c86562",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -19163,6 +19111,32 @@
       "is_closed": false
     },
     {
+      "id": "black-&-veatch-associate-engineer---instrumentation-&-controls-mh,-in",
+      "company": "Black & Veatch",
+      "title": "Associate Engineer - Instrumentation & Controls",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=f5064b6df3c86562",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "jpmorganchase-software-engineering-ka,-in",
       "company": "JPMorganChase",
       "title": "Software Engineering",
@@ -19449,6 +19423,344 @@
       "is_closed": false
     },
     {
+      "id": "globalfoundries-corporate-accounting-analyst,-sec-reporting-(2026-new-college-graduate)-austin,-tx,-",
+      "company": "GlobalFoundries",
+      "title": "Corporate Accounting Analyst, SEC Reporting (2026 New College Graduate)",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=bb61c86e5cbbd16b",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "georgia-tech-temp-business-ops-support---create-x-start-up-coach-summer-2026-atlanta,-ga,-us",
+      "company": "Georgia Tech",
+      "title": "TEMP-Business Ops Support - CREATE-X Start-up Coach Summer 2026",
+      "location": "Atlanta, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=54b259a159a99d5a",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "the-university-of-michigan-gsi-(os-405)-fall-2026-ann-arbor,-mi,-us",
+      "company": "The University of Michigan",
+      "title": "GSI (OS 405) Fall 2026",
+      "location": "Ann Arbor, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=81493fffa20c7233",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "the-university-of-michigan-gsi-(os-310)-fall-2026-ann-arbor,-mi,-us",
+      "company": "The University of Michigan",
+      "title": "GSI (OS 310) Fall 2026",
+      "location": "Ann Arbor, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=ba5fd3fa350b2942",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "the-university-of-michigan-gsi-(os-295)-fall-2026-ann-arbor,-mi,-us",
+      "company": "The University of Michigan",
+      "title": "GSI (OS 295) Fall 2026",
+      "location": "Ann Arbor, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=17448f2bff8f4f19",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "wilson-medical-center-registered-nurse-(rn),-new-grad-wilson,-nc,-us",
+      "company": "Wilson Medical Center",
+      "title": "Registered Nurse (RN), New Grad",
+      "location": "Wilson, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=7964fba763f47a01",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amazon.com-account-mgmt-associate--chinese,-isg-sustainability-ts,-in",
+      "company": "Amazon.com",
+      "title": "Account Mgmt Associate- Chinese, ISG-Sustainability",
+      "location": "TS, IN",
+      "url": "https://in.indeed.com/viewjob?jk=4dc3c931ab85db75",
+      "posted_at": "2026-02-26T00:00:00",
+      "posted_display": "2026-02-26",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amazon.com-account-mgmt-associate--cn,-isg-sustainability-ts,-in",
+      "company": "Amazon.com",
+      "title": "Account Mgmt Associate- CN, ISG-Sustainability",
+      "location": "TS, IN",
+      "url": "https://in.indeed.com/viewjob?jk=cbb453714a58e5fd",
+      "posted_at": "2026-02-24T00:00:00",
+      "posted_display": "2026-02-24",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lookie-software-engineer-(full-stack)-los-angeles,-ca,-us",
+      "company": "Lookie",
+      "title": "Software Engineer (Full-stack)",
+      "location": "Los Angeles, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=c2fc7f117da3be14",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "core4ce-research-scientist/engineer-level-2-alexandria,-va,-us",
+      "company": "Core4ce",
+      "title": "Research Scientist/Engineer Level 2",
+      "location": "Alexandria, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=47f574ddfe9de527",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "summit-technologies-&-solutions,-inc.-junior-release-train-engineer/business-ops-assistant-colorado-",
+      "company": "Summit Technologies & Solutions, Inc.",
+      "title": "Junior Release Train Engineer/Business Ops Assistant",
+      "location": "Colorado Springs, CO, US",
+      "url": "https://www.indeed.com/viewjob?jk=cbaf9f8cbff7827d",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "electrosoft-services-inc-security-engineer-atlanta,-ga,-us",
+      "company": "Electrosoft Services Inc",
+      "title": "Security Engineer",
+      "location": "Atlanta, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=ceb1e55938a30b6d",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "genpact-management-trainee---ap-wb,-in",
+      "company": "Genpact",
+      "title": "Management Trainee - AP",
+      "location": "WB, IN",
+      "url": "https://in.indeed.com/viewjob?jk=b67df939ec81802b",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "red-hat-machine-learning-engineer-toronto,-on,-ca",
       "company": "Red Hat",
       "title": "Machine Learning Engineer",
@@ -19633,13 +19945,13 @@
       "is_closed": false
     },
     {
-      "id": "amazon.com-account-mgmt-associate--chinese,-isg-sustainability-ts,-in",
-      "company": "Amazon.com",
-      "title": "Account Mgmt Associate- Chinese, ISG-Sustainability",
-      "location": "TS, IN",
-      "url": "https://in.indeed.com/viewjob?jk=4dc3c931ab85db75",
-      "posted_at": "2026-02-26T00:00:00",
-      "posted_display": "2026-02-26",
+      "id": "lja-engineering,-inc-graduate-engineer-i---h&h-houston,-tx,-us",
+      "company": "LJA Engineering, Inc",
+      "title": "Graduate Engineer I - H&H",
+      "location": "Houston, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=dbe3204f64c77eae",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
@@ -19659,13 +19971,39 @@
       "is_closed": false
     },
     {
-      "id": "amazon.com-account-mgmt-associate--cn,-isg-sustainability-ts,-in",
-      "company": "Amazon.com",
-      "title": "Account Mgmt Associate- CN, ISG-Sustainability",
-      "location": "TS, IN",
-      "url": "https://in.indeed.com/viewjob?jk=cbb453714a58e5fd",
-      "posted_at": "2026-02-24T00:00:00",
-      "posted_display": "2026-02-24",
+      "id": "kleinfelder-north-carolina-state-university-2026-engineering-club-expo-cary,-nc,-us",
+      "company": "Kleinfelder",
+      "title": "North Carolina State University 2026 Engineering Club Expo",
+      "location": "Cary, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=c0bf8d545c5c97f7",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "university-of-central-florida-assistant-professor-or-associate-professor,-electrical-&-computer-engi",
+      "company": "University of Central Florida",
+      "title": "Assistant Professor or Associate Professor, Electrical & Computer Engineering",
+      "location": "Orlando, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=78120a6ea5ec8a7d",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
@@ -19685,18 +20023,18 @@
       "is_closed": false
     },
     {
-      "id": "genpact-management-trainee---ap-wb,-in",
-      "company": "Genpact",
-      "title": "Management Trainee - AP",
-      "location": "WB, IN",
-      "url": "https://in.indeed.com/viewjob?jk=b67df939ec81802b",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
+      "id": "university-of-central-florida-assistant-in-research-embedded-training-/-software-engineer-orlando,-f",
+      "company": "University of Central Florida",
+      "title": "Assistant In Research Embedded Training / Software Engineer",
+      "location": "Orlando, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=0750d9a0545f3337",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -19819,205 +20157,23 @@
       "is_closed": false
     },
     {
-      "id": "mda-guidance,-navigation-&-control-(gnc)-systems-engineer-sainte-anne-de-bellevue,-qc,-ca",
-      "company": "MDA",
-      "title": "Guidance, Navigation & Control (GNC) Systems Engineer",
-      "location": "Sainte-Anne-de-Bellevue, QC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=ef49aec0e9e97672",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
+      "id": "nvidia-asic-methodology-engineer---new-college-grad-2026-toronto,-on,-ca",
+      "company": "NVIDIA",
+      "title": "ASIC Methodology Engineer - New College Grad 2026",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=f53778bf325eb983",
+      "posted_at": "2026-03-12T00:00:00",
+      "posted_display": "6 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
       },
       "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "kleinfelder-north-carolina-state-university-2026-engineering-club-expo-cary,-nc,-us",
-      "company": "Kleinfelder",
-      "title": "North Carolina State University 2026 Engineering Club Expo",
-      "location": "Cary, NC, US",
-      "url": "https://www.indeed.com/viewjob?jk=c0bf8d545c5c97f7",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "university-of-central-florida-assistant-professor-or-associate-professor,-electrical-&-computer-engi",
-      "company": "University of Central Florida",
-      "title": "Assistant Professor or Associate Professor, Electrical & Computer Engineering",
-      "location": "Orlando, FL, US",
-      "url": "https://www.indeed.com/viewjob?jk=78120a6ea5ec8a7d",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "university-of-central-florida-assistant-in-research-embedded-training-/-software-engineer-orlando,-f",
-      "company": "University of Central Florida",
-      "title": "Assistant In Research Embedded Training / Software Engineer",
-      "location": "Orlando, FL, US",
-      "url": "https://www.indeed.com/viewjob?jk=0750d9a0545f3337",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "orb-software-engineer,-core-product-(early-career)--san-francisco-hq-san-francisco,-ca,-us",
-      "company": "ORB",
-      "title": "Software Engineer, Core Product (Early Career)- San Francisco HQ",
-      "location": "San Francisco, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=7bd4b30e51aa9581",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "selligent-marketing-cloud-associate-software-engineer-remote,-us",
-      "company": "Selligent Marketing Cloud",
-      "title": "Associate Software Engineer",
-      "location": "Remote, US",
-      "url": "https://www.indeed.com/viewjob?jk=184a11ca8bc6ce21",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "the-aerospace-corporation-modeling-&-simulation-software-engineer-chantilly,-va,-us",
-      "company": "The Aerospace Corporation",
-      "title": "Modeling & Simulation Software Engineer",
-      "location": "Chantilly, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=f2eaa83c6b752fb9",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "fluor-corp.-structural-associate-design-engineer-i-(centrus-gvl/hou)-greenville,-sc,-us",
-      "company": "Fluor Corp.",
-      "title": "Structural Associate Design Engineer I (Centrus GVL/Hou)",
-      "location": "Greenville, SC, US",
-      "url": "https://www.indeed.com/viewjob?jk=3cd350e6b55acf11",
-      "posted_at": "2026-03-10T00:00:00",
-      "posted_display": "2026-03-10",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
         "sectors": []
       },
       "flags": {
@@ -20183,18 +20339,174 @@
       "is_closed": false
     },
     {
-      "id": "nan-devops-engineer-us",
-      "company": null,
-      "title": "DevOps Engineer",
-      "location": "US",
-      "url": "https://www.indeed.com/viewjob?jk=5a5dff1837db4d14",
+      "id": "orb-software-engineer,-core-product-(early-career)--san-francisco-hq-san-francisco,-ca,-us",
+      "company": "ORB",
+      "title": "Software Engineer, Core Product (Early Career)- San Francisco HQ",
+      "location": "San Francisco, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=7bd4b30e51aa9581",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "selligent-marketing-cloud-associate-software-engineer-remote,-us",
+      "company": "Selligent Marketing Cloud",
+      "title": "Associate Software Engineer",
+      "location": "Remote, US",
+      "url": "https://www.indeed.com/viewjob?jk=184a11ca8bc6ce21",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "the-aerospace-corporation-modeling-&-simulation-software-engineer-chantilly,-va,-us",
+      "company": "The Aerospace Corporation",
+      "title": "Modeling & Simulation Software Engineer",
+      "location": "Chantilly, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=f2eaa83c6b752fb9",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "fluor-corp.-structural-associate-design-engineer-i-(centrus-gvl/hou)-greenville,-sc,-us",
+      "company": "Fluor Corp.",
+      "title": "Structural Associate Design Engineer I (Centrus GVL/Hou)",
+      "location": "Greenville, SC, US",
+      "url": "https://www.indeed.com/viewjob?jk=3cd350e6b55acf11",
+      "posted_at": "2026-03-10T00:00:00",
+      "posted_display": "2026-03-10",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "digifish3-media-private-limited-sales-and-marketing-trainee-ul,-in",
+      "company": "Digifish3 media private limited",
+      "title": "Sales and Marketing Trainee",
+      "location": "UL, IN",
+      "url": "https://in.indeed.com/viewjob?jk=014c0a22610e64df",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "digital-bira-digital-marketing-trainee-wb,-in",
+      "company": "Digital Bira",
+      "title": "Digital Marketing Trainee",
+      "location": "WB, IN",
+      "url": "https://in.indeed.com/viewjob?jk=bf768397c5f49d1f",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "venturesathi-business-services-llp-digital-community-trainee-or,-in",
+      "company": "Venturesathi Business Services LLP",
+      "title": "Digital Community Trainee",
+      "location": "OR, IN",
+      "url": "https://in.indeed.com/viewjob?jk=6421ce551ff363c6",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -20261,24 +20573,54 @@
       "is_closed": false
     },
     {
-      "id": "secretariat-associate,-construction-delay-(entry-level-2026)-new-york,-ny,-us",
-      "company": "secretariat",
-      "title": "Associate, Construction Delay (Entry Level 2026)",
-      "location": "New York, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=dd03c258c09ad799",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
+      "id": "lockheed-martin-software-engineer-\u2013-platform-performance-&-data-analytics-fort-worth,-tx,-us",
+      "company": "Lockheed Martin",
+      "title": "Software Engineer \u2013 Platform Performance & Data Analytics",
+      "location": "Fort Worth, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=bf670a273720aa76",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lockheed-martin-network-engineer-sr-boulder,-co,-us",
+      "company": "Lockheed Martin",
+      "title": "Network Engineer Sr",
+      "location": "Boulder, CO, US",
+      "url": "https://www.indeed.com/viewjob?jk=7fe57653c333533d",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -20427,11 +20769,11 @@
       "is_closed": false
     },
     {
-      "id": "digifish3-media-private-limited-sales-and-marketing-trainee-ul,-in",
-      "company": "Digifish3 media private limited",
-      "title": "Sales and Marketing Trainee",
-      "location": "UL, IN",
-      "url": "https://in.indeed.com/viewjob?jk=014c0a22610e64df",
+      "id": "capgemini-agentic-ai-developer-(entry-level)-bellevue,-wa,-us",
+      "company": "Capgemini",
+      "title": "Agentic AI Developer (Entry-Level)",
+      "location": "Bellevue, WA, US",
+      "url": "https://www.indeed.com/viewjob?jk=29fa6bc00387a128",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -20453,76 +20795,26 @@
       "is_closed": false
     },
     {
-      "id": "digital-bira-digital-marketing-trainee-wb,-in",
-      "company": "Digital Bira",
-      "title": "Digital Marketing Trainee",
-      "location": "WB, IN",
-      "url": "https://in.indeed.com/viewjob?jk=bf768397c5f49d1f",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
+      "id": "lockheed-martin-quality-engineer-(qe)-associate---early-career-troy,-al,-us",
+      "company": "Lockheed Martin",
+      "title": "Quality Engineer (QE) Associate - Early Career",
+      "location": "Troy, AL, US",
+      "url": "https://www.indeed.com/viewjob?jk=708281b24d889030",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "venturesathi-business-services-llp-digital-community-trainee-or,-in",
-      "company": "Venturesathi Business Services LLP",
-      "title": "Digital Community Trainee",
-      "location": "OR, IN",
-      "url": "https://in.indeed.com/viewjob?jk=6421ce551ff363c6",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "nvidia-asic-methodology-engineer---new-college-grad-2026-toronto,-on,-ca",
-      "company": "NVIDIA",
-      "title": "ASIC Methodology Engineer - New College Grad 2026",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=f53778bf325eb983",
-      "posted_at": "2026-03-12T00:00:00",
-      "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
       },
       "company_tier": {
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
-        "sectors": []
+        "sectors": [
+          "defense"
+        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -20687,32 +20979,6 @@
       "is_closed": false
     },
     {
-      "id": "lgs,-an-ibm-company-associate-program--jobfair-uqam-esg-montr\u00e9al,-qc,-ca",
-      "company": "LGS, an IBM Company",
-      "title": "Associate Program- Jobfair UQAM-ESG",
-      "location": "Montr\u00e9al, QC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=a284fec3d0c4608e",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "paypal-software-engineer-ka,-in",
       "company": "PayPal",
       "title": "Software Engineer",
@@ -20845,18 +21111,72 @@
       "is_closed": false
     },
     {
-      "id": "interco-junior-software-developer-st.-louis,-mo,-us",
-      "company": "Interco",
-      "title": "Junior Software Developer",
-      "location": "St. Louis, MO, US",
-      "url": "https://www.indeed.com/viewjob?jk=8074b9b699ed965e",
+      "id": "aes-corporation-associate,-generator-modeling-engineer-louisville,-co,-us",
+      "company": "AES Corporation",
+      "title": "Associate, Generator Modeling Engineer",
+      "location": "Louisville, CO, US",
+      "url": "https://www.indeed.com/viewjob?jk=930b764012896190",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "kbr-enterprise-hybrid-devops-engineer-sioux-falls,-sd,-us",
+      "company": "KBR",
+      "title": "Enterprise Hybrid DevOps Engineer",
+      "location": "Sioux Falls, SD, US",
+      "url": "https://www.indeed.com/viewjob?jk=4a5da2518fc0a34c",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lgs,-an-ibm-company-associate-program--jobfair-uqam-esg-montr\u00e9al,-qc,-ca",
+      "company": "LGS, an IBM Company",
+      "title": "Associate Program- Jobfair UQAM-ESG",
+      "location": "Montr\u00e9al, QC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=a284fec3d0c4608e",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -20904,110 +21224,6 @@
       "url": "https://ca.indeed.com/viewjob?jk=23924f296bbcc23d",
       "posted_at": "2026-03-12T00:00:00",
       "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "shive-hattery-land-survey-technician---early-career-west-des-moines,-ia,-us",
-      "company": "Shive-Hattery",
-      "title": "Land Survey Technician - Early Career",
-      "location": "West Des Moines, IA, US",
-      "url": "https://www.indeed.com/viewjob?jk=6a85db65073c780c",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "the-art-institute-of-chicago-student-affairs-coordinator-campus-life-chicago,-il,-us",
-      "company": "The Art Institute of Chicago",
-      "title": "Student Affairs Coordinator-Campus Life",
-      "location": "Chicago, IL, US",
-      "url": "https://www.indeed.com/viewjob?jk=4b15a9889f6f493d",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "sentara-supply-chain-associate-i-virginia-beach,-va,-us",
-      "company": "Sentara",
-      "title": "Supply Chain Associate I",
-      "location": "Virginia Beach, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=88479c65c6f586e8",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "fairview-park-hospital-dublin-new-grad-rn-resident-emergency-room-dublin,-ga,-us",
-      "company": "Fairview Park Hospital-Dublin",
-      "title": "New Grad RN Resident Emergency Room",
-      "location": "Dublin, GA, US",
-      "url": "https://www.indeed.com/viewjob?jk=a1935e68ce7e7d88",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
@@ -21133,6 +21349,32 @@
       "is_closed": false
     },
     {
+      "id": "the-art-institute-of-chicago-student-affairs-coordinator-campus-life-chicago,-il,-us",
+      "company": "The Art Institute of Chicago",
+      "title": "Student Affairs Coordinator-Campus Life",
+      "location": "Chicago, IL, US",
+      "url": "https://www.indeed.com/viewjob?jk=4b15a9889f6f493d",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "export-development-canada-junior-associate,-structured-and-project-finance-\u2013-summer-2026-ottawa,-on,",
       "company": "Export Development Canada",
       "title": "Junior Associate, Structured and Project Finance \u2013 Summer 2026",
@@ -21185,18 +21427,18 @@
       "is_closed": false
     },
     {
-      "id": "jpmorganchase-site-reliability-engineer-ii-jersey-city,-nj,-us",
-      "company": "JPMorganChase",
-      "title": "Site Reliability Engineer II",
-      "location": "Jersey City, NJ, US",
-      "url": "https://www.indeed.com/viewjob?jk=258a17e743c92a13",
+      "id": "fairview-park-hospital-dublin-new-grad-rn-resident-icu-dublin,-ga,-us",
+      "company": "Fairview Park Hospital-Dublin",
+      "title": "New Grad RN Resident ICU",
+      "location": "Dublin, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=498512798e0f4ae3",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -21211,11 +21453,11 @@
       "is_closed": false
     },
     {
-      "id": "west-virginia-university-(hybrid)-graduate-programs-recruiter---john-chambers-college-of-business-an",
-      "company": "West Virginia University",
-      "title": "(Hybrid) Graduate Programs Recruiter - John Chambers College of Business and Economics",
-      "location": "Morgantown, WV, US",
-      "url": "https://www.indeed.com/viewjob?jk=ec0046f243ae6d03",
+      "id": "sentara-supply-chain-associate-i-virginia-beach,-va,-us",
+      "company": "Sentara",
+      "title": "Supply Chain Associate I",
+      "location": "Virginia Beach, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=88479c65c6f586e8",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -21223,6 +21465,58 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "fairview-park-hospital-dublin-new-grad-rn-resident-emergency-room-dublin,-ga,-us",
+      "company": "Fairview Park Hospital-Dublin",
+      "title": "New Grad RN Resident Emergency Room",
+      "location": "Dublin, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=a1935e68ce7e7d88",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "jpmorganchase-site-reliability-engineer-ii-jersey-city,-nj,-us",
+      "company": "JPMorganChase",
+      "title": "Site Reliability Engineer II",
+      "location": "Jersey City, NJ, US",
+      "url": "https://www.indeed.com/viewjob?jk=258a17e743c92a13",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -21294,32 +21588,6 @@
       "title": "Management Trainee - New Graduates - Abbotsford",
       "location": "Abbotsford, BC, CA",
       "url": "https://ca.indeed.com/viewjob?jk=4c1165b4231eb2b9",
-      "posted_at": "2026-03-13T00:00:00",
-      "posted_display": "5 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "cibc-northeastern-university-investments-co-op-boston-july--dec-2026-boston,-ma,-us",
-      "company": "CIBC",
-      "title": "Northeastern University Investments Co-Op Boston July- Dec 2026",
-      "location": "Boston, MA, US",
-      "url": "https://www.indeed.com/viewjob?jk=b98aba2624a3f4d0",
       "posted_at": "2026-03-13T00:00:00",
       "posted_display": "5 days ago",
       "source": "JobSpy (Indeed)",
@@ -21421,6 +21689,32 @@
       "is_closed": false
     },
     {
+      "id": "west-virginia-university-(hybrid)-graduate-programs-recruiter---john-chambers-college-of-business-an",
+      "company": "West Virginia University",
+      "title": "(Hybrid) Graduate Programs Recruiter - John Chambers College of Business and Economics",
+      "location": "Morgantown, WV, US",
+      "url": "https://www.indeed.com/viewjob?jk=ec0046f243ae6d03",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "l3harris-specialist-systems-engineering-yorba-linda,-ca,-us",
       "company": "L3Harris",
       "title": "Specialist Systems Engineering",
@@ -21475,6 +21769,32 @@
       "is_closed": false
     },
     {
+      "id": "cibc-northeastern-university-investments-co-op-boston-july--dec-2026-boston,-ma,-us",
+      "company": "CIBC",
+      "title": "Northeastern University Investments Co-Op Boston July- Dec 2026",
+      "location": "Boston, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=b98aba2624a3f4d0",
+      "posted_at": "2026-03-13T00:00:00",
+      "posted_display": "5 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "arup-graduate-facades-engineering-(available-2026)-toronto,-on,-ca",
       "company": "Arup",
       "title": "Graduate Facades Engineering (Available 2026)",
@@ -21501,11 +21821,11 @@
       "is_closed": false
     },
     {
-      "id": "radiant-industries-tooling-engineer---2026-new-graduate-el-segundo,-ca,-us",
-      "company": "RADIANT INDUSTRIES",
-      "title": "Tooling Engineer - 2026 New Graduate",
-      "location": "El Segundo, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=a4984e42184e27b8",
+      "id": "shive-hattery-land-survey-technician---early-career-west-des-moines,-ia,-us",
+      "company": "Shive-Hattery",
+      "title": "Land Survey Technician - Early Career",
+      "location": "West Des Moines, IA, US",
+      "url": "https://www.indeed.com/viewjob?jk=6a85db65073c780c",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -21527,11 +21847,11 @@
       "is_closed": false
     },
     {
-      "id": "national-general-insurance-claims-adjuster-trainee---national-general-remote,-us",
-      "company": "National General Insurance",
-      "title": "Claims Adjuster Trainee - National General",
-      "location": "Remote, US",
-      "url": "https://www.indeed.com/viewjob?jk=4fa8b85ef5867767",
+      "id": "radiant-industries-tooling-engineer---2026-new-graduate-el-segundo,-ca,-us",
+      "company": "RADIANT INDUSTRIES",
+      "title": "Tooling Engineer - 2026 New Graduate",
+      "location": "El Segundo, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=a4984e42184e27b8",
       "posted_at": "2026-03-18T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -21605,58 +21925,6 @@
       "is_closed": false
     },
     {
-      "id": "rbc-data-scientist,-global-aml-transaction-monitoring-toronto,-on,-ca",
-      "company": "RBC",
-      "title": "Data Scientist, Global AML Transaction Monitoring",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=0b2f13ce06f9574f",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mission-health-new-grad-rn---acute-care-spruce-pine,-nc,-us",
-      "company": "Mission Health",
-      "title": "New Grad RN - Acute Care",
-      "location": "Spruce Pine, NC, US",
-      "url": "https://www.indeed.com/viewjob?jk=41f9b11d563c54eb",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "roblox-software-engineer,-user-co-experience-san-mateo,-ca,-us",
       "company": "Roblox",
       "title": "Software Engineer, User Co-Experience",
@@ -21674,32 +21942,6 @@
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
         "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "nationwide-mutual-insurance-company-specialist,-data-engineer---nf-columbus,-oh,-us",
-      "company": "Nationwide Mutual Insurance Company",
-      "title": "Specialist, Data Engineer - NF",
-      "location": "Columbus, OH, US",
-      "url": "https://www.indeed.com/viewjob?jk=7921cb7720ce5e14",
-      "posted_at": "2026-03-12T00:00:00",
-      "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
         "sectors": []
       },
       "flags": {
@@ -21839,18 +22081,18 @@
       "is_closed": false
     },
     {
-      "id": "suny-brockport-2026/2027-adjunct-lecturer---dance-brockport,-ny,-us",
-      "company": "SUNY Brockport",
-      "title": "2026/2027 Adjunct Lecturer - Dance",
-      "location": "Brockport, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=f9b8b6519a3d777f",
+      "id": "nationwide-mutual-insurance-company-specialist,-data-engineer---nf-columbus,-oh,-us",
+      "company": "Nationwide Mutual Insurance Company",
+      "title": "Specialist, Data Engineer - NF",
+      "location": "Columbus, OH, US",
+      "url": "https://www.indeed.com/viewjob?jk=7921cb7720ce5e14",
       "posted_at": "2026-03-12T00:00:00",
       "posted_display": "6 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
       },
       "company_tier": {
         "tier": "other",
@@ -21865,18 +22107,18 @@
       "is_closed": false
     },
     {
-      "id": "wilson-medical-center-registered-nurse-(rn),-new-grad-wilson,-nc,-us",
-      "company": "Wilson Medical Center",
-      "title": "Registered Nurse (RN), New Grad",
-      "location": "Wilson, NC, US",
-      "url": "https://www.indeed.com/viewjob?jk=7964fba763f47a01",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
+      "id": "rbc-data-scientist,-global-aml-transaction-monitoring-toronto,-on,-ca",
+      "company": "RBC",
+      "title": "Data Scientist, Global AML Transaction Monitoring",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=0b2f13ce06f9574f",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "other",
@@ -21969,6 +22211,32 @@
       "is_closed": false
     },
     {
+      "id": "mission-health-new-grad-rn---acute-care-spruce-pine,-nc,-us",
+      "company": "Mission Health",
+      "title": "New Grad RN - Acute Care",
+      "location": "Spruce Pine, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=41f9b11d563c54eb",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "clv-group-inc.-revenue-analyst---new-grad-ottawa,-on,-ca",
       "company": "CLV Group Inc.",
       "title": "Revenue Analyst - New Grad",
@@ -21987,60 +22255,6 @@
         "emoji": "",
         "label": "",
         "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "genpact-process-associate-health-and-dental-insurance-claims-hr,-in",
-      "company": "Genpact",
-      "title": "Process Associate Health and Dental Insurance Claims",
-      "location": "HR, IN",
-      "url": "https://in.indeed.com/viewjob?jk=41fb0ae33a91681e",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "td-bank-data-scientist-ii---fcrm--screening-capabilities-new-york,-ny,-us",
-      "company": "TD Bank",
-      "title": "Data Scientist II - FCRM -Screening Capabilities",
-      "location": "New York, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=92134faaa0757284",
-      "posted_at": "2026-03-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
       },
       "flags": {
         "no_sponsorship": false,
@@ -22075,13 +22289,13 @@
       "is_closed": false
     },
     {
-      "id": "arizona-state-university-energy-management-supervisor---tempe-campus-tempe,-az,-us",
-      "company": "Arizona State University",
-      "title": "Energy Management Supervisor - Tempe campus",
-      "location": "Tempe, AZ, US",
-      "url": "https://www.indeed.com/viewjob?jk=8dd13249ef3bd101",
-      "posted_at": "2026-03-16T00:00:00",
-      "posted_display": "2 days ago",
+      "id": "southern-california-hospitals-new-grad-rn-(sdu)---loan-forgiveness---full-time,-nights-(culver-city)",
+      "company": "Southern California Hospitals",
+      "title": "New Grad RN (SDU) - Loan Forgiveness - Full Time, Nights (Culver City)",
+      "location": "Culver City, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=12a59f5460bf729d",
+      "posted_at": "2026-03-18T00:00:00",
+      "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
@@ -22238,6 +22452,86 @@
       "url": "https://www.indeed.com/viewjob?jk=66a87860be7c4421",
       "posted_at": "2026-03-17T00:00:00",
       "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "genpact-process-associate-health-and-dental-insurance-claims-hr,-in",
+      "company": "Genpact",
+      "title": "Process Associate Health and Dental Insurance Claims",
+      "location": "HR, IN",
+      "url": "https://in.indeed.com/viewjob?jk=41fb0ae33a91681e",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "td-bank-data-scientist-ii---fcrm--screening-capabilities-new-york,-ny,-us",
+      "company": "TD Bank",
+      "title": "Data Scientist II - FCRM -Screening Capabilities",
+      "location": "New York, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=92134faaa0757284",
+      "posted_at": "2026-03-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "arizona-state-university-energy-management-supervisor---tempe-campus-tempe,-az,-us",
+      "company": "Arizona State University",
+      "title": "Energy Management Supervisor - Tempe campus",
+      "location": "Tempe, AZ, US",
+      "url": "https://www.indeed.com/viewjob?jk=8dd13249ef3bd101",
+      "posted_at": "2026-03-16T00:00:00",
+      "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
         "id": "other",
@@ -23487,58 +23781,6 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "citi-site-reliability-engineer-mississauga-ontario-canada",
-      "company": "Citi",
-      "title": "Site Reliability Engineer",
-      "location": "Mississauga Ontario Canada",
-      "url": "https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Site-Reliability-Engineer_26946494",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "Workday",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "citi-data-engineer---python,-ai-pune-maharashtra-india",
-      "company": "Citi",
-      "title": "Data Engineer - Python, AI",
-      "location": "Pune Maharashtra India",
-      "url": "https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Applications-Development-Senior-Programmer-Analyst_26936337",
-      "posted_at": "2026-03-18T00:00:00",
-      "posted_display": "Today",
-      "source": "Workday",
-      "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
       },
       "company_tier": {
         "tier": "other",
