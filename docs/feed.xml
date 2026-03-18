@@ -5,14 +5,21 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 23:24:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 23:54:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer 2 - Dev Accelerator at Abnormal Security</title>
       <link>https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</link>
-      <description>New grad role at Abnormal Security in Remote - Canada; Remote - USA. Category: Software Engineering</description>
-      <pubDate>Wed, 18 Mar 2026 19:11:41 +0000</pubDate>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Wed, 18 Mar 2026 19:25:40 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7640818003?gh_jid=7640818003</guid>
+    </item>
+    <item>
+      <title>Cloud Infrastructure Engineer II , Platform Infrastructure at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7224694003?gh_jid=7224694003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 18 Mar 2026 19:23:07 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7224694003?gh_jid=7224694003</guid>
     </item>
     <item>
       <title>Software Engineer at CircleCI</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, USA; San Francisco, California, USA. Category: Software Engineering</description>
       <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7487849</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Logs Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7389370</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7389370</guid>
     </item>
   </channel>
 </rss>
