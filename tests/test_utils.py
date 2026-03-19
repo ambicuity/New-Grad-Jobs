@@ -8,10 +8,15 @@ import pytest
 import sys
 import os
 import math
+import json
+import re
+import requests
+from datetime import datetime, timezone
+from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import get_job_key
+from update_jobs import get_job_key, fetch_google_jobs
 
 def test_get_job_key_handles_nan()->None:
     """Test that get_job_key handles NaN values correctly."""
@@ -77,3 +82,76 @@ def test_get_job_key_normalizes_strings()->None:
 def test_get_job_key_edge_cases(job_input: dict, expected_key: str) -> None:
     """Test get_job_key with various edge cases based on style guide recommendations."""
     assert get_job_key(job_input) == expected_key
+
+
+# Testing for update_jobs.py - fetch_google_jobs function
+
+def create_mock_google_html(jobs_array) -> None:
+    # This data structure is exactly what find_jobs_array expects to see
+    # after json.loads() is called on the regex match.
+    # It must be a list containing a list, where the first element is your job list.
+    data_to_encode = [jobs_array]
+
+    json_data = json.dumps(data_to_encode)
+
+    # We must match the regex: AF_initDataCallback({key: 'ds:1', hash: '[^']+', data:([^<]+)});</script>
+    # Note: No space between 'data:' and the JSON string to be safe.
+    return f"AF_initDataCallback({{key: 'ds:1', hash: 'xyz', data:{json_data}}});</script>"
+
+def test_fetch_google_jobs_success2() -> None:
+    mock_jobs = [["12345", "early Software Engineer", "https://google.com/job1", None, None, None, None, "Google", None, [["Mountain View, CA"]], [None, "Description 1"], None, [1679212800]]]
+
+    # Ensure this matches the scraper's expected script format EXACTLY
+    mock_html = f"<script>AF_initDataCallback({{key: 'ds:1', hash: '1', data:{json.dumps([mock_jobs])}}});</script>"
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.text = mock_html
+        mock_get.return_value = mock_response
+
+        # IMPORTANT: Check if the case sensitivity of the search term matters
+        results = fetch_google_jobs(["early software engineer"], max_pages=1)
+        assert len(results) == 1
+        assert results[0]['title'] == "early Software Engineer"
+        assert results[0]['company'] == "Google"
+        assert "Mountain View, CA" in results[0]['location']
+        assert results[0]['url'] == "https://google.com/job1"
+        assert "Description 1" in results[0]['description']
+        assert "2023-03-19" in results[0]['posted_at']
+
+
+def test_fetch_google_jobs_rate_limited() -> None:
+    """Test that it handles rate limiting (403, 429) correctly."""
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock()
+        mock_response.status_code = 429
+        mock_get.return_value = mock_response
+        mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
+
+        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0)
+        assert len(results) == 0
+
+def test_fetch_google_jobs_403_result() -> None:
+    """Test that it handles rate limiting (403) correctly."""
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock()
+        mock_response.status_code = 403
+        mock_get.return_value = mock_response
+        mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
+
+        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0)
+        assert len(results) == 0
+
+def test_fetch_google_jobs_empty_results() -> None:
+    """Test handling of no jobs found."""
+    mock_html = "<html><body><script>AF_initDataCallback({key: 'ds:1', hash: '123', data:[None, None, [[]]]});</script></body></html>"
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.text = mock_html
+        mock_get.return_value = mock_response
+
+        results = fetch_google_jobs(["nonexistent job"], max_pages=1)
+        assert len(results) == 0

@@ -840,6 +840,8 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                 return None
 
             jobs_list = find_jobs_array(parsed)
+            print(f"DEBUG: Regex Match Found? {match is not None}")
+            print(f"DEBUG: jobs_list Found? {jobs_list is not None}")
             if not jobs_list:
                 jobs_found_on_page = False
                 continue
