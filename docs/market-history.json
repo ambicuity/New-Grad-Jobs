@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-19T10:03:05.737570",
+    "last_updated": "2026-03-19T11:00:00.880112",
     "total_snapshots": 15,
     "date_range": {
       "start": "2026-03-05",
@@ -780,12 +780,12 @@
     },
     {
       "date": "2026-03-19",
-      "total_jobs": 935,
+      "total_jobs": 936,
       "categories": {},
       "tiers": {
+        "other": 313,
         "unicorn": 493,
-        "other": 310,
-        "faang_plus": 132
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -802,7 +802,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 23
+          "jobs": 24
         },
         {
           "company": "Dropbox",
@@ -821,17 +821,17 @@
           "jobs": 19
         },
         {
-          "company": "NVIDIA",
-          "jobs": 19
-        },
-        {
           "company": "Reddit",
           "jobs": 18
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 17
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.58,
-      "timestamp": "2026-03-19T10:03:05.737273"
+      "unique_companies": 205,
+      "avg_jobs_per_company": 4.57,
+      "timestamp": "2026-03-19T11:00:00.879830"
     }
   ]
 }
