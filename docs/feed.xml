@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 22:06:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 22:50:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II (Commerce) at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</link>
+      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 18:41:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</guid>
+    </item>
+    <item>
+      <title>Software Engineer II (Generalist) at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</link>
+      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 18:41:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Frontier AI Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4363623005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 18:40:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4363623005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ARC Team at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4673771005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 18:25:54 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4673771005</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 19 Mar 2026 18:08:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</guid>
+    </item>
     <item>
       <title>Software Engineer I, Community Growth at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8468673002</link>
@@ -218,20 +253,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661</guid>
     </item>
     <item>
-      <title>Software Engineer II (Commerce) at Flexport</title>
-      <link>https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</link>
-      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 13:53:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7594670?gh_jid=7594670</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Generalist) at Flexport</title>
-      <link>https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</link>
-      <description>New grad role at Flexport in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 13:53:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7555689?gh_jid=7555689</guid>
-    </item>
-    <item>
       <title>Software Engineer, Lyft Business at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8326337002?gh_jid=8326337002</link>
       <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
@@ -335,27 +356,6 @@
       <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5584382004</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5395374004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5395374004</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer - Control Plane at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5587664004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5587664004</guid>
     </item>
   </channel>
 </rss>
