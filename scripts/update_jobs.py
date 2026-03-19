@@ -741,8 +741,8 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
 
     """
     # Google Jobs array indices (as of March 19th, 2026)
-    # Init constants, these map to the positions in the undocumented JSON structure.
-    IDX_ID = 0
+    # Init constants, these map to the index positions in the undocumented JSON structure found below.
+    IDX_ID = 0 # For example, would map to index = 0
     IDX_TITLE = 1
     IDX_LINK = 2
     IDX_COMPANY = 7
@@ -798,7 +798,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
 
             if not html:
                 print(f"⚠️  Google: Failed to fetch {url} after {max_retries + 1} attempts.")
-                break
+                break # Stop, something is not right.
             # This regex extraction in re.search finds a very specific <script> block AF_initDataCallback (for now) inside page body.
             # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
             match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
@@ -838,13 +838,13 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                         res = find_jobs_array(item)
                         if res: return res
                 return None
-
+            # Use find_jobs array to try to find a regex match
             jobs_list = find_jobs_array(parsed)
             print(f"DEBUG: Regex Match Found? {match is not None}")
             print(f"DEBUG: jobs_list Found? {jobs_list is not None}")
             if not jobs_list:
                 jobs_found_on_page = False
-                continue
+                continue # If no match found, on to the next
 
             new_jobs = 0
             # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
@@ -855,7 +855,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     link = job[IDX_LINK]
                     if not link:
                         link = f"https://www.google.com/about/careers/applications/jobs/results/{job_id}"
-
+                    # Should be google only, but just in case. Google has other companies like waymo or Deep Mind, both would be for mid and above engineers.
                     company = job[IDX_COMPANY] if len(job) > IDX_COMPANY and job[IDX_COMPANY] else "Google"
 
                     locations = []
@@ -889,13 +889,13 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                             "location": location_str,
                             "url": link,
                             "posted_at": posted_at,
-                            "source": "Google Careers",
+                            "source": "Google Careers", # Single Source, should just be this unless they change it again.
                             "description": description
                         })
                         new_jobs += 1
                 except Exception as e:
                     job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
-                    print(f"⚠️  Google: Error parsing job data (ID: {job_id}): {e}")
+                    print(f"⚠️  Google: Error parsing job data (ID: {job_id}): {e}") # Print error for later ref
             # If no new jobs were added at all, most likely hit the end of the unique pages
             # Does current page = or exceed MAX_PAGES?
             #If either is true, break the while loop and start looking at the next search term.
@@ -907,7 +907,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                 else:
                     page += 1 # +1 to add to the page URL rather than look for the next page link.
     print("✓ Found Google Career Jobs returned: ", len(all_jobs)) # Print total number of jobs found for logs
-    return all_jobs
+    return all_jobs # Return all jobs found
 
 
 def build_workday_api_url(host: str, site_path: str) -> str:

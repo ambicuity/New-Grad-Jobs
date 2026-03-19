@@ -9,9 +9,7 @@ import sys
 import os
 import math
 import json
-import re
 import requests
-from datetime import datetime, timezone
 from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
@@ -83,9 +81,10 @@ def test_get_job_key_edge_cases(job_input: dict, expected_key: str) -> None:
     """Test get_job_key with various edge cases based on style guide recommendations."""
     assert get_job_key(job_input) == expected_key
 
+# ---------------------------------------------------------------------------
 
 # Testing for update_jobs.py - fetch_google_jobs function
-
+# Helper -
 def create_mock_google_html(jobs_array) -> None:
     # This data structure is exactly what find_jobs_array expects to see
     # after json.loads() is called on the regex match.
@@ -97,7 +96,7 @@ def create_mock_google_html(jobs_array) -> None:
     # We must match the regex: AF_initDataCallback({key: 'ds:1', hash: '[^']+', data:([^<]+)});</script>
     # Note: No space between 'data:' and the JSON string to be safe.
     return f"AF_initDataCallback({{key: 'ds:1', hash: 'xyz', data:{json_data}}});</script>"
-
+# Normal Successful response
 def test_fetch_google_jobs_success2() -> None:
     mock_jobs = [["12345", "early Software Engineer", "https://google.com/job1", None, None, None, None, "Google", None, [["Mountain View, CA"]], [None, "Description 1"], None, [1679212800]]]
 
@@ -176,3 +175,6 @@ def test_fetch_google_jobs_invalid_json() -> None:
 
         results = fetch_google_jobs(["term"], max_pages=1)
         assert len(results) == 0 # Invalid would mean wrong area maybe, would not want it to go further
+
+#todo add tests about networking
+#parse failures, empty results?
