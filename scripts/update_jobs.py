@@ -720,11 +720,11 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
     return jobs
 
 def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers by scraping the search results
+    """Fetch jobs from Google Careers by scraping the search results as the API (v3) is not longer available. So we scrape HTML
     This function takes a List of str, in this case URL from fetch_page and returns a dict of strs.
-    I managed to match it to how the prev/other api functions return.
-    The orginal API call has retrys and ties into the global retry system. I have left that off as each page we
-    add can mean this adds up quickly. We want to be careful with google.
+    I managed to match it to how the prev/other api functions return and it does return the normal format (see below)
+    The orginal API call has retrys and ties into the global retry system. I have left that off as each page we scrape is one more clue to google that we are scraping.
+    This adds up quickly. We want to be careful with google.
 
     Input: List[str]
 
@@ -738,27 +738,30 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
     'source': 'Greenhouse',
     'description': 'Text Snippet'
 }
+
     """
     MAX_PAGES = max_pages # Put an upper limit on the number of pages we return to avoid rate limits
-    all_jobs = []
-    seen_urls = set() # O(1) deduplication
-
+    all_jobs = [] # init array to return store our results.
+    seen_urls = set() # O(1) deduplication with a set, this will contain urls seen with mutliple searches. We want to avoid dupe jobs. This ensures final output is deduplicated.
+    # Gather search_term passed from config.yml like 'new grad software engineer'
     for search_term in search_terms:
-        page = 1
+        page = 1 # This is appended to our URL below, Google enforces 20 results per page, so 2 pages = 40 jobs returned. This gets incremented to allow more results.
         jobs_found_on_page = True
 
         while jobs_found_on_page:
-            params = urlencode({
+            params = urlencode({ # Build our URL using the below params, all get built into url var
                 'q': search_term,
-                'hl': 'en',
-                'location': "United States",
-                'target_level': 'EARLY',
+                'hl': 'en', # Enforce english only
+                'location': "United States", # Enforce USA only
+                'target_level': 'EARLY', # Website has a settings like Mid or Senior, we select Early for new grad jobs per the project.
             })
 
             url = f"https://www.google.com/about/careers/applications/jobs/results/?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
 
             html = ""
-
+            # Start Fetching the HTML with exponential backoff. Fetch is in a retry loop
+            # If a request times out or fails (500s) we sleep for longer and longer periods of time to avoid being throttled
+            # If 403 or 429 is returned, we stop immediately.
             for attempt in range(max_retries + 1):
                 try:
                     # Using limited_get which handles connection pooling, compression, and keeps sessions alive
@@ -770,41 +773,53 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     print(f"  ⚠️  Google: HTTP Error {response.status_code} for {url}: {e}")
                     if response.status_code in (403, 429):
                         print("  ⚠️  Google: Rate limited or blocked. Consider increasing delays or using a proxy.")
-                        break # Don't retry if rate limited this hard without delay
+                        break # Don't retry if rate limited this hard without delay, exit and hope
                 except requests.exceptions.Timeout as e:
-                    print(f"  ⚠️  Google: Timeout for {url}")
+                    print(f"  ⚠️  Google: Timeout for {url}") # Timeout could be networking or other reasons.
                 except requests.exceptions.RequestException as e:
                     print(f"  ⚠️  Google: Request error for {url}: {e}")
                 except Exception as e:
                     print(f"  ⚠️  Google: Unexpected API response format: {url}: {e}")
-
+                # Set out back off, sleeping for a bit, then increasing before trying again.
                 if attempt < max_retries:
-                    sleep_time = 1.0 * (2 ** attempt)
+                    sleep_time = 2.0 * (2 ** attempt)
                     print(f"  ⚠️  Google: Retrying in {sleep_time} seconds...")
                     time.sleep(sleep_time)
 
             if not html:
                 print(f"⚠️  Google: Failed to fetch {url} after {max_retries + 1} attempts.")
                 break
-
+            # This regex extraction in re.search finds a very specific <script> block AF_initDataCallback (for now) inside page body.
+            # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
             match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
-            if not match:
+            if not match: # If not found, get out. Might be somewhere else or maybe they are on to us.
                 break
 
             data_str = match.group(1)
             start = data_str.find('[')
             end = data_str.rfind(']') + 1
             json_str = data_str[start:end]
-
+            # Begin parsing string into nested Python list using json.loads.
+            # After, we pass the structure to find_jobs_array which digs through the lists to isolate the needed array of jobs.
             try:
                 parsed = json.loads(json_str)
             except json.JSONDecodeError as e:
                 print(f"⚠️  Google: JSON Decode Error on page {page}: {e}. The data model might have changed.")
-                break
+                break # Google might have changed something critical, break off
             except Exception as e:
                 print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
-                break
+                break # Unknown error, break off.
 
+            # Find_jobs_array is used for parsing undocumented string data from google careers
+            # This is a recursive search function that goes thru the deep nested python list parsed from JSON looking for a pattern
+            # 1. Check if isinstance(obj) > 0: Is the current object a list?
+            # 2. isinstance(obj[0], list) - Is the first item also a list? If so keep going
+            # 3. Does this inner list have at least one item? (len(obj[0]) > 0)
+            # 4. If it does have a item, does the item only have numbers? isinstance(obj[0][0], str) and isdigit()
+            # If signature matches, then assume we found the list of jobs and return obj. If not, go through current list and dig deeper with res = find_jobs_array(item)
+            # Google does not provide a clean nested JSON for us, instead we find the data in raw HTML (<script> tag)
+            # At the very least, if google changes something here, this array can find the path (within reason)
+            # This function makes the scrape as a whole more resilient.
             def find_jobs_array(obj):
                 if isinstance(obj, list):
                     if len(obj) > 0 and isinstance(obj[0], list) and len(obj[0]) > 0 and isinstance(obj[0][0], str) and obj[0][0].isdigit():
@@ -820,7 +835,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                 continue
 
             new_jobs = 0
-
+            # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
             for job in jobs_list:
                 try:
                     job_id = job[0]
@@ -838,17 +853,17 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                                 locations.append(loc[0])
 
                     location_str = " | ".join(locations) if locations else "Remote"
-
+                    # Posted date unix timestamp is extracted, we clean up the date into ISO 8601 and also strip HTML tags(br) from it.
                     posted_at = ""
                     if len(job) > 12 and isinstance(job[12], list) and len(job[12]) > 0:
                         ts = job[12][0]
                         if isinstance(ts, (int, float)):
-                            posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+                            posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat() # ISO 8601
 
-                    desc_html = ""
+                    desc_html = "" # Init blank text
                     if len(job) > 10 and isinstance(job[10], list) and len(job[10]) > 1:
                         desc_html = job[10][1] or ""
-
+                    # strip HTML from the text if any is found.
                     desc_text = re.sub(r'<[^>]+>', ' ', desc_html)
                     desc_text = re.sub(r'\s+', ' ', desc_text).strip()
                     description = desc_text[:500]
@@ -869,6 +884,8 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
                     print(f"⚠️  Google: Error parsing job data (ID: {job_id}): {e}")
             # If no new jobs were added at all, most likely hit the end of the unique pages
+            # Does current page = or exceed MAX_PAGES?
+            #If either is true, break the while loop and start looking at the next search term.
             if new_jobs == 0:
                 jobs_found_on_page = False
             else:
