@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 21:01:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 21:46:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer I, Community Growth at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8468673002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 17:27:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8468673002</guid>
+    </item>
     <item>
       <title>Data Scientist II - Identity and Access at Coinbase</title>
       <link>https://www.coinbase.com/careers/positions/6679661?gh_jid=6679661</link>
@@ -349,13 +356,6 @@
       <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5587665004</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer - Control Plane at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5587666004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5587666004</guid>
     </item>
   </channel>
 </rss>
