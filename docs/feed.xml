@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 21:46:40 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 22:06:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer I, Community Growth at Twitch</title>
@@ -261,13 +261,6 @@
     </item>
     <item>
       <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</link>
       <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
@@ -279,6 +272,13 @@
       <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</guid>
+    </item>
+    <item>
+      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
+      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</guid>
     </item>
     <item>
       <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
@@ -303,13 +303,6 @@
     </item>
     <item>
       <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</link>
-      <description>New grad role at ClickHouse in United Kingdom (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5767816004</link>
       <description>New grad role at ClickHouse in India (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
@@ -317,10 +310,10 @@
     </item>
     <item>
       <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</link>
+      <description>New grad role at ClickHouse in United Kingdom (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</guid>
     </item>
     <item>
       <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
@@ -330,11 +323,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755090004</guid>
     </item>
     <item>
-      <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</link>
+      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</link>
       <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</guid>
     </item>
     <item>
       <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
@@ -345,6 +338,13 @@
     </item>
     <item>
       <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</link>
+      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5584386004</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer - Billing Team at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5395374004</link>
       <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
@@ -352,10 +352,10 @@
     </item>
     <item>
       <title>Full Stack Software Engineer - Control Plane at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5587665004</link>
-      <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5587664004</link>
+      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5587665004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5587664004</guid>
     </item>
   </channel>
 </rss>
