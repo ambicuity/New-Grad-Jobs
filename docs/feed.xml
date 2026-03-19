@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 18:41:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 19:40:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Software Engineer, Product and AI at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
+      <description>New grad role at Gusto in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 15:19:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7590298</guid>
+    </item>
+    <item>
+      <title>Software Engineer, tvScientific at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 15:12:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
+    </item>
+    <item>
+      <title>Future Opportunities: Early Career Sales Talent at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7378983</link>
+      <description>New grad role at Gusto in United States - Atlanta, GA - Remote, United States - Chicago, IL - Remote, United States - Denver, CO, United States - Las Vegas, NV - Remote, United States - Phoenix, AZ - Remote. Category: Other</description>
+      <pubDate>Thu, 19 Mar 2026 14:56:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7378983</guid>
+    </item>
+    <item>
+      <title>Retirement Developer Infrastructure Engineer at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7615358</link>
+      <description>New grad role at Gusto in Denver, CO;San Francisco, CA;New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 19 Mar 2026 14:56:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7615358</guid>
+    </item>
     <item>
       <title>Air Operations Associate, Chennai at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7721147?gh_jid=7721147</link>
@@ -324,38 +352,10 @@
     </item>
     <item>
       <title>Data Scientist, Ads at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/6580815</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 19 Mar 2026 11:36:27 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/6580815</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Ads at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/7607124</link>
       <description>New grad role at Reddit in Remote - British Columbia, Canada. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 19 Mar 2026 11:36:27 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7607124</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Search and Answers at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/6534982</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 19 Mar 2026 11:36:27 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/6534982</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/6909093</link>
-      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 11:36:27 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/6909093</guid>
-    </item>
-    <item>
-      <title>Android Software Engineer, Ad Formats at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/7415003</link>
-      <description>New grad role at Reddit in Chicago, IL. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 11:36:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7415003</guid>
     </item>
   </channel>
 </rss>
