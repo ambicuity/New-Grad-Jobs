@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 16:44:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 17:48:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Lyft Business at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8326337002?gh_jid=8326337002</link>
+      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 13:36:38 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8326337002?gh_jid=8326337002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Financial Systems at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643080006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 13:11:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643080006</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Financial Systems at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4656378006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 19 Mar 2026 13:11:21 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4656378006</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8451384002</link>
+      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 19 Mar 2026 13:01:15 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8451384002</guid>
+    </item>
     <item>
       <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
@@ -177,10 +205,10 @@
     </item>
     <item>
       <title>Software Engineer - Database Integrations at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5765671004</link>
-      <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5765673004</link>
+      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5765671004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5765673004</guid>
     </item>
     <item>
       <title>Software Engineer - Database Integrations at ClickHouse</title>
@@ -191,10 +219,10 @@
     </item>
     <item>
       <title>Software Engineer - Database Integrations at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5765673004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5765671004</link>
+      <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5765673004</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5765671004</guid>
     </item>
     <item>
       <title>Data Scientist at Reddit</title>
@@ -328,34 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 11:34:12 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8468958002?gh_jid=8468958002</guid>
-    </item>
-    <item>
-      <title>Software Infrastructure Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8391128002?gh_jid=8391128002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 19 Mar 2026 11:24:10 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391128002?gh_jid=8391128002</guid>
-    </item>
-    <item>
-      <title>Kubernetes Platform Infrastructure Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8391130002?gh_jid=8391130002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 19 Mar 2026 11:23:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391130002?gh_jid=8391130002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Starlink Network  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8324397002?gh_jid=8324397002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 11:21:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8324397002?gh_jid=8324397002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, C++ (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8324395002?gh_jid=8324395002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 11:20:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8324395002?gh_jid=8324395002</guid>
     </item>
   </channel>
 </rss>
