@@ -740,6 +740,16 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
 }
 
     """
+    # Google Jobs array indices (as of March 19th, 2026)
+    # Init constants, these map to the positions in the undocumented JSON structure.
+    IDX_ID = 0
+    IDX_TITLE = 1
+    IDX_LINK = 2
+    IDX_COMPANY = 7
+    IDX_LOCATIONS = 9
+    IDX_DESCRIPTION = 10
+    IDX_DATE = 12
+
     MAX_PAGES = max_pages # Put an upper limit on the number of pages we return to avoid rate limits
     all_jobs = [] # init array to return store our results.
     seen_urls = set() # O(1) deduplication with a set, this will contain urls seen with mutliple searches. We want to avoid dupe jobs. This ensures final output is deduplicated.
@@ -838,31 +848,32 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
             # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
             for job in jobs_list:
                 try:
-                    job_id = job[0]
-                    title = job[1]
-                    link = job[2]
+                    job_id = job[IDX_ID]
+                    title = job[IDX_TITLE]
+                    link = job[IDX_LINK]
                     if not link:
                         link = f"https://www.google.com/about/careers/applications/jobs/results/{job_id}"
 
-                    company = job[7] if len(job) > 7 and job[7] else "Google"
+                    company = job[IDX_COMPANY] if len(job) > IDX_COMPANY and job[IDX_COMPANY] else "Google"
 
                     locations = []
-                    if len(job) > 9 and isinstance(job[9], list):
-                        for loc in job[9]:
+                    if len(job) > IDX_LOCATIONS and isinstance(job[IDX_LOCATIONS], list):
+                        for loc in job[IDX_LOCATIONS]:
                             if isinstance(loc, list) and len(loc) > 0:
                                 locations.append(loc[0])
 
                     location_str = " | ".join(locations) if locations else "Remote"
                     # Posted date unix timestamp is extracted, we clean up the date into ISO 8601 and also strip HTML tags(br) from it.
                     posted_at = ""
-                    if len(job) > 12 and isinstance(job[12], list) and len(job[12]) > 0:
-                        ts = job[12][0]
+                    if len(job) > IDX_DATE and isinstance(job[IDX_DATE], list) and len(job[IDX_DATE]) > 0:
+                        ts = job[IDX_DATE][0]
                         if isinstance(ts, (int, float)):
                             posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat() # ISO 8601
 
                     desc_html = "" # Init blank text
-                    if len(job) > 10 and isinstance(job[10], list) and len(job[10]) > 1:
-                        desc_html = job[10][1] or ""
+                    # Below is a bound check, ensure that index access is safe with len(job) before going to higher indices like 7,9,12.
+                    if len(job) > IDX_DESCRIPTION and isinstance(job[IDX_DESCRIPTION], list) and len(job[IDX_DESCRIPTION]) > 1:
+                        desc_html = job[IDX_DESCRIPTION][1] or ""
                     # strip HTML from the text if any is found.
                     desc_text = re.sub(r'<[^>]+>', ' ', desc_html)
                     desc_text = re.sub(r'\s+', ' ', desc_text).strip()
