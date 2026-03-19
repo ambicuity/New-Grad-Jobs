@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 12:09:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 13:46:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI Security Engineer at Amplitude</title>
@@ -100,17 +100,17 @@
     </item>
     <item>
       <title>Technical Sourcer, Infrastructure Engineering at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7630005?t=gh_src=&amp;gh_jid=7630005</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 18 Mar 2026 20:20:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7630005?t=gh_src=&amp;gh_jid=7630005</guid>
-    </item>
-    <item>
-      <title>Technical Sourcer, Infrastructure Engineering at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7630003?t=gh_src=&amp;gh_jid=7630003</link>
       <description>New grad role at Robinhood in Chicago, IL. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 18 Mar 2026 20:20:43 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7630003?t=gh_src=&amp;gh_jid=7630003</guid>
+    </item>
+    <item>
+      <title>Technical Sourcer, Infrastructure Engineering at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7630005?t=gh_src=&amp;gh_jid=7630005</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 18 Mar 2026 20:20:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7630005?t=gh_src=&amp;gh_jid=7630005</guid>
     </item>
     <item>
       <title>Software Engineer (Starshield) - Top Secret Clearance at SpaceX</title>
@@ -310,17 +310,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 18 Mar 2026 17:06:27 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Mapping at Waymo</title>
