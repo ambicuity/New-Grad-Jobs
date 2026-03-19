@@ -1,23 +1,19 @@
-# Test Improver Memory (Mar 26)
+# Test Improver Memory
 
-## Cmds
+## Commands
 - Test: `python -m pytest tests/ -q`
 - Lint: `flake8 <f> --select=E9,F63,F7,F82`
 
-## Cov (Main): 47% update_jobs, 42% total, 200 tests
+## Coverage
+Main: 47% update_jobs, 42% total, 175 tests
 
-## PRs: #151(enrich,49), #192(dedup,25), #195(sig,35), New(sort,25)
+## PRs
+#151(enrich,49), #192(dedup,25), #195(sig,35), #207(sort,25)
 
 ## Backlog
-1. ✅ dedup (192)
-2. ✅ signals (195)
-3. ✅ sort (today)
-4. generate_jobs_json
-5. filter_jobs
+1. ✅ dedup (192), signals (195), sort (207)
+2. generate_jobs_json
+3. filter_jobs
 
-## Note: sort timestamp 0→datetime.min (falsy)
-
-## Last: 23230516397 (18 05:29) T2,3,7
-
-
-
+## Last Run
+23281134137 (19-03 05:25) T4,7
