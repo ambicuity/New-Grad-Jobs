@@ -120,7 +120,6 @@ def test_fetch_google_jobs_success2() -> None:
         assert "Description 1" in results[0]['description']
         assert "2023-03-19" in results[0]['posted_at']
 
-
 def test_fetch_google_jobs_rate_limited() -> None:
     """Test that it handles rate limiting (403, 429) correctly."""
     with patch('update_jobs.limited_get') as mock_get:
@@ -155,3 +154,25 @@ def test_fetch_google_jobs_empty_results() -> None:
 
         results = fetch_google_jobs(["nonexistent job"], max_pages=1)
         assert len(results) == 0
+
+def test_fetch_google_jobs_regex_failure() -> None:
+    """Test behavior when regex fails to find the data script."""
+    mock_html = "<html><body>Some random HTML without the script tag</body></html>"
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock(status_code=200, text=mock_html)
+        mock_get.return_value = mock_response
+
+        results = fetch_google_jobs(["term"], max_pages=1)
+        assert len(results) == 0 # Would want zero to not muddy results.
+
+def test_fetch_google_jobs_invalid_json() -> None:
+    """Test handling of invalid JSON in the script tag."""
+    mock_html = "<script>AF_initDataCallback({key: 'ds:1', hash: '1', data: {invalid json} });</script>"
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock(status_code=200, text=mock_html)
+        mock_get.return_value = mock_response
+
+        results = fetch_google_jobs(["term"], max_pages=1)
+        assert len(results) == 0 # Invalid would mean wrong area maybe, would not want it to go further
