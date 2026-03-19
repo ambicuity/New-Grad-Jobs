@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-19T11:43:40.595273",
+    "last_updated": "2026-03-19T12:09:02.541732",
     "total_snapshots": 15,
     "date_range": {
       "start": "2026-03-05",
@@ -780,12 +780,12 @@
     },
     {
       "date": "2026-03-19",
-      "total_jobs": 941,
+      "total_jobs": 944,
       "categories": {},
       "tiers": {
-        "other": 317,
+        "other": 319,
         "unicorn": 493,
-        "faang_plus": 131
+        "faang_plus": 132
       },
       "top_companies": [
         {
@@ -829,9 +829,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 210,
-      "avg_jobs_per_company": 4.48,
-      "timestamp": "2026-03-19T11:43:40.594959"
+      "unique_companies": 211,
+      "avg_jobs_per_company": 4.47,
+      "timestamp": "2026-03-19T12:09:02.541508"
     }
   ]
 }
