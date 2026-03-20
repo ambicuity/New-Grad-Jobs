@@ -826,7 +826,10 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
             # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
             match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
             if not match: # If not found, get out. Might be somewhere else or maybe they are on to us.
-                break
+                print(
+                    f"⚠️  Google: AF_initDataCallback payload missing for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
+                ) # Hard Scrape failure, stop and get out.
+                return all_jobs
 
             data_str = match.group(1)
             start = data_str.find('[')
@@ -837,13 +840,15 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
             try:
                 parsed = json.loads(json_str)
             except json.JSONDecodeError as e:
-                print(f"⚠️  Google: JSON Decode Error on page {page}: {e}. The data model might have changed.")
-                break # Google might have changed something critical, break off
+                print(
+                    f"⚠️  Google: JSON decode error for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
+                ) # Hard Scrape failure, stop and get out.
+                return all_jobs
             except (IndexError, TypeError, ValueError) as e:
                 print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
                 return all_jobs # Unknown error, break off and no retry.
 
-            # Find_jobs_array is used for parsing undocumented string data from google careers
+            # Find_jobs_array is used for parsing undocumented string data from google careers using DFS to five into every nested list.
             # This is a recursive search function that goes thru the deep nested python list parsed from JSON looking for a pattern
             # 1. Check if isinstance(obj) > 0: Is the current object a list?
             # 2. isinstance(obj[0], list) - Is the first item also a list? If so keep going
@@ -866,8 +871,8 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
             print(f"DEBUG: Regex Match Found? {match is not None}")
             print(f"DEBUG: jobs_list Found? {jobs_list is not None}")
             if not jobs_list:
-                jobs_found_on_page = False
-                continue # If no match found, on to the next
+                jobs_found_on_page = False # If this is false, it means we might be on page=4, but if there are only 3 pages of jobs, we want to stop.
+                continue    # continue and on to the next search term in googles config. Both needed here to prevent a infinite loop
 
             new_jobs = 0
             # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
