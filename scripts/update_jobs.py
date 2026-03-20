@@ -822,7 +822,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                 break # Google might have changed something critical, break off
             except Exception as e:
                 print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
-                break # Unknown error, break off.
+                return all_jobs # Unknown error, break off and no retry.
 
             # Find_jobs_array is used for parsing undocumented string data from google careers
             # This is a recursive search function that goes thru the deep nested python list parsed from JSON looking for a pattern
@@ -897,9 +897,9 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                             "description": description
                         })
                         new_jobs += 1
-                except Exception as e:
+                except (IndexError, TypeError, ValueError) as e:
                     job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
-                    print(f"⚠️  Google: Error parsing job data (ID: {job_id}): {e}") # Print error for later ref
+                    print(f"  ⚠️  Google: Error parsing job data (ID: {job_id}): {e}") # Print error for later ref
             # If no new jobs were added at all, most likely hit the end of the unique pages
             # Does current page = or exceed MAX_PAGES?
             #If either is true, break the while loop and start looking at the next search term.

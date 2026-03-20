@@ -428,3 +428,21 @@ def test_fetch_google_jobs_404_fail_fast() -> None:
         results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=2)
         assert len(results) == 0
         assert mock_get.call_count == 1  # Should NOT retry on 404
+
+
+def test_fetch_google_jobs_parsing_error() -> None:
+    """Test that a malformed job entry (e.g. TypeError) is skipped but doesn't crash the loop."""
+    # First job is valid so find_jobs_array identifies the list correctly (it checks first element's ID)
+    valid_job = ["10001", "SWE", "https://url1", None, None, None, None, None, None, [["Loc"]], [None, "Desc"], None, [1679212800]]
+    # Second job is malformed (not subscriptable, causing TypeError)
+    malformed_job = 123  # Int is not subscriptable
+
+    html = create_mock_google_html([valid_job, malformed_job])
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_get.return_value = MagicMock(status_code=200, text=html)
+        results = fetch_google_jobs(["term"], max_pages=1)
+
+        # Should have 1 job (the valid one)
+        assert len(results) == 1
+        assert results[0]['url'] == "https://url1"
