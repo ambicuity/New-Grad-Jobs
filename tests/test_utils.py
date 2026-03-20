@@ -15,7 +15,7 @@ from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import get_job_key, fetch_google_jobs
+from update_jobs import get_job_key, fetch_google_jobs, DEFAULT_GOOGLE_MAX_PAGES, _coerce_positive_int
 
 def test_get_job_key_handles_nan()->None:
     """Test that get_job_key handles NaN values correctly."""
@@ -493,3 +493,65 @@ def test_fetch_google_jobs_hard_block_abort() -> None:
         # Should only have 1 call total (for term1), and then abort.
         assert mock_get.call_count == 1
         assert "term1" in mock_get.call_args_list[0][0][0]
+
+@pytest.mark.parametrize("value", [0, -1, "0", "abc", True, 3.5])
+def test_coerce_google_max_pages_rejects_invalid_values(value, capsys):
+    # This tests the underlying helper function with the Google-specific name
+    result = _coerce_positive_int(value, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES")
+    assert result == DEFAULT_GOOGLE_MAX_PAGES
+    assert "Invalid apis.google.MAX_PAGES" in capsys.readouterr().out
+
+
+def test_coerce_google_max_pages_accepts_positive_string_value(capsys):
+    assert _coerce_positive_int("5", DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES") == 5
+    assert capsys.readouterr().out == ""
+
+
+def test_main_coerces_google_max_pages():
+    """Mock main() to verify it correctly calls _coerce_positive_int for Google."""
+    from update_jobs import main
+
+    # Mock config that main() loads
+    mock_config = {
+        'worker_pools': {},
+        'apis': {
+            'google': {
+                'enabled': True,
+                'search_terms': ['test'],
+                'MAX_PAGES': 'invalid'
+            },
+            'workday': {'enabled': False},
+            'greenhouse': {'companies': []},
+            'lever': {'companies': []}
+        },
+        'filtering': {}
+    }
+
+    with (
+        patch('update_jobs.load_config', return_value=mock_config),
+        patch('update_jobs.ThreadPoolExecutor'),
+        patch('update_jobs._coerce_positive_int', side_effect=_coerce_positive_int) as mock_coerce,
+        patch('update_jobs.print'), # Silence prints
+        patch('update_jobs.save_market_history'), # Prevent docs/ impact
+        patch('update_jobs.predict_hiring_trends'),
+        patch('update_jobs.generate_jobs_json'),
+        patch('update_jobs.generate_readme'),
+        patch('update_jobs.generate_rss_feed'),
+        patch('update_jobs.generate_health_json'),
+        patch('update_jobs.check_job_url_health'),
+        patch('builtins.open', new_callable=MagicMock), # Prevent writing files
+        patch('os.makedirs'),
+    ):
+        # We need to catch SystemExit if main fails due to missing files (README etc)
+        # But we only care about the coercion call
+        try:
+            main()
+        except SystemExit:
+            pass
+
+    # Check if _coerce_positive_int was called for Google MAX_PAGES
+    # It might be called multiple times (for Workday too), so we check call args
+    google_call = next((call for call in mock_coerce.call_args_list if 'apis.google.MAX_PAGES' in call.args), None)
+    assert google_call is not None
+    assert google_call.args[0] == 'invalid'
+    assert google_call.args[1] == DEFAULT_GOOGLE_MAX_PAGES

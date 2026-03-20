@@ -53,6 +53,10 @@ DEFAULT_LEVER_MAX_WORKERS: int = 200
 DEFAULT_GOOGLE_MIN_WORKERS: int = 12
 DEFAULT_GOOGLE_MAX_WORKERS: int = 100
 
+# Default Google Careers HTML page parsing limit.
+DEFAULT_GOOGLE_MAX_PAGES: int = 3
+GOOGLE_MAX_PAGES: int = DEFAULT_GOOGLE_MAX_PAGES
+
 # Constants for fixed worker pools
 DEFAULT_JOBSPY_WORKERS: int = 25
 DEFAULT_ORCHESTRATOR_WORKERS: int = 20
@@ -720,25 +724,39 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
     return jobs
 
 def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers by scraping the search results as the API (v3) is not longer available. So we scrape HTML
-    This function takes a List of str, in this case URL from fetch_page and returns a dict of strs.
+    """Fetches job listings from Google Careers by scraping search results.
 
-    Args: List[str]
+    As the official Google Careers API (v3) is no longer available, this function
+    extracts job data by parsing the 'AF_initDataCallback' JSON payload embedded
+    within the site's HTML. It performs recursive searching within the
+    undocumented nested list structure to isolate job records.
 
-    Returns: List[Dict[str. Any]] as below:
-    {
-    'company': 'Company Name',
-    'title': 'Job Title',
-    'location': 'City, State',
-    'url': 'Direct URL',
-    'posted_at': 'Timestamp',
-    'source': 'Google Careers',
-    'description': 'Text Snippet'
-}
-    Raises: Idea is to return nothing if not up to snuff.
-    - Does return total number of jobs found, which would be zero or more.
-    - Does return google related error messages in the event of a error to help differ this error with others.
+    Args:
+        search_terms: A list of strings representing search queries
+            (e.g., ["software engineer", "devops"]).
+        max_pages: The maximum number of result pages to fetch per search term.
+            Defaults to 3.
+        max_retries: Number of times to retry a failed request using
+            exponential backoff. Defaults to 1.
+        timeout: Request timeout in seconds. Defaults to DEFAULT_TIMEOUT.
 
+    Returns:
+        A list of dictionaries, where each dictionary represents a job posting
+        with the following keys:
+            company (str): Name of the hiring company (e.g., 'Google').
+            title (str): The job position title.
+            location (str): Pipe-separated string of locations or 'Remote'.
+            url (str): The direct link to the job application page.
+            posted_at (str): ISO 8601 formatted UTC timestamp of the posting.
+            source (str): Always 'Google Careers'.
+            description (str): A plain-text snippet of the job description
+                (max 500 characters).
+
+    Raises:
+        This function does not explicitly raise exceptions; instead, it
+        logs errors to stdout and returns an empty list or the jobs collected
+        prior to the encounter of a critical failure (e.g., 403/429 rate
+        limiting or JSON structure changes).
     """
     # Google Jobs array indices (as of March 19th, 2026)
     # Init constants, these map to the index positions in the undocumented JSON structure found below.
@@ -2356,6 +2374,16 @@ def main():
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
     print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
 
+    # Load Google Careers limits from config.yml with validated fallbacks
+    global GOOGLE_MAX_PAGES
+    google_cfg = config.get('apis', {}).get('google', {})
+    GOOGLE_MAX_PAGES = _coerce_positive_int(
+        google_cfg.get('MAX_PAGES'),
+        DEFAULT_GOOGLE_MAX_PAGES,
+        'apis.google.MAX_PAGES',
+    )
+    print(f"     Google: max_pages={GOOGLE_MAX_PAGES}")
+
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
@@ -2399,7 +2427,7 @@ def main():
             futures['google'] = executor.submit(
                 fetch_google_jobs,
                 search_terms=config['apis']['google']['search_terms'],
-                max_pages=config['apis']['google'].get('MAX_PAGES', 3) # Get MAX_PAGES var from config.yml
+                max_pages=GOOGLE_MAX_PAGES
             )
 
         # Submit JobSpy fetch (already parallelized internally)
