@@ -157,15 +157,12 @@ def is_retryable_status(status_code: int) -> bool:
     Returns:
         True if the request should be retried, False otherwise.
     """
-    if status_code in NON_RETRYABLE_STATUS_CODES:
-        return False
     if status_code in RETRYABLE_STATUS_CODES:
         return True
-    if 400 <= status_code < 500:
+    if status_code in NON_RETRYABLE_STATUS_CODES:
         return False
-    if 500 <= status_code < 600:
-        return True
-    return False
+    # Default for unknown 5xx is retry, default for all others is no-retry.
+    return 500 <= status_code < 600
 
 
 def _coerce_positive_int(value: Any, default: int, name: str) -> int:
@@ -688,12 +685,11 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 if not is_retryable_status(e.response.status_code):
                     print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
                     break
-                if attempt < max_retries:
-                    print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
-                    continue
-                else:
-                    print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
-                    break
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
 
         except Exception as e:
             if attempt < max_retries:
@@ -747,12 +743,11 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 if not is_retryable_status(e.response.status_code):
                     print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
                     break
-                if attempt < max_retries:
-                    print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
-                    continue
-                else:
-                    print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
-                    break
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            else:
+                print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
         except Exception as e:
             if attempt < max_retries:
                 print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
