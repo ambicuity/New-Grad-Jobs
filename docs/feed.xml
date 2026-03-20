@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 12:31:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 13:47:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Backend (Consumer Engineering) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7615040003</link>
+      <description>New grad role at Affirm in Remote Spain. Category: Software Engineering</description>
+      <pubDate>Fri, 20 Mar 2026 09:02:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7615040003</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7702644</link>
@@ -349,13 +356,6 @@
       <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 19 Mar 2026 13:01:15 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8451384002</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</guid>
     </item>
   </channel>
 </rss>
