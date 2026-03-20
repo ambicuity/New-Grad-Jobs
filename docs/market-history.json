@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-20T18:40:18.217027",
+    "last_updated": "2026-03-20T19:31:05.465314",
     "total_snapshots": 16,
     "date_range": {
       "start": "2026-03-05",
@@ -835,12 +835,12 @@
     },
     {
       "date": "2026-03-20",
-      "total_jobs": 968,
+      "total_jobs": 961,
       "categories": {},
       "tiers": {
-        "unicorn": 482,
-        "other": 359,
-        "faang_plus": 127
+        "other": 352,
+        "unicorn": 480,
+        "faang_plus": 129
       },
       "top_companies": [
         {
@@ -861,18 +861,14 @@
         },
         {
           "company": "Accenture",
-          "jobs": 26
+          "jobs": 24
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 22
+          "jobs": 23
         },
         {
           "company": "Dropbox",
-          "jobs": 21
-        },
-        {
-          "company": "Boeing",
           "jobs": 21
         },
         {
@@ -882,11 +878,15 @@
         {
           "company": "Reddit",
           "jobs": 18
+        },
+        {
+          "company": "Boeing",
+          "jobs": 18
         }
       ],
-      "unique_companies": 209,
-      "avg_jobs_per_company": 4.63,
-      "timestamp": "2026-03-20T18:40:18.216770"
+      "unique_companies": 211,
+      "avg_jobs_per_company": 4.55,
+      "timestamp": "2026-03-20T19:31:05.465001"
     }
   ]
 }
