@@ -141,6 +141,29 @@ HTTP_SESSION = create_optimized_session()
 # Module-level lock for thread-safe counter updates in parallel fetchers
 _COUNTER_LOCK = threading.Lock()
 
+# HTTP status codes that should never be retried
+NON_RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 400, 401, 404, 405, 410, 451 })
+
+# HTTP status codes that should be retried
+RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 403, 408, 422, 429, 500, 502, 503, 504 })
+
+def is_retryable_status(status_code: int) -> bool:
+    """Classify an HTTP status code as retryable or not
+
+    Non-retryable statuses: 400, 401, 404, 405, 410, 451.
+    Retryable statuses: 403, 408, 422, 429, 500, 502, 503, 504.
+    Args:
+        status_code: The HTTP response status code.
+    Returns:
+        True if the request should be retried, False otherwise.
+    """
+    if status_code in RETRYABLE_STATUS_CODES:
+        return True
+    if status_code in NON_RETRYABLE_STATUS_CODES:
+        return False
+    # Default for unknown 5xx is retry, default for all others is no-retry.
+    return 500 <= status_code < 600
+
 
 def _coerce_positive_int(value: Any, default: int, name: str) -> int:
     """Parse a positive integer or fall back to the provided default."""
@@ -656,15 +679,18 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-        except requests.exceptions.RequestException as e:
-            if "404" in str(e):
-                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
-                break  # Don't retry 404s
-            elif attempt < max_retries:
+
+        except requests.exceptions.HTTPError as e:
+            if hasattr(e, 'response') and e.response is not None:
+                if not is_retryable_status(e.response.status_code):
+                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
+                    break
+            if attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
                 print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+
         except Exception as e:
             if attempt < max_retries:
                 print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
@@ -712,11 +738,12 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-        except requests.exceptions.RequestException as e:
-            if "404" in str(e):
-                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
-                break  # Don't retry 404s
-            elif attempt < max_retries:
+        except requests.exceptions.HTTPError as e:
+            if hasattr(e, 'response') and e.response is not None:
+                if not is_retryable_status(e.response.status_code):
+                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
+                    break
+            if attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
