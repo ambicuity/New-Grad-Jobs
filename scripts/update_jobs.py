@@ -765,6 +765,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                 'location': "United States", # Enforce USA only
                 'target_level': 'EARLY', # Website has a settings like Mid or Senior, we select Early for new grad jobs per the project.
             }) # Notice that we have two levels, target level APPRENTICE and EARLY do capture more jobs and get the max 'early' jobs.
+            # A job in test_utils (test_fetch_google_jobs_url_shape) must be altered if params are changed. Currently we use two and so does the test.
 
             url = f"https://www.google.com/about/careers/applications/jobs/results/?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
 

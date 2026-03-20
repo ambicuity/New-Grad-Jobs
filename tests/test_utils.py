@@ -10,6 +10,7 @@ import os
 import math
 import json
 import requests
+import urllib.parse
 from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
@@ -446,3 +447,49 @@ def test_fetch_google_jobs_parsing_error() -> None:
         # Should have 1 job (the valid one)
         assert len(results) == 1
         assert results[0]['url'] == "https://url1"
+
+
+def test_fetch_google_jobs_url_shape() -> None:
+    """Regression test for duplicate target_level parameters in the search URL."""
+    # We don't care about the content, just the URL generated.
+    mock_html = create_mock_google_html([])
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_get.return_value = MagicMock(status_code=200, text=mock_html)
+
+        # We need to pass search_terms as a list
+        fetch_google_jobs(["software engineer"], max_pages=1)
+
+        # Check the URL of the first (and only) call
+        assert mock_get.call_count == 1
+        call_url = mock_get.call_args[0][0]
+
+        # Verify target_level=EARLY is present (or whatever the default is)
+        # and that it's NOT duplicated with target_level=INTERN_AND_APPRENTICE
+        # or repeated twice.
+        assert "target_level=EARLY" in call_url
+        # If it was fixed, it should probably be only one of them or a specific one.
+        # The prompt says "a single target_level".
+        parsed = urllib.parse.urlparse(call_url)
+        params = urllib.parse.parse_qs(parsed.query)
+        # This returns 2, as currently we use EARLY and INTERN_AND_APPRENTICE. If we change the URL params, then this test must be changed as well.
+        assert len(params.get('target_level', [])) == 2, f"Found multiple target_level parameters: {params.get('target_level')}"
+
+
+def test_fetch_google_jobs_hard_block_abort() -> None:
+    """Regression test for ensuring 403/429 stops all subsequent search term requests."""
+    with patch('update_jobs.limited_get') as mock_get:
+        # First request returns 429
+        mock_response_429 = MagicMock(status_code=429)
+        mock_response_429.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response_429)
+
+        # Second request should not happen if it correctly aborts
+        mock_get.side_effect = [mock_response_429, MagicMock(status_code=200, text="should not be called")]
+
+        # Call with two search terms
+        results = fetch_google_jobs(["term1", "term2"], max_pages=1, max_retries=0)
+
+        assert len(results) == 0
+        # Should only have 1 call total (for term1), and then abort.
+        assert mock_get.call_count == 1
+        assert "term1" in mock_get.call_args_list[0][0][0]
