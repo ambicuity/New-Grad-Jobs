@@ -820,7 +820,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
             except json.JSONDecodeError as e:
                 print(f"⚠️  Google: JSON Decode Error on page {page}: {e}. The data model might have changed.")
                 break # Google might have changed something critical, break off
-            except Exception as e:
+            except (IndexError, TypeError, ValueError) as e:
                 print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
                 return all_jobs # Unknown error, break off and no retry.
 
