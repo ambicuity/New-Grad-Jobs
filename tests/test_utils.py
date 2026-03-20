@@ -413,3 +413,18 @@ def test_fetch_google_jobs_network_request_exception() -> None:
         mock_get.side_effect = requests.exceptions.RequestException("connection error")
         results = fetch_google_jobs(["term"], max_pages=1, max_retries=0)
         assert results == []
+
+
+def test_fetch_google_jobs_404_fail_fast() -> None:
+    """Test that it fails fast on 404 (breaks retry loop)."""
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_response = MagicMock()
+        mock_response.status_code = 404
+        # Configure the mock response and the HTTPError with the response object
+        mock_get.return_value = mock_response
+        mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
+
+        # max_retries=2 means it could try 3 times, but it should stop after 1
+        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=2)
+        assert len(results) == 0
+        assert mock_get.call_count == 1  # Should NOT retry on 404

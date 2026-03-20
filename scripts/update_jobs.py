@@ -722,22 +722,22 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers by scraping the search results as the API (v3) is not longer available. So we scrape HTML
     This function takes a List of str, in this case URL from fetch_page and returns a dict of strs.
-    I managed to match it to how the prev/other api functions return and it does return the normal format (see below)
-    The orginal API call has retrys and ties into the global retry system. I have left that off as each page we scrape is one more clue to google that we are scraping.
-    This adds up quickly. We want to be careful with google.
 
-    Input: List[str]
+    Args: List[str]
 
-    Output: List[Dict[str. Any]]
+    Returns: List[Dict[str. Any]] as below:
     {
     'company': 'Company Name',
     'title': 'Job Title',
     'location': 'City, State',
     'url': 'Direct URL',
     'posted_at': 'Timestamp',
-    'source': 'Greenhouse',
+    'source': 'Google Careers',
     'description': 'Text Snippet'
 }
+    Raises: Idea is to return nothing if not up to snuff.
+    - Does return total number of jobs found, which would be zero or more.
+    - Does return google related error messages in the event of a error to help differ this error with others.
 
     """
     # Google Jobs array indices (as of March 19th, 2026)
@@ -760,11 +760,11 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
 
         while jobs_found_on_page:
             params = urlencode({ # Build our URL using the below params, all get built into url var
-                'q': search_term,
+                'q': search_term, # search term would be our dict injected into the URL directly.
                 'hl': 'en', # Enforce english only
                 'location': "United States", # Enforce USA only
                 'target_level': 'EARLY', # Website has a settings like Mid or Senior, we select Early for new grad jobs per the project.
-            })
+            }) # Notice that we have two levels, target level APPRENTICE and EARLY do capture more jobs and get the max 'early' jobs.
 
             url = f"https://www.google.com/about/careers/applications/jobs/results/?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
 
@@ -780,25 +780,29 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     html = response.text
                     break
                 except requests.exceptions.HTTPError as e:
-                    print(f"  ⚠️  Google: HTTP Error {response.status_code} for {url}: {e}")
                     if response.status_code in (403, 429):
-                        print("  ⚠️  Google: Rate limited or blocked. Consider increasing delays or using a proxy.")
-                        break # Don't retry if rate limited this hard without delay, exit and hope
-                except requests.exceptions.Timeout as e:
-                    print(f"  ⚠️  Google: Timeout for {url}") # Timeout could be networking or other reasons.
+                        print(f"  ⚠️  Google: Rate limited or blocked (HTTP {response.status_code}). Aborting remaining Google Careers requests.")
+                        return all_jobs
+                    if response.status_code == 404:
+                        print(f"  ⚠️  Google: Endpoint not found (404) for {url}. Fail fast.")
+                        break
+                    print(f"  ⚠️  Google: HTTP Error {response.status_code} for {url}: {e}")
+                except requests.exceptions.ConnectionError as e:
+                    print(f"  ⚠️  Google: Connection error for {url}: {e}")
+                except requests.exceptions.Timeout:
+                    print(f"  ⚠️  Google: Timeout for {url}")
                 except requests.exceptions.RequestException as e:
                     print(f"  ⚠️  Google: Request error for {url}: {e}")
-                except Exception as e:
-                    print(f"  ⚠️  Google: Unexpected API response format: {url}: {e}")
+
                 # Set out back off, sleeping for a bit, then increasing before trying again.
                 if attempt < max_retries:
-                    sleep_time = 2.0 * (2 ** attempt)
-                    print(f"  ⚠️  Google: Retrying in {sleep_time} seconds...")
+                    sleep_time = 3.0 * (2 ** attempt)
+                    print(f"  ⚠️  Google: Retrying in {sleep_time} seconds (attempt {attempt + 1}/{max_retries})...")
                     time.sleep(sleep_time)
 
             if not html:
                 print(f"⚠️  Google: Failed to fetch {url} after {max_retries + 1} attempts.")
-                break # Stop, something is not right.
+                return all_jobs # Stop, something is not right.
             # This regex extraction in re.search finds a very specific <script> block AF_initDataCallback (for now) inside page body.
             # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
             match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
