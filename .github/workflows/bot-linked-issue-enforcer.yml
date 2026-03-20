@@ -23,6 +23,11 @@ jobs:
             const prNumber = pr.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const logCommentWarning = (action, error) => {
+              console.warn(
+                `Unable to ${action} PR comment (likely fork token restrictions): ${error.message}`
+              );
+            };
 
             // Maintainer and bot PRs are exempt (dependabot, automated scraper commits, etc.)
             const EXEMPT_USERS = ['ambicuity', 'dependabot[bot]', 'github-actions[bot]'];
@@ -46,9 +51,13 @@ jobs:
                 c.body.includes('does not link to an issue')
               );
               if (existing) {
-                await github.rest.issues.deleteComment({
-                  owner, repo, comment_id: existing.id
-                });
+                try {
+                  await github.rest.issues.deleteComment({
+                    owner, repo, comment_id: existing.id
+                  });
+                } catch (error) {
+                  logCommentWarning('delete', error);
+                }
               }
               return;
             }
@@ -82,14 +91,18 @@ jobs:
               c.body.includes('does not link to an issue')
             );
 
-            if (existing) {
-              await github.rest.issues.updateComment({
-                owner, repo, comment_id: existing.id, body: failureBody
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner, repo, issue_number: prNumber, body: failureBody
-              });
+            try {
+              if (existing) {
+                await github.rest.issues.updateComment({
+                  owner, repo, comment_id: existing.id, body: failureBody
+                });
+              } else {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: prNumber, body: failureBody
+                });
+              }
+            } catch (error) {
+              logCommentWarning('create or update', error);
             }
 
             core.setFailed('PR body must contain a linked issue reference (e.g. "Fixes #123").');

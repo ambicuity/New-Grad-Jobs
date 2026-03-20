@@ -1516,6 +1516,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
 
+    # Handle "X hours ago" or "X minutes ago" (resolve to today)
+    if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
+
     # Return original if no pattern matches
     return posted_at
 
@@ -2342,6 +2346,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
         os.makedirs(os.path.dirname(health_path), exist_ok=True)
         with open(health_path, 'w', encoding='utf-8') as f:
             json.dump(health, f, indent=2)
+            f.write('\n')
         print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
     except Exception as e:
         print(f"⚠️  Failed to write health.json: {e}")

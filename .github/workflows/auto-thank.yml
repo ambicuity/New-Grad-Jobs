@@ -170,6 +170,44 @@ jobs:
               console.log(`Adding @${author} for [${contributionTypes}] via all-contributors-cli...`);
               await exec.exec('npx', ['all-contributors-cli', 'add', author, contributionTypes]);
 
+              // Keep docs/contributors.json in sync with CONTRIBUTORS.md /.all-contributorsrc
+              // so the website contributors page updates in the same push.
+              const generatedAt = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+              const rc = JSON.parse(fs.readFileSync('.all-contributorsrc', 'utf-8'));
+              const contributorsPayload = {
+                projectName: rc.projectName || '',
+                projectOwner: rc.projectOwner || '',
+                contributors: rc.contributors || [],
+                generatedAt,
+              };
+              fs.writeFileSync(
+                'docs/contributors.json',
+                `${JSON.stringify(contributorsPayload, null, 2)}\n`,
+                'utf-8'
+              );
+
+              // Stage contributor artifacts. This handles all cases:
+              // - all-contributors-cli created a commit (only json may remain)
+              // - all-contributors-cli changed files without committing
+              await exec.exec('git', ['add', '.all-contributorsrc', 'CONTRIBUTORS.md', 'docs/contributors.json']);
+
+              let stagedChanges = false;
+              try {
+                await exec.exec('git', ['diff', '--cached', '--quiet']);
+              } catch (e) {
+                stagedChanges = true;
+              }
+
+              if (stagedChanges) {
+                await exec.exec('git', [
+                  'commit',
+                  '-m',
+                  `chore(contributors): sync hall of fame + site data for @${author} [skip ci]`
+                ]);
+              } else {
+                console.log('No staged contributor artifacts to commit.');
+              }
+
               // Push the commit made by all-contributors-cli to the base branch
               const baseRef = pr.base.ref;
               console.log(`Pushing changes to ${baseRef}...`);
