@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 09:50:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 10:29:09 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7702644</link>
+      <description>New grad role at Twilio in Remote - US. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 20 Mar 2026 06:07:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7702644</guid>
+    </item>
     <item>
       <title>AI Security Engineer at Tanium</title>
       <link>https://job-boards.greenhouse.io/tanium/jobs/7487567</link>
@@ -349,13 +356,6 @@
       <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
       <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Thu, 19 Mar 2026 12:31:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</guid>
     </item>
   </channel>
 </rss>
