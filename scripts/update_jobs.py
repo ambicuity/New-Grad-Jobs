@@ -2,7 +2,7 @@
 """
 New Grad Jobs Aggregator
 Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs
-and updates README.md and jobs.json
+and updates jobs.json and related docs/ artefacts
 
 Performance Optimizations:
 - Connection pooling with persistent sessions
@@ -2041,189 +2041,6 @@ def extract_sort_date(job: Dict[str, Any]) -> datetime:
     except Exception:
         return datetime.min
 
-def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
-    """Generate README content with job listings - SimplifyJobs style"""
-
-    # Sort jobs by posted date (most recent first)
-    jobs.sort(key=extract_sort_date, reverse=True)
-
-    # Calculate category counts
-    category_counts = {}
-    for job in jobs:
-        cat_id = job.get('category', {}).get('id', 'other')
-        category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
-
-    # Build README
-    readme_content = f"""# 🎓 2026 New Grad Positions
-
-[![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
-[![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
-[![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
-
-**Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
-
-🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
-
-🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
-
-> [!NOTE]
-> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
-> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
-> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
-
----
-
-## 📂 Browse {len(jobs)} Jobs by Category
-
-"""
-
-    # Add category links
-    for cat_id, cat_info in CATEGORY_PATTERNS.items():
-        count = category_counts.get(cat_id, 0)
-        if count > 0:
-            anchor = cat_info['name'].lower().replace(' ', '-').replace('&', '').replace('  ', '-')
-            readme_content += f"{cat_info['emoji']} [{cat_info['name']}](#{anchor}) ({count})\n\n"
-
-    readme_content += """---
-
-## 🚀 Legend
-
-| Icon | Meaning |
-|------|---------|
-| 🔥 | FAANG+ Company |
-| 🚀 | Unicorn Startup |
-| 🛂 | No Visa Sponsorship |
-| 🇺🇸 | US Citizenship Required |
-| 🔒 | Position Closed |
-
----
-
-"""
-
-    # Group jobs by category
-    jobs_by_category = {}
-    for job in jobs:
-        cat_id = job.get('category', {}).get('id', 'other')
-        if cat_id not in jobs_by_category:
-            jobs_by_category[cat_id] = []
-        jobs_by_category[cat_id].append(job)
-
-    # Generate tables for each category
-    for cat_id, cat_info in CATEGORY_PATTERNS.items():
-        cat_jobs = jobs_by_category.get(cat_id, [])
-        if not cat_jobs:
-            continue
-
-        readme_content += f"## {cat_info['emoji']} {cat_info['name']} New Grad Roles\n\n"
-        readme_content += "[Back to top](#-2026-new-grad-positions)\n\n"
-        readme_content += "| Company | Role | Location | Posted | Apply |\n"
-        readme_content += "|---------|------|----------|--------|-------|\n"
-
-        for job in cat_jobs:
-            company = job.get('company', 'Unknown')
-            title = job.get('title', 'Unknown')
-            location = job.get('location', 'Remote')
-            posted = format_posted_date(job.get('posted_at', ''))
-            url = job.get('url', '#')
-
-            # Add company tier emoji
-            tier_emoji = job.get('company_tier', {}).get('emoji', '')
-            if tier_emoji:
-                company = f"{tier_emoji} {company}"
-
-            # Add flags
-            flags = job.get('flags', {})
-            flag_str = ""
-            if flags.get('no_sponsorship'):
-                flag_str += " 🛂"
-            if flags.get('us_citizenship_required'):
-                flag_str += " 🇺🇸"
-            if job.get('is_closed'):
-                flag_str += " 🔒"
-
-            # Escape pipe characters
-            title = title.replace('|', '\\|')
-            location = location.replace('|', '\\|')
-
-            apply_link = f"[Apply]({url})" if url and url != '#' and not job.get('is_closed') else "🔒"
-
-            readme_content += f"| {company} | {title}{flag_str} | {location} | {posted} | {apply_link} |\n"
-
-        readme_content += "\n"
-
-    readme_content += f"""---
-
-## 📊 About This Repository
-
-This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
-
-### 🔌 Data Sources
-- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
-- **Search APIs**: Google Careers direct searches
-- **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
-- **Community Submissions**: User-submitted jobs via GitHub Issues
-
-### ⚡ Key Features
-- **Comprehensive Coverage**: 70+ companies across multiple platforms
-- **Real-time Updates**: Automatic updates every 5 minutes
-- **Smart Filtering**: Advanced filtering for new grad positions
-- **USA Focus**: Filters for US-based positions only
-- **Category Organization**: Jobs organized by role type
-- **Company Badges**: FAANG+ and unicorn companies highlighted
-
-### 🎯 Filtering Criteria
-- **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
-- **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
-- **Recency**: Jobs posted within the last {config.get('filtering', {}).get('max_age_days', 60)} days
-- **Location**: USA-based positions only
-
-### 🏢 Companies Monitored
-
-<details>
-<summary>Click to expand (70+ companies)</summary>
-
-**Greenhouse**: {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
-
-**Lever**: {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
-
-**Google Careers**: Direct API searches
-
-**JobSpy**: LinkedIn, Indeed, Glassdoor
-
-</details>
-
----
-
-### 🧪 Test Coverage
-
-<details>
-<summary>Click to view Codecov Sunburst Graph</summary>
-<br>
-<img src="https://codecov.io/github/ambicuity/New-Grad-Jobs/graphs/sunburst.svg?token=1D0TO5UL1T" alt="Codecov Sunburst Graph" />
-</details>
-
----
-
-## 🤝 Contributing
-
-Found a job we're missing? Want to report a closed position?
-
-1. [Submit a new job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml)
-2. [Report a closed job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=edit_role.yml)
-3. [Report a bug](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=bug_report.yml)
-
----
-
-⭐ **Star this repo** to stay updated with the latest new grad opportunities!
-
-*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}*
-"""
-
-    return readme_content
-
-
 def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
     """Generate an RSS 2.0 feed from the most recent jobs.
 
@@ -2359,7 +2176,7 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
 
 
 def main():
-    """Main function to scrape jobs and update README
+    """Main function to scrape jobs and update docs/ artefacts.
 
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
@@ -2557,19 +2374,6 @@ def main():
         print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
     except Exception as e:
         print(f"Error writing jobs.json: {e}")
-
-    # Generate README content
-    readme_content = generate_readme(enriched_jobs, config)
-
-    # Write to README file
-    readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
-    try:
-        with open(readme_path, 'w') as f:
-            f.write(readme_content)
-        print(f"README.md updated successfully with {len(enriched_jobs)} jobs")
-    except Exception as e:
-        print(f"Error writing README.md: {e}")
-        sys.exit(1)
 
     # ========== Generate RSS Feed ==========
     generate_rss_feed(enriched_jobs)
