@@ -27,7 +27,7 @@ from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 from typing import Any, Dict, List
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
 import requests
@@ -52,6 +52,10 @@ DEFAULT_LEVER_MIN_WORKERS: int = 15
 DEFAULT_LEVER_MAX_WORKERS: int = 200
 DEFAULT_GOOGLE_MIN_WORKERS: int = 12
 DEFAULT_GOOGLE_MAX_WORKERS: int = 100
+
+# Default Google Careers HTML page parsing limit.
+DEFAULT_GOOGLE_MAX_PAGES: int = 3
+GOOGLE_MAX_PAGES: int = DEFAULT_GOOGLE_MAX_PAGES
 
 # Constants for fixed worker pools
 DEFAULT_JOBSPY_WORKERS: int = 25
@@ -730,87 +734,231 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 
     return jobs
 
-def fetch_google_jobs(search_terms: List[str], max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetch jobs from Google Careers API with retry logic"""
-    all_jobs = []
+def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+    """Fetches job listings from Google Careers by scraping search results.
 
+    As the official Google Careers API (v3) is no longer available, this function
+    extracts job data by parsing the 'AF_initDataCallback' JSON payload embedded
+    within the site's HTML. It performs recursive searching within the
+    undocumented nested list structure to isolate job records.
+
+    Args:
+        search_terms: A list of strings representing search queries
+            (e.g., ["software engineer", "devops"]).
+        max_pages: The maximum number of result pages to fetch per search term.
+            Defaults to 3.
+        max_retries: Number of times to retry a failed request using
+            exponential backoff. Defaults to 1.
+        timeout: Request timeout in seconds. Defaults to DEFAULT_TIMEOUT.
+
+    Returns:
+        A list of dictionaries, where each dictionary represents a job posting
+        with the following keys:
+            company (str): Name of the hiring company (e.g., 'Google').
+            title (str): The job position title.
+            location (str): Pipe-separated string of locations or 'Remote'.
+            url (str): The direct link to the job application page.
+            posted_at (str): ISO 8601 formatted UTC timestamp of the posting.
+            source (str): Always 'Google Careers'.
+            description (str): A plain-text snippet of the job description
+                (max 500 characters).
+
+    Raises:
+        This function does not explicitly raise exceptions; instead, it
+        logs errors to stdout and returns an empty list or the jobs collected
+        prior to the encounter of a critical failure (e.g., 403/429 rate
+        limiting or JSON structure changes).
+    """
+    # Google Jobs array indices (as of March 19th, 2026)
+    # Init constants, these map to the index positions in the undocumented JSON structure found below.
+    IDX_ID = 0 # For example, would map to index = 0
+    IDX_TITLE = 1
+    IDX_LINK = 2
+    IDX_COMPANY = 7
+    IDX_LOCATIONS = 9
+    IDX_DESCRIPTION = 10
+    IDX_DATE = 12
+
+    MAX_PAGES = max_pages # Put an upper limit on the number of pages we return to avoid rate limits
+    all_jobs = [] # init array to return store our results.
+    seen_urls = set() # O(1) deduplication with a set, this will contain urls seen with mutliple searches. We want to avoid dupe jobs. This ensures final output is deduplicated.
+    # Gather search_term passed from config.yml like 'new grad software engineer'
     for search_term in search_terms:
-        jobs = []
-        for attempt in range(max_retries + 1):
-            try:
-                if attempt > 0:
-                    print(f"  🔄 Retry {attempt} for Google search '{search_term}'...")
-                    time.sleep(1)  # Wait before retry
+        page = 1 # This is appended to our URL below, Google enforces 20 results per page, so 2 pages = 40 jobs returned. This gets incremented to allow more results.
+        jobs_found_on_page = True
 
-                print(f"Searching Google careers for '{search_term}'...")
-                # Build the search URL with USA location filter
-                search_query = search_term.replace(' ', '%20')
-                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
-                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
-                # Update this URL when the new endpoint is confirmed.
-                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
+        while jobs_found_on_page:
+            params = urlencode({ # Build our URL using the below params, all get built into url var
+                'q': search_term, # search term would be our dict injected into the URL directly.
+                'hl': 'en', # Enforce english only
+                'location': "United States", # Enforce USA only
+                'target_level': 'EARLY', # Website has a settings like Mid or Senior, we select Early for new grad jobs per the project.
+            }) # Notice that we have two levels, target level APPRENTICE and EARLY do capture more jobs and get the max 'early' jobs.
+            # A job in test_utils (test_fetch_google_jobs_url_shape) must be altered if params are changed. Currently we use two and so does the test.
 
-                response = limited_get(url, timeout=timeout)
-                if response.status_code == 404:
-                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+            url = f"https://www.google.com/about/careers/applications/jobs/results/?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
+
+            html = ""
+            # Start Fetching the HTML with exponential backoff. Fetch is in a retry loop
+            # If a request times out or fails (500s) we sleep for longer and longer periods of time to avoid being throttled
+            # If 403 or 429 is returned, we stop immediately.
+            for attempt in range(max_retries + 1):
+                try:
+                    # Using limited_get which handles connection pooling, compression, and keeps sessions alive
+                    response = limited_get(url, timeout=timeout)
+                    response.raise_for_status()
+                    html = response.text
                     break
-                response.raise_for_status()
-                data = response.json()
+                except requests.exceptions.HTTPError as e:
+                    if response.status_code in (403, 429):
+                        print(f"  ⚠️  Google: Rate limited or blocked (HTTP {response.status_code}). Aborting remaining Google Careers requests.")
+                        return all_jobs
+                    if response.status_code == 404:
+                        print(f"  ⚠️  Google: Endpoint not found (404) for {url}. Fail fast.")
+                        break
+                    print(f"  ⚠️  Google: HTTP Error {response.status_code} for {url}: {e}")
+                except requests.exceptions.ConnectionError as e:
+                    print(f"  ⚠️  Google: Connection error for {url}: {e}")
+                except requests.exceptions.Timeout:
+                    print(f"  ⚠️  Google: Timeout for {url}")
+                except requests.exceptions.RequestException as e:
+                    print(f"  ⚠️  Google: Request error for {url}: {e}")
 
-                if not isinstance(data, dict) or 'jobs' not in data:
-                    print(f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
-                    continue
+                # Set out back off, sleeping for a bit, then increasing before trying again.
+                if attempt < max_retries:
+                    sleep_time = 3.0 * (2 ** attempt)
+                    print(f"  ⚠️  Google: Retrying in {sleep_time} seconds (attempt {attempt + 1}/{max_retries})...")
+                    time.sleep(sleep_time)
 
-                for job in data.get('jobs', []):
-                    # Extract location information from Google's format
-                    locations = job.get('locations', [])
-                    location_names = []
-                    for loc in locations:
-                        if loc.get('country_code') == 'US':  # Only USA locations
-                            display_name = loc.get('display', '')
-                            if display_name:
-                                location_names.append(display_name)
+            if not html:
+                print(f"⚠️  Google: Failed to fetch {url} after {max_retries + 1} attempts.")
+                return all_jobs # Stop, something is not right.
+            # This regex extraction in re.search finds a very specific <script> block AF_initDataCallback (for now) inside page body.
+            # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
+            match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
+            if not match: # If not found, get out. Might be somewhere else or maybe they are on to us.
+                print(
+                    f"⚠️  Google: AF_initDataCallback payload missing for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
+                ) # Hard Scrape failure, stop and get out.
+                return all_jobs
 
-                    if not location_names:  # Skip jobs without USA locations
+            data_str = match.group(1)
+            start = data_str.find('[')
+            end = data_str.rfind(']') + 1
+            json_str = data_str[start:end]
+            # Begin parsing string into nested Python list using json.loads.
+            # After, we pass the structure to find_jobs_array which digs through the lists to isolate the needed array of jobs.
+            try:
+                parsed = json.loads(json_str)
+            except json.JSONDecodeError as e:
+                print(
+                    f"⚠️  Google: JSON decode error for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
+                ) # Hard Scrape failure, stop and get out.
+                return all_jobs
+            except (IndexError, TypeError, ValueError) as e:
+                print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
+                return all_jobs # Unknown error, break off and no retry.
+
+            # Find_jobs_array is used for parsing undocumented string data from google careers using DFS to five into every nested list.
+            # This is a recursive search function that goes thru the deep nested python list parsed from JSON looking for a pattern
+            # 1. Check if isinstance(obj) > 0: Is the current object a list?
+            # 2. isinstance(obj[0], list) - Is the first item also a list? If so keep going
+            # 3. Does this inner list have at least one item? (len(obj[0]) > 0)
+            # 4. If it does have a item, does the item only have numbers? isinstance(obj[0][0], str) and isdigit()
+            # If signature matches, then assume we found the list of jobs and return obj. If not, go through current list and dig deeper with res = find_jobs_array(item)
+            # Google does not provide a clean nested JSON for us, instead we find the data in raw HTML (<script> tag)
+            # At the very least, if google changes something here, this array can find the path (within reason)
+            # This function makes the scrape as a whole more resilient.
+            def find_jobs_array(obj):
+                if isinstance(obj, list):
+                    if len(obj) > 0 and isinstance(obj[0], list) and len(obj[0]) > 0 and isinstance(obj[0][0], str) and obj[0][0].isdigit():
+                        return obj
+                    for item in obj:
+                        res = find_jobs_array(item)
+                        if res: return res
+                return None
+            # Use find_jobs array to try to find a regex match
+            jobs_list = find_jobs_array(parsed)
+            print(f"DEBUG: Regex Match Found? {match is not None}")
+            print(f"DEBUG: jobs_list Found? {jobs_list is not None}")
+            if not jobs_list:
+                jobs_found_on_page = False # If this is false, it means we might be on page=4, but if there are only 3 pages of jobs, we want to stop.
+                continue    # continue and on to the next search term in googles config. Both needed here to prevent a infinite loop
+
+            new_jobs = 0
+            # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
+            for job in jobs_list:
+                try:
+                    job_id = job[IDX_ID]
+                    title = job[IDX_TITLE]
+                    link = job[IDX_LINK]
+
+                    # Validate core fields before proceeding.
+                    # title and link must be non-empty strings to avoid downstream crashes in filter_jobs() or generate_readme().
+                    if not isinstance(title, str) or not title.strip():
                         continue
 
-                    location_str = '; '.join(location_names)
-                    description = job.get('description', '') or ''
+                    if not link:
+                        link = f"https://www.google.com/about/careers/applications/jobs/results/{job_id}"
 
-                    jobs.append({
-                        'company': 'Google',
-                        'title': job.get('title', ''),
-                        'location': location_str,
-                        'url': job.get('apply_url', ''),
-                        'posted_at': job.get('created') or job.get('publish_date'),
-                        'source': 'Google Careers',
-                        'description': description[:500] if description else ''
-                    })
+                    if not isinstance(link, str) or not link.strip():
+                        continue
 
-                print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
-                all_jobs.extend(jobs)
-                break  # Success, exit retry loop
+                    # Should be google only, but just in case. Google has other companies like waymo or Deep Mind.
+                    # Defaults to "Google" if the company field is missing, not a string, or empty.
+                    raw_company = job[IDX_COMPANY] if len(job) > IDX_COMPANY else None
+                    company = raw_company if isinstance(raw_company, str) and raw_company.strip() else "Google"
 
-            except requests.exceptions.Timeout:
-                if attempt < max_retries:
-                    print(f"  ⏱️  Google search '{search_term}' timed out, retrying...")
-                    continue
+                    locations = []
+                    if len(job) > IDX_LOCATIONS and isinstance(job[IDX_LOCATIONS], list):
+                        for loc in job[IDX_LOCATIONS]:
+                            if isinstance(loc, list) and len(loc) > 0:
+                                locations.append(loc[0])
+
+                    location_str = " | ".join(locations) if locations else "Remote"
+                    # Posted date unix timestamp is extracted, we clean up the date into ISO 8601 and also strip HTML tags(br) from it.
+                    posted_at = ""
+                    if len(job) > IDX_DATE and isinstance(job[IDX_DATE], list) and len(job[IDX_DATE]) > 0:
+                        ts = job[IDX_DATE][0]
+                        if isinstance(ts, (int, float)):
+                            posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat() # ISO 8601
+
+                    desc_html = "" # Init blank text
+                    # Below is a bound check, ensure that index access is safe with len(job) before going to higher indices like 7,9,12.
+                    if len(job) > IDX_DESCRIPTION and isinstance(job[IDX_DESCRIPTION], list) and len(job[IDX_DESCRIPTION]) > 1:
+                        desc_html = job[IDX_DESCRIPTION][1] or ""
+                    # strip HTML from the text if any is found.
+                    desc_text = re.sub(r'<[^>]+>', ' ', desc_html)
+                    desc_text = re.sub(r'\s+', ' ', desc_text).strip()
+                    description = desc_text[:500]
+                    # Deduplicate in O(1) using a set for faster processing.
+                    if link not in seen_urls:
+                        seen_urls.add(link)
+                        all_jobs.append({
+                            "company": company,
+                            "title": title,
+                            "location": location_str,
+                            "url": link,
+                            "posted_at": posted_at,
+                            "source": "Google Careers", # Single Source, should just be this unless they change it again.
+                            "description": description
+                        })
+                        new_jobs += 1
+                except (IndexError, TypeError, ValueError) as e:
+                    job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
+                    print(f"  ⚠️  Google: Error parsing job data (ID: {job_id}): {e}") # Print error for later ref
+            # If no new jobs were added at all, most likely hit the end of the unique pages
+            # Does current page = or exceed MAX_PAGES?
+            #If either is true, break the while loop and start looking at the next search term.
+            if new_jobs == 0:
+                jobs_found_on_page = False
+            else:
+                if page >= MAX_PAGES: # MAX_PAGES set above in order to limit any excessive GET requests
+                    jobs_found_on_page = False
                 else:
-                    print(f"  ❌ Google search '{search_term}' timed out after {max_retries + 1} attempts")
-            except requests.exceptions.RequestException as e:
-                if attempt < max_retries:
-                    print(f"  ⚠️  Request error for Google search '{search_term}': {e}, retrying...")
-                    continue
-                else:
-                    print(f"  ❌ Request error for Google search '{search_term}' after {max_retries + 1} attempts: {e}")
-            except Exception as e:
-                if attempt < max_retries:
-                    print(f"  ⚠️  Error fetching Google search '{search_term}': {e}, retrying...")
-                    continue
-                else:
-                    print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
-
-    return all_jobs
+                    page += 1 # +1 to add to the page URL rather than look for the next page link.
+    print("✓ Found Google Career Jobs returned: ", len(all_jobs)) # Print total number of jobs found for logs
+    return all_jobs # Return all jobs found
 
 
 def build_workday_api_url(host: str, site_path: str) -> str:
@@ -1271,95 +1419,6 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
-
-
-def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None) -> List[Dict[str, Any]]:
-    """Fetch Google Careers jobs in parallel for all search terms"""
-    all_jobs = []
-    total = len(search_terms)
-    completed = 0
-    errors = 0
-
-    # AUTO-SCALE: Use 5 workers per search term (they're fast API calls), min 12, max 100
-    if max_workers is None:
-        max_workers = min(DEFAULT_GOOGLE_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
-
-    print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
-
-    def fetch_single_term(search_term: str) -> List[Dict[str, Any]]:
-        """Fetch jobs for a single search term"""
-        jobs = []
-        max_retries = 2
-
-        for attempt in range(max_retries + 1):
-            try:
-                if attempt > 0:
-                    time.sleep(1)
-
-                search_query = search_term.replace(' ', '%20')
-                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
-                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
-                # Update this URL when the new endpoint is confirmed.
-                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
-
-                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
-                if response.status_code == 404:
-                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
-                    break
-                response.raise_for_status()
-                data = response.json()
-
-                if not isinstance(data, dict) or 'jobs' not in data:
-                    continue
-
-                for job in data.get('jobs', []):
-                    locations = job.get('locations', [])
-                    location_names = []
-                    for loc in locations:
-                        if loc.get('country_code') == 'US':
-                            display_name = loc.get('display', '')
-                            if display_name:
-                                location_names.append(display_name)
-
-                    if not location_names:
-                        continue
-
-                    location_str = '; '.join(location_names)
-                    description = job.get('description', '') or ''
-
-                    jobs.append({
-                        'company': 'Google',
-                        'title': job.get('title', ''),
-                        'location': location_str,
-                        'url': job.get('apply_url', ''),
-                        'posted_at': job.get('created') or job.get('publish_date'),
-                        'source': 'Google Careers',
-                        'description': description[:500] if description else ''
-                    })
-
-                print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
-                break
-
-            except Exception as e:
-                if attempt >= max_retries:
-                    print(f"  ❌ Google '{search_term}': {str(e)[:50]}")
-
-        return jobs
-
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_term = {executor.submit(fetch_single_term, term): term for term in search_terms}
-
-        for future in as_completed(future_to_term):
-            completed += 1
-            try:
-                jobs = future.result()
-                all_jobs.extend(jobs)
-            except Exception as e:
-                errors += 1
-
-    print(f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
-    return all_jobs
-
 
 def get_job_key(job: Dict[str, Any]) -> str:
     """Generate unique key for job deduplication
@@ -2411,6 +2470,16 @@ def main():
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
     print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
 
+    # Load Google Careers limits from config.yml with validated fallbacks
+    global GOOGLE_MAX_PAGES
+    google_cfg = config.get('apis', {}).get('google', {})
+    GOOGLE_MAX_PAGES = _coerce_positive_int(
+        google_cfg.get('MAX_PAGES'),
+        DEFAULT_GOOGLE_MAX_PAGES,
+        'apis.google.MAX_PAGES',
+    )
+    print(f"     Google: max_pages={GOOGLE_MAX_PAGES}")
+
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
@@ -2450,12 +2519,11 @@ def main():
             )
 
         # Submit Google parallel fetch (P5: gated on enabled flag)
-        if ('google' in config['apis']
-                and config['apis']['google'].get('enabled', True)
-                and config['apis']['google'].get('search_terms')):
+        if 'google' in config['apis'] and config['apis']['google'].get('enabled') and config['apis']['google'].get('search_terms'):
             futures['google'] = executor.submit(
-                fetch_google_jobs_parallel,
-                config['apis']['google']['search_terms']
+                fetch_google_jobs,
+                search_terms=config['apis']['google']['search_terms'],
+                max_pages=GOOGLE_MAX_PAGES
             )
 
         # Submit JobSpy fetch (already parallelized internally)
