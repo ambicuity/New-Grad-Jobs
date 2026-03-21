@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-21T21:03:50.355210",
+    "last_updated": "2026-03-21T21:39:53.067471",
     "total_snapshots": 17,
     "date_range": {
       "start": "2026-03-05",
@@ -890,11 +890,11 @@
     },
     {
       "date": "2026-03-21",
-      "total_jobs": 946,
+      "total_jobs": 968,
       "categories": {},
       "tiers": {
         "unicorn": 469,
-        "other": 342,
+        "other": 364,
         "faang_plus": 135
       },
       "top_companies": [
@@ -931,17 +931,17 @@
           "jobs": 19
         },
         {
-          "company": "Reddit",
-          "jobs": 18
+          "company": "California State University",
+          "jobs": 19
         },
         {
-          "company": "MongoDB",
-          "jobs": 17
+          "company": "Reddit",
+          "jobs": 18
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.55,
-      "timestamp": "2026-03-21T21:03:50.354959"
+      "unique_companies": 210,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-03-21T21:39:53.067165"
     }
   ]
 }
