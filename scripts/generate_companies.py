@@ -3,6 +3,9 @@
 Generate company entries to scale to 10,000 companies.
 Creates large batches of company entries for config.yml.
 """
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 def generate_greenhouse_companies(count=4000, start_id=1):
     """Generate Greenhouse company entries"""
@@ -136,20 +139,20 @@ def format_yaml_companies(companies, api_type="greenhouse"):
     return "\n".join(lines)
 
 if __name__ == "__main__":
-    print("Generating 10K company configuration...")
-    print(f"\nGenerating 4,000 Greenhouse companies...")
+    logging.info("Generating 10K company configuration...")
+    logging.info("\nGenerating 4,000 Greenhouse companies...")
     gh_companies = generate_greenhouse_companies(4000)
-    print(f"Generated {len(gh_companies)} Greenhouse companies")
+    logging.info(f"Generated {len(gh_companies)} Greenhouse companies")
 
-    print(f"\nGenerating 1,900 Lever companies...")
+    logging.info("\nGenerating 1,900 Lever companies...")
     lever_companies = generate_lever_companies(1900)
-    print(f"Generated {len(lever_companies)} Lever companies")
+    logging.info(f"Generated {len(lever_companies)} Lever companies")
 
-    print(f"\nGenerating 1,300 Workday companies...")
+    logging.info("\nGenerating 1,300 Workday companies...")
     wd_companies = generate_workday_companies(1300)
-    print(f"Generated {len(wd_companies)} Workday companies")
+    logging.info(f"Generated {len(wd_companies)} Workday companies")
 
-    print(f"\nTotal generated: {len(gh_companies) + len(lever_companies) + len(wd_companies)}")
+    logging.info(f"\nTotal generated: {len(gh_companies) + len(lever_companies) + len(wd_companies)}")
 
     # Write to files
     with open("greenhouse_batch.txt", "w") as f:
@@ -161,7 +164,7 @@ if __name__ == "__main__":
     with open("workday_batch.txt", "w") as f:
         f.write(format_yaml_companies(wd_companies, "workday"))
 
-    print("\n✅ Generated batch files:")
-    print("   - greenhouse_batch.txt")
-    print("   - lever_batch.txt")
-    print("   - workday_batch.txt")
+    logging.info("\n✅ Generated batch files:")
+    logging.info("   - greenhouse_batch.txt")
+    logging.info("   - lever_batch.txt")
+    logging.info("   - workday_batch.txt")
