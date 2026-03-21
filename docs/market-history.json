@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-21T21:59:14.925283",
+    "last_updated": "2026-03-21T22:33:05.809403",
     "total_snapshots": 17,
     "date_range": {
       "start": "2026-03-05",
@@ -890,12 +890,12 @@
     },
     {
       "date": "2026-03-21",
-      "total_jobs": 969,
+      "total_jobs": 978,
       "categories": {},
       "tiers": {
         "unicorn": 469,
-        "other": 365,
-        "faang_plus": 135
+        "other": 373,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -919,11 +919,11 @@
           "jobs": 26
         },
         {
-          "company": "Dropbox",
-          "jobs": 21
+          "company": "Boeing",
+          "jobs": 22
         },
         {
-          "company": "Boeing",
+          "company": "Dropbox",
           "jobs": 21
         },
         {
@@ -931,17 +931,17 @@
           "jobs": 19
         },
         {
-          "company": "California State University",
+          "company": "Accenture",
           "jobs": 19
         },
         {
-          "company": "Reddit",
-          "jobs": 18
+          "company": "California State University",
+          "jobs": 19
         }
       ],
-      "unique_companies": 211,
-      "avg_jobs_per_company": 4.59,
-      "timestamp": "2026-03-21T21:59:14.925014"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.57,
+      "timestamp": "2026-03-21T22:33:05.809165"
     }
   ]
 }
