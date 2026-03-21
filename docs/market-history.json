@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-21T11:37:51.594213",
+    "last_updated": "2026-03-21T11:57:27.266232",
     "total_snapshots": 17,
     "date_range": {
       "start": "2026-03-05",
@@ -890,11 +890,11 @@
     },
     {
       "date": "2026-03-21",
-      "total_jobs": 962,
+      "total_jobs": 963,
       "categories": {},
       "tiers": {
         "unicorn": 469,
-        "other": 360,
+        "other": 361,
         "faang_plus": 133
       },
       "top_companies": [
@@ -931,17 +931,17 @@
           "jobs": 19
         },
         {
-          "company": "Accenture",
-          "jobs": 19
-        },
-        {
           "company": "Reddit",
           "jobs": 18
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 17
         }
       ],
-      "unique_companies": 212,
-      "avg_jobs_per_company": 4.54,
-      "timestamp": "2026-03-21T11:37:51.593947"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.52,
+      "timestamp": "2026-03-21T11:57:27.265972"
     }
   ]
 }
