@@ -449,6 +449,52 @@ def test_fetch_google_jobs_parsing_error() -> None:
         assert results[0]['url'] == "https://url1"
 
 
+def test_fetch_google_jobs_invalid_field_types() -> None:
+    """Test that jobs with invalid type for title, company or link are handled safely.
+
+    This verifies the fix for the code review note regarding undocumented array types.
+    """
+    # 1. Valid job
+    job_valid = ["1", "SWE", "https://url1", None, None, None, None, "Google", None, [["Loc"]], [None, "Desc"]]
+    # 2. Invalid title (None) -> should be skipped
+    job_none_title = ["2", None, "https://url2", None, None, None, None, "Google"]
+    # 3. Invalid title (Int) -> should be skipped
+    job_int_title = ["3", 123, "https://url3", None, None, None, None, "Google"]
+    # 4. Invalid link (Int) -> should be skipped
+    job_int_link = ["4", "SWE", 456, None, None, None, None, "Google"]
+    # 5. Invalid company (Int) -> should default to "Google"
+    job_int_company = ["5", "SWE", "https://url5", None, None, None, None, 789]
+    # 6. Empty title string -> should be skipped
+    job_empty_title = ["6", "  ", "https://url6", None, None, None, None, "Google"]
+
+    mock_jobs = [job_valid, job_none_title, job_int_title, job_int_link, job_int_company, job_empty_title]
+    html = create_mock_google_html(mock_jobs)
+
+    with patch('update_jobs.limited_get') as mock_get:
+        mock_get.return_value = MagicMock(status_code=200, text=html)
+        results = fetch_google_jobs(["term"], max_pages=1)
+
+        # Expected:
+        # - job_valid: OK
+        # - job_none_title: skipped
+        # - job_int_title: skipped
+        # - job_int_link: skipped
+        # - job_int_company: OK (company defaults to "Google")
+        # - job_empty_title: skipped
+
+        assert len(results) == 2
+
+        # Verify job_valid
+        assert results[0]['title'] == "SWE"
+        assert results[0]['url'] == "https://url1"
+        assert results[0]['company'] == "Google"
+
+        # Verify job_int_company
+        assert results[1]['title'] == "SWE"
+        assert results[1]['url'] == "https://url5"
+        assert results[1]['company'] == "Google" # Coerced from 789 to "Google"
+
+
 def test_fetch_google_jobs_url_shape() -> None:
     """Regression test for duplicate target_level parameters in the search URL."""
     # We don't care about the content, just the URL generated.

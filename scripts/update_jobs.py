@@ -881,10 +881,22 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     job_id = job[IDX_ID]
                     title = job[IDX_TITLE]
                     link = job[IDX_LINK]
+
+                    # Validate core fields before proceeding.
+                    # title and link must be non-empty strings to avoid downstream crashes in filter_jobs() or generate_readme().
+                    if not isinstance(title, str) or not title.strip():
+                        continue
+
                     if not link:
                         link = f"https://www.google.com/about/careers/applications/jobs/results/{job_id}"
-                    # Should be google only, but just in case. Google has other companies like waymo or Deep Mind, both would be for mid and above engineers.
-                    company = job[IDX_COMPANY] if len(job) > IDX_COMPANY and job[IDX_COMPANY] else "Google"
+
+                    if not isinstance(link, str) or not link.strip():
+                        continue
+
+                    # Should be google only, but just in case. Google has other companies like waymo or Deep Mind.
+                    # Defaults to "Google" if the company field is missing, not a string, or empty.
+                    raw_company = job[IDX_COMPANY] if len(job) > IDX_COMPANY else None
+                    company = raw_company if isinstance(raw_company, str) and raw_company.strip() else "Google"
 
                     locations = []
                     if len(job) > IDX_LOCATIONS and isinstance(job[IDX_LOCATIONS], list):
