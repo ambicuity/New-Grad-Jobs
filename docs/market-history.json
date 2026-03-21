@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-21T22:59:10.042005",
+    "last_updated": "2026-03-21T23:32:24.733634",
     "total_snapshots": 17,
     "date_range": {
       "start": "2026-03-05",
@@ -890,11 +890,11 @@
     },
     {
       "date": "2026-03-21",
-      "total_jobs": 974,
+      "total_jobs": 963,
       "categories": {},
       "tiers": {
         "unicorn": 469,
-        "other": 371,
+        "other": 360,
         "faang_plus": 134
       },
       "top_companies": [
@@ -931,17 +931,17 @@
           "jobs": 19
         },
         {
-          "company": "Accenture",
-          "jobs": 19
+          "company": "Reddit",
+          "jobs": 18
         },
         {
-          "company": "California State University, Los Angeles",
-          "jobs": 19
+          "company": "MongoDB",
+          "jobs": 17
         }
       ],
       "unique_companies": 208,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-03-21T22:59:10.041729"
+      "avg_jobs_per_company": 4.63,
+      "timestamp": "2026-03-21T23:32:24.733339"
     }
   ]
 }
