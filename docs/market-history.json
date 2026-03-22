@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-22T08:53:15.852421",
+    "last_updated": "2026-03-22T09:24:16.238006",
     "total_snapshots": 18,
     "date_range": {
       "start": "2026-03-05",
@@ -990,13 +990,13 @@
           "jobs": 18
         },
         {
-          "company": "Walmart",
-          "jobs": 18
+          "company": "MongoDB",
+          "jobs": 17
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.66,
-      "timestamp": "2026-03-22T08:53:15.852088"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.64,
+      "timestamp": "2026-03-22T09:24:16.237693"
     }
   ]
 }
