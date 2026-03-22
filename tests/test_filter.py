@@ -170,6 +170,9 @@ class TestHasNewGradSignal:
     def test_whitespace_title(self):
         assert not has_new_grad_signal(" ", ["New Grad"])
 
+    def test_none_title(self):
+        assert not has_new_grad_signal(None, ["New Grad"])
+
     def test_nan_title(self):
         assert not has_new_grad_signal(float('nan'), ["New Grad"])
 
