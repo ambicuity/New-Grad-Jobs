@@ -35,12 +35,14 @@ import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
+
 try:
     from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
 except ModuleNotFoundError:
     # Supports import-by-path CI checks that load `scripts/update_jobs.py`
     # without first adding `scripts/` to sys.path.
     from scripts.source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
+
 from urllib3.util.retry import Retry
 
 # Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
