@@ -10,15 +10,15 @@ VENV_PIP := $(VENV)/bin/$(PIP)
 help: ## Show this help menu
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
-setup: ## First-time setup: creates virtualenv, installs all requirements (prod, test), and configures pre-commit
+setup: ## First-time setup: creates virtualenv, installs all requirements (prod + dev/test), and configures pre-commit
 	@echo "=> Creating Python virtual environment..."
 	$(PYTHON) -m venv $(VENV)
 	@echo "=> Upgrading pip..."
 	$(VENV_PIP) install --upgrade pip
 	@echo "=> Installing project dependencies..."
 	$(VENV_PIP) install -r requirements.txt
-	@echo "=> Installing test dependencies..."
-	$(VENV_PIP) install -r tests/requirements.txt
+	@echo "=> Installing dev/test dependencies..."
+	$(VENV_PIP) install -e ".[dev]"
 	@echo "=> Installing pre-commit hooks..."
 	$(VENV_PYTHON) -m pre_commit install
 	@echo "=> (Optional) Installing Playwright browsers..."

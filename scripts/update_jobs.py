@@ -2,7 +2,8 @@
 """
 New Grad Jobs Aggregator
 Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs
-and updates README.md and jobs.json
+and updates docs/jobs.json and related metadata files.
+Note: README.md generation is intentionally not staged by this script.
 
 Performance Optimizations:
 - Connection pooling with persistent sessions
@@ -140,6 +141,29 @@ HTTP_SESSION = create_optimized_session()
 
 # Module-level lock for thread-safe counter updates in parallel fetchers
 _COUNTER_LOCK = threading.Lock()
+
+# HTTP status codes that should never be retried
+NON_RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 400, 401, 404, 405, 410, 451 })
+
+# HTTP status codes that should be retried
+RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 403, 408, 422, 429, 500, 502, 503, 504 })
+
+def is_retryable_status(status_code: int) -> bool:
+    """Classify an HTTP status code as retryable or not
+
+    Non-retryable statuses: 400, 401, 404, 405, 410, 451.
+    Retryable statuses: 403, 408, 422, 429, 500, 502, 503, 504.
+    Args:
+        status_code: The HTTP response status code.
+    Returns:
+        True if the request should be retried, False otherwise.
+    """
+    if status_code in RETRYABLE_STATUS_CODES:
+        return True
+    if status_code in NON_RETRYABLE_STATUS_CODES:
+        return False
+    # Default for unknown 5xx is retry, default for all others is no-retry.
+    return 500 <= status_code < 600
 
 
 def _coerce_positive_int(value: Any, default: int, name: str) -> int:
@@ -656,15 +680,18 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-        except requests.exceptions.RequestException as e:
-            if "404" in str(e):
-                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
-                break  # Don't retry 404s
-            elif attempt < max_retries:
+
+        except requests.exceptions.HTTPError as e:
+            if hasattr(e, 'response') and e.response is not None:
+                if not is_retryable_status(e.response.status_code):
+                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
+                    break
+            if attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
                 print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+
         except Exception as e:
             if attempt < max_retries:
                 print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
@@ -712,11 +739,12 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-        except requests.exceptions.RequestException as e:
-            if "404" in str(e):
-                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
-                break  # Don't retry 404s
-            elif attempt < max_retries:
+        except requests.exceptions.HTTPError as e:
+            if hasattr(e, 'response') and e.response is not None:
+                if not is_retryable_status(e.response.status_code):
+                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
+                    break
+            if attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
@@ -1517,6 +1545,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     if days_plus_match:
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+
+    # Handle "X hours ago" or "X minutes ago" (resolve to today)
+    if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
@@ -2344,6 +2376,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
         os.makedirs(os.path.dirname(health_path), exist_ok=True)
         with open(health_path, 'w', encoding='utf-8') as f:
             json.dump(health, f, indent=2)
+            f.write('\n')
         print(f"🩺 Health report: status={status}, total_jobs={total_jobs}")
     except Exception as e:
         print(f"⚠️  Failed to write health.json: {e}")
@@ -2388,7 +2421,11 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
 
 
 def main():
-    """Main function to scrape jobs and update README
+    """Scrape job listings and write pipeline artifacts to docs/.
+
+    Side effects:
+    - Writes docs/jobs.json, docs/market-history.json, docs/health.json, docs/feed.xml
+    - README.md is intentionally NOT written here; use a dedicated workflow if needed
 
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
@@ -2587,18 +2624,12 @@ def main():
     except Exception as e:
         print(f"Error writing jobs.json: {e}")
 
-    # Generate README content
-    readme_content = generate_readme(enriched_jobs, config)
-
-    # Write to README file
-    readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
-    try:
-        with open(readme_path, 'w') as f:
-            f.write(readme_content)
-        print(f"README.md updated successfully with {len(enriched_jobs)} jobs")
-    except Exception as e:
-        print(f"Error writing README.md: {e}")
-        sys.exit(1)
+    # README generation is intentionally skipped here.
+    # README.md is no longer auto-generated by this script.
+    # It can be regenerated via a dedicated workflow or edited/maintained manually.
+    # See: .github/workflows/pipeline-integrity.yml for the staging contract.
+    # See: issue #156 for the decision record.
+    print("Skipping README.md generation (not part of update-jobs staging contract)")
 
     # ========== Generate RSS Feed ==========
     generate_rss_feed(enriched_jobs)
