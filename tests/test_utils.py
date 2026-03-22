@@ -592,8 +592,9 @@ def test_main_coerces_google_max_pages():
         # But we only care about the coercion call
         try:
             main()
-        except SystemExit:
-            pass
+        except SystemExit as exc:
+            # main() can exit in this mocked flow; we only care that coercion was invoked.
+            assert exc.code in (None, 0, 1)
 
     # Check if _coerce_positive_int was called for Google MAX_PAGES
     # It might be called multiple times (for Workday too), so we check call args
