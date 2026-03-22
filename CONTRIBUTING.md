@@ -94,7 +94,7 @@ make setup
 
 The `make setup` command automatically:
 1. Creates a Python virtual environment (`.venv`).
-2. Installs all project and testing dependencies.
+2. Installs runtime dependencies from `requirements.txt` and dev/test tooling from `pyproject.toml` (`.[dev]`, including `pytest` and `pytest-cov`).
 3. Configures `pre-commit` hooks to run on every commit.
 
 *(Alternatively, if you use DevContainers, just open this repository in VS Code and click "Reopen in Container". Everything is pre-configured!)*
