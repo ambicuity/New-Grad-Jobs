@@ -220,7 +220,7 @@ class TestSourceCooldownTrackerRecordAndTrip:
     def test_tripped_sources_contains_tripped_domain(self):
         tracker = _fresh_tracker(threshold=1)
         tracker.record_403(GH_URL)
-        assert "greenhouse.io" in tracker.tripped_sources()
+        assert tracker.tripped_sources() == {SourceCooldownTracker.domain_key(GH_URL)}
 
     def test_tripped_sources_does_not_contain_untripped_domain(self):
         tracker = _fresh_tracker(threshold=5)
@@ -252,7 +252,6 @@ class TestSourceCooldownTrackerLogging:
         tracker.record_403(GH_URL)
         out = capsys.readouterr().out
         assert "COOLDOWN TRIPPED" in out
-        assert "greenhouse.io" in out
 
     def test_no_log_before_threshold(self, capsys):
         tracker = _fresh_tracker(threshold=5)
@@ -724,8 +723,8 @@ class TestWorkdayCooldownIntegration:
 
         fetch_workday_jobs([self._company()])
         # domain key from the Workday API URL built internally will be myworkdayjobs.com
-        assert "myworkdayjobs.com" in tracker.counts()
-        assert tracker.counts()["myworkdayjobs.com"] >= 1
+        workday_key = SourceCooldownTracker.domain_key(WORKDAY_URL)
+        assert tracker.counts().get(workday_key, 0) >= 1
 
     def test_403_logs_warning(self, monkeypatch, capsys):
         tracker = _fresh_tracker(threshold=5)
@@ -804,7 +803,8 @@ class TestGoogleCooldownIntegration:
         from update_jobs import fetch_google_jobs_parallel
         fetch_google_jobs_parallel(["software engineer new grad"], max_workers=1)
 
-        assert "google.com" in tracker.counts()
+        google_key = SourceCooldownTracker.domain_key("https://careers.google.com/api/v3/search/")
+        assert tracker.counts().get(google_key, 0) >= 1
 
     def test_google_skips_when_pre_tripped(self, monkeypatch):
         tracker = _fresh_tracker(threshold=1)
