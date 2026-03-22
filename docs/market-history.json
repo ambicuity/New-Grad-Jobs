@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-22T02:32:09.053935",
+    "last_updated": "2026-03-22T03:16:06.932210",
     "total_snapshots": 18,
     "date_range": {
       "start": "2026-03-05",
@@ -945,17 +945,17 @@
     },
     {
       "date": "2026-03-22",
-      "total_jobs": 966,
+      "total_jobs": 990,
       "categories": {},
       "tiers": {
-        "unicorn": 469,
-        "other": 363,
+        "unicorn": 477,
+        "other": 379,
         "faang_plus": 134
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 155
+          "jobs": 154
         },
         {
           "company": "Waymo",
@@ -966,11 +966,11 @@
           "jobs": 27
         },
         {
-          "company": "Lyft",
-          "jobs": 26
+          "company": "Northrop Grumman",
+          "jobs": 27
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Lyft",
           "jobs": 26
         },
         {
@@ -983,7 +983,7 @@
         },
         {
           "company": "Affirm",
-          "jobs": 19
+          "jobs": 18
         },
         {
           "company": "Reddit",
@@ -994,9 +994,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 209,
-      "avg_jobs_per_company": 4.62,
-      "timestamp": "2026-03-22T02:32:09.053631"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.65,
+      "timestamp": "2026-03-22T03:16:06.931960"
     }
   ]
 }
