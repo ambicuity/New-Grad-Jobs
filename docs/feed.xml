@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2026 19:26:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 19:50:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Engineer, Flight Termination System (Starship) at SpaceX</title>
@@ -135,17 +135,17 @@
     </item>
     <item>
       <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 20 Mar 2026 19:08:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
       <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
       <pubDate>Fri, 20 Mar 2026 19:08:21 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 20 Mar 2026 19:08:21 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
