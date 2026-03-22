@@ -35,6 +35,14 @@ import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
+
+try:
+    from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
+except ModuleNotFoundError:
+    # Supports import-by-path CI checks that load `scripts/update_jobs.py`
+    # without first adding `scripts/` to sys.path.
+    from scripts.source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
+
 from urllib3.util.retry import Retry
 
 # Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
@@ -649,6 +657,12 @@ def is_job_closed(title: str, description: str = '') -> bool:
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
+
+    # Skip immediately if this domain is in cooldown (too many 403s this run).
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -657,6 +671,17 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
             response = limited_get(url, timeout=timeout)
+
+            # Handle 403 before raise_for_status — record for cooldown tracking.
+            if response.status_code == 403:
+                admitted = SOURCE_COOLDOWN.try_admit(url)
+                if admitted:
+                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                else:
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                break  # 403 is not retriable; move on to next company
+
             response.raise_for_status()
             data = response.json()
 
@@ -708,6 +733,12 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
     jobs = []
+
+    # Skip immediately if this domain is in cooldown (too many 403s this run).
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -716,6 +747,17 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 
             print(f"Fetching jobs from {company_name} (Lever)...")
             response = limited_get(url, timeout=timeout)
+
+            # Handle 403 before raise_for_status — record for cooldown tracking.
+            if response.status_code == 403:
+                admitted = SOURCE_COOLDOWN.try_admit(url)
+                if admitted:
+                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                else:
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                break  # 403 is not retriable; move on to next company
+
             response.raise_for_status()
             data = response.json()
 
@@ -1086,6 +1128,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
         if not company_name or not workday_url:
             continue
 
+        # Skip immediately if this Workday domain is in cooldown.
+        if SOURCE_COOLDOWN.is_tripped(workday_url):
+            print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(workday_url)}' in cooldown (403 threshold exceeded)")
+            continue
+
         print(f"Fetching jobs from {company_name} (Workday)...")
 
         # Construct Workday API URL
@@ -1103,6 +1150,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
 
             jobs = []
             offset = 0
+            handled_403 = False
 
             while True:
                 payload = {
@@ -1147,12 +1195,28 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                         csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
                         continue # Retry with new token
 
+                    # 403 Forbidden — record for cooldown tracking; do not retry.
+                    if response.status_code == 403:
+                        admitted = SOURCE_COOLDOWN.try_admit(api_url)
+                        if admitted:
+                            count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(api_url), 0)
+                            print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                        else:
+                            print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
+                        handled_403 = True
+                        break  # Break inner retry loop — handled below
+
                     if response.ok:
                         break # Success
 
                     if attempt < max_retries:
                         print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
 
+                # Skip generic error log and success footer when 403 was already handled above.
+                if handled_403:
+                    break
+
+                # Log generic non-OK outcome only when it was not a handled 403.
                 if not response or not response.ok:
                     try:
                         error_body = response.json() if response else "No response"
@@ -1194,8 +1258,9 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
 
                 offset += page_limit
 
-            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
-            all_jobs.extend(jobs)
+            if not handled_403:
+                print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+                all_jobs.extend(jobs)
 
         except Exception as e:
             print(f"  ❌ Error processing {company_name}: {e}")
@@ -1447,6 +1512,108 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
+
+def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None) -> List[Dict[str, Any]]:
+    """Fetch Google Careers jobs in parallel for all search terms"""
+    all_jobs = []
+    total = len(search_terms)
+    completed = 0
+    errors = 0
+
+    # AUTO-SCALE: Use 5 workers per search term (they're fast API calls), min 12, max 100
+    if max_workers is None:
+        max_workers = min(DEFAULT_GOOGLE_MAX_WORKERS, max(DEFAULT_GOOGLE_MIN_WORKERS, total * 5))  # AGGRESSIVE: 5x multiplier for 10K
+
+    print(f"\n🚀 Starting PARALLEL Google Careers fetch: {total} search terms with {max_workers} workers")
+
+    def fetch_single_term(search_term: str) -> List[Dict[str, Any]]:
+        """Fetch jobs for a single search term"""
+        jobs = []
+        max_retries = 2
+
+        for attempt in range(max_retries + 1):
+            try:
+                if attempt > 0:
+                    time.sleep(1)
+
+                search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
+                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
+
+                # Check cooldown before making a request.
+                if SOURCE_COOLDOWN.is_tripped(url):
+                    print(f"  ⏭️  Google '{search_term}': skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown")
+                    return jobs
+
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
+                # Handle 403 before raise_for_status — record for cooldown tracking.
+                if response.status_code == 403:
+                    admitted = SOURCE_COOLDOWN.try_admit(url)
+                    if admitted:
+                        count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                        print(f"  ⚠️  Google '{search_term}': 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                    else:
+                        print(f"  🚫 Google '{search_term}': 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
+                    break  # 403 is not retriable
+                response.raise_for_status()
+                data = response.json()
+
+                if not isinstance(data, dict) or 'jobs' not in data:
+                    continue
+
+                for job in data.get('jobs', []):
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
+
+                    if not location_names:
+                        continue
+
+                    location_str = '; '.join(location_names)
+                    description = job.get('description', '') or ''
+
+                    jobs.append({
+                        'company': 'Google',
+                        'title': job.get('title', ''),
+                        'location': location_str,
+                        'url': job.get('apply_url', ''),
+                        'posted_at': job.get('created') or job.get('publish_date'),
+                        'source': 'Google Careers',
+                        'description': description[:500] if description else ''
+                    })
+
+                print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
+                break
+
+            except Exception as e:
+                if attempt >= max_retries:
+                    print(f"  ❌ Google '{search_term}': {str(e)[:50]}")
+
+        return jobs
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_term = {executor.submit(fetch_single_term, term): term for term in search_terms}
+
+        for future in as_completed(future_to_term):
+            completed += 1
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+            except Exception as e:
+                errors += 1
+
+    print(f"✅ Google parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} searches")
+    return all_jobs
+
 
 def get_job_key(job: Dict[str, Any]) -> str:
     """Generate unique key for job deduplication
