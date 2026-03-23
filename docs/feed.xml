@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2026 16:47:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 17:44:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7536572</link>
+      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 23 Mar 2026 13:34:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7536572</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 13:28:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 23 Mar 2026 13:25:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
+    </item>
     <item>
       <title>Embedded Software Engineer, Satellite Antenna (Starlink)  at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8468958002?gh_jid=8468958002</link>
@@ -30,17 +51,17 @@
     </item>
     <item>
       <title>Software Engineer, Design Software (Starship) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8466905002?gh_jid=8466905002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:42 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8466905002?gh_jid=8466905002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Design Software (Starship) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8466837002?gh_jid=8466837002</link>
       <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 12:35:42 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8466837002?gh_jid=8466837002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Design Software (Starship) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8466905002?gh_jid=8466905002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 12:35:42 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8466905002?gh_jid=8466905002</guid>
     </item>
     <item>
       <title>Wireless Systems Engineer (Starlink Mobile) at SpaceX</title>
@@ -135,17 +156,17 @@
     </item>
     <item>
       <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
-      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
+      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 12:35:36 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402489002?gh_jid=8402489002</guid>
-    </item>
-    <item>
-      <title>Network Engineer (Starlink Community Gateway) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8406017002?gh_jid=8406017002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8406017002?gh_jid=8406017002</guid>
-    </item>
-    <item>
-      <title>OS/Platform Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8402452002?gh_jid=8402452002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402452002?gh_jid=8402452002</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8459547002?gh_jid=8459547002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459547002?gh_jid=8459547002</guid>
     </item>
   </channel>
 </rss>
