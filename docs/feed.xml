@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2026 19:38:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 20:13:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II - Passwordless  at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</link>
+      <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 15:50:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955</guid>
+    </item>
+    <item>
+      <title>Software Engineer in Test II at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7369387?gh_jid=7369387</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 15:50:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7369387?gh_jid=7369387</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Production Verification at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7669656?gh_jid=7669656</link>
+      <description>New grad role at Unity Technologies in Remote, United Kingdom. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 15:37:32 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7669656?gh_jid=7669656</guid>
+    </item>
     <item>
       <title>Software Engineer I, Streamer Monetization Experience at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8470752002</link>
@@ -177,17 +198,17 @@
     </item>
     <item>
       <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
-      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
+      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 12:35:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
       <pubDate>Mon, 23 Mar 2026 12:35:37 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8406816002?gh_jid=8406816002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8406816002?gh_jid=8406816002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Tracking (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8414648002?gh_jid=8414648002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8414648002?gh_jid=8414648002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 12:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</guid>
     </item>
   </channel>
 </rss>
