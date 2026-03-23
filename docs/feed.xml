@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2026 12:13:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 13:54:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
+      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 09:36:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
+    </item>
     <item>
       <title>Software Engineer II (Backend) at Sumo Logic</title>
       <link>https://job-boards.greenhouse.io/sumologic/jobs/7737090</link>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
       <pubDate>Fri, 20 Mar 2026 19:08:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Mechanical - Satellites (Starlink)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Fri, 20 Mar 2026 19:08:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
     </item>
   </channel>
 </rss>
