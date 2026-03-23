@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-23T07:56:12.817697",
+    "last_updated": "2026-03-23T08:51:15.665541",
     "total_snapshots": 19,
     "date_range": {
       "start": "2026-03-05",
@@ -1000,12 +1000,12 @@
     },
     {
       "date": "2026-03-23",
-      "total_jobs": 993,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
+        "faang_plus": 151,
         "unicorn": 476,
-        "other": 366,
-        "faang_plus": 151
+        "other": 353
       },
       "top_companies": [
         {
@@ -1029,16 +1029,12 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 22
-        },
-        {
           "company": "Dropbox",
           "jobs": 21
         },
         {
-          "company": "Walmart",
-          "jobs": 20
+          "company": "Boeing",
+          "jobs": 21
         },
         {
           "company": "Affirm",
@@ -1047,11 +1043,15 @@
         {
           "company": "Reddit",
           "jobs": 18
+        },
+        {
+          "company": "Walmart",
+          "jobs": 18
         }
       ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 4.53,
-      "timestamp": "2026-03-23T07:56:12.817418"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.5,
+      "timestamp": "2026-03-23T08:51:15.665257"
     }
   ]
 }
