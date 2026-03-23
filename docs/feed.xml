@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2026 21:00:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 21:46:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Justworks</title>
+      <link>https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</link>
+      <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 16:54:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Frontend at Justworks</title>
+      <link>https://boards.greenhouse.io/justworks/jobs/7733611?gh_jid=7733611</link>
+      <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 16:54:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/justworks/jobs/7733611?gh_jid=7733611</guid>
+    </item>
     <item>
       <title>AI Infrastructure Engineer, Model Serving Platform at Scale AI</title>
       <link>https://job-boards.greenhouse.io/scaleai/jobs/4520320005</link>
@@ -240,17 +254,17 @@
     </item>
     <item>
       <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 16:08:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</link>
       <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 16:08:04 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8441008002?gh_jid=8441008002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 23 Mar 2026 16:08:04 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
@@ -342,20 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 23 Mar 2026 16:08:01 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8426423002?gh_jid=8426423002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8420836002?gh_jid=8420836002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 16:08:01 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8420836002?gh_jid=8420836002</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer, DevOps at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 16:08:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</guid>
     </item>
   </channel>
 </rss>
