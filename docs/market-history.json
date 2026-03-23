@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-23T15:53:56.055139",
+    "last_updated": "2026-03-23T16:47:10.248709",
     "total_snapshots": 19,
     "date_range": {
       "start": "2026-03-05",
@@ -1000,12 +1000,12 @@
     },
     {
       "date": "2026-03-23",
-      "total_jobs": 960,
+      "total_jobs": 964,
       "categories": {},
       "tiers": {
-        "other": 339,
         "unicorn": 476,
-        "faang_plus": 145
+        "other": 350,
+        "faang_plus": 138
       },
       "top_companies": [
         {
@@ -1045,13 +1045,13 @@
           "jobs": 17
         },
         {
-          "company": "Boeing",
-          "jobs": 17
+          "company": "Nuro",
+          "jobs": 16
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.51,
-      "timestamp": "2026-03-23T15:53:56.054838"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.42,
+      "timestamp": "2026-03-23T16:47:10.248419"
     }
   ]
 }
