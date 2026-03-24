@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 10:12:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 11:14:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II - Python - Developer Tools - Search at Elastic</title>
+      <link>https://jobs.elastic.co/jobs?gh_jid=7602101&amp;gh_jid=7602101</link>
+      <description>New grad role at Elastic in United States. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 06:47:19 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=7602101&amp;gh_jid=7602101</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Python - Developer Tools - Search at Elastic</title>
+      <link>https://jobs.elastic.co/jobs?gh_jid=7602100&amp;gh_jid=7602100</link>
+      <description>New grad role at Elastic in Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 06:47:17 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=7602100&amp;gh_jid=7602100</guid>
+    </item>
     <item>
       <title>Software Engineer II, Backend (Consumer Engineering) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7615040003</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Event Response at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430650</link>
-      <description>New grad role at Waymo in San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430650</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Fleet Orchestration &amp; Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430364</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430364</guid>
     </item>
   </channel>
 </rss>
