@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 12:03:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 13:51:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8464720002</link>
+      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 08:27:08 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8464720002</guid>
+    </item>
     <item>
       <title>Backend Product Software Engineer, Payments at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</link>
@@ -338,24 +345,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
     </item>
     <item>
-      <title>Software Engineer, Data &amp; Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7428871</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA ; San Francisco, CA, USA. Category: Software Engineering</description>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7428871</guid>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
     </item>
   </channel>
 </rss>
