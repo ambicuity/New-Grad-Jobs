@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 08:04:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 09:09:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 2, AMP at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523893</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 04:33:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523893</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, AMP at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7593785</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 04:23:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7593785</guid>
+    </item>
     <item>
       <title>Software Engineer, Simulator Evaluation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=6562547</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429906</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulation Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430555</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430555</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Trip Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7433503</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7433503</guid>
     </item>
   </channel>
 </rss>
