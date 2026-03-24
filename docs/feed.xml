@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 05:56:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 07:03:01 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Simulator Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6562547</link>
+      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 02:28:29 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6562547</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Biztech at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7723333?gh_jid=7723333</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 02:08:06 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7723333?gh_jid=7723333</guid>
+    </item>
     <item>
       <title>Software Engineer 2 at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5123824008</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
       <pubDate>Mon, 23 Mar 2026 19:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7433503</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, ML Flywheel at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426598</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426598</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, ML Resources at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7424806</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7424806</guid>
     </item>
   </channel>
 </rss>
