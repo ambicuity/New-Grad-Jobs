@@ -44,6 +44,7 @@ jobs:
             const author = pr.user.login;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const fs = require('fs');
 
             // Skip bot PRs (dependabot, renovate, etc.)
             if (author.includes('[bot]') || author === 'dependabot[bot]') {
@@ -56,7 +57,6 @@ jobs:
             // Check if contributor is already in the Hall of Fame (.all-contributorsrc)
             let isNewContributor = true;
             try {
-              const fs = require('fs');
               const rcContent = JSON.parse(fs.readFileSync('.all-contributorsrc', 'utf-8'));
               const existingLogins = (rcContent.contributors || []).map(c => c.login.toLowerCase());
               isNewContributor = !existingLogins.includes(author.toLowerCase());
@@ -167,7 +167,7 @@ jobs:
 
             // --- Step 3: Run all-contributors-cli and push ---
             try {
-              console.log(`Adding @${author} for [${contributionTypes}] via all-contributors-cli...`);
+              console.log(`[hall-of-fame] add: adding @${author} for [${contributionTypes}]`);
               await exec.exec('npx', ['all-contributors-cli', 'add', author, contributionTypes]);
 
               // Keep docs/contributors.json in sync with CONTRIBUTORS.md /.all-contributorsrc
@@ -198,25 +198,28 @@ jobs:
                 stagedChanges = true;
               }
 
+              console.log(`[hall-of-fame] stage: stagedChanges=${stagedChanges}`);
               if (stagedChanges) {
                 await exec.exec('git', [
                   'commit',
                   '-m',
                   `chore(contributors): sync hall of fame + site data for @${author} [skip ci]`
                 ]);
+                console.log('[hall-of-fame] commit: created contributor sync commit');
               } else {
-                console.log('No staged contributor artifacts to commit.');
+                console.log('[hall-of-fame] commit: no staged contributor artifacts');
               }
 
               // Push the commit made by all-contributors-cli to the base branch
               const baseRef = pr.base.ref;
-              console.log(`Pushing changes to ${baseRef}...`);
+              console.log(`[hall-of-fame] push: pushing changes to ${baseRef}`);
 
               // Pull with rebase first to avoid rejection from concurrent merges
               await exec.exec('git', ['pull', '--rebase', 'origin', baseRef]);
               await exec.exec('git', ['push', 'origin', `HEAD:${baseRef}`]);
 
-              console.log(`Successfully credited @${author} in the Hall of Fame!`);
+              console.log(`[hall-of-fame] success: credited @${author} in the Hall of Fame`);
             } catch (err) {
-              console.log(`Error adding contributor (might already exist, or CLI failed): ${err.message}`);
+              core.setFailed(`[hall-of-fame] failure: could not sync contributor credit for @${author}: ${err.message}`);
+              throw err;
             }
