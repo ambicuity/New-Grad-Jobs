@@ -5,357 +5,357 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 22:23:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 22:59:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523931</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:52:06 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523931</guid>
+      <title>Avionics Systems Engineer (Starship)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8377628002?gh_jid=8377628002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:41:02 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8377628002?gh_jid=8377628002</guid>
+    </item>
+    <item>
+      <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7467839</guid>
+    </item>
+    <item>
+      <title>Applied Research Scientist, Perception LLM/VLM (PhD, New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7488508</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7488508</guid>
+    </item>
+    <item>
+      <title>Data Scientist  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6608598</link>
+      <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6608598</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7455853</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7455853</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7539786</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7539786</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, ADV Systems at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7446320</link>
+      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446320</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Data &amp; Systems  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7446301</link>
+      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446301</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7090492</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7090492</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, ML Flywheel at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7426598</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426598</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, ML Resources at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7424806</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7424806</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Model Optimization at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7446322</link>
+      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446322</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Perception Modeling at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7446279</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446279</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Runtime &amp; Optimization at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506008</link>
+      <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506008</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Simulation Realism at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6499165</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6499165</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Simulation Realism  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6688617</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6688617</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer -  VLM/LLM Integration at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7707980</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, US; Seattle, WA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7707980</guid>
+    </item>
+    <item>
+      <title>ML Engineer, Foundation Model Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7536948</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; Remote US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7536948</guid>
+    </item>
+    <item>
+      <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7536801</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; Remote US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7536801</guid>
+    </item>
+    <item>
+      <title>Onboard Developer Platform Software Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7461052</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7461052</guid>
+    </item>
+    <item>
+      <title>Onboard Frameworks Software Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7412386</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7412386</guid>
+    </item>
+    <item>
+      <title>Onboard Infrastructure Software Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7461103</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7461103</guid>
+    </item>
+    <item>
+      <title>Post-Silicon Validation Software Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7590331</link>
+      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7590331</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Applied Machine Learning, Planner Technology at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7163224</link>
+      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7163224</guid>
+    </item>
+    <item>
+      <title>Software Engineer Backend - Simulation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7307289</link>
+      <description>New grad role at Waymo in Mountain View. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7307289</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bulk/Interactive Inference at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7466529</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466529</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Commercialization Onboard Platform at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7426815</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA ;  San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426815</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data &amp; Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7428871</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA ; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7428871</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Embedded Systems / Robotics  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
+      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Event Response at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7430650</link>
+      <description>New grad role at Waymo in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430650</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fleet Orchestration &amp; Optimization at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7430364</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430364</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fleet Response (Full Stack) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429906</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429906</guid>
+    </item>
+    <item>
+      <title>Software Engineer, GPU at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7554830</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7554830</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Labeling Infrastructure at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7416895</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7416895</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Large Model Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7487849</link>
+      <description>New grad role at Waymo in Mountain View, California, USA; San Francisco, California, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7487849</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Efficiency at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7443590</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; New York, CA, USA; Seattle, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7443590</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Tools at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7426718</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426718</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Model Lifecycle at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7609435</link>
+      <description>New grad role at Waymo in Kirkland, Washington, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7609435</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Multiverse at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7531397</link>
+      <description>New grad role at Waymo in San Francisco, CA, USA; Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7531397</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Onboard Reliability Infra at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7461072</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7461072</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Perception Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7256244</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7256244</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Perception Evaluation and Test Automation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
     </item>
     <item>
       <title>Software Engineer, Perception Optimization at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7450565</link>
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:48:43 +0000</pubDate>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7450565</guid>
     </item>
     <item>
-      <title>Software Engineer I, Engagement Growth  at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8472708002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:40:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8472708002</guid>
+      <title>Software Engineer, Planner at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7459622</link>
+      <description>New grad role at Waymo in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7459622</guid>
     </item>
     <item>
-      <title>Software Engineer, Mobile at Mercari</title>
-      <link>https://job-boards.greenhouse.io/mercari/jobs/8477407002</link>
-      <description>New grad role at Mercari in Hybrid-Bay Area, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:36:01 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercari/jobs/8477407002</guid>
+      <title>Software Engineer, Planner Reasoning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7259110</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
     </item>
     <item>
-      <title>Software Engineer III at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
-      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:33:30 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
+      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
+      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer II, Economics at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=7565189</link>
-      <description>New grad role at Instacart in United States - Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 24 Mar 2026 17:27:54 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7565189</guid>
-    </item>
-    <item>
-      <title>Software Engineer II-  Frontend, Core Experience  at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=6907655</link>
-      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 17:27:51 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=6907655</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Electrical (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Tue, 24 Mar 2026 16:39:11 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Mechanical (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Tue, 24 Mar 2026 16:38:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Collision Avoidance (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8397683002?gh_jid=8397683002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:35:59 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397683002?gh_jid=8397683002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Components) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:33:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data - Top Secret Clearance (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8449846002?gh_jid=8449846002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:31:52 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8449846002?gh_jid=8449846002</guid>
-    </item>
-    <item>
-      <title>Sales Engineer I at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8435411002</link>
-      <description>New grad role at Dialpad in Austin, US. Category: Other</description>
-      <pubDate>Tue, 24 Mar 2026 16:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8435411002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Fullstack (Sell Core) at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8407054002</link>
-      <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407054002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Fullstack (Support Core) at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8407060002</link>
-      <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407060002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Integrations) at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
-      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7724879</link>
-      <description>New grad role at Twilio in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 24 Mar 2026 16:22:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7724879</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8401220002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8401220002</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8186269002</link>
-      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8186269002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Creator Sponsorships at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8345959002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8345959002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8360103002</link>
-      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8360103002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8334351002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8334351002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I - Ads Demand Enablement at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8162197002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8162197002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Community Growth at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8468673002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8468673002</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Android at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8326458002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8326458002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Monetization ML at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8417224002</link>
-      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8417224002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Monetization ML at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8417166002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8417166002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Streamer Monetization Experience at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8470752002</link>
-      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8470752002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Twitch Chat at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8447271002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8447271002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Products at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8183360002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8183360002</guid>
-    </item>
-    <item>
-      <title>Mechanical Engineering Co-Op (Fall 2026) at Locus Robotics</title>
-      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</link>
-      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Other</description>
-      <pubDate>Tue, 24 Mar 2026 15:55:02 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Developer (Wallets and Onchain Tools)  at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 15:03:07 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</guid>
-    </item>
-    <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 24 Mar 2026 15:00:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Developer Tooling at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4676936005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; Seattle, WA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:31:02 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4676936005</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7702644</link>
-      <description>New grad role at Twilio in Remote - US. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7702644</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7661922</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661922</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:47 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:47 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:46 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
-    </item>
-    <item>
-      <title>Data Engineer (L3) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
-      <description>New grad role at Twilio in Remote - India. Category: Data Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:19:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor Platform at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=6393147</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:10:15 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=6393147</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Routing at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7482347</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 14:07:21 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7482347</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Fireblocks</title>
-      <link>https://job-boards.greenhouse.io/fireblocks/jobs/4656035006</link>
-      <description>New grad role at Fireblocks in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 24 Mar 2026 13:52:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/fireblocks/jobs/4656035006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data at Mercari</title>
-      <link>https://job-boards.greenhouse.io/mercari/jobs/8476385002</link>
-      <description>New grad role at Mercari in Hybrid-Bay Area, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:35:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercari/jobs/8476385002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Backend (Purchasing Power) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7673122003</link>
-      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:23:36 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7673122003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:12:52 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</link>
-      <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</guid>
+      <title>Software Engineer, Privacy at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7547529</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA . Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 18:39:40 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7547529</guid>
     </item>
   </channel>
 </rss>
