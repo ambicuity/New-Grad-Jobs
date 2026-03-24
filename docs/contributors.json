@@ -10,7 +10,8 @@
       "contributions": [
         "infra",
         "doc",
-        "code"
+        "code",
+        "maintenance"
       ]
     },
     {
@@ -194,7 +195,16 @@
         "doc",
         "infra"
       ]
+    },
+    {
+      "login": "ayeshawadoodkhan2-svg",
+      "name": "Ayesha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/262957261?v=4",
+      "profile": "https://github.com/ayeshawadoodkhan2-svg",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
-  "generatedAt": "2026-03-18T20:33:57Z"
+  "generatedAt": "2026-03-24T23:15:35Z"
 }
