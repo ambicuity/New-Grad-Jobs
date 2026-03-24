@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 02:55:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 04:53:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 2 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5123824008</link>
+      <description>New grad role at New Relic in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 00:17:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5123824008</guid>
+    </item>
     <item>
       <title>Software Engineer, Rider at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8452280002?gh_jid=8452280002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 23 Mar 2026 19:12:55 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7424806</guid>
-    </item>
-    <item>
-      <title>Onboard Frameworks Software Engineer at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7412386</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7412386</guid>
     </item>
   </channel>
 </rss>
