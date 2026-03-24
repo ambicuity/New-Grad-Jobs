@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 21:45:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 22:23:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523931</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:52:06 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523931</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Perception Optimization at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7450565</link>
+      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:48:43 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7450565</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Engagement Growth  at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8472708002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:40:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8472708002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Mobile at Mercari</title>
+      <link>https://job-boards.greenhouse.io/mercari/jobs/8477407002</link>
+      <description>New grad role at Mercari in Hybrid-Bay Area, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:36:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercari/jobs/8477407002</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
+      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:33:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II, Economics at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=7565189</link>
+      <description>New grad role at Instacart in United States - Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 17:27:54 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7565189</guid>
+    </item>
+    <item>
+      <title>Software Engineer II-  Frontend, Core Experience  at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=6907655</link>
+      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 17:27:51 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=6907655</guid>
+    </item>
     <item>
       <title>New Graduate Engineer, Electrical (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002</link>
@@ -135,17 +184,17 @@
     </item>
     <item>
       <title>Software Engineer I, Monetization ML at Twitch</title>
-      <link>https://job-boards.greenhouse.io/twitch/jobs/8417166002</link>
-      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8417166002</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Monetization ML at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8417224002</link>
       <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
       <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8417224002</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Monetization ML at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8417166002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 16:04:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8417166002</guid>
     </item>
     <item>
       <title>Software Engineer I, Streamer Monetization Experience at Twitch</title>
@@ -307,55 +356,6 @@
       <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
       <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5658009004</link>
-      <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5658009004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5686805004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5686805004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5767816004</link>
-      <description>New grad role at ClickHouse in India (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5767816004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755092004</link>
-      <description>New grad role at ClickHouse in Germany (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755092004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755090004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755090004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</link>
-      <description>New grad role at ClickHouse in United Kingdom (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755091004</guid>
-    </item>
-    <item>
-      <title>Core Software Engineer (C++) - Remote at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 13:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5755093004</guid>
     </item>
   </channel>
 </rss>
