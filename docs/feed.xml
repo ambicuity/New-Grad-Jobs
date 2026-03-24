@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 14:52:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 15:57:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer – Backend, Pricing at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4575823006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States; Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 11:13:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4575823006</guid>
+    </item>
+    <item>
+      <title>Software Engineer - FullStack at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States; Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 11:11:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</guid>
+    </item>
+    <item>
+      <title>Android Software Engineer, Quality Platform at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7744247?gh_jid=7744247</link>
+      <description>New grad role at Airbnb in Remote, Brazil. Category: Software Engineering</description>
+      <pubDate>Tue, 24 Mar 2026 11:06:30 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7744247?gh_jid=7744247</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II – Growth Science  at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7473497</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 11:00:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4653303006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States; Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 24 Mar 2026 10:59:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4653303006</guid>
+    </item>
     <item>
       <title>Software Engineer, Frontend at Justworks</title>
       <link>https://boards.greenhouse.io/justworks/jobs/7733611?gh_jid=7733611</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446320</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Data &amp; Systems  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446301</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446301</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Model Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446322</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446322</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Perception Modeling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446279</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446279</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Efficiency at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7443590</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; New York, CA, USA; Seattle, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7443590</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Evaluation and Test Automation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Mon, 23 Mar 2026 19:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
     </item>
   </channel>
 </rss>
