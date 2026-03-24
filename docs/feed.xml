@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 19:23:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 20:06:23 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mechanical Engineering Co-Op (Fall 2026) at Locus Robotics</title>
+      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</link>
+      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Other</description>
+      <pubDate>Tue, 24 Mar 2026 15:55:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</guid>
+    </item>
     <item>
       <title>Software Engineer, Developer (Wallets and Onchain Tools)  at Coinbase</title>
       <link>https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Airbnb in Remote, Brazil. Category: Software Engineering</description>
       <pubDate>Tue, 24 Mar 2026 11:06:30 +0000</pubDate>
       <guid isPermaLink="true">https://careers.airbnb.com/positions/7744247?gh_jid=7744247</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II – Growth Science  at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7473497</link>
-      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 24 Mar 2026 11:00:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
     </item>
   </channel>
 </rss>
