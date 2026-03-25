@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 14:52:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 16:00:51 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, AI Platforms at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 11:18:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004</guid>
+    </item>
     <item>
       <title>Data Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7359642</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in San Francisco, CA, USA; Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Tue, 24 Mar 2026 21:01:24 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7531397</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Onboard Reliability Infra at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7461072</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 21:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7461072</guid>
     </item>
   </channel>
 </rss>
