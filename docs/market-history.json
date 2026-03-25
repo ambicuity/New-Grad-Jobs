@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-25T10:14:33.978939",
+    "last_updated": "2026-03-25T11:14:00.517867",
     "total_snapshots": 21,
     "date_range": {
       "start": "2026-03-05",
@@ -1147,11 +1147,11 @@
           "jobs": 20
         },
         {
-          "company": "Walmart",
-          "jobs": 20
+          "company": "Affirm",
+          "jobs": 19
         },
         {
-          "company": "Affirm",
+          "company": "Walmart",
           "jobs": 19
         },
         {
@@ -1161,7 +1161,7 @@
       ],
       "unique_companies": 216,
       "avg_jobs_per_company": 4.53,
-      "timestamp": "2026-03-25T10:14:33.978600"
+      "timestamp": "2026-03-25T11:14:00.517560"
     }
   ]
 }
