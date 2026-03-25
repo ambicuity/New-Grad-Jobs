@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 21:34:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:10:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Application Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 18:01:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Direct To Cell) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8364374002?gh_jid=8364374002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 17:51:03 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8364374002?gh_jid=8364374002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Member AI Features at SoFi</title>
+      <link>https://sofi.com/careers/job/7645856003?gh_jid=7645856003</link>
+      <description>New grad role at SoFi in WA - Seattle. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 17:41:09 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7645856003?gh_jid=7645856003</guid>
+    </item>
     <item>
       <title>Software Engineer, AI Platforms at Figma</title>
       <link>https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004</link>
@@ -335,27 +356,6 @@
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
-      <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, AMP at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7593785</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7593785</guid>
     </item>
   </channel>
 </rss>
