@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:10:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:59:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Application Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/ce813413-de04-4a7b-a796-43735f55bf0c</link>
+      <description>New grad role at Palantir in Remote: United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 22:21:32 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/ce813413-de04-4a7b-a796-43735f55bf0c</guid>
+    </item>
+    <item>
+      <title>Software Infrastructure Engineer, Flight Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8478283002?gh_jid=8478283002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 18:44:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8478283002?gh_jid=8478283002</guid>
+    </item>
+    <item>
+      <title>Flight Software Infrastructure Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8477451002?gh_jid=8477451002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 18:44:30 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8477451002?gh_jid=8477451002</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Mechanical (Cape Canaveral)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002</link>
+      <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Other</description>
+      <pubDate>Wed, 25 Mar 2026 18:08:01 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8210631002?gh_jid=8210631002</guid>
+    </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</link>
@@ -328,34 +356,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7588634</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2, AMP at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523893</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523893</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7644278</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7644278</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7586412</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7586412</guid>
     </item>
   </channel>
 </rss>
