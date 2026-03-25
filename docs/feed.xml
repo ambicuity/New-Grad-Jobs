@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 08:13:56 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 09:14:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Center Technician II, Server Operations at Google</title>
+      <link>https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWkM_ZQf01EQShkTglAQLPVy8kJHqrQupeas4M23ASHcEjsACxwdTAO6UbacsFFuUSbzkLfaZEZf9ApoNN-tGAqpfj4WH88IVEmvcvj53aIFMOqUL1kVPESqZa7HLw%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+II</link>
+      <description>New grad role at Google in Papillion, NE, USA | Omaha, NE, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 08:31:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWkM_ZQf01EQShkTglAQLPVy8kJHqrQupeas4M23ASHcEjsACxwdTAO6UbacsFFuUSbzkLfaZEZf9ApoNN-tGAqpfj4WH88IVEmvcvj53aIFMOqUL1kVPESqZa7HLw%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+II</guid>
+    </item>
+    <item>
+      <title>Enablement Systems Engineer at Datadog</title>
+      <link>https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</link>
+      <description>New grad role at Datadog in New York, New York, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 04:24:58 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</guid>
+    </item>
     <item>
       <title>Software Engineer, Storage at Airbnb</title>
       <link>https://careers.airbnb.com/positions/7527407?gh_jid=7527407</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Tue, 24 Mar 2026 21:01:24 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 21:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Privacy at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7547529</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA . Category: Software Engineering</description>
-      <pubDate>Tue, 24 Mar 2026 21:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7547529</guid>
     </item>
   </channel>
 </rss>
