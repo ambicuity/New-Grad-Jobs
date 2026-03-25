@@ -5,13 +5,13 @@ Test: `pytest tests/ -q`
 Cov: `pytest --cov=scripts --cov-report=term-missing`
 
 ## Status
-324 tests, 65% update_jobs
+347 tests, 67% update_jobs
 
 ## PRs (draft)
-151,192,195,207,212,213,214
+151,192,195,207,212,213,214,217
 
 ## Next
-is_job_closed(#55), normalize_date_string(#48), generate_jobs_json
+save_market_history (lines 2037-2134), parallel fetchers
 
 ## Last
-23474510255 T1,2,4,5,7
+23526320060 T3,7
