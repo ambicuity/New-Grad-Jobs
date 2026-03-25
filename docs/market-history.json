@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-25T12:02:15.655192",
+    "last_updated": "2026-03-25T13:48:33.435782",
     "total_snapshots": 21,
     "date_range": {
       "start": "2026-03-05",
@@ -1110,12 +1110,12 @@
     },
     {
       "date": "2026-03-25",
-      "total_jobs": 982,
+      "total_jobs": 962,
       "categories": {},
       "tiers": {
-        "faang_plus": 158,
+        "faang_plus": 160,
         "unicorn": 475,
-        "other": 349
+        "other": 327
       },
       "top_companies": [
         {
@@ -1127,11 +1127,11 @@
           "jobs": 62
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 28
+          "company": "ClickHouse",
+          "jobs": 27
         },
         {
-          "company": "ClickHouse",
+          "company": "Northrop Grumman",
           "jobs": 27
         },
         {
@@ -1151,17 +1151,17 @@
           "jobs": 19
         },
         {
-          "company": "MongoDB",
-          "jobs": 18
+          "company": "Mastercard",
+          "jobs": 19
         },
         {
-          "company": "Reddit",
+          "company": "MongoDB",
           "jobs": 18
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.5,
-      "timestamp": "2026-03-25T12:02:15.654925"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.52,
+      "timestamp": "2026-03-25T13:48:33.435472"
     }
   ]
 }
