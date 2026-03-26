@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 03:31:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 05:28:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Sensor/Vehicle Test and Calibration at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7749587</link>
+      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 00:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7749587</guid>
+    </item>
     <item>
       <title>Product Infrastructure Security Engineer at Palantir</title>
       <link>https://jobs.lever.co/palantir/47bf61f0-853c-43f9-ad30-873784da9c59</link>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:42:25 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451960002?gh_jid=8451960002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Telemetry (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:30:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</guid>
     </item>
   </channel>
 </rss>
