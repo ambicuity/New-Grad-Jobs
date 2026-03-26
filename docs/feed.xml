@@ -5,14 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 23:44:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 00:10:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Infrastructure Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/47bf61f0-853c-43f9-ad30-873784da9c59</link>
+      <description>New grad role at Palantir in Seattle, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 23:43:15 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/47bf61f0-853c-43f9-ad30-873784da9c59</guid>
+    </item>
+    <item>
+      <title>Product Infrastructure Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/346ff0e0-94dd-4d6c-916a-23ecdd74bbc6</link>
+      <description>New grad role at Palantir in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 23:42:54 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/346ff0e0-94dd-4d6c-916a-23ecdd74bbc6</guid>
+    </item>
+    <item>
+      <title>Product Infrastructure Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/15f01f3a-922d-4cff-b093-888333d88628</link>
+      <description>New grad role at Palantir in Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 23:42:29 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/15f01f3a-922d-4cff-b093-888333d88628</guid>
+    </item>
+    <item>
+      <title>Product Infrastructure Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/d617af53-e943-4122-8993-4f5853c667bf</link>
+      <description>New grad role at Palantir in New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 23:41:48 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/d617af53-e943-4122-8993-4f5853c667bf</guid>
+    </item>
+    <item>
+      <title>Product Infrastructure Security Engineer at Palantir</title>
+      <link>https://jobs.lever.co/palantir/0f077970-31ad-45b4-ae76-458a134b705f</link>
+      <description>New grad role at Palantir in Remote: US - East. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 23:41:11 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/0f077970-31ad-45b4-ae76-458a134b705f</guid>
+    </item>
     <item>
       <title>Application Security Engineer at Palantir</title>
       <link>https://jobs.lever.co/palantir/ce813413-de04-4a7b-a796-43735f55bf0c</link>
       <description>New grad role at Palantir in Remote: United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 25 Mar 2026 22:21:32 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.lever.co/palantir/ce813413-de04-4a7b-a796-43735f55bf0c</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8225074002?gh_jid=8225074002</link>
+      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 19:58:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8225074002?gh_jid=8225074002</guid>
+    </item>
+    <item>
+      <title>Video &amp; Voice Systems Engineer, Broadcast at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8480479002?gh_jid=8480479002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 19:56:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8480479002?gh_jid=8480479002</guid>
     </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -307,55 +356,6 @@
       <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 25 Mar 2026 15:10:53 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 25 Mar 2026 15:10:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Embedded Systems / Robotics  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:09:12 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Starlink Network at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:07:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, C++ (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8477124002?gh_jid=8477124002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:07:20 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8477124002?gh_jid=8477124002</guid>
-    </item>
-    <item>
-      <title>2026 - Next in Tech Summit, NORAM at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7569187</link>
-      <description>New grad role at MongoDB in Austin; New York City; Palo Alto; San Francisco; Seattle. Category: Other</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7569187</guid>
-    </item>
-    <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7145126</link>
-      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 25 Mar 2026 15:03:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7145126</guid>
     </item>
   </channel>
 </rss>
