@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-26T07:55:04.306648",
+    "last_updated": "2026-03-26T08:47:25.261438",
     "total_snapshots": 22,
     "date_range": {
       "start": "2026-03-05",
@@ -1165,12 +1165,12 @@
     },
     {
       "date": "2026-03-26",
-      "total_jobs": 1007,
+      "total_jobs": 1019,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 356,
-        "faang_plus": 168
+        "other": 366,
+        "faang_plus": 170
       },
       "top_companies": [
         {
@@ -1190,15 +1190,15 @@
           "jobs": 27
         },
         {
-          "company": "Accenture",
-          "jobs": 25
+          "company": "Mastercard",
+          "jobs": 24
         },
         {
           "company": "ClickHouse",
           "jobs": 23
         },
         {
-          "company": "Mastercard",
+          "company": "Accenture",
           "jobs": 23
         },
         {
@@ -1210,13 +1210,13 @@
           "jobs": 20
         },
         {
-          "company": "MongoDB",
-          "jobs": 19
+          "company": "Walmart",
+          "jobs": 20
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.89,
-      "timestamp": "2026-03-26T07:55:04.306324"
+      "unique_companies": 212,
+      "avg_jobs_per_company": 4.81,
+      "timestamp": "2026-03-26T08:47:25.260898"
     }
   ]
 }
