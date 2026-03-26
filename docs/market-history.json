@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-26T09:51:27.021963",
+    "last_updated": "2026-03-26T10:44:27.618788",
     "total_snapshots": 22,
     "date_range": {
       "start": "2026-03-05",
@@ -1165,11 +1165,11 @@
     },
     {
       "date": "2026-03-26",
-      "total_jobs": 992,
+      "total_jobs": 998,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 339,
+        "other": 345,
         "faang_plus": 170
       },
       "top_companies": [
@@ -1190,15 +1190,15 @@
           "jobs": 27
         },
         {
+          "company": "Boeing",
+          "jobs": 24
+        },
+        {
           "company": "Mastercard",
           "jobs": 24
         },
         {
           "company": "ClickHouse",
-          "jobs": 23
-        },
-        {
-          "company": "Boeing",
           "jobs": 23
         },
         {
@@ -1214,9 +1214,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.82,
-      "timestamp": "2026-03-26T09:51:27.021634"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.69,
+      "timestamp": "2026-03-26T10:44:27.618437"
     }
   ]
 }
