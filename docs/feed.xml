@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:10:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 03:31:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Product Infrastructure Security Engineer at Palantir</title>
@@ -48,6 +48,27 @@
       <description>New grad role at Palantir in Remote: United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 25 Mar 2026 22:21:32 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.lever.co/palantir/ce813413-de04-4a7b-a796-43735f55bf0c</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Thermal &amp; Fluid Analysis)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8222759002?gh_jid=8222759002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 20:16:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8222759002?gh_jid=8222759002</guid>
+    </item>
+    <item>
+      <title>Network Engineer II at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 25 Mar 2026 20:04:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Community Tech - Publishing Platform at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 20:04:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7195851?gh_jid=7195851</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starshield) at SpaceX</title>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:30:36 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Pipelines at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:26:04 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:10:54 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</guid>
-    </item>
-    <item>
-      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 25 Mar 2026 15:10:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-26T00:10:16.392302",
+    "last_updated": "2026-03-26T03:31:13.189142",
     "total_snapshots": 22,
     "date_range": {
       "start": "2026-03-05",
@@ -1165,12 +1165,12 @@
     },
     {
       "date": "2026-03-26",
-      "total_jobs": 979,
+      "total_jobs": 1012,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 321,
-        "faang_plus": 175
+        "other": 357,
+        "faang_plus": 172
       },
       "top_companies": [
         {
@@ -1183,23 +1183,27 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 32
+          "jobs": 34
+        },
+        {
+          "company": "Accenture",
+          "jobs": 30
         },
         {
           "company": "Lyft",
           "jobs": 27
         },
         {
-          "company": "Boeing",
-          "jobs": 24
-        },
-        {
           "company": "ClickHouse",
           "jobs": 23
         },
         {
-          "company": "Mastercard",
+          "company": "Boeing",
           "jobs": 23
+        },
+        {
+          "company": "Mastercard",
+          "jobs": 22
         },
         {
           "company": "Dropbox",
@@ -1208,15 +1212,11 @@
         {
           "company": "MongoDB",
           "jobs": 19
-        },
-        {
-          "company": "Affirm",
-          "jobs": 18
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.71,
-      "timestamp": "2026-03-26T00:10:16.391914"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.89,
+      "timestamp": "2026-03-26T03:31:13.188697"
     }
   ]
 }
