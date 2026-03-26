@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 21:50:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 22:07:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Infrastructure Engineer at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 26 Mar 2026 17:54:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</link>
+      <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 26 Mar 2026 17:54:09 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</guid>
+    </item>
+    <item>
+      <title>Software Engineer - FullStack at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 17:53:09 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</guid>
+    </item>
+    <item>
+      <title>Software Engineer – Backend, Pricing at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4667242006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 17:51:38 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4667242006</guid>
+    </item>
     <item>
       <title>Data Center Technician II (Weekend, Second Shift) at Google</title>
       <link>https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf2tFDvuuOtoOndto0r2LBnHmhr6xQwwvdm_q0-yBRpREjsACxwdTFiAsxsmy1WU9FRHTx_R5Qee2Fr0GUuCxpasc3AigeZ_P2K8yjNpF324rD2jc-KgwJtIVKT91g%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+II</link>
@@ -22,13 +50,6 @@
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523928</guid>
     </item>
     <item>
-      <title>Infrastructure Engineer at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 26 Mar 2026 16:38:05 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</guid>
-    </item>
-    <item>
       <title>Software Engineer at Justworks</title>
       <link>https://boards.greenhouse.io/justworks/jobs/6917404?gh_jid=6917404</link>
       <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
@@ -41,13 +62,6 @@
       <description>New grad role at Justworks in New York, New York. Category: Software Engineering</description>
       <pubDate>Thu, 26 Mar 2026 16:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/justworks/jobs/7733611?gh_jid=7733611</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</link>
-      <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 26 Mar 2026 16:26:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</guid>
     </item>
     <item>
       <title>Product Security Engineer - Public Sector at Scale AI</title>
@@ -163,10 +177,10 @@
     </item>
     <item>
       <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</link>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4615429006</link>
       <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 26 Mar 2026 14:10:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4615429006</guid>
     </item>
     <item>
       <title>Data Scientist at Opendoor</title>
@@ -177,10 +191,10 @@
     </item>
     <item>
       <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4615429006</link>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</link>
       <description>New grad role at Opendoor in Office - Washington-Seattle. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 26 Mar 2026 14:10:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4615429006</guid>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
     </item>
     <item>
       <title>Software Engineer, Infrastructure (8+ YOE) at Airtable</title>
@@ -296,24 +310,10 @@
     </item>
     <item>
       <title>Software Engineer – Backend, Pricing at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4667242006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 13:11:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4667242006</guid>
-    </item>
-    <item>
-      <title>Software Engineer – Backend, Pricing at Opendoor</title>
       <link>https://www.opendoor.com/careers/open-positions?gh_jid=4575823006</link>
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Thu, 26 Mar 2026 13:09:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4575823006</guid>
-    </item>
-    <item>
-      <title>Software Engineer - FullStack at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 13:08:19 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</guid>
     </item>
     <item>
       <title>Software Engineer - FullStack at Opendoor</title>
