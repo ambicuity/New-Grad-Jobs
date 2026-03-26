@@ -1,17 +1,17 @@
 # Test Improver Memory
 
 ## Cmds
-Test: `pytest tests/ -q`
-Cov: `pytest --cov=scripts --cov-report=term-missing`
+`pytest tests/ -q`
+`pytest --cov=scripts --cov-report=term-missing`
 
 ## Status
-347 tests, 67% update_jobs
+343 tests, 68% update_jobs.py
 
-## PRs (draft)
-151,192,195,207,212,213,214,217
+## Open PRs
+151,192,195,207,212,213,214,219,220
 
 ## Next
-save_market_history (lines 2037-2134), parallel fetchers
+Parallel fetch functions (network mocks needed)
 
-## Last
-23526320060 T3,7
+## Last Run
+23579450477 (T1,T3,T4,T7)
