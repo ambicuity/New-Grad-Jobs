@@ -397,6 +397,7 @@ STARTUPS = {
     'Glide', 'Continue', 'Meshy', 'Suno', 'Fireworks AI', 'Nexthop.ai',
     'SpruceID', 'Netic', 'D3', 'Promise', 'Lightfield', 'Fermat', 'N1',
     'OffDeal', 'Eventual', 'Mechanize', 'Remi', 'TrueBuilt', 'Uare.ai',
+    'Anthropic', 'Adept AI', 'Scale AI',
 }
 
 # CATEGORY_PATTERNS: Job categories based on exact title keywords.
