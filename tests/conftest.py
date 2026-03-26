@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 @pytest.fixture
 def sample_job() -> Dict[str, Any]:
     """Factory for creating a standard job dictionary for testing.
-    
+
     Returns a job with all common fields populated with realistic test data.
     Use this as a base and modify specific fields for edge case testing.
     """
@@ -42,7 +42,7 @@ def sample_job() -> Dict[str, Any]:
 @pytest.fixture
 def sample_config() -> Dict[str, Any]:
     """Factory for creating a minimal valid config structure.
-    
+
     Returns a config dict with essential fields for testing filter/fetch functions.
     Modify specific sections as needed for individual tests.
     """
@@ -156,7 +156,7 @@ def create_job(
     **kwargs
 ) -> Dict[str, Any]:
     """Helper to create a job dict with custom fields.
-    
+
     Args:
         company: Company name
         title: Job title
@@ -166,7 +166,7 @@ def create_job(
         description: Job description
         source: Data source name
         **kwargs: Additional custom fields
-    
+
     Returns:
         Dict with job data
     """
@@ -185,17 +185,17 @@ def create_job(
 
 def create_jobs_batch(count: int, base_date: datetime = None) -> List[Dict[str, Any]]:
     """Helper to create a batch of jobs for bulk testing.
-    
+
     Args:
         count: Number of jobs to create
         base_date: Starting date (jobs will have dates going backwards from here)
-    
+
     Returns:
         List of job dicts with varied dates
     """
     if base_date is None:
         base_date = datetime.utcnow()
-    
+
     jobs = []
     for i in range(count):
         posted_date = base_date - timedelta(days=i)
