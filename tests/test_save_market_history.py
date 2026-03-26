@@ -28,12 +28,12 @@ class TestSaveMarketHistoryStructure:
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
         # Temporarily replace the history path construction
         self.original_join = os.path.join
-        
+
         def mock_join(*args):
             if 'market-history.json' in args:
                 return self.history_path
             return self.original_join(*args)
-        
+
         os.path.join = mock_join
 
     def teardown_method(self):
@@ -111,12 +111,12 @@ class TestCategoryAndTierCounting:
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
         self.original_join = os.path.join
-        
+
         def mock_join(*args):
             if 'market-history.json' in args:
                 return self.history_path
             return self.original_join(*args)
-        
+
         os.path.join = mock_join
 
     def teardown_method(self):
@@ -200,12 +200,12 @@ class TestTopCompanies:
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
         self.original_join = os.path.join
-        
+
         def mock_join(*args):
             if 'market-history.json' in args:
                 return self.history_path
             return self.original_join(*args)
-        
+
         os.path.join = mock_join
 
     def teardown_method(self):
@@ -295,12 +295,12 @@ class TestHistoryRetention:
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
         self.original_join = os.path.join
-        
+
         def mock_join(*args):
             if 'market-history.json' in args:
                 return self.history_path
             return self.original_join(*args)
-        
+
         os.path.join = mock_join
 
     def teardown_method(self):
@@ -439,12 +439,12 @@ class TestFileHandling:
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
         self.original_join = os.path.join
-        
+
         def mock_join(*args):
             if 'market-history.json' in args:
                 return self.history_path
             return self.original_join(*args)
-        
+
         os.path.join = mock_join
 
     def teardown_method(self):
