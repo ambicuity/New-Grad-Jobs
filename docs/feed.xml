@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 12:45:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 14:19:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Observability at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8400374002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 10:03:32 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8400374002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Infrastructure (2-8 YOE) at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8400373002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote - US (Seattle, WA only). Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 10:03:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8400373002</guid>
+    </item>
+    <item>
+      <title>Business Systems Engineer, Oracle RTR at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 09:42:01 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</guid>
+    </item>
     <item>
       <title>Software Engineer, Sensor/Vehicle Test and Calibration at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7749587</link>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:42:25 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451960002?gh_jid=8451960002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Telemetry (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:30:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Pipelines at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:26:04 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 15:10:54 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</guid>
     </item>
   </channel>
 </rss>
