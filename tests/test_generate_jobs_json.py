@@ -153,11 +153,11 @@ class TestCategoryCountCalculation:
         result = generate_jobs_json(jobs, config)
 
         categories = {cat['id']: cat for cat in result['meta']['categories']}
-        
+
         swe = categories['software_engineering']
         assert swe['name'] == CATEGORY_PATTERNS['software_engineering']['name']
         assert swe['emoji'] == CATEGORY_PATTERNS['software_engineering']['emoji']
-        
+
         ml = categories['data_ml']
         assert ml['name'] == CATEGORY_PATTERNS['data_ml']['name']
         assert ml['emoji'] == CATEGORY_PATTERNS['data_ml']['emoji']
@@ -212,7 +212,7 @@ class TestJobSorting:
 
     def test_jobs_with_datetime_objects_maintain_order(self):
         """Jobs with datetime objects fail to parse and maintain input order.
-        
+
         Note: extract_sort_date() uses date_parser.parse() which raises an exception
         for datetime objects ("Parser must be a string or character stream, not datetime").
         All exceptions return datetime.min, so jobs maintain their original order.
@@ -390,10 +390,10 @@ class TestEdgeCases:
         jobs = [{'company': 'A', 'title': 'Job 1'}]
         config_1 = {'some': 'config'}
         config_2 = {}
-        
+
         result_1 = generate_jobs_json(jobs, config_1)
         result_2 = generate_jobs_json(jobs, config_2)
-        
+
         # Results should be identical regardless of config
         assert result_1['meta']['total_jobs'] == result_2['meta']['total_jobs']
         assert len(result_1['jobs']) == len(result_2['jobs'])
