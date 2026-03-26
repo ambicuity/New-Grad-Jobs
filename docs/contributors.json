@@ -8,7 +8,10 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/44251619?v=4",
       "profile": "https://github.com/ambicuity",
       "contributions": [
-        "infra"
+        "infra",
+        "doc",
+        "code",
+        "maintenance"
       ]
     },
     {
@@ -98,7 +101,8 @@
       "profile": "https://github.com/half-measures",
       "contributions": [
         "code",
-        "test"
+        "test",
+        "doc"
       ]
     },
     {
@@ -137,7 +141,80 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "harryautomazione",
+      "name": "harryautomazione",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249752958?v=4",
+      "profile": "https://github.com/harryautomazione",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "ddlKillMe",
+      "name": "Luis Dan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107548778?v=4",
+      "profile": "https://github.com/ddlKillMe",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "Aalerti",
+      "name": "Aalerti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/151652106?v=4",
+      "profile": "https://github.com/Aalerti",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "omarkamola",
+      "name": "Omar Mostafa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145005611?v=4",
+      "profile": "https://github.com/omarkamola",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
+      ]
+    },
+    {
+      "login": "ajinesh703",
+      "name": "Ajinesh Pratap Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/152050389?v=4",
+      "profile": "https://github.com/ajinesh703",
+      "contributions": [
+        "doc",
+        "infra"
+      ]
+    },
+    {
+      "login": "ayeshawadoodkhan2-svg",
+      "name": "Ayesha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/262957261?v=4",
+      "profile": "https://github.com/ayeshawadoodkhan2-svg",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "AnshikaVerma23",
+      "name": "AnshikaVerma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142527116?v=4",
+      "profile": "https://github.com/AnshikaVerma23",
+      "contributions": [
+        "doc",
+        "design"
+      ]
     }
   ],
-  "generatedAt": "2026-03-10T22:59:00Z"
+  "generatedAt": "2026-03-26T16:03:38Z"
 }

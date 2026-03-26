@@ -83,10 +83,10 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-            <div class="logo">
-                <span class="logo-emoji">🎓</span>
+            <a href="index.html" class="logo" aria-label="New Grad Jobs homepage">
+                <span class="logo-emoji" aria-hidden="true">🎓</span>
                 <span class="logo-text">New Grad Jobs</span>
-            </div>
+            </a>
             <nav class="header-actions" aria-label="Primary navigation">
                 <div class="header-nav-desktop">
                     <a href="index.html" class="nav-link active">Jobs</a>
@@ -263,6 +263,12 @@
 
     <!-- Results Info -->
     <section class="results-info">
+        <!-- Active Filters Summary -->
+        <div id="active-filters-summary" class="active-filters-summary hidden">
+            <span class="summary-label">Active Filters:</span>
+            <div id="active-filter-chips" class="active-chips-container"></div>
+            <button id="clear-all-filters-btn" class="clear-all-btn" type="button">Clear All</button>
+        </div>
         <div class="results-container">
             <p class="results-text">
                 Showing <strong id="visible-count">--</strong> of <strong id="total-count">--</strong> jobs

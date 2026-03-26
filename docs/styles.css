@@ -811,6 +811,92 @@ h3 {
 }
 
 /* ============================================
+   Active Filters Summary
+   ============================================ */
+.active-filters-summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 80px; /* Offset for header */
+    z-index: 90;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.active-filters-summary.hidden {
+    display: none !important;
+}
+
+.summary-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+}
+
+.active-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.active-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+}
+
+.active-chip-remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.active-chip-remove:hover {
+    background: var(--accent-start);
+    color: white;
+}
+
+.clear-all-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    white-space: nowrap;
+    transition: color var(--transition-fast);
+}
+
+.clear-all-btn:hover {
+    color: var(--text-primary);
+}
+
+/* ============================================
    Results Info
    ============================================ */
 .results-info {
