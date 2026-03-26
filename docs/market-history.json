@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-26T08:47:25.261438",
+    "last_updated": "2026-03-26T09:51:27.021963",
     "total_snapshots": 22,
     "date_range": {
       "start": "2026-03-05",
@@ -1165,11 +1165,11 @@
     },
     {
       "date": "2026-03-26",
-      "total_jobs": 1019,
+      "total_jobs": 992,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 366,
+        "other": 339,
         "faang_plus": 170
       },
       "top_companies": [
@@ -1198,25 +1198,25 @@
           "jobs": 23
         },
         {
-          "company": "Accenture",
+          "company": "Boeing",
           "jobs": 23
         },
         {
-          "company": "Boeing",
-          "jobs": 23
+          "company": "Walmart",
+          "jobs": 21
         },
         {
           "company": "Dropbox",
           "jobs": 20
         },
         {
-          "company": "Walmart",
-          "jobs": 20
+          "company": "MongoDB",
+          "jobs": 19
         }
       ],
-      "unique_companies": 212,
-      "avg_jobs_per_company": 4.81,
-      "timestamp": "2026-03-26T08:47:25.260898"
+      "unique_companies": 206,
+      "avg_jobs_per_company": 4.82,
+      "timestamp": "2026-03-26T09:51:27.021634"
     }
   ]
 }
