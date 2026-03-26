@@ -23,6 +23,11 @@ jobs:
             const prNumber = context.payload.pull_request.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const logCommentWarning = (action, error) => {
+              console.warn(
+                `Unable to ${action} PR comment (likely fork token restrictions): ${error.message}`
+              );
+            };
 
             // Conventional commit prefix regex — allows optional scope
             // e.g. feat: ..., fix(api): ..., chore!: ...
@@ -76,14 +81,18 @@ jobs:
               c.body.includes('PR Title Does Not Follow Conventional Commits')
             );
 
-            if (existing) {
-              await github.rest.issues.updateComment({
-                owner, repo, comment_id: existing.id, body
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner, repo, issue_number: prNumber, body
-              });
+            try {
+              if (existing) {
+                await github.rest.issues.updateComment({
+                  owner, repo, comment_id: existing.id, body
+                });
+              } else {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: prNumber, body
+                });
+              }
+            } catch (error) {
+              logCommentWarning('create or update', error);
             }
 
             core.setFailed(`PR title "${title}" does not follow Conventional Commits format.`);
