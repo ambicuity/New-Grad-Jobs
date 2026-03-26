@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 10:44:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 11:42:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Sensor/Vehicle Test and Calibration at Waymo</title>
@@ -184,17 +184,17 @@
     </item>
     <item>
       <title>Android Software Engineer, Mobile Experience at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</guid>
-    </item>
-    <item>
-      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</link>
       <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</guid>
+    </item>
+    <item>
+      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</guid>
     </item>
     <item>
       <title>Backend Product Software Engineer, Payments at Dropbox</title>
@@ -226,17 +226,17 @@
     </item>
     <item>
       <title>Full-Stack Product Software Engineer, Simplify Sharing at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7491863?gh_jid=7491863</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7491863?gh_jid=7491863</guid>
-    </item>
-    <item>
-      <title>Full-Stack Product Software Engineer, Simplify Sharing at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7491860?gh_jid=7491860</link>
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7491860?gh_jid=7491860</guid>
+    </item>
+    <item>
+      <title>Full-Stack Product Software Engineer, Simplify Sharing at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7491863?gh_jid=7491863</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7491863?gh_jid=7491863</guid>
     </item>
     <item>
       <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
@@ -279,27 +279,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
-    </item>
-    <item>
-      <title>iOS Software Engineer, Mobile Infrastructure at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7182020?gh_jid=7182020</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7182020?gh_jid=7182020</guid>
-    </item>
-    <item>
-      <title>iOS Software Engineer, Mobile Infrastructure at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7053876?gh_jid=7053876</link>
-      <description>New grad role at Dropbox in Remote - US: All locations. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7053876?gh_jid=7053876</guid>
-    </item>
-    <item>
-      <title>iOS Software Engineer, Mobile Infrastructure at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7053880?gh_jid=7053880</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
-      <pubDate>Wed, 25 Mar 2026 16:11:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7053880?gh_jid=7053880</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Dash at Dropbox</title>
@@ -356,6 +335,27 @@
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
       <pubDate>Wed, 25 Mar 2026 15:42:25 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451960002?gh_jid=8451960002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Telemetry (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 15:30:36 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Pipelines at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 15:26:04 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 25 Mar 2026 15:10:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</guid>
     </item>
   </channel>
 </rss>
