@@ -94,7 +94,7 @@ make setup
 
 The `make setup` command automatically:
 1. Creates a Python virtual environment (`.venv`).
-2. Installs all project and testing dependencies.
+2. Installs runtime dependencies from `requirements.txt` and dev/test tooling from `pyproject.toml` (`.[dev]`, including `pytest` and `pytest-cov`).
 3. Configures `pre-commit` hooks to run on every commit.
 
 *(Alternatively, if you use DevContainers, just open this repository in VS Code and click "Reopen in Container". Everything is pre-configured!)*
@@ -677,7 +677,29 @@ If you are just contributing code, you don't need to do anything! Our automated 
 
 ## 🏆 Contributors
 
-Every contribution is recognized! When your PR is merged, a maintainer will add you to our [Contributors Hall of Fame](./CONTRIBUTORS.md).
+Every contribution is recognized! When your PR is merged, our automation adds you to our [Contributors Hall of Fame](./CONTRIBUTORS.md). If automation is skipped or fails, a maintainer will add you manually.
+
+---
+
+## 🏆 Hall of Fame Credit
+
+Contributors are automatically added to the Hall of Fame using the workflow:
+`.github/workflows/auto-thank.yml`.
+
+### When does it happen?
+
+- After your Pull Request (PR) is successfully merged.
+
+### When might it not work?
+
+- If the PR is created by a bot
+- If the GitHub Actions workflow fails
+- If the workflow is skipped due to configuration conditions
+
+### What should you do if your credit does not appear?
+
+- Comment on your PR or the related issue
+- A maintainer will review and add you manually if needed
 
 ---
 

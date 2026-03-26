@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs
+from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal
 
 
 def _make_job(
@@ -140,3 +140,54 @@ class TestFilterJobsDeduplication:
     def test_empty_input_returns_empty(self):
         result = deduplicate_jobs([])
         assert result == []
+
+class TestHasNewGradSignal:
+    """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""
+
+    def test_matches_valid_signal(self):
+        assert has_new_grad_signal("Software Engineer, New Grad", ["New Grad"])
+
+    def test_case_insensitivity(self):
+        assert has_new_grad_signal("SOFTWARE ENGINEER", ["software"])
+
+    def test_returns_false_on_no_match(self):
+        assert not has_new_grad_signal("Senior Dev", ["New Grad"])
+
+    def test_empty_signals_list(self):
+        assert not has_new_grad_signal("Software Engineer", [])
+
+    def test_missing_match_signal(self):
+        assert not has_new_grad_signal("Senior Lead", ["junior", "grad", "entry level"])
+
+    def test_partial_word_does_not_match(self):
+        """A signal should match a whole word, not a substring of another word."""
+        assert not has_new_grad_signal("Software Upgrading", ["grad"])
+
+    def test_empty_title(self):
+        """An empty title should not cause an error and should return False."""
+        assert not has_new_grad_signal("", ["new grad"])
+
+    def test_whitespace_title(self):
+        assert not has_new_grad_signal(" ", ["New Grad"])
+
+    def test_none_title(self):
+        assert not has_new_grad_signal(None, ["New Grad"])
+
+    def test_nan_title(self):
+        assert not has_new_grad_signal(float('nan'), ["New Grad"])
+
+    def test_unicode_title(self):
+        assert has_new_grad_signal("软件工程师 New Grad", ["New Grad"])
+
+    def test_very_long_title(self):
+        long_title = "A" * 10000 + " New Grad"
+        assert has_new_grad_signal(long_title, ["New Grad"])
+
+    def test_hyphenated_signal_matches(self):
+        """Hyphenated signals from production config should match correctly."""
+        assert has_new_grad_signal("Entry-Level Software Engineer", ["entry-level"])
+        assert has_new_grad_signal("Early-Career Developer", ["early-career"])
+
+    def test_hyphenated_signal_word_boundary(self):
+        """Hyphenated signals should not match partial words."""
+        assert not has_new_grad_signal("Reentry-Level Position", ["entry-level"])
