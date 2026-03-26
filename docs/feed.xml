@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 20:36:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 21:09:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Data Center Technician II (Weekend, Second Shift) at Google</title>
@@ -13,6 +13,20 @@
       <description>New grad role at Google in Papillion, NE, USA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 26 Mar 2026 17:03:08 +0000</pubDate>
       <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2Fckf2tFDvuuOtoOndto0r2LBnHmhr6xQwwvdm_q0-yBRpREjsACxwdTFiAsxsmy1WU9FRHTx_R5Qee2Fr0GUuCxpasc3AigeZ_P2K8yjNpF324rD2jc-KgwJtIVKT91g%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+II</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523928</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 16:42:49 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523928</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 26 Mar 2026 16:38:05 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</guid>
     </item>
     <item>
       <title>Software Engineer at Justworks</title>
@@ -324,13 +338,6 @@
     </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 12:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</link>
       <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
       <pubDate>Thu, 26 Mar 2026 12:12:58 +0000</pubDate>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Thu, 26 Mar 2026 12:12:58 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</link>
-      <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Software Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 12:12:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</guid>
     </item>
   </channel>
 </rss>
