@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 22:54:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 23:23:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Infrastructure at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 19:12:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Product at Mercury</title>
+      <link>https://job-boards.greenhouse.io/mercury/jobs/5267749004</link>
+      <description>New grad role at Mercury in San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States. Category: Software Engineering</description>
+      <pubDate>Thu, 26 Mar 2026 19:06:57 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/5267749004</guid>
+    </item>
     <item>
       <title>Data Scientist II - Product Analytics at Coinbase</title>
       <link>https://www.coinbase.com/careers/positions/7644362?gh_jid=7644362</link>
@@ -324,17 +338,17 @@
     </item>
     <item>
       <title>Account Development Representative (New Grad) at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</link>
-      <description>New grad role at Samsara in Phoenix, Arizona, United States. Category: Other</description>
-      <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</guid>
-    </item>
-    <item>
-      <title>Account Development Representative (New Grad) at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</link>
       <description>New grad role at Samsara in Atlanta, Georgia, United States. Category: Other</description>
       <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7592553?gh_jid=7592553</guid>
+    </item>
+    <item>
+      <title>Account Development Representative (New Grad) at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</link>
+      <description>New grad role at Samsara in Phoenix, Arizona, United States. Category: Other</description>
+      <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7607468?gh_jid=7607468</guid>
     </item>
     <item>
       <title>Associate Sales Engineer at Samsara</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Samsara in Remote - UK. Category: Other</description>
       <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7649893?gh_jid=7649893</guid>
-    </item>
-    <item>
-      <title>Data Engineer II at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</link>
-      <description>New grad role at Samsara in Remote - US. Category: Data Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</guid>
-    </item>
-    <item>
-      <title>Field Sales Engineer II, Enterprise-Northeast at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7697637?gh_jid=7697637</link>
-      <description>New grad role at Samsara in Remote - US. Category: Other</description>
-      <pubDate>Thu, 26 Mar 2026 13:25:45 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7697637?gh_jid=7697637</guid>
     </item>
   </channel>
 </rss>
