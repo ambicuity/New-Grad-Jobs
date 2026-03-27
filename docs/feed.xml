@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 20:43:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 21:25:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7543395?gh_jid=7543395</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 17:08:05 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7543395?gh_jid=7543395</guid>
+    </item>
+    <item>
+      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
+      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
+      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 17:01:52 +0000</pubDate>
+      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7543392?gh_jid=7543392</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 17:00:02 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7543392?gh_jid=7543392</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 16:55:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Gov Tech at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</link>
+      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 16:53:54 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</guid>
+    </item>
     <item>
       <title>Data Engineer at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
-    </item>
-    <item>
-      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
-      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
-    </item>
-    <item>
-      <title>Data Scientist at SoFi</title>
-      <link>https://sofi.com/careers/job/7679146003?gh_jid=7679146003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 27 Mar 2026 11:55:36 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7679146003?gh_jid=7679146003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Flight Software (Starship) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:55:06 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002</guid>
-    </item>
-    <item>
-      <title>Data Scientist at SoFi</title>
-      <link>https://sofi.com/careers/job/7679134003?gh_jid=7679134003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 27 Mar 2026 11:52:10 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7679134003?gh_jid=7679134003</guid>
     </item>
   </channel>
 </rss>
