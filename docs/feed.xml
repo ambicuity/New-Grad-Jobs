@@ -5,28 +5,133 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 16:14:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 17:16:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 13:03:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 13:03:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Mechanical Engineering Co-Op (Fall 2026) at Locus Robotics</title>
+      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</link>
+      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Other</description>
+      <pubDate>Fri, 27 Mar 2026 12:22:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5087254007</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7716833</link>
+      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:15:22 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7716833</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7357460</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7357460</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer, Privy at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
+      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
+    </item>
+    <item>
+      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
+      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
+    </item>
     <item>
       <title>Security Engineer, Bridge at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7573236</link>
       <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 12:06:01 +0000</pubDate>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
+    </item>
+    <item>
+      <title>Security Engineer, New Grad  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
+      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
+      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
     </item>
     <item>
       <title>Software Engineer, Core Technology at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
       <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:06:01 +0000</pubDate>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
     </item>
     <item>
       <title>Software Engineer, Data &amp; AI at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
       <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:06:01 +0000</pubDate>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=6099228</link>
+      <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
+    </item>
+    <item>
+      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
+      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
     </item>
     <item>
       <title>Data Scientist at SoFi</title>
@@ -65,20 +170,6 @@
     </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</link>
       <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
@@ -93,10 +184,24 @@
     </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8310481002?gh_jid=8310481002</guid>
+    </item>
+    <item>
+      <title>Application Software Engineer at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</link>
       <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8211822002?gh_jid=8211822002</guid>
+    </item>
+    <item>
+      <title>Application Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002</guid>
     </item>
     <item>
       <title>Avionics Systems Engineer (Starship)  at SpaceX</title>
@@ -184,17 +289,17 @@
     </item>
     <item>
       <title>Embedded Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</guid>
-    </item>
-    <item>
-      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</link>
       <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</guid>
+    </item>
+    <item>
+      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</guid>
     </item>
     <item>
       <title>Embedded Software Engineer, OS/Platform  (Starlink) at SpaceX</title>
@@ -251,111 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Build Reliability)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8358022002?gh_jid=8358022002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8358022002?gh_jid=8358022002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Components) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, Constellation Tools (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8398604002?gh_jid=8398604002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398604002?gh_jid=8398604002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</link>
-      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Starlink Ground Network) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8211878002?gh_jid=8211878002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8211878002?gh_jid=8211878002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002</guid>
-    </item>
-    <item>
-      <title>Government Affairs Associate at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8464555002?gh_jid=8464555002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Other</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8464555002?gh_jid=8464555002</guid>
-    </item>
-    <item>
-      <title>High Performance Computing (HPC) Systems Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002</guid>
-    </item>
-    <item>
-      <title>IT Infrastructure Engineer, Virtualization &amp; Hardware at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8451903002?gh_jid=8451903002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8451903002?gh_jid=8451903002</guid>
-    </item>
-    <item>
-      <title>IT Network Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8399515002?gh_jid=8399515002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8399515002?gh_jid=8399515002</guid>
-    </item>
-    <item>
-      <title>IT Network Engineer, Launch at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8463201002?gh_jid=8463201002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8463201002?gh_jid=8463201002</guid>
-    </item>
-    <item>
-      <title>IT Network Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8456295002?gh_jid=8456295002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8456295002?gh_jid=8456295002</guid>
-    </item>
-    <item>
-      <title>IT Network Infrastructure Engineer, Launch at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8458745002?gh_jid=8458745002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8458745002?gh_jid=8458745002</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer, DevOps at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8417752002?gh_jid=8417752002</guid>
     </item>
   </channel>
 </rss>
