@@ -965,7 +965,7 @@ def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: 
                     link = job[IDX_LINK]
 
                     # Validate core fields before proceeding.
-                    # title and link must be non-empty strings to avoid downstream crashes in filter_jobs() or generate_readme().
+                    # title and link must be non-empty strings to avoid downstream crashes in filter_jobs().
                     if not isinstance(title, str) or not title.strip():
                         continue
 
