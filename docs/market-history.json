@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-27T22:44:12.194886",
+    "last_updated": "2026-03-27T23:11:38.053535",
     "total_snapshots": 23,
     "date_range": {
       "start": "2026-03-05",
@@ -1220,12 +1220,12 @@
     },
     {
       "date": "2026-03-27",
-      "total_jobs": 986,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
         "unicorn": 487,
         "faang_plus": 164,
-        "other": 335
+        "other": 329
       },
       "top_companies": [
         {
@@ -1261,17 +1261,17 @@
           "jobs": 19
         },
         {
-          "company": "Accenture",
-          "jobs": 19
-        },
-        {
           "company": "Affirm",
           "jobs": 18
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 17
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.79,
-      "timestamp": "2026-03-27T22:44:12.194544"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.73,
+      "timestamp": "2026-03-27T23:11:38.053197"
     }
   ]
 }

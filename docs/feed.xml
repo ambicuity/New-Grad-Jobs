@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 22:44:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 23:11:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[2026] Software Engineer, Creator - Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7557909?gh_jid=7557909</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 19:02:34 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7557909?gh_jid=7557909</guid>
+    </item>
+    <item>
+      <title>Quality Systems Engineer (Starlink Aviation) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002</link>
+      <description>New grad role at SpaceX in Woodinville, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 19:02:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8372252002?gh_jid=8372252002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
+      <description>New grad role at Airtable in San Francisco, CA; Austin, TX; New York, NY. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 18:51:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8124953002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, tvScientific at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 18:46:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
+    </item>
     <item>
       <title>Security Software Engineer (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8483982002?gh_jid=8483982002</link>
@@ -69,13 +97,6 @@
       <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 16:53:54 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
-      <description>New grad role at Airtable in San Francisco, CA. Category: Data Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 15:33:08 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8124953002</guid>
     </item>
     <item>
       <title>Product Security Engineer at Airtable</title>
@@ -167,13 +188,6 @@
       <description>New grad role at Pinterest in San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 27 Mar 2026 15:03:38 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=6121543</guid>
-    </item>
-    <item>
-      <title>Software Engineer, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 15:03:38 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
     </item>
     <item>
       <title>Security Software Engineer - Top Secret Clearance at SpaceX</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7573236</guid>
-    </item>
-    <item>
-      <title>Security Engineer, New Grad  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
-      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
     </item>
   </channel>
 </rss>
