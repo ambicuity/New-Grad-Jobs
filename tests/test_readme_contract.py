@@ -96,7 +96,7 @@ def _check_open_args(node: ast.Call, violations: list[str]) -> None:
         ast.unparse(kw.value) for kw in node.keywords if kw.arg == "file"
     )
     for arg_str in candidates:
-        if "README" in arg_str or "readme" in arg_str.lower():
+        if "readme" in arg_str.lower():
             violations.append(f"line {node.lineno}: open({arg_str!r})")
 
 
