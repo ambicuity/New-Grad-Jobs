@@ -581,7 +581,6 @@ def test_main_coerces_google_max_pages():
         patch('update_jobs.save_market_history'), # Prevent docs/ impact
         patch('update_jobs.predict_hiring_trends'),
         patch('update_jobs.generate_jobs_json'),
-        patch('update_jobs.generate_readme'),
         patch('update_jobs.generate_rss_feed'),
         patch('update_jobs.generate_health_json'),
         patch('update_jobs.check_job_url_health'),

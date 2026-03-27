@@ -3,7 +3,7 @@
 New Grad Jobs Aggregator
 Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs
 and updates docs/jobs.json and related metadata files.
-Note: README.md generation is intentionally not staged by this script.
+Static landing-page content is intentionally not staged by this script.
 
 Performance Optimizations:
 - Connection pooling with persistent sessions
