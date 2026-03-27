@@ -5,14 +5,14 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 17:16:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 18:12:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 27 Mar 2026 13:03:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+      <title>Software Developer, Fraud Investigations at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 13:43:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -20,6 +20,13 @@
       <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 27 Mar 2026 13:03:07 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 27 Mar 2026 13:03:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
     </item>
     <item>
       <title>Mechanical Engineering Co-Op (Fall 2026) at Locus Robotics</title>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Application Software) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 11:37:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002</guid>
     </item>
   </channel>
 </rss>
