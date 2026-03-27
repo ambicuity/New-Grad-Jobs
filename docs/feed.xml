@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 21:25:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 22:01:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer, Analytics at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 17:25:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8371252002</guid>
+    </item>
     <item>
       <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7543395?gh_jid=7543395</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7545459</link>
-      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7545459</guid>
     </item>
   </channel>
 </rss>
