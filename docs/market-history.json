@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-27T10:12:20.136564",
+    "last_updated": "2026-03-27T11:11:51.409032",
     "total_snapshots": 23,
     "date_range": {
       "start": "2026-03-05",
@@ -1220,11 +1220,11 @@
     },
     {
       "date": "2026-03-27",
-      "total_jobs": 987,
+      "total_jobs": 985,
       "categories": {},
       "tiers": {
-        "other": 328,
-        "faang_plus": 170,
+        "other": 327,
+        "faang_plus": 169,
         "unicorn": 489
       },
       "top_companies": [
@@ -1261,17 +1261,17 @@
           "jobs": 21
         },
         {
-          "company": "Mastercard",
-          "jobs": 19
+          "company": "Affirm",
+          "jobs": 18
         },
         {
-          "company": "Affirm",
+          "company": "Mastercard",
           "jobs": 18
         }
       ],
-      "unique_companies": 209,
-      "avg_jobs_per_company": 4.72,
-      "timestamp": "2026-03-27T10:12:20.136191"
+      "unique_companies": 212,
+      "avg_jobs_per_company": 4.65,
+      "timestamp": "2026-03-27T11:11:51.408710"
     }
   ]
 }
