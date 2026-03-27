@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 22:01:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 22:44:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8483982002?gh_jid=8483982002</link>
+      <description>New grad role at SpaceX in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 18:33:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8483982002?gh_jid=8483982002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8483980002?gh_jid=8483980002</link>
+      <description>New grad role at SpaceX in Washington, DC. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 18:32:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8483980002?gh_jid=8483980002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer, Applied Computing (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8483747002?gh_jid=8483747002</link>
+      <description>New grad role at SpaceX in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 18:32:20 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8483747002?gh_jid=8483747002</guid>
+    </item>
     <item>
       <title>Data Engineer, Analytics at Discord</title>
       <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
@@ -226,17 +247,17 @@
     </item>
     <item>
       <title>Software Engineer III at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8464720002</link>
-      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 14:04:25 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8464720002</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at ZoomInfo</title>
       <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
       <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 14:04:25 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8464720002</link>
+      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 14:04:25 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8464720002</guid>
     </item>
     <item>
       <title>Software Engineer III - Python at ZoomInfo</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
       <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Core Technology at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
-      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=6099228</link>
-      <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 12:10:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6099228</guid>
     </item>
   </channel>
 </rss>
