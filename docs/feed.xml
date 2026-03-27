@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2026 04:47:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 06:09:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, BizTech at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7756943?gh_jid=7756943</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 27 Mar 2026 01:23:21 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7756943?gh_jid=7756943</guid>
+    </item>
     <item>
       <title>Software Developer, Infrastructure at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</link>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Thu, 26 Mar 2026 19:30:02 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398604002?gh_jid=8398604002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</link>
-      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 26 Mar 2026 19:30:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8444944002?gh_jid=8444944002</guid>
     </item>
   </channel>
 </rss>
