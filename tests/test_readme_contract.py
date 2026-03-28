@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Tests for the README.md / docs/ staging contract (issue #156).
 
-The scraper must NOT write README.md.  README.md is a static, human-maintained
-document.  Only docs/ artefacts (jobs.json, market-history.json, health.json,
+The scraper must NOT write README.md. README.md is a static, human-maintained
+document. Only docs/ artefacts (jobs.json, market-history.json, health.json,
 feed.xml) may be written by the automated pipeline.
 
 These tests act as a persistent regression guard so the contract cannot drift
