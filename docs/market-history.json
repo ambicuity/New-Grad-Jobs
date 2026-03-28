@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-28T01:02:47.416785",
+    "last_updated": "2026-03-28T03:46:49.165707",
     "total_snapshots": 24,
     "date_range": {
       "start": "2026-03-05",
@@ -1275,12 +1275,12 @@
     },
     {
       "date": "2026-03-28",
-      "total_jobs": 982,
+      "total_jobs": 1003,
       "categories": {},
       "tiers": {
-        "unicorn": 486,
-        "faang_plus": 166,
-        "other": 330
+        "unicorn": 487,
+        "faang_plus": 165,
+        "other": 351
       },
       "top_companies": [
         {
@@ -1297,7 +1297,7 @@
         },
         {
           "company": "Lyft",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "ClickHouse",
@@ -1324,9 +1324,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.61,
-      "timestamp": "2026-03-28T01:02:47.416446"
+      "unique_companies": 220,
+      "avg_jobs_per_company": 4.56,
+      "timestamp": "2026-03-28T03:46:49.163956"
     }
   ]
 }
