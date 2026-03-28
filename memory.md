@@ -5,10 +5,10 @@
 `pytest --cov=scripts --cov-report=term-missing`
 
 ## Status
-421 tests, 70% update_jobs.py (no change, function already covered)
+405 tests, 65% update_jobs.py (validated 2026-03-28)
 
 ## Open PRs
-151,192,195,207,214 + NEW (is_job_closed)
+151,192,195,207,214,222 (all draft, no CI failures)
 
 ## Completed
 ✅ #212 is_recent_job (merged)
@@ -21,4 +21,4 @@ normalize_date_string (issue #48 - but already well-tested in test_date_normaliz
 OR parallel fetch functions (needs network mocks)
 
 ## Last Run
-23633032076 (T2,T3,T7) - Created PR for is_job_closed (issue #55)
+23678322192 (T1,T4,T7) - Validated commands, checked PRs, updated activity
