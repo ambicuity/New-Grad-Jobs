@@ -1,7 +1,7 @@
 {
   "status": "degraded",
-  "last_run": "2026-03-28T06:16:12.414272Z",
-  "total_jobs": 889,
+  "last_run": "2026-03-28T07:19:27.513437Z",
+  "total_jobs": 882,
   "source_counts": {
     "greenhouse": 13363,
     "lever": 502,
@@ -12,5 +12,5 @@
   "zero_sources": [
     "workday"
   ],
-  "run_duration_seconds": 165.5
+  "run_duration_seconds": 146.5
 }
