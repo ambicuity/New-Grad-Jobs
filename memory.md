@@ -5,7 +5,7 @@ pytest tests/ -q
 pytest --cov=scripts --cov-report=term-missing
 
 ## Status
-405 tests, 65% update_jobs.py (2026-03-29)
+405 tests, 65% update_jobs.py (2026-03-30)
 
 ## Open PRs
 151,192,195,207,214,222
@@ -16,6 +16,10 @@ pytest --cov=scripts --cov-report=term-missing
 ## Next Target
 generate_readme() (0% cov, ~175 lines, critical)
 
+## Checked Off
+(none yet)
+
 ## Last
+23730263212: T5,T7 (comments on #47, #56)
 23702518857: T2,T6,T7
 23678322192: T1,T4,T7
