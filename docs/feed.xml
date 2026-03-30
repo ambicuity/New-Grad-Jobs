@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 19:46:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 20:33:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Backend (Marketplace Performance) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7678887003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 16:26:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7678887003</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
+      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 16:17:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Growth - Paid Ads &amp; Acquisition at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8466472002?gh_jid=8466472002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 16:09:30 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8466472002?gh_jid=8466472002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend (Developer - Stablecoin)  at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</link>
+      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 16:03:59 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</guid>
+    </item>
+    <item>
+      <title>Software Engineer, (L2) Audiences &amp; Journeys at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7602727</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 16:02:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7602727</guid>
+    </item>
     <item>
       <title>Software Engineer, High Performance Computing at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8365469002?gh_jid=8365469002</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Samsara in Remote - NYC. Category: Other</description>
       <pubDate>Mon, 30 Mar 2026 09:17:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, AI Platform at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7619925?gh_jid=7619925</link>
-      <description>New grad role at Samsara in Remote - CA. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 09:17:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7619925?gh_jid=7619925</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7135287?gh_jid=7135287</link>
-      <description>New grad role at Coinbase in Remote - India. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 08:52:36 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7135287?gh_jid=7135287</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 03:48:28 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend (Developer - Stablecoin)  at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Sun, 29 Mar 2026 22:27:09 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</guid>
-    </item>
-    <item>
-      <title>Blockchain Security Engineer at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7701657?gh_jid=7701657</link>
-      <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 29 Mar 2026 22:27:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7701657?gh_jid=7701657</guid>
     </item>
   </channel>
 </rss>
