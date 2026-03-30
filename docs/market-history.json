@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-30T10:07:46.204360",
+    "last_updated": "2026-03-30T11:21:43.650983",
     "total_snapshots": 26,
     "date_range": {
       "start": "2026-03-05",
@@ -1385,11 +1385,11 @@
     },
     {
       "date": "2026-03-30",
-      "total_jobs": 995,
+      "total_jobs": 996,
       "categories": {},
       "tiers": {
         "unicorn": 486,
-        "other": 362,
+        "other": 363,
         "faang_plus": 147
       },
       "top_companies": [
@@ -1422,21 +1422,21 @@
           "jobs": 20
         },
         {
+          "company": "Affirm",
+          "jobs": 18
+        },
+        {
           "company": "Walmart",
-          "jobs": 20
+          "jobs": 18
         },
         {
           "company": "Boeing",
-          "jobs": 20
-        },
-        {
-          "company": "Affirm",
           "jobs": 18
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.67,
-      "timestamp": "2026-03-30T10:07:46.203944"
+      "unique_companies": 217,
+      "avg_jobs_per_company": 4.59,
+      "timestamp": "2026-03-30T11:21:43.650625"
     }
   ]
 }
