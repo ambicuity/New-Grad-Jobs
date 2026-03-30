@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 07:07:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 08:50:51 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 03:48:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
+    </item>
     <item>
       <title>Software Engineer, Backend (Developer - Stablecoin)  at Coinbase</title>
       <link>https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
       <pubDate>Fri, 27 Mar 2026 17:25:37 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8371252002</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7543395?gh_jid=7543395</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
-      <pubDate>Fri, 27 Mar 2026 17:08:05 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7543395?gh_jid=7543395</guid>
     </item>
   </channel>
 </rss>
