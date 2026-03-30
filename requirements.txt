@@ -1,4 +1,4 @@
-requests==2.32.5
+requests==2.33.1
 PyYAML==6.0.3
 python-dateutil==2.9.0.post0
 python-jobspy>=1.1.82
