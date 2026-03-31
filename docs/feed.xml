@@ -5,14 +5,42 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 17:40:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 18:41:46 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title> Software Engineer  at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</link>
+      <description>New grad role at Yugabyte in India. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 14:30:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</link>
+      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 14:30:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
+      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 14:30:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
+    </item>
     <item>
       <title>Data Center Technician I at Google</title>
       <link>https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckcsBXVRVKHdVClxaZz64-v2DAIFXWEFLJhDT5_L1PbccEjsACxwdTJCdNTMkPFdFZhabHhYUgP_EXEIuDnXcge8wiRDFZnjEM1t0_nD-OjSzMB-iIDHaCAV3Uwnwpw%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+I</link>
       <description>New grad role at Google in Atlanta, GA, USA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 31 Mar 2026 14:30:21 +0000</pubDate>
       <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckcsBXVRVKHdVClxaZz64-v2DAIFXWEFLJhDT5_L1PbccEjsACxwdTJCdNTMkPFdFZhabHhYUgP_EXEIuDnXcge8wiRDFZnjEM1t0_nD-OjSzMB-iIDHaCAV3Uwnwpw%3D%3D_V2&amp;loc=US&amp;title=Data+Center+Technician+I</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Public Sector at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4302243005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 14:24:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4302243005</guid>
     </item>
     <item>
       <title>Security Software Engineer II, Corporate Security at Pinterest</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, USA. Category: Software Engineering</description>
       <pubDate>Mon, 30 Mar 2026 17:00:25 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7719169</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
-      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 16:55:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (AI Platforms) at SingleStore</title>
-      <link>https://job-boards.greenhouse.io/singlestore/jobs/7573638</link>
-      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 16:50:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7573638</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at SingleStore</title>
-      <link>https://job-boards.greenhouse.io/singlestore/jobs/7432205</link>
-      <description>New grad role at SingleStore in India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 30 Mar 2026 16:50:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7432205</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (Marketplace Performance) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7678887003</link>
-      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 16:26:47 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7678887003</guid>
     </item>
   </channel>
 </rss>
