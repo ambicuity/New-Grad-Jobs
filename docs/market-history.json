@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-31T19:47:00.012374",
+    "last_updated": "2026-03-31T20:09:41.316304",
     "total_snapshots": 27,
     "date_range": {
       "start": "2026-03-05",
@@ -1440,12 +1440,12 @@
     },
     {
       "date": "2026-03-31",
-      "total_jobs": 1043,
+      "total_jobs": 1031,
       "categories": {},
       "tiers": {
-        "other": 401,
-        "faang_plus": 160,
-        "unicorn": 482
+        "unicorn": 481,
+        "other": 394,
+        "faang_plus": 156
       },
       "top_companies": [
         {
@@ -1481,17 +1481,17 @@
           "jobs": 20
         },
         {
-          "company": "Medtronic",
-          "jobs": 20
+          "company": "MongoDB",
+          "jobs": 19
         },
         {
-          "company": "MongoDB",
+          "company": "Medtronic",
           "jobs": 19
         }
       ],
-      "unique_companies": 216,
-      "avg_jobs_per_company": 4.83,
-      "timestamp": "2026-03-31T19:47:00.012023"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.84,
+      "timestamp": "2026-03-31T20:09:41.315577"
     }
   ]
 }
