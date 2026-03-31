@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 20:09:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 20:32:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Flight Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8398447002?gh_jid=8398447002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:07:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398447002?gh_jid=8398447002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Embedded Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8398552002?gh_jid=8398552002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:07:01 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398552002?gh_jid=8398552002</guid>
+    </item>
     <item>
       <title>RF Software Engineer (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002</link>
@@ -337,25 +351,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/7845287002</guid>
     </item>
     <item>
-      <title>Software Engineer, Product Backend (2-8 YOE) at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/7845291002</link>
-      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 18:58:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/7845291002</guid>
-    </item>
-    <item>
       <title>New Graduate Engineer, Mechanical (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
       <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
       <pubDate>Mon, 30 Mar 2026 17:56:20 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Starlink Growth at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8403929002?gh_jid=8403929002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 17:51:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8403929002?gh_jid=8403929002</guid>
     </item>
   </channel>
 </rss>
