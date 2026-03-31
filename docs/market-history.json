@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-31T15:22:40.698767",
+    "last_updated": "2026-03-31T16:37:55.566500",
     "total_snapshots": 27,
     "date_range": {
       "start": "2026-03-05",
@@ -1440,12 +1440,12 @@
     },
     {
       "date": "2026-03-31",
-      "total_jobs": 995,
+      "total_jobs": 988,
       "categories": {},
       "tiers": {
-        "faang_plus": 145,
-        "other": 372,
-        "unicorn": 478
+        "faang_plus": 157,
+        "unicorn": 478,
+        "other": 353
       },
       "top_companies": [
         {
@@ -1481,17 +1481,17 @@
           "jobs": 18
         },
         {
-          "company": "Dropbox",
+          "company": "Google",
           "jobs": 17
         },
         {
-          "company": "Opendoor",
+          "company": "Dropbox",
           "jobs": 17
         }
       ],
-      "unique_companies": 214,
-      "avg_jobs_per_company": 4.65,
-      "timestamp": "2026-03-31T15:22:40.698260"
+      "unique_companies": 209,
+      "avg_jobs_per_company": 4.73,
+      "timestamp": "2026-03-31T16:37:55.565690"
     }
   ]
 }
