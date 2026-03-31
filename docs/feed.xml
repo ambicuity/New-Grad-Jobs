@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 00:09:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 03:33:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III, Community Builders at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7767702</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 21:04:57 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7767702</guid>
+    </item>
+    <item>
+      <title>Software Developer, Fraud Investigations at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 30 Mar 2026 20:21:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
+    </item>
     <item>
       <title>Software Engineer, Product Backend (8+ YOE) at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/7845287002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Twilio in Remote - India. Category: Data Engineering</description>
       <pubDate>Mon, 30 Mar 2026 10:36:56 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7359642</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 10:36:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 10:29:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
     </item>
   </channel>
 </rss>
