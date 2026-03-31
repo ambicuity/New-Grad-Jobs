@@ -167,3 +167,48 @@ jobs:
 
           print("✅ update_jobs.py imports cleanly")
           EOF
+
+      # ── Guard 5: Scraper must not write README.md ─────────────────────────
+      # README.md is a static, human-maintained document.
+      # The scraper must only write to docs/ (jobs.json, feed.xml, etc.).
+      # This guard catches any drift that re-introduces README generation.
+      - name: Assert scraper does not write README.md
+        run: |
+          python - <<'EOF'
+          import ast, sys
+
+          with open("scripts/update_jobs.py") as f:
+              source = f.read()
+
+          tree = ast.parse(source)
+          violations = []
+
+          for node in ast.walk(tree):
+              # Catch: open(...'README.md'...) or open(readme_path, ...)
+              # where the path resolves to README.md
+              if isinstance(node, ast.Call):
+                  fn = node.func
+                  fn_name = ""
+                  if isinstance(fn, ast.Name):
+                      fn_name = fn.id
+                  elif isinstance(fn, ast.Attribute):
+                      fn_name = fn.attr
+                  if fn_name == "open" and node.args:
+                      arg_str = ast.unparse(node.args[0])
+                      if "readme" in arg_str.lower():
+                          violations.append(f"  Line {node.lineno}: open({arg_str!r}, ...)")
+
+          # Also reject presence of generate_readme function definition
+          for node in ast.walk(tree):
+              if isinstance(node, ast.FunctionDef) and node.name == "generate_readme":
+                  violations.append(f"  Line {node.lineno}: function 'generate_readme' is defined")
+
+          if violations:
+              print("❌ FAIL: update_jobs.py contains README.md write logic.")
+              print("   README.md is static; the scraper must not generate or overwrite it.")
+              for v in violations:
+                  print(v)
+              sys.exit(1)
+
+          print("✅ Scraper does not write README.md")
+          EOF
