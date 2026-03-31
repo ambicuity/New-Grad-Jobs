@@ -5,8 +5,71 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 20:32:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 21:11:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Data at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
+      <description>New grad role at Airtable in San Francisco, CA; Austin, TX; New York, NY. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:01:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8124953002</guid>
+    </item>
+    <item>
+      <title>IT Network Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8399515002?gh_jid=8399515002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 16:58:26 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8399515002?gh_jid=8399515002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, HITL - Top Secret Clearance at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:57:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8392887002?gh_jid=8392887002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:56:29 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8392887002?gh_jid=8392887002</guid>
+    </item>
+    <item>
+      <title>Simulation Software Engineer (Application Software) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:53:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Simulations (Application Software) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:52:59 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer at Lattice</title>
+      <link>https://lattice.com/job?gh_jid=8485286002</link>
+      <description>New grad role at Lattice in Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 16:51:41 +0000</pubDate>
+      <guid isPermaLink="true">https://lattice.com/job?gh_jid=8485286002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Android at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8390044002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:51:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8390044002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Propulsion Simulation &amp; Data Analysis at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 16:46:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002</guid>
+    </item>
     <item>
       <title>Software Engineer, Flight Software (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8398447002?gh_jid=8398447002</link>
@@ -293,69 +356,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Fireblocks</title>
-      <link>https://job-boards.greenhouse.io/fireblocks/jobs/4656035006</link>
-      <description>New grad role at Fireblocks in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 31 Mar 2026 09:56:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/fireblocks/jobs/4656035006</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer (SRE) (Pacific time) at Fireblocks</title>
-      <link>https://job-boards.greenhouse.io/fireblocks/jobs/4619316006</link>
-      <description>New grad role at Fireblocks in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 31 Mar 2026 09:56:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/fireblocks/jobs/4619316006</guid>
-    </item>
-    <item>
-      <title>Data Services Analyst II at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8310428002</link>
-      <description>New grad role at ZoomInfo in Chennai, Tamil Nadu, India. Category: Other</description>
-      <pubDate>Tue, 31 Mar 2026 07:49:45 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8310428002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Fee Insights at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7436194</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 05:06:42 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7436194</guid>
-    </item>
-    <item>
-      <title>Software Developer, Fraud Investigations at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 20:21:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product Backend (8+ YOE) at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/7845287002</link>
-      <description>New grad role at Airtable in San Francisco, CA; Remote (Seattle, WA only). Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 18:58:52 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/7845287002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Mechanical (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Mon, 30 Mar 2026 17:56:20 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002</guid>
     </item>
   </channel>
 </rss>
