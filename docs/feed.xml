@@ -5,8 +5,71 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 21:11:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 22:00:05 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Application Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</link>
+      <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:53:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</guid>
+    </item>
+    <item>
+      <title>Software Infrastructure Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391128002?gh_jid=8391128002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 17:51:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391128002?gh_jid=8391128002</guid>
+    </item>
+    <item>
+      <title>Kubernetes Platform Infrastructure Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391130002?gh_jid=8391130002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 17:50:53 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391130002?gh_jid=8391130002</guid>
+    </item>
+    <item>
+      <title>Satellite Policy Associate (Starlink Regulatory Affairs) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8389716002?gh_jid=8389716002</link>
+      <description>New grad role at SpaceX in Washington, DC. Category: Other</description>
+      <pubDate>Tue, 31 Mar 2026 17:50:03 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8389716002?gh_jid=8389716002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Power Systems Controls (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8395307002?gh_jid=8395307002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:48:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8395307002?gh_jid=8395307002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Applied Machine Learning, Planner Technology at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7163224</link>
+      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:38:56 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7163224</guid>
+    </item>
+    <item>
+      <title> Software Engineer  at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</link>
+      <description>New grad role at Yugabyte in India. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</link>
+      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
+      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
+    </item>
     <item>
       <title>Software Engineer, Data at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
@@ -104,27 +167,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 16:01:26 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8398679002?gh_jid=8398679002</guid>
-    </item>
-    <item>
-      <title> Software Engineer  at Yugabyte</title>
-      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</link>
-      <description>New grad role at Yugabyte in India. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 15:57:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Yugabyte</title>
-      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</link>
-      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 15:57:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Yugabyte</title>
-      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
-      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 15:57:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
     </item>
     <item>
       <title>Software Engineer, Data at Mercari</title>
@@ -281,27 +323,6 @@
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
     </item>
     <item>
-      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7739576?gh_jid=7739576</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739576?gh_jid=7739576</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</guid>
-    </item>
-    <item>
       <title>Frontend Product Software Engineer, Web DX at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7580431?gh_jid=7580431</link>
       <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
@@ -310,10 +331,10 @@
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <link>https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</guid>
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
@@ -324,10 +345,10 @@
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</guid>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
     </item>
     <item>
       <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, API Platform at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7387420?gh_jid=7387420</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7387420?gh_jid=7387420</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
     </item>
   </channel>
 </rss>
