@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 11:20:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 12:10:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Services Analyst II at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8310428002</link>
+      <description>New grad role at ZoomInfo in Chennai, Tamil Nadu, India. Category: Other</description>
+      <pubDate>Tue, 31 Mar 2026 07:49:45 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8310428002</guid>
+    </item>
     <item>
       <title>Software Engineer, Fee Insights at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7436194</link>
@@ -349,13 +356,6 @@
       <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
       <pubDate>Mon, 30 Mar 2026 11:12:12 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
-      <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 11:12:12 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
     </item>
   </channel>
 </rss>
