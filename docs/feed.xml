@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 22:00:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 22:43:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7761694</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 18:20:49 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7761694</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Components Test (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391434002?gh_jid=8391434002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 17:54:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391434002?gh_jid=8391434002</guid>
+    </item>
     <item>
       <title>Application Software Engineer at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8393346002?gh_jid=8393346002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</guid>
     </item>
   </channel>
 </rss>
