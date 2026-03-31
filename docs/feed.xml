@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 08:11:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 09:21:30 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Fee Insights at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7436194</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 05:06:42 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7436194</guid>
+    </item>
     <item>
       <title>Software Engineer III, Community Builders at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/7767702</link>
@@ -349,13 +356,6 @@
       <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
       <pubDate>Mon, 30 Mar 2026 11:12:12 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Mon, 30 Mar 2026 10:36:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
     </item>
   </channel>
 </rss>
