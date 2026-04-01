@@ -5,8 +5,64 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 21:29:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 22:08:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer (Application Security) at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
+      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 17:57:52 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
+    </item>
+    <item>
+      <title>Data Engineer (Direct To Cell) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391768002?gh_jid=8391768002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:51:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391768002?gh_jid=8391768002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Geospatial Data (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8389619002?gh_jid=8389619002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:47:39 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8389619002?gh_jid=8389619002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Direct To Cell) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8390870002?gh_jid=8390870002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:44:01 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8390870002?gh_jid=8390870002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8380527002?gh_jid=8380527002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:38:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8380527002?gh_jid=8380527002</guid>
+    </item>
+    <item>
+      <title>High Performance Computing (HPC) Systems Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:36:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ecosystem at Postman</title>
+      <link>https://job-boards.greenhouse.io/postman/jobs/7574033003</link>
+      <description>New grad role at Postman in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:34:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7574033003</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Growth at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7773373</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 17:31:54 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7773373</guid>
+    </item>
     <item>
       <title>Software Engineer, Accounts at Vercel</title>
       <link>https://job-boards.greenhouse.io/vercel/jobs/5431123004</link>
@@ -300,62 +356,6 @@
       <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
       <pubDate>Wed, 01 Apr 2026 12:06:28 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer, Privy at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
-      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Supportability at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7384709</link>
-      <description>New grad role at Stripe in  Canada; Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7384709</guid>
-    </item>
-    <item>
-      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
-      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
-    </item>
-    <item>
-      <title>Security Engineer, New Grad  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
-      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 11:46:05 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
     </item>
   </channel>
 </rss>
