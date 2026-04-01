@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-01T04:27:42.463092",
+    "last_updated": "2026-04-01T06:15:42.448191",
     "total_snapshots": 28,
     "date_range": {
       "start": "2026-03-05",
@@ -1495,11 +1495,11 @@
     },
     {
       "date": "2026-04-01",
-      "total_jobs": 1023,
+      "total_jobs": 1017,
       "categories": {},
       "tiers": {
         "unicorn": 475,
-        "other": 398,
+        "other": 392,
         "faang_plus": 150
       },
       "top_companies": [
@@ -1513,14 +1513,10 @@
         },
         {
           "company": "NTT DATA",
-          "jobs": 31
+          "jobs": 30
         },
         {
           "company": "Lyft",
-          "jobs": 26
-        },
-        {
-          "company": "Medtronic",
           "jobs": 26
         },
         {
@@ -1529,6 +1525,10 @@
         },
         {
           "company": "ClickHouse",
+          "jobs": 23
+        },
+        {
+          "company": "Medtronic",
           "jobs": 23
         },
         {
@@ -1544,9 +1544,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 213,
-      "avg_jobs_per_company": 4.8,
-      "timestamp": "2026-04-01T04:27:42.462663"
+      "unique_companies": 211,
+      "avg_jobs_per_company": 4.82,
+      "timestamp": "2026-04-01T06:15:42.447587"
     }
   ]
 }
