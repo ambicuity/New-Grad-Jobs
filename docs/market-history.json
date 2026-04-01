@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-01T23:01:44.439636",
+    "last_updated": "2026-04-01T23:48:33.186826",
     "total_snapshots": 28,
     "date_range": {
       "start": "2026-03-05",
@@ -1495,12 +1495,12 @@
     },
     {
       "date": "2026-04-01",
-      "total_jobs": 985,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
-        "unicorn": 462,
+        "unicorn": 460,
         "other": 363,
-        "faang_plus": 160
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -1532,21 +1532,21 @@
           "jobs": 22
         },
         {
-          "company": "Lockheed Martin",
-          "jobs": 20
-        },
-        {
           "company": "MongoDB",
           "jobs": 18
         },
         {
           "company": "Affirm",
           "jobs": 18
+        },
+        {
+          "company": "Opendoor",
+          "jobs": 17
         }
       ],
-      "unique_companies": 205,
-      "avg_jobs_per_company": 4.8,
-      "timestamp": "2026-04-01T23:01:44.439212"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.71,
+      "timestamp": "2026-04-01T23:48:33.186435"
     }
   ]
 }

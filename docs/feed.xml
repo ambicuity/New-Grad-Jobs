@@ -5,8 +5,78 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 23:01:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 23:48:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Developer, Fraud Investigations at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:32:49 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
+    </item>
+    <item>
+      <title>Web Software Engineer, Member at SoFi</title>
+      <link>https://sofi.com/careers/job/7592196003?gh_jid=7592196003</link>
+      <description>New grad role at SoFi in WA - Seattle; CA - San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:30:47 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7592196003?gh_jid=7592196003</guid>
+    </item>
+    <item>
+      <title>Quality Systems Engineer (Starlink Product) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:17:13 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8369157002?gh_jid=8369157002</guid>
+    </item>
+    <item>
+      <title>Network Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 19:16:52 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8375288002?gh_jid=8375288002</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer (Starlink)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8368715002?gh_jid=8368715002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:10:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8368715002?gh_jid=8368715002</guid>
+    </item>
+    <item>
+      <title>Wi-Fi Software Engineer (Starlink)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8379209002?gh_jid=8379209002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:07:49 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8379209002?gh_jid=8379209002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8379301002?gh_jid=8379301002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:07:21 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8379301002?gh_jid=8379301002</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8379277002?gh_jid=8379277002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:07:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8379277002?gh_jid=8379277002</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:04:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, C++ - Top Secret Clearance  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8377056002?gh_jid=8377056002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 19:02:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8377056002?gh_jid=8377056002</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
@@ -286,76 +356,6 @@
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 01 Apr 2026 13:47:38 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4653303006</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States; Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 13:44:25 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4659693006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product at Mixpanel</title>
-      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7670800</link>
-      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 13:37:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7670800</guid>
-    </item>
-    <item>
-      <title>Software Engineer at CircleCI</title>
-      <link>http://www.circleci.com/careers/jobs/8420901002/?gh_jid=8420901002</link>
-      <description>New grad role at CircleCI in Toronto, Ontario. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 13:04:47 +0000</pubDate>
-      <guid isPermaLink="true">http://www.circleci.com/careers/jobs/8420901002/?gh_jid=8420901002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II - Behavioral Security Products at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7679778003?gh_jid=7679778003</link>
-      <description>New grad role at Abnormal Security in Remote - UK. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 13:04:35 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7679778003?gh_jid=7679778003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend (Developer - Stablecoin)  at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:48:13 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Electrical at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Other</description>
-      <pubDate>Wed, 01 Apr 2026 12:43:19 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002</guid>
-    </item>
-    <item>
-      <title>Développeur(euse) logiciel  / Software Developer at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7568977?gh_jid=7568977</link>
-      <description>New grad role at Unity Technologies in Montreal, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7568977?gh_jid=7568977</guid>
-    </item>
-    <item>
-      <title>Développeur(se) logiciel – Vérification en production  / Software Developer - Production Verification at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7579024?gh_jid=7579024</link>
-      <description>New grad role at Unity Technologies in Montreal, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7579024?gh_jid=7579024</guid>
-    </item>
-    <item>
-      <title>Développeur(se) logiciel – Vérification en production  / Software Developer - Production Verification at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7669641?gh_jid=7669641</link>
-      <description>New grad role at Unity Technologies in Remote, Quebec, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7669641?gh_jid=7669641</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7288934?gh_jid=7288934</link>
-      <description>New grad role at Unity Technologies in Remote, United Kingdom. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7288934?gh_jid=7288934</guid>
     </item>
   </channel>
 </rss>
