@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 22:08:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 23:01:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 18:47:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
+    <item>
+      <title>Fluids Systems Engineer, Solar Cell Factory (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 18:47:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Displays Software (Starship) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8345913002?gh_jid=8345913002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 18:35:23 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8345913002?gh_jid=8345913002</guid>
+    </item>
+    <item>
+      <title>Software Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8324788002?gh_jid=8324788002</link>
+      <description>New grad role at SpaceX in McGregor, TX. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 18:31:56 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8324788002?gh_jid=8324788002</guid>
+    </item>
+    <item>
+      <title>Facilities Infrastructure Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 18:11:52 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Satellite Operations (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8382088002?gh_jid=8382088002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 18:10:20 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8382088002?gh_jid=8382088002</guid>
+    </item>
     <item>
       <title>Security Engineer (Application Security) at Contentful</title>
       <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
@@ -314,48 +356,6 @@
       <description>New grad role at Unity Technologies in Remote, United Kingdom. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
       <guid isPermaLink="true">https://unity.com/careers/positions/7288934?gh_jid=7288934</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Asset Store Content Operations at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7634404?gh_jid=7634404</link>
-      <description>New grad role at Unity Technologies in Remote, Lithuania. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7634404?gh_jid=7634404</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Production Verification at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7669656?gh_jid=7669656</link>
-      <description>New grad role at Unity Technologies in Remote, United Kingdom. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7669656?gh_jid=7669656</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Production Verification at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7684547?gh_jid=7684547</link>
-      <description>New grad role at Unity Technologies in Remote, Florida, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7684547?gh_jid=7684547</guid>
-    </item>
-    <item>
-      <title>Software Engineer - SyncSketch at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7435113?gh_jid=7435113</link>
-      <description>New grad role at Unity Technologies in Remote, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7435113?gh_jid=7435113</guid>
-    </item>
-    <item>
-      <title>Software Engineer - SyncSketch/ Développeur(se) Logiciel at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7523945?gh_jid=7523945</link>
-      <description>New grad role at Unity Technologies in Remote, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:13:34 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7523945?gh_jid=7523945</guid>
-    </item>
-    <item>
-      <title>Software Engineer, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 12:06:28 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
     </item>
   </channel>
 </rss>
