@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 09:19:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 10:23:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Business Data Analyst at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7771679</link>
+      <description>New grad role at Fastly in Pune, India. Category: Data Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 05:50:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7771679</guid>
+    </item>
+    <item>
+      <title>Software Engineer II (L2) – AV &amp; UC Automations at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 05:32:08 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</guid>
+    </item>
+    <item>
+      <title>Software Engineer 1 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5051574008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 05:19:59 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5051574008</guid>
+    </item>
+    <item>
+      <title>Software Engineer 1 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5172407008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 05:19:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5172407008</guid>
+    </item>
     <item>
       <title>Software Engineer, Simulation Infrastructure at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7719169</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 23:01:32 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Labeling Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7416895</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 23:01:32 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7416895</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Tools at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426718</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 23:01:32 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426718</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Perception at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7367785</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 23:01:31 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7367785</guid>
-    </item>
-    <item>
-      <title>Software Engineer Backend - Simulation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7307289</link>
-      <description>New grad role at Waymo in Mountain View. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 23:01:30 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7307289</guid>
     </item>
   </channel>
 </rss>
