@@ -5,14 +5,28 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 18:43:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 19:50:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</guid>
+      <title>Software Engineer, Backend at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&amp;gh_jid=7263592</link>
+      <description>New grad role at Robinhood in Menlo Park, CA; New York, NY. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 15:35:42 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&amp;gh_jid=7263592</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</link>
+      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 15:33:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 15:33:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</guid>
     </item>
     <item>
       <title>Data Scientist at Opendoor</title>
@@ -20,6 +34,13 @@
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Opendoor</title>
+      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</link>
+      <description>New grad role at Opendoor in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</guid>
     </item>
     <item>
       <title>Enablement Systems Engineer at Datadog</title>
@@ -335,27 +356,6 @@
       <description>New grad role at MongoDB in Toronto. Category: Other</description>
       <pubDate>Wed, 01 Apr 2026 10:21:32 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7711160</guid>
-    </item>
-    <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 10:21:32 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2, AMP at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523893</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 10:21:32 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523893</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 10:21:32 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
   </channel>
 </rss>
