@@ -5,8 +5,64 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 23:53:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 01:17:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III - Contributory Network  at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8461279002</link>
+      <description>New grad role at ZoomInfo in Bethesda, Maryland, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 20:52:59 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8461279002</guid>
+    </item>
+    <item>
+      <title>AI Security Engineer at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7487567</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid); Emeryville, CA (Hybrid); Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 20:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7487567</guid>
+    </item>
+    <item>
+      <title>Associate Technical Support Engineer at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7572983</link>
+      <description>New grad role at Tanium in Bellevue, WA (Hybrid); Emeryville, CA (Hybrid). Category: Other</description>
+      <pubDate>Tue, 31 Mar 2026 20:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7572983</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7669951</link>
+      <description>New grad role at Tanium in Durham, NC (Hybrid). Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 20:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7669951</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Full Stack  at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7696581</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid). Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 20:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7696581</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
+      <description>New grad role at Yugabyte in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 20:16:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Yugabyte</title>
+      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</link>
+      <description>New grad role at Yugabyte in Remote, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 31 Mar 2026 20:13:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</guid>
+    </item>
+    <item>
+      <title>Security Engineer at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/5829751004?gh_jid=5829751004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 31 Mar 2026 20:11:26 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5829751004?gh_jid=5829751004</guid>
+    </item>
     <item>
       <title>Data Scientist at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
@@ -97,20 +153,6 @@
       <description>New grad role at Yugabyte in India. Category: Software Engineering</description>
       <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4596483006</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Yugabyte</title>
-      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</link>
-      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4656120006</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Yugabyte</title>
-      <link>https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</link>
-      <description>New grad role at Yugabyte in United States. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 17:36:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/yugabyte/jobs/4586344006</guid>
     </item>
     <item>
       <title>IT Network Engineer at SpaceX</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Oscar Health in Tempe, Arizona, United States. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 31 Mar 2026 11:06:22 +0000</pubDate>
       <guid isPermaLink="true">http://www.hioscar.com/careers/7594416?gh_jid=7594416</guid>
-    </item>
-    <item>
-      <title>Data Scientist II at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7594414?gh_jid=7594414</link>
-      <description>New grad role at Oscar Health in Los Angeles, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 31 Mar 2026 11:06:22 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7594414?gh_jid=7594414</guid>
-    </item>
-    <item>
-      <title>Provider Network Associate at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7543655?gh_jid=7543655</link>
-      <description>New grad role at Oscar Health in Remote. Category: Other</description>
-      <pubDate>Tue, 31 Mar 2026 11:06:22 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7543655?gh_jid=7543655</guid>
-    </item>
-    <item>
-      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</guid>
-    </item>
-    <item>
-      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</guid>
-    </item>
-    <item>
-      <title>Backend Product Software Engineer, Payments at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
-      <pubDate>Tue, 31 Mar 2026 10:12:18 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
     </item>
   </channel>
 </rss>
