@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-01T14:11:20.214622",
+    "last_updated": "2026-04-01T15:45:44.688888",
     "total_snapshots": 28,
     "date_range": {
       "start": "2026-03-05",
@@ -1495,12 +1495,12 @@
     },
     {
       "date": "2026-04-01",
-      "total_jobs": 1006,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
-        "unicorn": 475,
-        "other": 381,
-        "faang_plus": 150
+        "other": 375,
+        "unicorn": 467,
+        "faang_plus": 149
       },
       "top_companies": [
         {
@@ -1517,18 +1517,18 @@
         },
         {
           "company": "NTT DATA",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "Medtronic",
-          "jobs": 25
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "ClickHouse",
+          "jobs": 23
+        },
+        {
+          "company": "Northrop Grumman",
           "jobs": 23
         },
         {
@@ -1536,17 +1536,17 @@
           "jobs": 23
         },
         {
-          "company": "Affirm",
+          "company": "MongoDB",
           "jobs": 18
         },
         {
-          "company": "MongoDB",
+          "company": "Affirm",
           "jobs": 18
         }
       ],
-      "unique_companies": 210,
-      "avg_jobs_per_company": 4.79,
-      "timestamp": "2026-04-01T14:11:20.214185"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.76,
+      "timestamp": "2026-04-01T15:45:44.688224"
     }
   ]
 }
