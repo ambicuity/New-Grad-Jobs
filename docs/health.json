@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "last_run": "2026-04-01T16:44:08.226155Z",
-  "total_jobs": 1001,
+  "last_run": "2026-04-01T17:42:05.981846Z",
+  "total_jobs": 1018,
   "source_counts": {
-    "greenhouse": 13184,
+    "greenhouse": 13193,
     "lever": 495,
-    "google": 46,
-    "jobspy": 2691,
+    "google": 44,
+    "jobspy": 2683,
     "workday": 3400
   },
   "zero_sources": [],
-  "run_duration_seconds": 337.6
+  "run_duration_seconds": 338.9
 }
