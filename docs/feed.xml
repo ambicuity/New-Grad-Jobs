@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 12:15:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 14:11:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer I, Backend (Purchasing Power) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7673122003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 09:32:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7673122003</guid>
+    </item>
+    <item>
+      <title>Sales Development Representative - New Grad at Mercury</title>
+      <link>https://job-boards.greenhouse.io/mercury/jobs/5841978004</link>
+      <description>New grad role at Mercury in New York, NY or San Francisco, CA. Category: Other</description>
+      <pubDate>Wed, 01 Apr 2026 09:16:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/5841978004</guid>
+    </item>
     <item>
       <title>Associate Business Data Analyst at Fastly</title>
       <link>https://www.fastly.com/about/jobs/apply?gh_jid=7771679</link>
@@ -20,20 +34,6 @@
       <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
       <pubDate>Wed, 01 Apr 2026 05:32:08 +0000</pubDate>
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</guid>
-    </item>
-    <item>
-      <title>Software Engineer 1 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5051574008</link>
-      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 05:19:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5051574008</guid>
-    </item>
-    <item>
-      <title>Software Engineer 1 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5172407008</link>
-      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 05:19:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5172407008</guid>
     </item>
     <item>
       <title>Software Engineer, Simulation Infrastructure at Waymo</title>
