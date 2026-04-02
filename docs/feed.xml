@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 01:04:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 03:54:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7669951</link>
+      <description>New grad role at Tanium in Durham, NC (Hybrid). Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 22:05:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7669951</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Full Stack  at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7696581</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid). Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 22:05:30 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7696581</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7769314</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 01 Apr 2026 21:07:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7769314</guid>
+    </item>
     <item>
       <title>Full Stack Software Engineer (Build Reliability)  at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8358022002?gh_jid=8358022002</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613845006</guid>
-    </item>
-    <item>
-      <title>Enablement Systems Engineer at Datadog</title>
-      <link>https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</link>
-      <description>New grad role at Datadog in New York, New York, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 14:20:47 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7538717/?gh_jid=7538717</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Autonomy Visualization at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7701347</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 14:03:57 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7701347</guid>
     </item>
   </channel>
 </rss>
