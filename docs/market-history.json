@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-02T17:43:13.697282",
+    "last_updated": "2026-04-02T18:41:27.275307",
     "total_snapshots": 29,
     "date_range": {
       "start": "2026-03-05",
@@ -1550,12 +1550,12 @@
     },
     {
       "date": "2026-04-02",
-      "total_jobs": 988,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
+        "other": 394,
         "unicorn": 463,
-        "other": 390,
-        "faang_plus": 135
+        "faang_plus": 134
       },
       "top_companies": [
         {
@@ -1568,7 +1568,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 32
+          "jobs": 29
         },
         {
           "company": "Lyft",
@@ -1599,9 +1599,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 200,
-      "avg_jobs_per_company": 4.94,
-      "timestamp": "2026-04-02T17:43:13.696861"
+      "unique_companies": 203,
+      "avg_jobs_per_company": 4.88,
+      "timestamp": "2026-04-02T18:41:27.274865"
     }
   ]
 }
