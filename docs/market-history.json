@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-02T21:43:44.559355",
+    "last_updated": "2026-04-02T22:23:26.149508",
     "total_snapshots": 29,
     "date_range": {
       "start": "2026-03-05",
@@ -1550,12 +1550,12 @@
     },
     {
       "date": "2026-04-02",
-      "total_jobs": 1021,
+      "total_jobs": 1015,
       "categories": {},
       "tiers": {
-        "faang_plus": 128,
-        "unicorn": 464,
-        "other": 429
+        "faang_plus": 130,
+        "other": 421,
+        "unicorn": 464
       },
       "top_companies": [
         {
@@ -1572,7 +1572,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "ClickHouse",
@@ -1584,11 +1584,11 @@
         },
         {
           "company": "Medtronic",
-          "jobs": 22
+          "jobs": 23
         },
         {
           "company": "Boeing",
-          "jobs": 19
+          "jobs": 22
         },
         {
           "company": "Affirm",
@@ -1599,9 +1599,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 4.71,
-      "timestamp": "2026-04-02T21:43:44.558951"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.66,
+      "timestamp": "2026-04-02T22:23:26.149068"
     }
   ]
 }
