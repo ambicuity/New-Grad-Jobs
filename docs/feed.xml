@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 20:59:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 21:43:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer II, Site Reliability at Google</title>
@@ -15,18 +15,39 @@
       <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWxnHR2Re86kcyd5pFUQ5UMSRJa4a9w2crZMa0iE3dK3EjsACxwdTMcmgCeXUN5QjlyN7CghAZ_9DJ42-RaKhBMx5DlBCq2ifP0geDkR75Tg-bhgQsA1MjLgXFhfCw%3D%3D_V2&amp;loc=US&amp;title=Software+Engineer+II</guid>
     </item>
     <item>
+      <title>Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8479562002?gh_jid=8479562002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 17:32:36 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479562002?gh_jid=8479562002</guid>
+    </item>
+    <item>
       <title>Software Engineer, Product Frontend (2-8 YOE) at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8397137002</link>
       <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote - US (Seattle, WA only). Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 16:29:51 +0000</pubDate>
+      <pubDate>Thu, 02 Apr 2026 17:23:27 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8397137002</guid>
     </item>
     <item>
       <title>Software Engineer, Product Backend (8+ YOE) at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8397618002</link>
       <description>New grad role at Airtable in San Francisco, CA; Remote - US (Seattle, WA only). Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 16:28:46 +0000</pubDate>
+      <pubDate>Thu, 02 Apr 2026 17:20:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8397618002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131934</link>
+      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Apr 2026 17:20:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131934</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131932</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Apr 2026 17:20:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131932</guid>
     </item>
     <item>
       <title>Site Reliability Engineer at SingleStore</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5798406004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI SDK at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5474915004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5474915004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, CDN at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5179639004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5179639004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, CDN Security at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5473266004</link>
-      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5473266004</guid>
     </item>
   </channel>
 </rss>
