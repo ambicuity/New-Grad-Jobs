@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 19:40:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 20:12:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Full-Stack (Marketplace Performance) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7678887003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 15:44:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7678887003</guid>
+    </item>
+    <item>
+      <title> Software Engineer II, Data &amp; AI  at Ripple</title>
+      <link>https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</link>
+      <description>New grad role at Ripple in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 15:41:45 +0000</pubDate>
+      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7654753?gh_jid=7654753</guid>
+    </item>
     <item>
       <title>Sales Engineer I, SE Desk ET at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7311741?gh_jid=7311741</link>
@@ -114,6 +128,13 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
       <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
@@ -125,13 +146,6 @@
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5613601004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Lua at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5661583004</link>
-      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5661583004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Workflows at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5798416004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5798416004</guid>
     </item>
   </channel>
 </rss>
