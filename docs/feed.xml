@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 03:54:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 05:32:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, BizTech (Tax) at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7660539?gh_jid=7660539</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 01:01:32 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7660539?gh_jid=7660539</guid>
+    </item>
+    <item>
+      <title>Air Operations Associate, Gurgaon at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</link>
+      <description>New grad role at Flexport in New Delhi, India. Category: Other</description>
+      <pubDate>Thu, 02 Apr 2026 00:36:10 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</guid>
+    </item>
     <item>
       <title>Software Engineer II at Tanium</title>
       <link>https://job-boards.greenhouse.io/tanium/jobs/7669951</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 01 Apr 2026 15:33:48 +0000</pubDate>
       <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 15:33:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643093006</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 14:31:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4613844006</guid>
     </item>
   </channel>
 </rss>
