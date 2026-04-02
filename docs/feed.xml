@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 12:05:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 13:56:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Site Reliability Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7432205</link>
+      <description>New grad role at SingleStore in India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Apr 2026 09:27:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7432205</guid>
+    </item>
+    <item>
+      <title>Data Engineer, BizTech at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7765329?gh_jid=7765329</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Data Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 08:05:32 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7765329?gh_jid=7765329</guid>
+    </item>
     <item>
       <title>Software Engineer, BizTech (Tax) at Airbnb</title>
       <link>https://careers.airbnb.com/positions/7660539?gh_jid=7660539</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Wed, 01 Apr 2026 15:50:33 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&amp;gh_jid=7454438</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&amp;gh_jid=7263592</link>
-      <description>New grad role at Robinhood in Menlo Park, CA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Apr 2026 15:35:42 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&amp;gh_jid=7263592</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 15:33:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643092006</guid>
     </item>
   </channel>
 </rss>
