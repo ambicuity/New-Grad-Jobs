@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 20:12:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 20:59:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Site Reliability at Google</title>
+      <link>https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWxnHR2Re86kcyd5pFUQ5UMSRJa4a9w2crZMa0iE3dK3EjsACxwdTMcmgCeXUN5QjlyN7CghAZ_9DJ42-RaKhBMx5DlBCq2ifP0geDkR75Tg-bhgQsA1MjLgXFhfCw%3D%3D_V2&amp;loc=US&amp;title=Software+Engineer+II</link>
+      <description>New grad role at Google in Sunnyvale, CA, USA. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 20:30:46 +0000</pubDate>
+      <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWxnHR2Re86kcyd5pFUQ5UMSRJa4a9w2crZMa0iE3dK3EjsACxwdTMcmgCeXUN5QjlyN7CghAZ_9DJ42-RaKhBMx5DlBCq2ifP0geDkR75Tg-bhgQsA1MjLgXFhfCw%3D%3D_V2&amp;loc=US&amp;title=Software+Engineer+II</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Frontend (2-8 YOE) at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8397137002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote - US (Seattle, WA only). Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 16:29:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8397137002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Backend (8+ YOE) at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8397618002</link>
+      <description>New grad role at Airtable in San Francisco, CA; Remote - US (Seattle, WA only). Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 16:28:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8397618002</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7432205</link>
+      <description>New grad role at SingleStore in India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Apr 2026 16:19:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7432205</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Server - Rider Pay at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8470953002?gh_jid=8470953002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 16:10:55 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8470953002?gh_jid=8470953002</guid>
+    </item>
     <item>
       <title>Software Engineer II, Full-Stack (Marketplace Performance) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7678887003</link>
@@ -37,17 +72,17 @@
     </item>
     <item>
       <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 14:50:33 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 14:50:33 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 14:50:33 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</guid>
     </item>
     <item>
       <title>Backend Product Software Engineer, Payments at Dropbox</title>
@@ -128,13 +163,6 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
       <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
@@ -142,10 +170,24 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
@@ -160,13 +202,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
     </item>
     <item>
       <title>Network Engineer at Dropbox</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5473266004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Compute at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5551619004</link>
-      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5551619004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Dashboard at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5808568004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5808568004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Deployment Infrastructure at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5633880004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5633880004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Domains at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5813134004</link>
-      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5813134004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Growth at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5613601004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 11:32:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5613601004</guid>
     </item>
   </channel>
 </rss>
