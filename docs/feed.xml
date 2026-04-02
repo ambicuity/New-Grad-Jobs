@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 23:48:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 01:04:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Full Stack Software Engineer (Build Reliability)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8358022002?gh_jid=8358022002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 20:19:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8358022002?gh_jid=8358022002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Starlink Ground Network) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8342599002?gh_jid=8342599002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Apr 2026 20:17:23 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8342599002?gh_jid=8342599002</guid>
+    </item>
+    <item>
+      <title>Security Engineer (Application Security) at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
+      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 01 Apr 2026 19:45:27 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
+    </item>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</link>
@@ -118,13 +139,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Wed, 01 Apr 2026 18:10:20 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8382088002?gh_jid=8382088002</guid>
-    </item>
-    <item>
-      <title>Security Engineer (Application Security) at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
-      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Apr 2026 17:57:52 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
     </item>
     <item>
       <title>Data Engineer (Direct To Cell) at SpaceX</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
       <pubDate>Wed, 01 Apr 2026 14:03:57 +0000</pubDate>
       <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7701347</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4666530006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 13:48:18 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4666530006</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4653303006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Apr 2026 13:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4653303006</guid>
     </item>
   </channel>
 </rss>
