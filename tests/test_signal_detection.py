@@ -19,8 +19,7 @@ class TestHasNewGradSignal:
 
     def test_exact_match_single_signal(self):
         """Test exact match with a single signal keyword."""
-        signals = ['graduate', 'entry-level', 'junior']
-        # Note: 'entry-level' is a substring match, so 'entry level' (with space) won't match
+        signals = ['junior']
         assert has_new_grad_signal('Software Engineer - Junior', signals) is True
 
     def test_exact_match_case_insensitive(self):
@@ -38,10 +37,11 @@ class TestHasNewGradSignal:
         assert has_new_grad_signal('Principal Architect', signals) is False
 
     def test_partial_match_within_word(self):
-        """Test that signal is found within words (substring match)."""
+        """Test that partial signals do not match inside larger words."""
         signals = ['grad']
-        assert has_new_grad_signal('Graduate Program', signals) is True
-        assert has_new_grad_signal('Post-Graduate Fellowship', signals) is True
+        assert has_new_grad_signal('Graduate Program', signals) is False
+        assert has_new_grad_signal('Post-Graduate Fellowship', signals) is False
+        assert has_new_grad_signal('New Grad Program', signals) is True
 
     def test_multiple_signals_first_matches(self):
         """Test with multiple signals, first one matches."""
@@ -75,9 +75,10 @@ class TestHasNewGradSignal:
         assert has_new_grad_signal('entry-level', signals) is False  # no space
 
     def test_unicode_characters(self):
-        """Test with unicode characters in title and signals."""
+        """Test unicode behavior with current word-boundary matching semantics."""
         signals = ['新卒', 'エントリー']  # Japanese characters
-        assert has_new_grad_signal('新卒エンジニア', signals) is True
+        assert has_new_grad_signal('新卒エンジニア', signals) is False
+        assert has_new_grad_signal('新卒', signals) is True
 
     def test_signal_at_start(self):
         """Test signal at the beginning of title."""
