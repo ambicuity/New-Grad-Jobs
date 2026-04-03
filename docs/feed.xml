@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 13:41:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 14:31:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7661922</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 10:25:52 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661922</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 10:24:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7747550</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 10:24:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7747550</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Software at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8493079002?gh_jid=8493079002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Other</description>
+      <pubDate>Fri, 03 Apr 2026 10:07:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8493079002?gh_jid=8493079002</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Pipelines at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8477518002?gh_jid=8477518002</link>
@@ -44,17 +72,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Apr 2026 00:30:53 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Fri, 03 Apr 2026 00:30:53 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
+      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 00:30:53 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
     <item>
       <title>Software Engineer, Sensor/Imaging at Waymo</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Apr 2026 13:40:26 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
-    </item>
-    <item>
-      <title>Software Engineer, User Sharing at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7767204?gh_jid=7767204</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 13:31:14 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7767204?gh_jid=7767204</guid>
     </item>
   </channel>
 </rss>
