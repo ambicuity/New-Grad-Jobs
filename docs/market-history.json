@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-03T05:27:51.497171",
+    "last_updated": "2026-04-03T06:49:42.789902",
     "total_snapshots": 30,
     "date_range": {
       "start": "2026-03-05",
@@ -1605,12 +1605,12 @@
     },
     {
       "date": "2026-04-03",
-      "total_jobs": 1016,
+      "total_jobs": 1015,
       "categories": {},
       "tiers": {
         "unicorn": 465,
         "faang_plus": 130,
-        "other": 421
+        "other": 420
       },
       "top_companies": [
         {
@@ -1623,7 +1623,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "Lyft",
@@ -1634,11 +1634,11 @@
           "jobs": 23
         },
         {
-          "company": "NTT DATA",
+          "company": "Medtronic",
           "jobs": 23
         },
         {
-          "company": "Medtronic",
+          "company": "NTT DATA",
           "jobs": 22
         },
         {
@@ -1654,9 +1654,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 4.6,
-      "timestamp": "2026-04-03T05:27:51.496769"
+      "unique_companies": 225,
+      "avg_jobs_per_company": 4.51,
+      "timestamp": "2026-04-03T06:49:42.789360"
     }
   ]
 }
