@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 20:16:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 20:31:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Payments at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7779006?gh_jid=7779006</link>
+      <description>New grad role at Airbnb in Remote, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 20:21:05 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7779006?gh_jid=7779006</guid>
+    </item>
     <item>
       <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7746033</link>
@@ -349,13 +356,6 @@
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Fri, 03 Apr 2026 04:30:53 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Apr 2026 04:30:53 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
   </channel>
 </rss>
