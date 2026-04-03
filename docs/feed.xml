@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 16:01:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 16:55:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Incident Response Security Engineer at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5848335004</link>
+      <description>New grad role at ClickHouse in Singapore (remote). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 03 Apr 2026 12:31:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5848335004</guid>
+    </item>
+    <item>
+      <title>Incident Response Security Engineer at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5848200004</link>
+      <description>New grad role at ClickHouse in United States (remote). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 03 Apr 2026 12:28:59 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5848200004</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer II at Abnormal Security</title>
       <link>https://abnormal.ai/careers/jobs/7612697003?gh_jid=7612697003</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Samsara in Remote - US. Category: Other</description>
       <pubDate>Thu, 02 Apr 2026 15:13:26 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7311741?gh_jid=7311741</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7776179</link>
-      <description>New grad role at Stripe in SF, New York, Seattle. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Apr 2026 15:12:42 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7776179</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 14:50:33 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
     </item>
   </channel>
 </rss>
