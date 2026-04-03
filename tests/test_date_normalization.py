@@ -7,7 +7,13 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import format_posted_date, get_iso_date, is_recent_job, normalize_date_string
+from update_jobs import (
+    extract_sort_date,
+    format_posted_date,
+    get_iso_date,
+    is_recent_job,
+    normalize_date_string,
+)
 
 
 FIXED_NOW_UTC = datetime(2026, 3, 4, 12, 0, 0, tzinfo=timezone.utc)
@@ -168,6 +174,30 @@ def test_get_iso_date_handles_unix_millis_in_utc(monkeypatch):
 
     recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=timezone.utc).timestamp() * 1000)
     assert get_iso_date(recent_ms) == '2024-03-09T10:00:00'
+
+
+def test_get_iso_date_handles_none_nan_empty_and_malformed():
+    assert get_iso_date(None) == ''
+    assert get_iso_date(float('nan')) == ''
+    assert get_iso_date('') == ''
+    assert get_iso_date('not-a-date') == ''
+
+
+def test_extract_sort_date_normalizes_unix_millis_and_offset_strings(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    recent_ms = int((FIXED_NOW_UTC - timedelta(days=2)).timestamp() * 1000)
+    assert extract_sort_date({'posted_at': recent_ms}) == datetime(2026, 3, 2, 12, 0, 0)
+    assert extract_sort_date({'posted_at': '2026-03-01T00:30:00+14:00'}) == datetime(2026, 2, 28, 10, 30, 0)
+
+
+def test_extract_sort_date_parses_human_readable_and_invalid_values(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    assert extract_sort_date({'posted_at': 'Posted Today'}) == datetime(2026, 3, 4, 0, 0, 0)
+    assert extract_sort_date({'posted_at': 'not-a-date'}) == datetime.min
+    assert extract_sort_date({'posted_at': ''}) == datetime.min
+    assert extract_sort_date({'posted_at': None}) == datetime.min
 
 
 def _fixed_datetime_class(fixed_now: datetime):
