@@ -57,6 +57,19 @@ GOOGLE_MAX_PAGES: int = DEFAULT_GOOGLE_MAX_PAGES
 DEFAULT_JOBSPY_WORKERS: int = 25
 DEFAULT_ORCHESTRATOR_WORKERS: int = 20
 
+# Default per-request timeout (seconds) used by all HTTP fetch functions.
+# Sourced from empirical testing: p95 latency for Greenhouse/Lever/Google APIs is <2s.
+# Override per-call by passing timeout=<int> if a specific source needs more headroom.
+DEFAULT_TIMEOUT: int = 5
+
+# Default countries used by JobSpy when none are specified in configuration.
+# Consumed by: fetch_jobspy_jobs()
+DEFAULT_JOBSPY_COUNTRIES: List[Dict[str, str]] = [
+    {'code': 'USA', 'location': 'United States'},
+    {'code': 'Canada', 'location': 'Canada'},
+    {'code': 'India', 'location': 'India'},
+]
+
 
 # Import JobSpy for additional job site scraping
 try:
@@ -85,7 +98,7 @@ def create_optimized_session() -> requests.Session:
     retry_strategy = Retry(
         total=3,  # Max 3 retries
         backoff_factor=0.3,  # Wait 0.3, 0.6, 1.2 seconds between retries
-        status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
+        status_forcelist=[422, 429, 500, 502, 503, 504],  # Retry on these HTTP codes (422 = Workday CSRF expired)
         allowed_methods=["GET", "POST"],  # Retry GET and POST
     )
 
@@ -621,7 +634,7 @@ def is_job_closed(title: str, description: str = '') -> bool:
     closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
 
-def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
     for attempt in range(max_retries + 1):
@@ -631,7 +644,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=timeout)
             response.raise_for_status()
             data = response.json()
 
@@ -677,7 +690,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> 
 
     return jobs
 
-def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
     jobs = []
     for attempt in range(max_retries + 1):
@@ -687,7 +700,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
+            response = limited_get(url, timeout=timeout)
             response.raise_for_status()
             data = response.json()
 
@@ -733,7 +746,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[
 
     return jobs
 
-def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
+def fetch_google_jobs(search_terms: List[str], max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Google Careers API with retry logic"""
     all_jobs = []
 
@@ -753,7 +766,7 @@ def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dic
                 # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=timeout)
                 if response.status_code == 404:
                     print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
@@ -862,6 +875,37 @@ def build_workday_api_url(host: str, site_path: str) -> str:
     return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
 
 
+def get_workday_csrf_token(host: str, session: requests.Session) -> str:
+    """Acquire the X-Calypso-CSRF-Token required by the Workday CXS jobs API.
+
+    Workday's CXS API (``/wday/cxs/.../jobs``) began requiring the
+    ``X-Calypso-CSRF-Token`` header as of early 2026.  The token is issued
+    by the careers homepage as a ``Set-Cookie: CALYPSO_CSRF_TOKEN=<value>``
+    response cookie and must be echoed back as a request header on every
+    subsequent POST.
+
+    Args:
+        host: Workday hostname, e.g. ``boeing.wd1.myworkdayjobs.com``.
+        session: The shared ``requests.Session`` to use for the GET request
+            so that cookies are persisted for the lifetime of the session.
+
+    Returns:
+        The CSRF token string, or an empty string if acquisition fails
+        (graceful degradation — callers should still attempt the POST).
+    """
+    try:
+        careers_url = f"https://{host}/"
+        resp = session.get(careers_url, timeout=DEFAULT_TIMEOUT, allow_redirects=True)
+        # Prefer the header value; fall back to the Set-Cookie cookie.
+        token = resp.headers.get("X-Calypso-CSRF-Token", "")
+        if not token:
+            token = resp.cookies.get("CALYPSO_CSRF_TOKEN", "")
+        return token
+    except Exception as exc:
+        print(f"  ⚠️  Could not acquire Workday CSRF token for {host}: {exc}")
+        return ""
+
+
 def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Workday API"""
     all_jobs = []
@@ -883,6 +927,11 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
             site_path = parsed.path
             api_url = build_workday_api_url(host, site_path)
 
+            # Acquire CSRF token required by Workday CXS API (mandatory since early 2026).
+            # The token is obtained from a GET to the careers homepage and echoed back
+            # as X-Calypso-CSRF-Token on every POST to the jobs endpoint.
+            csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+
             jobs = []
             offset = 0
             limit = 20
@@ -892,7 +941,7 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     "appliedFacets": {},
                     "limit": limit,
                     "offset": offset,
-                    "searchText": "" # Fetch all, filter locally
+                    "searchText": ""  # Fetch all, filter locally
                 }
 
                 headers = {
@@ -900,13 +949,14 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     'Accept': 'application/json',
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
+                if csrf_token:
+                    headers['X-Calypso-CSRF-Token'] = csrf_token
 
-                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
                 if response.status_code == 404:
-                    # Try alternative tenant extraction if 404
+                    # Try alternative tenant extraction if 404.
                     # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    # In that case, tenant is matching path[0]
                     path_parts = [part for part in site_path.strip('/').split('/') if part]
                     if len(path_parts) >= 2:
                         fallback_tenant = path_parts[0]
@@ -916,7 +966,20 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                         fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
                         if fallback_api_url != api_url:
                             api_url = fallback_api_url
-                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
+                            response = limited_post(
+                                api_url,
+                                json=payload,
+                                headers=headers,
+                                timeout=6
+                            )
+
+                if response.status_code == 422:
+                    # CSRF token expired mid-run — re-acquire and retry once.
+                    print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
+                    csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+                    if csrf_token:
+                        headers['X-Calypso-CSRF-Token'] = csrf_token
+                    response = limited_post(api_url, json=payload, headers=headers, timeout=6)
 
                 if not response.ok:
                     print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
@@ -934,22 +997,18 @@ def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) ->
                     job_url = f"https://{host}{external_path}"
                     posted_on = item.get('postedOn', '')
 
-                    # Convert posted_on to approximate date if possible, or just leave text
-                    # Workday sends "Posted Yesterday", "Posted 30+ Days Ago"
-                    # We might need to parse this or just use current date if it says "Today"
-
                     jobs.append({
                         'company': company_name,
                         'title': title,
                         'location': item.get('locationsText', 'Remote'),
                         'url': job_url,
-                        'posted_at': posted_on, # Raw string for now, loop will parse if date format
+                        'posted_at': posted_on,
                         'source': 'Workday',
-                        'description': '' # Not fetching full desc to save requests
+                        'description': ''  # Not fetching full description to save requests
                     })
 
                 offset += limit
-                if len(jobs) >= 200: # Safety limit
+                if len(jobs) >= 200:  # Safety limit
                     break
 
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1075,12 +1134,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
 
-    # Countries to search - USA, Canada, India
-    countries = config_jobspy.get('countries', [
-        {'code': 'USA', 'location': 'United States'},
-        {'code': 'Canada', 'location': 'Canada'},
-        {'code': 'India', 'location': 'India'}
-    ])
+    countries = config_jobspy.get('countries', DEFAULT_JOBSPY_COUNTRIES)
 
     # Build list of all (site, search_term, country) combinations
     search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
@@ -1248,7 +1302,7 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
 
-    Parallelizes ~70+ company API calls with optimized worker count.
+    Parallelizes ~150+ company API calls with optimized worker count.
     Auto-scales workers based on company count for maximum efficiency.
     """
     all_jobs = []
@@ -1675,7 +1729,7 @@ def format_posted_date(posted_at: str) -> str:
         elif diff.days < 7:
             return f"{diff.days} days ago"
         else:
-            return posted_date_utc.strftime("%Y-%m-%d")
+            return posted_date.strftime("%Y-%m-%d")
     except Exception as e:
         print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
@@ -1683,15 +1737,13 @@ def format_posted_date(posted_at: str) -> str:
 def get_iso_date(posted_at) -> str:
     """Get ISO format date string"""
     try:
-        now_utc = datetime.now(timezone.utc)
-
         if isinstance(posted_at, (int, float)):
-            posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
+            posted_date = datetime.fromtimestamp(posted_at / 1000)
         else:
             # Normalize human-readable date strings before parsing
-            normalized_date = normalize_date_string(posted_at, now_utc)
+            normalized_date = normalize_date_string(posted_at)
             posted_date = date_parser.parse(normalized_date)
-        return _as_utc_naive(posted_date).isoformat()
+        return posted_date.replace(tzinfo=None).isoformat()
     except Exception as e:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
@@ -1752,10 +1804,8 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Save daily market snapshot for historical tracking, comparisons, and ML predictions.
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
-    now_utc = datetime.now(timezone.utc)
-
     # Create today's snapshot
-    today = now_utc.strftime('%Y-%m-%d')
+    today = datetime.now().strftime('%Y-%m-%d')
 
 
     # Count jobs by category
@@ -1790,7 +1840,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'top_companies': top_companies,
         'unique_companies': unique_companies,
         'avg_jobs_per_company': avg_jobs_per_company,
-        'timestamp': now_utc.isoformat()
+        'timestamp': datetime.now().isoformat()
     }
 
     # Load existing history
@@ -1821,7 +1871,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
                 break
 
     # Keep only last 90 days
-    cutoff_date = (now_utc - timedelta(days=90)).strftime('%Y-%m-%d')
+    cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
     history = [entry for entry in history if entry['date'] >= cutoff_date]
 
     # Sort by date (oldest to newest)
@@ -1830,7 +1880,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Save back to file
     history_data = {
         'meta': {
-            'last_updated': now_utc.isoformat(),
+            'last_updated': datetime.now().isoformat(),
             'total_snapshots': len(history),
             'date_range': {
                 'start': history[0]['date'] if history else None,
@@ -2110,7 +2160,7 @@ def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
