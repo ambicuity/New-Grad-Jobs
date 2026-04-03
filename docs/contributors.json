@@ -8,10 +8,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/44251619?v=4",
       "profile": "https://github.com/ambicuity",
       "contributions": [
-        "infra",
-        "doc",
-        "code",
-        "maintenance"
+        "code"
       ]
     },
     {
@@ -218,5 +215,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-03-31T20:03:53Z"
+  "generatedAt": "2026-04-03T20:10:51Z"
 }
