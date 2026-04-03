@@ -86,6 +86,15 @@ def test_normalize_date_string_returns_string_for_none_and_nan():
     assert normalize_date_string(float('nan')) == ''
 
 
+def test_normalize_date_string_handles_empty_string():
+    assert normalize_date_string('') == ''
+
+
+def test_normalize_date_string_preserves_unmatched_unicode_text():
+    value = '投稿日: 新卒 2時間前'
+    assert normalize_date_string(value, FIXED_NOW_UTC) == value
+
+
 def test_is_recent_job_handles_utc_offset_string_by_normalizing_to_utc(monkeypatch):
     monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
