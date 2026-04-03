@@ -2,8 +2,7 @@
 """
 New Grad Jobs Aggregator
 Scrapes job postings from Greenhouse, Lever, Google Careers and JobSpy APIs
-and updates docs/jobs.json and related metadata files.
-Static landing-page content is intentionally not staged by this script.
+and updates README.md and jobs.json
 
 Performance Optimizations:
 - Connection pooling with persistent sessions
@@ -35,21 +34,7 @@ import requests
 import yaml
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
-
-try:
-    from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
-except ModuleNotFoundError:
-    # Supports import-by-path CI checks that load `scripts/update_jobs.py`
-    # without first adding `scripts/` to sys.path.
-    from scripts.source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
-
 from urllib3.util.retry import Retry
-
-# Optional NumPy import for robust float handling (e.g. from JobSpy/pandas)
-try:
-    import numpy as np
-except ImportError:
-    np = None
 
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
@@ -71,29 +56,6 @@ GOOGLE_MAX_PAGES: int = DEFAULT_GOOGLE_MAX_PAGES
 # Constants for fixed worker pools
 DEFAULT_JOBSPY_WORKERS: int = 25
 DEFAULT_ORCHESTRATOR_WORKERS: int = 20
-
-# Default per-request timeout (seconds) used by all HTTP fetch functions.
-# Sourced from empirical testing: p95 latency for Greenhouse/Lever/Google APIs is <2s.
-# Override per-call by passing timeout=<int> if a specific source needs more headroom.
-DEFAULT_TIMEOUT: int = 5
-
-# Default page limit for Workday API pagination.
-# Validated against Workday CXS API defaults; overridden by config.yml if present.
-DEFAULT_WORKDAY_PAGE_LIMIT: int = 20
-WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
-
-# Maximum total jobs to fetch per company from Workday for safety/performance.
-# Guardrail to prevent infinite loops; overridden by config.yml if present.
-DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
-WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
-
-# Default countries used by JobSpy when none are specified in configuration.
-# Consumed by: fetch_jobspy_jobs()
-DEFAULT_JOBSPY_COUNTRIES: List[Dict[str, str]] = [
-    {'code': 'USA', 'location': 'United States'},
-    {'code': 'Canada', 'location': 'Canada'},
-    {'code': 'India', 'location': 'India'},
-]
 
 
 # Import JobSpy for additional job site scraping
@@ -123,7 +85,7 @@ def create_optimized_session() -> requests.Session:
     retry_strategy = Retry(
         total=3,  # Max 3 retries
         backoff_factor=0.3,  # Wait 0.3, 0.6, 1.2 seconds between retries
-        status_forcelist=[422, 429, 500, 502, 503, 504],  # Retry on these HTTP codes (422 = Workday CSRF expired)
+        status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP codes
         allowed_methods=["GET", "POST"],  # Retry GET and POST
     )
 
@@ -155,54 +117,6 @@ HTTP_SESSION = create_optimized_session()
 
 # Module-level lock for thread-safe counter updates in parallel fetchers
 _COUNTER_LOCK = threading.Lock()
-
-# HTTP status codes that should never be retried
-NON_RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 400, 401, 404, 405, 410, 451 })
-
-# HTTP status codes that should be retried
-RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({ 403, 408, 422, 429, 500, 502, 503, 504 })
-
-def is_retryable_status(status_code: int) -> bool:
-    """Classify an HTTP status code as retryable or not
-
-    Non-retryable statuses: 400, 401, 404, 405, 410, 451.
-    Retryable statuses: 403, 408, 422, 429, 500, 502, 503, 504.
-    Args:
-        status_code: The HTTP response status code.
-    Returns:
-        True if the request should be retried, False otherwise.
-    """
-    if status_code in RETRYABLE_STATUS_CODES:
-        return True
-    if status_code in NON_RETRYABLE_STATUS_CODES:
-        return False
-    # Default for unknown 5xx is retry, default for all others is no-retry.
-    return 500 <= status_code < 600
-
-
-def _coerce_positive_int(value: Any, default: int, name: str) -> int:
-    """Parse a positive integer or fall back to the provided default."""
-    if value is None:
-        return default
-    if isinstance(value, bool):
-        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
-        return default
-    if isinstance(value, int):
-        parsed = value
-    elif isinstance(value, str):
-        try:
-            parsed = int(value.strip())
-        except ValueError:
-            print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
-            return default
-    else:
-        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
-        return default
-
-    if parsed <= 0:
-        print(f"  ⚠️  Invalid {name}={value!r}; using default {default}")
-        return default
-    return parsed
 
 
 class DomainConcurrencyLimiter:
@@ -263,9 +177,8 @@ class DomainConcurrencyLimiter:
             semaphore.release()
 
 
-# Cap Greenhouse API concurrency across real Greenhouse subdomains while leaving
-# other domains unthrottled.
-DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
+# Cap greenhouse API concurrency while leaving other domains unthrottled.
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"api.greenhouse.io": 10})
 
 
 def limited_get(url: str, **kwargs):
@@ -399,7 +312,6 @@ STARTUPS = {
     'Glide', 'Continue', 'Meshy', 'Suno', 'Fireworks AI', 'Nexthop.ai',
     'SpruceID', 'Netic', 'D3', 'Promise', 'Lightfield', 'Fermat', 'N1',
     'OffDeal', 'Eventual', 'Mechanize', 'Remi', 'TrueBuilt', 'Uare.ai',
-    'Anthropic', 'Adept AI', 'Scale AI',
 }
 
 # CATEGORY_PATTERNS: Job categories based on exact title keywords.
@@ -646,16 +558,6 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
         }
 
-    # Keep this override narrow so network-adjacent software/data roles
-    # continue to use the category keyword ordering below.
-    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
-        category_id = 'infrastructure_sre'
-        return {
-            'id': category_id,
-            'name': CATEGORY_PATTERNS[category_id]['name'],
-            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
-        }
-
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
@@ -719,15 +621,9 @@ def is_job_closed(title: str, description: str = '') -> bool:
     closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
 
-def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
-
-    # Skip immediately if this domain is in cooldown (too many 403s this run).
-    if SOURCE_COOLDOWN.is_tripped(url):
-        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
-        return jobs
-
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -735,18 +631,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Greenhouse)...")
-            response = limited_get(url, timeout=timeout)
-
-            # Handle 403 before raise_for_status — record for cooldown tracking.
-            if response.status_code == 403:
-                admitted = SOURCE_COOLDOWN.try_admit(url)
-                if admitted:
-                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
-                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                else:
-                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
-                break  # 403 is not retriable; move on to next company
-
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -774,18 +659,15 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-
-        except requests.exceptions.HTTPError as e:
-            if hasattr(e, 'response') and e.response is not None:
-                if not is_retryable_status(e.response.status_code):
-                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
-                    break
-            if attempt < max_retries:
+        except requests.exceptions.RequestException as e:
+            if "404" in str(e):
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                break  # Don't retry 404s
+            elif attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
                 print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
-
         except Exception as e:
             if attempt < max_retries:
                 print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
@@ -795,15 +677,9 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
 
     return jobs
 
-def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
     jobs = []
-
-    # Skip immediately if this domain is in cooldown (too many 403s this run).
-    if SOURCE_COOLDOWN.is_tripped(url):
-        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
-        return jobs
-
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -811,18 +687,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 time.sleep(1)  # Wait before retry
 
             print(f"Fetching jobs from {company_name} (Lever)...")
-            response = limited_get(url, timeout=timeout)
-
-            # Handle 403 before raise_for_status — record for cooldown tracking.
-            if response.status_code == 403:
-                admitted = SOURCE_COOLDOWN.try_admit(url)
-                if admitted:
-                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
-                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                else:
-                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
-                break  # 403 is not retriable; move on to next company
-
+            response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K companies
             response.raise_for_status()
             data = response.json()
 
@@ -850,12 +715,11 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 continue
             else:
                 print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
-        except requests.exceptions.HTTPError as e:
-            if hasattr(e, 'response') and e.response is not None:
-                if not is_retryable_status(e.response.status_code):
-                    print(f"  ⚠️  {company_name}: HTTP {e.response.status_code} (non-retryable)")
-                    break
-            if attempt < max_retries:
+        except requests.exceptions.RequestException as e:
+            if "404" in str(e):
+                print(f"  ⚠️  {company_name} endpoint not found (404) - company may have moved to a different job board")
+                break  # Don't retry 404s
+            elif attempt < max_retries:
                 print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
                 continue
             else:
@@ -869,231 +733,87 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
 
     return jobs
 
-def fetch_google_jobs(search_terms: List[str], max_pages: int = 3, max_retries: int = 1, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
-    """Fetches job listings from Google Careers by scraping search results.
+def fetch_google_jobs(search_terms: List[str], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Google Careers API with retry logic"""
+    all_jobs = []
 
-    As the official Google Careers API (v3) is no longer available, this function
-    extracts job data by parsing the 'AF_initDataCallback' JSON payload embedded
-    within the site's HTML. It performs recursive searching within the
-    undocumented nested list structure to isolate job records.
-
-    Args:
-        search_terms: A list of strings representing search queries
-            (e.g., ["software engineer", "devops"]).
-        max_pages: The maximum number of result pages to fetch per search term.
-            Defaults to 3.
-        max_retries: Number of times to retry a failed request using
-            exponential backoff. Defaults to 1.
-        timeout: Request timeout in seconds. Defaults to DEFAULT_TIMEOUT.
-
-    Returns:
-        A list of dictionaries, where each dictionary represents a job posting
-        with the following keys:
-            company (str): Name of the hiring company (e.g., 'Google').
-            title (str): The job position title.
-            location (str): Pipe-separated string of locations or 'Remote'.
-            url (str): The direct link to the job application page.
-            posted_at (str): ISO 8601 formatted UTC timestamp of the posting.
-            source (str): Always 'Google Careers'.
-            description (str): A plain-text snippet of the job description
-                (max 500 characters).
-
-    Raises:
-        This function does not explicitly raise exceptions; instead, it
-        logs errors to stdout and returns an empty list or the jobs collected
-        prior to the encounter of a critical failure (e.g., 403/429 rate
-        limiting or JSON structure changes).
-    """
-    # Google Jobs array indices (as of March 19th, 2026)
-    # Init constants, these map to the index positions in the undocumented JSON structure found below.
-    IDX_ID = 0 # For example, would map to index = 0
-    IDX_TITLE = 1
-    IDX_LINK = 2
-    IDX_COMPANY = 7
-    IDX_LOCATIONS = 9
-    IDX_DESCRIPTION = 10
-    IDX_DATE = 12
-
-    MAX_PAGES = max_pages # Put an upper limit on the number of pages we return to avoid rate limits
-    all_jobs = [] # init array to return store our results.
-    seen_urls = set() # O(1) deduplication with a set, this will contain urls seen with mutliple searches. We want to avoid dupe jobs. This ensures final output is deduplicated.
-    # Gather search_term passed from config.yml like 'new grad software engineer'
     for search_term in search_terms:
-        page = 1 # This is appended to our URL below, Google enforces 20 results per page, so 2 pages = 40 jobs returned. This gets incremented to allow more results.
-        jobs_found_on_page = True
-
-        while jobs_found_on_page:
-            params = urlencode({ # Build our URL using the below params, all get built into url var
-                'q': search_term, # search term would be our dict injected into the URL directly.
-                'hl': 'en', # Enforce english only
-                'location': "United States", # Enforce USA only
-                'target_level': 'EARLY', # Website has a settings like Mid or Senior, we select Early for new grad jobs per the project.
-            }) # Notice that we have two levels, target level APPRENTICE and EARLY do capture more jobs and get the max 'early' jobs.
-            # A job in test_utils (test_fetch_google_jobs_url_shape) must be altered if params are changed. Currently we use two and so does the test.
-
-            url = f"https://www.google.com/about/careers/applications/jobs/results/?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
-
-            html = ""
-            # Start Fetching the HTML with exponential backoff. Fetch is in a retry loop
-            # If a request times out or fails (500s) we sleep for longer and longer periods of time to avoid being throttled
-            # If 403 or 429 is returned, we stop immediately.
-            for attempt in range(max_retries + 1):
-                try:
-                    # Using limited_get which handles connection pooling, compression, and keeps sessions alive
-                    response = limited_get(url, timeout=timeout)
-                    response.raise_for_status()
-                    html = response.text
-                    break
-                except requests.exceptions.HTTPError as e:
-                    if response.status_code in (403, 429):
-                        print(f"  ⚠️  Google: Rate limited or blocked (HTTP {response.status_code}). Aborting remaining Google Careers requests.")
-                        return all_jobs
-                    if response.status_code == 404:
-                        print(f"  ⚠️  Google: Endpoint not found (404) for {url}. Fail fast.")
-                        break
-                    print(f"  ⚠️  Google: HTTP Error {response.status_code} for {url}: {e}")
-                except requests.exceptions.ConnectionError as e:
-                    print(f"  ⚠️  Google: Connection error for {url}: {e}")
-                except requests.exceptions.Timeout:
-                    print(f"  ⚠️  Google: Timeout for {url}")
-                except requests.exceptions.RequestException as e:
-                    print(f"  ⚠️  Google: Request error for {url}: {e}")
-
-                # Set out back off, sleeping for a bit, then increasing before trying again.
-                if attempt < max_retries:
-                    sleep_time = 3.0 * (2 ** attempt)
-                    print(f"  ⚠️  Google: Retrying in {sleep_time} seconds (attempt {attempt + 1}/{max_retries})...")
-                    time.sleep(sleep_time)
-
-            if not html:
-                print(f"⚠️  Google: Failed to fetch {url} after {max_retries + 1} attempts.")
-                return all_jobs # Stop, something is not right.
-            # This regex extraction in re.search finds a very specific <script> block AF_initDataCallback (for now) inside page body.
-            # This is where google puts raw data used to render the page in the browser. We slice out the inner characters so we just have a nice JSON string
-            match = re.search(r"AF_initDataCallback\(\{key: 'ds:1', hash: '[^']+', data:([^<]+)\}\);</script>", html)
-            if not match: # If not found, get out. Might be somewhere else or maybe they are on to us.
-                print(
-                    f"⚠️  Google: AF_initDataCallback payload missing for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
-                ) # Hard Scrape failure, stop and get out.
-                return all_jobs
-
-            data_str = match.group(1)
-            start = data_str.find('[')
-            end = data_str.rfind(']') + 1
-            json_str = data_str[start:end]
-            # Begin parsing string into nested Python list using json.loads.
-            # After, we pass the structure to find_jobs_array which digs through the lists to isolate the needed array of jobs.
+        jobs = []
+        for attempt in range(max_retries + 1):
             try:
-                parsed = json.loads(json_str)
-            except json.JSONDecodeError as e:
-                print(
-                    f"⚠️  Google: JSON decode error for term={search_term!r}, page={page}, url={url}. Aborting Google Careers Scrape."
-                ) # Hard Scrape failure, stop and get out.
-                return all_jobs
-            except (IndexError, TypeError, ValueError) as e:
-                print(f"⚠️  Google: Unexpected error parsing JSON on page {page}: {e}")
-                return all_jobs # Unknown error, break off and no retry.
+                if attempt > 0:
+                    print(f"  🔄 Retry {attempt} for Google search '{search_term}'...")
+                    time.sleep(1)  # Wait before retry
 
-            # Find_jobs_array is used for parsing undocumented string data from google careers using DFS to five into every nested list.
-            # This is a recursive search function that goes thru the deep nested python list parsed from JSON looking for a pattern
-            # 1. Check if isinstance(obj) > 0: Is the current object a list?
-            # 2. isinstance(obj[0], list) - Is the first item also a list? If so keep going
-            # 3. Does this inner list have at least one item? (len(obj[0]) > 0)
-            # 4. If it does have a item, does the item only have numbers? isinstance(obj[0][0], str) and isdigit()
-            # If signature matches, then assume we found the list of jobs and return obj. If not, go through current list and dig deeper with res = find_jobs_array(item)
-            # Google does not provide a clean nested JSON for us, instead we find the data in raw HTML (<script> tag)
-            # At the very least, if google changes something here, this array can find the path (within reason)
-            # This function makes the scrape as a whole more resilient.
-            def find_jobs_array(obj):
-                if isinstance(obj, list):
-                    if len(obj) > 0 and isinstance(obj[0], list) and len(obj[0]) > 0 and isinstance(obj[0][0], str) and obj[0][0].isdigit():
-                        return obj
-                    for item in obj:
-                        res = find_jobs_array(item)
-                        if res: return res
-                return None
-            # Use find_jobs array to try to find a regex match
-            jobs_list = find_jobs_array(parsed)
-            print(f"DEBUG: Regex Match Found? {match is not None}")
-            print(f"DEBUG: jobs_list Found? {jobs_list is not None}")
-            if not jobs_list:
-                jobs_found_on_page = False # If this is false, it means we might be on page=4, but if there are only 3 pages of jobs, we want to stop.
-                continue    # continue and on to the next search term in googles config. Both needed here to prevent a infinite loop
+                print(f"Searching Google careers for '{search_term}'...")
+                # Build the search URL with USA location filter
+                search_query = search_term.replace(' ', '%20')
+                # NOTE: /api/v3/search/ returns 404 as of 2026-03 — endpoint is
+                # deprecated. Tracked in GitHub issue: "Google Careers API broken".
+                # Update this URL when the new endpoint is confirmed.
+                url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-            new_jobs = 0
-            # Parse the field into Title, URL, Company, Location, Description and post date(unix timstamp)
-            for job in jobs_list:
-                try:
-                    job_id = job[IDX_ID]
-                    title = job[IDX_TITLE]
-                    link = job[IDX_LINK]
+                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                if response.status_code == 404:
+                    print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
+                    break
+                response.raise_for_status()
+                data = response.json()
 
-                    # Validate core fields before proceeding.
-                    # title and link must be non-empty strings to avoid downstream crashes in filter_jobs().
-                    if not isinstance(title, str) or not title.strip():
+                if not isinstance(data, dict) or 'jobs' not in data:
+                    print(f"  ⚠️  Google: Unexpected API response format for '{search_term}'")
+                    continue
+
+                for job in data.get('jobs', []):
+                    # Extract location information from Google's format
+                    locations = job.get('locations', [])
+                    location_names = []
+                    for loc in locations:
+                        if loc.get('country_code') == 'US':  # Only USA locations
+                            display_name = loc.get('display', '')
+                            if display_name:
+                                location_names.append(display_name)
+
+                    if not location_names:  # Skip jobs without USA locations
                         continue
 
-                    if not link:
-                        link = f"https://www.google.com/about/careers/applications/jobs/results/{job_id}"
+                    location_str = '; '.join(location_names)
+                    description = job.get('description', '') or ''
 
-                    if not isinstance(link, str) or not link.strip():
-                        continue
+                    jobs.append({
+                        'company': 'Google',
+                        'title': job.get('title', ''),
+                        'location': location_str,
+                        'url': job.get('apply_url', ''),
+                        'posted_at': job.get('created') or job.get('publish_date'),
+                        'source': 'Google Careers',
+                        'description': description[:500] if description else ''
+                    })
 
-                    # Should be google only, but just in case. Google has other companies like waymo or Deep Mind.
-                    # Defaults to "Google" if the company field is missing, not a string, or empty.
-                    raw_company = job[IDX_COMPANY] if len(job) > IDX_COMPANY else None
-                    company = raw_company if isinstance(raw_company, str) and raw_company.strip() else "Google"
+                print(f"  ✓ Found {len(jobs)} USA jobs from Google search '{search_term}'")
+                all_jobs.extend(jobs)
+                break  # Success, exit retry loop
 
-                    locations = []
-                    if len(job) > IDX_LOCATIONS and isinstance(job[IDX_LOCATIONS], list):
-                        for loc in job[IDX_LOCATIONS]:
-                            if isinstance(loc, list) and len(loc) > 0:
-                                locations.append(loc[0])
-
-                    location_str = " | ".join(locations) if locations else "Remote"
-                    # Posted date unix timestamp is extracted, we clean up the date into ISO 8601 and also strip HTML tags(br) from it.
-                    posted_at = ""
-                    if len(job) > IDX_DATE and isinstance(job[IDX_DATE], list) and len(job[IDX_DATE]) > 0:
-                        ts = job[IDX_DATE][0]
-                        if isinstance(ts, (int, float)):
-                            posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat() # ISO 8601
-
-                    desc_html = "" # Init blank text
-                    # Below is a bound check, ensure that index access is safe with len(job) before going to higher indices like 7,9,12.
-                    if len(job) > IDX_DESCRIPTION and isinstance(job[IDX_DESCRIPTION], list) and len(job[IDX_DESCRIPTION]) > 1:
-                        desc_html = job[IDX_DESCRIPTION][1] or ""
-                    # strip HTML from the text if any is found.
-                    desc_text = re.sub(r'<[^>]+>', ' ', desc_html)
-                    desc_text = re.sub(r'\s+', ' ', desc_text).strip()
-                    description = desc_text[:500]
-                    # Deduplicate in O(1) using a set for faster processing.
-                    if link not in seen_urls:
-                        seen_urls.add(link)
-                        all_jobs.append({
-                            "company": company,
-                            "title": title,
-                            "location": location_str,
-                            "url": link,
-                            "posted_at": posted_at,
-                            "source": "Google Careers", # Single Source, should just be this unless they change it again.
-                            "description": description
-                        })
-                        new_jobs += 1
-                except (IndexError, TypeError, ValueError) as e:
-                    job_id = job[0] if isinstance(job, list) and len(job) > 0 else "Unknown"
-                    print(f"  ⚠️  Google: Error parsing job data (ID: {job_id}): {e}") # Print error for later ref
-            # If no new jobs were added at all, most likely hit the end of the unique pages
-            # Does current page = or exceed MAX_PAGES?
-            #If either is true, break the while loop and start looking at the next search term.
-            if new_jobs == 0:
-                jobs_found_on_page = False
-            else:
-                if page >= MAX_PAGES: # MAX_PAGES set above in order to limit any excessive GET requests
-                    jobs_found_on_page = False
+            except requests.exceptions.Timeout:
+                if attempt < max_retries:
+                    print(f"  ⏱️  Google search '{search_term}' timed out, retrying...")
+                    continue
                 else:
-                    page += 1 # +1 to add to the page URL rather than look for the next page link.
-    print("✓ Found Google Career Jobs returned: ", len(all_jobs)) # Print total number of jobs found for logs
-    return all_jobs # Return all jobs found
+                    print(f"  ❌ Google search '{search_term}' timed out after {max_retries + 1} attempts")
+            except requests.exceptions.RequestException as e:
+                if attempt < max_retries:
+                    print(f"  ⚠️  Request error for Google search '{search_term}': {e}, retrying...")
+                    continue
+                else:
+                    print(f"  ❌ Request error for Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+            except Exception as e:
+                if attempt < max_retries:
+                    print(f"  ⚠️  Error fetching Google search '{search_term}': {e}, retrying...")
+                    continue
+                else:
+                    print(f"  ❌ Error fetching Google search '{search_term}' after {max_retries + 1} attempts: {e}")
+
+    return all_jobs
 
 
 def build_workday_api_url(host: str, site_path: str) -> str:
@@ -1142,48 +862,8 @@ def build_workday_api_url(host: str, site_path: str) -> str:
     return f"https://{clean_host}/wday/cxs/{tenant}/{site_id}/jobs"
 
 
-def get_workday_csrf_token(host: str, session: requests.Session) -> str:
-    """Acquire the X-Calypso-CSRF-Token required by the Workday CXS jobs API.
-
-    Workday's CXS API (``/wday/cxs/.../jobs``) began requiring the
-    ``X-Calypso-CSRF-Token`` header as of early 2026.  The token is issued
-    by the careers homepage as a ``Set-Cookie: CALYPSO_CSRF_TOKEN=<value>``
-    response cookie and must be echoed back as a request header on every
-    subsequent POST.
-
-    Args:
-        host: Workday hostname, e.g. ``boeing.wd1.myworkdayjobs.com``.
-        session: The shared ``requests.Session`` to use for the GET request
-            so that cookies are persisted for the lifetime of the session.
-
-    Returns:
-        The CSRF token string, or an empty string if acquisition fails
-        (graceful degradation — callers should still attempt the POST).
-    """
-    try:
-        careers_url = f"https://{host}/"
-        resp = session.get(careers_url, timeout=DEFAULT_TIMEOUT, allow_redirects=True)
-        # Prefer the header value; fall back to the Set-Cookie cookie.
-        token = resp.headers.get("X-Calypso-CSRF-Token", "")
-        if not token:
-            token = resp.cookies.get("CALYPSO_CSRF_TOKEN", "")
-        return token
-    except Exception as exc:
-        print(f"  ⚠️  Could not acquire Workday CSRF token for {host}: {exc}")
-        return ""
-
-
-def fetch_workday_jobs(companies: List[Dict[str, str]],
-                       page_limit: int | None = None,
-                       max_total_limit: int | None = None,
-                       max_retries: int = 2) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API with pagination and safety limits."""
-    page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, 'page_limit')
-    max_total_limit = _coerce_positive_int(
-        max_total_limit,
-        WORKDAY_MAX_JOBS_PER_COMPANY,
-        'max_total_limit',
-    )
+def fetch_workday_jobs(companies: List[Dict[str, str]], max_retries: int = 2) -> List[Dict[str, Any]]:
+    """Fetch jobs from Workday API"""
     all_jobs = []
 
     for company in companies:
@@ -1191,11 +871,6 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
         workday_url = company.get('workday_url')
 
         if not company_name or not workday_url:
-            continue
-
-        # Skip immediately if this Workday domain is in cooldown.
-        if SOURCE_COOLDOWN.is_tripped(workday_url):
-            print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(workday_url)}' in cooldown (403 threshold exceeded)")
             continue
 
         print(f"Fetching jobs from {company_name} (Workday)...")
@@ -1208,21 +883,16 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
             site_path = parsed.path
             api_url = build_workday_api_url(host, site_path)
 
-            # Acquire CSRF token required by Workday CXS API (mandatory since early 2026).
-            # The token is obtained from a GET to the careers homepage and echoed back
-            # as X-Calypso-CSRF-Token on every POST to the jobs endpoint.
-            csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
-
             jobs = []
             offset = 0
-            handled_403 = False
+            limit = 20
 
             while True:
                 payload = {
                     "appliedFacets": {},
-                    "limit": page_limit,
+                    "limit": limit,
                     "offset": offset,
-                    "searchText": ""  # Fetch all, filter locally
+                    "searchText": "" # Fetch all, filter locally
                 }
 
                 headers = {
@@ -1231,63 +901,25 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
 
-                response = None
-                for attempt in range(max_retries + 1):
-                    if attempt > 0:
-                        time.sleep(1)
+                response = limited_post(api_url, json=payload, headers=headers, timeout=6)  # AGGRESSIVE: 6s
 
-                    if csrf_token:
-                        headers['X-Calypso-CSRF-Token'] = csrf_token
+                if response.status_code == 404:
+                    # Try alternative tenant extraction if 404
+                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                    # In that case, tenant is matching path[0]
+                    path_parts = [part for part in site_path.strip('/').split('/') if part]
+                    if len(path_parts) >= 2:
+                        fallback_tenant = path_parts[0]
+                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                            fallback_tenant = path_parts[1]
 
-                    response = limited_post(api_url, json=payload, headers=headers, timeout=6)
+                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                        if fallback_api_url != api_url:
+                            api_url = fallback_api_url
+                            response = limited_post(api_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=6)  # AGGRESSIVE
 
-                    # Initial structural check for 404 (only on first attempt)
-                    if response.status_code == 404 and attempt == 0:
-                        path_parts = [part for part in site_path.strip('/').split('/') if part]
-                        if len(path_parts) >= 2:
-                            fallback_tenant = path_parts[0]
-                            if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
-                                fallback_tenant = path_parts[1]
-
-                            fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
-                            if fallback_api_url != api_url:
-                                api_url = fallback_api_url
-                                response = limited_post(api_url, json=payload, headers=headers, timeout=6)
-
-                    # CSRF token expired or transient issue mid-run
-                    if response.status_code == 422:
-                        print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token (attempt {attempt+1}/{max_retries+1})...")
-                        csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
-                        continue # Retry with new token
-
-                    # 403 Forbidden — record for cooldown tracking; do not retry.
-                    if response.status_code == 403:
-                        admitted = SOURCE_COOLDOWN.try_admit(api_url)
-                        if admitted:
-                            count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(api_url), 0)
-                            print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                        else:
-                            print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
-                        handled_403 = True
-                        break  # Break inner retry loop — handled below
-
-                    if response.ok:
-                        break # Success
-
-                    if attempt < max_retries:
-                        print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt+1}/{max_retries})...")
-
-                # Skip generic error log and success footer when 403 was already handled above.
-                if handled_403:
-                    break
-
-                # Log generic non-OK outcome only when it was not a handled 403.
-                if not response or not response.ok:
-                    try:
-                        error_body = response.json() if response else "No response"
-                    except (json.JSONDecodeError, ValueError):
-                        error_body = response.text[:500] if response else "No response"
-                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code if response else 'N/A'} — {error_body}")
+                if not response.ok:
+                    print(f"  ⚠️  Workday API error for {company_name}: {response.status_code}")
                     break
 
                 data = response.json()
@@ -1296,36 +928,32 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
                 if not job_items:
                     break
 
-                remaining = max_total_limit - len(jobs)
-                if remaining <= 0:
-                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
-                    break
-
-                for item in job_items[:remaining]:
+                for item in job_items:
                     title = item.get('title', '')
                     external_path = item.get('externalPath', '')
                     job_url = f"https://{host}{external_path}"
                     posted_on = item.get('postedOn', '')
+
+                    # Convert posted_on to approximate date if possible, or just leave text
+                    # Workday sends "Posted Yesterday", "Posted 30+ Days Ago"
+                    # We might need to parse this or just use current date if it says "Today"
 
                     jobs.append({
                         'company': company_name,
                         'title': title,
                         'location': item.get('locationsText', 'Remote'),
                         'url': job_url,
-                        'posted_at': posted_on,
+                        'posted_at': posted_on, # Raw string for now, loop will parse if date format
                         'source': 'Workday',
-                        'description': ''  # Not fetching full description to save requests
+                        'description': '' # Not fetching full desc to save requests
                     })
 
-                if len(jobs) >= max_total_limit:
-                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
+                offset += limit
+                if len(jobs) >= 200: # Safety limit
                     break
 
-                offset += page_limit
-
-            if not handled_403:
-                print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
-                all_jobs.extend(jobs)
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            all_jobs.extend(jobs)
 
         except Exception as e:
             print(f"  ❌ Error processing {company_name}: {e}")
@@ -1447,7 +1075,12 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     results_wanted = config_jobspy.get('results_wanted', 50)
     hours_old = config_jobspy.get('hours_old', 72)
 
-    countries = config_jobspy.get('countries', DEFAULT_JOBSPY_COUNTRIES)
+    # Countries to search - USA, Canada, India
+    countries = config_jobspy.get('countries', [
+        {'code': 'USA', 'location': 'United States'},
+        {'code': 'Canada', 'location': 'Canada'},
+        {'code': 'India', 'location': 'India'}
+    ])
 
     # Build list of all (site, search_term, country) combinations
     search_tasks = [(site, term, country) for site in sites for term in search_terms for country in countries]
@@ -1461,15 +1094,8 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     completed = 0
     errors = 0
 
-    def search_single(args: tuple[str, str, Dict[str, str]]) -> Dict[str, Any]:
-        """Worker function to search a single site/term/country combination
-
-        Args:
-            args (tuple): site, search_term, country
-
-        Returns:
-            Dict[str, Any]: Search metadata plus normalized jobs for one task.
-        """
+    def search_single(args):
+        """Worker function to search a single site/term/country combination"""
         site, search_term, country = args
         jobs_list = []
 
@@ -1622,7 +1248,7 @@ def fetch_scraper_api_jobs(config_scraper: Dict[str, Any]) -> List[Dict[str, Any
 def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch all Greenhouse jobs in parallel using ThreadPoolExecutor
 
-    Parallelizes ~150+ company API calls with optimized worker count.
+    Parallelizes ~70+ company API calls with optimized worker count.
     Auto-scales workers based on company count for maximum efficiency.
     """
     all_jobs = []
@@ -1637,14 +1263,6 @@ def fetch_all_greenhouse_jobs_parallel(companies: List[Dict[str, Any]], max_work
     print(f"\n🚀 Starting PARALLEL Greenhouse fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
-        """Worker function for Greenhouse fetch
-
-        Args:
-            company (Dict[str, str]): Company metadata.
-
-        Returns:
-            List[Dict[str, Any]]: List of normalized jobs.
-        """
         return fetch_greenhouse_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -1683,14 +1301,6 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
     print(f"\n🚀 Starting PARALLEL Lever fetch: {total} companies with {max_workers} workers")
 
     def fetch_single(company: Dict[str, str]) -> List[Dict[str, Any]]:
-        """Worker function for Lever fetch
-
-        Args:
-            company (Dict[str, str]): Company metadata.
-
-        Returns:
-            List[Dict[str, Any]]: List of normalized jobs.
-        """
         return fetch_lever_jobs(company['name'], company['url'])
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -1710,6 +1320,7 @@ def fetch_all_lever_jobs_parallel(companies: List[Dict[str, Any]], max_workers: 
 
     print(f"✅ Lever parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} companies")
     return all_jobs
+
 
 def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None) -> List[Dict[str, Any]]:
     """Fetch Google Careers jobs in parallel for all search terms"""
@@ -1740,24 +1351,10 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                 # Update this URL when the new endpoint is confirmed.
                 url = f"https://careers.google.com/api/v3/search/?location=United States&q={search_query}&page_size=100"
 
-                # Check cooldown before making a request.
-                if SOURCE_COOLDOWN.is_tripped(url):
-                    print(f"  ⏭️  Google '{search_term}': skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown")
-                    return jobs
-
                 response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 404:
                     print(f"  ❌ Google '{search_term}': careers API returned 404 — endpoint deprecated, see open GitHub issue")
                     break
-                # Handle 403 before raise_for_status — record for cooldown tracking.
-                if response.status_code == 403:
-                    admitted = SOURCE_COOLDOWN.try_admit(url)
-                    if admitted:
-                        count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
-                        print(f"  ⚠️  Google '{search_term}': 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                    else:
-                        print(f"  🚫 Google '{search_term}': 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(url)}'")
-                    break  # 403 is not retriable
                 response.raise_for_status()
                 data = response.json()
 
@@ -1822,17 +1419,9 @@ def get_job_key(job: Dict[str, Any]) -> str:
         """Safely convert any value to lowercase string"""
         if value is None:
             return ''
-        # Check for built-in floats or NumPy floating types
-        if isinstance(value, float) or (np is not None and isinstance(value, np.floating)):
-            # Robustly handle NaN and Inf for both built-in and NumPy floats
-            if np is not None and isinstance(value, np.floating):
-                is_nan = np.isnan(value)
-                is_inf = np.isinf(value)
-            else:
-                is_nan = math.isnan(value)
-                is_inf = math.isinf(value)
-
-            if is_nan or is_inf:
+        if isinstance(value, float):
+            # Handle NaN and other floats
+            if math.isnan(value):
                 return ''
             return str(value)
         return str(value).lower().strip()
@@ -1861,88 +1450,30 @@ def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return unique_jobs
 
 def has_new_grad_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains new grad signals.
-
-    We do a case-insensitive search across job titles found in signals (which is
-    found in the config file) and return True if any signal is found.
-    We match only whole words, preventing partial matches, and handle
-    Null, NaNs, and non-string values.
-
-    Args:
-        title: The job title to check.
-        signals: List of signal keywords to match.
-
-    Returns:
-        True if any signal is found in the (job) title, False otherwise.
-
-    Examples:
-    >>> has_new_grad_signal("Software Engineer Intern", ["intern", "new grad"]) -> True
-    True
-    """
-    # Fast exit if empty or null, saving compute.
-    if not signals:
-        return False
-    # Type guard: if not a string, not a signal.
-    if not isinstance(title, str):
-        return False #Handle NaN and None values gracefully
-    # Handle edge cases where string itself might be 'nan' or none.
-    if title.strip().lower() in {'nan', 'none'}:
-        return False
-
-    # Let regex do more lifting, below we normalize signals- lower-case, stripped, and escape regex
-
-    normalized_signals = [
-        re.escape(s.strip().lower())
-        for s in signals
-        if isinstance(s, str) and s.strip()
-    ]
-    # Exit if no valid, non-empty signals after normalization.
-    if not normalized_signals:
-        return False
-    # Build regex and execute search.
-    combined_signals = "|".join(normalized_signals)
-    pattern = rf"\b({combined_signals})\b"
-
-    return bool(re.search(pattern, title.lower()))
-
-
-
-def has_track_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains track signal keywords (e.g. 'software', 'data').
-
-    Args:
-        title (str): The job title to check.
-        signals (List[str]): List of keywords to search for.
-
-    Returns:
-        bool: True if any signal is found in the title.
-    """
+    """Check if job title contains new grad signals"""
     title_lower = title.lower()
     return any(signal.lower() in title_lower for signal in signals)
 
-def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
-    """Normalize human-readable date strings to ISO format dates.
+def has_track_signal(title: str, signals: List[str]) -> bool:
+    """Check if job title contains track signals"""
+    title_lower = title.lower()
+    return any(signal.lower() in title_lower for signal in signals)
+
+def normalize_date_string(posted_at: str, now_utc: datetime | None = None) -> str:
+    """
+    Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
+    to ISO format dates that date_parser can handle.
+
     Handles formats like:
     - "Posted Today" -> today's date
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
-    - "Posted 3 Hours Ago" -> today's date
-    - "45 Minutes Ago" -> today's date
 
-    Args:
-        posted_at (Any): Raw date string or date/datetime object.
-        now_utc (datetime | None): Current UTC time for relative calculations.
-
-    Returns:
-        str: ISO formatted date (YYYY-MM-DD) or original string if no match.
+    Also handles native datetime.date / datetime.datetime objects returned by
+    Workday / JobSpy API clients, coercing them to their ISO-format string so
+    that downstream dateparser never receives a non-string argument.
     """
-    if posted_at is None:
-        return ''
-
-    if isinstance(posted_at, float) and math.isnan(posted_at):
-        return ''
-
     if not isinstance(posted_at, str):
         # Coerce native date/datetime objects to ISO string rather than
         # returning them raw, which causes dateparser to emit:
@@ -1950,7 +1481,7 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         if hasattr(posted_at, 'isoformat'):
             return posted_at.isoformat()
 
-        return str(posted_at)
+        return posted_at
 
     posted_at_lower = posted_at.lower().strip()
     if now_utc is None:
@@ -1976,10 +1507,6 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     if days_plus_match:
         days = int(days_plus_match.group(1))
         return (now - timedelta(days=days)).strftime('%Y-%m-%d')
-
-    # Handle "X hours ago" or "X minutes ago" (resolve to today)
-    if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
-        return now.strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
@@ -2024,14 +1551,7 @@ def is_recent_job(posted_at: str, max_age_days: int) -> bool:
         return False
 
 def is_valid_location(location: str) -> bool:
-    """Check if job location is in target countries (USA, Canada, India) or Remote.
-
-    Args:
-        location (str): Job location string.
-
-    Returns:
-        bool: True if location is valid/targeted, False otherwise.
-    """
+    """Check if job location is in target countries (USA, Canada, India) or Remote"""
     if not location:
         return False
 
@@ -2132,15 +1652,8 @@ def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     return enriched
 
-def format_posted_date(posted_at: Any) -> str:
-    """Format posted date for display (e.g., 'Today', '2 days ago').
-
-    Args:
-        posted_at (Any): Raw date string, timestamp, or date object.
-
-    Returns:
-        str: Human-readable formatted date string.
-    """
+def format_posted_date(posted_at: str) -> str:
+    """Format posted date for display"""
     try:
         now_utc = datetime.now(timezone.utc)
 
@@ -2167,17 +1680,11 @@ def format_posted_date(posted_at: Any) -> str:
         print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
 
-def get_iso_date(posted_at: Any) -> str:
-    """Get ISO format date string (YYYY-MM-DDTHH:MM:SS) from various inputs.
-
-    Args:
-        posted_at (Any): Raw date string, timestamp, or date object.
-
-    Returns:
-        str: ISO formatted date-time string.
-    """
+def get_iso_date(posted_at) -> str:
+    """Get ISO format date string"""
     try:
         now_utc = datetime.now(timezone.utc)
+
         if isinstance(posted_at, (int, float)):
             posted_date = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
         else:
@@ -2580,6 +2087,189 @@ def extract_sort_date(job: Dict[str, Any]) -> datetime:
     except Exception:
         return datetime.min
 
+def generate_readme(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> str:
+    """Generate README content with job listings - SimplifyJobs style"""
+
+    # Sort jobs by posted date (most recent first)
+    jobs.sort(key=extract_sort_date, reverse=True)
+
+    # Calculate category counts
+    category_counts = {}
+    for job in jobs:
+        cat_id = job.get('category', {}).get('id', 'other')
+        category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
+
+    # Build README
+    readme_content = f"""# 🎓 2026 New Grad Positions
+
+[![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
+[![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
+[![Jobs](https://img.shields.io/badge/jobs-{len(jobs)}-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
+
+**Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
+
+🔄 Unlike manual lists, this repo uses **70+ company APIs** and updates **every 5 minutes** 24/7.
+
+🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
+
+> [!NOTE]
+> **Solo-Maintained Project.** This repository is maintained by one person in spare time.
+> PRs are reviewed within **1–2 weeks**. Bug fixes take priority over feature requests.
+> Before opening an issue, read [SUPPORT.md](.github/SUPPORT.md).
+
+---
+
+## 📂 Browse {len(jobs)} Jobs by Category
+
+"""
+
+    # Add category links
+    for cat_id, cat_info in CATEGORY_PATTERNS.items():
+        count = category_counts.get(cat_id, 0)
+        if count > 0:
+            anchor = cat_info['name'].lower().replace(' ', '-').replace('&', '').replace('  ', '-')
+            readme_content += f"{cat_info['emoji']} [{cat_info['name']}](#{anchor}) ({count})\n\n"
+
+    readme_content += """---
+
+## 🚀 Legend
+
+| Icon | Meaning |
+|------|---------|
+| 🔥 | FAANG+ Company |
+| 🚀 | Unicorn Startup |
+| 🛂 | No Visa Sponsorship |
+| 🇺🇸 | US Citizenship Required |
+| 🔒 | Position Closed |
+
+---
+
+"""
+
+    # Group jobs by category
+    jobs_by_category = {}
+    for job in jobs:
+        cat_id = job.get('category', {}).get('id', 'other')
+        if cat_id not in jobs_by_category:
+            jobs_by_category[cat_id] = []
+        jobs_by_category[cat_id].append(job)
+
+    # Generate tables for each category
+    for cat_id, cat_info in CATEGORY_PATTERNS.items():
+        cat_jobs = jobs_by_category.get(cat_id, [])
+        if not cat_jobs:
+            continue
+
+        readme_content += f"## {cat_info['emoji']} {cat_info['name']} New Grad Roles\n\n"
+        readme_content += "[Back to top](#-2026-new-grad-positions)\n\n"
+        readme_content += "| Company | Role | Location | Posted | Apply |\n"
+        readme_content += "|---------|------|----------|--------|-------|\n"
+
+        for job in cat_jobs:
+            company = job.get('company', 'Unknown')
+            title = job.get('title', 'Unknown')
+            location = job.get('location', 'Remote')
+            posted = format_posted_date(job.get('posted_at', ''))
+            url = job.get('url', '#')
+
+            # Add company tier emoji
+            tier_emoji = job.get('company_tier', {}).get('emoji', '')
+            if tier_emoji:
+                company = f"{tier_emoji} {company}"
+
+            # Add flags
+            flags = job.get('flags', {})
+            flag_str = ""
+            if flags.get('no_sponsorship'):
+                flag_str += " 🛂"
+            if flags.get('us_citizenship_required'):
+                flag_str += " 🇺🇸"
+            if job.get('is_closed'):
+                flag_str += " 🔒"
+
+            # Escape pipe characters
+            title = title.replace('|', '\\|')
+            location = location.replace('|', '\\|')
+
+            apply_link = f"[Apply]({url})" if url and url != '#' and not job.get('is_closed') else "🔒"
+
+            readme_content += f"| {company} | {title}{flag_str} | {location} | {posted} | {apply_link} |\n"
+
+        readme_content += "\n"
+
+    readme_content += f"""---
+
+## 📊 About This Repository
+
+This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
+
+### 🔌 Data Sources
+- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
+- **Search APIs**: Google Careers direct searches
+- **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
+- **Community Submissions**: User-submitted jobs via GitHub Issues
+
+### ⚡ Key Features
+- **Comprehensive Coverage**: 70+ companies across multiple platforms
+- **Real-time Updates**: Automatic updates every 5 minutes
+- **Smart Filtering**: Advanced filtering for new grad positions
+- **USA Focus**: Filters for US-based positions only
+- **Category Organization**: Jobs organized by role type
+- **Company Badges**: FAANG+ and unicorn companies highlighted
+
+### 🎯 Filtering Criteria
+- **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
+- **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
+- **Recency**: Jobs posted within the last {config.get('filtering', {}).get('max_age_days', 60)} days
+- **Location**: USA-based positions only
+
+### 🏢 Companies Monitored
+
+<details>
+<summary>Click to expand (70+ companies)</summary>
+
+**Greenhouse**: {', '.join([company['name'] for company in config['apis']['greenhouse']['companies']])}
+
+**Lever**: {', '.join([company['name'] for company in config['apis']['lever']['companies']])}
+
+**Google Careers**: Direct API searches
+
+**JobSpy**: LinkedIn, Indeed, Glassdoor
+
+</details>
+
+---
+
+### 🧪 Test Coverage
+
+<details>
+<summary>Click to view Codecov Sunburst Graph</summary>
+<br>
+<img src="https://codecov.io/github/ambicuity/New-Grad-Jobs/graphs/sunburst.svg?token=1D0TO5UL1T" alt="Codecov Sunburst Graph" />
+</details>
+
+---
+
+## 🤝 Contributing
+
+Found a job we're missing? Want to report a closed position?
+
+1. [Submit a new job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml)
+2. [Report a closed job](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=edit_role.yml)
+3. [Report a bug](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=bug_report.yml)
+
+---
+
+⭐ **Star this repo** to stay updated with the latest new grad opportunities!
+
+*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}*
+"""
+
+    return readme_content
+
+
 def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
     """Generate an RSS 2.0 feed from the most recent jobs.
 
@@ -2715,11 +2405,7 @@ def check_job_url_health(jobs: List[Dict[str, Any]],
 
 
 def main():
-    """Scrape job listings and write pipeline artifacts to docs/.
-
-    Side effects:
-    - Writes docs/jobs.json, docs/market-history.json, docs/health.json, docs/feed.xml
-    - README.md is intentionally NOT written here; use a dedicated workflow if needed
+    """Main function to scrape jobs and update README
 
     PERFORMANCE OPTIMIZED: Uses parallel fetching for all API sources
     to reduce execution time from ~7 min to ~1-2 min.
@@ -2752,20 +2438,6 @@ def main():
     DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
     DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
 
-    # Load Workday limits from config.yml with validated fallbacks
-    global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY
-    workday_cfg = config.get('apis', {}).get('workday', {})
-    WORKDAY_PAGE_LIMIT = _coerce_positive_int(
-        workday_cfg.get('page_limit'),
-        DEFAULT_WORKDAY_PAGE_LIMIT,
-        'apis.workday.page_limit',
-    )
-    WORKDAY_MAX_JOBS_PER_COMPANY = _coerce_positive_int(
-        workday_cfg.get('max_jobs_per_company'),
-        DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY,
-        'apis.workday.max_jobs_per_company',
-    )
-
     print(f"   Worker pools configured:")
     print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
     print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
@@ -2773,17 +2445,6 @@ def main():
     print(f"     GraphQL: {DEFAULT_GRAPHQL_MIN_WORKERS}-{DEFAULT_GRAPHQL_MAX_WORKERS}")
     print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
-    print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
-
-    # Load Google Careers limits from config.yml with validated fallbacks
-    global GOOGLE_MAX_PAGES
-    google_cfg = config.get('apis', {}).get('google', {})
-    GOOGLE_MAX_PAGES = _coerce_positive_int(
-        google_cfg.get('MAX_PAGES'),
-        DEFAULT_GOOGLE_MAX_PAGES,
-        'apis.google.MAX_PAGES',
-    )
-    print(f"     Google: max_pages={GOOGLE_MAX_PAGES}")
 
     # DEBUG: Print company counts from config
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
@@ -2828,11 +2489,12 @@ def main():
             )
 
         # Submit Google parallel fetch (P5: gated on enabled flag)
-        if 'google' in config['apis'] and config['apis']['google'].get('enabled') and config['apis']['google'].get('search_terms'):
+        if ('google' in config['apis']
+                and config['apis']['google'].get('enabled', True)
+                and config['apis']['google'].get('search_terms')):
             futures['google'] = executor.submit(
-                fetch_google_jobs,
-                search_terms=config['apis']['google']['search_terms'],
-                max_pages=GOOGLE_MAX_PAGES
+                fetch_google_jobs_parallel,
+                config['apis']['google']['search_terms']
             )
 
         # Submit JobSpy fetch (already parallelized internally)
@@ -2846,9 +2508,7 @@ def main():
         if 'workday' in config['apis'] and config['apis']['workday'].get('enabled'):
              futures['workday'] = executor.submit(
                 fetch_workday_jobs,
-                config['apis']['workday']['companies'],
-                page_limit=WORKDAY_PAGE_LIMIT,
-                max_total_limit=WORKDAY_MAX_JOBS_PER_COMPANY
+                config['apis']['workday']['companies']
             )
 
         # Submit GraphQL parallel fetch
@@ -2947,12 +2607,18 @@ def main():
     except Exception as e:
         print(f"Error writing jobs.json: {e}")
 
-    # README generation is intentionally skipped here.
-    # README.md is no longer auto-generated by this script.
-    # It can be regenerated via a dedicated workflow or edited/maintained manually.
-    # See: .github/workflows/pipeline-integrity.yml for the staging contract.
-    # See: issue #156 for the decision record.
-    print("Skipping README.md generation (not part of update-jobs staging contract)")
+    # Generate README content
+    readme_content = generate_readme(enriched_jobs, config)
+
+    # Write to README file
+    readme_path = os.path.join(os.path.dirname(__file__), '..', 'README.md')
+    try:
+        with open(readme_path, 'w') as f:
+            f.write(readme_content)
+        print(f"README.md updated successfully with {len(enriched_jobs)} jobs")
+    except Exception as e:
+        print(f"Error writing README.md: {e}")
+        sys.exit(1)
 
     # ========== Generate RSS Feed ==========
     generate_rss_feed(enriched_jobs)
