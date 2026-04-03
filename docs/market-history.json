@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-03T03:31:37.574780",
+    "last_updated": "2026-04-03T05:27:51.497171",
     "total_snapshots": 30,
     "date_range": {
       "start": "2026-03-05",
@@ -1605,12 +1605,12 @@
     },
     {
       "date": "2026-04-03",
-      "total_jobs": 1018,
+      "total_jobs": 1016,
       "categories": {},
       "tiers": {
         "unicorn": 465,
         "faang_plus": 130,
-        "other": 423
+        "other": 421
       },
       "top_companies": [
         {
@@ -1623,7 +1623,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 28
+          "jobs": 27
         },
         {
           "company": "Lyft",
@@ -1639,14 +1639,14 @@
         },
         {
           "company": "Medtronic",
-          "jobs": 23
-        },
-        {
-          "company": "Affirm",
-          "jobs": 18
+          "jobs": 22
         },
         {
           "company": "MongoDB",
+          "jobs": 18
+        },
+        {
+          "company": "Affirm",
           "jobs": 18
         },
         {
@@ -1654,9 +1654,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 4.54,
-      "timestamp": "2026-04-03T03:31:37.574290"
+      "unique_companies": 221,
+      "avg_jobs_per_company": 4.6,
+      "timestamp": "2026-04-03T05:27:51.496769"
     }
   ]
 }
