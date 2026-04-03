@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-03T12:06:02.657916",
+    "last_updated": "2026-04-03T13:41:11.178598",
     "total_snapshots": 30,
     "date_range": {
       "start": "2026-03-05",
@@ -1605,12 +1605,12 @@
     },
     {
       "date": "2026-04-03",
-      "total_jobs": 1030,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
-        "faang_plus": 133,
+        "faang_plus": 138,
         "unicorn": 465,
-        "other": 432
+        "other": 388
       },
       "top_companies": [
         {
@@ -1626,10 +1626,6 @@
           "jobs": 25
         },
         {
-          "company": "Medtronic",
-          "jobs": 24
-        },
-        {
           "company": "ClickHouse",
           "jobs": 23
         },
@@ -1638,8 +1634,8 @@
           "jobs": 22
         },
         {
-          "company": "CVS Health",
-          "jobs": 21
+          "company": "Medtronic",
+          "jobs": 20
         },
         {
           "company": "Boeing",
@@ -1652,11 +1648,15 @@
         {
           "company": "Affirm",
           "jobs": 18
+        },
+        {
+          "company": "Dropbox",
+          "jobs": 17
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 4.58,
-      "timestamp": "2026-04-03T12:06:02.657454"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.63,
+      "timestamp": "2026-04-03T13:41:11.178163"
     }
   ]
 }
