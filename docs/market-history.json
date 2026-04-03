@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-03T10:33:27.553605",
+    "last_updated": "2026-04-03T11:28:48.556540",
     "total_snapshots": 30,
     "date_range": {
       "start": "2026-03-05",
@@ -1623,7 +1623,7 @@
         },
         {
           "company": "CVS Health",
-          "jobs": 28
+          "jobs": 26
         },
         {
           "company": "Lyft",
@@ -1642,21 +1642,21 @@
           "jobs": 22
         },
         {
-          "company": "Boeing",
+          "company": "Walmart",
           "jobs": 20
         },
         {
-          "company": "Walmart",
-          "jobs": 19
+          "company": "Boeing",
+          "jobs": 20
         },
         {
           "company": "MongoDB",
           "jobs": 18
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 4.71,
-      "timestamp": "2026-04-03T10:33:27.553156"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 4.67,
+      "timestamp": "2026-04-03T11:28:48.555884"
     }
   ]
 }
