@@ -5,21 +5,21 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 20:31:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 21:09:07 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7746033</link>
+      <description>New grad role at Stripe in Seattle, San Francisco. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 20:27:58 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7746033</guid>
+    </item>
     <item>
       <title>Software Engineer, Payments at Airbnb</title>
       <link>https://careers.airbnb.com/positions/7779006?gh_jid=7779006</link>
       <description>New grad role at Airbnb in Remote, USA. Category: Software Engineering</description>
       <pubDate>Fri, 03 Apr 2026 20:21:05 +0000</pubDate>
       <guid isPermaLink="true">https://careers.airbnb.com/positions/7779006?gh_jid=7779006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7746033</link>
-      <description>New grad role at Stripe in Remote in the US. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Apr 2026 19:47:26 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7746033</guid>
     </item>
     <item>
       <title>Security Software Engineer, Product and AI at Gusto</title>
