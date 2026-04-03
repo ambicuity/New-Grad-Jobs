@@ -210,15 +210,8 @@ class TestJobSorting:
         companies = [job['company'] for job in result['jobs']]
         assert companies == ['B', 'D', 'A', 'C']
 
-    def test_jobs_with_datetime_objects_maintain_order(self):
-        """Jobs with datetime objects fail to parse and maintain input order.
-
-        Note: extract_sort_date() uses date_parser.parse() which raises an exception
-        for datetime objects ("Parser must be a string or character stream, not datetime").
-        All exceptions return datetime.min, so jobs maintain their original order.
-        This is expected - normalize_date_string() should convert datetimes to ISO strings
-        before jobs reach generate_jobs_json().
-        """
+    def test_jobs_with_datetime_objects_sort_correctly(self):
+        """Jobs with datetime objects should sort by datetime descending."""
         jobs = [
             {'company': 'A', 'posted_at': datetime(2026, 3, 10, 12, 0, 0)},
             {'company': 'B', 'posted_at': datetime(2026, 3, 15, 8, 30, 0)},
@@ -228,8 +221,7 @@ class TestJobSorting:
         result = generate_jobs_json(jobs, config)
 
         companies = [job['company'] for job in result['jobs']]
-        # All fail to parse, maintain input order
-        assert companies == ['A', 'B', 'C']
+        assert companies == ['C', 'B', 'A']
 
     def test_jobs_with_missing_dates_sorted_to_end(self):
         """Jobs with missing/None posted_at should appear at the end."""

@@ -1955,7 +1955,8 @@ def format_posted_date(posted_at: Any) -> str:
             normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
 
-        diff = now_utc.replace(tzinfo=None) - _as_utc_naive(posted_date)
+        posted_date_utc = _as_utc_naive(posted_date)
+        diff = now_utc.replace(tzinfo=None) - posted_date_utc
 
         if diff.days == 0:
             return "Today"
@@ -1964,7 +1965,7 @@ def format_posted_date(posted_at: Any) -> str:
         elif diff.days < 7:
             return f"{diff.days} days ago"
         else:
-            return posted_date.strftime("%Y-%m-%d")
+            return posted_date_utc.strftime("%Y-%m-%d")
     except Exception as e:
         print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
@@ -2047,8 +2048,10 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Save daily market snapshot for historical tracking, comparisons, and ML predictions.
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
+    now_utc = datetime.now(timezone.utc)
+
     # Create today's snapshot
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = now_utc.strftime('%Y-%m-%d')
 
 
     # Count jobs by category
@@ -2083,7 +2086,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'top_companies': top_companies,
         'unique_companies': unique_companies,
         'avg_jobs_per_company': avg_jobs_per_company,
-        'timestamp': datetime.now().isoformat()
+        'timestamp': now_utc.isoformat()
     }
 
     # Load existing history
@@ -2114,7 +2117,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
                 break
 
     # Keep only last 90 days
-    cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
+    cutoff_date = (now_utc - timedelta(days=90)).strftime('%Y-%m-%d')
     history = [entry for entry in history if entry['date'] >= cutoff_date]
 
     # Sort by date (oldest to newest)
@@ -2123,7 +2126,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Save back to file
     history_data = {
         'meta': {
-            'last_updated': datetime.now().isoformat(),
+            'last_updated': now_utc.isoformat(),
             'total_snapshots': len(history),
             'date_range': {
                 'start': history[0]['date'] if history else None,
@@ -2331,9 +2334,13 @@ def extract_sort_date(job: Dict[str, Any]) -> datetime:
     if not posted_at:
         return datetime.min
     try:
+        now_utc = datetime.now(timezone.utc)
         if isinstance(posted_at, (int, float)):
-            return datetime.fromtimestamp(posted_at / 1000)
-        return date_parser.parse(posted_at).replace(tzinfo=None)
+            parsed = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
+        else:
+            normalized_date = normalize_date_string(posted_at, now_utc)
+            parsed = date_parser.parse(normalized_date)
+        return _as_utc_naive(parsed)
     except Exception:
         return datetime.min
 
