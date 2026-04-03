@@ -5,14 +5,28 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 00:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 03:31:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Sensor/Imaging at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
+      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 21:02:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
+    </item>
     <item>
       <title>Software Engineer II, Site Reliability at Google</title>
       <link>https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWxnHR2Re86kcyd5pFUQ5UMSRJa4a9w2crZMa0iE3dK3EjsACxwdTMcmgCeXUN5QjlyN7CghAZ_9DJ42-RaKhBMx5DlBCq2ifP0geDkR75Tg-bhgQsA1MjLgXFhfCw%3D%3D_V2&amp;loc=US&amp;title=Software+Engineer+II</link>
       <description>New grad role at Google in Sunnyvale, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 02 Apr 2026 20:30:46 +0000</pubDate>
       <guid isPermaLink="true">https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWxnHR2Re86kcyd5pFUQ5UMSRJa4a9w2crZMa0iE3dK3EjsACxwdTMcmgCeXUN5QjlyN7CghAZ_9DJ42-RaKhBMx5DlBCq2ifP0geDkR75Tg-bhgQsA1MjLgXFhfCw%3D%3D_V2&amp;loc=US&amp;title=Software+Engineer+II</guid>
+    </item>
+    <item>
+      <title>Software Engineer (AI Platforms) at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7573638</link>
+      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Apr 2026 20:11:57 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7573638</guid>
     </item>
     <item>
       <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Wiz in Remote - USA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 02 Apr 2026 12:44:16 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4421449006/:title?gh_jid=4421449006</guid>
-    </item>
-    <item>
-      <title>Security Engineer II - SaaS Applications at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4664212006/:title?gh_jid=4664212006</link>
-      <description>New grad role at Wiz in Remote - USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Apr 2026 12:43:51 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4664212006/:title?gh_jid=4664212006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Asset Store Content Operations at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7634404?gh_jid=7634404</link>
-      <description>New grad role at Unity Technologies in Remote, Lithuania. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 12:08:49 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7634404?gh_jid=7634404</guid>
     </item>
   </channel>
 </rss>
