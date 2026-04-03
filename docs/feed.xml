@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 19:08:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 19:55:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7746033</link>
+      <description>New grad role at Stripe in Remote in the US. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 15:47:26 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7746033</guid>
+    </item>
     <item>
       <title>Security Software Engineer, Product and AI at Gusto</title>
       <link>https://job-boards.greenhouse.io/gusto/jobs/7590298</link>
@@ -349,13 +356,6 @@
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Fri, 03 Apr 2026 00:30:53 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor/Imaging at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Apr 2026 21:02:52 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
     </item>
   </channel>
 </rss>
