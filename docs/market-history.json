@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-03T23:02:42.868735+00:00",
+    "last_updated": "2026-04-03T23:49:36.713312+00:00",
     "total_snapshots": 30,
     "date_range": {
       "start": "2026-03-05",
@@ -1605,11 +1605,11 @@
     },
     {
       "date": "2026-04-03",
-      "total_jobs": 978,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "other": 376,
-        "faang_plus": 136,
+        "other": 377,
+        "faang_plus": 134,
         "unicorn": 466
       },
       "top_companies": [
@@ -1631,7 +1631,7 @@
         },
         {
           "company": "NTT DATA",
-          "jobs": 23
+          "jobs": 24
         },
         {
           "company": "MongoDB",
@@ -1654,9 +1654,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 4.51,
-      "timestamp": "2026-04-03T23:02:42.868735+00:00"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.48,
+      "timestamp": "2026-04-03T23:49:36.713312+00:00"
     }
   ]
 }
