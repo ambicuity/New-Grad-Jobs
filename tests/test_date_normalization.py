@@ -37,6 +37,24 @@ def test_normalize_date_string_jobspy_human_readable_variants():
     assert normalize_date_string('1 minute ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
 
 
+def test_normalize_date_string_hours_ago():
+    """'X hours ago' and 'X hour ago' resolve to today's date."""
+    now = FIXED_NOW_UTC.replace(tzinfo=None)
+    today = now.strftime('%Y-%m-%d')
+    assert normalize_date_string('Posted 3 Hours Ago', FIXED_NOW_UTC) == today
+    assert normalize_date_string('1 hour ago', FIXED_NOW_UTC) == today
+    assert normalize_date_string('posted 12 hours ago', FIXED_NOW_UTC) == today
+
+
+def test_normalize_date_string_minutes_ago():
+    """'X minutes ago' and 'X minute ago' resolve to today's date."""
+    now = FIXED_NOW_UTC.replace(tzinfo=None)
+    today = now.strftime('%Y-%m-%d')
+    assert normalize_date_string('45 minutes ago', FIXED_NOW_UTC) == today
+    assert normalize_date_string('1 minute ago', FIXED_NOW_UTC) == today
+    assert normalize_date_string('Posted 30 Minutes Ago', FIXED_NOW_UTC) == today
+
+
 def test_normalize_date_string_native_date_object_returns_iso_string():
     """Regression: native date/datetime objects must be coerced to ISO string.
 
@@ -66,6 +84,15 @@ def test_normalize_date_string_preserves_utc_offset_strings():
 def test_normalize_date_string_returns_string_for_none_and_nan():
     assert normalize_date_string(None) == ''
     assert normalize_date_string(float('nan')) == ''
+
+
+def test_normalize_date_string_handles_empty_string():
+    assert normalize_date_string('') == ''
+
+
+def test_normalize_date_string_preserves_unmatched_unicode_text():
+    value = '投稿日: 新卒 2時間前'
+    assert normalize_date_string(value, FIXED_NOW_UTC) == value
 
 
 def test_is_recent_job_handles_utc_offset_string_by_normalizing_to_utc(monkeypatch):
