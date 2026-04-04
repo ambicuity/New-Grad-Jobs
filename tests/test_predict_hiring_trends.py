@@ -133,6 +133,35 @@ def test_predict_hiring_trends_writes_valid_artifact(monkeypatch, tmp_path):
         status = json.load(f)
     assert status["state"] == "generated"
     assert status["prediction_artifact"]["exists"] is True
+    assert status["details"]["model"] == update_jobs.DEFAULT_GEMINI_PREDICTION_MODEL
+
+
+def test_predict_hiring_trends_respects_model_override_in_status(monkeypatch, tmp_path):
+    history_path, _, status_path = _patch_artifact_paths(monkeypatch, tmp_path)
+    _write_history(history_path)
+    monkeypatch.setenv("GOOGLE_API_KEY", "test-key")
+    monkeypatch.setenv("GEMINI_PREDICTION_MODEL", "gemini-test-model")
+    monkeypatch.setattr(update_jobs, "datetime", _fixed_datetime_class(FIXED_NOW))
+
+    payload = {
+        "outlook": "neutral",
+        "predictions": {
+            "7_days": {"total_jobs": 180, "change_percent": 1.2},
+            "30_days": {"total_jobs": 210, "change_percent": 3.4},
+        },
+        "growing_categories": ["swe"],
+        "declining_categories": ["support"],
+        "confidence": 70.0,
+        "insights": ["stable"],
+    }
+
+    with patch("update_jobs.limited_post", return_value=_gemini_response_for(payload)):
+        result = update_jobs.predict_hiring_trends()
+
+    assert result["state"] == "generated"
+    with open(status_path, "r", encoding="utf-8") as f:
+        status = json.load(f)
+    assert status["details"]["model"] == "gemini-test-model"
 
 
 @pytest.mark.parametrize(

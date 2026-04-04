@@ -2453,7 +2453,7 @@ Respond in JSON format:
                         "generated",
                         "Predictions artifact generated successfully.",
                         history_snapshots=len(snapshots),
-                        details={"model": "gemini-1.5-flash", "forced": force},
+                        details={"model": gemini_model, "forced": force},
                     )
             else:
                 print("  ⚠️  No predictions in Gemini response")
@@ -2466,11 +2466,20 @@ Respond in JSON format:
 
         else:
             print(f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
+            response_snippet = ""
+            try:
+                response_snippet = (response.text or "").strip().replace("\n", " ")[:300]
+            except Exception:
+                response_snippet = ""
             return _write_prediction_status(
                 "generation_failed",
                 f"Gemini API returned HTTP {response.status_code}.",
                 history_snapshots=len(snapshots),
-                details={"http_status": response.status_code, "model": gemini_model},
+                details={
+                    "http_status": response.status_code,
+                    "model": gemini_model,
+                    "response_snippet": response_snippet,
+                },
             )
 
     except Exception as e:

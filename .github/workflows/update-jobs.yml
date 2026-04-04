@@ -63,7 +63,13 @@ jobs:
             exit 1
           fi
 
+      - name: Skip commit/push outside main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "artifact verification run; commit/push skipped by design."
+
       - name: Commit and push changes
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

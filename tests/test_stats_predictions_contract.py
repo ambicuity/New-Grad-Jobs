@@ -63,3 +63,10 @@ def test_prediction_contract_document_exists() -> None:
 def test_update_jobs_workflow_can_stage_prediction_status_artifact() -> None:
     content = UPDATE_JOBS_WORKFLOW.read_text(encoding="utf-8")
     assert "docs/predictions-status.json" in content
+
+
+def test_update_jobs_workflow_skips_commit_push_for_non_main_dispatch() -> None:
+    content = UPDATE_JOBS_WORKFLOW.read_text(encoding="utf-8")
+    assert "if: github.ref != 'refs/heads/main'" in content
+    assert "artifact verification run; commit/push skipped by design." in content
+    assert "if: github.ref == 'refs/heads/main'" in content
