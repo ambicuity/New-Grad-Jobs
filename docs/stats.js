@@ -10,6 +10,8 @@ let jobsData = null;
 let charts = {};
 
 const STALE_DATA_THRESHOLD_MINUTES = 120;
+const MIN_PREDICTION_HISTORY_SNAPSHOTS = 7;
+const PREDICTION_PATHS = ['./predictions.json', '../predictions.json', '/New-Grad-Jobs/docs/predictions.json'];
 
 // ============================================
 // DOM Elements
@@ -118,10 +120,84 @@ async function fetchMarketHistory() {
 }
 
 async function fetchPredictions() {
-    return fetchJsonWithFallback(
-        ['./predictions.json', '../predictions.json', '/New-Grad-Jobs/docs/predictions.json'],
-        'predictions'
-    );
+    const attempts = [];
+    let hasFetchFailure = false;
+    let invalidDataError = null;
+
+    for (const path of PREDICTION_PATHS) {
+        try {
+            const response = await fetch(path, { cache: 'no-store' });
+            if (!response.ok) {
+                attempts.push({
+                    path,
+                    type: 'http_error',
+                    status: response.status
+                });
+
+                if (response.status !== 404) {
+                    hasFetchFailure = true;
+                }
+                continue;
+            }
+
+            try {
+                const data = await response.json();
+                attempts.push({
+                    path,
+                    type: 'success',
+                    status: response.status
+                });
+                return {
+                    status: 'loaded',
+                    data,
+                    attempts
+                };
+            } catch (error) {
+                attempts.push({
+                    path,
+                    type: 'parse_error',
+                    status: response.status,
+                    message: error.message
+                });
+                invalidDataError = `Invalid JSON in predictions artifact at ${path}`;
+                console.error('Predictions artifact is not valid JSON:', { path, error: error.message });
+                continue;
+            }
+        } catch (error) {
+            attempts.push({
+                path,
+                type: 'network_error',
+                message: error.message
+            });
+            hasFetchFailure = true;
+        }
+    }
+
+    if (invalidDataError) {
+        return {
+            status: 'invalid_data',
+            data: null,
+            attempts,
+            error: invalidDataError
+        };
+    }
+
+    if (hasFetchFailure) {
+        console.error('Failed to fetch predictions artifact from all candidate paths:', attempts);
+        return {
+            status: 'fetch_failed',
+            data: null,
+            attempts,
+            error: 'Failed to fetch predictions artifact'
+        };
+    }
+
+    console.warn('Predictions artifact not found (404) at all candidate paths:', attempts);
+    return {
+        status: 'no_artifact',
+        data: null,
+        attempts
+    };
 }
 
 // ============================================
@@ -178,6 +254,92 @@ function normalizePredictions(data) {
         growing_categories: Array.isArray(data.growing_categories) ? data.growing_categories : [],
         declining_categories: Array.isArray(data.declining_categories) ? data.declining_categories : [],
         insights: Array.isArray(data.insights) ? data.insights : []
+    };
+}
+
+function validateNormalizedPredictions(normalized) {
+    if (!normalized) {
+        return {
+            valid: false,
+            reason: 'Missing required prediction windows (7_days, 30_days).'
+        };
+    }
+
+    const sevenDay = normalized.predictions['7_days'];
+    const thirtyDay = normalized.predictions['30_days'];
+    const requiredValues = [
+        ['predictions.7_days.total_jobs', sevenDay.total_jobs],
+        ['predictions.7_days.change_percent', sevenDay.change_percent],
+        ['predictions.30_days.total_jobs', thirtyDay.total_jobs],
+        ['predictions.30_days.change_percent', thirtyDay.change_percent]
+    ];
+
+    const missingMetric = requiredValues.find(([, value]) => value === null);
+    if (missingMetric) {
+        return {
+            valid: false,
+            reason: `Prediction payload is missing numeric value for ${missingMetric[0]}.`
+        };
+    }
+
+    return { valid: true, reason: null };
+}
+
+function resolvePredictionState(predictionFetchResult, marketHistory) {
+    const snapshotCount = Array.isArray(marketHistory && marketHistory.snapshots) ? marketHistory.snapshots.length : 0;
+    const baseState = predictionFetchResult && predictionFetchResult.status ? predictionFetchResult.status : 'no_artifact';
+
+    if (baseState === 'loaded') {
+        const normalized = normalizePredictions(predictionFetchResult.data);
+        const validation = validateNormalizedPredictions(normalized);
+
+        if (!validation.valid) {
+            console.error('Predictions payload is malformed:', {
+                reason: validation.reason,
+                attempts: predictionFetchResult.attempts
+            });
+            return {
+                state: 'invalid_data',
+                normalized: null,
+                detail: validation.reason
+            };
+        }
+
+        return {
+            state: 'ready',
+            normalized,
+            detail: null
+        };
+    }
+
+    if (baseState === 'invalid_data') {
+        return {
+            state: 'invalid_data',
+            normalized: null,
+            detail: predictionFetchResult.error || 'Predictions artifact JSON is malformed.'
+        };
+    }
+
+    if (baseState === 'fetch_failed') {
+        return {
+            state: 'fetch_failed',
+            normalized: null,
+            detail: predictionFetchResult.error || 'Predictions artifact could not be fetched.'
+        };
+    }
+
+    if (snapshotCount < MIN_PREDICTION_HISTORY_SNAPSHOTS) {
+        return {
+            state: 'insufficient_history',
+            normalized: null,
+            detail: `Collected ${snapshotCount}/${MIN_PREDICTION_HISTORY_SNAPSHOTS} historical snapshots.`
+        };
+    }
+
+    return {
+        state: 'no_artifact',
+        normalized: null,
+        detail: 'Predictions artifact has not been generated for this local run yet.'
     };
 }
 
@@ -677,19 +839,66 @@ function renderComparisons(comparisons) {
     container.innerHTML = html;
 }
 
-function renderPredictions(predictions) {
+function renderPredictionState(container, title, message, variant = 'neutral', detail = '') {
+    container.innerHTML = `
+        <div class="prediction-state ${variant}">
+            <h3>${escapeHtml(title)}</h3>
+            <p>${escapeHtml(message)}</p>
+            ${detail ? `<p class="prediction-state-detail">${escapeHtml(detail)}</p>` : ''}
+            <p class="prediction-disclaimer">Forecasts are directional estimates and should be used with observed trend data above.</p>
+        </div>
+    `;
+}
+
+function renderPredictions(predictionRenderState) {
     const container = elements.predictionsContainer;
     if (!container) return;
 
-    const normalized = predictions;
+    const normalized = predictionRenderState && predictionRenderState.normalized ? predictionRenderState.normalized : null;
+    const state = predictionRenderState && predictionRenderState.state ? predictionRenderState.state : 'no_artifact';
+    const detail = predictionRenderState && predictionRenderState.detail ? predictionRenderState.detail : '';
 
-    if (!normalized) {
-        container.innerHTML = `
-            <div class="prediction-message">
-                <p>Forecasts are unavailable right now. They appear after enough historical data is collected.</p>
-                <p class="prediction-disclaimer">Forecasts are directional estimates and should be used with observed trend data above.</p>
-            </div>
-        `;
+    if (state !== 'ready' || !normalized) {
+        if (state === 'insufficient_history') {
+            renderPredictionState(
+                container,
+                'Forecast unavailable: more history needed',
+                `Predictions appear after at least ${MIN_PREDICTION_HISTORY_SNAPSHOTS} daily market snapshots are collected.`,
+                'warning',
+                detail
+            );
+            return;
+        }
+
+        if (state === 'no_artifact') {
+            renderPredictionState(
+                container,
+                'Forecast pipeline has not run yet',
+                'No predictions artifact is available for this environment yet.',
+                'neutral',
+                detail
+            );
+            return;
+        }
+
+        if (state === 'fetch_failed') {
+            renderPredictionState(
+                container,
+                'Forecast file failed to load',
+                'The predictions artifact exists or is expected, but this page could not fetch it.',
+                'error',
+                detail
+            );
+            return;
+        }
+
+        renderPredictionState(
+            container,
+            'Forecast data is invalid',
+            'The predictions artifact loaded, but the payload schema is malformed or incomplete.',
+            'error',
+            detail
+        );
         return;
     }
 
@@ -703,11 +912,6 @@ function renderPredictions(predictions) {
     const sevenDay = normalized.predictions['7_days'];
     const thirtyDay = normalized.predictions['30_days'];
     const generatedLabel = formatDateForDisplay(normalized.generated_at);
-
-    if (sevenDay.total_jobs === null || sevenDay.change_percent === null || thirtyDay.total_jobs === null || thirtyDay.change_percent === null) {
-        setSectionMessage(container, 'Prediction payload is incomplete. Showing observed analytics only.');
-        return;
-    }
 
     const confidenceText = normalized.confidence === null ? 'Not available' : `${normalized.confidence}%`;
 
@@ -1024,7 +1228,7 @@ async function init() {
     setLoadingState();
 
     try {
-        const [jobsDataRaw, marketHistoryRaw, predictionsRaw] = await Promise.all([
+        const [jobsDataRaw, marketHistoryRaw, predictionFetchResult] = await Promise.all([
             fetchJobsData(),
             fetchMarketHistory(),
             fetchPredictions()
@@ -1032,7 +1236,7 @@ async function init() {
 
         jobsData = normalizeJobsData(jobsDataRaw);
         const marketHistory = normalizeMarketHistory(marketHistoryRaw);
-        const predictions = normalizePredictions(predictionsRaw);
+        const predictionRenderState = resolvePredictionState(predictionFetchResult, marketHistory);
 
         const analysis = analyzeData(jobsData);
         const comparisons = calculateComparisons(analysis, marketHistory);
@@ -1043,7 +1247,7 @@ async function init() {
         renderCharts(analysis);
         renderTopLocations(analysis.topLocations);
         renderInsights(analysis.insights);
-        renderPredictions(predictions);
+        renderPredictions(predictionRenderState);
     } catch (error) {
         console.error('Failed to load analytics data:', error);
         setErrorState(error.message);
