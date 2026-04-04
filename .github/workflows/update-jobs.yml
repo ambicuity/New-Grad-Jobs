@@ -75,6 +75,9 @@ jobs:
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
           fi
+          if [ -f "docs/predictions-status.json" ]; then
+            git add docs/predictions-status.json
+          fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

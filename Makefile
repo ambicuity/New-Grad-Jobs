@@ -1,4 +1,4 @@
-.PHONY: setup test clean lint format run help
+.PHONY: setup test clean lint format run predict help
 
 # Global variables
 PYTHON := python3
@@ -36,6 +36,9 @@ format: ## Run black to auto-format Python files
 
 run: ## Run the scraper script locally
 	cd scripts && ../$(VENV_PYTHON) update_jobs.py
+
+predict: ## Generate docs/predictions artifacts from docs/market-history.json (requires GOOGLE_API_KEY)
+	cd scripts && ../$(VENV_PYTHON) generate_predictions.py
 
 clean: ## Remove virtualenv, caches, and build artifacts
 	rm -rf $(VENV)

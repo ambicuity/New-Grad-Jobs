@@ -110,6 +110,10 @@ make test
 
 # To run the scraper locally (takes 4-6 minutes)
 make run
+
+# To generate forecast artifacts from existing docs/market-history.json
+# (requires GOOGLE_API_KEY)
+make predict
 ```
 
 ### Key local files
@@ -117,11 +121,12 @@ make run
 | File | Role | Edit? |
 |------|------|-------|
 | `config.yml` | Central configuration — companies, filters, search terms | ✅ Yes |
-| `scripts/update_jobs.py` | Core scraper + filterer + README generator | ✅ Yes |
+| `scripts/update_jobs.py` | Core scraper + filterer + artifact generator | ✅ Yes |
 | `.github/workflows/update-jobs.yml` | GitHub Actions job | ✅ Yes (test via manual trigger) |
 | `requirements.txt` | Python dependencies | ✅ Yes |
 | `docs/` | GitHub Pages website (HTML/CSS/JS) | ✅ Yes |
 | `README.md` | **AUTO-GENERATED** — never edit manually | ❌ Never |
+| `docs/predictions-artifacts.md` | Forecast artifact contract for local + deployed `/docs/` | ✅ Yes |
 
 ---
 

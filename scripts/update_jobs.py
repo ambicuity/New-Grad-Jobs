@@ -75,6 +75,7 @@ DEFAULT_WORKDAY_PAGE_LIMIT: int = 20
 WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
 DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
+MIN_PREDICTION_HISTORY_SNAPSHOTS: int = 7
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -2208,23 +2209,68 @@ def _validate_prediction_payload(predictions: Dict[str, Any]) -> Tuple[bool, str
 
     return True, ""
 
-def predict_hiring_trends() -> None:
+def _prediction_artifact_paths() -> Tuple[str, str, str]:
+    """Resolve docs artifact paths used by the prediction pipeline."""
+    docs_dir = os.path.join(os.path.dirname(__file__), '..', 'docs')
+    history_path = os.path.join(docs_dir, 'market-history.json')
+    predictions_path = os.path.join(docs_dir, 'predictions.json')
+    status_path = os.path.join(docs_dir, 'predictions-status.json')
+    return history_path, predictions_path, status_path
+
+
+def _write_prediction_status(
+    state: str,
+    message: str,
+    history_snapshots: int | None = None,
+    details: Dict[str, Any] | None = None,
+) -> Dict[str, Any]:
+    """Write docs/predictions-status.json with the latest pipeline outcome."""
+    _, predictions_path, status_path = _prediction_artifact_paths()
+    payload: Dict[str, Any] = {
+        "state": state,
+        "message": message,
+        "updated_at": datetime.now().isoformat(),
+        "requires_api_key": True,
+        "minimum_history_snapshots": MIN_PREDICTION_HISTORY_SNAPSHOTS,
+        "available_history_snapshots": history_snapshots,
+        "prediction_artifact": {
+            "path": "docs/predictions.json",
+            "exists": os.path.exists(predictions_path),
+        },
+    }
+    if details:
+        payload["details"] = details
+
+    try:
+        with open(status_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"  ⚠️  Could not write predictions status artifact: {e}")
+
+    return payload
+
+
+def predict_hiring_trends(force: bool = False) -> Dict[str, Any]:
     """
     Use Google Gemini API to analyze market history and predict future hiring trends.
     Requires GOOGLE_API_KEY environment variable.
     """
     api_key = os.environ.get('GOOGLE_API_KEY')
 
+    history_path, predictions_path, _ = _prediction_artifact_paths()
+
     if not api_key:
         print("  ⚠️  GOOGLE_API_KEY not found - skipping ML predictions")
-        return
+        return _write_prediction_status(
+            "no_api_key",
+            "GOOGLE_API_KEY is missing. Prediction generation was skipped.",
+        )
 
     # Check if predictions were already generated today
-    predictions_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'predictions.json')
     today = datetime.now().strftime('%Y-%m-%d')
 
     try:
-        if os.path.exists(predictions_path):
+        if os.path.exists(predictions_path) and not force:
             with open(predictions_path, 'r', encoding='utf-8') as f:
                 existing_predictions = json.load(f)
                 generated_date = existing_predictions.get('generated_at', '')
@@ -2232,29 +2278,49 @@ def predict_hiring_trends() -> None:
                 # Check if predictions were generated today
                 if generated_date.startswith(today):
                     print(f"  ✓ Predictions already generated today ({today}) - skipping")
-                    return
+                    return _write_prediction_status(
+                        "already_generated",
+                        f"Predictions were already generated on {today}.",
+                    )
     except Exception as e:
         print(f"  ⚠️  Could not check existing predictions: {e}")
 
     # Load market history
-    history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
-
+    snapshots: List[Dict[str, Any]] = []
     try:
         if not os.path.exists(history_path):
             print("  ℹ️  Market history not found - predictions available after data collection")
-            return
+            return _write_prediction_status(
+                "history_missing",
+                "docs/market-history.json does not exist yet.",
+                history_snapshots=0,
+            )
 
         with open(history_path, 'r', encoding='utf-8') as f:
             history_data = json.load(f)
             snapshots = history_data.get('snapshots', [])
 
-        if len(snapshots) < 7:
-            print(f"  ℹ️  Not enough data for predictions ({len(snapshots)} days, need 7+)")
-            return
+        if len(snapshots) < MIN_PREDICTION_HISTORY_SNAPSHOTS:
+            print(
+                f"  ℹ️  Not enough data for predictions "
+                f"({len(snapshots)} days, need {MIN_PREDICTION_HISTORY_SNAPSHOTS}+)"
+            )
+            return _write_prediction_status(
+                "insufficient_history",
+                (
+                    "Not enough market history snapshots to generate predictions."
+                ),
+                history_snapshots=len(snapshots),
+            )
 
     except Exception as e:
         print(f"  ❌ Failed to load market history: {e}")
-        return
+        return _write_prediction_status(
+            "generation_failed",
+            "Failed to load market history for prediction generation.",
+            history_snapshots=len(snapshots),
+            details={"error": str(e)},
+        )
 
     # Prepare data summary for Gemini
     total_jobs_trend = [s['total_jobs'] for s in snapshots[-30:]]  # Last 30 days
@@ -2360,6 +2426,12 @@ Respond in JSON format:
                 is_valid, error = _validate_prediction_payload(predictions)
                 if not is_valid:
                     print(f"  ⚠️  {error} — skipping prediction update")
+                    return _write_prediction_status(
+                        "invalid_payload",
+                        "Prediction response payload failed schema validation.",
+                        history_snapshots=len(snapshots),
+                        details={"error": error},
+                    )
                 else:
                     # Add metadata
                     predictions['generated_at'] = datetime.now().isoformat()
@@ -2375,15 +2447,39 @@ Respond in JSON format:
                         json.dump(predictions, f, indent=2, ensure_ascii=False)
 
                     print(f"  ✓ Generated ML predictions: {predictions['outlook']} outlook (confidence: {predictions['confidence']}%)")
+                    return _write_prediction_status(
+                        "generated",
+                        "Predictions artifact generated successfully.",
+                        history_snapshots=len(snapshots),
+                        details={"model": "gemini-1.5-flash", "forced": force},
+                    )
             else:
                 print("  ⚠️  No predictions in Gemini response")
+                return _write_prediction_status(
+                    "generation_failed",
+                    "Gemini response did not include prediction candidates.",
+                    history_snapshots=len(snapshots),
+                    details={"error": "no_candidates"},
+                )
 
         else:
             print(f"  ❌ Gemini API error: {response.status_code} - [response body redacted]")
+            return _write_prediction_status(
+                "generation_failed",
+                f"Gemini API returned HTTP {response.status_code}.",
+                history_snapshots=len(snapshots),
+                details={"http_status": response.status_code},
+            )
 
     except Exception as e:
         error_msg = str(e)
         print(f"  ❌ Failed to generate predictions: {error_msg}")
+        return _write_prediction_status(
+            "generation_failed",
+            "Prediction generation raised an exception.",
+            history_snapshots=len(snapshots),
+            details={"error": error_msg},
+        )
 
 
 def extract_sort_date(job: Dict[str, Any]) -> datetime:
