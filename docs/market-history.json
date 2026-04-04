@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-04T07:31:31.906861",
+    "last_updated": "2026-04-04T08:08:15.512356",
     "total_snapshots": 31,
     "date_range": {
       "start": "2026-03-05",
@@ -1660,11 +1660,11 @@
     },
     {
       "date": "2026-04-04",
-      "total_jobs": 888,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "other": 360,
-        "faang_plus": 62,
+        "other": 389,
+        "faang_plus": 122,
         "unicorn": 466
       },
       "top_companies": [
@@ -1705,13 +1705,13 @@
           "jobs": 17
         },
         {
-          "company": "Opendoor",
+          "company": "Northrop Grumman",
           "jobs": 17
         }
       ],
-      "unique_companies": 199,
-      "avg_jobs_per_company": 4.46,
-      "timestamp": "2026-04-04T07:31:31.906037"
+      "unique_companies": 216,
+      "avg_jobs_per_company": 4.52,
+      "timestamp": "2026-04-04T08:08:15.511948"
     }
   ]
 }
