@@ -76,6 +76,7 @@ WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
 DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
 MIN_PREDICTION_HISTORY_SNAPSHOTS: int = 7
+DEFAULT_GEMINI_PREDICTION_MODEL: str = "gemini-3.1-flash-lite-preview"
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -2256,6 +2257,7 @@ def predict_hiring_trends(force: bool = False) -> Dict[str, Any]:
     Requires GOOGLE_API_KEY environment variable.
     """
     api_key = os.environ.get('GOOGLE_API_KEY')
+    gemini_model = os.environ.get("GEMINI_PREDICTION_MODEL", DEFAULT_GEMINI_PREDICTION_MODEL)
 
     history_path, predictions_path, _ = _prediction_artifact_paths()
 
@@ -2401,7 +2403,7 @@ Respond in JSON format:
         }
 
         response = limited_post(
-            'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
+            f'https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent',
             headers=headers,
             json=payload,
             timeout=12  # AGGRESSIVE: Reduced from 20s for 10K companies
@@ -2468,7 +2470,7 @@ Respond in JSON format:
                 "generation_failed",
                 f"Gemini API returned HTTP {response.status_code}.",
                 history_snapshots=len(snapshots),
-                details={"http_status": response.status_code},
+                details={"http_status": response.status_code, "model": gemini_model},
             )
 
     except Exception as e:
@@ -2478,7 +2480,7 @@ Respond in JSON format:
             "generation_failed",
             "Prediction generation raised an exception.",
             history_snapshots=len(snapshots),
-            details={"error": error_msg},
+            details={"error": error_msg, "model": gemini_model},
         )
 
 
