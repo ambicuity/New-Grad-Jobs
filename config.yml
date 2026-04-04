@@ -433,10 +433,8 @@ apis:
   google:
     # P5: Google Careers API deprecated (returns 404 since late 2024).
     # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.
-    enabled: true
-    MAX_PAGES: 3 #This refers to the HTML pages that we return. Since this is google, we want to be careful
-    # The Google HTML careers page only returns 20 results per page, but we cut it early to avoid hitting google too hard.
-    # In this case, 3 pages would mean about 60 jobs returned give or take.
+    enabled: false
+    max_pages: 3
     # Google careers API - searches for new grad positions
     search_terms:
       - "new graduate software engineer"
@@ -452,6 +450,7 @@ apis:
   graphql:
     enabled: false
     max_jobs_per_source: 200
+    timeout: 6
     sources:
       # Example source (disabled by default)
       - name: "Example GraphQL Careers"
@@ -669,7 +668,7 @@ apis:
         location: "Canada"
       - code: "India"
         location: "India"
-    results_wanted: 30 # Reduced from 50 for faster responses
+    results_wanted: 30  # Reduced from 50 for faster responses
     hours_old: 168
 
   # Third-party job scraping APIs (configuration ready for future implementation)
@@ -677,7 +676,7 @@ apis:
     # ScraperAPI - Handles proxy rotation, CAPTCHA solving, JS rendering
     scraper_api:
       enabled: false
-      api_key: "${SCRAPER_API_KEY}" # Set via environment variable
+      api_key: "${SCRAPER_API_KEY}"  # Set via environment variable
       endpoints:
         - "indeed.com"
         - "linkedin.com/jobs"
@@ -686,14 +685,14 @@ apis:
     # SerpApi - Google Jobs API alternative
     serp_api:
       enabled: false
-      api_key: "${SERP_API_KEY}" # Set via environment variable
+      api_key: "${SERP_API_KEY}"  # Set via environment variable
       search_engine: "google_jobs"
       location: "United States"
 
     # Zyte (Scrapinghub) - Enterprise job scraping service
     zyte:
       enabled: false
-      api_key: "${ZYTE_API_KEY}" # Set via environment variable
+      api_key: "${ZYTE_API_KEY}"  # Set via environment variable
       project_id: "${ZYTE_PROJECT_ID}"
 
     # Bright Data - Proxy network and job scraper API
@@ -715,6 +714,7 @@ apis:
     enabled: true
     page_limit: 20
     max_jobs_per_company: 200
+    timeout: 6
     companies:
       - name: "Microsoft"
         workday_url: "https://microsoft.wd10.myworkdayjobs.com/en-US/Microsoft"

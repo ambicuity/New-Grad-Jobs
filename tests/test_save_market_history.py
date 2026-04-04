@@ -640,6 +640,6 @@ class TestSaveMarketHistoryDeterminism:
             "timestamp",
         }
         assert snapshot["date"] == "2026-04-03"
-        assert snapshot["timestamp"] == update_jobs.datetime.now(update_jobs.timezone.utc).isoformat()
+        assert snapshot["timestamp"] == self.FIXED_NOW.isoformat()
         assert snapshot["categories"] == {"swe": 2, "ml": 1, "data": 1}
         assert snapshot["tiers"] == {"faang-plus": 2, "unicorn": 1}

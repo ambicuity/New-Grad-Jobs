@@ -22,12 +22,23 @@ from update_jobs import generate_health_json
 class TestHealthJsonStatus:
     """Tests for health status determination."""
 
+    BASE_CONFIG = {
+        'apis': {
+            'greenhouse': {'companies': [{'name': 'A'}, {'name': 'B'}]},
+            'lever': {'companies': [{'name': 'C'}]},
+            'workday': {'enabled': True, 'companies': [{'name': 'D'}]},
+            'google': {'enabled': True, 'search_terms': ['new grad software engineer']},
+            'jobspy': {'enabled': True},
+            'graphql': {'enabled': True, 'sources': [{'company': 'E'}]},
+        }
+    }
+
     def _run_health(self, jobs, source_counts, tmpdir):
         """Helper to generate health.json in a temp directory and return the result."""
         health_path = os.path.join(tmpdir, 'health.json')
         with patch('update_jobs.os.path.join', return_value=health_path):
             with patch('update_jobs.os.makedirs'):
-                generate_health_json(jobs, source_counts, time.time() - 10)
+                generate_health_json(jobs, source_counts, time.time() - 10, self.BASE_CONFIG)
         with open(health_path) as f:
             return json.load(f)
 
@@ -66,5 +77,23 @@ class TestHealthJsonStatus:
             counts = {'greenhouse': 1}
             result = self._run_health(jobs, counts, tmpdir)
             required_keys = {'status', 'last_run', 'total_jobs',
-                             'source_counts', 'zero_sources', 'run_duration_seconds'}
+                             'source_counts', 'zero_sources', 'run_duration_seconds',
+                             'configured_company_apis', 'enabled_sources',
+                             'active_hiring_companies', 'active_sources'}
             assert required_keys.issubset(set(result.keys()))
+
+    def test_display_metrics_are_derived_from_data_and_config(self):
+        """Configured/source/company metrics should be computed from true sources."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            jobs = [
+                {'company': 'Acme', 'title': 'SWE'},
+                {'company': 'Acme', 'title': 'SWE II'},
+                {'company': 'Beta', 'title': 'ML Engineer'},
+                {'company': '', 'title': 'Unknown'},
+            ]
+            counts = {'greenhouse': 2, 'jobspy': 1}
+            result = self._run_health(jobs, counts, tmpdir)
+            assert result['configured_company_apis'] == 5
+            assert result['enabled_sources'] == 6
+            assert result['active_hiring_companies'] == 2
+            assert result['active_sources'] == 2

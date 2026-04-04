@@ -26,6 +26,8 @@ const JOBS_PER_PAGE = 25;
 let heroAnimated = false;
 let jobsLoadStarted = false;
 let jobsObserver = null;
+let siteMetrics = window.siteMetrics || null;
+let siteMetricsPromise = null;
 
 /**
  * Track custom events in GoatCounter
@@ -290,6 +292,27 @@ async function fetchJobs() {
     return null;
 }
 
+function deriveActiveCompanyCount(jobs) {
+    return new Set(jobs.map(job => (job.company || '').trim()).filter(Boolean)).size;
+}
+
+async function ensureSiteMetricsLoaded() {
+    if (siteMetrics) return siteMetrics;
+    if (!siteMetricsPromise) {
+        if (typeof window.loadSiteMetrics !== 'function') {
+            siteMetricsPromise = Promise.resolve(null);
+        } else {
+            siteMetricsPromise = window.loadSiteMetrics()
+                .then((metrics) => {
+                    siteMetrics = metrics || null;
+                    return siteMetrics;
+                })
+                .catch(() => null);
+        }
+    }
+    return siteMetricsPromise;
+}
+
 // ============================================
 // Rendering
 // ============================================
@@ -507,7 +530,11 @@ function updateCounts() {
 
         const heroCompanyCount = document.getElementById('company-count-hero');
         if (heroCompanyCount) {
-            countUp(heroCompanyCount, 150, 1200, '+');
+            const configuredCompanyApis = Number(siteMetrics?.configured_company_apis);
+            const companyTarget = Number.isFinite(configuredCompanyApis) && configuredCompanyApis > 0
+                ? configuredCompanyApis
+                : deriveActiveCompanyCount(allJobs);
+            countUp(heroCompanyCount, companyTarget, 1200, '+');
         }
     } else {
         // Subsequent calls (filter changes) — update without animation
@@ -915,6 +942,7 @@ async function loadAndRenderJobs() {
     if (data && data.jobs) {
         allJobs = data.jobs;
         filteredJobs = [...allJobs];
+        await ensureSiteMetricsLoaded();
 
         // Hide loading
         if (elements.loading) {
