@@ -222,7 +222,8 @@ function analyzeData(data) {
 
     const companyCounts = {};
     jobs.forEach((job) => {
-        const company = job.company || 'Unknown';
+        const company = job.company;
+        if (!company) return;
         companyCounts[company] = (companyCounts[company] || 0) + 1;
     });
 
@@ -254,7 +255,8 @@ function normalizeCategories(metaCategories, jobs) {
                 name: category && category.name ? String(category.name) : 'Other',
                 count: Number.isFinite(Number(category && category.count)) ? Number(category.count) : 0
             }))
-            .filter((category) => category.count > 0);
+            .filter((category) => category.count > 0)
+            .sort((a, b) => b.count - a.count);
     }
 
     const fallback = {};
@@ -268,18 +270,49 @@ function normalizeCategories(metaCategories, jobs) {
         .sort((a, b) => b.count - a.count);
 }
 
+const US_STATE_CODES = new Set([
+    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL',
+    'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT',
+    'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI',
+    'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY', 'DC'
+]);
+
+const CANADA_PROVINCE_CODES = new Set([
+    'AB', 'BC', 'MB', 'NB', 'NL', 'NS', 'NT', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT'
+]);
+
+const INDIA_STATE_CODES = new Set([
+    'AP', 'AR', 'AS', 'BR', 'CG', 'GA', 'GJ', 'HR', 'HP', 'JH', 'KA', 'KL', 'MP',
+    'MH', 'MN', 'ML', 'MZ', 'NL', 'OD', 'PB', 'RJ', 'SK', 'TN', 'TS', 'TR', 'UP',
+    'WB', 'DL', 'JK', 'LA', 'PY', 'AN', 'CH', 'DH', 'DN'
+]);
+
 function extractCountry(location) {
     if (!location) return 'Unknown';
+    const text = String(location).trim();
 
-    if (/\b(USA|United States|US)\b/i.test(location) || /\b[A-Z]{2}\b/.test(String(location).split(',').pop())) {
-        return 'USA';
-    }
-    if (/Canada|Toronto|Vancouver|Montreal|Ottawa/i.test(location)) return 'Canada';
-    if (/India|Bangalore|Hyderabad|Mumbai|Delhi|Pune/i.test(location)) return 'India';
-    if (/UK|United Kingdom|London|Manchester/i.test(location)) return 'UK';
-    if (/Remote/i.test(location)) return 'Remote';
+    if (/\bRemote\b/i.test(text)) return 'Remote';
+    if (/\b(United Kingdom|UK)\b|London|Manchester/i.test(text)) return 'UK';
+    if (/\bCanada\b|Toronto|Vancouver|Montreal|Ottawa/i.test(text)) return 'Canada';
+    if (/\bIndia\b|Bangalore|Hyderabad|Mumbai|Delhi|Pune/i.test(text)) return 'India';
+    if (/\b(USA|United States|US|U\.S\.)\b/i.test(text)) return 'USA';
 
-    const parts = String(location).split(',').map((part) => part.trim());
+    const parts = text.split(',').map((part) => part.trim()).filter(Boolean);
+    const lastPart = parts[parts.length - 1] || '';
+    const previousPart = parts[parts.length - 2] || '';
+    const tail = lastPart.toUpperCase();
+    const previousTail = previousPart.toUpperCase();
+
+    if (tail === 'CA' && CANADA_PROVINCE_CODES.has(previousTail)) return 'Canada';
+    if (tail === 'IN' || INDIA_STATE_CODES.has(tail) || INDIA_STATE_CODES.has(previousTail)) return 'India';
+    if (US_STATE_CODES.has(tail)) return 'USA';
+    if (CANADA_PROVINCE_CODES.has(tail)) return 'Canada';
+    if (tail === 'UK' || tail === 'GB' || tail === 'UNITED KINGDOM') return 'UK';
+
+    if (tail === 'US') return 'USA';
+    if (tail === 'CA') return 'Canada';
+
+    if (!parts.length) return 'Other';
     return parts[parts.length - 1] || 'Other';
 }
 
@@ -648,7 +681,7 @@ function renderPredictions(predictions) {
     const container = elements.predictionsContainer;
     if (!container) return;
 
-    const normalized = normalizePredictions(predictions);
+    const normalized = predictions;
 
     if (!normalized) {
         container.innerHTML = `
