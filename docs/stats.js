@@ -12,6 +12,7 @@ let charts = {};
 const STALE_DATA_THRESHOLD_MINUTES = 120;
 const MIN_PREDICTION_HISTORY_SNAPSHOTS = 7;
 const PREDICTION_PATHS = ['./predictions.json', '../predictions.json', '/New-Grad-Jobs/docs/predictions.json'];
+const PREDICTION_STATUS_PATHS = ['./predictions-status.json', '../predictions-status.json', '/New-Grad-Jobs/docs/predictions-status.json'];
 
 // ============================================
 // DOM Elements
@@ -119,12 +120,11 @@ async function fetchMarketHistory() {
     return data || { meta: {}, snapshots: [] };
 }
 
-async function fetchPredictions() {
+async function fetchOptionalArtifact(paths, label) {
     const attempts = [];
     let hasFetchFailure = false;
-    let invalidDataError = null;
 
-    for (const path of PREDICTION_PATHS) {
+    for (const path of paths) {
         try {
             const response = await fetch(path, { cache: 'no-store' });
             if (!response.ok) {
@@ -159,9 +159,13 @@ async function fetchPredictions() {
                     status: response.status,
                     message: error.message
                 });
-                invalidDataError = `Invalid JSON in predictions artifact at ${path}`;
-                console.error('Predictions artifact is not valid JSON:', { path, error: error.message });
-                continue;
+                console.error(`${label} is not valid JSON:`, { path, error: error.message });
+                return {
+                    status: 'invalid_data',
+                    data: null,
+                    attempts,
+                    error: `Invalid JSON in ${label} at ${path}`
+                };
             }
         } catch (error) {
             attempts.push({
@@ -173,31 +177,30 @@ async function fetchPredictions() {
         }
     }
 
-    if (invalidDataError) {
-        return {
-            status: 'invalid_data',
-            data: null,
-            attempts,
-            error: invalidDataError
-        };
-    }
-
     if (hasFetchFailure) {
-        console.error('Failed to fetch predictions artifact from all candidate paths:', attempts);
+        console.error(`Failed to fetch ${label} from all candidate paths:`, attempts);
         return {
             status: 'fetch_failed',
             data: null,
             attempts,
-            error: 'Failed to fetch predictions artifact'
+            error: `Failed to fetch ${label}`
         };
     }
 
-    console.warn('Predictions artifact not found (404) at all candidate paths:', attempts);
+    console.warn(`${label} not found (404) at all candidate paths:`, attempts);
     return {
         status: 'no_artifact',
         data: null,
         attempts
     };
+}
+
+async function fetchPredictions() {
+    return fetchOptionalArtifact(PREDICTION_PATHS, 'predictions artifact');
+}
+
+async function fetchPredictionStatus() {
+    return fetchOptionalArtifact(PREDICTION_STATUS_PATHS, 'predictions status artifact');
 }
 
 // ============================================
@@ -257,6 +260,23 @@ function normalizePredictions(data) {
     };
 }
 
+function normalizePredictionStatus(data) {
+    if (!data || typeof data !== 'object') return null;
+
+    return {
+        state: typeof data.state === 'string' ? data.state : null,
+        message: typeof data.message === 'string' ? data.message : '',
+        available_history_snapshots: Number.isFinite(Number(data.available_history_snapshots))
+            ? Number(data.available_history_snapshots)
+            : null,
+        minimum_history_snapshots: Number.isFinite(Number(data.minimum_history_snapshots))
+            ? Number(data.minimum_history_snapshots)
+            : MIN_PREDICTION_HISTORY_SNAPSHOTS,
+        prediction_artifact_exists: !!(data.prediction_artifact && data.prediction_artifact.exists),
+        updated_at: typeof data.updated_at === 'string' ? data.updated_at : null
+    };
+}
+
 function validateNormalizedPredictions(normalized) {
     if (!normalized) {
         return {
@@ -285,9 +305,15 @@ function validateNormalizedPredictions(normalized) {
     return { valid: true, reason: null };
 }
 
-function resolvePredictionState(predictionFetchResult, marketHistory) {
+function resolvePredictionState(predictionFetchResult, predictionStatusFetchResult, marketHistory) {
     const snapshotCount = Array.isArray(marketHistory && marketHistory.snapshots) ? marketHistory.snapshots.length : 0;
     const baseState = predictionFetchResult && predictionFetchResult.status ? predictionFetchResult.status : 'no_artifact';
+    const statusBaseState = predictionStatusFetchResult && predictionStatusFetchResult.status
+        ? predictionStatusFetchResult.status
+        : 'no_artifact';
+    const normalizedStatus = statusBaseState === 'loaded'
+        ? normalizePredictionStatus(predictionStatusFetchResult.data)
+        : null;
 
     if (baseState === 'loaded') {
         const normalized = normalizePredictions(predictionFetchResult.data);
@@ -328,6 +354,72 @@ function resolvePredictionState(predictionFetchResult, marketHistory) {
         };
     }
 
+    if (statusBaseState === 'fetch_failed') {
+        return {
+            state: 'fetch_failed',
+            normalized: null,
+            detail: predictionStatusFetchResult.error || 'Predictions status artifact could not be fetched.'
+        };
+    }
+
+    if (statusBaseState === 'invalid_data') {
+        return {
+            state: 'generation_failed',
+            normalized: null,
+            detail: predictionStatusFetchResult.error || 'Predictions status artifact is malformed.'
+        };
+    }
+
+    if (normalizedStatus) {
+        if (normalizedStatus.state === 'generated' || normalizedStatus.state === 'already_generated') {
+            return {
+                state: 'artifact_missing',
+                normalized: null,
+                detail: normalizedStatus.prediction_artifact_exists
+                    ? 'Forecast artifact exists, but it is not reachable from this /docs/ route.'
+                    : 'Forecast pipeline reports success, but docs/predictions.json is missing.'
+            };
+        }
+
+        if (normalizedStatus.state === 'insufficient_history') {
+            return {
+                state: 'insufficient_history',
+                normalized: null,
+                detail: normalizedStatus.message || (
+                    `Collected ${normalizedStatus.available_history_snapshots || snapshotCount}/`
+                    + `${normalizedStatus.minimum_history_snapshots} historical snapshots.`
+                )
+            };
+        }
+
+        if (normalizedStatus.state === 'no_api_key') {
+            return {
+                state: 'no_api_key',
+                normalized: null,
+                detail: normalizedStatus.message || 'GOOGLE_API_KEY is not configured for this environment.'
+            };
+        }
+
+        if (normalizedStatus.state === 'history_missing') {
+            return {
+                state: 'insufficient_history',
+                normalized: null,
+                detail: normalizedStatus.message || 'Market history artifact has not been generated yet.'
+            };
+        }
+
+        if (
+            normalizedStatus.state === 'generation_failed'
+            || normalizedStatus.state === 'invalid_payload'
+        ) {
+            return {
+                state: 'generation_failed',
+                normalized: null,
+                detail: normalizedStatus.message || 'Forecast pipeline failed to generate a valid artifact.'
+            };
+        }
+    }
+
     if (snapshotCount < MIN_PREDICTION_HISTORY_SNAPSHOTS) {
         return {
             state: 'insufficient_history',
@@ -337,9 +429,9 @@ function resolvePredictionState(predictionFetchResult, marketHistory) {
     }
 
     return {
-        state: 'no_artifact',
+        state: 'pipeline_not_run',
         normalized: null,
-        detail: 'Predictions artifact has not been generated for this local run yet.'
+        detail: 'Prediction pipeline has not been executed for this environment yet.'
     };
 }
 
@@ -384,8 +476,7 @@ function analyzeData(data) {
 
     const companyCounts = {};
     jobs.forEach((job) => {
-        const company = job.company;
-        if (!company) return;
+        const company = job.company || 'Unknown';
         companyCounts[company] = (companyCounts[company] || 0) + 1;
     });
 
@@ -417,8 +508,7 @@ function normalizeCategories(metaCategories, jobs) {
                 name: category && category.name ? String(category.name) : 'Other',
                 count: Number.isFinite(Number(category && category.count)) ? Number(category.count) : 0
             }))
-            .filter((category) => category.count > 0)
-            .sort((a, b) => b.count - a.count);
+            .filter((category) => category.count > 0);
     }
 
     const fallback = {};
@@ -432,49 +522,18 @@ function normalizeCategories(metaCategories, jobs) {
         .sort((a, b) => b.count - a.count);
 }
 
-const US_STATE_CODES = new Set([
-    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL',
-    'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT',
-    'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI',
-    'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY', 'DC'
-]);
-
-const CANADA_PROVINCE_CODES = new Set([
-    'AB', 'BC', 'MB', 'NB', 'NL', 'NS', 'NT', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT'
-]);
-
-const INDIA_STATE_CODES = new Set([
-    'AP', 'AR', 'AS', 'BR', 'CG', 'GA', 'GJ', 'HR', 'HP', 'JH', 'KA', 'KL', 'MP',
-    'MH', 'MN', 'ML', 'MZ', 'NL', 'OD', 'PB', 'RJ', 'SK', 'TN', 'TS', 'TR', 'UP',
-    'WB', 'DL', 'JK', 'LA', 'PY', 'AN', 'CH', 'DH', 'DN'
-]);
-
 function extractCountry(location) {
     if (!location) return 'Unknown';
-    const text = String(location).trim();
 
-    if (/\bRemote\b/i.test(text)) return 'Remote';
-    if (/\b(United Kingdom|UK)\b|London|Manchester/i.test(text)) return 'UK';
-    if (/\bCanada\b|Toronto|Vancouver|Montreal|Ottawa/i.test(text)) return 'Canada';
-    if (/\bIndia\b|Bangalore|Hyderabad|Mumbai|Delhi|Pune/i.test(text)) return 'India';
-    if (/\b(USA|United States|US|U\.S\.)\b/i.test(text)) return 'USA';
+    if (/\b(USA|United States|US)\b/i.test(location) || /\b[A-Z]{2}\b/.test(String(location).split(',').pop())) {
+        return 'USA';
+    }
+    if (/Canada|Toronto|Vancouver|Montreal|Ottawa/i.test(location)) return 'Canada';
+    if (/India|Bangalore|Hyderabad|Mumbai|Delhi|Pune/i.test(location)) return 'India';
+    if (/UK|United Kingdom|London|Manchester/i.test(location)) return 'UK';
+    if (/Remote/i.test(location)) return 'Remote';
 
-    const parts = text.split(',').map((part) => part.trim()).filter(Boolean);
-    const lastPart = parts[parts.length - 1] || '';
-    const previousPart = parts[parts.length - 2] || '';
-    const tail = lastPart.toUpperCase();
-    const previousTail = previousPart.toUpperCase();
-
-    if (tail === 'CA' && CANADA_PROVINCE_CODES.has(previousTail)) return 'Canada';
-    if (tail === 'IN' || INDIA_STATE_CODES.has(tail) || INDIA_STATE_CODES.has(previousTail)) return 'India';
-    if (US_STATE_CODES.has(tail)) return 'USA';
-    if (CANADA_PROVINCE_CODES.has(tail)) return 'Canada';
-    if (tail === 'UK' || tail === 'GB' || tail === 'UNITED KINGDOM') return 'UK';
-
-    if (tail === 'US') return 'USA';
-    if (tail === 'CA') return 'Canada';
-
-    if (!parts.length) return 'Other';
+    const parts = String(location).split(',').map((part) => part.trim());
     return parts[parts.length - 1] || 'Other';
 }
 
@@ -855,7 +914,7 @@ function renderPredictions(predictionRenderState) {
     if (!container) return;
 
     const normalized = predictionRenderState && predictionRenderState.normalized ? predictionRenderState.normalized : null;
-    const state = predictionRenderState && predictionRenderState.state ? predictionRenderState.state : 'no_artifact';
+    const state = predictionRenderState && predictionRenderState.state ? predictionRenderState.state : 'pipeline_not_run';
     const detail = predictionRenderState && predictionRenderState.detail ? predictionRenderState.detail : '';
 
     if (state !== 'ready' || !normalized) {
@@ -863,19 +922,52 @@ function renderPredictions(predictionRenderState) {
             renderPredictionState(
                 container,
                 'Forecast unavailable: more history needed',
-                `Predictions appear after at least ${MIN_PREDICTION_HISTORY_SNAPSHOTS} daily market snapshots are collected.`,
+                'Predictions appear after at least 7 daily market snapshots are collected.',
                 'warning',
                 detail
             );
             return;
         }
 
-        if (state === 'no_artifact') {
+        if (state === 'pipeline_not_run') {
             renderPredictionState(
                 container,
                 'Forecast pipeline has not run yet',
                 'No predictions artifact is available for this environment yet.',
                 'neutral',
+                detail
+            );
+            return;
+        }
+
+        if (state === 'artifact_missing') {
+            renderPredictionState(
+                container,
+                'Forecast artifact is missing',
+                'The forecast pipeline appears to have run, but docs/predictions.json is not being served at this route.',
+                'error',
+                detail
+            );
+            return;
+        }
+
+        if (state === 'no_api_key') {
+            renderPredictionState(
+                container,
+                'Forecast pipeline is blocked',
+                'GOOGLE_API_KEY is required to generate prediction artifacts in this environment.',
+                'warning',
+                detail
+            );
+            return;
+        }
+
+        if (state === 'generation_failed') {
+            renderPredictionState(
+                container,
+                'Forecast generation failed',
+                'The prediction pipeline ran but did not produce a valid artifact.',
+                'error',
                 detail
             );
             return;
@@ -1228,15 +1320,20 @@ async function init() {
     setLoadingState();
 
     try {
-        const [jobsDataRaw, marketHistoryRaw, predictionFetchResult] = await Promise.all([
+        const [jobsDataRaw, marketHistoryRaw, predictionFetchResult, predictionStatusFetchResult] = await Promise.all([
             fetchJobsData(),
             fetchMarketHistory(),
-            fetchPredictions()
+            fetchPredictions(),
+            fetchPredictionStatus()
         ]);
 
         jobsData = normalizeJobsData(jobsDataRaw);
         const marketHistory = normalizeMarketHistory(marketHistoryRaw);
-        const predictionRenderState = resolvePredictionState(predictionFetchResult, marketHistory);
+        const predictionRenderState = resolvePredictionState(
+            predictionFetchResult,
+            predictionStatusFetchResult,
+            marketHistory
+        );
 
         const analysis = analyzeData(jobsData);
         const comparisons = calculateComparisons(analysis, marketHistory);

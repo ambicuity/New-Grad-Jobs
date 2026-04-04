@@ -48,6 +48,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run job scraper
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: |
           cd scripts
           python update_jobs.py
@@ -61,7 +63,67 @@ jobs:
             exit 1
           fi
 
+      - name: Publish prediction generation summary
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          summary_path = os.environ["GITHUB_STEP_SUMMARY"]
+          status_path = Path("docs/predictions-status.json")
+          prediction_path = Path("docs/predictions.json")
+          run_url = f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+          ref = os.environ.get("GITHUB_REF", "")
+
+          lines = [
+              "## Prediction artifact status",
+              f"- Workflow run: [View run]({run_url})",
+              f"- Ref: `{ref}`",
+              f"- `docs/predictions.json` present: `{prediction_path.exists()}`",
+          ]
+
+          if status_path.exists():
+              try:
+                  status = json.loads(status_path.read_text(encoding="utf-8"))
+                  state = status.get("state", "unknown")
+                  message = status.get("message", "")
+                  lines.append(f"- `docs/predictions-status.json` state: `{state}`")
+                  if message:
+                      lines.append(f"- Status message: {message}")
+              except Exception as exc:
+                  lines.append(f"- Failed to parse `docs/predictions-status.json`: `{exc}`")
+          else:
+              lines.append("- `docs/predictions-status.json` was not produced in this run.")
+
+          if ref != "refs/heads/main":
+              lines.append("- Non-main dispatch mode: commit/push is skipped by design.")
+              lines.append("- Prediction verification artifacts are uploaded for this run.")
+
+          with open(summary_path, "a", encoding="utf-8") as f:
+              f.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Skip commit/push outside main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "artifact verification run; commit/push skipped by design."
+
+      - name: Upload prediction verification artifacts (non-main)
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: prediction-verification-${{ github.run_id }}
+          if-no-files-found: warn
+          path: |
+            docs/predictions-status.json
+            docs/predictions.json
+            docs/market-history.json
+            docs/jobs.json
+            docs/health.json
+
       - name: Commit and push changes
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -74,6 +136,9 @@ jobs:
           git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
+          fi
+          if [ -f "docs/predictions-status.json" ]; then
+            git add docs/predictions-status.json
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
