@@ -122,6 +122,7 @@ async function fetchMarketHistory() {
 async function fetchPredictions() {
     const attempts = [];
     let hasFetchFailure = false;
+    let invalidDataError = null;
 
     for (const path of PREDICTION_PATHS) {
         try {
@@ -158,13 +159,9 @@ async function fetchPredictions() {
                     status: response.status,
                     message: error.message
                 });
+                invalidDataError = `Invalid JSON in predictions artifact at ${path}`;
                 console.error('Predictions artifact is not valid JSON:', { path, error: error.message });
-                return {
-                    status: 'invalid_data',
-                    data: null,
-                    attempts,
-                    error: `Invalid JSON in predictions artifact at ${path}`
-                };
+                continue;
             }
         } catch (error) {
             attempts.push({
@@ -174,6 +171,15 @@ async function fetchPredictions() {
             });
             hasFetchFailure = true;
         }
+    }
+
+    if (invalidDataError) {
+        return {
+            status: 'invalid_data',
+            data: null,
+            attempts,
+            error: invalidDataError
+        };
     }
 
     if (hasFetchFailure) {
@@ -857,7 +863,7 @@ function renderPredictions(predictionRenderState) {
             renderPredictionState(
                 container,
                 'Forecast unavailable: more history needed',
-                'Predictions appear after at least 7 daily market snapshots are collected.',
+                `Predictions appear after at least ${MIN_PREDICTION_HISTORY_SNAPSHOTS} daily market snapshots are collected.`,
                 'warning',
                 detail
             );

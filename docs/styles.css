@@ -2274,7 +2274,7 @@ h3 {
     margin: 0 0 0.5rem;
     color: var(--text-primary);
     font-size: 1.05rem;
-    font-family: 'Outfit', 'Inter', sans-serif;
+    font-family: Outfit, Inter, sans-serif;
 }
 
 .prediction-state p {
@@ -2285,7 +2285,7 @@ h3 {
 
 .prediction-state .prediction-state-detail {
     margin-top: 0.75rem;
-    font-family: 'Monaco', 'Menlo', monospace;
+    font-family: Monaco, Menlo, monospace;
     font-size: 0.8rem;
     color: var(--text-tertiary);
 }
