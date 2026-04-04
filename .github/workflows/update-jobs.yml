@@ -48,6 +48,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run job scraper
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: |
           cd scripts
           python update_jobs.py
