@@ -448,6 +448,44 @@ apis:
       - "entry level data engineer"
       - "junior data scientist"
 
+  # Generic GraphQL ingestion path for public careers endpoints
+  graphql:
+    enabled: false
+    max_jobs_per_source: 200
+    sources:
+      # Example source (disabled by default)
+      - name: "Example GraphQL Careers"
+        endpoint: "https://careers.example.com/graphql"
+        query: |
+          query Careers($after: String) {
+            jobs(first: 50, after: $after) {
+              edges {
+                node {
+                  title
+                  applyUrl
+                  postedAt
+                  description
+                  locations {
+                    name
+                  }
+                }
+              }
+              pageInfo {
+                hasNextPage
+                endCursor
+              }
+            }
+          }
+        variables: {}
+        data_path: "data.jobs.edges"
+        page_info_path: "data.jobs.pageInfo"
+        field_mappings:
+          title: "title"
+          location: "locations.0.name"
+          url: "applyUrl"
+          posted_at: "postedAt"
+          description: "description"
+
   # JobSpy - PARALLEL scraping from Indeed
   # OPTIMIZED: LinkedIn disabled (429 rate limits waste ~4 min)
   # Uses ThreadPoolExecutor with 25 workers for maximum speed
