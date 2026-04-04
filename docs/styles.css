@@ -2262,6 +2262,49 @@ h3 {
     line-height: 1.55;
 }
 
+.prediction-state {
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.prediction-state h3 {
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+.prediction-state p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.prediction-state .prediction-state-detail {
+    margin-top: 0.75rem;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.prediction-state.neutral {
+    border-color: rgba(148, 163, 184, 0.35);
+    background: rgba(148, 163, 184, 0.08);
+}
+
+.prediction-state.warning {
+    border-color: rgba(245, 158, 11, 0.4);
+    background: rgba(245, 158, 11, 0.12);
+}
+
+.prediction-state.error {
+    border-color: rgba(239, 68, 68, 0.45);
+    background: rgba(239, 68, 68, 0.12);
+}
+
 /* Stats Sections */
 .stats-section {
     max-width: 1400px;
