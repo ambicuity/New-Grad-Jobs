@@ -61,6 +61,8 @@ DEFAULT_LEVER_MIN_WORKERS: int = 15
 DEFAULT_LEVER_MAX_WORKERS: int = 200
 DEFAULT_GOOGLE_MIN_WORKERS: int = 12
 DEFAULT_GOOGLE_MAX_WORKERS: int = 100
+DEFAULT_GRAPHQL_MIN_WORKERS: int = 8
+DEFAULT_GRAPHQL_MAX_WORKERS: int = 80
 
 # Default Google Careers HTML page parsing limit.
 DEFAULT_GOOGLE_MAX_PAGES: int = 3
@@ -566,6 +568,68 @@ def load_config() -> Dict[str, Any]:
     except Exception as e:
         print(f"Error loading config: {e}")
         sys.exit(1)
+
+
+def get_nested_value(obj: Any, path: str) -> Any:
+    """Resolve dot-separated paths in nested dict/list structures."""
+    if not isinstance(obj, dict):
+        return None
+    if not isinstance(path, str) or not path.strip():
+        return None
+
+    current = obj
+    for token in path.split('.'):
+        if isinstance(current, dict):
+            if token not in current:
+                return None
+            current = current[token]
+            continue
+
+        if isinstance(current, list):
+            if token.isdigit():
+                index = int(token)
+                if index < 0 or index >= len(current):
+                    return None
+                current = current[index]
+                continue
+
+            extracted = []
+            for item in current:
+                if isinstance(item, dict) and token in item:
+                    extracted.append(item[token])
+            if not extracted:
+                return None
+            current = extracted
+            continue
+
+        return None
+
+    return current
+
+
+def normalize_graphql_items(items: Any) -> List[Dict[str, Any]]:
+    """Normalize GraphQL item arrays and unwrap edge/node shapes."""
+    if not isinstance(items, list):
+        return []
+
+    normalized: List[Dict[str, Any]] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        if isinstance(item.get('node'), dict):
+            normalized.append(item['node'])
+        else:
+            normalized.append(item)
+    return normalized
+
+
+def graphql_value_as_string(value: Any) -> str:
+    """Convert mapped GraphQL values to a deterministic string."""
+    if value is None:
+        return ''
+    if isinstance(value, list):
+        return '; '.join(str(v).strip() for v in value if v is not None and str(v).strip())
+    return str(value).strip()
 
 def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     """Categorize a job based on its title and description"""
@@ -1269,6 +1333,100 @@ def fetch_workday_jobs(companies: List[Dict[str, str]],
 
     return all_jobs
 
+
+def fetch_graphql_jobs(source_config: Dict[str, Any], max_jobs: int = 200) -> List[Dict[str, Any]]:
+    """Fetch jobs from a public GraphQL endpoint using config-driven mappings."""
+    company_name = source_config.get('name', 'Unknown')
+    endpoint = source_config.get('endpoint', '')
+    query = source_config.get('query', '')
+    base_variables = source_config.get('variables', {}) or {}
+    data_path = source_config.get('data_path', '')
+    page_info_path = source_config.get('page_info_path', '')
+    field_mappings = source_config.get('field_mappings', {}) or {}
+
+    if not endpoint or not query or not data_path:
+        print(f"  ⚠️  {company_name}: GraphQL source missing endpoint/query/data_path")
+        return []
+    if not isinstance(base_variables, dict) or not isinstance(field_mappings, dict):
+        print(f"  ⚠️  {company_name}: GraphQL variables/field_mappings must be objects")
+        return []
+
+    print(f"Fetching jobs from {company_name} (GraphQL)...")
+    jobs: List[Dict[str, Any]] = []
+    cursor: Any = None
+    headers = {'Content-Type': 'application/json'}
+
+    try:
+        while len(jobs) < max_jobs:
+            variables = dict(base_variables)
+            if cursor:
+                variables['after'] = cursor
+
+            response = limited_post(
+                endpoint,
+                json={'query': query, 'variables': variables},
+                headers=headers,
+                timeout=6,
+            )
+            response.raise_for_status()
+            payload = response.json()
+
+            if not isinstance(payload, dict):
+                print(f"  ⚠️  {company_name}: GraphQL response must be an object")
+                break
+
+            if payload.get('errors'):
+                print(f"  ⚠️  {company_name}: GraphQL returned errors")
+                break
+
+            raw_items = get_nested_value(payload, data_path)
+            items = normalize_graphql_items(raw_items)
+            if not items:
+                break
+
+            for item in items:
+                title = graphql_value_as_string(get_nested_value(item, field_mappings.get('title', '')))
+                url = graphql_value_as_string(get_nested_value(item, field_mappings.get('url', '')))
+                location = graphql_value_as_string(get_nested_value(item, field_mappings.get('location', ''))) or 'Remote'
+                posted_at = get_nested_value(item, field_mappings.get('posted_at', ''))
+                description = graphql_value_as_string(get_nested_value(item, field_mappings.get('description', '')))
+
+                jobs.append({
+                    'company': company_name,
+                    'title': title,
+                    'location': location,
+                    'url': url,
+                    'posted_at': posted_at,
+                    'source': 'GraphQL',
+                    'description': description[:500] if description else ''
+                })
+                if len(jobs) >= max_jobs:
+                    break
+
+            if len(jobs) >= max_jobs or not page_info_path:
+                break
+
+            page_info = get_nested_value(payload, page_info_path)
+            if not isinstance(page_info, dict):
+                break
+
+            if not page_info.get('hasNextPage'):
+                break
+
+            cursor = page_info.get('endCursor')
+            if not cursor:
+                break
+
+    except requests.exceptions.RequestException as e:
+        print(f"  ❌ Request error for {company_name} (GraphQL): {e}")
+    except ValueError as e:
+        print(f"  ❌ Invalid JSON for {company_name} (GraphQL): {e}")
+    except Exception as e:
+        print(f"  ❌ Error fetching from {company_name} (GraphQL): {e}")
+
+    print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+    return jobs
+
 def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
     """Fetch jobs using JobSpy library from multiple job sites - PARALLEL VERSION
 
@@ -1384,6 +1542,45 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
     if errors > 0:
         print(f"   ⚠️ Errors: {errors}")
 
+    return all_jobs
+
+
+def fetch_all_graphql_jobs_parallel(
+    sources: List[Dict[str, Any]],
+    max_jobs_per_source: int = 200,
+    max_workers: int = None
+) -> List[Dict[str, Any]]:
+    """Fetch all GraphQL sources in parallel."""
+    all_jobs: List[Dict[str, Any]] = []
+    total = len(sources)
+    completed = 0
+    errors = 0
+
+    if max_workers is None:
+        max_workers = min(DEFAULT_GRAPHQL_MAX_WORKERS, max(DEFAULT_GRAPHQL_MIN_WORKERS, total))
+
+    print(f"\n🚀 Starting PARALLEL GraphQL fetch: {total} sources with {max_workers} workers")
+
+    def fetch_single(source: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return fetch_graphql_jobs(source, max_jobs=max_jobs_per_source)
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_source = {executor.submit(fetch_single, source): source for source in sources}
+
+        for future in as_completed(future_to_source):
+            with _COUNTER_LOCK:
+                completed += 1
+            source = future_to_source[future]
+            try:
+                jobs = future.result()
+                all_jobs.extend(jobs)
+            except Exception as e:
+                with _COUNTER_LOCK:
+                    errors += 1
+                source_name = source.get('name', 'Unknown')
+                print(f"  ❌ {source_name}: {e}")
+
+    print(f"✅ GraphQL parallel fetch complete: {len(all_jobs)} jobs from {completed - errors}/{total} sources")
     return all_jobs
 
 def fetch_serp_api_jobs(config_serp: Dict[str, Any], max_retries: int = 2) -> List[Dict[str, Any]]:
@@ -2501,6 +2698,7 @@ def main():
     global DEFAULT_GREENHOUSE_MIN_WORKERS, DEFAULT_GREENHOUSE_MAX_WORKERS
     global DEFAULT_LEVER_MIN_WORKERS, DEFAULT_LEVER_MAX_WORKERS
     global DEFAULT_GOOGLE_MIN_WORKERS, DEFAULT_GOOGLE_MAX_WORKERS
+    global DEFAULT_GRAPHQL_MIN_WORKERS, DEFAULT_GRAPHQL_MAX_WORKERS
     global DEFAULT_JOBSPY_WORKERS, DEFAULT_ORCHESTRATOR_WORKERS
 
     pools = config.get('worker_pools', {})
@@ -2510,6 +2708,8 @@ def main():
     DEFAULT_LEVER_MAX_WORKERS = pools.get('lever_max_workers', DEFAULT_LEVER_MAX_WORKERS)
     DEFAULT_GOOGLE_MIN_WORKERS = pools.get('google_min_workers', DEFAULT_GOOGLE_MIN_WORKERS)
     DEFAULT_GOOGLE_MAX_WORKERS = pools.get('google_max_workers', DEFAULT_GOOGLE_MAX_WORKERS)
+    DEFAULT_GRAPHQL_MIN_WORKERS = pools.get('graphql_min_workers', DEFAULT_GRAPHQL_MIN_WORKERS)
+    DEFAULT_GRAPHQL_MAX_WORKERS = pools.get('graphql_max_workers', DEFAULT_GRAPHQL_MAX_WORKERS)
     DEFAULT_JOBSPY_WORKERS = pools.get('jobspy_workers', DEFAULT_JOBSPY_WORKERS)
     DEFAULT_ORCHESTRATOR_WORKERS = pools.get('orchestrator_workers', DEFAULT_ORCHESTRATOR_WORKERS)
 
@@ -2531,6 +2731,7 @@ def main():
     print(f"     Greenhouse: {DEFAULT_GREENHOUSE_MIN_WORKERS}-{DEFAULT_GREENHOUSE_MAX_WORKERS}")
     print(f"     Lever: {DEFAULT_LEVER_MIN_WORKERS}-{DEFAULT_LEVER_MAX_WORKERS}")
     print(f"     Google: {DEFAULT_GOOGLE_MIN_WORKERS}-{DEFAULT_GOOGLE_MAX_WORKERS}")
+    print(f"     GraphQL: {DEFAULT_GRAPHQL_MIN_WORKERS}-{DEFAULT_GRAPHQL_MAX_WORKERS}")
     print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
     print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}")
@@ -2549,11 +2750,15 @@ def main():
     gh_count = len(config['apis'].get('greenhouse', {}).get('companies', []))
     lever_count = len(config['apis'].get('lever', {}).get('companies', []))
     workday_count = len(config['apis'].get('workday', {}).get('companies', []))
-    total_companies = gh_count + lever_count + workday_count
+    graphql_config = config['apis'].get('graphql', {})
+    graphql_sources = graphql_config.get('sources', []) if graphql_config.get('enabled') else []
+    graphql_count = len(graphql_sources)
+    total_companies = gh_count + lever_count + workday_count + graphql_count
     print(f"\n📋 Configuration loaded:")
     print(f"   Greenhouse: {gh_count} companies")
     print(f"   Lever: {lever_count} companies")
     print(f"   Workday: {workday_count} companies")
+    print(f"   GraphQL: {graphql_count} sources")
     print(f"   TOTAL: {total_companies} companies")
     # P6: Removed stale 10K company warning — config has ~200 companies by design.
     print("="  * 60)
@@ -2606,6 +2811,18 @@ def main():
                 page_limit=WORKDAY_PAGE_LIMIT,
                 max_total_limit=WORKDAY_MAX_JOBS_PER_COMPANY
             )
+
+        # Submit GraphQL parallel fetch
+        if 'graphql' in config['apis'] and config['apis']['graphql'].get('enabled'):
+            graphql_config = config['apis']['graphql']
+            graphql_sources = graphql_config.get('sources', [])
+            max_jobs_per_source = graphql_config.get('max_jobs_per_source', 200)
+            if graphql_sources:
+                futures['graphql'] = executor.submit(
+                    fetch_all_graphql_jobs_parallel,
+                    graphql_sources,
+                    max_jobs_per_source
+                )
 
         # Collect results from all futures
         source_counts = {}  # C1: Track per-source job counts for health.json
