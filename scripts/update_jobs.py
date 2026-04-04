@@ -27,7 +27,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
@@ -2341,6 +2341,51 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     except Exception as e:
         print(f"  ❌ Failed to save market history: {e}")
 
+
+def _validate_prediction_payload(predictions: Dict[str, Any]) -> Tuple[bool, str]:
+    """Validate prediction payload shape before writing artifact output."""
+    required_keys = {
+        'outlook',
+        'predictions',
+        'confidence',
+        'insights',
+        'growing_categories',
+        'declining_categories',
+    }
+    missing = required_keys - set(predictions.keys())
+    if missing:
+        return False, f"Gemini response missing keys {missing}"
+
+    if predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
+        return False, f"Invalid outlook value '{predictions.get('outlook')}'"
+
+    confidence = predictions.get('confidence')
+    if not isinstance(confidence, (int, float)) or isinstance(confidence, bool):
+        return False, "Invalid confidence type"
+
+    if not isinstance(predictions.get('insights'), list) or not all(isinstance(item, str) for item in predictions['insights']):
+        return False, "Invalid insights type"
+
+    for key in ('growing_categories', 'declining_categories'):
+        value = predictions.get(key)
+        if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+            return False, f"Invalid {key} type"
+
+    predictions_block = predictions.get('predictions')
+    if not isinstance(predictions_block, dict):
+        return False, "Invalid predictions type"
+
+    for window in ('7_days', '30_days'):
+        window_data = predictions_block.get(window)
+        if not isinstance(window_data, dict):
+            return False, f"Missing or invalid predictions.{window}"
+        for field in ('total_jobs', 'change_percent'):
+            number = window_data.get(field)
+            if not isinstance(number, (int, float)) or isinstance(number, bool):
+                return False, f"Invalid predictions.{window}.{field} type"
+
+    return True, ""
+
 def predict_hiring_trends() -> None:
     """
     Use Google Gemini API to analyze market history and predict future hiring trends.
@@ -2490,15 +2535,9 @@ Respond in JSON format:
 
                 predictions = json.loads(content)
 
-                # S6: Validate required keys before trusting LLM output
-                required_keys = {'outlook', 'predictions', 'confidence', 'insights'}
-                missing = required_keys - set(predictions.keys())
-                if missing:
-                    print(f"  ⚠️  Gemini response missing keys {missing} — skipping prediction update")
-                elif predictions.get('outlook') not in ('bullish', 'neutral', 'bearish'):
-                    print(f"  ⚠️  Invalid outlook value '{predictions.get('outlook')}' — skipping prediction update")
-                elif not isinstance(predictions.get('confidence'), (int, float)):
-                    print(f"  ⚠️  Invalid confidence type — skipping prediction update")
+                is_valid, error = _validate_prediction_payload(predictions)
+                if not is_valid:
+                    print(f"  ⚠️  {error} — skipping prediction update")
                 else:
                     # Add metadata
                     predictions['generated_at'] = datetime.now().isoformat()

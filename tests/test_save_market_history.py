@@ -13,7 +13,7 @@ import json
 import tempfile
 import shutil
 from datetime import datetime, timedelta
-from collections import Counter
+from unittest.mock import patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 import update_jobs
@@ -532,3 +532,114 @@ class TestFileHandling:
         assert snapshot['total_jobs'] == 1000
         assert snapshot['unique_companies'] == 50
         assert len(snapshot['top_companies']) == 10  # Still capped at 10
+
+
+class TestSaveMarketHistoryDeterminism:
+    """Deterministic tests for retention boundaries and snapshot contracts."""
+
+    FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0)
+
+    @staticmethod
+    def _fixed_datetime_class(fixed_now: datetime):
+        class _FixedDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                if tz is None:
+                    return fixed_now.replace(tzinfo=None)
+                return fixed_now.astimezone(tz)
+
+        return _FixedDateTime
+
+    def test_retention_boundary_drops_day_91_keeps_day_90(self, tmp_path, monkeypatch):
+        history_path = str(tmp_path / "market-history.json")
+        original_join = os.path.join
+        monkeypatch.setattr(update_jobs, "datetime", self._fixed_datetime_class(self.FIXED_NOW))
+
+        day_91 = (self.FIXED_NOW - timedelta(days=91)).strftime("%Y-%m-%d")
+        day_90 = (self.FIXED_NOW - timedelta(days=90)).strftime("%Y-%m-%d")
+
+        existing = {
+            "meta": {
+                "last_updated": self.FIXED_NOW.isoformat(),
+                "total_snapshots": 2,
+                "date_range": {"start": day_91, "end": day_90},
+            },
+            "snapshots": [
+                {
+                    "date": day_91,
+                    "total_jobs": 10,
+                    "categories": {},
+                    "tiers": {},
+                    "top_companies": [],
+                    "unique_companies": 1,
+                    "avg_jobs_per_company": 10.0,
+                    "timestamp": self.FIXED_NOW.isoformat(),
+                },
+                {
+                    "date": day_90,
+                    "total_jobs": 20,
+                    "categories": {},
+                    "tiers": {},
+                    "top_companies": [],
+                    "unique_companies": 2,
+                    "avg_jobs_per_company": 10.0,
+                    "timestamp": self.FIXED_NOW.isoformat(),
+                },
+            ],
+        }
+        with open(history_path, "w", encoding="utf-8") as f:
+            json.dump(existing, f)
+
+        def patched_join(*args):
+            if args and args[-1] == "market-history.json":
+                return history_path
+            return original_join(*args)
+
+        with patch("update_jobs.os.path.join", side_effect=patched_join):
+            update_jobs.save_market_history(
+                [{"company": "Google", "categories": ["swe"], "company_tier": {"tier": "faang-plus"}}]
+            )
+
+        with open(history_path, "r", encoding="utf-8") as f:
+            output = json.load(f)
+        dates = [snap["date"] for snap in output["snapshots"]]
+        assert day_91 not in dates
+        assert day_90 in dates
+        assert self.FIXED_NOW.strftime("%Y-%m-%d") in dates
+
+    def test_snapshot_schema_and_aggregation_are_deterministic(self, tmp_path, monkeypatch):
+        history_path = str(tmp_path / "market-history.json")
+        original_join = os.path.join
+        monkeypatch.setattr(update_jobs, "datetime", self._fixed_datetime_class(self.FIXED_NOW))
+
+        jobs = [
+            {"company": "Google", "categories": ["swe", "ml"], "company_tier": {"tier": "faang-plus"}},
+            {"company": "Meta", "categories": ["swe"], "company_tier": {"tier": "faang-plus"}},
+            {"company": "Stripe", "categories": ["data"], "company_tier": {"tier": "unicorn"}},
+        ]
+
+        def patched_join(*args):
+            if args and args[-1] == "market-history.json":
+                return history_path
+            return original_join(*args)
+
+        with patch("update_jobs.os.path.join", side_effect=patched_join):
+            update_jobs.save_market_history(jobs)
+
+        with open(history_path, "r", encoding="utf-8") as f:
+            output = json.load(f)
+        snapshot = output["snapshots"][0]
+        assert set(snapshot.keys()) == {
+            "date",
+            "total_jobs",
+            "categories",
+            "tiers",
+            "top_companies",
+            "unique_companies",
+            "avg_jobs_per_company",
+            "timestamp",
+        }
+        assert snapshot["date"] == "2026-04-03"
+        assert snapshot["timestamp"] == update_jobs.datetime.now(update_jobs.timezone.utc).isoformat()
+        assert snapshot["categories"] == {"swe": 2, "ml": 1, "data": 1}
+        assert snapshot["tiers"] == {"faang-plus": 2, "unicorn": 1}
