@@ -29,8 +29,8 @@
     </noscript>
     <!-- Critical CSS inlined for above-the-fold rendering -->
     <style>
-        :root{--bg-primary:#0a0f1a;--bg-secondary:#0f1629;--bg-card:rgba(20,29,47,0.7);--text-primary:#f8fafc;--text-secondary:#94a3b8;--text-tertiary:#8896ab;--border-color:rgba(30,41,59,0.8);--accent-start:#6366f1;--accent-mid:#8b5cf6;--accent-end:#a855f7;--accent-gradient:linear-gradient(135deg,var(--accent-start) 0%,var(--accent-mid) 50%,var(--accent-end) 100%);--glass-bg:rgba(20,29,47,0.6);--glass-border:rgba(255,255,255,0.08);--glass-blur:20px;--radius-md:12px;--radius-lg:16px;--radius-full:9999px;--transition-fast:150ms ease;--mesh-color-1:rgba(99,102,241,0.15);--mesh-color-2:rgba(139,92,246,0.12);--mesh-color-3:rgba(168,85,247,0.08)}
-        [data-theme="light"]{--bg-primary:#f8fafc;--bg-secondary:#f1f5f9;--bg-card:rgba(255,255,255,0.8);--text-primary:#0f172a;--text-secondary:#475569;--text-tertiary:#64748b;--border-color:rgba(226,232,240,0.8);--glass-bg:rgba(255,255,255,0.7);--glass-border:rgba(0,0,0,0.05);--mesh-color-1:rgba(99,102,241,0.08);--mesh-color-2:rgba(139,92,246,0.06);--mesh-color-3:rgba(168,85,247,0.04)}
+        :root{--bg-primary:#0a0f1a;--bg-secondary:#0f1629;--bg-card:rgba(20,29,47,0.7);--text-primary:#f8fafc;--text-secondary:#94a3b8;--text-tertiary:#8896ab;--border-color:rgba(30,41,59,0.8);--border-color-hover:rgba(51,65,85,0.9);--accent-start:#6366f1;--accent-mid:#8b5cf6;--accent-end:#a855f7;--accent-gradient:linear-gradient(135deg,var(--accent-start) 0%,var(--accent-mid) 50%,var(--accent-end) 100%);--glass-bg:rgba(20,29,47,0.6);--glass-border:rgba(255,255,255,0.08);--glass-blur:20px;--shadow-sm:0 1px 2px rgba(0,0,0,.3);--radius-md:12px;--radius-lg:16px;--radius-full:9999px;--transition-fast:150ms ease;--mesh-color-1:rgba(99,102,241,0.15);--mesh-color-2:rgba(139,92,246,0.12);--mesh-color-3:rgba(168,85,247,0.08)}
+        [data-theme="light"]{--bg-primary:#f8fafc;--bg-secondary:#f1f5f9;--bg-card:rgba(255,255,255,0.8);--text-primary:#0f172a;--text-secondary:#475569;--text-tertiary:#64748b;--border-color:rgba(226,232,240,0.8);--border-color-hover:rgba(203,213,225,0.9);--glass-bg:rgba(255,255,255,0.7);--glass-border:rgba(0,0,0,0.05);--shadow-sm:0 1px 2px rgba(0,0,0,.05);--mesh-color-1:rgba(99,102,241,0.08);--mesh-color-2:rgba(139,92,246,0.06);--mesh-color-3:rgba(168,85,247,0.04)}
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;overflow-x:hidden}
         body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden;max-width:100vw}
@@ -44,15 +44,15 @@
         .hero-content{position:relative;z-index:1;max-width:960px}
         .hero h1{font-size:clamp(2.5rem,5.8vw,4.15rem);font-weight:800;line-height:1.06;margin-bottom:1.25rem;letter-spacing:-.025em}
         .gradient-text{background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .hero-subtitle{font-size:1.1rem;color:var(--text-secondary);margin:0 auto 2.25rem;max-width:700px;font-weight:450;line-height:1.72}
+        .hero-subtitle{font-size:1.1rem;color:var(--text-secondary);margin:0 auto 2.25rem;max-width:700px;font-weight:500;line-height:1.72}
         .hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
         .btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 2rem;font-weight:600;font-size:1rem;border-radius:var(--radius-full);transition:all var(--transition-fast)}
         .btn-primary{background:var(--accent-gradient);color:#fff;box-shadow:0 8px 30px rgba(99,102,241,.38)}
-        .btn-secondary{background:transparent;color:var(--text-primary);border:1px solid rgba(148,163,184,.45)}
+        .btn-secondary{background:transparent;color:var(--text-primary);border:1px solid var(--border-color)}
         .trust-stats{display:grid;grid-template-columns:repeat(2,minmax(210px,1fr));gap:1rem;max-width:760px;margin:0 auto}
-        .trust-stats .stat{padding:1rem;background:var(--glass-bg);backdrop-filter:blur(var(--glass-blur));-webkit-backdrop-filter:blur(var(--glass-blur));border:1px solid var(--glass-border);border-radius:var(--radius-lg);text-align:left}
+        .trust-stats .stat{padding:1rem;background:var(--glass-bg);backdrop-filter:blur(var(--glass-blur));-webkit-backdrop-filter:blur(var(--glass-blur));border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);text-align:left}
         .trust-stats .stat-icon{display:block;font-size:.85rem;font-weight:600;letter-spacing:.08em;color:var(--text-secondary);text-transform:uppercase;margin-bottom:.35rem}
-        .trust-stats .stat-number{font-size:1.75rem;font-weight:750;color:var(--text-primary);display:block;letter-spacing:.01em;line-height:1.2}
+        .trust-stats .stat-number{font-size:1.75rem;font-weight:700;color:var(--text-primary);display:block;letter-spacing:.01em;line-height:1.2}
         .trust-stats .stat-label{display:block;font-size:.84rem;color:var(--text-secondary);font-weight:600;margin-top:.2rem;text-transform:none;letter-spacing:.01em}
         .trust-stats .stat-note{display:block;font-size:.74rem;color:var(--text-tertiary);margin-top:.28rem}
         .search-section{padding:0 2rem 4rem;max-width:700px;margin:-2rem auto 0;position:relative;z-index:2}.search-wrapper{position:relative}.search-icon{position:absolute;left:1.25rem;top:50%;transform:translateY(-50%);color:var(--text-tertiary);pointer-events:none}
@@ -169,7 +169,7 @@
                     <span>→</span>
                 </a>
                 <a href="https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=new_role.yml"
-                    class="btn-secondary" target="_blank">
+                    class="btn-secondary" target="_blank" rel="noopener noreferrer">
                     Report Missing Role
                 </a>
             </div>
@@ -178,7 +178,7 @@
             <div class="trust-stats">
                 <div class="stat">
                     <span class="stat-icon">Live roles</span>
-                    <span class="stat-number" id="job-count-hero">--</span>
+                    <span class="stat-number" id="job-count-hero" data-site-metric="total_jobs">--</span>
                     <span class="stat-label">Open positions right now</span>
                     <span class="stat-note">Pulled from active ATS endpoints</span>
                 </div>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="stat">
                     <span class="stat-icon">Source depth</span>
-                    <span class="stat-number" data-site-metric="active_sources">--</span>
+                    <span class="stat-number" id="active-sources-hero" data-site-metric="active_sources">--</span>
                     <span class="stat-label">Live source integrations</span>
                     <span class="stat-note">Greenhouse, Lever, Workday, and JobSpy</span>
                 </div>
