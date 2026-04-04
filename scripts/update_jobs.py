@@ -2487,7 +2487,7 @@ def _compute_display_metrics(
         'configured_company_apis': gh_companies + lever_companies + workday_companies + graphql_sources,
         'enabled_sources': enabled_sources,
         'active_hiring_companies': active_hiring_companies,
-        'active_sources': len(source_counts),
+        'active_sources': sum(1 for count in source_counts.values() if count > 0),
     }
 
 
