@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-04T17:08:42.399391",
+    "last_updated": "2026-04-04T17:50:26.833524",
     "total_snapshots": 31,
     "date_range": {
       "start": "2026-03-05",
@@ -1660,11 +1660,11 @@
     },
     {
       "date": "2026-04-04",
-      "total_jobs": 949,
+      "total_jobs": 951,
       "categories": {},
       "tiers": {
-        "faang_plus": 122,
-        "other": 361,
+        "faang_plus": 123,
+        "other": 362,
         "unicorn": 466
       },
       "top_companies": [
@@ -1689,16 +1689,16 @@
           "jobs": 22
         },
         {
+          "company": "Boeing",
+          "jobs": 18
+        },
+        {
           "company": "MongoDB",
           "jobs": 18
         },
         {
           "company": "Affirm",
           "jobs": 18
-        },
-        {
-          "company": "Boeing",
-          "jobs": 17
         },
         {
           "company": "Dropbox",
@@ -1709,9 +1709,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 202,
-      "avg_jobs_per_company": 4.7,
-      "timestamp": "2026-04-04T17:08:42.398934"
+      "unique_companies": 203,
+      "avg_jobs_per_company": 4.68,
+      "timestamp": "2026-04-04T17:50:26.833084"
     }
   ]
 }
