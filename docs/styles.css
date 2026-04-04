@@ -208,14 +208,34 @@ h3 {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--text-primary);
 }
 
+.logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-full);
+    padding: 0.25rem 0.45rem;
+}
+
 .logo-emoji {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.25rem;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .header-actions {
@@ -509,16 +529,16 @@ h3 {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 960px;
 }
 
 /* Large, bold headline */
 .hero h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.5rem, 5.8vw, 4.15rem);
     font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    line-height: 1.06;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.025em;
 }
 
 /* Gradient accent text */
@@ -530,14 +550,14 @@ h3 {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 600px;
+    margin: 0 auto 2.25rem;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 400;
-    line-height: 1.7;
+    font-weight: 500;
+    line-height: 1.72;
 }
 
 /* CTA Buttons */
@@ -546,7 +566,7 @@ h3 {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .btn-primary {
@@ -560,12 +580,12 @@ h3 {
     font-size: 1rem;
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.38);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 12px 34px rgba(99, 102, 241, 0.45);
     color: white;
 }
 
@@ -583,14 +603,14 @@ h3 {
     color: var(--text-primary);
     font-weight: 600;
     font-size: 1rem;
-    border: 1px solid var(--border-color-hover);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
 }
 
 .btn-secondary:hover {
     background: var(--bg-card);
-    border-color: var(--accent-start);
+    border-color: var(--border-color-hover);
     color: var(--text-primary);
 }
 
@@ -601,29 +621,58 @@ h3 {
 
 /* Trust Stats */
 .trust-stats {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(210px, 1fr));
+    gap: 1rem;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
-.stat {
-    text-align: center;
+.trust-stats .stat {
+    padding: 1rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
 }
 
-.stat-number {
-    font-size: 1.5rem;
+.trust-stats .stat-icon {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+.trust-stats .stat-number {
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--text-primary);
     display: block;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
 }
 
-.stat-label {
-    font-size: 0.75rem;
+.trust-stats .stat-label {
+    display: block;
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-top: 0.2rem;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+.trust-stats .stat-note {
+    display: block;
+    font-size: 0.74rem;
     color: var(--text-tertiary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    margin-top: 0.28rem;
 }
 
 /* ============================================
@@ -1384,33 +1433,46 @@ h3 {
         display: inline;
     }
 
+    .logo-mark {
+        font-size: 0.62rem;
+        padding: 0.2rem 0.4rem;
+    }
+
     .hero {
-        padding: 5rem 1.5rem 3rem;
+        padding: 5rem 1.25rem 3rem;
         min-height: auto;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.05rem;
     }
 
     .hero-subtitle {
         font-size: 1rem;
+        line-height: 1.66;
+        margin-bottom: 1.75rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 1.5rem;
     }
 
     .btn-primary,
     .btn-secondary {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
         justify-content: center;
     }
 
     .trust-stats {
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .trust-stats .stat {
+        text-align: center;
     }
 
     .filters-section {
