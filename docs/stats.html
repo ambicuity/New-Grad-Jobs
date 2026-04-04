@@ -78,7 +78,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero stats-hero">
         <div class="blob-container">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
@@ -88,35 +88,49 @@
             <h1>Job Market <span class="gradient-text">Insights</span></h1>
             <p class="hero-subtitle">Real-time analytics from <span data-site-metric="configured_company_apis"
                     data-metric-suffix="+">many</span> companies • Updated every 5 minutes</p>
+            <p class="hero-description">Use this page to quickly understand hiring momentum, where openings are concentrated,
+                and which trends are observed data versus forecasts.</p>
             <div class="stats-last-updated">Last updated: <span id="last-updated">--</span></div>
+            <div class="hero-actions">
+                <a class="btn-secondary hero-back-link" href="index.html" aria-label="Back to jobs board">Back to Jobs Board</a>
+            </div>
         </div>
+    </section>
+
+    <!-- Data Status -->
+    <section class="stats-status-strip" aria-live="polite">
+        <div class="status-chip is-loading" id="data-status-chip">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text" id="data-status-text">Loading analytics data...</span>
+        </div>
+        <p class="status-detail" id="data-status-detail">Verifying freshness and section availability.</p>
     </section>
 
     <!-- Overview Stats -->
     <section class="stats-overview">
         <div class="stats-grid">
-            <div class="stat-card">
+            <div class="stat-card is-loading">
                 <div class="stat-content">
                     <div class="stat-label">Total Jobs</div>
                     <div class="stat-value" id="total-jobs">--</div>
                     <div class="stat-sublabel">Active positions</div>
                 </div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card is-loading">
                 <div class="stat-content">
                     <div class="stat-label">Companies</div>
                     <div class="stat-value" id="total-companies">--</div>
                     <div class="stat-sublabel">Hiring now</div>
                 </div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card is-loading">
                 <div class="stat-content">
                     <div class="stat-label">Countries</div>
                     <div class="stat-value" id="total-countries">--</div>
                     <div class="stat-sublabel">Worldwide</div>
                 </div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card is-loading">
                 <div class="stat-content">
                     <div class="stat-label">Today</div>
                     <div class="stat-value" id="jobs-today">--</div>
@@ -129,22 +143,25 @@
     <!-- Market Trends & Comparisons -->
     <section class="stats-section">
         <h2 class="section-title">Market Trends</h2>
+        <p class="section-description">Observed changes in total openings compared to one week and one month ago.</p>
         <div id="comparisons-container" class="comparisons-grid">
             <!-- Comparison cards will be injected here -->
         </div>
     </section>
 
-    <!-- AI Predictions -->
+    <!-- Top Companies -->
     <section class="stats-section">
-        <h2 class="section-title">AI-Powered Predictions</h2>
-        <div id="predictions-container" class="predictions-wrapper">
-            <!-- Predictions will be injected here -->
+        <h2 class="section-title">Top Hiring Companies</h2>
+        <p class="section-description">Companies with the highest number of currently active postings.</p>
+        <div class="top-companies-grid" id="top-companies">
+            <!-- Generated dynamically -->
         </div>
     </section>
 
     <!-- Category Breakdown -->
     <section class="stats-section">
         <h2 class="section-title">Jobs by Category</h2>
+        <p class="section-description">Distribution of open roles by role family across all observed jobs.</p>
         <div class="chart-container">
             <canvas id="category-chart"></canvas>
         </div>
@@ -153,6 +170,7 @@
     <!-- Company Tier Breakdown -->
     <section class="stats-section">
         <h2 class="section-title">Jobs by Company Tier</h2>
+        <p class="section-description">Where openings are concentrated across FAANG+, unicorn, sector, and other tiers.</p>
         <div class="chart-container">
             <canvas id="tier-chart"></canvas>
         </div>
@@ -161,6 +179,7 @@
     <!-- Location Breakdown -->
     <section class="stats-section">
         <h2 class="section-title">Jobs by Location</h2>
+        <p class="section-description">Top countries by active postings, plus the current top five at a glance.</p>
         <div class="location-stats">
             <div class="chart-container-horizontal">
                 <canvas id="location-chart"></canvas>
@@ -171,19 +190,24 @@
         </div>
     </section>
 
-    <!-- Top Companies -->
+    <!-- Key Insights -->
     <section class="stats-section">
-        <h2 class="section-title">Top Hiring Companies</h2>
-        <div class="top-companies-grid" id="top-companies">
+        <h2 class="section-title">Key Insights</h2>
+        <p class="section-description">Quick takeaways derived from currently observed market data.</p>
+        <div class="insights-grid" id="insights-container">
             <!-- Generated dynamically -->
         </div>
     </section>
 
-    <!-- Key Insights -->
-    <section class="stats-section">
-        <h2 class="section-title">Key Insights</h2>
-        <div class="insights-grid" id="insights-container">
-            <!-- Generated dynamically -->
+    <!-- AI Predictions -->
+    <section class="stats-section forecast-section">
+        <div class="forecast-header">
+            <h2 class="section-title">AI-Powered Predictions</h2>
+            <span class="forecast-tag">Forecast</span>
+        </div>
+        <p class="section-description">Predictions are model-generated estimates and should not be interpreted as observed market facts.</p>
+        <div id="predictions-container" class="predictions-wrapper">
+            <!-- Predictions will be injected here -->
         </div>
     </section>
 
