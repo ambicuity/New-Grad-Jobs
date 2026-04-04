@@ -903,8 +903,8 @@ def fetch_google_jobs(
                     if response.status_code == 404:
                         print(f"  ⚠️  Google: Endpoint not found (404) for {url}.")
                         break
-                except requests.exceptions.RequestException:
-                    pass
+                except requests.exceptions.RequestException as e:
+                    print(f"  ⚠️  Google: Request error for {url}: {e}")
 
                 if attempt < max_retries:
                     time.sleep(3.0 * (2 ** attempt))
