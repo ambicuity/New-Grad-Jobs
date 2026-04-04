@@ -2,13 +2,15 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
 [![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/jobs-1011-blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![Jobs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.total_jobs&label=jobs&color=blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
+[![Company APIs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.configured_company_apis&suffix=%2B&label=company%20APIs&color=6f42c1)](https://ambicuity.github.io/New-Grad-Jobs/health.json)
+[![Sources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.enabled_sources&label=sources&color=0a7f6f)](https://ambicuity.github.io/New-Grad-Jobs/health.json)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates!
 
-🔄 Unlike manual lists, this repo uses **150+ company APIs** and updates **every 5 minutes** 24/7.
+🔄 Unlike manual lists, this repo pulls from configured company APIs and updates **every 5 minutes** 24/7.
 
 🙏 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose)! See [contribution guidelines](CONTRIBUTING.md).
 
@@ -1107,13 +1109,13 @@
 This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
 
 ### 🔌 Data Sources
-- **Direct Company APIs**: Greenhouse and Lever job boards from 70+ tech companies
+- **Direct Company APIs**: Greenhouse, Lever, and Workday job boards from configured company pipelines
 - **Search APIs**: Google Careers direct searches
 - **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
 - **Community Submissions**: User-submitted jobs via GitHub Issues
 
 ### ⚡ Key Features
-- **Comprehensive Coverage**: 70+ companies across multiple platforms
+- **Comprehensive Coverage**: Broad company coverage across multiple platforms
 - **Real-time Updates**: Automatic updates every 5 minutes
 - **Smart Filtering**: Advanced filtering for new grad positions
 - **USA Focus**: Filters for US-based positions only
@@ -1129,7 +1131,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 ### 🏢 Companies Monitored
 
 <details>
-<summary>Click to expand (70+ companies)</summary>
+<summary>Click to expand (configured companies)</summary>
 
 **Greenhouse**: Abnormal Security, Affirm, Airbnb, Airtable, Alchemy, Algolia, Amplitude, Calm, Carta, Cerebral, Chainalysis, Checkr, Chime, Chronosphere, Circle, CircleCI, Cityblock Health, ClickHouse, Cloudflare, Cloudinary, Cockroach Labs, Coinbase, Color Health, Column, Contentful, Coursera, Cruise, Culture Amp, Databricks, Datadog, Deel, Devoted Health, Dialpad, Discord, Dropbox, Duolingo, Elastic, Epic Games, Faire, Fastly, Figma, Fireblocks, Flatiron Health, Flexport, Gemini, Getaround, GitLab, Goat, Grafana Labs, Grammarly, Greenhouse, Gusto, Hims & Hers, Honeycomb, Huntress, Imply, Instacart, Intercom, Jam City, Justworks, Khan Academy, Kraken, Lattice, LaunchDarkly, Lever, LightStep, Lime, LinkedIn, Locus Robotics, Lucid, Lyft, Magic Leap, Marqeta, Materialize, Melio, Mercari, Mercury, Mixpanel, Modern Treasury, MongoDB, New Relic, Niantic, Nuro, Okta, Opendoor, Orca Security, Oscar Health, PagerDuty, Paxos, Peloton, Pinterest, Pipe, PlanetScale, Poshmark, Postman, Pulumi, Railway, Reddit, Remote, Retool, Riot Games, Ripple, Robinhood, Roblox, Ro, Runway, Salesloft, Samsara, Scale AI, Scopely, Shield AI, SingleStore, Skydio, SoFi, SpaceX, Stability AI, Starburst, StockX, Stripe, Sumo Logic, Supercell, Tanium, Tecton, Temporal, Tempus, Twilio, Twitch, Unity Technologies, Upstart, Veeva, Vercel, Via, Waymo, Webflow, Wiz, Yugabyte, ZoomInfo, Zoox, Zynga
 

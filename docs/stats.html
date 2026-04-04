@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Real-time job market insights and trends for new graduates. Live data from 150+ companies.">
+    <meta name="description" content="Real-time job market insights and trends for new graduates from live company API data.">
     <meta name="keywords" content="job market trends, new grad statistics, tech hiring trends, job market data">
     <meta property="og:title" content="Job Market Insights | New Grad Jobs">
     <meta property="og:description" content="Real-time analytics and trends from the new grad job market. Updated every 5 minutes.">
@@ -86,7 +86,8 @@
         </div>
         <div class="hero-content">
             <h1>Job Market <span class="gradient-text">Insights</span></h1>
-            <p class="hero-subtitle">Real-time analytics from 150+ companies • Updated every 5 minutes</p>
+            <p class="hero-subtitle">Real-time analytics from <span data-site-metric="configured_company_apis"
+                    data-metric-suffix="+">many</span> companies • Updated every 5 minutes</p>
             <div class="stats-last-updated">Last updated: <span id="last-updated">--</span></div>
         </div>
     </section>
@@ -201,7 +202,9 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>New Grad Jobs</h4>
-                <p>Automated job board for new graduates. Updated every 5 minutes from 150+ company APIs.</p>
+                <p>Automated job board for new graduates. Updated every 5 minutes from
+                    <span data-site-metric="configured_company_apis" data-metric-suffix="+">many</span> company APIs
+                    across <span data-site-metric="enabled_sources">multiple</span> live sources.</p>
             </div>
             <div class="footer-section">
                 <h4>Links</h4>
@@ -230,6 +233,7 @@
     </footer>
 
     <script src="ui.js"></script>
+    <script src="site-metrics.js"></script>
     <script src="stats.js"></script>
 </body>
 

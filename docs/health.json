@@ -10,5 +10,9 @@
     "workday": 3400
   },
   "zero_sources": [],
-  "run_duration_seconds": 308.5
+  "run_duration_seconds": 308.5,
+  "configured_company_apis": 204,
+  "enabled_sources": 4,
+  "active_hiring_companies": 212,
+  "active_sources": 5
 }
