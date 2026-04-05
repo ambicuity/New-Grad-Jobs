@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-05T08:31:52.654873",
+    "last_updated": "2026-04-05T09:14:26.096930",
     "total_snapshots": 32,
     "date_range": {
       "start": "2026-03-05",
@@ -1715,11 +1715,11 @@
     },
     {
       "date": "2026-04-05",
-      "total_jobs": 967,
+      "total_jobs": 950,
       "categories": {},
       "tiers": {
-        "other": 372,
-        "faang_plus": 129,
+        "other": 360,
+        "faang_plus": 124,
         "unicorn": 466
       },
       "top_companies": [
@@ -1748,10 +1748,6 @@
           "jobs": 20
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 19
-        },
-        {
           "company": "MongoDB",
           "jobs": 18
         },
@@ -1762,11 +1758,15 @@
         {
           "company": "Dropbox",
           "jobs": 17
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 17
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.65,
-      "timestamp": "2026-04-05T08:31:52.654482"
+      "unique_companies": 202,
+      "avg_jobs_per_company": 4.7,
+      "timestamp": "2026-04-05T09:14:26.096487"
     }
   ]
 }
