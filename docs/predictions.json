@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bearish",
   "predictions": {
     "7_days": {
-      "total_jobs": 978,
-      "change_percent": 2.5
+      "total_jobs": 955,
+      "change_percent": 0.74
     },
     "30_days": {
-      "total_jobs": 985,
-      "change_percent": 3.2
+      "total_jobs": 935,
+      "change_percent": -1.37
     }
   },
   "growing_categories": [
-    "AI/Machine Learning",
-    "Cybersecurity",
-    "Cloud Infrastructure"
+    "Generalist/Other",
+    "Support Roles",
+    "Non-Tech Specialized"
   ],
   "declining_categories": [
-    "General Web Development",
-    "Data Entry/QA",
-    "Legacy Systems Maintenance"
+    "FAANG+",
+    "Unicorns",
+    "Specialized Engineering"
   ],
-  "confidence": 65,
+  "confidence": 75,
   "insights": [
-    "The market is currently range-bound between 950 and 1000 jobs, indicating a period of stabilization rather than aggressive expansion or contraction.",
-    "FAANG+ and Unicorn tiers show signs of consolidation, suggesting that hiring is shifting toward specialized roles rather than high-volume generalist recruitment.",
-    "The 7-day average (990) remains slightly above the current count (954), suggesting a minor mean-reversion rebound is likely in the coming week."
+    "The market is currently in a contraction phase, with the total job count hitting a 30-day low of 948, significantly trailing the 30-day average of 978.",
+    "Tier-1 employers (FAANG+ and Unicorns) are showing a consistent downward trend in hiring volume, suggesting a strategic pullback in high-end entry-level recruitment.",
+    "The market is shifting toward 'Other' categories, indicating that while total volume is shrinking, the remaining opportunities are increasingly found in smaller or non-traditional tech firms."
   ],
-  "generated_at": "2026-04-04T20:13:07.649162",
-  "data_points": 31,
+  "generated_at": "2026-04-05T00:06:14.385632",
+  "data_points": 32,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-04"
+    "end": "2026-04-05"
   }
 }
