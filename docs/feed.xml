@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 11:52:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 12:33:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI/ML Software Engineer II at JPMorganChase</title>
@@ -13,13 +13,6 @@
       <description>New grad role at JPMorganChase in New York, NY, US. Category: Software Engineering</description>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=56a5a161ebd21b40</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2397582</link>
-      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
-      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2397582</guid>
     </item>
     <item>
       <title>Software Engineer III at Walmart</title>
@@ -64,20 +57,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=dde05aabe1eff895</guid>
     </item>
     <item>
-      <title>Intermediate Full-Stack Software Engineer (Laravel &amp; Vue) at Our Media</title>
-      <link>https://ca.indeed.com/viewjob?jk=5ad2ace6a178ea6c</link>
-      <description>New grad role at Our Media in Toronto, ON, CA. Category: Software Engineering</description>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5ad2ace6a178ea6c</guid>
-    </item>
-    <item>
-      <title>Junior Eclipse RCP Java Developer at Halliburton</title>
-      <link>https://ca.indeed.com/viewjob?jk=14f807cfd41401fa</link>
-      <description>New grad role at Halliburton in Calgary, AB, CA. Category: Other</description>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=14f807cfd41401fa</guid>
-    </item>
-    <item>
       <title>Graduate Engineering Trainee at Tata Electronics</title>
       <link>https://in.indeed.com/viewjob?jk=2054d33b27678c5f</link>
       <description>New grad role at Tata Electronics in KA, IN. Category: Other</description>
@@ -97,6 +76,20 @@
       <description>New grad role at GroupHEALTH Benefit Solutions in Winnipeg, MB, CA. Category: Software Engineering</description>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7ebeb5cb47d03cc5</guid>
+    </item>
+    <item>
+      <title>Intermediate Full-Stack Software Engineer (Laravel &amp; Vue) at Our Media</title>
+      <link>https://ca.indeed.com/viewjob?jk=5ad2ace6a178ea6c</link>
+      <description>New grad role at Our Media in Toronto, ON, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5ad2ace6a178ea6c</guid>
+    </item>
+    <item>
+      <title>Junior Eclipse RCP Java Developer at Halliburton</title>
+      <link>https://ca.indeed.com/viewjob?jk=14f807cfd41401fa</link>
+      <description>New grad role at Halliburton in Calgary, AB, CA. Category: Other</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=14f807cfd41401fa</guid>
     </item>
     <item>
       <title>Management Trainee at GYSZ Technologies</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Abnormal Security in Remote - Canada; Remote - USA. Category: Software Engineering</description>
       <pubDate>Fri, 03 Apr 2026 15:31:53 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7658409003?gh_jid=7658409003</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 - Message Security Detection at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/6655645003?gh_jid=6655645003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Apr 2026 15:31:53 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/6655645003?gh_jid=6655645003</guid>
     </item>
   </channel>
 </rss>
