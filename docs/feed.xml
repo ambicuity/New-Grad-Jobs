@@ -5,8 +5,64 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 13:44:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 14:39:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloud Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:33:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:27:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7661922</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:27:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661922</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:25:54 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7747550</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:24:28 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7747550</guid>
+    </item>
+    <item>
+      <title>Software Engineer 1 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5051574008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:17:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5051574008</guid>
+    </item>
+    <item>
+      <title>Software Engineer 1 at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5172407008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:16:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5172407008</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7588634</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 14:07:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7588634</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Recommendations at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8378390002?gh_jid=8378390002</link>
@@ -36,11 +92,32 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5171008008</guid>
     </item>
     <item>
+      <title>Technical Trainee Splunk Support at EPIQ INDIA SUPPORT SERVICES LLP</title>
+      <link>https://in.indeed.com/viewjob?jk=7a767319c619bc91</link>
+      <description>New grad role at EPIQ INDIA SUPPORT SERVICES LLP in TN, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7a767319c619bc91</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer at Sagility</title>
+      <link>https://in.indeed.com/viewjob?jk=328cefa2db568a25</link>
+      <description>New grad role at Sagility in TS, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=328cefa2db568a25</guid>
+    </item>
+    <item>
       <title>Software engineer at bp</title>
       <link>https://in.indeed.com/viewjob?jk=e44ddf81ef0fcb7d</link>
       <description>New grad role at bp in MH, IN. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e44ddf81ef0fcb7d</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Emagesoft Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=53f6739d004b6fac</link>
+      <description>New grad role at Emagesoft Pvt Ltd in KA, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=53f6739d004b6fac</guid>
     </item>
     <item>
       <title>Full Stack Software Developer (React, Java/Node JS) at Accellor</title>
@@ -64,11 +141,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3e887d683a2873e0</guid>
     </item>
     <item>
-      <title>Associate DevOps Engineer (ADE / DE) at E2logy Software Solutions Pvt. Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=7c468d7253d32290</link>
-      <description>New grad role at E2logy Software Solutions Pvt. Ltd in UP, IN. Category: Infrastructure &amp; SRE</description>
+      <title>Systems Engineer - Expert Level TO 17 / 24 PD 2 at Mission Intel</title>
+      <link>https://www.indeed.com/viewjob?jk=0e7c011ba2ddb3b5</link>
+      <description>New grad role at Mission Intel in Springfield, VA, US. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7c468d7253d32290</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e7c011ba2ddb3b5</guid>
     </item>
     <item>
       <title>R&amp;D Software Engineer at Broadcom</title>
@@ -97,20 +174,6 @@
       <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a1e6d7d811ed2bd4</guid>
-    </item>
-    <item>
-      <title>MC Project Engineer-Entry Level - ARC at IES Commercial, Inc. – DBA IES Electrical</title>
-      <link>https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</link>
-      <description>New grad role at IES Commercial, Inc. – DBA IES Electrical in Lithia Springs, GA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</guid>
-    </item>
-    <item>
-      <title>Instructional Assistant Special Education I - Self-Contained - Mountain View High School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=1e13b2ecd18e11a6</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1e13b2ecd18e11a6</guid>
     </item>
     <item>
       <title>Design Engineer I New Products at Vollrath Company</title>
@@ -174,6 +237,55 @@
       <description>New grad role at Uber in Sunnyvale, CA, US. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ffc8a04fd8cfea5a</guid>
+    </item>
+    <item>
+      <title>Junior AI Software Engineer at Agility PR Solutions</title>
+      <link>https://ca.indeed.com/viewjob?jk=2cfd8548814e37a7</link>
+      <description>New grad role at Agility PR Solutions in Ottawa, ON, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2cfd8548814e37a7</guid>
+    </item>
+    <item>
+      <title>AI Software Engineer at Agility PR Solutions</title>
+      <link>https://ca.indeed.com/viewjob?jk=34fe82b7697bb38d</link>
+      <description>New grad role at Agility PR Solutions in Ottawa, ON, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=34fe82b7697bb38d</guid>
+    </item>
+    <item>
+      <title>MC Project Engineer-Entry Level - ARC at IES Commercial, Inc. – DBA IES Electrical</title>
+      <link>https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</link>
+      <description>New grad role at IES Commercial, Inc. – DBA IES Electrical in Lithia Springs, GA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</guid>
+    </item>
+    <item>
+      <title>New Grad Nursing Residency Program - CCCU at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=823b574c03517dd3</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=823b574c03517dd3</guid>
+    </item>
+    <item>
+      <title>New Graduate Nurse - Multiple Inpatient Units at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=5313ef8aed1599d6</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5313ef8aed1599d6</guid>
+    </item>
+    <item>
+      <title>New Graduate Nurse - Multiple Inpatient Units at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=2e913ef826940816</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2e913ef826940816</guid>
+    </item>
+    <item>
+      <title>New Grad Nursing Residency Program - CCCU at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=93d343165cc386eb</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=93d343165cc386eb</guid>
     </item>
     <item>
       <title>Government Camp High School to Highway Trainee at Oregon Department of Transportation</title>
@@ -244,118 +356,6 @@
       <description>New grad role at Oregon Department of Transportation in Gold Beach, OR, US. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e247bc81253245c0</guid>
-    </item>
-    <item>
-      <title>Albany High School to Highway Trainee - Bridge at Oregon Department of Transportation</title>
-      <link>https://www.indeed.com/viewjob?jk=8760c8c44b0f8130</link>
-      <description>New grad role at Oregon Department of Transportation in Albany, OR, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8760c8c44b0f8130</guid>
-    </item>
-    <item>
-      <title>Moro High School to Highway Trainee at Oregon Department of Transportation</title>
-      <link>https://www.indeed.com/viewjob?jk=951e9b600d9cb8b6</link>
-      <description>New grad role at Oregon Department of Transportation in Moro, OR, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=951e9b600d9cb8b6</guid>
-    </item>
-    <item>
-      <title>McMinnville High School to Highway Trainee at Oregon Department of Transportation</title>
-      <link>https://www.indeed.com/viewjob?jk=dcd4deabbf14ef8d</link>
-      <description>New grad role at Oregon Department of Transportation in McMinnville, OR, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dcd4deabbf14ef8d</guid>
-    </item>
-    <item>
-      <title>Burns High School to Highway Trainee at Oregon Department of Transportation</title>
-      <link>https://www.indeed.com/viewjob?jk=505bf4f8a54406c4</link>
-      <description>New grad role at Oregon Department of Transportation in Burns, OR, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=505bf4f8a54406c4</guid>
-    </item>
-    <item>
-      <title>New Graduate Nurse Residency Program at PeaceHealth</title>
-      <link>https://www.indeed.com/viewjob?jk=cb92c053a2e1cc6e</link>
-      <description>New grad role at PeaceHealth in Springfield, OR, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cb92c053a2e1cc6e</guid>
-    </item>
-    <item>
-      <title>New Graduate Nurse - Multiple Inpatient Units at The Hospital for Sick Children</title>
-      <link>https://ca.indeed.com/viewjob?jk=2e913ef826940816</link>
-      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2e913ef826940816</guid>
-    </item>
-    <item>
-      <title>New Grad Nursing Residency Program - CCCU at The Hospital for Sick Children</title>
-      <link>https://ca.indeed.com/viewjob?jk=93d343165cc386eb</link>
-      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=93d343165cc386eb</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Harris Computer</title>
-      <link>https://in.indeed.com/viewjob?jk=4a845bd8b4b5286a</link>
-      <description>New grad role at Harris Computer in MH, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4a845bd8b4b5286a</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer – Generative AI at Logixal</title>
-      <link>https://in.indeed.com/viewjob?jk=b322a8681c30b7ad</link>
-      <description>New grad role at Logixal in MH, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b322a8681c30b7ad</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at NCR Atleos</title>
-      <link>https://in.indeed.com/viewjob?jk=fc98f14f046b6831</link>
-      <description>New grad role at NCR Atleos in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fc98f14f046b6831</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer I at NCR Atleos</title>
-      <link>https://in.indeed.com/viewjob?jk=1a283acb88215b6e</link>
-      <description>New grad role at NCR Atleos in HR, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1a283acb88215b6e</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer I at NCR Atleos</title>
-      <link>https://in.indeed.com/viewjob?jk=3b2e4ce37997cc25</link>
-      <description>New grad role at NCR Atleos in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3b2e4ce37997cc25</guid>
-    </item>
-    <item>
-      <title>GET (Graduate Engineer Trainee) at Phoenix Aerospace</title>
-      <link>https://in.indeed.com/viewjob?jk=816c6347558d8aae</link>
-      <description>New grad role at Phoenix Aerospace in KA, IN. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=816c6347558d8aae</guid>
-    </item>
-    <item>
-      <title>Part-Time Lecturer Pool - Engineering Technology - Solano Campus (AY 26/27) at California State University</title>
-      <link>https://www.indeed.com/viewjob?jk=b141fd2158d3ae58</link>
-      <description>New grad role at California State University in Vallejo, CA, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b141fd2158d3ae58</guid>
-    </item>
-    <item>
-      <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=7eeaae79315e7520</link>
-      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7eeaae79315e7520</guid>
-    </item>
-    <item>
-      <title>Associate Application Engineer at Walker Process Equipment, Division of McNish Corporation</title>
-      <link>https://www.indeed.com/viewjob?jk=649036d7f3adc3fb</link>
-      <description>New grad role at Walker Process Equipment, Division of McNish Corporation in Aurora, IL, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=649036d7f3adc3fb</guid>
     </item>
   </channel>
 </rss>
