@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-06T12:01:37.615360",
+    "last_updated": "2026-04-06T13:44:07.261329",
     "total_snapshots": 33,
     "date_range": {
       "start": "2026-03-05",
@@ -1770,10 +1770,10 @@
     },
     {
       "date": "2026-04-06",
-      "total_jobs": 976,
+      "total_jobs": 979,
       "categories": {},
       "tiers": {
-        "faang_plus": 137,
+        "faang_plus": 140,
         "other": 374,
         "unicorn": 465
       },
@@ -1804,7 +1804,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 19
+          "jobs": 20
         },
         {
           "company": "MongoDB",
@@ -1819,9 +1819,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 205,
-      "avg_jobs_per_company": 4.76,
-      "timestamp": "2026-04-06T12:01:37.614841"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.71,
+      "timestamp": "2026-04-06T13:44:07.260791"
     }
   ]
 }
