@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-06T23:08:19.530417",
+    "last_updated": "2026-04-06T23:54:04.088625",
     "total_snapshots": 33,
     "date_range": {
       "start": "2026-03-05",
@@ -1770,11 +1770,11 @@
     },
     {
       "date": "2026-04-06",
-      "total_jobs": 984,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
-        "other": 370,
-        "faang_plus": 144,
+        "other": 365,
+        "faang_plus": 145,
         "unicorn": 470
       },
       "top_companies": [
@@ -1799,11 +1799,11 @@
           "jobs": 20
         },
         {
-          "company": "NTT DATA",
-          "jobs": 20
+          "company": "Dropbox",
+          "jobs": 19
         },
         {
-          "company": "Dropbox",
+          "company": "NTT DATA",
           "jobs": 19
         },
         {
@@ -1811,17 +1811,17 @@
           "jobs": 18
         },
         {
-          "company": "Affirm",
+          "company": "Northrop Grumman",
           "jobs": 18
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 17
+          "company": "Affirm",
+          "jobs": 18
         }
       ],
-      "unique_companies": 207,
-      "avg_jobs_per_company": 4.75,
-      "timestamp": "2026-04-06T23:08:19.530017"
+      "unique_companies": 206,
+      "avg_jobs_per_company": 4.76,
+      "timestamp": "2026-04-06T23:54:04.088223"
     }
   ]
 }
