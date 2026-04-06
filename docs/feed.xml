@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 19:42:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 20:29:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Server at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</link>
+      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 20:06:32 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L3) Infrastructure at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7767260</link>
+      <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 19:51:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
+      <description>New grad role at Airtable in San Francisco, CA; Austin, TX; New York, NY. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 19:42:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8124953002</guid>
+    </item>
     <item>
       <title>Associate eLearning Developer at Fastly</title>
       <link>https://www.fastly.com/about/jobs/apply?gh_jid=7775181</link>
@@ -106,13 +127,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7617683003</guid>
     </item>
     <item>
-      <title>ICLR 2026 - Job Application at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4678031005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; Seattle, WA; New York, NY. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 19:00:06 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4678031005</guid>
-    </item>
-    <item>
       <title>Production Support Engineer II at Marqeta</title>
       <link>https://job-boards.greenhouse.io/marqeta/jobs/7743101</link>
       <description>New grad role at Marqeta in Remote, USA. Category: Other</description>
@@ -156,10 +170,10 @@
     </item>
     <item>
       <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 17:16:50 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
     </item>
     <item>
       <title>Software Engineer at Twilio</title>
@@ -170,10 +184,10 @@
     </item>
     <item>
       <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 17:16:50 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
     </item>
     <item>
       <title>Software Engineer (L1) at Twilio</title>
@@ -342,20 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 16:38:53 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8494238002?gh_jid=8494238002</guid>
-    </item>
-    <item>
-      <title>Security Engineer (Application Security) at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7782161</link>
-      <description>New grad role at Contentful in Orlando, Florida, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 16:28:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7782161</guid>
-    </item>
-    <item>
-      <title>Security Engineer (Application Security) at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7782181</link>
-      <description>New grad role at Contentful in Tampa, Florida, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 16:28:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7782181</guid>
     </item>
   </channel>
 </rss>
