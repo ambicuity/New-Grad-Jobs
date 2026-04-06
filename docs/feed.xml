@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 17:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 18:35:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Agent at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5704320004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 18:21:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704320004</guid>
+    </item>
+    <item>
+      <title>Production Support Engineer II at Marqeta</title>
+      <link>https://job-boards.greenhouse.io/marqeta/jobs/7743101</link>
+      <description>New grad role at Marqeta in Remote, USA. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 18:15:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/marqeta/jobs/7743101</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
+      <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 17:50:13 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7747550</link>
@@ -118,13 +139,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 16:41:26 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523893</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
-      <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Software Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 16:41:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -342,20 +356,6 @@
       <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
       <pubDate>Mon, 06 Apr 2026 04:05:55 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5171008008</guid>
-    </item>
-    <item>
-      <title>Technical Trainee Splunk Support at EPIQ INDIA SUPPORT SERVICES LLP</title>
-      <link>https://in.indeed.com/viewjob?jk=7a767319c619bc91</link>
-      <description>New grad role at EPIQ INDIA SUPPORT SERVICES LLP in TN, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7a767319c619bc91</guid>
-    </item>
-    <item>
-      <title>Engineer II, Software Development at NETGEAR</title>
-      <link>https://in.indeed.com/viewjob?jk=f1d2dbe9c3064519</link>
-      <description>New grad role at NETGEAR in TN, IN. Category: Hardware Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f1d2dbe9c3064519</guid>
     </item>
   </channel>
 </rss>
