@@ -2,34 +2,34 @@
   "outlook": "bearish",
   "predictions": {
     "7_days": {
-      "total_jobs": 955,
-      "change_percent": 0.74
+      "total_jobs": 928,
+      "change_percent": -0.85
     },
     "30_days": {
-      "total_jobs": 935,
-      "change_percent": -1.37
+      "total_jobs": 915,
+      "change_percent": -2.24
     }
   },
   "growing_categories": [
-    "Generalist/Other",
-    "Support Roles",
-    "Non-Tech Specialized"
+    "N/A",
+    "N/A",
+    "N/A"
   ],
   "declining_categories": [
-    "FAANG+",
-    "Unicorns",
-    "Specialized Engineering"
+    "faang_plus",
+    "other",
+    "unicorn"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently in a contraction phase, with the total job count hitting a 30-day low of 948, significantly trailing the 30-day average of 978.",
-    "Tier-1 employers (FAANG+ and Unicorns) are showing a consistent downward trend in hiring volume, suggesting a strategic pullback in high-end entry-level recruitment.",
-    "The market is shifting toward 'Other' categories, indicating that while total volume is shrinking, the remaining opportunities are increasingly found in smaller or non-traditional tech firms."
+    "The market is currently in a clear downward trend, with the current total (936) sitting below both the 7-day and 30-day averages, signaling a lack of momentum.",
+    "All tracked company tiers (FAANG+, Unicorn, and Other) show consistent contraction over the last week, suggesting a broad-based reduction in new graduate hiring capacity.",
+    "The consistent decline over the last 5 days indicates that the market has not yet reached a floor, supporting a bearish outlook for the next month."
   ],
-  "generated_at": "2026-04-05T00:06:14.385632",
-  "data_points": 32,
+  "generated_at": "2026-04-06T03:01:00.724642",
+  "data_points": 33,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-05"
+    "end": "2026-04-06"
   }
 }
