@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-06T07:14:27.224950",
+    "last_updated": "2026-04-06T08:51:40.223306",
     "total_snapshots": 33,
     "date_range": {
       "start": "2026-03-05",
@@ -1770,11 +1770,11 @@
     },
     {
       "date": "2026-04-06",
-      "total_jobs": 937,
+      "total_jobs": 939,
       "categories": {},
       "tiers": {
-        "other": 348,
-        "faang_plus": 124,
+        "other": 349,
+        "faang_plus": 125,
         "unicorn": 465
       },
       "top_companies": [
@@ -1791,15 +1791,15 @@
           "jobs": 25
         },
         {
+          "company": "Boeing",
+          "jobs": 22
+        },
+        {
           "company": "Lyft",
           "jobs": 22
         },
         {
           "company": "NTT DATA",
-          "jobs": 22
-        },
-        {
-          "company": "Boeing",
           "jobs": 21
         },
         {
@@ -1819,9 +1819,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 197,
-      "avg_jobs_per_company": 4.76,
-      "timestamp": "2026-04-06T07:14:27.224321"
+      "unique_companies": 200,
+      "avg_jobs_per_company": 4.7,
+      "timestamp": "2026-04-06T08:51:40.222913"
     }
   ]
 }
