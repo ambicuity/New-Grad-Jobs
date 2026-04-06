@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 15:35:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 16:30:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer (Application Security) at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
+      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 06 Apr 2026 16:24:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
+    </item>
+    <item>
+      <title>Associate eLearning Developer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7775181</link>
+      <description>New grad role at Fastly in Pune, India. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 16:03:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7775181</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7716833</link>
+      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 16:03:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7716833</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Identity and Access Management at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7669557</link>
+      <description>New grad role at Fastly in Denver, CO; New York City, NY; San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 16:03:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7669557</guid>
+    </item>
     <item>
       <title>Data &amp; Control Systems Engineer (Starship Launch Pad) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8231335002?gh_jid=8231335002</link>
@@ -127,6 +155,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e44ddf81ef0fcb7d</guid>
     </item>
     <item>
+      <title>Java Developer - Associate - Software Engineer at Morgan Stanley</title>
+      <link>https://in.indeed.com/viewjob?jk=cc0007d70f36aca1</link>
+      <description>New grad role at Morgan Stanley in KA, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cc0007d70f36aca1</guid>
+    </item>
+    <item>
       <title>Quality Assurance Engineer, Aladdin Engineering , Associate at BlackRock</title>
       <link>https://in.indeed.com/viewjob?jk=9d82f846fa030714</link>
       <description>New grad role at BlackRock in HR, IN. Category: Other</description>
@@ -155,27 +190,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=34fe82b7697bb38d</guid>
     </item>
     <item>
-      <title>Entry-Level Civil Engineer Land Design at Pinchin</title>
-      <link>https://www.indeed.com/viewjob?jk=87a89d758699125f</link>
-      <description>New grad role at Pinchin in Glassboro, NJ, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=87a89d758699125f</guid>
-    </item>
-    <item>
-      <title>Entry Level Civil Design Engineer in Training at Thomas &amp; Hutton</title>
-      <link>https://www.indeed.com/viewjob?jk=2f0f561f7bed8bc0</link>
-      <description>New grad role at Thomas &amp; Hutton in Brunswick, GA, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2f0f561f7bed8bc0</guid>
-    </item>
-    <item>
-      <title>Civil Engineer – Entry Level at ISC Constructors, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=a1e6d7d811ed2bd4</link>
-      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a1e6d7d811ed2bd4</guid>
-    </item>
-    <item>
       <title>MC Project Engineer-Entry Level - ARC at IES Commercial, Inc. – DBA IES Electrical</title>
       <link>https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</link>
       <description>New grad role at IES Commercial, Inc. – DBA IES Electrical in Lithia Springs, GA, US. Category: Infrastructure &amp; SRE</description>
@@ -183,11 +197,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3bfecb6fd29a018b</guid>
     </item>
     <item>
+      <title>2026 Test Engineer I (Sea Systems) - Hunt Valley, MD at Textron Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=a2ea66f09ef2734c</link>
+      <description>New grad role at Textron Systems in Hunt Valley, MD, US. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a2ea66f09ef2734c</guid>
+    </item>
+    <item>
+      <title>Research Information Systems Engineer - Intermediate Professional at Georgia Tech</title>
+      <link>https://www.indeed.com/viewjob?jk=12c5122bc6e9dd1e</link>
+      <description>New grad role at Georgia Tech in Atlanta, GA, US. Category: Software Engineering</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=12c5122bc6e9dd1e</guid>
+    </item>
+    <item>
       <title>Design Engineer I New Products at Vollrath Company</title>
       <link>https://www.indeed.com/viewjob?jk=a74219d54dde954b</link>
       <description>New grad role at Vollrath Company in Sheboygan, WI, US. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a74219d54dde954b</guid>
+    </item>
+    <item>
+      <title>Entry-Level Civil Engineer Land Design at Pinchin</title>
+      <link>https://www.indeed.com/viewjob?jk=87a89d758699125f</link>
+      <description>New grad role at Pinchin in Glassboro, NJ, US. Category: Other</description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=87a89d758699125f</guid>
     </item>
     <item>
       <title>Graduate 2026 Software Engineer I, US at Uber</title>
@@ -246,25 +281,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ffc8a04fd8cfea5a</guid>
     </item>
     <item>
-      <title>New Graduate Nurse - Multiple Inpatient Units at The Hospital for Sick Children</title>
-      <link>https://ca.indeed.com/viewjob?jk=2e913ef826940816</link>
-      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <title>Civil Engineer – Entry Level at ISC Constructors, LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=a1e6d7d811ed2bd4</link>
+      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2e913ef826940816</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a1e6d7d811ed2bd4</guid>
     </item>
     <item>
-      <title>New Grad Nursing Residency Program - CCCU at The Hospital for Sick Children</title>
-      <link>https://ca.indeed.com/viewjob?jk=93d343165cc386eb</link>
-      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
+      <title>Entry Level Civil Design Engineer in Training at Thomas &amp; Hutton</title>
+      <link>https://www.indeed.com/viewjob?jk=2f0f561f7bed8bc0</link>
+      <description>New grad role at Thomas &amp; Hutton in Brunswick, GA, US. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=93d343165cc386eb</guid>
-    </item>
-    <item>
-      <title>Instructional Assistant Special Education I - Self-Contained - Mountain View High School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=1e13b2ecd18e11a6</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1e13b2ecd18e11a6</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2f0f561f7bed8bc0</guid>
     </item>
     <item>
       <title>Software Engineer at Altera Digital Health</title>
@@ -316,46 +344,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7c468d7253d32290</guid>
     </item>
     <item>
-      <title>GET (Graduate Engineer Trainee) at Phoenix Aerospace</title>
-      <link>https://in.indeed.com/viewjob?jk=816c6347558d8aae</link>
-      <description>New grad role at Phoenix Aerospace in KA, IN. Category: Other</description>
+      <title>New Graduate Nurse - Multiple Inpatient Units at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=2e913ef826940816</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=816c6347558d8aae</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2e913ef826940816</guid>
     </item>
     <item>
-      <title>Part-Time Lecturer Pool - Engineering Technology - Solano Campus (AY 26/27) at California State University</title>
-      <link>https://www.indeed.com/viewjob?jk=b141fd2158d3ae58</link>
-      <description>New grad role at California State University in Vallejo, CA, US. Category: Other</description>
+      <title>New Grad Nursing Residency Program - CCCU at The Hospital for Sick Children</title>
+      <link>https://ca.indeed.com/viewjob?jk=93d343165cc386eb</link>
+      <description>New grad role at The Hospital for Sick Children in Toronto, ON, CA. Category: Other</description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b141fd2158d3ae58</guid>
-    </item>
-    <item>
-      <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=7eeaae79315e7520</link>
-      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7eeaae79315e7520</guid>
-    </item>
-    <item>
-      <title>Network Engineer at NITS GLOBAL</title>
-      <link>https://in.indeed.com/viewjob?jk=d768582cc72c38ab</link>
-      <description>New grad role at NITS GLOBAL in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d768582cc72c38ab</guid>
-    </item>
-    <item>
-      <title>Upper School English Faculty 2026-2027 at The Meadows School</title>
-      <link>https://www.indeed.com/viewjob?jk=1dab026bb836b882</link>
-      <description>New grad role at The Meadows School in Las Vegas, NV, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1dab026bb836b882</guid>
-    </item>
-    <item>
-      <title>Sales Development Program, New College Graduate Rotational Program- 2026 at Visa</title>
-      <link>https://www.indeed.com/viewjob?jk=a3f50e9700a2a8aa</link>
-      <description>New grad role at Visa in Atlanta, GA, US. Category: Other</description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a3f50e9700a2a8aa</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=93d343165cc386eb</guid>
     </item>
   </channel>
 </rss>
