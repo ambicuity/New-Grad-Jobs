@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-07T12:03:16.160017",
+    "last_updated": "2026-04-07T13:59:10.573292",
     "total_snapshots": 34,
     "date_range": {
       "start": "2026-03-05",
@@ -1825,12 +1825,12 @@
     },
     {
       "date": "2026-04-07",
-      "total_jobs": 1006,
+      "total_jobs": 1010,
       "categories": {},
       "tiers": {
-        "other": 389,
-        "unicorn": 473,
-        "faang_plus": 144
+        "other": 387,
+        "unicorn": 470,
+        "faang_plus": 153
       },
       "top_companies": [
         {
@@ -1870,13 +1870,13 @@
           "jobs": 18
         },
         {
-          "company": "NTT DATA",
-          "jobs": 18
+          "company": "Stripe",
+          "jobs": 16
         }
       ],
-      "unique_companies": 214,
-      "avg_jobs_per_company": 4.7,
-      "timestamp": "2026-04-07T12:03:16.159524"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 4.47,
+      "timestamp": "2026-04-07T13:59:10.572834"
     }
   ]
 }
