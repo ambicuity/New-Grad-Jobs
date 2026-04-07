@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 17:43:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 18:42:24 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer Guest &amp; Host (Listing)  at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7783175?gh_jid=7783175</link>
+      <description>New grad role at Airbnb in Remote, USA . Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 18:01:48 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7783175?gh_jid=7783175</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Platform Infrastructure at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7786771</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 18:00:03 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7786771</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Performance Tooling and Infrastructure at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7786521</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 17:47:56 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7786521</guid>
+    </item>
     <item>
       <title>Cloud Security Engineer at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5854400004</link>
@@ -146,6 +167,34 @@
       <description>New grad role at Smiths Group in MH, IN. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f09f9271f31a5703</guid>
+    </item>
+    <item>
+      <title>Software Engineer - DevOps - Python, Docker, Kubernetes, Cloud at Visa</title>
+      <link>https://in.indeed.com/viewjob?jk=5348c267636bea0f</link>
+      <description>New grad role at Visa in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5348c267636bea0f</guid>
+    </item>
+    <item>
+      <title>Data Engineer - Databricks at Newvision Softcom &amp; Consultancy Pvt. Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</link>
+      <description>New grad role at Newvision Softcom &amp; Consultancy Pvt. Ltd in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</guid>
+    </item>
+    <item>
+      <title>Embedded Trainee at EMATIX Embedded Solutions Pvt Ltd.</title>
+      <link>https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</link>
+      <description>New grad role at EMATIX Embedded Solutions Pvt Ltd. in TN, IN. Category: Hardware Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</guid>
+    </item>
+    <item>
+      <title>Data Scientist II, Vacation Rental Performance Analytics at Expedia Group</title>
+      <link>https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</link>
+      <description>New grad role at Expedia Group in KA, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</guid>
     </item>
     <item>
       <title>Custom Software Engineer at Accenture</title>
@@ -307,55 +356,6 @@
       <description>New grad role at Accenture in MH, IN. Category: Software Engineering</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=689a9c9c39b6aaf9</guid>
-    </item>
-    <item>
-      <title>Software Engineer - DevOps - Python, Docker, Kubernetes, Cloud at Visa</title>
-      <link>https://in.indeed.com/viewjob?jk=5348c267636bea0f</link>
-      <description>New grad role at Visa in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5348c267636bea0f</guid>
-    </item>
-    <item>
-      <title>Data Engineer - Databricks at Newvision Softcom &amp; Consultancy Pvt. Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</link>
-      <description>New grad role at Newvision Softcom &amp; Consultancy Pvt. Ltd in MH, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</guid>
-    </item>
-    <item>
-      <title>Embedded Trainee at EMATIX Embedded Solutions Pvt Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</link>
-      <description>New grad role at EMATIX Embedded Solutions Pvt Ltd. in TN, IN. Category: Hardware Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</guid>
-    </item>
-    <item>
-      <title>Data Scientist II, Vacation Rental Performance Analytics at Expedia Group</title>
-      <link>https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</link>
-      <description>New grad role at Expedia Group in KA, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</guid>
-    </item>
-    <item>
-      <title>Packaging- Junior Engineer Trainee - Pouching at Uflex Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=3f6597f032927f7c</link>
-      <description>New grad role at Uflex Ltd in JK, IN. Category: Other</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3f6597f032927f7c</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product &amp; Audience Technology at NPR</title>
-      <link>https://www.indeed.com/viewjob?jk=9ad1dc41860f048c</link>
-      <description>New grad role at NPR in Washington, DC, US. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9ad1dc41860f048c</guid>
-    </item>
-    <item>
-      <title>Junior Level Test Engineer at mPower Software Services</title>
-      <link>https://www.indeed.com/viewjob?jk=3fdbd4aabc1baf2b</link>
-      <description>New grad role at mPower Software Services in Egg Harbor Township, NJ, US. Category: Other</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3fdbd4aabc1baf2b</guid>
     </item>
   </channel>
 </rss>
