@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 22:11:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 23:01:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 22:35:54 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Mechanical at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8497524002?gh_jid=8497524002</link>
+      <description>New grad role at SpaceX in McGregor, TX. Category: Other</description>
+      <pubDate>Tue, 07 Apr 2026 22:15:26 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8497524002?gh_jid=8497524002</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, ML Flywheel at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7426598</link>
@@ -69,13 +83,6 @@
       <description>New grad role at SoFi in WA - Seattle. Category: Software Engineering</description>
       <pubDate>Tue, 07 Apr 2026 20:47:36 +0000</pubDate>
       <guid isPermaLink="true">https://sofi.com/careers/job/7692745003?gh_jid=7692745003</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
-      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 20:41:50 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
     </item>
     <item>
       <title>Software Engineer at SoFi</title>
@@ -274,11 +281,11 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8495882002?gh_jid=8495882002</guid>
     </item>
     <item>
-      <title>Field Coordinator/Engineer - Kiewit Energy Canada 2026 at Kiewit Corporation</title>
-      <link>https://ca.indeed.com/viewjob?jk=c764eaf6bf2d6348</link>
-      <description>New grad role at Kiewit Corporation in Calgary, AB, CA. Category: Other</description>
+      <title>Packaging- Junior Engineer Trainee - Pouching at Uflex Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3f6597f032927f7c</link>
+      <description>New grad role at Uflex Ltd in JK, IN. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c764eaf6bf2d6348</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3f6597f032927f7c</guid>
     </item>
     <item>
       <title>Engineer II Wet Seal System - Pre-order at Smiths Group</title>
@@ -288,25 +295,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f09f9271f31a5703</guid>
     </item>
     <item>
-      <title>Embedded Trainee at EMATIX Embedded Solutions Pvt Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</link>
-      <description>New grad role at EMATIX Embedded Solutions Pvt Ltd. in TN, IN. Category: Hardware Engineering</description>
+      <title>Field Coordinator/Engineer - Kiewit Energy Canada 2026 at Kiewit Corporation</title>
+      <link>https://ca.indeed.com/viewjob?jk=c764eaf6bf2d6348</link>
+      <description>New grad role at Kiewit Corporation in Calgary, AB, CA. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</guid>
-    </item>
-    <item>
-      <title>Data Scientist II, Vacation Rental Performance Analytics at Expedia Group</title>
-      <link>https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</link>
-      <description>New grad role at Expedia Group in KA, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5eee9776d7a327fe</guid>
-    </item>
-    <item>
-      <title>Data Engineer - Databricks at Newvision Softcom &amp; Consultancy Pvt. Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</link>
-      <description>New grad role at Newvision Softcom &amp; Consultancy Pvt. Ltd in MH, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c764eaf6bf2d6348</guid>
     </item>
     <item>
       <title>Software Engineer - DevOps - Python, Docker, Kubernetes, Cloud at Visa</title>
@@ -314,6 +307,13 @@
       <description>New grad role at Visa in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5348c267636bea0f</guid>
+    </item>
+    <item>
+      <title>Data Engineer - Databricks at Newvision Softcom &amp; Consultancy Pvt. Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</link>
+      <description>New grad role at Newvision Softcom &amp; Consultancy Pvt. Ltd in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ecf3f98d9cbbe6dc</guid>
     </item>
     <item>
       <title>Custom Software Engineer at Accenture</title>
