@@ -426,6 +426,8 @@ CATEGORY_PATTERNS = {
         'keywords': [
             'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
             'cloud engineer', 'systems administrator', 'network engineer',
+            'network automation', 'noc', 'network operations center', 'network operations',
+            'network performance', 'netops', 'network ops', 'noc engineer',
             'security engineer', 'devsecops', 'reliability engineer'
         ]
     },
@@ -627,9 +629,9 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'emoji': CATEGORY_PATTERNS['product_management']['emoji']
         }
 
-    # Keep this override narrow so network-adjacent software/data roles
-    # continue to use the category keyword ordering below.
-    if re.search(r'\bsystems engineer\b\s*,\s*networks?\b', title_lower):
+    # Keep network categorization title-driven so non-engineering roles with
+    # incidental network wording in descriptions do not leak into infra views.
+    if is_engineering_network_title(title):
         category_id = 'infrastructure_sre'
         return {
             'id': category_id,
@@ -637,10 +639,17 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'emoji': CATEGORY_PATTERNS[category_id]['emoji']
         }
 
+    network_infra_keywords = {
+        'network engineer', 'network automation', 'noc', 'network operations center',
+        'network operations', 'network performance', 'netops', 'network ops', 'noc engineer'
+    }
+
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
         for keyword in category_info['keywords']:
+            if category_id == 'infrastructure_sre' and keyword in network_infra_keywords:
+                continue
             # Use word boundaries for exact phrase matching, safely escape the keyword
             pattern = r'\b' + re.escape(keyword) + r'\b'
             if re.search(pattern, combined):
@@ -1769,10 +1778,48 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     pattern = rf"\b({combined_signals})\b"
     return bool(re.search(pattern, title.lower()))
 
+NETWORK_ENGINEERING_TITLE_PATTERN = re.compile(
+    r"\b(?:"
+    r"network engineer|"
+    r"network (?:security|automation|performance) engineer|"
+    r"network operations center engineer|"
+    r"network ops engineer|"
+    r"netops engineer|"
+    r"noc engineer|"
+    r"systems engineer\b\s*,\s*networks?|"
+    r"network(?:ing)?\s+(?:infrastructure|services|platforms?|reliability|security)|"
+    r"(?:software|systems|data|platform|cloud|devops|site reliability|sre) engineer[^\n]*\b(?:networking|network performance|network services|network platforms?|network reliability|network security)"
+    r")\b",
+    re.IGNORECASE,
+)
+
+
+def is_engineering_network_title(title: str) -> bool:
+    """Return True when a network title is clearly engineering/infrastructure-focused."""
+    return isinstance(title, str) and bool(NETWORK_ENGINEERING_TITLE_PATTERN.search(title))
+
+
+
 def has_track_signal(title: str, signals: List[str]) -> bool:
-    """Check if job title contains track signals"""
+    """Check if job title contains track signal keywords (e.g. 'software', 'data').
+
+    For the ambiguous 'network' track, require an engineering-focused title so
+    business-side roles like provider network contracting do not pass.
+    """
+    if not isinstance(title, str):
+        return False
+
     title_lower = title.lower()
-    return any(signal.lower() in title_lower for signal in signals)
+    for signal in signals:
+        signal_lower = signal.lower()
+        if signal_lower == 'network':
+            if is_engineering_network_title(title):
+                return True
+            continue
+        if signal_lower in title_lower:
+            return True
+
+    return False
 
 def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
     """

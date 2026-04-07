@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal
+from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal
 
 
 def _make_job(
@@ -140,6 +140,23 @@ class TestFilterJobsDeduplication:
     def test_empty_input_returns_empty(self):
         result = deduplicate_jobs([])
         assert result == []
+
+
+class TestTrackSignals:
+    """Tests for the has_track_signal() helper function."""
+
+    def test_non_engineering_network_title_does_not_count(self):
+        assert not has_track_signal("Associate, Network Contracting", ["network"])
+
+    def test_engineering_network_title_counts(self):
+        assert has_track_signal("Network Engineer, New Grad", ["network"])
+
+    def test_non_network_signal_still_uses_substring_matching(self):
+        assert has_track_signal("Software Engineer, New Grad", ["software"])
+
+    def test_none_title_returns_false(self):
+        assert not has_track_signal(None, ["network"])
+
 
 class TestHasNewGradSignal:
     """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""
