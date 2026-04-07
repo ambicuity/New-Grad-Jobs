@@ -1,35 +1,35 @@
 {
-  "outlook": "bearish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 928,
-      "change_percent": -0.85
+      "total_jobs": 985,
+      "change_percent": -1.5
     },
     "30_days": {
-      "total_jobs": 915,
-      "change_percent": -2.24
+      "total_jobs": 977,
+      "change_percent": -2.3
     }
   },
   "growing_categories": [
-    "N/A",
-    "N/A",
-    "N/A"
+    "Unicorn Startups",
+    "Generalist Engineering",
+    "Infrastructure/DevOps"
   ],
   "declining_categories": [
-    "faang_plus",
-    "other",
-    "unicorn"
+    "FAANG+ (Stabilizing)",
+    "Legacy Enterprise",
+    "Non-Technical Support"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently in a clear downward trend, with the current total (936) sitting below both the 7-day and 30-day averages, signaling a lack of momentum.",
-    "All tracked company tiers (FAANG+, Unicorn, and Other) show consistent contraction over the last week, suggesting a broad-based reduction in new graduate hiring capacity.",
-    "The consistent decline over the last 5 days indicates that the market has not yet reached a floor, supporting a bearish outlook for the next month."
+    "The market is currently exhibiting high volatility within a tight range (937-1027), suggesting a sideways consolidation phase rather than a clear directional trend.",
+    "Unicorn-tier companies are showing the most consistent hiring resilience, while FAANG+ roles remain volatile, reflecting cautious headcount planning among large-cap tech firms.",
+    "Given that the 7-day and 30-day averages are nearly identical, the market is expected to remain range-bound with minimal growth until the next quarterly hiring cycle begins."
   ],
-  "generated_at": "2026-04-06T03:01:00.724642",
-  "data_points": 33,
+  "generated_at": "2026-04-07T01:27:48.711088",
+  "data_points": 34,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-06"
+    "end": "2026-04-07"
   }
 }
