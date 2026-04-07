@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 13:59:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 15:18:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Platform Engineer II at Duolingo</title>
+      <link>https://careers.duolingo.com/jobs/8449895002?gh_jid=8449895002</link>
+      <description>New grad role at Duolingo in Pittsburgh, PA. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 14:18:30 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8449895002?gh_jid=8449895002</guid>
+    </item>
+    <item>
+      <title>Data Scientist (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 07 Apr 2026 13:55:21 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002</guid>
+    </item>
+    <item>
+      <title>Data Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8494787002?gh_jid=8494787002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 13:55:20 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8494787002?gh_jid=8494787002</guid>
+    </item>
     <item>
       <title>Site Reliability Engineer at Fireblocks</title>
       <link>https://job-boards.greenhouse.io/fireblocks/jobs/4656035006</link>
@@ -113,6 +134,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42ce953a6cb19b5c</guid>
     </item>
     <item>
+      <title>Packaging- Junior Engineer Trainee - Pouching at Uflex Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3f6597f032927f7c</link>
+      <description>New grad role at Uflex Ltd in JK, IN. Category: Other</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3f6597f032927f7c</guid>
+    </item>
+    <item>
       <title>Management Trainee - Quality Analyst at Genpact</title>
       <link>https://in.indeed.com/viewjob?jk=0d04c7ea74da667d</link>
       <description>New grad role at Genpact in HR, IN. Category: Other</description>
@@ -125,6 +153,69 @@
       <description>New grad role at Drishti IAS in DL, IN. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9f063add5e845435</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer at Qode</title>
+      <link>https://www.indeed.com/viewjob?jk=5f27bb79e7f6920f</link>
+      <description>New grad role at Qode in Florham Park, NJ, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5f27bb79e7f6920f</guid>
+    </item>
+    <item>
+      <title>Junior Embedded Systems Engineer at Capte Technologies Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=9062ff335ef79b83</link>
+      <description>New grad role at Capte Technologies Inc. in Los Angeles, CA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9062ff335ef79b83</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at Sentry View Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=5de5e862de30b67a</link>
+      <description>New grad role at Sentry View Systems in Melbourne, FL, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5de5e862de30b67a</guid>
+    </item>
+    <item>
+      <title>Electronics Engineer, Junior (NAWC WOLF) at AM Pierce &amp; Associates, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=ea48fd186b6a8fa6</link>
+      <description>New grad role at AM Pierce &amp; Associates, Inc. in Saint Inigoes Shores, MD, US. Category: Other</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ea48fd186b6a8fa6</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Booz Allen Hamilton</title>
+      <link>https://www.indeed.com/viewjob?jk=5f0848bec25473ea</link>
+      <description>New grad role at Booz Allen Hamilton in McLean, VA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5f0848bec25473ea</guid>
+    </item>
+    <item>
+      <title>Front End Software Engineer at Veoci</title>
+      <link>https://www.indeed.com/viewjob?jk=445c33d7d6e5b50c</link>
+      <description>New grad role at Veoci in New Haven, CT, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=445c33d7d6e5b50c</guid>
+    </item>
+    <item>
+      <title>Junior Forward Deployed Engineer at Wipro</title>
+      <link>https://www.indeed.com/viewjob?jk=1fffebe1c8c57d08</link>
+      <description>New grad role at Wipro in East Brunswick, NJ, US. Category: Other</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1fffebe1c8c57d08</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Intermediate at Equifax</title>
+      <link>https://in.indeed.com/viewjob?jk=14d4a3c683bf974e</link>
+      <description>New grad role at Equifax in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=14d4a3c683bf974e</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Intermediate at Equifax</title>
+      <link>https://in.indeed.com/viewjob?jk=2a836605b6e606d1</link>
+      <description>New grad role at Equifax in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2a836605b6e606d1</guid>
     </item>
     <item>
       <title>Software Engineer at ANZ</title>
@@ -155,18 +246,32 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3e2c3b6711028962</guid>
     </item>
     <item>
-      <title>Part-Time Faculty: MFT 773 Family Violence (Summer 2026) at Syracuse University</title>
-      <link>https://www.indeed.com/viewjob?jk=518fb595d01ae13a</link>
-      <description>New grad role at Syracuse University in Syracuse, NY, US. Category: Other</description>
+      <title>Junior QA Engineer at Mindrops</title>
+      <link>https://in.indeed.com/viewjob?jk=8d1d6416e2f88f8f</link>
+      <description>New grad role at Mindrops in DL, IN. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=518fb595d01ae13a</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8d1d6416e2f88f8f</guid>
     </item>
     <item>
-      <title>Associate Business Analyst, New College Grad - 2026, Austin at Visa</title>
-      <link>https://www.indeed.com/viewjob?jk=b1ec7912b9b34d7f</link>
-      <description>New grad role at Visa in Austin, TX, US. Category: Other</description>
+      <title>Graduate Civil Engineer - 2026 at Mott MacDonald</title>
+      <link>https://ca.indeed.com/viewjob?jk=a557205ac84d0b48</link>
+      <description>New grad role at Mott MacDonald in Vancouver, BC, CA. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b1ec7912b9b34d7f</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=a557205ac84d0b48</guid>
+    </item>
+    <item>
+      <title>Graduate Software Engineer - Fuze Services at Fuze Health</title>
+      <link>https://www.indeed.com/viewjob?jk=d0330e5582add19a</link>
+      <description>New grad role at Fuze Health in New York, NY, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0330e5582add19a</guid>
+    </item>
+    <item>
+      <title>Graduate Software Engineer at LetsGetChecked</title>
+      <link>https://www.indeed.com/viewjob?jk=913252d3a0fec180</link>
+      <description>New grad role at LetsGetChecked in New York, NY, US. Category: Software Engineering</description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=913252d3a0fec180</guid>
     </item>
     <item>
       <title>Software Engineer, New College Grad - 2026, Atlanta at Visa</title>
@@ -204,53 +309,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1dec8bac87a9e320</guid>
     </item>
     <item>
-      <title>Network Engineer at Booz Allen Hamilton</title>
-      <link>https://www.indeed.com/viewjob?jk=5f0848bec25473ea</link>
-      <description>New grad role at Booz Allen Hamilton in McLean, VA, US. Category: Infrastructure &amp; SRE</description>
+      <title>Nursing Graduate - July 2026 at Deaconess Health System</title>
+      <link>https://www.indeed.com/viewjob?jk=e3799d7faea2cfeb</link>
+      <description>New grad role at Deaconess Health System in Marion, IL, US. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5f0848bec25473ea</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e3799d7faea2cfeb</guid>
     </item>
     <item>
-      <title>Front End Software Engineer at Veoci</title>
-      <link>https://www.indeed.com/viewjob?jk=445c33d7d6e5b50c</link>
-      <description>New grad role at Veoci in New Haven, CT, US. Category: Software Engineering</description>
+      <title>Associate Data Scientist, New College Grad - 2026 at Visa</title>
+      <link>https://www.indeed.com/viewjob?jk=2c9ac059c9ef24f3</link>
+      <description>New grad role at Visa in Foster City, CA, US. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=445c33d7d6e5b50c</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2c9ac059c9ef24f3</guid>
     </item>
     <item>
-      <title>Junior Forward Deployed Engineer at Wipro</title>
-      <link>https://www.indeed.com/viewjob?jk=1fffebe1c8c57d08</link>
-      <description>New grad role at Wipro in East Brunswick, NJ, US. Category: Other</description>
+      <title>Part-Time Faculty: MFT 773 Family Violence (Summer 2026) at Syracuse University</title>
+      <link>https://www.indeed.com/viewjob?jk=518fb595d01ae13a</link>
+      <description>New grad role at Syracuse University in Syracuse, NY, US. Category: Other</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1fffebe1c8c57d08</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=518fb595d01ae13a</guid>
     </item>
     <item>
-      <title>Associate, Electrical Engineer at L3Harris</title>
-      <link>https://www.indeed.com/viewjob?jk=5ccd2fcb249d0835</link>
-      <description>New grad role at L3Harris in Yorba Linda, CA, US. Category: Hardware Engineering</description>
+      <title>Systems Engineer (cUAS Safety) at Basic Commerce &amp; Industries Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=02d7060a0c1ca495</link>
+      <description>New grad role at Basic Commerce &amp; Industries Inc in Dahlgren, VA, US. Category: Software Engineering</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5ccd2fcb249d0835</guid>
-    </item>
-    <item>
-      <title>Junior Full Stack Engineer Digital Dist &amp; Ent Eng at Invesco</title>
-      <link>https://www.indeed.com/viewjob?jk=8e15099da3d91a36</link>
-      <description>New grad role at Invesco in Houston, TX, US. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8e15099da3d91a36</guid>
-    </item>
-    <item>
-      <title>Graduate Software Engineer - Fuze Services at Fuze Health</title>
-      <link>https://www.indeed.com/viewjob?jk=d0330e5582add19a</link>
-      <description>New grad role at Fuze Health in New York, NY, US. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0330e5582add19a</guid>
-    </item>
-    <item>
-      <title>Graduate Software Engineer at LetsGetChecked</title>
-      <link>https://www.indeed.com/viewjob?jk=913252d3a0fec180</link>
-      <description>New grad role at LetsGetChecked in New York, NY, US. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=913252d3a0fec180</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=02d7060a0c1ca495</guid>
     </item>
     <item>
       <title>Embedded Software Engineer I (Hybrid - Aguadilla, PR) at Collins Aerospace</title>
@@ -260,11 +344,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1143368f0f778828</guid>
     </item>
     <item>
-      <title>Civil Engineer II-EPC at Rosendin Electric</title>
-      <link>https://www.indeed.com/viewjob?jk=973cd197e311e27b</link>
-      <description>New grad role at Rosendin Electric in Anaheim, CA, US. Category: Other</description>
+      <title>Network Engineer at Chenega Corporation</title>
+      <link>https://www.indeed.com/viewjob?jk=198d3121b379c989</link>
+      <description>New grad role at Chenega Corporation in San Antonio, TX, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=973cd197e311e27b</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=198d3121b379c989</guid>
     </item>
     <item>
       <title>Software Engineer I (Hybrid - Aguadilla, PR) at Collins Aerospace</title>
@@ -272,90 +356,6 @@
       <description>New grad role at Collins Aerospace in Aguadilla, PR, US. Category: Software Engineering</description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5e67728bdccb4e59</guid>
-    </item>
-    <item>
-      <title>Software Engineer I – EOIR Advanced Products and Solutions at Raytheon</title>
-      <link>https://www.indeed.com/viewjob?jk=8e643d0261f60056</link>
-      <description>New grad role at Raytheon in McKinney, TX, US. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8e643d0261f60056</guid>
-    </item>
-    <item>
-      <title>Engineer I at Rosendin Electric</title>
-      <link>https://www.indeed.com/viewjob?jk=c760e14fe16fbd04</link>
-      <description>New grad role at Rosendin Electric in Anaheim, CA, US. Category: Other</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c760e14fe16fbd04</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Ford Motor Company</title>
-      <link>https://in.indeed.com/viewjob?jk=ac26956ccfca85ad</link>
-      <description>New grad role at Ford Motor Company in TN, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ac26956ccfca85ad</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=c224f5bf49606434</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c224f5bf49606434</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=af1d5369310c1914</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=af1d5369310c1914</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=d2db99b5a9385994</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d2db99b5a9385994</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=16fce5636a308126</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=16fce5636a308126</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=cc8dc2bc46a3134f</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cc8dc2bc46a3134f</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=76970754cd964100</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=76970754cd964100</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=db3a3420d0094f41</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=db3a3420d0094f41</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=4508008b5cf3ae87</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4508008b5cf3ae87</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=000d71daf575547c</link>
-      <description>New grad role at Infor in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=000d71daf575547c</guid>
     </item>
   </channel>
 </rss>

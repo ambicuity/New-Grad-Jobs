@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-07T13:59:10.573292",
+    "last_updated": "2026-04-07T15:18:17.631341",
     "total_snapshots": 34,
     "date_range": {
       "start": "2026-03-05",
@@ -1825,17 +1825,17 @@
     },
     {
       "date": "2026-04-07",
-      "total_jobs": 1010,
+      "total_jobs": 1013,
       "categories": {},
       "tiers": {
-        "other": 387,
-        "unicorn": 470,
-        "faang_plus": 153
+        "unicorn": 468,
+        "other": 395,
+        "faang_plus": 150
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 169
+          "jobs": 171
         },
         {
           "company": "Waymo",
@@ -1850,15 +1850,15 @@
           "jobs": 24
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 21
+        },
+        {
           "company": "Boeing",
-          "jobs": 24
+          "jobs": 21
         },
         {
           "company": "Affirm",
-          "jobs": 20
-        },
-        {
-          "company": "Northrop Grumman",
           "jobs": 20
         },
         {
@@ -1874,9 +1874,9 @@
           "jobs": 16
         }
       ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 4.47,
-      "timestamp": "2026-04-07T13:59:10.572834"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 4.33,
+      "timestamp": "2026-04-07T15:18:17.630729"
     }
   ]
 }
