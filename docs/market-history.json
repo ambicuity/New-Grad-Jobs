@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-07T19:47:33.563382",
+    "last_updated": "2026-04-07T20:34:09.913349",
     "total_snapshots": 34,
     "date_range": {
       "start": "2026-03-05",
@@ -1825,12 +1825,12 @@
     },
     {
       "date": "2026-04-07",
-      "total_jobs": 1032,
+      "total_jobs": 1030,
       "categories": {},
       "tiers": {
-        "unicorn": 470,
-        "faang_plus": 160,
-        "other": 402
+        "other": 399,
+        "faang_plus": 161,
+        "unicorn": 470
       },
       "top_companies": [
         {
@@ -1846,37 +1846,37 @@
           "jobs": 26
         },
         {
-          "company": "Boeing",
-          "jobs": 25
-        },
-        {
           "company": "Northrop Grumman",
-          "jobs": 25
+          "jobs": 26
         },
         {
           "company": "Lyft",
           "jobs": 24
         },
         {
+          "company": "Boeing",
+          "jobs": 24
+        },
+        {
           "company": "Accenture",
-          "jobs": 22
+          "jobs": 21
         },
         {
           "company": "Dropbox",
           "jobs": 20
         },
         {
-          "company": "San Francisco Unified School District",
-          "jobs": 20
-        },
-        {
           "company": "Affirm",
           "jobs": 19
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 18
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 4.8,
-      "timestamp": "2026-04-07T19:47:33.562758"
+      "unique_companies": 217,
+      "avg_jobs_per_company": 4.75,
+      "timestamp": "2026-04-07T20:34:09.912705"
     }
   ]
 }
