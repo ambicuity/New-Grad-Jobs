@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 985,
-      "change_percent": -1.5
+      "total_jobs": 1025,
+      "change_percent": 1.28
     },
     "30_days": {
-      "total_jobs": 977,
-      "change_percent": -2.3
+      "total_jobs": 1055,
+      "change_percent": 4.25
     }
   },
   "growing_categories": [
-    "Unicorn Startups",
-    "Generalist Engineering",
-    "Infrastructure/DevOps"
+    "FAANG_Plus",
+    "Unicorn_Startups",
+    "AI_Infrastructure"
   ],
   "declining_categories": [
-    "FAANG+ (Stabilizing)",
-    "Legacy Enterprise",
-    "Non-Technical Support"
+    "Legacy_Enterprise",
+    "Non_Tech_Retail",
+    "Administrative_Support"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently exhibiting high volatility within a tight range (937-1027), suggesting a sideways consolidation phase rather than a clear directional trend.",
-    "Unicorn-tier companies are showing the most consistent hiring resilience, while FAANG+ roles remain volatile, reflecting cautious headcount planning among large-cap tech firms.",
-    "Given that the 7-day and 30-day averages are nearly identical, the market is expected to remain range-bound with minimal growth until the next quarterly hiring cycle begins."
+    "The market is showing a strong upward trend, with the current total (1012) consistently outperforming the 30-day average (978).",
+    "Growth is being driven primarily by 'FAANG_Plus' and 'Unicorn' tiers, suggesting that high-growth tech firms are aggressively expanding their entry-level headcount.",
+    "The 7-day volatility is stabilizing above the 1000-job threshold, indicating a sustained recovery phase rather than a temporary spike."
   ],
-  "generated_at": "2026-04-07T01:27:48.711088",
-  "data_points": 34,
+  "generated_at": "2026-04-08T01:23:05.817522",
+  "data_points": 35,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-07"
+    "end": "2026-04-08"
   }
 }
