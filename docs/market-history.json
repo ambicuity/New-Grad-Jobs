@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-08T08:55:13.593452",
+    "last_updated": "2026-04-08T10:06:40.363267",
     "total_snapshots": 35,
     "date_range": {
       "start": "2026-03-05",
@@ -1880,12 +1880,12 @@
     },
     {
       "date": "2026-04-08",
-      "total_jobs": 1006,
+      "total_jobs": 1005,
       "categories": {},
       "tiers": {
-        "unicorn": 470,
-        "other": 371,
-        "faang_plus": 165
+        "other": 372,
+        "unicorn": 469,
+        "faang_plus": 164
       },
       "top_companies": [
         {
@@ -1898,7 +1898,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 28
+          "jobs": 29
         },
         {
           "company": "Northrop Grumman",
@@ -1925,13 +1925,13 @@
           "jobs": 17
         },
         {
-          "company": "University of Calgary",
+          "company": "Stripe",
           "jobs": 16
         }
       ],
       "unique_companies": 201,
       "avg_jobs_per_company": 5.0,
-      "timestamp": "2026-04-08T08:55:13.592941"
+      "timestamp": "2026-04-08T10:06:40.362675"
     }
   ]
 }
