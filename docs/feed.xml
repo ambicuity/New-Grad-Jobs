@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 19:01:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 20:05:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 19:19:43 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Backend (Purchasing Power Experience) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7673126003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 19:04:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7673126003</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer (Remote Device Management) at Locus Robotics</title>
+      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5100056007</link>
+      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 08 Apr 2026 19:00:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5100056007</guid>
+    </item>
     <item>
       <title>Associate Technical Services Engineer II at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7711160</link>
@@ -141,20 +162,6 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7776179</guid>
     </item>
     <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
-      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 18:23:09 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer (Remote Device Management) at Locus Robotics</title>
-      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5100056007</link>
-      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 08 Apr 2026 17:57:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5100056007</guid>
-    </item>
-    <item>
       <title>Software Engineer II - Python - Developer Tools - Search at Elastic</title>
       <link>https://jobs.elastic.co/jobs?gh_jid=7602101&amp;gh_jid=7602101</link>
       <description>New grad role at Elastic in United States. Category: Software Engineering</description>
@@ -167,13 +174,6 @@
       <description>New grad role at Elastic in Canada. Category: Software Engineering</description>
       <pubDate>Wed, 08 Apr 2026 17:45:39 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=7602100&amp;gh_jid=7602100</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (Purchasing Power Experience) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7673126003</link>
-      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 16:52:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7673126003</guid>
     </item>
     <item>
       <title>Software Engineer II, Frontend (Purchasing Integrations) at Affirm</title>
@@ -337,25 +337,25 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=10b037c5c68cf7ef</guid>
     </item>
     <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=29f8a2b5e3473035</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
+      <title>Process Associate , Insurance Claims at Genpact</title>
+      <link>https://in.indeed.com/viewjob?jk=e8c47c1885317481</link>
+      <description>New grad role at Genpact in HR, IN. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=29f8a2b5e3473035</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e8c47c1885317481</guid>
     </item>
     <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=a50dcfdb73eb59e9</link>
-      <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
+      <title>Process Associate , Insurance Claims at Genpact</title>
+      <link>https://in.indeed.com/viewjob?jk=9c203ab53ced0a73</link>
+      <description>New grad role at Genpact in HR, IN. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a50dcfdb73eb59e9</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9c203ab53ced0a73</guid>
     </item>
     <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=672a03839c128d88</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
+      <title>Process Associate , Insurance Claims at Genpact</title>
+      <link>https://in.indeed.com/viewjob?jk=0eb7b41c986fd004</link>
+      <description>New grad role at Genpact in HR, IN. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=672a03839c128d88</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0eb7b41c986fd004</guid>
     </item>
   </channel>
 </rss>
