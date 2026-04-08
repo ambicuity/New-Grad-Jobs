@@ -160,6 +160,12 @@ class TestTrackSignals:
     def test_empty_title_returns_false(self):
         assert not has_track_signal("", ["network"])
 
+    def test_whitespace_only_title_returns_false(self):
+        assert not has_track_signal("   \t  ", ["network"])
+
+    def test_non_string_title_returns_false(self):
+        assert not has_track_signal(123, ["network"])
+
     def test_empty_signals_returns_false(self):
         assert not has_track_signal("Network Engineer, New Grad", [])
 
