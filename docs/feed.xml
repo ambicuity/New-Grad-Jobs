@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 22:51:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 23:31:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 23:27:09 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
+    <item>
+      <title>Software Engineer - SyncSketch at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7435113?gh_jid=7435113</link>
+      <description>New grad role at Unity Technologies in Remote, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 23:26:12 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7435113?gh_jid=7435113</guid>
+    </item>
+    <item>
+      <title>Software Engineer - SyncSketch/ Développeur(se) Logiciel at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7523945?gh_jid=7523945</link>
+      <description>New grad role at Unity Technologies in Remote, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 23:26:12 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7523945?gh_jid=7523945</guid>
+    </item>
     <item>
       <title>Associate, Operations Data Analytics at Oscar Health</title>
       <link>http://www.hioscar.com/careers/7793815?gh_jid=7793815</link>
@@ -132,13 +153,6 @@
       <description>New grad role at Wiz in Remote - USA. Category: Software Engineering</description>
       <pubDate>Wed, 08 Apr 2026 20:27:37 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4665086006/:title?gh_jid=4665086006</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
-      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 19:19:43 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
     </item>
     <item>
       <title>Software Engineer I, Backend (Purchasing Power Experience) at Affirm</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
       <pubDate>Wed, 08 Apr 2026 14:26:33 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
-    </item>
-    <item>
-      <title>Application Security Engineer at Starburst</title>
-      <link>https://job-boards.greenhouse.io/starburst/jobs/5119301008</link>
-      <description>New grad role at Starburst in Boston, MA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 08 Apr 2026 13:35:06 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/starburst/jobs/5119301008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, IAM at Postman</title>
-      <link>https://job-boards.greenhouse.io/postman/jobs/7687341003</link>
-      <description>New grad role at Postman in Hyderabad, Telangana, India. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 09:05:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7687341003</guid>
     </item>
   </channel>
 </rss>
