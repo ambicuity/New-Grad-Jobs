@@ -201,6 +201,15 @@ class TestCategorizeJob:
 
 
 class TestEngineeringNetworkTitle:
+    def test_none_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(None)
+
+    def test_empty_title_returns_false(self) -> None:
+        assert not is_engineering_network_title("")
+
+    def test_non_string_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(123)
+
     def test_business_network_title_returns_false(self) -> None:
         assert not is_engineering_network_title("Associate, Network Contracting")
 

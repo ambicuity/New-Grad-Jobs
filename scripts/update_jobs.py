@@ -639,16 +639,11 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
             'emoji': CATEGORY_PATTERNS[category_id]['emoji']
         }
 
-    network_infra_keywords = {
-        'network engineer', 'network automation', 'noc', 'network operations center',
-        'network operations', 'network performance', 'netops', 'network ops', 'noc engineer'
-    }
-
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
         for keyword in category_info['keywords']:
-            if category_id == 'infrastructure_sre' and keyword in network_infra_keywords:
+            if category_id == 'infrastructure_sre' and keyword in NETWORK_INFRASTRUCTURE_KEYWORDS:
                 continue
             # Use word boundaries for exact phrase matching, safely escape the keyword
             pattern = r'\b' + re.escape(keyword) + r'\b'
@@ -1778,6 +1773,18 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     pattern = rf"\b({combined_signals})\b"
     return bool(re.search(pattern, title.lower()))
 
+NETWORK_INFRASTRUCTURE_KEYWORDS = {
+    'network engineer',
+    'network automation',
+    'noc',
+    'network operations center',
+    'network operations',
+    'network performance',
+    'netops',
+    'network ops',
+    'noc engineer',
+}
+
 NETWORK_ENGINEERING_TITLE_PATTERN = re.compile(
     r"\b(?:"
     r"network engineer|"
@@ -1795,7 +1802,15 @@ NETWORK_ENGINEERING_TITLE_PATTERN = re.compile(
 
 
 def is_engineering_network_title(title: str) -> bool:
-    """Return True when a network title is clearly engineering/infrastructure-focused."""
+    """Return whether a network title is engineering or infrastructure focused.
+
+    Args:
+        title: Job title text to evaluate.
+
+    Returns:
+        True if the title is a string and matches an engineering-focused
+        network-role pattern, otherwise False.
+    """
     return isinstance(title, str) and bool(NETWORK_ENGINEERING_TITLE_PATTERN.search(title))
 
 

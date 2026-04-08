@@ -157,6 +157,12 @@ class TestTrackSignals:
     def test_none_title_returns_false(self):
         assert not has_track_signal(None, ["network"])
 
+    def test_empty_title_returns_false(self):
+        assert not has_track_signal("", ["network"])
+
+    def test_empty_signals_returns_false(self):
+        assert not has_track_signal("Network Engineer, New Grad", [])
+
 
 class TestHasNewGradSignal:
     """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""
