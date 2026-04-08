@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 12:09:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 14:05:30 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131932</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 08 Apr 2026 13:55:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131932</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131934</link>
+      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 08 Apr 2026 13:55:30 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131934</guid>
+    </item>
+    <item>
+      <title>Application Security Engineer at Starburst</title>
+      <link>https://job-boards.greenhouse.io/starburst/jobs/5119301008</link>
+      <description>New grad role at Starburst in Boston, MA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 08 Apr 2026 13:35:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/starburst/jobs/5119301008</guid>
+    </item>
     <item>
       <title>Software Engineer, IAM at Postman</title>
       <link>https://job-boards.greenhouse.io/postman/jobs/7687341003</link>
@@ -78,34 +99,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
     </item>
     <item>
-      <title>Fresher Software Engineer at Scalix Enterprise Solutions LLP</title>
-      <link>https://in.indeed.com/viewjob?jk=b60c89cf9a5dfdac</link>
-      <description>New grad role at Scalix Enterprise Solutions LLP in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b60c89cf9a5dfdac</guid>
-    </item>
-    <item>
-      <title>Software Engineer - C++ (ICC) at Quest Global</title>
-      <link>https://in.indeed.com/viewjob?jk=c5b4533634bb3b09</link>
-      <description>New grad role at Quest Global in KA, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c5b4533634bb3b09</guid>
-    </item>
-    <item>
-      <title>Software Engineer – Engineering Systems at eBay</title>
-      <link>https://in.indeed.com/viewjob?jk=60b3d32ab969fdd1</link>
-      <description>New grad role at eBay in KA, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=60b3d32ab969fdd1</guid>
-    </item>
-    <item>
-      <title>UAV Software Developer at Aeronica Advance Technologies Pvt.Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=33f80264ef22f50f</link>
-      <description>New grad role at Aeronica Advance Technologies Pvt.Ltd in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=33f80264ef22f50f</guid>
-    </item>
-    <item>
       <title>Graduate Engineering Trainee (GET) at BCAD Global</title>
       <link>https://in.indeed.com/viewjob?jk=1a03a883ce0e7718</link>
       <description>New grad role at BCAD Global in TN, IN. Category: Other</description>
@@ -127,6 +120,55 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=758b9d40bba25ad1</guid>
     </item>
     <item>
+      <title>Fresher Software Engineer at Scalix Enterprise Solutions LLP</title>
+      <link>https://in.indeed.com/viewjob?jk=b60c89cf9a5dfdac</link>
+      <description>New grad role at Scalix Enterprise Solutions LLP in MH, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b60c89cf9a5dfdac</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineering Associate 3 at BT Group</title>
+      <link>https://in.indeed.com/viewjob?jk=0a3c2d495548a843</link>
+      <description>New grad role at BT Group in HR, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0a3c2d495548a843</guid>
+    </item>
+    <item>
+      <title>Software Engineer - C++ (ICC) at Quest Global</title>
+      <link>https://in.indeed.com/viewjob?jk=c5b4533634bb3b09</link>
+      <description>New grad role at Quest Global in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c5b4533634bb3b09</guid>
+    </item>
+    <item>
+      <title>Software Engineer – Engineering Systems at eBay</title>
+      <link>https://in.indeed.com/viewjob?jk=60b3d32ab969fdd1</link>
+      <description>New grad role at eBay in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=60b3d32ab969fdd1</guid>
+    </item>
+    <item>
+      <title>Associate Field Engineer at Wunderlich-Malec</title>
+      <link>https://www.indeed.com/viewjob?jk=62159433004855c3</link>
+      <description>New grad role at Wunderlich-Malec in Richmond, VA, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=62159433004855c3</guid>
+    </item>
+    <item>
+      <title>Associate Field Engineer at Wunderlich-Malec</title>
+      <link>https://www.indeed.com/viewjob?jk=6314a84a7105e6c3</link>
+      <description>New grad role at Wunderlich-Malec in Cedar Rapids, IA, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6314a84a7105e6c3</guid>
+    </item>
+    <item>
+      <title>Machine Learning Scientist Graduate (Global E-commerce Content Recommendation) - 2026 Start (BS/MS) at TikTok</title>
+      <link>https://www.indeed.com/viewjob?jk=6b948cdc7515a552</link>
+      <description>New grad role at TikTok in San Jose, CA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6b948cdc7515a552</guid>
+    </item>
+    <item>
       <title>Backend Java Software Engineer III at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=129a771826f3124f</link>
       <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
@@ -139,41 +181,6 @@
       <description>New grad role at JPMorganChase in Wilmington, DE, US. Category: Software Engineering</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=afa6626a17e554f7</guid>
-    </item>
-    <item>
-      <title>Machine Learning Scientist Graduate (Global E-commerce Content Recommendation) - 2026 Start (BS/MS) at TikTok</title>
-      <link>https://www.indeed.com/viewjob?jk=6b948cdc7515a552</link>
-      <description>New grad role at TikTok in San Jose, CA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6b948cdc7515a552</guid>
-    </item>
-    <item>
-      <title>VIE 2026- AI Americas - US HR Digital (ALL GENDER) at Airbus</title>
-      <link>https://www.indeed.com/viewjob?jk=dffc6391797c1f42</link>
-      <description>New grad role at Airbus in Herndon, VA, US. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dffc6391797c1f42</guid>
-    </item>
-    <item>
-      <title>2026 Summer Schools and Camps - Horsemanship Instructor at Culver Academies</title>
-      <link>https://www.indeed.com/viewjob?jk=34142d4a6db7ddc8</link>
-      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=34142d4a6db7ddc8</guid>
-    </item>
-    <item>
-      <title>2026 Summer Schools and Camps - Waterski Instructor at Culver Academies</title>
-      <link>https://www.indeed.com/viewjob?jk=261e8abe76eed9cf</link>
-      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=261e8abe76eed9cf</guid>
-    </item>
-    <item>
-      <title>2026 Summer Schools and Camps - Sailing Instructor at Culver Academies</title>
-      <link>https://www.indeed.com/viewjob?jk=e6700f64165cf0eb</link>
-      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6700f64165cf0eb</guid>
     </item>
     <item>
       <title>Respiratory Therapist I - 2026 Graduate at Alberta Health Services</title>
@@ -197,46 +204,39 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ba3d22d8d2bdfad4</guid>
     </item>
     <item>
-      <title>Entry-level Civil or Environmental Engineer - Solid Waste at SCS Engineers</title>
-      <link>https://www.indeed.com/viewjob?jk=d9c7ac44ec8ac6eb</link>
-      <description>New grad role at SCS Engineers in Tampa, FL, US. Category: Other</description>
+      <title>VIE 2026- AI Americas - US HR Digital (ALL GENDER) at Airbus</title>
+      <link>https://www.indeed.com/viewjob?jk=dffc6391797c1f42</link>
+      <description>New grad role at Airbus in Herndon, VA, US. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d9c7ac44ec8ac6eb</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dffc6391797c1f42</guid>
     </item>
     <item>
-      <title>Software Engineer III (Full Stack) – API Gateway Platform at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=d0e34c832675c165</link>
-      <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
+      <title>2026 Summer Schools and Camps - Horsemanship Instructor at Culver Academies</title>
+      <link>https://www.indeed.com/viewjob?jk=34142d4a6db7ddc8</link>
+      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0e34c832675c165</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=34142d4a6db7ddc8</guid>
     </item>
     <item>
-      <title>Project Engineer I - Sheet Metal at BAKER GROUP</title>
-      <link>https://www.indeed.com/viewjob?jk=7e908b44b9d63cda</link>
-      <description>New grad role at BAKER GROUP in Cedar Rapids, IA, US. Category: Other</description>
+      <title>2026 Summer Schools and Camps - Waterski Instructor at Culver Academies</title>
+      <link>https://www.indeed.com/viewjob?jk=261e8abe76eed9cf</link>
+      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7e908b44b9d63cda</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=261e8abe76eed9cf</guid>
     </item>
     <item>
-      <title>Quality Engineer I at Werfen</title>
-      <link>https://www.indeed.com/viewjob?jk=8c86e028b36db1db</link>
-      <description>New grad role at Werfen in Bedford, MA, US. Category: Other</description>
+      <title>Associate Customer Application Engineer at Ivalua</title>
+      <link>https://in.indeed.com/viewjob?jk=c6104b1e68a7983b</link>
+      <description>New grad role at Ivalua in MH, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8c86e028b36db1db</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c6104b1e68a7983b</guid>
     </item>
     <item>
-      <title>Construction Engineer/Estimator (Entry Level) at CWR Contracting, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=2fe4ef4ca9efd6ed</link>
-      <description>New grad role at CWR Contracting, Inc. in Daytona Beach, FL, US. Category: Other</description>
+      <title>Analytics Developer (Associate) at Infogain</title>
+      <link>https://in.indeed.com/viewjob?jk=563cb8bf436871a5</link>
+      <description>New grad role at Infogain in MH, IN. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2fe4ef4ca9efd6ed</guid>
-    </item>
-    <item>
-      <title>Project Engineer I - Industrial at BAKER GROUP</title>
-      <link>https://www.indeed.com/viewjob?jk=689fb65411d3ab51</link>
-      <description>New grad role at BAKER GROUP in Cedar Rapids, IA, US. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=689fb65411d3ab51</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=563cb8bf436871a5</guid>
     </item>
     <item>
       <title>ASIC Design Engineer - New College Grad 2026 at NVIDIA</title>
@@ -244,6 +244,13 @@
       <description>New grad role at NVIDIA in Santa Clara, CA, US. Category: Hardware Engineering</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=17596d835ca105a2</guid>
+    </item>
+    <item>
+      <title>Civil/Structural Engineer I at Mesa Associates, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=4102ac4a1e3c4351</link>
+      <description>New grad role at Mesa Associates, Inc. in Chicago, IL, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4102ac4a1e3c4351</guid>
     </item>
     <item>
       <title>Network Engineer I at Rock County, WI</title>
@@ -265,6 +272,27 @@
       <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=effb5430d38f4655</guid>
+    </item>
+    <item>
+      <title>2026 Summer Schools and Camps - Sailing Instructor at Culver Academies</title>
+      <link>https://www.indeed.com/viewjob?jk=e6700f64165cf0eb</link>
+      <description>New grad role at Culver Academies in Culver, IN, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6700f64165cf0eb</guid>
+    </item>
+    <item>
+      <title>Associate Retail Travel Agent (In-Store Sales) at AAA Club Alliance</title>
+      <link>https://www.indeed.com/viewjob?jk=826b21c7dc7e77f3</link>
+      <description>New grad role at AAA Club Alliance in Lawrenceville, NJ, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=826b21c7dc7e77f3</guid>
+    </item>
+    <item>
+      <title>Associate Retail Travel Agent (In Store Sales) at AAA Club Alliance</title>
+      <link>https://www.indeed.com/viewjob?jk=688d31184e385207</link>
+      <description>New grad role at AAA Club Alliance in Toledo, OH, US. Category: Other</description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=688d31184e385207</guid>
     </item>
     <item>
       <title>Software Engineer II-2 at Mastercard</title>
@@ -302,18 +330,11 @@
       <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-PW-II/Software-Engineer-III_R-2459297-1</guid>
     </item>
     <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</link>
-      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
+      <title>(USA) Coach/Ops Mgr Trainee at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/Cockeysville-MD/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2470977</link>
+      <description>New grad role at Walmart in Cockeysville, MD. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</guid>
-    </item>
-    <item>
-      <title>(USA) Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/XMLNAME--USA--Software-Engineer-III_R-2430866</link>
-      <description>New grad role at Walmart in Sunnyvale, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/XMLNAME--USA--Software-Engineer-III_R-2430866</guid>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Cockeysville-MD/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2470977</guid>
     </item>
     <item>
       <title>Systems Engineer at Boeing</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Full-Stack-Developer_JR2026502560-1</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Propulsion (Starship) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8497447002?gh_jid=8497447002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Other</description>
-      <pubDate>Tue, 07 Apr 2026 23:35:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8497447002?gh_jid=8497447002</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer at Lattice</title>
-      <link>https://lattice.com/job?gh_jid=8485286002</link>
-      <description>New grad role at Lattice in Remote - Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 07 Apr 2026 23:01:39 +0000</pubDate>
-      <guid isPermaLink="true">https://lattice.com/job?gh_jid=8485286002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Mechanical at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8497524002?gh_jid=8497524002</link>
-      <description>New grad role at SpaceX in McGregor, TX. Category: Other</description>
-      <pubDate>Tue, 07 Apr 2026 22:15:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8497524002?gh_jid=8497524002</guid>
     </item>
   </channel>
 </rss>
