@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-08T07:53:31.003097",
+    "last_updated": "2026-04-08T08:55:13.593452",
     "total_snapshots": 35,
     "date_range": {
       "start": "2026-03-05",
@@ -1880,12 +1880,12 @@
     },
     {
       "date": "2026-04-08",
-      "total_jobs": 1031,
+      "total_jobs": 1006,
       "categories": {},
       "tiers": {
-        "unicorn": 472,
-        "other": 392,
-        "faang_plus": 167
+        "unicorn": 470,
+        "other": 371,
+        "faang_plus": 165
       },
       "top_companies": [
         {
@@ -1917,21 +1917,21 @@
           "jobs": 20
         },
         {
-          "company": "Affirm",
-          "jobs": 19
-        },
-        {
           "company": "MongoDB",
           "jobs": 18
+        },
+        {
+          "company": "Affirm",
+          "jobs": 17
         },
         {
           "company": "University of Calgary",
           "jobs": 16
         }
       ],
-      "unique_companies": 206,
+      "unique_companies": 201,
       "avg_jobs_per_company": 5.0,
-      "timestamp": "2026-04-08T07:53:31.002567"
+      "timestamp": "2026-04-08T08:55:13.592941"
     }
   ]
 }
