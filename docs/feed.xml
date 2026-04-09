@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 07:07:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 08:48:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Gen AI at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4591300005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 07:56:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4591300005</guid>
+    </item>
     <item>
       <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7543520</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Test Automation Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7532414</link>
-      <description>New grad role at Waymo in San Francisco, CA, US; Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7532414</guid>
     </item>
   </channel>
 </rss>
