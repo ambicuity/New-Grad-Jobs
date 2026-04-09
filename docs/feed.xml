@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 12:09:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 14:15:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Fullstack (Sell Core) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8407054002</link>
+      <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 13:10:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407054002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fullstack (Support Core) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8407060002</link>
+      <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 13:10:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407060002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Integrations) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
+      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 13:10:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
+    </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
@@ -79,17 +100,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Mapping at Waymo</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor/Imaging at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulation Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430555</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430555</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulation Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7719169</link>
-      <description>New grad role at Waymo in Mountain View, California, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7719169</guid>
     </item>
   </channel>
 </rss>
