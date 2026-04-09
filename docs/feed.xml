@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 17:20:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 18:18:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II - Abnormal Data Platform at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7694258003?gh_jid=7694258003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 18:08:44 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694258003?gh_jid=7694258003</guid>
+    </item>
     <item>
       <title>Enterprise IAM Software Engineer II at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7675825003</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, USA; San Francisco, California, USA. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7487849</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Tools at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7426718</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7426718</guid>
     </item>
   </channel>
 </rss>
