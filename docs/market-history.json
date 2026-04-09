@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-09T11:15:05.458091",
+    "last_updated": "2026-04-09T12:09:30.764539",
     "total_snapshots": 36,
     "date_range": {
       "start": "2026-03-05",
@@ -1935,12 +1935,12 @@
     },
     {
       "date": "2026-04-09",
-      "total_jobs": 981,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "other": 353,
         "unicorn": 471,
-        "faang_plus": 157
+        "other": 346,
+        "faang_plus": 160
       },
       "top_companies": [
         {
@@ -1972,11 +1972,11 @@
           "jobs": 19
         },
         {
-          "company": "Affirm",
+          "company": "MongoDB",
           "jobs": 18
         },
         {
-          "company": "MongoDB",
+          "company": "Affirm",
           "jobs": 18
         },
         {
@@ -1985,8 +1985,8 @@
         }
       ],
       "unique_companies": 187,
-      "avg_jobs_per_company": 5.25,
-      "timestamp": "2026-04-09T11:15:05.456901"
+      "avg_jobs_per_company": 5.22,
+      "timestamp": "2026-04-09T12:09:30.764019"
     }
   ]
 }
