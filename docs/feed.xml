@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 00:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 03:29:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Credit Line at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8219795002?gh_jid=8219795002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 02:19:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8219795002?gh_jid=8219795002</guid>
+    </item>
+    <item>
+      <title>Power Systems Engineer (Starship Avionics) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 00:11:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002</guid>
+    </item>
     <item>
       <title>Data Scientist at PayPal</title>
       <link>https://paypal.wd1.myworkdayjobs.com/job/Chicago-Illinois-United-States-of-America/Data-Scientist_R0136256</link>
@@ -43,6 +57,13 @@
       <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Design-Engineer---New-College-Grad-2026_JR2016023</guid>
     </item>
     <item>
+      <title>Infrastructure Engineer –  Compute and Client at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/Infrastructure-Engineer----Compute-and-Client_JR0282728-1</link>
+      <description>New grad role at Intel in US, Oregon, Hillsboro. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/Infrastructure-Engineer----Compute-and-Client_JR0282728-1</guid>
+    </item>
+    <item>
       <title>Software Engineer - SRE at Workday</title>
       <link>https://workday.wd5.myworkdayjobs.com/job/INDChennai/Sr-Software-Engineer_JR-0098686</link>
       <description>New grad role at Workday in IND.Chennai. Category: Software Engineering</description>
@@ -76,6 +97,27 @@
       <description>New grad role at Walmart in IN KA BANGALORE Home Office PW II. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-PW-II/Software-Engineer-III_R-2459297-1</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - Mobile at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Excellence-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III---Mobile_R-2466766-1</link>
+      <description>New grad role at Walmart in (USA) Crossman Excellence Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Excellence-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III---Mobile_R-2466766-1</guid>
+    </item>
+    <item>
+      <title>Mechanical Engineer (Level 2 or 3) at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Minnesota-Plymouth/Mechanical-Engineer--Level-2-or-3-_R10225473</link>
+      <description>New grad role at Northrop Grumman in United States-Minnesota-Plymouth. Category: Hardware Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Minnesota-Plymouth/Mechanical-Engineer--Level-2-or-3-_R10225473</guid>
+    </item>
+    <item>
+      <title>Systems Engineer - Reliability at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/Systems-Engineer---Reliability_R10229000</link>
+      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/Systems-Engineer---Reliability_R10229000</guid>
     </item>
     <item>
       <title>Electrical Engineer II at Northrop Grumman</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Oscar Health in Dallas, Texas, United States. Category: Other</description>
       <pubDate>Wed, 08 Apr 2026 22:24:00 +0000</pubDate>
       <guid isPermaLink="true">http://www.hioscar.com/careers/7656538?gh_jid=7656538</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Financial Systems at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643080006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 22:10:52 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643080006</guid>
-    </item>
-    <item>
-      <title>Software Engineer - FullStack at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</link>
-      <description>New grad role at Opendoor in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 22:05:01 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4643074006</guid>
-    </item>
-    <item>
-      <title>Software Engineer - FullStack at Opendoor</title>
-      <link>https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</link>
-      <description>New grad role at Opendoor in Toronto. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 22:05:01 +0000</pubDate>
-      <guid isPermaLink="true">https://www.opendoor.com/careers/open-positions?gh_jid=4667237006</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Infrastructure at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/6602436?gh_jid=6602436</link>
-      <description>New grad role at Airbnb in Remote - US. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 22:02:33 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/6602436?gh_jid=6602436</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Satellite Systems (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8308587002?gh_jid=8308587002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Apr 2026 22:01:54 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8308587002?gh_jid=8308587002</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8376990002?gh_jid=8376990002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
-      <pubDate>Wed, 08 Apr 2026 21:48:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8376990002?gh_jid=8376990002</guid>
     </item>
   </channel>
 </rss>
