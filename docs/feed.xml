@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 22:12:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 23:05:23 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Sales Development Representative - New Grad at Mercury</title>
+      <link>https://job-boards.greenhouse.io/mercury/jobs/5841978004</link>
+      <description>New grad role at Mercury in New York, NY or San Francisco, CA. Category: Other</description>
+      <pubDate>Thu, 09 Apr 2026 22:37:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/5841978004</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Product at Mercury</title>
+      <link>https://job-boards.greenhouse.io/mercury/jobs/5267749004</link>
+      <description>New grad role at Mercury in San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 22:37:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/5267749004</guid>
+    </item>
+    <item>
+      <title>Technical Producer II - League Studio, Machine Learning at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7776570?gh_jid=7776570</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 09 Apr 2026 22:26:20 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7776570?gh_jid=7776570</guid>
+    </item>
+    <item>
+      <title>Technical Producer II - VALORANT, AI  at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7776457?gh_jid=7776457</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Other</description>
+      <pubDate>Thu, 09 Apr 2026 22:24:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7776457?gh_jid=7776457</guid>
+    </item>
     <item>
       <title>Software Engineer, Propulsion Simulation &amp; Data Analysis at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466529</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7428871</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA ; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7428871</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Embedded Systems / Robotics  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Event Response at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430650</link>
-      <description>New grad role at Waymo in San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430650</guid>
-    </item>
-    <item>
-      <title>Software Engineer, GPU at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7554830</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7554830</guid>
     </item>
   </channel>
 </rss>
