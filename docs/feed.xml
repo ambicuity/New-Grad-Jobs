@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 19:45:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 20:38:57 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (Network Performance) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8391111002?gh_jid=8391111002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 20:25:12 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391111002?gh_jid=8391111002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8406031002?gh_jid=8406031002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 20:24:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8406031002?gh_jid=8406031002</guid>
+    </item>
+    <item>
+      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 09 Apr 2026 20:23:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8459547002?gh_jid=8459547002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 09 Apr 2026 20:23:39 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459547002?gh_jid=8459547002</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 20:12:00 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
     <item>
       <title>Associate Solutions Engineer, Growth - West at Wiz</title>
       <link>https://www.wiz.io/careers/job/4665086006/:title?gh_jid=4665086006</link>
@@ -86,17 +121,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer - Mapping at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Mapping at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7429791</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - Mapping at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7429811</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429811</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Mapping at Waymo</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Privacy at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7547529</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA . Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7547529</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Quantitative Evaluations at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7466534</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor/Imaging at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulation Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7430555</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 18:37:17 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7430555</guid>
     </item>
   </channel>
 </rss>
