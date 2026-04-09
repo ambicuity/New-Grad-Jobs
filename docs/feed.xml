@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2026 08:48:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 10:02:08 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Reliability at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7705523</link>
+      <description>New grad role at Checkr in Denver, Colorado, United States; San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Apr 2026 09:57:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7705523</guid>
+    </item>
     <item>
       <title>Software Engineer, Gen AI at Scale AI</title>
       <link>https://job-boards.greenhouse.io/scaleai/jobs/4591300005</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6562547</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Statistical Evaluation and Sampling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7543520</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Apr 2026 03:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7543520</guid>
     </item>
   </channel>
 </rss>
