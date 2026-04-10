@@ -166,6 +166,16 @@ class TestTrackSignals:
     def test_non_string_title_returns_false(self):
         assert not has_track_signal(123, ["network"])
 
+    def test_nan_title_returns_false(self):
+        assert not has_track_signal(float('nan'), ["network"])
+
+    def test_unicode_title_uses_case_insensitive_substring_matching(self):
+        assert has_track_signal("Développeur Logiciel, New Grad 🚀", ["développeur"])
+
+    def test_very_long_title_still_matches_signal(self):
+        title = f"{'x' * 10000} Software Engineer, New Grad"
+        assert has_track_signal(title, ["software"])
+
     def test_empty_signals_returns_false(self):
         assert not has_track_signal("Network Engineer, New Grad", [])
 
