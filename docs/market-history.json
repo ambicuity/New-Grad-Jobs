@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-10T14:04:45.698647",
+    "last_updated": "2026-04-10T15:04:59.514398",
     "total_snapshots": 37,
     "date_range": {
       "start": "2026-03-05",
@@ -1990,12 +1990,12 @@
     },
     {
       "date": "2026-04-10",
-      "total_jobs": 976,
+      "total_jobs": 975,
       "categories": {},
       "tiers": {
-        "unicorn": 465,
-        "other": 346,
-        "faang_plus": 165
+        "other": 351,
+        "unicorn": 466,
+        "faang_plus": 158
       },
       "top_companies": [
         {
@@ -2031,17 +2031,17 @@
           "jobs": 18
         },
         {
-          "company": "Boeing",
+          "company": "Stripe",
           "jobs": 17
         },
         {
-          "company": "Stripe",
+          "company": "Opendoor",
           "jobs": 17
         }
       ],
-      "unique_companies": 177,
-      "avg_jobs_per_company": 5.51,
-      "timestamp": "2026-04-10T14:04:45.698068"
+      "unique_companies": 183,
+      "avg_jobs_per_company": 5.33,
+      "timestamp": "2026-04-10T15:04:59.513895"
     }
   ]
 }
