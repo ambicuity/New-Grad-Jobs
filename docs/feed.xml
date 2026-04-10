@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2026 19:12:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 19:49:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4684073005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 19:32:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
+    </item>
     <item>
       <title>Security Engineer, Product Security at Scale AI</title>
       <link>https://job-boards.greenhouse.io/scaleai/jobs/4643029005</link>
@@ -86,6 +93,13 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
@@ -99,25 +113,11 @@
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
     </item>
     <item>
-      <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
-    </item>
-    <item>
       <title>Frontend Product Software Engineer, Web DX at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7580431?gh_jid=7580431</link>
       <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7580431?gh_jid=7580431</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
     </item>
     <item>
       <title>Full Stack Product Software Engineer at Dropbox</title>
@@ -132,6 +132,13 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
     </item>
     <item>
       <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
@@ -149,17 +156,17 @@
     </item>
     <item>
       <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</link>
       <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684429?gh_jid=7684429</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</guid>
     </item>
     <item>
       <title>Network Engineer at Dropbox</title>
@@ -206,14 +213,14 @@
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
-      <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
+      <description>New grad role at MongoDB in New York City; United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
@@ -349,13 +356,6 @@
       <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
       <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7701657?gh_jid=7701657</guid>
-    </item>
-    <item>
-      <title>Security Engineer, CorpSec at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7611268?gh_jid=7611268</link>
-      <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7611268?gh_jid=7611268</guid>
     </item>
   </channel>
 </rss>
