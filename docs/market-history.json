@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-10T16:08:40.223307",
+    "last_updated": "2026-04-10T17:08:23.664831",
     "total_snapshots": 37,
     "date_range": {
       "start": "2026-03-05",
@@ -1990,17 +1990,17 @@
     },
     {
       "date": "2026-04-10",
-      "total_jobs": 964,
+      "total_jobs": 976,
       "categories": {},
       "tiers": {
-        "unicorn": 467,
-        "other": 348,
-        "faang_plus": 149
+        "unicorn": 465,
+        "other": 360,
+        "faang_plus": 151
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 175
+          "jobs": 173
         },
         {
           "company": "Waymo",
@@ -2031,17 +2031,17 @@
           "jobs": 18
         },
         {
-          "company": "Stripe",
+          "company": "Abnormal Security",
           "jobs": 17
         },
         {
-          "company": "Opendoor",
+          "company": "Stripe",
           "jobs": 17
         }
       ],
-      "unique_companies": 179,
-      "avg_jobs_per_company": 5.39,
-      "timestamp": "2026-04-10T16:08:40.222802"
+      "unique_companies": 187,
+      "avg_jobs_per_company": 5.22,
+      "timestamp": "2026-04-10T17:08:23.664347"
     }
   ]
 }
