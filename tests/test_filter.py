@@ -179,6 +179,12 @@ class TestTrackSignals:
     def test_empty_signals_returns_false(self):
         assert not has_track_signal("Network Engineer, New Grad", [])
 
+    def test_blank_signal_is_ignored(self):
+        assert not has_track_signal("Software Engineer, New Grad", [""])
+
+    def test_whitespace_signal_is_ignored(self):
+        assert not has_track_signal("Software Engineer, New Grad", ["   "])
+
 
 class TestHasNewGradSignal:
     """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""

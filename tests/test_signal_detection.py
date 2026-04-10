@@ -164,6 +164,11 @@ class TestHasTrackSignal:
         signals = [None, 123, 'backend']
         assert has_track_signal('Backend Engineer', signals) is True
 
+    def test_blank_signal_entries_are_ignored(self):
+        """Blank signals should not match every title."""
+        assert has_track_signal('Software Engineer', ['']) is False
+        assert has_track_signal('Software Engineer', ['   ']) is False
+
     def test_networking_engineer_matches_network_signal(self):
         """Test that legitimate networking engineering titles are included."""
         assert has_track_signal('Networking Engineer', ['network']) is True

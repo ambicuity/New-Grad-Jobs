@@ -222,6 +222,12 @@ class TestEngineeringNetworkTitle:
     def test_manager_network_operations_returns_false(self) -> None:
         assert not is_engineering_network_title("Manager, Network Operations")
 
+    def test_manager_network_infrastructure_returns_false(self) -> None:
+        assert not is_engineering_network_title("Manager, Network Infrastructure")
+
+    def test_graduate_analyst_network_services_returns_false(self) -> None:
+        assert not is_engineering_network_title("Graduate Analyst, Network Services")
+
     def test_noc_analyst_returns_false(self) -> None:
         assert not is_engineering_network_title("NOC Analyst")
 
@@ -233,6 +239,12 @@ class TestEngineeringNetworkTitle:
 
     def test_noc_engineer_returns_true(self) -> None:
         assert is_engineering_network_title("NOC Engineer")
+
+    def test_network_operations_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Network Operations Engineer")
+
+    def test_network_services_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Network Services Engineer")
 
     def test_software_engineer_networking_returns_true(self) -> None:
         assert is_engineering_network_title("Software Engineer, Networking")
