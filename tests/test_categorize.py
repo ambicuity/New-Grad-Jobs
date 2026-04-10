@@ -210,6 +210,9 @@ class TestEngineeringNetworkTitle:
     def test_non_string_title_returns_false(self) -> None:
         assert not is_engineering_network_title(123)
 
+    def test_nan_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(float("nan"))
+
     def test_business_network_title_returns_false(self) -> None:
         assert not is_engineering_network_title("Associate, Network Contracting")
 
@@ -224,6 +227,9 @@ class TestEngineeringNetworkTitle:
 
     def test_engineering_network_title_returns_true(self) -> None:
         assert is_engineering_network_title("Network Engineer")
+
+    def test_networking_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Networking Engineer")
 
     def test_noc_engineer_returns_true(self) -> None:
         assert is_engineering_network_title("NOC Engineer")

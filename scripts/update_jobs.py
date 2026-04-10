@@ -1787,7 +1787,7 @@ NETWORK_INFRASTRUCTURE_KEYWORDS = {
 
 NETWORK_ENGINEERING_TITLE_PATTERN = re.compile(
     r"\b(?:"
-    r"network engineer|"
+    r"network(?:ing)? engineer|"
     r"network (?:security|automation|performance) engineer|"
     r"network operations center engineer|"
     r"network ops engineer|"
@@ -1823,9 +1823,13 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
     """
     if not isinstance(title, str):
         return False
+    if not isinstance(signals, list):
+        return False
 
     title_lower = title.lower()
     for signal in signals:
+        if not isinstance(signal, str):
+            continue
         signal_lower = signal.lower()
         if signal_lower == 'network':
             if is_engineering_network_title(title):

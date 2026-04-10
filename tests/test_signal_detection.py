@@ -151,6 +151,23 @@ class TestHasTrackSignal:
         """Test with empty signals list."""
         assert has_track_signal('Software Engineer', []) is False
 
+    def test_none_signals_returns_false(self):
+        """Test that missing signals input is handled safely."""
+        assert has_track_signal('Software Engineer', None) is False
+
+    def test_non_list_signals_returns_false(self):
+        """Test that malformed signals containers are handled safely."""
+        assert has_track_signal('Software Engineer', 'software') is False
+
+    def test_non_string_signal_entries_are_ignored(self):
+        """Test that malformed signal entries do not raise or match."""
+        signals = [None, 123, 'backend']
+        assert has_track_signal('Backend Engineer', signals) is True
+
+    def test_networking_engineer_matches_network_signal(self):
+        """Test that legitimate networking engineering titles are included."""
+        assert has_track_signal('Networking Engineer', ['network']) is True
+
     def test_empty_title(self):
         """Test with empty title string."""
         signals = ['software', 'data']
