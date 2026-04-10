@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2026 20:44:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 21:25:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785734</link>
+      <description>New grad role at Peloton in New York, New York. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 21:19:21 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785734</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Member AI Features at SoFi</title>
+      <link>https://sofi.com/careers/job/7645856003?gh_jid=7645856003</link>
+      <description>New grad role at SoFi in CA - San Francisco . Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:00:46 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7645856003?gh_jid=7645856003</guid>
+    </item>
     <item>
       <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7536801</link>
@@ -219,17 +233,17 @@
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
       <description>New grad role at MongoDB in New York City; United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
     <item>
       <title>Software Engineer (L2) at Twilio</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Affirm in Remote Poland. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 10:27:28 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7615042003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (Consumer Engineering) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7615040003</link>
-      <description>New grad role at Affirm in Remote Spain. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 10:27:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7615040003</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Unity) at Scopely</title>
-      <link>https://job-boards.greenhouse.io/scopely/jobs/5180560008</link>
-      <description>New grad role at Scopely in IN - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 08:40:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5180560008</guid>
     </item>
   </channel>
 </rss>
