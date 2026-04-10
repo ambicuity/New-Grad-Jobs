@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-10T04:45:54.575211",
+    "last_updated": "2026-04-10T06:26:39.965450",
     "total_snapshots": 37,
     "date_range": {
       "start": "2026-03-05",
@@ -1990,12 +1990,12 @@
     },
     {
       "date": "2026-04-10",
-      "total_jobs": 975,
+      "total_jobs": 1006,
       "categories": {},
       "tiers": {
         "unicorn": 466,
-        "other": 359,
-        "faang_plus": 150
+        "other": 388,
+        "faang_plus": 152
       },
       "top_companies": [
         {
@@ -2009,6 +2009,10 @@
         {
           "company": "Northrop Grumman",
           "jobs": 32
+        },
+        {
+          "company": "NTT DATA",
+          "jobs": 29
         },
         {
           "company": "ClickHouse",
@@ -2033,15 +2037,11 @@
         {
           "company": "Stripe",
           "jobs": 17
-        },
-        {
-          "company": "Opendoor",
-          "jobs": 17
         }
       ],
-      "unique_companies": 194,
-      "avg_jobs_per_company": 5.03,
-      "timestamp": "2026-04-10T04:45:54.574645"
+      "unique_companies": 192,
+      "avg_jobs_per_company": 5.24,
+      "timestamp": "2026-04-10T06:26:39.964915"
     }
   ]
 }
