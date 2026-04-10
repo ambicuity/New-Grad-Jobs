@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2026 18:03:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 19:12:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Product Security at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4643029005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 18:55:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4643029005</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4646888005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; Seattle, WA; New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 18:50:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4646888005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Creator Translation at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7786397?gh_jid=7786397</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:25:29 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7786397?gh_jid=7786397</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:01:52 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:01:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:00:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
+    </item>
     <item>
       <title>Software Engineer II, Safety at Twitch</title>
       <link>https://job-boards.greenhouse.io/twitch/jobs/8499608002</link>
@@ -106,20 +148,6 @@
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</guid>
     </item>
     <item>
-      <title>Infrastructure Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</guid>
-    </item>
-    <item>
       <title>Infrastructure Software Engineer, Telemetry at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7684426?gh_jid=7684426</link>
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
@@ -177,17 +205,17 @@
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
       <description>New grad role at MongoDB in New York City; United States. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 15:30:10 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
     <item>
       <title>Software Engineer (L2) at Twilio</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
       <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7611268?gh_jid=7611268</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, IT Infrastructure at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7559168?gh_jid=7559168</link>
-      <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7559168?gh_jid=7559168</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend (Developer - Stablecoin)  at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7758474?gh_jid=7758474</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Developer (Wallets and Onchain Tools)  at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7673310?gh_jid=7673310</guid>
-    </item>
-    <item>
-      <title>Software Engineer, DevSec at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/7595352?gh_jid=7595352</link>
-      <description>New grad role at Coinbase in Remote - USA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 04:41:31 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7595352?gh_jid=7595352</guid>
     </item>
   </channel>
 </rss>
