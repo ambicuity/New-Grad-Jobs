@@ -30,7 +30,6 @@
       "contributions": [
         "code",
         "doc",
-        "infra",
         "test"
       ]
     },
@@ -217,5 +216,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-04-04T04:04:15Z"
+  "generatedAt": "2026-04-10T19:45:36Z"
 }
