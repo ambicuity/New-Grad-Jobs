@@ -16,6 +16,7 @@ from update_jobs import (
     categorize_job,
     get_company_tier,
     detect_sponsorship_flags,
+    is_engineering_network_title,
 )
 
 
@@ -154,6 +155,99 @@ class TestCategorizeJob:
         """Regression: software roles in a network domain stay software-engineering."""
         result = categorize_job("Software Engineer, Starlink Network")
         assert result["id"] == "software_engineering"
+
+    def test_network_automation(self) -> None:
+        result = categorize_job("Network Automation Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_noc_engineer(self) -> None:
+        result = categorize_job("NOC Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_network_operations_center(self) -> None:
+        result = categorize_job("Network Operations Center Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_network_performance(self) -> None:
+        result = categorize_job("Network Performance Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_netops(self) -> None:
+        result = categorize_job("NetOps Engineer")
+        assert result["id"] == "infrastructure_sre"
+
+    def test_non_engineering_network_role_stays_other(self) -> None:
+        result = categorize_job(
+            "Associate, Network Contracting",
+            "Partner with providers on network contracting operations.",
+        )
+        assert result["id"] == "other"
+
+    def test_business_analyst_network_operations_stays_other(self) -> None:
+        result = categorize_job("Business Analyst, Network Operations")
+        assert result["id"] == "other"
+
+    def test_manager_network_operations_stays_other(self) -> None:
+        result = categorize_job("Manager, Network Operations")
+        assert result["id"] == "other"
+
+    def test_noc_analyst_stays_other(self) -> None:
+        result = categorize_job("NOC Analyst")
+        assert result["id"] == "other"
+
+    def test_engineering_network_domain_role_stays_included(self) -> None:
+        result = categorize_job("Software Engineer, Networking")
+        assert result["id"] == "infrastructure_sre"
+
+
+class TestEngineeringNetworkTitle:
+    def test_none_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(None)
+
+    def test_empty_title_returns_false(self) -> None:
+        assert not is_engineering_network_title("")
+
+    def test_non_string_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(123)
+
+    def test_nan_title_returns_false(self) -> None:
+        assert not is_engineering_network_title(float("nan"))
+
+    def test_business_network_title_returns_false(self) -> None:
+        assert not is_engineering_network_title("Associate, Network Contracting")
+
+    def test_business_analyst_network_operations_returns_false(self) -> None:
+        assert not is_engineering_network_title("Business Analyst, Network Operations")
+
+    def test_manager_network_operations_returns_false(self) -> None:
+        assert not is_engineering_network_title("Manager, Network Operations")
+
+    def test_manager_network_infrastructure_returns_false(self) -> None:
+        assert not is_engineering_network_title("Manager, Network Infrastructure")
+
+    def test_graduate_analyst_network_services_returns_false(self) -> None:
+        assert not is_engineering_network_title("Graduate Analyst, Network Services")
+
+    def test_noc_analyst_returns_false(self) -> None:
+        assert not is_engineering_network_title("NOC Analyst")
+
+    def test_engineering_network_title_returns_true(self) -> None:
+        assert is_engineering_network_title("Network Engineer")
+
+    def test_networking_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Networking Engineer")
+
+    def test_noc_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("NOC Engineer")
+
+    def test_network_operations_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Network Operations Engineer")
+
+    def test_network_services_engineer_returns_true(self) -> None:
+        assert is_engineering_network_title("Network Services Engineer")
+
+    def test_software_engineer_networking_returns_true(self) -> None:
+        assert is_engineering_network_title("Software Engineer, Networking")
 
 
 class TestGetCompanyTier:

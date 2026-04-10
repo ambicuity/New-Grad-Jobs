@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal
+from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal
 
 
 def _make_job(
@@ -140,6 +140,51 @@ class TestFilterJobsDeduplication:
     def test_empty_input_returns_empty(self):
         result = deduplicate_jobs([])
         assert result == []
+
+
+class TestTrackSignals:
+    """Tests for the has_track_signal() helper function."""
+
+    def test_non_engineering_network_title_does_not_count(self):
+        assert not has_track_signal("Associate, Network Contracting", ["network"])
+
+    def test_engineering_network_title_counts(self):
+        assert has_track_signal("Network Engineer, New Grad", ["network"])
+
+    def test_non_network_signal_still_uses_substring_matching(self):
+        assert has_track_signal("Software Engineer, New Grad", ["software"])
+
+    def test_none_title_returns_false(self):
+        assert not has_track_signal(None, ["network"])
+
+    def test_empty_title_returns_false(self):
+        assert not has_track_signal("", ["network"])
+
+    def test_whitespace_only_title_returns_false(self):
+        assert not has_track_signal("   \t  ", ["network"])
+
+    def test_non_string_title_returns_false(self):
+        assert not has_track_signal(123, ["network"])
+
+    def test_nan_title_returns_false(self):
+        assert not has_track_signal(float('nan'), ["network"])
+
+    def test_unicode_title_uses_case_insensitive_substring_matching(self):
+        assert has_track_signal("Développeur Logiciel, New Grad 🚀", ["développeur"])
+
+    def test_very_long_title_still_matches_signal(self):
+        title = f"{'x' * 10000} Software Engineer, New Grad"
+        assert has_track_signal(title, ["software"])
+
+    def test_empty_signals_returns_false(self):
+        assert not has_track_signal("Network Engineer, New Grad", [])
+
+    def test_blank_signal_is_ignored(self):
+        assert not has_track_signal("Software Engineer, New Grad", [""])
+
+    def test_whitespace_signal_is_ignored(self):
+        assert not has_track_signal("Software Engineer, New Grad", ["   "])
+
 
 class TestHasNewGradSignal:
     """Test the has_new_grad_signal() helper function. It returns True if any of the configured new grad signals are present in the job title."""
