@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-11T00:07:13.951118",
+    "last_updated": "2026-04-11T03:20:39.639083",
     "total_snapshots": 38,
     "date_range": {
       "start": "2026-03-05",
@@ -2045,12 +2045,12 @@
     },
     {
       "date": "2026-04-11",
-      "total_jobs": 1022,
+      "total_jobs": 1033,
       "categories": {},
       "tiers": {
-        "other": 392,
-        "faang_plus": 161,
-        "unicorn": 469
+        "unicorn": 468,
+        "other": 407,
+        "faang_plus": 158
       },
       "top_companies": [
         {
@@ -2066,6 +2066,10 @@
           "jobs": 30
         },
         {
+          "company": "Accenture",
+          "jobs": 26
+        },
+        {
           "company": "NTT DATA",
           "jobs": 26
         },
@@ -2075,7 +2079,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "Lyft",
@@ -2088,15 +2092,11 @@
         {
           "company": "Dropbox",
           "jobs": 19
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 17
         }
       ],
-      "unique_companies": 193,
-      "avg_jobs_per_company": 5.3,
-      "timestamp": "2026-04-11T00:07:13.950597"
+      "unique_companies": 192,
+      "avg_jobs_per_company": 5.38,
+      "timestamp": "2026-04-11T03:20:39.638435"
     }
   ]
 }
