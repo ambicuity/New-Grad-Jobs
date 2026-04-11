@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 17:03:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 17:48:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -20,6 +20,13 @@
       <description>New grad role at Astrom Training Solutions Inc. in Richmond, BC, CA. Category: Software Engineering</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fd614dc26278d022</guid>
+    </item>
+    <item>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
       <title>Junior QA Engineer at JS Techalliance Consulting Pvt Ltd</title>
@@ -57,13 +64,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
     </item>
     <item>
-      <title>Junior Terrain Geologist at Tetra Tech</title>
-      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
-      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
-    </item>
-    <item>
       <title>DevOps Engineer at Eloit innovations Pvt. Ltd.</title>
       <link>https://in.indeed.com/viewjob?jk=3add79c2b456ace6</link>
       <description>New grad role at Eloit innovations Pvt. Ltd. in KL, IN. Category: Infrastructure &amp; SRE</description>
@@ -76,13 +76,6 @@
       <description>New grad role at Crest climber software solution pvt ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3795379620d7d071</guid>
-    </item>
-    <item>
-      <title>(USA) Coach/Ops Mgr Trainee at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Byram-MS/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2475230</link>
-      <description>New grad role at Walmart in Byram, MS. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Byram-MS/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2475230</guid>
     </item>
     <item>
       <title>RF Silicon Software Engineer (Starlink) at SpaceX</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:15:04 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694596003?gh_jid=7694596003</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer - Top Secret Clearance at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:10:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002</guid>
     </item>
   </channel>
 </rss>
