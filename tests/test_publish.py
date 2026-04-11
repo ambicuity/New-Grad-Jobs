@@ -7,7 +7,6 @@ Tests cover writing JSON artifacts with proper formatting, directory creation, a
 import json
 import tempfile
 from pathlib import Path
-from unittest.mock import patch
 from scripts.publish import write_json_artifact
 
 
