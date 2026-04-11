@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 05:13:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 06:15:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -22,13 +22,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fd614dc26278d022</guid>
     </item>
     <item>
-      <title>Operational Technology Security Engineer at Bart &amp; Associates, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=0e123417ca099703</link>
-      <description>New grad role at Bart &amp; Associates, Inc. in Fort Belvoir, VA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e123417ca099703</guid>
-    </item>
-    <item>
       <title>Network Engineer at ASEC</title>
       <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
       <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
@@ -36,18 +29,214 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
     </item>
     <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://www.indeed.com/viewjob?jk=9dd4776deaff2dd5</link>
-      <description>New grad role at Walmart in Bentonville, AR, US. Category: Software Engineering</description>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9dd4776deaff2dd5</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://www.indeed.com/viewjob?jk=0358a2e093c0f596</link>
-      <description>New grad role at Walmart in Sunnyvale, CA, US. Category: Software Engineering</description>
+      <title>Operational Technology Security Engineer at Bart &amp; Associates, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=0e123417ca099703</link>
+      <description>New grad role at Bart &amp; Associates, Inc. in Fort Belvoir, VA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0358a2e093c0f596</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e123417ca099703</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=958d5bb59870b8c0</link>
+      <description>New grad role at CVS Health in MO, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=958d5bb59870b8c0</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=a9941951a8af6a7c</link>
+      <description>New grad role at CVS Health in MD, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a9941951a8af6a7c</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=502f909107c514fd</link>
+      <description>New grad role at CVS Health in KS, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=502f909107c514fd</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=978ee96bd13a377a</link>
+      <description>New grad role at CVS Health in WV, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=978ee96bd13a377a</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=5d395d5debc82190</link>
+      <description>New grad role at CVS Health in ID, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5d395d5debc82190</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=541dc7bf2ef36567</link>
+      <description>New grad role at CVS Health in MN, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=541dc7bf2ef36567</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=6ae9421cabb9debc</link>
+      <description>New grad role at CVS Health in MA, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6ae9421cabb9debc</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=0ff018699c3848f7</link>
+      <description>New grad role at CVS Health in VT, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0ff018699c3848f7</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=b0ce91b28caf0e5b</link>
+      <description>New grad role at CVS Health in Phoenix, AZ, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b0ce91b28caf0e5b</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=e2f36daf208c9dde</link>
+      <description>New grad role at CVS Health in CA, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e2f36daf208c9dde</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=bea13c1d68be87f3</link>
+      <description>New grad role at CVS Health in NV, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bea13c1d68be87f3</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=e432c1fb82021f4c</link>
+      <description>New grad role at CVS Health in NM, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e432c1fb82021f4c</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=90c14f04792fe616</link>
+      <description>New grad role at CVS Health in SC, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=90c14f04792fe616</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=8f4bbe7cb7f94203</link>
+      <description>New grad role at CVS Health in NC, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8f4bbe7cb7f94203</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=e8ddc8175e576407</link>
+      <description>New grad role at CVS Health in MS, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8ddc8175e576407</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=9be62859848353b9</link>
+      <description>New grad role at CVS Health in IL, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9be62859848353b9</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=a8333c2f7180abc6</link>
+      <description>New grad role at CVS Health in AZ, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a8333c2f7180abc6</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=82164afcf8bca14b</link>
+      <description>New grad role at CVS Health in TN, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=82164afcf8bca14b</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=0bf60884b45e425b</link>
+      <description>New grad role at CVS Health in NE, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0bf60884b45e425b</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=6de647af308eb566</link>
+      <description>New grad role at CVS Health in MI, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6de647af308eb566</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=1038a8fd999c5574</link>
+      <description>New grad role at CVS Health in TX, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1038a8fd999c5574</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=fe78a0ce7d4cd1f9</link>
+      <description>New grad role at CVS Health in SD, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe78a0ce7d4cd1f9</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=035ff993316dbfa1</link>
+      <description>New grad role at CVS Health in IA, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=035ff993316dbfa1</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=5a660259624ea7a9</link>
+      <description>New grad role at CVS Health in ME, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5a660259624ea7a9</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=dae1528f0c94384f</link>
+      <description>New grad role at CVS Health in DE, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dae1528f0c94384f</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=1c4a4d91c4214d6a</link>
+      <description>New grad role at CVS Health in AR, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1c4a4d91c4214d6a</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=0dd69d873cafe85c</link>
+      <description>New grad role at CVS Health in NY, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0dd69d873cafe85c</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=c10741e51571831c</link>
+      <description>New grad role at CVS Health in NH, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c10741e51571831c</guid>
     </item>
     <item>
       <title>Battery Storage Operations &amp; Maintenance Technician II at Terra-Gen Operating Company LLC</title>
@@ -62,265 +251,6 @@
       <description>New grad role at Terra-Gen Operating Company LLC in Beaumont, CA, US. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e803556b44fa4bb8</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-274079-1</link>
-      <description>New grad role at Mastercard in O'Fallon, Missouri. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-274079-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-275086</link>
-      <description>New grad role at Mastercard in O'Fallon, Missouri. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-275086</guid>
-    </item>
-    <item>
-      <title>Platform Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Platform-Engineer-II_R-272725-1</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Platform-Engineer-II_R-272725-1</guid>
-    </item>
-    <item>
-      <title>Quality Assurance Software Developer in Test Engineer at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Quality-Assurance-Software-Developer-in-Test-Engineer_JR2011328</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Quality-Assurance-Software-Developer-in-Test-Engineer_JR2011328</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer - Hardware Infrastructure at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Site-Reliability-Engineer---Hardware-Infrastructure_JR2011168</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Site-Reliability-Engineer---Hardware-Infrastructure_JR2011168</guid>
-    </item>
-    <item>
-      <title>Pricing Operation Specialist - New College Graduate 2026 at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Pricing-Operation-Specialist---New-College-Graduate-2026_JR2014380</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Pricing-Operation-Specialist---New-College-Graduate-2026_JR2014380</guid>
-    </item>
-    <item>
-      <title>Research Scientist, Generative AI for Physical AI - PhD New College Grad 2026 at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Research-Scientist--Generative-AI-for-Physical-AI---PhD-New-College-Grad-2026_JR2016032</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Research-Scientist--Generative-AI-for-Physical-AI---PhD-New-College-Grad-2026_JR2016032</guid>
-    </item>
-    <item>
-      <title>Infrastructure and DevOps Engineer at Intel</title>
-      <link>https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Infrastructure-and-DevOps-Engineer_JR0282572</link>
-      <description>New grad role at Intel in US, California, Santa Clara. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Infrastructure-and-DevOps-Engineer_JR0282572</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer---Officer_26953115</link>
-      <description>New grad role at Citi in New Castle Delaware United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer---Officer_26953115</guid>
-    </item>
-    <item>
-      <title>Kafka DevOps Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Applications-Development-Sr-Programmer-Analyst---C12---MISSISSAUGA_25924011</link>
-      <description>New grad role at Citi in Mississauga Ontario Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Applications-Development-Sr-Programmer-Analyst---C12---MISSISSAUGA_25924011</guid>
-    </item>
-    <item>
-      <title>Automation and Devops Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Automation-and-Devops-Engineer_26934853</link>
-      <description>New grad role at Citi in Pune Maharashtra India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Automation-and-Devops-Engineer_26934853</guid>
-    </item>
-    <item>
-      <title>Sales Representative II, Pain Therapies - Spokane, WA at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Spokane-Washington-United-States-of-America/Sales-Representative-II--Pain-Therapies---Spokane--WA_R57762-1</link>
-      <description>New grad role at Medtronic in Spokane, Washington, United States of America. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Spokane-Washington-United-States-of-America/Sales-Representative-II--Pain-Therapies---Spokane--WA_R57762-1</guid>
-    </item>
-    <item>
-      <title>Associate Sales Representative, Pain Interventions - Alaska at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Anchorage-Alaska-United-States-of-America/Associate-Sales-Representative--Pain-Interventions---Alaska_R62058-2</link>
-      <description>New grad role at Medtronic in Anchorage, Alaska, United States of America. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Anchorage-Alaska-United-States-of-America/Associate-Sales-Representative--Pain-Interventions---Alaska_R62058-2</guid>
-    </item>
-    <item>
-      <title>Sales Representative I, Pain Therapies - Central Missouri at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Columbia-Missouri-United-States-of-America/Sales-Representative-I--Pain-Therapies---Central-Missouri_R61045-1</link>
-      <description>New grad role at Medtronic in Columbia, Missouri, United States of America. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Columbia-Missouri-United-States-of-America/Sales-Representative-I--Pain-Therapies---Central-Missouri_R61045-1</guid>
-    </item>
-    <item>
-      <title>Manufacturing engineer I. at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-engineer-I_R63314-1</link>
-      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-engineer-I_R63314-1</guid>
-    </item>
-    <item>
-      <title>Enterprise Software Test Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test-Engineer-II_R63633-1</link>
-      <description>New grad role at Medtronic in Nanakramguda, Hyderabad, India. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test-Engineer-II_R63633-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-J-STREET-OFFICE-SPACE-AR-BENTONVILLE-Home-Office/Software-Engineer-III_R-2447128</link>
-      <description>New grad role at Walmart in (USA) J STREET OFFICE SPACE AR BENTONVILLE Home Office. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-J-STREET-OFFICE-SPACE-AR-BENTONVILLE-Home-Office/Software-Engineer-III_R-2447128</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Service-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2466362</link>
-      <description>New grad role at Walmart in (USA) Crossman Service Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Service-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2466362</guid>
-    </item>
-    <item>
-      <title>737 Payloads Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Renton-WA/XMLNAME-737-Payloads-Engineer--Associate-or-Experienced-_JR2026496950-1</link>
-      <description>New grad role at Boeing in USA - Renton, WA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Renton-WA/XMLNAME-737-Payloads-Engineer--Associate-or-Experienced-_JR2026496950-1</guid>
-    </item>
-    <item>
-      <title>Structural &amp; Payload Design Engineer (Associate &amp; Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Structural---Payload-Design-Engineer--Associate---Mid-Level-_JR2026504596</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Structural---Payload-Design-Engineer--Associate---Mid-Level-_JR2026504596</guid>
-    </item>
-    <item>
-      <title>Facilities Mechanical Engineer (Entry or Associate) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Everett-WA/Facilities-Mechanical-Engineer--Entry-or-Associate-_JR2026504165-1</link>
-      <description>New grad role at Boeing in USA - Everett, WA. Category: Hardware Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Everett-WA/Facilities-Mechanical-Engineer--Entry-or-Associate-_JR2026504165-1</guid>
-    </item>
-    <item>
-      <title>Aircraft Environmental Control Systems(ECS) Design &amp; Analysis Engineer (Associate and Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Aircraft-Environmental-Control-Systems-ECS--Design---Analysis-Engineer--Associate-and-Experienced-_JR2026496079-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Aircraft-Environmental-Control-Systems-ECS--Design---Analysis-Engineer--Associate-and-Experienced-_JR2026496079-1</guid>
-    </item>
-    <item>
-      <title>Airplane Performance Software Engineer (Associate) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Airplane-Performance-Software-Engineer--Associate-_JR2026504382-1</link>
-      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Airplane-Performance-Software-Engineer--Associate-_JR2026504382-1</guid>
-    </item>
-    <item>
-      <title>Manufacturing Engineer - Electrical (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Mid-Level-Manufacturing-Engineer---Electrical_JR2026500360-1</link>
-      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Mid-Level-Manufacturing-Engineer---Electrical_JR2026500360-1</guid>
-    </item>
-    <item>
-      <title>Associate Propulsion Structures Design Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-Structures-Design-Engineer_JR2026505311-1</link>
-      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-Structures-Design-Engineer_JR2026505311-1</guid>
-    </item>
-    <item>
-      <title>Teardown Engineer (Associate, Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Teardown-Engineer--Associate--Mid-Level-_JR2026504481-1</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Teardown-Engineer--Associate--Mid-Level-_JR2026504481-1</guid>
-    </item>
-    <item>
-      <title>Associate Simulation Software Test Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Associate-Simulation-Software-Test-Engineer_JR2026501391-2</link>
-      <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Associate-Simulation-Software-Test-Engineer_JR2026501391-2</guid>
-    </item>
-    <item>
-      <title>Entry-Level Simulation Software Test Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Entry-Level-Simulation-Software-Test-Engineer_JR2026501258-1</link>
-      <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Entry-Level-Simulation-Software-Test-Engineer_JR2026501258-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Software-Engineer--Associate-or-Experienced-_JR2026502931-1</link>
-      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Software-Engineer--Associate-or-Experienced-_JR2026502931-1</guid>
-    </item>
-    <item>
-      <title>Flight Test Program Integration (TPI) Engineer (AWACS Portfolio) (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Flight-Test-Program-Integration--TPI--Engineer--AWACS-Portfolio---Associate-or-Experienced-_JR2026500408-1</link>
-      <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Flight-Test-Program-Integration--TPI--Engineer--AWACS-Portfolio---Associate-or-Experienced-_JR2026500408-1</guid>
-    </item>
-    <item>
-      <title>Associate Simulation Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Jacksonville-FL/Associate-Simulation-Software-Engineer_JR2026503739-1</link>
-      <description>New grad role at Boeing in USA - Jacksonville, FL. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Jacksonville-FL/Associate-Simulation-Software-Engineer_JR2026503739-1</guid>
-    </item>
-    <item>
-      <title>Operations Center Fleet Monitoring Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Operations-Center-Fleet-Monitoring-Engineer--Associate-or-Experienced-_JR2026498443-1</link>
-      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Operations-Center-Fleet-Monitoring-Engineer--Associate-or-Experienced-_JR2026498443-1</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Embedded-Software-Engineer--Associate-or-Experienced-_JR2026505242-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Embedded-Software-Engineer--Associate-or-Experienced-_JR2026505242-1</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer_JR2026497053-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer_JR2026497053-1</guid>
-    </item>
-    <item>
-      <title>Experienced Software Engineer - AI Application at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Software-Engineer---AI-Application_JR2026501905-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Software-Engineer---AI-Application_JR2026501905-1</guid>
-    </item>
-    <item>
-      <title>Associate Full Stack Developer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Full-Stack-Developer_JR2026502560-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Full-Stack-Developer_JR2026502560-1</guid>
-    </item>
-    <item>
-      <title>Associate Programmer Analyst - Java Full Stack at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Programmer-Analyst---Java-Full-Stack_JR2026495985-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Programmer-Analyst---Java-Full-Stack_JR2026495985-1</guid>
     </item>
     <item>
       <title>RF Silicon Software Engineer (Starlink) at SpaceX</title>
@@ -356,6 +286,76 @@
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 21:34:06 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8373117002?gh_jid=8373117002</guid>
+    </item>
+    <item>
+      <title>[2026] Software Engineer, Creator - Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7557909?gh_jid=7557909</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7557909?gh_jid=7557909</guid>
+    </item>
+    <item>
+      <title>Data Scientist, People Analytics at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7125944?gh_jid=7125944</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7125944?gh_jid=7125944</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ads &amp; Brands at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7535750?gh_jid=7535750</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7535750?gh_jid=7535750</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Creator Translation at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7786397?gh_jid=7786397</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7786397?gh_jid=7786397</guid>
+    </item>
+    <item>
+      <title>Software Engineer, User Co-Experience at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
+    </item>
+    <item>
+      <title>Software Engineer, User Sharing at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7767204?gh_jid=7767204</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7767204?gh_jid=7767204</guid>
+    </item>
+    <item>
+      <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:34:00 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7561739?gh_jid=7561739</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Member AI Features at SoFi</title>
+      <link>https://sofi.com/careers/job/7645856003?gh_jid=7645856003</link>
+      <description>New grad role at SoFi in CA - San Francisco . Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 21:00:46 +0000</pubDate>
+      <guid isPermaLink="true">https://sofi.com/careers/job/7645856003?gh_jid=7645856003</guid>
+    </item>
+    <item>
+      <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7536801</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 20:10:58 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7536801</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4684073005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 19:32:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
     </item>
   </channel>
 </rss>
