@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 07:31:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 08:09:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -36,20 +36,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
-      <title>Network Engineer at ASEC</title>
-      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
-      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
-    </item>
-    <item>
-      <title>Hardware &amp; Network Engineer at Crest climber software solution pvt ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=3795379620d7d071</link>
-      <description>New grad role at Crest climber software solution pvt ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3795379620d7d071</guid>
-    </item>
-    <item>
       <title>Fire Protection Sales Engineer (Entry-Level) at Western States Fire Protection Company</title>
       <link>https://www.indeed.com/viewjob?jk=09e6897fbe9648dc</link>
       <description>New grad role at Western States Fire Protection Company in Englewood, CO, US. Category: Other</description>
@@ -62,6 +48,13 @@
       <description>New grad role at Bart &amp; Associates, Inc. in Fort Belvoir, VA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e123417ca099703</guid>
+    </item>
+    <item>
+      <title>Network Engineer at ASEC</title>
+      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
+      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
     </item>
     <item>
       <title>Associate Project Engineer at Globus Medical</title>
@@ -113,11 +106,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=541dc7bf2ef36567</guid>
     </item>
     <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=6ae9421cabb9debc</link>
-      <description>New grad role at CVS Health in MA, US. Category: Other</description>
+      <title>Hardware &amp; Network Engineer at Crest climber software solution pvt ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3795379620d7d071</link>
+      <description>New grad role at Crest climber software solution pvt ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6ae9421cabb9debc</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3795379620d7d071</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</link>
+      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</guid>
     </item>
     <item>
       <title>RF Silicon Software Engineer (Starlink) at SpaceX</title>
