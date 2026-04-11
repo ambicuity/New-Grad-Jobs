@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 10:40:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 11:10:41 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -22,13 +22,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fd614dc26278d022</guid>
     </item>
     <item>
-      <title>Junior Terrain Geologist at Tetra Tech</title>
-      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
-      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
-    </item>
-    <item>
       <title>Trainee Software Engineer at Pyther Innovations Pvt. Ltd</title>
       <link>https://in.indeed.com/viewjob?jk=f24d6533bc0f0ffb</link>
       <description>New grad role at Pyther Innovations Pvt. Ltd in GJ, IN. Category: Software Engineering</description>
@@ -41,6 +34,13 @@
       <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
+    </item>
+    <item>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
       <title>Operational Technology Security Engineer at Bart &amp; Associates, Inc.</title>
