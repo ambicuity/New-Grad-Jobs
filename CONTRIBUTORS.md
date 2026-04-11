@@ -34,6 +34,9 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ayeshawadoodkhan2-svg"><img src="https://avatars.githubusercontent.com/u/262957261?v=4?s=100" width="100px;" alt="Ayesha"/><br /><sub><b>Ayesha</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=ayeshawadoodkhan2-svg" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/AnshikaVerma23"><img src="https://avatars.githubusercontent.com/u/142527116?v=4?s=100" width="100px;" alt="AnshikaVerma"/><br /><sub><b>AnshikaVerma</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=AnshikaVerma23" title="Documentation">📖</a> <a href="#design-AnshikaVerma23" title="Design">🎨</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Tiago-Vier-Preto"><img src="https://avatars.githubusercontent.com/u/83984051?v=4?s=100" width="100px;" alt="Tiago Vier Preto"/><br /><sub><b>Tiago Vier Preto</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Tests">⚠️</a></td>
+    </tr>
   </tbody>
 </table>
 

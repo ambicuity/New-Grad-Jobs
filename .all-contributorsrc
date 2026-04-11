@@ -222,6 +222,17 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "Tiago-Vier-Preto",
+      "name": "Tiago Vier Preto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83984051?v=4",
+      "profile": "https://github.com/Tiago-Vier-Preto",
+      "contributions": [
+        "doc",
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
