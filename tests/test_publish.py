@@ -26,7 +26,7 @@ class TestWriteJsonArtifact:
         """Test that write_json_artifact rejects NaN to keep output strict JSON."""
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir) / "nan.json"
-            with pytest.raises(ValueError):
+            with pytest.raises(ValueError, match=r"Out of range float values|NaN"):
                 write_json_artifact(temp_path, {"value": float("nan")})
 
     def test_raises_type_error_for_non_serializable_payload(self):
@@ -77,6 +77,38 @@ class TestWriteJsonArtifact:
             # Nested object should have 4 spaces
             nested_line = next(line for line in lines if '"inner"' in line)
             assert nested_line.startswith("    ")
+
+    def test_writes_empty_payloads(self):
+        """Test that empty dict/list payloads serialize and roundtrip correctly."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            dict_path = Path(temp_dir) / "empty_dict.json"
+            list_path = Path(temp_dir) / "empty_list.json"
+
+            write_json_artifact(dict_path, {})
+            write_json_artifact(list_path, [])
+
+            dict_text = dict_path.read_text(encoding="utf-8")
+            list_text = list_path.read_text(encoding="utf-8")
+
+            assert json.loads(dict_text) == {}
+            assert json.loads(list_text) == []
+            assert dict_text.endswith("\n")
+            assert list_text.endswith("\n")
+
+    def test_writes_very_long_string_payload(self):
+        """Test that very long UTF-8 strings are preserved and newline is appended."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir) / "long_string.json"
+            long_text = "🚀" + ("abc123" * 2000) + "世界"
+            payload = {"blob": long_text}
+
+            write_json_artifact(temp_path, payload)
+
+            content = temp_path.read_text(encoding="utf-8")
+            parsed = json.loads(content)
+            assert parsed == payload
+            assert parsed["blob"] == long_text
+            assert content.endswith("\n")
 
     def test_preserves_utf8_content(self):
         """Test that write_json_artifact preserves UTF-8 content without escaping."""
