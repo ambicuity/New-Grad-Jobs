@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 972,
-      "change_percent": 1.67
+      "total_jobs": 1015,
+      "change_percent": -0.68
     },
     "30_days": {
-      "total_jobs": 976,
-      "change_percent": 2.09
+      "total_jobs": 1045,
+      "change_percent": 2.25
     }
   },
   "growing_categories": [
     "FAANG_Plus",
-    "Unicorn",
-    "Infrastructure Engineering"
+    "Other/Mid-Market",
+    "Infrastructure/Cloud"
   ],
   "declining_categories": [
-    "Generalist/Other",
-    "Early-stage Startups",
-    "Non-Tech Industry IT"
+    "Unicorn",
+    "Early-Stage Startups",
+    "Legacy Tech"
   ],
-  "confidence": 65,
+  "confidence": 75,
   "insights": [
-    "The market exhibits high volatility with a mean-reverting pattern, consistently oscillating around the 970-980 range without establishing a clear breakout trend.",
-    "While FAANG_Plus and Unicorn tiers show resilience, the 'Other' category is experiencing contraction, suggesting a flight to quality among hiring firms.",
-    "The lack of sustained growth above the 1000-job threshold indicates that hiring remains cautious, likely tied to seasonal budget cycles rather than aggressive expansion."
+    "The market is showing a clear upward trend, with the current total of 1022 sitting significantly above the 30-day average of 980, indicating a recovery phase.",
+    "FAANG+ companies are driving the growth momentum, suggesting that large-cap tech firms are resuming aggressive new graduate hiring cycles.",
+    "While unicorn hiring remains stable, the 'other' category is showing high volatility, which may lead to short-term fluctuations before a sustained climb over the next month."
   ],
-  "generated_at": "2026-04-10T01:55:43.161411",
-  "data_points": 37,
+  "generated_at": "2026-04-11T00:07:17.062971",
+  "data_points": 38,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-10"
+    "end": "2026-04-11"
   }
 }
