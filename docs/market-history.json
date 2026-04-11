@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-11T14:25:10.114368",
+    "last_updated": "2026-04-11T15:04:29.412967",
     "total_snapshots": 38,
     "date_range": {
       "start": "2026-03-05",
@@ -2045,11 +2045,11 @@
     },
     {
       "date": "2026-04-11",
-      "total_jobs": 993,
+      "total_jobs": 999,
       "categories": {},
       "tiers": {
         "unicorn": 468,
-        "other": 366,
+        "other": 372,
         "faang_plus": 159
       },
       "top_companies": [
@@ -2086,17 +2086,17 @@
           "jobs": 20
         },
         {
-          "company": "Dropbox",
-          "jobs": 19
+          "company": "Accenture",
+          "jobs": 20
         },
         {
-          "company": "Scale AI",
-          "jobs": 17
+          "company": "Dropbox",
+          "jobs": 19
         }
       ],
-      "unique_companies": 187,
-      "avg_jobs_per_company": 5.31,
-      "timestamp": "2026-04-11T14:25:10.113793"
+      "unique_companies": 186,
+      "avg_jobs_per_company": 5.37,
+      "timestamp": "2026-04-11T15:04:29.412351"
     }
   ]
 }
