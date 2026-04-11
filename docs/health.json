@@ -1,19 +1,19 @@
 {
   "status": "degraded",
-  "last_run": "2026-04-11T06:15:34.226149Z",
-  "total_jobs": 926,
+  "last_run": "2026-04-11T07:31:54.297413Z",
+  "total_jobs": 902,
   "source_counts": {
-    "greenhouse": 13097,
+    "greenhouse": 13100,
     "lever": 519,
-    "jobspy": 2824,
+    "jobspy": 2815,
     "workday": 0
   },
   "zero_sources": [
     "workday"
   ],
-  "run_duration_seconds": 70.6,
+  "run_duration_seconds": 85.0,
   "configured_company_apis": 204,
   "enabled_sources": 4,
-  "active_hiring_companies": 182,
+  "active_hiring_companies": 185,
   "active_sources": 3
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-11T06:15:34.167017",
+    "last_updated": "2026-04-11T07:31:54.226866",
     "total_snapshots": 38,
     "date_range": {
       "start": "2026-03-05",
@@ -2045,12 +2045,12 @@
     },
     {
       "date": "2026-04-11",
-      "total_jobs": 926,
+      "total_jobs": 902,
       "categories": {},
       "tiers": {
         "unicorn": 468,
-        "other": 387,
-        "faang_plus": 71
+        "other": 362,
+        "faang_plus": 72
       },
       "top_companies": [
         {
@@ -2060,10 +2060,6 @@
         {
           "company": "Waymo",
           "jobs": 53
-        },
-        {
-          "company": "CVS Health",
-          "jobs": 28
         },
         {
           "company": "NTT DATA",
@@ -2092,11 +2088,15 @@
         {
           "company": "Scale AI",
           "jobs": 17
+        },
+        {
+          "company": "MongoDB",
+          "jobs": 17
         }
       ],
-      "unique_companies": 183,
-      "avg_jobs_per_company": 5.06,
-      "timestamp": "2026-04-11T06:15:34.166437"
+      "unique_companies": 186,
+      "avg_jobs_per_company": 4.85,
+      "timestamp": "2026-04-11T07:31:54.226351"
     }
   ]
 }

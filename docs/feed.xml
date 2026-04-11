@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 06:15:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 07:31:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -22,11 +22,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fd614dc26278d022</guid>
     </item>
     <item>
-      <title>Network Engineer at ASEC</title>
-      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
-      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
+      <title>Trainee Software Engineer at Pyther Innovations Pvt. Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=f24d6533bc0f0ffb</link>
+      <description>New grad role at Pyther Innovations Pvt. Ltd in GJ, IN. Category: Software Engineering</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f24d6533bc0f0ffb</guid>
     </item>
     <item>
       <title>Junior Terrain Geologist at Tetra Tech</title>
@@ -36,11 +36,39 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
+      <title>Network Engineer at ASEC</title>
+      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
+      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
+    </item>
+    <item>
+      <title>Hardware &amp; Network Engineer at Crest climber software solution pvt ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3795379620d7d071</link>
+      <description>New grad role at Crest climber software solution pvt ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3795379620d7d071</guid>
+    </item>
+    <item>
+      <title>Fire Protection Sales Engineer (Entry-Level) at Western States Fire Protection Company</title>
+      <link>https://www.indeed.com/viewjob?jk=09e6897fbe9648dc</link>
+      <description>New grad role at Western States Fire Protection Company in Englewood, CO, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=09e6897fbe9648dc</guid>
+    </item>
+    <item>
       <title>Operational Technology Security Engineer at Bart &amp; Associates, Inc.</title>
       <link>https://www.indeed.com/viewjob?jk=0e123417ca099703</link>
       <description>New grad role at Bart &amp; Associates, Inc. in Fort Belvoir, VA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e123417ca099703</guid>
+    </item>
+    <item>
+      <title>Associate Project Engineer at Globus Medical</title>
+      <link>https://www.indeed.com/viewjob?jk=233e3a32bc4b6d0b</link>
+      <description>New grad role at Globus Medical in Audubon, PA, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=233e3a32bc4b6d0b</guid>
     </item>
     <item>
       <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
@@ -90,167 +118,6 @@
       <description>New grad role at CVS Health in MA, US. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6ae9421cabb9debc</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=0ff018699c3848f7</link>
-      <description>New grad role at CVS Health in VT, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0ff018699c3848f7</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=b0ce91b28caf0e5b</link>
-      <description>New grad role at CVS Health in Phoenix, AZ, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b0ce91b28caf0e5b</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=e2f36daf208c9dde</link>
-      <description>New grad role at CVS Health in CA, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e2f36daf208c9dde</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=bea13c1d68be87f3</link>
-      <description>New grad role at CVS Health in NV, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bea13c1d68be87f3</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=e432c1fb82021f4c</link>
-      <description>New grad role at CVS Health in NM, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e432c1fb82021f4c</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=90c14f04792fe616</link>
-      <description>New grad role at CVS Health in SC, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=90c14f04792fe616</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=8f4bbe7cb7f94203</link>
-      <description>New grad role at CVS Health in NC, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8f4bbe7cb7f94203</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=e8ddc8175e576407</link>
-      <description>New grad role at CVS Health in MS, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8ddc8175e576407</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=9be62859848353b9</link>
-      <description>New grad role at CVS Health in IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9be62859848353b9</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=a8333c2f7180abc6</link>
-      <description>New grad role at CVS Health in AZ, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a8333c2f7180abc6</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=82164afcf8bca14b</link>
-      <description>New grad role at CVS Health in TN, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=82164afcf8bca14b</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=0bf60884b45e425b</link>
-      <description>New grad role at CVS Health in NE, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0bf60884b45e425b</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=6de647af308eb566</link>
-      <description>New grad role at CVS Health in MI, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6de647af308eb566</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=1038a8fd999c5574</link>
-      <description>New grad role at CVS Health in TX, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1038a8fd999c5574</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=fe78a0ce7d4cd1f9</link>
-      <description>New grad role at CVS Health in SD, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe78a0ce7d4cd1f9</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=035ff993316dbfa1</link>
-      <description>New grad role at CVS Health in IA, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=035ff993316dbfa1</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=5a660259624ea7a9</link>
-      <description>New grad role at CVS Health in ME, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5a660259624ea7a9</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=dae1528f0c94384f</link>
-      <description>New grad role at CVS Health in DE, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dae1528f0c94384f</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=1c4a4d91c4214d6a</link>
-      <description>New grad role at CVS Health in AR, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1c4a4d91c4214d6a</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=0dd69d873cafe85c</link>
-      <description>New grad role at CVS Health in NY, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0dd69d873cafe85c</guid>
-    </item>
-    <item>
-      <title>Associate Software Development Engineer (Google Workspace Administrator) at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=c10741e51571831c</link>
-      <description>New grad role at CVS Health in NH, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c10741e51571831c</guid>
-    </item>
-    <item>
-      <title>Battery Storage Operations &amp; Maintenance Technician II at Terra-Gen Operating Company LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=3556f6104ccff8f1</link>
-      <description>New grad role at Terra-Gen Operating Company LLC in Canyon Country, CA, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3556f6104ccff8f1</guid>
-    </item>
-    <item>
-      <title>Battery Storage Operations &amp; Maintenance Technician II at Terra-Gen Operating Company LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=e803556b44fa4bb8</link>
-      <description>New grad role at Terra-Gen Operating Company LLC in Beaumont, CA, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e803556b44fa4bb8</guid>
     </item>
     <item>
       <title>RF Silicon Software Engineer (Starlink) at SpaceX</title>
@@ -356,6 +223,139 @@
       <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Apr 2026 19:32:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Product Security at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4643029005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 18:55:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4643029005</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4646888005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; Seattle, WA; New York, NY. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Apr 2026 18:50:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4646888005</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:01:52 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:01:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 18:00:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Safety at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8499608002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 17:24:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8499608002</guid>
+    </item>
+    <item>
+      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469391?gh_jid=7469391</guid>
+    </item>
+    <item>
+      <title>Android Software Engineer, Mobile Experience at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</guid>
+    </item>
+    <item>
+      <title>Backend Product Software Engineer, Payments at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
+    </item>
+    <item>
+      <title>Frontend Product Software Engineer, Web DX at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7580431?gh_jid=7580431</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7580431?gh_jid=7580431</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7751394?gh_jid=7751394</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
+    </item>
+    <item>
+      <title>Full Stack Product Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</guid>
     </item>
   </channel>
 </rss>
