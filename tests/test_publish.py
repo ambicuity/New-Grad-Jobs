@@ -7,10 +7,35 @@ Tests cover writing JSON artifacts with proper formatting, directory creation, a
 import json
 import tempfile
 from pathlib import Path
+
+import pytest
 from scripts.publish import write_json_artifact
 
 
 class TestWriteJsonArtifact:
+    def test_writes_none_payload_as_null(self):
+        """Test that write_json_artifact serializes None payload as JSON null."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir) / "none.json"
+            write_json_artifact(temp_path, None)
+            content = temp_path.read_text(encoding="utf-8")
+            assert json.loads(content) is None
+            assert content.startswith("null")
+
+    def test_rejects_nan_payload(self):
+        """Test that write_json_artifact rejects NaN to keep output strict JSON."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir) / "nan.json"
+            with pytest.raises(ValueError):
+                write_json_artifact(temp_path, {"value": float("nan")})
+
+    def test_raises_type_error_for_non_serializable_payload(self):
+        """Test that non-JSON-serializable objects raise TypeError."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir) / "invalid.json"
+            with pytest.raises(TypeError):
+                write_json_artifact(temp_path, {"x": object()})
+
     def test_creates_missing_parent_directories(self):
         """Test that write_json_artifact creates missing parent directories automatically."""
         with tempfile.TemporaryDirectory() as temp_dir:
