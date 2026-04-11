@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 19:54:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 20:26:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Application Software Engineer at SpaceX</title>
@@ -29,13 +29,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=69ac1ad2faf709da</guid>
     </item>
     <item>
-      <title>Network Engineer at ASEC</title>
-      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
-      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
-    </item>
-    <item>
       <title>RF Mechanical Engineer II at Raytheon</title>
       <link>https://www.indeed.com/viewjob?jk=c193fd2a5328b857</link>
       <description>New grad role at Raytheon in Tucson, AZ, US. Category: Hardware Engineering</description>
@@ -50,11 +43,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9bfa02552bf4b316</guid>
     </item>
     <item>
-      <title>Junior Terrain Geologist at Tetra Tech</title>
-      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
-      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <title>Network Engineer at ASEC</title>
+      <link>https://www.indeed.com/viewjob?jk=38294f8a8a12380e</link>
+      <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
     </item>
     <item>
       <title>Associate Engineer - Systems at Maximus</title>
@@ -62,6 +55,20 @@
       <description>New grad role at Maximus in Bloomington, MN, US. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a2a03837cf3c4117</guid>
+    </item>
+    <item>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
+    </item>
+    <item>
+      <title>Field Service Engineer II at Emsar</title>
+      <link>https://www.indeed.com/viewjob?jk=1abc3d868c93b1a9</link>
+      <description>New grad role at Emsar in Sylva, NC, US. Category: Hardware Engineering</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1abc3d868c93b1a9</guid>
     </item>
     <item>
       <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
@@ -125,6 +132,13 @@
       <description>New grad role at Crest climber software solution pvt ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3795379620d7d071</guid>
+    </item>
+    <item>
+      <title>ProSales Associate (Early Career Sales Program) at Herc Rentals</title>
+      <link>https://www.indeed.com/viewjob?jk=1afbef5f352d58f3</link>
+      <description>New grad role at Herc Rentals in Harrison, OH, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1afbef5f352d58f3</guid>
     </item>
     <item>
       <title>RF Silicon Software Engineer (Starlink) at SpaceX</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/6449729?gh_jid=6449729</guid>
-    </item>
-    <item>
-      <title>Full Stack Product Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7172839?gh_jid=7172839</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</guid>
     </item>
   </channel>
 </rss>
