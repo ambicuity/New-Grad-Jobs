@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-11T22:59:14.170937",
+    "last_updated": "2026-04-11T23:45:29.738320",
     "total_snapshots": 38,
     "date_range": {
       "start": "2026-03-05",
@@ -2045,12 +2045,12 @@
     },
     {
       "date": "2026-04-11",
-      "total_jobs": 986,
+      "total_jobs": 985,
       "categories": {},
       "tiers": {
         "unicorn": 464,
-        "other": 361,
-        "faang_plus": 161
+        "other": 359,
+        "faang_plus": 162
       },
       "top_companies": [
         {
@@ -2067,7 +2067,7 @@
         },
         {
           "company": "NTT DATA",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "ClickHouse",
@@ -2094,9 +2094,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 182,
-      "avg_jobs_per_company": 5.42,
-      "timestamp": "2026-04-11T22:59:14.170362"
+      "unique_companies": 184,
+      "avg_jobs_per_company": 5.35,
+      "timestamp": "2026-04-11T23:45:29.737817"
     }
   ]
 }
