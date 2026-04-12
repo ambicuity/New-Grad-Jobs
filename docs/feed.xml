@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 07:48:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 08:36:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -22,20 +22,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
     </item>
     <item>
-      <title>Entry Level of Electrical Engineer - Automotive/ Robotic Industry (Local Candidates Only) at Activ8 Chicago</title>
-      <link>https://www.indeed.com/viewjob?jk=3c380e696e2c4369</link>
-      <description>New grad role at Activ8 Chicago in Troy, OH, US. Category: Hardware Engineering</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3c380e696e2c4369</guid>
-    </item>
-    <item>
-      <title>Junior Network Engineer at Summit Technologies &amp; Solutions, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=cdc1a00e21e17ad1</link>
-      <description>New grad role at Summit Technologies &amp; Solutions, Inc. in Colorado Springs, CO, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cdc1a00e21e17ad1</guid>
-    </item>
-    <item>
       <title>RN - Nurse Residency, Beaumont - July 2026 Program at CHRISTUS Health</title>
       <link>https://www.indeed.com/viewjob?jk=911f31a32840695f</link>
       <description>New grad role at CHRISTUS Health in Beaumont, TX, US. Category: Other</description>
@@ -43,11 +29,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=911f31a32840695f</guid>
     </item>
     <item>
-      <title>Associate Level Field Services Engineer - Electrical Engineering (Semiconductor) at Activ8 Chicago</title>
-      <link>https://www.indeed.com/viewjob?jk=670dd0fdae9494b1</link>
-      <description>New grad role at Activ8 Chicago in Sherman, TX, US. Category: Other</description>
+      <title>Entry Level of Electrical Engineer - Automotive/ Robotic Industry (Local Candidates Only) at Activ8 Chicago</title>
+      <link>https://www.indeed.com/viewjob?jk=3c380e696e2c4369</link>
+      <description>New grad role at Activ8 Chicago in Troy, OH, US. Category: Hardware Engineering</description>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=670dd0fdae9494b1</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3c380e696e2c4369</guid>
     </item>
     <item>
       <title>Software Engineer III at Walmart</title>
@@ -69,13 +55,6 @@
       <description>New grad role at JS Techalliance Consulting Pvt Ltd in MP, IN. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=69ac1ad2faf709da</guid>
-    </item>
-    <item>
-      <title>Junior Terrain Geologist at Tetra Tech</title>
-      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
-      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
       <title>Associate Network Security Engineer at Openkyber</title>
@@ -111,6 +90,13 @@
       <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
+    </item>
+    <item>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
       <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
@@ -356,6 +342,20 @@
       <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
     </item>
   </channel>
 </rss>
