@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 23:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 23:51:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -232,20 +232,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a661decaf6dbbf00</guid>
     </item>
     <item>
-      <title>New Grad RN Behavioral Health at TriCities Hospital</title>
-      <link>https://www.indeed.com/viewjob?jk=64ad070b615c26f3</link>
-      <description>New grad role at TriCities Hospital in Hopewell, VA, US. Category: Other</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=64ad070b615c26f3</guid>
-    </item>
-    <item>
-      <title>New Grad RN Residency Stepdown Unit at TriCities Hospital</title>
-      <link>https://www.indeed.com/viewjob?jk=b83b1f6ae1dbf07a</link>
-      <description>New grad role at TriCities Hospital in Hopewell, VA, US. Category: Other</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b83b1f6ae1dbf07a</guid>
-    </item>
-    <item>
       <title>New Graduate RN Nurse Sponsorship via OPT at Research Medical Center</title>
       <link>https://www.indeed.com/viewjob?jk=acb859c13a265da0</link>
       <description>New grad role at Research Medical Center in Kansas City, MO, US. Category: Other</description>
@@ -288,6 +274,13 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
     </item>
     <item>
+      <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
+      <link>https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</link>
+      <description>New grad role at University of Texas Medical Branch in League City, TX, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</guid>
+    </item>
+    <item>
       <title>Associate Network Security Engineer at Openkyber</title>
       <link>https://www.indeed.com/viewjob?jk=7f1e31296630254e</link>
       <description>New grad role at Openkyber in TX, US. Category: Infrastructure &amp; SRE</description>
@@ -323,13 +316,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
     </item>
     <item>
-      <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
-      <link>https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</link>
-      <description>New grad role at University of Texas Medical Branch in League City, TX, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</guid>
-    </item>
-    <item>
       <title>Advisory Software Engineer at Pitney Bowes</title>
       <link>https://in.indeed.com/viewjob?jk=3607550225f76bfd</link>
       <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
@@ -356,6 +342,20 @@
       <description>New grad role at Pitney Bowes in UP, IN. Category: Software Engineering</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c893572fd1ecf7d</guid>
+    </item>
+    <item>
+      <title>Advisory Software Engineer at Pitney Bowes</title>
+      <link>https://in.indeed.com/viewjob?jk=c53652f21fddcba3</link>
+      <description>New grad role at Pitney Bowes in UP, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c53652f21fddcba3</guid>
+    </item>
+    <item>
+      <title>Advisory Software Engineer at Pitney Bowes</title>
+      <link>https://in.indeed.com/viewjob?jk=f3fc6fd7ce515afe</link>
+      <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f3fc6fd7ce515afe</guid>
     </item>
   </channel>
 </rss>
