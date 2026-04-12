@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-12T04:24:14.513635",
+    "last_updated": "2026-04-12T06:11:27.257202",
     "total_snapshots": 39,
     "date_range": {
       "start": "2026-03-05",
@@ -2100,12 +2100,12 @@
     },
     {
       "date": "2026-04-12",
-      "total_jobs": 980,
+      "total_jobs": 982,
       "categories": {},
       "tiers": {
-        "other": 358,
+        "other": 361,
         "unicorn": 464,
-        "faang_plus": 158
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -2118,7 +2118,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 30
+          "jobs": 29
         },
         {
           "company": "NTT DATA",
@@ -2149,9 +2149,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 180,
-      "avg_jobs_per_company": 5.44,
-      "timestamp": "2026-04-12T04:24:14.513122"
+      "unique_companies": 179,
+      "avg_jobs_per_company": 5.49,
+      "timestamp": "2026-04-12T06:11:27.256611"
     }
   ]
 }
