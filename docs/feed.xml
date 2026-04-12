@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 10:14:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 11:04:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -51,6 +51,13 @@
     </item>
     <item>
       <title>(USA) Software Engineer III at Walmart</title>
+      <link>https://www.indeed.com/viewjob?jk=46e9425fe6d2ee72</link>
+      <description>New grad role at Walmart in Bentonville, AR, US. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=46e9425fe6d2ee72</guid>
+    </item>
+    <item>
+      <title>(USA) Software Engineer III at Walmart</title>
       <link>https://www.indeed.com/viewjob?jk=99ac5015f236aa88</link>
       <description>New grad role at Walmart in Bentonville, AR, US. Category: Software Engineering</description>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
@@ -76,6 +83,20 @@
       <description>New grad role at JS Techalliance Consulting Pvt Ltd in MP, IN. Category: Other</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=69ac1ad2faf709da</guid>
+    </item>
+    <item>
+      <title>Junior Terrain Geologist at Tetra Tech</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
+      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
+    </item>
+    <item>
+      <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
+      <link>https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</link>
+      <description>New grad role at University of Texas Medical Branch in League City, TX, US. Category: Other</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</guid>
     </item>
     <item>
       <title>Associate Network Security Engineer at Openkyber</title>
@@ -111,20 +132,6 @@
       <description>New grad role at ASEC in Lexington Park, MD, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=38294f8a8a12380e</guid>
-    </item>
-    <item>
-      <title>Junior Terrain Geologist at Tetra Tech</title>
-      <link>https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</link>
-      <description>New grad role at Tetra Tech in Edmonton, AB, CA. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef0956dc711e04cf</guid>
-    </item>
-    <item>
-      <title>Diagnostic Ultrasound Technologist I or II - League City Campus (Fri/Sat/Sun 9a-9:30p) at University of Texas Medical Branch</title>
-      <link>https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</link>
-      <description>New grad role at University of Texas Medical Branch in League City, TX, US. Category: Other</description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=607eb6c3c6deb176</guid>
     </item>
     <item>
       <title>Advisory Software Engineer at Pitney Bowes</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
       <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7469388?gh_jid=7469388</guid>
-    </item>
-    <item>
-      <title>Backend Product Software Engineer, Payments at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Apr 2026 16:45:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7642218?gh_jid=7642218</guid>
     </item>
   </channel>
 </rss>
