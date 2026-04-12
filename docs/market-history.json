@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-12T19:52:03.121231",
+    "last_updated": "2026-04-12T20:23:53.884304",
     "total_snapshots": 39,
     "date_range": {
       "start": "2026-03-05",
@@ -2100,12 +2100,12 @@
     },
     {
       "date": "2026-04-12",
-      "total_jobs": 1021,
+      "total_jobs": 1020,
       "categories": {},
       "tiers": {
         "unicorn": 464,
         "other": 403,
-        "faang_plus": 154
+        "faang_plus": 153
       },
       "top_companies": [
         {
@@ -2133,11 +2133,11 @@
           "jobs": 23
         },
         {
-          "company": "Lyft",
-          "jobs": 21
+          "company": "Affirm",
+          "jobs": 20
         },
         {
-          "company": "Affirm",
+          "company": "Lyft",
           "jobs": 20
         },
         {
@@ -2151,7 +2151,7 @@
       ],
       "unique_companies": 189,
       "avg_jobs_per_company": 5.4,
-      "timestamp": "2026-04-12T19:52:03.120624"
+      "timestamp": "2026-04-12T20:23:53.883785"
     }
   ]
 }
