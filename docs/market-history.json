@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-13T12:56:46.851375",
+    "last_updated": "2026-04-13T14:49:41.684308",
     "total_snapshots": 40,
     "date_range": {
       "start": "2026-03-05",
@@ -2155,11 +2155,11 @@
     },
     {
       "date": "2026-04-13",
-      "total_jobs": 972,
+      "total_jobs": 968,
       "categories": {},
       "tiers": {
-        "unicorn": 463,
-        "other": 366,
+        "other": 361,
+        "unicorn": 464,
         "faang_plus": 143
       },
       "top_companies": [
@@ -2176,12 +2176,12 @@
           "jobs": 26
         },
         {
-          "company": "Northrop Grumman",
+          "company": "ClickHouse",
           "jobs": 26
         },
         {
-          "company": "ClickHouse",
-          "jobs": 26
+          "company": "Northrop Grumman",
+          "jobs": 25
         },
         {
           "company": "Boeing",
@@ -2200,13 +2200,13 @@
           "jobs": 19
         },
         {
-          "company": "Scale AI",
-          "jobs": 17
+          "company": "Abnormal Security",
+          "jobs": 18
         }
       ],
-      "unique_companies": 181,
-      "avg_jobs_per_company": 5.37,
-      "timestamp": "2026-04-13T12:56:46.850908"
+      "unique_companies": 185,
+      "avg_jobs_per_company": 5.23,
+      "timestamp": "2026-04-13T14:49:41.683753"
     }
   ]
 }
