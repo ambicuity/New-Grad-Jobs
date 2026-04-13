@@ -125,8 +125,49 @@ class TestCategoryAndTierCounting:
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def test_counts_categories_correctly(self):
-        """Categories are counted across all jobs."""
+    def test_counts_categories_correctly_from_singular_category_field(self):
+        """Categories are counted from the enriched singular category field."""
+        jobs = [
+            {'company': 'Google', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Meta', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Stripe', 'category': {'id': 'data_ml'}, 'company_tier': {'tier': 'unicorn'}},
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {'software_engineering': 2, 'data_ml': 1}
+
+    def test_prefers_singular_category_field_over_legacy_categories_list(self):
+        """Regression guard: enriched jobs should not double-count legacy categories lists."""
+        jobs = [
+            {
+                'company': 'Google',
+                'category': {'id': 'software_engineering'},
+                'categories': ['data_ml', 'product'],
+                'company_tier': {'tier': 'faang-plus'},
+            },
+            {
+                'company': 'Stripe',
+                'category': {'id': 'data_ml'},
+                'categories': ['software_engineering'],
+                'company_tier': {'tier': 'unicorn'},
+            },
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {'software_engineering': 1, 'data_ml': 1}
+
+    def test_falls_back_to_legacy_categories_list_when_category_missing(self):
+        """Legacy category lists still count when enriched category data is absent."""
         jobs = [
             {'company': 'Google', 'categories': ['swe', 'ml'], 'company_tier': {'tier': 'faang-plus'}},
             {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
@@ -146,10 +187,10 @@ class TestCategoryAndTierCounting:
     def test_counts_tiers_correctly(self):
         """Company tiers are counted correctly."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}},
-            {'company': 'Unknown Startup', 'categories': ['swe'], 'company_tier': {'tier': 'other'}},
+            {'company': 'Google', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Meta', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Stripe', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'unicorn'}},
+            {'company': 'Unknown Startup', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'other'}},
         ]
 
         update_jobs.save_market_history(jobs)
@@ -163,9 +204,9 @@ class TestCategoryAndTierCounting:
         assert tiers['other'] == 1
 
     def test_missing_categories_empty(self):
-        """Jobs without categories field result in empty category counts."""
+        """Jobs without category data result in empty category counts."""
         jobs = [
-            {'company': 'Google', 'company_tier': {'tier': 'faang-plus'}},  # no categories
+            {'company': 'Google', 'company_tier': {'tier': 'faang-plus'}},  # no category data
         ]
 
         update_jobs.save_market_history(jobs)

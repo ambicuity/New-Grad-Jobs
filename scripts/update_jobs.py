@@ -2148,6 +2148,11 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Count jobs by category
     category_counts = Counter()
     for job in jobs:
+        category_id = job.get('category', {}).get('id')
+        if category_id:
+            category_counts[category_id] += 1
+            continue
+
         for category in job.get('categories', []):
             category_counts[category] += 1
 
