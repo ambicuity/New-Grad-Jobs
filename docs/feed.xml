@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 21:01:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 21:59:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Guest &amp; Host at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7812843?gh_jid=7812843</link>
+      <description>New grad role at Airbnb in Remote, USA . Category: Software Engineering</description>
+      <pubDate>Mon, 13 Apr 2026 21:23:30 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7812843?gh_jid=7812843</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7808471</link>
+      <description>New grad role at Stripe in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Mon, 13 Apr 2026 21:04:11 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7808471</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 13 Apr 2026 21:02:29 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
+    </item>
+    <item>
+      <title>Software Engineer L2 at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7812279</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Mon, 13 Apr 2026 20:57:33 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7812279</guid>
+    </item>
     <item>
       <title>Software Engineer I, Backend at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=6816337</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
       <pubDate>Mon, 13 Apr 2026 13:48:56 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704320004</guid>
-    </item>
-    <item>
-      <title>Software Engineer II - Backend  at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/6592675003?gh_jid=6592675003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Mon, 13 Apr 2026 13:17:00 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/6592675003?gh_jid=6592675003</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7694696003?gh_jid=7694696003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Mon, 13 Apr 2026 13:13:26 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694696003?gh_jid=7694696003</guid>
-    </item>
-    <item>
-      <title>Cancer System Data Engineer, Data &amp; Analytics at Provincial Health Services Authority (PHSA)</title>
-      <link>https://ca.indeed.com/viewjob?jk=9432dcc446f681f4</link>
-      <description>New grad role at Provincial Health Services Authority (PHSA) in Vancouver, BC, CA. Category: Data Engineering</description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9432dcc446f681f4</guid>
-    </item>
-    <item>
-      <title>software Engineer I - Ruby on Rails &amp; Automation Testing at PS COLLABORATIONS</title>
-      <link>https://in.indeed.com/viewjob?jk=739c1cff159d4582</link>
-      <description>New grad role at PS COLLABORATIONS in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=739c1cff159d4582</guid>
     </item>
   </channel>
 </rss>
