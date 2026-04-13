@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-13T06:37:58.956786",
+    "last_updated": "2026-04-13T08:37:58.968952",
     "total_snapshots": 40,
     "date_range": {
       "start": "2026-03-05",
@@ -2155,11 +2155,11 @@
     },
     {
       "date": "2026-04-13",
-      "total_jobs": 1003,
+      "total_jobs": 987,
       "categories": {},
       "tiers": {
-        "other": 385,
-        "faang_plus": 154,
+        "other": 380,
+        "faang_plus": 143,
         "unicorn": 464
       },
       "top_companies": [
@@ -2172,11 +2172,11 @@
           "jobs": 53
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 28
+          "company": "NTT DATA",
+          "jobs": 26
         },
         {
-          "company": "NTT DATA",
+          "company": "Northrop Grumman",
           "jobs": 26
         },
         {
@@ -2185,7 +2185,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "Affirm",
@@ -2204,9 +2204,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 188,
-      "avg_jobs_per_company": 5.34,
-      "timestamp": "2026-04-13T06:37:58.956139"
+      "unique_companies": 187,
+      "avg_jobs_per_company": 5.28,
+      "timestamp": "2026-04-13T08:37:58.968501"
     }
   ]
 }
