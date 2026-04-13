@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 991,
-      "change_percent": 0.71
+      "total_jobs": 1015,
+      "change_percent": 0.6
     },
     "30_days": {
-      "total_jobs": 988,
-      "change_percent": 0.41
+      "total_jobs": 1035,
+      "change_percent": 2.6
     }
   },
   "growing_categories": [
-    "FAANG_Plus",
-    "Unicorn",
-    "Infrastructure/DevOps"
+    "Software Engineering",
+    "Data Science",
+    "Cloud Infrastructure"
   ],
   "declining_categories": [
-    "Generalist/Other",
-    "Frontend Development",
-    "Manual QA"
+    "Quality Assurance",
+    "Technical Support",
+    "Project Management"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high volatility with a mean-reverting trend, consistently oscillating around the 980-1000 job range without establishing a clear breakout.",
-    "Tier-1 (FAANG+) and Unicorn companies are providing the primary stability in the market, while the 'Other' category shows significant fluctuations, indicating inconsistent hiring demand among smaller firms.",
-    "The 7-day average (993) currently sits above the 30-day average (980), suggesting a mild short-term upward momentum that is likely to stabilize as the market hits a ceiling near the 1025 job mark."
+    "The market is showing a clear upward trend, with the current total (1009) consistently outperforming the 30-day average (982), signaling a recovery phase.",
+    "Unicorn and FAANG+ tiers remain stable, suggesting that hiring volume is being driven by sustained demand from established tech entities rather than speculative growth.",
+    "The 7-day average (1001) is trending higher than the 30-day average, indicating that momentum is accelerating as we move into the next month."
   ],
-  "generated_at": "2026-04-12T01:12:08.630812",
-  "data_points": 39,
+  "generated_at": "2026-04-13T01:16:09.823885",
+  "data_points": 40,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-12"
+    "end": "2026-04-13"
   }
 }
