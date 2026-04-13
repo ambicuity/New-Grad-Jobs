@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 01:16:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 04:35:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III at Robert Half</title>
+      <link>https://www.indeed.com/viewjob?jk=9f47248faf88df34</link>
+      <description>New grad role at Robert Half in San Ramon, CA, US. Category: Software Engineering</description>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9f47248faf88df34</guid>
+    </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
@@ -22,11 +29,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
     </item>
     <item>
-      <title>Entry Level of Electrical Engineer - Automotive/ Robotic Industry (Local Candidates Only) at Activ8 Chicago</title>
-      <link>https://www.indeed.com/viewjob?jk=3c380e696e2c4369</link>
-      <description>New grad role at Activ8 Chicago in Troy, OH, US. Category: Hardware Engineering</description>
+      <title>CIVIL ENGINEER I (EN-18) [1 vacancy] at City and County of Honolulu</title>
+      <link>https://www.indeed.com/viewjob?jk=59679043511f4841</link>
+      <description>New grad role at City and County of Honolulu in Oahu Island, HI, US. Category: Other</description>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3c380e696e2c4369</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=59679043511f4841</guid>
+    </item>
+    <item>
+      <title>ELECTRICAL ENGINEER I (EN-18) [1 vacancy] at City and County of Honolulu</title>
+      <link>https://www.indeed.com/viewjob?jk=c79b9986c17b172e</link>
+      <description>New grad role at City and County of Honolulu in Oahu Island, HI, US. Category: Hardware Engineering</description>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c79b9986c17b172e</guid>
     </item>
     <item>
       <title>Software Engineer II - Java + Mainframe at JPMorganChase</title>
@@ -211,27 +225,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4ef5e64ec83883ec</guid>
     </item>
     <item>
-      <title>New Grad RN Resident Inpatient Surgical Care Unit at Johnston-Willis Hospital</title>
-      <link>https://www.indeed.com/viewjob?jk=19a79abfb67ea29f</link>
-      <description>New grad role at Johnston-Willis Hospital in Richmond, VA, US. Category: Other</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=19a79abfb67ea29f</guid>
-    </item>
-    <item>
-      <title>New Grad RN Resident at Chippenham Hospital</title>
-      <link>https://www.indeed.com/viewjob?jk=74730eabc1f36ea8</link>
-      <description>New grad role at Chippenham Hospital in Richmond, VA, US. Category: Other</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=74730eabc1f36ea8</guid>
-    </item>
-    <item>
-      <title>New Grad RN Resident Inpatient Joint Replacement at Johnston-Willis Hospital</title>
-      <link>https://www.indeed.com/viewjob?jk=a661decaf6dbbf00</link>
-      <description>New grad role at Johnston-Willis Hospital in Richmond, VA, US. Category: Other</description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a661decaf6dbbf00</guid>
-    </item>
-    <item>
       <title>New Graduate RN Nurse Sponsorship via OPT at Research Medical Center</title>
       <link>https://www.indeed.com/viewjob?jk=acb859c13a265da0</link>
       <description>New grad role at Research Medical Center in Kansas City, MO, US. Category: Other</description>
@@ -356,6 +349,13 @@
       <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f3fc6fd7ce515afe</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer at Eloit innovations Pvt. Ltd.</title>
+      <link>https://in.indeed.com/viewjob?jk=3add79c2b456ace6</link>
+      <description>New grad role at Eloit innovations Pvt. Ltd. in KL, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3add79c2b456ace6</guid>
     </item>
   </channel>
 </rss>
