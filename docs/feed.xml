@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2026 20:33:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 21:31:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Production Support Engineer II at Marqeta</title>
+      <link>https://job-boards.greenhouse.io/marqeta/jobs/7743101</link>
+      <description>New grad role at Marqeta in Remote, USA. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 21:06:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/marqeta/jobs/7743101</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7145126</link>
+      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 21:03:14 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7145126</guid>
+    </item>
     <item>
       <title>Risk Data AI/ML Engineer at SoFi</title>
       <link>https://sofi.com/careers/job/7644234003?gh_jid=7644234003</link>
@@ -86,24 +100,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 19:48:55 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Tue, 14 Apr 2026 19:48:55 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
-      <description>New grad role at MongoDB in New York City; United States. Category: Infrastructure &amp; SRE</description>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
+      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Tue, 14 Apr 2026 19:48:55 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
@@ -111,6 +118,13 @@
       <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 14 Apr 2026 19:48:55 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
+      <description>New grad role at MongoDB in New York City; United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 19:48:55 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
     </item>
     <item>
       <title>Forward Deployed Data Engineer at ZoomInfo</title>
@@ -316,6 +330,20 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f0dbc1b64c822559</guid>
     </item>
     <item>
+      <title>Engineer II Cloud (Security and AI Test Automation Engineer) B3617 at TD</title>
+      <link>https://ca.indeed.com/viewjob?jk=dc27fa1e1b7d23dc</link>
+      <description>New grad role at TD in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dc27fa1e1b7d23dc</guid>
+    </item>
+    <item>
+      <title>Associate DevOps Engineer Consultant at Infonox Software Private Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=5c82b61596008456</link>
+      <description>New grad role at Infonox Software Private Ltd in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5c82b61596008456</guid>
+    </item>
+    <item>
       <title>Associate Principle Engineer at Saviynt</title>
       <link>https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</link>
       <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
@@ -328,34 +356,6 @@
       <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c07d6194d168c75</guid>
-    </item>
-    <item>
-      <title>MS Network Engineer at NTT DATA</title>
-      <link>https://in.indeed.com/viewjob?jk=d10e5831acf4a8c6</link>
-      <description>New grad role at NTT DATA in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d10e5831acf4a8c6</guid>
-    </item>
-    <item>
-      <title>Software Test Engineer II at Abbott</title>
-      <link>https://in.indeed.com/viewjob?jk=922cb927eece7ef9</link>
-      <description>New grad role at Abbott in MH, IN. Category: Other</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=922cb927eece7ef9</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=ae883c61a6e9de24</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ae883c61a6e9de24</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=1cb2cf4a0bd96257</link>
-      <description>New grad role at Accenture in MH, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1cb2cf4a0bd96257</guid>
     </item>
   </channel>
 </rss>

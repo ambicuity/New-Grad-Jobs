@@ -1,35 +1,35 @@
 {
-  "outlook": "bullish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1015,
-      "change_percent": 0.6
+      "total_jobs": 975,
+      "change_percent": 1.88
     },
     "30_days": {
-      "total_jobs": 1035,
-      "change_percent": 2.6
+      "total_jobs": 980,
+      "change_percent": 2.4
     }
   },
   "growing_categories": [
-    "Software Engineering",
-    "Data Science",
-    "Cloud Infrastructure"
+    "Unicorn Startups",
+    "General Tech",
+    "Mid-Market Enterprise"
   ],
   "declining_categories": [
-    "Quality Assurance",
-    "Technical Support",
-    "Project Management"
+    "FAANG+",
+    "Early-stage Startups",
+    "Contract/Freelance"
   ],
-  "confidence": 75,
+  "confidence": 65,
   "insights": [
-    "The market is showing a clear upward trend, with the current total (1009) consistently outperforming the 30-day average (982), signaling a recovery phase.",
-    "Unicorn and FAANG+ tiers remain stable, suggesting that hiring volume is being driven by sustained demand from established tech entities rather than speculative growth.",
-    "The 7-day average (1001) is trending higher than the 30-day average, indicating that momentum is accelerating as we move into the next month."
+    "The market exhibits high volatility with a mean-reverting pattern, consistently oscillating around the 980-job threshold.",
+    "FAANG+ companies show a clear downward trend in hiring volume, suggesting a shift in budget allocation toward more stable unicorn-tier firms.",
+    "The 30-day average remains stable, indicating that while the market is not expanding, it is successfully absorbing recent fluctuations without a sustained crash."
   ],
-  "generated_at": "2026-04-13T01:16:09.823885",
-  "data_points": 40,
+  "generated_at": "2026-04-14T21:31:58.575646",
+  "data_points": 41,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-13"
+    "end": "2026-04-14"
   }
 }
