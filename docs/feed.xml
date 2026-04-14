@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2026 21:31:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 22:29:01 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7539786</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 14 Apr 2026 22:21:33 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7539786</guid>
+    </item>
+    <item>
+      <title>Applied AI Engineer II  at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7800318</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid). Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 14 Apr 2026 22:21:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7800318</guid>
+    </item>
+    <item>
+      <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 14 Apr 2026 22:20:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7467839</guid>
+    </item>
+    <item>
+      <title>Early Career Recruiter at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/5828494004?gh_jid=5828494004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 21:31:12 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5828494004?gh_jid=5828494004</guid>
+    </item>
     <item>
       <title>Production Support Engineer II at Marqeta</title>
       <link>https://job-boards.greenhouse.io/marqeta/jobs/7743101</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Amaris Consulting in Mississauga, ON, CA. Category: Other</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f0dbc1b64c822559</guid>
-    </item>
-    <item>
-      <title>Engineer II Cloud (Security and AI Test Automation Engineer) B3617 at TD</title>
-      <link>https://ca.indeed.com/viewjob?jk=dc27fa1e1b7d23dc</link>
-      <description>New grad role at TD in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dc27fa1e1b7d23dc</guid>
-    </item>
-    <item>
-      <title>Associate DevOps Engineer Consultant at Infonox Software Private Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=5c82b61596008456</link>
-      <description>New grad role at Infonox Software Private Ltd in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5c82b61596008456</guid>
-    </item>
-    <item>
-      <title>Associate Principle Engineer at Saviynt</title>
-      <link>https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</link>
-      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</guid>
-    </item>
-    <item>
-      <title>Associate Principle Engineer at Saviynt</title>
-      <link>https://in.indeed.com/viewjob?jk=4c07d6194d168c75</link>
-      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c07d6194d168c75</guid>
     </item>
   </channel>
 </rss>
