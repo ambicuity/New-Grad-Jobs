@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2026 15:42:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 16:49:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Sales Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7814181</link>
+      <description>New grad role at Fastly in Pune, India. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 16:10:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7814181</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer (Application Software) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8505386002?gh_jid=8505386002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 15:38:32 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8505386002?gh_jid=8505386002</guid>
+    </item>
     <item>
       <title>Air Operations Associate, Gurgaon at Flexport</title>
       <link>https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</link>
@@ -114,17 +128,17 @@
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 03:23:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
       <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 14 Apr 2026 03:23:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 03:23:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
     </item>
     <item>
       <title>Software Developer, Data Engineering at Robinhood</title>
@@ -132,13 +146,6 @@
       <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Tue, 14 Apr 2026 03:21:28 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7454438?t=gh_src=&amp;gh_jid=7454438</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Automation Platform at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/7812843?gh_jid=7812843</link>
-      <description>New grad role at Airbnb in Remote, USA . Category: Software Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 01:36:44 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/7812843?gh_jid=7812843</guid>
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
@@ -153,20 +160,6 @@
       <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
       <pubDate>Tue, 14 Apr 2026 00:00:35 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7812279</guid>
-    </item>
-    <item>
-      <title>Associate Principle Engineer at Saviynt</title>
-      <link>https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</link>
-      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</guid>
-    </item>
-    <item>
-      <title>Associate Principle Engineer at Saviynt</title>
-      <link>https://in.indeed.com/viewjob?jk=4c07d6194d168c75</link>
-      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c07d6194d168c75</guid>
     </item>
     <item>
       <title>Software Development Engineer II at Tesco</title>
@@ -204,6 +197,27 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0304fe72916a09f9</guid>
     </item>
     <item>
+      <title>2026 - 2027 Music at Berkeley County School District</title>
+      <link>https://www.indeed.com/viewjob?jk=b3775f29e4c054c7</link>
+      <description>New grad role at Berkeley County School District in SC, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b3775f29e4c054c7</guid>
+    </item>
+    <item>
+      <title>Associate Principle Engineer at Saviynt</title>
+      <link>https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</link>
+      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cf25de3e3394e4ef</guid>
+    </item>
+    <item>
+      <title>Associate Principle Engineer at Saviynt</title>
+      <link>https://in.indeed.com/viewjob?jk=4c07d6194d168c75</link>
+      <description>New grad role at Saviynt in KA, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c07d6194d168c75</guid>
+    </item>
+    <item>
       <title>Management Trainee - RTR at Genpact</title>
       <link>https://in.indeed.com/viewjob?jk=899f181b6e678382</link>
       <description>New grad role at Genpact in RJ, IN. Category: Other</description>
@@ -218,25 +232,25 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=a7659e2bf13ccdf8</guid>
     </item>
     <item>
-      <title>Hardware Engineer Electrical Associate at Lockheed Martin</title>
-      <link>https://ca.indeed.com/viewjob?jk=cc97dffabaff8cf2</link>
-      <description>New grad role at Lockheed Martin in Ottawa, ON, CA. Category: Hardware Engineering</description>
+      <title>Electrical Design Engineer II (Hybrid - Aguadilla, PR) at Collins Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=f37c396f89dab055</link>
+      <description>New grad role at Collins Aerospace in Aguadilla, PR, US. Category: Other</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=cc97dffabaff8cf2</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f37c396f89dab055</guid>
     </item>
     <item>
-      <title>Instructional Assistant Special Education II - Self-Contained - Bush Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=ef49602089c7146a</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <title>Entry Level to Experienced Construction Materials Engineering Technicians at S&amp;ME</title>
+      <link>https://www.indeed.com/viewjob?jk=60667af1dc1a30fc</link>
+      <description>New grad role at S&amp;ME in Raleigh, NC, US. Category: Other</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ef49602089c7146a</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=60667af1dc1a30fc</guid>
     </item>
     <item>
-      <title>Manufacturing Engineer I at Parker Hannifin</title>
-      <link>https://www.indeed.com/viewjob?jk=fb2cb542451e6bb5</link>
-      <description>New grad role at Parker Hannifin in New Hope, MN, US. Category: Other</description>
+      <title>Automation Engineer (Entry Level) at Ericsson</title>
+      <link>https://www.indeed.com/viewjob?jk=ce3ccee5e87bd177</link>
+      <description>New grad role at Ericsson in Plano, TX, US. Category: Software Engineering</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fb2cb542451e6bb5</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ce3ccee5e87bd177</guid>
     </item>
     <item>
       <title>Software Engineer in Test at MathWorks</title>
@@ -260,18 +274,74 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=242f9e5e5d4f538a</guid>
     </item>
     <item>
-      <title>Entry Level to Experienced Construction Materials Engineering Technicians at S&amp;ME</title>
-      <link>https://www.indeed.com/viewjob?jk=60667af1dc1a30fc</link>
-      <description>New grad role at S&amp;ME in Raleigh, NC, US. Category: Other</description>
+      <title>Associate Engineer/Scientist/Technical Officer, Mining &amp; Repository Engineer at Nuclear Waste Management Organization</title>
+      <link>https://ca.indeed.com/viewjob?jk=68d94c48f1378797</link>
+      <description>New grad role at Nuclear Waste Management Organization in Toronto, ON, CA. Category: Other</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=60667af1dc1a30fc</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=68d94c48f1378797</guid>
     </item>
     <item>
-      <title>Automation Engineer (Entry Level) at Ericsson</title>
-      <link>https://www.indeed.com/viewjob?jk=ce3ccee5e87bd177</link>
-      <description>New grad role at Ericsson in Plano, TX, US. Category: Software Engineering</description>
+      <title>Hardware Engineer Electrical Associate at Lockheed Martin</title>
+      <link>https://ca.indeed.com/viewjob?jk=cc97dffabaff8cf2</link>
+      <description>New grad role at Lockheed Martin in Ottawa, ON, CA. Category: Hardware Engineering</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ce3ccee5e87bd177</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=cc97dffabaff8cf2</guid>
+    </item>
+    <item>
+      <title>Entry-Level Structural Engineer at FDG, Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=8692f213c70c79ad</link>
+      <description>New grad role at FDG, Inc in Arvada, CO, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8692f213c70c79ad</guid>
+    </item>
+    <item>
+      <title>Structural Engineer II at JBW Consulting Engineers</title>
+      <link>https://www.indeed.com/viewjob?jk=0e4df2227c046c6c</link>
+      <description>New grad role at JBW Consulting Engineers in Rapid City, SD, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0e4df2227c046c6c</guid>
+    </item>
+    <item>
+      <title>Structural Engineer II at JBW Consulting Engineers</title>
+      <link>https://www.indeed.com/viewjob?jk=d8d3efce2604be25</link>
+      <description>New grad role at JBW Consulting Engineers in Bozeman, MT, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d8d3efce2604be25</guid>
+    </item>
+    <item>
+      <title>Structural Engineer II at JBW Consulting Engineers</title>
+      <link>https://www.indeed.com/viewjob?jk=d449498d0b8201d9</link>
+      <description>New grad role at JBW Consulting Engineers in Duluth, MN, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d449498d0b8201d9</guid>
+    </item>
+    <item>
+      <title>Manufacturing Engineer I at Parker Hannifin</title>
+      <link>https://www.indeed.com/viewjob?jk=fb2cb542451e6bb5</link>
+      <description>New grad role at Parker Hannifin in New Hope, MN, US. Category: Other</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fb2cb542451e6bb5</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Cloud at JPMorganChase</title>
+      <link>https://in.indeed.com/viewjob?jk=6f2538b491cd8f11</link>
+      <description>New grad role at JPMorganChase in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6f2538b491cd8f11</guid>
+    </item>
+    <item>
+      <title>Software Engineer (2-4 yrs in Java, React &amp; AWS) at Gartner</title>
+      <link>https://in.indeed.com/viewjob?jk=822ba37e0fb3a2b4</link>
+      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=822ba37e0fb3a2b4</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Full Stack - Backend Primary) at Gartner</title>
+      <link>https://in.indeed.com/viewjob?jk=3699f3153e1a04d9</link>
+      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3699f3153e1a04d9</guid>
     </item>
     <item>
       <title>Quality Test Engineer, Aladdin Engineering, Associate at BlackRock</title>
@@ -286,76 +356,6 @@
       <description>New grad role at Qualcomm in TS, IN. Category: Hardware Engineering</description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=65549fa4d1cfbc32</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=82f4c0281b2e4d72</link>
-      <description>New grad role at Nexifyr in HR, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=82f4c0281b2e4d72</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=b426ea43d47a82f5</link>
-      <description>New grad role at Nexifyr in HR, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b426ea43d47a82f5</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=6385338ab7dff15d</link>
-      <description>New grad role at Nexifyr in TN, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6385338ab7dff15d</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=50fcdd2633121067</link>
-      <description>New grad role at Nexifyr in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=50fcdd2633121067</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=523e8cadfa69ecb1</link>
-      <description>New grad role at Nexifyr in DL, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=523e8cadfa69ecb1</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=d20b58e418c98219</link>
-      <description>New grad role at Nexifyr in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d20b58e418c98219</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=0dda1b94918edc77</link>
-      <description>New grad role at Nexifyr in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0dda1b94918edc77</guid>
-    </item>
-    <item>
-      <title>AWS Devops Engineer(Remote) at Nexifyr</title>
-      <link>https://in.indeed.com/viewjob?jk=3d20de3cd8a2a173</link>
-      <description>New grad role at Nexifyr in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3d20de3cd8a2a173</guid>
-    </item>
-    <item>
-      <title>Data Engineer at NCR Atleos</title>
-      <link>https://in.indeed.com/viewjob?jk=e29c0596084ec60a</link>
-      <description>New grad role at NCR Atleos in HR, IN. Category: Data Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e29c0596084ec60a</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Journeyman at AM Pierce &amp; Associates, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=ad176dc8c96f4a00</link>
-      <description>New grad role at AM Pierce &amp; Associates, Inc. in Naval Air Station Patuxent River, MD, US. Category: Software Engineering</description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ad176dc8c96f4a00</guid>
     </item>
   </channel>
 </rss>
