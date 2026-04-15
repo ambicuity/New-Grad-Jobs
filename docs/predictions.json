@@ -3,33 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 975,
-      "change_percent": 1.88
+      "change_percent": 1.67
     },
     "30_days": {
       "total_jobs": 980,
-      "change_percent": 2.4
+      "change_percent": 2.19
     }
   },
   "growing_categories": [
     "Unicorn Startups",
     "General Tech",
-    "Mid-Market Enterprise"
+    "Infrastructure"
   ],
   "declining_categories": [
     "FAANG+",
-    "Early-stage Startups",
-    "Contract/Freelance"
+    "Legacy Enterprise",
+    "Consulting"
   ],
   "confidence": 65,
   "insights": [
-    "The market exhibits high volatility with a mean-reverting pattern, consistently oscillating around the 980-job threshold.",
-    "FAANG+ companies show a clear downward trend in hiring volume, suggesting a shift in budget allocation toward more stable unicorn-tier firms.",
-    "The 30-day average remains stable, indicating that while the market is not expanding, it is successfully absorbing recent fluctuations without a sustained crash."
+    "The market is exhibiting high volatility within a tight range of 937-1027 jobs, suggesting a lack of clear directional momentum.",
+    "While FAANG+ hiring has shown a consistent downward trend over the last week, Unicorn startups are absorbing some of that slack, indicating a shift in risk appetite.",
+    "The 30-day average remains perfectly aligned with the 7-day average, signaling that the market is currently in a period of consolidation rather than expansion or contraction."
   ],
-  "generated_at": "2026-04-14T21:31:58.575646",
-  "data_points": 41,
+  "generated_at": "2026-04-15T00:11:18.579016",
+  "data_points": 42,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-14"
+    "end": "2026-04-15"
   }
 }
