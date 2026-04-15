@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-15T07:25:37.876600",
+    "last_updated": "2026-04-15T09:04:16.473571",
     "total_snapshots": 42,
     "date_range": {
       "start": "2026-03-05",
@@ -2265,10 +2265,10 @@
     },
     {
       "date": "2026-04-15",
-      "total_jobs": 979,
+      "total_jobs": 967,
       "categories": {},
       "tiers": {
-        "other": 371,
+        "other": 359,
         "unicorn": 479,
         "faang_plus": 129
       },
@@ -2280,10 +2280,6 @@
         {
           "company": "Waymo",
           "jobs": 53
-        },
-        {
-          "company": "Accenture",
-          "jobs": 27
         },
         {
           "company": "ClickHouse",
@@ -2312,11 +2308,15 @@
         {
           "company": "Dropbox",
           "jobs": 19
+        },
+        {
+          "company": "Scale AI",
+          "jobs": 17
         }
       ],
-      "unique_companies": 196,
-      "avg_jobs_per_company": 4.99,
-      "timestamp": "2026-04-15T07:25:37.876067"
+      "unique_companies": 191,
+      "avg_jobs_per_company": 5.06,
+      "timestamp": "2026-04-15T09:04:16.473005"
     }
   ]
 }
