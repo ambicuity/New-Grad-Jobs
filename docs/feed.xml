@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 22:09:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 23:04:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Safety at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8504990002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 22:18:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8504990002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Growth at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7773373</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 22:14:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7773373</guid>
+    </item>
     <item>
       <title>Data Engineer, Analytics at Discord</title>
       <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
@@ -267,13 +281,6 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7812279</guid>
     </item>
     <item>
-      <title>Software Engineer, Growth at Mixpanel</title>
-      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7773373</link>
-      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 18:56:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7773373</guid>
-    </item>
-    <item>
       <title>Network Security Engineer  at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7435894</link>
       <description>New grad role at Waymo in Chicago ,IL, USA. Category: Infrastructure &amp; SRE</description>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
       <pubDate>Wed, 15 Apr 2026 16:59:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Lattice</title>
-      <link>https://lattice.com/job?gh_jid=8463880002</link>
-      <description>New grad role at Lattice in Canada - Remote. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 16:02:43 +0000</pubDate>
-      <guid isPermaLink="true">https://lattice.com/job?gh_jid=8463880002</guid>
     </item>
   </channel>
 </rss>
