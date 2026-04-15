@@ -55,7 +55,7 @@ class TestSaveMarketHistoryStructure:
         update_jobs.save_market_history(jobs)
 
         assert os.path.exists(self.history_path)
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         assert 'meta' in data
@@ -77,7 +77,7 @@ class TestSaveMarketHistoryStructure:
         jobs = [{'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         meta = data['meta']
@@ -93,7 +93,7 @@ class TestSaveMarketHistoryStructure:
         jobs = [{'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot_date = data['snapshots'][0]['date']
@@ -135,7 +135,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
@@ -160,7 +160,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
@@ -176,7 +176,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
@@ -195,7 +195,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         tiers = data['snapshots'][0]['tiers']
@@ -211,7 +211,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
@@ -226,7 +226,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         tiers = data['snapshots'][0]['tiers']
@@ -264,7 +264,7 @@ class TestTopCompanies:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -283,7 +283,7 @@ class TestTopCompanies:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -303,7 +303,7 @@ class TestTopCompanies:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         unique_companies = data['snapshots'][0]['unique_companies']
@@ -320,7 +320,7 @@ class TestTopCompanies:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         avg_jobs = data['snapshots'][0]['avg_jobs_per_company']
@@ -388,7 +388,7 @@ class TestHistoryRetention:
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         # Should have removed the 100-day-old snapshot
@@ -409,7 +409,7 @@ class TestHistoryRetention:
         ]
         update_jobs.save_market_history(jobs_v2)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         # Should have only one snapshot with updated data
@@ -465,7 +465,7 @@ class TestHistoryRetention:
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         dates = [s['date'] for s in data['snapshots']]
@@ -515,7 +515,7 @@ class TestFileHandling:
         update_jobs.save_market_history(jobs)
 
         # Should recover and create new history
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         assert len(data['snapshots']) == 1
@@ -527,7 +527,7 @@ class TestFileHandling:
         jobs = []
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot = data['snapshots'][0]
@@ -546,7 +546,7 @@ class TestFileHandling:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -566,7 +566,7 @@ class TestFileHandling:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot = data['snapshots'][0]
