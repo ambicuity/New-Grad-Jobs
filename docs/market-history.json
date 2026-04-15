@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-15T21:12:38.441208",
+    "last_updated": "2026-04-15T22:09:49.824981",
     "total_snapshots": 42,
     "date_range": {
       "start": "2026-03-05",
@@ -2265,12 +2265,12 @@
     },
     {
       "date": "2026-04-15",
-      "total_jobs": 1001,
+      "total_jobs": 1013,
       "categories": {},
       "tiers": {
-        "faang_plus": 128,
-        "unicorn": 484,
-        "other": 389
+        "unicorn": 485,
+        "faang_plus": 130,
+        "other": 398
       },
       "top_companies": [
         {
@@ -2286,15 +2286,15 @@
           "jobs": 27
         },
         {
-          "company": "Accenture",
-          "jobs": 22
-        },
-        {
           "company": "NTT DATA",
           "jobs": 22
         },
         {
           "company": "Stripe",
+          "jobs": 21
+        },
+        {
+          "company": "Accenture",
           "jobs": 21
         },
         {
@@ -2314,9 +2314,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 203,
-      "avg_jobs_per_company": 4.93,
-      "timestamp": "2026-04-15T21:12:38.440583"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.87,
+      "timestamp": "2026-04-15T22:09:49.824445"
     }
   ]
 }

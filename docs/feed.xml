@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 21:12:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 22:09:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer, Analytics at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8371252002</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Analytics at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8447216002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8447216002</guid>
+    </item>
+    <item>
+      <title>Full-Stack Software Engineer, Ads at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8362007002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8362007002</guid>
+    </item>
+    <item>
+      <title>Software Engineer- Database Infrastructure at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8487457002</link>
+      <description>New grad role at Discord in San Francisco Bay Area . Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8487457002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Platform at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8396927002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8396927002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Safety Experience at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8475544002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 21:16:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8475544002</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Support Experience at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7813942</link>
@@ -314,48 +356,6 @@
       <description>New grad role at Lattice in Canada - Remote. Category: Software Engineering</description>
       <pubDate>Wed, 15 Apr 2026 16:02:43 +0000</pubDate>
       <guid isPermaLink="true">https://lattice.com/job?gh_jid=8463880002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Finance Forecasting at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5970141004</link>
-      <description>New grad role at ClickHouse in San Francisco, USA (Hybrid). Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 15 Apr 2026 16:01:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5970141004</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Demo Engineering at Datadog</title>
-      <link>https://careers.datadoghq.com/detail/7815725/?gh_jid=7815725</link>
-      <description>New grad role at Datadog in New York, New York, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 16:00:13 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7815725/?gh_jid=7815725</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7588634</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 15:50:32 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7588634</guid>
-    </item>
-    <item>
-      <title>Data Analyst I, Analytics Reporting (24 months fixed-term) at Khan Academy</title>
-      <link>https://job-boards.greenhouse.io/khanacademy/jobs/7818434</link>
-      <description>New grad role at Khan Academy in Mountain View, CA / Remote (Continental US + Hawaii + Canada Only). Category: Data Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 15:13:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/khanacademy/jobs/7818434</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 14:33:42 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 14:29:21 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
     </item>
   </channel>
 </rss>
