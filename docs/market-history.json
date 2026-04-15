@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-15T15:47:10.280569",
+    "last_updated": "2026-04-15T16:49:22.303415",
     "total_snapshots": 42,
     "date_range": {
       "start": "2026-03-05",
@@ -2265,12 +2265,12 @@
     },
     {
       "date": "2026-04-15",
-      "total_jobs": 965,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "unicorn": 479,
-        "other": 357,
-        "faang_plus": 129
+        "other": 364,
+        "unicorn": 480,
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -2283,7 +2283,7 @@
         },
         {
           "company": "ClickHouse",
-          "jobs": 26
+          "jobs": 27
         },
         {
           "company": "NTT DATA",
@@ -2310,13 +2310,13 @@
           "jobs": 18
         },
         {
-          "company": "Scale AI",
-          "jobs": 17
+          "company": "Northrop Grumman",
+          "jobs": 18
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-04-15T15:47:10.280139"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.59,
+      "timestamp": "2026-04-15T16:49:22.302135"
     }
   ]
 }
