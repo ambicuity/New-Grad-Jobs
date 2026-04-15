@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-15T17:58:14.655570",
+    "last_updated": "2026-04-15T19:24:53.751485",
     "total_snapshots": 42,
     "date_range": {
       "start": "2026-03-05",
@@ -2265,12 +2265,12 @@
     },
     {
       "date": "2026-04-15",
-      "total_jobs": 996,
+      "total_jobs": 1000,
       "categories": {},
       "tiers": {
-        "unicorn": 482,
-        "other": 384,
-        "faang_plus": 130
+        "other": 391,
+        "unicorn": 481,
+        "faang_plus": 128
       },
       "top_companies": [
         {
@@ -2279,15 +2279,15 @@
         },
         {
           "company": "Waymo",
-          "jobs": 54
-        },
-        {
-          "company": "Accenture",
-          "jobs": 30
+          "jobs": 53
         },
         {
           "company": "ClickHouse",
           "jobs": 27
+        },
+        {
+          "company": "Accenture",
+          "jobs": 26
         },
         {
           "company": "NTT DATA",
@@ -2306,17 +2306,17 @@
           "jobs": 20
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Dropbox",
           "jobs": 19
         },
         {
-          "company": "Dropbox",
-          "jobs": 19
+          "company": "Northrop Grumman",
+          "jobs": 18
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.88,
-      "timestamp": "2026-04-15T17:58:14.655062"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.81,
+      "timestamp": "2026-04-15T19:24:53.751024"
     }
   ]
 }

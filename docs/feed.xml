@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 17:58:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 19:24:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Growth at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7773373</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
+      <pubDate>Wed, 15 Apr 2026 18:56:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7773373</guid>
+    </item>
     <item>
       <title>Network Security Engineer  at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7435894</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
       <pubDate>Wed, 15 Apr 2026 00:02:47 +0000</pubDate>
       <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7638789</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=4cbe8cf3d7fa9d85</link>
-      <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4cbe8cf3d7fa9d85</guid>
     </item>
   </channel>
 </rss>
