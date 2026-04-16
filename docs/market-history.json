@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-16T09:02:22.284594",
+    "last_updated": "2026-04-16T10:27:42.446219",
     "total_snapshots": 43,
     "date_range": {
       "start": "2026-03-05",
@@ -2320,12 +2320,12 @@
     },
     {
       "date": "2026-04-16",
-      "total_jobs": 974,
+      "total_jobs": 989,
       "categories": {},
       "tiers": {
+        "other": 378,
         "unicorn": 484,
-        "faang_plus": 123,
-        "other": 367
+        "faang_plus": 127
       },
       "top_companies": [
         {
@@ -2342,7 +2342,7 @@
         },
         {
           "company": "NTT DATA",
-          "jobs": 23
+          "jobs": 22
         },
         {
           "company": "Stripe",
@@ -2361,17 +2361,17 @@
           "jobs": 19
         },
         {
-          "company": "Boeing",
+          "company": "Abnormal Security",
           "jobs": 17
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Boeing",
           "jobs": 17
         }
       ],
-      "unique_companies": 199,
-      "avg_jobs_per_company": 4.89,
-      "timestamp": "2026-04-16T09:02:22.284042"
+      "unique_companies": 206,
+      "avg_jobs_per_company": 4.8,
+      "timestamp": "2026-04-16T10:27:42.445676"
     }
   ]
 }
