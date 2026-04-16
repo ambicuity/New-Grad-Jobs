@@ -217,6 +217,22 @@ class TestCategoryAndTierCounting:
         categories = data['snapshots'][0]['categories']
         assert categories == {}
 
+    def test_ignores_malformed_category_shapes(self):
+        """Malformed category payloads are ignored instead of crashing category counting."""
+        jobs = [
+            {'company': 'Google', 'category': {'id': None}, 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Meta', 'category': [], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Stripe', 'categories': 'swe', 'company_tier': {'tier': 'unicorn'}},
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {}
+
     def test_missing_tier_defaults_to_other(self):
         """Jobs without tier default to 'other'."""
         jobs = [

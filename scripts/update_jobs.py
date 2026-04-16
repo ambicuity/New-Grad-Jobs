@@ -2144,17 +2144,25 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
 
+    def iter_category_ids(job: Dict[str, Any]):
+        category_id = get_nested_value(job, 'category.id')
+        if isinstance(category_id, str) and category_id:
+            yield category_id
+            return
+
+        legacy_categories = job.get('categories', [])
+        if not isinstance(legacy_categories, list):
+            return
+
+        for category in legacy_categories:
+            if isinstance(category, str) and category:
+                yield category
 
     # Count jobs by category
     category_counts = Counter()
     for job in jobs:
-        category_id = get_nested_value(job, 'category.id')
-        if category_id:
+        for category_id in iter_category_ids(job):
             category_counts[category_id] += 1
-            continue
-
-        for category in job.get('categories', []):
-            category_counts[category] += 1
 
     # Count jobs by tier
     tier_counts = Counter()
