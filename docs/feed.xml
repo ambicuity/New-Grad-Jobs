@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 22:53:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 23:34:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>iOS Software Engineer, Host Pricing at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7822751?gh_jid=7822751</link>
+      <description>New grad role at Airbnb in Remote, USA. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 23:25:16 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7822751?gh_jid=7822751</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7657732</link>
+      <description>New grad role at Stripe in San Francisco, New York City. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Apr 2026 23:12:41 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7657732</guid>
+    </item>
     <item>
       <title>Software Engineer (L2) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7188174</link>
@@ -342,20 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 16:58:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8443737002?gh_jid=8443737002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/8124953002</link>
-      <description>New grad role at Airtable in San Francisco, CA; Austin, TX; New York, NY. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 16:40:35 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8124953002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Embedded Software (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8436708002?gh_jid=8436708002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 16:35:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8436708002?gh_jid=8436708002</guid>
     </item>
   </channel>
 </rss>
