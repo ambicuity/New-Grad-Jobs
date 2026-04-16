@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 21:59:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 22:53:07 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7188174</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 22:10:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7188174</guid>
+    </item>
+    <item>
+      <title>Wireless Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8511186002?gh_jid=8511186002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:58:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8511186002?gh_jid=8511186002</guid>
+    </item>
+    <item>
+      <title>Software Engineer L2 at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7812279</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:57:08 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7812279</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 16 Apr 2026 21:56:23 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
+    </item>
     <item>
       <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7808471</link>
@@ -121,17 +149,17 @@
     </item>
     <item>
       <title>Software Engineer, Agent at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5704320004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704320004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agent at Vercel</title>
       <link>https://job-boards.greenhouse.io/vercel/jobs/5704321004</link>
       <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704321004</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agent at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5704320004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704320004</guid>
     </item>
     <item>
       <title>Software Engineer, AI Gateway at Vercel</title>
@@ -149,17 +177,17 @@
     </item>
     <item>
       <title>Software Engineer, Backend at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5430088004</link>
-      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5430088004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Backend at Vercel</title>
       <link>https://job-boards.greenhouse.io/vercel/jobs/5431123004</link>
       <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5431123004</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5430088004</link>
+      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 17:58:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5430088004</guid>
     </item>
     <item>
       <title>Software Engineer, CDN at Vercel</title>
@@ -328,34 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 16:35:21 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8436708002?gh_jid=8436708002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Support Experience at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7813942</link>
-      <description>New grad role at Stripe in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 16:32:19 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7813942</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer, Privy at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
-      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
     </item>
   </channel>
 </rss>
