@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 03:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 05:44:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Core Technology at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
+      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 05:31:19 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Driver Understanding and Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7455853</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 16 Apr 2026 04:30:22 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7455853</guid>
+    </item>
+    <item>
+      <title>Campus Talent Specialist at Lucid</title>
+      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</link>
+      <description>New grad role at Lucid in Salt Lake City, UT. Category: Other</description>
+      <pubDate>Thu, 16 Apr 2026 04:01:59 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</guid>
+    </item>
     <item>
       <title>Mobile Software Engineer, Cross Platform at Chime</title>
       <link>https://boards.greenhouse.io/chime/jobs/8433838002?gh_jid=8433838002</link>
@@ -99,11 +120,18 @@
       <guid isPermaLink="true">https://jobs.lever.co/palantir/4bfef5e0-6689-4db8-9ffe-ab6df6836845</guid>
     </item>
     <item>
-      <title>Associate Solutions Engineer - Drilling at CORVA</title>
-      <link>https://www.indeed.com/viewjob?jk=f20eefe38e9a7621</link>
-      <description>New grad role at CORVA in Houston, TX, US. Category: Software Engineering</description>
+      <title>Jr. Software Developer at BlueMarvel</title>
+      <link>https://in.indeed.com/viewjob?jk=c3ff35e9ce84de2a</link>
+      <description>New grad role at BlueMarvel in KL, IN. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f20eefe38e9a7621</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c3ff35e9ce84de2a</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Esimplicity</title>
+      <link>https://www.indeed.com/viewjob?jk=5d087bf13ce27a44</link>
+      <description>New grad role at Esimplicity in Columbia, MD, US. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5d087bf13ce27a44</guid>
     </item>
     <item>
       <title>Software Engineer at PayPal</title>
@@ -239,6 +267,13 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/AI-Backend-Python-Engineer--Software-Engineer-II----Evergreen-REQ_4954474</guid>
     </item>
     <item>
+      <title>Enterprise Software Test  Engineer II at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test--Engineer-II_R63559-1</link>
+      <description>New grad role at Medtronic in Nanakramguda, Hyderabad, India. Category: Other</description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test--Engineer-II_R63559-1</guid>
+    </item>
+    <item>
       <title>Process Engineer II - NV - Irvine, CA (Onsite) at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Irvine-California-United-States-of-America/Process-Engineer-II---NV---Irvine--CA--Onsite-_R64047-1</link>
       <description>New grad role at Medtronic in Irvine, California, United States of America. Category: Other</description>
@@ -321,41 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-Camarillo. Category: Software Engineering</description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Camarillo/Embedded-Software-Engineer_R10229645</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer (Secret)  - Level 3 (Chandler) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Embedded-Software-Engineer--Secret-----Level-3--Chandler-_R10229637</link>
-      <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Embedded-Software-Engineer--Secret-----Level-3--Chandler-_R10229637</guid>
-    </item>
-    <item>
-      <title>Orbital Analyst Level 3/4 - Systems Engineer - Colorado Springs at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Orbital-Analyst-Level-3-4---Systems-Engineer---Colorado-Springs_R10229624</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Colorado Springs. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Orbital-Analyst-Level-3-4---Systems-Engineer---Colorado-Springs_R10229624</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer - level 5 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/DevOps-Engineer---level-5_R10227585</link>
-      <description>New grad role at Northrop Grumman in United States-Virginia-Dulles. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/DevOps-Engineer---level-5_R10227585</guid>
-    </item>
-    <item>
-      <title>2026 Associate Mission Assurance Engineer / 2026 Mission Assurance Engineer - Roy UT at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/XMLNAME-2026-Associate-Mission-Assurance-Engineer---2026-Mission-Assurance-Engineer---Roy-UT_R10229593-1</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Other</description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/XMLNAME-2026-Associate-Mission-Assurance-Engineer---2026-Mission-Assurance-Engineer---Roy-UT_R10229593-1</guid>
-    </item>
-    <item>
-      <title>Associate Supply Chain Specialist (Supply Chain Management) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Associate-Supply-Chain-Specialist--Supply-Chain-Management-_JR2026506005-1</link>
-      <description>New grad role at Boeing in USA - Seattle, WA. Category: Other</description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Associate-Supply-Chain-Specialist--Supply-Chain-Management-_JR2026506005-1</guid>
     </item>
   </channel>
 </rss>
