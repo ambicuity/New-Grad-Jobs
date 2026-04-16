@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 21:03:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 21:59:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7808471</link>
+      <description>New grad role at Stripe in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:50:52 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7808471</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Platform at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:38:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4646888005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Apr 2026 21:24:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4646888005</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4684073005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Apr 2026 21:23:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Product Security at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4643029005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Apr 2026 21:21:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4643029005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data at Mercari</title>
+      <link>https://job-boards.greenhouse.io/mercari/jobs/8476385002</link>
+      <description>New grad role at Mercari in Hybrid-Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:16:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercari/jobs/8476385002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Mobile at Mercari</title>
+      <link>https://job-boards.greenhouse.io/mercari/jobs/8477407002</link>
+      <description>New grad role at Mercari in Hybrid-Bay Area, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Apr 2026 21:16:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercari/jobs/8477407002</guid>
+    </item>
     <item>
       <title>Applied AI Engineer II  at Tanium</title>
       <link>https://job-boards.greenhouse.io/tanium/jobs/7800318</link>
@@ -307,55 +356,6 @@
       <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Supportability at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7384709</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7384709</guid>
-    </item>
-    <item>
-      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
-      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7776179</link>
-      <description>New grad role at Stripe in SF, New York, Seattle, Dublin. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7776179</guid>
-    </item>
-    <item>
-      <title>Security Engineer, New Grad  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
-      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
-      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Apr 2026 15:05:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
     </item>
   </channel>
 </rss>
