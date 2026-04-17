@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-17T05:59:10.382387",
+    "last_updated": "2026-04-17T15:21:59.311202",
     "total_snapshots": 44,
     "date_range": {
       "start": "2026-03-05",
@@ -2375,21 +2375,21 @@
     },
     {
       "date": "2026-04-17",
-      "total_jobs": 958,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "unicorn": 480,
-        "other": 336,
-        "faang_plus": 142
+        "other": 354,
+        "unicorn": 478,
+        "faang_plus": 145
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 175
+          "jobs": 174
         },
         {
           "company": "Waymo",
-          "jobs": 53
+          "jobs": 52
         },
         {
           "company": "ClickHouse",
@@ -2397,15 +2397,19 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 22
+          "jobs": 24
+        },
+        {
+          "company": "Boeing",
+          "jobs": 23
+        },
+        {
+          "company": "Banner Health",
+          "jobs": 21
         },
         {
           "company": "Stripe",
           "jobs": 21
-        },
-        {
-          "company": "Boeing",
-          "jobs": 20
         },
         {
           "company": "Affirm",
@@ -2418,15 +2422,11 @@
         {
           "company": "Lyft",
           "jobs": 18
-        },
-        {
-          "company": "Mastercard",
-          "jobs": 17
         }
       ],
-      "unique_companies": 196,
-      "avg_jobs_per_company": 4.89,
-      "timestamp": "2026-04-17T05:59:10.381886"
+      "unique_companies": 193,
+      "avg_jobs_per_company": 5.06,
+      "timestamp": "2026-04-17T15:21:59.310690"
     }
   ]
 }
