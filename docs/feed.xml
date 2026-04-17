@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 22:58:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 23:45:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Developer, Backend at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/5432053?t=gh_src=&amp;gh_jid=5432053</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Apr 2026 23:36:34 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/5432053?t=gh_src=&amp;gh_jid=5432053</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II (Fraud)  at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7695818003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Apr 2026 23:21:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
+    </item>
     <item>
       <title>Software Engineer, Product Backend (8+ YOE) at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8397618002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA. Category: Software Engineering</description>
       <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7459622</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7259110</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
     </item>
   </channel>
 </rss>
