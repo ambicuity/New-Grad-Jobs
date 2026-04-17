@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-17T00:12:41.663056",
+    "last_updated": "2026-04-17T03:50:06.133678",
     "total_snapshots": 44,
     "date_range": {
       "start": "2026-03-05",
@@ -2375,17 +2375,17 @@
     },
     {
       "date": "2026-04-17",
-      "total_jobs": 986,
+      "total_jobs": 982,
       "categories": {},
       "tiers": {
-        "faang_plus": 149,
-        "other": 357,
-        "unicorn": 480
+        "unicorn": 481,
+        "other": 360,
+        "faang_plus": 141
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 174
+          "jobs": 175
         },
         {
           "company": "Waymo",
@@ -2396,20 +2396,16 @@
           "jobs": 27
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 24
-        },
-        {
           "company": "NTT DATA",
           "jobs": 23
         },
         {
-          "company": "Stripe",
-          "jobs": 21
+          "company": "Northrop Grumman",
+          "jobs": 22
         },
         {
-          "company": "Boeing",
-          "jobs": 19
+          "company": "Stripe",
+          "jobs": 21
         },
         {
           "company": "Affirm",
@@ -2420,13 +2416,17 @@
           "jobs": 19
         },
         {
+          "company": "Boeing",
+          "jobs": 18
+        },
+        {
           "company": "Lyft",
           "jobs": 18
         }
       ],
-      "unique_companies": 197,
-      "avg_jobs_per_company": 5.01,
-      "timestamp": "2026-04-17T00:12:41.662400"
+      "unique_companies": 200,
+      "avg_jobs_per_company": 4.91,
+      "timestamp": "2026-04-17T03:50:06.132891"
     }
   ]
 }
