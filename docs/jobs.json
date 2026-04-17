@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-04-17T18:11:30.387404",
-    "total_jobs": 968,
+    "generated_at": "2026-04-17T19:25:26.905794",
+    "total_jobs": 993,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 545
+        "count": 551
       },
       {
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16",
-        "count": 92
+        "count": 94
       },
       {
         "id": "data_engineering",
@@ -31,23 +31,1401 @@
         "id": "quant_finance",
         "name": "Quantitative Finance",
         "emoji": "\ud83d\udcc8",
-        "count": 3
+        "count": 2
       },
       {
         "id": "hardware",
         "name": "Hardware Engineering",
         "emoji": "\ud83d\udd27",
-        "count": 9
+        "count": 12
       },
       {
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc",
-        "count": 152
+        "count": 167
       }
     ]
   },
   "jobs": [
+    {
+      "id": "waymo-machine-learning-engineer-(infra),-driver-understanding-and-evaluation-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer (Infra), Driver Understanding and Evaluation",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7819946",
+      "posted_at": "2026-04-17T19:03:14",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "scale-ai-devops-engineer,-infrastructure-&-security-washington,-dc",
+      "company": "Scale AI",
+      "title": "DevOps Engineer, Infrastructure & Security",
+      "location": "Washington, DC",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4674863005",
+      "posted_at": "2026-04-17T18:21:22",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-applied-research-scientist,-3d-object-detection--(phd-new-grad)-mountain-view,-ca-usa;--san-fr",
+      "company": "Waymo",
+      "title": "Applied Research Scientist, 3D Object Detection  (PhD New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7467839",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-applied-research-scientist,-perception-llm/vlm-(phd,-new-grad)-mountain-view,-ca-usa;--san-fra",
+      "company": "Waymo",
+      "title": "Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7488508",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-data-scientist--mountain-view,-california,-usa",
+      "company": "Waymo",
+      "title": "Data Scientist ",
+      "location": "Mountain View, California, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6608598",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-3d-object-detection--(phd-new-grad)-mountain-view,-ca-usa;--san-fra",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, 3D Object Detection  (PhD New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7539786",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-data-&-systems--mountain-view,-california,-united-states;-san-franc",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Data & Systems ",
+      "location": "Mountain View, California, United States; San Francisco, California, United States",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446301",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-driver-understanding-and-evaluation-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Driver Understanding and Evaluation",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer---mapping-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer - Mapping",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer---mapping-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer - Mapping",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-mapping-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Mapping",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7090492",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-ml-flywheel-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, ML Flywheel",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7426598",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-model-optimization-mountain-view,-california,-united-states;-san-fr",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Model Optimization",
+      "location": "Mountain View, California, United States; San Francisco, California, United States",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446322",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-perception-modeling-mountain-view,-ca,-usa;-san-francisco,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Perception Modeling",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446279",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-prediction-&-planning-mountain-view,-ca,-usa;-san-francisco,-ca,-us",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Prediction & Planning",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6506689",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-runtime-&-optimization-mountain-view,-california,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Runtime & Optimization",
+      "location": "Mountain View, California, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6506008",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-simulation-realism-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Simulation Realism",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6499165",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-machine-learning-engineer,-simulation-realism--mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, Simulation Realism ",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6688617",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-ml-engineer,-foundation-model-infrastructure-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "ML Engineer, Foundation Model Infrastructure",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7536801",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-network-security-engineer--chicago-,il,-usa",
+      "company": "Waymo",
+      "title": "Network Security Engineer ",
+      "location": "Chicago ,IL, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7435894",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-onboard-developer-platform-software-engineer-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Onboard Developer Platform Software Engineer",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461052",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-onboard-frameworks-software-engineer-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Onboard Frameworks Software Engineer",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7412386",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-onboard-infrastructure-software-engineer-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Onboard Infrastructure Software Engineer",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461103",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-post-silicon-validation-software-engineer-bangalore,-karnataka,-india",
+      "company": "Waymo",
+      "title": "Post-Silicon Validation Software Engineer",
+      "location": "Bangalore, Karnataka, India",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7590331",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer-backend---simulation-mountain-view",
+      "company": "Waymo",
+      "title": "Software Engineer Backend - Simulation",
+      "location": "Mountain View",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7307289",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-bulk/interactive-inference-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Bulk/Interactive Inference",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7466529",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-embedded-systems-/-robotics--mountain-view,-ca,-us",
+      "company": "Waymo",
+      "title": "Software Engineer, Embedded Systems / Robotics ",
+      "location": "Mountain View, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429873",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-gpu-mountain-view,-ca,-usa;-new-york,-ny,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, GPU",
+      "location": "Mountain View, CA, USA; New York, NY, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7554830",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-labeling-infrastructure-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Labeling Infrastructure",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7416895",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-large-model-evaluation-mountain-view,-california,-usa;-san-francisco,-calif",
+      "company": "Waymo",
+      "title": "Software Engineer, Large Model Evaluation",
+      "location": "Mountain View, California, USA; San Francisco, California, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7487849",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-ml-tools-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, ML Tools",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7426718",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-model-lifecycle-kirkland,-washington,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Model Lifecycle",
+      "location": "Kirkland, Washington, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7609435",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-multiverse-san-francisco,-ca,-usa;-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Multiverse",
+      "location": "San Francisco, CA, USA; Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7531397",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-onboard-reliability-infra-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Onboard Reliability Infra",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461072",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-perception-evaluation-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Perception Evaluation",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7256244",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-perception-evaluation-and-test-automation-mountain-view,-ca,-usa;-san-franc",
+      "company": "Waymo",
+      "title": "Software Engineer, Perception Evaluation and Test Automation",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7449712",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-perception-optimization-mountain-view,-california,-united-states;-san-franc",
+      "company": "Waymo",
+      "title": "Software Engineer, Perception Optimization",
+      "location": "Mountain View, California, United States; San Francisco, California, United States",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7450565",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-planner-mountain-view,-ca",
+      "company": "Waymo",
+      "title": "Software Engineer, Planner",
+      "location": "Mountain View, CA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7459622",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-planner-reasoning-mountain-view,-ca,-usa;-san-francisco,-ca,-usa",
+      "company": "Waymo",
+      "title": "Software Engineer, Planner Reasoning",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7259110",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-planner-vehicle-dynamics-mountain-view,-california",
+      "company": "Waymo",
+      "title": "Software Engineer, Planner Vehicle Dynamics",
+      "location": "Mountain View, California",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7141380",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-privacy-mountain-view,-ca,-usa-",
+      "company": "Waymo",
+      "title": "Software Engineer, Privacy",
+      "location": "Mountain View, CA, USA ",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7547529",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-quantitative-evaluations-mountain-view,-ca,-usa;-san-francisco,-ca,-usa-",
+      "company": "Waymo",
+      "title": "Software Engineer, Quantitative Evaluations",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA ",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7466534",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-sensor/imaging-mountain-view,-ca,-us;-san-francisco,-ca,-us",
+      "company": "Waymo",
+      "title": "Software Engineer, Sensor/Imaging",
+      "location": "Mountain View, CA, US; San Francisco, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7587455",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-simulator-evaluation-mountain-view,-california,-united-states;-san-francisc",
+      "company": "Waymo",
+      "title": "Software Engineer, Simulator Evaluation",
+      "location": "Mountain View, California, United States; San Francisco, California, United States",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6562547",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-statistical-evaluation-and-sampling-mountain-view,-ca,-usa;-san-francisco,-",
+      "company": "Waymo",
+      "title": "Software Engineer, Statistical Evaluation and Sampling",
+      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7543520",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-strategic-swe-reserve-mountain-view,--california,-usa;-san-francisco,-calif",
+      "company": "Waymo",
+      "title": "Software Engineer, Strategic SWE Reserve",
+      "location": "Mountain View,  California, USA; San Francisco, California, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7622998",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-test-automation-infrastructure-san-francisco,-ca,-us;-mountain-view,-ca,-us",
+      "company": "Waymo",
+      "title": "Software Engineer, Test Automation Infrastructure",
+      "location": "San Francisco, CA, US; Mountain View, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7532414",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-software-engineer,-trip-platform-mountain-view,-ca,-us",
+      "company": "Waymo",
+      "title": "Software Engineer, Trip Platform",
+      "location": "Mountain View, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7433503",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-systems-engineer,-behavioral-requirements-mountain-view,-ca,-us;-san-francisco,-ca,us",
+      "company": "Waymo",
+      "title": "Systems Engineer, Behavioral Requirements",
+      "location": "Mountain View, CA, US; San Francisco, CA,US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7545185",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-systems-engineer,-motion-control--mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Systems Engineer, Motion Control ",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7586057",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-systems-engineer,-perception-mountain-view,-ca,-us;-san-francisco,-ca,-us",
+      "company": "Waymo",
+      "title": "Systems Engineer, Perception",
+      "location": "Mountain View, CA, US; San Francisco, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7367785",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-systems-engineer,-power-systems-(low-voltage)-mountain-view,-ca,-usa",
+      "company": "Waymo",
+      "title": "Systems Engineer, Power Systems (Low Voltage)",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7572411",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "waymo-systems-engineer,-sensing--mountain-view,-ca,-us;san-francisco,-ca,-us",
+      "company": "Waymo",
+      "title": "Systems Engineer, Sensing ",
+      "location": "Mountain View, CA, US;San Francisco, CA, US",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=6511655",
+      "posted_at": "2026-04-17T18:16:10",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "stripe-data-scientist-seattle,-wa",
       "company": "Stripe",
@@ -198,32 +1576,6 @@
         "tier": "other",
         "emoji": "",
         "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-strategic-swe-reserve-mountain-view,--california,-usa;-san-francisco,-calif",
-      "company": "Waymo",
-      "title": "Software Engineer, Strategic SWE Reserve",
-      "location": "Mountain View,  California, USA; San Francisco, California, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7622998",
-      "posted_at": "2026-04-17T15:33:47",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
         "sectors": []
       },
       "flags": {
@@ -609,11 +1961,11 @@
       "is_closed": false
     },
     {
-      "id": "robinhood-security-engineer,-detection-&-response-menlo-park,-ca",
+      "id": "robinhood-security-engineer,-detection-&-response-toronto,-canada",
       "company": "Robinhood",
       "title": "Security Engineer, Detection & Response",
-      "location": "Menlo Park, CA",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&gh_jid=7697725",
+      "location": "Toronto, Canada",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&gh_jid=7697727",
       "posted_at": "2026-04-17T07:07:24",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -637,11 +1989,11 @@
       "is_closed": false
     },
     {
-      "id": "robinhood-security-engineer,-detection-&-response-toronto,-canada",
+      "id": "robinhood-security-engineer,-detection-&-response-menlo-park,-ca",
       "company": "Robinhood",
       "title": "Security Engineer, Detection & Response",
-      "location": "Toronto, Canada",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&gh_jid=7697727",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&gh_jid=7697725",
       "posted_at": "2026-04-17T07:07:24",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -981,23 +2333,49 @@
       "is_closed": false
     },
     {
-      "id": "waymo-network-security-engineer--chicago-,il,-usa",
-      "company": "Waymo",
-      "title": "Network Security Engineer ",
-      "location": "Chicago ,IL, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7435894",
-      "posted_at": "2026-04-17T00:29:40",
+      "id": "kruger-inc.-engineering-new-graduate-(improvement-engineer)-corner-brook,-nl,-ca",
+      "company": "Kruger Inc.",
+      "title": "ENGINEERING NEW GRADUATE (IMPROVEMENT ENGINEER)",
+      "location": "Corner Brook, NL, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=c16b04f1c9296fab",
+      "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
-      "source": "Greenhouse",
+      "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sunnybrook-health-sciences-centre-research-analyst-(sri)---evaluative-clinical-sciences---regular-pa",
+      "company": "Sunnybrook Health Sciences Centre",
+      "title": "Research Analyst (SRI) - Evaluative Clinical Sciences - Regular Part-time 2026-17121",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=9651615e13d9ada4",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
         "sectors": []
       },
       "flags": {
@@ -1059,6 +2437,58 @@
       "is_closed": false
     },
     {
+      "id": "talent-future-services-network-engineer-dl,-in",
+      "company": "Talent Future Services",
+      "title": "Network Engineer",
+      "location": "DL, IN",
+      "url": "https://in.indeed.com/viewjob?jk=7f811cee022d4448",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "jpmorganchase-software-engineer-ii---devops-ka,-in",
+      "company": "JPMorganChase",
+      "title": "Software Engineer II - Devops",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=eed0fde8c85a212c",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "forcepoint-software-engineer-ii-mh,-in",
       "company": "Forcepoint",
       "title": "Software Engineer II",
@@ -1085,63 +2515,11 @@
       "is_closed": false
     },
     {
-      "id": "sectigo-qa-engineer-(early-career)-ottawa,-on,-ca",
-      "company": "Sectigo",
-      "title": "QA Engineer (Early career)",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=c3e92a4f6a31cd32",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "sectigo-qa-engineer-(early-career)-ottawa,-on,-ca",
-      "company": "Sectigo",
-      "title": "QA Engineer (Early career)",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=04928b7cd0777162",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "dynacom-technologies-d\u00e9veloppeur(euse)-full-stack-junior--junior-full-stack-developer-laval,-qc,-ca",
-      "company": "Dynacom Technologies",
-      "title": "D\u00e9veloppeur(euse) Full Stack junior- Junior Full-stack Developer",
-      "location": "Laval, QC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=5e894c75f6cc70fa",
+      "id": "hmh-software-engineer-mh,-in",
+      "company": "HMH",
+      "title": "Software Engineer",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=04b6b2059ec83317",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -1763,11 +3141,115 @@
       "is_closed": false
     },
     {
-      "id": "accenture-custom-software-engineer-ka,-in",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
+      "id": "deutsche-bank-apprentice-hiring-for-2026--2027-ka,-in",
+      "company": "Deutsche Bank",
+      "title": "Apprentice Hiring for 2026- 2027",
       "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=ae561f4030a44d69",
+      "url": "https://in.indeed.com/viewjob?jk=915a84835e721481",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "nova-scotia-health-authority-opportunity-for-nurse-practitioner-education-incentive-(npei)---2026-ca",
+      "company": "Nova Scotia Health Authority",
+      "title": "Opportunity for Nurse Practitioner Education Incentive (NPEI) - 2026",
+      "location": "Caledonia, NS, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=a4d6488de33c81c4",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sectigo-qa-engineer-(early-career)-ottawa,-on,-ca",
+      "company": "Sectigo",
+      "title": "QA Engineer (Early career)",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=c3e92a4f6a31cd32",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sectigo-qa-engineer-(early-career)-ottawa,-on,-ca",
+      "company": "Sectigo",
+      "title": "QA Engineer (Early career)",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=04928b7cd0777162",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "dynacom-technologies-d\u00e9veloppeur(euse)-full-stack-junior--junior-full-stack-developer-laval,-qc,-ca",
+      "company": "Dynacom Technologies",
+      "title": "D\u00e9veloppeur(euse) Full Stack junior- Junior Full-stack Developer",
+      "location": "Laval, QC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=5e894c75f6cc70fa",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -1789,18 +3271,96 @@
       "is_closed": false
     },
     {
-      "id": "deutsche-bank-apprentice-hiring-for-2026--2027-ka,-in",
-      "company": "Deutsche Bank",
-      "title": "Apprentice Hiring for 2026- 2027",
-      "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=915a84835e721481",
+      "id": "acuity-insurance-network-engineer-ii-sheboygan,-wi,-us",
+      "company": "Acuity Insurance",
+      "title": "Network Engineer II",
+      "location": "Sheboygan, WI, US",
+      "url": "https://www.indeed.com/viewjob?jk=31ac168361ab7960",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "radiance-technologies-inc.-junior-software-engineer-beavercreek,-oh,-us",
+      "company": "Radiance Technologies Inc.",
+      "title": "Junior Software Engineer",
+      "location": "Beavercreek, OH, US",
+      "url": "https://www.indeed.com/viewjob?jk=1db6a89498e394c9",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "radiance-technologies-inc.-junior-software-engineer-beavercreek,-oh,-us",
+      "company": "Radiance Technologies Inc.",
+      "title": "Junior Software Engineer",
+      "location": "Beavercreek, OH, US",
+      "url": "https://www.indeed.com/viewjob?jk=2031db739d211120",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ncr-atleos-ps-software-engineer-iv,-financial-services-atlanta,-ga,-us",
+      "company": "NCR Atleos",
+      "title": "PS Software Engineer IV, Financial Services",
+      "location": "Atlanta, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=887b61a08c0fc90f",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -1893,6 +3453,110 @@
       "is_closed": false
     },
     {
+      "id": "wsp-early-career-environmental-scientist-houston,-tx,-us",
+      "company": "WSP",
+      "title": "Early Career Environmental Scientist",
+      "location": "Houston, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=b681823af0e3a015",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "celestica-associate-engineer,-mechanical-design-maple-grove,-mn,-us",
+      "company": "Celestica",
+      "title": "Associate Engineer, Mechanical Design",
+      "location": "Maple Grove, MN, US",
+      "url": "https://www.indeed.com/viewjob?jk=530cfc7ac05ce9ae",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "omaha-public-power-district-engineer-ii-omaha,-ne,-us",
+      "company": "Omaha Public Power District",
+      "title": "Engineer II",
+      "location": "Omaha, NE, US",
+      "url": "https://www.indeed.com/viewjob?jk=80f28aabe7b65972",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "bohannan-huston-inc.-entry-level-civil-engineer-albuquerque,-nm,-us",
+      "company": "Bohannan Huston Inc.",
+      "title": "Entry Level Civil Engineer",
+      "location": "Albuquerque, NM, US",
+      "url": "https://www.indeed.com/viewjob?jk=0833f22a8c7ac52e",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "flexjet,-llc.-software-engineer-i-fl,-us",
       "company": "Flexjet, LLC.",
       "title": "Software Engineer I",
@@ -1971,37 +3635,11 @@
       "is_closed": false
     },
     {
-      "id": "textron-systems-2026-quality-engineer-i---slidell,-la-slidell,-la,-us",
-      "company": "Textron Systems",
-      "title": "2026 Quality Engineer I - Slidell, LA",
-      "location": "Slidell, LA, US",
-      "url": "https://www.indeed.com/viewjob?jk=7497780ce08620d6",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mitre-entry-level---associate-software-developer-bedford,-ma,-us",
-      "company": "MITRE",
-      "title": "Entry Level - Associate Software Developer",
-      "location": "Bedford, MA, US",
-      "url": "https://www.indeed.com/viewjob?jk=d2110f6550a1dd72",
+      "id": "infor-software-engineer-(-golang-with-react-)-ts,-in",
+      "company": "Infor",
+      "title": "Software Engineer ( Golang with React )",
+      "location": "TS, IN",
+      "url": "https://in.indeed.com/viewjob?jk=543edfb7a6c784ce",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -2009,216 +3647,6 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "leidos-implementations-network-engineer-ii-scott-afb,-il,-us",
-      "company": "Leidos",
-      "title": "Implementations Network Engineer II",
-      "location": "Scott AFB, IL, US",
-      "url": "https://www.indeed.com/viewjob?jk=ae31ce5c7d548007",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "integer-engineer-i---controls/integration-trenton,-ga,-us",
-      "company": "Integer",
-      "title": "Engineer I - Controls/Integration",
-      "location": "Trenton, GA, US",
-      "url": "https://www.indeed.com/viewjob?jk=8a062783acb829e1",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "enterprise-mobility-entegral-software-engineer--java-and-.net-madison,-wi,-us",
-      "company": "Enterprise Mobility",
-      "title": "Entegral Software Engineer- Java and .Net",
-      "location": "Madison, WI, US",
-      "url": "https://www.indeed.com/viewjob?jk=01607d1179525597",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "nan-controls-engineer-co-op-(summer-2026)-harrison,-oh,-us",
-      "company": null,
-      "title": "Controls Engineer Co-op (Summer 2026)",
-      "location": "Harrison, OH, US",
-      "url": "https://www.indeed.com/viewjob?jk=a6cb159f25c9b1dd",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "apple-applied-ml,-software-engineer---sensing-&-connectivity-cupertino,-ca,-us",
-      "company": "Apple",
-      "title": "Applied ML, Software Engineer - Sensing & Connectivity",
-      "location": "Cupertino, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=4f33ebce59551cad",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "apple-applied-ml,-software-engineer---sensing-&-connectivity-cupertino,-ca,-us",
-      "company": "Apple",
-      "title": "Applied ML, Software Engineer - Sensing & Connectivity",
-      "location": "Cupertino, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=7cfb1debf1f9e7ec",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "fairleigh-dickinson-university-coordinator-of-disability-support-services-(metropolitan-campus)-tean",
-      "company": "Fairleigh Dickinson University",
-      "title": "Coordinator of Disability Support Services (Metropolitan Campus)",
-      "location": "Teaneck, NJ, US",
-      "url": "https://www.indeed.com/viewjob?jk=3c6db9d406756102",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "northwestern-mutual-financial-advisor-trainee-reno,-nv,-us",
-      "company": "Northwestern Mutual",
-      "title": "Financial Advisor Trainee",
-      "location": "Reno, NV, US",
-      "url": "https://www.indeed.com/viewjob?jk=7562143d8d683b18",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -2415,18 +3843,18 @@
       "is_closed": false
     },
     {
-      "id": "aqr-associate,-quantitative-front-office-engineer-(aqr-capital-management,-llc,-greenwich,-ct)-green",
-      "company": "AQR",
-      "title": "Associate, Quantitative Front Office Engineer (AQR Capital Management, LLC, Greenwich, CT)",
-      "location": "Greenwich, CT, US",
-      "url": "https://www.indeed.com/viewjob?jk=adef0fad9b9aecd1",
+      "id": "enterprise-mobility-entegral-software-engineer--java-and-.net-madison,-wi,-us",
+      "company": "Enterprise Mobility",
+      "title": "Entegral Software Engineer- Java and .Net",
+      "location": "Madison, WI, US",
+      "url": "https://www.indeed.com/viewjob?jk=01607d1179525597",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "quant_finance",
-        "name": "Quantitative Finance",
-        "emoji": "\ud83d\udcc8"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -2441,11 +3869,167 @@
       "is_closed": false
     },
     {
-      "id": "sutton-bank-system-engineer-i-and-helpdesk-administrator-attica,-oh,-us",
-      "company": "Sutton Bank",
-      "title": "System Engineer I and Helpdesk Administrator",
-      "location": "Attica, OH, US",
-      "url": "https://www.indeed.com/viewjob?jk=3f32770057713698",
+      "id": "nan-controls-engineer-co-op-(summer-2026)-harrison,-oh,-us",
+      "company": null,
+      "title": "Controls Engineer Co-op (Summer 2026)",
+      "location": "Harrison, OH, US",
+      "url": "https://www.indeed.com/viewjob?jk=a6cb159f25c9b1dd",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "apple-applied-ml,-software-engineer---sensing-&-connectivity-cupertino,-ca,-us",
+      "company": "Apple",
+      "title": "Applied ML, Software Engineer - Sensing & Connectivity",
+      "location": "Cupertino, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=4f33ebce59551cad",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "apple-applied-ml,-software-engineer---sensing-&-connectivity-cupertino,-ca,-us",
+      "company": "Apple",
+      "title": "Applied ML, Software Engineer - Sensing & Connectivity",
+      "location": "Cupertino, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=7cfb1debf1f9e7ec",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "yes-prep-public-schools-executive-assistant---yes-prep-north-rankin-elementary-(2026-2027)-houston,-",
+      "company": "YES Prep Public Schools",
+      "title": "Executive Assistant - YES Prep North Rankin Elementary (2026-2027)",
+      "location": "Houston, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=39ff02d75ddaa656",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "fairleigh-dickinson-university-coordinator-of-disability-support-services-(metropolitan-campus)-tean",
+      "company": "Fairleigh Dickinson University",
+      "title": "Coordinator of Disability Support Services (Metropolitan Campus)",
+      "location": "Teaneck, NJ, US",
+      "url": "https://www.indeed.com/viewjob?jk=3c6db9d406756102",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "nan-mechanical-engineer-co-op-(summer-2026)-harrison,-oh,-us",
+      "company": null,
+      "title": "Mechanical Engineer Co-op (Summer 2026)",
+      "location": "Harrison, OH, US",
+      "url": "https://www.indeed.com/viewjob?jk=44debf7dd7237e24",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ferguson-sales-trainee-program---june-albuquerque,-nm,-us",
+      "company": "Ferguson",
+      "title": "Sales Trainee Program - June",
+      "location": "Albuquerque, NM, US",
+      "url": "https://www.indeed.com/viewjob?jk=7b364b2233708d54",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -2467,11 +4051,245 @@
       "is_closed": false
     },
     {
-      "id": "sutton-bank-system-engineer-i-attica,-oh,-us",
-      "company": "Sutton Bank",
-      "title": "System Engineer I",
-      "location": "Attica, OH, US",
-      "url": "https://www.indeed.com/viewjob?jk=453ce1ed7882573f",
+      "id": "george-p.-johnson-experience-marketing-2026-ignite-coordinator---procurement-detroit,-mi,-us",
+      "company": "George P. Johnson Experience Marketing",
+      "title": "2026 Ignite Coordinator - Procurement",
+      "location": "Detroit, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=5f3ef4aa47d54235",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "integer-engineer-i-alden,-ny,-us",
+      "company": "Integer",
+      "title": "Engineer I",
+      "location": "Alden, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=1acbf07d3df1a7c1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "entech-engineering,-inc.-mep-engineering-designer,-entry-level-reading,-pa,-us",
+      "company": "Entech Engineering, Inc.",
+      "title": "MEP Engineering Designer, Entry-Level",
+      "location": "Reading, PA, US",
+      "url": "https://www.indeed.com/viewjob?jk=d117a15ab23463d0",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "integer-engineer-i---controls/integration-trenton,-ga,-us",
+      "company": "Integer",
+      "title": "Engineer I - Controls/Integration",
+      "location": "Trenton, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=8a062783acb829e1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "elevi-associates,-llc-cloud-software-engineer-sr-fort-meade,-md,-us",
+      "company": "ELEVI Associates, LLC",
+      "title": "Cloud Software Engineer Sr",
+      "location": "Fort Meade, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=505df42dc0728dd9",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "elevi-associates,-llc-cloud-software-engineer-sr-fort-meade,-md,-us",
+      "company": "ELEVI Associates, LLC",
+      "title": "Cloud Software Engineer Sr",
+      "location": "Fort Meade, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=a37b1891c2740e61",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "sumitomo-electric-industries-systems-engineer-ii-(wire-harness-circuitry)-saline,-mi,-us",
+      "company": "Sumitomo Electric Industries",
+      "title": "Systems Engineer II (Wire Harness Circuitry)",
+      "location": "Saline, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=f83783d91b28c216",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "longenecker-&-associates-i&c-design-engineer-aiken,-sc,-us",
+      "company": "Longenecker & Associates",
+      "title": "I&C Design Engineer",
+      "location": "Aiken, SC, US",
+      "url": "https://www.indeed.com/viewjob?jk=b6a7f7d922f9498f",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "palmer-foundry-associate-product-engineer-palmer,-ma,-us",
+      "company": "Palmer Foundry",
+      "title": "Associate Product Engineer",
+      "location": "Palmer, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=a60a1019fa744bd5",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "walmart-(usa)-systems-and-infrastructure-engineer-iii,-information-security-bentonville,-ar,-us",
+      "company": "Walmart",
+      "title": "(USA) Systems and Infrastructure Engineer III, Information Security",
+      "location": "Bentonville, AR, US",
+      "url": "https://www.indeed.com/viewjob?jk=d7b12c1fb470a7d2",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -2519,11 +4337,141 @@
       "is_closed": false
     },
     {
-      "id": "nan-software-&-data-associate-newbury-park,-ca,-us",
-      "company": null,
-      "title": "Software & Data Associate",
-      "location": "Newbury Park, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=cbcf82093c7dbb26",
+      "id": "convenientmd-new-grad---family-nurse-practitioner-(fnp)---urgent-care-agawam,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Family Nurse Practitioner (FNP) - Urgent Care",
+      "location": "Agawam, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=e72f11366b04409f",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "convenientmd-new-grad---physician-assistant-(pa)---urgent-care-plymouth,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Physician Assistant (PA) - Urgent Care",
+      "location": "Plymouth, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=d25848bee957f15e",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "convenientmd-new-grad---physician-assistant-(pa)---urgent-care-agawam,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Physician Assistant (PA) - Urgent Care",
+      "location": "Agawam, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=dd580e0b4cd20385",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "convenientmd-new-grad---family-nurse-practitioner-(fnp)---urgent-care-ludlow,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Family Nurse Practitioner (FNP) - Urgent Care",
+      "location": "Ludlow, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=fa599bdf817a42b2",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "convenientmd-new-grad---family-nurse-practitioner-(fnp)---urgent-care-plymouth,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Family Nurse Practitioner (FNP) - Urgent Care",
+      "location": "Plymouth, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=23ec0b07ca31bb67",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "convenientmd-new-grad---physician-assistant-(pa)---urgent-care-ludlow,-ma,-us",
+      "company": "ConvenientMD",
+      "title": "New Grad - Physician Assistant (PA) - Urgent Care",
+      "location": "Ludlow, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=de1a84a8d55fe6e1",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -2597,84 +4545,6 @@
       "is_closed": false
     },
     {
-      "id": "convenientmd-new-grad---physician-assistant-(pa)---urgent-care-bangor,-me,-us",
-      "company": "ConvenientMD",
-      "title": "New Grad - Physician Assistant (PA) - Urgent Care",
-      "location": "Bangor, ME, US",
-      "url": "https://www.indeed.com/viewjob?jk=a3bf4e1d5b41d5f3",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "convenientmd-new-grad---family-nurse-practitioner-(fnp)---urgent-care-auburn,-me,-us",
-      "company": "ConvenientMD",
-      "title": "New Grad - Family Nurse Practitioner (FNP) - Urgent Care",
-      "location": "Auburn, ME, US",
-      "url": "https://www.indeed.com/viewjob?jk=cd4172584590c550",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "university-of-california-merced-lecturer-in-psychology:-academic-year-2026-27-(anticipated)-merced,-",
-      "company": "University of California Merced",
-      "title": "Lecturer in Psychology: Academic Year 2026-27 (Anticipated)",
-      "location": "Merced, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=01e353e224e98dd2",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "bytedance-hr-generalist-graduate-(data)---2026-start-(bs/ms)-san-jose,-ca,-us",
       "company": "ByteDance",
       "title": "HR Generalist Graduate (Data) - 2026 Start (BS/MS)",
@@ -2692,6 +4562,110 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "north-memorial-health-registered-nurse:-neonatal-intensive-care-unit:-new-grad-eligible-maple-grove,",
+      "company": "North Memorial Health",
+      "title": "Registered Nurse: Neonatal Intensive Care Unit: New Grad Eligible",
+      "location": "Maple Grove, MN, US",
+      "url": "https://www.indeed.com/viewjob?jk=8dd7dc547871a62d",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "north-memorial-health-registered-nurse:-neonatal-intensive-care-unit:-new-grad-eligible-maple-grove,",
+      "company": "North Memorial Health",
+      "title": "Registered Nurse: Neonatal Intensive Care Unit: New Grad Eligible",
+      "location": "Maple Grove, MN, US",
+      "url": "https://www.indeed.com/viewjob?jk=9610b7b6e9c10416",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "the-general-hospital-corporation-new-grad-rn-lunder-9-oncology---mgh-boston,-ma,-us",
+      "company": "The General Hospital Corporation",
+      "title": "New Grad RN Lunder 9 Oncology - MGH",
+      "location": "Boston, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=a512d9fbb662ea35",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "rwi-logistics-llc-supply-chain-development-program-fort-thomas,-ky,-us",
+      "company": "RWI Logistics LLC",
+      "title": "Supply Chain Development Program",
+      "location": "Fort Thomas, KY, US",
+      "url": "https://www.indeed.com/viewjob?jk=735912db8cf17039",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
         "sectors": []
       },
       "flags": {
@@ -2727,65 +4701,11 @@
       "is_closed": false
     },
     {
-      "id": "adobe-site-reliability-engineer-noida",
-      "company": "Adobe",
-      "title": "Site Reliability Engineer",
-      "location": "Noida",
-      "url": "https://adobe.wd5.myworkdayjobs.com/job/Noida/Member-of-Technical-Staff---II--C---_R166346",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "Workday",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "paypal-software-engineer,-routing-platform-austin,-texas,-united-states-of-america",
       "company": "PayPal",
       "title": "Software Engineer, Routing Platform",
       "location": "Austin, Texas, United States of America",
       "url": "https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer--Routing-Platform_R0135407",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mastercard-software-engineer-i-o'fallon,-missouri",
-      "company": "Mastercard",
-      "title": "Software Engineer I",
-      "location": "O'Fallon, Missouri",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-I_R-271315",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "Workday",
@@ -2842,34 +4762,6 @@
       "title": "BizOps Engineer II",
       "location": "Pune, India",
       "url": "https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-II_R-275023",
-      "posted_at": "2026-04-17T00:00:00",
-      "posted_display": "Today",
-      "source": "Workday",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mastercard-bizops-engineer-i-pune,-india",
-      "company": "Mastercard",
-      "title": "BizOps Engineer I",
-      "location": "Pune, India",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-I_R-273472-1",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "Workday",
@@ -3182,6 +5074,34 @@
         "label": "",
         "sectors": [
           "healthcare"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "northrop-grumman-software-developer---level-3/4-united-states-california-redondo-beach",
+      "company": "Northrop Grumman",
+      "title": "Software Developer - Level 3/4",
+      "location": "United States-California-Redondo Beach",
+      "url": "https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Software-Developer---Level-3-4_R10226413",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
         ]
       },
       "flags": {
@@ -3504,6 +5424,230 @@
       "title": "Maintenance Janitor Level 1 or Level 2",
       "location": "United States-Utah-Layton",
       "url": "https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Layton/Maintenance-Janitor-Level-1-or-Level-2_R10229937",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-associate-aerospace-systems-safety-engineer-(systems-safety-&-mission-assurance)-usa---hazelw",
+      "company": "Boeing",
+      "title": "Associate Aerospace Systems Safety Engineer (Systems Safety & Mission Assurance)",
+      "location": "USA - Hazelwood, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Aerospace-Systems-Safety-Engineer--Systems-Safety---Mission-Assurance-_JR2026504625",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-associate-supply-chain-management-analyst-usa---bridgeton,-mo",
+      "company": "Boeing",
+      "title": "Associate Supply Chain Management Analyst",
+      "location": "USA - Bridgeton, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Bridgeton-MO/Associate-Supply-Chain-Management-Analyst_JR2026505389-1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-associate-supply-chain-management-analyst-usa---bridgeton,-mo",
+      "company": "Boeing",
+      "title": "Associate Supply Chain Management Analyst",
+      "location": "USA - Bridgeton, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Bridgeton-MO/Associate-Supply-Chain-Management-Analyst_JR2026504748-1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-entry-level-missions-systems-software-engineers---embedded-usa---berkeley,-mo",
+      "company": "Boeing",
+      "title": "Entry-Level Missions Systems Software Engineers - Embedded",
+      "location": "USA - Berkeley, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Entry-Level-Missions-Systems-Software-Engineers---Embedded_JR2026501664-1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-early-career-configuration-management-engineer-usa---hazelwood,-mo",
+      "company": "Boeing",
+      "title": "Early Career Configuration Management Engineer",
+      "location": "USA - Hazelwood, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Early-Career-Configuration-Management-Engineer_JR2026498014",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-software-engineer\u2013developer-(associate/experienced)-usa---seal-beach,-ca",
+      "company": "Boeing",
+      "title": "Software Engineer\u2013Developer (Associate/Experienced)",
+      "location": "USA - Seal Beach, CA",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Software-Engineer-Developer--Associate-Experienced-_JR2026498249-1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-associate-software-engineer\u2013vehicle-management-systems-usa---seal-beach,-ca",
+      "company": "Boeing",
+      "title": "Associate Software Engineer\u2013Vehicle Management Systems",
+      "location": "USA - Seal Beach, CA",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Associate-Software-Engineer-Vehicle-Management-Systems_JR2026498339-1",
+      "posted_at": "2026-04-17T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "boeing-777x-structural-&-payload-design-engineer-(associate-or-experienced)-usa---berkeley,-mo",
+      "company": "Boeing",
+      "title": "777X Structural & Payload Design Engineer (Associate or Experienced)",
+      "location": "USA - Berkeley, MO",
+      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/XMLNAME-777X-Structural---Payload-Design-Engineer--Associate-or-Experienced-_JR2026505520-1",
       "posted_at": "2026-04-17T00:00:00",
       "posted_display": "Today",
       "source": "Workday",
@@ -4101,7 +6245,7 @@
       "location": "Bengaluru, Karnataka, India",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7680144003",
       "posted_at": "2026-04-16T19:02:24",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4127,7 +6271,7 @@
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7574033003",
       "posted_at": "2026-04-16T19:02:24",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -4153,7 +6297,7 @@
       "location": "San Francisco, CA",
       "url": "https://sofi.com/careers/job/7615953003?gh_jid=7615953003",
       "posted_at": "2026-04-16T18:47:31",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -4181,7 +6325,7 @@
       "location": "San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4302243005",
       "posted_at": "2026-04-16T18:29:51",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -5495,32 +7639,6 @@
       "is_closed": false
     },
     {
-      "id": "waymo-machine-learning-engineer,-driver-understanding-and-evaluation-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Driver Understanding and Evaluation",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7455853",
-      "posted_at": "2026-04-16T04:30:22",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "lucid-campus-talent-specialist-salt-lake-city,-ut",
       "company": "Lucid",
       "title": "Campus Talent Specialist",
@@ -5687,84 +7805,6 @@
       "is_closed": false
     },
     {
-      "id": "waymo-applied-research-scientist,-perception-llm/vlm-(phd,-new-grad)-mountain-view,-ca-usa;--san-fra",
-      "company": "Waymo",
-      "title": "Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7488508",
-      "posted_at": "2026-04-16T01:46:48",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-applied-research-scientist,-3d-object-detection--(phd-new-grad)-mountain-view,-ca-usa;--san-fr",
-      "company": "Waymo",
-      "title": "Applied Research Scientist, 3D Object Detection  (PhD New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7467839",
-      "posted_at": "2026-04-16T01:46:03",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-3d-object-detection--(phd-new-grad)-mountain-view,-ca-usa;--san-fra",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, 3D Object Detection  (PhD New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7539786",
-      "posted_at": "2026-04-16T01:45:40",
-      "posted_display": "1 day ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "palantir-information-security-engineer---endpoint-new-york,-ny",
       "company": "Palantir",
       "title": "Information Security Engineer - Endpoint",
@@ -5808,6 +7848,58 @@
         "tier": "unicorn",
         "emoji": "\ud83d\ude80",
         "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lakehead-university-assistant/associate-professor,-department-of-chemical-engineering-thunder-bay,-o",
+      "company": "Lakehead University",
+      "title": "Assistant/Associate Professor, Department of Chemical Engineering",
+      "location": "Thunder Bay, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=d9df8bc5ddad37b3",
+      "posted_at": "2026-04-16T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lakehead-university-assistant/associate-professor,-department-of-civil-engineering-thunder-bay,-on,-",
+      "company": "Lakehead University",
+      "title": "Assistant/Associate Professor, Department of Civil Engineering",
+      "location": "Thunder Bay, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=08364abd3f4abd1f",
+      "posted_at": "2026-04-16T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
         "sectors": []
       },
       "flags": {
@@ -5869,37 +7961,11 @@
       "is_closed": false
     },
     {
-      "id": "lakehead-university-assistant/associate-professor,-department-of-chemical-engineering-thunder-bay,-o",
-      "company": "Lakehead University",
-      "title": "Assistant/Associate Professor, Department of Chemical Engineering",
-      "location": "Thunder Bay, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=d9df8bc5ddad37b3",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "lakehead-university-assistant/associate-professor,-department-of-civil-engineering-thunder-bay,-on,-",
-      "company": "Lakehead University",
-      "title": "Assistant/Associate Professor, Department of Civil Engineering",
-      "location": "Thunder Bay, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=08364abd3f4abd1f",
+      "id": "mohawk-college-corporate-reporting-analyst---temporary-assignment-(may-2026---october-2027)-hamilton",
+      "company": "Mohawk College",
+      "title": "Corporate Reporting Analyst - Temporary Assignment (May 2026 - October 2027)",
+      "location": "Hamilton, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=c8367da9f8f46458",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -5985,32 +8051,6 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mohawk-college-corporate-reporting-analyst---temporary-assignment-(may-2026---october-2027)-hamilton",
-      "company": "Mohawk College",
-      "title": "Corporate Reporting Analyst - Temporary Assignment (May 2026 - October 2027)",
-      "location": "Hamilton, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=c8367da9f8f46458",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -6183,18 +8223,18 @@
       "is_closed": false
     },
     {
-      "id": "general-dynamics-land-systems-associate-system-engineer-sterling-heights,-mi,-us",
-      "company": "General Dynamics Land Systems",
-      "title": "Associate System Engineer",
-      "location": "Sterling Heights, MI, US",
-      "url": "https://www.indeed.com/viewjob?jk=4e9ce20c6a394c84",
+      "id": "vodafonethree-cloud-machine-learning-engineer-mh,-in",
+      "company": "VodafoneThree",
+      "title": "CLOUD MACHINE LEARNING ENGINEER",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=7cf37c82c84974fc",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "other",
@@ -6209,18 +8249,18 @@
       "is_closed": false
     },
     {
-      "id": "vodafonethree-cloud-machine-learning-engineer-mh,-in",
-      "company": "VodafoneThree",
-      "title": "CLOUD MACHINE LEARNING ENGINEER",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=7cf37c82c84974fc",
+      "id": "general-dynamics-land-systems-associate-system-engineer-sterling-heights,-mi,-us",
+      "company": "General Dynamics Land Systems",
+      "title": "Associate System Engineer",
+      "location": "Sterling Heights, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=4e9ce20c6a394c84",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -6473,32 +8513,6 @@
       "is_closed": false
     },
     {
-      "id": "national-general-insurance-claims-adjuster-trainee---national-general-remote,-us",
-      "company": "National General Insurance",
-      "title": "Claims Adjuster Trainee - National General",
-      "location": "Remote, US",
-      "url": "https://www.indeed.com/viewjob?jk=52bc9e55c2caff8d",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "nationwide-mutual-insurance-company-specialist,-data-engineer-columbus,-oh,-us",
       "company": "Nationwide Mutual Insurance Company",
       "title": "Specialist, Data Engineer",
@@ -6603,18 +8617,18 @@
       "is_closed": false
     },
     {
-      "id": "td-data-scientist-ii---fcrm--screening-capabilities-new-york,-ny,-us",
-      "company": "TD",
-      "title": "Data Scientist II - FCRM -Screening Capabilities",
-      "location": "New York, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=eec9270e6794dc17",
+      "id": "nld-india-software-pvt-ltd-fresher-/-junior-backend-/-node.js-developer-pb,-in",
+      "company": "NLD India Software Pvt Ltd",
+      "title": "Fresher / Junior Backend / Node.js Developer",
+      "location": "PB, IN",
+      "url": "https://in.indeed.com/viewjob?jk=6e1f8923dd5c3ea4",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -6629,18 +8643,18 @@
       "is_closed": false
     },
     {
-      "id": "nld-india-software-pvt-ltd-fresher-/-junior-backend-/-node.js-developer-pb,-in",
-      "company": "NLD India Software Pvt Ltd",
-      "title": "Fresher / Junior Backend / Node.js Developer",
-      "location": "PB, IN",
-      "url": "https://in.indeed.com/viewjob?jk=6e1f8923dd5c3ea4",
+      "id": "td-data-scientist-ii---fcrm--screening-capabilities-new-york,-ny,-us",
+      "company": "TD",
+      "title": "Data Scientist II - FCRM -Screening Capabilities",
+      "location": "New York, NY, US",
+      "url": "https://www.indeed.com/viewjob?jk=eec9270e6794dc17",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "other",
@@ -6985,34 +8999,6 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mastercard-software-engineer-i---qe-pune,-india",
-      "company": "Mastercard",
-      "title": "Software Engineer I - QE",
-      "location": "Pune, India",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-I---QE_R-273574-1",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "faang_plus",
@@ -8006,62 +9992,6 @@
       "title": "Systems Engineer",
       "location": "USA - Long Beach, CA",
       "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Systems-Engineer_JR2026492615-1",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "boeing-guidance-navigation-&-control-engineer-(associate-or-experienced)-usa---saint-charles,-mo",
-      "company": "Boeing",
-      "title": "Guidance Navigation & Control Engineer (Associate or Experienced)",
-      "location": "USA - Saint Charles, MO",
-      "url": "https://boeing.wd1.myworkdayjobs.com/job/USA---Saint-Charles-MO/Guidance-Navigation---Control-Engineer--Associate-or-Experienced-_JR2025477901",
-      "posted_at": "2026-04-16T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "Workday",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "boeing-associate-programmer-analyst---java-full-stack-ind---bangalore,-india",
-      "company": "Boeing",
-      "title": "Associate Programmer Analyst - Java Full Stack",
-      "location": "IND - Bangalore, India",
-      "url": "https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Programmer-Analyst---Java-Full-Stack_JR2026495985-1",
       "posted_at": "2026-04-16T00:00:00",
       "posted_display": "1 day ago",
       "source": "Workday",
@@ -9307,32 +11237,6 @@
       "is_closed": false
     },
     {
-      "id": "airbus-vie-2026---india---helicopter-manufacturing-engineering-support-(m/f)-dl,-in",
-      "company": "Airbus",
-      "title": "VIE 2026 - INDIA - Helicopter Manufacturing Engineering Support (m/f)",
-      "location": "DL, IN",
-      "url": "https://in.indeed.com/viewjob?jk=853a67ca6bb75193",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "canada-masonry-design-centre-junior-structural-engineer-saskatoon,-sk,-ca",
       "company": "Canada Masonry Design Centre",
       "title": "Junior Structural Engineer",
@@ -9397,6 +11301,32 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "colgate-palmolive-associate-analyst/-analyst,-supply-chain-finance-mh,-in",
+      "company": "Colgate-Palmolive",
+      "title": "Associate Analyst/ Analyst, Supply Chain Finance",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=8301efd2c6153d20",
+      "posted_at": "2026-04-15T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -9521,11 +11451,11 @@
       "is_closed": false
     },
     {
-      "id": "colgate-palmolive-associate-analyst/-analyst,-supply-chain-finance-mh,-in",
-      "company": "Colgate-Palmolive",
-      "title": "Associate Analyst/ Analyst, Supply Chain Finance",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=8301efd2c6153d20",
+      "id": "poshmark-junior-email-support,-night-shift---freshers-can-apply-tn,-in",
+      "company": "Poshmark",
+      "title": "Junior Email Support, Night Shift - Freshers can apply",
+      "location": "TN, IN",
+      "url": "https://in.indeed.com/viewjob?jk=215ee5f145b8c2c0",
       "posted_at": "2026-04-15T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
@@ -9578,32 +11508,6 @@
       "title": "RN New Graduate Inpatient Medical Unit",
       "location": "Worland, WY, US",
       "url": "https://www.indeed.com/viewjob?jk=c7749e9a2803b316",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "poshmark-junior-email-support,-night-shift---freshers-can-apply-tn,-in",
-      "company": "Poshmark",
-      "title": "Junior Email Support, Night Shift - Freshers can apply",
-      "location": "TN, IN",
-      "url": "https://in.indeed.com/viewjob?jk=215ee5f145b8c2c0",
       "posted_at": "2026-04-15T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
@@ -9703,84 +11607,6 @@
       "is_closed": false
     },
     {
-      "id": "scotiabank-gbm---investment-banking-analyst-(power-&-utilities)---new-grad-toronto,-on,-ca",
-      "company": "Scotiabank",
-      "title": "GBM - Investment Banking Analyst (Power & Utilities) - New Grad",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=4fa42bd7507b3402",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "fargo-public-schools-2026-2027-school-year-school-social-worker-fargo,-nd,-us",
-      "company": "Fargo Public Schools",
-      "title": "2026-2027 School Year School Social Worker",
-      "location": "Fargo, ND, US",
-      "url": "https://www.indeed.com/viewjob?jk=b2b35fd85c20a2d0",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "ferguson-sales-trainee-program---june-albuquerque,-nm,-us",
-      "company": "Ferguson",
-      "title": "Sales Trainee Program - June",
-      "location": "Albuquerque, NM, US",
-      "url": "https://www.indeed.com/viewjob?jk=a04c2a669461342c",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "soci\u00e9t\u00e9-g\u00e9n\u00e9rale-trainee---operations,-sg-securities-india-(mumbai)-mh,-in",
       "company": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale",
       "title": "Trainee - Operations, SG Securities India (Mumbai)",
@@ -9845,6 +11671,58 @@
         "id": "data_engineering",
         "name": "Data Engineering",
         "emoji": "\ud83d\udcca"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "fargo-public-schools-2026-2027-school-year-school-social-worker-fargo,-nd,-us",
+      "company": "Fargo Public Schools",
+      "title": "2026-2027 School Year School Social Worker",
+      "location": "Fargo, ND, US",
+      "url": "https://www.indeed.com/viewjob?jk=b2b35fd85c20a2d0",
+      "posted_at": "2026-04-15T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "scotiabank-gbm---investment-banking-analyst-(power-&-utilities)---new-grad-toronto,-on,-ca",
+      "company": "Scotiabank",
+      "title": "GBM - Investment Banking Analyst (Power & Utilities) - New Grad",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=4fa42bd7507b3402",
+      "posted_at": "2026-04-15T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -9989,6 +11867,32 @@
       "is_closed": false
     },
     {
+      "id": "airbus-vie-2026---india---helicopter-manufacturing-engineering-support-(m/f)-dl,-in",
+      "company": "Airbus",
+      "title": "VIE 2026 - INDIA - Helicopter Manufacturing Engineering Support (m/f)",
+      "location": "DL, IN",
+      "url": "https://in.indeed.com/viewjob?jk=853a67ca6bb75193",
+      "posted_at": "2026-04-15T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "river-street-endodontics-endodontic-chairside-assistant-(level-ii)-toronto,-on,-ca",
       "company": "River Street Endodontics",
       "title": "Endodontic Chairside Assistant (Level II)",
@@ -10071,34 +11975,6 @@
       "is_closed": false
     },
     {
-      "id": "mastercard-software-engineer-ii-o'fallon,-missouri",
-      "company": "Mastercard",
-      "title": "Software Engineer II",
-      "location": "O'Fallon, Missouri",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-275757",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "mastercard-data-scientist-2-2-navi-mumbai,-india-(finicity)",
       "company": "Mastercard",
       "title": "Data Scientist 2-2",
@@ -10139,34 +12015,6 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mastercard-mac-engineer---enterprise-operations-engineer-ii-pune,-india",
-      "company": "Mastercard",
-      "title": "Mac Engineer - Enterprise Operations Engineer II",
-      "location": "Pune, India",
-      "url": "https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Mac-Engineer---Enterprise-Operations-Engineer-II_R-273159",
-      "posted_at": "2026-04-15T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "Workday",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "faang_plus",
@@ -10749,32 +12597,6 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3-gurugram",
-      "company": "MongoDB",
-      "title": "Software Engineer 3",
-      "location": "Gurugram",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
-      "posted_at": "2026-04-14T19:48:55",
-      "posted_display": "2 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "mongodb-software-engineer-3-alberta;-british-columbia;-calgary;-edmonton;-nova-scotia;-ontario;-otta",
       "company": "MongoDB",
       "title": "Software Engineer 3",
@@ -10806,6 +12628,32 @@
       "title": "Software Engineer 3",
       "location": "New York City",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7779598",
+      "posted_at": "2026-04-14T19:48:55",
+      "posted_display": "2 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "mongodb-software-engineer-3-gurugram",
+      "company": "MongoDB",
+      "title": "Software Engineer 3",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7597723",
       "posted_at": "2026-04-14T19:48:55",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -10983,11 +12831,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-networking-&-observability-new-york-city;-united-states",
+      "id": "mongodb-software-engineer,-networking-&-observability-alberta;-british-columbia;-manitoba;-nova-scot",
       "company": "MongoDB",
       "title": "Software Engineer, Networking & Observability",
-      "location": "New York City; United States",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7672660",
+      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7672662",
       "posted_at": "2026-04-14T19:48:55",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -11009,11 +12857,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-networking-&-observability-alberta;-british-columbia;-manitoba;-nova-scot",
+      "id": "mongodb-software-engineer,-networking-&-observability-new-york-city;-united-states",
       "company": "MongoDB",
       "title": "Software Engineer, Networking & Observability",
-      "location": "Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7672662",
+      "location": "New York City; United States",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7672660",
       "posted_at": "2026-04-14T19:48:55",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -11067,7 +12915,7 @@
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8398723002?gh_jid=8398723002",
       "posted_at": "2026-04-14T18:54:42",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -11095,7 +12943,7 @@
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7770914",
       "posted_at": "2026-04-14T18:54:02",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -11483,6 +13331,32 @@
       "is_closed": false
     },
     {
+      "id": "cai-(computer-aid,-inc.)-associate-software-engineer-ka,-in",
+      "company": "CAI (Computer Aid, Inc.)",
+      "title": "Associate Software Engineer",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=9c63257a1372e9ee",
+      "posted_at": "2026-04-14T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "etraveli-group-data-scientist-toronto,-on,-ca",
       "company": "Etraveli Group",
       "title": "Data Scientist",
@@ -11509,11 +13383,11 @@
       "is_closed": false
     },
     {
-      "id": "cai-(computer-aid,-inc.)-associate-software-engineer-ka,-in",
-      "company": "CAI (Computer Aid, Inc.)",
-      "title": "Associate Software Engineer",
-      "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=9c63257a1372e9ee",
+      "id": "trend-micro-inc.-applied-ai-junior-front-end-developer---ottawa,-on-ottawa,-on,-ca",
+      "company": "Trend Micro Inc.",
+      "title": "Applied AI Junior Front-End Developer - Ottawa, ON",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=a7659e2bf13ccdf8",
       "posted_at": "2026-04-14T00:00:00",
       "posted_display": "3 days ago",
       "source": "JobSpy (Indeed)",
@@ -11552,58 +13426,6 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "trend-micro-inc.-applied-ai-junior-front-end-developer---ottawa,-on-ottawa,-on,-ca",
-      "company": "Trend Micro Inc.",
-      "title": "Applied AI Junior Front-End Developer - Ottawa, ON",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=a7659e2bf13ccdf8",
-      "posted_at": "2026-04-14T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "loma-linda-university-health-clinical-nurse-b-inpatient-east-campus-hospital:-urgent-care-full-time,",
-      "company": "Loma Linda University Health",
-      "title": "Clinical Nurse B-Inpatient East Campus Hospital: Urgent Care-Full-Time, Night Shift",
-      "location": "Loma Linda, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=983512c670745c5f",
-      "posted_at": "2026-04-14T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
         "sectors": []
       },
       "flags": {
@@ -11959,6 +13781,34 @@
       "is_closed": false
     },
     {
+      "id": "mastercard-data-scientist-1-navi-mumbai,-india-(finicity)",
+      "company": "Mastercard",
+      "title": "Data Scientist-1",
+      "location": "Navi Mumbai, India (Finicity)",
+      "url": "https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Data-Scientist-1_R-274143",
+      "posted_at": "2026-04-14T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "Workday",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "intel-storage-infrastructure-engineer-india,-bangalore",
       "company": "Intel",
       "title": "Storage Infrastructure Engineer",
@@ -12179,7 +14029,7 @@
       "location": "Seattle, WA, US; Bay Area, CA",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6816337",
       "posted_at": "2026-04-13T18:24:02",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -13131,32 +14981,6 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-ml-engineer,-foundation-model-infrastructure-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "ML Engineer, Foundation Model Infrastructure",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7536801",
-      "posted_at": "2026-04-10T20:10:58",
-      "posted_display": "6 days ago",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "unicorn",
@@ -14161,18 +15985,18 @@
       "is_closed": false
     },
     {
-      "id": "cathedral-energy-services-software-developer-\u2013-entry-level-calgary,-ab,-ca",
-      "company": "Cathedral Energy Services",
-      "title": "SOFTWARE DEVELOPER \u2013 Entry Level",
+      "id": "amrize-project-coordinator---new-graduate-calgary,-ab,-ca",
+      "company": "Amrize",
+      "title": "Project Coordinator - New Graduate",
       "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=e14921d32441a9ac",
+      "url": "https://ca.indeed.com/viewjob?jk=e200c5a2300d1f6a",
       "posted_at": "2026-04-10T00:00:00",
       "posted_display": "2026-04-10",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -14187,18 +16011,18 @@
       "is_closed": false
     },
     {
-      "id": "amrize-project-coordinator---new-graduate-calgary,-ab,-ca",
-      "company": "Amrize",
-      "title": "Project Coordinator - New Graduate",
+      "id": "cathedral-energy-services-software-developer-\u2013-entry-level-calgary,-ab,-ca",
+      "company": "Cathedral Energy Services",
+      "title": "SOFTWARE DEVELOPER \u2013 Entry Level",
       "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=e200c5a2300d1f6a",
+      "url": "https://ca.indeed.com/viewjob?jk=e14921d32441a9ac",
       "posted_at": "2026-04-10T00:00:00",
       "posted_display": "2026-04-10",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -14877,1150 +16701,6 @@
       "is_closed": false
     },
     {
-      "id": "waymo-data-scientist--mountain-view,-california,-usa",
-      "company": "Waymo",
-      "title": "Data Scientist ",
-      "location": "Mountain View, California, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6608598",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-data-&-systems--mountain-view,-california,-united-states;-san-franc",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Data & Systems ",
-      "location": "Mountain View, California, United States; San Francisco, California, United States",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446301",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer---mapping-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer - Mapping",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429811",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer---mapping-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer - Mapping",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429791",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-mapping-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Mapping",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7090492",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-ml-flywheel-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, ML Flywheel",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7426598",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-model-optimization-mountain-view,-california,-united-states;-san-fr",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Model Optimization",
-      "location": "Mountain View, California, United States; San Francisco, California, United States",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446322",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-perception-modeling-mountain-view,-ca,-usa;-san-francisco,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Perception Modeling",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7446279",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-prediction-&-planning-mountain-view,-ca,-usa;-san-francisco,-ca,-us",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Prediction & Planning",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6506689",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-runtime-&-optimization-mountain-view,-california,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Runtime & Optimization",
-      "location": "Mountain View, California, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6506008",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-simulation-realism-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Simulation Realism",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6499165",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-machine-learning-engineer,-simulation-realism--mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, Simulation Realism ",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6688617",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-onboard-developer-platform-software-engineer-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Onboard Developer Platform Software Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461052",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-onboard-frameworks-software-engineer-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Onboard Frameworks Software Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7412386",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-onboard-infrastructure-software-engineer-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Onboard Infrastructure Software Engineer",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461103",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-post-silicon-validation-software-engineer-bangalore,-karnataka,-india",
-      "company": "Waymo",
-      "title": "Post-Silicon Validation Software Engineer",
-      "location": "Bangalore, Karnataka, India",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7590331",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer-backend---simulation-mountain-view",
-      "company": "Waymo",
-      "title": "Software Engineer Backend - Simulation",
-      "location": "Mountain View",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7307289",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-bulk/interactive-inference-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Bulk/Interactive Inference",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7466529",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-embedded-systems-/-robotics--mountain-view,-ca,-us",
-      "company": "Waymo",
-      "title": "Software Engineer, Embedded Systems / Robotics ",
-      "location": "Mountain View, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7429873",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-gpu-mountain-view,-ca,-usa;-new-york,-ny,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, GPU",
-      "location": "Mountain View, CA, USA; New York, NY, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7554830",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-labeling-infrastructure-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Labeling Infrastructure",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7416895",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-large-model-evaluation-mountain-view,-california,-usa;-san-francisco,-calif",
-      "company": "Waymo",
-      "title": "Software Engineer, Large Model Evaluation",
-      "location": "Mountain View, California, USA; San Francisco, California, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7487849",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-ml-tools-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, ML Tools",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7426718",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-model-lifecycle-kirkland,-washington,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Model Lifecycle",
-      "location": "Kirkland, Washington, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7609435",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-multiverse-san-francisco,-ca,-usa;-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Multiverse",
-      "location": "San Francisco, CA, USA; Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7531397",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-onboard-reliability-infra-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Onboard Reliability Infra",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7461072",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-perception-evaluation-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Perception Evaluation",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7256244",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-perception-evaluation-and-test-automation-mountain-view,-ca,-usa;-san-franc",
-      "company": "Waymo",
-      "title": "Software Engineer, Perception Evaluation and Test Automation",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7449712",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-perception-optimization-mountain-view,-california,-united-states;-san-franc",
-      "company": "Waymo",
-      "title": "Software Engineer, Perception Optimization",
-      "location": "Mountain View, California, United States; San Francisco, California, United States",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7450565",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-planner-mountain-view,-ca",
-      "company": "Waymo",
-      "title": "Software Engineer, Planner",
-      "location": "Mountain View, CA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7459622",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-planner-reasoning-mountain-view,-ca,-usa;-san-francisco,-ca,-usa",
-      "company": "Waymo",
-      "title": "Software Engineer, Planner Reasoning",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7259110",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-planner-vehicle-dynamics-mountain-view,-california",
-      "company": "Waymo",
-      "title": "Software Engineer, Planner Vehicle Dynamics",
-      "location": "Mountain View, California",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7141380",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-privacy-mountain-view,-ca,-usa-",
-      "company": "Waymo",
-      "title": "Software Engineer, Privacy",
-      "location": "Mountain View, CA, USA ",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7547529",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-quantitative-evaluations-mountain-view,-ca,-usa;-san-francisco,-ca,-usa-",
-      "company": "Waymo",
-      "title": "Software Engineer, Quantitative Evaluations",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA ",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7466534",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-sensor/imaging-mountain-view,-ca,-us;-san-francisco,-ca,-us",
-      "company": "Waymo",
-      "title": "Software Engineer, Sensor/Imaging",
-      "location": "Mountain View, CA, US; San Francisco, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7587455",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-simulator-evaluation-mountain-view,-california,-united-states;-san-francisc",
-      "company": "Waymo",
-      "title": "Software Engineer, Simulator Evaluation",
-      "location": "Mountain View, California, United States; San Francisco, California, United States",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6562547",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-statistical-evaluation-and-sampling-mountain-view,-ca,-usa;-san-francisco,-",
-      "company": "Waymo",
-      "title": "Software Engineer, Statistical Evaluation and Sampling",
-      "location": "Mountain View, CA, USA; San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7543520",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-test-automation-infrastructure-san-francisco,-ca,-us;-mountain-view,-ca,-us",
-      "company": "Waymo",
-      "title": "Software Engineer, Test Automation Infrastructure",
-      "location": "San Francisco, CA, US; Mountain View, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7532414",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-software-engineer,-trip-platform-mountain-view,-ca,-us",
-      "company": "Waymo",
-      "title": "Software Engineer, Trip Platform",
-      "location": "Mountain View, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7433503",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-systems-engineer,-behavioral-requirements-mountain-view,-ca,-us;-san-francisco,-ca,us",
-      "company": "Waymo",
-      "title": "Systems Engineer, Behavioral Requirements",
-      "location": "Mountain View, CA, US; San Francisco, CA,US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7545185",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-systems-engineer,-motion-control--mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Systems Engineer, Motion Control ",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7586057",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-systems-engineer,-perception-mountain-view,-ca,-us;-san-francisco,-ca,-us",
-      "company": "Waymo",
-      "title": "Systems Engineer, Perception",
-      "location": "Mountain View, CA, US; San Francisco, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7367785",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-systems-engineer,-power-systems-(low-voltage)-mountain-view,-ca,-usa",
-      "company": "Waymo",
-      "title": "Systems Engineer, Power Systems (Low Voltage)",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7572411",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "waymo-systems-engineer,-sensing--mountain-view,-ca,-us;san-francisco,-ca,-us",
-      "company": "Waymo",
-      "title": "Systems Engineer, Sensing ",
-      "location": "Mountain View, CA, US;San Francisco, CA, US",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=6511655",
-      "posted_at": "2026-04-09T18:37:17",
-      "posted_display": "2026-04-09",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "affirm-enterprise-iam-software-engineer-ii-remote-canada",
       "company": "Affirm",
       "title": "Enterprise IAM Software Engineer II",
@@ -16409,32 +17089,6 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "scale-ai-devops-engineer,-infrastructure-&-security-washington,-dc",
-      "company": "Scale AI",
-      "title": "DevOps Engineer, Infrastructure & Security",
-      "location": "Washington, DC",
-      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4674863005",
-      "posted_at": "2026-04-08T22:29:02",
-      "posted_display": "2026-04-08",
-      "source": "Greenhouse",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "unicorn",
@@ -21403,11 +22057,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -21431,11 +22085,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-hawthorne,-ca",
+      "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Customer Support Associate, Bilingual - Ukrainian (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8245053002?gh_jid=8245053002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -21823,11 +22477,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -21851,11 +22505,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-electrical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Electrical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8407346002?gh_jid=8407346002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148530002?gh_jid=8148530002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -22747,11 +23401,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-starlink-network-sunnyvale,-ca",
+      "id": "spacex-software-engineer,-starlink-network-redmond,-wa",
       "company": "SpaceX",
       "title": "Software Engineer, Starlink Network",
-      "location": "Sunnyvale, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8458001002?gh_jid=8458001002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -22775,11 +23429,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-starlink-network-redmond,-wa",
+      "id": "spacex-software-engineer,-starlink-network-sunnyvale,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Starlink Network",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002",
+      "location": "Sunnyvale, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8458001002?gh_jid=8458001002",
       "posted_at": "2026-03-27T15:37:18",
       "posted_display": "2026-03-27",
       "source": "Greenhouse",
@@ -25867,11 +26521,11 @@
       "is_closed": false
     },
     {
-      "id": "lyft-data-scientist,-decisions---central-market-management-new-york,-ny",
+      "id": "lyft-data-scientist,-decisions---central-market-management-san-francisco,-ca",
       "company": "Lyft",
       "title": "Data Scientist, Decisions - Central Market Management",
-      "location": "New York, NY",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8378473002?gh_jid=8378473002",
+      "location": "San Francisco, CA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8376875002?gh_jid=8376875002",
       "posted_at": "2026-02-17T19:10:43",
       "posted_display": "2026-02-17",
       "source": "Greenhouse",
@@ -25893,11 +26547,11 @@
       "is_closed": false
     },
     {
-      "id": "lyft-data-scientist,-decisions---central-market-management-san-francisco,-ca",
+      "id": "lyft-data-scientist,-decisions---central-market-management-new-york,-ny",
       "company": "Lyft",
       "title": "Data Scientist, Decisions - Central Market Management",
-      "location": "San Francisco, CA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8376875002?gh_jid=8376875002",
+      "location": "New York, NY",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8378473002?gh_jid=8378473002",
       "posted_at": "2026-02-17T19:10:43",
       "posted_display": "2026-02-17",
       "source": "Greenhouse",
