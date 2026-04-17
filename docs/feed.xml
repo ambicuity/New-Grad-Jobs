@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 20:12:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 21:07:41 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131934</link>
+      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Apr 2026 20:50:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131934</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7131932</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Apr 2026 20:50:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7131932</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer (Infra), Driver Understanding and Evaluation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7819946</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
       <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7433503</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Behavioral Requirements at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7545185</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA,US. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7545185</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Motion Control  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7586057</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Apr 2026 18:16:10 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7586057</guid>
     </item>
   </channel>
 </rss>
