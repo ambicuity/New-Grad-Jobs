@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-17T15:21:59.311202",
+    "last_updated": "2026-04-17T16:21:10.550635",
     "total_snapshots": 44,
     "date_range": {
       "start": "2026-03-05",
@@ -2375,12 +2375,12 @@
     },
     {
       "date": "2026-04-17",
-      "total_jobs": 977,
+      "total_jobs": 953,
       "categories": {},
       "tiers": {
-        "other": 354,
-        "unicorn": 478,
-        "faang_plus": 145
+        "unicorn": 477,
+        "other": 328,
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -2389,23 +2389,19 @@
         },
         {
           "company": "Waymo",
-          "jobs": 52
+          "jobs": 51
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 28
         },
         {
           "company": "ClickHouse",
           "jobs": 27
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 24
-        },
-        {
           "company": "Boeing",
           "jobs": 23
-        },
-        {
-          "company": "Banner Health",
-          "jobs": 21
         },
         {
           "company": "Stripe",
@@ -2422,11 +2418,15 @@
         {
           "company": "Lyft",
           "jobs": 18
+        },
+        {
+          "company": "Scale AI",
+          "jobs": 17
         }
       ],
-      "unique_companies": 193,
-      "avg_jobs_per_company": 5.06,
-      "timestamp": "2026-04-17T15:21:59.310690"
+      "unique_companies": 185,
+      "avg_jobs_per_company": 5.15,
+      "timestamp": "2026-04-17T16:21:10.522257"
     }
   ]
 }
