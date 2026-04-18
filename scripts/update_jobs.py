@@ -26,7 +26,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, Iterator, List, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
@@ -2144,10 +2144,12 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
 
-    def iter_category_ids(job: Dict[str, Any]):
-        category_id = get_nested_value(job, 'category.id')
-        if isinstance(category_id, str) and category_id:
-            yield category_id
+    def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
+        category = job.get('category')
+        if category is not None:
+            category_id = get_nested_value(job, 'category.id')
+            if isinstance(category_id, str) and category_id:
+                yield category_id
             return
 
         legacy_categories = job.get('categories', [])

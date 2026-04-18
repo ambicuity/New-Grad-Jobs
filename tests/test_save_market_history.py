@@ -184,6 +184,37 @@ class TestCategoryAndTierCounting:
         assert categories['ml'] == 1
         assert categories['data'] == 1
 
+    def test_does_not_fall_back_to_legacy_categories_when_category_payload_exists(self):
+        """Legacy categories are ignored once enriched category data is present, even if malformed."""
+        jobs = [
+            {
+                'company': 'Google',
+                'category': {'id': None},
+                'categories': ['swe'],
+                'company_tier': {'tier': 'faang-plus'},
+            },
+            {
+                'company': 'Meta',
+                'category': {},
+                'categories': ['data_ml'],
+                'company_tier': {'tier': 'faang-plus'},
+            },
+            {
+                'company': 'Stripe',
+                'category': {'id': ''},
+                'categories': ['product'],
+                'company_tier': {'tier': 'unicorn'},
+            },
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {}
+
     def test_counts_tiers_correctly(self):
         """Company tiers are counted correctly."""
         jobs = [
