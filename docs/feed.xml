@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2026 04:08:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 05:52:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Infrastructure (8+ YOE) at Airtable</title>
@@ -27,13 +27,6 @@
       <description>New grad role at Janicki Industries in Bellingham, WA, US. Category: Software Engineering</description>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cf20a47165bd4ab4</guid>
-    </item>
-    <item>
-      <title>Industrial Engineer I at Country Maid Inc</title>
-      <link>https://www.indeed.com/viewjob?jk=b13188cd5400cb89</link>
-      <description>New grad role at Country Maid Inc in West Bend, IA, US. Category: Other</description>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b13188cd5400cb89</guid>
     </item>
     <item>
       <title>Test Engineer I at HUNTSVILLE</title>
@@ -167,6 +160,20 @@
       <description>New grad role at Medtronic in Humacao, Puerto Rico, United States of America. Category: Other</description>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Humacao-Puerto-Rico-United-States-of-America/Process-Engineer-II_R59660-1</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</link>
+      <description>New grad role at Walmart in Bentonville, AR. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</guid>
+    </item>
+    <item>
+      <title>(USA) Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/XMLNAME--USA--Software-Engineer-III_R-2466607-1</link>
+      <description>New grad role at Walmart in Bentonville, AR. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/XMLNAME--USA--Software-Engineer-III_R-2466607-1</guid>
     </item>
     <item>
       <title>Product Trainer-Courseware Developer (Level 2 or 3) at Northrop Grumman</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Associate-Information-Technology-Engineer_JR2026501872</guid>
-    </item>
-    <item>
-      <title>Associate Information Technology Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Associate-Information-Technology-Engineer_JR2026499838-1</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Associate-Information-Technology-Engineer_JR2026499838-1</guid>
     </item>
   </channel>
 </rss>

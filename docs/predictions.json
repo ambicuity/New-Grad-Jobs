@@ -3,33 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 988,
-      "change_percent": 0.2
+      "change_percent": -0.2
     },
     "30_days": {
-      "total_jobs": 992,
-      "change_percent": 0.61
+      "total_jobs": 984,
+      "change_percent": -0.6
     }
   },
   "growing_categories": [
     "Unicorn Startups",
-    "General Tech",
-    "Infrastructure"
+    "FAANG+ Infrastructure",
+    "AI/ML Engineering"
   ],
   "declining_categories": [
-    "FAANG+",
-    "Legacy Enterprise",
-    "Contract/Temporary"
+    "Generalist Software Engineering",
+    "Non-Tech Industry IT",
+    "Legacy Systems Support"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability with a mean-reverting trend around the 980-990 job range, suggesting a lack of significant hiring spikes or contractions.",
-    "Unicorn-tier companies are showing the most consistent growth, effectively offsetting the volatility and slight decline observed in the FAANG+ segment.",
-    "The low variance in the 30-day data indicates a mature, steady-state hiring environment rather than a period of rapid expansion or aggressive downsizing."
+    "The market is exhibiting high volatility within a tight range of 937-1027 jobs, suggesting a period of consolidation rather than a clear directional trend.",
+    "Unicorn-tier companies are showing the most stability and growth, acting as the primary anchor for new graduate hiring volume while other sectors remain inconsistent.",
+    "Given the 30-day average matches the current total, the market is expected to remain range-bound with minimal net growth over the next month."
   ],
-  "generated_at": "2026-04-17T00:12:43.170933",
-  "data_points": 44,
+  "generated_at": "2026-04-18T05:52:16.678107",
+  "data_points": 45,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-17"
+    "end": "2026-04-18"
   }
 }
