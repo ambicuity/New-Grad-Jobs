@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 19:54:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 20:40:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Storage at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7527407?gh_jid=7527407</link>
+      <description>New grad role at Airbnb in United States. Category: Software Engineering</description>
+      <pubDate>Mon, 20 Apr 2026 19:56:46 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7527407?gh_jid=7527407</guid>
+    </item>
     <item>
       <title> Software Engineer - Platform Productivity | USA | Remote   at Grafana Labs</title>
       <link>https://job-boards.greenhouse.io/grafanalabs/jobs/5807984004</link>
@@ -295,13 +302,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e99a6eed163c4630</guid>
     </item>
     <item>
-      <title>Field Technologist / Field Technologist Trainee for Well Intervention Services at Welltec</title>
-      <link>https://ca.indeed.com/viewjob?jk=47bc40f516fc3aef</link>
-      <description>New grad role at Welltec in Leduc, AB, CA. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=47bc40f516fc3aef</guid>
-    </item>
-    <item>
       <title>Junior Application Engineer - Electrical at MegaResistors</title>
       <link>https://ca.indeed.com/viewjob?jk=b12a9845971c0008</link>
       <description>New grad role at MegaResistors in Mississauga, ON, CA. Category: Infrastructure &amp; SRE</description>
@@ -314,6 +314,13 @@
       <description>New grad role at Mozilla Corporation in Remote, CA. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=4365f2938fcda4a4</guid>
+    </item>
+    <item>
+      <title>Field Technologist / Field Technologist Trainee for Well Intervention Services at Welltec</title>
+      <link>https://ca.indeed.com/viewjob?jk=47bc40f516fc3aef</link>
+      <description>New grad role at Welltec in Leduc, AB, CA. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=47bc40f516fc3aef</guid>
     </item>
     <item>
       <title>Custom Software Engineer at Accenture</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c5667f0f612538e4</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=b98e2476f7ab9085</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b98e2476f7ab9085</guid>
     </item>
   </channel>
 </rss>
