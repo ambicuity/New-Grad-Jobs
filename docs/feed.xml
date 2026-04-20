@@ -5,21 +5,35 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 16:25:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 17:41:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Mon, 20 Apr 2026 17:20:06 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8504232002</link>
+      <description>New grad role at GitLab in Remote, Canada; Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 20 Apr 2026 17:13:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8504232002</guid>
+    </item>
+    <item>
+      <title>Campus Talent Specialist at Lucid</title>
+      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</link>
+      <description>New grad role at Lucid in Salt Lake City, UT. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 16:24:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</guid>
+    </item>
     <item>
       <title>Software Engineer, Mapping at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8515037002?gh_jid=8515037002</link>
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 16:14:08 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8515037002?gh_jid=8515037002</guid>
-    </item>
-    <item>
-      <title>Campus Talent Specialist at Lucid</title>
-      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</link>
-      <description>New grad role at Lucid in Salt Lake City, UT. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 16:09:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</guid>
     </item>
     <item>
       <title>Software Engineer, Tracking (Starshield) at SpaceX</title>
@@ -183,13 +197,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2a93c3009da4a561</guid>
     </item>
     <item>
-      <title>Software Engineer II at Uber</title>
-      <link>https://ca.indeed.com/viewjob?jk=340f0fedb4b673cc</link>
-      <description>New grad role at Uber in Toronto, ON, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=340f0fedb4b673cc</guid>
-    </item>
-    <item>
       <title>Experienced Software Engineer–AI Application at Boeing</title>
       <link>https://in.indeed.com/viewjob?jk=69580383609f17ea</link>
       <description>New grad role at Boeing in KA, IN. Category: Software Engineering</description>
@@ -225,11 +232,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=db495ef5c2b79b57</guid>
     </item>
     <item>
-      <title>Software Engineer at Qualys</title>
-      <link>https://in.indeed.com/viewjob?jk=e9847d43410d2ce9</link>
-      <description>New grad role at Qualys in MH, IN. Category: Software Engineering</description>
+      <title>Software Engineer (Full Stack) - SME at The DarkStar Group</title>
+      <link>https://www.indeed.com/viewjob?jk=581069116591454c</link>
+      <description>New grad role at The DarkStar Group in Springfield, VA, US. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e9847d43410d2ce9</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=581069116591454c</guid>
+    </item>
+    <item>
+      <title>Maintenance Tech II at Medline Industries</title>
+      <link>https://www.indeed.com/viewjob?jk=e39c68ad331d160e</link>
+      <description>New grad role at Medline Industries in Salt Lake City, UT, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e39c68ad331d160e</guid>
     </item>
     <item>
       <title>Software Engineer (Engineer Software 1) at HII</title>
@@ -239,46 +253,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11524cfbb3ce87bf</guid>
     </item>
     <item>
-      <title>Engineer II, Controls Design at Mitsubishi Power Americas, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=6c48c7ef690aebf0</link>
-      <description>New grad role at Mitsubishi Power Americas, Inc. in Orlando, FL, US. Category: Other</description>
+      <title>Software Engineer II at Uber</title>
+      <link>https://ca.indeed.com/viewjob?jk=340f0fedb4b673cc</link>
+      <description>New grad role at Uber in Toronto, ON, CA. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6c48c7ef690aebf0</guid>
-    </item>
-    <item>
-      <title>Associate PGD Field Engineer - East FL Region at NextEra Energy</title>
-      <link>https://www.indeed.com/viewjob?jk=1767ea5c88e7e87c</link>
-      <description>New grad role at NextEra Energy in Fort Pierce, FL, US. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1767ea5c88e7e87c</guid>
-    </item>
-    <item>
-      <title>Mechanical Engineer I at Neptune Technology Group</title>
-      <link>https://www.indeed.com/viewjob?jk=911f53f21b85bb7b</link>
-      <description>New grad role at Neptune Technology Group in Tallassee, AL, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=911f53f21b85bb7b</guid>
-    </item>
-    <item>
-      <title>Entry Level Structural Engineer at AECOM</title>
-      <link>https://www.indeed.com/viewjob?jk=2897139d192bdcf5</link>
-      <description>New grad role at AECOM in Baton Rouge, LA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2897139d192bdcf5</guid>
-    </item>
-    <item>
-      <title>Field Engineer / Field Engineer Trainee for Well Intervention Services at Welltec</title>
-      <link>https://www.indeed.com/viewjob?jk=9c800b48c158357c</link>
-      <description>New grad role at Welltec in Williston, ND, US. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9c800b48c158357c</guid>
-    </item>
-    <item>
-      <title>ENGINEERING TECHNICIAN I-MATERIALS DOCUMENTATION TECHNICIAN I - DISTRICT 9 at State of Illinois</title>
-      <link>https://www.indeed.com/viewjob?jk=abf109a59dbe929b</link>
-      <description>New grad role at State of Illinois in Carbondale, IL, US. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=abf109a59dbe929b</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=340f0fedb4b673cc</guid>
     </item>
     <item>
       <title>Business Development Trainee at Syntrum Moderator Pvt Ltd</title>
@@ -309,32 +288,60 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=659f1c4e346cdb38</guid>
     </item>
     <item>
+      <title>Construction Engineering Aide II at Fluor Corp.</title>
+      <link>https://www.indeed.com/viewjob?jk=13d5672d55462647</link>
+      <description>New grad role at Fluor Corp. in Lebanon, IN, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=13d5672d55462647</guid>
+    </item>
+    <item>
+      <title>Construction Engineering Aide II at Fluor Corp.</title>
+      <link>https://www.indeed.com/viewjob?jk=0093719f148ff52c</link>
+      <description>New grad role at Fluor Corp. in Lebanon, IN, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0093719f148ff52c</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Traba</title>
+      <link>https://www.indeed.com/viewjob?jk=44a8c350b3c29695</link>
+      <description>New grad role at Traba in New York, NY, US. Category: Software Engineering</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=44a8c350b3c29695</guid>
+    </item>
+    <item>
+      <title>Software Quality Assurance Analyst I at SEACORP</title>
+      <link>https://www.indeed.com/viewjob?jk=7982aa8a1a84b1b1</link>
+      <description>New grad role at SEACORP in Newport, RI, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7982aa8a1a84b1b1</guid>
+    </item>
+    <item>
+      <title>Engineer II, Controls Design at Mitsubishi Power Americas, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=6c48c7ef690aebf0</link>
+      <description>New grad role at Mitsubishi Power Americas, Inc. in Orlando, FL, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6c48c7ef690aebf0</guid>
+    </item>
+    <item>
+      <title>COST ENGINEER II at D.A. Collins Construction - Kubricky Construction</title>
+      <link>https://www.indeed.com/viewjob?jk=27fc6437ba3f62ea</link>
+      <description>New grad role at D.A. Collins Construction - Kubricky Construction in Wilton, NY, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=27fc6437ba3f62ea</guid>
+    </item>
+    <item>
+      <title>Receptionist/Assistant Campus Visit Coordinator at Saint Mary's College</title>
+      <link>https://www.indeed.com/viewjob?jk=bf941995906af8f5</link>
+      <description>New grad role at Saint Mary's College in Notre Dame, IN, US. Category: Other</description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bf941995906af8f5</guid>
+    </item>
+    <item>
       <title>Early Career Programs Recruiter at Copeland</title>
       <link>https://www.indeed.com/viewjob?jk=22a2d87a1187befd</link>
       <description>New grad role at Copeland in St. Louis, MO, US. Category: Other</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=22a2d87a1187befd</guid>
-    </item>
-    <item>
-      <title>Instructional Assistant Special Education II - Support - Part Time - Zaharis Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=111f932e18262b04</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=111f932e18262b04</guid>
-    </item>
-    <item>
-      <title>New College Grad: Photonics Design Engineer III - Doctorate (Santa Clara, CA) at Applied Materials</title>
-      <link>https://www.indeed.com/viewjob?jk=39e095b89ffa9d4e</link>
-      <description>New grad role at Applied Materials in Santa Clara, CA, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=39e095b89ffa9d4e</guid>
-    </item>
-    <item>
-      <title>CIVIL ENGINEER V-CDOT, 2026 at City of Chicago, IL</title>
-      <link>https://www.indeed.com/viewjob?jk=3cc39bf1f811345f</link>
-      <description>New grad role at City of Chicago, IL in Chicago, IL, US. Category: Other</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3cc39bf1f811345f</guid>
     </item>
     <item>
       <title>Associate Support Engineering Data Specialist at Boeing</title>
@@ -349,13 +356,6 @@
       <description>New grad role at BlackRock in HR, IN. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d9f0453837b650da</guid>
-    </item>
-    <item>
-      <title>Associate AI Engineer at MicroStrategy India</title>
-      <link>https://in.indeed.com/viewjob?jk=9c24fac236053e90</link>
-      <description>New grad role at MicroStrategy India in MH, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9c24fac236053e90</guid>
     </item>
   </channel>
 </rss>
