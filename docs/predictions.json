@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bearish",
   "predictions": {
     "7_days": {
-      "total_jobs": 988,
-      "change_percent": -0.2
+      "total_jobs": 958,
+      "change_percent": 2.68
     },
     "30_days": {
-      "total_jobs": 984,
-      "change_percent": -0.6
+      "total_jobs": 945,
+      "change_percent": 1.29
     }
   },
   "growing_categories": [
     "Unicorn Startups",
-    "FAANG+ Infrastructure",
-    "AI/ML Engineering"
+    "AI/ML Infrastructure",
+    "Cybersecurity"
   ],
   "declining_categories": [
-    "Generalist Software Engineering",
-    "Non-Tech Industry IT",
-    "Legacy Systems Support"
+    "General Software Engineering",
+    "FAANG+ Roles",
+    "Non-Tech/Legacy Enterprise"
   ],
-  "confidence": 75,
+  "confidence": 72,
   "insights": [
-    "The market is exhibiting high volatility within a tight range of 937-1027 jobs, suggesting a period of consolidation rather than a clear directional trend.",
-    "Unicorn-tier companies are showing the most stability and growth, acting as the primary anchor for new graduate hiring volume while other sectors remain inconsistent.",
-    "Given the 30-day average matches the current total, the market is expected to remain range-bound with minimal net growth over the next month."
+    "The market is currently experiencing a downward trend, with the most recent data point (933) sitting significantly below both the 7-day and 30-day moving averages, signaling a contraction in new graduate hiring volume.",
+    "While 'Unicorn' tier companies show relative stability, the overall volatility and the decline in FAANG+ postings suggest a cautious approach to entry-level headcount expansion.",
+    "The short-term prediction accounts for a slight technical rebound toward the mean, but the long-term outlook remains bearish as hiring volume fails to sustain the 1,000-job threshold observed earlier in the month."
   ],
-  "generated_at": "2026-04-18T05:52:16.678107",
-  "data_points": 45,
+  "generated_at": "2026-04-20T11:52:36.343837",
+  "data_points": 46,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-18"
+    "end": "2026-04-20"
   }
 }
