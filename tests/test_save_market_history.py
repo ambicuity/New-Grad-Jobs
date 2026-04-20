@@ -205,6 +205,12 @@ class TestCategoryAndTierCounting:
                 'categories': ['product'],
                 'company_tier': {'tier': 'unicorn'},
             },
+            {
+                'company': 'Datadog',
+                'category': None,
+                'categories': ['infrastructure_sre'],
+                'company_tier': {'tier': 'public-tech'},
+            },
         ]
 
         update_jobs.save_market_history(jobs)

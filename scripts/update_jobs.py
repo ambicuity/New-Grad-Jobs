@@ -2145,11 +2145,12 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     today = datetime.now().strftime('%Y-%m-%d')
 
     def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
-        category = job.get('category')
-        if category is not None:
+        if 'category' in job:
             category_id = get_nested_value(job, 'category.id')
-            if isinstance(category_id, str) and category_id:
-                yield category_id
+            if isinstance(category_id, str):
+                normalized = category_id.strip()
+                if normalized:
+                    yield normalized
             return
 
         legacy_categories = job.get('categories', [])
@@ -2157,8 +2158,10 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
             return
 
         for category in legacy_categories:
-            if isinstance(category, str) and category:
-                yield category
+            if isinstance(category, str):
+                normalized = category.strip()
+                if normalized:
+                    yield normalized
 
     # Count jobs by category
     category_counts = Counter()
