@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-20T22:33:14.097171",
+    "last_updated": "2026-04-20T23:19:05.039458",
     "total_snapshots": 46,
     "date_range": {
       "start": "2026-03-05",
@@ -2485,12 +2485,12 @@
     },
     {
       "date": "2026-04-20",
-      "total_jobs": 1013,
+      "total_jobs": 992,
       "categories": {},
       "tiers": {
-        "unicorn": 480,
-        "faang_plus": 141,
-        "other": 392
+        "unicorn": 477,
+        "faang_plus": 148,
+        "other": 367
       },
       "top_companies": [
         {
@@ -2499,23 +2499,23 @@
         },
         {
           "company": "Waymo",
-          "jobs": 50
+          "jobs": 49
         },
         {
           "company": "RBC",
           "jobs": 46
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 27
-        },
-        {
           "company": "ClickHouse",
           "jobs": 27
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 26
+        },
+        {
           "company": "Boeing",
-          "jobs": 24
+          "jobs": 23
         },
         {
           "company": "Stripe",
@@ -2534,9 +2534,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 203,
-      "avg_jobs_per_company": 4.99,
-      "timestamp": "2026-04-20T22:33:14.096525"
+      "unique_companies": 189,
+      "avg_jobs_per_company": 5.25,
+      "timestamp": "2026-04-20T23:19:05.038854"
     }
   ]
 }
