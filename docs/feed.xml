@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 21:37:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 22:33:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Backend (Consumer Authentication) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7666050003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 20 Apr 2026 22:19:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7666050003</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer, IT Infrastructure at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7559168?gh_jid=7559168</link>
+      <description>New grad role at Coinbase in Remote - USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 20 Apr 2026 21:44:59 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7559168?gh_jid=7559168</guid>
+    </item>
     <item>
       <title>Software Engineer, Simulation at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8443290002?gh_jid=8443290002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 05:30:30 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397683002?gh_jid=8397683002</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 20 Apr 2026 05:29:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Top Secret Clearance at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 05:28:46 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002</guid>
     </item>
   </channel>
 </rss>
