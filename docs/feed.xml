@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 00:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 03:47:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Application Software Engineer, Data at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8420526002?gh_jid=8420526002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 00:34:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8420526002?gh_jid=8420526002</guid>
+    </item>
+    <item>
+      <title>Associate Agentic Engineer at Relevate Health</title>
+      <link>https://www.indeed.com/viewjob?jk=1e8fff7a4a695e2f</link>
+      <description>New grad role at Relevate Health in Maineville, OH, US. Category: Other</description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1e8fff7a4a695e2f</guid>
+    </item>
     <item>
       <title>2026 University Graduate - Software Development Engineer at Adobe</title>
       <link>https://adobe.wd5.myworkdayjobs.com/job/San-Jose/XMLNAME-2026-University-Graduate---Software-Development-Engineer_R161172</link>
@@ -167,6 +181,13 @@
       <description>New grad role at Northrop Grumman in United States-Alabama-Huntsville. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Associate-Engineer-Systems-Engineer-Systems_R10225451-1</guid>
+    </item>
+    <item>
+      <title>Associate Chemical Technologies Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Chemical-Technologies-Engineer_JR2026504624-1</link>
+      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Chemical-Technologies-Engineer_JR2026504624-1</guid>
     </item>
     <item>
       <title>Experienced Systems Engineer (Reliability, Maintainability &amp; System Health) at Boeing</title>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Mon, 20 Apr 2026 21:11:15 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8440980002?gh_jid=8440980002</guid>
-    </item>
-    <item>
-      <title>Power Systems Engineer (Starship) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8450056002?gh_jid=8450056002</link>
-      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 20:58:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8450056002?gh_jid=8450056002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Product Backend (4-8 YOE) at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/8397515002</link>
-      <description>New grad role at Airtable in San Francisco, CA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 20:58:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8397515002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Observability at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/8400374002</link>
-      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 20 Apr 2026 20:58:08 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8400374002</guid>
     </item>
   </channel>
 </rss>
