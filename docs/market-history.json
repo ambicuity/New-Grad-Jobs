@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T06:01:35.380786",
+    "last_updated": "2026-04-21T07:58:16.777510",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,12 +2540,12 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 990,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
-        "other": 377,
+        "other": 381,
         "unicorn": 477,
-        "faang_plus": 136
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -2573,10 +2573,6 @@
           "jobs": 21
         },
         {
-          "company": "Accenture",
-          "jobs": 21
-        },
-        {
           "company": "Stripe",
           "jobs": 21
         },
@@ -2585,13 +2581,17 @@
           "jobs": 20
         },
         {
+          "company": "Accenture",
+          "jobs": 19
+        },
+        {
           "company": "Abnormal Security",
           "jobs": 17
         }
       ],
-      "unique_companies": 193,
-      "avg_jobs_per_company": 5.13,
-      "timestamp": "2026-04-21T06:01:35.380085"
+      "unique_companies": 198,
+      "avg_jobs_per_company": 5.01,
+      "timestamp": "2026-04-21T07:58:16.776848"
     }
   ]
 }
