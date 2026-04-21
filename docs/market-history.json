@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T18:24:54.153683",
+    "last_updated": "2026-04-21T19:50:09.537812",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,10 +2540,10 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 967,
+      "total_jobs": 964,
       "categories": {},
       "tiers": {
-        "other": 372,
+        "other": 369,
         "unicorn": 475,
         "faang_plus": 120
       },
@@ -2558,18 +2558,18 @@
         },
         {
           "company": "RBC",
-          "jobs": 48
+          "jobs": 47
         },
         {
           "company": "ClickHouse",
           "jobs": 27
         },
         {
-          "company": "Affirm",
+          "company": "Stripe",
           "jobs": 20
         },
         {
-          "company": "Stripe",
+          "company": "Affirm",
           "jobs": 20
         },
         {
@@ -2589,9 +2589,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 193,
-      "avg_jobs_per_company": 5.01,
-      "timestamp": "2026-04-21T18:24:54.153054"
+      "unique_companies": 191,
+      "avg_jobs_per_company": 5.05,
+      "timestamp": "2026-04-21T19:50:09.537123"
     }
   ]
 }
