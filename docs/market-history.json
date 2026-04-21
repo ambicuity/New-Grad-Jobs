@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T07:58:16.777510",
+    "last_updated": "2026-04-21T09:26:05.853767",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,12 +2540,12 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 991,
+      "total_jobs": 987,
       "categories": {},
       "tiers": {
-        "other": 381,
+        "other": 374,
         "unicorn": 477,
-        "faang_plus": 133
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -2553,12 +2553,12 @@
           "jobs": 174
         },
         {
-          "company": "Waymo",
-          "jobs": 49
+          "company": "RBC",
+          "jobs": 57
         },
         {
-          "company": "RBC",
-          "jobs": 46
+          "company": "Waymo",
+          "jobs": 49
         },
         {
           "company": "ClickHouse",
@@ -2581,17 +2581,17 @@
           "jobs": 20
         },
         {
-          "company": "Accenture",
-          "jobs": 19
+          "company": "Abnormal Security",
+          "jobs": 17
         },
         {
-          "company": "Abnormal Security",
+          "company": "Scale AI",
           "jobs": 17
         }
       ],
-      "unique_companies": 198,
-      "avg_jobs_per_company": 5.01,
-      "timestamp": "2026-04-21T07:58:16.776848"
+      "unique_companies": 190,
+      "avg_jobs_per_company": 5.19,
+      "timestamp": "2026-04-21T09:26:05.853085"
     }
   ]
 }
