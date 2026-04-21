@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 17:26:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 18:24:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title> Software Engineer - Platform Productivity | Canada | Remote   at Grafana Labs</title>
+      <link>https://job-boards.greenhouse.io/grafanalabs/jobs/5807986004</link>
+      <description>New grad role at Grafana Labs in Canada (Remote). Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 18:15:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/grafanalabs/jobs/5807986004</guid>
+    </item>
+    <item>
+      <title>Mission Software Engineer, Public Sector at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4481921005</link>
+      <description>New grad role at Scale AI in Boston, Massachusetts ; Honolulu, HI; San Diego, CA; San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 17:35:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4481921005</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (Repayment UX Engineering)  at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7636981003</link>
+      <description>New grad role at Affirm in Remote Spain. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 17:33:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7636981003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (Repayment UX Engineering)  at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7636979003</link>
+      <description>New grad role at Affirm in Remote Poland. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 17:33:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7636979003</guid>
+    </item>
+    <item>
+      <title>Network Engineer II at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 17:23:28 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7437697?gh_jid=7437697</guid>
+    </item>
     <item>
       <title>Software Engineer - RTSM, Driver at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</link>
@@ -275,17 +310,17 @@
     </item>
     <item>
       <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 21 Apr 2026 15:30:25 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</link>
       <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 21 Apr 2026 15:30:25 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</link>
+      <description>New grad role at Lyft in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:30:25 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</guid>
     </item>
     <item>
       <title>Site Reliability Engineer 3 at MongoDB</title>
@@ -316,46 +351,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5b42fa4f69fa6bb6</guid>
     </item>
     <item>
-      <title>2026 Fulltime-Reliability Engineer I- Onsite at Raytheon</title>
-      <link>https://www.indeed.com/viewjob?jk=995211d80f548774</link>
-      <description>New grad role at Raytheon in Tewksbury, MA, US. Category: Infrastructure &amp; SRE</description>
+      <title>Engineer I (Electrical) at American Bureau of Shipping (ABS)</title>
+      <link>https://in.indeed.com/viewjob?jk=5936d2daa082983d</link>
+      <description>New grad role at American Bureau of Shipping (ABS) in MH, IN. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=995211d80f548774</guid>
-    </item>
-    <item>
-      <title>Software Development Engineer II at Clearwater Analytics (CWAN)</title>
-      <link>https://www.indeed.com/viewjob?jk=c96f4e6cc519a60b</link>
-      <description>New grad role at Clearwater Analytics (CWAN) in Boise, ID, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c96f4e6cc519a60b</guid>
-    </item>
-    <item>
-      <title>Electrical Engineer - Entry Level at Helios Electric</title>
-      <link>https://www.indeed.com/viewjob?jk=296076a07b71d356</link>
-      <description>New grad role at Helios Electric in New York, NY, US. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=296076a07b71d356</guid>
-    </item>
-    <item>
-      <title>Entry-Level Engineer GET at Precision Design &amp; Engineering Pvt. Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=b946aacc5e6d4e11</link>
-      <description>New grad role at Precision Design &amp; Engineering Pvt. Ltd. in RJ, IN. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b946aacc5e6d4e11</guid>
-    </item>
-    <item>
-      <title>AI/ML Engineer (Fresher / Entry-Level) at Helios Tech Labs</title>
-      <link>https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</link>
-      <description>New grad role at Helios Tech Labs in PB, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</guid>
-    </item>
-    <item>
-      <title>Software Engineer at GE Vernova</title>
-      <link>https://in.indeed.com/viewjob?jk=e9ab492907640bd4</link>
-      <description>New grad role at GE Vernova in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e9ab492907640bd4</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5936d2daa082983d</guid>
     </item>
   </channel>
 </rss>
