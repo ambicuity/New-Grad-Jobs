@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 20:42:54 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 21:36:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer II (Fraud)  at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7695818003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 21:21:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
+    </item>
     <item>
       <title>Software Engineer, Product Backend (4-8 YOE) at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8397515002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
     </item>
   </channel>
 </rss>
