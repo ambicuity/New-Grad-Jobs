@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T15:03:35.995667",
+    "last_updated": "2026-04-21T16:18:45.748595",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,12 +2540,12 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 976,
+      "total_jobs": 960,
       "categories": {},
       "tiers": {
-        "unicorn": 476,
-        "other": 364,
-        "faang_plus": 136
+        "unicorn": 477,
+        "other": 353,
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -2554,7 +2554,7 @@
         },
         {
           "company": "RBC",
-          "jobs": 55
+          "jobs": 52
         },
         {
           "company": "Waymo",
@@ -2565,11 +2565,11 @@
           "jobs": 27
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 23
+          "company": "Stripe",
+          "jobs": 21
         },
         {
-          "company": "Stripe",
+          "company": "Northrop Grumman",
           "jobs": 21
         },
         {
@@ -2578,7 +2578,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 18
+          "jobs": 19
         },
         {
           "company": "Abnormal Security",
@@ -2590,8 +2590,8 @@
         }
       ],
       "unique_companies": 184,
-      "avg_jobs_per_company": 5.3,
-      "timestamp": "2026-04-21T15:03:35.994922"
+      "avg_jobs_per_company": 5.22,
+      "timestamp": "2026-04-21T16:18:45.748006"
     }
   ]
 }

@@ -5,14 +5,203 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 15:03:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 16:18:45 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>DevOps Engineer - PAM Core at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7838282?gh_jid=7838282</link>
+      <description>New grad role at Okta in San Francisco, California. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 16:09:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838282?gh_jid=7838282</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer (SRE) (Pacific time) at Fireblocks</title>
+      <link>https://www.fireblocks.com/careers/position/4619316006?gh_jid=4619316006</link>
+      <description>New grad role at Fireblocks in San Francisco, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 16:00:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fireblocks.com/careers/position/4619316006?gh_jid=4619316006</guid>
+    </item>
+    <item>
+      <title>Campus Talent Specialist at Lucid</title>
+      <link>https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</link>
+      <description>New grad role at Lucid in Salt Lake City, UT. Category: Other</description>
+      <pubDate>Tue, 21 Apr 2026 16:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/lucidsoftware/jobs/5971043004</guid>
+    </item>
+    <item>
+      <title>Software Engineer at CircleCI</title>
+      <link>http://www.circleci.com/careers/jobs/8501035002/?gh_jid=8501035002</link>
+      <description>New grad role at CircleCI in Toronto, Ontario. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:57:40 +0000</pubDate>
+      <guid isPermaLink="true">http://www.circleci.com/careers/jobs/8501035002/?gh_jid=8501035002</guid>
+    </item>
     <item>
       <title>Associate Solutions Engineer at Okta</title>
       <link>https://www.okta.com/company/careers/opportunity/7833450?gh_jid=7833450</link>
       <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 14:29:50 +0000</pubDate>
+      <pubDate>Tue, 21 Apr 2026 15:49:58 +0000</pubDate>
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7833450?gh_jid=7833450</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer, Privy at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
+      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
+      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Supportability at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7384709</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7384709</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Support Experience at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7813942</link>
+      <description>New grad role at Stripe in Toronto, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7813942</guid>
+    </item>
+    <item>
+      <title>PhD Machine Learning Engineer, New Grad at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7216668</link>
+      <description>New grad role at Stripe in San Francisco, New York City, Seattle. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7216668</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7657732</link>
+      <description>New grad role at Stripe in San Francisco, New York City. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7657732</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7776179</link>
+      <description>New grad role at Stripe in SF, New York, Seattle, Dublin. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7776179</guid>
+    </item>
+    <item>
+      <title>Security Engineer, New Grad  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7477571</link>
+      <description>New grad role at Stripe in Seattle, WA; San Francisco, CA; Toronto, CAN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7477571</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7808471</link>
+      <description>New grad role at Stripe in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7808471</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
+      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Core Technology at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
+      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data &amp; AI at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fee Insights at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7436194</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7436194</guid>
+    </item>
+    <item>
+      <title>Software Engineer L2 at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7812279</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7812279</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7761694</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7761694</guid>
+    </item>
+    <item>
+      <title>Software Engineer,Service Ecosystem Sustainability  at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=6967304</link>
+      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=6967304</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Smart Contract, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7507904</link>
+      <description>New grad role at Stripe in San Francisco or New York. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Apr 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</link>
+      <description>New grad role at Lyft in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:30:25 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</link>
+      <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Apr 2026 15:30:25 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</guid>
     </item>
     <item>
       <title>Site Reliability Engineer 3 at MongoDB</title>
@@ -50,11 +239,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b946aacc5e6d4e11</guid>
     </item>
     <item>
-      <title>Junior Software Engineer at Ennexa Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=fec4ec71b2acfa48</link>
-      <description>New grad role at Ennexa Technologies in KL, IN. Category: Software Engineering</description>
+      <title>Software Engineer at GE Vernova</title>
+      <link>https://in.indeed.com/viewjob?jk=e9ab492907640bd4</link>
+      <description>New grad role at GE Vernova in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fec4ec71b2acfa48</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e9ab492907640bd4</guid>
     </item>
     <item>
       <title>Corporate Treasury-Hyderabad-Associate-Software Engineering at Goldman Sachs</title>
@@ -64,11 +253,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cf65f470ee5bf5ee</guid>
     </item>
     <item>
-      <title>Junior Engineering / Mechanical Technician at Lorneville Mechanical</title>
-      <link>https://ca.indeed.com/viewjob?jk=e8fc7a14f2917954</link>
-      <description>New grad role at Lorneville Mechanical in Saint John, NB, CA. Category: Other</description>
+      <title>AI/ML Engineer (Fresher / Entry-Level) at Helios Tech Labs</title>
+      <link>https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</link>
+      <description>New grad role at Helios Tech Labs in PB, IN. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e8fc7a14f2917954</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</guid>
     </item>
     <item>
       <title>Management Trainee - Pricing &amp; Promotions at Genpact</title>
@@ -78,25 +267,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=efb35e90f9da44be</guid>
     </item>
     <item>
-      <title>AI/ML Engineer (Fresher / Entry-Level) at Helios Tech Labs</title>
-      <link>https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</link>
-      <description>New grad role at Helios Tech Labs in PB, IN. Category: Data Science &amp; ML</description>
+      <title>Junior Engineering / Mechanical Technician at Lorneville Mechanical</title>
+      <link>https://ca.indeed.com/viewjob?jk=e8fc7a14f2917954</link>
+      <description>New grad role at Lorneville Mechanical in Saint John, NB, CA. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3b5d30ae92dd869f</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e8fc7a14f2917954</guid>
     </item>
     <item>
-      <title>2026 Digital Acquisition Media, Analyst (4 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=087e7b82d65f9ac2</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
+      <title>Software Development Engineer II at Clearwater Analytics (CWAN)</title>
+      <link>https://www.indeed.com/viewjob?jk=c96f4e6cc519a60b</link>
+      <description>New grad role at Clearwater Analytics (CWAN) in Boise, ID, US. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=087e7b82d65f9ac2</guid>
-    </item>
-    <item>
-      <title>2026 Fall Digital Marketing Coordinator (4 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=867b9ffee1b314fe</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=867b9ffee1b314fe</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c96f4e6cc519a60b</guid>
     </item>
     <item>
       <title>Engineering Technician I/II at City of Escondido, CA</title>
@@ -113,32 +295,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ac071d0d908ebd5e</guid>
     </item>
     <item>
-      <title>Office Specialist - Las Sendas Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=2c3d2fd9278a9a2a</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <title>Electrical Engineer - Entry Level at Helios Electric</title>
+      <link>https://www.indeed.com/viewjob?jk=296076a07b71d356</link>
+      <description>New grad role at Helios Electric in New York, NY, US. Category: Software Engineering</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2c3d2fd9278a9a2a</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=296076a07b71d356</guid>
     </item>
     <item>
-      <title>School Nurse - Emerson Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=2f5fa08514d7c9b9</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <title>2026 Digital Acquisition Media, Analyst (4 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=087e7b82d65f9ac2</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2f5fa08514d7c9b9</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=087e7b82d65f9ac2</guid>
     </item>
     <item>
-      <title>Instructional Assistant Special Education I - Resource - Part Time - MacArthur Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=3007a4cdb184e9f2</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <title>2026 Fall Digital Marketing Coordinator (4 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=867b9ffee1b314fe</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3007a4cdb184e9f2</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=867b9ffee1b314fe</guid>
     </item>
     <item>
-      <title>School Nurse - Summit Academy 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=d9ea30b075377651</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <title>Software Engineer II - Cloud at JPMorganChase</title>
+      <link>https://in.indeed.com/viewjob?jk=4df23553ed1f7d17</link>
+      <description>New grad role at JPMorganChase in MH, IN. Category: Software Engineering</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d9ea30b075377651</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4df23553ed1f7d17</guid>
     </item>
     <item>
       <title>Application Support Engineer II/Payments, Postilion &amp; Cloud at NCR Atleos</title>
@@ -174,188 +356,6 @@
       <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e71efc61efaaf773</guid>
-    </item>
-    <item>
-      <title>2026 CFO, Fall Financial Analyst, ALM Macro Hedging (4 Months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=dc6aee0859e84a4b</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dc6aee0859e84a4b</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student – Data Analyst, Personal Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=145543980c9a3e6e</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=145543980c9a3e6e</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student - Financial Analyst, Commercial Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=d4a8c1fedb38f02c</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=d4a8c1fedb38f02c</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student - Data Analyst, Commercial Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=cd57ba1b8a2384bb</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=cd57ba1b8a2384bb</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student - Strategy Analyst, Commercial Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=28277481975570da</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=28277481975570da</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student - Client Relationship, Commercial Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=00bad1161ec87b39</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=00bad1161ec87b39</guid>
-    </item>
-    <item>
-      <title>2026 CFO, Fall Data Analyst, Capital and Liquidity Measurement and Reporting (8 Months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=257af6bf124bc1bb</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=257af6bf124bc1bb</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student – Risk Governance, Personal Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=5ce52e704a371960</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5ce52e704a371960</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student – Business Analyst, Personal Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=094fb6cf13f21340</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=094fb6cf13f21340</guid>
-    </item>
-    <item>
-      <title>Fall 2026 Student - Project Delivery Specialist, Personal Banking at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=bffe5b2f6b751b66</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=bffe5b2f6b751b66</guid>
-    </item>
-    <item>
-      <title>Associate Field Engineer - Automated Logic at Carrier</title>
-      <link>https://www.indeed.com/viewjob?jk=8a3c2edd99b796dd</link>
-      <description>New grad role at Carrier in Muncie, IN, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8a3c2edd99b796dd</guid>
-    </item>
-    <item>
-      <title>Associate Field Service Engineer - Automated Logic at Carrier</title>
-      <link>https://www.indeed.com/viewjob?jk=498bd054f23b7cc8</link>
-      <description>New grad role at Carrier in Orlando, FL, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=498bd054f23b7cc8</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - Cloud Solutions Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=be8d4324ac30ddde</link>
-      <description>New grad role at JPMorganChase in Columbus, OH, US. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=be8d4324ac30ddde</guid>
-    </item>
-    <item>
-      <title>Preschool Instructional Assistant - Part Time - Webster Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=d1944698424cf901</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d1944698424cf901</guid>
-    </item>
-    <item>
-      <title>ProSales Associate (Early Career Sales Program) at Herc Rentals</title>
-      <link>https://www.indeed.com/viewjob?jk=e2fd7c1b74965e3a</link>
-      <description>New grad role at Herc Rentals in Bellevue, WA, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e2fd7c1b74965e3a</guid>
-    </item>
-    <item>
-      <title>Associate Retail Travel Agent (In-Store Sales) at AAA Club Alliance</title>
-      <link>https://www.indeed.com/viewjob?jk=c114a57398991247</link>
-      <description>New grad role at AAA Club Alliance in North Plainfield, NJ, US. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c114a57398991247</guid>
-    </item>
-    <item>
-      <title>CS-I (Front-end/ Fullstack) at Adobe</title>
-      <link>https://adobe.wd5.myworkdayjobs.com/job/Noida/CS-I--Front-end--Fullstack-_R167459</link>
-      <description>New grad role at Adobe in Noida. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/Noida/CS-I--Front-end--Fullstack-_R167459</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Workday Integrations at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer---Workday-Integrations_R-275113</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer---Workday-Integrations_R-275113</guid>
-    </item>
-    <item>
-      <title>Software Engineer II-2 (Java &amp; Golang) at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-2--Java---Golang-_R-276286</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-2--Java---Golang-_R-276286</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/San-Francisco-CA-USA/Software-Engineer_26WD97288-1</link>
-      <description>New grad role at Autodesk in San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/San-Francisco-CA-USA/Software-Engineer_26WD97288-1</guid>
-    </item>
-    <item>
-      <title>Java Software Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Ontario-Canada/Java-Software-Engineer_25902001</link>
-      <description>New grad role at Citi in Ontario Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Ontario-Canada/Java-Software-Engineer_25902001</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Data-Engineer_26945177</link>
-      <description>New grad role at Citi in Pune Maharashtra India. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Data-Engineer_26945177</guid>
-    </item>
-    <item>
-      <title>Software Development Engineer - SRE at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/Work-At-Home-Illinois/Software-Development-Engineer---SRE_R0890711</link>
-      <description>New grad role at CVS Health in Work At Home-Illinois. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/Work-At-Home-Illinois/Software-Development-Engineer---SRE_R0890711</guid>
-    </item>
-    <item>
-      <title>Enterprise Software Test  Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test--Engineer-II_R63559-1</link>
-      <description>New grad role at Medtronic in Nanakramguda, Hyderabad, India. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test--Engineer-II_R63559-1</guid>
-    </item>
-    <item>
-      <title>Associate PMP Engineer/ PMP Engineer - 17978 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Associate-PMP-Engineer--PMP-Engineer---17978_R10230264</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Associate-PMP-Engineer--PMP-Engineer---17978_R10230264</guid>
-    </item>
-    <item>
-      <title>Associate PMP Engineer/ PMP Engineer 17977 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Associate-PMP-Engineer--PMP-Engineer-17977_R10230261</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Other</description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Associate-PMP-Engineer--PMP-Engineer-17977_R10230261</guid>
     </item>
   </channel>
 </rss>
