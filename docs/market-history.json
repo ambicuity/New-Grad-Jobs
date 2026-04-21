@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T23:15:10.483870",
+    "last_updated": "2026-04-21T23:58:53.955514",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,17 +2540,17 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 946,
+      "total_jobs": 951,
       "categories": {},
       "tiers": {
-        "unicorn": 479,
-        "other": 335,
-        "faang_plus": 132
+        "unicorn": 478,
+        "other": 338,
+        "faang_plus": 135
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 174
+          "jobs": 173
         },
         {
           "company": "Waymo",
@@ -2590,8 +2590,8 @@
         }
       ],
       "unique_companies": 184,
-      "avg_jobs_per_company": 5.14,
-      "timestamp": "2026-04-21T23:15:10.483311"
+      "avg_jobs_per_company": 5.17,
+      "timestamp": "2026-04-21T23:58:53.954972"
     }
   ]
 }
