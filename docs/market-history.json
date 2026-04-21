@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-21T09:26:05.853767",
+    "last_updated": "2026-04-21T10:56:26.050157",
     "total_snapshots": 47,
     "date_range": {
       "start": "2026-03-05",
@@ -2540,12 +2540,12 @@
     },
     {
       "date": "2026-04-21",
-      "total_jobs": 987,
+      "total_jobs": 977,
       "categories": {},
       "tiers": {
-        "other": 374,
         "unicorn": 477,
-        "faang_plus": 136
+        "other": 365,
+        "faang_plus": 135
       },
       "top_companies": [
         {
@@ -2554,7 +2554,7 @@
         },
         {
           "company": "RBC",
-          "jobs": 57
+          "jobs": 55
         },
         {
           "company": "Waymo",
@@ -2589,9 +2589,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 190,
-      "avg_jobs_per_company": 5.19,
-      "timestamp": "2026-04-21T09:26:05.853085"
+      "unique_companies": 188,
+      "avg_jobs_per_company": 5.2,
+      "timestamp": "2026-04-21T10:56:26.049503"
     }
   ]
 }
