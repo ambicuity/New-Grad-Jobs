@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 21:16:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 22:13:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Riot Client - Publishing Platform at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</link>
+      <description>New grad role at Riot Games in Los Angeles, USA; Mercer Island, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 21:55:39 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Full Stack, Backend Focus) (Remote) at Imply</title>
+      <link>https://imply.io/positions?gh_jid=7595374003</link>
+      <description>New grad role at Imply in Burlingame, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 21:51:50 +0000</pubDate>
+      <guid isPermaLink="true">https://imply.io/positions?gh_jid=7595374003</guid>
+    </item>
+    <item>
+      <title>Software Security Engineer  at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8516916002</link>
+      <description>New grad role at GitLab in Remote, Canada; Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 22 Apr 2026 21:42:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8516916002</guid>
+    </item>
     <item>
       <title>RF Software Engineer (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8517637002?gh_jid=8517637002</link>
@@ -41,13 +62,6 @@
       <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 19:53:49 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004</guid>
-    </item>
-    <item>
-      <title>Intermediate Software Security Engineer  at GitLab</title>
-      <link>https://job-boards.greenhouse.io/gitlab/jobs/8516916002</link>
-      <description>New grad role at GitLab in Remote, Canada; Remote, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 22 Apr 2026 19:29:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8516916002</guid>
     </item>
     <item>
       <title>Security Engineer (Application Security) at Contentful</title>
@@ -149,17 +163,17 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
-      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 16:24:13 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7808471</link>
       <description>New grad role at Stripe in San Francisco, California. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 16:24:13 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7808471</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 16:24:13 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
     </item>
     <item>
       <title>Software Engineer, Bridge at Stripe</title>
@@ -321,20 +335,6 @@
       <description>New grad role at Tanium in Durham, NC (Hybrid). Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 04:30:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7669951</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer - PAM Core at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7838282?gh_jid=7838282</link>
-      <description>New grad role at Okta in San Francisco, California. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 22 Apr 2026 03:41:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838282?gh_jid=7838282</guid>
-    </item>
-    <item>
-      <title>Backend Software Engineer — Okta Privileged Access Management (PAM) at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7826456?gh_jid=7826456</link>
-      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 03:36:58 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7826456?gh_jid=7826456</guid>
     </item>
     <item>
       <title>Software Engineer II (L2) – AV &amp; UC Automations at Okta</title>
