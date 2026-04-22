@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 22:13:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 23:08:06 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III, Community Builders at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7767702</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 22:19:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7767702</guid>
+    </item>
+    <item>
+      <title>Associate Solutions Engineer at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</link>
+      <description>New grad role at Okta in Chicago, Illinois; Michigan; Ohio; Wisconsin. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 22:12:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</guid>
+    </item>
+    <item>
+      <title>DevOps Data Engineer at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7615384?gh_jid=7615384</link>
+      <description>New grad role at Okta in Washington, DC. Category: Data Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 22:12:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7615384?gh_jid=7615384</guid>
+    </item>
+    <item>
+      <title>Software Engineer II (L2) – AV &amp; UC Automations at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 22:12:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</guid>
+    </item>
     <item>
       <title>Software Engineer, Riot Client - Publishing Platform at Riot Games</title>
       <link>https://www.riotgames.com/en/work-with-us/job/7545645?gh_jid=7545645</link>
@@ -246,13 +274,6 @@
       <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7814181</guid>
     </item>
     <item>
-      <title>Associate Solutions Engineer at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</link>
-      <description>New grad role at Okta in Chicago, Illinois; Michigan; Ohio; Wisconsin. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 14:58:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</guid>
-    </item>
-    <item>
       <title>Cloud Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
       <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Tanium in Durham, NC (Hybrid). Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 04:30:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7669951</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (L2) – AV &amp; UC Automations at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</link>
-      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 03:36:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</guid>
-    </item>
-    <item>
-      <title>DevOps Data Engineer at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7615384?gh_jid=7615384</link>
-      <description>New grad role at Okta in Washington, DC. Category: Data Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 03:36:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7615384?gh_jid=7615384</guid>
-    </item>
-    <item>
-      <title>Applied AI Engineer II  at Tanium</title>
-      <link>https://job-boards.greenhouse.io/tanium/jobs/7800318</link>
-      <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid). Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 22 Apr 2026 01:09:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7800318</guid>
     </item>
   </channel>
 </rss>
