@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 08:25:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 10:05:07 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 09:05:59 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</guid>
+    </item>
     <item>
       <title>Software Engineer II, Demo Engineering at Datadog</title>
       <link>https://careers.datadoghq.com/detail/7815725/?gh_jid=7815725</link>
@@ -99,6 +106,13 @@
       <guid isPermaLink="true">https://orca.security/about/careers/5977133004?gh_jid=5977133004</guid>
     </item>
     <item>
+      <title>Junior QA Engineer at Mindrops</title>
+      <link>https://in.indeed.com/viewjob?jk=467fe2e7128f6fbd</link>
+      <description>New grad role at Mindrops in DL, IN. Category: Other</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=467fe2e7128f6fbd</guid>
+    </item>
+    <item>
       <title>Software Engineer at Morningstar</title>
       <link>https://in.indeed.com/viewjob?jk=319c9fb7c928a99a</link>
       <description>New grad role at Morningstar in MH, IN. Category: Software Engineering</description>
@@ -106,18 +120,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=319c9fb7c928a99a</guid>
     </item>
     <item>
-      <title>2026 CFO, Fall Analyst - Global Equities Valuations (12 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=880e08a7175cc393</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
+      <title>Junior QA Engineer at JS Techalliance Consulting Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=bd508138f49376bd</link>
+      <description>New grad role at JS Techalliance Consulting Pvt Ltd in MP, IN. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=880e08a7175cc393</guid>
-    </item>
-    <item>
-      <title>2026 CFO - Fall Benchmarking Strategy and Model Analytics (4 Months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=5ce90c669369ee00</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5ce90c669369ee00</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bd508138f49376bd</guid>
     </item>
     <item>
       <title>Associate Engineer at WEC Energy Group</title>
@@ -134,25 +141,39 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=32b3820abf881547</guid>
     </item>
     <item>
-      <title>Software Engineer at Red Hat</title>
-      <link>https://www.indeed.com/viewjob?jk=fac3dd5dd3fe3bac</link>
-      <description>New grad role at Red Hat in Raleigh, NC, US. Category: Software Engineering</description>
+      <title>2026 CFO, Fall Analyst - Global Equities Valuations (12 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=880e08a7175cc393</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fac3dd5dd3fe3bac</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=880e08a7175cc393</guid>
     </item>
     <item>
-      <title>Project Engineer I - Special Projects Group (SPG) at JR Merit, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=3b7e2f042182c693</link>
-      <description>New grad role at JR Merit, Inc. in Vancouver, WA, US. Category: Infrastructure &amp; SRE</description>
+      <title>2026 CFO - Fall Benchmarking Strategy and Model Analytics (4 Months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=5ce90c669369ee00</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3b7e2f042182c693</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=5ce90c669369ee00</guid>
     </item>
     <item>
-      <title>Project Engineer I - Advanced Manufacturing at JR Merit, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=e5118ffc3fb11c3e</link>
-      <description>New grad role at JR Merit, Inc. in Vancouver, WA, US. Category: Infrastructure &amp; SRE</description>
+      <title>Associate Data Center, Facilities Technician at Google</title>
+      <link>https://www.indeed.com/viewjob?jk=676d7dab9f36b301</link>
+      <description>New grad role at Google in Papillion, NE, US. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e5118ffc3fb11c3e</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=676d7dab9f36b301</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - Python/AWS/Kafka at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=0b1af3e74c0a5456</link>
+      <description>New grad role at JPMorganChase in Jersey City, NJ, US. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0b1af3e74c0a5456</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer, Backend at Ontic</title>
+      <link>https://in.indeed.com/viewjob?jk=bb3f90d84f08ccf3</link>
+      <description>New grad role at Ontic in MH, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bb3f90d84f08ccf3</guid>
     </item>
     <item>
       <title>Forward Deployed Engineer Associate at Salesforce</title>
@@ -212,10 +233,10 @@
     </item>
     <item>
       <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</link>
-      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-PTPP1/Software-Engineer-III_R-2449102-1</link>
+      <description>New grad role at Walmart in IN KA BANGALORE Home Office PTPP1. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</guid>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-PTPP1/Software-Engineer-III_R-2449102-1</guid>
     </item>
     <item>
       <title>Backend Software Engineer, Credit Cards &amp; Banking at Robinhood</title>
@@ -335,27 +356,6 @@
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Tue, 21 Apr 2026 21:41:57 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 21 Apr 2026 21:41:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672660</link>
-      <description>New grad role at MongoDB in New York City; United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 21 Apr 2026 21:41:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672660</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II (Fraud)  at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7695818003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 21 Apr 2026 21:21:03 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
     </item>
   </channel>
 </rss>
