@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bearish",
   "predictions": {
     "7_days": {
-      "total_jobs": 985,
-      "change_percent": -0.6
+      "total_jobs": 962,
+      "change_percent": 1.9
     },
     "30_days": {
-      "total_jobs": 986,
-      "change_percent": -0.5
+      "total_jobs": 955,
+      "change_percent": 1.17
     }
   },
   "growing_categories": [
-    "Unicorn Startups",
-    "Mid-market Tech",
-    "Fintech"
+    "AI/Machine Learning",
+    "Cybersecurity",
+    "Cloud Infrastructure"
   ],
   "declining_categories": [
-    "FAANG+",
-    "Legacy Enterprise",
-    "Consumer Hardware"
+    "General Software Engineering",
+    "Frontend Development",
+    "Data Analytics"
   ],
-  "confidence": 75,
+  "confidence": 65,
   "insights": [
-    "The market is exhibiting high volatility within a tight range (937–1027), suggesting a sideways consolidation phase rather than a clear directional trend.",
-    "Unicorn-tier companies remain the primary anchor for new graduate roles, showing more stability compared to the fluctuating hiring patterns observed in FAANG+ firms.",
-    "The 7-day and 30-day averages are nearly identical, indicating that the market is currently in a state of equilibrium with no significant expansion or contraction expected in the short term."
+    "The market is currently experiencing a downward trend, with the current total (944) falling below both the 7-day and 30-day moving averages, signaling a contraction in new graduate hiring volume.",
+    "Company tier data shows significant volatility in 'FAANG+' and 'Other' categories, suggesting that large firms are tightening recruitment cycles while unicorns maintain relative stability.",
+    "The consistent failure to sustain levels above the 1000-job mark over the last 30 days indicates a lack of momentum, pointing toward a period of consolidation rather than expansion."
   ],
-  "generated_at": "2026-04-21T00:09:11.304416",
-  "data_points": 47,
+  "generated_at": "2026-04-22T02:01:56.394816",
+  "data_points": 48,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-21"
+    "end": "2026-04-22"
   }
 }
