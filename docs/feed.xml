@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 11:24:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 12:19:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Support Experience at Stripe</title>
@@ -141,13 +141,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a29dab15a5c50bbc</guid>
     </item>
     <item>
-      <title>Junior QA Engineer at Mindrops</title>
-      <link>https://in.indeed.com/viewjob?jk=467fe2e7128f6fbd</link>
-      <description>New grad role at Mindrops in DL, IN. Category: Other</description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=467fe2e7128f6fbd</guid>
-    </item>
-    <item>
       <title>Software Engineer at Morningstar</title>
       <link>https://in.indeed.com/viewjob?jk=319c9fb7c928a99a</link>
       <description>New grad role at Morningstar in MH, IN. Category: Software Engineering</description>
@@ -162,11 +155,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bd508138f49376bd</guid>
     </item>
     <item>
-      <title>Junior Systems Engineer at Walker Digital Table Systems, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=65a1e58d6d977a92</link>
-      <description>New grad role at Walker Digital Table Systems, LLC in Las Vegas, NV, US. Category: Software Engineering</description>
+      <title>Associate Engineer - FEA - M&amp;S CoE - Mobility at Eaton</title>
+      <link>https://in.indeed.com/viewjob?jk=89b8e475ce7f3d2c</link>
+      <description>New grad role at Eaton in MH, IN. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=65a1e58d6d977a92</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=89b8e475ce7f3d2c</guid>
     </item>
     <item>
       <title>Associate Engineer at WEC Energy Group</title>
@@ -176,11 +169,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5126f1cc73a9b850</guid>
     </item>
     <item>
-      <title>Junior Software Engineer (On-Site, IN) at Allied Solutions</title>
-      <link>https://www.indeed.com/viewjob?jk=32b3820abf881547</link>
-      <description>New grad role at Allied Solutions in Carmel, IN, US. Category: Software Engineering</description>
+      <title>Java Software Engineer at Openkyber</title>
+      <link>https://www.indeed.com/viewjob?jk=505e83217cea061d</link>
+      <description>New grad role at Openkyber in NJ, US. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=32b3820abf881547</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=505e83217cea061d</guid>
+    </item>
+    <item>
+      <title>Junior Systems Engineer at Walker Digital Table Systems, LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=65a1e58d6d977a92</link>
+      <description>New grad role at Walker Digital Table Systems, LLC in Las Vegas, NV, US. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=65a1e58d6d977a92</guid>
     </item>
     <item>
       <title>2026 CFO, Fall Analyst - Global Equities Valuations (12 months) at RBC</title>
@@ -202,6 +202,13 @@
       <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ff73f0dca102b815</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer (On-Site, IN) at Allied Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=32b3820abf881547</link>
+      <description>New grad role at Allied Solutions in Carmel, IN, US. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=32b3820abf881547</guid>
     </item>
     <item>
       <title>Software Engineering Associate Analyst - HIH - Evernorth at The Cigna Group</title>
@@ -267,6 +274,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4cd4b6ab5a4ad3d8</guid>
     </item>
     <item>
+      <title>Associate Field Engineer - Midland, Michigan at UL Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=b71370275c49380d</link>
+      <description>New grad role at UL Solutions in MI, US. Category: Other</description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b71370275c49380d</guid>
+    </item>
+    <item>
       <title>Associate Data Center, Facilities Technician at Google</title>
       <link>https://www.indeed.com/viewjob?jk=676d7dab9f36b301</link>
       <description>New grad role at Google in Papillion, NE, US. Category: Other</description>
@@ -323,11 +337,11 @@
       <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-PTPP1/Software-Engineer-III_R-2449102-1</guid>
     </item>
     <item>
-      <title>(CAN) Maintenance Associate- Prime Mechanic at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Calgary-AB/XMLNAME--CAN--Maintenance-Associate--Prime-Mechanic_R-2484685-1</link>
-      <description>New grad role at Walmart in Calgary, AB. Category: Other</description>
+      <title>Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</link>
+      <description>New grad role at Walmart in Bentonville, AR. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Calgary-AB/XMLNAME--CAN--Maintenance-Associate--Prime-Mechanic_R-2484685-1</guid>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</guid>
     </item>
     <item>
       <title>Backend Software Engineer, Credit Cards &amp; Banking at Robinhood</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
       <pubDate>Tue, 21 Apr 2026 23:46:42 +0000</pubDate>
       <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7235419</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer at Airtable</title>
-      <link>https://job-boards.greenhouse.io/airtable/jobs/8194662002</link>
-      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 21 Apr 2026 23:46:01 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8194662002</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Public Sector at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4481921005</link>
-      <description>New grad role at Scale AI in Baltimore, MD; Colorado Springs, CO; Hampton Roads, VA; Tampa, FL; Tucson,AZ; San Francisco, CA; New York, NY; Honolulu, HI, St. Louis, MO; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Apr 2026 23:04:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4481921005</guid>
     </item>
   </channel>
 </rss>
