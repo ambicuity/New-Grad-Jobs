@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 20:11:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 21:16:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RF Software Engineer (Starshield) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8517637002?gh_jid=8517637002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 20:34:52 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8517637002?gh_jid=8517637002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer II, Corporate Security at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7494666</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 20:16:39 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7494666</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, ML Resources at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7424806</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 22 Apr 2026 20:07:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7424806</guid>
+    </item>
     <item>
       <title>Software Engineer II, Backend at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=4813946</link>
@@ -309,13 +330,6 @@
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838282?gh_jid=7838282</guid>
     </item>
     <item>
-      <title>Associate Solutions Engineer at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7833450?gh_jid=7833450</link>
-      <description>New grad role at Okta in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 03:36:58 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7833450?gh_jid=7833450</guid>
-    </item>
-    <item>
       <title>Backend Software Engineer — Okta Privileged Access Management (PAM) at Okta</title>
       <link>https://www.okta.com/company/careers/opportunity/7826456?gh_jid=7826456</link>
       <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
@@ -330,13 +344,6 @@
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7726034?gh_jid=7726034</guid>
     </item>
     <item>
-      <title>Associate Solutions Engineer at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7833853?gh_jid=7833853</link>
-      <description>New grad role at Okta in Chicago, Illinois; New York, New York; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 03:36:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7833853?gh_jid=7833853</guid>
-    </item>
-    <item>
       <title>DevOps Data Engineer at Okta</title>
       <link>https://www.okta.com/company/careers/opportunity/7615384?gh_jid=7615384</link>
       <description>New grad role at Okta in Washington, DC. Category: Data Engineering</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Tanium in Addison, TX (Hybrid); Durham, NC (Hybrid). Category: Data Science &amp; ML</description>
       <pubDate>Wed, 22 Apr 2026 01:09:53 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7800318</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7622998</link>
-      <description>New grad role at Waymo in Mountain View,  California, USA; San Francisco, California, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 00:10:58 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7622998</guid>
     </item>
   </channel>
 </rss>
