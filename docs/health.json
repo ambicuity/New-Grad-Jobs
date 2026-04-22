@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "last_run": "2026-04-22T17:54:34.255790Z",
-  "total_jobs": 982,
+  "last_run": "2026-04-22T19:00:13.751685Z",
+  "total_jobs": 973,
   "source_counts": {
-    "greenhouse": 12980,
-    "lever": 501,
-    "jobspy": 2835,
+    "greenhouse": 12970,
+    "lever": 498,
+    "jobspy": 2834,
     "workday": 3400
   },
   "zero_sources": [],
-  "run_duration_seconds": 514.4,
+  "run_duration_seconds": 496.3,
   "configured_company_apis": 204,
   "enabled_sources": 4,
-  "active_hiring_companies": 191,
+  "active_hiring_companies": 193,
   "active_sources": 4
 }

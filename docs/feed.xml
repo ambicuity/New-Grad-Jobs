@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 17:54:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 19:00:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Marketing Data Analyst – Marketing Analytics at Datadog</title>
+      <link>https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084</link>
+      <description>New grad role at Datadog in New York, New York, USA. Category: Data Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 18:22:59 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Planner Reasoning, Onboard Infrastructure at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7460969</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Apr 2026 17:53:10 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
+    </item>
     <item>
       <title>Software Engineer II - Data Management at Amplitude</title>
       <link>https://job-boards.greenhouse.io/amplitude/jobs/8519354002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b26c4275f27db34e</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=cd7c84927fcda68e</link>
-      <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cd7c84927fcda68e</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=c2747281c62e10bb</link>
-      <description>New grad role at Accenture in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c2747281c62e10bb</guid>
     </item>
   </channel>
 </rss>
