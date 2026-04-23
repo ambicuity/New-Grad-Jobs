@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 18:53:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 20:04:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Ride-Hailing Product at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7463764</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Thu, 23 Apr 2026 19:18:15 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7463764</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agent at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5704320004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Apr 2026 19:10:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5704320004</guid>
+    </item>
     <item>
       <title>Associate Solutions Engineer at Okta</title>
       <link>https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</link>
@@ -197,13 +211,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
     </item>
     <item>
-      <title>Software Engineer, Fullstack (Sell Core) at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8407054002</link>
-      <description>New grad role at Dialpad in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 14:30:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8407054002</guid>
-    </item>
-    <item>
       <title>Software Engineer (Integrations) at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
       <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
@@ -330,6 +337,13 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=15e7f3354790ae22</guid>
     </item>
     <item>
+      <title>Apprentice Trainee at Baxter</title>
+      <link>https://in.indeed.com/viewjob?jk=a4613795d2394b49</link>
+      <description>New grad role at Baxter in KA, IN. Category: Other</description>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a4613795d2394b49</guid>
+    </item>
+    <item>
       <title>Quality Engineer II at TD</title>
       <link>https://ca.indeed.com/viewjob?jk=8d1cd4e268f769eb</link>
       <description>New grad role at TD in Toronto, ON, CA. Category: Other</description>
@@ -342,20 +356,6 @@
       <description>New grad role at MAERSK in KA, IN. Category: Data Engineering</description>
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5d6a8aa6c6831498</guid>
-    </item>
-    <item>
-      <title>Desktop Software Engineer - Delivery at SLB</title>
-      <link>https://in.indeed.com/viewjob?jk=b0ccbe4498a6aa4a</link>
-      <description>New grad role at SLB in MH, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b0ccbe4498a6aa4a</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=7cd0793c859969dd</link>
-      <description>New grad role at Accenture in MH, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7cd0793c859969dd</guid>
     </item>
   </channel>
 </rss>
