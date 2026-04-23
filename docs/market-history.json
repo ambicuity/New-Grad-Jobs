@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T21:06:02.574384",
+    "last_updated": "2026-04-23T22:02:23.487712",
     "total_snapshots": 49,
     "date_range": {
       "start": "2026-03-05",
@@ -2650,12 +2650,12 @@
     },
     {
       "date": "2026-04-23",
-      "total_jobs": 992,
+      "total_jobs": 991,
       "categories": {},
       "tiers": {
-        "unicorn": 486,
+        "unicorn": 487,
         "other": 365,
-        "faang_plus": 141
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -2668,11 +2668,11 @@
         },
         {
           "company": "RBC",
-          "jobs": 38
+          "jobs": 37
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "ClickHouse",
@@ -2699,9 +2699,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 193,
-      "avg_jobs_per_company": 5.14,
-      "timestamp": "2026-04-23T21:06:02.573787"
+      "unique_companies": 200,
+      "avg_jobs_per_company": 4.96,
+      "timestamp": "2026-04-23T22:02:23.486415"
     }
   ]
 }
