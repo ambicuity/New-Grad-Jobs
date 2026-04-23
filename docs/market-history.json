@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T08:02:07.426787",
+    "last_updated": "2026-04-23T09:57:40.190428",
     "total_snapshots": 49,
     "date_range": {
       "start": "2026-03-05",
@@ -2650,12 +2650,12 @@
     },
     {
       "date": "2026-04-23",
-      "total_jobs": 1025,
+      "total_jobs": 986,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 413,
-        "faang_plus": 129
+        "other": 370,
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -2679,10 +2679,6 @@
           "jobs": 25
         },
         {
-          "company": "Accenture",
-          "jobs": 24
-        },
-        {
           "company": "Stripe",
           "jobs": 20
         },
@@ -2697,11 +2693,15 @@
         {
           "company": "Figma",
           "jobs": 18
+        },
+        {
+          "company": "Scale AI",
+          "jobs": 18
         }
       ],
-      "unique_companies": 207,
-      "avg_jobs_per_company": 4.95,
-      "timestamp": "2026-04-23T08:02:07.426186"
+      "unique_companies": 200,
+      "avg_jobs_per_company": 4.93,
+      "timestamp": "2026-04-23T09:57:40.189840"
     }
   ]
 }
