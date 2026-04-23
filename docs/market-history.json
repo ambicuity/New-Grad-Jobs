@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T09:57:40.190428",
+    "last_updated": "2026-04-23T11:12:05.733011",
     "total_snapshots": 49,
     "date_range": {
       "start": "2026-03-05",
@@ -2650,12 +2650,12 @@
     },
     {
       "date": "2026-04-23",
-      "total_jobs": 986,
+      "total_jobs": 984,
       "categories": {},
       "tiers": {
         "unicorn": 483,
-        "other": 370,
-        "faang_plus": 133
+        "other": 365,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -2668,7 +2668,7 @@
         },
         {
           "company": "RBC",
-          "jobs": 40
+          "jobs": 39
         },
         {
           "company": "Northrop Grumman",
@@ -2699,9 +2699,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 200,
-      "avg_jobs_per_company": 4.93,
-      "timestamp": "2026-04-23T09:57:40.189840"
+      "unique_companies": 202,
+      "avg_jobs_per_company": 4.87,
+      "timestamp": "2026-04-23T11:12:05.732319"
     }
   ]
 }
