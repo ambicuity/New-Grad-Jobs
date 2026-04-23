@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T03:43:03.479886",
+    "last_updated": "2026-04-23T05:58:08.919276",
     "total_snapshots": 49,
     "date_range": {
       "start": "2026-03-05",
@@ -2650,12 +2650,12 @@
     },
     {
       "date": "2026-04-23",
-      "total_jobs": 1017,
+      "total_jobs": 1032,
       "categories": {},
       "tiers": {
-        "unicorn": 482,
-        "other": 401,
-        "faang_plus": 134
+        "unicorn": 483,
+        "other": 417,
+        "faang_plus": 132
       },
       "top_companies": [
         {
@@ -2676,7 +2676,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 29
+          "jobs": 27
         },
         {
           "company": "ClickHouse",
@@ -2695,13 +2695,13 @@
           "jobs": 19
         },
         {
-          "company": "Scale AI",
+          "company": "Figma",
           "jobs": 18
         }
       ],
       "unique_companies": 207,
-      "avg_jobs_per_company": 4.91,
-      "timestamp": "2026-04-23T03:43:03.479153"
+      "avg_jobs_per_company": 4.99,
+      "timestamp": "2026-04-23T05:58:08.918754"
     }
   ]
 }
