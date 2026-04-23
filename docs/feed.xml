@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 22:02:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 23:02:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Security Engineer at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Apr 2026 22:50:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8141068002?gh_jid=8141068002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II, Core Engineering  at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7473497</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 23 Apr 2026 22:19:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=5132899</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Apr 2026 22:19:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=5132899</guid>
+    </item>
+    <item>
+      <title>E-commerce Data Scientist, Product Analytics at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7819025</link>
+      <description>New grad role at Peloton in New York, New York. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 23 Apr 2026 22:03:33 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7819025</guid>
+    </item>
     <item>
       <title>Sales Engineer II - Specialist at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/6782502?gh_jid=6782502</link>
@@ -274,13 +302,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
     </item>
     <item>
-      <title>Software Engineer II, Backend at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=5132899</link>
-      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 15:35:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=5132899</guid>
-    </item>
-    <item>
       <title>ICLR 2026 - University Recruiting at Scale AI</title>
       <link>https://job-boards.greenhouse.io/scaleai/jobs/4678035005</link>
       <description>New grad role at Scale AI in San Francisco, CA. Category: Other</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
       <pubDate>Thu, 23 Apr 2026 14:25:30 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7822831</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L3) Infrastructure at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7767260</link>
-      <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 14:25:06 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 14:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Guest &amp; Host  at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/7579462?gh_jid=7579462</link>
-      <description>New grad role at Airbnb in Remote, USA . Category: Software Engineering</description>
-      <pubDate>Thu, 23 Apr 2026 13:16:26 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/7579462?gh_jid=7579462</guid>
     </item>
   </channel>
 </rss>
