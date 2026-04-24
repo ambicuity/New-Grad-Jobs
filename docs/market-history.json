@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-24T00:00:15.414217",
+    "last_updated": "2026-04-24T03:36:37.263457",
     "total_snapshots": 50,
     "date_range": {
       "start": "2026-03-05",
@@ -2705,12 +2705,12 @@
     },
     {
       "date": "2026-04-24",
-      "total_jobs": 963,
+      "total_jobs": 984,
       "categories": {},
       "tiers": {
-        "faang_plus": 128,
-        "other": 350,
-        "unicorn": 485
+        "unicorn": 487,
+        "other": 375,
+        "faang_plus": 122
       },
       "top_companies": [
         {
@@ -2723,15 +2723,19 @@
         },
         {
           "company": "RBC",
-          "jobs": 38
+          "jobs": 37
         },
         {
           "company": "ClickHouse",
           "jobs": 25
         },
         {
+          "company": "Accenture",
+          "jobs": 23
+        },
+        {
           "company": "Affirm",
-          "jobs": 20
+          "jobs": 21
         },
         {
           "company": "Lyft",
@@ -2748,15 +2752,11 @@
         {
           "company": "Scale AI",
           "jobs": 18
-        },
-        {
-          "company": "Figma",
-          "jobs": 18
         }
       ],
-      "unique_companies": 187,
-      "avg_jobs_per_company": 5.15,
-      "timestamp": "2026-04-24T00:00:15.413706"
+      "unique_companies": 196,
+      "avg_jobs_per_company": 5.02,
+      "timestamp": "2026-04-24T03:36:37.262874"
     }
   ]
 }
