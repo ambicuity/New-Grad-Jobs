@@ -1,12 +1,16 @@
 {
-  "state": "already_generated",
-  "message": "Predictions were already generated on 2026-04-23.",
-  "updated_at": "2026-04-23T23:02:19.645146",
+  "state": "generation_failed",
+  "message": "Prediction generation raised an exception.",
+  "updated_at": "2026-04-24T00:01:00.929208",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
-  "available_history_snapshots": null,
+  "available_history_snapshots": 50,
   "prediction_artifact": {
     "path": "docs/predictions.json",
     "exists": true
+  },
+  "details": {
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-3.1-flash-lite-preview:generateContent (Caused by ResponseError('too many 503 error responses'))",
+    "model": "gemini-3.1-flash-lite-preview"
   }
 }
