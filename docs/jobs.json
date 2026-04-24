@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-24T19:37:56.072009",
-    "total_jobs": 978,
+    "generated_at": "2026-04-24T20:30:39.849140",
+    "total_jobs": 983,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 534
+        "count": 533
       },
       {
         "id": "data_ml",
@@ -25,7 +25,7 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f",
-        "count": 142
+        "count": 147
       },
       {
         "id": "hardware",
@@ -37,11 +37,1019 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc",
-        "count": 170
+        "count": 171
       }
     ]
   },
   "jobs": [
+    {
+      "id": "spacex-data-infrastructure-operations-specialist-ii-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Data Infrastructure Operations Specialist II (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002",
+      "posted_at": "2026-04-24T20:26:54",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-power-systems-controls-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Software Engineer, Power Systems Controls (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8395307002?gh_jid=8395307002",
+      "posted_at": "2026-04-24T20:25:07",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-simulations-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Software Engineer, Simulations (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8395326002?gh_jid=8395326002",
+      "posted_at": "2026-04-24T20:23:34",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-satellite-systems-software-engineer-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Satellite Systems Software Engineer (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8395341002?gh_jid=8395341002",
+      "posted_at": "2026-04-24T20:23:17",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-c++---top-secret-clearance--hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, C++ - Top Secret Clearance ",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8377056002?gh_jid=8377056002",
+      "posted_at": "2026-04-24T20:19:14",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-backend-software-engineer,-gnc-(starlink)--redmond,-wa",
+      "company": "SpaceX",
+      "title": "Backend Software Engineer, GNC (Starlink) ",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8398679002?gh_jid=8398679002",
+      "posted_at": "2026-04-24T20:18:57",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "oscar-health-associate,-operations-data-analytics-new-york,-new-york,-united-states",
+      "company": "Oscar Health",
+      "title": "Associate, Operations Data Analytics",
+      "location": "New York, New York, United States",
+      "url": "http://www.hioscar.com/careers/7793749?gh_jid=7793749",
+      "posted_at": "2026-04-24T20:18:00",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "healthcare"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-physical-design-engineer-ii-(silicon-engineering)-irvine,-ca",
+      "company": "SpaceX",
+      "title": "Physical Design Engineer II (Silicon Engineering)",
+      "location": "Irvine, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002",
+      "posted_at": "2026-04-24T20:16:44",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-tracking-(starshield)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Tracking (Starshield)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8414648002?gh_jid=8414648002",
+      "posted_at": "2026-04-24T20:16:16",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-hitl---top-secret-clearance-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, HITL - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002",
+      "posted_at": "2026-04-24T20:15:05",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-full-stack-software-engineer---top-secret-clearance-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002",
+      "posted_at": "2026-04-24T20:14:44",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-rf-silicon-software-engineer-(starlink)-redmond,-wa",
+      "company": "SpaceX",
+      "title": "RF Silicon Software Engineer (Starlink)",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8439627002?gh_jid=8439627002",
+      "posted_at": "2026-04-24T20:14:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-data---top-secret-clearance-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Data - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8397673002?gh_jid=8397673002",
+      "posted_at": "2026-04-24T20:14:22",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-site-reliability-engineer---top-secret-clearance-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Site Reliability Engineer - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002",
+      "posted_at": "2026-04-24T20:14:01",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-satellite-operations-(starshield)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Satellite Operations (Starshield)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8382088002?gh_jid=8382088002",
+      "posted_at": "2026-04-24T20:12:49",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-collision-avoidance-(starshield)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Collision Avoidance (Starshield)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8397683002?gh_jid=8397683002",
+      "posted_at": "2026-04-24T20:02:36",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-security-software-engineer---top-secret-clearance-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Security Software Engineer - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002",
+      "posted_at": "2026-04-24T20:00:57",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-avionics-systems-engineer-(starship)--hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Avionics Systems Engineer (Starship) ",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8377628002?gh_jid=8377628002",
+      "posted_at": "2026-04-24T19:57:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-avionics-systems-engineer-(starship)----starbase,-tx",
+      "company": "SpaceX",
+      "title": "Avionics Systems Engineer (Starship)   ",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8356336002?gh_jid=8356336002",
+      "posted_at": "2026-04-24T19:56:05",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-site-reliability-engineer-(application-software)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Site Reliability Engineer (Application Software)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8505386002?gh_jid=8505386002",
+      "posted_at": "2026-04-24T19:55:34",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-application-software-engineer-bastrop,-tx",
+      "company": "SpaceX",
+      "title": "Application Software Engineer",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8494240002?gh_jid=8494240002",
+      "posted_at": "2026-04-24T19:55:14",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-full-stack-software-engineer-(application-software)-bastrop,-tx",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer (Application Software)",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8495180002?gh_jid=8495180002",
+      "posted_at": "2026-04-24T19:55:14",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-application-software-engineer-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Application Software Engineer",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8494238002?gh_jid=8494238002",
+      "posted_at": "2026-04-24T19:54:39",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-full-stack-software-engineer-(application-software)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer (Application Software)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8495131002?gh_jid=8495131002",
+      "posted_at": "2026-04-24T19:54:39",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-application-software-engineer-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Application Software Engineer",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002",
+      "posted_at": "2026-04-24T19:52:33",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-application-software-engineer,-data-starbase,-tx",
+      "company": "SpaceX",
+      "title": "Application Software Engineer, Data",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8420526002?gh_jid=8420526002",
+      "posted_at": "2026-04-24T19:50:32",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-physical-design-engineer-ii-(silicon-engineering)-bastrop,-tx",
+      "company": "SpaceX",
+      "title": "Physical Design Engineer II (Silicon Engineering)",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8506545002?gh_jid=8506545002",
+      "posted_at": "2026-04-24T19:48:48",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-power-systems-engineer-(starship-avionics)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Power Systems Engineer (Starship Avionics)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002",
+      "posted_at": "2026-04-24T19:45:09",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-fluids-systems-engineer,-solar-cell-factory-(starlink)-bastrop,-tx",
+      "company": "SpaceX",
+      "title": "Fluids Systems Engineer, Solar Cell Factory (Starlink)",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002",
+      "posted_at": "2026-04-24T19:44:48",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-data-(starlink)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Data (Starlink)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002",
+      "posted_at": "2026-04-24T19:40:53",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-new-graduate-engineer,-software-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "New Graduate Engineer, Software",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8493079002?gh_jid=8493079002",
+      "posted_at": "2026-04-24T19:40:05",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-telemetry-(starlink)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Telemetry (Starlink)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002",
+      "posted_at": "2026-04-24T19:39:55",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-simulation-software-engineer-(application-software)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Simulation Software Engineer (Application Software)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002",
+      "posted_at": "2026-04-24T19:39:24",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-simulations-(application-software)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Simulations (Application Software)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002",
+      "posted_at": "2026-04-24T19:39:24",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-high-performance-computing-(hpc)-systems-engineer-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "High Performance Computing (HPC) Systems Engineer",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002",
+      "posted_at": "2026-04-24T19:35:41",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-data---top-secret-clearance-(starlink)-hawthorne,-ca",
+      "company": "SpaceX",
+      "title": "Software Engineer, Data - Top Secret Clearance (Starlink)",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8449846002?gh_jid=8449846002",
+      "posted_at": "2026-04-24T19:35:02",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false
+    },
     {
       "id": "spacex-customer-support-associate,-bilingual---ukrainian-(starlink)-bastrop,-tx",
       "company": "SpaceX",
@@ -291,34 +1299,6 @@
       "flags": {
         "no_sponsorship": false,
         "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-security-software-engineer---top-secret-clearance-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Security Software Engineer - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8306251002?gh_jid=8306251002",
-      "posted_at": "2026-04-24T19:17:09",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
       },
       "is_closed": false
     },
@@ -713,202 +1693,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-application-software-engineer-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Application Software Engineer",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8402778002?gh_jid=8402778002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-application-software-engineer-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Application Software Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8494238002?gh_jid=8494238002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-application-software-engineer-bastrop,-tx",
-      "company": "SpaceX",
-      "title": "Application Software Engineer",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8494240002?gh_jid=8494240002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-application-software-engineer,-data-starbase,-tx",
-      "company": "SpaceX",
-      "title": "Application Software Engineer, Data",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8420526002?gh_jid=8420526002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-avionics-systems-engineer-(starship)--hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Avionics Systems Engineer (Starship) ",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8377628002?gh_jid=8377628002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-avionics-systems-engineer-(starship)----starbase,-tx",
-      "company": "SpaceX",
-      "title": "Avionics Systems Engineer (Starship)   ",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8356336002?gh_jid=8356336002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-backend-software-engineer,-gnc-(starlink)--redmond,-wa",
-      "company": "SpaceX",
-      "title": "Backend Software Engineer, GNC (Starlink) ",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8398679002?gh_jid=8398679002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-data-&-control-systems-engineer-(starship-launch-pad)-cape-canaveral,-fl",
       "company": "SpaceX",
       "title": "Data & Control Systems Engineer (Starship Launch Pad)",
@@ -1021,18 +1805,18 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-infrastructure-operations-specialist-ii-(starlink)-redmond,-wa",
+      "id": "spacex-data-scientist-(starlink)-redmond,-wa",
       "company": "SpaceX",
-      "title": "Data Infrastructure Operations Specialist II (Starlink)",
+      "title": "Data Scientist (Starlink)",
       "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
       "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "unicorn",
@@ -1049,18 +1833,18 @@
       "is_closed": false
     },
     {
-      "id": "spacex-data-scientist-(starlink)-redmond,-wa",
+      "id": "spacex-embedded-security-engineer-(starlink)-redmond,-wa",
       "company": "SpaceX",
-      "title": "Data Scientist (Starlink)",
+      "title": "Embedded Security Engineer (Starlink)",
       "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "unicorn",
@@ -1110,34 +1894,6 @@
       "title": "Embedded Security Engineer (Starlink)",
       "location": "Bastrop, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-embedded-security-engineer-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Embedded Security Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -1329,90 +2085,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-fluids-systems-engineer,-solar-cell-factory-(starlink)-bastrop,-tx",
-      "company": "SpaceX",
-      "title": "Fluids Systems Engineer, Solar Cell Factory (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8346155002?gh_jid=8346155002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-full-stack-software-engineer-(application-software)-bastrop,-tx",
-      "company": "SpaceX",
-      "title": "Full Stack Software Engineer (Application Software)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8495180002?gh_jid=8495180002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-full-stack-software-engineer-(application-software)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Full Stack Software Engineer (Application Software)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8495131002?gh_jid=8495131002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-full-stack-software-engineer-(build-reliability)--hawthorne,-ca",
       "company": "SpaceX",
       "title": "Full Stack Software Engineer (Build Reliability) ",
@@ -1530,62 +2202,6 @@
       "title": "Full Stack Software Engineer (Starshield)",
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8365490002?gh_jid=8365490002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-full-stack-software-engineer---top-secret-clearance-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Full Stack Software Engineer - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8397609002?gh_jid=8397609002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-high-performance-computing-(hpc)-systems-engineer-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "High Performance Computing (HPC) Systems Engineer",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8393331002?gh_jid=8393331002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2169,11 +2785,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2197,11 +2813,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-redmond,-wa",
+      "id": "spacex-new-graduate-engineer,-mechanical-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "New Graduate Engineer, Mechanical (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8407431002?gh_jid=8407431002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8148516002?gh_jid=8148516002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2286,34 +2902,6 @@
       "title": "New Graduate Engineer, Propulsion (Starship)",
       "location": "Starbase, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8497447002?gh_jid=8497447002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-new-graduate-engineer,-software-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "New Graduate Engineer, Software",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8493079002?gh_jid=8493079002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2449,62 +3037,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-physical-design-engineer-ii-(silicon-engineering)-irvine,-ca",
-      "company": "SpaceX",
-      "title": "Physical Design Engineer II (Silicon Engineering)",
-      "location": "Irvine, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-physical-design-engineer-ii-(silicon-engineering)-bastrop,-tx",
-      "company": "SpaceX",
-      "title": "Physical Design Engineer II (Silicon Engineering)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8506545002?gh_jid=8506545002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-power-systems-engineer-bastrop,-tx",
       "company": "SpaceX",
       "title": "Power Systems Engineer",
@@ -2561,39 +3093,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-power-systems-engineer-(starship-avionics)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Power Systems Engineer (Starship Avionics)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8355513002?gh_jid=8355513002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-product-security-engineer-(starlink)-bastrop,-tx",
+      "id": "spacex-product-security-engineer-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Product Security Engineer (Starlink)",
-      "location": "Bastrop, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8459615002?gh_jid=8459615002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2645,11 +3149,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-product-security-engineer-(starlink)-hawthorne,-ca",
+      "id": "spacex-product-security-engineer-(starlink)-bastrop,-tx",
       "company": "SpaceX",
       "title": "Product Security Engineer (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8459615002?gh_jid=8459615002",
+      "location": "Bastrop, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2785,62 +3289,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-rf-silicon-software-engineer-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "RF Silicon Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8439627002?gh_jid=8439627002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-satellite-systems-software-engineer-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Satellite Systems Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8395341002?gh_jid=8395341002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-security-software-engineer,-applied-computing-(starshield)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Security Software Engineer, Applied Computing (Starshield)",
@@ -2925,11 +3373,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-hawthorne,-ca",
+      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8445643002?gh_jid=8445643002",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8406031002?gh_jid=8406031002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -2981,39 +3429,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-security-software-engineer-(starlink)-redmond,-wa",
+      "id": "spacex-security-software-engineer-(starlink)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Security Software Engineer (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8406031002?gh_jid=8406031002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-security-software-engineer-(starshield)-washington,-dc",
-      "company": "SpaceX",
-      "title": "Security Software Engineer (Starshield)",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8483980002?gh_jid=8483980002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8445643002?gh_jid=8445643002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3093,11 +3513,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-simulation-software-engineer-(application-software)-hawthorne,-ca",
+      "id": "spacex-security-software-engineer-(starshield)-washington,-dc",
       "company": "SpaceX",
-      "title": "Simulation Software Engineer (Application Software)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002",
+      "title": "Security Software Engineer (Starshield)",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8483980002?gh_jid=8483980002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3117,62 +3537,6 @@
       "flags": {
         "no_sponsorship": false,
         "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-site-reliability-engineer-(application-software)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Site Reliability Engineer (Application Software)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8505386002?gh_jid=8505386002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-site-reliability-engineer---top-secret-clearance-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Site Reliability Engineer - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8362795002?gh_jid=8362795002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
       },
       "is_closed": false
     },
@@ -3233,34 +3597,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-beam-planning-(starlink)----sunnyvale,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Beam Planning (Starlink)   ",
-      "location": "Sunnyvale, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8373117002?gh_jid=8373117002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-beam-planning-(starlink)----redmond,-wa",
       "company": "SpaceX",
       "title": "Software Engineer, Beam Planning (Starlink)   ",
@@ -3289,11 +3625,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-collision-avoidance-(starshield)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-beam-planning-(starlink)----sunnyvale,-ca",
       "company": "SpaceX",
-      "title": "Software Engineer, Collision Avoidance (Starshield)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8397683002?gh_jid=8397683002",
+      "title": "Software Engineer, Beam Planning (Starlink)   ",
+      "location": "Sunnyvale, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8373117002?gh_jid=8373117002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3373,34 +3709,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-c++-(starlink)-sunnyvale,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, C++ (Starlink)",
-      "location": "Sunnyvale, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8451960002?gh_jid=8451960002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-c++-(starlink)-redmond,-wa",
       "company": "SpaceX",
       "title": "Software Engineer, C++ (Starlink)",
@@ -3429,39 +3737,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-c++---top-secret-clearance--hawthorne,-ca",
+      "id": "spacex-software-engineer,-c++-(starlink)-sunnyvale,-ca",
       "company": "SpaceX",
-      "title": "Software Engineer, C++ - Top Secret Clearance ",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8377056002?gh_jid=8377056002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-data-(starlink)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Data (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002",
+      "title": "Software Engineer, C++ (Starlink)",
+      "location": "Sunnyvale, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8451960002?gh_jid=8451960002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3481,62 +3761,6 @@
       "flags": {
         "no_sponsorship": false,
         "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-data---top-secret-clearance-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Data - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8397673002?gh_jid=8397673002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-data---top-secret-clearance-(starlink)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Data - Top Secret Clearance (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8449846002?gh_jid=8449846002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
       },
       "is_closed": false
     },
@@ -3793,11 +4017,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
+      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
+      "location": "Starbase, TX",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3821,11 +4045,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-flight-software-(starship)-starbase,-tx",
+      "id": "spacex-software-engineer,-flight-software-(starship)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Flight Software (Starship)",
-      "location": "Starbase, TX",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8208339002?gh_jid=8208339002",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8208238002?gh_jid=8208238002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -3989,34 +4213,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-hitl---top-secret-clearance-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, HITL - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-low-latency-computing-(starlink)----redmond,-wa",
       "company": "SpaceX",
       "title": "Software Engineer, Low Latency Computing (Starlink)   ",
@@ -4101,34 +4297,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-power-systems-controls-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Software Engineer, Power Systems Controls (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8395307002?gh_jid=8395307002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-product-development-(starshield)-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Product Development (Starshield)",
@@ -4162,34 +4330,6 @@
       "title": "Software Engineer, Propulsion Simulation & Data Analysis",
       "location": "Hawthorne, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8213250002?gh_jid=8213250002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-satellite-operations-(starshield)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Satellite Operations (Starshield)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8382088002?gh_jid=8382088002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4269,62 +4409,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-simulations-(application-software)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Simulations (Application Software)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-simulations-(starlink)-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Software Engineer, Simulations (Starlink)",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8395326002?gh_jid=8395326002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer-(special-projects)---top-secret-clearance-hawthorne,-ca",
       "company": "SpaceX",
       "title": "Software Engineer (Special Projects) - Top Secret Clearance",
@@ -4381,34 +4465,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-starlink-growth-redmond,-wa",
-      "company": "SpaceX",
-      "title": "Software Engineer, Starlink Growth",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8403855002?gh_jid=8403855002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-starlink-growth-bastrop,-tx",
       "company": "SpaceX",
       "title": "Software Engineer, Starlink Growth",
@@ -4437,11 +4493,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer-(starlink-mobile)-sunnyvale,-ca",
+      "id": "spacex-software-engineer,-starlink-growth-redmond,-wa",
       "company": "SpaceX",
-      "title": "Software Engineer (Starlink Mobile)",
-      "location": "Sunnyvale, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8364374002?gh_jid=8364374002",
+      "title": "Software Engineer, Starlink Growth",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8403855002?gh_jid=8403855002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4493,11 +4549,11 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-starlink-network-redmond,-wa",
+      "id": "spacex-software-engineer-(starlink-mobile)-sunnyvale,-ca",
       "company": "SpaceX",
-      "title": "Software Engineer, Starlink Network",
-      "location": "Redmond, WA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002",
+      "title": "Software Engineer (Starlink Mobile)",
+      "location": "Sunnyvale, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8364374002?gh_jid=8364374002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4526,6 +4582,34 @@
       "title": "Software Engineer, Starlink Network",
       "location": "Sunnyvale, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8458001002?gh_jid=8458001002",
+      "posted_at": "2026-04-24T18:54:59",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "spacex-software-engineer,-starlink-network-redmond,-wa",
+      "company": "SpaceX",
+      "title": "Software Engineer, Starlink Network",
+      "location": "Redmond, WA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8477137002?gh_jid=8477137002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -4633,34 +4717,6 @@
       "is_closed": false
     },
     {
-      "id": "spacex-software-engineer,-telemetry-(starlink)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Telemetry (Starlink)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8451998002?gh_jid=8451998002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "spacex-software-engineer,-test-&-automation-(starlink-mobile)-sunnyvale,-ca",
       "company": "SpaceX",
       "title": "Software Engineer, Test & Automation (Starlink Mobile)",
@@ -4694,34 +4750,6 @@
       "title": "Software Engineer (Thermal & Fluid Analysis) ",
       "location": "Starbase, TX",
       "url": "https://boards.greenhouse.io/spacex/jobs/8222759002?gh_jid=8222759002",
-      "posted_at": "2026-04-24T18:54:59",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "spacex-software-engineer,-tracking-(starshield)-hawthorne,-ca",
-      "company": "SpaceX",
-      "title": "Software Engineer, Tracking (Starshield)",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8414648002?gh_jid=8414648002",
       "posted_at": "2026-04-24T18:54:59",
       "posted_display": "Today",
       "source": "Greenhouse",
@@ -5571,32 +5599,6 @@
       "is_closed": false
     },
     {
-      "id": "peloton-software-engineer-i-new-york,-new-york",
-      "company": "Peloton",
-      "title": "Software Engineer I",
-      "location": "New York, New York",
-      "url": "https://careers.onepeloton.com/en/all-jobs/?gh_jid=7733271",
-      "posted_at": "2026-04-24T07:44:53",
-      "posted_display": "Today",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "abnormal-security-software-engineer-2-remote---singapore",
       "company": "Abnormal Security",
       "title": "Software Engineer 2",
@@ -5925,6 +5927,32 @@
       "is_closed": false
     },
     {
+      "id": "newvision-softcom-&-consultancy-pvt.-ltd-data-engineer---databricks-mh,-in",
+      "company": "Newvision Softcom & Consultancy Pvt. Ltd",
+      "title": "Data Engineer - Databricks",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=b444961761d64f02",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "stantec-junior-hydrotechnical-engineer-markham,-on,-ca",
       "company": "Stantec",
       "title": "Junior Hydrotechnical Engineer",
@@ -5956,58 +5984,6 @@
       "title": "Civil Engineer I - Sewer and Drainage Planning Engineer",
       "location": "Vancouver, BC, CA",
       "url": "https://ca.indeed.com/viewjob?jk=0ba40ec33924bbf7",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "newvision-softcom-&-consultancy-pvt.-ltd-data-engineer---databricks-mh,-in",
-      "company": "Newvision Softcom & Consultancy Pvt. Ltd",
-      "title": "Data Engineer - Databricks",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=b444961761d64f02",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mthreat-junior-support-engineer-vancouver,-bc,-ca",
-      "company": "mThreat",
-      "title": "Junior Support Engineer",
-      "location": "Vancouver, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=500e7945f081a31f",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -6119,6 +6095,58 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ntt-data-associate-graduate-data-engineer-ka,-in",
+      "company": "NTT DATA",
+      "title": "Associate Graduate Data Engineer",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=a74e2994f648fe04",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ntt-data-associate-graduate-data-engineer-ka,-in",
+      "company": "NTT DATA",
+      "title": "Associate Graduate Data Engineer",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=9cd057bd0aa9671c",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
       },
       "company_tier": {
         "tier": "other",
@@ -6315,18 +6343,18 @@
       "is_closed": false
     },
     {
-      "id": "ntt-data-associate-graduate-data-engineer-ka,-in",
-      "company": "NTT DATA",
-      "title": "Associate Graduate Data Engineer",
-      "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=a74e2994f648fe04",
+      "id": "queen's-university-software-developer-kingston,-on,-ca",
+      "company": "Queen's University",
+      "title": "Software Developer",
+      "location": "Kingston, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=a00991d57d9c2f09",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -6341,18 +6369,174 @@
       "is_closed": false
     },
     {
-      "id": "ntt-data-associate-graduate-data-engineer-ka,-in",
-      "company": "NTT DATA",
-      "title": "Associate Graduate Data Engineer",
-      "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=9cd057bd0aa9671c",
+      "id": "carewest---innovative-health-care-physical-therapist-i-(2026-0090)-calgary,-ab,-ca",
+      "company": "Carewest - Innovative Health Care",
+      "title": "Physical Therapist I (2026-0090)",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=71c9b671179dc533",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "carewest---innovative-health-care-physical-therapist-i-(2026-0090)-calgary,-ab,-ca",
+      "company": "Carewest - Innovative Health Care",
+      "title": "Physical Therapist I (2026-0090)",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=d1bc25219f79112a",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "mayfair-diagnostics-medical-radiation-technologist---new-grads-2026-calgary,-ab,-ca",
+      "company": "Mayfair Diagnostics",
+      "title": "Medical Radiation Technologist - New Grads 2026",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=7d1ba70ffba22d3b",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "pheedloop-site-reliability-engineer-toronto,-on,-ca",
+      "company": "PheedLoop",
+      "title": "Site Reliability Engineer",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=5e5b0f935879b72a",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "whitemud-ironworks-limited-junior-structural-engineer/structural-technologist-edmonton,-ab,-ca",
+      "company": "Whitemud Ironworks Limited",
+      "title": "Junior Structural Engineer/Structural Technologist",
+      "location": "Edmonton, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=cfe77fd24b38f313",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "walmart-software-engineer-iii---fullstack-bentonville,-ar,-us",
+      "company": "Walmart",
+      "title": "Software Engineer III - Fullstack",
+      "location": "Bentonville, AR, US",
+      "url": "https://www.indeed.com/viewjob?jk=fc575889c1f884e2",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "layer8-consulting,-inc.-jr.-systems-engineer-clarksburg,-md,-us",
+      "company": "Layer8 Consulting, Inc.",
+      "title": "Jr. Systems Engineer",
+      "location": "Clarksburg, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=9f357b19418b584e",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -6653,115 +6837,11 @@
       "is_closed": false
     },
     {
-      "id": "whitemud-ironworks-limited-junior-structural-engineer/structural-technologist-edmonton,-ab,-ca",
-      "company": "Whitemud Ironworks Limited",
-      "title": "Junior Structural Engineer/Structural Technologist",
-      "location": "Edmonton, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=cfe77fd24b38f313",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "carewest---innovative-health-care-physical-therapist-i-(2026-0090)-calgary,-ab,-ca",
-      "company": "Carewest - Innovative Health Care",
-      "title": "Physical Therapist I (2026-0090)",
-      "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=71c9b671179dc533",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "carewest---innovative-health-care-physical-therapist-i-(2026-0090)-calgary,-ab,-ca",
-      "company": "Carewest - Innovative Health Care",
-      "title": "Physical Therapist I (2026-0090)",
-      "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=d1bc25219f79112a",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mayfair-diagnostics-medical-radiation-technologist---new-grads-2026-calgary,-ab,-ca",
-      "company": "Mayfair Diagnostics",
-      "title": "Medical Radiation Technologist - New Grads 2026",
-      "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=7d1ba70ffba22d3b",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "queen's-university-software-developer-kingston,-on,-ca",
-      "company": "Queen's University",
-      "title": "Software Developer",
-      "location": "Kingston, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=a00991d57d9c2f09",
+      "id": "amentum-entry-level-software-engineer/software-tester-dahlgren,-va,-us",
+      "company": "Amentum",
+      "title": "Entry Level Software Engineer/Software Tester",
+      "location": "Dahlgren, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=bd250ea7f23edd9c",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -6769,6 +6849,274 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "wilson-trailer-company-engineer-i-lennox,-sd,-us",
+      "company": "Wilson Trailer Company",
+      "title": "Engineer I",
+      "location": "Lennox, SD, US",
+      "url": "https://www.indeed.com/viewjob?jk=517ff6eb58fa0127",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "truist-software-engineer-iv-atlanta,-ga,-us",
+      "company": "Truist",
+      "title": "Software Engineer IV",
+      "location": "Atlanta, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=7b337105bc46459b",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "general-dynamics-bath-iron-works-hull-engineer-i,-life-cycle-engineering-brunswick,-me,-us",
+      "company": "General Dynamics Bath Iron Works",
+      "title": "Hull Engineer I, Life Cycle Engineering",
+      "location": "Brunswick, ME, US",
+      "url": "https://www.indeed.com/viewjob?jk=e64fe3295811d1da",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amentum-software-developer-dahlgren,-va,-us",
+      "company": "Amentum",
+      "title": "Software Developer",
+      "location": "Dahlgren, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=4dadf8e11130219d",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amentum-entry-level-optical-engineer-odon,-in,-us",
+      "company": "Amentum",
+      "title": "Entry Level Optical Engineer",
+      "location": "Odon, IN, US",
+      "url": "https://www.indeed.com/viewjob?jk=9d7d55951b7cc451",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amentum-entry-level-software-engineer/software-tester-dahlgren,-va,-us",
+      "company": "Amentum",
+      "title": "Entry Level Software Engineer/Software Tester",
+      "location": "Dahlgren, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=b6ec7bbfad8d7adc",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "nuaxis-innovations-network-engineer-ii-reston,-va,-us",
+      "company": "NuAxis Innovations",
+      "title": "Network Engineer II",
+      "location": "Reston, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=2e77d96a1a41a324",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "rfa-engineering-entry-level-mechanical-design-engineer-eden-prairie,-mn,-us",
+      "company": "RFA Engineering",
+      "title": "Entry Level Mechanical Design Engineer",
+      "location": "Eden Prairie, MN, US",
+      "url": "https://www.indeed.com/viewjob?jk=814b129fbf85c675",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "lightgrid-implementations-network-engineer-iii-scott-afb,-il,-us",
+      "company": "LightGrid",
+      "title": "Implementations Network Engineer III",
+      "location": "Scott AFB, IL, US",
+      "url": "https://www.indeed.com/viewjob?jk=092df928c7e354af",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "el-paso-community-college-network-engineer-el-paso,-tx,-us",
+      "company": "El Paso Community College",
+      "title": "Network Engineer",
+      "location": "El Paso, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=281bae4c05e74ffb",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -6795,6 +7143,32 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ies-commercial,-inc.-\u2013-dba-ies-electrical-project-engineer-entry-level---lubbock,-tx,-us",
+      "company": "IES Commercial, Inc. \u2013 DBA IES Electrical",
+      "title": "Project Engineer-Entry Level -",
+      "location": "Lubbock, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=14ac4f4690e2c55e",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -6913,144 +7287,6 @@
       "is_closed": false
     },
     {
-      "id": "amentum-software-developer-dahlgren,-va,-us",
-      "company": "Amentum",
-      "title": "Software Developer",
-      "location": "Dahlgren, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=4dadf8e11130219d",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "amentum-entry-level-software-engineer/software-tester-dahlgren,-va,-us",
-      "company": "Amentum",
-      "title": "Entry Level Software Engineer/Software Tester",
-      "location": "Dahlgren, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=bd250ea7f23edd9c",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "amentum-entry-level-optical-engineer-odon,-in,-us",
-      "company": "Amentum",
-      "title": "Entry Level Optical Engineer",
-      "location": "Odon, IN, US",
-      "url": "https://www.indeed.com/viewjob?jk=9d7d55951b7cc451",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "amentum-entry-level-software-engineer/software-tester-dahlgren,-va,-us",
-      "company": "Amentum",
-      "title": "Entry Level Software Engineer/Software Tester",
-      "location": "Dahlgren, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=b6ec7bbfad8d7adc",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "nuaxis-innovations-network-engineer-ii-reston,-va,-us",
-      "company": "NuAxis Innovations",
-      "title": "Network Engineer II",
-      "location": "Reston, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=2e77d96a1a41a324",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "fieldline-industries-mechanical-engineer-(entry-level)-boulder,-co,-us",
       "company": "FieldLine Industries",
       "title": "Mechanical Engineer (Entry Level)",
@@ -7077,167 +7313,11 @@
       "is_closed": false
     },
     {
-      "id": "lightgrid-implementations-network-engineer-iii-scott-afb,-il,-us",
-      "company": "LightGrid",
-      "title": "Implementations Network Engineer III",
-      "location": "Scott AFB, IL, US",
-      "url": "https://www.indeed.com/viewjob?jk=092df928c7e354af",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "american-electric-power-infrastructure-engineer-columbus,-oh,-us",
-      "company": "American Electric Power",
-      "title": "Infrastructure Engineer",
-      "location": "Columbus, OH, US",
-      "url": "https://www.indeed.com/viewjob?jk=97b3ed3a99dc9bbe",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "general-dynamics-bath-iron-works-hull-engineer-i,-life-cycle-engineering-brunswick,-me,-us",
-      "company": "General Dynamics Bath Iron Works",
-      "title": "Hull Engineer I, Life Cycle Engineering",
-      "location": "Brunswick, ME, US",
-      "url": "https://www.indeed.com/viewjob?jk=e64fe3295811d1da",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "rfa-engineering-entry-level-mechanical-design-engineer-eden-prairie,-mn,-us",
-      "company": "RFA Engineering",
-      "title": "Entry Level Mechanical Design Engineer",
-      "location": "Eden Prairie, MN, US",
-      "url": "https://www.indeed.com/viewjob?jk=814b129fbf85c675",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "commonwealth-of-massachusetts-correctional-officer---august-2026-start-bourne,-ma,-us",
-      "company": "Commonwealth of Massachusetts",
-      "title": "Correctional Officer - August 2026 start",
-      "location": "Bourne, MA, US",
-      "url": "https://www.indeed.com/viewjob?jk=c8c5def3015f10a8",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "virginia-commonwealth-university-vcu-som-cert-program-coordinator/office-of-graduate-education-large",
       "company": "Virginia Commonwealth University",
       "title": "VCU SOM CERT Program Coordinator/Office of Graduate Education Large Course Tutor 2026-2027 Academic year",
-      "location": "VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=c936d0b6109639d8",
-      "posted_at": "2026-04-24T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mesa-public-schools---az-family-support-specialist---part-time---fremont-junior-high-school-2026-202",
-      "company": "Mesa Public Schools - AZ",
-      "title": "Family Support Specialist - Part Time - Fremont Junior High School 2026-2027",
-      "location": "Mesa, AZ, US",
-      "url": "https://www.indeed.com/viewjob?jk=22e2af6a258a9c86",
+      "location": "Richmond, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=6fab9073fd303bd5",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -7469,11 +7549,37 @@
       "is_closed": false
     },
     {
-      "id": "captivation-software-cloud-software-engineer-2---mapreduce/hadoop/linux/java/aws-annapolis-junction,",
-      "company": "Captivation Software",
-      "title": "Cloud Software Engineer 2 - MapReduce/Hadoop/Linux/Java/AWS",
-      "location": "Annapolis Junction, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=5b794eae015e4498",
+      "id": "mesa-public-schools---az-family-support-specialist---part-time---fremont-junior-high-school-2026-202",
+      "company": "Mesa Public Schools - AZ",
+      "title": "Family Support Specialist - Part Time - Fremont Junior High School 2026-2027",
+      "location": "Mesa, AZ, US",
+      "url": "https://www.indeed.com/viewjob?jk=22e2af6a258a9c86",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "walmart-software-engineer-iii---mainframe/java-bentonville,-ar,-us",
+      "company": "Walmart",
+      "title": "Software Engineer III - Mainframe/Java",
+      "location": "Bentonville, AR, US",
+      "url": "https://www.indeed.com/viewjob?jk=3d410575fef4caac",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -7495,11 +7601,37 @@
       "is_closed": false
     },
     {
-      "id": "gallo-associate-systems-engineer-modesto,-ca,-us",
-      "company": "GALLO",
-      "title": "Associate Systems Engineer",
-      "location": "Modesto, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=a217433bb7d6cc4c",
+      "id": "the-boring-company-associate-tunnel-design-engineer-nashville,-tn,-us",
+      "company": "The Boring Company",
+      "title": "Associate Tunnel Design Engineer",
+      "location": "Nashville, TN, US",
+      "url": "https://www.indeed.com/viewjob?jk=3a5c9eed8d958e06",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "red-hat-software-engineer-raleigh,-nc,-us",
+      "company": "Red Hat",
+      "title": "Software Engineer",
+      "location": "Raleigh, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=6b64789335703f8a",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -7507,6 +7639,32 @@
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "red-hat-software-engineer---openshift-networking-raleigh,-nc,-us",
+      "company": "Red Hat",
+      "title": "Software Engineer - OpenShift Networking",
+      "location": "Raleigh, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=cc5e3ebfe562c4ed",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -7526,6 +7684,58 @@
       "title": "Psychiatric Nurse Practitioner (PMHNP) \u2013 New Grad Welcome",
       "location": "Kent, WA, US",
       "url": "https://www.indeed.com/viewjob?jk=2f6433fbbb85df49",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "medline-industries-maintenance-tech-i-auburndale,-fl,-us",
+      "company": "Medline Industries",
+      "title": "Maintenance Tech I",
+      "location": "Auburndale, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=4896456e140ea4b0",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "rockland-trust-company-relationship-banker-i-milford-south-main-branch-milford,-ma,-us",
+      "company": "Rockland Trust Company",
+      "title": "Relationship Banker I Milford South Main Branch",
+      "location": "Milford, MA, US",
+      "url": "https://www.indeed.com/viewjob?jk=cb3578406a8755e9",
       "posted_at": "2026-04-24T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -7753,6 +7963,32 @@
         "sectors": [
           "finance"
         ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "nvidia-firmware-infrastructure-engineer---gpu-us,-ca,-santa-clara",
+      "company": "NVIDIA",
+      "title": "Firmware Infrastructure Engineer - GPU",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Firmware-Infrastructure-Engineer---GPU_JR1999623-1",
+      "posted_at": "2026-04-24T00:00:00",
+      "posted_display": "Today",
+      "source": "Workday",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -10653,18 +10889,44 @@
       "is_closed": false
     },
     {
-      "id": "td-quality-engineer-ii-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Quality Engineer II",
+      "id": "tmx-group-devops-engineer-toronto,-on,-ca",
+      "company": "TMX GROUP",
+      "title": "DevOps Engineer",
       "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=8d1cd4e268f769eb",
+      "url": "https://ca.indeed.com/viewjob?jk=be32758d833306dd",
       "posted_at": "2026-04-23T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "tmx-group-devops-engineer-toronto,-on,-ca",
+      "company": "TMX GROUP",
+      "title": "DevOps Engineer",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=1177246a0aa0f055",
+      "posted_at": "2026-04-23T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -10757,37 +11019,11 @@
       "is_closed": false
     },
     {
-      "id": "tmx-group-devops-engineer-toronto,-on,-ca",
-      "company": "TMX GROUP",
-      "title": "DevOps Engineer",
+      "id": "td-quality-engineer-ii-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Quality Engineer II",
       "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=1177246a0aa0f055",
-      "posted_at": "2026-04-23T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "mustang-survival-manufacturing-engineer-i-burnaby,-bc,-ca",
-      "company": "Mustang Survival",
-      "title": "Manufacturing Engineer I",
-      "location": "Burnaby, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=2a39030ec62f9acb",
+      "url": "https://ca.indeed.com/viewjob?jk=8d1cd4e268f769eb",
       "posted_at": "2026-04-23T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -10826,6 +11062,32 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "mustang-survival-manufacturing-engineer-i-burnaby,-bc,-ca",
+      "company": "Mustang Survival",
+      "title": "Manufacturing Engineer I",
+      "location": "Burnaby, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=2a39030ec62f9acb",
+      "posted_at": "2026-04-23T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
         "sectors": []
       },
       "flags": {
@@ -10965,6 +11227,32 @@
       "is_closed": false
     },
     {
+      "id": "northwestern-medicine-facilities-engineer-ii-full-time-second-shift-winfield,-il,-us",
+      "company": "Northwestern Medicine",
+      "title": "Facilities Engineer II Full time Second shift",
+      "location": "Winfield, IL, US",
+      "url": "https://www.indeed.com/viewjob?jk=78f8c6faac630327",
+      "posted_at": "2026-04-23T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "american-bureau-of-shipping-(abs)-engineer-ii-houston,-tx,-us",
       "company": "American Bureau of Shipping (ABS)",
       "title": "Engineer II",
@@ -11043,32 +11331,6 @@
       "is_closed": false
     },
     {
-      "id": "northwestern-medicine-facilities-engineer-ii-full-time-second-shift-winfield,-il,-us",
-      "company": "Northwestern Medicine",
-      "title": "Facilities Engineer II Full time Second shift",
-      "location": "Winfield, IL, US",
-      "url": "https://www.indeed.com/viewjob?jk=78f8c6faac630327",
-      "posted_at": "2026-04-23T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "nvidia-software-qa-engineer--new-college-grad-2026-santa-clara,-ca,-us",
       "company": "NVIDIA",
       "title": "Software QA Engineer- New College Grad 2026",
@@ -11112,32 +11374,6 @@
         "tier": "faang_plus",
         "emoji": "\ud83d\udd25",
         "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "san-francisco-unified-school-district-2026-2027-board-certified-behavior-analyst-(0784),-special-edu",
-      "company": "San Francisco Unified School District",
-      "title": "2026-2027 Board Certified Behavior Analyst (0784), Special Education Services",
-      "location": "San Francisco, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=15f395a45a859d19",
-      "posted_at": "2026-04-23T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
         "sectors": []
       },
       "flags": {
@@ -11227,32 +11463,6 @@
       "is_closed": false
     },
     {
-      "id": "tiktok-research-scientist-graduate-(compute-platform---database-acceleration)---2026-start-(phd)-san",
-      "company": "TikTok",
-      "title": "Research Scientist Graduate (Compute Platform - Database Acceleration) - 2026 Start (PhD)",
-      "location": "San Jose, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=a03ee9c6beafefb7",
-      "posted_at": "2026-04-23T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "ferguson-sales-trainee-program---june-halethorpe,-md,-us",
       "company": "Ferguson",
       "title": "Sales Trainee Program - June",
@@ -11270,6 +11480,32 @@
         "tier": "other",
         "emoji": "",
         "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "tiktok-research-scientist-graduate-(compute-platform---database-acceleration)---2026-start-(phd)-san",
+      "company": "TikTok",
+      "title": "Research Scientist Graduate (Compute Platform - Database Acceleration) - 2026 Start (PhD)",
+      "location": "San Jose, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=a03ee9c6beafefb7",
+      "posted_at": "2026-04-23T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
         "sectors": []
       },
       "flags": {
@@ -12013,34 +12249,6 @@
       "is_closed": false
     },
     {
-      "id": "boeing-associate-programmer-analyst---java-full-stack-ind---bangalore,-india",
-      "company": "Boeing",
-      "title": "Associate Programmer Analyst - Java Full Stack",
-      "location": "IND - Bangalore, India",
-      "url": "https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Programmer-Analyst---Java-Full-Stack_JR2026504817-1",
-      "posted_at": "2026-04-23T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "vercel-software-engineer,-cdn-security-remote---united-states",
       "company": "Vercel",
       "title": "Software Engineer, CDN Security",
@@ -12489,7 +12697,7 @@
       "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7494666",
       "posted_at": "2026-04-22T20:16:39",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12515,7 +12723,7 @@
       "location": "San Francisco, CA, US; Seattle, WA, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=4813946",
       "posted_at": "2026-04-22T19:56:28",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12541,7 +12749,7 @@
       "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
       "url": "https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004",
       "posted_at": "2026-04-22T19:53:49",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -12613,11 +12821,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-data-scientist-seattle,-wa",
+      "id": "stripe-data-scientist-toronto",
       "company": "Stripe",
       "title": "Data Scientist",
-      "location": "Seattle, WA",
-      "url": "https://stripe.com/jobs/search?gh_jid=7809414",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=5895430",
       "posted_at": "2026-04-22T16:24:13",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -12641,11 +12849,11 @@
       "is_closed": false
     },
     {
-      "id": "stripe-data-scientist-toronto",
+      "id": "stripe-data-scientist-seattle,-wa",
       "company": "Stripe",
       "title": "Data Scientist",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=5895430",
+      "location": "Seattle, WA",
+      "url": "https://stripe.com/jobs/search?gh_jid=7809414",
       "posted_at": "2026-04-22T16:24:13",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -13383,18 +13591,18 @@
       "is_closed": false
     },
     {
-      "id": "td-software-engineer-iii---salesforce-loyalty-management-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Software Engineer III - Salesforce Loyalty Management",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=df795416b8cf02c4",
+      "id": "klohn-crippen-berger-junior-electrical-engineer-vancouver,-bc,-ca",
+      "company": "Klohn Crippen Berger",
+      "title": "Junior Electrical Engineer",
+      "location": "Vancouver, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=d837de962f172af1",
       "posted_at": "2026-04-22T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
       },
       "company_tier": {
         "tier": "other",
@@ -13435,18 +13643,18 @@
       "is_closed": false
     },
     {
-      "id": "klohn-crippen-berger-junior-electrical-engineer-vancouver,-bc,-ca",
-      "company": "Klohn Crippen Berger",
-      "title": "Junior Electrical Engineer",
-      "location": "Vancouver, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=d837de962f172af1",
+      "id": "td-software-engineer-iii---salesforce-loyalty-management-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Software Engineer III - Salesforce Loyalty Management",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=df795416b8cf02c4",
       "posted_at": "2026-04-22T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -13799,34 +14007,6 @@
       "is_closed": false
     },
     {
-      "id": "lockheed-martin-ground-data-software-engineer-littleton,-co,-us",
-      "company": "Lockheed Martin",
-      "title": "Ground Data Software Engineer",
-      "location": "Littleton, CO, US",
-      "url": "https://www.indeed.com/viewjob?jk=f69b94e4061cbd5d",
-      "posted_at": "2026-04-22T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "collins-aerospace-software-engineer-ii-(onsite)-cedar-rapids,-ia,-us",
       "company": "Collins Aerospace",
       "title": "Software Engineer II (Onsite)",
@@ -13987,9 +14167,9 @@
       "is_closed": false
     },
     {
-      "id": "wells-fargo-customer-service-specialist-(early-career-/-entry-level)---pipeline-(contract)-charlotte",
+      "id": "wells-fargo-financial-services-training-associate-(series-7)-(contract)-charlotte,-nc,-us",
       "company": "Wells Fargo",
-      "title": "Customer Service Specialist (Early Career / Entry Level) - Pipeline (contract)",
+      "title": "Financial Services Training Associate (Series 7) (contract)",
       "location": "Charlotte, NC, US",
       "url": "https://www.indeed.com/viewjob?jk=ddfe6cde49df9679",
       "posted_at": "2026-04-22T00:00:00",
@@ -14785,11 +14965,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3,-atlas-search-systems-san-francisco",
+      "id": "mongodb-software-engineer-3,-atlas-search-systems-toronto",
       "company": "MongoDB",
       "title": "Software Engineer 3, Atlas Search Systems",
-      "location": "San Francisco",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7523920",
+      "location": "Toronto",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7662950",
       "posted_at": "2026-04-21T21:41:57",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -14811,11 +14991,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer-3,-atlas-search-systems-toronto",
+      "id": "mongodb-software-engineer-3,-atlas-search-systems-san-francisco",
       "company": "MongoDB",
       "title": "Software Engineer 3, Atlas Search Systems",
-      "location": "Toronto",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7662950",
+      "location": "San Francisco",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7523920",
       "posted_at": "2026-04-21T21:41:57",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -14863,11 +15043,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-code-generation-british-columbia;-calgary",
+      "id": "mongodb-software-engineer,-code-generation-california;-colorado;-montana;-nevada;-new-mexico;-oregon",
       "company": "MongoDB",
       "title": "Software Engineer, Code Generation",
-      "location": "British Columbia; Calgary",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
+      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
       "posted_at": "2026-04-21T21:41:57",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -14889,11 +15069,11 @@
       "is_closed": false
     },
     {
-      "id": "mongodb-software-engineer,-code-generation-california;-colorado;-montana;-nevada;-new-mexico;-oregon",
+      "id": "mongodb-software-engineer,-code-generation-british-columbia;-calgary",
       "company": "MongoDB",
       "title": "Software Engineer, Code Generation",
-      "location": "California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311666",
+      "location": "British Columbia; Calgary",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7311708",
       "posted_at": "2026-04-21T21:41:57",
       "posted_display": "2 days ago",
       "source": "Greenhouse",
@@ -14973,7 +15153,7 @@
       "location": "San Francisco, CA; New York, NY",
       "url": "https://job-boards.greenhouse.io/airtable/jobs/8397515002",
       "posted_at": "2026-04-21T20:17:12",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -14999,7 +15179,7 @@
       "location": "Toronto, Ontario, Canada",
       "url": "https://www.zoominfo.com/careers?gh_jid=8511153002",
       "posted_at": "2026-04-21T20:16:05",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15025,7 +15205,7 @@
       "location": "Toronto, Canada",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8509122002?gh_jid=8509122002",
       "posted_at": "2026-04-21T19:57:47",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -15051,7 +15231,7 @@
       "location": "Hybrid; In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7483707?gh_jid=7483707",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -15077,7 +15257,7 @@
       "location": "In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7628395?gh_jid=7628395",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "infrastructure_sre",
@@ -15103,7 +15283,7 @@
       "location": "Hybrid; In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7210482?gh_jid=7210482",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15129,7 +15309,7 @@
       "location": "In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7603196?gh_jid=7603196",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15155,7 +15335,7 @@
       "location": "In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7603643?gh_jid=7603643",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15181,7 +15361,7 @@
       "location": "In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15207,7 +15387,7 @@
       "location": "In-Office",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7667832?gh_jid=7667832",
       "posted_at": "2026-04-21T19:53:17",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -15799,32 +15979,6 @@
       "is_closed": false
     },
     {
-      "id": "american-bureau-of-shipping-(abs)-engineer-i-(electrical)-mh,-in",
-      "company": "American Bureau of Shipping (ABS)",
-      "title": "Engineer I (Electrical)",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=5936d2daa082983d",
-      "posted_at": "2026-04-21T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "aeries-technology-group-associate-data-operations-analyst-ka,-in",
       "company": "Aeries Technology Group",
       "title": "Associate Data Operations Analyst",
@@ -15903,63 +16057,11 @@
       "is_closed": false
     },
     {
-      "id": "syntronic-junior-embedded-software-developer-kanata,-on,-ca",
-      "company": "Syntronic",
-      "title": "Junior Embedded Software Developer",
-      "location": "Kanata, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=d20426050c58373b",
-      "posted_at": "2026-04-21T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "siemens-junior-financial-analyst-(new-grad)--1-year-contract-oakville,-on,-ca",
-      "company": "Siemens",
-      "title": "Junior Financial Analyst (New Grad)- 1 year contract",
-      "location": "Oakville, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=07152fe7d0bd9ce3",
-      "posted_at": "2026-04-21T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "herc-rentals-sales-representative-trainee-north-york,-on,-ca",
-      "company": "Herc Rentals",
-      "title": "Sales Representative Trainee",
-      "location": "North York, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=90371d126c4c4503",
+      "id": "american-bureau-of-shipping-(abs)-engineer-i-(electrical)-mh,-in",
+      "company": "American Bureau of Shipping (ABS)",
+      "title": "Engineer I (Electrical)",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=5936d2daa082983d",
       "posted_at": "2026-04-21T00:00:00",
       "posted_display": "3 days ago",
       "source": "JobSpy (Indeed)",
@@ -16097,6 +16199,84 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "siemens-junior-financial-analyst-(new-grad)--1-year-contract-oakville,-on,-ca",
+      "company": "Siemens",
+      "title": "Junior Financial Analyst (New Grad)- 1 year contract",
+      "location": "Oakville, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=07152fe7d0bd9ce3",
+      "posted_at": "2026-04-21T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "herc-rentals-sales-representative-trainee-north-york,-on,-ca",
+      "company": "Herc Rentals",
+      "title": "Sales Representative Trainee",
+      "location": "North York, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=90371d126c4c4503",
+      "posted_at": "2026-04-21T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "syntronic-junior-embedded-software-developer-kanata,-on,-ca",
+      "company": "Syntronic",
+      "title": "Junior Embedded Software Developer",
+      "location": "Kanata, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=d20426050c58373b",
+      "posted_at": "2026-04-21T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -16293,32 +16473,6 @@
       "is_closed": false
     },
     {
-      "id": "jack-henry-&-associates-infrastructure-software-engineer-i-springfield,-mo,-us",
-      "company": "Jack Henry & Associates",
-      "title": "Infrastructure Software Engineer I",
-      "location": "Springfield, MO, US",
-      "url": "https://www.indeed.com/viewjob?jk=8fb7a554510cc0c6",
-      "posted_at": "2026-04-21T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "bmo-financial-group-credit-risk-data-analyst---6-month-contract---new-or-recent-graduate-opportunity",
       "company": "BMO Financial Group",
       "title": "Credit Risk Data Analyst - 6 Month Contract - New or Recent Graduate Opportunity",
@@ -16357,6 +16511,32 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "jack-henry-&-associates-infrastructure-software-engineer-i-springfield,-mo,-us",
+      "company": "Jack Henry & Associates",
+      "title": "Infrastructure Software Engineer I",
+      "location": "Springfield, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=8fb7a554510cc0c6",
+      "posted_at": "2026-04-21T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -16695,7 +16875,7 @@
       "location": "United States (Remote)",
       "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/5807984004",
       "posted_at": "2026-04-20T19:42:01",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -16819,6 +16999,58 @@
       "is_closed": false
     },
     {
+      "id": "megaresistors-junior-application-engineer---electrical-mississauga,-on,-ca",
+      "company": "MegaResistors",
+      "title": "Junior Application Engineer - Electrical",
+      "location": "Mississauga, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=b12a9845971c0008",
+      "posted_at": "2026-04-20T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "amrize-aggregates-&-asphalt-operations-analyst---new-graduate-calgary,-ab,-ca",
+      "company": "Amrize",
+      "title": "Aggregates & Asphalt Operations Analyst - New Graduate",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=5cc03c3f37b3a68a",
+      "posted_at": "2026-04-20T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "rbc-2026-wealth-management,-fall-technology/developer-(4-16-months)-vancouver,-bc,-ca",
       "company": "RBC",
       "title": "2026 Wealth Management, Fall Technology/Developer (4-16 months)",
@@ -16883,58 +17115,6 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "amrize-aggregates-&-asphalt-operations-analyst---new-graduate-calgary,-ab,-ca",
-      "company": "Amrize",
-      "title": "Aggregates & Asphalt Operations Analyst - New Graduate",
-      "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=5cc03c3f37b3a68a",
-      "posted_at": "2026-04-20T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "megaresistors-junior-application-engineer---electrical-mississauga,-on,-ca",
-      "company": "MegaResistors",
-      "title": "Junior Application Engineer - Electrical",
-      "location": "Mississauga, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=b12a9845971c0008",
-      "posted_at": "2026-04-20T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -17573,6 +17753,32 @@
       "is_closed": false
     },
     {
+      "id": "rbc-2026-cfo,-fall-financial-analyst-opportunities-(4-16-months)-toronto,-on,-ca",
+      "company": "RBC",
+      "title": "2026 CFO, Fall Financial Analyst Opportunities (4-16 Months)",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=e7e0c857280ecda6",
+      "posted_at": "2026-04-20T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "rbc-2026-wealth-management,-fall-product-design-(4-16-months)-toronto,-on,-ca",
       "company": "RBC",
       "title": "2026 Wealth Management, Fall Product Design (4-16 Months)",
@@ -17682,32 +17888,6 @@
       "title": "2026 Wealth Management, Fall Business Analyst (4-16 months)",
       "location": "Vancouver, BC, CA",
       "url": "https://ca.indeed.com/viewjob?jk=07626c82db603923",
-      "posted_at": "2026-04-20T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "rbc-2026-cfo,-fall-financial-analyst-opportunities-(4-16-months)-toronto,-on,-ca",
-      "company": "RBC",
-      "title": "2026 CFO, Fall Financial Analyst Opportunities (4-16 Months)",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=e7e0c857280ecda6",
       "posted_at": "2026-04-20T00:00:00",
       "posted_display": "4 days ago",
       "source": "JobSpy (Indeed)",
@@ -20363,34 +20543,6 @@
       "is_closed": false
     },
     {
-      "id": "paypal-software-engineer-san-jose,-california,-united-states-of-america",
-      "company": "PayPal",
-      "title": "Software Engineer",
-      "location": "San Jose, California, United States of America",
-      "url": "https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0136084-1",
-      "posted_at": "2026-04-14T00:00:00",
-      "posted_display": "2026-04-14",
-      "source": "Workday",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "paypal-software-engineer,-backend-san-jose,-california,-united-states-of-america",
       "company": "PayPal",
       "title": "Software Engineer, Backend",
@@ -20653,32 +20805,6 @@
       "is_closed": false
     },
     {
-      "id": "ingram-micro-associate,-technical-support-engineer---bilingual-(english/french)-mississauga,-on,-ca",
-      "company": "Ingram Micro",
-      "title": "Associate, Technical Support Engineer - Bilingual (English/French)",
-      "location": "Mississauga, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=22393faa530117db",
-      "posted_at": "2026-04-13T00:00:00",
-      "posted_display": "2026-04-13",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "roblox-data-scientist,-people-analytics-san-mateo,-ca,-united-states",
       "company": "Roblox",
       "title": "Data Scientist, People Analytics",
@@ -20861,11 +20987,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-data-scientist-remote---canada:-select-locations",
+      "id": "dropbox-data-scientist-remote---us:-select-locations",
       "company": "Dropbox",
       "title": "Data Scientist",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7762007?gh_jid=7762007",
+      "location": "Remote - US: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7762004?gh_jid=7762004",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -20887,11 +21013,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-data-scientist-remote---us:-select-locations",
+      "id": "dropbox-data-scientist-remote---canada:-select-locations",
       "company": "Dropbox",
       "title": "Data Scientist",
-      "location": "Remote - US: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7762004?gh_jid=7762004",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7762007?gh_jid=7762007",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -20965,11 +21091,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-full-stack-product-software-engineer-remote---mexico",
+      "id": "dropbox-full-stack-product-software-engineer-remote---poland",
       "company": "Dropbox",
       "title": "Full Stack Product Software Engineer",
-      "location": "Remote - Mexico",
-      "url": "https://jobs.dropbox.com/listing/7172839?gh_jid=7172839",
+      "location": "Remote - Poland",
+      "url": "https://jobs.dropbox.com/listing/7751394?gh_jid=7751394",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -21017,11 +21143,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-full-stack-product-software-engineer-remote---poland",
+      "id": "dropbox-full-stack-product-software-engineer-remote---mexico",
       "company": "Dropbox",
       "title": "Full Stack Product Software Engineer",
-      "location": "Remote - Poland",
-      "url": "https://jobs.dropbox.com/listing/7751394?gh_jid=7751394",
+      "location": "Remote - Mexico",
+      "url": "https://jobs.dropbox.com/listing/7172839?gh_jid=7172839",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -21095,11 +21221,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-infrastructure-software-engineer,-telemetry-remote---poland",
+      "id": "dropbox-infrastructure-software-engineer,-telemetry-remote---mexico",
       "company": "Dropbox",
       "title": "Infrastructure Software Engineer, Telemetry",
-      "location": "Remote - Poland",
-      "url": "https://jobs.dropbox.com/listing/7684426?gh_jid=7684426",
+      "location": "Remote - Mexico",
+      "url": "https://jobs.dropbox.com/listing/7684429?gh_jid=7684429",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -21121,11 +21247,11 @@
       "is_closed": false
     },
     {
-      "id": "dropbox-infrastructure-software-engineer,-telemetry-remote---mexico",
+      "id": "dropbox-infrastructure-software-engineer,-telemetry-remote---poland",
       "company": "Dropbox",
       "title": "Infrastructure Software Engineer, Telemetry",
-      "location": "Remote - Mexico",
-      "url": "https://jobs.dropbox.com/listing/7684429?gh_jid=7684429",
+      "location": "Remote - Poland",
+      "url": "https://jobs.dropbox.com/listing/7684426?gh_jid=7684426",
       "posted_at": "2026-04-10T16:45:13",
       "posted_display": "2026-04-10",
       "source": "Greenhouse",
@@ -23493,34 +23619,6 @@
       "is_closed": false
     },
     {
-      "id": "oscar-health-data-scientist-ii-new-york,-new-york,-united-states",
-      "company": "Oscar Health",
-      "title": "Data Scientist II",
-      "location": "New York, New York, United States",
-      "url": "http://www.hioscar.com/careers/7592301?gh_jid=7592301",
-      "posted_at": "2026-03-31T15:06:22",
-      "posted_display": "2026-03-31",
-      "source": "Greenhouse",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "healthcare"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "oscar-health-data-scientist-ii-los-angeles,-california,-united-states",
       "company": "Oscar Health",
       "title": "Data Scientist II",
@@ -23554,6 +23652,34 @@
       "title": "Data Scientist II",
       "location": "Tempe, Arizona, United States",
       "url": "http://www.hioscar.com/careers/7594416?gh_jid=7594416",
+      "posted_at": "2026-03-31T15:06:22",
+      "posted_display": "2026-03-31",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "healthcare"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "oscar-health-data-scientist-ii-new-york,-new-york,-united-states",
+      "company": "Oscar Health",
+      "title": "Data Scientist II",
+      "location": "New York, New York, United States",
+      "url": "http://www.hioscar.com/careers/7592301?gh_jid=7592301",
       "posted_at": "2026-03-31T15:06:22",
       "posted_display": "2026-03-31",
       "source": "Greenhouse",
