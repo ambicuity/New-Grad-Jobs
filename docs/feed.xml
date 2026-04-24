@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2026 16:43:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 17:42:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
+      <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Apr 2026 17:28:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 24 Apr 2026 17:21:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 24 Apr 2026 17:21:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Application Security Engineer at Starburst</title>
+      <link>https://job-boards.greenhouse.io/starburst/jobs/5119301008</link>
+      <description>New grad role at Starburst in Boston, MA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 24 Apr 2026 16:51:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/starburst/jobs/5119301008</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer III at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7766726</link>
+      <description>New grad role at Peloton in New York, New York. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 24 Apr 2026 16:45:48 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7766726</guid>
+    </item>
     <item>
       <title>Software Engineer 3 - Query Optimization at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
@@ -155,20 +190,6 @@
       <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7733271</guid>
     </item>
     <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 24 Apr 2026 07:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 24 Apr 2026 07:06:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
-    </item>
-    <item>
       <title>Software Engineer 2 at Abnormal Security</title>
       <link>https://abnormal.ai/careers/jobs/7694668003?gh_jid=7694668003</link>
       <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
@@ -260,6 +281,20 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=500e7945f081a31f</guid>
     </item>
     <item>
+      <title>Junior Hydrotechnical Engineer at Stantec</title>
+      <link>https://ca.indeed.com/viewjob?jk=7f20a4458e548c64</link>
+      <description>New grad role at Stantec in Markham, ON, CA. Category: Other</description>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7f20a4458e548c64</guid>
+    </item>
+    <item>
+      <title>Application Engineer II at Johnson Controls</title>
+      <link>https://in.indeed.com/viewjob?jk=a3493ba173532288</link>
+      <description>New grad role at Johnson Controls in KA, IN. Category: Other</description>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a3493ba173532288</guid>
+    </item>
+    <item>
       <title>Software Engineer at Software Engineer</title>
       <link>https://in.indeed.com/viewjob?jk=b5615241fb949006</link>
       <description>New grad role at Software Engineer in TS, IN. Category: Software Engineering</description>
@@ -288,74 +323,39 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a9404a005d1704f3</guid>
     </item>
     <item>
-      <title>Junior Hydrotechnical Engineer at Stantec</title>
-      <link>https://ca.indeed.com/viewjob?jk=7f20a4458e548c64</link>
-      <description>New grad role at Stantec in Markham, ON, CA. Category: Other</description>
+      <title>Junior Electrical Engineer at Platinum Engineering Ltd.</title>
+      <link>https://ca.indeed.com/viewjob?jk=7b844d0b0fa6d009</link>
+      <description>New grad role at Platinum Engineering Ltd. in Calgary, AB, CA. Category: Hardware Engineering</description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7f20a4458e548c64</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7b844d0b0fa6d009</guid>
     </item>
     <item>
-      <title>SRE SW Development Engineer 1 (Junior/Associate) at Dexcom</title>
-      <link>https://in.indeed.com/viewjob?jk=3a852ef02077046f</link>
-      <description>New grad role at Dexcom in KA, IN. Category: Infrastructure &amp; SRE</description>
+      <title>Associate Graduate Data Engineer at NTT DATA</title>
+      <link>https://in.indeed.com/viewjob?jk=9cd057bd0aa9671c</link>
+      <description>New grad role at NTT DATA in KA, IN. Category: Data Engineering</description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3a852ef02077046f</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9cd057bd0aa9671c</guid>
     </item>
     <item>
-      <title>SRE SW Development Engineer 2 (Associate) at Dexcom</title>
-      <link>https://in.indeed.com/viewjob?jk=ee700c0e4e599f4a</link>
-      <description>New grad role at Dexcom in KA, IN. Category: Infrastructure &amp; SRE</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=9b9791321e73f488</link>
+      <description>New grad role at Accenture in TN, IN. Category: Software Engineering</description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ee700c0e4e599f4a</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9b9791321e73f488</guid>
     </item>
     <item>
-      <title>Specialist Software Engineer - BigData at Société Générale</title>
-      <link>https://in.indeed.com/viewjob?jk=00bd1c7d51d10d19</link>
-      <description>New grad role at Société Générale in KA, IN. Category: Software Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=4b5571e56d6a8839</link>
+      <description>New grad role at Accenture in TN, IN. Category: Software Engineering</description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=00bd1c7d51d10d19</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4b5571e56d6a8839</guid>
     </item>
     <item>
-      <title>Associate, AI Agent Engineer at BlackRock</title>
-      <link>https://in.indeed.com/viewjob?jk=ca9b24d90ec9f4de</link>
-      <description>New grad role at BlackRock in KA, IN. Category: Other</description>
+      <title>Associate Product Engineer at TEMENOS</title>
+      <link>https://in.indeed.com/viewjob?jk=e90e0ff39a3afe05</link>
+      <description>New grad role at TEMENOS in TN, IN. Category: Other</description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ca9b24d90ec9f4de</guid>
-    </item>
-    <item>
-      <title>Junior Structural Engineer/Structural Technologist at Whitemud Ironworks Limited</title>
-      <link>https://ca.indeed.com/viewjob?jk=cfe77fd24b38f313</link>
-      <description>New grad role at Whitemud Ironworks Limited in Edmonton, AB, CA. Category: Other</description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=cfe77fd24b38f313</guid>
-    </item>
-    <item>
-      <title>Software Quality Assurance Engineer (Entry-Level), Windows Connector at Realtime Robotics</title>
-      <link>https://www.indeed.com/viewjob?jk=7436533d23944b28</link>
-      <description>New grad role at Realtime Robotics in Boston, MA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7436533d23944b28</guid>
-    </item>
-    <item>
-      <title>Design Engineer I at SIG SAUER, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=f0f4eb9832f51c36</link>
-      <description>New grad role at SIG SAUER, Inc. in Exeter, NH, US. Category: Other</description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f0f4eb9832f51c36</guid>
-    </item>
-    <item>
-      <title>2026 Collins Full Time - Systems Engineer I - Military Avionics Flight Management Systems - Cedar Rapids, IA (Onsite) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=516c5f9edca015b1</link>
-      <description>New grad role at Collins Aerospace in Cedar Rapids, IA, US. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=516c5f9edca015b1</guid>
-    </item>
-    <item>
-      <title>2026 Collins Full Time - Software Engineer I - Military Avionics Flight Management Systems - Cedar Rapids, IA (Onsite) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=69bac46296c117b9</link>
-      <description>New grad role at Collins Aerospace in Cedar Rapids, IA, US. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=69bac46296c117b9</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e90e0ff39a3afe05</guid>
     </item>
   </channel>
 </rss>
