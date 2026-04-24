@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-24T22:15:30.907915",
+    "last_updated": "2026-04-24T23:04:54.040739",
     "total_snapshots": 50,
     "date_range": {
       "start": "2026-03-05",
@@ -2705,12 +2705,12 @@
     },
     {
       "date": "2026-04-24",
-      "total_jobs": 978,
+      "total_jobs": 975,
       "categories": {},
       "tiers": {
         "unicorn": 487,
-        "other": 370,
-        "faang_plus": 121
+        "other": 366,
+        "faang_plus": 122
       },
       "top_companies": [
         {
@@ -2746,17 +2746,17 @@
           "jobs": 19
         },
         {
-          "company": "Scale AI",
+          "company": "Abnormal Security",
           "jobs": 18
         },
         {
-          "company": "Figma",
+          "company": "Scale AI",
           "jobs": 18
         }
       ],
-      "unique_companies": 199,
-      "avg_jobs_per_company": 4.91,
-      "timestamp": "2026-04-24T22:15:30.907247"
+      "unique_companies": 197,
+      "avg_jobs_per_company": 4.95,
+      "timestamp": "2026-04-24T23:04:54.040202"
     }
   ]
 }
