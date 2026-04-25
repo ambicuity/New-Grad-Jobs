@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2026 06:13:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 07:51:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer 2 - Backend - Behavioral Security Products at Abnormal Security</title>
@@ -55,6 +55,13 @@
       <description>New grad role at coto in Remote, IN. Category: Software Engineering</description>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f128800b9457575c</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</link>
+      <description>New grad role at Walmart in Bentonville, AR. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</guid>
     </item>
     <item>
       <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 24 Apr 2026 22:47:04 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Apr 2026 22:47:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479234002?gh_jid=8479234002</guid>
     </item>
   </channel>
 </rss>
