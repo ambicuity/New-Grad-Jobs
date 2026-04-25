@@ -2,12 +2,12 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 981,
-      "change_percent": -0.3
+      "total_jobs": 988,
+      "change_percent": -1.5
     },
     "30_days": {
-      "total_jobs": 984,
-      "change_percent": 0.0
+      "total_jobs": 985,
+      "change_percent": -1.8
     }
   },
   "growing_categories": [
@@ -17,19 +17,19 @@
   ],
   "declining_categories": [
     "FAANG+",
-    "Legacy Enterprise",
-    "Hardware/Semiconductor"
+    "Big Tech Hardware",
+    "Legacy Enterprise"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high volatility within a tight range (948-1027), suggesting a sideways consolidation phase rather than a clear directional trend.",
-    "While FAANG+ hiring has shown a consistent downward trend over the last week, this is being offset by growth in the 'Other' category, indicating a shift toward smaller, more agile firms.",
-    "The 30-day average is identical to the current total, reinforcing the neutral outlook and suggesting that hiring volume will likely remain stable as companies maintain current headcount budgets."
+    "The market is currently range-bound, oscillating tightly around the 985-job mean with no clear breakout trend in either direction.",
+    "While FAANG+ companies show a clear downward trend in hiring volume, this is being offset by steady growth in the 'Unicorn' and 'Other' tiers, suggesting a shift toward agile, high-growth firms.",
+    "The 30-day outlook remains stable as the current total of 1003 is slightly above the 30-day average, indicating a likely minor correction toward the mean rather than a sustained rally."
   ],
-  "generated_at": "2026-04-24T03:37:06.850309",
-  "data_points": 50,
+  "generated_at": "2026-04-25T02:16:16.197903",
+  "data_points": 51,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-24"
+    "end": "2026-04-25"
   }
 }
