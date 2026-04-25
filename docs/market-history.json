@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-25T04:49:39.887487",
+    "last_updated": "2026-04-25T06:13:52.952408",
     "total_snapshots": 51,
     "date_range": {
       "start": "2026-03-05",
@@ -2760,12 +2760,12 @@
     },
     {
       "date": "2026-04-25",
-      "total_jobs": 997,
+      "total_jobs": 922,
       "categories": {},
       "tiers": {
-        "other": 380,
+        "other": 374,
         "unicorn": 490,
-        "faang_plus": 127
+        "faang_plus": 58
       },
       "top_companies": [
         {
@@ -2779,6 +2779,10 @@
         {
           "company": "RBC",
           "jobs": 38
+        },
+        {
+          "company": "Openkyber",
+          "jobs": 36
         },
         {
           "company": "ClickHouse",
@@ -2803,15 +2807,11 @@
         {
           "company": "Dropbox",
           "jobs": 19
-        },
-        {
-          "company": "NVIDIA",
-          "jobs": 18
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.84,
-      "timestamp": "2026-04-25T04:49:39.886818"
+      "unique_companies": 180,
+      "avg_jobs_per_company": 5.12,
+      "timestamp": "2026-04-25T06:13:52.951699"
     }
   ]
 }
