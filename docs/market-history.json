@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-25T02:16:14.885844",
+    "last_updated": "2026-04-25T04:49:39.887487",
     "total_snapshots": 51,
     "date_range": {
       "start": "2026-03-05",
@@ -2760,12 +2760,12 @@
     },
     {
       "date": "2026-04-25",
-      "total_jobs": 1003,
+      "total_jobs": 997,
       "categories": {},
       "tiers": {
-        "other": 387,
+        "other": 380,
         "unicorn": 490,
-        "faang_plus": 126
+        "faang_plus": 127
       },
       "top_companies": [
         {
@@ -2778,7 +2778,7 @@
         },
         {
           "company": "RBC",
-          "jobs": 37
+          "jobs": 38
         },
         {
           "company": "ClickHouse",
@@ -2805,13 +2805,13 @@
           "jobs": 19
         },
         {
-          "company": "Scale AI",
+          "company": "NVIDIA",
           "jobs": 18
         }
       ],
       "unique_companies": 206,
-      "avg_jobs_per_company": 4.87,
-      "timestamp": "2026-04-25T02:16:14.885223"
+      "avg_jobs_per_company": 4.84,
+      "timestamp": "2026-04-25T04:49:39.886818"
     }
   ]
 }
