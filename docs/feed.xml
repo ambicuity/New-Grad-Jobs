@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2026 07:51:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 08:41:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer 2 - Backend - Behavioral Security Products at Abnormal Security</title>
@@ -50,18 +50,25 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9bb77392ab1532d7</guid>
     </item>
     <item>
+      <title>Junior Embedded Software Engineer at Precise Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=f47e2235e431c445</link>
+      <description>New grad role at Precise Systems in Tucson, AZ, US. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f47e2235e431c445</guid>
+    </item>
+    <item>
+      <title>Fall 2026 Marketing Adjunct Professor at St. John's University</title>
+      <link>https://www.indeed.com/viewjob?jk=3f4fc1aaf7f4fa9d</link>
+      <description>New grad role at St. John's University in Queens, NY, US. Category: Other</description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3f4fc1aaf7f4fa9d</guid>
+    </item>
+    <item>
       <title>Associate Delivery Engineer at coto</title>
       <link>https://in.indeed.com/viewjob?jk=f128800b9457575c</link>
       <description>New grad role at coto in Remote, IN. Category: Software Engineering</description>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f128800b9457575c</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</link>
-      <description>New grad role at Walmart in Bentonville, AR. Category: Software Engineering</description>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Bentonville-AR/Software-Engineer-III_R-2464506</guid>
     </item>
     <item>
       <title>New Graduate Engineer, Software (Starlink) at SpaceX</title>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 24 Apr 2026 22:47:04 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 24 Apr 2026 22:47:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479261002?gh_jid=8479261002</guid>
     </item>
   </channel>
 </rss>
