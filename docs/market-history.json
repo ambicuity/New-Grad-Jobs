@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-26T05:29:24.561685",
+    "last_updated": "2026-04-26T22:43:09.478609",
     "total_snapshots": 52,
     "date_range": {
       "start": "2026-03-05",
@@ -2815,11 +2815,11 @@
     },
     {
       "date": "2026-04-26",
-      "total_jobs": 1037,
+      "total_jobs": 990,
       "categories": {},
       "tiers": {
         "unicorn": 489,
-        "other": 421,
+        "other": 374,
         "faang_plus": 127
       },
       "top_companies": [
@@ -2848,11 +2848,11 @@
           "jobs": 20
         },
         {
-          "company": "Lyft",
-          "jobs": 20
+          "company": "Abnormal Security",
+          "jobs": 19
         },
         {
-          "company": "Abnormal Security",
+          "company": "Lyft",
           "jobs": 19
         },
         {
@@ -2860,13 +2860,13 @@
           "jobs": 19
         },
         {
-          "company": "NVIDIA",
+          "company": "Boeing",
           "jobs": 18
         }
       ],
-      "unique_companies": 216,
-      "avg_jobs_per_company": 4.8,
-      "timestamp": "2026-04-26T05:29:24.560976"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.76,
+      "timestamp": "2026-04-26T22:43:09.477930"
     }
   ]
 }
