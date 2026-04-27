@@ -163,7 +163,7 @@ class TestCategorizeJob:
     def test_noc_engineer(self) -> None:
         result = categorize_job("NOC Engineer")
         assert result["id"] == "infrastructure_sre"
-    
+
     def test_network_operations_engineer(self) -> None:
         """Regression: 'Network Operations Engineer' maps to infrastructure_sre."""
         result = categorize_job("Network Operations Engineer")
