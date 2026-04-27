@@ -1,7 +1,7 @@
 {
   "state": "generation_failed",
   "message": "Prediction generation raised an exception.",
-  "updated_at": "2026-04-27T11:22:22.112378",
+  "updated_at": "2026-04-27T13:00:06.478641",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
   "available_history_snapshots": 53,
