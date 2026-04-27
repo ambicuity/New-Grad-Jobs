@@ -1,7 +1,7 @@
 {
   "state": "generation_failed",
   "message": "Prediction generation raised an exception.",
-  "updated_at": "2026-04-27T13:00:06.478641",
+  "updated_at": "2026-04-27T15:15:56.452258",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
   "available_history_snapshots": 53,
@@ -10,7 +10,7 @@
     "exists": true
   },
   "details": {
-    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-3.1-flash-lite-preview:generateContent (Caused by ResponseError('too many 503 error responses'))",
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-3.1-flash-lite-preview:generateContent (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=12)\"))",
     "model": "gemini-3.1-flash-lite-preview"
   }
 }
