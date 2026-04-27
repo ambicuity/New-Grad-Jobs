@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-27T06:41:53.409512",
+    "last_updated": "2026-04-27T09:12:31.880803",
     "total_snapshots": 53,
     "date_range": {
       "start": "2026-03-05",
@@ -2870,12 +2870,12 @@
     },
     {
       "date": "2026-04-27",
-      "total_jobs": 990,
+      "total_jobs": 999,
       "categories": {},
       "tiers": {
-        "other": 376,
+        "other": 381,
         "unicorn": 489,
-        "faang_plus": 125
+        "faang_plus": 129
       },
       "top_companies": [
         {
@@ -2893,6 +2893,10 @@
         {
           "company": "ClickHouse",
           "jobs": 25
+        },
+        {
+          "company": "Boeing",
+          "jobs": 21
         },
         {
           "company": "Abnormal Security",
@@ -2913,15 +2917,11 @@
         {
           "company": "Scale AI",
           "jobs": 18
-        },
-        {
-          "company": "Lyft",
-          "jobs": 18
         }
       ],
       "unique_companies": 213,
-      "avg_jobs_per_company": 4.65,
-      "timestamp": "2026-04-27T06:41:53.408754"
+      "avg_jobs_per_company": 4.69,
+      "timestamp": "2026-04-27T09:12:31.880184"
     }
   ]
 }
