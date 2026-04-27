@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2026 17:02:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 18:17:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=7716833</link>
+      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
+      <pubDate>Mon, 27 Apr 2026 18:11:22 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=7716833</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Web Platform at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7848208</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Apr 2026 17:56:58 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7848208</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7769314</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 27 Apr 2026 17:48:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7769314</guid>
+    </item>
     <item>
       <title>AI Systems Engineer at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8512126002</link>
@@ -225,11 +246,25 @@
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</guid>
     </item>
     <item>
+      <title>Junior Supply Chain Expeditor at GN2 Engineering</title>
+      <link>https://ca.indeed.com/viewjob?jk=370ac39ca3f467db</link>
+      <description>New grad role at GN2 Engineering in Edmonton, AB, CA. Category: Other</description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=370ac39ca3f467db</guid>
+    </item>
+    <item>
       <title>System Engineering Analyst, Networking (Junior) at General Dynamics Mission Systems</title>
       <link>https://ca.indeed.com/viewjob?jk=dfac8bff76315fe0</link>
       <description>New grad role at General Dynamics Mission Systems in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dfac8bff76315fe0</guid>
+    </item>
+    <item>
+      <title>Junior Mechanical Design Engineer at Epp Siepman Engineering</title>
+      <link>https://ca.indeed.com/viewjob?jk=314c3ffe3569374c</link>
+      <description>New grad role at Epp Siepman Engineering in Winnipeg, MB, CA. Category: Other</description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=314c3ffe3569374c</guid>
     </item>
     <item>
       <title>Software Engineer [Apprentice] at Airbus</title>
@@ -251,20 +286,6 @@
       <description>New grad role at Hatch in Mississauga, ON, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=15b6f37bf00de48e</guid>
-    </item>
-    <item>
-      <title>Apprentice Hiring for Operations 2026–2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=5efaace281a9063b</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5efaace281a9063b</guid>
-    </item>
-    <item>
-      <title>Trainee Engineer at NNE</title>
-      <link>https://in.indeed.com/viewjob?jk=6c8f1e48a22cfb40</link>
-      <description>New grad role at NNE in KA, IN. Category: Other</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6c8f1e48a22cfb40</guid>
     </item>
     <item>
       <title>Software Engineer [Apprentice] at Airbus</title>
@@ -330,32 +351,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9768945bef81171f</guid>
     </item>
     <item>
-      <title>Specialist Software Engineer - Java Fullstack at Société Générale</title>
-      <link>https://in.indeed.com/viewjob?jk=108402e74289563b</link>
-      <description>New grad role at Société Générale in KA, IN. Category: Software Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=d65489778dc359c0</link>
+      <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=108402e74289563b</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at JPMorganChase</title>
-      <link>https://in.indeed.com/viewjob?jk=9a97897a7a37789e</link>
-      <description>New grad role at JPMorganChase in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a97897a7a37789e</guid>
-    </item>
-    <item>
-      <title>CYBER SECURITY ENGINEER at Peraton</title>
-      <link>https://www.indeed.com/viewjob?jk=47bbb712edb0b895</link>
-      <description>New grad role at Peraton in St. Louis, MO, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=47bbb712edb0b895</guid>
-    </item>
-    <item>
-      <title>Jr/Mid-level C/C++ Software Engineer at Oteemo, Inc</title>
-      <link>https://www.indeed.com/viewjob?jk=40944025d0189f1f</link>
-      <description>New grad role at Oteemo, Inc in Manassas, VA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=40944025d0189f1f</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d65489778dc359c0</guid>
     </item>
   </channel>
 </rss>
