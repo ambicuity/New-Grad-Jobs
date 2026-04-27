@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-27T00:09:23.957734",
+    "last_updated": "2026-04-27T04:02:15.358389",
     "total_snapshots": 53,
     "date_range": {
       "start": "2026-03-05",
@@ -2870,12 +2870,12 @@
     },
     {
       "date": "2026-04-27",
-      "total_jobs": 987,
+      "total_jobs": 986,
       "categories": {},
       "tiers": {
-        "faang_plus": 125,
         "unicorn": 489,
-        "other": 373
+        "other": 374,
+        "faang_plus": 123
       },
       "top_companies": [
         {
@@ -2895,10 +2895,6 @@
           "jobs": 25
         },
         {
-          "company": "Stripe",
-          "jobs": 20
-        },
-        {
           "company": "Affirm",
           "jobs": 20
         },
@@ -2907,7 +2903,7 @@
           "jobs": 19
         },
         {
-          "company": "Lyft",
+          "company": "Stripe",
           "jobs": 19
         },
         {
@@ -2917,11 +2913,15 @@
         {
           "company": "Scale AI",
           "jobs": 18
+        },
+        {
+          "company": "Lyft",
+          "jobs": 18
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.75,
-      "timestamp": "2026-04-27T00:09:23.957048"
+      "unique_companies": 209,
+      "avg_jobs_per_company": 4.72,
+      "timestamp": "2026-04-27T04:02:15.357772"
     }
   ]
 }
