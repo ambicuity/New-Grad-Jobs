@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2026 19:54:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 20:56:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Systems Engineer at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8512126002</link>
+      <description>New grad role at Dialpad in Kitchener, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Apr 2026 20:37:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8512126002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Integrations) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
+      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Apr 2026 20:37:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
+    </item>
     <item>
       <title>Field Sales Engineer II, Enterprise-Northeast at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/7697637?gh_jid=7697637</link>
@@ -20,13 +34,6 @@
       <description>New grad role at Duolingo in Pittsburgh, PA. Category: Software Engineering</description>
       <pubDate>Mon, 27 Apr 2026 19:18:21 +0000</pubDate>
       <guid isPermaLink="true">https://careers.duolingo.com/jobs/8449895002?gh_jid=8449895002</guid>
-    </item>
-    <item>
-      <title>AI Systems Engineer at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8512126002</link>
-      <description>New grad role at Dialpad in Kitchener, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 19:02:46 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8512126002</guid>
     </item>
     <item>
       <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
@@ -281,13 +288,6 @@
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7650290?gh_jid=7650290</guid>
     </item>
     <item>
-      <title>Software Engineer [Apprentice] at Airbus</title>
-      <link>https://in.indeed.com/viewjob?jk=d57098f27492c22a</link>
-      <description>New grad role at Airbus in KA, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d57098f27492c22a</guid>
-    </item>
-    <item>
       <title>Junior Supply Chain Expeditor at GN2 Engineering</title>
       <link>https://ca.indeed.com/viewjob?jk=370ac39ca3f467db</link>
       <description>New grad role at GN2 Engineering in Edmonton, AB, CA. Category: Other</description>
@@ -300,6 +300,13 @@
       <description>New grad role at General Dynamics Mission Systems in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dfac8bff76315fe0</guid>
+    </item>
+    <item>
+      <title>Software Engineer [Apprentice] at Airbus</title>
+      <link>https://in.indeed.com/viewjob?jk=d57098f27492c22a</link>
+      <description>New grad role at Airbus in KA, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d57098f27492c22a</guid>
     </item>
     <item>
       <title>Junior Mechanical Design Engineer at Epp Siepman Engineering</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Weekday in TN, IN. Category: Other</description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=83620b15d02b9098</guid>
-    </item>
-    <item>
-      <title>Software Engineer [Apprentice] at Airbus</title>
-      <link>https://in.indeed.com/viewjob?jk=05f19d424ffed38d</link>
-      <description>New grad role at Airbus in KA, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=05f19d424ffed38d</guid>
     </item>
   </channel>
 </rss>
