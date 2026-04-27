@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-27T04:02:15.358389",
+    "last_updated": "2026-04-27T06:41:53.409512",
     "total_snapshots": 53,
     "date_range": {
       "start": "2026-03-05",
@@ -2870,12 +2870,12 @@
     },
     {
       "date": "2026-04-27",
-      "total_jobs": 986,
+      "total_jobs": 990,
       "categories": {},
       "tiers": {
+        "other": 376,
         "unicorn": 489,
-        "other": 374,
-        "faang_plus": 123
+        "faang_plus": 125
       },
       "top_companies": [
         {
@@ -2895,12 +2895,12 @@
           "jobs": 25
         },
         {
-          "company": "Affirm",
+          "company": "Abnormal Security",
           "jobs": 20
         },
         {
-          "company": "Abnormal Security",
-          "jobs": 19
+          "company": "Affirm",
+          "jobs": 20
         },
         {
           "company": "Stripe",
@@ -2919,9 +2919,9 @@
           "jobs": 18
         }
       ],
-      "unique_companies": 209,
-      "avg_jobs_per_company": 4.72,
-      "timestamp": "2026-04-27T04:02:15.357772"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 4.65,
+      "timestamp": "2026-04-27T06:41:53.408754"
     }
   ]
 }
