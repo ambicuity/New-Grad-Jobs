@@ -5,13 +5,55 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 11:21:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 13:05:55 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist - Marketing &amp; Product at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5123723008</link>
+      <description>New grad role at Scopely in US - San Francisco, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 28 Apr 2026 12:25:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5123723008</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Web/Fullstack at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5105578008</link>
+      <description>New grad role at Scopely in US - Sunnyvale, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 12:25:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5105578008</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Machine Learning (Feature Platform) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7694296003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 12:23:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7694296003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Machine Learning (Feature Platform) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7694294003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 12:23:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7694294003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Machine Learning (Fraud)  at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7695818003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 12:21:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 11:37:33 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</guid>
+    </item>
     <item>
       <title>Infrastructure Software Engineer at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7752395?gh_jid=7752395</link>
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 11:09:46 +0000</pubDate>
+      <pubDate>Tue, 28 Apr 2026 11:36:41 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7752395?gh_jid=7752395</guid>
     </item>
     <item>
@@ -20,13 +62,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Tue, 28 Apr 2026 11:05:45 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7752097?gh_jid=7752097</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 11:02:07 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</guid>
     </item>
     <item>
       <title>Software Engineer, Credit Risk Platform at Chime</title>
@@ -85,11 +120,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/sumologic/jobs/7485892</guid>
     </item>
     <item>
-      <title>Network Engineer at Openkyber</title>
-      <link>https://www.indeed.com/viewjob?jk=72d25f1ac604f2c7</link>
-      <description>New grad role at Openkyber in AK, US. Category: Infrastructure &amp; SRE</description>
+      <title>Devops Engineer at Mewar Info Tech Limited</title>
+      <link>https://ca.indeed.com/viewjob?jk=36d19f88bd4fbabc</link>
+      <description>New grad role at Mewar Info Tech Limited in Toronto, ON, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=72d25f1ac604f2c7</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=36d19f88bd4fbabc</guid>
     </item>
     <item>
       <title>Junior Engineer II, Labview at Harman</title>
@@ -99,11 +134,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0d154ef2a73f9b50</guid>
     </item>
     <item>
-      <title>Devops Engineer at Mewar Info Tech Limited</title>
-      <link>https://ca.indeed.com/viewjob?jk=36d19f88bd4fbabc</link>
-      <description>New grad role at Mewar Info Tech Limited in Toronto, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <title>India Graduate Intake 2026 at Genesis Global</title>
+      <link>https://in.indeed.com/viewjob?jk=490f744ff80aa4d3</link>
+      <description>New grad role at Genesis Global in KA, IN. Category: Other</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=36d19f88bd4fbabc</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=490f744ff80aa4d3</guid>
+    </item>
+    <item>
+      <title>Junior DevOps Engineer at Golden hippo technology Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=7e0ebda64fa74847</link>
+      <description>New grad role at Golden hippo technology Pvt Ltd in TN, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7e0ebda64fa74847</guid>
     </item>
     <item>
       <title>Software Technologist I at Philips</title>
@@ -120,11 +162,25 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4f72f8cf679a292f</guid>
     </item>
     <item>
-      <title>IMT/Computer Integrated Manufacturing Adjunct - Fall 2026 at Elgin Community College</title>
-      <link>https://www.indeed.com/viewjob?jk=a97aa9a48d16dd67</link>
-      <description>New grad role at Elgin Community College in Elgin, IL, US. Category: Other</description>
+      <title>Software Engineer Apprentices at Alcon</title>
+      <link>https://in.indeed.com/viewjob?jk=29eaf1bf82035787</link>
+      <description>New grad role at Alcon in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a97aa9a48d16dd67</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=29eaf1bf82035787</guid>
+    </item>
+    <item>
+      <title>Junior/Mid Data Platform Engineer (TS/SCI Clearance) at EpochGeo</title>
+      <link>https://www.indeed.com/viewjob?jk=077119d9fec9d745</link>
+      <description>New grad role at EpochGeo in Reston, VA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=077119d9fec9d745</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Openkyber</title>
+      <link>https://www.indeed.com/viewjob?jk=72d25f1ac604f2c7</link>
+      <description>New grad role at Openkyber in AK, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=72d25f1ac604f2c7</guid>
     </item>
     <item>
       <title>Thermographer Level I: Utility Infrastructure (IR Imagery Analyst) at C2 Group</title>
@@ -134,25 +190,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=35d6168683091a0b</guid>
     </item>
     <item>
-      <title>Associate Data Scientist at Goodyear</title>
-      <link>https://in.indeed.com/viewjob?jk=0e64be7623f099bd</link>
-      <description>New grad role at Goodyear in TS, IN. Category: Data Science &amp; ML</description>
+      <title>Civil Engineering? EIT (New Graduate or 3/4 years experience) at The Landplan Group South, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=26e7e35d9ace89c1</link>
+      <description>New grad role at The Landplan Group South, Inc. in Columbia, SC, US. Category: Other</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0e64be7623f099bd</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=26e7e35d9ace89c1</guid>
     </item>
     <item>
-      <title>Associate Data Scientist at Goodyear</title>
-      <link>https://in.indeed.com/viewjob?jk=ff2530d1865a859d</link>
-      <description>New grad role at Goodyear in TS, IN. Category: Data Science &amp; ML</description>
+      <title>IMT/Computer Integrated Manufacturing Adjunct - Fall 2026 at Elgin Community College</title>
+      <link>https://www.indeed.com/viewjob?jk=a97aa9a48d16dd67</link>
+      <description>New grad role at Elgin Community College in Elgin, IL, US. Category: Other</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ff2530d1865a859d</guid>
-    </item>
-    <item>
-      <title>Entry Level Software Engineer at Amentum</title>
-      <link>https://www.indeed.com/viewjob?jk=f5f29924a0e771cf</link>
-      <description>New grad role at Amentum in Dahlgren, VA, US. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f5f29924a0e771cf</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a97aa9a48d16dd67</guid>
     </item>
     <item>
       <title>School Nurse - Bush Elementary and Mendoza Elementary School 2026-2027 at Mesa Public Schools - AZ</title>
@@ -162,6 +211,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ee9df9e2fad6a0aa</guid>
     </item>
     <item>
+      <title>Implementation Engineer (Network Engineer II) (Government) at AT&amp;T</title>
+      <link>https://www.indeed.com/viewjob?jk=80d02c2a500a5cbd</link>
+      <description>New grad role at AT&amp;T in Chantilly, VA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=80d02c2a500a5cbd</guid>
+    </item>
+    <item>
       <title>Associate Network Security Engineer at Openkyber</title>
       <link>https://www.indeed.com/viewjob?jk=e2712e43c2fc2027</link>
       <description>New grad role at Openkyber in AK, US. Category: Infrastructure &amp; SRE</description>
@@ -169,11 +225,60 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e2712e43c2fc2027</guid>
     </item>
     <item>
+      <title>Associate Quality Assurance Engineer at Innovecture</title>
+      <link>https://in.indeed.com/viewjob?jk=18b73400f1d502ff</link>
+      <description>New grad role at Innovecture in MH, IN. Category: Other</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=18b73400f1d502ff</guid>
+    </item>
+    <item>
+      <title>Associate Data Scientist at Goodyear</title>
+      <link>https://in.indeed.com/viewjob?jk=0e64be7623f099bd</link>
+      <description>New grad role at Goodyear in TS, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0e64be7623f099bd</guid>
+    </item>
+    <item>
+      <title>CSS - Campus at EY</title>
+      <link>https://in.indeed.com/viewjob?jk=16b2319a2de80b09</link>
+      <description>New grad role at EY in KL, IN. Category: Other</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=16b2319a2de80b09</guid>
+    </item>
+    <item>
+      <title>CSS-Campus at EY</title>
+      <link>https://in.indeed.com/viewjob?jk=cec36059d3ba80a9</link>
+      <description>New grad role at EY in UP, IN. Category: Other</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cec36059d3ba80a9</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-276387-1</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-276387-1</guid>
+    </item>
+    <item>
+      <title>Supplier Quality Engineer II at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Memphis-Tennessee-United-States-of-America/Supplier-Quality-Engineer-II_R60854-1</link>
+      <description>New grad role at Medtronic in Memphis, Tennessee, United States of America. Category: Other</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Memphis-Tennessee-United-States-of-America/Supplier-Quality-Engineer-II_R60854-1</guid>
+    </item>
+    <item>
       <title>Quality Engineer II at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Quality-Engineer-II_R64963-2</link>
       <description>New grad role at Medtronic in Nanakramguda, Hyderabad, India. Category: Other</description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Quality-Engineer-II_R64963-2</guid>
+    </item>
+    <item>
+      <title>Experienced Systems Engineer - Operation Center at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Systems-Engineer---Operation-Center_JR2026502327-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Systems-Engineer---Operation-Center_JR2026502327-1</guid>
     </item>
     <item>
       <title>iOS Engineer II at Instacart</title>
@@ -251,111 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Other</description>
       <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8245047002?gh_jid=8245047002</guid>
-    </item>
-    <item>
-      <title>Customer Support Associate, Bilingual - Ukrainian (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Other</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8245064002?gh_jid=8245064002</guid>
-    </item>
-    <item>
-      <title>Data &amp; Control Systems Engineer (Starship Launch Pad) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8231335002?gh_jid=8231335002</link>
-      <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8231335002?gh_jid=8231335002</guid>
-    </item>
-    <item>
-      <title>Data Engineer (Direct To Cell) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8391768002?gh_jid=8391768002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8391768002?gh_jid=8391768002</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Ground Network Engineering (Gateway)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8192168002?gh_jid=8192168002</guid>
-    </item>
-    <item>
-      <title>Data Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8494787002?gh_jid=8494787002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8494787002?gh_jid=8494787002</guid>
-    </item>
-    <item>
-      <title>Data Engineer (Starlink Growth) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8243150002?gh_jid=8243150002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8243150002?gh_jid=8243150002</guid>
-    </item>
-    <item>
-      <title>Data Engineer (Starlink Growth) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8522503002?gh_jid=8522503002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8522503002?gh_jid=8522503002</guid>
-    </item>
-    <item>
-      <title>Data Infrastructure Operations Specialist II (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002</guid>
-    </item>
-    <item>
-      <title>Data Scientist (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8494810002?gh_jid=8494810002</guid>
-    </item>
-    <item>
-      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459609002?gh_jid=8459609002</guid>
-    </item>
-    <item>
-      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8479264002?gh_jid=8479264002</guid>
-    </item>
-    <item>
-      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8459556002?gh_jid=8459556002</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, OS/Platform  (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8402489002?gh_jid=8402489002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8402489002?gh_jid=8402489002</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, OS/Platform (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8511391002?gh_jid=8511391002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8511391002?gh_jid=8511391002</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, Satellite Antenna (Starlink)  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8468958002?gh_jid=8468958002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Apr 2026 22:09:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8468958002?gh_jid=8468958002</guid>
     </item>
   </channel>
 </rss>
