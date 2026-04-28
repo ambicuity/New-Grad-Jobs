@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-28T22:41:36.462087",
+    "last_updated": "2026-04-28T23:41:02.731070",
     "total_snapshots": 54,
     "date_range": {
       "start": "2026-03-05",
@@ -2925,12 +2925,12 @@
     },
     {
       "date": "2026-04-28",
-      "total_jobs": 978,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
-        "other": 362,
-        "faang_plus": 130,
-        "unicorn": 486
+        "other": 352,
+        "unicorn": 485,
+        "faang_plus": 143
       },
       "top_companies": [
         {
@@ -2970,13 +2970,13 @@
           "jobs": 17
         },
         {
-          "company": "Twitch",
+          "company": "Northrop Grumman",
           "jobs": 17
         }
       ],
-      "unique_companies": 210,
-      "avg_jobs_per_company": 4.66,
-      "timestamp": "2026-04-28T22:41:36.461460"
+      "unique_companies": 202,
+      "avg_jobs_per_company": 4.85,
+      "timestamp": "2026-04-28T23:41:02.729570"
     }
   ]
 }

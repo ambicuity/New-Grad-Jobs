@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 22:41:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 23:41:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Advanced at Gartner</title>
@@ -13,6 +13,20 @@
       <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=466e38305a02f8fa</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Video at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7661919</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 23:35:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661919</guid>
+    </item>
+    <item>
+      <title>Software Developer, Infrastructure at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 22:58:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</guid>
     </item>
     <item>
       <title>Software Engineer, AI Product Insights at Mixpanel</title>
@@ -90,13 +104,6 @@
       <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Tue, 28 Apr 2026 21:26:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7622031?t=gh_src=&amp;gh_jid=7622031</guid>
-    </item>
-    <item>
-      <title>Software Developer, Infrastructure at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 21:26:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/4829946?t=gh_src=&amp;gh_jid=4829946</guid>
     </item>
     <item>
       <title>Software Engineer, Backend at Robinhood</title>
@@ -240,17 +247,17 @@
     </item>
     <item>
       <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7846633</link>
-      <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 16:23:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7822831</link>
       <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
       <pubDate>Tue, 28 Apr 2026 16:23:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7822831</guid>
+    </item>
+    <item>
+      <title>Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7846633</link>
+      <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Apr 2026 16:23:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
     </item>
     <item>
       <title>Software Engineer  at Twilio</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Abnormal Security in Remote - UK. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 28 Apr 2026 14:40:34 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7679778003?gh_jid=7679778003</guid>
-    </item>
-    <item>
-      <title>Software Engineer 1 - Backend at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Apr 2026 14:40:34 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</guid>
     </item>
   </channel>
 </rss>
