@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-28T13:05:55.227048",
+    "last_updated": "2026-04-28T15:37:04.585245",
     "total_snapshots": 54,
     "date_range": {
       "start": "2026-03-05",
@@ -2925,12 +2925,12 @@
     },
     {
       "date": "2026-04-28",
-      "total_jobs": 955,
+      "total_jobs": 944,
       "categories": {},
       "tiers": {
-        "other": 337,
-        "unicorn": 493,
-        "faang_plus": 125
+        "unicorn": 490,
+        "other": 330,
+        "faang_plus": 124
       },
       "top_companies": [
         {
@@ -2947,14 +2947,14 @@
         },
         {
           "company": "Affirm",
-          "jobs": 22
-        },
-        {
-          "company": "Lyft",
-          "jobs": 20
+          "jobs": 21
         },
         {
           "company": "Abnormal Security",
+          "jobs": 20
+        },
+        {
+          "company": "Lyft",
           "jobs": 20
         },
         {
@@ -2974,9 +2974,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 204,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-04-28T13:05:55.226343"
+      "unique_companies": 197,
+      "avg_jobs_per_company": 4.79,
+      "timestamp": "2026-04-28T15:37:04.584505"
     }
   ]
 }
