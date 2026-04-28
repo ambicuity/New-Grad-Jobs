@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-28T21:40:36.598086",
+    "last_updated": "2026-04-28T22:41:36.462087",
     "total_snapshots": 54,
     "date_range": {
       "start": "2026-03-05",
@@ -2925,12 +2925,12 @@
     },
     {
       "date": "2026-04-28",
-      "total_jobs": 953,
+      "total_jobs": 978,
       "categories": {},
       "tiers": {
-        "unicorn": 486,
-        "faang_plus": 120,
-        "other": 347
+        "other": 362,
+        "faang_plus": 130,
+        "unicorn": 486
       },
       "top_companies": [
         {
@@ -2944,10 +2944,6 @@
         {
           "company": "ClickHouse",
           "jobs": 25
-        },
-        {
-          "company": "Dropbox",
-          "jobs": 21
         },
         {
           "company": "Affirm",
@@ -2966,17 +2962,21 @@
           "jobs": 19
         },
         {
-          "company": "Twitch",
+          "company": "Dropbox",
+          "jobs": 19
+        },
+        {
+          "company": "Scale AI",
           "jobs": 17
         },
         {
-          "company": "Figma",
+          "company": "Twitch",
           "jobs": 17
         }
       ],
-      "unique_companies": 198,
-      "avg_jobs_per_company": 4.81,
-      "timestamp": "2026-04-28T21:40:36.597431"
+      "unique_companies": 210,
+      "avg_jobs_per_company": 4.66,
+      "timestamp": "2026-04-28T22:41:36.461460"
     }
   ]
 }
