@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-28T15:37:04.585245",
+    "last_updated": "2026-04-28T17:20:01.202967",
     "total_snapshots": 54,
     "date_range": {
       "start": "2026-03-05",
@@ -2925,12 +2925,12 @@
     },
     {
       "date": "2026-04-28",
-      "total_jobs": 944,
+      "total_jobs": 958,
       "categories": {},
       "tiers": {
-        "unicorn": 490,
-        "other": 330,
-        "faang_plus": 124
+        "faang_plus": 130,
+        "other": 340,
+        "unicorn": 488
       },
       "top_companies": [
         {
@@ -2939,7 +2939,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 49
+          "jobs": 47
         },
         {
           "company": "ClickHouse",
@@ -2966,17 +2966,17 @@
           "jobs": 19
         },
         {
-          "company": "Scale AI",
-          "jobs": 17
+          "company": "Northrop Grumman",
+          "jobs": 18
         },
         {
-          "company": "Figma",
+          "company": "Twitch",
           "jobs": 17
         }
       ],
-      "unique_companies": 197,
-      "avg_jobs_per_company": 4.79,
-      "timestamp": "2026-04-28T15:37:04.584505"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-04-28T17:20:01.202350"
     }
   ]
 }
