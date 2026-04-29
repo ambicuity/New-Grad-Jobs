@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-29T01:26:58.305927",
+    "last_updated": "2026-04-29T07:20:57.683591",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-03-05",
@@ -2980,12 +2980,12 @@
     },
     {
       "date": "2026-04-29",
-      "total_jobs": 989,
+      "total_jobs": 999,
       "categories": {},
       "tiers": {
         "unicorn": 488,
-        "other": 367,
-        "faang_plus": 134
+        "faang_plus": 130,
+        "other": 381
       },
       "top_companies": [
         {
@@ -3021,17 +3021,17 @@
           "jobs": 19
         },
         {
-          "company": "Boeing",
-          "jobs": 17
+          "company": "Accenture",
+          "jobs": 19
         },
         {
-          "company": "Scale AI",
+          "company": "Northrop Grumman",
           "jobs": 17
         }
       ],
       "unique_companies": 223,
-      "avg_jobs_per_company": 4.43,
-      "timestamp": "2026-04-29T01:26:58.305372"
+      "avg_jobs_per_company": 4.48,
+      "timestamp": "2026-04-29T07:20:57.682924"
     }
   ]
 }
