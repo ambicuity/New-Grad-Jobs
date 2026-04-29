@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-29T11:20:13.981589",
+    "last_updated": "2026-04-29T13:03:18.212150",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-03-05",
@@ -2980,12 +2980,12 @@
     },
     {
       "date": "2026-04-29",
-      "total_jobs": 965,
+      "total_jobs": 962,
       "categories": {},
       "tiers": {
         "unicorn": 488,
-        "faang_plus": 125,
-        "other": 352
+        "faang_plus": 129,
+        "other": 345
       },
       "top_companies": [
         {
@@ -3021,17 +3021,17 @@
           "jobs": 19
         },
         {
-          "company": "Figma",
-          "jobs": 17
+          "company": "Northrop Grumman",
+          "jobs": 18
         },
         {
-          "company": "Scale AI",
-          "jobs": 16
+          "company": "Figma",
+          "jobs": 17
         }
       ],
-      "unique_companies": 212,
-      "avg_jobs_per_company": 4.55,
-      "timestamp": "2026-04-29T11:20:13.980901"
+      "unique_companies": 208,
+      "avg_jobs_per_company": 4.62,
+      "timestamp": "2026-04-29T13:03:18.211479"
     }
   ]
 }
