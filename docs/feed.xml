@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 22:18:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 23:17:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>National Security Hackathon 2026 - General Interest at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4687588005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY; Washington, DC. Category: Other</description>
+      <pubDate>Wed, 29 Apr 2026 22:57:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4687588005</guid>
+    </item>
+    <item>
+      <title>Software Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7868076</link>
+      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 22:41:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7868076</guid>
+    </item>
+    <item>
+      <title>Data Scientist - Core Products at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/7524662</link>
+      <description>New grad role at Gusto in San Francisco, CA - Hybrid; New York, NY - Hybrid;. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Apr 2026 22:22:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7524662</guid>
+    </item>
+    <item>
+      <title>Product Data Scientist - Growth  at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/6356147</link>
+      <description>New grad role at Gusto in San Francisco, CA;New York, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Apr 2026 22:15:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/6356147</guid>
+    </item>
     <item>
       <title>[2026] Software Engineer, Creator - Early Career at Roblox</title>
       <link>https://careers.roblox.com/jobs/7557909?gh_jid=7557909</link>
@@ -50,20 +78,6 @@
       <guid isPermaLink="true">https://careers.airbnb.com/positions/7867679?gh_jid=7867679</guid>
     </item>
     <item>
-      <title>Growth Data Scientist  at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/6356147</link>
-      <description>New grad role at Gusto in San Francisco, CA;New York, NY. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 29 Apr 2026 20:26:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/6356147</guid>
-    </item>
-    <item>
-      <title>Data Scientist - Core Products at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/7524662</link>
-      <description>New grad role at Gusto in San Francisco, CA - Hybrid; New York, NY - Hybrid;. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 29 Apr 2026 20:26:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7524662</guid>
-    </item>
-    <item>
       <title>Security Software Engineer (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8392887002?gh_jid=8392887002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
@@ -83,13 +97,6 @@
       <description>New grad role at Waymo in MountainView, CA, United States . Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 19:42:43 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7855418</guid>
-    </item>
-    <item>
-      <title>Software Engineer at SingleStore</title>
-      <link>https://job-boards.greenhouse.io/singlestore/jobs/7867963</link>
-      <description>New grad role at SingleStore in India . Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 19:39:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7867963</guid>
     </item>
     <item>
       <title>Infrastructure Engineer at LaunchDarkly</title>
@@ -296,17 +303,17 @@
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 29 Apr 2026 03:27:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
       <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 29 Apr 2026 03:27:04 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 29 Apr 2026 03:27:04 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
     </item>
     <item>
       <title>Software Developer, Backend at Robinhood</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Scale AI in Washington, DC. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 29 Apr 2026 02:02:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4674863005</guid>
-    </item>
-    <item>
-      <title>New Graduate Engineer, Propulsion (Raptor) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8517361002?gh_jid=8517361002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:29:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8517361002?gh_jid=8517361002</guid>
     </item>
   </channel>
 </rss>
