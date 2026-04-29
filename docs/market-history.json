@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-04-29T20:03:38.512647",
+    "last_updated": "2026-04-29T21:20:03.992603",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-03-05",
@@ -2980,12 +2980,12 @@
     },
     {
       "date": "2026-04-29",
-      "total_jobs": 1006,
+      "total_jobs": 999,
       "categories": {},
       "tiers": {
-        "unicorn": 496,
-        "other": 370,
-        "faang_plus": 140
+        "other": 371,
+        "faang_plus": 133,
+        "unicorn": 495
       },
       "top_companies": [
         {
@@ -3025,13 +3025,13 @@
           "jobs": 19
         },
         {
-          "company": "Dropbox",
+          "company": "Boeing",
           "jobs": 19
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 4.55,
-      "timestamp": "2026-04-29T20:03:38.512017"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.67,
+      "timestamp": "2026-04-29T21:20:03.991886"
     }
   ]
 }
