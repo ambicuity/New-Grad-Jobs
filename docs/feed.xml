@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 17:05:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 18:26:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7861208</link>
+      <description>New grad role at SingleStore in India . Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 18:02:32 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7861208</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ad Infra   at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 17:50:36 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II (Fraud) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7695818003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Apr 2026 17:24:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7695818003</guid>
+    </item>
     <item>
       <title>Software Engineer, Product Security Data Platforms at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7761694</link>
@@ -260,41 +281,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b4804bcc89e5c7d8</guid>
     </item>
     <item>
-      <title>Software Engineer at Zelis Healthcare</title>
-      <link>https://in.indeed.com/viewjob?jk=021ca03a62d02002</link>
-      <description>New grad role at Zelis Healthcare in TS, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=021ca03a62d02002</guid>
-    </item>
-    <item>
-      <title>BizOps Engineer II at Mastercard</title>
-      <link>https://in.indeed.com/viewjob?jk=10edf9724b80f3bc</link>
-      <description>New grad role at Mastercard in MH, IN. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=10edf9724b80f3bc</guid>
-    </item>
-    <item>
-      <title>Junior Software Engineer at Midaas Telesoft Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=be1af53a70470e17</link>
-      <description>New grad role at Midaas Telesoft Private Limited in GJ, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=be1af53a70470e17</guid>
-    </item>
-    <item>
-      <title>Diploma / Science Graduate Trainee at Coperion</title>
-      <link>https://in.indeed.com/viewjob?jk=659bc819fa2bad21</link>
-      <description>New grad role at Coperion in UP, IN. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=659bc819fa2bad21</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Enablement at Morningstar</title>
-      <link>https://in.indeed.com/viewjob?jk=d9e072e04ba70fd2</link>
-      <description>New grad role at Morningstar in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d9e072e04ba70fd2</guid>
-    </item>
-    <item>
       <title>AI Software Engineer at Agility PR Solutions</title>
       <link>https://ca.indeed.com/viewjob?jk=29f5731ca323fbcc</link>
       <description>New grad role at Agility PR Solutions in Ottawa, ON, CA. Category: Software Engineering</description>
@@ -302,60 +288,74 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=29f5731ca323fbcc</guid>
     </item>
     <item>
-      <title>Associate Engineer (Entry Level) at Skoda Contracting</title>
-      <link>https://www.indeed.com/viewjob?jk=866479bea11fa8ba</link>
-      <description>New grad role at Skoda Contracting in Flanders, NJ, US. Category: Other</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=c092098d7c0ce5b0</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=866479bea11fa8ba</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c092098d7c0ce5b0</guid>
     </item>
     <item>
-      <title>Process Development Engineer I at Integer</title>
-      <link>https://www.indeed.com/viewjob?jk=4cc29dbd0837f205</link>
-      <description>New grad role at Integer in Clarence, NY, US. Category: Hardware Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=19380e95e12e9d0d</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4cc29dbd0837f205</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=19380e95e12e9d0d</guid>
     </item>
     <item>
-      <title>2026 Raytheon Fulltime Mechanical Engineer - Structural Analyst I - Onsite at Raytheon</title>
-      <link>https://www.indeed.com/viewjob?jk=6a21e7bfd269495e</link>
-      <description>New grad role at Raytheon in Marlborough, MA, US. Category: Hardware Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=2cf4f7de501f719f</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6a21e7bfd269495e</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2cf4f7de501f719f</guid>
     </item>
     <item>
-      <title>Software Engineer I, Development and Verification (Hybrid) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=b89af784c2c8a9b7</link>
-      <description>New grad role at Collins Aerospace in Aguadilla, PR, US. Category: Software Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=91780cf400507d4c</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b89af784c2c8a9b7</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=91780cf400507d4c</guid>
     </item>
     <item>
-      <title>Software Engineer I, Development and Verification (Hybrid) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=8c59b3de098ce07e</link>
-      <description>New grad role at Collins Aerospace in Aguadilla, PR, US. Category: Software Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=c2ad9aa3d7d2f6ed</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8c59b3de098ce07e</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c2ad9aa3d7d2f6ed</guid>
     </item>
     <item>
-      <title>Engineer I, Systems Engineer (Hybrid - Aguadilla) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=8b6e3ebb452c7edb</link>
-      <description>New grad role at Collins Aerospace in Aguadilla, PR, US. Category: Software Engineering</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=591d04d708a5456a</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8b6e3ebb452c7edb</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=591d04d708a5456a</guid>
     </item>
     <item>
-      <title>Entry Level Transit Engineer at AECOM</title>
-      <link>https://www.indeed.com/viewjob?jk=c5856658a2d2dbac</link>
-      <description>New grad role at AECOM in Houston, TX, US. Category: Infrastructure &amp; SRE</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=c281c9f3975119aa</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c5856658a2d2dbac</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c281c9f3975119aa</guid>
     </item>
     <item>
-      <title>Consulting Associate, Engineer/Geologist/Scientist at Environmental Resources Management</title>
-      <link>https://www.indeed.com/viewjob?jk=93d4fd22cb7139fe</link>
-      <description>New grad role at Environmental Resources Management in Manhattan, NY, US. Category: Other</description>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=34673bb0961154fd</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=93d4fd22cb7139fe</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=34673bb0961154fd</guid>
+    </item>
+    <item>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=d739dd5971d4871f</link>
+      <description>New grad role at Accenture in TS, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d739dd5971d4871f</guid>
+    </item>
+    <item>
+      <title>Custom Software Engineer at Accenture</title>
+      <link>https://in.indeed.com/viewjob?jk=89a70d540dcfac42</link>
+      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=89a70d540dcfac42</guid>
     </item>
   </channel>
 </rss>
