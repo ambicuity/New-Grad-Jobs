@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 21:20:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 22:18:23 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[2026] Software Engineer, Creator - Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7557909?gh_jid=7557909</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 21:28:26 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7557909?gh_jid=7557909</guid>
+    </item>
+    <item>
+      <title>[2026] Data Scientist, Foundation AI - PhD Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7577436?gh_jid=7577436</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Apr 2026 21:28:25 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7577436?gh_jid=7577436</guid>
+    </item>
+    <item>
+      <title>Software Engineer, User Co-Experience at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 21:28:25 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
+    </item>
     <item>
       <title>Software Engineer II, Data Warehouse at Amplitude</title>
       <link>https://job-boards.greenhouse.io/amplitude/jobs/8530635002</link>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Other</description>
       <pubDate>Wed, 29 Apr 2026 00:29:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8517361002?gh_jid=8517361002</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</link>
-      <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:19:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803693004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:18:52 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5803692004</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - Identity and Access Management at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:18:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5766229004</guid>
     </item>
   </channel>
 </rss>
