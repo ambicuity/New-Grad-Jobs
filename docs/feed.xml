@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 09:33:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 11:20:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, AI Agents at Cloudflare</title>
@@ -218,11 +218,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b26c6e8cc2bb5aef</guid>
     </item>
     <item>
-      <title>Information Systems Security Engineer at National Security Agency</title>
-      <link>https://www.indeed.com/viewjob?jk=55a20fad84aa9fb0</link>
-      <description>New grad role at National Security Agency in Fort Meade, MD, US. Category: Infrastructure &amp; SRE</description>
+      <title>Systems Engineer – Entry Level at General Dynamics Mission Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=096afadf8f8a406a</link>
+      <description>New grad role at General Dynamics Mission Systems in Scottsdale, AZ, US. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=55a20fad84aa9fb0</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=096afadf8f8a406a</guid>
     </item>
     <item>
       <title>Software Engineer II .Net at JPMorganChase</title>
@@ -239,11 +239,60 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe894b30da63db58</guid>
     </item>
     <item>
+      <title>Information Systems Security Engineer at National Security Agency</title>
+      <link>https://www.indeed.com/viewjob?jk=55a20fad84aa9fb0</link>
+      <description>New grad role at National Security Agency in Fort Meade, MD, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=55a20fad84aa9fb0</guid>
+    </item>
+    <item>
+      <title>Consulting Associate, Engineer/Geologist/Scientist at Environmental Resources Management</title>
+      <link>https://www.indeed.com/viewjob?jk=93d4fd22cb7139fe</link>
+      <description>New grad role at Environmental Resources Management in Manhattan, NY, US. Category: Other</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=93d4fd22cb7139fe</guid>
+    </item>
+    <item>
+      <title>Data Scientist II at Fred Hutchinson Cancer Center</title>
+      <link>https://www.indeed.com/viewjob?jk=a64d8e0cac4fe8e4</link>
+      <description>New grad role at Fred Hutchinson Cancer Center in Seattle, WA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a64d8e0cac4fe8e4</guid>
+    </item>
+    <item>
       <title>New Graduate Engineer, Propulsion (Raptor) at SpaceX</title>
       <link>https://www.indeed.com/viewjob?jk=46058e8d49f6819d</link>
       <description>New grad role at SpaceX in Hawthorne, CA, US. Category: Other</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=46058e8d49f6819d</guid>
+    </item>
+    <item>
+      <title>Software Engineer at NCR Atleos</title>
+      <link>https://in.indeed.com/viewjob?jk=d622032f1ad9caf3</link>
+      <description>New grad role at NCR Atleos in TS, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d622032f1ad9caf3</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at NCR Atleos</title>
+      <link>https://in.indeed.com/viewjob?jk=66ea3ad6c99d8196</link>
+      <description>New grad role at NCR Atleos in TS, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=66ea3ad6c99d8196</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at NCR Atleos</title>
+      <link>https://in.indeed.com/viewjob?jk=b7e82d1e0d319493</link>
+      <description>New grad role at NCR Atleos in TS, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b7e82d1e0d319493</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer at Infoblox</title>
+      <link>https://in.indeed.com/viewjob?jk=d9b49e53b66c7bb8</link>
+      <description>New grad role at Infoblox in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d9b49e53b66c7bb8</guid>
     </item>
     <item>
       <title>Associate Engineer- Test at Qualcomm</title>
@@ -274,11 +323,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4d6036f1df734fa5</guid>
     </item>
     <item>
-      <title>Software Engineer, Advanced at Gartner</title>
-      <link>https://in.indeed.com/viewjob?jk=466e38305a02f8fa</link>
-      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <title>Network Engineer at Cimarron Software Services Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=941ba00ad75fdb47</link>
+      <description>New grad role at Cimarron Software Services Inc in Colorado Springs, CO, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=466e38305a02f8fa</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=941ba00ad75fdb47</guid>
     </item>
     <item>
       <title>Software Engineer III - Python Backend, AI/ML Platforms on AWS at JPMorganChase</title>
@@ -286,27 +335,6 @@
       <description>New grad role at JPMorganChase in Jersey City, NJ, US. Category: Software Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8ab99065872d31da</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - Cloud Solutions Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=26dd8557d8c37b81</link>
-      <description>New grad role at JPMorganChase in Columbus, OH, US. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=26dd8557d8c37b81</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - Python/AWS/Kafka at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=4746654ac02162e7</link>
-      <description>New grad role at JPMorganChase in Jersey City, NJ, US. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4746654ac02162e7</guid>
-    </item>
-    <item>
-      <title>AI/ML Software Engineer II at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=cfb97cccbf8067bc</link>
-      <description>New grad role at JPMorganChase in New York, NY, US. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cfb97cccbf8067bc</guid>
     </item>
     <item>
       <title>New Grad Resident ICU at Fairview Park Hospital-Dublin</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Applied Materials in Santa Clara, CA, US. Category: Hardware Engineering</description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7b141ba16ea34f2a</guid>
-    </item>
-    <item>
-      <title>Associate Analyst, Data Strategy-2 at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Associate-Analyst--Data-Strategy-2_R-274257</link>
-      <description>New grad role at Mastercard in Gurgaon, India. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Associate-Analyst--Data-Strategy-2_R-274257</guid>
-    </item>
-    <item>
-      <title>BizOps Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-II_R-272420-1</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-II_R-272420-1</guid>
-    </item>
-    <item>
-      <title>Digital Software Engineer Analyst at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Digital-S-W-Eng-Intm-Analyst---C11---PUNE_26953593</link>
-      <description>New grad role at Citi in Pune Maharashtra India. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/Digital-S-W-Eng-Intm-Analyst---C11---PUNE_26953593</guid>
-    </item>
-    <item>
-      <title>Summer Analyst Program - Corporate Advisory - Summer Analyst, Melbourne Australia (APAC) - 2026 at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Melbourne-Victoria-Australia/Summer-Analyst-Program---Corporate-Advisory---Summer-Analyst--Melbourne-Australia--APAC----2026_26953539</link>
-      <description>New grad role at Citi in Melbourne Victoria Australia. Category: Other</description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Melbourne-Victoria-Australia/Summer-Analyst-Program---Corporate-Advisory---Summer-Analyst--Melbourne-Australia--APAC----2026_26953539</guid>
     </item>
   </channel>
 </rss>
