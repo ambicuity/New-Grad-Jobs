@@ -2,34 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 986,
-      "change_percent": -0.3
+      "total_jobs": 992,
+      "change_percent": -1.29
     },
     "30_days": {
-      "total_jobs": 984,
-      "change_percent": -0.5
+      "total_jobs": 985,
+      "change_percent": -2.0
     }
   },
   "growing_categories": [
-    "AI/ML Engineering",
-    "Cybersecurity",
-    "Cloud Infrastructure"
+    "FAANG+",
+    "Unicorn",
+    "Infrastructure"
   ],
   "declining_categories": [
-    "General Software Development",
-    "Data Analytics",
-    "Quality Assurance"
+    "General Tech",
+    "Non-Tech/Support",
+    "Early-stage Startups"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability with a 30-day average almost identical to the current total, suggesting a period of consolidation rather than expansion.",
-    "Company tier data shows a slight cooling in FAANG+ hiring, which is being offset by steady recruitment levels within the Unicorn and mid-tier sectors.",
-    "The lack of significant volatility indicates that hiring volumes are currently tied to replacement-level demand rather than aggressive headcount growth."
+    "The market is currently exhibiting high stability with a 30-day average of 985 and a current total of 1005, suggesting a consolidation phase rather than a breakout.",
+    "Tier-1 companies (FAANG+ and Unicorns) are showing consistent, slightly positive momentum, which acts as a floor for the total job volume.",
+    "The lack of significant volatility indicates that hiring for new graduates is currently locked into a predictable replacement cycle rather than aggressive expansion."
   ],
-  "generated_at": "2026-04-29T01:27:34.384721",
-  "data_points": 55,
+  "generated_at": "2026-04-30T00:14:19.348468",
+  "data_points": 56,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-04-29"
+    "end": "2026-04-30"
   }
 }
