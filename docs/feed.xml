@@ -5,14 +5,42 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 01:28:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 05:12:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
+      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 04:33:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
+    </item>
     <item>
       <title>Software Engineer II, Backend (AI Agents) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7629069003</link>
       <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 00:02:18 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7629069003</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer at DIVERGENT</title>
+      <link>https://www.indeed.com/viewjob?jk=f56aed0a4d9ed12c</link>
+      <description>New grad role at DIVERGENT in Los Angeles, CA, US. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f56aed0a4d9ed12c</guid>
+    </item>
+    <item>
+      <title>Engineer-in-Training I/II - Structural at Martin-Martin Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=fc440da6473b3d57</link>
+      <description>New grad role at Martin-Martin Inc in Cheyenne, WY, US. Category: Other</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fc440da6473b3d57</guid>
+    </item>
+    <item>
+      <title>FIELD SERVICE ENGINEER II, FLOW WATERJET at Southern States Machinery</title>
+      <link>https://www.indeed.com/viewjob?jk=17f7a1cec8d141fc</link>
+      <description>New grad role at Southern States Machinery in Mooresville, NC, US. Category: Other</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=17f7a1cec8d141fc</guid>
     </item>
     <item>
       <title>Software Engineer at PayPal</title>
@@ -211,6 +239,13 @@
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Systems-Engineer---Level-2-or-3_R10231415</guid>
     </item>
     <item>
+      <title>Test &amp; Evaluation Engineer (Associate or Experienced) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Test---Evaluation-Engineer--Associate-or-Experienced-_JR2026505691-1</link>
+      <description>New grad role at Boeing in USA - Seattle, WA. Category: Other</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Test---Evaluation-Engineer--Associate-or-Experienced-_JR2026505691-1</guid>
+    </item>
+    <item>
       <title>Machine Learning Infrastructure Engineer (Associate or Experienced) at Boeing</title>
       <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Machine-Learning-Infrastructure-Engineer--Associate-or-Experienced-_JR2026508407-2</link>
       <description>New grad role at Boeing in USA - Huntsville, AL. Category: Data Science &amp; ML</description>
@@ -230,13 +265,6 @@
       <description>New grad role at Boeing in USA - Berkeley, MO. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Entry-Level-Systems-Engineer---Operations---Systems-Analysis-_JR2026502837</guid>
-    </item>
-    <item>
-      <title>Maintenance, Repair, and Overhaul (MRO) Jacksonville and Component Operations Structures Mechanics - (Associate Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Jacksonville-FL/Maintenance--Repair--and-Overhaul--MRO--Jacksonville-and-Component-Operations-Structures-Mechanics----Associate-Level-_JR2026505396-2</link>
-      <description>New grad role at Boeing in USA - Jacksonville, FL. Category: Other</description>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Jacksonville-FL/Maintenance--Repair--and-Overhaul--MRO--Jacksonville-and-Component-Operations-Structures-Mechanics----Associate-Level-_JR2026505396-2</guid>
     </item>
     <item>
       <title>Associate or Mid-Level Quality Engineer at Boeing</title>
@@ -328,34 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Thu, 30 Apr 2026 21:46:53 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8532395002?gh_jid=8532395002</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Analytics at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
-      <pubDate>Thu, 30 Apr 2026 21:36:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8371252002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Analytics at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8447216002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 30 Apr 2026 21:36:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8447216002</guid>
-    </item>
-    <item>
-      <title>Software Engineer- Database Infrastructure at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8487457002</link>
-      <description>New grad role at Discord in San Francisco Bay Area . Category: Software Engineering</description>
-      <pubDate>Thu, 30 Apr 2026 21:36:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8487457002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Platform at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8396927002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Apr 2026 21:36:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8396927002</guid>
     </item>
   </channel>
 </rss>
