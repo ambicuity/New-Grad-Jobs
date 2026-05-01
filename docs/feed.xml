@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 20:00:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 21:06:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Business Systems Engineer, Oracle PTM at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 20:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</guid>
+    </item>
+    <item>
+      <title>Business Systems Engineer, Oracle RTR at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 20:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&amp;gh_jid=7263578</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 20:04:32 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src=&amp;gh_jid=7263578</guid>
+    </item>
     <item>
       <title>Software Engineer, Instant Loans at Chime</title>
       <link>https://boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002</link>
@@ -27,20 +48,6 @@
       <description>New grad role at Peloton in New York, New York. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 19:12:12 +0000</pubDate>
       <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7871305</guid>
-    </item>
-    <item>
-      <title>Business Systems Engineer, Oracle PTM at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</guid>
-    </item>
-    <item>
-      <title>Business Systems Engineer, Oracle RTR at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8464815002?gh_jid=8464815002</guid>
     </item>
     <item>
       <title>Data Engineer at Lyft</title>
@@ -254,13 +261,6 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
@@ -274,6 +274,13 @@
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
+    </item>
+    <item>
       <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7551186</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
@@ -282,17 +289,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -317,17 +324,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 15:59:29 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7782552</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer II, Detection and Response at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7770914</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 15:56:46 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7770914</guid>
     </item>
   </channel>
 </rss>
