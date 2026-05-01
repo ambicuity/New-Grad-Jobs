@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-01T15:40:55.628582",
+    "last_updated": "2026-05-01T16:42:37.143914",
     "total_snapshots": 57,
     "date_range": {
       "start": "2026-03-05",
@@ -3108,7 +3108,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
+          "jobs": 28
         },
         {
           "company": "ClickHouse",
@@ -3141,7 +3141,7 @@
       ],
       "unique_companies": 202,
       "avg_jobs_per_company": 4.9,
-      "timestamp": "2026-05-01T15:40:55.627808"
+      "timestamp": "2026-05-01T16:42:37.143221"
     }
   ]
 }
