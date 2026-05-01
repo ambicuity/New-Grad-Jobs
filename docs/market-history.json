@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-01T17:45:28.310716",
+    "last_updated": "2026-05-01T18:51:28.876403",
     "total_snapshots": 57,
     "date_range": {
       "start": "2026-03-05",
@@ -3090,12 +3090,12 @@
     },
     {
       "date": "2026-05-01",
-      "total_jobs": 1017,
+      "total_jobs": 990,
       "categories": {},
       "tiers": {
-        "unicorn": 490,
-        "other": 384,
-        "faang_plus": 143
+        "faang_plus": 142,
+        "unicorn": 487,
+        "other": 361
       },
       "top_companies": [
         {
@@ -3108,7 +3108,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 30
+          "jobs": 29
         },
         {
           "company": "ClickHouse",
@@ -3120,7 +3120,7 @@
         },
         {
           "company": "Affirm",
-          "jobs": 22
+          "jobs": 21
         },
         {
           "company": "Abnormal Security",
@@ -3135,13 +3135,13 @@
           "jobs": 19
         },
         {
-          "company": "Pediatric Home Service",
-          "jobs": 18
+          "company": "Scale AI",
+          "jobs": 17
         }
       ],
       "unique_companies": 202,
-      "avg_jobs_per_company": 5.03,
-      "timestamp": "2026-05-01T17:45:28.309924"
+      "avg_jobs_per_company": 4.9,
+      "timestamp": "2026-05-01T18:51:28.875710"
     }
   ]
 }
