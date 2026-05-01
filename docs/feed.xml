@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 09:24:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 10:54:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Production Support Engineer I at Marqeta</title>
@@ -43,11 +43,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4fca5d8e3625435b</guid>
     </item>
     <item>
+      <title>Systems Engineer for Diving and Harbor Applications at University of Texas at Austin</title>
+      <link>https://www.indeed.com/viewjob?jk=6ded200b687a7c61</link>
+      <description>New grad role at University of Texas at Austin in Austin, TX, US. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6ded200b687a7c61</guid>
+    </item>
+    <item>
       <title>Systems Engineer Supervisor at Virginia Beach City Public Schools</title>
       <link>https://www.indeed.com/viewjob?jk=2d09dbcb3161e0df</link>
       <description>New grad role at Virginia Beach City Public Schools in Virginia Beach, VA, US. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2d09dbcb3161e0df</guid>
+    </item>
+    <item>
+      <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=c97a3d4850793116</link>
+      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Hardware Engineering</description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c97a3d4850793116</guid>
     </item>
     <item>
       <title>Engineer-in-Training I/II - Structural at Martin-Martin Inc</title>
@@ -57,18 +71,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fc440da6473b3d57</guid>
     </item>
     <item>
-      <title>Systems Engineer for Diving and Harbor Applications at University of Texas at Austin</title>
-      <link>https://www.indeed.com/viewjob?jk=6ded200b687a7c61</link>
-      <description>New grad role at University of Texas at Austin in Austin, TX, US. Category: Software Engineering</description>
+      <title>Associate AI Engineer at E2M Solutions Private Limited</title>
+      <link>https://in.indeed.com/viewjob?jk=b70bc6aca3b88c4c</link>
+      <description>New grad role at E2M Solutions Private Limited in GJ, IN. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6ded200b687a7c61</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b70bc6aca3b88c4c</guid>
     </item>
     <item>
-      <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=c97a3d4850793116</link>
-      <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Hardware Engineering</description>
+      <title>Associate Software Engineer II at Optum</title>
+      <link>https://in.indeed.com/viewjob?jk=3cffeb21a14df349</link>
+      <description>New grad role at Optum in HR, IN. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c97a3d4850793116</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3cffeb21a14df349</guid>
     </item>
     <item>
       <title>NEW CAMPUS* Adjunct Faculty, Sociology, Atlanta (Hybrid) *CAMPUS WILL NOT BE CHAMBLEE, GA at Strayer University</title>
@@ -107,17 +121,17 @@
     </item>
     <item>
       <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
-      <link>https://job-boards.greenhouse.io/gitlab/jobs/8504232002</link>
-      <description>New grad role at GitLab in Remote, Canada; Remote, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 30 Apr 2026 22:34:50 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8504232002</guid>
-    </item>
-    <item>
-      <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
       <link>https://job-boards.greenhouse.io/gitlab/jobs/8464417002</link>
       <description>New grad role at GitLab in Remote, India. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 30 Apr 2026 22:34:50 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8464417002</guid>
+    </item>
+    <item>
+      <title>Intermediate Site Reliability Engineer, Environment Automation at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8504232002</link>
+      <description>New grad role at GitLab in Remote, Canada; Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 30 Apr 2026 22:34:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8504232002</guid>
     </item>
     <item>
       <title>Software Security Engineer  at GitLab</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 30 Apr 2026 20:20:30 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Driving Behaviors at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7351058</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Apr 2026 20:20:18 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7351058</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Simulation, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Apr 2026 20:09:10 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
     </item>
   </channel>
 </rss>
