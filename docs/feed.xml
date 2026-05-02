@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 18:16:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 19:32:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Air Operations Associate, Gurgaon at Flexport</title>
@@ -127,6 +127,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1df3912f86851838</guid>
     </item>
     <item>
+      <title>Junior MSP Engineer at Community Technology Consultants</title>
+      <link>https://www.indeed.com/viewjob?jk=d7b2b3408ba77a9f</link>
+      <description>New grad role at Community Technology Consultants in Atlanta, GA, US. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d7b2b3408ba77a9f</guid>
+    </item>
+    <item>
+      <title>Sr, Software Engineer, Cloud Storage at NetApp</title>
+      <link>https://www.indeed.com/viewjob?jk=1b844606d3017ff4</link>
+      <description>New grad role at NetApp in Morrisville, NC, US. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1b844606d3017ff4</guid>
+    </item>
+    <item>
       <title>Junior Cloud Automation Engineer at Openkyber</title>
       <link>https://www.indeed.com/viewjob?jk=a5a4c8ccde4d69ab</link>
       <description>New grad role at Openkyber in AK, US. Category: Other</description>
@@ -153,13 +167,6 @@
       <description>New grad role at Openkyber in AK, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=40a4f69b5b2d799c</guid>
-    </item>
-    <item>
-      <title>Junior GCP Cloud Engineer at Openkyber</title>
-      <link>https://www.indeed.com/viewjob?jk=3f69f617f28f6e41</link>
-      <description>New grad role at Openkyber in AK, US. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3f69f617f28f6e41</guid>
     </item>
     <item>
       <title>Associate Engineer - Software Engineer at Maximus</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8448179002?gh_jid=8448179002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Decisions - Verticals at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8495862002?gh_jid=8495862002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8495862002?gh_jid=8495862002</guid>
     </item>
   </channel>
 </rss>
