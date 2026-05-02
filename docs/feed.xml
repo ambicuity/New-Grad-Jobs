@@ -5,14 +5,231 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 23:06:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 00:05:26 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002</link>
-      <description>New grad role at SpaceX in Irvine, CA. Category: Hardware Engineering</description>
-      <pubDate>Fri, 01 May 2026 22:33:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002</guid>
+      <title>Machine Learning Engineer 4 at Adobe</title>
+      <link>https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Machine-Learning-Engineer-4_R166984</link>
+      <description>New grad role at Adobe in San Jose. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Machine-Learning-Engineer-4_R166984</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Hardware Infrastructure at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Site-Reliability-Engineer---Hardware-Infrastructure_JR2011168</link>
+      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Site-Reliability-Engineer---Hardware-Infrastructure_JR2011168</guid>
+    </item>
+    <item>
+      <title>VLSI Design Automation Software Engineer at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/VLSI-Design-Automation-Software-Engineer_JR2016784</link>
+      <description>New grad role at NVIDIA in US, MA, Westford. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/VLSI-Design-Automation-Software-Engineer_JR2016784</guid>
+    </item>
+    <item>
+      <title>Data Platform SRE-Application Development Programmer at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Tampa-Florida-United-States/Data-Platform-SRE-Application-Development-Programmer_25927697</link>
+      <description>New grad role at Citi in Tampa Florida United States. Category: Data Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Tampa-Florida-United-States/Data-Platform-SRE-Application-Development-Programmer_25927697</guid>
+    </item>
+    <item>
+      <title>Claims Processing - Representative I at CVS Health</title>
+      <link>https://cvshealth.wd1.myworkdayjobs.com/job/AZ---Work-from-home/Claims-Processing---Representative-I_R0852397</link>
+      <description>New grad role at CVS Health in AZ - Work from home. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/AZ---Work-from-home/Claims-Processing---Representative-I_R0852397</guid>
+    </item>
+    <item>
+      <title>Analyst, Systems Engineer at CVS Health</title>
+      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Work-from-home/Analyst--Systems-Engineer_R0903656</link>
+      <description>New grad role at CVS Health in RI - Work from home. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Work-from-home/Analyst--Systems-Engineer_R0903656</guid>
+    </item>
+    <item>
+      <title>Associate Sales Representative, Pain Interventions - Alaska at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Anchorage-Alaska-United-States-of-America/Associate-Sales-Representative--Pain-Interventions---Alaska_R62058-2</link>
+      <description>New grad role at Medtronic in Anchorage, Alaska, United States of America. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Anchorage-Alaska-United-States-of-America/Associate-Sales-Representative--Pain-Interventions---Alaska_R62058-2</guid>
+    </item>
+    <item>
+      <title>Sales Representative II, Pain Therapies - Nevada at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Reno-Nevada-United-States-of-America/Sales-Representative--Pain-Therapies---Nevada_R65720-1</link>
+      <description>New grad role at Medtronic in Reno, Nevada, United States of America. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Reno-Nevada-United-States-of-America/Sales-Representative--Pain-Therapies---Nevada_R65720-1</guid>
+    </item>
+    <item>
+      <title>EP Mapping Specialist, CAS I In Training - Duluth, MN at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Duluth-Minnesota-United-States-of-America/EP-Mapping-Specialist--CAS-I-In-Training---Duluth--MN_R65692-1</link>
+      <description>New grad role at Medtronic in Duluth, Minnesota, United States of America. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Duluth-Minnesota-United-States-of-America/EP-Mapping-Specialist--CAS-I-In-Training---Duluth--MN_R65692-1</guid>
+    </item>
+    <item>
+      <title>(USA) Coach/Ops Mgr Trainee at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-MN-BAXTER-01654-WM-SUPERCENTER/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2491799-1</link>
+      <description>New grad role at Walmart in (USA) MN BAXTER 01654 WM SUPERCENTER. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-MN-BAXTER-01654-WM-SUPERCENTER/XMLNAME--USA--Coach-Ops-Mgr-Trainee_R-2491799-1</guid>
+    </item>
+    <item>
+      <title>Engineer Systems Level 2/3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-West-Virginia-Rocket-Center/Engineer-Systems-Level-2-3_R10230266</link>
+      <description>New grad role at Northrop Grumman in United States-West Virginia-Rocket Center. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-West-Virginia-Rocket-Center/Engineer-Systems-Level-2-3_R10230266</guid>
+    </item>
+    <item>
+      <title>Cyber Systems Engineer 3/4 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Cyber-Systems-Engineer-3-4_R10231698</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Cyber-Systems-Engineer-3-4_R10231698</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Level 3 or 4 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Software-Engineer---Level-3-or-4_R10231647</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Colorado Springs. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Software-Engineer---Level-3-or-4_R10231647</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Atlassian Administration at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/Software-Engineer---Atlassian-Administration_R10228376</link>
+      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/Software-Engineer---Atlassian-Administration_R10228376</guid>
+    </item>
+    <item>
+      <title>Associate Engineer Manufacturing/ Engineer Manufacturing at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/Associate-Engineer-Manufacturing--Engineer-Manufacturing_R10231649</link>
+      <description>New grad role at Northrop Grumman in United States-California-Palmdale. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/Associate-Engineer-Manufacturing--Engineer-Manufacturing_R10231649</guid>
+    </item>
+    <item>
+      <title>Sentinel - Radar Post Flight Analysis - Systems Engineer (T01/T02) - 18023 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Sentinel---Radar-Post-Flight-Analysis---Systems-Engineer--T01-T02----18023_R10231000</link>
+      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Sentinel---Radar-Post-Flight-Analysis---Systems-Engineer--T01-T02----18023_R10231000</guid>
+    </item>
+    <item>
+      <title>2026 Associate Systems Engineer - Roy UT at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/XMLNAME-2026-Associate-Systems-Engineer---Roy-UT_R10231623</link>
+      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/XMLNAME-2026-Associate-Systems-Engineer---Roy-UT_R10231623</guid>
+    </item>
+    <item>
+      <title>Sentinel - Radar Post Flight Analysis - Systems Engineer (T03/T04) - 18022 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Sentinel---Radar-Post-Flight-Analysis---Systems-Engineer--T03-T04----18022_R10231003</link>
+      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Sentinel---Radar-Post-Flight-Analysis---Systems-Engineer--T03-T04----18022_R10231003</guid>
+    </item>
+    <item>
+      <title>2026 Associate Supplier Quality Engineer - Rolling Meadows IL at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Supplier-Quality-Engineer---Rolling-Meadows-IL_R10231590</link>
+      <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Supplier-Quality-Engineer---Rolling-Meadows-IL_R10231590</guid>
+    </item>
+    <item>
+      <title>Configuration Management &amp; Integration Engineer (Associate or Experienced) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Configuration-Management---Integration-Engineer--Associate-or-Experienced-_JR2026506629-1</link>
+      <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Configuration-Management---Integration-Engineer--Associate-or-Experienced-_JR2026506629-1</guid>
+    </item>
+    <item>
+      <title>Maintenance Engineer (Entry-Level or Associate) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Maintenance-Engineer--Entry-Level-or-Associate-_JR2026505189-1</link>
+      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Maintenance-Engineer--Entry-Level-or-Associate-_JR2026505189-1</guid>
+    </item>
+    <item>
+      <title>Mid Level Software Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Mid-Level-Software-Engineer_JR2026504724-2</link>
+      <description>New grad role at Boeing in USA - Daytona Beach, FL. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Mid-Level-Software-Engineer_JR2026504724-2</guid>
+    </item>
+    <item>
+      <title>Associate Space Communications Systems Engineer Analyst at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Associate-Space-Communications-Systems-Engineer-Analyst_JR2026506515-2</link>
+      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Associate-Space-Communications-Systems-Engineer-Analyst_JR2026506515-2</guid>
+    </item>
+    <item>
+      <title>Experienced Product Security Engineer (Integration)***Signing Bonus Potential*** at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</link>
+      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</guid>
+    </item>
+    <item>
+      <title>Associate Propulsion System Integration Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-System-Integration-Engineer_JR2026504400-1</link>
+      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-System-Integration-Engineer_JR2026504400-1</guid>
+    </item>
+    <item>
+      <title>Advanced Information Technologist – Associate Cloud Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Advanced-Information-Technologist---Associate-Cloud-Engineer_JR2026494282</link>
+      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Advanced-Information-Technologist---Associate-Cloud-Engineer_JR2026494282</guid>
+    </item>
+    <item>
+      <title>Associate Supply Chain Management Analyst (Level 2) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Supply-Chain-Management-Analyst--Level-2-_JR2026504457-1</link>
+      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Supply-Chain-Management-Analyst--Level-2-_JR2026504457-1</guid>
+    </item>
+    <item>
+      <title>Mid-Level Software Engineer - Developer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Mid-Level-Software-Engineer---Developer_JR2026508556</link>
+      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Mid-Level-Software-Engineer---Developer_JR2026508556</guid>
+    </item>
+    <item>
+      <title>Entry Level Supply Chain Specialist at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Dallas-TX/Entry-Level-Supply-Chain-Specialist_JR2026508527-1</link>
+      <description>New grad role at Boeing in USA - Dallas, TX. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Dallas-TX/Entry-Level-Supply-Chain-Specialist_JR2026508527-1</guid>
+    </item>
+    <item>
+      <title>Associate or Mid-Level Industrial Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-or-Mid-Level-Industrial-Engineer_JR2026498882-1</link>
+      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-or-Mid-Level-Industrial-Engineer_JR2026498882-1</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 01 May 2026 23:24:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 01 May 2026 23:24:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
     </item>
     <item>
       <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
@@ -27,6 +244,13 @@
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Hardware Engineering</description>
       <pubDate>Fri, 01 May 2026 22:33:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002</guid>
+    </item>
+    <item>
+      <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002</link>
+      <description>New grad role at SpaceX in Irvine, CA. Category: Hardware Engineering</description>
+      <pubDate>Fri, 01 May 2026 22:33:08 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002</guid>
     </item>
     <item>
       <title>Associate, Data Analytics (Tempe, AZ - Hybrid) at Oscar Health</title>
@@ -132,230 +356,6 @@
       <description>New grad role at Lyft in Toronto, Canada. Category: Data Engineering</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8503994002?gh_jid=8503994002</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8503982002?gh_jid=8503982002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8503982002?gh_jid=8503982002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Algorithms - Driver Incentives at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8503986002?gh_jid=8503986002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8503986002?gh_jid=8503986002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</link>
-      <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</guid>
-    </item>
-    <item>
-      <title>Data Scientist - Decisions, Mapping at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8448179002?gh_jid=8448179002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8448179002?gh_jid=8448179002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Decisions - Verticals at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8495862002?gh_jid=8495862002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8495862002?gh_jid=8495862002</guid>
-    </item>
-    <item>
-      <title>Data Scientist - Machine Learning, Pricing &amp; Rider Engagement at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8485432002?gh_jid=8485432002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8485432002?gh_jid=8485432002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Safety at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8509122002?gh_jid=8509122002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8509122002?gh_jid=8509122002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Supply and Operations Technology, Lyft Urban Solutions at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8402782002?gh_jid=8402782002</link>
-      <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8402782002?gh_jid=8402782002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Lyft Business at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8513769002?gh_jid=8513769002</link>
-      <description>New grad role at Lyft in New York, NY; San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8513769002?gh_jid=8513769002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Recommendations at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8378390002?gh_jid=8378390002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8378390002?gh_jid=8378390002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ad Infra   at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Gov Tech at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Pricing at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</guid>
-    </item>
-    <item>
-      <title> Software Engineer, Rider Quality at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</guid>
-    </item>
-    <item>
-      <title>Software Engineer - RTSM, Driver at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Server at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Loans Originations at SoFi</title>
-      <link>https://sofi.com/careers/job/7713729003?gh_jid=7713729003</link>
-      <description>New grad role at SoFi in UT - Cottonwood Heights ; MT - Helena . Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:11:19 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7713729003?gh_jid=7713729003</guid>
-    </item>
-    <item>
-      <title>Data Scientist at SoFi</title>
-      <link>https://sofi.com/careers/job/7679146003?gh_jid=7679146003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:03:02 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7679146003?gh_jid=7679146003</guid>
-    </item>
-    <item>
-      <title>Full-Stack Software Engineer, Benefits and Rewards at SoFi</title>
-      <link>https://sofi.com/careers/job/7581360003?gh_jid=7581360003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 17:54:54 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7581360003?gh_jid=7581360003</guid>
-    </item>
-    <item>
-      <title>iOS Engineer II at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=7858998</link>
-      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
-      <pubDate>Fri, 01 May 2026 17:12:35 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858998</guid>
-    </item>
-    <item>
-      <title>iOS Engineer II at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=7858144</link>
-      <description>New grad role at Instacart in United States - Remote. Category: Other</description>
-      <pubDate>Fri, 01 May 2026 17:10:51 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858144</guid>
-    </item>
-    <item>
-      <title>[2026] Software Engineer, Game Developer at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7557909?gh_jid=7557909</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:38:14 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7557909?gh_jid=7557909</guid>
-    </item>
-    <item>
-      <title>Software Engineer, User Co-Experience at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
-    </item>
-    <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
-      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
-    </item>
-    <item>
-      <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7551186</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7551186</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 16:25:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
     </item>
   </channel>
 </rss>

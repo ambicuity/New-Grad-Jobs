@@ -2,34 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 995,
-      "change_percent": -0.7
+      "total_jobs": 992,
+      "change_percent": 0.2
     },
     "30_days": {
-      "total_jobs": 988,
-      "change_percent": -1.4
+      "total_jobs": 995,
+      "change_percent": 0.5
     }
   },
   "growing_categories": [
-    "FAANG_Plus",
-    "Unicorn",
-    "Infrastructure"
+    "FAANG+",
+    "Other",
+    "General Engineering"
   ],
   "declining_categories": [
-    "Early-Stage Startups",
-    "Non-Tech Industry",
-    "Contract Roles"
+    "Unicorn",
+    "Early-stage Startups",
+    "Non-Tech Industry"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently exhibiting high stability with a mean-reverting trend around the 980-1000 job range, suggesting a lack of strong directional momentum.",
-    "Growth in the FAANG_Plus and Unicorn tiers indicates that top-tier companies are maintaining consistent hiring pipelines despite broader economic uncertainty.",
-    "The slight downward drift in the 30-day forecast reflects typical seasonal cooling and a cautious approach to entry-level headcount expansion."
+    "The market is exhibiting high stability with a narrow variance, suggesting a period of consolidation rather than aggressive expansion or contraction.",
+    "While FAANG+ and 'Other' tiers show slight upward momentum, the 'Unicorn' segment is experiencing a minor cooling phase, indicating a shift in risk appetite among high-growth firms.",
+    "The 30-day average (984) trailing the current total (990) indicates a very slight upward trend, supporting a cautiously optimistic outlook for new graduate opportunities."
   ],
-  "generated_at": "2026-05-01T01:28:20.233530",
-  "data_points": 57,
+  "generated_at": "2026-05-02T00:05:26.601994",
+  "data_points": 58,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-01"
+    "end": "2026-05-02"
   }
 }
