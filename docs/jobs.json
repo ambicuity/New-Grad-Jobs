@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-05-02T17:29:25.042950",
+    "generated_at": "2026-05-02T18:16:03.948781",
     "total_jobs": 980,
     "categories": [
       {
@@ -48,6 +48,136 @@
     ]
   },
   "jobs": [
+    {
+      "id": "flexport-air-operations-associate,-gurgaon-new-delhi,-india",
+      "company": "Flexport",
+      "title": "Air Operations Associate, Gurgaon",
+      "location": "New Delhi, India",
+      "url": "https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526",
+      "posted_at": "2026-05-02T17:55:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "flexport-inbound-sales-development-representative---new-grad-chicago,-illinois,-united-states",
+      "company": "Flexport",
+      "title": "Inbound Sales Development Representative - New Grad",
+      "location": "Chicago, Illinois, United States",
+      "url": "https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324",
+      "posted_at": "2026-05-02T17:55:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "flexport-ocean-operations-associate,-mumbai-mumbai,-india",
+      "company": "Flexport",
+      "title": "Ocean Operations Associate, Mumbai",
+      "location": "Mumbai, India",
+      "url": "https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848",
+      "posted_at": "2026-05-02T17:55:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "flexport-software-engineer-i,-autonomous-freight-systems-san-francisco,-california,-united-states",
+      "company": "Flexport",
+      "title": "Software Engineer I, Autonomous Freight Systems",
+      "location": "San Francisco, California, United States",
+      "url": "https://boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298",
+      "posted_at": "2026-05-02T17:55:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "flexport--software-engineer-ii,-autonomous-freight-systems-san-francisco,-california,-united-states",
+      "company": "Flexport",
+      "title": " Software Engineer II, Autonomous Freight Systems",
+      "location": "San Francisco, California, United States",
+      "url": "https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346",
+      "posted_at": "2026-05-02T17:55:50",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
     {
       "id": "robinhood-software-developer,-fraud-investigations-toronto,-canada",
       "company": "Robinhood",
@@ -1563,7 +1693,7 @@
       "location": "UT - Cottonwood Heights ; MT - Helena ",
       "url": "https://sofi.com/careers/job/7713729003?gh_jid=7713729003",
       "posted_at": "2026-05-01T18:11:19",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -1591,7 +1721,7 @@
       "location": "CA - San Francisco",
       "url": "https://sofi.com/careers/job/7679146003?gh_jid=7679146003",
       "posted_at": "2026-05-01T18:03:02",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -1619,7 +1749,7 @@
       "location": "CA - San Francisco",
       "url": "https://sofi.com/careers/job/7581360003?gh_jid=7581360003",
       "posted_at": "2026-05-01T17:54:54",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -2555,6 +2685,32 @@
       "is_closed": false
     },
     {
+      "id": "las-palmas-del-sol-healthcare-new-grad-rn-resident-renal-el-paso,-tx,-us",
+      "company": "Las Palmas Del Sol Healthcare",
+      "title": "New Grad RN Resident Renal",
+      "location": "El Paso, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=b6f8e4adef4f72a2",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "trimble-software-engineer-tn,-in",
       "company": "Trimble",
       "title": "Software Engineer",
@@ -2581,11 +2737,37 @@
       "is_closed": false
     },
     {
-      "id": "las-palmas-del-sol-healthcare-new-grad-rn-resident-renal-el-paso,-tx,-us",
-      "company": "Las Palmas Del Sol Healthcare",
-      "title": "New Grad RN Resident Renal",
-      "location": "El Paso, TX, US",
-      "url": "https://www.indeed.com/viewjob?jk=b6f8e4adef4f72a2",
+      "id": "electronic-arts-backend-software-engineer-ii---eax-vancouver,-bc,-ca",
+      "company": "Electronic Arts",
+      "title": "Backend Software Engineer II - EAX",
+      "location": "Vancouver, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=f0058c22355c717b",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "td-associate-quality-engineer-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Associate Quality Engineer",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=c0c81988070878ce",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -2593,6 +2775,32 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "export-development-canada-associate,-data-engineer-(12-month-contract)-ottawa,-on,-ca",
+      "company": "Export Development Canada",
+      "title": "Associate, Data Engineer (12 month contract)",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=261fcb58f6a111ca",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
       },
       "company_tier": {
         "tier": "other",
@@ -2711,110 +2919,6 @@
       "is_closed": false
     },
     {
-      "id": "electronic-arts-backend-software-engineer-ii---eax-vancouver,-bc,-ca",
-      "company": "Electronic Arts",
-      "title": "Backend Software Engineer II - EAX",
-      "location": "Vancouver, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=f0058c22355c717b",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "td-associate-quality-engineer-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Associate Quality Engineer",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=c0c81988070878ce",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "export-development-canada-associate,-data-engineer-(12-month-contract)-ottawa,-on,-ca",
-      "company": "Export Development Canada",
-      "title": "Associate, Data Engineer (12 month contract)",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=261fcb58f6a111ca",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "omers-student,-global-equities-portfolio-analyst-(fall-2026,-4-months)-toronto,-on,-ca",
-      "company": "OMERS",
-      "title": "Student, Global Equities Portfolio Analyst (Fall 2026, 4 Months)",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=6c5e844d0299742f",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "\uff41\uff4e\uff47\uff45\uff4c-data-scientist-provo,-ut,-us",
       "company": "\uff21\uff2e\uff27\uff25\uff2c",
       "title": "Data Scientist",
@@ -2893,6 +2997,58 @@
       "is_closed": false
     },
     {
+      "id": "nan-entry-level-aerospace-engineer-huntsville,-al,-us",
+      "company": null,
+      "title": "Entry Level Aerospace Engineer",
+      "location": "Huntsville, AL, US",
+      "url": "https://www.indeed.com/viewjob?jk=2be3a21f6c0a015e",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "thatcher-company-manufacturing-technology-engineer-i-salt-lake-city,-ut,-us",
+      "company": "Thatcher Company",
+      "title": "Manufacturing Technology Engineer I",
+      "location": "Salt Lake City, UT, US",
+      "url": "https://www.indeed.com/viewjob?jk=a00c06049f9ce5c6",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "kleinfelder-entry-level-geotechnical-engineer/eit-austin,-tx,-us",
       "company": "Kleinfelder",
       "title": "Entry-Level Geotechnical Engineer/EIT",
@@ -2945,11 +3101,11 @@
       "is_closed": false
     },
     {
-      "id": "nan-entry-level-aerospace-engineer-huntsville,-al,-us",
-      "company": null,
-      "title": "Entry Level Aerospace Engineer",
-      "location": "Huntsville, AL, US",
-      "url": "https://www.indeed.com/viewjob?jk=2be3a21f6c0a015e",
+      "id": "omers-student,-global-equities-portfolio-analyst-(fall-2026,-4-months)-toronto,-on,-ca",
+      "company": "OMERS",
+      "title": "Student, Global Equities Portfolio Analyst (Fall 2026, 4 Months)",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=6c5e844d0299742f",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -3103,6 +3259,58 @@
       "is_closed": false
     },
     {
+      "id": "ochsner-health-medical-technologist/-medical-lab-technician-(mt/mlt)---st.-anne-campus---full-time-r",
+      "company": "Ochsner Health",
+      "title": "Medical Technologist/ Medical Lab Technician (MT/MLT) - St. Anne Campus - Full Time",
+      "location": "Raceland, LA, US",
+      "url": "https://www.indeed.com/viewjob?jk=e1852e5cbfff13c5",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ochsner-health-medical-technologist/-medical-lab-technician-(mt/mlt)---chabert-campus---full-time-ho",
+      "company": "Ochsner Health",
+      "title": "Medical Technologist/ Medical Lab Technician (MT/MLT) - Chabert Campus - Full Time",
+      "location": "Houma, LA, US",
+      "url": "https://www.indeed.com/viewjob?jk=bbd01c4c0050e637",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "lowe's-home-improvement-software-engineer-\u2013-full-stack_java_react_ml-ka,-in",
       "company": "Lowe's Home Improvement",
       "title": "Software Engineer \u2013 Full Stack_Java_React_ML",
@@ -3181,58 +3389,6 @@
       "is_closed": false
     },
     {
-      "id": "ochsner-health-medical-technologist/-medical-lab-technician-(mt/mlt)---st.-anne-campus---full-time-r",
-      "company": "Ochsner Health",
-      "title": "Medical Technologist/ Medical Lab Technician (MT/MLT) - St. Anne Campus - Full Time",
-      "location": "Raceland, LA, US",
-      "url": "https://www.indeed.com/viewjob?jk=e1852e5cbfff13c5",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "ochsner-health-medical-technologist/-medical-lab-technician-(mt/mlt)---chabert-campus---full-time-ho",
-      "company": "Ochsner Health",
-      "title": "Medical Technologist/ Medical Lab Technician (MT/MLT) - Chabert Campus - Full Time",
-      "location": "Houma, LA, US",
-      "url": "https://www.indeed.com/viewjob?jk=bbd01c4c0050e637",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "applied-materials-2026-ncg---data-scientist-(masters)-austin,-tx,-us",
       "company": "Applied Materials",
       "title": "2026 NCG - Data Scientist (Masters)",
@@ -3271,32 +3427,6 @@
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "thatcher-company-manufacturing-technology-engineer-i-salt-lake-city,-ut,-us",
-      "company": "Thatcher Company",
-      "title": "Manufacturing Technology Engineer I",
-      "location": "Salt Lake City, UT, US",
-      "url": "https://www.indeed.com/viewjob?jk=a00c06049f9ce5c6",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -3415,18 +3545,18 @@
       "is_closed": false
     },
     {
-      "id": "clv-group-inc.-ai-&-automation-associate---new-grad-opportunity-ottawa,-on,-ca",
-      "company": "CLV Group Inc.",
-      "title": "AI & Automation Associate - New Grad Opportunity",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=09736fd458adfaf7",
+      "id": "cenovus-energy-student,-recreation-and-engagement,-christina-lake-(july-2026)-christina-lake,-bc,-ca",
+      "company": "Cenovus Energy",
+      "title": "Student, Recreation and Engagement, Christina Lake (July 2026)",
+      "location": "Christina Lake, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=49a568a090ef92c7",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -3441,18 +3571,18 @@
       "is_closed": false
     },
     {
-      "id": "cenovus-energy-student,-recreation-and-engagement,-christina-lake-(july-2026)-christina-lake,-bc,-ca",
-      "company": "Cenovus Energy",
-      "title": "Student, Recreation and Engagement, Christina Lake (July 2026)",
-      "location": "Christina Lake, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=49a568a090ef92c7",
+      "id": "clv-group-inc.-ai-&-automation-associate---new-grad-opportunity-ottawa,-on,-ca",
+      "company": "CLV Group Inc.",
+      "title": "AI & Automation Associate - New Grad Opportunity",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=09736fd458adfaf7",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -3531,6 +3661,32 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
+      "id": "ferguson-sales-trainee-program---june-halethorpe,-md,-us",
+      "company": "Ferguson",
+      "title": "Sales Trainee Program - June",
+      "location": "Halethorpe, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=1ce03326382c41bf",
+      "posted_at": "2026-05-01T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
       },
       "company_tier": {
         "tier": "other",
@@ -3649,32 +3805,6 @@
       "is_closed": false
     },
     {
-      "id": "ferguson-sales-trainee-program---june-halethorpe,-md,-us",
-      "company": "Ferguson",
-      "title": "Sales Trainee Program - June",
-      "location": "Halethorpe, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=1ce03326382c41bf",
-      "posted_at": "2026-05-01T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "openkyber-cloud-support-associate-ak,-us",
       "company": "Openkyber",
       "title": "Cloud Support Associate",
@@ -3753,11 +3883,11 @@
       "is_closed": false
     },
     {
-      "id": "isc-constructors,-llc-civil-engineer-\u2013-entry-level-baton-rouge,-la,-us",
-      "company": "ISC Constructors, LLC",
-      "title": "Civil Engineer \u2013 Entry Level",
-      "location": "Baton Rouge, LA, US",
-      "url": "https://www.indeed.com/viewjob?jk=7e1d1bef3b78203f",
+      "id": "penn-medicine-perfusionist-at-hup-for-august-2026-start-philadelphia,-pa,-us",
+      "company": "Penn Medicine",
+      "title": "Perfusionist at HUP for August 2026 Start",
+      "location": "Philadelphia, PA, US",
+      "url": "https://www.indeed.com/viewjob?jk=ee71f59cd80128f0",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -3779,11 +3909,11 @@
       "is_closed": false
     },
     {
-      "id": "penn-medicine-perfusionist-at-hup-for-august-2026-start-philadelphia,-pa,-us",
-      "company": "Penn Medicine",
-      "title": "Perfusionist at HUP for August 2026 Start",
-      "location": "Philadelphia, PA, US",
-      "url": "https://www.indeed.com/viewjob?jk=ee71f59cd80128f0",
+      "id": "isc-constructors,-llc-civil-engineer-\u2013-entry-level-baton-rouge,-la,-us",
+      "company": "ISC Constructors, LLC",
+      "title": "Civil Engineer \u2013 Entry Level",
+      "location": "Baton Rouge, LA, US",
+      "url": "https://www.indeed.com/viewjob?jk=7e1d1bef3b78203f",
       "posted_at": "2026-05-01T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -5423,7 +5553,7 @@
       "location": "New York, New York",
       "url": "https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785734",
       "posted_at": "2026-04-30T17:49:39",
-      "posted_display": "1 day ago",
+      "posted_display": "2 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_ml",
@@ -10783,18 +10913,18 @@
       "is_closed": false
     },
     {
-      "id": "liburdi-group-of-companies-junior-engineering-associate-dundas,-on,-ca",
-      "company": "Liburdi Group of Companies",
-      "title": "Junior Engineering Associate",
-      "location": "Dundas, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=2700e7d7cd4ac276",
+      "id": "td-data-scientist-ii---remediation-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Data Scientist II - Remediation",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=4693b187c5c1451c",
       "posted_at": "2026-04-30T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
       },
       "company_tier": {
         "tier": "other",
@@ -10809,18 +10939,18 @@
       "is_closed": false
     },
     {
-      "id": "td-data-scientist-ii---remediation-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Data Scientist II - Remediation",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=4693b187c5c1451c",
+      "id": "liburdi-group-of-companies-junior-engineering-associate-dundas,-on,-ca",
+      "company": "Liburdi Group of Companies",
+      "title": "Junior Engineering Associate",
+      "location": "Dundas, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=2700e7d7cd4ac276",
       "posted_at": "2026-04-30T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -11485,11 +11615,11 @@
       "is_closed": false
     },
     {
-      "id": "sun-life-student,-tax-analyst-(summer-2026)-toronto,-on,-ca",
-      "company": "Sun Life",
-      "title": "Student, Tax Analyst (Summer 2026)",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=dfdd93e600611b22",
+      "id": "frederick-national-laboratory-for-cancer-research-advanced-practice-provider-(np-ii-or-pa-il)---niai",
+      "company": "Frederick National Laboratory for Cancer Research",
+      "title": "Advanced Practice Provider (NP II or PA Il) - NIAID / Neurology",
+      "location": "Bethesda, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=61c5faf7bd201e65",
       "posted_at": "2026-04-30T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
@@ -11511,11 +11641,11 @@
       "is_closed": false
     },
     {
-      "id": "frederick-national-laboratory-for-cancer-research-advanced-practice-provider-(np-ii-or-pa-il)---niai",
-      "company": "Frederick National Laboratory for Cancer Research",
-      "title": "Advanced Practice Provider (NP II or PA Il) - NIAID / Neurology",
-      "location": "Bethesda, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=61c5faf7bd201e65",
+      "id": "sun-life-student,-tax-analyst-(summer-2026)-toronto,-on,-ca",
+      "company": "Sun Life",
+      "title": "Student, Tax Analyst (Summer 2026)",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=dfdd93e600611b22",
       "posted_at": "2026-04-30T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
@@ -12839,7 +12969,7 @@
       "location": "India ",
       "url": "https://job-boards.greenhouse.io/singlestore/jobs/7861208",
       "posted_at": "2026-04-29T18:02:32",
-      "posted_display": "2 days ago",
+      "posted_display": "3 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "software_engineering",
@@ -14201,7 +14331,7 @@
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7739574?gh_jid=7739574",
       "posted_at": "2026-04-28T17:31:13",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_engineering",
@@ -14227,7 +14357,7 @@
       "location": "Remote - US: Select locations",
       "url": "https://jobs.dropbox.com/listing/7739571?gh_jid=7739571",
       "posted_at": "2026-04-28T17:31:11",
-      "posted_display": "3 days ago",
+      "posted_display": "4 days ago",
       "source": "Greenhouse",
       "category": {
         "id": "data_engineering",
@@ -16421,6 +16551,32 @@
       "is_closed": false
     },
     {
+      "id": "timmons-group-new-graduate-project-engineer-i---transportation-design-richmond,-va,-us",
+      "company": "TIMMONS GROUP",
+      "title": "New Graduate Project Engineer I - Transportation Design",
+      "location": "Richmond, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=dea41c07440a06d3",
+      "posted_at": "2026-04-28T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false
+    },
+    {
       "id": "ge-healthcare-trainee-engineer-ka,-in",
       "company": "GE HealthCare",
       "title": "Trainee Engineer",
@@ -16452,32 +16608,6 @@
       "title": "Graduate Engineer Trainee",
       "location": "KA, IN",
       "url": "https://in.indeed.com/viewjob?jk=cd333064978941c7",
-      "posted_at": "2026-04-28T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "timmons-group-new-graduate-project-engineer-i---transportation-design-richmond,-va,-us",
-      "company": "TIMMONS GROUP",
-      "title": "New Graduate Project Engineer I - Transportation Design",
-      "location": "Richmond, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=dea41c07440a06d3",
       "posted_at": "2026-04-28T00:00:00",
       "posted_display": "4 days ago",
       "source": "JobSpy (Indeed)",
@@ -17549,32 +17679,6 @@
       "is_closed": false
     },
     {
-      "id": "flexport--software-engineer-ii,-autonomous-freight-systems-san-francisco,-california,-united-states",
-      "company": "Flexport",
-      "title": " Software Engineer II, Autonomous Freight Systems",
-      "location": "San Francisco, California, United States",
-      "url": "https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346",
-      "posted_at": "2026-04-25T15:47:28",
-      "posted_display": "2026-04-25",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
       "id": "twitch-software-engineer-i,-ad-supply-experiences-san-francisco,-ca",
       "company": "Twitch",
       "title": "Software Engineer I, Ad Supply Experiences",
@@ -18153,32 +18257,6 @@
         "sectors": [
           "finance"
         ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "flexport-software-engineer-i,-autonomous-freight-systems-san-francisco,-california,-united-states",
-      "company": "Flexport",
-      "title": "Software Engineer I, Autonomous Freight Systems",
-      "location": "San Francisco, California, United States",
-      "url": "https://boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298",
-      "posted_at": "2026-04-24T21:01:54",
-      "posted_display": "2026-04-24",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
@@ -22643,84 +22721,6 @@
         "sectors": [
           "finance"
         ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "flexport-air-operations-associate,-gurgaon-new-delhi,-india",
-      "company": "Flexport",
-      "title": "Air Operations Associate, Gurgaon",
-      "location": "New Delhi, India",
-      "url": "https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526",
-      "posted_at": "2026-04-14T15:07:06",
-      "posted_display": "2026-04-14",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "flexport-inbound-sales-development-representative---new-grad-chicago,-illinois,-united-states",
-      "company": "Flexport",
-      "title": "Inbound Sales Development Representative - New Grad",
-      "location": "Chicago, Illinois, United States",
-      "url": "https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324",
-      "posted_at": "2026-04-14T15:07:06",
-      "posted_display": "2026-04-14",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false
-    },
-    {
-      "id": "flexport-ocean-operations-associate,-mumbai-mumbai,-india",
-      "company": "Flexport",
-      "title": "Ocean Operations Associate, Mumbai",
-      "location": "Mumbai, India",
-      "url": "https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848",
-      "posted_at": "2026-04-14T15:07:06",
-      "posted_display": "2026-04-14",
-      "source": "Greenhouse",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
       },
       "flags": {
         "no_sponsorship": false,
