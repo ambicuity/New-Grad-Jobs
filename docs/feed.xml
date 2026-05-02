@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 03:49:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 06:01:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, HITL - Top Secret Clearance at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 05:00:13 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8397596002?gh_jid=8397596002</guid>
+    </item>
+    <item>
+      <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7551186</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 04:32:49 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7551186</guid>
+    </item>
     <item>
       <title>Software Engineer, Continuous Integration (Starship) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8533859002?gh_jid=8533859002</link>
@@ -62,20 +76,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 02 May 2026 00:25:23 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7577436?gh_jid=7577436</guid>
-    </item>
-    <item>
-      <title>ProSales Associate (Early Career Sales Program) at Herc Rentals</title>
-      <link>https://www.indeed.com/viewjob?jk=2da4efb12220a13b</link>
-      <description>New grad role at Herc Rentals in Kansas City, MO, US. Category: Other</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2da4efb12220a13b</guid>
-    </item>
-    <item>
-      <title>ProSales Associate (early career sales program) - Tulsa OK at Herc Rentals</title>
-      <link>https://www.indeed.com/viewjob?jk=e6cf8bd5fdafd42b</link>
-      <description>New grad role at Herc Rentals in Tulsa, OK, US. Category: Other</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6cf8bd5fdafd42b</guid>
     </item>
     <item>
       <title>Junior Full-Stack Software Engineer (Oahu) at Hawaii Foodservice Alliance</title>
@@ -253,13 +253,6 @@
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</guid>
     </item>
     <item>
-      <title>Associate Propulsion System Integration Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-System-Integration-Engineer_JR2026504400-1</link>
-      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Associate-Propulsion-System-Integration-Engineer_JR2026504400-1</guid>
-    </item>
-    <item>
       <title>Advanced Information Technologist – Associate Cloud Engineer at Boeing</title>
       <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Advanced-Information-Technologist---Associate-Cloud-Engineer_JR2026494282</link>
       <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Infrastructure &amp; SRE</description>
@@ -356,6 +349,13 @@
       <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 01 May 2026 21:13:58 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8330595002?gh_jid=8330595002</guid>
+    </item>
+    <item>
+      <title>Business Systems Engineer, Oracle PTM at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 20:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</guid>
     </item>
   </channel>
 </rss>

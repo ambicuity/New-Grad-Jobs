@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-02T03:49:45.596315",
+    "last_updated": "2026-05-02T06:01:12.476318",
     "total_snapshots": 58,
     "date_range": {
       "start": "2026-03-05",
@@ -3145,12 +3145,12 @@
     },
     {
       "date": "2026-05-02",
-      "total_jobs": 989,
+      "total_jobs": 980,
       "categories": {},
       "tiers": {
-        "unicorn": 483,
-        "other": 369,
-        "faang_plus": 137
+        "unicorn": 482,
+        "other": 358,
+        "faang_plus": 140
       },
       "top_companies": [
         {
@@ -3190,13 +3190,13 @@
           "jobs": 19
         },
         {
-          "company": "Figma",
+          "company": "Boeing",
           "jobs": 17
         }
       ],
-      "unique_companies": 201,
-      "avg_jobs_per_company": 4.92,
-      "timestamp": "2026-05-02T03:49:45.595629"
+      "unique_companies": 198,
+      "avg_jobs_per_company": 4.95,
+      "timestamp": "2026-05-02T06:01:12.475488"
     }
   ]
 }
