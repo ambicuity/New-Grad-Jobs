@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 10:16:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 11:13:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
@@ -85,11 +85,39 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7577436?gh_jid=7577436</guid>
     </item>
     <item>
+      <title>CloudKit Client Software Engineer at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=29ab3cd158e9ad23</link>
+      <description>New grad role at Apple in San Diego, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=29ab3cd158e9ad23</guid>
+    </item>
+    <item>
+      <title>Software Engineer - App Store Discovery at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=526a37e456503b7f</link>
+      <description>New grad role at Apple in San Francisco, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=526a37e456503b7f</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Early Career (Front-end) at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=a385885aef94d6fb</link>
+      <description>New grad role at Apple in Austin, TX, US. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a385885aef94d6fb</guid>
+    </item>
+    <item>
       <title>Software Engineer III (Full Stack) – API Platform at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=9569805885bbf4d2</link>
       <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9569805885bbf4d2</guid>
+    </item>
+    <item>
+      <title>School Nurse - Carson Junior High School 2026-2027 at Mesa Public Schools - AZ</title>
+      <link>https://www.indeed.com/viewjob?jk=e5482e380491e82e</link>
+      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e5482e380491e82e</guid>
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Loans Originations at SoFi</title>
-      <link>https://sofi.com/careers/job/7713729003?gh_jid=7713729003</link>
-      <description>New grad role at SoFi in UT - Cottonwood Heights ; MT - Helena . Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:11:19 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7713729003?gh_jid=7713729003</guid>
-    </item>
-    <item>
-      <title>Data Scientist at SoFi</title>
-      <link>https://sofi.com/careers/job/7679146003?gh_jid=7679146003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 01 May 2026 18:03:02 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7679146003?gh_jid=7679146003</guid>
-    </item>
-    <item>
-      <title>Full-Stack Software Engineer, Benefits and Rewards at SoFi</title>
-      <link>https://sofi.com/careers/job/7581360003?gh_jid=7581360003</link>
-      <description>New grad role at SoFi in CA - San Francisco. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 17:54:54 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7581360003?gh_jid=7581360003</guid>
-    </item>
-    <item>
-      <title>iOS Engineer II at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=7858998</link>
-      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
-      <pubDate>Fri, 01 May 2026 17:12:35 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858998</guid>
     </item>
   </channel>
 </rss>
