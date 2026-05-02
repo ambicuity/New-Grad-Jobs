@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 07:59:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 09:18:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
@@ -85,18 +85,11 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7577436?gh_jid=7577436</guid>
     </item>
     <item>
-      <title>Junior Full-Stack Software Engineer (Oahu) at Hawaii Foodservice Alliance</title>
-      <link>https://www.indeed.com/viewjob?jk=4c1f8e90b480a9eb</link>
-      <description>New grad role at Hawaii Foodservice Alliance in Honolulu, HI, US. Category: Software Engineering</description>
+      <title>Software Engineer III (Full Stack) – API Platform at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=9569805885bbf4d2</link>
+      <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4c1f8e90b480a9eb</guid>
-    </item>
-    <item>
-      <title>Associate Backend Software Engineer (Java, Vert.x, AWS) - Remote US at Revvity</title>
-      <link>https://www.indeed.com/viewjob?jk=d67b3cf3ce8879bb</link>
-      <description>New grad role at Revvity in Waltham, MA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d67b3cf3ce8879bb</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9569805885bbf4d2</guid>
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -356,6 +349,13 @@
       <description>New grad role at SoFi in CA - San Francisco. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 17:54:54 +0000</pubDate>
       <guid isPermaLink="true">https://sofi.com/careers/job/7581360003?gh_jid=7581360003</guid>
+    </item>
+    <item>
+      <title>iOS Engineer II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=7858998</link>
+      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
+      <pubDate>Fri, 01 May 2026 17:12:35 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858998</guid>
     </item>
   </channel>
 </rss>
