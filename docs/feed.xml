@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 12:03:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 13:46:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
@@ -85,6 +85,13 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7577436?gh_jid=7577436</guid>
     </item>
     <item>
+      <title>[Software Services] : DevOps Engineer at Vinove</title>
+      <link>https://in.indeed.com/viewjob?jk=1df3912f86851838</link>
+      <description>New grad role at Vinove in UP, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1df3912f86851838</guid>
+    </item>
+    <item>
       <title>Junior GCP Cloud Engineer at Openkyber</title>
       <link>https://www.indeed.com/viewjob?jk=538f06a2c6f51b78</link>
       <description>New grad role at Openkyber in AK, US. Category: Data Science &amp; ML</description>
@@ -106,6 +113,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=526a37e456503b7f</guid>
     </item>
     <item>
+      <title>Associate Engineer - Software Engineer at Maximus</title>
+      <link>https://www.indeed.com/viewjob?jk=320b5f67288570d0</link>
+      <description>New grad role at Maximus in Tysons, VA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=320b5f67288570d0</guid>
+    </item>
+    <item>
       <title>Software Engineer - Early Career (Front-end) at Apple</title>
       <link>https://www.indeed.com/viewjob?jk=a385885aef94d6fb</link>
       <description>New grad role at Apple in Austin, TX, US. Category: Software Engineering</description>
@@ -118,13 +132,6 @@
       <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9569805885bbf4d2</guid>
-    </item>
-    <item>
-      <title>School Nurse - Carson Junior High School 2026-2027 at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=e5482e380491e82e</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e5482e380491e82e</guid>
     </item>
     <item>
       <title>Human Resource Trainee at Vcube software solutions pvt ltd</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</guid>
-    </item>
-    <item>
-      <title> Software Engineer, Rider Quality at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</guid>
     </item>
   </channel>
 </rss>
