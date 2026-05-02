@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 14:39:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 15:34:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
@@ -90,34 +90,6 @@
       <description>New grad role at Vinove in UP, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1df3912f86851838</guid>
-    </item>
-    <item>
-      <title>Junior Software Engineer at Easy Reader Inc.,</title>
-      <link>https://www.indeed.com/viewjob?jk=43ede25a709ef013</link>
-      <description>New grad role at Easy Reader Inc., in Remote, US. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=43ede25a709ef013</guid>
-    </item>
-    <item>
-      <title>Junior GCP Cloud Engineer at Openkyber</title>
-      <link>https://www.indeed.com/viewjob?jk=538f06a2c6f51b78</link>
-      <description>New grad role at Openkyber in AK, US. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=538f06a2c6f51b78</guid>
-    </item>
-    <item>
-      <title>CloudKit Client Software Engineer at Apple</title>
-      <link>https://www.indeed.com/viewjob?jk=29ab3cd158e9ad23</link>
-      <description>New grad role at Apple in San Diego, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=29ab3cd158e9ad23</guid>
-    </item>
-    <item>
-      <title>Software Engineer - App Store Discovery at Apple</title>
-      <link>https://www.indeed.com/viewjob?jk=526a37e456503b7f</link>
-      <description>New grad role at Apple in San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=526a37e456503b7f</guid>
     </item>
     <item>
       <title>Associate Engineer - Software Engineer at Maximus</title>
@@ -356,6 +328,34 @@
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Gov Tech at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</link>
+      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Pricing at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</guid>
+    </item>
+    <item>
+      <title> Software Engineer, Rider Quality at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</guid>
+    </item>
+    <item>
+      <title>Software Engineer - RTSM, Driver at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</link>
+      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</guid>
     </item>
   </channel>
 </rss>
