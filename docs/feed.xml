@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 15:34:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 16:30:57 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Fraud Investigations at Robinhood</title>
@@ -104,6 +104,13 @@
       <description>New grad role at Apple in Austin, TX, US. Category: Software Engineering</description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a385885aef94d6fb</guid>
+    </item>
+    <item>
+      <title>Associate, AI Engineer at KPMG</title>
+      <link>https://www.indeed.com/viewjob?jk=52bc35e219da4122</link>
+      <description>New grad role at KPMG in Dallas, TX, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=52bc35e219da4122</guid>
     </item>
     <item>
       <title>Software Engineer III (Full Stack) – API Platform at JPMorganChase</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</guid>
-    </item>
-    <item>
-      <title>Software Engineer - RTSM, Driver at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 01 May 2026 18:21:31 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</guid>
     </item>
   </channel>
 </rss>
