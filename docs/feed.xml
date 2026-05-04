@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2026 22:16:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 23:16:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloud Security Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7867389</link>
+      <description>New grad role at Stripe in Seattle, NYC, SF, US-Remote. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 04 May 2026 23:12:32 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7867389</guid>
+    </item>
+    <item>
+      <title>iOS Software Engineer, Contributions at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7891769</link>
+      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 04 May 2026 22:47:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7891769</guid>
+    </item>
+    <item>
+      <title>iOS Software Engineer, Contributions at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7891749</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Mon, 04 May 2026 22:44:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7891749</guid>
+    </item>
     <item>
       <title>Forward Deployed Infrastructure Engineer - US Government at Palantir</title>
       <link>https://jobs.lever.co/palantir/0fccbe95-2520-4df3-8600-7897656c06a2</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Mon, 04 May 2026 16:02:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Quantitative Evaluations at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7466534</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
-      <pubDate>Mon, 04 May 2026 16:02:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Data &amp; Systems  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446301</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 04 May 2026 16:02:15 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446301</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Model Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446322</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 04 May 2026 16:02:15 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446322</guid>
     </item>
   </channel>
 </rss>

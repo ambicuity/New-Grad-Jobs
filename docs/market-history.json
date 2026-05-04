@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-04T22:16:33.918563",
+    "last_updated": "2026-05-04T23:16:55.996065",
     "total_snapshots": 59,
     "date_range": {
       "start": "2026-03-05",
@@ -3200,12 +3200,12 @@
     },
     {
       "date": "2026-05-04",
-      "total_jobs": 1017,
+      "total_jobs": 1002,
       "categories": {},
       "tiers": {
-        "unicorn": 481,
-        "other": 388,
-        "faang_plus": 148
+        "faang_plus": 152,
+        "unicorn": 482,
+        "other": 368
       },
       "top_companies": [
         {
@@ -3215,10 +3215,6 @@
         {
           "company": "Waymo",
           "jobs": 47
-        },
-        {
-          "company": "Boeing",
-          "jobs": 24
         },
         {
           "company": "Lyft",
@@ -3233,6 +3229,14 @@
           "jobs": 21
         },
         {
+          "company": "Stripe",
+          "jobs": 20
+        },
+        {
+          "company": "Boeing",
+          "jobs": 20
+        },
+        {
           "company": "RBC",
           "jobs": 20
         },
@@ -3241,17 +3245,13 @@
           "jobs": 20
         },
         {
-          "company": "Stripe",
-          "jobs": 19
-        },
-        {
           "company": "Dropbox",
           "jobs": 19
         }
       ],
-      "unique_companies": 211,
-      "avg_jobs_per_company": 4.82,
-      "timestamp": "2026-05-04T22:16:33.917893"
+      "unique_companies": 201,
+      "avg_jobs_per_company": 4.99,
+      "timestamp": "2026-05-04T23:16:55.995189"
     }
   ]
 }
