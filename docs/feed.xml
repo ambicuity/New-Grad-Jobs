@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2026 16:25:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 18:01:55 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, AI Product at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
+      <pubDate>Mon, 04 May 2026 17:53:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Credit Risk Platform at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8219793002?gh_jid=8219793002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Mon, 04 May 2026 17:43:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8219793002?gh_jid=8219793002</guid>
+    </item>
     <item>
       <title>Front-End Software Engineer, Simulation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7855418</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 04 May 2026 15:52:00 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 04 May 2026 15:52:00 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer, Privy at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
-      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 04 May 2026 15:52:00 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
     </item>
   </channel>
 </rss>
