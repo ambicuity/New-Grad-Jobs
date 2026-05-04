@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-04T10:37:05.480274",
+    "last_updated": "2026-05-04T12:16:33.001424",
     "total_snapshots": 59,
     "date_range": {
       "start": "2026-03-05",
@@ -3200,11 +3200,11 @@
     },
     {
       "date": "2026-05-04",
-      "total_jobs": 1000,
+      "total_jobs": 1008,
       "categories": {},
       "tiers": {
         "unicorn": 482,
-        "other": 382,
+        "other": 390,
         "faang_plus": 136
       },
       "top_companies": [
@@ -3218,7 +3218,7 @@
         },
         {
           "company": "Prisma Health",
-          "jobs": 29
+          "jobs": 28
         },
         {
           "company": "ClickHouse",
@@ -3229,11 +3229,11 @@
           "jobs": 23
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 22
+          "company": "Affirm",
+          "jobs": 21
         },
         {
-          "company": "Affirm",
+          "company": "Northrop Grumman",
           "jobs": 21
         },
         {
@@ -3249,9 +3249,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 196,
-      "avg_jobs_per_company": 5.1,
-      "timestamp": "2026-05-04T10:37:05.479618"
+      "unique_companies": 202,
+      "avg_jobs_per_company": 4.99,
+      "timestamp": "2026-05-04T12:16:33.000588"
     }
   ]
 }
