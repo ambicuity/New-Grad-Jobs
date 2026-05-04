@@ -2,34 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 992,
-      "change_percent": 0.2
+      "total_jobs": 975,
+      "change_percent": 2.2
     },
     "30_days": {
-      "total_jobs": 995,
-      "change_percent": 0.5
+      "total_jobs": 980,
+      "change_percent": 2.7
     }
   },
   "growing_categories": [
-    "FAANG+",
-    "Other",
-    "General Engineering"
+    "Non-Tech/General Industry",
+    "Mid-Market Enterprise",
+    "Fintech"
   ],
   "declining_categories": [
-    "Unicorn",
-    "Early-stage Startups",
-    "Non-Tech Industry"
+    "FAANG+",
+    "Early-Stage Startups",
+    "Consumer Hardware"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability with a narrow variance, suggesting a period of consolidation rather than aggressive expansion or contraction.",
-    "While FAANG+ and 'Other' tiers show slight upward momentum, the 'Unicorn' segment is experiencing a minor cooling phase, indicating a shift in risk appetite among high-growth firms.",
-    "The 30-day average (984) trailing the current total (990) indicates a very slight upward trend, supporting a cautiously optimistic outlook for new graduate opportunities."
+    "The market is exhibiting high stability with a mean-reverting trend around the 980-job mark, suggesting a period of consolidation rather than aggressive expansion or contraction.",
+    "While FAANG+ and Unicorn tiers are showing slight downward pressure, the 'Other' category remains resilient, indicating that hiring demand is shifting toward smaller, non-traditional tech employers.",
+    "The current total of 954 is slightly below the 30-day average, suggesting a minor short-term dip that is likely to correct back toward the 980 baseline within the next week."
   ],
-  "generated_at": "2026-05-02T00:05:26.601994",
-  "data_points": 58,
+  "generated_at": "2026-05-04T08:32:31.971868",
+  "data_points": 59,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-02"
+    "end": "2026-05-04"
   }
 }
