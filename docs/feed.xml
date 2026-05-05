@@ -5,21 +5,77 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2026 11:49:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 13:04:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer I, Streamer Monetization Experience at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8470752002</link>
+      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:40:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8470752002</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:12:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
+    </item>
+    <item>
+      <title>IAM Security Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
+      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 05 May 2026 12:12:15 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:10:44 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 05 May 2026 12:06:55 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:05:15 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7235322</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:05:10 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
+      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:03:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
+    </item>
+    <item>
+      <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7551186</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 12:02:10 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7551186</guid>
+    </item>
     <item>
       <title>Software Engineer I - Backend - Message Security Products at Abnormal Security</title>
       <link>https://abnormal.ai/careers/jobs/7687817003?gh_jid=7687817003</link>
       <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
       <pubDate>Tue, 05 May 2026 07:34:23 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687817003?gh_jid=7687817003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 05 May 2026 04:33:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
     </item>
     <item>
       <title>Software Engineer (SDE 2) - Full Stack, Lakeflow at Databricks</title>
@@ -50,60 +106,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002</guid>
     </item>
     <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:08:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 05 May 2026 00:08:42 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:07:28 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:03:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7235322</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7779598</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:03:21 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
-      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:02:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
-    </item>
-    <item>
-      <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7551186</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:55 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7551186</guid>
-    </item>
-    <item>
       <title>Associate proactive Monitoring Engineer at Salesforce</title>
       <link>https://in.indeed.com/viewjob?jk=ff9baefa6e42f299</link>
       <description>New grad role at Salesforce in TS, IN. Category: Other</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ff9baefa6e42f299</guid>
+    </item>
+    <item>
+      <title>Junior Java Developer at Appex Innovation</title>
+      <link>https://in.indeed.com/viewjob?jk=e154696a21894d11</link>
+      <description>New grad role at Appex Innovation in MH, IN. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e154696a21894d11</guid>
     </item>
     <item>
       <title>Trainee software Engineer at Tantransh Solutions</title>
@@ -113,11 +127,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8d4543d0de9d2ed3</guid>
     </item>
     <item>
-      <title>Quality Engineer I at Hollister Incorporated</title>
-      <link>https://in.indeed.com/viewjob?jk=f6d8f1df92730616</link>
-      <description>New grad role at Hollister Incorporated in HR, IN. Category: Other</description>
+      <title>Associate software engineer at MAERSK</title>
+      <link>https://in.indeed.com/viewjob?jk=468fe2bd497b9e85</link>
+      <description>New grad role at MAERSK in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f6d8f1df92730616</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=468fe2bd497b9e85</guid>
     </item>
     <item>
       <title>Engineering Student, Synthetic Aperture Radar (SAR) - Fall 2026 at MDA</title>
@@ -127,25 +141,18 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=acdec208498f8c7f</guid>
     </item>
     <item>
-      <title>Junior ETL Test Engineer at Telefonica Tech</title>
-      <link>https://in.indeed.com/viewjob?jk=fd8e24afebfdcfd1</link>
-      <description>New grad role at Telefonica Tech in MH, IN. Category: Data Engineering</description>
+      <title>Trainee Junior Quantity Surveyor (Civil Engineering) at PY Developers LLP</title>
+      <link>https://in.indeed.com/viewjob?jk=bd80159369acf9ad</link>
+      <description>New grad role at PY Developers LLP in KL, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fd8e24afebfdcfd1</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bd80159369acf9ad</guid>
     </item>
     <item>
-      <title>Software Engineer III - Python, PySpark, Databricks, AWS at JPMorganChase</title>
-      <link>https://in.indeed.com/viewjob?jk=f9042240a9ee4acb</link>
-      <description>New grad role at JPMorganChase in KA, IN. Category: Software Engineering</description>
+      <title>Quality Engineer I at Hollister Incorporated</title>
+      <link>https://in.indeed.com/viewjob?jk=f6d8f1df92730616</link>
+      <description>New grad role at Hollister Incorporated in HR, IN. Category: Other</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f9042240a9ee4acb</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at eBay</title>
-      <link>https://in.indeed.com/viewjob?jk=15f091df8468c802</link>
-      <description>New grad role at eBay in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=15f091df8468c802</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f6d8f1df92730616</guid>
     </item>
     <item>
       <title>Graduate Engineer Trainee at Rockwell Automation</title>
@@ -176,6 +183,27 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=18712ceee1728f80</guid>
     </item>
     <item>
+      <title>Junior ETL Test Engineer at Telefonica Tech</title>
+      <link>https://in.indeed.com/viewjob?jk=fd8e24afebfdcfd1</link>
+      <description>New grad role at Telefonica Tech in MH, IN. Category: Data Engineering</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fd8e24afebfdcfd1</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - Python, PySpark, Databricks, AWS at JPMorganChase</title>
+      <link>https://in.indeed.com/viewjob?jk=f9042240a9ee4acb</link>
+      <description>New grad role at JPMorganChase in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f9042240a9ee4acb</guid>
+    </item>
+    <item>
+      <title>Systems Engineer – Communications &amp; Interface Integration (Hybrid) at Collins Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=061c20e36db66623</link>
+      <description>New grad role at Collins Aerospace in Rockford, IL, US. Category: Software Engineering</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=061c20e36db66623</guid>
+    </item>
+    <item>
       <title>Specialist Software Engineer at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=9ecdebc8ed39f72f</link>
       <description>New grad role at L3Harris in Northampton, MA, US. Category: Software Engineering</description>
@@ -183,11 +211,109 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9ecdebc8ed39f72f</guid>
     </item>
     <item>
-      <title>Engineering Student, Systems Engineering – Space Missions - Fall 2026 at MDA</title>
-      <link>https://ca.indeed.com/viewjob?jk=2194cea4b9735223</link>
-      <description>New grad role at MDA in Richmond, BC, CA. Category: Infrastructure &amp; SRE</description>
+      <title>Fall 2026 - Co-Op/Development - Medical Physics &amp; Health Physics Programs - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=13b54fbdec6f9558</link>
+      <description>New grad role at Ontario Power Generation in Pickering, ON, CA. Category: Other</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2194cea4b9735223</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=13b54fbdec6f9558</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Computer Science &amp; IT Programs - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=d43eb294fa4d1e89</link>
+      <description>New grad role at Ontario Power Generation in Oshawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=d43eb294fa4d1e89</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Business Analytics &amp; Adult Education Programs - Tiverton at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=f3a908afe42f3918</link>
+      <description>New grad role at Ontario Power Generation in Kincardine, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f3a908afe42f3918</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Data Analytics - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=208f3329f0ba0134</link>
+      <description>New grad role at Ontario Power Generation in Pickering, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=208f3329f0ba0134</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Communications and Media Design - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=8baadcc246d71c42</link>
+      <description>New grad role at Ontario Power Generation in Pickering, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=8baadcc246d71c42</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-op/Development - Nuclear &amp; Mechanical Engineering - Tiverton at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=eba2686f2d7a2ac3</link>
+      <description>New grad role at Ontario Power Generation in Kincardine, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=eba2686f2d7a2ac3</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Masters of Business Administration (MBA) Student - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=2c70f310089764e1</link>
+      <description>New grad role at Ontario Power Generation in Oshawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=2c70f310089764e1</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Business Programs - Toronto at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=ec3bf34f3efec922</link>
+      <description>New grad role at Ontario Power Generation in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ec3bf34f3efec922</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Supply Chain, Analytics &amp; Economics Programs - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=780d8afc7f244eda</link>
+      <description>New grad role at Ontario Power Generation in Oshawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=780d8afc7f244eda</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Engineering Programs - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=ead1b0884cc6dad5</link>
+      <description>New grad role at Ontario Power Generation in Oshawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ead1b0884cc6dad5</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Mechanical &amp; Electrical Engineering Programs - Niagara at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=3af6f6cea747a96f</link>
+      <description>New grad role at Ontario Power Generation in Niagara-on-the-Lake, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=3af6f6cea747a96f</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Business Programs - Durham Region at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=e29b8f29482284a6</link>
+      <description>New grad role at Ontario Power Generation in Oshawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e29b8f29482284a6</guid>
+    </item>
+    <item>
+      <title>Fall 2026 - Co-Op/Development - Environmental Science, Ecology &amp; Wildlife Programs - Renfrew at Ontario Power Generation</title>
+      <link>https://ca.indeed.com/viewjob?jk=188cbff9f7654b96</link>
+      <description>New grad role at Ontario Power Generation in Renfrew, ON, CA. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=188cbff9f7654b96</guid>
+    </item>
+    <item>
+      <title>AI Data Scientist at Beth Israel Lahey Health</title>
+      <link>https://www.indeed.com/viewjob?jk=929fd4b1d3b3c404</link>
+      <description>New grad role at Beth Israel Lahey Health in Charlestown, MA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=929fd4b1d3b3c404</guid>
+    </item>
+    <item>
+      <title>Software Tools Engineer I (Onsite) at Collins Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=fc08f3ee72685162</link>
+      <description>New grad role at Collins Aerospace in Cedar Rapids, IA, US. Category: Other</description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fc08f3ee72685162</guid>
     </item>
     <item>
       <title>Chief Systems Engineer at L3Harris</title>
@@ -230,132 +356,6 @@
       <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=deef65ee3eef6465</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer - Mobile (IOS) at Treinetic</title>
-      <link>https://www.indeed.com/viewjob?jk=92b731f850c6e778</link>
-      <description>New grad role at Treinetic in US. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=92b731f850c6e778</guid>
-    </item>
-    <item>
-      <title>Associate Software Developer – Application Security at Beghou Consulting</title>
-      <link>https://in.indeed.com/viewjob?jk=420239401ef255b6</link>
-      <description>New grad role at Beghou Consulting in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=420239401ef255b6</guid>
-    </item>
-    <item>
-      <title>Software Engineer III-Java Developer at NCR Atleos</title>
-      <link>https://in.indeed.com/viewjob?jk=b365be01efdd3745</link>
-      <description>New grad role at NCR Atleos in TS, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b365be01efdd3745</guid>
-    </item>
-    <item>
-      <title>Associate V&amp;V Engineer – Instrumentation and Data Systems at Boeing</title>
-      <link>https://in.indeed.com/viewjob?jk=eb68a104eaff37aa</link>
-      <description>New grad role at Boeing in KA, IN. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=eb68a104eaff37aa</guid>
-    </item>
-    <item>
-      <title>Engineer, Site Reliability Engineering at LSEG (London Stock Exchange Group)</title>
-      <link>https://in.indeed.com/viewjob?jk=f250f1e7c2e39882</link>
-      <description>New grad role at LSEG (London Stock Exchange Group) in KA, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f250f1e7c2e39882</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Empower</title>
-      <link>https://in.indeed.com/viewjob?jk=a875f8e7af79d66d</link>
-      <description>New grad role at Empower in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a875f8e7af79d66d</guid>
-    </item>
-    <item>
-      <title>AI Quality Associate at Accordion Partners</title>
-      <link>https://in.indeed.com/viewjob?jk=93416c181aa1cdd3</link>
-      <description>New grad role at Accordion Partners in IN. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=93416c181aa1cdd3</guid>
-    </item>
-    <item>
-      <title>Associate software engineer at MAERSK</title>
-      <link>https://in.indeed.com/viewjob?jk=468fe2bd497b9e85</link>
-      <description>New grad role at MAERSK in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=468fe2bd497b9e85</guid>
-    </item>
-    <item>
-      <title>Photonics Packaging Characterization Engineer (2026 New College Graduate) at GlobalFoundries</title>
-      <link>https://www.indeed.com/viewjob?jk=09cf6a5876d30a52</link>
-      <description>New grad role at GlobalFoundries in Essex Junction, VT, US. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=09cf6a5876d30a52</guid>
-    </item>
-    <item>
-      <title>Junior Email Support , Night Shift (Fresher's can apply) at Poshmark</title>
-      <link>https://in.indeed.com/viewjob?jk=e1d24a35765e355c</link>
-      <description>New grad role at Poshmark in TN, IN. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e1d24a35765e355c</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-273378</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-273378</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-273562</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-273562</guid>
-    </item>
-    <item>
-      <title>Power Methodology and Modeling Engineer - New College Grad 2026 at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-TX-Austin/Power-Methodology-and-Modeling-Engineer---New-College-Grad-2026_JR2017486-1</link>
-      <description>New grad role at NVIDIA in US, TX, Austin. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-TX-Austin/Power-Methodology-and-Modeling-Engineer---New-College-Grad-2026_JR2017486-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer (C++, C#) at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer--C----C--_26WD97864-1</link>
-      <description>New grad role at Autodesk in Pune, IND. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer--C----C--_26WD97864-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Full-Stack, Node/Spring Boot) at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Senior-Software-Engineer--Full-Stack--Node-Spring-Boot-_26WD96257-1</link>
-      <description>New grad role at Autodesk in Bengaluru, IND. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Senior-Software-Engineer--Full-Stack--Node-Spring-Boot-_26WD96257-1</guid>
-    </item>
-    <item>
-      <title>Enterprise Software Test Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test-Engineer-II_R64581-1</link>
-      <description>New grad role at Medtronic in Nanakramguda, Hyderabad, India. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Enterprise-Software-Test-Engineer-II_R64581-1</guid>
-    </item>
-    <item>
-      <title>Associate Controls and Instrumentation Engineer – Instrumentation and Data Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Controls-and-Instrumentation-Engineer---Instrumentation-and-Data-Systems_JR2026506933-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Controls-and-Instrumentation-Engineer---Instrumentation-and-Data-Systems_JR2026506933-1</guid>
-    </item>
-    <item>
-      <title>Associate V&amp;V Engineer – Instrumentation and Data Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-V-V-Engineer---Instrumentation-and-Data-Systems_JR2026506932-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Other</description>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-V-V-Engineer---Instrumentation-and-Data-Systems_JR2026506932-1</guid>
     </item>
   </channel>
 </rss>
