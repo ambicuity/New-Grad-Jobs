@@ -1,7 +1,7 @@
 {
-  "state": "generation_failed",
-  "message": "Prediction generation raised an exception.",
-  "updated_at": "2026-05-05T10:24:53.797105",
+  "state": "generated",
+  "message": "Predictions artifact generated successfully.",
+  "updated_at": "2026-05-05T11:49:56.754940",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
   "available_history_snapshots": 60,
@@ -10,7 +10,7 @@
     "exists": true
   },
   "details": {
-    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-3.1-flash-lite-preview:generateContent (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=12)\"))",
-    "model": "gemini-3.1-flash-lite-preview"
+    "model": "gemini-3.1-flash-lite-preview",
+    "forced": false
   }
 }
