@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-05T21:12:26.864416",
+    "last_updated": "2026-05-05T22:16:44.451272",
     "total_snapshots": 60,
     "date_range": {
       "start": "2026-03-05",
@@ -3255,12 +3255,12 @@
     },
     {
       "date": "2026-05-05",
-      "total_jobs": 1034,
+      "total_jobs": 1020,
       "categories": {},
       "tiers": {
-        "other": 402,
-        "unicorn": 483,
-        "faang_plus": 149
+        "unicorn": 484,
+        "faang_plus": 150,
+        "other": 386
       },
       "top_companies": [
         {
@@ -3273,15 +3273,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 26
+          "jobs": 30
         },
         {
           "company": "Lyft",
           "jobs": 24
-        },
-        {
-          "company": "Accenture",
-          "jobs": 22
         },
         {
           "company": "ClickHouse",
@@ -3300,13 +3296,17 @@
           "jobs": 18
         },
         {
+          "company": "Accenture",
+          "jobs": 18
+        },
+        {
           "company": "Dropbox",
           "jobs": 18
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-05-05T21:12:26.863543"
+      "unique_companies": 220,
+      "avg_jobs_per_company": 4.64,
+      "timestamp": "2026-05-05T22:16:44.450417"
     }
   ]
 }
