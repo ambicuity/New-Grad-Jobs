@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-05T18:23:52.201194",
+    "last_updated": "2026-05-05T20:00:27.193377",
     "total_snapshots": 60,
     "date_range": {
       "start": "2026-03-05",
@@ -3255,11 +3255,11 @@
     },
     {
       "date": "2026-05-05",
-      "total_jobs": 1041,
+      "total_jobs": 1024,
       "categories": {},
       "tiers": {
-        "unicorn": 479,
-        "other": 408,
+        "unicorn": 480,
+        "other": 390,
         "faang_plus": 154
       },
       "top_companies": [
@@ -3273,7 +3273,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 30
+          "jobs": 31
         },
         {
           "company": "Lyft",
@@ -3296,8 +3296,8 @@
           "jobs": 19
         },
         {
-          "company": "Syms Strategic Group, LLC (SSG)",
-          "jobs": 19
+          "company": "Stripe",
+          "jobs": 18
         },
         {
           "company": "Northrop Grumman",
@@ -3305,8 +3305,8 @@
         }
       ],
       "unique_companies": 212,
-      "avg_jobs_per_company": 4.91,
-      "timestamp": "2026-05-05T18:23:52.200423"
+      "avg_jobs_per_company": 4.83,
+      "timestamp": "2026-05-05T20:00:27.192593"
     }
   ]
 }
