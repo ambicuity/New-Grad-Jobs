@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-05T17:03:19.514849",
+    "last_updated": "2026-05-05T18:23:52.201194",
     "total_snapshots": 60,
     "date_range": {
       "start": "2026-03-05",
@@ -3255,12 +3255,12 @@
     },
     {
       "date": "2026-05-05",
-      "total_jobs": 1014,
+      "total_jobs": 1041,
       "categories": {},
       "tiers": {
-        "unicorn": 478,
-        "faang_plus": 156,
-        "other": 380
+        "unicorn": 479,
+        "other": 408,
+        "faang_plus": 154
       },
       "top_companies": [
         {
@@ -3273,19 +3273,19 @@
         },
         {
           "company": "Boeing",
-          "jobs": 26
+          "jobs": 30
         },
         {
           "company": "Lyft",
           "jobs": 24
         },
         {
-          "company": "ClickHouse",
+          "company": "Accenture",
           "jobs": 22
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 21
+          "company": "ClickHouse",
+          "jobs": 22
         },
         {
           "company": "Affirm",
@@ -3296,17 +3296,17 @@
           "jobs": 19
         },
         {
-          "company": "Dropbox",
-          "jobs": 18
+          "company": "Syms Strategic Group, LLC (SSG)",
+          "jobs": 19
         },
         {
-          "company": "Stripe",
-          "jobs": 17
+          "company": "Northrop Grumman",
+          "jobs": 18
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 4.55,
-      "timestamp": "2026-05-05T17:03:19.514087"
+      "unique_companies": 212,
+      "avg_jobs_per_company": 4.91,
+      "timestamp": "2026-05-05T18:23:52.200423"
     }
   ]
 }
