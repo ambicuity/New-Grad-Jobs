@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 992,
-      "change_percent": -0.3
+      "total_jobs": 1008,
+      "change_percent": 0.2
     },
     "30_days": {
-      "total_jobs": 988,
-      "change_percent": -0.7
+      "total_jobs": 1015,
+      "change_percent": 0.9
     }
   },
   "growing_categories": [
     "FAANG+",
-    "Other Tier",
-    "Infrastructure/DevOps"
+    "Unicorns",
+    "Mid-market Tech"
   ],
   "declining_categories": [
-    "Unicorns",
-    "Fintech",
-    "Early-stage Startups"
+    "Early-stage Startups",
+    "Non-tech Sector IT",
+    "Contract/Freelance"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability with a mean-reverting behavior around the 980-1000 job range, indicating a lack of significant hiring expansion or contraction.",
-    "While FAANG+ and 'Other' tiers show slight resilience, the decline in Unicorn hiring suggests a tightening of venture-backed capital for new graduate roles.",
-    "The current 7-day average being higher than the 30-day average suggests a minor short-term plateau, but the lack of sustained growth momentum points toward a sideways market trend for the next month."
+    "The market has stabilized above the 30-day average of 986, showing a consistent upward trend in the final week of the data set.",
+    "Growth is currently led by FAANG+ and Unicorn tiers, suggesting that larger, well-funded companies are driving the recent hiring momentum.",
+    "The 7-day average (996) being higher than the 30-day average (986) indicates a strengthening hiring environment heading into the next month."
   ],
-  "generated_at": "2026-05-05T11:49:56.754654",
-  "data_points": 60,
+  "generated_at": "2026-05-06T00:11:04.874246",
+  "data_points": 61,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-05"
+    "end": "2026-05-06"
   }
 }
