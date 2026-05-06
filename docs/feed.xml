@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 04:07:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 06:46:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Embedded Software Engineer, OS/Platform (Starshield) at SpaceX</title>
@@ -15,11 +15,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8530798002?gh_jid=8530798002</guid>
     </item>
     <item>
-      <title>Software Engineer II ML, Merchant Intel 8 at Uber</title>
-      <link>https://www.indeed.com/viewjob?jk=2a1337e38606840b</link>
-      <description>New grad role at Uber in New York, NY, US. Category: Software Engineering</description>
+      <title>Entry Level Engineer at Super Vacuum</title>
+      <link>https://www.indeed.com/viewjob?jk=cd2b3ea7697e4dbf</link>
+      <description>New grad role at Super Vacuum in Fort Collins, CO, US. Category: Other</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2a1337e38606840b</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd2b3ea7697e4dbf</guid>
+    </item>
+    <item>
+      <title>IT Support Desk Engineer II at Heartland Business Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=34a7a98e38c5617a</link>
+      <description>New grad role at Heartland Business Systems in Little Chute, WI, US. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=34a7a98e38c5617a</guid>
     </item>
     <item>
       <title>Software Engineer II - Sam's Club at Walmart</title>
@@ -34,6 +41,13 @@
       <description>New grad role at PayPal in San Jose, California, United States of America. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer---Fullstack_R0136151-1</guid>
+    </item>
+    <item>
+      <title>BizOps Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-II_R-275023</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/BizOps-Engineer-II_R-275023</guid>
     </item>
     <item>
       <title>Data Engineer II(ETL,SQL) at Mastercard</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 05 May 2026 23:47:32 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 05 May 2026 23:47:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Infrastructure at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/7822704?gh_jid=7822704</link>
-      <description>New grad role at Airbnb in United States. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:53:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/7822704?gh_jid=7822704</guid>
     </item>
   </channel>
 </rss>
