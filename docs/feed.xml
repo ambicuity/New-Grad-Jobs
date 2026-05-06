@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 09:15:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 11:25:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Platforms &amp; Productivity at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 10:09:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536</guid>
+    </item>
     <item>
       <title>DevOps Engineer - 2 at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5123824008</link>
@@ -36,6 +43,41 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3229172459db0b22</guid>
     </item>
     <item>
+      <title>Associate Engineer - Mechanical Water Process at Black &amp; Veatch</title>
+      <link>https://in.indeed.com/viewjob?jk=6176c326f5a83a22</link>
+      <description>New grad role at Black &amp; Veatch in MH, IN. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6176c326f5a83a22</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Wells Fargo</title>
+      <link>https://in.indeed.com/viewjob?jk=8c67ddd62789c1b1</link>
+      <description>New grad role at Wells Fargo in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8c67ddd62789c1b1</guid>
+    </item>
+    <item>
+      <title>Backend Software Engineer (Python) at Openkyber</title>
+      <link>https://www.indeed.com/viewjob?jk=70c76699683bf4a2</link>
+      <description>New grad role at Openkyber in TX, US. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=70c76699683bf4a2</guid>
+    </item>
+    <item>
+      <title>Specialist, Software Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=f19134493d031a54</link>
+      <description>New grad role at L3Harris in Rochester, NY, US. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f19134493d031a54</guid>
+    </item>
+    <item>
+      <title>Mechanical Engineer II at Applied Materials</title>
+      <link>https://www.indeed.com/viewjob?jk=058f9d68a9aef14c</link>
+      <description>New grad role at Applied Materials in Santa Clara, CA, US. Category: Hardware Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=058f9d68a9aef14c</guid>
+    </item>
+    <item>
       <title>Fire Protection Sales Engineer (Entry-Level) at Western States Fire Protection Company</title>
       <link>https://www.indeed.com/viewjob?jk=017f414ae2684371</link>
       <description>New grad role at Western States Fire Protection Company in Englewood, CO, US. Category: Other</description>
@@ -50,11 +92,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd2b3ea7697e4dbf</guid>
     </item>
     <item>
-      <title>Mechanical Engineer II at Applied Materials</title>
-      <link>https://www.indeed.com/viewjob?jk=058f9d68a9aef14c</link>
-      <description>New grad role at Applied Materials in Santa Clara, CA, US. Category: Hardware Engineering</description>
+      <title>Machine Learning Associate Advisor - HIH - Evernorth at The Cigna Group</title>
+      <link>https://in.indeed.com/viewjob?jk=d63e7c0034cf6b9f</link>
+      <description>New grad role at The Cigna Group in TS, IN. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=058f9d68a9aef14c</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d63e7c0034cf6b9f</guid>
+    </item>
+    <item>
+      <title>Software Engineer at NatWest Group</title>
+      <link>https://in.indeed.com/viewjob?jk=28ad116a3220d778</link>
+      <description>New grad role at NatWest Group in KA, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=28ad116a3220d778</guid>
     </item>
     <item>
       <title>Associate Software Engineer at iQuanti Inc</title>
@@ -85,6 +134,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1859ce668365e294</guid>
     </item>
     <item>
+      <title>Retail Banker II at First Financial Bankshares</title>
+      <link>https://www.indeed.com/viewjob?jk=87a69390d98d29d6</link>
+      <description>New grad role at First Financial Bankshares in New Waverly, TX, US. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=87a69390d98d29d6</guid>
+    </item>
+    <item>
+      <title>Platform Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Platform-Engineer-II_R-276230-1</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Platform-Engineer-II_R-276230-1</guid>
+    </item>
+    <item>
       <title>Platform Engineer II at Mastercard</title>
       <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Platform-Engineer-II_R-272725-1</link>
       <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
@@ -104,6 +167,20 @@
       <description>New grad role at HP in Bengaluru, Karnataka, India. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Marketing-Data-Scientist--Contract--_3159693-1</guid>
+    </item>
+    <item>
+      <title>Experienced Software Engineer - AI-ML (GenAI) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Software-Engineer---AI-ML--GenAI-_JR2026497051-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Software-Engineer---AI-ML--GenAI-_JR2026497051-1</guid>
+    </item>
+    <item>
+      <title>Associate ATE Software Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-ATE-Software-Engineer_JR2026495476-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-ATE-Software-Engineer_JR2026495476-1</guid>
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
@@ -279,83 +356,6 @@
       <description>New grad role at Lyft in New York, NY; San Francisco, CA. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8513769002?gh_jid=8513769002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Recommendations at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8378390002?gh_jid=8378390002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8378390002?gh_jid=8378390002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ad Infra   at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Backend), Growth Platforms at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Gov Tech at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</link>
-      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8483819002?gh_jid=8483819002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Pricing at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002</guid>
-    </item>
-    <item>
-      <title> Software Engineer, Rider Quality at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002</guid>
-    </item>
-    <item>
-      <title>Software Engineer - RTSM, Driver at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8514380002?gh_jid=8514380002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Server at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:14:54 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Starlink Mobile) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8533443002?gh_jid=8533443002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:02:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8533443002?gh_jid=8533443002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Starlink Mobile) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8529490002?gh_jid=8529490002</link>
-      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 22:02:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8529490002?gh_jid=8529490002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Member Growth at SoFi</title>
-      <link>https://sofi.com/careers/job/7712688003?gh_jid=7712688003</link>
-      <description>New grad role at SoFi in WA - Seattle, CA - San Francisco HQ. Category: Software Engineering</description>
-      <pubDate>Tue, 05 May 2026 21:55:44 +0000</pubDate>
-      <guid isPermaLink="true">https://sofi.com/careers/job/7712688003?gh_jid=7712688003</guid>
     </item>
   </channel>
 </rss>
