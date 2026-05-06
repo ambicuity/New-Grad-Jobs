@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 22:40:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 23:38:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Data Scientist - Growth  at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/6356147</link>
+      <description>New grad role at Gusto in San Francisco, CA;New York, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 06 May 2026 23:09:44 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/6356147</guid>
+    </item>
+    <item>
+      <title>Data Engineer - Analytics Platform at Faire</title>
+      <link>https://boards.greenhouse.io/faire/jobs/8538503002?gh_jid=8538503002</link>
+      <description>New grad role at Faire in Kitchener-Waterloo, ON; Toronto, ON. Category: Data Engineering</description>
+      <pubDate>Wed, 06 May 2026 22:51:08 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/faire/jobs/8538503002?gh_jid=8538503002</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Identity &amp; Auth Platform at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7605209?gh_jid=7605209</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 22:46:31 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7605209?gh_jid=7605209</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Identity &amp; Auth Platform at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7605206?gh_jid=7605206</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 22:46:29 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7605206?gh_jid=7605206</guid>
+    </item>
+    <item>
+      <title>SACC DC 2026 - Job Application at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4691292005</link>
+      <description>New grad role at Scale AI in United States. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 22:41:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4691292005</guid>
+    </item>
     <item>
       <title>Security Engineer (Application Security) at Contentful</title>
       <link>https://job-boards.greenhouse.io/contentful/jobs/7782195</link>
@@ -69,13 +104,6 @@
       <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 21:00:42 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7891749</guid>
-    </item>
-    <item>
-      <title>Associate Solutions Engineer at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</link>
-      <description>New grad role at Okta in Chicago, Illinois; Michigan; Ohio; Wisconsin. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 20:52:12 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7838437?gh_jid=7838437</guid>
     </item>
     <item>
       <title>DevOps Data Engineer at Okta</title>
@@ -233,10 +261,10 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 06 May 2026 13:39:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
@@ -247,10 +275,10 @@
     </item>
     <item>
       <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 06 May 2026 13:39:13 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
     </item>
     <item>
       <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
@@ -282,17 +310,17 @@
     </item>
     <item>
       <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 13:37:50 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
       <link>https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</link>
       <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 13:37:50 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569140?gh_jid=7569140</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Dash Experiences at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Wed, 06 May 2026 13:37:50 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7569145?gh_jid=7569145</guid>
     </item>
     <item>
       <title>Site Reliability Engineer at Dropbox</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 10:09:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer - 2 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5123824008</link>
-      <description>New grad role at New Relic in Bangalore, India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 06 May 2026 07:37:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5123824008</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, OS/Platform (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8530798002?gh_jid=8530798002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 00:42:30 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8530798002?gh_jid=8530798002</guid>
-    </item>
-    <item>
-      <title>Marketing Data Scientist at HP</title>
-      <link>https://in.indeed.com/viewjob?jk=3229172459db0b22</link>
-      <description>New grad role at HP in KA, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3229172459db0b22</guid>
-    </item>
-    <item>
-      <title>Entry-Level Structural Engineer / Designer (EIT) at CDN Concrete</title>
-      <link>https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</link>
-      <description>New grad role at CDN Concrete in Delhi, ON, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</guid>
     </item>
   </channel>
 </rss>
