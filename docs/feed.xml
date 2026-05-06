@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 19:05:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 20:47:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Sales Engineer II - Specialist at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</link>
+      <description>New grad role at Samsara in Remote - NYC. Category: Other</description>
+      <pubDate>Wed, 06 May 2026 20:22:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7891685</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 06 May 2026 19:40:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7891685</guid>
+    </item>
     <item>
       <title>Software Engineer at Gusto</title>
       <link>https://job-boards.greenhouse.io/gusto/jobs/6923172</link>
@@ -211,18 +225,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8530798002?gh_jid=8530798002</guid>
     </item>
     <item>
-      <title>Entry-Level Structural Engineer / Designer (EIT) at CDN Concrete</title>
-      <link>https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</link>
-      <description>New grad role at CDN Concrete in Delhi, ON, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</guid>
-    </item>
-    <item>
       <title>Marketing Data Scientist at HP</title>
       <link>https://in.indeed.com/viewjob?jk=3229172459db0b22</link>
       <description>New grad role at HP in KA, IN. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3229172459db0b22</guid>
+    </item>
+    <item>
+      <title>Entry-Level Structural Engineer / Designer (EIT) at CDN Concrete</title>
+      <link>https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</link>
+      <description>New grad role at CDN Concrete in Delhi, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=afac4dda417f87d0</guid>
     </item>
     <item>
       <title>Portfolio Performance Engineer II at Radian Generation</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=86e618eb5818e6c3</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=23cbc64db62e0fd1</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=23cbc64db62e0fd1</guid>
-    </item>
-    <item>
-      <title>Custom Software Engineer at Accenture</title>
-      <link>https://in.indeed.com/viewjob?jk=9eeae5a3458b1f58</link>
-      <description>New grad role at Accenture in KA, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9eeae5a3458b1f58</guid>
     </item>
   </channel>
 </rss>
