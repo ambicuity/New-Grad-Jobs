@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2026 07:45:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 10:13:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Security Engineer at Lattice</title>
+      <link>https://lattice.com/job?gh_jid=8538998002</link>
+      <description>New grad role at Lattice in Remote - US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 08:37:05 +0000</pubDate>
+      <guid isPermaLink="true">https://lattice.com/job?gh_jid=8538998002</guid>
+    </item>
+    <item>
+      <title>Software Engineer 1 - Backend at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</link>
+      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 08:06:29 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</guid>
+    </item>
     <item>
       <title>Software Engineer I, Back-end (Repayment Scheduling) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7710970003</link>
@@ -29,11 +43,109 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7818989?gh_jid=7818989</guid>
     </item>
     <item>
-      <title>Robotics Software Engineer, Maritime at Anduril</title>
-      <link>https://www.indeed.com/viewjob?jk=bb762016483eea8e</link>
-      <description>New grad role at Anduril in Los Angeles, CA, US. Category: Software Engineering</description>
+      <title>Engineer - RF SW - M.Tech 2026 - Communications Background at Qualcomm</title>
+      <link>https://in.indeed.com/viewjob?jk=68a83a0d99122826</link>
+      <description>New grad role at Qualcomm in TS, IN. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bb762016483eea8e</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=68a83a0d99122826</guid>
+    </item>
+    <item>
+      <title>AI/ML Engineer (Computer vision) at InstaCAD Solutions</title>
+      <link>https://in.indeed.com/viewjob?jk=6b21bebb63f46545</link>
+      <description>New grad role at InstaCAD Solutions in MH, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6b21bebb63f46545</guid>
+    </item>
+    <item>
+      <title>Software Engineer- C#, MS SQL, .NET CORE, Angular at Optum</title>
+      <link>https://in.indeed.com/viewjob?jk=2a10cec337a47d4b</link>
+      <description>New grad role at Optum in TS, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2a10cec337a47d4b</guid>
+    </item>
+    <item>
+      <title>Software Engineer 4 (Golang, K8s, SQL) at Black Duck Software</title>
+      <link>https://in.indeed.com/viewjob?jk=055bf2ee0076359f</link>
+      <description>New grad role at Black Duck Software in KA, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=055bf2ee0076359f</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at R1 RCM</title>
+      <link>https://in.indeed.com/viewjob?jk=3daa71e8e6769cac</link>
+      <description>New grad role at R1 RCM in UP, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3daa71e8e6769cac</guid>
+    </item>
+    <item>
+      <title>Associate DevOps Engineer at TD SYNNEX</title>
+      <link>https://in.indeed.com/viewjob?jk=48b0163fa0432740</link>
+      <description>New grad role at TD SYNNEX in TN, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=48b0163fa0432740</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer at Wright's</title>
+      <link>https://www.indeed.com/viewjob?jk=bc71d294bf153884</link>
+      <description>New grad role at Wright's in Remote, US. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc71d294bf153884</guid>
+    </item>
+    <item>
+      <title>Implementations Network Engineer IV at Leidos</title>
+      <link>https://www.indeed.com/viewjob?jk=d6b353e823ada3b4</link>
+      <description>New grad role at Leidos in Ford Island, HI, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d6b353e823ada3b4</guid>
+    </item>
+    <item>
+      <title>Associate Civil Engineer - Transportation Infrastructure at Parsons</title>
+      <link>https://www.indeed.com/viewjob?jk=7b01c6a03b64b3b7</link>
+      <description>New grad role at Parsons in Pasadena, CA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7b01c6a03b64b3b7</guid>
+    </item>
+    <item>
+      <title>Network Engineer II at Expedia Group</title>
+      <link>https://in.indeed.com/viewjob?jk=2618f80a7ace1c3d</link>
+      <description>New grad role at Expedia Group in HR, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2618f80a7ace1c3d</guid>
+    </item>
+    <item>
+      <title>Engineer, Site Reliability Engineering at LSEG (London Stock Exchange Group)</title>
+      <link>https://in.indeed.com/viewjob?jk=b3d2cb0ed6517812</link>
+      <description>New grad role at LSEG (London Stock Exchange Group) in KA, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b3d2cb0ed6517812</guid>
+    </item>
+    <item>
+      <title>Java AWS Software Engineer at Softura Inc.</title>
+      <link>https://in.indeed.com/viewjob?jk=1942d684db0944d2</link>
+      <description>New grad role at Softura Inc. in TN, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1942d684db0944d2</guid>
+    </item>
+    <item>
+      <title>L3 Infrastructure Engineer at Tata Consultancy Services (TCS)</title>
+      <link>https://www.indeed.com/viewjob?jk=68d6d4a897dc5637</link>
+      <description>New grad role at Tata Consultancy Services (TCS) in San Antonio, TX, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=68d6d4a897dc5637</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - Python Developer/AWS/Kafka at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=d10e22d7e3fdf55b</link>
+      <description>New grad role at JPMorganChase in Jersey City, NJ, US. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d10e22d7e3fdf55b</guid>
+    </item>
+    <item>
+      <title>New Grad RN Resident Med Surg at Fairview Park Hospital-Dublin</title>
+      <link>https://www.indeed.com/viewjob?jk=2756eeb0c129cfde</link>
+      <description>New grad role at Fairview Park Hospital-Dublin in Dublin, GA, US. Category: Other</description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2756eeb0c129cfde</guid>
     </item>
     <item>
       <title>New Graduate RN Sponsorship Candidates at Wesley Woodlawn Hospital &amp; ER</title>
@@ -50,32 +162,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ca088438cf63cb3f</guid>
     </item>
     <item>
-      <title>Spring 2026, Manufacturing Development Program Cohort 8, Diablo College at Tesla</title>
-      <link>https://www.indeed.com/viewjob?jk=2ee721e7f7adba5b</link>
-      <description>New grad role at Tesla in Pleasant Hill, CA, US. Category: Other</description>
+      <title>Associate Support Engineering Data Specialist at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Chennai-India/Associate-Support-Engineering-Data-Specialist_JR2026506296-2</link>
+      <description>New grad role at Boeing in IND - Chennai, India. Category: Other</description>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2ee721e7f7adba5b</guid>
-    </item>
-    <item>
-      <title>Entry Level Manufacturing Engineer at DRT Holdings, LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=fa99b601067e2c57</link>
-      <description>New grad role at DRT Holdings, LLC in Sidney, OH, US. Category: Other</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fa99b601067e2c57</guid>
-    </item>
-    <item>
-      <title>Propulsion Test Engineer I/II at AGILE Space Industries</title>
-      <link>https://www.indeed.com/viewjob?jk=5a449ba6aa332ae1</link>
-      <description>New grad role at AGILE Space Industries in Tulsa, OK, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5a449ba6aa332ae1</guid>
-    </item>
-    <item>
-      <title>New Grad RN Resident Med Surg at Fairview Park Hospital-Dublin</title>
-      <link>https://www.indeed.com/viewjob?jk=2756eeb0c129cfde</link>
-      <description>New grad role at Fairview Park Hospital-Dublin in Dublin, GA, US. Category: Other</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2756eeb0c129cfde</guid>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Chennai-India/Associate-Support-Engineering-Data-Specialist_JR2026506296-2</guid>
     </item>
     <item>
       <title>iOS Software Engineer, Contributions at Reddit</title>
@@ -265,97 +356,6 @@
       <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
       <pubDate>Wed, 06 May 2026 20:52:12 +0000</pubDate>
       <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/6866775?gh_jid=6866775</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Analytics at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8447216002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 06 May 2026 20:46:12 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8447216002</guid>
-    </item>
-    <item>
-      <title>Software Engineer- Database Infrastructure at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8487457002</link>
-      <description>New grad role at Discord in San Francisco Bay Area . Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 20:46:12 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8487457002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Safety Experience at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8475544002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 20:46:12 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8475544002</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Analytics at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8371252002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
-      <pubDate>Wed, 06 May 2026 20:46:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8371252002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Platform at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8396927002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 20:46:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8396927002</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II - Specialist at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</link>
-      <description>New grad role at Samsara in Remote - NYC. Category: Other</description>
-      <pubDate>Wed, 06 May 2026 20:22:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Checkr</title>
-      <link>https://job-boards.greenhouse.io/checkr/jobs/7891685</link>
-      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 06 May 2026 19:40:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7891685</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/6923172</link>
-      <description>New grad role at Gusto in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 18:52:29 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/6923172</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Product Insights at Mixpanel</title>
-      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7850958</link>
-      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 17:10:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7850958</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 14:32:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7484699</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 14:29:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L3) Infrastructure at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7767260</link>
-      <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 14:29:34 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Wed, 06 May 2026 14:29:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
     </item>
   </channel>
 </rss>
