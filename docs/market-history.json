@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-07T15:09:19.092354",
+    "last_updated": "2026-05-07T19:00:56.388448",
     "total_snapshots": 62,
     "date_range": {
       "start": "2026-03-05",
@@ -3365,12 +3365,12 @@
     },
     {
       "date": "2026-05-07",
-      "total_jobs": 997,
+      "total_jobs": 976,
       "categories": {},
       "tiers": {
-        "unicorn": 478,
-        "faang_plus": 157,
-        "other": 362
+        "other": 345,
+        "unicorn": 477,
+        "faang_plus": 154
       },
       "top_companies": [
         {
@@ -3379,15 +3379,15 @@
         },
         {
           "company": "Waymo",
-          "jobs": 47
+          "jobs": 46
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 28
+          "jobs": 29
         },
         {
           "company": "Boeing",
-          "jobs": 22
+          "jobs": 24
         },
         {
           "company": "ClickHouse",
@@ -3410,13 +3410,13 @@
           "jobs": 19
         },
         {
-          "company": "Abnormal Security",
+          "company": "Palantir",
           "jobs": 18
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 4.3,
-      "timestamp": "2026-05-07T15:09:19.091484"
+      "unique_companies": 218,
+      "avg_jobs_per_company": 4.48,
+      "timestamp": "2026-05-07T19:00:56.387765"
     }
   ]
 }
