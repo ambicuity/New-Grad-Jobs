@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-07T01:26:11.948767",
+    "last_updated": "2026-05-07T04:57:38.520694",
     "total_snapshots": 62,
     "date_range": {
       "start": "2026-03-05",
@@ -3365,17 +3365,17 @@
     },
     {
       "date": "2026-05-07",
-      "total_jobs": 1007,
+      "total_jobs": 1027,
       "categories": {},
       "tiers": {
-        "unicorn": 482,
-        "faang_plus": 158,
-        "other": 367
+        "unicorn": 480,
+        "other": 392,
+        "faang_plus": 155
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 182
+          "jobs": 180
         },
         {
           "company": "Waymo",
@@ -3386,11 +3386,15 @@
           "jobs": 30
         },
         {
-          "company": "Lyft",
-          "jobs": 23
+          "company": "Accenture",
+          "jobs": 26
         },
         {
           "company": "Boeing",
+          "jobs": 25
+        },
+        {
+          "company": "Lyft",
           "jobs": 22
         },
         {
@@ -3408,15 +3412,11 @@
         {
           "company": "Stripe",
           "jobs": 18
-        },
-        {
-          "company": "Abnormal Security",
-          "jobs": 18
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 4.62,
-      "timestamp": "2026-05-07T01:26:11.948000"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 4.5,
+      "timestamp": "2026-05-07T04:57:38.520032"
     }
   ]
 }
