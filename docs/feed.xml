@@ -5,8 +5,64 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2026 19:00:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 20:24:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Onboard Systems at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7809136</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 20:14:33 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7809136</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Middleware at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7825886</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 20:14:29 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7825886</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (PMI Integrations) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7590373003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 20:03:39 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7590373003</guid>
+    </item>
+    <item>
+      <title>Air Operations Associate, Gurgaon at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</link>
+      <description>New grad role at Flexport in New Delhi, India. Category: Other</description>
+      <pubDate>Thu, 07 May 2026 19:55:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7609526?gh_jid=7609526</guid>
+    </item>
+    <item>
+      <title>Inbound Sales Development Representative - New Grad at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324</link>
+      <description>New grad role at Flexport in Chicago, Illinois, United States. Category: Other</description>
+      <pubDate>Thu, 07 May 2026 19:55:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/5850324?gh_jid=5850324</guid>
+    </item>
+    <item>
+      <title>Ocean Operations Associate, Mumbai at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848</link>
+      <description>New grad role at Flexport in Mumbai, India. Category: Other</description>
+      <pubDate>Thu, 07 May 2026 19:55:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7609848?gh_jid=7609848</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Autonomous Freight Systems at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298</link>
+      <description>New grad role at Flexport in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 19:55:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298</guid>
+    </item>
+    <item>
+      <title> Software Engineer II, Autonomous Freight Systems at Flexport</title>
+      <link>https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346</link>
+      <description>New grad role at Flexport in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 19:55:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346</guid>
+    </item>
     <item>
       <title>AI Systems Engineer at Dialpad</title>
       <link>https://job-boards.greenhouse.io/dialpad/jobs/8512126002</link>
@@ -58,6 +114,13 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
@@ -69,13 +132,6 @@
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7779598</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
       <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
@@ -106,13 +162,6 @@
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
     </item>
     <item>
-      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
-      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
-    </item>
-    <item>
       <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
@@ -121,17 +170,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Thu, 07 May 2026 17:27:04 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
@@ -288,32 +337,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=bc049d6ce8c687d7</guid>
     </item>
     <item>
-      <title>Cloud Software Developer CS-2 - CANFAR at Government of Canada</title>
-      <link>https://ca.indeed.com/viewjob?jk=64e1d661b682bf9b</link>
-      <description>New grad role at Government of Canada in Victoria, BC, CA. Category: Software Engineering</description>
+      <title>Software Engineer III - Distributed Software Engineering at TD</title>
+      <link>https://ca.indeed.com/viewjob?jk=981d93958c406ce3</link>
+      <description>New grad role at TD in Toronto, ON, CA. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=64e1d661b682bf9b</guid>
-    </item>
-    <item>
-      <title>Associate Cloud Operations Engineer 2 at PowerSchool Group</title>
-      <link>https://in.indeed.com/viewjob?jk=cddf8106457cb687</link>
-      <description>New grad role at PowerSchool Group in KA, IN. Category: Other</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cddf8106457cb687</guid>
-    </item>
-    <item>
-      <title>Software Developer at sharc hire</title>
-      <link>https://in.indeed.com/viewjob?jk=ca99779b44324c61</link>
-      <description>New grad role at sharc hire in TS, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ca99779b44324c61</guid>
-    </item>
-    <item>
-      <title>AI/ML Engineer (Computer vision) at InstaCAD Solutions</title>
-      <link>https://in.indeed.com/viewjob?jk=6b21bebb63f46545</link>
-      <description>New grad role at InstaCAD Solutions in MH, IN. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6b21bebb63f46545</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=981d93958c406ce3</guid>
     </item>
     <item>
       <title>Data Engineer Trainee â€“ Technical Graduate Apprentice - India UHR at Cisco</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Qualcomm in TS, IN. Category: Software Engineering</description>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=68a83a0d99122826</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - Distributed Software Engineering at TD</title>
-      <link>https://ca.indeed.com/viewjob?jk=981d93958c406ce3</link>
-      <description>New grad role at TD in Toronto, ON, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=981d93958c406ce3</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Visa</title>
-      <link>https://in.indeed.com/viewjob?jk=0512bf0efed808c2</link>
-      <description>New grad role at Visa in KA, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0512bf0efed808c2</guid>
-    </item>
-    <item>
-      <title>Software Engineer- C#, MS SQL, .NET CORE, Angular at Optum</title>
-      <link>https://in.indeed.com/viewjob?jk=2a10cec337a47d4b</link>
-      <description>New grad role at Optum in TS, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2a10cec337a47d4b</guid>
-    </item>
-    <item>
-      <title>Associate DevOps Engineer at TD SYNNEX</title>
-      <link>https://in.indeed.com/viewjob?jk=48b0163fa0432740</link>
-      <description>New grad role at TD SYNNEX in TN, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=48b0163fa0432740</guid>
     </item>
   </channel>
 </rss>
