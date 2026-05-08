@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 17:30:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 18:57:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (Backend), Integrations at Postman</title>
+      <link>https://job-boards.greenhouse.io/postman/jobs/7636725003</link>
+      <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 18:47:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7636725003</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Clearing Infra at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7489275?t=gh_src=&amp;gh_jid=7489275</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 18:25:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7489275?t=gh_src=&amp;gh_jid=7489275</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7906590?gh_jid=7906590</link>
+      <description>New grad role at Unity Technologies in San Francisco, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 08 May 2026 18:10:53 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7906590?gh_jid=7906590</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7906593?gh_jid=7906593</link>
+      <description>New grad role at Unity Technologies in Bellevue, WA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 08 May 2026 18:10:53 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7906593?gh_jid=7906593</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7902260?gh_jid=7902260</link>
+      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 08 May 2026 18:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7902260?gh_jid=7902260</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 17:59:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
     <item>
       <title>Software Engineer, Developer Productivity at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
@@ -113,13 +155,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4605996005</guid>
     </item>
     <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7489275?t=gh_src=&amp;gh_jid=7489275</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 15:55:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7489275?t=gh_src=&amp;gh_jid=7489275</guid>
-    </item>
-    <item>
       <title>Sales Engineer II at Huntress</title>
       <link>https://job-boards.greenhouse.io/huntress/jobs/7621239003</link>
       <description>New grad role at Huntress in United States of America. Category: Other</description>
@@ -219,17 +254,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
       <title> Software Engineer 3, Atlas Data Federation Customer Experience at MongoDB</title>
@@ -240,17 +275,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 08 May 2026 12:41:26 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
-    </item>
-    <item>
-      <title>Software Engineer 1 - Backend at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 11:54:39 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687403003?gh_jid=7687403003</guid>
-    </item>
-    <item>
-      <title>Software Engineer I - Backend - Message Security Products at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7687817003?gh_jid=7687817003</link>
-      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 10:41:26 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687817003?gh_jid=7687817003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning, Onboard Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7460969</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 10:00:57 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
-    </item>
-    <item>
-      <title>	Software Engineer I, Backend (Servicing Platforms) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7724913003</link>
-      <description>New grad role at Affirm in Remote Spain. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 08:52:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7724913003</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, BizTech at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/7902817?gh_jid=7902817</link>
-      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 08:41:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/7902817?gh_jid=7902817</guid>
     </item>
   </channel>
 </rss>
