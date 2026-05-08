@@ -36,6 +36,7 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Tiago-Vier-Preto"><img src="https://avatars.githubusercontent.com/u/83984051?v=4?s=100" width="100px;" alt="Tiago Vier Preto"/><br /><sub><b>Tiago Vier Preto</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Tiago-Vier-Preto" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Gojo-Aj"><img src="https://avatars.githubusercontent.com/u/193638174?v=4?s=100" width="100px;" alt="Ajay Sharma"/><br /><sub><b>Ajay Sharma</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Gojo-Aj" title="Documentation">📖</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Gojo-Aj" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=Gojo-Aj" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
