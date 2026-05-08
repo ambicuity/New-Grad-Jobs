@@ -2,34 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1005,
-      "change_percent": -0.2
+      "total_jobs": 996,
+      "change_percent": 0.2
     },
     "30_days": {
-      "total_jobs": 1012,
-      "change_percent": 0.5
+      "total_jobs": 998,
+      "change_percent": 0.4
     }
   },
   "growing_categories": [
-    "FAANG+",
-    "Infrastructure Engineering",
-    "Cloud Computing"
+    "FAANG_Plus",
+    "Unicorn",
+    "Enterprise Software"
   ],
   "declining_categories": [
-    "Unicorn Startups",
-    "Generalist Software Engineering",
-    "Non-Tech Industry Roles"
+    "Early-stage Startups",
+    "Non-Tech Sector IT",
+    "Contract/Freelance"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently exhibiting high stability, with the 7-day average (999) trending slightly above the 30-day average (988), indicating a mild recovery phase.",
-    "FAANG+ companies show the highest volatility and growth potential, while Unicorn tier hiring remains stagnant, suggesting a flight to safety among major employers.",
-    "The total job count is oscillating within a tight range of 950-1025, suggesting a period of consolidation rather than aggressive expansion in new graduate hiring."
+    "The market exhibits high stability with a mean-reverting trend around the 980-1000 job range, suggesting a period of consolidation rather than aggressive expansion or contraction.",
+    "Tiered hiring data indicates that while FAANG+ and Unicorns show slight volatility, they continue to anchor the market, offsetting the stagnation seen in smaller 'other' category firms.",
+    "The lack of significant directional momentum suggests that new graduate hiring will remain flat over the next 30 days as companies maintain current headcount targets."
   ],
-  "generated_at": "2026-05-07T01:26:47.119924",
-  "data_points": 62,
+  "generated_at": "2026-05-08T01:28:14.887989",
+  "data_points": 63,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-07"
+    "end": "2026-05-08"
   }
 }
