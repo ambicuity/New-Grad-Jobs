@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 20:10:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 21:18:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Security Engineer at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8533547002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 08 May 2026 20:40:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8533547002</guid>
+    </item>
     <item>
       <title>New Graduate Engineer, Electrical - Satellites (Starlink)  at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
   </channel>
 </rss>
