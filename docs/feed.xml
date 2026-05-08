@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 18:57:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 20:10:05 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>New Graduate Engineer, Electrical - Satellites (Starlink)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
+      <pubDate>Fri, 08 May 2026 19:41:47 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Platform - Martech at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7904127?gh_jid=7904127</link>
+      <description>New grad role at Airbnb in United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 08 May 2026 19:32:29 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7904127?gh_jid=7904127</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Balance Abstraction at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7908923</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 19:24:07 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
+    </item>
+    <item>
+      <title>Software Engineer, (L2) CDP at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7602727</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 19:18:13 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7602727</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Flatiron Health</title>
+      <link>https://flatiron.com/careers/open-positions/job?gh_jid=7569813</link>
+      <description>New grad role at Flatiron Health in NY office . Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 18:56:54 +0000</pubDate>
+      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=7569813</guid>
+    </item>
     <item>
       <title>Software Engineer (Backend), Integrations at Postman</title>
       <link>https://job-boards.greenhouse.io/postman/jobs/7636725003</link>
@@ -275,17 +310,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -321,41 +356,6 @@
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 08 May 2026 14:27:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7846633</link>
-      <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:26:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7747550</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 14:26:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7747550</guid>
-    </item>
-    <item>
-      <title>Software Engineer I at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7872497</link>
-      <description>New grad role at Pinterest in Toronto, ON, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 13:55:11 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7872497</guid>
-    </item>
-    <item>
-      <title>Security Engineer (Application Security) at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7774018</link>
-      <description>New grad role at Contentful in New York City, New York, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 08 May 2026 12:41:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7774018</guid>
     </item>
   </channel>
 </rss>
