@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 16:14:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 17:18:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -22,13 +22,6 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
     </item>
     <item>
-      <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
-      <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
-    </item>
-    <item>
       <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
       <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
       <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
@@ -36,11 +29,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
     </item>
     <item>
-      <title>Associate SCADA Engineer at Kaira Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
-      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
+      <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
     </item>
     <item>
       <title>Software Engineer Trainee_Technical Graduate Apprentice - India UHR at Cisco</title>
@@ -48,6 +41,13 @@
       <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42cef588901b77f1</guid>
+    </item>
+    <item>
+      <title>Associate SCADA Engineer at Kaira Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
+      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
     </item>
     <item>
       <title>Software Engineer - MVC .net at Nippon data systems ltd.</title>
@@ -71,18 +71,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
-      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
-      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
-    </item>
-    <item>
       <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
       <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
       <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
+      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
     </item>
     <item>
       <title>ServiceNow Software Engineer at Ecolab</title>
@@ -120,6 +120,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Oklahoma-City-Oklahoma-United-States-of-America/Associate-Clinical-Specialist--Pain-Interventions---Oklahoma-City--OK_R64928-1</guid>
     </item>
     <item>
+      <title>Modeling &amp; Simulation Systems Engineer (Kinematic) - Level 2 or 3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232451</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Schriever AFB. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232451</guid>
+    </item>
+    <item>
       <title>Modeling &amp; Simulation Software Engineer - Level 3 or 4 at Northrop Grumman</title>
       <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Modeling---Simulation-Software-Engineer---Level-3-or-4_R10232446</link>
       <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
@@ -132,13 +139,6 @@
       <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Embedded-Software-Engineer---Level-2-or-3_R10232441</guid>
-    </item>
-    <item>
-      <title>Modeling &amp; Simulation Systems Engineer (Kinematic) - Level 2 or 3 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232357</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Schriever AFB. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232357</guid>
     </item>
     <item>
       <title>Software Engineer, Onboard Systems at Nuro</title>
