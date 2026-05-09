@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 19:37:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 20:27:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -78,6 +78,13 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
     </item>
     <item>
+      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
+      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
+    </item>
+    <item>
       <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
       <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
@@ -85,11 +92,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
-      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
-      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
+      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
+      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
+      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
       <title>DevOps Engineer at Dodge Construction Network</title>
@@ -113,11 +120,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
     </item>
     <item>
-      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
-      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
-      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
+      <title>MONITOR TRAINEE at HII</title>
+      <link>https://www.indeed.com/viewjob?jk=30321e87c1c32910</link>
+      <description>New grad role at HII in Newport News, VA, US. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=30321e87c1c32910</guid>
     </item>
     <item>
       <title>Network Engineer at L3Harris</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Flatiron Health in NY office . Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 18:56:54 +0000</pubDate>
       <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=7569813</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Backend), Integrations at Postman</title>
-      <link>https://job-boards.greenhouse.io/postman/jobs/7636725003</link>
-      <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 18:47:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7636725003</guid>
     </item>
   </channel>
 </rss>
