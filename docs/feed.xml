@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 14:11:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 15:17:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -22,18 +22,18 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
     </item>
     <item>
-      <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
-    </item>
-    <item>
       <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
       <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
       <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
+    </item>
+    <item>
+      <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
     </item>
     <item>
       <title>Associate SCADA Engineer at Kaira Technologies</title>
@@ -64,6 +64,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=39dd362505f93f34</guid>
     </item>
     <item>
+      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
+      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
+    </item>
+    <item>
       <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
       <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
@@ -76,27 +83,6 @@
       <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
-    </item>
-    <item>
-      <title>ServiceNow Software Engineer at Ecolab</title>
-      <link>https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</link>
-      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</guid>
-    </item>
-    <item>
-      <title>ServiceNow Software Engineer II at Ecolab</title>
-      <link>https://in.indeed.com/viewjob?jk=88effdb3617c690e</link>
-      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
-      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
-      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
       <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
@@ -113,6 +99,27 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4e9fa8f3fb01254c</guid>
     </item>
     <item>
+      <title>ServiceNow Software Engineer at Ecolab</title>
+      <link>https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</link>
+      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</guid>
+    </item>
+    <item>
+      <title>ServiceNow Software Engineer II at Ecolab</title>
+      <link>https://in.indeed.com/viewjob?jk=88effdb3617c690e</link>
+      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
+    </item>
+    <item>
+      <title>New Graduate Nurse RN Behavioral Health at Research Psychiatric Center</title>
+      <link>https://www.indeed.com/viewjob?jk=c174bb84d3516eb6</link>
+      <description>New grad role at Research Psychiatric Center in Kansas City, MO, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c174bb84d3516eb6</guid>
+    </item>
+    <item>
       <title>Network Engineer at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</link>
       <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Infrastructure &amp; SRE</description>
@@ -125,6 +132,13 @@
       <description>New grad role at Medtronic in Oklahoma City, Oklahoma, United States of America. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Oklahoma-City-Oklahoma-United-States-of-America/Associate-Clinical-Specialist--Pain-Interventions---Oklahoma-City--OK_R64928-1</guid>
+    </item>
+    <item>
+      <title>Modeling &amp; Simulation Software Engineer - Level 3 or 4 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Modeling---Simulation-Software-Engineer---Level-3-or-4_R10232446</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Modeling---Simulation-Software-Engineer---Level-3-or-4_R10232446</guid>
     </item>
     <item>
       <title>Embedded Software Engineer - Level 2 or 3 at Northrop Grumman</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 18:47:04 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7636725003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7906590?gh_jid=7906590</link>
-      <description>New grad role at Unity Technologies in San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 18:10:53 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7906590?gh_jid=7906590</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7906593?gh_jid=7906593</link>
-      <description>New grad role at Unity Technologies in Bellevue, WA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 18:10:53 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7906593?gh_jid=7906593</guid>
     </item>
   </channel>
 </rss>
