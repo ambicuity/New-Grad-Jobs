@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 11:40:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 12:44:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -57,11 +57,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=39dd362505f93f34</guid>
     </item>
     <item>
-      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
-      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
+      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
     </item>
     <item>
       <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
@@ -71,6 +71,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
+      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
+      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+    </item>
+    <item>
       <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
       <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
       <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
@@ -78,18 +85,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
-      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
-    </item>
-    <item>
       <title>Network Engineer at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</link>
       <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</guid>
+    </item>
+    <item>
+      <title>Modeling &amp; Simulation Systems Engineer (Kinematic) - Level 2 or 3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232357</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Schriever AFB. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Modeling---Simulation-Systems-Engineer--Kinematic----Level-2-or-3_R10232357</guid>
     </item>
     <item>
       <title>Software Engineer, Onboard Systems at Nuro</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Scale AI in Baltimore, MD; Colorado Springs, CO; Hampton Roads, VA; Tampa, FL; Tucson,AZ; San Francisco, CA; New York, NY; Honolulu, HI, St. Louis, MO; Washington, DC. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 16:41:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4481921005</guid>
-    </item>
-    <item>
-      <title>ML Systems Engineer, Robotics at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4663053005</link>
-      <description>New grad role at Scale AI in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 16:41:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4663053005</guid>
     </item>
   </channel>
 </rss>
