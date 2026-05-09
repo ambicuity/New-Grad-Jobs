@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 20:27:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 21:13:09 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -22,18 +22,18 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
     </item>
     <item>
-      <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
-    </item>
-    <item>
       <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
       <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
       <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
+    </item>
+    <item>
+      <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
     </item>
     <item>
       <title>Associate SCADA Engineer at Kaira Technologies</title>
@@ -71,13 +71,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd3d268b7e28807</guid>
     </item>
     <item>
-      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
-    </item>
-    <item>
       <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
       <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
       <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
@@ -90,6 +83,13 @@
       <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+    </item>
+    <item>
+      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
     </item>
     <item>
       <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
@@ -120,6 +120,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
     </item>
     <item>
+      <title>F-35 Network Engineer | Active Secret clearance at General Dynamics Information Technology</title>
+      <link>https://www.indeed.com/viewjob?jk=42d9395f7c16b49c</link>
+      <description>New grad role at General Dynamics Information Technology in Edwards AFB, CA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=42d9395f7c16b49c</guid>
+    </item>
+    <item>
       <title>MONITOR TRAINEE at HII</title>
       <link>https://www.indeed.com/viewjob?jk=30321e87c1c32910</link>
       <description>New grad role at HII in Newport News, VA, US. Category: Other</description>
@@ -132,6 +139,13 @@
       <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</guid>
+    </item>
+    <item>
+      <title>Clinical Nurse- Cardiac Step Down Unit (New Grad) -nights at University of Maryland Medical System</title>
+      <link>https://www.indeed.com/viewjob?jk=013e5050a40ce5e9</link>
+      <description>New grad role at University of Maryland Medical System in Towson, MD, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=013e5050a40ce5e9</guid>
     </item>
     <item>
       <title>Associate Clinical Specialist, Pain Interventions - Oklahoma City, OK at Medtronic</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Airbnb in United States. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 08 May 2026 19:32:29 +0000</pubDate>
       <guid isPermaLink="true">https://careers.airbnb.com/positions/7904127?gh_jid=7904127</guid>
-    </item>
-    <item>
-      <title>Software Engineer, (L2) CDP at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7602727</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 19:18:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7602727</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Flatiron Health</title>
-      <link>https://flatiron.com/careers/open-positions/job?gh_jid=7569813</link>
-      <description>New grad role at Flatiron Health in NY office . Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 18:56:54 +0000</pubDate>
-      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=7569813</guid>
     </item>
   </channel>
 </rss>
