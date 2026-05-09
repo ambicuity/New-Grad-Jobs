@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 996,
-      "change_percent": 0.2
+      "total_jobs": 1012,
+      "change_percent": 0.7
     },
     "30_days": {
-      "total_jobs": 998,
-      "change_percent": 0.4
+      "total_jobs": 1035,
+      "change_percent": 3.0
     }
   },
   "growing_categories": [
-    "FAANG_Plus",
-    "Unicorn",
-    "Enterprise Software"
+    "AI/Machine Learning",
+    "Cloud Infrastructure",
+    "Cybersecurity"
   ],
   "declining_categories": [
-    "Early-stage Startups",
-    "Non-Tech Sector IT",
-    "Contract/Freelance"
+    "General IT Support",
+    "Legacy Systems Maintenance",
+    "Non-Technical Project Management"
   ],
   "confidence": 75,
   "insights": [
-    "The market exhibits high stability with a mean-reverting trend around the 980-1000 job range, suggesting a period of consolidation rather than aggressive expansion or contraction.",
-    "Tiered hiring data indicates that while FAANG+ and Unicorns show slight volatility, they continue to anchor the market, offsetting the stagnation seen in smaller 'other' category firms.",
-    "The lack of significant directional momentum suggests that new graduate hiring will remain flat over the next 30 days as companies maintain current headcount targets."
+    "The market shows a clear upward trend, with the current total (1005) consistently outperforming both the 7-day and 30-day averages, signaling sustained momentum.",
+    "FAANG+ companies are showing increased hiring volatility but a net positive trend, suggesting a stabilization of headcount growth after recent industry-wide corrections.",
+    "The stability in unicorn hiring combined with the steady growth in the 'other' tier indicates a broadening of the job market beyond just top-tier tech firms."
   ],
-  "generated_at": "2026-05-08T01:28:14.887989",
-  "data_points": 63,
+  "generated_at": "2026-05-09T00:16:55.673561",
+  "data_points": 64,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-08"
+    "end": "2026-05-09"
   }
 }
