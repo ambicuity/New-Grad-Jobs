@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-09T08:20:53.604557",
+    "last_updated": "2026-05-09T09:52:13.989923",
     "total_snapshots": 64,
     "date_range": {
       "start": "2026-03-05",
@@ -3475,11 +3475,11 @@
     },
     {
       "date": "2026-05-09",
-      "total_jobs": 1033,
+      "total_jobs": 1017,
       "categories": {},
       "tiers": {
-        "faang_plus": 154,
-        "other": 405,
+        "faang_plus": 152,
+        "other": 391,
         "unicorn": 474
       },
       "top_companies": [
@@ -3516,17 +3516,17 @@
           "jobs": 20
         },
         {
-          "company": "Accenture",
+          "company": "Dropbox",
           "jobs": 20
         },
         {
-          "company": "Dropbox",
-          "jobs": 20
+          "company": "Northrop Grumman",
+          "jobs": 19
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 4.59,
-      "timestamp": "2026-05-09T08:20:53.603615"
+      "unique_companies": 217,
+      "avg_jobs_per_company": 4.69,
+      "timestamp": "2026-05-09T09:52:13.989112"
     }
   ]
 }
