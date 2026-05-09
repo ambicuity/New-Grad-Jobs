@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 12:44:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 14:11:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
@@ -36,6 +36,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
     </item>
     <item>
+      <title>Associate SCADA Engineer at Kaira Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
+      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
+    </item>
+    <item>
       <title>Software Engineer Trainee_Technical Graduate Apprentice - India UHR at Cisco</title>
       <link>https://in.indeed.com/viewjob?jk=42cef588901b77f1</link>
       <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
@@ -57,11 +64,32 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=39dd362505f93f34</guid>
     </item>
     <item>
+      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
+      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+    </item>
+    <item>
       <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
       <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
       <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
+    </item>
+    <item>
+      <title>ServiceNow Software Engineer at Ecolab</title>
+      <link>https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</link>
+      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30ac0a14ea0b3a74</guid>
+    </item>
+    <item>
+      <title>ServiceNow Software Engineer II at Ecolab</title>
+      <link>https://in.indeed.com/viewjob?jk=88effdb3617c690e</link>
+      <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
     </item>
     <item>
       <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
@@ -71,13 +99,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
-      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
-      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
-    </item>
-    <item>
       <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
       <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
       <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
@@ -85,11 +106,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
+      <title>Software Development Engineer - II at Synchrony</title>
+      <link>https://www.indeed.com/viewjob?jk=4e9fa8f3fb01254c</link>
+      <description>New grad role at Synchrony in Stamford, CT, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4e9fa8f3fb01254c</guid>
+    </item>
+    <item>
       <title>Network Engineer at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</link>
       <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0a098b7b47fb760</guid>
+    </item>
+    <item>
+      <title>Associate Clinical Specialist, Pain Interventions - Oklahoma City, OK at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Oklahoma-City-Oklahoma-United-States-of-America/Associate-Clinical-Specialist--Pain-Interventions---Oklahoma-City--OK_R64928-1</link>
+      <description>New grad role at Medtronic in Oklahoma City, Oklahoma, United States of America. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Oklahoma-City-Oklahoma-United-States-of-America/Associate-Clinical-Specialist--Pain-Interventions---Oklahoma-City--OK_R64928-1</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer - Level 2 or 3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Embedded-Software-Engineer---Level-2-or-3_R10232441</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Embedded-Software-Engineer---Level-2-or-3_R10232441</guid>
     </item>
     <item>
       <title>Modeling &amp; Simulation Systems Engineer (Kinematic) - Level 2 or 3 at Northrop Grumman</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Unity Technologies in Bellevue, WA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 08 May 2026 18:10:53 +0000</pubDate>
       <guid isPermaLink="true">https://unity.com/careers/positions/7906593?gh_jid=7906593</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad PhD) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7902260?gh_jid=7902260</link>
-      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 18:10:52 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7902260?gh_jid=7902260</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 17:59:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Developer Productivity at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 16:41:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7851388</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer, Infrastructure &amp; Security at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4674863005</link>
-      <description>New grad role at Scale AI in Washington, DC. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 08 May 2026 16:41:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4674863005</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Enterprise GenAI at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4665557005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 16:41:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4665557005</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Public Sector at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4481921005</link>
-      <description>New grad role at Scale AI in Baltimore, MD; Colorado Springs, CO; Hampton Roads, VA; Tampa, FL; Tucson,AZ; San Francisco, CA; New York, NY; Honolulu, HI, St. Louis, MO; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Fri, 08 May 2026 16:41:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4481921005</guid>
     </item>
   </channel>
 </rss>
