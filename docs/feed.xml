@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 15:43:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 16:40:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Graduate Trainee Engineer at Ameinar International pvt ltd</title>
@@ -120,13 +120,6 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/ASSISTANT-ASSOCIATE-ENGINEERING-STORES_4956034</guid>
     </item>
     <item>
-      <title>Dairy Frozen Associate at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Kitchener-ON/Dairy-Frozen-Associate_R-2505805</link>
-      <description>New grad role at Walmart in Kitchener, ON. Category: Other</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Kitchener-ON/Dairy-Frozen-Associate_R-2505805</guid>
-    </item>
-    <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</link>
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
@@ -176,13 +169,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</guid>
     </item>
     <item>
-      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
-      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
-    </item>
-    <item>
       <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
       <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
       <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
@@ -190,18 +176,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
-      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
-      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
-      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
-    </item>
-    <item>
       <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
       <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
       <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
+      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+    </item>
+    <item>
+      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
+      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
+      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
       <title>ServiceNow Software Engineer at Ecolab</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Bridge at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
+      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
     </item>
   </channel>
 </rss>
