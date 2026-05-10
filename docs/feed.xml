@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 13:55:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 14:52:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Graduate Trainee Engineer at Ameinar International pvt ltd</title>
@@ -141,18 +141,18 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
     </item>
     <item>
-      <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
-      <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
-    </item>
-    <item>
       <title>2026 CAE, Fall GenAI Engineer Co-op (12 months) at RBC</title>
       <link>https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</link>
       <description>New grad role at RBC in Toronto, ON, CA. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f387bda4f7cad7a8</guid>
+    </item>
+    <item>
+      <title>Trainee Support Engineer at Interlace India Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=3227702a14d76bec</link>
+      <description>New grad role at Interlace India Pvt Ltd in TN, IN. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
     </item>
     <item>
       <title>Software Engineer Trainee_Technical Graduate Apprentice - India UHR at Cisco</title>
@@ -162,18 +162,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42cef588901b77f1</guid>
     </item>
     <item>
-      <title>Associate SCADA Engineer at Kaira Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
-      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
-    </item>
-    <item>
       <title>Software Engineer - MVC .net at Nippon data systems ltd.</title>
       <link>https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</link>
       <description>New grad role at Nippon data systems ltd. in UP, IN. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</guid>
+    </item>
+    <item>
+      <title>Associate SCADA Engineer at Kaira Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
+      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
     </item>
     <item>
       <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
@@ -183,25 +183,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
     </item>
     <item>
-      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
-      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
-      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
-    </item>
-    <item>
-      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
-      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
-      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
-    </item>
-    <item>
       <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
       <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
+    </item>
+    <item>
+      <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
+      <link>https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</link>
+      <description>New grad role at RBC in Toronto, ON, CA. Category: Data Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e7cd4fa57cafdc34</guid>
     </item>
     <item>
       <title>ServiceNow Software Engineer at Ecolab</title>
@@ -216,6 +209,13 @@
       <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
+    </item>
+    <item>
+      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
+      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
+      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
       <title>Network Engineer at L3Harris</title>
