@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-10T00:02:42.512526",
+    "last_updated": "2026-05-10T04:10:38.728203",
     "total_snapshots": 65,
     "date_range": {
       "start": "2026-03-05",
@@ -3530,11 +3530,11 @@
     },
     {
       "date": "2026-05-10",
-      "total_jobs": 1006,
+      "total_jobs": 1009,
       "categories": {},
       "tiers": {
-        "other": 378,
-        "faang_plus": 154,
+        "other": 382,
+        "faang_plus": 153,
         "unicorn": 474
       },
       "top_companies": [
@@ -3576,12 +3576,12 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 19
+          "jobs": 18
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 4.68,
-      "timestamp": "2026-05-10T00:02:42.511827"
+      "unique_companies": 216,
+      "avg_jobs_per_company": 4.67,
+      "timestamp": "2026-05-10T04:10:38.726604"
     }
   ]
 }
