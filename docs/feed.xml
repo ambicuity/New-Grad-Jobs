@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 21:34:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 22:30:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Graduate Trainee Engineer at Ameinar International pvt ltd</title>
@@ -62,6 +62,13 @@
       <description>New grad role at Belton Regional Medical Center in Belton, MO, US. Category: Other</description>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f983d40d32a1f8cd</guid>
+    </item>
+    <item>
+      <title>Data Engineer II at Walmart</title>
+      <link>https://www.indeed.com/viewjob?jk=3ad7732150c20974</link>
+      <description>New grad role at Walmart in Sunnyvale, CA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3ad7732150c20974</guid>
     </item>
     <item>
       <title>New Grad RN Residency Inpatient Rehab at Henrico Doctors' Hospital</title>
@@ -218,6 +225,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</guid>
     </item>
     <item>
+      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
+      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
+      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
+    </item>
+    <item>
       <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
       <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
       <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
@@ -225,11 +239,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer - Strategic Data Solutions at Apple</title>
-      <link>https://www.indeed.com/viewjob?jk=0901f827d83d69c2</link>
-      <description>New grad role at Apple in Austin, TX, US. Category: Data Science &amp; ML</description>
+      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
+      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
+      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0901f827d83d69c2</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
+    </item>
+    <item>
+      <title>F-35 Network Engineer | Active Secret clearance at General Dynamics Information Technology</title>
+      <link>https://www.indeed.com/viewjob?jk=42d9395f7c16b49c</link>
+      <description>New grad role at General Dynamics Information Technology in Edwards AFB, CA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=42d9395f7c16b49c</guid>
+    </item>
+    <item>
+      <title>MONITOR TRAINEE at HII</title>
+      <link>https://www.indeed.com/viewjob?jk=30321e87c1c32910</link>
+      <description>New grad role at HII in Newport News, VA, US. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=30321e87c1c32910</guid>
     </item>
     <item>
       <title>2026 CFO, Fall Data Analyst, Capital &amp; Liquidity Measurement &amp; Reporting (8 months) at RBC</title>
@@ -251,13 +279,6 @@
       <description>New grad role at Ecolab in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=88effdb3617c690e</guid>
-    </item>
-    <item>
-      <title>2026 PhD Graduate - Next Gen Image Processing/Sensing at Johns Hopkins University Applied Physics Laboratory</title>
-      <link>https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</link>
-      <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
     </item>
     <item>
       <title>Network Engineer at L3Harris</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Stripe in Seattle. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7867389</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Payments ML Accelerator at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7079044</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
     </item>
   </channel>
 </rss>
