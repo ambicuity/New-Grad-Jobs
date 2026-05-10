@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 20:36:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 21:34:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Graduate Trainee Engineer at Ameinar International pvt ltd</title>
@@ -48,6 +48,20 @@
       <description>New grad role at Research Medical Center in Kansas City, MO, US. Category: Other</description>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=624e0c5dc6d8c138</guid>
+    </item>
+    <item>
+      <title>New Graduate Nurse RN All HCA Hospitals at Centerpoint Medical Center</title>
+      <link>https://www.indeed.com/viewjob?jk=0afd15f0791d3a47</link>
+      <description>New grad role at Centerpoint Medical Center in Independence, MO, US. Category: Other</description>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0afd15f0791d3a47</guid>
+    </item>
+    <item>
+      <title>New Graduate Nurse RN Residency at Belton Regional Medical Center</title>
+      <link>https://www.indeed.com/viewjob?jk=f983d40d32a1f8cd</link>
+      <description>New grad role at Belton Regional Medical Center in Belton, MO, US. Category: Other</description>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f983d40d32a1f8cd</guid>
     </item>
     <item>
       <title>New Grad RN Residency Inpatient Rehab at Henrico Doctors' Hospital</title>
@@ -183,13 +197,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
     </item>
     <item>
-      <title>Software Engineer - MVC .net at Nippon data systems ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</link>
-      <description>New grad role at Nippon data systems ltd. in UP, IN. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</guid>
-    </item>
-    <item>
       <title>Associate SCADA Engineer at Kaira Technologies</title>
       <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
       <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
@@ -202,6 +209,13 @@
       <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42cef588901b77f1</guid>
+    </item>
+    <item>
+      <title>Software Engineer - MVC .net at Nippon data systems ltd.</title>
+      <link>https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</link>
+      <description>New grad role at Nippon data systems ltd. in UP, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b58b3d73d1b80dda</guid>
     </item>
     <item>
       <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Stripe in Seattle; San Francisco; New York City. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7079044</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Stripe Assistant  at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7629052</link>
-      <description>New grad role at Stripe in Seattle; San Francisco; New York City; Remote. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7629052</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Supportability at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7384709</link>
-      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7384709</guid>
     </item>
   </channel>
 </rss>
