@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 11:13:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 12:07:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Graduate Trainee Engineer at Ameinar International pvt ltd</title>
@@ -127,13 +127,6 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/ASSISTANT-ASSOCIATE-ENGINEERING-STORES_4956034</guid>
     </item>
     <item>
-      <title>Data Engineer II at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/Data-Engineer-II_R-2502100</link>
-      <description>New grad role at Walmart in Sunnyvale, CA. Category: Data Engineering</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/Sunnyvale-CA/Data-Engineer-II_R-2502100</guid>
-    </item>
-    <item>
       <title>Software Engineer, Ad Infra   at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002</link>
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
@@ -162,6 +155,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3227702a14d76bec</guid>
     </item>
     <item>
+      <title>Associate SCADA Engineer at Kaira Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
+      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
+    </item>
+    <item>
       <title>Software Engineer Trainee_Technical Graduate Apprentice - India UHR at Cisco</title>
       <link>https://in.indeed.com/viewjob?jk=42cef588901b77f1</link>
       <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
@@ -169,11 +169,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=42cef588901b77f1</guid>
     </item>
     <item>
-      <title>Associate SCADA Engineer at Kaira Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</link>
-      <description>New grad role at Kaira Technologies in RJ, IN. Category: Other</description>
+      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
+      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9a1f5e0794ead861</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
     </item>
     <item>
       <title>Software Engineer - MVC .net at Nippon data systems ltd.</title>
@@ -202,13 +202,6 @@
       <description>New grad role at Johns Hopkins University Applied Physics Laboratory in Laurel, MD, US. Category: Other</description>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd5945d2d5f38feb</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - AWS Glue / Data Engineer at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</link>
-      <description>New grad role at JPMorganChase in Irvine, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=093ec4d8db7a7a45</guid>
     </item>
     <item>
       <title>ServiceNow Software Engineer at Ecolab</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Stripe in San Francisco, California. Category: Software Engineering</description>
       <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7808471</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7788088</link>
+      <description>New grad role at Stripe in San Francisco. Category: Software Engineering</description>
+      <pubDate>Fri, 08 May 2026 21:59:17 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7788088</guid>
     </item>
   </channel>
 </rss>
