@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2026 19:16:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 20:59:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Relevance and Personalization at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7708224?gh_jid=7708224</link>
+      <description>New grad role at Airbnb in United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 11 May 2026 20:49:34 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7708224?gh_jid=7708224</guid>
+    </item>
+    <item>
+      <title>Software Engineer 2, Product Engineering - Identity Security at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7491487003?gh_jid=7491487003</link>
+      <description>New grad role at Abnormal Security in Hybrid - San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 20:17:02 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7491487003?gh_jid=7491487003</guid>
+    </item>
+    <item>
+      <title>iOS Software Engineer, Contributions at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7896378</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 19:42:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7896378</guid>
+    </item>
     <item>
       <title>Data Scientist, Growth at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5777649004</link>
@@ -253,6 +274,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d97f99e19db0b06c</guid>
     </item>
     <item>
+      <title>CPA Hub (India) Graduate 2026 at Standard Chartered Bank</title>
+      <link>https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</link>
+      <description>New grad role at Standard Chartered Bank in KA, IN. Category: Other</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</guid>
+    </item>
+    <item>
       <title>New Grad - ML Stack Optimization Engineer at Cerebras Systems</title>
       <link>https://ca.indeed.com/viewjob?jk=833626ce4bc97b2e</link>
       <description>New grad role at Cerebras Systems in Toronto, ON, CA. Category: Data Science &amp; ML</description>
@@ -328,34 +356,6 @@
       <description>New grad role at Cenovus Energy in St. John's, NL, CA. Category: Other</description>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=13504d2f08223fba</guid>
-    </item>
-    <item>
-      <title>Student, Drilling, Completions and Interventions, St. John's (September 2026) at Cenovus Energy</title>
-      <link>https://ca.indeed.com/viewjob?jk=59e335660d176c9f</link>
-      <description>New grad role at Cenovus Energy in St. John's, NL, CA. Category: Other</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=59e335660d176c9f</guid>
-    </item>
-    <item>
-      <title>Student, Implementation Engineering, St. John's (September 2026) at Cenovus Energy</title>
-      <link>https://ca.indeed.com/viewjob?jk=a71cbf6ad13889fc</link>
-      <description>New grad role at Cenovus Energy in St. John's, NL, CA. Category: Other</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=a71cbf6ad13889fc</guid>
-    </item>
-    <item>
-      <title>Student, Operational Controls Support Engineering, St. John's (September 2026) at Cenovus Energy</title>
-      <link>https://ca.indeed.com/viewjob?jk=9dd83dfe76ced657</link>
-      <description>New grad role at Cenovus Energy in St. John's, NL, CA. Category: Other</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9dd83dfe76ced657</guid>
-    </item>
-    <item>
-      <title>CPA Hub (India) Graduate 2026 at Standard Chartered Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</link>
-      <description>New grad role at Standard Chartered Bank in KA, IN. Category: Other</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</guid>
     </item>
   </channel>
 </rss>
