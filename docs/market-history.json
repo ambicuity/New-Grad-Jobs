@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-11T05:43:26.450468",
+    "last_updated": "2026-05-11T08:51:16.094211",
     "total_snapshots": 66,
     "date_range": {
       "start": "2026-03-05",
@@ -3585,11 +3585,11 @@
     },
     {
       "date": "2026-05-11",
-      "total_jobs": 1044,
+      "total_jobs": 1024,
       "categories": {},
       "tiers": {
-        "faang_plus": 191,
-        "other": 379,
+        "other": 388,
+        "faang_plus": 162,
         "unicorn": 474
       },
       "top_companies": [
@@ -3600,10 +3600,6 @@
         {
           "company": "Waymo",
           "jobs": 46
-        },
-        {
-          "company": "Apple",
-          "jobs": 42
         },
         {
           "company": "Affirm",
@@ -3618,15 +3614,19 @@
           "jobs": 22
         },
         {
+          "company": "Apple",
+          "jobs": 20
+        },
+        {
           "company": "Stripe",
           "jobs": 20
         },
         {
-          "company": "Boeing",
+          "company": "Abnormal Security",
           "jobs": 20
         },
         {
-          "company": "Abnormal Security",
+          "company": "Boeing",
           "jobs": 20
         },
         {
@@ -3635,8 +3635,8 @@
         }
       ],
       "unique_companies": 213,
-      "avg_jobs_per_company": 4.9,
-      "timestamp": "2026-05-11T05:43:26.449627"
+      "avg_jobs_per_company": 4.81,
+      "timestamp": "2026-05-11T08:51:16.093371"
     }
   ]
 }
