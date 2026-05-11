@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1012,
-      "change_percent": 0.6
+      "total_jobs": 1022,
+      "change_percent": 0.69
     },
     "30_days": {
-      "total_jobs": 1025,
-      "change_percent": 1.9
+      "total_jobs": 1045,
+      "change_percent": 2.96
     }
   },
   "growing_categories": [
-    "Software Engineering",
-    "Data Science",
-    "Cloud Infrastructure"
+    "Unicorn Startups",
+    "Mid-Market Tech",
+    "AI/ML Infrastructure"
   ],
   "declining_categories": [
-    "Quality Assurance",
-    "Technical Support",
-    "Legacy Systems Maintenance"
+    "FAANG+ Core Engineering",
+    "Legacy Enterprise IT",
+    "Hardware/Semiconductor"
   ],
   "confidence": 75,
   "insights": [
-    "The market is showing a clear upward trend, with the current 7-day average (1002) consistently outperforming the 30-day average (988), signaling sustained momentum.",
-    "Stability in the 'Unicorn' and 'FAANG+' tiers suggests that major employers are maintaining steady hiring volumes, providing a solid floor for the overall market.",
-    "The gradual increase in total job postings over the last 10 days indicates a positive trajectory as companies finalize their hiring needs for the coming quarter."
+    "The market has shown a clear upward trajectory over the last 10 days, consistently breaking above the 30-day average of 990.",
+    "Unicorn-tier companies are showing the most stability and growth, suggesting that venture-backed firms are currently more aggressive in new graduate hiring than established FAANG+ entities.",
+    "The steady increase in the 7-day average compared to the 30-day average indicates a strengthening momentum that is likely to persist through the next month."
   ],
-  "generated_at": "2026-05-10T00:02:48.761316",
-  "data_points": 65,
+  "generated_at": "2026-05-11T01:31:33.865361",
+  "data_points": 66,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-10"
+    "end": "2026-05-11"
   }
 }
