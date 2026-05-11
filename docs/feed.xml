@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2026 14:41:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 17:16:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (AI Platforms) at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7573638</link>
+      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 17:12:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7573638</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Middleware at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7825886</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 17:03:29 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7825886</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Onboard Systems at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7809136</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 17:03:29 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7809136</guid>
+    </item>
+    <item>
+      <title>New Graduate Engineer, Mechanical (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8542046002?gh_jid=8542046002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Other</description>
+      <pubDate>Mon, 11 May 2026 16:09:12 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8542046002?gh_jid=8542046002</guid>
+    </item>
+    <item>
+      <title>E-commerce Data Scientist, Product Analytics at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7819025</link>
+      <description>New grad role at Peloton in New York, New York. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 11 May 2026 14:39:24 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7819025</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Incident Response at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7861869</link>
+      <description>New grad role at Peloton in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 11 May 2026 14:39:24 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7861869</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Peloton</title>
+      <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785741</link>
+      <description>New grad role at Peloton in New York, New York. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 11 May 2026 14:39:24 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785741</guid>
+    </item>
     <item>
       <title>Cloud Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7484699</link>
@@ -79,17 +128,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
       <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
       <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
@@ -128,17 +177,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 12:47:40 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Developer Productivity at MongoDB</title>
@@ -162,6 +211,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/huntress/jobs/7583411003</guid>
     </item>
     <item>
+      <title>AI Software Engineer at Ciena</title>
+      <link>https://in.indeed.com/viewjob?jk=5bc74176fe3ffdad</link>
+      <description>New grad role at Ciena in HR, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5bc74176fe3ffdad</guid>
+    </item>
+    <item>
       <title>Software Engineer – Early Career Program at Notasco Technologies</title>
       <link>https://in.indeed.com/viewjob?jk=6b6a9eada06dfe70</link>
       <description>New grad role at Notasco Technologies in TN, IN. Category: Software Engineering</description>
@@ -183,11 +239,25 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=99e1a84aa637a2de</guid>
     </item>
     <item>
-      <title>Apprentice - Chemical Engineering - Graduating 2026 at AtkinsRéalis</title>
-      <link>https://in.indeed.com/viewjob?jk=4d0546a3a400b961</link>
-      <description>New grad role at AtkinsRéalis in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <title>CPA Hub (India) Graduate 2026 at Standard Chartered Bank</title>
+      <link>https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</link>
+      <description>New grad role at Standard Chartered Bank in KA, IN. Category: Other</description>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4d0546a3a400b961</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1733775c6bc0c23c</guid>
+    </item>
+    <item>
+      <title>Associate Engineer-Electrical (Power) at Black &amp; Veatch</title>
+      <link>https://in.indeed.com/viewjob?jk=04c7d1a407c0d5c8</link>
+      <description>New grad role at Black &amp; Veatch in MH, IN. Category: Other</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=04c7d1a407c0d5c8</guid>
+    </item>
+    <item>
+      <title>Marsh Risk Early Career Program, Full-Time – Montreal – 2026 New Graduates at Marsh McLennan</title>
+      <link>https://ca.indeed.com/viewjob?jk=7aabd00bbfe178bd</link>
+      <description>New grad role at Marsh McLennan in Montréal, QC, CA. Category: Other</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7aabd00bbfe178bd</guid>
     </item>
     <item>
       <title>Student, Regulatory, St. John's (September 2026) at Cenovus Energy</title>
@@ -267,13 +337,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9dd83dfe76ced657</guid>
     </item>
     <item>
-      <title>Junior Software Engineer, HR Applications at Guidehouse</title>
-      <link>https://in.indeed.com/viewjob?jk=04b1cffcd4242443</link>
-      <description>New grad role at Guidehouse in KL, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=04b1cffcd4242443</guid>
-    </item>
-    <item>
       <title>Software Engineer - Java at OSTTRA</title>
       <link>https://in.indeed.com/viewjob?jk=a410bc5a2a9d41eb</link>
       <description>New grad role at OSTTRA in HR, IN. Category: Software Engineering</description>
@@ -288,74 +351,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=23d6175055ce97cd</guid>
     </item>
     <item>
-      <title>Java Developer II at ModeFinserver Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=ac05ab43e8a018ae</link>
-      <description>New grad role at ModeFinserver Pvt Ltd in KA, IN. Category: Software Engineering</description>
+      <title>Junior Data Engineer at The Best Postcards</title>
+      <link>https://www.indeed.com/viewjob?jk=fb3649f42d08c463</link>
+      <description>New grad role at The Best Postcards in Cheshire, CT, US. Category: Data Engineering</description>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ac05ab43e8a018ae</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Electronic Arts</title>
-      <link>https://in.indeed.com/viewjob?jk=3c317dfc3ba607c5</link>
-      <description>New grad role at Electronic Arts in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3c317dfc3ba607c5</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Optum</title>
-      <link>https://in.indeed.com/viewjob?jk=b2a2e7b32f0513a6</link>
-      <description>New grad role at Optum in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b2a2e7b32f0513a6</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at CUBE</title>
-      <link>https://in.indeed.com/viewjob?jk=e015ff4163afbf07</link>
-      <description>New grad role at CUBE in KA, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e015ff4163afbf07</guid>
-    </item>
-    <item>
-      <title>Part Time Research Assistant Data Scientist and Engineer at American University</title>
-      <link>https://www.indeed.com/viewjob?jk=33a7e9dfed1d6a8e</link>
-      <description>New grad role at American University in Washington, DC, US. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=33a7e9dfed1d6a8e</guid>
-    </item>
-    <item>
-      <title>Junior GCP Cloud Engineer at Openkyber</title>
-      <link>https://www.indeed.com/viewjob?jk=bbc3a09520eb5b6e</link>
-      <description>New grad role at Openkyber in AK, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bbc3a09520eb5b6e</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Moody's</title>
-      <link>https://www.indeed.com/viewjob?jk=0c59dff470187e11</link>
-      <description>New grad role at Moody's in New York, NY, US. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0c59dff470187e11</guid>
-    </item>
-    <item>
-      <title>Junior Hardware Engineer at General Dynamics Mission Systems</title>
-      <link>https://ca.indeed.com/viewjob?jk=508a987058c90031</link>
-      <description>New grad role at General Dynamics Mission Systems in Calgary, AB, CA. Category: Hardware Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=508a987058c90031</guid>
-    </item>
-    <item>
-      <title>Electrical Engineer (Entry-Level) at Advanced Crane Technologies LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=e244fb3630b832c0</link>
-      <description>New grad role at Advanced Crane Technologies LLC in Pottstown, PA, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e244fb3630b832c0</guid>
-    </item>
-    <item>
-      <title>Software Engineer at National Security Agency</title>
-      <link>https://www.indeed.com/viewjob?jk=a5300fd9c1e705d7</link>
-      <description>New grad role at National Security Agency in San Antonio, TX, US. Category: Software Engineering</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a5300fd9c1e705d7</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fb3649f42d08c463</guid>
     </item>
   </channel>
 </rss>
