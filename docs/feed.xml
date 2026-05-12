@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 20:13:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 21:44:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Video at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7661919</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 20:47:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7661919</guid>
+    </item>
+    <item>
+      <title>Associate General Counsel, Privacy, Cybersecurity, and AI at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8531775002?gh_jid=8531775002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 12 May 2026 20:16:25 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8531775002?gh_jid=8531775002</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Depot Automation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7852501</link>
@@ -83,13 +97,6 @@
       <description>New grad role at Peloton in New York, New York. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 12 May 2026 16:00:44 +0000</pubDate>
       <guid isPermaLink="true">https://careers.onepeloton.com/en/all-jobs/?gh_jid=7819025</guid>
-    </item>
-    <item>
-      <title>Associate General Counsel, Privacy, Cybersecurity, and AI at Chime</title>
-      <link>https://boards.greenhouse.io/chime/jobs/8531775002?gh_jid=8531775002</link>
-      <description>New grad role at Chime in San Francisco, CA, USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 12 May 2026 15:29:17 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8531775002?gh_jid=8531775002</guid>
     </item>
     <item>
       <title>Software Engineer, Scheduled Rides at Lyft</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
     </item>
   </channel>
 </rss>
