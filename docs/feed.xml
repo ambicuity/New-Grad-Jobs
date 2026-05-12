@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 21:44:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 22:51:08 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Hardware Test &amp; Automation (Optical Payloads) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8545930002?gh_jid=8545930002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 22:02:29 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8545930002?gh_jid=8545930002</guid>
+    </item>
+    <item>
+      <title>Analyst II, Full Stack at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7533759003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 21:54:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7533759003</guid>
+    </item>
     <item>
       <title>Software Engineer - Video at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7661919</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7259110</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning, Onboard Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7460969</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
     </item>
   </channel>
 </rss>
