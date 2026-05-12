@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 22:51:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 23:50:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>iOS Engineer II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=7858998</link>
+      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
+      <pubDate>Tue, 12 May 2026 23:00:51 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858998</guid>
+    </item>
+    <item>
+      <title>iOS Engineer II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=7858144</link>
+      <description>New grad role at Instacart in United States - Remote. Category: Other</description>
+      <pubDate>Tue, 12 May 2026 22:58:32 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=7858144</guid>
+    </item>
     <item>
       <title>Software Engineer, Hardware Test &amp; Automation (Optical Payloads) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8545930002?gh_jid=8545930002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7461072</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7256244</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7256244</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Evaluation and Test Automation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
     </item>
   </channel>
 </rss>

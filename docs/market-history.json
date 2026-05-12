@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-12T22:51:08.823042",
+    "last_updated": "2026-05-12T23:50:00.008502",
     "total_snapshots": 67,
     "date_range": {
       "start": "2026-03-05",
@@ -3640,12 +3640,12 @@
     },
     {
       "date": "2026-05-12",
-      "total_jobs": 1010,
+      "total_jobs": 1034,
       "categories": {},
       "tiers": {
         "unicorn": 468,
-        "faang_plus": 148,
-        "other": 394
+        "faang_plus": 156,
+        "other": 410
       },
       "top_companies": [
         {
@@ -3661,6 +3661,10 @@
           "jobs": 24
         },
         {
+          "company": "Hargrove Engineers + Constructors",
+          "jobs": 23
+        },
+        {
           "company": "Northrop Grumman",
           "jobs": 23
         },
@@ -3671,10 +3675,6 @@
         {
           "company": "Lyft",
           "jobs": 21
-        },
-        {
-          "company": "Boeing",
-          "jobs": 19
         },
         {
           "company": "Abnormal Security",
@@ -3689,9 +3689,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 4.53,
-      "timestamp": "2026-05-12T22:51:08.821828"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.83,
+      "timestamp": "2026-05-12T23:50:00.007588"
     }
   ]
 }
