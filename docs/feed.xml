@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 11:36:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 13:27:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7863285</link>
+      <description>New grad role at SingleStore in Hyderabad . Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 12:11:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7863285</guid>
+    </item>
+    <item>
+      <title>Software Engineer at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7861208</link>
+      <description>New grad role at SingleStore in India . Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 12:08:39 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7861208</guid>
+    </item>
     <item>
       <title>Software Engineer, Instant Loans at Chime</title>
       <link>https://boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Airbnb in Remote - USA. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 01:05:31 +0000</pubDate>
       <guid isPermaLink="true">https://careers.airbnb.com/positions/7858135?gh_jid=7858135</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Next.js at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/5993753004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 00:15:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5993753004</guid>
-    </item>
-    <item>
-      <title>Engineer I, Software at Omnicell</title>
-      <link>https://in.indeed.com/viewjob?jk=eb7ac9bc156fea66</link>
-      <description>New grad role at Omnicell in KA, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=eb7ac9bc156fea66</guid>
     </item>
   </channel>
 </rss>
