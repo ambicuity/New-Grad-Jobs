@@ -1,12 +1,16 @@
 {
-  "state": "already_generated",
-  "message": "Predictions were already generated on 2026-05-11.",
-  "updated_at": "2026-05-11T23:16:03.868367",
+  "state": "generation_failed",
+  "message": "Prediction generation raised an exception.",
+  "updated_at": "2026-05-12T00:17:04.726655",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
-  "available_history_snapshots": null,
+  "available_history_snapshots": 67,
   "prediction_artifact": {
     "path": "docs/predictions.json",
     "exists": true
+  },
+  "details": {
+    "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-3.1-flash-lite-preview:generateContent (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=12)\"))",
+    "model": "gemini-3.1-flash-lite-preview"
   }
 }
