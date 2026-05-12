@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 04:12:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 06:52:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Marketplace ML Platform at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7905693</link>
+      <description>New grad role at Waymo in Mountain View, CA, United States . Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 04:19:28 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905693</guid>
+    </item>
     <item>
       <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
@@ -337,25 +344,18 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5993753004</guid>
     </item>
     <item>
-      <title>RN - Nurse Residency, Beaumont - July 2026 Program at CHRISTUS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=4d8df9ca8513877b</link>
-      <description>New grad role at CHRISTUS Health in Beaumont, TX, US. Category: Other</description>
+      <title>Software Engineer Expert at BeaKen Solutions, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=5540eea058740ab7</link>
+      <description>New grad role at BeaKen Solutions, Inc. in Springfield, VA, US. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4d8df9ca8513877b</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5540eea058740ab7</guid>
     </item>
     <item>
-      <title>Fire Protection Engineer – Recent Graduate (0-3 Years' Experience) at SUMMER CONSULTANTS, INC.</title>
-      <link>https://www.indeed.com/viewjob?jk=410533cca97b3fc5</link>
-      <description>New grad role at SUMMER CONSULTANTS, INC. in Greenbelt, MD, US. Category: Other</description>
+      <title>Expert Software Engineer at THE BISON GROUP LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=97e4cefd45f6a10f</link>
+      <description>New grad role at THE BISON GROUP LLC in Fort Belvoir, VA, US. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=410533cca97b3fc5</guid>
-    </item>
-    <item>
-      <title>FIELD SERVICE ENGINEER II, FLOW WATERJET at Southern States Machinery</title>
-      <link>https://www.indeed.com/viewjob?jk=2c5d28a5a34f52e0</link>
-      <description>New grad role at Southern States Machinery in Mooresville, NC, US. Category: Other</description>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2c5d28a5a34f52e0</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=97e4cefd45f6a10f</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-12T04:12:23.017117",
+    "last_updated": "2026-05-12T06:52:38.975939",
     "total_snapshots": 67,
     "date_range": {
       "start": "2026-03-05",
@@ -3640,12 +3640,12 @@
     },
     {
       "date": "2026-05-12",
-      "total_jobs": 1044,
+      "total_jobs": 1046,
       "categories": {},
       "tiers": {
-        "unicorn": 472,
-        "faang_plus": 158,
-        "other": 414
+        "unicorn": 473,
+        "faang_plus": 164,
+        "other": 409
       },
       "top_companies": [
         {
@@ -3654,11 +3654,11 @@
         },
         {
           "company": "Waymo",
-          "jobs": 45
+          "jobs": 46
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 26
+          "jobs": 27
         },
         {
           "company": "Affirm",
@@ -3689,9 +3689,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 234,
-      "avg_jobs_per_company": 4.46,
-      "timestamp": "2026-05-12T04:12:23.016309"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 4.53,
+      "timestamp": "2026-05-12T06:52:38.974518"
     }
   ]
 }
