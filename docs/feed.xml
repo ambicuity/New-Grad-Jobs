@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 06:52:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 09:32:01 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Instant Loans at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 07:01:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002</guid>
+    </item>
     <item>
       <title>Software Engineer, Marketplace ML Platform at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7905693</link>
@@ -344,18 +351,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5993753004</guid>
     </item>
     <item>
-      <title>Software Engineer Expert at BeaKen Solutions, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=5540eea058740ab7</link>
-      <description>New grad role at BeaKen Solutions, Inc. in Springfield, VA, US. Category: Software Engineering</description>
+      <title>Associate Software Engineer (AI &amp; Python) at Lenovo</title>
+      <link>https://in.indeed.com/viewjob?jk=7807e90490216f6d</link>
+      <description>New grad role at Lenovo in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5540eea058740ab7</guid>
-    </item>
-    <item>
-      <title>Expert Software Engineer at THE BISON GROUP LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=97e4cefd45f6a10f</link>
-      <description>New grad role at THE BISON GROUP LLC in Fort Belvoir, VA, US. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=97e4cefd45f6a10f</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7807e90490216f6d</guid>
     </item>
   </channel>
 </rss>
