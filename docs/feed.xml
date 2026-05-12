@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 18:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 20:13:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Depot Automation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7852501</link>
+      <description>New grad role at Waymo in Mountain View, CA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 12 May 2026 19:30:43 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7852501</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Product Security Data Platforms at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7761694</link>
+      <description>New grad role at Stripe in Seattle. Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 18:58:58 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7761694</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Marketplace Pricing at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7905643</link>
+      <description>New grad role at Waymo in Mountain View, CA, United States  . Category: Software Engineering</description>
+      <pubDate>Tue, 12 May 2026 18:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905643</guid>
+    </item>
     <item>
       <title>Software Engineer II - Core Ingest at Sumo Logic</title>
       <link>https://job-boards.greenhouse.io/sumologic/jobs/7860073</link>
@@ -148,13 +169,6 @@
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7539786</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer, Data &amp; Systems  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446301</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446301</guid>
-    </item>
-    <item>
       <title>Machine Learning Engineer, Driver Understanding and Evaluation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7455853</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
@@ -188,13 +202,6 @@
       <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446322</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Perception Modeling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7446279</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7446279</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
       <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7858779</link>
-      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Tue, 12 May 2026 02:28:48 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7858779</guid>
     </item>
   </channel>
 </rss>
