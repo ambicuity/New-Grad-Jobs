@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-13T21:51:35.126354",
+    "last_updated": "2026-05-13T22:57:00.113666",
     "total_snapshots": 68,
     "date_range": {
       "start": "2026-03-05",
@@ -3695,12 +3695,12 @@
     },
     {
       "date": "2026-05-13",
-      "total_jobs": 1011,
+      "total_jobs": 1001,
       "categories": {},
       "tiers": {
         "unicorn": 471,
-        "other": 394,
-        "faang_plus": 146
+        "other": 385,
+        "faang_plus": 145
       },
       "top_companies": [
         {
@@ -3713,7 +3713,7 @@
         },
         {
           "company": "Affirm",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "ClickHouse",
@@ -3744,9 +3744,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 220,
-      "avg_jobs_per_company": 4.6,
-      "timestamp": "2026-05-13T21:51:35.125479"
+      "unique_companies": 217,
+      "avg_jobs_per_company": 4.61,
+      "timestamp": "2026-05-13T22:57:00.112874"
     }
   ]
 }
