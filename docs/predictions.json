@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1028,
-      "change_percent": -1.53
+      "total_jobs": 1058,
+      "change_percent": 1.54
     },
     "30_days": {
-      "total_jobs": 1058,
-      "change_percent": 1.34
+      "total_jobs": 1085,
+      "change_percent": 4.13
     }
   },
   "growing_categories": [
     "Non-FAANG/Unicorn (Mid-market)",
-    "AI/Machine Learning Infrastructure",
-    "Cybersecurity"
+    "Infrastructure & Cloud",
+    "AI/ML Engineering"
   ],
   "declining_categories": [
-    "FAANG+ Core Engineering",
-    "Generalist Software Development",
-    "Legacy Enterprise Systems"
+    "Legacy Enterprise Software",
+    "Generalist IT Support",
+    "Non-technical Operations"
   ],
-  "confidence": 72,
+  "confidence": 75,
   "insights": [
-    "The market shows a strong breakout trend in the last 7 days, with the total job count reaching a 30-day high of 1044, suggesting a recovery in hiring sentiment.",
-    "While FAANG+ hiring remains volatile and stagnant, the 'Other' company tier has shown consistent growth, indicating that smaller firms and startups are currently driving the net increase in new graduate opportunities.",
-    "The 7-day prediction accounts for a minor cooling-off period following the recent peak, while the 30-day outlook remains positive as firms finalize their end-of-quarter hiring pipelines."
+    "The market has broken through the 1,000-job resistance level, showing a clear upward trajectory in the final week of the data set.",
+    "Growth is currently being driven by 'Other' tier companies, suggesting that mid-market and non-unicorn firms are aggressively expanding their new graduate intake.",
+    "While FAANG+ and Unicorn hiring remains stable, the overall momentum indicates a broader market recovery rather than reliance on a single sector."
   ],
-  "generated_at": "2026-05-12T04:12:27.876174",
-  "data_points": 67,
+  "generated_at": "2026-05-13T05:40:26.672779",
+  "data_points": 68,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-12"
+    "end": "2026-05-13"
   }
 }

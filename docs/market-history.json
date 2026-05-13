@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-13T01:49:29.016519",
+    "last_updated": "2026-05-13T05:39:46.276140",
     "total_snapshots": 68,
     "date_range": {
       "start": "2026-03-05",
@@ -3695,12 +3695,12 @@
     },
     {
       "date": "2026-05-13",
-      "total_jobs": 1010,
+      "total_jobs": 1042,
       "categories": {},
       "tiers": {
-        "other": 396,
-        "faang_plus": 146,
-        "unicorn": 468
+        "unicorn": 469,
+        "faang_plus": 153,
+        "other": 420
       },
       "top_companies": [
         {
@@ -3709,14 +3709,18 @@
         },
         {
           "company": "Waymo",
-          "jobs": 46
+          "jobs": 47
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
           "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Accenture",
           "jobs": 23
         },
         {
@@ -3738,15 +3742,11 @@
         {
           "company": "Oscar Health",
           "jobs": 17
-        },
-        {
-          "company": "Figma",
-          "jobs": 17
         }
       ],
-      "unique_companies": 220,
-      "avg_jobs_per_company": 4.59,
-      "timestamp": "2026-05-13T01:49:29.015771"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 4.55,
+      "timestamp": "2026-05-13T05:39:46.274522"
     }
   ]
 }
