@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-13T08:25:21.461531",
+    "last_updated": "2026-05-13T11:08:03.569411",
     "total_snapshots": 68,
     "date_range": {
       "start": "2026-03-05",
@@ -3695,12 +3695,12 @@
     },
     {
       "date": "2026-05-13",
-      "total_jobs": 1037,
+      "total_jobs": 1016,
       "categories": {},
       "tiers": {
         "unicorn": 469,
-        "other": 414,
-        "faang_plus": 154
+        "other": 404,
+        "faang_plus": 143
       },
       "top_companies": [
         {
@@ -3728,10 +3728,6 @@
           "jobs": 21
         },
         {
-          "company": "Accenture",
-          "jobs": 20
-        },
-        {
           "company": "Abnormal Security",
           "jobs": 18
         },
@@ -3742,11 +3738,15 @@
         {
           "company": "Oscar Health",
           "jobs": 17
+        },
+        {
+          "company": "Figma",
+          "jobs": 17
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 4.57,
-      "timestamp": "2026-05-13T08:25:21.460574"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 4.4,
+      "timestamp": "2026-05-13T11:08:03.568402"
     }
   ]
 }

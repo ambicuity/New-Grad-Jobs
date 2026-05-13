@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 May 2026 08:25:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 11:08:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist, Ads at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/6580815</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 13 May 2026 09:25:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/6580815</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Ads at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7607124</link>
+      <description>New grad role at Reddit in Remote - Ontario, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 13 May 2026 09:25:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7607124</guid>
+    </item>
+    <item>
+      <title>iOS Software Engineer, Contributions at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/7896378</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Wed, 13 May 2026 09:23:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/7896378</guid>
+    </item>
     <item>
       <title>Software Engineer, Trip Platform at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7905678</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
       <pubDate>Wed, 13 May 2026 03:40:22 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7367785</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Power Systems (Low Voltage) at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7572411</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 13 May 2026 03:40:22 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7572411</guid>
-    </item>
-    <item>
-      <title>Software Engineer - C# / .NET + Angular+ Cloud at Optum</title>
-      <link>https://in.indeed.com/viewjob?jk=d7a85c193bcdabc9</link>
-      <description>New grad role at Optum in KA, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d7a85c193bcdabc9</guid>
-    </item>
-    <item>
-      <title>Software Engineer - AI/ML at Acuiti Labs</title>
-      <link>https://in.indeed.com/viewjob?jk=571c3aa2bd8a14ff</link>
-      <description>New grad role at Acuiti Labs in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=571c3aa2bd8a14ff</guid>
     </item>
   </channel>
 </rss>
