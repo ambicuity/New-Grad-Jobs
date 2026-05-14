@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 May 2026 20:55:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 22:06:09 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8543668002?gh_jid=8543668002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 14 May 2026 21:57:12 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8543668002?gh_jid=8543668002</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8543671002?gh_jid=8543671002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 14 May 2026 21:57:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8543671002?gh_jid=8543671002</guid>
+    </item>
+    <item>
+      <title>Embedded Security Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8543670002?gh_jid=8543670002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 14 May 2026 21:57:10 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8543670002?gh_jid=8543670002</guid>
+    </item>
+    <item>
+      <title>Business Technology Engineer II at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7895112?gh_jid=7895112</link>
+      <description>New grad role at Samsara in Remote - US. Category: Other</description>
+      <pubDate>Thu, 14 May 2026 21:38:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7895112?gh_jid=7895112</guid>
+    </item>
     <item>
       <title>Full Stack Software Engineer (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8501225002?gh_jid=8501225002</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
       <pubDate>Thu, 14 May 2026 17:08:51 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7908923</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Thu, 14 May 2026 17:08:51 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Core Technology at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
-      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
-      <pubDate>Thu, 14 May 2026 17:08:51 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Thu, 14 May 2026 17:08:51 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Fee Insights at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7436194</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Thu, 14 May 2026 17:08:51 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7436194</guid>
     </item>
   </channel>
 </rss>
