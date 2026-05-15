@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 04:22:39 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 07:43:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer, BizTech(Python, LLM, GenAI, MCP) at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7902817?gh_jid=7902817</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 15 May 2026 05:09:37 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7902817?gh_jid=7902817</guid>
+    </item>
     <item>
       <title>Applied Research Scientist, 3D Object Detection  (PhD New Grad) at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7467839</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Nimble Solutions in TS, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30c133b3c142b156</guid>
-    </item>
-    <item>
-      <title>Junior Engineer at Global Power Products</title>
-      <link>https://www.indeed.com/viewjob?jk=db9fceb5f6cf3513</link>
-      <description>New grad role at Global Power Products in Lawrenceville, GA, US. Category: Hardware Engineering</description>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=db9fceb5f6cf3513</guid>
     </item>
   </channel>
 </rss>
