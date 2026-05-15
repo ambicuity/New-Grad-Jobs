@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T16:26:07.369324",
+    "last_updated": "2026-05-15T18:04:08.542595",
     "total_snapshots": 70,
     "date_range": {
       "start": "2026-03-05",
@@ -3805,12 +3805,12 @@
     },
     {
       "date": "2026-05-15",
-      "total_jobs": 964,
+      "total_jobs": 999,
       "categories": {},
       "tiers": {
-        "unicorn": 475,
-        "other": 360,
-        "faang_plus": 129
+        "unicorn": 476,
+        "faang_plus": 129,
+        "other": 394
       },
       "top_companies": [
         {
@@ -3820,6 +3820,10 @@
         {
           "company": "Waymo",
           "jobs": 47
+        },
+        {
+          "company": "Accenture",
+          "jobs": 31
         },
         {
           "company": "Affirm",
@@ -3848,15 +3852,11 @@
         {
           "company": "Oscar Health",
           "jobs": 17
-        },
-        {
-          "company": "Boeing",
-          "jobs": 16
         }
       ],
-      "unique_companies": 208,
-      "avg_jobs_per_company": 4.63,
-      "timestamp": "2026-05-15T16:26:07.368603"
+      "unique_companies": 207,
+      "avg_jobs_per_company": 4.83,
+      "timestamp": "2026-05-15T18:04:08.541103"
     }
   ]
 }
