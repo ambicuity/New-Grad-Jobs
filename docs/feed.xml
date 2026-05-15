@@ -5,14 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 18:04:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 19:54:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Software Engineer at Upstart</title>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 15 May 2026 19:17:47 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 15 May 2026 19:17:47 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Lifecycle at Upstart</title>
       <link>https://careers.upstart.com/jobs?gh_jid=7913770</link>
       <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 17:39:15 +0000</pubDate>
+      <pubDate>Fri, 15 May 2026 19:14:49 +0000</pubDate>
       <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7913770</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7296759</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 15 May 2026 19:10:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7296759</guid>
+    </item>
+    <item>
+      <title>Backend Software Engineer II at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7438937</link>
+      <description>New grad role at Checkr in Denver, Colorado, United States; San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 15 May 2026 19:10:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7438937</guid>
+    </item>
+    <item>
+      <title>AV &amp; Event Engineer L4 at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7927688</link>
+      <description>New grad role at Twilio in Remote - US. Category: Other</description>
+      <pubDate>Fri, 15 May 2026 18:54:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7927688</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7891685</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 15 May 2026 18:35:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7891685</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 15 May 2026 18:01:37 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
     </item>
     <item>
       <title>Software Engineer (L3) at Twilio</title>
@@ -307,55 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466529</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Driving Behaviors at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7351058</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7351058</guid>
-    </item>
-    <item>
-      <title>Software Engineer, GPU at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7554830</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7554830</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Labeling Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7416895</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7416895</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Marketplace ML Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905693</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States . Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905693</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Marketplace Pricing at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905643</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States  . Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905643</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Model Lifecycle at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7609435</link>
-      <description>New grad role at Waymo in Kirkland, Washington, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7609435</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Multiverse at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7531397</link>
-      <description>New grad role at Waymo in San Francisco, CA, USA; Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7531397</guid>
     </item>
   </channel>
 </rss>

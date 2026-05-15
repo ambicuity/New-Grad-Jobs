@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T18:04:08.542595",
+    "last_updated": "2026-05-15T19:54:28.907215",
     "total_snapshots": 70,
     "date_range": {
       "start": "2026-03-05",
@@ -3805,12 +3805,12 @@
     },
     {
       "date": "2026-05-15",
-      "total_jobs": 999,
+      "total_jobs": 996,
       "categories": {},
       "tiers": {
-        "unicorn": 476,
-        "faang_plus": 129,
-        "other": 394
+        "unicorn": 475,
+        "other": 388,
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -3823,11 +3823,11 @@
         },
         {
           "company": "Accenture",
-          "jobs": 31
+          "jobs": 28
         },
         {
           "company": "Affirm",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "ClickHouse",
@@ -3854,9 +3854,9 @@
           "jobs": 17
         }
       ],
-      "unique_companies": 207,
-      "avg_jobs_per_company": 4.83,
-      "timestamp": "2026-05-15T18:04:08.541103"
+      "unique_companies": 217,
+      "avg_jobs_per_company": 4.59,
+      "timestamp": "2026-05-15T19:54:28.906456"
     }
   ]
 }
