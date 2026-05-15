@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 07:43:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 10:09:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 2 at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7710602003?gh_jid=7710602003</link>
+      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 15 May 2026 10:04:53 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7710602003?gh_jid=7710602003</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7658027</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Fri, 15 May 2026 09:58:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7658027</guid>
+    </item>
     <item>
       <title>Systems Engineer, BizTech(Python, LLM, GenAI, MCP) at Airbnb</title>
       <link>https://careers.airbnb.com/positions/7902817?gh_jid=7902817</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Fri, 15 May 2026 03:12:56 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7572411</guid>
-    </item>
-    <item>
-      <title>Jr.Software Engineer at Nimble Solutions</title>
-      <link>https://in.indeed.com/viewjob?jk=94c8697c118d892f</link>
-      <description>New grad role at Nimble Solutions in TS, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=94c8697c118d892f</guid>
-    </item>
-    <item>
-      <title>Jr DevOps Engineer at Nimble Solutions</title>
-      <link>https://in.indeed.com/viewjob?jk=30c133b3c142b156</link>
-      <description>New grad role at Nimble Solutions in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30c133b3c142b156</guid>
     </item>
   </channel>
 </rss>
