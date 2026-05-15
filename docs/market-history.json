@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T19:54:28.907215",
+    "last_updated": "2026-05-15T20:56:01.561651",
     "total_snapshots": 70,
     "date_range": {
       "start": "2026-03-05",
@@ -3805,12 +3805,12 @@
     },
     {
       "date": "2026-05-15",
-      "total_jobs": 996,
+      "total_jobs": 1007,
       "categories": {},
       "tiers": {
+        "other": 397,
         "unicorn": 475,
-        "other": 388,
-        "faang_plus": 133
+        "faang_plus": 135
       },
       "top_companies": [
         {
@@ -3822,7 +3822,7 @@
           "jobs": 47
         },
         {
-          "company": "Accenture",
+          "company": "University of Ottawa",
           "jobs": 28
         },
         {
@@ -3832,6 +3832,10 @@
         {
           "company": "ClickHouse",
           "jobs": 24
+        },
+        {
+          "company": "Accenture",
+          "jobs": 20
         },
         {
           "company": "Lyft",
@@ -3848,15 +3852,11 @@
         {
           "company": "Figma",
           "jobs": 17
-        },
-        {
-          "company": "Oscar Health",
-          "jobs": 17
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 4.59,
-      "timestamp": "2026-05-15T19:54:28.906456"
+      "unique_companies": 214,
+      "avg_jobs_per_company": 4.71,
+      "timestamp": "2026-05-15T20:56:01.560691"
     }
   ]
 }
