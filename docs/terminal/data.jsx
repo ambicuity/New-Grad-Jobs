@@ -1,0 +1,125 @@
+// Real-data adapter for the `newgrad.sh` terminal design.
+// Loads docs/jobs.json (scraped, ~1k jobs) and maps to the shape that
+// dashboard.jsx expects (the same shape the original mock data.jsx used).
+//
+// Exposes on window: NGJOBS, TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
+//                    fmtComp, daysLeft, deadlineLabel, deadlineHot,
+//                    NGJOBS_READY (Promise that resolves once jobs are loaded).
+
+const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', FE:'frontend', BE:'backend', INFRA:'infra', SEC:'security', MOBILE:'mobile' };
+const SIZE_LABEL = { S:'<50', M:'50–500', L:'500–5k', XL:'5k+' };
+const RMT_LABEL  = { remote:'remote', hybrid:'hybrid', onsite:'onsite' };
+
+function fmtComp(c) {
+  if (!Array.isArray(c) || c[0] == null || c[1] == null) return '—';
+  return `$${c[0]}–${c[1]}k`;
+}
+function daysLeft(dl) {
+  if (!dl) return 999;
+  const t = new Date(dl) - new Date();
+  return Math.round(t / 86400000);
+}
+function deadlineLabel(dl) {
+  const d = daysLeft(dl);
+  if (d < 0) return 'closed';
+  if (d === 0) return 'today';
+  if (d < 7) return `${d}d left`;
+  if (d < 30) return `${Math.floor(d/7)}w left`;
+  return `${Math.floor(d/30)}mo left`;
+}
+function deadlineHot(dl) { return daysLeft(dl) <= 14; }
+
+// ── Mapping helpers ──────────────────────────────────────────────────────
+
+const CATEGORY_TYPE = {
+  software_engineering: 'SWE',
+  data_ml:              'ML',
+  data_engineering:     'DATA',
+  infrastructure_sre:   'INFRA',
+  hardware:             'INFRA',
+  other:                'SWE',
+};
+
+const TIER_SIZE = {
+  faang_plus: 'XL',
+  unicorn:    'L',
+  other:      'M',
+};
+
+function ageString(postedAt) {
+  if (!postedAt) return '—';
+  const ms = Date.now() - new Date(postedAt).getTime();
+  if (isNaN(ms) || ms < 0) return 'now';
+  const hours = Math.floor(ms / 3600000);
+  if (hours < 1)  return 'now';
+  if (hours < 24) return `${hours}h`;
+  const days = Math.floor(hours / 24);
+  if (days < 7)   return `${days}d`;
+  if (days < 30)  return `${Math.floor(days/7)}w`;
+  return `${Math.floor(days/30)}mo`;
+}
+
+function addDays(isoString, n) {
+  const d = isoString ? new Date(isoString) : new Date();
+  d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+function mapJob(j) {
+  const catId = (j.category || {}).id || 'other';
+  const tier  = (j.company_tier || {}).tier || 'other';
+  const flags = j.flags || {};
+  const noSponsorship = flags.no_sponsorship === true || flags.us_citizenship_required === true;
+  return {
+    id:      j.id,
+    co:      j.company || '—',
+    role:    j.title   || '—',
+    loc:     j.location || '—',
+    url:     j.url || '',
+    rmt:     'onsite',                       // not in source data
+    visa:    !noSponsorship,
+    size:    TIER_SIZE[tier] || 'M',
+    stack:   ['—'],                          // not in source data
+    cohort:  '26',                           // all jobs are new-grad
+    comp:    [null, null],                   // not in source data
+    dl:      addDays(j.posted_at, 90),       // synthetic 90-day window
+    type:    CATEGORY_TYPE[catId] || 'SWE',
+    posted:  ageString(j.posted_at),
+    level:   'entry',
+    desc:    `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
+  };
+}
+
+// ── Bootstrap ────────────────────────────────────────────────────────────
+
+let NGJOBS = [];
+window.NGJOBS = NGJOBS;
+
+const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
+  .then(r => {
+    if (!r.ok) throw new Error(`jobs.json: HTTP ${r.status}`);
+    return r.json();
+  })
+  .then(d => {
+    // Real jobs.json contains duplicate ids (same role on multiple sources).
+    // Disambiguate by appending an index suffix when needed.
+    const seen = new Map();
+    NGJOBS = (d.jobs || []).map(mapJob).map(j => {
+      const n = (seen.get(j.id) || 0) + 1;
+      seen.set(j.id, n);
+      return n === 1 ? j : { ...j, id: `${j.id}#${n}` };
+    });
+    window.NGJOBS = NGJOBS;
+    return NGJOBS;
+  })
+  .catch(err => {
+    console.error('[terminal] failed to load jobs.json:', err);
+    window.NGJOBS = [];
+    return [];
+  });
+
+Object.assign(window, {
+  TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
+  fmtComp, daysLeft, deadlineLabel, deadlineHot,
+  NGJOBS_READY,
+});
