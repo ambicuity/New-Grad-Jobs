@@ -77,13 +77,30 @@ return.
 
 ## 2026-05-16 — New Greenhouse additions
 
-3 verified-live boards added:
+13 verified-live boards added across two passes.
+
+**First pass** (high-volume, well-known employers):
 
 | Company | Slug | Job count (probe) |
 |---|---|---|
 | Anduril Industries | `andurilindustries` | 1,944 |
 | Block | `block` | 161 |
 | xAI | `xai` | 220 |
+
+**Second pass** (broader candidate sweep across AI infra, devtools, fintech, healthtech, dev infra):
+
+| Company | Slug | Job count (probe) |
+|---|---|---|
+| Glean | `gleanwork` | 180 |
+| BridgeBio | `bridgebio` | 93 |
+| Together AI | `togetherai` | 56 |
+| Cribl | `cribl` | 54 |
+| Tailscale | `tailscale` | 50 |
+| Sweetgreen | `sweetgreen` | 43 |
+| Recursion | `recursionpharmaceuticals` | 34 |
+| Maven Clinic | `mavenclinic` | 28 |
+| Squarespace | `squarespace` | 27 |
+| Pulley | `pulley` | 4 |
 
 ## Not added (no public ATS, would need bespoke scraping)
 
