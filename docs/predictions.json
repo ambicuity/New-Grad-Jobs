@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1021,
-      "change_percent": 0.99
+      "total_jobs": 1012,
+      "change_percent": 1.91
     },
     "30_days": {
-      "total_jobs": 1045,
-      "change_percent": 3.36
+      "total_jobs": 1035,
+      "change_percent": 4.23
     }
   },
   "growing_categories": [
-    "Software Engineering",
-    "Data Analytics",
-    "Cloud Infrastructure"
+    "faang_plus",
+    "unicorn",
+    "infrastructure_engineering"
   ],
   "declining_categories": [
-    "QA/Testing",
-    "Technical Support",
-    "General IT Operations"
+    "other_mid_market",
+    "non_tech_sectors",
+    "legacy_it_services"
   ],
   "confidence": 75,
   "insights": [
-    "The market has shown a clear upward trajectory over the last 10 days, with the 7-day average (1012) consistently outperforming the 30-day average (992), signaling sustained momentum.",
-    "While FAANG+ hiring remains conservative and stable, the 'Unicorn' and 'Other' tiers are driving the volume growth, suggesting that mid-market and high-growth startups are currently more active in new graduate recruitment.",
-    "The consistent climb above the 1000-job threshold suggests a shift in sentiment, likely driven by end-of-quarter hiring cycles and preparation for upcoming seasonal internship and entry-level cohorts."
+    "The market shows a clear upward trend in the last 10 days, consistently holding above the 30-day average of 992 jobs.",
+    "Growth is currently driven by FAANG+ and Unicorn tiers, suggesting that top-tier companies are resuming or increasing new graduate headcount despite broader economic uncertainty.",
+    "The 7-day average (1006) exceeding the 30-day average (992) indicates positive momentum, signaling a potential expansion phase for entry-level hiring over the next month."
   ],
-  "generated_at": "2026-05-15T00:13:56.021683",
-  "data_points": 70,
+  "generated_at": "2026-05-16T00:06:01.309036",
+  "data_points": 71,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-15"
+    "end": "2026-05-16"
   }
 }
