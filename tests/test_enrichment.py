@@ -25,6 +25,7 @@ from update_jobs import (
     get_company_tier,
     enrich_jobs,
     extract_compensation,
+    fetch_greenhouse_jobs,
     format_posted_date,
     get_iso_date,
 )
@@ -475,3 +476,72 @@ class TestExtractCompensation:
         r = extract_compensation(text)
         assert r is not None
         assert r['min'] == 100000 and r['max'] == 140000
+
+
+# ---------------------------------------------------------------------------
+# fetch_greenhouse_jobs: regression — must request ?content=true so descriptions
+# (and therefore comp / closed-flag detection) are populated.
+# ---------------------------------------------------------------------------
+
+class TestGreenhouseFetcherContentFlag:
+    """Without ?content=true the GH API omits descriptions — silently zeros
+    out comp extraction. Lock in the auto-append behavior."""
+
+    def _mock_response(self, status=200, json_body=None):
+        m = type('R', (), {})()
+        m.status_code = status
+        m.ok = 200 <= status < 300
+        m.json = lambda: (json_body or {'jobs': []})
+        m.raise_for_status = lambda: None
+        m.text = ''
+        return m
+
+    def test_appends_content_true_when_missing(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Affirm',
+                                  'https://boards-api.greenhouse.io/v1/boards/affirm/jobs')
+        assert 'content=true' in captured['url']
+
+    def test_preserves_existing_query_params(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Stripe',
+                                  'https://boards-api.greenhouse.io/v1/boards/stripe/jobs?foo=bar')
+        assert 'foo=bar' in captured['url']
+        assert 'content=true' in captured['url']
+
+    def test_does_not_double_append(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Lever',
+                                  'https://boards-api.greenhouse.io/v1/boards/lever/jobs?content=true')
+        # exactly one occurrence
+        assert captured['url'].count('content=true') == 1
+
+    def test_extracts_comp_from_returned_content(self):
+        # End-to-end: when GH returns content, comp shows up in the result dict.
+        body = {'jobs': [{
+            'id': 1, 'title': 'Software Engineer, New Grad',
+            'location': {'name': 'San Francisco, CA'},
+            'absolute_url': 'https://example.com/job/1',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': 'The base salary range for this role is $120,000 - $180,000.',
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('TestCo',
+                                         'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        assert len(jobs) == 1
+        assert jobs[0]['comp'] == {'min': 120000, 'max': 180000,
+                                   'currency': 'USD', 'source': 'posting'}

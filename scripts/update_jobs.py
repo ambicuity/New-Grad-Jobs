@@ -824,6 +824,12 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
         print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
         return jobs
 
+    # Greenhouse omits the description body unless ?content=true is set.
+    # Config urls don't include this flag, so add it here so comp/flags/closed
+    # detectors have something to read.
+    if 'content=' not in url:
+        url = url + ('&' if '?' in url else '?') + 'content=true'
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
