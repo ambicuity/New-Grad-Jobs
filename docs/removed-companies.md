@@ -102,6 +102,65 @@ return.
 | Squarespace | `squarespace` | 27 |
 | Pulley | `pulley` | 4 |
 
+## 2026-05-16 — Ashby ATS added (new fetcher)
+
+25 boards added in first pass after writing `fetch_ashby_jobs()`:
+
+| Company | Slug | Job count (probe) |
+|---|---|---|
+| OpenAI | `openai` | 678 |
+| Crusoe | `crusoe` | 324 |
+| Mistral AI | `mistral` | 178 |
+| Notion | `notion` | 140 |
+| Cohere | `cohere` | 129 |
+| Sierra | `sierra` | 126 |
+| LangChain | `langchain` | 96 |
+| Cursor | `cursor` | 88 |
+| Lovable | `lovable` | 82 |
+| Perplexity | `perplexity` | 62 |
+| Baseten | `baseten` | 60 |
+| Ashby | `ashby` | 60 |
+| Supabase | `supabase` | 42 |
+| Sentry | `sentry` | 39 |
+| Modal | `modal` | 29 |
+| Attio | `attio` | 29 |
+| Campfire | `campfire` | 24 |
+| Vapi | `vapi` | 24 |
+| Linear | `linear` | 23 |
+| Qualified | `qualified` | 10 |
+| Browserbase | `browserbase` | 9 |
+| Anyscale | `anyscale` | 7 |
+| Pinecone | `pinecone` | 7 |
+| Weaviate | `weaviate` | 6 |
+| Turbopuffer | `turbopuffer` | 4 |
+
+18 more added in second pass (broader probe):
+
+| Company | Slug | Job count (probe) |
+|---|---|---|
+| Snowflake | `snowflake` | 423 |
+| ElevenLabs | `elevenlabs` | 139 |
+| Decagon | `decagon` | 108 |
+| Plaid | `plaid` | 88 |
+| Commure | `commure` | 85 |
+| Suno | `suno` | 43 |
+| Docker | `docker` | 42 |
+| Astronomer | `astronomer` | 27 |
+| Poolside | `poolside` | 16 |
+| Cradle Bio | `cradlebio` | 11 |
+| Airbyte | `airbyte` | 9 |
+| Railway | `railway` | 9 |
+| Warp | `warp` | 8 |
+| Statsig | `statsig` | 7 |
+| Reka | `reka` | 6 |
+| Stytch | `stytch` | 5 |
+| Prefect | `prefect` | 4 |
+| Runway | `runway` | 4 |
+
+Note: Plaid (previously removed from Lever) and Runway (previously
+removed from Greenhouse as `runwayml` 404) are both alive on Ashby
+and now restored.
+
 ## Not added (no public ATS, would need bespoke scraping)
 
 These employers were requested but don't expose a public Greenhouse/Lever/Workday
