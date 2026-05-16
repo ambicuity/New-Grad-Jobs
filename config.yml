@@ -372,6 +372,62 @@ apis:
       # Note: Coursera, Twitch, Grammarly, Figma no longer available on Lever
       # Many other companies have moved away from Lever API
 
+  ashby:
+    # Ashby Posting API — modern ATS used by many AI labs and devtools companies.
+    # Endpoint: https://api.ashbyhq.com/posting-api/job-board/<slug>?includeCompensation=true
+    # Each slug was verified live on 2026-05-16.
+    companies:
+      - name: "OpenAI"
+        url: "https://api.ashbyhq.com/posting-api/job-board/openai"
+      - name: "Crusoe"
+        url: "https://api.ashbyhq.com/posting-api/job-board/crusoe"
+      - name: "Mistral AI"
+        url: "https://api.ashbyhq.com/posting-api/job-board/mistral"
+      - name: "Notion"
+        url: "https://api.ashbyhq.com/posting-api/job-board/notion"
+      - name: "Cohere"
+        url: "https://api.ashbyhq.com/posting-api/job-board/cohere"
+      - name: "Sierra"
+        url: "https://api.ashbyhq.com/posting-api/job-board/sierra"
+      - name: "LangChain"
+        url: "https://api.ashbyhq.com/posting-api/job-board/langchain"
+      - name: "Cursor"
+        url: "https://api.ashbyhq.com/posting-api/job-board/cursor"
+      - name: "Lovable"
+        url: "https://api.ashbyhq.com/posting-api/job-board/lovable"
+      - name: "Perplexity"
+        url: "https://api.ashbyhq.com/posting-api/job-board/perplexity"
+      - name: "Baseten"
+        url: "https://api.ashbyhq.com/posting-api/job-board/baseten"
+      - name: "Ashby"
+        url: "https://api.ashbyhq.com/posting-api/job-board/ashby"
+      - name: "Supabase"
+        url: "https://api.ashbyhq.com/posting-api/job-board/supabase"
+      - name: "Sentry"
+        url: "https://api.ashbyhq.com/posting-api/job-board/sentry"
+      - name: "Modal"
+        url: "https://api.ashbyhq.com/posting-api/job-board/modal"
+      - name: "Attio"
+        url: "https://api.ashbyhq.com/posting-api/job-board/attio"
+      - name: "Campfire"
+        url: "https://api.ashbyhq.com/posting-api/job-board/campfire"
+      - name: "Vapi"
+        url: "https://api.ashbyhq.com/posting-api/job-board/vapi"
+      - name: "Linear"
+        url: "https://api.ashbyhq.com/posting-api/job-board/linear"
+      - name: "Qualified"
+        url: "https://api.ashbyhq.com/posting-api/job-board/qualified"
+      - name: "Browserbase"
+        url: "https://api.ashbyhq.com/posting-api/job-board/browserbase"
+      - name: "Anyscale"
+        url: "https://api.ashbyhq.com/posting-api/job-board/anyscale"
+      - name: "Pinecone"
+        url: "https://api.ashbyhq.com/posting-api/job-board/pinecone"
+      - name: "Weaviate"
+        url: "https://api.ashbyhq.com/posting-api/job-board/weaviate"
+      - name: "Turbopuffer"
+        url: "https://api.ashbyhq.com/posting-api/job-board/turbopuffer"
+
   google:
     # P5: Google Careers API deprecated (returns 404 since late 2024).
     # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.

@@ -132,9 +132,13 @@ def create_optimized_session() -> requests.Session:
     session.mount("http://", adapter)
     session.mount("https://", adapter)
 
-    # Set default headers for compression and keep-alive with extended timeout
+    # Set default headers for compression and keep-alive with extended timeout.
+    # NOTE: 'br' (Brotli) is intentionally excluded — requests doesn't decode it
+    # natively, and some origins (notably Ashby/Cloudflare) preferred br over
+    # gzip when offered, producing un-parseable bodies. gzip/deflate are
+    # universally supported and sufficient.
     session.headers.update({
-        'Accept-Encoding': 'gzip, deflate, br',  # Request compressed responses
+        'Accept-Encoding': 'gzip, deflate',
         'Connection': 'keep-alive',  # Reuse TCP connections
         'Keep-Alive': 'timeout=60, max=2000',  # Keep connections alive longer
         'User-Agent': 'NewGradJobs-Aggregator/3.0 (10K-Companies-Optimized)'
@@ -982,6 +986,139 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
+
+def fetch_ashby_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+    """Fetch jobs from Ashby's public Posting API.
+
+    Ashby is a modern ATS used by many AI labs and devtools companies
+    (OpenAI, Cohere, Mistral, Notion, Linear, Cursor, Perplexity, etc.).
+    Public endpoint: https://api.ashbyhq.com/posting-api/job-board/<slug>
+    Append ?includeCompensation=true to get structured compensation when
+    the company opts in.
+    """
+    jobs = []
+
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
+    if 'includeCompensation' not in url:
+        url = url + ('&' if '?' in url else '?') + 'includeCompensation=true'
+
+    for attempt in range(max_retries + 1):
+        try:
+            if attempt > 0:
+                print(f"  🔄 Retry {attempt} for {company_name}...")
+                time.sleep(1)
+            print(f"Fetching jobs from {company_name} (Ashby)...")
+            response = limited_get(url, timeout=timeout)
+
+            if response.status_code == 403:
+                admitted = SOURCE_COOLDOWN.try_admit(url)
+                if admitted:
+                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                else:
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active")
+                break
+
+            response.raise_for_status()
+            data = response.json()
+            if not isinstance(data, dict) or 'jobs' not in data:
+                print(f"  ⚠️  {company_name}: Unexpected API response format")
+                continue
+
+            for job in data.get('jobs', []):
+                description = job.get('descriptionHtml', '') or job.get('descriptionPlain', '') or ''
+                # Prefer Ashby's structured compensation when present.
+                ashby_comp = job.get('compensation') or {}
+                comp = None
+                summary = ashby_comp.get('compensationTierSummary') if isinstance(ashby_comp, dict) else None
+                tiers = ashby_comp.get('compensationTiers') if isinstance(ashby_comp, dict) else None
+                if isinstance(tiers, list) and tiers:
+                    # Each tier has currencyCode, minValue, maxValue, interval ('per-year' etc.)
+                    for t in tiers:
+                        try:
+                            interval = (t.get('interval') or '').lower()
+                            currency = (t.get('currencyCode') or 'USD').upper()
+                            lo, hi = t.get('minValue'), t.get('maxValue')
+                            if currency == 'USD' and 'year' in interval and lo and hi:
+                                if 30_000 <= int(lo) <= int(hi) <= 600_000:
+                                    comp = {'min': int(lo), 'max': int(hi),
+                                            'currency': 'USD', 'source': 'ashby'}
+                                    break
+                        except (TypeError, ValueError):
+                            continue
+                # Fall back to description regex when no structured comp.
+                if not comp:
+                    comp = extract_compensation(description)
+
+                # Location: prefer addressLocality, fallback to location field.
+                addr = (job.get('address') or {}).get('postalAddress') or {}
+                loc_parts = [addr.get(k) for k in ('addressLocality', 'addressRegion', 'addressCountry')]
+                location = ', '.join([p for p in loc_parts if p]) or job.get('location') or 'Remote'
+
+                jobs.append({
+                    'company': company_name,
+                    'title': job.get('title', ''),
+                    'location': location,
+                    'url': job.get('jobUrl', '') or job.get('applyUrl', ''),
+                    'posted_at': job.get('publishedAt'),
+                    'source': 'Ashby',
+                    'description': description[:500] if description else '',
+                    'comp': comp,
+                })
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            break
+
+        except requests.exceptions.Timeout:
+            if attempt < max_retries:
+                print(f"  ⏱️  {company_name} request timed out, retrying...")
+                continue
+            print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+        except requests.exceptions.HTTPError as e:
+            status_code = e.response.status_code if e.response is not None else None
+            if status_code is not None and not is_retryable_status(status_code):
+                print(f"  ⚠️  {company_name}: HTTP {status_code} (non-retryable)")
+                break
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except requests.exceptions.RequestException as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
+
+    return jobs
+
+
+def fetch_all_ashby_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
+    """Run fetch_ashby_jobs across all configured Ashby companies in parallel."""
+    if not companies:
+        return []
+    workers = max_workers or min(10, len(companies))
+    all_jobs: List[Dict[str, Any]] = []
+
+    def _fetch(company):
+        return fetch_ashby_jobs(company['name'], company['url'])
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(_fetch, c): c for c in companies}
+        for fut in as_completed(futures):
+            try:
+                all_jobs.extend(fut.result())
+            except Exception as e:
+                co = futures[fut].get('name', '<unknown>')
+                print(f"  ❌ Ashby fetch crashed for {co}: {e}")
+    return all_jobs
+
 
 def fetch_google_jobs(
     search_terms: List[str],
@@ -3004,6 +3141,13 @@ def main():
             futures['lever'] = executor.submit(
                 fetch_all_lever_jobs_parallel,
                 config['apis']['lever']['companies']
+            )
+
+        # Submit Ashby parallel fetch
+        if 'ashby' in config['apis'] and config['apis']['ashby'].get('companies'):
+            futures['ashby'] = executor.submit(
+                fetch_all_ashby_jobs_parallel,
+                config['apis']['ashby']['companies']
             )
 
         # Submit Google parallel fetch (P5: gated on enabled flag)

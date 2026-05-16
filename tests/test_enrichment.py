@@ -26,6 +26,7 @@ from update_jobs import (
     enrich_jobs,
     extract_compensation,
     fetch_greenhouse_jobs,
+    fetch_ashby_jobs,
     format_posted_date,
     get_iso_date,
 )
@@ -545,3 +546,110 @@ class TestGreenhouseFetcherContentFlag:
         assert len(jobs) == 1
         assert jobs[0]['comp'] == {'min': 120000, 'max': 180000,
                                    'currency': 'USD', 'source': 'posting'}
+
+
+# ---------------------------------------------------------------------------
+# fetch_ashby_jobs
+# ---------------------------------------------------------------------------
+
+class TestAshbyFetcher:
+    """The Ashby Posting API gives both structured compensation AND HTML
+    descriptions. Both code paths need coverage."""
+
+    def _mock_response(self, status=200, json_body=None):
+        m = type('R', (), {})()
+        m.status_code = status
+        m.ok = 200 <= status < 300
+        m.json = lambda: (json_body or {'jobs': []})
+        m.raise_for_status = lambda: None
+        return m
+
+    def test_appends_include_compensation(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        assert 'includeCompensation=true' in captured['url']
+
+    def test_extracts_structured_compensation(self):
+        body = {'jobs': [{
+            'id': 'a1', 'title': 'Software Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/openai/a1',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'address': {'postalAddress': {'addressLocality': 'San Francisco',
+                                          'addressRegion': 'California',
+                                          'addressCountry': 'United States'}},
+            'descriptionHtml': '<p>About the team…</p>',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'USD', 'minValue': 245000, 'maxValue': 385000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        assert len(jobs) == 1
+        # Structured comp from Ashby beats regex; source must be 'ashby'.
+        assert jobs[0]['comp'] == {'min': 245000, 'max': 385000,
+                                   'currency': 'USD', 'source': 'ashby'}
+        # Location should aggregate the address parts.
+        assert 'San Francisco' in jobs[0]['location']
+
+    def test_falls_back_to_regex_when_no_structured_comp(self):
+        body = {'jobs': [{
+            'id': 'a2', 'title': 'Backend Engineer',
+            'jobUrl': 'https://jobs.ashbyhq.com/cohere/a2',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'address': {'postalAddress': {'addressLocality': 'Toronto'}},
+            'descriptionHtml': '<p>Base salary range: $130,000 - $170,000.</p>',
+            'compensation': None,
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere')
+        assert jobs[0]['comp']['source'] == 'posting'
+        assert jobs[0]['comp']['min'] == 130000 and jobs[0]['comp']['max'] == 170000
+
+    def test_rejects_out_of_band_compensation(self):
+        # If Ashby reports a clearly-wrong number (e.g. an internship stipend),
+        # the sanity bounds (30k–600k, span ≤ 250k) reject it. None for comp.
+        body = {'jobs': [{
+            'id': 'a3', 'title': 'Intern', 'jobUrl': 'https://jobs.ashbyhq.com/x/a3',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'descriptionHtml': '<p>Hello</p>',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'USD', 'minValue': 5000, 'maxValue': 10000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        assert jobs[0]['comp'] is None  # 5k–10k below the 30k floor
+
+    def test_non_usd_compensation_ignored(self):
+        # CAD or EUR compensation isn't currently mapped — falls back to regex.
+        body = {'jobs': [{
+            'id': 'a4', 'title': 'Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/x/a4',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'descriptionHtml': '',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'CAD', 'minValue': 130000, 'maxValue': 180000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        assert jobs[0]['comp'] is None
