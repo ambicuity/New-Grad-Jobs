@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 19:38:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 20:28:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
@@ -64,6 +64,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a50454c8d20d8f67</guid>
     </item>
     <item>
+      <title>Junior Project Engineer at Primero Group</title>
+      <link>https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</link>
+      <description>New grad role at Primero Group in Quebec City, QC, CA. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
+    </item>
+    <item>
       <title>Oracle Cloud Security Engineer at BV Teck</title>
       <link>https://www.indeed.com/viewjob?jk=2e09ae9a723cc7f8</link>
       <description>New grad role at BV Teck in Remote, US. Category: Infrastructure &amp; SRE</description>
@@ -76,13 +83,6 @@
       <description>New grad role at BV Teck in Remote, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2c9ab7518b318d3d</guid>
-    </item>
-    <item>
-      <title>Junior Project Engineer at Primero Group</title>
-      <link>https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</link>
-      <description>New grad role at Primero Group in Quebec City, QC, CA. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
     </item>
     <item>
       <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
@@ -139,6 +139,13 @@
       <description>New grad role at Oak Ridge National Laboratory in Oak Ridge, TN, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=487a225a461c7e24</guid>
+    </item>
+    <item>
+      <title>Associate Energetic Engineer/Energetic Engineer – Level 1 or Level 2 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Kennedy-Space-Center/Associate-Energetic-Engineer-Energetic-Engineer---Level-1-or-Level-2_R10233213</link>
+      <description>New grad role at Northrop Grumman in United States-Florida-Kennedy Space Center. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Kennedy-Space-Center/Associate-Energetic-Engineer-Energetic-Engineer---Level-1-or-Level-2_R10233213</guid>
     </item>
     <item>
       <title>Associate Energetic Engineer/Energetic Engineer – Level 1 or Level 2 at Northrop Grumman</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Intercom in San Francisco, California. Category: Software Engineering</description>
       <pubDate>Fri, 15 May 2026 16:05:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/intercom/jobs/7918638</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) Segment Team at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7767263</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 15:18:18 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767263</guid>
     </item>
   </channel>
 </rss>
