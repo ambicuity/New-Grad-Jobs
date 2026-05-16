@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 20:28:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 21:28:46 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
@@ -71,6 +71,13 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
     </item>
     <item>
+      <title>Data Engineer III at Simplot Company</title>
+      <link>https://www.indeed.com/viewjob?jk=ac7b41fce729d0ab</link>
+      <description>New grad role at Simplot Company in Boise, ID, US. Category: Data Engineering</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ac7b41fce729d0ab</guid>
+    </item>
+    <item>
       <title>Oracle Cloud Security Engineer at BV Teck</title>
       <link>https://www.indeed.com/viewjob?jk=2e09ae9a723cc7f8</link>
       <description>New grad role at BV Teck in Remote, US. Category: Infrastructure &amp; SRE</description>
@@ -99,18 +106,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=732160f77f3b07e8</guid>
     </item>
     <item>
-      <title>Campus Administrative Support Representative at Gurnick Academy of Medical Arts</title>
-      <link>https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</link>
-      <description>New grad role at Gurnick Academy of Medical Arts in Concord, CA, US. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</guid>
-    </item>
-    <item>
       <title>Associate Platform Consultant at Yext</title>
       <link>https://in.indeed.com/viewjob?jk=95662d161c1aa9ab</link>
       <description>New grad role at Yext in TS, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=95662d161c1aa9ab</guid>
+    </item>
+    <item>
+      <title>Campus Administrative Support Representative at Gurnick Academy of Medical Arts</title>
+      <link>https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</link>
+      <description>New grad role at Gurnick Academy of Medical Arts in Concord, CA, US. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</guid>
     </item>
     <item>
       <title>Cloud Security Engineer at Central Hudson</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Fri, 15 May 2026 16:06:04 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8505460002?gh_jid=8505460002</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at Intercom</title>
-      <link>https://job-boards.greenhouse.io/intercom/jobs/7918638</link>
-      <description>New grad role at Intercom in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 16:05:20 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/intercom/jobs/7918638</guid>
     </item>
   </channel>
 </rss>
