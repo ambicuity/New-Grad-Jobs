@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 12:11:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 14:02:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AV &amp; Event Engineer L4 at Twilio</title>
@@ -43,6 +43,20 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8553080002?gh_jid=8553080002</guid>
     </item>
     <item>
+      <title>Jr. Software Engineer at Sensys Technology Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=b18272f32019124e</link>
+      <description>New grad role at Sensys Technology Ltd in MH, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b18272f32019124e</guid>
+    </item>
+    <item>
+      <title>Junior PHP Developer at Kenprimo Techno Solutions</title>
+      <link>https://in.indeed.com/viewjob?jk=a50454c8d20d8f67</link>
+      <description>New grad role at Kenprimo Techno Solutions in KL, IN. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a50454c8d20d8f67</guid>
+    </item>
+    <item>
       <title>Fall 2026 CCPS Computer Science, Mathematics and Science Adjunct Faculty Position(s) at St. John's University</title>
       <link>https://www.indeed.com/viewjob?jk=c2ca0051ad2c544a</link>
       <description>New grad role at St. John's University in Queens, NY, US. Category: Other</description>
@@ -55,6 +69,13 @@
       <description>New grad role at St. John's University in Queens, NY, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8f61b99f5310199e</guid>
+    </item>
+    <item>
+      <title>Associate Data Analyst at Financial Fabric</title>
+      <link>https://in.indeed.com/viewjob?jk=dcbea3a8d80632d5</link>
+      <description>New grad role at Financial Fabric in WB, IN. Category: Data Engineering</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=dcbea3a8d80632d5</guid>
     </item>
     <item>
       <title>Adjunct Faculty, Campus-Based -Anatomy &amp; Physiology at South University</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Datadog in New York, New York, USA. Category: Data Engineering</description>
       <pubDate>Fri, 15 May 2026 12:44:57 +0000</pubDate>
       <guid isPermaLink="true">https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084</guid>
-    </item>
-    <item>
-      <title>Security Engineer II - Vulnerability Lifecycle at Datadog</title>
-      <link>https://careers.datadoghq.com/detail/7851502/?gh_jid=7851502</link>
-      <description>New grad role at Datadog in New York, New York, USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 15 May 2026 12:44:57 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7851502/?gh_jid=7851502</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7710602003?gh_jid=7710602003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 10:04:53 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7710602003?gh_jid=7710602003</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, BizTech(Python, LLM, GenAI, MCP) at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/7902817?gh_jid=7902817</link>
-      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 05:09:37 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/7902817?gh_jid=7902817</guid>
     </item>
   </channel>
 </rss>
