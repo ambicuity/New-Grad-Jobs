@@ -85,6 +85,7 @@ class TestGenerateJobsJsonStructure:
         assert job['company_tier'] == {'id': 'faang_plus', 'name': 'FAANG+', 'emoji': '🔥'}
         assert job['flags'] == {'no_sponsorship': False, 'us_citizenship': False}
         assert job['is_closed'] is False
+        assert 'comp' in job  # always present, value may be None
 
     def test_missing_optional_fields_use_defaults(self):
         """Missing optional fields should use empty strings or default values."""
@@ -103,6 +104,26 @@ class TestGenerateJobsJsonStructure:
         assert job['company_tier'] == {}
         assert job['flags'] == {}
         assert job['is_closed'] is False
+        assert job['comp'] is None
+
+    def test_comp_field_passes_through(self):
+        """When the scraper extracts a compensation range, it must be serialized."""
+        jobs = [{
+            'id': 'tc-1',
+            'company': 'TestCo',
+            'title': 'Software Engineer',
+            'comp': {'min': 120000, 'max': 180000, 'currency': 'USD', 'source': 'posting'},
+        }]
+        result = generate_jobs_json(jobs, {})
+        assert result['jobs'][0]['comp'] == {
+            'min': 120000, 'max': 180000, 'currency': 'USD', 'source': 'posting',
+        }
+
+    def test_comp_missing_serializes_as_none(self):
+        """Jobs without an extractable comp range must serialize comp: None."""
+        jobs = [{'id': 'tc-2', 'company': 'TestCo', 'title': 'Engineer'}]
+        result = generate_jobs_json(jobs, {})
+        assert result['jobs'][0]['comp'] is None
 
 
 class TestCategoryCountCalculation:

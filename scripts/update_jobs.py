@@ -26,7 +26,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
@@ -704,6 +704,95 @@ def is_job_closed(title: str, description: str = '') -> bool:
     closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
 
+# ── Compensation extraction ─────────────────────────────────────────────────
+# Range patterns first (most specific), single-value patterns second.
+_COMP_RANGE_PATTERNS = [
+    # "$120,000 - $180,000" (CA/NY/CO/WA pay-transparency-law style)
+    re.compile(
+        r'\$\s*(\d{2,3})[,]?(\d{3})\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3})[,]?(\d{3})\b',
+        re.IGNORECASE,
+    ),
+    # "$120K - $180K" or "$120k – $180k"
+    re.compile(
+        r'\$\s*(\d{2,3})\s*[Kk]\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3})\s*[Kk]\b',
+    ),
+    # "USD 120,000 to 180,000"
+    re.compile(
+        r'\bUSD\s*(\d{2,3})[,]?(\d{3})\s*(?:-|–|—|to)\s*(\d{2,3})[,]?(\d{3})\b',
+        re.IGNORECASE,
+    ),
+]
+
+_COMP_SINGLE_PATTERNS = [
+    # "$150,000/year" or "$150,000 annually"
+    re.compile(
+        r'\$\s*(\d{2,3})[,]?(\d{3})\s*(?:per\s+year|/\s*year|annually|/\s*yr|\s+annual)\b',
+        re.IGNORECASE,
+    ),
+    # "$150k/year" or "$150K annually"
+    re.compile(
+        r'\$\s*(\d{2,3})\s*[Kk]\s*(?:per\s+year|/\s*year|annually|/\s*yr|\s+annual)\b',
+        re.IGNORECASE,
+    ),
+]
+
+# Strip these spans before searching — they're the most common false-positive
+# sources in job descriptions (funding announcements, market cap, etc.).
+_COMP_BLOCKLIST = re.compile(
+    r'('
+    r'series\s+[A-Da-d](?:\s+round)?|'
+    r'\braised\s+\$[\d.,]+\s*[MmBbKk]?|'
+    r'valuation[^.]{0,60}|'
+    r'revenue\s+of[^.]{0,40}|'
+    r'\$\d+(?:\.\d+)?\s*(?:billion|trillion|million\s+ARR|m\s+ARR|b\s+ARR)|'
+    r'fortune\s+\d+|'
+    r'market\s+cap[^.]{0,40}|'
+    r'(?:nyse|nasdaq):\s*\w+'
+    r')',
+    re.IGNORECASE,
+)
+
+
+def extract_compensation(text: Optional[str]) -> Optional[Dict[str, Any]]:
+    """Find a USD salary range in a free-text job description.
+
+    Returns {'min', 'max', 'currency': 'USD', 'source': 'posting'} with min/max
+    as full integer dollars (e.g. 120000), or None when nothing is confidently
+    extractable. Sanity bounds reject sign-on bonuses, valuations, and stock
+    prices: 30k ≤ min ≤ max ≤ 600k and (max − min) ≤ 250k.
+    """
+    if not text:
+        return None
+    text = _COMP_BLOCKLIST.sub(' ', text)
+
+    for pat in _COMP_RANGE_PATTERNS:
+        m = pat.search(text)
+        if not m:
+            continue
+        g = [int(x) for x in m.groups()]
+        if len(g) == 4:
+            lo, hi = g[0] * 1000 + g[1], g[2] * 1000 + g[3]
+        else:
+            lo, hi = g[0] * 1000, g[1] * 1000
+        if 30_000 <= lo <= hi <= 600_000 and (hi - lo) <= 250_000:
+            return {'min': lo, 'max': hi, 'currency': 'USD', 'source': 'posting'}
+
+    for pat in _COMP_SINGLE_PATTERNS:
+        m = pat.search(text)
+        if not m:
+            continue
+        g = [int(x) for x in m.groups()]
+        mid = g[0] * 1000 + g[1] if len(g) == 2 else g[0] * 1000
+        if 30_000 <= mid <= 600_000:
+            return {
+                'min': int(round(mid * 0.9)),
+                'max': int(round(mid * 1.1)),
+                'currency': 'USD',
+                'source': 'posting',
+            }
+    return None
+
+
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
@@ -748,7 +837,8 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                     'url': job.get('absolute_url', ''),
                     'posted_at': job.get('updated_at') or job.get('created_at'),
                     'source': 'Greenhouse',
-                    'description': description[:500] if description else ''
+                    'description': description[:500] if description else '',
+                    'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -828,7 +918,8 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'url': job.get('hostedUrl', ''),
                     'posted_at': job.get('createdAt'),
                     'source': 'Lever',
-                    'description': description[:500] if description else ''
+                    'description': description[:500] if description else '',
+                    'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -1408,6 +1499,19 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 # Convert DataFrame to list of dictionaries
                 for _, row in jobs_df.iterrows():
                     description = row.get('description', '') or ''
+                    # jobspy returns structured salary on Indeed/LinkedIn when
+                    # the listing exposes it; prefer that over regex extraction.
+                    structured_min = row.get('min_amount')
+                    structured_max = row.get('max_amount')
+                    try:
+                        smin = int(structured_min) if structured_min not in (None, '') else None
+                        smax = int(structured_max) if structured_max not in (None, '') else None
+                    except (TypeError, ValueError):
+                        smin = smax = None
+                    if smin and smax and 30_000 <= smin <= smax <= 600_000:
+                        comp = {'min': smin, 'max': smax, 'currency': 'USD', 'source': 'jobspy'}
+                    else:
+                        comp = extract_compensation(description)
                     job = {
                         'company': row.get('company', 'Unknown'),
                         'title': row.get('title', ''),
@@ -1415,7 +1519,8 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'url': row.get('job_url', ''),
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
-                        'description': description[:500] if description else ''
+                        'description': description[:500] if description else '',
+                        'comp': comp,
                     }
 
                     if job['url'] and job['url'].startswith('http'):
@@ -2115,7 +2220,8 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'category': job.get('category', {}),
             'company_tier': job.get('company_tier', {}),
             'flags': job.get('flags', {}),
-            'is_closed': job.get('is_closed', False)
+            'is_closed': job.get('is_closed', False),
+            'comp': job.get('comp'),
         })
 
     return {

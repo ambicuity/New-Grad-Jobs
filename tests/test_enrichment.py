@@ -24,6 +24,7 @@ from update_jobs import (
     is_job_closed,
     get_company_tier,
     enrich_jobs,
+    extract_compensation,
     format_posted_date,
     get_iso_date,
 )
@@ -350,3 +351,95 @@ class TestGetIsoDate:
     def test_result_is_string(self):
         result = get_iso_date("2026-03-10T00:00:00")
         assert isinstance(result, str)
+
+
+# ---------------------------------------------------------------------------
+# extract_compensation
+# ---------------------------------------------------------------------------
+
+class TestExtractCompensation:
+    """Regex-based salary range extraction from job description bodies."""
+
+    def test_ca_law_style_range(self):
+        text = 'The base salary range for this position is $120,000 - $180,000.'
+        r = extract_compensation(text)
+        assert r == {'min': 120000, 'max': 180000, 'currency': 'USD', 'source': 'posting'}
+
+    def test_em_dash_range(self):
+        r = extract_compensation('Pay range: $85,000 – $115,000 per year.')
+        assert r['min'] == 85000 and r['max'] == 115000
+
+    def test_k_suffix_range(self):
+        r = extract_compensation('Annual compensation: $90K – $130K')
+        assert r == {'min': 90000, 'max': 130000, 'currency': 'USD', 'source': 'posting'}
+
+    def test_lowercase_k_suffix(self):
+        r = extract_compensation('Salary $110k - $145k')
+        assert r['min'] == 110000 and r['max'] == 145000
+
+    def test_usd_prefix(self):
+        r = extract_compensation('USD 75,000 to 95,000 plus equity')
+        assert r['min'] == 75000 and r['max'] == 95000
+
+    def test_single_value_band(self):
+        r = extract_compensation('Compensation: $200,000/year + RSUs')
+        assert r is not None
+        assert r['min'] == 180000 and r['max'] == 220000
+
+    def test_single_value_k(self):
+        r = extract_compensation('Base $150k annually, plus bonus')
+        assert r is not None
+        assert r['min'] == 135000 and r['max'] == 165000
+
+    def test_rejects_series_funding(self):
+        text = 'We just closed our Series B and raised $120M from top VCs.'
+        assert extract_compensation(text) is None
+
+    def test_rejects_signon_bonus_below_floor(self):
+        # "$5,000 sign-on" — under 30k sanity floor
+        assert extract_compensation('Sign-on bonus up to $5,000') is None
+
+    def test_rejects_product_budget(self):
+        # "$1.2M product budget" — far above 600k sanity ceiling
+        assert extract_compensation('We have a $1.2M product budget this year.') is None
+
+    def test_rejects_stock_price(self):
+        assert extract_compensation('Stock price closed at $124.50 yesterday') is None
+
+    def test_rejects_valuation_phrase(self):
+        text = 'Valued at $5 billion after our latest round, we are looking for engineers.'
+        assert extract_compensation(text) is None
+
+    def test_rejects_too_wide_range(self):
+        # $50k–$400k span > 250k cap, likely false positive
+        assert extract_compensation('Range is anywhere from $50,000 to $400,000.') is None
+
+    def test_empty_text(self):
+        assert extract_compensation('') is None
+
+    def test_none_text(self):
+        assert extract_compensation(None) is None
+
+    def test_no_salary_mention(self):
+        text = 'We are hiring a software engineer to work on our distributed systems.'
+        assert extract_compensation(text) is None
+
+    def test_funding_then_real_salary(self):
+        # Common in startup descriptions: funding context followed by real comp.
+        # Blocklist should strip the funding span, leaving the salary to match.
+        text = ('We raised $50M Series C last year. The base salary range '
+                'for this role is $140,000 - $190,000 plus equity.')
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 140000 and r['max'] == 190000
+
+    def test_inverted_range_is_rejected(self):
+        # If hi < lo the sanity check fails.
+        assert extract_compensation('Pay: $180,000 - $120,000') is None
+
+    def test_result_shape(self):
+        r = extract_compensation('Range: $100,000 - $150,000')
+        assert set(r.keys()) == {'min', 'max', 'currency', 'source'}
+        assert r['currency'] == 'USD'
+        assert r['source'] == 'posting'
+        assert isinstance(r['min'], int) and isinstance(r['max'], int)

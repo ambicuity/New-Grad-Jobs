@@ -65,6 +65,16 @@ function addDays(isoString, n) {
   return d.toISOString().slice(0, 10);
 }
 
+function compTuple(j) {
+  // `comp` is published by the scraper as { min, max, currency, source } when
+  // a salary range was extractable from the job posting, otherwise null.
+  // The design's fmtComp expects [low, high] in thousands ($120–180k style)
+  // and treats [null, null] as '—', so honor that contract.
+  const c = j.comp;
+  if (!c || c.min == null || c.max == null) return [null, null];
+  return [Math.round(c.min / 1000), Math.round(c.max / 1000)];
+}
+
 function mapJob(j) {
   const catId = (j.category || {}).id || 'other';
   const tier  = (j.company_tier || {}).tier || 'other';
@@ -81,7 +91,7 @@ function mapJob(j) {
     size:    TIER_SIZE[tier] || 'M',
     stack:   ['—'],                          // not in source data
     cohort:  '26',                           // all jobs are new-grad
-    comp:    [null, null],                   // not in source data
+    comp:    compTuple(j),                   // [null, null] when undisclosed
     dl:      addDays(j.posted_at, 90),       // synthetic 90-day window
     type:    CATEGORY_TYPE[catId] || 'SWE',
     posted:  ageString(j.posted_at),
