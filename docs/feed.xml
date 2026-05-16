@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 16:11:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 17:18:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7622998</link>
+      <description>New grad role at Waymo in Mountain View,  California, USA; San Francisco, California, USA. Category: Software Engineering</description>
+      <pubDate>Sat, 16 May 2026 17:07:02 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7622998</guid>
+    </item>
     <item>
       <title>AV &amp; Event Engineer L4 at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7927688</link>
@@ -64,11 +71,18 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
     </item>
     <item>
-      <title>Postdoctoral Research Associate - AI for Science at Oak Ridge National Laboratory</title>
-      <link>https://www.indeed.com/viewjob?jk=487a225a461c7e24</link>
-      <description>New grad role at Oak Ridge National Laboratory in Oak Ridge, TN, US. Category: Other</description>
+      <title>Entry-Level Engineer – TAB Technician at Reynolds Engineering, LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=732160f77f3b07e8</link>
+      <description>New grad role at Reynolds Engineering, LLC in San Antonio, TX, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=487a225a461c7e24</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=732160f77f3b07e8</guid>
+    </item>
+    <item>
+      <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
+      <link>https://www.indeed.com/viewjob?jk=451b921059562805</link>
+      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=451b921059562805</guid>
     </item>
     <item>
       <title>Associate Data Analyst at Financial Fabric</title>
@@ -83,6 +97,13 @@
       <description>New grad role at South University in Columbia, SC, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a0500c4e2fbd351f</guid>
+    </item>
+    <item>
+      <title>Postdoctoral Research Associate - AI for Science at Oak Ridge National Laboratory</title>
+      <link>https://www.indeed.com/viewjob?jk=487a225a461c7e24</link>
+      <description>New grad role at Oak Ridge National Laboratory in Oak Ridge, TN, US. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=487a225a461c7e24</guid>
     </item>
     <item>
       <title>Product Security Engineer at LaunchDarkly</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
       <pubDate>Fri, 15 May 2026 14:30:11 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7846633</link>
-      <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
-      <pubDate>Fri, 15 May 2026 14:28:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking &amp; Observability at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7672662</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 15 May 2026 13:50:18 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7672662</guid>
-    </item>
-    <item>
-      <title>Associate Marketing Data Analyst - Marketing Analytics at Datadog</title>
-      <link>https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084</link>
-      <description>New grad role at Datadog in New York, New York, USA. Category: Data Engineering</description>
-      <pubDate>Fri, 15 May 2026 12:44:57 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7837084/?gh_jid=7837084</guid>
     </item>
   </channel>
 </rss>
