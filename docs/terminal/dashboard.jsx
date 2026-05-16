@@ -129,7 +129,7 @@ function DashboardDirection() {
   const coCounts = useMemo2(() => {
     const m = new Map();
     filtered.forEach(j => m.set(j.co, (m.get(j.co) || 0) + 1));
-    return [...m.entries()].sort((a,b) => b[1]-a[1]).slice(0, 7);
+    return [...m.entries()].sort((a,b) => b[1]-a[1]);
   }, [filtered]);
 
   // Deadline buckets
@@ -208,13 +208,21 @@ function DashboardDirection() {
 
           {/* Hot companies */}
           <div style={{ padding: '12px 14px', borderTop: `1px solid ${BBG.rule}` }}>
-            <div style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>HIRING NOW</div>
-            {coCounts.map(([co, n]) => (
-              <div key={co} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 11, padding: '1px 0' }}>
-                <span style={{ color: BBG.ink }}>{co}</span>
-                <span style={{ color: BBG.acc }}>{n}</span>
-              </div>
-            ))}
+            <div style={{
+              color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6,
+              display: 'flex', justifyContent: 'space-between',
+            }}>
+              <span>HIRING NOW</span>
+              <span style={{ color: BBG.acc }}>{coCounts.length}</span>
+            </div>
+            <div style={{ maxHeight: 220, overflowY: 'auto' }}>
+              {coCounts.map(([co, n]) => (
+                <div key={co} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 11, padding: '1px 0' }}>
+                  <span style={{ color: BBG.ink }}>{co}</span>
+                  <span style={{ color: BBG.acc }}>{n}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
