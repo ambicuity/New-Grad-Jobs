@@ -121,6 +121,92 @@ function mapContributor(raw) {
   };
 }
 
+// ── GitHub API enrichment ────────────────────────────────────────────────
+// One unauthenticated `/repos/:owner/:repo` call (real stars / forks / issues
+// / open PRs) and one `/repos/:owner/:repo/contributors` call (real per-
+// contributor commit counts so the leaderboard is meaningful). Cached in
+// localStorage for an hour to stay polite under the 60 req/hr/IP limit.
+
+const GH_API   = 'https://api.github.com';
+const GH_REPO  = `${PROJECT_OWNER}/New-Grad-Jobs`;
+const GH_TTL   = 60 * 60 * 1000;  // 1h
+const CACHE_KEY = 'ng-terminal:gh-v1';
+
+function readGhCache() {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const obj = JSON.parse(raw);
+    if (!obj || Date.now() - obj.t > GH_TTL) return null;
+    return obj.data;
+  } catch { return null; }
+}
+
+function writeGhCache(data) {
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), data })); } catch {}
+}
+
+async function fetchGitHubMeta() {
+  const cached = readGhCache();
+  if (cached) return cached;
+  try {
+    const [repoRes, contribRes, prsRes] = await Promise.all([
+      fetch(`${GH_API}/repos/${GH_REPO}`,                       { headers: { Accept: 'application/vnd.github+json' } }),
+      fetch(`${GH_API}/repos/${GH_REPO}/contributors?per_page=100`, { headers: { Accept: 'application/vnd.github+json' } }),
+      fetch(`${GH_API}/search/issues?q=repo:${GH_REPO}+type:pr+state:open&per_page=1`, { headers: { Accept: 'application/vnd.github+json' } }),
+    ]);
+    if (!repoRes.ok || !contribRes.ok) {
+      console.warn('[terminal] github api unavailable, falling back to placeholders');
+      return null;
+    }
+    const repo     = await repoRes.json();
+    const contribs = await contribRes.json();
+    const prs      = prsRes.ok ? await prsRes.json() : { total_count: 0 };
+    const data = {
+      repo: {
+        stars:    repo.stargazers_count    ?? 0,
+        forks:    repo.forks_count         ?? 0,
+        watchers: repo.subscribers_count   ?? 0,
+        issues:   repo.open_issues_count   ?? 0,
+        prs_open: prs.total_count          ?? 0,
+        license:  (repo.license && repo.license.spdx_id) || 'MIT',
+      },
+      contribs: contribs.map(c => ({ login: c.login, contributions: c.contributions })),
+    };
+    writeGhCache(data);
+    return data;
+  } catch (err) {
+    console.warn('[terminal] github api fetch failed:', err.message);
+    return null;
+  }
+}
+
+function applyGhEnrichment(gh) {
+  if (!gh) return;
+  // Repo card
+  Object.assign(NGREPO, gh.repo);
+  window.NGREPO = NGREPO;
+  // Per-contributor real commit counts. Derive prs / add / del from commits
+  // (still synthetic but at least proportional to real activity, instead of
+  // identical across everyone with the same contribution-type count).
+  const byLogin = new Map(gh.contribs.map(c => [c.login.toLowerCase(), c.contributions]));
+  // LoC per commit is fabricated — GitHub's stats/contributors endpoint
+  // returns real adds/dels but is async (often 202) and per-repo-cached.
+  // The multipliers below give plausible totals (~25 LoC added per commit,
+  // ~8 deleted) instead of the previous absurd 110/40 ratios that made
+  // ambicuity's totals look like 1.3M / 480k.
+  NGCONTRIB.forEach(p => {
+    const real = byLogin.get(p.handle.toLowerCase());
+    if (real != null) {
+      p.commits = real;
+      p.prs     = Math.max(1, Math.round(real * 0.20));
+      p.add     = Math.max(50, real * 25);
+      p.del     = Math.max(20, real * 8);
+    }
+  });
+  NGCONTRIB.sort((a, b) => b.commits - a.commits);
+}
+
 // ── Bootstrap ────────────────────────────────────────────────────────────
 
 let NGCONTRIB = [];
@@ -133,10 +219,11 @@ const NGCONTRIB_READY = fetch('contributors.json', { cache: 'no-cache' })
     if (!r.ok) throw new Error(`contributors.json: HTTP ${r.status}`);
     return r.json();
   })
-  .then(d => {
+  .then(async d => {
     const list = (d && d.contributors) || [];
     NGCONTRIB = list.map(mapContributor);
-    // Sort so the owner sits first (matches the table's initial selection).
+    const gh = await fetchGitHubMeta();
+    applyGhEnrichment(gh);
     NGCONTRIB.sort((a, b) => b.commits - a.commits);
     window.NGCONTRIB = NGCONTRIB;
     return NGCONTRIB;
