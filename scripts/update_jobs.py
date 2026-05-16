@@ -14,6 +14,7 @@ Performance Optimizations:
 """
 
 import json
+import html
 import math
 import os
 import random
@@ -706,19 +707,24 @@ def is_job_closed(title: str, description: str = '') -> bool:
 
 # ── Compensation extraction ─────────────────────────────────────────────────
 # Range patterns first (most specific), single-value patterns second.
+# Connector covers: "-", "–", "—", "to", "and up to", "up to", "through".
+_COMP_CONNECTOR = r'(?:-|–|—|to|and\s+up\s+to|through)'
+
 _COMP_RANGE_PATTERNS = [
-    # "$120,000 - $180,000" (CA/NY/CO/WA pay-transparency-law style)
+    # "$120,000 - $180,000" with optional .00 cents (CA/NY/CO/WA law style)
     re.compile(
-        r'\$\s*(\d{2,3})[,]?(\d{3})\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3})[,]?(\d{3})\b',
+        r'\$\s*(\d{2,3})[,]?(\d{3})(?:\.\d{2})?\s*' + _COMP_CONNECTOR +
+        r'\s*\$?\s*(\d{2,3})[,]?(\d{3})(?:\.\d{2})?\b',
         re.IGNORECASE,
     ),
     # "$120K - $180K" or "$120k – $180k"
     re.compile(
-        r'\$\s*(\d{2,3})\s*[Kk]\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3})\s*[Kk]\b',
+        r'\$\s*(\d{2,3})\s*[Kk]\s*' + _COMP_CONNECTOR + r'\s*\$?\s*(\d{2,3})\s*[Kk]\b',
+        re.IGNORECASE,
     ),
     # "USD 120,000 to 180,000"
     re.compile(
-        r'\bUSD\s*(\d{2,3})[,]?(\d{3})\s*(?:-|–|—|to)\s*(\d{2,3})[,]?(\d{3})\b',
+        r'\bUSD\s*(\d{2,3})[,]?(\d{3})\s*' + _COMP_CONNECTOR + r'\s*(\d{2,3})[,]?(\d{3})\b',
         re.IGNORECASE,
     ),
 ]
@@ -735,6 +741,21 @@ _COMP_SINGLE_PATTERNS = [
         re.IGNORECASE,
     ),
 ]
+
+# Strip HTML tags + unescape entities before regex so a salary that's
+# broken across <strong>$120,000</strong> – <strong>$180,000</strong>
+# can still match. Greenhouse and Lever both return raw HTML in `content`.
+_HTML_TAG_RE = re.compile(r'<[^>]+>')
+
+
+def _strip_html(text: str) -> str:
+    if not text:
+        return text
+    if '<' in text:
+        text = _HTML_TAG_RE.sub(' ', text)
+    if '&' in text:
+        text = html.unescape(text)
+    return text
 
 # Strip these spans before searching — they're the most common false-positive
 # sources in job descriptions (funding announcements, market cap, etc.).
@@ -763,6 +784,7 @@ def extract_compensation(text: Optional[str]) -> Optional[Dict[str, Any]]:
     """
     if not text:
         return None
+    text = _strip_html(text)
     text = _COMP_BLOCKLIST.sub(' ', text)
 
     for pat in _COMP_RANGE_PATTERNS:

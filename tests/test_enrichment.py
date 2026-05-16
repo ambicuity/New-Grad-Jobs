@@ -443,3 +443,35 @@ class TestExtractCompensation:
         assert r['currency'] == 'USD'
         assert r['source'] == 'posting'
         assert isinstance(r['min'], int) and isinstance(r['max'], int)
+
+    def test_and_up_to_connector(self):
+        # Chime / older listings use this construction.
+        text = 'The base salary offered for this role will begin at $65,000 and up to $90,000.'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 65000 and r['max'] == 90000
+
+    def test_decimal_cents(self):
+        # Some listings include .00 on the dollar amounts.
+        r = extract_compensation('Base salary $140,000.00 and up to $165,000.00')
+        assert r is not None
+        assert r['min'] == 140000 and r['max'] == 165000
+
+    def test_through_connector(self):
+        r = extract_compensation('Pay range: $110,000 through $140,000 per year.')
+        assert r is not None
+        assert r['min'] == 110000 and r['max'] == 140000
+
+    def test_html_wrapped_range(self):
+        # Greenhouse/Lever return HTML; salary may be split across tags.
+        text = '<p>Base salary range: <strong>$120,000</strong> &ndash; <strong>$180,000</strong></p>'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 120000 and r['max'] == 180000
+
+    def test_html_entities(self):
+        # &#36; is the HTML entity for $.
+        text = 'Salary: &#36;100,000 to &#36;140,000'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 100000 and r['max'] == 140000
