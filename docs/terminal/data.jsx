@@ -75,6 +75,17 @@ function compTuple(j) {
   return [Math.round(c.min / 1000), Math.round(c.max / 1000)];
 }
 
+function deriveRmt(j) {
+  // The scraper doesn't publish a structured remote flag (jobs.json only has
+  // location string + title). Derive remote/hybrid/onsite from that text.
+  // Hybrid wins over remote when both keywords appear ("San Francisco, hybrid
+  // remote" → hybrid). Pure 'remote' wins when only that keyword shows.
+  const hay = `${j.location || ''} ${j.title || ''}`.toLowerCase();
+  if (/\bhybrid\b/.test(hay)) return 'hybrid';
+  if (/\bremote\b/.test(hay)) return 'remote';
+  return 'onsite';
+}
+
 function mapJob(j) {
   const catId = (j.category || {}).id || 'other';
   const tier  = (j.company_tier || {}).tier || 'other';
@@ -86,7 +97,7 @@ function mapJob(j) {
     role:    j.title   || '—',
     loc:     j.location || '—',
     url:     j.url || '',
-    rmt:     'onsite',                       // not in source data
+    rmt:     deriveRmt(j),                   // derived from location+title text
     visa:    !noSponsorship,
     size:    TIER_SIZE[tier] || 'M',
     stack:   ['—'],                          // not in source data
