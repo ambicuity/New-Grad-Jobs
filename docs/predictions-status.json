@@ -1,12 +1,16 @@
 {
-  "state": "already_generated",
-  "message": "Predictions were already generated on 2026-05-16.",
-  "updated_at": "2026-05-16T23:13:54.583571",
+  "state": "generated",
+  "message": "Predictions artifact generated successfully.",
+  "updated_at": "2026-05-17T00:13:40.885623",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
-  "available_history_snapshots": null,
+  "available_history_snapshots": 72,
   "prediction_artifact": {
     "path": "docs/predictions.json",
     "exists": true
+  },
+  "details": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "forced": false
   }
 }

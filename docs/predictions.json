@@ -1,35 +1,35 @@
 {
-  "outlook": "bullish",
+  "outlook": "bearish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1012,
-      "change_percent": 1.91
+      "total_jobs": 952,
+      "change_percent": -0.42
     },
     "30_days": {
-      "total_jobs": 1035,
-      "change_percent": 4.23
+      "total_jobs": 940,
+      "change_percent": -1.67
     }
   },
   "growing_categories": [
-    "faang_plus",
-    "unicorn",
-    "infrastructure_engineering"
+    "Unicorn Startups",
+    "Cybersecurity",
+    "AI/ML Engineering"
   ],
   "declining_categories": [
-    "other_mid_market",
-    "non_tech_sectors",
-    "legacy_it_services"
+    "General Software Engineering",
+    "FAANG+ Roles",
+    "Mid-Market Tech"
   ],
   "confidence": 75,
   "insights": [
-    "The market shows a clear upward trend in the last 10 days, consistently holding above the 30-day average of 992 jobs.",
-    "Growth is currently driven by FAANG+ and Unicorn tiers, suggesting that top-tier companies are resuming or increasing new graduate headcount despite broader economic uncertainty.",
-    "The 7-day average (1006) exceeding the 30-day average (992) indicates positive momentum, signaling a potential expansion phase for entry-level hiring over the next month."
+    "The market is currently experiencing a sharp contraction, with the total job count falling significantly below both the 7-day and 30-day moving averages in the last 48 hours.",
+    "While Unicorn-tier companies have shown stability, the rapid decline in 'Other' tier hiring suggests a broader pullback in entry-level headcount across smaller firms.",
+    "The downward trend over the last three days suggests a bearish short-term outlook as companies finalize their Q3/Q4 hiring budgets and reduce new graduate intake."
   ],
-  "generated_at": "2026-05-16T00:06:01.309036",
-  "data_points": 71,
+  "generated_at": "2026-05-17T00:13:40.885348",
+  "data_points": 72,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-16"
+    "end": "2026-05-17"
   }
 }
