@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2026 19:59:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 23:12:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer (SDE 2) - Full Stack, Lakeflow at Databricks</title>
@@ -20,6 +20,13 @@
       <description>New grad role at Collins Aerospace in Fullerton, CA, US. Category: Hardware Engineering</description>
       <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bfb1b05dd2323f77</guid>
+    </item>
+    <item>
+      <title>Graduate Engineer, Electronic Security Engineer at Black &amp; Veatch</title>
+      <link>https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</link>
+      <description>New grad role at Black &amp; Veatch in Overland Park, KS, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</guid>
     </item>
     <item>
       <title>.Net Developer + DevOps Engineer Experience at Bosch</title>
@@ -99,13 +106,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=85952e7e01490d44</guid>
     </item>
     <item>
-      <title>Graduate Engineer, Electronic Security Engineer at Black &amp; Veatch</title>
-      <link>https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</link>
-      <description>New grad role at Black &amp; Veatch in Overland Park, KS, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</guid>
-    </item>
-    <item>
       <title>Registered Nurse (RN) - New Grad - ICU at Wilson Medical Center</title>
       <link>https://www.indeed.com/viewjob?jk=ec8018351a862c25</link>
       <description>New grad role at Wilson Medical Center in Wilson, NC, US. Category: Other</description>
@@ -183,39 +183,18 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
     </item>
     <item>
-      <title>RF Mechanical Engineer II at Raytheon</title>
-      <link>https://www.indeed.com/viewjob?jk=51b339ed54c47084</link>
-      <description>New grad role at Raytheon in Huntsville, AL, US. Category: Hardware Engineering</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=51b339ed54c47084</guid>
-    </item>
-    <item>
-      <title>Manufacturing Engineer - Entry Level at Phoenix Technical Solutions</title>
-      <link>https://www.indeed.com/viewjob?jk=7005881db2d79af7</link>
-      <description>New grad role at Phoenix Technical Solutions in Kansas City, MO, US. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7005881db2d79af7</guid>
-    </item>
-    <item>
-      <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
-      <link>https://www.indeed.com/viewjob?jk=451b921059562805</link>
-      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=451b921059562805</guid>
-    </item>
-    <item>
-      <title>Associate Platform Consultant at Yext</title>
-      <link>https://in.indeed.com/viewjob?jk=95662d161c1aa9ab</link>
-      <description>New grad role at Yext in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=95662d161c1aa9ab</guid>
-    </item>
-    <item>
       <title>Navigation/IMU Engineer II at Raytheon</title>
       <link>https://www.indeed.com/viewjob?jk=9138be1b39716376</link>
       <description>New grad role at Raytheon in Tucson, AZ, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9138be1b39716376</guid>
+    </item>
+    <item>
+      <title>RF Mechanical Engineer II at Raytheon</title>
+      <link>https://www.indeed.com/viewjob?jk=51b339ed54c47084</link>
+      <description>New grad role at Raytheon in Huntsville, AL, US. Category: Hardware Engineering</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=51b339ed54c47084</guid>
     </item>
     <item>
       <title>Project Engineer-Entry Level at IES Commercial, Inc. – DBA IES Electrical</title>
@@ -239,11 +218,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=732160f77f3b07e8</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer - PhD or PhD Candidate (Near Completion) at Optimal Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</link>
-      <description>New grad role at Optimal Inc. in Warren, MI, US. Category: Data Science &amp; ML</description>
+      <title>Manufacturing Engineer - Entry Level at Phoenix Technical Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=7005881db2d79af7</link>
+      <description>New grad role at Phoenix Technical Solutions in Kansas City, MO, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7005881db2d79af7</guid>
+    </item>
+    <item>
+      <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
+      <link>https://www.indeed.com/viewjob?jk=451b921059562805</link>
+      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=451b921059562805</guid>
     </item>
     <item>
       <title>Campus Administrative Support Representative at Gurnick Academy of Medical Arts</title>
@@ -251,6 +237,13 @@
       <description>New grad role at Gurnick Academy of Medical Arts in Concord, CA, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer - PhD or PhD Candidate (Near Completion) at Optimal Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</link>
+      <description>New grad role at Optimal Inc. in Warren, MI, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</guid>
     </item>
     <item>
       <title>Associate Data Analyst at Financial Fabric</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Samsara in Remote - US. Category: Other</description>
       <pubDate>Fri, 15 May 2026 20:57:14 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258</guid>
+    </item>
+    <item>
+      <title>IT Security Engineer at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/7874958</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Bellevue, WA (Hybrid); Durham, NC (Hybrid); Emeryville, CA (Hybrid). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 15 May 2026 20:48:44 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7874958</guid>
     </item>
   </channel>
 </rss>
