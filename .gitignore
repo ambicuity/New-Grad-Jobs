@@ -91,3 +91,13 @@ scripts/local_test_*.py
 .env
 .env.local
 .env.*.local
+
+# ============================================================
+# Local artifacts (added by repo cleanup 2026-05-18)
+# ============================================================
+junit.xml
+.playwright-mcp/
+.url_failures
+/terminal-*.png
+/pr_diff.txt
+/pr_review.md
