@@ -1,35 +1,35 @@
 {
-  "outlook": "bearish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 952,
-      "change_percent": -0.42
+      "total_jobs": 975,
+      "change_percent": 0.93
     },
     "30_days": {
-      "total_jobs": 940,
-      "change_percent": -1.67
+      "total_jobs": 985,
+      "change_percent": 1.97
     }
   },
   "growing_categories": [
     "Unicorn Startups",
-    "Cybersecurity",
-    "AI/ML Engineering"
+    "FAANG+",
+    "Infrastructure Engineering"
   ],
   "declining_categories": [
-    "General Software Engineering",
-    "FAANG+ Roles",
-    "Mid-Market Tech"
+    "Mid-Market/Other",
+    "Generalist Software Roles",
+    "Non-Technical Internships"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently experiencing a sharp contraction, with the total job count falling significantly below both the 7-day and 30-day moving averages in the last 48 hours.",
-    "While Unicorn-tier companies have shown stability, the rapid decline in 'Other' tier hiring suggests a broader pullback in entry-level headcount across smaller firms.",
-    "The downward trend over the last three days suggests a bearish short-term outlook as companies finalize their Q3/Q4 hiring budgets and reduce new graduate intake."
+    "The market is currently experiencing a consolidation phase, with total job volume hovering near the 30-day mean despite recent short-term volatility.",
+    "Unicorn-tier companies are showing the most resilience and growth, suggesting that high-growth startups are currently more active in new graduate recruitment than the broader 'Other' category.",
+    "The decline in the 'Other' category indicates a tightening of hiring budgets among smaller or non-tech firms, which is currently offsetting gains made by larger tech entities."
   ],
-  "generated_at": "2026-05-17T00:13:40.885348",
-  "data_points": 72,
+  "generated_at": "2026-05-18T00:14:05.267284",
+  "data_points": 73,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-17"
+    "end": "2026-05-18"
   }
 }
