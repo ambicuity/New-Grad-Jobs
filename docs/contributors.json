@@ -11,7 +11,8 @@
         "doc",
         "design",
         "code",
-        "test"
+        "test",
+        "infra"
       ]
     },
     {
@@ -239,5 +240,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-05-18T04:28:01Z"
+  "generatedAt": "2026-05-18T18:11:50Z"
 }
