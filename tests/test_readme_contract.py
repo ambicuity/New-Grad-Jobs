@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Tests for the README.md / docs/ staging contract (issue #156).
 
-The scraper must NOT write README.md. README.md is a static, human-maintained
-document. Only docs/ artefacts (jobs.json, market-history.json, health.json,
-feed.xml) may be written by the automated pipeline.
+README.md is a hand-edited document. The scraper is allowed to touch ONLY the
+digits inside ``<!-- COUNT:<id> -->…<!-- /COUNT -->`` markers via the
+``sync_readme_counts`` helper. Every other mechanism for writing README —
+``generate_readme``, direct ``open("README.md", "w")``, full-table regeneration
+— remains forbidden.
 
 These tests act as a persistent regression guard so the contract cannot drift
 again without a test failure surfacing the violation.
@@ -122,20 +124,8 @@ def test_scraper_docstring_does_not_mention_readme() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Guard B: update-jobs.yml must not stage README.md
+# Guard B: update-jobs.yml staging contract
 # ---------------------------------------------------------------------------
-
-def test_workflow_does_not_stage_readme() -> None:
-    """update-jobs.yml git-add step must not include README.md."""
-    content = WORKFLOW.read_text(encoding="utf-8")
-    # Matches "git add README.md" with optional surrounding tokens
-    match = re.search(r"git add\s+[^\n]*README\.md", content)
-    assert match is None, (
-        f"update-jobs.yml stages README.md: {match.group()!r}\n"
-        "README.md must not be committed by the automated scraper workflow.  "
-        "See issue #156."
-    )
-
 
 def test_workflow_stages_docs_files() -> None:
     """update-jobs.yml must stage the required docs/ artifacts."""
@@ -151,4 +141,54 @@ def test_workflow_stages_docs_files() -> None:
         "update-jobs.yml is missing required docs/ artifacts in git add: "
         + ", ".join(missing)
         + "  See issue #156."
+    )
+
+
+def test_workflow_stages_readme_for_count_sync() -> None:
+    """update-jobs.yml must stage README.md so count-token updates land in commits.
+
+    README is hand-edited everywhere except inside the COUNT markers, which the
+    scraper rewrites via sync_readme_counts. Staging README is required for
+    those count refreshes to ship; the marker-bounded contract (enforced by
+    test_readme_sync.py and the sync_readme_counts source) is what makes this
+    safe.
+    """
+    content = WORKFLOW.read_text(encoding="utf-8")
+    assert re.search(r"git add\s+[^\n]*README\.md", content), (
+        "update-jobs.yml does not stage README.md — count refreshes will not "
+        "ship. Add 'README.md' to the 'git add' line."
+    )
+
+
+# ---------------------------------------------------------------------------
+# Guard C: README writes only go through the marker-bounded helper
+# ---------------------------------------------------------------------------
+
+SYNC_HELPER = ROOT / "scripts" / "sync_readme_counts.py"
+
+
+def test_sync_readme_counts_writes_through_marker_regex_only() -> None:
+    """The only README-write path must operate via COUNT_TOKEN_RE substitution.
+
+    This prevents future drift back to full-table regeneration: any new code
+    that writes README must go through ``apply_counts_to_readme``, which only
+    rewrites digits between the documented markers.
+    """
+    source = SYNC_HELPER.read_text(encoding="utf-8")
+    # The helper must define the regex constant and use it to substitute.
+    assert "COUNT_TOKEN_RE" in source, (
+        "sync_readme_counts.py must define COUNT_TOKEN_RE."
+    )
+    assert "COUNT_TOKEN_RE.sub" in source, (
+        "sync_readme_counts.py must rewrite README via COUNT_TOKEN_RE.sub — "
+        "no other mutation pattern is allowed by the contract."
+    )
+
+
+def test_scraper_uses_sync_readme_counts() -> None:
+    """update_jobs.py must invoke sync_readme_counts (and nothing else for README)."""
+    source = SCRAPER.read_text(encoding="utf-8")
+    assert "sync_readme_counts" in source, (
+        "update_jobs.py does not call sync_readme_counts — README counts will "
+        "drift from docs/jobs.json. See scripts/sync_readme_counts.py."
     )

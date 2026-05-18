@@ -2890,13 +2890,22 @@ def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
 
     now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
 
+    def _safe(val: Any, default: str = "") -> str:
+        # xml.sax.saxutils.escape calls .replace() on its argument; passing None
+        # raises AttributeError mid-scrape. Job records may carry None for any
+        # optional field, so coerce here at the rendering boundary.
+        if val is None:
+            return default
+        return str(val)
+
     items = []
     for job in sorted_jobs:
-        company = job.get('company', 'Unknown')
-        title = job.get('title', 'Unknown')
-        url = job.get('url', '')
-        location = job.get('location', 'Remote')
-        category = job.get('category', {}).get('name', 'General')
+        company = _safe(job.get('company'), 'Unknown')
+        title = _safe(job.get('title'), 'Unknown')
+        url = _safe(job.get('url'))
+        location = _safe(job.get('location'), 'Remote')
+        category_obj = job.get('category') or {}
+        category = _safe(category_obj.get('name') if isinstance(category_obj, dict) else None, 'General')
         posted_at_dt = extract_sort_date(job)
         pubDate = posted_at_dt.strftime('%a, %d %b %Y %H:%M:%S +0000') if posted_at_dt != datetime.min else now_str
 
@@ -3300,6 +3309,18 @@ def main():
 
     # ========== Generate Health Report ==========
     generate_health_json(enriched_jobs, source_counts, start_time, config)
+
+    # ========== Sync README count tokens ==========
+    # README.md remains a hand-edited document; only the digits inside
+    # <!-- COUNT:<id> -->…<!-- /COUNT --> markers are rewritten to match
+    # docs/jobs.json. See scripts/sync_readme_counts.py and
+    # tests/test_readme_sync.py for the contract.
+    try:
+        from sync_readme_counts import sync_readme_counts
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+        sync_readme_counts(repo_root)
+    except Exception as e:
+        print(f"⚠️  README count sync skipped: {e}")
 
     # Report execution time
     elapsed = time.time() - start_time
