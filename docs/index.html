@@ -58,11 +58,12 @@
     </div>
   </div>
 
-  <script type="text/babel" src="terminal/data.jsx"></script>
-  <script type="text/babel" src="terminal/contributors-data.jsx"></script>
-  <script type="text/babel" src="terminal/dashboard.jsx"></script>
-  <script type="text/babel" src="terminal/contributors.jsx"></script>
-  <script type="text/babel" src="terminal/app.jsx"></script>
+  <!-- Cache-bust the bundle when its shape changes. Bump v= on data-shape edits. -->
+  <script type="text/babel" src="terminal/data.jsx?v=4"></script>
+  <script type="text/babel" src="terminal/contributors-data.jsx?v=4"></script>
+  <script type="text/babel" src="terminal/dashboard.jsx?v=4"></script>
+  <script type="text/babel" src="terminal/contributors.jsx?v=4"></script>
+  <script type="text/babel" src="terminal/app.jsx?v=4"></script>
 
   <script type="text/babel">
     (async () => {

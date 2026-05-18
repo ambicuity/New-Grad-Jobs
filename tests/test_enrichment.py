@@ -25,6 +25,7 @@ from update_jobs import (
     get_company_tier,
     enrich_jobs,
     extract_compensation,
+    clean_description,
     fetch_greenhouse_jobs,
     fetch_ashby_jobs,
     format_posted_date,
@@ -637,6 +638,7 @@ class TestAshbyFetcher:
 
     def test_non_usd_compensation_ignored(self):
         # CAD or EUR compensation isn't currently mapped — falls back to regex.
+        # (description must be empty so regex fallback also returns None.)
         body = {'jobs': [{
             'id': 'a4', 'title': 'Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/x/a4',
             'publishedAt': '2026-05-01T00:00:00Z',
@@ -653,3 +655,37 @@ class TestAshbyFetcher:
         with patch('update_jobs.limited_get', side_effect=fake_get):
             jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
         assert jobs[0]['comp'] is None
+
+
+# ---------------------------------------------------------------------------
+# clean_description: HTML → plaintext clip used for the "About the role" snippet
+# ---------------------------------------------------------------------------
+
+class TestCleanDescription:
+    def test_strips_html_tags(self):
+        r = clean_description('<p>Hello <strong>world</strong>!</p>')
+        assert 'Hello' in r and 'world' in r
+        assert '<' not in r and '>' not in r
+
+    def test_unescapes_entities(self):
+        r = clean_description('Team &amp; product &mdash; details')
+        assert '&' in r and '—' in r and '&amp;' not in r
+
+    def test_collapses_whitespace(self):
+        r = clean_description('<p>line one</p>\n\n<p>line\t\ttwo</p>')
+        assert r == 'line one line two'
+
+    def test_clips_on_word_boundary(self):
+        long_text = 'word ' * 500  # 2500 chars
+        r = clean_description(long_text, max_chars=120)
+        assert r.endswith('…')
+        assert len(r) <= 121
+        # Trailing ellipsis sits directly after a word, no orphan space.
+        assert not r.rstrip('…').endswith(' ')
+
+    def test_returns_unchanged_when_short(self):
+        assert clean_description('Already short.') == 'Already short.'
+
+    def test_empty_and_none(self):
+        assert clean_description('') == ''
+        assert clean_description(None) == ''

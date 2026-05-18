@@ -753,12 +753,18 @@ _HTML_TAG_RE = re.compile(r'<[^>]+>')
 
 
 def _strip_html(text: str) -> str:
+    """Remove HTML tags + decode entities, in the order that handles both
+    raw HTML (Lever's `descriptionPlain`) and double-encoded HTML (Greenhouse
+    serves `content` as &lt;div&gt;-style entities that decode to tags)."""
     if not text:
         return text
-    if '<' in text:
-        text = _HTML_TAG_RE.sub(' ', text)
+    # Unescape first so &lt;div&gt; becomes <div>; THEN strip tags. Otherwise
+    # the tag stripper runs on still-encoded entities and does nothing, and
+    # the later unescape leaves literal tags in the output.
     if '&' in text:
         text = html.unescape(text)
+    if '<' in text:
+        text = _HTML_TAG_RE.sub(' ', text)
     return text
 
 # Strip these spans before searching — they're the most common false-positive
@@ -776,6 +782,25 @@ _COMP_BLOCKLIST = re.compile(
     r')',
     re.IGNORECASE,
 )
+
+
+def clean_description(text: Optional[str], max_chars: int = 1200) -> str:
+    """Strip HTML, collapse whitespace, clip to max_chars on a word boundary.
+
+    Used to publish a readable "About the role" snippet in docs/jobs.json
+    from the raw HTML each ATS returns in `content` / `descriptionHtml`.
+    Kept conservative at 1200 chars so jobs.json stays under ~3 MB on the
+    typical 1000-job scrape.
+    """
+    if not text:
+        return ''
+    plain = _strip_html(text)
+    plain = re.sub(r'\s+', ' ', plain).strip()
+    if len(plain) <= max_chars:
+        return plain
+    # Clip on a word boundary near the limit; add a trailing ellipsis.
+    cut = plain[:max_chars].rsplit(' ', 1)[0]
+    return cut + '…'
 
 
 def extract_compensation(text: Optional[str]) -> Optional[Dict[str, Any]]:
@@ -869,7 +894,7 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                     'url': job.get('absolute_url', ''),
                     'posted_at': job.get('updated_at') or job.get('created_at'),
                     'source': 'Greenhouse',
-                    'description': description[:500] if description else '',
+                    'description': clean_description(description),
                     'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -950,7 +975,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'url': job.get('hostedUrl', ''),
                     'posted_at': job.get('createdAt'),
                     'source': 'Lever',
-                    'description': description[:500] if description else '',
+                    'description': clean_description(description),
                     'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1065,7 +1090,7 @@ def fetch_ashby_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'url': job.get('jobUrl', '') or job.get('applyUrl', ''),
                     'posted_at': job.get('publishedAt'),
                     'source': 'Ashby',
-                    'description': description[:500] if description else '',
+                    'description': clean_description(description),
                     'comp': comp,
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1578,7 +1603,7 @@ def fetch_graphql_jobs(
                     'url': url,
                     'posted_at': posted_at,
                     'source': 'GraphQL',
-                    'description': description[:500] if description else ''
+                    'description': clean_description(description)
                 })
                 if len(jobs) >= max_jobs:
                     break
@@ -1684,7 +1709,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'url': row.get('job_url', ''),
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
-                        'description': description[:500] if description else '',
+                        'description': clean_description(description),
                         'comp': comp,
                     }
 
@@ -1956,7 +1981,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                         'url': job.get('apply_url', ''),
                         'posted_at': job.get('created') or job.get('publish_date'),
                         'source': 'Google Careers',
-                        'description': description[:500] if description else ''
+                        'description': clean_description(description)
                     })
 
                 print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
@@ -2387,6 +2412,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'flags': job.get('flags', {}),
             'is_closed': job.get('is_closed', False),
             'comp': job.get('comp'),
+            'description': job.get('description', ''),
         })
 
     return {
