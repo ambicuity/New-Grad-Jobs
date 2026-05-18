@@ -114,3 +114,30 @@ class TestRssFeedGeneration:
             # Should not raise XML parse error
             root = self._generate_and_parse(jobs, tmpdir)
             assert root.tag == 'rss'
+
+    def test_handles_none_fields(self):
+        """Jobs with None for company/title/url/location must not crash RSS generation.
+
+        Regression for the scheduled scraper failure on main:
+            AttributeError: 'NoneType' object has no attribute 'replace'
+        raised from xml.sax.saxutils.escape inside generate_rss_feed.
+        """
+        with tempfile.TemporaryDirectory() as tmpdir:
+            jobs = [{
+                'title': None,
+                'company': None,
+                'url': None,
+                'location': None,
+                'category': None,
+                'posted_at': datetime.utcnow().isoformat(),
+                'posted_display': 'Today',
+            }]
+            # Must not raise; must produce valid XML with one item present.
+            root = self._generate_and_parse(jobs, tmpdir)
+            assert root.tag == 'rss'
+            items = root.findall('.//item')
+            assert len(items) == 1
+            # Null fields should fall back to safe defaults, not crash.
+            title_el = items[0].find('title')
+            assert title_el is not None
+            assert title_el.text == 'Unknown at Unknown'
