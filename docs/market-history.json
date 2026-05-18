@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-18T00:13:59.591309",
+    "last_updated": "2026-05-18T04:32:14.591643",
     "total_snapshots": 73,
     "date_range": {
       "start": "2026-03-05",
@@ -3970,12 +3970,12 @@
     },
     {
       "date": "2026-05-18",
-      "total_jobs": 966,
+      "total_jobs": 1315,
       "categories": {},
       "tiers": {
-        "unicorn": 477,
-        "faang_plus": 145,
-        "other": 344
+        "faang_plus": 141,
+        "unicorn": 593,
+        "other": 581
       },
       "top_companies": [
         {
@@ -3983,8 +3983,20 @@
           "jobs": 184
         },
         {
+          "company": "Anduril Industries",
+          "jobs": 160
+        },
+        {
           "company": "Waymo",
           "jobs": 47
+        },
+        {
+          "company": "OpenAI",
+          "jobs": 40
+        },
+        {
+          "company": "Glean",
+          "jobs": 31
         },
         {
           "company": "Affirm",
@@ -4005,23 +4017,11 @@
         {
           "company": "Abnormal Security",
           "jobs": 19
-        },
-        {
-          "company": "Boeing",
-          "jobs": 18
-        },
-        {
-          "company": "Stripe",
-          "jobs": 17
-        },
-        {
-          "company": "Figma",
-          "jobs": 17
         }
       ],
-      "unique_companies": 206,
-      "avg_jobs_per_company": 4.69,
-      "timestamp": "2026-05-18T00:13:59.589819"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.6,
+      "timestamp": "2026-05-18T04:32:14.590855"
     }
   ]
 }
