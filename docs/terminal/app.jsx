@@ -70,8 +70,7 @@ function TopBar({ tab, setTab }) {
 
       {/* Right meta */}
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 14, padding: '0 14px', fontSize: 11, color: '#6e6e6e' }}>
-        <span><span style={{ color: '#5fd28a' }}>●</span> LIVE</span>
-        <span>16 MAY 2026 · 14:32 PT</span>
+        <LiveStamp />
         <span style={{ border: '1px solid #2a2a2a', padding: '2px 6px', color: '#e8e8e8' }}>F1 HELP</span>
       </div>
     </div>
