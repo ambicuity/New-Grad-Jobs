@@ -1,4 +1,4 @@
-// Real-data adapter for the `newgrad.sh` terminal design.
+// Real-data adapter for the NGJ terminal frontend.
 // Loads docs/jobs.json (scraped, ~1k jobs) and maps to the shape that
 // dashboard.jsx expects (the same shape the original mock data.jsx used).
 //

@@ -42,9 +42,7 @@ function TopBar({ tab, setTab }) {
         <span style={{
           background: '#ff9d3d', color: '#000', padding: '2px 6px',
           fontWeight: 700, fontSize: 11, letterSpacing: 1,
-        }}>NG</span>
-        <span style={{ fontWeight: 600, color: '#e8e8e8' }}>newgrad.sh</span>
-        <span style={{ color: '#6e6e6e', fontSize: 10.5 }}>// new-grad job terminal</span>
+        }}>NGJ</span>
       </div>
 
       {/* Tabs */}
