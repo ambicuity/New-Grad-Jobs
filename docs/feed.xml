@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 04:32:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 04:46:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 2 at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7732942003?gh_jid=7732942003</link>
+      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
+      <pubDate>Mon, 18 May 2026 04:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7732942003?gh_jid=7732942003</guid>
+    </item>
     <item>
       <title>BizOPS Engineer II at Mastercard</title>
       <link>https://mastercard.wd1.myworkdayjobs.com/job/Remote---Sydney-Australia/BizOPS-Engineer-II_R-274599</link>
@@ -148,11 +155,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=19254f78890a84ec</guid>
     </item>
     <item>
-      <title>Graduate Engineer, Electronic Security Engineer at Black &amp; Veatch</title>
-      <link>https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</link>
-      <description>New grad role at Black &amp; Veatch in Overland Park, KS, US. Category: Infrastructure &amp; SRE</description>
+      <title>Hardware Electrical Engineer I (Onsite) at Collins Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=bfb1b05dd2323f77</link>
+      <description>New grad role at Collins Aerospace in Fullerton, CA, US. Category: Hardware Engineering</description>
       <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bfb1b05dd2323f77</guid>
     </item>
     <item>
       <title>Associate Engineer at civilogistix</title>
@@ -162,11 +169,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=53eff86e34ccf4c1</guid>
     </item>
     <item>
-      <title>Hardware Electrical Engineer I (Onsite) at Collins Aerospace</title>
-      <link>https://www.indeed.com/viewjob?jk=bfb1b05dd2323f77</link>
-      <description>New grad role at Collins Aerospace in Fullerton, CA, US. Category: Hardware Engineering</description>
+      <title>Graduate Engineer, Electronic Security Engineer at Black &amp; Veatch</title>
+      <link>https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</link>
+      <description>New grad role at Black &amp; Veatch in Overland Park, KS, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bfb1b05dd2323f77</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2</guid>
     </item>
     <item>
       <title>.Net Developer + DevOps Engineer Experience at Bosch</title>
@@ -288,32 +295,18 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=57d3dd3ac36319ad</guid>
     </item>
     <item>
-      <title>RF Mechanical Engineer II at Raytheon</title>
-      <link>https://www.indeed.com/viewjob?jk=51b339ed54c47084</link>
-      <description>New grad role at Raytheon in Huntsville, AL, US. Category: Hardware Engineering</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=51b339ed54c47084</guid>
-    </item>
-    <item>
-      <title>Manufacturing Engineer - Entry Level at Phoenix Technical Solutions</title>
-      <link>https://www.indeed.com/viewjob?jk=7005881db2d79af7</link>
-      <description>New grad role at Phoenix Technical Solutions in Kansas City, MO, US. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7005881db2d79af7</guid>
-    </item>
-    <item>
-      <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
-      <link>https://www.indeed.com/viewjob?jk=451b921059562805</link>
-      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=451b921059562805</guid>
-    </item>
-    <item>
       <title>Navigation/IMU Engineer II at Raytheon</title>
       <link>https://www.indeed.com/viewjob?jk=9138be1b39716376</link>
       <description>New grad role at Raytheon in Tucson, AZ, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9138be1b39716376</guid>
+    </item>
+    <item>
+      <title>RF Mechanical Engineer II at Raytheon</title>
+      <link>https://www.indeed.com/viewjob?jk=51b339ed54c47084</link>
+      <description>New grad role at Raytheon in Huntsville, AL, US. Category: Hardware Engineering</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=51b339ed54c47084</guid>
     </item>
     <item>
       <title>Project Engineer-Entry Level at IES Commercial, Inc. – DBA IES Electrical</title>
@@ -337,11 +330,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=732160f77f3b07e8</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer - PhD or PhD Candidate (Near Completion) at Optimal Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</link>
-      <description>New grad role at Optimal Inc. in Warren, MI, US. Category: Data Science &amp; ML</description>
+      <title>Manufacturing Engineer - Entry Level at Phoenix Technical Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=7005881db2d79af7</link>
+      <description>New grad role at Phoenix Technical Solutions in Kansas City, MO, US. Category: Other</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7005881db2d79af7</guid>
+    </item>
+    <item>
+      <title>Engineer Nuclear Maintenance and Repair - Entry Level at General Dynamics Electric Boat</title>
+      <link>https://www.indeed.com/viewjob?jk=451b921059562805</link>
+      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=451b921059562805</guid>
     </item>
     <item>
       <title>Associate Platform Consultant at Yext</title>
@@ -351,11 +351,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=95662d161c1aa9ab</guid>
     </item>
     <item>
-      <title>Campus Administrative Support Representative at Gurnick Academy of Medical Arts</title>
-      <link>https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</link>
-      <description>New grad role at Gurnick Academy of Medical Arts in Concord, CA, US. Category: Other</description>
+      <title>Machine Learning Engineer - PhD or PhD Candidate (Near Completion) at Optimal Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</link>
+      <description>New grad role at Optimal Inc. in Warren, MI, US. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e8f51e92744e7d7d</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0</guid>
     </item>
   </channel>
 </rss>

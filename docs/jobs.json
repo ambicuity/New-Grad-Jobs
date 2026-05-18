@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-18T04:32:14.589708",
-    "total_jobs": 1315,
+    "generated_at": "2026-05-18T04:46:58.189310",
+    "total_jobs": 1316,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 810
+        "count": 811
       },
       {
         "id": "data_ml",
@@ -48,6 +48,34 @@
     ]
   },
   "jobs": [
+    {
+      "id": "abnormal-security-software-engineer-2-remote---singapore",
+      "company": "Abnormal Security",
+      "title": "Software Engineer 2",
+      "location": "Remote - Singapore",
+      "url": "https://abnormal.ai/careers/jobs/7732942003?gh_jid=7732942003",
+      "posted_at": "2026-05-18T04:32:35",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "About the Role Abnormal AI is redefining cybersecurity with an AI-native platform that protects modern enterprises from advanced email attacks, account compromise, and human-targeted threats. Our products help security teams detect sophisticated attacks, investigate risk quickly, and automate response at enterprise scale. We're building a team of strong engineers who are excited to use modern AI development tools to build faster, make better decisions, and ship high-quality software with more leverage. We're looking for a Software Engineer II, Backend Engineer based in Singapore to join the CEP (Critical Email Products) in the MSP (Message Security Products) organisation. The CEP team ships the capabilities enterprises need to fully consolidate on Abnormal and remove their legacy email gateway. This is feature parity work with direct business impact, and every capability CEP ships unblocks customers who are ready to move off their SEG but held back by missing functionality. The team currently owns a suite of SEG features that include, but are not limited to, URL Rewriting and Email Digest.&nbsp; If you enjoy moving fast, owning systems end to end, and working alongside engineers\u2026"
+    },
     {
       "id": "mastercard-bizops-engineer-ii-remote---sydney,-australia",
       "company": "Mastercard",
@@ -616,67 +644,6 @@
       "description": "**About the role:** We're trickcv, a chrome extension and web app that tailors CVs to specific job descriptions in seconds using AI. We're already live in the Chrome Web Store, gaining traction with hundreds of active users, and looking for a generalist engineer to help scale. Early stage means real ownership. You'll shape the product, not just execute tickets. What you'll work on: \\- Chrome extension development (the core of our product surface) \\- Backend APIs and AI\\-powered automation pipelines (Laravel \\+ OpenAI / Azure OpenAI) \\- Integrations with LLMs and job platforms (LinkedIn, Wellfound, Indeed, Greenhouse, Lever) Requirements: \\- 1\\+ years of professional coding experience \\- Comfortable with JavaScript or Python (or both) \\- Can work independently and figure things out from sparse specs \\- Interest in AI products, HR tech, or recruiting\\-adjacent tooling Nice to have, not required: \\- Experience building Chrome extensions \\- Familiarity with LLM APIs (OpenAI, Anthropic, Azure OpenAI) \\- SaaS or early\\-stage startup experience What we offer: \\- Fully remote \\- Flexible hours, async\\-first communication \\- Equity conversation possible for the right person \\- Real impact:\u2026"
     },
     {
-      "id": "black-&-veatch-graduate-engineer,-electronic-security-engineer-overland-park,-ks,-us",
-      "company": "Black & Veatch",
-      "title": "Graduate Engineer, Electronic Security Engineer",
-      "location": "Overland Park, KS, US",
-      "url": "https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2",
-      "posted_at": "2026-05-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 79000,
-        "max": 105600,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**Together, we own our company, our future, and our shared success.** As an employee\\-owned company, our people *are* Black \\& Veatch. We put them at the center of everything we do and empower them to grow, explore new possibilities and use their diverse talents and perspectives to solve humanity's biggest challenges in an ever\\-evolving world. With over 100 years of innovation in sustainable infrastructure and our expertise in engineering, procurement, consulting and construction, together we are building a world of difference. **Company :** B\\&V Special Projects Corp. **Req Id :** 114993 **Opportunity Type :** College full time **Relocation eligible :** No **Full time/Part time :** Full\\-Time **Project Only Hire :** No **Visa Sponsorship Available:** No **The Opportunity** ------------------- In this role, you will support and contribute to Federal electronic security projects while developing your technical skills. Working under close supervision, you will assist with the design and documentation of electronic security systems and coordinate with project team members across disciplines. This role is intended for early\\-career engineers (new graduates) and offers training,\u2026"
-    },
-    {
-      "id": "civilogistix-associate-engineer-roswell,-ga,-us",
-      "company": "civilogistix",
-      "title": "Associate Engineer",
-      "location": "Roswell, GA, US",
-      "url": "https://www.indeed.com/viewjob?jk=53eff86e34ccf4c1",
-      "posted_at": "2026-05-17T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Associate Engineer/Civil Designer Position Company Description Civilogistix is a dynamic, fast\\-paced company. We are growing and seeking to expand our land development design teams. We are engaged in meaningful work that challenges the mind and gives great opportunities for reward. Our firm offers alignment between the project manager and the project owner. We have an entrepreneurial environment where creative thinking is compensated. Our clients appreciate our approach to creating value for them and providing consistent top\\-quality work. We are licensed in 9 southeastern states, perform a wide variety of services and have clients with a large range of types of projects. Our primary clients are medium to large developers who have a steady pipeline of projects across the Southeast and have big enough pockets to finance them. They appreciate our strong work ethic and the ability to deliver under the pressure of deadlines. We are an integral part of the exciting rapidly\\-growing development of the Southeast. Our structure offers unprecedented autonomy and the resources to work directly with the clients from conception to construction, whether you are on a private jet for a site\u2026"
-    },
-    {
       "id": "collins-aerospace-hardware-electrical-engineer-i-(onsite)-fullerton,-ca,-us",
       "company": "Collins Aerospace",
       "title": "Hardware Electrical Engineer I (Onsite)",
@@ -710,6 +677,67 @@
         "source": "jobspy"
       },
       "description": "**Date Posted:** 2026\\-05\\-15**Country:** United States of America**Location:** US\\-CA\\-FULLERTON\\-676 \\~ 1801 Hughes Dr \\~ BLDG 676**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** The ability to obtain and maintain a U.S. government issued security clearance is required. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance**Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Active and existing security clearance required after day 1 Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At **RTX**, our internships, co\\-ops and full\\-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. **Collins Aerospace** presents an exciting career opportunity for an **Electrical Engineer** to join our Hardware Engineering team, supporting the **Joint Precision Approach and Landing System (JPALS) program**. We are dedicated to developing the next\u2026"
+    },
+    {
+      "id": "civilogistix-associate-engineer-roswell,-ga,-us",
+      "company": "civilogistix",
+      "title": "Associate Engineer",
+      "location": "Roswell, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=53eff86e34ccf4c1",
+      "posted_at": "2026-05-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Associate Engineer/Civil Designer Position Company Description Civilogistix is a dynamic, fast\\-paced company. We are growing and seeking to expand our land development design teams. We are engaged in meaningful work that challenges the mind and gives great opportunities for reward. Our firm offers alignment between the project manager and the project owner. We have an entrepreneurial environment where creative thinking is compensated. Our clients appreciate our approach to creating value for them and providing consistent top\\-quality work. We are licensed in 9 southeastern states, perform a wide variety of services and have clients with a large range of types of projects. Our primary clients are medium to large developers who have a steady pipeline of projects across the Southeast and have big enough pockets to finance them. They appreciate our strong work ethic and the ability to deliver under the pressure of deadlines. We are an integral part of the exciting rapidly\\-growing development of the Southeast. Our structure offers unprecedented autonomy and the resources to work directly with the clients from conception to construction, whether you are on a private jet for a site\u2026"
+    },
+    {
+      "id": "black-&-veatch-graduate-engineer,-electronic-security-engineer-overland-park,-ks,-us",
+      "company": "Black & Veatch",
+      "title": "Graduate Engineer, Electronic Security Engineer",
+      "location": "Overland Park, KS, US",
+      "url": "https://www.indeed.com/viewjob?jk=04b437c5edc0c3f2",
+      "posted_at": "2026-05-17T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 79000,
+        "max": 105600,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "**Together, we own our company, our future, and our shared success.** As an employee\\-owned company, our people *are* Black \\& Veatch. We put them at the center of everything we do and empower them to grow, explore new possibilities and use their diverse talents and perspectives to solve humanity's biggest challenges in an ever\\-evolving world. With over 100 years of innovation in sustainable infrastructure and our expertise in engineering, procurement, consulting and construction, together we are building a world of difference. **Company :** B\\&V Special Projects Corp. **Req Id :** 114993 **Opportunity Type :** College full time **Relocation eligible :** No **Full time/Part time :** Full\\-Time **Project Only Hire :** No **Visa Sponsorship Available:** No **The Opportunity** ------------------- In this role, you will support and contribute to Federal electronic security projects while developing your technical skills. Working under close supervision, you will assist with the design and documentation of electronic security systems and coordinate with project team members across disciplines. This role is intended for early\\-career engineers (new graduates) and offers training,\u2026"
     },
     {
       "id": "bosch-.net-developer-+-devops-engineer-experience-ka,-in",
@@ -1201,97 +1229,6 @@
       "description": "### **Description \\& Requirements** **Junior Project Engineer** Location: Montreal Type: Permanent Full\\-time **Primero America\u2019s team is currently looking for a Junior Process Engineer.** This is a unique opportunity to join our talented team and be part of Primero\u2019s growth and success. Primero is an Australian\\-founded company, established in 2011 and growing consistently in Montreal since 2016\\. We expanded into Houston in 2022 and Toronto in 2023, strengthening our North American presence. We specialize in the design, procurement, and construction management of mineral processing plants. The **Junior Project Engineer** will play a key role in supporting the successful execution of mining and heavy industrial projects across all project phases, from engineering and procurement through construction and commissioning. This role reports directly to the Engineering Manager. Working as part of a multidisciplinary project team, the successful candidate will support project coordination, contractor management, technical problem\\-solving, and site execution activities while ensuring projects are delivered safely, efficiently, and within schedule and budget requirements. This role is\u2026"
     },
     {
-      "id": "raytheon-rf-mechanical-engineer-ii-huntsville,-al,-us",
-      "company": "Raytheon",
-      "title": "RF Mechanical Engineer II",
-      "location": "Huntsville, AL, US",
-      "url": "https://www.indeed.com/viewjob?jk=51b339ed54c47084",
-      "posted_at": "2026-05-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 68900,
-        "max": 131100,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**Date Posted:** 2026\\-03\\-18**Country:** United States of America**Location:** US\\-AL\\-HUNTSVILLE\\-315 \\~ 315 Bob Heath Dr \\~ BOB HEATH**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** The ability to obtain and maintain a U.S. government issued security clearance is required. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance**Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Active and existing security clearance required after day 1 At Raytheon, the foundation of everything we do is rooted in our values and a higher calling \u2013 to help our nation and allies defend freedoms and deter aggression. We bring the strength of more than 100 years of experience and renowned engineering expertise to meet the needs of today\u2019s mission and stay ahead of tomorrow\u2019s threat. Our team solves tough, meaningful problems that create a safer, more secure world. The Effector Guidance Electronics Department is seeking talented engineers with the skills and passion to develop complex Radio Frequency (RF) systems, subsystems and components, including antennas, RF circuit cards, and RF\u2026"
-    },
-    {
-      "id": "phoenix-technical-solutions-manufacturing-engineer---entry-level-kansas-city,-mo,-us",
-      "company": "Phoenix Technical Solutions",
-      "title": "Manufacturing Engineer - Entry Level",
-      "location": "Kansas City, MO, US",
-      "url": "https://www.indeed.com/viewjob?jk=7005881db2d79af7",
-      "posted_at": "2026-05-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Title**: **Manufacturing Engineer** \u2013 Entry Level **Location**: **GE Transportation** (*A Wabtec Company*) \u2013 Kansas City, MO **Job Description**: We are looking for a Manufacturing Engineer to support production in Kansas City, MO. This position will be responsible for providing technical support for diesel engine production. These efforts include maintaining and creating manufacturing instructions, supporting tooling and manufacturing improvements to ensure the proper assembly and manufacture of diesel engines and components. In addition to providing technical support to the broader design teams in Erie, PA. **Responsibilities**: * Site point of contact for supporting assembly and testing of medium speed diesel engines. * Interface between responsible engineers, manufacturing and product definition teams. * Coordinate testing and disposition of changes for assigned components. * During builds capture/track manufacturing requested changes and drawing mods to update manufacturing documentation (drawings and/or manufacturing instructions). * Lead issuance of change requests to product definition and review and approve amended documentation. * Provide additional support for other\u2026"
-    },
-    {
-      "id": "general-dynamics-electric-boat-engineer-nuclear-maintenance-and-repair---entry-level-groton,-ct,-us",
-      "company": "General Dynamics Electric Boat",
-      "title": "Engineer Nuclear Maintenance and Repair - Entry Level",
-      "location": "Groton, CT, US",
-      "url": "https://www.indeed.com/viewjob?jk=451b921059562805",
-      "posted_at": "2026-05-16T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Overview: Individuals will provide engineering (both radiological and non\\-radiological) support for maintenance and repair of post\\-delivery nuclear submarines and nuclear facilities at Subbase New London and in the Shipyard. In addition, individuals will provide radiological engineering support for post critical new construction ships in the Shipyard. Engineering support is predominantly mechanical/structural in nature with limited electrical interface. Duties will include development of technical work documents for specific tasks to be executed by the trades, shipboard support and oversight of trade work execution, identification and implementation of process improvements, and surveillance of Nuclear Operations and Radiological training. Work on back shifts and weekends will be required as necessary to support Shipyard production. Individuals will work closely with Nuclear Operations, Nuclear Quality, Radiological Controls, Nuclear Test and Audit \\& Assessment personnel, as well as local customer representatives (NRRO, RPCO, SUPSHIP), and Navy Squadron and Ship\u2019s Force personnel. Individuals will become a member of the Nuclear Engineering Core Group and must be able to obtain\u2026"
-    },
-    {
       "id": "raytheon-navigation/imu-engineer-ii-tucson,-az,-us",
       "company": "Raytheon",
       "title": "Navigation/IMU Engineer II",
@@ -1325,6 +1262,41 @@
         "source": "jobspy"
       },
       "description": "**Date Posted:** 2026\\-03\\-18**Country:** United States of America**Location:** US\\-AZ\\-TUCSON\\-802 \\~ 1151 E Hermans Rd \\~ BLDG 802**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** Active and transferable U.S. government issued security clearance is required prior to start date. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance **Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Ability to obtain INTERIM U.S. government issued security clearance is required prior to start date At Raytheon, the foundation of everything we do is rooted in our values and a higher calling \u2013 to help our nation and allies defend freedoms and deter aggression. We bring the strength of more than 100 years of experience and renowned engineering expertise to meet the needs of today\u2019s mission and stay ahead of tomorrow\u2019s threat. Our team solves tough, meaningful problems that create a safer, more secure world. The Advanced Effector Guidance Systems (AEGS) Department develops guidance section electronics architectures for development programs, supports subsystem analyses, integration and test,\u2026"
+    },
+    {
+      "id": "raytheon-rf-mechanical-engineer-ii-huntsville,-al,-us",
+      "company": "Raytheon",
+      "title": "RF Mechanical Engineer II",
+      "location": "Huntsville, AL, US",
+      "url": "https://www.indeed.com/viewjob?jk=51b339ed54c47084",
+      "posted_at": "2026-05-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 68900,
+        "max": 131100,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "**Date Posted:** 2026\\-03\\-18**Country:** United States of America**Location:** US\\-AL\\-HUNTSVILLE\\-315 \\~ 315 Bob Heath Dr \\~ BOB HEATH**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** The ability to obtain and maintain a U.S. government issued security clearance is required. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance**Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Active and existing security clearance required after day 1 At Raytheon, the foundation of everything we do is rooted in our values and a higher calling \u2013 to help our nation and allies defend freedoms and deter aggression. We bring the strength of more than 100 years of experience and renowned engineering expertise to meet the needs of today\u2019s mission and stay ahead of tomorrow\u2019s threat. Our team solves tough, meaningful problems that create a safer, more secure world. The Effector Guidance Electronics Department is seeking talented engineers with the skills and passion to develop complex Radio Frequency (RF) systems, subsystems and components, including antennas, RF circuit cards, and RF\u2026"
     },
     {
       "id": "ies-commercial,-inc.-\u2013-dba-ies-electrical-project-engineer-entry-level-pecos,-tx,-us",
@@ -1416,18 +1388,18 @@
       "description": "Entry\\-Level Engineer \u2013 TAB Technician Reynolds Engineering, LLC is a well\\-established firm with over 15 years of experience providing integrity\\-based testing and quality reporting for building systems across Texas. We specialize in Testing, Adjusting, and Balancing (TAB) services, but also perform other building performance testing. Our mission is to deliver accurate, unbiased results as a true third\\-party provider. We are seeking a motivated Entry\\-Level Engineer to join our small, collaborative team and develop into a skilled TAB Technician. This role offers hands\\-on experience in a high\\-demand technical field, with a mix of fieldwork and report preparation. **Position Overview** You will perform Testing, Adjusting, and Balancing of HVAC and mechanical systems in commercial, institutional, retail, medical, and other buildings to ensure they operate efficiently and meet design specifications. **Key Responsibilities**: \\- Daily use of precision instruments including manometers, tachometers, ammeters, and other calibrated testing equipment \\- Conduct on\\-site measurements, system adjustments, and performance testing \\- Analyze data and prepare detailed, accurate TAB reports\u2026"
     },
     {
-      "id": "optimal-inc.-machine-learning-engineer---phd-or-phd-candidate-(near-completion)-warren,-mi,-us",
-      "company": "Optimal Inc.",
-      "title": "Machine Learning Engineer - PhD or PhD Candidate (Near Completion)",
-      "location": "Warren, MI, US",
-      "url": "https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0",
+      "id": "phoenix-technical-solutions-manufacturing-engineer---entry-level-kansas-city,-mo,-us",
+      "company": "Phoenix Technical Solutions",
+      "title": "Manufacturing Engineer - Entry Level",
+      "location": "Kansas City, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=7005881db2d79af7",
       "posted_at": "2026-05-16T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -1441,7 +1413,35 @@
       },
       "is_closed": false,
       "comp": null,
-      "description": "**Candidates with only a Master's degree will not be considered.** **Minimum qualification: PhD (completed or currently pursuing with expected completion in the near term) in a relevant technical field.** **This is an urgent requirement with an anticipated start date within 2 weeks.** **Priority will be given to candidates who can interview promptly and begin within two weeks of selection.** We are seeking a highly motivated Machine Learning / Deep Learning Research Engineer with strong expertise in Machine Learning, Deep Learning, Computer Vision, and AI research. This role is intended exclusively for PhD graduates or candidates near completion from reputable universities. Candidates with a strong academic research background in Machine Learning, Artificial Intelligence, Computer Vision, Data Science, or related fields are encouraged to apply. Research experience gained during a PhD program will be considered equivalent to professional industry experience. This is an urgent hiring requirement, and we are actively seeking candidates who can start within the next 2 weeks. **Education Requirement** PhD in Computer Science, Computer Engineering, Electrical Engineering, Artificial\u2026"
+      "description": "**Title**: **Manufacturing Engineer** \u2013 Entry Level **Location**: **GE Transportation** (*A Wabtec Company*) \u2013 Kansas City, MO **Job Description**: We are looking for a Manufacturing Engineer to support production in Kansas City, MO. This position will be responsible for providing technical support for diesel engine production. These efforts include maintaining and creating manufacturing instructions, supporting tooling and manufacturing improvements to ensure the proper assembly and manufacture of diesel engines and components. In addition to providing technical support to the broader design teams in Erie, PA. **Responsibilities**: * Site point of contact for supporting assembly and testing of medium speed diesel engines. * Interface between responsible engineers, manufacturing and product definition teams. * Coordinate testing and disposition of changes for assigned components. * During builds capture/track manufacturing requested changes and drawing mods to update manufacturing documentation (drawings and/or manufacturing instructions). * Lead issuance of change requests to product definition and review and approve amended documentation. * Provide additional support for other\u2026"
+    },
+    {
+      "id": "general-dynamics-electric-boat-engineer-nuclear-maintenance-and-repair---entry-level-groton,-ct,-us",
+      "company": "General Dynamics Electric Boat",
+      "title": "Engineer Nuclear Maintenance and Repair - Entry Level",
+      "location": "Groton, CT, US",
+      "url": "https://www.indeed.com/viewjob?jk=451b921059562805",
+      "posted_at": "2026-05-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Overview: Individuals will provide engineering (both radiological and non\\-radiological) support for maintenance and repair of post\\-delivery nuclear submarines and nuclear facilities at Subbase New London and in the Shipyard. In addition, individuals will provide radiological engineering support for post critical new construction ships in the Shipyard. Engineering support is predominantly mechanical/structural in nature with limited electrical interface. Duties will include development of technical work documents for specific tasks to be executed by the trades, shipboard support and oversight of trade work execution, identification and implementation of process improvements, and surveillance of Nuclear Operations and Radiological training. Work on back shifts and weekends will be required as necessary to support Shipyard production. Individuals will work closely with Nuclear Operations, Nuclear Quality, Radiological Controls, Nuclear Test and Audit \\& Assessment personnel, as well as local customer representatives (NRRO, RPCO, SUPSHIP), and Navy Squadron and Ship\u2019s Force personnel. Individuals will become a member of the Nuclear Engineering Core Group and must be able to obtain\u2026"
     },
     {
       "id": "yext-associate-platform-consultant-ts,-in",
@@ -1470,6 +1470,34 @@
       "is_closed": false,
       "comp": null,
       "description": "Yext (NYSE: YEXT) is the leading brand visibility platform, built for a world where discovery and engagement happen everywhere \u2014 across AI search, traditional search, social media, websites, and direct communications. Powered by over 2 billion trusted data points and a suite of integrated products, Yext provides brands the clarity, control, and confidence to perform across digital channels. From real\\-time insights to AI\\-driven recommendations and execution at scale, Yext turns a brand's digital presence into a competitive advantage, which is only possible through our team of innovators and enthusiastic collaborators. Join us and experience firsthand why we are consistently recognized as a 'Best Place to Work' globally by industry leaders such as Built In, Fortune, and Great Place To Work\u00ae! Yext is looking for a detail\\-oriented, proactive, and technically adept **Associate Platform Consultant** to join our dynamic Services team. In this role, you will serve as a Yext product expert, working closely with clients to configure the platform, manage data, and deliver exceptional solutions. As a customer\\-facing team member, you will play a key role in executing implementation tasks,\u2026"
+    },
+    {
+      "id": "optimal-inc.-machine-learning-engineer---phd-or-phd-candidate-(near-completion)-warren,-mi,-us",
+      "company": "Optimal Inc.",
+      "title": "Machine Learning Engineer - PhD or PhD Candidate (Near Completion)",
+      "location": "Warren, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=b5b6f3eb63ee19d0",
+      "posted_at": "2026-05-16T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Candidates with only a Master's degree will not be considered.** **Minimum qualification: PhD (completed or currently pursuing with expected completion in the near term) in a relevant technical field.** **This is an urgent requirement with an anticipated start date within 2 weeks.** **Priority will be given to candidates who can interview promptly and begin within two weeks of selection.** We are seeking a highly motivated Machine Learning / Deep Learning Research Engineer with strong expertise in Machine Learning, Deep Learning, Computer Vision, and AI research. This role is intended exclusively for PhD graduates or candidates near completion from reputable universities. Candidates with a strong academic research background in Machine Learning, Artificial Intelligence, Computer Vision, Data Science, or related fields are encouraged to apply. Research experience gained during a PhD program will be considered equivalent to professional industry experience. This is an urgent hiring requirement, and we are actively seeking candidates who can start within the next 2 weeks. **Education Requirement** PhD in Computer Science, Computer Engineering, Electrical Engineering, Artificial\u2026"
     },
     {
       "id": "gurnick-academy-of-medical-arts-campus-administrative-support-representative-concord,-ca,-us",
@@ -5864,34 +5892,6 @@
       "description": "Make an impact with NTT DATA Join a company that is pushing the boundaries of what is possible. We are renowned for our technical excellence and leading innovations, and for making a difference to our clients and society. Our workplace embraces diversity and inclusion \u2013 it\u2019s a place where you can grow, belong and thrive. Your day at NTT DATA The Security Remote Field Service Engineer (L1\\) is an entry level engineering role, operating in region and is responsible for providing a professional remote technical support service to clients by identifying and resolving technical incidents and problems. Through pre\\-emptive service incident and resolution activities, this role will restore service to clients by driving incidents to an effective resolution and ensuring all requests, process events and resolution incidents result in zero missed service level agreement (SLA) conditions. **Key responsibilities:** * Maintains the support process and ensures that requests for support are handled according to the procedures. * Uses service assurance software and tools to investigate and diagnose problems, collects performance statistics and creates reports, working with users, other staff and\u2026"
     },
     {
-      "id": "rbc-2026-cfo,-fall/winter-liquidity-management-and-parameters-co-op-(8-months)-toronto,-on,-ca",
-      "company": "RBC",
-      "title": "2026 CFO, Fall/Winter Liquidity Management and Parameters Co-op (8 months)",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=1e026c747466de54",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Job Description** **What is the opportunity?** The Regional Liquidity Management Group (RLMG) and the Enterprise Liquidity Parameters Team (ELP) are integral components of RBC\u2019s Corporate Treasury division. The RLMG is responsible for defining policies for Treasury Liquid Assets Portfolios, calibrating liquidity limits, and monitoring a broad range of liquidity metrics. The ELP team focuses on liquidity risk modeling to optimize balance sheet positioning and ensure resilience under both normal and stress scenarios. Together, these teams are committed to setting new standards for stakeholder experience and operational excellence while driving the Bank\u2019s transformation into a simpler, faster, and more innovative organization. This internship provides a unique opportunity to contribute to meaningful initiatives within Corporate Treasury\u2019s RLMG and ELP teams, offering exposure to a dynamic and forward\\-thinking environment. The successful candidate will play a pivotal role in driving innovation and supporting the advancement of the teams' strategic objectives. **What will you do?** --------------------- * Develop automated solutions to monitor and assess High\\-Quality Liquid Assets\u2026"
-    },
-    {
       "id": "bcad-global-graduate-trainee-engineer---civil-/-mechanical-freshers-tn,-in",
       "company": "BCAD Global",
       "title": "Graduate Trainee Engineer - Civil / Mechanical Freshers",
@@ -6004,6 +6004,34 @@
       "description": "At EY, you\u2019ll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you. And we\u2019re counting on your unique voice and perspective to help EY become even better, too. Join us and build an exceptional experience for yourself, and a better working world for all. **About EY GDS** Global Delivery Services (GDS) is a dynamic and truly global delivery network. Across our six locations, we work with teams from all EY service lines, geographies and sectors, and play a vital role in the delivery of the EY growth strategy. We operate from six countries and sixteen cities: * Argentina (Buenos Aires) * China (Dalian) * India (Bangalore, Chennai, Gurgaon, Hyderabad, Kochi, Kolkata, Mumbai, Noida, Trivandrum) * Philippines (Manila) * Poland (Warsaw and Wroclaw) * UK (Manchester, Liverpool) Careers in EY Global Delivery Services Join a team of over 50,000 people, working across borders, to provide innovative and strategic business solutions to EY member firms around the world. Join one of our dynamic teams From accountants to coders, we offer a wide variety of fulfilling career opportunities that span\u2026"
     },
     {
+      "id": "rbc-2026-cfo,-fall/winter-liquidity-management-and-parameters-co-op-(8-months)-toronto,-on,-ca",
+      "company": "RBC",
+      "title": "2026 CFO, Fall/Winter Liquidity Management and Parameters Co-op (8 months)",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=1e026c747466de54",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Job Description** **What is the opportunity?** The Regional Liquidity Management Group (RLMG) and the Enterprise Liquidity Parameters Team (ELP) are integral components of RBC\u2019s Corporate Treasury division. The RLMG is responsible for defining policies for Treasury Liquid Assets Portfolios, calibrating liquidity limits, and monitoring a broad range of liquidity metrics. The ELP team focuses on liquidity risk modeling to optimize balance sheet positioning and ensure resilience under both normal and stress scenarios. Together, these teams are committed to setting new standards for stakeholder experience and operational excellence while driving the Bank\u2019s transformation into a simpler, faster, and more innovative organization. This internship provides a unique opportunity to contribute to meaningful initiatives within Corporate Treasury\u2019s RLMG and ELP teams, offering exposure to a dynamic and forward\\-thinking environment. The successful candidate will play a pivotal role in driving innovation and supporting the advancement of the teams' strategic objectives. **What will you do?** --------------------- * Develop automated solutions to monitor and assess High\\-Quality Liquid Assets\u2026"
+    },
+    {
       "id": "knight-piesold-consulting-junior-mechanical/piping-engineer-vancouver,-bc,-ca",
       "company": "KNIGHT PIESOLD CONSULTING",
       "title": "Junior Mechanical/Piping Engineer",
@@ -6096,6 +6124,186 @@
       "is_closed": false,
       "comp": null,
       "description": "**Please refer to the** **How to Apply for a Job (for External Candidates)****job aid for instructions on how to apply.** **If you are an active McGill employee (ie: currently in an active contract or position at McGill University), do not apply through this Career Site. Login to your McGill Workday account and apply to this posting using the Find Jobs report (type Find Jobs in the search bar).** **Position Summary:** LORIS is a web\\-based data management software designed at the McGill Centre for Integrative Neuroscience (MCIN). The candidate will be contributing to the development and maintenance of LORIS and specifically to The Clinical, biospecimen, imaging and genetic (C\\-BIG) repository LORIS platform which delivers a multimodal informatics infrastructure to provide users access to curated health data, with open\\-access repository. The ***C\\-BIG*** Repository is an Open Science collection of biological samples, clinical information, imaging, and genetic data from patients with neurological disease as well as from healthy control subjects. Reporting to the Senior Research Software Developer, the candidate will support the design, development, testing, and maintenance of tools\u2026"
+    },
+    {
+      "id": "northrop-grumman-associate-energetic-engineer/energetic-engineer-\u2013-level-1-or-level-2-merritt-island",
+      "company": "Northrop Grumman",
+      "title": "Associate Energetic Engineer/Energetic Engineer \u2013 Level 1 or Level 2",
+      "location": "Merritt Island, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=db29ac6d306d7c58",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 65800,
+        "max": 118900,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "RELOCATION ASSISTANCE: Relocation assistance may be available CLEARANCE REQUIRED FOR START: No CLEARANCE TYPE: Secret TRAVEL: Yes, 10% of the Time**Description** --------------- At Northrop Grumman, our employees have incredible opportunities to work on revolutionary systems that impact people's lives around the world today, and for generations to come. Our pioneering and inventive spirit has enabled us to be at the forefront of many technological advancements in our nation's history \\- from the first flight across the Atlantic Ocean, to stealth bombers, to landing on the moon. We look for people who have bold new ideas, courage and a pioneering spirit to join forces to invent the future, and have fun along the way. Our culture thrives on intellectual curiosity, cognitive diversity and bringing your whole self to work \u2014 and we have an insatiable drive to do what others think is impossible. Our employees are not only part of history, they're making history. This position description does not represent a current opening but may be used to identify candidates with skills and experience for positions within Northrop Grumman that frequently become available. Candidates who express an\u2026"
+    },
+    {
+      "id": "carollo-engineers,-inc.-entry-level-civil/environmental-engineer-el-paso,-tx,-us",
+      "company": "Carollo Engineers, Inc.",
+      "title": "Entry Level Civil/Environmental Engineer",
+      "location": "El Paso, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=099cb70ff69326aa",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Overview: Carollo Engineers is a leading engineering firm dedicated exclusively to water. For over 90 years, we've specialized in the planning, design, and construction of water, wastewater, stormwater, and reuse facilities, bringing innovative and sustainable solutions to the water sector's most complex challenges. We work with water agencies, municipalities, utilities, research organizations, and private companies across various industries, including technology, manufacturing, and beyond. These clients choose Carollo because we employ some of the most knowledgeable and experienced professionals in the world. When you join our team, you'll work alongside industry leaders who are advancing the science of water, protecting public health, and building resilient communities. Carollo's vision is to be the best water consulting firm and the best place for you to build your career. If you're passionate about making a difference in this critical field, we invite you to explore a career with Carollo. Responsibilities: * Performing engineering work in water and wastewater treatment and conveyance infrastructure * Work on engineering planning and design projects * Prepare reports * Develop\u2026"
+    },
+    {
+      "id": "city-of-vallejo-engineering-technician-i/ii-(water)-vallejo,-ca,-us",
+      "company": "City of Vallejo",
+      "title": "Engineering Technician I/II (Water)",
+      "location": "Vallejo, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=18e4e9698c0222ff",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Description** --------------- **THE POSITION** **This recruitment is being conducted to fill one full\\-time vacancy. The list established by this recruitment may be used to fill future full\\-time, part\\-time, limited term, and temporary vacancies for up to one year.** The City of Vallejo is seeking candidates for one Engineering Technician position, as a collaborative member of the City\u2019s Water Department. The ideal Engineering Technician is a flexible, detail\\-oriented professional who thrives in a dynamic, multidisciplinary environment. They will perform a range of technical duties to support the City\u2019s water projects, including drafting, design, construction inspection, and office engineering. While not required, any of the following would be highly desirable: previous experience working in AutoCAD 3D and/or ArcGIS, and an equivalent to an Associate's degree from an accredited college or university with major course work in engineering or related field. **THE DEPARTMENT** The Vallejo Water Department is a dynamic organization engaged in growth and positive change for the benefit of our customers and community. The Department provides potable water to approximately 151,000\u2026"
+    },
+    {
+      "id": "ecobee-technologies-ulc-associate-verification-engineer-toronto,-on,-ca",
+      "company": "ecobee Technologies ULC",
+      "title": "Associate Verification Engineer",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=b22fca3183b3da49",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Hi, we are ecobee.** ====================== ecobee introduced the world\u2019s first smart Wi\\-Fi thermostat to help millions of consumers save money, conserve energy, and bring home automation into their lives. That was just the beginning. We continue our pursuit to create technology that brings peace of mind into the home and allows people to focus on the moments that matter most. We take pride in making a meaningful difference to the environment, all while being part of the exciting, connected home revolution. In 2021, ecobee became a subsidiary of Generac Power Systems. Generac introduced the first affordable backup generator and later created the category of automatic home standby generator. The company is committed to sustainable, cleaner energy products poised to revolutionize the 21st century electrical grid. Together, we take pride in making a meaningful difference to the environment. **Why we love to do what we do:** ================================= We\u2019re helping build the world of tomorrow with solutions that improve everyday life while making a positive impact on the planet. Our products and services work in harmony to provide comfort, efficiency, and peace of mind for\u2026"
+    },
+    {
+      "id": "softworks-group-inc.-associate-software-engineer-edmonton,-ab,-ca",
+      "company": "Softworks Group Inc.",
+      "title": "Associate Software Engineer",
+      "location": "Edmonton, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=95574bd18923da95",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Company Overview** Softworks Group Inc. is a Canadian software company specializing in purpose\\-built registrant management software for professional regulatory authorities. Our flagship product, **Alinity\u2122**, is the leading registrant management system for healthcare professions in Canada and is quickly expanding into other regulated professions. We pride ourselves on providing an energetic, respectful, and inclusive work environment where every team member is valued. **Summary** Are you early in your software development career and eager to grow your skills in a collaborative, real\\-world environment? Softworks Group Inc. is looking for **Associate Software Engineers** to join our Implementation Team. This is a great opportunity for individuals with a strong foundation in software development who are enthusiastic about expanding their expertise \\- particularly in database technologies \\- while working on a large\\-scale application used by hundreds of thousands of users. In this role, you will work closely with clients to configure and customize Alinity\u2122 to meet complex business needs. Your contributions will directly impact the success of our clients and the evolution of our\u2026"
+    },
+    {
+      "id": "contingent-software-engineer-iii-(full-time)-portland,-or,-us",
+      "company": "Contingent",
+      "title": "Software Engineer III (Full Time)",
+      "location": "Portland, OR, US",
+      "url": "https://www.indeed.com/viewjob?jk=4c2870814d8d3d83",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 90000,
+        "max": 105000,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Organization Description: The Contingent is a 501 (c) (3\\) venture non\\-profit focused on sparking and holding initiatives to empower leaders and mobilize community for the common good. Since our inception, we have leveraged the perspectives, skills, and needs of people of color and low\\-income community members to challenge the status quo and positively transform our communities. We ask hard questions. We take risks. And we link arms with our neighbors, including business partners, faith communities, and government agencies. From mentoring, to mobilizing volunteers, to restructuring systems that have been designed to work for some at the expense of others, we prioritize empowering and mobilizing leaders to transform their communities. For more information about the initiatives of The Contingent, please visit www.thecontingent.org. Opportunity Summary: You\u2019ll be a member of our brilliant engineering team, contributing to the design of new innovative products. To be successful in this position, you should be a curious, problem solver and have experience in JavaScript, React, Tailwind, and familiarity with Node.js. WordPress or PHP experience a plus. As a Software Engineer, you will\u2026"
     },
     {
       "id": "princeton-university-research-software-engineer-i-princeton,-nj,-us",
@@ -6258,186 +6466,6 @@
       "description": "If you\u2019re passionate about building a better future for individuals, communities, and our country\u2014and you\u2019re committed to working hard to play your part in building that future\u2014consider WGU as the next step in your career. Driven by a mission to expand access to higher education through online, competency\\-based degree programs, WGU is also committed to being a great place to work for a diverse workforce of student\\-focused professionals. The university has pioneered a new way to learn in the 21st century, one that has received praise from academic, industry, government, and media leaders. Whatever your role, working for WGU gives you a part to play in helping students graduate, creating a better tomorrow for themselves and their families. The salary range for this position takes into account the wide range of factors that are considered in making compensation decisions including but not limited to skill sets; experience and training; licensure and certifications; and other business and organizational needs. At WGU, it is not typical for an individual to be hired at or near the top of the range for their position, and compensation decisions are dependent on the facts and\u2026"
     },
     {
-      "id": "contingent-software-engineer-iii-(full-time)-portland,-or,-us",
-      "company": "Contingent",
-      "title": "Software Engineer III (Full Time)",
-      "location": "Portland, OR, US",
-      "url": "https://www.indeed.com/viewjob?jk=4c2870814d8d3d83",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 90000,
-        "max": 105000,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "Organization Description: The Contingent is a 501 (c) (3\\) venture non\\-profit focused on sparking and holding initiatives to empower leaders and mobilize community for the common good. Since our inception, we have leveraged the perspectives, skills, and needs of people of color and low\\-income community members to challenge the status quo and positively transform our communities. We ask hard questions. We take risks. And we link arms with our neighbors, including business partners, faith communities, and government agencies. From mentoring, to mobilizing volunteers, to restructuring systems that have been designed to work for some at the expense of others, we prioritize empowering and mobilizing leaders to transform their communities. For more information about the initiatives of The Contingent, please visit www.thecontingent.org. Opportunity Summary: You\u2019ll be a member of our brilliant engineering team, contributing to the design of new innovative products. To be successful in this position, you should be a curious, problem solver and have experience in JavaScript, React, Tailwind, and familiarity with Node.js. WordPress or PHP experience a plus. As a Software Engineer, you will\u2026"
-    },
-    {
-      "id": "carollo-engineers,-inc.-entry-level-civil/environmental-engineer-el-paso,-tx,-us",
-      "company": "Carollo Engineers, Inc.",
-      "title": "Entry Level Civil/Environmental Engineer",
-      "location": "El Paso, TX, US",
-      "url": "https://www.indeed.com/viewjob?jk=099cb70ff69326aa",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Overview: Carollo Engineers is a leading engineering firm dedicated exclusively to water. For over 90 years, we've specialized in the planning, design, and construction of water, wastewater, stormwater, and reuse facilities, bringing innovative and sustainable solutions to the water sector's most complex challenges. We work with water agencies, municipalities, utilities, research organizations, and private companies across various industries, including technology, manufacturing, and beyond. These clients choose Carollo because we employ some of the most knowledgeable and experienced professionals in the world. When you join our team, you'll work alongside industry leaders who are advancing the science of water, protecting public health, and building resilient communities. Carollo's vision is to be the best water consulting firm and the best place for you to build your career. If you're passionate about making a difference in this critical field, we invite you to explore a career with Carollo. Responsibilities: * Performing engineering work in water and wastewater treatment and conveyance infrastructure * Work on engineering planning and design projects * Prepare reports * Develop\u2026"
-    },
-    {
-      "id": "city-of-vallejo-engineering-technician-i/ii-(water)-vallejo,-ca,-us",
-      "company": "City of Vallejo",
-      "title": "Engineering Technician I/II (Water)",
-      "location": "Vallejo, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=18e4e9698c0222ff",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Description** --------------- **THE POSITION** **This recruitment is being conducted to fill one full\\-time vacancy. The list established by this recruitment may be used to fill future full\\-time, part\\-time, limited term, and temporary vacancies for up to one year.** The City of Vallejo is seeking candidates for one Engineering Technician position, as a collaborative member of the City\u2019s Water Department. The ideal Engineering Technician is a flexible, detail\\-oriented professional who thrives in a dynamic, multidisciplinary environment. They will perform a range of technical duties to support the City\u2019s water projects, including drafting, design, construction inspection, and office engineering. While not required, any of the following would be highly desirable: previous experience working in AutoCAD 3D and/or ArcGIS, and an equivalent to an Associate's degree from an accredited college or university with major course work in engineering or related field. **THE DEPARTMENT** The Vallejo Water Department is a dynamic organization engaged in growth and positive change for the benefit of our customers and community. The Department provides potable water to approximately 151,000\u2026"
-    },
-    {
-      "id": "ecobee-technologies-ulc-associate-verification-engineer-toronto,-on,-ca",
-      "company": "ecobee Technologies ULC",
-      "title": "Associate Verification Engineer",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=b22fca3183b3da49",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Hi, we are ecobee.** ====================== ecobee introduced the world\u2019s first smart Wi\\-Fi thermostat to help millions of consumers save money, conserve energy, and bring home automation into their lives. That was just the beginning. We continue our pursuit to create technology that brings peace of mind into the home and allows people to focus on the moments that matter most. We take pride in making a meaningful difference to the environment, all while being part of the exciting, connected home revolution. In 2021, ecobee became a subsidiary of Generac Power Systems. Generac introduced the first affordable backup generator and later created the category of automatic home standby generator. The company is committed to sustainable, cleaner energy products poised to revolutionize the 21st century electrical grid. Together, we take pride in making a meaningful difference to the environment. **Why we love to do what we do:** ================================= We\u2019re helping build the world of tomorrow with solutions that improve everyday life while making a positive impact on the planet. Our products and services work in harmony to provide comfort, efficiency, and peace of mind for\u2026"
-    },
-    {
-      "id": "softworks-group-inc.-associate-software-engineer-edmonton,-ab,-ca",
-      "company": "Softworks Group Inc.",
-      "title": "Associate Software Engineer",
-      "location": "Edmonton, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=95574bd18923da95",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Company Overview** Softworks Group Inc. is a Canadian software company specializing in purpose\\-built registrant management software for professional regulatory authorities. Our flagship product, **Alinity\u2122**, is the leading registrant management system for healthcare professions in Canada and is quickly expanding into other regulated professions. We pride ourselves on providing an energetic, respectful, and inclusive work environment where every team member is valued. **Summary** Are you early in your software development career and eager to grow your skills in a collaborative, real\\-world environment? Softworks Group Inc. is looking for **Associate Software Engineers** to join our Implementation Team. This is a great opportunity for individuals with a strong foundation in software development who are enthusiastic about expanding their expertise \\- particularly in database technologies \\- while working on a large\\-scale application used by hundreds of thousands of users. In this role, you will work closely with clients to configure and customize Alinity\u2122 to meet complex business needs. Your contributions will directly impact the success of our clients and the evolution of our\u2026"
-    },
-    {
-      "id": "northrop-grumman-associate-energetic-engineer/energetic-engineer-\u2013-level-1-or-level-2-merritt-island",
-      "company": "Northrop Grumman",
-      "title": "Associate Energetic Engineer/Energetic Engineer \u2013 Level 1 or Level 2",
-      "location": "Merritt Island, FL, US",
-      "url": "https://www.indeed.com/viewjob?jk=db29ac6d306d7c58",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 65800,
-        "max": 118900,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "RELOCATION ASSISTANCE: Relocation assistance may be available CLEARANCE REQUIRED FOR START: No CLEARANCE TYPE: Secret TRAVEL: Yes, 10% of the Time**Description** --------------- At Northrop Grumman, our employees have incredible opportunities to work on revolutionary systems that impact people's lives around the world today, and for generations to come. Our pioneering and inventive spirit has enabled us to be at the forefront of many technological advancements in our nation's history \\- from the first flight across the Atlantic Ocean, to stealth bombers, to landing on the moon. We look for people who have bold new ideas, courage and a pioneering spirit to join forces to invent the future, and have fun along the way. Our culture thrives on intellectual curiosity, cognitive diversity and bringing your whole self to work \u2014 and we have an insatiable drive to do what others think is impossible. Our employees are not only part of history, they're making history. This position description does not represent a current opening but may be used to identify candidates with skills and experience for positions within Northrop Grumman that frequently become available. Candidates who express an\u2026"
-    },
-    {
       "id": "western-governors-university-cloud-engineer-ii-salt-lake-city,-ut,-us",
       "company": "Western Governors University",
       "title": "Cloud Engineer II",
@@ -6497,39 +6525,6 @@
       "is_closed": false,
       "comp": null,
       "description": "**May 15, 2026****002915SR** Company Description By working at Harvard University, you join a vibrant community that advances Harvard's world\\-changing mission in meaningful ways, inspires innovation and collaboration, and builds skills and expertise. We are dedicated to creating a diverse and welcoming environment where everyone can thrive. **Why join the Harvard Kennedy School?** The John F. Kennedy School of Government at Harvard University is one of 12 graduate and professional schools at the university. Harvard Kennedy School\u2019s mission is to improve public policy and leadership so people can live in societies that are more safe, free, just, and sustainably prosperous. By combining cutting\\-edge research, the teaching of outstanding students, and direct interaction with practitioners, we have an impact on solving public problems that no other institution can match. When you work at Harvard Kennedy School, you make a difference. Job Description The Harvard Kennedy School (HKS) is launching an initiative to build the best\\-in\\-class research enablement environment for public policy. Over the next two years, the School will pilot and pressure test strategies and solutions\u2026"
-    },
-    {
-      "id": "san-francisco-unified-school-district-2026-2027-audiologist-(0785),-special-education-services-san-f",
-      "company": "San Francisco Unified School District",
-      "title": "2026-2027 Audiologist (0785), Special Education Services",
-      "location": "San Francisco, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=2f4bbb2c06c72edf",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 116136,
-        "max": 152455,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**555 Franklin St. Administration** 555 Franklin St. San Francisco, CA 94102 **Full Time** **$116,136 \\- $152,455 per year** **555 Franklin St. Administration** **Posted 5/15/2026** **Job Class:** 0785 Speech Therapist\\-Audiologist\\-Certified **Salary Range:** $116,136\\.00\\-$152,455\\.00/annually **Length of Appointment:** School\\-Term **Calendar:** 26\\-27 School Year Who We Are The San Francisco Unified School District (SFUSD) is the seventh largest school district in California, serving more than 50,000 students who speak more than 44 documented languages across 130 schools in the city of San Francisco every year. We aim for every student who attends SFUSD schools to discover his or her spark, along with a strong sense of self and purpose, and that all students graduate from high school ready for college and career, and equipped with the skills, capacities and dispositions outlined in SFUSD\u2019s Graduate Profile. Every day in our quest to achieve this mission we provide each and every student the quality instruction and equitable support required to thrive in the 21st century. What It Means to Work Here The SFUSD community is unified by our**Core Values**: * Student\\-centered: We\u2026"
     },
     {
       "id": "johns-hopkins-university-applied-physics-laboratory-2026-phd-graduate---machine-learning-and-artific",
@@ -6598,6 +6593,39 @@
       "description": "Description Do you enjoy exploring and analyzing data to find data\\-driven solution to complex problems? Do you want to contribute to work that is crucial to maintaining our national security and strength? Are you continuously searching for new ways to grow your knowledge and improve your skills? If you are graduating with a PhD in Statistics, Physics, Mathematics, Computer Science, or a related field, we would love to have you join our team! We are seeking a new PhD graduate with expertise in statistics to support multi\\-disciplinary teams performing a variety of quantitative tasks for defense and national security applications. You will be joining a diverse team of engineers, software developers, statisticians, data scientists, and analysts who are committed to advancing the state\\-of\\-the\\-art in performance evaluation of the nation\u2019s strategic weapons systems throughout their lifecycle. We believe in continually growing our capabilities and cultivating a work environment that embraces innovation, integrity, trust, and teamwork. **As a member of our team, you will\u2026** * Work with multi\\-disciplinary teams to support development of data collection, processing, and analysis\u2026"
     },
     {
+      "id": "san-francisco-unified-school-district-2026-2027-audiologist-(0785),-special-education-services-san-f",
+      "company": "San Francisco Unified School District",
+      "title": "2026-2027 Audiologist (0785), Special Education Services",
+      "location": "San Francisco, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=2f4bbb2c06c72edf",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 116136,
+        "max": 152455,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "**555 Franklin St. Administration** 555 Franklin St. San Francisco, CA 94102 **Full Time** **$116,136 \\- $152,455 per year** **555 Franklin St. Administration** **Posted 5/15/2026** **Job Class:** 0785 Speech Therapist\\-Audiologist\\-Certified **Salary Range:** $116,136\\.00\\-$152,455\\.00/annually **Length of Appointment:** School\\-Term **Calendar:** 26\\-27 School Year Who We Are The San Francisco Unified School District (SFUSD) is the seventh largest school district in California, serving more than 50,000 students who speak more than 44 documented languages across 130 schools in the city of San Francisco every year. We aim for every student who attends SFUSD schools to discover his or her spark, along with a strong sense of self and purpose, and that all students graduate from high school ready for college and career, and equipped with the skills, capacities and dispositions outlined in SFUSD\u2019s Graduate Profile. Every day in our quest to achieve this mission we provide each and every student the quality instruction and equitable support required to thrive in the 21st century. What It Means to Work Here The SFUSD community is unified by our**Core Values**: * Student\\-centered: We\u2026"
+    },
+    {
       "id": "weed-me-ai-systems-&-marketing-associate-pickering,-on,-ca",
       "company": "Weed Me",
       "title": "AI Systems & Marketing Associate",
@@ -6624,39 +6652,6 @@
       "is_closed": false,
       "comp": null,
       "description": "At Weed Me, we\u2019re building the future of AI\\-powered marketing, automation, and creative production in the cannabis industry. We are looking for a highly curious, technically minded, AI\\-driven individual to join our team as an **AI Systems \\& Marketing Associate**. This role is ideal for a recent graduate or early\\-career professional who is passionate about AI, automation, creative systems, and emerging technology. This is not a traditional marketing role. You will work directly with leadership to research, build, test, and manage AI\\-powered systems that support marketing, sales, content creation, reporting, presentations, video production, and operational workflows across the company. If you spend your free time experimenting with AI tools, building automations, testing workflows, or following the latest developments in generative AI \u2014 we want to hear from you. **What You\u2019ll Be Doing** * Build and manage AI\\-powered marketing and sales workflows * Research and test emerging AI tools and platforms * Develop systems for generating: * presentations and sales decks * videos and motion content * voiceovers and audio assets * training materials * social content and campaign concepts\u2026"
-    },
-    {
-      "id": "interrent-reit-accountant---new-grad-ottawa,-on,-ca",
-      "company": "InterRent REIT",
-      "title": "Accountant - New Grad",
-      "location": "Ottawa, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=56f1c29bc6983f90",
-      "posted_at": "2026-05-15T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 50000,
-        "max": 60000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "description": "Today we are confirming our search for a Accountant to support the accurate and timely financial reporting of a portfolio of our properties. This role is well suited for a recent accounting graduate who is eager to learn, take ownership of their work, and grow into a strong performer within a high\\-volume accounting environment. The successful candidate will work closely with senior accountants and property management operations to ensure reliable financial reporting and day\\-to\\-day execution. This is a hands\\-on role with exposure to core property accounting activities and opportunities to develop technical skills, business understanding, and professional judgement. In addition to the duties typically expected of an entry level accounting professional, responsibilities will include: Property Accounting and Reporting * Support the Accounting team in preparing quarterly, and annual financial statements for an assigned portfolio of properties. * Prepare journal entries, accruals, and adjustments related to property operations, capital activity, and renovations. * Prepare and complete bank reconciliations and other balance sheet reconciliations within established timelines. *\u2026"
     },
     {
       "id": "georgia-tech-research-information-systems-engineer-atlanta,-ga,-us",
@@ -6690,6 +6685,39 @@
         "source": "jobspy"
       },
       "description": "**About Us** ------------ Overview Georgia Tech prides itself on its technological resources, collaborations, high\\-quality student body, and its commitment to building an outstanding and diverse community of learning, discovery, and creation. We strongly encourage applicants whose values align with our institutional values, as outlined in our Strategic Plan. These values include academic excellence, diversity of thought and experience, inquiry and innovation, collaboration and community, and ethical behavior and stewardship. Georgia Tech has policies to promote a healthy work\\-life balance and is aware that attracting faculty may require meeting the needs of two careers. About Georgia Tech Georgia Tech is a top\\-ranked public research university situated in the heart of Atlanta, a diverse and vibrant city with numerous economic and cultural strengths. The Institute serves more than 45,000 students through top\\-ranked undergraduate, graduate, and executive programs in engineering, computing, science, business, design, and liberal arts. Georgia Tech's faculty attracted more than $1\\.4 billion in research awards this past year in fields ranging from biomedical technology to\u2026"
+    },
+    {
+      "id": "interrent-reit-accountant---new-grad-ottawa,-on,-ca",
+      "company": "InterRent REIT",
+      "title": "Accountant - New Grad",
+      "location": "Ottawa, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=56f1c29bc6983f90",
+      "posted_at": "2026-05-15T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 50000,
+        "max": 60000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "description": "Today we are confirming our search for a Accountant to support the accurate and timely financial reporting of a portfolio of our properties. This role is well suited for a recent accounting graduate who is eager to learn, take ownership of their work, and grow into a strong performer within a high\\-volume accounting environment. The successful candidate will work closely with senior accountants and property management operations to ensure reliable financial reporting and day\\-to\\-day execution. This is a hands\\-on role with exposure to core property accounting activities and opportunities to develop technical skills, business understanding, and professional judgement. In addition to the duties typically expected of an entry level accounting professional, responsibilities will include: Property Accounting and Reporting * Support the Accounting team in preparing quarterly, and annual financial statements for an assigned portfolio of properties. * Prepare journal entries, accruals, and adjustments related to property operations, capital activity, and renovations. * Prepare and complete bank reconciliations and other balance sheet reconciliations within established timelines. *\u2026"
     },
     {
       "id": "electronic-arts-data-engineer-ts,-in",
@@ -11026,34 +11054,6 @@
       "description": "Block is one company built from many blocks, all united by the same purpose of economic empowerment. The blocks that form our foundational teams \u2014 People, Finance, Counsel, Hardware, Information Security, Platform Infrastructure Engineering, and more \u2014 provide support and guidance at the corporate level. They work across business groups and around the globe, spanning time zones and disciplines to develop inclusive People policies, forecast finances, give legal counsel, safeguard systems, nurture new initiatives, and more. Every challenge creates possibilities, and we need different perspectives to see them all. Bring yours to Block. The Role As a Legal Systems Engineer, you will lead the design and evolution of the systems that power Legal, combining software engineering, system architecture, and legal domain expertise. This role is responsible for shaping how Legal leverages automation, data, and AI to operate more effectively at scale. You will work across a complex technology landscape \u2014 including ELM, eDiscovery, CLM, and AI platforms \u2014 to define and implement solutions that connect systems, improve workflows, and enable more intelligent ways of working. A core focus of this\u2026"
     },
     {
-      "id": "russell-investments-graduate-trainee,-compliance-mh,-in",
-      "company": "RUSSELL INVESTMENTS",
-      "title": "Graduate Trainee, Compliance",
-      "location": "MH, IN",
-      "url": "https://in.indeed.com/viewjob?jk=941487d35542d382",
-      "posted_at": "2026-05-14T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Reporting To:** ================= Broker Dealer Chief Compliance Officer**Shift:** ========== EMEA (1:30 pm \\- 10:30 pm IST) (India)**About Russell Investments, Mumbai:** ====================================== Russell Investments is a leading outsourced financial partner and global investment solutions firm providing a wide range of investment capabilities to institutional investors, financial intermediaries, and individual investors around the world. Building on an 90\\-year legacy of continuous innovation to deliver exceptional value to clients, Russell Investments works every day to improve the financial security of its clients. The firm is \u201cTop 12 Ranked Consultant (2009\\-2024\\)\u201d in P\\&I survey 2024 with $962 billion in assets under advisement (as of December 31, 2025\\) and $376\\.9 billion in assets under management (as of December 31, 2025\\) for clients in 30 countries. Headquartered in Seattle, Washington in the United States, Russell Investments has offices around the world, including London, New York, Toronto, Sydney, Tokyo, Shanghai \u2013 and has opened a new office in Mumbai, India in June 2023\\. Joining the Mumbai office is an incredible opportunity to work closely with\u2026"
-    },
-    {
       "id": "wsp-associate---infrastructure-planning-up,-in",
       "company": "WSP",
       "title": "Associate - Infrastructure Planning",
@@ -11164,62 +11164,6 @@
       "is_closed": false,
       "comp": null,
       "description": "Note: By applying to this position you will have an opportunity to share your preferred working location from the following: **Bengaluru, Karnataka, India; Hyderabad, Telangana, India; Pune, Maharashtra, India**.### **Minimum qualifications:** * Bachelor's degree in Electrical, Electronics and Communication Engineering, a relevant technical field, or equivalent practical experience. * Experience with design concepts and computer hardware architecture. ### **Preferred qualifications:** * Internship work, work experience, or personal project experience outside the classroom in Hardware, Electrical Engineering or Mechanical Engineering. * Experience in one or more of the following areas: SoC/ASIC Design, Design Verification, Physical Design, Design for Testability. * Experience with Verilog/HDL or System Verilog coding. **About the job** ----------------- Google engineers develop the next\\-generation technologies that change how users connect, explore, and interact with information and one another. As a member of an extraordinarily creative, motivated and talented team, you develop new products that are used by millions of people. We need our engineers to be versatile and passionate\u2026"
-    },
-    {
-      "id": "td-data-scientist-ii-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Data Scientist II",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=7de6ba74a4a30e81",
-      "posted_at": "2026-05-14T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Work Location:** Toronto, Ontario, Canada **Hours:** 37\\.5 **Line of Business:** Analytics, Insights, \\& Artificial Intelligence **Pay Details:** $81,600 \\- $115,200 CAD TD is committed to providing fair and equitable compensation opportunities to all colleagues. Growth opportunities and skill development are defining features of the colleague experience at TD. Our compensation policies and practices have been designed to allow colleagues to progress through the salary range over time as they progress in their role. The base pay actually offered may vary based upon the candidate's skills and experience, job\\-related knowledge, geographic location, and other specific business and organizational needs. As a candidate, you are encouraged to ask compensation related questions and have an open dialogue with your recruiter who can provide you more specific details for this role. **Job Description:** **Department Description:** The Canadian Personal Banking (CPB) Analytics, Insights and Artificial Intelligence (AI2\\) team supports the day\\-to\\-day activities of the CPB businesses, working with business partners to address their analytics needs by providing end\\-to\\-end support of data,\u2026"
-    },
-    {
-      "id": "td-data-scientist-iii-toronto,-on,-ca",
-      "company": "TD",
-      "title": "Data Scientist III",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=06d340009fe462fc",
-      "posted_at": "2026-05-14T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Work Location:** Toronto, Ontario, Canada **Hours:** 37\\.5 **Line of Business:** Analytics, Insights, \\& Artificial Intelligence **Pay Details:** $96,900 \\- $136,800 CAD TD is committed to providing fair and equitable compensation opportunities to all colleagues. Growth opportunities and skill development are defining features of the colleague experience at TD. Our compensation policies and practices have been designed to allow colleagues to progress through the salary range over time as they progress in their role. The base pay actually offered may vary based upon the candidate's skills and experience, job\\-related knowledge, geographic location, and other specific business and organizational needs. As a candidate, you are encouraged to ask compensation related questions and have an open dialogue with your recruiter who can provide you more specific details for this role. **Job Description:** **Department Description:** The Canadian Personal Banking (CPB) Analytics, Insights and Artificial Intelligence (AI2\\) team supports the day\\-to\\-day activities of the CPB businesses, working with business partners to address their analytics needs by providing end\\-to\\-end support of data,\u2026"
     },
     {
       "id": "municipal-property-assessment-corporation-junior-systems-developer-(new-grad)-(10)-pickering,-on,-ca",
@@ -11362,6 +11306,34 @@
       "description": "**Work Location:** Toronto, Ontario, Canada **Hours:** 37\\.5 **Line of Business:** Technology Solutions **Pay Details:** $59,500 \\- $84,000 CAD TD is committed to providing fair and equitable compensation opportunities to all colleagues. Growth opportunities and skill development are defining features of the colleague experience at TD. Our compensation policies and practices have been designed to allow colleagues to progress through the salary range over time as they progress in their role. The base pay actually offered may vary based upon the candidate's skills and experience, job\\-related knowledge, geographic location, and other specific business and organizational needs. As a candidate, you are encouraged to ask compensation related questions and have an open dialogue with your recruiter who can provide you more specific details for this role. **Job Description:** **KEY ACCOUNTABILITIES** **CUSTOMER** * Develop new solutions as required for engineering programs and projects within assigned area and may also develop prototypes and proof of concepts aligned to business needs * Participate in the conceptual and logical engineering designs around the advancement of the overall\u2026"
     },
     {
+      "id": "russell-investments-graduate-trainee,-compliance-mh,-in",
+      "company": "RUSSELL INVESTMENTS",
+      "title": "Graduate Trainee, Compliance",
+      "location": "MH, IN",
+      "url": "https://in.indeed.com/viewjob?jk=941487d35542d382",
+      "posted_at": "2026-05-14T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Reporting To:** ================= Broker Dealer Chief Compliance Officer**Shift:** ========== EMEA (1:30 pm \\- 10:30 pm IST) (India)**About Russell Investments, Mumbai:** ====================================== Russell Investments is a leading outsourced financial partner and global investment solutions firm providing a wide range of investment capabilities to institutional investors, financial intermediaries, and individual investors around the world. Building on an 90\\-year legacy of continuous innovation to deliver exceptional value to clients, Russell Investments works every day to improve the financial security of its clients. The firm is \u201cTop 12 Ranked Consultant (2009\\-2024\\)\u201d in P\\&I survey 2024 with $962 billion in assets under advisement (as of December 31, 2025\\) and $376\\.9 billion in assets under management (as of December 31, 2025\\) for clients in 30 countries. Headquartered in Seattle, Washington in the United States, Russell Investments has offices around the world, including London, New York, Toronto, Sydney, Tokyo, Shanghai \u2013 and has opened a new office in Mumbai, India in June 2023\\. Joining the Mumbai office is an incredible opportunity to work closely with\u2026"
+    },
+    {
       "id": "powerschool-group-associate-cloud-operations-engineer-2-ka,-in",
       "company": "PowerSchool Group",
       "title": "Associate Cloud Operations Engineer 2",
@@ -11500,6 +11472,62 @@
       "is_closed": false,
       "comp": null,
       "description": "**Job Description:** **Description:** **The** **Associate Systems Engineer** is part of IIDPPS siglum located in India. He/she is responsible for the **SPDB platform and related products (Airbus Sovereign Physical Design Backbone)** here in India. Success of this position will require strong international collaboration with global Airbus teams. **The successful candidate will play a pivotal role in the evolution of the TDM Application overall landscape for the group by leveraging new digital capabilities and to enable a step change for the coming years.** **Primary responsibilities** * **We seek out curious minds. We value attention to detail, and we care deeply about outcomes. We\u2019re looking above all for passionate people, eager to learn, willing to share, establishing innovative ways of working and influencing culture change.** * **Are you ready to share this exciting challenge with us? We are looking for candidates between 0\\-2 years of experience with a strong passion for** **Spring Framework \\& Spring Boot, Java, RESTful API, Microservices, Hibernate, JDBC, Logging frameworks: Log4j, React, HTML, JavaScript, Angular, CSS, XML, JSON, JUnit, SQL, Jenkins, SonarQube, GitHub,\u2026"
+    },
+    {
+      "id": "td-data-scientist-ii-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Data Scientist II",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=7de6ba74a4a30e81",
+      "posted_at": "2026-05-14T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Work Location:** Toronto, Ontario, Canada **Hours:** 37\\.5 **Line of Business:** Analytics, Insights, \\& Artificial Intelligence **Pay Details:** $81,600 \\- $115,200 CAD TD is committed to providing fair and equitable compensation opportunities to all colleagues. Growth opportunities and skill development are defining features of the colleague experience at TD. Our compensation policies and practices have been designed to allow colleagues to progress through the salary range over time as they progress in their role. The base pay actually offered may vary based upon the candidate's skills and experience, job\\-related knowledge, geographic location, and other specific business and organizational needs. As a candidate, you are encouraged to ask compensation related questions and have an open dialogue with your recruiter who can provide you more specific details for this role. **Job Description:** **Department Description:** The Canadian Personal Banking (CPB) Analytics, Insights and Artificial Intelligence (AI2\\) team supports the day\\-to\\-day activities of the CPB businesses, working with business partners to address their analytics needs by providing end\\-to\\-end support of data,\u2026"
+    },
+    {
+      "id": "td-data-scientist-iii-toronto,-on,-ca",
+      "company": "TD",
+      "title": "Data Scientist III",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=06d340009fe462fc",
+      "posted_at": "2026-05-14T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Work Location:** Toronto, Ontario, Canada **Hours:** 37\\.5 **Line of Business:** Analytics, Insights, \\& Artificial Intelligence **Pay Details:** $96,900 \\- $136,800 CAD TD is committed to providing fair and equitable compensation opportunities to all colleagues. Growth opportunities and skill development are defining features of the colleague experience at TD. Our compensation policies and practices have been designed to allow colleagues to progress through the salary range over time as they progress in their role. The base pay actually offered may vary based upon the candidate's skills and experience, job\\-related knowledge, geographic location, and other specific business and organizational needs. As a candidate, you are encouraged to ask compensation related questions and have an open dialogue with your recruiter who can provide you more specific details for this role. **Job Description:** **Department Description:** The Canadian Personal Banking (CPB) Analytics, Insights and Artificial Intelligence (AI2\\) team supports the day\\-to\\-day activities of the CPB businesses, working with business partners to address their analytics needs by providing end\\-to\\-end support of data,\u2026"
     },
     {
       "id": "hilti-group-associate-design-engineer---rcc-structures-hr,-in",
@@ -17666,34 +17694,6 @@
       "description": "Secure Every Identity, from AI to Human Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. This work requires a relentless drive to solve complex challenges with real-world stakes. We are looking for builders and owners who operate with speed and urgency and execute with excellence. This is an opportunity to do career-defining work. We're all in on this mission. If you are too, let's talk. Responsibilities Support and maintain customers who have implemented the Customer Identity SaaS solution, resolving technical and non-technical customer issues in a timely fashion Operational management of Support tickets Build and maintain excellent relationships with clients and achieve the highest level of customer satisfaction Take end-to-end ownership of customer issues, including initial troubleshooting, identification of root cause and issue resolution. Exceed customer expectations on response quality, timeliness of responses and overall customer experience. Serve as internal and external point of contact on customer issues and ensure they are resolved as\u2026"
     },
     {
-      "id": "veracyte,-inc.-data-scientist-iii---temporary-vancouver,-bc,-ca",
-      "company": "Veracyte, Inc.",
-      "title": "Data Scientist III - Temporary",
-      "location": "Vancouver, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=962acfa0dd359bdc",
-      "posted_at": "2026-05-13T00:00:00",
-      "posted_display": "5 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "At Veracyte, we offer exciting career opportunities for those interested in joining a pioneering team that is committed to transforming cancer care for patients across the globe. Working at Veracyte enables our employees to not only make a meaningful impact on the lives of patients, but to also learn and grow within a purpose driven environment. This is what we call *the Veracyte way* \u2013 it's about how we work together, guided by our values, to give clinicians the insights they need to help patients make life\\-changing decisions. Our Values: * **We Seek A Better Way**: We pursue bold ideas, embrace complexity, and keep pushing forward. * **We Make It Happen**: We act with urgency, deliver with excellence, and always find a way. * **We Are Stronger Together**: We engage with empathy, align around what's best for Veracyte, and celebrate as one team. * **We Care Deeply**: We show up with integrity, kindness, and respect for one another. ### **The Position:** We are seeking a talented and experienced data scientist III (contractor) to join our Data Analysis Team (DAT), as part of the R\\&D group for Veracyte Inc. This position offers a unique opportunity to work with experienced\u2026"
-    },
-    {
       "id": "shyftlabs-associate-ai-engineer-toronto,-on,-ca",
       "company": "ShyftLabs",
       "title": "Associate AI Engineer",
@@ -17776,6 +17776,34 @@
       "is_closed": false,
       "comp": null,
       "description": "**Job Summary** This entry\\-level/early career applied technology role is responsible for developing software that is integrated into Cummins\u2019 products. The role involves understanding stakeholder requirements, defining specifications, and contributing to the design, implementation, testing, and release of embedded and application software across various customer applications. The position requires collaboration with cross\\-functional teams to deliver high\\-quality, reliable, and scalable software solutions while continuously improving development processes, tools, and product performance. **Key Responsibilities** **Software Development \\& Engineering** * Design, develop, and maintain software for embedded systems and product applications. * Implement low\\-level modules in Embedded C with a focus on memory management, performance optimization, and hardware interfacing. * Develop automation scripts using Python and Perl for data processing, workflow automation, and legacy system integration. * Ensure software quality through coding, compiling, testing, and verification using standard engineering tools and practices. **Build \\& DevOps** * Design, configure, and maintain build\u2026"
+    },
+    {
+      "id": "veracyte,-inc.-data-scientist-iii---temporary-vancouver,-bc,-ca",
+      "company": "Veracyte, Inc.",
+      "title": "Data Scientist III - Temporary",
+      "location": "Vancouver, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=962acfa0dd359bdc",
+      "posted_at": "2026-05-13T00:00:00",
+      "posted_display": "5 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "At Veracyte, we offer exciting career opportunities for those interested in joining a pioneering team that is committed to transforming cancer care for patients across the globe. Working at Veracyte enables our employees to not only make a meaningful impact on the lives of patients, but to also learn and grow within a purpose driven environment. This is what we call *the Veracyte way* \u2013 it's about how we work together, guided by our values, to give clinicians the insights they need to help patients make life\\-changing decisions. Our Values: * **We Seek A Better Way**: We pursue bold ideas, embrace complexity, and keep pushing forward. * **We Make It Happen**: We act with urgency, deliver with excellence, and always find a way. * **We Are Stronger Together**: We engage with empathy, align around what's best for Veracyte, and celebrate as one team. * **We Care Deeply**: We show up with integrity, kindness, and respect for one another. ### **The Position:** We are seeking a talented and experienced data scientist III (contractor) to join our Data Analysis Team (DAT), as part of the R\\&D group for Veracyte Inc. This position offers a unique opportunity to work with experienced\u2026"
     },
     {
       "id": "teradyne-software-engineer,-new-college-graduate,-(teradyne,-north-reading,-ma)-north-reading,-ma,-u",
@@ -17933,36 +17961,6 @@
       "description": "Machine learning Machine Learning Engineer Graduate (TikTok\\-Data\\-Search\\-Basic Ranking) \\- 2026 Start (BS/MS) Location : San Jose Employment Type : Regular Job Code : A239071 Responsibilities About the team On the TikTok Search Team, you will have the opportunity to develop and apply cutting edge machine learning technologies in real\\-time large\\-scale systems, which serve billions of search requests every day. Via advanced NLP and multi\\-modal models, our projects impact and improve the search experience for hundreds of millions of users globally. We are also exploring how to leverage LLM to further enhance TikTok users search experience, potentially sharping the search engine for the next generation. We embrace a culture of self\\-direction, intellectual curiosity, openness, and problem\\-solving. We are looking for talented individuals to join our team in 2026\\. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth. Launch your career where inspiration is infinite at TikTok. Successful candidates must be able to commit to an onboarding date by end of year 2026\\. Please state your availability and graduation date\u2026"
     },
     {
-      "id": "capital-one-associate,-strategy-analyst---new-grad-2027-toronto,-on,-ca",
-      "company": "Capital One",
-      "title": "Associate, Strategy Analyst - New Grad 2027",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=c814dbbd5f17a4c8",
-      "posted_at": "2026-05-13T00:00:00",
-      "posted_display": "5 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "finance"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "161 Bay Street (93021\\), Canada, Toronto,Toronto, Ontario,Associate, Strategy Analyst \\- New Grad 2027### **About Capital One Canada.** For 30 years, we\u2019ve been on a mission to change banking for good and build relationships by making credit accessible, simple, intuitive and rewarding. We want to help Canadians succeed with credit, because we believe in people \u2014 in our customers, in our associates, and in talent like you! ### **About the Team** Our strategy analysts are deployed across all areas of our business \\- product design, fraud, customer acquisitions, customer management strategy, and more \\- and analysts over time get the opportunity to rotate to different areas of the business to help them build a well rounded understanding of our business. Here are a few of the ways our Strategy Analysts are helping people take control of their credit: * Underwriting (Credit Policy \\& Valuations): Strategy Analysts are responsible for assisting in developing \\& maintaining statistical models and the associated credit policies that help us determine who we extend credit to. Analysts in the space perform analysis on credit performance to help influence how we update and optimize our\u2026"
-    },
-    {
       "id": "danbury-public-schools-school-counselor---2026/2027-sy-danbury,-ct,-us",
       "company": "Danbury Public Schools",
       "title": "School Counselor - 2026/2027 SY",
@@ -18055,6 +18053,36 @@
         "source": "jobspy"
       },
       "description": "**Pay Grade/Pay Range:** Minimum: $62,300 \\- Midpoint: $81,000 (Salaried E10\\) **Department/Organization:** 206205 \\- Business Analytics Institute **Normal Work Schedule:** Monday \\- Friday 8:00am to 5:00pm **Note to Applicants:** Position is eligible for hybrid work subject to University **policy**. **Job Summary:** The Data Scientist I assists in data management and integration efforts across the university, state, and federal agencies. Develops processes to extract, transform, and load data into common data repositories. Coordinates creating new databases, performing database backups and restores, user maintenance, and ensuring database performance. **Additional Department Summary:** The Culverhouse College of Business at The University of Alabama is seeking a Research Data Scientist to join the Institute of Data and Analytics (IDA). The Data Scientist will lead and support data analysis efforts across multiple IDA projects, with emphasis on statistical modeling, machine learning, and effective communication of results. This individual will collaborate on high\\-impact initiatives such as Alabama Medicaid and the Drug Data Research Center (DDRC), as well as interdisciplinary\u2026"
+    },
+    {
+      "id": "capital-one-associate,-strategy-analyst---new-grad-2027-toronto,-on,-ca",
+      "company": "Capital One",
+      "title": "Associate, Strategy Analyst - New Grad 2027",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=c814dbbd5f17a4c8",
+      "posted_at": "2026-05-13T00:00:00",
+      "posted_display": "5 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "161 Bay Street (93021\\), Canada, Toronto,Toronto, Ontario,Associate, Strategy Analyst \\- New Grad 2027### **About Capital One Canada.** For 30 years, we\u2019ve been on a mission to change banking for good and build relationships by making credit accessible, simple, intuitive and rewarding. We want to help Canadians succeed with credit, because we believe in people \u2014 in our customers, in our associates, and in talent like you! ### **About the Team** Our strategy analysts are deployed across all areas of our business \\- product design, fraud, customer acquisitions, customer management strategy, and more \\- and analysts over time get the opportunity to rotate to different areas of the business to help them build a well rounded understanding of our business. Here are a few of the ways our Strategy Analysts are helping people take control of their credit: * Underwriting (Credit Policy \\& Valuations): Strategy Analysts are responsible for assisting in developing \\& maintaining statistical models and the associated credit policies that help us determine who we extend credit to. Analysts in the space perform analysis on credit performance to help influence how we update and optimize our\u2026"
     },
     {
       "id": "boston-scientific-r&d-engineering-associate,-co-op/new-grad-mississauga,-on,-ca",
@@ -18656,34 +18684,6 @@
       "description": "About the role Chime\u2019s Instant Loans team builds products that give members upfront liquidity for larger, specific needs, with clear, predictable repayment that helps them build credit responsibly. As an engineer on the team, you\u2019ll work across the stack to build and scale services that offer a few hundred to a few thousand dollars over terms from months to years, making fair credit accessible to people who are often denied by traditional banks. This role is ideal for engineers who want to move quickly, collaborate closely with product, design, data, and risk, and care deeply about expanding financial access and stability for millions of members. The base salary offered for this role and level of experience will begin at $133,000 and up to $184,000. Full-time employees are also eligible for a bonus, competitive equity package, and benefits. The actual base salary offered may be higher, depending on your location, skills, qualifications, and experience.&nbsp; In this role, you can expect to Design, develop, test, refactor and scale backend implementations of new and existing consumer product features Work on member-facing mobile app, including designing and building strong,\u2026"
     },
     {
-      "id": "jti---japan-tobacco-international-finance-new-graduate-jk,-in",
-      "company": "JTI - Japan Tobacco International",
-      "title": "Finance New Graduate",
-      "location": "JK, IN",
-      "url": "https://in.indeed.com/viewjob?jk=135ccf212488b3bd",
-      "posted_at": "2026-05-12T00:00:00",
-      "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "At JTI we celebrate differences, and everyone truly belongs. **46,000 people from all over the world** are continuously building their unique success story with us. **83% of employees feel happy** working at JTI. To make a difference with us, all you need to do is bring your **human best.** What will your story be? Apply now! **Learn more:** **jti.com** **Join Our GSC Finance Team \u2013 New Graduate Program (11\\-Month Contract)** **Qualifications and Job Description** Are you a recent or soon\\-to\\-be graduate ready to kick\\-start your career in a dynamic and supportive environment? We\u2019re looking for curious, motivated, forward\\-thinking individuals to join our GSC Finance Department team for an exciting 11\\-month development journey. **Who We\u2019re Looking For** We welcome applications from candidates who meet the following criteria: * Graduating with a Bachelor\u2019s degree in 2025 or 2026 in Business Administration or a related field * Proficient in English (written and spoken) * Power BI, SAP HANA, and SQL knowledge is a plus * Interested in pursuing a career in Finance * Strong communication skills to collaborate with cross\\-functional teams and business partners * Open to a full\\-time,\u2026"
-    },
-    {
       "id": "zu-junior-developer-saskatoon,-sk,-ca",
       "company": "ZU",
       "title": "Junior Developer",
@@ -18766,6 +18766,34 @@
       "is_closed": false,
       "comp": null,
       "description": "**About the Organization** Local Engineering Ltd. is an Alberta based engineering services provider supporting a select group of recurring clients. Local\u2019s unique approach is to develop a long\\-term relationship with our clients, becoming the \u201cowner\u2019s engineer\u201d and prioritizing client needs. We have a wide\\-ranging and diverse client base to help stabilize our workload when some markets are in a downturn. The quickly growing Local Engineering team is small but nimble, with a one\\-of\\-a\\-kind collaborative team environment. **Job Summary** The Junior Electrical Engineer will provide electrical and instrumentation engineering support on a variety of projects/clients including modifications to existing facilities, conceptual design of improvement ideas, replacement of existing equipment and design and implementation of new capital projects. The pace of work is fast and changes from day to day, which requires an agile person who can manage and execute many activities simultaneously in a challenging environment. This position is an opportunity for a high level of growth and career development and requires a motivated individual who can constantly learn and adapt. It is critical that\u2026"
+    },
+    {
+      "id": "jti---japan-tobacco-international-finance-new-graduate-jk,-in",
+      "company": "JTI - Japan Tobacco International",
+      "title": "Finance New Graduate",
+      "location": "JK, IN",
+      "url": "https://in.indeed.com/viewjob?jk=135ccf212488b3bd",
+      "posted_at": "2026-05-12T00:00:00",
+      "posted_display": "6 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "At JTI we celebrate differences, and everyone truly belongs. **46,000 people from all over the world** are continuously building their unique success story with us. **83% of employees feel happy** working at JTI. To make a difference with us, all you need to do is bring your **human best.** What will your story be? Apply now! **Learn more:** **jti.com** **Join Our GSC Finance Team \u2013 New Graduate Program (11\\-Month Contract)** **Qualifications and Job Description** Are you a recent or soon\\-to\\-be graduate ready to kick\\-start your career in a dynamic and supportive environment? We\u2019re looking for curious, motivated, forward\\-thinking individuals to join our GSC Finance Department team for an exciting 11\\-month development journey. **Who We\u2019re Looking For** We welcome applications from candidates who meet the following criteria: * Graduating with a Bachelor\u2019s degree in 2025 or 2026 in Business Administration or a related field * Proficient in English (written and spoken) * Power BI, SAP HANA, and SQL knowledge is a plus * Interested in pursuing a career in Finance * Strong communication skills to collaborate with cross\\-functional teams and business partners * Open to a full\\-time,\u2026"
     },
     {
       "id": "jacobs-entry-level-process-engineering-graduate/eit-burnaby,-bc,-ca",
@@ -18960,34 +18988,6 @@
       "description": "**About Us** Visa is a world leader in payments technology, facilitating transactions between consumers, merchants, financial institutions and government entities across more than 200 countries and territories, dedicated to uplifting everyone, everywhere by being the best way to pay and be paid. At Visa, you'll have the opportunity to create impact at scale \u2014 tackling meaningful challenges, growing your skills and seeing your contributions impact lives around the world. Join Visa and do work that matters \u2013 to you, to your community, and to the world. Progress starts with you. **Job Description** Company Description Visa is a world leader in payments and technology, with over 259 billion payments transactions flowing safely between consumers, merchants, financial institutions, and government entities in more than 200 countries and territories each year. Our mission is to connect the world through the most innovative, convenient, reliable, and secure payments network, enabling individuals, businesses, and economies to thrive while driven by a common purpose \u2013 to uplift everyone, everywhere by being the best way to pay and be paid. Make an impact with a purpose\\-driven industry\u2026"
     },
     {
-      "id": "sunnybrook-health-sciences-centre-pharmacy-technician---st.-john's-rehab-pharmacy---regular-part-tim",
-      "company": "Sunnybrook Health Sciences Centre",
-      "title": "Pharmacy Technician - St. John's Rehab Pharmacy - Regular Part-Time 2026-17386",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=3e07e41e472fee51",
-      "posted_at": "2026-05-12T00:00:00",
-      "posted_display": "6 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "The Pharmacy Technician duties can be broadly divided into three areas: medication dispensing and distribution, non\\-sterile compounding and prepackaging, and clerical duties such as inventory management following established guidelines and in collaboration with the Pharmacy Technician Team Lead and under the supervision of the Pharmacist Manager. Additional Pharmacy Technician duties include participating in medication reconciliation, performing mathematical calculations, accurate and detailed record keeping and participation in staff meeting discussions. **Summary of Duties:** * Perform all duties associated with medication dispensing and distribution ensuring accuracy in all duties. Issue ward stock to the patient care units and participate in the drug distribution process which may include medication prepackaging functions as required. * Perform best possible medication history in collaboration with Pharmacists. * Drug delivery to nursing units. * Non Sterile compounding following best practice standards for solutions, ointments and other pharmaceuticals. * Receiving of drugs and supplies. * Participate as a member of the pharmacy team. * Provide Patient Education as required\u2026"
-    },
-    {
       "id": "anaplan-software-engineer-hr,-in",
       "company": "Anaplan",
       "title": "Software Engineer",
@@ -19042,6 +19042,34 @@
       "is_closed": false,
       "comp": null,
       "description": "At Anaplan, we are a team of innovators focused on optimizing business decision\\-making through our leading AI\\-infused scenario planning and analysis platform so our customers can outpace their competition and the market. What unites Anaplanners across teams and geographies is our collective commitment to our customers' success and to our Winning Culture. Our customers rank among the who's who in the Fortune 50\\. Coca\\-Cola, LinkedIn, Adobe, LVMH and Bayer are just a few of the 2,400\\+ global companies who rely on our best\\-in\\-class platform. Our Winning Culture is the engine that drives our teams of innovators. We champion diversity of thought and ideas, we behave like leaders regardless of title, we are committed to achieving ambitious goals, and we love celebratingour wins \u2013 big and small. Supported by operating principles of being strategy\\-led, values\\-based and disciplined in execution, you'll be inspired, connected, developed and rewarded here. Everything that makes you unique is welcome; join us and let's build what's next \\- together! Here at Anaplan, we have reinvented how companies see, plan, and run their businesses. Our platform allows our customers to uncover new\u2026"
+    },
+    {
+      "id": "sunnybrook-health-sciences-centre-pharmacy-technician---st.-john's-rehab-pharmacy---regular-part-tim",
+      "company": "Sunnybrook Health Sciences Centre",
+      "title": "Pharmacy Technician - St. John's Rehab Pharmacy - Regular Part-Time 2026-17386",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=3e07e41e472fee51",
+      "posted_at": "2026-05-12T00:00:00",
+      "posted_display": "6 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "The Pharmacy Technician duties can be broadly divided into three areas: medication dispensing and distribution, non\\-sterile compounding and prepackaging, and clerical duties such as inventory management following established guidelines and in collaboration with the Pharmacy Technician Team Lead and under the supervision of the Pharmacist Manager. Additional Pharmacy Technician duties include participating in medication reconciliation, performing mathematical calculations, accurate and detailed record keeping and participation in staff meeting discussions. **Summary of Duties:** * Perform all duties associated with medication dispensing and distribution ensuring accuracy in all duties. Issue ward stock to the patient care units and participate in the drug distribution process which may include medication prepackaging functions as required. * Perform best possible medication history in collaboration with Pharmacists. * Drug delivery to nursing units. * Non Sterile compounding following best practice standards for solutions, ointments and other pharmaceuticals. * Receiving of drugs and supplies. * Participate as a member of the pharmacy team. * Provide Patient Education as required\u2026"
     },
     {
       "id": "fairview-park-hospital-dublin-new-graduate-nurse-residency-dublin,-ga,-us",
@@ -20756,34 +20784,6 @@
       "description": "**Job Description** Looking to start your career in Financial Services? RBC fosters a positive learning environment for students by providing the support and resources to help strategize your career path. Since we opened our doors in 1864, RBC has grown to become one of North America's leading diversified financial services companies. This is an exciting opportunity to be part of a high\\-performing and dynamic global group. **What will you do?** As an AI Engineering Co\\-Op, you\u2019ll act as a catalyst for innovation, aligning AI capabilities with business goals. Your responsibilities will include: * **AI Experimentation \\& POC Development:** Contribute to rapid proof\\-of\\-concept (POC) projects and prototypes to test emerging AI/ML models, tools, and techniques, presenting findings to stakeholders. * **Data Pipeline Engineering:** Assist in crafting and optimizing scalable data pipelines to support AI workflows, ensuring data quality and efficiency * **Documentation \\& Testing:** Maintain clear documentation for ML pipelines and contribute to QA testing of new deployments. * **Research \\& Learning:** Stay curious! Explore new frameworks, read relevant papers, and share insights with\u2026"
     },
     {
-      "id": "cerebras-systems-new-grad---ml-stack-optimization-engineer-toronto,-on,-ca",
-      "company": "Cerebras Systems",
-      "title": "New Grad - ML Stack Optimization Engineer",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=833626ce4bc97b2e",
-      "posted_at": "2026-05-11T00:00:00",
-      "posted_display": "2026-05-11",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "unicorn",
-        "emoji": "\ud83d\ude80",
-        "label": "Unicorn",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Cerebras Systems builds the world's largest AI chip, 56 times larger than GPUs. Our novel wafer\\-scale architecture provides the AI compute power of dozens of GPUs on a single chip, with the programming simplicity of a single device. This approach allows Cerebras to deliver industry\\-leading training and inference speeds and empowers machine learning users to effortlessly run large\\-scale ML applications, without the hassle of managing hundreds of GPUs or TPUs. Cerebras' current customers include top model labs, global enterprises, and cutting\\-edge AI\\-native startups. OpenAI recently announced a multi\\-year partnership with Cerebras, to deploy 750 megawatts of scale, transforming key workloads with ultra high\\-speed inference. Thanks to the groundbreaking wafer\\-scale architecture, Cerebras Inference offers the fastest Generative AI inference solution in the world, over 10 times faster than GPU\\-based hyperscale cloud inference services. This order of magnitude increase in speed is transforming the user experience of AI applications, unlocking real\\-time iteration and increasing intelligence via additional agentic computation. **Job Overview** We are seeking a highly skilled\u2026"
-    },
-    {
       "id": "temporal-technologies-software-engineer---ai-sdk-new-or,-us",
       "company": "Temporal Technologies",
       "title": "Software Engineer - AI SDK New",
@@ -20815,6 +20815,34 @@
         "source": "jobspy"
       },
       "description": "### **About Us** Temporal is an open source programming model that can simplify code, make applications more reliable, and help developers focus on the important things like delivering features faster. We are on a mission to be the reliable foundation of every developer\u2019s toolbox, and are building the team that will make that happen. Our values guide us \u2014they are present in how we show up, make decisions, and work together to make an impact. We\u2019re curious, driven, collaborative, genuine and humble. Temporal is growing and we are looking for those who share our values, challenge 'standard' thinking, and want to influence our future. If you have a passion for improving the developer experience, building world\\-class open\\-source software and communities, and want to be a part of our amazing team, we'd love to hear from you! **Summary** We have an opening to hire a **Software Engineer \\- AI SDK.** Temporal provides durable execution, the systems foundation used for reliable AI at leaders such as OpenAI, Lovable, Replit, and many others. As a member of the AI SDK team, you will be creating building blocks to support the expanding ecosystem of AI applications. Under the hood,\u2026"
+    },
+    {
+      "id": "cerebras-systems-new-grad---ml-stack-optimization-engineer-toronto,-on,-ca",
+      "company": "Cerebras Systems",
+      "title": "New Grad - ML Stack Optimization Engineer",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=833626ce4bc97b2e",
+      "posted_at": "2026-05-11T00:00:00",
+      "posted_display": "2026-05-11",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "\ud83d\ude80",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Cerebras Systems builds the world's largest AI chip, 56 times larger than GPUs. Our novel wafer\\-scale architecture provides the AI compute power of dozens of GPUs on a single chip, with the programming simplicity of a single device. This approach allows Cerebras to deliver industry\\-leading training and inference speeds and empowers machine learning users to effortlessly run large\\-scale ML applications, without the hassle of managing hundreds of GPUs or TPUs. Cerebras' current customers include top model labs, global enterprises, and cutting\\-edge AI\\-native startups. OpenAI recently announced a multi\\-year partnership with Cerebras, to deploy 750 megawatts of scale, transforming key workloads with ultra high\\-speed inference. Thanks to the groundbreaking wafer\\-scale architecture, Cerebras Inference offers the fastest Generative AI inference solution in the world, over 10 times faster than GPU\\-based hyperscale cloud inference services. This order of magnitude increase in speed is transforming the user experience of AI applications, unlocking real\\-time iteration and increasing intelligence via additional agentic computation. **Job Overview** We are seeking a highly skilled\u2026"
     },
     {
       "id": "scan-health-plan-healthcare-data-scientist-long-beach,-ca,-us",
@@ -31960,11 +31988,11 @@
       "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. On the ML Fraud team, you\u2019ll build and improve machine learning systems that make real-time transaction decisions, protecting consumers and merchants while balancing fraud loss, customer experience, and conversion. You\u2019ll work closely with experienced ML engineers, platform partners, and cross-functional stakeholders to take models from idea to prototype to production, and to keep them healthy with strong measurement and monitoring as fraud patterns evolve. &nbsp; What you\u2019ll do - You will develop and iterate on fraud prediction models using a mix of approaches for tabular and behavioral data - You will build and scale feature pipelines and training datasets from proprietary and third-party signals, partnering with data and platform teams when needed. - You will prototype new modeling ideas and features, run offline experiments, and drive the best-performing approaches into production with appropriate risk controls. - You will help productionize models: integrate into batch and/or real-time decision systems,\u2026"
     },
     {
-      "id": "abnormal-security-software-engineer-1,-dev-accelerator-remote---canada",
+      "id": "abnormal-security-software-engineer-1,-dev-accelerator-remote---usa",
       "company": "Abnormal Security",
       "title": "Software Engineer 1, Dev Accelerator",
-      "location": "Remote - Canada",
-      "url": "https://abnormal.ai/careers/jobs/7714041003?gh_jid=7714041003",
+      "location": "Remote - USA",
+      "url": "https://abnormal.ai/careers/jobs/7697216003?gh_jid=7697216003",
       "posted_at": "2026-04-29T16:19:58",
       "posted_display": "2026-04-29",
       "source": "Greenhouse",
@@ -31988,11 +32016,11 @@
       "description": "About the Role The Dev Accelerator team builds and operates Abnormal\u2019s internal developer platform: the tools, libraries, and infrastructure that help engineers design, build, test, and ship products quickly and safely. The team owns developer CLI tooling, monorepo build and CI workflows, shared Go/Python libraries, and test and release safety systems that form the Golden Path for backend development. As a Software Engineer on Dev Accelerator, you\u2019ll own scoped problems end-to-end with support from teammates, using good judgment and growing independence to deliver reliable outcomes. You\u2019ll use AI as a core part of how you explore solutions and move quickly, while validating that generated outputs are correct, maintainable, and production-ready. What you will do&nbsp; Contribute to the internal developer platform that supports backend development across the company, from local developer workflows to shared services and libraries. Build and improve scoped pieces of developer tooling, including CLI and scaffolding workflows that help engineers create and ship new services safely and consistently. Help maintain and improve CI/CD, linting, and testing workflows in the monorepo, with a\u2026"
     },
     {
-      "id": "abnormal-security-software-engineer-1,-dev-accelerator-remote---usa",
+      "id": "abnormal-security-software-engineer-1,-dev-accelerator-remote---canada",
       "company": "Abnormal Security",
       "title": "Software Engineer 1, Dev Accelerator",
-      "location": "Remote - USA",
-      "url": "https://abnormal.ai/careers/jobs/7697216003?gh_jid=7697216003",
+      "location": "Remote - Canada",
+      "url": "https://abnormal.ai/careers/jobs/7714041003?gh_jid=7714041003",
       "posted_at": "2026-04-29T16:19:58",
       "posted_display": "2026-04-29",
       "source": "Greenhouse",
@@ -32718,34 +32746,6 @@
       "company": "Abnormal Security",
       "title": "Software Engineer 2",
       "location": "Hybrid - Bangalore, India",
-      "url": "https://abnormal.ai/careers/jobs/7694634003?gh_jid=7694634003",
-      "posted_at": "2026-04-28T14:40:34",
-      "posted_display": "2026-04-28",
-      "source": "Greenhouse",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Job Description About the Role Abnormal Security is looking for a backend software engineer to work on customer-facing products that enable SOC teams to search across cloud email tenants, investigate threats, and perform remediation at scale. You'll work on systems that directly power how security teams find and act on malicious messages inside the Abnormal platform. We use AI-augmented development practices across our engineering org, and expect engineers to leverage modern AI tools to build faster and ship high-quality software with more leverage. The ideal candidate has backend and distributed systems experience, takes ownership of what they ship, and wants to work on products where reliability and speed directly affect customer security outcomes. What You Will Do Design and build backend services that power search, remediation, and quarantine workflows across multi-tenant enterprise email environments Work with the Tech Lead, Engineering Manager, and Product Manager to scope, develop, and deliver features end-to-end Own the reliability of the systems you build, including unit tests, integration testing, and production observability Participate in on-call rotations and provide\u2026"
-    },
-    {
-      "id": "abnormal-security-software-engineer-2-hybrid---bangalore,-india",
-      "company": "Abnormal Security",
-      "title": "Software Engineer 2",
-      "location": "Hybrid - Bangalore, India",
       "url": "https://abnormal.ai/careers/jobs/7694704003?gh_jid=7694704003",
       "posted_at": "2026-04-28T14:40:34",
       "posted_display": "2026-04-28",
@@ -32768,6 +32768,34 @@
       "is_closed": false,
       "comp": null,
       "description": "About the Role Abnormal Security is looking for an experienced and driven Platform &amp; Infra software engineer to join the PI team. Join us and help build the platforms that power Abnormal's growth Observability Platform - Own and evolve the monitoring, metrics, and alerting infrastructure that every engineering team at Abnormal depends on. You'll work across the Prometheus, Chronosphere, and Grafana stack to ensure engineers can see what their systems are doing in real time \u2014 building dashboards, managing metric pipelines at scale, operating the PagerDuty alerting pipeline, and driving cost-efficient observability across all production environments (US, EU, and GovCloud). &nbsp;&nbsp;Your Impact Own the observability stack (Prometheus, Chronosphere, Grafana, PagerDuty) that every team relies on to detect, diagnose, and resolve production issues \u2014 when you make it better, every engineer at Abnormal gets faster. Design platforms and developer tooling that remove friction \u2014 reducing deployment times, simplifying pipeline authoring, and letting product teams focus on building rather than firefighting. Drive SLAs and SLOs for critical shared infrastructure ensuring the systems\u2026"
+    },
+    {
+      "id": "abnormal-security-software-engineer-2-hybrid---bangalore,-india",
+      "company": "Abnormal Security",
+      "title": "Software Engineer 2",
+      "location": "Hybrid - Bangalore, India",
+      "url": "https://abnormal.ai/careers/jobs/7694634003?gh_jid=7694634003",
+      "posted_at": "2026-04-28T14:40:34",
+      "posted_display": "2026-04-28",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Job Description About the Role Abnormal Security is looking for a backend software engineer to work on customer-facing products that enable SOC teams to search across cloud email tenants, investigate threats, and perform remediation at scale. You'll work on systems that directly power how security teams find and act on malicious messages inside the Abnormal platform. We use AI-augmented development practices across our engineering org, and expect engineers to leverage modern AI tools to build faster and ship high-quality software with more leverage. The ideal candidate has backend and distributed systems experience, takes ownership of what they ship, and wants to work on products where reliability and speed directly affect customer security outcomes. What You Will Do Design and build backend services that power search, remediation, and quarantine workflows across multi-tenant enterprise email environments Work with the Tech Lead, Engineering Manager, and Product Manager to scope, develop, and deliver features end-to-end Own the reliability of the systems you build, including unit tests, integration testing, and production observability Participate in on-call rotations and provide\u2026"
     },
     {
       "id": "abnormal-security-software-engineer-2-hybrid---bangalore,-india",
