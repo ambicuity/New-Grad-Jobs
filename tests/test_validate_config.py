@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from test_config import validate_config
+from validate_config import validate_config
 
 
 def _write(path: Path, content: str) -> None:

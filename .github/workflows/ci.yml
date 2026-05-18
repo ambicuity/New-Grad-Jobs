@@ -41,8 +41,8 @@ jobs:
       - name: Syntax check — generate_companies.py
         run: python -m py_compile scripts/generate_companies.py
 
-      - name: Syntax check — test_config.py
-        run: python -m py_compile test_config.py
+      - name: Syntax check — scripts/validate_config.py
+        run: python -m py_compile scripts/validate_config.py
 
       - name: Syntax check — fix_nan_only.py
         run: python -m py_compile scripts/fix_nan_only.py
@@ -72,7 +72,7 @@ jobs:
           EOF
 
       - name: Run unit tests
-        run: python test_config.py
+        run: python scripts/validate_config.py
 
       - name: Check for duplicate API URLs in config.yml
         run: |
