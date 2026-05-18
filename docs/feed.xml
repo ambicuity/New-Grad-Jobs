@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 21:25:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 22:35:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer - Azure Government at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 18 May 2026 22:29:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
+    </item>
+    <item>
+      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 18 May 2026 22:28:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Detection &amp; Response at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 18 May 2026 22:23:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
+    </item>
+    <item>
+      <title>Exceptional Software Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
+      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Mon, 18 May 2026 22:18:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7940098</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 18 May 2026 22:00:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7940098</guid>
+    </item>
     <item>
       <title>Software Engineer - Data at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5124616007</link>
@@ -97,34 +132,6 @@
       <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 18 May 2026 20:14:18 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
-    </item>
-    <item>
-      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 18 May 2026 20:14:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Azure Government at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
-      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 18 May 2026 20:14:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Detection &amp; Response at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
-      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 18 May 2026 20:14:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
-    </item>
-    <item>
-      <title>Exceptional Software Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
-      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 18 May 2026 20:14:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
     </item>
     <item>
       <title>Software Engineer, Maneuver Dominance  at Anduril Industries</title>
@@ -317,17 +324,17 @@
     </item>
     <item>
       <title>Early Career Manufacturing Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5107965007?gh_jid=5107965007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5107965007?gh_jid=5107965007</guid>
-    </item>
-    <item>
-      <title>Early Career Manufacturing Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</link>
       <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</guid>
+    </item>
+    <item>
+      <title>Early Career Manufacturing Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5107965007?gh_jid=5107965007</link>
+      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5107965007?gh_jid=5107965007</guid>
     </item>
     <item>
       <title>Early Career Mechanical Engineer at Anduril Industries</title>
@@ -338,24 +345,17 @@
     </item>
     <item>
       <title>Early Career Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4824364007?gh_jid=4824364007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4824364007?gh_jid=4824364007</guid>
-    </item>
-    <item>
-      <title>Early Career Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
     </item>
     <item>
-      <title>Electrical Systems Engineer, C2 Integration - Active Clearance at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <title>Early Career Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4824364007?gh_jid=4824364007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Mon, 18 May 2026 17:30:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4824364007?gh_jid=4824364007</guid>
     </item>
   </channel>
 </rss>
