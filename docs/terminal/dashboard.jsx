@@ -484,7 +484,10 @@ function DashboardDetail({ job, saved, onSave }) {
       {/* Description */}
       <div style={{ padding: '14px 16px', borderBottom: `1px solid ${BBG.rule2}` }}>
         <div style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>ABOUT THE ROLE</div>
-        <div style={{ color: BBG.ink, lineHeight: 1.6 }}>{job.desc}</div>
+        <div style={{
+          color: BBG.ink, lineHeight: 1.55, fontSize: 11.5,
+          maxHeight: 160, overflowY: 'auto', paddingRight: 8,
+        }}>{job.desc}</div>
       </div>
 
       {/* Stack */}
