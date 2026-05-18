@@ -6,7 +6,7 @@
 //                    fmtComp, daysLeft, deadlineLabel, deadlineHot,
 //                    NGJOBS_READY (Promise that resolves once jobs are loaded).
 
-const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', FE:'frontend', BE:'backend', INFRA:'infra', SEC:'security', MOBILE:'mobile' };
+const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', FE:'frontend', BE:'backend', INFRA:'infra', SEC:'security', MOBILE:'mobile', HW:'hardware' };
 const SIZE_LABEL = { S:'<50', M:'50–500', L:'500–5k', XL:'5k+' };
 const RMT_LABEL  = { remote:'remote', hybrid:'hybrid', onsite:'onsite' };
 
@@ -36,9 +36,36 @@ const CATEGORY_TYPE = {
   data_ml:              'ML',
   data_engineering:     'DATA',
   infrastructure_sre:   'INFRA',
-  hardware:             'INFRA',
+  hardware:             'HW',
   other:                'SWE',
 };
+
+// Title-pattern matches that beat the (coarse) category mapping.  Pattern
+// order matters: HW before INFRA so "embedded systems engineer" wins HW;
+// SEC before INFRA so "cloud security engineer" wins SEC; ML before DATA
+// so "ML platform engineer" wins ML; MOBILE before FE so "mobile/iOS web"
+// goes to MOBILE.  Tested against the live 1134-job scrape:
+//   INFRA 184, SEC 130, DATA 79, ML 52, BE 43, HW 29, MOBILE 11, FE 8
+// The remaining ~629 jobs fall through to CATEGORY_TYPE (mostly SWE).
+const _TYPE_TITLE_PATTERNS = [
+  ['HW',     /\b(firmware|asic|fpga|silicon|chip design|rtl|verilog|embedded|hardware engineer)\b/i],
+  ['SEC',    /\b(security engineer|infosec|appsec|cyber\s?security|application security|cloud security|penetration)\b/i],
+  ['ML',     /\b(machine learning|ml engineer|ml research|ai engineer|ai research|deep learning|research engineer|nlp engineer|computer vision)\b/i],
+  ['DATA',   /\b(data scientist|data engineer|data analyst|analytics engineer|business intelligence)\b/i],
+  ['MOBILE', /\b(mobile|ios|android)\b/i],
+  ['FE',     /\b(front[\s-]?end|frontend|ui engineer|web engineer)\b/i],
+  ['BE',     /\b(back[\s-]?end|backend|server[\s-]?side)\b/i],
+  ['INFRA',  /\b(infrastructure|\bsre\b|site reliability|devops|platform engineer|reliability engineer|kubernetes|cloud engineer|distributed systems|systems engineer)\b/i],
+];
+
+function deriveType(j) {
+  const title = j.title || '';
+  for (const [type, pat] of _TYPE_TITLE_PATTERNS) {
+    if (pat.test(title)) return type;
+  }
+  const catId = (j.category || {}).id || 'other';
+  return CATEGORY_TYPE[catId] || 'SWE';
+}
 
 const TIER_SIZE = {
   faang_plus: 'XL',
@@ -87,7 +114,6 @@ function deriveRmt(j) {
 }
 
 function mapJob(j) {
-  const catId = (j.category || {}).id || 'other';
   const tier  = (j.company_tier || {}).tier || 'other';
   const flags = j.flags || {};
   const noSponsorship = flags.no_sponsorship === true || flags.us_citizenship_required === true;
@@ -104,7 +130,7 @@ function mapJob(j) {
     cohort:  '26',                           // all jobs are new-grad
     comp:    compTuple(j),                   // [null, null] when undisclosed
     dl:      addDays(j.posted_at, 90),       // synthetic 90-day window
-    type:    CATEGORY_TYPE[catId] || 'SWE',
+    type:    deriveType(j),
     posted:  ageString(j.posted_at),
     level:   'entry',
     desc:    `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
