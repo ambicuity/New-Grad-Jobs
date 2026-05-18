@@ -143,6 +143,9 @@ function mapJob(j) {
 
 let NGJOBS = [];
 window.NGJOBS = NGJOBS;
+// Surface jobs.json `meta` (notably meta.generated_at) so the LIVE indicator
+// in app.jsx can render a real timestamp instead of a hardcoded one.
+window.NGJOBS_META = {};
 
 const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
   .then(r => {
@@ -150,6 +153,7 @@ const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
     return r.json();
   })
   .then(d => {
+    window.NGJOBS_META = d.meta || {};
     // Real jobs.json contains duplicate ids (same role on multiple sources).
     // Disambiguate by appending an index suffix when needed.
     const seen = new Map();
@@ -164,6 +168,7 @@ const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
   .catch(err => {
     console.error('[terminal] failed to load jobs.json:', err);
     window.NGJOBS = [];
+    window.NGJOBS_META = {};
     return [];
   });
 
