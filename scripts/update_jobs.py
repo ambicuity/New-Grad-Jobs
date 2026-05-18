@@ -13,8 +13,8 @@ Performance Optimizations:
 - DNS caching and TCP connection reuse
 """
 
-import json
 import html
+import json
 import math
 import os
 import random

@@ -9,9 +9,9 @@ ROOT = Path(__file__).resolve().parent.parent
 COUNT_SURFACES = [
     ROOT / "README.md",
     ROOT / "docs" / "index.html",
-    ROOT / "docs" / "stats.html",
     ROOT / "docs" / "contributors.html",
-    ROOT / "docs" / "app.js",
+    # docs/stats.html and docs/app.js were removed in the NGJ terminal redesign;
+    # check only the surfaces that still exist on disk.
 ]
 
 
@@ -21,6 +21,8 @@ def test_no_stale_hardcoded_company_count_marketing_copy() -> None:
 
     offenders = []
     for path in COUNT_SURFACES:
+        if not path.exists():
+            continue
         content = path.read_text(encoding="utf-8")
         if stale_literals.search(content):
             offenders.append(str(path.relative_to(ROOT)))
