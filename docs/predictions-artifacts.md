@@ -78,6 +78,16 @@ Force regeneration even if today's artifact exists:
 cd scripts && ../.venv/bin/python generate_predictions.py --force
 ```
 
+## Actions-Key Mode (Default)
+
+Prediction generation is key-gated and defaults to GitHub Actions secrets.
+
+- `GOOGLE_API_KEY` is expected in repository/workflow secrets.
+- Non-`main` `workflow_dispatch` runs are verification runs:
+  - commit/push is skipped by design
+  - prediction outputs are uploaded as workflow artifacts
+- `main` runs publish `docs/predictions*.json` via normal commit/push flow.
+
 ## Truthful States in UI
 
 The forecast panel distinguishes these outcomes:
