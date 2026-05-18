@@ -26,13 +26,15 @@ def validate_config(config_path: str = "config.yml") -> int:
         gh = len(apis["greenhouse"]["companies"])
         lever = len(apis["lever"]["companies"])
         workday = len(apis.get("workday", {}).get("companies", []))
+        ashby = len(apis.get("ashby", {}).get("companies", []))
 
         logger.info("✅ YAML loaded successfully!")
         logger.info("Greenhouse: %s companies", gh)
         logger.info("Lever: %s companies", lever)
         logger.info("Workday: %s companies", workday)
+        logger.info("Ashby: %s companies", ashby)
 
-        total = gh + lever + workday
+        total = gh + lever + workday + ashby
         logger.info("TOTAL: %s companies", total)
 
         min_expected = config.get("filtering", {}).get("min_expected_companies", 200)

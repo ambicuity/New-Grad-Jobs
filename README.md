@@ -1109,37 +1109,69 @@
 This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
 
 ### 🔌 Data Sources
-- **Direct Company APIs**: Greenhouse, Lever, and Workday job boards from configured company pipelines
-- **Search APIs**: Google Careers direct searches
-- **Job Site Aggregation**: JobSpy integration for LinkedIn, Indeed, and Glassdoor
-- **Community Submissions**: User-submitted jobs via GitHub Issues
+
+- **Greenhouse**: 113 configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block).
+- **Ashby**: 43 configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
+- **Workday**: 57 configured boards (Boeing, Lockheed, Citi, etc.). 38 enterprise tenants currently return HTTP 422 due to per-tenant infrastructure variation — tracked in [`docs/Workday-Investigation.md`](docs/Workday-Investigation.md).
+- **Lever**: 2 active boards (Palantir, Spotify) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
+- **JobSpy**: aggregation layer over Indeed and LinkedIn (gated by rate limits).
+- **Community Submissions**: User-submitted jobs via GitHub Issues.
+
+The complete authoritative source list lives in [`config.yml`](config.yml); the snapshot in [`docs/removed-companies.md`](docs/removed-companies.md) documents why entries were pruned or added.
 
 ### ⚡ Key Features
-- **Comprehensive Coverage**: Broad company coverage across multiple platforms
-- **Real-time Updates**: Automatic updates every 5 minutes
-- **Smart Filtering**: Advanced filtering for new grad positions
-- **USA Focus**: Filters for US-based positions only
-- **Category Organization**: Jobs organized by role type
-- **Company Badges**: FAANG+ and unicorn companies highlighted
+
+- **Terminal-aesthetic frontend (NGJ)** at [ambicuity.github.io/New-Grad-Jobs](https://ambicuity.github.io/New-Grad-Jobs/) — dense tabular layout rendered with JetBrains Mono, sortable by compensation / posted-date / deadline, filterable by role (9 categories incl. SWE / ML / Data / Frontend / Backend / Infra / Security / Mobile / Hardware), remote / hybrid / onsite, visa sponsorship, cohort, and company size. Hash-routed `#contributors` view shares the same chrome.
+- **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available — currently ~30 % of new-grad listings ship with a `$min–maxk` range. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
+- **Real "About the role"** copy from each posting is published in `docs/jobs.json` and rendered in the detail panel (92 % coverage across Greenhouse / Ashby / Lever).
+- **Real-time Updates**: Automatic refresh every 5 minutes via `.github/workflows/update-jobs.yml`.
+- **Smart Filtering**: New-grad-signal detection + USA-only locality + 60-day recency.
+- **Company Badges**: FAANG+ and unicorn companies highlighted.
 
 ### 🎯 Filtering Criteria
+
 - **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
 - **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
 - **Recency**: Jobs posted within the last 60 days
 - **Location**: USA-based positions only
 
+### 📦 `docs/jobs.json` schema
+
+Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable for third-party use:
+
+| Field | Type | Notes |
+|---|---|---|
+| `id` | string | de-duplicated `company-title-location` slug |
+| `company` | string | |
+| `title` | string | |
+| `location` | string | |
+| `url` | string | direct link to the posting on the source ATS |
+| `posted_at` | ISO 8601 | |
+| `posted_display` | string | human-readable ("Today", "3 days ago") |
+| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (…)` |
+| `category` | object | `{id, name, emoji}` — one of the 6 macro categories |
+| `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
+| `flags` | object | `{no_sponsorship, us_citizenship_required}` |
+| `is_closed` | bool | |
+| `comp` | object\|null | `{min, max, currency, source}` when extractable; null otherwise |
+| `description` | string | clean-text snippet (≤ 1200 chars) of the posting body, "" for Workday |
+
 ### 🏢 Companies Monitored
 
 <details>
-<summary>Click to expand (configured companies)</summary>
+<summary>Click to expand the full configured list</summary>
 
-**Greenhouse**: Abnormal Security, Affirm, Airbnb, Airtable, Alchemy, Algolia, Amplitude, Calm, Carta, Cerebral, Chainalysis, Checkr, Chime, Chronosphere, Circle, CircleCI, Cityblock Health, ClickHouse, Cloudflare, Cloudinary, Cockroach Labs, Coinbase, Color Health, Column, Contentful, Coursera, Cruise, Culture Amp, Databricks, Datadog, Deel, Devoted Health, Dialpad, Discord, Dropbox, Duolingo, Elastic, Epic Games, Faire, Fastly, Figma, Fireblocks, Flatiron Health, Flexport, Gemini, Getaround, GitLab, Goat, Grafana Labs, Grammarly, Greenhouse, Gusto, Hims & Hers, Honeycomb, Huntress, Imply, Instacart, Intercom, Jam City, Justworks, Khan Academy, Kraken, Lattice, LaunchDarkly, Lever, LightStep, Lime, LinkedIn, Locus Robotics, Lucid, Lyft, Magic Leap, Marqeta, Materialize, Melio, Mercari, Mercury, Mixpanel, Modern Treasury, MongoDB, New Relic, Niantic, Nuro, Okta, Opendoor, Orca Security, Oscar Health, PagerDuty, Paxos, Peloton, Pinterest, Pipe, PlanetScale, Poshmark, Postman, Pulumi, Railway, Reddit, Remote, Retool, Riot Games, Ripple, Robinhood, Roblox, Ro, Runway, Salesloft, Samsara, Scale AI, Scopely, Shield AI, SingleStore, Skydio, SoFi, SpaceX, Stability AI, Starburst, StockX, Stripe, Sumo Logic, Supercell, Tanium, Tecton, Temporal, Tempus, Twilio, Twitch, Unity Technologies, Upstart, Veeva, Vercel, Via, Waymo, Webflow, Wiz, Yugabyte, ZoomInfo, Zoox, Zynga
+**Greenhouse (113)**: Abnormal Security, Affirm, Airbnb, Airtable, Algolia, Amplitude, Anduril Industries, Block, BridgeBio, Calm, Carta, Cerebral, Checkr, Chime, CircleCI, ClickHouse, Cloudflare, Cockroach Labs, Contentful, Coursera, Cribl, Culture Amp, Databricks, Datadog, Dialpad, Discord, Dropbox, Duolingo, Elastic, Epic Games, Faire, Fastly, Figma, Fireblocks, Flatiron Health, Flexport, Gemini, GitLab, Glean, Grafana Labs, Greenhouse, Gusto, Honeycomb, Huntress, Imply, Instacart, Intercom, Justworks, Khan Academy, Lattice, LaunchDarkly, LinkedIn, Locus Robotics, Lucid, Lyft, Magic Leap, Marqeta, Materialize, Maven Clinic, Melio, Mercari, Mercury, Mixpanel, MongoDB, New Relic, Nuro, Okta, Opendoor, Orca Security, Oscar Health, PagerDuty, Peloton, Pinterest, PlanetScale, Poshmark, Postman, Pulley, Recursion, Reddit, Remote, Riot Games, Ripple, Robinhood, Roblox, Salesloft, Samsara, Scale AI, Scopely, SingleStore, SoFi, SpaceX, Squarespace, Stability AI, Starburst, StockX, Stripe, Sumo Logic, Sweetgreen, Tailscale, Tanium, Temporal, Together AI, Twilio, Twitch, Unity Technologies, Upstart, Vercel, Waymo, Webflow, Wiz, Yugabyte, ZoomInfo, xAI
 
-**Lever**: Netflix, Spotify, Palantir, Plaid, Atlassian
+**Ashby (43)**: Airbyte, Anyscale, Ashby, Astronomer, Attio, Baseten, Browserbase, Campfire, Cohere, Commure, Cradle Bio, Crusoe, Cursor, Decagon, Docker, ElevenLabs, LangChain, Linear, Lovable, Mistral AI, Modal, Notion, OpenAI, Perplexity, Pinecone, Plaid, Poolside, Prefect, Qualified, Railway, Reka, Runway, Sentry, Sierra, Snowflake, Statsig, Stytch, Suno, Supabase, Turbopuffer, Vapi, Warp, Weaviate
 
-**Google Careers**: Direct API searches
+**Workday (57)**: Boeing, Lockheed Martin, Northrop Grumman, General Dynamics, Raytheon, L3Harris, Cisco, Oracle, Salesforce, ServiceNow, Microsoft, JPMorgan, Goldman Sachs, Morgan Stanley, Citi, Capital One, Fidelity, Intuit, AMD, Qualcomm, … (full list in [`config.yml`](config.yml))
 
-**JobSpy**: LinkedIn, Indeed, Glassdoor
+**Lever (2)**: Palantir, Spotify
+
+**JobSpy**: Indeed, LinkedIn (rate-limited)
+
+See [`docs/removed-companies.md`](docs/removed-companies.md) for the audit trail of pruned / re-routed entries.
 
 </details>
 

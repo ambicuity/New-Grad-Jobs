@@ -24,6 +24,10 @@ from update_jobs import (
     is_job_closed,
     get_company_tier,
     enrich_jobs,
+    extract_compensation,
+    clean_description,
+    fetch_greenhouse_jobs,
+    fetch_ashby_jobs,
     format_posted_date,
     get_iso_date,
 )
@@ -350,3 +354,338 @@ class TestGetIsoDate:
     def test_result_is_string(self):
         result = get_iso_date("2026-03-10T00:00:00")
         assert isinstance(result, str)
+
+
+# ---------------------------------------------------------------------------
+# extract_compensation
+# ---------------------------------------------------------------------------
+
+class TestExtractCompensation:
+    """Regex-based salary range extraction from job description bodies."""
+
+    def test_ca_law_style_range(self):
+        text = 'The base salary range for this position is $120,000 - $180,000.'
+        r = extract_compensation(text)
+        assert r == {'min': 120000, 'max': 180000, 'currency': 'USD', 'source': 'posting'}
+
+    def test_em_dash_range(self):
+        r = extract_compensation('Pay range: $85,000 – $115,000 per year.')
+        assert r['min'] == 85000 and r['max'] == 115000
+
+    def test_k_suffix_range(self):
+        r = extract_compensation('Annual compensation: $90K – $130K')
+        assert r == {'min': 90000, 'max': 130000, 'currency': 'USD', 'source': 'posting'}
+
+    def test_lowercase_k_suffix(self):
+        r = extract_compensation('Salary $110k - $145k')
+        assert r['min'] == 110000 and r['max'] == 145000
+
+    def test_usd_prefix(self):
+        r = extract_compensation('USD 75,000 to 95,000 plus equity')
+        assert r['min'] == 75000 and r['max'] == 95000
+
+    def test_single_value_band(self):
+        r = extract_compensation('Compensation: $200,000/year + RSUs')
+        assert r is not None
+        assert r['min'] == 180000 and r['max'] == 220000
+
+    def test_single_value_k(self):
+        r = extract_compensation('Base $150k annually, plus bonus')
+        assert r is not None
+        assert r['min'] == 135000 and r['max'] == 165000
+
+    def test_rejects_series_funding(self):
+        text = 'We just closed our Series B and raised $120M from top VCs.'
+        assert extract_compensation(text) is None
+
+    def test_rejects_signon_bonus_below_floor(self):
+        # "$5,000 sign-on" — under 30k sanity floor
+        assert extract_compensation('Sign-on bonus up to $5,000') is None
+
+    def test_rejects_product_budget(self):
+        # "$1.2M product budget" — far above 600k sanity ceiling
+        assert extract_compensation('We have a $1.2M product budget this year.') is None
+
+    def test_rejects_stock_price(self):
+        assert extract_compensation('Stock price closed at $124.50 yesterday') is None
+
+    def test_rejects_valuation_phrase(self):
+        text = 'Valued at $5 billion after our latest round, we are looking for engineers.'
+        assert extract_compensation(text) is None
+
+    def test_rejects_too_wide_range(self):
+        # $50k–$400k span > 250k cap, likely false positive
+        assert extract_compensation('Range is anywhere from $50,000 to $400,000.') is None
+
+    def test_empty_text(self):
+        assert extract_compensation('') is None
+
+    def test_none_text(self):
+        assert extract_compensation(None) is None
+
+    def test_no_salary_mention(self):
+        text = 'We are hiring a software engineer to work on our distributed systems.'
+        assert extract_compensation(text) is None
+
+    def test_funding_then_real_salary(self):
+        # Common in startup descriptions: funding context followed by real comp.
+        # Blocklist should strip the funding span, leaving the salary to match.
+        text = ('We raised $50M Series C last year. The base salary range '
+                'for this role is $140,000 - $190,000 plus equity.')
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 140000 and r['max'] == 190000
+
+    def test_inverted_range_is_rejected(self):
+        # If hi < lo the sanity check fails.
+        assert extract_compensation('Pay: $180,000 - $120,000') is None
+
+    def test_result_shape(self):
+        r = extract_compensation('Range: $100,000 - $150,000')
+        assert set(r.keys()) == {'min', 'max', 'currency', 'source'}
+        assert r['currency'] == 'USD'
+        assert r['source'] == 'posting'
+        assert isinstance(r['min'], int) and isinstance(r['max'], int)
+
+    def test_and_up_to_connector(self):
+        # Chime / older listings use this construction.
+        text = 'The base salary offered for this role will begin at $65,000 and up to $90,000.'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 65000 and r['max'] == 90000
+
+    def test_decimal_cents(self):
+        # Some listings include .00 on the dollar amounts.
+        r = extract_compensation('Base salary $140,000.00 and up to $165,000.00')
+        assert r is not None
+        assert r['min'] == 140000 and r['max'] == 165000
+
+    def test_through_connector(self):
+        r = extract_compensation('Pay range: $110,000 through $140,000 per year.')
+        assert r is not None
+        assert r['min'] == 110000 and r['max'] == 140000
+
+    def test_html_wrapped_range(self):
+        # Greenhouse/Lever return HTML; salary may be split across tags.
+        text = '<p>Base salary range: <strong>$120,000</strong> &ndash; <strong>$180,000</strong></p>'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 120000 and r['max'] == 180000
+
+    def test_html_entities(self):
+        # &#36; is the HTML entity for $.
+        text = 'Salary: &#36;100,000 to &#36;140,000'
+        r = extract_compensation(text)
+        assert r is not None
+        assert r['min'] == 100000 and r['max'] == 140000
+
+
+# ---------------------------------------------------------------------------
+# fetch_greenhouse_jobs: regression — must request ?content=true so descriptions
+# (and therefore comp / closed-flag detection) are populated.
+# ---------------------------------------------------------------------------
+
+class TestGreenhouseFetcherContentFlag:
+    """Without ?content=true the GH API omits descriptions — silently zeros
+    out comp extraction. Lock in the auto-append behavior."""
+
+    def _mock_response(self, status=200, json_body=None):
+        m = type('R', (), {})()
+        m.status_code = status
+        m.ok = 200 <= status < 300
+        m.json = lambda: (json_body or {'jobs': []})
+        m.raise_for_status = lambda: None
+        m.text = ''
+        return m
+
+    def test_appends_content_true_when_missing(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Affirm',
+                                  'https://boards-api.greenhouse.io/v1/boards/affirm/jobs')
+        assert 'content=true' in captured['url']
+
+    def test_preserves_existing_query_params(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Stripe',
+                                  'https://boards-api.greenhouse.io/v1/boards/stripe/jobs?foo=bar')
+        assert 'foo=bar' in captured['url']
+        assert 'content=true' in captured['url']
+
+    def test_does_not_double_append(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_greenhouse_jobs('Lever',
+                                  'https://boards-api.greenhouse.io/v1/boards/lever/jobs?content=true')
+        # exactly one occurrence
+        assert captured['url'].count('content=true') == 1
+
+    def test_extracts_comp_from_returned_content(self):
+        # End-to-end: when GH returns content, comp shows up in the result dict.
+        body = {'jobs': [{
+            'id': 1, 'title': 'Software Engineer, New Grad',
+            'location': {'name': 'San Francisco, CA'},
+            'absolute_url': 'https://example.com/job/1',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': 'The base salary range for this role is $120,000 - $180,000.',
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('TestCo',
+                                         'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        assert len(jobs) == 1
+        assert jobs[0]['comp'] == {'min': 120000, 'max': 180000,
+                                   'currency': 'USD', 'source': 'posting'}
+
+
+# ---------------------------------------------------------------------------
+# fetch_ashby_jobs
+# ---------------------------------------------------------------------------
+
+class TestAshbyFetcher:
+    """The Ashby Posting API gives both structured compensation AND HTML
+    descriptions. Both code paths need coverage."""
+
+    def _mock_response(self, status=200, json_body=None):
+        m = type('R', (), {})()
+        m.status_code = status
+        m.ok = 200 <= status < 300
+        m.json = lambda: (json_body or {'jobs': []})
+        m.raise_for_status = lambda: None
+        return m
+
+    def test_appends_include_compensation(self):
+        captured = {}
+        def fake_get(url, *a, **kw):
+            captured['url'] = url
+            return self._mock_response(json_body={'jobs': []})
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        assert 'includeCompensation=true' in captured['url']
+
+    def test_extracts_structured_compensation(self):
+        body = {'jobs': [{
+            'id': 'a1', 'title': 'Software Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/openai/a1',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'address': {'postalAddress': {'addressLocality': 'San Francisco',
+                                          'addressRegion': 'California',
+                                          'addressCountry': 'United States'}},
+            'descriptionHtml': '<p>About the team…</p>',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'USD', 'minValue': 245000, 'maxValue': 385000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        assert len(jobs) == 1
+        # Structured comp from Ashby beats regex; source must be 'ashby'.
+        assert jobs[0]['comp'] == {'min': 245000, 'max': 385000,
+                                   'currency': 'USD', 'source': 'ashby'}
+        # Location should aggregate the address parts.
+        assert 'San Francisco' in jobs[0]['location']
+
+    def test_falls_back_to_regex_when_no_structured_comp(self):
+        body = {'jobs': [{
+            'id': 'a2', 'title': 'Backend Engineer',
+            'jobUrl': 'https://jobs.ashbyhq.com/cohere/a2',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'address': {'postalAddress': {'addressLocality': 'Toronto'}},
+            'descriptionHtml': '<p>Base salary range: $130,000 - $170,000.</p>',
+            'compensation': None,
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere')
+        assert jobs[0]['comp']['source'] == 'posting'
+        assert jobs[0]['comp']['min'] == 130000 and jobs[0]['comp']['max'] == 170000
+
+    def test_rejects_out_of_band_compensation(self):
+        # If Ashby reports a clearly-wrong number (e.g. an internship stipend),
+        # the sanity bounds (30k–600k, span ≤ 250k) reject it. None for comp.
+        body = {'jobs': [{
+            'id': 'a3', 'title': 'Intern', 'jobUrl': 'https://jobs.ashbyhq.com/x/a3',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'descriptionHtml': '<p>Hello</p>',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'USD', 'minValue': 5000, 'maxValue': 10000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        assert jobs[0]['comp'] is None  # 5k–10k below the 30k floor
+
+    def test_non_usd_compensation_ignored(self):
+        # CAD or EUR compensation isn't currently mapped — falls back to regex.
+        # (description must be empty so regex fallback also returns None.)
+        body = {'jobs': [{
+            'id': 'a4', 'title': 'Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/x/a4',
+            'publishedAt': '2026-05-01T00:00:00Z',
+            'descriptionHtml': '',
+            'compensation': {
+                'compensationTiers': [{
+                    'currencyCode': 'CAD', 'minValue': 130000, 'maxValue': 180000,
+                    'interval': 'per-year',
+                }],
+            },
+        }]}
+        def fake_get(url, *a, **kw):
+            return self._mock_response(json_body=body)
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        assert jobs[0]['comp'] is None
+
+
+# ---------------------------------------------------------------------------
+# clean_description: HTML → plaintext clip used for the "About the role" snippet
+# ---------------------------------------------------------------------------
+
+class TestCleanDescription:
+    def test_strips_html_tags(self):
+        r = clean_description('<p>Hello <strong>world</strong>!</p>')
+        assert 'Hello' in r and 'world' in r
+        assert '<' not in r and '>' not in r
+
+    def test_unescapes_entities(self):
+        r = clean_description('Team &amp; product &mdash; details')
+        assert '&' in r and '—' in r and '&amp;' not in r
+
+    def test_collapses_whitespace(self):
+        r = clean_description('<p>line one</p>\n\n<p>line\t\ttwo</p>')
+        assert r == 'line one line two'
+
+    def test_clips_on_word_boundary(self):
+        long_text = 'word ' * 500  # 2500 chars
+        r = clean_description(long_text, max_chars=120)
+        assert r.endswith('…')
+        assert len(r) <= 121
+        # Trailing ellipsis sits directly after a word, no orphan space.
+        assert not r.rstrip('…').endswith(' ')
+
+    def test_returns_unchanged_when_short(self):
+        assert clean_description('Already short.') == 'Already short.'
+
+    def test_empty_and_none(self):
+        assert clean_description('') == ''
+        assert clean_description(None) == ''

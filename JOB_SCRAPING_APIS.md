@@ -31,10 +31,40 @@ jobspy:
 - Built-in filtering by location and posting date
 - Handles proxy rotation and anti-bot measures
 
-### 2. Existing APIs (Maintained)
-- **Greenhouse API**: Company-specific job boards
-- **Lever API**: Company-specific job boards
-- **Google Careers API**: Direct Google job searches
+### 2. Existing ATS APIs (Maintained)
+
+- **Greenhouse Job Board API** — `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs?content=true`. The `?content=true` flag is mandatory; without it Greenhouse omits the description body and compensation extraction silently produces no results. 113 boards configured.
+- **Lever Postings API** — `https://api.lever.co/v0/postings/<team>`. Returns description / descriptionPlain. 2 boards configured (most legacy Lever boards have migrated off; see [`docs/removed-companies.md`](docs/removed-companies.md)).
+- **Workday CXS Jobs API** — `https://<host>/wday/cxs/<tenant>/<site>/jobs` POST. 57 boards configured; 38 enterprise tenants currently return HTTP 422 due to per-tenant infrastructure variation — see [`docs/Workday-Investigation.md`](docs/Workday-Investigation.md) for the curl-level investigation and the path forward (playwright bootstrap).
+- **Google Careers** — Disabled. The endpoint deprecated in late 2024 and now returns 404.
+
+### 3. Ashby Posting API ✅
+
+**Status: Fully Implemented** (`fetch_ashby_jobs` in [`scripts/update_jobs.py`](scripts/update_jobs.py)).
+
+Modern ATS used by many AI labs and devtools companies that aren't on
+Greenhouse / Lever / Workday. 43 boards configured, unlocking OpenAI,
+Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Modal, Snowflake,
+Plaid, ElevenLabs, Decagon, and ~30 more.
+
+**Endpoint:** `https://api.ashbyhq.com/posting-api/job-board/<slug>?includeCompensation=true`
+
+**Configuration (already in [`config.yml`](config.yml)):**
+```yaml
+ashby:
+  companies:
+    - name: "OpenAI"
+      url: "https://api.ashbyhq.com/posting-api/job-board/openai"
+    - name: "Notion"
+      url: "https://api.ashbyhq.com/posting-api/job-board/notion"
+    # …
+```
+
+**Features:**
+- No API key required (public posting API).
+- Returns **structured compensation** (`compensationTiers`) when companies opt in — preferred over regex extraction.
+- Description HTML available in `descriptionHtml` (cleaned to plaintext via `clean_description()` before serialization).
+- HTTP_SESSION must **not** advertise `br` (Brotli) in `Accept-Encoding`; Python's `requests` library does not decode Brotli natively, and Ashby's Cloudflare layer preferred br over gzip — silently producing un-parseable bodies. Fix already landed.
 
 ## Ready for Configuration APIs
 

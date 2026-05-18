@@ -13,6 +13,7 @@ Performance Optimizations:
 - DNS caching and TCP connection reuse
 """
 
+import html
 import json
 import math
 import os
@@ -26,7 +27,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
@@ -131,9 +132,13 @@ def create_optimized_session() -> requests.Session:
     session.mount("http://", adapter)
     session.mount("https://", adapter)
 
-    # Set default headers for compression and keep-alive with extended timeout
+    # Set default headers for compression and keep-alive with extended timeout.
+    # NOTE: 'br' (Brotli) is intentionally excluded — requests doesn't decode it
+    # natively, and some origins (notably Ashby/Cloudflare) preferred br over
+    # gzip when offered, producing un-parseable bodies. gzip/deflate are
+    # universally supported and sufficient.
     session.headers.update({
-        'Accept-Encoding': 'gzip, deflate, br',  # Request compressed responses
+        'Accept-Encoding': 'gzip, deflate',
         'Connection': 'keep-alive',  # Reuse TCP connections
         'Keep-Alive': 'timeout=60, max=2000',  # Keep connections alive longer
         'User-Agent': 'NewGradJobs-Aggregator/3.0 (10K-Companies-Optimized)'
@@ -704,6 +709,141 @@ def is_job_closed(title: str, description: str = '') -> bool:
     closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
     return any(indicator in combined for indicator in closed_indicators)
 
+# ── Compensation extraction ─────────────────────────────────────────────────
+# Range patterns first (most specific), single-value patterns second.
+# Connector covers: "-", "–", "—", "to", "and up to", "up to", "through".
+_COMP_CONNECTOR = r'(?:-|–|—|to|and\s+up\s+to|through)'
+
+_COMP_RANGE_PATTERNS = [
+    # "$120,000 - $180,000" with optional .00 cents (CA/NY/CO/WA law style)
+    re.compile(
+        r'\$\s*(\d{2,3})[,]?(\d{3})(?:\.\d{2})?\s*' + _COMP_CONNECTOR +
+        r'\s*\$?\s*(\d{2,3})[,]?(\d{3})(?:\.\d{2})?\b',
+        re.IGNORECASE,
+    ),
+    # "$120K - $180K" or "$120k – $180k"
+    re.compile(
+        r'\$\s*(\d{2,3})\s*[Kk]\s*' + _COMP_CONNECTOR + r'\s*\$?\s*(\d{2,3})\s*[Kk]\b',
+        re.IGNORECASE,
+    ),
+    # "USD 120,000 to 180,000"
+    re.compile(
+        r'\bUSD\s*(\d{2,3})[,]?(\d{3})\s*' + _COMP_CONNECTOR + r'\s*(\d{2,3})[,]?(\d{3})\b',
+        re.IGNORECASE,
+    ),
+]
+
+_COMP_SINGLE_PATTERNS = [
+    # "$150,000/year" or "$150,000 annually"
+    re.compile(
+        r'\$\s*(\d{2,3})[,]?(\d{3})\s*(?:per\s+year|/\s*year|annually|/\s*yr|\s+annual)\b',
+        re.IGNORECASE,
+    ),
+    # "$150k/year" or "$150K annually"
+    re.compile(
+        r'\$\s*(\d{2,3})\s*[Kk]\s*(?:per\s+year|/\s*year|annually|/\s*yr|\s+annual)\b',
+        re.IGNORECASE,
+    ),
+]
+
+# Strip HTML tags + unescape entities before regex so a salary that's
+# broken across <strong>$120,000</strong> – <strong>$180,000</strong>
+# can still match. Greenhouse and Lever both return raw HTML in `content`.
+_HTML_TAG_RE = re.compile(r'<[^>]+>')
+
+
+def _strip_html(text: str) -> str:
+    """Remove HTML tags + decode entities, in the order that handles both
+    raw HTML (Lever's `descriptionPlain`) and double-encoded HTML (Greenhouse
+    serves `content` as &lt;div&gt;-style entities that decode to tags)."""
+    if not text:
+        return text
+    # Unescape first so &lt;div&gt; becomes <div>; THEN strip tags. Otherwise
+    # the tag stripper runs on still-encoded entities and does nothing, and
+    # the later unescape leaves literal tags in the output.
+    if '&' in text:
+        text = html.unescape(text)
+    if '<' in text:
+        text = _HTML_TAG_RE.sub(' ', text)
+    return text
+
+# Strip these spans before searching — they're the most common false-positive
+# sources in job descriptions (funding announcements, market cap, etc.).
+_COMP_BLOCKLIST = re.compile(
+    r'('
+    r'series\s+[A-Da-d](?:\s+round)?|'
+    r'\braised\s+\$[\d.,]+\s*[MmBbKk]?|'
+    r'valuation[^.]{0,60}|'
+    r'revenue\s+of[^.]{0,40}|'
+    r'\$\d+(?:\.\d+)?\s*(?:billion|trillion|million\s+ARR|m\s+ARR|b\s+ARR)|'
+    r'fortune\s+\d+|'
+    r'market\s+cap[^.]{0,40}|'
+    r'(?:nyse|nasdaq):\s*\w+'
+    r')',
+    re.IGNORECASE,
+)
+
+
+def clean_description(text: Optional[str], max_chars: int = 1200) -> str:
+    """Strip HTML, collapse whitespace, clip to max_chars on a word boundary.
+
+    Used to publish a readable "About the role" snippet in docs/jobs.json
+    from the raw HTML each ATS returns in `content` / `descriptionHtml`.
+    Kept conservative at 1200 chars so jobs.json stays under ~3 MB on the
+    typical 1000-job scrape.
+    """
+    if not text:
+        return ''
+    plain = _strip_html(text)
+    plain = re.sub(r'\s+', ' ', plain).strip()
+    if len(plain) <= max_chars:
+        return plain
+    # Clip on a word boundary near the limit; add a trailing ellipsis.
+    cut = plain[:max_chars].rsplit(' ', 1)[0]
+    return cut + '…'
+
+
+def extract_compensation(text: Optional[str]) -> Optional[Dict[str, Any]]:
+    """Find a USD salary range in a free-text job description.
+
+    Returns {'min', 'max', 'currency': 'USD', 'source': 'posting'} with min/max
+    as full integer dollars (e.g. 120000), or None when nothing is confidently
+    extractable. Sanity bounds reject sign-on bonuses, valuations, and stock
+    prices: 30k ≤ min ≤ max ≤ 600k and (max − min) ≤ 250k.
+    """
+    if not text:
+        return None
+    text = _strip_html(text)
+    text = _COMP_BLOCKLIST.sub(' ', text)
+
+    for pat in _COMP_RANGE_PATTERNS:
+        m = pat.search(text)
+        if not m:
+            continue
+        g = [int(x) for x in m.groups()]
+        if len(g) == 4:
+            lo, hi = g[0] * 1000 + g[1], g[2] * 1000 + g[3]
+        else:
+            lo, hi = g[0] * 1000, g[1] * 1000
+        if 30_000 <= lo <= hi <= 600_000 and (hi - lo) <= 250_000:
+            return {'min': lo, 'max': hi, 'currency': 'USD', 'source': 'posting'}
+
+    for pat in _COMP_SINGLE_PATTERNS:
+        m = pat.search(text)
+        if not m:
+            continue
+        g = [int(x) for x in m.groups()]
+        mid = g[0] * 1000 + g[1] if len(g) == 2 else g[0] * 1000
+        if 30_000 <= mid <= 600_000:
+            return {
+                'min': int(round(mid * 0.9)),
+                'max': int(round(mid * 1.1)),
+                'currency': 'USD',
+                'source': 'posting',
+            }
+    return None
+
+
 def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Greenhouse API with retry logic"""
     jobs = []
@@ -712,6 +852,12 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
     if SOURCE_COOLDOWN.is_tripped(url):
         print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
         return jobs
+
+    # Greenhouse omits the description body unless ?content=true is set.
+    # Config urls don't include this flag, so add it here so comp/flags/closed
+    # detectors have something to read.
+    if 'content=' not in url:
+        url = url + ('&' if '?' in url else '?') + 'content=true'
 
     for attempt in range(max_retries + 1):
         try:
@@ -748,7 +894,8 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                     'url': job.get('absolute_url', ''),
                     'posted_at': job.get('updated_at') or job.get('created_at'),
                     'source': 'Greenhouse',
-                    'description': description[:500] if description else ''
+                    'description': clean_description(description),
+                    'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -828,7 +975,8 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'url': job.get('hostedUrl', ''),
                     'posted_at': job.get('createdAt'),
                     'source': 'Lever',
-                    'description': description[:500] if description else ''
+                    'description': clean_description(description),
+                    'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
@@ -863,6 +1011,139 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
+
+def fetch_ashby_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
+    """Fetch jobs from Ashby's public Posting API.
+
+    Ashby is a modern ATS used by many AI labs and devtools companies
+    (OpenAI, Cohere, Mistral, Notion, Linear, Cursor, Perplexity, etc.).
+    Public endpoint: https://api.ashbyhq.com/posting-api/job-board/<slug>
+    Append ?includeCompensation=true to get structured compensation when
+    the company opts in.
+    """
+    jobs = []
+
+    if SOURCE_COOLDOWN.is_tripped(url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown (403 threshold exceeded)")
+        return jobs
+
+    if 'includeCompensation' not in url:
+        url = url + ('&' if '?' in url else '?') + 'includeCompensation=true'
+
+    for attempt in range(max_retries + 1):
+        try:
+            if attempt > 0:
+                print(f"  🔄 Retry {attempt} for {company_name}...")
+                time.sleep(1)
+            print(f"Fetching jobs from {company_name} (Ashby)...")
+            response = limited_get(url, timeout=timeout)
+
+            if response.status_code == 403:
+                admitted = SOURCE_COOLDOWN.try_admit(url)
+                if admitted:
+                    count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(url), 0)
+                    print(f"  ⚠️  {company_name}: 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                else:
+                    print(f"  🚫 {company_name}: 403 Forbidden — cooldown now active")
+                break
+
+            response.raise_for_status()
+            data = response.json()
+            if not isinstance(data, dict) or 'jobs' not in data:
+                print(f"  ⚠️  {company_name}: Unexpected API response format")
+                continue
+
+            for job in data.get('jobs', []):
+                description = job.get('descriptionHtml', '') or job.get('descriptionPlain', '') or ''
+                # Prefer Ashby's structured compensation when present.
+                ashby_comp = job.get('compensation') or {}
+                comp = None
+                summary = ashby_comp.get('compensationTierSummary') if isinstance(ashby_comp, dict) else None
+                tiers = ashby_comp.get('compensationTiers') if isinstance(ashby_comp, dict) else None
+                if isinstance(tiers, list) and tiers:
+                    # Each tier has currencyCode, minValue, maxValue, interval ('per-year' etc.)
+                    for t in tiers:
+                        try:
+                            interval = (t.get('interval') or '').lower()
+                            currency = (t.get('currencyCode') or 'USD').upper()
+                            lo, hi = t.get('minValue'), t.get('maxValue')
+                            if currency == 'USD' and 'year' in interval and lo and hi:
+                                if 30_000 <= int(lo) <= int(hi) <= 600_000:
+                                    comp = {'min': int(lo), 'max': int(hi),
+                                            'currency': 'USD', 'source': 'ashby'}
+                                    break
+                        except (TypeError, ValueError):
+                            continue
+                # Fall back to description regex when no structured comp.
+                if not comp:
+                    comp = extract_compensation(description)
+
+                # Location: prefer addressLocality, fallback to location field.
+                addr = (job.get('address') or {}).get('postalAddress') or {}
+                loc_parts = [addr.get(k) for k in ('addressLocality', 'addressRegion', 'addressCountry')]
+                location = ', '.join([p for p in loc_parts if p]) or job.get('location') or 'Remote'
+
+                jobs.append({
+                    'company': company_name,
+                    'title': job.get('title', ''),
+                    'location': location,
+                    'url': job.get('jobUrl', '') or job.get('applyUrl', ''),
+                    'posted_at': job.get('publishedAt'),
+                    'source': 'Ashby',
+                    'description': clean_description(description),
+                    'comp': comp,
+                })
+            print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+            break
+
+        except requests.exceptions.Timeout:
+            if attempt < max_retries:
+                print(f"  ⏱️  {company_name} request timed out, retrying...")
+                continue
+            print(f"  ❌ {company_name} request timed out after {max_retries + 1} attempts")
+        except requests.exceptions.HTTPError as e:
+            status_code = e.response.status_code if e.response is not None else None
+            if status_code is not None and not is_retryable_status(status_code):
+                print(f"  ⚠️  {company_name}: HTTP {status_code} (non-retryable)")
+                break
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except requests.exceptions.RequestException as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Request error for {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Request error for {company_name} after {max_retries + 1} attempts: {e}")
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"  ⚠️  Error fetching from {company_name}: {e}, retrying...")
+                continue
+            print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
+
+    return jobs
+
+
+def fetch_all_ashby_jobs_parallel(companies: List[Dict[str, Any]], max_workers: int = None) -> List[Dict[str, Any]]:
+    """Run fetch_ashby_jobs across all configured Ashby companies in parallel."""
+    if not companies:
+        return []
+    workers = max_workers or min(10, len(companies))
+    all_jobs: List[Dict[str, Any]] = []
+
+    def _fetch(company):
+        return fetch_ashby_jobs(company['name'], company['url'])
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(_fetch, c): c for c in companies}
+        for fut in as_completed(futures):
+            try:
+                all_jobs.extend(fut.result())
+            except Exception as e:
+                co = futures[fut].get('name', '<unknown>')
+                print(f"  ❌ Ashby fetch crashed for {co}: {e}")
+    return all_jobs
+
 
 def fetch_google_jobs(
     search_terms: List[str],
@@ -1322,7 +1603,7 @@ def fetch_graphql_jobs(
                     'url': url,
                     'posted_at': posted_at,
                     'source': 'GraphQL',
-                    'description': description[:500] if description else ''
+                    'description': clean_description(description)
                 })
                 if len(jobs) >= max_jobs:
                     break
@@ -1408,6 +1689,19 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                 # Convert DataFrame to list of dictionaries
                 for _, row in jobs_df.iterrows():
                     description = row.get('description', '') or ''
+                    # jobspy returns structured salary on Indeed/LinkedIn when
+                    # the listing exposes it; prefer that over regex extraction.
+                    structured_min = row.get('min_amount')
+                    structured_max = row.get('max_amount')
+                    try:
+                        smin = int(structured_min) if structured_min not in (None, '') else None
+                        smax = int(structured_max) if structured_max not in (None, '') else None
+                    except (TypeError, ValueError):
+                        smin = smax = None
+                    if smin and smax and 30_000 <= smin <= smax <= 600_000:
+                        comp = {'min': smin, 'max': smax, 'currency': 'USD', 'source': 'jobspy'}
+                    else:
+                        comp = extract_compensation(description)
                     job = {
                         'company': row.get('company', 'Unknown'),
                         'title': row.get('title', ''),
@@ -1415,7 +1709,8 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'url': row.get('job_url', ''),
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
-                        'description': description[:500] if description else ''
+                        'description': clean_description(description),
+                        'comp': comp,
                     }
 
                     if job['url'] and job['url'].startswith('http'):
@@ -1686,7 +1981,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                         'url': job.get('apply_url', ''),
                         'posted_at': job.get('created') or job.get('publish_date'),
                         'source': 'Google Careers',
-                        'description': description[:500] if description else ''
+                        'description': clean_description(description)
                     })
 
                 print(f"  ✓ Google '{search_term}': {len(jobs)} jobs")
@@ -2115,7 +2410,9 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'category': job.get('category', {}),
             'company_tier': job.get('company_tier', {}),
             'flags': job.get('flags', {}),
-            'is_closed': job.get('is_closed', False)
+            'is_closed': job.get('is_closed', False),
+            'comp': job.get('comp'),
+            'description': job.get('description', ''),
         })
 
     return {
@@ -2870,6 +3167,13 @@ def main():
             futures['lever'] = executor.submit(
                 fetch_all_lever_jobs_parallel,
                 config['apis']['lever']['companies']
+            )
+
+        # Submit Ashby parallel fetch
+        if 'ashby' in config['apis'] and config['apis']['ashby'].get('companies'):
+            futures['ashby'] = executor.submit(
+                fetch_all_ashby_jobs_parallel,
+                config['apis']['ashby']['companies']
             )
 
         # Submit Google parallel fetch (P5: gated on enabled flag)
