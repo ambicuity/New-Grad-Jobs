@@ -19,7 +19,8 @@
         "doc",
         "design",
         "code",
-        "test"
+        "test",
+        "infra"
       ]
     },
     {
