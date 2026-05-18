@@ -41,24 +41,12 @@ Here is exactly what you should care about:
 
 1. **The Gatekeeper (`CI — Lint & Validate`)**:
    * **Why it matters**: This tests your actual Python scraper structure. If this fails on a PR, **do not merge**. It means `update_jobs.py` has a syntax error or `config.yml` is corrupted, which would crash your daily cron job.
-2. **Dependabot CI (`dependabot-auto-merge`)**:
-   * **Why it matters**: Since we configured auto-merge for minor/patch updates, you only need to look at Dependabot PRs if the Gatekeeper tests fail. If they pass, the bot handles everything.
-3. **Pre-commit (`Code Hygiene`)**:
-   * **Why it matters**: It automatically catches messy formatting (like trailing spaces or missing newlines) so you don't have to leave nitpicky review comments. If it fails, just ask the contributor to run `pre-commit run --all-files` locally before you merge.
-4. **CodeQL / Trivy (`Security Scans`)**:
-   * **Why it matters**: They check for vulnerable dependencies or leaked secrets. GitHub will send you an email alert if a critical vulnerability is found. You only need to look at these if you get an alert.
+2. **Pre-commit (`Code Hygiene`)**:
+   * **Why it matters**: It automatically catches messy formatting (like trailing spaces or missing newlines). If it fails, run `pre-commit run --all-files` locally before merging.
+3. **CodeQL (`Security Scan`)**:
+   * **Why it matters**: Checks for vulnerable dependencies or leaked secrets. GitHub emails you on critical findings.
 
-**TL;DR:** Trust the bots. If the `CI — Lint & Validate` check is green, the code is safe to merge. You only need to intervene if a required pipeline turns red on a PR you are actively reviewing.
-
-### Diagnosing "Release Please" Failures
-If you see a `Release Please / Release Please (push) Failing` with an error containing:
-`Error: release-please failed: GitHub Actions is not permitted to create or approve pull requests.`
-
-**Resolution**: You need to grant the `GITHUB_TOKEN` permission to create pull requests in the repository settings.
-1. Go to **Settings** > **Actions** > **General** in your GitHub repository.
-2. Scroll down to **Workflow permissions**.
-3. Check the box for **"Allow GitHub Actions to create and approve pull requests"**.
-4. Click **Save**.
+**TL;DR:** If `CI — Lint & Validate` is green, the code is safe to merge. Intervene only if a required pipeline turns red.
 
 ---
 

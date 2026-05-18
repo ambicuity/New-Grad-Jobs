@@ -66,11 +66,9 @@ Fixes #
 >
 > | Check | Enforced by |
 > |-------|-------------|
-> | PR title follows Conventional Commits | `bot-pr-title-check` — auto-rejects on open |
-> | PR links to an assigned issue | `bot-linked-issue-enforcer` + `bot-assignment-check` |
-> | `README.md` and `jobs.json` not manually edited | `bot-pr-protected-files` — hard CI failure |
-> | Branch is up to date with `main` | Branch protection — merge blocked if behind |
-> | Python syntax and lint (E9/F-class) | `ci.yml` — required status check |
-> | All unit tests pass | `tests.yml` — required status check |
-> | Pre-commit hooks (secrets, YAML, whitespace) | `pre-commit.yml` — required status check |
-> | Security scan (CodeQL + Trivy) | `codeql.yml` + `trivy.yml` |
+> | Python syntax and lint (E9/F-class) + config validation | `ci.yml` (lint-and-validate job) |
+> | All unit tests pass with coverage | `ci.yml` (test job) |
+> | Pre-commit hooks (secrets, YAML, whitespace) | `pre-commit.yml` |
+> | Static security analysis | `codeql.yml` |
+> | GitHub Pages site builds and deploys | `pages-deployment.yml` |
+> | Scheduled job-listing refresh | `update-jobs.yml` |
