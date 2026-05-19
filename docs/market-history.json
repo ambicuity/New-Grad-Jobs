@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-19T10:02:31.473929",
+    "last_updated": "2026-05-19T12:52:51.457177",
     "total_snapshots": 74,
     "date_range": {
       "start": "2026-03-05",
@@ -4025,12 +4025,12 @@
     },
     {
       "date": "2026-05-19",
-      "total_jobs": 1321,
+      "total_jobs": 1326,
       "categories": {},
       "tiers": {
-        "other": 580,
-        "unicorn": 596,
-        "faang_plus": 145
+        "other": 583,
+        "unicorn": 595,
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -4067,16 +4067,16 @@
         },
         {
           "company": "Boeing",
-          "jobs": 21
+          "jobs": 22
         },
         {
-          "company": "University of Ottawa",
+          "company": "Abnormal Security",
           "jobs": 21
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 5.87,
-      "timestamp": "2026-05-19T10:02:31.472250"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 5.72,
+      "timestamp": "2026-05-19T12:52:51.456323"
     }
   ]
 }
