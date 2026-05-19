@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-19T06:00:04.308251",
+    "last_updated": "2026-05-19T10:02:31.473929",
     "total_snapshots": 74,
     "date_range": {
       "start": "2026-03-05",
@@ -4025,12 +4025,12 @@
     },
     {
       "date": "2026-05-19",
-      "total_jobs": 1351,
+      "total_jobs": 1321,
       "categories": {},
       "tiers": {
-        "other": 599,
+        "other": 580,
         "unicorn": 596,
-        "faang_plus": 156
+        "faang_plus": 145
       },
       "top_companies": [
         {
@@ -4058,10 +4058,6 @@
           "jobs": 29
         },
         {
-          "company": "Boeing",
-          "jobs": 27
-        },
-        {
           "company": "Affirm",
           "jobs": 25
         },
@@ -4070,13 +4066,17 @@
           "jobs": 24
         },
         {
-          "company": "Accenture",
-          "jobs": 22
+          "company": "Boeing",
+          "jobs": 21
+        },
+        {
+          "company": "University of Ottawa",
+          "jobs": 21
         }
       ],
-      "unique_companies": 230,
+      "unique_companies": 225,
       "avg_jobs_per_company": 5.87,
-      "timestamp": "2026-05-19T06:00:04.307472"
+      "timestamp": "2026-05-19T10:02:31.472250"
     }
   ]
 }
