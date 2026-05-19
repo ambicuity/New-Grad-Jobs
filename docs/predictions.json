@@ -1,35 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 975,
-      "change_percent": 0.93
+      "total_jobs": 1335,
+      "change_percent": 0.53
     },
     "30_days": {
-      "total_jobs": 985,
-      "change_percent": 1.97
+      "total_jobs": 1360,
+      "change_percent": 2.41
     }
   },
   "growing_categories": [
     "Unicorn Startups",
     "FAANG+",
-    "Infrastructure Engineering"
+    "General Tech"
   ],
   "declining_categories": [
-    "Mid-Market/Other",
-    "Generalist Software Roles",
-    "Non-Technical Internships"
+    "Legacy Enterprise",
+    "Non-Tech Industry",
+    "Contract Roles"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently experiencing a consolidation phase, with total job volume hovering near the 30-day mean despite recent short-term volatility.",
-    "Unicorn-tier companies are showing the most resilience and growth, suggesting that high-growth startups are currently more active in new graduate recruitment than the broader 'Other' category.",
-    "The decline in the 'Other' category indicates a tightening of hiring budgets among smaller or non-tech firms, which is currently offsetting gains made by larger tech entities."
+    "The market experienced a significant breakout in the final 48 hours, jumping from a ~1000 job baseline to over 1300, indicating a potential start to a new hiring cycle.",
+    "Company tier data shows aggressive expansion in the 'Unicorn' and 'Other' segments, suggesting that the recent surge is driven by high-growth firms rather than just established giants.",
+    "While the 30-day average remains suppressed by the early-month stagnation, the momentum shift suggests a sustained higher floor for job postings in the coming month."
   ],
-  "generated_at": "2026-05-18T00:14:05.267284",
-  "data_points": 73,
+  "generated_at": "2026-05-19T00:12:16.734801",
+  "data_points": 74,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-18"
+    "end": "2026-05-19"
   }
 }
