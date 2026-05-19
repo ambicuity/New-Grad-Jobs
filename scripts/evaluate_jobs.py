@@ -10,16 +10,16 @@ from typing import Any
 
 try:
     from contracts import (
-        EVALUATIONS_SCHEMA_VERSION,
         EVALUATION_PROMPT_VERSION,
+        EVALUATIONS_SCHEMA_VERSION,
         compute_input_hash,
         new_evaluation_id,
         validate_jobs_json_contract,
     )
 except ModuleNotFoundError:
     from scripts.contracts import (
-        EVALUATIONS_SCHEMA_VERSION,
         EVALUATION_PROMPT_VERSION,
+        EVALUATIONS_SCHEMA_VERSION,
         compute_input_hash,
         new_evaluation_id,
         validate_jobs_json_contract,

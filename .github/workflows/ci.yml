@@ -109,6 +109,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      HAS_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN != '' }}
 
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -129,7 +131,7 @@ jobs:
         run: pytest tests/ -v --cov=scripts --cov-report=term-missing --cov-report=xml --junitxml=junit.xml -o junit_family=legacy
 
       - name: Upload coverage to Codecov
-        if: ${{ !cancelled() && secrets.CODECOV_TOKEN != '' }}
+        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' }}
         uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de # v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -140,7 +142,7 @@ jobs:
           verbose: true
 
       - name: Upload test results to Codecov
-        if: ${{ !cancelled() && secrets.CODECOV_TOKEN != '' }}
+        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' }}
         uses: codecov/test-results-action@0fa95f0e1eeaafde2c782583b36b28ad0d8c77d3 # v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

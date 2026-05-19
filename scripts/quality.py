@@ -16,9 +16,19 @@ except ModuleNotFoundError:  # pragma: no cover - exercised via request-free int
     requests = None
 
 try:
-    from contracts import JOBS_SCHEMA_VERSION, EVALUATIONS_SCHEMA_VERSION, validate_evaluations_contract, validate_jobs_json_contract
+    from contracts import (
+        EVALUATIONS_SCHEMA_VERSION,
+        JOBS_SCHEMA_VERSION,
+        validate_evaluations_contract,
+        validate_jobs_json_contract,
+    )
 except ModuleNotFoundError:
-    from scripts.contracts import JOBS_SCHEMA_VERSION, EVALUATIONS_SCHEMA_VERSION, validate_evaluations_contract, validate_jobs_json_contract
+    from scripts.contracts import (
+        EVALUATIONS_SCHEMA_VERSION,
+        JOBS_SCHEMA_VERSION,
+        validate_evaluations_contract,
+        validate_jobs_json_contract,
+    )
 
 DEAD_URL_PATTERNS = (
     r"\b(position\s+closed|job\s+closed|no\s+longer\s+accepting|expired)\b",

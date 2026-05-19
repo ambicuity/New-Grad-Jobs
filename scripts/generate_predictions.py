@@ -9,7 +9,6 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 import update_jobs  # noqa: E402
 
-
 NON_ERROR_STATES = {
     "generated",
     "already_generated",
