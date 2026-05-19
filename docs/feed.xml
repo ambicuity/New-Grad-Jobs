@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 21:50:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 22:56:46 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer, Battlespace at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142407007?gh_jid=5142407007</link>
+      <description>New grad role at Anduril Industries in Broomfield, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 22:33:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142407007?gh_jid=5142407007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fleet Orchestration Core at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7901957</link>
+      <description>New grad role at Waymo in Mountain View, CA, United States; San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 22:20:23 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7901957</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Lending at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8535338002?gh_jid=8535338002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 22:10:48 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8535338002?gh_jid=8535338002</guid>
+    </item>
     <item>
       <title>Software Engineer, Enterprise AI Platform  at OpenAI</title>
       <link>https://jobs.ashbyhq.com/openai/a6363571-e090-43a7-b758-ee3386a096c1</link>
@@ -247,17 +268,17 @@
     </item>
     <item>
       <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002</link>
-      <description>New grad role at SpaceX in Austin, TX. Category: Hardware Engineering</description>
-      <pubDate>Tue, 19 May 2026 16:01:16 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002</guid>
-    </item>
-    <item>
-      <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002</link>
       <description>New grad role at SpaceX in Sunnyvale, CA. Category: Hardware Engineering</description>
       <pubDate>Tue, 19 May 2026 16:01:16 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002</guid>
+    </item>
+    <item>
+      <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002</link>
+      <description>New grad role at SpaceX in Austin, TX. Category: Hardware Engineering</description>
+      <pubDate>Tue, 19 May 2026 16:01:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002</guid>
     </item>
     <item>
       <title>Physical Design Engineer II (Silicon Engineering) at SpaceX</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 14:28:15 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7926889</link>
-      <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 14:26:28 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7926889</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Counter Intrusion at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5132400007?gh_jid=5132400007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 14:09:48 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5132400007?gh_jid=5132400007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Sentry at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5068237007?gh_jid=5068237007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 14:09:48 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5068237007?gh_jid=5068237007</guid>
     </item>
   </channel>
 </rss>
