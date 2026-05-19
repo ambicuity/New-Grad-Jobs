@@ -2612,6 +2612,7 @@ def _write_prediction_status(
     try:
         with open(status_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, ensure_ascii=False)
+            f.write("\n")
     except Exception as e:
         print(f"  ⚠️  Could not write predictions status artifact: {e}")
 
