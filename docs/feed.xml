@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 18:21:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 20:13:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>IT Systems Engineer at Intercom</title>
+      <link>https://job-boards.greenhouse.io/intercom/jobs/7918638</link>
+      <description>New grad role at Intercom in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 20:04:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/intercom/jobs/7918638</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7940098</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 19 May 2026 19:44:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7940098</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Inference, Simulation Infrastructure at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7353876</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 19:27:25 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7353876</guid>
+    </item>
+    <item>
+      <title>Data Scientist II  at Coursera</title>
+      <link>https://job-boards.greenhouse.io/coursera/jobs/5997449004</link>
+      <description>New grad role at Coursera in Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 19 May 2026 19:05:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/coursera/jobs/5997449004</guid>
+    </item>
+    <item>
+      <title>GTM Software Engineer (Backend) - Distributed US or Canada  at Cockroach Labs</title>
+      <link>https://www.cockroachlabs.com/careers/job/?gh_jid=7874104</link>
+      <description>New grad role at Cockroach Labs in Remote, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 18:55:08 +0000</pubDate>
+      <guid isPermaLink="true">https://www.cockroachlabs.com/careers/job/?gh_jid=7874104</guid>
+    </item>
     <item>
       <title>Software Engineer II, Backend at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=5132899</link>
@@ -20,20 +55,6 @@
       <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 17:55:59 +0000</pubDate>
       <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7917372</guid>
-    </item>
-    <item>
-      <title>GTM Software Engineer (Backend) - Distributed US or Canada  at Cockroach Labs</title>
-      <link>https://www.cockroachlabs.com/careers/job/?gh_jid=7874104</link>
-      <description>New grad role at Cockroach Labs in Remote, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 17:47:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.cockroachlabs.com/careers/job/?gh_jid=7874104</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at Intercom</title>
-      <link>https://job-boards.greenhouse.io/intercom/jobs/7918638</link>
-      <description>New grad role at Intercom in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 17:28:38 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/intercom/jobs/7918638</guid>
     </item>
     <item>
       <title>Software Engineer, APIs &amp; Context Platform at Glean</title>
@@ -254,13 +275,6 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 09:34:29 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 09:34:29 +0000</pubDate>
@@ -272,6 +286,13 @@
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 09:34:29 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 09:34:29 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -296,17 +317,17 @@
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 09:32:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
       <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 09:32:36 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
+      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 19 May 2026 09:32:36 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
     </item>
     <item>
       <title>Software Engineer, Intelligence Systems at Anduril Industries</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Tue, 19 May 2026 09:25:55 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Engineering at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4991618007?gh_jid=4991618007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 09:24:11 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4991618007?gh_jid=4991618007</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Network), Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 09:21:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, PES at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4838188007?gh_jid=4838188007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 19 May 2026 09:18:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4838188007?gh_jid=4838188007</guid>
     </item>
   </channel>
 </rss>
