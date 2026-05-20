@@ -184,8 +184,8 @@ class TestCategoryAndTierCounting:
         assert categories['ml'] == 1
         assert categories['data'] == 1
 
-    def test_does_not_fall_back_to_legacy_categories_when_category_payload_exists(self):
-        """Legacy categories are ignored once enriched category data is present, even if malformed."""
+    def test_falls_back_to_legacy_categories_when_category_payload_is_invalid(self):
+        """Legacy category lists still count when enriched category payloads are invalid."""
         jobs = [
             {
                 'company': 'Google',
@@ -219,7 +219,12 @@ class TestCategoryAndTierCounting:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
-        assert categories == {}
+        assert categories == {
+            'swe': 1,
+            'data_ml': 1,
+            'product': 1,
+            'infrastructure_sre': 1,
+        }
 
     def test_counts_tiers_correctly(self):
         """Company tiers are counted correctly."""

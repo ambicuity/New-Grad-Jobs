@@ -2380,6 +2380,26 @@ def get_iso_date(posted_at: Any) -> str:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
 
+
+def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
+    """Yield normalized category IDs from enriched or legacy job category data."""
+    category_id = get_nested_value(job, 'category.id')
+    if isinstance(category_id, str):
+        normalized = category_id.strip()
+        if normalized:
+            yield normalized
+            return
+
+    legacy_categories = job.get('categories', [])
+    if not isinstance(legacy_categories, list):
+        return
+
+    for category in legacy_categories:
+        if isinstance(category, str):
+            normalized = category.strip()
+            if normalized:
+                yield normalized
+
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
     """Generate JSON data structure for jobs"""
 
@@ -2440,25 +2460,6 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     """
     # Create today's snapshot
     today = datetime.now().strftime('%Y-%m-%d')
-
-    def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
-        if 'category' in job:
-            category_id = get_nested_value(job, 'category.id')
-            if isinstance(category_id, str):
-                normalized = category_id.strip()
-                if normalized:
-                    yield normalized
-            return
-
-        legacy_categories = job.get('categories', [])
-        if not isinstance(legacy_categories, list):
-            return
-
-        for category in legacy_categories:
-            if isinstance(category, str):
-                normalized = category.strip()
-                if normalized:
-                    yield normalized
 
     # Count jobs by category
     category_counts = Counter()
