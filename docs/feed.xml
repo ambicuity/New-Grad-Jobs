@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 21:27:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 22:56:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Vector Core Modeling (Entry-Level / New Grad) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7905751?gh_jid=7905751</link>
+      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 20 May 2026 22:08:05 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7905751?gh_jid=7905751</guid>
+    </item>
+    <item>
+      <title>Software Engineer - PlanetScale Vitess at PlanetScale</title>
+      <link>https://job-boards.greenhouse.io/planetscale/jobs/4009746009</link>
+      <description>New grad role at PlanetScale in EMEA - Remote. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 22:04:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/planetscale/jobs/4009746009</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Safety Experience at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8475544002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 22:02:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8475544002</guid>
+    </item>
+    <item>
+      <title>Radar Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5143589007?gh_jid=5143589007</link>
+      <description>New grad role at Anduril Industries in Broomfield, Colorado, United States; Fort Collins, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 22:01:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5143589007?gh_jid=5143589007</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7940098</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 20 May 2026 21:47:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7940098</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Warfighter Systems - SkillBridge at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117558007?gh_jid=5117558007</link>
+      <description>New grad role at Anduril Industries in Bellevue, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 21:47:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117558007?gh_jid=5117558007</guid>
+    </item>
     <item>
       <title>Software Engineer (Platform Team) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8558859002?gh_jid=8558859002</link>
@@ -62,13 +104,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 20 May 2026 21:08:30 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7125944?gh_jid=7125944</guid>
-    </item>
-    <item>
-      <title>Recruiter, Early Career Talent  at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7818989?gh_jid=7818989</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 20 May 2026 21:08:30 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7818989?gh_jid=7818989</guid>
     </item>
     <item>
       <title>Software Engineer, Communication Safety at Roblox</title>
@@ -247,17 +282,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7597723</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7597723</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -268,17 +303,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
       <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -310,52 +345,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
     <item>
-      <title>Software Engineer, Developer Productivity at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Wed, 20 May 2026 20:27:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7851388</guid>
-    </item>
-    <item>
-      <title>Software Engineer - PlanetScale Vitess at PlanetScale</title>
-      <link>https://job-boards.greenhouse.io/planetscale/jobs/4009746009</link>
-      <description>New grad role at PlanetScale in EMEA - Remote. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:22:42 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/planetscale/jobs/4009746009</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Infrastructure at Glean</title>
-      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4501783005</link>
-      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:18:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4501783005</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Sharded Postgres (Neki) at PlanetScale</title>
-      <link>https://job-boards.greenhouse.io/planetscale/jobs/4009936009</link>
-      <description>New grad role at PlanetScale in San Francisco Bay Area or Remote. Category: Software Engineering</description>
-      <pubDate>Wed, 20 May 2026 20:10:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/planetscale/jobs/4009936009</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Vector Core Modeling (Entry-Level / New Grad) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7905751?gh_jid=7905751</link>
-      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 20 May 2026 19:03:08 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7905751?gh_jid=7905751</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
   </channel>
 </rss>
