@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 19:27:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 21:15:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Data at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5124616007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 20:56:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5124616007</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Data (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8540435002?gh_jid=8540435002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 19:30:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8540435002?gh_jid=8540435002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 19:30:30 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8476427002?gh_jid=8476427002</guid>
+    </item>
     <item>
       <title>Data Scientist, Product Analytics at Peloton</title>
       <link>https://careers.onepeloton.com/en/all-jobs/?gh_jid=7785734</link>
@@ -191,13 +212,6 @@
     </item>
     <item>
       <title>Ground Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5143734007?gh_jid=5143734007</link>
-      <description>New grad role at Anduril Industries in Colorado Springs, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5143734007?gh_jid=5143734007</guid>
-    </item>
-    <item>
-      <title>Ground Software Engineer, Space at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
@@ -211,6 +225,13 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4767772007?gh_jid=4767772007</guid>
     </item>
     <item>
+      <title>Ground Software Engineer, Space at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5143734007?gh_jid=5143734007</link>
+      <description>New grad role at Anduril Industries in Colorado Springs, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5143734007?gh_jid=5143734007</guid>
+    </item>
+    <item>
       <title>Industrial Engineer II  at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5037999007?gh_jid=5037999007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
@@ -219,17 +240,17 @@
     </item>
     <item>
       <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</guid>
-    </item>
-    <item>
-      <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</link>
       <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</guid>
+    </item>
+    <item>
+      <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</guid>
     </item>
     <item>
       <title>Mission Software Engineer at Anduril Industries</title>
@@ -261,17 +282,17 @@
     </item>
     <item>
       <title>Mission Software Engineer, Air Vehicle Autonomy, GenSWE at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, GenSWE at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007</guid>
+    </item>
+    <item>
+      <title>Mission Software Engineer, Air Vehicle Autonomy, GenSWE at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</guid>
     </item>
     <item>
       <title>Mission Software Engineer, EW at Anduril Industries</title>
@@ -331,31 +352,10 @@
     </item>
     <item>
       <title>Oracle Fusion Software Developer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5061437007?gh_jid=5061437007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5061437007?gh_jid=5061437007</guid>
-    </item>
-    <item>
-      <title>Oracle Fusion Software Developer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</guid>
-    </item>
-    <item>
-      <title>Oracle Fusion Software Developer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5058269007?gh_jid=5058269007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058269007?gh_jid=5058269007</guid>
-    </item>
-    <item>
-      <title>Orbital Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4872480007?gh_jid=4872480007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 21 May 2026 18:52:40 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4872480007?gh_jid=4872480007</guid>
     </item>
   </channel>
 </rss>
