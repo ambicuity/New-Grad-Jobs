@@ -2,12 +2,12 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1285,
-      "change_percent": -1.9
+      "total_jobs": 1375,
+      "change_percent": 1.85
     },
     "30_days": {
-      "total_jobs": 1350,
-      "change_percent": 3.0
+      "total_jobs": 1420,
+      "change_percent": 5.18
     }
   },
   "growing_categories": [
@@ -16,20 +16,20 @@
     "Cloud Infrastructure"
   ],
   "declining_categories": [
-    "Quality Assurance",
     "Technical Support",
-    "Project Management"
+    "Manual QA",
+    "Legacy Systems Maintenance"
   ],
   "confidence": 75,
   "insights": [
-    "The sudden jump in total jobs over the last three days suggests a significant seasonal hiring surge or a correction in market demand, shifting the 30-day average upward.",
-    "Company tier data shows a strong recovery in the 'other' category, indicating that mid-market and non-FAANG firms are aggressively increasing their new graduate intake.",
-    "While a slight short-term cooling is expected as the initial spike stabilizes, the overall trend remains positive as the market sustains a higher baseline than the previous month."
+    "The market experienced a significant structural shift in the last four days, with total job postings jumping from the ~1000 range to over 1300, indicating a surge in new graduate hiring cycles.",
+    "Unicorn and 'Other' tier companies are driving this growth, suggesting that mid-market and high-growth startups are aggressively expanding their entry-level talent pipelines.",
+    "While the 30-day average is lower due to the previous baseline, the current momentum suggests a sustained upward trend as companies finalize their Q3/Q4 hiring quotas."
   ],
-  "generated_at": "2026-05-20T00:08:13.794954",
-  "data_points": 75,
+  "generated_at": "2026-05-21T00:09:13.893749",
+  "data_points": 76,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-20"
+    "end": "2026-05-21"
   }
 }
