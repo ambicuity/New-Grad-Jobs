@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-21T04:45:39.961818",
+    "last_updated": "2026-05-21T08:26:19.379539",
     "total_snapshots": 76,
     "date_range": {
       "start": "2026-03-05",
@@ -4135,12 +4135,12 @@
     },
     {
       "date": "2026-05-21",
-      "total_jobs": 1357,
+      "total_jobs": 1353,
       "categories": {},
       "tiers": {
-        "unicorn": 600,
-        "other": 608,
-        "faang_plus": 149
+        "other": 603,
+        "faang_plus": 150,
+        "unicorn": 600
       },
       "top_companies": [
         {
@@ -4149,7 +4149,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 159
+          "jobs": 160
         },
         {
           "company": "Waymo",
@@ -4184,9 +4184,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 5.85,
-      "timestamp": "2026-05-21T04:45:39.961033"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.91,
+      "timestamp": "2026-05-21T08:26:19.378685"
     }
   ]
 }
