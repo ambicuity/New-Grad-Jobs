@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-21T08:26:19.379539",
+    "last_updated": "2026-05-21T11:48:44.651793",
     "total_snapshots": 76,
     "date_range": {
       "start": "2026-03-05",
@@ -4135,12 +4135,12 @@
     },
     {
       "date": "2026-05-21",
-      "total_jobs": 1353,
+      "total_jobs": 1358,
       "categories": {},
       "tiers": {
-        "other": 603,
-        "faang_plus": 150,
-        "unicorn": 600
+        "other": 611,
+        "faang_plus": 149,
+        "unicorn": 598
       },
       "top_companies": [
         {
@@ -4176,17 +4176,17 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 22
+          "company": "Abnormal Security",
+          "jobs": 21
         },
         {
-          "company": "Abnormal Security",
+          "company": "Boeing",
           "jobs": 21
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 5.91,
-      "timestamp": "2026-05-21T08:26:19.378685"
+      "unique_companies": 249,
+      "avg_jobs_per_company": 5.45,
+      "timestamp": "2026-05-21T11:48:44.650979"
     }
   ]
 }
