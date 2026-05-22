@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1375,
-      "change_percent": 1.85
+      "total_jobs": 1335,
+      "change_percent": 0.68
     },
     "30_days": {
-      "total_jobs": 1420,
-      "change_percent": 5.18
+      "total_jobs": 1360,
+      "change_percent": 2.56
     }
   },
   "growing_categories": [
-    "Software Engineering",
-    "Data Science",
-    "Cloud Infrastructure"
+    "Unicorn Startups",
+    "Non-FAANG Mid-Market",
+    "General Software Engineering"
   ],
   "declining_categories": [
-    "Technical Support",
-    "Manual QA",
-    "Legacy Systems Maintenance"
+    "FAANG+ (Stagnant)",
+    "Legacy Tech",
+    "Hardware Engineering"
   ],
   "confidence": 75,
   "insights": [
-    "The market experienced a significant structural shift in the last four days, with total job postings jumping from the ~1000 range to over 1300, indicating a surge in new graduate hiring cycles.",
-    "Unicorn and 'Other' tier companies are driving this growth, suggesting that mid-market and high-growth startups are aggressively expanding their entry-level talent pipelines.",
-    "While the 30-day average is lower due to the previous baseline, the current momentum suggests a sustained upward trend as companies finalize their Q3/Q4 hiring quotas."
+    "The market experienced a significant structural shift around day 26, jumping from a ~1000 job baseline to a ~1320 baseline, suggesting a new seasonal hiring cycle or budget release.",
+    "Unicorns and 'Other' tier companies are driving the current volume surge, indicating that smaller, high-growth firms are currently more aggressive in new graduate recruitment than FAANG+ firms.",
+    "The 7-day average (1221) is significantly higher than the 30-day average (1048), confirming that the recent upward trend is sustained rather than a single-day anomaly."
   ],
-  "generated_at": "2026-05-21T00:09:13.893749",
-  "data_points": 76,
+  "generated_at": "2026-05-22T01:55:18.838211",
+  "data_points": 77,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-21"
+    "end": "2026-05-22"
   }
 }
