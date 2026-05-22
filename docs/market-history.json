@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-22T15:28:29.808640",
+    "last_updated": "2026-05-22T17:27:39.332846",
     "total_snapshots": 77,
     "date_range": {
       "start": "2026-03-05",
@@ -4190,21 +4190,21 @@
     },
     {
       "date": "2026-05-22",
-      "total_jobs": 1299,
+      "total_jobs": 1298,
       "categories": {},
       "tiers": {
         "unicorn": 597,
-        "other": 561,
+        "other": 560,
         "faang_plus": 141
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 190
+          "jobs": 187
         },
         {
           "company": "Anduril Industries",
-          "jobs": 158
+          "jobs": 159
         },
         {
           "company": "Waymo",
@@ -4212,15 +4212,19 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 40
+          "jobs": 42
         },
         {
           "company": "Glean",
           "jobs": 30
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Boeing",
           "jobs": 26
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 25
         },
         {
           "company": "Affirm",
@@ -4231,17 +4235,13 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 22
-        },
-        {
           "company": "Abnormal Security",
           "jobs": 20
         }
       ],
-      "unique_companies": 236,
-      "avg_jobs_per_company": 5.5,
-      "timestamp": "2026-05-22T15:28:29.807772"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.52,
+      "timestamp": "2026-05-22T17:27:39.331875"
     }
   ]
 }
