@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2026 22:00:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 23:15:51 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robotics Software Engineer, Behaviors  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5134999007?gh_jid=5134999007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 22 May 2026 22:38:49 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5134999007?gh_jid=5134999007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Planner Reasoning Platform at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7460969</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 22 May 2026 22:20:32 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
+    </item>
+    <item>
+      <title>Software Engineer — Unity Studio (Web-based 3D Editor) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7930849?gh_jid=7930849</link>
+      <description>New grad role at Unity Technologies in Remote, Germany. Category: Software Engineering</description>
+      <pubDate>Fri, 22 May 2026 22:08:29 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7930849?gh_jid=7930849</guid>
+    </item>
     <item>
       <title>Robotics Software Engineer, Sensor Integration  at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Twilio in Remote - US. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 22 May 2026 15:33:42 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7059734</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 22 May 2026 14:22:46 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, EW at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117734007?gh_jid=5117734007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 22 May 2026 14:15:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117734007?gh_jid=5117734007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, EW at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5107573007?gh_jid=5107573007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 22 May 2026 14:10:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5107573007?gh_jid=5107573007</guid>
     </item>
   </channel>
 </rss>
