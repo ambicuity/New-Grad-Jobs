@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2026 22:08:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 23:12:22 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
@@ -141,18 +141,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=643b311ed924ea05</guid>
     </item>
     <item>
-      <title>Database Developer, BIS, Associate at BlackRock</title>
-      <link>https://in.indeed.com/viewjob?jk=526c7011e259983e</link>
-      <description>New grad role at BlackRock in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=526c7011e259983e</guid>
-    </item>
-    <item>
       <title>Information Security Engineer - Database Activity Logging at Wells Fargo</title>
       <link>https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</link>
       <description>New grad role at Wells Fargo in Irving, TX, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</guid>
+    </item>
+    <item>
+      <title>Database Developer, BIS, Associate at BlackRock</title>
+      <link>https://in.indeed.com/viewjob?jk=526c7011e259983e</link>
+      <description>New grad role at BlackRock in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=526c7011e259983e</guid>
     </item>
     <item>
       <title>COORDINATING ENGINEER I-DWM 2026 at City of Chicago, IL</title>
@@ -162,25 +162,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=542b334302234ea6</guid>
     </item>
     <item>
-      <title>Associate R&amp;D Engineer – Coriograph Pre-operative Planning at Smith+Nephew</title>
-      <link>https://www.indeed.com/viewjob?jk=f919d2e0074abff6</link>
-      <description>New grad role at Smith+Nephew in Pittsburgh, PA, US. Category: Other</description>
+      <title>Nurse Extern II - December 2026 Grads - ACE/Stroke/Obs at Advocate Aurora Health</title>
+      <link>https://www.indeed.com/viewjob?jk=97804abdaed2d0c6</link>
+      <description>New grad role at Advocate Aurora Health in Milwaukee, WI, US. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f919d2e0074abff6</guid>
-    </item>
-    <item>
-      <title>Associate, DevOps Engineer at BlackRock</title>
-      <link>https://www.indeed.com/viewjob?jk=99e3f1e7c2ddca57</link>
-      <description>New grad role at BlackRock in Wilmington, DE, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=99e3f1e7c2ddca57</guid>
-    </item>
-    <item>
-      <title>Specialist, Software Engineer (Java, Angular) at Nationwide Mutual Insurance Company</title>
-      <link>https://www.indeed.com/viewjob?jk=4370ac26c01ff334</link>
-      <description>New grad role at Nationwide Mutual Insurance Company in Columbus, OH, US. Category: Software Engineering</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4370ac26c01ff334</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=97804abdaed2d0c6</guid>
     </item>
     <item>
       <title>New Graduate Nurse RN Behavioral Health at Research Psychiatric Center</title>
@@ -356,6 +342,20 @@
       <description>New grad role at Tanium in Addison, TX (Hybrid); Bellevue, WA (Hybrid); Durham, NC (Hybrid); Emeryville, CA (Hybrid). Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 22 May 2026 19:13:02 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/7874958</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Database Engineering at Salesloft</title>
+      <link>https://www.salesloft.com/company/careers?gh_jid=7645488</link>
+      <description>New grad role at Salesloft in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 22 May 2026 18:59:46 +0000</pubDate>
+      <guid isPermaLink="true">https://www.salesloft.com/company/careers?gh_jid=7645488</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full-stack at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 22 May 2026 17:51:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</guid>
     </item>
   </channel>
 </rss>
