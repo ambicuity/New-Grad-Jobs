@@ -71,9 +71,9 @@ def test_get_nested_value_resolves_paths():
 
 def test_fetch_graphql_jobs_maps_fields_and_defaults_location():
     config = _make_company_config()
-    # 700 chars is below the 1200-char clean_description() ceiling, so it
-    # passes through unchanged. Use a >1200-char input to assert clipping.
-    long_description = "x" * 2000
+    # 700 chars is below the 3000-char clean_description() ceiling, so it
+    # passes through unchanged. Use a >3000-char input to assert clipping.
+    long_description = "x" * 4000
     response_payload = _make_graphql_response(
         [
             {"node": {
@@ -97,8 +97,8 @@ def test_fetch_graphql_jobs_maps_fields_and_defaults_location():
     assert job["url"] == "https://careers.acme.com/jobs/1"
     assert job["posted_at"] == "2026-03-01T00:00:00Z"
     assert job["source"] == "GraphQL"
-    # clean_description() clips at 1200 chars on a word boundary and appends "…"
-    assert len(job["description"]) <= 1201
+    # clean_description() clips at 3000 chars on a word boundary and appends "…"
+    assert len(job["description"]) <= 3001
     assert job["description"].endswith("…")
 
 
