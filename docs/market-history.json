@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-23T00:20:49.584670",
+    "last_updated": "2026-05-23T04:15:51.306359",
     "total_snapshots": 78,
     "date_range": {
       "start": "2026-03-05",
@@ -4245,12 +4245,12 @@
     },
     {
       "date": "2026-05-23",
-      "total_jobs": 1334,
+      "total_jobs": 1339,
       "categories": {},
       "tiers": {
-        "other": 573,
-        "faang_plus": 160,
-        "unicorn": 601
+        "unicorn": 600,
+        "other": 583,
+        "faang_plus": 156
       },
       "top_companies": [
         {
@@ -4259,7 +4259,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 161
+          "jobs": 162
         },
         {
           "company": "Waymo",
@@ -4267,11 +4267,11 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 42
+          "jobs": 43
         },
         {
           "company": "Boeing",
-          "jobs": 34
+          "jobs": 35
         },
         {
           "company": "Glean",
@@ -4279,24 +4279,24 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
+          "jobs": 25
         },
         {
           "company": "Affirm",
           "jobs": 25
         },
         {
-          "company": "ClickHouse",
+          "company": "Accenture",
           "jobs": 24
         },
         {
-          "company": "Accenture",
-          "jobs": 21
+          "company": "ClickHouse",
+          "jobs": 24
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 5.77,
-      "timestamp": "2026-05-23T00:20:49.583890"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 5.75,
+      "timestamp": "2026-05-23T04:15:51.305537"
     }
   ]
 }
