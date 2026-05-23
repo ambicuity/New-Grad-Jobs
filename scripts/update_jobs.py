@@ -784,13 +784,11 @@ _COMP_BLOCKLIST = re.compile(
 )
 
 
-def clean_description(text: Optional[str], max_chars: int = 1200) -> str:
+def clean_description(text: Optional[str], max_chars: int = 3000) -> str:
     """Strip HTML, collapse whitespace, clip to max_chars on a word boundary.
 
     Used to publish a readable "About the role" snippet in docs/jobs.json
     from the raw HTML each ATS returns in `content` / `descriptionHtml`.
-    Kept conservative at 1200 chars so jobs.json stays under ~3 MB on the
-    typical 1000-job scrape.
     """
     if not text:
         return ''
@@ -859,6 +857,13 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
     if 'content=' not in url:
         url = url + ('&' if '?' in url else '?') + 'content=true'
 
+    # Extract board token for individual job fetches (e.g. 'andurilindustries'
+    # from 'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs')
+    board_token = None
+    _bt_match = re.search(r'/boards/([^/]+)/jobs', url)
+    if _bt_match:
+        board_token = _bt_match.group(1)
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -885,7 +890,9 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 print(f"  ⚠️  {company_name}: Unexpected API response format")
                 continue
 
-            for job in data.get('jobs', []):
+            raw_jobs = data.get('jobs', [])
+
+            for job in raw_jobs:
                 description = job.get('content', '') or ''
                 jobs.append({
                     'company': company_name,
@@ -895,8 +902,28 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                     'posted_at': job.get('updated_at') or job.get('created_at'),
                     'source': 'Greenhouse',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': extract_compensation(description),
+                    '_gh_id': job.get('id'),
                 })
+
+            # Enrichment pass: fetch individual details for jobs with empty content.
+            # Only when we have a board_token and there are jobs needing enrichment.
+            empty_jobs = [j for j in jobs if not j['description_html'] and j.get('_gh_id')]
+            if empty_jobs and board_token:
+                print(f"  📋 Enriching {len(empty_jobs)} jobs with empty descriptions...")
+                for job_dict in empty_jobs:
+                    detail = fetch_greenhouse_job_detail(board_token, job_dict['_gh_id'])
+                    if detail and detail.get('content'):
+                        content = detail['content']
+                        job_dict['description'] = clean_description(content)
+                        job_dict['description_html'] = content
+                        job_dict['comp'] = extract_compensation(content) or job_dict['comp']
+
+            # Remove internal tracking field before returning
+            for j in jobs:
+                j.pop('_gh_id', None)
+
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
 
@@ -930,6 +957,31 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
+
+
+def fetch_greenhouse_job_detail(board_token: str, job_id: int, timeout: int = DEFAULT_TIMEOUT) -> Optional[Dict[str, Any]]:
+    """Fetch a single job's full details from the Greenhouse individual job endpoint.
+
+    Used as a fallback when the list endpoint returns empty content for a job.
+    The individual endpoint always returns the full description.
+
+    Args:
+        board_token: Greenhouse board token (e.g. 'andurilindustries').
+        job_id: Numeric job ID from the list response.
+        timeout: Request timeout in seconds.
+
+    Returns:
+        Parsed JSON response dict, or None on failure.
+    """
+    url = f"https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs/{job_id}"
+    try:
+        response = limited_get(url, timeout=timeout)
+        if response.status_code == 200:
+            return response.json()
+    except Exception:
+        pass
+    return None
+
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
@@ -2398,6 +2450,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
     # Build JSON structure
     json_jobs = []
     for job in jobs:
+        desc_html = job.get('description_html', '')
         json_jobs.append({
             'id': job.get('id', ''),
             'company': job.get('company', ''),
@@ -2413,6 +2466,8 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'is_closed': job.get('is_closed', False),
             'comp': job.get('comp'),
             'description': job.get('description', ''),
+            'description_html': desc_html,
+            'full_description': clean_description(desc_html, max_chars=50000) if desc_html else '',
         })
 
     return {
