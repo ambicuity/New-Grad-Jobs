@@ -14,6 +14,7 @@ Tests cover:
 import sys
 import os
 import math
+import requests
 from datetime import datetime, timedelta, timezone, date
 from unittest.mock import patch
 
@@ -689,3 +690,165 @@ class TestCleanDescription:
     def test_empty_and_none(self):
         assert clean_description('') == ''
         assert clean_description(None) == ''
+
+
+# ---------------------------------------------------------------------------
+# Greenhouse description enrichment: fetch individual job details when list
+# endpoint returns empty content.
+# ---------------------------------------------------------------------------
+
+class TestGreenhouseDescriptionEnrichment:
+    """When the Greenhouse list endpoint returns empty content for a job,
+    the fetcher should fall back to the individual job endpoint to get
+    the full description."""
+
+    def _mock_response(self, status=200, json_body=None):
+        m = type('R', (), {})()
+        m.status_code = status
+        m.ok = 200 <= status < 300
+        m.json = lambda: (json_body or {'jobs': []})
+        m.raise_for_status = lambda: None
+        m.text = ''
+        return m
+
+    def test_enriches_jobs_with_empty_content(self):
+        """Jobs with empty content from list endpoint should be enriched
+        via individual job endpoint."""
+        list_body = {'jobs': [{
+            'id': 12345,
+            'title': 'Software Engineer',
+            'location': {'name': 'Hawthorne, CA'},
+            'absolute_url': 'https://example.com/job/12345',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': '',
+        }]}
+        detail_body = {
+            'id': 12345,
+            'title': 'Software Engineer',
+            'location': {'name': 'Hawthorne, CA'},
+            'absolute_url': 'https://example.com/job/12345',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': '<div><h2>About the role</h2><p>We are looking for a software engineer to join our team.</p></div>',
+        }
+
+        call_urls = []
+        def fake_get(url, *a, **kw):
+            call_urls.append(url)
+            if '/jobs/12345' in url:
+                return self._mock_response(json_body=detail_body)
+            return self._mock_response(json_body=list_body)
+
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('Anduril',
+                                        'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs')
+        assert len(jobs) == 1
+        assert jobs[0]['description'] != ''
+        assert 'About the role' in jobs[0]['description']
+        # Verify the individual endpoint was called
+        assert any('/jobs/12345' in u for u in call_urls)
+
+    def test_skips_enrichment_when_content_present(self):
+        """Jobs that already have content should NOT trigger individual fetches."""
+        list_body = {'jobs': [{
+            'id': 99,
+            'title': 'Backend Engineer',
+            'location': {'name': 'SF'},
+            'absolute_url': 'https://example.com/job/99',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': '<p>Full description already here.</p>',
+        }]}
+
+        call_urls = []
+        def fake_get(url, *a, **kw):
+            call_urls.append(url)
+            return self._mock_response(json_body=list_body)
+
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('Stripe',
+                                        'https://boards-api.greenhouse.io/v1/boards/stripe/jobs')
+        assert len(jobs) == 1
+        assert 'Full description' in jobs[0]['description']
+        # Should NOT have called individual endpoint
+        assert not any('/jobs/99' in u for u in call_urls)
+
+    def test_enrichment_preserves_existing_fields(self):
+        """Enriched jobs should still have all standard fields."""
+        list_body = {'jobs': [{
+            'id': 42,
+            'title': 'New Grad SWE',
+            'location': {'name': 'Austin, TX'},
+            'absolute_url': 'https://example.com/job/42',
+            'updated_at': '2026-05-10T00:00:00Z',
+            'content': '',
+        }]}
+        detail_body = {
+            'id': 42,
+            'content': '<p>The base salary range is $100,000 - $140,000.</p>',
+        }
+
+        def fake_get(url, *a, **kw):
+            if '/jobs/42' in url:
+                return self._mock_response(json_body=detail_body)
+            return self._mock_response(json_body=list_body)
+
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        assert len(jobs) == 1
+        job = jobs[0]
+        assert job['company'] == 'TestCo'
+        assert job['title'] == 'New Grad SWE'
+        assert job['location'] == 'Austin, TX'
+        assert job['source'] == 'Greenhouse'
+        assert job['comp'] is not None
+        assert job['comp']['min'] == 100000
+
+    def test_enrichment_handles_individual_fetch_failure(self):
+        """If individual fetch fails, job should still be returned with empty description."""
+        list_body = {'jobs': [{
+            'id': 77,
+            'title': 'Engineer',
+            'location': {'name': 'Remote'},
+            'absolute_url': 'https://example.com/job/77',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': '',
+        }]}
+
+        call_count = [0]
+        def fake_get(url, *a, **kw):
+            call_count[0] += 1
+            if '/jobs/77' in url:
+                raise requests.exceptions.Timeout("timeout")
+            return self._mock_response(json_body=list_body)
+
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        assert len(jobs) == 1
+        assert jobs[0]['description'] == ''
+
+    def test_enrichment_handles_null_content(self):
+        """content=None (not just '') should also trigger enrichment."""
+        list_body = {'jobs': [{
+            'id': 88,
+            'title': 'Engineer',
+            'location': {'name': 'Remote'},
+            'absolute_url': 'https://example.com/job/88',
+            'updated_at': '2026-05-16T10:00:00Z',
+            'content': None,
+        }]}
+        detail_body = {
+            'id': 88,
+            'content': '<p>Real description here.</p>',
+        }
+
+        def fake_get(url, *a, **kw):
+            if '/jobs/88' in url:
+                return self._mock_response(json_body=detail_body)
+            return self._mock_response(json_body=list_body)
+
+        with patch('update_jobs.limited_get', side_effect=fake_get):
+            jobs = fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        assert len(jobs) == 1
+        assert 'Real description' in jobs[0]['description']
