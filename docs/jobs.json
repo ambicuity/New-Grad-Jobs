@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-05-23T10:42:20.331131",
-    "total_jobs": 1329,
+    "generated_at": "2026-05-23T11:49:48.743614",
+    "total_jobs": 1342,
     "categories": [
       {
         "id": "software_engineering",
         "name": "Software Engineering",
         "emoji": "\ud83d\udcbb",
-        "count": 853
+        "count": 859
       },
       {
         "id": "data_ml",
         "name": "Data Science & ML",
         "emoji": "\ud83e\udd16",
-        "count": 122
+        "count": 121
       },
       {
         "id": "data_engineering",
@@ -25,7 +25,7 @@
         "id": "infrastructure_sre",
         "name": "Infrastructure & SRE",
         "emoji": "\ud83c\udfd7\ufe0f",
-        "count": 185
+        "count": 184
       },
       {
         "id": "quant_finance",
@@ -43,7 +43,7 @@
         "id": "other",
         "name": "Other",
         "emoji": "\ud83d\udcbc",
-        "count": 132
+        "count": 141
       }
     ]
   },
@@ -362,6 +362,166 @@
       "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. ABOUT THE TEAM The Maneuver Dominance team at Anduril develops operationally relevant, multi-asset autonomy. We are focused on making large groups of autonomous systems work effectively together. We leverage existing Anduril drone platforms like Ghost or Altius, in addition to bringing 3rd party platforms into Anduril\u2019s Lattice ecosystem.&nbsp; ABOUT THE JOB We are seeking a Robotics Software Engineer, Behaviors to join the Maneuver Dominance team. In this role, you will\u2026"
     },
     {
+      "id": "apple-software-engineer--soc-level-validation-engineer-austin,-tx,-us",
+      "company": "Apple",
+      "title": "Software Engineer- SoC Level Validation Engineer",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=18e88a55250c89f6",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 171600,
+        "max": 302200,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Do you love creating elegant solutions to highly complex challenges? Do you intrinsically see the importance in every detail? As part of our Silicon Technologies group, you\u2019ll help design and manufacture our next\\-generation, high\\-performance, power\\-efficient processor, system\\-on\\-chip (SoC). You\u2019ll ensure Apple products and services can seamlessly and efficiently handle the tasks that make them beloved by millions. Joining this group means you\u2019ll be responsible for crafting and building the technology that fuels Apple\u2019s devices. Together, you and your team will enable our customers to do all the things they love with their devices. Join us to help deliver the next groundbreaking Apple product. We have a critical impact on getting high quality functional products to millions of customers quickly, and we are hiring all levels from junior to senior roles. What happens when you run almost everything on an SoC all at once while powering down blocks, hammering new features, and running a complex suite of algorithms? You find bugs. That\u2019s exactly what we do. We break Apple Silicon with our bare metal system level SW suite that runs mostly post\\-silicon, leverages pre\\-silicon and\u2026"
+    },
+    {
+      "id": "apple-software-engineer--soc-level-validation-engineer-beaverton,-or,-us",
+      "company": "Apple",
+      "title": "Software Engineer- SoC Level Validation Engineer",
+      "location": "Beaverton, OR, US",
+      "url": "https://www.indeed.com/viewjob?jk=72c4733127de2679",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Do you love creating elegant solutions to highly complex challenges? Do you intrinsically see the importance in every detail? As part of our Silicon Technologies group, you\u2019ll help design and manufacture our next\\-generation, high\\-performance, power\\-efficient processor, system\\-on\\-chip (SoC). You\u2019ll ensure Apple products and services can seamlessly and efficiently handle the tasks that make them beloved by millions. Joining this group means you\u2019ll be responsible for crafting and building the technology that fuels Apple\u2019s devices. Together, you and your team will enable our customers to do all the things they love with their devices. Join us to help deliver the next groundbreaking Apple product. We have a critical impact on getting high quality functional products to millions of customers quickly, and we are hiring all levels from junior to senior roles. What happens when you run almost everything on an SoC all at once while powering down blocks, hammering new features, and running a complex suite of algorithms? You find bugs. That\u2019s exactly what we do. We break Apple Silicon with our bare metal system level SW suite that runs mostly post\\-silicon, leverages pre\\-silicon and\u2026"
+    },
+    {
+      "id": "apple-software-engineer--soc-level-validation-engineer-austin,-tx,-us",
+      "company": "Apple",
+      "title": "Software Engineer- SoC Level Validation Engineer",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=207721f6250531bd",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 181100,
+        "max": 318400,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Do you love creating elegant solutions to highly complex challenges? Do you intrinsically see the importance in every detail? As part of our Silicon Technologies group, you\u2019ll help design and manufacture our next\\-generation, high\\-performance, power\\-efficient processor, system\\-on\\-chip (SoC). You\u2019ll ensure Apple products and services can seamlessly and efficiently handle the tasks that make them beloved by millions. Joining this group means you\u2019ll be responsible for crafting and building the technology that fuels Apple\u2019s devices. Together, you and your team will enable our customers to do all the things they love with their devices. Join us to help deliver the next groundbreaking Apple product. We have a critical impact on getting high quality functional products to millions of customers quickly, and we are hiring all levels from junior to senior roles. What happens when you run almost everything on an SoC all at once while powering down blocks, hammering new features, and running a complex suite of algorithms? You find bugs. That\u2019s exactly what we do. We break Apple Silicon with our bare metal system level SW suite that runs mostly post\\-silicon, leverages pre\\-silicon and\u2026"
+    },
+    {
+      "id": "apple-software-engineer--soc-level-validation-engineer-austin,-tx,-us",
+      "company": "Apple",
+      "title": "Software Engineer- SoC Level Validation Engineer",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=10f99115084dbb37",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 181100,
+        "max": 318400,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Do you love creating elegant solutions to highly complex challenges? Do you intrinsically see the importance in every detail? As part of our Silicon Technologies group, you\u2019ll help design and manufacture our next\\-generation, high\\-performance, power\\-efficient processor, system\\-on\\-chip (SoC). You\u2019ll ensure Apple products and services can seamlessly and efficiently handle the tasks that make them beloved by millions. Joining this group means you\u2019ll be responsible for crafting and building the technology that fuels Apple\u2019s devices. Together, you and your team will enable our customers to do all the things they love with their devices. Join us to help deliver the next groundbreaking Apple product. We have a critical impact on getting high quality functional products to millions of customers quickly, and we are hiring all levels from junior to senior roles. What happens when you run almost everything on an SoC all at once while powering down blocks, hammering new features, and running a complex suite of algorithms? You find bugs. That\u2019s exactly what we do. We break Apple Silicon with our bare metal system level SW suite that runs mostly post\\-silicon, leverages pre\\-silicon and\u2026"
+    },
+    {
+      "id": "apple-software-engineer--soc-level-validation-engineer-austin,-tx,-us",
+      "company": "Apple",
+      "title": "Software Engineer- SoC Level Validation Engineer",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=643b311ed924ea05",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 171600,
+        "max": 302200,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Do you love creating elegant solutions to highly complex challenges? Do you intrinsically see the importance in every detail? As part of our Silicon Technologies group, you\u2019ll help design and manufacture our next\\-generation, high\\-performance, power\\-efficient processor, system\\-on\\-chip (SoC). You\u2019ll ensure Apple products and services can seamlessly and efficiently handle the tasks that make them beloved by millions. Joining this group means you\u2019ll be responsible for crafting and building the technology that fuels Apple\u2019s devices. Together, you and your team will enable our customers to do all the things they love with their devices. Join us to help deliver the next groundbreaking Apple product. We have a critical impact on getting high quality functional products to millions of customers quickly, and we are hiring all levels from junior to senior roles. What happens when you run almost everything on an SoC all at once while powering down blocks, hammering new features, and running a complex suite of algorithms? You find bugs. That\u2019s exactly what we do. We break Apple Silicon with our bare metal system level SW suite that runs mostly post\\-silicon, leverages pre\\-silicon and\u2026"
+    },
+    {
       "id": "wells-fargo-information-security-engineer---database-activity-logging-irving,-tx,-us",
       "company": "Wells Fargo",
       "title": "Information Security Engineer - Database Activity Logging",
@@ -392,34 +552,6 @@
       "description": "**About this role:** Wells Fargo is seeking an Information Security Associate within Infrastructure Engineering \\& Architecture, to support the Database Engineering team. Infrastructure Engineering \\& Architecture is responsible for delivering and supporting enterprise platforms across global environments including cloud, data centers, distributed systems, and networking. This organization ensures stability, scalability, and secure operation of enterprise infrastructure services that support business operations and customer\\-facing capabilities. In this role, you will support infrastructure and network security initiatives by assisting with database activity monitoring using tools such as IBM Guardium and supporting direct\\-to\\-Splunk logging pipelines across multiple platforms, while helping coordinate ServiceNow\\-driven changes end\\-to\\-end, including planning, validation, and production readiness. In partnership with engineering, operations, and stakeholder teams, you will track dependencies and drive execution while leveraging scripting (e.g., Python), appliance configuration, evidence validation, SIEM support, and asset tracking to ensure consistent, high\\-quality delivery\u2026"
     },
     {
-      "id": "city-of-chicago,-il-coordinating-engineer-i-dwm-2026-chicago,-il,-us",
-      "company": "City of Chicago, IL",
-      "title": "COORDINATING ENGINEER I-DWM 2026",
-      "location": "Chicago, IL, US",
-      "url": "https://www.indeed.com/viewjob?jk=542b334302234ea6",
-      "posted_at": "2026-05-23T00:00:00",
-      "posted_display": "Today",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Job Number:** **416124** **Description** **JOB ANNOUNCEMENT** **COORDINATING ENGINEER\\-I****Chicago Department of Water Management****Bureau of Operations and Distribution** **Number of Positions:1****(Additional vacancies possible pending budget approval)****Starting Salary: GY12 $** **115,992\\.00 ANNUALLY****Applications for this position will be accepted until 11:59pm CDT on** **6/05/2026** **Job Overview** The Chicago Department of Water Management is seeking an experienced and dynamic COORDINATING ENGINEER\\-I, to join our team. Under direction, the class coordinates and supervises the work of an engineering section responsible for the planning, design and monitoring of construction on water infrastructure projects, or functions as a project manager for a major water infrastructure project of considerable scope and complexity; and performs related duties as required. **ESSENTIAL DUTIES:** Directs the involvement of field surveys to identify conditions that may impact the scope of proposed construction, repair and maintenance projects; meets with engineers and consultants to determine scope, costs, design criteria and specifications for projects such as water, sewer, and\u2026"
-    },
-    {
       "id": "blackrock-database-developer,-bis,-associate-mh,-in",
       "company": "BlackRock",
       "title": "Database Developer, BIS, Associate",
@@ -448,6 +580,34 @@
       "is_closed": false,
       "comp": null,
       "description": "Locations: **Mumbai, India** **Job description** ------------------- **About this role** **About the team** BlackRock Index Services (BIS) is responsible for the design, development, and administration of Fixed Income, Equity \\& Multi\\-Asset indices for internal and external clients. Our success hinges on producing highly accurate, best\\-of\\-breed indices in a timely manner. BIS is looking for an experienced Software Architect to drive the architecture \\& design of our next generation Equity, Fixed Income \\& Multi\\-Asset Index calculation, simulation, and delivery platform. **Role Responsibilities** * Responsible for all aspects of Database, design, development, testing, support and ensuring compatibility with enterprise and solutions architecture by harnessing modern development technologies * Collaborate with cross\\-functional teams to deliver innovative indices * Participate in stakeholder \\& client discussions and presentations. * You have a zeal for automating the complete software lifecycle \u2013 development, testing, deployment \\& production operations * Take pride in guiding and mentoring a team of engineers **Qualifications, Experience and Skills** * B.S./MS (or equivalent)\u2026"
+    },
+    {
+      "id": "city-of-chicago,-il-coordinating-engineer-i-dwm-2026-chicago,-il,-us",
+      "company": "City of Chicago, IL",
+      "title": "COORDINATING ENGINEER I-DWM 2026",
+      "location": "Chicago, IL, US",
+      "url": "https://www.indeed.com/viewjob?jk=542b334302234ea6",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Job Number:** **416124** **Description** **JOB ANNOUNCEMENT** **COORDINATING ENGINEER\\-I****Chicago Department of Water Management****Bureau of Operations and Distribution** **Number of Positions:1****(Additional vacancies possible pending budget approval)****Starting Salary: GY12 $** **115,992\\.00 ANNUALLY****Applications for this position will be accepted until 11:59pm CDT on** **6/05/2026** **Job Overview** The Chicago Department of Water Management is seeking an experienced and dynamic COORDINATING ENGINEER\\-I, to join our team. Under direction, the class coordinates and supervises the work of an engineering section responsible for the planning, design and monitoring of construction on water infrastructure projects, or functions as a project manager for a major water infrastructure project of considerable scope and complexity; and performs related duties as required. **ESSENTIAL DUTIES:** Directs the involvement of field surveys to identify conditions that may impact the scope of proposed construction, repair and maintenance projects; meets with engineers and consultants to determine scope, costs, design criteria and specifications for projects such as water, sewer, and\u2026"
     },
     {
       "id": "blackrock-associate,-devops-engineer-wilmington,-de,-us",
@@ -513,11 +673,11 @@
       "description": "If you\u2019re passionate about being part of a dynamic organization that enables a Fortune 100 company with nearly $70 billion in annual sales to drive innovation and adopt new technologies that deliver business results, then Nationwide\u2019s Technology team could be the place for you! At Nationwide\u00ae, \u201con your side\u201d goes beyond just words. Our customers are at the center of everything we do and we\u2019re looking for associates who are passionate about delivering extraordinary care.**This role will be filled in a hybrid capacity with in\\-office collaboration in the Columbus, Ohio office 2 days a week (Wednesday \\& Thursday).** Nationwide Financial Technology\\-Annuity is seeking a hands\\-on Software Engineer to design, build and support business\u2011critical applications within a complex, integrated technology environment. This role blends modern application development with strong accountability for delivery quality, operational stability and continuous improvement. The ideal candidate is expected to apply sound engineering judgment while responsibly leveraging AI\u2011enabled tools to improve development efficiency, system reliability and security outcomes. Work is performed in close collaboration\u2026"
     },
     {
-      "id": "lcg-associates-junior-full-stack-developer-&-it-generalist-atlanta,-ga,-us",
-      "company": "LCG Associates",
-      "title": "Junior Full-Stack Developer & IT Generalist",
-      "location": "Atlanta, GA, US",
-      "url": "https://www.indeed.com/viewjob?jk=f13a31372d1be438",
+      "id": "research-psychiatric-center-new-graduate-nurse-rn-behavioral-health-kansas-city,-mo,-us",
+      "company": "Research Psychiatric Center",
+      "title": "New Graduate Nurse RN Behavioral Health",
+      "location": "Kansas City, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=61c588589304373b",
       "posted_at": "2026-05-23T00:00:00",
       "posted_display": "Today",
       "source": "JobSpy (Indeed)",
@@ -538,7 +698,63 @@
       },
       "is_closed": false,
       "comp": null,
-      "description": "### **Commitment to Equal Opportunity** At LCG, our policy is to hire the most qualified individuals. We provide equal employment opportunities for our present and prospective team members. LCG prohibits discrimination and harassment of any type on the basis of race, ethnicity, gender, national origin, religion, sexual orientation, pregnancy, disability status, marital status, age, genetics, protected veteran status, or any other characteristic protected by federal, state, or local laws. We comply with equal opportunity laws and with the spirit of those laws. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training. ### **Atlanta, GA** ### **Job Description** LCG is seeking a versatile entry\\-level to junior Full\\-Stack Developer to join our small IT team in a combined development and IT support role. This role is for someone who enjoys variety \u2014 writing code, maintaining systems, solving practical technology problems, and keeping our technology running smoothly. If you\u2019re curious, resourceful, self\\-motivated, easy to work with, and\u2026"
+      "description": "*Do you want to join an organization that invests in you?* At Research Psychiatric Center, you come first! HCA Healthcare is committed to the growth and development of our future nurses! May 2026 Graduates and Summer 2026 Graduates through September 2026 Complete this one application to discuss the units available for New Graduate Nurses to start their career in the rewarding area of Behavioral Health. Possible areas include all Inpatient Acute Care areas: Adults, Seniors, Adolescents. Limited based on availability and can change at any time. Typically we see options for FT Days and/or FT Nights (could change given needs) How are you orientated to your New Graduate Nurse position in Behavioral Health? We will include components of residency, however most of the training is inclusive to onsite at RPC alongside some corporate BH training as well pertinent to the acuity level of our patients. Not sure you want to start right off in Behavioral Health? Consider starting in Medical Surgical Inpatient. This will give you exposure to mental health in the hospital and allow you to take steps there. The HCA Nurse Residency Programis a year\\-long program designed to give you hands\\-on\u2026"
+    },
+    {
+      "id": "hca-florida-orange-park-hospital\u200b-summer-new-grad-rn-residency-orange-park,-fl,-us",
+      "company": "HCA Florida Orange Park Hospital\u200b",
+      "title": "Summer New Grad RN Residency",
+      "location": "Orange Park, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=5b75468f02caa71d",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **HCA Florida Orange Park Hospital****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Healthcare Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources,\u2026"
+    },
+    {
+      "id": "hca-florida-memorial-hospital\u200b-summer-new-grad-rn-residency-jacksonville,-fl,-us",
+      "company": "HCA Florida Memorial Hospital\u200b",
+      "title": "Summer New Grad RN Residency",
+      "location": "Jacksonville, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=4476e663a994b79d",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **HCA Florida Memorial Hospital****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Healthcare Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including\u2026"
     },
     {
       "id": "adp-2026-grads-inside-sales-representative-(base-salary-+-uncapped-commissions)-louisville,-ky,-us",
@@ -595,6 +811,34 @@
       "is_closed": false,
       "comp": null,
       "description": "**ADP is hiring a Digital Sales Associate.** Are you ready for your next best job where you can control your financial future * \\- and achieve that perfect work\\-life balance you've been searching for? * Does access to the latest tools and technology to assist with sales excite you? * Are you looking to join a dynamic, inclusive team environment with a culture of collaboration and belonging? **Yes? We had a feeling this could be a perfect match. Don't just take our word for it... read on and see for yourself!** As a Digital Sales Associate, you will sell ADP solutions, including payroll, tax, human resources, and benefits to new and existing clients using the latest digital technology. You will serve as a consultative business partner introducing ADP's leading solutions to Chief Financial Officers, Human Resources and Payroll Administrators, Small Business Owners, and more at companies ranging from Fortune 100 organizations to small, innovative businesses. You'll provide expert guidance and use your entrepreneurial spirit to build your book of business. In addition, we are known for our high\\-quality sales training and will teach you how to use the latest technology to set you up\u2026"
+    },
+    {
+      "id": "mission-health-new-grad-rn-residency-spruce-pine,-nc,-us",
+      "company": "Mission Health",
+      "title": "New Grad RN Residency",
+      "location": "Spruce Pine, NC, US",
+      "url": "https://www.indeed.com/viewjob?jk=1c7edef3540f2b5b",
+      "posted_at": "2026-05-23T00:00:00",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **Transylvania Regional Hospital****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! \\*\\*\\*Eligible for Sign on Bonus\\*\\*\\* The **HCA Healthcare Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence *\u2026"
     },
     {
       "id": "anduril-industries-software-engineer,-modeling-and-simulation,-space-colorado-springs,-colorado,-uni",
@@ -3039,7 +3283,7 @@
       "location": "New York, New York, USA",
       "url": "https://jobs.ashbyhq.com/astronomer/01ef4c2a-cc88-4488-9597-bab3933bbfab",
       "posted_at": "2026-05-22T11:07:07.074000",
-      "posted_display": "Today",
+      "posted_display": "1 day ago",
       "source": "Ashby",
       "category": {
         "id": "software_engineering",
@@ -4000,155 +4244,6 @@
       "description": "LOVE 3D MODELING AND PRECISE CALCULATIONS? WE ARE LOOKING FOR A TECH\\-SAVVY JUNIOR FIRE PROTECTION DESIGNER FLUENT IN AUTOCAD * The Associate Technical Engineer is an entry\\-level technical role within the A2 region Engineering Competency Centre\\- Fire Protection, focused on learning and contributing to the design and execution Engineering Judgement solutions in EPC environments. The ATE supports engineering activities under the guidance of senior engineers and technical leads, participating in key stages of the project lifecycle including design, coordination, and documentation. * The ATE will be involved in supporting low\\-complexity or standardized applications across sectors such as Industry (e.g., Manufacturing, Data Centers, Automation), Civil Infrastructure (e.g., Railways, Metros, Airports), and Commercial Buildings (e.g., Hospitals, Offices, Residential). * The role is designed to build foundational engineering skills in passive fire protection design, construction documentation, and the use of industry tools such as AutoCAD, Revit, while ensuring safety, code compliance, and cost\\-effectiveness in all technical outputs. WHAT YOU'LL DO * Develop basic product and\u2026"
     },
     {
-      "id": "eccalon-junior-software-engineer---onsite-detroit,-mi,-us",
-      "company": "Eccalon",
-      "title": "Junior Software Engineer - onsite",
-      "location": "Detroit, MI, US",
-      "url": "https://www.indeed.com/viewjob?jk=3ea4dedeea00ed78",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Job Description** We are seeking a Junior Software Engineer to join our engineering team and contribute to the development, testing, and maintenance of software applications. This role is ideal for early\\-career engineers who are eager to learn, grow their technical skills, and work collaboratively in a supportive environment. You will work closely with experienced engineers, gaining hands\\-on experience while contributing to real, production\\-level code. **Responsibilities** * Assist in designing, developing, and maintaining software applications * Write clean, readable, and well\\-tested code under guidance from senior engineers * Participate in code reviews and team discussions * Debug and fix software defects * Collaborate with product managers, designers, and engineers * Learn and apply software development best practices * Contribute to documentation and technical knowledge sharing **Required Qualifications** * Bachelor\u2019s degree in Computer Science, Engineering, or related field (or equivalent experience) * 0\u20132 years of relevant software development experience (including internships, co\\-ops, or projects) * Familiarity with one or more programming languages such as Java,\u2026"
-    },
-    {
-      "id": "the-emmes-company,-llc-business-systems-engineer-i-&-ii---essex-management-(contingent-roles)-rockvi",
-      "company": "The Emmes Company, LLC",
-      "title": "Business Systems Engineer I & II - Essex Management (Contingent Roles)",
-      "location": "Rockville, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=a5c59e4a6f5c811b",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Overview: **Job Title:** Business Systems Engineer I \\& II \u2013 Essex Management (Contingent Roles) **Notice to Candidates:** Employment in these positions is expressly contingent upon Essex Management\u2019s receipt of a contract award from the Federal Government. **Location:** US Remote This position supports \"Essex, an Emmes Company\". Essex is a biomedical informatics and health information technology\\-focused consultancy founded in 2009 and headquartered in Rockville, MD. The Essex team comprises experts with extensive experience in strategically developing and managing complex health and biomedical information programs for clients in the Federal Government, research academia, and private sectors. **Emmes Group: Building a better future for us all.** Emmes Group is transforming the future of clinical research, bringing the promise of new medical discovery closer within reach for patients. Emmes Group was founded as Emmes more than 47 years ago, becoming one of the primary clinical research providers to the US government before expanding into public\\-private partnerships and commercial biopharma. Emmes has built industry leading capabilities in cell and gene therapy, vaccines and\u2026"
-    },
-    {
-      "id": "raytheon-electrical-engineers-ii,-power-&-analog,-design-&-production-support-\u2013-actively-growing-our",
-      "company": "Raytheon",
-      "title": "Electrical Engineers II, Power & Analog, Design & Production Support \u2013 Actively Growing Our Engineering Team!",
-      "location": "Tucson, AZ, US",
-      "url": "https://www.indeed.com/viewjob?jk=9f49558eac6fe705",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 68900,
-        "max": 131100,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**Date Posted:** 2026\\-04\\-09**Country:** United States of America**Location:** US\\-AZ\\-TUCSON\\-M02 \\~ 1151 E Hermans Rd \\~ BLDG M02**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** Active and transferable U.S. government issued security clearance is required prior to start date. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance **Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Ability to obtain INTERIM U.S. government issued security clearance is required prior to start date**We're growing fast and we want you to grow with us! We're expanding our engineering organization dramatically to meet exciting customer demand, and we're actively looking for engineers who bring strong foundational skills and a passion for solving hard problems. Industry experience in defense? Not required \u2014 we'll invest in you. If you meet the minimum qualifications, we want to talk. Apply today and take the next step in your engineering career.** At Raytheon, the foundation of everything we do is rooted in our values and a higher calling \u2013 to help our nation and allies defend freedoms and\u2026"
-    },
-    {
-      "id": "saic-java-developer/automation-tester-junior-ashburn,-va,-us",
-      "company": "SAIC",
-      "title": "Java Developer/Automation Tester Junior",
-      "location": "Ashburn, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=1436cfc47e52f58b",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Job ID: 2612898 **Location:** Ashburn, VA, US **Date Posted:** 2026\\-05\\-22 **Category:** Software **Subcategory:** SW Engineer **Schedule:** Full\\-Time **Shift:** Day Job **Travel:** No **Minimum Clearance Required:** None **Clearance Level Must Be Able to Obtain:** Public Trust **Potential for Remote Work:** ORA\\_ON\\_SITE **Description** SAIC is currently seeking a motivated and energetic **Java/JEE Developer (Entry Level)** to join our team to begin an exciting and challenging career in Ashburn, VA. **This position starts in an automation tester role for the first 12\\-18 months of employment (developing automation test cases using Java to verify the processing of incoming and outgoing messages and storing the end state data in the database). This position will be 100% on\\-site for the first year of employment.** The Java Developer will participate in the system architecture design, systems engineering, development, integration testing and validation, and all aspects of the software life\\-cycle (requirements to design to implementation to test) for a browser\\-based application implemented using Java and backend web services. The candidate will be responsible for developing and\u2026"
-    },
-    {
-      "id": "city-of-lakewood,-wa-associate-civil-engineer-lakewood,-wa,-us",
-      "company": "City of Lakewood, WA",
-      "title": "Associate Civil Engineer",
-      "location": "Lakewood, WA, US",
-      "url": "https://www.indeed.com/viewjob?jk=7e44977da02826d7",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**JOB SUMMARY** --------------- ***This is an AFSCME represented full\\-time regular position. The City of Lakewood participates in the Public Employees Retirement System (PERS).*** Are you seeking an opportunity to work in a collaborative, diverse and dynamic Department focused on improving customer services and processes across several programs and services? The City of Lakewood\u2019s Planning and Public Works Department is a diverse, dynamic and talented team of professionals working to improve the quality of life for all Lakewood residents. The Department is entrusted with a wide range of public services including community planning, building and maintaining transportation and stormwater infrastructure, managing the health of our lakes, building, site development and land use permitting, rental housing and rental assistance, economic development and much more! This position is part of the Engineering Services Division and will support both capital projects and engineering permit reviews within the City. As an Associate Civil Engineer, you will have the opportunity to develop your skills and expertise through review of public and private development projects, oversight of\u2026"
-    },
-    {
       "id": "ey-associate---sat---gov---sat---tcf---infrastructure-advisory---new-delhi-dl,-in",
       "company": "EY",
       "title": "Associate - SaT - GOV - SaT - TCF - Infrastructure Advisory - New Delhi",
@@ -4177,18 +4272,18 @@
       "description": "Location: New Delhi Other locations: Primary Location Only Salary: Competitive Date: May 22, 2026 **Job description** ------------------- Requisition ID: 1712602 Requisition Id: 1712602 As a global leader in assurance, tax, transaction and advisory services, we hire and develop the most passionate people in their field to help build a better working world. This starts with a culture that believes in giving you the training, opportunities and creative freedom. At EY, we don't just focus on who you are now, but who you can become. We believe that it\u2019s your career and \u2018It\u2019s yours to build\u2019 which means potential here is limitless and we'll provide you with motivating and fulfilling experiences throughout your career to help you on the path to becoming your best professional self. **The opportunity** : Associate\\-GOV\\-SaT\\-SaT \\- TCF \\- Infrastructure Advisory \\- New Delhi **GOV :** Our Global Government \\& Public Sector (GPS) is a network of highly skilled professionals dedicated to serving our clients by bringing best\\-in\\-class international experience and insight combined with local knowledge to solve the most critical problems facing governments today. We actively focus on\u2026"
     },
     {
-      "id": "boeing-entry-level-f-15-flight-test-data-engineer-eglin-afb,-fl,-us",
-      "company": "Boeing",
-      "title": "Entry-Level F-15 Flight Test Data Engineer",
-      "location": "Eglin AFB, FL, US",
-      "url": "https://www.indeed.com/viewjob?jk=c58f428e0423aec9",
+      "id": "l3harris-specialist,-systems-engineer---rams-engineer-yorba-linda,-ca,-us",
+      "company": "L3Harris",
+      "title": "Specialist, Systems Engineer - RAMS Engineer",
+      "location": "Yorba Linda, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=53c8732410f09284",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_engineering",
-        "name": "Data Engineering",
-        "emoji": "\ud83d\udcca"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "faang_plus",
@@ -4200,23 +4295,23 @@
       },
       "flags": {
         "no_sponsorship": false,
-        "us_citizenship_required": true
+        "us_citizenship_required": false
       },
       "is_closed": false,
       "comp": {
-        "min": 71400,
-        "max": 96600,
+        "min": 92500,
+        "max": 171500,
         "currency": "USD",
         "source": "jobspy"
       },
-      "description": "Eglin Air Force Base, Florida Job ID JR2026506850 Category Security Clearance Role Type Onsite Post Date May 22, 2026 **Job Description** At Boeing, we innovate and collaborate to make the world a better place. We\u2019re committed to fostering an environment for every teammate that\u2019s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. At Boeing, we are all innovators on a mission to connect, protect, explore, and inspire. From the seabed to outer space, you will learn and grow while contributing to work that shapes the world. Find your future with us. The Boeing team is seeking an **Entry\\-Level F\\-15 Flight Test Data Engineer**. This position involves joining a specialized Boeing Test \\& Evaluation engineering team performing F\\-15 tactical fighter aircraft flight test activities on\\-site at **Eglin AFB, FL.** **Position Responsibilities:** The team performing this work provides a very innovation friendly environment, with high levels of inter\\-team collaboration, peer mentoring, and significant opportunities for individual empowerment and project leadership responsibilities. This position encourages using your personal\u2026"
+      "description": "L3Harris is dedicated to recruiting and developing high\\-performing talent who are passionate about what they do. Our employees are unified in a shared dedication to our customers\u2019 mission and quest for professional growth. L3Harris provides an inclusive, engaging environment designed to empower employees and promote work\\-life success. Fundamental to our culture is an unwavering focus on values, dedication to our communities, and commitment to excellence in everything we do. L3Harris is the Trusted Disruptor in defense tech. With customers\u2019 mission\\-critical needs always in mind, our employees deliver end\\-to\\-end technology solutions connecting the space, air, land, sea and cyber domains in the interest of national security. ***Job Title: Spec, Systems Engineer \u2013 RAMS Engineer******Job Code: 38121******Job Location: Yorba Linda, CA******Job Schedule: 4/10: Employees work 10 hour days, 4 days a week*** **Job Description:** L3Harris Interstate Electronics Corporation has an immediate opening for a Systems Engineer with experience in Reliability, Availability, Maintainability and Safety (RAMS). The ideal candidate will be proficient in all aspects of the systems engineering\u2026"
     },
     {
-      "id": "spectra-logic-software-engineer-i-boulder,-co,-us",
-      "company": "Spectra Logic",
-      "title": "Software Engineer I",
-      "location": "Boulder, CO, US",
-      "url": "https://www.indeed.com/viewjob?jk=261fd40fd9539c19",
+      "id": "the-emmes-company,-llc-business-systems-engineer-i-&-ii---essex-management-(contingent-roles)-rockvi",
+      "company": "The Emmes Company, LLC",
+      "title": "Business Systems Engineer I & II - Essex Management (Contingent Roles)",
+      "location": "Rockville, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=a5c59e4a6f5c811b",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -4236,41 +4331,8 @@
         "us_citizenship_required": false
       },
       "is_closed": false,
-      "comp": {
-        "min": 85000,
-        "max": 90000,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**Software Engineer I** **Summary Description** The Software Engineer I is an entry\\-level professional focused on developing core technical skills and learning the software development lifecycle. Working under close supervision, they contribute to the codebase by completing well\\-defined tasks and gaining familiarity with the product architecture. **Essential Functions** * Develop, test, and maintain code for simple features and bug fixes under guidance. * Participate in code reviews to learn coding standards and best practices. * Write and execute unit tests to ensure basic functional reliability. * Assist in the documentation of technical processes and API behaviors. * Attend and contribute to daily stand\\-ups and sprint planning meetings. **Additional Responsibilities** * Engage in self\\-directed learning to master the team\u2019s tech stack. * Provide support to the Verification and Test team during testing cycles. * Help maintain internal development environments and tools. * Participate in internal training and professional development sessions. **Qualifications** 0\u20132 years of experience in software engineering **Education** Bachelor\u2019s degree in Computer Science, Computer\u2026"
-    },
-    {
-      "id": "boise-state-university-hpc-systems-engineer-1-idaho-falls,-id,-us",
-      "company": "Boise State University",
-      "title": "HPC Systems Engineer 1",
-      "location": "Idaho Falls, ID, US",
-      "url": "https://www.indeed.com/viewjob?jk=8a64031737451aba",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": true
-      },
-      "is_closed": false,
       "comp": null,
-      "description": "**Job no:** 499658 **Work type:** Non\\-Classified/Professional **Location:** Idaho Falls, ID **Categories:** Information Technology, Entry\\-Level **Job Summary/Basic Function:** This position will provide high\\-performance computing support for Idaho\u2019s academic research community. **The position is located at the Collaborative Computing Center (C3\\) in Idaho Falls, ID on the campus of Idaho National Lab (INL).** The position is responsible for server administration, evaluation, planning, configuration, and installation, as well as the deployment, tuning and troubleshooting of multiple large scale HPC environments. On\\-call rotations may be required. **Department Overview:** Research Computing is advancing research at Boise State through innovative technical partnerships and grant development to support a robust cyberinfrastructure. Check it out: https://www.boisestate.edu/rcs/ **This position will require hands\\-on maintenance work at the supercomputing center at Idaho National laboratory (INL), a federal facility and access is restricted to US citizens.** **Level Scope:** Entry\\-level professional with limited or no prior experience to contribute on a project or work team.\u2026"
+      "description": "Overview: **Job Title:** Business Systems Engineer I \\& II \u2013 Essex Management (Contingent Roles) **Notice to Candidates:** Employment in these positions is expressly contingent upon Essex Management\u2019s receipt of a contract award from the Federal Government. **Location:** US Remote This position supports \"Essex, an Emmes Company\". Essex is a biomedical informatics and health information technology\\-focused consultancy founded in 2009 and headquartered in Rockville, MD. The Essex team comprises experts with extensive experience in strategically developing and managing complex health and biomedical information programs for clients in the Federal Government, research academia, and private sectors. **Emmes Group: Building a better future for us all.** Emmes Group is transforming the future of clinical research, bringing the promise of new medical discovery closer within reach for patients. Emmes Group was founded as Emmes more than 47 years ago, becoming one of the primary clinical research providers to the US government before expanding into public\\-private partnerships and commercial biopharma. Emmes has built industry leading capabilities in cell and gene therapy, vaccines and\u2026"
     },
     {
       "id": "apple-machine-learning-engineer-austin,-tx,-us",
@@ -4461,74 +4523,6 @@
       "description": "Overview: Electric Boat is overseeing the construction of the Integrated Propulsion System (IPS) Motor Module for future COLUMBIA Class Submarines which will be performed at a vendor site in Philadelphia, PA. Electric Boat is also overseeing the execution of test programs for IPS components which is performed at the Compatibility Test Facility (CTF) in Philadelphia, PA. D489 CLB Propulsion Engineering is seeking experienced candidates to support construction of Motor Modules and periodic support of test programs of production and pre\\-production IPS components in the Philadelphia Navy Yard. The selected candidate will provide design and deck plate support for main propulsion system (MPS) equipment (e.g., main propulsion controls and ACC subcomponent, main propulsion motor drives, and main propulsion switchboards) during follow\\-on motor module construction. The candidate will also provide deck plate support of MPS pre\\-production equipment and MPS components during follow\\-on motor module test programs (MMTPs) and inter module test programs on an as needed basis. The position will be a permanent role onsite in Philadelphia, PA reporting to the historic Philadelphia Navy Yard\u2026"
     },
     {
-      "id": "maricopa-county-engineer-associate-phoenix,-az,-us",
-      "company": "Maricopa County",
-      "title": "Engineer Associate",
-      "location": "Phoenix, AZ, US",
-      "url": "https://www.indeed.com/viewjob?jk=0ede3c497c4a38db",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 70000,
-        "max": 107000,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "**Posting Date** 05/22/26 **Application Deadline** 05/29/26 **Pay Range** $70,000 \\- $107,000 annually Salary offers are based on the candidate's equivalent experience and internal equity with other employees within the same job classification. The position is not eligible for overtime compensation **Job Type** Unclassified **Department** Flood Control District **About the Position** Unlike private\\-sector consulting roles, at the Flood Control District, our engineers do what they do best: focus on engineering. There are no billable hours, no marketing expectations, and no client development pressures. Success is defined by technical excellence, real\\-world impact, and service to the public. So, whether you are a new college graduate or you already have experience in the engineering industry, this position could be the right fit for you. In the Floodplain Use Permitting Branch, you will collaborate with a team of professional engineers, engineering associates, and technicians to support various permitting tasks. Your responsibilities include conducting pre\\-application meetings to offer initial guidance, reviewing construction plans, issuing permits, and managing complex permit\u2026"
-    },
-    {
-      "id": "boeing-entry-level-digital-electronics-circuit-&-unit-hardware-design-engineer-el-segundo,-ca,-us",
-      "company": "Boeing",
-      "title": "Entry-level Digital Electronics Circuit & Unit Hardware Design Engineer",
-      "location": "El Segundo, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=e7db1bf1408a76ae",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "hardware",
-        "name": "Hardware Engineering",
-        "emoji": "\ud83d\udd27"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": [
-          "defense"
-        ]
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 76500,
-        "max": 103500,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "El Segundo, California; Los Angeles, California Job ID JR2026511020 Category Engineering \\- Electronic and Electrical Role Type Onsite Post Date May 22, 2026 **Job Description** At Boeing, we innovate and collaborate to make the world a better place. We\u2019re committed to fostering an environment for every teammate that\u2019s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. Boeing Space, Intelligence \\& Weapons Systems has an exciting opportunity for **Entry\\-level****Digital Electronics Circuit \\& Unit Hardware Design Engineer** to join us as part of our Space Digital Products \\& Electronics team located in **El Segundo, CA!** Are you passionate about crafting the digital heart of communication satellites? We are seeking Digital Electronics Circuit and Unit Hardware Design Engineers who thrive on developing cutting\\-edge digital solutions. In this role, you will be at the forefront of designing and implementing the digital circuitry that drives satellite functionality. Your expertise in digital signal processing, data communication, digital control systems, and embedded systems will be instrumental in shaping the future of\u2026"
-    },
-    {
       "id": "alberta-investment-management-corporation-(aimco)-co-op,-fixed-income-(fall-2026)-calgary,-ab,-ca",
       "company": "Alberta Investment Management Corporation (AIMCo)",
       "title": "Co-op, Fixed Income (Fall 2026)",
@@ -4641,18 +4635,18 @@
       "description": "**About the Calgary Stampede** The Calgary Stampede is a not\\-for\\-profit community organization that preserves and promotes our western heritage, cultures and community spirit with a vision to create a world\\-class, year\\-round gathering place for the community. Exemplifying the theme We\u2019re Greatest Together, the Stampede is one of the most respected volunteer\\-based organizations in the world governed by a Board of Directors with over 2,500 passionate volunteers and 1,200 year\\-round employees. As an organization that exists for the benefit of the community, inclusion and equity are woven into our core values of western hospitality, pride of place, integrity and commitment to the community. The world\\-class, year\\-round gathering place we have built for the community also welcomes visitors from around the world and those who are new to the local community. We know that blending diverse cultures with our long\\-standing traditions makes community spirit thrive. **Position Summary** The Chef de Partie is responsible for the smooth day\\-to\\-day operation of a particular area of the kitchen, as assigned. They are responsible for ensuring food preparation of their station is the\u2026"
     },
     {
-      "id": "liberty-public-schools-2026-2027-alternative-education-teacher-juvenile-justice-center-liberty,-mo,-",
-      "company": "Liberty Public Schools",
-      "title": "2026-2027 Alternative Education Teacher-Juvenile Justice Center",
-      "location": "Liberty, MO, US",
-      "url": "https://www.indeed.com/viewjob?jk=d2882ccfb98e209e",
+      "id": "eccalon-junior-software-engineer---onsite-detroit,-mi,-us",
+      "company": "Eccalon",
+      "title": "Junior Software Engineer - onsite",
+      "location": "Detroit, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=3ea4dedeea00ed78",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -4666,49 +4660,21 @@
       },
       "is_closed": false,
       "comp": null,
-      "description": "**Purpose Statement** The job of High School Teacher is done for the purpose/s of providing support and expertise to the instructional process by serving as a high school teacher with specific responsibility for developing student success in academics (e.g. language arts, mathematics, science, history, etc.) or skills (e.g. art, music, physical education, etc.) developing lesson plans and delivering group and/or individual student instruction within established curriculum guidelines; supervising students within the classroom and other assigned areas; collaborating with other teachers, other professional staff, and administrators in addressing instructional and/or classroom issues; and responding to a wide range of inquiries from students' parents and/or legal guardians regarding instructional program and student progress. This job reports to Principal \\- High School **Essential Functions** * Administers subject specific assessments, district and/or state tests (e.g. MAP, etc.) for the purpose of assessing student competency levels and/or developing individual learning plans. * Advises parents and/or legal guardians of student progress for the purpose of communicating expectations\u2026"
+      "description": "**Job Description** We are seeking a Junior Software Engineer to join our engineering team and contribute to the development, testing, and maintenance of software applications. This role is ideal for early\\-career engineers who are eager to learn, grow their technical skills, and work collaboratively in a supportive environment. You will work closely with experienced engineers, gaining hands\\-on experience while contributing to real, production\\-level code. **Responsibilities** * Assist in designing, developing, and maintaining software applications * Write clean, readable, and well\\-tested code under guidance from senior engineers * Participate in code reviews and team discussions * Debug and fix software defects * Collaborate with product managers, designers, and engineers * Learn and apply software development best practices * Contribute to documentation and technical knowledge sharing **Required Qualifications** * Bachelor\u2019s degree in Computer Science, Engineering, or related field (or equivalent experience) * 0\u20132 years of relevant software development experience (including internships, co\\-ops, or projects) * Familiarity with one or more programming languages such as Java,\u2026"
     },
     {
-      "id": "liberty-public-schools-2026-2027-credit-recovery-teacher---high-school-liberty,-mo,-us",
-      "company": "Liberty Public Schools",
-      "title": "2026-2027 Credit Recovery Teacher - High School",
-      "location": "Liberty, MO, US",
-      "url": "https://www.indeed.com/viewjob?jk=c61b184becf30073",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Purpose Statement** The job of High School Teacher is done for the purpose/s of providing support and expertise to the instructional process by serving as a high school teacher with specific responsibility for developing student success in academics (e.g. language arts, mathematics, science, history, etc.) or skills (e.g. art, music, physical education, etc.) developing lesson plans and delivering group and/or individual student instruction within established curriculum guidelines; supervising students within the classroom and other assigned areas; collaborating with other teachers, other professional staff, and administrators in addressing instructional and/or classroom issues; and responding to a wide range of inquiries from students' parents and/or legal guardians regarding instructional program and student progress. This job reports to Principal \\- High School **Essential Functions** * Administers subject specific assessments, district and/or state tests (e.g. MAP, etc.) for the purpose of assessing student competency levels and/or developing individual learning plans. * Advises parents and/or legal guardians of student progress for the purpose of communicating expectations\u2026"
-    },
-    {
-      "id": "raytheon-software-security-engineer-ii---s3e-tucson,-az,-us",
+      "id": "raytheon-electrical-engineers-ii,-power-&-analog,-design-&-production-support-\u2013-actively-growing-our",
       "company": "Raytheon",
-      "title": "Software Security Engineer II - S3E",
+      "title": "Electrical Engineers II, Power & Analog, Design & Production Support \u2013 Actively Growing Our Engineering Team!",
       "location": "Tucson, AZ, US",
-      "url": "https://www.indeed.com/viewjob?jk=510f4714f7a05cd0",
+      "url": "https://www.indeed.com/viewjob?jk=9f49558eac6fe705",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "faang_plus",
@@ -4729,14 +4695,14 @@
         "currency": "USD",
         "source": "jobspy"
       },
-      "description": "**Date Posted:** 2026\\-03\\-25**Country:** United States of America**Location:** US\\-AZ\\-TUCSON\\-801 \\~ 1151 E Hermans Rd \\~ BLDG 801 (External Site)**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** Active and transferable U.S. government issued security clearance is required prior to start date. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance **Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Ability to obtain INTERIM U.S. government issued security clearance is required prior to start date At RTX, the world largest aerospace and defense company, 185,000 great minds are united by purpose and inspired to make a difference solving the world\u2019s most complex problems. With our three market leading businesses, world\\-class operations and investments in research and development, we offer capabilities and opportunity no one else can. Together, we push the boundaries of known science and find new ways to connect and protect our world. Raytheon brings the strength of more than 100 years of experience and renowned engineering expertise to meet the needs of today\u2019s mission\u2026"
+      "description": "**Date Posted:** 2026\\-04\\-09**Country:** United States of America**Location:** US\\-AZ\\-TUCSON\\-M02 \\~ 1151 E Hermans Rd \\~ BLDG M02**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** Active and transferable U.S. government issued security clearance is required prior to start date. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance **Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Ability to obtain INTERIM U.S. government issued security clearance is required prior to start date**We're growing fast and we want you to grow with us! We're expanding our engineering organization dramatically to meet exciting customer demand, and we're actively looking for engineers who bring strong foundational skills and a passion for solving hard problems. Industry experience in defense? Not required \u2014 we'll invest in you. If you meet the minimum qualifications, we want to talk. Apply today and take the next step in your engineering career.** At Raytheon, the foundation of everything we do is rooted in our values and a higher calling \u2013 to help our nation and allies defend freedoms and\u2026"
     },
     {
-      "id": "pfizer-ai-embedded-systems-engineer-bothell,-wa,-us",
-      "company": "Pfizer",
-      "title": "AI Embedded Systems Engineer",
-      "location": "Bothell, WA, US",
-      "url": "https://www.indeed.com/viewjob?jk=60146e6dc42413fb",
+      "id": "saic-java-developer/automation-tester-junior-ashburn,-va,-us",
+      "company": "SAIC",
+      "title": "Java Developer/Automation Tester Junior",
+      "location": "Ashburn, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=1436cfc47e52f58b",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -4750,7 +4716,37 @@
         "emoji": "",
         "label": "",
         "sectors": [
-          "healthcare"
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Job ID: 2612898 **Location:** Ashburn, VA, US **Date Posted:** 2026\\-05\\-22 **Category:** Software **Subcategory:** SW Engineer **Schedule:** Full\\-Time **Shift:** Day Job **Travel:** No **Minimum Clearance Required:** None **Clearance Level Must Be Able to Obtain:** Public Trust **Potential for Remote Work:** ORA\\_ON\\_SITE **Description** SAIC is currently seeking a motivated and energetic **Java/JEE Developer (Entry Level)** to join our team to begin an exciting and challenging career in Ashburn, VA. **This position starts in an automation tester role for the first 12\\-18 months of employment (developing automation test cases using Java to verify the processing of incoming and outgoing messages and storing the end state data in the database). This position will be 100% on\\-site for the first year of employment.** The Java Developer will participate in the system architecture design, systems engineering, development, integration testing and validation, and all aspects of the software life\\-cycle (requirements to design to implementation to test) for a browser\\-based application implemented using Java and backend web services. The candidate will be responsible for developing and\u2026"
+    },
+    {
+      "id": "boeing-entry-level-digital-electronics-circuit-&-unit-hardware-design-engineer-el-segundo,-ca,-us",
+      "company": "Boeing",
+      "title": "Entry-level Digital Electronics Circuit & Unit Hardware Design Engineer",
+      "location": "El Segundo, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=e7db1bf1408a76ae",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "\ud83d\udd27"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
         ]
       },
       "flags": {
@@ -4759,26 +4755,61 @@
       },
       "is_closed": false,
       "comp": {
-        "min": 106000,
-        "max": 176600,
+        "min": 76500,
+        "max": 103500,
         "currency": "USD",
         "source": "jobspy"
       },
-      "description": "**POSITION SUMMARY** As a member of our Transformational Technology \\- Data Operations team, you will accelerate our organization towards AI\\-readiness. In this role, you will leverage your expertise to design software and data solutions that enable the adoption of AI in Pharmaceutical Sciences (PharmSci) through the automation, digitization, and contextualization of scientific datasets. **POSITION RESPONSIBILITIES** * Partner with scientists to understand systems and requirements related to data capture, analysis, and reporting including digitization of current paper\\-based processes. * Development of data products and custom applications to support downstream AI/ML use cases, automation, and data contextualization. * Development of data analysis and system integration pipelines. * Support GMP compliance activities, where applicable, for custom data products or applications. * Onboarding of Pfizer scientists to data applications/platforms and organization of workshops/training as applicable. * Work with robotics and automation teams to understand data needs and partner with other developers. * Curation and integration of relevant datasets from domains external to PharmSci. *\u2026"
+      "description": "El Segundo, California; Los Angeles, California Job ID JR2026511020 Category Engineering \\- Electronic and Electrical Role Type Onsite Post Date May 22, 2026 **Job Description** At Boeing, we innovate and collaborate to make the world a better place. We\u2019re committed to fostering an environment for every teammate that\u2019s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. Boeing Space, Intelligence \\& Weapons Systems has an exciting opportunity for **Entry\\-level****Digital Electronics Circuit \\& Unit Hardware Design Engineer** to join us as part of our Space Digital Products \\& Electronics team located in **El Segundo, CA!** Are you passionate about crafting the digital heart of communication satellites? We are seeking Digital Electronics Circuit and Unit Hardware Design Engineers who thrive on developing cutting\\-edge digital solutions. In this role, you will be at the forefront of designing and implementing the digital circuitry that drives satellite functionality. Your expertise in digital signal processing, data communication, digital control systems, and embedded systems will be instrumental in shaping the future of\u2026"
     },
     {
-      "id": "johns-hopkins-university-applied-physics-laboratory-2026-graduate---engineer/analyst---intelligence,",
-      "company": "Johns Hopkins University Applied Physics Laboratory",
-      "title": "2026 Graduate - Engineer/Analyst - Intelligence, Surveillance, Reconnaissance, & Targeting Scientific Applications",
-      "location": "Laurel, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=cb085beac26829e4",
+      "id": "boeing-entry-level-f-15-flight-test-data-engineer-eglin-afb,-fl,-us",
+      "company": "Boeing",
+      "title": "Entry-Level F-15 Flight Test Data Engineer",
+      "location": "Eglin AFB, FL, US",
+      "url": "https://www.indeed.com/viewjob?jk=c58f428e0423aec9",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "\ud83d\udcca"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 71400,
+        "max": 96600,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Eglin Air Force Base, Florida Job ID JR2026506850 Category Security Clearance Role Type Onsite Post Date May 22, 2026 **Job Description** At Boeing, we innovate and collaborate to make the world a better place. We\u2019re committed to fostering an environment for every teammate that\u2019s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. At Boeing, we are all innovators on a mission to connect, protect, explore, and inspire. From the seabed to outer space, you will learn and grow while contributing to work that shapes the world. Find your future with us. The Boeing team is seeking an **Entry\\-Level F\\-15 Flight Test Data Engineer**. This position involves joining a specialized Boeing Test \\& Evaluation engineering team performing F\\-15 tactical fighter aircraft flight test activities on\\-site at **Eglin AFB, FL.** **Position Responsibilities:** The team performing this work provides a very innovation friendly environment, with high levels of inter\\-team collaboration, peer mentoring, and significant opportunities for individual empowerment and project leadership responsibilities. This position encourages using your personal\u2026"
+    },
+    {
+      "id": "spectra-logic-software-engineer-i-boulder,-co,-us",
+      "company": "Spectra Logic",
+      "title": "Software Engineer I",
+      "location": "Boulder, CO, US",
+      "url": "https://www.indeed.com/viewjob?jk=261fd40fd9539c19",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -4793,25 +4824,25 @@
       "is_closed": false,
       "comp": {
         "min": 85000,
-        "max": 165000,
+        "max": 90000,
         "currency": "USD",
         "source": "jobspy"
       },
-      "description": "Description Are you interested in researching, developing, and analyzing innovative ways to produce impactful information from many different types of sensors and sources of data? Would you like to advance your ideas from concept to prototype to field testing on US military ships, aircraft, satellites, and ground systems? Would you take satisfaction in developing advanced capabilities that will be used by US military personnel to achieve their missions in Intelligence, Surveillance, Reconnaissance, and Targeting (ISRT)? If so, and if you are graduating with a Bachelor's or Master's degree in Engineering, Applied Mathematics, Computer Science, Physics, or other related field, we'd love to have you join our team at APL! We are seeking creative engineers, scientists, mathematicians, and programmers to help us conceptualize, develop, test, assess, and field the next generation of ISRT and Counter\\-ISRT capabilities for the US military. Our team applies disciplines such as sensor and data fusion, signal and image processing, operations research, applied physics, machine learning, and artificial intelligence to build systems that automatically or autonomously orchestrate sensors,\u2026"
+      "description": "**Software Engineer I** **Summary Description** The Software Engineer I is an entry\\-level professional focused on developing core technical skills and learning the software development lifecycle. Working under close supervision, they contribute to the codebase by completing well\\-defined tasks and gaining familiarity with the product architecture. **Essential Functions** * Develop, test, and maintain code for simple features and bug fixes under guidance. * Participate in code reviews to learn coding standards and best practices. * Write and execute unit tests to ensure basic functional reliability. * Assist in the documentation of technical processes and API behaviors. * Attend and contribute to daily stand\\-ups and sprint planning meetings. **Additional Responsibilities** * Engage in self\\-directed learning to master the team\u2019s tech stack. * Provide support to the Verification and Test team during testing cycles. * Help maintain internal development environments and tools. * Participate in internal training and professional development sessions. **Qualifications** 0\u20132 years of experience in software engineering **Education** Bachelor\u2019s degree in Computer Science, Computer\u2026"
     },
     {
-      "id": "commonwealth-of-kentucky-engineer-in-training-ii-fort-mitchell,-ky,-us",
-      "company": "Commonwealth of Kentucky",
-      "title": "Engineer-In-Training II",
-      "location": "Fort Mitchell, KY, US",
-      "url": "https://www.indeed.com/viewjob?jk=050c604e7c1f84ff",
+      "id": "boise-state-university-hpc-systems-engineer-1-idaho-falls,-id,-us",
+      "company": "Boise State University",
+      "title": "HPC Systems Engineer 1",
+      "location": "Idaho Falls, ID, US",
+      "url": "https://www.indeed.com/viewjob?jk=8a64031737451aba",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
       },
       "company_tier": {
         "tier": "other",
@@ -4821,11 +4852,11 @@
       },
       "flags": {
         "no_sponsorship": false,
-        "us_citizenship_required": false
+        "us_citizenship_required": true
       },
       "is_closed": false,
       "comp": null,
-      "description": "Advertisement Closes 5/28/2026 (8:00 PM EDT) 26\\-02476 Engineer\\-In\\-Training II Pay Grade 14 Salary $4,699\\.50 \\- $5,401\\.34 Annually Employment Type EXECUTIVE BRANCH \\| FULL TIME \\| ELIGIBLE FOR OVERTIME PAY \\| 18A \\| 37\\.5 HR/WK **Click here for more details on state employment.** Hiring Agency Transportation Cabinet \\| Department of Highways Location 421 Buttermilk Pike Ft Mitchell, KY 41017 USA Description The Kentucky Transportation Cabinet is committed to meeting or exceeding the needs and expectations of our customers. Our focus is on people: our customers, our employees, and our partners. We will continually improve both the delivery of our products and services and the processes that support that delivery to provide a safe, efficient, environmentally sound, and fiscally responsible transportation system that delivers economic opportunity and enhances the quality of life in Kentucky. By joining our Design Section as an Engineer\\-In\\-Training II in Kenton County, you'll have the opportunity to perform intermediately complex engineering work on projects with a larger scope of work to develop practical skills in support of academic theory to provide sufficient competence to\u2026"
+      "description": "**Job no:** 499658 **Work type:** Non\\-Classified/Professional **Location:** Idaho Falls, ID **Categories:** Information Technology, Entry\\-Level **Job Summary/Basic Function:** This position will provide high\\-performance computing support for Idaho\u2019s academic research community. **The position is located at the Collaborative Computing Center (C3\\) in Idaho Falls, ID on the campus of Idaho National Lab (INL).** The position is responsible for server administration, evaluation, planning, configuration, and installation, as well as the deployment, tuning and troubleshooting of multiple large scale HPC environments. On\\-call rotations may be required. **Department Overview:** Research Computing is advancing research at Boise State through innovative technical partnerships and grant development to support a robust cyberinfrastructure. Check it out: https://www.boisestate.edu/rcs/ **This position will require hands\\-on maintenance work at the supercomputing center at Idaho National laboratory (INL), a federal facility and access is restricted to US citizens.** **Level Scope:** Entry\\-level professional with limited or no prior experience to contribute on a project or work team.\u2026"
     },
     {
       "id": "accenture-custom-software-engineer-mh,-in",
@@ -5024,6 +5055,160 @@
       "is_closed": false,
       "comp": null,
       "description": "Closing date for applications: 29/05/2026 Location Bangalore, India Job typePermanent \\| Contract typeFull Time \\#R\\-00278511 **Join our digital revolution in NatWest Digital X** ---------------------------------------------------- In everything we do, we work to one aim. To make digital experiences which are effortless and secure. So we organise ourselves around three principles: engineer, protect, and operate. We engineer simple solutions, we protect our customers, and we operate smarter. **Job description** ------------------- This role is based in India and as such all normal working days must be carried out in India. Join us as a Software Engineer * This is an opportunity for a driven Software Engineer to take on an exciting new career challenge * Day\\-to\\-day, you'll be engineering and maintaining innovative, customer centric, high performance, secure and robust solutions * It\u2019s a chance to hone your existing technical skills and advance your career while building a wide network of stakeholders * We're offering this role at associate level **What you'll do** ------------------ In your new role, you\u2019ll be working within a feature team to engineer software, scripts and tools,\u2026"
+    },
+    {
+      "id": "pfizer-ai-embedded-systems-engineer-bothell,-wa,-us",
+      "company": "Pfizer",
+      "title": "AI Embedded Systems Engineer",
+      "location": "Bothell, WA, US",
+      "url": "https://www.indeed.com/viewjob?jk=60146e6dc42413fb",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": [
+          "healthcare"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 106000,
+        "max": 176600,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "**POSITION SUMMARY** As a member of our Transformational Technology \\- Data Operations team, you will accelerate our organization towards AI\\-readiness. In this role, you will leverage your expertise to design software and data solutions that enable the adoption of AI in Pharmaceutical Sciences (PharmSci) through the automation, digitization, and contextualization of scientific datasets. **POSITION RESPONSIBILITIES** * Partner with scientists to understand systems and requirements related to data capture, analysis, and reporting including digitization of current paper\\-based processes. * Development of data products and custom applications to support downstream AI/ML use cases, automation, and data contextualization. * Development of data analysis and system integration pipelines. * Support GMP compliance activities, where applicable, for custom data products or applications. * Onboarding of Pfizer scientists to data applications/platforms and organization of workshops/training as applicable. * Work with robotics and automation teams to understand data needs and partner with other developers. * Curation and integration of relevant datasets from domains external to PharmSci. *\u2026"
+    },
+    {
+      "id": "commonwealth-of-kentucky-engineer-in-training-ii-fort-mitchell,-ky,-us",
+      "company": "Commonwealth of Kentucky",
+      "title": "Engineer-In-Training II",
+      "location": "Fort Mitchell, KY, US",
+      "url": "https://www.indeed.com/viewjob?jk=050c604e7c1f84ff",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Advertisement Closes 5/28/2026 (8:00 PM EDT) 26\\-02476 Engineer\\-In\\-Training II Pay Grade 14 Salary $4,699\\.50 \\- $5,401\\.34 Annually Employment Type EXECUTIVE BRANCH \\| FULL TIME \\| ELIGIBLE FOR OVERTIME PAY \\| 18A \\| 37\\.5 HR/WK **Click here for more details on state employment.** Hiring Agency Transportation Cabinet \\| Department of Highways Location 421 Buttermilk Pike Ft Mitchell, KY 41017 USA Description The Kentucky Transportation Cabinet is committed to meeting or exceeding the needs and expectations of our customers. Our focus is on people: our customers, our employees, and our partners. We will continually improve both the delivery of our products and services and the processes that support that delivery to provide a safe, efficient, environmentally sound, and fiscally responsible transportation system that delivers economic opportunity and enhances the quality of life in Kentucky. By joining our Design Section as an Engineer\\-In\\-Training II in Kenton County, you'll have the opportunity to perform intermediately complex engineering work on projects with a larger scope of work to develop practical skills in support of academic theory to provide sufficient competence to\u2026"
+    },
+    {
+      "id": "liberty-public-schools-2026-2027-alternative-education-teacher-juvenile-justice-center-liberty,-mo,-",
+      "company": "Liberty Public Schools",
+      "title": "2026-2027 Alternative Education Teacher-Juvenile Justice Center",
+      "location": "Liberty, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=d2882ccfb98e209e",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Purpose Statement** The job of High School Teacher is done for the purpose/s of providing support and expertise to the instructional process by serving as a high school teacher with specific responsibility for developing student success in academics (e.g. language arts, mathematics, science, history, etc.) or skills (e.g. art, music, physical education, etc.) developing lesson plans and delivering group and/or individual student instruction within established curriculum guidelines; supervising students within the classroom and other assigned areas; collaborating with other teachers, other professional staff, and administrators in addressing instructional and/or classroom issues; and responding to a wide range of inquiries from students' parents and/or legal guardians regarding instructional program and student progress. This job reports to Principal \\- High School **Essential Functions** * Administers subject specific assessments, district and/or state tests (e.g. MAP, etc.) for the purpose of assessing student competency levels and/or developing individual learning plans. * Advises parents and/or legal guardians of student progress for the purpose of communicating expectations\u2026"
+    },
+    {
+      "id": "liberty-public-schools-2026-2027-credit-recovery-teacher---high-school-liberty,-mo,-us",
+      "company": "Liberty Public Schools",
+      "title": "2026-2027 Credit Recovery Teacher - High School",
+      "location": "Liberty, MO, US",
+      "url": "https://www.indeed.com/viewjob?jk=c61b184becf30073",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Purpose Statement** The job of High School Teacher is done for the purpose/s of providing support and expertise to the instructional process by serving as a high school teacher with specific responsibility for developing student success in academics (e.g. language arts, mathematics, science, history, etc.) or skills (e.g. art, music, physical education, etc.) developing lesson plans and delivering group and/or individual student instruction within established curriculum guidelines; supervising students within the classroom and other assigned areas; collaborating with other teachers, other professional staff, and administrators in addressing instructional and/or classroom issues; and responding to a wide range of inquiries from students' parents and/or legal guardians regarding instructional program and student progress. This job reports to Principal \\- High School **Essential Functions** * Administers subject specific assessments, district and/or state tests (e.g. MAP, etc.) for the purpose of assessing student competency levels and/or developing individual learning plans. * Advises parents and/or legal guardians of student progress for the purpose of communicating expectations\u2026"
+    },
+    {
+      "id": "raytheon-software-security-engineer-ii---s3e-tucson,-az,-us",
+      "company": "Raytheon",
+      "title": "Software Security Engineer II - S3E",
+      "location": "Tucson, AZ, US",
+      "url": "https://www.indeed.com/viewjob?jk=510f4714f7a05cd0",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 68900,
+        "max": 131100,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "**Date Posted:** 2026\\-03\\-25**Country:** United States of America**Location:** US\\-AZ\\-TUCSON\\-801 \\~ 1151 E Hermans Rd \\~ BLDG 801 (External Site)**Position Role Type:** Onsite**U.S. Citizen, U.S. Person, or Immigration Status Requirements:** Active and transferable U.S. government issued security clearance is required prior to start date. U.S. citizenship is required, as only U.S. citizens are eligible for a security clearance **Security Clearance Type:** DoD Clearance: Secret**Security Clearance Status:** Ability to obtain INTERIM U.S. government issued security clearance is required prior to start date At RTX, the world largest aerospace and defense company, 185,000 great minds are united by purpose and inspired to make a difference solving the world\u2019s most complex problems. With our three market leading businesses, world\\-class operations and investments in research and development, we offer capabilities and opportunity no one else can. Together, we push the boundaries of known science and find new ways to connect and protect our world. Raytheon brings the strength of more than 100 years of experience and renowned engineering expertise to meet the needs of today\u2019s mission\u2026"
     },
     {
       "id": "nvidia-field-application-engineer---new-college-graduate-2026-santa-clara,-ca,-us",
@@ -5280,11 +5465,11 @@
       "description": "**Key Responsibilities** * **Marketing Campaigns:** Assist in planning, creating, and executing marketing initiatives across digital, social media, and email platforms to generate brand awareness. * **Lead Generation \\& Sales:** Qualify incoming leads and implement targeted sales strategies to convert prospects into paying customers. * **Market Research:** Conduct competitor and market analysis to identify new trends, customer pain points, and opportunities for product positioning. * **Client Relationship Management:** Maintain excellent communication with existing and prospective clients, answer product inquiries, resolve complaints, and negotiate deals. * **Performance Tracking:** Analyze sales and marketing data, track KPIs, and assist in preparing forecasting reports to optimize future campaigns. * **Cross\\-Functional Collaboration:** Work alongside the product, design, and media teams to develop compelling marketing collateral, pitch decks, and promotional materials. **Essential Requirements** * **Education:** Bachelor\u2019s degree in Marketing, Business Administration, Communications, or a related field. * **Experience:** Proven experience in sales, digital marketing, or a\u2026"
     },
     {
-      "id": "globalfoundries-3d-heterogeneous-integration-design-enablement-engineer-(2026-new-college-graduate)-",
-      "company": "GlobalFoundries",
-      "title": "3D Heterogeneous Integration Design Enablement Engineer (2026 New College Graduate)",
-      "location": "Malta, NY, US",
-      "url": "https://www.indeed.com/viewjob?jk=35dd2fa75753e8fb",
+      "id": "fairview-park-hospital-dublin-new-grad-rn-resident-icu-dublin,-ga,-us",
+      "company": "Fairview Park Hospital-Dublin",
+      "title": "New Grad RN Resident ICU",
+      "location": "Dublin, GA, US",
+      "url": "https://www.indeed.com/viewjob?jk=f4d4d4842a41940b",
       "posted_at": "2026-05-22T00:00:00",
       "posted_display": "1 day ago",
       "source": "JobSpy (Indeed)",
@@ -5304,13 +5489,239 @@
         "us_citizenship_required": false
       },
       "is_closed": false,
+      "comp": null,
+      "description": "*Do you want to join an organization that invests in you?* **At** **Fairview Park Hospital****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Healthcare Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident II Registered Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Job Summary and Qualifications** The HCA Healthcare Residency Program at Fairview Park Hospital provides you with the tools necessary to succeed in today\u2019s hospital environment. This paid program will assist you with the transition out of the classroom setting through a formalized series of learning experiences, including: * Advanced clinical training in a specialty area. * Monthly educational sessions. * Preceptorship training with a facility preceptor. * Measurement and evaluation of skills through hands\\-on simulations. * Mentoring\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-georgetown,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Georgetown, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=7a8fe6b6e8cd7954",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-austin,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=ad532b77c8d2f10c",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-austin,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=91a324ca9e7586f7",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-austin,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=e6ea3222afcd3aa9",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-austin,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=d9be6e075745f371",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-austin,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=aa64a1bebd957163",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "st.-david's-healthcare-new-grad-rn-resident-med-surg-specialties-round-rock,-tx,-us",
+      "company": "St. David's HealthCare",
+      "title": "New Grad RN Resident Med Surg Specialties",
+      "location": "Round Rock, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=cc09fec8efffa246",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Introduction** *Do you want to join an organization that invests in you?* **At** **St. David's Healthcare****, you come first!** HCA Healthcare is committed to the growth and development of our future nurses! The **HCA Nurse Residency Program** is a year\\-long program designed to give you hands\\-on experience to help establish valuable clinical and critical thinking skills. As a Resident I Graduate Nurse you will be surrounded by a supportive community of nurse educators, experienced nurses, and fellow residents that promote learning, clinical application, and socialization, shepherding you through the transition from student nurse to registered nurse. **Benefits** We offer a total rewards package to support your health, life, career and retirement. Some available plans and programs include: * **Comprehensive benefits** for medical, prescription drug, dental, vision, behavioral health and telemedicine services * **Wellbeing** support, including free counseling and referral services * **Time away from work** programs for paid time off, paid family leave, long\\- and short\\-term disability coverage and leaves of absence * **Savings and retirement** resources, including a 401(k)\u2026"
+    },
+    {
+      "id": "l3harris-specialist,-cyber-infrastructure-systems-engineer-colorado-springs,-co,-us",
+      "company": "L3Harris",
+      "title": "Specialist, Cyber Infrastructure Systems Engineer",
+      "location": "Colorado Springs, CO, US",
+      "url": "https://www.indeed.com/viewjob?jk=ca630641a22a6742",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": [
+          "defense"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
       "comp": {
-        "min": 79100,
-        "max": 145800,
+        "min": 92500,
+        "max": 171500,
         "currency": "USD",
         "source": "jobspy"
       },
-      "description": "**About GlobalFoundries:** GlobalFoundries is a leading full\\-service semiconductor foundry providing a unique combination of design, development, and fabrication services to some of the world\u2019s most inspired technology companies. With a global manufacturing footprint spanning three continents, GlobalFoundries makes possible the technologies and systems that transform industries and give customers the power to shape their markets. For more information, visit www.gf.com . **Summary of Role:** GlobalFoundries Fab8 is seeking a motivated R\\&D design enablement engineer to become part of our state\\-of\\-the\\-art 300mm fabrication facility in Malta, New York . This role will entail 3D heterogeneous integration (3DHI) design enablement to enable our next\\-generation advanced packaging R\\&D efforts, which include wafer \\- to \\- wafer bonding, die \\- to \\- wafer bonding , TSV/TOV and interposer development. **Essential Responsibilities:** * P ublish D esign M anual (DM) specifications based on failure modes identified for packaging required by the product lines in partnership with the unit process and R\\&D engineers. * DM is a collection of all technology restrictions (geometry rules,\u2026"
+      "description": "L3Harris is dedicated to recruiting and developing high\\-performing talent who are passionate about what they do. Our employees are unified in a shared dedication to our customers\u2019 mission and quest for professional growth. L3Harris provides an inclusive, engaging environment designed to empower employees and promote work\\-life success. Fundamental to our culture is an unwavering focus on values, dedication to our communities, and commitment to excellence in everything we do. L3Harris is the Trusted Disruptor in defense tech. With customers\u2019 mission\\-critical needs always in mind, our employees deliver end\\-to\\-end technology solutions connecting the space, air, land, sea and cyber domains in the interest of national security. **Job Title: Specialist, Cyber Infrastructure Systems Engineer** **Job Code: 37629** **Job Location: Colorado Springs, CO** **Job Schedule: 9/80** **Job Description:** We are seeking a skilled and experienced Cyber Infrastrastructure Systems Engineer (CISE) to join our Colorado Springs, CO team. The ideal candidate will have system administration expertise in managing and optimizing Windows and Linux systems, as well as virtual infrastructures. This role\u2026"
     },
     {
       "id": "visa-software-engineer,-new-college-grad---2026,-foster-city-foster-city,-ca,-us",
@@ -5617,39 +6028,6 @@
       "description": "**Job no:** 557837 **Work type:** Instructional Student Assistant **Location:** Stanislaus \\- Turlock **Categories:** Unit 11 \\- UAW \\- California Alliance of Academic Student Workers, Temporary, Part Time, Student Services, On\\-site (work in\\-person at business location) **Instructional Student Assistant Employment Opportunity** **JOB DESCRIPTION:** **\\*\\*\\*OPEN TO CURRENT STANISLAUS STATE STUDENTS, CURRENTLY ENROLLED OR ELIGIBILE TO ENROLL ONLY\\*\\*\\*** Summary/basic function: Student will participate in one or more DOE research projects on Neutrino Physics on the Eos Experiment currently located at UC Berkeley. The research focus on using cosmic ray muons to characterize detector response to future neutrino interaction events in the energy range between 10\\-50 MeV. Wage/Salary: $18\\.00/HR Hours per Week: 40 Location: Turlock Campus \\# of Openings: 2 Expected Start Date: June 1, 2026 Expected End Date: August 14, 2026 Point of Contact Person: Dr. Wing To **REQUIRED QUALIFICATIONS:** * Undergraduate students must be registered/enrolled in a minimum of six (6\\) Fall/Spring units. * Post\\-baccalaureate students in a graduate program must be registered in a minimum of four (4\\)\u2026"
     },
     {
-      "id": "jacobs-entry-level-civil-engineer---fed/arl-arlington,-va,-us",
-      "company": "Jacobs",
-      "title": "Entry Level Civil Engineer - FED/ARL",
-      "location": "Arlington, VA, US",
-      "url": "https://www.indeed.com/viewjob?jk=303ad7c2656b6eaa",
-      "posted_at": "2026-05-22T00:00:00",
-      "posted_display": "1 day ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 75000,
-        "max": 101200,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "Location Arlington, Virginia, United States Capabilities Civil and Structural Office Setup Hybrid Job ID \\#40019 Market Cities \\& Places At Jacobs, we're challenging today to reinvent tomorrow by solving the world's most critical problems for thriving cities, resilient environments, mission\\-critical outcomes, operational advancement, scientific discovery and cutting\\-edge manufacturing, turning abstract ideas into realities that transform the world for good. Your impact We are looking for a driven and curious Civil Engineering Graduate to support our federal team in a hybrid capacity at either our Boston, MA or Arlington, VA office. As a key member of our team, you\u2019ll join our collaborative team providing our clients with award\\-winning planning, engineering, architectural design, construction management, and design\\-build project delivery. The ideal candidate is one who is passionate about traditional site civil layout, grading, and utility design as well as addressing our country\u2019s water, resiliency, and disaster recovery challenges. You\u2019ll have the opportunity to work in a team environment and coordinate project assignments with other engineers and technicians on important\u2026"
-    },
-    {
       "id": "fuller-hospital-registered-nurse-(rn)---new-graduate-south-attleboro,-ma,-us",
       "company": "Fuller Hospital",
       "title": "Registered Nurse (RN) - New Graduate",
@@ -5704,6 +6082,39 @@
       "is_closed": false,
       "comp": null,
       "description": "Responsibilities: **Registered Nurse (RN) Opportunity \\- New Graduate** This opportunity is full time (36 hrs/week) night shift (6:30pm \\- 7am) position and offers full benefits. There is opportunity for overtime and to cover various shifts if interested. **New graduates who are pre or post NCLEX are encourage to apply!** **This position is eligible for a $20,000 Sign on Bonus \\& a $5,000 Relocation Bonus!** **Southeast Behavioral Hospital** is excited to offer a full continuum of inpatient and outpatient services to the people of Southeast Missouri. Our 102\\-provides a wide range of mental, emotional and behavioral health services for children, teens, adults and seniors experiencing mental health issues, such as depression, anxiety and co\\-occurring substance use issues. Located on the banks of the Mississippi River, the Cape Girardeau region has long been an area of vibrant commerce and abundance, with significant roots in agriculture and trading posts which produced generations of people full of pride and a determination to put in a hard day\u2019s work. This regional economy enjoys many diverse industry sectors, each thriving and enjoying the fruits of their labor. The Cape\u2026"
+    },
+    {
+      "id": "jacobs-entry-level-civil-engineer---fed/arl-arlington,-va,-us",
+      "company": "Jacobs",
+      "title": "Entry Level Civil Engineer - FED/ARL",
+      "location": "Arlington, VA, US",
+      "url": "https://www.indeed.com/viewjob?jk=303ad7c2656b6eaa",
+      "posted_at": "2026-05-22T00:00:00",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 75000,
+        "max": 101200,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Location Arlington, Virginia, United States Capabilities Civil and Structural Office Setup Hybrid Job ID \\#40019 Market Cities \\& Places At Jacobs, we're challenging today to reinvent tomorrow by solving the world's most critical problems for thriving cities, resilient environments, mission\\-critical outcomes, operational advancement, scientific discovery and cutting\\-edge manufacturing, turning abstract ideas into realities that transform the world for good. Your impact We are looking for a driven and curious Civil Engineering Graduate to support our federal team in a hybrid capacity at either our Boston, MA or Arlington, VA office. As a key member of our team, you\u2019ll join our collaborative team providing our clients with award\\-winning planning, engineering, architectural design, construction management, and design\\-build project delivery. The ideal candidate is one who is passionate about traditional site civil layout, grading, and utility design as well as addressing our country\u2019s water, resiliency, and disaster recovery challenges. You\u2019ll have the opportunity to work in a team environment and coordinate project assignments with other engineers and technicians on important\u2026"
     },
     {
       "id": "cenovus-energy-student,-chemical-or-environmental-engineering,-lima-or-toledo,-oh-(fall-2026)-lima,-",
@@ -11497,67 +11908,6 @@
       "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with the ultimate goal of&nbsp;enabling human life on Mars. SOFTWARE ENGINEER, ENGINEERING SIMULATION AND AUTOMATION (VEHICLE ENGINEERING) Be a member of the AI for Vehicle Engineering team, focusing on developing automated simulation tools and pipelines to accelerate engineering for our launch vehicles and spacecraft and&nbsp;generate high-quality training datasets for surrogate models at scale.&nbsp; Our team builds AI systems that accelerate engineering analysis, simulation, development, testing, avionics design, flight data review, logistics, and mission operations. Your work will directly support the world\u2019s largest communication and AI satellite constellations, accelerate rapid reuse of the Falcon launch vehicle, and contribute to the development of the world\u2019s largest rocket capable of sending humans to Mars. In this role, you will design, develop, and maintain scalable simulation automation pipelines that create the large, diverse, and well-curated\u2026"
     },
     {
-      "id": "marsh-mclennan-marsh-risk-early-career-program,-full-time-\u2013-toronto-\u2013-2026-new-graduates-toronto,-on",
-      "company": "Marsh McLennan",
-      "title": "Marsh Risk Early Career Program, Full-Time \u2013 Toronto \u2013 2026 New Graduates",
-      "location": "Toronto, ON, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=cb90b09ec6827795",
-      "posted_at": "2026-05-21T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Company:** ------------ Marsh Risk **Description:** ---------------- Marsh Risk is a global leader in insurance broking and risk management. In more than 130 countries, our 45,000 colleagues work with clients of all sizes to de\ufb01ne, design, and deliver innovative solutions to better quantify and manage risk. We offer risk management, risk consulting, insurance broking, alternative risk \ufb01nancing, and insurance program management services to businesses, government entities, organizations, and individuals around the world. Since 1871, clients have relied on Marsh Risk for trusted advice, to represent their interests in the marketplace, make sense of an increasingly complex world, and help turn risks into new opportunities for growth. Join Marsh Risk's Early Career Program, a two\\-year career development opportunity for recent graduates where you will gain top industry training and access to dedicated development resources while working in one of our Marsh Risk brokerage operations across the US and Canada. As part of our program benefits, you will enjoy a structured cohort induction, learning and development opportunities, a vibrant community, mentorship programs, exposure to senior\u2026"
-    },
-    {
-      "id": "arista-networks-software-engineer,-layer1-vancouver,-bc,-ca",
-      "company": "Arista Networks",
-      "title": "Software Engineer, Layer1",
-      "location": "Vancouver, BC, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=66226088e419ed9b",
-      "posted_at": "2026-05-21T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 95000,
-        "max": 145000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "description": "**Company Description** Arista Networks is an industry leader in data\\-driven, client\\-to\\-cloud networking for large data center, campus and routing environments. What sets us apart is our relentless pursuit of innovation. We leverage the latest advancements in cloud computing, artificial intelligence, and software\\-defined networking to provide our clients with a competitive edge in an increasingly interconnected world. Our solutions are designed to not only meet the current demands of the digital landscape but to also anticipate and adapt to future challenges. At Arista we value the diversity of thought and perspectives that each employee brings to the table. We believe that fostering an inclusive environment, where individuals from various backgrounds and experiences feel welcome, is essential for driving creativity and innovation. Our commitment to excellence has earned us several prestigious awards, such as Best Engineering Team, Best Company for Diversity, Compensation, and Work\\-Life Balance. At Arista, we take pride in our track record of success and strive to maintain the highest standards of quality and performance in everything we do. **Job Description** **Who You\u2019ll\u2026"
-    },
-    {
       "id": "mcelhanney-junior-bridge-engineer-edmonton,-ab,-ca",
       "company": "McElhanney",
       "title": "Junior Bridge Engineer",
@@ -11617,6 +11967,67 @@
       "is_closed": false,
       "comp": null,
       "description": "**Kleinschmidt** has a full\\-time opening for an **Engineer** with a structural emphasis to perform structural analysis and design and engineering related field work for hydroelectric, fisheries, and water resources projects in our **Peterborough, Ontario** office. Our flexibility and core value of relationships allow us to offer employees the opportunity to work in a hybrid environment including working from the office and remotely. This position requires three days in\\-office. *Salary: 75,000 \u2013 100,000 CAD/year (based on experience)* **Who You Are** A candidate with a BS, BSc or BEng in Civil Engineering (concentration in Structural Engineering). Relevant coursework in structural design of concrete and steel structures, finite element analysis, hydraulics, and soil mechanics, plus 2 years of experience in structural engineering. Has the ability to obtain P.Eng license within 2 years. *Technically Focused:* Knowledge of standards and codes applicable to the structural engineering discipline is required. Familiarity with structural modeling software and CAD software (MathCAD, RISA\\-3D, SAP2000, Revit, AutoCAD, Civil3D). *Relationship \\& Communication Focused:* Demonstrates the\u2026"
+    },
+    {
+      "id": "marsh-mclennan-marsh-risk-early-career-program,-full-time-\u2013-toronto-\u2013-2026-new-graduates-toronto,-on",
+      "company": "Marsh McLennan",
+      "title": "Marsh Risk Early Career Program, Full-Time \u2013 Toronto \u2013 2026 New Graduates",
+      "location": "Toronto, ON, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=cb90b09ec6827795",
+      "posted_at": "2026-05-21T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Company:** ------------ Marsh Risk **Description:** ---------------- Marsh Risk is a global leader in insurance broking and risk management. In more than 130 countries, our 45,000 colleagues work with clients of all sizes to de\ufb01ne, design, and deliver innovative solutions to better quantify and manage risk. We offer risk management, risk consulting, insurance broking, alternative risk \ufb01nancing, and insurance program management services to businesses, government entities, organizations, and individuals around the world. Since 1871, clients have relied on Marsh Risk for trusted advice, to represent their interests in the marketplace, make sense of an increasingly complex world, and help turn risks into new opportunities for growth. Join Marsh Risk's Early Career Program, a two\\-year career development opportunity for recent graduates where you will gain top industry training and access to dedicated development resources while working in one of our Marsh Risk brokerage operations across the US and Canada. As part of our program benefits, you will enjoy a structured cohort induction, learning and development opportunities, a vibrant community, mentorship programs, exposure to senior\u2026"
+    },
+    {
+      "id": "arista-networks-software-engineer,-layer1-vancouver,-bc,-ca",
+      "company": "Arista Networks",
+      "title": "Software Engineer, Layer1",
+      "location": "Vancouver, BC, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=66226088e419ed9b",
+      "posted_at": "2026-05-21T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 95000,
+        "max": 145000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "description": "**Company Description** Arista Networks is an industry leader in data\\-driven, client\\-to\\-cloud networking for large data center, campus and routing environments. What sets us apart is our relentless pursuit of innovation. We leverage the latest advancements in cloud computing, artificial intelligence, and software\\-defined networking to provide our clients with a competitive edge in an increasingly interconnected world. Our solutions are designed to not only meet the current demands of the digital landscape but to also anticipate and adapt to future challenges. At Arista we value the diversity of thought and perspectives that each employee brings to the table. We believe that fostering an inclusive environment, where individuals from various backgrounds and experiences feel welcome, is essential for driving creativity and innovation. Our commitment to excellence has earned us several prestigious awards, such as Best Engineering Team, Best Company for Diversity, Compensation, and Work\\-Life Balance. At Arista, we take pride in our track record of success and strive to maintain the highest standards of quality and performance in everything we do. **Job Description** **Who You\u2019ll\u2026"
     },
     {
       "id": "tinos-software-and-security-solutions-llp-ai/ml-engineer-kl,-in",
@@ -11759,18 +12170,18 @@
       "description": "***Applicants must be authorized to work for ANY employer in the U.S.*** ***We are unable to sponsor or take over sponsorship of an employment Visa currently.*** ***No agencies please.*** ***This hybrid role requires on\u2011site presence at the Norcross HQ twice per week.*** USAN is an innovative contact center solutions provider, a respected community leader, and an all\\-around great place to work. We promote work\\-life effectiveness for all our employees by creating a supportive, flexible, and collaborative work environment. We have a high\\-performance culture, where we treat our employees as individuals, as professionals, as key members of the team, and like family. Software Development at USAN happens in a mix of different environments. We use C\\#/.Net for our stack development, SQL server for most of our database work, and JavaScript for our front front\\-end user interface. USAN is seeking an enthusiastic Software Engineer to join our core Software Development team to expand and enhance our custom reports product which utilizes specialized databases, along with Tableau BI functionality to create detailed drillable reports. The Entry Level Software Developer will work on a small\u2026"
     },
     {
-      "id": "enterprise-mobility-entegral-software-engineer--java-and-.net-madison,-wi,-us",
-      "company": "Enterprise Mobility",
-      "title": "Entegral Software Engineer- Java and .Net",
-      "location": "Madison, WI, US",
-      "url": "https://www.indeed.com/viewjob?jk=24951821554456a9",
+      "id": "city-of-downey,-ca-assistant-civil-engineer-i-&-ii-\u2013-utilities-downey,-ca,-us",
+      "company": "City of Downey, CA",
+      "title": "Assistant Civil Engineer I & II \u2013 Utilities",
+      "location": "Downey, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=1689a8023292cd91",
       "posted_at": "2026-05-21T00:00:00",
       "posted_display": "2 days ago",
       "source": "JobSpy (Indeed)",
       "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
       },
       "company_tier": {
         "tier": "other",
@@ -11783,13 +12194,8 @@
         "us_citizenship_required": false
       },
       "is_closed": false,
-      "comp": {
-        "min": 107700,
-        "max": 134400,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "### **Overview** Entegral is seeking a motivated, adaptable, career\\-minded teammate who would like to utilize their skill set in a thriving agile\\-methodology environment. We offer competitive career advancement opportunities, a comprehensive benefits package and promote a work\\-life balance. We\u2019re in search of talented people who are inspired by big challenges, driven to learn and grow, and dedicated to making a meaningful difference. **ABOUT THE ROLE** The Entegral Software Engineer (Engineer 2\\) is responsible for using technical knowledge of professional concepts to solve business problems, evaluate elements of technology's effectiveness through requirements gathering, testing, research and investigation. The Engineer 2 provides recommendations for improvements and listens to and evaluates customer needs to determine and provide high quality solutions that align with customer expectations. This role understands and utilizes multiple development frameworks (including API and UI) to develop and deploy technical features for internal and external stakeholders **ABOUT ENTEGRAL** When you join Entegral, you join a global team united by a shared purpose. Energized by the spirit of\u2026"
+      "comp": null,
+      "description": "**ABOUT THE POSITION** ---------------------- ***NOTE: This recruitment is open on a continuous basis and may close without prior notice.*** ***First review of the applications will occur on Friday, June 19, 2026\\.*** ***Please thoroughly review the entire job flyer including the application instructions. Failure to submit a completed application and provide required documentation may result in an application being removed from further consideration.*** **Assistant Civil Engineer I Pay Rate****$40\\.3665 \\- $50\\.0073 \\- Hourly****$6,996\\.86 \\- $8,667\\.90 \\- Monthly** **Assistant Civil Engineer II Pay Rate****$43\\.1521 \\- $53\\.4579 \\- Hourly****$7,479\\.69 \\- $9,266\\.04 \\- Monthly** ***In addition to the above compensation, this position is eligible for certificate level one pay for incumbents that maintain a D2/D3 and/or T1 certification at a rate of $295 per month***. ***Effective the start of the pay period that includes April 28, 2027, employees will receive a four percent (4\\.0%) across the board pay range increase. Additional four percent (4\\.0%) increase on April 2028, April 2029\\.*** Under general supervision, performs office and field engineering work related to the\u2026"
     },
     {
       "id": "pratt-&-whitney-ing\u00e9nieur-r\u00e9seau-\u2013-ing\u00e9nierie-et-conception-|-network-engineer-\u2013-engineering-and-des",
@@ -11851,34 +12257,6 @@
         "source": "posting"
       },
       "description": "Sleep Country Canada is looking for a **Junior Cloud Engineer** to play a critical role in supporting day\\-to\\-day operations of the organization\u2019s cloud infrastructure, helping ensure systems are reliable, secure, and efficient. This role offers hands\\-on experience with cloud technologies, monitoring, and automation, while providing opportunities to learn and grow under the guidance of senior team members in a fast\\-paced, evolving environment. **In this current open role you will:** * Assist in deploying and maintaining cloud infrastructure across multiple platforms (e.g., AWS, Azure, GCP) to meet business needs. * Configure and support cloud resources (compute, storage, networking, etc.) following established designs and best practices. Perform routine environment maintenance tasks (such as system updates and patching) to keep cloud systems current, secure, and performing optimally. * Monitor cloud systems using standard tools and alerts to ensure uptime, performance, and capacity. * Respond to incidents and support requests, troubleshooting straightforward infrastructure issues and resolving them or escalating to senior engineers when necessary. * Participate in the 24/7\u2026"
-    },
-    {
-      "id": "city-of-downey,-ca-assistant-civil-engineer-i-&-ii-\u2013-utilities-downey,-ca,-us",
-      "company": "City of Downey, CA",
-      "title": "Assistant Civil Engineer I & II \u2013 Utilities",
-      "location": "Downey, CA, US",
-      "url": "https://www.indeed.com/viewjob?jk=1689a8023292cd91",
-      "posted_at": "2026-05-21T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**ABOUT THE POSITION** ---------------------- ***NOTE: This recruitment is open on a continuous basis and may close without prior notice.*** ***First review of the applications will occur on Friday, June 19, 2026\\.*** ***Please thoroughly review the entire job flyer including the application instructions. Failure to submit a completed application and provide required documentation may result in an application being removed from further consideration.*** **Assistant Civil Engineer I Pay Rate****$40\\.3665 \\- $50\\.0073 \\- Hourly****$6,996\\.86 \\- $8,667\\.90 \\- Monthly** **Assistant Civil Engineer II Pay Rate****$43\\.1521 \\- $53\\.4579 \\- Hourly****$7,479\\.69 \\- $9,266\\.04 \\- Monthly** ***In addition to the above compensation, this position is eligible for certificate level one pay for incumbents that maintain a D2/D3 and/or T1 certification at a rate of $295 per month***. ***Effective the start of the pay period that includes April 28, 2027, employees will receive a four percent (4\\.0%) across the board pay range increase. Additional four percent (4\\.0%) increase on April 2028, April 2029\\.*** Under general supervision, performs office and field engineering work related to the\u2026"
     },
     {
       "id": "siriusxm-pathways:-associate-producer,-comedy-&-entertainment-programming-los-angeles,-ca,-us",
@@ -11947,6 +12325,39 @@
       "description": "* Los Angeles, California * Program Management * Regular Employee Full\\-Time * R\\-2026\\-04\\-35 * Office First **Who We Are:** SiriusXM and its brands (Pandora, SiriusXM Media, AdsWizz, Simplecast, and SiriusXM Connect) are leading a new era of audio entertainment and services by delivering the most compelling subscription and ad\\-supported audio entertainment experience for listeners \\- in the car, at home, and anywhere on the go with connected devices. Our vision is to shape the future of audio, where everyone can be efforlessly connected to the voices, stories and music they love wherever they are. This is the place where a diverse group of emerging talent and legends alike come to share authentic and purposeful songs, stories, sounds and insights through some of the best programming and technology in the world. Our critically\\-acclaimed, industry\\-leading audio entertainment encompasses music, sports, comedy, news, talk, live events, and podcasting. No matter their individual role, each of our employees plays a vital part in bringing SiriusXM\u2019s vision to life every day. **SiriusXM** is the leading audio entertainment company in North America, and the premier programmer and\u2026"
     },
     {
+      "id": "banner-life-family-of-companies-data-scientist-frederick,-md,-us",
+      "company": "Banner Life Family of Companies",
+      "title": "Data Scientist",
+      "location": "Frederick, MD, US",
+      "url": "https://www.indeed.com/viewjob?jk=4c2cb1a79a923cf4",
+      "posted_at": "2026-05-21T00:00:00",
+      "posted_display": "2 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "\ud83e\udd16"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 109900,
+        "max": 140000,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "Overview: At Banner Life Insurance Company, we lead with heart and ambition. Every day, we transform purpose into progress, guided by our unwavering commitment to be better for our customers, clients, and communities, not just today but long\\-term as well. Our people are the driving force behind everything we achieve. Their passion, purpose, and pursuit of innovation empower us to deliver cutting\\-edge solutions that support those we serve, ensuring we are here for you, here for good and striving for better. We\u2019re a forward\\-thinking company energized by our work and how we show up for one another. Our culture is built on meaningful impact and genuine enjoyment, because we believe great work and great experiences should go hand in hand. By offering career development opportunities, comprehensive benefits, and programs that support your wellbeing, we help you thrive personally and professionally. We are here for you, here for good and here for better. We are seeking a Data Scientist to build a next\\-generation predictive analytics capability for life insurance experience. This role will focus on developing a continuous modeling and insight generation system that monitors experience\u2026"
+    },
+    {
       "id": "nan-supervisor-of-maintenance-2026-2027-tempe,-az,-us",
       "company": null,
       "title": "Supervisor of Maintenance 2026-2027",
@@ -12001,39 +12412,6 @@
       "is_closed": false,
       "comp": null,
       "description": "**TITLE:** Supervisor of Trades **JOB DESCRIPTION:** Supervises and manages district skilled trades operations across multiple departments, including Electrical, HVAC, and Plumbing. Directs, schedules, and oversees maintenance repairs, installations, and construction activities of assigned personnel to ensure facilities are maintained in accordance with district standards, applicable codes, and safety regulations. **QUALIFICATIONS:** * Education and/or experience equivalent to a High School Diploma or GED * Five (5\\) years of journey level experience in a related skilled trade, including three (3\\) years of supervisory experience in the same field * State of Arizona Identity Verified (IVP) Fingerprint Clearance Card * May require possession of, or ability to obtain (within specified time), certifications such as scissor lift certification, asbestos certification, OSHA 10, Backflow Tester Certification, Class B Commercial Driver\u2019s License (CDL), and/or Type I/II Technician certification for proper refrigerant practices * Valid Arizona Driver\u2019s License * Knowledge of OSHA regulations, hazardous materials handling, and applicable safety standards * Knowledge of electrical systems,\u2026"
-    },
-    {
-      "id": "banner-life-family-of-companies-data-scientist-frederick,-md,-us",
-      "company": "Banner Life Family of Companies",
-      "title": "Data Scientist",
-      "location": "Frederick, MD, US",
-      "url": "https://www.indeed.com/viewjob?jk=4c2cb1a79a923cf4",
-      "posted_at": "2026-05-21T00:00:00",
-      "posted_display": "2 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "data_ml",
-        "name": "Data Science & ML",
-        "emoji": "\ud83e\udd16"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": {
-        "min": 109900,
-        "max": 140000,
-        "currency": "USD",
-        "source": "jobspy"
-      },
-      "description": "Overview: At Banner Life Insurance Company, we lead with heart and ambition. Every day, we transform purpose into progress, guided by our unwavering commitment to be better for our customers, clients, and communities, not just today but long\\-term as well. Our people are the driving force behind everything we achieve. Their passion, purpose, and pursuit of innovation empower us to deliver cutting\\-edge solutions that support those we serve, ensuring we are here for you, here for good and striving for better. We\u2019re a forward\\-thinking company energized by our work and how we show up for one another. Our culture is built on meaningful impact and genuine enjoyment, because we believe great work and great experiences should go hand in hand. By offering career development opportunities, comprehensive benefits, and programs that support your wellbeing, we help you thrive personally and professionally. We are here for you, here for good and here for better. We are seeking a Data Scientist to build a next\\-generation predictive analytics capability for life insurance experience. This role will focus on developing a continuous modeling and insight generation system that monitors experience\u2026"
     },
     {
       "id": "fairview-park-hospital-dublin-new-grad-rn-resident-med-surg-dublin,-ga,-us",
@@ -15225,6 +15603,34 @@
       "description": "At Commure, we're building the AI Operating System for healthcare, the foundation that defines how care is delivered, documented, and financed. Our platform spans the full care journey: Ambient AI and Dictation eliminating documentation burden at the point of care, intelligent Agents automating patient and revenue workflows, and autonomous RCM processing billions in claims, all on a single AI-native platform integrated with 60+ EHRs. Healthcare carries a $1 trillion administrative burden and we're at the center of transforming it. Today, 500,000+ clinicians across 500+ healthcare organizations nationwide trust Commure to handle $25B+ in annual claims and support over 200 million patient interactions. Our latest $70M raise at a $7B valuation reflects the confidence the market has placed in this mission. Our team works directly alongside clinicians, not through layers of process, which means the gap between what you build and its impact on patient care is immediate. We move fast, deploy daily, and take full ownership from early thinking to production. If you're energized by hard problems, high stakes, and a team that holds itself to a high bar, you'll find your people here. The\u2026"
     },
     {
+      "id": "osttra-associate-application-support-engineer-hr,-in",
+      "company": "OSTTRA",
+      "title": "Associate Application Support Engineer",
+      "location": "HR, IN",
+      "url": "https://in.indeed.com/viewjob?jk=1417e4b322fad569",
+      "posted_at": "2026-05-20T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Job Overview **Postion Title:** Associate Application Support Engineer \\| Full\\-Time **Location:** Gurgaon, India **Experience Level:** 0\u20132 Years **The Role:** Associate Application Support Engineer **The Team:** Application Support is a global powerhouse providing technical support across the full suite of OSTTRA products. You will join a high\\-performance team that works closely with Client Services, Product, and Engineering to keep our platforms running and our global clients satisfied. **The Impact:** Together, we support and protect resilient platforms that process over 100 million messages a day. Our services are the backbone of global capital markets. As an Associate Engineer, you are the first line of defense, ensuring the efficient settlement of trades and the stability of global financial infrastructure. What\u2019s in it for you? This is a \"Fast\\-Track\" opportunity for a tech\\-savvy graduate to enter the world of FinTech. You will be mentored by global experts, gain hands\\-on experience with Cloud (AWS) and PaaS (OpenShift), and learn the intricacies of OTC Derivatives and FX trading. OSTTRA provides a culture of continuous learning, helping you transition from a student to\u2026"
+    },
+    {
       "id": "siemens-project-specialist--new-graduate--12-months-contract-concord,-on,-ca",
       "company": "Siemens",
       "title": "Project Specialist -New Graduate- 12 Months Contract",
@@ -15279,34 +15685,6 @@
       "is_closed": false,
       "comp": null,
       "description": "**The Opportunity:** Are you looking for a kick start your career in the energy industry? Join Canadian Natural, where we strive to create value and while supporting your path towards a professional engineering designation. We are seeking a motivated new graduate Engineer\\-in\\-Training (EIT) to join our fast\\-paced Asset Retirement team. In this role, you will join an active team responsible for the planning and execution, and optimization of asset retirement projects, inclusive of: well abandonment, pipeline abandonment, facility decommissioning, and reclamation. This is a unique opportunity to contribute to safe, environmentally responsible team across a diverse asset base, while developing a strong technical foundation early in your career. Become a part of one of Canada\u2019s largest independent oil and gas producers. Join a company culture that fosters a fun\\-working environment, encourages working together, and doing it right! If you're a New Graduate EIT who is eager to learn, passionate about making an impact, and is excited to take on new challenges in the energy industry, this opportunity is for you. * **Job Location:** Based in one of CNRL\u2019s field offices, the role includes\u2026"
-    },
-    {
-      "id": "osttra-associate-application-support-engineer-hr,-in",
-      "company": "OSTTRA",
-      "title": "Associate Application Support Engineer",
-      "location": "HR, IN",
-      "url": "https://in.indeed.com/viewjob?jk=1417e4b322fad569",
-      "posted_at": "2026-05-20T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Job Overview **Postion Title:** Associate Application Support Engineer \\| Full\\-Time **Location:** Gurgaon, India **Experience Level:** 0\u20132 Years **The Role:** Associate Application Support Engineer **The Team:** Application Support is a global powerhouse providing technical support across the full suite of OSTTRA products. You will join a high\\-performance team that works closely with Client Services, Product, and Engineering to keep our platforms running and our global clients satisfied. **The Impact:** Together, we support and protect resilient platforms that process over 100 million messages a day. Our services are the backbone of global capital markets. As an Associate Engineer, you are the first line of defense, ensuring the efficient settlement of trades and the stability of global financial infrastructure. What\u2019s in it for you? This is a \"Fast\\-Track\" opportunity for a tech\\-savvy graduate to enter the world of FinTech. You will be mentored by global experts, gain hands\\-on experience with Cloud (AWS) and PaaS (OpenShift), and learn the intricacies of OTC Derivatives and FX trading. OSTTRA provides a culture of continuous learning, helping you transition from a student to\u2026"
     },
     {
       "id": "achievers-software-engineering-co-op-roles---fall-2026-toronto,-on,-ca",
@@ -15447,6 +15825,34 @@
       "is_closed": false,
       "comp": null,
       "description": "**Project Role :** Custom Software Engineer **Project Role Description :** Develop custom software solutions to design, code, and enhance components across systems or applications. Use modern frameworks and agile practices to deliver scalable, high\\-performing solutions tailored to specific business needs. **Must have skills :** Android Application Development **Good to have skills :** NA Minimum **5** year(s) of experience is required **Educational Qualification :** 15 years full time education Summary: As a Custom Software Engineer, a typical day involves creating tailored software solutions by designing, coding, and improving various components within systems or applications. The role requires working with contemporary frameworks and following agile methodologies to ensure the delivery of scalable and efficient software that meets unique business requirements. Collaboration with different teams and continuous refinement of software elements are integral parts of the daily workflow, fostering innovation and responsiveness to evolving project demands. Roles \\& Responsibilities: * Participate in the design and build of the new UBS Mobile Banking * Native Android (Kotlin/Java)\u2026"
+    },
+    {
+      "id": "apple-sme---equipment-design-(controls-&-systems-engineer)-ka,-in",
+      "company": "Apple",
+      "title": "SME - Equipment Design (Controls & Systems Engineer)",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=d4787649423604d6",
+      "posted_at": "2026-05-20T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "\ud83d\udcbb"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "\ud83d\udd25",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. Bring passion and dedication to your job and there's no telling what you could accomplish. The people here at Apple don\u2019t just create products \\- they create the kind of wonder that\u2019s revolutionized entire industries. It\u2019s the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry\\-leading environmental efforts. Join Apple, and help us leave the world better than we found it. We are looking for an Equipment Design SME to help drive automation activities for key manufacturing processes in the enclosure and module spaces. **Description** The role is responsible for collaborating with process engineers to develop and fabricate prototype equipment for the development and validation of new process architectures and addressing complex product design challenges. The candidate will work internally with our process teams and external equipment manufacturers to construct fully automated novel equipment from the conceptualization and architecture stages\u2026"
     },
     {
       "id": "west-virginia-university-administrative-associate---department-of-chemical-and-biomedical-engineerin",
@@ -15617,34 +16023,6 @@
       "description": "**About Us:** AltaML is a leading North American applied AI company with extensive experience in building and operationalizing AI software solutions. We are a company like no other \u2013 we believe in making small bets, failing fast, and being better together. We are looking for creative problem\\-solvers who obsess about the customer to find wins across different industries. We don\u2019t hire for fit; we hire to add. We are looking for people who play our core values of being: Agile, Gritty Humble, and Happy. If you\u2019re passionate about AI/ML, thrive in a dynamic environment, and want to work with a diverse team of wickedly smart people, we want to hear from you! We are looking for a Full Stack Software Engineer who builds software in an AI\\-native way \u2014 someone who treats Claude and the latest agentic coding tools as a core part of their craft, not a novelty. In this role, you will contribute to the technical delivery of ML\\-powered applications across cloud services, APIs, and modern front\\-end frameworks, with Claude Code, the Claude API, and agentic workflows woven into how you design, build, and ship. You will be an active contributor within your project pod, shipping features\u2026"
     },
     {
-      "id": "apple-sme---equipment-design-(controls-&-systems-engineer)-ka,-in",
-      "company": "Apple",
-      "title": "SME - Equipment Design (Controls & Systems Engineer)",
-      "location": "KA, IN",
-      "url": "https://in.indeed.com/viewjob?jk=d4787649423604d6",
-      "posted_at": "2026-05-20T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "software_engineering",
-        "name": "Software Engineering",
-        "emoji": "\ud83d\udcbb"
-      },
-      "company_tier": {
-        "tier": "faang_plus",
-        "emoji": "\ud83d\udd25",
-        "label": "FAANG+",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. Bring passion and dedication to your job and there's no telling what you could accomplish. The people here at Apple don\u2019t just create products \\- they create the kind of wonder that\u2019s revolutionized entire industries. It\u2019s the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry\\-leading environmental efforts. Join Apple, and help us leave the world better than we found it. We are looking for an Equipment Design SME to help drive automation activities for key manufacturing processes in the enclosure and module spaces. **Description** The role is responsible for collaborating with process engineers to develop and fabricate prototype equipment for the development and validation of new process architectures and addressing complex product design challenges. The candidate will work internally with our process teams and external equipment manufacturers to construct fully automated novel equipment from the conceptualization and architecture stages\u2026"
-    },
-    {
       "id": "meta-production-engineer-(university-grad)-new-york,-ny,-us",
       "company": "Meta",
       "title": "Production Engineer (University Grad)",
@@ -15678,34 +16056,6 @@
       "description": "Production Engineers (PEs) at Meta are specialized software engineers who develop the underlying infrastructure for all of Meta's products and services, forming the backbone of every major engineering effort that keeps our platforms running smoothly and scaling efficiently.PEs work across Meta\u2019s product and infrastructure teams to ensure our services are reliable, performant, and capable of supporting billions of users. This means writing high\u2011quality code, solving complex problems in live production, and tackling challenges that impact over 2 billion people worldwide.Our PEs are embedded in teams across the spectrum, from products like Instagram, WhatsApp, Oculus, and Videos to critical backend services such as Storage, Cache, and Networking. The team brings together diverse levels of experience and backgrounds.Working alongside some of the best engineers in the industry, you\u2019ll contribute to code and systems that go into production and are used by millions every day. In Production Engineering at Meta, we navigate uncharted waters daily \\- solving problems at a scale few others face. ### **Production Engineer (University Grad) Responsibilities:** * Own back\\-end services which\u2026"
     },
     {
-      "id": "university-of-texas-at-austin-research-associate,-nuclear-engineering-teaching-lab-in-cockrell-schoo",
-      "company": "University of Texas at Austin",
-      "title": "Research Associate, Nuclear Engineering Teaching Lab in Cockrell School of Engineering",
-      "location": "Austin, TX, US",
-      "url": "https://www.indeed.com/viewjob?jk=13b74adc1e078aa8",
-      "posted_at": "2026-05-20T00:00:00",
-      "posted_display": "3 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Job Posting Title:** Research Associate, Nuclear Engineering Teaching Lab in Cockrell School of Engineering**\\-** **Hiring Department:** Walker Department of Mechanical Engineering**\\-** **Position Open To:** All Applicants**\\-** **Weekly Scheduled Hours:** 20**\\-** **FLSA Status:** Exempt from FLSA**\\-** **Earliest Start Date:** Immediately**\\-** **Position Duration:** Expected to Continue Until Aug 31, 2027**\\-** **Location:** UT MAIN CAMPUS**\\-** **Job Details:** **General Notes** As a top\\-10 engineering school with the No. 1 program in Texas, the Cockrell School of Engineering at The University of Texas at Austin (UT Austin) has been a global leader in technology innovation and engineering education for over a century. With 11 undergraduate and 13 graduate programs, over 20 research centers and a faculty community that boasts one of the highest number of National Academy of Engineering members among U.S. universities, Texas Engineering has launched some of the nation\u2019s most accomplished leaders and pioneered world\\-changing solutions in virtually every industry, from space exploration to energy to health care. Situated in the heart of Austin \u2014 named \u201cAmerica\u2019s Coolest City\u201d\u2026"
-    },
-    {
       "id": "general-dynamics-electric-boat-electrical-control-and-power-systems-engineer-groton,-ct,-us",
       "company": "General Dynamics Electric Boat",
       "title": "Electrical Control and Power Systems Engineer",
@@ -15732,6 +16082,34 @@
       "is_closed": false,
       "comp": null,
       "description": "Overview: **Position Overview**: We are seeking a highly skilled and motivated Electrical Control and Power Systems Engineer to join our dynamic team. In this role, you will be responsible for the design, analysis, modeling, and optimization of electric drive and other power \\& electromechanical systems, focusing on all aspects including its control system and power circuitry. You will work on a variety of technical areas including motors, generators, motor drives, controllers, switchgear, network communication etc. Other focus area includes various levels of data analysis, research and development, supporting the management of a fully dynamic team, support test programs and troubleshooting efforts etc. Majority of work is performed in the MATLAB Simulink environment, so proficiency and comfort in working with MATLAB software is required for this position. This position offers the opportunity to work on cutting\\-edge technologies within a collaborative engineering environment.### **Key Responsibilities****:** * Perform detailed **power system analysis**, including fault and system stability studies * Work on the design, implementation, and optimization of **electric motors** and\u2026"
+    },
+    {
+      "id": "university-of-texas-at-austin-research-associate,-nuclear-engineering-teaching-lab-in-cockrell-schoo",
+      "company": "University of Texas at Austin",
+      "title": "Research Associate, Nuclear Engineering Teaching Lab in Cockrell School of Engineering",
+      "location": "Austin, TX, US",
+      "url": "https://www.indeed.com/viewjob?jk=13b74adc1e078aa8",
+      "posted_at": "2026-05-20T00:00:00",
+      "posted_display": "3 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Job Posting Title:** Research Associate, Nuclear Engineering Teaching Lab in Cockrell School of Engineering**\\-** **Hiring Department:** Walker Department of Mechanical Engineering**\\-** **Position Open To:** All Applicants**\\-** **Weekly Scheduled Hours:** 20**\\-** **FLSA Status:** Exempt from FLSA**\\-** **Earliest Start Date:** Immediately**\\-** **Position Duration:** Expected to Continue Until Aug 31, 2027**\\-** **Location:** UT MAIN CAMPUS**\\-** **Job Details:** **General Notes** As a top\\-10 engineering school with the No. 1 program in Texas, the Cockrell School of Engineering at The University of Texas at Austin (UT Austin) has been a global leader in technology innovation and engineering education for over a century. With 11 undergraduate and 13 graduate programs, over 20 research centers and a faculty community that boasts one of the highest number of National Academy of Engineering members among U.S. universities, Texas Engineering has launched some of the nation\u2019s most accomplished leaders and pioneered world\\-changing solutions in virtually every industry, from space exploration to energy to health care. Situated in the heart of Austin \u2014 named \u201cAmerica\u2019s Coolest City\u201d\u2026"
     },
     {
       "id": "btc-bank-it-engineer-i-tipton,-mo,-us",
@@ -17229,34 +17607,6 @@
       "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. We\u2019re looking for a driven, analytically-minded professional to join the Core Analytics team within the Risk &amp; Analytics organization! Our team improves the developer experience across Affirm by building scalable data infrastructure, streamlining workflows, and fostering a culture of learning and documentation. This role sits at the intersection of data and engineering, while staying focused on turning developer workflows and system reliability into clear, actionable signals that accelerate delivery. The Risk &amp; Analytics team makes crucial decisions that direct Affirm\u2019s business strategy. We analyze performance not just to report on it, but to determine where to invest resources for maximum impact through building tools and analytical frameworks. We take ownership of the entire analytical lifecycle, from initial question to final business decision, ensuring Affirm grows efficiently and intelligently. The ideal candidate will have strong technical and problem-solving skills, an eagerness to collaborate\u2026"
     },
     {
-      "id": "university-of-calgary-graduate-program-administrator,-chemical-&-petroleum-engineering-calgary,-ab,-",
-      "company": "University of Calgary",
-      "title": "Graduate Program Administrator, Chemical & Petroleum Engineering",
-      "location": "Calgary, AB, CA",
-      "url": "https://ca.indeed.com/viewjob?jk=6f982644a8e4f7c6",
-      "posted_at": "2026-05-19T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "other",
-        "name": "Other",
-        "emoji": "\ud83d\udcbc"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Description** **Chemical \\& Petroleum Engineering** in the **Schulich School of Engineering** is currently seeking a Full\\-time Temporary Relief **Graduate Program Administrator** for approximately 12 months. Reporting to the Manager, Department Operations, the Graduate Program Administrator is responsible for providing accurate information and guidance to students with respect to procedures, policies and regulations. This includes student admission, registration, and progression through degree programs to graduation.The Graduate Program Administrator must make independent decisions while handling numerous interruptions. The position requires an ability to take initiative, strong communication skills, sound judgment and flexibility. The hours of work are 35 hours per week, Monday to Friday, with normal business hours being from 8:30 a.m. to 4:30 p.m. This position is primarily on campus (minimum 4 days per week) and may be expected to attend events or provide service outside normal working hours. **Summary of Key Responsibilities** (job functions include but are not limited to): Program Administration * Facilitate admissions process for regular MSc, PhD and visiting student\u2026"
-    },
-    {
       "id": "p.manickam-&-co.-junior-site-engineer-tn,-in",
       "company": "P.Manickam & Co.",
       "title": "JUNIOR SITE ENGINEER",
@@ -17283,6 +17633,34 @@
       "is_closed": false,
       "comp": null,
       "description": "About \\- P. MANICKAM \\& CO Thiru P. MANICKAM is the founder of this firm, during 1950\u2019s started taking contracts in PWD, as proprietorship firm. Later 1968 Established M/s. P. Manickam \\& Co., including his son\u2019s as partners and took major buildings and road works in CPWD, TNHB \\& Corporation of Chennai. During 1968 \u2013 1985 the firm executed buildings in Madras General Hospital, Stanley Hospital, Kilpauk Hospital, Guindy Engineering College, Vetenary College, 99 Nos CPWD quarters in Ashok Nagar and so on. From 1985, firm expanded further by doing Pile Foundation works. Fabrication of steel structures for Factories, interior finish work, Earth work \\& Bridges and tooks contracts from Southern Railway, Integral Coach Factory, Anna University, IIT, CPCL, TNPHC and Educational Institutions in Chennai, and major flat Developers, etc. The strict adherence to time schedules and the constant endeavour to provide the best service has earned the company, the reputation as one amongst the best in this line of business. **Job Summary:** We are looking for a passionate and enthusiastic **Site Engineer (Fresher)** to join our on\\-site team. This is an excellent opportunity for recent graduates\u2026"
+    },
+    {
+      "id": "university-of-calgary-graduate-program-administrator,-chemical-&-petroleum-engineering-calgary,-ab,-",
+      "company": "University of Calgary",
+      "title": "Graduate Program Administrator, Chemical & Petroleum Engineering",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=6f982644a8e4f7c6",
+      "posted_at": "2026-05-19T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "\ud83d\udcbc"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Description** **Chemical \\& Petroleum Engineering** in the **Schulich School of Engineering** is currently seeking a Full\\-time Temporary Relief **Graduate Program Administrator** for approximately 12 months. Reporting to the Manager, Department Operations, the Graduate Program Administrator is responsible for providing accurate information and guidance to students with respect to procedures, policies and regulations. This includes student admission, registration, and progression through degree programs to graduation.The Graduate Program Administrator must make independent decisions while handling numerous interruptions. The position requires an ability to take initiative, strong communication skills, sound judgment and flexibility. The hours of work are 35 hours per week, Monday to Friday, with normal business hours being from 8:30 a.m. to 4:30 p.m. This position is primarily on campus (minimum 4 days per week) and may be expected to attend events or provide service outside normal working hours. **Summary of Key Responsibilities** (job functions include but are not limited to): Program Administration * Facilitate admissions process for regular MSc, PhD and visiting student\u2026"
     },
     {
       "id": "halliburton-software-engineer---early-career---landmark-calgary,-ab,-ca",
@@ -17430,34 +17808,6 @@
       "description": "**Job Purpose** The junior structural engineer will be engaged in projects ranging from refinery and gas projects, oilsands, and SAGD, among others. This position is responsible for conducting detailed calculations and designs pertaining to structural engineering activities, and any additional tasks as directed by Sr. Structural Engineers. Under the guidance of our Structural Engineering Manager, the Junior Structural Engineer will complete work within the project schedule requirements while maintaining quality of work from conceptual studies through detailed engineering. This individual will also work closely with other disciplines to achieve optimal project outcomes. **Key Duties and Responsibilities** **Structural Design:** * Provide civil and structural support to the multidiscipline team, ensuring that technical excellence, cost, schedule, and contractual requirements are achieved * Work closely with the design team to ensure working plans and technical drawings meet project specifications and goals * Execute structural engineering activities with the objective of meeting scope, codes, standards, and company procedures * Perform calculations and develop material takeoffs and\u2026"
     },
     {
-      "id": "marsh-mclennan-public-cloud-administrator-(entry-level)-louisville,-ky,-us",
-      "company": "Marsh McLennan",
-      "title": "Public Cloud Administrator (Entry Level)",
-      "location": "Louisville, KY, US",
-      "url": "https://www.indeed.com/viewjob?jk=9b12ccae7c5aa8f4",
-      "posted_at": "2026-05-19T00:00:00",
-      "posted_display": "4 days ago",
-      "source": "JobSpy (Indeed)",
-      "category": {
-        "id": "infrastructure_sre",
-        "name": "Infrastructure & SRE",
-        "emoji": "\ud83c\udfd7\ufe0f"
-      },
-      "company_tier": {
-        "tier": "other",
-        "emoji": "",
-        "label": "",
-        "sectors": []
-      },
-      "flags": {
-        "no_sponsorship": false,
-        "us_citizenship_required": false
-      },
-      "is_closed": false,
-      "comp": null,
-      "description": "**Company:** ------------ Marsh Corporate **Description:** ---------------- We are seeking a talented individual to join our team at Marsh. This role will be based in **Louisville** . This is a hybrid role that has a requirement of working at least three days a week in the office. We are seeking an entry\\-level Public Cloud Administrator to manage, maintain, and optimize our cloud infrastructure across Amazon Web Services (AWS), Microsoft Azure, and Oracle Cloud Infrastructure (OCI). This role is ideal for a recent college graduate with foundational cloud knowledge and a strong desire to grow technical skills in a supportive, team\\-oriented environment. You will help maintain and operate public cloud environments, learn best practices for secure and reliable cloud operations, and work closely with experienced engineers on day\\-to\\-day cloud tasks and projects. **We will count on you to:** * Deploy, configure, and manage cloud resources (compute, storage, networking, databases) across AWS, Azure, and OCI while supporting existing on\\-prem Nutanix and VMware Horizon VDI environments. * Monitor cloud health, performance, and utilization; respond to routine alerts, escalate incidents,\u2026"
-    },
-    {
       "id": "aeries-technology-group-data-engineer(partnership-intelligence)-ts,-in",
       "company": "Aeries Technology Group",
       "title": "Data Engineer(Partnership Intelligence)",
@@ -17484,6 +17834,34 @@
       "is_closed": false,
       "comp": null,
       "description": "Job Id: Aeries/066/26\\-27 Industry IT\\-Software / Software Services / testing Location Hyderabad Experience Range 4 \\- 6 Years Qualification Graduate Job Description About Us Aeries Technology is a Nasdaq listed global professional services and consulting partner, headquartered in Mumbai, India, with centers in the USA, Mexico, Singapore, and Dubai. We provide mid\\-size technology companies with the right mix of deep vertical specialty, functional expertise, and the right systems \\& solutions to scale, optimize and transform their business operations with unique customized engagement models. Aeries is Great Place to Work certified by GPTW India, reflecting our commitment to fostering a positive and inclusive workplace culture for our employees. About Business Unit Two Circles is a data\\-driven sports marketing agency that partners with over 400 sports properties to enhance fan engagement and drive revenue growth. Utilizing advanced analytics, the company offers services in rights management, ticketing, sponsorship sales, content creation, and strategy consulting. Roles and Responsibility TWO CIRCLES HYDERABAD OFFICE **About Two Circles** --------------------- Two Circles grows\u2026"
+    },
+    {
+      "id": "marsh-mclennan-public-cloud-administrator-(entry-level)-louisville,-ky,-us",
+      "company": "Marsh McLennan",
+      "title": "Public Cloud Administrator (Entry Level)",
+      "location": "Louisville, KY, US",
+      "url": "https://www.indeed.com/viewjob?jk=9b12ccae7c5aa8f4",
+      "posted_at": "2026-05-19T00:00:00",
+      "posted_display": "4 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "\ud83c\udfd7\ufe0f"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Company:** ------------ Marsh Corporate **Description:** ---------------- We are seeking a talented individual to join our team at Marsh. This role will be based in **Louisville** . This is a hybrid role that has a requirement of working at least three days a week in the office. We are seeking an entry\\-level Public Cloud Administrator to manage, maintain, and optimize our cloud infrastructure across Amazon Web Services (AWS), Microsoft Azure, and Oracle Cloud Infrastructure (OCI). This role is ideal for a recent college graduate with foundational cloud knowledge and a strong desire to grow technical skills in a supportive, team\\-oriented environment. You will help maintain and operate public cloud environments, learn best practices for secure and reliable cloud operations, and work closely with experienced engineers on day\\-to\\-day cloud tasks and projects. **We will count on you to:** * Deploy, configure, and manage cloud resources (compute, storage, networking, databases) across AWS, Azure, and OCI while supporting existing on\\-prem Nutanix and VMware Horizon VDI environments. * Monitor cloud health, performance, and utilization; respond to routine alerts, escalate incidents,\u2026"
     },
     {
       "id": "nvidia-ai-software-engineer,-kernel-libraries---new-college-grad-2026-santa-clara,-ca,-us",
