@@ -1028,6 +1028,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'posted_at': job.get('createdAt'),
                     'source': 'Lever',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1143,6 +1144,7 @@ def fetch_ashby_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'posted_at': job.get('publishedAt'),
                     'source': 'Ashby',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': comp,
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1762,6 +1764,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
                         'description': clean_description(description),
+                        'description_html': description,
                         'comp': comp,
                     }
 
