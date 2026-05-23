@@ -133,9 +133,11 @@ function mapJob(j) {
     type:    deriveType(j),
     posted:  ageString(j.posted_at),
     level:   'entry',
-    desc:    (j.description && j.description.length > 60)
-               ? j.description
-               : `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
+    desc:    (j.full_description && j.full_description.length > 60)
+               ? j.full_description
+               : (j.description && j.description.length > 60)
+                 ? j.description
+                 : `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
   };
 }
 
