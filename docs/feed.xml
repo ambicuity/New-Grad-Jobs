@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2026 14:25:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 15:42:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
+      <link>https://jobs.ashbyhq.com/snowflake/eb704210-4c4a-4ab7-8838-8ba7abd55af3</link>
+      <description>New grad role at Snowflake in Bellevue, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 23 May 2026 15:23:22 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/snowflake/eb704210-4c4a-4ab7-8838-8ba7abd55af3</guid>
+    </item>
     <item>
       <title>Software Engineer (Network), Intelligence Systems at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 22 May 2026 17:51:28 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Public Sector at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4481921005</link>
-      <description>New grad role at Scale AI in Colorado Springs, CO; Honolulu, HI; St. Louis, MO; Washington, DC. Category: Software Engineering</description>
-      <pubDate>Fri, 22 May 2026 17:37:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4481921005</guid>
     </item>
   </channel>
 </rss>
