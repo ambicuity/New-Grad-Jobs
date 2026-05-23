@@ -35,9 +35,7 @@ New Grad Jobs is a fully automated job aggregator that helps new graduates find 
 9. [Adding a Company or Job](#9-adding-a-company-or-job)
 10. [Code Style](#10-code-style)
 11. [Good First Issues](#11-good-first-issues)
-12. [Bot Commands (Slash Commands)](#12-bot-commands-slash-commands)
-13. [When Will My PR Be Merged?](#13-when-will-my-pr-be-merged)
-14. [Security & Signed Releases](#14-security--signed-releases)
+12. [When Will My PR Be Merged?](#12-when-will-my-pr-be-merged)
 
 ---
 
@@ -110,6 +108,10 @@ make test
 
 # To run the scraper locally (takes 4-6 minutes)
 make run
+
+# To generate forecast artifacts from existing docs/market-history.json
+# (requires GOOGLE_API_KEY)
+make predict
 ```
 
 ### Key local files
@@ -117,11 +119,12 @@ make run
 | File | Role | Edit? |
 |------|------|-------|
 | `config.yml` | Central configuration — companies, filters, search terms | ✅ Yes |
-| `scripts/update_jobs.py` | Core scraper + filterer + README generator | ✅ Yes |
+| `scripts/update_jobs.py` | Core scraper + filterer + artifact generator | ✅ Yes |
 | `.github/workflows/update-jobs.yml` | GitHub Actions job | ✅ Yes (test via manual trigger) |
 | `requirements.txt` | Python dependencies | ✅ Yes |
 | `docs/` | GitHub Pages website (HTML/CSS/JS) | ✅ Yes |
 | `README.md` | **AUTO-GENERATED** — never edit manually | ❌ Never |
+| `docs/predictions-artifacts.md` | Forecast artifact contract for local + deployed `/docs/` | ✅ Yes |
 
 ---
 
@@ -531,7 +534,7 @@ Before opening a PR, confirm every item below:
 - [ ] Commit messages follow the Conventional Commits format.
 - [ ] The PR is linked to the issue with `Fixes #<number>` in the description.
 - [ ] The PR is opened against `main` in the **upstream** repository, not my fork.
-- [ ] I have updated relevant documentation (`config.yml` comments, `JOB_SCRAPING_APIS.md`, etc.) if applicable.
+- [ ] I have updated relevant documentation (`config.yml` comments, `README.md`, etc.) if applicable.
 
 ---
 
@@ -599,28 +602,7 @@ New here? Look for issues tagged:
 
 ---
 
-## 12. Bot Commands (Slash Commands)
-
-Our repository uses bots to automate the contributor workflow. You can interact with them by posting a comment on any issue:
-
-| Command | What it does |
-|---------|-------------|
-| `/assign` or `.take` | Assigns the issue to you and marks it as in-progress |
-| `/working` | Tells the bot you're still actively working (resets inactivity timer) |
-| `/need help` | Pings the maintainer and adds a `help-needed` label |
-| `/unassign` | Removes yourself from the issue so someone else can pick it up |
-
-### How the lifecycle works
-
-1. **Claim an issue** → Comment `/assign` on any unassigned issue.
-2. **Work on it** → You have 7 days to open a PR. If you need more time, just comment `/working`.
-3. **Stuck?** → Comment `/need help` and a maintainer will assist you.
-4. **Life happens?** → Comment `/unassign` to gracefully step away. No hard feelings.
-5. **Went silent?** → After 2 days of inactivity, the bot will check in. After 7 days with no response, it will gently unassign you so someone else can help.
-
----
-
-## 13. When Will My PR Be Merged?
+## 12. When Will My PR Be Merged?
 
 The maintainer (`@ambicuity`) merges PRs manually after reviewing. Here is the exact decision matrix:
 
@@ -640,61 +622,22 @@ The maintainer (`@ambicuity`) merges PRs manually after reviewing. Here is the e
 | Failing Check | Can We Merge? | Why |
 |---------------|--------------|-----|
 | Codecov upload | ✅ Yes | Informational only — token issues don't block correctness |
-| Check Dead Links (on config-only PRs) | ✅ Yes | README link checker fires false positives on `config.yml` PRs |
-| All-Contributors bot | ✅ Yes | Community recognition — never blocks a merge |
 
 ### ❌ Hard Blockers — Do NOT merge:
 
 | Failing Check | Why It Blocks |
 |---------------|--------------|
-| `CI — Lint & Validate` | Syntax errors or broken config will break the scraper |
-| `Test Suite (pytest)` | Failing tests = known regression |
+| `CI — Lint & Validate` (lint-and-validate job) | Syntax errors or broken config will break the scraper |
+| `CI — Lint & Validate` (test job) | Failing pytest run — known regression |
 | `Code Hygiene (Pre-commit)` | Secrets, malformed YAML, broken imports |
 | `CodeQL Security Scan` | Security vulnerability in merged code |
-| `Trivy` | Known dependency CVE at CRITICAL/HIGH severity |
-| `Validate Job Submissions` | Malformed `jobs.json` will break GitHub Pages |
-| `PR Title Check` | PR cannot be auto-merged without a clean commit message |
-| `Linked Issue Enforcer` | Every community PR must be tied to a tracked issue |
 | Merge conflict | Cannot squash-merge a conflicted PR |
-
-### Auto-Merge (Dependabot)
-
-Dependabot patch and minor updates are **automatically approved and squash-merged** once all CI checks pass. No manual action needed. Major version bumps require explicit maintainer review.
-
----
-
-## 14. Security & Signed Releases
-
-New Grad Jobs takes supply chain security seriously. We have achieved a **10/10** on the OpenSSF Scorecard for Signed Releases!
-
-### What Does This Mean for You?
-Every release of this repository is automatically packaged and cryptographically signed using **Sigstore** (keyless OIDC signing).
-When you download a release from our Releases page, you'll also find a `.sig` file alongside the `.tar.gz` archive.
-
-If you are just contributing code, you don't need to do anything! Our automated `release-please.yml` workflow takes care of the signing automatically whenever a new version is published.
 
 ---
 
 ## 🏆 Contributors
 
-Every contribution is recognized! When your PR is merged, our automation adds you to our [Contributors Hall of Fame](./CONTRIBUTORS.md). If automation is skipped or fails, a maintainer will add you manually.
-
----
-
-## 🏆 Hall of Fame Credit
-
-Contributors are automatically added to the Hall of Fame using the workflow:
-`.github/workflows/auto-thank.yml`.
-
-### When does it happen?
-
-- After your Pull Request (PR) is successfully merged.
-
-### When might it not work?
-
-- If the PR is created by a bot
-- If the GitHub Actions workflow fails
-- If the workflow is skipped due to configuration conditions
+Every contribution is recognized — see the [Contributors Hall of Fame](./CONTRIBUTORS.md).
 
 ### What should you do if your credit does not appear?
 
