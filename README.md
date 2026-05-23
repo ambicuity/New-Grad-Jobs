@@ -22,7 +22,7 @@
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## 📂 Browse <!-- COUNT:total -->1332<!-- /COUNT --> Jobs by Category
+## 📂 Browse <!-- COUNT:total -->1335<!-- /COUNT --> Jobs by Category
 
 💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->849<!-- /COUNT -->)
 
@@ -34,7 +34,7 @@
 
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->9<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->142<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->145<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---

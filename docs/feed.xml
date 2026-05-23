@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2026 18:50:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 20:00:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
@@ -92,18 +92,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5121816007?gh_jid=5121816007</guid>
     </item>
     <item>
-      <title>Software Engineer- Apple Service Engineering, Storage Infrastructure and Reliability at Apple</title>
-      <link>https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</link>
-      <description>New grad role at Apple in KA, IN. Category: Software Engineering</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</guid>
-    </item>
-    <item>
       <title>Junior Application Engineer at General Industrial Controls Pvt ltd</title>
       <link>https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</link>
       <description>New grad role at General Industrial Controls Pvt ltd in GJ, IN. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</guid>
+    </item>
+    <item>
+      <title>Software Engineer- Apple Service Engineering, Storage Infrastructure and Reliability at Apple</title>
+      <link>https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</link>
+      <description>New grad role at Apple in KA, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</guid>
     </item>
     <item>
       <title>Software Engineer- SoC Level Validation Engineer at Apple</title>
@@ -216,6 +216,13 @@
       <description>New grad role at ADP in Allentown, PA, US. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0403c5d248e16863</guid>
+    </item>
+    <item>
+      <title>Trainee at U R AND CO, CHARTERED ACCOUNTANTS</title>
+      <link>https://in.indeed.com/viewjob?jk=5a73486465f3e546</link>
+      <description>New grad role at U R AND CO, CHARTERED ACCOUNTANTS in KL, IN. Category: Other</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5a73486465f3e546</guid>
     </item>
     <item>
       <title>Software Engineer, Modeling and Simulation, Space at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Salesloft in Bangalore, India. Category: Software Engineering</description>
       <pubDate>Fri, 22 May 2026 18:59:46 +0000</pubDate>
       <guid isPermaLink="true">https://www.salesloft.com/company/careers?gh_jid=7645488</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Full-stack at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 22 May 2026 17:51:28 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</guid>
     </item>
   </channel>
 </rss>
