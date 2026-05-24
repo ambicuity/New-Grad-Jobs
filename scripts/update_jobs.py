@@ -2475,7 +2475,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
 
     return {
         'meta': {
-            'generated_at': datetime.now().isoformat(),
+            'generated_at': datetime.now(timezone.utc).isoformat(),
             'total_jobs': len(jobs),
             'categories': [
                 {
@@ -2532,7 +2532,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'top_companies': top_companies,
         'unique_companies': unique_companies,
         'avg_jobs_per_company': avg_jobs_per_company,
-        'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now(timezone.utc).isoformat()
     }
 
     # Load existing history
@@ -2572,7 +2572,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Save back to file
     history_data = {
         'meta': {
-            'last_updated': datetime.now().isoformat(),
+            'last_updated': datetime.now(timezone.utc).isoformat(),
             'total_snapshots': len(history),
             'date_range': {
                 'start': history[0]['date'] if history else None,
@@ -2655,7 +2655,7 @@ def _write_prediction_status(
     payload: Dict[str, Any] = {
         "state": state,
         "message": message,
-        "updated_at": datetime.now().isoformat(),
+            "updated_at": datetime.now(timezone.utc).isoformat(),
         "requires_api_key": True,
         "minimum_history_snapshots": MIN_PREDICTION_HISTORY_SNAPSHOTS,
         "available_history_snapshots": history_snapshots,
@@ -2862,7 +2862,7 @@ Respond in JSON format:
                     )
                 else:
                     # Add metadata
-                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['generated_at'] = datetime.now(timezone.utc).isoformat()
                     predictions['data_points'] = len(snapshots)
                     predictions['date_range'] = {
                         'start': snapshots[0]['date'],

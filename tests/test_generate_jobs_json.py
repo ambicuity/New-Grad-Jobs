@@ -31,9 +31,9 @@ class TestGenerateJobsJsonStructure:
     def test_meta_includes_generated_timestamp(self):
         """Meta section should include ISO timestamp of generation."""
         config = {}
-        before = datetime.now()
+        before = datetime.now(timezone.utc)
         result = generate_jobs_json([], config)
-        after = datetime.now()
+        after = datetime.now(timezone.utc)
 
         generated_at = result['meta']['generated_at']
         assert isinstance(generated_at, str)
