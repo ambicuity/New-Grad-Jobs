@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 02:47:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 04:44:26 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 1 - Linux/HPC/Bash/Python/Docker/Gitlab/CI/CD at Captivation Software</title>
+      <link>https://www.indeed.com/viewjob?jk=c28f1941454a0781</link>
+      <description>New grad role at Captivation Software in Annapolis Junction, MD, US. Category: Software Engineering</description>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c28f1941454a0781</guid>
+    </item>
     <item>
       <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
       <link>https://jobs.ashbyhq.com/snowflake/eb704210-4c4a-4ab7-8838-8ba7abd55af3</link>
@@ -176,20 +183,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=61c588589304373b</guid>
     </item>
     <item>
-      <title>Summer New Grad RN Residency at HCA Florida Orange Park Hospital​</title>
-      <link>https://www.indeed.com/viewjob?jk=5b75468f02caa71d</link>
-      <description>New grad role at HCA Florida Orange Park Hospital​ in Orange Park, FL, US. Category: Other</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5b75468f02caa71d</guid>
-    </item>
-    <item>
-      <title>Summer New Grad RN Residency at HCA Florida Memorial Hospital​</title>
-      <link>https://www.indeed.com/viewjob?jk=4476e663a994b79d</link>
-      <description>New grad role at HCA Florida Memorial Hospital​ in Jacksonville, FL, US. Category: Other</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4476e663a994b79d</guid>
-    </item>
-    <item>
       <title>New Grad RN Residency at Mission Health</title>
       <link>https://www.indeed.com/viewjob?jk=1c7edef3540f2b5b</link>
       <description>New grad role at Mission Health in Spruce Pine, NC, US. Category: Other</description>
@@ -356,6 +349,13 @@
       <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Design-and-Analysis-Engineer--Associate---Mid-Level-_JR2026509947</guid>
+    </item>
+    <item>
+      <title>Systems Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</link>
+      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</guid>
     </item>
   </channel>
 </rss>
