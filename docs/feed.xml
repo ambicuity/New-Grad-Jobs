@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 00:15:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 02:22:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
@@ -92,18 +92,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5121816007?gh_jid=5121816007</guid>
     </item>
     <item>
-      <title>Junior Application Engineer at General Industrial Controls Pvt ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</link>
-      <description>New grad role at General Industrial Controls Pvt ltd in GJ, IN. Category: Other</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</guid>
-    </item>
-    <item>
       <title>Software Engineer- Apple Service Engineering, Storage Infrastructure and Reliability at Apple</title>
       <link>https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</link>
       <description>New grad role at Apple in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bfdc9c9db54d3ae7</guid>
+    </item>
+    <item>
+      <title>Junior Application Engineer at General Industrial Controls Pvt ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</link>
+      <description>New grad role at General Industrial Controls Pvt ltd in GJ, IN. Category: Other</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</guid>
     </item>
     <item>
       <title>Software Engineer- SoC Level Validation Engineer at Apple</title>
@@ -141,13 +141,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=643b311ed924ea05</guid>
     </item>
     <item>
-      <title>Database Developer, BIS, Associate at BlackRock</title>
-      <link>https://in.indeed.com/viewjob?jk=526c7011e259983e</link>
-      <description>New grad role at BlackRock in MH, IN. Category: Data Engineering</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=526c7011e259983e</guid>
-    </item>
-    <item>
       <title>Information Security Engineer - Database Activity Logging at Wells Fargo</title>
       <link>https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</link>
       <description>New grad role at Wells Fargo in Irving, TX, US. Category: Infrastructure &amp; SRE</description>
@@ -155,11 +148,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</guid>
     </item>
     <item>
-      <title>COORDINATING ENGINEER I-DWM 2026 at City of Chicago, IL</title>
-      <link>https://www.indeed.com/viewjob?jk=542b334302234ea6</link>
-      <description>New grad role at City of Chicago, IL in Chicago, IL, US. Category: Infrastructure &amp; SRE</description>
+      <title>Database Developer, BIS, Associate at BlackRock</title>
+      <link>https://in.indeed.com/viewjob?jk=526c7011e259983e</link>
+      <description>New grad role at BlackRock in MH, IN. Category: Data Engineering</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=542b334302234ea6</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=526c7011e259983e</guid>
     </item>
     <item>
       <title>Nurse Extern II - December 2026 Grads - ACE/Stroke/Obs at Advocate Aurora Health</title>
@@ -188,6 +181,13 @@
       <description>New grad role at HCA Florida Memorial Hospital​ in Jacksonville, FL, US. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4476e663a994b79d</guid>
+    </item>
+    <item>
+      <title>COORDINATING ENGINEER I-DWM 2026 at City of Chicago, IL</title>
+      <link>https://www.indeed.com/viewjob?jk=542b334302234ea6</link>
+      <description>New grad role at City of Chicago, IL in Chicago, IL, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=542b334302234ea6</guid>
     </item>
     <item>
       <title>New Grad RN Residency at Mission Health</title>
