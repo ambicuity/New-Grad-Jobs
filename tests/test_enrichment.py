@@ -275,35 +275,35 @@ class TestFormatPostedDate:
     """Human-readable date display formatting."""
 
     def test_recent_date_shows_today(self):
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         result = format_posted_date(now.isoformat())
         assert result == "Today"
 
     def test_yesterday_shows_1_day_ago(self):
-        yesterday = datetime.now() - timedelta(days=1)
+        yesterday = datetime.now(timezone.utc) - timedelta(days=1)
         result = format_posted_date(yesterday.isoformat())
         assert result == "1 day ago"
 
     def test_days_ago_format(self):
-        three_days_ago = datetime.now() - timedelta(days=3)
+        three_days_ago = datetime.now(timezone.utc) - timedelta(days=3)
         result = format_posted_date(three_days_ago.isoformat())
         assert result == "3 days ago"
 
     def test_old_date_shows_iso_format(self):
-        two_weeks_ago = datetime.now() - timedelta(days=14)
+        two_weeks_ago = datetime.now(timezone.utc) - timedelta(days=14)
         result = format_posted_date(two_weeks_ago.isoformat())
         # Should return YYYY-MM-DD formatted date
         assert result == two_weeks_ago.strftime("%Y-%m-%d")
 
     def test_lever_timestamp_int(self):
         """Lever API returns timestamps in milliseconds."""
-        ts_ms = int((datetime.now() - timedelta(days=1)).timestamp() * 1000)
+        ts_ms = int((datetime.now(timezone.utc) - timedelta(days=1)).timestamp() * 1000)
         result = format_posted_date(ts_ms)
         assert result == "1 day ago"
 
     def test_lever_timestamp_float(self):
         """Float millisecond timestamps should also work."""
-        ts_ms = float(int((datetime.now() - timedelta(days=2)).timestamp() * 1000))
+        ts_ms = float(int((datetime.now(timezone.utc) - timedelta(days=2)).timestamp() * 1000))
         result = format_posted_date(ts_ms)
         assert result == "2 days ago"
 

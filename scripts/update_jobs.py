@@ -2497,7 +2497,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
     # Create today's snapshot
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
 
     # Count jobs by category
@@ -2563,7 +2563,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
                 break
 
     # Keep only last 90 days
-    cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
+    cutoff_date = (datetime.now(timezone.utc) - timedelta(days=90)).strftime('%Y-%m-%d')
     history = [entry for entry in history if entry['date'] >= cutoff_date]
 
     # Sort by date (oldest to newest)
@@ -2695,7 +2695,7 @@ def predict_hiring_trends(force: bool = False) -> Dict[str, Any]:
         )
 
     # Check if predictions were already generated today
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
     try:
         if os.path.exists(predictions_path) and not force:
