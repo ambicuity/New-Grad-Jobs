@@ -2204,6 +2204,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+    - "Just posted" / "Recently" -> today's date
+    - "Posted 2 Weeks Ago" -> 14 days ago
+    - "Posted 3 Months Ago" -> 90 days ago
+    - "Active 5 Days Ago" -> 5 days ago
 
     Also handles native datetime.date / datetime.datetime objects returned by
     Workday / JobSpy API clients, coercing them to their ISO-format string so
@@ -2247,6 +2251,28 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     # Handle "X hours ago" or "X minutes ago" (resolve to today)
     if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
         return now.strftime('%Y-%m-%d')
+
+    # Handle "Just posted" / "Just now" / "Recently"
+    if re.search(r'\b(?:just\s+(?:posted|now)|recently)\b', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
+
+    # Handle "Posted X Weeks Ago" or "X Weeks Ago" or "X Wks Ago"
+    weeks_match = re.search(r'(\d+)\s*(?:weeks?|wks?)\s+ago', posted_at_lower)
+    if weeks_match:
+        weeks = int(weeks_match.group(1))
+        return (now - timedelta(days=weeks * 7)).strftime('%Y-%m-%d')
+
+    # Handle "Posted X Months Ago" or "X Months Ago" or "X Mos Ago"
+    months_match = re.search(r'(\d+)\s*(?:months?|mos?)\s+ago', posted_at_lower)
+    if months_match:
+        months = int(months_match.group(1))
+        return (now - timedelta(days=months * 30)).strftime('%Y-%m-%d')
+
+    # Handle "Active X Days Ago" (some job boards use "Active" instead of "Posted")
+    active_match = re.search(r'active\s+(\d+)\s*days?\s+ago', posted_at_lower)
+    if active_match:
+        days = int(active_match.group(1))
+        return (now - timedelta(days=days)).strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
