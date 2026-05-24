@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "last_run": "2026-05-24T21:01:47.882819Z",
+  "last_run": "2026-05-24T22:07:32.369923Z",
   "total_jobs": 1401,
   "source_counts": {
     "greenhouse": 16179,
     "lever": 428,
     "ashby": 3142,
-    "jobspy": 2631,
+    "jobspy": 2640,
     "workday": 3400
   },
   "zero_sources": [],
-  "run_duration_seconds": 235.3,
+  "run_duration_seconds": 236.0,
   "configured_company_apis": 213,
   "enabled_sources": 4,
   "active_hiring_companies": 244,
