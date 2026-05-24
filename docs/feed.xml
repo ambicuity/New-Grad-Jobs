@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 22:07:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 23:15:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4982193008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 24 May 2026 22:05:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4982193008</guid>
+    </item>
     <item>
       <title>Systems Engineer, PES at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4838188007?gh_jid=4838188007</link>
@@ -176,6 +183,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1c3fa91abf4cd0eb</guid>
     </item>
     <item>
+      <title>Software Engineer 1 - Linux/HPC/Bash/Python/Docker/Gitlab/CI/CD at Captivation Software</title>
+      <link>https://www.indeed.com/viewjob?jk=c28f1941454a0781</link>
+      <description>New grad role at Captivation Software in Annapolis Junction, MD, US. Category: Software Engineering</description>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c28f1941454a0781</guid>
+    </item>
+    <item>
       <title>New Grad RN Residency Transitional Cardiac Unit at Henrico Doctors' Hospital</title>
       <link>https://www.indeed.com/viewjob?jk=9090ae204ee671e7</link>
       <description>New grad role at Henrico Doctors' Hospital in Richmond, VA, US. Category: Other</description>
@@ -342,20 +356,6 @@
       <description>New grad role at HCA HealthONE Swedish in Englewood, CO, US. Category: Other</description>
       <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=244a12eb5ae514da</guid>
-    </item>
-    <item>
-      <title>New Grad RN Residency at HCA HealthONE Mountain Ridge</title>
-      <link>https://www.indeed.com/viewjob?jk=e705337efa211da9</link>
-      <description>New grad role at HCA HealthONE Mountain Ridge in Thornton, CO, US. Category: Other</description>
-      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e705337efa211da9</guid>
-    </item>
-    <item>
-      <title>New Grad RN Residency at HCA HealthONE Presbyterian St. Luke's</title>
-      <link>https://www.indeed.com/viewjob?jk=94b273eb458d79a1</link>
-      <description>New grad role at HCA HealthONE Presbyterian St. Luke's in Denver, CO, US. Category: Other</description>
-      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=94b273eb458d79a1</guid>
     </item>
   </channel>
 </rss>
