@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 04:44:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 05:58:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer 1 - Linux/HPC/Bash/Python/Docker/Gitlab/CI/CD at Captivation Software</title>
@@ -13,6 +13,13 @@
       <description>New grad role at Captivation Software in Annapolis Junction, MD, US. Category: Software Engineering</description>
       <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c28f1941454a0781</guid>
+    </item>
+    <item>
+      <title>Information Systems Security Engineer Exopert at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Chantilly-VA/Information-Systems-Security-Engineer-Exopert_R-00183994</link>
+      <description>New grad role at Leidos in Chantilly, VA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Chantilly-VA/Information-Systems-Security-Engineer-Exopert_R-00183994</guid>
     </item>
     <item>
       <title>Software Engineer - Secret, Cryptographic and Identity Infrastructure at Snowflake</title>
@@ -113,6 +120,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=023f3c0df7b30dab</guid>
     </item>
     <item>
+      <title>Information Security Engineer - Database Activity Logging at Wells Fargo</title>
+      <link>https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</link>
+      <description>New grad role at Wells Fargo in Irving, TX, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</guid>
+    </item>
+    <item>
       <title>Software Engineer- SoC Level Validation Engineer at Apple</title>
       <link>https://www.indeed.com/viewjob?jk=18e88a55250c89f6</link>
       <description>New grad role at Apple in Austin, TX, US. Category: Software Engineering</description>
@@ -148,11 +162,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=643b311ed924ea05</guid>
     </item>
     <item>
-      <title>Information Security Engineer - Database Activity Logging at Wells Fargo</title>
-      <link>https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</link>
-      <description>New grad role at Wells Fargo in Irving, TX, US. Category: Infrastructure &amp; SRE</description>
+      <title>COORDINATING ENGINEER I-DWM 2026 at City of Chicago, IL</title>
+      <link>https://www.indeed.com/viewjob?jk=542b334302234ea6</link>
+      <description>New grad role at City of Chicago, IL in Chicago, IL, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11d34ebd2b1903fb</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=542b334302234ea6</guid>
     </item>
     <item>
       <title>Database Developer, BIS, Associate at BlackRock</title>
@@ -160,13 +174,6 @@
       <description>New grad role at BlackRock in MH, IN. Category: Data Engineering</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=526c7011e259983e</guid>
-    </item>
-    <item>
-      <title>COORDINATING ENGINEER I-DWM 2026 at City of Chicago, IL</title>
-      <link>https://www.indeed.com/viewjob?jk=542b334302234ea6</link>
-      <description>New grad role at City of Chicago, IL in Chicago, IL, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=542b334302234ea6</guid>
     </item>
     <item>
       <title>Nurse Extern II - December 2026 Grads - ACE/Stroke/Obs at Advocate Aurora Health</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Design-and-Analysis-Engineer--Associate---Mid-Level-_JR2026509947</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</link>
-      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</guid>
     </item>
   </channel>
 </rss>
