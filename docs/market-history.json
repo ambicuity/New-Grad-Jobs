@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-24T09:36:38.643898+00:00",
+    "last_updated": "2026-05-24T11:04:19.774363+00:00",
     "total_snapshots": 79,
     "date_range": {
       "start": "2026-03-05",
@@ -4300,12 +4300,12 @@
     },
     {
       "date": "2026-05-24",
-      "total_jobs": 1381,
+      "total_jobs": 1382,
       "categories": {},
       "tiers": {
         "other": 584,
         "unicorn": 641,
-        "faang_plus": 156
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -4326,7 +4326,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 32
+          "jobs": 33
         },
         {
           "company": "Glean",
@@ -4351,7 +4351,7 @@
       ],
       "unique_companies": 233,
       "avg_jobs_per_company": 5.93,
-      "timestamp": "2026-05-24T09:36:38.643113+00:00"
+      "timestamp": "2026-05-24T11:04:19.773499+00:00"
     }
   ]
 }
