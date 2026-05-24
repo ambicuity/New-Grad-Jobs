@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1330,
-      "change_percent": -0.3
+      "total_jobs": 1335,
+      "change_percent": 0.53
     },
     "30_days": {
-      "total_jobs": 1350,
-      "change_percent": 1.2
+      "total_jobs": 1355,
+      "change_percent": 2.03
     }
   },
   "growing_categories": [
-    "Unicorn Startups",
-    "FAANG+",
-    "General Tech"
+    "Software Engineering",
+    "Data Science",
+    "Cloud Infrastructure"
   ],
   "declining_categories": [
-    "Legacy Enterprise",
-    "Contract/Temp",
-    "Non-Tech Sector IT"
+    "Quality Assurance",
+    "Technical Support",
+    "Legacy Systems Maintenance"
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a significant structural shift approximately 6 days ago, with total job volume jumping from the ~1000 range to a new baseline of ~1330.",
-    "The sustained high volume suggests a seasonal hiring surge or a major influx of new graduate roles rather than a temporary data anomaly.",
-    "While short-term growth may plateau as the market absorbs the recent spike, the overall trend remains positive compared to the 30-day average."
+    "The market underwent a significant structural shift approximately one week ago, with total job volume jumping from a ~1000 baseline to a ~1330 plateau, suggesting a new hiring cycle or seasonal surge.",
+    "The stability of the current 7-day average (1327) against the 30-day average (1072) confirms that this is a sustained increase rather than a temporary spike.",
+    "Tiered company data indicates that Unicorns and FAANG+ firms are maintaining consistent volume, providing a stable foundation for the overall market growth."
   ],
-  "generated_at": "2026-05-23T00:20:51.612704",
-  "data_points": 78,
+  "generated_at": "2026-05-24T00:15:41.377515",
+  "data_points": 79,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-23"
+    "end": "2026-05-24"
   }
 }
