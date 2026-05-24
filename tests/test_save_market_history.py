@@ -312,11 +312,11 @@ class TestHistoryRetention:
     def test_keeps_only_90_days(self):
         """Snapshots older than 90 days are removed."""
         # Create old history with snapshots from 100 days ago
-        old_date = (datetime.now() - timedelta(days=100)).strftime('%Y-%m-%d')
-        recent_date = (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')
+        old_date = (datetime.now(timezone.utc) - timedelta(days=100)).strftime('%Y-%m-%d')
+        recent_date = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
 
         old_history = {
-            'meta': {'last_updated': datetime.now().isoformat(), 'total_snapshots': 2, 'date_range': {'start': old_date, 'end': recent_date}},
+            'meta': {'last_updated': datetime.now(timezone.utc).isoformat(), 'total_snapshots': 2, 'date_range': {'start': old_date, 'end': recent_date}},
             'snapshots': [
                 {
                     'date': old_date,
@@ -326,7 +326,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 10,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now(timezone.utc).isoformat()
                 },
                 {
                     'date': recent_date,
@@ -336,7 +336,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 20,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now(timezone.utc).isoformat()
                 }
             ]
         }
@@ -378,12 +378,12 @@ class TestHistoryRetention:
     def test_snapshots_sorted_by_date(self):
         """Snapshots are sorted chronologically (oldest to newest)."""
         # Create history with unsorted dates
-        date1 = (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')
-        date2 = (datetime.now() - timedelta(days=60)).strftime('%Y-%m-%d')
-        date3 = (datetime.now() - timedelta(days=10)).strftime('%Y-%m-%d')
+        date1 = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
+        date2 = (datetime.now(timezone.utc) - timedelta(days=60)).strftime('%Y-%m-%d')
+        date3 = (datetime.now(timezone.utc) - timedelta(days=10)).strftime('%Y-%m-%d')
 
         old_history = {
-            'meta': {'last_updated': datetime.now().isoformat(), 'total_snapshots': 3, 'date_range': {'start': date2, 'end': date1}},
+            'meta': {'last_updated': datetime.now(timezone.utc).isoformat(), 'total_snapshots': 3, 'date_range': {'start': date2, 'end': date1}},
             'snapshots': [
                 {
                     'date': date1,
@@ -393,7 +393,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 10,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now(timezone.utc).isoformat()
                 },
                 {
                     'date': date2,
@@ -403,7 +403,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 15,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now(timezone.utc).isoformat()
                 },
                 {
                     'date': date3,
@@ -413,7 +413,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 20,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now(timezone.utc).isoformat()
                 }
             ]
         }
