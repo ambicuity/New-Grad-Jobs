@@ -453,20 +453,27 @@ function UrgencyBar({ value }) {
 
 function extractRequirements(desc) {
   if (!desc) return [];
-  const text = desc.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-  const patterns = [
-    /(?:REQUIREMENTS|QUALIFICATIONS|WHAT YOU.{0,20}NEED|MUST HAVE|MINIMUM QUALIFICATIONS|BASIC QUALIFICATIONS)[:\s]*([\s\S]*?)(?=(?:ABOUT|WHAT YOU.{0,10}DO|RESPONSIBILITIES|NICE TO HAVE|PREFERRED|BONUS|COMPENSATION|SALARY|BENEFITS|EQUAL|LOCATION|APPLY|$))/i,
-    /(?:REQUIREMENTS|QUALIFICATIONS)[:\s]*([\s\S]*?)(?=(?:\n\n|\r\r|$))/i,
-  ];
-  for (const pat of patterns) {
-    const m = text.match(pat);
-    if (m && m[1]) {
-      const items = m[1]
-        .split(/(?:^|\s)[•\-\*]\s*|(?:^|\s)\d+\.\s*|(?:^|\s)[a-z]\)\s*/)
-        .map(s => s.trim())
-        .filter(s => s.length > 10 && s.length < 300);
-      if (items.length >= 2) return items.slice(0, 8);
-    }
+  const html = desc;
+  const text = html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const reqHeaders = /(?:REQUIREMENTS|QUALIFICATIONS|WHAT YOU.{0,20}NEED|MUST HAVE|MINIMUM QUALIFICATIONS|BASIC QUALIFICATIONS|WHAT WE.{0,20}LOOKING FOR|ABOUT YOU|YOU SHOULD HAVE|YOU.{0,10}BRING|IDEAL CANDIDATE|SKILLS.{0,10}REQUIRED|REQUIRED SKILLS|MINIMUM REQUIREMENTS|EDUCATION|EXPERIENCE)[:\s]*/i;
+  const sectionEnd = /(?:ABOUT|WHAT YOU.{0,10}DO|RESPONSIBILITIES|NICE TO HAVE|PREFERRED|BONUS|COMPENSATION|SALARY|BENEFITS|EQUAL|LOCATION|APPLY|PERKS|WHAT WE OFFER|BENEFITS|ABOUT THE TEAM|ABOUT THE COMPANY)/i;
+  const headerMatch = text.match(reqHeaders);
+  if (headerMatch) {
+    const headerIdx = headerMatch.index + headerMatch[0].length;
+    const afterHeader = text.substring(headerIdx);
+    const endMatch = afterHeader.match(sectionEnd);
+    const section = endMatch ? afterHeader.substring(0, endMatch.index) : afterHeader.substring(0, 1000);
+    const items = section.split(/(?:^|\s)[•\-\*]\s*|(?:^|\s)\d+\.\s*|(?:^|\s)[a-z]\)\s*/);
+    const validItems = items.map(s => s.trim()).filter(s => s.length > 10 && s.length < 300 && !s.match(/^(?:and|or|the|a|an|is|are|was|were|be|been|being|have|has|had|do|does|did|will|would|could|should|may|might|can|shall)$/i));
+    if (validItems.length >= 2) return validItems.slice(0, 8);
+  }
+  const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi);
+  if (liMatches && liMatches.length >= 3) {
+    const items = liMatches.map(li => {
+      const content = li.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
+      return content;
+    }).filter(s => s.length > 10 && s.length < 300);
+    if (items.length >= 3) return items.slice(0, 8);
   }
   const bullets = text.match(/(?:^|\n)\s*[•\-\*]\s*(.+)/g);
   if (bullets && bullets.length >= 3) {
