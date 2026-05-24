@@ -451,6 +451,30 @@ function UrgencyBar({ value }) {
   );
 }
 
+function extractRequirements(desc) {
+  if (!desc) return [];
+  const text = desc.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const patterns = [
+    /(?:REQUIREMENTS|QUALIFICATIONS|WHAT YOU.{0,20}NEED|MUST HAVE|MINIMUM QUALIFICATIONS|BASIC QUALIFICATIONS)[:\s]*([\s\S]*?)(?=(?:ABOUT|WHAT YOU.{0,10}DO|RESPONSIBILITIES|NICE TO HAVE|PREFERRED|BONUS|COMPENSATION|SALARY|BENEFITS|EQUAL|LOCATION|APPLY|$))/i,
+    /(?:REQUIREMENTS|QUALIFICATIONS)[:\s]*([\s\S]*?)(?=(?:\n\n|\r\r|$))/i,
+  ];
+  for (const pat of patterns) {
+    const m = text.match(pat);
+    if (m && m[1]) {
+      const items = m[1]
+        .split(/(?:^|\s)[•\-\*]\s*|(?:^|\s)\d+\.\s*|(?:^|\s)[a-z]\)\s*/)
+        .map(s => s.trim())
+        .filter(s => s.length > 10 && s.length < 300);
+      if (items.length >= 2) return items.slice(0, 8);
+    }
+  }
+  const bullets = text.match(/(?:^|\n)\s*[•\-\*]\s*(.+)/g);
+  if (bullets && bullets.length >= 3) {
+    return bullets.map(b => b.replace(/^\s*[•\-\*]\s*/, '').trim()).filter(s => s.length > 10).slice(0, 8);
+  }
+  return [];
+}
+
 function DashboardDetail({ job, saved, onSave }) {
   if (!job) return null;
   const days = daysLeft(job.dl);
@@ -506,12 +530,19 @@ function DashboardDetail({ job, saved, onSave }) {
       {/* Requirements */}
       <div style={{ padding: '14px 16px', borderBottom: `1px solid ${BBG.rule2}` }}>
         <div style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>REQUIREMENTS</div>
-        <ul style={{ margin: 0, paddingLeft: 16, lineHeight: 1.7, color: BBG.ink }}>
-          <li>BS / MS in CS or equivalent, graduating by Jun 2027</li>
-          <li>Proficiency in <span style={{ color: BBG.acc }}>{job.stack[0].toLowerCase()}</span>; bonus: {job.stack.slice(1).join(', ').toLowerCase() || 'related stacks'}</li>
-          <li>Portfolio or open-source — internships not required</li>
-          {!job.visa && <li style={{ color: BBG.warn }}>US work authorization (no sponsorship)</li>}
-        </ul>
+        <div style={{ margin: 0, paddingLeft: 0, lineHeight: 1.7, color: BBG.ink, fontSize: 11.5 }}>
+          {job.desc && extractRequirements(job.desc).length > 0 ? (
+            <ul style={{ margin: 0, paddingLeft: 16 }}>
+              {extractRequirements(job.desc).map((req, i) => (
+                <li key={i}>{req}</li>
+              ))}
+            </ul>
+          ) : (
+            <div style={{ color: BBG.dim, fontSize: 11, fontStyle: 'italic' }}>
+              Requirements not available. Click APPLY to view full details.
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Similar */}
