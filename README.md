@@ -30,11 +30,11 @@
 
 📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->29<!-- /COUNT -->)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->200<!-- /COUNT -->)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->199<!-- /COUNT -->)
 
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->13<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->145<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->146<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---
