@@ -990,8 +990,6 @@ apis:
         workday_url: "https://generalmotors.wd1.myworkdayjobs.com/Careers"
       - name: "Honeywell"
         workday_url: "https://honeywell.wd5.myworkdayjobs.com/Careers"
-      - name: "Raytheon"
-        workday_url: "https://rtx.wd1.myworkdayjobs.com/RTX"
       - name: "Leidos"
         workday_url: "https://leidos.wd5.myworkdayjobs.com/External"
       - name: "CACI"
