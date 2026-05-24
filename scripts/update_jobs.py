@@ -34,6 +34,7 @@ from xml.sax.saxutils import escape as xml_escape
 import requests
 import yaml
 from dateutil import parser as date_parser
+from dateutil.relativedelta import relativedelta
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -78,6 +79,10 @@ DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
 MIN_PREDICTION_HISTORY_SNAPSHOTS: int = 7
 DEFAULT_GEMINI_PREDICTION_MODEL: str = "gemini-3.1-flash-lite-preview"
+
+# Date normalization constants
+DAYS_PER_WEEK: int = 7
+DAYS_PER_MONTH: int = 30  # Approximation; relativedelta used for precise month arithmetic below
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -2260,19 +2265,13 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     weeks_match = re.search(r'(\d+)\s*(?:weeks?|wks?)\s+ago', posted_at_lower)
     if weeks_match:
         weeks = int(weeks_match.group(1))
-        return (now - timedelta(days=weeks * 7)).strftime('%Y-%m-%d')
+        return (now - timedelta(days=weeks * DAYS_PER_WEEK)).strftime('%Y-%m-%d')
 
     # Handle "Posted X Months Ago" or "X Months Ago" or "X Mos Ago"
     months_match = re.search(r'(\d+)\s*(?:months?|mos?)\s+ago', posted_at_lower)
     if months_match:
         months = int(months_match.group(1))
-        return (now - timedelta(days=months * 30)).strftime('%Y-%m-%d')
-
-    # Handle "Active X Days Ago" (some job boards use "Active" instead of "Posted")
-    active_match = re.search(r'active\s+(\d+)\s*days?\s+ago', posted_at_lower)
-    if active_match:
-        days = int(active_match.group(1))
-        return (now - timedelta(days=days)).strftime('%Y-%m-%d')
+        return (now - relativedelta(months=months)).strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
