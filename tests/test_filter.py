@@ -11,7 +11,7 @@ Tests cover the filter_jobs() function's handling of:
 
 import sys
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -29,7 +29,7 @@ def _make_job(
 ):
     """Factory helper to create minimal valid job dicts for tests."""
     if posted_at is None:
-        posted_at = datetime.utcnow().isoformat()
+        posted_at = datetime.now(timezone.utc).isoformat()
     return {
         "title": title,
         "company": company,
@@ -59,12 +59,12 @@ class TestFilterJobsDateRecency:
     """Filter by posting date."""
 
     def test_recent_job_passes(self):
-        jobs = [_make_job(posted_at=(datetime.utcnow() - timedelta(days=2)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=2)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
 
     def test_old_job_filtered_out(self):
-        jobs = [_make_job(posted_at=(datetime.utcnow() - timedelta(days=30)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
@@ -455,7 +455,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
@@ -465,7 +465,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -475,7 +475,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer",  # No new grad signal
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -485,7 +485,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Junior Analyst",  # 'junior' is weak, 'analyst' not in track_signals
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -495,7 +495,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=30)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -505,7 +505,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="London, UK",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -553,7 +553,7 @@ class TestFilterJobsConfigVariations:
         """Custom max_age_days should be respected."""
         config = _default_config()
         config['filtering']['max_age_days'] = 30
-        jobs = [_make_job(posted_at=(datetime.utcnow() - timedelta(days=20)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=20)).isoformat())]
         result = filter_jobs(jobs, config)
         assert len(result) == 1, "Job should pass with extended max_age_days"
 
@@ -662,7 +662,7 @@ class TestFilterJobsEdgeCases:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad 2025",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.utcnow() - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0, "Exclusion should happen first"

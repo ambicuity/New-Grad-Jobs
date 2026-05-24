@@ -11,7 +11,7 @@ import sys
 import os
 import pytest
 from typing import Dict, Any, List
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # Add scripts directory to path for all tests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
@@ -33,7 +33,7 @@ def sample_job() -> Dict[str, Any]:
         'title': 'Software Engineer - New Grad',
         'location': 'San Francisco, CA',
         'url': 'https://example.com/jobs/123',
-        'posted_at': datetime.utcnow().isoformat(),
+        'posted_at': datetime.now(timezone.utc).isoformat(),
         'description': 'Join our team as a new grad software engineer.',
         'source': 'Test Source'
     }
@@ -175,7 +175,7 @@ def create_job(
         'title': title,
         'location': location,
         'url': url,
-        'posted_at': posted_at or datetime.utcnow().isoformat(),
+        'posted_at': posted_at or datetime.now(timezone.utc).isoformat(),
         'description': description,
         'source': source
     }
@@ -194,7 +194,7 @@ def create_jobs_batch(count: int, base_date: datetime = None) -> List[Dict[str, 
         List of job dicts with varied dates
     """
     if base_date is None:
-        base_date = datetime.utcnow()
+        base_date = datetime.now(timezone.utc)
 
     jobs = []
     for i in range(count):

@@ -2947,7 +2947,7 @@ def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
     jobs.sort(key=extract_sort_date, reverse=True)
     sorted_jobs = jobs[:max_items]
 
-    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+    now_str = datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
 
     def _safe(val: Any, default: str = "") -> str:
         # xml.sax.saxutils.escape calls .replace() on its argument; passing None
