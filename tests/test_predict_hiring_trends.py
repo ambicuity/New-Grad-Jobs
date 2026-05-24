@@ -4,7 +4,7 @@
 import json
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 import update_jobs
 
 
-FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0)
+FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0, tzinfo=timezone.utc)
 
 
 def _fixed_datetime_class(fixed_now: datetime):
@@ -122,7 +122,7 @@ def test_predict_hiring_trends_writes_valid_artifact(monkeypatch, tmp_path):
     assert artifact["outlook"] == "bullish"
     assert artifact["predictions"]["7_days"]["total_jobs"] == 220
     assert artifact["predictions"]["30_days"]["change_percent"] == 12.0
-    assert artifact["generated_at"] == FIXED_NOW.isoformat()
+    assert artifact["generated_at"] == FIXED_NOW.isoformat()  # Now includes +00:00
     assert artifact["data_points"] == len(snapshots)
     assert artifact["date_range"] == {
         "start": snapshots[0]["date"],

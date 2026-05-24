@@ -12,7 +12,7 @@ import os
 import json
 import tempfile
 import shutil
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
@@ -537,7 +537,7 @@ class TestFileHandling:
 class TestSaveMarketHistoryDeterminism:
     """Deterministic tests for retention boundaries and snapshot contracts."""
 
-    FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0)
+    FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0, tzinfo=timezone.utc)
 
     @staticmethod
     def _fixed_datetime_class(fixed_now: datetime):
