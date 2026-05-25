@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 17:28:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 19:07:57 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Data at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7901817</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 25 May 2026 17:26:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7901817</guid>
+    </item>
     <item>
       <title>Security Engineer, AI Vulnerability Management at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7939818?t=gh_src=&amp;gh_jid=7939818</link>
@@ -344,18 +351,11 @@
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7504595003?gh_jid=7504595003</guid>
     </item>
     <item>
-      <title>Field Service Engineer Junior - Vadodara at Fresenius Medical Care</title>
-      <link>https://in.indeed.com/viewjob?jk=630e560b64d0b18d</link>
-      <description>New grad role at Fresenius Medical Care in MH, IN. Category: Other</description>
+      <title>Data Scientist II at TD</title>
+      <link>https://ca.indeed.com/viewjob?jk=ac0aeedf03f82c3f</link>
+      <description>New grad role at TD in Toronto, ON, CA. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=630e560b64d0b18d</guid>
-    </item>
-    <item>
-      <title>Associate DevOps Engineer Consultant at Global Payments</title>
-      <link>https://in.indeed.com/viewjob?jk=ea97bae5f8a636c2</link>
-      <description>New grad role at Global Payments in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ea97bae5f8a636c2</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ac0aeedf03f82c3f</guid>
     </item>
   </channel>
 </rss>

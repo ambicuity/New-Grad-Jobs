@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-25T17:28:58.884707+00:00",
+    "last_updated": "2026-05-25T19:07:57.462650+00:00",
     "total_snapshots": 80,
     "date_range": {
       "start": "2026-03-05",
@@ -4355,12 +4355,12 @@
     },
     {
       "date": "2026-05-25",
-      "total_jobs": 1365,
+      "total_jobs": 1388,
       "categories": {},
       "tiers": {
-        "unicorn": 637,
-        "other": 581,
-        "faang_plus": 147
+        "unicorn": 638,
+        "other": 604,
+        "faang_plus": 146
       },
       "top_companies": [
         {
@@ -4396,17 +4396,17 @@
           "jobs": 26
         },
         {
-          "company": "ClickHouse",
-          "jobs": 24
+          "company": "Accenture",
+          "jobs": 25
         },
         {
-          "company": "Abnormal Security",
-          "jobs": 20
+          "company": "ClickHouse",
+          "jobs": 24
         }
       ],
-      "unique_companies": 242,
-      "avg_jobs_per_company": 5.64,
-      "timestamp": "2026-05-25T17:28:58.883921+00:00"
+      "unique_companies": 240,
+      "avg_jobs_per_company": 5.78,
+      "timestamp": "2026-05-25T19:07:57.461840+00:00"
     }
   ]
 }
