@@ -22,19 +22,19 @@
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## 📂 Browse <!-- COUNT:total -->1387<!-- /COUNT --> Jobs by Category
+## 📂 Browse <!-- COUNT:total -->1381<!-- /COUNT --> Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->898<!-- /COUNT -->)
+💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->896<!-- /COUNT -->)
 
-🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->132<!-- /COUNT -->)
+🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->131<!-- /COUNT -->)
 
 📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->24<!-- /COUNT -->)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->186<!-- /COUNT -->)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->185<!-- /COUNT -->)
 
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->14<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->126<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->124<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---
