@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-25T19:07:57.462650+00:00",
+    "last_updated": "2026-05-25T20:45:46.599690+00:00",
     "total_snapshots": 80,
     "date_range": {
       "start": "2026-03-05",
@@ -4355,11 +4355,11 @@
     },
     {
       "date": "2026-05-25",
-      "total_jobs": 1388,
+      "total_jobs": 1387,
       "categories": {},
       "tiers": {
-        "unicorn": 638,
-        "other": 604,
+        "unicorn": 639,
+        "other": 602,
         "faang_plus": 146
       },
       "top_companies": [
@@ -4377,7 +4377,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 42
+          "jobs": 43
         },
         {
           "company": "Boeing",
@@ -4396,17 +4396,17 @@
           "jobs": 26
         },
         {
-          "company": "Accenture",
-          "jobs": 25
-        },
-        {
           "company": "ClickHouse",
           "jobs": 24
+        },
+        {
+          "company": "Accenture",
+          "jobs": 23
         }
       ],
-      "unique_companies": 240,
-      "avg_jobs_per_company": 5.78,
-      "timestamp": "2026-05-25T19:07:57.461840+00:00"
+      "unique_companies": 238,
+      "avg_jobs_per_company": 5.83,
+      "timestamp": "2026-05-25T20:45:46.598878+00:00"
     }
   ]
 }
