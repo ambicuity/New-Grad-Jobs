@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 21:59:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 23:10:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Quality Assurance Software Engineer at Pitney Bowes</title>
@@ -13,6 +13,27 @@
       <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f0a741b555e9359b</guid>
+    </item>
+    <item>
+      <title>Software Engineer | Engine (Ingest) at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7868076</link>
+      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
+      <pubDate>Mon, 25 May 2026 23:02:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7868076</guid>
+    </item>
+    <item>
+      <title>Software Engineer | Cloud Foundations at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7790325</link>
+      <description>New grad role at SingleStore in India (Remote). Category: Software Engineering</description>
+      <pubDate>Mon, 25 May 2026 22:42:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7790325</guid>
+    </item>
+    <item>
+      <title>Software Engineer | AI Platforms at SingleStore</title>
+      <link>https://job-boards.greenhouse.io/singlestore/jobs/7573638</link>
+      <description>New grad role at SingleStore in India. Category: Software Engineering</description>
+      <pubDate>Mon, 25 May 2026 22:19:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/singlestore/jobs/7573638</guid>
     </item>
     <item>
       <title>Software Engineer, Build Systems / CI at OpenAI</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
       <pubDate>Mon, 25 May 2026 04:03:18 +0000</pubDate>
       <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687817003?gh_jid=7687817003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II - Behavioral Security Products at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7679778003?gh_jid=7679778003</link>
-      <description>New grad role at Abnormal Security in Remote - UK. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 25 May 2026 04:03:10 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7679778003?gh_jid=7679778003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7612697003?gh_jid=7612697003</link>
-      <description>New grad role at Abnormal Security in Remote - USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 25 May 2026 04:01:34 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7612697003?gh_jid=7612697003</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 - Backend - Behavioral Event Security Products at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7548468003?gh_jid=7548468003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Mon, 25 May 2026 04:00:13 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7548468003?gh_jid=7548468003</guid>
     </item>
   </channel>
 </rss>
