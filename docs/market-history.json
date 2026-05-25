@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-25T09:07:28.417913+00:00",
+    "last_updated": "2026-05-25T12:46:36.760951+00:00",
     "total_snapshots": 80,
     "date_range": {
       "start": "2026-03-05",
@@ -4355,11 +4355,11 @@
     },
     {
       "date": "2026-05-25",
-      "total_jobs": 1383,
+      "total_jobs": 1376,
       "categories": {},
       "tiers": {
-        "unicorn": 635,
-        "other": 599,
+        "other": 590,
+        "unicorn": 637,
         "faang_plus": 149
       },
       "top_companies": [
@@ -4381,7 +4381,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 33
+          "jobs": 32
         },
         {
           "company": "Glean",
@@ -4389,7 +4389,7 @@
         },
         {
           "company": "Anthropic",
-          "jobs": 26
+          "jobs": 28
         },
         {
           "company": "Affirm",
@@ -4404,9 +4404,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 242,
-      "avg_jobs_per_company": 5.71,
-      "timestamp": "2026-05-25T09:07:28.416937+00:00"
+      "unique_companies": 245,
+      "avg_jobs_per_company": 5.62,
+      "timestamp": "2026-05-25T12:46:36.760080+00:00"
     }
   ]
 }
