@@ -71,9 +71,40 @@ function TopBar({ tab, setTab }) {
       {/* Right meta */}
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 14, padding: '0 14px', fontSize: 11, color: '#6e6e6e' }}>
         <LiveStamp />
+        <SponsorLink />
         <span style={{ border: '1px solid #2a2a2a', padding: '2px 6px', color: '#e8e8e8' }}>F1 HELP</span>
       </div>
     </div>
+  );
+}
+
+function SponsorLink() {
+  const [hover, setHover] = useStateApp(false);
+  return (
+    <a
+      href="https://buymeacoffee.com/ritesh.rana"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Support the maintainer on Buy Me a Coffee"
+      aria-label="Sponsor on Buy Me a Coffee (opens in a new tab)"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      onFocus={() => setHover(true)}
+      onBlur={() => setHover(false)}
+      style={{
+        display: 'inline-flex', alignItems: 'center', gap: 6,
+        border: '1px solid #ff9d3d',
+        background: hover ? '#1a1407' : 'transparent',
+        padding: '2px 8px',
+        color: '#ff9d3d',
+        textDecoration: 'none',
+        fontWeight: 600, letterSpacing: 0.5,
+        transition: 'background 120ms ease',
+      }}
+    >
+      <span aria-hidden="true">☕</span>
+      <span>SPONSOR</span>
+    </a>
   );
 }
 
