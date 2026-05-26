@@ -132,6 +132,11 @@ function mapJob(j) {
     dl:      addDays(j.posted_at, 90),       // synthetic 90-day window
     type:    deriveType(j),
     posted:  ageString(j.posted_at),
+    // Raw timestamp for chronological sort. ageString() is for display only;
+    // sorting on its output yields lexicographic order ("1d" < "1w" < "2d" …)
+    // rather than recency. 0 here means "no timestamp" — those rows sort last
+    // under the descending (newest-first) default.
+    postedTs: j.posted_at ? new Date(j.posted_at).getTime() || 0 : 0,
     level:   'entry',
     desc:    (j.full_description && j.full_description.length > 60)
                ? j.full_description

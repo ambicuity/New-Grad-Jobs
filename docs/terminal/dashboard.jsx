@@ -73,7 +73,7 @@ function DashboardDirection() {
     if (sortKey === 'deadline') out.sort((a,b) => dir*(daysLeft(a.dl) - daysLeft(b.dl)));
     if (sortKey === 'comp')     out.sort((a,b) => dir*(b.comp[1] - a.comp[1]));
     if (sortKey === 'co')       out.sort((a,b) => dir*a.co.localeCompare(b.co));
-    if (sortKey === 'posted')   out.sort((a,b) => dir*a.posted.localeCompare(b.posted));
+    if (sortKey === 'posted')   out.sort((a,b) => dir*(b.postedTs - a.postedTs));
     return out;
   }, [preCompanyFiltered, filters.company, sortKey, sortDir]);
 
