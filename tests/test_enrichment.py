@@ -14,7 +14,7 @@ Tests cover:
 import math
 import os
 import sys
-from datetime import date, datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 import pytest
