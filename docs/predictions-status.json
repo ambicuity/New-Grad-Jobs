@@ -1,12 +1,17 @@
 {
-  "state": "already_generated",
-  "message": "Predictions were already generated on 2026-05-25.",
-  "updated_at": "2026-05-25T23:10:38.138063+00:00",
+  "state": "generation_failed",
+  "message": "Gemini API returned HTTP 404.",
+  "updated_at": "2026-05-26T00:19:22.497504+00:00",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
-  "available_history_snapshots": null,
+  "available_history_snapshots": 81,
   "prediction_artifact": {
     "path": "docs/predictions.json",
     "exists": true
+  },
+  "details": {
+    "http_status": 404,
+    "model": "gemini-3.1-flash-lite-preview",
+    "response_snippet": "{   \"error\": {     \"code\": 404,     \"message\": \"This model models/gemini-3.1-flash-lite-preview is no longer available. Please update your code to use a newer model for the latest features and improvements.\",     \"status\": \"NOT_FOUND\"   } }"
   }
 }
