@@ -27,7 +27,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterator, List, Optional, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
@@ -2460,6 +2460,29 @@ def get_iso_date(posted_at: Any) -> str:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
 
+
+def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
+    """Yield normalized category IDs from enriched or legacy job category data."""
+    if not isinstance(job, dict):
+        return
+
+    category_id = get_nested_value(job, 'category.id')
+    if isinstance(category_id, str):
+        normalized = category_id.strip()
+        if normalized:
+            yield normalized
+            return
+
+    legacy_categories = job.get('categories', [])
+    if not isinstance(legacy_categories, list):
+        return
+
+    for category in legacy_categories:
+        if isinstance(category, str):
+            normalized = category.strip()
+            if normalized:
+                yield normalized
+
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
     """Generate JSON data structure for jobs"""
 
@@ -2524,12 +2547,11 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Create today's snapshot
     today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
-
     # Count jobs by category
     category_counts = Counter()
     for job in jobs:
-        for category in job.get('categories', []):
-            category_counts[category] += 1
+        for category_id in iter_category_ids(job):
+            category_counts[category_id] += 1
 
     # Count jobs by tier
     tier_counts = Counter()

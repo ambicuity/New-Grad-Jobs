@@ -48,14 +48,14 @@ class TestSaveMarketHistoryStructure:
             {
                 'company': 'Google',
                 'categories': ['swe'],
-                'company_tier': {'tier': 'faang-plus'}
+                'company_tier': {'tier': 'faang_plus'}
             }
         ]
 
         update_jobs.save_market_history(jobs)
 
         assert os.path.exists(self.history_path)
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         assert 'meta' in data
@@ -77,7 +77,7 @@ class TestSaveMarketHistoryStructure:
         jobs = [{'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         meta = data['meta']
@@ -90,10 +90,10 @@ class TestSaveMarketHistoryStructure:
 
     def test_snapshot_date_format(self):
         """Snapshot date uses YYYY-MM-DD format."""
-        jobs = [{'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs = [{'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot_date = data['snapshots'][0]['date']
@@ -125,17 +125,58 @@ class TestCategoryAndTierCounting:
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def test_counts_categories_correctly(self):
-        """Categories are counted across all jobs."""
+    def test_counts_categories_correctly_from_singular_category_field(self):
+        """Categories are counted from the enriched singular category field."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe', 'ml'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Google', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Stripe', 'category': {'id': 'data_ml'}, 'company_tier': {'tier': 'unicorn'}},
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {'software_engineering': 2, 'data_ml': 1}
+
+    def test_prefers_singular_category_field_over_legacy_categories_list(self):
+        """Regression guard: enriched jobs should not double-count legacy categories lists."""
+        jobs = [
+            {
+                'company': 'Google',
+                'category': {'id': 'software_engineering'},
+                'categories': ['data_ml', 'product'],
+                'company_tier': {'tier': 'faang_plus'},
+            },
+            {
+                'company': 'Stripe',
+                'category': {'id': 'data_ml'},
+                'categories': ['software_engineering'],
+                'company_tier': {'tier': 'unicorn'},
+            },
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {'software_engineering': 1, 'data_ml': 1}
+
+    def test_falls_back_to_legacy_categories_list_when_category_missing(self):
+        """Legacy category lists still count when enriched category data is absent."""
+        jobs = [
+            {'company': 'Google', 'categories': ['swe', 'ml'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
@@ -143,38 +184,102 @@ class TestCategoryAndTierCounting:
         assert categories['ml'] == 1
         assert categories['data'] == 1
 
-    def test_counts_tiers_correctly(self):
-        """Company tiers are counted correctly."""
+    def test_falls_back_to_legacy_categories_when_category_payload_is_invalid(self):
+        """Legacy category lists still count when enriched category payloads are invalid."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}},
-            {'company': 'Unknown Startup', 'categories': ['swe'], 'company_tier': {'tier': 'other'}},
+            {
+                'company': 'Google',
+                'category': {'id': None},
+                'categories': ['swe'],
+                'company_tier': {'tier': 'faang_plus'},
+            },
+            {
+                'company': 'Meta',
+                'category': {},
+                'categories': ['data_ml'],
+                'company_tier': {'tier': 'faang_plus'},
+            },
+            {
+                'company': 'Stripe',
+                'category': {'id': ''},
+                'categories': ['product'],
+                'company_tier': {'tier': 'unicorn'},
+            },
+            {
+                'company': 'Datadog',
+                'category': None,
+                'categories': ['infrastructure_sre'],
+                'company_tier': {'tier': 'other'},
+            },
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {
+            'swe': 1,
+            'data_ml': 1,
+            'product': 1,
+            'infrastructure_sre': 1,
+        }
+
+    def test_counts_tiers_correctly(self):
+        """Company tiers are counted correctly."""
+        jobs = [
+            {'company': 'Google', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Stripe', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'unicorn'}},
+            {'company': 'Unknown Startup', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'other'}},
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         tiers = data['snapshots'][0]['tiers']
-        assert tiers['faang-plus'] == 2
+        assert tiers['faang_plus'] == 2
         assert tiers['unicorn'] == 1
         assert tiers['other'] == 1
 
     def test_missing_categories_empty(self):
-        """Jobs without categories field result in empty category counts."""
+        """Jobs without category data result in empty category counts."""
         jobs = [
-            {'company': 'Google', 'company_tier': {'tier': 'faang-plus'}},  # no categories
+            {'company': 'Google', 'company_tier': {'tier': 'faang_plus'}},  # no category data
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         categories = data['snapshots'][0]['categories']
         assert categories == {}
+
+    def test_ignores_malformed_category_shapes(self):
+        """Malformed category payloads are ignored instead of crashing category counting."""
+        jobs = [
+            {'company': 'Google', 'category': {'id': None}, 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'category': [], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Stripe', 'categories': 'swe', 'company_tier': {'tier': 'unicorn'}},
+        ]
+
+        update_jobs.save_market_history(jobs)
+
+        with open(self.history_path, encoding='utf-8') as f:
+            data = json.load(f)
+
+        categories = data['snapshots'][0]['categories']
+        assert categories == {}
+
+    def test_iter_category_ids_ignores_non_dict_job(self):
+        """Non-dict job payloads are skipped without raising AttributeError."""
+        assert list(update_jobs.iter_category_ids(None)) == []
+        assert list(update_jobs.iter_category_ids("not a job")) == []
+        assert list(update_jobs.iter_category_ids(['software_engineering'])) == []
 
     def test_missing_tier_defaults_to_other(self):
         """Jobs without tier default to 'other'."""
@@ -185,7 +290,7 @@ class TestCategoryAndTierCounting:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         tiers = data['snapshots'][0]['tiers']
@@ -223,7 +328,7 @@ class TestTopCompanies:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -232,17 +337,17 @@ class TestTopCompanies:
     def test_top_companies_sorted_by_count(self):
         """Top companies are sorted by job count descending."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Google', 'categories': ['data'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Google', 'categories': ['data'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
             {'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -254,15 +359,15 @@ class TestTopCompanies:
     def test_unique_companies_count(self):
         """Unique companies count is accurate."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         unique_companies = data['snapshots'][0]['unique_companies']
@@ -271,15 +376,15 @@ class TestTopCompanies:
     def test_avg_jobs_per_company_calculation(self):
         """Average jobs per company is calculated correctly."""
         jobs = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Google', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         avg_jobs = data['snapshots'][0]['avg_jobs_per_company']
@@ -344,10 +449,10 @@ class TestHistoryRetention:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             json.dump(old_history, f)
 
-        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         # Should have removed the 100-day-old snapshot
@@ -358,17 +463,17 @@ class TestHistoryRetention:
     def test_updates_existing_snapshot_for_today(self):
         """If today's snapshot exists, it is updated rather than duplicated."""
         # First call
-        jobs_v1 = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs_v1 = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs_v1)
 
         # Second call on same day with different data
         jobs_v2 = [
-            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}},
-            {'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang-plus'}},
+            {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
+            {'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
         ]
         update_jobs.save_market_history(jobs_v2)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         # Should have only one snapshot with updated data
@@ -421,10 +526,10 @@ class TestHistoryRetention:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             json.dump(old_history, f)
 
-        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         dates = [s['date'] for s in data['snapshots']]
@@ -459,7 +564,7 @@ class TestFileHandling:
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs)
 
         assert os.path.exists(self.history_path)
@@ -470,11 +575,11 @@ class TestFileHandling:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             f.write("{invalid json")
 
-        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang-plus'}}]
+        jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
         update_jobs.save_market_history(jobs)
 
         # Should recover and create new history
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         assert len(data['snapshots']) == 1
@@ -486,7 +591,7 @@ class TestFileHandling:
         jobs = []
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot = data['snapshots'][0]
@@ -505,7 +610,7 @@ class TestFileHandling:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         top_companies = data['snapshots'][0]['top_companies']
@@ -525,7 +630,7 @@ class TestFileHandling:
 
         update_jobs.save_market_history(jobs)
 
-        with open(self.history_path, 'r', encoding='utf-8') as f:
+        with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
 
         snapshot = data['snapshots'][0]
@@ -597,7 +702,7 @@ class TestSaveMarketHistoryDeterminism:
 
         with patch("update_jobs.os.path.join", side_effect=patched_join):
             update_jobs.save_market_history(
-                [{"company": "Google", "categories": ["swe"], "company_tier": {"tier": "faang-plus"}}]
+                [{"company": "Google", "categories": ["swe"], "company_tier": {"tier": "faang_plus"}}]
             )
 
         with open(history_path, "r", encoding="utf-8") as f:
@@ -613,8 +718,8 @@ class TestSaveMarketHistoryDeterminism:
         monkeypatch.setattr(update_jobs, "datetime", self._fixed_datetime_class(self.FIXED_NOW))
 
         jobs = [
-            {"company": "Google", "categories": ["swe", "ml"], "company_tier": {"tier": "faang-plus"}},
-            {"company": "Meta", "categories": ["swe"], "company_tier": {"tier": "faang-plus"}},
+            {"company": "Google", "categories": ["swe", "ml"], "company_tier": {"tier": "faang_plus"}},
+            {"company": "Meta", "categories": ["swe"], "company_tier": {"tier": "faang_plus"}},
             {"company": "Stripe", "categories": ["data"], "company_tier": {"tier": "unicorn"}},
         ]
 
@@ -642,4 +747,4 @@ class TestSaveMarketHistoryDeterminism:
         assert snapshot["date"] == "2026-04-03"
         assert snapshot["timestamp"] == self.FIXED_NOW.isoformat()
         assert snapshot["categories"] == {"swe": 2, "ml": 1, "data": 1}
-        assert snapshot["tiers"] == {"faang-plus": 2, "unicorn": 1}
+        assert snapshot["tiers"] == {"faang_plus": 2, "unicorn": 1}
