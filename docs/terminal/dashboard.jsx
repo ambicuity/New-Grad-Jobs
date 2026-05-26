@@ -22,6 +22,7 @@ function DashboardDirection() {
   const [q, setQ] = useState2('');
   const [filters, setFilters] = useState2({
     type: new Set(), rmt: new Set(), visa: null, cohort: new Set(['26']), size: new Set(),
+    company: new Set(),
   });
   const [sortKey, setSortKey] = useState2('deadline');
   const [sortDir, setSortDir] = useState2(1);
@@ -45,8 +46,12 @@ function DashboardDirection() {
   });
   const setVisa = (val) => setFilters(f => ({ ...f, visa: f.visa === val ? null : val }));
 
-  const filtered = useMemo2(() => {
-    let out = NGJOBS.filter(j => {
+  // Pre-company filter: applies every facet EXCEPT company. Used as the source
+  // for the HIRING NOW sidebar so the list of companies doesn't collapse to
+  // just the selected company — users can still switch between companies even
+  // after picking one.
+  const preCompanyFiltered = useMemo2(() => {
+    return NGJOBS.filter(j => {
       if (filters.type.size && !filters.type.has(j.type)) return false;
       if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;
       if (filters.visa !== null && j.visa !== filters.visa) return false;
@@ -58,13 +63,19 @@ function DashboardDirection() {
       }
       return true;
     });
+  }, [filters.type, filters.rmt, filters.visa, filters.cohort, filters.size, q]);
+
+  const filtered = useMemo2(() => {
+    let out = filters.company.size
+      ? preCompanyFiltered.filter(j => filters.company.has(j.co))
+      : preCompanyFiltered.slice();
     const dir = sortDir;
     if (sortKey === 'deadline') out.sort((a,b) => dir*(daysLeft(a.dl) - daysLeft(b.dl)));
     if (sortKey === 'comp')     out.sort((a,b) => dir*(b.comp[1] - a.comp[1]));
     if (sortKey === 'co')       out.sort((a,b) => dir*a.co.localeCompare(b.co));
     if (sortKey === 'posted')   out.sort((a,b) => dir*a.posted.localeCompare(b.posted));
     return out;
-  }, [filters, q, sortKey, sortDir]);
+  }, [preCompanyFiltered, filters.company, sortKey, sortDir]);
 
   useEffect2(() => {
     if (!filtered.find(j => j.id === selectedId) && filtered[0]) setSelectedId(filtered[0].id);
@@ -125,12 +136,14 @@ function DashboardDirection() {
     return () => window.removeEventListener('keydown', onKey);
   }, [filtered, selectedId, saved, sortKey, helpOpen]);
 
-  // company-frequency for hot-companies widget
+  // company-frequency for the HIRING NOW widget. Derived from the
+  // pre-company filter so picking a company doesn't collapse the list —
+  // the user can still switch between companies after clicking one.
   const coCounts = useMemo2(() => {
     const m = new Map();
-    filtered.forEach(j => m.set(j.co, (m.get(j.co) || 0) + 1));
+    preCompanyFiltered.forEach(j => m.set(j.co, (m.get(j.co) || 0) + 1));
     return [...m.entries()].sort((a,b) => b[1]-a[1]);
-  }, [filtered]);
+  }, [preCompanyFiltered]);
 
   // Deadline buckets
   const buckets = useMemo2(() => {
@@ -216,12 +229,34 @@ function DashboardDirection() {
               <span style={{ color: BBG.acc }}>{coCounts.length}</span>
             </div>
             <div style={{ maxHeight: 220, overflowY: 'auto' }}>
-              {coCounts.map(([co, n]) => (
-                <div key={co} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 11, padding: '1px 0' }}>
-                  <span style={{ color: BBG.ink }}>{co}</span>
-                  <span style={{ color: BBG.acc }}>{n}</span>
-                </div>
-              ))}
+              {coCounts.map(([co, n]) => {
+                const active = filters.company.has(co);
+                return (
+                  <div
+                    key={co}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={active}
+                    title={active ? `clear filter: ${co}` : `filter to ${co}`}
+                    onClick={() => toggleSet('company', co)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleSet('company', co);
+                      }
+                    }}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      fontSize: 11, padding: '1px 4px', cursor: 'pointer',
+                      background: active ? BBG.panel2 : 'transparent',
+                      borderLeft: `2px solid ${active ? BBG.acc : 'transparent'}`,
+                    }}
+                  >
+                    <span style={{ color: active ? BBG.acc : BBG.ink }}>{co}</span>
+                    <span style={{ color: BBG.acc }}>{n}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
