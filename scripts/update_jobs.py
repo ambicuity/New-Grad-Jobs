@@ -2463,6 +2463,9 @@ def get_iso_date(posted_at: Any) -> str:
 
 def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
     """Yield normalized category IDs from enriched or legacy job category data."""
+    if not isinstance(job, dict):
+        return
+
     category_id = get_nested_value(job, 'category.id')
     if isinstance(category_id, str):
         normalized = category_id.strip()
