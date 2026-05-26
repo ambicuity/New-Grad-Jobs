@@ -24,7 +24,7 @@ function DashboardDirection() {
     type: new Set(), rmt: new Set(), visa: null, cohort: new Set(['26']), size: new Set(),
     company: new Set(),
   });
-  const [sortKey, setSortKey] = useState2('deadline');
+  const [sortKey, setSortKey] = useState2('posted');
   const [sortDir, setSortDir] = useState2(1);
   const [selectedId, setSelectedId] = useState2(NGJOBS[5].id);
   const [saved, setSaved] = useState2(new Set(['ant-mlr-26','crs-swe-26']));
@@ -126,7 +126,7 @@ function DashboardDirection() {
         }
       } else if (e.key === 'F2') {
         e.preventDefault();
-        const keys = ['deadline','comp','co','posted'];
+        const keys = ['posted','deadline','comp','co'];
         const next = keys[(keys.indexOf(sortKey) + 1) % keys.length];
         setSortKey(next);
         flashToast(`sort: ${next}`, BBG.acc2);
@@ -387,7 +387,7 @@ function DashboardDirection() {
               ['↑ ↓ (or j k)', 'navigate jobs'],
               ['⏎',     'open application'],
               ['s / F3', 'save toggle'],
-              ['F2',    'cycle sort: deadline → comp → co → posted'],
+              ['F2',    'cycle sort: posted → deadline → comp → co'],
               ['?',     'show this help'],
             ].map(([k, v]) => (
               <div key={k} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', padding: '4px 0', fontSize: 12 }}>
