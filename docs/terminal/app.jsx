@@ -16,12 +16,13 @@ function NGApp() {
     <div style={{
       width: '100%', height: '100%', background: '#000', color: '#e8e8e8',
       fontFamily: '"JetBrains Mono", ui-monospace, monospace',
-      display: 'grid', gridTemplateRows: 'auto 1fr', overflow: 'hidden',
+      display: 'grid', gridTemplateRows: 'auto 1fr auto', overflow: 'hidden',
     }}>
       <TopBar tab={tab} setTab={setTab} />
       <div style={{ minHeight: 0, overflow: 'hidden' }}>
         {tab === 'hiring' ? <DashboardDirection /> : <ContributorsView />}
       </div>
+      <SiteFooter />
     </div>
   );
 }
@@ -75,6 +76,69 @@ function TopBar({ tab, setTab }) {
         <span style={{ border: '1px solid #2a2a2a', padding: '2px 6px', color: '#e8e8e8' }}>F1 HELP</span>
       </div>
     </div>
+  );
+}
+
+function SiteFooter() {
+  // Bottom-right footer block — adapted from a foorilla-style three-section
+  // layout (nav links / socials / version+copyright) to our terminal palette.
+  // Right-aligned within a thin row beneath the tab-level status bar so it
+  // doesn't overlap the dense main content above.
+  const REPO = 'https://github.com/ambicuity/New-Grad-Jobs';
+  const links = [
+    { href: REPO,                                    label: 'Repo',   ext: true },
+    { href: `${REPO}/blob/main/README.md`,           label: 'README', ext: true },
+    { href: `${REPO}/issues`,                        label: 'Issues', ext: true },
+    { href: 'jobs.json',                             label: 'API',    ext: false, title: 'Public JSON feed of all jobs' },
+    { href: 'feed.xml',                              label: 'RSS',    ext: false },
+    { href: `${REPO}/actions/workflows/update-jobs.yml`, label: 'Status', ext: true, title: 'Scraper workflow runs' },
+  ];
+  const socials = [
+    { href: 'https://github.com/ambicuity',          label: 'GH', title: 'Ritesh Rana on GitHub' },
+    { href: 'https://buymeacoffee.com/ritesh.rana',  label: 'BMC', title: 'Buy Me a Coffee' },
+  ];
+  return (
+    <div style={{
+      display: 'flex', justifyContent: 'flex-end',
+      borderTop: '1px solid #2a2a2a', background: '#0a0a0a',
+      padding: '4px 14px', gap: 14,
+      fontSize: 10, color: '#6e6e6e', letterSpacing: 0.3, flexWrap: 'wrap',
+    }}>
+      <FooterRow items={links} />
+      <FooterRow items={socials} />
+      <span>
+        <span title="Continuously deployed from main">rolling · main</span>
+        {' · '}Made with <span aria-hidden="true">☕ + ♥️</span>
+        {' · '}© 2026{' '}
+        <a href="https://github.com/ambicuity" target="_blank" rel="noopener noreferrer"
+           style={{ color: '#6e6e6e', textDecoration: 'none', borderBottom: '1px dotted #2a2a2a' }}>
+          ambicuity
+        </a>
+      </span>
+    </div>
+  );
+}
+
+function FooterRow({ items }) {
+  return (
+    <span>
+      {items.map((it, i) => (
+        <span key={it.label}>
+          <a
+            href={it.href}
+            target={it.ext === false ? undefined : '_blank'}
+            rel={it.ext === false ? undefined : 'noopener noreferrer'}
+            title={it.title || it.label}
+            style={{ color: '#6e6e6e', textDecoration: 'none', borderBottom: '1px dotted #2a2a2a' }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#ff9d3d'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = '#6e6e6e'; }}
+          >
+            {it.label}
+          </a>
+          {i < items.length - 1 ? ' · ' : ''}
+        </span>
+      ))}
+    </span>
   );
 }
 
