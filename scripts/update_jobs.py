@@ -2001,7 +2001,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     print(f"  ⏭️  Google '{search_term}': skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown")
                     break
 
-                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=DEFAULT_TIMEOUT)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 403:
                     admitted = SOURCE_COOLDOWN.try_admit(url)
                     if admitted:
