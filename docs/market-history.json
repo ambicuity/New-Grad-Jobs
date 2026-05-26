@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-26T17:47:40.235306+00:00",
+    "last_updated": "2026-05-26T18:47:52.491349+00:00",
     "total_snapshots": 81,
     "date_range": {
       "start": "2026-03-05",
@@ -4410,12 +4410,20 @@
     },
     {
       "date": "2026-05-26",
-      "total_jobs": 1332,
-      "categories": {},
+      "total_jobs": 1351,
+      "categories": {
+        "software_engineering": 879,
+        "data_ml": 133,
+        "data_engineering": 26,
+        "other": 111,
+        "infrastructure_sre": 176,
+        "hardware": 17,
+        "quant_finance": 9
+      },
       "tiers": {
-        "other": 541,
-        "unicorn": 640,
-        "faang_plus": 151
+        "unicorn": 638,
+        "other": 568,
+        "faang_plus": 145
       },
       "top_companies": [
         {
@@ -4436,7 +4444,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 30
+          "jobs": 31
         },
         {
           "company": "Glean",
@@ -4451,17 +4459,17 @@
           "jobs": 28
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Accenture",
           "jobs": 26
         },
         {
-          "company": "Stripe",
-          "jobs": 18
+          "company": "Northrop Grumman",
+          "jobs": 23
         }
       ],
       "unique_companies": 235,
-      "avg_jobs_per_company": 5.67,
-      "timestamp": "2026-05-26T17:47:40.234542+00:00"
+      "avg_jobs_per_company": 5.75,
+      "timestamp": "2026-05-26T18:47:52.490449+00:00"
     }
   ]
 }
