@@ -108,7 +108,7 @@ function SiteFooter() {
       <FooterRow items={socials} />
       <span>
         <span title="Continuously deployed from main">rolling · main</span>
-        {' · '}Made with <span aria-hidden="true">☕ + ♥️</span>
+        {' · '}Made with <span aria-hidden="true">♥️</span>
         {' · '}© 2026{' '}
         <a href="https://github.com/ambicuity" target="_blank" rel="noopener noreferrer"
            style={{ color: '#6e6e6e', textDecoration: 'none', borderBottom: '1px dotted #2a2a2a' }}>
