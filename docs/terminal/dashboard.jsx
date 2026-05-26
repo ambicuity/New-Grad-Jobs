@@ -27,7 +27,12 @@ function DashboardDirection() {
   const [sortKey, setSortKey] = useState2('posted');
   const [sortDir, setSortDir] = useState2(1);
   const [selectedId, setSelectedId] = useState2(NGJOBS[5].id);
-  const [saved, setSaved] = useState2(new Set(['ant-mlr-26','crs-swe-26']));
+  // Saved-job IDs are user-driven (press S, or click the ☆ in a row). The
+  // previous seed (`['ant-mlr-26','crs-swe-26']`) was synthetic-mock cruft
+  // and never matched any real id in `docs/jobs.json`, so toggling the
+  // SAVED filter on a fresh load yielded `0 / N results`. Start empty.
+  const [saved, setSaved] = useState2(new Set());
+  const [savedOnly, setSavedOnly] = useState2(false);
   const [toast, setToast] = useState2(null);
   const [helpOpen, setHelpOpen] = useState2(false);
   const searchRef = useRef2(null);
@@ -52,6 +57,7 @@ function DashboardDirection() {
   // after picking one.
   const preCompanyFiltered = useMemo2(() => {
     return NGJOBS.filter(j => {
+      if (savedOnly && !saved.has(j.id)) return false;
       if (filters.type.size && !filters.type.has(j.type)) return false;
       if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;
       if (filters.visa !== null && j.visa !== filters.visa) return false;
@@ -63,7 +69,7 @@ function DashboardDirection() {
       }
       return true;
     });
-  }, [filters.type, filters.rmt, filters.visa, filters.cohort, filters.size, q]);
+  }, [filters.type, filters.rmt, filters.visa, filters.cohort, filters.size, q, savedOnly, saved]);
 
   const filtered = useMemo2(() => {
     let out = filters.company.size
@@ -406,8 +412,35 @@ function DashboardDirection() {
       }}>
         <span>STATUS: <span style={{ color: BBG.ok }}>OK</span></span>
         <span>QUERY: <span style={{ color: BBG.ink }}>{filtered.length}</span></span>
-        <span>SAVED: <span style={{ color: BBG.acc }}>{saved.size}</span></span>
-        <span>SEL: <span style={{ color: BBG.ink }}>{selected ? selected.id : '—'}</span></span>
+        <span
+          role="button"
+          tabIndex={0}
+          aria-pressed={savedOnly}
+          title={savedOnly
+            ? 'showing only saved jobs — click to clear'
+            : (saved.size ? `show only your ${saved.size} saved job${saved.size === 1 ? '' : 's'}` : 'no saved jobs yet')}
+          onClick={() => {
+            if (saved.size === 0) { flashToast('no saved jobs', BBG.warn); return; }
+            setSavedOnly(v => !v);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              if (saved.size === 0) { flashToast('no saved jobs', BBG.warn); return; }
+              setSavedOnly(v => !v);
+            }
+          }}
+          style={{
+            cursor: 'pointer',
+            padding: '0 4px',
+            background: savedOnly ? BBG.acc : 'transparent',
+            color: savedOnly ? '#000' : BBG.dim,
+            fontWeight: savedOnly ? 700 : 400,
+            transition: 'background 120ms ease',
+          }}
+        >
+          SAVED: <span style={{ color: savedOnly ? '#000' : BBG.acc, fontWeight: 700 }}>{saved.size}</span>
+        </span>
         <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }}>
           <FKey n="/"   l="SEARCH" />
           <FKey n="↑↓"  l="NAV" />
