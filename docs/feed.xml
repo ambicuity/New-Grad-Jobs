@@ -5,8 +5,162 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 19:52:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 21:27:06 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>DevOps Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5146861007?gh_jid=5146861007</link>
+      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 26 May 2026 21:08:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5146861007?gh_jid=5146861007</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Marketing at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5208115008</link>
+      <description>New grad role at Scopely in US - San Francisco, United States; US - Sunnyvale, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 26 May 2026 20:53:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5208115008</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Integrations (Data and Systems) at Fivetran</title>
+      <link>https://www.fivetran.com/careers/job?gh_jid=7668146003</link>
+      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:47:38 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7668146003</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Delivery Platform  at Squarespace</title>
+      <link>http://www.squarespace.com/about/careers?gh_jid=7789058</link>
+      <description>New grad role at Squarespace in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:37:32 +0000</pubDate>
+      <guid isPermaLink="true">http://www.squarespace.com/about/careers?gh_jid=7789058</guid>
+    </item>
+    <item>
+      <title>Application Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
+    </item>
+    <item>
+      <title>Data Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5120884007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5120884007</guid>
+    </item>
+    <item>
+      <title>Exceptional Software Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
+      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
+    </item>
+    <item>
+      <title>Infrastructure Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
+    </item>
+    <item>
+      <title>Network Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4870731007</link>
+      <description>New grad role at xAI in Memphis, TN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4870731007</guid>
+    </item>
+    <item>
+      <title>Network Engineer - AI/HPC at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4946691007</link>
+      <description>New grad role at xAI in Memphis, TN; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4946691007</guid>
+    </item>
+    <item>
+      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
+    </item>
+    <item>
+      <title>Network Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Azure Government at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Detection &amp; Response at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Governance Risk Compliance at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Platform Security at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Cybersecurity at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4803447007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803447007</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Data at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5124616007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:32:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5124616007</guid>
+    </item>
+    <item>
+      <title>Software Developer, Kubernetes Compute at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7871249?t=gh_src=&amp;gh_jid=7871249</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:26:47 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7871249?t=gh_src=&amp;gh_jid=7871249</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Sensor/Imaging at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
+      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 20:13:11 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Data Warehouse at Amplitude</title>
+      <link>https://job-boards.greenhouse.io/amplitude/jobs/8530635002</link>
+      <description>New grad role at Amplitude in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 19:51:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8530635002</guid>
+    </item>
     <item>
       <title>Mission Software Engineer, EW at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5107573007?gh_jid=5107573007</link>
@@ -76,13 +230,6 @@
       <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 26 May 2026 19:01:31 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Governance Risk Compliance at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
-      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 26 May 2026 19:00:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
     </item>
     <item>
       <title>Software Engineer II, Backend (Repayment UX) at Affirm</title>
@@ -209,153 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 12:32:01 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5134999007?gh_jid=5134999007</guid>
-    </item>
-    <item>
-      <title>Early Career Financial Analyst at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 26 May 2026 12:26:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Forward Deployed Agent Builder at Brex</title>
-      <link>https://www.brex.com/careers/8523203002?gh_jid=8523203002</link>
-      <description>New grad role at Brex in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8523203002?gh_jid=8523203002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Forward Deployed Agent Builder at Brex</title>
-      <link>https://www.brex.com/careers/8523205002?gh_jid=8523205002</link>
-      <description>New grad role at Brex in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8523205002?gh_jid=8523205002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Forward Deployed Agent Builder at Brex</title>
-      <link>https://www.brex.com/careers/8523430002?gh_jid=8523430002</link>
-      <description>New grad role at Brex in Vancouver, British Columbia, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8523430002?gh_jid=8523430002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Forward Deployed Agent Builder at Brex</title>
-      <link>https://www.brex.com/careers/8523177002?gh_jid=8523177002</link>
-      <description>New grad role at Brex in New York, New York, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8523177002?gh_jid=8523177002</guid>
-    </item>
-    <item>
-      <title>Data Analyst II at Brex</title>
-      <link>https://www.brex.com/careers/8463702002?gh_jid=8463702002</link>
-      <description>New grad role at Brex in New York, New York, United States. Category: Data Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:55 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8463702002?gh_jid=8463702002</guid>
-    </item>
-    <item>
-      <title>Data Analyst II at Brex</title>
-      <link>https://www.brex.com/careers/8463696002?gh_jid=8463696002</link>
-      <description>New grad role at Brex in San Francisco, California, United States. Category: Data Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:54 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8463696002?gh_jid=8463696002</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend at Brex</title>
-      <link>https://www.brex.com/careers/8459783002?gh_jid=8459783002</link>
-      <description>New grad role at Brex in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:54 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8459783002?gh_jid=8459783002</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend at Brex</title>
-      <link>https://www.brex.com/careers/8536424002?gh_jid=8536424002</link>
-      <description>New grad role at Brex in New York, New York, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:54 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8536424002?gh_jid=8536424002</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Brex</title>
-      <link>https://www.brex.com/careers/8366850002?gh_jid=8366850002</link>
-      <description>New grad role at Brex in San Francisco, California, United States. Category: Data Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:12:51 +0000</pubDate>
-      <guid isPermaLink="true">https://www.brex.com/careers/8366850002?gh_jid=8366850002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 12:03:49 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, EW at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117734007?gh_jid=5117734007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:56:28 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117734007?gh_jid=5117734007</guid>
-    </item>
-    <item>
-      <title>Product Data Engineer, Autonomous Airpower at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5107205007?gh_jid=5107205007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 26 May 2026 11:51:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5107205007?gh_jid=5107205007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5106220007?gh_jid=5106220007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:50:35 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5106220007?gh_jid=5106220007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:49:01 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Maneuver Dominance  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102918007?gh_jid=5102918007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:48:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102918007?gh_jid=5102918007</guid>
-    </item>
-    <item>
-      <title>Systems Security Engineer (Program Protection) at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 26 May 2026 11:45:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:39:19 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Full-stack at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:29:39 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104521007?gh_jid=5104521007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:25:35 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer, Sensor Integration  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:25:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</guid>
     </item>
   </channel>
 </rss>
