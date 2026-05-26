@@ -11,12 +11,14 @@ Tests cover:
 - get_iso_date(): ISO date string extraction
 """
 
-import sys
-import os
 import math
-import requests
-from datetime import datetime, timedelta, timezone, date
+import os
+import sys
+from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
+
+import pytest
+import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -138,12 +140,15 @@ class TestGetCompanyTier:
         assert result['emoji'] == '🔥'
 
     def test_unicorn_company(self):
-        # Find a unicorn that's in the set
-        from update_jobs import UNICORNS
-        if UNICORNS:
-            company = next(iter(UNICORNS))
-            result = get_company_tier(company)
-            assert result['tier'] == 'unicorn'
+        # `get_company_tier` checks FAANG_PLUS before UNICORNS, so a company in
+        # both sets resolves to 'faang_plus'. Pick from UNICORNS \ FAANG_PLUS and
+        # sort to make the choice deterministic across Python hash seeds.
+        from update_jobs import FAANG_PLUS, UNICORNS
+        unicorn_only = sorted(UNICORNS - FAANG_PLUS)
+        if not unicorn_only:
+            pytest.skip("No unicorns outside FAANG_PLUS configured")
+        result = get_company_tier(unicorn_only[0])
+        assert result['tier'] == 'unicorn'
 
     def test_unknown_company_returns_other(self):
         result = get_company_tier("Obscure Startup XYZ")
@@ -151,18 +156,22 @@ class TestGetCompanyTier:
         assert result['emoji'] == ''
 
     def test_finance_sector_detected(self):
+        # Sort for deterministic selection across Python hash seeds.
         from update_jobs import FINANCE
-        if FINANCE:
-            company = next(iter(FINANCE))
-            result = get_company_tier(company)
-            assert 'finance' in result['sectors']
+        finance_companies = sorted(FINANCE)
+        if not finance_companies:
+            pytest.skip("No FINANCE companies configured")
+        result = get_company_tier(finance_companies[0])
+        assert 'finance' in result['sectors']
 
     def test_defense_sector_detected(self):
+        # Sort for deterministic selection across Python hash seeds.
         from update_jobs import DEFENSE
-        if DEFENSE:
-            company = next(iter(DEFENSE))
-            result = get_company_tier(company)
-            assert 'defense' in result['sectors']
+        defense_companies = sorted(DEFENSE)
+        if not defense_companies:
+            pytest.skip("No DEFENSE companies configured")
+        result = get_company_tier(defense_companies[0])
+        assert 'defense' in result['sectors']
 
     def test_result_always_has_sectors_key(self):
         result = get_company_tier("Nonexistent Corp")
@@ -172,12 +181,12 @@ class TestGetCompanyTier:
     def test_company_can_overlap_tier_and_sector(self):
         """A FAANG+ company that's also in FINANCE should have both."""
         from update_jobs import FAANG_PLUS, FINANCE
-        overlap = FAANG_PLUS & FINANCE
-        if overlap:
-            company = next(iter(overlap))
-            result = get_company_tier(company)
-            assert result['tier'] == 'faang_plus'
-            assert 'finance' in result['sectors']
+        overlap = sorted(FAANG_PLUS & FINANCE)
+        if not overlap:
+            pytest.skip("No FAANG_PLUS ∩ FINANCE overlap configured")
+        result = get_company_tier(overlap[0])
+        assert result['tier'] == 'faang_plus'
+        assert 'finance' in result['sectors']
 
 
 # ---------------------------------------------------------------------------
