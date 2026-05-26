@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 17:27:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 17:47:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Scribe AI Growth  at Commure</title>
+      <link>https://jobs.ashbyhq.com/commure/e4289924-f96a-4c32-ba17-d24041798556</link>
+      <description>New grad role at Commure in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 17:36:21 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/commure/e4289924-f96a-4c32-ba17-d24041798556</guid>
+    </item>
     <item>
       <title>Software Engineer, Ad Formats at OpenAI</title>
       <link>https://jobs.ashbyhq.com/openai/0b212a4a-6709-4da8-b59d-283a9bbf812e</link>
@@ -41,6 +48,13 @@
       <description>New grad role at PlanetScale in San Francisco Bay Area or Remote. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 16:35:07 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/planetscale/jobs/4251150009</guid>
+    </item>
+    <item>
+      <title>Data Engineer -  Wrapped - Fixed Term at Spotify</title>
+      <link>https://jobs.lever.co/spotify/654ff1e6-c91e-4205-a359-42d01c0ac153</link>
+      <description>New grad role at Spotify in New York, NY. Category: Data Engineering</description>
+      <pubDate>Tue, 26 May 2026 16:23:11 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/spotify/654ff1e6-c91e-4205-a359-42d01c0ac153</guid>
     </item>
     <item>
       <title>DevOps Data Engineer at Okta</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 10:43:20 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5145245007?gh_jid=5145245007</guid>
-    </item>
-    <item>
-      <title>Endpoint Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5084914007?gh_jid=5084914007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 10:42:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5084914007?gh_jid=5084914007</guid>
-    </item>
-    <item>
-      <title>Calibration and Quality Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</link>
-      <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 10:32:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
     </item>
   </channel>
 </rss>
