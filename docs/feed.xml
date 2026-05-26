@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 17:01:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 17:27:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Ad Formats at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/0b212a4a-6709-4da8-b59d-283a9bbf812e</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 17:18:15 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/0b212a4a-6709-4da8-b59d-283a9bbf812e</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Tactical Reconnaissance &amp; Strike at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 26 May 2026 17:09:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</guid>
+    </item>
     <item>
       <title>Software Engineer, Monetization Products at Roblox</title>
       <link>https://careers.roblox.com/jobs/7947219?gh_jid=7947219</link>
@@ -268,17 +282,17 @@
     </item>
     <item>
       <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 11:23:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</guid>
-    </item>
-    <item>
-      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</link>
       <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 11:23:45 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</guid>
+    </item>
+    <item>
+      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 26 May 2026 11:23:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</guid>
     </item>
     <item>
       <title>Embedded Software Engineer, Maritime at Anduril Industries</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
       <pubDate>Tue, 26 May 2026 10:32:32 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
-    </item>
-    <item>
-      <title>Early Career Manufacturing Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</link>
-      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 26 May 2026 10:26:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</guid>
-    </item>
-    <item>
-      <title>Training Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5125531007?gh_jid=5125531007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 26 May 2026 10:23:39 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5125531007?gh_jid=5125531007</guid>
     </item>
   </channel>
 </rss>
