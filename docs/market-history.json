@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-26T14:29:19.778547+00:00",
+    "last_updated": "2026-05-26T17:01:06.295373+00:00",
     "total_snapshots": 81,
     "date_range": {
       "start": "2026-03-05",
@@ -4410,12 +4410,12 @@
     },
     {
       "date": "2026-05-26",
-      "total_jobs": 1335,
+      "total_jobs": 1332,
       "categories": {},
       "tiers": {
-        "unicorn": 636,
-        "other": 551,
-        "faang_plus": 148
+        "unicorn": 639,
+        "other": 542,
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -4432,7 +4432,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 43
+          "jobs": 44
         },
         {
           "company": "Boeing",
@@ -4443,25 +4443,25 @@
           "jobs": 30
         },
         {
+          "company": "Affirm",
+          "jobs": 28
+        },
+        {
           "company": "Anthropic",
           "jobs": 28
         },
         {
-          "company": "Affirm",
-          "jobs": 27
-        },
-        {
           "company": "Northrop Grumman",
-          "jobs": 22
+          "jobs": 25
         },
         {
           "company": "Stripe",
           "jobs": 18
         }
       ],
-      "unique_companies": 243,
-      "avg_jobs_per_company": 5.49,
-      "timestamp": "2026-05-26T14:29:19.777788+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.67,
+      "timestamp": "2026-05-26T17:01:06.294569+00:00"
     }
   ]
 }
