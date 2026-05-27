@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-27T17:51:45.352828+00:00",
+    "last_updated": "2026-05-27T19:56:33.376151+00:00",
     "total_snapshots": 82,
     "date_range": {
       "start": "2026-03-05",
@@ -4473,29 +4473,29 @@
     },
     {
       "date": "2026-05-27",
-      "total_jobs": 1370,
+      "total_jobs": 1355,
       "categories": {
-        "software_engineering": 900,
-        "infrastructure_sre": 172,
-        "data_ml": 130,
+        "software_engineering": 875,
+        "data_ml": 131,
         "data_engineering": 23,
-        "other": 122,
-        "hardware": 14,
+        "infrastructure_sre": 172,
+        "other": 130,
+        "hardware": 15,
         "quant_finance": 9
       },
       "tiers": {
-        "unicorn": 631,
-        "other": 603,
-        "faang_plus": 136
+        "faang_plus": 137,
+        "unicorn": 630,
+        "other": 588
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 181
+          "jobs": 179
         },
         {
           "company": "Anduril Industries",
-          "jobs": 164
+          "jobs": 162
         },
         {
           "company": "Waymo",
@@ -4510,29 +4510,29 @@
           "jobs": 31
         },
         {
-          "company": "PwC",
-          "jobs": 29
-        },
-        {
-          "company": "Boeing",
-          "jobs": 29
-        },
-        {
-          "company": "Accenture",
-          "jobs": 28
+          "company": "Northrop Grumman",
+          "jobs": 30
         },
         {
           "company": "Affirm",
           "jobs": 28
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Boeing",
           "jobs": 27
+        },
+        {
+          "company": "Anthropic",
+          "jobs": 26
+        },
+        {
+          "company": "Accenture",
+          "jobs": 22
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 5.96,
-      "timestamp": "2026-05-27T17:51:45.351943+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.92,
+      "timestamp": "2026-05-27T19:56:33.374984+00:00"
     }
   ]
 }
