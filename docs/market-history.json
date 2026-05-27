@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-27T19:56:33.376151+00:00",
+    "last_updated": "2026-05-27T21:54:43.064559+00:00",
     "total_snapshots": 82,
     "date_range": {
       "start": "2026-03-05",
@@ -4473,20 +4473,20 @@
     },
     {
       "date": "2026-05-27",
-      "total_jobs": 1355,
+      "total_jobs": 1319,
       "categories": {
-        "software_engineering": 875,
-        "data_ml": 131,
-        "data_engineering": 23,
-        "infrastructure_sre": 172,
-        "other": 130,
-        "hardware": 15,
-        "quant_finance": 9
+        "data_ml": 130,
+        "software_engineering": 844,
+        "data_engineering": 24,
+        "infrastructure_sre": 164,
+        "other": 133,
+        "hardware": 16,
+        "quant_finance": 8
       },
       "tiers": {
-        "faang_plus": 137,
-        "unicorn": 630,
-        "other": 588
+        "other": 540,
+        "faang_plus": 149,
+        "unicorn": 630
       },
       "top_companies": [
         {
@@ -4503,36 +4503,36 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 45
+          "jobs": 46
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 35
         },
         {
           "company": "Glean",
           "jobs": 31
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 30
+          "company": "Boeing",
+          "jobs": 31
         },
         {
           "company": "Affirm",
           "jobs": 28
         },
         {
-          "company": "Boeing",
-          "jobs": 27
-        },
-        {
           "company": "Anthropic",
-          "jobs": 26
+          "jobs": 24
         },
         {
-          "company": "Accenture",
-          "jobs": 22
+          "company": "Stripe",
+          "jobs": 19
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-05-27T19:56:33.374984+00:00"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 5.79,
+      "timestamp": "2026-05-27T21:54:43.063520+00:00"
     }
   ]
 }
