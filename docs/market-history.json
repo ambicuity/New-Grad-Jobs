@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-27T08:14:04.049056+00:00",
+    "last_updated": "2026-05-27T11:53:44.838014+00:00",
     "total_snapshots": 82,
     "date_range": {
       "start": "2026-03-05",
@@ -4473,20 +4473,20 @@
     },
     {
       "date": "2026-05-27",
-      "total_jobs": 1365,
+      "total_jobs": 1350,
       "categories": {
-        "software_engineering": 883,
-        "data_engineering": 26,
-        "infrastructure_sre": 172,
-        "other": 127,
+        "data_ml": 132,
+        "software_engineering": 863,
+        "data_engineering": 29,
+        "infrastructure_sre": 177,
+        "other": 123,
         "hardware": 17,
-        "data_ml": 131,
         "quant_finance": 9
       },
       "tiers": {
-        "unicorn": 628,
-        "faang_plus": 146,
-        "other": 591
+        "other": 578,
+        "unicorn": 629,
+        "faang_plus": 143
       },
       "top_companies": [
         {
@@ -4507,7 +4507,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 32
+          "jobs": 34
         },
         {
           "company": "Glean",
@@ -4527,12 +4527,12 @@
         },
         {
           "company": "Leidos",
-          "jobs": 20
+          "jobs": 22
         }
       ],
-      "unique_companies": 247,
-      "avg_jobs_per_company": 5.53,
-      "timestamp": "2026-05-27T08:14:04.048285+00:00"
+      "unique_companies": 248,
+      "avg_jobs_per_company": 5.44,
+      "timestamp": "2026-05-27T11:53:44.837203+00:00"
     }
   ]
 }
