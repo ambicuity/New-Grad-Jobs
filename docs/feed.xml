@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2026 21:54:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 23:14:43 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Early Career Electrical Engineer at Anduril Industries</title>
@@ -275,24 +275,17 @@
     </item>
     <item>
       <title>Security Software Engineer at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4648921005</link>
-      <description>New grad role at Tailscale in Remote (Canada). Category: Software Engineering</description>
-      <pubDate>Wed, 27 May 2026 18:06:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4648921005</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer at Tailscale</title>
       <link>https://job-boards.greenhouse.io/tailscale/jobs/4648916005</link>
       <description>New grad role at Tailscale in Remote (United States). Category: Software Engineering</description>
       <pubDate>Wed, 27 May 2026 18:06:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4648916005</guid>
     </item>
     <item>
-      <title>Software Engineer, Networking at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4525229005</link>
-      <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
+      <title>Security Software Engineer at Tailscale</title>
+      <link>https://job-boards.greenhouse.io/tailscale/jobs/4648921005</link>
+      <description>New grad role at Tailscale in Remote (Canada). Category: Software Engineering</description>
       <pubDate>Wed, 27 May 2026 18:06:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4525229005</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4648921005</guid>
     </item>
     <item>
       <title>Software Engineer, Networking at Tailscale</title>
@@ -300,6 +293,13 @@
       <description>New grad role at Tailscale in Remote (United States). Category: Infrastructure &amp; SRE</description>
       <pubDate>Wed, 27 May 2026 18:06:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4525230005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking at Tailscale</title>
+      <link>https://job-boards.greenhouse.io/tailscale/jobs/4525229005</link>
+      <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 27 May 2026 18:06:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4525229005</guid>
     </item>
     <item>
       <title>Product Security Engineer  at Supabase</title>
