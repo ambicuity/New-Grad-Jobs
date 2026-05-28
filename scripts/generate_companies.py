@@ -3,6 +3,16 @@
 Generate company entries to scale to 10,000 companies.
 Creates large batches of company entries for config.yml.
 """
+import argparse
+
+
+def parse_arguments(args=None):
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument('--greenhouse-count', type=int, default=4000)
+    arg_parser.add_argument('--lever-count', type=int, default=1900)
+    arg_parser.add_argument('--workday-count', type=int, default=1300)
+    return arg_parser.parse_args(args)
+
 
 def generate_greenhouse_companies(count=4000, start_id=1):
     """Generate Greenhouse company entries"""
@@ -51,6 +61,7 @@ def generate_greenhouse_companies(count=4000, start_id=1):
 
     return companies[:count]
 
+
 def generate_lever_companies(count=1900, start_id=1):
     """Generate Lever company entries"""
     companies = []
@@ -83,6 +94,7 @@ def generate_lever_companies(count=1900, start_id=1):
             break
 
     return companies[:count]
+
 
 def generate_workday_companies(count=1300, start_id=1):
     """Generate Workday company entries"""
@@ -122,6 +134,7 @@ def generate_workday_companies(count=1300, start_id=1):
 
     return companies[:count]
 
+
 def format_yaml_companies(companies, api_type="greenhouse"):
     """Format companies as YAML"""
     lines = []
@@ -135,18 +148,21 @@ def format_yaml_companies(companies, api_type="greenhouse"):
             lines.append(f'        workday_url: "{company["workday_url"]}"')
     return "\n".join(lines)
 
+
 if __name__ == "__main__":
+    args = parse_arguments()
+
     print("Generating 10K company configuration...")
     print(f"\nGenerating 4,000 Greenhouse companies...")
-    gh_companies = generate_greenhouse_companies(4000)
+    gh_companies = generate_greenhouse_companies(args.greenhouse_count)
     print(f"Generated {len(gh_companies)} Greenhouse companies")
 
     print(f"\nGenerating 1,900 Lever companies...")
-    lever_companies = generate_lever_companies(1900)
+    lever_companies = generate_lever_companies(args.lever_count)
     print(f"Generated {len(lever_companies)} Lever companies")
 
     print(f"\nGenerating 1,300 Workday companies...")
-    wd_companies = generate_workday_companies(1300)
+    wd_companies = generate_workday_companies(args.workday_count)
     print(f"Generated {len(wd_companies)} Workday companies")
 
     print(f"\nTotal generated: {len(gh_companies) + len(lever_companies) + len(wd_companies)}")
