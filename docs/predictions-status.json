@@ -1,10 +1,10 @@
 {
   "state": "generation_failed",
   "message": "Gemini API returned HTTP 404.",
-  "updated_at": "2026-05-27T23:14:43.768179+00:00",
+  "updated_at": "2026-05-28T00:19:11.500477+00:00",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
-  "available_history_snapshots": 82,
+  "available_history_snapshots": 83,
   "prediction_artifact": {
     "path": "docs/predictions.json",
     "exists": true
