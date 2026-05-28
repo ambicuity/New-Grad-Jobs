@@ -5,8 +5,78 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2026 19:21:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 21:31:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Early Career Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Broomfield, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 21:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 21:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007</guid>
+    </item>
+    <item>
+      <title>Propulsion Test Infrastructure Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5030310007?gh_jid=5030310007</link>
+      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 28 May 2026 21:12:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5030310007?gh_jid=5030310007</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Inline Mailflow at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7751817003?gh_jid=7751817003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 20:54:51 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7751817003?gh_jid=7751817003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Inline Mailflow at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7749085003?gh_jid=7749085003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 20:52:54 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7749085003?gh_jid=7749085003</guid>
+    </item>
+    <item>
+      <title>Forward Deployed Data Engineer at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8498606002</link>
+      <description>New grad role at ZoomInfo in Remote. Category: Data Engineering</description>
+      <pubDate>Thu, 28 May 2026 20:38:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8498606002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Marketplace Pricing at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7905643</link>
+      <description>New grad role at Waymo in MountainView, CA, United States  . Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 20:08:55 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905643</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Developer Productivity  at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4614706005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 19:50:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4614706005</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Starlink Mobile)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8567634002?gh_jid=8567634002</link>
+      <description>New grad role at SpaceX in Sunnyvale, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 19:46:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8567634002?gh_jid=8567634002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Starlink Mobile) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8568939002?gh_jid=8568939002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 28 May 2026 19:46:49 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8568939002?gh_jid=8568939002</guid>
+    </item>
     <item>
       <title>Software Engineer -  Marketplace Experimentation Platform at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7905680</link>
@@ -253,13 +323,6 @@
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7901924</guid>
     </item>
     <item>
-      <title>Software Engineer, Marketplace Pricing at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905643</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States  . Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905643</guid>
-    </item>
-    <item>
       <title>Software Engineer, ML Inference, Simulation Infrastructure at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7353876</link>
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
@@ -293,69 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7256244</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Evaluation and Test Automation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Pin Infra at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7902131</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7902131</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7259110</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7259110</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Reasoning Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7460969</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7460969</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7858779</link>
-      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7858779</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Quantitative Evaluations at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7466534</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor/Imaging at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7587455</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7587455</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulator Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6562547</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 28 May 2026 17:18:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6562547</guid>
     </item>
   </channel>
 </rss>
