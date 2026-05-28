@@ -1,7 +1,7 @@
 {
-  "state": "generation_failed",
-  "message": "Gemini API returned HTTP 404.",
-  "updated_at": "2026-05-28T00:19:11.500477+00:00",
+  "state": "generated",
+  "message": "Predictions artifact generated successfully.",
+  "updated_at": "2026-05-28T04:49:50.017837+00:00",
   "requires_api_key": true,
   "minimum_history_snapshots": 7,
   "available_history_snapshots": 83,
@@ -10,8 +10,7 @@
     "exists": true
   },
   "details": {
-    "http_status": 404,
     "model": "gemini-3.1-flash-lite-preview",
-    "response_snippet": "{   \"error\": {     \"code\": 404,     \"message\": \"This model models/gemini-3.1-flash-lite-preview is no longer available. Please update your code to use a newer model for the latest features and improvements.\",     \"status\": \"NOT_FOUND\"   } }"
+    "forced": false
   }
 }
