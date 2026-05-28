@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-28T04:49:48.055560+00:00",
+    "last_updated": "2026-05-28T08:40:13.220828+00:00",
     "total_snapshots": 83,
     "date_range": {
       "start": "2026-03-05",
@@ -4536,20 +4536,20 @@
     },
     {
       "date": "2026-05-28",
-      "total_jobs": 1334,
+      "total_jobs": 1328,
       "categories": {
-        "software_engineering": 849,
-        "infrastructure_sre": 169,
-        "other": 140,
+        "software_engineering": 856,
+        "other": 132,
+        "data_ml": 133,
         "data_engineering": 25,
-        "data_ml": 129,
+        "infrastructure_sre": 160,
         "hardware": 16,
         "quant_finance": 6
       },
       "tiers": {
-        "unicorn": 631,
-        "other": 568,
-        "faang_plus": 135
+        "other": 557,
+        "unicorn": 632,
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -4574,15 +4574,15 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 30
-        },
-        {
-          "company": "Boeing",
           "jobs": 29
         },
         {
           "company": "Affirm",
           "jobs": 28
+        },
+        {
+          "company": "Boeing",
+          "jobs": 27
         },
         {
           "company": "Anthropic",
@@ -4593,9 +4593,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 236,
-      "avg_jobs_per_company": 5.65,
-      "timestamp": "2026-05-28T04:49:48.054728+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 5.6,
+      "timestamp": "2026-05-28T08:40:13.219744+00:00"
     }
   ]
 }
