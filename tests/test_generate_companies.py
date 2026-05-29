@@ -6,6 +6,7 @@ These tests validate that companies are correctly generated for Greenhouse,
 Lever and Workday and that argparse arguments are parsed correctly.
 """
 
+import pytest
 import sys
 import os
 
@@ -19,42 +20,39 @@ from generate_companies import (
     parse_arguments,
 )
 
-def test_parse_arguments_default():
+def test_parse_arguments_default() -> None:
     args = parse_arguments([])
     assert args.greenhouse_count == 4000
     assert args.lever_count == 1900
     assert args.workday_count == 1300
 
-def test_parse_arguments_custom():
+def test_parse_arguments_custom() -> None:
     args = parse_arguments(['--greenhouse-count', '100', '--lever-count', '50', '--workday-count', '30'])
     assert args.greenhouse_count == 100
     assert args.lever_count == 50
     assert args.workday_count == 30
 
-def test_parse_arguments_negative():
-    try:
+def test_parse_arguments_negative() -> None:
+    with pytest.raises(SystemExit):
         parse_arguments(['--greenhouse-count', '-100'])
-        assert False, "Expected SystemExit due to negative count"
-    except SystemExit:
-        pass
 
-def test_greenhouse_count():
+def test_greenhouse_count() -> None:
     companies = generate_greenhouse_companies(10)
     assert len(companies) == 10
 
-def test_lever_count():
+def test_lever_count() -> None:
     companies = generate_lever_companies(10)
     assert len(companies) == 10
 
-def test_workday_count():
+def test_workday_count() -> None:
     companies = generate_workday_companies(10)
     assert len(companies) == 10
 
-def test_greenhouse_count_zero():
+def test_greenhouse_count_zero() -> None:
     assert generate_greenhouse_companies(0) == []
 
-def test_lever_count_zero():
+def test_lever_count_zero() -> None:
     assert generate_lever_companies(0) == []
 
-def test_workday_count_zero():
+def test_workday_count_zero() -> None:
     assert generate_workday_companies(0) == []
