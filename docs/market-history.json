@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-05-28T23:00:27.435965+00:00",
-    "total_snapshots": 83,
+    "last_updated": "2026-05-29T00:17:06.869316+00:00",
+    "total_snapshots": 84,
     "date_range": {
       "start": "2026-03-05",
-      "end": "2026-05-28"
+      "end": "2026-05-29"
     }
   },
   "snapshots": [
@@ -4596,6 +4596,69 @@
       "unique_companies": 208,
       "avg_jobs_per_company": 5.73,
       "timestamp": "2026-05-28T23:00:27.434856+00:00"
+    },
+    {
+      "date": "2026-05-29",
+      "total_jobs": 1196,
+      "categories": {
+        "software_engineering": 778,
+        "other": 115,
+        "infrastructure_sre": 142,
+        "data_ml": 124,
+        "data_engineering": 19,
+        "hardware": 12,
+        "quant_finance": 6
+      },
+      "tiers": {
+        "faang_plus": 126,
+        "other": 524,
+        "unicorn": 546
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 180
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 162
+        },
+        {
+          "company": "Waymo",
+          "jobs": 53
+        },
+        {
+          "company": "Glean",
+          "jobs": 31
+        },
+        {
+          "company": "Affirm",
+          "jobs": 29
+        },
+        {
+          "company": "Anthropic",
+          "jobs": 25
+        },
+        {
+          "company": "Accenture",
+          "jobs": 21
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 20
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 19
+        },
+        {
+          "company": "Boeing",
+          "jobs": 19
+        }
+      ],
+      "unique_companies": 203,
+      "avg_jobs_per_company": 5.89,
+      "timestamp": "2026-05-29T00:17:06.868238+00:00"
     }
   ]
 }
