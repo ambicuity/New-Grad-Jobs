@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-29T18:24:08.199527+00:00",
+    "last_updated": "2026-05-29T20:45:17.119310+00:00",
     "total_snapshots": 84,
     "date_range": {
       "start": "2026-03-05",
@@ -4599,20 +4599,20 @@
     },
     {
       "date": "2026-05-29",
-      "total_jobs": 1315,
+      "total_jobs": 1322,
       "categories": {
-        "software_engineering": 888,
-        "infrastructure_sre": 156,
-        "quant_finance": 6,
+        "software_engineering": 887,
         "data_ml": 127,
-        "data_engineering": 24,
-        "other": 99,
+        "infrastructure_sre": 156,
+        "quant_finance": 4,
+        "data_engineering": 27,
+        "other": 106,
         "hardware": 15
       },
       "tiers": {
-        "unicorn": 634,
-        "other": 556,
-        "faang_plus": 125
+        "unicorn": 633,
+        "other": 571,
+        "faang_plus": 118
       },
       "top_companies": [
         {
@@ -4625,7 +4625,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 54
+          "jobs": 55
         },
         {
           "company": "OpenAI",
@@ -4636,29 +4636,29 @@
           "jobs": 31
         },
         {
-          "company": "Accenture",
-          "jobs": 29
+          "company": "Affirm",
+          "jobs": 28
         },
         {
-          "company": "Affirm",
-          "jobs": 29
+          "company": "Accenture",
+          "jobs": 27
+        },
+        {
+          "company": "Boeing",
+          "jobs": 24
         },
         {
           "company": "Anthropic",
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 20
-        },
-        {
           "company": "Abnormal Security",
           "jobs": 19
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 5.69,
-      "timestamp": "2026-05-29T18:24:08.198473+00:00"
+      "unique_companies": 244,
+      "avg_jobs_per_company": 5.42,
+      "timestamp": "2026-05-29T20:45:17.118184+00:00"
     }
   ]
 }
