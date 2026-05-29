@@ -31,6 +31,13 @@ def test_parse_arguments_custom():
     assert args.lever_count == 50
     assert args.workday_count == 30
 
+def test_parse_arguments_negative():
+    try:
+        parse_arguments(['--greenhouse-count', '-100'])
+        assert False, "Expected SystemExit due to negative count"
+    except SystemExit:
+        pass
+
 def test_greenhouse_count():
     companies = generate_greenhouse_companies(10)
     assert len(companies) == 10
@@ -42,3 +49,12 @@ def test_lever_count():
 def test_workday_count():
     companies = generate_workday_companies(10)
     assert len(companies) == 10
+
+def test_greenhouse_count_zero():
+    assert generate_greenhouse_companies(0) == []
+
+def test_lever_count_zero():
+    assert generate_lever_companies(0) == []
+
+def test_workday_count_zero():
+    assert generate_workday_companies(0) == []
