@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-29T11:59:06.015213+00:00",
+    "last_updated": "2026-05-29T15:31:31.705219+00:00",
     "total_snapshots": 84,
     "date_range": {
       "start": "2026-03-05",
@@ -4599,20 +4599,20 @@
     },
     {
       "date": "2026-05-29",
-      "total_jobs": 1202,
+      "total_jobs": 1217,
       "categories": {
-        "infrastructure_sre": 145,
-        "software_engineering": 779,
-        "other": 113,
-        "data_engineering": 20,
-        "data_ml": 124,
+        "software_engineering": 800,
+        "data_ml": 125,
+        "data_engineering": 24,
+        "infrastructure_sre": 146,
+        "other": 101,
         "hardware": 16,
         "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 550,
-        "faang_plus": 119,
-        "other": 533
+        "other": 540,
+        "unicorn": 563,
+        "faang_plus": 114
       },
       "top_companies": [
         {
@@ -4640,6 +4640,10 @@
           "jobs": 24
         },
         {
+          "company": "Boeing",
+          "jobs": 19
+        },
+        {
           "company": "Abnormal Security",
           "jobs": 19
         },
@@ -4648,17 +4652,13 @@
           "jobs": 19
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 18
-        },
-        {
-          "company": "Boeing",
-          "jobs": 18
+          "company": "Leidos",
+          "jobs": 17
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 5.34,
-      "timestamp": "2026-05-29T11:59:06.014155+00:00"
+      "unique_companies": 236,
+      "avg_jobs_per_company": 5.16,
+      "timestamp": "2026-05-29T15:31:31.704354+00:00"
     }
   ]
 }
