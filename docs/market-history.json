@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-29T20:45:17.119310+00:00",
+    "last_updated": "2026-05-29T22:24:11.196478+00:00",
     "total_snapshots": 84,
     "date_range": {
       "start": "2026-03-05",
@@ -4599,29 +4599,29 @@
     },
     {
       "date": "2026-05-29",
-      "total_jobs": 1322,
+      "total_jobs": 1325,
       "categories": {
-        "software_engineering": 887,
-        "data_ml": 127,
-        "infrastructure_sre": 156,
+        "software_engineering": 875,
+        "data_engineering": 29,
+        "data_ml": 128,
+        "infrastructure_sre": 157,
         "quant_finance": 4,
-        "data_engineering": 27,
-        "other": 106,
-        "hardware": 15
+        "other": 116,
+        "hardware": 16
       },
       "tiers": {
-        "unicorn": 633,
+        "unicorn": 632,
         "other": 571,
-        "faang_plus": 118
+        "faang_plus": 122
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 178
+          "jobs": 177
         },
         {
           "company": "Anduril Industries",
-          "jobs": 162
+          "jobs": 160
         },
         {
           "company": "Waymo",
@@ -4629,7 +4629,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 45
+          "jobs": 46
         },
         {
           "company": "Glean",
@@ -4640,12 +4640,12 @@
           "jobs": 28
         },
         {
-          "company": "Accenture",
-          "jobs": 27
+          "company": "Boeing",
+          "jobs": 26
         },
         {
-          "company": "Boeing",
-          "jobs": 24
+          "company": "Accenture",
+          "jobs": 25
         },
         {
           "company": "Anthropic",
@@ -4657,8 +4657,8 @@
         }
       ],
       "unique_companies": 244,
-      "avg_jobs_per_company": 5.42,
-      "timestamp": "2026-05-29T20:45:17.118184+00:00"
+      "avg_jobs_per_company": 5.43,
+      "timestamp": "2026-05-29T22:24:11.195349+00:00"
     }
   ]
 }
