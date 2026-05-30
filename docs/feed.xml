@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 08:12:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 10:20:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Engineer at SpaceX</title>
@@ -27,6 +27,13 @@
       <description>New grad role at Robinhood in New York, NY. Category: Software Engineering</description>
       <pubDate>Sat, 30 May 2026 00:12:10 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7684760?t=gh_src=&amp;gh_jid=7684760</guid>
+    </item>
+    <item>
+      <title>Controls Systems Engineer / Designer at Johnson Controls</title>
+      <link>https://ca.indeed.com/viewjob?jk=9f7dafedaa0cc9f8</link>
+      <description>New grad role at Johnson Controls in Dartmouth, NS, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9f7dafedaa0cc9f8</guid>
     </item>
     <item>
       <title>Associate Data Engineer at Murata America</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 29 May 2026 21:17:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, GenSWE at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 29 May 2026 21:17:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007</guid>
     </item>
   </channel>
 </rss>
