@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-30T05:40:36.251337+00:00",
+    "last_updated": "2026-05-30T08:12:14.695428+00:00",
     "total_snapshots": 85,
     "date_range": {
       "start": "2026-03-05",
@@ -4662,20 +4662,20 @@
     },
     {
       "date": "2026-05-30",
-      "total_jobs": 1325,
+      "total_jobs": 1319,
       "categories": {
-        "software_engineering": 881,
-        "infrastructure_sre": 156,
-        "other": 115,
-        "data_ml": 130,
-        "hardware": 13,
+        "software_engineering": 875,
+        "data_ml": 133,
+        "infrastructure_sre": 157,
+        "other": 111,
         "data_engineering": 27,
-        "quant_finance": 3
+        "quant_finance": 3,
+        "hardware": 13
       },
       "tiers": {
         "unicorn": 637,
-        "faang_plus": 140,
-        "other": 548
+        "other": 547,
+        "faang_plus": 135
       },
       "top_companies": [
         {
@@ -4699,29 +4699,29 @@
           "jobs": 31
         },
         {
-          "company": "Boeing",
+          "company": "Affirm",
           "jobs": 29
         },
         {
-          "company": "Affirm",
-          "jobs": 29
+          "company": "Boeing",
+          "jobs": 27
         },
         {
           "company": "Anthropic",
           "jobs": 24
         },
         {
-          "company": "Leidos",
+          "company": "Abnormal Security",
           "jobs": 19
         },
         {
-          "company": "Abnormal Security",
+          "company": "Stripe",
           "jobs": 19
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 5.69,
-      "timestamp": "2026-05-30T05:40:36.250118+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.61,
+      "timestamp": "2026-05-30T08:12:14.694369+00:00"
     }
   ]
 }
