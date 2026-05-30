@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 21:46:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 22:44:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist, Marketing at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5161402008</link>
+      <description>New grad role at Anthropic in New York City, NY | Seattle, WA; San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 30 May 2026 22:16:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5161402008</guid>
+    </item>
     <item>
       <title>GNC Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5150958007?gh_jid=5150958007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 30 May 2026 11:55:02 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4991618007?gh_jid=4991618007</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Network), Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 30 May 2026 11:51:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</guid>
     </item>
   </channel>
 </rss>
