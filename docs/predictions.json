@@ -1,35 +1,35 @@
 {
-  "outlook": "bearish",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1150,
-      "change_percent": -3.8
+      "total_jobs": 1335,
+      "change_percent": 0.75
     },
     "30_days": {
-      "total_jobs": 1050,
-      "change_percent": -12.2
+      "total_jobs": 1350,
+      "change_percent": 1.89
     }
   },
   "growing_categories": [
-    "none",
-    "none",
-    "none"
+    "data_engineering",
+    "software_engineering",
+    "data_ml"
   ],
   "declining_categories": [
-    "software_engineering",
     "infrastructure_sre",
-    "data_engineering"
+    "other",
+    "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently experiencing a significant correction following a mid-month spike, with the total job count trending downward from a peak of 1402 toward the 30-day average.",
-    "All major job categories show a consistent contraction over the most recent data points, suggesting a cooling period in new graduate hiring demand.",
-    "The decline in FAANG+ and Unicorn postings indicates that large-scale tech employers are pulling back on entry-level headcount, signaling a cautious approach for the upcoming quarter."
+    "The market underwent a structural step-up in volume around day 18, shifting from a ~1000 job baseline to a ~1330 job baseline, indicating a significant influx of new graduate hiring initiatives.",
+    "While the overall volume is stabilizing at this higher plateau, the data suggests a consolidation phase where companies are prioritizing core software and data roles over infrastructure and miscellaneous support positions.",
+    "The recent dip in FAANG+ and Unicorn tiers suggests that the current growth is being driven by mid-market or 'other' tier companies, signaling a broader distribution of hiring demand across the tech ecosystem."
   ],
-  "generated_at": "2026-05-29T00:17:08.374852+00:00",
-  "data_points": 84,
+  "generated_at": "2026-05-30T01:48:55.905952+00:00",
+  "data_points": 85,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-29"
+    "end": "2026-05-30"
   }
 }
