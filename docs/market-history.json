@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-31T14:33:41.893863+00:00",
+    "last_updated": "2026-05-31T15:56:45.718410+00:00",
     "total_snapshots": 86,
     "date_range": {
       "start": "2026-03-05",
@@ -4736,9 +4736,9 @@
         "quant_finance": 2
       },
       "tiers": {
-        "other": 533,
-        "unicorn": 651,
-        "faang_plus": 116
+        "other": 537,
+        "unicorn": 645,
+        "faang_plus": 118
       },
       "top_companies": [
         {
@@ -4771,7 +4771,7 @@
         },
         {
           "company": "Anthropic",
-          "jobs": 26
+          "jobs": 20
         },
         {
           "company": "Abnormal Security",
@@ -4782,9 +4782,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 5.78,
-      "timestamp": "2026-05-31T14:33:41.892827+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 5.75,
+      "timestamp": "2026-05-31T15:56:45.717263+00:00"
     }
   ]
 }
