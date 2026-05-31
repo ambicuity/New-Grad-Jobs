@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2026 19:48:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 20:47:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Production Support Engineer II - EU / UK at Marqeta</title>
+      <link>https://job-boards.greenhouse.io/marqeta/jobs/7743099</link>
+      <description>New grad role at Marqeta in Remote, UK. Category: Other</description>
+      <pubDate>Sun, 31 May 2026 19:45:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/marqeta/jobs/7743099</guid>
+    </item>
     <item>
       <title>Data Scientist, Developer Productivity at Anthropic</title>
       <link>https://job-boards.greenhouse.io/anthropic/jobs/5197529008</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sat, 30 May 2026 13:08:24 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5082336007?gh_jid=5082336007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 30 May 2026 13:06:01 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5082336007?gh_jid=5082336007</guid>
     </item>
   </channel>
 </rss>
