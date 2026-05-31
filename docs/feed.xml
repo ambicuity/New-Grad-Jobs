@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2026 11:21:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 12:56:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -167,13 +167,6 @@
       <description>New grad role at Unknown in Frisco, TX, US. Category: Hardware Engineering</description>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b4d039b7791f70b1</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at Walmart</title>
-      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</link>
-      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</guid>
     </item>
     <item>
       <title>Data Scientist, Marketing at Anthropic</title>
@@ -356,6 +349,13 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 30 May 2026 12:42:51 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5057159007?gh_jid=5057159007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Tactical Reconnaissance &amp; Strike at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 30 May 2026 12:42:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</guid>
     </item>
   </channel>
 </rss>
