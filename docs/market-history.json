@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-31T21:46:25.041928+00:00",
+    "last_updated": "2026-05-31T22:47:04.048777+00:00",
     "total_snapshots": 86,
     "date_range": {
       "start": "2026-03-05",
@@ -4725,19 +4725,19 @@
     },
     {
       "date": "2026-05-31",
-      "total_jobs": 1303,
+      "total_jobs": 1300,
       "categories": {
-        "other": 117,
-        "data_ml": 134,
-        "software_engineering": 849,
-        "infrastructure_sre": 157,
+        "infrastructure_sre": 158,
+        "software_engineering": 847,
+        "other": 116,
+        "data_ml": 133,
         "hardware": 18,
         "data_engineering": 26,
         "quant_finance": 2
       },
       "tiers": {
-        "unicorn": 645,
-        "other": 540,
+        "unicorn": 644,
+        "other": 538,
         "faang_plus": 118
       },
       "top_companies": [
@@ -4770,11 +4770,11 @@
           "jobs": 27
         },
         {
-          "company": "Anthropic",
-          "jobs": 20
+          "company": "Leidos",
+          "jobs": 21
         },
         {
-          "company": "Leidos",
+          "company": "Anthropic",
           "jobs": 20
         },
         {
@@ -4782,9 +4782,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 5.69,
-      "timestamp": "2026-05-31T21:46:25.040944+00:00"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 5.63,
+      "timestamp": "2026-05-31T22:47:04.047746+00:00"
     }
   ]
 }
