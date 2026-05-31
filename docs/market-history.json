@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-31T09:31:32.091143+00:00",
+    "last_updated": "2026-05-31T11:21:41.610680+00:00",
     "total_snapshots": 86,
     "date_range": {
       "start": "2026-03-05",
@@ -4725,18 +4725,18 @@
     },
     {
       "date": "2026-05-31",
-      "total_jobs": 1330,
+      "total_jobs": 1303,
       "categories": {
-        "software_engineering": 879,
+        "software_engineering": 855,
         "data_ml": 134,
-        "infrastructure_sre": 161,
+        "infrastructure_sre": 158,
         "hardware": 18,
         "other": 110,
         "data_engineering": 26,
         "quant_finance": 2
       },
       "tiers": {
-        "other": 563,
+        "other": 536,
         "unicorn": 651,
         "faang_plus": 116
       },
@@ -4774,17 +4774,17 @@
           "jobs": 26
         },
         {
-          "company": "Deloitte",
-          "jobs": 26
+          "company": "Abnormal Security",
+          "jobs": 19
         },
         {
-          "company": "Abnormal Security",
+          "company": "Stripe",
           "jobs": 19
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 5.81,
-      "timestamp": "2026-05-31T09:31:32.090353+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 5.77,
+      "timestamp": "2026-05-31T11:21:41.609742+00:00"
     }
   ]
 }
