@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-31T01:58:03.098946+00:00",
+    "last_updated": "2026-05-31T06:24:15.939650+00:00",
     "total_snapshots": 86,
     "date_range": {
       "start": "2026-03-05",
@@ -4725,20 +4725,20 @@
     },
     {
       "date": "2026-05-31",
-      "total_jobs": 1313,
+      "total_jobs": 1351,
       "categories": {
-        "other": 117,
-        "data_ml": 132,
-        "software_engineering": 862,
-        "infrastructure_sre": 158,
+        "other": 107,
+        "data_ml": 133,
+        "software_engineering": 912,
+        "infrastructure_sre": 156,
         "hardware": 14,
         "data_engineering": 27,
-        "quant_finance": 3
+        "quant_finance": 2
       },
       "tiers": {
         "faang_plus": 117,
         "unicorn": 638,
-        "other": 558
+        "other": 596
       },
       "top_companies": [
         {
@@ -4752,6 +4752,10 @@
         {
           "company": "Waymo",
           "jobs": 56
+        },
+        {
+          "company": "Deloitte",
+          "jobs": 55
         },
         {
           "company": "OpenAI",
@@ -4776,15 +4780,11 @@
         {
           "company": "Leidos",
           "jobs": 19
-        },
-        {
-          "company": "Abnormal Security",
-          "jobs": 19
         }
       ],
-      "unique_companies": 240,
-      "avg_jobs_per_company": 5.47,
-      "timestamp": "2026-05-31T01:58:03.097925+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.9,
+      "timestamp": "2026-05-31T06:24:15.938767+00:00"
     }
   ]
 }
