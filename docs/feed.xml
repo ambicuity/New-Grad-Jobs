@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2026 17:07:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 18:19:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -160,6 +160,13 @@
       <description>New grad role at JUNGLE in Remote, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6ad4222431edd7ce</guid>
+    </item>
+    <item>
+      <title>DTI, Technical Management Associate - 2026 at DBS Bank</title>
+      <link>https://in.indeed.com/viewjob?jk=5f7e251d390d79f9</link>
+      <description>New grad role at DBS Bank in TS, IN. Category: Software Engineering</description>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5f7e251d390d79f9</guid>
     </item>
     <item>
       <title>Associate Engineer, Controls at Unknown</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 30 May 2026 12:42:51 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5057159007?gh_jid=5057159007</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer - Tactical Reconnaissance &amp; Strike at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 30 May 2026 12:42:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</guid>
     </item>
   </channel>
 </rss>
