@@ -2,34 +2,33 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1325,
-      "change_percent": 0.91
+      "total_jobs": 1315,
+      "change_percent": 1.23
     },
     "30_days": {
       "total_jobs": 1350,
-      "change_percent": 2.82
+      "change_percent": 3.93
     }
   },
   "growing_categories": [
+    "data_ml",
     "data_engineering",
-    "software_engineering",
-    "data_ml"
+    "infrastructure_sre"
   ],
   "declining_categories": [
-    "other",
-    "infrastructure_sre",
-    "n/a"
+    "software_engineering",
+    "other"
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a significant structural shift around day 17, moving from a ~1000 job baseline to a higher ~1300 job plateau, suggesting a new wave of seasonal hiring or budget releases.",
-    "Data engineering and ML roles are showing the most consistent growth, indicating that companies are prioritizing AI-ready infrastructure over generalist roles.",
-    "While FAANG+ hiring has softened slightly in the most recent week, the overall volume remains elevated compared to the start of the month, signaling a healthy, sustained appetite for new graduate talent."
+    "The market experienced a structural shift around day 16, moving from a ~1000 job baseline to a ~1300 job baseline, indicating a significant influx of new graduate roles.",
+    "While general software engineering roles show slight volatility, specialized roles in Data/ML and SRE demonstrate higher stability and consistent demand.",
+    "The sustained gap between the 7-day average (1306) and 30-day average (1161) confirms a strong upward trend, suggesting that the recent surge is not a temporary anomaly but a new hiring cycle phase."
   ],
-  "generated_at": "2026-05-31T01:58:04.781988+00:00",
-  "data_points": 86,
+  "generated_at": "2026-06-01T02:09:09.030516+00:00",
+  "data_points": 87,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-05-31"
+    "end": "2026-06-01"
   }
 }

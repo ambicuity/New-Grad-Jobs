@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-05-31T23:51:56.758563+00:00",
-    "total_snapshots": 86,
+    "last_updated": "2026-06-01T02:08:50.682286+00:00",
+    "total_snapshots": 87,
     "date_range": {
       "start": "2026-03-05",
-      "end": "2026-05-31"
+      "end": "2026-06-01"
     }
   },
   "snapshots": [
@@ -4785,6 +4785,69 @@
       "unique_companies": 231,
       "avg_jobs_per_company": 5.63,
       "timestamp": "2026-05-31T23:51:56.757693+00:00"
+    },
+    {
+      "date": "2026-06-01",
+      "total_jobs": 1299,
+      "categories": {
+        "software_engineering": 846,
+        "infrastructure_sre": 158,
+        "other": 116,
+        "data_ml": 133,
+        "hardware": 18,
+        "data_engineering": 26,
+        "quant_finance": 2
+      },
+      "tiers": {
+        "faang_plus": 120,
+        "other": 535,
+        "unicorn": 644
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 189
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 162
+        },
+        {
+          "company": "Waymo",
+          "jobs": 56
+        },
+        {
+          "company": "OpenAI",
+          "jobs": 45
+        },
+        {
+          "company": "Glean",
+          "jobs": 31
+        },
+        {
+          "company": "Boeing",
+          "jobs": 29
+        },
+        {
+          "company": "Affirm",
+          "jobs": 29
+        },
+        {
+          "company": "Leidos",
+          "jobs": 21
+        },
+        {
+          "company": "Anthropic",
+          "jobs": 20
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 19
+        }
+      ],
+      "unique_companies": 231,
+      "avg_jobs_per_company": 5.62,
+      "timestamp": "2026-06-01T02:08:50.681208+00:00"
     }
   ]
 }
