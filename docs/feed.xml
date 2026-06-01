@@ -5,35 +5,91 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2026 02:09:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 07:25:08 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Associate Systems Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Associate-Systems-Engineer_JR2026498638-1</link>
-      <description>New grad role at Boeing in USA - Huntsville, AL. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Associate-Systems-Engineer_JR2026498638-1</guid>
+      <title>Software Engineer — Unity Studio (Web-based 3D Editor) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7930849?gh_jid=7930849</link>
+      <description>New grad role at Unity Technologies in Remote, Germany. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 07:04:07 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7930849?gh_jid=7930849</guid>
     </item>
     <item>
-      <title>Associate Systems Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Colorado-Springs-CO/Associate-Systems-Engineer_JR2026498654-1</link>
-      <description>New grad role at Boeing in USA - Colorado Springs, CO. Category: Software Engineering</description>
+      <title>Site Reliability Engineer Specialist at Global Payments</title>
+      <link>https://in.indeed.com/viewjob?jk=3439a321de9aada2</link>
+      <description>New grad role at Global Payments in MH, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Colorado-Springs-CO/Associate-Systems-Engineer_JR2026498654-1</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3439a321de9aada2</guid>
     </item>
     <item>
-      <title>ICS/SCADA &amp; Critical Infrastructure Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer_R-00184428</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Infrastructure &amp; SRE</description>
+      <title>Embedded C Firmware Engineer (Entry-Level) at DPS TELECOM</title>
+      <link>https://www.indeed.com/viewjob?jk=540f86febe44c232</link>
+      <description>New grad role at DPS TELECOM in Fresno, CA, US. Category: Hardware Engineering</description>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer_R-00184428</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=540f86febe44c232</guid>
     </item>
     <item>
-      <title>Junior SCADA/Controls Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Other</description>
+      <title>Associate Software Engineer at Andersen Corporation</title>
+      <link>https://www.indeed.com/viewjob?jk=a98be64eafae1e29</link>
+      <description>New grad role at Andersen Corporation in Oak Park Heights, MN, US. Category: Software Engineering</description>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a98be64eafae1e29</guid>
+    </item>
+    <item>
+      <title>Membership Trainee at YMCA</title>
+      <link>https://www.indeed.com/viewjob?jk=879d8d9bf77481c5</link>
+      <description>New grad role at YMCA in Palm Harbor, FL, US. Category: Other</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=879d8d9bf77481c5</guid>
+    </item>
+    <item>
+      <title>Membership Trainee at YMCA</title>
+      <link>https://www.indeed.com/viewjob?jk=7f3ce4535eab57fd</link>
+      <description>New grad role at YMCA in Spring Hill, FL, US. Category: Other</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f3ce4535eab57fd</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-279221-1</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-279221-1</guid>
+    </item>
+    <item>
+      <title>Cloud DevOps and Infrastructure Engineer at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/India-Bangalore/Cloud-DevOps-and-Infrastructure-Engineer_JR0282723</link>
+      <description>New grad role at Intel in India, Bangalore. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/India-Bangalore/Cloud-DevOps-and-Infrastructure-Engineer_JR0282723</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Autodesk</title>
+      <link>https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer_26WD96707-1</link>
+      <description>New grad role at Autodesk in Pune, IND. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer_26WD96707-1</guid>
+    </item>
+    <item>
+      <title>(IND) Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-10/XMLNAME--IND--Software-Engineer-III_R-2451643</link>
+      <description>New grad role at Walmart in IN KA BANGALORE Home Office Building 10. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/IN-KA-BANGALORE-Home-Office-Building-10/XMLNAME--IND--Software-Engineer-III_R-2451643</guid>
+    </item>
+    <item>
+      <title>Software Safety Engineer - Level 1/2 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Software-Safety-Engineer---Level-1-2_R10234431</link>
+      <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Other</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Software-Safety-Engineer---Level-1-2_R10234431</guid>
+    </item>
+    <item>
+      <title>Associate Software Developer - Java at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Developer---Java_JR2026511674-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Developer---Java_JR2026511674-1</guid>
     </item>
     <item>
       <title>IAM Security Engineer 3 at MongoDB</title>
@@ -142,6 +198,13 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 31 May 2026 09:37:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sun, 31 May 2026 09:37:27 +0000</pubDate>
@@ -167,13 +230,6 @@
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 31 May 2026 09:37:27 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 31 May 2026 09:37:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -212,17 +268,17 @@
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 31 May 2026 09:35:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
       <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Sun, 31 May 2026 09:35:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
+      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 31 May 2026 09:35:18 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
     </item>
     <item>
       <title>Software Engineer, Intelligence Systems at Anduril Industries</title>
@@ -300,62 +356,6 @@
       <description>New grad role at DBS Bank in TS, IN. Category: Software Engineering</description>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5f7e251d390d79f9</guid>
-    </item>
-    <item>
-      <title>Entry Level Mechanical, Electrical, Physics Engineer for Controls PLC programing at Quest Global</title>
-      <link>https://www.indeed.com/viewjob?jk=84eb57cd71d93df4</link>
-      <description>New grad role at Quest Global in Schenectady, NY, US. Category: Other</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=84eb57cd71d93df4</guid>
-    </item>
-    <item>
-      <title>Software Developer (6621) at Metrostar Systems</title>
-      <link>https://www.indeed.com/viewjob?jk=2265379c96807c59</link>
-      <description>New grad role at Metrostar Systems in Reston, VA, US. Category: Software Engineering</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2265379c96807c59</guid>
-    </item>
-    <item>
-      <title>Mechanical Engineer - Entry Level at BAE Systems USA</title>
-      <link>https://www.indeed.com/viewjob?jk=7eb989615a69125a</link>
-      <description>New grad role at BAE Systems USA in Nashua, NH, US. Category: Hardware Engineering</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7eb989615a69125a</guid>
-    </item>
-    <item>
-      <title>SITE RELIABILITY ENGINEER at Peraton</title>
-      <link>https://www.indeed.com/viewjob?jk=035074649c126002</link>
-      <description>New grad role at Peraton in Annapolis Junction, MD, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=035074649c126002</guid>
-    </item>
-    <item>
-      <title>New Graduate Nuclear Medicine Scientist - Southport at Qscan Group</title>
-      <link>https://www.indeed.com/viewjob?jk=de2916a5026dbeb7</link>
-      <description>New grad role at Qscan Group in Gold Coast, IL, US. Category: Other</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=de2916a5026dbeb7</guid>
-    </item>
-    <item>
-      <title>Airplane Electronic Engineer (Associate) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Electronic-Systems-Engineer--Associate-_JR2026501932-1</link>
-      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Electronic-Systems-Engineer--Associate-_JR2026501932-1</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Marketing at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5161402008</link>
-      <description>New grad role at Anthropic in New York City, NY | Seattle, WA; San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 30 May 2026 22:16:03 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5161402008</guid>
-    </item>
-    <item>
-      <title>GNC Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5150958007?gh_jid=5150958007</link>
-      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 30 May 2026 20:32:11 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5150958007?gh_jid=5150958007</guid>
     </item>
   </channel>
 </rss>
