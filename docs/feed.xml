@@ -5,28 +5,105 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2026 02:08:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 06:57:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Core Technology at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7618977</link>
+      <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 06:05:45 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
+      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 02 Jun 2026 05:47:37 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
+    </item>
+    <item>
+      <title>IAM Security Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
+      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 02 Jun 2026 05:40:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:35:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7235322</guid>
+    </item>
     <item>
       <title>Software Engineer 3 - Query Optimization at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
       <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 01:42:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 05:35:15 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:34:54 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 01:08:37 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 05:34:36 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:32:22 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Migration at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523834</link>
+      <description>New grad role at MongoDB in California; Oregon; Washington. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:31:45 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523834</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:29:19 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
+      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:21:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 05:21:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Developer Productivity at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 01:07:20 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 05:09:07 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7851388</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer, Privy at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7462961</link>
+      <description>New grad role at Stripe in New York. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 02 Jun 2026 02:37:13 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7462961</guid>
     </item>
     <item>
       <title>Software Engineer, Ads Product  at xAI</title>
@@ -50,18 +127,60 @@
       <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/c8701794-bdc1-4932-bffa-a444ce57ed73</guid>
     </item>
     <item>
-      <title>Data Scientist at Robots &amp; Pencils</title>
-      <link>https://www.indeed.com/viewjob?jk=ef2dc2586d8de903</link>
-      <description>New grad role at Robots &amp; Pencils in Seattle, WA, US. Category: Data Science &amp; ML</description>
+      <title>Data Engineer AWS at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=aa47f8d084814186</link>
+      <description>New grad role at Unknown in Remote, IN. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ef2dc2586d8de903</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=aa47f8d084814186</guid>
     </item>
     <item>
-      <title>Field Service Engineer I (Entry-Level) at IMS Nanofabrication</title>
-      <link>https://www.indeed.com/viewjob?jk=363c39e2c5c69ca1</link>
-      <description>New grad role at IMS Nanofabrication in Hillsboro, OR, US. Category: Hardware Engineering</description>
+      <title>Software Engineer at AlgoShack</title>
+      <link>https://in.indeed.com/viewjob?jk=22994cb1a1228815</link>
+      <description>New grad role at AlgoShack in KA, IN. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=363c39e2c5c69ca1</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=22994cb1a1228815</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer(java) at Leading IT Firm in Kochi</title>
+      <link>https://in.indeed.com/viewjob?jk=dc4a40caf13a079c</link>
+      <description>New grad role at Leading IT Firm in Kochi in KL, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=dc4a40caf13a079c</guid>
+    </item>
+    <item>
+      <title>Junior Photonics Research Engineer at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=8f9f9580efc54e6f</link>
+      <description>New grad role at Unknown in Dayton, OH, US. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8f9f9580efc54e6f</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Sanford Health</title>
+      <link>https://www.indeed.com/viewjob?jk=2e32fef228bf174b</link>
+      <description>New grad role at Sanford Health in Sioux Falls, SD, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2e32fef228bf174b</guid>
+    </item>
+    <item>
+      <title>Software Engineer at PayPal</title>
+      <link>https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136838</link>
+      <description>New grad role at PayPal in Austin, Texas, United States of America. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136838</guid>
+    </item>
+    <item>
+      <title>Software Engineer at PayPal</title>
+      <link>https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136839</link>
+      <description>New grad role at PayPal in Austin, Texas, United States of America. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136839</guid>
+    </item>
+    <item>
+      <title>Data Scientist II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-275580</link>
+      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-275580</guid>
     </item>
     <item>
       <title>Software Engineer II at Mastercard</title>
@@ -99,6 +218,13 @@
       <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer---Officer_26953115</guid>
     </item>
     <item>
+      <title>Associate, Associate Database Analyst at Pfizer</title>
+      <link>https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/Associate--Associate-Database-Analyst_4954345-1</link>
+      <description>New grad role at Pfizer in India - Chennai. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/Associate--Associate-Database-Analyst_4954345-1</guid>
+    </item>
+    <item>
       <title>Packaging Engineer II- Temporary 12 months at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Packaging-Engineer-II--Temporary-12-months_R67140-1</link>
       <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
@@ -132,13 +258,6 @@
       <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/IT-Systems-Engineer_R10226879-1</guid>
-    </item>
-    <item>
-      <title>Aircraft Structures Mechanic - Entry Level at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Saint-Augustine/Aircraft-Structures-Mechanic---Entry-Level_R10227522</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Saint Augustine. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Saint-Augustine/Aircraft-Structures-Mechanic---Entry-Level_R10227522</guid>
     </item>
     <item>
       <title>Cybersecurity Systems Engineer (CSE) at Northrop Grumman</title>
@@ -176,6 +295,13 @@
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Mission-Assurance-Engineer-Princ-Mission-Assurance-Engineer----Level-2-or-Level-3_R10228438-1</guid>
     </item>
     <item>
+      <title>Product Review Engineer - Liaison Engineering (Associate or Mid-Level) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Saint-Charles-MO/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-Level-_JR2026512571-1</link>
+      <description>New grad role at Boeing in USA - Saint Charles, MO. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Saint-Charles-MO/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-Level-_JR2026512571-1</guid>
+    </item>
+    <item>
       <title>Spacecraft Software Engineer (Associate or Mid-Level)- Millennium Space Systems at Boeing</title>
       <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Software-Engineer--Associate-or-Mid-Level---Millennium-Space-Systems_JR2026512895</link>
       <description>New grad role at Boeing in USA - El Segundo, CA. Category: Software Engineering</description>
@@ -211,13 +337,6 @@
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Electrical-Engineering-Technical-Designer--Entry-Level-_JR2026509016-1</guid>
     </item>
     <item>
-      <title>Mechanical Systems Design &amp; Analysis Engineer (Entry-Level or Associate) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Mechanical-Systems-Design---Analysis-Engineer--Entry-Level-and-Associate-_JR2026494355</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Mechanical-Systems-Design---Analysis-Engineer--Entry-Level-and-Associate-_JR2026494355</guid>
-    </item>
-    <item>
       <title>Associate Product Security Engineer at Boeing</title>
       <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Product-Security-Engineer_JR2026507799</link>
       <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Infrastructure &amp; SRE</description>
@@ -237,125 +356,6 @@
       <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</guid>
-    </item>
-    <item>
-      <title>Design and Analysis Engineer (Associate &amp; Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Design-and-Analysis-Engineer--Associate---Mid-Level-_JR2026509947</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Design-and-Analysis-Engineer--Associate---Mid-Level-_JR2026509947</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer - Analytics at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer---Analytics_JR2026507843-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer---Analytics_JR2026507843-1</guid>
-    </item>
-    <item>
-      <title>Associate Software Developer - Java at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Developer---Java_JR2026511674-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Developer---Java_JR2026511674-1</guid>
-    </item>
-    <item>
-      <title>Junior Computational Fluid Dynamics Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Junior-Computational-Fluid-Dynamics-Engineer_R-00184529</link>
-      <description>New grad role at Leidos in Huntsville, AL. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Junior-Computational-Fluid-Dynamics-Engineer_R-00184529</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Network-Engineer_R-00184516</link>
-      <description>New grad role at Leidos in Bethesda, MD. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Network-Engineer_R-00184516</guid>
-    </item>
-    <item>
-      <title>Software Developer-Cloud Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/6314-RemoteTeleworker-US/Software-Developer-Cloud-Engineer_R-00184464-1</link>
-      <description>New grad role at Leidos in 6314 Remote/Teleworker US. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/6314-RemoteTeleworker-US/Software-Developer-Cloud-Engineer_R-00184464-1</guid>
-    </item>
-    <item>
-      <title>IT Security Engineer 2 at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/IT-Security-Engineer-2_R-00184476</link>
-      <description>New grad role at Leidos in Huntsville, AL. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/IT-Security-Engineer-2_R-00184476</guid>
-    </item>
-    <item>
-      <title>Junior Electrical Design Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Junior-Electrical-Design-Engineer_R-00184473</link>
-      <description>New grad role at Leidos in Huntsville, AL. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Junior-Electrical-Design-Engineer_R-00184473</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, EW at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4866826007?gh_jid=4866826007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:59:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4866826007?gh_jid=4866826007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, EW at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5030944007?gh_jid=5030944007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:59:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5030944007?gh_jid=5030944007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App Banking at Block</title>
-      <link>http://block.xyz/careers/jobs/5207106008?gh_jid=5207106008</link>
-      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:56 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5207106008?gh_jid=5207106008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App Banking at Block</title>
-      <link>http://block.xyz/careers/jobs/5196181008?gh_jid=5196181008</link>
-      <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:56 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196181008?gh_jid=5196181008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App Banking at Block</title>
-      <link>http://block.xyz/careers/jobs/5196183008?gh_jid=5196183008</link>
-      <description>New grad role at Block in Toronto, Ontario, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:56 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196183008?gh_jid=5196183008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App - Lending Products at Block</title>
-      <link>http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</link>
-      <description>New grad role at Block in Vancouver, British Columbia, Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:36 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App - Lending Products at Block</title>
-      <link>http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</link>
-      <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:36 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App - Lending Products at Block</title>
-      <link>http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</link>
-      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:36 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</guid>
-    </item>
-    <item>
-      <title>Air Vehicle Systems Engineer, Hardware Verification, Integration &amp; Validation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 01 Jun 2026 23:54:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007</guid>
     </item>
   </channel>
 </rss>

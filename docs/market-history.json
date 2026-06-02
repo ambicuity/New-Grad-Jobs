@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-02T02:08:26.405074+00:00",
+    "last_updated": "2026-06-02T06:57:27.307946+00:00",
     "total_snapshots": 88,
     "date_range": {
       "start": "2026-03-05",
@@ -4851,20 +4851,20 @@
     },
     {
       "date": "2026-06-02",
-      "total_jobs": 1294,
+      "total_jobs": 1295,
       "categories": {
-        "software_engineering": 839,
-        "infrastructure_sre": 166,
-        "data_ml": 130,
-        "hardware": 16,
-        "other": 115,
-        "data_engineering": 26,
+        "software_engineering": 849,
+        "infrastructure_sre": 160,
+        "data_ml": 132,
+        "other": 108,
+        "data_engineering": 25,
+        "hardware": 19,
         "quant_finance": 2
       },
       "tiers": {
-        "unicorn": 647,
-        "other": 534,
-        "faang_plus": 113
+        "faang_plus": 126,
+        "unicorn": 646,
+        "other": 523
       },
       "top_companies": [
         {
@@ -4897,7 +4897,7 @@
         },
         {
           "company": "Stripe",
-          "jobs": 20
+          "jobs": 21
         },
         {
           "company": "Anthropic",
@@ -4908,9 +4908,9 @@
           "jobs": 19
         }
       ],
-      "unique_companies": 241,
-      "avg_jobs_per_company": 5.37,
-      "timestamp": "2026-06-02T02:08:26.404106+00:00"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 5.58,
+      "timestamp": "2026-06-02T06:57:27.307031+00:00"
     }
   ]
 }
