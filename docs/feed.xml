@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2026 06:57:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 11:20:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Core Technology at Stripe</title>
@@ -127,11 +127,60 @@
       <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/c8701794-bdc1-4932-bffa-a444ce57ed73</guid>
     </item>
     <item>
+      <title>Data Scientist at HP</title>
+      <link>https://in.indeed.com/viewjob?jk=4cfc83133456c12a</link>
+      <description>New grad role at HP in TN, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4cfc83133456c12a</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Cisco</title>
+      <link>https://in.indeed.com/viewjob?jk=fc71ddc7ad3ebc50</link>
+      <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fc71ddc7ad3ebc50</guid>
+    </item>
+    <item>
       <title>Data Engineer AWS at Unknown</title>
       <link>https://in.indeed.com/viewjob?jk=aa47f8d084814186</link>
       <description>New grad role at Unknown in Remote, IN. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=aa47f8d084814186</guid>
+    </item>
+    <item>
+      <title>Engineer- Associate Manufacturing IND at First Solar</title>
+      <link>https://in.indeed.com/viewjob?jk=7221df7e5511ac02</link>
+      <description>New grad role at First Solar in TN, IN. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7221df7e5511ac02</guid>
+    </item>
+    <item>
+      <title>Python Conversational Software Engineer at Reflections Info Systems</title>
+      <link>https://in.indeed.com/viewjob?jk=4c1de2da7f73d7bd</link>
+      <description>New grad role at Reflections Info Systems in UP, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4c1de2da7f73d7bd</guid>
+    </item>
+    <item>
+      <title>Jr. Software Engineer at Shavison Electronics Pvt. Ltd.</title>
+      <link>https://in.indeed.com/viewjob?jk=53ffa99823aefdd1</link>
+      <description>New grad role at Shavison Electronics Pvt. Ltd. in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=53ffa99823aefdd1</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer at Johnnette Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=b64be22fe3c35a29</link>
+      <description>New grad role at Johnnette Technologies in UP, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b64be22fe3c35a29</guid>
+    </item>
+    <item>
+      <title>Junior Quality Assurance Engineer at EvolutionCo Digital &amp; Interactive Consultancy Pvt. Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=c6017d94cf3f5c27</link>
+      <description>New grad role at EvolutionCo Digital &amp; Interactive Consultancy Pvt. Ltd in MH, IN. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c6017d94cf3f5c27</guid>
     </item>
     <item>
       <title>Software Engineer at AlgoShack</title>
@@ -141,39 +190,109 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=22994cb1a1228815</guid>
     </item>
     <item>
-      <title>Junior Software Engineer(java) at Leading IT Firm in Kochi</title>
+      <title>Junior Software Engineer(java) -Trained Freshers to 1 year at Leading IT Firm in Kochi</title>
       <link>https://in.indeed.com/viewjob?jk=dc4a40caf13a079c</link>
       <description>New grad role at Leading IT Firm in Kochi in KL, IN. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=dc4a40caf13a079c</guid>
     </item>
     <item>
-      <title>Junior Photonics Research Engineer at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=8f9f9580efc54e6f</link>
-      <description>New grad role at Unknown in Dayton, OH, US. Category: Data Science &amp; ML</description>
+      <title>Technical Services Engineer II at InterSystems Corporation</title>
+      <link>https://www.indeed.com/viewjob?jk=d43e2fa8731f6024</link>
+      <description>New grad role at InterSystems Corporation in Boston, MA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8f9f9580efc54e6f</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d43e2fa8731f6024</guid>
     </item>
     <item>
-      <title>Network Engineer at Sanford Health</title>
-      <link>https://www.indeed.com/viewjob?jk=2e32fef228bf174b</link>
-      <description>New grad role at Sanford Health in Sioux Falls, SD, US. Category: Infrastructure &amp; SRE</description>
+      <title>Specialist, Systems Engineer - Watch Officer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=3c6a63c3a3d5e580</link>
+      <description>New grad role at L3Harris in Springfield, VA, US. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2e32fef228bf174b</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3c6a63c3a3d5e580</guid>
     </item>
     <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136838</link>
-      <description>New grad role at PayPal in Austin, Texas, United States of America. Category: Software Engineering</description>
+      <title>Guidance Navigation &amp; Control Engineer (Associate or Experienced) at Cimarron Software Services Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=612f0adfe7eba104</link>
+      <description>New grad role at Cimarron Software Services Inc in El Segundo, CA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136838</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=612f0adfe7eba104</guid>
     </item>
     <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136839</link>
-      <description>New grad role at PayPal in Austin, Texas, United States of America. Category: Software Engineering</description>
+      <title>Zoo Campus Security Officer-intermittent at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=ef71d7a2e344baff</link>
+      <description>New grad role at Unknown in Apple Valley, MN, US. Category: Other</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Austin-Texas-United-States-of-America/Software-Engineer_R0136839</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ef71d7a2e344baff</guid>
+    </item>
+    <item>
+      <title>Associate Technical Support Engineer at Automation Anywhere</title>
+      <link>https://in.indeed.com/viewjob?jk=0cd41e01bc9b1b4a</link>
+      <description>New grad role at Automation Anywhere in GJ, IN. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0cd41e01bc9b1b4a</guid>
+    </item>
+    <item>
+      <title>Associate AI Engineer at Johnnette Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=4f5f0989322d83c4</link>
+      <description>New grad role at Johnnette Technologies in UP, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4f5f0989322d83c4</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Virtualization at Red Hat</title>
+      <link>https://in.indeed.com/viewjob?jk=159d008d837bb3e0</link>
+      <description>New grad role at Red Hat in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=159d008d837bb3e0</guid>
+    </item>
+    <item>
+      <title>Software Engineer - DataOps at Williams-Sonoma, Inc.</title>
+      <link>https://in.indeed.com/viewjob?jk=38144a1ab92fa3e5</link>
+      <description>New grad role at Williams-Sonoma, Inc. in MH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=38144a1ab92fa3e5</guid>
+    </item>
+    <item>
+      <title>Physical Security Systems Engineer at Heartland Business Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=808e4bfa2207cfb7</link>
+      <description>New grad role at Heartland Business Systems in Little Chute, WI, US. Category: Software Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=808e4bfa2207cfb7</guid>
+    </item>
+    <item>
+      <title>Trainee - Project Management &amp; Planning Engineer at Arthur Best Consulting Engineers Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=5086d66e69e574aa</link>
+      <description>New grad role at Arthur Best Consulting Engineers Pvt Ltd in KL, IN. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5086d66e69e574aa</guid>
+    </item>
+    <item>
+      <title>Associate – Data Ops (Data Business CoE) at Bain &amp; Company</title>
+      <link>https://in.indeed.com/viewjob?jk=7e6a8000e7e65bff</link>
+      <description>New grad role at Bain &amp; Company in DL, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7e6a8000e7e65bff</guid>
+    </item>
+    <item>
+      <title>RN New Grad June Cohort - ED Nights at Corona Regional Medical Center</title>
+      <link>https://www.indeed.com/viewjob?jk=29d54cbbaec8872d</link>
+      <description>New grad role at Corona Regional Medical Center in Corona, CA, US. Category: Other</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=29d54cbbaec8872d</guid>
+    </item>
+    <item>
+      <title>Data Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Engineer-II_R-278487</link>
+      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Engineer-II_R-278487</guid>
+    </item>
+    <item>
+      <title>Data Engineer I at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-I_R-277992</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Data Engineering</description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-I_R-277992</guid>
     </item>
     <item>
       <title>Data Scientist II at Mastercard</title>
@@ -183,27 +302,6 @@
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-275580</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Vancouver-Canada/Software-Engineer-II_R-278931</link>
-      <description>New grad role at Mastercard in Vancouver, Canada. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Vancouver-Canada/Software-Engineer-II_R-278931</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-278947</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-278947</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-279221-1</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-279221-1</guid>
-    </item>
-    <item>
       <title>DevOps Engineer, HPC and LSF at NVIDIA</title>
       <link>https://nvidia.wd5.myworkdayjobs.com/job/India-Bengaluru/DevOps-Engineer--HPC-and-LSF_JR2018611</link>
       <description>New grad role at NVIDIA in India, Bengaluru. Category: Infrastructure &amp; SRE</description>
@@ -211,11 +309,11 @@
       <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/India-Bengaluru/DevOps-Engineer--HPC-and-LSF_JR2018611</guid>
     </item>
     <item>
-      <title>DevOps Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer---Officer_26953115</link>
-      <description>New grad role at Citi in New Castle Delaware United States. Category: Infrastructure &amp; SRE</description>
+      <title>AI/ML Engineer at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/AI-ML-Engineer_26965278</link>
+      <description>New grad role at Citi in Chennai Tamil Nadu India. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer---Officer_26953115</guid>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/AI-ML-Engineer_26965278</guid>
     </item>
     <item>
       <title>Associate, Associate Database Analyst at Pfizer</title>
@@ -225,137 +323,39 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/Associate--Associate-Database-Analyst_4954345-1</guid>
     </item>
     <item>
-      <title>Packaging Engineer II- Temporary 12 months at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Packaging-Engineer-II--Temporary-12-months_R67140-1</link>
-      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
+      <title>Software Engineer III at Walmart</title>
+      <link>https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</link>
+      <description>New grad role at Walmart in (USA) Crossman Respect Building CA SUNNYVALE Home Office. Category: Software Engineering</description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Packaging-Engineer-II--Temporary-12-months_R67140-1</guid>
+      <guid isPermaLink="true">https://walmart.wd5.myworkdayjobs.com/job/USA-Crossman-Respect-Building-CA-SUNNYVALE-Home-Office/Software-Engineer-III_R-2456239-1</guid>
     </item>
     <item>
-      <title>Quality Engineer I - MCS at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Miami-Florida-United-States-of-America/Quality-Engineer-I---MCS_R68238-1</link>
-      <description>New grad role at Medtronic in Miami, Florida, United States of America. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Miami-Florida-United-States-of-America/Quality-Engineer-I---MCS_R68238-1</guid>
+      <title>Systems Engineer, EW at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4866826007?gh_jid=4866826007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 23:59:23 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4866826007?gh_jid=4866826007</guid>
     </item>
     <item>
-      <title>R&amp;D Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Plymouth-Minnesota-United-States-of-America/R-D-Engineer-II_R68343-2</link>
-      <description>New grad role at Medtronic in Plymouth, Minnesota, United States of America. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Plymouth-Minnesota-United-States-of-America/R-D-Engineer-II_R68343-2</guid>
+      <title>Systems Engineer, EW at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5030944007?gh_jid=5030944007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 23:59:23 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5030944007?gh_jid=5030944007</guid>
     </item>
     <item>
-      <title>Software Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Software-Engineer_R10234799</link>
-      <description>New grad role at Northrop Grumman in United States-Oklahoma-Oklahoma City. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Software-Engineer_R10234799</guid>
+      <title>Software Engineer, Cash App Banking at Block</title>
+      <link>http://block.xyz/careers/jobs/5207106008?gh_jid=5207106008</link>
+      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 23:54:56 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5207106008?gh_jid=5207106008</guid>
     </item>
     <item>
-      <title>IT Systems Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/IT-Systems-Engineer_R10226879-1</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/IT-Systems-Engineer_R10226879-1</guid>
-    </item>
-    <item>
-      <title>Cybersecurity Systems Engineer (CSE) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Cybersecurity-Systems-Engineer--CSE-_R10233579-1</link>
-      <description>New grad role at Northrop Grumman in United States-Oklahoma-Oklahoma City. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Cybersecurity-Systems-Engineer--CSE-_R10233579-1</guid>
-    </item>
-    <item>
-      <title>2026 Associate Mission Assurance Engineer/Mission Assurance Engineer – Clearfield UT at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/XMLNAME-2026-Associate-Mission-Assurance-Engineer-Mission-Assurance-Engineer---Clearfield-UT_R10234735</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Clearfield. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/XMLNAME-2026-Associate-Mission-Assurance-Engineer-Mission-Assurance-Engineer---Clearfield-UT_R10234735</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer (Level 2 OR 3) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/DevOps-Engineer--Level-2-OR-3-_R10234461</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/DevOps-Engineer--Level-2-OR-3-_R10234461</guid>
-    </item>
-    <item>
-      <title>2026 Associate Software Quality Engineer/Quality Engineer - Melbourne FL at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Software-Quality-Engineer-Quality-Engineer---Melbourne-FL_R10234700</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Software-Quality-Engineer-Quality-Engineer---Melbourne-FL_R10234700</guid>
-    </item>
-    <item>
-      <title>Mission Assurance Engineer/Princ Mission Assurance Engineer  – Level 2 or Level 3 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Mission-Assurance-Engineer-Princ-Mission-Assurance-Engineer----Level-2-or-Level-3_R10228438-1</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Clearfield. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Mission-Assurance-Engineer-Princ-Mission-Assurance-Engineer----Level-2-or-Level-3_R10228438-1</guid>
-    </item>
-    <item>
-      <title>Product Review Engineer - Liaison Engineering (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Saint-Charles-MO/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-Level-_JR2026512571-1</link>
-      <description>New grad role at Boeing in USA - Saint Charles, MO. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Saint-Charles-MO/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-Level-_JR2026512571-1</guid>
-    </item>
-    <item>
-      <title>Spacecraft Software Engineer (Associate or Mid-Level)- Millennium Space Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Software-Engineer--Associate-or-Mid-Level---Millennium-Space-Systems_JR2026512895</link>
-      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Software-Engineer--Associate-or-Mid-Level---Millennium-Space-Systems_JR2026512895</guid>
-    </item>
-    <item>
-      <title>Production Engineer Level 1 at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Production-Engineer-Level-1_JR2026512874-1</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Production-Engineer-Level-1_JR2026512874-1</guid>
-    </item>
-    <item>
-      <title>Environmental Control and Thermal Analysis Engineer (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Environmental-Control-and-Thermal-Analysis-Engineer--Associate-or-Mid-Level-_JR2026511541-1</link>
-      <description>New grad role at Boeing in USA - Huntsville, AL. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Environmental-Control-and-Thermal-Analysis-Engineer--Associate-or-Mid-Level-_JR2026511541-1</guid>
-    </item>
-    <item>
-      <title>Associate or Mid-Level System Safety Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Ridley-Park-PA/Associate-or-Mid-Level-System-Safety-Engineer_JR2026511771-1</link>
-      <description>New grad role at Boeing in USA - Ridley Park, PA. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Ridley-Park-PA/Associate-or-Mid-Level-System-Safety-Engineer_JR2026511771-1</guid>
-    </item>
-    <item>
-      <title>Electrical Engineering Technical Designer (Entry Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Electrical-Engineering-Technical-Designer--Entry-Level-_JR2026509016-1</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Other</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Electrical-Engineering-Technical-Designer--Entry-Level-_JR2026509016-1</guid>
-    </item>
-    <item>
-      <title>Associate Product Security Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Product-Security-Engineer_JR2026507799</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Product-Security-Engineer_JR2026507799</guid>
-    </item>
-    <item>
-      <title>Associate Product Security Engineer - Multi-Program at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Product-Security-Engineer---Multi-Program_JR2026507800</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Product-Security-Engineer---Multi-Program_JR2026507800</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</link>
-      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer_JR2026502503-1</guid>
+      <title>Software Engineer, Cash App Banking at Block</title>
+      <link>http://block.xyz/careers/jobs/5196181008?gh_jid=5196181008</link>
+      <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
+      <pubDate>Mon, 01 Jun 2026 23:54:56 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196181008?gh_jid=5196181008</guid>
     </item>
   </channel>
 </rss>

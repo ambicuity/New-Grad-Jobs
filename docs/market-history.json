@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-02T06:57:27.307946+00:00",
+    "last_updated": "2026-06-02T11:20:17.050771+00:00",
     "total_snapshots": 88,
     "date_range": {
       "start": "2026-03-05",
@@ -4851,20 +4851,20 @@
     },
     {
       "date": "2026-06-02",
-      "total_jobs": 1295,
+      "total_jobs": 1302,
       "categories": {
-        "software_engineering": 849,
+        "software_engineering": 843,
         "infrastructure_sre": 160,
-        "data_ml": 132,
-        "other": 108,
-        "data_engineering": 25,
-        "hardware": 19,
+        "data_ml": 133,
+        "other": 121,
+        "data_engineering": 29,
+        "hardware": 14,
         "quant_finance": 2
       },
       "tiers": {
-        "faang_plus": 126,
+        "faang_plus": 111,
         "unicorn": 646,
-        "other": 523
+        "other": 545
       },
       "top_companies": [
         {
@@ -4892,10 +4892,6 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 22
-        },
-        {
           "company": "Stripe",
           "jobs": 21
         },
@@ -4906,11 +4902,15 @@
         {
           "company": "Abnormal Security",
           "jobs": 19
+        },
+        {
+          "company": "Boeing",
+          "jobs": 17
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 5.58,
-      "timestamp": "2026-06-02T06:57:27.307031+00:00"
+      "unique_companies": 247,
+      "avg_jobs_per_company": 5.27,
+      "timestamp": "2026-06-02T11:20:17.049843+00:00"
     }
   ]
 }
