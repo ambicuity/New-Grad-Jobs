@@ -3,32 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1315,
-      "change_percent": 1.23
+      "change_percent": 1.62
     },
     "30_days": {
-      "total_jobs": 1350,
-      "change_percent": 3.93
+      "total_jobs": 1340,
+      "change_percent": 3.55
     }
   },
   "growing_categories": [
-    "data_ml",
+    "infrastructure_sre",
     "data_engineering",
-    "infrastructure_sre"
+    "software_engineering"
   ],
   "declining_categories": [
-    "software_engineering",
-    "other"
+    "other",
+    "data_ml",
+    "n/a"
   ],
   "confidence": 75,
   "insights": [
-    "The market experienced a structural shift around day 16, moving from a ~1000 job baseline to a ~1300 job baseline, indicating a significant influx of new graduate roles.",
-    "While general software engineering roles show slight volatility, specialized roles in Data/ML and SRE demonstrate higher stability and consistent demand.",
-    "The sustained gap between the 7-day average (1306) and 30-day average (1161) confirms a strong upward trend, suggesting that the recent surge is not a temporary anomaly but a new hiring cycle phase."
+    "The market underwent a structural shift around day 15, moving from a ~1000 job baseline to a ~1300 job baseline, suggesting a new wave of seasonal hiring or budget release.",
+    "Unicorn companies are currently the primary drivers of volume, showing high stability and growth compared to the more volatile 'other' company tier.",
+    "While the overall trend is bullish, the slight cooling in the last 5 days suggests a stabilization phase before the next potential growth cycle."
   ],
-  "generated_at": "2026-06-01T02:09:09.030516+00:00",
-  "data_points": 87,
+  "generated_at": "2026-06-02T02:08:27.909414+00:00",
+  "data_points": 88,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-06-01"
+    "end": "2026-06-02"
   }
 }
