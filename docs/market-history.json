@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-02T15:19:47.119039+00:00",
+    "last_updated": "2026-06-02T19:00:56.099085+00:00",
     "total_snapshots": 88,
     "date_range": {
       "start": "2026-03-05",
@@ -4851,19 +4851,19 @@
     },
     {
       "date": "2026-06-02",
-      "total_jobs": 1318,
+      "total_jobs": 1347,
       "categories": {
-        "software_engineering": 844,
-        "data_engineering": 28,
-        "infrastructure_sre": 171,
-        "data_ml": 134,
-        "other": 124,
-        "hardware": 15,
-        "quant_finance": 2
+        "software_engineering": 873,
+        "data_ml": 135,
+        "infrastructure_sre": 159,
+        "data_engineering": 29,
+        "other": 129,
+        "hardware": 19,
+        "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 647,
-        "other": 560,
+        "unicorn": 660,
+        "other": 576,
         "faang_plus": 111
       },
       "top_companies": [
@@ -4873,7 +4873,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 158
+          "jobs": 157
         },
         {
           "company": "Waymo",
@@ -4888,29 +4888,29 @@
           "jobs": 29
         },
         {
+          "company": "Accenture",
+          "jobs": 26
+        },
+        {
           "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Anthropic",
-          "jobs": 21
+          "company": "Robinhood",
+          "jobs": 23
         },
         {
           "company": "Stripe",
-          "jobs": 21
+          "jobs": 20
         },
         {
-          "company": "Leidos",
-          "jobs": 21
-        },
-        {
-          "company": "Boeing",
-          "jobs": 19
+          "company": "Corona Regional Medical Center",
+          "jobs": 20
         }
       ],
       "unique_companies": 249,
-      "avg_jobs_per_company": 5.29,
-      "timestamp": "2026-06-02T15:19:47.117940+00:00"
+      "avg_jobs_per_company": 5.41,
+      "timestamp": "2026-06-02T19:00:56.098276+00:00"
     }
   ]
 }
