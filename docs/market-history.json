@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-03T02:18:48.123620+00:00",
+    "last_updated": "2026-06-03T07:21:11.025492+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-05",
@@ -4914,20 +4914,20 @@
     },
     {
       "date": "2026-06-03",
-      "total_jobs": 1343,
+      "total_jobs": 1334,
       "categories": {
-        "data_ml": 134,
-        "infrastructure_sre": 160,
-        "software_engineering": 866,
-        "data_engineering": 33,
-        "other": 133,
-        "hardware": 14,
-        "quant_finance": 3
+        "data_ml": 135,
+        "software_engineering": 869,
+        "infrastructure_sre": 154,
+        "other": 120,
+        "data_engineering": 40,
+        "quant_finance": 3,
+        "hardware": 13
       },
       "tiers": {
-        "unicorn": 647,
-        "other": 583,
-        "faang_plus": 113
+        "unicorn": 649,
+        "other": 565,
+        "faang_plus": 120
       },
       "top_companies": [
         {
@@ -4947,12 +4947,12 @@
           "jobs": 46
         },
         {
-          "company": "Glean",
+          "company": "Affirm",
           "jobs": 26
         },
         {
-          "company": "Affirm",
-          "jobs": 26
+          "company": "Glean",
+          "jobs": 25
         },
         {
           "company": "Robinhood",
@@ -4964,16 +4964,16 @@
         },
         {
           "company": "Anthropic",
-          "jobs": 20
+          "jobs": 21
         },
         {
-          "company": "Accenture",
+          "company": "Corona Regional Medical Center",
           "jobs": 20
         }
       ],
-      "unique_companies": 247,
-      "avg_jobs_per_company": 5.44,
-      "timestamp": "2026-06-03T02:18:48.122826+00:00"
+      "unique_companies": 243,
+      "avg_jobs_per_company": 5.49,
+      "timestamp": "2026-06-03T07:21:11.024724+00:00"
     }
   ]
 }
