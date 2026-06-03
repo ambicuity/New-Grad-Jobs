@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-03T12:19:41.057255+00:00",
+    "last_updated": "2026-06-03T17:26:54.816505+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-05",
@@ -4914,20 +4914,20 @@
     },
     {
       "date": "2026-06-03",
-      "total_jobs": 1327,
+      "total_jobs": 1322,
       "categories": {
-        "data_ml": 138,
-        "data_engineering": 34,
-        "software_engineering": 881,
-        "infrastructure_sre": 155,
-        "other": 101,
-        "hardware": 15,
+        "software_engineering": 879,
+        "infrastructure_sre": 159,
+        "data_ml": 132,
+        "data_engineering": 38,
+        "other": 98,
+        "hardware": 13,
         "quant_finance": 3
       },
       "tiers": {
-        "other": 552,
-        "unicorn": 650,
-        "faang_plus": 125
+        "other": 547,
+        "unicorn": 648,
+        "faang_plus": 127
       },
       "top_companies": [
         {
@@ -4936,27 +4936,27 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 161
+          "jobs": 160
         },
         {
           "company": "Waymo",
-          "jobs": 54
+          "jobs": 53
         },
         {
           "company": "OpenAI",
-          "jobs": 46
+          "jobs": 47
         },
         {
           "company": "Affirm",
           "jobs": 26
         },
         {
-          "company": "Glean",
-          "jobs": 25
+          "company": "Northrop Grumman",
+          "jobs": 26
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 24
+          "company": "Glean",
+          "jobs": 25
         },
         {
           "company": "Robinhood",
@@ -4971,9 +4971,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 248,
-      "avg_jobs_per_company": 5.35,
-      "timestamp": "2026-06-03T12:19:41.056192+00:00"
+      "unique_companies": 260,
+      "avg_jobs_per_company": 5.08,
+      "timestamp": "2026-06-03T17:26:54.815523+00:00"
     }
   ]
 }
