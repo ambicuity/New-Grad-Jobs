@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2026 07:21:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:19:41 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 03 Jun 2026 10:16:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Contentful</title>
+      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
+      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 10:16:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Snowflake</title>
+      <link>https://jobs.ashbyhq.com/snowflake/e386e099-80b8-47af-bb7a-e3e8a1571d5f</link>
+      <description>New grad role at Snowflake in Pune, India. Category: Data Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 09:06:55 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/snowflake/e386e099-80b8-47af-bb7a-e3e8a1571d5f</guid>
+    </item>
+    <item>
+      <title>Enterprise IAM Software Engineer II at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7675825003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 08:42:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7675825003</guid>
+    </item>
     <item>
       <title>Data Scientist, Platform Product at Anthropic</title>
       <link>https://job-boards.greenhouse.io/anthropic/jobs/5116820008</link>
@@ -233,17 +261,17 @@
     </item>
     <item>
       <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</guid>
-    </item>
-    <item>
-      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</link>
       <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</guid>
+    </item>
+    <item>
+      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</guid>
     </item>
     <item>
       <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike at Anduril Industries</title>
@@ -282,13 +310,6 @@
     </item>
     <item>
       <title>Ground Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007</guid>
-    </item>
-    <item>
-      <title>Ground Software Engineer, Space at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5143734007?gh_jid=5143734007</link>
       <description>New grad role at Anduril Industries in Colorado Springs, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
@@ -302,18 +323,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4767772007?gh_jid=4767772007</guid>
     </item>
     <item>
+      <title>Ground Software Engineer, Space at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4497427007?gh_jid=4497427007</guid>
+    </item>
+    <item>
       <title>Industrial Engineer II  at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5037999007?gh_jid=5037999007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5037999007?gh_jid=5037999007</guid>
-    </item>
-    <item>
-      <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</link>
-      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</guid>
     </item>
     <item>
       <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
@@ -323,39 +344,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</guid>
     </item>
     <item>
+      <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</link>
+      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111318007?gh_jid=5111318007</guid>
+    </item>
+    <item>
       <title>Mission Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, C++ at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4673932007?gh_jid=4673932007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4673932007?gh_jid=4673932007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, Frontend at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, Frontend at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Air Vehicle Autonomy, GenSWE at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 01:42:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4800373007?gh_jid=4800373007</guid>
     </item>
   </channel>
 </rss>
