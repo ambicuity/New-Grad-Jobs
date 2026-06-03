@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1315,
-      "change_percent": 1.62
+      "total_jobs": 1365,
+      "change_percent": 1.64
     },
     "30_days": {
-      "total_jobs": 1340,
-      "change_percent": 3.55
+      "total_jobs": 1420,
+      "change_percent": 5.73
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
-    "data_engineering",
-    "software_engineering"
+    "software_engineering",
+    "data_ml",
+    "infrastructure_sre"
   ],
   "declining_categories": [
     "other",
-    "data_ml",
-    "n/a"
+    "data_engineering",
+    "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a structural shift around day 15, moving from a ~1000 job baseline to a ~1300 job baseline, suggesting a new wave of seasonal hiring or budget release.",
-    "Unicorn companies are currently the primary drivers of volume, showing high stability and growth compared to the more volatile 'other' company tier.",
-    "While the overall trend is bullish, the slight cooling in the last 5 days suggests a stabilization phase before the next potential growth cycle."
+    "The market underwent a structural step-up in volume around day 14, moving from a ~1000-job baseline to a ~1300-job baseline, suggesting a seasonal hiring surge.",
+    "Unicorn-tier companies are driving the bulk of the growth, indicating that venture-backed startups are aggressively expanding their entry-level talent pipelines.",
+    "While the 'other' category shows minor volatility, the core technical roles (SWE, ML, SRE) exhibit consistent upward momentum, signaling strong demand for specialized engineering skills."
   ],
-  "generated_at": "2026-06-02T02:08:27.909414+00:00",
-  "data_points": 88,
+  "generated_at": "2026-06-03T02:18:49.564865+00:00",
+  "data_points": 89,
   "date_range": {
     "start": "2026-03-05",
-    "end": "2026-06-02"
+    "end": "2026-06-03"
   }
 }
