@@ -5,8 +5,281 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2026 17:26:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 20:40:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Systems Engineer at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8512122002</link>
+      <description>New grad role at Dialpad in Kitchener, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 20:08:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8512122002</guid>
+    </item>
+    <item>
+      <title>Sales Engineer I at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8564663002</link>
+      <description>New grad role at Dialpad in Austin, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 20:08:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8564663002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Integrations) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
+      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 20:08:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Observability at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8475165002</link>
+      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 20:08:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8475165002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Search) at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8541117002</link>
+      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 20:08:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8541117002</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Hosted Model Infrastructure at Palantir</title>
+      <link>https://jobs.lever.co/palantir/7a9600be-cdcb-4311-bb5c-65b6939b5956</link>
+      <description>New grad role at Palantir in Washington, D.C.. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 19:38:40 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/7a9600be-cdcb-4311-bb5c-65b6939b5956</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Hosted Model Infrastructure at Palantir</title>
+      <link>https://jobs.lever.co/palantir/4df4cca5-e361-498b-806d-05f21638c93a</link>
+      <description>New grad role at Palantir in New York, NY. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 19:38:18 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/4df4cca5-e361-498b-806d-05f21638c93a</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Hosted Model Infrastructure at Palantir</title>
+      <link>https://jobs.lever.co/palantir/e9aecd15-c7e9-4803-9928-fc0b67e70f5b</link>
+      <description>New grad role at Palantir in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 19:36:18 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/e9aecd15-c7e9-4803-9928-fc0b67e70f5b</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ads Product  at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5152408007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 18:41:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5152408007</guid>
+    </item>
+    <item>
+      <title>Data Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5120884007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 03 Jun 2026 18:41:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5120884007</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Data at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5124616007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 18:41:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5124616007</guid>
+    </item>
+    <item>
+      <title>Infrastructure Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Azure Government at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
+    </item>
+    <item>
+      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Detection &amp; Response at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Governance Risk Compliance at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
+    </item>
+    <item>
+      <title>Exceptional Software Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
+      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:44 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
+    </item>
+    <item>
+      <title>Network Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4870731007</link>
+      <description>New grad role at xAI in Memphis, TN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4870731007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Platform Security at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
+    </item>
+    <item>
+      <title>Network Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:39 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Cybersecurity at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4803447007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:39 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803447007</guid>
+    </item>
+    <item>
+      <title>Network Engineer - AI/HPC at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4946691007</link>
+      <description>New grad role at xAI in Memphis, TN; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4946691007</guid>
+    </item>
+    <item>
+      <title>Application Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 03 Jun 2026 18:40:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Tactical Reconnaissance &amp; Strike at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 03 Jun 2026 18:33:13 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:36:48 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>IAM Security Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
+      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
+      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
+      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
+      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7235322</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
+      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Migration at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523834</link>
+      <description>New grad role at MongoDB in California; Oregon; Washington. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523834</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Developer Productivity at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Wed, 03 Jun 2026 17:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7851388</guid>
+    </item>
     <item>
       <title>Early Career Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
@@ -71,97 +344,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4775860007?gh_jid=4775860007</guid>
     </item>
     <item>
-      <title>IAM Security Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7656724</link>
-      <description>New grad role at MongoDB in United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7656724</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
-      <description>New grad role at MongoDB in New York City. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
-      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7235322</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7235322</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Migration at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523834</link>
-      <description>New grad role at MongoDB in California; Oregon; Washington. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523834</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Developer Productivity at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7851388</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 15:15:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7851388</guid>
-    </item>
-    <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
       <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
@@ -174,188 +356,6 @@
       <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
       <pubDate>Wed, 03 Jun 2026 14:34:52 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L3) Infrastructure at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7767260</link>
-      <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:31:37 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7846633</link>
-      <description>New grad role at Twilio in Remote - Spain. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:30:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7846633</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:30:35 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:28:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer II, Security Operations at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7816431</link>
-      <description>New grad role at Pinterest in Chicago, IL, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:07:54 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7816431</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer II, Detection and Response at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7770914</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:04:42 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7770914</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Simulation, tvScientific at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7642265</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 14:01:58 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7642265</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer II, Corporate Security at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7494666</link>
-      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 13:58:05 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7494666</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7548713</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 03 Jun 2026 10:16:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7548713</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Contentful</title>
-      <link>https://job-boards.greenhouse.io/contentful/jobs/7544099</link>
-      <description>New grad role at Contentful in Denver, Colorado, United States. Category: Data Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 10:16:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/contentful/jobs/7544099</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Snowflake</title>
-      <link>https://jobs.ashbyhq.com/snowflake/e386e099-80b8-47af-bb7a-e3e8a1571d5f</link>
-      <description>New grad role at Snowflake in Pune, India. Category: Data Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 09:06:55 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/snowflake/e386e099-80b8-47af-bb7a-e3e8a1571d5f</guid>
-    </item>
-    <item>
-      <title>Enterprise IAM Software Engineer II at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7675825003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 08:42:23 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7675825003</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Platform Product at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5116820008</link>
-      <description>New grad role at Anthropic in New York City, NY | Seattle, WA; San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 03 Jun 2026 07:00:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5116820008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Performance - New Grad at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7978432</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 04:38:51 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7978432</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Performance at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7978428</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 04:38:50 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7978428</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975531?t=gh_src=&amp;gh_jid=7975531</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:22:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975531?t=gh_src=&amp;gh_jid=7975531</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agentic AI at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975477?t=gh_src=&amp;gh_jid=7975477</link>
-      <description>New grad role at Robinhood in Bellevue, WA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:19:03 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975477?t=gh_src=&amp;gh_jid=7975477</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975550?t=gh_src=&amp;gh_jid=7975550</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:16:42 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975550?t=gh_src=&amp;gh_jid=7975550</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975549?t=gh_src=&amp;gh_jid=7975549</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:13:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975549?t=gh_src=&amp;gh_jid=7975549</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975530?t=gh_src=&amp;gh_jid=7975530</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:10:29 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975530?t=gh_src=&amp;gh_jid=7975530</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975529?t=gh_src=&amp;gh_jid=7975529</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:08:13 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975529?t=gh_src=&amp;gh_jid=7975529</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975526?t=gh_src=&amp;gh_jid=7975526</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:03:59 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975526?t=gh_src=&amp;gh_jid=7975526</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975516?t=gh_src=&amp;gh_jid=7975516</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 03:01:49 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975516?t=gh_src=&amp;gh_jid=7975516</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975507?t=gh_src=&amp;gh_jid=7975507</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 02:59:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975507?t=gh_src=&amp;gh_jid=7975507</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975480?t=gh_src=&amp;gh_jid=7975480</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 02:56:59 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975480?t=gh_src=&amp;gh_jid=7975480</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7960734?t=gh_src=&amp;gh_jid=7960734</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 03 Jun 2026 02:54:11 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7960734?t=gh_src=&amp;gh_jid=7960734</guid>
     </item>
   </channel>
 </rss>
