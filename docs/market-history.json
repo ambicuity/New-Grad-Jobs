@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-04T05:29:13.281823+00:00",
+    "last_updated": "2026-06-04T09:16:07.795046+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-06",
@@ -4922,20 +4922,20 @@
     },
     {
       "date": "2026-06-04",
-      "total_jobs": 1349,
+      "total_jobs": 1357,
       "categories": {
-        "software_engineering": 891,
-        "data_engineering": 33,
+        "software_engineering": 887,
         "data_ml": 140,
+        "data_engineering": 36,
+        "infrastructure_sre": 169,
         "other": 111,
-        "infrastructure_sre": 161,
-        "hardware": 10,
+        "hardware": 11,
         "quant_finance": 3
       },
       "tiers": {
-        "other": 545,
-        "unicorn": 659,
-        "faang_plus": 145
+        "faang_plus": 138,
+        "unicorn": 660,
+        "other": 559
       },
       "top_companies": [
         {
@@ -4975,13 +4975,13 @@
           "jobs": 22
         },
         {
-          "company": "Boeing",
-          "jobs": 21
+          "company": "Anthropic",
+          "jobs": 20
         }
       ],
-      "unique_companies": 258,
-      "avg_jobs_per_company": 5.23,
-      "timestamp": "2026-06-04T05:29:13.280968+00:00"
+      "unique_companies": 257,
+      "avg_jobs_per_company": 5.28,
+      "timestamp": "2026-06-04T09:16:07.794196+00:00"
     }
   ]
 }
