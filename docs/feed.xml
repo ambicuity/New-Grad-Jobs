@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 00:31:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 05:29:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Fabric Gateway  at Postman</title>
+      <link>https://job-boards.greenhouse.io/postman/jobs/7762145003</link>
+      <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 04:35:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7762145003</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Geometry Team at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7733702</link>
+      <description>New grad role at Waymo in Kirkland, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 01:38:35 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7733702</guid>
+    </item>
     <item>
       <title>Software Engineer, Early Career at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7485068003</link>
@@ -15,11 +29,25 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7485068003</guid>
     </item>
     <item>
+      <title>Software Developer at Birrdd Software Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=85612959e7f65fd9</link>
+      <description>New grad role at Birrdd Software Solutions in Dearborn, MI, US. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=85612959e7f65fd9</guid>
+    </item>
+    <item>
       <title>Software Developer Engineer 4 at Adobe</title>
       <link>https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Software-Developer-Engineer_R164352</link>
       <description>New grad role at Adobe in San Jose. Category: Software Engineering</description>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Software-Developer-Engineer_R164352</guid>
+    </item>
+    <item>
+      <title>Data Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Engineer-II_R-278708</link>
+      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Engineer-II_R-278708</guid>
     </item>
     <item>
       <title>Software Engineer II at Mastercard</title>
@@ -71,11 +99,32 @@
       <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Software-Engineer_3162970-1</guid>
     </item>
     <item>
-      <title>Software Engineer( Go Lang) at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer--Go-Lang-_26WD98504-1</link>
-      <description>New grad role at Autodesk in Bengaluru, IND. Category: Software Engineering</description>
+      <title>Summer Analyst Program - Corporate Advisory - Summer Analyst, Melbourne Australia (APAC) - 2026 at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Melbourne-Victoria-Australia/Summer-Analyst-Program---Corporate-Advisory---Summer-Analyst--Melbourne-Australia--APAC----2026_26953539</link>
+      <description>New grad role at Citi in Melbourne Victoria Australia. Category: Other</description>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer--Go-Lang-_26WD98504-1</guid>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Melbourne-Victoria-Australia/Summer-Analyst-Program---Corporate-Advisory---Summer-Analyst--Melbourne-Australia--APAC----2026_26953539</guid>
+    </item>
+    <item>
+      <title>Process Engineer I at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Process-Engineer-I_R67522-1</link>
+      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Process-Engineer-I_R67522-1</guid>
+    </item>
+    <item>
+      <title>Manufacturing Engineer I at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-I_R68341-1</link>
+      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-I_R68341-1</guid>
+    </item>
+    <item>
+      <title>Manufacturing Engineer I at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-I_R68347-1</link>
+      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-I_R68347-1</guid>
     </item>
     <item>
       <title>Process Engineer I at Medtronic</title>
@@ -307,55 +356,6 @@
       <description>New grad role at Boeing in USA - Seattle, WA. Category: Other</description>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seattle-WA/Associate-Supply-Chain-Specialist--Supply-Chain-Management-_JR2026513309-1</guid>
-    </item>
-    <item>
-      <title>Associate Guidance Navigation &amp; Control (GNC) Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Guidance-Navigation---Control--GNC--Engineer_JR2026506707</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Other</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Guidance-Navigation---Control--GNC--Engineer_JR2026506707</guid>
-    </item>
-    <item>
-      <title>Industrial Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Industrial-Engineer--Associate-or-Experienced-_JR2026510128-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Industrial-Engineer--Associate-or-Experienced-_JR2026510128-1</guid>
-    </item>
-    <item>
-      <title>Entry Level or Associate Supply Chain Specialist at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Mesa-AZ/Entry-Level-or-Associate-Supply-Chain-Specialist_JR2026512596-1</link>
-      <description>New grad role at Boeing in USA - Mesa, AZ. Category: Other</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Mesa-AZ/Entry-Level-or-Associate-Supply-Chain-Specialist_JR2026512596-1</guid>
-    </item>
-    <item>
-      <title>Mid-Level Software Developer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Mid-Level-Software-Developer_JR2026512138-1</link>
-      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Mid-Level-Software-Developer_JR2026512138-1</guid>
-    </item>
-    <item>
-      <title>Data Scientist (Data Science) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Everett-WA/Data-Scientist--Data-Science-_JR2026496611</link>
-      <description>New grad role at Boeing in USA - Everett, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Everett-WA/Data-Scientist--Data-Science-_JR2026496611</guid>
-    </item>
-    <item>
-      <title>Entry Level Spacecraft RF Payload Engineer - Millennium Space Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Entry-Level-Spacecraft-RF-Payload-Engineer---Millennium-Space-Systems_JR2026507141-1</link>
-      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Other</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Entry-Level-Spacecraft-RF-Payload-Engineer---Millennium-Space-Systems_JR2026507141-1</guid>
-    </item>
-    <item>
-      <title>Systems Test &amp; Evaluation Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Systems-Test---Evaluation-Engineer--Associate-or-Experienced-_JR2026508018-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Systems-Test---Evaluation-Engineer--Associate-or-Experienced-_JR2026508018-1</guid>
     </item>
   </channel>
 </rss>
