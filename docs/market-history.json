@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-04T20:37:25.989510+00:00",
+    "last_updated": "2026-06-04T22:13:27.947365+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-06",
@@ -4922,20 +4922,20 @@
     },
     {
       "date": "2026-06-04",
-      "total_jobs": 1345,
+      "total_jobs": 1343,
       "categories": {
-        "software_engineering": 875,
         "data_ml": 140,
-        "infrastructure_sre": 170,
-        "data_engineering": 35,
-        "other": 105,
-        "hardware": 16,
+        "software_engineering": 872,
+        "data_engineering": 34,
+        "infrastructure_sre": 162,
+        "other": 120,
+        "hardware": 11,
         "quant_finance": 4
       },
       "tiers": {
+        "other": 543,
         "unicorn": 658,
-        "faang_plus": 144,
-        "other": 543
+        "faang_plus": 142
       },
       "top_companies": [
         {
@@ -4944,7 +4944,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 152
+          "jobs": 150
         },
         {
           "company": "Waymo",
@@ -4952,7 +4952,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 48
+          "jobs": 49
         },
         {
           "company": "Boeing",
@@ -4967,11 +4967,11 @@
           "jobs": 25
         },
         {
-          "company": "Robinhood",
-          "jobs": 23
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Robinhood",
           "jobs": 23
         },
         {
@@ -4979,9 +4979,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 253,
-      "avg_jobs_per_company": 5.32,
-      "timestamp": "2026-06-04T20:37:25.988573+00:00"
+      "unique_companies": 255,
+      "avg_jobs_per_company": 5.27,
+      "timestamp": "2026-06-04T22:13:27.946635+00:00"
     }
   ]
 }

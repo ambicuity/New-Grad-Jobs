@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 20:37:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 22:13:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026 Early Career Financial Analyst at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 04 Jun 2026 21:59:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full Stack - Cybersecurity Products at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/88654e7f-4e23-4e75-8e54-18c10d09b093</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 21:16:59 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/88654e7f-4e23-4e75-8e54-18c10d09b093</guid>
+    </item>
+    <item>
+      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 20:45:56 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</guid>
+    </item>
+    <item>
+      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 20:45:56 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</guid>
+    </item>
     <item>
       <title>Analyst I, Full Stack (Core Analytics) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7726627003</link>
@@ -239,13 +267,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</guid>
     </item>
     <item>
-      <title>2026 Early Career Financial Analyst at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 19:14:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</guid>
-    </item>
-    <item>
       <title>Security Engineer 2 - Cyber Threat Intelligence at Datadog</title>
       <link>https://careers.datadoghq.com/detail/7982345/?gh_jid=7982345</link>
       <description>New grad role at Datadog in New York, New York, USA. Category: Infrastructure &amp; SRE</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506008</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Simulation Realism at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6499165</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6499165</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Simulation Realism  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6688617</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6688617</guid>
-    </item>
-    <item>
-      <title>Network Security Engineer  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7435894</link>
-      <description>New grad role at Waymo in Chicago ,IL, USA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7435894</guid>
     </item>
   </channel>
 </rss>
