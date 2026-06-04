@@ -3,33 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1365,
-      "change_percent": 1.64
+      "change_percent": 1.19
     },
     "30_days": {
-      "total_jobs": 1420,
-      "change_percent": 5.73
+      "total_jobs": 1415,
+      "change_percent": 4.89
     }
   },
   "growing_categories": [
+    "faang_plus",
     "software_engineering",
-    "data_ml",
-    "infrastructure_sre"
+    "data_ml"
   ],
   "declining_categories": [
     "other",
-    "data_engineering",
-    "none"
+    "infrastructure_sre",
+    "data_engineering"
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a structural step-up in volume around day 14, moving from a ~1000-job baseline to a ~1300-job baseline, suggesting a seasonal hiring surge.",
-    "Unicorn-tier companies are driving the bulk of the growth, indicating that venture-backed startups are aggressively expanding their entry-level talent pipelines.",
-    "While the 'other' category shows minor volatility, the core technical roles (SWE, ML, SRE) exhibit consistent upward momentum, signaling strong demand for specialized engineering skills."
+    "The market underwent a significant structural shift mid-month, moving from a baseline of ~1000 jobs to a new support level of ~1300, indicating a surge in seasonal hiring activity.",
+    "FAANG+ companies are showing strong momentum, suggesting that top-tier firms are aggressively securing new graduate talent despite broader economic volatility.",
+    "The 7-day average (1323) is significantly higher than the 30-day average (1196), confirming a strong upward trend that is likely to continue as hiring cycles mature."
   ],
-  "generated_at": "2026-06-03T02:18:49.564865+00:00",
+  "generated_at": "2026-06-04T00:31:47.748678+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-05",
-    "end": "2026-06-03"
+    "start": "2026-03-06",
+    "end": "2026-06-04"
   }
 }
