@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 22:13:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 23:41:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer I - Backend at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7687408003?gh_jid=7687408003</link>
+      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 22:51:28 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7687408003?gh_jid=7687408003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Abnormal Data Platform at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7694258003?gh_jid=7694258003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Thu, 04 Jun 2026 22:51:20 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694258003?gh_jid=7694258003</guid>
+    </item>
     <item>
       <title>2026 Early Career Financial Analyst at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7469421</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Runtime &amp; Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506008</link>
-      <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 04 Jun 2026 18:47:38 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506008</guid>
     </item>
   </channel>
 </rss>

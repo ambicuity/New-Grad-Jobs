@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-04T22:13:27.947365+00:00",
+    "last_updated": "2026-06-04T23:41:56.331580+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-06",
@@ -4922,25 +4922,25 @@
     },
     {
       "date": "2026-06-04",
-      "total_jobs": 1343,
+      "total_jobs": 1337,
       "categories": {
+        "software_engineering": 876,
         "data_ml": 140,
-        "software_engineering": 872,
-        "data_engineering": 34,
+        "data_engineering": 35,
         "infrastructure_sre": 162,
-        "other": 120,
+        "other": 109,
         "hardware": 11,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 543,
-        "unicorn": 658,
-        "faang_plus": 142
+        "other": 528,
+        "unicorn": 656,
+        "faang_plus": 153
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 192
+          "jobs": 190
         },
         {
           "company": "Anduril Industries",
@@ -4956,7 +4956,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 30
         },
         {
           "company": "Affirm",
@@ -4979,9 +4979,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 255,
-      "avg_jobs_per_company": 5.27,
-      "timestamp": "2026-06-04T22:13:27.946635+00:00"
+      "unique_companies": 245,
+      "avg_jobs_per_company": 5.46,
+      "timestamp": "2026-06-04T23:41:56.330742+00:00"
     }
   ]
 }
