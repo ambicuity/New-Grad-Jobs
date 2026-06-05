@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-05T10:33:21.986785+00:00",
+    "last_updated": "2026-06-05T13:43:23.878624+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-07",
@@ -4930,20 +4930,20 @@
     },
     {
       "date": "2026-06-05",
-      "total_jobs": 1332,
+      "total_jobs": 1331,
       "categories": {
-        "software_engineering": 870,
-        "data_ml": 142,
-        "data_engineering": 30,
-        "infrastructure_sre": 160,
-        "other": 113,
-        "hardware": 14,
+        "software_engineering": 866,
+        "data_ml": 141,
+        "data_engineering": 31,
+        "infrastructure_sre": 167,
+        "other": 108,
+        "hardware": 15,
         "quant_finance": 3
       },
       "tiers": {
+        "other": 520,
         "unicorn": 657,
-        "other": 519,
-        "faang_plus": 156
+        "faang_plus": 154
       },
       "top_companies": [
         {
@@ -4952,7 +4952,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 149
+          "jobs": 150
         },
         {
           "company": "OpenAI",
@@ -4964,7 +4964,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 33
+          "jobs": 32
         },
         {
           "company": "Affirm",
@@ -4987,9 +4987,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 243,
-      "avg_jobs_per_company": 5.48,
-      "timestamp": "2026-06-05T10:33:21.985895+00:00"
+      "unique_companies": 244,
+      "avg_jobs_per_company": 5.45,
+      "timestamp": "2026-06-05T13:43:23.877457+00:00"
     }
   ]
 }
