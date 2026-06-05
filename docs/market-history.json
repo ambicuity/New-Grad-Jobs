@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-05T18:22:23.563893+00:00",
+    "last_updated": "2026-06-05T20:23:51.586626+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-07",
@@ -4930,20 +4930,20 @@
     },
     {
       "date": "2026-06-05",
-      "total_jobs": 1375,
+      "total_jobs": 1373,
       "categories": {
-        "software_engineering": 880,
-        "infrastructure_sre": 182,
         "data_ml": 150,
-        "data_engineering": 31,
-        "other": 113,
+        "infrastructure_sre": 183,
+        "software_engineering": 880,
+        "other": 111,
+        "data_engineering": 30,
         "hardware": 15,
         "quant_finance": 4
       },
       "tiers": {
-        "unicorn": 654,
-        "faang_plus": 152,
-        "other": 569
+        "faang_plus": 150,
+        "unicorn": 660,
+        "other": 563
       },
       "top_companies": [
         {
@@ -4963,11 +4963,11 @@
           "jobs": 50
         },
         {
-          "company": "Boeing",
-          "jobs": 28
+          "company": "Affirm",
+          "jobs": 26
         },
         {
-          "company": "Affirm",
+          "company": "Boeing",
           "jobs": 26
         },
         {
@@ -4987,9 +4987,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 251,
-      "avg_jobs_per_company": 5.48,
-      "timestamp": "2026-06-05T18:22:23.562869+00:00"
+      "unique_companies": 245,
+      "avg_jobs_per_company": 5.6,
+      "timestamp": "2026-06-05T20:23:51.585872+00:00"
     }
   ]
 }
