@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-05T20:23:51.586626+00:00",
+    "last_updated": "2026-06-05T21:56:32.909401+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-07",
@@ -4930,20 +4930,20 @@
     },
     {
       "date": "2026-06-05",
-      "total_jobs": 1373,
+      "total_jobs": 1371,
       "categories": {
+        "software_engineering": 879,
         "data_ml": 150,
-        "infrastructure_sre": 183,
-        "software_engineering": 880,
-        "other": 111,
+        "infrastructure_sre": 194,
+        "other": 100,
         "data_engineering": 30,
-        "hardware": 15,
+        "hardware": 14,
         "quant_finance": 4
       },
       "tiers": {
-        "faang_plus": 150,
-        "unicorn": 660,
-        "other": 563
+        "faang_plus": 147,
+        "unicorn": 659,
+        "other": 565
       },
       "top_companies": [
         {
@@ -4968,7 +4968,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 26
+          "jobs": 25
         },
         {
           "company": "Glean",
@@ -4987,9 +4987,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 245,
-      "avg_jobs_per_company": 5.6,
-      "timestamp": "2026-06-05T20:23:51.585872+00:00"
+      "unique_companies": 256,
+      "avg_jobs_per_company": 5.36,
+      "timestamp": "2026-06-05T21:56:32.908531+00:00"
     }
   ]
 }
