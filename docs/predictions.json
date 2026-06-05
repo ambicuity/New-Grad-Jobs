@@ -3,33 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1365,
-      "change_percent": 1.19
+      "change_percent": 1.26
     },
     "30_days": {
       "total_jobs": 1415,
-      "change_percent": 4.89
+      "change_percent": 4.97
     }
   },
   "growing_categories": [
-    "faang_plus",
-    "software_engineering",
-    "data_ml"
+    "data_ml",
+    "data_engineering",
+    "infrastructure_sre"
   ],
   "declining_categories": [
+    "software_engineering",
     "other",
-    "infrastructure_sre",
-    "data_engineering"
+    "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a significant structural shift mid-month, moving from a baseline of ~1000 jobs to a new support level of ~1300, indicating a surge in seasonal hiring activity.",
-    "FAANG+ companies are showing strong momentum, suggesting that top-tier firms are aggressively securing new graduate talent despite broader economic volatility.",
-    "The 7-day average (1323) is significantly higher than the 30-day average (1196), confirming a strong upward trend that is likely to continue as hiring cycles mature."
+    "The market has undergone a structural shift, moving from a ~1000-job baseline to a ~1300-job baseline, signaling a significant increase in new graduate hiring capacity.",
+    "FAANG+ and Unicorn tiers are showing consistent upward momentum, suggesting that large-scale employers are leading the current expansion in entry-level roles.",
+    "While general software engineering roles are plateauing, specialized technical fields like Data/ML and SRE are demonstrating steady, incremental growth, indicating a shift toward higher-skill requirements for new graduates."
   ],
-  "generated_at": "2026-06-04T00:31:47.748678+00:00",
+  "generated_at": "2026-06-05T01:57:09.488255+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-06",
-    "end": "2026-06-04"
+    "start": "2026-03-07",
+    "end": "2026-06-05"
   }
 }
