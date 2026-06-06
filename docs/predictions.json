@@ -2,34 +2,33 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1365,
-      "change_percent": 1.26
+      "total_jobs": 1395,
+      "change_percent": 0.94
     },
     "30_days": {
-      "total_jobs": 1415,
-      "change_percent": 4.97
+      "total_jobs": 1450,
+      "change_percent": 4.92
     }
   },
   "growing_categories": [
+    "infrastructure_sre",
     "data_ml",
-    "data_engineering",
-    "infrastructure_sre"
+    "software_engineering"
   ],
   "declining_categories": [
-    "software_engineering",
     "other",
-    "none"
+    "data_engineering"
   ],
   "confidence": 75,
   "insights": [
-    "The market has undergone a structural shift, moving from a ~1000-job baseline to a ~1300-job baseline, signaling a significant increase in new graduate hiring capacity.",
-    "FAANG+ and Unicorn tiers are showing consistent upward momentum, suggesting that large-scale employers are leading the current expansion in entry-level roles.",
-    "While general software engineering roles are plateauing, specialized technical fields like Data/ML and SRE are demonstrating steady, incremental growth, indicating a shift toward higher-skill requirements for new graduates."
+    "The market underwent a significant structural shift around day 11, moving from a ~1000 job baseline to a ~1350 baseline, indicating a sustained increase in hiring capacity.",
+    "Growth is heavily concentrated in high-leverage technical roles like SRE and ML, suggesting companies are prioritizing infrastructure and AI capabilities over generalist or administrative roles.",
+    "The 7-day average (1339) is significantly higher than the 30-day average (1221), confirming a strong upward momentum that is likely to stabilize at a higher plateau rather than revert to previous lows."
   ],
-  "generated_at": "2026-06-05T01:57:09.488255+00:00",
+  "generated_at": "2026-06-06T00:22:13.998164+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-07",
-    "end": "2026-06-05"
+    "start": "2026-03-08",
+    "end": "2026-06-06"
   }
 }
