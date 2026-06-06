@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-06T00:22:12.680121+00:00",
+    "last_updated": "2026-06-06T04:35:55.923326+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-08",
@@ -4938,20 +4938,20 @@
     },
     {
       "date": "2026-06-06",
-      "total_jobs": 1382,
+      "total_jobs": 1391,
       "categories": {
-        "software_engineering": 884,
-        "data_ml": 149,
-        "infrastructure_sre": 196,
-        "other": 106,
+        "software_engineering": 899,
+        "data_ml": 148,
+        "infrastructure_sre": 184,
+        "other": 109,
         "data_engineering": 30,
-        "hardware": 14,
-        "quant_finance": 3
+        "hardware": 16,
+        "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 660,
-        "other": 570,
-        "faang_plus": 152
+        "unicorn": 661,
+        "other": 579,
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -4964,7 +4964,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 50
+          "jobs": 51
         },
         {
           "company": "Waymo",
@@ -4972,32 +4972,32 @@
         },
         {
           "company": "Boeing",
-          "jobs": 29
+          "jobs": 28
         },
         {
           "company": "Affirm",
           "jobs": 26
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 25
+          "company": "Accenture",
+          "jobs": 26
         },
         {
           "company": "Glean",
           "jobs": 25
         },
         {
-          "company": "Stripe",
+          "company": "Northrop Grumman",
           "jobs": 23
         },
         {
-          "company": "Robinhood",
+          "company": "Stripe",
           "jobs": 23
         }
       ],
-      "unique_companies": 251,
-      "avg_jobs_per_company": 5.51,
-      "timestamp": "2026-06-06T00:22:12.679177+00:00"
+      "unique_companies": 259,
+      "avg_jobs_per_company": 5.37,
+      "timestamp": "2026-06-06T04:35:55.922303+00:00"
     }
   ]
 }
