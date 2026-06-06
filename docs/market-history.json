@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-06T07:38:53.585923+00:00",
+    "last_updated": "2026-06-06T09:41:01.295585+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-08",
@@ -4938,20 +4938,20 @@
     },
     {
       "date": "2026-06-06",
-      "total_jobs": 1348,
+      "total_jobs": 1374,
       "categories": {
-        "software_engineering": 877,
-        "data_ml": 145,
+        "software_engineering": 891,
+        "data_ml": 149,
         "infrastructure_sre": 179,
-        "other": 93,
-        "hardware": 17,
+        "other": 106,
         "data_engineering": 32,
+        "hardware": 12,
         "quant_finance": 5
       },
       "tiers": {
+        "other": 565,
         "unicorn": 661,
-        "other": 571,
-        "faang_plus": 116
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -4969,6 +4969,10 @@
         {
           "company": "Waymo",
           "jobs": 50
+        },
+        {
+          "company": "Boeing",
+          "jobs": 27
         },
         {
           "company": "Affirm",
@@ -4989,15 +4993,11 @@
         {
           "company": "Robinhood",
           "jobs": 23
-        },
-        {
-          "company": "Accenture",
-          "jobs": 22
         }
       ],
-      "unique_companies": 249,
-      "avg_jobs_per_company": 5.41,
-      "timestamp": "2026-06-06T07:38:53.585124+00:00"
+      "unique_companies": 248,
+      "avg_jobs_per_company": 5.54,
+      "timestamp": "2026-06-06T09:41:01.294549+00:00"
     }
   ]
 }
