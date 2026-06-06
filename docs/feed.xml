@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2026 04:35:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 07:38:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Sat, 06 Jun 2026 04:37:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
+    </item>
     <item>
       <title>Software Engineer, Cloud Agents at OpenAI</title>
       <link>https://jobs.ashbyhq.com/openai/f6278b60-dd42-4aa8-a3cd-c105f75ae8ae</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 06 Jun 2026 01:16:56 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131822007?gh_jid=5131822007</guid>
-    </item>
-    <item>
-      <title>Product Data Engineer, Autonomous Airpower at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5107205007?gh_jid=5107205007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 06 Jun 2026 01:16:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5107205007?gh_jid=5107205007</guid>
     </item>
   </channel>
 </rss>

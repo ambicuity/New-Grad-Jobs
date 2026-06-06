@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-06T04:35:55.923326+00:00",
+    "last_updated": "2026-06-06T07:38:53.585923+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-08",
@@ -4938,20 +4938,20 @@
     },
     {
       "date": "2026-06-06",
-      "total_jobs": 1391,
+      "total_jobs": 1348,
       "categories": {
-        "software_engineering": 899,
-        "data_ml": 148,
-        "infrastructure_sre": 184,
-        "other": 109,
-        "data_engineering": 30,
-        "hardware": 16,
+        "software_engineering": 877,
+        "data_ml": 145,
+        "infrastructure_sre": 179,
+        "other": 93,
+        "hardware": 17,
+        "data_engineering": 32,
         "quant_finance": 5
       },
       "tiers": {
         "unicorn": 661,
-        "other": 579,
-        "faang_plus": 151
+        "other": 571,
+        "faang_plus": 116
       },
       "top_companies": [
         {
@@ -4971,15 +4971,7 @@
           "jobs": 50
         },
         {
-          "company": "Boeing",
-          "jobs": 28
-        },
-        {
           "company": "Affirm",
-          "jobs": 26
-        },
-        {
-          "company": "Accenture",
           "jobs": 26
         },
         {
@@ -4987,17 +4979,25 @@
           "jobs": 25
         },
         {
+          "company": "Stripe",
+          "jobs": 23
+        },
+        {
           "company": "Northrop Grumman",
           "jobs": 23
         },
         {
-          "company": "Stripe",
+          "company": "Robinhood",
           "jobs": 23
+        },
+        {
+          "company": "Accenture",
+          "jobs": 22
         }
       ],
-      "unique_companies": 259,
-      "avg_jobs_per_company": 5.37,
-      "timestamp": "2026-06-06T04:35:55.922303+00:00"
+      "unique_companies": 249,
+      "avg_jobs_per_company": 5.41,
+      "timestamp": "2026-06-06T07:38:53.585124+00:00"
     }
   ]
 }
