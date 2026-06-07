@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-07T15:55:23.252426+00:00",
+    "last_updated": "2026-06-07T17:11:17.243024+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-09",
@@ -4946,19 +4946,19 @@
     },
     {
       "date": "2026-06-07",
-      "total_jobs": 1341,
+      "total_jobs": 1344,
       "categories": {
-        "software_engineering": 883,
+        "software_engineering": 886,
         "other": 97,
-        "data_ml": 143,
         "infrastructure_sre": 171,
+        "data_ml": 143,
         "hardware": 12,
         "data_engineering": 30,
         "quant_finance": 5
       },
       "tiers": {
-        "other": 532,
-        "unicorn": 657,
+        "other": 536,
+        "unicorn": 656,
         "faang_plus": 152
       },
       "top_companies": [
@@ -4979,12 +4979,12 @@
           "jobs": 50
         },
         {
-          "company": "Affirm",
+          "company": "Boeing",
           "jobs": 26
         },
         {
-          "company": "Boeing",
-          "jobs": 26
+          "company": "Affirm",
+          "jobs": 25
         },
         {
           "company": "Glean",
@@ -5004,8 +5004,8 @@
         }
       ],
       "unique_companies": 243,
-      "avg_jobs_per_company": 5.52,
-      "timestamp": "2026-06-07T15:55:23.251630+00:00"
+      "avg_jobs_per_company": 5.53,
+      "timestamp": "2026-06-07T17:11:17.242275+00:00"
     }
   ]
 }
