@@ -2,18 +2,18 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1395,
-      "change_percent": 0.94
+      "total_jobs": 1375,
+      "change_percent": 0.59
     },
     "30_days": {
-      "total_jobs": 1450,
-      "change_percent": 4.92
+      "total_jobs": 1415,
+      "change_percent": 3.51
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
+    "software_engineering",
     "data_ml",
-    "software_engineering"
+    "infrastructure_sre"
   ],
   "declining_categories": [
     "other",
@@ -21,14 +21,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market underwent a significant structural shift around day 11, moving from a ~1000 job baseline to a ~1350 baseline, indicating a sustained increase in hiring capacity.",
-    "Growth is heavily concentrated in high-leverage technical roles like SRE and ML, suggesting companies are prioritizing infrastructure and AI capabilities over generalist or administrative roles.",
-    "The 7-day average (1339) is significantly higher than the 30-day average (1221), confirming a strong upward momentum that is likely to stabilize at a higher plateau rather than revert to previous lows."
+    "The market has successfully established a new, higher support level above 1,300 jobs, representing a significant structural shift from the sub-1,000 job counts observed early last month.",
+    "Growth is being driven primarily by core engineering and AI/ML roles, while 'other' categories show signs of consolidation, suggesting a flight to quality and technical specialization in hiring.",
+    "The sustained stability in 'unicorn' and 'faang_plus' tiers indicates that large-scale employers are maintaining consistent hiring pipelines, providing a strong floor for the overall market trajectory."
   ],
-  "generated_at": "2026-06-06T00:22:13.998164+00:00",
+  "generated_at": "2026-06-07T00:17:30.835053+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-08",
-    "end": "2026-06-06"
+    "start": "2026-03-09",
+    "end": "2026-06-07"
   }
 }
