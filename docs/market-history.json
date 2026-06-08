@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-08T21:11:00.092862+00:00",
+    "last_updated": "2026-06-08T22:52:57.189852+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-10",
@@ -4954,20 +4954,20 @@
     },
     {
       "date": "2026-06-08",
-      "total_jobs": 1341,
+      "total_jobs": 1339,
       "categories": {
-        "data_ml": 138,
-        "software_engineering": 888,
-        "infrastructure_sre": 173,
-        "data_engineering": 38,
-        "other": 91,
+        "software_engineering": 878,
+        "data_ml": 136,
+        "infrastructure_sre": 177,
+        "data_engineering": 36,
+        "other": 99,
         "quant_finance": 5,
         "hardware": 8
       },
       "tiers": {
-        "unicorn": 648,
-        "other": 540,
-        "faang_plus": 153
+        "other": 541,
+        "unicorn": 647,
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -4976,7 +4976,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 150
+          "jobs": 151
         },
         {
           "company": "OpenAI",
@@ -4987,11 +4987,11 @@
           "jobs": 49
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 26
+          "company": "Affirm",
+          "jobs": 25
         },
         {
-          "company": "Affirm",
+          "company": "Northrop Grumman",
           "jobs": 25
         },
         {
@@ -5007,13 +5007,13 @@
           "jobs": 22
         },
         {
-          "company": "Leidos",
-          "jobs": 22
+          "company": "Anthropic",
+          "jobs": 20
         }
       ],
-      "unique_companies": 240,
-      "avg_jobs_per_company": 5.59,
-      "timestamp": "2026-06-08T21:11:00.091891+00:00"
+      "unique_companies": 243,
+      "avg_jobs_per_company": 5.51,
+      "timestamp": "2026-06-08T22:52:57.189042+00:00"
     }
   ]
 }
