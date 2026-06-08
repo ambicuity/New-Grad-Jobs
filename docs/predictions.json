@@ -2,33 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1375,
-      "change_percent": 0.59
+      "total_jobs": 1355,
+      "change_percent": 0.89
     },
     "30_days": {
-      "total_jobs": 1415,
-      "change_percent": 3.51
+      "total_jobs": 1385,
+      "change_percent": 3.13
     }
   },
   "growing_categories": [
-    "software_engineering",
+    "infrastructure_sre",
     "data_ml",
-    "infrastructure_sre"
+    "software_engineering"
   ],
   "declining_categories": [
     "other",
-    "data_engineering"
+    "data_engineering",
+    "none"
   ],
-  "confidence": 75,
+  "confidence": 85,
   "insights": [
-    "The market has successfully established a new, higher support level above 1,300 jobs, representing a significant structural shift from the sub-1,000 job counts observed early last month.",
-    "Growth is being driven primarily by core engineering and AI/ML roles, while 'other' categories show signs of consolidation, suggesting a flight to quality and technical specialization in hiring.",
-    "The sustained stability in 'unicorn' and 'faang_plus' tiers indicates that large-scale employers are maintaining consistent hiring pipelines, providing a strong floor for the overall market trajectory."
+    "The market has successfully transitioned to a higher baseline of ~1350 jobs following a significant step-up in hiring volume mid-month.",
+    "Stability in FAANG+ and Unicorn hiring suggests strong institutional commitment to new graduate talent despite broader economic uncertainty.",
+    "The 'other' category is showing signs of consolidation, indicating that hiring is becoming more specialized toward core technical roles like SRE and ML."
   ],
-  "generated_at": "2026-06-07T00:17:30.835053+00:00",
+  "generated_at": "2026-06-08T02:01:38.810059+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-09",
-    "end": "2026-06-07"
+    "start": "2026-03-10",
+    "end": "2026-06-08"
   }
 }
