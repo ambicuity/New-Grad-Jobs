@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 18:42:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 21:11:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer Perception LLM/VLM (PhD, New Grad) at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7488508</link>
+      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 21:03:32 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7488508</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Robotics at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 20:41:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</link>
+      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 19:50:32 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Network Monitoring (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 19:44:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</guid>
+    </item>
     <item>
       <title>Software Engineer– X Core Product at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5063929007</link>
@@ -170,17 +198,17 @@
     </item>
     <item>
       <title>Security Engineer, Detection &amp; Response at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
-      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</link>
       <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697727?t=gh_src=&amp;gh_jid=7697727</guid>
     </item>
     <item>
       <title>Software Developer, Kubernetes Compute at Robinhood</title>
@@ -195,6 +223,13 @@
       <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7770004?t=gh_src=&amp;gh_jid=7770004</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7975558?t=gh_src=&amp;gh_jid=7975558</link>
+      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975558?t=gh_src=&amp;gh_jid=7975558</guid>
     </item>
     <item>
       <title>Software Engineer at Robinhood</title>
@@ -274,13 +309,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975557?t=gh_src=&amp;gh_jid=7975557</guid>
     </item>
     <item>
-      <title>Software Engineer at Robinhood</title>
-      <link>https://boards.greenhouse.io/robinhood/jobs/7975558?t=gh_src=&amp;gh_jid=7975558</link>
-      <description>New grad role at Robinhood in Menlo Park, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 16:44:27 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7975558?t=gh_src=&amp;gh_jid=7975558</guid>
-    </item>
-    <item>
       <title>Software Engineer, Agentic AI at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7975477?t=gh_src=&amp;gh_jid=7975477</link>
       <description>New grad role at Robinhood in Bellevue, WA. Category: Software Engineering</description>
@@ -328,34 +356,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 15:56:30 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Payments &amp; Risk at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=4952353</link>
-      <description>New grad role at Stripe in IN-Bengaluru. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 15:51:15 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=4952353</guid>
-    </item>
-    <item>
-      <title>AI/ML Engineer at Chime</title>
-      <link>https://boards.greenhouse.io/chime/jobs/8569368002?gh_jid=8569368002</link>
-      <description>New grad role at Chime in San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 08 Jun 2026 15:48:24 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8569368002?gh_jid=8569368002</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 15:39:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Checkr</title>
-      <link>https://job-boards.greenhouse.io/checkr/jobs/7989295</link>
-      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 08 Jun 2026 15:38:21 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7989295</guid>
     </item>
   </channel>
 </rss>
