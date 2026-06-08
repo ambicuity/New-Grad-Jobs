@@ -5,28 +5,231 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:05:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 16:18:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:56:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Payments &amp; Risk at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=4952353</link>
+      <description>New grad role at Stripe in IN-Bengaluru. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:51:15 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=4952353</guid>
+    </item>
+    <item>
+      <title>AI/ML Engineer at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8569368002?gh_jid=8569368002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 15:48:24 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8569368002?gh_jid=8569368002</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:39:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Checkr</title>
+      <link>https://job-boards.greenhouse.io/checkr/jobs/7989295</link>
+      <description>New grad role at Checkr in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 15:38:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/checkr/jobs/7989295</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523911</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:38:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523911</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Tactical Reconnaissance &amp; Strike at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:24:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5104871007?gh_jid=5104871007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Safeguards at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4951844008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:21:35 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4951844008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ghost at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4932891007?gh_jid=4932891007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:21:03 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4932891007?gh_jid=4932891007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Anvil at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4932828007?gh_jid=4932828007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:20:39 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4932828007?gh_jid=4932828007</guid>
+    </item>
+    <item>
+      <title>Tactical C2 Software Engineer, Cloud at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4997983007?gh_jid=4997983007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 15:18:10 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4997983007?gh_jid=4997983007</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:37:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
       <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 11:03:03 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 14:35:50 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
     </item>
     <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
+      <title>Software Engineer (L3) Infrastructure at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7767260</link>
+      <description>New grad role at Twilio in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:34:59 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7767260</guid>
     </item>
     <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+      <title>Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:34:48 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
+    </item>
+    <item>
+      <title>Frontend Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:29:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
+    </item>
+    <item>
+      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739574?gh_jid=7739574</guid>
+    </item>
+    <item>
+      <title>Data Engineer, Analytics Data Engineering at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739571?gh_jid=7739571</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Frontend Product Software Engineer, Design Systems at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7758123?gh_jid=7758123</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330388?gh_jid=6330388</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7752395?gh_jid=7752395</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7752395?gh_jid=7752395</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330390?gh_jid=6330390</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539803?gh_jid=7539803</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 08 Jun 2026 14:03:28 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
+    </item>
+    <item>
+      <title>Sales Engineer II - Specialist at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</link>
+      <description>New grad role at Samsara in Remote - NYC. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 08 Jun 2026 13:32:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -37,10 +240,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -51,17 +254,24 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
     </item>
     <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 09:32:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 09:34:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
@@ -69,6 +279,13 @@
       <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 09:32:58 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
+      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 08 Jun 2026 09:32:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
     </item>
     <item>
       <title>Software Engineer, Intelligence Systems at Anduril Industries</title>
@@ -139,223 +356,6 @@
       <description>New grad role at Stripe in Bangalore. Category: Software Engineering</description>
       <pubDate>Mon, 08 Jun 2026 08:46:52 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7618977</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7694675003?gh_jid=7694675003</link>
-      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 05:37:59 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694675003?gh_jid=7694675003</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data &amp; AI at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7529428</link>
-      <description>New grad role at Stripe in Bengaluru. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 04:40:46 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7529428</guid>
-    </item>
-    <item>
-      <title>GET (Graduate Engineer Trainee) at Edison EV Charging Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=c29e22c983746337</link>
-      <description>New grad role at Edison EV Charging Private Limited in CT, IN. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c29e22c983746337</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Clinical Informatics at Truveta</title>
-      <link>https://in.indeed.com/viewjob?jk=0a66d8d35789812e</link>
-      <description>New grad role at Truveta in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0a66d8d35789812e</guid>
-    </item>
-    <item>
-      <title>Associate DevOps Engineer Consultant at Global Payments</title>
-      <link>https://in.indeed.com/viewjob?jk=66a5843bea1d8221</link>
-      <description>New grad role at Global Payments in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=66a5843bea1d8221</guid>
-    </item>
-    <item>
-      <title>Associate Engineer at NTT DATA</title>
-      <link>https://in.indeed.com/viewjob?jk=9df7722a07ae7a07</link>
-      <description>New grad role at NTT DATA in MH, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9df7722a07ae7a07</guid>
-    </item>
-    <item>
-      <title>Trainee Engineer at NTT DATA</title>
-      <link>https://in.indeed.com/viewjob?jk=8ac4e60e962bca01</link>
-      <description>New grad role at NTT DATA in TN, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8ac4e60e962bca01</guid>
-    </item>
-    <item>
-      <title>Software Development Engineer II - Java at Ivy</title>
-      <link>https://in.indeed.com/viewjob?jk=d5d0db85b703b017</link>
-      <description>New grad role at Ivy in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d5d0db85b703b017</guid>
-    </item>
-    <item>
-      <title>Engineer II, Software Development at LPL Financial</title>
-      <link>https://in.indeed.com/viewjob?jk=1b33ccaff656117a</link>
-      <description>New grad role at LPL Financial in TS, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1b33ccaff656117a</guid>
-    </item>
-    <item>
-      <title>Software Engineer III, ITC at NIKE</title>
-      <link>https://in.indeed.com/viewjob?jk=0d8e34c9e0110f48</link>
-      <description>New grad role at NIKE in KA, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0d8e34c9e0110f48</guid>
-    </item>
-    <item>
-      <title>Junior QA Engineer at InheritX Solutions Pvt. Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=5efb2dfa7e38ede9</link>
-      <description>New grad role at InheritX Solutions Pvt. Ltd in GJ, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5efb2dfa7e38ede9</guid>
-    </item>
-    <item>
-      <title>Business Development Trainee at VRP Medgands</title>
-      <link>https://in.indeed.com/viewjob?jk=36ec826457f92dd4</link>
-      <description>New grad role at VRP Medgands in AP, IN. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=36ec826457f92dd4</guid>
-    </item>
-    <item>
-      <title>Trading Systems Engineer at Citi</title>
-      <link>https://ca.indeed.com/viewjob?jk=6876fc2e6b7d30bd</link>
-      <description>New grad role at Citi in Mississauga, ON, CA. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=6876fc2e6b7d30bd</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at AMETEK</title>
-      <link>https://www.indeed.com/viewjob?jk=f559f59ab3d47b78</link>
-      <description>New grad role at AMETEK in San Diego, CA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f559f59ab3d47b78</guid>
-    </item>
-    <item>
-      <title>Cloud Software Engineer - TS/SCI w/Poly at Peraton</title>
-      <link>https://www.indeed.com/viewjob?jk=f1706de4bd29ac45</link>
-      <description>New grad role at Peraton in Annapolis Junction, MD, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f1706de4bd29ac45</guid>
-    </item>
-    <item>
-      <title>Software Developer SME at Peraton</title>
-      <link>https://www.indeed.com/viewjob?jk=0dca6906b9e8616d</link>
-      <description>New grad role at Peraton in Atlantic City, NJ, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0dca6906b9e8616d</guid>
-    </item>
-    <item>
-      <title>Systems Engineer III - Loads &amp; Dynamics Engineer​ at Sierra Space</title>
-      <link>https://www.indeed.com/viewjob?jk=154323dc06a08158</link>
-      <description>New grad role at Sierra Space in Centennial, CO, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=154323dc06a08158</guid>
-    </item>
-    <item>
-      <title>Operations Engineer Co-op (Central Service Area) Fall 2026 at Tampa Electric Company</title>
-      <link>https://www.indeed.com/viewjob?jk=75584e6a57b437b9</link>
-      <description>New grad role at Tampa Electric Company in Tampa, FL, US. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=75584e6a57b437b9</guid>
-    </item>
-    <item>
-      <title>Lecturers Fall 2026 - Food, Agricultural and Resource Economics at Rutgers University</title>
-      <link>https://www.indeed.com/viewjob?jk=312faaf42272f272</link>
-      <description>New grad role at Rutgers University in New Brunswick, NJ, US. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=312faaf42272f272</guid>
-    </item>
-    <item>
-      <title>Formal Verification Engineer - New College Grad 2026 at NVIDIA</title>
-      <link>https://www.indeed.com/viewjob?jk=5346afb127c7762b</link>
-      <description>New grad role at NVIDIA in Santa Clara, CA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5346afb127c7762b</guid>
-    </item>
-    <item>
-      <title>Nurse Residency - Summer 2026 Cohort at Memorial Healthcare System</title>
-      <link>https://www.indeed.com/viewjob?jk=2c2d9769444bdde0</link>
-      <description>New grad role at Memorial Healthcare System in Hollywood, FL, US. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2c2d9769444bdde0</guid>
-    </item>
-    <item>
-      <title>Data Engineer - Information Systems at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=9ea113d2c2299c58</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Data Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9ea113d2c2299c58</guid>
-    </item>
-    <item>
-      <title>Trainee Career Counsellor (Freshers / Immediate Joiner) at ikounselor ed-tech pvt. ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=b7d0979505dd0426</link>
-      <description>New grad role at ikounselor ed-tech pvt. ltd. in MP, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b7d0979505dd0426</guid>
-    </item>
-    <item>
-      <title>Environmental Engineer Co-op Fall 2026 at Tampa Electric Company</title>
-      <link>https://www.indeed.com/viewjob?jk=cb0b476b0376f34d</link>
-      <description>New grad role at Tampa Electric Company in Tampa, FL, US. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cb0b476b0376f34d</guid>
-    </item>
-    <item>
-      <title>Mechanical Engineer Co-op Fall 2026 at Tampa Electric Company</title>
-      <link>https://www.indeed.com/viewjob?jk=fe7810eaebdea779</link>
-      <description>New grad role at Tampa Electric Company in Mulberry, FL, US. Category: Hardware Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe7810eaebdea779</guid>
-    </item>
-    <item>
-      <title>Engineer Co-op Fall 2026 at Tampa Electric Company</title>
-      <link>https://www.indeed.com/viewjob?jk=96bc6e1355ee3cb3</link>
-      <description>New grad role at Tampa Electric Company in Plant City, FL, US. Category: Other</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=96bc6e1355ee3cb3</guid>
-    </item>
-    <item>
-      <title>Associate, Systems Engineer at L3Harris</title>
-      <link>https://www.indeed.com/viewjob?jk=575f738bd9abf9f0</link>
-      <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=575f738bd9abf9f0</guid>
-    </item>
-    <item>
-      <title>Software Developer at Peraton</title>
-      <link>https://www.indeed.com/viewjob?jk=5e285594011ba62e</link>
-      <description>New grad role at Peraton in Chantilly, VA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5e285594011ba62e</guid>
-    </item>
-    <item>
-      <title>Associate Technical Support Engineer - Core at iCIMS</title>
-      <link>https://in.indeed.com/viewjob?jk=38407bf2e4ad6419</link>
-      <description>New grad role at iCIMS in TS, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=38407bf2e4ad6419</guid>
-    </item>
-    <item>
-      <title>Software Associate at Bose Consulting</title>
-      <link>https://in.indeed.com/viewjob?jk=e147768ab4eb0a79</link>
-      <description>New grad role at Bose Consulting in WB, IN. Category: Software Engineering</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e147768ab4eb0a79</guid>
-    </item>
-    <item>
-      <title>HR Trainee: Talent Acquisition at Intelligent Consulting Engineers &amp; Builders Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=874c6f49445ab697</link>
-      <description>New grad role at Intelligent Consulting Engineers &amp; Builders Pvt Ltd in WB, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=874c6f49445ab697</guid>
     </item>
   </channel>
 </rss>
