@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 08:42:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 12:04:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Detection and Response at Notion</title>
+      <link>https://jobs.ashbyhq.com/notion/c0fcf37b-e00f-4aae-a2e0-b008f9939a7e</link>
+      <description>New grad role at Notion in San Francisco, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 10 Jun 2026 10:55:44 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/notion/c0fcf37b-e00f-4aae-a2e0-b008f9939a7e</guid>
+    </item>
     <item>
       <title>2026 Early Career Electrical Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Wed, 10 Jun 2026 06:09:57 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058266007?gh_jid=5058266007</guid>
-    </item>
-    <item>
-      <title>Orbital Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4872480007?gh_jid=4872480007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 10 Jun 2026 06:09:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4872480007?gh_jid=4872480007</guid>
     </item>
   </channel>
 </rss>
