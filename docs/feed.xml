@@ -5,14 +5,42 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2026 01:37:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 06:26:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer, BizTech(Python, LLM, GenAI, MCP) at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/7902817?gh_jid=7902817</link>
+      <description>New grad role at Airbnb in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Thu, 11 Jun 2026 06:09:50 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/7902817?gh_jid=7902817</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 - Query Optimization at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7816135</link>
+      <description>New grad role at MongoDB in Atlanta; Boston; New York City. Category: Software Engineering</description>
+      <pubDate>Thu, 11 Jun 2026 04:39:26 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7816135</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Neki Orchestration at PlanetScale</title>
+      <link>https://job-boards.greenhouse.io/planetscale/jobs/4280570009</link>
+      <description>New grad role at PlanetScale in San Francisco Bay Area or Remote. Category: Software Engineering</description>
+      <pubDate>Thu, 11 Jun 2026 03:27:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/planetscale/jobs/4280570009</guid>
+    </item>
     <item>
       <title>Data Scientist 2-2 at Mastercard</title>
       <link>https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Data-Scientist-2-2_R-273350</link>
       <description>New grad role at Mastercard in Navi Mumbai, India (Finicity). Category: Data Science &amp; ML</description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Data-Scientist-2-2_R-273350</guid>
+    </item>
+    <item>
+      <title>GPU Development Tools System Software Engineer at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/GPU-Development-Tools-System-Software-Engineer_JR2015871-1</link>
+      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Software Engineering</description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/GPU-Development-Tools-System-Software-Engineer_JR2015871-1</guid>
     </item>
     <item>
       <title>Data Scientist at Intel</title>
@@ -27,6 +55,13 @@
       <description>New grad role at HP in Vancouver, Washington, United States of America. Category: Software Engineering</description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Vancouver-Washington-United-States-of-America/Software-Systems-Engineer_3162972-1</guid>
+    </item>
+    <item>
+      <title>Tech Transfer Engineer II at Pfizer</title>
+      <link>https://pfizer.wd1.myworkdayjobs.com/job/United-States---Massachusetts---Andover/Tech-Transfer-Engineer-II_4959015-1</link>
+      <description>New grad role at Pfizer in United States - Massachusetts - Andover. Category: Other</description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/United-States---Massachusetts---Andover/Tech-Transfer-Engineer-II_4959015-1</guid>
     </item>
     <item>
       <title>EHS Engineer I at Medtronic</title>
@@ -190,6 +225,13 @@
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Kennedy-Space-Center/Engineering-Technician----Level-2-or-Level-3_R10235809</guid>
     </item>
     <item>
+      <title>Associate Software Engineer - Analytics at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer---Analytics_JR2026507843-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer---Analytics_JR2026507843-1</guid>
+    </item>
+    <item>
       <title>Software Engineers (Associate or Experienced) at Boeing</title>
       <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Herndon-VA/Software-Engineers--Associate-or-Experienced-_JR2026491832</link>
       <description>New grad role at Boeing in USA - Herndon, VA. Category: Other</description>
@@ -314,48 +356,6 @@
       <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Other</description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Flight-Test-Manufacturing-Engineer--Associate-or-Experienced-_JR2026506386-1</guid>
-    </item>
-    <item>
-      <title>Entry-Level Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Entry-Level-Software-Engineer_JR2026508309-1</link>
-      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Entry-Level-Software-Engineer_JR2026508309-1</guid>
-    </item>
-    <item>
-      <title>Associate Level Electromagnetic Compatibility (EMC) Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Associate-Level-Electromagnetic-Compatibility--EMC--Engineer_JR2026513538-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Associate-Level-Electromagnetic-Compatibility--EMC--Engineer_JR2026513538-1</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Software-Engineer_JR2026511462-1</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Software Engineering</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Associate-Software-Engineer_JR2026511462-1</guid>
-    </item>
-    <item>
-      <title>Associate Airplane Performance Engineer (Flight Operations) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Associate-Airplane-Performance-Engineer--Flight-Operations-_JR2026512080-1</link>
-      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Other</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Associate-Airplane-Performance-Engineer--Flight-Operations-_JR2026512080-1</guid>
-    </item>
-    <item>
-      <title>Structures &amp; Payload Design Engineer (Galley Insert Design)  (Associate or Experienced)  at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Structures---Payload-Design-Engineer--Galley-Insert-Design----Associate-or-Experienced--_JR2026509026-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Other</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Structures---Payload-Design-Engineer--Galley-Insert-Design----Associate-or-Experienced--_JR2026509026-1</guid>
-    </item>
-    <item>
-      <title>F-15 Associate Manufacturing Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/F-15-Associate-Manufacturing-Engineer_JR2026498328</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/F-15-Associate-Manufacturing-Engineer_JR2026498328</guid>
     </item>
   </channel>
 </rss>
