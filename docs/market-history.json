@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-12T18:03:18.964884+00:00",
+    "last_updated": "2026-06-12T20:26:15.068886+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-14",
@@ -4986,20 +4986,20 @@
     },
     {
       "date": "2026-06-12",
-      "total_jobs": 1344,
+      "total_jobs": 1330,
       "categories": {
-        "software_engineering": 902,
-        "data_ml": 136,
-        "infrastructure_sre": 166,
-        "data_engineering": 32,
-        "other": 87,
-        "hardware": 18,
+        "software_engineering": 892,
+        "data_ml": 140,
+        "infrastructure_sre": 168,
+        "data_engineering": 29,
+        "other": 83,
+        "hardware": 15,
         "quant_finance": 3
       },
       "tiers": {
-        "faang_plus": 134,
-        "unicorn": 658,
-        "other": 552
+        "other": 537,
+        "unicorn": 657,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -5008,11 +5008,11 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 173
+          "jobs": 169
         },
         {
           "company": "OpenAI",
-          "jobs": 56
+          "jobs": 57
         },
         {
           "company": "Waymo",
@@ -5020,11 +5020,11 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 30
+          "jobs": 35
         },
         {
           "company": "Accenture",
-          "jobs": 28
+          "jobs": 26
         },
         {
           "company": "Affirm",
@@ -5036,16 +5036,16 @@
         },
         {
           "company": "Stripe",
-          "jobs": 23
+          "jobs": 24
         },
         {
           "company": "Robinhood",
           "jobs": 21
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 5.84,
-      "timestamp": "2026-06-12T18:03:18.963983+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 5.86,
+      "timestamp": "2026-06-12T20:26:15.068049+00:00"
     }
   ]
 }
