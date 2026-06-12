@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-12T12:34:42.732697+00:00",
+    "last_updated": "2026-06-12T15:55:02.080172+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-14",
@@ -4986,20 +4986,20 @@
     },
     {
       "date": "2026-06-12",
-      "total_jobs": 1338,
+      "total_jobs": 1331,
       "categories": {
-        "software_engineering": 894,
-        "data_ml": 140,
-        "other": 82,
-        "infrastructure_sre": 165,
-        "hardware": 21,
+        "software_engineering": 886,
+        "data_ml": 137,
         "data_engineering": 32,
+        "infrastructure_sre": 169,
+        "other": 84,
+        "hardware": 19,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 532,
-        "unicorn": 656,
-        "faang_plus": 150
+        "unicorn": 657,
+        "other": 535,
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -5019,11 +5019,11 @@
           "jobs": 46
         },
         {
-          "company": "Boeing",
-          "jobs": 35
+          "company": "Northrop Grumman",
+          "jobs": 28
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Boeing",
           "jobs": 27
         },
         {
@@ -5043,9 +5043,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-06-12T12:34:42.731911+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.81,
+      "timestamp": "2026-06-12T15:55:02.079354+00:00"
     }
   ]
 }
