@@ -2,33 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1378,
-      "change_percent": 1.03
+      "total_jobs": 1388,
+      "change_percent": 0.95
     },
     "30_days": {
-      "total_jobs": 1415,
-      "change_percent": 3.74
+      "total_jobs": 1425,
+      "change_percent": 3.64
     }
   },
   "growing_categories": [
+    "other",
     "data_engineering",
-    "software_engineering",
     "data_ml"
   ],
   "declining_categories": [
     "infrastructure_sre",
-    "other"
+    "software_engineering",
+    "none"
   ],
-  "confidence": 75,
+  "confidence": 85,
   "insights": [
-    "The market has successfully established a new, higher baseline above 1,300 jobs following a significant step-up in volume mid-month, indicating sustained hiring demand.",
-    "Data engineering is showing the strongest relative momentum, suggesting companies are prioritizing data infrastructure despite broader economic uncertainty.",
-    "The stability across FAANG+ and Unicorn tiers suggests that large-scale employers have finalized their hiring budgets for the current cycle, leading to a steady, predictable growth trajectory."
+    "The market has successfully established a new baseline above 1,300 jobs, showing strong resilience after the mid-month dip.",
+    "Growth is currently driven by diversification into data and 'other' roles, suggesting companies are expanding hiring beyond core software engineering.",
+    "The consistent volume in FAANG+ and Unicorn tiers indicates stable long-term hiring commitments despite minor daily fluctuations."
   ],
-  "generated_at": "2026-06-11T01:37:08.730499+00:00",
+  "generated_at": "2026-06-12T00:11:20.549464+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-13",
-    "end": "2026-06-11"
+    "start": "2026-03-14",
+    "end": "2026-06-12"
   }
 }
