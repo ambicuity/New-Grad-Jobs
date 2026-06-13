@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-13T09:44:34.585904+00:00",
+    "last_updated": "2026-06-13T11:36:24.630768+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-15",
@@ -4995,11 +4995,11 @@
     },
     {
       "date": "2026-06-13",
-      "total_jobs": 1167,
+      "total_jobs": 1338,
       "categories": {
-        "software_engineering": 756,
-        "infrastructure_sre": 163,
-        "data_ml": 112,
+        "data_ml": 140,
+        "software_engineering": 896,
+        "infrastructure_sre": 166,
         "other": 87,
         "data_engineering": 32,
         "product_management": 1,
@@ -5007,14 +5007,18 @@
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 657,
-        "other": 360,
+        "unicorn": 656,
+        "other": 532,
         "faang_plus": 150
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 196
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 170
         },
         {
           "company": "OpenAI",
@@ -5047,15 +5051,11 @@
         {
           "company": "Robinhood",
           "jobs": 21
-        },
-        {
-          "company": "Pinterest",
-          "jobs": 20
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 5.21,
-      "timestamp": "2026-06-13T09:44:34.584849+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 5.89,
+      "timestamp": "2026-06-13T11:36:24.629779+00:00"
     }
   ]
 }
