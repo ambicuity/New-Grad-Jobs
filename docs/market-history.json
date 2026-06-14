@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-14T14:42:41.152763+00:00",
+    "last_updated": "2026-06-14T16:16:06.217549+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-16",
@@ -5010,9 +5010,9 @@
         "software_engineering": 888,
         "other": 92,
         "infrastructure_sre": 162,
-        "data_engineering": 32,
+        "data_engineering": 31,
+        "hardware": 14,
         "product_management": 1,
-        "hardware": 13,
         "quant_finance": 3
       },
       "tiers": {
@@ -5064,7 +5064,7 @@
       ],
       "unique_companies": 229,
       "avg_jobs_per_company": 5.81,
-      "timestamp": "2026-06-14T14:42:41.151934+00:00"
+      "timestamp": "2026-06-14T16:16:06.216306+00:00"
     }
   ]
 }
