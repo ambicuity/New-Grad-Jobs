@@ -2,33 +2,33 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1345,
-      "change_percent": 0.15
+      "total_jobs": 1325,
+      "change_percent": 1.61
     },
     "30_days": {
-      "total_jobs": 1355,
-      "change_percent": 0.89
+      "total_jobs": 1315,
+      "change_percent": 0.84
     }
   },
   "growing_categories": [
-    "software_engineering",
-    "infrastructure_sre",
-    "data_ml"
+    "data_engineering",
+    "data_ml",
+    "software_engineering"
   ],
   "declining_categories": [
-    "data_engineering",
-    "other"
+    "other",
+    "infrastructure_sre"
   ],
-  "confidence": 85,
+  "confidence": 75,
   "insights": [
-    "The market has stabilized significantly after the initial volatility observed at the start of the 30-day period, showing a consistent plateau around the 1340-job mark.",
-    "Software Engineering remains the primary driver of volume, while Data Engineering shows signs of stagnation, suggesting a shift in hiring priorities toward core infrastructure and ML applications.",
-    "Company tier distribution is remarkably stable, indicating that hiring budgets for new graduates are currently locked in with little aggressive expansion or contraction expected in the immediate term."
+    "The market is currently in a state of consolidation, hovering consistently around the 1300-1350 range with no significant breakout in either direction.",
+    "While overall volume remains stable, there is a clear shift in demand toward data-centric roles, suggesting companies are prioritizing AI and data infrastructure over generalist roles.",
+    "The decline in 'other' and 'infrastructure_sre' categories indicates a tightening of budgets toward core product development and data capabilities rather than broad operational expansion."
   ],
-  "generated_at": "2026-06-14T02:03:28.960259+00:00",
+  "generated_at": "2026-06-15T01:48:09.245749+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-16",
-    "end": "2026-06-14"
+    "start": "2026-03-17",
+    "end": "2026-06-15"
   }
 }
