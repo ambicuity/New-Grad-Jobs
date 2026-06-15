@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-15T18:13:03.278894+00:00",
+    "last_updated": "2026-06-15T21:28:43.789363+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-17",
@@ -5012,29 +5012,29 @@
     },
     {
       "date": "2026-06-15",
-      "total_jobs": 1341,
+      "total_jobs": 1319,
       "categories": {
-        "software_engineering": 880,
-        "data_ml": 148,
+        "data_ml": 151,
+        "software_engineering": 868,
+        "data_engineering": 30,
+        "infrastructure_sre": 163,
         "quant_finance": 4,
-        "infrastructure_sre": 160,
-        "other": 106,
-        "hardware": 13,
-        "data_engineering": 30
+        "other": 90,
+        "hardware": 13
       },
       "tiers": {
         "unicorn": 636,
-        "other": 558,
-        "faang_plus": 147
+        "other": 537,
+        "faang_plus": 146
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 196
+          "jobs": 195
         },
         {
           "company": "Anduril Industries",
-          "jobs": 172
+          "jobs": 173
         },
         {
           "company": "OpenAI",
@@ -5046,32 +5046,32 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 40
-        },
-        {
-          "company": "Accenture",
-          "jobs": 29
+          "jobs": 36
         },
         {
           "company": "Glean",
           "jobs": 25
         },
         {
-          "company": "University of Ottawa",
-          "jobs": 24
-        },
-        {
           "company": "Stripe",
           "jobs": 23
         },
         {
+          "company": "Robinhood",
+          "jobs": 22
+        },
+        {
           "company": "Affirm",
+          "jobs": 22
+        },
+        {
+          "company": "Accenture",
           "jobs": 22
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 6.07,
-      "timestamp": "2026-06-15T18:13:03.278020+00:00"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 6.19,
+      "timestamp": "2026-06-15T21:28:43.788293+00:00"
     }
   ]
 }
