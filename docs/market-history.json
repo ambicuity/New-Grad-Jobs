@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16T07:42:19.725228+00:00",
+    "last_updated": "2026-06-16T12:35:10.748444+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-18",
@@ -5020,20 +5020,20 @@
     },
     {
       "date": "2026-06-16",
-      "total_jobs": 1318,
+      "total_jobs": 1304,
       "categories": {
-        "software_engineering": 867,
-        "other": 97,
+        "software_engineering": 851,
+        "data_ml": 151,
+        "other": 100,
         "infrastructure_sre": 158,
-        "hardware": 16,
-        "data_ml": 150,
         "data_engineering": 26,
-        "quant_finance": 4
+        "quant_finance": 4,
+        "hardware": 14
       },
       "tiers": {
-        "faang_plus": 146,
-        "unicorn": 642,
-        "other": 530
+        "unicorn": 643,
+        "other": 516,
+        "faang_plus": 145
       },
       "top_companies": [
         {
@@ -5054,7 +5054,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 34
+          "jobs": 33
         },
         {
           "company": "Glean",
@@ -5077,9 +5077,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 6.13,
-      "timestamp": "2026-06-16T07:42:19.724046+00:00"
+      "unique_companies": 216,
+      "avg_jobs_per_company": 6.04,
+      "timestamp": "2026-06-16T12:35:10.745957+00:00"
     }
   ]
 }
