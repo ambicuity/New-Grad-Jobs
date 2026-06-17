@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 05:12:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 10:07:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Analyst II, Full Stack at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7764109003</link>
+      <description>New grad role at Affirm in Remote Poland. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 09:53:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7764109003</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Fullstack at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5224725008</link>
+      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 07:55:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5224725008</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/7581107?gh_jid=7581107</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 17 Jun 2026 07:22:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7581107?gh_jid=7581107</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Safeguards at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5209196008</link>
+      <description>New grad role at Anthropic in New York City, NY; San Francisco, CA; Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 17 Jun 2026 07:01:28 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5209196008</guid>
+    </item>
     <item>
       <title>Data Scientist at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7455592</link>
@@ -219,17 +247,17 @@
     </item>
     <item>
       <title>Software Engineer, Perception Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Evaluation at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=7256244</link>
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7256244</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Perception Evaluation at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
     </item>
     <item>
       <title>Software Engineer, Pin Infra at Waymo</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161421007?gh_jid=5161421007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Financial Analyst at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Manufacturing Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</link>
-      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Mechanical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
     </item>
   </channel>
 </rss>
