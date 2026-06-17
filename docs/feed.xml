@@ -5,13 +5,76 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 10:07:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 14:00:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Analyst II, Full Stack at Affirm</title>
+      <title>Software Engineer at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</link>
+      <description>New grad role at Coinbase in Charlotte, NC. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 13:43:26 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</link>
+      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 17 Jun 2026 13:20:10 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</guid>
+    </item>
+    <item>
+      <title>SRE Operations Engineer at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8003315?gh_jid=8003315</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 17 Jun 2026 13:12:20 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8003315?gh_jid=8003315</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Robotics at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 12:46:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7622998</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 12:32:17 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7622998</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 11:54:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 11:52:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Sentry Tower at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 11:51:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Surveillance Tower at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 11:51:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</guid>
+    </item>
+    <item>
+      <title>Analytics Engineer II at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7764109003</link>
-      <description>New grad role at Affirm in Remote Poland. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 09:53:12 +0000</pubDate>
+      <description>New grad role at Affirm in Remote Poland. Category: Data Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 11:18:51 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7764109003</guid>
     </item>
     <item>
@@ -293,69 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
       <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Simulator Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6562547</link>
-      <description>New grad role at Waymo in Mountain View, California, United States; San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6562547</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Statistical Evaluation and Sampling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7543520</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7543520</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Strategic SWE Reserve at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7622998</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7622998</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Trip Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905678</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States . Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905678</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Vehicle Platforms C++ at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Perception at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7367785</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 03:09:54 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7367785</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Electrical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Engineering Finance Associate at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Finance Coordinator at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5161421007?gh_jid=5161421007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 02:26:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161421007?gh_jid=5161421007</guid>
     </item>
   </channel>
 </rss>
