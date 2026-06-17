@@ -2,18 +2,18 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1330,
-      "change_percent": 0.61
+      "total_jobs": 1322,
+      "change_percent": 0.53
     },
     "30_days": {
-      "total_jobs": 1333,
-      "change_percent": 0.83
+      "total_jobs": 1330,
+      "change_percent": 1.14
     }
   },
   "growing_categories": [
+    "infrastructure_sre",
     "data_ml",
-    "software_engineering",
-    "infrastructure_sre"
+    "software_engineering"
   ],
   "declining_categories": [
     "data_engineering",
@@ -21,14 +21,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability, with the current total hovering consistently around the 30-day average of 1333, suggesting a period of consolidation rather than expansion.",
-    "Data/ML roles show the most resilience and growth potential, whereas Data Engineering is experiencing a contraction, indicating a shift in hiring priorities toward AI-focused application roles.",
-    "Company tier distribution remains stagnant, with 'Unicorn' and 'FAANG+' firms maintaining steady volume, reflecting a cautious but sustained commitment to new graduate talent pipelines."
+    "The market is currently in a state of consolidation, hovering consistently around the 1330 mark with minimal volatility over the last 30 days.",
+    "While overall volume remains stable, there is a slight shift in demand toward infrastructure and ML roles, suggesting companies are prioritizing core stability and AI integration over generalist data engineering.",
+    "The lack of significant growth in FAANG+ hiring indicates that large-scale enterprise recruitment remains cautious, likely awaiting further macroeconomic clarity before expanding headcount."
   ],
-  "generated_at": "2026-06-16T02:06:51.829864+00:00",
+  "generated_at": "2026-06-17T00:06:39.869155+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-18",
-    "end": "2026-06-16"
+    "start": "2026-03-19",
+    "end": "2026-06-17"
   }
 }
