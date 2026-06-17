@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-17T19:32:17.582407+00:00",
+    "last_updated": "2026-06-17T21:35:18.385127+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-19",
@@ -5028,25 +5028,25 @@
     },
     {
       "date": "2026-06-17",
-      "total_jobs": 1329,
+      "total_jobs": 1324,
       "categories": {
+        "infrastructure_sre": 167,
         "data_ml": 143,
         "software_engineering": 870,
-        "infrastructure_sre": 161,
-        "data_engineering": 27,
+        "data_engineering": 25,
         "hardware": 14,
-        "other": 103,
-        "quant_finance": 11
+        "other": 101,
+        "quant_finance": 4
       },
       "tiers": {
         "unicorn": 643,
-        "other": 535,
-        "faang_plus": 151
+        "other": 528,
+        "faang_plus": 153
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 197
+          "jobs": 199
         },
         {
           "company": "Anduril Industries",
@@ -5069,8 +5069,8 @@
           "jobs": 25
         },
         {
-          "company": "Accenture",
-          "jobs": 24
+          "company": "Boeing",
+          "jobs": 23
         },
         {
           "company": "Pinterest",
@@ -5085,9 +5085,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 216,
-      "avg_jobs_per_company": 6.15,
-      "timestamp": "2026-06-17T19:32:17.581255+00:00"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 5.94,
+      "timestamp": "2026-06-17T21:35:18.383871+00:00"
     }
   ]
 }
