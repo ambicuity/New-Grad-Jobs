@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 21:35:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 23:09:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</link>
+      <description>New grad role at Coinbase in Charlotte, NC. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 22:51:43 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Agent Enablement at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/2d7f1028-ce9b-49c7-acc8-782714ca1cf4</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 22:34:56 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/2d7f1028-ce9b-49c7-acc8-782714ca1cf4</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
+      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 22:25:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
+      <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 22:25:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
+    </item>
+    <item>
+      <title>Dev Infra Software Engineer, Air Defense at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 22:09:25 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Infrastructure at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=6909931</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 21:59:48 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=6909931</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 17 Jun 2026 21:52:47 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</guid>
+    </item>
     <item>
       <title>Site Reliability Engineer, Kubernetes Platform (Starshield) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8597472002?gh_jid=8597472002</link>
@@ -27,20 +76,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 17 Jun 2026 21:23:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 21:08:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
-      <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 21:08:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -107,13 +142,6 @@
     </item>
     <item>
       <title>Machine Learning Engineer, Next-Generation Recommendation Systems (New Grad / PhD) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7992078?gh_jid=7992078</link>
-      <description>New grad role at Unity Technologies in New York, NY, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 19:21:18 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7992078?gh_jid=7992078</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Next-Generation Recommendation Systems (New Grad / PhD) at Unity Technologies</title>
       <link>https://unity.com/careers/positions/7999717?gh_jid=7999717</link>
       <description>New grad role at Unity Technologies in Bellevue, WA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 17 Jun 2026 19:21:18 +0000</pubDate>
@@ -125,6 +153,13 @@
       <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 17 Jun 2026 19:21:18 +0000</pubDate>
       <guid isPermaLink="true">https://unity.com/careers/positions/7999719?gh_jid=7999719</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Next-Generation Recommendation Systems (New Grad / PhD) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7992078?gh_jid=7992078</link>
+      <description>New grad role at Unity Technologies in New York, NY, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 17 Jun 2026 19:21:18 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7992078?gh_jid=7992078</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, User Understanding (Entry-Level / New Grad) at Unity Technologies</title>
@@ -142,17 +177,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad) at Unity Technologies</title>
-      <link>https://unity.com/careers/positions/7902260?gh_jid=7902260</link>
-      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 17 Jun 2026 19:18:44 +0000</pubDate>
-      <guid isPermaLink="true">https://unity.com/careers/positions/7902260?gh_jid=7902260</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad) at Unity Technologies</title>
       <link>https://unity.com/careers/positions/7906590?gh_jid=7906590</link>
       <description>New grad role at Unity Technologies in San Francisco, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 17 Jun 2026 19:18:44 +0000</pubDate>
       <guid isPermaLink="true">https://unity.com/careers/positions/7906590?gh_jid=7906590</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Offline Infrastructure (Entry-Level / New Grad) at Unity Technologies</title>
+      <link>https://unity.com/careers/positions/7902260?gh_jid=7902260</link>
+      <description>New grad role at Unity Technologies in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 17 Jun 2026 19:18:44 +0000</pubDate>
+      <guid isPermaLink="true">https://unity.com/careers/positions/7902260?gh_jid=7902260</guid>
     </item>
     <item>
       <title>Full Stack Software Engineer, Credit Cards &amp; Banking at Robinhood</title>
@@ -316,46 +351,11 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002</guid>
     </item>
     <item>
-      <title>Software Engineer at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</link>
-      <description>New grad role at Coinbase in Charlotte, NC. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 15:23:44 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605</guid>
-    </item>
-    <item>
       <title>Software Engineer, Early Career at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7485068003</link>
       <description>New grad role at Affirm in San Francisco, California, United States. Category: Software Engineering</description>
       <pubDate>Wed, 17 Jun 2026 14:47:03 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7485068003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Full-Stack (Card Acquisition) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7618869003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 14:45:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7618869003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Full-Stack (Marketplace Performance) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7678887003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 14:44:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7678887003</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 14:36:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7699251</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Wed, 17 Jun 2026 14:36:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7699251</guid>
     </item>
   </channel>
 </rss>
