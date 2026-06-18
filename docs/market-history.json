@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-18T19:57:45.747426+00:00",
+    "last_updated": "2026-06-18T22:12:12.329714+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-20",
@@ -5036,25 +5036,25 @@
     },
     {
       "date": "2026-06-18",
-      "total_jobs": 1352,
+      "total_jobs": 1357,
       "categories": {
-        "infrastructure_sre": 173,
-        "software_engineering": 882,
-        "data_engineering": 25,
-        "data_ml": 138,
-        "other": 119,
-        "hardware": 11,
-        "quant_finance": 4
+        "software_engineering": 884,
+        "data_ml": 140,
+        "data_engineering": 26,
+        "infrastructure_sre": 170,
+        "other": 122,
+        "hardware": 10,
+        "quant_finance": 5
       },
       "tiers": {
-        "other": 549,
-        "unicorn": 652,
-        "faang_plus": 151
+        "unicorn": 659,
+        "other": 542,
+        "faang_plus": 156
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 200
+          "jobs": 202
         },
         {
           "company": "Anduril Industries",
@@ -5070,32 +5070,32 @@
         },
         {
           "company": "Boeing",
-          "jobs": 34
+          "jobs": 36
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
-        },
-        {
-          "company": "Accenture",
-          "jobs": 25
-        },
-        {
-          "company": "Pinterest",
-          "jobs": 24
+          "jobs": 33
         },
         {
           "company": "Glean",
           "jobs": 24
         },
         {
+          "company": "Pinterest",
+          "jobs": 24
+        },
+        {
           "company": "Affirm",
+          "jobs": 22
+        },
+        {
+          "company": "Stripe",
           "jobs": 22
         }
       ],
-      "unique_companies": 239,
-      "avg_jobs_per_company": 5.66,
-      "timestamp": "2026-06-18T19:57:45.746410+00:00"
+      "unique_companies": 238,
+      "avg_jobs_per_company": 5.7,
+      "timestamp": "2026-06-18T22:12:12.328901+00:00"
     }
   ]
 }
