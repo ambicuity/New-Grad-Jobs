@@ -2,33 +2,33 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1322,
-      "change_percent": 0.53
+      "total_jobs": 1335,
+      "change_percent": -0.3
     },
     "30_days": {
       "total_jobs": 1330,
-      "change_percent": 1.14
+      "change_percent": -0.67
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
+    "other",
     "data_ml",
-    "software_engineering"
+    "infrastructure_sre"
   ],
   "declining_categories": [
-    "data_engineering",
-    "other"
+    "software_engineering",
+    "data_engineering"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently in a state of consolidation, hovering consistently around the 1330 mark with minimal volatility over the last 30 days.",
-    "While overall volume remains stable, there is a slight shift in demand toward infrastructure and ML roles, suggesting companies are prioritizing core stability and AI integration over generalist data engineering.",
-    "The lack of significant growth in FAANG+ hiring indicates that large-scale enterprise recruitment remains cautious, likely awaiting further macroeconomic clarity before expanding headcount."
+    "The market is exhibiting high stability with a very tight range around the 1330-1340 level, suggesting a period of consolidation rather than aggressive expansion or contraction.",
+    "While core software engineering roles are seeing a slight softening, niche categories like infrastructure and ML are showing resilience, indicating a shift toward specialized technical talent.",
+    "FAANG+ and Unicorn hiring remains the primary driver of volume, but the lack of significant upward momentum suggests companies are maintaining cautious, replacement-heavy hiring strategies for new graduates."
   ],
-  "generated_at": "2026-06-17T00:06:39.869155+00:00",
+  "generated_at": "2026-06-18T01:43:18.748970+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-19",
-    "end": "2026-06-17"
+    "start": "2026-03-20",
+    "end": "2026-06-18"
   }
 }
