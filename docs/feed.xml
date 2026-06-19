@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 18:19:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 20:11:15 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate, Data Analytics (Atlanta, GA- Remote) at Oscar Health</title>
+      <link>http://www.hioscar.com/careers/7825290?gh_jid=7825290</link>
+      <description>New grad role at Oscar Health in Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 18:58:03 +0000</pubDate>
+      <guid isPermaLink="true">http://www.hioscar.com/careers/7825290?gh_jid=7825290</guid>
+    </item>
+    <item>
+      <title>2026 Early Career Financial Analyst at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 18:46:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5142987007?gh_jid=5142987007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/8002300?gh_jid=8002300</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 18:39:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/8002300?gh_jid=8002300</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/7581107?gh_jid=7581107</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 18:39:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7581107?gh_jid=7581107</guid>
+    </item>
+    <item>
+      <title>Mechanical Engineering Co-Op (Fall 2026) at Locus Robotics</title>
+      <link>https://job-boards.greenhouse.io/locusrobotics/jobs/5140644007</link>
+      <description>New grad role at Locus Robotics in Wilmington, MA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 18:16:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5140644007</guid>
+    </item>
     <item>
       <title>Software Engineer, Frontend at Glean</title>
       <link>https://job-boards.greenhouse.io/gleanwork/jobs/4006733005</link>
@@ -93,10 +128,17 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7895344</link>
-      <description>New grad role at Stripe in San Francisco, California . Category: Software Engineering</description>
+      <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
+      <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7895344</guid>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
+      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
@@ -114,17 +156,10 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
-      <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
+      <link>https://stripe.com/jobs/search?gh_jid=7895344</link>
+      <description>New grad role at Stripe in San Francisco, California . Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7895344</guid>
     </item>
     <item>
       <title>Software Engineer, Balance Abstraction at Stripe</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Supabase in Remote. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 06:04:39 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.ashbyhq.com/supabase/ed6cedb1-b9bf-4609-ac5c-c75c33b31bf3</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Authorization at Postman</title>
-      <link>https://job-boards.greenhouse.io/postman/jobs/7776298003</link>
-      <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 04:32:19 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7776298003</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Integrations) at Dialpad</title>
-      <link>https://job-boards.greenhouse.io/dialpad/jobs/8400250002</link>
-      <description>New grad role at Dialpad in Bengaluru, India. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 04:00:10 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8400250002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5085712007?gh_jid=5085712007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 01:32:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5085712007?gh_jid=5085712007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 01:32:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 00:44:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</guid>
     </item>
   </channel>
 </rss>
