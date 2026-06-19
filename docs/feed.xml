@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 16:26:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 18:19:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Frontend at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4006733005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 17:35:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4006733005</guid>
+    </item>
+    <item>
+      <title>AI Systems Engineer at Dialpad</title>
+      <link>https://job-boards.greenhouse.io/dialpad/jobs/8512122002</link>
+      <description>New grad role at Dialpad in Kitchener, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:50:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/dialpad/jobs/8512122002</guid>
+    </item>
+    <item>
+      <title>Associate PM, Claims &amp; Payments at Maven Clinic</title>
+      <link>https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</link>
+      <description>New grad role at Maven Clinic in San Francisco, CA; Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 16:43:59 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</guid>
+    </item>
     <item>
       <title>Cloud Security Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7867389</link>
@@ -16,17 +37,17 @@
     </item>
     <item>
       <title>Data Scientist at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
       <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7809414</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7809414</guid>
     </item>
     <item>
       <title>Data Scientist, Economic Insights &amp; Research at Stripe</title>
@@ -72,24 +93,24 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8009143</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8009143</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7895344</link>
       <description>New grad role at Stripe in San Francisco, California . Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7895344</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7922832</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7922832</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8009143</link>
+      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8009143</guid>
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
@@ -100,10 +121,10 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7922832</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
+      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7922832</guid>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
     </item>
     <item>
       <title>Software Engineer, Balance Abstraction at Stripe</title>
@@ -155,13 +176,6 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7507904</guid>
     </item>
     <item>
-      <title>Industrial Trainee, Tax at Glean</title>
-      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4707386005</link>
-      <description>New grad role at Glean in Bangalore, India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 15:28:44 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4707386005</guid>
-    </item>
-    <item>
       <title>Data Engineer at Anthropic</title>
       <link>https://job-boards.greenhouse.io/anthropic/jobs/4956672008</link>
       <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Data Engineering</description>
@@ -197,11 +211,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8515080002</guid>
     </item>
     <item>
-      <title>Associate PM, Claims &amp; Payments at Maven Clinic</title>
-      <link>https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</link>
-      <description>New grad role at Maven Clinic in San Francisco, CA; Remote, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 13:00:12 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</guid>
+      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
+      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
@@ -209,13 +223,6 @@
       <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
     </item>
     <item>
       <title>Software Engineer-Full Stack at Okta</title>
@@ -331,17 +338,17 @@
     </item>
     <item>
       <title>Software Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 01:32:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Maritime at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5085712007?gh_jid=5085712007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 01:32:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5085712007?gh_jid=5085712007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Maritime at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</link>
+      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 01:32:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5049648007?gh_jid=5049648007</guid>
     </item>
     <item>
       <title>Software Engineer at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 00:44:07 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136753007?gh_jid=5136753007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer (SEIT) at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5158808007?gh_jid=5158808007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 00:38:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5158808007?gh_jid=5158808007</guid>
     </item>
   </channel>
 </rss>
