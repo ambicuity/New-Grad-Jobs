@@ -2,33 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1335,
-      "change_percent": -0.3
+      "total_jobs": 1345,
+      "change_percent": -0.81
     },
     "30_days": {
-      "total_jobs": 1330,
-      "change_percent": -0.67
+      "total_jobs": 1338,
+      "change_percent": -1.33
     }
   },
   "growing_categories": [
     "other",
-    "data_ml",
-    "infrastructure_sre"
+    "infrastructure_sre",
+    "software_engineering"
   ],
   "declining_categories": [
-    "software_engineering",
-    "data_engineering"
+    "data_engineering",
+    "data_ml",
+    "n/a"
   ],
   "confidence": 75,
   "insights": [
-    "The market is exhibiting high stability with a very tight range around the 1330-1340 level, suggesting a period of consolidation rather than aggressive expansion or contraction.",
-    "While core software engineering roles are seeing a slight softening, niche categories like infrastructure and ML are showing resilience, indicating a shift toward specialized technical talent.",
-    "FAANG+ and Unicorn hiring remains the primary driver of volume, but the lack of significant upward momentum suggests companies are maintaining cautious, replacement-heavy hiring strategies for new graduates."
+    "The market is exhibiting high stability with a mean-reverting trend around the 1335 level, suggesting a lack of strong directional momentum.",
+    "While 'other' and 'infrastructure_sre' categories show slight growth, the contraction in specialized data roles suggests a temporary cooling in high-growth AI/Data hiring for new graduates.",
+    "FAANG+ and Unicorn tiers remain the primary drivers of volume, indicating that hiring remains concentrated in large-cap and well-funded companies rather than the broader startup ecosystem."
   ],
-  "generated_at": "2026-06-18T01:43:18.748970+00:00",
+  "generated_at": "2026-06-19T00:04:25.560572+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-20",
-    "end": "2026-06-18"
+    "start": "2026-03-21",
+    "end": "2026-06-19"
   }
 }
