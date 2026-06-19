@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T20:11:15.449240+00:00",
+    "last_updated": "2026-06-19T21:25:08.359062+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-21",
@@ -5044,26 +5044,26 @@
     },
     {
       "date": "2026-06-19",
-      "total_jobs": 1363,
+      "total_jobs": 1334,
       "categories": {
-        "software_engineering": 883,
-        "data_ml": 138,
-        "infrastructure_sre": 183,
+        "software_engineering": 866,
+        "data_ml": 133,
+        "infrastructure_sre": 173,
         "data_engineering": 23,
-        "other": 119,
-        "hardware": 12,
+        "other": 120,
+        "hardware": 14,
         "product_management": 1,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 547,
-        "unicorn": 657,
-        "faang_plus": 159
+        "other": 539,
+        "unicorn": 634,
+        "faang_plus": 161
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 205
+          "jobs": 206
         },
         {
           "company": "Anduril Industries",
@@ -5079,19 +5079,15 @@
         },
         {
           "company": "Boeing",
-          "jobs": 32
+          "jobs": 33
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 31
+          "jobs": 32
         },
         {
           "company": "Pinterest",
           "jobs": 24
-        },
-        {
-          "company": "Glean",
-          "jobs": 23
         },
         {
           "company": "Stripe",
@@ -5100,11 +5096,15 @@
         {
           "company": "Robinhood",
           "jobs": 21
+        },
+        {
+          "company": "Affirm",
+          "jobs": 20
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 5.8,
-      "timestamp": "2026-06-19T20:11:15.448296+00:00"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 5.7,
+      "timestamp": "2026-06-19T21:25:08.357777+00:00"
     }
   ]
 }
