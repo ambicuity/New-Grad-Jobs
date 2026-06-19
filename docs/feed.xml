@@ -5,28 +5,42 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 10:00:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 13:44:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Calibration and Quality Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</link>
-      <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:39:09 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
+      <title>Associate PM, Claims &amp; Payments at Maven Clinic</title>
+      <link>https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</link>
+      <description>New grad role at Maven Clinic in San Francisco, CA; Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 13:00:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mavenclinic/jobs/8462839002</guid>
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
       <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:30:10 +0000</pubDate>
+      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
     </item>
     <item>
       <title>Systems Engineer, Space Imaging at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
       <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:30:10 +0000</pubDate>
+      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
+    </item>
+    <item>
+      <title>Software Engineer-Full Stack at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 11:53:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</guid>
+    </item>
+    <item>
+      <title>Calibration and Quality Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</link>
+      <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 09:39:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
@@ -183,6 +197,27 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8a801e21f5052a9a</guid>
     </item>
     <item>
+      <title>Python DevOps Engineer - SWF at BMW TechWorks India</title>
+      <link>https://in.indeed.com/viewjob?jk=882a8e1722dbd5bc</link>
+      <description>New grad role at BMW TechWorks India in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=882a8e1722dbd5bc</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Dot Net at MAERSK</title>
+      <link>https://in.indeed.com/viewjob?jk=64575f6ad6e9c513</link>
+      <description>New grad role at MAERSK in KA, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=64575f6ad6e9c513</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - .Net (VueJs/Angular) - Baroda at MRI Software</title>
+      <link>https://in.indeed.com/viewjob?jk=1fe9b9e895b43ba2</link>
+      <description>New grad role at MRI Software in GJ, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1fe9b9e895b43ba2</guid>
+    </item>
+    <item>
       <title>DevOps Engineer at Hype Digitals &amp; Promotions</title>
       <link>https://in.indeed.com/viewjob?jk=8cb684bd6e73b061</link>
       <description>New grad role at Hype Digitals &amp; Promotions in PB, IN. Category: Software Engineering</description>
@@ -195,6 +230,13 @@
       <description>New grad role at Logistics Sector Skill Council in TN, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=197f108db57a6d6e</guid>
+    </item>
+    <item>
+      <title>Specialist, EO/IR Systems Engineer (Top Secret Clearance) at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=b8d362446868ef89</link>
+      <description>New grad role at L3Harris in Herndon, VA, US. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b8d362446868ef89</guid>
     </item>
     <item>
       <title>Sessional Lecturer BUS 290 002 (Introduction to Finance) - Fall 2026 at University of Regina</title>
@@ -218,6 +260,27 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9251732e66580bb6</guid>
     </item>
     <item>
+      <title>Protection Engineering Specialist II at Mesa Associates, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=cc0b3391746f3e72</link>
+      <description>New grad role at Mesa Associates, Inc. in Knoxville, TN, US. Category: Hardware Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cc0b3391746f3e72</guid>
+    </item>
+    <item>
+      <title>Software engineer (Research Engineer) at NatWest Group</title>
+      <link>https://in.indeed.com/viewjob?jk=e974eb5ab6a9c3f6</link>
+      <description>New grad role at NatWest Group in KA, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e974eb5ab6a9c3f6</guid>
+    </item>
+    <item>
+      <title>Software engineer (Research Engineer) at NatWest Group</title>
+      <link>https://in.indeed.com/viewjob?jk=64980d82c9ba836a</link>
+      <description>New grad role at NatWest Group in HR, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=64980d82c9ba836a</guid>
+    </item>
+    <item>
       <title>Software Engineer II at NCR Atleos</title>
       <link>https://in.indeed.com/viewjob?jk=e56915b5874d799f</link>
       <description>New grad role at NCR Atleos in TS, IN. Category: Software Engineering</description>
@@ -225,11 +288,32 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e56915b5874d799f</guid>
     </item>
     <item>
+      <title>Graduate Apprentice Trainee at Mahindra &amp; Mahindra Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=da5cee72eb138b5c</link>
+      <description>New grad role at Mahindra &amp; Mahindra Ltd in MH, IN. Category: Product Management</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=da5cee72eb138b5c</guid>
+    </item>
+    <item>
       <title>Substitute Secretaries 2026 - 2027 at West Virginia Department of Education</title>
       <link>https://www.indeed.com/viewjob?jk=efec4ea3ace5fa75</link>
       <description>New grad role at West Virginia Department of Education in WV, US. Category: Other</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=efec4ea3ace5fa75</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer 5 at Adobe</title>
+      <link>https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Machine-Learning-Engineer-5_R169393</link>
+      <description>New grad role at Adobe in Bangalore. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Machine-Learning-Engineer-5_R169393</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-278412</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-278412</guid>
     </item>
     <item>
       <title>Platform Engineer I (DevOps) at Mastercard</title>
@@ -246,6 +330,13 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/United-States---North-Carolina---Sanford/Plant-Engineer-I_4959214-1</guid>
     </item>
     <item>
+      <title>Electrical Engineer II, CAS at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Mounds-View-Minnesota-United-States-of-America/Electrical-Engineer-II--CAS_R65903-2</link>
+      <description>New grad role at Medtronic in Mounds View, Minnesota, United States of America. Category: Hardware Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Mounds-View-Minnesota-United-States-of-America/Electrical-Engineer-II--CAS_R65903-2</guid>
+    </item>
+    <item>
       <title>Sales Representative  II - Acute Care &amp; Monitoring Vision Portfolio - Mumbai at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Mumbai-Maharashtra-India/Sales-Representative--II---Acute-Care---Monitoring-Vision-Portfolio---Mumbai_R60438-2</link>
       <description>New grad role at Medtronic in Mumbai, Maharashtra, India. Category: Other</description>
@@ -253,109 +344,18 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Mumbai-Maharashtra-India/Sales-Representative--II---Acute-Care---Monitoring-Vision-Portfolio---Mumbai_R60438-2</guid>
     </item>
     <item>
-      <title>Associate Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer-FullStack_JR2026510090-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
+      <title>2026 Associate Hardware Mechanical Engineer - Rolling Meadows IL at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Hardware-Mechanical-Engineer---Rolling-Meadows-IL_R10236536</link>
+      <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Hardware Engineering</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer-FullStack_JR2026510090-1</guid>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Hardware-Mechanical-Engineer---Rolling-Meadows-IL_R10236536</guid>
     </item>
     <item>
-      <title>Product Review Engineer (Entry-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Heath-OH/Product-Review-Engineer--Entry-Level-_JR2026511730-1</link>
-      <description>New grad role at Boeing in USA - Heath, OH. Category: Other</description>
+      <title>2026 Associate Hardware Electronics Engineer- Rolling Meadows IL at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Hardware-Electronics-Engineer--Rolling-Meadows-IL_R10236433</link>
+      <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Other</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Heath-OH/Product-Review-Engineer--Entry-Level-_JR2026511730-1</guid>
-    </item>
-    <item>
-      <title>Customer Data Scientist (Statsig) at Amplitude</title>
-      <link>https://job-boards.greenhouse.io/amplitude/jobs/8600045002</link>
-      <description>New grad role at Amplitude in Remote - USA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 18 Jun 2026 23:11:28 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8600045002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer, Manufacturing Systems at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8600019002?gh_jid=8600019002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:51:46 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8600019002?gh_jid=8600019002</guid>
-    </item>
-    <item>
-      <title>Application Software Engineer, Manufacturing Systems  at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8600012002?gh_jid=8600012002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:50:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8600012002?gh_jid=8600012002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Application Software) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8600005002?gh_jid=8600005002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:46:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8600005002?gh_jid=8600005002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Manufacturing Test at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5161520007?gh_jid=5161520007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:36:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161520007?gh_jid=5161520007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Manufacturing Test at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5161517007?gh_jid=5161517007</link>
-      <description>New grad role at Anduril Industries in Bellevue, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:36:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161517007?gh_jid=5161517007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Manufacturing Test at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5161515007?gh_jid=5161515007</link>
-      <description>New grad role at Anduril Industries in Mountain View, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:36:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161515007?gh_jid=5161515007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Manufacturing Test at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5161512007?gh_jid=5161512007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:36:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161512007?gh_jid=5161512007</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7719763</link>
-      <description>New grad role at MongoDB in Alberta; British Columbia; Calgary; Edmonton; Nova Scotia; Ontario; Ottawa; Quebec; Toronto; Vancouver. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:20:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7719763</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152463007?gh_jid=5152463007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 22:20:33 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152463007?gh_jid=5152463007</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Core Command  at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/5167601007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 21:52:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5167601007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 21:47:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer, Maneuver Dominance  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 18 Jun 2026 21:47:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</guid>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/XMLNAME-2026-Associate-Hardware-Electronics-Engineer--Rolling-Meadows-IL_R10236433</guid>
     </item>
   </channel>
 </rss>
