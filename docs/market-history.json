@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T21:25:08.359062+00:00",
+    "last_updated": "2026-06-19T22:33:59.146530+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-21",
@@ -5044,21 +5044,21 @@
     },
     {
       "date": "2026-06-19",
-      "total_jobs": 1334,
+      "total_jobs": 1352,
       "categories": {
-        "software_engineering": 866,
-        "data_ml": 133,
-        "infrastructure_sre": 173,
+        "infrastructure_sre": 171,
+        "software_engineering": 880,
+        "data_ml": 137,
         "data_engineering": 23,
-        "other": 120,
-        "hardware": 14,
+        "other": 123,
+        "hardware": 13,
         "product_management": 1,
         "quant_finance": 4
       },
       "tiers": {
         "other": 539,
-        "unicorn": 634,
-        "faang_plus": 161
+        "unicorn": 656,
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -5071,23 +5071,27 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 54
+          "jobs": 53
         },
         {
           "company": "Waymo",
           "jobs": 42
         },
         {
-          "company": "Boeing",
-          "jobs": 33
+          "company": "Northrop Grumman",
+          "jobs": 31
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 32
+          "company": "Boeing",
+          "jobs": 31
         },
         {
           "company": "Pinterest",
           "jobs": 24
+        },
+        {
+          "company": "Glean",
+          "jobs": 23
         },
         {
           "company": "Stripe",
@@ -5096,15 +5100,11 @@
         {
           "company": "Robinhood",
           "jobs": 21
-        },
-        {
-          "company": "Affirm",
-          "jobs": 20
         }
       ],
-      "unique_companies": 234,
-      "avg_jobs_per_company": 5.7,
-      "timestamp": "2026-06-19T21:25:08.357777+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 5.8,
+      "timestamp": "2026-06-19T22:33:59.145636+00:00"
     }
   ]
 }

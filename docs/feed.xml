@@ -5,21 +5,77 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 21:25:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 22:33:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>IT Systems Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
+      <title>Security Engineer - Governance Risk Compliance at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:10:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Cybersecurity at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4803447007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:10:30 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803447007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Platform Security at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
       <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 21:21:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
+      <pubDate>Fri, 19 Jun 2026 22:10:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Detection &amp; Response at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:09:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Azure Government at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:09:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
+    </item>
+    <item>
+      <title>Network Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:09:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
+    </item>
+    <item>
+      <title>Infrastructure Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 22:09:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
     </item>
     <item>
       <title>Application Security Engineer at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
       <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 19 Jun 2026 21:14:43 +0000</pubDate>
+      <pubDate>Fri, 19 Jun 2026 22:08:49 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Development Test (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8532395002?gh_jid=8532395002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 22:01:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8532395002?gh_jid=8532395002</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 21:23:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
     </item>
     <item>
       <title>Space Special Projects, Software Engineer at Anduril Industries</title>
@@ -104,6 +160,13 @@
       <description>New grad role at Locus Robotics in Wilmington, MA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 19 Jun 2026 18:16:58 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/locusrobotics/jobs/5140644007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Frontend at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4006733005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 17:35:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4006733005</guid>
     </item>
     <item>
       <title>AI Systems Engineer at Dialpad</title>
@@ -293,69 +356,6 @@
       <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 14:31:11 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8018436</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, Cloud Cost Utilization at GitLab</title>
-      <link>https://job-boards.greenhouse.io/gitlab/jobs/8515080002</link>
-      <description>New grad role at GitLab in Remote, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 14:09:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8515080002</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5115560007?gh_jid=5115560007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Space Imaging at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</link>
-      <description>New grad role at Anduril Industries in Boulder, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 12:02:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131971007?gh_jid=5131971007</guid>
-    </item>
-    <item>
-      <title>Software Engineer-Full Stack at Okta</title>
-      <link>https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</link>
-      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 11:53:52 +0000</pubDate>
-      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</guid>
-    </item>
-    <item>
-      <title>Calibration and Quality Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</link>
-      <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:39:09 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:28:59 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:27:11 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Sentry Tower at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:24:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Surveillance Tower at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 09:24:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</guid>
     </item>
   </channel>
 </rss>
