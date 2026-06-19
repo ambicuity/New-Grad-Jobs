@@ -5,63 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 22:33:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 23:47:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Security Engineer - Governance Risk Compliance at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
-      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:10:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer - Cybersecurity at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4803447007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:10:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803447007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Platform Security at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 22:10:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Detection &amp; Response at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
-      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:09:47 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Azure Government at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
-      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:09:37 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
-    </item>
-    <item>
-      <title>Network Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:09:22 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
+      <title>Application Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
     </item>
     <item>
       <title>Infrastructure Security Engineer at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
       <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 22:09:11 +0000</pubDate>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
     </item>
     <item>
-      <title>Application Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 19 Jun 2026 22:08:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
+      <title>Network Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Azure Government at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Detection &amp; Response at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5008186007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5008186007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Governance Risk Compliance at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
+      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
+    </item>
+    <item>
+      <title>Security Engineer - Platform Security at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Cybersecurity at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4803447007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 23:03:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803447007</guid>
     </item>
     <item>
       <title>Software Engineer, Development Test (Starlink) at SpaceX</title>
@@ -226,17 +226,17 @@
     </item>
     <item>
       <title>Security Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7923209</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7923209</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7923191</link>
       <description>New grad role at Stripe in South San Francisco, CA and US-Remote. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7923191</guid>
+    </item>
+    <item>
+      <title>Security Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7923209</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7923209</guid>
     </item>
     <item>
       <title>Security Engineer, Bridge at Stripe</title>
@@ -247,20 +247,6 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
-      <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7922832</link>
       <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
@@ -268,10 +254,24 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
+      <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=8009143</link>
       <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
       <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8009143</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
+      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
+      <pubDate>Fri, 19 Jun 2026 16:11:02 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
