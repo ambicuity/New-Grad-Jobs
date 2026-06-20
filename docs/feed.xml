@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 22:52:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 23:59:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Eve at Vercel</title>
@@ -120,20 +120,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=94de042ba54d0dde</guid>
     </item>
     <item>
-      <title>Junior Developer - Hybrid Contract at EEL Data Systems</title>
-      <link>https://www.indeed.com/viewjob?jk=3ad8208b9f075100</link>
-      <description>New grad role at EEL Data Systems in Denver, CO, US. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3ad8208b9f075100</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Front End at TensorWave</title>
-      <link>https://www.indeed.com/viewjob?jk=14692dad72afc282</link>
-      <description>New grad role at TensorWave in Las Vegas, NV, US. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=14692dad72afc282</guid>
-    </item>
-    <item>
       <title>CIVIL/STRUCTURAL ENGINEER IN TRAINING (JUNIOR) at Journey Engineering</title>
       <link>https://ca.indeed.com/viewjob?jk=bb99359f6feb36ad</link>
       <description>New grad role at Journey Engineering in Calgary, AB, CA. Category: Infrastructure &amp; SRE</description>
@@ -153,6 +139,20 @@
       <description>New grad role at Collins Aerospace in Ottawa, ON, CA. Category: Software Engineering</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c798a116bff0f523</guid>
+    </item>
+    <item>
+      <title>Junior Developer - Hybrid Contract at EEL Data Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=3ad8208b9f075100</link>
+      <description>New grad role at EEL Data Systems in Denver, CO, US. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3ad8208b9f075100</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Front End at TensorWave</title>
+      <link>https://www.indeed.com/viewjob?jk=14692dad72afc282</link>
+      <description>New grad role at TensorWave in Las Vegas, NV, US. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=14692dad72afc282</guid>
     </item>
     <item>
       <title>Software Engineer 1 (Onsite) at Collins Aerospace</title>
