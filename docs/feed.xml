@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 17:01:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 18:24:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Eve at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/6098390004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco, New York City. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 18:03:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/6098390004</guid>
+    </item>
     <item>
       <title>Propulsion Test Infrastructure Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5030310007?gh_jid=5030310007</link>
@@ -99,13 +106,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1965309b3fc995a4</guid>
     </item>
     <item>
-      <title>Software Development Engineer – L3 at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=98fe0c004e98a473</link>
-      <description>New grad role at Unknown in RJ, IN. Category: Other</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=98fe0c004e98a473</guid>
-    </item>
-    <item>
       <title>Software Engineer at nexusbuild.in</title>
       <link>https://in.indeed.com/viewjob?jk=94de042ba54d0dde</link>
       <description>New grad role at nexusbuild.in in RJ, IN. Category: Software Engineering</description>
@@ -113,25 +113,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=94de042ba54d0dde</guid>
     </item>
     <item>
-      <title>Junior SW Engineer, Co-Op (Onsite) at Collins Aerospace</title>
-      <link>https://ca.indeed.com/viewjob?jk=e599704fee76f2d8</link>
-      <description>New grad role at Collins Aerospace in Ottawa, ON, CA. Category: Software Engineering</description>
+      <title>Software Development Engineer – L3 at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=98fe0c004e98a473</link>
+      <description>New grad role at Unknown in RJ, IN. Category: Other</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e599704fee76f2d8</guid>
-    </item>
-    <item>
-      <title>Junior Software Engineer Co-Op (Onsite) at Collins Aerospace</title>
-      <link>https://ca.indeed.com/viewjob?jk=c798a116bff0f523</link>
-      <description>New grad role at Collins Aerospace in Ottawa, ON, CA. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c798a116bff0f523</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Front End at TensorWave</title>
-      <link>https://www.indeed.com/viewjob?jk=14692dad72afc282</link>
-      <description>New grad role at TensorWave in Las Vegas, NV, US. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=14692dad72afc282</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=98fe0c004e98a473</guid>
     </item>
     <item>
       <title>Software Engineer 1 (Onsite) at Collins Aerospace</title>
@@ -160,6 +146,27 @@
       <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Other</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=19a84390dc390f71</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Front End at TensorWave</title>
+      <link>https://www.indeed.com/viewjob?jk=14692dad72afc282</link>
+      <description>New grad role at TensorWave in Las Vegas, NV, US. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=14692dad72afc282</guid>
+    </item>
+    <item>
+      <title>Junior SW Engineer, Co-Op (Onsite) at Collins Aerospace</title>
+      <link>https://ca.indeed.com/viewjob?jk=e599704fee76f2d8</link>
+      <description>New grad role at Collins Aerospace in Ottawa, ON, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e599704fee76f2d8</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer Co-Op (Onsite) at Collins Aerospace</title>
+      <link>https://ca.indeed.com/viewjob?jk=c798a116bff0f523</link>
+      <description>New grad role at Collins Aerospace in Ottawa, ON, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c798a116bff0f523</guid>
     </item>
     <item>
       <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
@@ -349,13 +356,6 @@
       <description>New grad role at CVS Health in TX - Irving. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Machine-Learning-Engineer_R0942466</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942257</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942257</guid>
     </item>
   </channel>
 </rss>
