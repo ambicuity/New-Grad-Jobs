@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-20T01:58:04.586098+00:00",
+    "last_updated": "2026-06-20T06:23:59.319093+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-22",
@@ -5053,21 +5053,21 @@
     },
     {
       "date": "2026-06-20",
-      "total_jobs": 1345,
+      "total_jobs": 1238,
       "categories": {
-        "software_engineering": 876,
-        "data_ml": 140,
-        "data_engineering": 23,
-        "other": 113,
-        "hardware": 18,
-        "infrastructure_sre": 170,
+        "software_engineering": 826,
+        "data_ml": 129,
+        "infrastructure_sre": 162,
+        "data_engineering": 20,
+        "other": 83,
+        "hardware": 13,
         "product_management": 1,
         "quant_finance": 4
       },
       "tiers": {
-        "unicorn": 657,
-        "faang_plus": 157,
-        "other": 531
+        "unicorn": 656,
+        "other": 527,
+        "faang_plus": 55
       },
       "top_companies": [
         {
@@ -5087,14 +5087,6 @@
           "jobs": 42
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 31
-        },
-        {
-          "company": "Boeing",
-          "jobs": 31
-        },
-        {
           "company": "Pinterest",
           "jobs": 24
         },
@@ -5109,11 +5101,19 @@
         {
           "company": "Robinhood",
           "jobs": 21
+        },
+        {
+          "company": "Affirm",
+          "jobs": 20
+        },
+        {
+          "company": "Abnormal Security",
+          "jobs": 18
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 5.77,
-      "timestamp": "2026-06-20T01:58:04.585206+00:00"
+      "unique_companies": 222,
+      "avg_jobs_per_company": 5.58,
+      "timestamp": "2026-06-20T06:23:59.318151+00:00"
     }
   ]
 }
