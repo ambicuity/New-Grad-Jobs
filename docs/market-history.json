@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-21T20:24:18.849370+00:00",
+    "last_updated": "2026-06-21T21:53:49.410894+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-23",
@@ -5062,21 +5062,21 @@
     },
     {
       "date": "2026-06-21",
-      "total_jobs": 1382,
+      "total_jobs": 1378,
       "categories": {
-        "software_engineering": 874,
-        "data_ml": 155,
-        "other": 112,
+        "software_engineering": 871,
+        "data_ml": 154,
+        "other": 113,
         "data_engineering": 50,
-        "infrastructure_sre": 173,
+        "infrastructure_sre": 172,
         "hardware": 14,
         "product_management": 1,
         "quant_finance": 3
       },
       "tiers": {
         "unicorn": 653,
-        "other": 576,
-        "faang_plus": 153
+        "other": 571,
+        "faang_plus": 154
       },
       "top_companies": [
         {
@@ -5120,9 +5120,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 5.98,
-      "timestamp": "2026-06-21T20:24:18.848413+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 5.99,
+      "timestamp": "2026-06-21T21:53:49.409916+00:00"
     }
   ]
 }

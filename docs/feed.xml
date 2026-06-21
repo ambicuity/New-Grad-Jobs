@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 20:24:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 21:53:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, eve at Vercel</title>
@@ -141,6 +141,13 @@
       <guid isPermaLink="true">https://jobs.ashbyhq.com/cerebras/80775253-7fba-4a3b-87ee-0e70ce8e995c</guid>
     </item>
     <item>
+      <title>Software Development Engineer – L3 at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=98fe0c004e98a473</link>
+      <description>New grad role at Unknown in RJ, IN. Category: Other</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=98fe0c004e98a473</guid>
+    </item>
+    <item>
       <title>Junior Backend Developer at Unknown</title>
       <link>https://in.indeed.com/viewjob?jk=9aced8c97df012e1</link>
       <description>New grad role at Unknown in KA, IN. Category: Software Engineering</description>
@@ -153,13 +160,6 @@
       <description>New grad role at Unknown in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1965309b3fc995a4</guid>
-    </item>
-    <item>
-      <title>Software Development Engineer – L3 at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=98fe0c004e98a473</link>
-      <description>New grad role at Unknown in RJ, IN. Category: Other</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=98fe0c004e98a473</guid>
     </item>
     <item>
       <title>Software Engineer at nexusbuild.in</title>
@@ -218,13 +218,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=19a84390dc390f71</guid>
     </item>
     <item>
-      <title>Junior Developer - Hybrid Contract at EEL Data Systems</title>
-      <link>https://www.indeed.com/viewjob?jk=3ad8208b9f075100</link>
-      <description>New grad role at EEL Data Systems in Denver, CO, US. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3ad8208b9f075100</guid>
-    </item>
-    <item>
       <title>Electrical Engineer – Entry Level at ISC Constructors, LLC</title>
       <link>https://www.indeed.com/viewjob?jk=9139edfb0fe67bab</link>
       <description>New grad role at ISC Constructors, LLC in Baton Rouge, LA, US. Category: Hardware Engineering</description>
@@ -232,18 +225,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9139edfb0fe67bab</guid>
     </item>
     <item>
-      <title>Associate Software Engineer – Gen AI &amp; ML (Python) | Career Acceleration Program at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=8a21bb5e68be65cb</link>
-      <description>New grad role at Unknown in TS, IN. Category: Software Engineering</description>
+      <title>Junior Developer - Hybrid Contract at EEL Data Systems</title>
+      <link>https://www.indeed.com/viewjob?jk=3ad8208b9f075100</link>
+      <description>New grad role at EEL Data Systems in Denver, CO, US. Category: Software Engineering</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8a21bb5e68be65cb</guid>
-    </item>
-    <item>
-      <title>Junior Data Analyst at Omega Home Health Care Services Inc</title>
-      <link>https://www.indeed.com/viewjob?jk=12af4a292b861d5d</link>
-      <description>New grad role at Omega Home Health Care Services Inc in San Luis Obispo, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=12af4a292b861d5d</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3ad8208b9f075100</guid>
     </item>
     <item>
       <title>Associate Data Engineer at CVS Health</title>
@@ -258,6 +244,20 @@
       <description>New grad role at Synchrony in Stamford, CT, US. Category: Other</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4cf2a59d5efafd33</guid>
+    </item>
+    <item>
+      <title>Associate, Manufacturing Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=d8c96ed9128310fd</link>
+      <description>New grad role at L3Harris in Canoga Park, CA, US. Category: Other</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d8c96ed9128310fd</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer – Gen AI &amp; ML (Python) | Career Acceleration Program at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=8a21bb5e68be65cb</link>
+      <description>New grad role at Unknown in TS, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8a21bb5e68be65cb</guid>
     </item>
     <item>
       <title>Data Engineer (Python, Spark) at Autodesk</title>
