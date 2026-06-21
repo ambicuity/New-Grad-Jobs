@@ -1,35 +1,34 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1338,
-      "change_percent": 0.22
+      "total_jobs": 1405,
+      "change_percent": 1.3
     },
     "30_days": {
-      "total_jobs": 1340,
-      "change_percent": 0.37
+      "total_jobs": 1435,
+      "change_percent": 3.46
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
-    "other",
-    "faang_plus"
-  ],
-  "declining_categories": [
     "data_engineering",
-    "data_ml",
+    "infrastructure_sre",
     "software_engineering"
   ],
-  "confidence": 75,
-  "insights": [
-    "The market is currently exhibiting high stability with total job counts oscillating tightly around the 1335 mean, suggesting a period of consolidation rather than aggressive expansion or contraction.",
-    "Infrastructure and SRE roles are showing the most consistent upward momentum, indicating that companies are prioritizing operational stability and cloud efficiency over experimental data projects.",
-    "While FAANG+ hiring remains volatile, the overall volume is supported by a steady baseline of 'Unicorn' and 'Other' tier companies, which prevents significant downward shifts in the total job pool."
+  "declining_categories": [
+    "data_ml",
+    "other"
   ],
-  "generated_at": "2026-06-20T01:58:06.389704+00:00",
+  "confidence": 78,
+  "insights": [
+    "The market shows strong resilience with the current total (1387) sitting above both the 7-day and 30-day averages, indicating a positive momentum shift.",
+    "Data engineering and infrastructure roles are showing significant late-period growth, suggesting companies are prioritizing foundational technical scaling over experimental ML roles.",
+    "Unicorn and FAANG+ hiring tiers remain stable and elevated, providing a solid floor for the new graduate job market despite minor fluctuations in secondary categories."
+  ],
+  "generated_at": "2026-06-21T04:54:16.079243+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-22",
-    "end": "2026-06-20"
+    "start": "2026-03-23",
+    "end": "2026-06-21"
   }
 }
