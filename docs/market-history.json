@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-21T18:55:14.452217+00:00",
+    "last_updated": "2026-06-21T20:24:18.849370+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-23",
@@ -5062,21 +5062,21 @@
     },
     {
       "date": "2026-06-21",
-      "total_jobs": 1387,
+      "total_jobs": 1382,
       "categories": {
-        "software_engineering": 878,
-        "data_ml": 156,
-        "other": 114,
-        "data_engineering": 49,
-        "infrastructure_sre": 172,
+        "software_engineering": 874,
+        "data_ml": 155,
+        "other": 112,
+        "data_engineering": 50,
+        "infrastructure_sre": 173,
         "hardware": 14,
         "product_management": 1,
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 654,
-        "other": 579,
-        "faang_plus": 154
+        "unicorn": 653,
+        "other": 576,
+        "faang_plus": 153
       },
       "top_companies": [
         {
@@ -5093,7 +5093,7 @@
         },
         {
           "company": "CVS Health",
-          "jobs": 45
+          "jobs": 46
         },
         {
           "company": "Waymo",
@@ -5120,9 +5120,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 5.9,
-      "timestamp": "2026-06-21T18:55:14.451180+00:00"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 5.98,
+      "timestamp": "2026-06-21T20:24:18.848413+00:00"
     }
   ]
 }
