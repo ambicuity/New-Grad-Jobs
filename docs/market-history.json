@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-22T00:23:15.907110+00:00",
+    "last_updated": "2026-06-22T05:41:26.082723+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-24",
@@ -5071,21 +5071,21 @@
     },
     {
       "date": "2026-06-22",
-      "total_jobs": 1379,
+      "total_jobs": 1363,
       "categories": {
-        "software_engineering": 869,
-        "data_ml": 154,
+        "data_ml": 148,
+        "software_engineering": 866,
+        "other": 110,
         "data_engineering": 50,
-        "other": 114,
-        "infrastructure_sre": 174,
-        "hardware": 14,
+        "hardware": 15,
+        "infrastructure_sre": 170,
         "product_management": 1,
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 652,
-        "other": 573,
-        "faang_plus": 154
+        "other": 564,
+        "unicorn": 650,
+        "faang_plus": 149
       },
       "top_companies": [
         {
@@ -5094,27 +5094,27 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 173
+          "jobs": 174
         },
         {
           "company": "OpenAI",
           "jobs": 52
         },
         {
-          "company": "CVS Health",
-          "jobs": 46
-        },
-        {
           "company": "Waymo",
           "jobs": 42
         },
         {
+          "company": "CVS Health",
+          "jobs": 38
+        },
+        {
           "company": "Boeing",
-          "jobs": 32
+          "jobs": 29
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 28
+          "jobs": 27
         },
         {
           "company": "Pinterest",
@@ -5129,9 +5129,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 5.94,
-      "timestamp": "2026-06-22T00:23:15.905150+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 5.75,
+      "timestamp": "2026-06-22T05:41:26.081857+00:00"
     }
   ]
 }
