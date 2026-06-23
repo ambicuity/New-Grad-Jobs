@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 05:49:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 08:54:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8573114002</link>
+      <description>New grad role at ZoomInfo in Toronto, Ontario, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 23 Jun 2026 08:46:38 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8573114002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 07:52:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 07:52:57 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Platforms &amp; Productivity at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 05:55:42 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/6972536?gh_jid=6972536</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Edge at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/7068271?gh_jid=7068271</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 05:53:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7068271?gh_jid=7068271</guid>
+    </item>
     <item>
       <title>Full Stack Software Engineer, Data (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8540435002?gh_jid=8540435002</link>
@@ -120,11 +155,60 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8603667002?gh_jid=8603667002</guid>
     </item>
     <item>
-      <title>Customer Engineer (I) at NCR Atleos</title>
-      <link>https://www.indeed.com/viewjob?jk=7666e2d0bd0f67e3</link>
-      <description>New grad role at NCR Atleos in IN, US. Category: Other</description>
+      <title>Junior Engineer at VR Infomatic</title>
+      <link>https://in.indeed.com/viewjob?jk=c2d2c2cda0eaae78</link>
+      <description>New grad role at VR Infomatic in TN, IN. Category: Other</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7666e2d0bd0f67e3</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c2d2c2cda0eaae78</guid>
+    </item>
+    <item>
+      <title>Software Engineer 4 at Lam Research</title>
+      <link>https://in.indeed.com/viewjob?jk=d164c7983e0e37d8</link>
+      <description>New grad role at Lam Research in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d164c7983e0e37d8</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Full Stack at ChargePoint</title>
+      <link>https://in.indeed.com/viewjob?jk=5e45c80af2e065fd</link>
+      <description>New grad role at ChargePoint in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5e45c80af2e065fd</guid>
+    </item>
+    <item>
+      <title>Software Engineer SDET at bebo Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=6a839b88f22925b7</link>
+      <description>New grad role at bebo Technologies in CH, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6a839b88f22925b7</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=b2568b901f392bc2</link>
+      <description>New grad role at Unknown in TN, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b2568b901f392bc2</guid>
+    </item>
+    <item>
+      <title>Junior Full Stack Developer (Data CoE) at UST</title>
+      <link>https://www.indeed.com/viewjob?jk=9c03cfe3784888af</link>
+      <description>New grad role at UST in Bellevue, WA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9c03cfe3784888af</guid>
+    </item>
+    <item>
+      <title>Associate Data Engineer (Early Career Talent) at UST</title>
+      <link>https://www.indeed.com/viewjob?jk=30606b45f0bc0dd8</link>
+      <description>New grad role at UST in Bellevue, WA, US. Category: Data Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=30606b45f0bc0dd8</guid>
+    </item>
+    <item>
+      <title>Full Stack Developer II at FedEx</title>
+      <link>https://in.indeed.com/viewjob?jk=ed60653fd76e3057</link>
+      <description>New grad role at FedEx in TS, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ed60653fd76e3057</guid>
     </item>
     <item>
       <title>Graduate Apprentice Trainee at Mahindra &amp; Mahindra Ltd</title>
@@ -141,221 +225,137 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c43301835d1a57f2</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-280498</link>
-      <description>New grad role at Mastercard in Arlington, Virginia. Category: Software Engineering</description>
+      <title>Associate Data Engineer  at UST</title>
+      <link>https://www.indeed.com/viewjob?jk=46942b8c95a83539</link>
+      <description>New grad role at UST in Frisco, TX, US. Category: Data Engineering</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-280498</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=46942b8c95a83539</guid>
     </item>
     <item>
-      <title>Software Engineer I at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-I_R-279545</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>Associate, Data Analytics, Commercial &amp; Investment Bank, Tech Strategy and Execution at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=a2c36caf0d096c8a</link>
+      <description>New grad role at JPMorganChase in New York, NY, US. Category: Quantitative Finance</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-I_R-279545</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a2c36caf0d096c8a</guid>
     </item>
     <item>
-      <title>Data Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II_R-280746</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Data Engineering</description>
+      <title>Customer Engineer (I) at NCR Atleos</title>
+      <link>https://www.indeed.com/viewjob?jk=7666e2d0bd0f67e3</link>
+      <description>New grad role at NCR Atleos in IN, US. Category: Other</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II_R-280746</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7666e2d0bd0f67e3</guid>
     </item>
     <item>
-      <title>Data Engineer || at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer---_R-280236</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Data Engineering</description>
+      <title>Associate Analyst, Applications Programming at Analog Devices</title>
+      <link>https://in.indeed.com/viewjob?jk=bd08ed5dd4a194e3</link>
+      <description>New grad role at Analog Devices in GJ, IN. Category: Other</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer---_R-280236</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bd08ed5dd4a194e3</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-279419</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>Data Scientist- Digital Retail at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Bangalore-Karnataka-India/Data-Scientist--Digital-Retail_26970338</link>
+      <description>New grad role at Citi in Bangalore Karnataka India. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-279419</guid>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Bangalore-Karnataka-India/Data-Scientist--Digital-Retail_26970338</guid>
     </item>
     <item>
-      <title>Software Engineer II - CS at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II---CS_R-281017</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>Associate Structural Analysis Engineer at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Structural-Analysis-Engineer_JR2026515917-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Other</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II---CS_R-281017</guid>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Structural-Analysis-Engineer_JR2026515917-1</guid>
     </item>
     <item>
-      <title>ML and Agentic Systems Engineer at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ML-and-Agentic-Systems-Engineer_JR2015108</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ML-and-Agentic-Systems-Engineer_JR2015108</guid>
+      <title>Software Engineer, Simulations (Application Software) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 23:34:19 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8487534002?gh_jid=8487534002</guid>
     </item>
     <item>
-      <title>System Software Engineer - CUDA Chips at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/System-Software-Engineer---CUDA-Chips_JR2020020</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/System-Software-Engineer---CUDA-Chips_JR2020020</guid>
+      <title>Simulation Software Engineer (Application Software) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 23:34:04 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8488034002?gh_jid=8488034002</guid>
     </item>
     <item>
-      <title>Software Systems Engineer at HP</title>
-      <link>https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Software-Systems-Engineer_3159529-3</link>
-      <description>New grad role at HP in Spring, Texas, United States of America. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Software-Systems-Engineer_3159529-3</guid>
+      <title>Software Engineer, C++ (Simulations) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8603609002?gh_jid=8603609002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 23:33:53 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8603609002?gh_jid=8603609002</guid>
     </item>
     <item>
-      <title>Software Engineer, C++ at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer--C--_26WD99403</link>
-      <description>New grad role at Autodesk in Pune, IND. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer--C--_26WD99403</guid>
+      <title>2026 Early Career Manufacturing Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</link>
+      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 22 Jun 2026 23:04:27 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5009798007?gh_jid=5009798007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942442</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942442</guid>
+      <title>Software Engineer, Data Engineering at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4991618007?gh_jid=4991618007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:58:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4991618007?gh_jid=4991618007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942446</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942446</guid>
+      <title>Software Engineer, Robotics at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:36:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942447</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942447</guid>
+      <title>Dev Infra Software Engineer, Air Defense at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:36:42 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Richardson/Data-Engineer_R0942490</link>
-      <description>New grad role at CVS Health in TX - Richardson. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Richardson/Data-Engineer_R0942490</guid>
+      <title>Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5106220007?gh_jid=5106220007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:35:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5106220007?gh_jid=5106220007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942491</link>
-      <description>New grad role at CVS Health in TX - Irving. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942491</guid>
+      <title>Software Engineer II, Backend at Brex</title>
+      <link>https://www.brex.com/careers/8603327002?gh_jid=8603327002</link>
+      <description>New grad role at Brex in Vancouver, British Columbia, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:35:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.brex.com/careers/8603327002?gh_jid=8603327002</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942493</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942493</guid>
+      <title>Data Scientist, Identity at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/1f9c3666-82c8-45a7-8d4b-633a265ce996</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 22 Jun 2026 22:33:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/1f9c3666-82c8-45a7-8d4b-633a265ce996</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942501</link>
-      <description>New grad role at CVS Health in TX - Irving. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942501</guid>
+      <title>Systems Engineer, Sentry Tower at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:32:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</guid>
     </item>
     <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942505</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942505</guid>
+      <title>Systems Engineer, Surveillance Tower at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 22:32:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5051350007?gh_jid=5051350007</guid>
     </item>
     <item>
-      <title>Data Scientist at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R0942475</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R0942475</guid>
-    </item>
-    <item>
-      <title>Data Scientist at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R0942480</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R0942480</guid>
-    </item>
-    <item>
-      <title>Data Scientist at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Scientist_R0942507</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Scientist_R0942507</guid>
-    </item>
-    <item>
-      <title>Data Scientist at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Scientist_R0942509</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Scientist_R0942509</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Machine-Learning-Engineer_R0942466</link>
-      <description>New grad role at CVS Health in TX - Irving. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Machine-Learning-Engineer_R0942466</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942311</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942311</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942328</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942328</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942350</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Engineer_R0942350</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942384</link>
-      <description>New grad role at CVS Health in TX - Irving. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942384</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/MA---Wellesley/Data-Engineer_R0942398</link>
-      <description>New grad role at CVS Health in MA - Wellesley. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/MA---Wellesley/Data-Engineer_R0942398</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942401</link>
-      <description>New grad role at CVS Health in TX - Irving. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/TX---Irving/Data-Engineer_R0942401</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942412</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Data-Engineer_R0942412</guid>
-    </item>
-    <item>
-      <title>Data Engineer at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/MA---Wellesley/Data-Engineer_R0942419</link>
-      <description>New grad role at CVS Health in MA - Wellesley. Category: Data Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/MA---Wellesley/Data-Engineer_R0942419</guid>
+      <title>Software Engineer, Agent (Brazilian Portuguese speaking) at Sierra</title>
+      <link>https://jobs.ashbyhq.com/sierra/f51d6c09-d767-4e86-bc62-216b2051e318</link>
+      <description>New grad role at Sierra in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 22 Jun 2026 21:57:03 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/sierra/f51d6c09-d767-4e86-bc62-216b2051e318</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T05:49:04.926319+00:00",
+    "last_updated": "2026-06-23T08:54:28.438138+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,20 +5079,20 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1381,
+      "total_jobs": 1377,
       "categories": {
-        "software_engineering": 896,
         "data_ml": 157,
-        "infrastructure_sre": 177,
-        "other": 99,
+        "software_engineering": 894,
+        "infrastructure_sre": 175,
+        "other": 96,
+        "data_engineering": 38,
         "product_management": 1,
-        "data_engineering": 36,
-        "hardware": 12,
-        "quant_finance": 3
+        "quant_finance": 4,
+        "hardware": 12
       },
       "tiers": {
-        "unicorn": 660,
-        "other": 582,
+        "other": 574,
+        "unicorn": 664,
         "faang_plus": 139
       },
       "top_companies": [
@@ -5117,8 +5117,8 @@
           "jobs": 31
         },
         {
-          "company": "Accenture",
-          "jobs": 27
+          "company": "Boeing",
+          "jobs": 24
         },
         {
           "company": "Glean",
@@ -5129,17 +5129,17 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
-          "jobs": 23
+          "company": "Robinhood",
+          "jobs": 21
         },
         {
-          "company": "Robinhood",
+          "company": "Stripe",
           "jobs": 21
         }
       ],
-      "unique_companies": 234,
-      "avg_jobs_per_company": 5.9,
-      "timestamp": "2026-06-23T05:49:04.925383+00:00"
+      "unique_companies": 236,
+      "avg_jobs_per_company": 5.83,
+      "timestamp": "2026-06-23T08:54:28.437182+00:00"
     }
   ]
 }
