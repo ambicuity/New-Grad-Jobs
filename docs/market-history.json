@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T22:43:08.512646+00:00",
+    "last_updated": "2026-06-23T23:45:21.531095+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,26 +5079,26 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1336,
+      "total_jobs": 1348,
       "categories": {
         "software_engineering": 873,
-        "data_ml": 142,
-        "infrastructure_sre": 166,
-        "other": 110,
+        "infrastructure_sre": 171,
+        "data_ml": 143,
+        "other": 118,
         "product_management": 3,
-        "data_engineering": 27,
+        "data_engineering": 25,
         "hardware": 12,
         "quant_finance": 3
       },
       "tiers": {
-        "other": 540,
-        "unicorn": 678,
-        "faang_plus": 118
+        "other": 550,
+        "unicorn": 676,
+        "faang_plus": 122
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 209
+          "jobs": 208
         },
         {
           "company": "Anduril Industries",
@@ -5110,7 +5110,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 41
+          "jobs": 40
         },
         {
           "company": "Glean",
@@ -5137,9 +5137,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 5.91,
-      "timestamp": "2026-06-23T22:43:08.511747+00:00"
+      "unique_companies": 239,
+      "avg_jobs_per_company": 5.64,
+      "timestamp": "2026-06-23T23:45:21.530237+00:00"
     }
   ]
 }

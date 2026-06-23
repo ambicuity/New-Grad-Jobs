@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 22:43:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 23:45:21 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer-Salesforce at Gartner</title>
@@ -20,6 +20,69 @@
       <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
       <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d7d719e7cee2c7b0</guid>
+    </item>
+    <item>
+      <title>Data Quality Analyst II at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7926062?gh_jid=7926062</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7926062?gh_jid=7926062</guid>
+    </item>
+    <item>
+      <title>Software Engineer-Full Stack at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Core Identity (Auth0)   at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8001096?gh_jid=8001096</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8001096?gh_jid=8001096</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Security Engineering (Auth0) at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8003538?gh_jid=8003538</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8003538?gh_jid=8003538</guid>
+    </item>
+    <item>
+      <title>SRE Operations Engineer at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8003315?gh_jid=8003315</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8003315?gh_jid=8003315</guid>
+    </item>
+    <item>
+      <title>Systems Engineer - Productivity Engineering at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/6866775?gh_jid=6866775</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 23:20:33 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/6866775?gh_jid=6866775</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend (Consumer - Risk) at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7991763?gh_jid=7991763</link>
+      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 22:56:08 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7991763?gh_jid=7991763</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Infrastructure at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4708221005</link>
+      <description>New grad role at Scale AI in New York, NY; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 22:56:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4708221005</guid>
+    </item>
+    <item>
+      <title>Associate Data Center Operations Technician  at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5168434007</link>
+      <description>New grad role at xAI in Memphis, TN; Southaven, MS. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 23 Jun 2026 22:50:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5168434007</guid>
     </item>
     <item>
       <title>Software Engineer, Enterprise Apps at Coinbase</title>
@@ -37,17 +100,17 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -65,17 +128,17 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 22:20:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
     <item>
       <title>Software Engineer (Starshield) at SpaceX</title>
@@ -293,69 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5158247007?gh_jid=5158247007</guid>
-    </item>
-    <item>
-      <title>Dev Infra Software Engineer, Air Defense at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5150887007?gh_jid=5150887007</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5151916007?gh_jid=5151916007</guid>
-    </item>
-    <item>
-      <title>Electrical Systems Engineer, C2 Integration at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5145245007?gh_jid=5145245007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5145245007?gh_jid=5145245007</guid>
-    </item>
-    <item>
-      <title>Embedded Systems Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5129670007?gh_jid=5129670007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5129670007?gh_jid=5129670007</guid>
-    </item>
-    <item>
-      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5124623007?gh_jid=5124623007</guid>
-    </item>
-    <item>
-      <title>Energy Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5077697007?gh_jid=5077697007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike - Advanced Effects at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 23 Jun 2026 20:38:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</guid>
     </item>
   </channel>
 </rss>
