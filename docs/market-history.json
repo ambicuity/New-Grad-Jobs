@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T21:13:30.319579+00:00",
+    "last_updated": "2026-06-23T22:43:08.512646+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,21 +5079,21 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1350,
+      "total_jobs": 1336,
       "categories": {
-        "data_ml": 143,
-        "software_engineering": 878,
-        "infrastructure_sre": 167,
-        "other": 119,
+        "software_engineering": 873,
+        "data_ml": 142,
+        "infrastructure_sre": 166,
+        "other": 110,
         "product_management": 3,
-        "data_engineering": 25,
+        "data_engineering": 27,
         "hardware": 12,
         "quant_finance": 3
       },
       "tiers": {
-        "faang_plus": 121,
+        "other": 540,
         "unicorn": 678,
-        "other": 551
+        "faang_plus": 118
       },
       "top_companies": [
         {
@@ -5106,7 +5106,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 53
+          "jobs": 52
         },
         {
           "company": "Waymo",
@@ -5137,9 +5137,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 239,
-      "avg_jobs_per_company": 5.65,
-      "timestamp": "2026-06-23T21:13:30.318707+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 5.91,
+      "timestamp": "2026-06-23T22:43:08.511747+00:00"
     }
   ]
 }
