@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T11:55:59.063784+00:00",
+    "last_updated": "2026-06-23T14:43:24.393476+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,21 +5079,21 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1369,
+      "total_jobs": 1343,
       "categories": {
-        "software_engineering": 887,
-        "data_ml": 148,
-        "infrastructure_sre": 178,
-        "other": 112,
-        "data_engineering": 29,
-        "product_management": 1,
+        "software_engineering": 867,
+        "other": 118,
+        "data_ml": 142,
+        "infrastructure_sre": 179,
         "hardware": 11,
+        "data_engineering": 22,
+        "product_management": 1,
         "quant_finance": 3
       },
       "tiers": {
-        "other": 569,
         "unicorn": 664,
-        "faang_plus": 136
+        "other": 551,
+        "faang_plus": 128
       },
       "top_companies": [
         {
@@ -5113,16 +5113,16 @@
           "jobs": 41
         },
         {
-          "company": "Boeing",
-          "jobs": 25
-        },
-        {
           "company": "Glean",
           "jobs": 24
         },
         {
           "company": "Pinterest",
           "jobs": 24
+        },
+        {
+          "company": "Boeing",
+          "jobs": 23
         },
         {
           "company": "Robinhood",
@@ -5137,9 +5137,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 241,
-      "avg_jobs_per_company": 5.68,
-      "timestamp": "2026-06-23T11:55:59.061517+00:00"
+      "unique_companies": 240,
+      "avg_jobs_per_company": 5.6,
+      "timestamp": "2026-06-23T14:43:24.392448+00:00"
     }
   ]
 }
