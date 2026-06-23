@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T01:30:01.663382+00:00",
+    "last_updated": "2026-06-23T05:49:04.926319+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,20 +5079,21 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1367,
+      "total_jobs": 1381,
       "categories": {
-        "software_engineering": 893,
-        "data_engineering": 37,
+        "software_engineering": 896,
         "data_ml": 157,
-        "other": 97,
-        "infrastructure_sre": 171,
-        "hardware": 9,
+        "infrastructure_sre": 177,
+        "other": 99,
+        "product_management": 1,
+        "data_engineering": 36,
+        "hardware": 12,
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 661,
-        "faang_plus": 142,
-        "other": 564
+        "unicorn": 660,
+        "other": 582,
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -5105,7 +5106,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 53
+          "jobs": 52
         },
         {
           "company": "Waymo",
@@ -5114,6 +5115,10 @@
         {
           "company": "CVS Health",
           "jobs": 31
+        },
+        {
+          "company": "Accenture",
+          "jobs": 27
         },
         {
           "company": "Glean",
@@ -5130,15 +5135,11 @@
         {
           "company": "Robinhood",
           "jobs": 21
-        },
-        {
-          "company": "Stripe",
-          "jobs": 21
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-06-23T01:30:01.662469+00:00"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 5.9,
+      "timestamp": "2026-06-23T05:49:04.925383+00:00"
     }
   ]
 }
