@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T08:54:28.438138+00:00",
+    "last_updated": "2026-06-23T11:55:59.063784+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-25",
@@ -5079,21 +5079,21 @@
     },
     {
       "date": "2026-06-23",
-      "total_jobs": 1377,
+      "total_jobs": 1369,
       "categories": {
-        "data_ml": 157,
-        "software_engineering": 894,
-        "infrastructure_sre": 175,
-        "other": 96,
-        "data_engineering": 38,
+        "software_engineering": 887,
+        "data_ml": 148,
+        "infrastructure_sre": 178,
+        "other": 112,
+        "data_engineering": 29,
         "product_management": 1,
-        "quant_finance": 4,
-        "hardware": 12
+        "hardware": 11,
+        "quant_finance": 3
       },
       "tiers": {
-        "other": 574,
+        "other": 569,
         "unicorn": 664,
-        "faang_plus": 139
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -5113,12 +5113,8 @@
           "jobs": 41
         },
         {
-          "company": "CVS Health",
-          "jobs": 31
-        },
-        {
           "company": "Boeing",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "Glean",
@@ -5135,11 +5131,15 @@
         {
           "company": "Stripe",
           "jobs": 21
+        },
+        {
+          "company": "GE HealthCare",
+          "jobs": 20
         }
       ],
-      "unique_companies": 236,
-      "avg_jobs_per_company": 5.83,
-      "timestamp": "2026-06-23T08:54:28.437182+00:00"
+      "unique_companies": 241,
+      "avg_jobs_per_company": 5.68,
+      "timestamp": "2026-06-23T11:55:59.061517+00:00"
     }
   ]
 }
