@@ -1,19 +1,19 @@
 {
-  "outlook": "bullish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1385,
-      "change_percent": 1.32
+      "total_jobs": 1352,
+      "change_percent": 1.27
     },
     "30_days": {
-      "total_jobs": 1415,
-      "change_percent": 3.51
+      "total_jobs": 1345,
+      "change_percent": 0.75
     }
   },
   "growing_categories": [
+    "software_engineering",
     "data_ml",
-    "infrastructure_sre",
-    "software_engineering"
+    "infrastructure_sre"
   ],
   "declining_categories": [
     "other",
@@ -22,14 +22,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market shows resilience with the current 7-day average (1368) trending above the 30-day average (1340), suggesting a slow but steady expansion.",
-    "Unicorn-tier companies are demonstrating consistent hiring stability, acting as the primary anchor for volume while FAANG+ roles show signs of contraction.",
-    "Data/ML and Infrastructure roles are exhibiting higher volatility but positive growth momentum, indicating a strategic shift toward specialized technical talent over generalist roles."
+    "The market is currently exhibiting high stability, with total job volume oscillating within a tight range around the 1330-1380 mark, suggesting a mature, non-volatile phase.",
+    "While FAANG+ hiring has shown a recent contraction, Unicorn and mid-tier companies are providing enough volume to sustain the overall market floor.",
+    "Data Engineering experienced a sharp spike followed by a correction, indicating that while demand exists, it remains highly sensitive to specific project-based hiring cycles."
   ],
-  "generated_at": "2026-06-23T01:30:03.002075+00:00",
+  "generated_at": "2026-06-24T01:37:53.649412+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-25",
-    "end": "2026-06-23"
+    "start": "2026-03-26",
+    "end": "2026-06-24"
   }
 }
