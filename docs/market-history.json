@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T11:38:30.754323+00:00",
+    "last_updated": "2026-06-24T13:56:01.387103+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-26",
@@ -5088,21 +5088,21 @@
     },
     {
       "date": "2026-06-24",
-      "total_jobs": 1320,
+      "total_jobs": 1319,
       "categories": {
-        "software_engineering": 857,
-        "data_ml": 139,
-        "data_engineering": 27,
-        "other": 102,
+        "software_engineering": 850,
+        "data_ml": 142,
+        "data_engineering": 25,
+        "other": 107,
         "infrastructure_sre": 174,
         "product_management": 3,
         "hardware": 15,
         "quant_finance": 3
       },
       "tiers": {
-        "faang_plus": 116,
-        "other": 532,
-        "unicorn": 672
+        "unicorn": 671,
+        "faang_plus": 114,
+        "other": 534
       },
       "top_companies": [
         {
@@ -5119,7 +5119,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 40
+          "jobs": 39
         },
         {
           "company": "Glean",
@@ -5142,13 +5142,13 @@
           "jobs": 22
         },
         {
-          "company": "GE HealthCare",
+          "company": "Boeing",
           "jobs": 20
         }
       ],
-      "unique_companies": 222,
-      "avg_jobs_per_company": 5.95,
-      "timestamp": "2026-06-24T11:38:30.753230+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 5.81,
+      "timestamp": "2026-06-24T13:56:01.386093+00:00"
     }
   ]
 }
