@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T01:37:49.387025+00:00",
+    "last_updated": "2026-06-24T05:52:00.109328+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-26",
@@ -5088,21 +5088,21 @@
     },
     {
       "date": "2026-06-24",
-      "total_jobs": 1335,
+      "total_jobs": 1341,
       "categories": {
-        "software_engineering": 874,
+        "software_engineering": 879,
+        "data_engineering": 29,
+        "other": 105,
         "infrastructure_sre": 163,
-        "data_ml": 144,
-        "data_engineering": 25,
-        "other": 110,
+        "data_ml": 146,
         "hardware": 12,
         "product_management": 4,
         "quant_finance": 3
       },
       "tiers": {
+        "other": 551,
         "unicorn": 674,
-        "other": 542,
-        "faang_plus": 119
+        "faang_plus": 116
       },
       "top_companies": [
         {
@@ -5115,7 +5115,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 52
+          "jobs": 51
         },
         {
           "company": "Waymo",
@@ -5142,13 +5142,13 @@
           "jobs": 22
         },
         {
-          "company": "GE HealthCare",
+          "company": "Northrop Grumman",
           "jobs": 20
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 5.68,
-      "timestamp": "2026-06-24T01:37:49.386173+00:00"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 5.81,
+      "timestamp": "2026-06-24T05:52:00.108398+00:00"
     }
   ]
 }
