@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T16:17:56.639699+00:00",
+    "last_updated": "2026-06-24T18:17:33.696782+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-26",
@@ -5088,21 +5088,21 @@
     },
     {
       "date": "2026-06-24",
-      "total_jobs": 1359,
+      "total_jobs": 1347,
       "categories": {
-        "software_engineering": 853,
-        "data_ml": 143,
+        "software_engineering": 881,
+        "infrastructure_sre": 177,
+        "data_ml": 144,
         "data_engineering": 25,
-        "other": 114,
-        "infrastructure_sre": 204,
-        "product_management": 2,
-        "hardware": 15,
+        "other": 102,
+        "hardware": 12,
+        "product_management": 3,
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 672,
-        "faang_plus": 114,
-        "other": 573
+        "unicorn": 673,
+        "other": 568,
+        "faang_plus": 106
       },
       "top_companies": [
         {
@@ -5111,7 +5111,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 169
+          "jobs": 167
         },
         {
           "company": "OpenAI",
@@ -5122,8 +5122,8 @@
           "jobs": 39
         },
         {
-          "company": "Ferguson",
-          "jobs": 26
+          "company": "Accenture",
+          "jobs": 29
         },
         {
           "company": "Glean",
@@ -5131,7 +5131,7 @@
         },
         {
           "company": "Stripe",
-          "jobs": 23
+          "jobs": 22
         },
         {
           "company": "Affirm",
@@ -5146,9 +5146,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 236,
-      "avg_jobs_per_company": 5.76,
-      "timestamp": "2026-06-24T16:17:56.638739+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.73,
+      "timestamp": "2026-06-24T18:17:33.695872+00:00"
     }
   ]
 }
