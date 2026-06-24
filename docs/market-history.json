@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T08:51:12.451451+00:00",
+    "last_updated": "2026-06-24T11:38:30.754323+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-26",
@@ -5088,21 +5088,21 @@
     },
     {
       "date": "2026-06-24",
-      "total_jobs": 1328,
+      "total_jobs": 1320,
       "categories": {
-        "software_engineering": 877,
+        "software_engineering": 857,
+        "data_ml": 139,
         "data_engineering": 27,
         "other": 102,
-        "infrastructure_sre": 163,
-        "data_ml": 142,
+        "infrastructure_sre": 174,
         "product_management": 3,
-        "hardware": 11,
+        "hardware": 15,
         "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 674,
-        "other": 536,
-        "faang_plus": 118
+        "faang_plus": 116,
+        "other": 532,
+        "unicorn": 672
       },
       "top_companies": [
         {
@@ -5126,10 +5126,6 @@
           "jobs": 24
         },
         {
-          "company": "Pinterest",
-          "jobs": 23
-        },
-        {
           "company": "Affirm",
           "jobs": 22
         },
@@ -5142,13 +5138,17 @@
           "jobs": 22
         },
         {
-          "company": "Boeing",
+          "company": "Pinterest",
+          "jobs": 22
+        },
+        {
+          "company": "GE HealthCare",
           "jobs": 20
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 6.09,
-      "timestamp": "2026-06-24T08:51:12.450300+00:00"
+      "unique_companies": 222,
+      "avg_jobs_per_company": 5.95,
+      "timestamp": "2026-06-24T11:38:30.753230+00:00"
     }
   ]
 }
