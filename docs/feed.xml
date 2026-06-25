@@ -5,21 +5,35 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 00:23:09 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 04:42:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Fivetran</title>
+      <link>https://www.fivetran.com/careers/job?gh_jid=7778979003</link>
+      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:58:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7778979003</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:27:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:27:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
     <item>
       <title>Security Software Engineer, IAM at Vercel</title>
       <link>https://job-boards.greenhouse.io/vercel/jobs/6093255004</link>
       <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
       <pubDate>Thu, 25 Jun 2026 00:19:22 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/6093255004</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Fivetran</title>
-      <link>https://www.fivetran.com/careers/job?gh_jid=7778979003</link>
-      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
-      <pubDate>Thu, 25 Jun 2026 00:07:05 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7778979003</guid>
     </item>
     <item>
       <title>Software Engineer II, Managed Platform Services at Crusoe</title>
@@ -34,6 +48,20 @@
       <description>New grad role at Anduril Industries in Colorado Springs, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Thu, 25 Jun 2026 00:01:30 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5145750007?gh_jid=5145750007</guid>
+    </item>
+    <item>
+      <title>Software Engineer Trainee at key software services pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=696783ad03b2de9b</link>
+      <description>New grad role at key software services pvt Ltd in HR, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=696783ad03b2de9b</guid>
+    </item>
+    <item>
+      <title>Technical Operations &amp; Junior Developer (Hybrid / Flexible Hours) at Platinum programming</title>
+      <link>https://www.indeed.com/viewjob?jk=22f82e612f5b4d8d</link>
+      <description>New grad role at Platinum programming in Spanish Fork, UT, US. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=22f82e612f5b4d8d</guid>
     </item>
     <item>
       <title>Infrastructure Systems Engineer at NVIDIA</title>
@@ -69,6 +97,20 @@
       <description>New grad role at Citi in Jersey City New Jersey United States. Category: Other</description>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Jersey-City-New-Jersey-United-States/Junior-Data-Services-and-AI-Developer---Officer_26967855</guid>
+    </item>
+    <item>
+      <title>Associate Engineer Software - Cloud &amp; Applications at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Associate-Engineer-Software---Cloud---Applications_R10237644-1</link>
+      <description>New grad role at Northrop Grumman in United States-California-El Segundo. Category: Other</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Associate-Engineer-Software---Cloud---Applications_R10237644-1</guid>
+    </item>
+    <item>
+      <title>Network Engineer - Level 3 (26-221) at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Network-Engineer---Level-3--26-221-_R10237632-1</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Colorado Springs. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Network-Engineer---Level-3--26-221-_R10237632-1</guid>
     </item>
     <item>
       <title>Test Engineer Level 1/2 (AHT) at Northrop Grumman</title>
@@ -246,6 +288,27 @@
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Software-Developer---Java_JR2026511678-2</guid>
     </item>
     <item>
+      <title>Junior Cloud Platform Engineer - Systems Administrator at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Scoresby-Victoria-Australia/Cloud-Platform-Engineer---Systems-Administrator_R-00184313-1</link>
+      <description>New grad role at Leidos in Scoresby, Victoria, Australia. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Scoresby-Victoria-Australia/Cloud-Platform-Engineer---Systems-Administrator_R-00184313-1</guid>
+    </item>
+    <item>
+      <title>Systems Engineer at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Systems-Engineer_R-00186120</link>
+      <description>New grad role at Leidos in Bethesda, MD. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Systems-Engineer_R-00186120</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/San-Diego-CA/Software-Engineer_R-00186119</link>
+      <description>New grad role at Leidos in San Diego, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/San-Diego-CA/Software-Engineer_R-00186119</guid>
+    </item>
+    <item>
       <title>Implementations Network Engineer II at Leidos</title>
       <link>https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Implementations-Network-Engineer-II_R-00186103</link>
       <description>New grad role at Leidos in Shiloh, IL. Category: Infrastructure &amp; SRE</description>
@@ -293,69 +356,6 @@
       <description>New grad role at Leidos in Huntsville, AL. Category: Software Engineering</description>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Network-Software-Engineer_R-00186040</guid>
-    </item>
-    <item>
-      <title>Network Engineer II at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Joint-Fires-Network--JFN--Engineer-II_R-00185785</link>
-      <description>New grad role at Leidos in Shiloh, IL. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Joint-Fires-Network--JFN--Engineer-II_R-00185785</guid>
-    </item>
-    <item>
-      <title>Network Engineer I at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Joint-Fires-Network--JFN--Engineer-I_R-00185790</link>
-      <description>New grad role at Leidos in Shiloh, IL. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Joint-Fires-Network--JFN--Engineer-I_R-00185790</guid>
-    </item>
-    <item>
-      <title>Software Engineer II - Cloud Infrastructure Engineer at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7782567003?gh_jid=7782567003</link>
-      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 23:50:32 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7782567003?gh_jid=7782567003</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7741016003?gh_jid=7741016003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 23:00:23 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7741016003?gh_jid=7741016003</guid>
-    </item>
-    <item>
-      <title>Data Strategy Associate, Global Revenue Informatics at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/5064464007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 24 Jun 2026 21:45:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5064464007</guid>
-    </item>
-    <item>
-      <title>Embedded Linux Security Engineer at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/4129347007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 21:45:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4129347007</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Core Command  at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/5167601007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 21:45:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5167601007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Computer Vision at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/4128624007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 21:45:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4128624007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Fleet Management at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/4135093007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Wed, 24 Jun 2026 21:45:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4135093007</guid>
     </item>
   </channel>
 </rss>
