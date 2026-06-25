@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 22:00:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 23:27:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Technical Support Engineer - University Graduate 2026 at Verkada</title>
+      <link>https://job-boards.greenhouse.io/verkada/jobs/4715534007</link>
+      <description>New grad role at Verkada in San Mateo, CA United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 25 Jun 2026 22:12:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4715534007</guid>
+    </item>
+    <item>
+      <title>Technical Support Engineer - University Graduate 2026 at Verkada</title>
+      <link>https://job-boards.greenhouse.io/verkada/jobs/5172974007</link>
+      <description>New grad role at Verkada in New York City, NY United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 25 Jun 2026 22:12:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5172974007</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer (Endpoint) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8609444002?gh_jid=8609444002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 22:12:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8609444002?gh_jid=8609444002</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer (Endpoint) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8603113002?gh_jid=8603113002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 25 Jun 2026 22:12:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8603113002?gh_jid=8603113002</guid>
+    </item>
     <item>
       <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</link>
@@ -160,20 +188,6 @@
       <description>New grad role at Scale AI in San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Thu, 25 Jun 2026 20:55:28 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4618065005</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer (Endpoint) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8609444002?gh_jid=8609444002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Thu, 25 Jun 2026 20:52:09 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8609444002?gh_jid=8609444002</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer (Endpoint) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8603113002?gh_jid=8603113002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 25 Jun 2026 20:52:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8603113002?gh_jid=8603113002</guid>
     </item>
     <item>
       <title>Mission Engineer, Air Dominance &amp; Strike, Early Career at Anduril Industries</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Robinhood in Menlo Park, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 25 Jun 2026 18:05:02 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7697725?t=gh_src=&amp;gh_jid=7697725</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8604308002?gh_jid=8604308002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 25 Jun 2026 17:33:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8604308002?gh_jid=8604308002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer, API Experience  at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/66288824-8b77-4774-bc57-6825d3e6221e</link>
-      <description>New grad role at OpenAI in New York, New York, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 25 Jun 2026 17:02:07 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/66288824-8b77-4774-bc57-6825d3e6221e</guid>
     </item>
   </channel>
 </rss>
