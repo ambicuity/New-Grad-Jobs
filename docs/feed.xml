@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2026 11:19:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 12:50:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 27 Jun 2026 12:26:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 27 Jun 2026 12:26:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 27 Jun 2026 12:26:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike - Advanced Effects at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5089044007?gh_jid=5089044007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5089044007?gh_jid=5089044007</guid>
-    </item>
-    <item>
-      <title>Full-Stack Software Engineer, Mission Autonomy   at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5160360007?gh_jid=5160360007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5160360007?gh_jid=5160360007</guid>
     </item>
   </channel>
 </rss>
