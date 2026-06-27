@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1375,
-      "change_percent": 1.48
+      "total_jobs": 1412,
+      "change_percent": 1.36
     },
     "30_days": {
-      "total_jobs": 1410,
-      "change_percent": 4.06
+      "total_jobs": 1445,
+      "change_percent": 3.73
     }
   },
   "growing_categories": [
-    "unicorn",
+    "quant_finance",
     "software_engineering",
-    "infrastructure_sre"
+    "data_ml"
   ],
   "declining_categories": [
     "data_engineering",
-    "data_ml",
-    "hardware"
+    "infrastructure_sre",
+    "n/a"
   ],
-  "confidence": 75,
+  "confidence": 78,
   "insights": [
-    "The market shows a strong upward trend in 'unicorn' hiring, which is currently offsetting volatility in FAANG+ and smaller firms.",
-    "Software Engineering remains the primary anchor of the market, demonstrating resilience and consistent volume compared to niche roles.",
-    "Data-centric roles (Data Engineering and ML) are experiencing a contraction, suggesting a shift in hiring priorities toward core infrastructure and application development."
+    "The market shows a clear upward trajectory, with the current total (1393) significantly outperforming the 30-day average (1346), signaling renewed hiring momentum.",
+    "Unicorn-tier companies are driving the growth, consistently expanding their headcount requirements, while FAANG+ hiring remains volatile but stable.",
+    "While niche roles like Quant Finance are seeing percentage-based growth, the decline in Data Engineering suggests a consolidation of data-focused roles toward broader Machine Learning applications."
   ],
-  "generated_at": "2026-06-26T01:41:23.557579+00:00",
+  "generated_at": "2026-06-27T00:17:21.157145+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-28",
-    "end": "2026-06-26"
+    "start": "2026-03-29",
+    "end": "2026-06-27"
   }
 }
