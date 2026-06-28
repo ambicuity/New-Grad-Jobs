@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-28T22:35:43.988706+00:00",
+    "last_updated": "2026-06-28T23:47:03.043039+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-03-30",
@@ -5126,10 +5126,10 @@
       "date": "2026-06-28",
       "total_jobs": 1385,
       "categories": {
-        "software_engineering": 873,
+        "software_engineering": 874,
         "data_ml": 145,
         "other": 120,
-        "infrastructure_sre": 202,
+        "infrastructure_sre": 201,
         "data_engineering": 24,
         "hardware": 16,
         "quant_finance": 4,
@@ -5159,7 +5159,7 @@
         },
         {
           "company": "Deloitte",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "Northrop Grumman",
@@ -5182,9 +5182,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 6.21,
-      "timestamp": "2026-06-28T22:35:43.986434+00:00"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 6.18,
+      "timestamp": "2026-06-28T23:47:03.042014+00:00"
     }
   ]
 }
