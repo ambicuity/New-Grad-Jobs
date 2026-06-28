@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 14:58:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 16:15:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
@@ -30,10 +30,17 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 28 Jun 2026 09:29:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 28 Jun 2026 09:29:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -44,10 +51,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
       <pubDate>Sun, 28 Jun 2026 09:29:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -55,13 +62,6 @@
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sun, 28 Jun 2026 09:29:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 28 Jun 2026 09:29:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -205,17 +205,17 @@
     </item>
     <item>
       <title>Security Engineer (Blue Team) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8611223002?gh_jid=8611223002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Data Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 01:00:53 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8611223002?gh_jid=8611223002</guid>
-    </item>
-    <item>
-      <title>Security Engineer (Blue Team) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8611050002?gh_jid=8611050002</link>
       <description>New grad role at SpaceX in Redmond, WA. Category: Data Engineering</description>
       <pubDate>Sat, 27 Jun 2026 01:00:53 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8611050002?gh_jid=8611050002</guid>
+    </item>
+    <item>
+      <title>Security Engineer (Blue Team) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8611223002?gh_jid=8611223002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Data Engineering</description>
+      <pubDate>Sat, 27 Jun 2026 01:00:53 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8611223002?gh_jid=8611223002</guid>
     </item>
     <item>
       <title>Software Engineer, Web Products at Databricks</title>
@@ -226,17 +226,17 @@
     </item>
     <item>
       <title>Systems PhD - Software Engineer  at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</link>
-      <description>New grad role at Databricks in Mountain View, California; San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:17:31 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</guid>
-    </item>
-    <item>
-      <title>Systems PhD - Software Engineer  at Databricks</title>
       <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</link>
       <description>New grad role at Databricks in Bellevue, Washington; Seattle, Washington. Category: Software Engineering</description>
       <pubDate>Sat, 27 Jun 2026 00:17:31 +0000</pubDate>
       <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</guid>
+    </item>
+    <item>
+      <title>Systems PhD - Software Engineer  at Databricks</title>
+      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</link>
+      <description>New grad role at Databricks in Mountain View, California; San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Sat, 27 Jun 2026 00:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</guid>
     </item>
     <item>
       <title>Software Engineer - GenAI inference  at Databricks</title>
