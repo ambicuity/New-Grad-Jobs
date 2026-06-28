@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 16:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 17:40:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist - Inference, Community Support at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/8031907?gh_jid=8031907</link>
+      <description>New grad role at Airbnb in Remote - USA. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 28 Jun 2026 17:01:42 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/8031907?gh_jid=8031907</guid>
+    </item>
+    <item>
+      <title>Data Scientist - Algorithms, Community Support at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/8031901?gh_jid=8031901</link>
+      <description>New grad role at Airbnb in Remote - USA. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 28 Jun 2026 17:01:24 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/8031901?gh_jid=8031901</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007</guid>
-    </item>
-    <item>
-      <title>Calibration and Quality Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</link>
-      <description>New grad role at Anduril Industries in Morrisville, North Carolina, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5137605007?gh_jid=5137605007</guid>
-    </item>
-    <item>
-      <title>C++ Mission Software Engineer, Mission Autonomy at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007</guid>
     </item>
   </channel>
 </rss>
