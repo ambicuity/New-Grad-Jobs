@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 20:08:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 21:21:17 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, People Ops and AI Tools at Cloudflare</title>
@@ -169,6 +169,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=222369109d6b2840</guid>
     </item>
     <item>
+      <title>Java Software Engineer at Quest Global</title>
+      <link>https://in.indeed.com/viewjob?jk=6368ffcf6a2e1930</link>
+      <description>New grad role at Quest Global in TN, IN. Category: Software Engineering</description>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6368ffcf6a2e1930</guid>
+    </item>
+    <item>
       <title>Associate Data Scientist at Birlasoft</title>
       <link>https://www.indeed.com/viewjob?jk=04f2c4b4ab221bd4</link>
       <description>New grad role at Birlasoft in NJ, US. Category: Data Science &amp; ML</description>
@@ -188,6 +195,13 @@
       <description>New grad role at CHRISTUS Health in San Antonio, TX, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e0801c1971281399</guid>
+    </item>
+    <item>
+      <title>Software Developer at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=45f9112d4e5f67ed</link>
+      <description>New grad role at Unknown in Remote, IN. Category: Software Engineering</description>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=45f9112d4e5f67ed</guid>
     </item>
     <item>
       <title>Electromechanical Engineer (Level 2 OR 3) at Northrop Grumman</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136970007?gh_jid=5136970007</guid>
-    </item>
-    <item>
-      <title>2027 Early Career Mechanical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136984007?gh_jid=5136984007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136984007?gh_jid=5136984007</guid>
-    </item>
-    <item>
-      <title>2027 Early Career Software Engineer  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5162263007?gh_jid=5162263007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 27 Jun 2026 00:05:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5162263007?gh_jid=5162263007</guid>
     </item>
   </channel>
 </rss>
