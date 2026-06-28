@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1412,
-      "change_percent": 1.36
+      "total_jobs": 1378,
+      "change_percent": 1.1
     },
     "30_days": {
-      "total_jobs": 1445,
-      "change_percent": 3.73
+      "total_jobs": 1415,
+      "change_percent": 3.8
     }
   },
   "growing_categories": [
-    "quant_finance",
-    "software_engineering",
-    "data_ml"
+    "other",
+    "data_ml",
+    "software_engineering"
   ],
   "declining_categories": [
     "data_engineering",
     "infrastructure_sre",
-    "n/a"
+    "none"
   ],
-  "confidence": 78,
+  "confidence": 75,
   "insights": [
-    "The market shows a clear upward trajectory, with the current total (1393) significantly outperforming the 30-day average (1346), signaling renewed hiring momentum.",
-    "Unicorn-tier companies are driving the growth, consistently expanding their headcount requirements, while FAANG+ hiring remains volatile but stable.",
-    "While niche roles like Quant Finance are seeing percentage-based growth, the decline in Data Engineering suggests a consolidation of data-focused roles toward broader Machine Learning applications."
+    "The market is showing a clear upward trend, with the current 7-day average (1366) consistently outperforming the 30-day average (1346).",
+    "Unicorn companies are driving stability and growth, signaling a healthy appetite for new graduate talent despite volatility in FAANG+ and specialized engineering roles.",
+    "While specialized infrastructure and data engineering roles have seen a minor contraction, the broader 'other' category and core software engineering roles are compensating, suggesting a shift toward generalist hiring."
   ],
-  "generated_at": "2026-06-27T00:17:21.157145+00:00",
+  "generated_at": "2026-06-28T02:01:17.354797+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-29",
-    "end": "2026-06-27"
+    "start": "2026-03-30",
+    "end": "2026-06-28"
   }
 }
