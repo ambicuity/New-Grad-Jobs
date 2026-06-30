@@ -2,34 +2,33 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1405,
-      "change_percent": 1.22
+      "total_jobs": 1395,
+      "change_percent": 1.09
     },
     "30_days": {
-      "total_jobs": 1445,
-      "change_percent": 4.11
+      "total_jobs": 1435,
+      "change_percent": 4.0
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
-    "faang_plus",
-    "unicorn"
-  ],
-  "declining_categories": [
     "other",
     "data_ml",
-    "hardware"
+    "software_engineering"
+  ],
+  "declining_categories": [
+    "infrastructure_sre",
+    "data_engineering"
   ],
   "confidence": 75,
   "insights": [
-    "The market exhibits a clear upward trend, with the current total (1388) consistently outperforming both the 7-day and 30-day moving averages, signaling sustained hiring momentum.",
-    "Growth is heavily concentrated in high-value segments, specifically Infrastructure/SRE and FAANG+ companies, suggesting that firms are prioritizing core stability and scaling over experimental roles.",
-    "While 'Other' categories show volatility, the steady expansion in Unicorn and FAANG+ hiring indicates a healthy appetite for new graduate talent among top-tier employers heading into the next month."
+    "The market shows a clear upward trend, with the current total of 1380 comfortably exceeding both the 7-day and 30-day averages, indicating sustained hiring momentum.",
+    "FAANG+ and Unicorn tiers are showing stability and slight growth, suggesting that large-scale employers are maintaining their new graduate intake pipelines.",
+    "While Infrastructure/SRE has seen volatility, the broad-based growth in 'other' and 'data_ml' categories points to a diversifying demand for entry-level tech talent."
   ],
-  "generated_at": "2026-06-29T02:01:30.975487+00:00",
+  "generated_at": "2026-06-30T00:10:40.885017+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-03-31",
-    "end": "2026-06-29"
+    "start": "2026-04-01",
+    "end": "2026-06-30"
   }
 }
