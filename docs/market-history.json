@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-30T20:23:17.521465+00:00",
+    "last_updated": "2026-06-30T21:55:10.154650+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-01",
@@ -5142,30 +5142,26 @@
     },
     {
       "date": "2026-06-30",
-      "total_jobs": 1333,
+      "total_jobs": 1149,
       "categories": {
-        "software_engineering": 875,
-        "infrastructure_sre": 156,
-        "data_ml": 136,
-        "data_engineering": 30,
-        "other": 113,
-        "hardware": 14,
-        "quant_finance": 8,
+        "data_ml": 105,
+        "software_engineering": 732,
+        "infrastructure_sre": 155,
+        "data_engineering": 31,
+        "other": 105,
+        "hardware": 15,
+        "quant_finance": 5,
         "product_management": 1
       },
       "tiers": {
-        "other": 529,
+        "other": 343,
         "unicorn": 687,
-        "faang_plus": 117
+        "faang_plus": 119
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 213
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 178
         },
         {
           "company": "OpenAI",
@@ -5174,6 +5170,14 @@
         {
           "company": "Waymo",
           "jobs": 40
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 24
+        },
+        {
+          "company": "Glean",
+          "jobs": 23
         },
         {
           "company": "Pinterest",
@@ -5192,17 +5196,13 @@
           "jobs": 22
         },
         {
-          "company": "Glean",
-          "jobs": 22
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 21
+          "company": "Boeing",
+          "jobs": 20
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-06-30T20:23:17.519391+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.02,
+      "timestamp": "2026-06-30T21:55:10.153632+00:00"
     }
   ]
 }
