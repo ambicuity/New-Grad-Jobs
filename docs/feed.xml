@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 08:23:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 11:28:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robotics Software Engineer, Sensor Integration  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 11:22:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 11:05:59 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L3) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7996779</link>
+      <description>New grad role at Twilio in Remote - India. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 08:40:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996779</guid>
+    </item>
     <item>
       <title>Associate Data Scientist at Scopely</title>
       <link>https://job-boards.greenhouse.io/scopely/jobs/5284874008?gh_jid=5284874008</link>
@@ -51,17 +72,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Tue, 30 Jun 2026 00:34:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Tue, 30 Jun 2026 00:34:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 00:34:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Software Engineer - Modeling &amp; Simulation at Anduril Industries</title>
@@ -99,13 +120,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</guid>
     </item>
     <item>
-      <title>Robotics Software Engineer, Sensor Integration  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 30 Jun 2026 00:16:39 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007</guid>
-    </item>
-    <item>
       <title>Frontend Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
@@ -113,18 +127,18 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</guid>
     </item>
     <item>
+      <title>Sales Apprentice Trainee at Motorola Solutions</title>
+      <link>https://in.indeed.com/viewjob?jk=85c294bbbecdbcd9</link>
+      <description>New grad role at Motorola Solutions in HR, IN. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=85c294bbbecdbcd9</guid>
+    </item>
+    <item>
       <title>GET (Graduate Engineer Trainee) at WTT TECHNOLOGY.SERVICE INDIA PRIVATE LIMITED</title>
       <link>https://in.indeed.com/viewjob?jk=39031bc893afda86</link>
       <description>New grad role at WTT TECHNOLOGY.SERVICE INDIA PRIVATE LIMITED in TN, IN. Category: Other</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=39031bc893afda86</guid>
-    </item>
-    <item>
-      <title>Junior Software Engineer at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=ae853a42281c6d7d</link>
-      <description>New grad role at Unknown in UP, IN. Category: Software Engineering</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ae853a42281c6d7d</guid>
     </item>
     <item>
       <title>Graduate Apprentice Trainee at Smiths Group</title>
@@ -139,6 +153,83 @@
       <description>New grad role at Smiths Group in KA, IN. Category: Other</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5255e995c9445ea2</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=ae853a42281c6d7d</link>
+      <description>New grad role at Unknown in UP, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ae853a42281c6d7d</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - TA - FEM2103A at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=ef6ced629792e338</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ef6ced629792e338</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - TA - FEM1100C at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=1766cbc95bd61a91</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=1766cbc95bd61a91</guid>
+    </item>
+    <item>
+      <title>CUPE - Automne 2026 - FEM2504B (AE) at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=ca4e8bed613badf8</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ca4e8bed613badf8</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - TA - FEM2110B at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=d058ca6b72446d89</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=d058ca6b72446d89</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - TA - FEM2109A at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=32896cb21b5b9226</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=32896cb21b5b9226</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - TA LAB - CHM1311 LAB 65H at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=e11491eca82caf1d</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e11491eca82caf1d</guid>
+    </item>
+    <item>
+      <title>CUPE - Automne 2026 - Correcteur - FEM3500A at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=3fa51f25eb85950d</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=3fa51f25eb85950d</guid>
+    </item>
+    <item>
+      <title>CUPE - Automne 2026 - Correcteur - FEM2509A at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=f03b49d55c58f4a2</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f03b49d55c58f4a2</guid>
+    </item>
+    <item>
+      <title>CUPE - Fall 2026 - FEM3100B (Corrector) at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=458c3c1ae43541a5</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=458c3c1ae43541a5</guid>
+    </item>
+    <item>
+      <title>Software Engineer - AI Agents &amp; Automation at SecPod Careers</title>
+      <link>https://in.indeed.com/viewjob?jk=865f3d4f2844704d</link>
+      <description>New grad role at SecPod Careers in KA, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=865f3d4f2844704d</guid>
     </item>
     <item>
       <title>GenAI – Software Engineer III at Deloitte</title>
@@ -162,6 +253,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b20cc200a9d6b862</guid>
     </item>
     <item>
+      <title>Software Engineer II at Uber</title>
+      <link>https://www.indeed.com/viewjob?jk=288674c91c1a2d02</link>
+      <description>New grad role at Uber in San Francisco, CA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=288674c91c1a2d02</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Uber</title>
+      <link>https://www.indeed.com/viewjob?jk=879679de54fc925e</link>
+      <description>New grad role at Uber in Sunnyvale, CA, US. Category: Software Engineering</description>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=879679de54fc925e</guid>
+    </item>
+    <item>
       <title>Software Engineer - 12 months contract at Alcon</title>
       <link>https://ca.indeed.com/viewjob?jk=6fd07b8894ef6a17</link>
       <description>New grad role at Alcon in Mulgrave, NS, CA. Category: Software Engineering</description>
@@ -169,18 +274,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=6fd07b8894ef6a17</guid>
     </item>
     <item>
-      <title>Golang - Software Engineer II at Spectra Logic</title>
-      <link>https://www.indeed.com/viewjob?jk=1a5e967a6bf52dce</link>
-      <description>New grad role at Spectra Logic in Boulder, CO, US. Category: Software Engineering</description>
+      <title>Software Engineer at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=63ed15de4144819a</link>
+      <description>New grad role at Serco in Herndon, VA, US. Category: Software Engineering</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1a5e967a6bf52dce</guid>
-    </item>
-    <item>
-      <title>Cyber Security Engineer III at American University</title>
-      <link>https://www.indeed.com/viewjob?jk=a2a7926626364771</link>
-      <description>New grad role at American University in Washington, DC, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a2a7926626364771</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=63ed15de4144819a</guid>
     </item>
     <item>
       <title>Entry-Level Electrical Design Engineer – Power Systems at Qualdoc</title>
@@ -195,13 +293,6 @@
       <description>New grad role at Serco in Ludlow, MA, US. Category: Hardware Engineering</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=89a9e4273869b7a4</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Serco</title>
-      <link>https://www.indeed.com/viewjob?jk=63ed15de4144819a</link>
-      <description>New grad role at Serco in Herndon, VA, US. Category: Software Engineering</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=63ed15de4144819a</guid>
     </item>
     <item>
       <title>Entry Level Automation Travel Engineer at DMC Engineering</title>
@@ -253,109 +344,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=595f73c1c4e77e79</guid>
     </item>
     <item>
-      <title>DevOps Engineer at Mejora Infotech Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=cac15e5671498124</link>
-      <description>New grad role at Mejora Infotech Private Limited in WB, IN. Category: Infrastructure &amp; SRE</description>
+      <title>ROC Engineer (Level 2), AI-Enabled Service Delivery at ModernIT</title>
+      <link>https://www.indeed.com/viewjob?jk=e0cb05215acbdb2c</link>
+      <description>New grad role at ModernIT in La Verne, CA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cac15e5671498124</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e0cb05215acbdb2c</guid>
     </item>
     <item>
-      <title>QA Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=6c5e08851ea291e8</link>
-      <description>New grad role at Infor in TS, IN. Category: Other</description>
+      <title>Scientist, Systems Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=4590878ace56ea8e</link>
+      <description>New grad role at L3Harris in Rochester, NY, US. Category: Software Engineering</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6c5e08851ea291e8</guid>
-    </item>
-    <item>
-      <title>QA Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=97a97d55aa92e726</link>
-      <description>New grad role at Infor in TS, IN. Category: Other</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=97a97d55aa92e726</guid>
-    </item>
-    <item>
-      <title>QA Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=7f4b45431992c1ca</link>
-      <description>New grad role at Infor in TS, IN. Category: Other</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7f4b45431992c1ca</guid>
-    </item>
-    <item>
-      <title>QA Engineer, Associate at Infor</title>
-      <link>https://in.indeed.com/viewjob?jk=f5d986b76f51974b</link>
-      <description>New grad role at Infor in TS, IN. Category: Other</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f5d986b76f51974b</guid>
-    </item>
-    <item>
-      <title>Experienced Windows Systems Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Windows-Systems-Engineer_JR2026517020-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-Windows-Systems-Engineer_JR2026517020-1</guid>
-    </item>
-    <item>
-      <title>Data Engineer II at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7859406?gh_jid=7859406</link>
-      <description>New grad role at Samsara in Remote - US. Category: Data Engineering</description>
-      <pubDate>Mon, 29 Jun 2026 23:47:14 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7859406?gh_jid=7859406</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cloud Networking at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/8037090?gh_jid=8037090</link>
-      <description>New grad role at Airbnb in Remote - USA or Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 23:30:14 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/8037090?gh_jid=8037090</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II, SE Desk - TOLA at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7848363?gh_jid=7848363</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 22:59:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7848363?gh_jid=7848363</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II, SE Desk - West at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7311768?gh_jid=7311768</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 22:58:52 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7311768?gh_jid=7311768</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II, SE Desk - Southeast at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7848351?gh_jid=7848351</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 22:58:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7848351?gh_jid=7848351</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II, SE Desk - Mid West at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7311761?gh_jid=7311761</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 22:57:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7311761?gh_jid=7311761</guid>
-    </item>
-    <item>
-      <title>Sales Engineer II, SE Desk - Northeast at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/7311741?gh_jid=7311741</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 29 Jun 2026 22:56:36 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7311741?gh_jid=7311741</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7958766</link>
-      <description>New grad role at Pinterest in Palo Alto, CA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 29 Jun 2026 22:39:46 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7958766</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Training Platform at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 29 Jun 2026 22:33:04 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4590878ace56ea8e</guid>
     </item>
   </channel>
 </rss>
