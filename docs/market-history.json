@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-30T11:28:47.836304+00:00",
+    "last_updated": "2026-06-30T13:26:37.772196+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-01",
@@ -5142,30 +5142,26 @@
     },
     {
       "date": "2026-06-30",
-      "total_jobs": 1366,
+      "total_jobs": 1182,
       "categories": {
-        "software_engineering": 861,
-        "data_ml": 148,
-        "other": 138,
-        "hardware": 17,
-        "infrastructure_sre": 169,
-        "data_engineering": 29,
+        "software_engineering": 715,
+        "data_ml": 116,
+        "other": 133,
+        "hardware": 16,
+        "data_engineering": 30,
+        "infrastructure_sre": 168,
         "quant_finance": 3,
         "product_management": 1
       },
       "tiers": {
-        "other": 541,
+        "faang_plus": 127,
         "unicorn": 694,
-        "faang_plus": 131
+        "other": 361
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 213
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 177
         },
         {
           "company": "OpenAI",
@@ -5198,11 +5194,15 @@
         {
           "company": "Glean",
           "jobs": 22
+        },
+        {
+          "company": "Robinhood",
+          "jobs": 21
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 5.86,
-      "timestamp": "2026-06-30T11:28:47.835373+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 5.16,
+      "timestamp": "2026-06-30T13:26:37.771210+00:00"
     }
   ]
 }
