@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T22:28:20.722341+00:00",
+    "last_updated": "2026-07-01T23:55:43.804057+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-02",
@@ -5151,21 +5151,21 @@
     },
     {
       "date": "2026-07-01",
-      "total_jobs": 1366,
+      "total_jobs": 1345,
       "categories": {
-        "infrastructure_sre": 166,
-        "software_engineering": 907,
+        "data_engineering": 31,
         "data_ml": 139,
-        "data_engineering": 30,
-        "other": 110,
-        "hardware": 10,
+        "software_engineering": 894,
+        "infrastructure_sre": 156,
+        "other": 109,
+        "hardware": 12,
         "quant_finance": 3,
         "product_management": 1
       },
       "tiers": {
-        "unicorn": 687,
-        "other": 576,
-        "faang_plus": 103
+        "other": 543,
+        "faang_plus": 115,
+        "unicorn": 687
       },
       "top_companies": [
         {
@@ -5174,7 +5174,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 188
+          "jobs": 189
         },
         {
           "company": "OpenAI",
@@ -5183,10 +5183,6 @@
         {
           "company": "Waymo",
           "jobs": 41
-        },
-        {
-          "company": "University of Ottawa",
-          "jobs": 25
         },
         {
           "company": "Pinterest",
@@ -5205,13 +5201,17 @@
           "jobs": 22
         },
         {
+          "company": "University of Ottawa",
+          "jobs": 22
+        },
+        {
           "company": "Robinhood",
           "jobs": 22
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 6.27,
-      "timestamp": "2026-07-01T22:28:20.720204+00:00"
+      "unique_companies": 219,
+      "avg_jobs_per_company": 6.14,
+      "timestamp": "2026-07-01T23:55:43.803125+00:00"
     }
   ]
 }
