@@ -5,14 +5,35 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2026 21:02:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 22:28:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Hardware Engineering Program Specialist at Verkada</title>
       <link>https://job-boards.greenhouse.io/verkada/jobs/5174431007</link>
       <description>New grad role at Verkada in San Mateo, CA United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Wed, 01 Jul 2026 20:51:05 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2026 22:00:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5174431007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Data Platform  at Suno</title>
+      <link>https://jobs.ashbyhq.com/suno/bed3b0f7-a5f0-495e-9b62-16503adbcf1a</link>
+      <description>New grad role at Suno in Boston, Mass, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Jul 2026 21:32:54 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/suno/bed3b0f7-a5f0-495e-9b62-16503adbcf1a</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 01 Jul 2026 21:32:54 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Automotive HVAC Systems Engineer at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=8042365</link>
+      <description>New grad role at Waymo in Mountain View, Ca, USA ; Novi, Mi, USA. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Jul 2026 21:24:11 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8042365</guid>
     </item>
     <item>
       <title>[P] Data Engineer, Safeguards at Anthropic</title>
@@ -65,13 +86,6 @@
     </item>
     <item>
       <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8536085002?gh_jid=8536085002</link>
-      <description>New grad role at Lyft in San Francisco, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Jul 2026 19:20:40 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8536085002?gh_jid=8536085002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002</link>
       <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 01 Jul 2026 19:20:40 +0000</pubDate>
@@ -83,6 +97,13 @@
       <description>New grad role at Lyft in Seattle, WA. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 01 Jul 2026 19:20:40 +0000</pubDate>
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8335715002?gh_jid=8335715002</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Algorithms, Optimization - Fulfillment at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8536085002?gh_jid=8536085002</link>
+      <description>New grad role at Lyft in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 01 Jul 2026 19:20:40 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8536085002?gh_jid=8536085002</guid>
     </item>
     <item>
       <title>Data Scientist, Decisions - Central Market Management at Lyft</title>
@@ -226,24 +247,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Jul 2026 16:52:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Wed, 01 Jul 2026 16:52:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
     </item>
     <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Wed, 01 Jul 2026 16:52:24 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
@@ -251,6 +265,13 @@
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Wed, 01 Jul 2026 16:52:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Wed, 01 Jul 2026 16:52:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Wed, 01 Jul 2026 16:44:10 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Battlespace Awareness  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178113007?gh_jid=5178113007</link>
-      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Jul 2026 16:42:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178113007?gh_jid=5178113007</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 01 Jul 2026 16:41:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Battlespace Awareness  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178108007?gh_jid=5178108007</link>
-      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 01 Jul 2026 16:40:43 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178108007?gh_jid=5178108007</guid>
     </item>
   </channel>
 </rss>
