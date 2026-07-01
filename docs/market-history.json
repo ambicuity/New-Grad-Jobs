@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T08:58:40.083658+00:00",
+    "last_updated": "2026-07-01T12:11:52.069483+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-02",
@@ -5151,21 +5151,21 @@
     },
     {
       "date": "2026-07-01",
-      "total_jobs": 1350,
+      "total_jobs": 1342,
       "categories": {
-        "data_engineering": 32,
-        "software_engineering": 881,
-        "data_ml": 131,
-        "infrastructure_sre": 164,
-        "other": 122,
+        "data_ml": 129,
+        "software_engineering": 873,
+        "data_engineering": 29,
+        "infrastructure_sre": 162,
+        "other": 130,
         "quant_finance": 6,
-        "hardware": 13,
+        "hardware": 12,
         "product_management": 1
       },
       "tiers": {
+        "other": 549,
         "unicorn": 682,
-        "other": 552,
-        "faang_plus": 116
+        "faang_plus": 111
       },
       "top_companies": [
         {
@@ -5186,7 +5186,7 @@
         },
         {
           "company": "University of Ottawa",
-          "jobs": 37
+          "jobs": 36
         },
         {
           "company": "Stripe",
@@ -5209,9 +5209,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 214,
-      "avg_jobs_per_company": 6.31,
-      "timestamp": "2026-07-01T08:58:40.082747+00:00"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 5.99,
+      "timestamp": "2026-07-01T12:11:52.068518+00:00"
     }
   ]
 }
