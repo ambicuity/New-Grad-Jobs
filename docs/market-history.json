@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T00:23:07.746143+00:00",
+    "last_updated": "2026-07-01T05:03:26.114162+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-02",
@@ -5151,21 +5151,21 @@
     },
     {
       "date": "2026-07-01",
-      "total_jobs": 1332,
+      "total_jobs": 1336,
       "categories": {
-        "software_engineering": 879,
-        "data_ml": 135,
+        "data_ml": 131,
+        "software_engineering": 893,
+        "other": 96,
         "data_engineering": 29,
-        "infrastructure_sre": 163,
-        "other": 105,
-        "hardware": 15,
+        "infrastructure_sre": 168,
+        "hardware": 13,
         "quant_finance": 5,
         "product_management": 1
       },
       "tiers": {
-        "unicorn": 681,
-        "other": 524,
-        "faang_plus": 127
+        "unicorn": 683,
+        "other": 539,
+        "faang_plus": 114
       },
       "top_companies": [
         {
@@ -5183,10 +5183,6 @@
         {
           "company": "Waymo",
           "jobs": 40
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 23
         },
         {
           "company": "Stripe",
@@ -5207,11 +5203,15 @@
         {
           "company": "Affirm",
           "jobs": 22
+        },
+        {
+          "company": "Accenture",
+          "jobs": 21
         }
       ],
-      "unique_companies": 225,
-      "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-07-01T00:23:07.745272+00:00"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 5.96,
+      "timestamp": "2026-07-01T05:03:26.113281+00:00"
     }
   ]
 }
