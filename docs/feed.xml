@@ -5,21 +5,98 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 17:51:59 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 18:13:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 18:03:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
     <item>
       <title>Software Engineer (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7926883</link>
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:48:11 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2026 18:03:27 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7926883</guid>
     </item>
     <item>
       <title>Software Engineer (Active Clearance), Intelligence Systems at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</link>
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:47:24 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2026 17:49:20 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
+      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
+      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
+    </item>
+    <item>
+      <title>Frontend Product Software Engineer, Design Systems at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Release Systems at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/8031442?gh_jid=8031442</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/8031442?gh_jid=8031442</guid>
+    </item>
+    <item>
+      <title>Network Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7539814?gh_jid=7539814</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539814?gh_jid=7539814</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
+      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Jul 2026 17:48:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
     </item>
     <item>
       <title>Quality Systems Engineer  at Anduril Industries</title>
@@ -27,76 +104,6 @@
       <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 17:46:24 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5161721007?gh_jid=5161721007</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7739553?gh_jid=7739553</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</link>
-      <description>New grad role at Dropbox in Remote - US: Select locations. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762004?gh_jid=7762004</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</link>
-      <description>New grad role at Dropbox in Remote - Canada: Select locations. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762007?gh_jid=7762007</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7762009?gh_jid=7762009</guid>
-    </item>
-    <item>
-      <title>Frontend Product Software Engineer, Design Systems at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7862086?gh_jid=7862086</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Release Systems at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/8031442?gh_jid=8031442</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/8031442?gh_jid=8031442</guid>
-    </item>
-    <item>
-      <title>Network Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7872715?gh_jid=7872715</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539814?gh_jid=7539814</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539814?gh_jid=7539814</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</link>
-      <description>New grad role at Dropbox in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Jul 2026 17:43:59 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7539817?gh_jid=7539817</guid>
     </item>
     <item>
       <title>Software Engineer II - Supply Platform at StubHub</title>
@@ -240,6 +247,34 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
@@ -251,34 +286,6 @@
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:12:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4772830007?gh_jid=4772830007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Rapid Integration and Test at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5129324007?gh_jid=5129324007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:11:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5129324007?gh_jid=5129324007</guid>
     </item>
   </channel>
 </rss>
