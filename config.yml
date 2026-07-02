@@ -149,6 +149,8 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs"
       - name: "Anduril Industries"
         url: "https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs"
+      - name: "AppLovin"
+        url: "https://boards-api.greenhouse.io/v1/boards/applovin/jobs"
       - name: "Block"
         url: "https://boards-api.greenhouse.io/v1/boards/block/jobs"
       - name: "BridgeBio"
@@ -311,6 +313,8 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Scopely"
         url: "https://boards-api.greenhouse.io/v1/boards/scopely/jobs"
+      - name: "SeatGeek"
+        url: "https://boards-api.greenhouse.io/v1/boards/seatgeek/jobs"
       - name: "SingleStore"
         url: "https://boards-api.greenhouse.io/v1/boards/singlestore/jobs"
       - name: "SoFi"
@@ -327,6 +331,8 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/stockx/jobs"
       - name: "Stripe"
         url: "https://boards-api.greenhouse.io/v1/boards/stripe/jobs"
+      - name: "StubHub"
+        url: "https://boards-api.greenhouse.io/v1/boards/stubhubinc/jobs"
       - name: "Sumo Logic"
         url: "https://boards-api.greenhouse.io/v1/boards/sumologic/jobs"
       - name: "Sweetgreen"
@@ -559,6 +565,11 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/mintlify"
       - name: "Dub"
         url: "https://api.ashbyhq.com/posting-api/job-board/dub"
+      # Third-pass adds (2026-07-02): additional New Grad friendly Ashby boards
+      - name: "Authorium"
+        url: "https://api.ashbyhq.com/posting-api/job-board/authorium"
+      - name: "SentiLink"
+        url: "https://api.ashbyhq.com/posting-api/job-board/sentilink"
 
   google:
     # P5: Google Careers API deprecated (returns 404 since late 2024).
