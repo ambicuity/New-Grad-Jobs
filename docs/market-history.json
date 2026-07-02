@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-02T16:23:30.166058+00:00",
+    "last_updated": "2026-07-02T17:10:03.825728+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-03",
@@ -5160,21 +5160,21 @@
     },
     {
       "date": "2026-07-02",
-      "total_jobs": 1358,
+      "total_jobs": 1367,
       "categories": {
-        "software_engineering": 892,
+        "software_engineering": 912,
         "data_ml": 139,
-        "infrastructure_sre": 169,
+        "infrastructure_sre": 161,
         "hardware": 9,
-        "other": 117,
+        "other": 114,
         "data_engineering": 28,
         "quant_finance": 3,
         "product_management": 1
       },
       "tiers": {
-        "unicorn": 683,
-        "other": 555,
-        "faang_plus": 120
+        "other": 546,
+        "unicorn": 684,
+        "faang_plus": 137
       },
       "top_companies": [
         {
@@ -5190,16 +5190,20 @@
           "jobs": 47
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 43
+        },
+        {
           "company": "Waymo",
           "jobs": 41
         },
         {
           "company": "University of Ottawa",
-          "jobs": 31
+          "jobs": 30
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 28
+          "company": "Boeing",
+          "jobs": 23
         },
         {
           "company": "Pinterest",
@@ -5210,17 +5214,13 @@
           "jobs": 22
         },
         {
-          "company": "Boeing",
-          "jobs": 22
-        },
-        {
           "company": "Glean",
           "jobs": 22
         }
       ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 6.2,
-      "timestamp": "2026-07-02T16:23:30.165277+00:00"
+      "unique_companies": 215,
+      "avg_jobs_per_company": 6.36,
+      "timestamp": "2026-07-02T17:10:03.824752+00:00"
     }
   ]
 }

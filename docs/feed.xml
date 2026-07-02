@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 16:23:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 17:10:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Kernels C++/CUDA at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5052040007</link>
+      <description>New grad role at xAI in Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:04:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5052040007</guid>
+    </item>
     <item>
       <title>Software Engineer in Test - ML API Features at Cerebras</title>
       <link>https://jobs.ashbyhq.com/cerebras/224566db-c2c9-4b81-9534-a9917ea1aaa6</link>
@@ -121,20 +128,6 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
@@ -142,10 +135,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -156,10 +149,24 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
       <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -303,17 +310,17 @@
     </item>
     <item>
       <title>Site Reliability Engineer, Observability  at Ripple</title>
-      <link>https://ripple.com/careers/all-jobs/job/7947800?gh_jid=7947800</link>
-      <description>New grad role at Ripple in New York, NY, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 02 Jul 2026 00:06:05 +0000</pubDate>
-      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7947800?gh_jid=7947800</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, Observability  at Ripple</title>
       <link>https://ripple.com/careers/all-jobs/job/7947821?gh_jid=7947821</link>
       <description>New grad role at Ripple in Chicago, Illinois, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 02 Jul 2026 00:06:05 +0000</pubDate>
       <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7947821?gh_jid=7947821</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer, Observability  at Ripple</title>
+      <link>https://ripple.com/careers/all-jobs/job/7947800?gh_jid=7947800</link>
+      <description>New grad role at Ripple in New York, NY, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 02 Jul 2026 00:06:05 +0000</pubDate>
+      <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7947800?gh_jid=7947800</guid>
     </item>
     <item>
       <title>Graduate Trainee at Calix</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Marmon Technologies India Private Limited in KA, IN. Category: Hardware Engineering</description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cd7ace44999cc610</guid>
-    </item>
-    <item>
-      <title>Server Systems Engineer 2 - OCONUS Alaska at Columbia Technology Partners</title>
-      <link>https://www.indeed.com/viewjob?jk=7547f0cf4a559c9e</link>
-      <description>New grad role at Columbia Technology Partners in Annapolis Junction, MD, US. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7547f0cf4a559c9e</guid>
     </item>
   </channel>
 </rss>
