@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-02T02:43:12.385975+00:00",
+    "last_updated": "2026-07-02T06:29:26.205164+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-03",
@@ -5160,20 +5160,20 @@
     },
     {
       "date": "2026-07-02",
-      "total_jobs": 1350,
+      "total_jobs": 1336,
       "categories": {
-        "infrastructure_sre": 157,
+        "software_engineering": 897,
+        "data_ml": 138,
+        "infrastructure_sre": 154,
+        "hardware": 12,
+        "other": 101,
         "data_engineering": 30,
-        "software_engineering": 898,
-        "data_ml": 139,
-        "other": 112,
-        "hardware": 10,
         "quant_finance": 3,
         "product_management": 1
       },
       "tiers": {
         "unicorn": 687,
-        "other": 549,
+        "other": 535,
         "faang_plus": 114
       },
       "top_companies": [
@@ -5183,7 +5183,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 189
+          "jobs": 190
         },
         {
           "company": "OpenAI",
@@ -5210,17 +5210,17 @@
           "jobs": 22
         },
         {
-          "company": "Stripe",
+          "company": "Robinhood",
           "jobs": 22
         },
         {
-          "company": "Robinhood",
-          "jobs": 22
+          "company": "Stripe",
+          "jobs": 21
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 6.03,
-      "timestamp": "2026-07-02T02:43:12.385205+00:00"
+      "unique_companies": 221,
+      "avg_jobs_per_company": 6.05,
+      "timestamp": "2026-07-02T06:29:26.204272+00:00"
     }
   ]
 }
