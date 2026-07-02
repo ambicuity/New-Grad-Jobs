@@ -2,18 +2,18 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1350,
-      "change_percent": 1.35
+      "total_jobs": 1358,
+      "change_percent": 0.59
     },
     "30_days": {
-      "total_jobs": 1352,
-      "change_percent": 1.5
+      "total_jobs": 1365,
+      "change_percent": 1.11
     }
   },
   "growing_categories": [
     "data_engineering",
-    "data_ml",
-    "software_engineering"
+    "software_engineering",
+    "data_ml"
   ],
   "declining_categories": [
     "infrastructure_sre",
@@ -22,14 +22,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently exhibiting mean-reversion behavior, hovering consistently around the 1350-job mark despite short-term volatility.",
-    "Data-centric roles (Data Engineering and ML) are showing resilience and slight growth, suggesting firms are prioritizing AI-readiness over general infrastructure scaling.",
-    "The decline in FAANG+ and SRE roles indicates a tightening of specialized headcount, while Unicorns remain the primary stabilizers of the new graduate job market."
+    "The market shows high stability with a 30-day average nearly identical to the current count, suggesting a sideways consolidation phase.",
+    "Data Engineering is showing consistent growth momentum, while FAANG+ and SRE roles are experiencing a slight contraction, indicating a shift in hiring priorities toward core product and data infrastructure.",
+    "The overall volume is resilient, supported by steady hiring from Unicorn-tier companies, which offsets the volatility seen in the 'Other' category."
   ],
-  "generated_at": "2026-07-01T00:23:09.155136+00:00",
+  "generated_at": "2026-07-02T02:43:13.688720+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-02",
-    "end": "2026-07-01"
+    "start": "2026-04-03",
+    "end": "2026-07-02"
   }
 }
