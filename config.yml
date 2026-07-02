@@ -313,10 +313,14 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
       - name: "Scopely"
         url: "https://boards-api.greenhouse.io/v1/boards/scopely/jobs"
+      - name: "Scout AI"
+        url: "https://boards-api.greenhouse.io/v1/boards/scoutai/jobs"
       - name: "SeatGeek"
         url: "https://boards-api.greenhouse.io/v1/boards/seatgeek/jobs"
       - name: "SingleStore"
         url: "https://boards-api.greenhouse.io/v1/boards/singlestore/jobs"
+      - name: "SIXGEN"
+        url: "https://boards-api.greenhouse.io/v1/boards/sixgeninc/jobs"
       - name: "SoFi"
         url: "https://boards-api.greenhouse.io/v1/boards/sofi/jobs"
       - name: "SpaceX"
@@ -931,6 +935,8 @@ apis:
         workday_url: "https://fil.wd1.myworkdayjobs.com/external"
 
       # --- Consulting & Professional Services ---
+      - name: "Booz Allen Hamilton"
+        workday_url: "https://bah.wd1.myworkdayjobs.com/BAH_Jobs"
       - name: "Deloitte"
         workday_url: "https://deloitte.wd1.myworkdayjobs.com/DeloitteCareers"
       - name: "PwC"
