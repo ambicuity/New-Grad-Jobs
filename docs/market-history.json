@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-02T22:19:19.193439+00:00",
+    "last_updated": "2026-07-02T23:36:47.959037+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-03",
@@ -5160,21 +5160,21 @@
     },
     {
       "date": "2026-07-02",
-      "total_jobs": 1407,
+      "total_jobs": 1394,
       "categories": {
-        "other": 111,
-        "software_engineering": 930,
-        "data_engineering": 31,
-        "infrastructure_sre": 170,
-        "data_ml": 150,
+        "software_engineering": 927,
+        "data_ml": 149,
+        "other": 108,
+        "data_engineering": 30,
+        "infrastructure_sre": 163,
         "product_management": 2,
-        "quant_finance": 5,
-        "hardware": 8
+        "hardware": 9,
+        "quant_finance": 6
       },
       "tiers": {
-        "other": 587,
-        "unicorn": 687,
-        "faang_plus": 133
+        "unicorn": 689,
+        "other": 573,
+        "faang_plus": 132
       },
       "top_companies": [
         {
@@ -5195,7 +5195,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 29
         },
         {
           "company": "Northrop Grumman",
@@ -5203,14 +5203,14 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 26
-        },
-        {
-          "company": "Glean",
-          "jobs": 23
+          "jobs": 25
         },
         {
           "company": "Pinterest",
+          "jobs": 23
+        },
+        {
+          "company": "Glean",
           "jobs": 23
         },
         {
@@ -5218,9 +5218,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 6.12,
-      "timestamp": "2026-07-02T22:19:19.192455+00:00"
+      "unique_companies": 219,
+      "avg_jobs_per_company": 6.37,
+      "timestamp": "2026-07-02T23:36:47.958111+00:00"
     }
   ]
 }
