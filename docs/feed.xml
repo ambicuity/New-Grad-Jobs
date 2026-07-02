@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 17:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 17:30:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II - Supply Platform at StubHub</title>
+      <link>https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4824094101</link>
+      <description>New grad role at StubHub in Aliso Viejo, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 17:22:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4824094101</guid>
+    </item>
+    <item>
+      <title>2026 Early Career Manufacturing Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Irvine, California, United States; Santa Ana, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 02 Jul 2026 17:21:56 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Voyage Control Plane at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8041664</link>
+      <description>New grad role at MongoDB in Palo Alto; Seattle. Category: Product Management</description>
+      <pubDate>Thu, 02 Jul 2026 17:10:54 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8041664</guid>
+    </item>
     <item>
       <title>Software Engineer - Kernels C++/CUDA at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5052040007</link>
@@ -128,27 +149,6 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
@@ -167,6 +167,27 @@
       <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 02 Jul 2026 09:29:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -323,39 +344,18 @@
       <guid isPermaLink="true">https://ripple.com/careers/all-jobs/job/7947800?gh_jid=7947800</guid>
     </item>
     <item>
-      <title>Graduate Trainee at Calix</title>
-      <link>https://in.indeed.com/viewjob?jk=3eab5b9c3c1b222b</link>
-      <description>New grad role at Calix in KA, IN. Category: Data Science &amp; ML</description>
+      <title>Associate, Quality Assurance Engineer, Regional Product Delivery at DBS Bank</title>
+      <link>https://in.indeed.com/viewjob?jk=3045981ef3405075</link>
+      <description>New grad role at DBS Bank in TS, IN. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3eab5b9c3c1b222b</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3045981ef3405075</guid>
     </item>
     <item>
-      <title>Trainee Software Engineer - MERN at Kadel Labs</title>
-      <link>https://in.indeed.com/viewjob?jk=8b4f4cde6ee66ebf</link>
-      <description>New grad role at Kadel Labs in RJ, IN. Category: Software Engineering</description>
+      <title>Associate Database Administrator at NTT DATA</title>
+      <link>https://in.indeed.com/viewjob?jk=03c8ab55f785e40a</link>
+      <description>New grad role at NTT DATA in MH, IN. Category: Other</description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8b4f4cde6ee66ebf</guid>
-    </item>
-    <item>
-      <title>Junior Embedded Engineer at Kimbal</title>
-      <link>https://in.indeed.com/viewjob?jk=121d31e5bc958c8a</link>
-      <description>New grad role at Kimbal in DL, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=121d31e5bc958c8a</guid>
-    </item>
-    <item>
-      <title>Software Engineer III ( Angular+ .Net) at MRI Software</title>
-      <link>https://in.indeed.com/viewjob?jk=52adcb2b10d98596</link>
-      <description>New grad role at MRI Software in GJ, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=52adcb2b10d98596</guid>
-    </item>
-    <item>
-      <title>Graduate Engineer Trainee at Marmon Technologies India Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=cd7ace44999cc610</link>
-      <description>New grad role at Marmon Technologies India Private Limited in KA, IN. Category: Hardware Engineering</description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cd7ace44999cc610</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=03c8ab55f785e40a</guid>
     </item>
   </channel>
 </rss>
