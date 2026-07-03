@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-03T15:29:55.103749+00:00",
+    "last_updated": "2026-07-03T16:59:09.921471+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-04",
@@ -5169,21 +5169,21 @@
     },
     {
       "date": "2026-07-03",
-      "total_jobs": 1430,
+      "total_jobs": 1431,
       "categories": {
-        "data_ml": 151,
         "software_engineering": 921,
-        "infrastructure_sre": 176,
-        "other": 131,
-        "data_engineering": 31,
+        "data_ml": 151,
+        "infrastructure_sre": 173,
+        "other": 133,
+        "data_engineering": 33,
         "hardware": 12,
         "product_management": 2,
         "quant_finance": 6
       },
       "tiers": {
-        "unicorn": 688,
-        "other": 610,
-        "faang_plus": 132
+        "other": 614,
+        "unicorn": 687,
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -5200,7 +5200,7 @@
         },
         {
           "company": "University of Ottawa",
-          "jobs": 46
+          "jobs": 43
         },
         {
           "company": "Waymo",
@@ -5224,12 +5224,12 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 23
+          "jobs": 22
         }
       ],
-      "unique_companies": 222,
-      "avg_jobs_per_company": 6.44,
-      "timestamp": "2026-07-03T15:29:55.102512+00:00"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-07-03T16:59:09.920210+00:00"
     }
   ]
 }
