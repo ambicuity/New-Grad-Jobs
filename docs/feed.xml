@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 21:10:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 22:19:30 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - ETL Developer with Python at Gartner</title>
+      <link>https://in.indeed.com/viewjob?jk=ec17f7e786ca819e</link>
+      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ec17f7e786ca819e</guid>
+    </item>
     <item>
       <title>Tracking Software Engineer, Space at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 03 Jul 2026 09:19:28 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Active Clearance), Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 09:19:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007</guid>
     </item>
   </channel>
 </rss>
