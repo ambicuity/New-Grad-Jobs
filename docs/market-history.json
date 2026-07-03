@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-03T13:12:33.582903+00:00",
+    "last_updated": "2026-07-03T15:29:55.103749+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-04",
@@ -5169,20 +5169,20 @@
     },
     {
       "date": "2026-07-03",
-      "total_jobs": 1385,
+      "total_jobs": 1430,
       "categories": {
-        "data_ml": 149,
-        "software_engineering": 925,
-        "other": 100,
-        "data_engineering": 30,
-        "infrastructure_sre": 165,
+        "data_ml": 151,
+        "software_engineering": 921,
+        "infrastructure_sre": 176,
+        "other": 131,
+        "data_engineering": 31,
+        "hardware": 12,
         "product_management": 2,
-        "quant_finance": 6,
-        "hardware": 8
+        "quant_finance": 6
       },
       "tiers": {
         "unicorn": 688,
-        "other": 565,
+        "other": 610,
         "faang_plus": 132
       },
       "top_companies": [
@@ -5192,11 +5192,15 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 191
+          "jobs": 192
         },
         {
           "company": "OpenAI",
           "jobs": 47
+        },
+        {
+          "company": "University of Ottawa",
+          "jobs": 46
         },
         {
           "company": "Waymo",
@@ -5208,11 +5212,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 27
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 25
+          "jobs": 26
         },
         {
           "company": "Pinterest",
@@ -5223,13 +5223,13 @@
           "jobs": 23
         },
         {
-          "company": "Robinhood",
-          "jobs": 22
+          "company": "Booz Allen Hamilton",
+          "jobs": 23
         }
       ],
-      "unique_companies": 228,
-      "avg_jobs_per_company": 6.07,
-      "timestamp": "2026-07-03T13:12:33.580453+00:00"
+      "unique_companies": 222,
+      "avg_jobs_per_company": 6.44,
+      "timestamp": "2026-07-03T15:29:55.102512+00:00"
     }
   ]
 }
