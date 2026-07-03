@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 22:19:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 23:35:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - ETL Developer with Python at Gartner</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Tracking Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</link>
-      <description>New grad role at Anduril Industries in Foothill Ranch, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 20:47:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</guid>
-    </item>
-    <item>
-      <title>Tracking Software Engineer, Space at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5114861007?gh_jid=5114861007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 03 Jul 2026 20:47:57 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5114861007?gh_jid=5114861007</guid>
+    </item>
+    <item>
+      <title>Tracking Software Engineer, Space at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</link>
+      <description>New grad role at Anduril Industries in Foothill Ranch, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Jul 2026 20:47:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</guid>
     </item>
     <item>
       <title>Software Engineer - Kernels/CUDA (C++) at xAI</title>
@@ -247,10 +247,31 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -265,27 +286,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 09:30:22 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -303,17 +303,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 09:26:50 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Fri, 03 Jul 2026 09:26:50 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 03 Jul 2026 09:26:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
