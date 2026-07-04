@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 17:51:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 18:49:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
@@ -232,6 +232,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/instawork/jobs/4686498006</guid>
     </item>
     <item>
+      <title>AI/ML Technical Research Engineer (Entry Level) at Softscholars Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=75bf140c6796f381</link>
+      <description>New grad role at Softscholars Technologies in TN, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=75bf140c6796f381</guid>
+    </item>
+    <item>
       <title>Junior Python Developer at MyAuraMom</title>
       <link>https://in.indeed.com/viewjob?jk=45bb9a5017d55bfd</link>
       <description>New grad role at MyAuraMom in TS, IN. Category: Software Engineering</description>
@@ -246,11 +253,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c3939680e0cfc2c3</guid>
     </item>
     <item>
-      <title>AI/ML Technical Research Engineer (Entry Level) at Softscholars Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=75bf140c6796f381</link>
-      <description>New grad role at Softscholars Technologies in TN, IN. Category: Data Science &amp; ML</description>
+      <title>Embedded Systems Software Engineer at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=7e604e9b3bbb8f73</link>
+      <description>New grad role at Unknown in Remote, US. Category: Software Engineering</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=75bf140c6796f381</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7e604e9b3bbb8f73</guid>
+    </item>
+    <item>
+      <title>Associate II Software Engineer - Java at OSTTRA</title>
+      <link>https://in.indeed.com/viewjob?jk=78d823b025b9b9ae</link>
+      <description>New grad role at OSTTRA in HR, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=78d823b025b9b9ae</guid>
     </item>
     <item>
       <title>Software Engineer - ETL Developer with Python at Gartner</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Twilio in Remote - Spain. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 03 Jul 2026 15:19:44 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8007455</guid>
-    </item>
-    <item>
-      <title>Software Engineer L3 at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8009057</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 15:19:44 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8009057</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 15:19:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
     </item>
   </channel>
 </rss>
