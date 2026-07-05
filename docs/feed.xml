@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 18:52:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 20:07:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization &amp; Ads Marketplace Quality at Reddit</title>
@@ -295,13 +295,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=75bf140c6796f381</guid>
     </item>
     <item>
-      <title>Junior DS Engineer at General Dynamics Information Technology</title>
-      <link>https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</link>
-      <description>New grad role at General Dynamics Information Technology in Fairbanks, AK, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</guid>
-    </item>
-    <item>
       <title>Mobile Software Engineer at OpenPath Products</title>
       <link>https://www.indeed.com/viewjob?jk=aa8467c5e79aa4bd</link>
       <description>New grad role at OpenPath Products in Annapolis, MD, US. Category: Software Engineering</description>
@@ -321,6 +314,13 @@
       <description>New grad role at Remms LLC in US. Category: Other</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=421aa3becbc564cb</guid>
+    </item>
+    <item>
+      <title>Junior DS Engineer at General Dynamics Information Technology</title>
+      <link>https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</link>
+      <description>New grad role at General Dynamics Information Technology in Fairbanks, AK, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</guid>
     </item>
     <item>
       <title>Associate II Software Engineer - Java at OSTTRA</title>
