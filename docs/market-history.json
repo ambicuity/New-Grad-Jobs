@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-05T16:38:01.308175+00:00",
+    "last_updated": "2026-07-05T17:46:18.537110+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-06",
@@ -5247,7 +5247,7 @@
       ],
       "unique_companies": 234,
       "avg_jobs_per_company": 5.92,
-      "timestamp": "2026-07-05T16:38:01.307112+00:00"
+      "timestamp": "2026-07-05T17:46:18.535923+00:00"
     }
   ]
 }
