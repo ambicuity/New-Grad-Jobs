@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 10:35:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 12:03:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Production Software Engineer at Anduril Industries</title>
@@ -16,17 +16,24 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -44,17 +51,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 05 Jul 2026 09:33:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -176,6 +176,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=85b54c898e280e06</guid>
     </item>
     <item>
+      <title>Software Engineer at dunnhumby</title>
+      <link>https://in.indeed.com/viewjob?jk=df7a25807d9483e1</link>
+      <description>New grad role at dunnhumby in HR, IN. Category: Software Engineering</description>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=df7a25807d9483e1</guid>
+    </item>
+    <item>
       <title>Junior Software Engineer at InnovateX Solutions</title>
       <link>https://in.indeed.com/viewjob?jk=8f19c228f2a01b5d</link>
       <description>New grad role at InnovateX Solutions in KL, IN. Category: Software Engineering</description>
@@ -253,6 +260,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/instawork/jobs/4686498006</guid>
     </item>
     <item>
+      <title>AI/ML Technical Research Engineer (Entry Level) at Softscholars Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=75bf140c6796f381</link>
+      <description>New grad role at Softscholars Technologies in TN, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=75bf140c6796f381</guid>
+    </item>
+    <item>
       <title>Junior Python Developer at MyAuraMom</title>
       <link>https://in.indeed.com/viewjob?jk=45bb9a5017d55bfd</link>
       <description>New grad role at MyAuraMom in TS, IN. Category: Software Engineering</description>
@@ -267,11 +281,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c3939680e0cfc2c3</guid>
     </item>
     <item>
-      <title>AI/ML Technical Research Engineer (Entry Level) at Softscholars Technologies</title>
-      <link>https://in.indeed.com/viewjob?jk=75bf140c6796f381</link>
-      <description>New grad role at Softscholars Technologies in TN, IN. Category: Data Science &amp; ML</description>
+      <title>Junior DS Engineer at General Dynamics Information Technology</title>
+      <link>https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</link>
+      <description>New grad role at General Dynamics Information Technology in Fairbanks, AK, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=75bf140c6796f381</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</guid>
     </item>
     <item>
       <title>Mobile Software Engineer at OpenPath Products</title>
@@ -286,13 +300,6 @@
       <description>New grad role at Unknown in Remote, US. Category: Software Engineering</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7e604e9b3bbb8f73</guid>
-    </item>
-    <item>
-      <title>Junior DS Engineer at General Dynamics Information Technology</title>
-      <link>https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</link>
-      <description>New grad role at General Dynamics Information Technology in Fairbanks, AK, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cd1d0cca0b8239b2</guid>
     </item>
     <item>
       <title>CDL A Truck Driver Trainee | New Graduates Welcome at Remms LLC</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Foothill Ranch, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 03 Jul 2026 20:47:57 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5111994007?gh_jid=5111994007</guid>
-    </item>
-    <item>
-      <title>Tracking Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5114861007?gh_jid=5114861007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 03 Jul 2026 20:47:57 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5114861007?gh_jid=5114861007</guid>
     </item>
   </channel>
 </rss>
