@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-05T15:27:58.148627+00:00",
+    "last_updated": "2026-07-05T16:38:01.308175+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-06",
@@ -5191,8 +5191,8 @@
       "categories": {
         "data_ml": 149,
         "software_engineering": 915,
-        "other": 103,
-        "infrastructure_sre": 171,
+        "infrastructure_sre": 173,
+        "other": 101,
         "data_engineering": 30,
         "hardware": 9,
         "quant_finance": 7,
@@ -5237,17 +5237,17 @@
           "jobs": 23
         },
         {
-          "company": "Robinhood",
+          "company": "Booz Allen Hamilton",
           "jobs": 22
         },
         {
-          "company": "Affirm",
+          "company": "Robinhood",
           "jobs": 22
         }
       ],
-      "unique_companies": 236,
-      "avg_jobs_per_company": 5.87,
-      "timestamp": "2026-07-05T15:27:58.146775+00:00"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 5.92,
+      "timestamp": "2026-07-05T16:38:01.307112+00:00"
     }
   ]
 }
