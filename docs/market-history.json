@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-06T17:22:25.342904+00:00",
+    "last_updated": "2026-07-06T19:15:36.110489+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-07",
@@ -5196,67 +5196,67 @@
     },
     {
       "date": "2026-07-06",
-      "total_jobs": 1366,
+      "total_jobs": 1394,
       "categories": {
-        "infrastructure_sre": 157,
-        "software_engineering": 898,
-        "data_ml": 148,
-        "data_engineering": 29,
+        "software_engineering": 918,
+        "data_ml": 147,
+        "infrastructure_sre": 158,
+        "data_engineering": 26,
         "product_management": 2,
-        "other": 115,
+        "other": 127,
         "hardware": 10,
-        "quant_finance": 7
+        "quant_finance": 6
       },
       "tiers": {
-        "other": 563,
-        "unicorn": 678,
-        "faang_plus": 125
+        "other": 609,
+        "unicorn": 672,
+        "faang_plus": 113
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 213
+          "jobs": 212
         },
         {
           "company": "Anduril Industries",
-          "jobs": 189
+          "jobs": 191
         },
         {
           "company": "OpenAI",
-          "jobs": 45
+          "jobs": 44
         },
         {
           "company": "Waymo",
-          "jobs": 43
+          "jobs": 42
         },
         {
           "company": "University of Ottawa",
-          "jobs": 29
+          "jobs": 26
+        },
+        {
+          "company": "Glean",
+          "jobs": 24
         },
         {
           "company": "Boeing",
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 23
-        },
-        {
           "company": "Pinterest",
-          "jobs": 23
-        },
-        {
-          "company": "Glean",
-          "jobs": 23
+          "jobs": 22
         },
         {
           "company": "Robinhood",
           "jobs": 22
+        },
+        {
+          "company": "Affirm",
+          "jobs": 22
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 6.13,
-      "timestamp": "2026-07-06T17:22:25.341959+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 5.93,
+      "timestamp": "2026-07-06T19:15:36.109521+00:00"
     }
   ]
 }
