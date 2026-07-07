@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-07T20:49:29.146967+00:00",
+    "last_updated": "2026-07-07T22:06:33.568701+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-08",
@@ -5205,21 +5205,21 @@
     },
     {
       "date": "2026-07-07",
-      "total_jobs": 1391,
+      "total_jobs": 1395,
       "categories": {
-        "infrastructure_sre": 144,
-        "software_engineering": 917,
-        "data_ml": 145,
-        "other": 132,
-        "hardware": 19,
+        "software_engineering": 905,
+        "data_ml": 146,
+        "infrastructure_sre": 159,
+        "other": 137,
+        "hardware": 13,
         "product_management": 3,
-        "data_engineering": 27,
+        "data_engineering": 28,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 588,
-        "unicorn": 678,
-        "faang_plus": 125
+        "unicorn": 677,
+        "other": 595,
+        "faang_plus": 123
       },
       "top_companies": [
         {
@@ -5255,17 +5255,17 @@
           "jobs": 23
         },
         {
-          "company": "Pinterest",
+          "company": "Booz Allen Hamilton",
           "jobs": 22
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Affirm",
           "jobs": 22
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 6.13,
-      "timestamp": "2026-07-07T20:49:29.143879+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 5.89,
+      "timestamp": "2026-07-07T22:06:33.566691+00:00"
     }
   ]
 }
