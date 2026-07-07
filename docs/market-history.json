@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-07T18:55:07.795322+00:00",
+    "last_updated": "2026-07-07T20:49:29.146967+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-08",
@@ -5205,21 +5205,21 @@
     },
     {
       "date": "2026-07-07",
-      "total_jobs": 1403,
+      "total_jobs": 1391,
       "categories": {
-        "data_ml": 146,
-        "software_engineering": 932,
-        "infrastructure_sre": 149,
-        "other": 125,
+        "infrastructure_sre": 144,
+        "software_engineering": 917,
+        "data_ml": 145,
+        "other": 132,
         "hardware": 19,
         "product_management": 3,
-        "data_engineering": 25,
+        "data_engineering": 27,
         "quant_finance": 4
       },
       "tiers": {
-        "unicorn": 682,
-        "other": 601,
-        "faang_plus": 120
+        "other": 588,
+        "unicorn": 678,
+        "faang_plus": 125
       },
       "top_companies": [
         {
@@ -5240,32 +5240,32 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 31
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 23
+          "jobs": 35
         },
         {
           "company": "Glean",
-          "jobs": 23
-        },
-        {
-          "company": "Accenture",
-          "jobs": 22
+          "jobs": 24
         },
         {
           "company": "Leidos",
-          "jobs": 22
+          "jobs": 24
+        },
+        {
+          "company": "University of Ottawa",
+          "jobs": 23
         },
         {
           "company": "Pinterest",
           "jobs": 22
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 22
         }
       ],
-      "unique_companies": 238,
-      "avg_jobs_per_company": 5.89,
-      "timestamp": "2026-07-07T18:55:07.794054+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 6.13,
+      "timestamp": "2026-07-07T20:49:29.143879+00:00"
     }
   ]
 }
