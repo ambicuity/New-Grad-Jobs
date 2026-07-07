@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-07T16:44:30.223610+00:00",
+    "last_updated": "2026-07-07T18:55:07.795322+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-08",
@@ -5205,21 +5205,21 @@
     },
     {
       "date": "2026-07-07",
-      "total_jobs": 1372,
+      "total_jobs": 1403,
       "categories": {
-        "software_engineering": 912,
-        "infrastructure_sre": 153,
-        "other": 120,
-        "data_ml": 145,
-        "hardware": 13,
+        "data_ml": 146,
+        "software_engineering": 932,
+        "infrastructure_sre": 149,
+        "other": 125,
+        "hardware": 19,
         "product_management": 3,
-        "data_engineering": 22,
+        "data_engineering": 25,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 572,
-        "unicorn": 681,
-        "faang_plus": 119
+        "unicorn": 682,
+        "other": 601,
+        "faang_plus": 120
       },
       "top_companies": [
         {
@@ -5236,19 +5236,23 @@
         },
         {
           "company": "Waymo",
-          "jobs": 41
+          "jobs": 42
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 25
+          "jobs": 31
         },
         {
-          "company": "Boeing",
+          "company": "Booz Allen Hamilton",
           "jobs": 23
         },
         {
           "company": "Glean",
           "jobs": 23
+        },
+        {
+          "company": "Accenture",
+          "jobs": 22
         },
         {
           "company": "Leidos",
@@ -5257,15 +5261,11 @@
         {
           "company": "Pinterest",
           "jobs": 22
-        },
-        {
-          "company": "Robinhood",
-          "jobs": 22
         }
       ],
-      "unique_companies": 239,
-      "avg_jobs_per_company": 5.74,
-      "timestamp": "2026-07-07T16:44:30.222746+00:00"
+      "unique_companies": 238,
+      "avg_jobs_per_company": 5.89,
+      "timestamp": "2026-07-07T18:55:07.794054+00:00"
     }
   ]
 }
