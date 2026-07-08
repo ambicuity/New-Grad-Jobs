@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T12:59:51.273531+00:00",
+    "last_updated": "2026-07-08T15:28:48.090595+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-09",
@@ -5214,21 +5214,21 @@
     },
     {
       "date": "2026-07-08",
-      "total_jobs": 1416,
+      "total_jobs": 1410,
       "categories": {
-        "software_engineering": 908,
-        "data_ml": 146,
-        "infrastructure_sre": 160,
-        "other": 147,
-        "data_engineering": 35,
+        "software_engineering": 892,
+        "infrastructure_sre": 166,
+        "data_ml": 148,
+        "other": 148,
+        "hardware": 13,
+        "data_engineering": 34,
         "quant_finance": 6,
-        "hardware": 11,
         "product_management": 3
       },
       "tiers": {
-        "other": 607,
+        "other": 599,
         "unicorn": 676,
-        "faang_plus": 133
+        "faang_plus": 135
       },
       "top_companies": [
         {
@@ -5237,7 +5237,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 194
+          "jobs": 195
         },
         {
           "company": "Waymo",
@@ -5248,20 +5248,20 @@
           "jobs": 41
         },
         {
-          "company": "University of Ottawa",
-          "jobs": 38
-        },
-        {
           "company": "Northrop Grumman",
-          "jobs": 33
+          "jobs": 36
         },
         {
-          "company": "Leidos",
-          "jobs": 23
+          "company": "University of Ottawa",
+          "jobs": 33
         },
         {
           "company": "Glean",
           "jobs": 23
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 22
         },
         {
           "company": "Affirm",
@@ -5272,9 +5272,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 6.47,
-      "timestamp": "2026-07-08T12:59:51.272364+00:00"
+      "unique_companies": 225,
+      "avg_jobs_per_company": 6.27,
+      "timestamp": "2026-07-08T15:28:48.089382+00:00"
     }
   ]
 }
