@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T11:19:05.106124+00:00",
+    "last_updated": "2026-07-08T12:59:51.273531+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-09",
@@ -5214,21 +5214,21 @@
     },
     {
       "date": "2026-07-08",
-      "total_jobs": 1418,
+      "total_jobs": 1416,
       "categories": {
-        "software_engineering": 911,
-        "data_ml": 147,
+        "software_engineering": 908,
+        "data_ml": 146,
         "infrastructure_sre": 160,
-        "other": 146,
+        "other": 147,
         "data_engineering": 35,
-        "quant_finance": 5,
+        "quant_finance": 6,
         "hardware": 11,
         "product_management": 3
       },
       "tiers": {
-        "other": 610,
-        "faang_plus": 132,
-        "unicorn": 676
+        "other": 607,
+        "unicorn": 676,
+        "faang_plus": 133
       },
       "top_companies": [
         {
@@ -5253,11 +5253,11 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 32
+          "jobs": 33
         },
         {
           "company": "Leidos",
-          "jobs": 25
+          "jobs": 23
         },
         {
           "company": "Glean",
@@ -5272,9 +5272,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 217,
-      "avg_jobs_per_company": 6.53,
-      "timestamp": "2026-07-08T11:19:05.104963+00:00"
+      "unique_companies": 219,
+      "avg_jobs_per_company": 6.47,
+      "timestamp": "2026-07-08T12:59:51.272364+00:00"
     }
   ]
 }
