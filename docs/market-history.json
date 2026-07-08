@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T20:07:49.025746+00:00",
+    "last_updated": "2026-07-08T21:25:24.704064+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-09",
@@ -5214,21 +5214,21 @@
     },
     {
       "date": "2026-07-08",
-      "total_jobs": 1405,
+      "total_jobs": 1390,
       "categories": {
-        "software_engineering": 912,
-        "infrastructure_sre": 166,
-        "data_ml": 148,
+        "software_engineering": 909,
+        "infrastructure_sre": 158,
+        "data_ml": 144,
         "data_engineering": 27,
-        "other": 128,
-        "hardware": 16,
-        "quant_finance": 6,
+        "other": 129,
+        "hardware": 14,
+        "quant_finance": 7,
         "product_management": 2
       },
       "tiers": {
+        "other": 592,
         "unicorn": 678,
-        "other": 600,
-        "faang_plus": 127
+        "faang_plus": 120
       },
       "top_companies": [
         {
@@ -5237,7 +5237,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 195
+          "jobs": 196
         },
         {
           "company": "Waymo",
@@ -5248,33 +5248,33 @@
           "jobs": 40
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 27
-        },
-        {
           "company": "University of Ottawa",
-          "jobs": 25
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 25
-        },
-        {
-          "company": "Glean",
-          "jobs": 23
+          "jobs": 26
         },
         {
           "company": "Pinterest",
           "jobs": 22
         },
         {
+          "company": "Glean",
+          "jobs": 22
+        },
+        {
           "company": "Affirm",
           "jobs": 22
+        },
+        {
+          "company": "Boeing",
+          "jobs": 21
+        },
+        {
+          "company": "Stripe",
+          "jobs": 21
         }
       ],
-      "unique_companies": 234,
-      "avg_jobs_per_company": 6.0,
-      "timestamp": "2026-07-08T20:07:49.024639+00:00"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 6.1,
+      "timestamp": "2026-07-08T21:25:24.702986+00:00"
     }
   ]
 }
