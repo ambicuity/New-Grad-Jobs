@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jul 2026 06:24:52 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 09:08:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Jul 2026 07:32:04 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
+    </item>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
       <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
@@ -128,17 +135,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Jul 2026 00:29:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:29:55 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Wed, 08 Jul 2026 00:29:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Software Engineer - Maritime Integrated Systems at Anduril Industries</title>
@@ -148,214 +155,207 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167630007?gh_jid=5167630007</guid>
     </item>
     <item>
-      <title>Semiconductor Software Engineer at BV Teck</title>
-      <link>https://www.indeed.com/viewjob?jk=022b869e44ff6388</link>
-      <description>New grad role at BV Teck in Remote, US. Category: Software Engineering</description>
+      <title>Graduate Trainee Engineer at RAMELEX PVT LTD</title>
+      <link>https://in.indeed.com/viewjob?jk=0d69d5718856e4b8</link>
+      <description>New grad role at RAMELEX PVT LTD in MH, IN. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=022b869e44ff6388</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0d69d5718856e4b8</guid>
     </item>
     <item>
-      <title>Robotics Software Engineer at BV Teck</title>
-      <link>https://www.indeed.com/viewjob?jk=6229704ba28b5453</link>
-      <description>New grad role at BV Teck in Remote, US. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO4585 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=d13766fcf63806c4</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6229704ba28b5453</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=d13766fcf63806c4</guid>
     </item>
     <item>
-      <title>Oracle Cloud Security Engineer at BV Teck</title>
-      <link>https://www.indeed.com/viewjob?jk=905a79cf9b62164b</link>
-      <description>New grad role at BV Teck in Remote, US. Category: Infrastructure &amp; SRE</description>
+      <title>CUPE - Automne 2026 - ECO3539 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=b4aa9ff3325415c0</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=905a79cf9b62164b</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=b4aa9ff3325415c0</guid>
     </item>
     <item>
-      <title>GPU Software Engineer (CUDA) at BV Teck</title>
-      <link>https://www.indeed.com/viewjob?jk=5a2625e477f03bb4</link>
-      <description>New grad role at BV Teck in Remote, US. Category: Software Engineering</description>
+      <title>DevOps – Software Engineer II at Deloitte</title>
+      <link>https://in.indeed.com/viewjob?jk=fe123bffe590fcb9</link>
+      <description>New grad role at Deloitte in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5a2625e477f03bb4</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fe123bffe590fcb9</guid>
     </item>
     <item>
-      <title>Engineering Assistant I/II/III at WBI Energy Transmission, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=4548ed78cc766df0</link>
-      <description>New grad role at WBI Energy Transmission, Inc. in Glendive, MT, US. Category: Other</description>
+      <title>Manual Testing – Software Engineer III at Deloitte</title>
+      <link>https://in.indeed.com/viewjob?jk=2d2ce83b28fbf95a</link>
+      <description>New grad role at Deloitte in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4548ed78cc766df0</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2d2ce83b28fbf95a</guid>
     </item>
     <item>
-      <title>Associate Mechanical Systems Design &amp; Analysis Engineer at Boeing</title>
-      <link>https://www.indeed.com/viewjob?jk=0a1c74b3a54a915c</link>
-      <description>New grad role at Boeing in Everett, WA, US. Category: Other</description>
+      <title>Automation Testing – Software Engineer II at Deloitte</title>
+      <link>https://in.indeed.com/viewjob?jk=0e0db83d48423910</link>
+      <description>New grad role at Deloitte in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0a1c74b3a54a915c</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0e0db83d48423910</guid>
     </item>
     <item>
-      <title>Scheduler- FT Days - Tower Road - Kennestone Campus at Wellstar Health System</title>
-      <link>https://www.indeed.com/viewjob?jk=e16ec7d7b7304bfc</link>
-      <description>New grad role at Wellstar Health System in Marietta, GA, US. Category: Other</description>
+      <title>DevOps – Software Engineer III at Deloitte</title>
+      <link>https://in.indeed.com/viewjob?jk=8d92d91f0d64a3f9</link>
+      <description>New grad role at Deloitte in KA, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e16ec7d7b7304bfc</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8d92d91f0d64a3f9</guid>
     </item>
     <item>
-      <title>Scheduling Coordinator (New Grad) at Thales</title>
-      <link>https://ca.indeed.com/viewjob?jk=9f14b82f7b043423</link>
-      <description>New grad role at Thales in Dartmouth, NS, CA. Category: Other</description>
+      <title>Software Developer ( Java and Python) at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=fdeec2e4cd804b61</link>
+      <description>New grad role at Unknown in TS, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9f14b82f7b043423</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fdeec2e4cd804b61</guid>
     </item>
     <item>
-      <title>Drafter - New Graduate at GN2 Engineering</title>
-      <link>https://ca.indeed.com/viewjob?jk=fe606982ee2ac458</link>
-      <description>New grad role at GN2 Engineering in Edmonton, AB, CA. Category: Other</description>
+      <title>Software Developer (Java) at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=0f0ff09f8c54b67b</link>
+      <description>New grad role at Unknown in TS, IN. Category: Software Engineering</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fe606982ee2ac458</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0f0ff09f8c54b67b</guid>
     </item>
     <item>
-      <title>Software Engineer II (C, C++ on Unix, Experience with socket programming, IPC) at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Senior-Software-Engineer--C---Developer---Unix-Linux---ISO-8583---Payment-Domain-_R-280086-1</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO1504 C00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=6625cbd2c0b6b091</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Senior-Software-Engineer--C---Developer---Unix-Linux---ISO-8583---Payment-Domain-_R-280086-1</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=6625cbd2c0b6b091</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-281554</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO1502 C00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=7a6bd04aec151731</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-281554</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7a6bd04aec151731</guid>
     </item>
     <item>
-      <title>Data Scientist II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-275580</link>
-      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Science &amp; ML</description>
+      <title>CUPE - Automne 2026 - ECO2517B00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=745ac513ddacd4b1</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-275580</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=745ac513ddacd4b1</guid>
     </item>
     <item>
-      <title>Software Engineer I at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Vadodara-India/Software-Engineer-I_R-280898</link>
-      <description>New grad role at Mastercard in Vadodara, India. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO1592 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=7f6467d6de29bb18</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Vadodara-India/Software-Engineer-I_R-280898</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7f6467d6de29bb18</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Software-Engineer-II_R-275092</link>
-      <description>New grad role at Mastercard in Navi Mumbai, India (Finicity). Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO1502 B00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=f767fe77a79b8343</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Software-Engineer-II_R-275092</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f767fe77a79b8343</guid>
     </item>
     <item>
-      <title>Software Engineer || at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer---_R-275823</link>
-      <description>New grad role at Mastercard in O'Fallon, Missouri. Category: Software Engineering</description>
+      <title>CUPE - Fall 2026 - ECO2147 B00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=8a7d99668ac1ad6d</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer---_R-275823</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=8a7d99668ac1ad6d</guid>
     </item>
     <item>
-      <title>Software Engineer II - Backend/Platform Agentic AI at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II---Backend-Platform-Agentic-AI_R-279643-1</link>
-      <description>New grad role at Mastercard in Arlington, Virginia. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO3527 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=a3d77b3324f113e6</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II---Backend-Platform-Agentic-AI_R-279643-1</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=a3d77b3324f113e6</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-281530</link>
-      <description>New grad role at Mastercard in O'Fallon, Missouri. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO2550 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=ed1dc15970d32cec</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Software-Engineer-II_R-281530</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ed1dc15970d32cec</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-281363</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO5585 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=7671b6dbbf48b757</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-281363</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7671b6dbbf48b757</guid>
     </item>
     <item>
-      <title>Data Scientist I at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-I_R-278127</link>
-      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Science &amp; ML</description>
+      <title>CUPE - Automne 2026 - ECO1504 B00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=e3ff1f8cee47a1d4</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-I_R-278127</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e3ff1f8cee47a1d4</guid>
     </item>
     <item>
-      <title>ASIC Verification Engineer - New College Grad 2026 at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Verification-Engineer---New-College-Grad-2026_JR2020640</link>
-      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Hardware Engineering</description>
+      <title>CUPE - Automne 2026 - ECO3545 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=78044f2f61ba9921</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Verification-Engineer---New-College-Grad-2026_JR2020640</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=78044f2f61ba9921</guid>
     </item>
     <item>
-      <title>VLSI Design Automation Software Engineer at NVIDIA</title>
-      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/VLSI-Design-Automation-Software-Engineer_JR2016784</link>
-      <description>New grad role at NVIDIA in US, MA, Westford. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO3552 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=7cc9339540ff9641</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/VLSI-Design-Automation-Software-Engineer_JR2016784</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=7cc9339540ff9641</guid>
     </item>
     <item>
-      <title>Data Scientist at Intel</title>
-      <link>https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Data-Scientist_JR0283787</link>
-      <description>New grad role at Intel in US, Arizona, Phoenix. Category: Data Science &amp; ML</description>
+      <title>CUPE - Automne 2026 - ECO2518 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=0769ed53103d173b</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/Data-Scientist_JR0283787</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=0769ed53103d173b</guid>
     </item>
     <item>
-      <title>Software Developer - Authentication at Workday</title>
-      <link>https://workday.wd5.myworkdayjobs.com/job/INDChennai/Software-Developer---Authentication_JR-0104218-1</link>
-      <description>New grad role at Workday in IND.Chennai. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO2544 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=62d4db00f5677c92</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://workday.wd5.myworkdayjobs.com/job/INDChennai/Software-Developer---Authentication_JR-0104218-1</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=62d4db00f5677c92</guid>
     </item>
     <item>
-      <title>Software Engineer at Autodesk</title>
-      <link>https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer_26WD99323-2</link>
-      <description>New grad role at Autodesk in Bengaluru, IND. Category: Software Engineering</description>
+      <title>CUPE - Automne 2026 - ECO6522 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=801e4942753f5aa7</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Bengaluru-IND/Software-Engineer_26WD99323-2</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=801e4942753f5aa7</guid>
     </item>
     <item>
-      <title>AI/ML Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/AI-ML-Engineer_26965300-1</link>
-      <description>New grad role at Citi in Chennai Tamil Nadu India. Category: Data Science &amp; ML</description>
+      <title>CUPE - Automne 2026 - ECO2542 B00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=0503434345b4c1ec</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/AI-ML-Engineer_26965300-1</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=0503434345b4c1ec</guid>
     </item>
     <item>
-      <title>Data Scientist, Generative AI - Spread Products at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Data-Scientist--Generative-AI---Spread-Products_26940304</link>
-      <description>New grad role at Citi in New York New York United States. Category: Data Science &amp; ML</description>
+      <title>CUPE - Automne 2026 - ECO1504 D00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=c9739689b133d1ce</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Data-Scientist--Generative-AI---Spread-Products_26940304</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c9739689b133d1ce</guid>
     </item>
     <item>
-      <title>BANAMEX - Data Engineer Jr - Officer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Ciudad-De-Mexico-Distrito-Federal-Mexico/BANAMEX---Data-Engineer-Jr---Officer_26976764</link>
-      <description>New grad role at Citi in Ciudad De Mexico Distrito Federal Mexico. Category: Data Engineering</description>
+      <title>CUPE - Automne 2026 - ECO2521 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=6eaa694294db3102</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Ciudad-De-Mexico-Distrito-Federal-Mexico/BANAMEX---Data-Engineer-Jr---Officer_26976764</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=6eaa694294db3102</guid>
     </item>
     <item>
-      <title>Data Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R0243926</link>
-      <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Data Engineering</description>
+      <title>CUPE - Fall 2026 - ECO3127 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=f182e3820dc98303</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R0243926</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f182e3820dc98303</guid>
     </item>
     <item>
-      <title>OSINT Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/OSINT-Data-Scientist_R0243913</link>
-      <description>New grad role at Booz Allen Hamilton in Honolulu, HI. Category: Data Science &amp; ML</description>
+      <title>CUPE - Fall 2026 - ECO1192 A00 at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=06420b4dd14706e5</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/OSINT-Data-Scientist_R0243913</guid>
-    </item>
-    <item>
-      <title>High Side Operations Software Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Alexandria-VA/High-Side-Operations-Software-Engineer_R0243907</link>
-      <description>New grad role at Booz Allen Hamilton in Alexandria, VA. Category: Software Engineering</description>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Alexandria-VA/High-Side-Operations-Software-Engineer_R0243907</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=06420b4dd14706e5</guid>
     </item>
   </channel>
 </rss>
