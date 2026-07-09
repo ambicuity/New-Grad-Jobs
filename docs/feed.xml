@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 18:48:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 20:33:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Platform Security at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4835611007</link>
+      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Jul 2026 20:27:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4835611007</guid>
+    </item>
+    <item>
+      <title>Customer Experience Associate (New Grad) at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/8024530?t=gh_src=&amp;gh_jid=8024530</link>
+      <description>New grad role at Robinhood in Westlake, TX. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 09 Jul 2026 19:25:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/8024530?t=gh_src=&amp;gh_jid=8024530</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Training Platform at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 09 Jul 2026 19:08:24 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</guid>
+    </item>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
       <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
@@ -114,17 +135,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7996774</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 09 Jul 2026 18:09:25 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996774</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8007455</link>
       <description>New grad role at Twilio in Remote - Spain. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 09 Jul 2026 18:09:25 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8007455</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7996774</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 09 Jul 2026 18:09:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996774</guid>
     </item>
     <item>
       <title>Frontend Software Engineer  at Twilio</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Scale AI in San Francisco, CA; New York, NY; Washington, DC. Category: Software Engineering</description>
       <pubDate>Thu, 09 Jul 2026 16:47:57 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4710484005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Platform at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4594879005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Jul 2026 16:47:57 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4594879005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics &amp; Autonomous Systems at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4618065005</link>
-      <description>New grad role at Scale AI in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Jul 2026 16:47:57 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4618065005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ChatGPT Lifestyle at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/ca54cd23-2bcc-4327-bcb6-46d81ed414a8</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 09 Jul 2026 16:33:16 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/ca54cd23-2bcc-4327-bcb6-46d81ed414a8</guid>
     </item>
   </channel>
 </rss>
