@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-09T08:58:36.066749+00:00",
+    "last_updated": "2026-07-09T11:54:33.585970+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-10",
@@ -5223,30 +5223,26 @@
     },
     {
       "date": "2026-07-09",
-      "total_jobs": 1363,
+      "total_jobs": 1175,
       "categories": {
-        "infrastructure_sre": 146,
-        "software_engineering": 896,
-        "data_ml": 150,
-        "other": 119,
-        "data_engineering": 29,
+        "data_ml": 117,
+        "infrastructure_sre": 143,
+        "software_engineering": 742,
+        "other": 122,
+        "data_engineering": 28,
         "hardware": 14,
         "quant_finance": 7,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 683,
-        "other": 550,
-        "faang_plus": 130
+        "unicorn": 681,
+        "other": 363,
+        "faang_plus": 131
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 220
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 196
         },
         {
           "company": "Waymo",
@@ -5258,7 +5254,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 30
+          "jobs": 33
         },
         {
           "company": "Pinterest",
@@ -5279,11 +5275,15 @@
         {
           "company": "Stripe",
           "jobs": 21
+        },
+        {
+          "company": "xAI",
+          "jobs": 20
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 6.08,
-      "timestamp": "2026-07-09T08:58:36.065774+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 5.2,
+      "timestamp": "2026-07-09T11:54:33.584759+00:00"
     }
   ]
 }
