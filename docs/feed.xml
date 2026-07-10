@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 19:50:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 21:00:51 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Jul 2026 20:32:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Jul 2026 20:32:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Software Engineer  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5133682007?gh_jid=5133682007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 20:14:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5133682007?gh_jid=5133682007</guid>
+    </item>
     <item>
       <title>Software Engineer, Support Foundations at Chime</title>
       <link>https://boards.greenhouse.io/chime/jobs/8607195002?gh_jid=8607195002</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Amplitude in San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 14:07:21 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8530635002</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer (Components) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 14:04:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8421359002?gh_jid=8421359002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Components) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8557032002?gh_jid=8557032002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 14:03:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8557032002?gh_jid=8557032002</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (Test Infra) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7727322003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 13:25:08 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7727322003</guid>
     </item>
   </channel>
 </rss>
