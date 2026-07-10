@@ -1,34 +1,35 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1375,
-      "change_percent": 0.44
+      "total_jobs": 1428,
+      "change_percent": 1.28
     },
     "30_days": {
-      "total_jobs": 1382,
-      "change_percent": 0.95
+      "total_jobs": 1465,
+      "change_percent": 3.9
     }
   },
   "growing_categories": [
     "data_ml",
-    "software_engineering",
-    "other"
+    "other",
+    "software_engineering"
   ],
   "declining_categories": [
     "infrastructure_sre",
-    "data_engineering"
+    "data_engineering",
+    "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently in a consolidation phase, with the 7-day average (1387) slightly outpacing the 30-day average (1362), suggesting mild upward momentum.",
-    "Unicorn and FAANG+ hiring tiers remain stable, acting as a floor for the market while smaller companies show higher volatility in job postings.",
-    "Specialized roles like Infrastructure/SRE and Data Engineering are seeing a slight contraction, while core Software Engineering and Data/ML roles remain the primary drivers of volume."
+    "The market is showing a clear upward trajectory, with the current 7-day average (1391) significantly outperforming the 30-day average (1366), signaling sustained hiring momentum.",
+    "FAANG+ and Unicorn tiers are showing stabilization and slight growth, which typically acts as a leading indicator for broader market confidence in new graduate hiring.",
+    "Data/ML roles are demonstrating the strongest volatility-to-growth ratio, suggesting that companies are prioritizing AI-related talent acquisition despite minor fluctuations in infrastructure roles."
   ],
-  "generated_at": "2026-07-09T01:22:36.459680+00:00",
+  "generated_at": "2026-07-10T01:18:49.137429+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-10",
-    "end": "2026-07-09"
+    "start": "2026-04-11",
+    "end": "2026-07-10"
   }
 }
