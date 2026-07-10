@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 21:00:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 22:15:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>IT Systems Engineer at Intercom</title>
+      <link>https://job-boards.greenhouse.io/intercom/jobs/7918638</link>
+      <description>New grad role at Intercom in San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 22:01:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/intercom/jobs/7918638</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 21:31:04 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 21:31:04 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Trust &amp; Safety at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/5788954004</link>
+      <description>New grad role at Vercel in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 21:13:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/5788954004</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8014859</link>
+      <description>New grad role at Stripe in Toronto. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 21:00:11 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8014859</guid>
+    </item>
     <item>
       <title>Security Engineer, Incident Response at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 14:35:40 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 14:34:31 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 14:30:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7996774</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 10 Jul 2026 14:29:17 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996774</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8007455</link>
-      <description>New grad role at Twilio in Remote - Spain. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 10 Jul 2026 14:28:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8007455</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Data Warehouse)  at Amplitude</title>
-      <link>https://job-boards.greenhouse.io/amplitude/jobs/8530635002</link>
-      <description>New grad role at Amplitude in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 14:07:21 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/amplitude/jobs/8530635002</guid>
     </item>
   </channel>
 </rss>
