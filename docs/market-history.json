@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T22:15:10.561501+00:00",
+    "last_updated": "2026-07-10T23:18:16.499637+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-11",
@@ -5232,21 +5232,21 @@
     },
     {
       "date": "2026-07-10",
-      "total_jobs": 1399,
+      "total_jobs": 1394,
       "categories": {
-        "software_engineering": 899,
-        "infrastructure_sre": 163,
+        "software_engineering": 904,
+        "infrastructure_sre": 159,
         "data_ml": 149,
-        "other": 134,
+        "other": 129,
         "hardware": 16,
-        "data_engineering": 30,
+        "data_engineering": 29,
         "quant_finance": 6,
         "product_management": 2
       },
       "tiers": {
-        "other": 590,
         "unicorn": 685,
-        "faang_plus": 124
+        "other": 589,
+        "faang_plus": 120
       },
       "top_companies": [
         {
@@ -5266,19 +5266,15 @@
           "jobs": 38
         },
         {
-          "company": "Boeing",
-          "jobs": 28
-        },
-        {
           "company": "Glean",
           "jobs": 26
         },
         {
-          "company": "Stripe",
-          "jobs": 22
+          "company": "Boeing",
+          "jobs": 23
         },
         {
-          "company": "Leidos",
+          "company": "Stripe",
           "jobs": 22
         },
         {
@@ -5286,13 +5282,17 @@
           "jobs": 21
         },
         {
+          "company": "Leidos",
+          "jobs": 21
+        },
+        {
           "company": "Pinterest",
           "jobs": 21
         }
       ],
-      "unique_companies": 247,
-      "avg_jobs_per_company": 5.66,
-      "timestamp": "2026-07-10T22:15:10.559744+00:00"
+      "unique_companies": 242,
+      "avg_jobs_per_company": 5.76,
+      "timestamp": "2026-07-10T23:18:16.498419+00:00"
     }
   ]
 }
