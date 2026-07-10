@@ -5,8 +5,78 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 01:18:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 05:15:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist, Supply at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5212119008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY | Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Jul 2026 04:14:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5212119008</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer, Cloud Platform at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=8030908</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8030908</guid>
+    </item>
+    <item>
+      <title>Infrastructure Security Engineer at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7749135</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7749135</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Conversion at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=8014391</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8014391</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Distribution Platform at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7917372</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7917372</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Lifecycle at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7913770</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7913770</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Unsecured Installments at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=8047140</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8047140</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Verifications Platform at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7544233</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 04:10:52 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7544233</guid>
+    </item>
+    <item>
+      <title>RF Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8624761002?gh_jid=8624761002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 03:57:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8624761002?gh_jid=8624761002</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer at Cloudflare</title>
+      <link>https://boards.greenhouse.io/cloudflare/jobs/8053116?gh_jid=8053116</link>
+      <description>New grad role at Cloudflare in In-Office. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 10 Jul 2026 03:39:19 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/8053116?gh_jid=8053116</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -48,6 +118,13 @@
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 00:12:48 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8009057</guid>
+    </item>
+    <item>
+      <title>Mechanical Engineer I - Field Service at Red Wolf Reliability</title>
+      <link>https://www.indeed.com/viewjob?jk=261c7e1f894b8f8e</link>
+      <description>New grad role at Red Wolf Reliability in Fort Collins, CO, US. Category: Hardware Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=261c7e1f894b8f8e</guid>
     </item>
     <item>
       <title>Data Scientist II at Mastercard</title>
@@ -169,13 +246,6 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/United-States---New-York---Pearl-River/Associate-Scientist--Seasonal-Strain-Change-Vaccines_4959620-2</guid>
     </item>
     <item>
-      <title>Quality Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/North-Haven-Connecticut-United-States-of-America/Quality-Engineer-II_R67341-1</link>
-      <description>New grad role at Medtronic in North Haven, Connecticut, United States of America. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/North-Haven-Connecticut-United-States-of-America/Quality-Engineer-II_R67341-1</guid>
-    </item>
-    <item>
       <title>Quality Engineer I at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Minneapolis-Minnesota-United-States-of-America/Quality-Engineer-I_R71821-1</link>
       <description>New grad role at Medtronic in Minneapolis, Minnesota, United States of America. Category: Other</description>
@@ -190,18 +260,18 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Mounds-View-Minnesota-United-States-of-America/Quality-Engineer-II_R64938-1</guid>
     </item>
     <item>
-      <title>Cloud Software Engineer I - Neuro - Rice Creek/Fridley, MN at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Fridley-Minnesota-United-States-of-America/Cloud-Software-Engineer-I---Neuro---Rice-Creek-Fridley--MN_R66348-1</link>
-      <description>New grad role at Medtronic in Fridley, Minnesota, United States of America. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Fridley-Minnesota-United-States-of-America/Cloud-Software-Engineer-I---Neuro---Rice-Creek-Fridley--MN_R66348-1</guid>
-    </item>
-    <item>
       <title>Associate IT Developer at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Hyderabad-Andhra-Pradesh-India/Associate-IT-Developer_R69194-1</link>
       <description>New grad role at Medtronic in Hyderabad, Andhra Pradesh, India. Category: Other</description>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Hyderabad-Andhra-Pradesh-India/Associate-IT-Developer_R69194-1</guid>
+    </item>
+    <item>
+      <title>Cyber Systems Engineer - Level 2 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Cyber-Systems-Engineer---Level-2_R10239749</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Schriever AFB. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Cyber-Systems-Engineer---Level-2_R10239749</guid>
     </item>
     <item>
       <title>Test Engineer - Level 2 at Northrop Grumman</title>
@@ -286,76 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2027-Associate-Software-Engineer---Software-Engineer_R10239590</guid>
-    </item>
-    <item>
-      <title>2026 Associate Classified Cybersecurity Analyst Pathways Program - Palmdale CA at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/XMLNAME-2026-Associate-Classified-Cybersecurity-Analyst-Pathways-Program---Palmdale-CA_R10238558</link>
-      <description>New grad role at Northrop Grumman in United States-California-Palmdale. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/XMLNAME-2026-Associate-Classified-Cybersecurity-Analyst-Pathways-Program---Palmdale-CA_R10238558</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer (Associate or Experienced) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Embedded-Software-Engineer--Associate-or-Experienced-_JR2026517692-1</link>
-      <description>New grad role at Boeing in USA - Long Beach, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Long-Beach-CA/Embedded-Software-Engineer--Associate-or-Experienced-_JR2026517692-1</guid>
-    </item>
-    <item>
-      <title>Spacecraft Software Engineer (Associate or Mid-Level)- Millennium Space Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Software-Engineer--Associate-or-Mid-Level---Millennium-Space-Systems_JR2026512895</link>
-      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Software-Engineer--Associate-or-Mid-Level---Millennium-Space-Systems_JR2026512895</guid>
-    </item>
-    <item>
-      <title>Entry Level Manufacturing Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Entry-Level-Manufacturing-Engineer_JR2026517054</link>
-      <description>New grad role at Boeing in USA - Hazelwood, MO. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Entry-Level-Manufacturing-Engineer_JR2026517054</guid>
-    </item>
-    <item>
-      <title>Associate Industrial Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---San-Antonio-TX/Associate-Industrial-Engineer_JR2026498321-1</link>
-      <description>New grad role at Boeing in USA - San Antonio, TX. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---San-Antonio-TX/Associate-Industrial-Engineer_JR2026498321-1</guid>
-    </item>
-    <item>
-      <title>Entry and Associate Design and Analysis Engineers (Electronic Sys Design &amp; Analy) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Entry-and-Associate-Design-and-Analysis-Engineers--Electronic-Sys-Design---Analy-_JR2026516394</link>
-      <description>New grad role at Boeing in USA - Daytona Beach, FL. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Entry-and-Associate-Design-and-Analysis-Engineers--Electronic-Sys-Design---Analy-_JR2026516394</guid>
-    </item>
-    <item>
-      <title>Electrical Automated Test Engineer (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Electrical-Automated-Test-Engineer--Associate-or-Mid-Level-_JR2026508009-1</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Electrical-Automated-Test-Engineer--Associate-or-Mid-Level-_JR2026508009-1</guid>
-    </item>
-    <item>
-      <title>Systems Engineer (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer--Associate-or-Mid-Level-_JR2026515896-1</link>
-      <description>New grad role at Boeing in USA - Tukwila, WA. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Tukwila-WA/Systems-Engineer--Associate-or-Mid-Level-_JR2026515896-1</guid>
-    </item>
-    <item>
-      <title>Experienced Product Security Engineer (Software) ***Signing Bonus Potential*** at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Software-----Signing-Bonus-Potential---_JR2026508998</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Software-----Signing-Bonus-Potential---_JR2026508998</guid>
-    </item>
-    <item>
-      <title>Experienced Product Security Engineer (Integration)***Signing Bonus Potential*** at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</guid>
     </item>
   </channel>
 </rss>

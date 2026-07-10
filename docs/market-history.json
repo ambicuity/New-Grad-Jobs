@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T01:18:46.690473+00:00",
+    "last_updated": "2026-07-10T05:15:38.130594+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-11",
@@ -5232,26 +5232,26 @@
     },
     {
       "date": "2026-07-10",
-      "total_jobs": 1410,
+      "total_jobs": 1401,
       "categories": {
         "data_ml": 165,
-        "software_engineering": 905,
-        "data_engineering": 29,
-        "other": 134,
-        "hardware": 15,
-        "infrastructure_sre": 155,
+        "infrastructure_sre": 151,
+        "software_engineering": 904,
+        "hardware": 16,
+        "data_engineering": 31,
+        "other": 127,
         "quant_finance": 5,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 679,
-        "faang_plus": 140,
-        "other": 591
+        "unicorn": 680,
+        "other": 569,
+        "faang_plus": 152
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 227
+          "jobs": 228
         },
         {
           "company": "Anduril Industries",
@@ -5259,23 +5259,23 @@
         },
         {
           "company": "Waymo",
-          "jobs": 42
+          "jobs": 41
+        },
+        {
+          "company": "Boeing",
+          "jobs": 40
         },
         {
           "company": "OpenAI",
           "jobs": 39
         },
         {
-          "company": "Boeing",
-          "jobs": 38
+          "company": "Northrop Grumman",
+          "jobs": 22
         },
         {
           "company": "Glean",
           "jobs": 22
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 21
         },
         {
           "company": "Stripe",
@@ -5290,9 +5290,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 6.24,
-      "timestamp": "2026-07-10T01:18:46.689520+00:00"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 6.25,
+      "timestamp": "2026-07-10T05:15:38.128524+00:00"
     }
   ]
 }
