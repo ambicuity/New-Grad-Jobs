@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T16:07:13.693683+00:00",
+    "last_updated": "2026-07-10T18:02:18.105379+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-11",
@@ -5232,30 +5232,30 @@
     },
     {
       "date": "2026-07-10",
-      "total_jobs": 1376,
+      "total_jobs": 1375,
       "categories": {
-        "data_ml": 157,
-        "software_engineering": 896,
-        "infrastructure_sre": 153,
-        "other": 121,
-        "data_engineering": 29,
-        "hardware": 13,
-        "quant_finance": 5,
+        "software_engineering": 900,
+        "infrastructure_sre": 156,
+        "data_ml": 152,
+        "other": 118,
+        "hardware": 15,
+        "data_engineering": 28,
+        "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
+        "unicorn": 680,
         "other": 570,
-        "faang_plus": 124,
-        "unicorn": 682
+        "faang_plus": 125
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 228
+          "jobs": 227
         },
         {
           "company": "Anduril Industries",
-          "jobs": 193
+          "jobs": 195
         },
         {
           "company": "Waymo",
@@ -5266,11 +5266,11 @@
           "jobs": 39
         },
         {
-          "company": "Boeing",
-          "jobs": 26
+          "company": "Glean",
+          "jobs": 24
         },
         {
-          "company": "Glean",
+          "company": "Boeing",
           "jobs": 24
         },
         {
@@ -5286,13 +5286,13 @@
           "jobs": 21
         },
         {
-          "company": "Leidos",
+          "company": "Northrop Grumman",
           "jobs": 20
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 5.86,
-      "timestamp": "2026-07-10T16:07:13.692519+00:00"
+      "unique_companies": 240,
+      "avg_jobs_per_company": 5.73,
+      "timestamp": "2026-07-10T18:02:18.103224+00:00"
     }
   ]
 }
