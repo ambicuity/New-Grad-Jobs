@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 11:40:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 13:38:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Backend (Test Infra) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7727322003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 13:25:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7727322003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (Test Infra) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7727320003</link>
+      <description>New grad role at Affirm in Remote US. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 13:25:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7727320003</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 10 Jul 2026 12:32:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 12:32:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 12:32:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
     <item>
       <title>Embedded Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5175398007?gh_jid=5175398007</link>
@@ -23,13 +58,6 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
@@ -37,17 +65,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -58,10 +79,24 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 10 Jul 2026 09:27:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -281,27 +316,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/8053116?gh_jid=8053116</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 10 Jul 2026 00:35:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:35:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:35:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
       <title>Software Engineer - Video at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7661919</link>
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
@@ -323,6 +337,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8009057</guid>
     </item>
     <item>
+      <title>Prod Dev Engineer II at Mattel, Inc.</title>
+      <link>https://in.indeed.com/viewjob?jk=7a9b8a7dc47f6c55</link>
+      <description>New grad role at Mattel, Inc. in RJ, IN. Category: Other</description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7a9b8a7dc47f6c55</guid>
+    </item>
+    <item>
       <title>Graduate Trainee at RUSSELL INVESTMENTS</title>
       <link>https://in.indeed.com/viewjob?jk=1a1bfe34f8da175d</link>
       <description>New grad role at RUSSELL INVESTMENTS in MH, IN. Category: Other</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Unknown in HR, IN. Category: Other</description>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3b048500b4ad900b</guid>
-    </item>
-    <item>
-      <title>IoT &amp; Embedded Systems Engineer (Fresher) at Better Analytics Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=6bdfc2baa728fe76</link>
-      <description>New grad role at Better Analytics Private Limited in TS, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6bdfc2baa728fe76</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Pitney Bowes</title>
-      <link>https://in.indeed.com/viewjob?jk=db1ab14925097bca</link>
-      <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=db1ab14925097bca</guid>
-    </item>
-    <item>
-      <title>Junior Test Engineer at The Chennai Silks</title>
-      <link>https://in.indeed.com/viewjob?jk=2c7cf1ecbf28fb73</link>
-      <description>New grad role at The Chennai Silks in TN, IN. Category: Other</description>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2c7cf1ecbf28fb73</guid>
     </item>
   </channel>
 </rss>
