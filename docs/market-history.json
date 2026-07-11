@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-11T12:47:09.139224+00:00",
+    "last_updated": "2026-07-11T14:17:15.657671+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-12",
@@ -5241,20 +5241,20 @@
     },
     {
       "date": "2026-07-11",
-      "total_jobs": 1416,
+      "total_jobs": 1421,
       "categories": {
-        "data_ml": 150,
-        "software_engineering": 921,
+        "data_ml": 151,
+        "software_engineering": 919,
+        "infrastructure_sre": 163,
         "hardware": 19,
-        "infrastructure_sre": 162,
-        "other": 127,
-        "data_engineering": 29,
+        "other": 132,
         "quant_finance": 6,
+        "data_engineering": 29,
         "product_management": 2
       },
       "tiers": {
         "unicorn": 685,
-        "other": 611,
+        "other": 616,
         "faang_plus": 120
       },
       "top_companies": [
@@ -5291,17 +5291,17 @@
           "jobs": 21
         },
         {
-          "company": "Accenture",
+          "company": "Leidos",
           "jobs": 21
         },
         {
-          "company": "Leidos",
+          "company": "Pinterest",
           "jobs": 21
         }
       ],
-      "unique_companies": 242,
-      "avg_jobs_per_company": 5.85,
-      "timestamp": "2026-07-11T12:47:09.138176+00:00"
+      "unique_companies": 248,
+      "avg_jobs_per_company": 5.73,
+      "timestamp": "2026-07-11T14:17:15.656649+00:00"
     }
   ]
 }
