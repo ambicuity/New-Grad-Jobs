@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 17:29:29 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 18:31:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -183,13 +183,6 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/6101145004</guid>
     </item>
     <item>
-      <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
-      <description>New grad role at Unknown in Remote, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</guid>
-    </item>
-    <item>
       <title>Junior Full Stack Developer at eholler Digital Services Private Limited</title>
       <link>https://in.indeed.com/viewjob?jk=834957ea792c4dc3</link>
       <description>New grad role at eholler Digital Services Private Limited in TN, IN. Category: Software Engineering</description>
@@ -211,11 +204,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5eec0e54e099b0f2</guid>
     </item>
     <item>
-      <title>Professional Services Engineer - Level 2 at Synagex</title>
-      <link>https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</link>
-      <description>New grad role at Synagex in Pittsfield, MA, US. Category: Infrastructure &amp; SRE</description>
+      <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
+      <description>New grad role at Unknown in Remote, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</guid>
     </item>
     <item>
       <title>Entry-Level Engineering Technician - Ludlow, MA at Serco</title>
@@ -223,6 +216,27 @@
       <description>New grad role at Serco in Ludlow, MA, US. Category: Hardware Engineering</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f5a61d37f3c12a74</guid>
+    </item>
+    <item>
+      <title>Professional Services Engineer - Level 2 at Synagex</title>
+      <link>https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</link>
+      <description>New grad role at Synagex in Pittsfield, MA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</guid>
+    </item>
+    <item>
+      <title>Associate/Assistant Professor - Aerospace Engineering (AY 27/28) at California State University</title>
+      <link>https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</link>
+      <description>New grad role at California State University in San Luis Obispo, CA, US. Category: Other</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</guid>
+    </item>
+    <item>
+      <title>Associate Engineer Software at Vertiv</title>
+      <link>https://in.indeed.com/viewjob?jk=65fb4cf9be459d20</link>
+      <description>New grad role at Vertiv in MH, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=65fb4cf9be459d20</guid>
     </item>
     <item>
       <title>Software Engineer at Finology Ventures Pvt Ltd</title>
@@ -237,13 +251,6 @@
       <description>New grad role at ESTAR ENGINEER PVT LTD in TN, IN. Category: Software Engineering</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8faee37659bb4ece</guid>
-    </item>
-    <item>
-      <title>Associate/Assistant Professor - Aerospace Engineering (AY 27/28) at California State University</title>
-      <link>https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</link>
-      <description>New grad role at California State University in San Luis Obispo, CA, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</guid>
     </item>
     <item>
       <title>Security Engineer- Orlando, FL at Serco</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Twilio in Remote - United Kingdom. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 10 Jul 2026 20:32:37 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Incident Response at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 10 Jul 2026 20:32:37 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
     </item>
   </channel>
 </rss>
