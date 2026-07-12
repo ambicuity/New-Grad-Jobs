@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 18:43:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 19:56:06 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
@@ -246,6 +246,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f1e99071a55f47ef</guid>
     </item>
     <item>
+      <title>Associate Engineer at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</link>
+      <description>New grad role at Unknown in Barnegat, NY, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</guid>
+    </item>
+    <item>
       <title>Entry Level Baggage Handling Systems Design Engineer at Swanson Rink, Inc.</title>
       <link>https://www.indeed.com/viewjob?jk=7d291892d60f1c23</link>
       <description>New grad role at Swanson Rink, Inc. in Denver, CO, US. Category: Infrastructure &amp; SRE</description>
@@ -258,13 +265,6 @@
       <description>New grad role at Accounting Genie LLP in UP, IN. Category: Other</description>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4501e93ff6dd6bc5</guid>
-    </item>
-    <item>
-      <title>Associate Engineer at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</link>
-      <description>New grad role at Unknown in Barnegat, NY, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</guid>
     </item>
     <item>
       <title>Splunk Software Engineer at Power3 Solutions</title>
@@ -351,11 +351,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=723b160fdfba641b</guid>
     </item>
     <item>
-      <title>Engineer I - Substation Controls at Puget Sound Energy</title>
-      <link>https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</link>
-      <description>New grad role at Puget Sound Energy in Kent, WA, US. Category: Other</description>
+      <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
+      <description>New grad role at Unknown in Remote, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</guid>
     </item>
   </channel>
 </rss>
