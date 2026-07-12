@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 14:44:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 15:46:24 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 12:29:32 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 12:29:32 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 12:29:32 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Production Software Engineer at Anduril Industries</title>
@@ -37,31 +37,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -76,6 +55,27 @@
       <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -93,17 +93,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -225,13 +225,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=adad9dc5a0a42b68</guid>
     </item>
     <item>
-      <title>Entry Level Baggage Handling Systems Design Engineer at Swanson Rink, Inc.</title>
-      <link>https://www.indeed.com/viewjob?jk=7d291892d60f1c23</link>
-      <description>New grad role at Swanson Rink, Inc. in Denver, CO, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d291892d60f1c23</guid>
-    </item>
-    <item>
       <title>Associate Engineer at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</link>
       <description>New grad role at Unknown in Barnegat, NY, US. Category: Infrastructure &amp; SRE</description>
@@ -239,11 +232,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</guid>
     </item>
     <item>
+      <title>Entry Level Baggage Handling Systems Design Engineer at Swanson Rink, Inc.</title>
+      <link>https://www.indeed.com/viewjob?jk=7d291892d60f1c23</link>
+      <description>New grad role at Swanson Rink, Inc. in Denver, CO, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d291892d60f1c23</guid>
+    </item>
+    <item>
       <title>Creative &amp; Marketing Trainee at Accounting Genie LLP</title>
       <link>https://in.indeed.com/viewjob?jk=4501e93ff6dd6bc5</link>
       <description>New grad role at Accounting Genie LLP in UP, IN. Category: Other</description>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4501e93ff6dd6bc5</guid>
+    </item>
+    <item>
+      <title>Cloud/DevOps Engineer. at Nightwing</title>
+      <link>https://www.indeed.com/viewjob?jk=9c171035d276c98c</link>
+      <description>New grad role at Nightwing in Sterling, VA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9c171035d276c98c</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Nightwing</title>
+      <link>https://www.indeed.com/viewjob?jk=81194535cd2fb7bc</link>
+      <description>New grad role at Nightwing in Sterling, VA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=81194535cd2fb7bc</guid>
     </item>
     <item>
       <title>Data Engineer at Genworth</title>
@@ -309,11 +323,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=723b160fdfba641b</guid>
     </item>
     <item>
-      <title>Engineer I - Substation Controls at Puget Sound Energy</title>
-      <link>https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</link>
-      <description>New grad role at Puget Sound Energy in Kent, WA, US. Category: Other</description>
+      <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
+      <description>New grad role at Unknown in Remote, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</guid>
     </item>
     <item>
       <title>Entry Level Traffic Engineer at Johnson, Mirmiran &amp; Thompson, Inc</title>
@@ -323,39 +337,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6daa9dc2cee4face</guid>
     </item>
     <item>
+      <title>Entry-Level Engineering Technician - Ludlow, MA at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=f5a61d37f3c12a74</link>
+      <description>New grad role at Serco in Ludlow, MA, US. Category: Hardware Engineering</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f5a61d37f3c12a74</guid>
+    </item>
+    <item>
+      <title>Engineer I - Substation Controls at Puget Sound Energy</title>
+      <link>https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</link>
+      <description>New grad role at Puget Sound Energy in Kent, WA, US. Category: Other</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</guid>
+    </item>
+    <item>
       <title>Entry Level Engineer at Fehr Graham</title>
       <link>https://www.indeed.com/viewjob?jk=dd1b2bd3f83a58f1</link>
       <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1b2bd3f83a58f1</guid>
-    </item>
-    <item>
-      <title>Entry Level Engineer at Fehr Graham</title>
-      <link>https://www.indeed.com/viewjob?jk=37edb10b49012532</link>
-      <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=37edb10b49012532</guid>
-    </item>
-    <item>
-      <title>Entry Level Engineer at Fehr Graham</title>
-      <link>https://www.indeed.com/viewjob?jk=b7149bca003901a3</link>
-      <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b7149bca003901a3</guid>
-    </item>
-    <item>
-      <title>Entry Level Engineer at Fehr Graham</title>
-      <link>https://www.indeed.com/viewjob?jk=d5a5a29376cf8714</link>
-      <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d5a5a29376cf8714</guid>
-    </item>
-    <item>
-      <title>Associate Water/Wastewater Engineer at Fehr Graham</title>
-      <link>https://www.indeed.com/viewjob?jk=d6bd1687db296a7b</link>
-      <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d6bd1687db296a7b</guid>
     </item>
   </channel>
 </rss>
