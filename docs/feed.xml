@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 23:36:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 01:13:57 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 12 Jul 2026 00:24:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 00:24:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 00:24:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
       <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
@@ -48,27 +69,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Sat, 11 Jul 2026 18:31:54 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 11 Jul 2026 12:30:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 12:30:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 12:30:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Production Software Engineer at Anduril Industries</title>
@@ -267,6 +267,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5eec0e54e099b0f2</guid>
     </item>
     <item>
+      <title>Entry Level Traffic Engineer at Johnson, Mirmiran &amp; Thompson, Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=6daa9dc2cee4face</link>
+      <description>New grad role at Johnson, Mirmiran &amp; Thompson, Inc in Charlotte, NC, US. Category: Other</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6daa9dc2cee4face</guid>
+    </item>
+    <item>
       <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
       <description>New grad role at Unknown in Remote, US. Category: Other</description>
@@ -279,6 +286,13 @@
       <description>New grad role at Serco in Ludlow, MA, US. Category: Hardware Engineering</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f5a61d37f3c12a74</guid>
+    </item>
+    <item>
+      <title>Engineer I - Substation Controls at Puget Sound Energy</title>
+      <link>https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</link>
+      <description>New grad role at Puget Sound Energy in Kent, WA, US. Category: Other</description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d70adc3a2971c9ac</guid>
     </item>
     <item>
       <title>Entry Level Engineer at Fehr Graham</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6c732c15be35941a</guid>
-    </item>
-    <item>
-      <title>Professional Services Engineer - Level 2 at Synagex</title>
-      <link>https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</link>
-      <description>New grad role at Synagex in Pittsfield, MA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ea2fd524a113e45d</guid>
-    </item>
-    <item>
-      <title>Associate/Assistant Professor - Aerospace Engineering (AY 27/28) at California State University</title>
-      <link>https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</link>
-      <description>New grad role at California State University in San Luis Obispo, CA, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9d06e2b0412254c5</guid>
     </item>
   </channel>
 </rss>

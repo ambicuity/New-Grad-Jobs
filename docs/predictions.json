@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1415,
-      "change_percent": 1.07
+      "total_jobs": 1445,
+      "change_percent": 1.19
     },
     "30_days": {
-      "total_jobs": 1445,
-      "change_percent": 3.21
+      "total_jobs": 1485,
+      "change_percent": 4.0
     }
   },
   "growing_categories": [
-    "other",
     "data_ml",
-    "software_engineering"
+    "other",
+    "data_engineering"
   ],
   "declining_categories": [
+    "software_engineering",
     "infrastructure_sre",
-    "data_engineering",
     "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market is showing a clear upward trend, with the current 7-day average (1390) consistently outperforming the 30-day average (1367).",
-    "Growth is currently led by 'other' and 'data_ml' categories, suggesting a diversification of hiring needs beyond traditional core software engineering roles.",
-    "Unicorn and FAANG+ tiers remain stable, providing a solid foundation for the overall job volume increase observed over the last month."
+    "The market shows a clear upward trajectory, with the current total (1428) consistently outperforming both the 7-day (1400) and 30-day (1370) moving averages.",
+    "Growth is currently driven by high-velocity roles in Data/ML and 'Other' categories, while traditional Software Engineering roles remain stable but stagnant.",
+    "Unicorn companies are leading the hiring volume, suggesting that venture-backed startups are more aggressive in talent acquisition than FAANG+ firms at this stage of the cycle."
   ],
-  "generated_at": "2026-07-11T00:17:41.784236+00:00",
+  "generated_at": "2026-07-12T01:13:56.854701+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-12",
-    "end": "2026-07-11"
+    "start": "2026-04-13",
+    "end": "2026-07-12"
   }
 }
