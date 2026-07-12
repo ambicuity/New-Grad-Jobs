@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T19:56:06.254023+00:00",
+    "last_updated": "2026-07-12T20:42:50.738954+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-13",
@@ -5250,9 +5250,9 @@
     },
     {
       "date": "2026-07-12",
-      "total_jobs": 1415,
+      "total_jobs": 1416,
       "categories": {
-        "software_engineering": 913,
+        "software_engineering": 914,
         "data_ml": 147,
         "infrastructure_sre": 166,
         "other": 138,
@@ -5264,7 +5264,7 @@
       "tiers": {
         "unicorn": 681,
         "other": 612,
-        "faang_plus": 122
+        "faang_plus": 123
       },
       "top_companies": [
         {
@@ -5289,7 +5289,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "Stripe",
@@ -5310,7 +5310,7 @@
       ],
       "unique_companies": 250,
       "avg_jobs_per_company": 5.66,
-      "timestamp": "2026-07-12T19:56:06.252830+00:00"
+      "timestamp": "2026-07-12T20:42:50.737663+00:00"
     }
   ]
 }

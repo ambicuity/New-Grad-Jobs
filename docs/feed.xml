@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 19:56:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 20:42:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
@@ -246,18 +246,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f1e99071a55f47ef</guid>
     </item>
     <item>
-      <title>Associate Engineer at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</link>
-      <description>New grad role at Unknown in Barnegat, NY, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</guid>
-    </item>
-    <item>
       <title>Entry Level Baggage Handling Systems Design Engineer at Swanson Rink, Inc.</title>
       <link>https://www.indeed.com/viewjob?jk=7d291892d60f1c23</link>
       <description>New grad role at Swanson Rink, Inc. in Denver, CO, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d291892d60f1c23</guid>
+    </item>
+    <item>
+      <title>Associate Engineer at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</link>
+      <description>New grad role at Unknown in Barnegat, NY, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bdd46e455aa7eb32</guid>
     </item>
     <item>
       <title>Creative &amp; Marketing Trainee at Accounting Genie LLP</title>
@@ -300,6 +300,13 @@
       <description>New grad role at Coastal Pain and Spinal Diagnostics in San Diego, CA, US. Category: Other</description>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=05bdd248acb34807</guid>
+    </item>
+    <item>
+      <title>RF Systems Engineer 3/4 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/RF-Systems-Engineer-3-4_R10239605</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/RF-Systems-Engineer-3-4_R10239605</guid>
     </item>
     <item>
       <title>Software Engineer II at Fivetran</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Cyreton in Remote, IN. Category: Software Engineering</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=723b160fdfba641b</guid>
-    </item>
-    <item>
-      <title>Entry-Level Civil Engineer – Sales Outreach for Construction Software at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</link>
-      <description>New grad role at Unknown in Remote, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7f999fed16e3e3a7</guid>
     </item>
   </channel>
 </rss>
