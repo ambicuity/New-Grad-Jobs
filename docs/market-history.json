@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T17:46:14.367939+00:00",
+    "last_updated": "2026-07-12T18:43:46.815557+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-13",
@@ -5250,20 +5250,20 @@
     },
     {
       "date": "2026-07-12",
-      "total_jobs": 1421,
+      "total_jobs": 1425,
       "categories": {
-        "data_ml": 149,
-        "software_engineering": 913,
+        "software_engineering": 915,
+        "data_ml": 150,
         "infrastructure_sre": 167,
-        "other": 142,
+        "other": 143,
         "data_engineering": 29,
         "hardware": 15,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 683,
-        "other": 616,
+        "unicorn": 682,
+        "other": 621,
         "faang_plus": 122
       },
       "top_companies": [
@@ -5281,7 +5281,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 37
+          "jobs": 36
         },
         {
           "company": "Glean",
@@ -5309,8 +5309,8 @@
         }
       ],
       "unique_companies": 251,
-      "avg_jobs_per_company": 5.66,
-      "timestamp": "2026-07-12T17:46:14.366648+00:00"
+      "avg_jobs_per_company": 5.68,
+      "timestamp": "2026-07-12T18:43:46.814264+00:00"
     }
   ]
 }
