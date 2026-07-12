@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 01:13:57 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 04:45:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=8018436</link>
+      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 02:43:58 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8018436</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=04821302d21e3506</guid>
-    </item>
-    <item>
-      <title>Entry Level Engineer at Fehr Graham</title>
-      <link>https://www.indeed.com/viewjob?jk=6c732c15be35941a</link>
-      <description>New grad role at Fehr Graham in Rockford, IL, US. Category: Other</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6c732c15be35941a</guid>
     </item>
   </channel>
 </rss>
