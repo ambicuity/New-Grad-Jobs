@@ -43,6 +43,13 @@ def test_normalize_date_string_jobspy_human_readable_variants():
     assert normalize_date_string('1 minute ago', FIXED_NOW_UTC) == now.strftime('%Y-%m-%d')
 
 
+def test_normalize_date_string_fixed_reference_date_relative_phrases():
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    assert normalize_date_string('today', ref) == '2024-06-15'
+    assert normalize_date_string('yesterday', ref) == '2024-06-14'
+    assert normalize_date_string('2 days ago', ref) == '2024-06-13'
+
+
 def test_normalize_date_string_hours_ago():
     """'X hours ago' and 'X hour ago' resolve to today's date."""
     now = FIXED_NOW_UTC.replace(tzinfo=None)
