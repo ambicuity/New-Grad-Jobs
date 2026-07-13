@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2026 01:14:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 04:52:01 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, AI Integrations at Commure</title>
+      <link>https://jobs.ashbyhq.com/commure/39e07152-a3d2-47c0-8c5b-36e8b3a6cdf5</link>
+      <description>New grad role at Commure in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Mon, 13 Jul 2026 02:31:38 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/commure/39e07152-a3d2-47c0-8c5b-36e8b3a6cdf5</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -27,6 +34,20 @@
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Mon, 13 Jul 2026 00:25:47 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Trainee Engineer – Networking &amp; IT Support at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=b6c269b84caa743b</link>
+      <description>New grad role at Unknown in KL, IN. Category: Other</description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b6c269b84caa743b</guid>
+    </item>
+    <item>
+      <title>Junior Operating Systems Engineer (Embedded Linux / Yocto) at Lyntris</title>
+      <link>https://www.indeed.com/viewjob?jk=657b4ba46ec4b171</link>
+      <description>New grad role at Lyntris in San Diego, CA, US. Category: Software Engineering</description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=657b4ba46ec4b171</guid>
     </item>
     <item>
       <title>Systems Engineer 2/3 at Northrop Grumman</title>
@@ -93,10 +114,10 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -104,6 +125,20 @@
       <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -118,20 +153,6 @@
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:37:41 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -149,17 +170,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 12 Jul 2026 09:33:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -330,32 +351,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=05bdd248acb34807</guid>
     </item>
     <item>
-      <title>Software Engineer II at Fivetran</title>
-      <link>https://www.fivetran.com/careers/job?gh_jid=7778979003</link>
-      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 05:05:14 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7778979003</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Integrations (Data and Systems) at Fivetran</title>
-      <link>https://www.fivetran.com/careers/job?gh_jid=7668146003</link>
-      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 05:05:03 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7668146003</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Product at Mercury</title>
-      <link>https://job-boards.greenhouse.io/mercury/jobs/6101145004</link>
-      <description>New grad role at Mercury in San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 00:13:00 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mercury/jobs/6101145004</guid>
-    </item>
-    <item>
-      <title>New Grad Software Engineer at MAGICAL</title>
-      <link>https://ca.indeed.com/viewjob?jk=826315f813f8b629</link>
-      <description>New grad role at MAGICAL in Toronto, ON, CA. Category: Software Engineering</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=826315f813f8b629</guid>
+      <title>Plant Engineer I at Amrize</title>
+      <link>https://www.indeed.com/viewjob?jk=3755be057a7def3d</link>
+      <description>New grad role at Amrize in Rockville, MD, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3755be057a7def3d</guid>
     </item>
   </channel>
 </rss>
