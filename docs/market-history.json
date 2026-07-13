@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-13T20:49:56.616529+00:00",
+    "last_updated": "2026-07-13T21:44:18.686435+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-14",
@@ -5259,30 +5259,30 @@
     },
     {
       "date": "2026-07-13",
-      "total_jobs": 1437,
+      "total_jobs": 1436,
       "categories": {
-        "software_engineering": 909,
+        "software_engineering": 915,
         "data_ml": 157,
-        "infrastructure_sre": 169,
-        "other": 151,
+        "infrastructure_sre": 172,
+        "other": 141,
         "data_engineering": 28,
-        "quant_finance": 7,
-        "hardware": 14,
+        "quant_finance": 6,
+        "hardware": 15,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 683,
-        "other": 650,
-        "faang_plus": 104
+        "unicorn": 687,
+        "other": 648,
+        "faang_plus": 101
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 228
+          "jobs": 230
         },
         {
           "company": "Anduril Industries",
-          "jobs": 196
+          "jobs": 197
         },
         {
           "company": "Waymo",
@@ -5294,11 +5294,11 @@
         },
         {
           "company": "University of Ottawa",
-          "jobs": 34
+          "jobs": 28
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 25
+          "jobs": 26
         },
         {
           "company": "Affirm",
@@ -5317,9 +5317,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 261,
-      "avg_jobs_per_company": 5.51,
-      "timestamp": "2026-07-13T20:49:56.615227+00:00"
+      "unique_companies": 258,
+      "avg_jobs_per_company": 5.57,
+      "timestamp": "2026-07-13T21:44:18.685055+00:00"
     }
   ]
 }
