@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-13T19:52:46.379062+00:00",
+    "last_updated": "2026-07-13T20:49:56.616529+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-14",
@@ -5259,21 +5259,21 @@
     },
     {
       "date": "2026-07-13",
-      "total_jobs": 1422,
+      "total_jobs": 1437,
       "categories": {
-        "software_engineering": 918,
-        "data_ml": 155,
-        "other": 131,
-        "infrastructure_sre": 168,
-        "data_engineering": 29,
-        "quant_finance": 5,
+        "software_engineering": 909,
+        "data_ml": 157,
+        "infrastructure_sre": 169,
+        "other": 151,
+        "data_engineering": 28,
+        "quant_finance": 7,
         "hardware": 14,
         "product_management": 2
       },
       "tiers": {
-        "faang_plus": 105,
-        "unicorn": 685,
-        "other": 632
+        "unicorn": 683,
+        "other": 650,
+        "faang_plus": 104
       },
       "top_companies": [
         {
@@ -5293,16 +5293,20 @@
           "jobs": 38
         },
         {
+          "company": "University of Ottawa",
+          "jobs": 34
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 25
+        },
+        {
           "company": "Affirm",
           "jobs": 24
         },
         {
           "company": "Leidos",
-          "jobs": 23
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 22
+          "jobs": 24
         },
         {
           "company": "Stripe",
@@ -5311,15 +5315,11 @@
         {
           "company": "Pinterest",
           "jobs": 21
-        },
-        {
-          "company": "xAI",
-          "jobs": 20
         }
       ],
       "unique_companies": 261,
-      "avg_jobs_per_company": 5.45,
-      "timestamp": "2026-07-13T19:52:46.378075+00:00"
+      "avg_jobs_per_company": 5.51,
+      "timestamp": "2026-07-13T20:49:56.615227+00:00"
     }
   ]
 }
