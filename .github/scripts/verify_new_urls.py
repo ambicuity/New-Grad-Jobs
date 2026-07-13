@@ -18,8 +18,7 @@ def get_new_urls_from_diff(diff_text):
     added_lines = [line for line in diff_text.splitlines() if line.startswith('+') and not line.startswith('+++')]
 
     for line in added_lines:
-        # Looking for: url: "https://..."
-        match = re.search(r'url:\s*["\']( https?://[^"\']+)["\']', line)
+        match = re.search(r'(?:url|workday_url|endpoint):\s*["\']\s*(https?://[^"\']+)["\']', line)
         if match:
             urls.append(match.group(1).strip())
 
