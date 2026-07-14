@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-14T04:18:05.364621+00:00",
+    "last_updated": "2026-07-14T06:33:08.835048+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-15",
@@ -5268,21 +5268,21 @@
     },
     {
       "date": "2026-07-14",
-      "total_jobs": 1454,
+      "total_jobs": 1424,
       "categories": {
-        "software_engineering": 952,
+        "other": 112,
+        "software_engineering": 933,
         "data_ml": 158,
-        "infrastructure_sre": 179,
-        "other": 116,
+        "infrastructure_sre": 171,
         "data_engineering": 28,
-        "hardware": 15,
+        "hardware": 16,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "other": 659,
-        "unicorn": 685,
-        "faang_plus": 110
+        "other": 625,
+        "unicorn": 683,
+        "faang_plus": 116
       },
       "top_companies": [
         {
@@ -5311,7 +5311,7 @@
         },
         {
           "company": "Affirm",
-          "jobs": 24
+          "jobs": 22
         },
         {
           "company": "Stripe",
@@ -5322,13 +5322,13 @@
           "jobs": 20
         },
         {
-          "company": "Humana",
+          "company": "Pinterest",
           "jobs": 20
         }
       ],
-      "unique_companies": 258,
-      "avg_jobs_per_company": 5.64,
-      "timestamp": "2026-07-14T04:18:05.363814+00:00"
+      "unique_companies": 252,
+      "avg_jobs_per_company": 5.65,
+      "timestamp": "2026-07-14T06:33:08.833952+00:00"
     }
   ]
 }
