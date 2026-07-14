@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-14T01:07:30.167428+00:00",
+    "last_updated": "2026-07-14T04:18:05.364621+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-15",
@@ -5268,20 +5268,20 @@
     },
     {
       "date": "2026-07-14",
-      "total_jobs": 1429,
+      "total_jobs": 1454,
       "categories": {
-        "data_ml": 160,
-        "software_engineering": 923,
-        "other": 127,
-        "infrastructure_sre": 169,
+        "software_engineering": 952,
+        "data_ml": 158,
+        "infrastructure_sre": 179,
+        "other": 116,
         "data_engineering": 28,
-        "quant_finance": 5,
         "hardware": 15,
+        "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 688,
-        "other": 631,
+        "other": 659,
+        "unicorn": 685,
         "faang_plus": 110
       },
       "top_companies": [
@@ -5307,7 +5307,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 25
+          "jobs": 26
         },
         {
           "company": "Affirm",
@@ -5318,17 +5318,17 @@
           "jobs": 21
         },
         {
-          "company": "Pinterest",
-          "jobs": 21
+          "company": "xAI",
+          "jobs": 20
         },
         {
-          "company": "xAI",
+          "company": "Humana",
           "jobs": 20
         }
       ],
-      "unique_companies": 255,
-      "avg_jobs_per_company": 5.6,
-      "timestamp": "2026-07-14T01:07:30.166467+00:00"
+      "unique_companies": 258,
+      "avg_jobs_per_company": 5.64,
+      "timestamp": "2026-07-14T04:18:05.363814+00:00"
     }
   ]
 }
