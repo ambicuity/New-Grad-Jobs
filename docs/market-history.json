@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T17:04:12.828023+00:00",
+    "last_updated": "2026-07-15T18:20:42.529440+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,21 +5277,21 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1432,
+      "total_jobs": 1469,
       "categories": {
-        "infrastructure_sre": 167,
-        "software_engineering": 937,
-        "data_ml": 155,
-        "other": 123,
-        "product_management": 3,
+        "software_engineering": 964,
         "data_engineering": 27,
+        "product_management": 3,
+        "infrastructure_sre": 167,
+        "data_ml": 156,
+        "other": 132,
         "hardware": 16,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 619,
+        "other": 650,
         "unicorn": 678,
-        "faang_plus": 135
+        "faang_plus": 141
       },
       "top_companies": [
         {
@@ -5312,11 +5312,15 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 32
+          "jobs": 33
+        },
+        {
+          "company": "Accenture",
+          "jobs": 31
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 28
+          "jobs": 30
         },
         {
           "company": "Stripe",
@@ -5329,15 +5333,11 @@
         {
           "company": "xAI",
           "jobs": 20
-        },
-        {
-          "company": "Pinterest",
-          "jobs": 20
         }
       ],
-      "unique_companies": 260,
-      "avg_jobs_per_company": 5.51,
-      "timestamp": "2026-07-15T17:04:12.826776+00:00"
+      "unique_companies": 263,
+      "avg_jobs_per_company": 5.59,
+      "timestamp": "2026-07-15T18:20:42.527779+00:00"
     }
   ]
 }
