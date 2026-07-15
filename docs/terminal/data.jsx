@@ -6,7 +6,10 @@
 //                    fmtComp, daysLeft, deadlineLabel, deadlineHot,
 //                    NGJOBS_READY (Promise that resolves once jobs are loaded).
 
-const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', FE:'frontend', BE:'backend', INFRA:'infra', SEC:'security', MOBILE:'mobile', HW:'hardware' };
+// Canonical job categories — the single source of truth shared with
+// scripts/update_jobs.py (CATEGORY_PATTERNS), docs/jobs.json (meta.categories),
+// and the README. Keep these ids/order in step with CATEGORY_TYPE below.
+const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', INFRA:'infra', PM:'product', QUANT:'quant', HW:'hardware', OTHER:'other' };
 const SIZE_LABEL = { S:'<50', M:'50–500', L:'500–5k', XL:'5k+' };
 const RMT_LABEL  = { remote:'remote', hybrid:'hybrid', onsite:'onsite' };
 
@@ -31,40 +34,24 @@ function deadlineHot(dl) { return daysLeft(dl) <= 14; }
 
 // ── Mapping helpers ──────────────────────────────────────────────────────
 
+// Canonical category id (from jobs.json `job.category.id`) → short type code.
+// This is the ONLY source of the terminal's type column/filters, so the site
+// stays in step with docs/jobs.json meta.categories and the README rather than
+// re-deriving a separate taxonomy from job titles.
 const CATEGORY_TYPE = {
   software_engineering: 'SWE',
   data_ml:              'ML',
   data_engineering:     'DATA',
   infrastructure_sre:   'INFRA',
+  product_management:   'PM',
+  quant_finance:        'QUANT',
   hardware:             'HW',
-  other:                'SWE',
+  other:                'OTHER',
 };
 
-// Title-pattern matches that beat the (coarse) category mapping.  Pattern
-// order matters: HW before INFRA so "embedded systems engineer" wins HW;
-// SEC before INFRA so "cloud security engineer" wins SEC; ML before DATA
-// so "ML platform engineer" wins ML; MOBILE before FE so "mobile/iOS web"
-// goes to MOBILE.  Tested against the live 1134-job scrape:
-//   INFRA 184, SEC 130, DATA 79, ML 52, BE 43, HW 29, MOBILE 11, FE 8
-// The remaining ~629 jobs fall through to CATEGORY_TYPE (mostly SWE).
-const _TYPE_TITLE_PATTERNS = [
-  ['HW',     /\b(firmware|asic|fpga|silicon|chip design|rtl|verilog|embedded|hardware engineer)\b/i],
-  ['SEC',    /\b(security engineer|infosec|appsec|cyber\s?security|application security|cloud security|penetration)\b/i],
-  ['ML',     /\b(machine learning|ml engineer|ml research|ai engineer|ai research|deep learning|research engineer|nlp engineer|computer vision)\b/i],
-  ['DATA',   /\b(data scientist|data engineer|data analyst|analytics engineer|business intelligence)\b/i],
-  ['MOBILE', /\b(mobile|ios|android)\b/i],
-  ['FE',     /\b(front[\s-]?end|frontend|ui engineer|web engineer)\b/i],
-  ['BE',     /\b(back[\s-]?end|backend|server[\s-]?side)\b/i],
-  ['INFRA',  /\b(infrastructure|\bsre\b|site reliability|devops|platform engineer|reliability engineer|kubernetes|cloud engineer|distributed systems|systems engineer)\b/i],
-];
-
 function deriveType(j) {
-  const title = j.title || '';
-  for (const [type, pat] of _TYPE_TITLE_PATTERNS) {
-    if (pat.test(title)) return type;
-  }
   const catId = (j.category || {}).id || 'other';
-  return CATEGORY_TYPE[catId] || 'SWE';
+  return CATEGORY_TYPE[catId] || 'OTHER';
 }
 
 const TIER_SIZE = {

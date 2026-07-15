@@ -42,6 +42,10 @@
 
 🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->163<!-- /COUNT -->)
 
+📱 [Product Management](#product-management) (<!-- COUNT:product_management -->3<!-- /COUNT -->)
+
+📈 [Quantitative Finance](#quantitative-finance) (<!-- COUNT:quant_finance -->4<!-- /COUNT -->)
+
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->14<!-- /COUNT -->)
 
 💼 [Other](#other) (<!-- COUNT:other -->141<!-- /COUNT -->)
@@ -887,6 +891,27 @@
 | 🔥 Northrop Grumman | DevOps Engineer | United States-Colorado-Colorado Springs | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/DevOps-Engineer_R10225395) |
 | 🔥 Boeing | Product Security Engineer, Associate | USA - Hazelwood, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Product-Security-Engineer--Product-Security-Engineer-_JR2025488464) |
 | 🔥 Boeing | Product Security Engineer, Mid-Level | USA - Hazelwood, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Product-Security-Engineer--Product-Security-Engineer-_JR2025488469) |
+
+## 📱 Product Management New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| MongoDB | Software Engineer 3, Voyage Control Plane | Palo Alto; Seattle | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8041664) |
+| Telus | AI Innovation Associate (Vibe Coder) - Channel Technology and Sales Strategy Team | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=c040cfa3243204f4) |
+| Cerebras | Hardware / Low Level Security Engineer | US and Canada Offices | 2026-06-23 | [Apply](https://jobs.ashbyhq.com/cerebras/4e706d0d-65a6-4a36-9ff3-b9e9da16a618) |
+
+## 📈 Quantitative Finance New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| TD | Associate - Quant Engineering and Development | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=3da5343bd3e269a5) |
+| Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| 🚀 SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
 ## 🔧 Hardware Engineering New Grad Roles
 
