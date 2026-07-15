@@ -9,16 +9,33 @@ sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
 from scripts.update_jobs import create_optimized_session
 
 
+# Match a config URL key and capture its https?:// value on an added diff line.
+#   ^\+                 -> only added lines
+#   (?:(?!#).)*?        -> lazily skip prefix, but never cross a '#' so commented
+#                          lines like `+ # url: "..."` are ignored
+#   (?<![\w-])          -> require a key boundary so `callback_url:` / `source_url:`
+#                          do NOT match, only `url:` / `workday_url:` / `endpoint:`
+#   ["\']?              -> quotes are optional (YAML allows unquoted scalars)
+#   (https?://[^\s"'#]+) -> the URL, stopping at whitespace, quote, or '#' fragment
+_NEW_URL_RE = re.compile(
+    r'^\+(?:(?!#).)*?(?<![\w-])(?:url|workday_url|endpoint):\s*["\']?\s*(https?://[^\s"\'#]+)'
+)
+
+
 def get_new_urls_from_diff(diff_text):
     """
     Extracts URLs that are literally added (lines starting with +) in config.yml.
+
+    Handles quoted and unquoted values, ignores commented-out lines, and only
+    matches the intended config keys (not similarly named keys such as
+    ``callback_url`` or ``source_url``).
     """
     urls = []
-    # Only look at added lines that aren't diff headers
-    added_lines = [line for line in diff_text.splitlines() if line.startswith('+') and not line.startswith('+++')]
-
-    for line in added_lines:
-        match = re.search(r'(?:url|workday_url|endpoint):\s*["\']\s*(https?://[^"\']+)["\']', line)
+    for line in diff_text.splitlines():
+        # Skip diff headers; only consider added lines.
+        if not line.startswith('+') or line.startswith('+++'):
+            continue
+        match = _NEW_URL_RE.search(line)
         if match:
             urls.append(match.group(1).strip())
 
