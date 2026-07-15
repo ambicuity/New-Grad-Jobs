@@ -102,7 +102,7 @@ body:
         - [ ] All existing `pytest tests/` pass
         - [ ] New tests added for every changed code path (deterministic — no live network calls)
         - [ ] `pre-commit run --all-files` passes
-        - [ ] `jobs.json` schema remains backward compatible with docs/app.js
+        - [ ] `jobs.json` schema remains backward compatible with docs/terminal/data.jsx
         - [ ] PR is linked to this issue with `Fixes #<number>`
         - [ ] PR title follows Conventional Commits format
     validations:

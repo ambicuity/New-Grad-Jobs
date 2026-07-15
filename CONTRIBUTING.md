@@ -493,9 +493,12 @@ New-Grad-Jobs/
 ├── config.yml                  # Companies, filters, search configuration
 ├── jobs.json                   # Full jobs dataset (auto-generated)
 ├── docs/                       # GitHub Pages frontend
-│   ├── index.html              # Main job board UI
-│   ├── app.js                  # Frontend logic (Vanilla JS)
-│   ├── styles.css              # Styling
+│   ├── index.html              # Entry point (loads terminal/*.jsx)
+│   ├── terminal/               # React UI (in-browser Babel, no build step)
+│   │   ├── app.jsx             # Root component / top bar
+│   │   ├── dashboard.jsx       # Jobs board view
+│   │   ├── contributors.jsx    # Contributors view
+│   │   └── data.jsx            # jobs.json loading + shaping
 │   └── jobs.json               # Mirrored jobs data for Pages
 └── .github/
     ├── workflows/
@@ -578,7 +581,7 @@ Use the **[New Role issue template](https://github.com/ambicuity/New-Grad-Jobs/i
 ## 10. Code Style
 
 - **Python**: Follow [PEP 8](https://pep8.org/). Use type hints for all new functions.
-- **JavaScript** (`docs/app.js`, `docs/stats.js`): Vanilla JS, no frameworks. Follow existing patterns.
+- **JavaScript / JSX** (`docs/terminal/*.jsx`): React 18 transpiled in-browser via Babel Standalone — no build step. Follow existing patterns.
 - **YAML** (`config.yml`): Use 2-space indentation.
 - **Markdown**: Use ATX-style headers (`#`, `##`), not underline style.
 

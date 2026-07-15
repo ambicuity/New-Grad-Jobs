@@ -38,7 +38,7 @@ flowchart TD
     subgraph Output["5. Static Storage & Presentation"]
         json[(jobs.json<br/>Raw State File)]
         readme(README.md<br/>Markdown Table)
-        gh_pages(GitHub Pages<br/>Vanilla JS Frontend)
+        gh_pages(GitHub Pages<br/>React Terminal UI)
     end
 
     %% Flow Definitions
@@ -100,7 +100,7 @@ Data retrieved from all sources goes through a strict pipeline entirely in-memor
 The system's most crucial constraint: **No External Database.**
 - **`jobs.json`**: The canonical state of the system. Stored explicitly inside the git repository.
 - **`README.md`**: Generates a user-friendly Markdown table for users who simply browse the repository directly on GitHub.
-- **GitHub Pages**: The `docs/` directory hosts a Vanilla JS + Vanilla CSS frontend that fetches the raw `jobs.json` from the `main` branch to render a fast, filterable UI for end-users, deployed automatically by GitHub.
+- **GitHub Pages**: The `docs/` directory hosts a React "terminal" UI (`docs/terminal/*.jsx`, transpiled in-browser via Babel Standalone — no build step) that fetches the mirrored `docs/jobs.json` (same-origin relative URL, refreshed in `/docs` by the update workflow) to render a fast, filterable UI for end-users, deployed automatically by GitHub.
 
 ## Architectural Trade-offs
 
