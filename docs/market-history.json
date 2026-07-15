@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T21:31:01.311013+00:00",
+    "last_updated": "2026-07-15T21:46:09.735894+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5320,7 +5320,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 28
+          "jobs": 29
         },
         {
           "company": "Accenture",
@@ -5341,7 +5341,7 @@
       ],
       "unique_companies": 257,
       "avg_jobs_per_company": 5.69,
-      "timestamp": "2026-07-15T21:31:01.309984+00:00"
+      "timestamp": "2026-07-15T21:46:09.734909+00:00"
     }
   ]
 }
