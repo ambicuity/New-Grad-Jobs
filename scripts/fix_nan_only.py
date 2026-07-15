@@ -3,7 +3,15 @@ import os
 import re
 
 
-def fix_json_file(filepath):
+def fix_json_file(filepath: str) -> None:
+    """Replace NaN and Infinity values in a JSON file with null.
+
+    Args:
+        filepath: Path to the JSON file to update.
+
+    Returns:
+        None. The file is updated in place when invalid numeric values are fixed.
+    """
     print(f"Processing {filepath}...")
     if not os.path.exists(filepath):
         print(f"File not found: {filepath}")
