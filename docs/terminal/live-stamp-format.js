@@ -4,10 +4,17 @@
 // Exposes on window: formatLiveStamp, liveStampState
 // In Node: exported via module.exports.
 (function (global) {
-  // The scraper runs every 5 min on schedule. If we haven't seen a fresh
-  // generated_at within this window, the pipeline is failing or the page
-  // is offline. STALE_MS = 15 min gives 2 missed cycles of headroom.
-  var STALE_MS = 15 * 60 * 1000;
+  // The scraper is scheduled every 5 min, but GitHub Actions cron is best-
+  // effort: scheduled runs land 10-30+ min late on free-tier load, runs that
+  // overlap an in-flight one are cancelled by the workflow's concurrency
+  // group, and `*/5` schedules are deprioritized vs. larger intervals.
+  // Effective cadence is 15-60 min, with occasional multi-hour gaps.
+  //
+  // The chip is meant to warn that the pipeline is genuinely broken, not
+  // flap on normal cron jitter. 24 h gives a full day of tolerance for
+  // queue starvation and platform incidents while still alerting if the
+  // scraper has been completely down for a day.
+  var STALE_MS = 24 * 60 * 60 * 1000;
 
   function liveStampState(isoString, now) {
     if (!isoString) return { kind: 'offline' };

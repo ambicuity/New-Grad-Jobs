@@ -27,13 +27,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterator, List, Optional, Tuple
 from urllib.parse import urlencode, urlparse
 from xml.sax.saxutils import escape as xml_escape
 
 import requests
 import yaml
 from dateutil import parser as date_parser
+from dateutil.relativedelta import relativedelta
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -42,6 +43,11 @@ try:
 except ModuleNotFoundError:
     # Supports import-by-path checks that load scripts/update_jobs.py directly.
     from scripts.source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
+
+try:
+    from url_safety import filter_safe_jobs
+except ModuleNotFoundError:
+    from scripts.url_safety import filter_safe_jobs
 
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
@@ -78,6 +84,10 @@ DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
 MIN_PREDICTION_HISTORY_SNAPSHOTS: int = 7
 DEFAULT_GEMINI_PREDICTION_MODEL: str = "gemini-3.1-flash-lite-preview"
+
+# Date normalization constants
+DAYS_PER_WEEK: int = 7
+DAYS_PER_MONTH: int = 30  # Approximation; relativedelta used for precise month arithmetic below
 
 # Default countries used by JobSpy when none are specified in configuration.
 # Consumed by: fetch_jobspy_jobs()
@@ -784,13 +794,11 @@ _COMP_BLOCKLIST = re.compile(
 )
 
 
-def clean_description(text: Optional[str], max_chars: int = 1200) -> str:
+def clean_description(text: Optional[str], max_chars: int = 3000) -> str:
     """Strip HTML, collapse whitespace, clip to max_chars on a word boundary.
 
     Used to publish a readable "About the role" snippet in docs/jobs.json
     from the raw HTML each ATS returns in `content` / `descriptionHtml`.
-    Kept conservative at 1200 chars so jobs.json stays under ~3 MB on the
-    typical 1000-job scrape.
     """
     if not text:
         return ''
@@ -859,6 +867,13 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
     if 'content=' not in url:
         url = url + ('&' if '?' in url else '?') + 'content=true'
 
+    # Extract board token for individual job fetches (e.g. 'andurilindustries'
+    # from 'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs')
+    board_token = None
+    _bt_match = re.search(r'/boards/([^/]+)/jobs', url)
+    if _bt_match:
+        board_token = _bt_match.group(1)
+
     for attempt in range(max_retries + 1):
         try:
             if attempt > 0:
@@ -885,7 +900,9 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 print(f"  ⚠️  {company_name}: Unexpected API response format")
                 continue
 
-            for job in data.get('jobs', []):
+            raw_jobs = data.get('jobs', [])
+
+            for job in raw_jobs:
                 description = job.get('content', '') or ''
                 jobs.append({
                     'company': company_name,
@@ -895,8 +912,28 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                     'posted_at': job.get('updated_at') or job.get('created_at'),
                     'source': 'Greenhouse',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': extract_compensation(description),
+                    '_gh_id': job.get('id'),
                 })
+
+            # Enrichment pass: fetch individual details for jobs with empty content.
+            # Only when we have a board_token and there are jobs needing enrichment.
+            empty_jobs = [j for j in jobs if not j['description_html'] and j.get('_gh_id')]
+            if empty_jobs and board_token:
+                print(f"  📋 Enriching {len(empty_jobs)} jobs with empty descriptions...")
+                for job_dict in empty_jobs:
+                    detail = fetch_greenhouse_job_detail(board_token, job_dict['_gh_id'])
+                    if detail and detail.get('content'):
+                        content = detail['content']
+                        job_dict['description'] = clean_description(content)
+                        job_dict['description_html'] = content
+                        job_dict['comp'] = extract_compensation(content) or job_dict['comp']
+
+            # Remove internal tracking field before returning
+            for j in jobs:
+                j.pop('_gh_id', None)
+
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
             break  # Success, exit retry loop
 
@@ -930,6 +967,31 @@ def fetch_greenhouse_jobs(company_name: str, url: str, max_retries: int = 2, tim
                 print(f"  ❌ Error fetching from {company_name} after {max_retries + 1} attempts: {e}")
 
     return jobs
+
+
+def fetch_greenhouse_job_detail(board_token: str, job_id: int, timeout: int = DEFAULT_TIMEOUT) -> Optional[Dict[str, Any]]:
+    """Fetch a single job's full details from the Greenhouse individual job endpoint.
+
+    Used as a fallback when the list endpoint returns empty content for a job.
+    The individual endpoint always returns the full description.
+
+    Args:
+        board_token: Greenhouse board token (e.g. 'andurilindustries').
+        job_id: Numeric job ID from the list response.
+        timeout: Request timeout in seconds.
+
+    Returns:
+        Parsed JSON response dict, or None on failure.
+    """
+    url = f"https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs/{job_id}"
+    try:
+        response = limited_get(url, timeout=timeout)
+        if response.status_code == 200:
+            return response.json()
+    except Exception:
+        pass
+    return None
+
 
 def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout: int = DEFAULT_TIMEOUT) -> List[Dict[str, Any]]:
     """Fetch jobs from Lever API with retry logic"""
@@ -976,6 +1038,7 @@ def fetch_lever_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'posted_at': job.get('createdAt'),
                     'source': 'Lever',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': extract_compensation(description),
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1091,6 +1154,7 @@ def fetch_ashby_jobs(company_name: str, url: str, max_retries: int = 2, timeout:
                     'posted_at': job.get('publishedAt'),
                     'source': 'Ashby',
                     'description': clean_description(description),
+                    'description_html': description,
                     'comp': comp,
                 })
             print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
@@ -1710,6 +1774,7 @@ def fetch_jobspy_jobs(config_jobspy: Dict[str, Any], max_retries: int = 2) -> Li
                         'posted_at': row.get('date_posted', ''),
                         'source': f'JobSpy ({site.title()})',
                         'description': clean_description(description),
+                        'description_html': description,
                         'comp': comp,
                     }
 
@@ -1941,7 +2006,7 @@ def fetch_google_jobs_parallel(search_terms: List[str], max_workers: int = None)
                     print(f"  ⏭️  Google '{search_term}': skipping — source '{SOURCE_COOLDOWN.domain_key(url)}' in cooldown")
                     break
 
-                response = limited_get(url, timeout=5)  # AGGRESSIVE: 5s for 10K
+                response = limited_get(url, timeout=DEFAULT_TIMEOUT)  # AGGRESSIVE: 5s for 10K
                 if response.status_code == 403:
                     admitted = SOURCE_COOLDOWN.try_admit(url)
                     if admitted:
@@ -2139,16 +2204,31 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
 
     return False
 
-def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
+def normalize_date_string(
+    posted_at: Any,
+    reference_date: datetime | None = None,
+    *,
+    now_utc: datetime | None = None,
+) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
+
+    ``reference_date`` is the "current time" used to resolve relative phrases such
+    as "today", "yesterday", or "2 days ago". Injecting it makes the function
+    deterministic and eliminates flaky tests around midnight boundaries; it
+    defaults to ``datetime.now(timezone.utc)`` when omitted. ``now_utc`` is kept
+    as a backward-compatible keyword alias for existing call sites.
 
     Handles formats like:
     - "Posted Today" -> today's date
     - "Posted Yesterday" -> yesterday's date
     - "Posted 2 Days Ago" -> 2 days ago
     - "Posted 30+ Days Ago" -> 30 days ago
+    - "Just posted" / "Recently" -> today's date
+    - "Posted 2 Weeks Ago" -> 14 days ago
+    - "Posted 3 Months Ago" -> 90 days ago
+    - "Active 5 Days Ago" -> 5 days ago
 
     Also handles native datetime.date / datetime.datetime objects returned by
     Workday / JobSpy API clients, coercing them to their ISO-format string so
@@ -2165,9 +2245,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         return str(posted_at)
 
     posted_at_lower = posted_at.lower().strip()
-    if now_utc is None:
-        now_utc = datetime.now(timezone.utc)
-    now = now_utc.replace(tzinfo=None)
+    reference = reference_date if reference_date is not None else now_utc
+    if reference is None:
+        reference = datetime.now(timezone.utc)
+    now = reference.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -2192,6 +2273,22 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
     # Handle "X hours ago" or "X minutes ago" (resolve to today)
     if re.search(r'\d+\s*(?:hours?|minutes?)\s+ago', posted_at_lower):
         return now.strftime('%Y-%m-%d')
+
+    # Handle "Just posted" / "Just now" / "Recently"
+    if re.search(r'\b(?:just\s+(?:posted|now)|recently)\b', posted_at_lower):
+        return now.strftime('%Y-%m-%d')
+
+    # Handle "Posted X Weeks Ago" or "X Weeks Ago" or "X Wks Ago"
+    weeks_match = re.search(r'(\d+)\s*(?:weeks?|wks?)\s+ago', posted_at_lower)
+    if weeks_match:
+        weeks = int(weeks_match.group(1))
+        return (now - timedelta(days=weeks * DAYS_PER_WEEK)).strftime('%Y-%m-%d')
+
+    # Handle "Posted X Months Ago" or "X Months Ago" or "X Mos Ago"
+    months_match = re.search(r'(\d+)\s*(?:months?|mos?)\s+ago', posted_at_lower)
+    if months_match:
+        months = int(months_match.group(1))
+        return (now - relativedelta(months=months)).strftime('%Y-%m-%d')
 
     # Return original if no pattern matches
     return posted_at
@@ -2380,6 +2477,29 @@ def get_iso_date(posted_at: Any) -> str:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
 
+
+def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
+    """Yield normalized category IDs from enriched or legacy job category data."""
+    if not isinstance(job, dict):
+        return
+
+    category_id = get_nested_value(job, 'category.id')
+    if isinstance(category_id, str):
+        normalized = category_id.strip()
+        if normalized:
+            yield normalized
+            return
+
+    legacy_categories = job.get('categories', [])
+    if not isinstance(legacy_categories, list):
+        return
+
+    for category in legacy_categories:
+        if isinstance(category, str):
+            normalized = category.strip()
+            if normalized:
+                yield normalized
+
 def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:
     """Generate JSON data structure for jobs"""
 
@@ -2398,6 +2518,7 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
     # Build JSON structure
     json_jobs = []
     for job in jobs:
+        desc_html = job.get('description_html', '')
         json_jobs.append({
             'id': job.get('id', ''),
             'company': job.get('company', ''),
@@ -2413,11 +2534,13 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'is_closed': job.get('is_closed', False),
             'comp': job.get('comp'),
             'description': job.get('description', ''),
+            'description_html': desc_html,
+            'full_description': clean_description(desc_html, max_chars=50000) if desc_html else '',
         })
 
     return {
         'meta': {
-            'generated_at': datetime.now().isoformat(),
+            'generated_at': datetime.now(timezone.utc).isoformat(),
             'total_jobs': len(jobs),
             'categories': [
                 {
@@ -2439,14 +2562,13 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     Stores daily snapshots in docs/market-history.json with 90-day retention.
     """
     # Create today's snapshot
-    today = datetime.now().strftime('%Y-%m-%d')
-
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
     # Count jobs by category
     category_counts = Counter()
     for job in jobs:
-        for category in job.get('categories', []):
-            category_counts[category] += 1
+        for category_id in iter_category_ids(job):
+            category_counts[category_id] += 1
 
     # Count jobs by tier
     tier_counts = Counter()
@@ -2474,7 +2596,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'top_companies': top_companies,
         'unique_companies': unique_companies,
         'avg_jobs_per_company': avg_jobs_per_company,
-        'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now(timezone.utc).isoformat()
     }
 
     # Load existing history
@@ -2505,7 +2627,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
                 break
 
     # Keep only last 90 days
-    cutoff_date = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
+    cutoff_date = (datetime.now(timezone.utc) - timedelta(days=90)).strftime('%Y-%m-%d')
     history = [entry for entry in history if entry['date'] >= cutoff_date]
 
     # Sort by date (oldest to newest)
@@ -2514,7 +2636,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Save back to file
     history_data = {
         'meta': {
-            'last_updated': datetime.now().isoformat(),
+            'last_updated': datetime.now(timezone.utc).isoformat(),
             'total_snapshots': len(history),
             'date_range': {
                 'start': history[0]['date'] if history else None,
@@ -2597,7 +2719,7 @@ def _write_prediction_status(
     payload: Dict[str, Any] = {
         "state": state,
         "message": message,
-        "updated_at": datetime.now().isoformat(),
+            "updated_at": datetime.now(timezone.utc).isoformat(),
         "requires_api_key": True,
         "minimum_history_snapshots": MIN_PREDICTION_HISTORY_SNAPSHOTS,
         "available_history_snapshots": history_snapshots,
@@ -2637,7 +2759,7 @@ def predict_hiring_trends(force: bool = False) -> Dict[str, Any]:
         )
 
     # Check if predictions were already generated today
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
     try:
         if os.path.exists(predictions_path) and not force:
@@ -2804,7 +2926,7 @@ Respond in JSON format:
                     )
                 else:
                     # Add metadata
-                    predictions['generated_at'] = datetime.now().isoformat()
+                    predictions['generated_at'] = datetime.now(timezone.utc).isoformat()
                     predictions['data_points'] = len(snapshots)
                     predictions['date_range'] = {
                         'start': snapshots[0]['date'],
@@ -2889,7 +3011,7 @@ def generate_rss_feed(jobs: List[Dict[str, Any]], max_items: int = 50) -> None:
     jobs.sort(key=extract_sort_date, reverse=True)
     sorted_jobs = jobs[:max_items]
 
-    now_str = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+    now_str = datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
 
     def _safe(val: Any, default: str = "") -> str:
         # xml.sax.saxutils.escape calls .replace() on its argument; passing None
@@ -2978,13 +3100,19 @@ def _compute_display_metrics(
 def generate_health_json(jobs: List[Dict[str, Any]],
                          source_counts: Dict[str, int],
                          start_time: float,
-                         config: Dict[str, Any]) -> None:
+                         config: Dict[str, Any],
+                         url_blocked_count: int = 0) -> None:
     """Generate docs/health.json for monitoring and staleness detection.
 
     Status values:
       - ok: all sources returned jobs and total > 0
-      - degraded: at least one source returned 0 jobs
+      - degraded: at least one source returned 0 jobs, or the publish-time URL
+        safety gate blocked one or more jobs
       - failed: total job count is 0
+
+    ``url_blocked_count`` is the number of jobs dropped by the publish-time URL
+    safety gate (see scripts/url_safety.py); it is surfaced as telemetry so
+    monitoring can alert when unsafe links start appearing upstream.
     """
     health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
 
@@ -2993,7 +3121,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
 
     if total_jobs == 0:
         status = 'failed'
-    elif zero_sources:
+    elif zero_sources or url_blocked_count:
         status = 'degraded'
     else:
         status = 'ok'
@@ -3006,6 +3134,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
         'total_jobs': total_jobs,
         'source_counts': source_counts,
         'zero_sources': zero_sources,
+        'url_safety_blocked': url_blocked_count,
         'run_duration_seconds': round(time.time() - start_time, 1),
         **display_metrics,
     }
@@ -3287,6 +3416,16 @@ def main():
 
     enriched_jobs = deep_sanitize(enriched_jobs)
 
+    # ========== Publish-time URL safety gate ==========
+    # Final guard before anything is written to the public docs/jobs.json:
+    # drop any job whose URL is not a public http(s) link (non-http schemes,
+    # localhost/private/metadata targets, malformed hosts). See scripts/url_safety.py.
+    enriched_jobs, url_blocked_count, url_blocked_samples = filter_safe_jobs(enriched_jobs)
+    if url_blocked_count:
+        print(f"🛡️  URL safety: blocked {url_blocked_count} job(s) with unsafe/missing URLs")
+        for sample in url_blocked_samples:
+            print(f"      • {sample}")
+
     jobs_json = generate_jobs_json(enriched_jobs, config)
 
     # ========== Save Historical Market Data ==========
@@ -3309,7 +3448,8 @@ def main():
     generate_rss_feed(enriched_jobs)
 
     # ========== Generate Health Report ==========
-    generate_health_json(enriched_jobs, source_counts, start_time, config)
+    generate_health_json(enriched_jobs, source_counts, start_time, config,
+                         url_blocked_count=url_blocked_count)
 
     # ========== Sync README count tokens ==========
     # README.md remains a hand-edited document; only the digits inside

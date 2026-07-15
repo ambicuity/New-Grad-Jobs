@@ -36,8 +36,8 @@ function run(name, fn) {
   }
 }
 
-run('STALE_MS is 15 minutes', () => {
-  assert.strictEqual(STALE_MS, 15 * 60 * 1000);
+run('STALE_MS is 24 hours', () => {
+  assert.strictEqual(STALE_MS, 24 * 60 * 60 * 1000);
 });
 
 run('returns LIVE when generated_at is fresh', () => {
@@ -48,15 +48,27 @@ run('returns LIVE when generated_at is fresh', () => {
   assert.ok(stamp.text && stamp.text.length > 0);
 });
 
-run('returns STALE after 16 minutes', () => {
-  const now = new Date('2026-05-16T21:48:00Z');
+run('still LIVE after 1 hour (well within the 24 h tolerance)', () => {
+  const now = new Date('2026-05-16T22:32:00Z');
+  const stamp = formatLiveStamp('2026-05-16T21:32:00Z', now);
+  assert.strictEqual(stamp.label, 'LIVE');
+});
+
+run('still LIVE after 12 hours', () => {
+  const now = new Date('2026-05-17T09:32:00Z');
+  const stamp = formatLiveStamp('2026-05-16T21:32:00Z', now);
+  assert.strictEqual(stamp.label, 'LIVE');
+});
+
+run('returns STALE after 25 hours (past the 24 h threshold)', () => {
+  const now = new Date('2026-05-17T22:32:00Z');
   const stamp = formatLiveStamp('2026-05-16T21:32:00Z', now);
   assert.strictEqual(stamp.label, 'STALE');
   assert.strictEqual(stamp.dot, '#e0a23a');
 });
 
-run('returns LIVE right at the boundary (14:59 ago)', () => {
-  const now = new Date(Date.parse('2026-05-16T21:32:00Z') + (15 * 60 * 1000 - 1));
+run('returns LIVE right at the boundary (1 ms before 24 h)', () => {
+  const now = new Date(Date.parse('2026-05-16T21:32:00Z') + (24 * 60 * 60 * 1000 - 1));
   const stamp = formatLiveStamp('2026-05-16T21:32:00Z', now);
   assert.strictEqual(stamp.label, 'LIVE');
 });
@@ -80,6 +92,12 @@ run('liveStampState exposes age and parsed time', () => {
   assert.strictEqual(state.kind, 'live');
   assert.strictEqual(state.ageMs, 3 * 60 * 1000);
   assert.strictEqual(state.when.toISOString(), '2026-05-16T21:32:00.000Z');
+});
+
+run('liveStampState flips to stale once past 24 h', () => {
+  const now = new Date(Date.parse('2026-05-16T21:32:00Z') + 24 * 60 * 60 * 1000 + 1000);
+  const state = liveStampState('2026-05-16T21:32:00Z', now);
+  assert.strictEqual(state.kind, 'stale');
 });
 
 run('does not crash if Intl throws (text falls back to ISO)', () => {

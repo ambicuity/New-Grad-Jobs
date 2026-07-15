@@ -276,6 +276,7 @@ function ContributorsView() {
 // ── Sub-components ──
 
 function ContribDetail({ c, spark }) {
+  const recent = useRecentCommits(c && c.handle);
   if (!c) return null;
   const total = c.add + c.del;
   return (
@@ -337,15 +338,25 @@ function ContribDetail({ c, spark }) {
         ))}
       </div>
 
-      {/* Recent commits (mock) */}
+      {/* Recent commits — live from GitHub for @{c.handle} */}
       <div style={{ padding:'14px 16px', borderBottom: `1px solid ${CBG.rule2}` }}>
         <div style={{ color: CBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>RECENT COMMITS</div>
-        {recentCommits(c).map((rc, i) => (
-          <div key={i} style={{ display:'grid', gridTemplateColumns:'52px 1fr 60px', gap: 8, fontSize: 11, padding:'3px 0' }}>
+        {recent.state === 'loading' && (
+          <div style={{ color: CBG.dim, fontSize: 11, padding:'3px 0' }}>loading from github…</div>
+        )}
+        {recent.state === 'empty' && (
+          <div style={{ color: CBG.dim, fontSize: 11, padding:'3px 0' }}>no commits authored by @{c.handle} in this repo</div>
+        )}
+        {recent.state === 'error' && (
+          <div style={{ color: CBG.warn, fontSize: 11, padding:'3px 0' }}>could not load commits ({recent.error || 'network'})</div>
+        )}
+        {recent.state === 'ok' && recent.commits.map((rc, i) => (
+          <a key={rc.sha || i} href={rc.url || `https://github.com/${RECENT_COMMITS_REPO}/commit/${rc.sha}`} target="_blank" rel="noopener noreferrer"
+             style={{ display:'grid', gridTemplateColumns:'52px 1fr 60px', gap: 8, fontSize: 11, padding:'3px 0', textDecoration:'none' }}>
             <span style={{ color: CBG.acc2 }}>{rc.sha}</span>
             <span style={{ color: CBG.ink, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{rc.msg}</span>
             <span style={{ color: CBG.dim, textAlign:'right' }}>{rc.ago}</span>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -510,33 +521,75 @@ function rankIn(key, c) {
   return sorted.findIndex(x => x.handle === c.handle) + 1;
 }
 
-function recentCommits(c) {
-  // Deterministic mock commits per contributor
-  const verbs = ['fix','feat','refactor','chore','docs','perf','test'];
-  const objs = {
-    api:['rate limiter','/jobs endpoint','graphql resolver','auth middleware'],
-    ui:['filter chips','dark mode tokens','keyboard nav','empty states','table virtualization'],
-    scrape:['lever adapter','greenhouse parser','wellfound scraper','dedupe pass'],
-    ml:['classifier weights','embedding store','duplicate detection'],
-    data:['salary normalization','export script','migration 0042'],
-    cli:['shell completions','color output','--watch flag'],
-    infra:['ci pipeline','deploy script','observability hooks'],
-    core:['workspace setup','release script','version bump'],
-    db:['index on jobs.deadline','migration 0041'],
-    search:['ranking tweak','query parser'],
-  };
-  const out = [];
-  const seed = c.handle.charCodeAt(0);
-  for (let i = 0; i < 4; i++) {
-    const area = c.areas[(seed + i) % c.areas.length];
-    const choices = objs[area] || objs.core;
-    const obj = choices[(seed + i*3) % choices.length];
-    const v = verbs[(seed + i*7) % verbs.length];
-    const sha = (((seed * 17 + i * 9001) >>> 0).toString(16) + '000000').slice(0, 7);
-    const ago = ['2h','5h','1d','3d','1w','2w'][i] || `${i+1}w`;
-    out.push({ sha, msg: `${v}(${area}): ${obj}`, ago });
+// ── Recent commits ── Live GitHub API per-contributor with session-scoped cache.
+
+const RECENT_COMMITS_CACHE = new Map(); // handle -> { state: 'loading'|'ok'|'error'|'empty', commits, error }
+const RECENT_COMMITS_LISTENERS = new Map(); // handle -> Set<callback>
+const RECENT_COMMITS_REPO = (typeof NGREPO !== 'undefined' && NGREPO.name) ? NGREPO.name : 'ambicuity/New-Grad-Jobs';
+
+function _notifyRecentCommits(handle) {
+  const listeners = RECENT_COMMITS_LISTENERS.get(handle);
+  if (listeners) listeners.forEach(cb => cb());
+}
+
+function _formatAgo(iso) {
+  const t = new Date(iso).getTime();
+  if (!t) return '—';
+  const diffSec = Math.max(0, (Date.now() - t) / 1000);
+  if (diffSec < 60) return `${Math.round(diffSec)}s`;
+  if (diffSec < 3600) return `${Math.round(diffSec / 60)}m`;
+  if (diffSec < 86400) return `${Math.round(diffSec / 3600)}h`;
+  if (diffSec < 86400 * 7) return `${Math.round(diffSec / 86400)}d`;
+  if (diffSec < 86400 * 30) return `${Math.round(diffSec / (86400 * 7))}w`;
+  if (diffSec < 86400 * 365) return `${Math.round(diffSec / (86400 * 30))}mo`;
+  return `${Math.round(diffSec / (86400 * 365))}y`;
+}
+
+async function _fetchRecentCommits(handle) {
+  const url = `https://api.github.com/repos/${RECENT_COMMITS_REPO}/commits?author=${encodeURIComponent(handle)}&per_page=4`;
+  const resp = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+  if (!resp.ok) {
+    throw new Error(`gh api ${resp.status}`);
   }
-  return out;
+  const data = await resp.json();
+  return data.map(d => ({
+    sha: (d.sha || '').slice(0, 7),
+    msg: (d.commit && d.commit.message || '').split('\n')[0].slice(0, 80),
+    ago: _formatAgo(d.commit && d.commit.author && d.commit.author.date),
+    url: d.html_url || '',
+  }));
+}
+
+function useRecentCommits(handle) {
+  const [, force] = useStateC(0);
+  useEffectC(() => {
+    if (!handle) return;
+    const set = RECENT_COMMITS_LISTENERS.get(handle) || new Set();
+    const cb = () => force(n => n + 1);
+    set.add(cb);
+    RECENT_COMMITS_LISTENERS.set(handle, set);
+
+    if (!RECENT_COMMITS_CACHE.has(handle)) {
+      RECENT_COMMITS_CACHE.set(handle, { state: 'loading', commits: [] });
+      _fetchRecentCommits(handle).then(commits => {
+        RECENT_COMMITS_CACHE.set(handle, {
+          state: commits.length ? 'ok' : 'empty',
+          commits,
+        });
+        _notifyRecentCommits(handle);
+      }).catch(err => {
+        RECENT_COMMITS_CACHE.set(handle, { state: 'error', commits: [], error: String(err.message || err) });
+        _notifyRecentCommits(handle);
+      });
+    }
+
+    return () => {
+      const cur = RECENT_COMMITS_LISTENERS.get(handle);
+      if (cur) { cur.delete(cb); if (!cur.size) RECENT_COMMITS_LISTENERS.delete(handle); }
+    };
+  }, [handle]);
+
+  return RECENT_COMMITS_CACHE.get(handle) || { state: 'loading', commits: [] };
 }
 
 window.ContributorsView = ContributorsView;

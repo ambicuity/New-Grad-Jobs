@@ -22,11 +22,17 @@ function DashboardDirection() {
   const [q, setQ] = useState2('');
   const [filters, setFilters] = useState2({
     type: new Set(), rmt: new Set(), visa: null, cohort: new Set(['26']), size: new Set(),
+    company: new Set(),
   });
-  const [sortKey, setSortKey] = useState2('deadline');
+  const [sortKey, setSortKey] = useState2('posted');
   const [sortDir, setSortDir] = useState2(1);
   const [selectedId, setSelectedId] = useState2(NGJOBS[5].id);
-  const [saved, setSaved] = useState2(new Set(['ant-mlr-26','crs-swe-26']));
+  // Saved-job IDs are user-driven (press S, or click the ☆ in a row). The
+  // previous seed (`['ant-mlr-26','crs-swe-26']`) was synthetic-mock cruft
+  // and never matched any real id in `docs/jobs.json`, so toggling the
+  // SAVED filter on a fresh load yielded `0 / N results`. Start empty.
+  const [saved, setSaved] = useState2(new Set());
+  const [savedOnly, setSavedOnly] = useState2(false);
   const [toast, setToast] = useState2(null);
   const [helpOpen, setHelpOpen] = useState2(false);
   const searchRef = useRef2(null);
@@ -45,8 +51,13 @@ function DashboardDirection() {
   });
   const setVisa = (val) => setFilters(f => ({ ...f, visa: f.visa === val ? null : val }));
 
-  const filtered = useMemo2(() => {
-    let out = NGJOBS.filter(j => {
+  // Pre-company filter: applies every facet EXCEPT company. Used as the source
+  // for the HIRING NOW sidebar so the list of companies doesn't collapse to
+  // just the selected company — users can still switch between companies even
+  // after picking one.
+  const preCompanyFiltered = useMemo2(() => {
+    return NGJOBS.filter(j => {
+      if (savedOnly && !saved.has(j.id)) return false;
       if (filters.type.size && !filters.type.has(j.type)) return false;
       if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;
       if (filters.visa !== null && j.visa !== filters.visa) return false;
@@ -58,13 +69,19 @@ function DashboardDirection() {
       }
       return true;
     });
+  }, [filters.type, filters.rmt, filters.visa, filters.cohort, filters.size, q, savedOnly, saved]);
+
+  const filtered = useMemo2(() => {
+    let out = filters.company.size
+      ? preCompanyFiltered.filter(j => filters.company.has(j.co))
+      : preCompanyFiltered.slice();
     const dir = sortDir;
     if (sortKey === 'deadline') out.sort((a,b) => dir*(daysLeft(a.dl) - daysLeft(b.dl)));
     if (sortKey === 'comp')     out.sort((a,b) => dir*(b.comp[1] - a.comp[1]));
     if (sortKey === 'co')       out.sort((a,b) => dir*a.co.localeCompare(b.co));
-    if (sortKey === 'posted')   out.sort((a,b) => dir*a.posted.localeCompare(b.posted));
+    if (sortKey === 'posted')   out.sort((a,b) => dir*(b.postedTs - a.postedTs));
     return out;
-  }, [filters, q, sortKey, sortDir]);
+  }, [preCompanyFiltered, filters.company, sortKey, sortDir]);
 
   useEffect2(() => {
     if (!filtered.find(j => j.id === selectedId) && filtered[0]) setSelectedId(filtered[0].id);
@@ -115,7 +132,7 @@ function DashboardDirection() {
         }
       } else if (e.key === 'F2') {
         e.preventDefault();
-        const keys = ['deadline','comp','co','posted'];
+        const keys = ['posted','deadline','comp','co'];
         const next = keys[(keys.indexOf(sortKey) + 1) % keys.length];
         setSortKey(next);
         flashToast(`sort: ${next}`, BBG.acc2);
@@ -125,12 +142,14 @@ function DashboardDirection() {
     return () => window.removeEventListener('keydown', onKey);
   }, [filtered, selectedId, saved, sortKey, helpOpen]);
 
-  // company-frequency for hot-companies widget
+  // company-frequency for the HIRING NOW widget. Derived from the
+  // pre-company filter so picking a company doesn't collapse the list —
+  // the user can still switch between companies after clicking one.
   const coCounts = useMemo2(() => {
     const m = new Map();
-    filtered.forEach(j => m.set(j.co, (m.get(j.co) || 0) + 1));
+    preCompanyFiltered.forEach(j => m.set(j.co, (m.get(j.co) || 0) + 1));
     return [...m.entries()].sort((a,b) => b[1]-a[1]);
-  }, [filtered]);
+  }, [preCompanyFiltered]);
 
   // Deadline buckets
   const buckets = useMemo2(() => {
@@ -216,12 +235,34 @@ function DashboardDirection() {
               <span style={{ color: BBG.acc }}>{coCounts.length}</span>
             </div>
             <div style={{ maxHeight: 220, overflowY: 'auto' }}>
-              {coCounts.map(([co, n]) => (
-                <div key={co} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 11, padding: '1px 0' }}>
-                  <span style={{ color: BBG.ink }}>{co}</span>
-                  <span style={{ color: BBG.acc }}>{n}</span>
-                </div>
-              ))}
+              {coCounts.map(([co, n]) => {
+                const active = filters.company.has(co);
+                return (
+                  <div
+                    key={co}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={active}
+                    title={active ? `clear filter: ${co}` : `filter to ${co}`}
+                    onClick={() => toggleSet('company', co)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleSet('company', co);
+                      }
+                    }}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      fontSize: 11, padding: '1px 4px', cursor: 'pointer',
+                      background: active ? BBG.panel2 : 'transparent',
+                      borderLeft: `2px solid ${active ? BBG.acc : 'transparent'}`,
+                    }}
+                  >
+                    <span style={{ color: active ? BBG.acc : BBG.ink }}>{co}</span>
+                    <span style={{ color: BBG.acc }}>{n}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -352,7 +393,7 @@ function DashboardDirection() {
               ['↑ ↓ (or j k)', 'navigate jobs'],
               ['⏎',     'open application'],
               ['s / F3', 'save toggle'],
-              ['F2',    'cycle sort: deadline → comp → co → posted'],
+              ['F2',    'cycle sort: posted → deadline → comp → co'],
               ['?',     'show this help'],
             ].map(([k, v]) => (
               <div key={k} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', padding: '4px 0', fontSize: 12 }}>
@@ -371,8 +412,35 @@ function DashboardDirection() {
       }}>
         <span>STATUS: <span style={{ color: BBG.ok }}>OK</span></span>
         <span>QUERY: <span style={{ color: BBG.ink }}>{filtered.length}</span></span>
-        <span>SAVED: <span style={{ color: BBG.acc }}>{saved.size}</span></span>
-        <span>SEL: <span style={{ color: BBG.ink }}>{selected ? selected.id : '—'}</span></span>
+        <span
+          role="button"
+          tabIndex={0}
+          aria-pressed={savedOnly}
+          title={savedOnly
+            ? 'showing only saved jobs — click to clear'
+            : (saved.size ? `show only your ${saved.size} saved job${saved.size === 1 ? '' : 's'}` : 'no saved jobs yet')}
+          onClick={() => {
+            if (saved.size === 0) { flashToast('no saved jobs', BBG.warn); return; }
+            setSavedOnly(v => !v);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              if (saved.size === 0) { flashToast('no saved jobs', BBG.warn); return; }
+              setSavedOnly(v => !v);
+            }
+          }}
+          style={{
+            cursor: 'pointer',
+            padding: '0 4px',
+            background: savedOnly ? BBG.acc : 'transparent',
+            color: savedOnly ? '#000' : BBG.dim,
+            fontWeight: savedOnly ? 700 : 400,
+            transition: 'background 120ms ease',
+          }}
+        >
+          SAVED: <span style={{ color: savedOnly ? '#000' : BBG.acc, fontWeight: 700 }}>{saved.size}</span>
+        </span>
         <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }}>
           <FKey n="/"   l="SEARCH" />
           <FKey n="↑↓"  l="NAV" />
@@ -451,6 +519,37 @@ function UrgencyBar({ value }) {
   );
 }
 
+function extractRequirements(desc) {
+  if (!desc) return [];
+  const html = desc;
+  const text = html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const reqHeaders = /(?:REQUIREMENTS|QUALIFICATIONS|WHAT YOU.{0,20}NEED|MUST HAVE|MINIMUM QUALIFICATIONS|BASIC QUALIFICATIONS|WHAT WE.{0,20}LOOKING FOR|ABOUT YOU|YOU SHOULD HAVE|YOU.{0,10}BRING|IDEAL CANDIDATE|SKILLS.{0,10}REQUIRED|REQUIRED SKILLS|MINIMUM REQUIREMENTS|EDUCATION|EXPERIENCE)[:\s]*/i;
+  const sectionEnd = /(?:ABOUT|WHAT YOU.{0,10}DO|RESPONSIBILITIES|NICE TO HAVE|PREFERRED|BONUS|COMPENSATION|SALARY|BENEFITS|EQUAL|LOCATION|APPLY|PERKS|WHAT WE OFFER|BENEFITS|ABOUT THE TEAM|ABOUT THE COMPANY)/i;
+  const headerMatch = text.match(reqHeaders);
+  if (headerMatch) {
+    const headerIdx = headerMatch.index + headerMatch[0].length;
+    const afterHeader = text.substring(headerIdx);
+    const endMatch = afterHeader.match(sectionEnd);
+    const section = endMatch ? afterHeader.substring(0, endMatch.index) : afterHeader.substring(0, 1000);
+    const items = section.split(/(?:^|\s)[•\-\*]\s*|(?:^|\s)\d+\.\s*|(?:^|\s)[a-z]\)\s*/);
+    const validItems = items.map(s => s.trim()).filter(s => s.length > 10 && s.length < 300 && !s.match(/^(?:and|or|the|a|an|is|are|was|were|be|been|being|have|has|had|do|does|did|will|would|could|should|may|might|can|shall)$/i));
+    if (validItems.length >= 2) return validItems.slice(0, 8);
+  }
+  const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi);
+  if (liMatches && liMatches.length >= 3) {
+    const items = liMatches.map(li => {
+      const content = li.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
+      return content;
+    }).filter(s => s.length > 10 && s.length < 300);
+    if (items.length >= 3) return items.slice(0, 8);
+  }
+  const bullets = text.match(/(?:^|\n)\s*[•\-\*]\s*(.+)/g);
+  if (bullets && bullets.length >= 3) {
+    return bullets.map(b => b.replace(/^\s*[•\-\*]\s*/, '').trim()).filter(s => s.length > 10).slice(0, 8);
+  }
+  return [];
+}
+
 function DashboardDetail({ job, saved, onSave }) {
   if (!job) return null;
   const days = daysLeft(job.dl);
@@ -506,12 +605,19 @@ function DashboardDetail({ job, saved, onSave }) {
       {/* Requirements */}
       <div style={{ padding: '14px 16px', borderBottom: `1px solid ${BBG.rule2}` }}>
         <div style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>REQUIREMENTS</div>
-        <ul style={{ margin: 0, paddingLeft: 16, lineHeight: 1.7, color: BBG.ink }}>
-          <li>BS / MS in CS or equivalent, graduating by Jun 2027</li>
-          <li>Proficiency in <span style={{ color: BBG.acc }}>{job.stack[0].toLowerCase()}</span>; bonus: {job.stack.slice(1).join(', ').toLowerCase() || 'related stacks'}</li>
-          <li>Portfolio or open-source — internships not required</li>
-          {!job.visa && <li style={{ color: BBG.warn }}>US work authorization (no sponsorship)</li>}
-        </ul>
+        <div style={{ margin: 0, paddingLeft: 0, lineHeight: 1.7, color: BBG.ink, fontSize: 11.5 }}>
+          {job.desc && extractRequirements(job.desc).length > 0 ? (
+            <ul style={{ margin: 0, paddingLeft: 16 }}>
+              {extractRequirements(job.desc).map((req, i) => (
+                <li key={i}>{req}</li>
+              ))}
+            </ul>
+          ) : (
+            <div style={{ color: BBG.dim, fontSize: 11, fontStyle: 'italic' }}>
+              Requirements not available. Click APPLY to view full details.
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Similar */}

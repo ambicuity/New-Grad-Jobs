@@ -237,7 +237,34 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "whbbupt",
+      "name": "wanghuanbo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208098776?v=4",
+      "profile": "https://github.com/whbbupt",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "liu57liu456",
+      "name": "k'k",
+      "avatar_url": "https://avatars.githubusercontent.com/u/285883525?v=4",
+      "profile": "https://github.com/liu57liu456",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "15045",
+      "name": "小吴",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103171446?v=4",
+      "profile": "https://github.com/15045",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "generatedAt": "2026-05-18T18:12:22Z"
+  "generatedAt": "2026-05-26T19:05:00Z"
 }
