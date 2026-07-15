@@ -2199,10 +2199,21 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
 
     return False
 
-def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
+def normalize_date_string(
+    posted_at: Any,
+    reference_date: datetime | None = None,
+    *,
+    now_utc: datetime | None = None,
+) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
+
+    ``reference_date`` is the "current time" used to resolve relative phrases such
+    as "today", "yesterday", or "2 days ago". Injecting it makes the function
+    deterministic and eliminates flaky tests around midnight boundaries; it
+    defaults to ``datetime.now(timezone.utc)`` when omitted. ``now_utc`` is kept
+    as a backward-compatible keyword alias for existing call sites.
 
     Handles formats like:
     - "Posted Today" -> today's date
@@ -2229,9 +2240,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         return str(posted_at)
 
     posted_at_lower = posted_at.lower().strip()
-    if now_utc is None:
-        now_utc = datetime.now(timezone.utc)
-    now = now_utc.replace(tzinfo=None)
+    reference = reference_date if reference_date is not None else now_utc
+    if reference is None:
+        reference = datetime.now(timezone.utc)
+    now = reference.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:

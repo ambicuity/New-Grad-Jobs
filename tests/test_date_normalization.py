@@ -50,6 +50,25 @@ def test_normalize_date_string_fixed_reference_date_relative_phrases():
     assert normalize_date_string('2 days ago', ref) == '2024-06-13'
 
 
+def test_normalize_date_string_reference_date_keyword():
+    """The `reference_date` keyword (issue #49) resolves relative phrases."""
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    assert normalize_date_string('today', reference_date=ref) == '2024-06-15'
+    assert normalize_date_string('3 days ago', reference_date=ref) == '2024-06-12'
+
+
+def test_normalize_date_string_now_utc_alias_still_works():
+    """`now_utc` remains a backward-compatible alias for existing callers."""
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    assert normalize_date_string('yesterday', now_utc=ref) == '2024-06-14'
+
+
+def test_normalize_date_string_reference_date_takes_precedence_over_now_utc():
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    other = datetime(2020, 1, 1, 12, 0, 0, tzinfo=timezone.utc)
+    assert normalize_date_string('today', reference_date=ref, now_utc=other) == '2024-06-15'
+
+
 def test_normalize_date_string_hours_ago():
     """'X hours ago' and 'X hour ago' resolve to today's date."""
     now = FIXED_NOW_UTC.replace(tzinfo=None)
