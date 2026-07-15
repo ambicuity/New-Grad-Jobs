@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- The Tailr mark: ink rounded square + serif "T", matching the site nav logo. -->
+  <rect width="64" height="64" rx="16" fill="#1b1b1d"/>
+  <text x="32" y="46" text-anchor="middle" font-family="'Instrument Serif',Georgia,'Times New Roman',serif" font-size="42" fill="#ffffff">T</text>
+</svg>
