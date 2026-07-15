@@ -22,7 +22,9 @@ Options considered:
 
 **Option 1 — GitHub Pages with Vanilla JS** was chosen.
 
-The frontend (`docs/index.html`, `docs/app.js`, `docs/styles.css`) is plain HTML/CSS/JavaScript served from the `/docs` folder of the main branch. No build step. `jobs.json` is mirrored into `/docs` by the update workflow.
+The frontend is served as static files from the `/docs` folder of the main branch with **no build step**, and `jobs.json` is mirrored into `/docs` by the update workflow.
+
+> **Update (NGJ terminal redesign):** the original vanilla HTML/CSS/JS implementation (`docs/app.js`, `docs/styles.css`) was replaced by a React UI under `docs/terminal/*.jsx`, transpiled in-browser via Babel Standalone. This does **not** change the decision above — deployment is still static files from `/docs` with no build step.
 
 ---
 

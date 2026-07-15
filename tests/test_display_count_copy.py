@@ -10,8 +10,9 @@ COUNT_SURFACES = [
     ROOT / "README.md",
     ROOT / "docs" / "index.html",
     ROOT / "docs" / "contributors.html",
-    # docs/stats.html and docs/app.js were removed in the NGJ terminal redesign;
-    # check only the surfaces that still exist on disk.
+    # The vanilla-JS site (docs/app.js, docs/styles.css, docs/stats.html) was
+    # removed in the NGJ terminal redesign; check only surfaces that still exist
+    # on disk (missing paths are skipped below).
 ]
 
 

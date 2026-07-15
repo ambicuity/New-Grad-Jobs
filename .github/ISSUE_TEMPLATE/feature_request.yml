@@ -29,7 +29,7 @@ body:
       label: "Proposed Solution"
       description: What do you propose? Be as specific as possible.
       placeholder: |
-        e.g. "Add a 'Days Ago' field computed from `posted_at` and displayed on each job card in docs/app.js..."
+        e.g. "Add a 'Days Ago' field computed from `posted_at` and displayed on each job card in docs/terminal/dashboard.jsx..."
     validations:
       required: true
 
