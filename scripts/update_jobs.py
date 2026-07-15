@@ -3501,16 +3501,22 @@ def main():
                          url_blocked_count=url_blocked_count)
 
     # ========== Sync README count tokens ==========
-    # README.md remains a hand-edited document; only the digits inside
-    # <!-- COUNT:<id> -->…<!-- /COUNT --> markers are rewritten to match
-    # docs/jobs.json. See scripts/sync_readme_counts.py and
-    # tests/test_readme_sync.py for the contract.
+    # README.md is hand-edited *except* two auto-managed regions:
+    #   1. the <!-- COUNT:<id> --> digits + "Last updated" line (sync_readme_counts)
+    #   2. the <!-- CATEGORY-LISTINGS --> block of live per-category job tables
+    #      (sync_readme_jobs) — the top-N most recent open roles per category,
+    #      kept fresh so the README stops rotting relative to the live board.
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     try:
         from sync_readme_counts import sync_readme_counts
-        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
         sync_readme_counts(repo_root)
     except Exception as e:
         print(f"⚠️  README count sync skipped: {e}")
+    try:
+        from sync_readme_jobs import sync_readme_jobs
+        sync_readme_jobs(repo_root)
+    except Exception as e:
+        print(f"⚠️  README job-table sync skipped: {e}")
 
     # Report execution time
     elapsed = time.time() - start_time
