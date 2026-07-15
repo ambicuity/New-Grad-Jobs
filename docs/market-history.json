@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T14:10:15.347740+00:00",
+    "last_updated": "2026-07-15T15:51:45.066778+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,26 +5277,26 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1426,
+      "total_jobs": 1433,
       "categories": {
-        "software_engineering": 942,
+        "software_engineering": 939,
+        "data_ml": 153,
+        "infrastructure_sre": 170,
+        "other": 117,
         "product_management": 3,
-        "data_engineering": 26,
-        "infrastructure_sre": 168,
-        "data_ml": 152,
-        "other": 114,
-        "hardware": 16,
+        "data_engineering": 28,
+        "hardware": 18,
         "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 685,
-        "faang_plus": 122,
-        "other": 619
+        "other": 621,
+        "unicorn": 684,
+        "faang_plus": 128
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 228
+          "jobs": 227
         },
         {
           "company": "Anduril Industries",
@@ -5308,11 +5308,15 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 36
+          "jobs": 37
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 30
+          "jobs": 33
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
           "company": "Stripe",
@@ -5323,10 +5327,6 @@
           "jobs": 22
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 20
-        },
-        {
           "company": "xAI",
           "jobs": 20
         },
@@ -5335,9 +5335,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 256,
-      "avg_jobs_per_company": 5.57,
-      "timestamp": "2026-07-15T14:10:15.346632+00:00"
+      "unique_companies": 259,
+      "avg_jobs_per_company": 5.53,
+      "timestamp": "2026-07-15T15:51:45.065727+00:00"
     }
   ]
 }
