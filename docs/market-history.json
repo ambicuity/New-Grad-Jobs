@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T21:10:20.941393+00:00",
+    "last_updated": "2026-07-15T21:31:01.311013+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,14 +5277,14 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1465,
+      "total_jobs": 1462,
       "categories": {
-        "software_engineering": 858,
+        "software_engineering": 855,
         "security": 85,
-        "infrastructure_sre": 122,
+        "infrastructure_sre": 124,
         "data_ml": 148,
-        "data_engineering": 27,
-        "other": 153,
+        "data_engineering": 26,
+        "other": 152,
         "backend": 32,
         "quant_finance": 4,
         "hardware": 14,
@@ -5293,7 +5293,7 @@
         "mobile": 10
       },
       "tiers": {
-        "other": 648,
+        "other": 645,
         "unicorn": 678,
         "faang_plus": 139
       },
@@ -5304,7 +5304,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 199
+          "jobs": 197
         },
         {
           "company": "Waymo",
@@ -5339,9 +5339,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 259,
-      "avg_jobs_per_company": 5.66,
-      "timestamp": "2026-07-15T21:10:20.940423+00:00"
+      "unique_companies": 257,
+      "avg_jobs_per_company": 5.69,
+      "timestamp": "2026-07-15T21:31:01.309984+00:00"
     }
   ]
 }

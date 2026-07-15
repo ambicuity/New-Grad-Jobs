@@ -32,9 +32,9 @@
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## 📂 Browse <!-- COUNT:total -->1465<!-- /COUNT --> Jobs by Category
+## 📂 Browse <!-- COUNT:total -->1462<!-- /COUNT --> Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->858<!-- /COUNT -->)
+💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->855<!-- /COUNT -->)
 
 🎨 [Frontend Engineering](#frontend-engineering) (<!-- COUNT:frontend -->9<!-- /COUNT -->)
 
@@ -46,9 +46,9 @@
 
 🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->148<!-- /COUNT -->)
 
-📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->27<!-- /COUNT -->)
+📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->26<!-- /COUNT -->)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->122<!-- /COUNT -->)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->124<!-- /COUNT -->)
 
 📱 [Product Management](#product-management) (<!-- COUNT:product_management -->3<!-- /COUNT -->)
 
@@ -56,7 +56,7 @@
 
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->14<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->153<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->152<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---
@@ -75,7 +75,7 @@
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> 📋 **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,465** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> 📋 **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,462** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## 💻 Software Engineering New Grad Roles
 
@@ -94,7 +94,7 @@
 | xAI | Software Engineer - Platform Security | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4835611007) |
 | xAI | Software Engineer - Training/Inference (C++) | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4533894007) |
 
-**[→ View all 858 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[→ View all 855 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## 🎨 Frontend Engineering New Grad Roles
 
@@ -201,9 +201,9 @@
 | 🚀 MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 | SingleStore | Site Reliability Engineer | Seattle | Today | [Apply](https://job-boards.greenhouse.io/singlestore/jobs/7432205) |
 | SingleStore | Site Reliability Engineer | India | Today | [Apply](https://job-boards.greenhouse.io/singlestore/jobs/7533846) |
-| LPL Financial | Associate Engineer - Data and Batch Operations | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=322f8bcd49aad413) |
+| 🔥 HP | Supply Chain - Data Engineer | Bengaluru, Karnātaka, India | Today | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karntaka-India/Data-Engineer-3_3160231-2) |
 
-**[→ View all 27 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[→ View all 26 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## 🏗️ Infrastructure & SRE New Grad Roles
 
@@ -222,7 +222,7 @@
 | 🚀 SpaceX | Flight Software Infrastructure Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8477451002?gh_jid=8477451002) |
 | 🚀 SpaceX | Infrastructure Engineer | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8604308002?gh_jid=8604308002) |
 
-**[→ View all 122 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[→ View all 124 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## 📱 Product Management New Grad Roles
 
@@ -281,7 +281,7 @@
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8542046002?gh_jid=8542046002) |
 | 🚀 SpaceX | New Graduate Engineer, Mechanical (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8497499002?gh_jid=8497499002) |
 
-**[→ View all 153 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[→ View all 152 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -394,4 +394,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-07-15 21:10:20 UTC*
+*Last updated: 2026-07-15 21:31:01 UTC*
