@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T19:45:45.013316+00:00",
+    "last_updated": "2026-07-15T20:08:53.472901+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,21 +5277,21 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1456,
+      "total_jobs": 1462,
       "categories": {
-        "software_engineering": 954,
+        "data_ml": 156,
+        "software_engineering": 955,
         "data_engineering": 26,
         "infrastructure_sre": 164,
-        "other": 135,
-        "data_ml": 156,
+        "other": 140,
         "quant_finance": 4,
         "hardware": 14,
         "product_management": 3
       },
       "tiers": {
-        "unicorn": 677,
-        "other": 642,
-        "faang_plus": 137
+        "unicorn": 678,
+        "other": 648,
+        "faang_plus": 136
       },
       "top_companies": [
         {
@@ -5308,19 +5308,19 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 37
+          "jobs": 38
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 32
+          "jobs": 33
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 32
+          "jobs": 30
         },
         {
           "company": "Accenture",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "xAI",
@@ -5336,8 +5336,8 @@
         }
       ],
       "unique_companies": 254,
-      "avg_jobs_per_company": 5.73,
-      "timestamp": "2026-07-15T19:45:45.012310+00:00"
+      "avg_jobs_per_company": 5.76,
+      "timestamp": "2026-07-15T20:08:53.470587+00:00"
     }
   ]
 }
