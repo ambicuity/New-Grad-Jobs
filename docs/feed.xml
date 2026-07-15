@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 00:57:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 04:01:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Site Reliability Engineer (Raptor)  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8633999002?gh_jid=8633999002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 15 Jul 2026 03:31:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8633999002?gh_jid=8633999002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, GPU Kernel and Runtime at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=8052726</link>
+      <description>New grad role at Waymo in Mountain View, California. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 15 Jul 2026 01:09:51 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8052726</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -50,6 +64,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8bcc4e08926e7d60</guid>
     </item>
     <item>
+      <title>(USA) Software Engineer III at Walmart</title>
+      <link>https://www.indeed.com/viewjob?jk=8adbb4d0cce256c1</link>
+      <description>New grad role at Walmart in Bentonville, AR, US. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8adbb4d0cce256c1</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer (AI &amp; Software Testing) at Dhanvin IT Solutions</title>
+      <link>https://in.indeed.com/viewjob?jk=4877e037fc468c2c</link>
+      <description>New grad role at Dhanvin IT Solutions in Remote, IN. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4877e037fc468c2c</guid>
+    </item>
+    <item>
       <title>Machine Learning Engineer 4 at Adobe</title>
       <link>https://adobe.wd5.myworkdayjobs.com/job/Bangalore/Machine-Learning-Engineer-4_R169389</link>
       <description>New grad role at Adobe in Bangalore. Category: Data Science &amp; ML</description>
@@ -76,6 +104,13 @@
       <description>New grad role at PayPal in Chennai, Tamil Nadu, India. Category: Software Engineering</description>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Software-Engineer_R0136976-1</guid>
+    </item>
+    <item>
+      <title>Software Engineer - II (SDET) at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Vancouver-Canada/Software-Engineer---II--SDET-_R-277383</link>
+      <description>New grad role at Mastercard in Vancouver, Canada. Category: Software Engineering</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Vancouver-Canada/Software-Engineer---II--SDET-_R-277383</guid>
     </item>
     <item>
       <title>Data Engineer II at Mastercard</title>
@@ -232,6 +267,13 @@
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Annapolis-Junction-MD/Android-CNO-Software-Developer_R0237796</guid>
     </item>
     <item>
+      <title>Associate Regulatory Affairs Specialist at Medtronic</title>
+      <link>https://medtronic.wd1.myworkdayjobs.com/job/Mounds-View-Minnesota-United-States-of-America/Associate-Regulatory-Affairs-Specialist_R71573</link>
+      <description>New grad role at Medtronic in Mounds View, Minnesota, United States of America. Category: Other</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Mounds-View-Minnesota-United-States-of-America/Associate-Regulatory-Affairs-Specialist_R71573</guid>
+    </item>
+    <item>
       <title>Service Center Repair Technician II (Medical Devices) at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Jacksonville-Florida-United-States-of-America/Service-Center-Repair-Technician-II--Medical-Devices-_R69816-1</link>
       <description>New grad role at Medtronic in Jacksonville, Florida, United States of America. Category: Other</description>
@@ -314,48 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-Sunnyvale. Category: Other</description>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Electrical-Design-Engineer-Level-2---3_R10240380</guid>
-    </item>
-    <item>
-      <title>Software Engineer (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Nebraska-Bellevue/Software-Engineer--AHT-_R10240365</link>
-      <description>New grad role at Northrop Grumman in United States-Nebraska-Bellevue. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Nebraska-Bellevue/Software-Engineer--AHT-_R10240365</guid>
-    </item>
-    <item>
-      <title>2026 Associate Software Integration and Test Engineer - Redondo Beach (CA) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/XMLNAME-2026-Associate-Software-Integration-and-Test-Engineer---Redondo-Beach--CA-_R10240277</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Other</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/XMLNAME-2026-Associate-Software-Integration-and-Test-Engineer---Redondo-Beach--CA-_R10240277</guid>
-    </item>
-    <item>
-      <title>SDS Associate / Embedded Software Engineer - 19013* at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/SDS-Associate---Embedded-Software-Engineer---19013-_R10239748</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/SDS-Associate---Embedded-Software-Engineer---19013-_R10239748</guid>
-    </item>
-    <item>
-      <title>R10236425 2026 Associate Cyber Software Engineer - Chantilly VA at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Chantilly/R10206390-22026-Associate-Cyber-Software-Engineer---Chantilly-VA_R10236425</link>
-      <description>New grad role at Northrop Grumman in United States-Virginia-Chantilly. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Chantilly/R10206390-22026-Associate-Cyber-Software-Engineer---Chantilly-VA_R10236425</guid>
-    </item>
-    <item>
-      <title>Software Engineer: Automation/AI - Level 2 or 3 (Chandler) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Software-Engineer--Automation-AI---Level-2-or-3--Chandler-_R10237384</link>
-      <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Software-Engineer--Automation-AI---Level-2-or-3--Chandler-_R10237384</guid>
-    </item>
-    <item>
-      <title>Associate Supply Chain Specialist at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Memphis-TN/Associate-Supply-Chain-Specialist_JR2026518189-1</link>
-      <description>New grad role at Boeing in USA - Memphis, TN. Category: Other</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Memphis-TN/Associate-Supply-Chain-Specialist_JR2026518189-1</guid>
     </item>
   </channel>
 </rss>

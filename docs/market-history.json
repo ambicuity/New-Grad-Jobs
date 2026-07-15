@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T00:57:53.922818+00:00",
+    "last_updated": "2026-07-15T04:01:03.593419+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,26 +5277,26 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1440,
+      "total_jobs": 1448,
       "categories": {
-        "data_ml": 152,
-        "software_engineering": 946,
-        "data_engineering": 25,
-        "infrastructure_sre": 172,
-        "other": 124,
-        "hardware": 14,
-        "quant_finance": 5,
-        "product_management": 2
+        "infrastructure_sre": 170,
+        "data_ml": 155,
+        "software_engineering": 951,
+        "data_engineering": 24,
+        "other": 125,
+        "hardware": 15,
+        "product_management": 3,
+        "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 681,
-        "other": 643,
-        "faang_plus": 116
+        "unicorn": 683,
+        "other": 651,
+        "faang_plus": 114
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 227
+          "jobs": 228
         },
         {
           "company": "Anduril Industries",
@@ -5304,7 +5304,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 42
+          "jobs": 43
         },
         {
           "company": "OpenAI",
@@ -5312,7 +5312,11 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 29
+          "jobs": 31
+        },
+        {
+          "company": "Leidos",
+          "jobs": 22
         },
         {
           "company": "Stripe",
@@ -5329,15 +5333,11 @@
         {
           "company": "Pinterest",
           "jobs": 20
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 19
         }
       ],
-      "unique_companies": 257,
-      "avg_jobs_per_company": 5.6,
-      "timestamp": "2026-07-15T00:57:53.921814+00:00"
+      "unique_companies": 264,
+      "avg_jobs_per_company": 5.48,
+      "timestamp": "2026-07-15T04:01:03.592341+00:00"
     }
   ]
 }
