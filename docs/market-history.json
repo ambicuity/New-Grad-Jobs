@@ -1,68 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-07-14T23:30:50.603941+00:00",
+    "last_updated": "2026-07-15T00:57:53.922818+00:00",
     "total_snapshots": 89,
     "date_range": {
-      "start": "2026-04-15",
-      "end": "2026-07-14"
+      "start": "2026-04-16",
+      "end": "2026-07-15"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-04-15",
-      "total_jobs": 1018,
-      "categories": {},
-      "tiers": {
-        "unicorn": 485,
-        "other": 403,
-        "faang_plus": 130
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 174
-        },
-        {
-          "company": "Waymo",
-          "jobs": 53
-        },
-        {
-          "company": "Syms Strategic Group, LLC (SSG)",
-          "jobs": 28
-        },
-        {
-          "company": "ClickHouse",
-          "jobs": 27
-        },
-        {
-          "company": "NTT DATA",
-          "jobs": 22
-        },
-        {
-          "company": "Stripe",
-          "jobs": 21
-        },
-        {
-          "company": "Lyft",
-          "jobs": 20
-        },
-        {
-          "company": "Affirm",
-          "jobs": 20
-        },
-        {
-          "company": "Dropbox",
-          "jobs": 19
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 17
-        }
-      ],
-      "unique_companies": 199,
-      "avg_jobs_per_company": 5.12,
-      "timestamp": "2026-04-15T23:59:16.462446"
-    },
     {
       "date": "2026-04-16",
       "total_jobs": 982,
@@ -5329,6 +5274,70 @@
       "unique_companies": 269,
       "avg_jobs_per_company": 5.4,
       "timestamp": "2026-07-14T23:30:50.602986+00:00"
+    },
+    {
+      "date": "2026-07-15",
+      "total_jobs": 1440,
+      "categories": {
+        "data_ml": 152,
+        "software_engineering": 946,
+        "data_engineering": 25,
+        "infrastructure_sre": 172,
+        "other": 124,
+        "hardware": 14,
+        "quant_finance": 5,
+        "product_management": 2
+      },
+      "tiers": {
+        "unicorn": 681,
+        "other": 643,
+        "faang_plus": 116
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 227
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 195
+        },
+        {
+          "company": "Waymo",
+          "jobs": 42
+        },
+        {
+          "company": "OpenAI",
+          "jobs": 36
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 29
+        },
+        {
+          "company": "Stripe",
+          "jobs": 22
+        },
+        {
+          "company": "Affirm",
+          "jobs": 22
+        },
+        {
+          "company": "xAI",
+          "jobs": 20
+        },
+        {
+          "company": "Pinterest",
+          "jobs": 20
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 19
+        }
+      ],
+      "unique_companies": 257,
+      "avg_jobs_per_company": 5.6,
+      "timestamp": "2026-07-15T00:57:53.921814+00:00"
     }
   ]
 }
