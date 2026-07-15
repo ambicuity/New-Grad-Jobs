@@ -177,7 +177,7 @@ function SponsoredBy() {
         <text x="32" y="47" textAnchor="middle"
               fontFamily="Georgia, 'Times New Roman', serif" fontSize="44" fill="#ffffff">T</text>
       </svg>
-      <span style={{ fontWeight: 600, color: hover ? '#ff9d3d' : '#e8e8e8' }}>tailr</span>
+      <span style={{ fontWeight: 600, color: hover ? '#ff9d3d' : '#e8e8e8', transition: 'color 120ms ease' }}>tailr</span>
     </a>
   );
 }
