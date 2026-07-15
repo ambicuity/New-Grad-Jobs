@@ -104,3 +104,7 @@ junit.xml
 
 # Claude Code session state
 .claude/
+
+# Internal planning/design docs — not part of the deployed site or public repo.
+# (The rest of docs/ IS the GitHub Pages site and must stay tracked.)
+docs/superpowers/
