@@ -21,6 +21,16 @@
 
 ---
 
+## 💛 Sponsored by [Tailr](https://www.tailr.uk)
+
+<a href="https://www.tailr.uk">
+  <img src="docs/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
+</a>
+
+**[Tailr](https://www.tailr.uk) rewrites your résumé for each job posting and shows you the ATS match score** — so you stop getting auto-filtered by the same generic résumé. Free 10/day, no card required. This project is proudly sponsored by Tailr.
+
+---
+
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
 ## 📂 Browse <!-- COUNT:total -->1469<!-- /COUNT --> Jobs by Category
 
@@ -1186,6 +1196,19 @@ See [`docs/removed-companies.md`](docs/removed-companies.md) for the audit trail
 <br>
 <img src="https://codecov.io/github/ambicuity/New-Grad-Jobs/graphs/sunburst.svg?token=1D0TO5UL1T" alt="Codecov Sunburst Graph" />
 </details>
+
+---
+
+## 💖 Support This Project
+
+This project is **free and solo-maintained**. If it helps your job search, here's how to keep it running:
+
+- 💜 **[GitHub Sponsors](https://github.com/sponsors/ambicuity)** — recurring support
+- ☕ **[Buy Me a Coffee](https://buymeacoffee.com/ritesh.rana)** — one-off support
+- ⭐ **Star this repo** and share it with other new grads
+- 🤝 **[Contribute](CONTRIBUTING.md)** a missing job or a fix
+
+Our sponsor **[Tailr](https://www.tailr.uk)** helps cover the running costs.
 
 ---
 
