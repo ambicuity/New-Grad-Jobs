@@ -1,0 +1,39 @@
+name: Duplicate Issue Guardrail
+
+# Resolves #230 — flag near-duplicate issues on open/edit so maintainer triage
+# stays clean. Adds a `possible-duplicate` label and a heads-up comment; the
+# final decision stays manual (nothing is auto-closed).
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: duplicate-guardrail-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  detect-duplicates:
+    name: Detect possible duplicate issues
+    runs-on: ubuntu-latest
+    # Skip bot-authored issues (e.g. automated job updates) to avoid noise.
+    if: ${{ github.event.issue.pull_request == null && github.event.issue.user.type != 'Bot' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.11'
+
+      - name: Run duplicate detection
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python .github/scripts/detect_duplicate_issues.py

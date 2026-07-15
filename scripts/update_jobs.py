@@ -44,6 +44,11 @@ except ModuleNotFoundError:
     # Supports import-by-path checks that load scripts/update_jobs.py directly.
     from scripts.source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD, SourceCooldownTracker
 
+try:
+    from url_safety import filter_safe_jobs
+except ModuleNotFoundError:
+    from scripts.url_safety import filter_safe_jobs
+
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
 # are read from config.yml under 'worker_pools' during startup.
@@ -2199,10 +2204,21 @@ def has_track_signal(title: str, signals: List[str]) -> bool:
 
     return False
 
-def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> str:
+def normalize_date_string(
+    posted_at: Any,
+    reference_date: datetime | None = None,
+    *,
+    now_utc: datetime | None = None,
+) -> str:
     """
     Normalize human-readable date strings from JobSpy/LinkedIn/Indeed/Glassdoor
     to ISO format dates that date_parser can handle.
+
+    ``reference_date`` is the "current time" used to resolve relative phrases such
+    as "today", "yesterday", or "2 days ago". Injecting it makes the function
+    deterministic and eliminates flaky tests around midnight boundaries; it
+    defaults to ``datetime.now(timezone.utc)`` when omitted. ``now_utc`` is kept
+    as a backward-compatible keyword alias for existing call sites.
 
     Handles formats like:
     - "Posted Today" -> today's date
@@ -2229,9 +2245,10 @@ def normalize_date_string(posted_at: Any, now_utc: datetime | None = None) -> st
         return str(posted_at)
 
     posted_at_lower = posted_at.lower().strip()
-    if now_utc is None:
-        now_utc = datetime.now(timezone.utc)
-    now = now_utc.replace(tzinfo=None)
+    reference = reference_date if reference_date is not None else now_utc
+    if reference is None:
+        reference = datetime.now(timezone.utc)
+    now = reference.replace(tzinfo=None)
 
     # Handle "Posted Today" or "Today"
     if 'today' in posted_at_lower:
@@ -3083,13 +3100,19 @@ def _compute_display_metrics(
 def generate_health_json(jobs: List[Dict[str, Any]],
                          source_counts: Dict[str, int],
                          start_time: float,
-                         config: Dict[str, Any]) -> None:
+                         config: Dict[str, Any],
+                         url_blocked_count: int = 0) -> None:
     """Generate docs/health.json for monitoring and staleness detection.
 
     Status values:
       - ok: all sources returned jobs and total > 0
-      - degraded: at least one source returned 0 jobs
+      - degraded: at least one source returned 0 jobs, or the publish-time URL
+        safety gate blocked one or more jobs
       - failed: total job count is 0
+
+    ``url_blocked_count`` is the number of jobs dropped by the publish-time URL
+    safety gate (see scripts/url_safety.py); it is surfaced as telemetry so
+    monitoring can alert when unsafe links start appearing upstream.
     """
     health_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'health.json')
 
@@ -3098,7 +3121,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
 
     if total_jobs == 0:
         status = 'failed'
-    elif zero_sources:
+    elif zero_sources or url_blocked_count:
         status = 'degraded'
     else:
         status = 'ok'
@@ -3111,6 +3134,7 @@ def generate_health_json(jobs: List[Dict[str, Any]],
         'total_jobs': total_jobs,
         'source_counts': source_counts,
         'zero_sources': zero_sources,
+        'url_safety_blocked': url_blocked_count,
         'run_duration_seconds': round(time.time() - start_time, 1),
         **display_metrics,
     }
@@ -3392,6 +3416,16 @@ def main():
 
     enriched_jobs = deep_sanitize(enriched_jobs)
 
+    # ========== Publish-time URL safety gate ==========
+    # Final guard before anything is written to the public docs/jobs.json:
+    # drop any job whose URL is not a public http(s) link (non-http schemes,
+    # localhost/private/metadata targets, malformed hosts). See scripts/url_safety.py.
+    enriched_jobs, url_blocked_count, url_blocked_samples = filter_safe_jobs(enriched_jobs)
+    if url_blocked_count:
+        print(f"🛡️  URL safety: blocked {url_blocked_count} job(s) with unsafe/missing URLs")
+        for sample in url_blocked_samples:
+            print(f"      • {sample}")
+
     jobs_json = generate_jobs_json(enriched_jobs, config)
 
     # ========== Save Historical Market Data ==========
@@ -3414,7 +3448,8 @@ def main():
     generate_rss_feed(enriched_jobs)
 
     # ========== Generate Health Report ==========
-    generate_health_json(enriched_jobs, source_counts, start_time, config)
+    generate_health_json(enriched_jobs, source_counts, start_time, config,
+                         url_blocked_count=url_blocked_count)
 
     # ========== Sync README count tokens ==========
     # README.md remains a hand-edited document; only the digits inside
