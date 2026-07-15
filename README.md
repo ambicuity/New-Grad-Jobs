@@ -34,13 +34,21 @@
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
 ## 📂 Browse <!-- COUNT:total -->1458<!-- /COUNT --> Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->952<!-- /COUNT -->)
+💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->861<!-- /COUNT -->)
 
-🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->156<!-- /COUNT -->)
+🎨 [Frontend Engineering](#frontend-engineering) (<!-- COUNT:frontend -->9<!-- /COUNT -->)
+
+⚙️ [Backend Engineering](#backend-engineering) (<!-- COUNT:backend -->32<!-- /COUNT -->)
+
+📲 [Mobile Engineering](#mobile-engineering) (<!-- COUNT:mobile -->11<!-- /COUNT -->)
+
+🔒 [Security Engineering](#security-engineering) (<!-- COUNT:security -->85<!-- /COUNT -->)
+
+🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->149<!-- /COUNT -->)
 
 📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->25<!-- /COUNT -->)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->163<!-- /COUNT -->)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->122<!-- /COUNT -->)
 
 📱 [Product Management](#product-management) (<!-- COUNT:product_management -->3<!-- /COUNT -->)
 
@@ -48,7 +56,7 @@
 
 🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->14<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->141<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->143<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---
@@ -639,6 +647,106 @@
 | 🔥 Boeing | Systems Software Engineer | United States - Remote | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/United-States---Remote/Systems-Software-Engineer_JR2026496174-2) |
 | 🔥 Boeing | Entry-Level F-22 Software Engineer - Developer | USA - Berkeley, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Entry-Level-F-22-Software-Engineer---Developer_JR2025474697-1) |
 | 🔥 Boeing | Spacecraft Systems Engineer (Experienced) - Millennium Space Systems | USA - El Segundo, CA | 1 day ago | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Spacecraft-Systems-Engineer--Experienced----Millennium-Space-Systems_JR2026499500-2) |
+
+## 🎨 Frontend Engineering New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
+| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
+| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007) |
+| 🚀 Twilio | Frontend Software Engineer | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
+| Focus Camera | Junior Full Stack Web Developer | Brooklyn, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=758d36fedb1d720f) |
+| 🚀 Glean | Software Engineer, Frontend | Mountain View, CA | 2026-07-06 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4006733005) |
+| 🔥 Lyft | Software Engineer, Frontend - Lyft Urban Solutions | Toronto, Canada | 2026-07-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8594759002?gh_jid=8594759002) |
+| 🚀 Dropbox | Frontend Product Software Engineer, Design Systems | Remote - Mexico | 2026-07-02 | [Apply](https://jobs.dropbox.com/listing/7862086?gh_jid=7862086) |
+| 🚀 Airtable | Software Engineer, Product Frontend (8+ YOE) | San Francisco, CA; New York, NY | 2026-06-22 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8397228002) |
+
+## ⚙️ Backend Engineering New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| 🚀 SpaceX | Backend Software Engineer, GNC (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8398679002?gh_jid=8398679002) |
+| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Backend | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007) |
+| Sigtuple Technologies Private Limited | Software Engineer - Backend | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=a60ee9968aee1ef3) |
+| 🚀 Affirm | Software Engineer II, Backend (ML Training & Serving) | Remote Canada | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800446003) |
+| 🚀 Affirm | Software Engineer II, Backend (ML Training & Serving) | Remote US | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800444003) |
+| 🚀 Affirm | Software Engineer II, Backend (Furnishing Platform) | Remote Poland | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799348003) |
+| 🚀 Affirm | Software Engineer II , Backend, (Furnishing Platform) | Remote Spain | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799346003) |
+| 🔥 NVIDIA | Backend Compiler Engineer - New College Grad 2026 | Santa Clara, CA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=ce865a2b9ec813b7) |
+| 🔥 NVIDIA | Backend Compiler Engineer - New College Grad 2026 | US, CA, Santa Clara | 2 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Backend-Compiler-Engineer---New-College-Grad-2026_JR2021242) |
+| 🚀 Affirm | Software Engineer II, Backend (Test Infra) | Remote Canada | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7727322003) |
+| 🚀 Affirm | Software Engineer II, Backend (Test Infra) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7727320003) |
+| 🚀 Robinhood | Software Engineer, Backend | Menlo Park, CA | 5 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&gh_jid=7263592) |
+| 🚀 Vercel | Software Engineer, Backend | Remote - United States | 2026-07-07 | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5430088004) |
+| AppLovin | Backend Engineer II | Palo Alto, CA | 2026-07-06 | [Apply](https://boards.greenhouse.io/applovin/jobs/4375888006?gh_jid=4375888006) |
+| AppLovin | Backend Engineer, New Grad | Palo Alto, CA | 2026-07-06 | [Apply](https://boards.greenhouse.io/applovin/jobs/4451556006?gh_jid=4451556006) |
+| 🚀 Affirm | Software Engineer II, Backend (Reliability Platform) | Remote Canada | 2026-06-26 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7764836003) |
+| 🚀 Affirm | Software Engineer II, Backend (Reliability Platform) | Remote US | 2026-06-26 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7764834003) |
+| 🚀 Brex | Software Engineer II, Backend | Vancouver, British Columbia, Canada | 2026-06-26 | [Apply](https://www.brex.com/careers/8603327002?gh_jid=8603327002) |
+| 🚀 Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote Canada | 2026-06-24 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7777094003) |
+| 🚀 Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote US | 2026-06-24 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7766277003) |
+| 🚀 Airtable | Software Engineer, Product Backend (8+ YOE) | San Francisco, CA; New York, NY | 2026-06-23 | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8397618002) |
+| 🚀 Affirm | Software Engineer II, Backend (Capital Orchestration) | Remote US | 2026-06-18 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7749755003) |
+| 🚀 Affirm | Software Engineer II, Backend (PMI Integrations) | Remote Canada | 2026-06-18 | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7590373003) |
+| 🚀 Waymo | Software Engineer Backend - Simulation | Mountain View | 2026-06-16 | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
+| 🚀 Brex | Software Engineer II, Backend | New York, New York, United States | 2026-06-12 | [Apply](https://www.brex.com/careers/8536424002?gh_jid=8536424002) |
+| 🚀 Pinterest | Software Engineer II, Backend | San Francisco, CA, US; Seattle, WA, US | 2026-06-12 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=4813946) |
+| Cockroach Labs | Software Engineer (Backend), GTM Tooling | New York, NY | 2026-06-10 | [Apply](https://www.cockroachlabs.com/careers/job/?gh_jid=7874104) |
+| 🚀 Brex | Software Engineer II, Backend | San Francisco, California, United States | 2026-06-10 | [Apply](https://www.brex.com/careers/8459783002?gh_jid=8459783002) |
+| 🚀 Pinterest | Software Engineer I, Backend | Seattle, WA, US; San Francisco, CA, US | 2026-06-09 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6816337) |
+| 🚀 Pinterest | Software Engineer II, Backend, tvScientific | San Francisco, CA, US; Remote, US | 2026-06-04 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7782552) |
+| 🚀 Pinterest | Software Engineer II, Backend | Toronto, ON, CA | 2026-06-04 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=5132899) |
+| 🚀 Glean | Software Engineer, Backend | Bangalore, India | 2026-05-27 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4006731005) |
+
+## 📲 Mobile Engineering New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| Anduril Industries | Software Engineer - Mobile, Android | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007) |
+| Booz Allen Hamilton | Android CNO Software Developer | Annapolis Junction, MD | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Annapolis-Junction-MD/Android-CNO-Software-Developer_R0237796) |
+| 🚀 Duolingo | Software Engineer II, Android | Pittsburgh, PA | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002) |
+| 🚀 Duolingo | Software Engineer II, Android | New York, NY | 5 days ago | [Apply](https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002) |
+| 🚀 Chime | Mobile Software Engineer, Lending | San Francisco, CA, USA | 5 days ago | [Apply](https://boards.greenhouse.io/chime/jobs/8535338002?gh_jid=8535338002) |
+| Rocket | iOS Mobile Software Developer I | Seattle, WA, US | 2026-07-08 | [Apply](https://www.indeed.com/viewjob?jk=15a2c2864759e26a) |
+| 🔥 Airbnb | Android Software Engineer, Quality Platform | Remote, Brazil | 2026-06-25 | [Apply](https://careers.airbnb.com/positions/7744247?gh_jid=7744247) |
+| StockX | Software Engineer-iOS | Bangalore, India | 2026-06-24 | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8601983002) |
+| StockX | Software Engineer - iOS | Bangalore, India | 2026-06-24 | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8603916002) |
+| 🚀 Pinterest | Software Engineer, iOS | Toronto, ON, CA | 2026-06-15 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6922682) |
+| 🚀 Pinterest | Software Engineer II, Android | Toronto, ON, CA | 2026-06-10 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7987854) |
+
+## 🔒 Security Engineering New Grad Roles
+
+[Back to top](#-2026-new-grad-positions)
+
+| Company | Role | Location | Posted | Apply |
+|---------|------|----------|--------|-------|
+| xAI | Application Security Engineer | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
+| xAI | Infrastructure Security Engineer | Austin, TX; New York, NY; Palo Alto, CA; Washington, D.C. | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5090998007) |
+| xAI | Security Engineer - Azure Government | Palo Alto, CA; Washington, D.C. | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5050657007) |
+| xAI | Security Engineer - Governance Risk Compliance | New York, NY; Palo Alto, CA; Washington, D.C. | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5007261007) |
+| 🚀 SpaceX | Embedded Security Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8624836002?gh_jid=8624836002) |
+| 🚀 SpaceX | Embedded Security Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8543670002?gh_jid=8543670002) |
+| 🚀 SpaceX | Embedded Security Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8577410002?gh_jid=8577410002) |
+| 🚀 SpaceX | Product Security Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8543671002?gh_jid=8543671002) |
+| 🚀 SpaceX | Product Security Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8577411002?gh_jid=8577411002) |
+| 🚀 SpaceX | Product Security Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8624835002?gh_jid=8624835002) |
+| 🚀 SpaceX | Product Security Engineer (Starshield) | Washington, DC | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8492058002?gh_jid=8492058002) |
+| 🚀 SpaceX | Security Engineer | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8567571002?gh_jid=8567571002) |
+| 🚀 SpaceX | Security Engineer | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8567522002?gh_jid=8567522002) |
+| 🚀 SpaceX | Security Engineer (Blue Team) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8611050002?gh_jid=8611050002) |
+| 🚀 SpaceX | Security Engineer (Blue Team) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8611223002?gh_jid=8611223002) |
+| 🚀 SpaceX | Security Engineer (Embedded & Networking) | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8593385002?gh_jid=8593385002) |
+| 🚀 SpaceX | Security Engineer (Embedded & Networking) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8593384002?gh_jid=8593384002) |
+| 🚀 SpaceX | Security Engineer (Embedded OT) | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8593389002?gh_jid=8593389002) |
+| 🚀 SpaceX | Security Engineer (Embedded OT) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8593388002?gh_jid=8593388002) |
+| 🚀 StubHub | Software Engineer II - Product Security | Los Angeles, California, United States | Today | [Apply](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4903899101) |
 
 ## 🤖 Data Science & ML New Grad Roles
 

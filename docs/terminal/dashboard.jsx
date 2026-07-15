@@ -182,7 +182,7 @@ function DashboardDirection() {
         {/* ─ Left rail: filters as compact chip list ─ */}
         <div style={{ borderRight: `1px solid ${BBG.rule2}`, overflow: 'auto' }}>
           <ChipGroup title="ROLE">
-            {['SWE','ML','DATA','INFRA','PM','QUANT','HW','OTHER'].map(t => (
+            {['SWE','FE','BE','MOBILE','SEC','ML','DATA','INFRA','PM','QUANT','HW','OTHER'].map(t => (
               <Chip key={t} on={filters.type.has(t)} onClick={() => toggleSet('type', t)} label={TYPE_LABEL[t]} />
             ))}
           </ChipGroup>

@@ -38,14 +38,26 @@ class TestCategorizeJob:
 
     def test_frontend_engineer(self):
         result = categorize_job("Frontend Engineer - React")
-        assert result["id"] == "software_engineering"
+        assert result["id"] == "frontend"
+        assert result["name"] == "Frontend Engineering"
 
     def test_backend_engineer(self):
         result = categorize_job("Backend Engineer (Python)")
-        assert result["id"] == "software_engineering"
+        assert result["id"] == "backend"
 
     def test_backend_go_engineer(self):
         result = categorize_job("Backend Engineer (Go)")
+        assert result["id"] == "backend"
+
+    def test_ios_engineer_is_mobile(self):
+        result = categorize_job("iOS Engineer, New Grad")
+        assert result["id"] == "mobile"
+
+    def test_generic_swe_title_stays_software_engineering(self):
+        # A description mentioning "frontend" must NOT reclassify a general SWE
+        # role — specialty tracks are matched on the title only.
+        result = categorize_job("Software Engineer, New Grad",
+                                "You will work closely with our frontend team.")
         assert result["id"] == "software_engineering"
 
     def test_ml_engineer(self):
@@ -344,9 +356,16 @@ class TestDetectSponsorshipFlags:
 
 def test_categorize_cybersecurity_engineer():
     result = categorize_job("Cybersecurity Engineer")
-    assert result["id"] == "infrastructure_sre"
+    assert result["id"] == "security"
 
 
 def test_categorize_infosec_analyst():
     result = categorize_job("Infosec Analyst")
+    assert result["id"] == "security"
+
+
+def test_network_security_stays_infrastructure():
+    # Network-focused security remains infra (network title special-case runs
+    # before the security keyword match).
+    result = categorize_job("Network Security Engineer")
     assert result["id"] == "infrastructure_sre"

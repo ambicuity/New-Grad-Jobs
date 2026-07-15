@@ -406,15 +406,54 @@ STARTUPS = {
 # Note on matching: Keywords are matched using word boundaries (exact phrase matching using regex '\b').
 # If no keyword matches naturally, the job defaults to the 'other' category block.
 CATEGORY_PATTERNS = {
+    # Specialty engineering tracks. These are matched against the job TITLE only
+    # (see TITLE_DRIVEN_CATEGORIES) so a backend role whose description merely
+    # mentions "frontend" is not misfiled, and they are ordered before the broad
+    # 'software_engineering' bucket so a titled specialist wins over the general
+    # match.
+    'security': {
+        'name': 'Security Engineering',
+        'emoji': '🔒',
+        'keywords': [
+            'security engineer', 'security analyst', 'application security',
+            'appsec', 'infosec', 'cybersecurity', 'cyber security',
+            'cloud security', 'product security', 'devsecops',
+            'penetration tester', 'security researcher'
+        ]
+    },
+    'mobile': {
+        'name': 'Mobile Engineering',
+        'emoji': '📲',
+        'keywords': [
+            'mobile engineer', 'mobile developer', 'mobile software engineer',
+            'mobile application', 'ios engineer', 'ios developer',
+            'android engineer', 'android developer', 'react native',
+            'ios', 'android'
+        ]
+    },
+    'frontend': {
+        'name': 'Frontend Engineering',
+        'emoji': '🎨',
+        'keywords': [
+            'frontend', 'front-end', 'front end', 'ui engineer',
+            'ui developer', 'web developer'
+        ]
+    },
+    'backend': {
+        'name': 'Backend Engineering',
+        'emoji': '⚙️',
+        'keywords': [
+            'backend', 'back-end', 'back end', 'server-side', 'server side',
+            'api engineer'
+        ]
+    },
     'software_engineering': {
         'name': 'Software Engineering',
         'emoji': '💻',
         'keywords': [
             'software engineer', 'software developer', 'swe', 'full stack',
-            'fullstack', 'frontend', 'front-end', 'backend', 'back-end',
-            'web developer', 'mobile developer', 'ios developer', 'android developer',
-            'application developer', 'systems engineer', 'platform engineer',
-            'solutions engineer', 'integration engineer', 'api engineer',
+            'fullstack', 'application developer', 'systems engineer',
+            'platform engineer', 'solutions engineer', 'integration engineer',
             'developer advocate', 'devrel'
         ]
     },
@@ -439,11 +478,11 @@ CATEGORY_PATTERNS = {
         'name': 'Infrastructure & SRE',
         'emoji': '🏗️',
         'keywords': [
-            'sre', 'site reliability', 'devops', 'infrastructure', 'platform', 'cybersecurity', 'infosec',
+            'sre', 'site reliability', 'devops', 'infrastructure', 'platform',
             'cloud engineer', 'systems administrator', 'network engineer',
             'network automation', 'noc', 'network operations center', 'network operations',
             'network performance', 'netops', 'network ops', 'noc engineer',
-            'security engineer', 'devsecops', 'reliability engineer'
+            'reliability engineer'
         ]
     },
     'product_management': {
@@ -477,6 +516,11 @@ CATEGORY_PATTERNS = {
         'keywords': []
     }
 }
+
+# Categories matched against the job title only (not the description) to keep
+# fine-grained specialty buckets from being polluted by incidental mentions of
+# an adjacent stack in a long job description.
+TITLE_DRIVEN_CATEGORIES = frozenset({'security', 'mobile', 'frontend', 'backend'})
 
 # Sponsorship/visa keywords
 NO_SPONSORSHIP_KEYWORDS = [
@@ -657,12 +701,17 @@ def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
     for category_id, category_info in CATEGORY_PATTERNS.items():
         if category_id == 'other':
             continue
+        # Specialty tracks (frontend/backend/mobile/security) match on the title
+        # only: a title is an unambiguous signal, whereas descriptions routinely
+        # mention adjacent stacks ("partner with the frontend team") and would
+        # cross-contaminate these fine-grained buckets.
+        haystack = title_lower if category_id in TITLE_DRIVEN_CATEGORIES else combined
         for keyword in category_info['keywords']:
             if category_id == 'infrastructure_sre' and keyword in NETWORK_INFRASTRUCTURE_KEYWORDS:
                 continue
             # Use word boundaries for exact phrase matching, safely escape the keyword
             pattern = r'\b' + re.escape(keyword) + r'\b'
-            if re.search(pattern, combined):
+            if re.search(pattern, haystack):
                 return {
                     'id': category_id,
                     'name': category_info['name'],

@@ -71,10 +71,15 @@ def test_terminal_type_codes_are_consistent_across_map_labels_and_chips():
     )
 
 
-def test_no_legacy_title_derived_types_remain():
-    """The removed title-regex types must not linger as filter chips."""
+def test_specialty_categories_are_backed_by_the_scraper():
+    """Frontend/Backend/Mobile/Security are now real scraper categories, so the
+    site's specialty filter chips must be present AND backed by CATEGORY_PATTERNS
+    (i.e. not client-only title-regex types like the removed scheme)."""
+    for specialty in ("frontend", "backend", "mobile", "security"):
+        assert specialty in CANONICAL_IDS, f"{specialty} missing from CATEGORY_PATTERNS"
+
     dashboard = _read("docs", "terminal", "dashboard.jsx")
     chip_block = re.search(r"\[((?:'[A-Z]+',?\s*)+)\]\.map\(t =>", dashboard).group(1)
     chip_codes = set(re.findall(r"'([A-Z]+)'", chip_block))
-    for legacy in ("FE", "BE", "SEC", "MOBILE"):
-        assert legacy not in chip_codes, f"legacy title-derived type {legacy!r} still present"
+    for code in ("FE", "BE", "MOBILE", "SEC"):
+        assert code in chip_codes, f"specialty filter chip {code!r} missing"

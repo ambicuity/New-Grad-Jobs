@@ -9,7 +9,7 @@
 // Canonical job categories — the single source of truth shared with
 // scripts/update_jobs.py (CATEGORY_PATTERNS), docs/jobs.json (meta.categories),
 // and the README. Keep these ids/order in step with CATEGORY_TYPE below.
-const TYPE_LABEL = { SWE:'swe', ML:'ml', DATA:'data', INFRA:'infra', PM:'product', QUANT:'quant', HW:'hardware', OTHER:'other' };
+const TYPE_LABEL = { SWE:'swe', FE:'frontend', BE:'backend', MOBILE:'mobile', SEC:'security', ML:'ml', DATA:'data', INFRA:'infra', PM:'product', QUANT:'quant', HW:'hardware', OTHER:'other' };
 const SIZE_LABEL = { S:'<50', M:'50–500', L:'500–5k', XL:'5k+' };
 const RMT_LABEL  = { remote:'remote', hybrid:'hybrid', onsite:'onsite' };
 
@@ -40,6 +40,10 @@ function deadlineHot(dl) { return daysLeft(dl) <= 14; }
 // re-deriving a separate taxonomy from job titles.
 const CATEGORY_TYPE = {
   software_engineering: 'SWE',
+  frontend:             'FE',
+  backend:              'BE',
+  mobile:               'MOBILE',
+  security:             'SEC',
   data_ml:              'ML',
   data_engineering:     'DATA',
   infrastructure_sre:   'INFRA',
