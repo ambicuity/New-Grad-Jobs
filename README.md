@@ -21,20 +21,30 @@
 
 ---
 
+## 💛 Sponsored by [Tailr](https://www.tailr.uk)
+
+<a href="https://www.tailr.uk">
+  <img src="docs/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
+</a>
+
+**[Tailr](https://www.tailr.uk) rewrites your résumé for each job posting and shows you the ATS match score** — so you stop getting auto-filtered by the same generic résumé. Free 10/day, no card required. This project is proudly sponsored by Tailr.
+
+---
+
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## 📂 Browse <!-- COUNT:total -->1304<!-- /COUNT --> Jobs by Category
+## 📂 Browse <!-- COUNT:total -->1462<!-- /COUNT --> Jobs by Category
 
-💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->847<!-- /COUNT -->)
+💻 [Software Engineering](#software-engineering) (<!-- COUNT:software_engineering -->955<!-- /COUNT -->)
 
-🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->144<!-- /COUNT -->)
+🤖 [Data Science & ML](#data-science--ml) (<!-- COUNT:data_ml -->156<!-- /COUNT -->)
 
-📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->25<!-- /COUNT -->)
+📊 [Data Engineering](#data-engineering) (<!-- COUNT:data_engineering -->26<!-- /COUNT -->)
 
-🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->163<!-- /COUNT -->)
+🏗️ [Infrastructure & SRE](#infrastructure--sre) (<!-- COUNT:infrastructure_sre -->164<!-- /COUNT -->)
 
-🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->13<!-- /COUNT -->)
+🔧 [Hardware Engineering](#hardware-engineering) (<!-- COUNT:hardware -->14<!-- /COUNT -->)
 
-💼 [Other](#other) (<!-- COUNT:other -->101<!-- /COUNT -->)
+💼 [Other](#other) (<!-- COUNT:other -->140<!-- /COUNT -->)
 <!-- COUNTS:END -->
 
 ---
@@ -1189,6 +1199,19 @@ See [`docs/removed-companies.md`](docs/removed-companies.md) for the audit trail
 
 ---
 
+## 💖 Support This Project
+
+This project is **free and solo-maintained**. If it helps your job search, here's how to keep it running:
+
+- 💜 **[GitHub Sponsors](https://github.com/sponsors/ambicuity)** — recurring support
+- ☕ **[Buy Me a Coffee](https://buymeacoffee.com/ritesh.rana)** — one-off support
+- ⭐ **Star this repo** and share it with other new grads
+- 🤝 **[Contribute](CONTRIBUTING.md)** a missing job or a fix
+
+Our sponsor **[Tailr](https://www.tailr.uk)** helps cover the running costs.
+
+---
+
 ## 🤝 Contributing
 
 Found a job we're missing? Want to report a closed position?
@@ -1201,4 +1224,4 @@ Found a job we're missing? Want to report a closed position?
 
 ⭐ **Star this repo** to stay updated with the latest new grad opportunities!
 
-*Last updated: 2026-06-17 10:07:02 UTC*
+*Last updated: 2026-07-15 20:08:53 UTC*

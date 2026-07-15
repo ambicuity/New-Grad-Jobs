@@ -52,6 +52,7 @@ create_label "good first issue" "7057ff" "Good for newcomers — welcoming entry
 create_label "good first issue candidate" "e4e669" "Potential GFI — needs maintainer review before assignment"
 create_label "plan-me"         "0075ca"  "Triggers CodeRabbit to generate an implementation plan"
 create_label "duplicate"       "cfd3d7"  "This issue or PR already exists"
+create_label "possible-duplicate" "cfd3d7"  "This issue may be a duplicate — needs confirmation"
 create_label "wontfix"         "ffffff"  "This will not be worked on"
 create_label "merge-conflict"  "e11d48"  "This PR has merge conflicts that must be resolved"
 create_label "automated pr"    "0e8a16"  "PR created by an automation (Dependabot, Actions bot)"
