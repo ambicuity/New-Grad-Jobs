@@ -68,9 +68,7 @@ def _cell(value: str) -> str:
 
 
 def _company(job: Dict[str, Any]) -> str:
-    emoji = (job.get("company_tier") or {}).get("emoji", "") or ""
-    name = _cell(job.get("company", "—"))
-    return f"{emoji} {name}".strip()
+    return _cell(job.get("company", "—"))
 
 
 def _sort_key(job: Dict[str, Any]):
@@ -118,7 +116,7 @@ def render_category_listings(data: Dict[str, Any]) -> str:
     parts: List[str] = [
         START_MARKER,
         "",
-        f"> 📋 **Live listings** — the {TOP_N} most recently posted roles per "
+        f"> **Live listings** — the {TOP_N} most recently posted roles per "
         f"category, refreshed every 5 minutes. Browse and filter all "
         f"**{total:,}** live roles on the **[live job board]({LIVE_BOARD_URL})**.",
         "",
@@ -127,20 +125,22 @@ def render_category_listings(data: Dict[str, Any]) -> str:
     for cat in categories:
         cid = cat.get("id")
         name = cat.get("name", cid)
-        emoji = cat.get("emoji", "")
         count = cat.get("count", 0)
         rows = _recent_open_jobs(jobs, cid, TOP_N)
 
-        parts.append(f"## {emoji} {name} New Grad Roles".strip())
+        # Heading is the plain category name so its GitHub anchor matches the
+        # "Browse by Category" nav links (e.g. "## Software Engineering" ->
+        # #software-engineering).
+        parts.append(f"## {name}")
         parts.append("")
-        parts.append("[Back to top](#-2026-new-grad-positions)")
+        parts.append("[Back to top](#2026-new-grad-positions)")
         parts.append("")
         if rows:
             parts.append(_render_table(rows))
             parts.append("")
             if count > len(rows):
                 parts.append(
-                    f"**[→ View all {count:,} {name} roles on the live board]"
+                    f"**[View all {count:,} {name} roles on the live board]"
                     f"({LIVE_BOARD_URL})**"
                 )
                 parts.append("")
