@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T06:27:24.652435+00:00",
+    "last_updated": "2026-07-15T08:45:46.712389+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-16",
@@ -5277,21 +5277,21 @@
     },
     {
       "date": "2026-07-15",
-      "total_jobs": 1425,
+      "total_jobs": 1422,
       "categories": {
-        "data_ml": 152,
-        "software_engineering": 946,
-        "data_engineering": 24,
-        "infrastructure_sre": 171,
-        "hardware": 16,
+        "data_ml": 151,
+        "software_engineering": 947,
+        "data_engineering": 23,
+        "infrastructure_sre": 166,
         "other": 108,
+        "hardware": 19,
         "product_management": 3,
         "quant_finance": 5
       },
       "tiers": {
+        "other": 621,
         "unicorn": 683,
-        "faang_plus": 117,
-        "other": 625
+        "faang_plus": 118
       },
       "top_companies": [
         {
@@ -5312,14 +5312,14 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 30
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
+          "jobs": 29
         },
         {
           "company": "Affirm",
+          "jobs": 22
+        },
+        {
+          "company": "Stripe",
           "jobs": 22
         },
         {
@@ -5332,12 +5332,12 @@
         },
         {
           "company": "Leidos",
-          "jobs": 19
+          "jobs": 18
         }
       ],
-      "unique_companies": 258,
-      "avg_jobs_per_company": 5.52,
-      "timestamp": "2026-07-15T06:27:24.651246+00:00"
+      "unique_companies": 253,
+      "avg_jobs_per_company": 5.62,
+      "timestamp": "2026-07-15T08:45:46.711204+00:00"
     }
   ]
 }
