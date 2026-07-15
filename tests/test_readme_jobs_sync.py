@@ -41,8 +41,10 @@ def test_block_has_markers_and_headings():
     block = render_category_listings(data)
     assert block.startswith(START_MARKER)
     assert block.rstrip().endswith(END_MARKER)
-    assert "## 💻 Software Engineering New Grad Roles" in block
-    assert "[Back to top](#-2026-new-grad-positions)" in block
+    # Plain heading (no emoji / no suffix) so the anchor matches the nav.
+    assert "## Software Engineering\n" in block
+    assert "💻" not in block  # no emoji in the generated block
+    assert "[Back to top](#2026-new-grad-positions)" in block
     assert "| Company | Role | Location | Posted | Apply |" in block
 
 
@@ -97,7 +99,7 @@ def test_presentation_order_software_engineering_first():
     ]
     jobs = [_job("security", "S", "2026-07-10"), _job("software_engineering", "E", "2026-07-10")]
     block = render_category_listings(_data(jobs, cats))
-    assert block.index("Software Engineering New Grad") < block.index("Security Engineering New Grad")
+    assert block.index("## Software Engineering") < block.index("## Security Engineering")
 
 
 def test_sync_rewrites_only_the_marked_block(tmp_path):
