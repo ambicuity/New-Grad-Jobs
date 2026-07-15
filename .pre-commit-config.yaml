@@ -4,9 +4,9 @@ repos:
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
-        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/index\.html)$'
+        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/predictions\.json|docs/index\.html)$'
       - id: end-of-file-fixer
-        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/index\.html)$'
+        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/predictions\.json|docs/index\.html)$'
       - id: check-yaml
         args: ['--unsafe']   # Allow custom YAML tags in config.yml
       - id: check-json
