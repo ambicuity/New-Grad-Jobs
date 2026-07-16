@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 21:20:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 22:31:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer III  at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8623280002</link>
+      <description>New grad role at ZoomInfo in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:44:57 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623280002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Platform at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4594879005</link>
+      <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:41:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4594879005</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Platform at Discord</title>
       <link>https://job-boards.greenhouse.io/discord/jobs/8396927002</link>
@@ -253,13 +267,6 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
     </item>
     <item>
-      <title>Software Engineer, User Sharing at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7767204?gh_jid=7767204</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:36:53 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7767204?gh_jid=7767204</guid>
-    </item>
-    <item>
       <title>Data Scientist, Marketing at Scopely</title>
       <link>https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008</link>
       <description>New grad role at Scopely in US - San Francisco, United States; US - Sunnyvale, United States. Category: Data Science &amp; ML</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 16:50:30 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4932828007?gh_jid=4932828007</guid>
-    </item>
-    <item>
-      <title>Data Analyst I at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8623612002</link>
-      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Jul 2026 16:48:33 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623612002</guid>
     </item>
   </channel>
 </rss>

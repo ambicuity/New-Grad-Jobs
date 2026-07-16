@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-16T21:20:33.580993+00:00",
+    "last_updated": "2026-07-16T22:31:14.604496+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-17",
@@ -5290,25 +5290,25 @@
     },
     {
       "date": "2026-07-16",
-      "total_jobs": 1466,
+      "total_jobs": 1468,
       "categories": {
-        "software_engineering": 874,
-        "infrastructure_sre": 116,
-        "data_ml": 136,
-        "security": 82,
+        "software_engineering": 871,
+        "infrastructure_sre": 117,
+        "data_ml": 134,
+        "security": 86,
         "backend": 33,
         "data_engineering": 28,
         "product_management": 3,
         "mobile": 10,
-        "other": 156,
+        "other": 158,
         "frontend": 9,
         "hardware": 15,
         "quant_finance": 4
       },
       "tiers": {
+        "other": 619,
         "unicorn": 685,
-        "other": 621,
-        "faang_plus": 160
+        "faang_plus": 164
       },
       "top_companies": [
         {
@@ -5325,36 +5325,36 @@
         },
         {
           "company": "Boeing",
-          "jobs": 39
+          "jobs": 40
         },
         {
           "company": "OpenAI",
           "jobs": 38
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 32
+          "company": "Northrop Grumman",
+          "jobs": 33
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 31
+          "company": "Booz Allen Hamilton",
+          "jobs": 30
         },
         {
           "company": "xAI",
           "jobs": 22
         },
         {
-          "company": "Accenture",
-          "jobs": 22
+          "company": "Affirm",
+          "jobs": 21
         },
         {
-          "company": "Affirm",
+          "company": "Pinterest",
           "jobs": 21
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.32,
-      "timestamp": "2026-07-16T21:20:33.580016+00:00"
+      "unique_companies": 239,
+      "avg_jobs_per_company": 6.14,
+      "timestamp": "2026-07-16T22:31:14.603730+00:00"
     }
   ]
 }
