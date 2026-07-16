@@ -5,28 +5,56 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 19:07:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 20:13:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Product Security Engineer at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8533547002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Security Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 20:01:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8533547002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ads Platform at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 19:56:58 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend at Duolingo</title>
+      <link>https://careers.duolingo.com/jobs/8637306002?gh_jid=8637306002</link>
+      <description>New grad role at Duolingo in New York, NY. Category: Backend Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 19:40:54 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8637306002?gh_jid=8637306002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend at Duolingo</title>
+      <link>https://careers.duolingo.com/jobs/8637300002?gh_jid=8637300002</link>
+      <description>New grad role at Duolingo in Pittsburgh, PA. Category: Backend Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 19:40:53 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8637300002?gh_jid=8637300002</guid>
+    </item>
+    <item>
+      <title>SDK Software Engineer, AI at LaunchDarkly</title>
+      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7647797003</link>
+      <description>New grad role at LaunchDarkly in Remote - US. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 19:09:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7647797003</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer at LaunchDarkly</title>
+      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003</link>
+      <description>New grad role at LaunchDarkly in Remote - US West. Category: Security Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 19:08:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003</guid>
+    </item>
     <item>
       <title>Systems Engineer (TS/SCI w/ Poly) at SIXGEN</title>
       <link>https://job-boards.greenhouse.io/sixgeninc/jobs/5124502008</link>
       <description>New grad role at SIXGEN in Columbia, MD. Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 19:02:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/sixgeninc/jobs/5124502008</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer at LaunchDarkly</title>
-      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003</link>
-      <description>New grad role at LaunchDarkly in Remote - US West. Category: Security Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:55:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003</guid>
-    </item>
-    <item>
-      <title>SDK Software Engineer, AI at LaunchDarkly</title>
-      <link>https://job-boards.greenhouse.io/launchdarkly/jobs/7647797003</link>
-      <description>New grad role at LaunchDarkly in Remote - US. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:55:52 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/launchdarkly/jobs/7647797003</guid>
     </item>
     <item>
       <title>Site Reliability Engineer 3 at MongoDB</title>
@@ -37,17 +65,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -328,34 +356,6 @@
       <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
-    </item>
-    <item>
-      <title>Network Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Azure Government at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5050657007</link>
-      <description>New grad role at xAI in Palo Alto, CA; Washington, D.C.. Category: Security Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5050657007</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Governance Risk Compliance at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5007261007</link>
-      <description>New grad role at xAI in New York, NY; Palo Alto, CA; Washington, D.C.. Category: Security Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5007261007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ads Product  at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5152408007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5152408007</guid>
     </item>
   </channel>
 </rss>
