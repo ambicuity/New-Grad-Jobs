@@ -36,18 +36,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->834<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->832<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->11<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->85<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->84<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->146<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->124<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->26<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->122<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->20<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->146<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->19<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->151<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -62,18 +62,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Abnormal Security | Software Engineer II - Data Access Layer | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7694596003?gh_jid=7694596003) |
 | Anduril Industries | Embedded Software Engineer | Lexington, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5184786007?gh_jid=5184786007) |
 | Anduril Industries | Production Software Engineer | Lexington, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5184036007?gh_jid=5184036007) |
+| Anduril Industries | Security Software Engineer - Endpoint Security | Ashville, Ohio, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007) |
+| Anduril Industries | Security Software Engineer - Endpoint Security | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007) |
+| Anduril Industries | Security Software Engineer - Endpoint Security | Atlanta, Georgia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007) |
 | Anduril Industries | Security Software Engineer - Endpoint Security | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007) |
 | Anduril Industries | Security Software Engineer - Endpoint Security | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Atlanta, Georgia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Ashville, Ohio, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007) |
-| Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007) |
 
-**[View all 834 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 832 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -84,8 +84,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | — | FRONT END DEVELOPER I | Jacksonville, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=021392556d042708) |
 | — | FRONT END DEVELOPER II | Jacksonville, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e52f829c892eae83) |
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
-| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007) |
+| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
 | Twilio | Frontend Software Engineer | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
 | Focus Camera | Junior Full Stack Web Developer | Brooklyn, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=758d36fedb1d720f) |
 | Glean | Software Engineer, Frontend | Mountain View, CA | 2026-07-06 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4006733005) |
@@ -105,8 +105,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Sigtuple Technologies Private Limited | Software Engineer - Backend | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=a60ee9968aee1ef3) |
 | Affirm | Software Engineer II, Backend (ML Training & Serving) | Remote Canada | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800446003) |
 | Affirm | Software Engineer II, Backend (ML Training & Serving) | Remote US | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800444003) |
-| Affirm | Software Engineer II, Backend (Furnishing Platform) | Remote Poland | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799348003) |
-| Affirm | Software Engineer II , Backend, (Furnishing Platform) | Remote Spain | 2 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799346003) |
+| Affirm | Software Engineer II, Backend (Furnishing Platform) | Remote Poland | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799348003) |
+| Affirm | Software Engineer II , Backend, (Furnishing Platform) | Remote Spain | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799346003) |
 | NVIDIA | Backend Compiler Engineer - New College Grad 2026 | Santa Clara, CA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=ce865a2b9ec813b7) |
 | NVIDIA | Backend Compiler Engineer - New College Grad 2026 | US, CA, Santa Clara | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Backend-Compiler-Engineer---New-College-Grad-2026_JR2021242) |
 | Affirm | Software Engineer II, Backend (Test Infra) | Remote Canada | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7727322003) |
@@ -144,9 +144,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Embedded Security Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8577410002?gh_jid=8577410002) |
 | SpaceX | Embedded Security Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8543670002?gh_jid=8543670002) |
 | SpaceX | Embedded Security Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8624836002?gh_jid=8624836002) |
-| SpaceX | Product Security Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8624835002?gh_jid=8624835002) |
+| SpaceX | Product Security Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8543671002?gh_jid=8543671002) |
 
-**[View all 85 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 84 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -154,11 +154,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Roblox | [2026] Data Scientist, Social | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | Abnormal Security | Machine Learning Engineer II | Remote - USA | Today | [Apply](https://abnormal.ai/careers/jobs/7612697003?gh_jid=7612697003) |
-| Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Bedrock Foundry | Junior Python AI Developer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=8657749e28cd25b0) |
 | Mastercard | Data Scientist I | Gurgaon, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-I_R-278127) |
 | Greenhouse | Data Scientist | Ontario | Today | [Apply](https://job-boards.greenhouse.io/greenhouse/jobs/8017323?gh_jid=8017323) |
@@ -173,6 +173,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Shyena Tech Yarns Pvt Ltd | Data Engineer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=80584c1e324619da) |
 | Precision Medicine Group | Client Services Business Analyst I - Healthcare Data | Indianapolis, IN, USA | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5797573004) |
 | Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
 | Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
@@ -182,9 +183,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 | SingleStore | Site Reliability Engineer | Seattle | Today | [Apply](https://job-boards.greenhouse.io/singlestore/jobs/7432205) |
 | SingleStore | Site Reliability Engineer | India | Today | [Apply](https://job-boards.greenhouse.io/singlestore/jobs/7533846) |
-| HP | Supply Chain - Data Engineer | Bengaluru, Karnātaka, India | 1 day ago | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karntaka-India/Data-Engineer-3_3160231-2) |
 
-**[View all 25 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 26 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -203,7 +203,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | xAI | Network Engineer | Memphis, TN | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4870731007) |
 | xAI | Network Engineer - ML Infrastructure (High-Speed Interconnects) | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5043570007) |
 
-**[View all 124 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 122 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -232,18 +232,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Bedrock Foundry | Junior Mechanical Engineer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=7cb127052c9fa196) |
 | Bedrock Foundry | Junior Robotics Engineer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ee325979c43ea3b4) |
+| Bedrock Foundry | Junior Mechanical Engineer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=7cb127052c9fa196) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
 | SpaceX | New Graduate Engineer, Electrical (Starshield) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starshield) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8493166002?gh_jid=8493166002) |
+| SpaceX | Physical Design Engineer II (Silicon Engineering) | Irvine, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Austin, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Sunnyvale, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002) |
-| SpaceX | Physical Design Engineer II (Silicon Engineering) | Irvine, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002) |
 | Cenovus Energy | New Grad, Electrical Engineer-in-Training, June 2027 (Calgary) | Calgary, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=d738807045eb8b1e) |
-| ABN Infotech Solutions | Project Engineer / Technical Support Trainee | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=917d2304c00a5646) |
+| Delta Screens | Entry-Level Mechanical Engineer (Delta Screen) | Houston, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=416874934a9b45ee) |
 
-**[View all 20 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 19 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -251,18 +251,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Virtualyyst | Junior BRE Developer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9339d989819ec6df) |
 | GNB TECH SOFTWARE SOLUTION PVT LTD | Trainee Engineer | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9d4fa7a03fbb6d0b) |
 | Buro Happold | Associate Structural Engineer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=4d53960547cbca41) |
+| Solar Turbines | 2027 Entry Level Supplier Technical Engineer | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8bf22492bdb632d2) |
+| Solar Turbines | 2027 Entry Level Gas Turbine Product Engineer (GTPE) | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=15e246d8970f90fd) |
+| Solar Turbines | 2027 Entry Level Rotation - Solutions Platforms Engineered | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b6d0ac0d49ebaf51) |
+| Solar Turbines | 2027 TMP Tech & NPI Entry Level Engineering Rotation - MS/PHD | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b492f9e47996a76c) |
 | NCR Atleos | SW Engineer II | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=f4e2933cbde8de68) |
-| Cottage Health | October 2026 RN Residency Program - New Graduate and Acute Care Transition Nurses | Santa Barbara, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e1db8a4b6394331b) |
-| Precision Medicine Group | Clinical Data Associate II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004) |
-| SoFi | Associate AI Financial Planning Analyst | New York City | Today | [Apply](https://sofi.com/careers/job/7781335003?gh_jid=7781335003) |
-| SpaceX | December 2026 New Graduate Engineer, Mechanical (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8627507002?gh_jid=8627507002) |
-| SpaceX | December 2026 New Graduate Engineer, Propulsion (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8627510002?gh_jid=8627510002) |
-| SpaceX | Machine Maintenance Associate (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8420866002?gh_jid=8420866002) |
-| SpaceX | NDE Inspector Trainee (Starship) - Temporary | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8428315002?gh_jid=8428315002) |
+| Mesa Public Schools - AZ | Instructional Assistant Special Education I - Resource - Part Time - Red Mountain High School | Mesa, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=7140f44c5ffda6c4) |
+| Mesa Public Schools - AZ | Instructional Assistant Special Education II - Self Contained - Red Mountain High School | Mesa, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=a9fbb58510cba30a) |
 
-**[View all 146 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 151 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -375,4 +375,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-16 11:21:19 UTC*
+*Last updated: 2026-07-16 13:00:14 UTC*
