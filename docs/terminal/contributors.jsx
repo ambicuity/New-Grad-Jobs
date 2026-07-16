@@ -183,7 +183,9 @@ function ContributorsView() {
           <div style={{ padding:'12px 14px', borderTop: `1px solid ${CBG.rule}` }}>
             <div style={{ color: CBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>TOP BY COMMITS</div>
             {top5.map((c, i) => (
-              <div key={c.handle} onClick={() => setSelectedHandle(c.handle)} style={{
+              <div key={c.handle}
+                onClick={() => { setSelectedHandle(c.handle); if (isMobile) setMobileDetailOpen(true); }}
+                style={{
                 display:'grid', gridTemplateColumns:'14px 1fr auto', gap: 6, padding:'2px 0',
                 cursor:'pointer', fontSize: 11,
               }}>
@@ -254,8 +256,13 @@ function ContributorsView() {
               const isSel = c.handle === selectedHandle;
               if (isMobile) {
                 // Single-column card; tap opens the full-screen contributor detail.
+                const openDetail = () => { setSelectedHandle(c.handle); setMobileDetailOpen(true); };
                 return (
-                  <div key={c.handle} onClick={() => { setSelectedHandle(c.handle); setMobileDetailOpen(true); }} style={{
+                  <div key={c.handle} onClick={openDetail}
+                    role="button" tabIndex={0}
+                    aria-label={`@${c.handle} — ${c.name}, open details`}
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(); } }}
+                    style={{
                     padding:'11px 14px', borderBottom: `1px solid ${CBG.rule}`,
                     cursor:'pointer', display:'flex', flexDirection:'column', gap: 5,
                   }}>

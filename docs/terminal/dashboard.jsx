@@ -313,7 +313,7 @@ function DashboardDirection() {
         </div>
 
         {/* ─ Center: search + tabular list ─ */}
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, borderRight: `1px solid ${BBG.rule2}` }}>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, borderRight: isMobile ? 'none' : `1px solid ${BBG.rule2}` }}>
           <div style={{ padding: '8px 14px', borderBottom: `1px solid ${BBG.rule2}`, display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ color: BBG.acc, fontWeight: 700 }}>CMD&gt;</span>
             <input
@@ -359,8 +359,13 @@ function DashboardDirection() {
               if (isMobile) {
                 // Single-column card: the 8 desktop columns can't fit a phone,
                 // so stack them and open the full-screen detail on tap.
+                const openDetail = () => { setSelectedId(j.id); setMobileDetailOpen(true); };
                 return (
-                  <div key={j.id} onClick={() => { setSelectedId(j.id); setMobileDetailOpen(true); }} style={{
+                  <div key={j.id} onClick={openDetail}
+                    role="button" tabIndex={0}
+                    aria-label={`${j.co} — ${j.role}, open details`}
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(); } }}
+                    style={{
                     padding: '11px 14px', borderBottom: `1px solid ${BBG.rule}`,
                     cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 4,
                   }}>
