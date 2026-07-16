@@ -27,6 +27,13 @@
     body { overflow-x: auto; }
     * { box-sizing: border-box; }
     #root { height: 100%; width: 100%; min-width: 1180px; }
+    /* Mobile: drop the desktop 1180px canvas so the single-column reflow
+       (driven by useIsMobile in the terminal views) fits the viewport with
+       no sideways scroll. Breakpoint mirrors MOBILE_MAX_PX in use-viewport.jsx. */
+    @media (max-width: 760px) {
+      body { overflow-x: hidden; }
+      #root { min-width: 0; }
+    }
     ::-webkit-scrollbar { width: 8px; height: 8px; }
     ::-webkit-scrollbar-track { background: #0a0a0a; }
     ::-webkit-scrollbar-thumb { background: #2a2a2a; }
@@ -61,15 +68,17 @@
   </div>
 
   <!-- Pure-JS helper for the LIVE chip, loadable in Node for unit testing. -->
-  <script src="terminal/live-stamp-format.js?v=18"></script>
+  <script src="terminal/live-stamp-format.js?v=19"></script>
 
   <!-- Cache-bust the bundle when its shape changes. Bump v= on data-shape edits. -->
-  <script type="text/babel" src="terminal/data.jsx?v=18"></script>
-  <script type="text/babel" src="terminal/contributors-data.jsx?v=18"></script>
-  <script type="text/babel" src="terminal/dashboard.jsx?v=18"></script>
-  <script type="text/babel" src="terminal/contributors.jsx?v=18"></script>
-  <script type="text/babel" src="terminal/live-stamp.jsx?v=18"></script>
-  <script type="text/babel" src="terminal/app.jsx?v=18"></script>
+  <!-- useIsMobile must load before the views that branch on it for responsive reflow. -->
+  <script type="text/babel" src="terminal/use-viewport.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/data.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/contributors-data.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/dashboard.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/contributors.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/live-stamp.jsx?v=19"></script>
+  <script type="text/babel" src="terminal/app.jsx?v=19"></script>
 
   <script type="text/babel">
     (async () => {
