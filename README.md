@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1472<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1466<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->877<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->874<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->10<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->82<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->136<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->27<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->118<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->28<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->116<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->15<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->158<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->156<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,472** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,466** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -62,18 +62,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Discord | Software Engineer, Data Platform | San Francisco Bay Area | Today | [Apply](https://job-boards.greenhouse.io/discord/jobs/8396927002) |
+| Discord | Software Engineer, Developer Success | San Francisco Bay Area | Today | [Apply](https://job-boards.greenhouse.io/discord/jobs/8609250002) |
+| Discord | Software Engineer, Distributed Systems | San Francisco Bay Area | Today | [Apply](https://job-boards.greenhouse.io/discord/jobs/8545663002) |
+| Oscar Health | IT Engineer I | Los Angeles, California, United States | Today | [Apply](http://www.hioscar.com/careers/8070593?gh_jid=8070593) |
+| Oscar Health | IT Engineer I | Tempe, Arizona, United States | Today | [Apply](http://www.hioscar.com/careers/8070587?gh_jid=8070587) |
+| Oscar Health | IT Engineer I | New York, New York, United States | Today | [Apply](http://www.hioscar.com/careers/8069062?gh_jid=8069062) |
+| xAI | Power Systems Engineer (Data Center Infrastructure) | Memphis, TN; Southaven, MS | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5189147007) |
 | Roblox | Software Engineer, Ads Platform | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8047815?gh_jid=8047815) |
 | LaunchDarkly | SDK Software Engineer, AI | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/launchdarkly/jobs/7647797003) |
 | SIXGEN | Systems Engineer (TS/SCI w/ Poly) | Columbia, MD | Today | [Apply](https://job-boards.greenhouse.io/sixgeninc/jobs/5124502008) |
-| MongoDB | Software Engineer 3 | Gurugram | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7908785) |
-| MongoDB | Software Engineer 3 | Gurugram | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7993984) |
-| MongoDB | Software Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8015792) |
-| MongoDB | Software Engineer 3, Atlas Search Systems | Toronto | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7662950) |
-| MongoDB | Software Engineer 3, Atlas Search Systems | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7523920) |
-| MongoDB | Software Engineer 3, Atlas Vector Search | San Francisco | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7523911) |
-| MongoDB | Software Engineer 3, Documentation Platform | New York City; Palo Alto; Seattle | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8054991) |
 
-**[View all 877 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 874 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -152,6 +152,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anthropic | Data Scientist, Safeguards | New York City, NY; San Francisco, CA; Seattle, WA | Today | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5209196008) |
 | Roblox | [2026] Data Scientist, Social | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | Scopely | Data Scientist, Marketing | US - San Francisco, United States; US - Sunnyvale, United States | Today | [Apply](https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008) |
 | ZoomInfo | Data Analyst I | Bengaluru, Karnataka, India | Today | [Apply](https://www.zoominfo.com/careers?gh_jid=8623612002) |
@@ -161,7 +162,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Stripe | Machine Learning Engineer, Radar | Seattle | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7983456) |
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
-| Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 
 **[View all 136 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -176,13 +176,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
 | Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
 | Shyena Tech Yarns Pvt Ltd | Data Engineer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=80584c1e324619da) |
+| Allegion | Associate Analytics Engineer | Carmel, IN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=ccc0af25d3d7c93a) |
 | RTTS | Software Test Engineer (Entry Level) | New York, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=230c51bab753a5d6) |
 | Booz Allen Hamilton | ETL Data Engineer | McLean, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/McLean-VA/ETL-Software-Engineer_R0241379) |
-| Dropbox | Data Engineer | Remote - Mexico | 1 day ago | [Apply](https://jobs.dropbox.com/listing/7739553?gh_jid=7739553) |
 | Dropbox | Data Engineer | Remote - Poland | 1 day ago | [Apply](https://jobs.dropbox.com/listing/8053628?gh_jid=8053628) |
-| SpaceX | Data Infrastructure Operations Specialist II (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8508424002?gh_jid=8508424002) |
+| Dropbox | Data Engineer | Remote - Mexico | 1 day ago | [Apply](https://jobs.dropbox.com/listing/7739553?gh_jid=7739553) |
 
-**[View all 27 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 28 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -190,6 +190,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anduril Industries | Systems Engineer, C2 Networking - Edge Compute and Communications | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007) |
 | xAI | Associate Data Center Operations Technician | Memphis, TN; Southaven, MS | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5168434007) |
 | xAI | Facilities Infrastructure Engineer (Data Center Infrastructure) | Memphis, TN; Southaven, MS | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5182374007) |
 | xAI | Network Engineer | Memphis, TN | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4870731007) |
@@ -199,9 +200,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Tailscale | Software Engineer, Networking (Features) | Remote (United States) | Today | [Apply](https://job-boards.greenhouse.io/tailscale/jobs/4706998005) |
 | Tailscale | Software Engineer, Networking (Features) | Remote (Canada) | Today | [Apply](https://job-boards.greenhouse.io/tailscale/jobs/4706938005) |
 | SpaceX | Software Infrastructure Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8391128002?gh_jid=8391128002) |
-| SpaceX | Kubernetes Platform Infrastructure Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8391130002?gh_jid=8391130002) |
 
-**[View all 118 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 116 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -233,7 +233,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Collins Aerospace | Associate Engineer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=466f7d13802185d8) |
 | Bedrock Foundry | Junior Mechanical Engineer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=7cb127052c9fa196) |
 | Bedrock Foundry | Junior Robotics Engineer | KL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ee325979c43ea3b4) |
-| Amentum | Power System Design Engineer - Entry Level | Tullahoma, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=6492dc8af150701d) |
+| RFA Engineering | Entry Level Mechanical Engineer | Chillicothe, IL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=9332ee589e9ef3c2) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
 | SpaceX | New Graduate Engineer, Electrical (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8493166002?gh_jid=8493166002) |
@@ -251,16 +251,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | Precision Medicine Group | Clinical Data Associate II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004) |
 | Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| RUSSELL INVESTMENTS | Graduate Trainee | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6953e2a13c198499) |
 | GNB TECH SOFTWARE SOLUTION PVT LTD | Trainee Engineer | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9d4fa7a03fbb6d0b) |
 | Buro Happold | Associate Structural Engineer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=4d53960547cbca41) |
-| EAE USA INC | Junior Process Engineer | Adairsville, GA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b08d704281f57128) |
+| RUSSELL INVESTMENTS | Graduate Trainee | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6953e2a13c198499) |
+| BDO | Campus Recruitment Specialist | Montréal, QC, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=0764f839eb2b8dda) |
+| University of Ottawa | Student Part-time Prof APTPUO - Fall 2026 - EAS1101-D00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=b8d24f531dfb4646) |
 | Bradford Progress Child Care Centres | Child Care positions for Fall 2026 (CYW, OCT, Recreation and Leisure) | Angus, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=c01ae40f6f0df0fa) |
 | Bradford Progress Child Care Centres | Child Care positions for Fall 2026 (CYW, OCT, Recreation and Leisure) | Barrie, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f616d6bdab58472d) |
 | Bradford Progress Child Care Centres | Child Care positions for Fall 2026 (CYW, OCT, Recreation and Leisure) | Newmarket, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=26de25a53de6d520) |
-| Bradford Progress Child Care Centres | Child Care positions for Fall 2026 (CYW, OCT, Recreation and Leisure) | Alliston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=32f299fc55643936) |
 
-**[View all 158 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 156 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-16 20:13:49 UTC*
+*Last updated: 2026-07-16 21:20:33 UTC*

@@ -5,8 +5,71 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 20:13:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 21:20:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Data Platform at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8396927002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8396927002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Developer Success at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8609250002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8609250002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Distributed Systems at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8545663002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:15:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8545663002</guid>
+    </item>
+    <item>
+      <title>IT Engineer I at Oscar Health</title>
+      <link>http://www.hioscar.com/careers/8070593?gh_jid=8070593</link>
+      <description>New grad role at Oscar Health in Los Angeles, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:15:18 +0000</pubDate>
+      <guid isPermaLink="true">http://www.hioscar.com/careers/8070593?gh_jid=8070593</guid>
+    </item>
+    <item>
+      <title>IT Engineer I at Oscar Health</title>
+      <link>http://www.hioscar.com/careers/8070587?gh_jid=8070587</link>
+      <description>New grad role at Oscar Health in Tempe, Arizona, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:12:44 +0000</pubDate>
+      <guid isPermaLink="true">http://www.hioscar.com/careers/8070587?gh_jid=8070587</guid>
+    </item>
+    <item>
+      <title>IT Engineer I at Oscar Health</title>
+      <link>http://www.hioscar.com/careers/8069062?gh_jid=8069062</link>
+      <description>New grad role at Oscar Health in New York, New York, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 21:08:14 +0000</pubDate>
+      <guid isPermaLink="true">http://www.hioscar.com/careers/8069062?gh_jid=8069062</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, C2 Networking - Edge Compute and Communications at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Jul 2026 20:56:30 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</guid>
+    </item>
+    <item>
+      <title>Power Systems Engineer (Data Center Infrastructure) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5189147007</link>
+      <description>New grad role at xAI in Memphis, TN; Southaven, MS. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 20:24:44 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5189147007</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Safeguards at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5209196008</link>
+      <description>New grad role at Anthropic in New York City, NY; San Francisco, CA; Seattle, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 16 Jul 2026 20:18:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5209196008</guid>
+    </item>
     <item>
       <title>Product Security Engineer at Airtable</title>
       <link>https://job-boards.greenhouse.io/airtable/jobs/8533547002</link>
@@ -86,17 +149,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -107,17 +170,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
-      <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
+      <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 18:53:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
     </item>
     <item>
       <title>Software Engineer 3, Query Integration at MongoDB</title>
@@ -293,69 +356,6 @@
       <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 16 Jul 2026 16:48:33 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623612002</guid>
-    </item>
-    <item>
-      <title>Application Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Security Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
-    </item>
-    <item>
-      <title>Associate Data Center Operations Technician  at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5168434007</link>
-      <description>New grad role at xAI in Memphis, TN; Southaven, MS. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5168434007</guid>
-    </item>
-    <item>
-      <title>Data Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5120884007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5120884007</guid>
-    </item>
-    <item>
-      <title>Exceptional Software Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
-      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
-    </item>
-    <item>
-      <title>Facilities Infrastructure Engineer (Data Center Infrastructure) at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5182374007</link>
-      <description>New grad role at xAI in Memphis, TN; Southaven, MS. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5182374007</guid>
-    </item>
-    <item>
-      <title>Infrastructure Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
-      <description>New grad role at xAI in Austin, TX; New York, NY; Palo Alto, CA; Washington, D.C.. Category: Security Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
-    </item>
-    <item>
-      <title>Network Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4870731007</link>
-      <description>New grad role at xAI in Memphis, TN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4870731007</guid>
-    </item>
-    <item>
-      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 16 Jul 2026 16:40:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
     </item>
   </channel>
 </rss>
