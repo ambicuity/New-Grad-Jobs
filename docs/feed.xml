@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 07:07:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 09:28:01 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
@@ -267,6 +267,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ee325979c43ea3b4</guid>
     </item>
     <item>
+      <title>PLC/SCADA Engineer (Entry-Level) at Proficient Automation &amp; Controls Pvt Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=7d557bb72deb4f17</link>
+      <description>New grad role at Proficient Automation &amp; Controls Pvt Ltd in KL, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7d557bb72deb4f17</guid>
+    </item>
+    <item>
       <title>Junior Python AI Developer at Bedrock Foundry</title>
       <link>https://in.indeed.com/viewjob?jk=8657749e28cd25b0</link>
       <description>New grad role at Bedrock Foundry in KL, IN. Category: Data Science &amp; ML</description>
@@ -288,6 +295,34 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7cb127052c9fa196</guid>
     </item>
     <item>
+      <title>Software Engineer III : AI/ML Solutions at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=34888fd616464280</link>
+      <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=34888fd616464280</guid>
+    </item>
+    <item>
+      <title>SW Engineer II at NCR Atleos</title>
+      <link>https://in.indeed.com/viewjob?jk=f4e2933cbde8de68</link>
+      <description>New grad role at NCR Atleos in TN, IN. Category: Other</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f4e2933cbde8de68</guid>
+    </item>
+    <item>
+      <title>Associate Engineer at BT Group</title>
+      <link>https://in.indeed.com/viewjob?jk=c7bb8b97481b60de</link>
+      <description>New grad role at BT Group in WB, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c7bb8b97481b60de</guid>
+    </item>
+    <item>
+      <title>Customer Engineer (I) at NCR Atleos</title>
+      <link>https://www.indeed.com/viewjob?jk=ae9ceb74746cb314</link>
+      <description>New grad role at NCR Atleos in IN, US. Category: Other</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ae9ceb74746cb314</guid>
+    </item>
+    <item>
       <title>Associate AI/ML Engineer at Optum</title>
       <link>https://www.indeed.com/viewjob?jk=f8d85951c8d864fa</link>
       <description>New grad role at Optum in Eden Prairie, MN, US. Category: Data Science &amp; ML</description>
@@ -302,6 +337,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=488179ba8a54cb21</guid>
     </item>
     <item>
+      <title>October 2026 RN Residency Program - New Graduate and Acute Care Transition Nurses at Cottage Health</title>
+      <link>https://www.indeed.com/viewjob?jk=e1db8a4b6394331b</link>
+      <description>New grad role at Cottage Health in Santa Barbara, CA, US. Category: Other</description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e1db8a4b6394331b</guid>
+    </item>
+    <item>
       <title>Junior Python Developer at Bedrock Foundry</title>
       <link>https://in.indeed.com/viewjob?jk=72d87a8f84315a68</link>
       <description>New grad role at Bedrock Foundry in KL, IN. Category: Infrastructure &amp; SRE</description>
@@ -309,53 +351,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=72d87a8f84315a68</guid>
     </item>
     <item>
-      <title>Data Scientist I at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-I_R-278127</link>
-      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Science &amp; ML</description>
+      <title>Software Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Software-Engineer-II_R-284423</link>
+      <description>New grad role at Mastercard in Navi Mumbai, India (Finicity). Category: Software Engineering</description>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-I_R-278127</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Web Products at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002</link>
-      <description>New grad role at Databricks in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 23:27:11 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Web Products at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8635225002</link>
-      <description>New grad role at Databricks in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 23:16:10 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8635225002</guid>
-    </item>
-    <item>
-      <title>Software Engineer -  Marketplace Experimentation Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905680</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 23:06:19 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905680</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Greenhouse</title>
-      <link>https://job-boards.greenhouse.io/greenhouse/jobs/8017323?gh_jid=8017323</link>
-      <description>New grad role at Greenhouse in Ontario. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 15 Jul 2026 23:03:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/greenhouse/jobs/8017323?gh_jid=8017323</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer, Infrastructure &amp; Security at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4674863005</link>
-      <description>New grad role at Scale AI in Washington, DC. Category: Software Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 22:35:36 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4674863005</guid>
-    </item>
-    <item>
-      <title>Application Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
-      <description>New grad role at xAI in Palo Alto, CA. Category: Security Engineering</description>
-      <pubDate>Wed, 15 Jul 2026 22:05:01 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Navi-Mumbai-India-Finicity/Software-Engineer-II_R-284423</guid>
     </item>
   </channel>
 </rss>
