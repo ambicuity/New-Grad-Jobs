@@ -5,8 +5,14 @@
 //
 // Single source of truth for the breakpoint. Below MOBILE_MAX the layout
 // collapses to a single column; at/above it the desktop terminal is unchanged.
+//
+// The value is tied to the desktop terminal's own min-width (1180px): any
+// viewport that can't fit the 3-column terminal reflows to a single column, so
+// there is no in-between band that horizontally scrolls. This means phones AND
+// tablets (portrait + landscape) get the single-column layout; only ≥1180px
+// screens, where the terminal fits, keep the dense desktop view.
 
-const MOBILE_MAX_PX = 760;
+const MOBILE_MAX_PX = 1180;
 const MOBILE_QUERY = `(max-width: ${MOBILE_MAX_PX}px)`;
 
 function useIsMobile() {
