@@ -35,6 +35,11 @@ function DashboardDirection() {
   const [savedOnly, setSavedOnly] = useState2(false);
   const [toast, setToast] = useState2(null);
   const [helpOpen, setHelpOpen] = useState2(false);
+  // Mobile reflow state: filters collapse into a drawer, and tapping a job
+  // opens a full-screen detail view (there's no room for the 460px side panel).
+  const isMobile = useIsMobile();
+  const [filtersOpen, setFiltersOpen] = useState2(false);
+  const [mobileDetailOpen, setMobileDetailOpen] = useState2(false);
   const searchRef = useRef2(null);
   const listScrollRef = useRef2(null);
 
@@ -163,24 +168,62 @@ function DashboardDirection() {
 
   return (
     <div style={{
-      width: '100%', minWidth: 1180, height: '100%', minHeight: 640, background: BBG.bg, color: BBG.ink,
+      width: '100%', minWidth: isMobile ? 0 : 1180,
+      height: '100%', minHeight: isMobile ? 0 : 640, background: BBG.bg, color: BBG.ink,
       fontFamily: '"JetBrains Mono", ui-monospace, monospace', fontSize: 12, lineHeight: 1.45,
       display: 'grid', gridTemplateRows: 'auto 1fr auto', overflow: 'hidden', position: 'relative',
     }}>
       {/* ─── Stats strip ─── */}
-      <div style={{ display: 'flex', alignItems: 'center', borderBottom: `1px solid ${BBG.rule2}`, padding: '10px 14px', gap: 18 }}>
+      <div style={{
+        display: 'flex', alignItems: 'center', borderBottom: `1px solid ${BBG.rule2}`,
+        padding: '10px 14px', gap: isMobile ? 14 : 18,
+        // Phones can't fit 5 stats side-by-side; let them scroll horizontally
+        // rather than wrap or shrink below legibility.
+        overflowX: isMobile ? 'auto' : 'visible',
+      }}>
         <Stat label="OPEN"      value={NGJOBS.length} delta="+12 24h" deltaC={BBG.ok} />
         <Stat label="NEW TODAY" value={NGJOBS.filter(j => /^\dh|^1d|^2d/.test(j.posted)).length} delta="+5"   deltaC={BBG.ok} />
         <Stat label="CLOSING <7d" value={NGJOBS.filter(j => daysLeft(j.dl) < 7).length} delta="⚠" deltaC={BBG.hot} />
         <Stat label="MED COMP" value="$170k" delta="+2.1%" deltaC={BBG.ok} />
         <Stat label="VISA✓"    value={`${Math.round(100*NGJOBS.filter(j=>j.visa).length/NGJOBS.length)}%`} delta="" deltaC={BBG.dim} />
-        <div style={{ marginLeft: 'auto', color: BBG.dim, fontSize: 11 }}>HIRING · live job feed</div>
+        {!isMobile && <div style={{ marginLeft: 'auto', color: BBG.dim, fontSize: 11 }}>HIRING · live job feed</div>}
       </div>
 
       {/* ─── Body grid ─── */}
-      <div style={{ display: 'grid', gridTemplateColumns: '210px 1fr 460px', minHeight: 0 }}>
+      <div style={{
+        display: isMobile ? 'block' : 'grid',
+        gridTemplateColumns: isMobile ? undefined : '210px 1fr 460px',
+        minHeight: 0,
+        overflowY: isMobile ? 'auto' : 'hidden',
+      }}>
         {/* ─ Left rail: filters as compact chip list ─ */}
-        <div style={{ borderRight: `1px solid ${BBG.rule2}`, overflow: 'auto' }}>
+        <div style={{
+          borderRight: isMobile ? 'none' : `1px solid ${BBG.rule2}`,
+          borderBottom: isMobile ? `1px solid ${BBG.rule2}` : 'none',
+          overflow: isMobile ? 'visible' : 'auto',
+        }}>
+          {isMobile && (
+            <button
+              onClick={() => setFiltersOpen(o => !o)}
+              aria-expanded={filtersOpen}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', gap: 8,
+                background: BBG.panel2, border: 'none', borderBottom: `1px solid ${BBG.rule2}`,
+                color: BBG.ink, fontFamily: 'inherit', fontSize: 12, letterSpacing: 0.6,
+                padding: '12px 14px', cursor: 'pointer', minHeight: 44, textAlign: 'left',
+              }}
+            >
+              <span style={{ color: BBG.acc }}>{filtersOpen ? '▾' : '▸'}</span>
+              <span>FILTERS</span>
+              {(() => {
+                const n = filters.type.size + filters.rmt.size + (filters.visa !== null ? 1 : 0)
+                  + filters.size.size + filters.company.size;
+                return n ? <span style={{ color: BBG.acc }}>· {n} active</span> : null;
+              })()}
+            </button>
+          )}
+          {(!isMobile || filtersOpen) && (
+          <React.Fragment>
           <ChipGroup title="ROLE">
             {['SWE','FE','BE','MOBILE','SEC','ML','DATA','INFRA','PM','QUANT','HW','OTHER'].map(t => (
               <Chip key={t} on={filters.type.has(t)} onClick={() => toggleSet('type', t)} label={TYPE_LABEL[t]} />
@@ -265,10 +308,12 @@ function DashboardDirection() {
               })}
             </div>
           </div>
+          </React.Fragment>
+          )}
         </div>
 
         {/* ─ Center: search + tabular list ─ */}
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, borderRight: `1px solid ${BBG.rule2}` }}>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, borderRight: isMobile ? 'none' : `1px solid ${BBG.rule2}` }}>
           <div style={{ padding: '8px 14px', borderBottom: `1px solid ${BBG.rule2}`, display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ color: BBG.acc, fontWeight: 700 }}>CMD&gt;</span>
             <input
@@ -286,7 +331,8 @@ function DashboardDirection() {
             </span>
           </div>
 
-          {/* Tabular header */}
+          {/* Tabular header — desktop only; mobile cards carry their own labels */}
+          {!isMobile && (
           <div style={{
             display: 'grid',
             gridTemplateColumns: '28px 110px 1fr 130px 90px 90px 90px 26px',
@@ -302,6 +348,7 @@ function DashboardDirection() {
             <SortHeader k="deadline" label="DEADLINE"  cur={sortKey} dir={sortDir} onClick={sortClick} />
             <span></span>
           </div>
+          )}
 
           <div style={{ overflow: 'auto', flex: 1 }}>
             {filtered.map((j, i) => {
@@ -309,6 +356,44 @@ function DashboardDirection() {
               const isSaved = saved.has(j.id);
               const days = daysLeft(j.dl);
               const urgency = Math.min(1, Math.max(0, 1 - days/120));
+              if (isMobile) {
+                // Single-column card: the 8 desktop columns can't fit a phone,
+                // so stack them and open the full-screen detail on tap.
+                const openDetail = () => { setSelectedId(j.id); setMobileDetailOpen(true); };
+                return (
+                  <div key={j.id} onClick={openDetail}
+                    role="button" tabIndex={0}
+                    aria-label={`${j.co} — ${j.role}, open details`}
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(); } }}
+                    style={{
+                    padding: '11px 14px', borderBottom: `1px solid ${BBG.rule}`,
+                    cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 4,
+                  }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                      <span style={{ color: BBG.acc, fontWeight: 600, fontSize: 12.5 }}>
+                        <span style={{ color: BBG.dim, marginRight: 6 }}>{String(i+1).padStart(2,'0')}</span>{j.co}
+                      </span>
+                      <button onClick={(e) => { e.stopPropagation(); toggleSave(j.id); }}
+                        aria-label={isSaved ? 'unsave job' : 'save job'} style={{
+                        background: 'transparent', border: 'none', cursor: 'pointer', padding: '2px 4px',
+                        color: isSaved ? BBG.acc : BBG.dim, fontFamily: 'inherit', fontSize: 18, lineHeight: 1,
+                      }}>{isSaved ? '★' : '☆'}</button>
+                    </div>
+                    <div style={{ color: BBG.ink, fontSize: 13, lineHeight: 1.3 }}>{j.role}</div>
+                    <div style={{ color: BBG.dim, fontSize: 11, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '2px 6px' }}>
+                      <span>{j.loc}</span>
+                      <span style={{ color: BBG.rule2 }}>·</span>
+                      <span style={{ color: BBG.acc }}>{fmtComp(j.comp)}</span>
+                      <span style={{ color: BBG.rule2 }}>·</span>
+                      <span>{j.posted}</span>
+                      <span style={{ color: BBG.rule2 }}>·</span>
+                      <span style={{ color: days < 14 ? BBG.hot : BBG.ink }}>{days < 0 ? 'closed' : `${days}d left`}</span>
+                      <span style={{ color: BBG.rule2 }}>·</span>
+                      <span style={{ color: j.visa ? BBG.ok : BBG.warn }}>{j.visa ? 'visa✓' : 'us'}</span>
+                    </div>
+                  </div>
+                );
+              }
               return (
                 <div key={j.id} onClick={() => setSelectedId(j.id)} style={{
                   display: 'grid',
@@ -359,9 +444,37 @@ function DashboardDirection() {
           </div>
         </div>
 
-        {/* ─ Right: detail card ─ */}
-        <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => toggleSave(selected.id)} />
+        {/* ─ Right: detail card (desktop inline; on mobile it's a full-screen overlay below) ─ */}
+        {!isMobile && (
+          <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => toggleSave(selected.id)} />
+        )}
       </div>
+
+      {/* Mobile: full-screen job detail, opened by tapping a card. */}
+      {isMobile && mobileDetailOpen && selected && (
+        <div style={{
+          position: 'fixed', inset: 0, zIndex: 50, background: BBG.bg,
+          display: 'flex', flexDirection: 'column',
+        }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 10,
+            borderBottom: `1px solid ${BBG.rule2}`, background: BBG.panel,
+            padding: '0 6px', minHeight: 48, flexShrink: 0,
+          }}>
+            <button onClick={() => setMobileDetailOpen(false)} aria-label="Back to job list" style={{
+              background: 'transparent', border: 'none', color: BBG.acc, cursor: 'pointer',
+              fontFamily: 'inherit', fontSize: 14, fontWeight: 600, padding: '12px 10px', minHeight: 44,
+            }}>‹ BACK</button>
+            <span style={{
+              color: BBG.dim, fontSize: 12, overflow: 'hidden',
+              textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+            }}>{selected.co} · {selected.role}</span>
+          </div>
+          <div style={{ flex: 1, overflow: 'auto', minHeight: 0 }}>
+            <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => toggleSave(selected.id)} />
+          </div>
+        </div>
+      )}
 
       {/* Toast */}
       {toast && (
@@ -441,15 +554,17 @@ function DashboardDirection() {
         >
           SAVED: <span style={{ color: savedOnly ? '#000' : BBG.acc, fontWeight: 700 }}>{saved.size}</span>
         </span>
-        <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }}>
-          <FKey n="/"   l="SEARCH" />
-          <FKey n="↑↓"  l="NAV" />
-          <FKey n="⏎"   l="APPLY" />
-          <FKey n="S"   l="SAVE" />
-          <FKey n="F2"  l="SORT" />
-          <FKey n="ESC" l="CLEAR" />
-          <FKey n="?"   l="HELP" />
-        </span>
+        {!isMobile && (
+          <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }}>
+            <FKey n="/"   l="SEARCH" />
+            <FKey n="↑↓"  l="NAV" />
+            <FKey n="⏎"   l="APPLY" />
+            <FKey n="S"   l="SAVE" />
+            <FKey n="F2"  l="SORT" />
+            <FKey n="ESC" l="CLEAR" />
+            <FKey n="?"   l="HELP" />
+          </span>
+        )}
       </div>
     </div>
   );
@@ -457,7 +572,7 @@ function DashboardDirection() {
 
 function Stat({ label, value, delta, deltaC }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minWidth: 56 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minWidth: 56, flexShrink: 0 }}>
       <span style={{ fontSize: 9.5, color: BBG.dim, letterSpacing: 0.8 }}>{label}</span>
       <span style={{ fontSize: 14, color: BBG.ink, fontWeight: 600, lineHeight: 1.15 }}>{value}</span>
       {delta && <span style={{ fontSize: 9.5, color: deltaC || BBG.dim }}>{delta}</span>}

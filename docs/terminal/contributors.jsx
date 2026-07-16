@@ -18,6 +18,11 @@ function ContributorsView() {
   const [sortKey, setSortKey] = useStateC('commits');
   const [sortDir, setSortDir] = useStateC(1);
   const [selectedHandle, setSelectedHandle] = useStateC(NGCONTRIB[0].handle);
+  // Mobile reflow: the repo card + filters + leaderboard collapse into a drawer,
+  // and tapping a contributor opens a full-screen detail (no 460px side panel).
+  const isMobile = useIsMobile();
+  const [drawerOpen, setDrawerOpen] = useStateC(false);
+  const [mobileDetailOpen, setMobileDetailOpen] = useStateC(false);
   const searchRef = useRefC(null);
 
   const toggleSet = (key, val) => setFilters(f => {
@@ -82,16 +87,48 @@ function ContributorsView() {
 
   return (
     <div style={{
-      width:'100%', minWidth: 1180, height:'100%', minHeight: 640, background: CBG.bg, color: CBG.ink,
+      width:'100%', minWidth: isMobile ? 0 : 1180,
+      height:'100%', minHeight: isMobile ? 0 : 640, background: CBG.bg, color: CBG.ink,
       fontFamily:'"JetBrains Mono", ui-monospace, monospace', fontSize: 12, lineHeight: 1.45,
       display:'grid', gridTemplateRows:'1fr auto', overflow:'hidden', position:'relative',
     }}>
 
       {/* Body */}
-      <div style={{ display:'grid', gridTemplateColumns:'220px 1fr 460px', minHeight: 0 }}>
+      <div style={{
+        display: isMobile ? 'block' : 'grid',
+        gridTemplateColumns: isMobile ? undefined : '220px 1fr 460px',
+        minHeight: 0,
+        overflowY: isMobile ? 'auto' : 'hidden',
+      }}>
 
         {/* Left rail: repo card + filters + leaderboard */}
-        <div style={{ borderRight: `1px solid ${CBG.rule2}`, overflow:'auto' }}>
+        <div style={{
+          borderRight: isMobile ? 'none' : `1px solid ${CBG.rule2}`,
+          borderBottom: isMobile ? `1px solid ${CBG.rule2}` : 'none',
+          overflow: isMobile ? 'visible' : 'auto',
+        }}>
+
+          {isMobile && (
+            <button
+              onClick={() => setDrawerOpen(o => !o)}
+              aria-expanded={drawerOpen}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', gap: 8,
+                background: CBG.panel2, border: 'none', borderBottom: `1px solid ${CBG.rule2}`,
+                color: CBG.ink, fontFamily: 'inherit', fontSize: 12, letterSpacing: 0.6,
+                padding: '12px 14px', cursor: 'pointer', minHeight: 44, textAlign: 'left',
+              }}
+            >
+              <span style={{ color: CBG.acc }}>{drawerOpen ? '▾' : '▸'}</span>
+              <span>REPO · FILTERS · TOP</span>
+              {(() => {
+                const n = filters.role.size + filters.area.size + filters.lang.size;
+                return n ? <span style={{ color: CBG.acc }}>· {n} active</span> : null;
+              })()}
+            </button>
+          )}
+          {(!isMobile || drawerOpen) && (
+          <React.Fragment>
 
           {/* Repo card */}
           <div style={{ padding:'14px 14px 12px', borderBottom: `1px solid ${CBG.rule2}` }}>
@@ -146,7 +183,9 @@ function ContributorsView() {
           <div style={{ padding:'12px 14px', borderTop: `1px solid ${CBG.rule}` }}>
             <div style={{ color: CBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>TOP BY COMMITS</div>
             {top5.map((c, i) => (
-              <div key={c.handle} onClick={() => setSelectedHandle(c.handle)} style={{
+              <div key={c.handle}
+                onClick={() => { setSelectedHandle(c.handle); if (isMobile) setMobileDetailOpen(true); }}
+                style={{
                 display:'grid', gridTemplateColumns:'14px 1fr auto', gap: 6, padding:'2px 0',
                 cursor:'pointer', fontSize: 11,
               }}>
@@ -156,18 +195,27 @@ function ContributorsView() {
               </div>
             ))}
           </div>
+          </React.Fragment>
+          )}
         </div>
 
         {/* Center: header strip + table */}
-        <div style={{ display:'flex', flexDirection:'column', minHeight: 0, borderRight: `1px solid ${CBG.rule2}` }}>
+        <div style={{ display:'flex', flexDirection:'column', minHeight: 0, borderRight: isMobile ? 'none' : `1px solid ${CBG.rule2}` }}>
           {/* Stats strip */}
-          <div style={{ display:'flex', gap: 18, padding:'10px 14px', borderBottom: `1px solid ${CBG.rule2}`, alignItems:'center' }}>
+          <div style={{
+            display:'flex', gap: isMobile ? 12 : 18, padding:'10px 14px',
+            borderBottom: `1px solid ${CBG.rule2}`, alignItems:'center',
+            flexWrap: isMobile ? 'wrap' : 'nowrap',
+          }}>
             <CStat label="CONTRIBUTORS" value={NGCONTRIB.length} delta={`+3 7d`} deltaC={CBG.ok} />
             <CStat label="COMMITS"      value={fmtK(totals.commits)} delta="+412 7d" deltaC={CBG.ok} />
             <CStat label="PRS MERGED"   value={fmtK(totals.prs)}     delta="+98 7d"  deltaC={CBG.ok} />
             <CStat label="ACTIVE 7D"    value={activeWeek}            delta=""        deltaC={CBG.dim} />
             <CStat label="NET LOC"      value={`+${fmtK(totals.add)} / -${fmtK(totals.del)}`} delta="" deltaC={CBG.dim} />
-            <div style={{ marginLeft:'auto', display:'flex', gap: 8, alignItems:'center' }}>
+            <div style={{
+              marginLeft: isMobile ? 0 : 'auto', width: isMobile ? '100%' : 'auto',
+              display:'flex', gap: 8, alignItems:'center',
+            }}>
               <span style={{ color: CBG.acc, fontWeight: 700 }}>CMD&gt;</span>
               <input
                 ref={searchRef}
@@ -176,13 +224,14 @@ function ContributorsView() {
                 style={{
                   background:'transparent', border: `1px solid ${CBG.rule2}`, outline:'none',
                   color: CBG.ink, fontFamily:'inherit', fontSize: 12, padding:'3px 8px',
-                  width: 260, letterSpacing: 0.3,
+                  width: isMobile ? 'auto' : 260, flex: isMobile ? 1 : 'none', letterSpacing: 0.3,
                 }}
               />
             </div>
           </div>
 
-          {/* Tabular header */}
+          {/* Tabular header — desktop only; mobile cards carry their own labels */}
+          {!isMobile && (
           <div style={{
             display:'grid',
             gridTemplateColumns:'32px 130px 1fr 90px 70px 60px 110px 80px 70px',
@@ -199,11 +248,46 @@ function ContributorsView() {
             <CSortHdr k="since"   label="SINCE"   cur={sortKey} dir={sortDir} on={sortClick} />
             <CSortHdr k="last"    label="LAST"    cur={sortKey} dir={sortDir} on={sortClick} />
           </div>
+          )}
 
           {/* Rows */}
           <div style={{ overflow:'auto', flex: 1 }}>
             {filtered.map((c, i) => {
               const isSel = c.handle === selectedHandle;
+              if (isMobile) {
+                // Single-column card; tap opens the full-screen contributor detail.
+                const openDetail = () => { setSelectedHandle(c.handle); setMobileDetailOpen(true); };
+                return (
+                  <div key={c.handle} onClick={openDetail}
+                    role="button" tabIndex={0}
+                    aria-label={`@${c.handle} — ${c.name}, open details`}
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(); } }}
+                    style={{
+                    padding:'11px 14px', borderBottom: `1px solid ${CBG.rule}`,
+                    cursor:'pointer', display:'flex', flexDirection:'column', gap: 5,
+                  }}>
+                    <div style={{ display:'flex', alignItems:'center', gap: 8 }}>
+                      <span style={{ color: CBG.dim, fontSize: 11 }}>{String(i+1).padStart(2,'0')}</span>
+                      <Avatar handle={c.handle} size={22} />
+                      <span style={{ color: CBG.acc, fontWeight: 600, fontSize: 12.5 }}>@{c.handle}</span>
+                      <span style={{ color: roleColor(c.role), fontSize: 10, letterSpacing: 0.5, marginLeft: 'auto' }}>{c.role.toUpperCase()}</span>
+                    </div>
+                    <div style={{ color: CBG.ink, fontSize: 12.5 }}>{c.name}</div>
+                    <div style={{ color: CBG.dim, fontSize: 11, display:'flex', flexWrap:'wrap', alignItems:'center', gap:'2px 6px' }}>
+                      <span>{c.region}</span>
+                      <span style={{ color: CBG.rule2 }}>·</span>
+                      <span style={{ color: CBG.acc }}>{c.commits.toLocaleString()} commits</span>
+                      <span style={{ color: CBG.rule2 }}>·</span>
+                      <span>{c.prs} prs</span>
+                      <span style={{ color: CBG.rule2 }}>·</span>
+                      <span style={{ color: CBG.ok }}>+{fmtK(c.add)}</span>
+                      <span style={{ color: CBG.hot }}>-{fmtK(c.del)}</span>
+                      <span style={{ color: CBG.rule2 }}>·</span>
+                      <span style={{ color: /h$|^1d/.test(c.last) ? CBG.ok : CBG.ink }}>{c.last}</span>
+                    </div>
+                  </div>
+                );
+              }
               return (
                 <div key={c.handle} onClick={() => setSelectedHandle(c.handle)} style={{
                   display:'grid',
@@ -250,9 +334,35 @@ function ContributorsView() {
           </div>
         </div>
 
-        {/* Right: contributor detail */}
-        <ContribDetail c={selected} spark={spark} />
+        {/* Right: contributor detail (desktop inline; mobile = full-screen overlay below) */}
+        {!isMobile && <ContribDetail c={selected} spark={spark} />}
       </div>
+
+      {/* Mobile: full-screen contributor detail, opened by tapping a card. */}
+      {isMobile && mobileDetailOpen && selected && (
+        <div style={{
+          position: 'fixed', inset: 0, zIndex: 50, background: CBG.bg,
+          display: 'flex', flexDirection: 'column',
+        }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 10,
+            borderBottom: `1px solid ${CBG.rule2}`, background: CBG.panel,
+            padding: '0 6px', minHeight: 48, flexShrink: 0,
+          }}>
+            <button onClick={() => setMobileDetailOpen(false)} aria-label="Back to contributor list" style={{
+              background: 'transparent', border: 'none', color: CBG.acc, cursor: 'pointer',
+              fontFamily: 'inherit', fontSize: 14, fontWeight: 600, padding: '12px 10px', minHeight: 44,
+            }}>‹ BACK</button>
+            <span style={{
+              color: CBG.dim, fontSize: 12, overflow: 'hidden',
+              textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+            }}>@{selected.handle} · {selected.name}</span>
+          </div>
+          <div style={{ flex: 1, overflow: 'auto', minHeight: 0 }}>
+            <ContribDetail c={selected} spark={spark} />
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <div style={{
@@ -262,12 +372,14 @@ function ContributorsView() {
         <span>STATUS: <span style={{ color: CBG.ok }}>OK</span></span>
         <span>SHOWN: <span style={{ color: CBG.ink }}>{filtered.length}</span> / {NGCONTRIB.length}</span>
         <span>SEL: <span style={{ color: CBG.ink }}>@{selected?.handle || '—'}</span></span>
-        <span style={{ marginLeft:'auto', display:'flex', gap: 14 }}>
-          <FKeyC n="/"   l="SEARCH" />
-          <FKeyC n="F2"  l="SORT" />
-          <FKeyC n="ESC" l="CLEAR" />
-          <FKeyC n="G"   l="GITHUB \u2197" />
-        </span>
+        {!isMobile && (
+          <span style={{ marginLeft:'auto', display:'flex', gap: 14 }}>
+            <FKeyC n="/"   l="SEARCH" />
+            <FKeyC n="F2"  l="SORT" />
+            <FKeyC n="ESC" l="CLEAR" />
+            <FKeyC n="G"   l="GITHUB \u2197" />
+          </span>
+        )}
       </div>
     </div>
   );
@@ -377,7 +489,7 @@ function ContribDetail({ c, spark }) {
 
 function CStat({ label, value, delta, deltaC }) {
   return (
-    <div style={{ display:'flex', flexDirection:'column', minWidth: 56 }}>
+    <div style={{ display:'flex', flexDirection:'column', minWidth: 56, flexShrink: 0 }}>
       <span style={{ fontSize: 9.5, color: CBG.dim, letterSpacing: 0.8 }}>{label}</span>
       <span style={{ fontSize: 14, color: CBG.ink, fontWeight: 600, lineHeight: 1.15 }}>{value}</span>
       {delta && <span style={{ fontSize: 9.5, color: deltaC || CBG.dim }}>{delta}</span>}

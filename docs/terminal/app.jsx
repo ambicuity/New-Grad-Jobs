@@ -28,6 +28,7 @@ function NGApp() {
 }
 
 function TopBar({ tab, setTab }) {
+  const isMobile = useIsMobile();
   const TABS = [
     { id: 'hiring',       label: 'HIRING',       sub: `${NGJOBS.length} open` },
     { id: 'contributors', label: 'CONTRIBUTORS', sub: `${NGCONTRIB.length} devs` },
@@ -36,7 +37,12 @@ function TopBar({ tab, setTab }) {
     <div style={{
       display: 'flex', alignItems: 'stretch',
       borderBottom: '1px solid #2a2a2a', background: '#000',
-      fontSize: 12, height: 38,
+      fontSize: 12,
+      // Mobile: let the bar wrap so the meta cluster drops to its own row
+      // instead of forcing horizontal scroll on a phone.
+      height: isMobile ? 'auto' : 38,
+      minHeight: 38,
+      flexWrap: isMobile ? 'wrap' : 'nowrap',
     }}>
       {/* Brand */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 14px', borderRight: '1px solid #2a2a2a' }}>
@@ -58,6 +64,7 @@ function TopBar({ tab, setTab }) {
               borderBottom: active ? '2px solid #ff9d3d' : '2px solid transparent',
               color: active ? '#ff9d3d' : '#e8e8e8',
               padding: '0 18px',
+              minHeight: isMobile ? 44 : 'auto',  // comfortable touch target on phones
               fontFamily: 'inherit', fontSize: 12, fontWeight: active ? 700 : 500,
               cursor: 'pointer', letterSpacing: 0.5,
               display: 'flex', alignItems: 'center', gap: 8,
@@ -70,11 +77,19 @@ function TopBar({ tab, setTab }) {
       </div>
 
       {/* Right meta */}
-      <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 14, padding: '0 14px', fontSize: 11, color: '#6e6e6e' }}>
+      <div style={{
+        marginLeft: 'auto', display: 'flex', alignItems: 'center',
+        gap: isMobile ? 10 : 14, padding: isMobile ? '4px 12px' : '0 14px',
+        fontSize: 11, color: '#6e6e6e',
+        flexWrap: isMobile ? 'wrap' : 'nowrap',
+      }}>
         <LiveStamp />
         <SponsoredBy />
         <SponsorLink />
-        <span style={{ border: '1px solid #2a2a2a', padding: '2px 6px', color: '#e8e8e8' }}>F1 HELP</span>
+        {/* The F1 HELP hint is keyboard-only, so it's noise on touch. */}
+        {!isMobile && (
+          <span style={{ border: '1px solid #2a2a2a', padding: '2px 6px', color: '#e8e8e8' }}>F1 HELP</span>
+        )}
       </div>
     </div>
   );
@@ -85,6 +100,7 @@ function SiteFooter() {
   // layout (nav links / socials / version+copyright) to our terminal palette.
   // Right-aligned within a thin row beneath the tab-level status bar so it
   // doesn't overlap the dense main content above.
+  const isMobile = useIsMobile();
   const REPO = 'https://github.com/ambicuity/New-Grad-Jobs';
   const links = [
     { href: REPO,                                    label: 'Repo',   ext: true },
@@ -100,9 +116,9 @@ function SiteFooter() {
   ];
   return (
     <div style={{
-      display: 'flex', justifyContent: 'flex-end',
+      display: 'flex', justifyContent: isMobile ? 'center' : 'flex-end',
       borderTop: '1px solid #2a2a2a', background: '#0a0a0a',
-      padding: '4px 14px', gap: 14,
+      padding: isMobile ? '6px 10px' : '4px 14px', gap: isMobile ? 10 : 14,
       fontSize: 10, color: '#6e6e6e', letterSpacing: 0.3, flexWrap: 'wrap',
     }}>
       <FooterRow items={links} />
