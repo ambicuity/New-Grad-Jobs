@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-16T01:15:18.212645+00:00",
+    "last_updated": "2026-07-16T04:30:56.190508+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-17",
@@ -5290,25 +5290,25 @@
     },
     {
       "date": "2026-07-16",
-      "total_jobs": 1454,
+      "total_jobs": 1460,
       "categories": {
-        "security": 85,
+        "software_engineering": 858,
         "data_ml": 147,
-        "software_engineering": 853,
-        "other": 145,
-        "data_engineering": 25,
+        "security": 84,
+        "hardware": 22,
+        "other": 143,
+        "data_engineering": 26,
         "infrastructure_sre": 123,
-        "hardware": 18,
         "backend": 32,
         "quant_finance": 4,
         "product_management": 3,
         "frontend": 9,
-        "mobile": 10
+        "mobile": 9
       },
       "tiers": {
+        "other": 636,
         "unicorn": 676,
-        "faang_plus": 150,
-        "other": 628
+        "faang_plus": 148
       },
       "top_companies": [
         {
@@ -5328,6 +5328,10 @@
           "jobs": 38
         },
         {
+          "company": "Accenture",
+          "jobs": 33
+        },
+        {
           "company": "Booz Allen Hamilton",
           "jobs": 30
         },
@@ -5340,10 +5344,6 @@
           "jobs": 28
         },
         {
-          "company": "Accenture",
-          "jobs": 24
-        },
-        {
           "company": "xAI",
           "jobs": 21
         },
@@ -5353,8 +5353,8 @@
         }
       ],
       "unique_companies": 251,
-      "avg_jobs_per_company": 5.79,
-      "timestamp": "2026-07-16T01:15:18.211639+00:00"
+      "avg_jobs_per_company": 5.82,
+      "timestamp": "2026-07-16T04:30:56.189504+00:00"
     }
   ]
 }
