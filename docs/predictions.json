@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1465,
-      "change_percent": 1.74
+      "total_jobs": 1472,
+      "change_percent": 1.24
     },
     "30_days": {
       "total_jobs": 1515,
-      "change_percent": 5.21
+      "change_percent": 4.19
     }
   },
   "growing_categories": [
-    "software_engineering",
-    "infrastructure_sre",
-    "other"
+    "faang_plus",
+    "hardware",
+    "software_engineering"
   ],
   "declining_categories": [
+    "infrastructure_sre",
     "data_engineering",
-    "data_ml",
-    "none"
+    "data_ml"
   ],
   "confidence": 75,
   "insights": [
-    "The market exhibits a strong upward trend, with the current total (1440) significantly outpacing the 30-day average (1382), suggesting sustained hiring momentum.",
-    "Software Engineering remains the primary engine of growth, while Data Engineering and ML roles show signs of consolidation or cooling after recent fluctuations.",
-    "Unicorn companies continue to provide the most stable hiring volume, acting as a buffer against the volatility observed in FAANG+ hiring patterns."
+    "The market shows a strong upward trajectory, with the current total (1454) consistently outperforming the 30-day average (1388), signaling sustained hiring momentum.",
+    "FAANG+ companies have shown a significant late-period surge, suggesting that large-cap tech firms are aggressively expanding their new graduate intake as they approach the end of the current cycle.",
+    "While niche roles like SRE and Data Engineering are experiencing short-term volatility, the overall volume is being buoyed by robust demand in core software engineering and a stabilizing hardware sector."
   ],
-  "generated_at": "2026-07-15T00:57:55.489009+00:00",
+  "generated_at": "2026-07-16T01:15:19.537507+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-16",
-    "end": "2026-07-15"
+    "start": "2026-04-17",
+    "end": "2026-07-16"
   }
 }
