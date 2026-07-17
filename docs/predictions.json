@@ -11,25 +11,25 @@
     }
   },
   "growing_categories": [
-    "faang_plus",
-    "hardware",
+    "other",
+    "data_engineering",
     "software_engineering"
   ],
   "declining_categories": [
     "infrastructure_sre",
-    "data_engineering",
-    "data_ml"
+    "data_ml",
+    "none"
   ],
-  "confidence": 75,
+  "confidence": 78,
   "insights": [
-    "The market shows a strong upward trajectory, with the current total (1454) consistently outperforming the 30-day average (1388), signaling sustained hiring momentum.",
-    "FAANG+ companies have shown a significant late-period surge, suggesting that large-cap tech firms are aggressively expanding their new graduate intake as they approach the end of the current cycle.",
-    "While niche roles like SRE and Data Engineering are experiencing short-term volatility, the overall volume is being buoyed by robust demand in core software engineering and a stabilizing hardware sector."
+    "The market shows a strong upward trajectory, with the current 7-day average (1442) significantly outpacing the 30-day average (1392), signaling sustained hiring momentum.",
+    "FAANG+ companies have aggressively increased their new graduate job postings in the last week, offsetting minor pullbacks in specialized roles like SRE and Data/ML.",
+    "While niche roles are experiencing short-term volatility, the overall volume is trending toward a 30-day high, suggesting a healthy expansion in entry-level tech opportunities."
   ],
-  "generated_at": "2026-07-16T01:15:19.537507+00:00",
+  "generated_at": "2026-07-17T01:09:53.651918+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-17",
-    "end": "2026-07-16"
+    "start": "2026-04-18",
+    "end": "2026-07-17"
   }
 }
