@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-17T14:03:15.052433+00:00",
+    "last_updated": "2026-07-17T15:26:31.675337+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-18",
@@ -5303,34 +5303,34 @@
     },
     {
       "date": "2026-07-17",
-      "total_jobs": 1465,
+      "total_jobs": 1460,
       "categories": {
-        "software_engineering": 853,
-        "data_ml": 152,
+        "data_ml": 150,
+        "software_engineering": 852,
+        "security": 81,
+        "frontend": 9,
+        "other": 147,
+        "infrastructure_sre": 118,
         "backend": 34,
-        "other": 157,
-        "infrastructure_sre": 115,
-        "data_engineering": 30,
-        "security": 80,
+        "data_engineering": 34,
         "product_management": 5,
         "mobile": 10,
-        "frontend": 9,
         "hardware": 16,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 620,
-        "unicorn": 682,
+        "other": 612,
+        "unicorn": 685,
         "faang_plus": 163
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 224
+          "jobs": 225
         },
         {
           "company": "Anduril Industries",
-          "jobs": 197
+          "jobs": 198
         },
         {
           "company": "Waymo",
@@ -5342,15 +5342,15 @@
         },
         {
           "company": "Boeing",
-          "jobs": 37
+          "jobs": 38
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 31
+          "jobs": 32
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 28
+          "jobs": 29
         },
         {
           "company": "xAI",
@@ -5365,9 +5365,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 243,
-      "avg_jobs_per_company": 6.03,
-      "timestamp": "2026-07-17T14:03:15.051454+00:00"
+      "unique_companies": 247,
+      "avg_jobs_per_company": 5.91,
+      "timestamp": "2026-07-17T15:26:31.674468+00:00"
     }
   ]
 }

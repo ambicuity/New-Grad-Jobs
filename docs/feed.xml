@@ -5,28 +5,217 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 14:03:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 15:26:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Software Engineer III  at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8623280002</link>
-      <description>New grad role at ZoomInfo in Toronto, Ontario, Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 13:57:03 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623280002</guid>
+      <title>Associate Data Scientist at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5284874008?gh_jid=5284874008</link>
+      <description>New grad role at Scopely in US - Sunnyvale, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Jul 2026 15:20:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5284874008?gh_jid=5284874008</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Marketing at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008</link>
+      <description>New grad role at Scopely in US - San Francisco, United States; US - Sunnyvale, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Jul 2026 15:20:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Unity) at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5347387008?gh_jid=5347387008</link>
+      <description>New grad role at Scopely in IN - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 15:20:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5347387008?gh_jid=5347387008</guid>
+    </item>
+    <item>
+      <title>Software Engineer (Unity) at Scopely</title>
+      <link>https://job-boards.greenhouse.io/scopely/jobs/5180560008?gh_jid=5180560008</link>
+      <description>New grad role at Scopely in IN - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 15:20:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5180560008?gh_jid=5180560008</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Observability (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 15:13:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:36:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/6102343004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco, New York City, London, Berlin. Category: Security Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:31:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/6102343004</guid>
+    </item>
+    <item>
+      <title>Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:30:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
+    </item>
+    <item>
+      <title>Frontend Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Frontend Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:29:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
+    </item>
+    <item>
+      <title>Associate Application Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8048659</link>
+      <description>New grad role at Twilio in Remote - India. Category: Other</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8048659</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Software Engineer L3 at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8009057</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8009057</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8007455</link>
+      <description>New grad role at Twilio in Remote - Spain. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8007455</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7996774</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996774</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L3) Data Substrate at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7954715</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7954715</guid>
+    </item>
+    <item>
+      <title>AV &amp; Event Engineer L4 at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7927688</link>
+      <description>New grad role at Twilio in San Francisco, California. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7927688</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Identity at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
+    <item>
+      <title>Software Engineer, (L2) CDP at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7602727</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7602727</guid>
+    </item>
+    <item>
+      <title>Software Engineer L3 Phone Numbers at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7724877</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7724877</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7188174</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7188174</guid>
+    </item>
+    <item>
+      <title>Software Engineer L2 - Cloud Infrastructure  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7434770</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:28:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7434770</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Backend (Consumer - Risk) at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/7991763?gh_jid=7991763</link>
+      <description>New grad role at Coinbase in Remote - Canada. Category: Backend Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:26:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/7991763?gh_jid=7991763</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:24:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:24:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</guid>
+    </item>
+    <item>
+      <title>Software Developer, Ops Platform and Fraud Investigations at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7737164?t=gh_src=&amp;gh_jid=7737164</link>
+      <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:24:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7737164?t=gh_src=&amp;gh_jid=7737164</guid>
     </item>
     <item>
       <title>Software Engineer III  at ZoomInfo</title>
       <link>https://www.zoominfo.com/careers?gh_jid=8623285002</link>
       <description>New grad role at ZoomInfo in Bethesda, Maryland, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 13:38:36 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 14:23:33 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623285002</guid>
     </item>
     <item>
       <title>Software Engineer III at ZoomInfo</title>
       <link>https://www.zoominfo.com/careers?gh_jid=8606563002</link>
       <description>New grad role at ZoomInfo in Bethesda, Maryland, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 13:31:10 +0000</pubDate>
+      <pubDate>Fri, 17 Jul 2026 14:09:18 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8606563002</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5078772007?gh_jid=5078772007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:08:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5078772007?gh_jid=5078772007</guid>
+    </item>
+    <item>
+      <title>Software Engineer III  at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8623280002</link>
+      <description>New grad role at ZoomInfo in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 14:03:18 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8623280002</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -50,25 +239,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
-      <title>Data Scientist, Marketing at Scopely</title>
-      <link>https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008</link>
-      <description>New grad role at Scopely in US - San Francisco, United States; US - Sunnyvale, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 17 Jul 2026 11:47:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scopely/jobs/5208115008?gh_jid=5208115008</guid>
-    </item>
-    <item>
       <title>Systems Engineer (TS/SCI w/ Poly) at SIXGEN</title>
       <link>https://job-boards.greenhouse.io/sixgeninc/jobs/5124502008</link>
       <description>New grad role at SIXGEN in Columbia, MD. Category: Software Engineering</description>
       <pubDate>Fri, 17 Jul 2026 10:24:50 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/sixgeninc/jobs/5124502008</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -79,10 +254,17 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
@@ -93,17 +275,17 @@
     </item>
     <item>
       <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 09:35:38 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007</guid>
     </item>
     <item>
       <title>Systems Engineer, Battlespace at Anduril Industries</title>
@@ -121,17 +303,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 09:32:30 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 17 Jul 2026 09:32:30 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 17 Jul 2026 09:32:30 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -174,188 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 17 Jul 2026 09:17:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5129324007?gh_jid=5129324007</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at New Relic</title>
-      <link>https://job-boards.greenhouse.io/newrelic/jobs/5235277008</link>
-      <description>New grad role at New Relic in Hyderabad, India. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 07:16:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5235277008</guid>
-    </item>
-    <item>
-      <title>Distributed Systems Engineer at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/8066589?gh_jid=8066589</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 06:48:17 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/8066589?gh_jid=8066589</guid>
-    </item>
-    <item>
-      <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 06:41:45 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7561739?gh_jid=7561739</guid>
-    </item>
-    <item>
-      <title>[2026] Data Scientist, Social  at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7463634?gh_jid=7463634</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 17 Jul 2026 06:41:33 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7463634?gh_jid=7463634</guid>
-    </item>
-    <item>
-      <title>Software Engineer, User Co-Experience at Roblox</title>
-      <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 06:39:40 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Engineering at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 06:32:43 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ads Platform at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 06:31:26 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Workers Deploy &amp; Config at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/7377424?gh_jid=7377424</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 05:06:50 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/7377424?gh_jid=7377424</guid>
-    </item>
-    <item>
-      <title>Backend Software Engineer, API Enterprise Controls at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/d0956b18-4f80-4c67-b94b-313181a16be6</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Backend Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 04:25:42 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/d0956b18-4f80-4c67-b94b-313181a16be6</guid>
-    </item>
-    <item>
-      <title>HPC Systems Engineer, Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 04:19:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Tax Experience, BizTech at Airbnb</title>
-      <link>https://careers.airbnb.com/positions/8070597?gh_jid=8070597</link>
-      <description>New grad role at Airbnb in United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 04:01:49 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.airbnb.com/positions/8070597?gh_jid=8070597</guid>
-    </item>
-    <item>
-      <title>Software Engineer - GenAI inference  at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8202670002</link>
-      <description>New grad role at Databricks in San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 02:39:34 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8202670002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Web Products at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8635225002</link>
-      <description>New grad role at Databricks in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 02:39:34 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8635225002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Web Products at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002</link>
-      <description>New grad role at Databricks in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 02:39:34 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8560779002</guid>
-    </item>
-    <item>
-      <title>Systems PhD - Software Engineer  at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</link>
-      <description>New grad role at Databricks in Bellevue, Washington; Seattle, Washington. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 02:39:34 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</guid>
-    </item>
-    <item>
-      <title>Systems PhD - Software Engineer  at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</link>
-      <description>New grad role at Databricks in Mountain View, California; San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 02:39:34 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Battlespace Awareness at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5180557007?gh_jid=5180557007</link>
-      <description>New grad role at Anduril Industries in Broomfield, Colorado, United States; Fort Collins, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 01:56:03 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5180557007?gh_jid=5180557007</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Optimization - Pricing at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8615368002?gh_jid=8615368002</link>
-      <description>New grad role at Lyft in New York, NY. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 17 Jul 2026 00:10:34 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8615368002?gh_jid=8615368002</guid>
-    </item>
-    <item>
-      <title>GET (Graduate Engineer Trainee) at Tech-long Packaging Machinery India Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=b10553b72e7baaaa</link>
-      <description>New grad role at Tech-long Packaging Machinery India Pvt Ltd in GJ, IN. Category: Other</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b10553b72e7baaaa</guid>
-    </item>
-    <item>
-      <title>Engineer II Wet Seal Projects at Smiths Group</title>
-      <link>https://in.indeed.com/viewjob?jk=db1ca042a90c78d6</link>
-      <description>New grad role at Smiths Group in MH, IN. Category: Other</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=db1ca042a90c78d6</guid>
-    </item>
-    <item>
-      <title>Software Engineer at MAERSK</title>
-      <link>https://in.indeed.com/viewjob?jk=9bae767338569268</link>
-      <description>New grad role at MAERSK in KA, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9bae767338569268</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Volvo Cars</title>
-      <link>https://in.indeed.com/viewjob?jk=94b57ae8bd785b60</link>
-      <description>New grad role at Volvo Cars in KA, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=94b57ae8bd785b60</guid>
-    </item>
-    <item>
-      <title>Software Developer at WhizHack Technologies Pvt. Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=53babe9ae1874cbb</link>
-      <description>New grad role at WhizHack Technologies Pvt. Ltd. in HR, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=53babe9ae1874cbb</guid>
-    </item>
-    <item>
-      <title>Associate Software Developer at WhizHack Technologies Pvt. Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=cb42522b24bd13ac</link>
-      <description>New grad role at WhizHack Technologies Pvt. Ltd. in HR, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cb42522b24bd13ac</guid>
-    </item>
-    <item>
-      <title>Junior Python Developer at StatValu Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=cad898c07ba7c9f9</link>
-      <description>New grad role at StatValu Private Limited in KA, IN. Category: Other</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cad898c07ba7c9f9</guid>
-    </item>
-    <item>
-      <title>Software Engineer - AI Software &amp; Platform at Cisco</title>
-      <link>https://in.indeed.com/viewjob?jk=10414a5372b3cd35</link>
-      <description>New grad role at Cisco in KA, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=10414a5372b3cd35</guid>
     </item>
   </channel>
 </rss>
