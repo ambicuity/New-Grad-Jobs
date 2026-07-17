@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-17T20:56:11.684840+00:00",
+    "last_updated": "2026-07-17T21:48:39.486880+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-18",
@@ -5303,25 +5303,25 @@
     },
     {
       "date": "2026-07-17",
-      "total_jobs": 1450,
+      "total_jobs": 1440,
       "categories": {
         "data_ml": 144,
-        "software_engineering": 866,
-        "infrastructure_sre": 108,
-        "backend": 34,
-        "mobile": 10,
-        "data_engineering": 33,
-        "security": 81,
-        "product_management": 6,
+        "software_engineering": 865,
+        "security": 79,
         "frontend": 9,
-        "other": 135,
+        "backend": 34,
+        "mobile": 9,
+        "infrastructure_sre": 110,
+        "data_engineering": 34,
+        "product_management": 4,
+        "other": 128,
         "hardware": 20,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 601,
-        "unicorn": 693,
-        "faang_plus": 156
+        "other": 596,
+        "unicorn": 691,
+        "faang_plus": 153
       },
       "top_companies": [
         {
@@ -5330,7 +5330,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 199
+          "jobs": 198
         },
         {
           "company": "Waymo",
@@ -5346,7 +5346,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 30
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 24
         },
         {
           "company": "xAI",
@@ -5359,15 +5363,11 @@
         {
           "company": "Figma",
           "jobs": 21
-        },
-        {
-          "company": "Stripe",
-          "jobs": 21
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 6.22,
-      "timestamp": "2026-07-17T20:56:11.683954+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 6.26,
+      "timestamp": "2026-07-17T21:48:39.485979+00:00"
     }
   ]
 }
