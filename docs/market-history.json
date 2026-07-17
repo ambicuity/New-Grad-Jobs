@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-17T04:26:24.360712+00:00",
+    "last_updated": "2026-07-17T06:39:44.767986+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-18",
@@ -5303,25 +5303,25 @@
     },
     {
       "date": "2026-07-17",
-      "total_jobs": 1446,
+      "total_jobs": 1461,
       "categories": {
         "software_engineering": 860,
-        "data_ml": 134,
-        "other": 143,
-        "infrastructure_sre": 122,
+        "backend": 34,
+        "data_ml": 137,
+        "security": 81,
+        "infrastructure_sre": 125,
+        "other": 148,
         "data_engineering": 29,
-        "security": 79,
-        "backend": 33,
         "product_management": 5,
         "mobile": 10,
         "frontend": 9,
-        "hardware": 18,
+        "hardware": 19,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 604,
-        "faang_plus": 161,
-        "unicorn": 681
+        "unicorn": 682,
+        "other": 616,
+        "faang_plus": 163
       },
       "top_companies": [
         {
@@ -5337,11 +5337,11 @@
           "jobs": 42
         },
         {
-          "company": "Boeing",
+          "company": "OpenAI",
           "jobs": 39
         },
         {
-          "company": "OpenAI",
+          "company": "Boeing",
           "jobs": 38
         },
         {
@@ -5365,9 +5365,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 6.21,
-      "timestamp": "2026-07-17T04:26:24.359792+00:00"
+      "unique_companies": 238,
+      "avg_jobs_per_company": 6.14,
+      "timestamp": "2026-07-17T06:39:44.767001+00:00"
     }
   ]
 }
