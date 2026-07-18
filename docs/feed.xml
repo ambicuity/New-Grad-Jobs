@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 22:32:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 23:36:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Traffic at Figma</title>
@@ -128,6 +128,13 @@
     </item>
     <item>
       <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</link>
+      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</link>
       <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
@@ -139,13 +146,6 @@
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178116007?gh_jid=5178116007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</link>
-      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
     </item>
     <item>
       <title>HPC Systems Engineer, Modeling &amp; Simulation at Anduril Industries</title>
@@ -254,17 +254,17 @@
     </item>
     <item>
       <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:55:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 12:55:00 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 12:55:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</guid>
     </item>
     <item>
       <title>Systems Security Engineer Anti-Tamper at Anduril Industries</title>
@@ -275,17 +275,17 @@
     </item>
     <item>
       <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:52:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 12:52:05 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 12:52:05 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
     </item>
     <item>
       <title>Software Engineer - Modeling &amp; Simulation at Anduril Industries</title>
@@ -345,17 +345,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:31:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 12:31:16 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 12:31:16 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
   </channel>
 </rss>
