@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1424<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1427<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -47,14 +47,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->16<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->120<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->123<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,424** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,427** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -252,17 +252,17 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | L3Harris | Associate Manufacturing Engineer | Northampton, MA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=665f8a831bad1b68) |
+| Hurley Medical Center | Accounts Payable Clerk Trainee | Flint, MI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4ddfe29ce0411911) |
 | Herc Rentals | ProSales Associate (Early Career Sales Program) | Garner, NC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b811a931a2f46d8c) |
+| TikTok | Real Estate Lease Administration Graduate (Real Estate & Facilities - AMS) - 2026 Start (BS/MS) | San Jose, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=182a85ec05fe2512) |
 | St. Luke's Health System | STAR Residency - New Grad RN (with <12mo of RN exp) - Inpatient Oncology - Boise | Boise, ID, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b586aabb4e492ddb) |
 | Northrop Grumman | Engineering Technician (Level 2/3) | United States-California-Redondo Beach | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Engineering-Technician--Level-2-3-_R10241027) |
 | Northrop Grumman | Computer Aided Design and Modeling Engineer - Level 2 | United States-Colorado-Colorado Springs | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Engineer-CAD-CAM_R10240108-1) |
 | Twilio | Associate Application Engineer | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| Medpace | Entry Level Software QA Test Engineer | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=19c61f6ae9cd5294) |
-| Tech-long Packaging Machinery India Pvt Ltd | GET (Graduate Engineer Trainee) | GJ, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=b10553b72e7baaaa) |
-| Eduspace Technologies | Graduate Trainee | UP, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=d27074b656d1a01a) |
 | Smiths Group | Engineer II Wet Seal Projects | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=db1ca042a90c78d6) |
+| Tech-long Packaging Machinery India Pvt Ltd | GET (Graduate Engineer Trainee) | GJ, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=b10553b72e7baaaa) |
 
-**[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 123 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -375,4 +375,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-18 20:39:10 UTC*
+*Last updated: 2026-07-18 21:36:21 UTC*
