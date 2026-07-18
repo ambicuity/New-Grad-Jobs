@@ -1,6 +1,19 @@
 import json
+import math
 import os
-import re
+
+
+def _replace_invalid_numbers(obj):
+    """Recursively replace NaN and Infinity values with None."""
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            return None
+        return obj
+    if isinstance(obj, dict):
+        return {k: _replace_invalid_numbers(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_replace_invalid_numbers(v) for v in obj]
+    return obj
 
 
 def fix_json_file(filepath: str) -> None:
@@ -18,39 +31,17 @@ def fix_json_file(filepath: str) -> None:
         return
 
     with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
+        data = json.load(f, parse_constant=lambda x: float(x))
 
-    # Check for NaN
-    if 'NaN' not in content:
-        print("No NaN found.")
-        return
+    fixed_data = _replace_invalid_numbers(data)
 
-    # Replace NaN with null
-    # We use regex to be safe about not replacing text inside strings if possible,
-    # but strictly speaking `NaN` as a value is distinct from `"NaN"`.
-    # However, simply string replacing ` NaN,` with ` null,` might be safer or `: NaN`
-
-    # Regex for key: NaN pattern
-    # Matches ": NaN" or ": NaN," or ": NaN}"
-    content_fixed = re.sub(r':\s*NaN([,\}\s])', r': null\1', content)
-
-    # Also handle infinite
-    content_fixed = re.sub(r':\s*Infinity([,\}\s])', r': null\1', content_fixed)
-    content_fixed = re.sub(r':\s*-Infinity([,\}\s])', r': null\1', content_fixed)
-
-    if content != content_fixed:
+    if fixed_data != data:
         print("Fixed NaN/Infinity values.")
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(content_fixed)
-
-        # Verify it parses
-        try:
-            json.loads(content_fixed)
-            print("Verification successful: Valid JSON.")
-        except json.JSONDecodeError as e:
-            print(f"Warning: Result is still not valid JSON: {e}")
+            json.dump(fixed_data, f, indent=2, ensure_ascii=False)
+        print("Verification successful: Valid JSON.")
     else:
-        print("No changes made via regex (maybe NaN is inside strings?)")
+        print("No NaN/Infinity values found.")
 
 fix_json_file('jobs.json')
 fix_json_file('docs/jobs.json')
