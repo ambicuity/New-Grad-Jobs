@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 18:40:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 19:53:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>QA/DevOps Engineer at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8637648002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 18 Jul 2026 19:03:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8637648002</guid>
+    </item>
+    <item>
+      <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 18:44:32 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7561739?gh_jid=7561739</guid>
+    </item>
+    <item>
+      <title>[2026] Data Scientist, Social  at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7463634?gh_jid=7463634</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 18 Jul 2026 18:44:16 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7463634?gh_jid=7463634</guid>
+    </item>
+    <item>
+      <title>Software Engineer, User Co-Experience at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7711780?gh_jid=7711780</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 18:41:37 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7711780?gh_jid=7711780</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
       <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Anduril Industries in Ashville, Ohio, United States; Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Remote; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 18 Jul 2026 12:27:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152463007?gh_jid=5152463007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:25:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152463007?gh_jid=5152463007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, C++ at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5190195007?gh_jid=5190195007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:16:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5190195007?gh_jid=5190195007</guid>
-    </item>
-    <item>
-      <title>Production Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5189877007?gh_jid=5189877007</link>
-      <description>New grad role at Anduril Industries in Lexington, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 12:09:12 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5189877007?gh_jid=5189877007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 11:52:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
     </item>
   </channel>
 </rss>
