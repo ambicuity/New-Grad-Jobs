@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 17:41:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 18:40:24 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Data Engineering at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 18:34:17 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ads Platform at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 18:33:01 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
+    </item>
     <item>
       <title>Early Career Firmware Engineer  at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 11:52:26 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 11:52:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer - Endpoint Security at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 11:52:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007</guid>
     </item>
   </channel>
 </rss>
