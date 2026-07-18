@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1472,
-      "change_percent": 1.24
+      "total_jobs": 1468,
+      "change_percent": 1.1
     },
     "30_days": {
       "total_jobs": 1515,
-      "change_percent": 4.19
+      "change_percent": 4.34
     }
   },
   "growing_categories": [
-    "other",
-    "data_engineering",
-    "software_engineering"
+    "faang_plus",
+    "software_engineering",
+    "data_ml"
   ],
   "declining_categories": [
     "infrastructure_sre",
-    "data_ml",
-    "none"
+    "other",
+    "data_engineering"
   ],
-  "confidence": 78,
+  "confidence": 75,
   "insights": [
-    "The market shows a strong upward trajectory, with the current 7-day average (1442) significantly outpacing the 30-day average (1392), signaling sustained hiring momentum.",
-    "FAANG+ companies have aggressively increased their new graduate job postings in the last week, offsetting minor pullbacks in specialized roles like SRE and Data/ML.",
-    "While niche roles are experiencing short-term volatility, the overall volume is trending toward a 30-day high, suggesting a healthy expansion in entry-level tech opportunities."
+    "The market shows a clear upward momentum, with the current 7-day average (1444) significantly outperforming the 30-day average (1394), indicating a recent acceleration in hiring volume.",
+    "FAANG+ companies are aggressively increasing their new graduate headcount, acting as the primary driver for the recent growth trend.",
+    "While Infrastructure/SRE roles have seen a short-term contraction, the overall stability in core Software Engineering roles suggests a healthy, sustained hiring cycle for the next month."
   ],
-  "generated_at": "2026-07-17T01:09:53.651918+00:00",
+  "generated_at": "2026-07-18T01:07:26.808331+00:00",
   "data_points": 89,
   "date_range": {
-    "start": "2026-04-18",
-    "end": "2026-07-17"
+    "start": "2026-04-20",
+    "end": "2026-07-18"
   }
 }
