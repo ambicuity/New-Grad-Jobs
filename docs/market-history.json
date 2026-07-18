@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T06:22:29.621256+00:00",
+    "last_updated": "2026-07-18T08:17:04.886328+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-20",
@@ -5316,25 +5316,25 @@
     },
     {
       "date": "2026-07-18",
-      "total_jobs": 1302,
+      "total_jobs": 1297,
       "categories": {
-        "software_engineering": 812,
+        "software_engineering": 808,
         "data_ml": 138,
-        "security": 71,
+        "security": 70,
         "frontend": 9,
         "backend": 34,
         "mobile": 10,
-        "infrastructure_sre": 96,
+        "infrastructure_sre": 94,
+        "hardware": 14,
         "data_engineering": 26,
         "product_management": 4,
-        "other": 84,
-        "hardware": 13,
+        "other": 85,
         "quant_finance": 5
       },
       "tiers": {
         "unicorn": 692,
-        "other": 543,
-        "faang_plus": 67
+        "other": 539,
+        "faang_plus": 66
       },
       "top_companies": [
         {
@@ -5355,7 +5355,7 @@
         },
         {
           "company": "Accenture",
-          "jobs": 26
+          "jobs": 24
         },
         {
           "company": "xAI",
@@ -5378,9 +5378,9 @@
           "jobs": 20
         }
       ],
-      "unique_companies": 219,
+      "unique_companies": 218,
       "avg_jobs_per_company": 5.95,
-      "timestamp": "2026-07-18T06:22:29.620136+00:00"
+      "timestamp": "2026-07-18T08:17:04.884291+00:00"
     }
   ]
 }
