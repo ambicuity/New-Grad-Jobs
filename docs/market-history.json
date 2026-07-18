@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T21:36:21.091896+00:00",
+    "last_updated": "2026-07-18T22:32:45.783096+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-20",
@@ -5316,24 +5316,24 @@
     },
     {
       "date": "2026-07-18",
-      "total_jobs": 1427,
+      "total_jobs": 1428,
       "categories": {
-        "infrastructure_sre": 110,
         "software_engineering": 866,
-        "data_ml": 144,
+        "infrastructure_sre": 111,
+        "data_ml": 146,
         "frontend": 9,
-        "security": 77,
+        "security": 76,
         "data_engineering": 29,
         "backend": 34,
         "mobile": 10,
         "other": 123,
         "product_management": 4,
-        "hardware": 16,
-        "quant_finance": 5
+        "quant_finance": 5,
+        "hardware": 15
       },
       "tiers": {
         "unicorn": 690,
-        "other": 578,
+        "other": 579,
         "faang_plus": 159
       },
       "top_companies": [
@@ -5370,17 +5370,17 @@
           "jobs": 22
         },
         {
-          "company": "Pinterest",
+          "company": "Figma",
           "jobs": 21
         },
         {
-          "company": "Figma",
+          "company": "Pinterest",
           "jobs": 21
         }
       ],
       "unique_companies": 224,
-      "avg_jobs_per_company": 6.37,
-      "timestamp": "2026-07-18T21:36:21.090744+00:00"
+      "avg_jobs_per_company": 6.38,
+      "timestamp": "2026-07-18T22:32:45.781946+00:00"
     }
   ]
 }

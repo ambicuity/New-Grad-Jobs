@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 21:36:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 22:32:45 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Traffic at Figma</title>
+      <link>https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004</link>
+      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
+      <pubDate>Sat, 18 Jul 2026 22:22:17 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004</guid>
+    </item>
     <item>
       <title>QA/DevOps Engineer at Discord</title>
       <link>https://job-boards.greenhouse.io/discord/jobs/8637648002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 12:31:16 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Security Data Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States; Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Remote; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 18 Jul 2026 12:27:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007</guid>
     </item>
   </channel>
 </rss>
