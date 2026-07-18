@@ -1,19 +1,5 @@
 import json
-import math
 import os
-
-
-def _replace_invalid_numbers(obj):
-    """Recursively replace NaN and Infinity values with None."""
-    if isinstance(obj, float):
-        if math.isnan(obj) or math.isinf(obj):
-            return None
-        return obj
-    if isinstance(obj, dict):
-        return {k: _replace_invalid_numbers(v) for k, v in obj.items()}
-    if isinstance(obj, list):
-        return [_replace_invalid_numbers(v) for v in obj]
-    return obj
 
 
 def fix_json_file(filepath: str) -> None:
@@ -30,18 +16,24 @@ def fix_json_file(filepath: str) -> None:
         print(f"File not found: {filepath}")
         return
 
+    has_invalid_constants = False
+
+    def handle_constant(val: str) -> None:
+        nonlocal has_invalid_constants
+        has_invalid_constants = True
+        return None
+
     with open(filepath, 'r', encoding='utf-8') as f:
-        data = json.load(f, parse_constant=lambda x: float(x))
+        data = json.load(f, parse_constant=handle_constant)
 
-    fixed_data = _replace_invalid_numbers(data)
-
-    if fixed_data != data:
+    if has_invalid_constants:
         print("Fixed NaN/Infinity values.")
         with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(fixed_data, f, indent=2, ensure_ascii=False)
+            json.dump(data, f, indent=2, ensure_ascii=False)
         print("Verification successful: Valid JSON.")
     else:
         print("No NaN/Infinity values found.")
+
 
 fix_json_file('jobs.json')
 fix_json_file('docs/jobs.json')
