@@ -32,11 +32,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1434<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1431<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->871<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->869<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->34<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->10<!-- /COUNT --> |
@@ -46,15 +46,15 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->113<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->14<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->121<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->16<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->118<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,434** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,431** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -62,18 +62,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Anduril Industries | Security Software Engineer - Endpoint Security | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Ashville, Ohio, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086967007?gh_jid=5086967007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Atlanta, Georgia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086964007?gh_jid=5086964007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086962007?gh_jid=5086962007) |
-| Anduril Industries | Security Software Engineer - Endpoint Security | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086958007?gh_jid=5086958007) |
-| Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007) |
-| Anduril Industries | Software Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5064165007?gh_jid=5064165007) |
-| Anduril Industries | Software Engineer, Game Development | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007) |
-| Anduril Industries | Software Engineer, Game Development | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007) |
+| Anduril Industries | Robotics Software Engineer, Maneuver Dominance | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007) |
+| Anduril Industries | Robotics Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007) |
+| Anduril Industries | Software Engineer, Robotics | Irvine, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007) |
+| Anduril Industries | Software Engineer, Agentic Modeling & Simulation | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007) |
+| Anduril Industries | Software Engineer, Agentic Modeling & Simulation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007) |
+| Anduril Industries | Robotics Software Engineer | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007) |
+| Anduril Industries | Robotics Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007) |
+| Anduril Industries | Software Engineer - Modeling & Simulation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007) |
+| Anduril Industries | Robotics Software Engineer, Sensor Integration | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007) |
+| Anduril Industries | Robotics Software Engineer, Verification & Validation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5083521007?gh_jid=5083521007) |
 
-**[View all 871 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 869 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -133,13 +133,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Anduril Industries | 2026 Strategic Security Analyst - Early Career Rotation Program | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159902007?gh_jid=5159902007) |
 | Anduril Industries | Product Security Engineer, Programs | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5042718007?gh_jid=5042718007) |
 | Anduril Industries | Product Security Engineer, Programs | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5042721007?gh_jid=5042721007) |
 | Anduril Industries | Product Security Engineer, Programs | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5041620007?gh_jid=5041620007) |
 | Anduril Industries | Product Security Engineer, Programs | Quincy, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5183808007?gh_jid=5183808007) |
 | Anduril Industries | System Security Engineer, Program Protection | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4978917007?gh_jid=4978917007) |
-| Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Anduril Industries | Systems Security Engineer, Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5044386007?gh_jid=5044386007) |
 | Anduril Industries | Systems Security Engineer, Programs | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4961987007?gh_jid=4961987007) |
 | Anthropic | Platform Security Engineer, OpenBMC | San Francisco, CA / New York City, NY / Seattle, WA | Today | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5271346008) |
@@ -152,16 +152,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007) |
+| Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007) |
+| Anduril Industries | Finance Associate, Engineering | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007) |
+| Anduril Industries | 2026 Early Career Engineering Finance Associate | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007) |
+| Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
+| Anduril Industries | Security Data Engineer | Ashville, Ohio, United States; Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Remote; Seattle, Washington, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007) |
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Anduril Industries | 2026 Early Career Electrical Engineer | Costa Mesa, California, United States; Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007) |
 | Anduril Industries | 2026 Early Career Electrical Engineer, Battlespace Awareness Radar Team | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4747967007?gh_jid=4747967007) |
-| Anduril Industries | 2026 Early Career Engineering Finance Associate | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007) |
-| Anduril Industries | 2026 Early Career Finance Coordinator | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5161421007?gh_jid=5161421007) |
-| Anduril Industries | 2026 Early Career Flight Test Engineer, Altius | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007) |
-| Anduril Industries | 2026 Early Career Manufacturing Engineer | Costa Mesa, California, United States; Irvine, California, United States; Santa Ana, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007) |
-| Anduril Industries | 2026 Early Career Mechanical Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007) |
-| Anduril Industries | 2026 Early Career Test & Evaluation Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5185888007?gh_jid=5185888007) |
 
 **[View all 147 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -243,7 +243,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | New Graduate Engineer, Electrical (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starshield) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8493166002?gh_jid=8493166002) |
 
-**[View all 14 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 16 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -262,7 +262,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Ace Software Consulting Inc. | Junior Java Developer | Remote, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=3282f576dc81d003) |
 | Mott MacDonald | Graduate Civil Engineer - 2026 | Vancouver, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=f9cb22492f91fa91) |
 
-**[View all 121 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 118 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -375,4 +375,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-18 11:57:44 UTC*
+*Last updated: 2026-07-18 13:14:31 UTC*
