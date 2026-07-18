@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T08:17:04.886328+00:00",
+    "last_updated": "2026-07-18T09:54:01.001712+00:00",
     "total_snapshots": 89,
     "date_range": {
       "start": "2026-04-20",
@@ -5316,25 +5316,25 @@
     },
     {
       "date": "2026-07-18",
-      "total_jobs": 1297,
+      "total_jobs": 1432,
       "categories": {
-        "software_engineering": 808,
-        "data_ml": 138,
-        "security": 70,
+        "data_engineering": 30,
+        "software_engineering": 871,
+        "data_ml": 147,
+        "security": 76,
         "frontend": 9,
         "backend": 34,
         "mobile": 10,
-        "infrastructure_sre": 94,
-        "hardware": 14,
-        "data_engineering": 26,
+        "infrastructure_sre": 113,
+        "other": 119,
         "product_management": 4,
-        "other": 85,
+        "hardware": 14,
         "quant_finance": 5
       },
       "tiers": {
         "unicorn": 692,
-        "other": 539,
-        "faang_plus": 66
+        "other": 585,
+        "faang_plus": 155
       },
       "top_companies": [
         {
@@ -5354,7 +5354,19 @@
           "jobs": 38
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 38
+        },
+        {
           "company": "Accenture",
+          "jobs": 24
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 24
+        },
+        {
+          "company": "Boeing",
           "jobs": 24
         },
         {
@@ -5364,23 +5376,11 @@
         {
           "company": "Pinterest",
           "jobs": 21
-        },
-        {
-          "company": "Figma",
-          "jobs": 21
-        },
-        {
-          "company": "Stripe",
-          "jobs": 21
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 20
         }
       ],
-      "unique_companies": 218,
-      "avg_jobs_per_company": 5.95,
-      "timestamp": "2026-07-18T08:17:04.884291+00:00"
+      "unique_companies": 221,
+      "avg_jobs_per_company": 6.48,
+      "timestamp": "2026-07-18T09:54:01.000437+00:00"
     }
   ]
 }
