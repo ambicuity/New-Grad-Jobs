@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T18:35:37.106244+00:00",
+    "last_updated": "2026-07-19T19:52:41.891528+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-20",
@@ -5384,9 +5384,9 @@
     },
     {
       "date": "2026-07-19",
-      "total_jobs": 1416,
+      "total_jobs": 1414,
       "categories": {
-        "software_engineering": 854,
+        "software_engineering": 852,
         "data_ml": 143,
         "infrastructure_sre": 110,
         "data_engineering": 33,
@@ -5401,8 +5401,8 @@
       },
       "tiers": {
         "unicorn": 694,
-        "other": 564,
-        "faang_plus": 158
+        "other": 563,
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -5427,7 +5427,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5447,8 +5447,8 @@
         }
       ],
       "unique_companies": 218,
-      "avg_jobs_per_company": 6.5,
-      "timestamp": "2026-07-19T18:35:37.105298+00:00"
+      "avg_jobs_per_company": 6.49,
+      "timestamp": "2026-07-19T19:52:41.890515+00:00"
     }
   ]
 }
