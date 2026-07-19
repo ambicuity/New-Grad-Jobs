@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 14:17:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 15:22:09 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Web Platform at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5305402008</link>
+      <description>New grad role at Anthropic in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 14:58:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5305402008</guid>
+    </item>
     <item>
       <title>Software Engineer, Evals at Glean</title>
       <link>https://job-boards.greenhouse.io/gleanwork/jobs/4712438005</link>
@@ -232,6 +239,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a95a2cf24c467a6c</guid>
     </item>
     <item>
+      <title>Mid Data Engineer at Forge Group, LLC</title>
+      <link>https://www.indeed.com/viewjob?jk=d0a6dc12d8a03ad6</link>
+      <description>New grad role at Forge Group, LLC in Reston, VA, US. Category: Data Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0a6dc12d8a03ad6</guid>
+    </item>
+    <item>
+      <title>.Net - Associate Engineer at Iris Software</title>
+      <link>https://in.indeed.com/viewjob?jk=0437bde923694297</link>
+      <description>New grad role at Iris Software in UP, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0437bde923694297</guid>
+    </item>
+    <item>
       <title>Software Engineer, Traffic at Figma</title>
       <link>https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004</link>
       <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
-    </item>
-    <item>
-      <title>HPC Systems Engineer, Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 13:41:49 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Frontend Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 13:41:36 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5156713007?gh_jid=5156713007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 13:34:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5156713007?gh_jid=5156713007</guid>
     </item>
   </channel>
 </rss>
