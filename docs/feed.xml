@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 12:44:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 14:17:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Evals at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4712438005</link>
+      <description>New grad role at Glean in Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 13:30:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4712438005</guid>
+    </item>
     <item>
       <title>Embedded Software Engineer, C++ at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5190195007?gh_jid=5190195007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 13:34:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5156713007?gh_jid=5156713007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, C2 Networking - Edge Compute and Communications at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 18 Jul 2026 13:27:17 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</guid>
     </item>
   </channel>
 </rss>
