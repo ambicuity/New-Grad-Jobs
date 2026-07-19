@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1410<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1415<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->849<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->851<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->10<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->143<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->32<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->110<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->33<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->111<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->14<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->123<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->124<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,410** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,415** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Security Software Engineer - Endpoint Security | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5086960007?gh_jid=5086960007) |
 | Anduril Industries | Security Software Engineer - Endpoint Security | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5002801007?gh_jid=5002801007) |
 
-**[View all 849 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 851 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -178,11 +178,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Figma | Data Engineer | San Francisco, CA • New York, NY • United States | 2 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004) |
 | NCR Atleos | SW Engineer II | TS, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=53525df1f4657ce4) |
 | NCR Atleos | SW Engineer II | TS, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=14f363fa6f27c8a7) |
+| NCR Atleos | SW Engineer II | TS, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=ebda96b351d3d37e) |
 | Booz Allen Hamilton | Data Engineer | Chantilly, VA | 2 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Data-Engineer_R0244707) |
 | Booz Allen Hamilton | Data Engineer | San Diego, CA | 2 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Data-Engineer_R0244671-1) |
-| SpaceX | Data Engineer (Starlink Go-To-Market) | Hawthorne, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8637472002?gh_jid=8637472002) |
 
-**[View all 32 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 33 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -201,7 +201,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Aplin Martin | Junior Infrastructure Planning Engineer-in-Training/Technologist | Vancouver, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=d55eab95aea8551c) |
 | SCS Engineers | Entry-level Civil or Environmental Engineer | Atlanta, GA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=e5dc3357038d4989) |
 
-**[View all 110 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 111 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -251,7 +251,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| TikTok | Real Estate Lease Administration Graduate (Real Estate & Facilities - AMS) - 2026 Start (BS/MS) | San Jose, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=182a85ec05fe2512) |
+| TikTok | Real Estate Lease Administration Graduate (Real Estate & Facilities - AMS) - 2026 Start (BS/MS) | New York, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=182a85ec05fe2512) |
 | Herc Rentals | ProSales Associate (Early Career Sales Program) | Garner, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b811a931a2f46d8c) |
 | Northrop Grumman | Engineering Technician (Level 2/3) | United States-California-Redondo Beach | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Engineering-Technician--Level-2-3-_R10241027) |
 | Northrop Grumman | Computer Aided Design and Modeling Engineer - Level 2 | United States-Colorado-Colorado Springs | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Engineer-CAD-CAM_R10240108-1) |
@@ -260,9 +260,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Tech-long Packaging Machinery India Pvt Ltd | GET (Graduate Engineer Trainee) | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=b10553b72e7baaaa) |
 | Eduspace Technologies | Graduate Trainee | UP, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=d27074b656d1a01a) |
 | Medpace | Entry Level Software QA Test Engineer | MH, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=19c61f6ae9cd5294) |
-| Ace Software Consulting Inc. | Junior Java Developer | Remote, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=3282f576dc81d003) |
+| Mott MacDonald | Graduate Civil Engineer - 2026 | Vancouver, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=f9cb22492f91fa91) |
 
-**[View all 123 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 124 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -375,4 +375,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-19 20:38:45 UTC*
+*Last updated: 2026-07-19 21:35:33 UTC*
