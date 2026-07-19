@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 16:20:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 17:32:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Web Platform at Anthropic</title>
@@ -232,6 +232,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
+      <title>Graduate Engineer Trainee at GE HealthCare</title>
+      <link>https://in.indeed.com/viewjob?jk=a0694dc09636882a</link>
+      <description>New grad role at GE HealthCare in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a0694dc09636882a</guid>
+    </item>
+    <item>
       <title>QA Engineer - Trainee at SkillGenX Innovations Pvt. Ltd</title>
       <link>https://in.indeed.com/viewjob?jk=a95a2cf24c467a6c</link>
       <description>New grad role at SkillGenX Innovations Pvt. Ltd in KL, IN. Category: Infrastructure &amp; SRE</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178116007?gh_jid=5178116007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 13:42:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178116007?gh_jid=5178116007</guid>
     </item>
   </channel>
 </rss>
