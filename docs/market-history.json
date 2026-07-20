@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-20T15:28:20.921648+00:00",
+    "last_updated": "2026-07-20T16:59:29.849680+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-21",
@@ -5397,30 +5397,30 @@
     },
     {
       "date": "2026-07-20",
-      "total_jobs": 1398,
+      "total_jobs": 1389,
       "categories": {
-        "data_ml": 143,
+        "security": 73,
+        "software_engineering": 832,
+        "data_ml": 141,
         "product_management": 4,
-        "infrastructure_sre": 117,
-        "software_engineering": 837,
+        "infrastructure_sre": 114,
         "frontend": 9,
-        "security": 75,
-        "other": 117,
-        "data_engineering": 31,
-        "hardware": 17,
+        "other": 122,
+        "data_engineering": 30,
+        "hardware": 16,
         "mobile": 11,
         "backend": 33,
         "quant_finance": 4
       },
       "tiers": {
-        "other": 560,
-        "unicorn": 686,
-        "faang_plus": 152
+        "unicorn": 687,
+        "other": 556,
+        "faang_plus": 146
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 229
+          "jobs": 231
         },
         {
           "company": "Anduril Industries",
@@ -5443,25 +5443,25 @@
           "jobs": 22
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 21
-        },
-        {
-          "company": "Boeing",
-          "jobs": 21
-        },
-        {
           "company": "Figma",
           "jobs": 21
         },
         {
           "company": "Pinterest",
           "jobs": 21
+        },
+        {
+          "company": "Stripe",
+          "jobs": 21
+        },
+        {
+          "company": "Anthropic",
+          "jobs": 20
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 6.16,
-      "timestamp": "2026-07-20T15:28:20.920700+00:00"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 5.99,
+      "timestamp": "2026-07-20T16:59:29.848659+00:00"
     }
   ]
 }
