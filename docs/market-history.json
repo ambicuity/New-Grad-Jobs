@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-20T04:57:56.147923+00:00",
+    "last_updated": "2026-07-20T08:02:34.120805+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-21",
@@ -5397,25 +5397,25 @@
     },
     {
       "date": "2026-07-20",
-      "total_jobs": 1407,
+      "total_jobs": 1400,
       "categories": {
-        "software_engineering": 843,
-        "data_ml": 144,
-        "infrastructure_sre": 112,
+        "software_engineering": 839,
+        "data_ml": 143,
+        "other": 121,
+        "security": 78,
+        "data_engineering": 31,
+        "infrastructure_sre": 110,
         "backend": 36,
         "hardware": 15,
-        "data_engineering": 30,
-        "security": 78,
-        "other": 121,
         "frontend": 9,
         "mobile": 10,
         "product_management": 4,
-        "quant_finance": 5
+        "quant_finance": 4
       },
       "tiers": {
-        "other": 563,
-        "unicorn": 690,
-        "faang_plus": 154
+        "unicorn": 689,
+        "other": 560,
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -5431,16 +5431,16 @@
           "jobs": 42
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 37
-        },
-        {
           "company": "OpenAI",
           "jobs": 37
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 33
+        },
+        {
           "company": "Boeing",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5459,9 +5459,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 222,
-      "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-07-20T04:57:56.146812+00:00"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-07-20T08:02:34.119660+00:00"
     }
   ]
 }
