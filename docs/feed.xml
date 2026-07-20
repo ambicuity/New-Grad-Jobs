@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2026 01:14:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 04:57:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Forward Deployed Engineer - Software Engineer - India at ElevenLabs</title>
+      <link>https://jobs.ashbyhq.com/elevenlabs/c25e27d5-71ff-4763-ae7b-137d0c252efa</link>
+      <description>New grad role at ElevenLabs in India. Category: Software Engineering</description>
+      <pubDate>Mon, 20 Jul 2026 02:10:07 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/elevenlabs/c25e27d5-71ff-4763-ae7b-137d0c252efa</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -260,11 +267,53 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a95a2cf24c467a6c</guid>
     </item>
     <item>
+      <title>AI or ML Engineer at Optum</title>
+      <link>https://in.indeed.com/viewjob?jk=ee100e31a0fc34c8</link>
+      <description>New grad role at Optum in KA, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ee100e31a0fc34c8</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=a8e7c99c892c2d48</link>
+      <description>New grad role at Serco in Herndon, VA, US. Category: Software Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a8e7c99c892c2d48</guid>
+    </item>
+    <item>
+      <title>Entry-Level Engineering Technician - Ludlow, MA at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=a7235dcd134b3576</link>
+      <description>New grad role at Serco in Ludlow, MA, US. Category: Hardware Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a7235dcd134b3576</guid>
+    </item>
+    <item>
       <title>Mid Data Engineer at Forge Group, LLC</title>
       <link>https://www.indeed.com/viewjob?jk=d0a6dc12d8a03ad6</link>
       <description>New grad role at Forge Group, LLC in Reston, VA, US. Category: Data Engineering</description>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d0a6dc12d8a03ad6</guid>
+    </item>
+    <item>
+      <title>.Net - Associate Engineer at Iris Software</title>
+      <link>https://in.indeed.com/viewjob?jk=0437bde923694297</link>
+      <description>New grad role at Iris Software in UP, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0437bde923694297</guid>
+    </item>
+    <item>
+      <title>Security Engineer- Orlando, FL at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=0afa6d9d6171edf8</link>
+      <description>New grad role at Serco in Orlando, FL, US. Category: Security Engineering</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0afa6d9d6171edf8</guid>
+    </item>
+    <item>
+      <title>Experienced Infrastructure Engineer at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=818cd8fc91a28af5</link>
+      <description>New grad role at Serco in Washington, DC, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=818cd8fc91a28af5</guid>
     </item>
     <item>
       <title>Cyber Systems Security Engineer at Gromelski &amp; Associates, Inc.</title>
@@ -279,13 +328,6 @@
       <description>New grad role at Gromelski &amp; Associates, Inc. in Manassas, VA, US. Category: Software Engineering</description>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f02a8ef3f85046bf</guid>
-    </item>
-    <item>
-      <title>.Net - Associate Engineer at Iris Software</title>
-      <link>https://in.indeed.com/viewjob?jk=0437bde923694297</link>
-      <description>New grad role at Iris Software in UP, IN. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0437bde923694297</guid>
     </item>
     <item>
       <title>Software Engineer I at Mastercard</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Colorado-Colorado Springs. Category: Other</description>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/Engineer-CAD-CAM_R10240108-1</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Omaha-NE/Software-Engineer_JR2026517990-1</link>
-      <description>New grad role at Boeing in USA - Omaha, NE. Category: Software Engineering</description>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Omaha-NE/Software-Engineer_JR2026517990-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Maryland-Heights-MO/Software-Engineer_JR2026518109-1</link>
-      <description>New grad role at Boeing in USA - Maryland Heights, MO. Category: Software Engineering</description>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Maryland-Heights-MO/Software-Engineer_JR2026518109-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Traffic at Figma</title>
-      <link>https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004</link>
-      <description>New grad role at Figma in San Francisco, CA • New York, NY • United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 22:22:17 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004</guid>
-    </item>
-    <item>
-      <title>QA/DevOps Engineer at Discord</title>
-      <link>https://job-boards.greenhouse.io/discord/jobs/8637648002</link>
-      <description>New grad role at Discord in San Francisco Bay Area. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 18 Jul 2026 19:03:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8637648002</guid>
-    </item>
-    <item>
-      <title>Early Career Firmware Engineer  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 18 Jul 2026 14:03:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Maritime Integrated Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5166602007?gh_jid=5166602007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 18 Jul 2026 14:01:24 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5166602007?gh_jid=5166602007</guid>
     </item>
   </channel>
 </rss>
