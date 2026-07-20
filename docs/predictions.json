@@ -1,35 +1,34 @@
 {
-  "outlook": "bullish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1445,
-      "change_percent": 1.47
+      "total_jobs": 1420,
+      "change_percent": 1.07
     },
     "30_days": {
-      "total_jobs": 1478,
-      "change_percent": 3.79
+      "total_jobs": 1415,
+      "change_percent": 0.71
     }
   },
   "growing_categories": [
-    "faang_plus",
-    "software_engineering",
-    "hardware"
+    "data_engineering",
+    "data_ml",
+    "software_engineering"
   ],
   "declining_categories": [
     "infrastructure_sre",
-    "data_ml",
     "other"
   ],
   "confidence": 75,
   "insights": [
-    "The market shows a strong upward trend, with the current 7-day average (1442) significantly outperforming the 30-day average (1396), indicating accelerating hiring momentum.",
-    "FAANG+ companies are aggressively expanding their new graduate headcount, offsetting the stagnation in infrastructure and SRE roles.",
-    "While niche technical roles like infrastructure are seeing a contraction, the core software engineering category remains resilient, suggesting a focus on product-centric hiring for the upcoming cycle."
+    "The market shows a stabilization trend where the 7-day average (1434) is currently outperforming the 30-day average (1396), suggesting a slight upward momentum despite a minor dip in the last 48 hours.",
+    "Unicorn companies are providing the most stable hiring volume, while FAANG+ and smaller firms are exhibiting higher volatility, indicating a cautious approach to headcount expansion.",
+    "Data-focused roles (Data Engineering and ML) are showing consistent growth, while Infrastructure and SRE roles have experienced a sharp contraction, signaling a shift in priority toward product-facing development over internal platform scaling."
   ],
-  "generated_at": "2026-07-19T01:10:28.858947+00:00",
+  "generated_at": "2026-07-20T01:14:38.755181+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-04-20",
-    "end": "2026-07-19"
+    "start": "2026-04-21",
+    "end": "2026-07-20"
   }
 }
