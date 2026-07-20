@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-20T16:59:29.849680+00:00",
+    "last_updated": "2026-07-20T18:58:26.238816+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-21",
@@ -5397,25 +5397,25 @@
     },
     {
       "date": "2026-07-20",
-      "total_jobs": 1389,
+      "total_jobs": 1398,
       "categories": {
-        "security": 73,
-        "software_engineering": 832,
-        "data_ml": 141,
-        "product_management": 4,
-        "infrastructure_sre": 114,
-        "frontend": 9,
-        "other": 122,
-        "data_engineering": 30,
-        "hardware": 16,
-        "mobile": 11,
+        "software_engineering": 835,
+        "data_ml": 142,
         "backend": 33,
-        "quant_finance": 4
+        "security": 72,
+        "frontend": 10,
+        "product_management": 4,
+        "infrastructure_sre": 113,
+        "other": 127,
+        "data_engineering": 30,
+        "hardware": 18,
+        "mobile": 11,
+        "quant_finance": 3
       },
       "tiers": {
-        "unicorn": 687,
-        "other": 556,
-        "faang_plus": 146
+        "unicorn": 686,
+        "other": 573,
+        "faang_plus": 139
       },
       "top_companies": [
         {
@@ -5424,7 +5424,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 198
+          "jobs": 199
         },
         {
           "company": "Waymo",
@@ -5432,36 +5432,36 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 37
+          "jobs": 36
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 36
+          "jobs": 32
         },
         {
           "company": "xAI",
           "jobs": 22
         },
         {
-          "company": "Figma",
+          "company": "Pinterest",
           "jobs": 21
         },
         {
-          "company": "Pinterest",
+          "company": "Scale AI",
+          "jobs": 21
+        },
+        {
+          "company": "Figma",
           "jobs": 21
         },
         {
           "company": "Stripe",
           "jobs": 21
-        },
-        {
-          "company": "Anthropic",
-          "jobs": 20
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 5.99,
-      "timestamp": "2026-07-20T16:59:29.848659+00:00"
+      "unique_companies": 242,
+      "avg_jobs_per_company": 5.78,
+      "timestamp": "2026-07-20T18:58:26.237621+00:00"
     }
   ]
 }
