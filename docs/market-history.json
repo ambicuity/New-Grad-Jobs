@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-21T04:37:37.938796+00:00",
+    "last_updated": "2026-07-21T07:20:50.703221+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-22",
@@ -5410,15 +5410,15 @@
     },
     {
       "date": "2026-07-21",
-      "total_jobs": 1396,
+      "total_jobs": 1384,
       "categories": {
-        "software_engineering": 828,
-        "data_ml": 140,
-        "data_engineering": 30,
-        "other": 129,
-        "infrastructure_sre": 120,
-        "security": 73,
-        "hardware": 17,
+        "software_engineering": 830,
+        "data_ml": 138,
+        "other": 125,
+        "infrastructure_sre": 113,
+        "data_engineering": 31,
+        "hardware": 16,
+        "security": 72,
         "backend": 30,
         "quant_finance": 4,
         "frontend": 10,
@@ -5426,9 +5426,9 @@
         "mobile": 11
       },
       "tiers": {
-        "faang_plus": 135,
+        "faang_plus": 140,
         "unicorn": 681,
-        "other": 580
+        "other": 563
       },
       "top_companies": [
         {
@@ -5449,7 +5449,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
+          "jobs": 30
         },
         {
           "company": "xAI",
@@ -5468,13 +5468,13 @@
           "jobs": 21
         },
         {
-          "company": "Leidos",
+          "company": "Pinterest",
           "jobs": 20
         }
       ],
-      "unique_companies": 244,
-      "avg_jobs_per_company": 5.72,
-      "timestamp": "2026-07-21T04:37:37.937705+00:00"
+      "unique_companies": 238,
+      "avg_jobs_per_company": 5.82,
+      "timestamp": "2026-07-21T07:20:50.702169+00:00"
     }
   ]
 }
