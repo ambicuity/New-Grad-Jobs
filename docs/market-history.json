@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-21T19:51:57.644133+00:00",
+    "last_updated": "2026-07-21T20:57:56.477816+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-22",
@@ -5410,25 +5410,25 @@
     },
     {
       "date": "2026-07-21",
-      "total_jobs": 1408,
+      "total_jobs": 1400,
       "categories": {
-        "software_engineering": 836,
         "infrastructure_sre": 121,
-        "data_ml": 143,
+        "software_engineering": 821,
+        "data_ml": 142,
         "security": 77,
         "frontend": 10,
         "data_engineering": 31,
         "product_management": 4,
         "backend": 30,
-        "other": 128,
-        "hardware": 14,
+        "other": 135,
+        "hardware": 15,
         "quant_finance": 3,
         "mobile": 11
       },
       "tiers": {
-        "other": 590,
-        "unicorn": 679,
-        "faang_plus": 139
+        "other": 580,
+        "unicorn": 678,
+        "faang_plus": 142
       },
       "top_companies": [
         {
@@ -5437,11 +5437,11 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 195
+          "jobs": 194
         },
         {
           "company": "Waymo",
-          "jobs": 43
+          "jobs": 42
         },
         {
           "company": "OpenAI",
@@ -5472,9 +5472,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 255,
-      "avg_jobs_per_company": 5.52,
-      "timestamp": "2026-07-21T19:51:57.642864+00:00"
+      "unique_companies": 245,
+      "avg_jobs_per_company": 5.71,
+      "timestamp": "2026-07-21T20:57:56.476682+00:00"
     }
   ]
 }
