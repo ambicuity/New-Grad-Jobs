@@ -5,14 +5,28 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2026 15:18:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 16:51:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Agent Harnessing at Scout AI</title>
       <link>https://job-boards.greenhouse.io/scoutai/jobs/5248857008</link>
       <description>New grad role at Scout AI in Sunnyvale, California. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 15:05:49 +0000</pubDate>
+      <pubDate>Tue, 21 Jul 2026 16:16:31 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scoutai/jobs/5248857008</guid>
+    </item>
+    <item>
+      <title>CNO Software Engineer (TS/SCI w/ Poly) at SIXGEN</title>
+      <link>https://job-boards.greenhouse.io/sixgeninc/jobs/5164026008</link>
+      <description>New grad role at SIXGEN in Annapolis Junction, MD.. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 16:08:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/sixgeninc/jobs/5164026008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Training Platform at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 15:42:55 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5175168007?gh_jid=5175168007</guid>
     </item>
     <item>
       <title>SDK Software Engineer, AI at LaunchDarkly</title>
@@ -163,10 +177,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -177,17 +191,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
@@ -195,6 +202,13 @@
       <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -205,17 +219,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
       <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
     </item>
     <item>
       <title>Software Engineer 3, Query Integration at MongoDB</title>
@@ -240,17 +254,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
       <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
+      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
     </item>
     <item>
       <title>Software Engineer, Data Migration at MongoDB</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 13:43:34 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 13:43:29 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 13:42:49 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102393007?gh_jid=5102393007</guid>
     </item>
   </channel>
 </rss>
