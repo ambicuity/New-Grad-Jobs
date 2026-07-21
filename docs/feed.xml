@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2026 20:57:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 22:07:19 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8014859</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Jul 2026 21:52:08 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8014859</guid>
+    </item>
+    <item>
+      <title>Data Scientist at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=5895430</link>
+      <description>New grad role at Stripe in Toronto. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Jul 2026 21:52:06 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=5895430</guid>
+    </item>
+    <item>
+      <title>Software Engineer, New Grad, Developer &amp; End User Experience Platform at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=7991718</link>
+      <description>New grad role at Stripe in Toronto. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 21:52:06 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991718</guid>
+    </item>
+    <item>
+      <title>Machine Learning Infrastructure Engineer, Safeguards Research at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5364804008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Jul 2026 21:13:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5364804008</guid>
+    </item>
+    <item>
+      <title>2026 Early Career Flight Test Engineer, Mission Autonomy at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 21 Jul 2026 21:06:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007</guid>
+    </item>
     <item>
       <title>Technical Producer II - Publishing Platform, Commerce at Riot Games</title>
       <link>https://www.riotgames.com/en/work-with-us/job/8049863?gh_jid=8049863</link>
@@ -282,13 +317,6 @@
     </item>
     <item>
       <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</link>
-      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:33:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178116007?gh_jid=5178116007</link>
       <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:33:31 +0000</pubDate>
@@ -300,6 +328,13 @@
       <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:33:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</link>
+      <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 21 Jul 2026 14:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
     </item>
     <item>
       <title>HPC Systems Engineer, Modeling &amp; Simulation at Anduril Industries</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
       <pubDate>Tue, 21 Jul 2026 14:26:46 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5156713007?gh_jid=5156713007</guid>
-    </item>
-    <item>
-      <title>Associate Technical Services Engineer II at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8044218</link>
-      <description>New grad role at MongoDB in Austin. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8044218</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
-      <description>New grad role at MongoDB in New York City. Category: Data Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Tue, 21 Jul 2026 14:26:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
     </item>
   </channel>
 </rss>
