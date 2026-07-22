@@ -3,32 +3,32 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1408,
-      "change_percent": 1.08
+      "change_percent": 0.28
     },
     "30_days": {
       "total_jobs": 1415,
-      "change_percent": 1.58
+      "change_percent": 0.78
     }
   },
   "growing_categories": [
+    "data_ml",
     "infrastructure_sre",
-    "hardware",
-    "other"
+    "product_management"
   ],
   "declining_categories": [
     "software_engineering",
-    "data_ml"
+    "other"
   ],
-  "confidence": 72,
+  "confidence": 75,
   "insights": [
-    "The market is currently experiencing a consolidation phase where total job volume is oscillating near the 30-day average, suggesting a stable but cautious hiring environment.",
-    "While Software Engineering and Data/ML roles show a slight downward trend in the most recent week, Infrastructure and SRE roles are showing signs of resilience and growth.",
-    "Unicorn companies remain the primary drivers of volume, maintaining a steady baseline that offsets the volatility seen in FAANG+ and smaller firm hiring patterns."
+    "The market is currently in a consolidation phase, with the 7-day average (1416) slightly outperforming the 30-day average (1396), suggesting a stabilization after the mid-month peak.",
+    "While general software engineering roles are showing a slight contraction, specialized technical roles in Data/ML and Infrastructure remain resilient, indicating a shift in hiring priorities toward high-leverage technical functions.",
+    "Company tier data shows a cooling trend in FAANG+ hiring, which is being offset by steady volume in Unicorn and mid-market firms, keeping the overall market outlook neutral."
   ],
-  "generated_at": "2026-07-21T01:14:43.089860+00:00",
+  "generated_at": "2026-07-22T00:10:52.730059+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-04-22",
-    "end": "2026-07-21"
+    "start": "2026-04-23",
+    "end": "2026-07-22"
   }
 }
