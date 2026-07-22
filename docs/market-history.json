@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-22T09:08:04.753096+00:00",
+    "last_updated": "2026-07-22T11:21:13.692540+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-23",
@@ -5423,25 +5423,25 @@
     },
     {
       "date": "2026-07-22",
-      "total_jobs": 1403,
+      "total_jobs": 1402,
       "categories": {
-        "software_engineering": 831,
+        "software_engineering": 838,
+        "data_engineering": 34,
         "data_ml": 140,
-        "other": 131,
-        "infrastructure_sre": 118,
-        "data_engineering": 37,
+        "infrastructure_sre": 115,
         "security": 73,
+        "other": 129,
+        "hardware": 16,
         "frontend": 9,
         "product_management": 3,
         "backend": 30,
-        "hardware": 16,
         "quant_finance": 5,
         "mobile": 10
       },
       "tiers": {
+        "other": 580,
         "unicorn": 677,
-        "other": 582,
-        "faang_plus": 144
+        "faang_plus": 145
       },
       "top_companies": [
         {
@@ -5469,15 +5469,15 @@
           "jobs": 24
         },
         {
-          "company": "Stripe",
-          "jobs": 22
-        },
-        {
           "company": "Leidos",
           "jobs": 22
         },
         {
           "company": "Anthropic",
+          "jobs": 21
+        },
+        {
+          "company": "Stripe",
           "jobs": 21
         },
         {
@@ -5487,7 +5487,7 @@
       ],
       "unique_companies": 249,
       "avg_jobs_per_company": 5.63,
-      "timestamp": "2026-07-22T09:08:04.752014+00:00"
+      "timestamp": "2026-07-22T11:21:13.691462+00:00"
     }
   ]
 }
