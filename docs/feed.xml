@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 22:48:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 23:49:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer (SNOW- Strategic Portfolio Mgt required) at Gartner</title>
@@ -13,6 +13,13 @@
       <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f8e36b4e03fab0c1</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Core Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8080614</link>
+      <description>New grad role at Stripe in San Francisco. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 22 Jul 2026 23:30:10 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8080614</guid>
     </item>
     <item>
       <title>Software Engineer III - PA 177 at ZoomInfo</title>
@@ -34,13 +41,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 22 Jul 2026 21:48:43 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Core Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8080614</link>
-      <description>New grad role at Stripe in San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 22 Jul 2026 21:46:55 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8080614</guid>
     </item>
     <item>
       <title>Data Engineer at Fastly</title>
