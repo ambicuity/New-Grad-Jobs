@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-22T16:42:54.599955+00:00",
+    "last_updated": "2026-07-22T17:58:18.654998+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-23",
@@ -5423,25 +5423,25 @@
     },
     {
       "date": "2026-07-22",
-      "total_jobs": 1395,
+      "total_jobs": 1407,
       "categories": {
-        "software_engineering": 828,
-        "frontend": 9,
-        "data_ml": 145,
-        "other": 132,
+        "software_engineering": 834,
+        "infrastructure_sre": 114,
         "security": 73,
-        "infrastructure_sre": 113,
-        "backend": 32,
+        "data_ml": 144,
         "data_engineering": 32,
-        "hardware": 13,
+        "backend": 32,
+        "frontend": 9,
+        "other": 136,
+        "hardware": 15,
         "product_management": 3,
         "quant_finance": 5,
         "mobile": 10
       },
       "tiers": {
-        "unicorn": 682,
-        "other": 564,
-        "faang_plus": 149
+        "other": 573,
+        "unicorn": 684,
+        "faang_plus": 150
       },
       "top_companies": [
         {
@@ -5450,7 +5450,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 193
+          "jobs": 192
         },
         {
           "company": "Waymo",
@@ -5458,7 +5458,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 35
+          "jobs": 36
         },
         {
           "company": "Northrop Grumman",
@@ -5466,18 +5466,18 @@
         },
         {
           "company": "xAI",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "Boeing",
-          "jobs": 23
-        },
-        {
-          "company": "Anthropic",
-          "jobs": 21
+          "jobs": 24
         },
         {
           "company": "Stripe",
+          "jobs": 21
+        },
+        {
+          "company": "Anthropic",
           "jobs": 21
         },
         {
@@ -5486,8 +5486,8 @@
         }
       ],
       "unique_companies": 237,
-      "avg_jobs_per_company": 5.89,
-      "timestamp": "2026-07-22T16:42:54.598728+00:00"
+      "avg_jobs_per_company": 5.94,
+      "timestamp": "2026-07-22T17:58:18.654090+00:00"
     }
   ]
 }
