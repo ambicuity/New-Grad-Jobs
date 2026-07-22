@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 03:47:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 06:21:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ML Infrastructure Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5193037007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 04:04:23 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5193037007</guid>
+    </item>
     <item>
       <title>Software Engineer- Infrastructure at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5294389008</link>
@@ -58,17 +65,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 00:27:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Wed, 22 Jul 2026 00:27:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 00:27:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer, Agent Harnessing at Scout AI</title>
@@ -83,6 +90,34 @@
       <description>New grad role at Flender drives pvt ltd in TN, IN. Category: Other</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c7c2116a1598d8f7</guid>
+    </item>
+    <item>
+      <title>Graduate Apprentice Trainee at Smiths Group</title>
+      <link>https://in.indeed.com/viewjob?jk=139d108671a2e22a</link>
+      <description>New grad role at Smiths Group in MH, IN. Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=139d108671a2e22a</guid>
+    </item>
+    <item>
+      <title>Engineering Technician I – Winston-Salem Construction 1 at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=e6ef15b98ad76859</link>
+      <description>New grad role at Unknown in NC, US. Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6ef15b98ad76859</guid>
+    </item>
+    <item>
+      <title>MWAV Maintenance Support Technician (New Grad) at Thales</title>
+      <link>https://ca.indeed.com/viewjob?jk=1dde48afdd700cb4</link>
+      <description>New grad role at Thales in Victoria, BC, CA. Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=1dde48afdd700cb4</guid>
+    </item>
+    <item>
+      <title>New Grad RN Resident Med Surg at Las Palmas Del Sol Healthcare</title>
+      <link>https://www.indeed.com/viewjob?jk=ab18b0ab94c32595</link>
+      <description>New grad role at Las Palmas Del Sol Healthcare in El Paso, TX, US. Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ab18b0ab94c32595</guid>
     </item>
     <item>
       <title>Software Developer Engineer 3/4 at Adobe</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Alabama-Huntsville. Category: Software Engineering</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Systems-Engineer---DOORS-Administrator---Level-3-or-4_R10241413</guid>
-    </item>
-    <item>
-      <title>Supply Chain Planning Specialist Level 1 or 2 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/Supply-Chain-Planning-Specialist-Level-1-or-2_R10241354</link>
-      <description>New grad role at Northrop Grumman in United States-California-Palmdale. Category: Other</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Palmdale/Supply-Chain-Planning-Specialist-Level-1-or-2_R10241354</guid>
-    </item>
-    <item>
-      <title>Fault Management Systems Engineer – Level 3 or 4 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Fault-Management-Systems-Engineer---Level-3-or-4_R10241199</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Fault-Management-Systems-Engineer---Level-3-or-4_R10241199</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - F35 Project Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Systems-Engineer---F35-Project-Engineer_R10238252</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Systems-Engineer---F35-Project-Engineer_R10238252</guid>
-    </item>
-    <item>
-      <title>Mgr Propulsion Engineering - Level 2 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Mgr-Propulsion-Engineering---Level-2_R10239040</link>
-      <description>New grad role at Northrop Grumman in United States-Utah-Clearfield. Category: Other</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Mgr-Propulsion-Engineering---Level-2_R10239040</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - Level 2 or 3 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Systems-Engineer---Level-2-or-3_R10241390</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Systems-Engineer---Level-2-or-3_R10241390</guid>
     </item>
   </channel>
 </rss>
