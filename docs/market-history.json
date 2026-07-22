@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-22T21:46:15.850194+00:00",
+    "last_updated": "2026-07-22T22:48:06.252990+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-23",
@@ -5423,25 +5423,25 @@
     },
     {
       "date": "2026-07-22",
-      "total_jobs": 1413,
+      "total_jobs": 1419,
       "categories": {
+        "software_engineering": 844,
+        "data_ml": 143,
         "data_engineering": 37,
-        "other": 132,
-        "software_engineering": 837,
-        "infrastructure_sre": 118,
-        "data_ml": 141,
-        "security": 78,
+        "other": 134,
+        "infrastructure_sre": 116,
+        "security": 74,
         "backend": 33,
         "frontend": 9,
-        "quant_finance": 6,
+        "quant_finance": 5,
+        "hardware": 11,
         "product_management": 3,
-        "hardware": 9,
         "mobile": 10
       },
       "tiers": {
-        "other": 573,
-        "unicorn": 684,
-        "faang_plus": 156
+        "other": 570,
+        "unicorn": 685,
+        "faang_plus": 164
       },
       "top_companies": [
         {
@@ -5461,24 +5461,24 @@
           "jobs": 37
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Boeing",
           "jobs": 29
         },
         {
-          "company": "Leidos",
-          "jobs": 27
+          "company": "Northrop Grumman",
+          "jobs": 28
         },
         {
           "company": "xAI",
           "jobs": 26
         },
         {
-          "company": "Boeing",
-          "jobs": 24
+          "company": "Leidos",
+          "jobs": 26
         },
         {
           "company": "Stripe",
-          "jobs": 21
+          "jobs": 22
         },
         {
           "company": "Anthropic",
@@ -5486,8 +5486,8 @@
         }
       ],
       "unique_companies": 233,
-      "avg_jobs_per_company": 6.06,
-      "timestamp": "2026-07-22T21:46:15.848926+00:00"
+      "avg_jobs_per_company": 6.09,
+      "timestamp": "2026-07-22T22:48:06.251850+00:00"
     }
   ]
 }

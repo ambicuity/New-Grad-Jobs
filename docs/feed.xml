@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 21:46:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 22:48:06 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (SNOW- Strategic Portfolio Mgt required) at Gartner</title>
+      <link>https://in.indeed.com/viewjob?jk=f8e36b4e03fab0c1</link>
+      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f8e36b4e03fab0c1</guid>
+    </item>
+    <item>
+      <title>Software Engineer III - PA 177 at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8634703002</link>
+      <description>New grad role at ZoomInfo in Bethesda, Maryland, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 22:38:11 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8634703002</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Edge AI Systems at Palantir</title>
+      <link>https://jobs.lever.co/palantir/67110929-adea-41c3-851a-8882e222d9e4</link>
+      <description>New grad role at Palantir in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 22:12:20 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.lever.co/palantir/67110929-adea-41c3-851a-8882e222d9e4</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer, Kubernetes at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007</link>
+      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 22 Jul 2026 21:48:43 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007</guid>
+    </item>
+    <item>
+      <title>Data Scientist, Core Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8080614</link>
+      <description>New grad role at Stripe in San Francisco. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 22 Jul 2026 21:46:55 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8080614</guid>
+    </item>
     <item>
       <title>Data Engineer at Fastly</title>
       <link>https://www.fastly.com/about/jobs/apply?gh_jid=8048891</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, United States; San Francisco, CA, United States. Category: Software Engineering</description>
       <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7901957</guid>
-    </item>
-    <item>
-      <title>Software Engineer, GPU at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7554830</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; New York, NY, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7554830</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Labeling Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7416895</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7416895</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Logs Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7901924</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7901924</guid>
-    </item>
-    <item>
-      <title>Software Engineer -  Marketplace Experimentation Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905680</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905680</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Tools at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7926984</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7926984</guid>
     </item>
   </channel>
 </rss>
