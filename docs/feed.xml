@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 20:43:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 21:46:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Engineer at Fastly</title>
+      <link>https://www.fastly.com/about/jobs/apply?gh_jid=8048891</link>
+      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 20:58:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=8048891</guid>
+    </item>
+    <item>
+      <title>Detection Engineer II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=8080532</link>
+      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 20:50:24 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=8080532</guid>
+    </item>
+    <item>
+      <title>2026 Early Career Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 20:48:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
+    </item>
+    <item>
+      <title>Detection Engineer II at Instacart</title>
+      <link>https://instacart.careers/job/?gh_jid=8080512</link>
+      <description>New grad role at Instacart in United States - Remote. Category: Other</description>
+      <pubDate>Wed, 22 Jul 2026 20:48:21 +0000</pubDate>
+      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=8080512</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Observability at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4803905007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 22 Jul 2026 20:44:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803905007</guid>
+    </item>
     <item>
       <title>Scientific Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5193934007?gh_jid=5193934007</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Software Engineering</description>
       <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7926984</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Multiverse at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7531397</link>
-      <description>New grad role at Waymo in San Francisco, CA, USA; Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7531397</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Operational/ Process Efficiency  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7926526</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7926526</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Scaling Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title> Software Engineer, Planner at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=8039191</link>
-      <description>New grad role at Waymo in Mountain View, California; San Francisco, California; Pittsburgh, Pennsylvania. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8039191</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 18:30:08 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
     </item>
   </channel>
 </rss>
