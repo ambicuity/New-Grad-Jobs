@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-22T11:21:13.692540+00:00",
+    "last_updated": "2026-07-22T12:55:23.344220+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-23",
@@ -5423,14 +5423,14 @@
     },
     {
       "date": "2026-07-22",
-      "total_jobs": 1402,
+      "total_jobs": 1406,
       "categories": {
         "software_engineering": 838,
-        "data_engineering": 34,
         "data_ml": 140,
-        "infrastructure_sre": 115,
         "security": 73,
-        "other": 129,
+        "data_engineering": 35,
+        "infrastructure_sre": 116,
+        "other": 131,
         "hardware": 16,
         "frontend": 9,
         "product_management": 3,
@@ -5439,7 +5439,7 @@
         "mobile": 10
       },
       "tiers": {
-        "other": 580,
+        "other": 584,
         "unicorn": 677,
         "faang_plus": 145
       },
@@ -5461,11 +5461,11 @@
           "jobs": 35
         },
         {
-          "company": "xAI",
-          "jobs": 24
+          "company": "Northrop Grumman",
+          "jobs": 25
         },
         {
-          "company": "Northrop Grumman",
+          "company": "xAI",
           "jobs": 24
         },
         {
@@ -5485,9 +5485,9 @@
           "jobs": 21
         }
       ],
-      "unique_companies": 249,
-      "avg_jobs_per_company": 5.63,
-      "timestamp": "2026-07-22T11:21:13.691462+00:00"
+      "unique_companies": 255,
+      "avg_jobs_per_company": 5.51,
+      "timestamp": "2026-07-22T12:55:23.343111+00:00"
     }
   ]
 }
