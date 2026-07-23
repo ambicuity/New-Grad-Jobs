@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 11:54:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 13:27:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II, Android at Duolingo</title>
+      <link>https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002</link>
+      <description>New grad role at Duolingo in Pittsburgh, PA. Category: Mobile Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 13:04:47 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Android at Duolingo</title>
+      <link>https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002</link>
+      <description>New grad role at Duolingo in New York, NY. Category: Mobile Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 13:04:47 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Dedicated Hosted Runners at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8644274002</link>
+      <description>New grad role at GitLab in Bangalore, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Jul 2026 12:48:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8644274002</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 23 Jul 2026 12:31:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 12:31:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 12:31:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
     <item>
       <title>Software Engineer, Cluster Deployment   at Cerebras</title>
       <link>https://jobs.ashbyhq.com/cerebras/63b9c135-ce5d-4898-8e4d-9422d39e4ca6</link>
@@ -99,6 +141,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
     </item>
     <item>
+      <title>EV Systems Engineer / Electrical Technologist / Electrical Engineer at Canadian Electric Vehicles</title>
+      <link>https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</link>
+      <description>New grad role at Canadian Electric Vehicles in Parksville, BC, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</guid>
+    </item>
+    <item>
       <title>Associate Engineer - Digital &amp; Drw Mgmt at Shell Energy Retail</title>
       <link>https://in.indeed.com/viewjob?jk=5a0af9628856206a</link>
       <description>New grad role at Shell Energy Retail in TN, IN. Category: Other</description>
@@ -113,11 +162,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c277501ff0440ada</guid>
     </item>
     <item>
-      <title>EV Systems Engineer / Electrical Technologist / Electrical Engineer at Canadian Electric Vehicles</title>
-      <link>https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</link>
-      <description>New grad role at Canadian Electric Vehicles in Parksville, BC, CA. Category: Software Engineering</description>
+      <title>Trainee Data Engineer at ProArch</title>
+      <link>https://in.indeed.com/viewjob?jk=d1da3ca48da8c80a</link>
+      <description>New grad role at ProArch in TS, IN. Category: Data Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d1da3ca48da8c80a</guid>
     </item>
     <item>
       <title>Data Engineer at Snaphomz</title>
@@ -141,25 +190,39 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=92bbc3329b84eaad</guid>
     </item>
     <item>
-      <title>Trainee Data Engineer at ProArch</title>
-      <link>https://in.indeed.com/viewjob?jk=d1da3ca48da8c80a</link>
-      <description>New grad role at ProArch in TS, IN. Category: Data Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d1da3ca48da8c80a</guid>
-    </item>
-    <item>
-      <title>Graduate Engineer Trainee at Marmon Technologies India Private Limited</title>
-      <link>https://in.indeed.com/viewjob?jk=fb40bc7c4a98483f</link>
-      <description>New grad role at Marmon Technologies India Private Limited in KA, IN. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fb40bc7c4a98483f</guid>
-    </item>
-    <item>
       <title>M.Tech Graduate Instructor Cum Design Engineer (fresher / Junior) at sarva sudarsanaa academy</title>
       <link>https://in.indeed.com/viewjob?jk=8d9c6deb81b8d42c</link>
       <description>New grad role at sarva sudarsanaa academy in TN, IN. Category: Other</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8d9c6deb81b8d42c</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer at Pitney Bowes</title>
+      <link>https://in.indeed.com/viewjob?jk=90829df2a2369d66</link>
+      <description>New grad role at Pitney Bowes in MH, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=90829df2a2369d66</guid>
+    </item>
+    <item>
+      <title>Advisory Quality Assurance Software Engineer at Pitney Bowes</title>
+      <link>https://in.indeed.com/viewjob?jk=60081f413874e23d</link>
+      <description>New grad role at Pitney Bowes in UP, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=60081f413874e23d</guid>
+    </item>
+    <item>
+      <title>Junior Full Stack Developer (.NET &amp; React / Angular) at Business WebSoft</title>
+      <link>https://in.indeed.com/viewjob?jk=fff64210c53d09f9</link>
+      <description>New grad role at Business WebSoft in PB, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fff64210c53d09f9</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at RELX Group</title>
+      <link>https://in.indeed.com/viewjob?jk=4e945d1c05e6c69a</link>
+      <description>New grad role at RELX Group in TN, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4e945d1c05e6c69a</guid>
     </item>
     <item>
       <title>Junior Civil / Structural Engineer - Water &amp; Wastewater Infrastructure at ETO Engineering</title>
@@ -183,18 +246,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7678336374d260f0</guid>
     </item>
     <item>
-      <title>Junior Full Stack Developer (.NET &amp; React / Angular) at Business WebSoft</title>
-      <link>https://in.indeed.com/viewjob?jk=fff64210c53d09f9</link>
-      <description>New grad role at Business WebSoft in PB, IN. Category: Software Engineering</description>
+      <title>Junior AI Video Creator &amp; Digital Media Associate at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=9c22006965bd36a5</link>
+      <description>New grad role at Unknown in TS, IN. Category: Other</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fff64210c53d09f9</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9c22006965bd36a5</guid>
     </item>
     <item>
-      <title>Software Engineer III at RELX Group</title>
-      <link>https://in.indeed.com/viewjob?jk=4e945d1c05e6c69a</link>
-      <description>New grad role at RELX Group in TN, IN. Category: Software Engineering</description>
+      <title>Software Engineer at Lowe's Home Improvement</title>
+      <link>https://in.indeed.com/viewjob?jk=c9f764d306e37a80</link>
+      <description>New grad role at Lowe's Home Improvement in KA, IN. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4e945d1c05e6c69a</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c9f764d306e37a80</guid>
     </item>
     <item>
       <title>Associate Engineer at PHINIA</title>
@@ -246,18 +309,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fb280162c7cd5b68</guid>
     </item>
     <item>
-      <title>Software Engineer (SNOW- Strategic Portfolio Mgt required) at Gartner</title>
-      <link>https://in.indeed.com/viewjob?jk=f8e36b4e03fab0c1</link>
-      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <title>Associate Plant Engineer - ERD 26-102 at Charleston Water System</title>
+      <link>https://www.indeed.com/viewjob?jk=79457754949f71ea</link>
+      <description>New grad role at Charleston Water System in Charleston, SC, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f8e36b4e03fab0c1</guid>
-    </item>
-    <item>
-      <title>Junior AI Video Creator &amp; Digital Media Associate at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=9c22006965bd36a5</link>
-      <description>New grad role at Unknown in TS, IN. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9c22006965bd36a5</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=79457754949f71ea</guid>
     </item>
     <item>
       <title>Associate, Electrical Engineer at L3Harris</title>
@@ -274,18 +330,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e02ca4604770a648</guid>
     </item>
     <item>
-      <title>Engineer, Engineering Associate, Engineering Rep. at Southern Company</title>
-      <link>https://www.indeed.com/viewjob?jk=dc965e94ea9bd1c2</link>
-      <description>New grad role at Southern Company in Macon, GA, US. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dc965e94ea9bd1c2</guid>
-    </item>
-    <item>
       <title>Fall 2026/Spring 2027 Psych Adjunct Assistant Professor at St. John's University</title>
       <link>https://www.indeed.com/viewjob?jk=55394ce8ecb126fd</link>
       <description>New grad role at St. John's University in Queens, NY, US. Category: Other</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=55394ce8ecb126fd</guid>
+    </item>
+    <item>
+      <title>AI Solutions Associate at Omnea</title>
+      <link>https://www.indeed.com/viewjob?jk=50fd52ac92dfa94f</link>
+      <description>New grad role at Omnea in NY, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=50fd52ac92dfa94f</guid>
     </item>
     <item>
       <title>Software Engineer, Production Engineering at NVIDIA</title>
@@ -300,62 +356,6 @@
       <description>New grad role at Autodesk in Pune, IND. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer--Context-Graph--AI-ML-_26WD99880</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Core Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8080614</link>
-      <description>New grad role at Stripe in San Francisco. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 22 Jul 2026 23:30:10 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8080614</guid>
-    </item>
-    <item>
-      <title>Software Engineer III - PA 177 at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8634703002</link>
-      <description>New grad role at ZoomInfo in Bethesda, Maryland, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 22:38:11 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8634703002</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Edge AI Systems at Palantir</title>
-      <link>https://jobs.lever.co/palantir/67110929-adea-41c3-851a-8882e222d9e4</link>
-      <description>New grad role at Palantir in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 22:12:20 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.lever.co/palantir/67110929-adea-41c3-851a-8882e222d9e4</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Fastly</title>
-      <link>https://www.fastly.com/about/jobs/apply?gh_jid=8048891</link>
-      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 20:58:52 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=8048891</guid>
-    </item>
-    <item>
-      <title>Detection Engineer II at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=8080532</link>
-      <description>New grad role at Instacart in Canada - Remote (ON, AB, BC, or NS Only). Category: Other</description>
-      <pubDate>Wed, 22 Jul 2026 20:50:24 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=8080532</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 20:48:50 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
-    </item>
-    <item>
-      <title>Detection Engineer II at Instacart</title>
-      <link>https://instacart.careers/job/?gh_jid=8080512</link>
-      <description>New grad role at Instacart in United States - Remote. Category: Other</description>
-      <pubDate>Wed, 22 Jul 2026 20:48:21 +0000</pubDate>
-      <guid isPermaLink="true">https://instacart.careers/job/?gh_jid=8080512</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Observability at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4803905007</link>
-      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 22 Jul 2026 20:44:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803905007</guid>
     </item>
   </channel>
 </rss>
