@@ -5,14 +5,35 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 01:22:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 04:45:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Engineer, Detection &amp; Response at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4684073005</link>
+      <description>New grad role at Scale AI in New York, NY; San Francisco, CA; Seattle, WA; Washington, DC. Category: Security Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 03:35:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4684073005</guid>
+    </item>
     <item>
       <title>EV Systems Engineer / Electrical Technologist / Electrical Engineer at Canadian Electric Vehicles</title>
       <link>https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</link>
       <description>New grad role at Canadian Electric Vehicles in Parksville, BC, CA. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=ead4764bfe9ed2d9</guid>
+    </item>
+    <item>
+      <title>Junior Civil / Structural Engineer - Water &amp; Wastewater Infrastructure at ETO Engineering</title>
+      <link>https://ca.indeed.com/viewjob?jk=35baf349bdf6ab8a</link>
+      <description>New grad role at ETO Engineering in Richmond Hill, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=35baf349bdf6ab8a</guid>
+    </item>
+    <item>
+      <title>Assoc Software Engineer at Southwest Airlines</title>
+      <link>https://www.indeed.com/viewjob?jk=56f4368b1086eaac</link>
+      <description>New grad role at Southwest Airlines in Dallas, TX, US. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=56f4368b1086eaac</guid>
     </item>
     <item>
       <title>Software Engineer (SNOW- Strategic Portfolio Mgt required) at Gartner</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Boeing in USA - El Segundo, CA. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Quality-Systems-Engineer---Millennium-Space-Systems_JR2026519871</guid>
-    </item>
-    <item>
-      <title>Entry Level Environmental Test Engineer - 1st Shift - Millennium Space Systems at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Early-Career-Environmental-Test-Engineer---1st-Shift---Millennium-Space-Systems_JR2026519182-1</link>
-      <description>New grad role at Boeing in USA - El Segundo, CA. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Early-Career-Environmental-Test-Engineer---1st-Shift---Millennium-Space-Systems_JR2026519182-1</guid>
-    </item>
-    <item>
-      <title>Entry and Associate Design and Analysis Engineers (Electronic Sys Design &amp; Analy) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Entry-and-Associate-Design-and-Analysis-Engineers--Electronic-Sys-Design---Analy-_JR2026516394</link>
-      <description>New grad role at Boeing in USA - Daytona Beach, FL. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Daytona-Beach-FL/Entry-and-Associate-Design-and-Analysis-Engineers--Electronic-Sys-Design---Analy-_JR2026516394</guid>
-    </item>
-    <item>
-      <title>Product Review Engineer - Liaison Engineering (Associate or Mid-level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-level-_JR2026513416</link>
-      <description>New grad role at Boeing in USA - Oklahoma City, OK. Category: Other</description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Oklahoma-City-OK/Product-Review-Engineer---Liaison-Engineering--Associate-or-Mid-level-_JR2026513416</guid>
     </item>
   </channel>
 </rss>
