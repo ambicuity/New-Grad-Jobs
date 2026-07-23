@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-23T21:07:30.340796+00:00",
+    "last_updated": "2026-07-23T22:16:12.147184+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-24",
@@ -5436,25 +5436,25 @@
     },
     {
       "date": "2026-07-23",
-      "total_jobs": 1455,
+      "total_jobs": 1477,
       "categories": {
-        "software_engineering": 877,
+        "infrastructure_sre": 119,
+        "software_engineering": 889,
+        "security": 74,
         "data_ml": 144,
-        "security": 73,
-        "infrastructure_sre": 114,
         "data_engineering": 35,
         "frontend": 9,
-        "other": 141,
-        "mobile": 10,
+        "other": 143,
+        "mobile": 11,
         "quant_finance": 6,
-        "hardware": 13,
+        "hardware": 14,
         "backend": 30,
         "product_management": 3
       },
       "tiers": {
-        "other": 612,
-        "faang_plus": 157,
-        "unicorn": 686
+        "other": 630,
+        "unicorn": 687,
+        "faang_plus": 160
       },
       "top_companies": [
         {
@@ -5475,15 +5475,19 @@
         },
         {
           "company": "Accenture",
-          "jobs": 34
+          "jobs": 32
         },
         {
           "company": "Boeing",
-          "jobs": 29
+          "jobs": 31
         },
         {
           "company": "xAI",
           "jobs": 26
+        },
+        {
+          "company": "Leidos",
+          "jobs": 25
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5492,15 +5496,11 @@
         {
           "company": "Northrop Grumman",
           "jobs": 24
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.27,
-      "timestamp": "2026-07-23T21:07:30.339810+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 6.23,
+      "timestamp": "2026-07-23T22:16:12.146155+00:00"
     }
   ]
 }

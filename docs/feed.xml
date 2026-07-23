@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 21:07:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 22:16:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Networking (Dataplane) at Tailscale</title>
+      <link>https://job-boards.greenhouse.io/tailscale/jobs/4703138005</link>
+      <description>New grad role at Tailscale in Remote (United States). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Jul 2026 21:33:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4703138005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Networking (Dataplane) at Tailscale</title>
+      <link>https://job-boards.greenhouse.io/tailscale/jobs/4702613005</link>
+      <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 23 Jul 2026 21:33:13 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4702613005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Verifications Platform at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7544233</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 21:23:09 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7544233</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer, Public Sector at Scale AI</title>
+      <link>https://job-boards.greenhouse.io/scaleai/jobs/4651559005</link>
+      <description>New grad role at Scale AI in New York, NY; St. Louis, MO; Washington, DC. Category: Security Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 21:13:30 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4651559005</guid>
+    </item>
     <item>
       <title>Software Engineer, Agent Platform at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5174717007?gh_jid=5174717007</link>
@@ -328,34 +356,6 @@
       <description>New grad role at GitLab in Bangalore, India. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 23 Jul 2026 12:48:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8644274002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 23 Jul 2026 12:31:02 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 12:31:00 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 12:31:00 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cluster Deployment   at Cerebras</title>
-      <link>https://jobs.ashbyhq.com/cerebras/63b9c135-ce5d-4898-8e4d-9422d39e4ca6</link>
-      <description>New grad role at Cerebras in Sunnyvale, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 10:34:15 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/cerebras/63b9c135-ce5d-4898-8e4d-9422d39e4ca6</guid>
     </item>
   </channel>
 </rss>
