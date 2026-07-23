@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 22:16:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 23:18:16 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Computer Vision at Verkada</title>
+      <link>https://job-boards.greenhouse.io/verkada/jobs/4128624007</link>
+      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 22:58:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4128624007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cash App - Lending Products at Block</title>
+      <link>http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</link>
+      <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 22:32:58 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cash App - Lending Products at Block</title>
+      <link>http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</link>
+      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 22:32:58 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cash App - Lending Products at Block</title>
+      <link>http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</link>
+      <description>New grad role at Block in Vancouver, British Columbia, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 22:32:58 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</guid>
+    </item>
     <item>
       <title>Software Engineer, Networking (Dataplane) at Tailscale</title>
       <link>https://job-boards.greenhouse.io/tailscale/jobs/4703138005</link>
@@ -289,17 +317,17 @@
     </item>
     <item>
       <title>Security Engineer, Incident Response at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 14:29:50 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Incident Response at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
       <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
       <pubDate>Thu, 23 Jul 2026 14:29:50 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
+      <pubDate>Thu, 23 Jul 2026 14:29:50 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
     </item>
     <item>
       <title>Machine Learning Engineer at Twilio</title>
@@ -328,34 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 23 Jul 2026 14:18:46 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8646146002?gh_jid=8646146002</guid>
-    </item>
-    <item>
-      <title>Security Engineer 2 - Cyber Threat Intelligence at Datadog</title>
-      <link>https://careers.datadoghq.com/detail/7982345/?gh_jid=7982345</link>
-      <description>New grad role at Datadog in New York, New York, USA. Category: Security Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 13:52:10 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.datadoghq.com/detail/7982345/?gh_jid=7982345</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Android at Duolingo</title>
-      <link>https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002</link>
-      <description>New grad role at Duolingo in Pittsburgh, PA. Category: Mobile Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 13:04:47 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Android at Duolingo</title>
-      <link>https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002</link>
-      <description>New grad role at Duolingo in New York, NY. Category: Mobile Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 13:04:47 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer - Dedicated Hosted Runners at GitLab</title>
-      <link>https://job-boards.greenhouse.io/gitlab/jobs/8644274002</link>
-      <description>New grad role at GitLab in Bangalore, India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 23 Jul 2026 12:48:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8644274002</guid>
     </item>
   </channel>
 </rss>
