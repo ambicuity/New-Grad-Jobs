@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-24T18:56:46.307352+00:00",
+    "last_updated": "2026-07-24T20:20:34.612454+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-25",
@@ -5449,34 +5449,34 @@
     },
     {
       "date": "2026-07-24",
-      "total_jobs": 1421,
+      "total_jobs": 1432,
       "categories": {
-        "software_engineering": 867,
-        "data_ml": 140,
-        "infrastructure_sre": 122,
+        "infrastructure_sre": 123,
+        "software_engineering": 869,
+        "security": 75,
+        "other": 117,
+        "data_ml": 142,
         "frontend": 9,
         "backend": 31,
-        "security": 73,
         "mobile": 9,
-        "other": 116,
-        "quant_finance": 5,
+        "quant_finance": 7,
+        "hardware": 14,
         "data_engineering": 33,
-        "hardware": 13,
         "product_management": 3
       },
       "tiers": {
-        "faang_plus": 143,
-        "unicorn": 692,
-        "other": 586
+        "unicorn": 691,
+        "faang_plus": 140,
+        "other": 601
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 233
+          "jobs": 234
         },
         {
           "company": "Anduril Industries",
-          "jobs": 194
+          "jobs": 197
         },
         {
           "company": "Waymo",
@@ -5484,15 +5484,11 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 38
-        },
-        {
-          "company": "Accenture",
-          "jobs": 26
+          "jobs": 37
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 26
+          "jobs": 28
         },
         {
           "company": "Boeing",
@@ -5503,17 +5499,21 @@
           "jobs": 25
         },
         {
-          "company": "Scale AI",
-          "jobs": 23
+          "company": "Accenture",
+          "jobs": 25
         },
         {
           "company": "Stripe",
-          "jobs": 22
+          "jobs": 23
+        },
+        {
+          "company": "Scale AI",
+          "jobs": 23
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-07-24T18:56:46.278122+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.15,
+      "timestamp": "2026-07-24T20:20:34.611324+00:00"
     }
   ]
 }
