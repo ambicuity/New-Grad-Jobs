@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-24T03:51:46.806743+00:00",
+    "last_updated": "2026-07-24T06:19:52.099687+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-25",
@@ -5449,25 +5449,25 @@
     },
     {
       "date": "2026-07-24",
-      "total_jobs": 1471,
+      "total_jobs": 1467,
       "categories": {
-        "software_engineering": 888,
-        "infrastructure_sre": 129,
+        "software_engineering": 890,
+        "infrastructure_sre": 130,
         "data_ml": 140,
-        "data_engineering": 36,
+        "data_engineering": 35,
         "security": 73,
-        "other": 131,
+        "other": 127,
         "hardware": 15,
         "frontend": 9,
         "mobile": 10,
-        "backend": 31,
         "quant_finance": 6,
+        "backend": 29,
         "product_management": 3
       },
       "tiers": {
-        "other": 627,
+        "other": 624,
         "unicorn": 688,
-        "faang_plus": 156
+        "faang_plus": 155
       },
       "top_companies": [
         {
@@ -5488,11 +5488,11 @@
         },
         {
           "company": "Accenture",
-          "jobs": 37
+          "jobs": 33
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 29
         },
         {
           "company": "xAI",
@@ -5511,9 +5511,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 240,
-      "avg_jobs_per_company": 6.13,
-      "timestamp": "2026-07-24T03:51:46.805615+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 6.19,
+      "timestamp": "2026-07-24T06:19:52.098677+00:00"
     }
   ]
 }
