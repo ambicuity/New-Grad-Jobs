@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-24T22:44:14.380020+00:00",
+    "last_updated": "2026-07-24T23:48:28.023221+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-25",
@@ -5449,25 +5449,25 @@
     },
     {
       "date": "2026-07-24",
-      "total_jobs": 1437,
+      "total_jobs": 1436,
       "categories": {
-        "data_ml": 136,
-        "software_engineering": 878,
-        "infrastructure_sre": 120,
-        "data_engineering": 32,
-        "security": 77,
-        "other": 123,
+        "software_engineering": 877,
+        "data_ml": 138,
+        "infrastructure_sre": 121,
+        "data_engineering": 33,
+        "security": 75,
+        "other": 119,
         "quant_finance": 7,
-        "hardware": 12,
+        "hardware": 14,
         "backend": 31,
         "frontend": 9,
         "mobile": 9,
         "product_management": 3
       },
       "tiers": {
+        "faang_plus": 141,
         "unicorn": 692,
-        "other": 609,
-        "faang_plus": 136
+        "other": 603
       },
       "top_companies": [
         {
@@ -5488,32 +5488,32 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 26
+          "jobs": 27
         },
         {
           "company": "xAI",
           "jobs": 25
         },
         {
-          "company": "Boeing",
+          "company": "Stripe",
           "jobs": 24
         },
         {
-          "company": "Stripe",
-          "jobs": 23
+          "company": "Boeing",
+          "jobs": 24
         },
         {
           "company": "Scale AI",
           "jobs": 23
         },
         {
-          "company": "Accenture",
+          "company": "Leidos",
           "jobs": 23
         }
       ],
-      "unique_companies": 237,
-      "avg_jobs_per_company": 6.06,
-      "timestamp": "2026-07-24T22:44:14.378696+00:00"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 6.19,
+      "timestamp": "2026-07-24T23:48:28.021894+00:00"
     }
   ]
 }
