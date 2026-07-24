@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-24T20:20:34.612454+00:00",
+    "last_updated": "2026-07-24T21:36:29.568950+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-25",
@@ -5449,25 +5449,25 @@
     },
     {
       "date": "2026-07-24",
-      "total_jobs": 1432,
+      "total_jobs": 1443,
       "categories": {
-        "infrastructure_sre": 123,
-        "software_engineering": 869,
+        "software_engineering": 882,
+        "infrastructure_sre": 129,
+        "data_engineering": 32,
         "security": 75,
         "other": 117,
-        "data_ml": 142,
-        "frontend": 9,
+        "data_ml": 137,
+        "quant_finance": 6,
+        "hardware": 13,
         "backend": 31,
+        "frontend": 9,
         "mobile": 9,
-        "quant_finance": 7,
-        "hardware": 14,
-        "data_engineering": 33,
         "product_management": 3
       },
       "tiers": {
-        "unicorn": 691,
-        "faang_plus": 140,
-        "other": 601
+        "other": 610,
+        "unicorn": 692,
+        "faang_plus": 141
       },
       "top_companies": [
         {
@@ -5484,14 +5484,14 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 37
+          "jobs": 38
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 28
+          "jobs": 27
         },
         {
-          "company": "Boeing",
+          "company": "Leidos",
           "jobs": 26
         },
         {
@@ -5503,17 +5503,17 @@
           "jobs": 25
         },
         {
-          "company": "Stripe",
-          "jobs": 23
+          "company": "Boeing",
+          "jobs": 25
         },
         {
-          "company": "Scale AI",
+          "company": "Stripe",
           "jobs": 23
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 6.15,
-      "timestamp": "2026-07-24T20:20:34.611324+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 6.3,
+      "timestamp": "2026-07-24T21:36:29.567992+00:00"
     }
   ]
 }
