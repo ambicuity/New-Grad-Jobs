@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2026 21:36:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 22:44:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Data Scientist, GTM at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/584fc51a-1107-457c-b499-a94fe5ef02b4</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 24 Jul 2026 21:39:48 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/584fc51a-1107-457c-b499-a94fe5ef02b4</guid>
+    </item>
     <item>
       <title>Software Engineer, AI Enablement  at Tailscale</title>
       <link>https://job-boards.greenhouse.io/tailscale/jobs/4718557005</link>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 21:18:12 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8594403002?gh_jid=8594403002</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, Kubernetes Platform (Starshield) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8597472002?gh_jid=8597472002</link>
-      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 24 Jul 2026 21:18:12 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8597472002?gh_jid=8597472002</guid>
     </item>
   </channel>
 </rss>
