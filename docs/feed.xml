@@ -5,21 +5,21 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2026 10:55:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 12:18:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Jul 2026 09:56:16 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 09:56:16 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 09:56:16 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -190,6 +190,13 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=69691867ae4c888a</guid>
     </item>
     <item>
+      <title>Quality Software Engineer III - UI Automation at JPMorganChase</title>
+      <link>https://www.indeed.com/viewjob?jk=bc1c263251cdfd64</link>
+      <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc1c263251cdfd64</guid>
+    </item>
+    <item>
       <title>Data Engineer at Kwaan Tech</title>
       <link>https://www.indeed.com/viewjob?jk=407e7e7f9e1b4bab</link>
       <description>New grad role at Kwaan Tech in Fort Belvoir, VA, US. Category: Data Engineering</description>
@@ -197,11 +204,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=407e7e7f9e1b4bab</guid>
     </item>
     <item>
-      <title>Quality Software Engineer III - UI Automation at JPMorganChase</title>
-      <link>https://www.indeed.com/viewjob?jk=bc1c263251cdfd64</link>
-      <description>New grad role at JPMorganChase in Palo Alto, CA, US. Category: Software Engineering</description>
+      <title>Associate, Systems Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=e7b84f04f44d6830</link>
+      <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc1c263251cdfd64</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e7b84f04f44d6830</guid>
+    </item>
+    <item>
+      <title>Data Engineer II - SRE at JPMorganChase</title>
+      <link>https://in.indeed.com/viewjob?jk=adbfb518a6c549a8</link>
+      <description>New grad role at JPMorganChase in KA, IN. Category: Data Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=adbfb518a6c549a8</guid>
+    </item>
+    <item>
+      <title>Associate Software Engineer - IN at U.S. Bank</title>
+      <link>https://in.indeed.com/viewjob?jk=0271f0a8e0c50dca</link>
+      <description>New grad role at U.S. Bank in TN, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=0271f0a8e0c50dca</guid>
     </item>
     <item>
       <title>Software Engineer - React/Java/AI at Institutional Shareholder Services</title>
@@ -232,11 +253,32 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=708b58d48df290bd</guid>
     </item>
     <item>
+      <title>Associate, Electrical Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=419d4731b1b53b61</link>
+      <description>New grad role at L3Harris in Palm Bay, FL, US. Category: Hardware Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=419d4731b1b53b61</guid>
+    </item>
+    <item>
+      <title>Associate, Electrical Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=6648180ae60ab83f</link>
+      <description>New grad role at L3Harris in Salt Lake City, UT, US. Category: Hardware Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6648180ae60ab83f</guid>
+    </item>
+    <item>
       <title>Experienced Infrastructure Engineer at Serco</title>
       <link>https://www.indeed.com/viewjob?jk=7d913049e4d43aa6</link>
       <description>New grad role at Serco in Washington, DC, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d913049e4d43aa6</guid>
+    </item>
+    <item>
+      <title>Medical Assistant-Associate (UTHP Pain Clinic Westgate) at University of Texas Health Science Center at San Antonio</title>
+      <link>https://www.indeed.com/viewjob?jk=2749bd7050b93b9c</link>
+      <description>New grad role at University of Texas Health Science Center at San Antonio in San Antonio, TX, US. Category: Other</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2749bd7050b93b9c</guid>
     </item>
     <item>
       <title>Registered Nurse- Nurse Resident New Grad at Baystate Health</title>
@@ -274,6 +316,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/Manufacturing-Engineer-II_R72677-1</guid>
     </item>
     <item>
+      <title>Software Developer – Windows Platform Integration at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/6314-RemoteTeleworker-US/Software-Developer---Windows-Platform-Integration_R-00188052</link>
+      <description>New grad role at Leidos in 6314 Remote/Teleworker US. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/6314-RemoteTeleworker-US/Software-Developer---Windows-Platform-Integration_R-00188052</guid>
+    </item>
+    <item>
       <title>Software Engineer at Leidos</title>
       <link>https://leidos.wd5.myworkdayjobs.com/job/Melbourne-Victoria-Australia/Software-Engineer_R-00182909</link>
       <description>New grad role at Leidos in Melbourne, Victoria, Australia. Category: Software Engineering</description>
@@ -303,59 +352,10 @@
     </item>
     <item>
       <title>Software Engineer, Cash App - Lending Products at Block</title>
-      <link>http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</link>
-      <description>New grad role at Block in Vancouver, British Columbia, Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 22:32:58 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App - Lending Products at Block</title>
       <link>http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</link>
       <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
       <pubDate>Thu, 23 Jul 2026 22:32:58 +0000</pubDate>
       <guid isPermaLink="true">http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking (Dataplane) at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4703138005</link>
-      <description>New grad role at Tailscale in Remote (United States). Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 23 Jul 2026 21:33:15 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4703138005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking (Dataplane) at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4702613005</link>
-      <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 23 Jul 2026 21:33:13 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4702613005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Verifications Platform at Upstart</title>
-      <link>https://careers.upstart.com/jobs?gh_jid=7544233</link>
-      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 21:23:09 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7544233</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer, Public Sector at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4651559005</link>
-      <description>New grad role at Scale AI in New York, NY; St. Louis, MO; Washington, DC. Category: Security Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 21:13:30 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4651559005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agent Platform at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5174717007?gh_jid=5174717007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 23 Jul 2026 21:02:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5174717007?gh_jid=5174717007</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Core Infrastructure at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8080614</link>
-      <description>New grad role at Stripe in Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 23 Jul 2026 21:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8080614</guid>
     </item>
   </channel>
 </rss>
