@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 18:46:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 20:03:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 18:44:43 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7561739?gh_jid=7561739</guid>
+    </item>
+    <item>
+      <title>[2026] Data Scientist, Social  at Roblox</title>
+      <link>https://careers.roblox.com/jobs/7463634?gh_jid=7463634</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 25 Jul 2026 18:44:31 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/7463634?gh_jid=7463634</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
       <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
@@ -30,17 +44,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 25 Jul 2026 12:30:27 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 25 Jul 2026 12:30:27 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 12:30:27 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer, Rapid Integration and Test at Anduril Industries</title>
@@ -232,6 +246,20 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8d73a1b72f95c4ca</guid>
     </item>
     <item>
+      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
+      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
+      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
+    </item>
+    <item>
+      <title>Trainee: Digital Marketing at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</link>
+      <description>New grad role at Unknown in MH, IN. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</guid>
+    </item>
+    <item>
       <title>Site Reliability Engineer at Trading Technologies</title>
       <link>https://in.indeed.com/viewjob?jk=9c605841a517bd56</link>
       <description>New grad role at Trading Technologies in GJ, IN. Category: Software Engineering</description>
@@ -253,13 +281,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b904fa78124e1c20</guid>
     </item>
     <item>
-      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
-      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
-      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
-    </item>
-    <item>
       <title>Associate Field Engineer - Automated Logic (Waco, TX) at Carrier</title>
       <link>https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</link>
       <description>New grad role at Carrier in Richardson, TX, US. Category: Other</description>
@@ -267,11 +288,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</guid>
     </item>
     <item>
-      <title>Trainee: Digital Marketing at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</link>
-      <description>New grad role at Unknown in MH, IN. Category: Other</description>
+      <title>Coordinator, Healthcare Administration - College Grad at Primary PartnerCare®</title>
+      <link>https://www.indeed.com/viewjob?jk=a15ef254108de94f</link>
+      <description>New grad role at Primary PartnerCare® in Great Neck, NY, US. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a15ef254108de94f</guid>
     </item>
     <item>
       <title>Campus Dean at Florida National University</title>
@@ -317,17 +338,17 @@
     </item>
     <item>
       <title>Systems PhD - Software Engineer  at Databricks</title>
-      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</link>
-      <description>New grad role at Databricks in Bellevue, Washington; Seattle, Washington. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Jul 2026 23:28:52 +0000</pubDate>
-      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</guid>
-    </item>
-    <item>
-      <title>Systems PhD - Software Engineer  at Databricks</title>
       <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</link>
       <description>New grad role at Databricks in Mountain View, California; San Francisco, California. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 23:28:52 +0000</pubDate>
       <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002</guid>
+    </item>
+    <item>
+      <title>Systems PhD - Software Engineer  at Databricks</title>
+      <link>https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</link>
+      <description>New grad role at Databricks in Bellevue, Washington; Seattle, Washington. Category: Software Engineering</description>
+      <pubDate>Fri, 24 Jul 2026 23:28:52 +0000</pubDate>
+      <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002</guid>
     </item>
     <item>
       <title>Software Engineer - GenAI inference  at Databricks</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Databricks in San Francisco, California. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 23:28:51 +0000</pubDate>
       <guid isPermaLink="true">https://databricks.com/company/careers/open-positions/job?gh_jid=8202670002</guid>
-    </item>
-    <item>
-      <title>Data Scientist, GTM at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/584fc51a-1107-457c-b499-a94fe5ef02b4</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 24 Jul 2026 21:39:48 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/584fc51a-1107-457c-b499-a94fe5ef02b4</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Enablement  at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4718557005</link>
-      <description>New grad role at Tailscale in Remote (United Kingdom). Category: Software Engineering</description>
-      <pubDate>Fri, 24 Jul 2026 21:25:02 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4718557005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Enablement  at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4710755005</link>
-      <description>New grad role at Tailscale in Remote (United States). Category: Software Engineering</description>
-      <pubDate>Fri, 24 Jul 2026 21:24:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4710755005</guid>
     </item>
   </channel>
 </rss>
