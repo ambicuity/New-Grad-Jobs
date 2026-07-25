@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1448<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1447<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->873<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->871<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->8<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->75<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->146<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->31<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->30<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->118<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->6<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->19<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->127<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->131<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,448** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,447** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Bot Auto | Software Engineer, Generalist in Autonomous Driving System | San Francisco, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=dfc94fcc7aef0bdb) |
 | Bot Auto | Software Engineer, Generalist in Autonomous Driving System | Houston, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8d73a1b72f95c4ca) |
 
-**[View all 873 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 871 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -142,7 +142,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Security Engineer | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8567571002?gh_jid=8567571002) |
 | SpaceX | Security Engineer (Embedded & Networking) | Cape Canaveral, FL | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8593385002?gh_jid=8593385002) |
 
-**[View all 76 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 75 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -171,7 +171,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | SpaceX | Data Engineer (Starlink Go-To-Market) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8637472002?gh_jid=8637472002) |
 | OpenAI | Data Engineer, CPU & Storage | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/0c0fe7aa-24fb-4bad-aa30-3f68f1418e37) |
-| Inadev Corporation | Data Engineer | US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c81a4ee6ef1c78d4) |
 | JPMorganChase | Data Engineer II - SRE | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=adbfb518a6c549a8) |
 | Citi | Process and Data Engineer/Analyst | Gurgaon Haryana India | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Gurgaon-Haryana-India/Process-and-Data-Engineer-Analyst_26967946-1) |
 | Anthropic | Data Engineer, Safeguards | San Francisco, CA / New York City, NY | 1 day ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5240422008) |
@@ -179,8 +178,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Syracuse University | AI Data Engineer | Syracuse, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=0dfd015014ed5a6b) |
 | — | Data Engineer | Charlotte, NC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=8d165f11c959de53) |
 | Mastercard | Data Engineer II-1 | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II-1_R-279726-1) |
+| Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
 
-**[View all 31 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 30 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -188,7 +188,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| State of Connecticut | Capital Program Management Trainee (Connecticut Careers Trainee (Engineering And Related)) | Newington, CT, US | Today | [Apply](https://www.indeed.com/viewjob?jk=a1b32f06202365f5) |
 | SpaceX | Production Engineer, Site Reliability (Application Software) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8649729002?gh_jid=8649729002) |
 | SpaceX | Site Reliability Engineer (Application Software) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8646146002?gh_jid=8646146002) |
 | SpaceX | Site Reliability Engineer (Raptor) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8633999002?gh_jid=8633999002) |
@@ -198,6 +197,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Site Reliability Engineer, Kubernetes Platform (Starshield) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8597455002?gh_jid=8597455002) |
 | SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8578872002?gh_jid=8578872002) |
 | SpaceX | New Graduate Engineer, Launch & Test (Starship) | Starbase, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8578087002?gh_jid=8578087002) |
+| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8578053002?gh_jid=8578053002) |
 
 **[View all 118 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -241,7 +241,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Rosendin Electric | Electrical Engineer II | Sterling, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=6cac1f9ec04683d8) |
 | Rosendin Electric | Electrical Engineer II | Austin, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=f4668442e41bcf85) |
 
-**[View all 19 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 18 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -260,7 +260,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Henderson Engineers | Graduate Designer 2026-2027 | Phoenix, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=046e0f4b56f92f8d) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Houston, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8d4cff0e3c1e2d2a) |
 
-**[View all 127 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 131 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-25 14:45:59 UTC*
+*Last updated: 2026-07-25 15:52:33 UTC*
