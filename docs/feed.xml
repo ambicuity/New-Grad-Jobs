@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 16:43:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 17:47:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -197,20 +197,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8d73a1b72f95c4ca</guid>
     </item>
     <item>
-      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
-      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
-      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
-    </item>
-    <item>
-      <title>Trainee: Digital Marketing at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</link>
-      <description>New grad role at Unknown in MH, IN. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</guid>
-    </item>
-    <item>
       <title>Agentic AI Software Engineer United States at TCP Software</title>
       <link>https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</link>
       <description>New grad role at TCP Software in US. Category: Software Engineering</description>
@@ -232,11 +218,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5117c0159fa5b324</guid>
     </item>
     <item>
-      <title>Associate Field Engineer - Automated Logic (Waco, TX) at Carrier</title>
-      <link>https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</link>
-      <description>New grad role at Carrier in Richardson, TX, US. Category: Other</description>
+      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
+      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
+      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
     </item>
     <item>
       <title>Site Reliability Engineer at Trading Technologies</title>
@@ -244,6 +230,20 @@
       <description>New grad role at Trading Technologies in GJ, IN. Category: Software Engineering</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b904fa78124e1c20</guid>
+    </item>
+    <item>
+      <title>Trainee: Digital Marketing at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</link>
+      <description>New grad role at Unknown in MH, IN. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</guid>
+    </item>
+    <item>
+      <title>Associate Field Engineer - Automated Logic (Waco, TX) at Carrier</title>
+      <link>https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</link>
+      <description>New grad role at Carrier in Richardson, TX, US. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</guid>
     </item>
     <item>
       <title>Entry Level Records Clerk/Legal Assistant Trainee at McCoy Russell LLP</title>

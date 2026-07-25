@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-25T16:43:59.335738+00:00",
+    "last_updated": "2026-07-25T17:47:26.945935+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-26",
@@ -5462,13 +5462,13 @@
     },
     {
       "date": "2026-07-25",
-      "total_jobs": 1446,
+      "total_jobs": 1445,
       "categories": {
         "data_ml": 146,
-        "software_engineering": 871,
+        "software_engineering": 869,
         "security": 75,
-        "hardware": 18,
-        "other": 131,
+        "hardware": 17,
+        "other": 133,
         "backend": 32,
         "infrastructure_sre": 118,
         "data_engineering": 29,
@@ -5478,8 +5478,8 @@
         "product_management": 3
       },
       "tiers": {
-        "unicorn": 691,
-        "other": 612,
+        "unicorn": 689,
+        "other": 613,
         "faang_plus": 143
       },
       "top_companies": [
@@ -5492,12 +5492,12 @@
           "jobs": 198
         },
         {
-          "company": "OpenAI",
+          "company": "Waymo",
           "jobs": 39
         },
         {
-          "company": "Waymo",
-          "jobs": 39
+          "company": "OpenAI",
+          "jobs": 38
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5524,9 +5524,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.31,
-      "timestamp": "2026-07-25T16:43:59.334862+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-07-25T17:47:26.944878+00:00"
     }
   ]
 }
