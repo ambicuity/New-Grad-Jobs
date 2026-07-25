@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 15:52:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 16:43:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -99,32 +99,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e50960a9e056de0b</guid>
     </item>
     <item>
-      <title>Agentic AI Software Engineer United States at TCP Software</title>
-      <link>https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</link>
-      <description>New grad role at TCP Software in US. Category: Software Engineering</description>
+      <title>Junior/Intermediate Project Engineer/Technician at inHabit (2040LP) Projects + Design</title>
+      <link>https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</link>
+      <description>New grad role at inHabit (2040LP) Projects + Design in Halifax, NS, CA. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</guid>
-    </item>
-    <item>
-      <title>Marine Electrical Engineer II - Arlington, VA at Serco</title>
-      <link>https://www.indeed.com/viewjob?jk=4793a9661f8eba63</link>
-      <description>New grad role at Serco in Washington, DC, US. Category: Hardware Engineering</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4793a9661f8eba63</guid>
-    </item>
-    <item>
-      <title>Junior Software Developer — Remote at Smart Apply Test Company</title>
-      <link>https://www.indeed.com/viewjob?jk=09af9aacbb5e0009</link>
-      <description>New grad role at Smart Apply Test Company in Laguna Beach, CA, US. Category: Software Engineering</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=09af9aacbb5e0009</guid>
-    </item>
-    <item>
-      <title>Junior Backend .NET Engineer at Smart Apply Test Company</title>
-      <link>https://www.indeed.com/viewjob?jk=5117c0159fa5b324</link>
-      <description>New grad role at Smart Apply Test Company in US. Category: Backend Engineering</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5117c0159fa5b324</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</guid>
     </item>
     <item>
       <title>Graduate Designer 2026-2027 at Henderson Engineers</title>
@@ -232,11 +211,39 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ad64a5eda1cecc9</guid>
     </item>
     <item>
+      <title>Agentic AI Software Engineer United States at TCP Software</title>
+      <link>https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</link>
+      <description>New grad role at TCP Software in US. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</guid>
+    </item>
+    <item>
+      <title>Junior Software Developer — Remote at Smart Apply Test Company</title>
+      <link>https://www.indeed.com/viewjob?jk=09af9aacbb5e0009</link>
+      <description>New grad role at Smart Apply Test Company in Laguna Beach, CA, US. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=09af9aacbb5e0009</guid>
+    </item>
+    <item>
+      <title>Junior Backend .NET Engineer at Smart Apply Test Company</title>
+      <link>https://www.indeed.com/viewjob?jk=5117c0159fa5b324</link>
+      <description>New grad role at Smart Apply Test Company in US. Category: Backend Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5117c0159fa5b324</guid>
+    </item>
+    <item>
       <title>Associate Field Engineer - Automated Logic (Waco, TX) at Carrier</title>
       <link>https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</link>
       <description>New grad role at Carrier in Richardson, TX, US. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9358b2b1c1df7e23</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer at Trading Technologies</title>
+      <link>https://in.indeed.com/viewjob?jk=b904fa78124e1c20</link>
+      <description>New grad role at Trading Technologies in GJ, IN. Category: Software Engineering</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=b904fa78124e1c20</guid>
     </item>
     <item>
       <title>Entry Level Records Clerk/Legal Assistant Trainee at McCoy Russell LLP</title>
@@ -349,13 +356,6 @@
       <description>New grad role at SpaceX in Cape Canaveral, FL. Category: Software Engineering</description>
       <pubDate>Fri, 24 Jul 2026 21:18:20 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8643772002?gh_jid=8643772002</guid>
-    </item>
-    <item>
-      <title>Software Engineer (Starfall) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8642274002?gh_jid=8642274002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Fri, 24 Jul 2026 21:18:20 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8642274002?gh_jid=8642274002</guid>
     </item>
   </channel>
 </rss>
