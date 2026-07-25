@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1440<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1436<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->867<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->864<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->31<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->8<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->75<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->146<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->28<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->117<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->118<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->6<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->12<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->137<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->13<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,440** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,436** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Scout AI | Full Stack Software Engineer | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4958043008) |
 | BasisPath | HPC Software Engineer | Colorado Springs, CO, US | Today | [Apply](https://www.indeed.com/viewjob?jk=101b5a7d50402cc5) |
 
-**[View all 867 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 864 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -97,7 +97,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Smart Apply Test Company | Junior Backend .NET Engineer | US | Today | [Apply](https://www.indeed.com/viewjob?jk=5117c0159fa5b324) |
 | SpaceX | Backend Software Engineer, GNC (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8398679002?gh_jid=8398679002) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Backend | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4672848007?gh_jid=4672848007) |
 | Affirm | Software Engineer II, Backend (Collections) | Remote Poland | 1 day ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813159003) |
@@ -107,8 +106,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Affirm | Software Engineer I, Backend (Collections) | Remote Poland | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807508003) |
 | Affirm | Software Engineer I, Backend (Collections) | Remote Spain | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807506003) |
 | Affirm | Software Engineer II, Backend (Unified Data Platform) | Remote Canada | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800446003) |
+| Affirm | Software Engineer II, Backend (Unified Data Platform) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7800444003) |
 
-**[View all 32 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 31 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Mobile Engineering
 
@@ -188,6 +188,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| NGV2020 | Civil Engineer (Entry-Level) | Laurel, MD, US | Today | [Apply](https://www.indeed.com/viewjob?jk=60b262d53c7003ea) |
 | SpaceX | Production Engineer, Site Reliability (Application Software) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8649729002?gh_jid=8649729002) |
 | SpaceX | Site Reliability Engineer (Application Software) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8646146002?gh_jid=8646146002) |
 | SpaceX | Site Reliability Engineer (Raptor) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8633999002?gh_jid=8633999002) |
@@ -197,9 +198,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Site Reliability Engineer, Kubernetes Platform (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8597455002?gh_jid=8597455002) |
 | SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8578872002?gh_jid=8578872002) |
 | SpaceX | New Graduate Engineer, Launch & Test (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8578087002?gh_jid=8578087002) |
-| SpaceX | New Graduate Engineer, Mechanical (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8578053002?gh_jid=8578053002) |
 
-**[View all 117 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 118 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -231,6 +231,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Scout AI | Junior Firmware Engineer | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4643333008) |
+| Serco | Marine Electrical Engineer II - Arlington, VA | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4793a9661f8eba63) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Austin, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Palo Alto, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002) |
@@ -239,9 +240,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | New Graduate Engineer, Mechanical (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8493166002?gh_jid=8493166002) |
 | Verathon | Mechanical Engineer II | Burnaby, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=68e39d62e25de87c) |
 | NVIDIA | ASIC Physical Design and Timing Engineer - New College Grad 2026 | US, CA, Santa Clara | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Timing-Engineer---New-College-Grad-2026_JR2013177) |
-| NVIDIA | RTL Power Optimization Engineer – New College Grad 2026 | Santa Clara, CA, US | 4 days ago | [Apply](https://www.indeed.com/viewjob?jk=54d32c48b0c152b8) |
 
-**[View all 12 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 13 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -251,6 +251,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | Ivy | Software Development Engineer II | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=b16b5c2d04084637) |
 | VARStreet | Junior QA Engineer — 2–3 Years Experience | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=e50960a9e056de0b) |
+| inHabit (2040LP) Projects + Design | Junior/Intermediate Project Engineer/Technician | Halifax, NS, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=964c42aeef7d498c) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Chantilly, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=7971445584f6146f) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Denver, CO, US | Today | [Apply](https://www.indeed.com/viewjob?jk=14ff564e89a8c161) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Philadelphia, PA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=516d8e06dc8a2642) |
@@ -258,9 +259,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Henderson Engineers | Graduate Designer 2026-2027 | Las Vegas, NV, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3bb209e2b5c4d5af) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Nashville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4ae8274dbf4cca95) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Phoenix, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=046e0f4b56f92f8d) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Houston, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8d4cff0e3c1e2d2a) |
 
-**[View all 137 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-25 22:11:20 UTC*
+*Last updated: 2026-07-25 23:14:42 UTC*
