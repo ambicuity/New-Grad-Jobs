@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-25T09:12:11.804903+00:00",
+    "last_updated": "2026-07-25T10:47:57.222548+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-26",
@@ -5462,23 +5462,23 @@
     },
     {
       "date": "2026-07-25",
-      "total_jobs": 1434,
+      "total_jobs": 1445,
       "categories": {
-        "data_ml": 144,
         "software_engineering": 876,
+        "data_ml": 145,
         "security": 76,
-        "hardware": 18,
-        "other": 113,
+        "hardware": 17,
+        "other": 125,
         "backend": 32,
         "infrastructure_sre": 117,
-        "data_engineering": 32,
+        "data_engineering": 31,
         "quant_finance": 6,
         "frontend": 9,
         "mobile": 8,
         "product_management": 3
       },
       "tiers": {
-        "other": 602,
+        "other": 613,
         "unicorn": 693,
         "faang_plus": 139
       },
@@ -5520,13 +5520,13 @@
           "jobs": 23
         },
         {
-          "company": "Accenture",
+          "company": "Leidos",
           "jobs": 23
         }
       ],
-      "unique_companies": 220,
-      "avg_jobs_per_company": 6.52,
-      "timestamp": "2026-07-25T09:12:11.803618+00:00"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 6.48,
+      "timestamp": "2026-07-25T10:47:57.221522+00:00"
     }
   ]
 }
