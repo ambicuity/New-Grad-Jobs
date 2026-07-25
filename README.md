@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1449<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1448<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -41,12 +41,12 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->8<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->145<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->32<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->146<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->31<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->118<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->6<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->20<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->19<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->127<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,449** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,448** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,7 +84,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007) |
-| Twilio | Frontend Software Engineer | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
+| Twilio | Frontend Software Engineer | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
 | Justworks | Software Engineer, Frontend | New York, New York | 4 days ago | [Apply](https://boards.greenhouse.io/justworks/jobs/8069292?gh_jid=8069292) |
 | Glean | Software Engineer, Frontend | Mountain View, CA | 2026-07-06 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4006733005) |
 | Lyft | Software Engineer, Frontend - Lyft Urban Solutions | Toronto, Canada | 2026-07-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8594759002?gh_jid=8594759002) |
@@ -161,7 +161,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | 2026 Early Career Electrical Engineer | Costa Mesa, California, United States; Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007) |
 | Anduril Industries | 2026 Early Career Electrical Engineer, Battlespace Awareness Radar Team | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4747967007?gh_jid=4747967007) |
 
-**[View all 145 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 146 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -173,14 +173,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | OpenAI | Data Engineer, CPU & Storage | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/0c0fe7aa-24fb-4bad-aa30-3f68f1418e37) |
 | Inadev Corporation | Data Engineer | US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c81a4ee6ef1c78d4) |
 | JPMorganChase | Data Engineer II - SRE | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=adbfb518a6c549a8) |
-| Copeland | Associate Engineer | PB, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=f88af11f14ec8e95) |
 | Citi | Process and Data Engineer/Analyst | Gurgaon Haryana India | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Gurgaon-Haryana-India/Process-and-Data-Engineer-Analyst_26967946-1) |
 | Anthropic | Data Engineer, Safeguards | San Francisco, CA / New York City, NY | 1 day ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5240422008) |
 | Snaphomz | Data Engineer | TS, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=67d5baf6cc2da70b) |
 | Syracuse University | AI Data Engineer | Syracuse, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=0dfd015014ed5a6b) |
 | — | Data Engineer | Charlotte, NC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=8d165f11c959de53) |
+| Mastercard | Data Engineer II-1 | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II-1_R-279726-1) |
 
-**[View all 32 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 31 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -207,7 +207,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| MongoDB | Software Engineer 3, Voyage Control Plane | Palo Alto; Seattle | 3 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8041664) |
+| MongoDB | Software Engineer 3, Voyage Control Plane | Palo Alto; Seattle | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8041664) |
 | Anthropic | Offensive Hardware Security Engineer, Platform Security | San Francisco, CA / New York City, NY / Seattle, WA | 2026-07-17 | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5316565008) |
 | Cerebras | Hardware / Low Level Security Engineer | US and Canada Offices | 2026-06-23 | [Apply](https://jobs.ashbyhq.com/cerebras/4e706d0d-65a6-4a36-9ff3-b9e9da16a618) |
 
@@ -241,7 +241,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Rosendin Electric | Electrical Engineer II | Sterling, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=6cac1f9ec04683d8) |
 | Rosendin Electric | Electrical Engineer II | Austin, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=f4668442e41bcf85) |
 
-**[View all 20 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 19 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-25 13:12:32 UTC*
+*Last updated: 2026-07-25 14:45:59 UTC*
