@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2026 20:40:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 21:41:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Security Engineer, Officer at State Street</title>
@@ -13,6 +13,27 @@
       <description>New grad role at State Street in TS, IN. Category: Security Engineering</description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=550c25c7943aaf62</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 26 Jul 2026 21:05:25 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sun, 26 Jul 2026 21:05:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sun, 26 Jul 2026 21:05:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
@@ -48,27 +69,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Sun, 26 Jul 2026 15:42:52 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sun, 26 Jul 2026 12:27:49 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sun, 26 Jul 2026 12:27:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sun, 26 Jul 2026 12:27:48 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Embedded Software Engineer, C++ at Anduril Industries</title>
@@ -260,11 +260,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</guid>
     </item>
     <item>
-      <title>Civil Engineer (Entry-Level) at NGV2020</title>
-      <link>https://www.indeed.com/viewjob?jk=60b262d53c7003ea</link>
-      <description>New grad role at NGV2020 in Laurel, MD, US. Category: Infrastructure &amp; SRE</description>
+      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
+      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
+      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=60b262d53c7003ea</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
     </item>
     <item>
       <title>HPC Software Engineer at Smart Apply Test Company</title>
