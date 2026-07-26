@@ -32,11 +32,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1444<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1441<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->864<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->862<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->30<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->8<!-- /COUNT --> |
@@ -47,14 +47,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->6<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->12<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->141<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->140<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,444** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,441** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Software Engineer (Active Clearance), Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007) |
 | Anduril Industries | Software Engineer, Rapid Integration and Test | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5129324007?gh_jid=5129324007) |
 
-**[View all 864 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 862 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -84,7 +84,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Seattle, Washington, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007) |
-| Twilio | Frontend Software Engineer | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
+| Twilio | Frontend Software Engineer | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
 | Justworks | Software Engineer, Frontend | New York, New York | 5 days ago | [Apply](https://boards.greenhouse.io/justworks/jobs/8069292?gh_jid=8069292) |
 | Glean | Software Engineer, Frontend | Mountain View, CA | 2026-07-06 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4006733005) |
 | Lyft | Software Engineer, Frontend - Lyft Urban Solutions | Toronto, Canada | 2026-07-06 | [Apply](https://app.careerpuck.com/job-board/lyft/job/8594759002?gh_jid=8594759002) |
@@ -207,7 +207,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| MongoDB | Software Engineer 3, Voyage Control Plane | Palo Alto; Seattle | 4 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8041664) |
+| MongoDB | Software Engineer 3, Voyage Control Plane | Palo Alto; Seattle | 5 days ago | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8041664) |
 | Anthropic | Offensive Hardware Security Engineer, Platform Security | San Francisco, CA / New York City, NY / Seattle, WA | 2026-07-17 | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5316565008) |
 | Cerebras | Hardware / Low Level Security Engineer | US and Canada Offices | 2026-06-23 | [Apply](https://jobs.ashbyhq.com/cerebras/4e706d0d-65a6-4a36-9ff3-b9e9da16a618) |
 
@@ -256,11 +256,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Ivy | Software Development Engineer II | TS, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=b16b5c2d04084637) |
 | VARStreet | Junior QA Engineer — 2–3 Years Experience | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=e50960a9e056de0b) |
 | inHabit (2040LP) Projects + Design | Junior/Intermediate Project Engineer/Technician | Halifax, NS, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=964c42aeef7d498c) |
+| Takeda Pharmaceuticals | Downstream Process Development, Engineer II | Lexington, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dd1523f1316230a6) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Chantilly, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=7971445584f6146f) |
 | Henderson Engineers | Graduate Designer 2026-2027 | Denver, CO, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=14ff564e89a8c161) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Philadelphia, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=516d8e06dc8a2642) |
 
-**[View all 141 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 140 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-26 13:47:07 UTC*
+*Last updated: 2026-07-26 14:56:27 UTC*
