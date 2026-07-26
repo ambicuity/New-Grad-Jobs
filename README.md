@@ -71,7 +71,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Scout AI | Software Engineer, Agent Harnessing | Sunnyvale, California | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/5248857008) |
 | Scout AI | Robotics Software Engineer | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/5137118008) |
 | Scout AI | Full Stack Software Engineer | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4958043008) |
-| BasisPath | HPC Software Engineer | Colorado Springs, CO, US | Today | [Apply](https://www.indeed.com/viewjob?jk=101b5a7d50402cc5) |
+| BasisPath | HPC Software Engineer | Colorado Springs, CO, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=101b5a7d50402cc5) |
 
 **[View all 864 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -132,6 +132,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | SpaceX | Security Engineer (Detection Engineering) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8650242002?gh_jid=8650242002) |
+| Booz Allen Hamilton | Data Security Engineer | Fort Meade, MD | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Fort-Meade-MD/Data-Security-Engineer_R0245295) |
 | SpaceX | Embedded Security Engineer (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8624836002?gh_jid=8624836002) |
 | SpaceX | Product Security Engineer (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8624835002?gh_jid=8624835002) |
 | SpaceX | Security Engineer (Blue Team) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8611050002?gh_jid=8611050002) |
@@ -140,7 +141,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Product Security Engineer (Starlink) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8577411002?gh_jid=8577411002) |
 | SpaceX | Security Engineer | Cape Canaveral, FL | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8567522002?gh_jid=8567522002) |
 | SpaceX | Security Engineer | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8567571002?gh_jid=8567571002) |
-| SpaceX | Security Engineer (Embedded & Networking) | Cape Canaveral, FL | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8593385002?gh_jid=8593385002) |
 
 **[View all 75 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -154,12 +154,12 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Anduril Industries | Data Engineer, Manufacturing Quality | Atlanta, Georgia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5167749007?gh_jid=5167749007) |
 | Scout AI | AI Cloud Infrastructure Engineer - Fury Team | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4960342008) |
-| OpenAI | Data Scientist, GTM | San Francisco, California, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/openai/584fc51a-1107-457c-b499-a94fe5ef02b4) |
-| SpaceX | Site Reliability Engineer (Top Secret Clearance) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8601223002?gh_jid=8601223002) |
-| SpaceX | Data Engineer (Starlink Network Analytics, Wi-Fi) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8573711002?gh_jid=8573711002) |
-| SpaceX | ML Engineer, Surrogate Modeling (Vehicle Engineering) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8559035002?gh_jid=8559035002) |
-| Anduril Industries | 2026 Early Career Electrical Engineer | Costa Mesa, California, United States; Fort Collins, Colorado, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007) |
-| Anduril Industries | 2026 Early Career Electrical Engineer, Battlespace Awareness Radar Team | Fort Collins, Colorado, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4747967007?gh_jid=4747967007) |
+| NVIDIA | Research Scientist, Robotics Research - PhD New College Grad 2026 | US, WA, Seattle | 1 day ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-WA-Seattle/Research-Scientist--Robotics-Research----PhD-New-College-Grad-2026_JR2011473) |
+| Booz Allen Hamilton | Data Scientist | Fort Meade, MD | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Fort-Meade-MD/Data-Scientist_R0245296-1) |
+| Booz Allen Hamilton | Data Scientist | Washington, DC | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Scientist_R0245271-1) |
+| Booz Allen Hamilton | Data Scientist, Mid | Washington, DC | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Scientist--Mid_R0245282) |
+| Leidos | Data Scientist | Bethesda, MD | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Data-Scientist_R-00188100) |
+| Leidos | Spaceflight Data Scientist (NASA HHPC) | Houston, TX | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Houston-TX/Spaceflight-Data-Scientist--NASA-HHPC-_R-00188073) |
 
 **[View all 146 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -171,14 +171,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | SpaceX | Data Engineer (Starlink Go-To-Market) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8637472002?gh_jid=8637472002) |
 | OpenAI | Data Engineer, CPU & Storage | San Francisco, California, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/openai/0c0fe7aa-24fb-4bad-aa30-3f68f1418e37) |
-| Anthropic | Data Engineer, Safeguards | San Francisco, CA / New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5240422008) |
-| Snaphomz | Data Engineer | TS, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=67d5baf6cc2da70b) |
-| Syracuse University | AI Data Engineer | Syracuse, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=0dfd015014ed5a6b) |
-| — | Data Engineer | Charlotte, NC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=8d165f11c959de53) |
 | Mastercard | Data Engineer II-1 | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II-1_R-279726-1) |
+| Anthropic | Data Engineer, Safeguards | San Francisco, CA / New York City, NY | 2 days ago | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5240422008) |
+| Snaphomz | Data Engineer | TS, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=67d5baf6cc2da70b) |
+| Syracuse University | AI Data Engineer | Syracuse, NY, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=0dfd015014ed5a6b) |
+| — | Data Engineer | Charlotte, NC, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=8d165f11c959de53) |
+| NVIDIA | Supply Chain Data Engineer | US, CA, Santa Clara | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Supply-Chain-Data-Engineer_JR2021179) |
+| Booz Allen Hamilton | Data Engineer | Honolulu, HI | 3 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Data-Engineer_R0245086) |
 | Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 3 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
-| Figma | Data Engineer | San Francisco, CA • New York, NY • United States | 3 days ago | [Apply](https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004) |
-| TD | Data Engineer III | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=bc24f8a99c6dd8bc) |
 
 **[View all 28 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -188,16 +188,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| NGV2020 | Civil Engineer (Entry-Level) | Laurel, MD, US | Today | [Apply](https://www.indeed.com/viewjob?jk=60b262d53c7003ea) |
+| NGV2020 | Civil Engineer (Entry-Level) | Laurel, MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=60b262d53c7003ea) |
+| Mastercard | Site Reliability Engineer II | Pune, India | 1 day ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-274938) |
+| Booz Allen Hamilton | Network Engineer, Mid | San Diego, CA | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Network-Engineer--Mid_R0245288) |
+| Booz Allen Hamilton | DevOps Engineer, Mid | Chantilly, VA | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/DevOps-Engineer--Mid_R0238594) |
+| Booz Allen Hamilton | DevOps Engineer, Mid | Chantilly, VA | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/DevOps-Engineer--Mid_R0245245) |
+| Booz Allen Hamilton | DevOps Engineer, Mid | Chantilly, VA | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/DevOps-Engineer--Mid_R0245243) |
+| Leidos | Cloud Network Engineer | Huntsville, AL | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Cloud-Network-Engineer_R-00188067) |
+| Leidos | Network Engineer | Washington, DC | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Washington-DC/Network-Engineer_R-00187989) |
 | SpaceX | Production Engineer, Site Reliability (Application Software) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8649729002?gh_jid=8649729002) |
 | SpaceX | Site Reliability Engineer (Application Software) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8646146002?gh_jid=8646146002) |
-| SpaceX | Site Reliability Engineer (Raptor) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8633999002?gh_jid=8633999002) |
-| SpaceX | Site Reliability Engineer — HPC & Automation (Silicon Engineering) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8614963002?gh_jid=8614963002) |
-| SpaceX | Infrastructure Engineer | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8604308002?gh_jid=8604308002) |
-| SpaceX | Site Reliability Engineer, Kubernetes Platform (Starshield) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8597472002?gh_jid=8597472002) |
-| SpaceX | Site Reliability Engineer, Kubernetes Platform (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8597455002?gh_jid=8597455002) |
-| SpaceX | Network Engineer (Starlink Community Gateway) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8578872002?gh_jid=8578872002) |
-| SpaceX | New Graduate Engineer, Launch & Test (Starship) | Starbase, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8578087002?gh_jid=8578087002) |
 
 **[View all 118 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -219,9 +219,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
-| Cenovus Energy | New Grad, Downstream Business, June 2027 (Calgary) | Calgary, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=69691867ae4c888a) |
-| Torch Technologies | Entry-Level Engineer/Analyst | Huntsville, AL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a70d653e2ab68d07) |
-| Scotiabank | GBM - Investment Banking Analyst (Financial Institutions Group) - New Grad | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=9f3b1fea63953ab4) |
+| Cenovus Energy | New Grad, Downstream Business, June 2027 (Calgary) | Calgary, AB, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=69691867ae4c888a) |
+| Torch Technologies | Entry-Level Engineer/Analyst | Huntsville, AL, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=a70d653e2ab68d07) |
+| Scotiabank | GBM - Investment Banking Analyst (Financial Institutions Group) - New Grad | Toronto, ON, CA | 4 days ago | [Apply](https://ca.indeed.com/viewjob?jk=9f3b1fea63953ab4) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -231,14 +231,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Scout AI | Junior Firmware Engineer | Sunnyvale, CA | Today | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4643333008) |
-| Serco | Marine Electrical Engineer II - Arlington, VA | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4793a9661f8eba63) |
+| Serco | Marine Electrical Engineer II - Arlington, VA | Washington, DC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=4793a9661f8eba63) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Austin, TX | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Palo Alto, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Irvine, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002) |
 | SpaceX | New Graduate Engineer, Electrical (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8483305002?gh_jid=8483305002) |
 | SpaceX | New Graduate Engineer, Mechanical (Starshield) | Hawthorne, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8493166002?gh_jid=8493166002) |
-| Verathon | Mechanical Engineer II | Burnaby, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=68e39d62e25de87c) |
+| Verathon | Mechanical Engineer II | Burnaby, BC, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=68e39d62e25de87c) |
 | NVIDIA | ASIC Physical Design and Timing Engineer - New College Grad 2026 | US, CA, Santa Clara | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/ASIC-Timing-Engineer---New-College-Grad-2026_JR2013177) |
 
 **[View all 13 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
@@ -249,16 +249,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Ivy | Software Development Engineer II | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=b16b5c2d04084637) |
-| VARStreet | Junior QA Engineer — 2–3 Years Experience | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=e50960a9e056de0b) |
-| inHabit (2040LP) Projects + Design | Junior/Intermediate Project Engineer/Technician | Halifax, NS, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=964c42aeef7d498c) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Chantilly, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=7971445584f6146f) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Denver, CO, US | Today | [Apply](https://www.indeed.com/viewjob?jk=14ff564e89a8c161) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Philadelphia, PA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=516d8e06dc8a2642) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Bentonville, AR, US | Today | [Apply](https://www.indeed.com/viewjob?jk=332c7f19f40d0f3b) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Las Vegas, NV, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3bb209e2b5c4d5af) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Nashville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4ae8274dbf4cca95) |
-| Henderson Engineers | Graduate Designer 2026-2027 | Phoenix, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=046e0f4b56f92f8d) |
+| Medtronic | Process Engineer II | Tempe, Arizona, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tempe-Arizona-United-States-of-America/Process-Engineer-II_R72876-1) |
+| Ivy | Software Development Engineer II | TS, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=b16b5c2d04084637) |
+| VARStreet | Junior QA Engineer — 2–3 Years Experience | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=e50960a9e056de0b) |
+| inHabit (2040LP) Projects + Design | Junior/Intermediate Project Engineer/Technician | Halifax, NS, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=964c42aeef7d498c) |
+| Takeda Pharmaceuticals | Downstream Process Development, Engineer II | Lexington, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dd1523f1316230a6) |
+| Henderson Engineers | Graduate Designer 2026-2027 | Chantilly, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=7971445584f6146f) |
+| Henderson Engineers | Graduate Designer 2026-2027 | Denver, CO, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=14ff564e89a8c161) |
+| Henderson Engineers | Graduate Designer 2026-2027 | Philadelphia, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=516d8e06dc8a2642) |
+| Henderson Engineers | Graduate Designer 2026-2027 | Bentonville, AR, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=332c7f19f40d0f3b) |
+| Henderson Engineers | Graduate Designer 2026-2027 | Las Vegas, NV, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3bb209e2b5c4d5af) |
 
 **[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -373,4 +373,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-07-25 23:14:42 UTC*
+*Last updated: 2026-07-26 00:18:45 UTC*
