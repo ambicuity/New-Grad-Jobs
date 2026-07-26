@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-26T21:41:47.145678+00:00",
+    "last_updated": "2026-07-26T22:45:00.076839+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-27",
@@ -5475,14 +5475,14 @@
     },
     {
       "date": "2026-07-26",
-      "total_jobs": 1434,
+      "total_jobs": 1435,
       "categories": {
         "security": 74,
+        "software_engineering": 863,
         "data_ml": 145,
-        "software_engineering": 862,
         "other": 137,
-        "hardware": 13,
-        "infrastructure_sre": 120,
+        "infrastructure_sre": 121,
+        "hardware": 12,
         "data_engineering": 27,
         "quant_finance": 6,
         "backend": 30,
@@ -5491,14 +5491,14 @@
         "product_management": 3
       },
       "tiers": {
-        "faang_plus": 140,
-        "unicorn": 686,
-        "other": 608
+        "faang_plus": 139,
+        "unicorn": 687,
+        "other": 609
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 235
+          "jobs": 236
         },
         {
           "company": "Anduril Industries",
@@ -5517,12 +5517,12 @@
           "jobs": 26
         },
         {
-          "company": "xAI",
+          "company": "Leidos",
           "jobs": 25
         },
         {
-          "company": "Leidos",
-          "jobs": 24
+          "company": "xAI",
+          "jobs": 25
         },
         {
           "company": "Stripe",
@@ -5538,8 +5538,8 @@
         }
       ],
       "unique_companies": 230,
-      "avg_jobs_per_company": 6.23,
-      "timestamp": "2026-07-26T21:41:47.144395+00:00"
+      "avg_jobs_per_company": 6.24,
+      "timestamp": "2026-07-26T22:45:00.075633+00:00"
     }
   ]
 }

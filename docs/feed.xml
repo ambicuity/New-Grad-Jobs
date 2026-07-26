@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2026 21:41:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 22:45:00 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Security Engineer, Officer at State Street</title>
@@ -13,6 +13,13 @@
       <description>New grad role at State Street in TS, IN. Category: Security Engineering</description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=550c25c7943aaf62</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Manufacturing at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8650988002?gh_jid=8650988002</link>
+      <description>New grad role at SpaceX in Starbase, TX. Category: Software Engineering</description>
+      <pubDate>Sun, 26 Jul 2026 22:41:23 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8650988002?gh_jid=8650988002</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -190,6 +197,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tucson-Arizona-United-States-of-America/Sales-Representative-II--Deep-Brain-Stimulation--DBS-----Tucson--AZ_R71386</guid>
     </item>
     <item>
+      <title>Network Engineer at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Pearl-Harbor-HI/Network-Engineer_R-00188098</link>
+      <description>New grad role at Leidos in Pearl Harbor, HI. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Pearl-Harbor-HI/Network-Engineer_R-00188098</guid>
+    </item>
+    <item>
       <title>Network Systems Engineer - Cyber at Leidos</title>
       <link>https://leidos.wd5.myworkdayjobs.com/job/Laurel-MD/Network-Systems-Engineer---Cyber_R-00187927</link>
       <description>New grad role at Leidos in Laurel, MD. Category: Software Engineering</description>
@@ -253,20 +267,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e50960a9e056de0b</guid>
     </item>
     <item>
-      <title>Junior/Intermediate Project Engineer/Technician at inHabit (2040LP) Projects + Design</title>
-      <link>https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</link>
-      <description>New grad role at inHabit (2040LP) Projects + Design in Halifax, NS, CA. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</guid>
-    </item>
-    <item>
-      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
-      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
-      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
-    </item>
-    <item>
       <title>HPC Software Engineer at Smart Apply Test Company</title>
       <link>https://www.indeed.com/viewjob?jk=5e53278b10e34a74</link>
       <description>New grad role at Smart Apply Test Company in Colorado Springs, CO, US. Category: Software Engineering</description>
@@ -295,11 +295,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e7b2c4d6ba85bd67</guid>
     </item>
     <item>
-      <title>Marine Electrical Engineer II - Arlington, VA at Serco</title>
-      <link>https://www.indeed.com/viewjob?jk=4793a9661f8eba63</link>
-      <description>New grad role at Serco in Washington, DC, US. Category: Hardware Engineering</description>
+      <title>Civil Engineer (Entry-Level) at NGV2020</title>
+      <link>https://www.indeed.com/viewjob?jk=60b262d53c7003ea</link>
+      <description>New grad role at NGV2020 in Laurel, MD, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4793a9661f8eba63</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=60b262d53c7003ea</guid>
+    </item>
+    <item>
+      <title>Junior/Intermediate Project Engineer/Technician at inHabit (2040LP) Projects + Design</title>
+      <link>https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</link>
+      <description>New grad role at inHabit (2040LP) Projects + Design in Halifax, NS, CA. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=964c42aeef7d498c</guid>
+    </item>
+    <item>
+      <title>Downstream Process Development, Engineer II at Takeda Pharmaceuticals</title>
+      <link>https://www.indeed.com/viewjob?jk=dd1523f1316230a6</link>
+      <description>New grad role at Takeda Pharmaceuticals in Lexington, MA, US. Category: Other</description>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dd1523f1316230a6</guid>
     </item>
     <item>
       <title>Graduate Designer 2026-2027 at Henderson Engineers</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Henderson Engineers in Nashville, TN, US. Category: Other</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4ae8274dbf4cca95</guid>
-    </item>
-    <item>
-      <title>Graduate Designer 2026-2027 at Henderson Engineers</title>
-      <link>https://www.indeed.com/viewjob?jk=046e0f4b56f92f8d</link>
-      <description>New grad role at Henderson Engineers in Phoenix, AZ, US. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=046e0f4b56f92f8d</guid>
-    </item>
-    <item>
-      <title>Graduate Designer 2026-2027 at Henderson Engineers</title>
-      <link>https://www.indeed.com/viewjob?jk=8d4cff0e3c1e2d2a</link>
-      <description>New grad role at Henderson Engineers in Houston, TX, US. Category: Other</description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8d4cff0e3c1e2d2a</guid>
     </item>
   </channel>
 </rss>
