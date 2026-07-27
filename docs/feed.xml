@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2026 21:35:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 22:41:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Software Engineer at Gartner</title>
+      <link>https://in.indeed.com/viewjob?jk=44f7cb4565439ac1</link>
+      <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=44f7cb4565439ac1</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Observability (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 22:38:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Network Observability (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 22:38:39 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</guid>
+    </item>
+    <item>
+      <title>IT Network Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8648054002?gh_jid=8648054002</link>
+      <description>New grad role at SpaceX in Vandenberg, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 27 Jul 2026 22:20:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8648054002?gh_jid=8648054002</guid>
+    </item>
     <item>
       <title>Software Engineer II at Samsara</title>
       <link>https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Stripe in US. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7952048</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Radar at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7983456</link>
-      <description>New grad role at Stripe in Seattle. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7983456</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7923191</link>
-      <description>New grad role at Stripe in South San Francisco, CA and US-Remote. Category: Security Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7923191</guid>
-    </item>
-    <item>
-      <title>Security Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7923209</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Security Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7923209</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
-      <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
     </item>
   </channel>
 </rss>
