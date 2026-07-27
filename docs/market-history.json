@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-27T20:15:09.428592+00:00",
+    "last_updated": "2026-07-27T21:35:08.488888+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-28",
@@ -5488,25 +5488,25 @@
     },
     {
       "date": "2026-07-27",
-      "total_jobs": 1495,
+      "total_jobs": 1487,
       "categories": {
-        "software_engineering": 884,
-        "security": 80,
+        "software_engineering": 889,
         "data_ml": 148,
-        "data_engineering": 27,
-        "infrastructure_sre": 137,
+        "security": 79,
+        "data_engineering": 26,
+        "infrastructure_sre": 133,
         "frontend": 9,
-        "other": 149,
-        "hardware": 14,
-        "product_management": 4,
-        "quant_finance": 5,
+        "other": 140,
+        "hardware": 16,
+        "quant_finance": 6,
         "backend": 30,
-        "mobile": 8
+        "mobile": 8,
+        "product_management": 3
       },
       "tiers": {
-        "faang_plus": 142,
         "unicorn": 695,
-        "other": 658
+        "other": 649,
+        "faang_plus": 143
       },
       "top_companies": [
         {
@@ -5519,7 +5519,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 39
+          "jobs": 40
         },
         {
           "company": "Waymo",
@@ -5527,11 +5527,7 @@
         },
         {
           "company": "Leidos",
-          "jobs": 28
-        },
-        {
-          "company": "xAI",
-          "jobs": 25
+          "jobs": 30
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5539,6 +5535,10 @@
         },
         {
           "company": "Stripe",
+          "jobs": 24
+        },
+        {
+          "company": "xAI",
           "jobs": 24
         },
         {
@@ -5550,9 +5550,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 257,
-      "avg_jobs_per_company": 5.82,
-      "timestamp": "2026-07-27T20:15:09.427710+00:00"
+      "unique_companies": 253,
+      "avg_jobs_per_company": 5.88,
+      "timestamp": "2026-07-27T21:35:08.487825+00:00"
     }
   ]
 }

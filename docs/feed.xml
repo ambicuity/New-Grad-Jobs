@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2026 20:15:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 21:35:08 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</link>
+      <description>New grad role at Samsara in Remote - US. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:43:59 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 27 Jul 2026 20:33:44 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8533547002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Security Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:26:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8533547002</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Data Aquisition (systems) at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/70aaaafa-fe2f-4409-9a72-c0faf50d7d01</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:24:02 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/70aaaafa-fe2f-4409-9a72-c0faf50d7d01</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Air Defense at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4843950007?gh_jid=4843950007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:23:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4843950007?gh_jid=4843950007</guid>
+    </item>
     <item>
       <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=8084476</link>
@@ -317,45 +352,10 @@
     </item>
     <item>
       <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8009143</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8009143</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7926966</link>
-      <description>New grad role at Stripe in New York, NY. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7926966</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
       <link>https://stripe.com/jobs/search?gh_jid=7991636</link>
       <description>New grad role at Stripe in Seattle . Category: Software Engineering</description>
       <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7991636</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7922832</link>
-      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7922832</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Bridge at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7277110</link>
-      <description>New grad role at Stripe in San Francisco, NY, Seattle. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7277110</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Full Stack at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8084193</link>
-      <description>New grad role at Stripe in South San Francisco, California. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 15:17:30 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8084193</guid>
     </item>
   </channel>
 </rss>
