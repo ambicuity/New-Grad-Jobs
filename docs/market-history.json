@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-27T05:08:07.576270+00:00",
+    "last_updated": "2026-07-27T08:48:40.523685+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-28",
@@ -5488,25 +5488,25 @@
     },
     {
       "date": "2026-07-27",
-      "total_jobs": 1426,
+      "total_jobs": 1436,
       "categories": {
-        "data_ml": 145,
+        "infrastructure_sre": 121,
         "software_engineering": 856,
-        "security": 74,
+        "data_ml": 144,
+        "security": 75,
         "frontend": 10,
-        "other": 135,
-        "infrastructure_sre": 120,
+        "other": 146,
         "hardware": 12,
-        "data_engineering": 27,
+        "data_engineering": 25,
         "quant_finance": 6,
         "backend": 30,
         "mobile": 8,
         "product_management": 3
       },
       "tiers": {
+        "other": 615,
         "unicorn": 687,
-        "other": 602,
-        "faang_plus": 137
+        "faang_plus": 134
       },
       "top_companies": [
         {
@@ -5534,7 +5534,7 @@
           "jobs": 25
         },
         {
-          "company": "Leidos",
+          "company": "University of Ottawa",
           "jobs": 24
         },
         {
@@ -5542,17 +5542,17 @@
           "jobs": 24
         },
         {
-          "company": "Boeing",
+          "company": "Scale AI",
           "jobs": 23
         },
         {
-          "company": "Scale AI",
-          "jobs": 23
+          "company": "Leidos",
+          "jobs": 22
         }
       ],
-      "unique_companies": 228,
-      "avg_jobs_per_company": 6.25,
-      "timestamp": "2026-07-27T05:08:07.575100+00:00"
+      "unique_companies": 225,
+      "avg_jobs_per_company": 6.38,
+      "timestamp": "2026-07-27T08:48:40.522505+00:00"
     }
   ]
 }
