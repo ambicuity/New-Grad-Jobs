@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-27T22:41:58.915786+00:00",
+    "last_updated": "2026-07-27T23:48:52.454362+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-28",
@@ -5488,23 +5488,23 @@
     },
     {
       "date": "2026-07-27",
-      "total_jobs": 1495,
+      "total_jobs": 1499,
       "categories": {
-        "software_engineering": 890,
-        "infrastructure_sre": 137,
-        "data_ml": 149,
-        "security": 80,
-        "data_engineering": 26,
+        "software_engineering": 889,
+        "data_ml": 148,
         "frontend": 9,
-        "other": 143,
-        "hardware": 14,
-        "quant_finance": 6,
-        "backend": 30,
+        "backend": 31,
+        "infrastructure_sre": 140,
+        "security": 79,
         "mobile": 8,
+        "data_engineering": 26,
+        "other": 144,
+        "hardware": 16,
+        "quant_finance": 6,
         "product_management": 3
       },
       "tiers": {
-        "other": 655,
+        "other": 659,
         "unicorn": 696,
         "faang_plus": 144
       },
@@ -5527,18 +5527,18 @@
         },
         {
           "company": "Leidos",
-          "jobs": 30
+          "jobs": 29
         },
         {
           "company": "Booz Allen Hamilton",
           "jobs": 27
         },
         {
-          "company": "Stripe",
+          "company": "xAI",
           "jobs": 24
         },
         {
-          "company": "xAI",
+          "company": "Stripe",
           "jobs": 24
         },
         {
@@ -5550,9 +5550,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 253,
-      "avg_jobs_per_company": 5.91,
-      "timestamp": "2026-07-27T22:41:58.913535+00:00"
+      "unique_companies": 255,
+      "avg_jobs_per_company": 5.88,
+      "timestamp": "2026-07-27T23:48:52.452093+00:00"
     }
   ]
 }
