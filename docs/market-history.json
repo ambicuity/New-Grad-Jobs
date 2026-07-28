@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-28T10:04:58.805257+00:00",
+    "last_updated": "2026-07-28T12:10:50.000745+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-29",
@@ -5501,34 +5501,30 @@
     },
     {
       "date": "2026-07-28",
-      "total_jobs": 1460,
+      "total_jobs": 1253,
       "categories": {
-        "security": 80,
-        "software_engineering": 872,
-        "data_ml": 149,
-        "other": 130,
-        "infrastructure_sre": 136,
+        "software_engineering": 713,
+        "security": 72,
+        "data_ml": 124,
+        "other": 131,
+        "infrastructure_sre": 125,
         "hardware": 13,
-        "frontend": 9,
-        "backend": 30,
-        "mobile": 8,
         "data_engineering": 24,
+        "frontend": 6,
         "quant_finance": 6,
+        "backend": 29,
+        "mobile": 7,
         "product_management": 3
       },
       "tiers": {
-        "unicorn": 696,
-        "other": 630,
-        "faang_plus": 134
+        "other": 420,
+        "unicorn": 697,
+        "faang_plus": 136
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 237
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 207
         },
         {
           "company": "OpenAI",
@@ -5547,6 +5543,10 @@
           "jobs": 27
         },
         {
+          "company": "Affirm",
+          "jobs": 24
+        },
+        {
           "company": "xAI",
           "jobs": 24
         },
@@ -5555,7 +5555,7 @@
           "jobs": 24
         },
         {
-          "company": "Affirm",
+          "company": "Northrop Grumman",
           "jobs": 23
         },
         {
@@ -5563,9 +5563,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 246,
-      "avg_jobs_per_company": 5.93,
-      "timestamp": "2026-07-28T10:04:58.804267+00:00"
+      "unique_companies": 244,
+      "avg_jobs_per_company": 5.14,
+      "timestamp": "2026-07-28T12:10:49.999638+00:00"
     }
   ]
 }

@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 10:04:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 12:10:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, AI Platform at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/8064216</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 11:58:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/8064216</guid>
+    </item>
+    <item>
+      <title>Analyst II, Full Stack (Revenue Analytics) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7813362003</link>
+      <description>New grad role at Affirm in Remote Poland. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 10:52:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7813362003</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8649154002</link>
+      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 10:35:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8649154002</guid>
+    </item>
     <item>
       <title>Security Engineer 2 - Cyber Threat Intelligence at Datadog</title>
       <link>https://careers.datadoghq.com/detail/7982345/?gh_jid=7982345</link>
@@ -55,13 +76,6 @@
       <description>New grad role at Postman in Bengaluru, Karnataka, India. Category: Software Engineering</description>
       <pubDate>Tue, 28 Jul 2026 04:59:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/postman/jobs/7818501003</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Test &amp; Evaluation Systems Integrator at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5185888007?gh_jid=5185888007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 28 Jul 2026 03:51:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5185888007?gh_jid=5185888007</guid>
     </item>
     <item>
       <title>Software Engineer, Java at Scopely</title>
@@ -127,6 +141,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d67c6ddba8f27322</guid>
     </item>
     <item>
+      <title>Associate Field Engineer at Wunderlich-Malec</title>
+      <link>https://www.indeed.com/viewjob?jk=c8e4bd02a1753e92</link>
+      <description>New grad role at Wunderlich-Malec in Richmond, VA, US. Category: Other</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c8e4bd02a1753e92</guid>
+    </item>
+    <item>
       <title>Cybersecurity Engineering Development Program (CSEDP) Software Engineer at National Security Agency</title>
       <link>https://www.indeed.com/viewjob?jk=1cc1c7f4b4b251a7</link>
       <description>New grad role at National Security Agency in Fort Meade, MD, US. Category: Security Engineering</description>
@@ -134,11 +155,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1cc1c7f4b4b251a7</guid>
     </item>
     <item>
-      <title>Commissioning Engineer – Entry Level (0–2 Years) at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=7729dc178cfa3063</link>
-      <description>New grad role at Unknown in Fort Worth, TX, US. Category: Other</description>
+      <title>Automation Test Engineer - Associate Systems Engineer at AutoZone</title>
+      <link>https://in.indeed.com/viewjob?jk=5aa9e3890b41ad18</link>
+      <description>New grad role at AutoZone in IN. Category: Software Engineering</description>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7729dc178cfa3063</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5aa9e3890b41ad18</guid>
     </item>
     <item>
       <title>Associate AI/ML Engineer at Optum</title>
@@ -197,6 +218,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dfe287df10d1e5f1</guid>
     </item>
     <item>
+      <title>Commissioning Engineer – Entry Level (0–2 Years) at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=7729dc178cfa3063</link>
+      <description>New grad role at Unknown in Fort Worth, TX, US. Category: Other</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7729dc178cfa3063</guid>
+    </item>
+    <item>
       <title>New Grad RN - Transition to Practice Program (October 2026) at Children's Minnesota</title>
       <link>https://www.indeed.com/viewjob?jk=317ccbf108103363</link>
       <description>New grad role at Children's Minnesota in MN, US. Category: Other</description>
@@ -211,11 +239,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d17b71de521d07d6</guid>
     </item>
     <item>
+      <title>Associate Dean of Clinical Affairs- IL- Chicago College of Optometry at Midwestern University</title>
+      <link>https://www.indeed.com/viewjob?jk=cba9088abc0f4914</link>
+      <description>New grad role at Midwestern University in Downers Grove, IL, US. Category: Other</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cba9088abc0f4914</guid>
+    </item>
+    <item>
       <title>Associate, Data Science &amp; AI at Pfizer</title>
       <link>https://pfizer.wd1.myworkdayjobs.com/job/India---Mumbai/Associate--Data-Science---AI_4961093</link>
       <description>New grad role at Pfizer in India - Mumbai. Category: Other</description>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Mumbai/Associate--Data-Science---AI_4961093</guid>
+    </item>
+    <item>
+      <title>Graphics Simulation Software Engineer at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Graphics-Simulation-Software-Engineer_R10242581</link>
+      <description>New grad role at Northrop Grumman in United States-Virginia-Dulles. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Graphics-Simulation-Software-Engineer_R10242581</guid>
+    </item>
+    <item>
+      <title>Electromechanical Engineer (Level 1 OR 2) at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Electromechanical-Engineer--Level-1-OR-2-_R10232218</link>
+      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Other</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Electromechanical-Engineer--Level-1-OR-2-_R10232218</guid>
     </item>
     <item>
       <title>Software Engineer - Evals at xAI</title>
@@ -246,116 +295,67 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/7947424</guid>
     </item>
     <item>
-      <title>2026 Early Career Electrical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Fort Collins, Colorado, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802172007?gh_jid=4802172007</guid>
+      <title>Software Engineer, Reconciliation &amp; Reporting at Block</title>
+      <link>http://block.xyz/careers/jobs/5369941008?gh_jid=5369941008</link>
+      <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 22:50:13 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5369941008?gh_jid=5369941008</guid>
     </item>
     <item>
-      <title>2026 Early Career Electrical Engineer, Battlespace Awareness Radar Team at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4747967007?gh_jid=4747967007</link>
-      <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4747967007?gh_jid=4747967007</guid>
+      <title>Full Stack Software Engineer, Observability (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 22:38:40 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8638457002?gh_jid=8638457002</guid>
     </item>
     <item>
-      <title>2026 Early Career Engineering Finance Associate at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</guid>
+      <title>Software Engineer, Network Observability (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 22:38:39 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8577262002?gh_jid=8577262002</guid>
     </item>
     <item>
-      <title>2026 Early Career Flight Test Engineer, Mission Autonomy at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007</guid>
+      <title>IT Network Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8648054002?gh_jid=8648054002</link>
+      <description>New grad role at SpaceX in Vandenberg, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 27 Jul 2026 22:20:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8648054002?gh_jid=8648054002</guid>
     </item>
     <item>
-      <title>2026 Early Career Manufacturing Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Irvine, California, United States; Santa Ana, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007</guid>
+      <title>Software Engineer II at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</link>
+      <description>New grad role at Samsara in Remote - US. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:43:59 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</guid>
     </item>
     <item>
-      <title>2026 Early Career Mechanical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007</guid>
+      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; New York City, NY, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 27 Jul 2026 20:33:44 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
     </item>
     <item>
-      <title>2026 Early Career Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4802146007?gh_jid=4802146007</guid>
+      <title>Product Security Engineer at Airtable</title>
+      <link>https://job-boards.greenhouse.io/airtable/jobs/8533547002</link>
+      <description>New grad role at Airtable in San Francisco, CA; New York, NY; Remote (Seattle, WA only). Category: Security Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:26:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/airtable/jobs/8533547002</guid>
     </item>
     <item>
-      <title>2027 Early Career Electrical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136925007?gh_jid=5136925007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136925007?gh_jid=5136925007</guid>
+      <title>Software Engineer - Data Aquisition (systems) at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/70aaaafa-fe2f-4409-9a72-c0faf50d7d01</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:24:02 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/70aaaafa-fe2f-4409-9a72-c0faf50d7d01</guid>
     </item>
     <item>
-      <title>2027 Early Career Manufacturing Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136970007?gh_jid=5136970007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136970007?gh_jid=5136970007</guid>
-    </item>
-    <item>
-      <title>2027 Early Career Mechanical Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136984007?gh_jid=5136984007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136984007?gh_jid=5136984007</guid>
-    </item>
-    <item>
-      <title>2027 Early Career Software Engineer  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5162263007?gh_jid=5162263007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5162263007?gh_jid=5162263007</guid>
-    </item>
-    <item>
-      <title>AD&amp;S, Air Vehicle Software Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131822007?gh_jid=5131822007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131822007?gh_jid=5131822007</guid>
-    </item>
-    <item>
-      <title>Air Vehicle Systems Engineer, Hardware Verification, Integration &amp; Validation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5131979007?gh_jid=5131979007</guid>
-    </item>
-    <item>
-      <title>C++ Mission Software Engineer, Mission Autonomy at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5125189007?gh_jid=5125189007</guid>
-    </item>
-    <item>
-      <title>Data Engineer, Manufacturing Quality at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5167749007?gh_jid=5167749007</link>
-      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167749007?gh_jid=5167749007</guid>
-    </item>
-    <item>
-      <title>Early Career Firmware Engineer  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 27 Jul 2026 22:57:51 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</guid>
+      <title>Software Engineer, Machine Learning Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8084476</link>
+      <description>New grad role at Stripe in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 27 Jul 2026 20:07:05 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8084476</guid>
     </item>
   </channel>
 </rss>
