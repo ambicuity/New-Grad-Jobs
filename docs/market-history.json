@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-28T19:12:44.182869+00:00",
+    "last_updated": "2026-07-28T20:39:39.753456+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-29",
@@ -5501,25 +5501,25 @@
     },
     {
       "date": "2026-07-28",
-      "total_jobs": 1452,
+      "total_jobs": 1435,
       "categories": {
-        "software_engineering": 896,
-        "data_ml": 145,
-        "data_engineering": 28,
-        "other": 114,
-        "infrastructure_sre": 119,
-        "security": 79,
+        "data_ml": 144,
+        "software_engineering": 873,
+        "infrastructure_sre": 118,
         "backend": 31,
-        "frontend": 10,
-        "hardware": 13,
-        "quant_finance": 6,
         "mobile": 8,
+        "data_engineering": 26,
+        "other": 123,
+        "security": 79,
+        "frontend": 10,
+        "hardware": 14,
+        "quant_finance": 6,
         "product_management": 3
       },
       "tiers": {
-        "unicorn": 700,
-        "other": 626,
-        "faang_plus": 126
+        "unicorn": 699,
+        "other": 611,
+        "faang_plus": 125
       },
       "top_companies": [
         {
@@ -5536,11 +5536,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 39
-        },
-        {
-          "company": "Leidos",
-          "jobs": 25
+          "jobs": 38
         },
         {
           "company": "Affirm",
@@ -5555,17 +5551,21 @@
           "jobs": 24
         },
         {
-          "company": "Accenture",
+          "company": "Boeing",
           "jobs": 23
         },
         {
           "company": "Scale AI",
           "jobs": 23
+        },
+        {
+          "company": "Leidos",
+          "jobs": 22
         }
       ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 6.23,
-      "timestamp": "2026-07-28T19:12:44.181734+00:00"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 6.29,
+      "timestamp": "2026-07-28T20:39:39.752443+00:00"
     }
   ]
 }
