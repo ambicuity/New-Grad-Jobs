@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 20:39:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 21:49:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Manufacturing Software Engineer, Intelligence Systems at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</link>
+      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 21:44:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5080387007?gh_jid=5080387007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ray Data at Anyscale</title>
+      <link>https://jobs.ashbyhq.com/anyscale/2d76cfa2-f857-42b2-9c74-c07beca01458</link>
+      <description>New grad role at Anyscale in Bengaluru, Karnataka. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 21:38:41 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/anyscale/2d76cfa2-f857-42b2-9c74-c07beca01458</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ray Core at Anyscale</title>
+      <link>https://jobs.ashbyhq.com/anyscale/8b29c5e5-d56f-4c52-8887-a6a1827cf042</link>
+      <description>New grad role at Anyscale in Bengaluru, Karnataka. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 21:38:22 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/anyscale/8b29c5e5-d56f-4c52-8887-a6a1827cf042</guid>
+    </item>
+    <item>
+      <title>Cloud Billing Associate at Elastic</title>
+      <link>https://jobs.elastic.co/jobs?gh_jid=7991494&amp;gh_jid=7991494</link>
+      <description>New grad role at Elastic in Bangalore, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 28 Jul 2026 21:33:22 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=7991494&amp;gh_jid=7991494</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II, Core Engineering  at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7473497</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 28 Jul 2026 20:47:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Customer Journey Team at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7741016003?gh_jid=7741016003</link>
+      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 20:47:08 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7741016003?gh_jid=7741016003</guid>
+    </item>
     <item>
       <title>Data Scientist at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=4912949</link>
@@ -41,13 +83,6 @@
       <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 28 Jul 2026 20:24:14 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7697137</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II, Core Engineering  at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7473497</link>
-      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 28 Jul 2026 20:24:14 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7473497</guid>
     </item>
     <item>
       <title>Machine Learning Engineer, Monetization Engineering at Pinterest</title>
@@ -93,17 +128,17 @@
     </item>
     <item>
       <title>Software Engineer II, Backend at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=5132899</link>
-      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Backend Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 20:24:14 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=5132899</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend at Pinterest</title>
       <link>https://www.pinterestcareers.com/jobs/?gh_jid=4813946</link>
       <description>New grad role at Pinterest in San Francisco, CA, US; Seattle, WA, US. Category: Backend Engineering</description>
       <pubDate>Tue, 28 Jul 2026 20:24:14 +0000</pubDate>
       <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=4813946</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=5132899</link>
+      <description>New grad role at Pinterest in Toronto, ON, CA. Category: Backend Engineering</description>
+      <pubDate>Tue, 28 Jul 2026 20:24:14 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=5132899</guid>
     </item>
     <item>
       <title>Software Engineer II, Backend, tvScientific at Pinterest</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Oscar Health in New York, New York, United States. Category: Software Engineering</description>
       <pubDate>Tue, 28 Jul 2026 16:06:51 +0000</pubDate>
       <guid isPermaLink="true">http://www.hioscar.com/careers/7974658?gh_jid=7974658</guid>
-    </item>
-    <item>
-      <title>Associate, Government Affairs at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7993044?gh_jid=7993044</link>
-      <description>New grad role at Oscar Health in Washington, D.C., United States. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 16:06:51 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7993044?gh_jid=7993044</guid>
-    </item>
-    <item>
-      <title>Associate, Data Analytics (Atlanta, GA- Remote) at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7825290?gh_jid=7825290</link>
-      <description>New grad role at Oscar Health in Remote. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 16:06:50 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7825290?gh_jid=7825290</guid>
-    </item>
-    <item>
-      <title>Associate, Data Analytics (Dallas, TX- Remote) at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7825287?gh_jid=7825287</link>
-      <description>New grad role at Oscar Health in Remote. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 16:06:50 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7825287?gh_jid=7825287</guid>
-    </item>
-    <item>
-      <title>Associate, Data Analytics (NYC - Hybrid) at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7688263?gh_jid=7688263</link>
-      <description>New grad role at Oscar Health in Remote. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 16:06:50 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7688263?gh_jid=7688263</guid>
-    </item>
-    <item>
-      <title>Associate, Data Analytics (Tempe, AZ - Hybrid) at Oscar Health</title>
-      <link>http://www.hioscar.com/careers/7825277?gh_jid=7825277</link>
-      <description>New grad role at Oscar Health in Remote. Category: Software Engineering</description>
-      <pubDate>Tue, 28 Jul 2026 16:06:50 +0000</pubDate>
-      <guid isPermaLink="true">http://www.hioscar.com/careers/7825277?gh_jid=7825277</guid>
     </item>
   </channel>
 </rss>
