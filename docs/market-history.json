@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-29T12:26:19.267484+00:00",
+    "last_updated": "2026-07-29T14:43:30.316718+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-30",
@@ -5516,23 +5516,23 @@
       "date": "2026-07-29",
       "total_jobs": 1410,
       "categories": {
-        "data_ml": 139,
-        "software_engineering": 857,
-        "backend": 30,
-        "infrastructure_sre": 125,
-        "security": 78,
-        "other": 114,
-        "hardware": 18,
-        "mobile": 8,
-        "data_engineering": 23,
+        "software_engineering": 854,
         "frontend": 10,
+        "data_ml": 139,
+        "other": 115,
+        "security": 78,
+        "infrastructure_sre": 126,
+        "backend": 31,
+        "hardware": 16,
+        "data_engineering": 25,
+        "mobile": 8,
         "quant_finance": 5,
         "product_management": 3
       },
       "tiers": {
-        "other": 583,
-        "unicorn": 692,
-        "faang_plus": 135
+        "unicorn": 693,
+        "other": 587,
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -5541,7 +5541,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 208
+          "jobs": 209
         },
         {
           "company": "OpenAI",
@@ -5553,7 +5553,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "xAI",
@@ -5568,17 +5568,17 @@
           "jobs": 24
         },
         {
-          "company": "Scale AI",
+          "company": "Leidos",
           "jobs": 23
         },
         {
-          "company": "Affirm",
-          "jobs": 22
+          "company": "Scale AI",
+          "jobs": 23
         }
       ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 6.44,
-      "timestamp": "2026-07-29T12:26:19.266354+00:00"
+      "unique_companies": 220,
+      "avg_jobs_per_company": 6.41,
+      "timestamp": "2026-07-29T14:43:30.315506+00:00"
     }
   ]
 }
