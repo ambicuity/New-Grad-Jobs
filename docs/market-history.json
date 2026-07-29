@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-29T20:08:29.446452+00:00",
+    "last_updated": "2026-07-29T21:14:32.886742+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-30",
@@ -5514,25 +5514,25 @@
     },
     {
       "date": "2026-07-29",
-      "total_jobs": 1471,
+      "total_jobs": 1464,
       "categories": {
-        "software_engineering": 894,
-        "infrastructure_sre": 140,
-        "data_ml": 142,
-        "data_engineering": 31,
-        "security": 75,
+        "software_engineering": 891,
+        "infrastructure_sre": 130,
+        "data_ml": 140,
+        "security": 74,
+        "data_engineering": 28,
         "product_management": 3,
         "frontend": 11,
-        "other": 118,
+        "other": 125,
         "backend": 30,
-        "mobile": 9,
-        "quant_finance": 5,
-        "hardware": 13
+        "mobile": 10,
+        "hardware": 17,
+        "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 694,
-        "other": 641,
-        "faang_plus": 136
+        "other": 628,
+        "unicorn": 693,
+        "faang_plus": 143
       },
       "top_companies": [
         {
@@ -5553,32 +5553,32 @@
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 32
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 29
-        },
-        {
-          "company": "Accenture",
-          "jobs": 24
-        },
-        {
-          "company": "Leidos",
-          "jobs": 24
+          "jobs": 31
         },
         {
           "company": "Stripe",
           "jobs": 24
         },
         {
+          "company": "Leidos",
+          "jobs": 23
+        },
+        {
           "company": "xAI",
+          "jobs": 23
+        },
+        {
+          "company": "Scale AI",
           "jobs": 23
         }
       ],
-      "unique_companies": 238,
-      "avg_jobs_per_company": 6.18,
-      "timestamp": "2026-07-29T20:08:29.445451+00:00"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 6.26,
+      "timestamp": "2026-07-29T21:14:32.885793+00:00"
     }
   ]
 }

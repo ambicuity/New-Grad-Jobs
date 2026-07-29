@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 20:08:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 21:14:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5686805004</link>
+      <description>New grad role at ClickHouse in United States (remote). Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 20:44:37 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5686805004</guid>
+    </item>
+    <item>
+      <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
+      <link>https://job-boards.greenhouse.io/clickhouse/jobs/5658009004</link>
+      <description>New grad role at ClickHouse in Canada (remote). Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 20:42:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/5658009004</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4713977005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 20:37:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4713977005</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4713145005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 20:37:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4713145005</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, C2 Networking - Edge Compute and Communications at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 29 Jul 2026 20:28:31 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Upstart Bank at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=8060317</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 20:06:21 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8060317</guid>
+    </item>
     <item>
       <title>Systems Engineer 2, Technical Solutions (US-East) at Datadog</title>
       <link>https://careers.datadoghq.com/detail/8092973/?gh_jid=8092973</link>
@@ -190,25 +232,11 @@
       <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8060056</guid>
     </item>
     <item>
-      <title>Software Engineer, Upstart Bank at Upstart</title>
-      <link>https://careers.upstart.com/jobs?gh_jid=8060317</link>
-      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 18:03:05 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=8060317</guid>
-    </item>
-    <item>
       <title>Software Engineer, Verifications Platform at Upstart</title>
       <link>https://careers.upstart.com/jobs?gh_jid=7544233</link>
       <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
       <pubDate>Wed, 29 Jul 2026 18:03:05 +0000</pubDate>
       <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7544233</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Fastly</title>
-      <link>https://www.fastly.com/about/jobs/apply?gh_jid=8048891</link>
-      <description>New grad role at Fastly in San Francisco, CA. Category: Data Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 17:27:01 +0000</pubDate>
-      <guid isPermaLink="true">https://www.fastly.com/about/jobs/apply?gh_jid=8048891</guid>
     </item>
     <item>
       <title>Software Engineer II, Technical Search Visibility at Instacart</title>
@@ -328,34 +356,6 @@
       <description>New grad role at MongoDB in Austin. Category: Data Engineering</description>
       <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8044218</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
-      <description>New grad role at MongoDB in New York City. Category: Data Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
     </item>
   </channel>
 </rss>
