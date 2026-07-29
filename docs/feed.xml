@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 01:17:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 04:37:43 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer I - Message Security Products at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7816935003?gh_jid=7816935003</link>
+      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 29 Jul 2026 03:51:15 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7816935003?gh_jid=7816935003</guid>
+    </item>
+    <item>
+      <title>Security Engineer - GRC Fintech &amp; Financial Services at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5198194007</link>
+      <description>New grad role at xAI in New York, New York, United States; Palo Alto, California, United States; Washington, District of Columbia, United States. Category: Security Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 01:46:47 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5198194007</guid>
+    </item>
     <item>
       <title>Software Engineer, Identity at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
@@ -23,17 +37,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 00:32:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Wed, 29 Jul 2026 00:32:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 00:32:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Security Engineer - GRC Frameworks &amp; AI Governance at xAI</title>
@@ -76,6 +90,34 @@
       <description>New grad role at NVIDIA in US, MA, Westford. Category: Other</description>
       <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/GPU-Verification-Engineer---New-College-Grad-2026_JR2022102</guid>
+    </item>
+    <item>
+      <title>System Software Engineer at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/System-Software-Engineer_JR0285033</link>
+      <description>New grad role at Intel in US, Arizona, Phoenix. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/System-Software-Engineer_JR0285033</guid>
+    </item>
+    <item>
+      <title>System Software Engineer at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/System-Software-Engineer_JR0285035-1</link>
+      <description>New grad role at Intel in US, Arizona, Phoenix. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Arizona-Phoenix/System-Software-Engineer_JR0285035-1</guid>
+    </item>
+    <item>
+      <title>System Software Engineer at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/System-Software-Engineer_JR0285048</link>
+      <description>New grad role at Intel in US, Oregon, Hillsboro. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/System-Software-Engineer_JR0285048</guid>
+    </item>
+    <item>
+      <title>Development Tools Software Engineer at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Development-Tools-Software-Engineer_JR0285054</link>
+      <description>New grad role at Intel in US, California, Santa Clara. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-California-Santa-Clara/Development-Tools-Software-Engineer_JR0285054</guid>
     </item>
     <item>
       <title>Embedded Software Engineer at HP</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-Northridge. Category: Software Engineering</description>
       <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/Software-Systems-Engineer-Level-3-4--AHT-_R10242536-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer Level 2 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/Software-Engineer-Level-2--AHT-_R10242698</link>
-      <description>New grad role at Northrop Grumman in United States-California-Northridge. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/Software-Engineer-Level-2--AHT-_R10242698</guid>
-    </item>
-    <item>
-      <title>Cyber Software Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Ohio-Cincinnati/Cyber-Software-Engineer_R10242662</link>
-      <description>New grad role at Northrop Grumman in United States-Ohio-Cincinnati. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Ohio-Cincinnati/Cyber-Software-Engineer_R10242662</guid>
-    </item>
-    <item>
-      <title>Software Engineer - User Experience Applications at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/Software-Engineer---User-Experience-Applications_R10242412</link>
-      <description>New grad role at Northrop Grumman in United States-California-San Diego. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/Software-Engineer---User-Experience-Applications_R10242412</guid>
-    </item>
-    <item>
-      <title>2026 Associate Electromechanical Engineer/Electromechanical Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Electromechanical-Engineer-Electromechanical-Engineer_R10242609</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Electromechanical-Engineer-Electromechanical-Engineer_R10242609</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - Mission Analyst (Level 2 or 3) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Systems-Engineer---Mission-Analyst--Level-2-or-3-_R10241411-1</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Schriever AFB. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Schriever-AFB/Systems-Engineer---Mission-Analyst--Level-2-or-3-_R10241411-1</guid>
-    </item>
-    <item>
-      <title>Software Test Engineer (Level 2 or 3) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Software-Test-Engineer--Level-2-or-3-_R10242592</link>
-      <description>New grad role at Northrop Grumman in United States-Virginia-Dulles. Category: Other</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Software-Test-Engineer--Level-2-or-3-_R10242592</guid>
     </item>
   </channel>
 </rss>
