@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 21:14:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 22:18:08 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ML Infrastructure Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5193037007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 21:37:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5193037007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Quality Integration   at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5199077007?gh_jid=5199077007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 21:35:38 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5199077007?gh_jid=5199077007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Quality Integration   at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5199074007?gh_jid=5199074007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 29 Jul 2026 21:35:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5199074007?gh_jid=5199074007</guid>
+    </item>
     <item>
       <title>Cloud Software Engineer - Observability Platform at ClickHouse</title>
       <link>https://job-boards.greenhouse.io/clickhouse/jobs/5686805004</link>
@@ -335,27 +356,6 @@
       <description>New grad role at SpaceX in Redmond, WA. Category: Software Engineering</description>
       <pubDate>Wed, 29 Jul 2026 16:18:33 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8656465002?gh_jid=8656465002</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
-      <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 16:02:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Nix  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4903334007?gh_jid=4903334007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:43:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4903334007?gh_jid=4903334007</guid>
-    </item>
-    <item>
-      <title>Associate Technical Services Engineer II at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8044218</link>
-      <description>New grad role at MongoDB in Austin. Category: Data Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 15:36:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8044218</guid>
     </item>
   </channel>
 </rss>
