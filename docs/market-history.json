@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-29T10:15:18.147863+00:00",
+    "last_updated": "2026-07-29T12:26:19.267484+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-04-30",
@@ -5514,25 +5514,25 @@
     },
     {
       "date": "2026-07-29",
-      "total_jobs": 1403,
+      "total_jobs": 1410,
       "categories": {
-        "software_engineering": 856,
-        "backend": 30,
         "data_ml": 139,
-        "infrastructure_sre": 123,
+        "software_engineering": 857,
+        "backend": 30,
+        "infrastructure_sre": 125,
         "security": 78,
-        "other": 113,
-        "data_engineering": 24,
+        "other": 114,
+        "hardware": 18,
         "mobile": 8,
+        "data_engineering": 23,
         "frontend": 10,
-        "hardware": 14,
         "quant_finance": 5,
         "product_management": 3
       },
       "tiers": {
+        "other": 583,
         "unicorn": 692,
-        "other": 577,
-        "faang_plus": 134
+        "faang_plus": 135
       },
       "top_companies": [
         {
@@ -5553,19 +5553,19 @@
         },
         {
           "company": "Boeing",
-          "jobs": 28
+          "jobs": 27
         },
         {
           "company": "xAI",
           "jobs": 25
         },
         {
-          "company": "Stripe",
+          "company": "Northrop Grumman",
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 23
+          "company": "Stripe",
+          "jobs": 24
         },
         {
           "company": "Scale AI",
@@ -5576,9 +5576,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 221,
-      "avg_jobs_per_company": 6.35,
-      "timestamp": "2026-07-29T10:15:18.146511+00:00"
+      "unique_companies": 219,
+      "avg_jobs_per_company": 6.44,
+      "timestamp": "2026-07-29T12:26:19.266354+00:00"
     }
   ]
 }
