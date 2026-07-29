@@ -1,35 +1,34 @@
 {
-  "outlook": "bullish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1512,
-      "change_percent": 1.54
+      "total_jobs": 1432,
+      "change_percent": 0.92
     },
     "30_days": {
-      "total_jobs": 1565,
-      "change_percent": 5.1
+      "total_jobs": 1448,
+      "change_percent": 2.04
     }
   },
   "growing_categories": [
-    "software_engineering",
     "infrastructure_sre",
-    "hardware"
+    "data_ml",
+    "software_engineering"
   ],
   "declining_categories": [
     "data_engineering",
-    "data_ml",
-    "faang_plus"
+    "other"
   ],
   "confidence": 75,
   "insights": [
-    "The market shows a strong upward trajectory, with the current total (1489) significantly outpacing both the 7-day and 30-day moving averages, signaling sustained hiring momentum.",
-    "Software Engineering remains the primary driver of growth, while Unicorn-tier companies are providing the most stability compared to the volatility observed in FAANG+ hiring.",
-    "Data Engineering is currently the primary area of contraction, suggesting a potential shift in focus from pure data processing roles toward broader infrastructure and software development needs."
+    "The market is currently range-bound, showing resilience above the 1,400-job threshold despite minor volatility in the 'other' and 'data_engineering' sectors.",
+    "Unicorn-tier companies are providing the most stability to the hiring landscape, while FAANG+ hiring remains suppressed compared to earlier monthly peaks.",
+    "The sustained growth in infrastructure and SRE roles suggests companies are prioritizing operational efficiency and scalability over pure data engineering expansion."
   ],
-  "generated_at": "2026-07-28T01:12:40.746595+00:00",
+  "generated_at": "2026-07-29T01:17:11.754055+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-04-29",
-    "end": "2026-07-28"
+    "start": "2026-04-30",
+    "end": "2026-07-29"
   }
 }
