@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-30T18:25:32.118079+00:00",
+    "last_updated": "2026-07-30T20:06:41.038736+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-01",
@@ -5527,25 +5527,25 @@
     },
     {
       "date": "2026-07-30",
-      "total_jobs": 1441,
+      "total_jobs": 1434,
       "categories": {
-        "software_engineering": 885,
-        "security": 80,
-        "data_ml": 137,
-        "infrastructure_sre": 123,
+        "software_engineering": 890,
+        "data_ml": 138,
+        "security": 81,
+        "infrastructure_sre": 122,
         "frontend": 10,
-        "other": 124,
-        "data_engineering": 25,
+        "other": 114,
+        "data_engineering": 23,
         "backend": 30,
-        "hardware": 11,
+        "hardware": 10,
         "product_management": 3,
         "quant_finance": 5,
         "mobile": 8
       },
       "tiers": {
-        "other": 622,
-        "unicorn": 689,
-        "faang_plus": 130
+        "other": 612,
+        "unicorn": 694,
+        "faang_plus": 128
       },
       "top_companies": [
         {
@@ -5554,11 +5554,11 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 212
+          "jobs": 211
         },
         {
           "company": "OpenAI",
-          "jobs": 41
+          "jobs": 43
         },
         {
           "company": "Waymo",
@@ -5566,7 +5566,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 31
+          "jobs": 29
         },
         {
           "company": "xAI",
@@ -5585,13 +5585,13 @@
           "jobs": 22
         },
         {
-          "company": "Anthropic",
-          "jobs": 21
+          "company": "Northrop Grumman",
+          "jobs": 22
         }
       ],
-      "unique_companies": 228,
-      "avg_jobs_per_company": 6.32,
-      "timestamp": "2026-07-30T18:25:32.115777+00:00"
+      "unique_companies": 220,
+      "avg_jobs_per_company": 6.52,
+      "timestamp": "2026-07-30T20:06:41.037596+00:00"
     }
   ]
 }
