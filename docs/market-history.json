@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-30T21:23:59.683635+00:00",
+    "last_updated": "2026-07-30T22:36:42.486058+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-01",
@@ -5527,16 +5527,16 @@
     },
     {
       "date": "2026-07-30",
-      "total_jobs": 1444,
+      "total_jobs": 1440,
       "categories": {
-        "software_engineering": 892,
-        "data_ml": 140,
-        "security": 78,
-        "infrastructure_sre": 123,
+        "software_engineering": 887,
+        "other": 114,
+        "data_engineering": 25,
+        "infrastructure_sre": 124,
+        "data_ml": 141,
+        "security": 79,
         "frontend": 10,
-        "other": 117,
-        "data_engineering": 26,
-        "hardware": 12,
+        "hardware": 14,
         "backend": 30,
         "product_management": 3,
         "quant_finance": 5,
@@ -5544,17 +5544,17 @@
       },
       "tiers": {
         "unicorn": 700,
-        "other": 618,
-        "faang_plus": 126
+        "other": 617,
+        "faang_plus": 123
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 236
+          "jobs": 235
         },
         {
           "company": "Anduril Industries",
-          "jobs": 213
+          "jobs": 212
         },
         {
           "company": "OpenAI",
@@ -5566,7 +5566,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 32
+          "jobs": 34
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 26
         },
         {
           "company": "xAI",
@@ -5574,10 +5578,6 @@
         },
         {
           "company": "Stripe",
-          "jobs": 24
-        },
-        {
-          "company": "Booz Allen Hamilton",
           "jobs": 24
         },
         {
@@ -5589,9 +5589,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 6.59,
-      "timestamp": "2026-07-30T21:23:59.682398+00:00"
+      "unique_companies": 224,
+      "avg_jobs_per_company": 6.43,
+      "timestamp": "2026-07-30T22:36:42.484996+00:00"
     }
   ]
 }
