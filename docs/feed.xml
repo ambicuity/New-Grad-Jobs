@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 03:41:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 06:17:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, RCM Core at Commure</title>
+      <link>https://jobs.ashbyhq.com/commure/7e0572ec-fe77-4893-bc33-6d007bbcc5ff</link>
+      <description>New grad role at Commure in Mountain View, CA, USA. Category: Software Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 05:18:50 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/commure/7e0572ec-fe77-4893-bc33-6d007bbcc5ff</guid>
+    </item>
     <item>
       <title>Security Engineer, Application Security at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&amp;gh_jid=7918258</link>
@@ -55,13 +62,6 @@
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Thu, 30 Jul 2026 00:33:05 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Structural Project Engineer (Entry-Level) at Clark Pacific</title>
-      <link>https://www.indeed.com/viewjob?jk=73ac51ba014dce67</link>
-      <description>New grad role at Clark Pacific in West Sacramento, CA, US. Category: Other</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=73ac51ba014dce67</guid>
     </item>
     <item>
       <title>Sales and Marketing Coordinator (New Grad) at Unknown</title>
@@ -232,13 +232,6 @@
       <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Vizag/Associate---Equipment-Maintenance_4961211</guid>
     </item>
     <item>
-      <title>Software Development Engineer - SRE Retail &amp; Pharmacy at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Software-Development-Engineer---SRE-Retail---Pharmacy_R0964061</link>
-      <description>New grad role at CVS Health in RI - Woonsocket. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Software-Development-Engineer---SRE-Retail---Pharmacy_R0964061</guid>
-    </item>
-    <item>
       <title>Sales Representative II, Pain Interventions- Pittsburgh/Washington, PA at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Pittsburgh-Pennsylvania-United-States-of-America/Sales-Representative-II--Pain-Interventions--Pittsburgh-Washington--PA_R73332</link>
       <description>New grad role at Medtronic in Pittsburgh, Pennsylvania, United States of America. Category: Other</description>
@@ -356,6 +349,13 @@
       <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Other</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Optical-Subsystem-I-T-Engineer---2_R10242879</guid>
+    </item>
+    <item>
+      <title>Associate/Tooling Engineer Level 1/2 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Layton/Associate-Tooling-Engineer-Level-1-2_R10241691</link>
+      <description>New grad role at Northrop Grumman in United States-Utah-Layton. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Layton/Associate-Tooling-Engineer-Level-1-2_R10241691</guid>
     </item>
   </channel>
 </rss>
