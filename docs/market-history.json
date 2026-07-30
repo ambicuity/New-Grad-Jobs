@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-30T22:36:42.486058+00:00",
+    "last_updated": "2026-07-30T23:41:28.862632+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-01",
@@ -5527,16 +5527,16 @@
     },
     {
       "date": "2026-07-30",
-      "total_jobs": 1440,
+      "total_jobs": 1454,
       "categories": {
-        "software_engineering": 887,
-        "other": 114,
-        "data_engineering": 25,
+        "software_engineering": 894,
+        "data_engineering": 33,
+        "other": 113,
         "infrastructure_sre": 124,
         "data_ml": 141,
-        "security": 79,
+        "security": 78,
         "frontend": 10,
-        "hardware": 14,
+        "hardware": 15,
         "backend": 30,
         "product_management": 3,
         "quant_finance": 5,
@@ -5544,8 +5544,8 @@
       },
       "tiers": {
         "unicorn": 700,
-        "other": 617,
-        "faang_plus": 123
+        "other": 627,
+        "faang_plus": 127
       },
       "top_companies": [
         {
@@ -5570,7 +5570,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 26
+          "jobs": 28
         },
         {
           "company": "xAI",
@@ -5589,9 +5589,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 224,
+      "unique_companies": 226,
       "avg_jobs_per_company": 6.43,
-      "timestamp": "2026-07-30T22:36:42.484996+00:00"
+      "timestamp": "2026-07-30T23:41:28.861607+00:00"
     }
   ]
 }

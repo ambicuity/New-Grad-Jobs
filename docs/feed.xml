@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 22:36:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 23:41:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>IT Systems Engineer at Vercel</title>
+      <link>https://job-boards.greenhouse.io/vercel/jobs/6020852004</link>
+      <description>New grad role at Vercel in Hybrid - San Francisco, New York City, London. Category: Software Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 23:24:42 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/6020852004</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8614971002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Data Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 22:53:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8614971002</guid>
+    </item>
     <item>
       <title>Software Developer, Kubernetes Compute at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7770009?t=gh_src=&amp;gh_jid=7770009</link>
@@ -51,6 +65,13 @@
     </item>
     <item>
       <title>Clinical Data Associate II at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130478004</link>
+      <description>New grad role at Precision Medicine Group in Remote, Serbia. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 21:24:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130478004</guid>
+    </item>
+    <item>
+      <title>Clinical Data Associate II at Precision Medicine Group</title>
       <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130468004</link>
       <description>New grad role at Precision Medicine Group in Remote, Romania. Category: Other</description>
       <pubDate>Thu, 30 Jul 2026 21:24:08 +0000</pubDate>
@@ -69,13 +90,6 @@
       <description>New grad role at Precision Medicine Group in Remote, Hungary. Category: Other</description>
       <pubDate>Thu, 30 Jul 2026 21:24:08 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130454004</guid>
-    </item>
-    <item>
-      <title>Clinical Data Associate II at Precision Medicine Group</title>
-      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130478004</link>
-      <description>New grad role at Precision Medicine Group in Remote, Serbia. Category: Other</description>
-      <pubDate>Thu, 30 Jul 2026 21:24:08 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130478004</guid>
     </item>
     <item>
       <title>Power BI Developer II at Precision Medicine Group</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 30 Jul 2026 15:45:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4706938005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking (Edge) at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4715448005</link>
-      <description>New grad role at Tailscale in Remote (United States). Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 30 Jul 2026 15:45:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4715448005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Networking (Edge) at Tailscale</title>
-      <link>https://job-boards.greenhouse.io/tailscale/jobs/4715447005</link>
-      <description>New grad role at Tailscale in Remote (Canada). Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 30 Jul 2026 15:44:59 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/tailscale/jobs/4715447005</guid>
     </item>
   </channel>
 </rss>
