@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 11:23:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 13:03:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Client Services Business Analyst II - Healthcare Data at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004</link>
+      <description>New grad role at Precision Medicine Group in Indianapolis, IN, USA. Category: Data Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 12:33:32 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 30 Jul 2026 12:27:05 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 12:27:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 12:27:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Associate, Sales - Mumbai at Third Bridge</title>
+      <link>https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</link>
+      <description>New grad role at Third Bridge in Mumbai. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 11:58:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</guid>
+    </item>
     <item>
       <title>QA Engineer I at Precision Medicine Group</title>
       <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6105760004</link>
@@ -48,13 +83,6 @@
       <description>New grad role at Precision Medicine Group in Remote, Hungary. Category: Other</description>
       <pubDate>Thu, 30 Jul 2026 10:18:18 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6130454004</guid>
-    </item>
-    <item>
-      <title>Associate, Sales - Mumbai at Third Bridge</title>
-      <link>https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</link>
-      <description>New grad role at Third Bridge in Mumbai. Category: Other</description>
-      <pubDate>Thu, 30 Jul 2026 09:17:39 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</guid>
     </item>
     <item>
       <title>Software Engineer, Core Maps at Lyft</title>
@@ -141,32 +169,25 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8649976002?gh_jid=8649976002</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 30 Jul 2026 00:33:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Jul 2026 00:33:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Jul 2026 00:33:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
       <title>Data Engineer at Visa</title>
       <link>https://in.indeed.com/viewjob?jk=3345581477f18658</link>
       <description>New grad role at Visa in KA, IN. Category: Data Engineering</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=3345581477f18658</guid>
+    </item>
+    <item>
+      <title>Infrastructure Engineer at Kemar Port Automation pvt ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=2f0fc26dfcc79fb2</link>
+      <description>New grad role at Kemar Port Automation pvt ltd in MH, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=2f0fc26dfcc79fb2</guid>
+    </item>
+    <item>
+      <title>Software Engineer- Python Full Stack Developer at Techno Wise (INDIA)</title>
+      <link>https://in.indeed.com/viewjob?jk=d8d86d9516ea7d08</link>
+      <description>New grad role at Techno Wise (INDIA) in WB, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d8d86d9516ea7d08</guid>
     </item>
     <item>
       <title>Junior Python developer at Syvasoft Business Solutions Pvt Ltd</title>
@@ -204,13 +225,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f815d2da29b77345</guid>
     </item>
     <item>
-      <title>Sentinel CTF Software Engineer at Smart Apply Test Company</title>
-      <link>https://www.indeed.com/viewjob?jk=598e79008e8d4376</link>
-      <description>New grad role at Smart Apply Test Company in Hill AFB, UT, US. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=598e79008e8d4376</guid>
-    </item>
-    <item>
       <title>JSGS 801-02 - Governance and Administration (Fall 2026) at University of Regina</title>
       <link>https://ca.indeed.com/viewjob?jk=b318d10c6798a0bf</link>
       <description>New grad role at University of Regina in Regina, SK, CA. Category: Other</description>
@@ -225,11 +239,11 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f816f5c388b9ae45</guid>
     </item>
     <item>
-      <title>Associate Commercial Analyst | Mumbai at TSS Consultancy Pvt. Ltd.</title>
-      <link>https://in.indeed.com/viewjob?jk=13d02511723f144f</link>
-      <description>New grad role at TSS Consultancy Pvt. Ltd. in MH, IN. Category: Other</description>
+      <title>Sentinel CTF Software Engineer at Smart Apply Test Company</title>
+      <link>https://www.indeed.com/viewjob?jk=598e79008e8d4376</link>
+      <description>New grad role at Smart Apply Test Company in Hill AFB, UT, US. Category: Software Engineering</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=13d02511723f144f</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=598e79008e8d4376</guid>
     </item>
     <item>
       <title>Data Engineer - Information Systems at Mesa Public Schools - AZ</title>
@@ -244,6 +258,13 @@
       <description>New grad role at Nationwide Mutual Insurance Company in Columbus, OH, US. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5c79cad4a6a280f3</guid>
+    </item>
+    <item>
+      <title>Associate Project Engineer- Cyber Security at Hitachi Rail</title>
+      <link>https://in.indeed.com/viewjob?jk=13d520c66d99ab8d</link>
+      <description>New grad role at Hitachi Rail in TN, IN. Category: Security Engineering</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=13d520c66d99ab8d</guid>
     </item>
     <item>
       <title>Software Engineer at NatWest Group</title>
@@ -281,6 +302,34 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=eac3b984e80302ec</guid>
     </item>
     <item>
+      <title>Medical Laboratory Scientist II (MLS) at Tenet Healthcare</title>
+      <link>https://www.indeed.com/viewjob?jk=bd9f5db93af44ef8</link>
+      <description>New grad role at Tenet Healthcare in San Antonio, TX, US. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bd9f5db93af44ef8</guid>
+    </item>
+    <item>
+      <title>Associate Commercial Analyst | Mumbai at TSS Consultancy Pvt. Ltd.</title>
+      <link>https://in.indeed.com/viewjob?jk=13d02511723f144f</link>
+      <description>New grad role at TSS Consultancy Pvt. Ltd. in MH, IN. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=13d02511723f144f</guid>
+    </item>
+    <item>
+      <title>Graduate Engineer II - Land Development at LJA Engineering, Inc</title>
+      <link>https://www.indeed.com/viewjob?jk=5757ca4faa5ef5bf</link>
+      <description>New grad role at LJA Engineering, Inc in Charlotte, NC, US. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5757ca4faa5ef5bf</guid>
+    </item>
+    <item>
+      <title>Quality Engineer I at Alcon</title>
+      <link>https://www.indeed.com/viewjob?jk=23c04219e4189b0b</link>
+      <description>New grad role at Alcon in Lake Forest, CA, US. Category: Other</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=23c04219e4189b0b</guid>
+    </item>
+    <item>
       <title>Associate, Electrical Engineer at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=2b1fcdf59953a901</link>
       <description>New grad role at L3Harris in Palm Bay, FL, US. Category: Hardware Engineering</description>
@@ -302,60 +351,11 @@
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer---AI-ML--_R-282746</guid>
     </item>
     <item>
-      <title>Associate, Statistical Data Scientist at Pfizer</title>
-      <link>https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/Associate--Statistical-Data-Scientist_4959965</link>
-      <description>New grad role at Pfizer in India - Chennai. Category: Data Science &amp; ML</description>
+      <title>Software Engineer at Booz Allen Hamilton</title>
+      <link>https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Software-Engineer_R0239081</link>
+      <description>New grad role at Booz Allen Hamilton in Chantilly, VA. Category: Software Engineering</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://pfizer.wd1.myworkdayjobs.com/job/India---Chennai/Associate--Statistical-Data-Scientist_4959965</guid>
-    </item>
-    <item>
-      <title>Process Engineer II at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Juncos-Puerto-Rico-United-States-of-America/Process-Engineer-II_R72619-2</link>
-      <description>New grad role at Medtronic in Juncos, Puerto Rico, United States of America. Category: Other</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Juncos-Puerto-Rico-United-States-of-America/Process-Engineer-II_R72619-2</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer_JR2026517817-1</link>
-      <description>New grad role at Boeing in IND - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Associate-Software-Engineer_JR2026517817-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer, RCM Billing at Commure</title>
-      <link>https://jobs.ashbyhq.com/commure/727c0ce9-7d3b-43fe-8d00-05255f094db5</link>
-      <description>New grad role at Commure in Mountain View, CA, USA. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 23:44:11 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/commure/727c0ce9-7d3b-43fe-8d00-05255f094db5</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/6130151004</link>
-      <description>New grad role at ClickHouse in Netherlands (remote). Category: Security Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 23:19:27 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/6130151004</guid>
-    </item>
-    <item>
-      <title>Product Security Engineer at ClickHouse</title>
-      <link>https://job-boards.greenhouse.io/clickhouse/jobs/6130149004</link>
-      <description>New grad role at ClickHouse in United States (remote). Category: Security Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 23:19:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/clickhouse/jobs/6130149004</guid>
-    </item>
-    <item>
-      <title>Security Data Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States; Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Remote; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 29 Jul 2026 22:15:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007</guid>
-    </item>
-    <item>
-      <title>ML Infrastructure Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5193037007</link>
-      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 29 Jul 2026 21:37:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5193037007</guid>
+      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Software-Engineer_R0239081</guid>
     </item>
   </channel>
 </rss>
