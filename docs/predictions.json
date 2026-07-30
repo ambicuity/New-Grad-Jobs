@@ -1,19 +1,19 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1432,
-      "change_percent": 0.92
+      "total_jobs": 1478,
+      "change_percent": 1.09
     },
     "30_days": {
-      "total_jobs": 1448,
-      "change_percent": 2.04
+      "total_jobs": 1515,
+      "change_percent": 3.63
     }
   },
   "growing_categories": [
     "infrastructure_sre",
-    "data_ml",
-    "software_engineering"
+    "software_engineering",
+    "data_ml"
   ],
   "declining_categories": [
     "data_engineering",
@@ -21,14 +21,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently range-bound, showing resilience above the 1,400-job threshold despite minor volatility in the 'other' and 'data_engineering' sectors.",
-    "Unicorn-tier companies are providing the most stability to the hiring landscape, while FAANG+ hiring remains suppressed compared to earlier monthly peaks.",
-    "The sustained growth in infrastructure and SRE roles suggests companies are prioritizing operational efficiency and scalability over pure data engineering expansion."
+    "The market shows a clear upward trend, with the current 7-day average (1450) significantly outperforming the 30-day average (1421), signaling sustained hiring momentum.",
+    "Infrastructure and SRE roles are showing the most aggressive growth, likely reflecting a shift toward operational stability and cloud optimization in tech organizations.",
+    "While 'other' categories and data engineering have seen slight volatility, the core pillars of software engineering and ML remain robust, supporting a bullish outlook for the next 30 days."
   ],
-  "generated_at": "2026-07-29T01:17:11.754055+00:00",
+  "generated_at": "2026-07-30T00:20:20.175709+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-04-30",
-    "end": "2026-07-29"
+    "start": "2026-05-01",
+    "end": "2026-07-30"
   }
 }
