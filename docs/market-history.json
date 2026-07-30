@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-30T17:01:31.692570+00:00",
+    "last_updated": "2026-07-30T18:25:32.118079+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-01",
@@ -5527,15 +5527,15 @@
     },
     {
       "date": "2026-07-30",
-      "total_jobs": 1430,
+      "total_jobs": 1441,
       "categories": {
-        "data_ml": 139,
-        "software_engineering": 867,
-        "infrastructure_sre": 124,
+        "software_engineering": 885,
         "security": 80,
-        "frontend": 11,
-        "other": 126,
-        "data_engineering": 26,
+        "data_ml": 137,
+        "infrastructure_sre": 123,
+        "frontend": 10,
+        "other": 124,
+        "data_engineering": 25,
         "backend": 30,
         "hardware": 11,
         "product_management": 3,
@@ -5543,9 +5543,9 @@
         "mobile": 8
       },
       "tiers": {
-        "unicorn": 686,
-        "other": 609,
-        "faang_plus": 135
+        "other": 622,
+        "unicorn": 689,
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -5566,15 +5566,15 @@
         },
         {
           "company": "Boeing",
-          "jobs": 33
+          "jobs": 31
+        },
+        {
+          "company": "xAI",
+          "jobs": 24
         },
         {
           "company": "Stripe",
           "jobs": 24
-        },
-        {
-          "company": "xAI",
-          "jobs": 23
         },
         {
           "company": "Scale AI",
@@ -5585,13 +5585,13 @@
           "jobs": 22
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 22
+          "company": "Anthropic",
+          "jobs": 21
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 6.19,
-      "timestamp": "2026-07-30T17:01:31.691394+00:00"
+      "unique_companies": 228,
+      "avg_jobs_per_company": 6.32,
+      "timestamp": "2026-07-30T18:25:32.115777+00:00"
     }
   ]
 }
