@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-07-31T12:27:17.311939+00:00",
+    "last_updated": "2026-07-31T15:01:49.226943+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-02",
@@ -5540,25 +5540,25 @@
     },
     {
       "date": "2026-07-31",
-      "total_jobs": 1446,
+      "total_jobs": 1454,
       "categories": {
-        "software_engineering": 871,
-        "data_ml": 139,
-        "other": 130,
+        "software_engineering": 874,
+        "frontend": 10,
+        "data_ml": 143,
+        "other": 127,
+        "security": 77,
+        "infrastructure_sre": 128,
         "hardware": 18,
         "backend": 35,
-        "security": 77,
-        "infrastructure_sre": 125,
-        "data_engineering": 26,
-        "frontend": 10,
+        "data_engineering": 28,
         "product_management": 3,
         "quant_finance": 4,
-        "mobile": 8
+        "mobile": 7
       },
       "tiers": {
-        "other": 621,
-        "unicorn": 705,
-        "faang_plus": 120
+        "unicorn": 704,
+        "other": 629,
+        "faang_plus": 121
       },
       "top_companies": [
         {
@@ -5578,12 +5578,12 @@
           "jobs": 37
         },
         {
-          "company": "Boeing",
-          "jobs": 32
+          "company": "Booz Allen Hamilton",
+          "jobs": 29
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 27
+          "company": "Boeing",
+          "jobs": 29
         },
         {
           "company": "xAI",
@@ -5602,9 +5602,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.31,
-      "timestamp": "2026-07-31T12:27:17.310928+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.24,
+      "timestamp": "2026-07-31T15:01:49.225933+00:00"
     }
   ]
 }
