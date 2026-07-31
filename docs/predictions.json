@@ -3,32 +3,32 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1478,
-      "change_percent": 1.09
+      "change_percent": 1.23
     },
     "30_days": {
       "total_jobs": 1515,
-      "change_percent": 3.63
+      "change_percent": 3.77
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
     "software_engineering",
-    "data_ml"
+    "infrastructure_sre",
+    "data_engineering"
   ],
   "declining_categories": [
-    "data_engineering",
+    "data_ml",
     "other"
   ],
   "confidence": 75,
   "insights": [
-    "The market shows a clear upward trend, with the current 7-day average (1450) significantly outperforming the 30-day average (1421), signaling sustained hiring momentum.",
-    "Infrastructure and SRE roles are showing the most aggressive growth, likely reflecting a shift toward operational stability and cloud optimization in tech organizations.",
-    "While 'other' categories and data engineering have seen slight volatility, the core pillars of software engineering and ML remain robust, supporting a bullish outlook for the next 30 days."
+    "The market is showing a clear upward trend, with the current 7-day average (1452) significantly outpacing the 30-day average (1425), signaling sustained hiring momentum.",
+    "Software Engineering remains the primary engine of growth, while Unicorn-tier companies are showing consistent expansion in their new graduate headcount.",
+    "While Data/ML roles have seen a slight contraction in the short term, the overall volume of listings suggests a healthy entry-level market heading into the next hiring cycle."
   ],
-  "generated_at": "2026-07-30T00:20:20.175709+00:00",
+  "generated_at": "2026-07-31T01:16:57.893442+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-05-01",
-    "end": "2026-07-30"
+    "start": "2026-05-02",
+    "end": "2026-07-31"
   }
 }
