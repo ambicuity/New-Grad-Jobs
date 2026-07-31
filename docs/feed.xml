@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 20:01:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 21:19:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer (L2) Email at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7689461</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 21:03:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7689461</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8100236</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 21:03:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8100236</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Data  at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5120884007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 20:45:04 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5120884007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Full Stack at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4836302007?gh_jid=4836302007</link>
+      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 20:28:32 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4836302007?gh_jid=4836302007</guid>
+    </item>
+    <item>
+      <title>GTM Systems Engineer at Faire</title>
+      <link>https://boards.greenhouse.io/faire/jobs/8658935002?gh_jid=8658935002</link>
+      <description>New grad role at Faire in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 20:25:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/faire/jobs/8658935002?gh_jid=8658935002</guid>
+    </item>
     <item>
       <title>Software Engineer, EAA  at Coinbase</title>
       <link>https://www.coinbase.com/careers/positions/8100066?gh_jid=8100066</link>
@@ -30,17 +65,17 @@
     </item>
     <item>
       <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
     </item>
     <item>
       <title>Systems Engineer, Product Platform Tools at Cloudflare</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Planner Vehicle Dynamics at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7141380</link>
-      <description>New grad role at Waymo in Mountain View, California. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7141380</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7858779</link>
-      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7858779</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Post-Silicon Testing  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=8018436</link>
-      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8018436</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Quantitative Evaluations at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7466534</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA . Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7466534</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Statistical Evaluation and Sampling at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7543520</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7543520</guid>
     </item>
   </channel>
 </rss>
