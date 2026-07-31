@@ -5,8 +5,85 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 15:01:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 16:55:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Infrastructure at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8099239</link>
+      <description>New grad role at Stripe in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 16:19:00 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8099239</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Lifecycle at Upstart</title>
+      <link>https://careers.upstart.com/jobs?gh_jid=7947373</link>
+      <description>New grad role at Upstart in United States | Remote. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:45:47 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.upstart.com/jobs?gh_jid=7947373</guid>
+    </item>
+    <item>
+      <title>GTM Systems Engineer at Faire</title>
+      <link>https://boards.greenhouse.io/faire/jobs/8658935002?gh_jid=8658935002</link>
+      <description>New grad role at Faire in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:38:28 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/faire/jobs/8658935002?gh_jid=8658935002</guid>
+    </item>
+    <item>
+      <title>Fullstack Software Engineer II - Admin UX - Platform Applications at Elastic</title>
+      <link>https://jobs.elastic.co/jobs?gh_jid=8077634&amp;gh_jid=8077634</link>
+      <description>New grad role at Elastic in United States. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:38:09 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=8077634&amp;gh_jid=8077634</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Identity at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7605743</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:33:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7605743</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7946610</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:33:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946610</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8097672</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:33:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8097672</guid>
+    </item>
+    <item>
+      <title>Software Engineer-Full Stack at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</link>
+      <description>New grad role at Okta in Bengaluru, India. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:23:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/7984479?gh_jid=7984479</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Core Identity (Auth0)   at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8001096?gh_jid=8001096</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:23:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8001096?gh_jid=8001096</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Security Engineering (Auth0) at Okta</title>
+      <link>https://www.okta.com/company/careers/opportunity/8003538?gh_jid=8003538</link>
+      <description>New grad role at Okta in Toronto, Ontario, Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:23:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.okta.com/company/careers/opportunity/8003538?gh_jid=8003538</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Community Support Engineering at Airbnb</title>
+      <link>https://careers.airbnb.com/positions/8097917?gh_jid=8097917</link>
+      <description>New grad role at Airbnb in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 15:14:30 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.airbnb.com/positions/8097917?gh_jid=8097917</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
@@ -20,20 +97,6 @@
       <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 14:38:59 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8097672</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 14:36:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8097672</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946610</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 14:36:55 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946610</guid>
     </item>
     <item>
       <title>Frontend Software Engineer  at Twilio</title>
@@ -65,17 +128,17 @@
     </item>
     <item>
       <title>Security Engineer, Incident Response at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 14:29:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Incident Response at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
       <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
       <pubDate>Fri, 31 Jul 2026 14:29:41 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 14:29:41 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
     </item>
     <item>
       <title>Software Engineer (Gaming Fullstack) - WWE Champions at Scopely</title>
@@ -107,17 +170,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 12:29:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 12:29:53 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 12:29:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Software Engineer, Reconciliation &amp; Reporting at Block</title>
@@ -233,17 +296,17 @@
     </item>
     <item>
       <title>Graduate Engineer Trainee (GET) Mechanical - PS Product Data at Konecranes</title>
+      <link>https://in.indeed.com/viewjob?jk=ecbcd8fd556b9c72</link>
+      <description>New grad role at Konecranes in MH, IN. Category: Other</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ecbcd8fd556b9c72</guid>
+    </item>
+    <item>
+      <title>Graduate Engineer Trainee (GET) Mechanical - PS Product Data at Konecranes</title>
       <link>https://in.indeed.com/viewjob?jk=05f4d012ee701d29</link>
       <description>New grad role at Konecranes in MH, IN. Category: Other</description>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=05f4d012ee701d29</guid>
-    </item>
-    <item>
-      <title>Software Engineer II (Python/Golang) at Aeries Technology Group</title>
-      <link>https://in.indeed.com/viewjob?jk=5b974df89e279591</link>
-      <description>New grad role at Aeries Technology Group in MH, IN. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5b974df89e279591</guid>
     </item>
     <item>
       <title>Site Reliability Engineer at Calix</title>
@@ -258,6 +321,13 @@
       <description>New grad role at Mercedes-Benz Group in KA, IN. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f4aed5d792f3b5d1</guid>
+    </item>
+    <item>
+      <title>Software Engineer II (Python/Golang) at Aeries Technology Group</title>
+      <link>https://in.indeed.com/viewjob?jk=5b974df89e279591</link>
+      <description>New grad role at Aeries Technology Group in MH, IN. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5b974df89e279591</guid>
     </item>
     <item>
       <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
@@ -286,76 +356,6 @@
       <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c4fe293050922d97</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=8e27b745ff0b9f9f</link>
-      <description>New grad role at Deutsche Bank in MH, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8e27b745ff0b9f9f</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=e29448085524e75b</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=e29448085524e75b</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=752d426eab426b36</link>
-      <description>New grad role at Deutsche Bank in MH, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=752d426eab426b36</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=51f4ff80e0a98641</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=51f4ff80e0a98641</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=cbb104a1b8240d83</link>
-      <description>New grad role at Deutsche Bank in MH, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=cbb104a1b8240d83</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=21701e42e0daf85c</link>
-      <description>New grad role at Deutsche Bank in MH, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=21701e42e0daf85c</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=30854c73c67cc8de</link>
-      <description>New grad role at Deutsche Bank in MH, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=30854c73c67cc8de</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=97d0dbca891a0fbb</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=97d0dbca891a0fbb</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=c47b8689c0baf7dc</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=c47b8689c0baf7dc</guid>
-    </item>
-    <item>
-      <title>Apprentice hiring for 2026 – 2027 at Deutsche Bank</title>
-      <link>https://in.indeed.com/viewjob?jk=4879cd4554b3005d</link>
-      <description>New grad role at Deutsche Bank in KA, IN. Category: Other</description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4879cd4554b3005d</guid>
     </item>
   </channel>
 </rss>
