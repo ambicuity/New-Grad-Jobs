@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 21:19:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 22:22:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Routing at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=7482347</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 21:37:52 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7482347</guid>
+    </item>
     <item>
       <title>Software Engineer (L2) Email at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7689461</link>
@@ -65,17 +72,17 @@
     </item>
     <item>
       <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 31 Jul 2026 19:17:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
     </item>
     <item>
       <title>Systems Engineer, Product Platform Tools at Cloudflare</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7926526</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Perception Scaling Evaluation at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7449712</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:19:16 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7449712</guid>
     </item>
   </channel>
 </rss>
