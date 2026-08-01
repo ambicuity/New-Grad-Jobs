@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1473<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1470<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->891<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->889<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->142<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->133<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,473** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,470** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -69,11 +69,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
 | xAI | Software Engineer - Observability | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4803905007) |
 | xAI | Software Engineer - Real-Time Storage | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4805886007) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Block | Software Engineer, Reconciliation & Reporting | Bay Area, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5369941008?gh_jid=5369941008) |
 
-**[View all 891 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 889 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -161,7 +161,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Waymo | Machine Learning Engineer, Driver Understanding and Evaluation | Mountain View, CA, USA | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
 | Waymo | Machine Learning Engineer, GPU Kernel and Runtime | Mountain View, California | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=8052726) |
 
-**[View all 141 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 142 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -173,8 +173,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | North Carolina State University | IT Business Intelligence/Data Analyst I | Raleigh, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d6cc75e714631e5f) |
 | Booz Allen Hamilton | Foundry Data Engineer | Honolulu, HI | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Foundry-Data-Engineer_R0245813) |
 | Medtronic | IT Developer - Data Engineer | Nanakramguda, Hyderabad, India | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/IT-Developer---Data-Engineer_R68345-1) |
-| Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 1 day ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
-| Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | 1 day ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
+| Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
+| Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
 | Visa | Data Engineer | KA, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=3345581477f18658) |
 | Mesa Public Schools - AZ | Data Engineer - Information Systems | Mesa, AZ, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=bffc878fbcca24d8) |
 | Mastercard | Data Engineer II | O'Fallon, Missouri | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Data-Engineer-II_R-286580) |
@@ -218,8 +218,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Scotiabank | GBM - Investment Banking Analyst (Vancouver) - New Grad | Vancouver, BC, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=b28f413dd8fe8326) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -258,7 +258,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | OpenAI | US External Affairs Associate, Global Affairs | Washington, District of Columbia, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/openai/544af761-e37a-450c-884b-b96506c1b883) |
 | Konecranes | Graduate Engineer Trainee (GET) Mechanical - PS Product Data | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=ecbcd8fd556b9c72) |
 
-**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 133 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-01 20:36:50 UTC*
+*Last updated: 2026-08-01 21:34:22 UTC*
