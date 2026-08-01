@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 14:56:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 16:00:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Observability at xAI</title>
@@ -113,6 +113,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=959e4675d3d1053d</guid>
     </item>
     <item>
+      <title>Data Scientist at AZAD Technology Partners</title>
+      <link>https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</link>
+      <description>New grad role at AZAD Technology Partners in Vancouver, WA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</guid>
+    </item>
+    <item>
       <title>Pubic Safety Systems Engineer at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=f3d2014ef6cfba37</link>
       <description>New grad role at Unknown in Brooklyn, NY, US. Category: Software Engineering</description>
@@ -132,6 +139,20 @@
       <description>New grad role at Itech India in TN, IN. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=40618c4e6c318e65</guid>
+    </item>
+    <item>
+      <title>Associate System Safety Engineer at Solidus Technical Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=c1403285fb98e68e</link>
+      <description>New grad role at Solidus Technical Solutions in Tucson, AZ, US. Category: Other</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c1403285fb98e68e</guid>
+    </item>
+    <item>
+      <title>Associate Production Test Engineer at Solidus Technical Solutions</title>
+      <link>https://www.indeed.com/viewjob?jk=c3eb124df07678bb</link>
+      <description>New grad role at Solidus Technical Solutions in Tucson, AZ, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c3eb124df07678bb</guid>
     </item>
     <item>
       <title>Field Service Engineer II at Woodward, Inc.</title>
@@ -174,6 +195,13 @@
       <description>New grad role at Advocate Aurora Health in Milwaukee, WI, US. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9edf29a21f744f73</guid>
+    </item>
+    <item>
+      <title>Systems Engineer Level 2/ 3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</link>
+      <description>New grad role at Northrop Grumman in United States-California-Sunnyvale. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</guid>
     </item>
     <item>
       <title>Software Engineer, Agent Productivity  at OpenAI</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Fri, 31 Jul 2026 18:39:38 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ads Platform at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:38:26 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
-    </item>
-    <item>
-      <title>Software Engineer, User Frameworks at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8080438?gh_jid=8080438</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:32:47 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8080438?gh_jid=8080438</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Communications at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8083944?gh_jid=8083944</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:31:57 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8083944?gh_jid=8083944</guid>
-    </item>
-    <item>
-      <title>Software Engineer, AI Platform at Mixpanel</title>
-      <link>https://job-boards.greenhouse.io/mixpanel/jobs/8064216</link>
-      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 18:27:16 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/8064216</guid>
     </item>
   </channel>
 </rss>
