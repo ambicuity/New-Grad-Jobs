@@ -36,18 +36,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->889<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->888<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->142<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->133<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Block | Software Engineer, Reconciliation & Reporting | Bay Area, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5369941008?gh_jid=5369941008) |
 
-**[View all 889 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 888 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -161,7 +161,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Waymo | Machine Learning Engineer, Driver Understanding and Evaluation | Mountain View, CA, USA | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
 | Waymo | Machine Learning Engineer, GPU Kernel and Runtime | Mountain View, California | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=8052726) |
 
-**[View all 142 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 141 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -197,7 +197,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Thurber Engineering Ltd. | Junior Geotechnical or Geological Engineer (2026073181) | Victoria, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=dc3713c648adfd90) |
 | Calix | Site Reliability Engineer | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=eeab3ab636c836df) |
 | JPMorganChase | Site Reliability Engineer II | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=d56e585b4e6af31f) |
-| Arizona State University | Network Engineer | Tempe, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=55ff504ecbde6f99) |
+| UIDM | Azure DevOps Engineer (Azure DevOps / Terraform / Bicep / AKS / GitHub Actions) | UP, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=559ce0f2eea2e3c7) |
 
 **[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -218,8 +218,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Scotiabank | GBM - Investment Banking Analyst (Vancouver) - New Grad | Vancouver, BC, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=b28f413dd8fe8326) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -254,11 +254,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Sharp HealthCare | Clinical Nurse RN - ICU and Procedural Areas Float Pool - Sharp Metro Campus - Variable shifts - FT | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=1bd1210b2aefce25) |
 | Advocate Aurora Health | Nurse Extern II - Med Surg Ortho December 2026 Grads - Sinai | Milwaukee, WI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=376f0b68fdebb44b) |
 | Advocate Aurora Health | Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai | Milwaukee, WI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=9edf29a21f744f73) |
+| Hawaii State Department of Education | Educational Assistant I, II, III - Waiakea High | Hilo, HI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b70dbfcc964750e7) |
+| Hawaii State Department of Education | Educational Assistant I, II, III - Aiea High | ‘Aiea, HI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=1229f609337aa649) |
 | Twilio | Associate Application Engineer | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| OpenAI | US External Affairs Associate, Global Affairs | Washington, District of Columbia, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/openai/544af761-e37a-450c-884b-b96506c1b883) |
-| Konecranes | Graduate Engineer Trainee (GET) Mechanical - PS Product Data | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=ecbcd8fd556b9c72) |
 
-**[View all 133 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-01 21:34:22 UTC*
+*Last updated: 2026-08-01 22:36:13 UTC*
