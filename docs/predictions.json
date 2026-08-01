@@ -3,11 +3,11 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1478,
-      "change_percent": 1.23
+      "change_percent": 0.89
     },
     "30_days": {
-      "total_jobs": 1515,
-      "change_percent": 3.77
+      "total_jobs": 1512,
+      "change_percent": 3.21
     }
   },
   "growing_categories": [
@@ -21,14 +21,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market is showing a clear upward trend, with the current 7-day average (1452) significantly outpacing the 30-day average (1425), signaling sustained hiring momentum.",
-    "Software Engineering remains the primary engine of growth, while Unicorn-tier companies are showing consistent expansion in their new graduate headcount.",
-    "While Data/ML roles have seen a slight contraction in the short term, the overall volume of listings suggests a healthy entry-level market heading into the next hiring cycle."
+    "The market is showing a clear upward trend, with the current 7-day average (1461) significantly outperforming the 30-day average (1428), signaling strong momentum.",
+    "Unicorn-tier companies are demonstrating consistent hiring stability, which is currently offsetting the volatility observed in FAANG+ hiring patterns.",
+    "While Software Engineering remains the primary driver of growth, the steady demand for Data Engineering suggests a shift toward infrastructure-heavy roles for new graduates."
   ],
-  "generated_at": "2026-07-31T01:16:57.893442+00:00",
+  "generated_at": "2026-08-01T01:11:17.957820+00:00",
   "data_points": 90,
   "date_range": {
-    "start": "2026-05-02",
-    "end": "2026-07-31"
+    "start": "2026-05-04",
+    "end": "2026-08-01"
   }
 }
