@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-01T12:08:57.579534+00:00",
+    "last_updated": "2026-08-01T13:55:00.231180+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-04",
@@ -5553,15 +5553,15 @@
     },
     {
       "date": "2026-08-01",
-      "total_jobs": 1470,
+      "total_jobs": 1468,
       "categories": {
-        "software_engineering": 893,
-        "data_ml": 139,
-        "backend": 36,
-        "other": 134,
-        "infrastructure_sre": 124,
+        "software_engineering": 892,
+        "data_ml": 138,
+        "infrastructure_sre": 127,
+        "backend": 35,
+        "other": 133,
         "data_engineering": 25,
-        "frontend": 11,
+        "frontend": 10,
         "security": 77,
         "hardware": 17,
         "product_management": 3,
@@ -5569,7 +5569,7 @@
         "mobile": 7
       },
       "tiers": {
-        "other": 650,
+        "other": 648,
         "unicorn": 708,
         "faang_plus": 112
       },
@@ -5596,7 +5596,7 @@
         },
         {
           "company": "xAI",
-          "jobs": 24
+          "jobs": 25
         },
         {
           "company": "Scale AI",
@@ -5616,8 +5616,8 @@
         }
       ],
       "unique_companies": 228,
-      "avg_jobs_per_company": 6.45,
-      "timestamp": "2026-08-01T12:08:57.578588+00:00"
+      "avg_jobs_per_company": 6.44,
+      "timestamp": "2026-08-01T13:55:00.230156+00:00"
     }
   ]
 }
