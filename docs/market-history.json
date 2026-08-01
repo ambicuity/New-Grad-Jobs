@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-01T09:26:31.579720+00:00",
+    "last_updated": "2026-08-01T10:59:53.147675+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-04",
@@ -5553,23 +5553,23 @@
     },
     {
       "date": "2026-08-01",
-      "total_jobs": 1485,
+      "total_jobs": 1475,
       "categories": {
-        "software_engineering": 901,
-        "data_ml": 140,
-        "other": 140,
-        "backend": 34,
-        "infrastructure_sre": 126,
+        "software_engineering": 898,
+        "data_ml": 139,
+        "backend": 36,
+        "other": 135,
+        "infrastructure_sre": 124,
         "data_engineering": 25,
-        "frontend": 10,
-        "security": 77,
-        "hardware": 18,
+        "frontend": 11,
+        "security": 76,
+        "hardware": 17,
         "product_management": 3,
         "quant_finance": 4,
         "mobile": 7
       },
       "tiers": {
-        "other": 664,
+        "other": 654,
         "unicorn": 708,
         "faang_plus": 113
       },
@@ -5611,13 +5611,13 @@
           "jobs": 23
         },
         {
-          "company": "Accenture",
+          "company": "Affirm",
           "jobs": 22
         }
       ],
-      "unique_companies": 237,
-      "avg_jobs_per_company": 6.27,
-      "timestamp": "2026-08-01T09:26:31.578740+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.33,
+      "timestamp": "2026-08-01T10:59:53.146513+00:00"
     }
   ]
 }

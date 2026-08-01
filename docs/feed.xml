@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 09:26:31 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 10:59:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Reconciliation &amp; Reporting at Block</title>
@@ -23,24 +23,17 @@
     </item>
     <item>
       <title>Software Engineer, Cash App - Lending Products at Block</title>
-      <link>http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</link>
-      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 08:19:13 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cash App - Lending Products at Block</title>
       <link>http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</link>
       <description>New grad role at Block in Bay Area, CA, United States of America. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 08:19:13 +0000</pubDate>
       <guid isPermaLink="true">http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008</guid>
     </item>
     <item>
-      <title>Legal Systems Engineer at Block</title>
-      <link>http://block.xyz/careers/jobs/5195926008?gh_jid=5195926008</link>
-      <description>New grad role at Block in San Francisco, CA, United States of America. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 08:18:52 +0000</pubDate>
-      <guid isPermaLink="true">http://block.xyz/careers/jobs/5195926008?gh_jid=5195926008</guid>
+      <title>Software Engineer, Cash App - Lending Products at Block</title>
+      <link>http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</link>
+      <description>New grad role at Block in New York, NY, United States of America. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 08:19:13 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008</guid>
     </item>
     <item>
       <title>Legal Systems Engineer at Block</title>
@@ -48,6 +41,13 @@
       <description>New grad role at Block in San Francisco, CA, United States of America. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 08:18:52 +0000</pubDate>
       <guid isPermaLink="true">http://block.xyz/careers/jobs/5195925008?gh_jid=5195925008</guid>
+    </item>
+    <item>
+      <title>Legal Systems Engineer at Block</title>
+      <link>http://block.xyz/careers/jobs/5195926008?gh_jid=5195926008</link>
+      <description>New grad role at Block in San Francisco, CA, United States of America. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 08:18:52 +0000</pubDate>
+      <guid isPermaLink="true">http://block.xyz/careers/jobs/5195926008?gh_jid=5195926008</guid>
     </item>
     <item>
       <title>Software Engineer, API Agents at OpenAI</title>
@@ -65,17 +65,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>AI/ML Engineer at visko.group</title>
@@ -85,11 +85,39 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=bcae004a30827871</guid>
     </item>
     <item>
+      <title>Associate Full Stack Engineer- Backend/Cloud at Queberry</title>
+      <link>https://in.indeed.com/viewjob?jk=012f4aac21a9e5ab</link>
+      <description>New grad role at Queberry in KL, IN. Category: Backend Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=012f4aac21a9e5ab</guid>
+    </item>
+    <item>
       <title>Associate QA Engineer at Itech India</title>
       <link>https://in.indeed.com/viewjob?jk=40618c4e6c318e65</link>
       <description>New grad role at Itech India in TN, IN. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=40618c4e6c318e65</guid>
+    </item>
+    <item>
+      <title>Experienced Infrastructure Engineer at Serco</title>
+      <link>https://www.indeed.com/viewjob?jk=42c1a2eb14e7ac96</link>
+      <description>New grad role at Serco in Washington, DC, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=42c1a2eb14e7ac96</guid>
+    </item>
+    <item>
+      <title>Engineer I - Mechanical at General Dynamics Electric Boat</title>
+      <link>https://www.indeed.com/viewjob?jk=595a429985798f4c</link>
+      <description>New grad role at General Dynamics Electric Boat in Groton, CT, US. Category: Other</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=595a429985798f4c</guid>
+    </item>
+    <item>
+      <title>Clinical Nurse RN - ICU and Procedural Areas Float Pool - Sharp Metro Campus - Variable shifts - FT at Sharp HealthCare</title>
+      <link>https://www.indeed.com/viewjob?jk=1bd1210b2aefce25</link>
+      <description>New grad role at Sharp HealthCare in San Diego, CA, US. Category: Other</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1bd1210b2aefce25</guid>
     </item>
     <item>
       <title>Nurse Extern II - Med Surg Ortho December 2026 Grads - Sinai at Advocate Aurora Health</title>
@@ -99,39 +127,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=376f0b68fdebb44b</guid>
     </item>
     <item>
-      <title>Nurse Extern II - Medical Telemetry Observation - December 2026 Grads - St. Luke's at Advocate Aurora Health</title>
-      <link>https://www.indeed.com/viewjob?jk=f7c2090505e13fc8</link>
-      <description>New grad role at Advocate Aurora Health in Milwaukee, WI, US. Category: Other</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f7c2090505e13fc8</guid>
-    </item>
-    <item>
       <title>Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai at Advocate Aurora Health</title>
       <link>https://www.indeed.com/viewjob?jk=9edf29a21f744f73</link>
       <description>New grad role at Advocate Aurora Health in Milwaukee, WI, US. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9edf29a21f744f73</guid>
-    </item>
-    <item>
-      <title>Nurse Extern II - Cardiac Angioplasty 10S - December 2026 Grads at Advocate Aurora Health</title>
-      <link>https://www.indeed.com/viewjob?jk=2da9fa07bdd0292f</link>
-      <description>New grad role at Advocate Aurora Health in Milwaukee, WI, US. Category: Other</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2da9fa07bdd0292f</guid>
-    </item>
-    <item>
-      <title>Membership Trainee at YMCA</title>
-      <link>https://www.indeed.com/viewjob?jk=69b5bf03cf2afe01</link>
-      <description>New grad role at YMCA in Palm Harbor, FL, US. Category: Other</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=69b5bf03cf2afe01</guid>
-    </item>
-    <item>
-      <title>Clinical Nurse RN - ICU and Procedural Areas Float Pool - Sharp Metro Campus - Variable shifts - FT at Sharp HealthCare</title>
-      <link>https://www.indeed.com/viewjob?jk=1bd1210b2aefce25</link>
-      <description>New grad role at Sharp HealthCare in San Diego, CA, US. Category: Other</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1bd1210b2aefce25</guid>
     </item>
     <item>
       <title>Software Engineer, Agent Productivity  at OpenAI</title>
