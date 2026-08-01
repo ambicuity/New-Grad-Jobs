@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 01:11:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 04:37:55 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:24:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Software Engineer II at Mastercard</title>
@@ -190,13 +190,6 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Brooklyn-Center-Minnesota-United-States-of-America/Engineering-Technician-II_R73692-1</guid>
     </item>
     <item>
-      <title>Systems Engineer I (Mfg. Innovation) at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Humacao-Puerto-Rico-United-States-of-America/Systems-Engineer-I--Mfg-Innovation-_R66268-1</link>
-      <description>New grad role at Medtronic in Humacao, Puerto Rico, United States of America. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Humacao-Puerto-Rico-United-States-of-America/Systems-Engineer-I--Mfg-Innovation-_R66268-1</guid>
-    </item>
-    <item>
       <title>Computer Vision Engineer II at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Computer-Vision-Engineer-II_R69585-1</link>
       <description>New grad role at Medtronic in Lafayette, Colorado, United States of America. Category: Data Science &amp; ML</description>
@@ -216,6 +209,13 @@
       <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Aeronautical-Engineer---Aeronautical-Engineer_R10238799</guid>
+    </item>
+    <item>
+      <title>Structural Analysis Engineer (Associate or Mid- Level) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Structural-Analysis-Engineer--Associate-or-Mid--Level-_JR2026514263-1</link>
+      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Structural-Analysis-Engineer--Associate-or-Mid--Level-_JR2026514263-1</guid>
     </item>
     <item>
       <title>Entry-Level Systems Engineer (Digital Comm &amp; Networks Sys Engrg) at Boeing</title>

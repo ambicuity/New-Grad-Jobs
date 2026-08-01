@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-01T01:11:16.677135+00:00",
+    "last_updated": "2026-08-01T04:37:55.681411+00:00",
     "total_snapshots": 90,
     "date_range": {
       "start": "2026-05-04",
@@ -5553,25 +5553,25 @@
     },
     {
       "date": "2026-08-01",
-      "total_jobs": 1465,
+      "total_jobs": 1486,
       "categories": {
-        "data_ml": 138,
-        "software_engineering": 889,
+        "data_ml": 139,
+        "software_engineering": 907,
         "security": 76,
-        "infrastructure_sre": 129,
-        "data_engineering": 27,
-        "other": 129,
+        "infrastructure_sre": 127,
+        "data_engineering": 25,
+        "other": 136,
         "backend": 34,
         "frontend": 10,
-        "hardware": 19,
+        "hardware": 18,
         "product_management": 3,
         "quant_finance": 4,
         "mobile": 7
       },
       "tiers": {
-        "unicorn": 709,
-        "faang_plus": 118,
-        "other": 638
+        "unicorn": 707,
+        "faang_plus": 115,
+        "other": 664
       },
       "top_companies": [
         {
@@ -5596,7 +5596,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 25
+          "jobs": 26
+        },
+        {
+          "company": "Accenture",
+          "jobs": 26
         },
         {
           "company": "xAI",
@@ -5609,15 +5613,11 @@
         {
           "company": "Stripe",
           "jobs": 23
-        },
-        {
-          "company": "Affirm",
-          "jobs": 22
         }
       ],
-      "unique_companies": 231,
-      "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-08-01T01:11:16.676013+00:00"
+      "unique_companies": 234,
+      "avg_jobs_per_company": 6.35,
+      "timestamp": "2026-08-01T04:37:55.680590+00:00"
     }
   ]
 }
