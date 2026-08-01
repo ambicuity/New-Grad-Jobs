@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1469<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1472<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -41,20 +41,20 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->139<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->129<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->16<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->17<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->134<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,469** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,472** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -64,14 +64,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | xAI | Software Engineer - Observability | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4803905007) |
 | xAI | Software Engineer - Real-Time Storage | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4805886007) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Block | Software Engineer, Reconciliation & Reporting | Bay Area, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5369941008?gh_jid=5369941008) |
 | Block | Software Engineer, Cash App - Lending Products | Vancouver, British Columbia, Canada | Today | [Apply](http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008) |
-| Block | Software Engineer, Cash App - Lending Products | Bay Area, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008) |
 | Block | Software Engineer, Cash App - Lending Products | New York, NY, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5201726008?gh_jid=5201726008) |
-| Block | Legal Systems Engineer | San Francisco, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5195925008?gh_jid=5195925008) |
+| Block | Software Engineer, Cash App - Lending Products | Bay Area, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008) |
 | Block | Legal Systems Engineer | San Francisco, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5195926008?gh_jid=5195926008) |
+| Block | Legal Systems Engineer | San Francisco, CA, United States of America | Today | [Apply](http://block.xyz/careers/jobs/5195925008?gh_jid=5195925008) |
 
 **[View all 891 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -152,16 +152,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | visko.group | AI/ML Engineer | WB, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=bcae004a30827871) |
+| New York University | ADJUNCT FACULTY (Part-time) COMPUTER SCIENCE - August 1 - September 30, 2026 | New York, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=5f18702381cccfc1) |
+| Parallel Works | Junior HPC Applications Engineer | US | Today | [Apply](https://www.indeed.com/viewjob?jk=e306e3d42eaf4222) |
 | AZAD Technology Partners | Data Scientist | Vancouver, WA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9) |
 | Roblox | [2026] Data Scientist, Social | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/7463634?gh_jid=7463634) |
 | Waymo | Data Scientist | Mountain View, California, USA; San Francisco, California, USA | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455592) |
 | Waymo | Machine Learning Engineer, Depot Automation | Mountain View, CA, US | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7852501) |
 | Waymo | Machine Learning Engineer, Driver Understanding and Evaluation | Mountain View, CA, USA | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7455853) |
 | Waymo | Machine Learning Engineer, GPU Kernel and Runtime | Mountain View, California | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=8052726) |
-| Waymo | Machine Learning Engineer (Infra), Driver Understanding and Evaluation | Mountain View, CA, USA | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7819946) |
-| Waymo | Machine Learning Engineer - Mapping | Mountain View, CA, USA | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7429791) |
 
-**[View all 139 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 141 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -189,6 +189,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Exo Group, LLC | Engineer, Transmission Line Design II | The Woodlands, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=959e4675d3d1053d) |
+| Advanced Process Solutions | Controls Engineering Trainee | Tafton, PA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=5f7593bd5b2bedda) |
 | Solidus Technical Solutions | Associate Production Test Engineer | Tucson, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=c3eb124df07678bb) |
 | Serco | Experienced Infrastructure Engineer | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=42c1a2eb14e7ac96) |
 | Upstart | Security Operations Engineer (SecOps) II | United States / Remote | Today | [Apply](https://careers.upstart.com/jobs?gh_jid=8054616) |
@@ -197,9 +198,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Thurber Engineering Ltd. | Junior Geotechnical or Geological Engineer (2026073181) | Victoria, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=dc3713c648adfd90) |
 | Calix | Site Reliability Engineer | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=eeab3ab636c836df) |
 | JPMorganChase | Site Reliability Engineer II | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=d56e585b4e6af31f) |
-| Arizona State University | Network Engineer | Tempe, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=55ff504ecbde6f99) |
 
-**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 129 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -218,8 +218,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Scotiabank | GBM - Investment Banking Analyst (Vancouver) - New Grad | Vancouver, BC, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=b28f413dd8fe8326) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -228,6 +228,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Serco | Entry-Level Engineering Technician - Ludlow, MA | Ludlow, MA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d3c65de3f65dbd8e) |
 | Spectra Engineering Ltd. | Electrical Designer/Engineer - New Graduate | Markham, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=e89313f15879979a) |
 | Ciena | Junior Pluggable Optical Modem Test Engineer - New Grad | Ottawa, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=5d5a89311a25bf92) |
 | Kansas City National Security Campus | Engineer II - Welding | Kansas City, MO, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d5ae0d5191b9e55e) |
@@ -237,9 +238,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Northrop Grumman | Electrical Engineer - Level 2 | United States-Alabama-Huntsville | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Electrical-Engineer---Level-2_R10237174-1) |
 | Boeing | Digital Electronics Circuit & Unit Hardware Design Engineer (Associate or Mid-Level) | USA - El Segundo, CA | 2 days ago | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---El-Segundo-CA/Digital-Electronics-Circuit---Unit-Hardware-Design-Engineer--Associate-or-Mid-Level-_JR2025487163) |
 | Capital One | Associate, Strategy Analyst - New Grad 2026 | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=109e34b4de58138d) |
-| Scout AI | Junior Firmware Engineer | Sunnyvale, CA | 2026-07-24 | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4643333008) |
 
-**[View all 16 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 17 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -258,7 +258,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | OpenAI | US External Affairs Associate, Global Affairs | Washington, District of Columbia, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/openai/544af761-e37a-450c-884b-b96506c1b883) |
 | Konecranes | Graduate Engineer Trainee (GET) Mechanical - PS Product Data | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=ecbcd8fd556b9c72) |
 
-**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 134 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-01 16:00:53 UTC*
+*Last updated: 2026-08-01 17:11:33 UTC*
