@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1458<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1459<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->880<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->879<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->36<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->139<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->140<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->132<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->133<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,458** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,459** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Software Engineer, Sensor Simulation | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007) |
 | Anduril Industries | Software Engineer, Sensor Simulation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007) |
 
-**[View all 880 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 879 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -161,7 +161,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Finance Associate, Engineering | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007) |
 | Anduril Industries | 2026 Early Career Engineering Finance Associate | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007) |
 
-**[View all 139 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 140 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -248,6 +248,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | — | Digital Marketing Trainee | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0a202cea0407440b) |
+| Aqua-Aerobic Systems | Associate Application Engineer - Environmental Science | Loves Park, IL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bade670cf73a2902) |
 | McMaster University | SESSIONAL FACULTY - BIOTECH 4TB3 - Advanced Biotechnology - Fall 2026 | Hamilton, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=60f70d0e3decbe4f) |
 | Itech India | Associate QA Engineer | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=40618c4e6c318e65) |
 | General Dynamics Electric Boat | Engineer I - Mechanical | Groton, CT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=595a429985798f4c) |
@@ -256,9 +257,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Advocate Aurora Health | Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9edf29a21f744f73) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Waiakea High | Hilo, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b70dbfcc964750e7) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Aiea High | ‘Aiea, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1229f609337aa649) |
-| Twilio | Associate Application Engineer | Remote - India | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 
-**[View all 132 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 133 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 21:42:45 UTC*
+*Last updated: 2026-08-02 22:43:30 UTC*
