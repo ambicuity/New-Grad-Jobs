@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1467<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1464<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->885<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->884<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->36<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->140<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->127<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->134<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,467** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,464** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | xAI | Software Engineer - Observability | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4803905007) |
 | xAI | Software Engineer - Real-Time Storage | Palo Alto, California, United States | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4805886007) |
 
-**[View all 885 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 884 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,10 +188,10 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8024530?t=gh_src=&gh_jid=8024530) |
 | Samsara | Sales Engineer II - Specialist | Remote - NYC | Today | [Apply](https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443) |
 | BV Teck | Cloud Network Engineer | Remote, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=83cabd3bbc11f0be) |
 | Advanced Process Solutions | Controls Engineering Trainee | Tafton, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5f7593bd5b2bedda) |
-| Solidus Technical Solutions | Associate Production Test Engineer | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c3eb124df07678bb) |
 | Leidos | Junior ICS/SCADA & Critical Infrastructure Engineer | Reston, VA | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412) |
 | Upstart | Security Operations Engineer (SecOps) II | United States / Remote | 1 day ago | [Apply](https://careers.upstart.com/jobs?gh_jid=8054616) |
 | Discord | QA/DevOps Engineer | San Francisco Bay Area | 1 day ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8637648002) |
@@ -199,7 +199,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Thurber Engineering Ltd. | Junior Geotechnical or Geological Engineer (2026073181) | Victoria, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=dc3713c648adfd90) |
 | Calix | Site Reliability Engineer | KA, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=eeab3ab636c836df) |
 
-**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 127 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -251,14 +251,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | McMaster University | SESSIONAL FACULTY - BIOTECH 4TB3 - Advanced Biotechnology - Fall 2026 | Hamilton, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=60f70d0e3decbe4f) |
 | Itech India | Associate QA Engineer | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=40618c4e6c318e65) |
 | Hargrove Engineers + Constructors | Civil/Structural Engineer II | Baton Rouge, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=34b169ab111dc00d) |
-| Solidus Technical Solutions | Associate System Safety Engineer | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c1403285fb98e68e) |
 | General Dynamics Electric Boat | Engineer I - Mechanical | Groton, CT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=595a429985798f4c) |
 | Sharp HealthCare | Clinical Nurse RN - ICU and Procedural Areas Float Pool - Sharp Metro Campus - Variable shifts - FT | San Diego, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1bd1210b2aefce25) |
 | Advocate Aurora Health | Nurse Extern II - Med Surg Ortho December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=376f0b68fdebb44b) |
 | Advocate Aurora Health | Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9edf29a21f744f73) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Waiakea High | Hilo, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b70dbfcc964750e7) |
+| Hawaii State Department of Education | Educational Assistant I, II, III - Aiea High | ‘Aiea, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1229f609337aa649) |
 
-**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 134 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 07:24:06 UTC*
+*Last updated: 2026-08-02 09:32:37 UTC*
