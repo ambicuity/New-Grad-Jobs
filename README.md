@@ -43,11 +43,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->140<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->127<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->135<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->136<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -140,7 +140,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Boeing | Product Security Engineer (Air Dominance-Phantom Works) | USA - Berkeley, MO | 2 days ago | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Product-Security-Engineer--Air-Dominance-Phantom-Works-_JR2026516728-1) |
 | Algolia | Information Security Engineer | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/algolia/jobs/6112872004) |
 | Stripe | Client Platform Security Engineer | New York, New York | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
-| Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | 2 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
+| Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | 3 days ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
 
 **[View all 76 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -191,15 +191,15 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Leidos | Junior ICS/SCADA & Critical Infrastructure Engineer | Reston, VA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412) |
 | Advanced Process Solutions | Controls Engineering Trainee | Tafton, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5f7593bd5b2bedda) |
 | Solidus Technical Solutions | Associate Production Test Engineer | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c3eb124df07678bb) |
-| Serco | Network Engineer - San Diego, CA | San Diego, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=cba1e76ccc229e00) |
 | Citi | DevOps Engineer, Application Support | New Castle Delaware United States | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer--Application-Support_26983035) |
 | Citi | DevOps Engineer | Pune Maharashtra India | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/DevOps-Engineer_26950842) |
 | Upstart | Security Operations Engineer (SecOps) II | United States / Remote | 1 day ago | [Apply](https://careers.upstart.com/jobs?gh_jid=8054616) |
 | Discord | QA/DevOps Engineer | San Francisco Bay Area | 1 day ago | [Apply](https://job-boards.greenhouse.io/discord/jobs/8637648002) |
 | Thurber Engineering Ltd. | Junior Geotechnical or Geological Engineer (2026073110) | Calgary, AB, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c1932e4b8f7c0597) |
 | Thurber Engineering Ltd. | Junior Geotechnical or Geological Engineer (2026073181) | Victoria, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=dc3713c648adfd90) |
+| Calix | Site Reliability Engineer | KA, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=eeab3ab636c836df) |
 
-**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 127 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -229,7 +229,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Leidos | Junior Electrical Engineer | Reston, VA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-Electrical-Engineer_R-00184583) |
-| Serco | Entry-Level Engineering Technician - Ludlow, MA | Ludlow, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d3c65de3f65dbd8e) |
+| Serco | Entry-Level Engineering Technician - Ludlow, MA | Ludlow, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=da70c49f12cb2f56) |
 | Spectra Engineering Ltd. | Electrical Designer/Engineer - New Graduate | Markham, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=e89313f15879979a) |
 | Ciena | Junior Pluggable Optical Modem Test Engineer - New Grad | Ottawa, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=5d5a89311a25bf92) |
 | Kansas City National Security Campus | Engineer II - Welding | Kansas City, MO, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=d5ae0d5191b9e55e) |
@@ -247,6 +247,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| McMaster University | SESSIONAL FACULTY - BIOTECH 4TB3 - Advanced Biotechnology - Fall 2026 | Hamilton, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=60f70d0e3decbe4f) |
 | Itech India | Associate QA Engineer | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=40618c4e6c318e65) |
 | Hargrove Engineers + Constructors | Civil/Structural Engineer II | Baton Rouge, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=34b169ab111dc00d) |
 | Solidus Technical Solutions | Associate System Safety Engineer | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=c1403285fb98e68e) |
@@ -256,9 +257,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Advocate Aurora Health | Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9edf29a21f744f73) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Waiakea High | Hilo, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b70dbfcc964750e7) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Aiea High | ‘Aiea, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1229f609337aa649) |
-| Medtronic | R&D Engineer I - Memphis - Onsite | Memphis, Tennessee, United States of America | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Memphis-Tennessee-United-States-of-America/R-D-Engineer-I---Memphis--Oboh-_R67725-1) |
 
-**[View all 135 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 136 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 01:16:47 UTC*
+*Last updated: 2026-08-02 04:48:08 UTC*
