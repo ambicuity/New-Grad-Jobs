@@ -32,18 +32,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1464<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1462<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->884<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->883<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->36<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->140<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->129<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->17<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,464** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,462** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -62,6 +62,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Roblox | Software Engineer, Ads Platform | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8047815?gh_jid=8047815) |
+| Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
+| Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
 | Anduril Industries | Software Engineer - ML Infrastructure | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007) |
 | Anduril Industries | Software Engineer, Fleet Infrastructure | Boston, Massachusetts, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5195644007?gh_jid=5195644007) |
 | Anduril Industries | Software Engineer - Maritime Integrated Systems | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5166602007?gh_jid=5166602007) |
@@ -69,11 +72,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Software Engineer, Sensor Simulation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007) |
 | Anduril Industries | Systems Engineer | Quincy, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007) |
 | Anduril Industries | Infrastructure Software Engineer, Active Clearance | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5160667007?gh_jid=5160667007) |
-| Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178116007?gh_jid=5178116007) |
-| Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007) |
-| Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007) |
 
-**[View all 884 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 883 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -100,7 +100,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | — | Backend Software Engineer | US | Today | [Apply](https://www.indeed.com/viewjob?jk=e02044809e3bb14e) |
 | Queberry | Associate Full Stack Engineer- Backend/Cloud | KL, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=012f4aac21a9e5ab) |
-| Waymo | Software Engineer Backend - Simulation | Mountain View | 1 day ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
+| Waymo | Software Engineer Backend - Simulation | Mountain View | 2 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
 | Cwill | R&D Management Trainee - Full-Stack Engineer (Backend) | IL, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=8f2d281e2915619c) |
 | Cwill | R&D Management Trainee - Full-Stack Engineer (Backend) | TX, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=98bc18d2d0c8b52b) |
 | Cwill | R&D Management Trainee - Full-Stack Engineer (Backend) | NJ, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=2102fddda3230c3c) |
@@ -138,7 +138,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Mastercard | Software engineer (DevSecOps) | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer--DevSecOps-_R-282027) |
 | Leidos | Computer Network Defense (CND) Security Engineer | Suitland, MD | 2 days ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Suitland-MD/Computer-Network-Defense--CND--Security-Engineer_R-00188551) |
 | Leidos | Cybersecurity Systems Engineer | Linthicum Heights, MD | 2 days ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Linthicum-Heights-MD/Cybersecurity-Systems-Engineer_R-00188558) |
-| Algolia | Information Security Engineer | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/algolia/jobs/6112872004) |
+| Algolia | Information Security Engineer | Remote - United Kingdom | 3 days ago | [Apply](https://job-boards.greenhouse.io/algolia/jobs/6112872004) |
 | Stripe | Client Platform Security Engineer | New York, New York | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
 | Booz Allen Hamilton | Data Security Engineer | Honolulu, HI | 3 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Data-Security-Engineer_R0240134) |
 
@@ -199,7 +199,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Leidos | Project Network Engineer | Camp Springs, MD | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Camp-Springs-MD/Project-Network-Engineer_R-00188350) |
 | BV Teck | Cloud Network Engineer | Remote, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=83cabd3bbc11f0be) |
 
-**[View all 129 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 17:31:51 UTC*
+*Last updated: 2026-08-02 18:37:38 UTC*
