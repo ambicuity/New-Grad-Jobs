@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1459<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1457<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -43,18 +43,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->139<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->127<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->133<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->132<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,459** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,457** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -107,7 +107,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Cwill | R&D Management Trainee - Full-Stack Engineer (Backend) | CA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=e3c144394ede40c4) |
 | Cwill | R&D Management Trainee - Full-Stack Engineer (Backend) | Cary, NC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=25a4b2100524729d) |
 | Imply | Software Engineer (Full Stack, Backend Focus) (Remote) | Burlingame, California, United States | 4 days ago | [Apply](https://imply.io/positions?gh_jid=7595374003) |
-| Pinterest | Software Engineer I, Backend | Seattle, WA, US; San Francisco, CA, US | 4 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6816337) |
+| Pinterest | Software Engineer I, Backend | Seattle, WA, US; San Francisco, CA, US | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6816337) |
 
 **[View all 36 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -117,9 +117,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Pinterest | Software Engineer II, Android | Toronto, ON, CA | 4 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7987854) |
-| Pinterest | Software Engineer II, iOS | San Francisco, CA, US; Remote, US | 4 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=5601228) |
-| Pinterest | Software Engineer, iOS | Toronto, ON, CA | 4 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6922682) |
+| Pinterest | Software Engineer II, Android | Toronto, ON, CA | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7987854) |
+| Pinterest | Software Engineer II, iOS | San Francisco, CA, US; Remote, US | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=5601228) |
+| Pinterest | Software Engineer, iOS | Toronto, ON, CA | 5 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=6922682) |
 | Anduril Industries | Software Engineer - Mobile, Android | Costa Mesa, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007) |
 | Duolingo | Software Engineer II, Android | Pittsburgh, PA | 2026-07-23 | [Apply](https://careers.duolingo.com/jobs/8628658002?gh_jid=8628658002) |
 | Duolingo | Software Engineer II, Android | New York, NY | 2026-07-23 | [Apply](https://careers.duolingo.com/jobs/8628670002?gh_jid=8628670002) |
@@ -199,7 +199,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Leidos | Project Network Engineer | Camp Springs, MD | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Camp-Springs-MD/Project-Network-Engineer_R-00188350) |
 | BV Teck | Cloud Network Engineer | Remote, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=83cabd3bbc11f0be) |
 
-**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 127 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -250,15 +250,15 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | — | Digital Marketing Trainee | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0a202cea0407440b) |
 | McMaster University | SESSIONAL FACULTY - BIOTECH 4TB3 - Advanced Biotechnology - Fall 2026 | Hamilton, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=60f70d0e3decbe4f) |
 | Itech India | Associate QA Engineer | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=40618c4e6c318e65) |
-| Hargrove Engineers + Constructors | Civil/Structural Engineer II | Baton Rouge, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=34b169ab111dc00d) |
 | General Dynamics Electric Boat | Engineer I - Mechanical | Groton, CT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=595a429985798f4c) |
 | Sharp HealthCare | Clinical Nurse RN - ICU and Procedural Areas Float Pool - Sharp Metro Campus - Variable shifts - FT | San Diego, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1bd1210b2aefce25) |
 | Advocate Aurora Health | Nurse Extern II - Med Surg Ortho December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=376f0b68fdebb44b) |
 | Advocate Aurora Health | Nurse Extern II - Cardiac Medical Telemetry - December 2026 Grads - Sinai | Milwaukee, WI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9edf29a21f744f73) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Waiakea High | Hilo, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b70dbfcc964750e7) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Aiea High | ‘Aiea, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1229f609337aa649) |
+| Twilio | Associate Application Engineer | Remote - India | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 
-**[View all 133 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 132 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 19:52:57 UTC*
+*Last updated: 2026-08-02 20:43:53 UTC*
