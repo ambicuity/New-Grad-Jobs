@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 23:38:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 01:16:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, System-on-Chip (SoC) Testing at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=8018436</link>
+      <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
+      <pubDate>Sun, 02 Aug 2026 00:40:25 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8018436</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 02 Aug 2026 00:24:56 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sun, 02 Aug 2026 00:24:55 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sun, 02 Aug 2026 00:24:54 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Systems Engineer Level 2/ 3 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</link>
+      <description>New grad role at Northrop Grumman in United States-California-Sunnyvale. Category: Software Engineering</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</guid>
+    </item>
+    <item>
+      <title>Junior ICS/SCADA &amp; Critical Infrastructure Engineer at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</link>
+      <description>New grad role at Leidos in Reston, VA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</guid>
+    </item>
+    <item>
+      <title>Junior Electrical Engineer at Leidos</title>
+      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-Electrical-Engineer_R-00184583</link>
+      <description>New grad role at Leidos in Reston, VA. Category: Hardware Engineering</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-Electrical-Engineer_R-00184583</guid>
+    </item>
     <item>
       <title>Systems Software Engineer - Game Engine Network (C++) at Roblox</title>
       <link>https://careers.roblox.com/jobs/7561739?gh_jid=7561739</link>
@@ -62,27 +111,6 @@
       <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 13:27:34 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4805886007</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 01 Aug 2026 12:27:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 12:27:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 01 Aug 2026 12:27:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer, Reconciliation &amp; Reporting at Block</title>
@@ -176,6 +204,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d3c65de3f65dbd8e</guid>
     </item>
     <item>
+      <title>Data Scientist at AZAD Technology Partners</title>
+      <link>https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</link>
+      <description>New grad role at AZAD Technology Partners in Vancouver, WA, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</guid>
+    </item>
+    <item>
       <title>Pubic Safety Systems Engineer at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=f3d2014ef6cfba37</link>
       <description>New grad role at Unknown in Brooklyn, NY, US. Category: Software Engineering</description>
@@ -195,13 +230,6 @@
       <description>New grad role at Itech India in TN, IN. Category: Other</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=40618c4e6c318e65</guid>
-    </item>
-    <item>
-      <title>Data Scientist at AZAD Technology Partners</title>
-      <link>https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</link>
-      <description>New grad role at AZAD Technology Partners in Vancouver, WA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=103bf7fa6fa958d9</guid>
     </item>
     <item>
       <title>Civil/Structural Engineer II at Hargrove Engineers + Constructors</title>
@@ -281,81 +309,53 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1229f609337aa649</guid>
     </item>
     <item>
-      <title>Systems Engineer Level 2/ 3 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</link>
-      <description>New grad role at Northrop Grumman in United States-California-Sunnyvale. Category: Software Engineering</description>
+      <title>Software Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-280417</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Sunnyvale/Systems-Engineer-Level-2--3_R10241613</guid>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-280417</guid>
     </item>
     <item>
-      <title>Junior ICS/SCADA &amp; Critical Infrastructure Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Infrastructure &amp; SRE</description>
+      <title>Software engineer (DevSecOps) at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer--DevSecOps-_R-282027</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Security Engineering</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412</guid>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer--DevSecOps-_R-282027</guid>
     </item>
     <item>
-      <title>Junior Electrical Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-Electrical-Engineer_R-00184583</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Hardware Engineering</description>
+      <title>Software engineer at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer_R-281108</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-Electrical-Engineer_R-00184583</guid>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer_R-281108</guid>
     </item>
     <item>
-      <title>Software Engineer, Agent Productivity  at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/0432731c-f229-476e-92b6-d53491e79096</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 23:25:34 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/0432731c-f229-476e-92b6-d53491e79096</guid>
+      <title>System Software Engineer – Data Center Compute Diagnostics at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-NC-Durham/System-Software-Engineer---Data-Center-Compute-Diagnostics_JR2022612</link>
+      <description>New grad role at NVIDIA in US, NC, Durham. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-NC-Durham/System-Software-Engineer---Data-Center-Compute-Diagnostics_JR2022612</guid>
     </item>
     <item>
-      <title>Software Engineer, API Multimodal at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/96de8acb-556e-451b-bc84-7124bb4b0a20</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 22:55:40 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/96de8acb-556e-451b-bc84-7124bb4b0a20</guid>
+      <title>Software Engineer, OpenShell at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-Remote/Software-Engineer--OpenShell_JR2020825</link>
+      <description>New grad role at NVIDIA in US, Remote. Category: Software Engineering</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-Remote/Software-Engineer--OpenShell_JR2020825</guid>
     </item>
     <item>
-      <title>Software Engineer, Agent - Healthcare Integrations at Sierra</title>
-      <link>https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</link>
-      <description>New grad role at Sierra in San Francisco, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 22:34:30 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</guid>
+      <title>DevOps Engineer, Application Support at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer--Application-Support_26983035</link>
+      <description>New grad role at Citi in New Castle Delaware United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/New-Castle-Delaware-United-States/DevOps-Engineer--Application-Support_26983035</guid>
     </item>
     <item>
-      <title>Software Engineer, Routing at Nuro</title>
-      <link>https://nuro.ai/careersitem?gh_jid=7482347</link>
-      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 21:37:52 +0000</pubDate>
-      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=7482347</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) Email at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7689461</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 21:03:34 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7689461</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8100236</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 21:03:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8100236</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Data  at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5120884007</link>
-      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 20:45:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5120884007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Full Stack at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4836302007?gh_jid=4836302007</link>
-      <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 31 Jul 2026 20:28:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4836302007?gh_jid=4836302007</guid>
+      <title>DevOps Engineer at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/DevOps-Engineer_26950842</link>
+      <description>New grad role at Citi in Pune Maharashtra India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Pune-Maharashtra-India/DevOps-Engineer_26950842</guid>
     </item>
   </channel>
 </rss>
