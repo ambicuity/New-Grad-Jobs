@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1464<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1465<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -43,7 +43,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->140<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->129<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->17<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,464** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,465** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -82,7 +82,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
-| Twilio | Frontend Software Engineer | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
+| Twilio | Frontend Software Engineer | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7946608) |
 | Squarespace | Software Engineer, Frontend | New York City | 4 days ago | [Apply](http://www.squarespace.com/about/careers?gh_jid=8019365) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Seattle, Washington, United States | 5 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4674088007?gh_jid=4674088007) |
 | Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
@@ -133,13 +133,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
-| Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
-| Twilio | Security Engineer, Incident Response | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
+| Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
+| Twilio | Security Engineer, Incident Response | Remote - Ireland | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Mastercard | Software engineer (DevSecOps) | Pune, India | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-engineer--DevSecOps-_R-282027) |
 | Leidos | Computer Network Defense (CND) Security Engineer | Suitland, MD | 2 days ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Suitland-MD/Computer-Network-Defense--CND--Security-Engineer_R-00188551) |
 | Leidos | Cybersecurity Systems Engineer | Linthicum Heights, MD | 2 days ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Linthicum-Heights-MD/Cybersecurity-Systems-Engineer_R-00188558) |
 | Algolia | Information Security Engineer | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/algolia/jobs/6112872004) |
-| Stripe | Client Platform Security Engineer | New York, New York | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
+| Stripe | Client Platform Security Engineer | New York, New York | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
 | Booz Allen Hamilton | Data Security Engineer | Honolulu, HI | 3 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Data-Security-Engineer_R0240134) |
 
 **[View all 76 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
@@ -194,12 +194,12 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Systems Engineer, C2 Networking - Edge Compute and Communications | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007) |
 | Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8024530?t=gh_src=&gh_jid=8024530) |
 | Samsara | Sales Engineer II - Specialist | Remote - NYC | Today | [Apply](https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443) |
+| General Dynamics Information Technology | Network Engineer - TS/SCI w/ Poly | Herndon, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=a6d9c819c388cc70) |
+| General Dynamics Information Technology | Junior DS Engineer | Honolulu, HI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=9902bb1da284e60c) |
 | Leidos | Project Network Engineer | Camp Springs, MD | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Camp-Springs-MD/Project-Network-Engineer_R-00188350) |
 | BV Teck | Cloud Network Engineer | Remote, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=83cabd3bbc11f0be) |
-| Advanced Process Solutions | Controls Engineering Trainee | Tafton, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5f7593bd5b2bedda) |
-| Leidos | Junior ICS/SCADA & Critical Infrastructure Engineer | Reston, VA | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-SCADA-Controls-Engineer_R-00184412) |
 
-**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 129 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 14:03:38 UTC*
+*Last updated: 2026-08-02 15:16:01 UTC*
