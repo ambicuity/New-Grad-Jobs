@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1457<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1458<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -43,7 +43,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->139<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->25<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->127<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->128<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->18<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,457** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,458** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -173,8 +173,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | North Carolina State University | IT Business Intelligence/Data Analyst I | Raleigh, NC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=d6cc75e714631e5f) |
 | Booz Allen Hamilton | Foundry Data Engineer | Honolulu, HI | 2 days ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Foundry-Data-Engineer_R0245813) |
 | Medtronic | IT Developer - Data Engineer | Nanakramguda, Hyderabad, India | 2 days ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Nanakramguda-Hyderabad-India/IT-Developer---Data-Engineer_R68345-1) |
-| Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
-| Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
+| Precision Medicine Group | Client Services Business Analyst II - Healthcare Data | Indianapolis, IN, USA | 3 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004) |
+| Precision Medicine Group | Power BI Developer II | Bangalore, Karnataka, India | 3 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004) |
 | Visa | Data Engineer | KA, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=3345581477f18658) |
 | Mesa Public Schools - AZ | Data Engineer - Information Systems | Mesa, AZ, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=bffc878fbcca24d8) |
 | Mastercard | Data Engineer II | O'Fallon, Missouri | 3 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/OFallon-Missouri/Data-Engineer-II_R-286580) |
@@ -199,7 +199,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Leidos | Project Network Engineer | Camp Springs, MD | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Camp-Springs-MD/Project-Network-Engineer_R-00188350) |
 | BV Teck | Cloud Network Engineer | Remote, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=83cabd3bbc11f0be) |
 
-**[View all 127 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 128 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-02 20:43:53 UTC*
+*Last updated: 2026-08-02 21:42:45 UTC*
