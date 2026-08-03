@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-03T01:21:55.767966+00:00",
+    "last_updated": "2026-08-03T04:56:41.170105+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-05",
@@ -5634,25 +5634,25 @@
     },
     {
       "date": "2026-08-03",
-      "total_jobs": 1463,
+      "total_jobs": 1493,
       "categories": {
-        "software_engineering": 880,
-        "data_ml": 143,
-        "infrastructure_sre": 127,
-        "frontend": 10,
+        "software_engineering": 885,
+        "data_ml": 154,
+        "infrastructure_sre": 126,
+        "frontend": 11,
         "security": 76,
-        "hardware": 19,
-        "other": 133,
-        "backend": 36,
+        "hardware": 21,
+        "mobile": 8,
+        "other": 145,
+        "backend": 35,
         "data_engineering": 25,
         "product_management": 3,
-        "quant_finance": 4,
-        "mobile": 7
+        "quant_finance": 4
       },
       "tiers": {
         "unicorn": 698,
-        "other": 653,
-        "faang_plus": 112
+        "other": 667,
+        "faang_plus": 128
       },
       "top_companies": [
         {
@@ -5696,9 +5696,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.31,
-      "timestamp": "2026-08-03T01:21:55.766901+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 6.35,
+      "timestamp": "2026-08-03T04:56:41.168908+00:00"
     }
   ]
 }
