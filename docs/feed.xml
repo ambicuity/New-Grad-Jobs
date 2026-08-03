@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2026 22:49:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 23:57:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deployed Engineer (Early Career- SF) at LangChain</title>
+      <link>https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522</link>
+      <description>New grad role at LangChain in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 03 Aug 2026 23:04:07 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522</guid>
+    </item>
+    <item>
+      <title>Deployed Engineer (Early Career-NYC) at LangChain</title>
+      <link>https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</link>
+      <description>New grad role at LangChain in New York, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 03 Aug 2026 23:03:53 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8083366</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 23:00:38 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083366</guid>
+    </item>
     <item>
       <title>Associate Technical Services Engineer II at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8044218</link>
@@ -37,10 +58,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083366</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083366</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -48,13 +69,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -72,17 +86,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -93,17 +107,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
-      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
       <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
       <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
+      <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 22:35:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
     </item>
     <item>
       <title>Software Engineer 3, Query Integration at MongoDB</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Glean in San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Mon, 03 Aug 2026 21:35:33 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4711861005</guid>
-    </item>
-    <item>
-      <title>Data Scientist II, ML Infrastructure at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=8071670</link>
-      <description>New grad role at Pinterest in Palo Alto, CA, US; Remote, US. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 03 Aug 2026 21:31:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=8071670</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Pinterest</title>
-      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7958766</link>
-      <description>New grad role at Pinterest in Palo Alto, CA, US. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 21:27:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7958766</guid>
     </item>
   </channel>
 </rss>
