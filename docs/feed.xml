@@ -5,8 +5,85 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2026 20:41:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 21:51:49 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Assistant Quality at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4711484005</link>
+      <description>New grad role at Glean in San Francisco, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 03 Aug 2026 21:43:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4711484005</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Search Quality at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4006735005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 03 Aug 2026 21:41:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4006735005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Compute Infrastructure at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4704106005</link>
+      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 21:36:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4704106005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cloud Infrastructure at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4709327005</link>
+      <description>New grad role at Glean in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 21:35:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4709327005</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cloud Deployment Infrastructure at Glean</title>
+      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4711861005</link>
+      <description>New grad role at Glean in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 21:35:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4711861005</guid>
+    </item>
+    <item>
+      <title>Data Scientist II, ML Infrastructure at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=8071670</link>
+      <description>New grad role at Pinterest in Palo Alto, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 03 Aug 2026 21:31:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=8071670</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7958766</link>
+      <description>New grad role at Pinterest in Palo Alto, CA, US. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 21:27:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7958766</guid>
+    </item>
+    <item>
+      <title>Data Scientist II, Infrastructure at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7816424</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 03 Aug 2026 21:27:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7816424</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Big Data, tvScientific at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=7782546</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Remote, US. Category: Software Engineering</description>
+      <pubDate>Mon, 03 Aug 2026 21:27:03 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=7782546</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer, Cloud Cost Utilization at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8515080002</link>
+      <description>New grad role at GitLab in Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 03 Aug 2026 20:43:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8515080002</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Dedicated Hosted Runners at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8644274002</link>
+      <description>New grad role at GitLab in Bangalore, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 03 Aug 2026 20:43:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8644274002</guid>
+    </item>
     <item>
       <title>Software Engineer - Platform Core (C++, C) at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5202187007</link>
@@ -191,10 +268,10 @@
     </item>
     <item>
       <title>Tactical Network Engineer, Connected Warfare (Active Clearance) at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Infrastructure &amp; SRE</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 03 Aug 2026 18:28:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007</guid>
     </item>
     <item>
       <title>Tactical Network Engineer, Connected Warfare (Active Clearance) at Anduril Industries</title>
@@ -205,10 +282,10 @@
     </item>
     <item>
       <title>Tactical Network Engineer, Connected Warfare (Active Clearance) at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Infrastructure &amp; SRE</description>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 03 Aug 2026 18:28:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007</guid>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007</guid>
     </item>
     <item>
       <title>Electrical Systems Engineer, C2 Integration at Anduril Industries</title>
@@ -279,83 +356,6 @@
       <description>New grad role at Precision Medicine Group in Bangalore, Karnataka, India. Category: Data Engineering</description>
       <pubDate>Mon, 03 Aug 2026 18:14:19 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004</guid>
-    </item>
-    <item>
-      <title>QA Engineer I at Precision Medicine Group</title>
-      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6105760004</link>
-      <description>New grad role at Precision Medicine Group in Remote, India. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 03 Aug 2026 18:14:19 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6105760004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agent Harnessing at Scout AI</title>
-      <link>https://job-boards.greenhouse.io/scoutai/jobs/5248857008</link>
-      <description>New grad role at Scout AI in Sunnyvale, California. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 18:03:26 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scoutai/jobs/5248857008</guid>
-    </item>
-    <item>
-      <title>Associate Technical Services Engineer II at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8044218</link>
-      <description>New grad role at MongoDB in Austin. Category: Data Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8044218</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7821316</link>
-      <description>New grad role at MongoDB in New York City. Category: Data Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7821316</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083366</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083366</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Identity and Access Management at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8069776</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8069776</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Mon, 03 Aug 2026 17:46:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
   </channel>
 </rss>
