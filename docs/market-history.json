@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-03T15:13:50.131754+00:00",
+    "last_updated": "2026-08-03T17:23:19.517400+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-05",
@@ -5634,34 +5634,34 @@
     },
     {
       "date": "2026-08-03",
-      "total_jobs": 1467,
+      "total_jobs": 1466,
       "categories": {
+        "software_engineering": 876,
+        "backend": 42,
+        "other": 125,
         "security": 77,
-        "software_engineering": 880,
-        "data_ml": 150,
+        "data_ml": 146,
         "data_engineering": 25,
-        "infrastructure_sre": 129,
-        "other": 119,
-        "backend": 41,
+        "infrastructure_sre": 130,
         "hardware": 21,
-        "frontend": 11,
+        "frontend": 10,
         "product_management": 3,
         "quant_finance": 4,
         "mobile": 7
       },
       "tiers": {
-        "unicorn": 699,
-        "other": 633,
-        "faang_plus": 135
+        "unicorn": 701,
+        "other": 628,
+        "faang_plus": 137
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 242
+          "jobs": 244
         },
         {
           "company": "Anduril Industries",
-          "jobs": 211
+          "jobs": 212
         },
         {
           "company": "OpenAI",
@@ -5673,15 +5673,15 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 27
+          "jobs": 28
+        },
+        {
+          "company": "Leidos",
+          "jobs": 26
         },
         {
           "company": "xAI",
           "jobs": 25
-        },
-        {
-          "company": "Leidos",
-          "jobs": 24
         },
         {
           "company": "Scale AI",
@@ -5696,9 +5696,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 239,
-      "avg_jobs_per_company": 6.14,
-      "timestamp": "2026-08-03T15:13:50.130656+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 6.24,
+      "timestamp": "2026-08-03T17:23:19.515075+00:00"
     }
   ]
 }
