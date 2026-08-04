@@ -2,34 +2,33 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1478,
-      "change_percent": 1.03
+      "total_jobs": 1515,
+      "change_percent": 1.07
     },
     "30_days": {
-      "total_jobs": 1515,
-      "change_percent": 3.55
+      "total_jobs": 1560,
+      "change_percent": 4.07
     }
   },
   "growing_categories": [
-    "hardware",
-    "other",
-    "data_ml"
+    "data_ml",
+    "software_engineering",
+    "data_engineering"
   ],
   "declining_categories": [
-    "faang_plus",
-    "software_engineering",
+    "product_management",
     "infrastructure_sre"
   ],
   "confidence": 75,
   "insights": [
-    "The market is showing a clear upward trend, with the current 7-day average (1461) significantly outperforming the 30-day average (1432).",
-    "Growth is being driven by 'Unicorn' and 'Other' tier companies, which are successfully offsetting the contraction in FAANG+ hiring volumes.",
-    "While core software engineering roles remain stable, specialized niches like hardware and data/ML are showing higher relative growth momentum."
+    "The market shows a clear upward trajectory, with the current total of 1499 sitting well above the 30-day average of 1437, indicating sustained hiring momentum.",
+    "Data and Machine Learning roles are demonstrating the most consistent growth, suggesting that companies are prioritizing AI-readiness in their new graduate pipelines.",
+    "While FAANG+ hiring remains volatile, the steady increase in Unicorn-tier job postings provides a strong foundation for overall market expansion."
   ],
-  "generated_at": "2026-08-03T01:21:57.150267+00:00",
+  "generated_at": "2026-08-04T02:16:26.048891+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-05",
-    "end": "2026-08-03"
+    "start": "2026-05-06",
+    "end": "2026-08-04"
   }
 }
