@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T12:53:59.029330+00:00",
+    "last_updated": "2026-08-04T15:22:14.842078+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-06",
@@ -5649,23 +5649,23 @@
       "date": "2026-08-04",
       "total_jobs": 1511,
       "categories": {
-        "data_ml": 154,
-        "software_engineering": 902,
-        "security": 79,
+        "software_engineering": 906,
         "frontend": 13,
-        "other": 123,
-        "infrastructure_sre": 134,
+        "other": 114,
+        "data_ml": 153,
+        "security": 78,
+        "infrastructure_sre": 143,
         "backend": 40,
         "mobile": 9,
-        "data_engineering": 26,
+        "data_engineering": 27,
         "product_management": 3,
-        "hardware": 23,
+        "hardware": 20,
         "quant_finance": 5
       },
       "tiers": {
-        "unicorn": 707,
-        "other": 637,
-        "faang_plus": 167
+        "unicorn": 708,
+        "other": 642,
+        "faang_plus": 161
       },
       "top_companies": [
         {
@@ -5686,14 +5686,14 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 31
-        },
-        {
-          "company": "TikTok",
-          "jobs": 29
+          "jobs": 32
         },
         {
           "company": "Northrop Grumman",
+          "jobs": 29
+        },
+        {
+          "company": "TikTok",
           "jobs": 27
         },
         {
@@ -5709,9 +5709,9 @@
           "jobs": 22
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.6,
-      "timestamp": "2026-08-04T12:53:59.028142+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.48,
+      "timestamp": "2026-08-04T15:22:14.840946+00:00"
     }
   ]
 }
