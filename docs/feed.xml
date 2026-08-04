@@ -5,21 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 22:49:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 23:51:39 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robotic Software Engineer, Omen at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5183150007?gh_jid=5183150007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 23:39:11 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5183150007?gh_jid=5183150007</guid>
+    </item>
+    <item>
+      <title>Motor Control Electrical Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5024633007?gh_jid=5024633007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 23:37:32 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5024633007?gh_jid=5024633007</guid>
+    </item>
     <item>
       <title>Software Engineer, Platform Engineering (L2) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8026207</link>
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 22:37:35 +0000</pubDate>
+      <pubDate>Tue, 04 Aug 2026 23:17:38 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8026207</guid>
     </item>
     <item>
       <title>Software Engineer-Platform Engineering (L3) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8026203</link>
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 22:35:55 +0000</pubDate>
+      <pubDate>Tue, 04 Aug 2026 23:17:35 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8026203</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 04 Aug 2026 23:05:56 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer / Applied Scientist, Prediction &amp; Planning  at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7309064</link>
+      <description>New grad role at Waymo in Mountain View, CA USA; San Francisco, CA USA. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 04 Aug 2026 23:05:13 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7309064</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8107379</link>
+      <description>New grad role at Stripe in South San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 23:04:24 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8107379</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Sending at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8107302</link>
+      <description>New grad role at Stripe in South San Francisco, California. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 22:47:05 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8107302</guid>
     </item>
     <item>
       <title>RF Systems Engineer at Anduril Industries</title>
@@ -37,13 +79,6 @@
     </item>
     <item>
       <title>Tactical Network &amp; Mission Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117575007?gh_jid=5117575007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 21:51:46 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117575007?gh_jid=5117575007</guid>
-    </item>
-    <item>
-      <title>Tactical Network &amp; Mission Systems Engineer, Maritime at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5117576007?gh_jid=5117576007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 04 Aug 2026 21:51:46 +0000</pubDate>
@@ -51,10 +86,10 @@
     </item>
     <item>
       <title>Tactical Network &amp; Mission Systems Engineer, Maritime at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117562007?gh_jid=5117562007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 21:51:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117562007?gh_jid=5117562007</guid>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117575007?gh_jid=5117575007</link>
+      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 21:51:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117575007?gh_jid=5117575007</guid>
     </item>
     <item>
       <title>Tactical Network &amp; Mission Systems Engineer, Maritime at Anduril Industries</title>
@@ -62,6 +97,13 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Tue, 04 Aug 2026 21:51:45 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5058466007?gh_jid=5058466007</guid>
+    </item>
+    <item>
+      <title>Tactical Network &amp; Mission Systems Engineer, Maritime at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5117562007?gh_jid=5117562007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 21:51:45 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5117562007?gh_jid=5117562007</guid>
     </item>
     <item>
       <title>Software Engineer (L4) at Twilio</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Samsara in Remote - NYC. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 04 Aug 2026 20:38:20 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/7341443?gh_jid=7341443</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</link>
-      <description>New grad role at Samsara in Remote - US. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:38:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8036387?gh_jid=8036387</guid>
-    </item>
-    <item>
-      <title>Software Engineer I - New Grad, SF at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/8097343?gh_jid=8097343</link>
-      <description>New grad role at Samsara in San Francisco - SF9. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:38:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8097343?gh_jid=8097343</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Compute Infrastructure at Glean</title>
-      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4704106005</link>
-      <description>New grad role at Glean in Mountain View, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:29:19 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4704106005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cloud Infrastructure at Glean</title>
-      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4709327005</link>
-      <description>New grad role at Glean in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:27:35 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4709327005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cloud Deployment Infrastructure at Glean</title>
-      <link>https://job-boards.greenhouse.io/gleanwork/jobs/4711861005</link>
-      <description>New grad role at Glean in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:27:01 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gleanwork/jobs/4711861005</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Healthcare Integrations at Sierra</title>
-      <link>https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</link>
-      <description>New grad role at Sierra in San Francisco, CA, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 20:11:30 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</guid>
     </item>
   </channel>
 </rss>
