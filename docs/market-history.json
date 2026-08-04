@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T18:53:50.073996+00:00",
+    "last_updated": "2026-08-04T20:20:12.461115+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-06",
@@ -5647,25 +5647,25 @@
     },
     {
       "date": "2026-08-04",
-      "total_jobs": 1510,
+      "total_jobs": 1520,
       "categories": {
-        "data_ml": 156,
-        "software_engineering": 928,
-        "data_engineering": 32,
-        "infrastructure_sre": 128,
+        "software_engineering": 930,
+        "data_ml": 157,
+        "data_engineering": 34,
+        "infrastructure_sre": 127,
         "frontend": 12,
         "backend": 41,
         "product_management": 3,
-        "other": 103,
+        "other": 106,
         "security": 77,
-        "mobile": 9,
-        "hardware": 16,
-        "quant_finance": 5
+        "quant_finance": 6,
+        "hardware": 18,
+        "mobile": 9
       },
       "tiers": {
-        "unicorn": 701,
-        "other": 646,
-        "faang_plus": 163
+        "unicorn": 702,
+        "faang_plus": 164,
+        "other": 654
       },
       "top_companies": [
         {
@@ -5674,7 +5674,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 212
+          "jobs": 210
         },
         {
           "company": "OpenAI",
@@ -5682,36 +5682,36 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 41
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 35
+          "jobs": 45
         },
         {
           "company": "Waymo",
           "jobs": 34
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 31
+        },
+        {
           "company": "Accenture",
-          "jobs": 29
+          "jobs": 28
         },
         {
           "company": "xAI",
           "jobs": 26
         },
         {
-          "company": "Scale AI",
-          "jobs": 23
+          "company": "Twilio",
+          "jobs": 24
         },
         {
-          "company": "TikTok",
+          "company": "Scale AI",
           "jobs": 23
         }
       ],
-      "unique_companies": 216,
-      "avg_jobs_per_company": 6.99,
-      "timestamp": "2026-08-04T18:53:50.071361+00:00"
+      "unique_companies": 215,
+      "avg_jobs_per_company": 7.07,
+      "timestamp": "2026-08-04T20:20:12.459911+00:00"
     }
   ]
 }

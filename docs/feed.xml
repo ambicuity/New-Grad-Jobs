@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 18:53:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 20:20:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Healthcare Integrations at Sierra</title>
+      <link>https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</link>
+      <description>New grad role at Sierra in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 20:11:30 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/sierra/97ca0c70-f371-4167-9908-2adca3464b8d</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) Email at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8026207</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 20:00:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8026207</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L3) Email at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8026203</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 19:52:01 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8026203</guid>
+    </item>
+    <item>
+      <title>Data Scientist - Inference, Safety and Customer Care at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8675422002?gh_jid=8675422002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 04 Aug 2026 18:54:36 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8675422002?gh_jid=8675422002</guid>
+    </item>
     <item>
       <title>[2026] Data Scientist, Social  at Roblox</title>
       <link>https://careers.roblox.com/jobs/7463634?gh_jid=7463634</link>
@@ -78,13 +106,6 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</guid>
     </item>
     <item>
-      <title>Data Scientist - Inference, Safety and Customer Care at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8675422002?gh_jid=8675422002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 04 Aug 2026 17:56:30 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8675422002?gh_jid=8675422002</guid>
-    </item>
-    <item>
       <title>Business Systems Engineer, Oracle PTM at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002</link>
       <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
@@ -135,17 +156,17 @@
     </item>
     <item>
       <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 16:21:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
       <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 04 Aug 2026 16:21:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 16:21:44 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
     </item>
     <item>
       <title>Software Engineer - Modeling &amp; Simulation at Anduril Industries</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Wiz in Madrid, Spain; Remote - Spain. Category: Security Engineering</description>
       <pubDate>Tue, 04 Aug 2026 10:01:19 +0000</pubDate>
       <guid isPermaLink="true">https://www.wiz.io/careers/job/4702178006/:title?gh_jid=4702178006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4702177006/:title?gh_jid=4702177006</link>
-      <description>New grad role at Wiz in Remote - Ireland. Category: Security Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 10:01:18 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4702177006/:title?gh_jid=4702177006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4702176006/:title?gh_jid=4702176006</link>
-      <description>New grad role at Wiz in Paris, France; Remote - France. Category: Security Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 10:01:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4702176006/:title?gh_jid=4702176006</guid>
-    </item>
-    <item>
-      <title>Security Engineer - Product at Wiz</title>
-      <link>https://www.wiz.io/careers/job/4702174006/:title?gh_jid=4702174006</link>
-      <description>New grad role at Wiz in Berlin, Germany; Munich, Germany; Remote - Germany. Category: Security Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 10:01:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.wiz.io/careers/job/4702174006/:title?gh_jid=4702174006</guid>
     </item>
   </channel>
 </rss>
