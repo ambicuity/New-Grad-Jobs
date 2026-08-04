@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T08:07:11.913551+00:00",
+    "last_updated": "2026-08-04T10:52:33.057533+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-06",
@@ -5647,25 +5647,25 @@
     },
     {
       "date": "2026-08-04",
-      "total_jobs": 1492,
+      "total_jobs": 1511,
       "categories": {
-        "software_engineering": 899,
-        "data_ml": 145,
-        "security": 78,
-        "frontend": 11,
-        "other": 122,
-        "infrastructure_sre": 130,
-        "data_engineering": 27,
+        "software_engineering": 900,
+        "security": 79,
+        "data_ml": 157,
+        "frontend": 14,
+        "other": 123,
+        "infrastructure_sre": 132,
+        "backend": 40,
+        "mobile": 9,
+        "data_engineering": 26,
         "product_management": 3,
-        "mobile": 8,
-        "backend": 37,
-        "hardware": 27,
+        "hardware": 23,
         "quant_finance": 5
       },
       "tiers": {
-        "other": 648,
-        "unicorn": 706,
-        "faang_plus": 138
+        "unicorn": 707,
+        "other": 640,
+        "faang_plus": 164
       },
       "top_companies": [
         {
@@ -5689,6 +5689,10 @@
           "jobs": 31
         },
         {
+          "company": "TikTok",
+          "jobs": 30
+        },
+        {
           "company": "xAI",
           "jobs": 26
         },
@@ -5698,20 +5702,16 @@
         },
         {
           "company": "Leidos",
-          "jobs": 25
+          "jobs": 24
         },
         {
           "company": "Scale AI",
           "jobs": 23
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 6.35,
-      "timestamp": "2026-08-04T08:07:11.912638+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 6.57,
+      "timestamp": "2026-08-04T10:52:33.056403+00:00"
     }
   ]
 }
