@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T17:11:10.272589+00:00",
+    "last_updated": "2026-08-04T18:53:50.073996+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-06",
@@ -5647,25 +5647,25 @@
     },
     {
       "date": "2026-08-04",
-      "total_jobs": 1517,
+      "total_jobs": 1510,
       "categories": {
-        "infrastructure_sre": 133,
-        "data_engineering": 33,
+        "data_ml": 156,
+        "software_engineering": 928,
+        "data_engineering": 32,
+        "infrastructure_sre": 128,
         "frontend": 12,
-        "software_engineering": 910,
         "backend": 41,
         "product_management": 3,
-        "data_ml": 165,
-        "other": 109,
-        "security": 79,
-        "hardware": 18,
+        "other": 103,
+        "security": 77,
         "mobile": 9,
+        "hardware": 16,
         "quant_finance": 5
       },
       "tiers": {
-        "other": 643,
-        "unicorn": 708,
-        "faang_plus": 166
+        "unicorn": 701,
+        "other": 646,
+        "faang_plus": 163
       },
       "top_companies": [
         {
@@ -5674,7 +5674,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 213
+          "jobs": 212
         },
         {
           "company": "OpenAI",
@@ -5682,36 +5682,36 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 40
+          "jobs": 41
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 37
+          "jobs": 35
         },
         {
           "company": "Waymo",
           "jobs": 34
         },
         {
-          "company": "xAI",
-          "jobs": 26
+          "company": "Accenture",
+          "jobs": 29
         },
         {
-          "company": "TikTok",
-          "jobs": 24
+          "company": "xAI",
+          "jobs": 26
         },
         {
           "company": "Scale AI",
           "jobs": 23
         },
         {
-          "company": "Twilio",
-          "jobs": 22
+          "company": "TikTok",
+          "jobs": 23
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 6.68,
-      "timestamp": "2026-08-04T17:11:10.271404+00:00"
+      "unique_companies": 216,
+      "avg_jobs_per_company": 6.99,
+      "timestamp": "2026-08-04T18:53:50.071361+00:00"
     }
   ]
 }
