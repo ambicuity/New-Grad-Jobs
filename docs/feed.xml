@@ -5,21 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 10:52:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 12:53:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 04 Aug 2026 12:36:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 12:36:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 12:36:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 10:24:39 +0000</pubDate>
+      <pubDate>Tue, 04 Aug 2026 12:25:13 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
     </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
       <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 10:24:30 +0000</pubDate>
+      <pubDate>Tue, 04 Aug 2026 12:25:05 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8015792</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 11:27:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8015792</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 11:21:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7908785</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Query Integration at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8010102</link>
+      <description>New grad role at MongoDB in Austin; New York; New York City; San Francisco; United States. Category: Software Engineering</description>
+      <pubDate>Tue, 04 Aug 2026 10:58:09 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8010102</guid>
     </item>
     <item>
       <title>Software Engineer (L2) at Twilio</title>
@@ -314,48 +356,6 @@
       <description>New grad role at Airbnb in Remote - USA or Canada. Category: Software Engineering</description>
       <pubDate>Tue, 04 Aug 2026 01:35:32 +0000</pubDate>
       <guid isPermaLink="true">https://careers.airbnb.com/positions/8037090?gh_jid=8037090</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 04 Aug 2026 00:31:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 00:31:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 00:31:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946608</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Frontend Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 00:13:41 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946608</guid>
-    </item>
-    <item>
-      <title>Associate Application Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8048659</link>
-      <description>New grad role at Twilio in Remote - India. Category: Other</description>
-      <pubDate>Tue, 04 Aug 2026 00:11:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8048659</guid>
-    </item>
-    <item>
-      <title>Software Development Engineer (L3) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8102950</link>
-      <description>New grad role at Twilio in Remote - Colombia. Category: Software Engineering</description>
-      <pubDate>Tue, 04 Aug 2026 00:09:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8102950</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T10:52:33.057533+00:00",
+    "last_updated": "2026-08-04T12:53:59.029330+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-06",
@@ -5649,12 +5649,12 @@
       "date": "2026-08-04",
       "total_jobs": 1511,
       "categories": {
-        "software_engineering": 900,
+        "data_ml": 154,
+        "software_engineering": 902,
         "security": 79,
-        "data_ml": 157,
-        "frontend": 14,
+        "frontend": 13,
         "other": 123,
-        "infrastructure_sre": 132,
+        "infrastructure_sre": 134,
         "backend": 40,
         "mobile": 9,
         "data_engineering": 26,
@@ -5664,8 +5664,8 @@
       },
       "tiers": {
         "unicorn": 707,
-        "other": 640,
-        "faang_plus": 164
+        "other": 637,
+        "faang_plus": 167
       },
       "top_companies": [
         {
@@ -5690,28 +5690,28 @@
         },
         {
           "company": "TikTok",
-          "jobs": 30
+          "jobs": 29
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 27
         },
         {
           "company": "xAI",
           "jobs": 26
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 26
-        },
-        {
-          "company": "Leidos",
-          "jobs": 24
-        },
-        {
           "company": "Scale AI",
           "jobs": 23
+        },
+        {
+          "company": "Twilio",
+          "jobs": 22
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 6.57,
-      "timestamp": "2026-08-04T10:52:33.056403+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 6.6,
+      "timestamp": "2026-08-04T12:53:59.028142+00:00"
     }
   ]
 }
