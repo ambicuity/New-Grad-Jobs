@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T12:15:10.818314+00:00",
+    "last_updated": "2026-08-05T14:39:23.566126+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-07",
@@ -5660,25 +5660,25 @@
     },
     {
       "date": "2026-08-05",
-      "total_jobs": 1526,
+      "total_jobs": 1530,
       "categories": {
-        "software_engineering": 926,
-        "data_ml": 151,
-        "security": 76,
-        "other": 117,
-        "infrastructure_sre": 138,
-        "frontend": 14,
-        "hardware": 17,
+        "software_engineering": 930,
+        "frontend": 13,
+        "security": 75,
+        "data_ml": 153,
+        "other": 116,
         "data_engineering": 30,
-        "backend": 40,
+        "infrastructure_sre": 136,
+        "hardware": 19,
+        "quant_finance": 8,
+        "backend": 39,
         "product_management": 3,
-        "quant_finance": 6,
         "mobile": 8
       },
       "tiers": {
-        "other": 655,
-        "unicorn": 701,
-        "faang_plus": 170
+        "unicorn": 702,
+        "faang_plus": 173,
+        "other": 655
       },
       "top_companies": [
         {
@@ -5699,32 +5699,32 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 36
+          "jobs": 38
         },
         {
           "company": "Waymo",
           "jobs": 34
         },
         {
-          "company": "xAI",
-          "jobs": 26
+          "company": "Leidos",
+          "jobs": 30
         },
         {
-          "company": "Stripe",
-          "jobs": 25
+          "company": "xAI",
+          "jobs": 26
         },
         {
           "company": "Twilio",
           "jobs": 25
         },
         {
-          "company": "Scale AI",
-          "jobs": 23
+          "company": "Stripe",
+          "jobs": 25
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 6.63,
-      "timestamp": "2026-08-05T12:15:10.817075+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 6.77,
+      "timestamp": "2026-08-05T14:39:23.564979+00:00"
     }
   ]
 }
