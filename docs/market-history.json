@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T07:24:04.750896+00:00",
+    "last_updated": "2026-08-05T10:07:56.994597+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-07",
@@ -5660,25 +5660,25 @@
     },
     {
       "date": "2026-08-05",
-      "total_jobs": 1529,
+      "total_jobs": 1519,
       "categories": {
         "data_ml": 154,
-        "software_engineering": 929,
+        "software_engineering": 918,
         "security": 77,
-        "other": 117,
-        "frontend": 11,
-        "infrastructure_sre": 135,
-        "data_engineering": 34,
-        "backend": 39,
+        "other": 119,
+        "hardware": 16,
+        "infrastructure_sre": 136,
+        "frontend": 12,
+        "data_engineering": 30,
+        "backend": 40,
         "product_management": 3,
-        "quant_finance": 8,
-        "hardware": 14,
+        "quant_finance": 6,
         "mobile": 8
       },
       "tiers": {
         "unicorn": 700,
-        "other": 674,
-        "faang_plus": 155
+        "other": 668,
+        "faang_plus": 151
       },
       "top_companies": [
         {
@@ -5718,13 +5718,13 @@
           "jobs": 25
         },
         {
-          "company": "Accenture",
-          "jobs": 24
+          "company": "Scale AI",
+          "jobs": 23
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.59,
-      "timestamp": "2026-08-05T07:24:04.749710+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.52,
+      "timestamp": "2026-08-05T10:07:56.993510+00:00"
     }
   ]
 }
