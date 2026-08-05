@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T04:34:43.699264+00:00",
+    "last_updated": "2026-08-05T07:24:04.750896+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-07",
@@ -5660,25 +5660,25 @@
     },
     {
       "date": "2026-08-05",
-      "total_jobs": 1531,
+      "total_jobs": 1529,
       "categories": {
-        "security": 78,
-        "software_engineering": 931,
-        "data_ml": 152,
-        "other": 120,
+        "data_ml": 154,
+        "software_engineering": 929,
+        "security": 77,
+        "other": 117,
+        "frontend": 11,
+        "infrastructure_sre": 135,
         "data_engineering": 34,
-        "infrastructure_sre": 133,
-        "frontend": 12,
         "backend": 39,
         "product_management": 3,
         "quant_finance": 8,
-        "hardware": 13,
+        "hardware": 14,
         "mobile": 8
       },
       "tiers": {
-        "unicorn": 702,
-        "faang_plus": 157,
-        "other": 672
+        "unicorn": 700,
+        "other": 674,
+        "faang_plus": 155
       },
       "top_companies": [
         {
@@ -5687,7 +5687,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 208
+          "jobs": 209
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5703,11 +5703,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 33
-        },
-        {
-          "company": "Accenture",
-          "jobs": 28
+          "jobs": 34
         },
         {
           "company": "xAI",
@@ -5720,11 +5716,15 @@
         {
           "company": "Twilio",
           "jobs": 25
+        },
+        {
+          "company": "Accenture",
+          "jobs": 24
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 6.66,
-      "timestamp": "2026-08-05T04:34:43.698317+00:00"
+      "unique_companies": 232,
+      "avg_jobs_per_company": 6.59,
+      "timestamp": "2026-08-05T07:24:04.749710+00:00"
     }
   ]
 }
