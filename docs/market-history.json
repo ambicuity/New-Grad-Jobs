@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T19:53:08.166069+00:00",
+    "last_updated": "2026-08-05T20:59:40.582311+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-07",
@@ -5660,25 +5660,25 @@
     },
     {
       "date": "2026-08-05",
-      "total_jobs": 1526,
+      "total_jobs": 1523,
       "categories": {
-        "security": 74,
-        "infrastructure_sre": 135,
-        "other": 120,
-        "software_engineering": 929,
-        "data_ml": 154,
+        "software_engineering": 933,
+        "other": 116,
+        "data_engineering": 34,
+        "security": 73,
+        "infrastructure_sre": 131,
+        "data_ml": 155,
         "product_management": 3,
         "frontend": 11,
-        "data_engineering": 32,
         "hardware": 15,
-        "quant_finance": 7,
+        "quant_finance": 6,
         "backend": 38,
         "mobile": 8
       },
       "tiers": {
-        "unicorn": 705,
-        "other": 657,
-        "faang_plus": 164
+        "other": 654,
+        "unicorn": 704,
+        "faang_plus": 165
       },
       "top_companies": [
         {
@@ -5699,32 +5699,32 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 36
+          "jobs": 37
         },
         {
           "company": "Waymo",
           "jobs": 35
         },
         {
+          "company": "xAI",
+          "jobs": 29
+        },
+        {
           "company": "Twilio",
           "jobs": 26
         },
         {
-          "company": "xAI",
-          "jobs": 26
+          "company": "Leidos",
+          "jobs": 23
         },
         {
           "company": "Stripe",
-          "jobs": 24
-        },
-        {
-          "company": "Leidos",
           "jobs": 23
         }
       ],
-      "unique_companies": 224,
-      "avg_jobs_per_company": 6.81,
-      "timestamp": "2026-08-05T19:53:08.164973+00:00"
+      "unique_companies": 222,
+      "avg_jobs_per_company": 6.86,
+      "timestamp": "2026-08-05T20:59:40.579398+00:00"
     }
   ]
 }
