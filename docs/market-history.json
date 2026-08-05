@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T01:15:12.764293+00:00",
+    "last_updated": "2026-08-05T04:34:43.699264+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-07",
@@ -5660,34 +5660,34 @@
     },
     {
       "date": "2026-08-05",
-      "total_jobs": 1538,
+      "total_jobs": 1531,
       "categories": {
-        "software_engineering": 935,
-        "other": 121,
+        "security": 78,
+        "software_engineering": 931,
+        "data_ml": 152,
+        "other": 120,
         "data_engineering": 34,
-        "infrastructure_sre": 135,
-        "data_ml": 150,
-        "security": 77,
+        "infrastructure_sre": 133,
         "frontend": 12,
         "backend": 39,
         "product_management": 3,
         "quant_finance": 8,
-        "hardware": 16,
+        "hardware": 13,
         "mobile": 8
       },
       "tiers": {
-        "other": 679,
-        "faang_plus": 153,
-        "unicorn": 706
+        "unicorn": 702,
+        "faang_plus": 157,
+        "other": 672
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 242
+          "jobs": 238
         },
         {
           "company": "Anduril Industries",
-          "jobs": 212
+          "jobs": 208
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5703,11 +5703,11 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 27
+          "jobs": 33
         },
         {
-          "company": "Twilio",
-          "jobs": 26
+          "company": "Accenture",
+          "jobs": 28
         },
         {
           "company": "xAI",
@@ -5718,13 +5718,13 @@
           "jobs": 25
         },
         {
-          "company": "Leidos",
-          "jobs": 23
+          "company": "Twilio",
+          "jobs": 25
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.63,
-      "timestamp": "2026-08-05T01:15:12.763251+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 6.66,
+      "timestamp": "2026-08-05T04:34:43.698317+00:00"
     }
   ]
 }
