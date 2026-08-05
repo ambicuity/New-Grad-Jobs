@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 20:59:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 22:09:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, API Enterprise Controls at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/4c0a6cb6-d365-4e5b-bdff-c093d951026d</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 21:59:31 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/4c0a6cb6-d365-4e5b-bdff-c093d951026d</guid>
+    </item>
+    <item>
+      <title>Software Engineer, AI Platform at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/8064216</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Hybrid). Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 21:27:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/8064216</guid>
+    </item>
+    <item>
+      <title>Software Engineer, DevInfra at Mixpanel</title>
+      <link>https://job-boards.greenhouse.io/mixpanel/jobs/7941929</link>
+      <description>New grad role at Mixpanel in San Francisco, US (Remote). Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 21:27:17 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/mixpanel/jobs/7941929</guid>
+    </item>
+    <item>
+      <title>Software Engineer - X Developer Platform at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5204788007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 21:15:30 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5204788007</guid>
+    </item>
+    <item>
+      <title>Software Engineer - X Money at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5107958007</link>
+      <description>New grad role at xAI in Palo Alto, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 21:02:26 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5107958007</guid>
+    </item>
     <item>
       <title>Software Engineer - Voice Model at xAI</title>
       <link>https://job-boards.greenhouse.io/xai/jobs/5051966007</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Wed, 05 Aug 2026 13:43:48 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/6330377?gh_jid=6330377</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Metadata Core at Dropbox</title>
-      <link>https://jobs.dropbox.com/listing/7958409?gh_jid=7958409</link>
-      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 13:43:48 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7958409?gh_jid=7958409</guid>
-    </item>
-    <item>
-      <title>Data Scientist - Workflow Automation at Flatiron Health</title>
-      <link>https://flatiron.com/careers/open-positions/job?gh_jid=8027593</link>
-      <description>New grad role at Flatiron Health in NY office. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 05 Aug 2026 13:28:02 +0000</pubDate>
-      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=8027593</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 05 Aug 2026 12:25:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 12:25:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 12:25:05 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
   </channel>
 </rss>
