@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 14:39:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 16:23:55 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Undersea Dominance at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5171114007?gh_jid=5171114007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 16:13:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5171114007?gh_jid=5171114007</guid>
+    </item>
+    <item>
+      <title>Software Engineer-Platform Engineering (L3) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8026203</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 16:07:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8026203</guid>
+    </item>
+    <item>
+      <title>[2027] Software Engineer, Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8072244?gh_jid=8072244</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 16:03:38 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8072244?gh_jid=8072244</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer (Observability) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8108771</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 15:42:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8108771</guid>
+    </item>
     <item>
       <title>Software Engineer at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
@@ -30,17 +58,17 @@
     </item>
     <item>
       <title>Security Engineer, Incident Response at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
-      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 14:29:40 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Incident Response at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
       <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
       <pubDate>Wed, 05 Aug 2026 14:29:40 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
+      <pubDate>Wed, 05 Aug 2026 14:29:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
     </item>
     <item>
       <title>Machine Learning Engineer at Twilio</title>
@@ -281,18 +309,18 @@
       <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8089353</guid>
     </item>
     <item>
-      <title>New Grad, Well Delivery &amp; Land, June 2027 (Calgary) at Cenovus Energy</title>
-      <link>https://ca.indeed.com/viewjob?jk=e345eec821a01eb5</link>
-      <description>New grad role at Cenovus Energy in Calgary, AB, CA. Category: Other</description>
+      <title>GM - Data Scientist at VodafoneZiggo</title>
+      <link>https://in.indeed.com/viewjob?jk=1b5e4394b3ab8c58</link>
+      <description>New grad role at VodafoneZiggo in MH, IN. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e345eec821a01eb5</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1b5e4394b3ab8c58</guid>
     </item>
     <item>
-      <title>New Grad, Well Delivery Cost Control, June 2027 (Calgary) at Cenovus Energy</title>
-      <link>https://ca.indeed.com/viewjob?jk=8e92cd057f3e3b81</link>
-      <description>New grad role at Cenovus Energy in Calgary, AB, CA. Category: Other</description>
+      <title>Associate Technical Support Engineer at ChargePoint</title>
+      <link>https://in.indeed.com/viewjob?jk=fdf3d92905f91d31</link>
+      <description>New grad role at ChargePoint in KA, IN. Category: Other</description>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=8e92cd057f3e3b81</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=fdf3d92905f91d31</guid>
     </item>
     <item>
       <title>Data Engineer at MAERSK</title>
@@ -309,11 +337,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7adb7d5ea6ab803d</guid>
     </item>
     <item>
-      <title>AI/ML Engineer (Founding Team) at Unknown</title>
-      <link>https://in.indeed.com/viewjob?jk=7331cd4795babd52</link>
-      <description>New grad role at Unknown in UP, IN. Category: Data Science &amp; ML</description>
+      <title>New Grad, Well Delivery &amp; Land, June 2027 (Calgary) at Cenovus Energy</title>
+      <link>https://ca.indeed.com/viewjob?jk=e345eec821a01eb5</link>
+      <description>New grad role at Cenovus Energy in Calgary, AB, CA. Category: Other</description>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=7331cd4795babd52</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=e345eec821a01eb5</guid>
+    </item>
+    <item>
+      <title>New Grad, Well Delivery Cost Control, June 2027 (Calgary) at Cenovus Energy</title>
+      <link>https://ca.indeed.com/viewjob?jk=8e92cd057f3e3b81</link>
+      <description>New grad role at Cenovus Energy in Calgary, AB, CA. Category: Other</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=8e92cd057f3e3b81</guid>
     </item>
     <item>
       <title>Machine Learning Engineer at Adobe</title>
@@ -321,41 +356,6 @@
       <description>New grad role at Adobe in KA, IN. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=042d1f7ee80f36d9</guid>
-    </item>
-    <item>
-      <title>Engineer I Design Engineer at Copeland</title>
-      <link>https://in.indeed.com/viewjob?jk=87a4bdfee1d690ab</link>
-      <description>New grad role at Copeland in MH, IN. Category: Other</description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=87a4bdfee1d690ab</guid>
-    </item>
-    <item>
-      <title>Engineer I Software Development at Copeland</title>
-      <link>https://in.indeed.com/viewjob?jk=5512763572c013d8</link>
-      <description>New grad role at Copeland in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5512763572c013d8</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Cornerstone OnDemand</title>
-      <link>https://in.indeed.com/viewjob?jk=ffdb47497a30906a</link>
-      <description>New grad role at Cornerstone OnDemand in TS, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ffdb47497a30906a</guid>
-    </item>
-    <item>
-      <title>Software/Platform Engineer II at MetLife</title>
-      <link>https://in.indeed.com/viewjob?jk=a0c84d25dcde35e1</link>
-      <description>New grad role at MetLife in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a0c84d25dcde35e1</guid>
-    </item>
-    <item>
-      <title>Software / Platform Engineer II at MetLife</title>
-      <link>https://in.indeed.com/viewjob?jk=342e7160c7890dae</link>
-      <description>New grad role at MetLife in MH, IN. Category: Software Engineering</description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=342e7160c7890dae</guid>
     </item>
   </channel>
 </rss>
