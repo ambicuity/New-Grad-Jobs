@@ -5,14 +5,28 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2026 09:20:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 11:41:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>ML Infrastructure Engineer  at AppLovin</title>
       <link>https://boards.greenhouse.io/applovin/jobs/4655740006?gh_jid=4655740006</link>
       <description>New grad role at AppLovin in Palo Alto, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 06 Aug 2026 08:17:26 +0000</pubDate>
+      <pubDate>Thu, 06 Aug 2026 10:41:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/applovin/jobs/4655740006?gh_jid=4655740006</guid>
+    </item>
+    <item>
+      <title>Software Engineer I - Federated Intelligence Platform at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7823911003?gh_jid=7823911003</link>
+      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Software Engineering</description>
+      <pubDate>Thu, 06 Aug 2026 10:39:09 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7823911003?gh_jid=7823911003</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Safety and Customer Care AI at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 06 Aug 2026 09:34:36 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</guid>
     </item>
     <item>
       <title>Software Engineer II - Entity Intelligence at Abnormal Security</title>
@@ -69,13 +83,6 @@
       <description>New grad role at Samsara in Bengaluru - BLR1. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 06 Aug 2026 05:26:08 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8076414?gh_jid=8076414</guid>
-    </item>
-    <item>
-      <title>ML Software Engineer, Safety and Customer Care AI at Lyft</title>
-      <link>https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</link>
-      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 04:09:50 +0000</pubDate>
-      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</guid>
     </item>
     <item>
       <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 06 Aug 2026 00:26:58 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:26:56 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
   </channel>
 </rss>
