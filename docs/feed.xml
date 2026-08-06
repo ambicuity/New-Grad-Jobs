@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2026 03:49:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 06:22:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Safety Event Review Specialist - New Grad at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/8076414?gh_jid=8076414</link>
+      <description>New grad role at Samsara in Bengaluru - BLR1. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 06 Aug 2026 05:26:08 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8076414?gh_jid=8076414</guid>
+    </item>
+    <item>
+      <title>ML Software Engineer, Safety and Customer Care AI at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</link>
+      <description>New grad role at Lyft in Toronto, Canada. Category: Software Engineering</description>
+      <pubDate>Thu, 06 Aug 2026 04:09:50 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8684440002?gh_jid=8684440002</guid>
+    </item>
     <item>
       <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
       <link>https://careers.withwaymo.com/jobs?gh_jid=8107088</link>
@@ -302,6 +316,13 @@
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8662205002?gh_jid=8662205002</guid>
     </item>
     <item>
+      <title>Junior Executive Engineer at Deforay technology</title>
+      <link>https://in.indeed.com/viewjob?jk=5f39b31edd79a9ca</link>
+      <description>New grad role at Deforay technology in TN, IN. Category: Other</description>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5f39b31edd79a9ca</guid>
+    </item>
+    <item>
       <title>Entry-Level Full-Stack Software Engineer at Industry Software</title>
       <link>https://www.indeed.com/viewjob?jk=0d770ec75c717f18</link>
       <description>New grad role at Industry Software in Pasadena, CA, US. Category: Software Engineering</description>
@@ -335,27 +356,6 @@
       <description>New grad role at PayPal in San Jose, California, United States of America. Category: Software Engineering</description>
       <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0137192</guid>
-    </item>
-    <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0137191</link>
-      <description>New grad role at PayPal in San Jose, California, United States of America. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0137191</guid>
-    </item>
-    <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0137190</link>
-      <description>New grad role at PayPal in San Jose, California, United States of America. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer_R0137190</guid>
-    </item>
-    <item>
-      <title>Software Engineer 2 at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-2_R0137187</link>
-      <description>New grad role at PayPal in San Jose, California, United States of America. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Software-Engineer-2_R0137187</guid>
     </item>
   </channel>
 </rss>
