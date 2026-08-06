@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T11:41:32.493674+00:00",
+    "last_updated": "2026-08-06T13:23:33.804817+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-08",
@@ -5673,14 +5673,14 @@
     },
     {
       "date": "2026-08-06",
-      "total_jobs": 1532,
+      "total_jobs": 1537,
       "categories": {
-        "infrastructure_sre": 130,
-        "software_engineering": 932,
-        "data_ml": 163,
+        "data_ml": 161,
+        "software_engineering": 937,
+        "infrastructure_sre": 133,
         "backend": 36,
         "data_engineering": 31,
-        "other": 119,
+        "other": 118,
         "hardware": 21,
         "quant_finance": 6,
         "security": 73,
@@ -5689,9 +5689,9 @@
         "mobile": 8
       },
       "tiers": {
-        "other": 652,
-        "faang_plus": 175,
-        "unicorn": 705
+        "unicorn": 705,
+        "other": 656,
+        "faang_plus": 176
       },
       "top_companies": [
         {
@@ -5704,7 +5704,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 47
+          "jobs": 48
         },
         {
           "company": "OpenAI",
@@ -5735,9 +5735,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 223,
-      "avg_jobs_per_company": 6.87,
-      "timestamp": "2026-08-06T11:41:32.492519+00:00"
+      "unique_companies": 226,
+      "avg_jobs_per_company": 6.8,
+      "timestamp": "2026-08-06T13:23:33.803596+00:00"
     }
   ]
 }

@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2026 11:41:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 13:23:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 06 Aug 2026 12:29:34 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Thu, 06 Aug 2026 12:29:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Thu, 06 Aug 2026 12:29:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Tooling at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5205416007?gh_jid=5205416007</link>
+      <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 06 Aug 2026 12:19:41 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5205416007?gh_jid=5205416007</guid>
+    </item>
     <item>
       <title>ML Infrastructure Engineer  at AppLovin</title>
       <link>https://boards.greenhouse.io/applovin/jobs/4655740006?gh_jid=4655740006</link>
@@ -328,34 +356,6 @@
       <description>New grad role at Waymo in Bangalore, Karnataka, India. Category: Software Engineering</description>
       <pubDate>Thu, 06 Aug 2026 00:35:37 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8018436</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Trip Platform at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905678</link>
-      <description>New grad role at Waymo in Mountain View, CA, United States . Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:35:37 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905678</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Vehicle Platforms C++ at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7429873</link>
-      <description>New grad role at Waymo in Mountain View, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:35:37 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429873</guid>
-    </item>
-    <item>
-      <title>Systems Engineer, Perception at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7367785</link>
-      <description>New grad role at Waymo in Mountain View, CA, US; San Francisco, CA, US. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 00:35:37 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7367785</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
-      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 06 Aug 2026 00:26:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
     </item>
   </channel>
 </rss>
