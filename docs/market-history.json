@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T13:23:33.804817+00:00",
+    "last_updated": "2026-08-06T15:40:08.269723+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-08",
@@ -5673,25 +5673,25 @@
     },
     {
       "date": "2026-08-06",
-      "total_jobs": 1537,
+      "total_jobs": 1528,
       "categories": {
-        "data_ml": 161,
-        "software_engineering": 937,
-        "infrastructure_sre": 133,
-        "backend": 36,
-        "data_engineering": 31,
-        "other": 118,
-        "hardware": 21,
-        "quant_finance": 6,
-        "security": 73,
+        "infrastructure_sre": 141,
+        "data_ml": 160,
+        "data_engineering": 30,
+        "security": 72,
+        "software_engineering": 930,
         "product_management": 3,
-        "frontend": 10,
-        "mobile": 8
+        "frontend": 9,
+        "other": 114,
+        "mobile": 8,
+        "backend": 36,
+        "hardware": 19,
+        "quant_finance": 6
       },
       "tiers": {
-        "unicorn": 705,
         "other": 656,
-        "faang_plus": 176
+        "unicorn": 704,
+        "faang_plus": 168
       },
       "top_companies": [
         {
@@ -5703,41 +5703,41 @@
           "jobs": 210
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 48
-        },
-        {
           "company": "OpenAI",
           "jobs": 46
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 43
         },
         {
           "company": "Waymo",
           "jobs": 36
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 34
-        },
-        {
           "company": "xAI",
           "jobs": 30
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 28
+        },
+        {
           "company": "Boeing",
-          "jobs": 26
+          "jobs": 28
         },
         {
           "company": "Twilio",
-          "jobs": 26
+          "jobs": 25
         },
         {
-          "company": "Stripe",
-          "jobs": 23
+          "company": "Affirm",
+          "jobs": 24
         }
       ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 6.8,
-      "timestamp": "2026-08-06T13:23:33.803596+00:00"
+      "unique_companies": 223,
+      "avg_jobs_per_company": 6.85,
+      "timestamp": "2026-08-06T15:40:08.268550+00:00"
     }
   ]
 }
