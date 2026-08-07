@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T14:38:35.235370+00:00",
+    "last_updated": "2026-08-07T15:34:03.072707+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-09",
@@ -5686,15 +5686,15 @@
     },
     {
       "date": "2026-08-07",
-      "total_jobs": 1489,
+      "total_jobs": 1497,
       "categories": {
-        "security": 76,
+        "software_engineering": 919,
         "data_ml": 156,
-        "other": 113,
-        "software_engineering": 907,
+        "security": 76,
+        "other": 112,
         "frontend": 8,
-        "infrastructure_sre": 135,
-        "data_engineering": 27,
+        "infrastructure_sre": 134,
+        "data_engineering": 25,
         "mobile": 9,
         "backend": 33,
         "hardware": 15,
@@ -5702,18 +5702,18 @@
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 706,
-        "other": 618,
-        "faang_plus": 165
+        "other": 619,
+        "unicorn": 705,
+        "faang_plus": 173
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 239
+          "jobs": 238
         },
         {
           "company": "Anduril Industries",
-          "jobs": 210
+          "jobs": 211
         },
         {
           "company": "OpenAI",
@@ -5725,19 +5725,15 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 32
+          "jobs": 29
         },
         {
           "company": "Boeing",
-          "jobs": 30
+          "jobs": 29
         },
         {
           "company": "xAI",
           "jobs": 28
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 25
         },
         {
           "company": "Stripe",
@@ -5746,11 +5742,15 @@
         {
           "company": "Twilio",
           "jobs": 24
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 24
         }
       ],
-      "unique_companies": 227,
-      "avg_jobs_per_company": 6.56,
-      "timestamp": "2026-08-07T14:38:35.234310+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 6.54,
+      "timestamp": "2026-08-07T15:34:03.071593+00:00"
     }
   ]
 }
