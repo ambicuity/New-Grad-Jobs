@@ -3,33 +3,32 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1578,
-      "change_percent": 1.61
+      "change_percent": 1.54
     },
     "30_days": {
-      "total_jobs": 1645,
-      "change_percent": 5.92
+      "total_jobs": 1635,
+      "change_percent": 5.21
     }
   },
   "growing_categories": [
     "faang_plus",
-    "software_engineering",
-    "data_ml"
+    "data_ml",
+    "infrastructure_sre"
   ],
   "declining_categories": [
-    "other",
-    "infrastructure_sre",
-    "data_engineering"
+    "data_engineering",
+    "other"
   ],
-  "confidence": 78,
+  "confidence": 75,
   "insights": [
-    "The market shows a strong upward trajectory, with the current total (1553) significantly outpacing both the 7-day and 30-day moving averages, signaling sustained momentum.",
-    "Growth is heavily driven by FAANG+ and core software engineering roles, suggesting that top-tier firms are aggressively expanding their entry-level talent pipelines.",
-    "While 'other' categories are experiencing volatility, the concentration of growth in high-value technical sectors indicates a maturing market recovery for new graduates."
+    "The market is showing strong upward momentum, with the current total of 1554 significantly outperforming the 30-day average of 1454.",
+    "FAANG+ and Data/ML roles are driving the growth, suggesting a strategic shift toward high-value technical talent acquisition despite broader economic uncertainty.",
+    "While Data Engineering has seen a minor dip, the overall trend remains positive as hiring volume consistently breaks previous 30-day ceilings."
   ],
-  "generated_at": "2026-08-06T00:19:09.616090+00:00",
+  "generated_at": "2026-08-07T00:39:07.546922+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-08",
-    "end": "2026-08-06"
+    "start": "2026-05-09",
+    "end": "2026-08-07"
   }
 }
