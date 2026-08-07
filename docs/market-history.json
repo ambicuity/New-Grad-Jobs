@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T15:34:03.072707+00:00",
+    "last_updated": "2026-08-07T16:32:44.225873+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-09",
@@ -5686,50 +5686,50 @@
     },
     {
       "date": "2026-08-07",
-      "total_jobs": 1497,
+      "total_jobs": 1507,
       "categories": {
-        "software_engineering": 919,
-        "data_ml": 156,
-        "security": 76,
-        "other": 112,
+        "security": 77,
+        "software_engineering": 923,
+        "other": 120,
+        "data_ml": 154,
         "frontend": 8,
-        "infrastructure_sre": 134,
+        "infrastructure_sre": 132,
         "data_engineering": 25,
+        "hardware": 16,
         "mobile": 9,
         "backend": 33,
-        "hardware": 15,
         "quant_finance": 8,
         "product_management": 2
       },
       "tiers": {
-        "other": 619,
-        "unicorn": 705,
-        "faang_plus": 173
+        "faang_plus": 175,
+        "other": 627,
+        "unicorn": 705
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 238
+          "jobs": 239
         },
         {
           "company": "Anduril Industries",
-          "jobs": 211
+          "jobs": 212
         },
         {
           "company": "OpenAI",
-          "jobs": 49
+          "jobs": 48
         },
         {
           "company": "Waymo",
           "jobs": 36
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 29
+          "company": "Boeing",
+          "jobs": 31
         },
         {
-          "company": "Boeing",
-          "jobs": 29
+          "company": "Northrop Grumman",
+          "jobs": 28
         },
         {
           "company": "xAI",
@@ -5748,9 +5748,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.54,
-      "timestamp": "2026-08-07T15:34:03.071593+00:00"
+      "unique_companies": 233,
+      "avg_jobs_per_company": 6.47,
+      "timestamp": "2026-08-07T16:32:44.224703+00:00"
     }
   ]
 }
