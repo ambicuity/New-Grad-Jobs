@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 03:40:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 05:26:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Developer, Kubernetes Compute at Robinhood</title>
@@ -30,17 +30,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer, Core Maps at Lyft</title>
@@ -50,18 +50,46 @@
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8656826002?gh_jid=8656826002</guid>
     </item>
     <item>
-      <title>Jr Data Scientist at NAVA TECH LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=cb347d2cd6809503</link>
-      <description>New grad role at NAVA TECH LLC in Milwaukee, WI, US. Category: Data Science &amp; ML</description>
+      <title>Network Engineer I at Amentum</title>
+      <link>https://www.indeed.com/viewjob?jk=126e5967b03eee69</link>
+      <description>New grad role at Amentum in Waimea, HI, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cb347d2cd6809503</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=126e5967b03eee69</guid>
     </item>
     <item>
-      <title>Jr Data Engineer at NAVA TECH LLC</title>
-      <link>https://www.indeed.com/viewjob?jk=16fc4bc36aa6fe1e</link>
-      <description>New grad role at NAVA TECH LLC in Lansing, MI, US. Category: Data Engineering</description>
+      <title>RN - Nurse Residency, Beaumont - October 2026 Program at CHRISTUS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=659c3a75b91b0f2c</link>
+      <description>New grad role at CHRISTUS Health in Beaumont, TX, US. Category: Other</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=16fc4bc36aa6fe1e</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=659c3a75b91b0f2c</guid>
+    </item>
+    <item>
+      <title>Registered Nurse (RN) - Nurse Resident, December 2026, Family Beginnings, Mother Baby at Prisma Health</title>
+      <link>https://www.indeed.com/viewjob?jk=efafacf664f65bda</link>
+      <description>New grad role at Prisma Health in Columbia, SC, US. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=efafacf664f65bda</guid>
+    </item>
+    <item>
+      <title>Registered Nurse (RN) - Nurse Resident, December 2026, Murray Suite, Cardiac Telemetry at Prisma Health</title>
+      <link>https://www.indeed.com/viewjob?jk=4dd241cad00748cb</link>
+      <description>New grad role at Prisma Health in Columbia, SC, US. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4dd241cad00748cb</guid>
+    </item>
+    <item>
+      <title>Registered Nurse (RN) - Nurse Resident, December 2026, Intermediate ICU at Prisma Health</title>
+      <link>https://www.indeed.com/viewjob?jk=ac86c9774633b459</link>
+      <description>New grad role at Prisma Health in Sumter, SC, US. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ac86c9774633b459</guid>
+    </item>
+    <item>
+      <title>Registered Nurse (RN)–Nurse Resident, December 2026, Medical ICU at Prisma Health</title>
+      <link>https://www.indeed.com/viewjob?jk=9f2c95ddb84b7eb1</link>
+      <description>New grad role at Prisma Health in Seneca, SC, US. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9f2c95ddb84b7eb1</guid>
     </item>
     <item>
       <title>Systems Engineer at TransSight LLC</title>
@@ -69,6 +97,13 @@
       <description>New grad role at TransSight LLC in Los Angeles, CA, US. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=a90096361063e2d9</guid>
+    </item>
+    <item>
+      <title>Acute Care New Grad Registered Nurse at Mission Health</title>
+      <link>https://www.indeed.com/viewjob?jk=dbabf095d83bc149</link>
+      <description>New grad role at Mission Health in Spruce Pine, NC, US. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dbabf095d83bc149</guid>
     </item>
     <item>
       <title>Software Engineer, Feedback &amp; Learning Systems — Meta Factory at Adobe</title>
@@ -218,6 +253,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Irvine-California-United-States-of-America/Labeling-Process-Engineer-II---Irvine_R72422-1</guid>
     </item>
     <item>
+      <title>Engineer Mechanical (Level 2) at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Engineer-Mechanical--Level-2-_R10242994</link>
+      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Engineer-Mechanical--Level-2-_R10242994</guid>
+    </item>
+    <item>
       <title>Systems Engineer - Level 6 at Northrop Grumman</title>
       <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Systems-Engineer---Level-6_R10244171</link>
       <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Software Engineering</description>
@@ -314,48 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Maryland-Linthicum. Category: Other</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Linthicum/Manufacturing-Engineer---Level-2_R10243136</guid>
-    </item>
-    <item>
-      <title>2027 Associate Software Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2027-Associate-Software-Engineer_R10244219</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2027-Associate-Software-Engineer_R10244219</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - Level 2 or 3 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Systems-Engineer---Level-2-or-3--AHT-_R10244227</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Boulder. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Boulder/Systems-Engineer---Level-2-or-3--AHT-_R10244227</guid>
-    </item>
-    <item>
-      <title>Cyber Systems Engineer - Level 2 or 3 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Cyber-Systems-Engineer---Level-2-or-3--AHT-_R10244210</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Cyber-Systems-Engineer---Level-2-or-3--AHT-_R10244210</guid>
-    </item>
-    <item>
-      <title>Experienced Product Security Engineer (Software) ***Signing Bonus Potential*** at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Software-----Signing-Bonus-Potential---_JR2026518410-1</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Security Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Software-----Signing-Bonus-Potential---_JR2026518410-1</guid>
-    </item>
-    <item>
-      <title>Industrial Engineer (Associate or Mid-Level) at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Industrial-Engineer--Associate-or-Mid-Level-_JR2026518507-1</link>
-      <description>New grad role at Boeing in USA - North Charleston, SC. Category: Other</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---North-Charleston-SC/Industrial-Engineer--Associate-or-Mid-Level-_JR2026518507-1</guid>
-    </item>
-    <item>
-      <title>Experienced Product Security Engineer (Integration)***Signing Bonus Potential*** at Boeing</title>
-      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</link>
-      <description>New grad role at Boeing in USA - Berkeley, MO. Category: Security Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Berkeley-MO/Experienced-Product-Security-Engineer--Integration----Signing-Bonus-Potential---_JR2026496641</guid>
     </item>
   </channel>
 </rss>
