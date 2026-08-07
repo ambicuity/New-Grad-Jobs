@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 08:05:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 09:16:24 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Technical Producer II - Publishing Platform, Commerce at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/8049863?gh_jid=8049863</link>
+      <description>New grad role at Riot Games in Los Angeles, USA; Mercer Island, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 07 Aug 2026 08:49:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/8049863?gh_jid=8049863</guid>
+    </item>
     <item>
       <title>[2026] Data Scientist, Social  at Roblox</title>
       <link>https://careers.roblox.com/jobs/7463634?gh_jid=7463634</link>
@@ -79,17 +86,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 00:32:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer, Core Maps at Lyft</title>
@@ -120,18 +127,18 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=126e5967b03eee69</guid>
     </item>
     <item>
+      <title>Digital Marketing Trainee at TG Connect Media Services</title>
+      <link>https://in.indeed.com/viewjob?jk=233ec062baaf1254</link>
+      <description>New grad role at TG Connect Media Services in MH, IN. Category: Other</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=233ec062baaf1254</guid>
+    </item>
+    <item>
       <title>Research Scientist Graduate (Multimodal Interaction and World Model) - 2026 Start (PhD) at ByteDance</title>
       <link>https://www.indeed.com/viewjob?jk=e3208935241f918b</link>
       <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e3208935241f918b</guid>
-    </item>
-    <item>
-      <title>RN - Nurse Residency, Beaumont - October 2026 Program at CHRISTUS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=659c3a75b91b0f2c</link>
-      <description>New grad role at CHRISTUS Health in Beaumont, TX, US. Category: Other</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=659c3a75b91b0f2c</guid>
     </item>
     <item>
       <title>Utility Financial Engineer Trainee at Commonwealth of Pennsylvania</title>
@@ -174,6 +181,13 @@
       <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-287456</guid>
+    </item>
+    <item>
+      <title>Experienced AI-ML Engineer (Artificial Intelligence) at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-AI-ML-Engineer--Artificial-Intelligence-_JR2026512934-1</link>
+      <description>New grad role at Boeing in IND - Bangalore, India. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-AI-ML-Engineer--Artificial-Intelligence-_JR2026512934-1</guid>
     </item>
     <item>
       <title>Software Engineer, Silicon Design Methodology at OpenAI</title>
@@ -342,20 +356,6 @@
       <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 06 Aug 2026 19:25:21 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/7f299784-2c75-4d73-99e5-1e5043ec7b48</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Vulnerability Management at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=8089353</link>
-      <description>New grad role at Stripe in US - Remote. Category: Software Engineering</description>
-      <pubDate>Thu, 06 Aug 2026 19:22:52 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8089353</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Cloudflare</title>
-      <link>https://boards.greenhouse.io/cloudflare/jobs/8002300?gh_jid=8002300</link>
-      <description>New grad role at Cloudflare in In-Office. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 06 Aug 2026 19:17:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/cloudflare/jobs/8002300?gh_jid=8002300</guid>
     </item>
   </channel>
 </rss>
