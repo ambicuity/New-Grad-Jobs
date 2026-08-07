@@ -32,11 +32,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1513<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1516<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->924<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->928<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->34<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
@@ -47,14 +47,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->6<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->13<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->128<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->127<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,513** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,516** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | xAI | Exceptional Software Engineer | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4956028007) |
 | xAI | IT Systems Engineer | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4871633007) |
 
-**[View all 924 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 928 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -236,8 +236,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
 | Scout AI | Junior Firmware Engineer | Sunnyvale, CA | 2026-07-24 | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4643333008) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
+| SpaceX | Physical Design Engineer II (Silicon Engineering) | Palo Alto, CA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Austin, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002) |
-| SpaceX | Physical Design Engineer II (Silicon Engineering) | Irvine, CA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002) |
 
 **[View all 13 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -252,13 +252,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 | Swastik Technopack Private Limited | Trainee Design Engineer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=611de1004805bbb5) |
 | Flex | Junior Engineer – Engineering Change Management | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=3ad62737222bb66a) |
-| Carewest - Innovative Health Care | Occupational Therapist I (2026-0686) | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=3b78570c644b13d0) |
-| Carewest - Innovative Health Care | Occupational Therapist I (2026-0686) | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=ead569695fb591a0) |
-| TecnoPan | Junior Design Engineer | Mississauga, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=4ded6ce15da3d452) |
-| Kerrobert Fuels Inc. | Junior Process Engineer | Kerrobert, SK, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=77aaa208071f9cb4) |
 | University of Alabama | Chemical and Biological Engineering - Associate Professor | Tuscaloosa, AL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=304dbb1f6bd596dc) |
+| Prisma Health | Registered Nurse- (RN) Resident, December 2026, Medical Telemetry | Maryville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8e31c8993c92134f) |
+| Prisma Health | Registered Nurse (RN) - Nurse Resident, September/October 2026, Surgical Trauma Nursing | Columbia, SC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=6aac7e8db407086c) |
+| Prisma Health | Registered Nurse (RN)-Nurse Resident, December 2026, Medical Surgical | Maryville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=820551e888343bb5) |
+| Prisma Health | Licensed Practical Nurse (LPN) Resident, December 2026, Neuroscience Medical/Surgical | Maryville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3e8354db39328e0c) |
 
-**[View all 128 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 127 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -371,4 +371,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-07 23:10:01 UTC*
+*Last updated: 2026-08-07 23:50:32 UTC*
