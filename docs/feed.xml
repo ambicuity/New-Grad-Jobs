@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 20:14:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 21:04:12 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Data Platform at Verkada</title>
+      <link>https://job-boards.greenhouse.io/verkada/jobs/4129304007</link>
+      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 20:46:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4129304007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Infrastructure Security at Notion</title>
+      <link>https://jobs.ashbyhq.com/notion/e3d8dc06-da05-4e9d-a143-2e9c51fa3d51</link>
+      <description>New grad role at Notion in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 20:33:55 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/notion/e3d8dc06-da05-4e9d-a143-2e9c51fa3d51</guid>
+    </item>
+    <item>
+      <title>Applied AI Data Scientist - Product AI Team at Flatiron Health</title>
+      <link>https://flatiron.com/careers/open-positions/job?gh_jid=8010590</link>
+      <description>New grad role at Flatiron Health in NY office. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 07 Aug 2026 20:25:31 +0000</pubDate>
+      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=8010590</guid>
+    </item>
     <item>
       <title>Software Engineer - ML Infrastructure at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Twilio in Remote - Colombia. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 14:30:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8102950</guid>
-    </item>
-    <item>
-      <title>DevOps Engineer (Observability) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8108771</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 14:30:04 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8108771</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 14:19:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 14:19:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</guid>
     </item>
   </channel>
 </rss>
