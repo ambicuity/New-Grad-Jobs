@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 09:57:47 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 10:35:15 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer I - Message Security Products at Abnormal Security</title>
@@ -132,13 +132,6 @@
       <description>New grad role at xAI in Austin, Texas; New York, New York; Palo Alto, California; Washington, D.C.. Category: Security Engineering</description>
       <pubDate>Fri, 07 Aug 2026 22:17:30 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
-    </item>
-    <item>
-      <title>Electrical Systems Engineer, C2 Integration at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5180570007?gh_jid=5180570007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 22:11:05 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5180570007?gh_jid=5180570007</guid>
     </item>
     <item>
       <title>Software Engineer - Kernels/CUDA (C++) at xAI</title>
@@ -323,13 +316,6 @@
       <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=8010590</guid>
     </item>
     <item>
-      <title>Software Engineer - ML Infrastructure at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 19:31:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007</guid>
-    </item>
-    <item>
       <title>Software Developer, Ops Platform and Fraud Investigations at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/7737164?t=gh_src=&amp;gh_jid=7737164</link>
       <description>New grad role at Robinhood in Toronto, Canada. Category: Software Engineering</description>
@@ -356,6 +342,20 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 18:37:42 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Ads Platform at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 18:36:18 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Model Platform at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7836516003?gh_jid=7836516003</link>
+      <description>New grad role at Abnormal Security in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Fri, 07 Aug 2026 18:36:17 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7836516003?gh_jid=7836516003</guid>
     </item>
   </channel>
 </rss>
