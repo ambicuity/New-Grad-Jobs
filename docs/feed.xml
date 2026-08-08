@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 18:05:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 18:57:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Data Engineering at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 18:36:34 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
+    </item>
+    <item>
+      <title>[2027] Software Engineer, Early Career at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8072244?gh_jid=8072244</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 18:34:20 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8072244?gh_jid=8072244</guid>
+    </item>
+    <item>
+      <title>Software Engineer, User Frameworks at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8080438?gh_jid=8080438</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 18:32:24 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8080438?gh_jid=8080438</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Communications at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8083944?gh_jid=8083944</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 18:31:58 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8083944?gh_jid=8083944</guid>
+    </item>
     <item>
       <title>Applied Scientist, PhD New Grad at SentiLink</title>
       <link>https://jobs.ashbyhq.com/sentilink/cbe2397c-5e7a-4649-a8c0-07e5d1204e82</link>
@@ -204,13 +232,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=54280d10d0b6844b</guid>
     </item>
     <item>
-      <title>[2027] Software Engineer, Early Career at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8072244?gh_jid=8072244</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 22:46:19 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8072244?gh_jid=8072244</guid>
-    </item>
-    <item>
       <title>Technical Support Engineer - University Graduate 2026 at Verkada</title>
       <link>https://job-boards.greenhouse.io/verkada/jobs/5172974007</link>
       <description>New grad role at Verkada in New York City, NY United States. Category: Infrastructure &amp; SRE</description>
@@ -335,27 +356,6 @@
       <description>New grad role at xAI in Memphis, Tennessee. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5207067007</guid>
-    </item>
-    <item>
-      <title>Network Security Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
-      <description>New grad role at xAI in Austin, Texas; New York, New York; Palo Alto, California; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Data Platform at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4803862007</link>
-      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803862007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Evals at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5188230007</link>
-      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5188230007</guid>
     </item>
   </channel>
 </rss>
