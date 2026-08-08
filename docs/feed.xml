@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 02:38:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 03:59:38 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer I - Message Security Products at Abnormal Security</title>
@@ -30,17 +30,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>Software Engineer II at Mastercard</title>
@@ -69,6 +69,13 @@
       <description>New grad role at Autodesk in Pune, IND. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Pune-IND/Software-Engineer_26WD96707-1</guid>
+    </item>
+    <item>
+      <title>Software Developer at Booz Allen Hamilton</title>
+      <link>https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Software-Developer--Senior_R0244424</link>
+      <description>New grad role at Booz Allen Hamilton in Arlington, VA. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Software-Developer--Senior_R0244424</guid>
     </item>
     <item>
       <title>Data Scientist, Mid at Booz Allen Hamilton</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-San Diego. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/Network-Engineer_R10244355</guid>
-    </item>
-    <item>
-      <title>Space TS/SCI Modeling and Simulation Systems Engineer (T2/T3) (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/Space-TS-SCI-Modeling-and-Simulation-Systems-Engineer--T2-T3---AHT-_R10244445-1</link>
-      <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/Space-TS-SCI-Modeling-and-Simulation-Systems-Engineer--T2-T3---AHT-_R10244445-1</guid>
     </item>
   </channel>
 </rss>
