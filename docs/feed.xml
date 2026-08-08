@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 00:39:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 02:38:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer I - Message Security Products at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7816935003?gh_jid=7816935003</link>
+      <description>New grad role at Abnormal Security in Remote - Singapore. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 08 Aug 2026 02:11:09 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7816935003?gh_jid=7816935003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II - Product Data Gateway at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7694596003?gh_jid=7694596003</link>
+      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 02:10:08 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7694596003?gh_jid=7694596003</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/Space-TS-SCI-Modeling-and-Simulation-Systems-Engineer--T2-T3---AHT-_R10244445-1</guid>
-    </item>
-    <item>
-      <title>2026 Associate Industrial Engineer-Goleta CA at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Goleta/XMLNAME-2026-Associate-Industrial-Engineer-Goleta-CA_R10244435</link>
-      <description>New grad role at Northrop Grumman in United States-California-Goleta. Category: Other</description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Goleta/XMLNAME-2026-Associate-Industrial-Engineer-Goleta-CA_R10244435</guid>
-    </item>
-    <item>
-      <title>2027 Associate Electromechanical Engineer/Electromechanical Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2027-Associate-Electromechanical-Engineer-Electromechanical-Engineer_R10244429</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2027-Associate-Electromechanical-Engineer-Electromechanical-Engineer_R10244429</guid>
     </item>
   </channel>
 </rss>
