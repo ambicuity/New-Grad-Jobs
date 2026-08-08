@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 18:57:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 19:31:41 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5200265007?gh_jid=5200265007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 19:08:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5200265007?gh_jid=5200265007</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
       <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
@@ -114,17 +121,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5193037007</guid>
-    </item>
-    <item>
-      <title>Network Engineer at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/5207067007</link>
-      <description>New grad role at xAI in Memphis, Tennessee. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5207067007</guid>
     </item>
   </channel>
 </rss>
