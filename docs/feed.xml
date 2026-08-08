@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 11:07:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 11:43:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Site Reliability Engineer at Anduril Industries</title>
@@ -37,17 +37,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -107,17 +107,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Campus Services Supervisor at British Columbia Institute of Technology</title>
