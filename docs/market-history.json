@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-08T07:38:06.280018+00:00",
+    "last_updated": "2026-08-08T08:25:03.396969+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-10",
@@ -5699,25 +5699,25 @@
     },
     {
       "date": "2026-08-08",
-      "total_jobs": 1350,
+      "total_jobs": 1483,
       "categories": {
-        "data_ml": 138,
-        "software_engineering": 853,
-        "infrastructure_sre": 116,
-        "security": 69,
-        "other": 83,
+        "data_ml": 150,
+        "software_engineering": 912,
+        "infrastructure_sre": 134,
+        "security": 74,
+        "other": 122,
         "frontend": 7,
-        "data_engineering": 22,
         "backend": 35,
-        "hardware": 10,
-        "quant_finance": 6,
+        "data_engineering": 22,
+        "hardware": 11,
         "mobile": 9,
+        "quant_finance": 5,
         "product_management": 2
       },
       "tiers": {
-        "other": 573,
+        "other": 624,
         "unicorn": 703,
-        "faang_plus": 74
+        "faang_plus": 156
       },
       "top_companies": [
         {
@@ -5733,8 +5733,16 @@
           "jobs": 47
         },
         {
+          "company": "Northrop Grumman",
+          "jobs": 39
+        },
+        {
           "company": "Waymo",
           "jobs": 36
+        },
+        {
+          "company": "Boeing",
+          "jobs": 33
         },
         {
           "company": "xAI",
@@ -5751,19 +5759,11 @@
         {
           "company": "Affirm",
           "jobs": 24
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 23
-        },
-        {
-          "company": "Anthropic",
-          "jobs": 20
         }
       ],
-      "unique_companies": 222,
-      "avg_jobs_per_company": 6.08,
-      "timestamp": "2026-08-08T07:38:06.277978+00:00"
+      "unique_companies": 229,
+      "avg_jobs_per_company": 6.48,
+      "timestamp": "2026-08-08T08:25:03.396036+00:00"
     }
   ]
 }
