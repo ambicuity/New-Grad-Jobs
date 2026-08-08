@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 17:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 18:05:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Applied Scientist, PhD New Grad at SentiLink</title>
@@ -44,17 +44,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 12:26:36 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 12:26:36 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 12:26:36 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Site Reliability Engineer at Anduril Industries</title>
@@ -86,17 +86,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
+      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 10:36:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -167,6 +167,20 @@
       <description>New grad role at British Columbia Institute of Technology in Burnaby, BC, CA. Category: Other</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f</guid>
+    </item>
+    <item>
+      <title>Experienced AI &amp; Machine Learning Engineer at USAA</title>
+      <link>https://www.indeed.com/viewjob?jk=642d185968815468</link>
+      <description>New grad role at USAA in San Antonio, TX, US. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=642d185968815468</guid>
+    </item>
+    <item>
+      <title>Software Developer – APIs &amp; Data Services at USAA</title>
+      <link>https://www.indeed.com/viewjob?jk=c8daf31b40b45323</link>
+      <description>New grad role at USAA in San Antonio, TX, US. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c8daf31b40b45323</guid>
     </item>
     <item>
       <title>Jr. Client/Systems Engineer at Vector Solutions</title>
@@ -342,20 +356,6 @@
       <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5188230007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Networking Software and Services at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4946696007</link>
-      <description>New grad role at xAI in Palo Alto, California. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4946696007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Observability at xAI</title>
-      <link>https://job-boards.greenhouse.io/xai/jobs/4803905007</link>
-      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 22:02:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4803905007</guid>
     </item>
   </channel>
 </rss>
