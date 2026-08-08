@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1493<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1495<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -47,14 +47,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->14<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->118<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->120<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,493** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,495** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -227,9 +227,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| RTX | Sotware Engineer II | Cambridge, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Raytheon | Power Electronics Engineer II | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ee60057a7ccd664d) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (2027) | Minneapolis, MN, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=165130a3666cf3f7) |
+| RTX | Sotware Engineer II | Cambridge, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | United States-Virginia-Dulles | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/XMLNAME-2026-Associate-I-T-RF-Engineer---Dulles-VA_R10244551) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | Dulles, VA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=c23b0aefa6305067) |
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
@@ -255,9 +255,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Twilio | Associate Application Engineer | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 | Swastik Technopack Private Limited | Trainee Design Engineer | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=611de1004805bbb5) |
 | Flex | Junior Engineer – Engineering Change Management | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=3ad62737222bb66a) |
-| Rysco Corrosion Services | Junior Mechanical Design Engineer | Red Deer, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=272ac76e6652e260) |
+| SAF-HOLLAND | Engineer I | Muskegon, MI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=aed74f65d7877f66) |
 
-**[View all 118 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-08 19:31:40 UTC*
+*Last updated: 2026-08-08 20:01:09 UTC*
