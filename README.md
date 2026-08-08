@@ -32,11 +32,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1493<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1492<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->921<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->920<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,493** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,492** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Production Software Engineer | Lexington, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193738007?gh_jid=5193738007) |
 | Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007) |
 
-**[View all 921 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 920 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -255,7 +255,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Twilio | Associate Application Engineer | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 | Swastik Technopack Private Limited | Trainee Design Engineer | MH, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=611de1004805bbb5) |
 | Flex | Junior Engineer – Engineering Change Management | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=3ad62737222bb66a) |
-| Rysco Corrosion Services | Junior Mechanical Design Engineer | Red Deer, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=272ac76e6652e260) |
+| OCAD University | Tier II, Canada Research Chair: Artificial Intelligence and Creativity | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=c4871fe9c7164826) |
 
 **[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-08 20:42:26 UTC*
+*Last updated: 2026-08-08 21:09:23 UTC*
