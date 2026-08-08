@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 09:12:29 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 09:57:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer I - Message Security Products at Abnormal Security</title>
@@ -30,17 +30,31 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 08 Aug 2026 00:28:24 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+      <title>Campus Services Supervisor at British Columbia Institute of Technology</title>
+      <link>https://ca.indeed.com/viewjob?jk=dfd0442b48a45f1a</link>
+      <description>New grad role at British Columbia Institute of Technology in Burnaby, BC, CA. Category: Other</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=dfd0442b48a45f1a</guid>
+    </item>
+    <item>
+      <title>Campus &amp; Sales Coordinator at British Columbia Institute of Technology</title>
+      <link>https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f</link>
+      <description>New grad role at British Columbia Institute of Technology in Burnaby, BC, CA. Category: Other</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f</guid>
     </item>
     <item>
       <title>[2027] Software Engineer, Early Career at Roblox</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Fri, 07 Aug 2026 18:37:42 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Ads Platform at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8047815?gh_jid=8047815</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 18:36:18 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8047815?gh_jid=8047815</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Model Platform at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7836516003?gh_jid=7836516003</link>
-      <description>New grad role at Abnormal Security in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Fri, 07 Aug 2026 18:36:17 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7836516003?gh_jid=7836516003</guid>
     </item>
   </channel>
 </rss>
