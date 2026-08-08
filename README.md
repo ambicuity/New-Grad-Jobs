@@ -227,9 +227,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Raytheon | Power Electronics Engineer II | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ee60057a7ccd664d) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (2027) | Minneapolis, MN, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=165130a3666cf3f7) |
 | RTX | Sotware Engineer II | Cambridge, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
-| Raytheon | Power Electronics Engineer II | Tucson, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ee60057a7ccd664d) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | United States-Virginia-Dulles | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/XMLNAME-2026-Associate-I-T-RF-Engineer---Dulles-VA_R10244551) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | Dulles, VA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=c23b0aefa6305067) |
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-08 22:53:13 UTC*
+*Last updated: 2026-08-08 23:18:52 UTC*
