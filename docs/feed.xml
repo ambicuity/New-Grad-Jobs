@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 17:11:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 17:50:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -323,6 +323,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b2dc47f6430c971e</guid>
     </item>
     <item>
+      <title>Associate Engineer - QA Automation at Eaton</title>
+      <link>https://in.indeed.com/viewjob?jk=8468015e48942253</link>
+      <description>New grad role at Eaton in MH, IN. Category: Hardware Engineering</description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8468015e48942253</guid>
+    </item>
+    <item>
       <title>Network Engineer - TS/SCI Required at General Dynamics Information Technology</title>
       <link>https://www.indeed.com/viewjob?jk=68b74bb814855e8b</link>
       <description>New grad role at General Dynamics Information Technology in Arlington, VA, US. Category: Infrastructure &amp; SRE</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Leidos in Washington, DC. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Washington-DC/Field-Base-Communications-Network-Engineer_R-00188572-1</guid>
-    </item>
-    <item>
-      <title>Field/Base Communications Network Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Jacksonville-FL/Field-Base-Communications-Network-Engineer_R-00188580-1</link>
-      <description>New grad role at Leidos in Jacksonville, FL. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Jacksonville-FL/Field-Base-Communications-Network-Engineer_R-00188580-1</guid>
     </item>
   </channel>
 </rss>
