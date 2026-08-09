@@ -88,3 +88,12 @@ bash .github/create-labels.sh
 |-------|-------|-------------|
 | `automated pr` | `#0e8a16` | PR created by an automation (Dependabot, Actions bot) |
 | `ci-cd` | `#bfdadc` | Changes to GitHub Actions workflows or CI configuration |
+
+### 🤝 Community & Sponsorship Labels
+| Label | Color | Description |
+|-------|-------|-------------|
+| `community` | `#d93f0b` | Community features: sponsors, hall-of-fame |
+| `sponsorship: placement` | `#5319e7` | Sponsorship or paid README CTA placement proposals |
+
+> Note: `sponsorship: placement` is about **funding this repository**. It is unrelated to
+> `visa: sponsorship-available`, which is about a company sponsoring work visas — don't mix them up.

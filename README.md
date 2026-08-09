@@ -21,6 +21,28 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 ---
 
+## **Website & Autofill Extension**
+
+[![Apply to jobs in seconds with Zapply.](apply-faster-banner.png)](https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity)
+
+Explore Zapply’s website and check out:
+- Our Chrome extension, which autofills job applications in seconds.
+- A dedicated job board featuring the latest openings across various roles.
+- User accounts with multiple profiles for different resume types and roles.
+- Job application tracking with streaks and commitment awards.
+
+Experience an advanced career journey with us! 🚀
+
+<p align="center">
+<a href="https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity">
+<img src="get-started-button.png" alt="Visit Zapply" width="500">
+</a>
+</p>
+
+<p align="right"><sub>Sponsored by Zapply</sub></p>
+
+---
+
 ## Sponsored by [Tailr](https://www.tailr.uk)
 
 <a href="https://www.tailr.uk">
@@ -354,7 +376,9 @@ This project is **free and solo-maintained**. If it helps your job search, here'
 - **Star this repository** and share it with other new grads
 - **[Contribute](CONTRIBUTING.md)** a missing job or a fix
 
-Our sponsor **[Tailr](https://www.tailr.uk)** helps cover the running costs.
+Our sponsors **[Tailr](https://www.tailr.uk)** and **[Zapply](https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity)** help cover the running costs.
+
+Want your product in front of new grads? Open a [sponsorship / CTA placement proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=sponsor_placement.yml) — we publish what we do and don't accept up front.
 
 ---
 
