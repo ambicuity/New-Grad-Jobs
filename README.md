@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1490<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1489<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -41,7 +41,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->75<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->154<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->153<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->20<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->135<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,490** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,489** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -62,16 +62,16 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007) |
+| Anduril Industries | Software Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5064165007?gh_jid=5064165007) |
+| Anduril Industries | Software Engineer, Game Development | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007) |
+| Anduril Industries | Software Engineer, Game Development | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007) |
+| Anduril Industries | Fuel Systems Engineer, Air Vehicles | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007) |
+| Anduril Industries | Software Engineer (Active Clearance), Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4961005007?gh_jid=4961005007) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
 | Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
 | Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
 | Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
-| Anduril Industries | Fuel Systems Engineer, Air Vehicles | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5200265007?gh_jid=5200265007) |
-| Anduril Industries | Site Reliability Engineer | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5196517007?gh_jid=5196517007) |
-| Anduril Industries | Production Software Engineer | Lexington, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193738007?gh_jid=5193738007) |
-| Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007) |
 
 **[View all 915 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -134,8 +134,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | xAI | Application Security Engineer | Palo Alto, California | 1 day ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
 | Abnormal Security | Application Security Engineer II | Remote - USA | 1 day ago | [Apply](https://abnormal.ai/careers/jobs/7832743003?gh_jid=7832743003) |
 | Stripe | Client Platform Security Engineer | New York, New York | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
-| Twilio | Security Engineer, Incident Response | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
+| Twilio | Security Engineer, Incident Response | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Cloudflare | Product Security Engineer | In-Office | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/8053116?gh_jid=8053116) |
 | Stripe | Software Engineer, Product Security Data Platforms | Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=8039800) |
@@ -149,18 +149,18 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
+| Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | SentiLink | Applied Scientist, PhD New Grad | United States | Today | [Apply](https://jobs.ashbyhq.com/sentilink/cbe2397c-5e7a-4649-a8c0-07e5d1204e82) |
 | SentiLink | Research Scientist, PhD New Grad | United States | Today | [Apply](https://jobs.ashbyhq.com/sentilink/f9a47314-c48a-4053-a113-6974b211559f) |
 | SentiLink | Quantitative Researcher, PhD New Grad | United States | Today | [Apply](https://jobs.ashbyhq.com/sentilink/4e28d1a3-75a8-4031-85eb-82b7847d365a) |
 | SentiLink | Quantitative Scientist, PhD New Grad | United States | Today | [Apply](https://jobs.ashbyhq.com/sentilink/a4a5f890-4ecd-4e76-86db-e7b3e18eb6b2) |
-| Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
-| Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Abnormal Security | Machine Learning Engineer I - Message Security Products | Remote - Singapore | 1 day ago | [Apply](https://abnormal.ai/careers/jobs/7816935003?gh_jid=7816935003) |
 | Flatiron Health | Applied AI Data Scientist - Product AI Team | NY office | 1 day ago | [Apply](https://flatiron.com/careers/open-positions/job?gh_jid=8010590) |
 | Anduril Industries | Early Career Firmware Engineer | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007) |
 
-**[View all 154 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 153 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 09:03:55 UTC*
+*Last updated: 2026-08-09 09:55:26 UTC*
