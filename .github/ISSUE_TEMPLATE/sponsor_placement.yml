@@ -29,9 +29,11 @@ body:
         Opening this issue starts a conversation — it is **not** an accepted placement.
         Nothing is live until a PR is merged and both sides have signed a written agreement.
 
-        > 🔒 **This issue is public and permanent.** Do not post contract terms, pricing you
-        > consider confidential, invoices, payment details, or a personal email address here —
-        > it gets indexed and copied into every fork. Take those to `contact@riteshrana.engineer`.
+        > 🔒 **This issue is public, and you can't reliably take it back.** Do not post contract
+        > terms, pricing you consider confidential, invoices, payment details, or a personal email
+        > address here — public issues get indexed by search engines, quoted in replies, and picked
+        > up by archives and scrapers, so deleting the text later does not unpublish it.
+        > Take anything sensitive to `contact@riteshrana.engineer`.
 
   - type: input
     id: product
@@ -92,7 +94,8 @@ body:
     attributes:
       label: "Public contact (optional)"
       description: |
-        **Anything you type here becomes part of a public issue that is indexed and lives in every fork.**
+        **Anything you type here becomes part of a public issue body that search engines index
+        and archives keep.**
         Leave this blank if you'd rather not publish a contact — we reply on the issue thread, and you can
         take the rest to `contact@riteshrana.engineer` privately.
 
