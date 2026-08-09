@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 02:55:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 04:16:43 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -211,6 +211,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dcc5bfb68874537f</guid>
     </item>
     <item>
+      <title>Associate Project Engineer (Electrical) at ABB</title>
+      <link>https://www.indeed.com/viewjob?jk=71c51232b94e67f1</link>
+      <description>New grad role at ABB in Mebane, NC, US. Category: Other</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=71c51232b94e67f1</guid>
+    </item>
+    <item>
       <title>911 Network Engineer Field Technician at Quantum Sky</title>
       <link>https://www.indeed.com/viewjob?jk=73d9f1b3f854181f</link>
       <description>New grad role at Quantum Sky in Hagåtña, GU, US. Category: Infrastructure &amp; SRE</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-II_R73524</guid>
-    </item>
-    <item>
-      <title>Supply Quality Engineer I at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Supply-Quality-Engineer-I_R66199-2</link>
-      <description>New grad role at Medtronic in Tijuana, Baja California, Mexico. Category: Other</description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Supply-Quality-Engineer-I_R66199-2</guid>
     </item>
   </channel>
 </rss>

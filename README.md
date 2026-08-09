@@ -217,8 +217,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | SOUTHEAST BEHAVIORAL HOSPITAL | Registered Nurse (RN) - New Graduate | Cape Girardeau, MO, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=60c264d53c0036eb) |
 | JPMorganChase | Chief Data & Analytics Office Strategy, Associate | New York, NY, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=95f5574695bd47fd) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -228,15 +228,15 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | United States-Virginia-Dulles | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/XMLNAME-2026-Associate-I-T-RF-Engineer---Dulles-VA_R10244551) |
-| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (2027) | Minneapolis, MN, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=165130a3666cf3f7) |
+| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | Dulles, VA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=c23b0aefa6305067) |
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
 | Opella. | AI Solution Developer, Associate | TS, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=334819436a228190) |
 | Scout AI | Junior Firmware Engineer | Sunnyvale, CA | 2026-07-24 | [Apply](https://job-boards.greenhouse.io/scoutai/jobs/4643333008) |
 | SpaceX | New Graduate Engineer, Electrical - Satellites (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8541336002?gh_jid=8541336002) |
+| SpaceX | Physical Design Engineer II (Silicon Engineering) | Palo Alto, CA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8533679002?gh_jid=8533679002) |
 | SpaceX | Physical Design Engineer II (Silicon Engineering) | Austin, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8533749002?gh_jid=8533749002) |
-| SpaceX | Physical Design Engineer II (Silicon Engineering) | Irvine, CA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8506508002?gh_jid=8506508002) |
 
 **[View all 13 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -249,13 +249,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | British Columbia Institute of Technology | Campus Services Supervisor | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=dfd0442b48a45f1a) |
 | British Columbia Institute of Technology | Campus & Sales Coordinator | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f) |
 | SPAAN Tech | Civil Engineer- Entry Level | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dcc5bfb68874537f) |
+| ABB | Associate Project Engineer (Electrical) | Mebane, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=71c51232b94e67f1) |
 | GXO Logistics | Data Center Logistics Associate - 1st Shift | Claude, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=54280d10d0b6844b) |
 | Medtronic | Manufacturing Engineer II. | Tijuana, Baja California, Mexico | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-II_R73524) |
 | Medtronic | Supply Quality Engineer I | Tijuana, Baja California, Mexico | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Supply-Quality-Engineer-I_R66199-2) |
 | Medtronic | Manufacturing Engineer I. | Tijuana, Baja California, Mexico | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Manufacturing-Engineer-I_R73526-1) |
 | Medtronic | Process Engineer I | Tijuana, Baja California, Mexico | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Process-Engineer-I_R73949-1) |
 | Medtronic | Process Engineer I. | Tijuana, Baja California, Mexico | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Tijuana-Baja-California-Mexico/Process-Engineer-I_R72748) |
-| Medtronic | R-D Engineer II | North Haven, Connecticut, United States of America | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/North-Haven-Connecticut-United-States-of-America/R-D-Engineer-II_R73647) |
 
 **[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 02:55:45 UTC*
+*Last updated: 2026-08-09 04:16:42 UTC*
