@@ -32,29 +32,29 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1484<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1489<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
 | [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->911<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->34<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->153<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->17<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->137<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->142<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->15<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->121<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->120<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,484** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,489** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -62,6 +62,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Fivetran | Software Engineer | Oakland, California, United States, AMER | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7811889003) |
+| Fivetran | Software Engineer | Oakland, California, United States, AMER | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7778979003) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
 | Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
 | Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
@@ -70,8 +72,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Anduril Industries | Software Engineer, Tooling | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5205416007?gh_jid=5205416007) |
 | Anduril Industries | Security Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5134986007?gh_jid=5134986007) |
-| Anduril Industries | Software Engineer, 3rd-Party Integrations | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007) |
-| Anduril Industries | Software Engineer, Cloud OS | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007) |
 
 **[View all 911 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -97,6 +97,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | JPMorganChase | Backend Java Software Engineer III | Palo Alto, CA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=680a75cc2cab0711) |
 | Waymo | Software Engineer Backend - Simulation | Mountain View | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
+| NTT DATA | Back End Software Developer | DL, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=9a9382f4b23086ef) |
 | TikTok | Backend Software Engineer Graduate (TikTok - Data Lifecycle Management) - 2027 Start | San Jose, CA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=fa1645eb957ea959) |
 | TikTok | Backend Software Engineer Graduate (TikTok - Privacy and Security - Product) - 2027 Start | San Jose, CA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=a59acafff2e0166f) |
 | TikTok | Backend Software Engineer Graduate (TikTok-PGC-Digital Content Center) - 2027 Start | San Jose, CA, US | 5 days ago | [Apply](https://www.indeed.com/viewjob?jk=4d22af308ad0bf59) |
@@ -104,9 +105,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | ByteDance | Backend Software Engineer Graduate (Platform) - 2027 Start | San Jose, CA, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=a674b9ff6c7df7bf) |
 | ByteDance | Backend Software Engineer Graduate (Platform) - 2027 Start | New York, NY, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=4727b775b7099d43) |
 | ByteDance | Backend and Infra Software Engineer Graduate (Dev Infra US) - 2027 Start | San Jose, CA, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=0270f93090354c8e) |
-| Imply | Software Engineer (Full Stack, Backend Focus) (Remote) | Burlingame, California, United States | 2026-07-29 | [Apply](https://imply.io/positions?gh_jid=7595374003) |
 
-**[View all 33 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 34 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Mobile Engineering
 
@@ -188,17 +188,17 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | — | Entry-Level Engineering Coordinator | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=295f8706c9f9016a) |
+| Leidos | Field/Base Communications Network Engineer | Norfolk, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d61e47bd7f1a2ca2) |
+| Leidos | Field/Base Communications Network Engineer | Jacksonville, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=89667d1d4f1b6d74) |
+| Leidos | Field/Base Communications Network Engineer | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=04ee85856f35e0e1) |
+| Leidos | Field/Base Communications Network Engineer | Virginia Beach, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=4a221363f5b9497b) |
+| Leidos | Field/Base Communications Network Engineer | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=f9742bb1cc9077c8) |
 | General Dynamics Information Technology | Network Engineer - TS/SCI Required | Arlington, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=68b74bb814855e8b) |
 | Leidos | Field/Base Communications Network Engineer | San Diego, CA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/San-Diego-CA/Field-Base-Communications-Network-Engineer_R-00188578-1) |
 | Leidos | Field/Base Communications Network Engineer | Washington, DC | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Washington-DC/Field-Base-Communications-Network-Engineer_R-00188572-1) |
 | Leidos | Field/Base Communications Network Engineer | Jacksonville, FL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Jacksonville-FL/Field-Base-Communications-Network-Engineer_R-00188580-1) |
-| DIAN Technology Solutions Pvt Ltd | Junior Azure DevOps SRE Engineer | TN, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=ea0011f00bd86fc3) |
-| Quantum Sky | 911 Network Engineer Field Technician | Hagåtña, GU, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=73d9f1b3f854181f) |
-| Black & Veatch | Structural Associate Engineering Technician - Advanced Power Generation | Overland Park, KS, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=68d1aa4568d1883b) |
-| Verkada | Technical Support Engineer - University Graduate 2026 | New York City, NY United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5172974007) |
-| Verkada | Technical Support Engineer - University Graduate 2026 | San Mateo, CA United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4715534007) |
 
-**[View all 137 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 142 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -253,11 +253,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Thermo Fisher Scientific | Field Service Engineer I | MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b5b077b80dd7336c) |
 | SPAAN Tech | Civil Engineer- Entry Level | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dcc5bfb68874537f) |
 | ABB | Associate Project Engineer (Electrical) | Mebane, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=71c51232b94e67f1) |
-| GXO Logistics | Data Center Logistics Associate - 1st Shift | Claude, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=54280d10d0b6844b) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8691084002?gh_jid=8691084002) |
 | Twilio | Associate Application Engineer | Remote - India | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
+| Swastik Technopack Private Limited | Trainee Design Engineer | MH, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=611de1004805bbb5) |
 
-**[View all 121 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 21:00:17 UTC*
+*Last updated: 2026-08-09 21:42:58 UTC*

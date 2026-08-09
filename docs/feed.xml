@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 21:00:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 21:42:59 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer  at Fivetran</title>
+      <link>https://www.fivetran.com/careers/job?gh_jid=7811889003</link>
+      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
+      <pubDate>Sun, 09 Aug 2026 21:09:26 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7811889003</guid>
+    </item>
+    <item>
+      <title>Software Engineer  at Fivetran</title>
+      <link>https://www.fivetran.com/careers/job?gh_jid=7778979003</link>
+      <description>New grad role at Fivetran in Oakland, California, United States, AMER. Category: Software Engineering</description>
+      <pubDate>Sun, 09 Aug 2026 21:07:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.fivetran.com/careers/job?gh_jid=7778979003</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
       <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
@@ -337,25 +351,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8468015e48942253</guid>
     </item>
     <item>
-      <title>Network Engineer - TS/SCI Required at General Dynamics Information Technology</title>
-      <link>https://www.indeed.com/viewjob?jk=68b74bb814855e8b</link>
-      <description>New grad role at General Dynamics Information Technology in Arlington, VA, US. Category: Infrastructure &amp; SRE</description>
+      <title>Field/Base Communications Network Engineer at Leidos</title>
+      <link>https://www.indeed.com/viewjob?jk=d61e47bd7f1a2ca2</link>
+      <description>New grad role at Leidos in Norfolk, VA, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=68b74bb814855e8b</guid>
-    </item>
-    <item>
-      <title>Associate, Software Engineering at L3Harris</title>
-      <link>https://www.indeed.com/viewjob?jk=fdb7ee428490fd94</link>
-      <description>New grad role at L3Harris in Waco, TX, US. Category: Software Engineering</description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fdb7ee428490fd94</guid>
-    </item>
-    <item>
-      <title>Junior Software Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Bowie-MD/Junior-Software-Engineer_R-00189125</link>
-      <description>New grad role at Leidos in Bowie, MD. Category: Software Engineering</description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Bowie-MD/Junior-Software-Engineer_R-00189125</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d61e47bd7f1a2ca2</guid>
     </item>
   </channel>
 </rss>
