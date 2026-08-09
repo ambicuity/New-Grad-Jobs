@@ -1,0 +1,115 @@
+name: "🤝 Sponsorship / CTA Placement Proposal"
+description: Propose a sponsor credit or a paid call-to-action placement in this repository
+title: "[Sponsor]: "
+labels: ["sponsorship: placement", "community", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for your interest in sponsoring New-Grad-Jobs 🤝
+
+        This repository is free and solo-maintained. Sponsorships pay for the infrastructure
+        that keeps the scraper running every 5 minutes, 24/7.
+
+        **Read this before filling the form:**
+
+        - Every paid placement carries a visible **"Sponsored by …"** disclosure. This is not negotiable.
+        - Placements live in **`README.md` only** unless we explicitly agree otherwise. The
+          [live job board](https://jobs.riteshrana.engineer/) stays ad-free by default.
+        - We do **not** accept placements that mislead job seekers: no guaranteed-job claims,
+          no guaranteed-salary claims, no "we place you at FAANG" pitches, no pay-to-apply schemes,
+          no résumé mills, and no products that charge students to *submit* applications.
+        - We do **not** add tracking pixels, analytics scripts, or anything that collects
+          reader data. A plain link with a `?ref=` parameter is the maximum.
+        - We do **not** sell influence over job data. Rankings, categories, and listings are
+          never for sale, and a sponsorship never gets a company preferential placement in the
+          job tables.
+        - Current sponsors: **[Tailr](https://www.tailr.uk)** and **[Zapply](https://app.zapply.jobs)**.
+
+        Opening this issue starts a conversation — it is **not** an accepted placement.
+        Nothing is live until a PR is merged and both sides have signed a written agreement.
+
+        > 🔒 **Do not post contract terms, pricing you consider confidential, invoices, or
+        > payment details in this public issue.** Use the contact email below for those.
+
+  - type: input
+    id: product
+    attributes:
+      label: "Product / company name"
+      placeholder: "e.g. Acme Résumé Tools"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: "Destination URL"
+      description: The exact URL the CTA should link to, including any `?ref=` parameter.
+      placeholder: "https://example.com/?ref=github-newgradjobs"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: "What does the product actually do?"
+      description: |
+        Plain language, no marketing copy. What does a new grad get, what does it cost them,
+        and is there a free tier?
+      placeholder: |
+        e.g. "Chrome extension that autofills Workday/Greenhouse forms. Free tier: 20 autofills/month.
+        Paid: $9/mo unlimited. No credit card required to start."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: placement_type
+    attributes:
+      label: "What kind of placement are you asking for?"
+      options:
+        - "Sponsor credit — logo + one line, no paid CTA"
+        - "Paid CTA placement in README.md"
+        - "One-off donation / GitHub Sponsors, no placement"
+        - "Something else (describe below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: creative
+    attributes:
+      label: "Proposed copy and creative"
+      description: |
+        Paste the exact Markdown/HTML you're proposing, plus links to any image assets.
+        Assets must be files you own or are licensed to use, and we host them in this repo —
+        we do not hotlink to your CDN.
+      render: markdown
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: "Contact email"
+      description: Where we reply with terms. Use a domain email you control, not a free inbox, where possible.
+      placeholder: "partnerships@example.com"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Ground rules"
+      description: All boxes are required. Proposals that skip these get closed without a reply.
+      options:
+        - label: "I own or am licensed to use every logo, image, and line of copy I'm proposing."
+          required: true
+        - label: "I accept a visible \"Sponsored by …\" disclosure on the placement."
+          required: true
+        - label: "My product makes no guaranteed-job, guaranteed-interview, or guaranteed-salary claim."
+          required: true
+        - label: "I am not asking for tracking pixels, analytics scripts, or reader data."
+          required: true
+        - label: "I understand job listings, rankings, and categories are not for sale."
+          required: true
+        - label: "I understand a placement can be removed if the product misleads job seekers."
+          required: true
