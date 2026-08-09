@@ -29,8 +29,9 @@ body:
         Opening this issue starts a conversation — it is **not** an accepted placement.
         Nothing is live until a PR is merged and both sides have signed a written agreement.
 
-        > 🔒 **Do not post contract terms, pricing you consider confidential, invoices, or
-        > payment details in this public issue.** Use the contact email below for those.
+        > 🔒 **This issue is public and permanent.** Do not post contract terms, pricing you
+        > consider confidential, invoices, payment details, or a personal email address here —
+        > it gets indexed and copied into every fork. Take those to `contact@riteshrana.engineer`.
 
   - type: input
     id: product
@@ -89,11 +90,17 @@ body:
   - type: input
     id: contact
     attributes:
-      label: "Contact email"
-      description: Where we reply with terms. Use a domain email you control, not a free inbox, where possible.
-      placeholder: "partnerships@example.com"
+      label: "Public contact (optional)"
+      description: |
+        **Anything you type here becomes part of a public issue that is indexed and lives in every fork.**
+        Leave this blank if you'd rather not publish a contact — we reply on the issue thread, and you can
+        take the rest to `contact@riteshrana.engineer` privately.
+
+        If you do fill it in, use a GitHub handle or a **published** company address
+        (the one already on your website's contact page) — never a personal inbox.
+      placeholder: "@your-github-handle"
     validations:
-      required: true
+      required: false
 
   - type: checkboxes
     id: terms

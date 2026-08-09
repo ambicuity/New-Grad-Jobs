@@ -115,6 +115,16 @@ create_label "intermediate"  "ffd33d"  "Requires codebase familiarity; 2-3 funct
 create_label "advanced"      "e6192a"  "Requires deep scraper knowledge; high-impact change"
 create_label "ci-cd"         "bfdadc"  "Changes to GitHub Actions workflows or CI configuration"
 
+# ============================================================
+# COMMUNITY & SPONSORSHIP LABELS
+# ============================================================
+# Note: "sponsorship: placement" is about funding this repo, NOT work visas.
+# Visa sponsorship is "visa: sponsorship-available" above.
+echo ""
+echo "── Community & Sponsorship Labels ───────────────────"
+create_label "community"                "d93f0b"  "Community features: sponsors, hall-of-fame"
+create_label "sponsorship: placement"   "5319e7"  "Sponsorship or paid README CTA placement proposals"
+
 echo ""
 echo "✅  Done! All labels have been processed for ${REPO}."
 echo "    View them at: https://github.com/${REPO}/labels"
