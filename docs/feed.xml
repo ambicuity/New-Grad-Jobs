@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 22:51:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 23:20:02 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer  at Fivetran</title>
@@ -330,13 +330,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=295f8706c9f9016a</guid>
     </item>
     <item>
-      <title>Associate Engineer - QA Automation at Eaton</title>
-      <link>https://in.indeed.com/viewjob?jk=8468015e48942253</link>
-      <description>New grad role at Eaton in MH, IN. Category: Hardware Engineering</description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8468015e48942253</guid>
-    </item>
-    <item>
       <title>Entry-Level Reformer Pilates Instructor — Long Island City (Training Provided) at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=290be981d881e126</link>
       <description>New grad role at Unknown in Long Island City, NY, US. Category: Other</description>
@@ -349,6 +342,13 @@
       <description>New grad role at The University of Michigan in Ann Arbor, MI, US. Category: Hardware Engineering</description>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=b2dc47f6430c971e</guid>
+    </item>
+    <item>
+      <title>Associate Engineer - QA Automation at Eaton</title>
+      <link>https://in.indeed.com/viewjob?jk=8468015e48942253</link>
+      <description>New grad role at Eaton in MH, IN. Category: Hardware Engineering</description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=8468015e48942253</guid>
     </item>
     <item>
       <title>Field/Base Communications Network Engineer at Leidos</title>
