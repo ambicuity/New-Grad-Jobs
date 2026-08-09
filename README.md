@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1491<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1490<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -47,14 +47,14 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->13<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->121<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->120<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,491** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,490** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -227,8 +227,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (2027) | Minneapolis, MN, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=165130a3666cf3f7) |
+| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | United States-Virginia-Dulles | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/XMLNAME-2026-Associate-I-T-RF-Engineer---Dulles-VA_R10244551) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | Dulles, VA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=c23b0aefa6305067) |
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
@@ -247,7 +247,6 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8114351?t=gh_src=&gh_jid=8114351) |
-| Mesa Public Schools - AZ | Instructional Assistant Special Education II - Self Contained - Taylor Junior High School | Mesa, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=59f749f8ad602197) |
 | British Columbia Institute of Technology | Campus Services Supervisor | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=dfd0442b48a45f1a) |
 | British Columbia Institute of Technology | Campus & Sales Coordinator | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f) |
 | SPAAN Tech | Civil Engineer- Entry Level | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dcc5bfb68874537f) |
@@ -256,8 +255,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8691084002?gh_jid=8691084002) |
 | Twilio | Associate Application Engineer | Remote - India | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 | Swastik Technopack Private Limited | Trainee Design Engineer | MH, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=611de1004805bbb5) |
+| Flex | Junior Engineer – Engineering Change Management | TN, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=3ad62737222bb66a) |
 
-**[View all 121 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 120 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 11:06:29 UTC*
+*Last updated: 2026-08-09 11:43:45 UTC*

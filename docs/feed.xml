@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 11:06:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 11:43:45 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Tooling at Anduril Industries</title>
@@ -316,13 +316,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=295f8706c9f9016a</guid>
     </item>
     <item>
-      <title>Instructional Assistant Special Education II - Self Contained - Taylor Junior High School at Mesa Public Schools - AZ</title>
-      <link>https://www.indeed.com/viewjob?jk=59f749f8ad602197</link>
-      <description>New grad role at Mesa Public Schools - AZ in Mesa, AZ, US. Category: Other</description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=59f749f8ad602197</guid>
-    </item>
-    <item>
       <title>Associate, Software Engineering at L3Harris</title>
       <link>https://www.indeed.com/viewjob?jk=fdb7ee428490fd94</link>
       <description>New grad role at L3Harris in Waco, TX, US. Category: Software Engineering</description>
@@ -356,6 +349,13 @@
       <description>New grad role at SentiLink in United States. Category: Data Science &amp; ML</description>
       <pubDate>Sat, 08 Aug 2026 14:11:11 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.ashbyhq.com/sentilink/4e28d1a3-75a8-4031-85eb-82b7847d365a</guid>
+    </item>
+    <item>
+      <title>Quantitative Scientist, PhD New Grad at SentiLink</title>
+      <link>https://jobs.ashbyhq.com/sentilink/a4a5f890-4ecd-4e76-86db-e7b3e18eb6b2</link>
+      <description>New grad role at SentiLink in United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 08 Aug 2026 14:09:47 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/sentilink/a4a5f890-4ecd-4e76-86db-e7b3e18eb6b2</guid>
     </item>
   </channel>
 </rss>
