@@ -32,11 +32,11 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1485<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1484<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->912<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->911<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,485** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,484** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -73,7 +73,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Anduril Industries | Software Engineer, 3rd-Party Integrations | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007) |
 | Anduril Industries | Software Engineer, Cloud OS | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007) |
 
-**[View all 912 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 911 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -229,8 +229,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 |---------|------|----------|--------|-------|
 | The University of Michigan | GSI - Judaic 281 (Fall 2026) | Ann Arbor, MI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b2dc47f6430c971e) |
 | Eaton | Associate Engineer - QA Automation | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=8468015e48942253) |
-| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (2027) | Minneapolis, MN, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=165130a3666cf3f7) |
+| RTX | Sotware Engineer II | Cambridge, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=1a4dcc608c3d503d) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | United States-Virginia-Dulles | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/XMLNAME-2026-Associate-I-T-RF-Engineer---Dulles-VA_R10244551) |
 | Northrop Grumman | 2026 Associate I&T RF Engineer - Dulles VA | Dulles, VA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=c23b0aefa6305067) |
 | US Executive Office for U.S. Attorneys and the Office of the U.S. Attorneys | Early Career Assistant United States Attorney | Fort Lauderdale, FL, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=5d18e383b988d592) |
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 20:19:39 UTC*
+*Last updated: 2026-08-09 21:00:17 UTC*
