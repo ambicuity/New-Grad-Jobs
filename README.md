@@ -32,7 +32,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1491<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1489<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -41,9 +41,9 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->35<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->154<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->153<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->20<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->138<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->137<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->13<!-- /COUNT --> |
@@ -54,7 +54,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,491** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,489** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -134,12 +134,12 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | xAI | Infrastructure Security Engineer | Austin, Texas; New York, New York; Palo Alto, California; Washington, D.C. | 1 day ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/5090998007) |
 | xAI | Application Security Engineer | Palo Alto, California | 1 day ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
 | Abnormal Security | Application Security Engineer II | Remote - USA | 1 day ago | [Apply](https://abnormal.ai/careers/jobs/7832743003?gh_jid=7832743003) |
-| Stripe | Client Platform Security Engineer | New York, New York | 1 day ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
+| Stripe | Client Platform Security Engineer | New York, New York | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
 | Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
 | Twilio | Security Engineer, Incident Response | Remote - Ireland | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Cloudflare | Product Security Engineer | In-Office | 2 days ago | [Apply](https://boards.greenhouse.io/cloudflare/jobs/8053116?gh_jid=8053116) |
-| Stripe | Software Engineer, Product Security Data Platforms | Seattle | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=8039800) |
-| Stripe | Security Engineer | Seattle, WA | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7923209) |
+| Stripe | Software Engineer, Product Security Data Platforms | Seattle | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=8039800) |
+| Stripe | Security Engineer | Seattle, WA | 3 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7923209) |
 
 **[View all 74 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -160,7 +160,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | SentiLink | Applied Scientist, PhD New Grad | United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/sentilink/cbe2397c-5e7a-4649-a8c0-07e5d1204e82) |
 | SentiLink | Research Scientist, PhD New Grad | United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/sentilink/f9a47314-c48a-4053-a113-6974b211559f) |
 
-**[View all 154 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 153 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -198,7 +198,7 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Verkada | Technical Support Engineer - University Graduate 2026 | New York City, NY United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5172974007) |
 | Verkada | Technical Support Engineer - University Graduate 2026 | San Mateo, CA United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4715534007) |
 
-**[View all 138 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 137 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -249,8 +249,8 @@ Unlike manually curated lists, this repository pulls directly from configured co
 | Robinhood | Account Maintenance Associate | Clearwater, FL | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8114351?t=gh_src=&gh_jid=8114351) |
 | British Columbia Institute of Technology | Campus Services Supervisor | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=dfd0442b48a45f1a) |
 | British Columbia Institute of Technology | Campus & Sales Coordinator | Burnaby, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=eb52b810bb17aa3f) |
-| SPAAN Tech | Civil Engineer- Entry Level | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dcc5bfb68874537f) |
 | Thermo Fisher Scientific | Field Service Engineer I | MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b5b077b80dd7336c) |
+| SPAAN Tech | Civil Engineer- Entry Level | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dcc5bfb68874537f) |
 | ABB | Associate Project Engineer (Electrical) | Mebane, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=71c51232b94e67f1) |
 | GXO Logistics | Data Center Logistics Associate - 1st Shift | Claude, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=54280d10d0b6844b) |
 | SpaceX | Satellite Policy Associate (Starlink Regulatory Affairs) | Washington, DC | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8691084002?gh_jid=8691084002) |
@@ -370,4 +370,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 15:57:44 UTC*
+*Last updated: 2026-08-09 16:33:31 UTC*
