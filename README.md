@@ -54,13 +54,13 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1489<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1488<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
 | [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->911<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->34<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->153<!-- /COUNT --> |
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,489** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,488** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -119,7 +119,6 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | JPMorganChase | Backend Java Software Engineer III | Palo Alto, CA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=680a75cc2cab0711) |
 | Waymo | Software Engineer Backend - Simulation | Mountain View | 3 days ago | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7307289) |
-| NTT DATA | Back End Software Developer | DL, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=9a9382f4b23086ef) |
 | TikTok | Backend Software Engineer Graduate (TikTok - Data Lifecycle Management) - 2027 Start | San Jose, CA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=fa1645eb957ea959) |
 | TikTok | Backend Software Engineer Graduate (TikTok - Privacy and Security - Product) - 2027 Start | San Jose, CA, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=a59acafff2e0166f) |
 | TikTok | Backend Software Engineer Graduate (TikTok-PGC-Digital Content Center) - 2027 Start | San Jose, CA, US | 5 days ago | [Apply](https://www.indeed.com/viewjob?jk=4d22af308ad0bf59) |
@@ -127,8 +126,9 @@ Experience an advanced career journey with us! 🚀
 | ByteDance | Backend Software Engineer Graduate (Platform) - 2027 Start | San Jose, CA, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=a674b9ff6c7df7bf) |
 | ByteDance | Backend Software Engineer Graduate (Platform) - 2027 Start | New York, NY, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=4727b775b7099d43) |
 | ByteDance | Backend and Infra Software Engineer Graduate (Dev Infra US) - 2027 Start | San Jose, CA, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=0270f93090354c8e) |
+| Imply | Software Engineer (Full Stack, Backend Focus) (Remote) | Burlingame, California, United States | 2026-07-29 | [Apply](https://imply.io/positions?gh_jid=7595374003) |
 
-**[View all 34 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 33 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Mobile Engineering
 
@@ -154,7 +154,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | xAI | Infrastructure Security Engineer | Austin, Texas; New York, New York; Palo Alto, California; Washington, D.C. | 1 day ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/5090998007) |
-| xAI | Application Security Engineer | Palo Alto, California | 1 day ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
+| xAI | Application Security Engineer | Palo Alto, California | 2 days ago | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
 | Abnormal Security | Application Security Engineer II | Remote - USA | 2 days ago | [Apply](https://abnormal.ai/careers/jobs/7832743003?gh_jid=7832743003) |
 | Stripe | Client Platform Security Engineer | New York, New York | 2 days ago | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
 | Twilio | Security Engineer, Incident Response | Remote - Ireland | 2 days ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
@@ -394,4 +394,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-09 21:42:58 UTC*
+*Last updated: 2026-08-09 22:08:09 UTC*
