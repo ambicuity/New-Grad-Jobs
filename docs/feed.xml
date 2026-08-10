@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 20:09:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 21:02:50 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Site Reliability Engineer, Cloud Cost Utilization at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8515080002</link>
+      <description>New grad role at GitLab in Remote, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 10 Aug 2026 20:52:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8515080002</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer - Dedicated Hosted Runners at GitLab</title>
+      <link>https://job-boards.greenhouse.io/gitlab/jobs/8644274002</link>
+      <description>New grad role at GitLab in Bangalore, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 10 Aug 2026 20:52:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gitlab/jobs/8644274002</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Message Mailflow at Abnormal Security</title>
+      <link>https://abnormal.ai/careers/jobs/7806195003?gh_jid=7806195003</link>
+      <description>New grad role at Abnormal Security in Remote - USA. Category: Software Engineering</description>
+      <pubDate>Mon, 10 Aug 2026 20:45:38 +0000</pubDate>
+      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7806195003?gh_jid=7806195003</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Observability at Baseten</title>
+      <link>https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda</link>
+      <description>New grad role at Baseten in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 10 Aug 2026 20:38:17 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda</guid>
+    </item>
+    <item>
+      <title>Software Engineer, ML Platform at Gusto</title>
+      <link>https://job-boards.greenhouse.io/gusto/jobs/8073232</link>
+      <description>New grad role at Gusto in Denver, CO, United States; New York, New York, United States; San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 10 Aug 2026 20:11:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/8073232</guid>
+    </item>
     <item>
       <title>Embedded Software Engineer, Anti-Tamper at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5206527007?gh_jid=5206527007</link>
@@ -111,13 +146,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Mon, 10 Aug 2026 18:32:32 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8083944?gh_jid=8083944</guid>
-    </item>
-    <item>
-      <title>Software Engineer, ML Platform at Gusto</title>
-      <link>https://job-boards.greenhouse.io/gusto/jobs/8073232</link>
-      <description>New grad role at Gusto in Denver, CO;San Francisco, CA;New York, NY;. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 18:11:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/gusto/jobs/8073232</guid>
     </item>
     <item>
       <title>Data Scientist, Risk  at Gusto</title>
@@ -261,17 +289,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 12:28:43 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Mon, 10 Aug 2026 12:28:43 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Mon, 10 Aug 2026 12:28:43 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Mon, 10 Aug 2026 11:24:44 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 11:24:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5160996007?gh_jid=5160996007</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007</link>
-      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 11:24:02 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007</guid>
-    </item>
-    <item>
-      <title>Infrastructure Software Engineer, Active Clearance at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5160667007?gh_jid=5160667007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 11:23:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5160667007?gh_jid=5160667007</guid>
-    </item>
-    <item>
-      <title>Mission Software Infrastructure Engineer, Active Clearance  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5158245007?gh_jid=5158245007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 10 Aug 2026 11:23:32 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5158245007?gh_jid=5158245007</guid>
     </item>
   </channel>
 </rss>
