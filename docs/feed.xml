@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 22:34:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 23:13:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer (2-4 yrs in Python/NLP/BERT/GenAI) at Gartner</title>
@@ -13,6 +13,13 @@
       <description>New grad role at Gartner in HR, IN. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6101e23e5449c220</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Fleet Monitoring &amp; Response at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=7939542</link>
+      <description>New grad role at Waymo in San Francisco, CA; Mountain  View, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 10 Aug 2026 22:43:44 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7939542</guid>
     </item>
     <item>
       <title>2027 Early Career Software Engineer  at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Mon, 10 Aug 2026 12:18:30 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</guid>
-    </item>
-    <item>
-      <title>Applied LLM Systems Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5197253007?gh_jid=5197253007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 12:02:37 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5197253007?gh_jid=5197253007</guid>
     </item>
   </channel>
 </rss>

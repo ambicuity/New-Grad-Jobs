@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-10T22:34:35.148366+00:00",
+    "last_updated": "2026-08-10T23:13:33.868768+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-12",
@@ -5725,25 +5725,25 @@
     },
     {
       "date": "2026-08-10",
-      "total_jobs": 1499,
+      "total_jobs": 1494,
       "categories": {
-        "software_engineering": 907,
-        "data_ml": 152,
-        "infrastructure_sre": 145,
-        "data_engineering": 27,
-        "other": 121,
+        "software_engineering": 899,
+        "data_ml": 153,
+        "infrastructure_sre": 146,
+        "data_engineering": 26,
+        "other": 122,
         "security": 74,
         "mobile": 10,
         "frontend": 9,
-        "hardware": 20,
+        "hardware": 21,
         "backend": 28,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "other": 678,
-        "unicorn": 680,
-        "faang_plus": 141
+        "other": 677,
+        "unicorn": 679,
+        "faang_plus": 138
       },
       "top_companies": [
         {
@@ -5756,7 +5756,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 43
+          "jobs": 42
         },
         {
           "company": "Waymo",
@@ -5764,7 +5764,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 32
+          "jobs": 33
         },
         {
           "company": "xAI",
@@ -5772,10 +5772,6 @@
         },
         {
           "company": "Leidos",
-          "jobs": 27
-        },
-        {
-          "company": "Northrop Grumman",
           "jobs": 26
         },
         {
@@ -5785,11 +5781,15 @@
         {
           "company": "Boeing",
           "jobs": 24
+        },
+        {
+          "company": "Stripe",
+          "jobs": 24
         }
       ],
-      "unique_companies": 232,
-      "avg_jobs_per_company": 6.46,
-      "timestamp": "2026-08-10T22:34:35.147142+00:00"
+      "unique_companies": 230,
+      "avg_jobs_per_company": 6.5,
+      "timestamp": "2026-08-10T23:13:33.867717+00:00"
     }
   ]
 }
