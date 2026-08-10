@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-10T12:39:24.867346+00:00",
+    "last_updated": "2026-08-10T14:08:56.606419+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-12",
@@ -5725,25 +5725,25 @@
     },
     {
       "date": "2026-08-10",
-      "total_jobs": 1488,
+      "total_jobs": 1482,
       "categories": {
+        "mobile": 10,
         "data_ml": 151,
-        "software_engineering": 905,
+        "software_engineering": 902,
         "frontend": 7,
-        "infrastructure_sre": 133,
+        "infrastructure_sre": 131,
         "security": 73,
-        "other": 142,
-        "hardware": 16,
-        "data_engineering": 16,
-        "mobile": 9,
+        "hardware": 17,
+        "other": 138,
+        "data_engineering": 17,
         "backend": 29,
         "quant_finance": 5,
         "product_management": 2
       },
       "tiers": {
+        "other": 631,
         "unicorn": 690,
-        "other": 636,
-        "faang_plus": 162
+        "faang_plus": 161
       },
       "top_companies": [
         {
@@ -5760,7 +5760,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 38
+          "jobs": 36
         },
         {
           "company": "Waymo",
@@ -5776,7 +5776,7 @@
         },
         {
           "company": "University of Ottawa",
-          "jobs": 27
+          "jobs": 25
         },
         {
           "company": "Stripe",
@@ -5787,9 +5787,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 6.92,
-      "timestamp": "2026-08-10T12:39:24.866394+00:00"
+      "unique_companies": 216,
+      "avg_jobs_per_company": 6.86,
+      "timestamp": "2026-08-10T14:08:56.605321+00:00"
     }
   ]
 }
