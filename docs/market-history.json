@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-10T15:18:45.207762+00:00",
+    "last_updated": "2026-08-10T16:16:18.384267+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-12",
@@ -5725,25 +5725,25 @@
     },
     {
       "date": "2026-08-10",
-      "total_jobs": 1486,
+      "total_jobs": 1480,
       "categories": {
-        "software_engineering": 905,
-        "security": 74,
         "data_ml": 153,
-        "other": 137,
+        "other": 131,
+        "security": 72,
+        "software_engineering": 900,
         "mobile": 10,
-        "frontend": 7,
-        "infrastructure_sre": 132,
-        "hardware": 15,
-        "data_engineering": 17,
+        "frontend": 8,
+        "infrastructure_sre": 136,
+        "hardware": 14,
+        "data_engineering": 20,
         "backend": 29,
         "quant_finance": 5,
         "product_management": 2
       },
       "tiers": {
+        "other": 632,
         "unicorn": 691,
-        "other": 631,
-        "faang_plus": 164
+        "faang_plus": 157
       },
       "top_companies": [
         {
@@ -5759,24 +5759,24 @@
           "jobs": 45
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 39
-        },
-        {
           "company": "Waymo",
           "jobs": 37
         },
         {
-          "company": "Boeing",
-          "jobs": 29
+          "company": "Northrop Grumman",
+          "jobs": 37
         },
         {
           "company": "xAI",
           "jobs": 29
         },
         {
-          "company": "University of Ottawa",
-          "jobs": 25
+          "company": "Boeing",
+          "jobs": 28
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 26
         },
         {
           "company": "Stripe",
@@ -5787,9 +5787,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 215,
-      "avg_jobs_per_company": 6.91,
-      "timestamp": "2026-08-10T15:18:45.206571+00:00"
+      "unique_companies": 213,
+      "avg_jobs_per_company": 6.95,
+      "timestamp": "2026-08-10T16:16:18.381476+00:00"
     }
   ]
 }
