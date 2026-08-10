@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 21:02:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 21:55:57 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2027 Early Career Manufacturing Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136970007?gh_jid=5136970007</link>
+      <description>New grad role at Anduril Industries in Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Seattle, Washington, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 10 Aug 2026 21:47:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136970007?gh_jid=5136970007</guid>
+    </item>
     <item>
       <title>Site Reliability Engineer, Cloud Cost Utilization at GitLab</title>
       <link>https://job-boards.greenhouse.io/gitlab/jobs/8515080002</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Mon, 10 Aug 2026 11:39:35 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5166602007?gh_jid=5166602007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Sensor Simulation  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 10 Aug 2026 11:24:44 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152591007?gh_jid=5152591007</guid>
     </item>
   </channel>
 </rss>
