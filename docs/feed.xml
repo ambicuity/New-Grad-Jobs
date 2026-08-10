@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 05:05:17 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 06:23:10 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Target Tracking at Anduril Industries</title>
@@ -62,6 +62,20 @@
       <description>New grad role at Rolls-Royce Power Systems AG in Houston, TX, US. Category: Other</description>
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=4e650cea1710ec8a</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer 3 ( Firefly ) at Adobe</title>
+      <link>https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-3---Firefly--_R171102-1</link>
+      <description>New grad role at Adobe in Noida. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-3---Firefly--_R171102-1</guid>
+    </item>
+    <item>
+      <title>Python Developer - Software Engineer at Citi</title>
+      <link>https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Python-Developer---Software-Engineer_26982912</link>
+      <description>New grad role at Citi in Chennai Tamil Nadu India. Category: Software Engineering</description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Chennai-Tamil-Nadu-India/Python-Developer---Software-Engineer_26982912</guid>
     </item>
     <item>
       <title>Embedded Software Engineer – Level 3 or 4 (AHT) at Northrop Grumman</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Broomfield, Colorado, United States. Category: Software Engineering</description>
       <pubDate>Sun, 09 Aug 2026 09:42:31 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178127007?gh_jid=5178127007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5064165007?gh_jid=5064165007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 09 Aug 2026 09:40:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5064165007?gh_jid=5064165007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 09 Aug 2026 09:39:49 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
     </item>
   </channel>
 </rss>
