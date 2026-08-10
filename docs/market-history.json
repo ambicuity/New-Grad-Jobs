@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-10T23:13:33.868768+00:00",
+    "last_updated": "2026-08-10T23:55:17.700978+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-12",
@@ -5725,25 +5725,25 @@
     },
     {
       "date": "2026-08-10",
-      "total_jobs": 1494,
+      "total_jobs": 1482,
       "categories": {
-        "software_engineering": 899,
-        "data_ml": 153,
-        "infrastructure_sre": 146,
+        "software_engineering": 895,
+        "data_ml": 150,
+        "infrastructure_sre": 143,
         "data_engineering": 26,
-        "other": 122,
+        "other": 121,
         "security": 74,
         "mobile": 10,
         "frontend": 9,
-        "hardware": 21,
+        "hardware": 20,
         "backend": 28,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "other": 677,
-        "unicorn": 679,
-        "faang_plus": 138
+        "other": 665,
+        "unicorn": 677,
+        "faang_plus": 140
       },
       "top_companies": [
         {
@@ -5752,7 +5752,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 212
+          "jobs": 211
         },
         {
           "company": "OpenAI",
@@ -5764,7 +5764,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 33
+          "jobs": 32
         },
         {
           "company": "xAI",
@@ -5772,7 +5772,11 @@
         },
         {
           "company": "Leidos",
-          "jobs": 26
+          "jobs": 25
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 25
         },
         {
           "company": "Twilio",
@@ -5781,15 +5785,11 @@
         {
           "company": "Boeing",
           "jobs": 24
-        },
-        {
-          "company": "Stripe",
-          "jobs": 24
         }
       ],
-      "unique_companies": 230,
-      "avg_jobs_per_company": 6.5,
-      "timestamp": "2026-08-10T23:13:33.867717+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 6.53,
+      "timestamp": "2026-08-10T23:55:17.699801+00:00"
     }
   ]
 }
