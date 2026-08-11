@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 01:06:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 03:13:36 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloud Billing Associate at Elastic</title>
+      <link>https://jobs.elastic.co/jobs?gh_jid=7991494&amp;gh_jid=7991494</link>
+      <description>New grad role at Elastic in Bangalore, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 11 Aug 2026 02:52:24 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.elastic.co/jobs?gh_jid=7991494&amp;gh_jid=7991494</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -111,6 +118,13 @@
       <description>New grad role at Autodesk in Atlanta, GA, USA. Category: Security Engineering</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2</guid>
+    </item>
+    <item>
+      <title>Data Engineer at Booz Allen Hamilton</title>
+      <link>https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Data-Engineer_R0241523</link>
+      <description>New grad role at Booz Allen Hamilton in Arlington, VA. Category: Data Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Data-Engineer_R0241523</guid>
     </item>
     <item>
       <title>Data Scientist, Mid at Booz Allen Hamilton</title>
@@ -302,6 +316,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Systems-Engineer-II--Medical-Device-Product-Devepment_R73742-1</guid>
     </item>
     <item>
+      <title>Electromechanical Engineer - Level 2 at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electromechanical-Engineer---Level-2_R10244943</link>
+      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Other</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electromechanical-Engineer---Level-2_R10244943</guid>
+    </item>
+    <item>
       <title>Systems Engineer - Level 4 at Northrop Grumman</title>
       <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Systems-Engineer---Level-4_R10239064</link>
       <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Software Engineering</description>
@@ -335,27 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Aeronautical-Engineer---Aeronautical-Engineer_R10238799</guid>
-    </item>
-    <item>
-      <title>Ground Software System I&amp;T Engineer - AHT at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Ground-Software-System-Engineering-I-T-Lead---AHT_R10244151</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Ground-Software-System-Engineering-I-T-Lead---AHT_R10244151</guid>
-    </item>
-    <item>
-      <title>NATO Systems Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/NATO-Systems-Engineer_R10244213</link>
-      <description>New grad role at Northrop Grumman in United States-California-San Diego. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/NATO-Systems-Engineer_R10244213</guid>
-    </item>
-    <item>
-      <title>Modeling Simulation &amp; Analysis Engineer  (Level 2) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Modeling-Simulation---Analysis-Engineer---Level-2-_R10238394</link>
-      <description>New grad role at Northrop Grumman in United States-California-El Segundo. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Modeling-Simulation---Analysis-Engineer---Level-2-_R10238394</guid>
     </item>
   </channel>
 </rss>
