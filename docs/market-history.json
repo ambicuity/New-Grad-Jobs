@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-11T16:32:42.399488+00:00",
+    "last_updated": "2026-08-11T17:36:42.907999+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-13",
@@ -5738,38 +5738,38 @@
     },
     {
       "date": "2026-08-11",
-      "total_jobs": 1461,
+      "total_jobs": 1477,
       "categories": {
-        "software_engineering": 866,
-        "security": 74,
-        "data_ml": 155,
-        "data_engineering": 29,
+        "software_engineering": 889,
+        "infrastructure_sre": 139,
+        "data_ml": 159,
+        "data_engineering": 32,
+        "security": 72,
         "frontend": 10,
-        "infrastructure_sre": 143,
-        "other": 123,
-        "backend": 27,
-        "hardware": 18,
+        "other": 119,
+        "backend": 26,
+        "hardware": 15,
         "mobile": 10,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "other": 654,
-        "unicorn": 677,
-        "faang_plus": 130
+        "unicorn": 679,
+        "other": 675,
+        "faang_plus": 123
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 234
+          "jobs": 235
         },
         {
           "company": "Anduril Industries",
-          "jobs": 210
+          "jobs": 211
         },
         {
           "company": "OpenAI",
-          "jobs": 42
+          "jobs": 41
         },
         {
           "company": "Waymo",
@@ -5777,32 +5777,32 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 29
+          "jobs": 31
         },
         {
           "company": "xAI",
           "jobs": 29
         },
         {
-          "company": "Stripe",
-          "jobs": 24
-        },
-        {
-          "company": "Twilio",
-          "jobs": 24
+          "company": "Accenture",
+          "jobs": 27
         },
         {
           "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Leidos",
+          "company": "Stripe",
+          "jobs": 23
+        },
+        {
+          "company": "Twilio",
           "jobs": 23
         }
       ],
-      "unique_companies": 242,
-      "avg_jobs_per_company": 6.04,
-      "timestamp": "2026-08-11T16:32:42.398439+00:00"
+      "unique_companies": 237,
+      "avg_jobs_per_company": 6.23,
+      "timestamp": "2026-08-11T17:36:42.906910+00:00"
     }
   ]
 }
