@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-11T20:29:25.873670+00:00",
+    "last_updated": "2026-08-11T21:27:13.565753+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-13",
@@ -5738,25 +5738,25 @@
     },
     {
       "date": "2026-08-11",
-      "total_jobs": 1491,
+      "total_jobs": 1471,
       "categories": {
-        "software_engineering": 894,
+        "software_engineering": 891,
         "infrastructure_sre": 140,
-        "data_engineering": 30,
-        "security": 73,
-        "backend": 26,
-        "data_ml": 155,
-        "frontend": 10,
+        "data_engineering": 29,
+        "security": 71,
+        "backend": 25,
+        "data_ml": 150,
+        "frontend": 8,
         "mobile": 10,
-        "other": 131,
-        "hardware": 15,
+        "other": 126,
+        "hardware": 14,
         "quant_finance": 5,
         "product_management": 2
       },
       "tiers": {
+        "other": 661,
         "unicorn": 680,
-        "other": 684,
-        "faang_plus": 127
+        "faang_plus": 130
       },
       "top_companies": [
         {
@@ -5772,10 +5772,6 @@
           "jobs": 41
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 37
-        },
-        {
           "company": "Waymo",
           "jobs": 36
         },
@@ -5784,25 +5780,29 @@
           "jobs": 29
         },
         {
+          "company": "Booz Allen Hamilton",
+          "jobs": 28
+        },
+        {
           "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Stripe",
-          "jobs": 23
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
           "company": "Twilio",
           "jobs": 23
         },
         {
-          "company": "Scale AI",
+          "company": "Leidos",
           "jobs": 23
         }
       ],
-      "unique_companies": 235,
+      "unique_companies": 232,
       "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-08-11T20:29:25.872602+00:00"
+      "timestamp": "2026-08-11T21:27:13.564734+00:00"
     }
   ]
 }
