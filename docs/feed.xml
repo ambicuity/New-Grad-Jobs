@@ -5,8 +5,64 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 21:27:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 22:14:35 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - AI Developer Productivity at Baseten</title>
+      <link>https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1</link>
+      <description>New grad role at Baseten in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 22:10:03 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Applied AI Infrastructure at Nuro</title>
+      <link>https://nuro.ai/careersitem?gh_jid=8122990</link>
+      <description>New grad role at Nuro in Mountain View, California (HQ). Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 22:04:03 +0000</pubDate>
+      <guid isPermaLink="true">https://nuro.ai/careersitem?gh_jid=8122990</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Agent - Retail at Sierra</title>
+      <link>https://jobs.ashbyhq.com/sierra/93fea91f-a8a2-4084-8113-1cde73344e33</link>
+      <description>New grad role at Sierra in San Francisco, CA, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 22:03:09 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/sierra/93fea91f-a8a2-4084-8113-1cde73344e33</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Data Center at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5209858007</link>
+      <description>New grad role at xAI in Memphis, Tennessee; Southaven, Mississippi. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 22:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5209858007</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Testing Frameworks at Baseten</title>
+      <link>https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d</link>
+      <description>New grad role at Baseten in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 21:57:58 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d</guid>
+    </item>
+    <item>
+      <title>Software Engineer - Continuous Delivery at Baseten</title>
+      <link>https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce</link>
+      <description>New grad role at Baseten in San Francisco, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 21:51:26 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce</guid>
+    </item>
+    <item>
+      <title>Software Infrastructure Engineer, Flight Software (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8692270002?gh_jid=8692270002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 11 Aug 2026 21:49:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8692270002?gh_jid=8692270002</guid>
+    </item>
+    <item>
+      <title>Flight Software Infrastructure Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8692260002?gh_jid=8692260002</link>
+      <description>New grad role at SpaceX in Redmond, WA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 11 Aug 2026 21:49:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8692260002?gh_jid=8692260002</guid>
+    </item>
     <item>
       <title>Software Engineer, Financial Platform - Issuing at Block</title>
       <link>http://block.xyz/careers/jobs/5369947008?gh_jid=5369947008</link>
@@ -51,6 +107,13 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7908785</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
@@ -62,13 +125,6 @@
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083366</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -107,17 +163,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Documentation Platform at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
-      <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8054993</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054993</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Documentation Platform at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8054991</link>
+      <description>New grad role at MongoDB in New York City; Palo Alto; Seattle. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8054991</guid>
     </item>
     <item>
       <title>Software Engineer 3, Search Systems Replication &amp; Routing at MongoDB</title>
@@ -128,17 +184,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 19:55:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Data Migration at MongoDB</title>
@@ -296,66 +352,10 @@
     </item>
     <item>
       <title>Electrical Systems Engineer, C2 Integration at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5180570007?gh_jid=5180570007</link>
-      <description>New grad role at Anduril Industries in Ashville, Ohio, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5180570007?gh_jid=5180570007</guid>
-    </item>
-    <item>
-      <title>Electrical Systems Engineer, C2 Integration at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</link>
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5128421007?gh_jid=5128421007</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, Anti-Tamper at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5206527007?gh_jid=5206527007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5206527007?gh_jid=5206527007</guid>
-    </item>
-    <item>
-      <title>Embedded Systems Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5129670007?gh_jid=5129670007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5129670007?gh_jid=5129670007</guid>
-    </item>
-    <item>
-      <title>Finance Associate, Engineering at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5102166007?gh_jid=5102166007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5102166007?gh_jid=5102166007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike - Advanced Effects at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5035788007?gh_jid=5035788007</guid>
-    </item>
-    <item>
-      <title>Frontend Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Frontend Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 19:07:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007</guid>
     </item>
   </channel>
 </rss>
