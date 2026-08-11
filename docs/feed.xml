@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 03:13:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 04:44:18 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cloud Billing Associate at Elastic</title>
@@ -34,6 +34,20 @@
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 00:31:22 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Junior Data Engineer at Sequoia Connect</title>
+      <link>https://www.indeed.com/viewjob?jk=c4e6f2c9965b8f46</link>
+      <description>New grad role at Sequoia Connect in Remote, US. Category: Data Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c4e6f2c9965b8f46</guid>
+    </item>
+    <item>
+      <title>Junior Data Engineer at Sequoia Connect</title>
+      <link>https://www.indeed.com/viewjob?jk=798688cb780d9300</link>
+      <description>New grad role at Sequoia Connect in Remote, US. Category: Data Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=798688cb780d9300</guid>
     </item>
     <item>
       <title>Software Engineer (2-4 yrs in Python/NLP/BERT/GenAI) at Gartner</title>
@@ -90,6 +104,13 @@
       <description>New grad role at Mastercard in Pune, India. Category: Infrastructure &amp; SRE</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-I_R-286909-1</guid>
+    </item>
+    <item>
+      <title>Emulation Front-End Infrastructure Engineer at NVIDIA</title>
+      <link>https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Emulation-Front-End-Infrastructure-Engineer_JR2023066</link>
+      <description>New grad role at NVIDIA in US, CA, Santa Clara. Category: Frontend Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Emulation-Front-End-Infrastructure-Engineer_JR2023066</guid>
     </item>
     <item>
       <title>Mfg Systems Software Engineer at Intel</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Software-Engineer-Level-4--AHT-_R10244951</guid>
-    </item>
-    <item>
-      <title>Optical Subsystem I&amp;T Engineer - 2 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Optical-Subsystem-I-T-Engineer---2_R10242879</link>
-      <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Optical-Subsystem-I-T-Engineer---2_R10242879</guid>
-    </item>
-    <item>
-      <title>Manufacturing Engineer (Level 2 or Level 3) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Manufacturing-Engineer--Level-2-or-Level-3-_R10244921</link>
-      <description>New grad role at Northrop Grumman in United States-California-El Segundo. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Manufacturing-Engineer--Level-2-or-Level-3-_R10244921</guid>
-    </item>
-    <item>
-      <title>2026 Associate Aeronautical Engineer / Aeronautical Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Aeronautical-Engineer---Aeronautical-Engineer_R10238799</link>
-      <description>New grad role at Northrop Grumman in United States-Florida-Melbourne. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/XMLNAME-2026-Associate-Aeronautical-Engineer---Aeronautical-Engineer_R10238799</guid>
     </item>
   </channel>
 </rss>
