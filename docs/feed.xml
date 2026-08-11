@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 04:44:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 05:46:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Research Tools at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4981828008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY; San Francisco, CA | New York City, NY | Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 04:44:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4981828008</guid>
+    </item>
     <item>
       <title>Cloud Billing Associate at Elastic</title>
       <link>https://jobs.elastic.co/jobs?gh_jid=7991494&amp;gh_jid=7991494</link>
@@ -69,6 +76,13 @@
       <description>New grad role at PayPal in San Jose, California, United States of America. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Machine-Learning-Engineer_R0137221</guid>
+    </item>
+    <item>
+      <title>Data Scientist II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-280057</link>
+      <description>New grad role at Mastercard in Gurgaon, India. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-280057</guid>
     </item>
     <item>
       <title>Software Engineer II at Mastercard</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Other</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electromechanical-Engineer---Level-2_R10244943</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - Level 4 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Systems-Engineer---Level-4_R10239064</link>
-      <description>New grad role at Northrop Grumman in United States-Arizona-Chandler. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Systems-Engineer---Level-4_R10239064</guid>
-    </item>
-    <item>
-      <title>Software Engineer Level 4 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Software-Engineer-Level-4--AHT-_R10244951</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Software-Engineer-Level-4--AHT-_R10244951</guid>
     </item>
   </channel>
 </rss>

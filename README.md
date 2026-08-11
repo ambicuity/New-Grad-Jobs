@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1485<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1486<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->899<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->900<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->28<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->10<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->76<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->150<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->75<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->151<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->29<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->140<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->142<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->14<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->123<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->121<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,485** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,486** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,6 +84,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Anthropic | Software Engineer, Research Tools | San Francisco, CA / New York City, NY; San Francisco, CA / New York City, NY / Seattle, WA | Today | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/4981828008) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Gartner | Software Engineer (2-4 yrs in Python/NLP/BERT/GenAI) | HR, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6101e23e5449c220) |
@@ -93,9 +94,8 @@ Experience an advanced career journey with us! 🚀
 | Intel | Mfg Systems Software Engineer | US, Oregon, Hillsboro | Today | [Apply](https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/Mfg-Systems-Software-Engineer_JR0286221) |
 | HP | Security Software Engineer (R&D) | Spring, Texas, United States of America | Today | [Apply](https://hp.wd5.myworkdayjobs.com/job/Spring-Texas-United-States-of-America/Security-Software-Engineer--R-D-_3166702) |
 | Booz Allen Hamilton | Full-Stack Software Engineer | Chantilly, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Full-Stack-Software-Engineer_R0245774) |
-| CVS Health | Software Engineer - SRE, Retail & Pharmacy | RI - Woonsocket | Today | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/RI---Woonsocket/Software-Engineer---SRE--Retail---Pharmacy_R0987009) |
 
-**[View all 899 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 900 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -167,7 +167,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Peraton | Cyber Security Engineer | Reston, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9abeea27a45db0c0) |
 
-**[View all 76 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 75 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -178,15 +178,15 @@ Experience an advanced career journey with us! 🚀
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Adobe | Machine Learning Engineer 3 ( Firefly ) | Noida | Today | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-3---Firefly--_R171102-1) |
 | PayPal | Machine Learning Engineer | San Jose, California, United States of America | Today | [Apply](https://paypal.wd1.myworkdayjobs.com/job/San-Jose-California-United-States-of-America/Machine-Learning-Engineer_R0137221) |
+| Mastercard | Data Scientist II | Gurgaon, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Gurgaon-India/Data-Scientist-II_R-280057) |
 | Autodesk | Machine Learning Engineer 3D Geometry/ Multi-Modal | AMER - Canada - Ontario - Toronto - University Ave | Today | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/AMER---Canada---Ontario---Toronto---University-Ave/Machine-Learning-Engineer-3D-Geometry--Multi-Modal_26WD97765-1) |
 | Booz Allen Hamilton | Data Scientist, Mid | Reston, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Reston-VA/Data-Scientist--Mid_R0246463) |
 | Booz Allen Hamilton | Data Scientist | Shaw AFB, SC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Shaw-AFB-SC/Data-Scientist_R0245391) |
 | Booz Allen Hamilton | AI/ML Engineer | Chantilly, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/AI-ML-Engineer_R0245425) |
 | Pfizer | Machine Learning Data Engineer (AIM2) | United States - Massachusetts - Cambridge | Today | [Apply](https://pfizer.wd1.myworkdayjobs.com/job/United-States---Massachusetts---Cambridge/Machine-Learning-Data-Engineer--AIM2-_4961809-1) |
 | Leidos | Data Scientist w/ DoD Secret Clearance | Huntsville, AL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Data-Scientist-w--DoD-Secret-Clearance_R-00188989-1) |
-| Waymo | Machine Learning Engineer, Fleet Monitoring & Response | San Francisco, CA; Mountain View, CA | Today | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7939542) |
 
-**[View all 150 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 151 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -224,7 +224,7 @@ Experience an advanced career journey with us! 🚀
 | Leidos | Implementations/Activations Network Engineer II | Shiloh, IL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Implementations-Activations-Network-Engineer-II_R-00181943) |
 | Leidos | Implementations/Activations Network Engineer II | Shiloh, IL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Implementations-Activations-Network-Engineer-II_R-00181944) |
 
-**[View all 140 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 142 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -242,8 +242,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | SOUTHEAST BEHAVIORAL HOSPITAL | Registered Nurse (RN) - New Graduate | Cape Girardeau, MO, US | 5 days ago | [Apply](https://www.indeed.com/viewjob?jk=60c264d53c0036eb) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -282,7 +282,7 @@ Experience an advanced career journey with us! 🚀
 | Northrop Grumman | Guidance Navigation Control (GNC) Engineer - Level 2/3 | United States-California-Redondo Beach | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Guidance-Navigation-Control--GNC--Engineer---Level-2-3_R10244376) |
 | Northrop Grumman | Engineer Energetics Manufacturing Level 1 or 2 | United States-Utah-Corinne | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Corinne/Engineer-Energetics-Manufacturing-Level-1-or-2_R10241945) |
 
-**[View all 123 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 121 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -397,4 +397,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-11 04:44:18 UTC*
+*Last updated: 2026-08-11 05:46:19 UTC*
