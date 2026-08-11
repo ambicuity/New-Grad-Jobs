@@ -5,8 +5,57 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 15:33:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 16:32:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5200265007?gh_jid=5200265007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:57:52 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5200265007?gh_jid=5200265007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Communications at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8083944?gh_jid=8083944</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:57:47 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8083944?gh_jid=8083944</guid>
+    </item>
+    <item>
+      <title>IT Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:55:51 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</guid>
+    </item>
+    <item>
+      <title>Applied LLM Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5197253007?gh_jid=5197253007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:43:35 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5197253007?gh_jid=5197253007</guid>
+    </item>
+    <item>
+      <title>Software Engineer - ML Infrastructure at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:41:57 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007</guid>
+    </item>
+    <item>
+      <title>Robotics Software Engineer, Omen at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5183150007?gh_jid=5183150007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:34:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5183150007?gh_jid=5183150007</guid>
+    </item>
+    <item>
+      <title>Systems Security Engineer Anti-Tamper at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Security Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:34:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</guid>
+    </item>
     <item>
       <title>Software Engineer, Fleet Infrastructure at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5195644007?gh_jid=5195644007</link>
@@ -72,6 +121,13 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3 at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8083366</link>
       <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
@@ -85,13 +141,6 @@
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
     </item>
     <item>
-      <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
-    </item>
-    <item>
       <title>Software Engineer 3, Atlas Identity and Access Management at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=8069776</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
@@ -100,17 +149,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:02:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -191,17 +240,17 @@
     </item>
     <item>
       <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</link>
-      <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 15:00:54 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</link>
       <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 15:00:54 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178115007?gh_jid=5178115007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</link>
+      <description>New grad role at Anduril Industries in Fort Collins, Colorado, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 11 Aug 2026 15:00:54 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178117007?gh_jid=5178117007</guid>
     </item>
     <item>
       <title>Software Engineer, Robotics Tracking and Fusion at Anduril Industries</title>
@@ -307,55 +356,6 @@
       <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
       <pubDate>Tue, 11 Aug 2026 14:33:09 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007</guid>
-    </item>
-    <item>
-      <title>Client Platform Security Engineer at Stripe</title>
-      <link>https://stripe.com/jobs/search?gh_jid=7982720</link>
-      <description>New grad role at Stripe in New York, New York . Category: Security Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 14:30:16 +0000</pubDate>
-      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=7982720</guid>
-    </item>
-    <item>
-      <title>Product Data Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 11 Aug 2026 14:29:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007</guid>
-    </item>
-    <item>
-      <title>Product Data Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 11 Aug 2026 14:29:35 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Cloud OS at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007</link>
-      <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 14:29:24 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007</guid>
-    </item>
-    <item>
-      <title>Associate Application Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8048659</link>
-      <description>New grad role at Twilio in Remote - India. Category: Other</description>
-      <pubDate>Tue, 11 Aug 2026 14:26:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8048659</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer, Maneuver Dominance at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 14:25:18 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Tue, 11 Aug 2026 14:25:13 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
     </item>
   </channel>
 </rss>
