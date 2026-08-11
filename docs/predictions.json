@@ -1,35 +1,35 @@
 {
-  "outlook": "bullish",
+  "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1505,
-      "change_percent": 1.35
+      "total_jobs": 1495,
+      "change_percent": 0.47
     },
     "30_days": {
-      "total_jobs": 1540,
-      "change_percent": 3.7
+      "total_jobs": 1515,
+      "change_percent": 1.81
     }
   },
   "growing_categories": [
-    "faang_plus",
     "infrastructure_sre",
-    "software_engineering"
+    "data_engineering",
+    "other"
   ],
   "declining_categories": [
-    "data_engineering",
-    "other",
-    "unicorn"
+    "software_engineering",
+    "data_ml",
+    "faang_plus"
   ],
   "confidence": 75,
   "insights": [
-    "The market shows a strong upward trend, with the 7-day average (1512) significantly outpacing the 30-day average (1461), indicating accelerating hiring momentum.",
-    "FAANG+ companies are aggressively expanding their new graduate headcount, offsetting the minor contractions seen in the unicorn and 'other' company tiers.",
-    "While software engineering remains the dominant category, data engineering is experiencing a notable cooling period, suggesting a shift in focus toward core infrastructure and generalist development roles."
+    "The market is currently showing a stabilization trend, with the 7-day average (1504) consistently outperforming the 30-day average (1463), suggesting a slight upward momentum.",
+    "While FAANG+ and Unicorn tiers are seeing a contraction in new graduate roles, the 'Other' category is absorbing demand, indicating a broader distribution of hiring across mid-market companies.",
+    "The decline in core Software Engineering roles is being partially offset by growth in specialized infrastructure and data engineering segments, reflecting a shift toward operational efficiency in new graduate hiring."
   ],
-  "generated_at": "2026-08-10T01:19:11.730582+00:00",
+  "generated_at": "2026-08-11T01:06:09.523622+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-12",
-    "end": "2026-08-10"
+    "start": "2026-05-13",
+    "end": "2026-08-11"
   }
 }
