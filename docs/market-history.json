@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T16:14:42.361558+00:00",
+    "last_updated": "2026-08-12T17:18:47.082728+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,25 +5751,25 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1481,
+      "total_jobs": 1486,
       "categories": {
-        "software_engineering": 894,
-        "infrastructure_sre": 134,
+        "data_ml": 161,
+        "software_engineering": 904,
+        "infrastructure_sre": 133,
         "data_engineering": 27,
-        "security": 69,
-        "data_ml": 160,
-        "other": 124,
-        "hardware": 24,
+        "security": 68,
+        "other": 121,
         "backend": 26,
+        "hardware": 23,
         "frontend": 7,
         "mobile": 10,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 682,
-        "other": 662,
-        "faang_plus": 137
+        "unicorn": 684,
+        "other": 661,
+        "faang_plus": 141
       },
       "top_companies": [
         {
@@ -5782,7 +5782,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 41
+          "jobs": 42
         },
         {
           "company": "Waymo",
@@ -5790,15 +5790,15 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 34
+          "jobs": 35
+        },
+        {
+          "company": "Leidos",
+          "jobs": 33
         },
         {
           "company": "xAI",
           "jobs": 30
-        },
-        {
-          "company": "Leidos",
-          "jobs": 29
         },
         {
           "company": "Affirm",
@@ -5813,9 +5813,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 237,
-      "avg_jobs_per_company": 6.25,
-      "timestamp": "2026-08-12T16:14:42.360490+00:00"
+      "unique_companies": 235,
+      "avg_jobs_per_company": 6.32,
+      "timestamp": "2026-08-12T17:18:47.081731+00:00"
     }
   ]
 }
