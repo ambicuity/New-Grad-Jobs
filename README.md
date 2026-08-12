@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1479<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1468<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->893<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->894<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->25<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->10<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->72<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->168<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->26<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->122<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->157<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->27<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->124<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->5<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->4<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->23<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->126<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->123<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,479** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,468** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Figma | Software Engineer - Traffic | San Francisco, CA • New York, NY • United States | Today | [Apply](https://boards.greenhouse.io/figma/jobs/6102379004?gh_jid=6102379004) |
 | Figma | Software Engineer - Production Engineering | San Francisco, CA • New York, NY • United States | Today | [Apply](https://boards.greenhouse.io/figma/jobs/5551649004?gh_jid=5551649004) |
 
-**[View all 893 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 894 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -183,7 +183,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | 2026 Early Career Flight Test Engineer, Mission Autonomy | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5185089007?gh_jid=5185089007) |
 | Anduril Industries | 2026 Early Career Manufacturing Engineer | Costa Mesa, California, United States; Irvine, California, United States; Santa Ana, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176254007?gh_jid=5176254007) |
 
-**[View all 168 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 157 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -196,13 +196,13 @@ Experience an advanced career journey with us! 🚀
 | MongoDB | Associate Technical Services Engineer II | Austin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8044218) |
 | MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 | Fastly | Data Engineer | San Francisco, CA | Today | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=8048891) |
+| Weber School District | [INT] District Office - Assessment and School Improvement Data Engineer (29361) | Washington Terrace, UT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=44605a5b06fc3000) |
 | Loblaw | Data Engineer I | Brampton, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=9e59ed5d096299da) |
 | Booz Allen Hamilton | Data Engineer | Fayetteville, NC | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Fayetteville-NC/Data-Engineer_R0246870) |
 | Figma | Data Engineer | San Francisco, CA • New York, NY • United States | 1 day ago | [Apply](https://boards.greenhouse.io/figma/jobs/5220003004?gh_jid=5220003004) |
 | Cooke | Associate Data Engineer | Saint John, NB, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=4860f53dee206a7e) |
-| Mastercard | Data Engineer II | Toronto, Canada (Ethoca) | 2 days ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Toronto-Canada-Ethoca/Data-Engineer-II_R-286713) |
 
-**[View all 26 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 27 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -210,6 +210,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Okta | Site Reliability Engineer II | Bengaluru, India | Today | [Apply](https://www.okta.com/company/careers/opportunity/8121308?gh_jid=8121308) |
+| Ausenco | Junior Structural Engineer - (Ports & Logistics) | Burnaby, BC, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6260d076c2284b05) |
 | xAI | Associate Data Center Operations Technician | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5168434007) |
 | xAI | Facilities Infrastructure Engineer (Data Center Infrastructure) | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5182374007) |
 | xAI | Network Engineer | Memphis, Tennessee | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5207067007) |
@@ -218,10 +220,8 @@ Experience an advanced career journey with us! 🚀
 | xAI | Software Engineer - Networking Software and Services | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4946696007) |
 | SpaceX | Software Infrastructure Engineer, Flight Software (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8692270002?gh_jid=8692270002) |
 | SpaceX | Flight Software Infrastructure Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8692260002?gh_jid=8692260002) |
-| Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&gh_jid=8122623) |
-| Anduril Industries | Network Engineer, Factory Systems and Operational Technology | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5118028007?gh_jid=5118028007) |
 
-**[View all 122 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 124 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -238,7 +238,6 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| ARUP Laboratories | Technologist, Trainee | Salt Lake City, UT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a2015ad8825be0b4) |
 | SOUTHEAST BEHAVIORAL HOSPITAL | Registered Nurse (RN) - New Graduate | Cape Girardeau, MO, US | 6 days ago | [Apply](https://www.indeed.com/viewjob?jk=60c264d53c0036eb) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
@@ -270,17 +269,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Third Bridge | Associate, Sales and Business Development (Mumbai) | Mumbai | Today | [Apply](https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101) |
-| Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=d0e488b270d2cd34) |
-| Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=969d6efde67ca6db) |
 | Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=4c9996a101949a19) |
 | Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=935fee572ca2ab81) |
+| Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=d0e488b270d2cd34) |
+| Ford Motor Company | Junior Process Engineer - Powertrain Assembly | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=969d6efde67ca6db) |
 | SKIL Global | Junior Frappe Framework Developer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a41cccecc2d3f6d) |
-| Jabil | Project Engineer I | Clinton, MA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=2e71f428292d5236) |
 | — | Engineering Technician II - W/S Construction 1 | NC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=f0263a9471f8a109) |
+| Jabil | Project Engineer I | Clinton, MA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=2e71f428292d5236) |
 | Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| Symphonic Distribution | Business and Legal Affairs, Associate | Charlotte, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d412466284554eba) |
+| Waters | Development Engineer I | Goleta, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=23fec4909f629be6) |
 
-**[View all 126 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 123 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -395,4 +394,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-12 08:47:30 UTC*
+*Last updated: 2026-08-12 09:52:20 UTC*
