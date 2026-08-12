@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T17:18:47.082728+00:00",
+    "last_updated": "2026-08-12T18:14:19.347360+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,25 +5751,25 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1486,
+      "total_jobs": 1501,
       "categories": {
+        "software_engineering": 935,
         "data_ml": 161,
-        "software_engineering": 904,
-        "infrastructure_sre": 133,
-        "data_engineering": 27,
-        "security": 68,
-        "other": 121,
-        "backend": 26,
-        "hardware": 23,
-        "frontend": 7,
+        "infrastructure_sre": 128,
         "mobile": 10,
+        "data_engineering": 25,
+        "security": 68,
+        "other": 113,
+        "hardware": 23,
+        "backend": 25,
+        "frontend": 7,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 684,
-        "other": 661,
-        "faang_plus": 141
+        "other": 677,
+        "unicorn": 686,
+        "faang_plus": 138
       },
       "top_companies": [
         {
@@ -5801,21 +5801,21 @@
           "jobs": 30
         },
         {
+          "company": "Accenture",
+          "jobs": 29
+        },
+        {
           "company": "Affirm",
           "jobs": 24
         },
         {
           "company": "Twilio",
           "jobs": 23
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 23
         }
       ],
-      "unique_companies": 235,
-      "avg_jobs_per_company": 6.32,
-      "timestamp": "2026-08-12T17:18:47.081731+00:00"
+      "unique_companies": 227,
+      "avg_jobs_per_company": 6.61,
+      "timestamp": "2026-08-12T18:14:19.346107+00:00"
     }
   ]
 }
