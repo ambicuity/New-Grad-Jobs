@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T14:08:39.425445+00:00",
+    "last_updated": "2026-08-12T15:15:33.536524+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,30 +5751,30 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1471,
+      "total_jobs": 1479,
       "categories": {
-        "software_engineering": 891,
-        "data_ml": 157,
-        "infrastructure_sre": 131,
+        "software_engineering": 892,
         "security": 72,
-        "other": 125,
-        "data_engineering": 26,
+        "data_ml": 156,
+        "other": 128,
+        "infrastructure_sre": 132,
+        "data_engineering": 27,
+        "hardware": 23,
         "backend": 26,
-        "hardware": 20,
         "frontend": 7,
         "mobile": 10,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "other": 651,
+        "other": 661,
         "unicorn": 681,
-        "faang_plus": 139
+        "faang_plus": 137
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 234
+          "jobs": 233
         },
         {
           "company": "Anduril Industries",
@@ -5790,7 +5790,7 @@
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 30
+          "jobs": 32
         },
         {
           "company": "xAI",
@@ -5798,7 +5798,7 @@
         },
         {
           "company": "Leidos",
-          "jobs": 27
+          "jobs": 26
         },
         {
           "company": "Affirm",
@@ -5813,9 +5813,9 @@
           "jobs": 23
         }
       ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.42,
-      "timestamp": "2026-08-12T14:08:39.424455+00:00"
+      "unique_companies": 236,
+      "avg_jobs_per_company": 6.27,
+      "timestamp": "2026-08-12T15:15:33.534286+00:00"
     }
   ]
 }
