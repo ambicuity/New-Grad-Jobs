@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 21:35:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 22:09:07 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Microsoft Power Platform Developer at Kyndryl</title>
@@ -13,6 +13,13 @@
       <description>New grad role at Kyndryl in KA, IN. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ae9156f4e1c7c03</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Developer Platform at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5210930007?gh_jid=5210930007</link>
+      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 21:51:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5210930007?gh_jid=5210930007</guid>
     </item>
     <item>
       <title>Automation Engineer I at Flexport</title>
@@ -65,17 +72,17 @@
     </item>
     <item>
       <title>Machine Learning Engineer II (Servicing ML) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7719653003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7719653003</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer II (Servicing ML) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7719651003</link>
       <description>New grad role at Affirm in Remote US. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7719651003</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer II (Servicing ML) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7719653003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Data Science &amp; ML</description>
+      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7719653003</guid>
     </item>
     <item>
       <title>Machine Learning Engineer II (Underwriting ML) at Affirm</title>
@@ -93,6 +100,13 @@
     </item>
     <item>
       <title>Product Security Engineer II at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7796534003</link>
+      <description>New grad role at Affirm in Remote US. Category: Security Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7796534003</guid>
+    </item>
+    <item>
+      <title>Product Security Engineer II at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7796530003</link>
       <description>New grad role at Affirm in Remote Canada. Category: Security Engineering</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
@@ -106,11 +120,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7796536003</guid>
     </item>
     <item>
-      <title>Product Security Engineer II at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7796534003</link>
-      <description>New grad role at Affirm in Remote US. Category: Security Engineering</description>
+      <title>Software Engineer I, Backend (Collections) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7807506003</link>
+      <description>New grad role at Affirm in Remote Spain. Category: Backend Engineering</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7796534003</guid>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7807506003</guid>
     </item>
     <item>
       <title>Software Engineer I, Backend (Collections) at Affirm</title>
@@ -118,13 +132,6 @@
       <description>New grad role at Affirm in Remote Poland. Category: Backend Engineering</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7807508003</guid>
-    </item>
-    <item>
-      <title>Software Engineer I, Backend (Collections) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7807506003</link>
-      <description>New grad role at Affirm in Remote Spain. Category: Backend Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7807506003</guid>
     </item>
     <item>
       <title>Software Engineer II, Backend (Capital Orchestration) at Affirm</title>
@@ -135,17 +142,17 @@
     </item>
     <item>
       <title>Software Engineer II, Back-end (Card Mgmt &amp; Transaction Processing) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7777094003</link>
-      <description>New grad role at Affirm in Remote Canada. Category: Backend Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7777094003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Back-end (Card Mgmt &amp; Transaction Processing) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7766277003</link>
       <description>New grad role at Affirm in Remote US. Category: Backend Engineering</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7766277003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Back-end (Card Mgmt &amp; Transaction Processing) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7777094003</link>
+      <description>New grad role at Affirm in Remote Canada. Category: Backend Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7777094003</guid>
     </item>
     <item>
       <title>Software Engineer II, Backend (Collections) at Affirm</title>
@@ -198,17 +205,17 @@
     </item>
     <item>
       <title>Software Engineer II, Backend (Unified Data Platform) at Affirm</title>
-      <link>https://job-boards.greenhouse.io/affirm/jobs/7800444003</link>
-      <description>New grad role at Affirm in Remote US. Category: Backend Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7800444003</guid>
-    </item>
-    <item>
-      <title>Software Engineer II, Backend (Unified Data Platform) at Affirm</title>
       <link>https://job-boards.greenhouse.io/affirm/jobs/7800446003</link>
       <description>New grad role at Affirm in Remote Canada. Category: Backend Engineering</description>
       <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7800446003</guid>
+    </item>
+    <item>
+      <title>Software Engineer II, Backend (Unified Data Platform) at Affirm</title>
+      <link>https://job-boards.greenhouse.io/affirm/jobs/7800444003</link>
+      <description>New grad role at Affirm in Remote US. Category: Backend Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 19:12:11 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/affirm/jobs/7800444003</guid>
     </item>
     <item>
       <title>Software Engineer II (Money Movement &amp; Card Ledger) at Affirm</title>
@@ -349,13 +356,6 @@
       <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
       <pubDate>Wed, 12 Aug 2026 17:04:27 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/0b57e309-426d-4f5c-a28c-6dd941b84703</guid>
-    </item>
-    <item>
-      <title>Flight Software Engineer, Embedded C/C++, Air Dominance &amp; Strike at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 16:35:13 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4164476007?gh_jid=4164476007</guid>
     </item>
   </channel>
 </rss>
