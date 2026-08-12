@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 10:50:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 11:39:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cloud Infrastructure Engineer at Snowflake</title>
@@ -246,25 +246,11 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8614188002?gh_jid=8614188002</guid>
     </item>
     <item>
-      <title>Software Developer at Aris Global Software Pvt Ltd</title>
-      <link>https://in.indeed.com/viewjob?jk=f87cdfef3946151d</link>
-      <description>New grad role at Aris Global Software Pvt Ltd in Remote, IN. Category: Software Engineering</description>
+      <title>Graduate Trainee Program at New media Guru Pvt. Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=d3742be4ad4edd61</link>
+      <description>New grad role at New media Guru Pvt. Ltd in HR, IN. Category: Other</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f87cdfef3946151d</guid>
-    </item>
-    <item>
-      <title>Junior Process Engineer - Powertrain Assembly at Ford Motor Company</title>
-      <link>https://in.indeed.com/viewjob?jk=d0e488b270d2cd34</link>
-      <description>New grad role at Ford Motor Company in TN, IN. Category: Other</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d0e488b270d2cd34</guid>
-    </item>
-    <item>
-      <title>Junior Process Engineer - Powertrain Assembly at Ford Motor Company</title>
-      <link>https://in.indeed.com/viewjob?jk=969d6efde67ca6db</link>
-      <description>New grad role at Ford Motor Company in TN, IN. Category: Other</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=969d6efde67ca6db</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d3742be4ad4edd61</guid>
     </item>
     <item>
       <title>Junior Process Engineer - Powertrain Assembly at Ford Motor Company</title>
@@ -309,6 +295,20 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=935fee572ca2ab81</guid>
     </item>
     <item>
+      <title>Junior Process Engineer - Powertrain Assembly at Ford Motor Company</title>
+      <link>https://in.indeed.com/viewjob?jk=d0e488b270d2cd34</link>
+      <description>New grad role at Ford Motor Company in TN, IN. Category: Other</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d0e488b270d2cd34</guid>
+    </item>
+    <item>
+      <title>Junior Process Engineer - Powertrain Assembly at Ford Motor Company</title>
+      <link>https://in.indeed.com/viewjob?jk=969d6efde67ca6db</link>
+      <description>New grad role at Ford Motor Company in TN, IN. Category: Other</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=969d6efde67ca6db</guid>
+    </item>
+    <item>
       <title>Role Data Engineer at Unknown</title>
       <link>https://in.indeed.com/viewjob?jk=1a8bf4e86509a6d1</link>
       <description>New grad role at Unknown in TS, IN. Category: Data Engineering</description>
@@ -316,11 +316,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=1a8bf4e86509a6d1</guid>
     </item>
     <item>
-      <title>Engineer I/ II Product Development at Copeland</title>
-      <link>https://in.indeed.com/viewjob?jk=d4c5f3dd59278eaa</link>
-      <description>New grad role at Copeland in MH, IN. Category: Other</description>
+      <title>Backend Engineer (Junior) at Movate</title>
+      <link>https://in.indeed.com/viewjob?jk=ff6053b274f9380d</link>
+      <description>New grad role at Movate in TN, IN. Category: Backend Engineering</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d4c5f3dd59278eaa</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ff6053b274f9380d</guid>
     </item>
     <item>
       <title>Junior Frappe Framework Developer at SKIL Global</title>
@@ -330,6 +330,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6a41cccecc2d3f6d</guid>
     </item>
     <item>
+      <title>Engineer I/ II Product Development at Copeland</title>
+      <link>https://in.indeed.com/viewjob?jk=d4c5f3dd59278eaa</link>
+      <description>New grad role at Copeland in MH, IN. Category: Other</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=d4c5f3dd59278eaa</guid>
+    </item>
+    <item>
       <title>Junior Structural Engineer - (Ports &amp; Logistics) at Ausenco</title>
       <link>https://ca.indeed.com/viewjob?jk=6260d076c2284b05</link>
       <description>New grad role at Ausenco in Burnaby, BC, CA. Category: Infrastructure &amp; SRE</description>
@@ -337,25 +344,18 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=6260d076c2284b05</guid>
     </item>
     <item>
-      <title>Engineering Technician II - W/S Construction 1 at Unknown</title>
-      <link>https://www.indeed.com/viewjob?jk=f0263a9471f8a109</link>
-      <description>New grad role at Unknown in NC, US. Category: Other</description>
+      <title>Associate, Manufacturing Engineering at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=0d82d37e67317643</link>
+      <description>New grad role at L3Harris in Tempe, AZ, US. Category: Other</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f0263a9471f8a109</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0d82d37e67317643</guid>
     </item>
     <item>
-      <title>Project Engineer I at Jabil</title>
-      <link>https://www.indeed.com/viewjob?jk=2e71f428292d5236</link>
-      <description>New grad role at Jabil in Clinton, MA, US. Category: Other</description>
+      <title>Associate, Manufacturing Engineer at L3Harris</title>
+      <link>https://www.indeed.com/viewjob?jk=012a4a9518a73999</link>
+      <description>New grad role at L3Harris in Camden, AR, US. Category: Other</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2e71f428292d5236</guid>
-    </item>
-    <item>
-      <title>Research Scientist Graduate (Foundation Model, Generative AI) - 2026 Start (PhD) at ByteDance</title>
-      <link>https://www.indeed.com/viewjob?jk=d3b237b839f027f3</link>
-      <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d3b237b839f027f3</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=012a4a9518a73999</guid>
     </item>
   </channel>
 </rss>
