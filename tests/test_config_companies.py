@@ -106,9 +106,11 @@ def test_workday_entries_use_careers_urls_not_cxs_api_urls() -> None:
         url = entry['workday_url']
         parsed = urlparse(url)
         assert parsed.scheme == 'https', f"{entry['name']}: not https -> {url}"
-        # Anchored to the end of the host: a substring check would also accept
-        # "myworkdayjobs.com.evil.example", which is a different origin entirely.
-        assert parsed.netloc.endswith('.myworkdayjobs.com'), (
+        # hostname, not netloc: it drops any port and userinfo and lowercases the
+        # host, so "…myworkdayjobs.com:443" and mixed-case hosts are judged on the
+        # host alone. Anchored to the end, since a substring check would also
+        # accept "myworkdayjobs.com.evil.example" — a different origin entirely.
+        assert parsed.hostname and parsed.hostname.endswith('.myworkdayjobs.com'), (
             f"{entry['name']}: not a Workday host -> {url}"
         )
         assert '/wday/cxs/' not in url, (

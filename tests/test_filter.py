@@ -12,6 +12,9 @@ Tests cover the filter_jobs() function's handling of:
 import sys
 import os
 from datetime import datetime, timedelta, timezone
+from typing import Any, Dict
+
+import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -679,55 +682,70 @@ class TestGraduateCohortSignals:
     shipped signal list, not just the matching code.
     """
 
-    def _live_config(self):
-        import yaml
+    # Fixed so recency never depends on the wall clock: these tests are about
+    # signal matching, and a date-driven failure here would point at the wrong
+    # thing. Paired with a max_age_days override wide enough that the date can
+    # never age out. See CONTRIBUTING.md — tests must be deterministic.
+    POSTED_AT = "2026-08-12T12:00:00"
+    MAX_AGE_DAYS = 36500
+
+    def _live_config(self) -> Dict[str, Any]:
+        """Load the shipped config with recency widened out of the way.
+
+        Returns a copy — the caller must not mutate what the YAML load returned,
+        since every test in this class reads the same file.
+        """
         root = os.path.join(os.path.dirname(__file__), '..')
         with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
+            config = yaml.safe_load(f)
+        return {**config, 'filtering': {**config['filtering'], 'max_age_days': self.MAX_AGE_DAYS}}
 
-    def test_config_lists_current_cohort_years(self):
+    def _job(self, title: str, location: str = "San Jose, California, United States") -> Dict[str, Any]:
+        """Build a job fixture with a fixed posting date."""
+        return _make_job(title=title, location=location, posted_at=self.POSTED_AT)
+
+    def test_config_lists_current_cohort_years(self) -> None:
         """The config must carry the in-flight cohort years, not just past ones."""
         signals = self._live_config()['filtering']['new_grad_signals']
         for expected in ("2026 start", "2027 start", "2027"):
             assert expected in signals, f"'{expected}' missing from new_grad_signals"
 
-    def test_config_lists_bare_graduate_signal(self):
+    def test_config_lists_bare_graduate_signal(self) -> None:
         """'graduate' alone must match "<Role> Graduate (<Team>)" style titles."""
         assert "graduate" in self._live_config()['filtering']['new_grad_signals']
 
-    def test_graduate_2027_start_title_passes(self):
-        """A real ByteDance-style cohort title should pass end-to-end.
+    def test_bare_graduate_title_passes(self) -> None:
+        """A "<Role> Graduate" title with no cohort year must pass on "graduate" alone.
 
-        The title deliberately avoids "software engineer" and every other
-        pre-existing signal, so it only survives via "graduate" / "2027 start".
+        Carries no year and no other new-grad keyword, so deleting "graduate"
+        from the config fails this test — which is the point of having it. Note
+        "graduate" is not a *strong* signal, so the track signal ("platform" /
+        "engineer") is doing required work here.
         """
-        jobs = [_make_job(
-            title="Research Engineer Graduate (Monetization Technology) - 2027 Start",
-            location="San Jose, California, United States",
-        )]
+        jobs = [self._job("Platform Engineer Graduate")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 1
 
-    def test_year_only_2027_title_passes(self):
+    def test_cohort_year_2027_title_passes(self) -> None:
         """'2027' alone is a strong signal, so no track signal is required."""
-        jobs = [_make_job(title="Technology Cohort 2027", location="Seattle, WA")]
+        jobs = [self._job("Technology Cohort 2027", location="Seattle, WA")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 1
 
-    def test_graduate_cohort_title_still_excludes_seniority(self):
+    def test_real_bytedance_cohort_title_passes(self) -> None:
+        """The composite title shape seen in the wild, carrying both new signals."""
+        jobs = [self._job("Research Engineer Graduate (Monetization Technology) - 2027 Start")]
+        result = filter_jobs(jobs, self._live_config())
+        assert len(result) == 1
+
+    def test_graduate_cohort_title_still_excludes_seniority(self) -> None:
         """Cohort signals must not override the seniority exclusion list."""
-        jobs = [_make_job(
-            title="Senior Research Engineer Graduate (AML) - 2027 Start",
-            location="San Jose, California, United States",
-        )]
+        jobs = [self._job("Senior Research Engineer Graduate (AML) - 2027 Start")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 0
 
-    def test_graduate_cohort_title_still_excludes_interns(self):
+    def test_graduate_cohort_title_still_excludes_interns(self) -> None:
         """2027 intern reqs remain out of scope — this board tracks full-time roles."""
-        jobs = [_make_job(
-            title="Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer",
-            location="San Jose, California, United States",
-        )]
+        jobs = [self._job("Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 0
