@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T19:26:26.536409+00:00",
+    "last_updated": "2026-08-12T20:18:04.387324+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,25 +5751,25 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1504,
+      "total_jobs": 1446,
       "categories": {
-        "software_engineering": 931,
-        "data_engineering": 26,
-        "data_ml": 161,
+        "infrastructure_sre": 137,
         "security": 68,
+        "software_engineering": 900,
+        "data_engineering": 26,
+        "data_ml": 158,
         "backend": 25,
-        "infrastructure_sre": 139,
         "mobile": 10,
-        "other": 109,
-        "hardware": 22,
-        "frontend": 7,
+        "other": 92,
+        "hardware": 16,
+        "frontend": 8,
         "quant_finance": 4,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 683,
-        "other": 676,
-        "faang_plus": 145
+        "other": 674,
+        "unicorn": 672,
+        "faang_plus": 100
       },
       "top_companies": [
         {
@@ -5785,12 +5785,12 @@
           "jobs": 42
         },
         {
-          "company": "Waymo",
+          "company": "Booz Allen Hamilton",
           "jobs": 36
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 35
+          "company": "Waymo",
+          "jobs": 36
         },
         {
           "company": "Leidos",
@@ -5802,20 +5802,20 @@
         },
         {
           "company": "Accenture",
-          "jobs": 28
-        },
-        {
-          "company": "Northrop Grumman",
           "jobs": 26
         },
         {
           "company": "Affirm",
           "jobs": 24
+        },
+        {
+          "company": "Twilio",
+          "jobs": 23
         }
       ],
-      "unique_companies": 228,
-      "avg_jobs_per_company": 6.6,
-      "timestamp": "2026-08-12T19:26:26.535317+00:00"
+      "unique_companies": 231,
+      "avg_jobs_per_company": 6.26,
+      "timestamp": "2026-08-12T20:18:04.386341+00:00"
     }
   ]
 }
