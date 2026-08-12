@@ -177,3 +177,149 @@ endpoint as of 2026-05-16:
 Microsoft, Oracle, Salesforce, ServiceNow, JPMorgan, Goldman Sachs, Morgan
 Stanley, etc. are configured under Workday but currently fail with `HTTP 422`
 — see [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+
+## 2026-08-12 — CSV sourcing sweep (55 boards added)
+
+Source data: a 359-posting / 168-employer new-grad CSV export (`jobs.csv`,
+columns `company,title,location,…,apply_url`) covering postings published
+2026-08-01 → 2026-08-12. Each row's `apply_url` identifies the employer's ATS,
+which makes the export usable as a candidate list rather than a job dump — the
+scraper still fetches every listing itself, so nothing from the CSV is imported
+as job data.
+
+Method:
+
+1. Normalized all 168 employer names and diffed them against `config.yml` —
+   20 were already configured, 148 were not.
+2. Derived a board endpoint from each `apply_url` on a supported ATS
+   (Greenhouse / Lever / Ashby / Workday).
+3. For the remainder, probed the four supported ATSes with slug guesses derived
+   from the employer name, then confirmed each hit by matching the CSV's job
+   titles against the titles the board returned (this is what caught Nextdoor,
+   PathAI, Vorticity, Luma AI, and friends).
+4. Fetched every surviving endpoint live on 2026-08-12; only boards returning a
+   non-empty job list were added. Counts below are that probe's totals — total
+   open reqs on the board, not new-grad matches.
+
+### Greenhouse (17 added)
+
+| Company | Slug | Job count (probe) | Found via |
+|---|---|---|---|
+| Allen Control Systems | `allencontrolsystems` | 68 | CSV apply URL |
+| ATOMS | `cssmerge` | 238 | CSV apply URL |
+| Bot Auto | `botauto` | 18 | CSV apply URL |
+| Clarity Innovations | `clarityinnovates` | 35 | CSV apply URL |
+| Cottingham & Butler | `cottinghambutlerinsuranceservicesinc` | 114 | CSV apply URL |
+| DRW | `drweng` | 165 | CSV apply URL |
+| Extend | `extend` | 19 | CSV apply URL |
+| Jane Street | `janestreet` | 232 | CSV apply URL |
+| Mobiik | `mobiik` | 16 | CSV apply URL |
+| NetSage | `netsage` | 36 | slug probe |
+| NewsBreak | `newsbreak` | 38 | CSV apply URL |
+| Nextdoor | `nextdoor` | 17 | slug probe |
+| Orion Innovation | `orioninnovation` | 85 | slug probe |
+| PathAI | `pathai` | 8 | slug probe |
+| Point72 | `point72` | 232 | CSV apply URL |
+| Striim | `striiminc` | 9 | CSV apply URL |
+| Toloka | `toloka` | 13 | slug probe |
+
+Note: Jane Street and Point72 were listed under "Not added — quant firms use
+custom careers sites" on 2026-05-16. Both run public Greenhouse boards
+(`janestreet`, `point72`) as of this sweep, so that entry was wrong and is now
+superseded.
+
+### Lever (5 added)
+
+| Company | Slug | Job count (probe) | Found via |
+|---|---|---|---|
+| DEUNA | `deuna` | 14 | CSV apply URL |
+| Institute of Foundation Models | `ifm-us` | 44 | CSV apply URL |
+| Layup Parts | `layup` | 27 | CSV apply URL |
+| Welo Global | `weloglobal` | 621 | CSV apply URL |
+| zaimler | `zaimler` | 12 | CSV apply URL |
+
+This takes Lever from 2 boards to 7 — the first additions since the 2026-05-16
+cleanup concluded that most Lever boards had migrated away.
+
+### Ashby (10 added)
+
+| Company | Slug | Job count (probe) | Found via |
+|---|---|---|---|
+| BJAK | `bjakcareer` | 1,331 | CSV apply URL |
+| David AI | `david-ai` | 10 | slug probe |
+| Luma AI | `lumaai` | 51 | slug probe |
+| Netic | `netic` | 28 | CSV apply URL |
+| Scientech Research LLC | `scientech-research` | 17 | CSV apply URL |
+| Sunday Robotics | `sunday` | 31 | CSV apply URL |
+| Tamarind Bio | `tamarindbio` | 7 | slug probe |
+| Top Hat | `top-hat` | 9 | CSV apply URL |
+| Truelogic | `truelogic` | 142 | CSV apply URL |
+| Vorticity | `vorticity` | 2 | slug probe |
+
+### Workday (23 added)
+
+All 23 answered the CXS jobs API with `HTTP 200` on 2026-08-12 — none are in the
+`HTTP 422` cohort described in [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+
+| Company | Careers site | Job count (probe) |
+|---|---|---|
+| ALS | `alsglobal.wd103.myworkdayjobs.com/external` | 447 |
+| Asurion | `asurion.wd5.myworkdayjobs.com/USExtPrivate` | 10 |
+| Clio | `clio.wd3.myworkdayjobs.com/ClioCareerSite` | 154 |
+| Copart | `copart.wd12.myworkdayjobs.com/Copart` | 316 |
+| DataRobot | `datarobot.wd1.myworkdayjobs.com/DataRobot_External_Careers` | 25 |
+| Dematic | `kiongroup.wd3.myworkdayjobs.com/KION_SCS` | 374 |
+| Equifax | `equifax.wd5.myworkdayjobs.com/External` | 154 |
+| Flex | `flextronics.wd1.myworkdayjobs.com/Careers` | 1,488 |
+| GE Aerospace | `geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite` | 438 |
+| IFF | `iff.wd5.myworkdayjobs.com/IFF_Careers` | 376 |
+| KBR, Inc. | `kbr.wd5.myworkdayjobs.com/KBR_Careers` | 1,658 |
+| KION Group | `kiongroup.wd3.myworkdayjobs.com/KIONGroup` | 1,015 |
+| Philips | `philips.wd3.myworkdayjobs.com/jobs-and-careers` | 923 |
+| PPG | `ppg.wd5.myworkdayjobs.com/ppg_careers` | 775 |
+| Radiance Technologies | `radiancetech.wd12.myworkdayjobs.com/Radiance_External` | 56 |
+| RBC | `rbc.wd3.myworkdayjobs.com/RBCGLOBAL1` | 1,416 |
+| Revvity | `revvity.wd103.myworkdayjobs.com/external` | 137 |
+| The Campbell's Company | `campbellsoup.wd5.myworkdayjobs.com/ExternalCareers_GlobalSite` | 321 |
+| The Home Depot | `homedepot.wd5.myworkdayjobs.com/CareerDepot` | 1,004 |
+| The Kendall Group | `kendallgroup.wd503.myworkdayjobs.com/kendall_careers` | 89 |
+| The Walt Disney Company | `disney.wd5.myworkdayjobs.com/disneycareer` | 650 |
+| TransUnion | `transunion.wd5.myworkdayjobs.com/transunion` | 222 |
+| Waystar | `waystar.wd1.myworkdayjobs.com/Waystar` | 82 |
+
+### Not added from this CSV (93 employers)
+
+Every remaining employer in the export runs an ATS this scraper has no fetcher
+for. Grouped by ATS, with the employer count per family:
+
+- **iCIMS** (13): Acuity, Celanese, East Penn Manufacturing, East West Bank,
+  ISYS Technologies, JerseySTEM, Knowledge Services, Navitas Systems, Peraton
+  (already configured via Workday), Steampunk, Waters, and others
+- **Workable** (6): ALTEN MÉXICO, Accellor, Arkham Technologies, Castle Park
+  Investments, Darwin AI, DataVisor
+- **SmartRecruiters** (6): Agap Technologies, Alto-Shaam, Blend360, Domino's,
+  Intuitive, Ubisoft
+- **Oracle Fusion / Taleo** (8): Chubb, Copa Airlines, Coppel, Hexaware, Mayo
+  Clinic, Nokia, Futurewei, Virtusa
+- **ADP** (6): ASM Research, ECS, Gold's Gym, PMA Companies, Perdoceo Education,
+  Stellantis
+- **Paylocity** (5): Inadev, Meyer Distributing, Morgridge Institute, RedDrum,
+  Riverhead Resources
+- **UKG/UltiPro** (3), **Eightfold** (3), **Dayforce** (2), **Comeet** (2),
+  **JazzHR** (2), **BrassRing** (1), **Recruitee** (1), **Recruiterflow** (1),
+  **HRM Direct** (1), **Zoho Recruit** (1, AgileEngine), **YC Work at a
+  Startup** (1, Silimate)
+- **Custom careers sites** (~30): ByteDance (`joinbytedance.com`), Apple, Meta,
+  Google, Amazon, Siemens, Teradyne, Capgemini, Munich Re, Moody's, Li Auto,
+  TEK Systems, and similar
+
+The largest single gap is ByteDance: 58 of the CSV's 359 postings, all on
+`joinbytedance.com`, which exposes no public board API. TikTok's Workday tenant
+(`bytedance.wd3.myworkdayjobs.com/TikTok`) is already configured and covers the
+TikTok-branded reqs only. ByteDance-branded reqs remain reachable only through
+the JobSpy/Indeed layer, where `ByteDance new grad` and `TikTok new grad` are
+already configured search terms.
+
+Castleton Commodities International (`osv-cci.wd1.myworkdayjobs.com/CCICareers`)
+is a Workday tenant but answered `HTTP 422` on every tenant-path variant tried —
+same failure mode as the 422 cohort, so it was left out rather than added dead.

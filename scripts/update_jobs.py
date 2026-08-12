@@ -2430,9 +2430,12 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         # P4: Generic role titles removed — they belong in track_signals only.
         # Without a co-occurring new-grad keyword, "Software Engineer" alone
         # should not bypass the track-signal requirement.
+        # Cohort years mirror filtering.new_grad_signals in config.yml — keep both
+        # lists moving forward together as each hiring cycle opens.
         strong_new_grad_signals = [
             "new grad", "new graduate", "graduate program", "campus", "university grad",
-            "college grad", "early career", "2025 start", "2026 start", "2025", "2026",
+            "college grad", "early career", "2025 start", "2026 start", "2027 start",
+            "2025", "2026", "2027",
         ]
         has_strong_new_grad = any(signal.lower() in title_lower for signal in strong_new_grad_signals)
 
