@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 02:28:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 04:26:14 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, LLM Infrastructure at Glean</title>
@@ -132,6 +132,20 @@
       <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
       <pubDate>Wed, 12 Aug 2026 00:01:38 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8614188002?gh_jid=8614188002</guid>
+    </item>
+    <item>
+      <title>Software Developer SME at Leidos</title>
+      <link>https://www.indeed.com/viewjob?jk=6eb78308bec64cb3</link>
+      <description>New grad role at Leidos in Chantilly, VA, US. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6eb78308bec64cb3</guid>
+    </item>
+    <item>
+      <title>Field/Base Communications Network Engineer at Leidos</title>
+      <link>https://www.indeed.com/viewjob?jk=74525e760b9f59cd</link>
+      <description>New grad role at Leidos in Ford Island, HI, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=74525e760b9f59cd</guid>
     </item>
     <item>
       <title>Software Engineer, Feedback &amp; Learning Systems — Meta Factory at Adobe</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Booz Allen Hamilton in El Segundo, CA. Category: Software Engineering</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/El-Segundo-CA/Software-Systems-Engineer_R0246592</guid>
-    </item>
-    <item>
-      <title>Scientific Software Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Bethesda-MD/Scientific-Software-Engineer_R0244218</link>
-      <description>New grad role at Booz Allen Hamilton in Bethesda, MD. Category: Software Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Bethesda-MD/Scientific-Software-Engineer_R0244218</guid>
-    </item>
-    <item>
-      <title>Firmware Engineer II - CRM at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Minneapolis-Minnesota-United-States-of-America/Firmware-Engineer-II---CRM_R73395-2</link>
-      <description>New grad role at Medtronic in Minneapolis, Minnesota, United States of America. Category: Hardware Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Minneapolis-Minnesota-United-States-of-America/Firmware-Engineer-II---CRM_R73395-2</guid>
     </item>
   </channel>
 </rss>
