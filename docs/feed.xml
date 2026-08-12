@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 22:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 23:00:31 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Microsoft Power Platform Developer at Kyndryl</title>
@@ -13,6 +13,20 @@
       <description>New grad role at Kyndryl in KA, IN. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ae9156f4e1c7c03</guid>
+    </item>
+    <item>
+      <title>AI Business Analyst at Tanium</title>
+      <link>https://job-boards.greenhouse.io/tanium/jobs/8100488</link>
+      <description>New grad role at Tanium in Addison, TX (Hybrid); Bellevue, WA (Hybrid); Durham, NC (Hybrid); Emeryville, CA (Hybrid); Reston, VA (Hybrid). Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 22:49:48 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/tanium/jobs/8100488</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Infrastructure, Interpretability at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5388612008</link>
+      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 22:29:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5388612008</guid>
     </item>
     <item>
       <title>Software Engineer, Developer Platform at Anduril Industries</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
       <pubDate>Wed, 12 Aug 2026 17:43:20 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5210563007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Android at StockX</title>
-      <link>https://job-boards.greenhouse.io/stockx/jobs/8603905002</link>
-      <description>New grad role at StockX in Bangalore, India. Category: Mobile Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 17:34:37 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/stockx/jobs/8603905002</guid>
-    </item>
-    <item>
-      <title>Machine Learning Data Scientist, Forecasting at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/0b57e309-426d-4f5c-a28c-6dd941b84703</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 12 Aug 2026 17:04:27 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/0b57e309-426d-4f5c-a28c-6dd941b84703</guid>
     </item>
   </channel>
 </rss>

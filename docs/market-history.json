@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T22:09:07.459771+00:00",
+    "last_updated": "2026-08-12T23:00:31.374964+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,25 +5751,25 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1737,
+      "total_jobs": 1751,
       "categories": {
-        "software_engineering": 1011,
-        "other": 167,
+        "software_engineering": 1022,
         "infrastructure_sre": 156,
+        "other": 169,
         "security": 67,
         "data_engineering": 41,
-        "data_ml": 206,
+        "data_ml": 207,
         "backend": 29,
         "mobile": 19,
         "hardware": 19,
-        "product_management": 5,
         "quant_finance": 8,
+        "product_management": 5,
         "frontend": 9
       },
       "tiers": {
-        "other": 894,
+        "other": 896,
         "unicorn": 672,
-        "faang_plus": 171
+        "faang_plus": 183
       },
       "top_companies": [
         {
@@ -5785,12 +5785,12 @@
           "jobs": 42
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Waymo",
           "jobs": 36
         },
         {
-          "company": "Waymo",
-          "jobs": 36
+          "company": "Booz Allen Hamilton",
+          "jobs": 35
         },
         {
           "company": "Point72",
@@ -5802,7 +5802,7 @@
         },
         {
           "company": "Leidos",
-          "jobs": 28
+          "jobs": 29
         },
         {
           "company": "DRW",
@@ -5813,9 +5813,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 274,
-      "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-08-12T22:09:07.457522+00:00"
+      "unique_companies": 279,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-08-12T23:00:31.373628+00:00"
     }
   ]
 }
