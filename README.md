@@ -291,10 +291,10 @@ This repository automatically scrapes new graduate job opportunities from variou
 
 ### Data Sources
 
-- **Greenhouse**: 113 configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block).
-- **Ashby**: 43 configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
-- **Workday**: 57 configured boards (Boeing, Lockheed, Citi, etc.). 38 enterprise tenants currently return HTTP 422 due to per-tenant infrastructure variation — tracked in [`docs/Workday-Investigation.md`](docs/Workday-Investigation.md).
-- **Lever**: 2 active boards (Palantir, Spotify) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
+- **Greenhouse**: 170 configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block, Jane Street, Point72).
+- **Ashby**: 72 configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
+- **Workday**: 92 configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants currently returns HTTP 422 due to per-tenant infrastructure variation — tracked in [`docs/Workday-Investigation.md`](docs/Workday-Investigation.md).
+- **Lever**: 7 active boards (Palantir, Spotify, Layup Parts, …) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
 - **JobSpy**: aggregation layer over Indeed and LinkedIn (gated by rate limits).
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 

@@ -666,3 +666,68 @@ class TestFilterJobsEdgeCases:
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0, "Exclusion should happen first"
+
+
+class TestGraduateCohortSignals:
+    """Cohort-year and 'Graduate'-suffixed titles must survive the filter.
+
+    Large employers (ByteDance, TikTok, and similar campus programs) title their
+    new grad reqs "<Role> Graduate (<Team>) - <Year> Start". Those titles carry no
+    "new grad"/"entry level" keyword, so the cohort year and the bare word
+    "graduate" are what make them recognizable. The signals live in config.yml,
+    so these tests read the real config rather than a fixture — they guard the
+    shipped signal list, not just the matching code.
+    """
+
+    def _live_config(self):
+        import yaml
+        root = os.path.join(os.path.dirname(__file__), '..')
+        with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)
+
+    def test_config_lists_current_cohort_years(self):
+        """The config must carry the in-flight cohort years, not just past ones."""
+        signals = self._live_config()['filtering']['new_grad_signals']
+        for expected in ("2026 start", "2027 start", "2027"):
+            assert expected in signals, f"'{expected}' missing from new_grad_signals"
+
+    def test_config_lists_bare_graduate_signal(self):
+        """'graduate' alone must match "<Role> Graduate (<Team>)" style titles."""
+        assert "graduate" in self._live_config()['filtering']['new_grad_signals']
+
+    def test_graduate_2027_start_title_passes(self):
+        """A real ByteDance-style cohort title should pass end-to-end.
+
+        The title deliberately avoids "software engineer" and every other
+        pre-existing signal, so it only survives via "graduate" / "2027 start".
+        """
+        jobs = [_make_job(
+            title="Research Engineer Graduate (Monetization Technology) - 2027 Start",
+            location="San Jose, California, United States",
+        )]
+        result = filter_jobs(jobs, self._live_config())
+        assert len(result) == 1
+
+    def test_year_only_2027_title_passes(self):
+        """'2027' alone is a strong signal, so no track signal is required."""
+        jobs = [_make_job(title="Technology Cohort 2027", location="Seattle, WA")]
+        result = filter_jobs(jobs, self._live_config())
+        assert len(result) == 1
+
+    def test_graduate_cohort_title_still_excludes_seniority(self):
+        """Cohort signals must not override the seniority exclusion list."""
+        jobs = [_make_job(
+            title="Senior Research Engineer Graduate (AML) - 2027 Start",
+            location="San Jose, California, United States",
+        )]
+        result = filter_jobs(jobs, self._live_config())
+        assert len(result) == 0
+
+    def test_graduate_cohort_title_still_excludes_interns(self):
+        """2027 intern reqs remain out of scope — this board tracks full-time roles."""
+        jobs = [_make_job(
+            title="Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer",
+            location="San Jose, California, United States",
+        )]
+        result = filter_jobs(jobs, self._live_config())
+        assert len(result) == 0
