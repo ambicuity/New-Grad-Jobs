@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 04:26:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 05:56:34 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate, Sales and Business Development (Mumbai) at Third Bridge</title>
+      <link>https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</link>
+      <description>New grad role at Third Bridge in Mumbai. Category: Other</description>
+      <pubDate>Wed, 12 Aug 2026 04:40:40 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4911768101?gh_jid=4911768101</guid>
+    </item>
     <item>
       <title>Software Engineer, LLM Infrastructure at Glean</title>
       <link>https://job-boards.greenhouse.io/gleanwork/jobs/4501783005</link>
@@ -134,6 +141,13 @@
       <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8614188002?gh_jid=8614188002</guid>
     </item>
     <item>
+      <title>Engineering Technician II - W/S Construction 1 at Unknown</title>
+      <link>https://www.indeed.com/viewjob?jk=f0263a9471f8a109</link>
+      <description>New grad role at Unknown in NC, US. Category: Other</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f0263a9471f8a109</guid>
+    </item>
+    <item>
       <title>Software Developer SME at Leidos</title>
       <link>https://www.indeed.com/viewjob?jk=6eb78308bec64cb3</link>
       <description>New grad role at Leidos in Chantilly, VA, US. Category: Software Engineering</description>
@@ -141,11 +155,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6eb78308bec64cb3</guid>
     </item>
     <item>
-      <title>Field/Base Communications Network Engineer at Leidos</title>
-      <link>https://www.indeed.com/viewjob?jk=74525e760b9f59cd</link>
-      <description>New grad role at Leidos in Ford Island, HI, US. Category: Infrastructure &amp; SRE</description>
+      <title>(USA) Software Engineer III at Walmart</title>
+      <link>https://www.indeed.com/viewjob?jk=11cc7dab5967e296</link>
+      <description>New grad role at Walmart in Bentonville, AR, US. Category: Software Engineering</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=74525e760b9f59cd</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=11cc7dab5967e296</guid>
     </item>
     <item>
       <title>Software Engineer, Feedback &amp; Learning Systems — Meta Factory at Adobe</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Booz Allen Hamilton in Fayetteville, NC. Category: Data Engineering</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Fayetteville-NC/Data-Engineer_R0246870</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Scientist_R0246170</link>
-      <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Data Science &amp; ML</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Scientist_R0246170</guid>
-    </item>
-    <item>
-      <title>Software Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/El-Segundo-CA/Software-Systems-Engineer_R0246592</link>
-      <description>New grad role at Booz Allen Hamilton in El Segundo, CA. Category: Software Engineering</description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/El-Segundo-CA/Software-Systems-Engineer_R0246592</guid>
     </item>
   </channel>
 </rss>
