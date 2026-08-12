@@ -2,34 +2,34 @@
   "outlook": "neutral",
   "predictions": {
     "7_days": {
-      "total_jobs": 1495,
-      "change_percent": 0.47
+      "total_jobs": 1485,
+      "change_percent": 0.95
     },
     "30_days": {
-      "total_jobs": 1515,
-      "change_percent": 1.81
+      "total_jobs": 1495,
+      "change_percent": 1.63
     }
   },
   "growing_categories": [
-    "infrastructure_sre",
     "data_engineering",
-    "other"
+    "other",
+    "data_ml"
   ],
   "declining_categories": [
     "software_engineering",
-    "data_ml",
+    "infrastructure_sre",
     "faang_plus"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently showing a stabilization trend, with the 7-day average (1504) consistently outperforming the 30-day average (1463), suggesting a slight upward momentum.",
-    "While FAANG+ and Unicorn tiers are seeing a contraction in new graduate roles, the 'Other' category is absorbing demand, indicating a broader distribution of hiring across mid-market companies.",
-    "The decline in core Software Engineering roles is being partially offset by growth in specialized infrastructure and data engineering segments, reflecting a shift toward operational efficiency in new graduate hiring."
+    "The market is currently in a consolidation phase, with the 7-day average (1492) outperforming the 30-day average (1463), suggesting a slight upward momentum despite recent daily fluctuations.",
+    "The significant decline in FAANG+ hiring is being offset by a gradual increase in 'other' and 'data engineering' roles, indicating a shift in hiring demand toward smaller firms and specialized data infrastructure.",
+    "While total job volume is stabilizing above the 1470 mark, the volatility in software engineering roles suggests that employers are becoming more selective, prioritizing niche technical skills over generalist engineering profiles."
   ],
-  "generated_at": "2026-08-11T01:06:09.523622+00:00",
+  "generated_at": "2026-08-12T00:01:11.345674+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-13",
-    "end": "2026-08-11"
+    "start": "2026-05-14",
+    "end": "2026-08-12"
   }
 }
