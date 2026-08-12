@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T23:00:31.374964+00:00",
+    "last_updated": "2026-08-12T23:44:12.198362+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-14",
@@ -5751,30 +5751,30 @@
     },
     {
       "date": "2026-08-12",
-      "total_jobs": 1751,
+      "total_jobs": 1746,
       "categories": {
-        "software_engineering": 1022,
-        "infrastructure_sre": 156,
-        "other": 169,
-        "security": 67,
+        "software_engineering": 1023,
+        "infrastructure_sre": 158,
+        "security": 66,
+        "other": 163,
         "data_engineering": 41,
-        "data_ml": 207,
+        "data_ml": 205,
         "backend": 29,
         "mobile": 19,
-        "hardware": 19,
+        "hardware": 20,
         "quant_finance": 8,
         "product_management": 5,
         "frontend": 9
       },
       "tiers": {
-        "other": 896,
+        "other": 887,
         "unicorn": 672,
-        "faang_plus": 183
+        "faang_plus": 187
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 232
+          "jobs": 233
         },
         {
           "company": "Anduril Industries",
@@ -5785,11 +5785,11 @@
           "jobs": 42
         },
         {
-          "company": "Waymo",
-          "jobs": 36
+          "company": "Booz Allen Hamilton",
+          "jobs": 35
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Waymo",
           "jobs": 35
         },
         {
@@ -5813,9 +5813,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 279,
-      "avg_jobs_per_company": 6.28,
-      "timestamp": "2026-08-12T23:00:31.373628+00:00"
+      "unique_companies": 275,
+      "avg_jobs_per_company": 6.35,
+      "timestamp": "2026-08-12T23:44:12.197226+00:00"
     }
   ]
 }
