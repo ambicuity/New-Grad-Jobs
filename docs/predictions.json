@@ -1,35 +1,34 @@
 {
-  "outlook": "neutral",
+  "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1485,
-      "change_percent": 0.95
+      "total_jobs": 1785,
+      "change_percent": 1.94
     },
     "30_days": {
-      "total_jobs": 1495,
-      "change_percent": 1.63
+      "total_jobs": 1890,
+      "change_percent": 7.94
     }
   },
   "growing_categories": [
     "data_engineering",
-    "other",
-    "data_ml"
+    "data_ml",
+    "software_engineering"
   ],
   "declining_categories": [
-    "software_engineering",
-    "infrastructure_sre",
-    "faang_plus"
+    "security",
+    "infrastructure_sre"
   ],
   "confidence": 75,
   "insights": [
-    "The market is currently in a consolidation phase, with the 7-day average (1492) outperforming the 30-day average (1463), suggesting a slight upward momentum despite recent daily fluctuations.",
-    "The significant decline in FAANG+ hiring is being offset by a gradual increase in 'other' and 'data engineering' roles, indicating a shift in hiring demand toward smaller firms and specialized data infrastructure.",
-    "While total job volume is stabilizing above the 1470 mark, the volatility in software engineering roles suggests that employers are becoming more selective, prioritizing niche technical skills over generalist engineering profiles."
+    "The market experienced a significant breakout in the final two days of the period, suggesting a shift in hiring sentiment or a seasonal influx of new graduate roles.",
+    "Growth is currently driven by non-FAANG/non-unicorn companies, which saw a sharp spike in volume, indicating broader market participation beyond top-tier tech firms.",
+    "Data-focused roles (Data Engineering and ML) are showing the highest relative growth momentum, signaling a strategic pivot toward AI-readiness in entry-level hiring."
   ],
-  "generated_at": "2026-08-12T00:01:11.345674+00:00",
+  "generated_at": "2026-08-13T00:51:19.157810+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-14",
-    "end": "2026-08-12"
+    "start": "2026-05-15",
+    "end": "2026-08-13"
   }
 }
