@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 06:56:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 08:17:07 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Support Foundations at Chime</title>
+      <link>https://boards.greenhouse.io/chime/jobs/8607195002?gh_jid=8607195002</link>
+      <description>New grad role at Chime in San Francisco, CA, USA. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 07:01:50 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/chime/jobs/8607195002?gh_jid=8607195002</guid>
+    </item>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
       <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
@@ -162,6 +169,13 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4ae9156f4e1c7c03</guid>
     </item>
     <item>
+      <title>Entry-Level Mechanical Engineer at Amentum</title>
+      <link>https://www.indeed.com/viewjob?jk=8e82ab4e6fa4cb26</link>
+      <description>New grad role at Amentum in Oak Ridge, TN, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8e82ab4e6fa4cb26</guid>
+    </item>
+    <item>
       <title>Research Scientist Graduates (Seed AI Foundation Model Infrastructure) - 2027 Start at ByteDance</title>
       <link>https://www.indeed.com/viewjob?jk=2ec8495d37914d6f</link>
       <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
@@ -174,6 +188,20 @@
       <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8a7ecd4b8457b501</guid>
+    </item>
+    <item>
+      <title>Associate Applicaton Engineer at White Cap</title>
+      <link>https://www.indeed.com/viewjob?jk=5e3c0e5362dbf137</link>
+      <description>New grad role at White Cap in UT, US. Category: Other</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5e3c0e5362dbf137</guid>
+    </item>
+    <item>
+      <title>Junior Engineer, RF Systems Solutions - Coppell, TX at ROHDE &amp; SCHWARZ GmbH &amp; Co. KG</title>
+      <link>https://www.indeed.com/viewjob?jk=9ee8246a65f723d1</link>
+      <description>New grad role at ROHDE &amp; SCHWARZ GmbH &amp; Co. KG in Coppell, TX, US. Category: Other</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9ee8246a65f723d1</guid>
     </item>
     <item>
       <title>Research Engineer Graduate (AI Training Systems Reliability &amp; Performance - Seed Infra) - 2026 Start (PhD) at ByteDance</title>
@@ -190,32 +218,25 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=383d1080355b7dbd</guid>
     </item>
     <item>
-      <title>Machine Learning Engineer at Adobe</title>
-      <link>https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-4_R170864</link>
-      <description>New grad role at Adobe in Noida. Category: Data Science &amp; ML</description>
+      <title>Environmental Underwriter Trainee at Great American Insurance Group</title>
+      <link>https://www.indeed.com/viewjob?jk=6162587780ca6165</link>
+      <description>New grad role at Great American Insurance Group in New York, NY, US. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/Noida/Machine-Learning-Engineer-4_R170864</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6162587780ca6165</guid>
     </item>
     <item>
-      <title>Software Engineer 4, Backend Services at Adobe</title>
-      <link>https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Software-Engineer-4--Backend-Services_R171151</link>
-      <description>New grad role at Adobe in San Jose. Category: Backend Engineering</description>
+      <title>Environmental Underwriter Trainee at Great American Insurance Group</title>
+      <link>https://www.indeed.com/viewjob?jk=8383b8182f483d88</link>
+      <description>New grad role at Great American Insurance Group in Exton, PA, US. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Software-Engineer-4--Backend-Services_R171151</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8383b8182f483d88</guid>
     </item>
     <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/Scottsdale-Arizona-United-States-of-America/Software-Engineer_R0137226</link>
-      <description>New grad role at PayPal in Scottsdale, Arizona, United States of America. Category: Software Engineering</description>
+      <title>Environmental Underwriter Trainee at Great American Insurance Group</title>
+      <link>https://www.indeed.com/viewjob?jk=cb17bc649cbadc67</link>
+      <description>New grad role at Great American Insurance Group in Boston, MA, US. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/Scottsdale-Arizona-United-States-of-America/Software-Engineer_R0137226</guid>
-    </item>
-    <item>
-      <title>Software Engineer at PayPal</title>
-      <link>https://paypal.wd1.myworkdayjobs.com/job/New-York-City-New-York-United-States-of-America/Software-Engineer_R0137225</link>
-      <description>New grad role at PayPal in New York City, New York, United States of America. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://paypal.wd1.myworkdayjobs.com/job/New-York-City-New-York-United-States-of-America/Software-Engineer_R0137225</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cb17bc649cbadc67</guid>
     </item>
     <item>
       <title>Site Reliability Engineer I at Mastercard</title>
@@ -232,130 +253,109 @@
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II--Mainframe-Developer-_R-274163</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-280498</link>
-      <description>New grad role at Mastercard in Arlington, Virginia. Category: Software Engineering</description>
+      <title>Junior Engineer - Component Engineering at Flex</title>
+      <link>https://flextronics.wd1.myworkdayjobs.com/job/India-Chennai/Junior-Engineer---Component-Engineering_WD224551</link>
+      <description>New grad role at Flex in India, Chennai. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-280498</guid>
+      <guid isPermaLink="true">https://flextronics.wd1.myworkdayjobs.com/job/India-Chennai/Junior-Engineer---Component-Engineering_WD224551</guid>
     </item>
     <item>
-      <title>Software Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-278530</link>
-      <description>New grad role at Mastercard in Arlington, Virginia. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Arlington-Virginia/Software-Engineer-II_R-278530</guid>
+      <title>IT Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:42:46 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</guid>
     </item>
     <item>
-      <title>Data Engineer II at Mastercard</title>
-      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II_R-287043</link>
-      <description>New grad role at Mastercard in Pune, India. Category: Data Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II_R-287043</guid>
+      <title>IT Network Infrastructure Engineer at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8570046002?gh_jid=8570046002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:36:37 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8570046002?gh_jid=8570046002</guid>
     </item>
     <item>
-      <title>Site Network Engineer at HP</title>
-      <link>https://hp.wd5.myworkdayjobs.com/job/Corvallis-Oregon-United-States-of-America/Site-Network-Engineer_3165294-1</link>
-      <description>New grad role at HP in Corvallis, Oregon, United States of America. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Corvallis-Oregon-United-States-of-America/Site-Network-Engineer_3165294-1</guid>
+      <title>Application Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4559147007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Security Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4559147007</guid>
     </item>
     <item>
-      <title>Full Stack Software Engineer at Citi</title>
-      <link>https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Full-Stack-Software-Engineer_26985629</link>
-      <description>New grad role at Citi in Mississauga Ontario Canada. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Full-Stack-Software-Engineer_26985629</guid>
+      <title>Associate Data Center Operations Technician  at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5168434007</link>
+      <description>New grad role at xAI in Memphis, Tennessee; Southaven, Mississippi. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5168434007</guid>
     </item>
     <item>
-      <title>Modeling and Simulation Software Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/Modeling-and-Simulation-Software-Engineer_R0246853</link>
-      <description>New grad role at Booz Allen Hamilton in Beavercreek, OH. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/Modeling-and-Simulation-Software-Engineer_R0246853</guid>
+      <title>Exceptional Software Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4956028007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4956028007</guid>
     </item>
     <item>
-      <title>Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Stafford-VA/Data-Scientist_R0240206-1</link>
-      <description>New grad role at Booz Allen Hamilton in Stafford, VA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Stafford-VA/Data-Scientist_R0240206-1</guid>
+      <title>Facilities Infrastructure Engineer (Data Center Infrastructure) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5182374007</link>
+      <description>New grad role at xAI in Memphis, Tennessee; Southaven, Mississippi. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5182374007</guid>
     </item>
     <item>
-      <title>Network Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/San-Antonio-TX/Network-Systems-Engineer_R0246111</link>
-      <description>New grad role at Booz Allen Hamilton in San Antonio, TX. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/San-Antonio-TX/Network-Systems-Engineer_R0246111</guid>
+      <title>Infrastructure Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5090998007</link>
+      <description>New grad role at xAI in Austin, Texas; London, England, United Kingdom; New York, New York; Palo Alto, California; Washington, D.C.. Category: Security Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5090998007</guid>
     </item>
     <item>
-      <title>Ontology Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Ontology-Data-Scientist_R0245035</link>
-      <description>New grad role at Booz Allen Hamilton in Arlington, VA. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Ontology-Data-Scientist_R0245035</guid>
+      <title>IT Systems Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4871633007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4871633007</guid>
     </item>
     <item>
-      <title>DevOps Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/McLean-VA/DevOps-Engineer_R0246778</link>
-      <description>New grad role at Booz Allen Hamilton in McLean, VA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/McLean-VA/DevOps-Engineer_R0246778</guid>
+      <title>ML Infrastructure Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5193037007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5193037007</guid>
     </item>
     <item>
-      <title>Data Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R0246782</link>
-      <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Data Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R0246782</guid>
+      <title>Network Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5207067007</link>
+      <description>New grad role at xAI in Memphis, Tennessee. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5207067007</guid>
     </item>
     <item>
-      <title>Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Albuquerque-NM/Systems-Engineer_R0246780</link>
-      <description>New grad role at Booz Allen Hamilton in Albuquerque, NM. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Albuquerque-NM/Systems-Engineer_R0246780</guid>
+      <title>Network Engineer - ML Infrastructure (High-Speed Interconnects) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5043570007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5043570007</guid>
     </item>
     <item>
-      <title>Model-Based Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Model-Based-Systems-Engineer_R0245808</link>
-      <description>New grad role at Booz Allen Hamilton in San Diego, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Model-Based-Systems-Engineer_R0245808</guid>
+      <title>Network Security Engineer at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/4800712007</link>
+      <description>New grad role at xAI in Austin, Texas; New York, New York; Palo Alto, California; Washington, D.C.. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/4800712007</guid>
     </item>
     <item>
-      <title>Model Based Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/China-Lake-CA/Model-Based-Systems-Engineer_R0239355</link>
-      <description>New grad role at Booz Allen Hamilton in China Lake, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/China-Lake-CA/Model-Based-Systems-Engineer_R0239355</guid>
+      <title>Power Systems Engineer (Data Center Infrastructure) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5189147007</link>
+      <description>New grad role at xAI in Memphis, Tennessee; Southaven, Mississippi. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5189147007</guid>
     </item>
     <item>
-      <title>Space Vehicle Bus Systems Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/El-Segundo-CA/Space-Vehicle-Bus-Systems-Engineer_R0243820</link>
-      <description>New grad role at Booz Allen Hamilton in El Segundo, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/El-Segundo-CA/Space-Vehicle-Bus-Systems-Engineer_R0243820</guid>
-    </item>
-    <item>
-      <title>C++ Software Engineer, Mid at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/C---Software-Engineer--Mid_R0246758</link>
-      <description>New grad role at Booz Allen Hamilton in Beavercreek, OH. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/C---Software-Engineer--Mid_R0246758</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/Data-Scientist_R0246717</link>
-      <description>New grad role at Booz Allen Hamilton in Dayton, OH. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/Data-Scientist_R0246717</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/Data-Scientist_R0246716</link>
-      <description>New grad role at Booz Allen Hamilton in Dayton, OH. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/Data-Scientist_R0246716</guid>
+      <title>Software Engineer, Ads Product  at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5152408007</link>
+      <description>New grad role at xAI in Palo Alto, California. Category: Software Engineering</description>
+      <pubDate>Wed, 12 Aug 2026 23:32:19 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5152408007</guid>
     </item>
   </channel>
 </rss>
