@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T05:21:02.490968+00:00",
+    "last_updated": "2026-08-13T06:56:35.064719+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1739,
+      "total_jobs": 1745,
       "categories": {
-        "data_ml": 199,
-        "software_engineering": 1032,
+        "software_engineering": 1031,
+        "security": 67,
+        "data_ml": 201,
         "backend": 32,
         "infrastructure_sre": 159,
-        "data_engineering": 43,
-        "other": 148,
+        "data_engineering": 42,
+        "other": 152,
         "hardware": 20,
-        "security": 66,
         "mobile": 19,
         "quant_finance": 10,
-        "frontend": 9,
+        "frontend": 10,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 674,
-        "other": 876,
-        "faang_plus": 189
+        "unicorn": 676,
+        "other": 879,
+        "faang_plus": 190
       },
       "top_companies": [
         {
@@ -5798,11 +5798,11 @@
           "jobs": 43
         },
         {
-          "company": "Waymo",
-          "jobs": 35
+          "company": "Point72",
+          "jobs": 34
         },
         {
-          "company": "Point72",
+          "company": "Waymo",
           "jobs": 34
         },
         {
@@ -5826,9 +5826,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 280,
-      "avg_jobs_per_company": 6.21,
-      "timestamp": "2026-08-13T05:21:02.488722+00:00"
+      "unique_companies": 284,
+      "avg_jobs_per_company": 6.14,
+      "timestamp": "2026-08-13T06:56:35.063926+00:00"
     }
   ]
 }
