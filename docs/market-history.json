@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T09:41:27.490512+00:00",
+    "last_updated": "2026-08-13T10:49:07.801205+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,13 +5764,13 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1730,
+      "total_jobs": 1735,
       "categories": {
-        "software_engineering": 1009,
+        "software_engineering": 1004,
         "security": 68,
-        "data_ml": 201,
-        "mobile": 20,
-        "other": 159,
+        "data_ml": 207,
+        "other": 161,
+        "mobile": 22,
         "infrastructure_sre": 159,
         "data_engineering": 41,
         "backend": 32,
@@ -5781,8 +5781,8 @@
       },
       "tiers": {
         "unicorn": 676,
-        "other": 863,
-        "faang_plus": 191
+        "other": 871,
+        "faang_plus": 188
       },
       "top_companies": [
         {
@@ -5815,7 +5815,7 @@
         },
         {
           "company": "Leidos",
-          "jobs": 30
+          "jobs": 29
         },
         {
           "company": "DRW",
@@ -5826,9 +5826,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 281,
-      "avg_jobs_per_company": 6.16,
-      "timestamp": "2026-08-13T09:41:27.489392+00:00"
+      "unique_companies": 282,
+      "avg_jobs_per_company": 6.15,
+      "timestamp": "2026-08-13T10:49:07.799849+00:00"
     }
   ]
 }
