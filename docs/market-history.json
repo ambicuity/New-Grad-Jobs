@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T03:24:52.994352+00:00",
+    "last_updated": "2026-08-13T05:21:02.490968+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,15 +5764,15 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1745,
+      "total_jobs": 1739,
       "categories": {
-        "software_engineering": 1031,
-        "data_ml": 204,
-        "backend": 30,
+        "data_ml": 199,
+        "software_engineering": 1032,
+        "backend": 32,
+        "infrastructure_sre": 159,
         "data_engineering": 43,
-        "infrastructure_sre": 156,
-        "other": 153,
-        "hardware": 22,
+        "other": 148,
+        "hardware": 20,
         "security": 66,
         "mobile": 19,
         "quant_finance": 10,
@@ -5780,9 +5780,9 @@
         "product_management": 2
       },
       "tiers": {
-        "other": 880,
-        "unicorn": 673,
-        "faang_plus": 192
+        "unicorn": 674,
+        "other": 876,
+        "faang_plus": 189
       },
       "top_companies": [
         {
@@ -5795,19 +5795,19 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 42
+          "jobs": 43
         },
         {
           "company": "Waymo",
           "jobs": 35
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Point72",
           "jobs": 34
         },
         {
-          "company": "Point72",
-          "jobs": 34
+          "company": "Booz Allen Hamilton",
+          "jobs": 33
         },
         {
           "company": "Leidos",
@@ -5826,9 +5826,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 275,
-      "avg_jobs_per_company": 6.35,
-      "timestamp": "2026-08-13T03:24:52.993233+00:00"
+      "unique_companies": 280,
+      "avg_jobs_per_company": 6.21,
+      "timestamp": "2026-08-13T05:21:02.488722+00:00"
     }
   ]
 }
