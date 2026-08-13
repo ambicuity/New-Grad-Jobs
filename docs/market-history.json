@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T19:35:14.562465+00:00",
+    "last_updated": "2026-08-13T20:16:37.490718+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1726,
+      "total_jobs": 1728,
       "categories": {
-        "software_engineering": 1001,
-        "data_engineering": 43,
+        "software_engineering": 1004,
+        "data_engineering": 41,
         "backend": 33,
         "frontend": 10,
-        "security": 72,
-        "other": 158,
-        "data_ml": 201,
-        "infrastructure_sre": 155,
-        "quant_finance": 9,
-        "hardware": 23,
+        "security": 73,
+        "other": 165,
+        "data_ml": 196,
+        "infrastructure_sre": 151,
+        "hardware": 26,
+        "quant_finance": 8,
         "mobile": 19,
         "product_management": 2
       },
       "tiers": {
-        "other": 860,
         "unicorn": 683,
-        "faang_plus": 183
+        "other": 857,
+        "faang_plus": 188
       },
       "top_companies": [
         {
@@ -5791,7 +5791,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 205
+          "jobs": 204
         },
         {
           "company": "OpenAI",
@@ -5815,20 +5815,20 @@
         },
         {
           "company": "Accenture",
-          "jobs": 26
+          "jobs": 25
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 26
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
           "company": "Affirm",
           "jobs": 24
         }
       ],
-      "unique_companies": 271,
-      "avg_jobs_per_company": 6.37,
-      "timestamp": "2026-08-13T19:35:14.561385+00:00"
+      "unique_companies": 275,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-08-13T20:16:37.489464+00:00"
     }
   ]
 }

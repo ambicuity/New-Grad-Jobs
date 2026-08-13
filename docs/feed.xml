@@ -5,14 +5,21 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 19:35:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 20:16:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5152584007?gh_jid=5152584007</link>
-      <description>New grad role at Anduril Industries in USA. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 19:25:38 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5152584007?gh_jid=5152584007</guid>
+      <title>Security Software Engineer, Detection &amp; Response Platform at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/4595463008</link>
+      <description>New grad role at Anthropic in New York City, NY | Seattle, WA; San Francisco, CA | New York City, NY | Seattle, WA; Washington, DC. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 19:56:31 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/4595463008</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Core Platform at Cribl</title>
+      <link>https://cribl.io/job-detail/?gh_jid=6143413004</link>
+      <description>New grad role at Cribl in Remote - United States. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 19:48:29 +0000</pubDate>
+      <guid isPermaLink="true">https://cribl.io/job-detail/?gh_jid=6143413004</guid>
     </item>
     <item>
       <title>AI &amp; Data Engineer at Orion Innovation</title>
@@ -198,17 +205,17 @@
     </item>
     <item>
       <title>Software Engineer (L2) at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7946610</link>
-      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 17:58:07 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946610</guid>
-    </item>
-    <item>
-      <title>Software Engineer (L2) at Twilio</title>
       <link>https://job-boards.greenhouse.io/twilio/jobs/8097672</link>
       <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 17:58:07 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8097672</guid>
+    </item>
+    <item>
+      <title>Software Engineer (L2) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7946610</link>
+      <description>New grad role at Twilio in Remote - US. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 17:58:07 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7946610</guid>
     </item>
     <item>
       <title>Software Engineer L3 at Twilio</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Scale AI in San Francisco, CA; New York, NY. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 17:05:27 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4520320005</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Infrastructure, Interpretability at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5388612008</link>
-      <description>New grad role at Anthropic in San Francisco, CA. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 16:56:46 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5388612008</guid>
     </item>
   </channel>
 </rss>
