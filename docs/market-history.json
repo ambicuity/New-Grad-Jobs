@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T22:04:01.771878+00:00",
+    "last_updated": "2026-08-13T22:58:27.558759+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1724,
+      "total_jobs": 1753,
       "categories": {
-        "software_engineering": 997,
-        "security": 73,
-        "backend": 32,
-        "infrastructure_sre": 148,
-        "data_ml": 196,
+        "software_engineering": 995,
         "data_engineering": 44,
-        "frontend": 10,
-        "other": 171,
-        "hardware": 25,
+        "frontend": 11,
+        "data_ml": 196,
+        "security": 74,
+        "backend": 32,
+        "infrastructure_sre": 149,
+        "other": 200,
+        "mobile": 20,
+        "hardware": 23,
         "quant_finance": 7,
-        "mobile": 19,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 684,
-        "other": 853,
-        "faang_plus": 187
+        "other": 882,
+        "unicorn": 686,
+        "faang_plus": 185
       },
       "top_companies": [
         {
@@ -5791,7 +5791,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 203
+          "jobs": 204
         },
         {
           "company": "OpenAI",
@@ -5818,17 +5818,17 @@
           "jobs": 25
         },
         {
-          "company": "University of Ottawa",
+          "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Affirm",
+          "company": "DRW",
           "jobs": 24
         }
       ],
-      "unique_companies": 276,
-      "avg_jobs_per_company": 6.25,
-      "timestamp": "2026-08-13T22:04:01.770941+00:00"
+      "unique_companies": 286,
+      "avg_jobs_per_company": 6.13,
+      "timestamp": "2026-08-13T22:58:27.557831+00:00"
     }
   ]
 }
