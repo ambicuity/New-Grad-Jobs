@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T20:16:37.490718+00:00",
+    "last_updated": "2026-08-13T21:08:21.571390+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1728,
+      "total_jobs": 1730,
       "categories": {
-        "software_engineering": 1004,
-        "data_engineering": 41,
+        "data_ml": 198,
+        "software_engineering": 998,
+        "data_engineering": 42,
         "backend": 33,
         "frontend": 10,
         "security": 73,
-        "other": 165,
-        "data_ml": 196,
-        "infrastructure_sre": 151,
-        "hardware": 26,
-        "quant_finance": 8,
+        "other": 173,
+        "infrastructure_sre": 150,
+        "hardware": 25,
+        "quant_finance": 7,
         "mobile": 19,
         "product_management": 2
       },
       "tiers": {
         "unicorn": 683,
-        "other": 857,
-        "faang_plus": 188
+        "other": 860,
+        "faang_plus": 187
       },
       "top_companies": [
         {
@@ -5791,7 +5791,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 204
+          "jobs": 203
         },
         {
           "company": "OpenAI",
@@ -5811,24 +5811,24 @@
         },
         {
           "company": "Leidos",
-          "jobs": 29
+          "jobs": 30
         },
         {
           "company": "Accenture",
-          "jobs": 25
+          "jobs": 24
+        },
+        {
+          "company": "University of Ottawa",
+          "jobs": 24
         },
         {
           "company": "Northrop Grumman",
           "jobs": 24
-        },
-        {
-          "company": "Affirm",
-          "jobs": 24
         }
       ],
-      "unique_companies": 275,
-      "avg_jobs_per_company": 6.28,
-      "timestamp": "2026-08-13T20:16:37.489464+00:00"
+      "unique_companies": 273,
+      "avg_jobs_per_company": 6.34,
+      "timestamp": "2026-08-13T21:08:21.568985+00:00"
     }
   ]
 }
