@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T18:19:04.057857+00:00",
+    "last_updated": "2026-08-13T19:35:14.562465+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1741,
+      "total_jobs": 1726,
       "categories": {
-        "security": 71,
-        "software_engineering": 1012,
-        "other": 162,
-        "data_ml": 203,
-        "infrastructure_sre": 154,
-        "frontend": 9,
-        "quant_finance": 10,
-        "hardware": 25,
+        "software_engineering": 1001,
         "data_engineering": 43,
-        "backend": 31,
+        "backend": 33,
+        "frontend": 10,
+        "security": 72,
+        "other": 158,
+        "data_ml": 201,
+        "infrastructure_sre": 155,
+        "quant_finance": 9,
+        "hardware": 23,
         "mobile": 19,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 681,
-        "other": 873,
-        "faang_plus": 187
+        "other": 860,
+        "unicorn": 683,
+        "faang_plus": 183
       },
       "top_companies": [
         {
@@ -5791,18 +5791,18 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 204
+          "jobs": 205
         },
         {
           "company": "OpenAI",
           "jobs": 44
         },
         {
-          "company": "Waymo",
-          "jobs": 34
+          "company": "Point72",
+          "jobs": 33
         },
         {
-          "company": "Point72",
+          "company": "Waymo",
           "jobs": 33
         },
         {
@@ -5810,25 +5810,25 @@
           "jobs": 31
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 30
+          "company": "Leidos",
+          "jobs": 29
         },
         {
           "company": "Accenture",
-          "jobs": 28
+          "jobs": 26
         },
         {
-          "company": "Leidos",
-          "jobs": 25
+          "company": "Booz Allen Hamilton",
+          "jobs": 26
         },
         {
           "company": "Affirm",
           "jobs": 24
         }
       ],
-      "unique_companies": 282,
-      "avg_jobs_per_company": 6.17,
-      "timestamp": "2026-08-13T18:19:04.056758+00:00"
+      "unique_companies": 271,
+      "avg_jobs_per_company": 6.37,
+      "timestamp": "2026-08-13T19:35:14.561385+00:00"
     }
   ]
 }
