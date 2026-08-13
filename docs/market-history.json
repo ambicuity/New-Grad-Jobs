@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T00:51:17.086186+00:00",
+    "last_updated": "2026-08-13T03:24:52.994352+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,58 +5764,58 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1751,
+      "total_jobs": 1745,
       "categories": {
-        "data_ml": 206,
-        "software_engineering": 1026,
+        "software_engineering": 1031,
+        "data_ml": 204,
         "backend": 30,
-        "data_engineering": 42,
-        "infrastructure_sre": 157,
-        "other": 161,
+        "data_engineering": 43,
+        "infrastructure_sre": 156,
+        "other": 153,
         "hardware": 22,
         "security": 66,
         "mobile": 19,
-        "quant_finance": 8,
-        "product_management": 5,
-        "frontend": 9
+        "quant_finance": 10,
+        "frontend": 9,
+        "product_management": 2
       },
       "tiers": {
-        "unicorn": 672,
-        "other": 886,
-        "faang_plus": 193
+        "other": 880,
+        "unicorn": 673,
+        "faang_plus": 192
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 233
+          "jobs": 234
         },
         {
           "company": "Anduril Industries",
-          "jobs": 209
+          "jobs": 210
         },
         {
           "company": "OpenAI",
           "jobs": 42
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Waymo",
           "jobs": 35
         },
         {
-          "company": "Waymo",
-          "jobs": 35
+          "company": "Booz Allen Hamilton",
+          "jobs": 34
         },
         {
           "company": "Point72",
           "jobs": 34
         },
         {
-          "company": "xAI",
-          "jobs": 30
+          "company": "Leidos",
+          "jobs": 33
         },
         {
-          "company": "Leidos",
-          "jobs": 29
+          "company": "xAI",
+          "jobs": 30
         },
         {
           "company": "DRW",
@@ -5826,9 +5826,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 279,
-      "avg_jobs_per_company": 6.28,
-      "timestamp": "2026-08-13T00:51:17.084936+00:00"
+      "unique_companies": 275,
+      "avg_jobs_per_company": 6.35,
+      "timestamp": "2026-08-13T03:24:52.993233+00:00"
     }
   ]
 }

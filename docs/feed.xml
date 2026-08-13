@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 00:51:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 03:24:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer - Linux Kernel (C++, C) at xAI</title>
+      <link>https://job-boards.greenhouse.io/xai/jobs/5202187007</link>
+      <description>New grad role at xAI in Palo Alto, California; Seattle, Washington. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 02:11:20 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/xai/jobs/5202187007</guid>
+    </item>
+    <item>
+      <title>Full Stack Software Engineer, Manufacturing Systems  at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8703540002?gh_jid=8703540002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 01:21:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8703540002?gh_jid=8703540002</guid>
+    </item>
+    <item>
+      <title>Software Engineer (C#) at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5211022007?gh_jid=5211022007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:54:34 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5211022007?gh_jid=5211022007</guid>
+    </item>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
@@ -62,6 +83,13 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 00:09:18 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5135811007?gh_jid=5135811007</guid>
+    </item>
+    <item>
+      <title>Junior Software Engineer at Aleta Software Labs Private Limited</title>
+      <link>https://in.indeed.com/viewjob?jk=46be57a9b12bf5e8</link>
+      <description>New grad role at Aleta Software Labs Private Limited in KL, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=46be57a9b12bf5e8</guid>
     </item>
     <item>
       <title>Software Engineer - Microsoft Power Platform Developer at Kyndryl</title>
@@ -132,6 +160,13 @@
       <description>New grad role at Citi in Mississauga Ontario Canada. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://citi.wd5.myworkdayjobs.com/job/Mississauga-Ontario-Canada/Full-Stack-Software-Engineer_26985629</guid>
+    </item>
+    <item>
+      <title>Modeling and Simulation Software Engineer at Booz Allen Hamilton</title>
+      <link>https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/Modeling-and-Simulation-Software-Engineer_R0246853</link>
+      <description>New grad role at Booz Allen Hamilton in Beavercreek, OH. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Beavercreek-OH/Modeling-and-Simulation-Software-Engineer_R0246853</guid>
     </item>
     <item>
       <title>Data Scientist at Booz Allen Hamilton</title>
@@ -274,6 +309,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Tempe-Arizona-United-States-of-America/Process-Engineer-II_R72876-1</guid>
     </item>
     <item>
+      <title>Mission Autonomy Software Developer at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Mission-Autonomy-Software-Developer_R10236655</link>
+      <description>New grad role at Northrop Grumman in United States-California-El Segundo. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-El-Segundo/Mission-Autonomy-Software-Developer_R10236655</guid>
+    </item>
+    <item>
       <title>Sentinel - Modeling Simulation &amp; Analysis Systems Engineer- *19200 at Northrop Grumman</title>
       <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Roy/Sentinel---Modeling-Simulation---Analysis-Systems-Engineer---19200_R10242750-1</link>
       <description>New grad role at Northrop Grumman in United States-Utah-Roy. Category: Software Engineering</description>
@@ -314,48 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-California-Goleta. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Goleta/Manufacturing-Engineer--Principal-Manufacturing-Engineer_R10245550</guid>
-    </item>
-    <item>
-      <title>Python Software Engineer Level 3 or 4 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Python-Software-Engineer-Level-3-or-4--AHT-_R10245551</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Python-Software-Engineer-Level-3-or-4--AHT-_R10245551</guid>
-    </item>
-    <item>
-      <title>Systems Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/Systems-Engineer_R10245417</link>
-      <description>New grad role at Northrop Grumman in United States-California-San Diego. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/Systems-Engineer_R10245417</guid>
-    </item>
-    <item>
-      <title>2026 Associate Electrical Engineer / Electrical Engineer - Gilbert AZ at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Gilbert/XMLNAME-2026-Associate-Electrical-Engineer---Electrical-Engineer---Gilbert-AZ_R10245490</link>
-      <description>New grad role at Northrop Grumman in United States-Arizona-Gilbert. Category: Hardware Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Gilbert/XMLNAME-2026-Associate-Electrical-Engineer---Electrical-Engineer---Gilbert-AZ_R10245490</guid>
-    </item>
-    <item>
-      <title>2026 Associate Cyber Software Engineer - Chantilly VA at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Chantilly/R10206390-22026-Associate-Cyber-Software-Engineer---Chantilly-VA_R10236425</link>
-      <description>New grad role at Northrop Grumman in United States-Virginia-Chantilly. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Chantilly/R10206390-22026-Associate-Cyber-Software-Engineer---Chantilly-VA_R10236425</guid>
-    </item>
-    <item>
-      <title>Associate Software Engineer at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/Associate-Software-Engineer_R10245470</link>
-      <description>New grad role at Northrop Grumman in United States-Illinois-Rolling Meadows. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Illinois-Rolling-Meadows/Associate-Software-Engineer_R10245470</guid>
-    </item>
-    <item>
-      <title>Associate AI Software Engineer/ AI Software Engineer (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Ohio-Beavercreek/Associate-AI-Software-Engineer--AI-Software-Engineer--AHT-_R10245469</link>
-      <description>New grad role at Northrop Grumman in United States-Ohio-Beavercreek. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Ohio-Beavercreek/Associate-AI-Software-Engineer--AI-Software-Engineer--AHT-_R10245469</guid>
     </item>
   </channel>
 </rss>
