@@ -5,21 +5,84 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 14:11:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 15:21:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Software Engineer, Factory Systems  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5135811007?gh_jid=5135811007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 13:38:21 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5135811007?gh_jid=5135811007</guid>
+      <title>Machine Learning Engineer at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7960680?t=gh_src=&amp;gh_jid=7960680</link>
+      <description>New grad role at Robinhood in Bellevue, WA. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 13 Aug 2026 15:02:09 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7960680?t=gh_src=&amp;gh_jid=7960680</guid>
     </item>
     <item>
-      <title>Software Engineer (C#) at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5211022007?gh_jid=5211022007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 13:37:28 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5211022007?gh_jid=5211022007</guid>
+      <title>Software Engineer II - Product Security at StubHub</title>
+      <link>https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4903899101</link>
+      <description>New grad role at StubHub in Los Angeles, California, United States. Category: Security Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:53:51 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4903899101</guid>
+    </item>
+    <item>
+      <title>Software Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
+      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:34:12 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
+    </item>
+    <item>
+      <title>Software Engineer  at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:33:10 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8055481</link>
+      <description>New grad role at Twilio in Remote - United Kingdom. Category: Security Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:29:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8055481</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Incident Response at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:29:53 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/7996774</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 13 Aug 2026 14:29:22 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7996774</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8007455</link>
+      <description>New grad role at Twilio in Remote - Spain. Category: Data Science &amp; ML</description>
+      <pubDate>Thu, 13 Aug 2026 14:28:49 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8007455</guid>
+    </item>
+    <item>
+      <title>Associate Application Engineer at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8048659</link>
+      <description>New grad role at Twilio in Remote - India. Category: Other</description>
+      <pubDate>Thu, 13 Aug 2026 14:26:58 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8048659</guid>
+    </item>
+    <item>
+      <title>Software Development Engineer (L3) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8102950</link>
+      <description>New grad role at Twilio in Remote - Colombia. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:26:09 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8102950</guid>
+    </item>
+    <item>
+      <title>DevOps Engineer (Observability) at Twilio</title>
+      <link>https://job-boards.greenhouse.io/twilio/jobs/8108771</link>
+      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 14:25:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8108771</guid>
     </item>
     <item>
       <title>Software Engineer II, Message Mailflow at Abnormal Security</title>
@@ -162,6 +225,13 @@
       <guid isPermaLink="true">https://jobs.ashbyhq.com/sentilink/e099e0c8-71ea-4dc0-9823-f055e0292804</guid>
     </item>
     <item>
+      <title>Software Engineer II, AI/ML at DigitalOcean</title>
+      <link>https://in.indeed.com/viewjob?jk=4cfd8a3efb3ba71c</link>
+      <description>New grad role at DigitalOcean in KA, IN. Category: Software Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4cfd8a3efb3ba71c</guid>
+    </item>
+    <item>
       <title>Junior Engineer at Cornerstone OnDemand</title>
       <link>https://in.indeed.com/viewjob?jk=132fb83545771f83</link>
       <description>New grad role at Cornerstone OnDemand in MH, IN. Category: Other</description>
@@ -197,13 +267,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=46be57a9b12bf5e8</guid>
     </item>
     <item>
-      <title>Software Engineer II, AI/ML at DigitalOcean</title>
-      <link>https://in.indeed.com/viewjob?jk=4cfd8a3efb3ba71c</link>
-      <description>New grad role at DigitalOcean in KA, IN. Category: Software Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=4cfd8a3efb3ba71c</guid>
-    </item>
-    <item>
       <title>Software Engineer Graduate (Recommendation Infrastructure) - 2027 Start at TikTok</title>
       <link>https://www.indeed.com/viewjob?jk=a284e6f54c7fd336</link>
       <description>New grad role at TikTok in San Jose, CA, US. Category: Software Engineering</description>
@@ -232,13 +295,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6c717053c4e2ac49</guid>
     </item>
     <item>
-      <title>Associate Engineer - Instrumentation &amp; Controls(Advanced Power Generation) at Black &amp; Veatch</title>
-      <link>https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a</link>
-      <description>New grad role at Black &amp; Veatch in MH, IN. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a</guid>
-    </item>
-    <item>
       <title>Associate QA Engineer at Finastra</title>
       <link>https://in.indeed.com/viewjob?jk=9bcc747a93287d33</link>
       <description>New grad role at Finastra in MH, IN. Category: Other</description>
@@ -246,74 +302,18 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=9bcc747a93287d33</guid>
     </item>
     <item>
-      <title>Data Scientist Graduate (Multimedia) - 2027 Start at TikTok</title>
-      <link>https://www.indeed.com/viewjob?jk=3a44dc88c34e6110</link>
-      <description>New grad role at TikTok in San Jose, CA, US. Category: Data Science &amp; ML</description>
+      <title>Associate Engineer - Instrumentation &amp; Controls(Advanced Power Generation) at Black &amp; Veatch</title>
+      <link>https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a</link>
+      <description>New grad role at Black &amp; Veatch in MH, IN. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=3a44dc88c34e6110</guid>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a</guid>
     </item>
     <item>
-      <title>Data Science Graduate (Advertisement Team) - 2027 Start (PhD) at TikTok</title>
-      <link>https://www.indeed.com/viewjob?jk=d87b8645a3638f46</link>
-      <description>New grad role at TikTok in San Jose, CA, US. Category: Quantitative Finance</description>
+      <title>2027 Software Engineer (DevOps), New College Grad - Bachelor's (Gloucester, MA) at Applied Materials</title>
+      <link>https://www.indeed.com/viewjob?jk=c3e9513b0dfad730</link>
+      <description>New grad role at Applied Materials in Gloucester, MA, US. Category: Software Engineering</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d87b8645a3638f46</guid>
-    </item>
-    <item>
-      <title>Client Success Associate (2026 &amp; 2027 Graduates at Gartner</title>
-      <link>https://www.indeed.com/viewjob?jk=eb2b7da5b0a0c6d4</link>
-      <description>New grad role at Gartner in Irving, TX, US. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=eb2b7da5b0a0c6d4</guid>
-    </item>
-    <item>
-      <title>Research Scientist Graduates (Seed AI Foundation Model Infrastructure) - 2027 Start at ByteDance</title>
-      <link>https://www.indeed.com/viewjob?jk=2ec8495d37914d6f</link>
-      <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=2ec8495d37914d6f</guid>
-    </item>
-    <item>
-      <title>Research Scientist Graduate (Seed AI Foundation Model Infrastructure) - 2027 Start (PhD) at ByteDance</title>
-      <link>https://www.indeed.com/viewjob?jk=8a7ecd4b8457b501</link>
-      <description>New grad role at ByteDance in San Jose, CA, US. Category: Data Science &amp; ML</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8a7ecd4b8457b501</guid>
-    </item>
-    <item>
-      <title>CUPE - Automne 2026 - AE - CIN2502-A00 at University of Ottawa</title>
-      <link>https://ca.indeed.com/viewjob?jk=c04139e5e7a607d6</link>
-      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c04139e5e7a607d6</guid>
-    </item>
-    <item>
-      <title>CUPE - Fall 2026 - CMN2152-A00 at University of Ottawa</title>
-      <link>https://ca.indeed.com/viewjob?jk=9a203207d6358c9a</link>
-      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9a203207d6358c9a</guid>
-    </item>
-    <item>
-      <title>CUPE - Automne 2026 - AE - CMN2560-A00 at University of Ottawa</title>
-      <link>https://ca.indeed.com/viewjob?jk=352568440fe13224</link>
-      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=352568440fe13224</guid>
-    </item>
-    <item>
-      <title>CUPE - Automne 2026 - AE - CMN2568-A00 at University of Ottawa</title>
-      <link>https://ca.indeed.com/viewjob?jk=9b9b2a04ab2b5e80</link>
-      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=9b9b2a04ab2b5e80</guid>
-    </item>
-    <item>
-      <title>CUPE - Fall 2026 - TA - CMN2173-A00 at University of Ottawa</title>
-      <link>https://ca.indeed.com/viewjob?jk=438a8363bcd3fc77</link>
-      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=438a8363bcd3fc77</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c3e9513b0dfad730</guid>
     </item>
     <item>
       <title>Physical Engineering Associate I at Mesa Associates, Inc.</title>
@@ -321,6 +321,13 @@
       <description>New grad role at Mesa Associates, Inc. in Chattanooga, TN, US. Category: Other</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c0e93eda392e6e4e</guid>
+    </item>
+    <item>
+      <title>Consultant, Cybersecurity (Data Engineer) at Nationwide Mutual Insurance Company</title>
+      <link>https://www.indeed.com/viewjob?jk=02b579d7edfad90b</link>
+      <description>New grad role at Nationwide Mutual Insurance Company in Columbus, OH, US. Category: Security Engineering</description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=02b579d7edfad90b</guid>
     </item>
     <item>
       <title>Electrical Service Engineer (Entry Level) Cedar Rapids IA at BD</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Amentum in Oak Ridge, TN, US. Category: Infrastructure &amp; SRE</description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8e82ab4e6fa4cb26</guid>
-    </item>
-    <item>
-      <title>Consultant, Cybersecurity (Data Engineer) at Nationwide Mutual Insurance Company</title>
-      <link>https://www.indeed.com/viewjob?jk=02b579d7edfad90b</link>
-      <description>New grad role at Nationwide Mutual Insurance Company in Columbus, OH, US. Category: Security Engineering</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=02b579d7edfad90b</guid>
     </item>
   </channel>
 </rss>

@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1723<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1521<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->989<!-- /COUNT --> |
-| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
-| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->22<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->70<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->203<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->41<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->162<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->821<!-- /COUNT --> |
+| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->7<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->31<!-- /COUNT --> |
+| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->21<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->64<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->180<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->42<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->153<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->23<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->160<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->25<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->165<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,723** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,521** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,18 +84,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Anduril Industries | Software Engineer, Factory Systems | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5135811007?gh_jid=5135811007) |
-| Anduril Industries | Software Engineer (C#) | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5211022007?gh_jid=5211022007) |
+| Twilio | Software Engineer | Remote - Estonia | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7647708) |
+| Twilio | Software Engineer | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7785202) |
+| Twilio | Software Development Engineer (L3) | Remote - Colombia | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8102950) |
+| Twilio | DevOps Engineer (Observability) | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8108771) |
 | Abnormal Security | Software Engineer II, Message Mailflow | Remote - USA | Today | [Apply](https://abnormal.ai/careers/jobs/7806195003?gh_jid=7806195003) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Chime | Software Engineer, Support Foundations | San Francisco, CA, USA | Today | [Apply](https://boards.greenhouse.io/chime/jobs/8607195002?gh_jid=8607195002) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
 | Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
-| Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
-| Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
 
-**[View all 989 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 821 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -103,8 +103,6 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
-| Anduril Industries | Mission Software Engineer, Air Vehicle Autonomy, Frontend | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4673956007?gh_jid=4673956007) |
 | Clarity Innovations | Front End Software Engineer | MacDill AFB, FL | 2 days ago | [Apply](https://job-boards.greenhouse.io/clarityinnovates/jobs/5208090007) |
 | NVIDIA | Emulation Front-End Infrastructure Engineer | US, CA, Santa Clara | 3 days ago | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-CA-Santa-Clara/Emulation-Front-End-Infrastructure-Engineer_JR2023066) |
 | Jane Street | Front End Software Engineer | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/6184529002?gh_jid=6184529002) |
@@ -124,13 +122,13 @@ Experience an advanced career journey with us! 🚀
 | Affirm | Software Engineer II, Backend (Capital Orchestration) | Remote US | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7749755003) |
 | Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote Canada | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7777094003) |
 | Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote US | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7766277003) |
-| Affirm | Software Engineer II, Backend (Collections) | Remote Poland | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813159003) |
 | Affirm | Software Engineer II, Backend (Collections) | Remote Spain | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813157003) |
+| Affirm | Software Engineer II, Backend (Collections) | Remote Poland | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813159003) |
 | Affirm | Software Engineer II , Backend, (Furnishing Platform) | Remote Spain | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799346003) |
 | Affirm | Software Engineer II, Backend (Furnishing Platform) | Remote Poland | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7799348003) |
 | Affirm | Software Engineer II, Backend (PMI Integrations) | Remote Canada | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7590373003) |
 
-**[View all 32 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 31 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Mobile Engineering
 
@@ -142,14 +140,14 @@ Experience an advanced career journey with us! 🚀
 | JungleWorks | Software Engineer (iOS) | PB, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=f70b4ff6fa5e7ebe) |
 | D.R. Horton | Mobile Software Engineer | Arlington, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=eab5175320d29f6d) |
 | StockX | Software Engineer - Android | Bangalore, India | Today | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8603905002) |
-| Anduril Industries | Software Engineer - Mobile, Android | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007) |
 | OpenAI | Android Systems Engineer, Consumer Devices | San Francisco, California, United States | 6 days ago | [Apply](https://jobs.ashbyhq.com/openai/b08126cc-8134-45f0-aeb3-4b00e96547de) |
 | Pinterest | Software Engineer II, Android | San Francisco, CA, US; Remote, US | 6 days ago | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=4916795) |
 | StockX | Software Engineer - iOS | Bangalore, India | 2026-08-06 | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8603916002) |
 | BJAK | iOS Software Engineer | United States, United States, United States | 2026-08-04 | [Apply](https://jobs.ashbyhq.com/bjakcareer/9b506ddf-e091-4c36-b1e5-d3d373257cac) |
 | BJAK | Android Software Engineer | United States, United States, United States | 2026-08-04 | [Apply](https://jobs.ashbyhq.com/bjakcareer/c4272eb4-56fc-4f3e-8d5a-cc14c7e7c4ef) |
+| Pinterest | Software Engineer II, Android | Toronto, ON, CA | 2026-07-28 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7987854) |
 
-**[View all 22 Mobile Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 21 Mobile Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Security Engineering
 
@@ -157,18 +155,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| StubHub | Software Engineer II - Product Security | Los Angeles, California, United States | Today | [Apply](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4903899101) |
+| Twilio | Security Engineer, Incident Response | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
+| Twilio | Security Engineer, Incident Response | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Cloudflare | IAM Security Engineer | In-Office | Today | [Apply](https://boards.greenhouse.io/cloudflare/jobs/8124227?gh_jid=8124227) |
 | Nationwide Mutual Insurance Company | Consultant, Cybersecurity (Data Engineer) | Columbus, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=02b579d7edfad90b) |
+| TCOM, L.P. | Associate Information Systems Security Engineer | Columbia, MD, US | Today | [Apply](https://www.indeed.com/viewjob?jk=74aca3b6368f8dbf) |
+| Northrop Grumman | Databricks Security Engineer | United States-Remote | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Remote/Databricks-Security-Engineer_R10245623) |
 | xAI | Application Security Engineer | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
 | xAI | Infrastructure Security Engineer | Austin, Texas; London, England, United Kingdom; New York, New York; Palo Alto, California; Washington, D.C. | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5090998007) |
-| Affirm | Product Security Engineer II | Remote Canada | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7796530003) |
 | Affirm | Product Security Engineer II | Remote US | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7796534003) |
-| Affirm | Product Security Engineer II | Remote Canada | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7796536003) |
-| Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
-| MongoDB | Product Security Engineer, Server | New York City; Seattle; United States | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8098695) |
-| Twilio | Security Engineer, Incident Response | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 
-**[View all 70 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 64 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -176,6 +174,9 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Robinhood | Machine Learning Engineer | Bellevue, WA | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7960680?t=gh_src=&gh_jid=7960680) |
+| Twilio | Machine Learning Engineer | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7996774) |
+| Twilio | Machine Learning Engineer | Remote - Spain | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8007455) |
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | OpenAI | Machine Learning Engineer, API Multicloud | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/5acf4854-1d42-40ca-bff8-4f6f04cdce68) |
 | TikTok USDS JV | Machine Learning Engineer Graduate (E-Commerce) - 2027 Start (PhD) | San Jose, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e01f48bbb2b5e010) |
@@ -183,11 +184,8 @@ Experience an advanced career journey with us! 🚀
 | TikTok | Data Scientist Graduate (Multimedia) - 2027 Start | San Jose, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3a44dc88c34e6110) |
 | ByteDance | Research Scientist Graduates (Seed AI Foundation Model Infrastructure) - 2027 Start | San Jose, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=2ec8495d37914d6f) |
 | ByteDance | Research Scientist Graduate (Seed AI Foundation Model Infrastructure) - 2027 Start (PhD) | San Jose, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8a7ecd4b8457b501) |
-| Gartner | Data Analyst - 2026/2027 graduates | Stamford, CT, US | Today | [Apply](https://www.indeed.com/viewjob?jk=300a3f429f113de9) |
-| ByteDance | Research Engineer Graduate (AI Training Systems Reliability & Performance - Seed Infra) - 2026 Start (PhD) | Seattle, WA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d137ed89b8f8594d) |
-| ByteDance | Research Engineer Graduate (Agent Systems & AI Coding Environment – Seed Infra) – 2026 Start (PhD) | Seattle, WA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=383d1080355b7dbd) |
 
-**[View all 203 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 180 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -196,6 +194,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Optum | Associate Data Analyst - Scala, PySpark, Azure cloud, AI | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ff8511316b5b8b26) |
+| Target | Data Engineer - Finance AI Solutions | 7000 Target Pkwy N,NCD-0375 Brooklyn Park,MN 55445 | Today | [Apply](https://target.wd5.myworkdayjobs.com/job/7000-Target-Pkwy-NNCD-0375-Brooklyn-ParkMN-55445/Data-Engineer---Finance-Technology-Solutions_R0000444866) |
 | TransUnion | Cloud/Big Data Engineer | Chennai | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Chennai/Cloud-Big-Data-Engineer_19041089) |
 | Point72 | Data Engineer, Knowledge Graph | New York, NY | Today | [Apply](https://boards.greenhouse.io/point72/jobs/8701705002?gh_jid=8701705002) |
 | Affirm | Analytics Engineer II | Remote Poland | Today | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7764109003) |
@@ -204,9 +203,8 @@ Experience an advanced career journey with us! 🚀
 | — | Role Data Engineer | TS, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=1a8bf4e86509a6d1) |
 | Mastercard | Data Engineer II | Pune, India | 1 day ago | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Data-Engineer-II_R-287043) |
 | Booz Allen Hamilton | Data Engineer | Washington, DC | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R0246782) |
-| Booz Allen Hamilton | Data Engineer | Dayton, OH | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/Data-Engineer_R0246721) |
 
-**[View all 41 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 42 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -215,17 +213,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Amentum | Entry-Level Mechanical Engineer | Oak Ridge, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8e82ab4e6fa4cb26) |
-| Milestone Technologies | Associate Engineer | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0e798bba1dd227b9) |
-| Light & Wonder | Associate QA Engineer, Math | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=2a945003d8750ac6) |
-| Light & Wonder | Associate QA Engineer, Math | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=b83f6c03617e141d) |
-| Light & Wonder | Associate QA Engineer, Math | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=235397de8557b41c) |
 | AECOM | Associate Analyst (Project/Cost Controls Engineer) | Oakland, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=92719bdbe70141d6) |
 | AECOM | Associate Analyst (Project/Cost Controls Engineer) | San Francisco, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=94e8973ed9e6a377) |
 | AECOM | Associate Analyst (Project/Cost Controls Engineer) | Sacramento, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=0b172effda68f55c) |
-| Serco | Experienced Infrastructure Engineer | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=9020c5f34856aca3) |
+| Milestone Technologies | Associate Engineer | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0e798bba1dd227b9) |
 | Serco | Network Engineer - San Diego, CA | San Diego, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bfab0e1cdd399523) |
+| Mastercard | Site Reliability Engineer I | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-I_R-286909-1) |
+| Booz Allen Hamilton | Platform DevOps Engineer | Chantilly, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Platform-DevOps-Engineer_R0246850) |
+| Northrop Grumman | DevOps Engineer – Level 5 | United States-Colorado-Colorado Springs | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/DevOps-Engineer---Level-5_R10245629) |
+| Leidos | Network Engineer II | Shiloh, IL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Joint-Fires-Network--JFN--Engineer-II_R-00185785) |
 
-**[View all 162 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 153 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -249,8 +247,8 @@ Experience an advanced career journey with us! 🚀
 | ARUP Laboratories | Technologist, Trainee | Salt Lake City, UT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=8cf09e8734ddb013) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -260,6 +258,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Serco | Entry-Level Engineering Technician - Ludlow, MA | Ludlow, MA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=2c423d7e0b45b2f4) |
+| Rogue Signal Processing Corporation | Hardware Test Engineer – Junior Level | Sterling, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=23eeefee4764edfc) |
 | Serco | Marine Electrical Engineer II - Arlington, VA | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=795a297d9f51c671) |
 | Serco | Marine Electrical Engineer II - Arlington, VA | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=eadd3f00bf2391eb) |
 | Northrop Grumman | Thermal Mechanical Engineer - Level 2 - Dulles | United States-Virginia-Dulles | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Thermal-Mechanical-Engineer---Level-2---Dulles_R10244756) |
@@ -268,9 +267,8 @@ Experience an advanced career journey with us! 🚀
 | ByteDance | ASIC Design Engineer Graduate (Video Silicon IP) - 2027 Start | San Jose, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=363828344a36849a) |
 | Atlas Copco Group | Service Engineer II- Western US territory | San Francisco, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=7211ab9f5ac23d88) |
 | Northrop Grumman | Electrical Engineer Level 2 | United States-Alabama-Huntsville | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Electrical-Engineer-Level-2_R10244946) |
-| Northrop Grumman | 2026 Associate Electrical Engineer / Electrical Engineer - Gilbert AZ | United States-Arizona-Gilbert | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Gilbert/XMLNAME-2026-Associate-Electrical-Engineer---Electrical-Engineer---Gilbert-AZ_R10245490) |
 
-**[View all 23 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 25 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -278,18 +276,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
 | Cornerstone OnDemand | Junior Engineer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=132fb83545771f83) |
 | Clario | Software Quality Engineer II | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=b0ad98b0f116bf90) |
-| Black & Veatch | Associate Engineer - Instrumentation & Controls(Advanced Power Generation) | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a) |
 | Finastra | Associate QA Engineer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9bcc747a93287d33) |
+| Black & Veatch | Associate Engineer - Instrumentation & Controls(Advanced Power Generation) | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ef39e57cdf431b1a) |
+| Mesa Associates, Inc. | Physical Engineering Associate I | Chattanooga, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=c0e93eda392e6e4e) |
+| BD | Electrical Service Engineer (Entry Level) Cedar Rapids IA | Sparks, MD, US | Today | [Apply](https://www.indeed.com/viewjob?jk=1fce3b1a86d1c359) |
 | Gartner | Client Success Associate (2026 & 2027 Graduates | Irving, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=eb2b7da5b0a0c6d4) |
-| University of Ottawa | CUPE - Automne 2026 - AE - CIN2502-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=c04139e5e7a607d6) |
-| University of Ottawa | CUPE - Fall 2026 - CMN2152-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=9a203207d6358c9a) |
-| University of Ottawa | CUPE - Automne 2026 - AE - CMN2560-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=352568440fe13224) |
-| University of Ottawa | CUPE - Automne 2026 - AE - CMN2568-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=9b9b2a04ab2b5e80) |
-| University of Ottawa | CUPE - Fall 2026 - TA - CMN2173-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=438a8363bcd3fc77) |
+| University of Ottawa | CUPE - Fall 2026 - TA - CLA/HIS2101-A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=753e5289d71a2164) |
+| University of Ottawa | CUPE - Winter 2027 - TA - FSS3295 - A00 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=a1ee278666ffca52) |
 
-**[View all 160 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 165 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -404,4 +402,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-13 14:11:37 UTC*
+*Last updated: 2026-08-13 15:21:20 UTC*

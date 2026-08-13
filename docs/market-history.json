@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T14:11:37.749882+00:00",
+    "last_updated": "2026-08-13T15:21:20.538831+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,34 +5764,30 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1723,
+      "total_jobs": 1521,
       "categories": {
-        "software_engineering": 989,
-        "data_ml": 203,
-        "security": 70,
-        "other": 160,
-        "mobile": 22,
+        "data_ml": 180,
+        "security": 64,
+        "software_engineering": 821,
+        "other": 165,
+        "mobile": 21,
+        "hardware": 25,
+        "infrastructure_sre": 153,
         "quant_finance": 10,
-        "hardware": 23,
-        "infrastructure_sre": 162,
-        "data_engineering": 41,
-        "backend": 32,
-        "frontend": 9,
+        "data_engineering": 42,
+        "backend": 31,
+        "frontend": 7,
         "product_management": 2
       },
       "tiers": {
-        "other": 857,
-        "unicorn": 676,
-        "faang_plus": 190
+        "unicorn": 677,
+        "other": 653,
+        "faang_plus": 191
       },
       "top_companies": [
         {
           "company": "SpaceX",
           "jobs": 234
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 203
         },
         {
           "company": "OpenAI",
@@ -5815,20 +5811,24 @@
         },
         {
           "company": "Leidos",
-          "jobs": 30
-        },
-        {
-          "company": "DRW",
-          "jobs": 25
+          "jobs": 28
         },
         {
           "company": "Affirm",
           "jobs": 24
+        },
+        {
+          "company": "DRW",
+          "jobs": 24
+        },
+        {
+          "company": "Twilio",
+          "jobs": 23
         }
       ],
-      "unique_companies": 283,
-      "avg_jobs_per_company": 6.09,
-      "timestamp": "2026-08-13T14:11:37.712090+00:00"
+      "unique_companies": 282,
+      "avg_jobs_per_company": 5.39,
+      "timestamp": "2026-08-13T15:21:20.537638+00:00"
     }
   ]
 }
