@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T17:24:52.059853+00:00",
+    "last_updated": "2026-08-13T18:19:04.057857+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-15",
@@ -5764,25 +5764,25 @@
     },
     {
       "date": "2026-08-13",
-      "total_jobs": 1728,
+      "total_jobs": 1741,
       "categories": {
-        "data_ml": 205,
-        "software_engineering": 986,
         "security": 71,
-        "infrastructure_sre": 155,
+        "software_engineering": 1012,
+        "other": 162,
+        "data_ml": 203,
+        "infrastructure_sre": 154,
         "frontend": 9,
-        "other": 170,
-        "mobile": 21,
         "quant_finance": 10,
         "hardware": 25,
         "data_engineering": 43,
         "backend": 31,
+        "mobile": 19,
         "product_management": 2
       },
       "tiers": {
-        "unicorn": 680,
-        "other": 858,
-        "faang_plus": 190
+        "unicorn": 681,
+        "other": 873,
+        "faang_plus": 187
       },
       "top_companies": [
         {
@@ -5806,29 +5806,29 @@
           "jobs": 33
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "xAI",
           "jobs": 31
         },
         {
-          "company": "xAI",
+          "company": "Booz Allen Hamilton",
           "jobs": 30
         },
         {
+          "company": "Accenture",
+          "jobs": 28
+        },
+        {
           "company": "Leidos",
-          "jobs": 27
+          "jobs": 25
         },
         {
           "company": "Affirm",
           "jobs": 24
-        },
-        {
-          "company": "DRW",
-          "jobs": 24
         }
       ],
-      "unique_companies": 291,
-      "avg_jobs_per_company": 5.94,
-      "timestamp": "2026-08-13T17:24:52.026444+00:00"
+      "unique_companies": 282,
+      "avg_jobs_per_company": 6.17,
+      "timestamp": "2026-08-13T18:19:04.056758+00:00"
     }
   ]
 }
