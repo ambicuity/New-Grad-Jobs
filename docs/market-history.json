@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T19:40:49.717402+00:00",
+    "last_updated": "2026-08-14T20:14:55.577156+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5779,28 +5779,28 @@
       "date": "2026-08-14",
       "total_jobs": 1761,
       "categories": {
-        "software_engineering": 992,
-        "infrastructure_sre": 156,
+        "software_engineering": 993,
+        "infrastructure_sre": 157,
         "frontend": 10,
         "security": 74,
-        "data_ml": 188,
-        "backend": 34,
-        "other": 204,
-        "hardware": 31,
+        "data_ml": 187,
+        "backend": 33,
+        "other": 203,
+        "hardware": 32,
         "data_engineering": 42,
         "quant_finance": 9,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "other": 894,
-        "unicorn": 693,
-        "faang_plus": 174
+        "faang_plus": 176,
+        "unicorn": 692,
+        "other": 893
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 241
+          "jobs": 239
         },
         {
           "company": "Anduril Industries",
@@ -5839,9 +5839,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 298,
-      "avg_jobs_per_company": 5.91,
-      "timestamp": "2026-08-14T19:40:49.716196+00:00"
+      "unique_companies": 300,
+      "avg_jobs_per_company": 5.87,
+      "timestamp": "2026-08-14T20:14:55.575974+00:00"
     }
   ]
 }
