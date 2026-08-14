@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T00:48:47.245734+00:00",
+    "last_updated": "2026-08-14T03:20:56.012537+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,25 +5777,25 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1761,
+      "total_jobs": 1769,
       "categories": {
-        "data_ml": 197,
-        "software_engineering": 997,
-        "infrastructure_sre": 154,
-        "other": 192,
+        "infrastructure_sre": 156,
+        "data_ml": 193,
+        "software_engineering": 1012,
+        "other": 188,
         "data_engineering": 46,
-        "security": 75,
-        "hardware": 28,
+        "security": 74,
+        "hardware": 30,
         "frontend": 11,
         "backend": 32,
-        "mobile": 20,
         "quant_finance": 7,
+        "mobile": 18,
         "product_management": 2
       },
       "tiers": {
-        "other": 893,
-        "unicorn": 686,
-        "faang_plus": 182
+        "unicorn": 685,
+        "other": 905,
+        "faang_plus": 179
       },
       "top_companies": [
         {
@@ -5808,7 +5808,7 @@
         },
         {
           "company": "OpenAI",
-          "jobs": 44
+          "jobs": 45
         },
         {
           "company": "Waymo",
@@ -5817,6 +5817,10 @@
         {
           "company": "Point72",
           "jobs": 33
+        },
+        {
+          "company": "Accenture",
+          "jobs": 32
         },
         {
           "company": "xAI",
@@ -5833,15 +5837,11 @@
         {
           "company": "Affirm",
           "jobs": 24
-        },
-        {
-          "company": "DRW",
-          "jobs": 24
         }
       ],
-      "unique_companies": 297,
-      "avg_jobs_per_company": 5.93,
-      "timestamp": "2026-08-14T00:48:47.244483+00:00"
+      "unique_companies": 289,
+      "avg_jobs_per_company": 6.12,
+      "timestamp": "2026-08-14T03:20:56.011430+00:00"
     }
   ]
 }

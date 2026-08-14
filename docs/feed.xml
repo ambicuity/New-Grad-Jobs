@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 00:48:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 03:20:56 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Network Engineer at OpenAI</title>
+      <link>https://jobs.ashbyhq.com/openai/9f78c41f-8d39-46c9-b9c3-c3b075905b24</link>
+      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 14 Aug 2026 00:59:50 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/9f78c41f-8d39-46c9-b9c3-c3b075905b24</guid>
+    </item>
     <item>
       <title>Data Scientist – Analytics  at AppLovin</title>
       <link>https://boards.greenhouse.io/applovin/jobs/4705263006?gh_jid=4705263006</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Leidos in Reston, VA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer---TS-SCI-Poly_R-00189550</guid>
-    </item>
-    <item>
-      <title>Electric Power Systems Engineer - TS/SCI Poly Required at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Electric-Power-Systems-Engineer---TS-SCI-Poly-Required_R-00189561</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Electric-Power-Systems-Engineer---TS-SCI-Poly-Required_R-00189561</guid>
     </item>
   </channel>
 </rss>
