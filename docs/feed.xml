@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 20:51:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 21:17:37 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Early Career Firmware Engineer  at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 14 Aug 2026 21:07:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Fulfillment Core Services at Lyft</title>
+      <link>https://app.careerpuck.com/job-board/lyft/job/8716222002?gh_jid=8716222002</link>
+      <description>New grad role at Lyft in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 20:46:23 +0000</pubDate>
+      <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8716222002?gh_jid=8716222002</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer, Intelligence Systems at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</link>
+      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 20:46:06 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</guid>
+    </item>
     <item>
       <title>Associate Software Engineer - Java (Distributed Systems and Databases) at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5390637008</link>
@@ -135,10 +156,10 @@
     </item>
     <item>
       <title>Software Engineer III at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8634697002</link>
-      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <link>https://www.zoominfo.com/careers?gh_jid=8649154002</link>
+      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
       <pubDate>Fri, 14 Aug 2026 18:20:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8634697002</guid>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8649154002</guid>
     </item>
     <item>
       <title>Software Engineer III at ZoomInfo</title>
@@ -149,17 +170,17 @@
     </item>
     <item>
       <title>Software Engineer III at ZoomInfo</title>
+      <link>https://www.zoominfo.com/careers?gh_jid=8634697002</link>
+      <description>New grad role at ZoomInfo in Waltham, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 18:20:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8634697002</guid>
+    </item>
+    <item>
+      <title>Software Engineer III at ZoomInfo</title>
       <link>https://www.zoominfo.com/careers?gh_jid=8509478002</link>
       <description>New grad role at ZoomInfo in Bethesda, Maryland, United States; Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Fri, 14 Aug 2026 18:20:35 +0000</pubDate>
       <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8509478002</guid>
-    </item>
-    <item>
-      <title>Software Engineer III at ZoomInfo</title>
-      <link>https://www.zoominfo.com/careers?gh_jid=8649154002</link>
-      <description>New grad role at ZoomInfo in Bengaluru, Karnataka, India. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 18:20:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.zoominfo.com/careers?gh_jid=8649154002</guid>
     </item>
     <item>
       <title>Software Engineer III  at ZoomInfo</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Runtime &amp; Optimization at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506008</link>
-      <description>New grad role at Waymo in Mountain View, California, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506008</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Simulation Realism at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6499165</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6499165</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Simulation Realism  at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6688617</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6688617</guid>
     </item>
   </channel>
 </rss>
