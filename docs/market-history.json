@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T13:45:52.387599+00:00",
+    "last_updated": "2026-08-14T14:47:10.034093+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,24 +5777,24 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1742,
+      "total_jobs": 1735,
       "categories": {
-        "software_engineering": 996,
-        "data_ml": 188,
-        "infrastructure_sre": 157,
-        "frontend": 10,
+        "software_engineering": 997,
         "security": 75,
-        "data_engineering": 43,
+        "data_ml": 188,
+        "other": 182,
+        "infrastructure_sre": 152,
+        "frontend": 10,
+        "data_engineering": 42,
         "hardware": 27,
         "backend": 33,
-        "other": 184,
         "quant_finance": 8,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "other": 873,
-        "unicorn": 687,
+        "unicorn": 689,
+        "other": 864,
         "faang_plus": 182
       },
       "top_companies": [
@@ -5804,7 +5804,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 205
+          "jobs": 206
         },
         {
           "company": "OpenAI",
@@ -5819,12 +5819,12 @@
           "jobs": 33
         },
         {
-          "company": "Leidos",
+          "company": "xAI",
           "jobs": 31
         },
         {
-          "company": "xAI",
-          "jobs": 31
+          "company": "Leidos",
+          "jobs": 28
         },
         {
           "company": "Affirm",
@@ -5839,9 +5839,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 294,
-      "avg_jobs_per_company": 5.93,
-      "timestamp": "2026-08-14T13:45:52.386371+00:00"
+      "unique_companies": 290,
+      "avg_jobs_per_company": 5.98,
+      "timestamp": "2026-08-14T14:47:10.033040+00:00"
     }
   ]
 }
