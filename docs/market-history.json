@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T16:36:42.734912+00:00",
+    "last_updated": "2026-08-14T17:40:16.846467+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,30 +5777,30 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1760,
+      "total_jobs": 1749,
       "categories": {
-        "software_engineering": 1002,
-        "other": 196,
-        "infrastructure_sre": 152,
-        "hardware": 29,
-        "data_ml": 190,
+        "software_engineering": 999,
+        "infrastructure_sre": 154,
+        "data_ml": 188,
+        "backend": 33,
+        "other": 190,
+        "hardware": 28,
         "security": 75,
         "frontend": 10,
         "data_engineering": 43,
-        "backend": 33,
-        "quant_finance": 9,
+        "quant_finance": 8,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "unicorn": 696,
-        "other": 884,
-        "faang_plus": 180
+        "unicorn": 693,
+        "other": 880,
+        "faang_plus": 176
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 243
+          "jobs": 242
         },
         {
           "company": "Anduril Industries",
@@ -5811,11 +5811,11 @@
           "jobs": 45
         },
         {
-          "company": "Point72",
+          "company": "Waymo",
           "jobs": 33
         },
         {
-          "company": "Waymo",
+          "company": "Point72",
           "jobs": 33
         },
         {
@@ -5831,17 +5831,17 @@
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
+          "company": "DRW",
           "jobs": 24
         },
         {
-          "company": "Leidos",
-          "jobs": 24
+          "company": "Twilio",
+          "jobs": 23
         }
       ],
-      "unique_companies": 298,
+      "unique_companies": 296,
       "avg_jobs_per_company": 5.91,
-      "timestamp": "2026-08-14T16:36:42.733707+00:00"
+      "timestamp": "2026-08-14T17:40:16.844984+00:00"
     }
   ]
 }
