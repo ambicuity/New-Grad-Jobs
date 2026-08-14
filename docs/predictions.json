@@ -3,32 +3,33 @@
   "predictions": {
     "7_days": {
       "total_jobs": 1785,
-      "change_percent": 1.94
+      "change_percent": 1.36
     },
     "30_days": {
-      "total_jobs": 1890,
-      "change_percent": 7.94
+      "total_jobs": 1840,
+      "change_percent": 4.49
     }
   },
   "growing_categories": [
     "data_engineering",
     "data_ml",
-    "software_engineering"
+    "infrastructure_sre"
   ],
   "declining_categories": [
     "security",
-    "infrastructure_sre"
+    "software_engineering",
+    "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market experienced a significant breakout in the final two days of the period, suggesting a shift in hiring sentiment or a seasonal influx of new graduate roles.",
-    "Growth is currently driven by non-FAANG/non-unicorn companies, which saw a sharp spike in volume, indicating broader market participation beyond top-tier tech firms.",
-    "Data-focused roles (Data Engineering and ML) are showing the highest relative growth momentum, signaling a strategic pivot toward AI-readiness in entry-level hiring."
+    "The market has experienced a significant breakout in the last 72 hours, moving from a steady 1400-1500 range to a new support level above 1700.",
+    "Growth is heavily driven by 'Other' tier companies, suggesting a broader distribution of hiring demand beyond the traditional FAANG+ giants.",
+    "Data-focused roles (Data Engineering and ML) are showing the strongest momentum, indicating that companies are prioritizing AI and infrastructure readiness for the upcoming cycle."
   ],
-  "generated_at": "2026-08-13T00:51:19.157810+00:00",
+  "generated_at": "2026-08-14T00:48:52.104589+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-15",
-    "end": "2026-08-13"
+    "start": "2026-05-16",
+    "end": "2026-08-14"
   }
 }
