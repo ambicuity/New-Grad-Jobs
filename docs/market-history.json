@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T14:47:10.034093+00:00",
+    "last_updated": "2026-08-14T15:40:41.902016+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,25 +5777,25 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1735,
+      "total_jobs": 1753,
       "categories": {
-        "software_engineering": 997,
-        "security": 75,
-        "data_ml": 188,
-        "other": 182,
-        "infrastructure_sre": 152,
+        "software_engineering": 1003,
+        "security": 74,
+        "data_ml": 187,
+        "other": 196,
+        "infrastructure_sre": 151,
         "frontend": 10,
-        "data_engineering": 42,
-        "hardware": 27,
+        "data_engineering": 43,
+        "hardware": 26,
         "backend": 33,
-        "quant_finance": 8,
+        "quant_finance": 9,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "unicorn": 689,
-        "other": 864,
-        "faang_plus": 182
+        "other": 880,
+        "unicorn": 688,
+        "faang_plus": 185
       },
       "top_companies": [
         {
@@ -5824,24 +5824,24 @@
         },
         {
           "company": "Leidos",
-          "jobs": 28
+          "jobs": 26
         },
         {
           "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
+          "company": "University of Ottawa",
           "jobs": 24
         },
         {
-          "company": "DRW",
+          "company": "Northrop Grumman",
           "jobs": 24
         }
       ],
-      "unique_companies": 290,
-      "avg_jobs_per_company": 5.98,
-      "timestamp": "2026-08-14T14:47:10.033040+00:00"
+      "unique_companies": 296,
+      "avg_jobs_per_company": 5.92,
+      "timestamp": "2026-08-14T15:40:41.900937+00:00"
     }
   ]
 }
