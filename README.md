@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1769<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1766<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1012<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1016<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->11<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->194<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->46<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->156<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->160<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->7<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->188<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->27<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->179<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,769** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,766** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Booz Allen Hamilton | C4I Systems Engineer | North Charleston, SC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/North-Charleston-SC/Systems-Engineer_R0244756) |
 | Medtronic | Systems Engineer II | Lafayette, Colorado, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Systems-Engineer-II_R73012-1) |
 
-**[View all 1,012 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,016 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -160,6 +160,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Autodesk | Security Engineer, FedRamp/GovCloud | Atlanta, GA, USA | Today | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2) |
 | Booz Allen Hamilton | Zero Trust Information Systems Security Engineer | Honolulu, HI | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Honolulu-HI/Zero-Trust-Information-Systems-Security-Engineer_R0246493) |
 | Northrop Grumman | Databricks Security Engineer | United States-Remote | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Remote/Databricks-Security-Engineer_R10245623) |
 | Northrop Grumman | System Security Engineer Level 3/4 (AHT) | United States-California-Northridge | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/System-Security-Engineer-Level-3-4--AHT-_R10245565) |
@@ -169,7 +170,6 @@ Experience an advanced career journey with us! 🚀
 | Vercel | Product Security Engineer | Hybrid - San Francisco, New York City, London, Berlin | Today | [Apply](https://job-boards.greenhouse.io/vercel/jobs/6102343004) |
 | Vercel | Security Engineer, Cloud | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/vercel/jobs/6102335004) |
 | Vercel | Security Engineer, Detection Response | Hybrid - San Francisco, New York City, London, Berlin | Today | [Apply](https://job-boards.greenhouse.io/vercel/jobs/6111332004) |
-| Stripe | Client Platform Security Engineer | New York, New York | Today | [Apply](https://stripe.com/jobs/search?gh_jid=7982720) |
 
 **[View all 74 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -181,6 +181,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | AppLovin | Data Scientist – Analytics | Palo Alto, CA | Today | [Apply](https://boards.greenhouse.io/applovin/jobs/4705263006?gh_jid=4705263006) |
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
+| Autodesk | Machine Learning Engineer 3D Geometry/ Multi-Modal | AMER - Canada - Ontario - Toronto - University Ave | Today | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/AMER---Canada---Ontario---Toronto---University-Ave/Machine-Learning-Engineer-3D-Geometry--Multi-Modal_26WD97765-1) |
 | Booz Allen Hamilton | Data Scientist | Washington, DC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Data-Scientist_R0246170) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | Today | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | Jane Street | Machine Learning Engineer | New York, New York, United States | Today | [Apply](https://www.janestreet.com/join-jane-street/apply/6485460002?gh_jid=6485460002) |
@@ -188,9 +189,8 @@ Experience an advanced career journey with us! 🚀
 | Twilio | Machine Learning Engineer | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7996774) |
 | Twilio | Machine Learning Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7702644) |
 | SpaceX | ML Engineer, Surrogate Modeling (Vehicle Engineering) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8559035002?gh_jid=8559035002) |
-| Epic Games | Machine Learning Engineer, Memory | Cary,North Carolina,United States | Today | [Apply](https://epicgames.com/careers/jobs/6134271004?gh_jid=6134271004) |
 
-**[View all 193 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 194 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -217,6 +217,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Discord | QA/DevOps Engineer | San Francisco Bay Area | Today | [Apply](https://job-boards.greenhouse.io/discord/jobs/8703614002) |
 | OpenAI | Network Engineer | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/9f78c41f-8d39-46c9-b9c3-c3b075905b24) |
 | Mastercard | Site Reliability Engineer I | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-I_R-286909-1) |
 | Booz Allen Hamilton | Network Engineer, Mid | San Diego, CA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Network-Engineer--Mid_R0245288) |
@@ -226,9 +227,8 @@ Experience an advanced career journey with us! 🚀
 | Northrop Grumman | DevOps Engineer – Level 5 | United States-Colorado-Colorado Springs | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/DevOps-Engineer---Level-5_R10245629) |
 | Leidos | ICS/SCADA & Critical Infrastructure Engineer - TS/SCI Poly | Reston, VA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer---TS-SCI-Poly_R-00189550) |
 | Leidos | Junior ICS/SCADA & Critical Infrastructure Engineer - TS/SCI Poly | Reston, VA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Junior-ICS-SCADA---Critical-Infrastructure-Engineer---TS-SCI-Poly_R-00189545) |
-| Leidos | Field/Base Communications Network Engineer | San Diego, CA | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/San-Diego-CA/Field-Base-Communications-Network-Engineer_R-00189482) |
 
-**[View all 156 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 160 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -261,16 +261,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Northrop Grumman | Thermal Mechanical Engineer - Level 2 - Dulles | United States-Virginia-Dulles | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Thermal-Mechanical-Engineer---Level-2---Dulles_R10244756) |
 | KBR, Inc. | Junior Mechanical Engineer | Huntsville, Alabama | Today | [Apply](https://kbr.wd5.myworkdayjobs.com/job/Huntsville-Alabama/Junior-Mechanical-Engineer_R2128289) |
+| University of British Columbia | Assistant or Associate Professor of Teaching in Electrical and Computer Engineering | Okanagan, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=e0823611a04d9932) |
 | University of British Columbia | Assistant or Associate Professor of Teaching in Electrical and Computer Engineering | Kelowna, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=aae2a3993ecffde1) |
+| BLOX | Junior Electrical Engineer | Bessemer, AL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=36154eb026f8a4e3) |
+| — | Junior Electrical Engineer | Bessemer, AL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=91348ec753a0061d) |
 | WSP | Early Career Mechanical Engineer | Fort Mill, SC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b7baff170308965b) |
 | Peraton | Electrical Engineering, Associate | Topeka, KS, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=eab63e7702d02845) |
-| Naval Nuclear Laboratory | Submarine Power Plant Electrical Engineer, Associate (Entry Level) | Niskayuna, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3d519c2858150157) |
-| Naval Nuclear Laboratory | Submarine Power Plant Electrical Engineer, Associate (Entry Level) | West Mifflin, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=e6799da518612719) |
-| Sandia National Laboratories | Early Career Navigation Warfare Electrical Engineer, Onsite | Albuquerque, NM, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ee69d1f253204c3f) |
-| Sandia National Laboratories | Early Career Navigation Systems Electrical Engineer, Onsite | Albuquerque, NM, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3f9c0a7183d69efb) |
 | Northrop Grumman | Electrical Engineer Level 2 | United States-Alabama-Huntsville | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Electrical-Engineer-Level-2_R10244946) |
+| Quest Global | Graduate Engineer Trainee (GET) – Electronics & Embedded Systems | KL, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=81e4fe12dd00a406) |
 
-**[View all 30 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 27 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -278,18 +278,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| VEG ER for Pets | January 2027 New ER Doctor Program: 2027 Graduates | Phoenix, AZ, US | Today | [Apply](https://www.indeed.com/viewjob?jk=cf4bd66c69123e92) |
+| VEG ER for Pets | January 2027 New ER Doctor Program: 2027 Graduates | Los Angeles, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=72059069a14326ec) |
 | Booz Allen Hamilton | Signals & Defense Engineer, Junior | McLean, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/McLean-VA/Signals---Defense-Engineer--Junior_R0246098) |
 | Medtronic | Research & Technology Engineer II - Irvine | Irvine, California, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Irvine-California-United-States-of-America/Research---Technology-Engineer-II---Irvine_R74412-2) |
-| Medtronic | Service Center Repair Technician I (Medical Devices) | Fort Worth, Texas, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Fort-Worth-Texas-United-States-of-America/Service-Center-Repair-Technician-I--Medical-Devices-_R70809-1) |
 | Medtronic | R&D/Released Product Engineer II - CST - Memphis, TN (Onsite) | Memphis, Tennessee, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Memphis-Tennessee-United-States-of-America/R-D-Released-Product-Engineer-II---CST---Memphis--TN--Onsite-_R74284-1) |
 | Northrop Grumman | Manufacturing Engineer Level 2 - SWING SHIFT | United States-California-Commerce | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Commerce/Manufacturing-Engineer-Level-2_R10232117) |
 | Northrop Grumman | Propulsion Engineer – Level 2/3 | United States-Arizona-Chandler | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Arizona-Chandler/Propulsion-Engineer---Level-2-3_R10245762) |
 | Northrop Grumman | Facilities Project Engineer - Level 2 | United States-North Carolina-Charlotte | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-North-Carolina-Charlotte/Facilities-Project-Engineer---Level-2_R10245729) |
 | Northrop Grumman | Engineering Tech Support - Level 2 | United States-Virginia-Dulles | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Engineering-Tech-Support---Level-2_R10245709) |
 | Northrop Grumman | Manufacturing Engineer Level 2 (Requires Active Clearance) | United States-Utah-Clearfield | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Clearfield/Manufacturing-Engineer-Level-2--Requires-Active-Clearance-_R10245711) |
-| Boeing | Associate Avionics Repair and Modification Technician - B-52 (2400) | USA - San Antonio, TX | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---San-Antonio-TX/Associate-Avionics-Repair-and-Modification-Technician---B-52--2400-_JR2026522086-1) |
 
-**[View all 188 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 179 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -404,4 +404,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-14 03:20:56 UTC*
+*Last updated: 2026-08-14 05:16:20 UTC*

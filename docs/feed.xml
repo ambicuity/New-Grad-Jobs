@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 03:20:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 05:16:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>QA/DevOps Engineer at Discord</title>
+      <link>https://job-boards.greenhouse.io/discord/jobs/8703614002</link>
+      <description>New grad role at Discord in San Francisco Bay Area. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 14 Aug 2026 03:27:33 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/discord/jobs/8703614002</guid>
+    </item>
     <item>
       <title>Network Engineer at OpenAI</title>
       <link>https://jobs.ashbyhq.com/openai/9f78c41f-8d39-46c9-b9c3-c3b075905b24</link>
@@ -43,6 +50,20 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
+      <title>January 2027 New ER Doctor Program: 2027 Graduates at VEG ER for Pets</title>
+      <link>https://www.indeed.com/viewjob?jk=cf4bd66c69123e92</link>
+      <description>New grad role at VEG ER for Pets in Phoenix, AZ, US. Category: Other</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cf4bd66c69123e92</guid>
+    </item>
+    <item>
+      <title>January 2027 New ER Doctor Program: 2027 Graduates at VEG ER for Pets</title>
+      <link>https://www.indeed.com/viewjob?jk=72059069a14326ec</link>
+      <description>New grad role at VEG ER for Pets in Los Angeles, CA, US. Category: Other</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=72059069a14326ec</guid>
+    </item>
+    <item>
       <title>Software Engineer, Feedback &amp; Learning Systems — Meta Factory at Adobe</title>
       <link>https://adobe.wd5.myworkdayjobs.com/job/San-Jose/Software-Engineer--Feedback---Learning-Systems---Meta-Factory_R170225-1</link>
       <description>New grad role at Adobe in San Jose. Category: Software Engineering</description>
@@ -62,6 +83,20 @@
       <description>New grad role at Mastercard in Pune, India. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-I_R-286909-1</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer 3D Geometry/ Multi-Modal at Autodesk</title>
+      <link>https://autodesk.wd1.myworkdayjobs.com/job/AMER---Canada---Ontario---Toronto---University-Ave/Machine-Learning-Engineer-3D-Geometry--Multi-Modal_26WD97765-1</link>
+      <description>New grad role at Autodesk in AMER - Canada - Ontario - Toronto - University Ave. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/AMER---Canada---Ontario---Toronto---University-Ave/Machine-Learning-Engineer-3D-Geometry--Multi-Modal_26WD97765-1</guid>
+    </item>
+    <item>
+      <title>Security Engineer,  FedRamp/GovCloud at Autodesk</title>
+      <link>https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2</link>
+      <description>New grad role at Autodesk in Atlanta, GA, USA. Category: Security Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2</guid>
     </item>
     <item>
       <title>Software Engineer, C++ at Autodesk</title>
@@ -153,13 +188,6 @@
       <description>New grad role at Medtronic in Irvine, California, United States of America. Category: Other</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Irvine-California-United-States-of-America/Research---Technology-Engineer-II---Irvine_R74412-2</guid>
-    </item>
-    <item>
-      <title>Service Center Repair Technician I (Medical Devices) at Medtronic</title>
-      <link>https://medtronic.wd1.myworkdayjobs.com/job/Fort-Worth-Texas-United-States-of-America/Service-Center-Repair-Technician-I--Medical-Devices-_R70809-1</link>
-      <description>New grad role at Medtronic in Fort Worth, Texas, United States of America. Category: Other</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Fort-Worth-Texas-United-States-of-America/Service-Center-Repair-Technician-I--Medical-Devices-_R70809-1</guid>
     </item>
     <item>
       <title>R&amp;D/Released Product Engineer II - CST - Memphis, TN (Onsite) at Medtronic</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Boeing in USA - Swansea, IL. Category: Software Engineering</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Swansea-IL/Security-Software-Engineer_JR2026505728-1</guid>
-    </item>
-    <item>
-      <title>Data Security Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Adelphi-MD/Data-Security-Engineer_R-00189506-1</link>
-      <description>New grad role at Leidos in Adelphi, MD. Category: Security Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Adelphi-MD/Data-Security-Engineer_R-00189506-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer - 25k Sign on Bonus at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Columbia-MD/Software-Engineer---25k-Sign-on-Bonus_R-00189576</link>
-      <description>New grad role at Leidos in Columbia, MD. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Columbia-MD/Software-Engineer---25k-Sign-on-Bonus_R-00189576</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Bowie-MD/Software-Engineer_R-00189564</link>
-      <description>New grad role at Leidos in Bowie, MD. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Bowie-MD/Software-Engineer_R-00189564</guid>
-    </item>
-    <item>
-      <title>ICS/SCADA &amp; Critical Infrastructure Engineer - TS/SCI Poly at Leidos</title>
-      <link>https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer---TS-SCI-Poly_R-00189550</link>
-      <description>New grad role at Leidos in Reston, VA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/ICS-SCADA---Critical-Infrastructure-Engineer---TS-SCI-Poly_R-00189550</guid>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T03:20:56.012537+00:00",
+    "last_updated": "2026-08-14T05:16:20.093907+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,15 +5777,15 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1769,
+      "total_jobs": 1766,
       "categories": {
-        "infrastructure_sre": 156,
-        "data_ml": 193,
-        "software_engineering": 1012,
-        "other": 188,
-        "data_engineering": 46,
+        "infrastructure_sre": 160,
+        "data_ml": 194,
+        "software_engineering": 1016,
+        "other": 179,
         "security": 74,
-        "hardware": 30,
+        "data_engineering": 46,
+        "hardware": 27,
         "frontend": 11,
         "backend": 32,
         "quant_finance": 7,
@@ -5794,8 +5794,8 @@
       },
       "tiers": {
         "unicorn": 685,
-        "other": 905,
-        "faang_plus": 179
+        "other": 896,
+        "faang_plus": 185
       },
       "top_companies": [
         {
@@ -5819,16 +5819,16 @@
           "jobs": 33
         },
         {
-          "company": "Accenture",
-          "jobs": 32
-        },
-        {
           "company": "xAI",
           "jobs": 31
         },
         {
+          "company": "Accenture",
+          "jobs": 31
+        },
+        {
           "company": "Leidos",
-          "jobs": 29
+          "jobs": 30
         },
         {
           "company": "Northrop Grumman",
@@ -5839,9 +5839,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 289,
-      "avg_jobs_per_company": 6.12,
-      "timestamp": "2026-08-14T03:20:56.011430+00:00"
+      "unique_companies": 293,
+      "avg_jobs_per_company": 6.03,
+      "timestamp": "2026-08-14T05:16:20.092477+00:00"
     }
   ]
 }
