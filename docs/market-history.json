@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T22:09:01.812994+00:00",
+    "last_updated": "2026-08-14T22:42:14.408311+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,25 +5777,25 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1764,
+      "total_jobs": 1757,
       "categories": {
-        "infrastructure_sre": 154,
-        "software_engineering": 1008,
-        "data_ml": 184,
+        "infrastructure_sre": 153,
+        "software_engineering": 1001,
+        "data_ml": 185,
         "frontend": 10,
-        "security": 75,
+        "security": 74,
         "backend": 33,
-        "other": 197,
-        "hardware": 32,
-        "data_engineering": 43,
-        "product_management": 3,
+        "other": 196,
+        "hardware": 34,
+        "data_engineering": 42,
+        "product_management": 4,
         "quant_finance": 7,
         "mobile": 18
       },
       "tiers": {
-        "other": 882,
-        "faang_plus": 191,
-        "unicorn": 691
+        "other": 883,
+        "faang_plus": 182,
+        "unicorn": 692
       },
       "top_companies": [
         {
@@ -5809,10 +5809,6 @@
         {
           "company": "OpenAI",
           "jobs": 43
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 34
         },
         {
           "company": "Waymo",
@@ -5835,13 +5831,17 @@
           "jobs": 24
         },
         {
-          "company": "University of Ottawa",
+          "company": "Northrop Grumman",
+          "jobs": 24
+        },
+        {
+          "company": "DRW",
           "jobs": 24
         }
       ],
-      "unique_companies": 289,
-      "avg_jobs_per_company": 6.1,
-      "timestamp": "2026-08-14T22:09:01.809950+00:00"
+      "unique_companies": 290,
+      "avg_jobs_per_company": 6.06,
+      "timestamp": "2026-08-14T22:42:14.407175+00:00"
     }
   ]
 }
