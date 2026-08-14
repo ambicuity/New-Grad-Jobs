@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T09:25:16.653705+00:00",
+    "last_updated": "2026-08-14T10:36:35.670577+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5779,22 +5779,22 @@
       "date": "2026-08-14",
       "total_jobs": 1752,
       "categories": {
-        "infrastructure_sre": 155,
         "software_engineering": 1000,
-        "data_engineering": 44,
+        "infrastructure_sre": 156,
+        "data_engineering": 43,
         "data_ml": 193,
-        "hardware": 25,
         "other": 190,
+        "hardware": 25,
+        "product_management": 3,
         "security": 75,
-        "frontend": 11,
+        "frontend": 10,
         "backend": 32,
         "quant_finance": 7,
-        "mobile": 18,
-        "product_management": 2
+        "mobile": 18
       },
       "tiers": {
-        "other": 885,
         "unicorn": 686,
+        "other": 885,
         "faang_plus": 181
       },
       "top_companies": [
@@ -5827,11 +5827,11 @@
           "jobs": 29
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Affirm",
+          "company": "Northrop Grumman",
           "jobs": 24
         },
         {
@@ -5839,9 +5839,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 290,
-      "avg_jobs_per_company": 6.04,
-      "timestamp": "2026-08-14T09:25:16.651248+00:00"
+      "unique_companies": 294,
+      "avg_jobs_per_company": 5.96,
+      "timestamp": "2026-08-14T10:36:35.667603+00:00"
     }
   ]
 }
