@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T21:17:36.851885+00:00",
+    "last_updated": "2026-08-14T21:49:41.951526+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,25 +5777,25 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1764,
+      "total_jobs": 1754,
       "categories": {
-        "data_ml": 183,
-        "software_engineering": 1008,
+        "software_engineering": 997,
+        "data_ml": 185,
         "infrastructure_sre": 154,
         "frontend": 10,
-        "security": 76,
+        "security": 75,
         "backend": 33,
-        "other": 197,
+        "other": 195,
         "hardware": 32,
-        "data_engineering": 42,
-        "quant_finance": 8,
+        "data_engineering": 43,
+        "quant_finance": 9,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "other": 881,
-        "faang_plus": 190,
-        "unicorn": 693
+        "other": 886,
+        "faang_plus": 176,
+        "unicorn": 692
       },
       "top_companies": [
         {
@@ -5811,10 +5811,6 @@
           "jobs": 43
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 34
-        },
-        {
           "company": "Waymo",
           "jobs": 33
         },
@@ -5827,21 +5823,25 @@
           "jobs": 31
         },
         {
-          "company": "Leidos",
-          "jobs": 27
+          "company": "University of Ottawa",
+          "jobs": 26
         },
         {
-          "company": "University of Ottawa",
-          "jobs": 25
+          "company": "Leidos",
+          "jobs": 26
         },
         {
           "company": "Affirm",
           "jobs": 24
+        },
+        {
+          "company": "DRW",
+          "jobs": 24
         }
       ],
-      "unique_companies": 290,
-      "avg_jobs_per_company": 6.08,
-      "timestamp": "2026-08-14T21:17:36.850425+00:00"
+      "unique_companies": 293,
+      "avg_jobs_per_company": 5.99,
+      "timestamp": "2026-08-14T21:49:41.950295+00:00"
     }
   ]
 }

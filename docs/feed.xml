@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 21:17:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 21:49:42 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Systems Engineer (Esports) at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/8011835?gh_jid=8011835</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 21:43:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/8011835?gh_jid=8011835</guid>
+    </item>
+    <item>
+      <title>Measurement Data Scientist at AppLovin</title>
+      <link>https://boards.greenhouse.io/applovin/jobs/4705264006?gh_jid=4705264006</link>
+      <description>New grad role at AppLovin in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Fri, 14 Aug 2026 21:27:22 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/applovin/jobs/4705264006?gh_jid=4705264006</guid>
+    </item>
+    <item>
+      <title>Technical Producer II - Central Technology, Data Foundations at Riot Games</title>
+      <link>https://www.riotgames.com/en/work-with-us/job/8115074?gh_jid=8115074</link>
+      <description>New grad role at Riot Games in Los Angeles, USA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 14 Aug 2026 21:15:55 +0000</pubDate>
+      <guid isPermaLink="true">https://www.riotgames.com/en/work-with-us/job/8115074?gh_jid=8115074</guid>
+    </item>
     <item>
       <title>Early Career Firmware Engineer  at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
@@ -335,27 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7429791</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Marketplace Pricing at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7905643</link>
-      <description>New grad role at Waymo in MountainView, CA, United States  . Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905643</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer Perception LLM/VLM (PhD, New Grad) at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=7488508</link>
-      <description>New grad role at Waymo in Mountain View, CA USA;  San Francisco, CA USA;. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7488508</guid>
-    </item>
-    <item>
-      <title>Machine Learning Engineer, Prediction &amp; Planning at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=6506689</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6506689</guid>
     </item>
   </channel>
 </rss>
