@@ -54,21 +54,21 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1752<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1750<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1000<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->997<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->32<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->75<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->156<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->157<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->7<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->25<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->26<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->190<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,752** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,750** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 
-**[View all 1,000 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 997 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Twilio | Machine Learning Engineer | Remote - US | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/7702644) |
 | SpaceX | ML Engineer, Surrogate Modeling (Vehicle Engineering) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8559035002?gh_jid=8559035002) |
 
-**[View all 193 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 192 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -221,12 +221,12 @@ Experience an advanced career journey with us! 🚀
 | COREXPERT IT SOLUTION PVT. LTD. | Network Engineer L1- Data Centre | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=396cb013291304c7) |
 | COREXPERT IT SOLUTION PVT. LTD. | Network Engineer L1- Data Centre | GJ, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=06b1874ef8cd2786) |
 | Sovos | Site Reliability Engineer - II | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=06c7f36130b99108) |
-| Verkada | Technical Support Engineer - University Graduate 2026 | San Mateo, CA United States | Today | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4715534007) |
 | Verkada | Technical Support Engineer - University Graduate 2026 | New York City, NY United States | Today | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5172974007) |
+| Verkada | Technical Support Engineer - University Graduate 2026 | San Mateo, CA United States | Today | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4715534007) |
 | ZoomInfo | DevOps Engineer III | Waltham, Massachusetts, United States | Today | [Apply](https://www.zoominfo.com/careers?gh_jid=8614660002) |
 | xAI | Site Reliability Engineer - Datacenter | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5211587007) |
 
-**[View all 156 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 157 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -248,8 +248,8 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | Palantir | Deployment Strategist, New Grad - Intel, US Government | Washington, D.C. | 2026-06-15 | [Apply](https://jobs.lever.co/palantir/5d8286d6-992a-404b-94af-99c173d40299) |
 
 ## Hardware Engineering
@@ -261,15 +261,15 @@ Experience an advanced career journey with us! 🚀
 | Jabil | Electronic Engineer I | Saint Petersburg, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=6ba9e208517f6c02) |
 | University of British Columbia | Assistant or Associate Professor of Teaching in Electrical and Computer Engineering | Okanagan, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=e0823611a04d9932) |
 | University of British Columbia | Assistant or Associate Professor of Teaching in Electrical and Computer Engineering | Kelowna, BC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=aae2a3993ecffde1) |
+| Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (Summer 2027) | Palm Beach Gardens, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b0b5a04c28845494) |
+| Sargent & Lundy | Electrical Engineer 1 (Entry Level) - Energy & Industrial (January 2027) | Chicago, IL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9722fba8ec9c51ea) |
 | BAE Systems USA | Entry Level Electrical Engineer | San Diego, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=f622f10333a09dfe) |
 | Serco | Entry-Level Engineering Technician - Ludlow, MA | Ludlow, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=27aa6bef4b90e183) |
 | Northrop Grumman | Thermal Mechanical Engineer - Level 2 - Dulles | United States-Virginia-Dulles | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Virginia-Dulles/Thermal-Mechanical-Engineer---Level-2---Dulles_R10244756) |
 | KBR, Inc. | Junior Mechanical Engineer | Huntsville, Alabama | 1 day ago | [Apply](https://kbr.wd5.myworkdayjobs.com/job/Huntsville-Alabama/Junior-Mechanical-Engineer_R2128289) |
-| ByteDance | ASIC Design Engineer Graduate (Video Silicon IP) - 2027 Start | San Jose, CA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=363828344a36849a) |
 | Quest Global | Graduate Engineer Trainee (GET) – Electronics & Embedded Systems | KL, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=81e4fe12dd00a406) |
-| Quest Global | Graduate Engineer Trainee (GET) – Electronics & Embedded Systems | KL, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=c72683b6e61a8ca2) |
 
-**[View all 25 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 26 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -403,4 +403,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-14 10:36:35 UTC*
+*Last updated: 2026-08-14 11:29:44 UTC*
