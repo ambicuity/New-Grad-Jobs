@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T18:38:25.230356+00:00",
+    "last_updated": "2026-08-14T19:40:49.717402+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-16",
@@ -5777,30 +5777,30 @@
     },
     {
       "date": "2026-08-14",
-      "total_jobs": 1734,
+      "total_jobs": 1761,
       "categories": {
-        "infrastructure_sre": 149,
-        "software_engineering": 990,
-        "security": 75,
+        "software_engineering": 992,
+        "infrastructure_sre": 156,
+        "frontend": 10,
+        "security": 74,
         "data_ml": 188,
         "backend": 34,
-        "other": 189,
-        "hardware": 27,
-        "frontend": 9,
-        "data_engineering": 43,
+        "other": 204,
+        "hardware": 31,
+        "data_engineering": 42,
         "quant_finance": 9,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "other": 867,
-        "unicorn": 692,
-        "faang_plus": 175
+        "other": 894,
+        "unicorn": 693,
+        "faang_plus": 174
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 243
+          "jobs": 241
         },
         {
           "company": "Anduril Industries",
@@ -5823,6 +5823,10 @@
           "jobs": 31
         },
         {
+          "company": "Leidos",
+          "jobs": 25
+        },
+        {
           "company": "Affirm",
           "jobs": 24
         },
@@ -5833,15 +5837,11 @@
         {
           "company": "DRW",
           "jobs": 24
-        },
-        {
-          "company": "Twilio",
-          "jobs": 23
         }
       ],
-      "unique_companies": 294,
-      "avg_jobs_per_company": 5.9,
-      "timestamp": "2026-08-14T18:38:25.229226+00:00"
+      "unique_companies": 298,
+      "avg_jobs_per_company": 5.91,
+      "timestamp": "2026-08-14T19:40:49.716196+00:00"
     }
   ]
 }
