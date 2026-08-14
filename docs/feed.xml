@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 20:14:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 20:51:20 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Associate Software Engineer - Java (Distributed Systems and Databases) at New Relic</title>
+      <link>https://job-boards.greenhouse.io/newrelic/jobs/5390637008</link>
+      <description>New grad role at New Relic in Portland, Oregon, USA. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 20:30:06 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5390637008</guid>
+    </item>
+    <item>
+      <title>Software Engineer I, Payments at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8700578002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 20:13:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8700578002</guid>
+    </item>
     <item>
       <title>Software Engineer, Observability at Lyft</title>
       <link>https://app.careerpuck.com/job-board/lyft/job/8716220002?gh_jid=8716220002</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=6688617</guid>
-    </item>
-    <item>
-      <title>ML Engineer, Foundation Model Infrastructure at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=8107088</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; Kirkland, WA, USA; New York, NY, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8107088</guid>
-    </item>
-    <item>
-      <title>ML Engineer, Foundation Model Recipes at Waymo</title>
-      <link>https://careers.withwaymo.com/jobs?gh_jid=8109035</link>
-      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA; Kirkland, WA, USA; New York, NY, USA. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 16:42:55 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8109035</guid>
     </item>
   </channel>
 </rss>
