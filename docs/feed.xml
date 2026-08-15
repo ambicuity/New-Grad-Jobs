@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 13:14:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 13:50:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -92,25 +92,11 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=90110b9795d46e11</guid>
     </item>
     <item>
-      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
-      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
-      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <title>RN Resident - Program Application - Cohort 43 February 15, 2027 at Legacy Health</title>
+      <link>https://www.indeed.com/viewjob?jk=462d0253ca3a7442</link>
+      <description>New grad role at Legacy Health in Portland, OR, US. Category: Other</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
-    </item>
-    <item>
-      <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
-      <link>https://www.indeed.com/viewjob?jk=fe2666d802ab6a51</link>
-      <description>New grad role at Smart Apply Test Company in Austin, TX, US. Category: Other</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe2666d802ab6a51</guid>
-    </item>
-    <item>
-      <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
-      <link>https://www.indeed.com/viewjob?jk=68eedc09c92d0240</link>
-      <description>New grad role at Smart Apply Test Company in Greenwood Village, CO, US. Category: Other</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=68eedc09c92d0240</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=462d0253ca3a7442</guid>
     </item>
     <item>
       <title>2027 | Americas | Salt Lake City | Engineering | New Analyst at Goldman Sachs</title>
@@ -155,13 +141,6 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=484119fe8395f90d</guid>
     </item>
     <item>
-      <title>RN Resident - Program Application - Cohort 43 February 15, 2027 at Legacy Health</title>
-      <link>https://www.indeed.com/viewjob?jk=462d0253ca3a7442</link>
-      <description>New grad role at Legacy Health in Portland, OR, US. Category: Other</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=462d0253ca3a7442</guid>
-    </item>
-    <item>
       <title>2027 | Americas | Salt Lake City | Operations | Summer Analyst at Goldman Sachs</title>
       <link>https://www.indeed.com/viewjob?jk=ebe8d0eebf91753c</link>
       <description>New grad role at Goldman Sachs in Salt Lake City, UT, US. Category: Quantitative Finance</description>
@@ -197,11 +176,39 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6a73985c951272ab</guid>
     </item>
     <item>
+      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
+      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
+      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
+    </item>
+    <item>
+      <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
+      <link>https://www.indeed.com/viewjob?jk=fe2666d802ab6a51</link>
+      <description>New grad role at Smart Apply Test Company in Austin, TX, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=fe2666d802ab6a51</guid>
+    </item>
+    <item>
+      <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
+      <link>https://www.indeed.com/viewjob?jk=68eedc09c92d0240</link>
+      <description>New grad role at Smart Apply Test Company in Greenwood Village, CO, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=68eedc09c92d0240</guid>
+    </item>
+    <item>
       <title>Associate Software Development Engineer at CVS Health</title>
       <link>https://www.indeed.com/viewjob?jk=bc3b50c557737b38</link>
       <description>New grad role at CVS Health in Farmers Branch, TX, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc3b50c557737b38</guid>
+    </item>
+    <item>
+      <title>Software Engineer II Java Full stack Developer at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493</guid>
     </item>
     <item>
       <title>Software Engineer - AIM Virtualization at Snowflake</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Samsara in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
       <pubDate>Fri, 14 Aug 2026 19:48:46 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694</guid>
-    </item>
-    <item>
-      <title>Mission Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5004359007?gh_jid=5004359007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 19:32:35 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5004359007?gh_jid=5004359007</guid>
     </item>
   </channel>
 </rss>
