@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T06:05:11.216529+00:00",
+    "last_updated": "2026-08-15T06:54:56.625086+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5790,25 +5790,25 @@
     },
     {
       "date": "2026-08-15",
-      "total_jobs": 1768,
+      "total_jobs": 1574,
       "categories": {
-        "data_ml": 183,
-        "software_engineering": 1033,
-        "infrastructure_sre": 157,
-        "other": 176,
-        "security": 74,
-        "hardware": 31,
-        "frontend": 10,
-        "backend": 33,
-        "data_engineering": 43,
+        "data_ml": 164,
+        "software_engineering": 943,
+        "infrastructure_sre": 132,
+        "other": 137,
+        "quant_finance": 9,
+        "security": 67,
+        "frontend": 11,
+        "backend": 31,
+        "hardware": 25,
+        "data_engineering": 34,
         "product_management": 3,
-        "quant_finance": 7,
         "mobile": 18
       },
       "tiers": {
-        "other": 897,
+        "other": 774,
         "unicorn": 694,
-        "faang_plus": 177
+        "faang_plus": 106
       },
       "top_companies": [
         {
@@ -5836,10 +5836,6 @@
           "jobs": 31
         },
         {
-          "company": "Leidos",
-          "jobs": 30
-        },
-        {
           "company": "Accenture",
           "jobs": 29
         },
@@ -5850,11 +5846,15 @@
         {
           "company": "DRW",
           "jobs": 24
+        },
+        {
+          "company": "Twilio",
+          "jobs": 23
         }
       ],
-      "unique_companies": 291,
-      "avg_jobs_per_company": 6.08,
-      "timestamp": "2026-08-15T06:05:11.215217+00:00"
+      "unique_companies": 252,
+      "avg_jobs_per_company": 6.25,
+      "timestamp": "2026-08-15T06:54:56.624004+00:00"
     }
   ]
 }
