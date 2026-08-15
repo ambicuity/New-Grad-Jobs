@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 16:14:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 16:47:29 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -36,13 +36,6 @@
       <guid isPermaLink="true">https://jobs.ashbyhq.com/bjakcareer/9fcb0a37-6f13-4c49-9527-7d70dff3e15a</guid>
     </item>
     <item>
-      <title>Early Career Firmware Engineer  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 15 Aug 2026 04:44:58 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007</guid>
-    </item>
-    <item>
       <title>Software Engineer, Onboard at ATOMS</title>
       <link>https://job-boards.greenhouse.io/cssmerge/jobs/8717657002</link>
       <description>New grad role at ATOMS in San Francisco, CA. Category: Software Engineering</description>
@@ -55,13 +48,6 @@
       <description>New grad role at Robinhood in Westlake, TX. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 15 Aug 2026 01:24:39 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&amp;gh_jid=8122623</guid>
-    </item>
-    <item>
-      <title>2027 | Americas | Toronto | Engineering | Summer Analyst at Goldman Sachs</title>
-      <link>https://ca.indeed.com/viewjob?jk=fb24b1c192d5099e</link>
-      <description>New grad role at Goldman Sachs in Toronto, ON, CA. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fb24b1c192d5099e</guid>
     </item>
     <item>
       <title>Robotics (ROS 2), Embedded Developer Trainee at Evolve Robotics LLP</title>
@@ -90,6 +76,13 @@
       <description>New grad role at Honeywell in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=90110b9795d46e11</guid>
+    </item>
+    <item>
+      <title>2027 | Americas | Toronto | Engineering | Summer Analyst at Goldman Sachs</title>
+      <link>https://ca.indeed.com/viewjob?jk=fb24b1c192d5099e</link>
+      <description>New grad role at Goldman Sachs in Toronto, ON, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=fb24b1c192d5099e</guid>
     </item>
     <item>
       <title>Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) at Inova Health System</title>
@@ -330,13 +323,6 @@
       <guid isPermaLink="true">https://app.careerpuck.com/job-board/lyft/job/8716222002?gh_jid=8716222002</guid>
     </item>
     <item>
-      <title>Embedded Software Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</link>
-      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 20:46:06 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</guid>
-    </item>
-    <item>
       <title>Associate Software Engineer - Java (Distributed Systems and Databases) at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5390637008</link>
       <description>New grad role at New Relic in Portland, Oregon, USA. Category: Software Engineering</description>
@@ -356,6 +342,20 @@
       <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
       <pubDate>Fri, 14 Aug 2026 20:01:05 +0000</pubDate>
       <guid isPermaLink="true">https://jobs.dropbox.com/listing/7958409?gh_jid=7958409</guid>
+    </item>
+    <item>
+      <title>Technical Support Engineer I - Mexico at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694</link>
+      <description>New grad role at Samsara in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 14 Aug 2026 19:48:46 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694</guid>
+    </item>
+    <item>
+      <title>Finance Systems Engineer, Finance and Strategy at Anthropic</title>
+      <link>https://job-boards.greenhouse.io/anthropic/jobs/5390728008</link>
+      <description>New grad role at Anthropic in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 19:29:18 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5390728008</guid>
     </item>
   </channel>
 </rss>
