@@ -5,8 +5,29 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 00:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 01:09:44 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:46 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
     <item>
       <title>Software Engineer II (Mainframe Developer) at Mastercard</title>
       <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II--Mainframe-Developer-_R-274163</link>
@@ -335,27 +356,6 @@
       <description>New grad role at The Walt Disney Company in Orlando, FL, USA. Category: Data Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer II at Waystar</title>
-      <link>https://waystar.wd1.myworkdayjobs.com/job/Louisville-KY/Software-Engineer-II_R3336-1</link>
-      <description>New grad role at Waystar in Louisville, KY. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://waystar.wd1.myworkdayjobs.com/job/Louisville-KY/Software-Engineer-II_R3336-1</guid>
-    </item>
-    <item>
-      <title>Software Engineer - AIM Virtualization at Snowflake</title>
-      <link>https://jobs.ashbyhq.com/snowflake/08ba6a41-fb63-4b51-aee7-be5501668909</link>
-      <description>New grad role at Snowflake in Menlo Park, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 23:35:58 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/snowflake/08ba6a41-fb63-4b51-aee7-be5501668909</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Compute Infrastructure at OpenAI</title>
-      <link>https://jobs.ashbyhq.com/openai/ca300a6d-a2a7-4580-aad7-323fbdfee7b1</link>
-      <description>New grad role at OpenAI in San Francisco, California, United States. Category: Software Engineering</description>
-      <pubDate>Fri, 14 Aug 2026 23:27:55 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/openai/ca300a6d-a2a7-4580-aad7-323fbdfee7b1</guid>
     </item>
   </channel>
 </rss>
