@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1773<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1772<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1015<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1014<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,773** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,772** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Roblox | Software Engineer, Account Authentication | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8097701?gh_jid=8097701) |
 | Anduril Industries | Software Engineer, Developer Platform | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5210930007?gh_jid=5210930007) |
 
-**[View all 1,015 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,014 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -200,7 +200,7 @@ Experience an advanced career journey with us! 🚀
 | TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 1 day ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
-| zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 1 day ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
+| zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 2 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 2 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
 | Precision Medicine Group | SQL Developer II | Remote, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
 | Northland Properties | Intermediate Data Engineer | Vancouver, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=5f8278ecde6812ef) |
@@ -289,8 +289,8 @@ Experience an advanced career journey with us! 🚀
 | Inova Health System | Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) | VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=9854646760fc3754) |
 | Legacy Health | RN Resident - Program Application - Cohort 43 February 15, 2027 | Portland, OR, US | Today | [Apply](https://www.indeed.com/viewjob?jk=462d0253ca3a7442) |
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Conflicts Resolution Group / Summer Analyst | Dallas, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=6a73985c951272ab) |
-| Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
 | DEPLOY | Junior Test Engineer | Huntsville, AL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=870810eda0ffd0a8) |
+| Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
 | Gusto | Future Opportunities: Early Career Sales Talent | Denver, CO;Atlanta, GA;Phoenix, AZ;Las Vegas, NV;Chicago, IL | 1 day ago | [Apply](https://job-boards.greenhouse.io/gusto/jobs/8001931) |
 
 **[View all 187 Other roles on the live board](https://jobs.riteshrana.engineer/)**
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 23:27:25 UTC*
+*Last updated: 2026-08-15 23:49:12 UTC*
