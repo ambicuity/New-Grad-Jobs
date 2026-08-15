@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T04:38:29.062445+00:00",
+    "last_updated": "2026-08-15T05:07:08.617406+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5790,15 +5790,15 @@
     },
     {
       "date": "2026-08-15",
-      "total_jobs": 1791,
+      "total_jobs": 1780,
       "categories": {
+        "data_ml": 186,
         "software_engineering": 1037,
-        "infrastructure_sre": 157,
-        "data_ml": 188,
-        "other": 183,
-        "security": 74,
-        "hardware": 33,
-        "data_engineering": 48,
+        "infrastructure_sre": 156,
+        "other": 179,
+        "security": 75,
+        "hardware": 31,
+        "data_engineering": 45,
         "frontend": 10,
         "backend": 33,
         "product_management": 3,
@@ -5806,9 +5806,9 @@
         "mobile": 18
       },
       "tiers": {
-        "other": 918,
+        "other": 909,
         "unicorn": 694,
-        "faang_plus": 179
+        "faang_plus": 177
       },
       "top_companies": [
         {
@@ -5824,10 +5824,6 @@
           "jobs": 44
         },
         {
-          "company": "Leidos",
-          "jobs": 33
-        },
-        {
           "company": "Waymo",
           "jobs": 33
         },
@@ -5838,6 +5834,10 @@
         {
           "company": "xAI",
           "jobs": 31
+        },
+        {
+          "company": "Leidos",
+          "jobs": 30
         },
         {
           "company": "Accenture",
@@ -5852,9 +5852,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 295,
-      "avg_jobs_per_company": 6.07,
-      "timestamp": "2026-08-15T04:38:29.061413+00:00"
+      "unique_companies": 294,
+      "avg_jobs_per_company": 6.05,
+      "timestamp": "2026-08-15T05:07:08.616393+00:00"
     }
   ]
 }
