@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1777<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1774<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1018<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1016<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -68,7 +68,7 @@ Experience an advanced career journey with us! 🚀
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->158<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->29<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->187<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,777** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,774** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Roblox | Software Engineer, Account Authentication | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8097701?gh_jid=8097701) |
 | Anduril Industries | Software Engineer, Developer Platform | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5210930007?gh_jid=5210930007) |
 
-**[View all 1,018 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,016 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -201,8 +201,8 @@ Experience an advanced career journey with us! 🚀
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 1 day ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 1 day ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
-| NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 1 day ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
-| Precision Medicine Group | SQL Developer II | Remote, United States | 1 day ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
+| NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 2 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
+| Precision Medicine Group | SQL Developer II | Remote, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
 | Northland Properties | Intermediate Data Engineer | Vancouver, BC, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=5f8278ecde6812ef) |
 | Mount Sinai Health System | Data Engineer II - Digital and Technology Partners - Hybrid/Remote | US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=25b8ed9364c3eca5) |
 | Mount Sinai Health System | Data Engineer III - Digital and Technology Partners - Hybrid/Remote | US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=928669fe85ff56c6) |
@@ -253,7 +253,7 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
 **[View all 11 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -274,7 +274,7 @@ Experience an advanced career journey with us! 🚀
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (Summer 2027) | Washington, DC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=185baa014c304dfa) |
 | Qualus | Field Service Technician I - Apparatus Boot Camp Winter 2027 | Louisville, KY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=67a62053136a9cd0) |
 
-**[View all 30 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 29 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 20:08:10 UTC*
+*Last updated: 2026-08-15 20:41:07 UTC*
