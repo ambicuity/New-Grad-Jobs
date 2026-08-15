@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 05:41:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 06:05:11 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Early Career Firmware Engineer  at Anduril Industries</title>
@@ -50,11 +50,11 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
-      <title>Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level at Lockheed Martin</title>
-      <link>https://www.indeed.com/viewjob?jk=0be114c2b51489e7</link>
-      <description>New grad role at Lockheed Martin in Orlando, FL, US. Category: Other</description>
+      <title>Junior Full-Stack Software Engineer (Oahu) at Hawaii Foodservice Alliance</title>
+      <link>https://www.indeed.com/viewjob?jk=50620062cbd58588</link>
+      <description>New grad role at Hawaii Foodservice Alliance in Honolulu, HI, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=0be114c2b51489e7</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=50620062cbd58588</guid>
     </item>
     <item>
       <title>Associate Software Development Engineer at CVS Health</title>
@@ -62,6 +62,20 @@
       <description>New grad role at CVS Health in Farmers Branch, TX, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc3b50c557737b38</guid>
+    </item>
+    <item>
+      <title>HVAC Building Controls Systems Engineer at Johnson Controls</title>
+      <link>https://www.indeed.com/viewjob?jk=e6ad00abbfa7563f</link>
+      <description>New grad role at Johnson Controls in New York, NY, US. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6ad00abbfa7563f</guid>
+    </item>
+    <item>
+      <title>Mechanical Associate Engineer (Winter 2027) at Astranis</title>
+      <link>https://www.indeed.com/viewjob?jk=7d366bc6471ee9e8</link>
+      <description>New grad role at Astranis in San Francisco, CA, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d366bc6471ee9e8</guid>
     </item>
     <item>
       <title>Software Engineer II (Mainframe Developer) at Mastercard</title>
@@ -342,20 +356,6 @@
       <description>New grad role at KBR, Inc. in Lexington Park, Maryland. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/System-of-Systems-Engineer_R2128370</guid>
-    </item>
-    <item>
-      <title>Network Systems Engineer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/Network-Systems-Engineer_R2128365</link>
-      <description>New grad role at KBR, Inc. in Lexington Park, Maryland. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/Network-Systems-Engineer_R2128365</guid>
-    </item>
-    <item>
-      <title>Jr Software Developer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128352</link>
-      <description>New grad role at KBR, Inc. in Colorado Springs, Colorado. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128352</guid>
     </item>
   </channel>
 </rss>

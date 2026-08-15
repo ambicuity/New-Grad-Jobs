@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T05:41:17.849988+00:00",
+    "last_updated": "2026-08-15T06:05:11.216529+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5790,17 +5790,17 @@
     },
     {
       "date": "2026-08-15",
-      "total_jobs": 1769,
+      "total_jobs": 1768,
       "categories": {
-        "data_ml": 182,
-        "software_engineering": 1031,
-        "infrastructure_sre": 152,
-        "other": 184,
+        "data_ml": 183,
+        "software_engineering": 1033,
+        "infrastructure_sre": 157,
+        "other": 176,
         "security": 74,
         "hardware": 31,
-        "data_engineering": 43,
-        "frontend": 11,
+        "frontend": 10,
         "backend": 33,
+        "data_engineering": 43,
         "product_management": 3,
         "quant_finance": 7,
         "mobile": 18
@@ -5808,7 +5808,7 @@
       "tiers": {
         "other": 897,
         "unicorn": 694,
-        "faang_plus": 178
+        "faang_plus": 177
       },
       "top_companies": [
         {
@@ -5836,12 +5836,12 @@
           "jobs": 31
         },
         {
-          "company": "Accenture",
-          "jobs": 29
+          "company": "Leidos",
+          "jobs": 30
         },
         {
-          "company": "Leidos",
-          "jobs": 28
+          "company": "Accenture",
+          "jobs": 29
         },
         {
           "company": "Affirm",
@@ -5852,9 +5852,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 279,
-      "avg_jobs_per_company": 6.34,
-      "timestamp": "2026-08-15T05:41:17.848950+00:00"
+      "unique_companies": 291,
+      "avg_jobs_per_company": 6.08,
+      "timestamp": "2026-08-15T06:05:11.215217+00:00"
     }
   ]
 }
