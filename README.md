@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1775<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1777<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -65,18 +65,18 @@ Experience an advanced career journey with us! 🚀
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->73<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->158<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->159<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->28<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->187<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->188<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,775** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,777** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -222,11 +222,11 @@ Experience an advanced career journey with us! 🚀
 | Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&gh_jid=8122623) |
 | Dillon Consulting Limited | Junior/Intermediate Transportation Planner/Engineer | North York, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=10ae766f74168df1) |
 | Dillon Consulting Limited | Junior/Intermediate Transportation Planner/Engineer | North York, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=12d754a1440a0463) |
+| Yarash Real Estate Incorporated | Junior SaaS Developer & Platform Administrator | Glendale, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3b54bb324ce8af0b) |
 | Riot Games | Technical Producer II - Publishing Platform, Commerce | Los Angeles, USA; Mercer Island, USA | 1 day ago | [Apply](https://www.riotgames.com/en/work-with-us/job/8049863?gh_jid=8049863) |
 | Riot Games | Technical Producer II - Central Technology, Data Foundations | Los Angeles, USA | 1 day ago | [Apply](https://www.riotgames.com/en/work-with-us/job/8115074?gh_jid=8115074) |
-| Samsara | Technical Support Engineer I - Mexico | Remote - Mexico | 1 day ago | [Apply](https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694) |
 
-**[View all 158 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 159 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -293,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
 | Gusto | Future Opportunities: Early Career Sales Talent | Denver, CO;Atlanta, GA;Phoenix, AZ;Las Vegas, NV;Chicago, IL | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/8001931) |
 
-**[View all 187 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 188 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 21:54:22 UTC*
+*Last updated: 2026-08-15 22:08:21 UTC*
