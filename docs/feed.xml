@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 10:50:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 11:08:23 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Desktop at BJAK</title>
@@ -44,17 +44,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
-      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
       <title>2027 | Americas | Toronto | Engineering | Summer Analyst at Goldman Sachs</title>
@@ -76,6 +76,13 @@
       <description>New grad role at Honeywell in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=90110b9795d46e11</guid>
+    </item>
+    <item>
+      <title>RN Resident - Program Application - Cohort 43 February 15, 2027 at Legacy Health</title>
+      <link>https://www.indeed.com/viewjob?jk=462d0253ca3a7442</link>
+      <description>New grad role at Legacy Health in Portland, OR, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=462d0253ca3a7442</guid>
     </item>
     <item>
       <title>2027 | Americas | Salt Lake City | Engineering | New Analyst at Goldman Sachs</title>
@@ -195,13 +202,6 @@
       <description>New grad role at Core4ce Careers in Wpafb, OH, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=91a109ea74e830b1</guid>
-    </item>
-    <item>
-      <title>Associate Engineer/Associate Civil Engineer at CITY OF TRACY</title>
-      <link>https://www.indeed.com/viewjob?jk=29853dc1f7d053b8</link>
-      <description>New grad role at CITY OF TRACY in Civic Center Plaza, CA, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=29853dc1f7d053b8</guid>
     </item>
     <item>
       <title>Software Engineer - AIM Virtualization at Snowflake</title>
