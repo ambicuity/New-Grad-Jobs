@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T04:01:52.072575+00:00",
+    "last_updated": "2026-08-15T04:38:29.062445+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5790,15 +5790,15 @@
     },
     {
       "date": "2026-08-15",
-      "total_jobs": 1792,
+      "total_jobs": 1791,
       "categories": {
-        "software_engineering": 1036,
-        "infrastructure_sre": 159,
-        "data_ml": 187,
-        "other": 185,
+        "software_engineering": 1037,
+        "infrastructure_sre": 157,
+        "data_ml": 188,
+        "other": 183,
         "security": 74,
         "hardware": 33,
-        "data_engineering": 47,
+        "data_engineering": 48,
         "frontend": 10,
         "backend": 33,
         "product_management": 3,
@@ -5806,9 +5806,9 @@
         "mobile": 18
       },
       "tiers": {
-        "other": 917,
+        "other": 918,
         "unicorn": 694,
-        "faang_plus": 181
+        "faang_plus": 179
       },
       "top_companies": [
         {
@@ -5825,7 +5825,7 @@
         },
         {
           "company": "Leidos",
-          "jobs": 35
+          "jobs": 33
         },
         {
           "company": "Waymo",
@@ -5852,9 +5852,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 293,
-      "avg_jobs_per_company": 6.12,
-      "timestamp": "2026-08-15T04:01:52.071419+00:00"
+      "unique_companies": 295,
+      "avg_jobs_per_company": 6.07,
+      "timestamp": "2026-08-15T04:38:29.061413+00:00"
     }
   ]
 }

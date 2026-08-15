@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1792<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1791<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1036<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1037<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->187<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->47<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->159<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->188<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->48<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->157<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->7<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->33<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->185<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->183<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,792** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,791** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -87,15 +87,15 @@ Experience an advanced career journey with us! 🚀
 | ATOMS | Software Engineer, Onboard | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8717657002) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
-| CVS Health | Associate Software Development Engineer | Farmers Branch, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bc3b50c557737b38) |
 | Hawaii Foodservice Alliance | Junior Full-Stack Software Engineer (Oahu) | Honolulu, HI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=50620062cbd58588) |
+| CVS Health | Associate Software Development Engineer | Farmers Branch, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bc3b50c557737b38) |
 | Johnson Controls | HVAC Building Controls Systems Engineer | New York, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e6ad00abbfa7563f) |
 | Mastercard | Software Engineer II (Mainframe Developer) | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II--Mainframe-Developer-_R-274163) |
 | Mastercard | Software Engineer // | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer---_R-287018) |
 | NVIDIA | Embedded Software Engineer - DPU Platform | US, MA, Westford | Today | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/US-MA-Westford/Software-Engineer---DPU-Platform_JR2015949-1) |
 | NVIDIA | Systems Software Engineer, CPU Manageability Stack | India, Bengaluru | Today | [Apply](https://nvidia.wd5.myworkdayjobs.com/job/India-Bengaluru/Systems-Software-Engineer--CPU-Manageability-Stack_JR2023337) |
 
-**[View all 1,036 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,037 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | AppLovin | Measurement Data Scientist | Palo Alto, CA | Today | [Apply](https://boards.greenhouse.io/applovin/jobs/4705264006?gh_jid=4705264006) |
 | Anduril Industries | Early Career Firmware Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007) |
 
-**[View all 187 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 188 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -201,13 +201,13 @@ Experience an advanced career journey with us! 🚀
 | TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | Charles Schwab | Data Engineer | Southlake, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=4fe2da7c8d3fc66e) |
+| Dutch Bros Coffee | Associate Endpoint Engineer | Tempe, AZ, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=fa7b0eb716586ff2) |
 | Leidos | Site Reliability Data Engineer | Norfolk, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9cf7c0cabc4e76bd) |
 | Leidos | Site Reliability Data Engineer | San Diego, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=86a339d26f943f2a) |
 | Leidos | Site Reliability Data Engineer | Jacksonville, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9027ed9f1114b54b) |
 | Target | Data Engineer - Finance AI Solutions | 7000 Target Pkwy N,NCD-0375 Brooklyn Park,MN 55445 | 1 day ago | [Apply](https://target.wd5.myworkdayjobs.com/job/7000-Target-Pkwy-NNCD-0375-Brooklyn-ParkMN-55445/Data-Engineer---Finance-Technology-Solutions_R0000444866) |
-| TransUnion | Cloud/Big Data Engineer | Chennai | 1 day ago | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Chennai/Cloud-Big-Data-Engineer_19041089) |
 
-**[View all 47 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 48 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -226,7 +226,7 @@ Experience an advanced career journey with us! 🚀
 | Pinterest | Administrative Business Partner I - Core Engineering | San Francisco, CA, US; Palo Alto, CA, US | Today | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=8103612) |
 | ZoomInfo | DevOps Engineer III | Waltham, Massachusetts, United States | Today | [Apply](https://www.zoominfo.com/careers?gh_jid=8614660002) |
 
-**[View all 159 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 157 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -288,7 +288,7 @@ Experience an advanced career journey with us! 🚀
 | Northrop Grumman | Associate Quality Engineer | United States-Maryland-Baltimore | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Baltimore/Associate-Quality-Engineer_R10245298) |
 | Boeing | Propulsion Engineer (Associate or Experienced) | USA - Hazelwood, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Propulsion-Engineer_JR2026521216) |
 
-**[View all 185 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 183 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -403,4 +403,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 04:01:52 UTC*
+*Last updated: 2026-08-15 04:38:29 UTC*
