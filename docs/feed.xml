@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 09:58:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 10:22:05 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Desktop at BJAK</title>
@@ -44,17 +44,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>2027 | Americas | Toronto | Engineering | Summer Analyst at Goldman Sachs</title>
@@ -155,6 +155,13 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6a73985c951272ab</guid>
     </item>
     <item>
+      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
+      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
+      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
+    </item>
+    <item>
       <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
       <link>https://www.indeed.com/viewjob?jk=fe2666d802ab6a51</link>
       <description>New grad role at Smart Apply Test Company in Austin, TX, US. Category: Other</description>
@@ -181,27 +188,6 @@
       <description>New grad role at Core4ce Careers in Wpafb, OH, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=91a109ea74e830b1</guid>
-    </item>
-    <item>
-      <title>Junior Software Test Automation Engineer at York Space Systems</title>
-      <link>https://www.indeed.com/viewjob?jk=1a5724fd4522ef91</link>
-      <description>New grad role at York Space Systems in Greenwood Village, CO, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=1a5724fd4522ef91</guid>
-    </item>
-    <item>
-      <title>Junior Software Test Automation Engineer at York Space Systems</title>
-      <link>https://www.indeed.com/viewjob?jk=ac6bf38918f29ed6</link>
-      <description>New grad role at York Space Systems in Austin, TX, US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ac6bf38918f29ed6</guid>
-    </item>
-    <item>
-      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
-      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
-      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
     </item>
     <item>
       <title>Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level at Lockheed Martin</title>
@@ -356,6 +342,20 @@
       <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
       <pubDate>Fri, 14 Aug 2026 20:13:21 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8700578002</guid>
+    </item>
+    <item>
+      <title>Infrastructure Software Engineer, Metadata Core at Dropbox</title>
+      <link>https://jobs.dropbox.com/listing/7958409?gh_jid=7958409</link>
+      <description>New grad role at Dropbox in Remote - Poland. Category: Software Engineering</description>
+      <pubDate>Fri, 14 Aug 2026 20:01:05 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.dropbox.com/listing/7958409?gh_jid=7958409</guid>
+    </item>
+    <item>
+      <title>Technical Support Engineer I - Mexico at Samsara</title>
+      <link>https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694</link>
+      <description>New grad role at Samsara in Remote - Mexico. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Fri, 14 Aug 2026 19:48:46 +0000</pubDate>
+      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694</guid>
     </item>
   </channel>
 </rss>
