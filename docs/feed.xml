@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 02:25:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 03:16:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Customer Experience Associate (New Grad) at Robinhood</title>
@@ -34,6 +34,20 @@
       <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Junior Full-Stack Software Engineer (Oahu) at Hawaii Foodservice Alliance</title>
+      <link>https://www.indeed.com/viewjob?jk=50620062cbd58588</link>
+      <description>New grad role at Hawaii Foodservice Alliance in Honolulu, HI, US. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=50620062cbd58588</guid>
+    </item>
+    <item>
+      <title>AWS Infrastructure Engineer-Deltek VantagePoint at Trilon Group</title>
+      <link>https://www.indeed.com/viewjob?jk=ec771dab7e7ffd38</link>
+      <description>New grad role at Trilon Group in OR, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ec771dab7e7ffd38</guid>
     </item>
     <item>
       <title>Software Engineer II (Mainframe Developer) at Mastercard</title>
@@ -342,20 +356,6 @@
       <description>New grad role at KBR, Inc. in Beavercreek Township, Ohio. Category: Other</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Beavercreek-Township-Ohio/Junior-Reverse-Engineer_R2121536</guid>
-    </item>
-    <item>
-      <title>Jr Software Engineer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Beavercreek-Ohio/Jr-Software-Engineer_R2126837</link>
-      <description>New grad role at KBR, Inc. in Beavercreek, Ohio. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Beavercreek-Ohio/Jr-Software-Engineer_R2126837</guid>
-    </item>
-    <item>
-      <title>Data Scientist at Radiance Technologies</title>
-      <link>https://radiancetech.wd12.myworkdayjobs.com/job/Beavercreek-OH/Data-Scientist_HR102314</link>
-      <description>New grad role at Radiance Technologies in Beavercreek, OH. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://radiancetech.wd12.myworkdayjobs.com/job/Beavercreek-OH/Data-Scientist_HR102314</guid>
     </item>
   </channel>
 </rss>
