@@ -5,8 +5,22 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 19:02:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 19:30:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Space at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007</link>
+      <description>New grad role at Anduril Industries in Chantilly, Virginia, United States; Herndon, Virginia, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 19:14:07 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007</guid>
+    </item>
+    <item>
+      <title>Systems Engineer, Space at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5208269007?gh_jid=5208269007</link>
+      <description>New grad role at Anduril Industries in Chantilly, Virginia, United States; Herndon, Virginia, United States. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 19:14:03 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5208269007?gh_jid=5208269007</guid>
+    </item>
     <item>
       <title>IT Systems Engineer at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007</link>
@@ -342,20 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 17:21:17 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</guid>
-    </item>
-    <item>
-      <title>Finance Associate, Engineering at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 15 Aug 2026 17:17:16 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007</guid>
-    </item>
-    <item>
-      <title>2026 Early Career Engineering Finance Associate at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sat, 15 Aug 2026 17:17:12 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007</guid>
     </item>
   </channel>
 </rss>
