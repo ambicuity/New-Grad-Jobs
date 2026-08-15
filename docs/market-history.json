@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T14:40:50.627971+00:00",
+    "last_updated": "2026-08-15T15:03:09.792622+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5793,7 +5793,7 @@
       "total_jobs": 1775,
       "categories": {
         "data_ml": 191,
-        "software_engineering": 1022,
+        "software_engineering": 1021,
         "infrastructure_sre": 155,
         "mobile": 19,
         "other": 185,
@@ -5801,7 +5801,7 @@
         "security": 73,
         "frontend": 10,
         "backend": 33,
-        "hardware": 30,
+        "hardware": 31,
         "data_engineering": 43,
         "product_management": 3
       },
@@ -5844,17 +5844,17 @@
           "jobs": 24
         },
         {
-          "company": "Accenture",
+          "company": "DRW",
           "jobs": 24
         },
         {
-          "company": "DRW",
-          "jobs": 24
+          "company": "Twilio",
+          "jobs": 23
         }
       ],
-      "unique_companies": 281,
-      "avg_jobs_per_company": 6.32,
-      "timestamp": "2026-08-15T14:40:50.626946+00:00"
+      "unique_companies": 282,
+      "avg_jobs_per_company": 6.29,
+      "timestamp": "2026-08-15T15:03:09.791586+00:00"
     }
   ]
 }

@@ -58,7 +58,7 @@ Experience an advanced career journey with us! 🚀
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1022<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1021<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -68,7 +68,7 @@ Experience an advanced career journey with us! 🚀
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->155<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->31<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->185<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | OpenAI | Software Engineer, Compute Infrastructure | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/ca300a6d-a2a7-4580-aad7-323fbdfee7b1) |
 | Gusto | Software Engineer, Database Infrastructure | San Francisco, CA - Hybrid | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/7413644) |
 
-**[View all 1,022 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,021 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -274,7 +274,7 @@ Experience an advanced career journey with us! 🚀
 | Qualus | Field Service Technician I - Apparatus Boot Camp Winter 2027 | Louisville, KY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=67a62053136a9cd0) |
 | Georgia Tech | Electrical Engineer I | Atlanta, GA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b8d83c95bdf49850) |
 
-**[View all 30 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 31 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 14:40:50 UTC*
+*Last updated: 2026-08-15 15:03:09 UTC*
