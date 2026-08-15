@@ -86,14 +86,14 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | BJAK | Software Engineer, Desktop | United States, United States, United States | Today | [Apply](https://jobs.ashbyhq.com/bjakcareer/9fcb0a37-6f13-4c49-9527-7d70dff3e15a) |
 | ATOMS | Software Engineer, Onboard | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8717657002) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
-| Core4ce Careers | Software Engineer | Wpafb, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=eead124cf15d2c0b) |
-| Core4ce Careers | Software Engineer Level 4 | Wpafb, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=91a109ea74e830b1) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | CVS Health | Associate Software Development Engineer | Farmers Branch, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bc3b50c557737b38) |
 | Snowflake | Software Engineer - AIM Virtualization | Menlo Park, California, United States | Today | [Apply](https://jobs.ashbyhq.com/snowflake/08ba6a41-fb63-4b51-aee7-be5501668909) |
 | OpenAI | Software Engineer, Compute Infrastructure | San Francisco, California, United States | Today | [Apply](https://jobs.ashbyhq.com/openai/ca300a6d-a2a7-4580-aad7-323fbdfee7b1) |
 | Gusto | Software Engineer, Database Infrastructure | San Francisco, CA - Hybrid | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/7413644) |
+| Gusto | Software Engineer, ML Platform | Denver, CO - Hybrid; New York, New York, United States; San Francisco, CA - Hybrid | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/8073232) |
+| Lyft | Software Engineer, Observability | Toronto, Canada | Today | [Apply](https://app.careerpuck.com/job-board/lyft/job/8716220002?gh_jid=8716220002) |
 
 **[View all 1,025 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -163,8 +163,8 @@ Experience an advanced career journey with us! 🚀
 | LaunchDarkly | Product Security Engineer | Remote - US West | Today | [Apply](https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003) |
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Point72 | GenAI Security Engineer | New York, NY | Today | [Apply](https://boards.greenhouse.io/point72/jobs/8399360002?gh_jid=8399360002) |
-| Twilio | Security Engineer, Incident Response | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Twilio | Security Engineer, Incident Response | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
+| Twilio | Security Engineer, Incident Response | Remote - Ireland | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
 | Peloton | Security Engineer, Incident Response | New York, New York | Today | [Apply](https://careers.onepeloton.com/en/all-jobs/?gh_jid=8074713) |
 | Autodesk | Security Engineer, FedRamp/GovCloud | Atlanta, GA, USA | 1 day ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2) |
 | Leidos | Computer Network Defense (CND) Security Engineer | Suitland, MD | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Suitland-MD/Computer-Network-Defense--CND--Security-Engineer_R-00189706) |
@@ -270,8 +270,8 @@ Experience an advanced career journey with us! 🚀
 | SpaceX | New Graduate Engineer, Silicon Engineering | Irvine, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8706884002?gh_jid=8706884002) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Palo Alto, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8703552002?gh_jid=8703552002) |
 | Ciena | Mechanical Engineer - New Grad | Ottawa, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=ad6f52eeb157ed27) |
-| ByteDance | ASIC Design Engineer Graduate (Video Silicon IP) - 2027 Start | San Jose, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a22fbb16a3395742) |
 | Stantec | Junior Mechanical Engineer | Ottawa, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=565f94ceeb3e6621) |
+| ByteDance | ASIC Design Engineer Graduate (Video Silicon IP) - 2027 Start | San Jose, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a22fbb16a3395742) |
 | Georgia Tech | Electrical Engineer I | Atlanta, GA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b8d83c95bdf49850) |
 | Applied Materials | Chemist 1 New College Grad (Bachelor's - Santa Clara, CA) | Santa Clara, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=749ac3bb79f6cddf) |
 | Leidos | Associate Electrical Engineer - TS SCI Poly Required | Reston, VA | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Reston-VA/Associate-Electrical-Engineer---TS-SCI-Poly-Required_R-00189502) |
@@ -410,4 +410,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-15 08:30:43 UTC*
+*Last updated: 2026-08-15 09:01:28 UTC*
