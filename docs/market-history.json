@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T03:16:28.615449+00:00",
+    "last_updated": "2026-08-15T04:01:52.072575+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-17",
@@ -5790,15 +5790,15 @@
     },
     {
       "date": "2026-08-15",
-      "total_jobs": 1780,
+      "total_jobs": 1792,
       "categories": {
-        "infrastructure_sre": 158,
-        "data_ml": 185,
-        "software_engineering": 1032,
+        "software_engineering": 1036,
+        "infrastructure_sre": 159,
+        "data_ml": 187,
+        "other": 185,
         "security": 74,
-        "other": 183,
-        "hardware": 34,
-        "data_engineering": 43,
+        "hardware": 33,
+        "data_engineering": 47,
         "frontend": 10,
         "backend": 33,
         "product_management": 3,
@@ -5806,8 +5806,8 @@
         "mobile": 18
       },
       "tiers": {
+        "other": 917,
         "unicorn": 694,
-        "other": 905,
         "faang_plus": 181
       },
       "top_companies": [
@@ -5822,6 +5822,10 @@
         {
           "company": "OpenAI",
           "jobs": 44
+        },
+        {
+          "company": "Leidos",
+          "jobs": 35
         },
         {
           "company": "Waymo",
@@ -5840,21 +5844,17 @@
           "jobs": 29
         },
         {
-          "company": "Leidos",
-          "jobs": 28
-        },
-        {
-          "company": "Northrop Grumman",
+          "company": "Affirm",
           "jobs": 24
         },
         {
-          "company": "Affirm",
+          "company": "DRW",
           "jobs": 24
         }
       ],
-      "unique_companies": 292,
-      "avg_jobs_per_company": 6.1,
-      "timestamp": "2026-08-15T03:16:28.614321+00:00"
+      "unique_companies": 293,
+      "avg_jobs_per_company": 6.12,
+      "timestamp": "2026-08-15T04:01:52.071419+00:00"
     }
   ]
 }

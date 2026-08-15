@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 03:16:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 04:01:52 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Onboard at ATOMS</title>
+      <link>https://job-boards.greenhouse.io/cssmerge/jobs/8717657002</link>
+      <description>New grad role at ATOMS in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 03:43:02 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/cssmerge/jobs/8717657002</guid>
+    </item>
     <item>
       <title>Customer Experience Associate (New Grad) at Robinhood</title>
       <link>https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&amp;gh_jid=8122623</link>
@@ -23,17 +30,24 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:14:45 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+      <title>Associate Software Development Engineer at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=bc3b50c557737b38</link>
+      <description>New grad role at CVS Health in Farmers Branch, TX, US. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc3b50c557737b38</guid>
     </item>
     <item>
       <title>Junior Full-Stack Software Engineer (Oahu) at Hawaii Foodservice Alliance</title>
@@ -43,11 +57,32 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=50620062cbd58588</guid>
     </item>
     <item>
-      <title>AWS Infrastructure Engineer-Deltek VantagePoint at Trilon Group</title>
-      <link>https://www.indeed.com/viewjob?jk=ec771dab7e7ffd38</link>
-      <description>New grad role at Trilon Group in OR, US. Category: Infrastructure &amp; SRE</description>
+      <title>HVAC Building Controls Systems Engineer at Johnson Controls</title>
+      <link>https://www.indeed.com/viewjob?jk=e6ad00abbfa7563f</link>
+      <description>New grad role at Johnson Controls in New York, NY, US. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ec771dab7e7ffd38</guid>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e6ad00abbfa7563f</guid>
+    </item>
+    <item>
+      <title>Mechanical Associate Engineer (Winter 2027) at Astranis</title>
+      <link>https://www.indeed.com/viewjob?jk=7d366bc6471ee9e8</link>
+      <description>New grad role at Astranis in San Francisco, CA, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7d366bc6471ee9e8</guid>
+    </item>
+    <item>
+      <title>Mechanical Associate Engineer (Spring 2027) at Astranis</title>
+      <link>https://www.indeed.com/viewjob?jk=ce82e7399d27369f</link>
+      <description>New grad role at Astranis in San Francisco, CA, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=ce82e7399d27369f</guid>
+    </item>
+    <item>
+      <title>Mechanical Associate Engineer (Summer 2027) at Astranis</title>
+      <link>https://www.indeed.com/viewjob?jk=9584069c2b3f89f2</link>
+      <description>New grad role at Astranis in San Francisco, CA, US. Category: Other</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=9584069c2b3f89f2</guid>
     </item>
     <item>
       <title>Software Engineer II (Mainframe Developer) at Mastercard</title>
@@ -321,41 +356,6 @@
       <description>New grad role at ALS in Bangalore, India. Category: Other</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://alsglobal.wd103.myworkdayjobs.com/job/Bangalore-India/Trainee-Chemist_R6732</guid>
-    </item>
-    <item>
-      <title>System of Systems Engineer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/System-of-Systems-Engineer_R2128370</link>
-      <description>New grad role at KBR, Inc. in Lexington Park, Maryland. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/System-of-Systems-Engineer_R2128370</guid>
-    </item>
-    <item>
-      <title>Network Systems Engineer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/Network-Systems-Engineer_R2128365</link>
-      <description>New grad role at KBR, Inc. in Lexington Park, Maryland. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Lexington-Park-Maryland/Network-Systems-Engineer_R2128365</guid>
-    </item>
-    <item>
-      <title>Jr Software Developer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128352</link>
-      <description>New grad role at KBR, Inc. in Colorado Springs, Colorado. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128352</guid>
-    </item>
-    <item>
-      <title>Jr Software Developer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128353</link>
-      <description>New grad role at KBR, Inc. in Colorado Springs, Colorado. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Colorado-Springs-Colorado/Jr-Software-Developer_R2128353</guid>
-    </item>
-    <item>
-      <title>Junior Reverse Engineer at KBR, Inc.</title>
-      <link>https://kbr.wd5.myworkdayjobs.com/job/Beavercreek-Township-Ohio/Junior-Reverse-Engineer_R2121536</link>
-      <description>New grad role at KBR, Inc. in Beavercreek Township, Ohio. Category: Other</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://kbr.wd5.myworkdayjobs.com/job/Beavercreek-Township-Ohio/Junior-Reverse-Engineer_R2121536</guid>
     </item>
   </channel>
 </rss>
