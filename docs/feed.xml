@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 15:56:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 16:14:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 12:17:21 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 12:17:21 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 12:17:21 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Software Engineer, Desktop at BJAK</title>
@@ -90,13 +90,6 @@
       <description>New grad role at Honeywell in KA, IN. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=90110b9795d46e11</guid>
-    </item>
-    <item>
-      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
-      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
-      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
     </item>
     <item>
       <title>Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) at Inova Health System</title>
@@ -190,11 +183,11 @@
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=6a73985c951272ab</guid>
     </item>
     <item>
-      <title>Associate Software Development Engineer at CVS Health</title>
-      <link>https://www.indeed.com/viewjob?jk=bc3b50c557737b38</link>
-      <description>New grad role at CVS Health in Farmers Branch, TX, US. Category: Software Engineering</description>
+      <title>Junior/Intermediate Transportation Planner/Engineer at Dillon Consulting Limited</title>
+      <link>https://ca.indeed.com/viewjob?jk=12d754a1440a0463</link>
+      <description>New grad role at Dillon Consulting Limited in North York, ON, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc3b50c557737b38</guid>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=12d754a1440a0463</guid>
     </item>
     <item>
       <title>Junior Software Test Automation Engineer at Smart Apply Test Company</title>
@@ -209,6 +202,13 @@
       <description>New grad role at Smart Apply Test Company in Greenwood Village, CO, US. Category: Other</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=68eedc09c92d0240</guid>
+    </item>
+    <item>
+      <title>Associate Software Development Engineer at CVS Health</title>
+      <link>https://www.indeed.com/viewjob?jk=bc3b50c557737b38</link>
+      <description>New grad role at CVS Health in Farmers Branch, TX, US. Category: Software Engineering</description>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=bc3b50c557737b38</guid>
     </item>
     <item>
       <title>Software Engineer II Java Full stack Developer at Mastercard</title>
