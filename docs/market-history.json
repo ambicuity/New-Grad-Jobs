@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T07:02:21.477843+00:00",
+    "last_updated": "2026-08-16T07:39:50.772522+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-18",
@@ -5803,25 +5803,25 @@
     },
     {
       "date": "2026-08-16",
-      "total_jobs": 1781,
+      "total_jobs": 1784,
       "categories": {
-        "software_engineering": 1013,
-        "data_ml": 192,
+        "software_engineering": 1014,
         "security": 74,
         "frontend": 10,
-        "infrastructure_sre": 160,
+        "data_ml": 191,
+        "infrastructure_sre": 161,
+        "other": 194,
         "mobile": 19,
-        "other": 193,
         "quant_finance": 11,
-        "hardware": 30,
+        "hardware": 31,
         "backend": 33,
         "data_engineering": 43,
         "product_management": 3
       },
       "tiers": {
         "unicorn": 690,
-        "other": 896,
-        "faang_plus": 195
+        "other": 898,
+        "faang_plus": 196
       },
       "top_companies": [
         {
@@ -5857,17 +5857,17 @@
           "jobs": 24
         },
         {
-          "company": "DRW",
+          "company": "Northrop Grumman",
           "jobs": 24
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 23
+          "company": "DRW",
+          "jobs": 24
         }
       ],
-      "unique_companies": 294,
-      "avg_jobs_per_company": 6.06,
-      "timestamp": "2026-08-16T07:02:21.476847+00:00"
+      "unique_companies": 295,
+      "avg_jobs_per_company": 6.05,
+      "timestamp": "2026-08-16T07:39:50.769617+00:00"
     }
   ]
 }
