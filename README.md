@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1779<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1781<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -62,21 +62,21 @@ Experience an advanced career journey with us! 🚀
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->73<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->160<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->192<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->193<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,779** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,781** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,16 +84,16 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
+| Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
+| Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
+| Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
+| Roblox | Software Engineer, Account Authentication | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8097701?gh_jid=8097701) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Mastercard | Software Engineer II Java Full stack Developer | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493) |
 | Anduril Industries | Software Engineer, Space | Chantilly, Virginia, United States; Herndon, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007) |
 | Anduril Industries | Systems Engineer, Space | Chantilly, Virginia, United States; Herndon, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5208269007?gh_jid=5208269007) |
-| Anduril Industries | IT Systems Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5199800007?gh_jid=5199800007) |
-| Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
-| Anduril Industries | Software Engineer - ML Infrastructure | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5195642007?gh_jid=5195642007) |
-| Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
-| Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
 
 **[View all 1,013 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -158,6 +158,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| — | Junior DevSecOps Engineer | Washington, DC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=15f138dfc3e9cb69) |
 | Anduril Industries | Systems Security Engineer Anti-Tamper | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007) |
 | Autodesk | Security Engineer, FedRamp/GovCloud | Atlanta, GA, USA | 1 day ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2) |
 | LaunchDarkly | Product Security Engineer | Remote - US West | 1 day ago | [Apply](https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003) |
@@ -167,9 +168,8 @@ Experience an advanced career journey with us! 🚀
 | Peloton | Security Engineer, Incident Response | New York, New York | 1 day ago | [Apply](https://careers.onepeloton.com/en/all-jobs/?gh_jid=8074713) |
 | Northrop Grumman | Databricks Security Engineer | United States-Remote | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Remote/Databricks-Security-Engineer_R10245623) |
 | Northrop Grumman | System Security Engineer Level 3/4 (AHT) | United States-California-Northridge | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/System-Security-Engineer-Level-3-4--AHT-_R10245565) |
-| Leidos | Data Security Engineer | Adelphi, MD | 2 days ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Adelphi-MD/Data-Security-Engineer_R-00189506-1) |
 
-**[View all 73 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 74 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -196,16 +196,16 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| The Walt Disney Company | Data Engineer | Orlando, FL, USA | 1 day ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 1 day ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| Analog Devices | Associate Industrial Engineer | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
+| Analog Devices | Associate Industrial Engineer | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | Target | Data Engineer - Finance AI Solutions | 7000 Target Pkwy N,NCD-0375 Brooklyn Park,MN 55445 | 2 days ago | [Apply](https://target.wd5.myworkdayjobs.com/job/7000-Target-Pkwy-NNCD-0375-Brooklyn-ParkMN-55445/Data-Engineer---Finance-Technology-Solutions_R0000444866) |
-| TransUnion | Cloud/Big Data Engineer | Chennai | 2 days ago | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Chennai/Cloud-Big-Data-Engineer_19041089) |
+| The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 2 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 2 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
 | Precision Medicine Group | SQL Developer II | Remote, United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
 | Northland Properties | Intermediate Data Engineer | Vancouver, BC, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=5f8278ecde6812ef) |
+| Mount Sinai Health System | Data Engineer II - Digital and Technology Partners - Hybrid/Remote | US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=25b8ed9364c3eca5) |
 
 **[View all 43 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -293,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
 | Thomas Jefferson University & Jefferson Health | Certified Surgical Tech (Per Diem) - Bucks Campus | Langhorne, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=956f769b865b224f) |
 
-**[View all 192 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 193 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 06:07:50 UTC*
+*Last updated: 2026-08-16 07:02:21 UTC*
