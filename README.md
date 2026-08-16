@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1776<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1775<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->32<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->190<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->189<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,776** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,775** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -293,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Inova Health System | Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) | VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9854646760fc3754) |
 | Legacy Health | RN Resident - Program Application - Cohort 43 February 15, 2027 | Portland, OR, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=462d0253ca3a7442) |
 
-**[View all 190 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 189 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 21:08:03 UTC*
+*Last updated: 2026-08-16 21:37:14 UTC*
