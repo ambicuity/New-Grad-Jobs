@@ -2,12 +2,12 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1785,
-      "change_percent": 1.59
+      "total_jobs": 1825,
+      "change_percent": 2.99
     },
     "30_days": {
-      "total_jobs": 1840,
-      "change_percent": 4.72
+      "total_jobs": 1950,
+      "change_percent": 10.05
     }
   },
   "growing_categories": [
@@ -22,14 +22,14 @@
   ],
   "confidence": 75,
   "insights": [
-    "The market has experienced a significant upward shift in the last four days, breaking out of the previous 1400-1500 range to establish a new floor near 1750.",
-    "Growth is primarily driven by non-FAANG/non-unicorn companies, suggesting a broader expansion in hiring activity beyond the traditional tech giants.",
-    "Software Engineering remains the dominant driver of volume, while niche roles like Frontend remain stagnant, indicating that hiring demand is currently focused on core infrastructure and product development."
+    "The market has experienced a significant breakout in the last 5 days, with total job postings jumping from the ~1480 range to a sustained 1772, indicating a late-cycle hiring surge.",
+    "FAANG+ and 'Other' company tiers are driving the momentum, suggesting that both large-scale tech and smaller firms are aggressively expanding their new graduate pipelines.",
+    "While Software Engineering remains the dominant volume driver, the consistent growth in Data/ML and SRE roles signals a shift toward specialized technical infrastructure needs."
   ],
-  "generated_at": "2026-08-15T00:00:14.545717+00:00",
+  "generated_at": "2026-08-16T00:06:25.396031+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-17",
-    "end": "2026-08-15"
+    "start": "2026-05-18",
+    "end": "2026-08-16"
   }
 }

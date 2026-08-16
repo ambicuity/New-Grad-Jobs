@@ -5,8 +5,15 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 23:49:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 00:06:25 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer II Java Full stack Developer at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493</guid>
+    </item>
     <item>
       <title>Software Engineer, Space at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007</link>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
       <pubDate>Sat, 15 Aug 2026 17:25:55 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5121816007?gh_jid=5121816007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer, Maneuver Dominance  at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 17:21:17 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5047469007?gh_jid=5047469007</guid>
     </item>
   </channel>
 </rss>
