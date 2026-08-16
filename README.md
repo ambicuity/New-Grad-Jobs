@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1779<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1780<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->32<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->191<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->192<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,779** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,780** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -126,10 +126,10 @@ Experience an advanced career journey with us! 🚀
 | Vercel | Software Engineer, Backend | Remote - United States | 2 days ago | [Apply](https://job-boards.greenhouse.io/vercel/jobs/5430088004) |
 | David AI | Backend Software Engineer | San Francisco, California, United States | 3 days ago | [Apply](https://jobs.ashbyhq.com/david-ai/6ac6a0a5-08be-4ebb-ae82-f44131497e0a) |
 | Airtable | Software Engineer, Product Backend (4-8 YOE) | San Francisco, CA; New York, NY | 3 days ago | [Apply](https://job-boards.greenhouse.io/airtable/jobs/8397515002) |
-| Affirm | Software Engineer I, Backend (Collections) | Remote Spain | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807506003) |
-| Affirm | Software Engineer I, Backend (Collections) | Remote Poland | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807508003) |
-| Affirm | Software Engineer II, Backend (Capital Orchestration) | Remote US | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7749755003) |
-| Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote US | 3 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7766277003) |
+| Affirm | Software Engineer I, Backend (Collections) | Remote Spain | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807506003) |
+| Affirm | Software Engineer I, Backend (Collections) | Remote Poland | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7807508003) |
+| Affirm | Software Engineer II, Backend (Capital Orchestration) | Remote US | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7749755003) |
+| Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote US | 4 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7766277003) |
 
 **[View all 33 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -141,7 +141,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Société Générale | Specialist Software Engineer - IOS | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=6b9eb06f00f223c6) |
 | StockX | Software Engineer - Android | Bangalore, India | 4 days ago | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8603905002) |
-| Anduril Industries | Software Engineer - Mobile, Android | Costa Mesa, California, United States | 4 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007) |
+| Anduril Industries | Software Engineer - Mobile, Android | Costa Mesa, California, United States | 5 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007) |
 | OpenAI | Android Systems Engineer, Consumer Devices | San Francisco, California, United States | 2026-08-06 | [Apply](https://jobs.ashbyhq.com/openai/b08126cc-8134-45f0-aeb3-4b00e96547de) |
 | Pinterest | Software Engineer II, Android | San Francisco, CA, US; Remote, US | 2026-08-06 | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=4916795) |
 | StockX | Software Engineer - iOS | Bangalore, India | 2026-08-06 | [Apply](https://job-boards.greenhouse.io/stockx/jobs/8603916002) |
@@ -197,8 +197,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 2 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
+| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 2 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 2 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
@@ -284,6 +284,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Las Palmas Del Sol Healthcare | New Grad RN Resident Oncology | El Paso, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e071999e497ec365) |
 | Wilson Medical Center | Registered Nurse (RN), New Grad - Medsurg | Wilson, NC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=252200b2c77d3a16) |
+| CVS Health | Retail Store Associate | MO - Kansas City | Today | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/MO---Kansas-City/Retail-Store-Associate_R1013154-1) |
 | GlobalFoundries | Process Integration and Yield Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=cb25d77fae962abc) |
 | GlobalFoundries | Manufacturing Operations Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d0c31510e7b5d1ba) |
 | GlobalFoundries | Process Integration and Yield Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b2d0517d7aa3a618) |
@@ -291,9 +292,8 @@ Experience an advanced career journey with us! 🚀
 | Inova Health System | Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) | VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9854646760fc3754) |
 | Legacy Health | RN Resident - Program Application - Cohort 43 February 15, 2027 | Portland, OR, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=462d0253ca3a7442) |
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Conflicts Resolution Group / Summer Analyst | Dallas, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=6a73985c951272ab) |
-| Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
 
-**[View all 191 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 192 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 18:56:18 UTC*
+*Last updated: 2026-08-16 19:18:02 UTC*
