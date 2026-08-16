@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1774<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1772<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1008<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1007<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->32<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->190<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->189<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,774** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,772** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 
-**[View all 1,008 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,007 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -106,7 +106,7 @@ Experience an advanced career journey with us! 🚀
 | Squarespace | Software Engineer, Frontend | New York City | Today | [Apply](http://www.squarespace.com/about/careers?gh_jid=8019365) |
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
 | Anduril Industries | Software Engineer, Front End | Reston, Virginia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007) |
-| Anduril Industries | Mission Software Engineer, Vehicle Software, Frontend | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | 2 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4672911007?gh_jid=4672911007) |
+| Anduril Industries | Mission Software Engineer, Vehicle Software, Frontend | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | 3 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4672911007?gh_jid=4672911007) |
 | David AI | Frontend Software Engineer | San Francisco, California, United States | 3 days ago | [Apply](https://jobs.ashbyhq.com/david-ai/ff190241-40f2-49c8-823b-1f711ac26996) |
 | Clarity Innovations | Front End Software Engineer | MacDill AFB, FL | 6 days ago | [Apply](https://job-boards.greenhouse.io/clarityinnovates/jobs/5208090007) |
 | Jane Street | Front End Software Engineer | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/6184529002?gh_jid=6184529002) |
@@ -197,8 +197,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 2 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
+| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 2 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 3 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
@@ -220,8 +220,8 @@ Experience an advanced career journey with us! 🚀
 | PIV Engineering, Inc. | Associate Engineer | New Orleans, LA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=88446ec15a6fb92b) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041715) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041719) |
-| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Seattle, Washington, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007) |
+| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193775007?gh_jid=5193775007) |
 | Anduril Industries | Systems Engineer, C2 Networking - Edge Compute and Communications | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007) |
 | Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&gh_jid=8122623) |
@@ -284,7 +284,6 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Las Palmas Del Sol Healthcare | New Grad RN Resident Oncology | El Paso, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=e071999e497ec365) |
 | Wilson Medical Center | Registered Nurse (RN), New Grad - Medsurg | Wilson, NC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=252200b2c77d3a16) |
-| GXO Logistics | Warehouse Associate - Data Center Operations | OK, US | Today | [Apply](https://www.indeed.com/viewjob?jk=45474840b2b33439) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Molokai High | Ho‘olehua, HI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=85d9ce2956cd2a38) |
 | CVS Health | Retail Store Associate | MO - Kansas City | Today | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/MO---Kansas-City/Retail-Store-Associate_R1013184) |
 | CVS Health | Retail Store Associate | MO - Kansas City | Today | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/MO---Kansas-City/Retail-Store-Associate_R1013154-1) |
@@ -292,8 +291,9 @@ Experience an advanced career journey with us! 🚀
 | GlobalFoundries | Manufacturing Operations Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=d0c31510e7b5d1ba) |
 | GlobalFoundries | Process Integration and Yield Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b2d0517d7aa3a618) |
 | GlobalFoundries | Production Control Engineer (2027 New College Graduate) | Malta, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=25ba43ee5b7c50c2) |
+| Inova Health System | Registered Nurse (RN) New Graduate (October 2026 - January 2027 Graduate) | VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=9854646760fc3754) |
 
-**[View all 190 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 189 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 22:18:14 UTC*
+*Last updated: 2026-08-16 22:45:53 UTC*
