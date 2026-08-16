@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2026 16:08:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 16:44:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -323,20 +323,6 @@
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a3fcdc19dd09b125</guid>
     </item>
     <item>
-      <title>New Grad RN Resident Oncology at Las Palmas Del Sol Healthcare</title>
-      <link>https://www.indeed.com/viewjob?jk=e071999e497ec365</link>
-      <description>New grad role at Las Palmas Del Sol Healthcare in El Paso, TX, US. Category: Other</description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e071999e497ec365</guid>
-    </item>
-    <item>
-      <title>Registered Nurse (RN), New Grad - Medsurg at Wilson Medical Center</title>
-      <link>https://www.indeed.com/viewjob?jk=252200b2c77d3a16</link>
-      <description>New grad role at Wilson Medical Center in Wilson, NC, US. Category: Other</description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=252200b2c77d3a16</guid>
-    </item>
-    <item>
       <title>Jr. Network Engineer at Cinter Networks</title>
       <link>https://www.indeed.com/viewjob?jk=5dd9d7d19dc6fb2f</link>
       <description>New grad role at Cinter Networks in Rockville, MD, US. Category: Infrastructure &amp; SRE</description>
@@ -356,6 +342,20 @@
       <description>New grad role at Unknown in Washington, DC, US. Category: Security Engineering</description>
       <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=15f138dfc3e9cb69</guid>
+    </item>
+    <item>
+      <title>New Grad RN Resident Oncology at Las Palmas Del Sol Healthcare</title>
+      <link>https://www.indeed.com/viewjob?jk=e071999e497ec365</link>
+      <description>New grad role at Las Palmas Del Sol Healthcare in El Paso, TX, US. Category: Other</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=e071999e497ec365</guid>
+    </item>
+    <item>
+      <title>Registered Nurse (RN), New Grad - Medsurg at Wilson Medical Center</title>
+      <link>https://www.indeed.com/viewjob?jk=252200b2c77d3a16</link>
+      <description>New grad role at Wilson Medical Center in Wilson, NC, US. Category: Other</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=252200b2c77d3a16</guid>
     </item>
   </channel>
 </rss>
