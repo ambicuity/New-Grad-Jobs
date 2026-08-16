@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1773<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1776<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1014<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1015<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->29<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->186<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->188<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,773** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,776** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,8 +84,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Mastercard | Software Engineer II Java Full stack Developer | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493) |
 | Anduril Industries | Software Engineer, Space | Chantilly, Virginia, United States; Herndon, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007) |
 | Anduril Industries | Systems Engineer, Space | Chantilly, Virginia, United States; Herndon, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5208269007?gh_jid=5208269007) |
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
 | Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
 
-**[View all 1,014 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,015 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -162,8 +162,8 @@ Experience an advanced career journey with us! 🚀
 | Autodesk | Security Engineer, FedRamp/GovCloud | Atlanta, GA, USA | 1 day ago | [Apply](https://autodesk.wd1.myworkdayjobs.com/job/Atlanta-GA-USA/Security-Engineer---FedRamp-GovCloud_26WD99882-2) |
 | LaunchDarkly | Product Security Engineer | Remote - US West | 1 day ago | [Apply](https://job-boards.greenhouse.io/launchdarkly/jobs/7736270003) |
 | Point72 | GenAI Security Engineer | New York, NY | 1 day ago | [Apply](https://boards.greenhouse.io/point72/jobs/8399360002?gh_jid=8399360002) |
-| Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
 | Twilio | Security Engineer, Incident Response | Remote - Ireland | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8023560) |
+| Twilio | Security Engineer, Incident Response | Remote - United Kingdom | 1 day ago | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8055481) |
 | Peloton | Security Engineer, Incident Response | New York, New York | 1 day ago | [Apply](https://careers.onepeloton.com/en/all-jobs/?gh_jid=8074713) |
 | Northrop Grumman | Databricks Security Engineer | United States-Remote | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Remote/Databricks-Security-Engineer_R10245623) |
 | Northrop Grumman | System Security Engineer Level 3/4 (AHT) | United States-California-Northridge | 2 days ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Northridge/System-Security-Engineer-Level-3-4--AHT-_R10245565) |
@@ -216,8 +216,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007) |
-| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193775007?gh_jid=5193775007) |
+| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007) |
 | Anduril Industries | Systems Engineer, C2 Networking - Edge Compute and Communications | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007) |
 | Robinhood | Customer Experience Associate (New Grad) | Westlake, TX | 1 day ago | [Apply](https://boards.greenhouse.io/robinhood/jobs/8122623?t=gh_src=&gh_jid=8122623) |
 | Dillon Consulting Limited | Junior/Intermediate Transportation Planner/Engineer | North York, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=10ae766f74168df1) |
@@ -253,7 +253,7 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 4 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 
 **[View all 11 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -291,9 +291,9 @@ Experience an advanced career journey with us! 🚀
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Conflicts Resolution Group / Summer Analyst | Dallas, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=6a73985c951272ab) |
 | DEPLOY | Junior Test Engineer | Huntsville, AL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=870810eda0ffd0a8) |
 | Lockheed Martin | Photolithography/Thin Film Coating Manufacturing Engineer/ Entry-Level | Orlando, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0be114c2b51489e7) |
-| Citi | Services, Full Time Analyst, New York City - US, 2027 | New York New York United States | 1 day ago | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Services--Full-Time-Analyst--New-York-City---US--2027_26979922) |
+| Thomas Jefferson University & Jefferson Health | Certified Surgical Tech (Per Diem) - Bucks Campus | Langhorne, PA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=956f769b865b224f) |
 
-**[View all 186 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 188 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 04:30:55 UTC*
+*Last updated: 2026-08-16 05:07:47 UTC*
