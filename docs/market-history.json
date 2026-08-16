@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T23:35:32.242900+00:00",
+    "last_updated": "2026-08-16T23:56:41.597133+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-18",
@@ -5812,8 +5812,8 @@
         "infrastructure_sre": 162,
         "other": 192,
         "mobile": 19,
-        "quant_finance": 11,
         "hardware": 32,
+        "quant_finance": 11,
         "backend": 33,
         "data_engineering": 42,
         "product_management": 3
@@ -5830,7 +5830,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 206
+          "jobs": 207
         },
         {
           "company": "OpenAI",
@@ -5867,7 +5867,7 @@
       ],
       "unique_companies": 296,
       "avg_jobs_per_company": 6.0,
-      "timestamp": "2026-08-16T23:35:32.241867+00:00"
+      "timestamp": "2026-08-16T23:56:41.594620+00:00"
     }
   ]
 }
