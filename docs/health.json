@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "last_run": "2026-08-16T08:04:14.738922Z",
+  "last_run": "2026-08-16T08:44:00.300227Z",
   "total_jobs": 1784,
   "source_counts": {
     "greenhouse": 18784,
@@ -11,9 +11,9 @@
   },
   "zero_sources": [],
   "url_safety_blocked": 0,
-  "run_duration_seconds": 438.5,
+  "run_duration_seconds": 400.4,
   "configured_company_apis": 269,
   "enabled_sources": 4,
-  "active_hiring_companies": 294,
+  "active_hiring_companies": 293,
   "active_sources": 5
 }
