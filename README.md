@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1790<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1787<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -63,12 +63,12 @@ Experience an advanced career journey with us! 🚀
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->162<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->161<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->32<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->31<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->194<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,790** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,787** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -184,11 +184,11 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Financial Analyst II, Software Platform | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4985488007?gh_jid=4985488007) |
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
+| — | AI/ML Engineer | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=a3fcdc19dd09b125) |
 | Anduril Industries | Early Career Firmware Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007) |
 | Anduril Industries | Mission Software Infrastructure Engineer, Active Clearance | Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5158245007?gh_jid=5158245007) |
-| Anduril Industries | Product Data Engineer | Irvine, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5150089007?gh_jid=5150089007) |
 
-**[View all 193 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 192 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -197,8 +197,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 2 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 2 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
+| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 2 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 2 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
@@ -226,7 +226,7 @@ Experience an advanced career journey with us! 🚀
 | Dillon Consulting Limited | Junior/Intermediate Transportation Planner/Engineer | North York, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=12d754a1440a0463) |
 | Yarash Real Estate Incorporated | Junior SaaS Developer & Platform Administrator | Glendale, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3b54bb324ce8af0b) |
 
-**[View all 162 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 161 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -263,8 +263,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Reevo | Builder - Forward Deployed Operations (Early Career) | US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dc0852006d329dd6) |
 | Collins Aerospace | Manufacturing Electrical Engineer I (Onsite) | Bellevue, IA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=693f540418a04999) |
+| Reevo | Builder - Forward Deployed Operations (Early Career) | US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=dc0852006d329dd6) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8706885002?gh_jid=8706885002) |
 | SpaceX | New Graduate Engineer, Electrical - '26/'27 (Starlink) | Redmond, WA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8696490002?gh_jid=8696490002) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Irvine, CA | 1 day ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8706884002?gh_jid=8706884002) |
@@ -274,7 +274,7 @@ Experience an advanced career journey with us! 🚀
 | Qualus | Engineer in Training I - Protection & Control | Calgary, AB, CA | 2 days ago | [Apply](https://ca.indeed.com/viewjob?jk=e96f6e2e39fb5c45) |
 | Sargent & Lundy | Electrical Engineer 1 (Entry-Level) - Nuclear (Summer 2027) | Washington, DC, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=185baa014c304dfa) |
 
-**[View all 32 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 31 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-16 15:30:01 UTC*
+*Last updated: 2026-08-16 15:52:33 UTC*

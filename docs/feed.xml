@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2026 15:30:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 15:52:33 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -316,6 +316,13 @@
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8097701?gh_jid=8097701</guid>
     </item>
     <item>
+      <title>AI/ML Engineer at Unknown</title>
+      <link>https://in.indeed.com/viewjob?jk=a3fcdc19dd09b125</link>
+      <description>New grad role at Unknown in Remote, IN. Category: Data Science &amp; ML</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a3fcdc19dd09b125</guid>
+    </item>
+    <item>
       <title>Jr. Network Engineer at Cinter Networks</title>
       <link>https://www.indeed.com/viewjob?jk=5dd9d7d19dc6fb2f</link>
       <description>New grad role at Cinter Networks in Rockville, MD, US. Category: Infrastructure &amp; SRE</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Wilson Medical Center in Wilson, NC, US. Category: Other</description>
       <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=252200b2c77d3a16</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Space at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007</link>
-      <description>New grad role at Anduril Industries in Chantilly, Virginia, United States; Herndon, Virginia, United States. Category: Software Engineering</description>
-      <pubDate>Sat, 15 Aug 2026 19:14:07 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5208795007?gh_jid=5208795007</guid>
     </item>
   </channel>
 </rss>
