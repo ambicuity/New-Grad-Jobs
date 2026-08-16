@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T11:51:01.979624+00:00",
+    "last_updated": "2026-08-16T12:07:45.595366+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-18",
@@ -5819,9 +5819,9 @@
         "product_management": 3
       },
       "tiers": {
-        "other": 904,
+        "other": 903,
         "unicorn": 690,
-        "faang_plus": 194
+        "faang_plus": 195
       },
       "top_companies": [
         {
@@ -5867,7 +5867,7 @@
       ],
       "unique_companies": 298,
       "avg_jobs_per_company": 6.0,
-      "timestamp": "2026-08-16T11:51:01.978487+00:00"
+      "timestamp": "2026-08-16T12:07:45.593162+00:00"
     }
   ]
 }
