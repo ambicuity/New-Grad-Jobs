@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T14:48:25.709624+00:00",
+    "last_updated": "2026-08-17T15:11:04.625955+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-19",
@@ -5816,14 +5816,14 @@
     },
     {
       "date": "2026-08-17",
-      "total_jobs": 1795,
+      "total_jobs": 1794,
       "categories": {
-        "software_engineering": 1001,
-        "security": 75,
-        "data_ml": 198,
-        "other": 211,
-        "data_engineering": 41,
-        "infrastructure_sre": 166,
+        "infrastructure_sre": 164,
+        "software_engineering": 999,
+        "security": 76,
+        "data_ml": 200,
+        "other": 210,
+        "data_engineering": 42,
         "frontend": 11,
         "hardware": 30,
         "quant_finance": 10,
@@ -5833,8 +5833,8 @@
       },
       "tiers": {
         "unicorn": 678,
-        "other": 922,
-        "faang_plus": 195
+        "other": 920,
+        "faang_plus": 196
       },
       "top_companies": [
         {
@@ -5843,7 +5843,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 208
+          "jobs": 204
         },
         {
           "company": "OpenAI",
@@ -5880,7 +5880,7 @@
       ],
       "unique_companies": 297,
       "avg_jobs_per_company": 6.04,
-      "timestamp": "2026-08-17T14:48:25.708547+00:00"
+      "timestamp": "2026-08-17T15:11:04.623686+00:00"
     }
   ]
 }
