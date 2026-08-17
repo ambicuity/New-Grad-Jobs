@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1768<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1780<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -63,20 +63,20 @@ Experience an advanced career journey with us! 🚀
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->40<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->164<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->166<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->197<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->206<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,768** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,780** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -179,6 +179,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | — | Robotics Engineer- Entry Level | Decatur, IL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=20436cce3c78dcc5) |
+| IFF | Specialist II, Data Scientist | Hyderabad GBS, India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Hyderabad-GBS-India/Specialist-II--Data-Scientist_R20969) |
 | Anduril Industries | Finance Associate, Engineering | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5158899007?gh_jid=5158899007) |
 | Anduril Industries | 2026 Early Career Engineering Finance Associate | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159092007?gh_jid=5159092007) |
 | Anduril Industries | Security Data Engineer | Ashville, Ohio, United States; Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Remote; Seattle, Washington, United States; Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5159366007?gh_jid=5159366007) |
@@ -186,9 +187,8 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Puget Sound Energy | Marketing Data Scientist | Bellevue, WA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ff3fffc8ec6454fd) |
-| Anduril Industries | Early Career Firmware Engineer | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5167865007?gh_jid=5167865007) |
 
-**[View all 192 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 193 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -197,8 +197,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 3 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| Analog Devices | Associate Industrial Engineer | GJ, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
+| Analog Devices | Associate Industrial Engineer | GJ, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 3 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 3 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
 | Precision Medicine Group | SQL Developer II | Remote, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
@@ -215,8 +215,9 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| KLSR INFRATECH LTD | Junior QS Engineer - NICMAR | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1) |
+| KLSR INFRATECH LTD | Junior QS Engineer / Engineer - NICMAR | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1) |
 | Teradata | Associate DevOps Engineer (Observability) | IN | Today | [Apply](https://in.indeed.com/viewjob?jk=873416eabc8b996b) |
+| IFF | Designer II, Infrastructure | Chennai (Guindy), India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Chennai-Guindy-India/Designer-II--Infrastructure_R20974) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041715) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041719) |
 | Cinter Networks | Jr. Network Engineer | Rockville, MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5dd9d7d19dc6fb2f) |
@@ -224,9 +225,8 @@ Experience an advanced career journey with us! 🚀
 | Valmont Industries | Associate Design Engineer - Civil/Structural Engineering | Valley, NE, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0d69bdc02e43e5d9) |
 | PIV Engineering, Inc. | Associate Engineer | New Orleans, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=88446ec15a6fb92b) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193775007?gh_jid=5193775007) |
-| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Seattle, Washington, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007) |
 
-**[View all 164 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 166 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -282,18 +282,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Canadian Natural | New Graduate – Commercial Operations (Supply Chain and Joint Ventures) | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=171acbcf5f8a71bf) |
+| Deloitte | Analyst/Consultant, Corporate Finance - New Grad Fall 2027 - Multiple Locations | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=b57931e695e833ae) |
+| Deloitte | Consultant - Controls Assurance & Accounting and Reporting Advisory, Assurance - New Grad 2027 | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=ef11c3fb729393dc) |
+| Deloitte | Tax & Legal - Transfer Pricing - New Grad 2027 - Multiple Locations | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=78f6fc741e5e05f6) |
+| Deloitte | Consultant - IT Audit & Assurance - New Grad - 2027 | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6301001991a69de5) |
+| Deloitte | Consultant - Actuarial Insurance Solutions, Assurance - New Grad - Spring/Summer 2027 - Ontario | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f000337b4c4cf44c) |
 | Doane Grant Thornton LLP | Accountant, Assurance [New Grad Fall 2027] | Sydney, NS, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=bb333fb95aaaef2c) |
-| Southwest Airlines | Associate Engineer - Powerplant | Dallas, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b) |
-| IFF | Specialist I, Data Analytics | Chennai (Guindy), India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Chennai-Guindy-India/Specialist-I--Data-Analytics_R20966) |
-| IFF | Specialist II, Data Analytics | Chennai (Guindy), India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Chennai-Guindy-India/Specialist-II--Data-Analytics_R20968) |
-| Las Palmas Del Sol Healthcare | New Grad RN Resident Oncology | El Paso, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=e071999e497ec365) |
-| Wilson Medical Center | Registered Nurse (RN), New Grad - Medsurg | Wilson, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=252200b2c77d3a16) |
-| Hargrove Engineers + Constructors | E&I Engineer | Beaumont, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a5b87eca9d86c480) |
-| GXO Logistics | Warehouse Associate - Data Center Operations | OK, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=45474840b2b33439) |
-| Hawaii State Department of Education | Educational Assistant I, II, III - Molokai High | Ho‘olehua, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=85d9ce2956cd2a38) |
-| CVS Health | Retail Store Associate | MO - Kansas City | 1 day ago | [Apply](https://cvshealth.wd1.myworkdayjobs.com/job/MO---Kansas-City/Retail-Store-Associate_R1013184) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Winter 2027] | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=d2c462e728cda3e5) |
+| Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Whitby, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=282f4c0929f46dcc) |
+| Doane Grant Thornton LLP | New Grad 2027 CPA Path | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=51a8d524d5622dd5) |
 
-**[View all 197 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 206 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 07:21:02 UTC*
+*Last updated: 2026-08-17 08:11:05 UTC*
