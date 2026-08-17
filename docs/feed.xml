@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 04:11:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 05:02:27 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
-    </item>
-    <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
       <title>Robotics Engineer- Entry Level at Unknown</title>
@@ -34,6 +34,13 @@
       <description>New grad role at Unknown in Decatur, IL, US. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=20436cce3c78dcc5</guid>
+    </item>
+    <item>
+      <title>Associate Engineer - Powerplant at Southwest Airlines</title>
+      <link>https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</link>
+      <description>New grad role at Southwest Airlines in Dallas, TX, US. Category: Other</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</guid>
     </item>
     <item>
       <title>Retail Store Associate at CVS Health</title>
@@ -317,17 +324,17 @@
     </item>
     <item>
       <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 09:48:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</link>
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Sun, 16 Aug 2026 09:48:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Game Development at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Sun, 16 Aug 2026 09:48:08 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
     </item>
     <item>
       <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Anduril Industries in Irvine, California, United States. Category: Software Engineering</description>
       <pubDate>Sun, 16 Aug 2026 09:45:01 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4934341007?gh_jid=4934341007</guid>
-    </item>
-    <item>
-      <title>Site Reliability Engineer, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sun, 16 Aug 2026 09:44:28 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007</guid>
     </item>
   </channel>
 </rss>
