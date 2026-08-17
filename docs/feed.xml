@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 08:11:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 09:04:58 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Identity at Twilio</title>
@@ -65,17 +65,31 @@
     </item>
     <item>
       <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
       <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
       <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
     </item>
     <item>
-      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
-      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
-      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 00:12:14 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+      <title>Junior Software Developer at Dusane Infotech India Pvt.Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=a02532b963c8d649</link>
+      <description>New grad role at Dusane Infotech India Pvt.Ltd in MH, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=a02532b963c8d649</guid>
+    </item>
+    <item>
+      <title>Junior Software Developer at Dusane Infotech India Pvt.Ltd</title>
+      <link>https://in.indeed.com/viewjob?jk=97df01d9513ef57a</link>
+      <description>New grad role at Dusane Infotech India Pvt.Ltd in MH, IN. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=97df01d9513ef57a</guid>
     </item>
     <item>
       <title>Junior QS Engineer / Engineer - NICMAR at KLSR INFRATECH LTD</title>
@@ -155,6 +169,55 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=51a8d524d5622dd5</guid>
     </item>
     <item>
+      <title>Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Fall 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=d1ca59c44e5650d0</link>
+      <description>New grad role at GE Aerospace in Dayton, OH, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=d1ca59c44e5650d0</guid>
+    </item>
+    <item>
+      <title>Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Spring 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=5b738a33f44354c5</link>
+      <description>New grad role at GE Aerospace in Bohemia, NY, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=5b738a33f44354c5</guid>
+    </item>
+    <item>
+      <title>Systems Engineering Co-op - Electrical Engineering &amp; Computer Engineering/Science (Electric Power) - US - Spring 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=f14c92dc71997498</link>
+      <description>New grad role at GE Aerospace in Dayton, OH, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=f14c92dc71997498</guid>
+    </item>
+    <item>
+      <title>Systems Engineering Co-op - Electrical Engineering &amp; Computer Engineering/Science (Avionics) - US - Fall 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=c8402d45c3d3aebc</link>
+      <description>New grad role at GE Aerospace in Clearwater, FL, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=c8402d45c3d3aebc</guid>
+    </item>
+    <item>
+      <title>Systems Engineering Co-op - Electrical Engineering &amp; Computer Engineering/Science (Avionics) - US - Spring 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=cecdd96ef2552ee1</link>
+      <description>New grad role at GE Aerospace in Grand Rapids, MI, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=cecdd96ef2552ee1</guid>
+    </item>
+    <item>
+      <title>Systems Engineering Co-op - Electrical Engineering &amp; Computer Engineering/Science (Electric Power) - US - Fall 2027 at GE Aerospace</title>
+      <link>https://www.indeed.com/viewjob?jk=94aec73183cc0c17</link>
+      <description>New grad role at GE Aerospace in Dayton, OH, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=94aec73183cc0c17</guid>
+    </item>
+    <item>
+      <title>Associate Engineer - Powerplant at Southwest Airlines</title>
+      <link>https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</link>
+      <description>New grad role at Southwest Airlines in Dallas, TX, US. Category: Other</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</guid>
+    </item>
+    <item>
       <title>Associate, Restructuring [New Grad Fall 2027] at Doane Grant Thornton LLP</title>
       <link>https://ca.indeed.com/viewjob?jk=79fa89d30b031fc1</link>
       <description>New grad role at Doane Grant Thornton LLP in Toronto, ON, CA. Category: Other</description>
@@ -174,13 +237,6 @@
       <description>New grad role at Unknown in Decatur, IL, US. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=20436cce3c78dcc5</guid>
-    </item>
-    <item>
-      <title>Associate Engineer - Powerplant at Southwest Airlines</title>
-      <link>https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</link>
-      <description>New grad role at Southwest Airlines in Dallas, TX, US. Category: Other</description>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</guid>
     </item>
     <item>
       <title>Associate DevOps Engineer at Exostar India</title>
@@ -300,62 +356,6 @@
       <description>New grad role at Anduril Industries in Waltham, Massachusetts, United States. Category: Software Engineering</description>
       <pubDate>Sun, 16 Aug 2026 21:54:59 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5213218007?gh_jid=5213218007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer, Maneuver Dominance at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:40:45 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:40:42 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5113524007?gh_jid=5113524007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</link>
-      <description>New grad role at Anduril Industries in Washington, District of Columbia, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:36:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Agentic Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:36:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5184726007?gh_jid=5184726007</guid>
-    </item>
-    <item>
-      <title>Systems Security Engineer Anti-Tamper at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Security Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:36:24 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5098387007?gh_jid=5098387007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</link>
-      <description>New grad role at Anduril Industries in Boston, Massachusetts, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:34:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007</guid>
-    </item>
-    <item>
-      <title>Robotics Software Engineer at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:34:31 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007</guid>
-    </item>
-    <item>
-      <title>Software Engineer - Modeling &amp; Simulation at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 10:27:26 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007</guid>
     </item>
   </channel>
 </rss>

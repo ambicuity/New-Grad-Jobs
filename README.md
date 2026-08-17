@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1780<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1776<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->995<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->990<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->193<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->40<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->166<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->39<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->171<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->206<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->204<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,780** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,776** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -91,11 +91,11 @@ Experience an advanced career journey with us! 🚀
 | Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
 | Roblox | Software Engineer, Account Authentication | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8097701?gh_jid=8097701) |
 | Abnormal Security | Software Engineer 2 | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7740971003?gh_jid=7740971003) |
-| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
-| Exostar India | Associate DevOps Engineer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=a4f03ef045584388) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
+| Dusane Infotech India Pvt.Ltd | Junior Software Developer | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=a02532b963c8d649) |
 
-**[View all 995 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 990 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
 | Puget Sound Energy | Marketing Data Scientist | Bellevue, WA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ff3fffc8ec6454fd) |
 
-**[View all 193 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 192 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -197,8 +197,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 3 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | Analog Devices | Associate Industrial Engineer | GJ, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
+| TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 3 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
 | NetSage | Analytic Developer-Junior | Annapolis Junction, Maryland, United States | 3 days ago | [Apply](https://netsage.com/careers/current-openings/job?gh_jid=7793281003) |
 | Precision Medicine Group | SQL Developer II | Remote, United States | 3 days ago | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004) |
@@ -207,7 +207,7 @@ Experience an advanced career journey with us! 🚀
 | Mount Sinai Health System | Data Engineer III - Digital and Technology Partners - Hybrid/Remote | US | 4 days ago | [Apply](https://www.indeed.com/viewjob?jk=928669fe85ff56c6) |
 | Optum | Associate Data Analyst - Scala, PySpark, Azure cloud, AI | TS, IN | 4 days ago | [Apply](https://in.indeed.com/viewjob?jk=ff8511316b5b8b26) |
 
-**[View all 40 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 39 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -216,17 +216,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | KLSR INFRATECH LTD | Junior QS Engineer / Engineer - NICMAR | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1) |
+| GE Aerospace | Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Fall 2027 | Dayton, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d1ca59c44e5650d0) |
+| GE Aerospace | Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Spring 2027 | Bohemia, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=5b738a33f44354c5) |
+| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Electric Power) - US - Spring 2027 | Dayton, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=f14c92dc71997498) |
+| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Avionics) - US - Fall 2027 | Clearwater, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=c8402d45c3d3aebc) |
+| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Avionics) - US - Spring 2027 | Grand Rapids, MI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=cecdd96ef2552ee1) |
+| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Electric Power) - US - Fall 2027 | Dayton, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=94aec73183cc0c17) |
 | Teradata | Associate DevOps Engineer (Observability) | IN | Today | [Apply](https://in.indeed.com/viewjob?jk=873416eabc8b996b) |
 | IFF | Designer II, Infrastructure | Chennai (Guindy), India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Chennai-Guindy-India/Designer-II--Infrastructure_R20974) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041715) |
-| TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041719) |
-| Cinter Networks | Jr. Network Engineer | Rockville, MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5dd9d7d19dc6fb2f) |
-| Baker Design Build | Professional Engineer II (Structural) | Jacksonville, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ef221e2921b004c8) |
-| Valmont Industries | Associate Design Engineer - Civil/Structural Engineering | Valley, NE, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0d69bdc02e43e5d9) |
-| PIV Engineering, Inc. | Associate Engineer | New Orleans, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=88446ec15a6fb92b) |
-| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193775007?gh_jid=5193775007) |
 
-**[View all 166 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 171 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -253,7 +253,7 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 5 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
 **[View all 11 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -263,8 +263,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Reevo | Builder - Forward Deployed Operations (Early Career) | US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=dc0852006d329dd6) |
 | Collins Aerospace | Manufacturing Electrical Engineer I (Onsite) | Bellevue, IA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=693f540418a04999) |
+| Reevo | Builder - Forward Deployed Operations (Early Career) | US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=dc0852006d329dd6) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8706885002?gh_jid=8706885002) |
 | SpaceX | New Graduate Engineer, Electrical - '26/'27 (Starlink) | Redmond, WA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8696490002?gh_jid=8696490002) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Irvine, CA | 2 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8706884002?gh_jid=8706884002) |
@@ -293,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Whitby, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=282f4c0929f46dcc) |
 | Doane Grant Thornton LLP | New Grad 2027 CPA Path | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=51a8d524d5622dd5) |
 
-**[View all 206 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 204 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 08:11:05 UTC*
+*Last updated: 2026-08-17 09:04:57 UTC*
