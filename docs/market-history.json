@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T15:43:50.874399+00:00",
+    "last_updated": "2026-08-17T16:06:14.426286+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-19",
@@ -5816,25 +5816,25 @@
     },
     {
       "date": "2026-08-17",
-      "total_jobs": 1788,
+      "total_jobs": 1783,
       "categories": {
-        "data_ml": 198,
+        "software_engineering": 993,
+        "data_ml": 195,
         "infrastructure_sre": 163,
-        "software_engineering": 995,
-        "security": 77,
-        "other": 210,
-        "data_engineering": 42,
+        "security": 76,
+        "other": 211,
+        "data_engineering": 43,
         "frontend": 11,
-        "hardware": 29,
+        "hardware": 28,
         "quant_finance": 11,
         "backend": 31,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "other": 916,
-        "unicorn": 678,
-        "faang_plus": 194
+        "unicorn": 679,
+        "other": 912,
+        "faang_plus": 192
       },
       "top_companies": [
         {
@@ -5851,7 +5851,7 @@
         },
         {
           "company": "Waymo",
-          "jobs": 33
+          "jobs": 34
         },
         {
           "company": "Point72",
@@ -5862,12 +5862,12 @@
           "jobs": 31
         },
         {
-          "company": "Northrop Grumman",
+          "company": "Leidos",
           "jobs": 25
         },
         {
-          "company": "Leidos",
-          "jobs": 25
+          "company": "Northrop Grumman",
+          "jobs": 24
         },
         {
           "company": "Affirm",
@@ -5878,9 +5878,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 299,
+      "unique_companies": 298,
       "avg_jobs_per_company": 5.98,
-      "timestamp": "2026-08-17T15:43:50.873364+00:00"
+      "timestamp": "2026-08-17T16:06:14.424237+00:00"
     }
   ]
 }
