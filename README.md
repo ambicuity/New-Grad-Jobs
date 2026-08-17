@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1782<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1781<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->998<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->994<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->78<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->201<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->150<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->202<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->44<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->149<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->25<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->216<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->218<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,782** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,781** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | xAI | Software Engineer, Ads Product | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5152408007) |
 | xAI | Software Engineer - Consumer Subscriptions | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5109691007) |
 
-**[View all 998 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 994 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007) |
 
-**[View all 201 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 202 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -203,11 +203,11 @@ Experience an advanced career journey with us! 🚀
 | MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 | Snaphomz | Data Engineer | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=05880bd5a2577d82) |
 | Procter & Gamble | Data Engineer - North America Fabric Care | Cincinnati, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=bda137520545caf7) |
+| UST | Associate III - Production Support - Atlassian Cloud Engineer | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=7ff3d643a3395f5f) |
 | Booz Allen Hamilton | Data Engineer | Colorado Springs, CO | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Colorado-Springs-CO/Data-Engineer_R0246414) |
 | Booz Allen Hamilton | Data Engineer | Arlington, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Data-Engineer_R0247120) |
-| Booz Allen Hamilton | Data Engineer | Fayetteville, NC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Fayetteville-NC/Data-Engineer_R0247124) |
 
-**[View all 43 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 44 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -215,6 +215,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| SpaceX | Facilities Infrastructure Engineer | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002) |
 | Verkada | Data Trust Associate, Global Revenue Informatics | San Mateo, CA United States | Today | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5064464007) |
 | xAI | Associate Data Center Operations Technician | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5168434007) |
 | xAI | Facilities Infrastructure Engineer (Data Center Infrastructure) | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5182374007) |
@@ -224,9 +225,8 @@ Experience an advanced career journey with us! 🚀
 | xAI | Site Reliability Engineer - Data Center | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5211587007) |
 | xAI | Software Engineer - Networking Software and Services | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4946696007) |
 | LangChain | Deployed Engineer (Early Career-NYC) | New York, New York, United States | Today | [Apply](https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134) |
-| LangChain | Deployed Engineer (Early Career- SF) | United States | Today | [Apply](https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522) |
 
-**[View all 150 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 149 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -283,16 +283,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Precision Medicine Group | Clinical Data Associate II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004) |
 | Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| Canobi Technologies | Mechanical / Industrial Design Engineer (Entry-Level) | Maxville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=38d07bf480ca6bdb) |
 | University of Ottawa | TA (CUPE) - GNG5301 A - Fall 2026 | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=c755efbd884a0d89) |
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=d08008460e552f6e) |
+| Canobi Technologies | Mechanical / Industrial Design Engineer (Entry-Level) | Maxville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=38d07bf480ca6bdb) |
 | Smiths Group | Graduate Apprentice Trainee | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=4d625ccfaa39bf4c) |
 | Mantra Softech India Pvt Ltd | Non IT Support Trainee | GJ, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9fa63674ff8f46f4) |
 | Smiths Group | Graduate Apprentice Trainee | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=e72710249d580e5e) |
-| Texas A&M University Kingsville | Associate or Full Professor and Department Chair - Teacher and Bilingual Education | Kingsville, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b184f93338957f96) |
-| CoxHealth | Certified Nurse Assistant, Nurse Assistant, or Trainee - Float - Night Shift - CARE | Springfield, MO, US | Today | [Apply](https://www.indeed.com/viewjob?jk=5472dc967a2fa0d6) |
+| Johnson Controls | Application Engineer I | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=8010fcfc3ba986bd) |
+| Experity | Software Test Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=5dc2fe48e2999f8d) |
 
-**[View all 216 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 218 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -407,4 +407,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 23:17:47 UTC*
+*Last updated: 2026-08-17 23:45:59 UTC*
