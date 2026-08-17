@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 22:55:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 23:17:47 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer - Frontend (React + Node/NextJS + Typescript) at Gartner</title>
@@ -13,6 +13,20 @@
       <description>New grad role at Gartner in HR, IN. Category: Frontend Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5d62048549c1845b</guid>
+    </item>
+    <item>
+      <title>Embedded Software Engineer, Manufacturing Test, Intelligence Systems at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</link>
+      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 23:04:42 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</guid>
+    </item>
+    <item>
+      <title>Perception Machine Learning Engineer - Continuous Learning at Waymo</title>
+      <link>https://careers.withwaymo.com/jobs?gh_jid=8127006</link>
+      <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 17 Aug 2026 23:00:15 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8127006</guid>
     </item>
     <item>
       <title>AI Infrastructure Engineer, Sandbox Platform at Scale AI</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 20:22:55 +0000</pubDate>
       <guid isPermaLink="true">https://careers.roblox.com/jobs/8123004?gh_jid=8123004</guid>
-    </item>
-    <item>
-      <title>Software Engineer, CDP - Stablecoin at Coinbase</title>
-      <link>https://www.coinbase.com/careers/positions/8092485?gh_jid=8092485</link>
-      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 20:17:38 +0000</pubDate>
-      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/8092485?gh_jid=8092485</guid>
-    </item>
-    <item>
-      <title>Deployed Engineer (Early Career-NYC) at LangChain</title>
-      <link>https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</link>
-      <description>New grad role at LangChain in New York, New York, United States. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 17 Aug 2026 20:04:00 +0000</pubDate>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</guid>
     </item>
   </channel>
 </rss>
