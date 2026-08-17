@@ -2,34 +2,34 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1825,
-      "change_percent": 2.99
+      "total_jobs": 1785,
+      "change_percent": 0.67
     },
     "30_days": {
-      "total_jobs": 1950,
-      "change_percent": 10.05
+      "total_jobs": 1820,
+      "change_percent": 2.65
     }
   },
   "growing_categories": [
-    "software_engineering",
-    "data_ml",
-    "infrastructure_sre"
+    "backend",
+    "infrastructure_sre",
+    "software_engineering"
   ],
   "declining_categories": [
-    "security",
-    "frontend",
+    "data_ml",
+    "data_engineering",
     "none"
   ],
   "confidence": 75,
   "insights": [
-    "The market has experienced a significant breakout in the last 5 days, with total job postings jumping from the ~1480 range to a sustained 1772, indicating a late-cycle hiring surge.",
-    "FAANG+ and 'Other' company tiers are driving the momentum, suggesting that both large-scale tech and smaller firms are aggressively expanding their new graduate pipelines.",
-    "While Software Engineering remains the dominant volume driver, the consistent growth in Data/ML and SRE roles signals a shift toward specialized technical infrastructure needs."
+    "The market experienced a significant structural shift around day 25, moving from a ~1450 baseline to a ~1770 baseline, indicating a potential seasonal hiring surge or a major influx of new graduate roles.",
+    "Growth is currently led by non-FAANG/non-unicorn companies, suggesting that mid-market and smaller firms are driving the recent expansion in new graduate opportunities.",
+    "While the total volume has stabilized at this higher level, the slight cooling in Data/ML roles suggests that hiring demand is shifting back toward core engineering and infrastructure foundations."
   ],
-  "generated_at": "2026-08-16T00:06:25.396031+00:00",
+  "generated_at": "2026-08-17T00:32:43.920582+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-18",
-    "end": "2026-08-16"
+    "start": "2026-05-19",
+    "end": "2026-08-17"
   }
 }
