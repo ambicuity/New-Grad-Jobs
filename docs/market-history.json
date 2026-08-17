@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T18:12:09.779412+00:00",
+    "last_updated": "2026-08-17T19:07:48.562304+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-19",
@@ -5816,25 +5816,25 @@
     },
     {
       "date": "2026-08-17",
-      "total_jobs": 1771,
+      "total_jobs": 1770,
       "categories": {
-        "software_engineering": 995,
-        "security": 79,
-        "data_ml": 200,
-        "infrastructure_sre": 160,
-        "other": 196,
+        "software_engineering": 996,
+        "security": 81,
+        "data_engineering": 44,
+        "data_ml": 199,
+        "infrastructure_sre": 151,
+        "other": 202,
         "frontend": 10,
-        "data_engineering": 42,
-        "hardware": 27,
-        "quant_finance": 11,
+        "quant_finance": 12,
+        "hardware": 24,
         "backend": 30,
         "product_management": 3,
         "mobile": 18
       },
       "tiers": {
-        "unicorn": 680,
-        "other": 900,
-        "faang_plus": 191
+        "unicorn": 681,
+        "other": 899,
+        "faang_plus": 190
       },
       "top_companies": [
         {
@@ -5843,7 +5843,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 203
+          "jobs": 202
         },
         {
           "company": "OpenAI",
@@ -5866,21 +5866,21 @@
           "jobs": 28
         },
         {
+          "company": "Booz Allen Hamilton",
+          "jobs": 25
+        },
+        {
           "company": "Leidos",
           "jobs": 24
         },
         {
           "company": "Affirm",
           "jobs": 24
-        },
-        {
-          "company": "DRW",
-          "jobs": 24
         }
       ],
-      "unique_companies": 295,
-      "avg_jobs_per_company": 6.0,
-      "timestamp": "2026-08-17T18:12:09.778182+00:00"
+      "unique_companies": 298,
+      "avg_jobs_per_company": 5.94,
+      "timestamp": "2026-08-17T19:07:48.530327+00:00"
     }
   ]
 }
