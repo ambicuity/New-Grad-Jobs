@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1766<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1771<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->996<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->998<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->74<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->192<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->41<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->163<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->164<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->31<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->193<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->195<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,766** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,771** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -87,15 +87,15 @@ Experience an advanced career journey with us! 🚀
 | Abnormal Security | Software Engineer 2 | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7740971003?gh_jid=7740971003) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
+| Mastercard | Software Engineer II | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-282373-1) |
 | Anduril Industries | Systems Engineer, Battlespace | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213231007?gh_jid=5213231007) |
 | Anduril Industries | Systems Engineer, Battlespace | Broomfield, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213228007?gh_jid=5213228007) |
 | Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213220007?gh_jid=5213220007) |
 | Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213219007?gh_jid=5213219007) |
 | Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213218007?gh_jid=5213218007) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
-| Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
 
-**[View all 996 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 998 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -198,8 +198,8 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1) |
 | Cohere | Data Engineer, Data Foundations | New York, New York, United States | 2 days ago | [Apply](https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee) |
-| Analog Devices | Associate Industrial Engineer | GJ, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | TD | Engineer II – Application Engineer & .NET Full-Stack Developer | Toronto, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=c15e375dd41b42e4) |
+| Analog Devices | Associate Industrial Engineer | GJ, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=033a90146a7bb2be) |
 | Target | Data Engineer - Finance AI Solutions | 7000 Target Pkwy N,NCD-0375 Brooklyn Park,MN 55445 | 3 days ago | [Apply](https://target.wd5.myworkdayjobs.com/job/7000-Target-Pkwy-NNCD-0375-Brooklyn-ParkMN-55445/Data-Engineer---Finance-Technology-Solutions_R0000444866) |
 | TransUnion | Cloud/Big Data Engineer | Chennai | 3 days ago | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Chennai/Cloud-Big-Data-Engineer_19041089) |
 | zaimler | Data Infrastructure Engineer (Query Engine) | San Mateo, CA | 3 days ago | [Apply](https://jobs.lever.co/zaimler/28868c70-2d24-4446-9d9f-fa89f0649b02) |
@@ -215,6 +215,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| KLSR INFRATECH LTD | Junior QS Engineer - NICMAR | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1) |
+| Teradata | Associate DevOps Engineer (Observability) | IN | Today | [Apply](https://in.indeed.com/viewjob?jk=873416eabc8b996b) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041715) |
 | TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041719) |
 | Cinter Networks | Jr. Network Engineer | Rockville, MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=5dd9d7d19dc6fb2f) |
@@ -223,10 +225,8 @@ Experience an advanced career journey with us! 🚀
 | PIV Engineering, Inc. | Associate Engineer | New Orleans, LA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=88446ec15a6fb92b) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Washington, District of Columbia, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193775007?gh_jid=5193775007) |
 | Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Seattle, Washington, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193767007?gh_jid=5193767007) |
-| Anduril Industries | Tactical Network Engineer, Connected Warfare (Active Clearance) | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5193435007?gh_jid=5193435007) |
-| Anduril Industries | Systems Engineer, C2 Networking - Edge Compute and Communications | Costa Mesa, California, United States | 1 day ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179714007?gh_jid=5179714007) |
 
-**[View all 163 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 164 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -289,11 +289,11 @@ Experience an advanced career journey with us! 🚀
 | Northrop Grumman | 2026 Associate Program Cost and Schedule Control Analyst - Colorado Springs CO | United States-Colorado-Colorado Springs | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Colorado-Springs/XMLNAME-2026-Associate-Program-Cost-and-Schedule-Control-Analyst---Colorado-Springs-CO_R10245881-1) |
 | Las Palmas Del Sol Healthcare | New Grad RN Resident Oncology | El Paso, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=e071999e497ec365) |
 | Wilson Medical Center | Registered Nurse (RN), New Grad - Medsurg | Wilson, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=252200b2c77d3a16) |
+| Hargrove Engineers + Constructors | E&I Engineer | Beaumont, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a5b87eca9d86c480) |
 | GXO Logistics | Warehouse Associate - Data Center Operations | OK, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=45474840b2b33439) |
 | Hawaii State Department of Education | Educational Assistant I, II, III - Molokai High | Ho‘olehua, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=85d9ce2956cd2a38) |
-| GlobalFoundries | Process Integration and Yield Engineer (2027 New College Graduate) | Malta, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=cb25d77fae962abc) |
 
-**[View all 193 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 195 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 05:43:21 UTC*
+*Last updated: 2026-08-17 06:11:40 UTC*

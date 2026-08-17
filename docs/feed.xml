@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 05:43:22 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 06:11:40 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer 2 at Abnormal Security</title>
@@ -36,6 +36,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
+      <title>Junior QS Engineer - NICMAR at KLSR INFRATECH LTD</title>
+      <link>https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1</link>
+      <description>New grad role at KLSR INFRATECH LTD in TS, IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1</guid>
+    </item>
+    <item>
       <title>Robotics Engineer- Entry Level at Unknown</title>
       <link>https://www.indeed.com/viewjob?jk=20436cce3c78dcc5</link>
       <description>New grad role at Unknown in Decatur, IL, US. Category: Data Science &amp; ML</description>
@@ -48,6 +55,20 @@
       <description>New grad role at Southwest Airlines in Dallas, TX, US. Category: Other</description>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=8ee27dd1d502e98b</guid>
+    </item>
+    <item>
+      <title>Associate DevOps Engineer (Observability) at Teradata</title>
+      <link>https://in.indeed.com/viewjob?jk=873416eabc8b996b</link>
+      <description>New grad role at Teradata in IN. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=873416eabc8b996b</guid>
+    </item>
+    <item>
+      <title>Software Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-282373-1</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-282373-1</guid>
     </item>
     <item>
       <title>Retail Store Associate at CVS Health</title>
@@ -335,27 +356,6 @@
       <description>New grad role at Anduril Industries in Seattle, Washington, United States. Category: Software Engineering</description>
       <pubDate>Sun, 16 Aug 2026 09:48:08 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5178957007?gh_jid=5178957007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Game Development at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 09:48:08 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4975955007?gh_jid=4975955007</guid>
-    </item>
-    <item>
-      <title>Fuel Systems Engineer, Air Vehicles at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</link>
-      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
-      <pubDate>Sun, 16 Aug 2026 09:46:23 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/4954307007?gh_jid=4954307007</guid>
-    </item>
-    <item>
-      <title>Infrastructure Engineer, Kubernetes at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007</link>
-      <description>New grad role at Anduril Industries in Reston, Virginia, United States. Category: Data Science &amp; ML</description>
-      <pubDate>Sun, 16 Aug 2026 09:45:55 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007</guid>
     </item>
   </channel>
 </rss>
