@@ -62,14 +62,14 @@ Experience an advanced career journey with us! 🚀
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->80<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->79<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->198<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->43<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->155<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->12<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->22<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->221<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->21<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->223<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -84,6 +84,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Roblox | Software Engineer, Foundation AI | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8123004?gh_jid=8123004) |
+| Coinbase | Software Engineer, CDP - Stablecoin | Remote - Canada | Today | [Apply](https://www.coinbase.com/careers/positions/8092485?gh_jid=8092485) |
 | New Relic | Software Engineer - Query Language | Portland, Oregon, USA | Today | [Apply](https://job-boards.greenhouse.io/newrelic/jobs/5387144008) |
 | Verkada | Associate Solutions Engineer, San Mateo | San Mateo, CA United States | Today | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4135277007) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
@@ -92,8 +94,6 @@ Experience an advanced career journey with us! 🚀
 | Anthropic | Software Engineer, Research Data Platform | San Francisco, CA / New York City, NY | Today | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5191226008) |
 | Roblox | Software Engineer, Communications | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8083944?gh_jid=8083944) |
 | Roblox | Software Engineer, Account Authentication | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8097701?gh_jid=8097701) |
-| MongoDB | Software Engineer 3 | United States | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8089124) |
-| MongoDB | Software Engineer 3 | Alberta; British Columbia; Manitoba; Nova Scotia; Ontario; Quebec | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8108725) |
 
 **[View all 996 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -168,7 +168,7 @@ Experience an advanced career journey with us! 🚀
 | Booz Allen Hamilton | Undersea Systems Security Engineer | Washington, DC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Undersea-Systems-Security-Engineer_R0244081) |
 | Leidos | IT Security Engineer III | Huntsville, AL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/IT-Security-Engineer-III_R-00188331-1) |
 
-**[View all 80 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 79 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -214,6 +214,9 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| LangChain | Deployed Engineer (Early Career-NYC) | New York, New York, United States | Today | [Apply](https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134) |
+| LangChain | Deployed Engineer (Early Career- SF) | United States | Today | [Apply](https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522) |
+| Pinterest | Administrative Business Partner I - Engineering, Product and Design | San Francisco, CA, US; Palo Alto, CA, US | Today | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=8103612) |
 | Samsara | Business Technology Engineer II | Remote - Canada | Today | [Apply](https://www.samsara.com/company/careers/roles/8031880?gh_jid=8031880) |
 | Samsara | Business Technology Engineer II | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/8022729?gh_jid=8022729) |
 | Samsara | Associate Sales Engineer, SE Desk - Mid West | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7311761?gh_jid=7311761) |
@@ -221,9 +224,6 @@ Experience an advanced career journey with us! 🚀
 | Samsara | Associate Sales Engineer, SE Desk - Southeast | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7848351?gh_jid=7848351) |
 | Samsara | Associate Sales Engineer, SE Desk - TOLA | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7848363?gh_jid=7848363) |
 | Samsara | Associate Specialist Sales Engineer | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258) |
-| PriceLabs | Graduate Programme - India (Remote) | IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0990f269ae828d70) |
-| FICO | Customer Engineering – Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=d02f6b770798732c) |
-| FICO | Customer Engineering – Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ff33f56744104867) |
 
 **[View all 155 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -233,6 +233,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Vanderbilt University | Graduate Program Coordinator | Nashville, TN, US | Today | [Apply](https://www.indeed.com/viewjob?jk=b3b2da23faa099aa) |
 | Airbus | Airframe Business Analyst - Electrical FIN Management | KA, IN | 3 days ago | [Apply](https://in.indeed.com/viewjob?jk=b33bd7f259c875e1) |
 | Anthropic | Offensive Hardware Security Engineer, Platform Security | San Francisco, CA / New York City, NY / Seattle, WA | 2026-08-03 | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5316565008) |
 | Cerebras | Hardware / Low Level Security Engineer | US and Canada Offices | 2026-06-23 | [Apply](https://jobs.ashbyhq.com/cerebras/4e706d0d-65a6-4a36-9ff3-b9e9da16a618) |
@@ -244,7 +245,6 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | KeyBank | 2027 Analytics and Quantitative Modeling Rotational Analyst Program- Cleveland | Cleveland, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=ea0c3437a1e7f426) |
-| Citi | Markets – Sales and Trading, Full Time Analyst, New York - USA, 2027 | New York New York United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Markets---Sales-and-Trading--Full-Time-Analyst--New-York---USA--2027_26979638) |
 | Goldman Sachs | 2027 / Americas / Salt Lake City / Operations / Summer Analyst | Salt Lake City, UT, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=ebe8d0eebf91753c) |
 | Goldman Sachs | 2027 / Americas / Salt Lake City / Operations / New Analyst | Salt Lake City, UT, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=8eb59fa49cd8ff29) |
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Operations / Summer Analyst | Dallas, TX, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=da856038d2c4e618) |
@@ -253,8 +253,9 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 5 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
-**[View all 12 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 11 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Hardware Engineering
 
@@ -262,9 +263,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| CACI International | Early Career NASA Space Reactor – 1 Freedom Flight Software Development Engineer | Houston, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=11d2fd4228930b3f) |
-| The Whiting-Turner Contracting Company | Entry-Level Engineer | Charleston, SC, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3950cc1ff190eadf) |
 | DEPLOY | Junior Electrical Engineer | Bessemer, AL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d3c6f99e48840b06) |
+| CACI International | Early Career NASA Space Reactor – 1 Freedom Flight Software Development Engineer | Houston, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=11d2fd4228930b3f) |
 | Medtronic | Embedded Software/ Firmware R&D Engineer I | Lafayette, Colorado, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Embedded-Software--Firmware-R-D-Engineer-I_R73869-1) |
 | Northrop Grumman | Electrical Engineer - Level 2 | United States-California-Redondo Beach | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electrical-Engineer---Level-2_R10245999-1) |
 | KBR, Inc. | Mechanical Engineer II | Midwest City, Oklahoma | Today | [Apply](https://kbr.wd5.myworkdayjobs.com/job/Midwest-City-Oklahoma/Mechanical-Engineer-II_R2128464) |
@@ -272,8 +272,9 @@ Experience an advanced career journey with us! 🚀
 | SpaceX | New Graduate Engineer, Electrical - '26/'27 (Starlink) | Redmond, WA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8696490002?gh_jid=8696490002) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Irvine, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8706884002?gh_jid=8706884002) |
 | SpaceX | New Graduate Engineer, Silicon Engineering | Palo Alto, CA | 3 days ago | [Apply](https://boards.greenhouse.io/spacex/jobs/8703552002?gh_jid=8703552002) |
+| Ciena | Mechanical Engineer - New Grad | Ottawa, ON, CA | 3 days ago | [Apply](https://ca.indeed.com/viewjob?jk=ad6f52eeb157ed27) |
 
-**[View all 22 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 21 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -292,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Maple Orgtech (India) Limited | GET (Graduate Engineer Trainee) | HR, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=06ad51c473b4dbc4) |
 | Doane Grant Thornton LLP | Accountant, Assurance [New Grad 2027] | Truro, NS, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=02f87c9dbc0cd518) |
 
-**[View all 221 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 223 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -407,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 20:02:18 UTC*
+*Last updated: 2026-08-17 20:34:04 UTC*

@@ -5,8 +5,43 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 20:02:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 20:34:04 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Foundation AI at Roblox</title>
+      <link>https://careers.roblox.com/jobs/8123004?gh_jid=8123004</link>
+      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 20:22:55 +0000</pubDate>
+      <guid isPermaLink="true">https://careers.roblox.com/jobs/8123004?gh_jid=8123004</guid>
+    </item>
+    <item>
+      <title>Software Engineer, CDP - Stablecoin at Coinbase</title>
+      <link>https://www.coinbase.com/careers/positions/8092485?gh_jid=8092485</link>
+      <description>New grad role at Coinbase in Remote - Canada. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 20:17:38 +0000</pubDate>
+      <guid isPermaLink="true">https://www.coinbase.com/careers/positions/8092485?gh_jid=8092485</guid>
+    </item>
+    <item>
+      <title>Deployed Engineer (Early Career-NYC) at LangChain</title>
+      <link>https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</link>
+      <description>New grad role at LangChain in New York, New York, United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 20:04:00 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134</guid>
+    </item>
+    <item>
+      <title>Deployed Engineer (Early Career- SF) at LangChain</title>
+      <link>https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522</link>
+      <description>New grad role at LangChain in United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 20:03:16 +0000</pubDate>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522</guid>
+    </item>
+    <item>
+      <title>Administrative Business Partner I - Engineering, Product and Design at Pinterest</title>
+      <link>https://www.pinterestcareers.com/jobs/?gh_jid=8103612</link>
+      <description>New grad role at Pinterest in San Francisco, CA, US; Palo Alto, CA, US. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 19:58:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.pinterestcareers.com/jobs/?gh_jid=8103612</guid>
+    </item>
     <item>
       <title>Software Engineer - Query Language at New Relic</title>
       <link>https://job-boards.greenhouse.io/newrelic/jobs/5387144008</link>
@@ -321,41 +356,6 @@
       <description>New grad role at Samsara in Remote - Canada. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 17 Aug 2026 14:47:17 +0000</pubDate>
       <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8031880?gh_jid=8031880</guid>
-    </item>
-    <item>
-      <title>Business Technology Engineer II at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/8022729?gh_jid=8022729</link>
-      <description>New grad role at Samsara in Remote - US. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 17 Aug 2026 14:47:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8022729?gh_jid=8022729</guid>
-    </item>
-    <item>
-      <title>IT Systems Engineer at Vercel</title>
-      <link>https://job-boards.greenhouse.io/vercel/jobs/6020852004</link>
-      <description>New grad role at Vercel in Hybrid - San Francisco, New York City, London. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 14:36:33 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/vercel/jobs/6020852004</guid>
-    </item>
-    <item>
-      <title>Software Engineer at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7647708</link>
-      <description>New grad role at Twilio in Remote - Estonia. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 14:33:38 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7647708</guid>
-    </item>
-    <item>
-      <title>Software Engineer  at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/7785202</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 14:33:01 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/7785202</guid>
-    </item>
-    <item>
-      <title>Security Engineer, Incident Response at Twilio</title>
-      <link>https://job-boards.greenhouse.io/twilio/jobs/8023560</link>
-      <description>New grad role at Twilio in Remote - Ireland. Category: Security Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 14:29:09 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/twilio/jobs/8023560</guid>
     </item>
   </channel>
 </rss>
