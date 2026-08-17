@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1791<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1797<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1000<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1007<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->11<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->31<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->30<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->208<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->207<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,791** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,797** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,6 +84,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
+| Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Anduril Industries | Software Engineer, Tooling | Fort Collins, Colorado, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5205416007?gh_jid=5205416007) |
 | Anduril Industries | Software Engineer, Cloud OS | Seattle, Washington, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5130646007?gh_jid=5130646007) |
 | Anduril Industries | Robotics Software Engineer, Maneuver Dominance | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5113527007?gh_jid=5113527007) |
@@ -92,10 +94,8 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Software Engineer, Agentic Modeling & Simulation | Washington, District of Columbia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5112335007?gh_jid=5112335007) |
 | Anduril Industries | Robotics Software Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5136146007?gh_jid=5136146007) |
 | Anduril Industries | Robotics Software Engineer | Boston, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5179580007?gh_jid=5179580007) |
-| Anduril Industries | Software Engineer - Modeling & Simulation | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5062357007?gh_jid=5062357007) |
-| Anduril Industries | Robotics Software Engineer, Sensor Integration | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5096506007?gh_jid=5096506007) |
 
-**[View all 1,000 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,007 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -179,6 +179,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5123282007?gh_jid=5123282007) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007) |
@@ -188,7 +189,6 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Financial Analyst II, Software Platform | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/4985488007?gh_jid=4985488007) |
 | Anduril Industries | Infrastructure Engineer, Kubernetes | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177879007?gh_jid=5177879007) |
 | Anduril Industries | Site Reliability Engineer, Intelligence Systems | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177893007?gh_jid=5177893007) |
-| Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
 
 **[View all 197 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -217,16 +217,16 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Samsara | Associate Sales Engineer, SE Desk - Mid West | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7311761?gh_jid=7311761) |
+| Samsara | Associate Sales Engineer, SE Desk - Northeast | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7311741?gh_jid=7311741) |
+| Samsara | Associate Sales Engineer, SE Desk - Southeast | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7848351?gh_jid=7848351) |
+| Samsara | Associate Sales Engineer, SE Desk - TOLA | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7848363?gh_jid=7848363) |
+| Samsara | Associate Specialist Sales Engineer | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7717258?gh_jid=7717258) |
 | PriceLabs | Graduate Programme - India (Remote) | IN | Today | [Apply](https://in.indeed.com/viewjob?jk=0990f269ae828d70) |
 | FICO | Customer Engineering – Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=d02f6b770798732c) |
 | FICO | Customer Engineering – Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ff33f56744104867) |
 | FICO | Customer Engineering – Engineer II | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=c9b6a53174bb8662) |
-| KLSR INFRATECH LTD | Junior QS Engineer / Engineer - NICMAR | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=6a5abbc0b1fe7aa1) |
-| GE Aerospace | Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Fall 2027 | Dayton, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d1ca59c44e5650d0) |
-| GE Aerospace | Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Spring 2027 | Bohemia, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=5b738a33f44354c5) |
-| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Electric Power) - US - Spring 2027 | Dayton, OH, US | Today | [Apply](https://www.indeed.com/viewjob?jk=f14c92dc71997498) |
-| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Avionics) - US - Fall 2027 | Clearwater, FL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=c8402d45c3d3aebc) |
-| GE Aerospace | Systems Engineering Co-op - Electrical Engineering & Computer Engineering/Science (Avionics) - US - Spring 2027 | Grand Rapids, MI, US | Today | [Apply](https://www.indeed.com/viewjob?jk=cecdd96ef2552ee1) |
+| GE Aerospace | Systems Engineering Co-op - Mechanical/Aerospace Engineering (Electric Power) - US - Fall 2027 | Bohemia, NY, US | Today | [Apply](https://www.indeed.com/viewjob?jk=d1ca59c44e5650d0) |
 
 **[View all 169 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -282,18 +282,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Mantra Softech India Pvt Ltd | Non IT Support Trainee | GJ, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=9fa63674ff8f46f4) |
 | Smiths Group | Graduate Apprentice Trainee | MH, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=e72710249d580e5e) |
-| KC COTTRELL ENGINEERING SERVICES PRIVATE LIMITED | Graduate Engineer Trainee (GET) – Mechanical / Civil / Electrical | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=c170c0f2fec8e5f5) |
-| Maple Orgtech (India) Limited | GET (Graduate Engineer Trainee) | HR, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=06ad51c473b4dbc4) |
-| Maple Orgtech (India) Limited | GET (Graduate Engineer Trainee) | WB, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=086f7d68dbf08635) |
 | Canadian Natural | New Graduate – Commercial Operations (Supply Chain and Joint Ventures) | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=171acbcf5f8a71bf) |
-| Deloitte | Analyst/Consultant, Corporate Finance - New Grad Fall 2027 - Multiple Locations | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=b57931e695e833ae) |
 | Deloitte | Consultant - Controls Assurance & Accounting and Reporting Advisory, Assurance - New Grad 2027 | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=ef11c3fb729393dc) |
 | Deloitte | Tax & Legal - Transfer Pricing - New Grad 2027 - Multiple Locations | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=78f6fc741e5e05f6) |
-| Deloitte | Consultant - IT Audit & Assurance - New Grad - 2027 | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6301001991a69de5) |
-| Deloitte | Consultant - Actuarial Insurance Solutions, Assurance - New Grad - Spring/Summer 2027 - Ontario | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f000337b4c4cf44c) |
+| Doane Grant Thornton LLP | Accountant, Assurance [New Grad Fall 2027] | Sydney, NS, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=bb333fb95aaaef2c) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Winter 2027] | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=d2c462e728cda3e5) |
+| Doane Grant Thornton LLP | Associate, Restructuring [New Grad Fall 2027] | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=79fa89d30b031fc1) |
+| Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Whitby, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=282f4c0929f46dcc) |
+| Doane Grant Thornton LLP | Analyst, Transfer Pricing [New Grad Fall 2027] | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=54cff5861d24c87e) |
 
-**[View all 208 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 207 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 12:03:36 UTC*
+*Last updated: 2026-08-17 12:57:52 UTC*
