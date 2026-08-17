@@ -5,8 +5,50 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 21:40:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 22:00:54 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer at Stripe</title>
+      <link>https://stripe.com/jobs/search?gh_jid=8137972</link>
+      <description>New grad role at Stripe in Chicago, IL. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 21:52:22 +0000</pubDate>
+      <guid isPermaLink="true">https://stripe.com/jobs/search?gh_jid=8137972</guid>
+    </item>
+    <item>
+      <title>Data Trust Associate, Global Revenue Informatics at Verkada</title>
+      <link>https://job-boards.greenhouse.io/verkada/jobs/5064464007</link>
+      <description>New grad role at Verkada in San Mateo, CA United States. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Mon, 17 Aug 2026 21:48:38 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/5064464007</guid>
+    </item>
+    <item>
+      <title>Client Services Business Analyst II - Healthcare Data at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004</link>
+      <description>New grad role at Precision Medicine Group in Indianapolis, IN, USA. Category: Data Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 21:43:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/5779250004</guid>
+    </item>
+    <item>
+      <title>Clinical Data Associate II at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004</link>
+      <description>New grad role at Precision Medicine Group in Bangalore, Karnataka, India. Category: Other</description>
+      <pubDate>Mon, 17 Aug 2026 21:43:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004</guid>
+    </item>
+    <item>
+      <title>Power BI Developer II at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004</link>
+      <description>New grad role at Precision Medicine Group in Bangalore, Karnataka, India. Category: Data Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 21:43:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6005640004</guid>
+    </item>
+    <item>
+      <title>SQL Developer II at Precision Medicine Group</title>
+      <link>https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004</link>
+      <description>New grad role at Precision Medicine Group in Remote, United States. Category: Data Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 21:43:03 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6141388004</guid>
+    </item>
     <item>
       <title>Software Engineer, Tooling at Anduril Industries</title>
       <link>https://boards.greenhouse.io/andurilindustries/jobs/5205416007?gh_jid=5205416007</link>
@@ -314,48 +356,6 @@
       <description>New grad role at New Relic in Portland, Oregon, USA. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 19:16:44 +0000</pubDate>
       <guid isPermaLink="true">https://job-boards.greenhouse.io/newrelic/jobs/5387144008</guid>
-    </item>
-    <item>
-      <title>Associate Solutions Engineer, San Mateo at Verkada</title>
-      <link>https://job-boards.greenhouse.io/verkada/jobs/4135277007</link>
-      <description>New grad role at Verkada in San Mateo, CA United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:45:58 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/verkada/jobs/4135277007</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Data Engineering at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8025021?gh_jid=8025021</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:40:28 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8025021?gh_jid=8025021</guid>
-    </item>
-    <item>
-      <title>[2027] Software Engineer, Early Career at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8072244?gh_jid=8072244</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:38:03 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8072244?gh_jid=8072244</guid>
-    </item>
-    <item>
-      <title>Software Engineer, User Frameworks at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8080438?gh_jid=8080438</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:34:50 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8080438?gh_jid=8080438</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Research Data Platform at Anthropic</title>
-      <link>https://job-boards.greenhouse.io/anthropic/jobs/5191226008</link>
-      <description>New grad role at Anthropic in San Francisco, CA | New York City, NY. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:34:46 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/anthropic/jobs/5191226008</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Communications at Roblox</title>
-      <link>https://careers.roblox.com/jobs/8083944?gh_jid=8083944</link>
-      <description>New grad role at Roblox in San Mateo, CA, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:34:31 +0000</pubDate>
-      <guid isPermaLink="true">https://careers.roblox.com/jobs/8083944?gh_jid=8083944</guid>
     </item>
   </channel>
 </rss>

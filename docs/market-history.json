@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T21:40:50.455369+00:00",
+    "last_updated": "2026-08-17T22:00:54.687764+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-19",
@@ -5816,30 +5816,30 @@
     },
     {
       "date": "2026-08-17",
-      "total_jobs": 1795,
+      "total_jobs": 1780,
       "categories": {
-        "software_engineering": 1001,
+        "software_engineering": 996,
+        "infrastructure_sre": 147,
+        "data_engineering": 44,
+        "other": 219,
         "security": 81,
-        "infrastructure_sre": 154,
-        "data_ml": 197,
-        "data_engineering": 43,
-        "other": 226,
+        "data_ml": 200,
         "frontend": 9,
-        "hardware": 22,
         "quant_finance": 11,
+        "hardware": 22,
         "product_management": 4,
         "backend": 29,
         "mobile": 18
       },
       "tiers": {
-        "other": 931,
-        "unicorn": 681,
-        "faang_plus": 183
+        "faang_plus": 185,
+        "unicorn": 679,
+        "other": 916
       },
       "top_companies": [
         {
           "company": "SpaceX",
-          "jobs": 230
+          "jobs": 229
         },
         {
           "company": "Anduril Industries",
@@ -5862,12 +5862,12 @@
           "jobs": 32
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 27
+          "company": "Leidos",
+          "jobs": 30
         },
         {
-          "company": "Leidos",
-          "jobs": 27
+          "company": "Booz Allen Hamilton",
+          "jobs": 29
         },
         {
           "company": "Northrop Grumman",
@@ -5878,9 +5878,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 300,
-      "avg_jobs_per_company": 5.98,
-      "timestamp": "2026-08-17T21:40:50.454218+00:00"
+      "unique_companies": 296,
+      "avg_jobs_per_company": 6.01,
+      "timestamp": "2026-08-17T22:00:54.686911+00:00"
     }
   ]
 }
