@@ -5,8 +5,36 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 20:34:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 21:03:32 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Measurement Data Scientist at AppLovin</title>
+      <link>https://boards.greenhouse.io/applovin/jobs/4705264006?gh_jid=4705264006</link>
+      <description>New grad role at AppLovin in Palo Alto, CA. Category: Data Science &amp; ML</description>
+      <pubDate>Mon, 17 Aug 2026 20:40:52 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/applovin/jobs/4705264006?gh_jid=4705264006</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Cryptography at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/8077370?t=gh_src=&amp;gh_jid=8077370</link>
+      <description>New grad role at Robinhood in Bellevue, WA; Menlo Park, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 20:35:33 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/8077370?t=gh_src=&amp;gh_jid=8077370</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Proactive Capabilities at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/8067604?t=gh_src=&amp;gh_jid=8067604</link>
+      <description>New grad role at Robinhood in Bellevue, WA; Menlo Park, CA. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 20:35:29 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/8067604?t=gh_src=&amp;gh_jid=8067604</guid>
+    </item>
+    <item>
+      <title>Security Engineer, Application Security at Robinhood</title>
+      <link>https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&amp;gh_jid=7918258</link>
+      <description>New grad role at Robinhood in Bellevue, WA; Menlo Park, CA. Category: Security Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 20:35:14 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&amp;gh_jid=7918258</guid>
+    </item>
     <item>
       <title>Software Engineer, Foundation AI at Roblox</title>
       <link>https://careers.roblox.com/jobs/8123004?gh_jid=8123004</link>
@@ -128,10 +156,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8089124</link>
-      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8107198</link>
+      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8089124</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8107198</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -142,17 +170,17 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8107198</link>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
       <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8107198</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
-      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=8089124</link>
+      <description>New grad role at MongoDB in United States. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8089124</guid>
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
@@ -163,10 +191,10 @@
     </item>
     <item>
       <title>Software Engineer 3 at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=8083761</link>
-      <description>New grad role at MongoDB in New York City. Category: Software Engineering</description>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7993984</link>
+      <description>New grad role at MongoDB in Gurugram. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=8083761</guid>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7993984</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Identity and Access Management at MongoDB</title>
@@ -177,17 +205,17 @@
     </item>
     <item>
       <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
-      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
-    </item>
-    <item>
-      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7662950</link>
       <description>New grad role at MongoDB in Toronto. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7662950</guid>
+    </item>
+    <item>
+      <title>Software Engineer 3, Atlas Search Systems at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7523920</link>
+      <description>New grad role at MongoDB in San Francisco. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7523920</guid>
     </item>
     <item>
       <title>Software Engineer 3, Atlas Vector Search at MongoDB</title>
@@ -219,17 +247,17 @@
     </item>
     <item>
       <title>Software Engineer, Code Generation at MongoDB</title>
-      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
-      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
-    </item>
-    <item>
-      <title>Software Engineer, Code Generation at MongoDB</title>
       <link>https://www.mongodb.com/careers/job/?gh_jid=7311708</link>
       <description>New grad role at MongoDB in British Columbia; Calgary. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
       <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311708</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Code Generation at MongoDB</title>
+      <link>https://www.mongodb.com/careers/job/?gh_jid=7311666</link>
+      <description>New grad role at MongoDB in California; Colorado; Montana; Nevada; New Mexico; Oregon; Utah; Washington. Category: Software Engineering</description>
+      <pubDate>Mon, 17 Aug 2026 18:27:22 +0000</pubDate>
+      <guid isPermaLink="true">https://www.mongodb.com/careers/job/?gh_jid=7311666</guid>
     </item>
     <item>
       <title>Software Engineer, Data Migration at MongoDB</title>
@@ -328,34 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, United States. Category: Software Engineering</description>
       <pubDate>Mon, 17 Aug 2026 15:46:13 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=7905695</guid>
-    </item>
-    <item>
-      <title>Software Engineer II - ADEX at Abnormal Security</title>
-      <link>https://abnormal.ai/careers/jobs/7774637003?gh_jid=7774637003</link>
-      <description>New grad role at Abnormal Security in Hybrid - Bangalore, India. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 15:42:51 +0000</pubDate>
-      <guid isPermaLink="true">https://abnormal.ai/careers/jobs/7774637003?gh_jid=7774637003</guid>
-    </item>
-    <item>
-      <title>Applied AI Data Scientist - Product AI Team at Flatiron Health</title>
-      <link>https://flatiron.com/careers/open-positions/job?gh_jid=8010590</link>
-      <description>New grad role at Flatiron Health in NY office. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 17 Aug 2026 15:09:46 +0000</pubDate>
-      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=8010590</guid>
-    </item>
-    <item>
-      <title>Data Scientist - Workflow Automation at Flatiron Health</title>
-      <link>https://flatiron.com/careers/open-positions/job?gh_jid=8027593</link>
-      <description>New grad role at Flatiron Health in NY office. Category: Data Science &amp; ML</description>
-      <pubDate>Mon, 17 Aug 2026 15:09:46 +0000</pubDate>
-      <guid isPermaLink="true">https://flatiron.com/careers/open-positions/job?gh_jid=8027593</guid>
-    </item>
-    <item>
-      <title>Business Technology Engineer II at Samsara</title>
-      <link>https://www.samsara.com/company/careers/roles/8031880?gh_jid=8031880</link>
-      <description>New grad role at Samsara in Remote - Canada. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 17 Aug 2026 14:47:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.samsara.com/company/careers/roles/8031880?gh_jid=8031880</guid>
     </item>
   </channel>
 </rss>
