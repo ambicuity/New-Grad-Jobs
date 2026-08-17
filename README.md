@@ -54,11 +54,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1769<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1766<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->997<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->996<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->33<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->19<!-- /COUNT --> |
@@ -69,14 +69,14 @@ Experience an advanced career journey with us! 🚀
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->11<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->31<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->195<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->193<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,769** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,766** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -84,6 +84,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Abnormal Security | Software Engineer 2 | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7740971003?gh_jid=7740971003) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - The Netherlands | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022942) |
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Anduril Industries | Systems Engineer, Battlespace | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213231007?gh_jid=5213231007) |
@@ -93,9 +94,8 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Software Engineer, Robotics Tracking and Fusion | Waltham, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5213218007?gh_jid=5213218007) |
 | Roblox | Software Engineer, Data Engineering | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8025021?gh_jid=8025021) |
 | Roblox | [2027] Software Engineer, Early Career | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8072244?gh_jid=8072244) |
-| Roblox | Software Engineer, User Frameworks | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8080438?gh_jid=8080438) |
 
-**[View all 997 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 996 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -293,7 +293,7 @@ Experience an advanced career journey with us! 🚀
 | Hawaii State Department of Education | Educational Assistant I, II, III - Molokai High | Ho‘olehua, HI, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=85d9ce2956cd2a38) |
 | GlobalFoundries | Process Integration and Yield Engineer (2027 New College Graduate) | Malta, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=cb25d77fae962abc) |
 
-**[View all 195 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 193 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-17 05:02:27 UTC*
+*Last updated: 2026-08-17 05:43:21 UTC*
