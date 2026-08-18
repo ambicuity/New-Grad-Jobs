@@ -5,14 +5,14 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 03:37:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 04:24:53 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</guid>
+      <title>Systems Engineer at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007</link>
+      <description>New grad role at Anduril Industries in Quincy, Massachusetts, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 04:13:13 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007</guid>
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
@@ -20,6 +20,13 @@
       <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</link>
+      <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</guid>
     </item>
     <item>
       <title>Product Security Engineer (Starlink) at SpaceX</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246949</guid>
-    </item>
-    <item>
-      <title>Data Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Data-Engineer_R0247120</link>
-      <description>New grad role at Booz Allen Hamilton in Arlington, VA. Category: Data Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Arlington-VA/Data-Engineer_R0247120</guid>
     </item>
   </channel>
 </rss>
