@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 05:44:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 06:07:48 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Engineer at Anduril Industries</title>
@@ -16,17 +16,17 @@
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</guid>
     </item>
     <item>
       <title>Product Security Engineer (Starlink) at SpaceX</title>
@@ -120,6 +120,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
+      <title>Indigenous (First Nation, Metis &amp; Inuit) New Grad - Multiple Locations - Multiple Business Areas at Deloitte</title>
+      <link>https://ca.indeed.com/viewjob?jk=f9233ea58f94673e</link>
+      <description>New grad role at Deloitte in Vancouver, BC, CA. Category: Other</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f9233ea58f94673e</guid>
+    </item>
+    <item>
       <title>Fall 2026 - Software Engineer Co-Op at Flint Hills Resources</title>
       <link>https://www.indeed.com/viewjob?jk=032136ce0dbd67bf</link>
       <description>New grad role at Flint Hills Resources in Wichita, KS, US. Category: Software Engineering</description>
@@ -132,6 +139,13 @@
       <description>New grad role at Gartner in HR, IN. Category: Frontend Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5d62048549c1845b</guid>
+    </item>
+    <item>
+      <title>Site Reliability Engineer II at Mastercard</title>
+      <link>https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-276576-1</link>
+      <description>New grad role at Mastercard in Pune, India. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-276576-1</guid>
     </item>
     <item>
       <title>Software engineer at Mastercard</title>
@@ -342,20 +356,6 @@
       <description>New grad role at Booz Allen Hamilton in Aurora, CO. Category: Data Science &amp; ML</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247100</guid>
-    </item>
-    <item>
-      <title>Data Scientist, Mid at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247101</link>
-      <description>New grad role at Booz Allen Hamilton in Aurora, CO. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247101</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246953</link>
-      <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246953</guid>
     </item>
   </channel>
 </rss>

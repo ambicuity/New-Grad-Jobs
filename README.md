@@ -54,7 +54,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1803<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1805<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -62,21 +62,21 @@ Experience an advanced career journey with us! 🚀
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->77<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->203<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->80<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->204<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->52<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->153<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->157<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->27<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->226<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->219<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,803** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,805** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -85,8 +85,8 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Anduril Industries | Systems Engineer | Quincy, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007) |
-| SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
 | SpaceX | Security Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002) |
+| SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
 | SpaceX | Security Software Engineer (Starlink) | Redmond, WA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719854002?gh_jid=8719854002) |
 | Twitch | Software Engineer, Memberships I | Seattle, WA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8610471002) |
 | Twitch | Software Engineer, Memberships I | San Francisco, CA | Today | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8605153002) |
@@ -129,7 +129,7 @@ Experience an advanced career journey with us! 🚀
 | Affirm | Software Engineer II, Backend (Capital Orchestration) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7749755003) |
 | Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote US | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7766277003) |
 | Affirm | Software Engineer II, Back-end (Card Mgmt & Transaction Processing) | Remote Canada | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7777094003) |
-| Affirm | Software Engineer II, Backend (Collections) | Remote Poland | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813159003) |
+| Affirm | Software Engineer II, Backend (Collections) | Remote Spain | 5 days ago | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7813157003) |
 
 **[View all 29 Backend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -169,7 +169,7 @@ Experience an advanced career journey with us! 🚀
 | TransUnion | Advisor -AI Security Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/Advisor--AI-Security-Engineer_19041664) |
 | xAI | Application Security Engineer | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4559147007) |
 
-**[View all 77 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 80 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Booz Allen Hamilton | Data Scientist, Mid | Aurora, CO | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247101) |
 | Boeing | Experienced Data Scientist | USA - Hazelwood, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Experienced-Data-Scientist_JR2026520583-1) |
 
-**[View all 203 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 204 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -215,6 +215,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Mastercard | Site Reliability Engineer II | Pune, India | Today | [Apply](https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Site-Reliability-Engineer-II_R-276576-1) |
 | Booz Allen Hamilton | Wireless Infrastructure Engineer, Junior | McLean, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/McLean-VA/Wireless-Infrstructure-Engineer--Junior_R0246947) |
 | Booz Allen Hamilton | Cybersecurity Network Engineer | Colorado Springs, CO | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Colorado-Springs-CO/Cybersecurity-Network-Engineer_R0246036) |
 | Booz Allen Hamilton | DevOps Engineer | Ashburn, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Ashburn-VA/DevOps-Engineer_R0245764) |
@@ -224,9 +225,8 @@ Experience an advanced career journey with us! 🚀
 | Leidos | Transport Network Engineer II | Shiloh, IL | Today | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Shiloh-IL/Transport-Network-Engineer-II_R-00189827) |
 | IFF | Designer II, Infrastructure | Chennai (Guindy), India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Chennai-Guindy-India/Designer-II--Infrastructure_R20974) |
 | RBC | Site Reliability Engineer | TORONTO, Ontario, Canada | Today | [Apply](https://rbc.wd3.myworkdayjobs.com/job/TORONTO-Ontario-Canada/Site-Reliability-Engineer_R-0000182658-1) |
-| TransUnion | DevOps Engineer | Bengaluru | Today | [Apply](https://transunion.wd5.myworkdayjobs.com/job/Bengaluru/DevOps-Engineer_19041715) |
 
-**[View all 153 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 157 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -234,6 +234,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| RBC | Winter 2027 Student - Strategy Analyst, Commercial Banking (4 months) | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=fa70e845ecdd9a36) |
 | Vanderbilt University | Graduate Program Coordinator | Nashville, TN, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=b3b2da23faa099aa) |
 | Airbus | Airframe Business Analyst - Electrical FIN Management | KA, IN | 4 days ago | [Apply](https://in.indeed.com/viewjob?jk=b33bd7f259c875e1) |
 | Anthropic | Offensive Hardware Security Engineer, Platform Security | San Francisco, CA / New York City, NY / Seattle, WA | 2026-08-03 | [Apply](https://job-boards.greenhouse.io/anthropic/jobs/5316565008) |
@@ -245,16 +246,16 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| RBC | Winter 2027 Student - Financial Analyst, Commercial Banking (4 months) | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=5cd8ddaaf8210a05) |
 | Goldman Sachs | 2027 / Americas / Salt Lake City / Operations / Summer Analyst | Salt Lake City, UT, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=ebe8d0eebf91753c) |
 | Goldman Sachs | 2027 / Americas / Salt Lake City / Operations / New Analyst | Salt Lake City, UT, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=8eb59fa49cd8ff29) |
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Operations / Summer Analyst | Dallas, TX, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=da856038d2c4e618) |
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Operations / New Analyst | Dallas, TX, US | 3 days ago | [Apply](https://www.indeed.com/viewjob?jk=818f7a792197e9f2) |
-| TikTok | Product Strategist Graduate (Global Monetization Product and Technology) - 2027 Start (MBA) | San Jose, CA, US | 4 days ago | [Apply](https://www.indeed.com/viewjob?jk=e7f30fbda36e3e71) |
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 6 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
 ## Hardware Engineering
 
@@ -269,9 +270,9 @@ Experience an advanced career journey with us! 🚀
 | Eversource Energy | 2027: Transmission System Planning Co-op | Westwood, MA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=a05c9e2b1fcfac15) |
 | Eversource Energy | 2027: Transmission System Planning Co-op | Manchester, NH, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3a10ab4ed9aa19c8) |
 | Eversource Energy | 2027: Transmission System Planning Co-op | Hartford, CT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0a568a252357d466) |
+| RBC | Winter 2027 Student - Client Relationship, Commercial Banking (4 months) | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=94ccd90ae1924f90) |
 | Sabre Systems | Metrology Junior Electronics Engineer | Naval Air Station Patuxent River, MD, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=6a006311d29d758e) |
 | General Dynamics Ordnance and Tactical Systems | Electrical Engineer I | Crawfordville, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=efe22b301765b83d) |
-| CACI International | Early Career NASA Space Reactor – 1 Freedom Flight Software Development Engineer | Houston, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=11d2fd4228930b3f) |
 
 **[View all 27 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -281,6 +282,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Deloitte | Indigenous (First Nation, Metis & Inuit) New Grad - Multiple Locations - Multiple Business Areas | Vancouver, BC, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f9233ea58f94673e) |
 | Citi | Wealth – Full-time Analyst, New York – USA, 2027 | New York New York United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Wealth---Full-time-Analyst--New-York---USA--2027_26986028) |
 | Citi | Wealth - LATAM, Full Time Analyst, New York - USA, 2027 | New York New York United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Wealth---LATAM--Full-Time-Analyst--New-York---USA--2027_26986025) |
 | Citi | Wealth - Full Time Analyst, Miami - USA, 2027 | Miami Florida United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/Miami-Florida-United-States/Wealth---Full-Time-Analyst--Miami---USA--2027_26986030) |
@@ -290,9 +292,8 @@ Experience an advanced career journey with us! 🚀
 | Citi | Functions - Finance, Full Time Analyst, New York - USA, 2027 | New York New York United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Functions---Finance--Full-Time-Analyst--New-York---USA--2027_26987289) |
 | Medtronic | Sales Representative I, Pain Therapies - Greenville, SC | Greenville, South Carolina, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Greenville-South-Carolina-United-States-of-America/Sales-Representative-I--Pain-Therapies---Greenville--SC_R71322-1) |
 | Medtronic | Manufacturing Engineer I - Jasksonville | Jacksonville, Florida, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Jacksonville-Florida-United-States-of-America/Manufacturing-Engineer-I---Jasksonville_R73618) |
-| Medtronic | Industrial Engineer II | Plymouth, Minnesota, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Plymouth-Minnesota-United-States-of-America/Industrial-Engineer-II_R74415-1) |
 
-**[View all 226 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 219 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -407,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-18 05:44:03 UTC*
+*Last updated: 2026-08-18 06:07:47 UTC*
