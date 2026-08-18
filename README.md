@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1785<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1772<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->990<!-- /COUNT --> |
-| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->984<!-- /COUNT --> |
+| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->9<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->77<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->78<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->201<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->51<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->151<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->50<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->150<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->26<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->217<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->212<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,785** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,772** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -92,10 +92,10 @@ Experience an advanced career journey with us! 🚀
 | Roblox | Software Engineer, Foundation AI | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8123004?gh_jid=8123004) |
 | Abnormal Security | Software Engineer II - Full Stack | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7884804003?gh_jid=7884804003) |
 | Anduril Industries | Systems Engineer | Quincy, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007) |
-| SpaceX | Security Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002) |
 | SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
+| SpaceX | Security Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002) |
 
-**[View all 990 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 984 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -103,7 +103,6 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Gartner | Software Engineer - Frontend (React + Node/NextJS + Typescript) | HR, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=5d62048549c1845b) |
 | Anduril Industries | Software Engineer, Front End | Reston, Virginia, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007) |
 | Squarespace | Software Engineer, Frontend | New York City | 2 days ago | [Apply](http://www.squarespace.com/about/careers?gh_jid=8019365) |
 | Anduril Industries | Frontend Software Engineer | Costa Mesa, California, United States | 2 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5147775007?gh_jid=5147775007) |
@@ -169,7 +168,7 @@ Experience an advanced career journey with us! 🚀
 | Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
 | Gusto | Security Engineer - Cloud and Network Security | San Francisco, CA - Hybrid | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/7833228) |
 
-**[View all 77 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 78 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -202,12 +201,12 @@ Experience an advanced career journey with us! 🚀
 | MongoDB | Associate Technical Services Engineer II | Austin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8044218) |
 | MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 | Snaphomz | Data Engineer | TS, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=05880bd5a2577d82) |
-| UST | Associate III - Production Support - Atlassian Cloud Engineer | KA, IN | 1 day ago | [Apply](https://in.indeed.com/viewjob?jk=7ff3d643a3395f5f) |
 | Canadian Cancer Society | Data Engineer | Ottawa, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=f43d5c3d49eec891) |
 | Canadian Cancer Society | Data Engineer | Halifax, NS, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=f15f740f004fefd6) |
 | Canadian Cancer Society | Data Engineer | Calgary, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=1e08fbccf917272a) |
+| Canadian Cancer Society | Data Engineer | Quebec City, QC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=ef165fcbf5efd9f1) |
 
-**[View all 51 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 50 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -226,7 +225,7 @@ Experience an advanced career journey with us! 🚀
 | xAI | Site Reliability Engineer - Data Center | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5211587007) |
 | xAI | Software Engineer - Networking Software and Services | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4946696007) |
 
-**[View all 151 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 150 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -254,8 +253,8 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 6 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
 
 ## Hardware Engineering
 
@@ -267,7 +266,7 @@ Experience an advanced career journey with us! 🚀
 | Eversource Energy | 2027: Transmission System Planning Co-op | Manchester, NH, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=3a10ab4ed9aa19c8) |
 | Eversource Energy | 2027: Transmission System Planning Co-op | Hartford, CT, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0a568a252357d466) |
 | RBC | Winter 2027 Student - Client Relationship, Commercial Banking (4 months) | Toronto, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=94ccd90ae1924f90) |
-| General Dynamics Ordnance and Tactical Systems | Electrical Engineer I | Crawfordville, FL, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=efe22b301765b83d) |
+| Leviton | Associate Embedded Firmware Engineer | Melville, NY, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=30e64661a64b889b) |
 | CACI International | Early Career NASA Space Reactor – 1 Freedom Flight Software Development Engineer | Houston, TX, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=11d2fd4228930b3f) |
 | Medtronic | Embedded Software/ Firmware R&D Engineer I | Lafayette, Colorado, United States of America | 1 day ago | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Embedded-Software--Firmware-R-D-Engineer-I_R73869-1) |
 | Northrop Grumman | Associate / Engineer Embedded Software | United States-Oklahoma-Oklahoma City | 1 day ago | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Associate---Engineer-Embedded-Software_R10245880) |
@@ -283,6 +282,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Salesforce | Associate Technical Support Engineer | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=f1890d22236b17d3) |
+| IEC Air Tools | Junior Sales Engineer (Priority) | DL, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=ddbc5ce520277897) |
 | University of Ottawa | APTPUO – Automne 2026 –EDU 5698 DA00 Stratégies d’évaluation des apprentissages en enseignement en santé | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=c3c17aa710de7444) |
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Winter 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=8b49807a69a2e9ce) |
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Peterborough, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f5e2f6c408672615) |
@@ -291,9 +291,8 @@ Experience an advanced career journey with us! 🚀
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | London, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6ce9987ad47ad438) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Kingston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=a0a7b6c0b5ba967b) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Waterloo, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=84762c6c937289c8) |
-| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=4ba7a4c2b2495a56) |
 
-**[View all 217 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 212 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +407,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-18 09:07:28 UTC*
+*Last updated: 2026-08-18 09:50:25 UTC*
