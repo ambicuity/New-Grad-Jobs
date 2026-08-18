@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 08:26:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 09:07:28 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
@@ -65,17 +65,17 @@
     </item>
     <item>
       <title>Security Software Engineer (Starlink) at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</link>
-      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</guid>
-    </item>
-    <item>
-      <title>Security Software Engineer (Starlink) at SpaceX</title>
       <link>https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</link>
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002</guid>
+    </item>
+    <item>
+      <title>Security Software Engineer (Starlink) at SpaceX</title>
+      <link>https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</link>
+      <description>New grad role at SpaceX in Bastrop, TX. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 03:23:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002</guid>
     </item>
     <item>
       <title>Product Security Engineer (Starlink) at SpaceX</title>
@@ -174,6 +174,20 @@
       <description>New grad role at Salesforce in TS, IN. Category: Other</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f1890d22236b17d3</guid>
+    </item>
+    <item>
+      <title>Modeling and Simulation Software Integration Engineer (Junior) at AeroVironment</title>
+      <link>https://www.indeed.com/viewjob?jk=7a4db5fe75efa180</link>
+      <description>New grad role at AeroVironment in Huntsville, AL, US. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7a4db5fe75efa180</guid>
+    </item>
+    <item>
+      <title>APTPUO – Automne 2026 –EDU 5698 DA00 Stratégies d’évaluation des apprentissages en enseignement en santé at University of Ottawa</title>
+      <link>https://ca.indeed.com/viewjob?jk=c3c17aa710de7444</link>
+      <description>New grad role at University of Ottawa in Ottawa, ON, CA. Category: Other</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=c3c17aa710de7444</guid>
     </item>
     <item>
       <title>Analyst, Domestic Tax [New Grad Winter 2027] at Doane Grant Thornton LLP</title>
@@ -295,13 +309,6 @@
       <guid isPermaLink="true">https://ca.indeed.com/viewjob?jk=f9233ea58f94673e</guid>
     </item>
     <item>
-      <title>Modeling and Simulation Software Integration Engineer (Junior) at AeroVironment</title>
-      <link>https://www.indeed.com/viewjob?jk=7a4db5fe75efa180</link>
-      <description>New grad role at AeroVironment in Huntsville, AL, US. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=7a4db5fe75efa180</guid>
-    </item>
-    <item>
       <title>Software Engineer - Frontend (React + Node/NextJS + Typescript) at Gartner</title>
       <link>https://in.indeed.com/viewjob?jk=5d62048549c1845b</link>
       <description>New grad role at Gartner in HR, IN. Category: Frontend Engineering</description>
@@ -349,13 +356,6 @@
       <description>New grad role at Waymo in Mountain View, CA, USA; San Francisco, CA, USA. Category: Data Science &amp; ML</description>
       <pubDate>Mon, 17 Aug 2026 23:50:33 +0000</pubDate>
       <guid isPermaLink="true">https://careers.withwaymo.com/jobs?gh_jid=8127006</guid>
-    </item>
-    <item>
-      <title>Facilities Infrastructure Engineer at SpaceX</title>
-      <link>https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002</link>
-      <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
-      <pubDate>Mon, 17 Aug 2026 23:32:56 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002</guid>
     </item>
   </channel>
 </rss>

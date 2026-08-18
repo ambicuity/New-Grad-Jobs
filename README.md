@@ -54,18 +54,18 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1789<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1785<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->992<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->990<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->77<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->202<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->201<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->51<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->152<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->151<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->26<!-- /COUNT --> |
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,789** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,785** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -92,10 +92,10 @@ Experience an advanced career journey with us! 🚀
 | Roblox | Software Engineer, Foundation AI | San Mateo, CA, United States | Today | [Apply](https://careers.roblox.com/jobs/8123004?gh_jid=8123004) |
 | Abnormal Security | Software Engineer II - Full Stack | Hybrid - Bangalore, India | Today | [Apply](https://abnormal.ai/careers/jobs/7884804003?gh_jid=7884804003) |
 | Anduril Industries | Systems Engineer | Quincy, Massachusetts, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5176746007?gh_jid=5176746007) |
-| SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
 | SpaceX | Security Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002) |
+| SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
 
-**[View all 992 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 990 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007) |
 
-**[View all 202 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 201 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -226,7 +226,7 @@ Experience an advanced career journey with us! 🚀
 | xAI | Site Reliability Engineer - Data Center | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5211587007) |
 | xAI | Software Engineer - Networking Software and Services | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4946696007) |
 
-**[View all 152 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 151 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -254,8 +254,8 @@ Experience an advanced career journey with us! 🚀
 | University of Ottawa | CUPE - Fall 2025 - TA - CMN3102-C00 | Ottawa, ON, CA | 6 days ago | [Apply](https://ca.indeed.com/viewjob?jk=6f775c6ddc883a9a) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-08-03 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2026-07-30 | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
-| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 | SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Redmond, WA | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548098002?gh_jid=8548098002) |
+| SpaceX | Customer Support Associate, Bilingual - Ukrainian (Starlink) | Bastrop, TX | 2026-07-24 | [Apply](https://boards.greenhouse.io/spacex/jobs/8548093002?gh_jid=8548093002) |
 
 ## Hardware Engineering
 
@@ -283,6 +283,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Salesforce | Associate Technical Support Engineer | TS, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=f1890d22236b17d3) |
+| University of Ottawa | APTPUO – Automne 2026 –EDU 5698 DA00 Stratégies d’évaluation des apprentissages en enseignement en santé | Ottawa, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=c3c17aa710de7444) |
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Winter 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=8b49807a69a2e9ce) |
 | Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Peterborough, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f5e2f6c408672615) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Peterborough, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=cd26a5e89e7a1244) |
@@ -291,7 +292,6 @@ Experience an advanced career journey with us! 🚀
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Kingston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=a0a7b6c0b5ba967b) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Waterloo, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=84762c6c937289c8) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=4ba7a4c2b2495a56) |
-| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Ancaster, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=ccbb6ad103f6208e) |
 
 **[View all 217 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-18 08:26:13 UTC*
+*Last updated: 2026-08-18 09:07:28 UTC*
