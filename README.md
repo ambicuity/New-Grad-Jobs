@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1796<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1785<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->995<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->990<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->80<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->204<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->77<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->202<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->51<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->154<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->151<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->27<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->213<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->215<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,796** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,785** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | SpaceX | Security Software Engineer (Starlink) | Bastrop, TX | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719865002?gh_jid=8719865002) |
 | SpaceX | Security Software Engineer (Starlink) | Hawthorne, CA | Today | [Apply](https://boards.greenhouse.io/spacex/jobs/8719860002?gh_jid=8719860002) |
 
-**[View all 995 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 990 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -169,7 +169,7 @@ Experience an advanced career journey with us! 🚀
 | Robinhood | Security Engineer, Application Security | Bellevue, WA; Menlo Park, CA | Today | [Apply](https://boards.greenhouse.io/robinhood/jobs/7918258?t=gh_src=&gh_jid=7918258) |
 | Gusto | Security Engineer - Cloud and Network Security | San Francisco, CA - Hybrid | Today | [Apply](https://job-boards.greenhouse.io/gusto/jobs/7833228) |
 
-**[View all 80 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 77 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -188,7 +188,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114652007?gh_jid=5114652007) |
 | Anduril Industries | Product Data Engineer | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5114654007?gh_jid=5114654007) |
 
-**[View all 204 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 202 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -226,7 +226,7 @@ Experience an advanced career journey with us! 🚀
 | xAI | Site Reliability Engineer - Data Center | Memphis, Tennessee; Southaven, Mississippi | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/5211587007) |
 | xAI | Software Engineer - Networking Software and Services | Palo Alto, California | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4946696007) |
 
-**[View all 154 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 151 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -282,18 +282,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Winter 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=8b49807a69a2e9ce) |
+| Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Peterborough, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f5e2f6c408672615) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Peterborough, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=cd26a5e89e7a1244) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Collingwood, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6147fb5436092903) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | London, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=6ce9987ad47ad438) |
 | Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Kingston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=a0a7b6c0b5ba967b) |
-| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Alliston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=b4c7af18c2793536) |
-| Deloitte | Indigenous (First Nation, Metis & Inuit) New Grad - Multiple Locations - Multiple Business Areas | Vancouver, BC, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=f9233ea58f94673e) |
-| Medtronic | Sales Representative I, Pain Therapies - Greenville, SC | Greenville, South Carolina, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Greenville-South-Carolina-United-States-of-America/Sales-Representative-I--Pain-Therapies---Greenville--SC_R71322-1) |
-| GE Aerospace | Repair Station Associate - 2nd shift | Jacksonville | Today | [Apply](https://geaerospace.wd5.myworkdayjobs.com/job/Jacksonville/Repair-Station-Associate---2nd-shift_R5038791-1) |
-| Precision Medicine Group | Clinical Data Associate II | Bangalore, Karnataka, India | Today | [Apply](https://job-boards.greenhouse.io/precisionmedicinegroup/jobs/6115218004) |
-| Twilio | Associate Application Engineer | Remote - India | Today | [Apply](https://job-boards.greenhouse.io/twilio/jobs/8048659) |
-| Canobi Technologies | Mechanical / Industrial Design Engineer (Entry-Level) | Maxville, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=38d07bf480ca6bdb) |
-| University of Ottawa | TA (CUPE) - GNG5301 A - Fall 2026 | Ottawa, ON, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=c755efbd884a0d89) |
-| Doane Grant Thornton LLP | Analyst, Domestic Tax [New Grad Fall 2027] | Calgary, AB, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=d08008460e552f6e) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Waterloo, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=84762c6c937289c8) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Oakville, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=4ba7a4c2b2495a56) |
+| Doane Grant Thornton LLP | Accountant, Privately Held Business Group [New Grad Fall 2027] | Ancaster, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=ccbb6ad103f6208e) |
+| Doane Grant Thornton LLP | Accountant, Assurance [New Grad Fall 2027] | Kingston, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=fcd21f338ad8df45) |
 
-**[View all 213 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 215 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-18 07:07:07 UTC*
+*Last updated: 2026-08-18 07:55:21 UTC*
