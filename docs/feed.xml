@@ -5,14 +5,63 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 00:05:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 01:51:30 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Software Engineer, Memberships I at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8610471002</link>
+      <description>New grad role at Twitch in Seattle, WA. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:14:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8610471002</guid>
+    </item>
+    <item>
+      <title>Software Engineer, Memberships I at Twitch</title>
+      <link>https://job-boards.greenhouse.io/twitch/jobs/8605153002</link>
+      <description>New grad role at Twitch in San Francisco, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:14:15 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/twitch/jobs/8605153002</guid>
+    </item>
+    <item>
+      <title>HPC Systems Engineer, Modeling &amp; Simulation at Anduril Industries</title>
+      <link>https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</link>
+      <description>New grad role at Anduril Industries in Costa Mesa, California, United States. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:07:15 +0000</pubDate>
+      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5154234007?gh_jid=5154234007</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer, Ads Optimization at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8029120</link>
+      <description>New grad role at Reddit in Remote - United States. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 18 Aug 2026 00:07:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8029120</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022942</link>
+      <description>New grad role at Reddit in Remote - The Netherlands. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:07:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022942</guid>
+    </item>
+    <item>
+      <title>Machine Learning Systems Engineer, Ads ML Platform at Reddit</title>
+      <link>https://job-boards.greenhouse.io/reddit/jobs/8022937</link>
+      <description>New grad role at Reddit in Remote - United Kingdom. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:07:08 +0000</pubDate>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
+    </item>
     <item>
       <title>Software Engineer - Frontend (React + Node/NextJS + Typescript) at Gartner</title>
       <link>https://in.indeed.com/viewjob?jk=5d62048549c1845b</link>
       <description>New grad role at Gartner in HR, IN. Category: Frontend Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=5d62048549c1845b</guid>
+    </item>
+    <item>
+      <title>Admissions Representative - South Campus at Southern Careers Institute</title>
+      <link>https://www.indeed.com/viewjob?jk=dc5d8951e882f010</link>
+      <description>New grad role at Southern Careers Institute in San Antonio, TX, US. Category: Other</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.indeed.com/viewjob?jk=dc5d8951e882f010</guid>
     </item>
     <item>
       <title>Software engineer at Mastercard</title>
@@ -34,6 +83,13 @@
       <description>New grad role at Mastercard in Pune, India. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-II_R-282373-1</guid>
+    </item>
+    <item>
+      <title>AI Systems Software Engineer - Neuromorphic Computing at Intel</title>
+      <link>https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/AI-Systems-Software-Engineer---Neuromorphic-Computing_JR0286514</link>
+      <description>New grad role at Intel in US, Oregon, Hillsboro. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/AI-Systems-Software-Engineer---Neuromorphic-Computing_JR0286514</guid>
     </item>
     <item>
       <title>Software Systems Engineer at HP</title>
@@ -253,13 +309,6 @@
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Engineer--Mid_R0247098</guid>
     </item>
     <item>
-      <title>Data Scientist at CVS Health</title>
-      <link>https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R1011940</link>
-      <description>New grad role at CVS Health in NY - New York. Category: Data Science &amp; ML</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://cvshealth.wd1.myworkdayjobs.com/job/NY---New-York/Data-Scientist_R1011940</guid>
-    </item>
-    <item>
       <title>Embedded Software/ Firmware R&amp;D Engineer I at Medtronic</title>
       <link>https://medtronic.wd1.myworkdayjobs.com/job/Lafayette-Colorado-United-States-of-America/Embedded-Software--Firmware-R-D-Engineer-I_R73869-1</link>
       <description>New grad role at Medtronic in Lafayette, Colorado, United States of America. Category: Hardware Engineering</description>
@@ -281,11 +330,18 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Plymouth-Minnesota-United-States-of-America/Industrial-Engineer-II_R74415-1</guid>
     </item>
     <item>
-      <title>James Inventory Analyst - Minneapolis, MN - 2027 Start Date at Target</title>
-      <link>https://target.wd5.myworkdayjobs.com/job/1000-Nicollet-Mall-MinneapolisMN-55403-2542/James-Inventory-Analyst---Minneapolis--MN---2027-Start-Date_R0000449780</link>
-      <description>New grad role at Target in 1000 Nicollet Mall, Minneapolis,MN 55403-2542. Category: Other</description>
+      <title>Cyber Systems Engineer - Level 3 - Space AHT at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Cyber-Systems-Engineer---Level-3---Space-AHT_R10246145</link>
+      <description>New grad role at Northrop Grumman in United States-Alabama-Huntsville. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://target.wd5.myworkdayjobs.com/job/1000-Nicollet-Mall-MinneapolisMN-55403-2542/James-Inventory-Analyst---Minneapolis--MN---2027-Start-Date_R0000449780</guid>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Cyber-Systems-Engineer---Level-3---Space-AHT_R10246145</guid>
+    </item>
+    <item>
+      <title>Network Engineer - Level 2 - Space AHT at Northrop Grumman</title>
+      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Layton/Network-Engineer---Level-2---Space-AHT_R10246142</link>
+      <description>New grad role at Northrop Grumman in United States-Utah-Layton. Category: Infrastructure &amp; SRE</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Utah-Layton/Network-Engineer---Level-2---Space-AHT_R10246142</guid>
     </item>
     <item>
       <title>Sentinel - Modeling Simulation &amp; Analysis Systems Engineer- *19200 at Northrop Grumman</title>
@@ -300,62 +356,6 @@
       <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/R10245685-AI-Software-Engineer-Level-3-or-4--AHT-_R10246115</guid>
-    </item>
-    <item>
-      <title>Associate / Engineer Embedded Software at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Associate---Engineer-Embedded-Software_R10245880</link>
-      <description>New grad role at Northrop Grumman in United States-Oklahoma-Oklahoma City. Category: Hardware Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Oklahoma-Oklahoma-City/Associate---Engineer-Embedded-Software_R10245880</guid>
-    </item>
-    <item>
-      <title>Systems Engineer - Level 3 or 4 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Systems-Engineer---Level-3-or-4--AHT-_R10245837</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Systems-Engineer---Level-3-or-4--AHT-_R10245837</guid>
-    </item>
-    <item>
-      <title>Associate Engineer Software Quality at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-New-York-Buffalo/Associate-Engineer-Software-Quality_R10241062</link>
-      <description>New grad role at Northrop Grumman in United States-New York-Buffalo. Category: Other</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-New-York-Buffalo/Associate-Engineer-Software-Quality_R10241062</guid>
-    </item>
-    <item>
-      <title>Project / Systems Engineer - Level 3 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Project---Systems-Engineer---Level-3_R10246052</link>
-      <description>New grad role at Northrop Grumman in United States-Alabama-Huntsville. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Alabama-Huntsville/Project---Systems-Engineer---Level-3_R10246052</guid>
-    </item>
-    <item>
-      <title>Cyber Systems Engineer (S) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Annapolis-Junction/Cyber-Systems-Engineer--S-_R10246054</link>
-      <description>New grad role at Northrop Grumman in United States-Maryland-Annapolis Junction. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Annapolis-Junction/Cyber-Systems-Engineer--S-_R10246054</guid>
-    </item>
-    <item>
-      <title>Cyber Systems Engineer (S) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Annapolis-Junction/Cyber-Systems-Engineer--S-_R10246053</link>
-      <description>New grad role at Northrop Grumman in United States-Maryland-Annapolis Junction. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Annapolis-Junction/Cyber-Systems-Engineer--S-_R10246053</guid>
-    </item>
-    <item>
-      <title>Cyber Systems Engineer - Level 3 or 4 (AHT) at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Cyber-Systems-Engineer---Level-3-or-4--AHT-_R10246027</link>
-      <description>New grad role at Northrop Grumman in United States-Colorado-Aurora. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-Colorado-Aurora/Cyber-Systems-Engineer---Level-3-or-4--AHT-_R10246027</guid>
-    </item>
-    <item>
-      <title>Electrical Engineer - Level 2 at Northrop Grumman</title>
-      <link>https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electrical-Engineer---Level-2_R10245999-1</link>
-      <description>New grad role at Northrop Grumman in United States-California-Redondo Beach. Category: Hardware Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Redondo-Beach/Electrical-Engineer---Level-2_R10245999-1</guid>
     </item>
   </channel>
 </rss>
