@@ -2,34 +2,33 @@
   "outlook": "bullish",
   "predictions": {
     "7_days": {
-      "total_jobs": 1785,
-      "change_percent": 0.67
+      "total_jobs": 1795,
+      "change_percent": 0.96
     },
     "30_days": {
-      "total_jobs": 1820,
-      "change_percent": 2.65
+      "total_jobs": 1845,
+      "change_percent": 3.77
     }
   },
   "growing_categories": [
-    "backend",
-    "infrastructure_sre",
-    "software_engineering"
+    "security",
+    "data_ml",
+    "hardware"
   ],
   "declining_categories": [
-    "data_ml",
-    "data_engineering",
-    "none"
+    "software_engineering",
+    "backend"
   ],
   "confidence": 75,
   "insights": [
-    "The market experienced a significant structural shift around day 25, moving from a ~1450 baseline to a ~1770 baseline, indicating a potential seasonal hiring surge or a major influx of new graduate roles.",
-    "Growth is currently led by non-FAANG/non-unicorn companies, suggesting that mid-market and smaller firms are driving the recent expansion in new graduate opportunities.",
-    "While the total volume has stabilized at this higher level, the slight cooling in Data/ML roles suggests that hiring demand is shifting back toward core engineering and infrastructure foundations."
+    "The market experienced a significant structural shift in the last week, jumping from a ~1480 baseline to a new ~1770 plateau, indicating a surge in new graduate hiring initiatives.",
+    "While general software engineering roles are showing slight stagnation, specialized fields like security and data/ML are demonstrating consistent growth, suggesting a pivot toward high-skill demand.",
+    "The sustained gap between the 7-day average (1766) and the 30-day average (1539) confirms that the current momentum is a recent, strong trend rather than a temporary fluctuation."
   ],
-  "generated_at": "2026-08-17T00:32:43.920582+00:00",
+  "generated_at": "2026-08-18T00:05:47.866175+00:00",
   "data_points": 91,
   "date_range": {
-    "start": "2026-05-19",
-    "end": "2026-08-17"
+    "start": "2026-05-20",
+    "end": "2026-08-18"
   }
 }
