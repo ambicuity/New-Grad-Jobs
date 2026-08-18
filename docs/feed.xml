@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 07:55:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 08:26:13 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Software Engineer, Data Engineering at Roblox</title>
@@ -169,6 +169,13 @@
       <guid isPermaLink="true">https://job-boards.greenhouse.io/reddit/jobs/8022937</guid>
     </item>
     <item>
+      <title>Associate Technical Support Engineer at Salesforce</title>
+      <link>https://in.indeed.com/viewjob?jk=f1890d22236b17d3</link>
+      <description>New grad role at Salesforce in TS, IN. Category: Other</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://in.indeed.com/viewjob?jk=f1890d22236b17d3</guid>
+    </item>
+    <item>
       <title>Analyst, Domestic Tax [New Grad Winter 2027] at Doane Grant Thornton LLP</title>
       <link>https://ca.indeed.com/viewjob?jk=8b49807a69a2e9ce</link>
       <description>New grad role at Doane Grant Thornton LLP in Oakville, ON, CA. Category: Other</description>
@@ -316,6 +323,13 @@
       <guid isPermaLink="true">https://medtronic.wd1.myworkdayjobs.com/job/Greenville-South-Carolina-United-States-of-America/Sales-Representative-I--Pain-Therapies---Greenville--SC_R71322-1</guid>
     </item>
     <item>
+      <title>Experienced Software Engineer – Vehicle Management Systems at Boeing</title>
+      <link>https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Experienced-Software-Engineer---Vehicle-Management-Systems_JR2026516293-1</link>
+      <description>New grad role at Boeing in USA - Seal Beach, CA. Category: Software Engineering</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://boeing.wd1.myworkdayjobs.com/job/USA---Seal-Beach-CA/Experienced-Software-Engineer---Vehicle-Management-Systems_JR2026516293-1</guid>
+    </item>
+    <item>
       <title>Junior Cloud Platform Engineer - Systems Administrator at Leidos</title>
       <link>https://leidos.wd5.myworkdayjobs.com/job/Scoresby-Victoria-Australia/Cloud-Platform-Engineer---Systems-Administrator_R-00184313-1</link>
       <description>New grad role at Leidos in Scoresby, Victoria, Australia. Category: Software Engineering</description>
@@ -342,20 +356,6 @@
       <description>New grad role at SpaceX in Hawthorne, CA. Category: Infrastructure &amp; SRE</description>
       <pubDate>Mon, 17 Aug 2026 23:32:56 +0000</pubDate>
       <guid isPermaLink="true">https://boards.greenhouse.io/spacex/jobs/8381785002?gh_jid=8381785002</guid>
-    </item>
-    <item>
-      <title>Embedded Software Engineer, Manufacturing Test, Intelligence Systems at Anduril Industries</title>
-      <link>https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</link>
-      <description>New grad role at Anduril Industries in Santa Ana, California, United States. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 23:04:42 +0000</pubDate>
-      <guid isPermaLink="true">https://boards.greenhouse.io/andurilindustries/jobs/5212828007?gh_jid=5212828007</guid>
-    </item>
-    <item>
-      <title>AI Infrastructure Engineer, Sandbox Platform at Scale AI</title>
-      <link>https://job-boards.greenhouse.io/scaleai/jobs/4716453005</link>
-      <description>New grad role at Scale AI in San Francisco, CA; Seattle, WA; New York, NY. Category: Software Engineering</description>
-      <pubDate>Mon, 17 Aug 2026 22:07:53 +0000</pubDate>
-      <guid isPermaLink="true">https://job-boards.greenhouse.io/scaleai/jobs/4716453005</guid>
     </item>
   </channel>
 </rss>
