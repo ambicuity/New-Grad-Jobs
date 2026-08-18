@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T05:04:53.516989+00:00",
+    "last_updated": "2026-08-18T05:44:03.529016+00:00",
     "total_snapshots": 91,
     "date_range": {
       "start": "2026-05-20",
@@ -5829,15 +5829,15 @@
     },
     {
       "date": "2026-08-18",
-      "total_jobs": 1802,
+      "total_jobs": 1803,
       "categories": {
-        "software_engineering": 993,
+        "software_engineering": 994,
         "security": 77,
-        "data_ml": 202,
+        "data_ml": 203,
         "frontend": 10,
         "other": 226,
         "infrastructure_sre": 153,
-        "data_engineering": 53,
+        "data_engineering": 52,
         "hardware": 27,
         "product_management": 4,
         "quant_finance": 10,
@@ -5845,9 +5845,9 @@
         "mobile": 18
       },
       "tiers": {
-        "other": 933,
+        "other": 931,
         "unicorn": 679,
-        "faang_plus": 190
+        "faang_plus": 193
       },
       "top_companies": [
         {
@@ -5880,7 +5880,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 27
+          "jobs": 28
         },
         {
           "company": "Booz Allen Hamilton",
@@ -5891,9 +5891,9 @@
           "jobs": 24
         }
       ],
-      "unique_companies": 289,
-      "avg_jobs_per_company": 6.24,
-      "timestamp": "2026-08-18T05:04:53.515842+00:00"
+      "unique_companies": 287,
+      "avg_jobs_per_company": 6.28,
+      "timestamp": "2026-08-18T05:44:03.526486+00:00"
     }
   ]
 }

@@ -54,17 +54,17 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1802<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1803<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->993<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->994<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->10<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->29<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->18<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->77<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->202<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->53<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->203<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->52<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->153<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,802** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,803** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Reddit | Machine Learning Systems Engineer, Ads ML Platform | Remote - United Kingdom | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8022937) |
 | Flint Hills Resources | Fall 2026 - Software Engineer Co-Op | Wichita, KS, US | Today | [Apply](https://www.indeed.com/viewjob?jk=032136ce0dbd67bf) |
 
-**[View all 993 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 994 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -178,6 +178,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Reddit | Machine Learning Engineer, Ads Optimization | Remote - United States | Today | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8029120) |
+| HP | Machine Learning Engineer 2 | Bengaluru, Karnataka, India | Today | [Apply](https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Machine-Learning-Engineer-2_UNI3326-1) |
 | Booz Allen Hamilton | Data Scientist, Mid | Jacksonville, NC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Jacksonville-NC/Data-Scientist--Mid_R0247175) |
 | Booz Allen Hamilton | AI/ML Engineer | Dayton, OH | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Dayton-OH/AI-ML-Engineer_R0246722-1) |
 | Booz Allen Hamilton | Data Scientist | Ashburn, VA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Ashburn-VA/Data-Scientist_R0245759) |
@@ -186,9 +187,8 @@ Experience an advanced career journey with us! 🚀
 | Booz Allen Hamilton | Data Scientist, Mid | Aurora, CO | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247100) |
 | Booz Allen Hamilton | Data Scientist, Mid | Aurora, CO | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Aurora-CO/Data-Scientist--Mid_R0247101) |
 | Boeing | Experienced Data Scientist | USA - Hazelwood, MO | Today | [Apply](https://boeing.wd1.myworkdayjobs.com/job/USA---Hazelwood-MO/Experienced-Data-Scientist_JR2026520583-1) |
-| IFF | Specialist II, Data Scientist | Hyderabad GBS, India | Today | [Apply](https://iff.wd5.myworkdayjobs.com/job/Hyderabad-GBS-India/Specialist-II--Data-Scientist_R20969) |
 
-**[View all 202 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 203 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -207,7 +207,7 @@ Experience an advanced career journey with us! 🚀
 | MongoDB | Associate Technical Services Engineer II | Austin | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=8044218) |
 | MongoDB | Site Reliability Engineer 3 | New York City | Today | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7821316) |
 
-**[View all 53 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 52 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -288,9 +288,9 @@ Experience an advanced career journey with us! 🚀
 | Citi | Wealth - LATAM Full Time Analyst, Miami- USA, 2027 | Miami Florida United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/Miami-Florida-United-States/Wealth---LATAM-Full-Time-Analyst--Miami--USA--2027_26985286) |
 | Citi | Functions - Finance, Full Time Analyst, Tampa - USA, 2027 | Tampa Florida United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/Tampa-Florida-United-States/Functions---Finance--Full-Time-Analyst--Tampa---USA--2027_26987293) |
 | Citi | Functions - Finance, Full Time Analyst, New York - USA, 2027 | New York New York United States | Today | [Apply](https://citi.wd5.myworkdayjobs.com/job/New-York-New-York-United-States/Functions---Finance--Full-Time-Analyst--New-York---USA--2027_26987289) |
+| Medtronic | Sales Representative I, Pain Therapies - Greenville, SC | Greenville, South Carolina, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Greenville-South-Carolina-United-States-of-America/Sales-Representative-I--Pain-Therapies---Greenville--SC_R71322-1) |
 | Medtronic | Manufacturing Engineer I - Jasksonville | Jacksonville, Florida, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Jacksonville-Florida-United-States-of-America/Manufacturing-Engineer-I---Jasksonville_R73618) |
 | Medtronic | Industrial Engineer II | Plymouth, Minnesota, United States of America | Today | [Apply](https://medtronic.wd1.myworkdayjobs.com/job/Plymouth-Minnesota-United-States-of-America/Industrial-Engineer-II_R74415-1) |
-| Northrop Grumman | Associate Engineer Software Quality | United States-New York-Buffalo | Today | [Apply](https://ngc.wd1.myworkdayjobs.com/job/United-States-New-York-Buffalo/Associate-Engineer-Software-Quality_R10241062) |
 
 **[View all 226 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -407,4 +407,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-08-18 05:04:53 UTC*
+*Last updated: 2026-08-18 05:44:03 UTC*

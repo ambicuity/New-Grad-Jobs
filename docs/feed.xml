@@ -5,7 +5,7 @@
     <link>https://ambicuity.github.io/New-Grad-Jobs/</link>
     <description>Automatically updated new graduate job opportunities in Software, Data, and SRE roles.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2026 05:04:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 05:44:03 +0000</lastBuildDate>
     <atom:link href="https://ambicuity.github.io/New-Grad-Jobs/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Systems Engineer at Anduril Industries</title>
@@ -160,6 +160,13 @@
       <description>New grad role at Intel in US, Oregon, Hillsboro. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://intel.wd1.myworkdayjobs.com/job/US-Oregon-Hillsboro/AI-Systems-Software-Engineer---Neuromorphic-Computing_JR0286514</guid>
+    </item>
+    <item>
+      <title>Machine Learning Engineer 2 at HP</title>
+      <link>https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Machine-Learning-Engineer-2_UNI3326-1</link>
+      <description>New grad role at HP in Bengaluru, Karnataka, India. Category: Data Science &amp; ML</description>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://hp.wd5.myworkdayjobs.com/job/Bengaluru-Karnataka-India/Machine-Learning-Engineer-2_UNI3326-1</guid>
     </item>
     <item>
       <title>Software Systems Engineer at HP</title>
@@ -349,13 +356,6 @@
       <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Software Engineering</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246953</guid>
-    </item>
-    <item>
-      <title>Full Stack Software Engineer at Booz Allen Hamilton</title>
-      <link>https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246949</link>
-      <description>New grad role at Booz Allen Hamilton in Washington, DC. Category: Software Engineering</description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://bah.wd1.myworkdayjobs.com/job/Washington-DC/Full-Stack-Software-Engineer_R0246949</guid>
     </item>
   </channel>
 </rss>
