@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-24T19:09:39.073182+00:00",
+    "last_updated": "2026-09-24T22:44:53.218133+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-26",
@@ -3606,71 +3606,71 @@
     },
     {
       "date": "2026-09-24",
-      "total_jobs": 2075,
+      "total_jobs": 2082,
       "categories": {
         "security": 68,
-        "software_engineering": 943,
-        "data_ml": 140,
-        "frontend": 18,
+        "software_engineering": 950,
+        "data_ml": 141,
+        "frontend": 17,
         "backend": 16,
-        "hardware": 90,
-        "infrastructure_sre": 193,
-        "data_engineering": 49,
+        "hardware": 88,
+        "infrastructure_sre": 191,
+        "data_engineering": 50,
         "mobile": 7,
-        "other": 538,
+        "other": 543,
         "product_management": 3,
-        "quant_finance": 10
+        "quant_finance": 8
       },
       "tiers": {
-        "other": 994,
-        "unicorn": 502,
-        "faang_plus": 579
+        "other": 981,
+        "unicorn": 511,
+        "faang_plus": 590
       },
       "top_companies": [
         {
           "company": "Raytheon",
-          "jobs": 177
+          "jobs": 200
         },
         {
           "company": "SpaceX",
-          "jobs": 146
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 108
+          "jobs": 145
         },
         {
           "company": "Anduril Industries",
-          "jobs": 99
+          "jobs": 107
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 102
         },
         {
           "company": "Accenture",
-          "jobs": 96
+          "jobs": 95
         },
         {
           "company": "Leidos",
-          "jobs": 81
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 66
+          "jobs": 80
         },
         {
           "company": "Boeing",
-          "jobs": 66
+          "jobs": 68
         },
         {
-          "company": "CACI",
-          "jobs": 66
+          "company": "Booz Allen Hamilton",
+          "jobs": 64
         },
         {
           "company": "General Dynamics",
           "jobs": 64
+        },
+        {
+          "company": "CACI",
+          "jobs": 62
         }
       ],
       "unique_companies": 293,
-      "avg_jobs_per_company": 7.08,
-      "timestamp": "2026-09-24T19:09:39.073182+00:00"
+      "avg_jobs_per_company": 7.11,
+      "timestamp": "2026-09-24T22:44:53.218133+00:00"
     }
   ]
 }
