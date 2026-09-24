@@ -12,6 +12,8 @@ export function StatsStrip({ stats, isMobile }) {
     <div
       role="region"
       aria-label="Feed statistics"
+      // Scrolls sideways on phones, so keyboard users must be able to focus it (WCAG 2.1.1).
+      tabIndex={isMobile ? 0 : undefined}
       style={{
         display: 'flex', alignItems: 'center', borderBottom: `1px solid ${BBG.rule2}`,
         padding: '10px 14px', gap: isMobile ? 14 : 18,

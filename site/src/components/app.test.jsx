@@ -154,6 +154,19 @@ describe('hiring view (desktop)', () => {
     await vi.waitFor(() => expect(screen.getByTestId('job-description').textContent).not.toMatch(/unavailable|loading/));
   });
 
+  it('the row star is a mouse shortcut, not a control nested in the option (axe nested-interactive)', () => {
+    renderApp();
+    const row = selectedRow();
+    expect(row.querySelector('button, a[href], input, [tabindex]')).toBeNull();
+    const star = row.lastElementChild;
+    expect(star.getAttribute('aria-hidden')).toBe('true');
+    expect(star.textContent).toBe('☆');
+    fireEvent.click(star);
+    expect(JSON.parse(window.localStorage.getItem(SAVED_STORAGE_KEY))).toEqual([row.dataset.jobId]);
+    // The click saved without also re-selecting a different row.
+    expect(selectedRow().dataset.jobId).toBe(row.dataset.jobId);
+  });
+
   it('APPLY is a real new-tab link with a safe http(s) href', () => {
     renderApp();
     const apply = screen.getByRole('link', { name: /APPLY/ });
@@ -323,6 +336,11 @@ describe('mobile', () => {
     expect(dialog.getAttribute('aria-modal')).toBe('true');
     expect(params().get('job')).toBe(open.dataset.jobId);
     expect(window.history.state).toEqual({ ngjDetail: true });
+  });
+
+  it('the horizontally scrolling stats strip is keyboard-focusable (axe scrollable-region-focusable)', () => {
+    renderApp();
+    expect(screen.getByRole('region', { name: 'Feed statistics' }).getAttribute('tabindex')).toBe('0');
   });
 
   it('the browser back button closes the detail', () => {

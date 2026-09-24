@@ -86,6 +86,16 @@ describe('ContributorsView', () => {
     expect(screen.getByText('TOP BY COMMITS').parentElement.textContent).toMatch(/1@/);
   });
 
+  it('TOP BY COMMITS rows meet the 24px target size (WCAG 2.5.8)', async () => {
+    const gh = buildGhPayload({}, raw.map((c, i) => ({ login: c.login, contributions: 10 - i })), null, null);
+    renderView(gh);
+    await screen.findByText(/SHOWN:/);
+    const board = screen.getByText('TOP BY COMMITS').parentElement;
+    const buttons = [...board.querySelectorAll('button')];
+    expect(buttons.length).toBeGreaterThan(0);
+    buttons.forEach((b) => expect(parseFloat(b.style.minHeight)).toBeGreaterThanOrEqual(24));
+  });
+
   it('sponsor link only for handles with GitHub Sponsors; profile is a real link', async () => {
     renderView(null);
     await screen.findByText(/SHOWN:/);

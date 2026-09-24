@@ -47,26 +47,38 @@ function MetaLine({ j }) {
   );
 }
 
-function StarButton({ isSaved, onToggle, big, focusable, co }) {
+const starStyle = (isSaved, big) => ({
+  background: 'transparent', border: 'none', cursor: 'pointer', padding: 0,
+  minWidth: big ? 44 : MIN_TARGET, minHeight: big ? 44 : MIN_TARGET,
+  color: isSaved ? BBG.acc : BBG.dim, fontFamily: 'inherit', fontSize: big ? 18 : 14, lineHeight: 1,
+});
+
+/** Save toggle on a mobile card: a real, focusable button. */
+function StarButton({ isSaved, onToggle, co }) {
   return (
     <button
       type="button"
-      onClick={(e) => { e.stopPropagation(); onToggle(); }}
-      // Keep focus on the listbox when the (unfocusable) row star is clicked.
-      onMouseDown={focusable ? undefined : (e) => e.preventDefault()}
-      // Inside a listbox option the star is a mouse shortcut only (options
-      // can't contain interactive children); keyboard users press S or use
-      // the SAVE button in the detail pane.
-      tabIndex={focusable ? 0 : -1}
-      aria-hidden={focusable ? undefined : 'true'}
-      aria-label={focusable ? `${isSaved ? 'Remove' : 'Save'} ${co} job` : undefined}
-      aria-pressed={focusable ? isSaved : undefined}
-      style={{
-        background: 'transparent', border: 'none', cursor: 'pointer', padding: 0,
-        minWidth: big ? 44 : MIN_TARGET, minHeight: big ? 44 : MIN_TARGET,
-        color: isSaved ? BBG.acc : BBG.dim, fontFamily: 'inherit', fontSize: big ? 18 : 14, lineHeight: 1,
-      }}
+      onClick={onToggle}
+      aria-label={`${isSaved ? 'Remove' : 'Save'} ${co} job`}
+      aria-pressed={isSaved}
+      style={starStyle(isSaved, true)}
     >{isSaved ? '★' : '☆'}</button>
+  );
+}
+
+/**
+ * Star inside a desktop listbox option: a mouse shortcut only. An option
+ * can't contain interactive children (not even tabindex=-1 buttons), so it is
+ * a plain hidden span; keyboard users press S or use SAVE in the detail pane.
+ * Clicking it leaves focus on the listbox (its nearest focusable ancestor).
+ */
+function RowStar({ isSaved, onToggle }) {
+  return (
+    <span
+      aria-hidden="true"
+      onClick={(e) => { e.stopPropagation(); onToggle(); }}
+      style={{ ...starStyle(isSaved, false), display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+    >{isSaved ? '★' : '☆'}</span>
   );
 }
 
@@ -105,7 +117,7 @@ export const JobRow = memo(function JobRow({
       <span style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{j.loc}</span>
       <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim, fontSize: 11.5 }}>{fmtComp(j.comp)}</span>
       <span style={{ color: BBG.dim, fontSize: 11 }}>{j.posted}</span>
-      <StarButton isSaved={isSaved} onToggle={() => onToggleSave(j.id)} co={j.co} />
+      <RowStar isSaved={isSaved} onToggle={() => onToggleSave(j.id)} />
     </div>
   );
 });
@@ -143,7 +155,7 @@ export const JobCard = memo(function JobCard({ job: j, index, isSaved, onOpen, o
         </span>
       </button>
       <div style={{ position: 'absolute', top: 4, right: 6 }}>
-        <StarButton isSaved={isSaved} onToggle={() => onToggleSave(j.id)} big focusable co={j.co} />
+        <StarButton isSaved={isSaved} onToggle={() => onToggleSave(j.id)} co={j.co} />
       </div>
     </div>
   );

@@ -20,7 +20,8 @@ const JOB_PAGE_CSS = [
   'a{color:#ff9d3d}',
   'a:focus-visible{outline:1px solid #ff9d3d;outline-offset:2px}',
   '.crumb{font-size:12px;color:#8a8a8a;letter-spacing:.6px;margin-bottom:18px}',
-  '.crumb a{color:#ff9d3d;text-decoration:none}',
+  // Underlined: inside a text line a link must not be told apart by colour alone (WCAG 1.4.1).
+  '.crumb a{color:#ff9d3d}',
   'h1{font-size:22px;line-height:1.3;margin:0 0 6px;color:#fff}',
   '.co{color:#ff9d3d;font-weight:700;letter-spacing:.4px}',
   'dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:16px 0;padding:12px 14px;border:1px solid #2a2a2a;background:#0a0a0a;font-size:13px}',
