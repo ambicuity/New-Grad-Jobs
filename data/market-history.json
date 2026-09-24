@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-24T15:37:03.319557+00:00",
+    "last_updated": "2026-09-24T18:19:42.618996+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-26",
@@ -3606,71 +3606,71 @@
     },
     {
       "date": "2026-09-24",
-      "total_jobs": 1871,
+      "total_jobs": 2065,
       "categories": {
-        "software_engineering": 1030,
-        "data_ml": 213,
-        "infrastructure_sre": 176,
-        "data_engineering": 42,
-        "security": 95,
-        "other": 225,
-        "frontend": 14,
-        "backend": 28,
-        "hardware": 27,
-        "quant_finance": 10,
-        "mobile": 9,
-        "product_management": 2
+        "security": 66,
+        "software_engineering": 930,
+        "data_ml": 141,
+        "frontend": 18,
+        "backend": 16,
+        "hardware": 89,
+        "infrastructure_sre": 190,
+        "data_engineering": 49,
+        "mobile": 7,
+        "other": 546,
+        "product_management": 3,
+        "quant_finance": 10
       },
       "tiers": {
-        "unicorn": 734,
-        "other": 943,
-        "faang_plus": 194
+        "other": 995,
+        "unicorn": 504,
+        "faang_plus": 566
       },
       "top_companies": [
         {
+          "company": "Raytheon",
+          "jobs": 187
+        },
+        {
           "company": "SpaceX",
-          "jobs": 278
+          "jobs": 146
         },
         {
           "company": "Anduril Industries",
-          "jobs": 225
+          "jobs": 99
         },
         {
-          "company": "OpenAI",
-          "jobs": 56
-        },
-        {
-          "company": "xAI",
-          "jobs": 38
-        },
-        {
-          "company": "Point72",
-          "jobs": 37
+          "company": "Accenture",
+          "jobs": 96
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 36
-        },
-        {
-          "company": "Anthropic",
-          "jobs": 33
+          "jobs": 85
         },
         {
           "company": "Leidos",
-          "jobs": 30
+          "jobs": 77
+        },
+        {
+          "company": "CACI",
+          "jobs": 67
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 65
         },
         {
           "company": "Boeing",
-          "jobs": 29
+          "jobs": 65
         },
         {
-          "company": "Lyft",
-          "jobs": 29
+          "company": "General Dynamics",
+          "jobs": 64
         }
       ],
-      "unique_companies": 293,
-      "avg_jobs_per_company": 6.39,
-      "timestamp": "2026-09-24T15:37:03.318603+00:00"
+      "unique_companies": 292,
+      "avg_jobs_per_company": 7.07,
+      "timestamp": "2026-09-24T18:19:42.618996+00:00"
     }
   ]
 }
