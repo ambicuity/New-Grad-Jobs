@@ -576,21 +576,19 @@ class TestFilterJobsConfigVariations:
         result = filter_jobs(jobs, config)
         assert len(result) == 1, "Should work with 'filters' key"
 
-    def test_missing_filtering_key_uses_defaults(self):
-        """If 'filtering' key is missing entirely, should use default exclusion signals."""
-        config = {}
+    def test_missing_filtering_key_raises_keyerror(self):
+        """A config with no 'filtering'/'filters' block is invalid: new_grad_signals is required.
+
+        Pins current behavior explicitly instead of swallowing the error, so a
+        silent change (e.g. crashing differently, or quietly passing everything)
+        is caught.
+        """
         jobs = [
-            _make_job(title="New Grad Software Engineer"),  # Should pass
-            _make_job(title="Senior New Grad"),  # Should fail - 'senior' in defaults
+            _make_job(title="New Grad Software Engineer"),
+            _make_job(title="Senior New Grad"),
         ]
-        # This will likely fail since new_grad_signals is required, but let's test exclusion defaults
-        try:
-            result = filter_jobs(jobs, config)
-            # If it doesn't crash, verify senior is still excluded
-            assert all('senior' not in job['title'].lower() for job in result)
-        except (KeyError, AttributeError):
-            # Expected if config is incomplete
-            pass
+        with pytest.raises(KeyError, match="new_grad_signals"):
+            filter_jobs(jobs, {})
 
 
 class TestFilterJobsEdgeCases:

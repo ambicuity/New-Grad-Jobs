@@ -2,26 +2,27 @@
     "name": "New Grad Jobs",
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "features": {
-        "ghcr.io/devcontainers/features/github-cli:1": {}
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "22"
+        }
     },
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "ms-python.black-formatter",
-                "ms-python.flake8",
+                "ms-python.mypy-type-checker",
                 "charliermarsh.ruff",
                 "tamasfe.even-better-toml",
                 "esbenp.prettier-vscode"
             ],
             "settings": {
-                "python.defaultInterpreterPath": "/usr/local/bin/python",
-                "python.formatting.provider": "black",
-                "editor.formatOnSave": true
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
+                "editor.formatOnSave": false
             }
         }
     },
-    "postCreateCommand": "pip install -r requirements.txt && pip install -r tests/requirements.txt && pre-commit install",
+    "postCreateCommand": "make setup",
     "remoteUser": "vscode"
 }
