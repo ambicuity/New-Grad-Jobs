@@ -1,7 +1,7 @@
 {
   "name": "new-grad-jobs-site",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NGJ terminal job board (Vite + React) served at jobs.riteshrana.engineer",
   "type": "module",
   "engines": {
