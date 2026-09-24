@@ -4,7 +4,7 @@ Unit tests for generate_rss_feed() in scripts/ngj/outputs/rss.py.
 
 Covers:
   - Valid XML output
-  - Correct item count (max 50)
+  - Correct item count (default max 200)
   - Required RSS elements present
   - XML-unsafe characters are escaped
 """
@@ -17,7 +17,9 @@ from xml.etree import ElementTree as ET
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from ngj.outputs.rss import generate_rss_feed  # noqa: E402
+from ngj.outputs.rss import DEFAULT_MAX_ITEMS, generate_rss_feed, render_rss_feed  # noqa: E402
+
+ATOM = '{http://www.w3.org/2005/Atom}'
 
 
 def _make_jobs(count=5):
@@ -146,3 +148,63 @@ def test_generate_rss_feed_does_not_reorder_callers_list():
         before = [job['url'] for job in jobs]
         generate_rss_feed(jobs, tmpdir)
         assert [job['url'] for job in jobs] == before
+
+
+def _parse(xml: str):
+    return ET.fromstring(xml.encode('utf-8'))
+
+
+def test_default_cap_is_200():
+    assert DEFAULT_MAX_ITEMS == 200
+    jobs = [{'job_id': f'job_{i:020x}', 'title': 'T', 'first_seen': '2026-09-01T00:00:00Z'} for i in range(250)]
+    assert len(_parse(render_rss_feed(jobs)).findall('.//item')) == 200
+
+
+def test_channel_links_point_at_the_custom_domain():
+    channel = _parse(render_rss_feed([])).find('channel')
+    assert channel.find('link').text == 'https://jobs.riteshrana.engineer/'
+    self_link = channel.find(f'{ATOM}link')
+    assert self_link.get('href') == 'https://jobs.riteshrana.engineer/feed.xml'
+    assert self_link.get('rel') == 'self'
+
+
+def test_site_url_is_configurable():
+    channel = _parse(render_rss_feed([], site_url='https://example.org/board')).find('channel')
+    assert channel.find('link').text == 'https://example.org/board/'
+    assert channel.find(f'{ATOM}link').get('href') == 'https://example.org/board/feed.xml'
+
+
+def test_guid_is_job_id_and_not_a_permalink():
+    job = {'job_id': 'job_0123456789abcdef0123', 'title': 'SWE', 'url': 'https://a.com/1?x=1&y=2'}
+    item = _parse(render_rss_feed([job])).find('.//item')
+    guid = item.find('guid')
+    assert guid.text == 'job_0123456789abcdef0123'
+    assert guid.get('isPermaLink') == 'false'
+    assert item.find('link').text == 'https://a.com/1?x=1&y=2'
+
+
+def test_orders_by_first_seen_not_posted_at():
+    backdated_but_new = {'job_id': 'job_a', 'title': 'New', 'posted_at': '2026-01-01T00:00:00Z',
+                         'first_seen': '2026-09-20T00:00:00Z'}
+    old = {'job_id': 'job_b', 'title': 'Old', 'posted_at': '2026-09-01T00:00:00Z',
+           'first_seen': '2026-09-02T00:00:00Z'}
+    no_first_seen = {'job_id': 'job_c', 'title': 'Fallback', 'posted_at': '2026-09-10T00:00:00Z'}
+    items = _parse(render_rss_feed([old, no_first_seen, backdated_but_new])).findall('.//item')
+    assert [i.find('title').text for i in items] == ['New at Unknown', 'Fallback at Unknown', 'Old at Unknown']
+    assert items[0].find('pubDate').text == 'Sun, 20 Sep 2026 00:00:00 +0000'
+
+
+def test_ties_are_deterministic():
+    jobs = [{'job_id': f'job_{c}', 'title': c, 'first_seen': '2026-09-01T00:00:00Z'} for c in 'bca']
+    titles = [i.find('title').text for i in _parse(render_rss_feed(jobs)).findall('.//item')]
+    assert titles == ['c at Unknown', 'b at Unknown', 'a at Unknown']
+    assert titles == [i.find('title').text for i in _parse(render_rss_feed(list(reversed(jobs)))).findall('.//item')]
+
+
+def test_xml_illegal_control_characters_are_stripped():
+    job = {'job_id': 'job_x', 'title': 'Soft\x00ware\x0b Eng\x1f', 'company': 'Ac\x08me',
+           'location': '\x0cNYC', 'url': 'https://a.com/\x01', 'category': {'name': 'SWE\x1b'}}
+    xml = render_rss_feed([job])
+    item = _parse(xml).find('.//item')  # would raise on an illegal char
+    assert item.find('title').text == 'Software Eng at Acme'
+    assert 'NYC' in item.find('description').text

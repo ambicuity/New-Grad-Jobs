@@ -24,6 +24,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_PATH = REPO_ROOT / "config.yml"
 
 OUTPUT_DIR_ENV = "NGJ_OUTPUT_DIR"
+SITE_URL_ENV = "NGJ_SITE_URL"
+# Public URL of the deployed board (feed links, previous-run fetch).
+DEFAULT_SITE_URL = "https://jobs.riteshrana.engineer/"
 DEFAULT_OUTPUT_SUBDIR = Path("site") / "public"
 HISTORY_SUBPATH = Path("data") / "market-history.json"
 
@@ -59,6 +62,7 @@ class Settings:
     repo_root: Path
     output_dir: Path
     history_path: Path
+    site_url: str = DEFAULT_SITE_URL
 
     http_timeout: int = DEFAULT_HTTP_TIMEOUT
 
@@ -101,6 +105,13 @@ def resolve_output_dir(repo_root: Path = REPO_ROOT, env: Mapping[str, str] | Non
     return Path(repo_root) / DEFAULT_OUTPUT_SUBDIR
 
 
+def resolve_site_url(env: Mapping[str, str] | None = None) -> str:
+    """``$NGJ_SITE_URL`` or :data:`DEFAULT_SITE_URL`, always with a trailing slash."""
+    env = os.environ if env is None else env
+    url = (env.get(SITE_URL_ENV) or "").strip() or DEFAULT_SITE_URL
+    return url if url.endswith("/") else url + "/"
+
+
 def load_config(path: Path = DEFAULT_CONFIG_PATH) -> dict[str, Any]:
     """Load config.yml; raise a clear error when it is missing or not a mapping."""
     with open(path, encoding="utf-8") as f:
@@ -141,6 +152,7 @@ def build_settings(
         repo_root=repo_root,
         output_dir=resolve_output_dir(repo_root, env),
         history_path=repo_root / HISTORY_SUBPATH,
+        site_url=resolve_site_url(env),
         greenhouse_min_workers=pool("greenhouse_min_workers", DEFAULT_GREENHOUSE_MIN_WORKERS),
         greenhouse_max_workers=pool("greenhouse_max_workers", DEFAULT_GREENHOUSE_MAX_WORKERS),
         lever_min_workers=pool("lever_min_workers", DEFAULT_LEVER_MIN_WORKERS),

@@ -71,7 +71,9 @@ def test_run_writes_all_artifacts_to_output_dir(settings, caplog):
     assert "posted_display" not in jobs["jobs"][0]
 
     health = json.loads((out / "health.json").read_text())
-    assert health["source_counts"] == {"greenhouse": 4, "lever": 0}
+    assert health["raw_source_counts"] == {"greenhouse": 4, "lever": 0}
+    assert health["source_counts"] == health["raw_source_counts"]
+    assert health["sources"]["lever"]["errors"]["failed_companies"] == ["Gamma"]
     assert health["zero_sources"] == ["lever"]
     assert health["url_safety_blocked"] == 1
     assert health["status"] == "degraded"
@@ -101,12 +103,15 @@ def test_crashing_source_becomes_error_result_and_run_continues(settings):
 def test_corrupt_market_history_emits_actions_error_on_stdout(settings, capsys):
     settings.history_path.parent.mkdir(parents=True)
     settings.history_path.write_text("{not json")
-    with patch("ngj.pipeline.plan_sources", _plan({})):
-        pipeline.run(CONFIG, settings, sync_readme=False)
+    one = SourceResult(jobs=(_job("Acme", "Software Engineer, New Grad", "https://jobs.acme.com/1"),))
+    with patch("ngj.pipeline.plan_sources", _plan({"greenhouse": one})):
+        summary = pipeline.run(CONFIG, settings, sync_readme=False)
     out = capsys.readouterr().out
     assert "::error::Market history not updated (file left untouched)" in out
     assert settings.history_path.read_text() == "{not json"
     assert (settings.output_dir / "jobs.json").exists()
+    # Owner decision: an unreadable history does not fail the run.
+    assert summary.errors == ()
 
 
 def test_run_syncs_readme_from_output_dir(settings):
