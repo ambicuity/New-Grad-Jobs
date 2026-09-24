@@ -5,7 +5,6 @@ Tests cover get_job_key and its behavior in generating consistent keys for job d
 
 '''
 import json
-import math
 import os
 import sys
 import urllib.parse
@@ -22,70 +21,35 @@ from ngj.sources.google import fetch_google_jobs  # noqa: E402
 from ngj.util import coerce_positive_int as _coerce_positive_int  # noqa: E402
 
 
-def test_get_job_key_handles_nan()->None:
-    """Test that get_job_key handles NaN values correctly."""
-    job_with_nan = {
-        'company': 'Tech Corp',
-        'title': float('nan'),  #simulating a pandas NaN, eq to a math.nan
-        'url': 'https://example.com'
-    }
-    nan_value = float('nan')
-    assert math.isnan(nan_value), "Test setup error: value is not NaN"
+def test_get_job_key_handles_nan_and_inf() -> None:
+    """NaN/Inf fields (pandas/JobSpy) never leak into the key as 'nan'/'inf'."""
+    base = {'company': 'Tech Corp', 'title': 'Engineer', 'url': None, 'location': '', 'source': 'x'}
+    assert get_job_key({**base, 'title': float('nan')}) == get_job_key({**base, 'title': None})
+    assert get_job_key({**base, 'company': float('nan')}) == get_job_key({**base, 'company': ''})
+    assert get_job_key({**base, 'company': float('inf')}) == get_job_key({**base, 'company': ''})
 
-    result = get_job_key(job_with_nan)
-    assert result == "tech corp||https://example.com"
-    assert "|" in result
-    assert "nan" not in result.lower()
 
-def test_get_job_key_handles_inf()->None:
-    """Test that get_job_key handles Inf values correctly."""
-    job_with_inf = {
-        'company': float('inf'),
-        'title': 'Engineer',
-        'url': 'https://example.com'
-    }
-    inf_value = float('inf')
-    assert math.isinf(inf_value), "Test setup error: value is not Inf"
+def test_get_job_key_is_a_job_id() -> None:
+    key = get_job_key({'company': None, 'title': float('nan'), 'url': None})
+    assert key.startswith('job_') and len(key) == 24
 
-    result = get_job_key(job_with_inf)
-    assert result == "|engineer|https://example.com"
-    assert "inf" not in result.lower()
 
-def test_get_job_key_all_missing()->None:
-    """Test when all fields are either None/NaN."""
-    job_empty = {
-        'company': None,
-        'title': float('nan'),
-        'url': None
-    }
-    result = get_job_key(job_empty)
-    assert result == "||", "Expected empty key for all missing values"
+def test_get_job_key_normalizes_url_scheme_and_host_case() -> None:
+    a = {'company': '  ACME CORP', 'title': 'DevOps Engineer', 'url': 'HTTP://LINK.COM/Jobs/1'}
+    b = {'company': 'acme corp', 'title': 'devops engineer', 'url': 'http://link.com/Jobs/1/'}
+    assert get_job_key(a) == get_job_key(b)
 
-def test_get_job_key_normalizes_strings()->None:
-    """Test that it strips whitespace and handles casing."""
-    job = {
-        'company': '  ACME CORP',
-        'title': 'DevOps Engineer',
-        'url': 'HTTP://LINK.COM'
-    }
-    result = get_job_key(job)
-    assert result == "acme corp|devops engineer|http://link.com"
 
-@pytest.mark.parametrize("job_input, expected_key", [
-    # Test case: Missing key
-    ({'title': 'SWE', 'url': 'http://a.com'}, '|swe|http://a.com'),
-    # Test case: Empty string value
-    ({'company': '', 'title': 'SWE', 'url': 'http://a.com'}, '|swe|http://a.com'),
-    # Test case: Unicode characters
-    ({'company': 'Stripe™', 'title': 'Ingénieur Logiciel', 'url': 'http://a.com'}, 'stripe™|ingénieur logiciel|http://a.com'),
-    # Test case: Integer value (should be converted to string)
-    ({'company': 'Company', 'title': 123, 'url': 'http://a.com'}, 'company|123|http://a.com'),
-    # Test case: float value (should be converted to string)
-    ({'company': 'Company', 'title': 123.45, 'url': 'http://a.com'}, 'company|123.45|http://a.com'),
+@pytest.mark.parametrize("job_input", [
+    {'title': 'SWE', 'url': 'http://a.com'},
+    {'company': '', 'title': 'SWE', 'url': 'http://a.com'},
+    {'company': 'Stripe™', 'title': 'Ingénieur Logiciel', 'url': 'http://a.com'},
+    {'company': 'Company', 'title': 123, 'url': 'http://a.com'},
+    {'company': 'Company', 'title': 123.45, 'url': 'http://a.com'},
 ])
-def test_get_job_key_edge_cases(job_input: dict, expected_key: str) -> None:
-    """Test get_job_key with various edge cases based on style guide recommendations."""
-    assert get_job_key(job_input) == expected_key
+def test_get_job_key_with_url_depends_only_on_source_and_url(job_input: dict) -> None:
+    assert get_job_key(job_input) == get_job_key({'url': 'http://a.com'})
+
 
 # ---------------------------------------------------------------------------
 
