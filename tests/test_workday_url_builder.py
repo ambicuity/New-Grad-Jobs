@@ -10,6 +10,7 @@ import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
+from ngj.settings import DEFAULT_HTTP_TIMEOUT  # noqa: E402
 from ngj.sources.workday import build_workday_api_url, get_workday_csrf_token  # noqa: E402
 
 
@@ -102,7 +103,7 @@ class TestGetWorkdayCsrfToken:
         assert token == "abc123"
         # The token comes from the careers *site* page; the bare host root always answers 406.
         assert session.get.call_args.args == ("https://boeing.wd1.myworkdayjobs.com/external_careers",)
-        assert session.get.call_args.kwargs["timeout"] == 5
+        assert session.get.call_args.kwargs["timeout"] == DEFAULT_HTTP_TIMEOUT
         assert session.get.call_args.kwargs["allow_redirects"] is True
 
     def test_falls_back_to_cookie_when_header_absent(self):

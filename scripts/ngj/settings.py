@@ -31,7 +31,8 @@ DEFAULT_OUTPUT_SUBDIR = Path("site") / "public"
 HISTORY_SUBPATH = Path("data") / "market-history.json"
 
 # Per-request timeout (seconds) for Greenhouse/Lever/Ashby/Google requests.
-DEFAULT_HTTP_TIMEOUT = 5
+# Large boards (e.g. Anduril's ~2k-job Greenhouse list) take >5 s to respond.
+DEFAULT_HTTP_TIMEOUT = 15
 DEFAULT_WORKDAY_TIMEOUT = 6
 DEFAULT_GRAPHQL_TIMEOUT = 6
 

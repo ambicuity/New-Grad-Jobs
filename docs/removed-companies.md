@@ -344,3 +344,18 @@ The 33 below were removed; several are still reachable through the JobSpy/Indeed
 | Splunk | now part of Cisco (covered by the Cisco entry) |
 | TikTok, AbbVie, Intuit, Lenovo, Dell | tenant exists but no public site (`HTTP 401`) or no site id found |
 | Qualcomm | Workday site returns 0 jobs (moved off Workday) |
+
+## 2026-09-24 — Greenhouse and Ashby cleanup (`HTTP 404`)
+
+The board API returned `404` for 34 Greenhouse boards and 14 Ashby boards (verified
+with curl). Twelve of those companies had moved ATS and were re-added on their new
+board; the rest were removed.
+
+| Company | Old board | Action |
+|---|---|---|
+| ClickHouse, Materialize, Temporal, Ramp, Deel, Vanta, Miro, Confluent, Niantic, Alchemy | Greenhouse | moved to Ashby (re-added) |
+| Zoox, Kraken | Greenhouse | moved to Lever (re-added) |
+| Cohere, Notion | Greenhouse | already configured on Ashby; Greenhouse duplicate removed |
+| Cerebral, Magic Leap, Marqeta, Opendoor, Postman, Unity Technologies, Hugging Face, Adept AI, Character AI, Jasper, Rippling, Pipe, Navan, Retool, Canva, dbt Labs, HashiCorp, Aurora, Cruise, Chainalysis | Greenhouse | removed (board gone; no public Greenhouse/Ashby/Lever board found) |
+| Anthropic, Databricks | Ashby | removed (still configured on Greenhouse, which works) |
+| Cal.com, Dub, Groq, Hugging Face, Mistral AI, PlanetScale, Replicate, Scale AI, Statsig, Tinybird, Together AI, Weights & Biases | Ashby | removed (slug no longer exists) |
