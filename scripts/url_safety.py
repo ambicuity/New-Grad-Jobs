@@ -6,18 +6,22 @@ Every URL written into the public ``docs/jobs.json`` artifact must be a public
 
 * non-``http(s)`` schemes,
 * ``localhost`` and private-use TLDs (``.local``, ``.internal``, ``.test`` …),
-* private / loopback / link-local / reserved / multicast IPs — including the
-  integer, hex, and octal encodings that browsers silently accept,
+* any IP literal that is not globally routable unicast (private, loopback,
+  link-local, CGNAT, reserved, multicast, IPv4-mapped IPv6 …) — including the
+  integer, hex, octal and short (``127.1``) encodings browsers silently accept,
 * cloud metadata endpoints (``169.254.169.254``, Alibaba ``100.100.100.200``),
 * malformed hosts (backslashes, embedded slashes, percent/zone characters,
   bare single-label names).
 
-Pure standard library: ``urllib.parse`` + ``ipaddress``.
+Pure standard library: ``urllib.parse`` + ``ipaddress`` + ``socket.inet_aton``
+(no DNS resolution is performed).
 """
 
 from __future__ import annotations
 
 import ipaddress
+import re
+import socket
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 from urllib.parse import urlparse
 
@@ -57,36 +61,52 @@ _BLOCKED_IPS = frozenset(
 )
 
 
+# A host label that the WHATWG URL parser (browsers) and inet_aton (curl,
+# requests via getaddrinfo) treat as a number: decimal, 0x-hex or 0-octal.
+_NUMERIC_LABEL_RE = re.compile(r"^(?:0x[0-9a-f]*|[0-9]+)$")
+
+
+class _InvalidNumericHost(ValueError):
+    """Host looks like an IPv4 literal but does not parse as one."""
+
+
 def _coerce_ip(host: str) -> Optional[ipaddress._BaseAddress]:
-    """Parse ``host`` as an IP address, including integer encodings.
+    """Parse ``host`` as an IP address, including every legacy IPv4 encoding.
 
-    ``urlparse`` leaves ``2130706433`` (decimal), ``0x7f000001`` (hex) and
-    ``017700000001`` (octal) as opaque hostnames, yet browsers and many HTTP
-    clients resolve all three to ``127.0.0.1``. Decode them explicitly so the
-    loopback/private checks below cannot be bypassed. Returns ``None`` when the
-    host is not any IP form.
+    ``urlparse`` leaves ``2130706433`` (decimal), ``0x7f000001`` (hex),
+    ``0177.0.0.1`` (octal) and short forms such as ``127.1`` / ``0x7f.1`` as
+    opaque hostnames, yet browsers and HTTP clients resolve all of them to
+    ``127.0.0.1``. ``socket.inet_aton`` implements exactly those legacy forms,
+    so it is used to decode any host whose final label is numeric (the same
+    rule the WHATWG URL parser uses to decide a host is IPv4). Returns ``None``
+    for ordinary DNS names and raises :class:`_InvalidNumericHost` for
+    numeric-looking hosts that are not valid IPv4 (``999.1.1.1``,
+    ``1.2.3.4.5``, ``foo.0x10``), which browsers reject too.
     """
-    try:
-        return ipaddress.ip_address(host)
-    except ValueError:
-        pass
+    if ":" in host:
+        return ipaddress.ip_address(host)  # IPv6 literal; ValueError if bogus
 
-    value: Optional[int] = None
-    try:
-        if host.startswith(("0x", "0X")):
-            value = int(host, 16)
-        elif host.startswith(("0o", "0O")):
-            value = int(host, 8)
-        elif host.startswith("0") and len(host) > 1 and host.isdigit():
-            value = int(host, 8)  # leading-zero octal, e.g. 017700000001
-        elif host.isdigit():
-            value = int(host, 10)
-    except ValueError:
-        value = None
-
-    if value is None or value < 0 or value > 0xFFFFFFFF:
+    labels = host.split(".")
+    if not _NUMERIC_LABEL_RE.match(labels[-1]):
         return None
-    return ipaddress.ip_address(value)
+    if not all(_NUMERIC_LABEL_RE.match(label) for label in labels):
+        raise _InvalidNumericHost(host)
+    try:
+        packed = socket.inet_aton(host)
+    except OSError as exc:
+        raise _InvalidNumericHost(host) from exc
+    return ipaddress.IPv4Address(packed)
+
+
+def _is_public_ip(ip: ipaddress._BaseAddress) -> bool:
+    if ip.version == 6 and ip.ipv4_mapped is not None:
+        ip = ip.ipv4_mapped
+    return (
+        ip.is_global
+        and not ip.is_multicast
+        and not ip.is_reserved
+        and ip not in _BLOCKED_IPS
+    )
 
 
 def is_safe_url(url: object) -> bool:
@@ -121,21 +141,15 @@ def is_safe_url(url: object) -> bool:
     if any(host == tld[1:] or host.endswith(tld) for tld in _PRIVATE_TLDS):
         return False
 
-    ip = _coerce_ip(host)
+    try:
+        ip = _coerce_ip(host)
+    except ValueError:
+        return False  # IP-shaped but unparseable: never publish it
     if ip is not None:
-        if ip.version == 6 and ip.ipv4_mapped is not None:
-            ip = ip.ipv4_mapped
-        if (
-            ip.is_private
-            or ip.is_loopback
-            or ip.is_link_local
-            or ip.is_multicast
-            or ip.is_reserved
-            or ip.is_unspecified
-            or ip in _BLOCKED_IPS
-        ):
-            return False
-        return True
+        # Allow-list: only globally routable unicast addresses. This also
+        # rejects CGNAT (100.64/10), benchmarking, documentation and other
+        # special-purpose ranges that are neither "private" nor "reserved".
+        return _is_public_ip(ip)
 
     # Not an IP: require a dotted, public-looking hostname. Bare single-label
     # names ("intranet") and leading-dot garbage are never public.

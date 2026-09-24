@@ -26,6 +26,12 @@ import json
 import pathlib
 import re
 from typing import Any, Dict, List
+from urllib.parse import quote
+
+try:
+    from url_safety import is_safe_url
+except ImportError:  # pragma: no cover - imported as a package module
+    from scripts.url_safety import is_safe_url
 
 TOP_N = 10
 LIVE_BOARD_URL = "https://jobs.riteshrana.engineer/"
@@ -56,15 +62,66 @@ START_MARKER = (
 )
 END_MARKER = "<!-- CATEGORY-LISTINGS:END -->"
 
+_START_PREFIX = "<!-- CATEGORY-LISTINGS:START"
 _BLOCK_RE = re.compile(
-    re.escape("<!-- CATEGORY-LISTINGS:START") + r".*?" + re.escape(END_MARKER),
+    re.escape(_START_PREFIX) + r".*?" + re.escape(END_MARKER),
     re.DOTALL,
 )
 
+# Titles, companies and locations are scraped from third-party boards
+# (LinkedIn/Indeed via JobSpy) and are untrusted. Escape everything GitHub
+# would otherwise interpret: raw HTML (tracking pixels, ``<!--`` that hides the
+# rest of the README or forges our END marker) and Markdown link/emphasis
+# syntax. ``&`` is escaped first so the entities we emit are not double-escaped.
+_HTML_ESCAPES = (("&", "&amp;"), ("<", "&lt;"), (">", "&gt;"))
+_MD_SPECIALS = re.compile(r"([\\`*_\[\]()])")
+# GFM "extended autolinks" turn bare ``https://…`` / ``www.…`` text into links;
+# an escaped ``\:`` / ``\.`` keeps the text visible but not clickable.
+_AUTOLINK_TRIGGERS = re.compile(r"(?i)(://|\bwww\.)")
+
+# Characters that could terminate or confuse an ``<...>`` link destination or a
+# GFM table row. Everything else is legal inside angle brackets.
+_URL_ESCAPES = {
+    "<": "%3C",
+    ">": "%3E",
+    "(": "%28",
+    ")": "%29",
+    "|": "%7C",
+    "\\": "%5C",
+    "`": "%60",
+}
+
 
 def _cell(value: str) -> str:
-    """Sanitize a value for a Markdown table cell (no pipes/newlines)."""
-    return " ".join(str(value or "—").replace("|", "/").split()).strip() or "—"
+    """Sanitize an untrusted value for a Markdown table cell.
+
+    Collapses whitespace, replaces pipes, backslash-escapes Markdown specials
+    and entity-escapes ``& < >`` so no HTML (including comments) survives.
+    """
+    text = " ".join(str(value or "—").replace("|", "/").split()).strip() or "—"
+    text = _MD_SPECIALS.sub(r"\\\1", text)
+    text = _AUTOLINK_TRIGGERS.sub(lambda m: m.group(1).replace(":", "\\:").replace(".", "\\."), text)
+    for raw, entity in _HTML_ESCAPES:
+        text = text.replace(raw, entity)
+    return text
+
+
+def _apply_link(url: str) -> str:
+    """Render ``[Apply](<url>)`` for a safe http(s) URL, else an em dash.
+
+    The URL is wrapped in a CommonMark ``<...>`` destination, and every
+    character that could end that destination, the link, a code span or the
+    table row (``< > ( ) | \\ ` `` and whitespace) is percent-encoded, so a
+    hostile URL cannot smuggle in a second link.
+    """
+    url = (url or "").strip()
+    if not url or not is_safe_url(url):
+        return "—"
+    encoded = "".join(
+        _URL_ESCAPES.get(ch) or (quote(ch, safe="") if ch.isspace() else ch)
+        for ch in url
+    )
+    return f"[Apply](<{encoded}>)"
 
 
 def _company(job: Dict[str, Any]) -> str:
@@ -93,8 +150,7 @@ def _render_table(rows: List[Dict[str, Any]]) -> str:
     ]
     for job in rows:
         posted = _cell(job.get("posted_display") or (job.get("posted_at") or "")[:10])
-        url = (job.get("url") or "").strip()
-        apply_cell = f"[Apply]({url})" if url else "—"
+        apply_cell = _apply_link(job.get("url") or "")
         lines.append(
             f"| {_company(job)} | {_cell(job.get('title', '—'))} "
             f"| {_cell(job.get('location', '—'))} | {posted} | {apply_cell} |"
@@ -160,6 +216,15 @@ def sync_readme_jobs(repo_root: pathlib.Path | str = ".") -> bool:
     jobs_path = repo_root / "docs" / "jobs.json"
 
     readme = readme_path.read_text(encoding="utf-8")
+    starts, ends = readme.count(_START_PREFIX), readme.count(END_MARKER)
+    if starts > 1 or ends > 1:
+        # A forged/duplicated marker would make the non-greedy block regex
+        # stop early and leave orphaned rows behind on every run. Refuse to
+        # touch the file so a human can repair it.
+        raise ValueError(
+            f"README.md has {starts} CATEGORY-LISTINGS START and {ends} END "
+            "markers; expected exactly one of each. Fix README.md by hand."
+        )
     if not _BLOCK_RE.search(readme):
         print("sync_readme_jobs: CATEGORY-LISTINGS markers not found; skipping.")
         return False
