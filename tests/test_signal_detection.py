@@ -135,10 +135,11 @@ class TestHasTrackSignal:
         assert has_track_signal('Sales Manager', signals) is False
 
     def test_partial_match_within_word(self):
-        """Test that signal is found within words (substring match)."""
+        """Signals match whole words, not substrings ('ai' vs "Maintenance")."""
         signals = ['soft']
-        assert has_track_signal('Software Engineer', signals) is True
-        assert has_track_signal('Softwire Developer', signals) is True
+        assert has_track_signal('Software Engineer', signals) is False
+        assert has_track_signal('Softwire Developer', signals) is False
+        assert has_track_signal('Soft Skills Coach', signals) is True
 
     def test_multiple_signals_all_checked(self):
         """Test with multiple signals to ensure all are checked."""
@@ -187,10 +188,12 @@ class TestHasTrackSignal:
         assert has_track_signal('Data Analytics Engineer', signals) is True
 
     def test_signal_variations(self):
-        """Test that signal variations require exact substring match."""
-        signals = ['data']
-        assert has_track_signal('Data Engineer', signals) is True
-        assert has_track_signal('Databases', signals) is True  # substring match
+        """Whole words plus plural/-ing/-er inflections; no compounds."""
+        signals = ['data', 'engineer']
+        assert has_track_signal('Data Analyst', signals) is True
+        assert has_track_signal('Engineering Program', signals) is True
+        assert has_track_signal('Engineers Program', signals) is True
+        assert has_track_signal('Databases Admin', ['data']) is False
         assert has_track_signal('Update', signals) is False
 
     def test_unicode_characters(self):
@@ -226,10 +229,11 @@ class TestHasTrackSignal:
         assert has_track_signal('Data Engineer Track', signals) is True
 
     def test_single_character_signal(self):
-        """Test with single-character signal."""
-        signals = ['I']  # Capital I as a signal
-        assert has_track_signal('I-Team Engineer', signals) is True
-        assert has_track_signal('Information', signals) is True
+        """A single-character signal only matches as a whole token."""
+        signals = ['c']
+        assert has_track_signal('C Developer', signals) is True
+        assert has_track_signal('Embedded C/C++ Developer', signals) is True
+        assert has_track_signal('Cloud Engineer', signals) is False
 
 
 class TestSignalDetectionSemantics:

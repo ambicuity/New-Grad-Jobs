@@ -355,15 +355,21 @@ class TestFilterJobsLocation:
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
-    def test_empty_location_filtered_out(self):
-        """Jobs with empty location should be filtered out."""
+    def test_empty_location_is_unknown_and_kept(self):
+        """An empty location is unknown, not foreign: the job is kept."""
         jobs = [_make_job(location="")]
         result = filter_jobs(jobs, _default_config())
-        assert len(result) == 0
+        assert len(result) == 1
 
-    def test_none_location_filtered_out(self):
-        """Jobs with None location should be filtered out."""
+    def test_none_location_is_unknown_and_kept(self):
+        """A missing (None) location is unknown, not foreign: the job is kept."""
         jobs = [_make_job(location=None)]
+        result = filter_jobs(jobs, _default_config())
+        assert len(result) == 1
+
+    def test_foreign_remote_location_filtered_out(self):
+        """'remote' no longer whitelists a foreign country."""
+        jobs = [_make_job(location="Remote - Germany")]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 

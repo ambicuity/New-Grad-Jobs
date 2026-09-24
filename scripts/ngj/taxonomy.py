@@ -17,7 +17,8 @@ from ngj.util import get_nested_value
 # FAANG_PLUS: Companies classified as the "FAANG+" company tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "FAANG+" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both FAANG_PLUS and a sector set (e.g., DEFENSE) simultaneously.
 FAANG_PLUS = {
     # Original FAANG
@@ -26,7 +27,7 @@ FAANG_PLUS = {
     'NVIDIA', 'Tesla', 'Adobe', 'Salesforce', 'Oracle', 'IBM', 'Intel',
     'Cisco', 'Qualcomm', 'AMD', 'Uber', 'Lyft', 'Airbnb', 'Stripe', 'PayPal',
     'Block (Square)', 'Visa', 'Mastercard', 'Goldman Sachs', 'Morgan Stanley',
-    'JPMorgan', 'J.P. Morgan', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw',
+    'JPMorgan', 'J.P. Morgan', 'JPMorgan Chase', 'Bloomberg', 'Two Sigma', 'Citadel', 'Jane Street', 'D.E. Shaw',
     # Defense/Aerospace Giants
     'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
     'General Dynamics', 'BAE Systems', 'L3Harris', 'Collins Aerospace', 'HII',
@@ -47,7 +48,8 @@ FAANG_PLUS = {
 # UNICORNS: High-growth private companies classified as the "Unicorn" company tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "Unicorn" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both UNICORNS and a sector set (e.g., FINANCE) simultaneously.
 UNICORNS = {
     'SpaceX', 'OpenAI', 'Anthropic', 'Databricks', 'Snowflake', 'Palantir',
@@ -74,7 +76,8 @@ UNICORNS = {
 # DEFENSE: Companies classified globally under the defense and aerospace sector tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "Defense" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both DEFENSE and a tier set (e.g., FAANG_PLUS) simultaneously.
 DEFENSE = {
     'Raytheon', 'RTX', 'Lockheed Martin', 'Boeing', 'Northrop Grumman',
@@ -89,7 +92,8 @@ DEFENSE = {
 # FINANCE: Companies classified globally under the finance and banking sector tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "Finance" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both FINANCE and a tier set (e.g., UNICORNS) simultaneously.
 FINANCE = {
     'Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'J.P. Morgan', 'JP Morgan Chase', 'Bloomberg',
@@ -107,7 +111,8 @@ FINANCE = {
 # HEALTHCARE: Companies classified globally under the healthcare and biotech sector tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "Healthcare" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both HEALTHCARE and a tier set (e.g., STARTUPS) simultaneously.
 HEALTHCARE = {
     'iRhythm', 'Epic Systems', 'Cerner', 'Philips Healthcare', 'Siemens Healthineers',
@@ -121,7 +126,8 @@ HEALTHCARE = {
 # STARTUPS: Early-stage or smaller companies classified as the "Startup" tier.
 # Consumed by: get_company_tier().
 # This classification surfaces in the frontend's "Startup" company-tier filter.
-# To add a company: append its name exactly as it appears in job API responses.
+# To add a company: append its canonical name. Lookups use normalize_company_name(),
+# so variants like "Snap Inc." or "Amazon.com" need no separate alias.
 # A company may appear in both STARTUPS and a sector set simultaneously.
 STARTUPS = {
     'Vercel', 'Supabase', 'PlanetScale', 'Railway', 'Zepto', 'Zepz',
@@ -299,85 +305,141 @@ def is_engineering_network_title(title: str) -> bool:
     return isinstance(title, str) and bool(NETWORK_ENGINEERING_TITLE_PATTERN.search(title))
 
 
-def categorize_job(title: str, description: str = '') -> dict[str, Any]:
-    """Categorize a job based on its title and description"""
-    title_lower = title.lower()
-    desc_lower = description.lower() if description else ''
-    combined = f"{title_lower} {desc_lower}"
+# TPM titles outrank the generic buckets ('infrastructure', 'platform') that a
+# "Technical Program Manager, Infrastructure" title also contains.
+_TPM_TITLE_RE = re.compile(r'\b(?:tpm|technical program manager)s?\b', re.IGNORECASE)
 
-    # Priority check for TPM to avoid matching generic 'infrastructure' or 'program' first
-    if re.search(r'\btpm\b', combined):
-        return {
-            'id': 'product_management',
-            'name': CATEGORY_PATTERNS['product_management']['name'],
-            'emoji': CATEGORY_PATTERNS['product_management']['emoji']
-        }
 
-    # Keep network categorization title-driven so non-engineering roles with
-    # incidental network wording in descriptions do not leak into infra views.
-    if is_engineering_network_title(title):
-        category_id = 'infrastructure_sre'
-        return {
-            'id': category_id,
-            'name': CATEGORY_PATTERNS[category_id]['name'],
-            'emoji': CATEGORY_PATTERNS[category_id]['emoji']
-        }
+def _category_keywords(category_id: str) -> list[str]:
+    keywords = CATEGORY_PATTERNS[category_id]['keywords']
+    if category_id == 'infrastructure_sre':
+        # Network roles are decided by is_engineering_network_title() on the title.
+        return [kw for kw in keywords if kw not in NETWORK_INFRASTRUCTURE_KEYWORDS]
+    return list(keywords)
 
-    for category_id, category_info in CATEGORY_PATTERNS.items():
-        if category_id == 'other':
+
+# One precompiled whole-phrase regex per category, in CATEGORY_PATTERNS order.
+CATEGORY_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
+    (
+        category_id,
+        re.compile(
+            r'\b(?:'
+            + '|'.join(re.escape(kw) for kw in sorted(_category_keywords(category_id), key=len, reverse=True))
+            + r')\b',
+            re.IGNORECASE,
+        ),
+    )
+    for category_id in CATEGORY_PATTERNS
+    if category_id != 'other' and _category_keywords(category_id)
+)
+
+
+def _category(category_id: str) -> dict[str, Any]:
+    info = CATEGORY_PATTERNS[category_id]
+    return {'id': category_id, 'name': info['name'], 'emoji': info['emoji']}
+
+
+def _first_match(text: str, *, skip_title_driven: bool) -> str | None:
+    for category_id, pattern in CATEGORY_REGEXES:
+        if skip_title_driven and category_id in TITLE_DRIVEN_CATEGORIES:
             continue
-        # Specialty tracks (frontend/backend/mobile/security) match on the title
-        # only: a title is an unambiguous signal, whereas descriptions routinely
-        # mention adjacent stacks ("partner with the frontend team") and would
-        # cross-contaminate these fine-grained buckets.
-        haystack = title_lower if category_id in TITLE_DRIVEN_CATEGORIES else combined
-        for keyword in category_info['keywords']:
-            if category_id == 'infrastructure_sre' and keyword in NETWORK_INFRASTRUCTURE_KEYWORDS:
-                continue
-            # Use word boundaries for exact phrase matching, safely escape the keyword
-            pattern = r'\b' + re.escape(keyword) + r'\b'
-            if re.search(pattern, haystack):
-                return {
-                    'id': category_id,
-                    'name': category_info['name'],
-                    'emoji': category_info['emoji']
-                }
+        if pattern.search(text):
+            return category_id
+    return None
 
-    # Default to 'other' if no match
-    return {
-        'id': 'other',
-        'name': CATEGORY_PATTERNS['other']['name'],
-        'emoji': CATEGORY_PATTERNS['other']['emoji']
-    }
+
+def categorize_job(title: str, description: str = '') -> dict[str, Any]:
+    """Categorize a job, title first.
+
+    1. TPM titles -> product_management; engineering network titles ->
+       infrastructure_sre.
+    2. The first category (CATEGORY_PATTERNS order) whose keywords appear in
+       the TITLE wins, so "Data Scientist II" is data_ml even when its
+       description says "software engineer".
+    3. Only when the title matches nothing is the description consulted, and
+       never for the title-driven specialty buckets (frontend/backend/...).
+    """
+    title = title if isinstance(title, str) else ''
+    description = description if isinstance(description, str) else ''
+
+    if _TPM_TITLE_RE.search(title):
+        return _category('product_management')
+    if is_engineering_network_title(title):
+        return _category('infrastructure_sre')
+
+    category_id = _first_match(title, skip_title_driven=False)
+    if category_id is None and description:
+        category_id = _first_match(description, skip_title_driven=True)
+    return _category(category_id or 'other')
+
+
+# Company-name normalization for tier lookups: "Snap Inc." == "Snap",
+# "Amazon.com" == "Amazon", "JPMorganChase" == "JP Morgan Chase". Only
+# trailing legal/corporate suffixes are dropped; no prefix or fuzzy matching,
+# so "Snapdragon" never becomes "Snap" and "Amazon Web Services" stays distinct.
+_COMPANY_SUFFIXES = frozenset({
+    'inc', 'incorporated', 'llc', 'llp', 'lp', 'ltd', 'limited', 'plc', 'corp',
+    'corporation', 'co', 'company', 'industries', 'technologies', 'technology',
+    'holdings', 'group', 'com',
+})
+_COMPANY_TOKEN_RE = re.compile(r'[^\W_]+')
+
+
+def normalize_company_name(name: Any) -> str:
+    """Casefolded, punctuation-free key with trailing corporate suffixes removed."""
+    if not isinstance(name, str):
+        return ''
+    tokens = _COMPANY_TOKEN_RE.findall(name.casefold().replace('&', ' and '))
+    if tokens and tokens[0] == 'the':
+        tokens = tokens[1:]
+    while len(tokens) > 1 and tokens[-1] in _COMPANY_SUFFIXES:
+        tokens = tokens[:-1]
+    while len(tokens) > 1 and tokens[-1] == 'and':
+        tokens = tokens[:-1]
+    return ''.join(tokens)
+
+
+def _normalized_set(names: set[str]) -> frozenset[str]:
+    return frozenset(key for key in map(normalize_company_name, names) if key)
+
+
+_NORMALIZED_FAANG_PLUS = _normalized_set(FAANG_PLUS)
+_NORMALIZED_UNICORNS = _normalized_set(UNICORNS)
+_NORMALIZED_SECTORS: tuple[tuple[str, frozenset[str]], ...] = (
+    ('defense', _normalized_set(DEFENSE)),
+    ('finance', _normalized_set(FINANCE)),
+    ('healthcare', _normalized_set(HEALTHCARE)),
+    ('startup', _normalized_set(STARTUPS)),
+)
+
+
+def _company_keys(company_name: Any) -> frozenset[str]:
+    """Normalized keys for the name and each "A | B" alias part."""
+    if not isinstance(company_name, str):
+        return frozenset()
+    parts = [company_name, *company_name.split('|')]
+    return frozenset(key for key in map(normalize_company_name, parts) if key)
 
 
 @lru_cache(maxsize=2048)
-def _company_tier_parts(company_name: str) -> tuple:
+def _company_tier_parts(company_name: Any) -> tuple[str, str, str, tuple[str, ...]]:
     """Cached (tier, emoji, label, sectors) lookup; company names repeat a lot."""
-    if company_name in FAANG_PLUS:
+    keys = _company_keys(company_name)
+    if keys & _NORMALIZED_FAANG_PLUS:
         tier = ('faang_plus', '🔥', 'FAANG+')
-    elif company_name in UNICORNS:
+    elif keys & _NORMALIZED_UNICORNS:
         tier = ('unicorn', '🚀', 'Unicorn')
     else:
         tier = ('other', '', '')
 
     # Sector classifications can overlap with the tier.
-    sectors = tuple(
-        sector
-        for sector, members in (
-            ('defense', DEFENSE),
-            ('finance', FINANCE),
-            ('healthcare', HEALTHCARE),
-            ('startup', STARTUPS),
-        )
-        if company_name in members
-    )
-    return tier + (sectors,)
+    sectors = tuple(sector for sector, members in _NORMALIZED_SECTORS if keys & members)
+    return (*tier, sectors)
 
 
-def get_company_tier(company_name: str) -> dict[str, Any]:
+def get_company_tier(company_name: Any) -> dict[str, Any]:
     """Company tier classification including sectors (a fresh dict per call)."""
-    tier, emoji, label, sectors = _company_tier_parts(company_name)
+    tier, emoji, label, sectors = _company_tier_parts(company_name if isinstance(company_name, str) else '')
     return {'tier': tier, 'emoji': emoji, 'label': label, 'sectors': list(sectors)}
 
 

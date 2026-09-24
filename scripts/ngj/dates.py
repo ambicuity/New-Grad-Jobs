@@ -14,12 +14,17 @@ import re
 from datetime import UTC, date, datetime, timedelta
 from typing import Any
 
-from dateutil import parser as date_parser
-from dateutil.relativedelta import relativedelta
+from dateutil import parser as date_parser  # type: ignore[import-untyped]
+from dateutil.relativedelta import relativedelta  # type: ignore[import-untyped]
 
 logger = logging.getLogger(__name__)
 
 DAYS_PER_WEEK: int = 7
+
+
+def utc_now() -> datetime:
+    """The module clock (timezone-aware UTC). Tests monkeypatch this."""
+    return datetime.now(UTC)
 
 
 def normalize_date_string(
@@ -52,8 +57,8 @@ def normalize_date_string(
     posted_at_lower = posted_at.lower().strip()
     reference = reference_date if reference_date is not None else now_utc
     if reference is None:
-        reference = datetime.now(UTC)
-    now = reference.replace(tzinfo=None)
+        reference = utc_now()
+    now = as_utc_naive(reference)
 
     if 'today' in posted_at_lower:
         return now.strftime('%Y-%m-%d')
@@ -104,20 +109,28 @@ def parse_posted_at(posted_at: Any, now_utc: datetime | None = None) -> datetime
     if isinstance(posted_at, (int, float)):
         parsed = datetime.fromtimestamp(posted_at / 1000, tz=UTC)
     else:
-        now_utc = now_utc or datetime.now(UTC)
+        now_utc = now_utc or utc_now()
         parsed = date_parser.parse(normalize_date_string(posted_at, now_utc))
     return as_utc_naive(parsed)
 
 
-def is_recent_job(posted_at: Any, max_age_days: int) -> bool:
-    """Check if a job was posted within the last ``max_age_days`` days."""
+def is_recent_job(posted_at: Any, max_age_days: int, *, now: datetime | None = None) -> bool:
+    """Check if a job was posted within the last ``max_age_days`` days.
+
+    ``now`` is the reference instant (defaults to :func:`utc_now`); naive values
+    are taken as UTC, aware ones are converted. The cutoff is inclusive and all
+    comparisons happen in UTC, so the host's local date never matters: a bare
+    ``date`` means midnight UTC of that day.
+    """
     if posted_at is None:
         return False
     if isinstance(posted_at, float) and math.isnan(posted_at):
         return False
 
     try:
-        now_utc = datetime.now(UTC)
+        now_utc = now if now is not None else utc_now()
+        if now_utc.tzinfo is None:
+            now_utc = now_utc.replace(tzinfo=UTC)
         if isinstance(posted_at, (datetime, date)):
             posted_date = posted_at
             if not isinstance(posted_date, datetime):
@@ -125,7 +138,7 @@ def is_recent_job(posted_at: Any, max_age_days: int) -> bool:
             posted_date = as_utc_naive(posted_date)
         else:
             posted_date = parse_posted_at(posted_at, now_utc)
-        cutoff_date = now_utc.replace(tzinfo=None) - timedelta(days=max_age_days)
+        cutoff_date = as_utc_naive(now_utc) - timedelta(days=max_age_days)
         return posted_date >= cutoff_date
     except Exception as exc:
         logger.warning("Error parsing date %s: %s", posted_at, exc)
@@ -135,7 +148,7 @@ def is_recent_job(posted_at: Any, max_age_days: int) -> bool:
 def format_posted_date(posted_at: Any, now_utc: datetime | None = None) -> str:
     """Relative display string: "Today", "1 day ago", "N days ago", else YYYY-MM-DD."""
     try:
-        now_utc = now_utc or datetime.now(UTC)
+        now_utc = now_utc or utc_now()
         posted_date = parse_posted_at(posted_at, now_utc)
         diff = now_utc.replace(tzinfo=None) - posted_date
         if diff.days == 0:
