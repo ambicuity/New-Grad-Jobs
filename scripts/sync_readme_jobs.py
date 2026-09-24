@@ -199,7 +199,7 @@ def render_category_listings(data: dict[str, Any], now: datetime | None = None) 
 
     # Present in reader-facing order; unknown ids keep their meta order at the end.
     order = {cid: i for i, cid in enumerate(PRESENTATION_ORDER)}
-    categories = sorted(categories, key=lambda c: order.get(c.get("id"), len(order)))
+    categories = sorted(categories, key=lambda c: order.get(str(c.get("id")), len(order)))
 
     parts: list[str] = [
         START_MARKER,
@@ -211,7 +211,7 @@ def render_category_listings(data: dict[str, Any], now: datetime | None = None) 
     ]
 
     for cat in categories:
-        cid = cat.get("id")
+        cid = str(cat.get("id") or "")
         name = cat.get("name", cid)
         count = cat.get("count", 0)
         rows = _recent_open_jobs(jobs, cid, TOP_N)
