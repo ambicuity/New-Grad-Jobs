@@ -45,7 +45,13 @@ run('returns LIVE when generated_at is fresh', () => {
   const stamp = formatLiveStamp('2026-05-16T21:32:00Z', now);
   assert.strictEqual(stamp.label, 'LIVE');
   assert.strictEqual(stamp.dot, '#5fd28a');
-  assert.ok(stamp.text && stamp.text.length > 0);
+});
+
+run('never exposes a timestamp (the chip shows status only)', () => {
+  const now = new Date('2026-05-16T21:33:00Z');
+  for (const iso of ['2026-05-16T21:32:00Z', '2026-05-10T00:00:00Z', null]) {
+    assert.deepStrictEqual(Object.keys(formatLiveStamp(iso, now)).sort(), ['dot', 'label']);
+  }
 });
 
 run('still LIVE after 1 hour (well within the 24 h tolerance)', () => {
@@ -77,7 +83,6 @@ run('returns OFFLINE for null/undefined generated_at', () => {
   const stamp1 = formatLiveStamp(null, new Date());
   const stamp2 = formatLiveStamp(undefined, new Date());
   assert.strictEqual(stamp1.label, 'OFFLINE');
-  assert.strictEqual(stamp1.text, '—');
   assert.strictEqual(stamp2.label, 'OFFLINE');
 });
 
@@ -98,17 +103,6 @@ run('liveStampState flips to stale once past 24 h', () => {
   const now = new Date(Date.parse('2026-05-16T21:32:00Z') + 24 * 60 * 60 * 1000 + 1000);
   const state = liveStampState('2026-05-16T21:32:00Z', now);
   assert.strictEqual(state.kind, 'stale');
-});
-
-run('does not crash if Intl throws (text falls back to ISO)', () => {
-  const sb = { module: { exports: {} }, console, Date,
-    Intl: { DateTimeFormat: function () { throw new Error('forced'); } } };
-  vm.createContext(sb);
-  vm.runInContext(source, sb);
-  const f = sb.module.exports.formatLiveStamp;
-  const stamp = f('2026-05-16T21:32:00Z', new Date('2026-05-16T21:33:00Z'));
-  assert.strictEqual(stamp.label, 'LIVE');
-  assert.strictEqual(stamp.text, '2026-05-16T21:32:00.000Z');
 });
 
 console.log('\nall live-stamp tests passed');

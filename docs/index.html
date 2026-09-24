@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fully automated list of new grad job opportunities from multiple company APIs, updated every 5 minutes. Built by engineers, for engineers.">
+  <meta name="description" content="Fully automated list of new grad job opportunities from multiple company APIs, updated about every 30 minutes. Built by engineers, for engineers.">
   <meta name="keywords" content="new grad jobs, entry level jobs, software engineer jobs, tech jobs, 2025 jobs, 2026 jobs">
   <meta property="og:title" content="NGJ · New Grad Jobs">
-  <meta property="og:description" content="Fully automated job board for new graduates powered by multiple live company APIs, updated every 5 minutes.">
+  <meta property="og:description" content="Fully automated job board for new graduates powered by multiple live company APIs, updated about every 30 minutes.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <title>NGJ · New Grad Jobs</title>
@@ -65,22 +65,22 @@
 <body>
   <div id="root">
     <div class="ng-boot">
-      <div>NGJ <span class="dim">loading jobs.json + contributors.json …</span></div>
+      <div>NGJ <span class="dim">loading jobs-index.json + contributors.json …</span></div>
     </div>
   </div>
 
   <!-- Pure-JS helper for the LIVE chip, loadable in Node for unit testing. -->
-  <script src="terminal/live-stamp-format.js?v=21"></script>
+  <script src="terminal/live-stamp-format.js?v=23"></script>
 
   <!-- Cache-bust the bundle when its shape changes. Bump v= on data-shape edits. -->
   <!-- useIsMobile must load before the views that branch on it for responsive reflow. -->
-  <script type="text/babel" src="terminal/use-viewport.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/data.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/contributors-data.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/dashboard.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/contributors.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/live-stamp.jsx?v=21"></script>
-  <script type="text/babel" src="terminal/app.jsx?v=21"></script>
+  <script type="text/babel" src="terminal/use-viewport.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/data.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/contributors-data.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/dashboard.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/contributors.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/live-stamp.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/app.jsx?v=23"></script>
 
   <script type="text/babel">
     (async () => {

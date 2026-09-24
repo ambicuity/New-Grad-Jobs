@@ -25,12 +25,7 @@ function LiveStamp() {
   const meta = (window.NGJOBS_META || {});
   const stamp = window.formatLiveStamp(meta.generated_at, new Date());
 
-  return (
-    <>
-      <span><span style={{ color: stamp.dot }}>●</span> {stamp.label}</span>
-      <span>{stamp.text}</span>
-    </>
-  );
+  return <span><span style={{ color: stamp.dot }}>●</span> {stamp.label}</span>;
 }
 
 window.LiveStamp = LiveStamp;

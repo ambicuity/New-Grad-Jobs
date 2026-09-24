@@ -49,6 +49,13 @@ try:
 except ModuleNotFoundError:
     from scripts.url_safety import filter_safe_jobs
 
+try:
+    from contracts import compute_job_id
+    from publish import write_site_artifacts
+except ModuleNotFoundError:
+    from scripts.contracts import compute_job_id
+    from scripts.publish import write_site_artifacts
+
 # Worker pool configuration constants
 # These default values act as fallback constants. The active pool sizes
 # are read from config.yml under 'worker_pools' during startup.
@@ -2570,8 +2577,8 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
     # Build JSON structure
     json_jobs = []
     for job in jobs:
-        desc_html = job.get('description_html', '')
         json_jobs.append({
+            'job_id': compute_job_id(job),
             'id': job.get('id', ''),
             'company': job.get('company', ''),
             'title': job.get('title', ''),
@@ -2586,8 +2593,6 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
             'is_closed': job.get('is_closed', False),
             'comp': job.get('comp'),
             'description': job.get('description', ''),
-            'description_html': desc_html,
-            'full_description': clean_description(desc_html, max_chars=50000) if desc_html else '',
         })
 
     return {
@@ -2607,6 +2612,20 @@ def generate_jobs_json(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> Di
         },
         'jobs': json_jobs
     }
+
+def build_full_descriptions(jobs: List[Dict[str, Any]]) -> Dict[str, str]:
+    """Map job_id → full cleaned "About the role" text for the description shards.
+
+    Uses the raw ATS HTML when present, else the published snippet. Kept out of
+    docs/jobs.json so the site's first load stays small (see scripts/publish.py).
+    """
+    texts: Dict[str, str] = {}
+    for job in jobs:
+        desc_html = job.get('description_html') or ''
+        text = clean_description(desc_html, max_chars=50000) if desc_html else (job.get('description') or '')
+        if text:
+            texts[compute_job_id(job)] = text
+    return texts
 
 def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     """
@@ -3486,15 +3505,15 @@ def main():
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
 
-    # Write JSON file to docs/ (GitHub Pages source directory)
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'jobs.json')
+    # Write docs/jobs.json (public API), docs/jobs-index.json (what the site
+    # loads) and docs/descriptions/<shard>.json (lazy detail text).
+    docs_dir = os.path.join(os.path.dirname(__file__), '..', 'docs')
     try:
-        os.makedirs(os.path.dirname(json_path), exist_ok=True)
-        with open(json_path, 'w') as f:
-            json.dump(jobs_json, f, indent=2)
-        print(f"jobs.json updated successfully with {len(enriched_jobs)} jobs")
+        write_site_artifacts(docs_dir, jobs_json, build_full_descriptions(enriched_jobs))
+        print(f"jobs.json, jobs-index.json and description shards updated with {len(enriched_jobs)} jobs")
     except Exception as e:
-        print(f"Error writing jobs.json: {e}")
+        print(f"Error writing site job artifacts: {e}")
+        raise
 
     # ========== Generate RSS Feed ==========
     generate_rss_feed(enriched_jobs)

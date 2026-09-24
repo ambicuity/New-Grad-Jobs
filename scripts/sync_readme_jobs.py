@@ -3,7 +3,7 @@
 
 The README's "Browse by Category" listings used to be a frozen, hand-maintained
 snapshot that rotted (dead links, missing new roles) while the site refreshed
-every 5 minutes. This module keeps them live: it rewrites *only* the block
+about every 30 minutes. This module keeps them live: it rewrites *only* the block
 between::
 
     <!-- CATEGORY-LISTINGS:START ... -->
@@ -117,7 +117,7 @@ def render_category_listings(data: Dict[str, Any]) -> str:
         START_MARKER,
         "",
         f"> **Live listings** — the {TOP_N} most recently posted roles per "
-        f"category, refreshed every 5 minutes. Browse and filter all "
+        f"category, refreshed about every 30 minutes. Browse and filter all "
         f"**{total:,}** live roles on the **[live job board]({LIVE_BOARD_URL})**.",
         "",
     ]

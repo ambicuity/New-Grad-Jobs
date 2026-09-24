@@ -1,0 +1,89 @@
+name: Scraper Watchdog
+
+# Scheduled workflows can stop firing silently (no failed run, no error): the
+# scraper's last scheduled run was 2026-08-18 and the site went five weeks
+# stale while every workflow still reported "active". This watchdog runs on
+# its own schedule, checks the age of the last published scrape, re-dispatches
+# the scraper when it is late, and opens an issue so a human notices.
+#
+# It cannot help if GitHub stops *all* schedules for the repo; the open issue
+# (and the site's STALE chip) are the backstop for that case.
+
+on:
+  schedule:
+    - cron: '23 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scraper-watchdog
+  cancel-in-progress: false
+
+env:
+  # Scraper is scheduled every 30 min; 3 h tolerates normal cron delay.
+  STALE_AFTER_MINUTES: '180'
+  ISSUE_LABEL: scraper-stale
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write   # dispatch update-jobs.yml
+      issues: write    # open / close the stale-data issue
+      contents: read
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Measure data age
+        id: age
+        run: |
+          set -euo pipefail
+          last_run=$(gh api "repos/${GH_REPO}/contents/docs/health.json?ref=main" \
+            -H 'Accept: application/vnd.github.raw' | jq -r '.last_run // empty')
+          if [ -z "$last_run" ]; then
+            echo "::error::docs/health.json has no last_run timestamp"
+            exit 1
+          fi
+          age_min=$(( ( $(date -u +%s) - $(date -u -d "$last_run" +%s) ) / 60 ))
+          echo "Last scrape: ${last_run} (${age_min} min ago)"
+          echo "last_run=${last_run}" >> "$GITHUB_OUTPUT"
+          echo "age_min=${age_min}" >> "$GITHUB_OUTPUT"
+
+      - name: Re-dispatch scraper when stale
+        if: fromJSON(steps.age.outputs.age_min) > fromJSON(env.STALE_AFTER_MINUTES)
+        run: |
+          set -euo pipefail
+          active=$(gh run list --workflow update-jobs.yml --json status \
+            --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')
+          if [ "$active" -gt 0 ]; then
+            echo "Scraper already queued or running; not dispatching another."
+          else
+            gh workflow run update-jobs.yml --ref main
+            echo "::warning::Data ${{ steps.age.outputs.age_min }} min old; dispatched update-jobs.yml"
+          fi
+
+      - name: Open stale-data issue
+        if: fromJSON(steps.age.outputs.age_min) > fromJSON(env.STALE_AFTER_MINUTES)
+        run: |
+          set -euo pipefail
+          gh label create "$ISSUE_LABEL" --color d93f0b \
+            --description "Job data not refreshed on schedule" 2>/dev/null || true
+          open=$(gh issue list --label "$ISSUE_LABEL" --state open --json number --jq 'length')
+          if [ "$open" -eq 0 ]; then
+            gh issue create --label "$ISSUE_LABEL" \
+              --title "Job data is stale: last scrape ${{ steps.age.outputs.last_run }}" \
+              --body "The watchdog found \`docs/health.json\` last updated **${{ steps.age.outputs.age_min }} minutes** ago (threshold ${STALE_AFTER_MINUTES}). It dispatched \`update-jobs.yml\`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. This issue closes automatically once data is fresh."
+          fi
+
+      - name: Close stale-data issue once fresh
+        if: fromJSON(steps.age.outputs.age_min) <= fromJSON(env.STALE_AFTER_MINUTES)
+        run: |
+          set -euo pipefail
+          numbers=$(gh issue list --label "$ISSUE_LABEL" --state open --json number --jq '.[].number' 2>/dev/null || true)
+          for n in $numbers; do
+            gh issue close "$n" --comment "Data is fresh again (last scrape ${{ steps.age.outputs.last_run }})."
+          done

@@ -1,10 +1,11 @@
 // Real-data adapter for the NGJ terminal frontend.
-// Loads docs/jobs.json (scraped, ~1k jobs) and maps to the shape that
+// Loads docs/jobs-index.json (scraped jobs, no descriptions) and maps to the shape that
 // dashboard.jsx expects (the same shape the original mock data.jsx used).
 //
 // Exposes on window: NGJOBS, TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
 //                    fmtComp, daysLeft, deadlineLabel, deadlineHot,
-//                    NGJOBS_READY (Promise that resolves once jobs are loaded).
+//                    NGJOBS_READY (Promise that resolves once jobs are loaded),
+//                    useJobDescription (lazy full description for a job).
 
 // Canonical job categories — the single source of truth shared with
 // scripts/update_jobs.py (CATEGORY_PATTERNS), docs/jobs.json (meta.categories),
@@ -129,12 +130,57 @@ function mapJob(j) {
     // under the descending (newest-first) default.
     postedTs: j.posted_at ? new Date(j.posted_at).getTime() || 0 : 0,
     level:   'entry',
-    desc:    (j.full_description && j.full_description.length > 60)
-               ? j.full_description
-               : (j.description && j.description.length > 60)
-                 ? j.description
-                 : `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
+    // Stable content hash (job_<hex>) that keys the lazily-loaded description
+    // shards; absent on pre-split jobs.json, where desc is used as-is.
+    jobId:   typeof j.job_id === 'string' ? j.job_id : '',
+    // Placeholder until the full text arrives from descriptions/<shard>.json
+    // (see useJobDescription). jobs-index.json carries no description.
+    desc:    (j.description && j.description.length > 60)
+               ? j.description
+               : `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${j.location ? ' in ' + j.location : ''}. Posted via ${j.source || 'their careers page'}.`,
   };
+}
+
+// ── Lazy descriptions ────────────────────────────────────────────────────
+// Full "About the role" text lives in docs/descriptions/<0-f>.json, keyed by
+// job_id and sharded on its first hex digit (scripts/publish.py). One shard is
+// fetched the first time a job in it is opened, then served from memory.
+
+const DESC_SHARD_RE = /^job_([0-9a-f])/;
+const descShardCache = new Map();   // shard key → Promise<{ [jobId]: text }>
+
+function loadDescriptionShard(key) {
+  if (!descShardCache.has(key)) {
+    const p = fetch(`descriptions/${key}.json`, { cache: 'no-cache' })
+      .then(r => {
+        if (!r.ok) throw new Error(`descriptions/${key}.json: HTTP ${r.status}`);
+        return r.json();
+      })
+      .catch(err => {
+        console.error('[terminal] description shard failed:', err);
+        descShardCache.delete(key);   // allow a retry on the next open
+        return {};
+      });
+    descShardCache.set(key, p);
+  }
+  return descShardCache.get(key);
+}
+
+function useJobDescription(job) {
+  const [text, setText] = React.useState(null);
+  const jobId = job ? job.jobId : '';
+  React.useEffect(() => {
+    setText(null);
+    const m = DESC_SHARD_RE.exec(jobId || '');
+    if (!m) return undefined;
+    let live = true;
+    loadDescriptionShard(m[1]).then(shard => {
+      if (live && typeof shard[jobId] === 'string') setText(shard[jobId]);
+    });
+    return () => { live = false; };
+  }, [jobId]);
+  if (!job) return '';
+  return text || job.desc;
 }
 
 // ── Bootstrap ────────────────────────────────────────────────────────────
@@ -145,10 +191,20 @@ window.NGJOBS = NGJOBS;
 // in app.jsx can render a real timestamp instead of a hardcoded one.
 window.NGJOBS_META = {};
 
-const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
-  .then(r => {
-    if (!r.ok) throw new Error(`jobs.json: HTTP ${r.status}`);
+// jobs-index.json is jobs.json minus descriptions (a fraction of the size).
+// Fall back to the full jobs.json if the index is missing, e.g. while a
+// deploy lands before the scraper has published the index.
+function fetchJobsPayload(path) {
+  return fetch(path, { cache: 'no-cache' }).then(r => {
+    if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
     return r.json();
+  });
+}
+
+const NGJOBS_READY = fetchJobsPayload('jobs-index.json')
+  .catch(err => {
+    console.warn('[terminal] jobs-index.json unavailable, falling back to jobs.json:', err);
+    return fetchJobsPayload('jobs.json');
   })
   .then(d => {
     window.NGJOBS_META = d.meta || {};
@@ -173,5 +229,5 @@ const NGJOBS_READY = fetch('jobs.json', { cache: 'no-cache' })
 Object.assign(window, {
   TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
   fmtComp, daysLeft, deadlineLabel, deadlineHot,
-  NGJOBS_READY,
+  NGJOBS_READY, useJobDescription,
 });

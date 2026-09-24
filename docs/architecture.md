@@ -8,7 +8,7 @@ The New Grad Jobs aggregator avoids traditional full-stack web architectures (e.
 flowchart TD
     %% Triggers
     subgraph Trigger["1. Activation Layer"]
-        cron(fa:fa-clock GitHub Actions Cron<br/>Every 5 mins)
+        cron(fa:fa-clock GitHub Actions Cron<br/>Every 30 mins)
         manual(fa:fa-play Manual Dispatch)
     end
 
@@ -75,7 +75,7 @@ flowchart TD
 
 ### 1. Activation Layer (Infrastructure)
 The entire system is orchestrated by GitHub Actions `.github/workflows/update-jobs.yml`.
-- **Cron Trigger**: Runs every 5 minutes automatically.
+- **Cron Trigger**: Runs about every 30 minutes (cron `7,37 * * * *`), with `scraper-watchdog.yml` re-dispatching it if data goes stale.
 - **Compute**: Uses the standard `ubuntu-latest` runner equipped with Python 3.11+.
 
 ### 2. Core Engine (`scripts/update_jobs.py`)
