@@ -88,6 +88,8 @@ bash .github/create-labels.sh
 |-------|-------|-------------|
 | `automated pr` | `#0e8a16` | PR created by an automation (Dependabot, Actions bot) |
 | `ci-cd` | `#bfdadc` | Changes to GitHub Actions workflows or CI configuration |
+| `possible-duplicate` | `#cfd3d7` | Added by the duplicate-issue guardrail; needs confirmation |
+| `scraper-stale` | `#d93f0b` | Opened/closed by `scraper-watchdog.yml` when job data is not refreshed on schedule (created by the workflow, not `create-labels.sh`) |
 
 ### 🤝 Community & Sponsorship Labels
 | Label | Color | Description |

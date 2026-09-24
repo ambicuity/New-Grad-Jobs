@@ -44,12 +44,12 @@ body:
     attributes:
       label: "🏗️ Which area does this affect?"
       options:
-        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "🤖 Core scraper (scripts/ngj/, scripts/*.py)"
         - "⚙️ Configuration (config.yml)"
-        - "🌐 Frontend / website (docs/)"
+        - "🌐 Frontend / website (site/)"
         - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
         - "🧪 Tests (tests/)"
-        - "📚 Documentation (*.md, docs/wiki/)"
+        - "📚 Documentation (*.md, docs/)"
         - "🏷️ Company data / classification"
         - "Other"
     validations:

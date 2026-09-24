@@ -39,9 +39,8 @@ body:
         whether it is the right size and scope for a new contributor.
         Reference specific files, functions, or line numbers if you know them.
       placeholder: |
-        e.g. "The `categorize_job()` function in `scripts/update_jobs.py` does not handle
-        job titles that contain 'Staff Engineer'. These should map to `software_engineering`
-        but currently fall through to 'Other'."
+        e.g. "`categorize_job()` in `scripts/ngj/taxonomy.py` files titles like
+        'Compiler Engineer' under 'Other'. They should map to `software_engineering`."
     validations:
       required: true
 
@@ -50,12 +49,12 @@ body:
     attributes:
       label: "🏗️ Which area does this touch?"
       options:
-        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "🤖 Core scraper (scripts/ngj/, scripts/*.py)"
         - "⚙️ Configuration (config.yml)"
-        - "🌐 Frontend / website (docs/)"
+        - "🌐 Frontend / website (site/)"
         - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
         - "🧪 Tests (tests/)"
-        - "📚 Documentation (*.md, docs/wiki/)"
+        - "📚 Documentation (*.md, docs/)"
         - "🏷️ Company data / classification"
         - "Other"
     validations:
