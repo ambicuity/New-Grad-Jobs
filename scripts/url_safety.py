@@ -1,6 +1,6 @@
 """Publish-time URL safety checks (stdlib only).
 
-Every URL written into the public ``docs/jobs.json`` artifact must be a public
+Every URL written into the public ``jobs.json`` artifact must be a public
 ``http``/``https`` link. This module rejects anything that could point a reader
 (or an automated fetcher) at an internal target:
 

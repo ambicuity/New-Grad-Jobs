@@ -338,7 +338,6 @@ Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable
 | `location` | string | |
 | `url` | string | direct link to the posting on the source ATS |
 | `posted_at` | ISO 8601 | |
-| `posted_display` | string | human-readable ("Today", "3 days ago") |
 | `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (…)` |
 | `category` | object | `{id, name, emoji}` — one of the 12 categories |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |

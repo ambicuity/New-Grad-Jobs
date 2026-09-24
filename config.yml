@@ -36,7 +36,7 @@ filtering:
 
     # Year-based programs
     # Keep the in-flight cohort years current — 2027 reqs open ~18 months ahead,
-    # so they are live now. Mirrored in strong_new_grad_signals in update_jobs.py.
+    # so they are live now. Mirrored in STRONG_NEW_GRAD_SIGNALS in scripts/ngj/filters.py.
     - "2024 start"
     - "2025 start"
     - "2026 start"
