@@ -160,11 +160,19 @@ def fetch_all_greenhouse_jobs(companies: Sequence[dict[str, Any]], settings: Set
     """List every configured Greenhouse board in parallel."""
     # One worker per 3 companies, clamped to the configured pool bounds.
     workers = min(settings.greenhouse_max_workers, max(settings.greenhouse_min_workers, len(companies) // 3))
-    return ngj_http.fan_out(
+    first_pass = ngj_http.fan_out(
         list(companies),
         lambda c: fetch_greenhouse_jobs(c['name'], c['url'], timeout=settings.http_timeout),
         max_workers=workers,
         source=SOURCE,
         describe=lambda c: c.get('name', '<unknown>'),
         label='Greenhouse',
+    )
+    # Big boards can stall past the read timeout while every source runs at
+    # once; give timed-out ones a sequential second chance with a longer timeout.
+    return ngj_http.retry_transient_failures(
+        list(companies),
+        first_pass,
+        lambda c: fetch_greenhouse_jobs(c['name'], c['url'], timeout=settings.http_timeout * 2),
+        describe=lambda c: c.get('name', '<unknown>'),
     )

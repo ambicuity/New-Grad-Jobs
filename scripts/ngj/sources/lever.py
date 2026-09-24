@@ -44,11 +44,19 @@ def fetch_lever_jobs(
 def fetch_all_lever_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch every configured Lever company in parallel."""
     workers = min(settings.lever_max_workers, max(settings.lever_min_workers, len(companies)))
-    return ngj_http.fan_out(
+    first_pass = ngj_http.fan_out(
         list(companies),
         lambda c: fetch_lever_jobs(c['name'], c['url'], timeout=settings.http_timeout),
         max_workers=workers,
         source=SOURCE,
         describe=lambda c: c.get('name', '<unknown>'),
         label='Lever',
+    )
+    # Big boards can stall past the read timeout while every source runs at
+    # once; give timed-out ones a sequential second chance with a longer timeout.
+    return ngj_http.retry_transient_failures(
+        list(companies),
+        first_pass,
+        lambda c: fetch_lever_jobs(c['name'], c['url'], timeout=settings.http_timeout * 2),
+        describe=lambda c: c.get('name', '<unknown>'),
     )

@@ -84,11 +84,19 @@ def fetch_ashby_jobs(
 
 def fetch_all_ashby_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch every configured Ashby board in parallel."""
-    return ngj_http.fan_out(
+    first_pass = ngj_http.fan_out(
         list(companies),
         lambda c: fetch_ashby_jobs(c['name'], c['url'], timeout=settings.http_timeout),
         max_workers=min(settings.ashby_max_workers, len(companies)),
         source=SOURCE,
         describe=lambda c: c.get('name', '<unknown>'),
         label='Ashby',
+    )
+    # Big boards can stall past the read timeout while every source runs at
+    # once; give timed-out ones a sequential second chance with a longer timeout.
+    return ngj_http.retry_transient_failures(
+        list(companies),
+        first_pass,
+        lambda c: fetch_ashby_jobs(c['name'], c['url'], timeout=settings.http_timeout * 2),
+        describe=lambda c: c.get('name', '<unknown>'),
     )

@@ -362,3 +362,35 @@ def fan_out(
         label, len(merged.jobs), total - failed, total, noun,
     )
     return merged
+
+
+TRANSIENT_KINDS = frozenset({KIND_TIMEOUT, KIND_NETWORK})
+
+
+def retry_transient_failures(
+    items: Sequence[T],
+    first_pass: SourceResult,
+    fetch_one: Callable[[T], SourceResult],
+    *,
+    describe: Callable[[T], str],
+) -> SourceResult:
+    """Re-fetch, one at a time, the items whose first attempt timed out or hit a network error.
+
+    Every source fetches concurrently, so the largest boards (Anduril, SpaceX:
+    ~2.5 MB lists) can stall past the read timeout under contention even though
+    they answer in well under a second on their own. A short sequential second
+    pass recovers them. Permanent failures (HTTP 4xx, parse, config) are kept
+    as-is and never retried.
+    """
+    transient = {e.company for e in first_pass.errors if e.kind in TRANSIENT_KINDS}
+    retry = [item for item in items if describe(item) in transient]
+    if not retry:
+        return first_pass
+
+    logger.info("🔁 Retrying %s timed-out item(s) sequentially: %s", len(retry), ", ".join(map(describe, retry)))
+    kept = SourceResult(
+        jobs=first_pass.jobs,
+        errors=tuple(e for e in first_pass.errors if e.company not in transient),
+        raw_count=first_pass.raw_count,
+    )
+    return SourceResult.merge([kept, *(fetch_one(item) for item in retry)])
