@@ -27,14 +27,14 @@ body:
         and the contribution workflow.
 
         You should feel comfortable:
-        - Navigating `scripts/update_jobs.py`, `config.yml`, and `tests/`
+        - Navigating `scripts/ngj/`, `config.yml`, and `tests/`
         - Understanding how `filter_jobs()`, `deduplicate_jobs()`, and `categorize_job()` work
         - Following existing patterns without step-by-step guidance
         - Writing non-trivial pytest tests with mocking
 
         > [!IMPORTANT]
-        > **You must be assigned before starting** — comment `/assign` to claim this issue.
-        > PRs submitted without a prior assignment will be closed.
+        > **Comment on the issue before starting** so the maintainer can confirm the approach
+        > and nobody duplicates work.
 
         If you are new to this repo, please start with a
         [Good First Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3A%22good+first+issue%22+no%3Aassignee)
@@ -67,7 +67,7 @@ body:
       label: "🐞 Problem Description"
       description: |
         Describe the problem clearly and precisely.
-        You may assume the reader can navigate `update_jobs.py` and understands the data flow.
+        You may assume the reader can navigate `scripts/ngj/` and understands the data flow.
         Explain: what is wrong or missing, where it lives in the codebase, and why it matters.
       value: |
         Describe the problem here.
@@ -107,12 +107,12 @@ body:
     attributes:
       label: "🏗️ Which area does this touch?"
       options:
-        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "🤖 Core scraper (scripts/ngj/, scripts/*.py)"
         - "⚙️ Configuration (config.yml)"
-        - "🌐 Frontend / website (docs/)"
+        - "🌐 Frontend / website (site/)"
         - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
         - "🧪 Tests (tests/)"
-        - "📚 Documentation (*.md, docs/wiki/)"
+        - "📚 Documentation (*.md, docs/)"
         - "🏷️ Company data / classification"
         - "Other"
     validations:
@@ -124,6 +124,6 @@ body:
       label: "🔗 Additional Context"
       description: Links to relevant code, API docs, prior issues, or error logs.
       placeholder: |
-        - Related function: `normalize_date_string()` at update_jobs.py:1012
+        - Related function: `normalize_date_string()` in scripts/ngj/dates.py
         - Related issue: #42
         - Greenhouse API docs: https://developers.greenhouse.io/job-board

@@ -11,7 +11,7 @@ body:
         ## Thanks for contributing! 🚀
 
         This template is for **Advanced Issues** — work that requires deep familiarity with
-        `update_jobs.py` and confidence making changes that may span multiple functions or
+        the `scripts/ngj/` pipeline and confidence making changes that may span multiple functions or
         affect core behavior (pagination, deduplication, threading, date parsing).
 
         Before creating an Advanced Issue, consider opening an
@@ -29,16 +29,16 @@ body:
         and its architectural patterns.
 
         You should feel comfortable:
-        - Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit
+        - Understanding the full data flow: `config.yml` → fetch → dedup → filter → enrich → publish → deploy
         - Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations
-        - Navigating `filter_jobs()`, `deduplicate_jobs()`, `get_job_key()`, and `normalize_date_string()`
+        - Navigating `filter_jobs()`, `deduplicate_jobs()`, `compute_job_id()`, and `normalize_date_string()`
         - Reasoning about API contract changes (Greenhouse, Lever, Workday, JobSpy)
-        - Understanding the git commit flow in `update-jobs.yml`
+        - Understanding the scrape → build → deploy flow in `update-jobs.yml`
         - Writing rigorous, deterministic tests without live network calls
 
         > [!IMPORTANT]
-        > **You must be assigned before starting** — comment `/assign` to claim this issue.
-        > PRs submitted without a prior assignment will be closed.
+        > **Comment on the issue before starting** so the maintainer can confirm the approach
+        > and nobody duplicates work.
 
         New contributors should start with **Good First Issues** or **Beginner Issues** first.
     validations:
@@ -52,9 +52,9 @@ body:
         >
         > This issue typically:
         > - Requires **deep understanding of the scraper architecture** (not just a single function)
-        > - May touch **shared utilities** used across multiple API sources (e.g. `get_job_key`, `normalize_date_string`)
+        > - May touch **shared utilities** used across multiple API sources (e.g. `compute_job_id`, `normalize_date_string`)
         > - May involve **non-trivial refactors**, thread-safety changes, or behavior extensions
-        > - Has **medium to high risk** if implemented incorrectly — could break 5-minute job updates
+        > - Has **medium to high risk** if implemented incorrectly — could break the 30-minute job refresh
         > - Requires careful consideration of **backward compatibility** with `jobs.json` schema
         > - Requires updating **tests, CI, and documentation together**
         >
@@ -113,12 +113,12 @@ body:
     attributes:
       label: "🏗️ Which area does this touch?"
       options:
-        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "🤖 Core scraper (scripts/ngj/, scripts/*.py)"
         - "⚙️ Configuration (config.yml)"
-        - "🌐 Frontend / website (docs/)"
+        - "🌐 Frontend / website (site/)"
         - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
         - "🧪 Tests (tests/)"
-        - "📚 Documentation (*.md, docs/wiki/)"
+        - "📚 Documentation (*.md, docs/)"
         - "🏷️ Company data / classification"
         - "Other"
     validations:
@@ -130,7 +130,7 @@ body:
       label: "🔗 Additional Context"
       description: Links to relevant code, API docs, prior issues, related functions, or error logs.
       placeholder: |
-        - Function: `deduplicate_jobs()` at update_jobs.py:985
-        - Related: `get_job_key()` at update_jobs.py:962
+        - Function: `deduplicate_jobs()` in scripts/ngj/dedup.py
+        - Related: `compute_job_id()` in scripts/contracts.py
         - Prior discussion: #42
         - Architecture reference: docs/architecture.md
