@@ -139,11 +139,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull-rebase BEFORE staging, using autostash because the scraper
-          # just modified the files in the working directory (making it dirty).
-          git config pull.rebase true
-          git pull origin main --autostash
+          # Everything this step publishes. Also the scope of the pre-push
+          # conflict-marker guard below.
+          PUBLISHED=(docs/jobs.json docs/jobs-index.json docs/descriptions docs/market-history.json
+                     docs/health.json docs/feed.xml README.md docs/predictions.json docs/predictions-status.json)
 
+          # Commit FIRST, then rebase onto the latest main. The old flow
+          # (`git pull --autostash` before staging) exits 0 even when
+          # re-applying the autostash conflicts, so conflict markers were
+          # staged and pushed. A plain rebase of our commit stops with a
+          # non-zero exit instead.
           git add docs/jobs.json docs/jobs-index.json docs/descriptions docs/market-history.json docs/health.json docs/feed.xml README.md
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
@@ -157,17 +162,56 @@ jobs:
           fi
           git commit -m "🤖 Update job listings [skip ci]"
 
-          # Push-only retry loop (rebase already done above).
+          # Anything still dirty was never published; drop it so the rebase
+          # below does not refuse to run on a dirty tree.
+          if ! git diff --quiet; then
+            echo "::notice::Discarding unpublished working-tree changes: $(git diff --name-only | tr '\n' ' ')"
+            git reset --hard --quiet HEAD
+          fi
+
+          # Rebase our single commit onto origin/main. Generated files that
+          # conflict with upstream cannot be merged meaningfully, so abort and
+          # fail; the next scheduled run regenerates them from the new main.
+          sync_with_main() {
+            git fetch origin main || return 1
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Rebase onto origin/main conflicted; nothing pushed. The next scheduled run will regenerate from the new main."
+              return 1
+            fi
+          }
+
+          # Last line of defence: never push conflict markers or broken JSON.
+          verify_publishable() {
+            local rc=0
+            git grep -nE '^(<<<<<<<|>>>>>>>)( |$)' HEAD -- "${PUBLISHED[@]}" || rc=$?
+            if [ "$rc" -ne 1 ]; then
+              # 0 = markers found; >1 = git grep itself failed.
+              echo "::error::Conflict markers in files to publish (or git grep failed, rc=${rc}); refusing to push."
+              return 1
+            fi
+            for f in docs/jobs.json docs/jobs-index.json; do
+              if ! python -m json.tool "$f" > /dev/null; then
+                echo "::error::${f} is not valid JSON; refusing to push."
+                return 1
+              fi
+            done
+          }
+
+          sync_with_main || exit 1
+          verify_publishable || exit 1
+
+          # Push-only retry loop for concurrent-write races.
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
               echo "✅ Push succeeded on attempt ${attempt}"
               exit 0
             fi
             echo "Push rejected on attempt ${attempt} (concurrent write race), retrying..."
-            # Another concurrent scraper may have pushed; fast-forward and retry.
-            git fetch origin main
-            git rebase origin/main
             sleep 5
+            # Another writer pushed; rebase onto it (failing loudly on conflict).
+            sync_with_main || exit 1
+            verify_publishable || exit 1
           done
           echo "::error::Failed to push updated job listings after 3 attempts."
           exit 1
