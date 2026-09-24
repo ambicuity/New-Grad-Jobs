@@ -13,7 +13,8 @@ const SOCIALS = [
   { href: 'https://github.com/ambicuity', label: 'GH', title: 'Ritesh Rana on GitHub' },
   { href: 'https://buymeacoffee.com/ritesh.rana', label: 'BMC', title: 'Buy Me a Coffee' },
 ];
-const linkStyle = { color: BBG.dim, textDecoration: 'none', borderBottom: `1px dotted ${BBG.rule2}` };
+// 24px line box: WCAG 2.2 minimum target size (2.5.8) for the footer links.
+const linkStyle = { color: BBG.dim, textDecoration: 'none', borderBottom: `1px dotted ${BBG.rule2}`, display: 'inline-block', lineHeight: '22px', minHeight: 24, minWidth: 24, textAlign: 'center' };
 
 // Bottom-right footer: nav links / socials / version+copyright, right-aligned
 // in a thin row beneath the tab-level status bar.
@@ -23,8 +24,8 @@ export function SiteFooter() {
     <div style={{
       display: 'flex', justifyContent: isMobile ? 'center' : 'flex-end',
       borderTop: `1px solid ${BBG.rule2}`, background: BBG.panel,
-      padding: isMobile ? '6px 10px' : '4px 14px', gap: isMobile ? 10 : 14,
-      fontSize: 10, color: BBG.dim, letterSpacing: 0.3, flexWrap: 'wrap',
+      padding: isMobile ? '2px 10px' : '0 14px', gap: isMobile ? 10 : 14,
+      fontSize: 11, color: BBG.dim, letterSpacing: 0.3, flexWrap: 'wrap', alignItems: 'center',
     }}>
       <FooterRow items={LINKS} />
       <FooterRow items={SOCIALS} />
