@@ -19,19 +19,19 @@ const JOB_PAGE_CSS = [
   'main{max-width:820px;margin:0 auto;padding:24px 16px 48px}',
   'a{color:#ff9d3d}',
   'a:focus-visible{outline:1px solid #ff9d3d;outline-offset:2px}',
-  '.crumb{font-size:12px;color:#6e6e6e;letter-spacing:.6px;margin-bottom:18px}',
+  '.crumb{font-size:12px;color:#8a8a8a;letter-spacing:.6px;margin-bottom:18px}',
   '.crumb a{color:#ff9d3d;text-decoration:none}',
   'h1{font-size:22px;line-height:1.3;margin:0 0 6px;color:#fff}',
   '.co{color:#ff9d3d;font-weight:700;letter-spacing:.4px}',
   'dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:16px 0;padding:12px 14px;border:1px solid #2a2a2a;background:#0a0a0a;font-size:13px}',
-  'dt{color:#6e6e6e}dd{margin:0;overflow-wrap:anywhere}',
+  'dt{color:#8a8a8a}dd{margin:0;overflow-wrap:anywhere}',
   '.actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px}',
   '.btn{display:inline-block;padding:9px 14px;font-weight:700;text-decoration:none;letter-spacing:.5px;border:1px solid #ff9d3d}',
   '.btn.primary{background:#ff9d3d;color:#000}',
   '.btn.ghost{color:#e8e8e8;border-color:#3a3a3a}',
-  'h2{font-size:12px;color:#6e6e6e;letter-spacing:.8px;font-weight:600;margin:24px 0 8px;border-bottom:1px solid #2a2a2a;padding-bottom:4px}',
+  'h2{font-size:12px;color:#8a8a8a;letter-spacing:.8px;font-weight:600;margin:24px 0 8px;border-bottom:1px solid #2a2a2a;padding-bottom:4px}',
   '.desc p{margin:0 0 12px;overflow-wrap:anywhere}',
-  'footer{margin-top:32px;font-size:12px;color:#6e6e6e;border-top:1px solid #2a2a2a;padding-top:12px}',
+  'footer{margin-top:32px;font-size:12px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:12px}',
 ].join('');
 
 const cspHash = (text) => `'sha256-${createHash('sha256').update(text, 'utf8').digest('base64')}'`;
