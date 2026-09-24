@@ -200,6 +200,12 @@ describe('renderers', () => {
     expect(JSON.parse(blocks[0]).title).toBe(JOB.title);
   });
 
+  it('job page breadcrumb link keeps its underline (not colour-only, WCAG 1.4.1)', () => {
+    const html = renderJobPage({ job: JOB, description: 'Desc', posted, posting: null, siteUrl: SITE });
+    expect(html).toContain('<nav class="crumb"');
+    expect(html).not.toMatch(/\.crumb a\{[^}]*text-decoration:\s*none/);
+  });
+
   it('job page drops non-http apply URLs and omits JSON-LD when unavailable', () => {
     const html = renderJobPage({ job: { ...JOB, url: 'javascript:alert(1)' }, description: '', posted, posting: null, siteUrl: SITE });
     expect(html).not.toContain('javascript:');

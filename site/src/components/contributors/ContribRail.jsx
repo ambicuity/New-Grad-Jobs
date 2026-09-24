@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 import { BBG } from '../../lib/theme.js';
 import { fmtK } from '../../lib/format.js';
 import { byCommitsDesc, langColor } from '../../lib/contributors.js';
-import { Chip, ChipGroup, DrawerToggle, ellipsis, sectionLabel } from '../ui.jsx';
+import { Chip, ChipGroup, DrawerToggle, MIN_TARGET, ellipsis, sectionLabel } from '../ui.jsx';
 
 const LEADERBOARD_SIZE = 5;
 
@@ -50,6 +50,7 @@ export function ContribRail({
             {top.map((c, i) => (
               <button key={c.handle} type="button" onClick={() => onSelect(c.handle)} style={{
                 display: 'grid', gridTemplateColumns: '14px 1fr auto', gap: 6, padding: '2px 0', width: '100%',
+                minHeight: MIN_TARGET, alignItems: 'center',
                 cursor: 'pointer', fontSize: 11, background: 'transparent', border: 'none', textAlign: 'left',
                 fontFamily: 'inherit',
               }}>

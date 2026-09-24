@@ -8,3 +8,7 @@ public/jobs-index.json
 public/descriptions/
 public/feed.xml
 public/health.json
+
+# Playwright e2e output (npm run test:e2e).
+playwright-report/
+test-results/
