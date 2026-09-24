@@ -53,29 +53,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2065<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2035<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->930<!-- /COUNT --> |
-| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->18<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->923<!-- /COUNT --> |
+| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->16<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->16<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->66<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->65<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->193<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->89<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->543<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->84<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->528<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,065** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,035** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -94,7 +94,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Production Software Engineer | Lexington, Massachusetts, United States | Today | [Apply](<https://boards.greenhouse.io/andurilindustries/jobs/5248128007?gh_jid=5248128007>) |
 | Roblox | Software Engineer, Data Access | San Mateo, CA, United States | Today | [Apply](<https://careers.roblox.com/jobs/8168881?gh_jid=8168881>) |
 
-**[View all 930 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 923 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -111,9 +111,9 @@ Experience an advanced career journey with us! 🚀
 | Booz Allen Hamilton | Front End Software Engineer | Chantilly, VA | 2026-09-14 | [Apply](<https://bah.wd1.myworkdayjobs.com/job/Chantilly-VA/Front-End-Software-Engineer_R0249441>) |
 | Reddit | Front End Software Engineer, Media Player | Remote - United States | 2026-09-11 | [Apply](<https://job-boards.greenhouse.io/reddit/jobs/8198102>) |
 | Affirm | Software Engineer I, Frontend \(Upfunnel\) | Remote Canada | 2026-09-11 | [Apply](<https://job-boards.greenhouse.io/affirm/jobs/7985907003>) |
-| Accenture | Web Developer Associate | — | 2026-08-25 | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Mumbai/Web-Developer-Associate_AIOC-S01652221>) |
+| CACI | Front-end Software Developer | Denver, CO, US | 2026-08-25 | [Apply](<https://caci.wd1.myworkdayjobs.com/job/Denver-CO-US/Front-end-Software-Developer_329940>) |
 
-**[View all 18 Frontend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 16 Frontend Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Backend Engineering
 
@@ -154,7 +154,6 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Raytheon | Software Security Engineer II | US-TX-MCKINNEY-513PW ~ 2501 W University Dr ~ PW BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-TX-MCKINNEY-513PW--2501-W-University-Dr--PW-BLDG/Software-Security-Engineer-II_01877728>) |
 | DirectViz Solutions, LLC | Cybersecurity Engineer II \(Secret clearance required\) | Virginia Beach, VA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=8811e52407cd4e70>) |
 | Northrop Grumman | 2026 Associate Cybersecurity Analyst - Pathways Program - Rocket Center WV | United States-West Virginia-Rocket Center | Today | [Apply](<https://ngc.wd1.myworkdayjobs.com/job/United-States-West-Virginia-Rocket-Center/XMLNAME-2026-Associate-Cybersecurity-Analyst---Pathways-Program---Rocket-Center-WV_R10252865>) |
 | Raytheon | Systems Security Engineer I – Anti-Tamper / Program Protection \(Onsite-Tucson, AZ\) – P1 | US-AZ-TUCSON-801 ~ 1151 E Hermans Rd ~ BLDG 801 \(External Site\) | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-801--1151-E-Hermans-Rd--BLDG-801-External-Site/Systems-Security-Engineer-I---Anti-Tamper---Program-Protection--Onsite-Tucson--AZ----P1_01873154>) |
@@ -164,8 +163,9 @@ Experience an advanced career journey with us! 🚀
 | Navy Federal Credit Union | Security Engineer \(Linux Systems Engineer\) | Pensacola, FL, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=9a023a2fad2846af>) |
 | Amaris Consulting | Embedded Linux Security Engineer | Brossard, QC, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=7d0c3a2f35710705>) |
 | Raytheon | Software Security Engineer - II, Onsite | US-CA-GOLETA-H03 ~ 6380 Hollister Ave ~ BLDG H03 | 1 day ago | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-CA-GOLETA-H03--6380-Hollister-Ave--BLDG-H03/Software-Security-Engineer---II--Onsite_01876900>) |
+| Cerebras | Distributed Systems Security Engineer | Sunnyvale , California , United States | 3 days ago | [Apply](<https://jobs.ashbyhq.com/cerebras/ce441c5a-5c03-465a-8447-2bf1fdabf370>) |
 
-**[View all 66 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 65 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -259,16 +259,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Array Technologies | Controls/Electrical Engineer I | Chandler, AZ, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=cdf33911ff5f8c51>) |
 | Raytheon | Mechanical Engineer I - Structural Engineer | US-AL-HUNTSVILLE-315 ~ 315 Bob Heath Dr ~ BOB HEATH | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AL-HUNTSVILLE-315--315-Bob-Heath-Dr--BOB-HEATH/Mechanical-Engineer-I---Structural-Engineer_01876936>) |
-| Raytheon | Mechanical Engineer II – Structural Engineer | US-AL-HUNTSVILLE-315 ~ 315 Bob Heath Dr ~ BOB HEATH | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AL-HUNTSVILLE-315--315-Bob-Heath-Dr--BOB-HEATH/Mechanical-Engineer-II---Structural-Engineer_01876935>) |
-| Raytheon | Electrical Engineer II - Production Hardware | US-AZ-TUCSON-M02 ~ 1151 E Hermans Rd ~ BLDG M02 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-M02--1151-E-Hermans-Rd--BLDG-M02/Electrical-Engineer-II---Production-Hardware_01877524>) |
 | Graphcore Early Careers | Graduate Firmware Engineer | Austin, TX, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=8db23fccc69b3bed>) |
-| Raytheon | Electrical Engineer I - Test | US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Electrical-Engineer-I---Test_01877621>) |
-| Raytheon | Manufacturing Electrical Engineer II \(Onsite\) | US-IA-CEDAR RAPIDS-109 ~ 400 Collins Rd NE ~ BLDG 109 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-IA-CEDAR-RAPIDS-109--400-Collins-Rd-NE--BLDG-109/Manufacturing-Electrical-Engineer-II--Onsite-_01876865>) |
 | Raytheon | HWIL Electrical Engineer I | US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/HWIL-Electrical-Engineer-I_01874563>) |
 | Frontera Space | Aerospace &amp; Mechanical Engineer - Entry-level | Cedar Park, TX, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=36745ee689efbf27>) |
 | Vertex Pharmaceuticals | Vertex Spring Co-Op 2027, Technical Operations - Packaging | Boston, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=38871244988834be>) |
+| Margo Supplies Ltd. | Engineering Graduate / Engineer-in-Training \(EIT\) – Product Development | Calgary, AB, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=49ec8ec5263763a2>) |
+| Stantec | Electrical Engineering Student - Buildings \(Summer 2027\) - 12-26 Month Term | Calgary, AB, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=1abe16298e1addbe>) |
+| Northrop Grumman | 2027 Associate Mechanical Engineer - Pathways Program - Baltimore MD | United States-Maryland-Baltimore | 1 day ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/job/United-States-Maryland-Baltimore/XMLNAME-2027-Associate-Mechanical-Engineer---Pathways-Program---Baltimore-MD_R10251122>) |
+| Panasonic | Hardware Engineer I | Irvine, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=c64dd7fbc0068a13>) |
 
-**[View all 89 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 84 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -280,14 +280,14 @@ Experience an advanced career journey with us! 🚀
 | Merck | Specialist, Business Analyst – Content Review Automation \(AI-enabled MLR / Content Catalyst\) | IND - Telangana - Hyderabad \(Hitec City Raidurg\) | Today | [Apply](<https://msd.wd5.myworkdayjobs.com/job/IND---Telangana---Hyderabad-Hitec-City-Raidurg/Specialist--Business-Analyst---Content-Review-Automation--AI-enabled-MLR---Content-Catalyst-_R399123-1>) |
 | Raytheon | Electrical Engineering for Manufacturing Co-op \(Spring/Summer 2027\) | US-IA-BELLEVUE-186 ~ 1500 State St ~ STATE | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-IA-BELLEVUE-186--1500-State-St--STATE/Electrical-Engineering-for-Manufacturing-Co-op--Spring-Summer-2027-_01876808>) |
 | Radiance Technologies | Junior Aerospace Engineer | Beavercreek, OH | Today | [Apply](<https://radiancetech.wd12.myworkdayjobs.com/job/Beavercreek-OH/Junior-Aerospace-Engineer_HR102430>) |
-| Raytheon | Manufacturing Engineer I \(3rd Shift\) | US-MA-ANDOVER-AN2 ~ 352 Lowell St ~ AN2 HAMPSHIRE BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-MA-ANDOVER-AN2--352-Lowell-St--AN2-HAMPSHIRE-BLDG/Manufacturing-Engineer-I--3rd-Shift-_01874890>) |
 | Capital One | Emerging Sales Associate - August 2027 | Plano, TX | Today | [Apply](<https://capitalone.wd12.myworkdayjobs.com/job/Plano-TX/Emerging-Sales-Associate---August-2027_R244419-1>) |
-| Raytheon | Simulation Analysis Engineer II Onsite | US-AZ-TUCSON-805A ~ 1151 E Hermans Rd ~ BLDG 805A | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-805A--1151-E-Hermans-Rd--BLDG-805A/Simulation-Analysis-Engineer-II-Onsite_01867360>) |
 | Accenture | Consulting Graduate Programme - January 2027 | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Lisbon/Consulting-Graduate-Programme---January-2027_R00359243>) |
 | Raytheon | Production Test Engineer, II | US-AL-HUNTSVILLE-7745 ~ 7745 Eagle Rd ~ EAGLE | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AL-HUNTSVILLE-7745--7745-Eagle-Rd--EAGLE/Production-Test-Engineer--II_01875055>) |
 | Boeing | Associate Electrical Test Engineer | USA - Huntsville, AL | Today | [Apply](<https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Electrical-Test-Engineer--Associate-_JR2026515396-1>) |
+| Standard Chartered Bank | Apprentice Functions GBS India 2026 | KA, IN | Today | [Apply](<https://in.indeed.com/viewjob?jk=f68fff5f0e355418>) |
+| Raytheon | Industrial Engineering Co-op \(Summer/Fall 2027\) | US-IA-BELLEVUE-186 ~ 1500 State St ~ STATE | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-IA-BELLEVUE-186--1500-State-St--STATE/Industrial-Engineering-Co-op--Summer-Fall-2027-_01876812>) |
 
-**[View all 543 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 528 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -410,4 +410,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-24 18:32:32 UTC*
+*Last updated: 2026-09-24 18:37:07 UTC*
