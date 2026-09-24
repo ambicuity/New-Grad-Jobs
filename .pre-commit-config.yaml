@@ -1,41 +1,47 @@
+# Hook revisions are frozen to commit SHAs (`pre-commit autoupdate --freeze`);
+# the trailing comment records the release tag.
+#
+# Generated / scraped artifacts are skipped by every hook.
+exclude: |
+  (?x)^(
+    jobs\.json|
+    docs/(jobs|jobs-index|market-history|predictions|predictions-status|job-evaluations|contributors|health)\.json|
+    docs/feed\.xml|
+    docs/descriptions/.*|
+    site/public/(jobs|jobs-index|health)\.json|
+    site/public/feed\.xml|
+    site/public/descriptions/.*
+  )$
+
 repos:
-  # --- Python Formatting & Linting ---
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: trailing-whitespace
-        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/predictions\.json|docs/index\.html)$'
+        exclude: ^docs/index\.html$
       - id: end-of-file-fixer
-        exclude: '^(jobs\.json|docs/jobs\.json|docs/market-history\.json|docs/predictions\.json|docs/index\.html)$'
+        exclude: ^docs/index\.html$
       - id: check-yaml
-        args: ['--unsafe']   # Allow custom YAML tags in config.yml
       - id: check-json
+      - id: check-toml
       - id: check-merge-conflict
       - id: check-added-large-files
-        args: ['--maxkb=2048']  # Block files larger than 2MB (jobs.json is auto-generated)
-        exclude: '^(jobs\.json|docs/jobs\.json)$'
+        args: ['--maxkb=2048']
       - id: detect-private-key
       - id: mixed-line-ending
         args: ['--fix=lf']
 
-  # --- Python Syntax & Import Sorting ---
-  - repo: https://github.com/PyCQA/flake8
-    rev: 7.0.0
+  # --- Python lint + import sorting (replaces flake8 + isort). Config: pyproject.toml.
+  # Keep this rev in step with the ruff pin in requirements-dev.txt.
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 2eeb5678de71a00c0902cbda7105d328432f72cb  # frozen: v0.16.8
     hooks:
-      - id: flake8
-        args: ['--select=E9,F63,F7,F82', '--max-line-length=120']
-        files: ^scripts/.*\.py$
-
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
-    hooks:
-      - id: isort
-        args: ['--profile=black', '--line-length=120']
-        files: ^scripts/.*\.py$
+      - id: ruff-check
+        args: ['--exit-non-zero-on-fix']
 
   # --- Secret Detection ---
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.18.4
+    rev: 2ca41cc1372d1e939a6a879f18cdc19fc1cac1ce  # frozen: v8.30.0
     hooks:
       - id: gitleaks
         name: Detect secrets (gitleaks)
