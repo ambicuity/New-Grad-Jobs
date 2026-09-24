@@ -50,9 +50,31 @@ DEFAULT_ORCHESTRATOR_WORKERS = 20
 DEFAULT_WORKDAY_PAGE_LIMIT = 20
 DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY = 200
 DEFAULT_WORKDAY_MAX_WORKERS = 8
+# Per searchText keyword when apis.workday.search_filters.title_keywords is set
+# (paging also stops early once a page has no plausible new-grad title).
+DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD = 200
+# Keyword queries run concurrently per tenant (tenants themselves run in parallel
+# up to apis.workday.max_workers), keeping per-host load to a few requests.
+DEFAULT_WORKDAY_KEYWORD_WORKERS = 3
+# Per-company time budget: a slow tenant (RBC: ~7s per search page) keeps the
+# pages fetched so far instead of becoming the long pole of the whole run.
+DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY = 45
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
+
+
+# JobSpy runs only when apis.jobspy.enabled is true. Every consumer (Settings,
+# the JobSpy adapter, health reporting) must use jobspy_enabled() so the
+# default cannot drift between them.
+DEFAULT_JOBSPY_ENABLED = False
+
+
+def jobspy_enabled(section: Mapping[str, Any] | None) -> bool:
+    """Whether ``apis.jobspy`` is enabled (default :data:`DEFAULT_JOBSPY_ENABLED`)."""
+    if not isinstance(section, Mapping):
+        return DEFAULT_JOBSPY_ENABLED
+    return bool(section.get("enabled", DEFAULT_JOBSPY_ENABLED))
 
 
 @dataclass(frozen=True)
@@ -81,6 +103,9 @@ class Settings:
     workday_max_jobs_per_company: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
     workday_timeout: int = DEFAULT_WORKDAY_TIMEOUT
     workday_max_workers: int = DEFAULT_WORKDAY_MAX_WORKERS
+    workday_search_keywords: tuple[str, ...] = ()
+    workday_max_jobs_per_keyword: int = DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD
+    workday_max_seconds_per_company: int = DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -128,6 +153,13 @@ def _section(config: Mapping[str, Any], *keys: str) -> Mapping[str, Any]:
     return node if isinstance(node, Mapping) else {}
 
 
+def _string_tuple(value: Any) -> tuple[str, ...]:
+    """Non-empty, de-duplicated, stripped strings from a YAML list (anything else → ())."""
+    if not isinstance(value, (list, tuple)):
+        return ()
+    return tuple(dict.fromkeys(v.strip() for v in value if isinstance(v, str) and v.strip()))
+
+
 def build_settings(
     config: Mapping[str, Any],
     env: Mapping[str, str] | None = None,
@@ -137,6 +169,7 @@ def build_settings(
     repo_root = Path(repo_root)
     pools = _section(config, "worker_pools")
     workday = _section(config, "apis", "workday")
+    workday_search = _section(config, "apis", "workday", "search_filters")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -172,6 +205,13 @@ def build_settings(
             workday.get("timeout"), DEFAULT_WORKDAY_TIMEOUT, "apis.workday.timeout"),
         workday_max_workers=coerce_positive_int(
             workday.get("max_workers"), DEFAULT_WORKDAY_MAX_WORKERS, "apis.workday.max_workers"),
+        workday_search_keywords=_string_tuple(workday_search.get("title_keywords")),
+        workday_max_jobs_per_keyword=coerce_positive_int(
+            workday_search.get("max_jobs_per_keyword"), DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD,
+            "apis.workday.search_filters.max_jobs_per_keyword"),
+        workday_max_seconds_per_company=coerce_positive_int(
+            workday.get("max_seconds_per_company"), DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY,
+            "apis.workday.max_seconds_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -180,7 +220,7 @@ def build_settings(
         graphql_max_jobs_per_source=coerce_positive_int(
             graphql.get("max_jobs_per_source"), DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE,
             "apis.graphql.max_jobs_per_source"),
-        jobspy_enabled=bool(jobspy.get("enabled", False)),
+        jobspy_enabled=jobspy_enabled(jobspy),
     )
 
 
@@ -197,6 +237,10 @@ def describe_settings(settings: Settings) -> None:
         "     Workday: page_limit=%s, max_total=%s, timeout=%ss, max_workers=%s",
         settings.workday_page_limit, settings.workday_max_jobs_per_company,
         settings.workday_timeout, settings.workday_max_workers,
+    )
+    logger.info(
+        "     Workday search: %s keyword(s), max %s jobs per keyword",
+        len(settings.workday_search_keywords) or "no (full listing)", settings.workday_max_jobs_per_keyword,
     )
     logger.info("     Google: enabled=%s, max_pages=%s", settings.google_enabled, settings.google_max_pages)
     logger.info("     GraphQL timeout: %ss", settings.graphql_timeout)

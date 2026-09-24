@@ -1,3 +1,10 @@
+"""Status handling of the board adapters on top of ``fetch_json_with_retry``.
+
+Transient statuses (429/5xx) are retried by the session's urllib3 policy
+(see tests/test_http_retry.py), so by the time a status reaches the adapter
+it is final: exactly one ``limited_get`` call, reported as ``KIND_HTTP``.
+"""
+
 import os
 import sys
 
@@ -6,154 +13,35 @@ import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from ngj.http import is_retryable_status  # noqa: E402
 from ngj.models import KIND_HTTP  # noqa: E402
 from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
 from ngj.sources.lever import fetch_lever_jobs  # noqa: E402
 
 
-class TestIsRetryableStatus:
-    """Tests for the is_retryable_status() shared helper."""
-
-    @pytest.mark.parametrize(
-        ("status_code", "expected"),
-        [
-            # Explicitly non-retryable
-            (400, False),
-            (401, False),
-            (404, False),
-            (405, False),
-            (410, False),
-            (451, False),
-            # Explicitly retryable
-            (403, True),
-            (408, True),
-            (422, True),
-            (429, True),
-            (500, True),
-            (502, True),
-            (503, True),
-            (504, True),
-            # Default behavior for unknown codes
-            (418, False),  # Unknown 4xx
-            (599, True),   # Unknown 5xx
-            # Success codes
-            (200, False),
-            (201, False),
-            # Redirects
-            (302, False),
-        ],
-    )
-    def test_is_retryable_status(self, status_code: int, expected: bool):
-        """Verify is_retryable_status classifies status codes correctly."""
-        assert is_retryable_status(status_code) is expected
-
-
-# ---------------------------------------------------------------------------
-# Helpers for integration tests
-# ---------------------------------------------------------------------------
-
-def _make_http_error(status_code: int) -> requests.exceptions.HTTPError:
-    """Build a requests.HTTPError with a fake Response attached."""
+def _response(status_code: int) -> requests.Response:
     resp = requests.models.Response()
     resp.status_code = status_code
     resp._content = b"{}"
-    error = requests.exceptions.HTTPError(response=resp)
-    return error
+    return resp
 
 
-# ---------------------------------------------------------------------------
-# Integration: fetch_greenhouse_jobs
-# ---------------------------------------------------------------------------
-
-class TestGreenhouseHttpStatus:
-    """Verify fetch_greenhouse_jobs uses is_retryable_status correctly."""
-
-    def test_404_stops_immediately(self, monkeypatch):
-        """404 is non-retryable — should return [] without retrying."""
-        call_count = 0
-
-        def fake_limited_get(url, **kwargs):
-            nonlocal call_count
-            call_count += 1
-            raise _make_http_error(404)
-
-        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
-        result = fetch_greenhouse_jobs("TestCo", "https://api.greenhouse.io/v1/boards/test/jobs")
-        assert result.jobs == ()
-        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 404)]
-        assert call_count == 1  # No retries
-
-    def test_429_retries_then_gives_up(self, monkeypatch):
-        """429 is retryable — should retry max_retries times then give up."""
-        call_count = 0
-
-        def fake_limited_get(url, **kwargs):
-            nonlocal call_count
-            call_count += 1
-            raise _make_http_error(429)
-
-        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
-        result = fetch_greenhouse_jobs(
-            "TestCo", "https://api.greenhouse.io/v1/boards/test/jobs", max_retries=2
-        )
-        assert result.jobs == ()
-        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 429)]
-        assert call_count == 3  # 1 initial + 2 retries
-
-    def test_500_retries_then_gives_up(self, monkeypatch):
-        """500 is retryable — should exhaust all retries."""
-        call_count = 0
-
-        def fake_limited_get(url, **kwargs):
-            nonlocal call_count
-            call_count += 1
-            raise _make_http_error(500)
-
-        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
-        result = fetch_greenhouse_jobs(
-            "TestCo", "https://api.greenhouse.io/v1/boards/test/jobs", max_retries=1
-        )
-        assert result.jobs == ()
-        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 500)]
-        assert call_count == 2  # 1 initial + 1 retry
+FETCHERS = [
+    pytest.param(fetch_greenhouse_jobs, "https://boards-api.greenhouse.io/v1/boards/test/jobs", id="greenhouse"),
+    pytest.param(fetch_lever_jobs, "https://api.lever.co/v0/postings/test", id="lever"),
+]
 
 
-# ---------------------------------------------------------------------------
-# Integration: fetch_lever_jobs
-# ---------------------------------------------------------------------------
+@pytest.mark.parametrize("status", [400, 401, 404, 410, 422, 429, 500, 502, 503])
+@pytest.mark.parametrize(("fetch", "url"), FETCHERS)
+def test_final_non_2xx_status_is_reported_once_without_manual_retry(monkeypatch, fetch, url, status):
+    calls = []
 
-class TestLeverHttpStatus:
-    """Verify fetch_lever_jobs uses is_retryable_status correctly."""
+    def fake_limited_get(u, **kwargs):
+        calls.append(u)
+        return _response(status)
 
-    def test_404_stops_immediately(self, monkeypatch):
-        """404 is non-retryable — should return [] without retrying."""
-        call_count = 0
-
-        def fake_limited_get(url, **kwargs):
-            nonlocal call_count
-            call_count += 1
-            raise _make_http_error(404)
-
-        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
-        result = fetch_lever_jobs("TestCo", "https://api.lever.co/v0/postings/test")
-        assert result.jobs == ()
-        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 404)]
-        assert call_count == 1  # No retries
-
-    def test_429_retries_then_gives_up(self, monkeypatch):
-        """429 is retryable — should retry max_retries times then give up."""
-        call_count = 0
-
-        def fake_limited_get(url, **kwargs):
-            nonlocal call_count
-            call_count += 1
-            raise _make_http_error(429)
-
-        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
-        result = fetch_lever_jobs(
-            "TestCo", "https://api.lever.co/v0/postings/test", max_retries=2
-        )
-        assert result.jobs == ()
-        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 429)]
-        assert call_count == 3  # 1 initial + 2 retries
+    monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+    result = fetch("TestCo", url)
+    assert result.jobs == ()
+    assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, status)]
+    assert len(calls) == 1

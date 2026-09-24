@@ -86,7 +86,7 @@ def test_greenhouse_timeout_is_reported(monkeypatch):
 
     monkeypatch.setattr(ngj_http, "limited_get", timeout)
     monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", SourceCooldownTracker(threshold=5))
-    result = fetch_greenhouse_jobs("Slowco", "https://boards-api.greenhouse.io/v1/boards/slowco/jobs", max_retries=0)
+    result = fetch_greenhouse_jobs("Slowco", "https://boards-api.greenhouse.io/v1/boards/slowco/jobs")
     assert [(e.company, e.source, e.kind) for e in result.errors] == [("Slowco", "greenhouse", KIND_TIMEOUT)]
 
 

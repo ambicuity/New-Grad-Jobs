@@ -1,197 +1,256 @@
-"""Per-source 403 cooldown / circuit-breaker for HTTP fetchers.
+"""Per-tenant 403 cooldown / circuit-breaker for HTTP fetchers.
 
-Kept as a standalone module (used via ``ngj.http``) so it can be imported independently and
-tested in isolation without pulling in the full scraper module.
+Kept as a standalone module (used via ``ngj.http``) so it can be imported
+independently and tested in isolation without pulling in the full scraper.
+
+Two breakers run side by side:
+
+- **per tenant/board** (:meth:`SourceCooldownTracker.cooldown_key`) — one
+  Workday tenant host, one Greenhouse/Lever/Ashby board. ``threshold`` 403s
+  (default 5) from that tenant/board skip it for the rest of the run.
+- **per provider** (:meth:`SourceCooldownTracker.domain_key`) — a much higher
+  ``provider_threshold`` (default 25) of 403s summed across a provider's
+  tenants/boards means the provider itself is blocking us, so every
+  tenant/board on it is skipped.
+
+Previously only the provider key existed, so five 403s from five unrelated
+Workday tenants disabled all of Workday.
 
 Public API
 ----------
-- :class:`SourceCooldownTracker` — thread-safe per-domain 403 counter
-- :data:`SOURCE_COOLDOWN_THRESHOLD` — default trip threshold (5)
+- :class:`SourceCooldownTracker` — thread-safe 403 counter
+- :data:`SOURCE_COOLDOWN_THRESHOLD` — per tenant/board trip threshold (5)
+- :data:`SOURCE_COOLDOWN_PROVIDER_THRESHOLD` — provider-wide threshold (25)
 - :data:`SOURCE_COOLDOWN` — module-level singleton used by all fetchers
 """
 
 from __future__ import annotations
 
 import logging
+import re
 import threading
 from urllib.parse import urlparse
 
 logger = logging.getLogger(__name__)
 
-__all__ = ["SourceCooldownTracker", "SOURCE_COOLDOWN_THRESHOLD", "SOURCE_COOLDOWN"]
+__all__ = [
+    "SourceCooldownTracker",
+    "SOURCE_COOLDOWN_THRESHOLD",
+    "SOURCE_COOLDOWN_PROVIDER_THRESHOLD",
+    "SOURCE_COOLDOWN",
+]
+
+# Second-level labels that form a public suffix together with a two-letter
+# country code ("example.co.uk", "example.com.au"). Without this every
+# ".co.uk" host would collapse into one "co.uk" provider key.
+_SECOND_LEVEL_SUFFIX_LABELS = frozenset({"co", "com", "net", "org", "gov", "ac", "edu", "ne", "or", "go"})
+
+# Multi-tenant hosts where the tenant lives in the URL path, not the hostname:
+# (provider domain, regex capturing the board token from the path).
+_PATH_TENANT_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
+    # boards-api.greenhouse.io/v1/boards/<token>/jobs, api.greenhouse.io/v1/boards/<token>/...
+    ("greenhouse.io", re.compile(r"^/v\d+/boards/([^/?#]+)")),
+    # boards.greenhouse.io/<token>, job-boards.greenhouse.io/<token>
+    ("greenhouse.io", re.compile(r"^/(?!v\d+/)([^/?#]+)")),
+    # api.lever.co/v0/postings/<company>
+    ("lever.co", re.compile(r"^/v\d+/postings/([^/?#]+)")),
+    # jobs.lever.co/<company>
+    ("lever.co", re.compile(r"^/(?!v\d+/)([^/?#]+)")),
+    # api.ashbyhq.com/posting-api/job-board/<slug>
+    ("ashbyhq.com", re.compile(r"^/posting-api/job-board/([^/?#]+)")),
+    # jobs.ashbyhq.com/<slug>
+    ("ashbyhq.com", re.compile(r"^/(?!posting-api/)([^/?#]+)")),
+)
+
+
+def _split_host_path(url_or_domain: str) -> tuple[str, str]:
+    """Return (lower-case host without port, path) for a URL or bare host."""
+    s = (url_or_domain or "").strip()
+    if s.lower().startswith(("http://", "https://")):
+        parsed = urlparse(s)
+        return (parsed.netloc or "").split(":")[0].lower(), parsed.path or ""
+    host, _, rest = s.partition("/")
+    return host.split(":")[0].lower(), ("/" + rest) if rest else ""
 
 
 class SourceCooldownTracker:
-    """Thread-safe per-domain 403 circuit breaker for HTTP fetchers.
+    """Thread-safe per-tenant (+ per-provider) 403 circuit breaker.
 
-    Tracks the number of HTTP 403 Forbidden responses received from each domain
-    within a single run. Once a domain accumulates ``threshold`` 403 responses it
-    is *tripped*: all subsequent requests to any URL sharing that domain are
-    skipped for the remainder of the run.
+    Tracks HTTP 403 responses within a single run. Entirely in-memory; a fresh
+    process starts clean. Thread-safe for concurrent fetcher workers.
+    Complements :class:`ngj.http.DomainConcurrencyLimiter` (which caps
+    parallelism); this class stops fetching from sources actively rejecting us.
 
-    Design constraints
-    ------------------
-    - Entirely in-memory and stateless across runs (no files, DB, or external
-      cache).  A fresh instance is created at module load; each process run
-      starts clean.
-    - Thread-safe: safe to call from concurrent fetcher worker threads.
-    - Complements :class:`DomainConcurrencyLimiter` (which caps parallelism);
-      this class stops fetching when a source is actively rejecting requests.
+    Keys
+    ----
+    ``cooldown_key`` (tenant/board granularity)::
 
-    Domain key derivation
-    ---------------------
-    Takes the last two components of the hostname so that subdomains are
-    grouped with their parent::
+        https://acme.wd5.myworkdayjobs.com/Careers            → acme.wd5.myworkdayjobs.com
+        https://boards-api.greenhouse.io/v1/boards/acme/jobs  → greenhouse.io/acme
+        https://api.lever.co/v0/postings/acme                 → lever.co/acme
+        https://api.ashbyhq.com/posting-api/job-board/acme    → ashbyhq.com/acme
 
-        api.greenhouse.io   → greenhouse.io
-        boards-api.greenhouse.io → greenhouse.io
+    ``domain_key`` (provider granularity)::
+
         goldmansachs.wd5.myworkdayjobs.com → myworkdayjobs.com
-        careers.google.com  → google.com
-
-    Callers may also pass a plain domain string (``"greenhouse.io"``) or a
-    full URL — both are normalised to the same key.
+        boards-api.greenhouse.io           → greenhouse.io
+        careers.example.co.uk              → example.co.uk
     """
 
-    def __init__(self, threshold: int = 5) -> None:
+    def __init__(self, threshold: int = 5, provider_threshold: int | None = None) -> None:
         if isinstance(threshold, bool) or not isinstance(threshold, int) or threshold < 1:
             raise ValueError(f"threshold must be a positive integer, got {threshold!r}")
+        if provider_threshold is None:
+            provider_threshold = threshold * 5
+        if (
+            isinstance(provider_threshold, bool)
+            or not isinstance(provider_threshold, int)
+            or provider_threshold < threshold
+        ):
+            raise ValueError(
+                f"provider_threshold must be an integer >= threshold ({threshold}), got {provider_threshold!r}"
+            )
         self._threshold = threshold
+        self._provider_threshold = provider_threshold
         self._lock = threading.Lock()
         self._counts: dict[str, int] = {}
+        self._provider_counts: dict[str, int] = {}
         self._tripped: set[str] = set()
+
+    @property
+    def threshold(self) -> int:
+        return self._threshold
+
+    @property
+    def provider_threshold(self) -> int:
+        return self._provider_threshold
+
+    # ------------------------------------------------------------------ keys
 
     @staticmethod
     def domain_key(url_or_domain: str) -> str:
-        """Derive a stable, normalised domain key from a URL or hostname.
+        """Provider key: the registrable domain of a URL or hostname.
 
-        Maps subdomains to their parent so that counts aggregate correctly
-        across the varied sub-hosts used by a single API provider.
-
-        Args:
-            url_or_domain: A full URL (``https://api.greenhouse.io/…``) or a
-                bare hostname / domain string (``"api.greenhouse.io"``).
-
-        Returns:
-            The last two dot-separated components of the host in lower-case,
-            e.g. ``"greenhouse.io"``.  Returns the full host if it has fewer
-            than two components.
+        Keeps the last two labels, or three when the last two form a
+        country-code public suffix such as ``co.uk`` / ``com.au``. Returns the
+        full host when it has fewer labels than that.
         """
-        s = (url_or_domain or "").strip().lower()
-        if s.startswith(("http://", "https://")):
-            netloc = urlparse(s).netloc or ""
-            host = netloc.split(":")[0]
-        else:
-            host = s.split(":")[0]
+        host, _ = _split_host_path(url_or_domain)
         parts = [p for p in host.split(".") if p]
+        if len(parts) >= 3 and len(parts[-1]) == 2 and parts[-2] in _SECOND_LEVEL_SUFFIX_LABELS:
+            return ".".join(parts[-3:])
         if len(parts) >= 2:
             return ".".join(parts[-2:])
         return host
 
+    @classmethod
+    def cooldown_key(cls, url_or_domain: str) -> str:
+        """Tenant/board key: the full host, or ``<provider>/<board>`` on shared hosts.
+
+        Greenhouse, Lever and Ashby serve every board from one API host, so
+        the board token in the path identifies the tenant there. A bare
+        provider URL without a board falls back to the host.
+        """
+        host, path = _split_host_path(url_or_domain)
+        provider = cls.domain_key(host)
+        for domain, pattern in _PATH_TENANT_PATTERNS:
+            if provider != domain:
+                continue
+            match = pattern.match(path)
+            if match:
+                return f"{domain}/{match.group(1).lower()}"
+        return host
+
+    # --------------------------------------------------------------- state
+
+    def _tripped_key_locked(self, key: str, provider: str) -> str | None:
+        if key in self._tripped:
+            return key
+        if provider in self._tripped:
+            return provider
+        return None
+
+    def _record_locked(self, key: str, provider: str) -> bool:
+        """Count one 403; return True when this call tripped a breaker."""
+        self._counts[key] = self._counts.get(key, 0) + 1
+        self._provider_counts[provider] = self._provider_counts.get(provider, 0) + 1
+        tripped_now = False
+        if self._counts[key] >= self._threshold:
+            self._tripped.add(key)
+            tripped_now = True
+            logger.warning(
+                "  🚫 COOLDOWN TRIPPED: '%s' has returned %s 403 responses in this run "
+                "— skipping it for remainder of run", key, self._threshold,
+            )
+        if self._provider_counts[provider] >= self._provider_threshold and provider not in self._tripped:
+            self._tripped.add(provider)
+            tripped_now = True
+            logger.warning(
+                "  🚫 COOLDOWN TRIPPED: provider '%s' has returned %s 403 responses across its "
+                "tenants — skipping the whole provider for remainder of run", provider, self._provider_threshold,
+            )
+        return tripped_now
+
     def try_admit(self, source: str) -> bool:
         """Atomically record a 403 and return whether the source is still admitted.
 
-        Called when a 403 Forbidden response is received from ``source``.
-        Combines :meth:`record_403` and the subsequent :meth:`is_tripped` check
-        into a single lock acquisition to eliminate TOCTOU races.
-
-        Under a single lock:
-        - If the domain is already tripped → returns ``False`` immediately
-          (no state change; no double-count).
-        - Otherwise → increments the count.  If the count now reaches the
-          threshold, the domain is tripped and ``False`` is returned.
-        - Returns ``True`` only if the domain is still below the trip
-          threshold after recording this 403 (caller may log a warning and
-          continue).
-
-        Args:
-            source: URL or domain that returned 403.
-
-        Returns:
-            ``True`` if the domain was admitted (count still below threshold);
-            ``False`` if the domain is in cooldown (was already tripped, or
-            was just tripped by this call).
+        Under one lock: an already-tripped tenant/provider returns ``False``
+        without counting; otherwise the 403 is counted and ``False`` is
+        returned when this call trips either breaker.
         """
-        key = self.domain_key(source)
+        key = self.cooldown_key(source)
+        provider = self.domain_key(source)
         with self._lock:
-            if key in self._tripped:
-                return False  # already tripped — no state change
-            self._counts[key] = self._counts.get(key, 0) + 1
-            if self._counts[key] >= self._threshold:
-                self._tripped.add(key)
-                logger.warning(
-                    "  🚫 COOLDOWN TRIPPED: '%s' has returned %s 403 responses in this run "
-                    "— skipping for remainder of run", key, self._threshold,
-                )
-                return False  # just tripped — not admitted
-        return True  # admitted; count still below threshold
+            if self._tripped_key_locked(key, provider) is not None:
+                return False
+            return not self._record_locked(key, provider)
 
     def record_403(self, source: str) -> bool:
-        """Record one HTTP 403 response from ``source``.
+        """Record one 403; return ``True`` only on the call that trips a breaker.
 
-        Thread-safe.  If this call causes the domain to reach the configured
-        threshold, the source is tripped and an explicit log line is emitted.
-
-        .. deprecated::
-            Prefer :meth:`try_admit` for new call-sites — it combines the
-            record and trip-check in a single lock acquisition.
-
-        Args:
-            source: URL or domain that returned 403.
-
-        Returns:
-            ``True`` on the exact call that trips the cooldown (threshold just
-            reached), ``False`` in all other cases (already tripped, or count
-            still below threshold).
+        .. deprecated:: Prefer :meth:`try_admit` for new call-sites.
         """
-        key = self.domain_key(source)
+        key = self.cooldown_key(source)
+        provider = self.domain_key(source)
         with self._lock:
-            if key in self._tripped:
-                return False  # already tripped — no state change
-            self._counts[key] = self._counts.get(key, 0) + 1
-            if self._counts[key] >= self._threshold:
-                self._tripped.add(key)
-                logger.warning(
-                    "  🚫 COOLDOWN TRIPPED: '%s' has returned %s 403 responses in this run "
-                    "— skipping for remainder of run", key, self._threshold,
-                )
-                return True
-        return False
+            if self._tripped_key_locked(key, provider) is not None:
+                return False
+            return self._record_locked(key, provider)
+
+    def tripped_key(self, source: str) -> str | None:
+        """The tripped tenant/board or provider key covering ``source``, else None."""
+        key = self.cooldown_key(source)
+        provider = self.domain_key(source)
+        with self._lock:
+            return self._tripped_key_locked(key, provider)
 
     def is_tripped(self, source: str) -> bool:
-        """Return ``True`` if the source domain is in cooldown for this run.
-
-        Args:
-            source: URL or domain to check.
-
-        Returns:
-            ``True`` if the cooldown has been tripped for this domain.
-        """
-        key = self.domain_key(source)
-        with self._lock:
-            return key in self._tripped
+        """``True`` when ``source``'s tenant/board or its provider is in cooldown."""
+        return self.tripped_key(source) is not None
 
     def counts(self) -> dict[str, int]:
-        """Return a snapshot of the current 403 counts per domain key.
-
-        Intended for logging and test assertions only.
-        """
+        """Snapshot of 403 counts per tenant/board key (logging and tests only)."""
         with self._lock:
             return dict(self._counts)
 
-    def tripped_sources(self) -> set:
-        """Return the set of currently tripped domain keys.
+    def provider_counts(self) -> dict[str, int]:
+        """Snapshot of 403 counts per provider key (logging and tests only)."""
+        with self._lock:
+            return dict(self._provider_counts)
 
-        Intended for logging and test assertions only.
-        """
+    def tripped_sources(self) -> set[str]:
+        """Snapshot of tripped tenant/board and provider keys (logging and tests only)."""
         with self._lock:
             return set(self._tripped)
 
 
-# Default 403 threshold before a source is put into cooldown for the run.
-# Five 403s from the same domain indicates the source is actively blocking us,
-# not a transient per-company access denial.
+# Five 403s from one tenant/board means that tenant is blocking us.
 SOURCE_COOLDOWN_THRESHOLD: int = 5
+# 25 403s summed across a provider's tenants means the provider is blocking us.
+SOURCE_COOLDOWN_PROVIDER_THRESHOLD: int = 25
 
 # Module-level singleton — one tracker per process run, reset on each invocation.
-# Thread-safe; shared across all parallel fetcher workers.
-SOURCE_COOLDOWN = SourceCooldownTracker(threshold=SOURCE_COOLDOWN_THRESHOLD)
+SOURCE_COOLDOWN = SourceCooldownTracker(
+    threshold=SOURCE_COOLDOWN_THRESHOLD,
+    provider_threshold=SOURCE_COOLDOWN_PROVIDER_THRESHOLD,
+)

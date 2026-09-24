@@ -47,7 +47,7 @@ def _to_job(company_name: str, item: dict[str, Any], field_mappings: dict[str, s
     return {
         'company': company_name,
         'title': graphql_value_as_string(mapped('title')),
-        'location': graphql_value_as_string(mapped('location')) or 'Remote',
+        'location': graphql_value_as_string(mapped('location')) or '',
         'url': graphql_value_as_string(mapped('url')),
         'posted_at': mapped('posted_at'),
         'source': 'GraphQL',

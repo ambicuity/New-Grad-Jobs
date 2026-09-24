@@ -37,10 +37,10 @@ from ngj.settings import DEFAULT_CONFIG_PATH, Settings, build_settings, describe
 from ngj.sources.ashby import fetch_all_ashby_jobs
 from ngj.sources.google import fetch_google_jobs
 from ngj.sources.graphql import fetch_all_graphql_jobs
-from ngj.sources.greenhouse import fetch_all_greenhouse_jobs
+from ngj.sources.greenhouse import fetch_all_greenhouse_jobs, hydrate_greenhouse_descriptions
 from ngj.sources.jobspy import fetch_jobspy_jobs
 from ngj.sources.lever import fetch_all_lever_jobs
-from ngj.sources.workday import fetch_workday_jobs
+from ngj.sources.workday import build_title_prefilter, fetch_workday_jobs
 from ngj.util import sanitize_nan
 from url_safety import filter_safe_jobs
 
@@ -103,6 +103,10 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
                 max_total_limit=settings.workday_max_jobs_per_company,
                 timeout=settings.workday_timeout,
                 max_workers=settings.workday_max_workers,
+                search_keywords=settings.workday_search_keywords,
+                max_jobs_per_keyword=settings.workday_max_jobs_per_keyword,
+                max_seconds_per_company=settings.workday_max_seconds_per_company,
+                title_filter=build_title_prefilter(config.get('filtering') or config.get('filters')),
             )
         if name == 'graphql':
             return partial(fetch_all_graphql_jobs, units, settings)
@@ -277,6 +281,8 @@ def run(
     logger.info("\n⚙️ Phase 3: Filtering and enriching jobs...")
     filtered_jobs = filter_jobs(unique_jobs, dict(config))
     logger.info("   Jobs after filtering: %s", len(filtered_jobs))
+    # Greenhouse is listed without descriptions; fetch them for survivors only.
+    filtered_jobs = hydrate_greenhouse_descriptions(filtered_jobs, timeout=settings.http_timeout)
     enriched_jobs = sanitize_nan(enrich_jobs(filtered_jobs))
     logger.info("   Jobs enriched with categories and flags")
 

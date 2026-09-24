@@ -166,7 +166,7 @@ def test_cooldown_tripped_company_is_skipped():
     with (
         patch("ngj.http.limited_post") as mock_post,
         patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
-        patch.object(source_cooldown.SOURCE_COOLDOWN, "is_tripped", return_value=True),
+        patch.object(source_cooldown.SOURCE_COOLDOWN, "tripped_key", return_value="skipped.wd1.myworkdayjobs.com"),
     ):
         jobs = list(fetch_workday_jobs(companies, max_workers=2).jobs)
 

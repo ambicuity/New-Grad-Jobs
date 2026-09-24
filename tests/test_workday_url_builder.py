@@ -98,13 +98,12 @@ class TestGetWorkdayCsrfToken:
 
     def test_returns_token_from_response_header(self):
         session = self._make_session(headers={"X-Calypso-CSRF-Token": "abc123"})
-        token = get_workday_csrf_token("boeing.wd1.myworkdayjobs.com", session)
+        token = get_workday_csrf_token("https://boeing.wd1.myworkdayjobs.com/external_careers", session)
         assert token == "abc123"
-        session.get.assert_called_once_with(
-            "https://boeing.wd1.myworkdayjobs.com/",
-            timeout=5,
-            allow_redirects=True,
-        )
+        # The token comes from the careers *site* page; the bare host root always answers 406.
+        assert session.get.call_args.args == ("https://boeing.wd1.myworkdayjobs.com/external_careers",)
+        assert session.get.call_args.kwargs["timeout"] == 5
+        assert session.get.call_args.kwargs["allow_redirects"] is True
 
     def test_falls_back_to_cookie_when_header_absent(self):
         session = self._make_session(

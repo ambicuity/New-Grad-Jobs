@@ -350,7 +350,7 @@ def test_fetch_google_jobs_missing_fields() -> None:
         results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results) == 1
         assert results[0]['company'] == "Google"   # Default when index 7 absent
-        assert results[0]['location'] == "Remote"  # Default when index 9 absent
+        assert results[0]['location'] == ''  # unknown when index 9 absent (not assumed Remote)
         assert results[0]['description'] == ""
         assert results[0]['posted_at'] == ""
 

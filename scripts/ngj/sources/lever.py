@@ -6,33 +6,29 @@ from collections.abc import Sequence
 from typing import Any
 
 from ngj import http as ngj_http
-from ngj.compensation import extract_compensation
 from ngj.models import SourceResult
 from ngj.settings import DEFAULT_HTTP_TIMEOUT, Settings
-from ngj.text import clean_description
 
 SOURCE = "lever"
 
 
 def _to_job(company_name: str, raw: dict[str, Any]) -> dict[str, Any]:
-    description = raw.get('description', '') or raw.get('descriptionPlain', '') or ''
     return {
         'company': company_name,
-        'title': raw.get('text', ''),
-        'location': raw.get('categories', {}).get('location', 'Remote'),
-        'url': raw.get('hostedUrl', ''),
+        'title': raw.get('text') or '',
+        'location': (raw.get('categories') or {}).get('location') or '',
+        'url': raw.get('hostedUrl') or '',
         'posted_at': raw.get('createdAt'),
         'source': 'Lever',
-        'description': clean_description(description),
-        'description_html': description,
-        'comp': extract_compensation(description),
+        # Raw only; cleaned text / comp / flags are derived in ngj.enrich after filtering.
+        'description': '',
+        'description_html': raw.get('description') or raw.get('descriptionPlain') or '',
     }
 
 
 def fetch_lever_jobs(
     company_name: str,
     url: str,
-    max_retries: int = 2,
     timeout: int = DEFAULT_HTTP_TIMEOUT,
 ) -> SourceResult:
     """Fetch one company's Lever postings."""
@@ -42,9 +38,7 @@ def fetch_lever_jobs(
             return None
         return SourceResult(jobs=tuple(_to_job(company_name, raw) for raw in data), raw_count=len(data))
 
-    return ngj_http.fetch_json_with_retry(
-        company_name, SOURCE, 'Lever', url, parse, timeout=timeout, max_retries=max_retries,
-    )
+    return ngj_http.fetch_json_with_retry(company_name, SOURCE, 'Lever', url, parse, timeout=timeout)
 
 
 def fetch_all_lever_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
