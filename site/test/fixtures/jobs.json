@@ -1,0 +1,656 @@
+{
+  "meta": {
+    "generated_at": "2026-09-24T15:37:03Z",
+    "total_jobs": 20,
+    "categories": [
+      {
+        "id": "security",
+        "name": "Security Engineering",
+        "emoji": "🔒",
+        "count": 95
+      },
+      {
+        "id": "mobile",
+        "name": "Mobile Engineering",
+        "emoji": "📲",
+        "count": 9
+      },
+      {
+        "id": "frontend",
+        "name": "Frontend Engineering",
+        "emoji": "🎨",
+        "count": 14
+      },
+      {
+        "id": "backend",
+        "name": "Backend Engineering",
+        "emoji": "⚙️",
+        "count": 28
+      },
+      {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻",
+        "count": 1030
+      },
+      {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "🤖",
+        "count": 213
+      },
+      {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "📊",
+        "count": 42
+      },
+      {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "🏗️",
+        "count": 176
+      },
+      {
+        "id": "product_management",
+        "name": "Product Management",
+        "emoji": "📱",
+        "count": 2
+      },
+      {
+        "id": "quant_finance",
+        "name": "Quantitative Finance",
+        "emoji": "📈",
+        "count": 10
+      },
+      {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "🔧",
+        "count": 27
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "emoji": "💼",
+        "count": 225
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "job_id": "job_a000ffffffffffffffff",
+      "id": "palantir-forward-deployed-software-engineer---us-government-kitsap,-wa",
+      "company": "Palantir",
+      "title": "Forward Deployed Software Engineer - US Government",
+      "location": "Kitsap, WA",
+      "url": "https://jobs.lever.co/palantir/a2e9ab0f-4dd1-4744-92b9-edc7ae393c58",
+      "posted_at": "2026-09-24T00:15:00Z",
+      "posted_display": "Today",
+      "source": "Lever",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "A World-Changing Company Palantir builds the world’s leading software for data-driven decisions and operations. By bringing the right data to the people who need it, our platforms empower our partners to develop lifesaving drugs, forecast supply chain disruptions, locate missing children, and more. The Role Forward Deployed Software Engineers (FDSEs) work directly with customers to quickly understand their greatest problems and design and implement solutions to use data against them. Our customers rely on Palantir’s platforms for some of their most critical operations, and projects often start with an open ended question like “Why are we delaying so many flights?” or “How can we better identify instances of money laundering?” As an FDSE, you’ll apply your problem solving ability, creativity, and technical skills to help organizations use their data to drive a real impact in the world. You’ll have the opportunity to gain rare insight into and contribute to some of the world’s most important industries and institutions. As an FDSE your responsibilities look similar to those of a startup CTO: you’ll work in small teams with minimal supervision and own end-to-end execution of high stakes projects. Your day might span discussing architecture with fellow engineers, wrangling massive-scale data, coding a custom web app, speaking with customer executives, or establishing strategy for your team. Whether you aspire to be an entrepreneur or an engineering leader, we believe Palantir is "
+    },
+    {
+      "job_id": "job_a001ffffffffffffffff",
+      "id": "twilio-machine-learning-engineer-remote---ireland",
+      "company": "Twilio",
+      "title": "Machine Learning Engineer",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+      "posted_at": "2026-09-23T03:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "🤖"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Who we are&nbsp; At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to &nbsp;hundreds of thousands of businesses&nbsp; and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp; Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp; . See yourself at Twilio Join the team as Twilio’s next Machine Learning Engineer. About the job This position is to design and engineer AI powered features that makes every customer conversation smarter. As a Machine Learning Engineer on the Conversation Intelligence team, you'll develop and deploy solutions that extract meaning from voice and messaging data at Twilio scale. You'll work alongside experienced ML practitioners to ship real features - from model pipelines to production i"
+    },
+    {
+      "job_id": "job_a002ffffffffffffffff",
+      "id": "ripple-site-reliability-engineer,-observability--chicago,-illinois,-united-states",
+      "company": "Ripple",
+      "title": "Site Reliability Engineer, Observability ",
+      "location": "Chicago, Illinois, United States",
+      "url": "https://ripple.com/careers/all-jobs/job/7947821?gh_jid=7947821",
+      "posted_at": "2026-09-22T06:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "infrastructure_sre",
+        "name": "Infrastructure & SRE",
+        "emoji": "🏗️"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": true,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "At Ripple, we’re building a world where value moves like information does today. It’s big, it’s bold, and we’re already doing it. Through our crypto solutions for financial institutions, businesses, governments and developers, we are improving the global financial system and creating greater economic fairness and opportunity for more people, in more places around the world. And we get to do the best work of our career and grow our skills surrounded by colleagues who have our backs.&nbsp; If you’re ready to see your impact and unlock incredible career growth opportunities, join us, and build real world value. At Ripple, we’re building a world where value moves like information does today. Through our crypto solutions for financial institutions, businesses, governments, and developers, we are improving the global financial system and creating greater economic fairness and opportunity for more people, in more places around the world. Ripple Treasury, now a Ripple solution acquired in 2025, marks a significant expansion into the multi-trillion-dollar corporate finance arena. With more than 40 years of experience supporting some of the world’s largest and most sophisticated companies, Ripple Treasury integrates a treasury command center into Ripple’s technology stack—giving corporates the ability to move, manage, and optimize liquidity in real-time, across traditional and digital assets, under one expanded umbrella. THE WORK: This is an engineering-first role with a coaching dimen"
+    },
+    {
+      "job_id": "job_a003ffffffffffffffff",
+      "id": "orion-innovation-azure-data-engineer-montvale,-new-jersey,-united-states",
+      "company": "Orion Innovation",
+      "title": "Azure Data Engineer",
+      "location": "Remote - US",
+      "url": "https://www.orioninc.com/careers/job/?gh_jid=4714763006",
+      "posted_at": "2026-09-21T09:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_engineering",
+        "name": "Data Engineering",
+        "emoji": "📊"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Orion Innovation is a premier, award-winning, global business and technology services firm.&nbsp; Orion delivers game-changing business transformation and product development rooted in digital strategy, experience design, and engineering, with a unique combination of agility, scale, and maturity.&nbsp; We work with a wide range of clients across many industries including financial services, professional services, telecommunications and media, consumer products, automotive, industrial automation, professional sports and entertainment, life sciences, ecommerce, and education. Summary:&nbsp; 5+ years of experience in application support, technical leadership, or data-platform troubleshooting Hands-on Azure data engineering and Python experience Working knowledge of Databricks and PySpark, including notebooks, data transformations, and read/write operations Advanced T-SQL and data warehouse skills, including stored procedures, functions, execution plans, indexing, and query optimization Experience troubleshooting ETL pipelines, large datasets, data-quality issues, and performance or scalability bottlenecks Understanding of RDBMS concepts, reporting flows, data movement, and production support practices Strong incident ownership, root-cause analysis, stakeholder communication, and technical coaching skills Preferred experience with Azure Data Factory, ADLS, Delta/Parquet, AKS, SSIS/MSBI, Power BI, Alteryx, ERP extraction concepts, and audit or accounting-related data . Bachelor's "
+    },
+    {
+      "job_id": "job_a004ffffffffffffffff",
+      "id": "xai-application-security-engineer--palo-alto,-ca",
+      "company": "xAI",
+      "title": "Application Security Engineer",
+      "location": "New York, NY (Hybrid)",
+      "url": "https://job-boards.greenhouse.io/xai/jobs/4559147007",
+      "posted_at": "2026-09-20T12:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "security",
+        "name": "Security Engineering",
+        "emoji": "🔒"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 100000,
+        "max": 258000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "description": "SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&nbsp; Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. We operate with a flat organizational structure. All employees are expected to be hands-on and to contribute directly to the company’s mission. Leadership is given to those who show initiative and consistently deliver excellence. Work ethic and strong prioritization skills are important. All employees are expected to have strong communication skills. They should be able to concisely and accurately share knowledge with their teammates. ABOUT THE ROLE: We are seeking a skilled and innovative Application Security Engineer to join our technology-driven company. In this role, you will be responsible for ensuring the security and integrity of our cloud-native applications and systems throughout the software development lifecycle, with a particular focus on code security, CI/CD pipelines, and emerging AI technologies. RESPONSIBILITIES: Conduct in-depth code reviews and static analysis to identify and mitigate security vulnerabilities in our applications Design and implement secure coding guidelines and best practices for development teams Collaborate closely with development teams to integrate security practices throughout the CI/CD pipeline Perform threat modeling and risk"
+    },
+    {
+      "job_id": "job_a005ffffffffffffffff",
+      "id": "cisco-qa-engineer---networking-l2/l3-testing-|-4---8-yrs-ka,-in",
+      "company": "Cisco",
+      "title": "QA Engineer - Networking L2/L3 Testing | 4 - 8 yrs",
+      "location": "KA, IN",
+      "url": "https://in.indeed.com/viewjob?jk=1fdad0885c026625",
+      "posted_at": "2026-09-19T15:15:00Z",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "other",
+        "name": "Other",
+        "emoji": "💼"
+      },
+      "company_tier": {
+        "tier": "faang_plus",
+        "emoji": "🔥",
+        "label": "FAANG+",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 120000,
+        "max": 165000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "description": "Meet the Team The Cisco IOS XR Routing and BNG Test Team ensures the reliability, scalability, performance, and resiliency of Cisco’s carrier\\-grade routing platforms. We work closely with software developers, architects, product managers, and customer\\-facing teams to deliver comprehensive, end\\-to\\-end validation across Layer 2, Layer 3, routing, subscriber\\-management, and network\\-service technologies for service providers, hyperscalers, and web\\-scale customers operating some of the world’s largest and most demanding networks. Our team values technical depth, automation\\-first engineering, continuous learning, collaborative problem\\-solving, and responsible adoption of AI\\-assisted development practices. Your Impact As a Software Test Engineer, you will own the quality validation of IOS XR routing and Broadband Network Gateway capabilities. You will design test strategies, develop automation, validate complex customer scenarios, investigate system\\-level failures, and provide data\\-driven release recommendations. Your work will help ensure that Cisco delivers stable, scalable, and production\\-ready networking solutions. You will also mentor junior engineers, improve test frameworks, and use modern AI\\-assisted tools to accelerate engineering and troubleshooting workflows. What You Will Do * Design and implement functional, system, regression, scale, performance, interoperability, resiliency, and high\\-availability tests for IOS XR routing and BNG features. * Validate BNG"
+    },
+    {
+      "job_id": "job_a006ffffffffffffffff",
+      "id": "bedrock-foundry-junior-front-end-developer-kl,-in",
+      "company": "Bedrock Foundry",
+      "title": "Junior Front End Developer",
+      "location": "KL, IN",
+      "url": "https://in.indeed.com/viewjob?jk=7c62e221ee25322d",
+      "posted_at": "2026-09-18T18:15:00Z",
+      "posted_display": "Today",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "frontend",
+        "name": "Frontend Engineering",
+        "emoji": "🎨"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "**Frontend Developer (Svelte / React) – Bedrock Foundry (Onsite, Kozhikode)** **About the Company** Bedrock Foundry is a technology\\-driven company building scalable and reliable software and hardware systems. We focus on high\\-performance engineering, clean architecture, and building lightning\\-fast, reactive user interfaces that interface directly with our hardware and backend infrastructures. **About the Role** We are hiring a performance\\-driven **Frontend Developer** with a strong preference for **Svelte / SvelteKit**, while remaining open to talented **React / Vue** developers ready to build with Svelte in production. At Bedrock Foundry, we prioritize minimal bundle sizes, zero\\-virtual\\-DOM overhead, and true reactivity—which is why Svelte is our primary framework of choice for web applications and hardware control dashboards. However, if you are a strong React developer who understands component architecture, modern state management, and async JavaScript, and you are excited to transition into Svelte, we want to hear from you. **Key Responsibilities** * **UI Engineering:** Build, test, and ship responsive web applications and real\\-time dashboards primarily using **Svelte / SvelteKit** (and React where applicable). * **API Integration:** Connect client\\-side interfaces to high\\-speed backend services (Rust / Python) using RESTful APIs, WebSockets, or gRPC endpoints. * **Performance Tuning:** Optimize client\\-side rendering, minimize bundle sizes, and ensure smooth 60 "
+    },
+    {
+      "job_id": "job_a007ffffffffffffffff",
+      "id": "affirm-software-engineer-ii,-backend-(collections)-remote-spain",
+      "company": "Affirm",
+      "title": "Software Engineer II, Backend (Collections)",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7813157003",
+      "posted_at": "2026-09-17T21:15:00Z",
+      "posted_display": "1 day ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "backend",
+        "name": "Backend Engineering",
+        "emoji": "⚙️"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": [
+          "finance"
+        ]
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most. The Collections team, as part of the Repayments area, is on a mission to build a robust platform that will maximize the recovery of delinquent users by sending the right message to the right people at the right time, while monitoring and detecting problems and ensuring high reliability of the engineering systems. Collaborating closely with our product managers, backbook risk teams and other engineering teams , you will effectively manage loans throughout the delinquency phase of their lifecycle and develop and implement recovery strategies. We are looking for a highly motivated software engineer to build the next generation platform solutions that will allow us to manage our constantly growing volume while maintaining high availability and reliability of the systems. You will work closely with your team mates in the Collections team and Product to build robust collections solutions which will enable us to keep our loans portfolio healthy and help our customers pay on time and recover from any delays. What You'll Do · With the support of your team’s tech lead and manager, you will break down larger projects into individual tasks, deliver them in multiple phases, and collaborate with others to ensure timely delivery of your work. · You will support your peers and stakeholders in the product development"
+    },
+    {
+      "job_id": "job_a008ffffffffffffffff",
+      "id": "margo-supplies-ltd.-engineering-graduate-/-engineer-in-training-(eit)-–-product-development-calgary,",
+      "company": "Margo Supplies Ltd.",
+      "title": "Engineering Graduate / Engineer-in-Training (EIT) – Product Development",
+      "location": "Calgary, AB, CA",
+      "url": "https://ca.indeed.com/viewjob?jk=49ec8ec5263763a2",
+      "posted_at": "2026-09-16T00:15:00Z",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "hardware",
+        "name": "Hardware Engineering",
+        "emoji": "🔧"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Do you want to save the world or at least the wildlife in it? Thanks to our expanding product line, requests from across North America and the world are pouring in – and we need you to make sure our products are built, in\\-stock, and shipped out quickly. Margo Supplies is a worldwide leader in wildlife technology. We design, manufacture, and distribute environmental tools that solve human\\-wildlife conflict. Our head office is located in High River, AB, a 20\\-minute drive away from South Calgary. We look for people with intelligence, initiative, and judgment in all positions – the intelligence to recognize a problem or opportunity, the initiative to address it, and the judgment to know the best way forward. Our people thrive in a high\\-performance culture and enjoy a diversity of work. **About the Job** We are looking for a recent engineering graduate who is curious, hands\\-on, and eager to learn. Previous professional engineering experience is not required. We are more interested in your ability to learn quickly, solve problems, and take initiative. You will work closely with experienced technical staff on a variety of engineering and product\\-development projects involving electronics, software, hardware, testing, prototyping, and troubleshooting. This is a broad role designed to expose you to different areas of engineering. After gaining experience, there will be opportunities to develop your role toward the technical areas that interest you most. **Job Responsibilities an"
+    },
+    {
+      "job_id": "job_a009ffffffffffffffff",
+      "id": "panasonic-hardware-engineer-i-irvine,-ca,-us",
+      "company": "Panasonic",
+      "title": "Hardware Engineer I",
+      "location": "Irvine, CA, US",
+      "url": "https://www.indeed.com/viewjob?jk=c64dd7fbc0068a13",
+      "posted_at": "2026-09-15T03:15:00Z",
+      "posted_display": "1 day ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "quant_finance",
+        "name": "Quantitative Finance",
+        "emoji": "📈"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Overview: **Hardware Engineer I \\- Avionics****(MTS I, Hardware)** Responsibilities: **Who We Are:** Ever wonder who brings the entertainment to your flights? Panasonic Avionics Corporation is \\#1 in the industry for delivering inflight products such as movies, games, WiFi, and now Bluetooth headphone connectivity! How exciting would it be to be a part of the innovation that goes into creating technology that delights millions of people in an industry that’s here to stay! With our company’s history spanning over 40 years, you will have stability, career growth opportunities, and will work with the brightest minds in the industry. And we are committed to a diverse and inclusive culture that will help our organization thrive! We seek diversity in many areas such as background, culture, gender, ways of thinking, skills and more. If you want to learn more about us visit us at www.panasonic.aero And for a full listing of open job opportunities go to www.panasonic.aero/join\\-us/ **The Position:** Performs engineering design and development of Ground Support Equipment (GSE) and test equipment used to test and validate In\\-Flight Entertainment (IFE) Line Replaceable Units (LRUs). Responsibilities include circuit design and layout, requirements analysis, equipment evaluation, prototype development, testing, troubleshooting, and qualification. Works with Product Engineering to analyze LRU test requirements and develop test solutions. Supports manufacturing, production, repair, and sust"
+    },
+    {
+      "job_id": "job_a010ffffffffffffffff",
+      "id": "anduril-industries-software-engineer---mobile,-android-costa-mesa,-california,-united-states",
+      "company": "Anduril Industries",
+      "title": "Software Engineer - Mobile, Android",
+      "location": "Costa Mesa, California, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5163532007?gh_jid=5163532007",
+      "posted_at": "2026-09-14T06:15:00Z",
+      "posted_display": "2 days ago",
+      "source": "Greenhouse",
+      "category": {
+        "id": "mobile",
+        "name": "Mobile Engineering",
+        "emoji": "📲"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril’s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. ABOUT THE TEAM The Tactical Recon &amp; Strike team at Anduril develops aerial small drones (Group 1-3) and all equipment to test, deploy and operate. The team is responsible for taking products like Ghost, Anvil, Bolt and Altius from concepts to operational systems. We work in close coordination with specialist teams to solve some of the hardest problems facing our customers. We are looking for software engineers, hardware engineers, roboticists, and front-end mobile developers who are excited about creating a powerful robotics platform that can be tasked and viewed in real-time through a variety of interfaces. ABOUT THE JOB We are looking for Android Engineers to join our team. As an Android Engineer at Anduril you will be architecting and building out user interf"
+    },
+    {
+      "job_id": "job_a011ffffffffffffffff",
+      "id": "pilkington-process-engineer-i-niles,-mi,-us",
+      "company": "Pilkington",
+      "title": "PROCESS ENGINEER I",
+      "location": "Niles, MI, US",
+      "url": "https://www.indeed.com/viewjob?jk=c284f89ce84cf9d5",
+      "posted_at": "2026-09-13T09:15:00Z",
+      "posted_display": "6 days ago",
+      "source": "JobSpy (Indeed)",
+      "category": {
+        "id": "product_management",
+        "name": "Product Management",
+        "emoji": "📱"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": {
+        "min": 73668,
+        "max": 82884,
+        "currency": "USD",
+        "source": "jobspy"
+      },
+      "description": "We're looking for an experienced Injection Molding Technician \\- Process Engineer at our modern manufacturing facility located just east of the US 12 \\- US 31 Bypass, 10 miles North of South Bend. We encapsulate glass with an injection molding process and assemble windows for the automotive original equipment manufacturer customer. With a broad range of customers and investments in new technology and new model launches you can unleash your potential with us! **Looking for a company serious about investing in your education and development? APPLY TODAY.**We offer onsite continuing education and certification courses throughout the year to keep your skills up to date. **Looking for a team focused on innovation, initiative, and results? APPLY TODAY.** We reward innovation through our quick kaizen program and great team results equal monthly bonuses for you. **\\_\\_\\_\\_\\_ More about us \\_\\_\\_\\_\\_** We offer an excellent compensation and benefits package, which includes a fantastic 401k that DOUBLES your personal contribution, great Anthem benefits; generous vacation and these other great perks: Onsite FREE fitness center; 12 Paid Holidays including the week between Christmas and New Years; Paid Medical Leave; South Bend Cubs Tickets; Site Performance Bonus Program; Birthday and Anniversary Awards; Veteran's Day recognition; Tuition Reimbursement including Graduate Degrees; Onsite Convenience Store; FREE meals and other monthly recognition events; Safe, Secure and Clean Work Enviro"
+    },
+    {
+      "job_id": "job_a012ffffffffffffffff",
+      "id": "anduril-industries-python-software-engineer-(production)-lexington,-massachusetts,-united-states",
+      "company": "Anduril Industries",
+      "title": "Python Software Engineer (Production)",
+      "location": "Lexington, Massachusetts, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5248131007?gh_jid=5248131007",
+      "posted_at": "2026-09-12T12:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril’s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. ABOUT THE TEAM The Anduril Imaging team develops state-of-the-art imaging systems across both hardware and software, deployed to tackle the most significant security challenges of America and its allies. The team is heavily involved in utilizing computer vision, perception, electro-optical, infrared, and sensor data to give our war fighters and allies an advantage. ABOUT THE JOB As a Production Software Engineer, you'll be responsible for developing product-agnostic software solutions for our production teams. You'll work cross-functionally with production and software teams to enhance automation and build efficiencies. Your role will involve hands-on software development and collaboration with cross-functional teams to ensure optimal performance and integration of "
+    },
+    {
+      "job_id": "job_a013ffffffffffffffff",
+      "id": "twilio-machine-learning-engineer-remote---spain",
+      "company": "Twilio",
+      "title": "Machine Learning Engineer",
+      "location": "Remote - Spain",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8007455",
+      "posted_at": "2026-09-11T15:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "🤖"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Who we are&nbsp; At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to &nbsp;hundreds of thousands of businesses&nbsp; and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp; Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp; . See yourself at Twilio Join the team as Twilio’s next Machine Learning Engineer. About the job This position is to design and engineer AI powered features that makes every customer conversation smarter. As a Machine Learning Engineer on the Conversation Intelligence team, you'll develop and deploy solutions that extract meaning from voice and messaging data at Twilio scale. You'll work alongside experienced ML practitioners to ship real features - from model pipelines to production i"
+    },
+    {
+      "job_id": "job_a014ffffffffffffffff",
+      "id": "twilio-software-development-engineer-(l3)-remote---colombia",
+      "company": "Twilio",
+      "title": "Software Development Engineer (L3)",
+      "location": "Remote - Colombia",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8102950",
+      "posted_at": "2026-09-10T18:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Who we are&nbsp; At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to &nbsp;hundreds of thousands of businesses&nbsp; and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp; Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp; . See yourself at Twilio Join the team as our next&nbsp; Senior Software Engineer in the Enterprise AI Engineering team. About the job Twilio is undergoing a major business transformation powered by Enterprise AI, supported by a dedicated engineering team building the foundations for a unified, secure, and scalable operating system across GTM functions (Sales, Support, Operations, etc.) as well as Internal non-GTM functions (Finance, HR, Legal, etc.) Our platform is designed to support"
+    },
+    {
+      "job_id": "job_a015ffffffffffffffff",
+      "id": "twilio-devops-engineer-(observability)-remote---ireland",
+      "company": "Twilio",
+      "title": "DevOps Engineer (Observability)",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8108771",
+      "posted_at": "2026-09-09T21:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Who we are&nbsp; At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to &nbsp;hundreds of thousands of businesses&nbsp; and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp; Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp; . See yourself at Twilio&nbsp; Join the team as our next Software Engineer on Twilio’s platform engineering observability team. About the job This position is needed to help our platform engineering observability team. Twilio is undergoing a large-scale observability transformation—and you can help shape the foundation. Observability is a strategic pillar and a key enabler for faster incident response, deeper customer-centric insights, and more cost-effective platform operations. As a "
+    },
+    {
+      "job_id": "job_a016ffffffffffffffff",
+      "id": "anduril-industries-production-software-engineer-lexington,-massachusetts,-united-states",
+      "company": "Anduril Industries",
+      "title": "Production Software Engineer",
+      "location": "Lexington, Massachusetts, United States",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5248128007?gh_jid=5248128007",
+      "posted_at": "2026-09-08T00:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "other",
+        "emoji": "",
+        "label": "",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": true
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century’s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril’s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. ABOUT THE TEAM The Anduril Imaging team develops state-of-the-art imaging systems across both hardware and software, deployed to tackle the most significant security challenges of America and its allies. The team is heavily involved in utilizing computer vision, perception, electro-optical, infrared, and sensor data to give our war fighters and allies an advantage. ABOUT THE JOB As a Production Software Engineer, you'll be responsible for developing product-agnostic software solutions for our production teams. You'll work cross-functionally with production and software teams to enhance automation and build efficiencies. Your role will involve hands-on software development and collaboration with cross-functional teams to ensure optimal performance and integration of "
+    },
+    {
+      "job_id": "job_a900eeeeeeeeeeeeeeee",
+      "id": "palantir-forward-deployed-software-engineer---us-government-kitsap,-wa",
+      "company": "Palantir",
+      "title": "Forward Deployed Software Engineer - US Government",
+      "location": "Kitsap, WA",
+      "url": "https://jobs.lever.co/palantir/a2e9ab0f-4dd1-4744-92b9-edc7ae393c58",
+      "posted_at": "2026-09-24T00:15:00Z",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "software_engineering",
+        "name": "Software Engineering",
+        "emoji": "💻"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "A World-Changing Company Palantir builds the world’s leading software for data-driven decisions and operations. By bringing the right data to the people who need it, our platforms empower our partners to develop lifesaving drugs, forecast supply chain disruptions, locate missing children, and more. The Role Forward Deployed Software Engineers (FDSEs) work directly with customers to quickly understand their greatest problems and design and implement solutions to use data against them. Our customers rely on Palantir’s platforms for some of their most critical operations, and projects often start with an open ended question like “Why are we delaying so many flights?” or “How can we better identify instances of money laundering?” As an FDSE, you’ll apply your problem solving ability, creativity, and technical skills to help organizations use their data to drive a real impact in the world. You’ll have the opportunity to gain rare insight into and contribute to some of the world’s most important industries and institutions. As an FDSE your responsibilities look similar to those of a startup CTO: you’ll work in small teams with minimal supervision and own end-to-end execution of high stakes projects. Your day might span discussing architecture with fellow engineers, wrangling massive-scale data, coding a custom web app, speaking with customer executives, or establishing strategy for your team. Whether you aspire to be an entrepreneur or an engineering leader, we believe Palantir is "
+    },
+    {
+      "job_id": "job_a901dddddddddddddddd",
+      "id": "twilio-machine-learning-engineer-remote---ireland-naive",
+      "company": "Twilio",
+      "title": "Machine Learning Engineer",
+      "location": "Remote - Ireland",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/7996774",
+      "posted_at": "2026-09-23T10:00:00.500000",
+      "posted_display": "Today",
+      "source": "Greenhouse",
+      "category": {
+        "id": "data_ml",
+        "name": "Data Science & ML",
+        "emoji": "🤖"
+      },
+      "company_tier": {
+        "tier": "unicorn",
+        "emoji": "🚀",
+        "label": "Unicorn",
+        "sectors": []
+      },
+      "flags": {
+        "no_sponsorship": false,
+        "us_citizenship_required": false
+      },
+      "is_closed": false,
+      "comp": null,
+      "description": "Who we are&nbsp; At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to &nbsp;hundreds of thousands of businesses&nbsp; and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!&nbsp; Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings.&nbsp; . See yourself at Twilio Join the team as Twilio’s next Machine Learning Engineer. About the job This position is to design and engineer AI powered features that makes every customer conversation smarter. As a Machine Learning Engineer on the Conversation Intelligence team, you'll develop and deploy solutions that extract meaning from voice and messaging data at Twilio scale. You'll work alongside experienced ML practitioners to ship real features - from model pipelines to production i"
+    },
+    {
+      "id": "sparse-job",
+      "company": "Sparse Co",
+      "title": "Software Engineer, New Grad",
+      "url": "https://example.com/jobs/sparse"
+    }
+  ]
+}

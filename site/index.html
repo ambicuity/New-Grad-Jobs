@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fully automated list of new grad job opportunities from multiple company APIs, updated about every 30 minutes. Built by engineers, for engineers.">
+  <meta name="keywords" content="new grad jobs, entry level jobs, software engineer jobs, tech jobs, 2025 jobs, 2026 jobs">
+  <meta property="og:title" content="NGJ · New Grad Jobs">
+  <meta property="og:description" content="Fully automated job board for new graduates powered by multiple live company APIs, updated about every 30 minutes.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>NGJ · New Grad Jobs</title>
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="dns-prefetch" href="https://gc.zgo.at">
+  <link rel="alternate" type="application/rss+xml" title="New Grad Jobs RSS Feed" href="./feed.xml">
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #000; color: #e8e8e8;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      -webkit-font-smoothing: antialiased; }
+    body { overflow-x: auto; }
+    * { box-sizing: border-box; }
+    #root { height: 100%; width: 100%; min-width: 1180px; }
+    /* Mobile/tablet: drop the desktop 1180px canvas so the single-column reflow
+       (driven by useIsMobile in the terminal views) fits the viewport with
+       no sideways scroll. Breakpoint mirrors MOBILE_MAX_PX in
+       src/hooks/useIsMobile.js — it matches the desktop terminal's 1180px
+       min-width, so any screen that can't fit the 3-column layout reflows
+       instead of scrolling. */
+    @media (max-width: 1180px) {
+      body { overflow-x: hidden; }
+      #root { min-width: 0; }
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #2a2a2a; }
+    ::-webkit-scrollbar-thumb:hover { background: #3a3a3a; }
+    input::placeholder { color: #5a5a5a; }
+    button:focus-visible, input:focus-visible { outline: 1px solid #ff9d3d; outline-offset: 1px; }
+    .ng-boot { padding: 24px; font-size: 12px; color: #ff9d3d; letter-spacing: 0.6px; }
+    .ng-boot .dim { color: #6e6e6e; }
+  </style>
+
+  <script>
+    window.loadAnalytics = function loadAnalytics() {
+      if (window.goatcounter || document.querySelector('script[data-goatcounter]')) return;
+      const s = document.createElement('script');
+      s.async = true;
+      s.dataset.goatcounter = 'https://riteshrana.goatcounter.com/count';
+      s.src = 'https://gc.zgo.at/count.js';
+      document.head.appendChild(s);
+    };
+    window.addEventListener('load', () => window.setTimeout(window.loadAnalytics, 3000), { once: true });
+  </script>
+</head>
+<body>
+  <div id="root">
+    <div class="ng-boot">
+      <div>NGJ <span class="dim">loading jobs-index.json …</span></div>
+    </div>
+  </div>
+  <script type="module" src="./src/main.jsx"></script>
+</body>
+</html>

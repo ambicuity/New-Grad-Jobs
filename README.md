@@ -46,7 +46,7 @@ Experience an advanced career journey with us! 🚀
 ## Sponsored by [Tailr](https://www.tailr.uk)
 
 <a href="https://www.tailr.uk">
-  <img src="docs/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
+  <img src="site/public/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
 </a>
 
 **[Tailr](https://www.tailr.uk) rewrites your résumé for each job posting and shows you the ATS match score** — so you stop getting auto-filtered by the same generic résumé. Free 10/day, no card required. This project is proudly sponsored by Tailr.
@@ -327,7 +327,7 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 ### `docs/jobs.json` schema
 
-Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable for third-party use:
+Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use:
 
 | Field | Type | Notes |
 |---|---|---|
