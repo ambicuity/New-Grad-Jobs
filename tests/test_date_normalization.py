@@ -192,14 +192,37 @@ def test_get_iso_date_normalizes_timezone_aware_strings_to_utc(monkeypatch):
     monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     value = '2026-03-01T12:34:56+05:30'
-    assert get_iso_date(value) == '2026-03-01T07:04:56'
+    assert get_iso_date(value) == '2026-03-01T07:04:56Z'
 
 
 def test_get_iso_date_handles_unix_millis_in_utc(monkeypatch):
     monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=timezone.utc).timestamp() * 1000)
-    assert get_iso_date(recent_ms) == '2024-03-09T10:00:00'
+    assert get_iso_date(recent_ms) == '2024-03-09T10:00:00Z'
+
+
+def test_get_iso_date_emits_explicit_utc_designator():
+    # Naive inputs are treated as UTC; the output must say so, otherwise
+    # browsers parse the string as local time.
+    assert get_iso_date('2026-09-24T14:50:21') == '2026-09-24T14:50:21Z'
+    assert get_iso_date('2026-09-24') == '2026-09-24T00:00:00Z'
+
+
+def test_get_iso_date_keeps_milliseconds_only():
+    # Six-digit fractions are not part of the ECMAScript date-time format.
+    assert get_iso_date('2026-09-24T14:50:21.850000') == '2026-09-24T14:50:21.850Z'
+
+
+def test_get_iso_date_output_round_trips_through_readers(monkeypatch):
+    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+
+    published = get_iso_date('2026-03-02T12:00:00+00:00')
+    assert published == '2026-03-02T12:00:00Z'
+    assert get_iso_date(published) == published
+    assert is_recent_job(published, 7) is True
+    assert extract_sort_date({'posted_at': published}) == datetime(2026, 3, 2, 12, 0, 0)
+    assert format_posted_date(published) == '2 days ago'
 
 
 def test_get_iso_date_handles_none_nan_empty_and_malformed():

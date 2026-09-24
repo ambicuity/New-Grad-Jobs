@@ -15,6 +15,8 @@ import shutil
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
+import pytest
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 import update_jobs
 
@@ -569,22 +571,60 @@ class TestFileHandling:
 
         assert os.path.exists(self.history_path)
 
-    def test_handles_corrupted_json(self, capsys):
-        """Gracefully handles corrupted JSON file."""
-        # Write corrupted JSON
+    def test_corrupted_json_raises_and_leaves_file_untouched(self):
+        """A history file that exists but cannot be parsed must not be wiped."""
+        corrupt = "{invalid json"
         with open(self.history_path, 'w', encoding='utf-8') as f:
-            f.write("{invalid json")
+            f.write(corrupt)
 
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs)
+        with pytest.raises(update_jobs.MarketHistoryError, match="market history"):
+            update_jobs.save_market_history(jobs)
 
-        # Should recover and create new history
+        with open(self.history_path, encoding='utf-8') as f:
+            assert f.read() == corrupt
+
+    @pytest.mark.parametrize("payload", [
+        [],
+        {"meta": {}},
+        {"snapshots": {"date": "2026-01-01"}},
+        {"snapshots": ["2026-01-01"]},
+        {"snapshots": [{"total_jobs": 3}]},
+    ])
+    def test_invalid_structure_raises_and_leaves_file_untouched(self, payload):
+        raw = json.dumps(payload)
+        with open(self.history_path, 'w', encoding='utf-8') as f:
+            f.write(raw)
+
+        with pytest.raises(update_jobs.MarketHistoryError):
+            update_jobs.save_market_history([])
+
+        with open(self.history_path, encoding='utf-8') as f:
+            assert f.read() == raw
+
+    def test_missing_file_creates_new_history(self):
+        assert not os.path.exists(self.history_path)
+        update_jobs.save_market_history([{'company': 'Google', 'categories': ['swe']}])
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
-
         assert len(data['snapshots']) == 1
-        captured = capsys.readouterr()
-        assert "Could not load market history" in captured.out
+
+    def test_write_is_atomic_and_leaves_no_temp_files(self):
+        update_jobs.save_market_history([{'company': 'Google', 'categories': ['swe']}])
+        assert os.listdir(self.temp_dir) == ['market-history.json']
+
+    def test_failed_write_keeps_previous_file(self):
+        existing = {'meta': {}, 'snapshots': [{'date': '2000-01-01', 'total_jobs': 1}]}
+        raw = json.dumps(existing)
+        with open(self.history_path, 'w', encoding='utf-8') as f:
+            f.write(raw)
+
+        with patch('update_jobs.json.dump', side_effect=OSError("disk full")):
+            update_jobs.save_market_history([])
+
+        with open(self.history_path, encoding='utf-8') as f:
+            assert f.read() == raw
+        assert os.listdir(self.temp_dir) == ['market-history.json']
 
     def test_empty_jobs_list(self):
         """Handles empty jobs list gracefully."""

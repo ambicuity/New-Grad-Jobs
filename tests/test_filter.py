@@ -9,16 +9,18 @@ Tests cover the filter_jobs() function's handling of:
 - Deduplication
 """
 
+import json
 import sys
 import os
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict
 
+import pytest
 import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal
+from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal, is_title_excluded
 
 
 def _make_job(
@@ -749,3 +751,89 @@ class TestGraduateCohortSignals:
         jobs = [self._job("Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 0
+
+
+class TestExclusionSignalWordBoundaries:
+    """Exclusion signals match whole words, not substrings of other words.
+
+    Substring matching dropped legitimate entry-level titles: 'intern' killed
+    "Internal Tools"/"International", 'lead' killed "Leadership Development
+    Program", and 'manager' killed "Associate Product Manager". These tests run
+    against the shipped config.yml list so every intended exclusion is guarded.
+    """
+
+    @staticmethod
+    def _live_signals() -> list:
+        root = os.path.join(os.path.dirname(__file__), '..')
+        with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)['filtering']['exclusion_signals']
+
+    @pytest.mark.parametrize("title", [
+        "Software Engineer, Internal Tools - New Grad",
+        "International Payments Software Engineer, New Grad",
+        "Leadership Development Program - Software Engineer 2026",
+        "Associate Product Manager, New Grad",
+        "Associate Technical Program Manager, University Grad",
+        "Rotational Program - Engineering Leadership Track",
+        "Computer Architecture Engineer, New Grad",
+        "Software Engineer, Principality Payments",
+        "Software Engineer I (Staffing Platform)",
+    ])
+    def test_non_senior_titles_not_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is False
+
+    @pytest.mark.parametrize("title", [
+        "Senior Software Engineer",
+        "Sr. Software Engineer",
+        "Sr Software Engineer",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Lead Software Engineer",
+        "Tech Lead, Payments",
+        "Team Leads - Platform",
+        "Engineering Manager",
+        "Product Manager, Payments",
+        "Director of Engineering",
+        "VP of Engineering",
+        "Vice President, Engineering",
+        "Head of Platform",
+        "Software Architect",
+        "Solutions Architects",
+        "Distinguished Engineer",
+        "Engineering Fellow",
+        "Software Engineer (10+ years)",
+        "Backend Engineer, 5+ years experience",
+        "Software Engineer Intern",
+        "Software Engineering Internship",
+        "Summer Internships 2027 - SWE",
+        "Interns - Data Science 2027",
+        "Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer",
+        "Software Engineer - Intern/Co-op",
+        "Software Engineer (Internship)",
+    ])
+    def test_senior_and_intern_titles_still_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is True
+
+    def test_filter_jobs_keeps_internal_tools_new_grad(self):
+        jobs = [_make_job(title="Software Engineer, Internal Tools - New Grad")]
+        assert len(filter_jobs(jobs, _default_config())) == 1
+
+    def test_filter_jobs_keeps_leadership_development_program(self):
+        jobs = [_make_job(title="Software Engineer New Grad - Leadership Development Program")]
+        assert len(filter_jobs(jobs, _default_config())) == 1
+
+    def test_filter_jobs_still_drops_intern(self):
+        jobs = [_make_job(title="Software Engineer Intern, New Grad")]
+        assert len(filter_jobs(jobs, _default_config())) == 0
+
+    def test_published_titles_are_not_newly_excluded(self):
+        """Every title currently on the board must still clear the exclusion list."""
+        root = os.path.join(os.path.dirname(__file__), '..')
+        path = os.path.join(root, 'docs', 'jobs.json')
+        if not os.path.exists(path):
+            pytest.skip("docs/jobs.json not present")
+        with open(path, encoding='utf-8') as f:
+            titles = [job.get('title', '') for job in json.load(f).get('jobs', [])]
+        signals = self._live_signals()
+        newly_excluded = [t for t in titles if is_title_excluded(t, signals)]
+        assert newly_excluded == []

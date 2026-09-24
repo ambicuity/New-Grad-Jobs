@@ -952,6 +952,8 @@ apis:
     page_limit: 20
     max_jobs_per_company: 200
     timeout: 6
+    # Companies fetched concurrently (same-host tenants still run serially).
+    max_workers: 8
     companies:
       - name: "Microsoft"
         workday_url: "https://microsoft.wd10.myworkdayjobs.com/en-US/Microsoft"

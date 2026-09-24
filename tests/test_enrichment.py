@@ -126,6 +126,45 @@ class TestIsJobClosed:
     def test_case_insensitive(self):
         assert is_job_closed("CLOSED POSITION - DO NOT APPLY", "") is True
 
+    @pytest.mark.parametrize("title", [
+        "Software Engineer (Closed)",
+        "[EXPIRED] Data Engineer, New Grad",
+        "Closed - Software Engineer I",
+        "Software Engineer - Position Filled",
+    ])
+    def test_title_markers_are_closed(self, title):
+        assert is_job_closed(title, "") is True
+
+    @pytest.mark.parametrize("description", [
+        "This position has been filled.",
+        "This job is now closed.",
+        "This posting is closed to new applicants.",
+        "The job posting has expired.",
+        "Job expired",
+    ])
+    def test_strict_description_phrases_are_closed(self, description):
+        assert is_job_closed("Software Engineer", description) is True
+
+    @pytest.mark.parametrize("description", [
+        "You will build closed-loop control systems for robotics.",
+        "Salary will be disclosed during the interview process.",
+        "Track closed-won deals in Salesforce.",
+        "This role stays open until the requisition is closed.",
+        "Applications are reviewed on a rolling basis until the position is filled.",
+        "Renew expired certificates and rotate keys automatically.",
+        "Our enclosed test chambers simulate extreme conditions.",
+        "Closed captioning and accessibility tooling.",
+    ])
+    def test_incidental_closed_or_expired_words_are_open(self, description):
+        assert is_job_closed("Software Engineer, New Grad", description) is False
+
+    @pytest.mark.parametrize("title", [
+        "Closed-Loop Controls Engineer, New Grad",
+        "Software Engineer, Closed Captioning",
+    ])
+    def test_incidental_closed_in_title_is_open(self, title):
+        assert is_job_closed(title, "") is False
+
 
 # ---------------------------------------------------------------------------
 # get_company_tier
@@ -699,6 +738,28 @@ class TestCleanDescription:
     def test_empty_and_none(self):
         assert clean_description('') == ''
         assert clean_description(None) == ''
+
+    def test_double_encoded_nbsp_is_fully_decoded(self):
+        # Greenhouse double-encodes entities inside its entity-encoded HTML.
+        assert clean_description('Hello&amp;nbsp;world') == 'Hello world'
+
+    def test_double_encoded_amp_and_mdash(self):
+        r = clean_description('R&amp;amp;D &amp;mdash; teams')
+        assert r == 'R&D — teams'
+
+    def test_entity_encoded_tags_are_stripped(self):
+        assert clean_description('&lt;p&gt;Hello&lt;/p&gt;') == 'Hello'
+
+    def test_double_encoded_tags_are_stripped(self):
+        assert clean_description('&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;') == 'Hello'
+
+    def test_literal_less_than_in_text_survives(self):
+        r = clean_description('&lt;p&gt;Pay &amp;lt; $100k and latency &amp;gt; 5ms&lt;/p&gt;')
+        assert r == 'Pay < $100k and latency > 5ms'
+
+    def test_nbsp_character_normalized_to_space(self):
+        from update_jobs import _strip_html
+        assert _strip_html('a\xa0b') == 'a b'
 
 
 # ---------------------------------------------------------------------------

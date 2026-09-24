@@ -20,6 +20,7 @@ import os
 import random
 import re
 import sys
+import tempfile
 import threading
 import time
 from collections import Counter
@@ -89,6 +90,9 @@ DEFAULT_WORKDAY_PAGE_LIMIT: int = 20
 WORKDAY_PAGE_LIMIT: int = DEFAULT_WORKDAY_PAGE_LIMIT
 DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY: int = 200
 WORKDAY_MAX_JOBS_PER_COMPANY: int = DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY
+# Companies fetched concurrently (overridable via apis.workday.max_workers).
+DEFAULT_WORKDAY_MAX_WORKERS: int = 8
+WORKDAY_MAX_WORKERS: int = DEFAULT_WORKDAY_MAX_WORKERS
 MIN_PREDICTION_HISTORY_SNAPSHOTS: int = 7
 DEFAULT_GEMINI_PREDICTION_MODEL: str = "gemini-3.1-flash-lite-preview"
 
@@ -769,11 +773,40 @@ def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, boo
         'us_citizenship_required': any(kw in combined for kw in US_CITIZENSHIP_KEYWORDS)
     }
 
+# Closed-job detection uses strict phrases only. Bare "closed"/"expired"
+# substrings produced false positives on ordinary descriptions
+# ("closed-loop", "disclosed", "closed-won", "until the requisition is closed").
+# "position is filled" alone is deliberately not matched: postings commonly say
+# "reviewed on a rolling basis until the position is filled".
+_CLOSED_PHRASE_RE = re.compile(
+    r'\b(?:'
+    r'position\s+(?:has\s+(?:now\s+)?been\s+|is\s+now\s+)?filled'
+    r'|no\s+longer\s+accepting(?:\s+applications)?'
+    r'|job\s+(?:posting\s+)?(?:has\s+)?expired'
+    r'|(?:job\s+)?posting\s+has\s+expired'
+    r'|this\s+(?:job|position|posting|role|requisition)\s+(?:is\s+|has\s+)(?:now\s+)?(?:been\s+)?closed'
+    r')\b',
+    re.IGNORECASE,
+)
+# Title markers: "[Closed]", "(Expired)", "Closed - ...", "... - Closed",
+# "CLOSED POSITION". A bare "Closed" inside a title ("Closed-Loop Controls")
+# is not a marker.
+_CLOSED_TITLE_RE = re.compile(
+    r'[\[(]\s*(?:closed|expired|filled)\s*[\])]'
+    r'|^\s*(?:closed|expired)\s*(?:[-–—:|]\s|\bposition\b|$)'
+    r'|\s[-–—:|]\s*(?:closed|expired|filled)\s*$'
+    r'|\bposition\s+(?:closed|filled)\b',
+    re.IGNORECASE,
+)
+
+
 def is_job_closed(title: str, description: str = '') -> bool:
-    """Check if job appears to be closed"""
-    combined = f"{title.lower()} {description.lower() if description else ''}"
-    closed_indicators = ['closed', 'no longer accepting', 'position filled', 'expired']
-    return any(indicator in combined for indicator in closed_indicators)
+    """Check if a job appears closed via explicit title markers or strict phrases."""
+    title = title or ''
+    if _CLOSED_TITLE_RE.search(title):
+        return True
+    combined = f"{title} {description or ''}"
+    return bool(_CLOSED_PHRASE_RE.search(combined))
 
 # ── Compensation extraction ─────────────────────────────────────────────────
 # Range patterns first (most specific), single-value patterns second.
@@ -815,23 +848,34 @@ _COMP_SINGLE_PATTERNS = [
 # Strip HTML tags + unescape entities before regex so a salary that's
 # broken across <strong>$120,000</strong> – <strong>$180,000</strong>
 # can still match. Greenhouse and Lever both return raw HTML in `content`.
-_HTML_TAG_RE = re.compile(r'<[^>]+>')
+# Only real tags (a letter, "/" or "!" right after "<") are stripped so literal
+# comparisons such as "< $100k" or "latency > 5ms" survive decoding.
+_HTML_TAG_RE = re.compile(r'<(?:!--.*?--|[a-zA-Z/!][^<>]*)>', re.DOTALL)
+# Greenhouse double-encodes entities inside its entity-encoded HTML
+# ("&amp;nbsp;"), so one unescape pass is not enough. Bounded to stay cheap.
+_HTML_UNESCAPE_MAX_PASSES = 3
 
 
 def _strip_html(text: str) -> str:
-    """Remove HTML tags + decode entities, in the order that handles both
-    raw HTML (Lever's `descriptionPlain`) and double-encoded HTML (Greenhouse
-    serves `content` as &lt;div&gt;-style entities that decode to tags)."""
+    """Remove HTML tags + decode entities, handling raw HTML (Lever's
+    `descriptionPlain`) and entity-encoded HTML (Greenhouse serves `content`
+    as &lt;div&gt;-style entities, sometimes double-encoded as &amp;nbsp;).
+
+    Tags are stripped before each unescape pass, so tags revealed by decoding
+    are removed on the next pass while text-level "<" decoded on the final
+    pass is left alone.
+    """
     if not text:
         return text
-    # Unescape first so &lt;div&gt; becomes <div>; THEN strip tags. Otherwise
-    # the tag stripper runs on still-encoded entities and does nothing, and
-    # the later unescape leaves literal tags in the output.
-    if '&' in text:
-        text = html.unescape(text)
-    if '<' in text:
+    for _ in range(_HTML_UNESCAPE_MAX_PASSES):
         text = _HTML_TAG_RE.sub(' ', text)
-    return text
+        unescaped = html.unescape(text)
+        if unescaped == text:
+            break
+        text = unescaped
+    else:
+        text = _HTML_TAG_RE.sub(' ', text)
+    return text.replace('\xa0', ' ')
 
 # Strip these spans before searching — they're the most common false-positive
 # sources in job descriptions (funding announcements, market cap, etc.).
@@ -1498,160 +1542,209 @@ def _extract_error_body(response: requests.Response) -> str:
         return text[:500]
 
 
+def _fetch_workday_company(
+    company: Dict[str, str],
+    page_limit: int,
+    max_total_limit: int,
+    max_retries: int,
+    timeout: int,
+) -> List[Dict[str, Any]]:
+    """Fetch one Workday company's jobs; errors are logged and yield []."""
+    company_name = company.get('name')
+    workday_url = company.get('workday_url')
+
+    if not company_name or not workday_url:
+        return []
+
+    # Skip immediately if this Workday domain is in cooldown.
+    if SOURCE_COOLDOWN.is_tripped(workday_url):
+        print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(workday_url)}' in cooldown (403 threshold exceeded)")
+        return []
+
+    print(f"Fetching jobs from {company_name} (Workday)...")
+
+    # Construct Workday API URL
+    # Pattern: https://<host>/wday/cxs/<tenant>/<site>/jobs
+    try:
+        parsed = urlparse(workday_url)
+        host = parsed.netloc
+        site_path = parsed.path
+        api_url = build_workday_api_url(host, site_path)
+
+        # Acquire CSRF token required by Workday CXS API (mandatory since early 2026).
+        # The token is obtained from a GET to the careers homepage and echoed back
+        # as X-Calypso-CSRF-Token on every POST to the jobs endpoint.
+        csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+
+        jobs = []
+        offset = 0
+        limit = page_limit
+        handled_403 = False
+
+        while True:
+            payload = {
+                "appliedFacets": {},
+                "limit": limit,
+                "offset": offset,
+                "searchText": ""  # Fetch all, filter locally
+            }
+
+            headers = {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            }
+            if csrf_token:
+                headers['X-Calypso-CSRF-Token'] = csrf_token
+
+            response = None
+            for attempt in range(max_retries + 1):
+                response = limited_post(api_url, json=payload, headers=headers, timeout=timeout)
+
+                if response.status_code == 403:
+                    admitted = SOURCE_COOLDOWN.try_admit(api_url)
+                    if admitted:
+                        count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(api_url), 0)
+                        print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
+                    else:
+                        print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
+                    handled_403 = True
+                    break
+
+                if response.status_code in (500, 502, 503, 504) and attempt < max_retries:
+                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt + 1}/{max_retries})...")
+                    time.sleep(0.3 * (2 ** attempt))
+                    continue
+                break
+
+            if response.status_code == 404:
+                # Try alternative tenant extraction if 404.
+                # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
+                path_parts = [part for part in site_path.strip('/').split('/') if part]
+                if len(path_parts) >= 2:
+                    fallback_tenant = path_parts[0]
+                    if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
+                        fallback_tenant = path_parts[1]
+
+                    fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
+                    if fallback_api_url != api_url:
+                        api_url = fallback_api_url
+                        response = limited_post(
+                            api_url,
+                            json=payload,
+                            headers=headers,
+                            timeout=timeout
+                        )
+
+            if response is not None and response.status_code == 422:
+                # CSRF token expired mid-run — re-acquire and retry once.
+                print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
+                csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
+                if csrf_token:
+                    headers['X-Calypso-CSRF-Token'] = csrf_token
+                response = limited_post(api_url, json=payload, headers=headers, timeout=timeout)
+
+            if response is None:
+                break
+
+            if response.status_code == 403:
+                break
+
+            if not response.ok:
+                error_body = _extract_error_body(response)
+                print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code} — {error_body}")
+                break
+
+            data = response.json()
+            job_items = data.get('jobPostings', [])
+
+            if not job_items:
+                break
+
+            for item in job_items:
+                title = item.get('title', '')
+                external_path = item.get('externalPath', '')
+                job_url = f"https://{host}{external_path}"
+                posted_on = item.get('postedOn', '')
+
+                jobs.append({
+                    'company': company_name,
+                    'title': title,
+                    'location': item.get('locationsText', 'Remote'),
+                    'url': job_url,
+                    'posted_at': posted_on,
+                    'source': 'Workday',
+                    'description': ''  # Not fetching full description to save requests
+                })
+
+            offset += limit
+            if len(jobs) >= max_total_limit:
+                print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
+                jobs = jobs[:max_total_limit]
+                break
+
+        if handled_403:
+            return []
+        print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
+        return jobs
+
+    except Exception as e:
+        print(f"  ❌ Error processing {company_name}: {e}")
+        return []
+
+
+def _workday_host_key(company: Dict[str, str]) -> str:
+    """Group key for companies whose requests must not interleave (same host)."""
+    try:
+        return urlparse(company.get('workday_url') or '').netloc.lower()
+    except (TypeError, ValueError):
+        return ''
+
+
 def fetch_workday_jobs(
     companies: List[Dict[str, str]],
     page_limit: int | None = None,
     max_total_limit: int | None = None,
     max_retries: int = 2,
     timeout: int = DEFAULT_WORKDAY_TIMEOUT,
+    max_workers: int | None = None,
 ) -> List[Dict[str, Any]]:
-    """Fetch jobs from Workday API."""
+    """Fetch jobs from the Workday API, companies in parallel.
+
+    Companies are grouped by host and each host group runs in one worker, so
+    tenants that share a host never interleave their CSRF token GET and POSTs
+    on the shared session's per-host cookies. Results are merged in config
+    order, so output does not depend on completion order. One company failing
+    never affects the others (see _fetch_workday_company).
+    """
     page_limit = _coerce_positive_int(page_limit, WORKDAY_PAGE_LIMIT, "page_limit")
     max_total_limit = _coerce_positive_int(max_total_limit, WORKDAY_MAX_JOBS_PER_COMPANY, "max_total_limit")
-    all_jobs = []
+    max_workers = _coerce_positive_int(max_workers, WORKDAY_MAX_WORKERS, "max_workers")
 
-    for company in companies:
-        company_name = company.get('name')
-        workday_url = company.get('workday_url')
+    # host -> [(config index, company)], preserving config order within a host.
+    host_groups: Dict[str, List[Tuple[int, Dict[str, str]]]] = {}
+    for index, company in enumerate(companies):
+        host_groups.setdefault(_workday_host_key(company), []).append((index, company))
 
-        if not company_name or not workday_url:
-            continue
+    def _fetch_group(group: List[Tuple[int, Dict[str, str]]]) -> List[Tuple[int, List[Dict[str, Any]]]]:
+        return [
+            (index, _fetch_workday_company(company, page_limit, max_total_limit, max_retries, timeout))
+            for index, company in group
+        ]
 
-        # Skip immediately if this Workday domain is in cooldown.
-        if SOURCE_COOLDOWN.is_tripped(workday_url):
-            print(f"  ⏭️  {company_name}: skipping — source '{SOURCE_COOLDOWN.domain_key(workday_url)}' in cooldown (403 threshold exceeded)")
-            continue
+    results: Dict[int, List[Dict[str, Any]]] = {}
+    workers = max(1, min(max_workers, len(host_groups)))
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = [executor.submit(_fetch_group, group) for group in host_groups.values()]
+        for future in as_completed(futures):
+            # _fetch_workday_company catches its own errors, so result() only
+            # raises on a programming error — surface it rather than hide it.
+            for index, jobs in future.result():
+                results[index] = jobs
 
-        print(f"Fetching jobs from {company_name} (Workday)...")
-
-        # Construct Workday API URL
-        # Pattern: https://<host>/wday/cxs/<tenant>/<site>/jobs
-        try:
-            parsed = urlparse(workday_url)
-            host = parsed.netloc
-            site_path = parsed.path
-            api_url = build_workday_api_url(host, site_path)
-
-            # Acquire CSRF token required by Workday CXS API (mandatory since early 2026).
-            # The token is obtained from a GET to the careers homepage and echoed back
-            # as X-Calypso-CSRF-Token on every POST to the jobs endpoint.
-            csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
-
-            jobs = []
-            offset = 0
-            limit = page_limit
-            handled_403 = False
-
-            while True:
-                payload = {
-                    "appliedFacets": {},
-                    "limit": limit,
-                    "offset": offset,
-                    "searchText": ""  # Fetch all, filter locally
-                }
-
-                headers = {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                }
-                if csrf_token:
-                    headers['X-Calypso-CSRF-Token'] = csrf_token
-
-                response = None
-                for attempt in range(max_retries + 1):
-                    response = limited_post(api_url, json=payload, headers=headers, timeout=timeout)
-
-                    if response.status_code == 403:
-                        admitted = SOURCE_COOLDOWN.try_admit(api_url)
-                        if admitted:
-                            count = SOURCE_COOLDOWN.counts().get(SOURCE_COOLDOWN.domain_key(api_url), 0)
-                            print(f"  ⚠️  {company_name}: Workday 403 Forbidden ({count}/{SOURCE_COOLDOWN_THRESHOLD})")
-                        else:
-                            print(f"  🚫 {company_name}: Workday 403 Forbidden — cooldown now active for '{SOURCE_COOLDOWN.domain_key(api_url)}'")
-                        handled_403 = True
-                        break
-
-                    if response.status_code in (500, 502, 503, 504) and attempt < max_retries:
-                        print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code}. Retrying ({attempt + 1}/{max_retries})...")
-                        time.sleep(0.3 * (2 ** attempt))
-                        continue
-                    break
-
-                if response.status_code == 404:
-                    # Try alternative tenant extraction if 404.
-                    # Some URLs are https://wd5.myworkdayjobs.com/tenant/site
-                    path_parts = [part for part in site_path.strip('/').split('/') if part]
-                    if len(path_parts) >= 2:
-                        fallback_tenant = path_parts[0]
-                        if len(path_parts) >= 3 and re.fullmatch(r"[a-z]{2}-[a-z]{2}", path_parts[0].lower()):
-                            fallback_tenant = path_parts[1]
-
-                        fallback_api_url = f"https://{host}/wday/cxs/{fallback_tenant}/{path_parts[-1]}/jobs"
-                        if fallback_api_url != api_url:
-                            api_url = fallback_api_url
-                            response = limited_post(
-                                api_url,
-                                json=payload,
-                                headers=headers,
-                                timeout=timeout
-                            )
-
-                if response is not None and response.status_code == 422:
-                    # CSRF token expired mid-run — re-acquire and retry once.
-                    print(f"  🔄 {company_name}: 422 received, re-acquiring CSRF token and retrying...")
-                    csrf_token = get_workday_csrf_token(host, HTTP_SESSION)
-                    if csrf_token:
-                        headers['X-Calypso-CSRF-Token'] = csrf_token
-                    response = limited_post(api_url, json=payload, headers=headers, timeout=timeout)
-
-                if response is None:
-                    break
-
-                if response.status_code == 403:
-                    break
-
-                if not response.ok:
-                    error_body = _extract_error_body(response)
-                    print(f"  ⚠️  Workday API error for {company_name}: HTTP {response.status_code} — {error_body}")
-                    break
-
-                data = response.json()
-                job_items = data.get('jobPostings', [])
-
-                if not job_items:
-                    break
-
-                for item in job_items:
-                    title = item.get('title', '')
-                    external_path = item.get('externalPath', '')
-                    job_url = f"https://{host}{external_path}"
-                    posted_on = item.get('postedOn', '')
-
-                    jobs.append({
-                        'company': company_name,
-                        'title': title,
-                        'location': item.get('locationsText', 'Remote'),
-                        'url': job_url,
-                        'posted_at': posted_on,
-                        'source': 'Workday',
-                        'description': ''  # Not fetching full description to save requests
-                    })
-
-                offset += limit
-                if len(jobs) >= max_total_limit:
-                    print(f"  ℹ️  {company_name}: Reached safety limit of {max_total_limit} jobs. Truncating.")
-                    jobs = jobs[:max_total_limit]
-                    break
-
-            if not handled_403:
-                print(f"  ✓ Found {len(jobs)} jobs from {company_name}")
-                all_jobs.extend(jobs)
-
-        except Exception as e:
-            print(f"  ❌ Error processing {company_name}: {e}")
-            continue
-
+    all_jobs: List[Dict[str, Any]] = []
+    for index in sorted(results):
+        all_jobs.extend(results[index])
     return all_jobs
 
 
@@ -2189,6 +2282,54 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
     pattern = rf"\b({combined_signals})\b"
     return bool(re.search(pattern, title.lower()))
 
+# Exclusion signals whose inflections must also exclude. Word-boundary matching
+# means "intern" alone no longer covers "internship"/"interns".
+_EXCLUSION_SUFFIXES: Dict[str, str] = {'intern': r'(?:s|ships?)?'}
+# Entry-level titles that contain an exclusion word but are not senior roles.
+# Removed from the title before exclusion signals are checked, so a real
+# seniority marker elsewhere ("Senior Associate Product Manager") still excludes.
+_EXCLUSION_EXCEPTIONS_RE = re.compile(
+    r'\bassociate\s+(?:technical\s+)?(?:product|program|project)\s+managers?\b',
+    re.IGNORECASE,
+)
+
+
+@lru_cache(maxsize=32)
+def _compile_exclusion_pattern(signals: Tuple[str, ...]) -> Optional[re.Pattern]:
+    """Compile exclusion signals into one whole-word regex.
+
+    Word boundaries are applied only on alphanumeric edges, so punctuation-led
+    or -trailed signals ("sr.", "10+ years") keep working. Alphabetic signals
+    also match a plural "s" ("managers", "leads"); see _EXCLUSION_SUFFIXES for
+    longer inflections.
+    """
+    parts = []
+    for raw in signals:
+        if not isinstance(raw, str):
+            continue
+        core = raw.strip().lower()
+        if not core:
+            continue
+        body = r'\s+'.join(re.escape(word) for word in core.split())
+        if core[-1].isalpha():
+            body += _EXCLUSION_SUFFIXES.get(core, r's?')
+        left = r'(?<![a-z0-9])' if core[0].isalnum() else ''
+        right = r'(?![a-z0-9])' if core[-1].isalnum() else ''
+        parts.append(f"{left}{body}{right}")
+    if not parts:
+        return None
+    return re.compile('|'.join(parts), re.IGNORECASE)
+
+
+def is_title_excluded(title: str, exclusion_signals: List[str]) -> bool:
+    """Return True when the title carries a seniority/intern exclusion signal."""
+    if not isinstance(title, str) or not title:
+        return False
+    pattern = _compile_exclusion_pattern(tuple(exclusion_signals or ()))
+    if pattern is None:
+        return False
+    return bool(pattern.search(_EXCLUSION_EXCEPTIONS_RE.sub(' ', title)))
+
 NETWORK_INFRASTRUCTURE_KEYWORDS = {
     'network engineer',
     'network automation',
@@ -2422,8 +2563,7 @@ def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict
         posted_at = job.get('posted_at', '')
 
         # FIRST: Check for exclusion signals (filter OUT senior/staff roles)
-        is_excluded = any(signal.lower() in title_lower for signal in exclusion_signals)
-        if is_excluded:
+        if is_title_excluded(title, exclusion_signals):
             continue
 
         # Check for new grad signals
@@ -2521,8 +2661,19 @@ def format_posted_date(posted_at: str) -> str:
         print(f"Warning: could not format date '{posted_at}': {e}", file=sys.stderr)
         return "Unknown"
 
+def _format_utc_iso(dt_utc_naive: datetime) -> str:
+    """Format a UTC-naive datetime as ISO 8601 with an explicit "Z" designator.
+
+    Without the designator browsers parse the string as local time. Fractions
+    are clipped to milliseconds, the precision the ECMAScript date-time format
+    defines.
+    """
+    timespec = 'milliseconds' if dt_utc_naive.microsecond else 'seconds'
+    return dt_utc_naive.isoformat(timespec=timespec) + 'Z'
+
+
 def get_iso_date(posted_at: Any) -> str:
-    """Get ISO format date string"""
+    """Get ISO 8601 UTC date string (e.g. "2026-09-24T14:50:21Z")."""
     try:
         now_utc = datetime.now(timezone.utc)
         if isinstance(posted_at, (int, float)):
@@ -2531,7 +2682,7 @@ def get_iso_date(posted_at: Any) -> str:
             # Normalize human-readable date strings before parsing
             normalized_date = normalize_date_string(posted_at, now_utc)
             posted_date = date_parser.parse(normalized_date)
-        return _as_utc_naive(posted_date).isoformat()
+        return _format_utc_iso(_as_utc_naive(posted_date))
     except Exception as e:
         print(f"Warning: could not parse ISO date '{posted_at}': {e}", file=sys.stderr)
         return ""
@@ -2627,6 +2778,40 @@ def build_full_descriptions(jobs: List[Dict[str, Any]]) -> Dict[str, str]:
             texts[compute_job_id(job)] = text
     return texts
 
+class MarketHistoryError(RuntimeError):
+    """docs/market-history.json exists but is unreadable or malformed."""
+
+
+def _load_market_history(history_path: str) -> List[Dict[str, Any]]:
+    """Load existing snapshots; a missing file means an empty history.
+
+    A file that exists but cannot be parsed or validated raises
+    MarketHistoryError instead of returning [] — falling back to an empty list
+    used to overwrite up to 90 days of history with a single snapshot.
+    """
+    if not os.path.exists(history_path):
+        return []
+    try:
+        with open(history_path, 'r', encoding='utf-8') as f:
+            history_data = json.load(f)
+    except (OSError, ValueError) as e:
+        raise MarketHistoryError(
+            f"Could not load market history at {history_path}: {e}. "
+            "Refusing to overwrite it; fix or remove the file and re-run."
+        ) from e
+
+    snapshots = history_data.get('snapshots') if isinstance(history_data, dict) else None
+    if not isinstance(snapshots, list) or not all(
+        isinstance(entry, dict) and isinstance(entry.get('date'), str) for entry in snapshots
+    ):
+        raise MarketHistoryError(
+            f"Invalid market history at {history_path}: expected an object with a "
+            "'snapshots' list of objects that each carry a 'date' string. "
+            "Refusing to overwrite it; fix or remove the file and re-run."
+        )
+    return snapshots
+
+
 def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     """
     Save daily market snapshot for historical tracking, comparisons, and ML predictions.
@@ -2673,16 +2858,7 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
     # Load existing history
     history_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'market-history.json')
 
-    try:
-        if os.path.exists(history_path):
-            with open(history_path, 'r', encoding='utf-8') as f:
-                history_data = json.load(f)
-                history = history_data.get('snapshots', [])
-        else:
-            history = []
-    except Exception as e:
-        print(f"  ⚠️  Could not load market history: {e}")
-        history = []
+    history = _load_market_history(history_path)
 
     # Check if today's snapshot already exists (avoid duplicates)
     existing_dates = {entry['date'] for entry in history}
@@ -2717,13 +2893,23 @@ def save_market_history(jobs: List[Dict[str, Any]]) -> None:
         'snapshots': history
     }
 
+    tmp_path = None
     try:
-        os.makedirs(os.path.dirname(history_path), exist_ok=True)
-        with open(history_path, 'w', encoding='utf-8') as f:
+        history_dir = os.path.dirname(history_path)
+        os.makedirs(history_dir, exist_ok=True)
+        # Write to a sibling temp file then os.replace, so a crash mid-write
+        # can never leave a truncated history file behind.
+        fd, tmp_path = tempfile.mkstemp(dir=history_dir, prefix='.market-history.', suffix='.tmp')
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
             json.dump(history_data, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_path, history_path)
+        tmp_path = None
         print(f"  ✓ Saved market history: {len(history)} snapshots (last 90 days)")
     except Exception as e:
         print(f"  ❌ Failed to save market history: {e}")
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            os.remove(tmp_path)
 
 
 def _validate_prediction_payload(predictions: Dict[str, Any]) -> Tuple[bool, str]:
@@ -3279,7 +3465,7 @@ def main():
     global DEFAULT_GOOGLE_MIN_WORKERS, DEFAULT_GOOGLE_MAX_WORKERS
     global DEFAULT_GRAPHQL_MIN_WORKERS, DEFAULT_GRAPHQL_MAX_WORKERS
     global DEFAULT_JOBSPY_WORKERS, DEFAULT_ORCHESTRATOR_WORKERS
-    global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY
+    global WORKDAY_PAGE_LIMIT, WORKDAY_MAX_JOBS_PER_COMPANY, WORKDAY_MAX_WORKERS
     global DEFAULT_WORKDAY_TIMEOUT, DEFAULT_GRAPHQL_TIMEOUT
     global GOOGLE_MAX_PAGES
 
@@ -3311,6 +3497,11 @@ def main():
         DEFAULT_WORKDAY_TIMEOUT,
         'apis.workday.timeout',
     )
+    WORKDAY_MAX_WORKERS = _coerce_positive_int(
+        workday_cfg.get('max_workers'),
+        DEFAULT_WORKDAY_MAX_WORKERS,
+        'apis.workday.max_workers',
+    )
 
     google_cfg = config.get('apis', {}).get('google', {})
     GOOGLE_MAX_PAGES = _coerce_positive_int(
@@ -3333,7 +3524,7 @@ def main():
     print(f"     GraphQL: {DEFAULT_GRAPHQL_MIN_WORKERS}-{DEFAULT_GRAPHQL_MAX_WORKERS}")
     print(f"     JobSpy: {DEFAULT_JOBSPY_WORKERS}")
     print(f"     Orchestrator: {DEFAULT_ORCHESTRATOR_WORKERS}")
-    print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}, timeout={DEFAULT_WORKDAY_TIMEOUT}s")
+    print(f"     Workday: page_limit={WORKDAY_PAGE_LIMIT}, max_total={WORKDAY_MAX_JOBS_PER_COMPANY}, timeout={DEFAULT_WORKDAY_TIMEOUT}s, max_workers={WORKDAY_MAX_WORKERS}")
     print(f"     Google: max_pages={GOOGLE_MAX_PAGES}")
     print(f"     GraphQL timeout: {DEFAULT_GRAPHQL_TIMEOUT}s")
 
@@ -3500,7 +3691,12 @@ def main():
     jobs_json = generate_jobs_json(enriched_jobs, config)
 
     # ========== Save Historical Market Data ==========
-    save_market_history(enriched_jobs)
+    # A corrupt history file is left untouched (never wiped) and flagged, but it
+    # must not block publishing the job board, which does not depend on it.
+    try:
+        save_market_history(enriched_jobs)
+    except MarketHistoryError as e:
+        print(f"::error::Market history not updated (file left untouched): {e}")
 
     # ========== Generate ML Predictions ==========
     predict_hiring_trends()
