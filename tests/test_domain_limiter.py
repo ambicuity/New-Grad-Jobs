@@ -174,6 +174,7 @@ def test_limiter_integrates_with_workday_post_path(monkeypatch):
         return _WorkdayResponse({"jobPostings": []})
 
     monkeypatch.setattr("update_jobs.limited_post", fake_limited_post)
+    monkeypatch.setattr("update_jobs.get_workday_csrf_token", lambda host, session: "")
 
     jobs = fetch_workday_jobs(
         [
@@ -229,6 +230,7 @@ def test_workday_404_retry_uses_path_tenant(monkeypatch):
         return _WorkdayResponse({"jobPostings": []})
 
     monkeypatch.setattr("update_jobs.limited_post", fake_limited_post)
+    monkeypatch.setattr("update_jobs.get_workday_csrf_token", lambda host, session: "")
 
     jobs = fetch_workday_jobs(
         [
