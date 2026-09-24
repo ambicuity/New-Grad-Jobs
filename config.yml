@@ -36,7 +36,8 @@ filtering:
 
     # Year-based programs
     # Keep the in-flight cohort years current — 2027 reqs open ~18 months ahead,
-    # so they are live now. Mirrored in STRONG_NEW_GRAD_SIGNALS in scripts/ngj/filters.py.
+    # so they are live now. Mirrored in strong_new_grad_signals below.
+    # Bare years match whole numbers only, never inside req ids ("JR-2026-0042").
     - "2024 start"
     - "2025 start"
     - "2026 start"
@@ -46,21 +47,12 @@ filtering:
     - "2027"
     - "class of"
 
-    # Level indicators (common at tech companies)
+    # Level phrases (whole words: "level 1" does not match "Level 10").
+    # Bare level tokens (I, II, L3, ...) live in level_signals below.
     - "level 1"
     - "level 2"
     - "level i"
     - "level ii"
-    - " I "
-    - " II "
-    - " L3"
-    - " L4"
-    - " E3"
-    - " E4"
-    - " SDE I"
-    - " SDE II"
-    - " SWE I"
-    - " SWE II"
 
     # Programs
     - "graduate program"
@@ -86,7 +78,45 @@ filtering:
     - "site reliability"
     - "sre"
 
-  # Track signals to look for in job titles/descriptions (case insensitive)
+  # Entry-level markers matched as standalone level TOKENS, not substrings:
+  # "Engineer I", "SDE II", "Engineer I/II", "(L3)", "Engineer-II," match;
+  # "Alvin I. Goodman", "I/O", "L2/L3" and "L3Harris" do not. (These used to
+  # be written " I " / " L3" in new_grad_signals; YAML-padded spaces were
+  # silently stripped, so " I " matched every standalone "I".) Never pad a
+  # signal with spaces — tests/test_title_signal_boundaries.py enforces it.
+  # Level III+ ("Engineer III", "Engineer 3", "Level 4", "L5") is always
+  # excluded; level II stays in scope.
+  level_signals:
+    - "I"
+    - "II"
+    - "L3"
+    - "L4"
+    - "E3"
+    - "E4"
+
+  # Phrases strong enough to pass WITHOUT a track signal (whole words/years).
+  # Generic role titles must never be added here. Defaults live in
+  # DEFAULT_STRONG_NEW_GRAD_SIGNALS in scripts/ngj/filters.py.
+  strong_new_grad_signals:
+    - "new grad"
+    - "new graduate"
+    - "graduate program"
+    - "campus"
+    - "university grad"
+    - "university graduate"
+    - "college grad"
+    - "college graduate"
+    - "early career"
+    - "2025 start"
+    - "2026 start"
+    - "2027 start"
+    - "2025"
+    - "2026"
+    - "2027"
+
+  # Track signals to look for in job titles (case insensitive, whole words
+  # plus inflections: "engineer" matches "Engineering", but "ai" no longer
+  # matches "Maintenance" and "ml" no longer matches "HTML")
   track_signals:
     - "software"
     - "engineer"
@@ -119,7 +149,7 @@ filtering:
   exclusion_signals:
     - "senior"
     - "sr."
-    - "sr "
+    - "sr"
     - "staff"
     - "principal"
     - "lead"
