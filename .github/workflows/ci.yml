@@ -99,10 +99,6 @@ jobs:
     name: typecheck
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # Non-blocking until the scripts/ -> scripts/ngj/ refactor lands: the
-    # current code base has ~31 pre-existing mypy errors. Flip this to false
-    # once `mypy` is clean so the check actually gates merges.
-    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
