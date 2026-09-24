@@ -6,8 +6,10 @@ The following versions of New Grad Jobs are currently receiving security updates
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.x.x   | ✅ Active support  |
+| 1.0.x   | ✅ Active support  |
 | < 1.0   | ❌ Not supported   |
+
+Fixes land on `main` and are deployed to <https://jobs.riteshrana.engineer> by the next scraper run. There are no separately maintained release branches.
 
 ## Reporting a Vulnerability
 
@@ -17,8 +19,8 @@ Opening a public issue exposes the vulnerability to all users — including mali
 
 ### Private Disclosure Process
 
-1. **Email the maintainer directly at:** `contact@riteshrana.engineer`
-2. Use the subject line: `[SECURITY] New Grad Jobs - <brief description>`
+1. **Preferred:** use GitHub private vulnerability reporting. Open [**Security → Report a vulnerability**](https://github.com/ambicuity/New-Grad-Jobs/security/advisories/new). The report stays private between you and the maintainer until an advisory is published.
+2. **Alternative:** email `contact@riteshrana.engineer` with the subject line `[SECURITY] New Grad Jobs - <brief description>`.
 3. Include the following in your report:
    - A description of the vulnerability and its potential impact
    - Steps to reproduce the issue
@@ -42,9 +44,10 @@ We will keep you informed throughout the process and, with your permission, will
 The following are **in scope** for security reports:
 
 - **GitHub Actions workflows**: Secrets exposure, workflow injection, supply-chain attacks
-- **Python scraper** (`scripts/update_jobs.py`): Arbitrary code execution, SSRF, credential leakage
-- **Dependency vulnerabilities**: Known CVEs in `requirements.txt` dependencies
-- **GitHub Pages frontend** (`docs/`): XSS, content injection, open redirects
+- **Python scraper** (`scripts/update_jobs.py`, `scripts/ngj/`): arbitrary code execution, SSRF, credential leakage, unsafe URLs reaching the published data (see `scripts/url_safety.py`)
+- **Dependency vulnerabilities**: known CVEs in `requirements*.txt` or `site/package-lock.json` dependencies
+- **Website** (`site/`, deployed to GitHub Pages): XSS, content injection, open redirects, CSP bypasses
+- **Published data** (`jobs.json`, `feed.xml`, per-job pages): injection into consumers of the public feed
 - **`config.yml`**: Configurations that could enable malicious scraping behavior
 
 The following are **out of scope**:
@@ -59,7 +62,8 @@ When contributing to this project, please observe the following:
 
 - **Never hardcode credentials, tokens, or API keys** — use GitHub Secrets and environment variables
 - **Validate all external data** — data from scraped APIs should be treated as untrusted
-- **Pin dependency versions** — use exact versions in `requirements.txt` to prevent supply-chain attacks
+- **Keep dependencies hash-locked.** Python dependencies are declared as ranges in `pyproject.toml` and locked with exact versions **and hashes** in `requirements.txt` / `requirements-dev.txt`. CI installs them with `pip install --require-hashes`. Never hand-edit the lock files: change `pyproject.toml` and run `make lock`. Site dependencies are locked by `site/package-lock.json` and installed with `npm ci`.
+- **Pin GitHub Actions to commit SHAs**, as the existing workflows do, and pin pre-commit hooks with `pre-commit autoupdate --freeze`
 - **Review GitHub Actions permissions** — workflows should request the minimum permissions required
 
 Thank you for helping keep New Grad Jobs and its users safe.
