@@ -54,29 +54,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->1872<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->1871<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1040<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1030<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->14<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->28<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->9<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->96<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->212<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->41<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->95<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->213<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->42<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->176<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->27<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->217<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->225<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **1,872** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **1,871** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -95,7 +95,7 @@ Experience an advanced career journey with us! 🚀
 | Samsara | Software Engineer - Data Platform | Remote - Canada | Today | [Apply](https://www.samsara.com/company/careers/roles/7992889?gh_jid=7992889) |
 | Samsara | Software Engineer I, External Platform EMEA (Poland, Remote, B2B) | Remote - Poland | Today | [Apply](https://www.samsara.com/company/careers/roles/8210695?gh_jid=8210695) |
 
-**[View all 1,040 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,030 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -109,7 +109,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Software Engineer, Front End | Reston, Virginia, United States | 2 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5177896007?gh_jid=5177896007) |
 | Anduril Industries | Software Engineer (Frontend), Space | Costa Mesa, California, United States | 2 days ago | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5138370007?gh_jid=5138370007) |
 | Okta | Software Engineer II, Frontend Agentic AI | San Francisco, California | 2 days ago | [Apply](https://www.okta.com/company/careers/opportunity/8139374?gh_jid=8139374) |
-| Jane Street | Front End Software Engineer | New York, New York, United States | 2 days ago | [Apply](https://www.janestreet.com/join-jane-street/apply/6184529002?gh_jid=6184529002) |
+| Jane Street | Front End Software Engineer | New York, New York, United States | 3 days ago | [Apply](https://www.janestreet.com/join-jane-street/apply/6184529002?gh_jid=6184529002) |
 | Adobe | Computer Scientist I (Frontend) | Noida | 6 days ago | [Apply](https://adobe.wd5.myworkdayjobs.com/job/Noida/Computer-Scientist-I--Frontend-_R171581) |
 | Reddit | Front End Software Engineer, Consumer Engineering | Remote - United States | 6 days ago | [Apply](https://job-boards.greenhouse.io/reddit/jobs/8147559) |
 | The Emmes Company, LLC | Software Engineer (Front-End) - Essex Management | Rockville, MD, US | 2026-09-17 | [Apply](https://www.indeed.com/viewjob?jk=d569f44c7ed079aa) |
@@ -168,7 +168,7 @@ Experience an advanced career journey with us! 🚀
 | Amaris Consulting | Embedded Linux Security Engineer | Brossard, QC, CA | 1 day ago | [Apply](https://ca.indeed.com/viewjob?jk=7d0c3a2f35710705) |
 | Raytheon | Software Security Engineer - II, Onsite | Goleta, CA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=0aa7802a61293c2d) |
 
-**[View all 96 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 95 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -181,13 +181,13 @@ Experience an advanced career journey with us! 🚀
 | xAI | Machine Learning Engineer - Ads | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4996796007) |
 | xAI | Machine Learning Engineer - Recommendation Systems | Palo Alto, CA | Today | [Apply](https://job-boards.greenhouse.io/xai/jobs/4703144007) |
 | Cenovus Energy | Student, IT, Data Science and Software, Calgary (May 2027) | Calgary, AB, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=329bacc0e8d21151) |
+| Booz Allen Hamilton | Sustainment Data Scientist | San Diego, CA | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/San-Diego-CA/Sustainment-Data-Scientist_R0249515-1) |
 | Anduril Industries | Site Reliability Engineer, Space | Costa Mesa, California, United States | Today | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5075877007?gh_jid=5075877007) |
 | Coinbase | Machine Learning Engineer, CX Intelligence | Remote - Brazil | Today | [Apply](https://www.coinbase.com/careers/positions/8031260?gh_jid=8031260) |
 | Coinbase | Machine Learning Engineer | Remote - India | Today | [Apply](https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187) |
 | Point72 | Machine Learning Infrastructure Engineer, GenAI Technology | New York, NY | Today | [Apply](https://boards.greenhouse.io/point72/jobs/8472280002?gh_jid=8472280002) |
-| Together AI | Machine Learning Engineer - Inference | San Francisco | Today | [Apply](https://job-boards.greenhouse.io/togetherai/jobs/4385540007) |
 
-**[View all 212 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 213 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -199,14 +199,14 @@ Experience an advanced career journey with us! 🚀
 | Samsara | Data Engineer | Remote - Canada | Today | [Apply](https://www.samsara.com/company/careers/roles/7997311?gh_jid=7997311) |
 | Samsara | Data Engineer | Remote - US | Today | [Apply](https://www.samsara.com/company/careers/roles/7859702?gh_jid=7859702) |
 | RBC | 2027 CFO, Winter Data Engineer (8 months) | Toronto, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=41b3c534dddbce2f) |
+| Booz Allen Hamilton | Data Engineer | Camp Lejeune, NC | Today | [Apply](https://bah.wd1.myworkdayjobs.com/job/Camp-Lejeune-NC/Data-Engineer_R0249648) |
 | Fivetran | Software Development Engineer in Test II | Bengaluru, Karnataka, India, APAC | Today | [Apply](https://www.fivetran.com/careers/job?gh_jid=7798462003) |
-| ZoomInfo | Data Engineer III | Toronto, Ontario, Canada | Today | [Apply](https://www.zoominfo.com/careers?gh_jid=8802380002) |
+| ZoomInfo | Data Engineer III | Toronto, Ontario, Canada | 1 day ago | [Apply](https://www.zoominfo.com/careers?gh_jid=8802380002) |
 | Mastercard | Associate Product Specialist, Product Management, Launch Program 2027 - United States | Arlington, VA, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=ed98c1a7fbbbefc4) |
 | American Express | Campus Undergraduate Full-Time Analyst - 2027 Data & Analytics , Enterprise Technology Services- Charlotte, NC | Charlotte, NC, US | 1 day ago | [Apply](https://www.indeed.com/viewjob?jk=04f6d7c342dbe7cd) |
 | Booz Allen Hamilton | Data Engineer | McLean, VA | 1 day ago | [Apply](https://bah.wd1.myworkdayjobs.com/job/McLean-VA/Data-Engineer_R0250207) |
-| Leidos | Data Engineer | Washington, DC | 1 day ago | [Apply](https://leidos.wd5.myworkdayjobs.com/job/Washington-DC/Data-Engineer_R-00193022) |
 
-**[View all 41 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 42 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -246,7 +246,7 @@ Experience an advanced career journey with us! 🚀
 | Citizens | 2027 Summer Analyst – Sales & Trading and Equity Research (Boston, MA) | Boston, MA, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=3a0c920fab2eb7ee) |
 | Citizens | 2027 Summer Analyst – Sales & Trading and Equity Research (New York, NY) | New York, NY, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=74989b556563940f) |
 | Belvedere Trading | Early Career Talent Partner- Trading | Chicago, IL, US | 2 days ago | [Apply](https://www.indeed.com/viewjob?jk=7faf7993eca13a65) |
-| Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 2 days ago | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
+| Jane Street | Campus Recruiter, Early Careers Partnerships & Initiatives | New York, New York, United States | 3 days ago | [Apply](https://www.janestreet.com/join-jane-street/apply/8448713002?gh_jid=8448713002) |
 | JPMorganChase | Chief Data & Analytics Office Strategy, Associate | New York, NY, US | 2026-09-17 | [Apply](https://www.indeed.com/viewjob?jk=5d3a66eae831bc4e) |
 | Point72 | Quantitative Portfolio Analyst – 2026 Grad | New York, New York | 2026-09-15 | [Apply](https://boards.greenhouse.io/point72/jobs/8169967002?gh_jid=8169967002) |
 | Robinhood | Business Analyst (New Grad) | Washington, DC | 2026-09-09 | [Apply](https://boards.greenhouse.io/robinhood/jobs/8123231?t=gh_src=&gh_jid=8123231) |
@@ -278,18 +278,18 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Cisco | QA Engineer - Networking L2/L3 Testing / 4 - 8 yrs | KA, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=1fdad0885c026625) |
+| Leader IT | Test Engineer – Entry Level | Remote, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=039c6003a7e1eee1) |
 | Exzeo Software Pvt Ltd | B2B / Industrial Sales engineer-Diploma / Graduate in Mechanical or Electrical | HR, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=654e9a7d556a919e) |
 | Flex | Junior Engineer- Component Engineering | TN, IN | Today | [Apply](https://in.indeed.com/viewjob?jk=b6e384f06b004d37) |
+| Phoenix Building Components | Junior/ Intermediate Structural Engineer | Utopia, ON, CA | Today | [Apply](https://ca.indeed.com/viewjob?jk=5196305ea906e82b) |
+| Fehr & Peers | Entry-level Transportation Engineer/Planner (2026 and 2027) | Riverside, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=a274d5d3c88d0ff4) |
 | Fermilab | VALOR Apprenticeship Spring 2027 | Batavia, IL, US | Today | [Apply](https://www.indeed.com/viewjob?jk=c4b7b899a2d63f60) |
 | Texas Health Resources | Graduate Nurse Residency – Medical Surgical – February 2027 | Dallas, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=fe5a5d0c114b5286) |
 | Texas Health Resources | Graduate Nurse Residency, NICU - February 2027 Cohort - Full Time | Plano, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=789e2e6d5333e69e) |
 | Texas Health Resources | Graduate Nurse Residency, Antepartum - February 2027 Cohort - Full Time | Plano, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=3f042bf6fa032d90) |
-| Texas Health Resources | Graduate Nurse Residency – Surgical Telemetry – February 2027 | Plano, TX, US | Today | [Apply](https://www.indeed.com/viewjob?jk=58800c6822191417) |
-| — | Associate or Full Professor & Inaugural Chair of the Department of Health Behavior, Policy & Management (Tenured Track F0129A) | Norfolk, VA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=48432d86c170b08b) |
-| Fehr & Peers | Entry-level Transportation Engineer/Planner (2026 and 2027) | Riverside, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=a274d5d3c88d0ff4) |
-| Fehr & Peers | Entry-level Transportation Engineer/Planner (2026 and 2027) | San Francisco, CA, US | Today | [Apply](https://www.indeed.com/viewjob?jk=83cf02cc9044c562) |
 
-**[View all 217 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 225 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -410,4 +410,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-24 15:00:43 UTC*
+*Last updated: 2026-09-24 15:37:03 UTC*
