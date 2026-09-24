@@ -1,4 +1,7 @@
-name: CI — Lint & Validate
+name: CI
+
+# Job names (`lint`, `typecheck`, `test (3.11)`, `test (3.13)`, `site`) are
+# used as required status checks — do not rename them.
 
 on:
   pull_request:
@@ -8,19 +11,29 @@ on:
     paths:
       - 'scripts/**'
       - 'tests/**'
+      - 'site/**'
       - 'config.yml'
-      - 'requirements.txt'
       - 'pyproject.toml'
+      - 'requirements*.txt'
       - '.github/workflows/**'
+      - '.github/scripts/**'
 
-permissions: read-all
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  ACTIONLINT_VERSION: '1.7.12'
+  ACTIONLINT_SHA256: '8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8'
+
 jobs:
-  lint-and-validate:
-    name: Python Lint & Syntax Check
+  lint:
+    name: lint
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -30,30 +43,25 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+          cache-dependency-path: requirements*.txt
 
-      - name: Install dependencies
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements.txt -r requirements-dev.txt
+
+      - name: Ruff
+        run: ruff check --output-format=github
+
+      - name: actionlint
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install flake8
+          tarball="actionlint_${ACTIONLINT_VERSION}_linux_amd64.tar.gz"
+          curl -sSfL -o "$RUNNER_TEMP/$tarball" \
+            "https://github.com/rhysd/actionlint/releases/download/v${ACTIONLINT_VERSION}/$tarball"
+          echo "${ACTIONLINT_SHA256}  $RUNNER_TEMP/$tarball" | sha256sum --check --strict
+          tar -xzf "$RUNNER_TEMP/$tarball" -C "$RUNNER_TEMP" actionlint
+          "$RUNNER_TEMP/actionlint" -color
 
-      - name: Syntax check — update_jobs.py
-        run: python -m py_compile scripts/update_jobs.py
-
-      - name: Syntax check — generate_companies.py
-        run: python -m py_compile scripts/generate_companies.py
-
-      - name: Syntax check — scripts/validate_config.py
-        run: python -m py_compile scripts/validate_config.py
-
-      - name: Syntax check — fix_nan_only.py
-        run: python -m py_compile scripts/fix_nan_only.py
-
-      - name: Flake8 lint (errors only, E9/F-class)
-        run: |
-          # Stop on syntax errors and undefined names only.
-          # Style warnings (E501 long lines, W503, etc.) are informational.
-          flake8 scripts/ --count --select=E9,F63,F7,F82 --show-source --statistics
+      - name: Validate config
+        run: python scripts/validate_config.py
 
       - name: Validate config.yml structure
         run: |
@@ -66,7 +74,7 @@ jobs:
               if key not in config:
                   print(f"ERROR: Missing required top-level key in config.yml: '{key}'")
                   sys.exit(1)
-          print(f"✅ config.yml is valid YAML with all required keys.")
+          print("✅ config.yml is valid YAML with all required keys.")
           # Read nested company lists directly so a missing or malformed
           # apis.greenhouse.companies / apis.lever.companies schema fails loudly
           # instead of silently reporting zero companies.
@@ -84,9 +92,6 @@ jobs:
           print(f"   Greenhouse companies: {len(greenhouse)}")
           print(f"   Lever companies: {len(lever)}")
           EOF
-
-      - name: Run unit tests
-        run: python scripts/validate_config.py
 
       - name: Check for duplicate API URLs in config.yml
         run: |
@@ -116,34 +121,66 @@ jobs:
           print(f"✅ No duplicate URLs found across {len(urls)} entries.")
           EOF
 
-  test:
-    name: Run Unit Tests
+  typecheck:
+    name: typecheck
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    env:
-      HAS_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN != '' }}
-
+    timeout-minutes: 10
+    # Non-blocking until the scripts/ -> scripts/ngj/ refactor lands: the
+    # current code base has ~31 pre-existing mypy errors. Flip this to false
+    # once `mypy` is clean so the check actually gates merges.
+    continue-on-error: true
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: '3.11'
           cache: 'pip'
+          cache-dependency-path: requirements*.txt
 
-      - name: Install dependencies
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements.txt -r requirements-dev.txt
+
+      - name: mypy
+        run: mypy
+
+  test:
+    name: test (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    env:
+      HAS_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN != '' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
+
+      # Note: python-jobspy pins numpy==1.26.3, which ships no cp313 wheels, so
+      # the 3.13 leg builds numpy from source once; pip's wheel cache (saved by
+      # setup-python) keeps later runs fast.
+      - name: Install locked dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          python -m pip install --require-hashes -r requirements.txt -r requirements-dev.txt
+          python -m pip install -e . --no-deps
 
-      - name: Run unit tests with coverage
-        run: pytest tests/ -v --cov=scripts --cov-report=term-missing --cov-report=xml --junitxml=junit.xml -o junit_family=legacy
+      # Coverage floor (fail_under) and report formats come from pyproject.toml.
+      - name: Run tests with coverage
+        run: pytest --junitxml=junit.xml -o junit_family=legacy
 
       - name: Upload coverage to Codecov
-        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' }}
+        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' && matrix.python-version == '3.11' }}
         uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -154,8 +191,51 @@ jobs:
           verbose: true
 
       - name: Upload test results to Codecov
-        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' }}
+        if: ${{ !cancelled() && env.HAS_CODECOV_TOKEN == 'true' && matrix.python-version == '3.11' }}
         uses: codecov/test-results-action@0fa95f0e1eeaafde2c782583b36b28ad0d8c77d3 # v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: unittests
+
+  site:
+    name: site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Every step is guarded so this required check passes as a no-op until the
+    # Vite app (site/package-lock.json) lands. hashFiles() is not available in
+    # a job-level `if`, hence the per-step guards.
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Report skip
+        if: hashFiles('site/package-lock.json') == ''
+        run: echo "site/package-lock.json not found; skipping site checks."
+
+      - name: Set up Node
+        if: hashFiles('site/package-lock.json') != ''
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        if: hashFiles('site/package-lock.json') != ''
+        working-directory: site
+        run: npm ci
+
+      - name: Lint
+        if: hashFiles('site/package-lock.json') != ''
+        working-directory: site
+        run: npm run lint
+
+      - name: Test
+        if: hashFiles('site/package-lock.json') != ''
+        working-directory: site
+        run: npm test -- --coverage
+
+      - name: Build
+        if: hashFiles('site/package-lock.json') != ''
+        working-directory: site
+        run: npm run build
