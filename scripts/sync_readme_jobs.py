@@ -34,6 +34,7 @@ from urllib.parse import quote
 
 from ngj.dates import format_posted_date
 from ngj.settings import resolve_output_dir
+from ngj.taxonomy import CATEGORY_PATTERNS
 from url_safety import is_safe_url
 
 logger = logging.getLogger(__name__)
@@ -171,6 +172,21 @@ def _render_table(rows: list[dict[str, Any]], now: datetime | None = None) -> st
     return "\n".join(lines)
 
 
+def _with_all_categories(categories: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """``meta.categories`` plus any known category it lacks (count 0).
+
+    Every section must be rendered, even when empty, or the README's "Browse
+    by Category" anchor links break (older jobs.json omitted zero counts).
+    """
+    present = {cat.get("id") for cat in categories}
+    missing = [
+        {"id": cid, "name": info["name"], "emoji": info["emoji"], "count": 0}
+        for cid, info in CATEGORY_PATTERNS.items()
+        if cid not in present
+    ]
+    return [*categories, *missing]
+
+
 def render_category_listings(data: dict[str, Any], now: datetime | None = None) -> str:
     """Return the full auto-generated block (markers included).
 
@@ -178,7 +194,7 @@ def render_category_listings(data: dict[str, Any], now: datetime | None = None) 
     """
     jobs = data.get("jobs", []) or []
     meta = data.get("meta", {}) or {}
-    categories = meta.get("categories", []) or []
+    categories = _with_all_categories(meta.get("categories", []) or [])
     total = meta.get("total_jobs", len(jobs))
 
     # Present in reader-facing order; unknown ids keep their meta order at the end.
@@ -217,8 +233,7 @@ def render_category_listings(data: dict[str, Any], now: datetime | None = None) 
                 )
                 parts.append("")
         else:
-            parts.append("_No open roles in this category right now — "
-                         f"check the [live board]({LIVE_BOARD_URL})._")
+            parts.append(f"_No open roles right now — check the [live board]({LIVE_BOARD_URL})._")
             parts.append("")
 
     parts.append(END_MARKER)

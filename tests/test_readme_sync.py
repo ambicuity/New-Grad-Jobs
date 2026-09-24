@@ -16,6 +16,7 @@ from datetime import UTC, datetime, timedelta, timezone
 
 import pytest
 
+from ngj.taxonomy import CATEGORY_PATTERNS
 from sync_readme_counts import (
     COUNT_TOKEN_RE,
     LAST_UPDATED_RE,
@@ -64,11 +65,22 @@ def test_read_counts_extracts_total_and_categories(tmp_path) -> None:
 
     counts = read_counts_from_jobs_json(jobs_path)
 
-    assert counts == {
-        "total": 997,
-        "software_engineering": 540,
-        "other": 179,
-    }
+    assert counts["total"] == 997
+    assert counts["software_engineering"] == 540
+    assert counts["other"] == 179
+    # Categories absent from meta.categories count as 0 (no stale README markers).
+    assert counts["hardware"] == 0
+    assert set(counts) == {"total", *CATEGORY_PATTERNS}
+
+
+def test_missing_category_resets_its_readme_marker_to_zero(tmp_path) -> None:
+    (tmp_path / "site" / "public").mkdir(parents=True)
+    (tmp_path / "site" / "public" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
+        total=5, categories=[("software_engineering", 5)],
+    )))
+    (tmp_path / "README.md").write_text("<!-- COUNT:quant_finance -->37<!-- /COUNT -->\n")
+    assert sync_readme_counts(tmp_path) is True
+    assert (tmp_path / "README.md").read_text() == "<!-- COUNT:quant_finance -->0<!-- /COUNT -->\n"
 
 
 # ---------------------------------------------------------------------------
@@ -160,7 +172,7 @@ def test_sync_readme_counts_end_to_end(tmp_path) -> None:
 def test_sync_readme_counts_idempotent_when_in_sync(tmp_path) -> None:
     (tmp_path / "site" / "public").mkdir(parents=True)
     (tmp_path / "site" / "public" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
-        total=997, categories=[("software_engineering", 540)],
+        total=997, categories=[("software_engineering", 540), ("data_engineering", 19)],
     )))
     (tmp_path / "README.md").write_text(apply_counts_to_readme(
         GOLDEN_README, {"total": 997, "software_engineering": 540, "data_engineering": 19},

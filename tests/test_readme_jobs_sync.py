@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from sync_readme_jobs import (  # noqa: E402
     END_MARKER,
+    PRESENTATION_ORDER,
     START_MARKER,
     TOP_N,
     render_category_listings,
@@ -279,3 +280,21 @@ def test_sync_reads_jobs_json_from_explicit_path(tmp_path):
     )
     assert sync_readme_jobs(tmp_path, jobs_path=jobs_path) is True
     assert "Role B" in readme.read_text(encoding="utf-8")
+
+
+def test_zero_count_and_missing_categories_keep_their_section():
+    """Every category section is rendered (nav anchors), with a placeholder line when empty."""
+    data = _data(
+        [_job("software_engineering", "SWE", "2026-07-10")],
+        [
+            {"id": "software_engineering", "name": "Software Engineering", "emoji": "💻", "count": 1},
+            {"id": "quant_finance", "name": "Quantitative Finance", "emoji": "📈", "count": 0},
+        ],
+    )
+    block = render_category_listings(data)
+    headings = [ln[3:] for ln in block.splitlines() if ln.startswith("## ")]
+    assert headings[0] == "Software Engineering"
+    assert "Quantitative Finance" in headings  # zero count, present in meta
+    assert "Hardware Engineering" in headings  # absent from meta entirely
+    assert len(headings) == len(PRESENTATION_ORDER)
+    assert block.count("_No open roles right now — check the [live board]") == len(PRESENTATION_ORDER) - 1

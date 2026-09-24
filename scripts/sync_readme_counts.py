@@ -33,6 +33,7 @@ from collections.abc import Mapping
 from datetime import UTC, datetime
 
 from ngj.settings import resolve_output_dir
+from ngj.taxonomy import CATEGORY_PATTERNS
 
 # The marker regex. Strict: only ASCII digits between markers; id is
 # [a-z_], so "total" and category ids like "software_engineering" match.
@@ -49,11 +50,17 @@ LAST_UPDATED_RE = re.compile(
 
 
 def read_counts_from_jobs_json(jobs_path: pathlib.Path) -> dict[str, int]:
-    """Return {"total": N, "<category_id>": N, ...} from a jobs.json file."""
+    """Return {"total": N, "<category_id>": N, ...} from a jobs.json file.
+
+    Every known category id (ngj.taxonomy.CATEGORY_PATTERNS) is present: one
+    missing from ``meta.categories`` (older jobs.json dropped zero counts)
+    counts as 0, so its README marker is reset instead of keeping a stale value.
+    """
     with open(jobs_path, encoding="utf-8") as f:
         data = json.load(f)
     meta = data.get("meta", {}) or {}
     counts: dict[str, int] = {"total": int(meta.get("total_jobs", 0))}
+    counts.update({cid: 0 for cid in CATEGORY_PATTERNS})
     for cat in meta.get("categories", []) or []:
         cid = cat.get("id")
         if cid:
