@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Unit tests for generate_rss_feed() in scripts/update_jobs.py.
+Unit tests for generate_rss_feed() in scripts/ngj/outputs/rss.py.
 
 Covers:
   - Valid XML output
@@ -13,12 +13,11 @@ import sys
 import os
 import tempfile
 from xml.etree import ElementTree as ET
-from unittest.mock import patch
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import generate_rss_feed
+from ngj.outputs.rss import generate_rss_feed  # noqa: E402
 
 
 def _make_jobs(count=5):
@@ -31,7 +30,6 @@ def _make_jobs(count=5):
             'url': f'https://example.com/job/{i}',
             'location': 'San Francisco, CA',
             'posted_at': (datetime.now(timezone.utc) - timedelta(days=i)).isoformat(),
-            'posted_display': f'{i} days ago',
         })
     return jobs
 
@@ -41,10 +39,8 @@ class TestRssFeedGeneration:
 
     def _generate_and_parse(self, jobs, tmpdir, max_items=50):
         """Generate RSS feed into tmpdir, parse, and return ET root."""
-        feed_path = os.path.join(tmpdir, 'feed.xml')
-        with patch('update_jobs.os.path.join', return_value=feed_path):
-            with patch('update_jobs.os.makedirs'):
-                generate_rss_feed(jobs, max_items=max_items)
+        feed_path = generate_rss_feed(jobs, tmpdir, max_items=max_items)
+        assert str(feed_path) == os.path.join(tmpdir, 'feed.xml')
         tree = ET.parse(feed_path)
         return tree.getroot()
 
@@ -141,3 +137,12 @@ class TestRssFeedGeneration:
             title_el = items[0].find('title')
             assert title_el is not None
             assert title_el.text == 'Unknown at Unknown'
+
+
+def test_generate_rss_feed_does_not_reorder_callers_list():
+    """The feed sorts a copy; the caller's list keeps its order."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        jobs = list(reversed(_make_jobs(4)))  # oldest first
+        before = [job['url'] for job in jobs]
+        generate_rss_feed(jobs, tmpdir)
+        assert [job['url'] for job in jobs] == before

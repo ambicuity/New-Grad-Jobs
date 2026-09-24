@@ -6,10 +6,8 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from contracts import (  # noqa: E402
-    EVALUATIONS_SCHEMA_VERSION,
     JOBS_SCHEMA_VERSION,
     compute_job_id,
-    validate_evaluations_contract,
     validate_jobs_json_contract,
 )
 
@@ -50,7 +48,6 @@ def test_validate_jobs_json_contract_accepts_valid_payload() -> None:
                 'location': 'Remote',
                 'url': 'https://example.com',
                 'posted_at': '2026-04-07T00:00:00',
-                'posted_display': 'Today',
                 'source': 'Greenhouse',
                 'category': {},
                 'company_tier': {},
@@ -69,7 +66,6 @@ def test_validate_jobs_json_contract_accepts_valid_payload() -> None:
         'location',
         'url',
         'posted_at',
-        'posted_display',
         'source',
         'category',
         'company_tier',
@@ -79,22 +75,23 @@ def test_validate_jobs_json_contract_accepts_valid_payload() -> None:
     assert legacy_required_keys.issubset(payload['jobs'][0].keys())
 
 
-def test_validate_evaluations_contract_rejects_invalid_confidence() -> None:
+def test_validate_jobs_json_contract_does_not_require_posted_display() -> None:
+    """posted_display was dropped: consumers compute relative ages from posted_at."""
     payload = {
-        'evaluations': [
-            {
-                'schema_version': EVALUATIONS_SCHEMA_VERSION,
-                'evaluation_id': 'eval_1',
-                'job_id': 'job_1',
-                'score_overall': 70,
-                'confidence': 1.5,
-                'model': 'x',
-                'prompt_version': 'v1',
-                'scored_at': '2026-04-07T00:00:00Z',
-                'input_hash': 'abc',
-            }
-        ]
+        'meta': {'schema_version': JOBS_SCHEMA_VERSION},
+        'jobs': [{
+            'schema_version': JOBS_SCHEMA_VERSION, 'job_id': 'job_abc', 'id': '1', 'company': 'Acme',
+            'title': 'SWE', 'location': 'Remote', 'url': 'https://example.com',
+            'posted_at': '2026-04-07T00:00:00Z', 'source': 'Greenhouse', 'category': {},
+            'company_tier': {}, 'flags': {}, 'is_closed': False,
+        }],
     }
-    ok, errors = validate_evaluations_contract(payload)
+    ok, errors = validate_jobs_json_contract(payload)
+    assert ok is True, errors
+
+
+def test_validate_jobs_json_contract_reports_missing_keys() -> None:
+    payload = {'meta': {'schema_version': JOBS_SCHEMA_VERSION}, 'jobs': [{'job_id': 'job_1'}]}
+    ok, errors = validate_jobs_json_contract(payload)
     assert ok is False
-    assert any('confidence' in err for err in errors)
+    assert any('missing keys' in err for err in errors)

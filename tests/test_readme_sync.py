@@ -2,18 +2,16 @@
 """Tests for scripts/sync_readme_counts.py.
 
 The README contains marker-bounded count tokens that must stay in sync with the
-totals reported in docs/jobs.json. The sync helper:
-  * reads counts from docs/jobs.json,
+totals reported in the generated jobs.json. The sync helper:
+  * reads counts from <output dir>/jobs.json ($NGJ_OUTPUT_DIR, default site/public),
   * rewrites only the digits inside <!-- COUNT:<id> -->…<!-- /COUNT --> markers,
   * leaves every other byte of README.md untouched.
 
-The final test in this module is the CI invariant the user asked for: README and
-docs/jobs.json must agree at HEAD.
+Generated data is no longer committed, so every test here uses fixtures.
 """
 
 import json
 import pathlib
-import re
 
 import pytest
 
@@ -29,6 +27,12 @@ from sync_readme_counts import (
     read_generated_at_from_jobs_json,
     sync_readme_counts,
 )
+
+
+@pytest.fixture(autouse=True)
+def _default_output_dir(monkeypatch):
+    """jobs.json is read from <repo>/site/public unless NGJ_OUTPUT_DIR is set."""
+    monkeypatch.delenv("NGJ_OUTPUT_DIR", raising=False)
 
 
 REPO_ROOT = pathlib.Path(__file__).parent.parent
@@ -138,9 +142,9 @@ def test_apply_counts_only_writes_digits() -> None:
 # ---------------------------------------------------------------------------
 
 def test_sync_readme_counts_end_to_end(tmp_path) -> None:
-    # Mimic repo layout: <root>/README.md and <root>/docs/jobs.json
-    (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
+    # Mimic repo layout: <root>/README.md and <root>/site/public/jobs.json
+    (tmp_path / "site" / "public").mkdir(parents=True)
+    (tmp_path / "site" / "public" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
         total=997,
         categories=[("software_engineering", 540), ("data_engineering", 19)],
     )))
@@ -155,8 +159,8 @@ def test_sync_readme_counts_end_to_end(tmp_path) -> None:
 
 
 def test_sync_readme_counts_idempotent_when_in_sync(tmp_path) -> None:
-    (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
+    (tmp_path / "site" / "public").mkdir(parents=True)
+    (tmp_path / "site" / "public" / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
         total=997, categories=[("software_engineering", 540)],
     )))
     (tmp_path / "README.md").write_text(apply_counts_to_readme(
@@ -178,11 +182,6 @@ def test_count_token_re_matches_strict_form() -> None:
     # Bare placeholder without digits is NOT a valid token.
     assert not COUNT_TOKEN_RE.search("<!-- COUNT:foo -->abc<!-- /COUNT -->")
 
-
-# ---------------------------------------------------------------------------
-# Cross-artifact invariant: README and docs/jobs.json agree at HEAD.
-# This is the CI gate the user asked for.
-# ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
 # Last-updated stamp
@@ -271,8 +270,8 @@ def test_apply_last_updated_only_rewrites_first_match() -> None:
 
 
 def test_sync_readme_counts_rewrites_both_counts_and_stamp(tmp_path) -> None:
-    jobs_path = tmp_path / "docs" / "jobs.json"
-    jobs_path.parent.mkdir()
+    jobs_path = tmp_path / "site" / "public" / "jobs.json"
+    jobs_path.parent.mkdir(parents=True)
     jobs_path.write_text(json.dumps({
         "meta": {
             "generated_at": "2026-05-26T19:52:33.997303+00:00",
@@ -359,3 +358,28 @@ def test_repo_readme_matches_jobs_json() -> None:
         + "\n".join(mismatches)
         + "\nRun: python scripts/sync_readme_counts.py"
     )
+
+
+def test_sync_readme_counts_honours_output_dir_env_and_explicit_path(tmp_path, monkeypatch) -> None:
+    out = tmp_path / "custom-out"
+    out.mkdir()
+    (out / "jobs.json").write_text(json.dumps(_fixture_jobs_payload(
+        total=12, categories=[("software_engineering", 7)],
+    )))
+    (tmp_path / "README.md").write_text(GOLDEN_README)
+
+    monkeypatch.setenv("NGJ_OUTPUT_DIR", str(out))
+    assert sync_readme_counts(tmp_path) is True
+    assert "<!-- COUNT:total -->12<!-- /COUNT -->" in (tmp_path / "README.md").read_text()
+
+    monkeypatch.delenv("NGJ_OUTPUT_DIR")
+    other = tmp_path / "elsewhere.json"
+    other.write_text(json.dumps(_fixture_jobs_payload(total=5, categories=[])))
+    assert sync_readme_counts(tmp_path, jobs_path=other) is True
+    assert "<!-- COUNT:total -->5<!-- /COUNT -->" in (tmp_path / "README.md").read_text()
+
+
+def test_sync_readme_counts_is_noop_without_generated_jobs_json(tmp_path) -> None:
+    (tmp_path / "README.md").write_text(GOLDEN_README)
+    assert sync_readme_counts(tmp_path) is False
+    assert (tmp_path / "README.md").read_text() == GOLDEN_README

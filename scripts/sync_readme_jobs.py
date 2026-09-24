@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the per-category job tables in README.md from docs/jobs.json.
+"""Regenerate the per-category job tables in README.md from the generated jobs.json.
 
 The README's "Browse by Category" listings used to be a frozen, hand-maintained
 snapshot that rotted (dead links, missing new roles) while the site refreshed
@@ -13,9 +13,11 @@ with, for each category, the ``TOP_N`` most recently posted **open** roles plus
 a link to the live board for the complete, filterable list. Everything outside
 the markers (badges, legend, About, contributing, …) is untouched.
 
-Category order/names/emojis are read from ``docs/jobs.json`` ``meta.categories``
-so this file never drifts from the scraper's taxonomy. Invoked from
-scripts/update_jobs.py after each scrape; also safe to run by hand::
+Category order/names/emojis are read from jobs.json ``meta.categories`` so this
+file never drifts from the scraper's taxonomy. jobs.json is read from the
+pipeline output dir ($NGJ_OUTPUT_DIR, default site/public). The "Posted"
+column is rendered at sync time from ``posted_at``. Invoked by the scraper
+pipeline (ngj.pipeline) after each scrape; also safe to run by hand::
 
     python scripts/sync_readme_jobs.py
 """
@@ -23,15 +25,18 @@ scripts/update_jobs.py after each scrape; also safe to run by hand::
 from __future__ import annotations
 
 import json
+import logging
 import pathlib
 import re
-from typing import Any, Dict, List
+from datetime import datetime
+from typing import Any, Dict, List, Optional
 from urllib.parse import quote
 
-try:
-    from url_safety import is_safe_url
-except ImportError:  # pragma: no cover - imported as a package module
-    from scripts.url_safety import is_safe_url
+from ngj.dates import format_posted_date
+from ngj.settings import resolve_output_dir
+from url_safety import is_safe_url
+
+logger = logging.getLogger(__name__)
 
 TOP_N = 10
 LIVE_BOARD_URL = "https://jobs.riteshrana.engineer/"
@@ -57,7 +62,7 @@ PRESENTATION_ORDER = [
 ]
 
 START_MARKER = (
-    "<!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by "
+    "<!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by "
     "scripts/sync_readme_jobs.py; do not edit by hand -->"
 )
 END_MARKER = "<!-- CATEGORY-LISTINGS:END -->"
@@ -143,13 +148,21 @@ def _recent_open_jobs(jobs: List[Dict[str, Any]], category_id: str, limit: int) 
     return in_cat[:limit]
 
 
-def _render_table(rows: List[Dict[str, Any]]) -> str:
+def _posted(job: Dict[str, Any], now: Optional[datetime]) -> str:
+    """Relative "Posted" text computed at render time ("Today", "3 days ago", date)."""
+    posted_at = job.get("posted_at")
+    if not posted_at:
+        return "Unknown"
+    return format_posted_date(posted_at, now)
+
+
+def _render_table(rows: List[Dict[str, Any]], now: Optional[datetime] = None) -> str:
     lines = [
         "| Company | Role | Location | Posted | Apply |",
         "|---------|------|----------|--------|-------|",
     ]
     for job in rows:
-        posted = _cell(job.get("posted_display") or (job.get("posted_at") or "")[:10])
+        posted = _cell(_posted(job, now))
         apply_cell = _apply_link(job.get("url") or "")
         lines.append(
             f"| {_company(job)} | {_cell(job.get('title', '—'))} "
@@ -158,8 +171,11 @@ def _render_table(rows: List[Dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def render_category_listings(data: Dict[str, Any]) -> str:
-    """Return the full auto-generated block (markers included)."""
+def render_category_listings(data: Dict[str, Any], now: Optional[datetime] = None) -> str:
+    """Return the full auto-generated block (markers included).
+
+    ``now`` (UTC) anchors the relative "Posted" column; defaults to the current time.
+    """
     jobs = data.get("jobs", []) or []
     meta = data.get("meta", {}) or {}
     categories = meta.get("categories", []) or []
@@ -192,7 +208,7 @@ def render_category_listings(data: Dict[str, Any]) -> str:
         parts.append("[Back to top](#2026-new-grad-positions)")
         parts.append("")
         if rows:
-            parts.append(_render_table(rows))
+            parts.append(_render_table(rows, now))
             parts.append("")
             if count > len(rows):
                 parts.append(
@@ -209,11 +225,15 @@ def render_category_listings(data: Dict[str, Any]) -> str:
     return "\n".join(parts)
 
 
-def sync_readme_jobs(repo_root: pathlib.Path | str = ".") -> bool:
-    """Rewrite the category-listings block in README.md. Returns True if written."""
+def sync_readme_jobs(repo_root: pathlib.Path | str = ".", jobs_path: Optional[pathlib.Path] = None) -> bool:
+    """Rewrite the category-listings block in README.md. Returns True if written.
+
+    ``jobs_path`` defaults to ``<output dir>/jobs.json`` (see
+    ngj.settings.resolve_output_dir).
+    """
     repo_root = pathlib.Path(repo_root)
     readme_path = repo_root / "README.md"
-    jobs_path = repo_root / "docs" / "jobs.json"
+    jobs_path = pathlib.Path(jobs_path) if jobs_path else resolve_output_dir(repo_root) / "jobs.json"
 
     readme = readme_path.read_text(encoding="utf-8")
     starts, ends = readme.count(_START_PREFIX), readme.count(END_MARKER)
@@ -226,7 +246,7 @@ def sync_readme_jobs(repo_root: pathlib.Path | str = ".") -> bool:
             "markers; expected exactly one of each. Fix README.md by hand."
         )
     if not _BLOCK_RE.search(readme):
-        print("sync_readme_jobs: CATEGORY-LISTINGS markers not found; skipping.")
+        logger.info("sync_readme_jobs: CATEGORY-LISTINGS markers not found; skipping.")
         return False
 
     with open(jobs_path, encoding="utf-8") as f:
@@ -235,15 +255,16 @@ def sync_readme_jobs(repo_root: pathlib.Path | str = ".") -> bool:
     new_block = render_category_listings(data)
     updated = _BLOCK_RE.sub(lambda _m: new_block, readme, count=1)
     if updated == readme:
-        print("sync_readme_jobs: README.md already up to date.")
+        logger.info("sync_readme_jobs: README.md already up to date.")
         return False
     readme_path.write_text(updated, encoding="utf-8")
-    print("sync_readme_jobs: updated README.md category listings")
+    logger.info("sync_readme_jobs: updated README.md category listings")
     return True
 
 
 if __name__ == "__main__":
     import sys
 
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
     root = sys.argv[1] if len(sys.argv) > 1 else "."
     sync_readme_jobs(root)

@@ -6,11 +6,10 @@ import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from update_jobs import (
-    is_retryable_status,
-    fetch_greenhouse_jobs,
-    fetch_lever_jobs,
-)
+from ngj.http import is_retryable_status  # noqa: E402
+from ngj.models import KIND_HTTP  # noqa: E402
+from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
+from ngj.sources.lever import fetch_lever_jobs  # noqa: E402
 
 
 class TestIsRetryableStatus:
@@ -79,9 +78,10 @@ class TestGreenhouseHttpStatus:
             call_count += 1
             raise _make_http_error(404)
 
-        monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-        jobs = fetch_greenhouse_jobs("TestCo", "https://api.greenhouse.io/v1/boards/test/jobs")
-        assert jobs == []
+        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+        result = fetch_greenhouse_jobs("TestCo", "https://api.greenhouse.io/v1/boards/test/jobs")
+        assert result.jobs == ()
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 404)]
         assert call_count == 1  # No retries
 
     def test_429_retries_then_gives_up(self, monkeypatch):
@@ -93,11 +93,12 @@ class TestGreenhouseHttpStatus:
             call_count += 1
             raise _make_http_error(429)
 
-        monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-        jobs = fetch_greenhouse_jobs(
+        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+        result = fetch_greenhouse_jobs(
             "TestCo", "https://api.greenhouse.io/v1/boards/test/jobs", max_retries=2
         )
-        assert jobs == []
+        assert result.jobs == ()
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 429)]
         assert call_count == 3  # 1 initial + 2 retries
 
     def test_500_retries_then_gives_up(self, monkeypatch):
@@ -109,11 +110,12 @@ class TestGreenhouseHttpStatus:
             call_count += 1
             raise _make_http_error(500)
 
-        monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-        jobs = fetch_greenhouse_jobs(
+        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+        result = fetch_greenhouse_jobs(
             "TestCo", "https://api.greenhouse.io/v1/boards/test/jobs", max_retries=1
         )
-        assert jobs == []
+        assert result.jobs == ()
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 500)]
         assert call_count == 2  # 1 initial + 1 retry
 
 
@@ -133,9 +135,10 @@ class TestLeverHttpStatus:
             call_count += 1
             raise _make_http_error(404)
 
-        monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-        jobs = fetch_lever_jobs("TestCo", "https://api.lever.co/v0/postings/test")
-        assert jobs == []
+        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+        result = fetch_lever_jobs("TestCo", "https://api.lever.co/v0/postings/test")
+        assert result.jobs == ()
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 404)]
         assert call_count == 1  # No retries
 
     def test_429_retries_then_gives_up(self, monkeypatch):
@@ -147,9 +150,10 @@ class TestLeverHttpStatus:
             call_count += 1
             raise _make_http_error(429)
 
-        monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
-        jobs = fetch_lever_jobs(
+        monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
+        result = fetch_lever_jobs(
             "TestCo", "https://api.lever.co/v0/postings/test", max_retries=2
         )
-        assert jobs == []
+        assert result.jobs == ()
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 429)]
         assert call_count == 3  # 1 initial + 2 retries

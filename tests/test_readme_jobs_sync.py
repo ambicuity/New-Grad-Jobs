@@ -3,6 +3,9 @@
 
 import os
 import sys
+from datetime import datetime, timezone
+
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
@@ -15,6 +18,12 @@ from sync_readme_jobs import (  # noqa: E402
 )
 
 
+@pytest.fixture(autouse=True)
+def _default_output_dir(monkeypatch):
+    """jobs.json is read from <repo>/site/public unless NGJ_OUTPUT_DIR is set."""
+    monkeypatch.delenv("NGJ_OUTPUT_DIR", raising=False)
+
+
 def _job(cid, title, posted_at, company="Acme", closed=False, url="https://x.co/1", tier=None):
     return {
         "company": company,
@@ -22,7 +31,6 @@ def _job(cid, title, posted_at, company="Acme", closed=False, url="https://x.co/
         "location": "Remote",
         "url": url,
         "posted_at": posted_at,
-        "posted_display": posted_at[:10] if posted_at else "",
         "is_closed": closed,
         "category": {"id": cid},
         "company_tier": {"emoji": tier} if tier else {},
@@ -108,10 +116,10 @@ def test_sync_rewrites_only_the_marked_block(tmp_path):
         f"# Title\n\nKeep me.\n\n{START_MARKER}\nOLD\n{END_MARKER}\n\n## Footer\nKeep me too.\n",
         encoding="utf-8",
     )
-    (tmp_path / "docs").mkdir()
+    (tmp_path / "site" / "public").mkdir(parents=True)
     import json
 
-    (tmp_path / "docs" / "jobs.json").write_text(
+    (tmp_path / "site" / "public" / "jobs.json").write_text(
         json.dumps(_data(
             [_job("other", "Role A", "2026-07-10")],
             [{"id": "other", "name": "Other", "emoji": "💼", "count": 1}],
@@ -192,8 +200,8 @@ def _write_repo(tmp_path, readme_text):
     import json
 
     (tmp_path / "README.md").write_text(readme_text, encoding="utf-8")
-    (tmp_path / "docs").mkdir()
-    (tmp_path / "docs" / "jobs.json").write_text(
+    (tmp_path / "site" / "public").mkdir(parents=True)
+    (tmp_path / "site" / "public" / "jobs.json").write_text(
         json.dumps(_data([_job("other", "Role A", "2026-07-10")],
                          [{"id": "other", "name": "Other", "emoji": "💼", "count": 1}])),
         encoding="utf-8",
@@ -219,7 +227,7 @@ def test_hostile_title_sync_is_idempotent(tmp_path):
     import json
 
     _write_repo(tmp_path, f"# T\n\n{START_MARKER}\nOLD\n{END_MARKER}\n\nFooter\n")
-    (tmp_path / "docs" / "jobs.json").write_text(
+    (tmp_path / "site" / "public" / "jobs.json").write_text(
         json.dumps(_data([_job("other", f"Evil {END_MARKER} <!--", "2026-07-10")],
                          [{"id": "other", "name": "Other", "emoji": "💼", "count": 1}])),
         encoding="utf-8",
@@ -237,3 +245,37 @@ def test_bare_urls_in_cells_are_not_autolinked():
     # escape keeps the text visible but inert.
     assert "https\\://evil.com" in row
     assert "WWW\\.evil.com" in row
+
+
+def test_posted_column_is_rendered_from_posted_at_at_sync_time():
+    """No baked posted_display: ages are computed from posted_at when rendering."""
+    now = datetime(2026, 7, 12, 12, 0, tzinfo=timezone.utc)
+    jobs = [
+        _job("other", "Fresh", "2026-07-12T08:00:00Z"),
+        _job("other", "Recent", "2026-07-09T08:00:00Z"),
+        _job("other", "Older", "2026-06-01T08:00:00Z"),
+        _job("other", "Undated", ""),
+    ]
+    block = render_category_listings(
+        _data(jobs, [{"id": "other", "name": "Other", "emoji": "💼", "count": 4}]), now=now,
+    )
+    assert "| Fresh | Remote | Today |" in block
+    assert "| Recent | Remote | 3 days ago |" in block
+    assert "| Older | Remote | 2026-06-01 |" in block
+    assert "| Undated | Remote | Unknown |" in block
+
+
+def test_sync_reads_jobs_json_from_explicit_path(tmp_path):
+    import json
+
+    readme = tmp_path / "README.md"
+    readme.write_text(f"{START_MARKER}\nOLD\n{END_MARKER}\n", encoding="utf-8")
+    jobs_path = tmp_path / "somewhere" / "jobs.json"
+    jobs_path.parent.mkdir()
+    jobs_path.write_text(
+        json.dumps(_data([_job("other", "Role B", "2026-07-10")],
+                         [{"id": "other", "name": "Other", "emoji": "💼", "count": 1}])),
+        encoding="utf-8",
+    )
+    assert sync_readme_jobs(tmp_path, jobs_path=jobs_path) is True
+    assert "Role B" in readme.read_text(encoding="utf-8")

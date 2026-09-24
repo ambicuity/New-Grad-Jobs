@@ -11,7 +11,7 @@ import os
 # Ensure the scripts directory is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from update_jobs import has_new_grad_signal, has_track_signal
+from ngj.filters import has_new_grad_signal, has_track_signal  # noqa: E402
 
 
 class TestHasNewGradSignal:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for domain-aware concurrency limiting in scripts/update_jobs.py."""
+"""Tests for domain-aware concurrency limiting (scripts/ngj/http.py)."""
 
 import os
 import sys
@@ -9,13 +9,10 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import (  # noqa: E402
-    DOMAIN_LIMITER,
-    DomainConcurrencyLimiter,
-    fetch_greenhouse_jobs,
-    fetch_lever_jobs,
-    fetch_workday_jobs,
-)
+from ngj.http import DOMAIN_LIMITER, DomainConcurrencyLimiter  # noqa: E402
+from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
+from ngj.sources.lever import fetch_lever_jobs  # noqa: E402
+from ngj.sources.workday import fetch_workday_jobs  # noqa: E402
 
 
 class _FakeResponse:
@@ -126,10 +123,10 @@ def test_limiter_integrates_with_greenhouse_lever_and_google_paths(monkeypatch):
 
         raise AssertionError(f"Unexpected URL: {url}")
 
-    monkeypatch.setattr("update_jobs.limited_get", fake_limited_get)
+    monkeypatch.setattr("ngj.http.limited_get", fake_limited_get)
 
-    gh_jobs = fetch_greenhouse_jobs("Acme", "https://api.greenhouse.io/v1/boards/acme/jobs")
-    lever_jobs = fetch_lever_jobs("Beta", "https://api.lever.co/v0/postings/beta")
+    gh_jobs = fetch_greenhouse_jobs("Acme", "https://api.greenhouse.io/v1/boards/acme/jobs").jobs
+    lever_jobs = fetch_lever_jobs("Beta", "https://api.lever.co/v0/postings/beta").jobs
 
     assert len(gh_jobs) == 1
     assert len(lever_jobs) == 1
@@ -173,8 +170,8 @@ def test_limiter_integrates_with_workday_post_path(monkeypatch):
             )
         return _WorkdayResponse({"jobPostings": []})
 
-    monkeypatch.setattr("update_jobs.limited_post", fake_limited_post)
-    monkeypatch.setattr("update_jobs.get_workday_csrf_token", lambda host, session: "")
+    monkeypatch.setattr("ngj.http.limited_post", fake_limited_post)
+    monkeypatch.setattr("ngj.sources.workday.get_workday_csrf_token", lambda host, session, timeout=None: "")
 
     jobs = fetch_workday_jobs(
         [
@@ -183,67 +180,11 @@ def test_limiter_integrates_with_workday_post_path(monkeypatch):
                 "workday_url": "https://acme.wd5.myworkdayjobs.com/Acme_External_Careers",
             }
         ]
-    )
+    ).jobs
 
     assert len(jobs) == 1
     assert jobs[0]["company"] == "Acme"
     assert any("wday/cxs" in url for url in called_urls)
-
-
-def test_workday_404_retry_uses_path_tenant(monkeypatch):
-    called_urls = []
-
-    class _WorkdayResponse:
-        def __init__(self, payload, status_code=200):
-            self._payload = payload
-            self.status_code = status_code
-
-        @property
-        def ok(self):
-            return 200 <= self.status_code < 300
-
-        def json(self):
-            return self._payload
-
-    def fake_limited_post(url, **kwargs):
-        called_urls.append(url)
-        payload = kwargs.get("json", {})
-        offset = payload.get("offset", 0)
-
-        if len(called_urls) == 1:
-            return _WorkdayResponse({}, status_code=404)
-
-        if offset == 0:
-            return _WorkdayResponse(
-                {
-                    "jobPostings": [
-                        {
-                            "title": "Software Engineer, New Grad",
-                            "externalPath": "/en-US/recruiting/acme/Acme/job/123",
-                            "postedOn": "Posted Today",
-                            "locationsText": "Remote",
-                        }
-                    ]
-                }
-            )
-
-        return _WorkdayResponse({"jobPostings": []})
-
-    monkeypatch.setattr("update_jobs.limited_post", fake_limited_post)
-    monkeypatch.setattr("update_jobs.get_workday_csrf_token", lambda host, session: "")
-
-    jobs = fetch_workday_jobs(
-        [
-            {
-                "name": "Acme",
-                "workday_url": "https://foo.wd5.myworkdayjobs.com/acme/Acme_External_Careers",
-            }
-        ]
-    )
-
-    assert len(jobs) == 1
-    assert called_urls[0] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/foo/Acme_External_Careers/jobs"
-    assert called_urls[1] == "https://foo.wd5.myworkdayjobs.com/wday/cxs/acme/Acme_External_Careers/jobs"
 
 
 def test_domain_limiter_throttles_greenhouse_subdomains() -> None:

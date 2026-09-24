@@ -39,7 +39,7 @@ format: ## Apply ruff's safe autofixes (import sorting, pyupgrade, etc.)
 typecheck: ## Run mypy (non-strict) over scripts/
 	$(VENV_PYTHON) -m mypy
 
-run: ## Run the scraper script locally
+run: ## Run the scraper locally (writes to $$NGJ_OUTPUT_DIR, default site/public)
 	cd scripts && ../$(VENV_PYTHON) update_jobs.py
 
 site-dev: ## Start the site dev server (site/)

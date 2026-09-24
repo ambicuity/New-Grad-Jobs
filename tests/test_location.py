@@ -13,7 +13,7 @@ import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import is_valid_location
+from ngj.filters import is_valid_location  # noqa: E402
 
 
 class TestValidLocationTruePositives:

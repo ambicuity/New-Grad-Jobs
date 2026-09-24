@@ -16,7 +16,6 @@ def _valid_job() -> dict:
         "location": "Remote",
         "url": "https://example.com/jobs/123",
         "posted_at": "2026-04-10T00:00:00",
-        "posted_display": "Today",
         "source": "Greenhouse",
         "category": {"id": "software_engineering", "name": "Software Engineering", "emoji": "💻"},
         "company_tier": {"tier": "other", "emoji": "", "label": ""},
@@ -48,11 +47,11 @@ def test_run_integrity_checks_fails_when_health_artifact_missing(tmp_path) -> No
     docs.mkdir(parents=True)
     _write_json(docs / "jobs.json", _valid_jobs_payload())
 
-    ok, report = run_integrity_checks(tmp_path)
+    ok, report = run_integrity_checks(docs)
 
     assert ok is False
     assert report["status"] == "failed"
-    assert any("missing docs/health.json" in err for err in report["errors"])
+    assert any("missing health.json" in err for err in report["errors"])
 
 
 def test_run_integrity_checks_fails_for_invalid_jobs_json(tmp_path) -> None:
@@ -61,11 +60,11 @@ def test_run_integrity_checks_fails_for_invalid_jobs_json(tmp_path) -> None:
     (docs / "jobs.json").write_text("{invalid", encoding="utf-8")
     _write_json(docs / "health.json", {"total_jobs": 1})
 
-    ok, report = run_integrity_checks(tmp_path)
+    ok, report = run_integrity_checks(docs)
 
     assert ok is False
     assert report["status"] == "failed"
-    assert any("docs/jobs.json invalid JSON" in err for err in report["errors"])
+    assert any("jobs.json invalid JSON" in err for err in report["errors"])
 
 
 def test_run_integrity_checks_reports_jobs_and_health_count_mismatches(tmp_path) -> None:
@@ -74,7 +73,7 @@ def test_run_integrity_checks_reports_jobs_and_health_count_mismatches(tmp_path)
     _write_json(docs / "jobs.json", _valid_jobs_payload(total_jobs=2))
     _write_json(docs / "health.json", {"total_jobs": 3})
 
-    ok, report = run_integrity_checks(tmp_path)
+    ok, report = run_integrity_checks(docs)
 
     assert ok is False
     assert report["status"] == "failed"
@@ -91,7 +90,7 @@ def test_run_integrity_checks_surfaces_jobs_contract_errors(tmp_path) -> None:
     _write_json(docs / "jobs.json", bad_payload)
     _write_json(docs / "health.json", {"total_jobs": 1})
 
-    ok, report = run_integrity_checks(tmp_path)
+    ok, report = run_integrity_checks(docs)
 
     assert ok is False
     assert report["status"] == "failed"

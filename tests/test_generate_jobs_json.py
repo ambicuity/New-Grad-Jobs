@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Comprehensive tests for generate_jobs_json() in scripts/update_jobs.py.
+"""Comprehensive tests for generate_jobs_json() in scripts/ngj/outputs/jobs_json.py.
 
 Tests cover JSON structure generation, metadata calculation, category counting,
 job sorting, and all edge cases for the main JSON output function.
@@ -11,7 +11,8 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import generate_jobs_json, CATEGORY_PATTERNS
+from ngj.outputs.jobs_json import generate_jobs_json  # noqa: E402
+from ngj.taxonomy import CATEGORY_PATTERNS  # noqa: E402
 
 
 class TestGenerateJobsJsonStructure:
@@ -79,7 +80,8 @@ class TestGenerateJobsJsonStructure:
         assert job['location'] == 'San Francisco, CA'
         assert job['url'] == 'http://testco.com/job'
         assert 'posted_at' in job
-        assert 'posted_display' in job
+        # posted_display was dropped: the site/README derive relative ages from posted_at.
+        assert 'posted_display' not in job
         assert job['source'] == 'Greenhouse'
         assert job['category'] == {'id': 'software_engineering', 'name': 'Software Engineering', 'emoji': '💻'}
         assert job['company_tier'] == {'id': 'faang_plus', 'name': 'FAANG+', 'emoji': '🔥'}
@@ -288,16 +290,18 @@ class TestDateFormatting:
         assert isinstance(posted_at, str)
         assert '2026-03-15' in posted_at
 
-    def test_posted_display_human_readable(self):
-        """posted_display should be human-readable format."""
-        jobs = [{'company': 'A', 'posted_at': '2026-03-15T10:00:00'}]
-        config = {}
-        result = generate_jobs_json(jobs, config)
+    def test_published_posted_at_formats_as_human_readable_age(self):
+        """Consumers render ages from the published ISO posted_at."""
+        from datetime import datetime, timezone
+        from ngj.dates import format_posted_date
 
-        posted_display = result['jobs'][0]['posted_display']
-        assert isinstance(posted_display, str)
-        # Should be something like "3 days ago" or similar human format
-        assert posted_display != ''
+        jobs = [{'company': 'A', 'posted_at': '2026-03-15T10:00:00'}]
+        result = generate_jobs_json(jobs, {})
+
+        published = result['jobs'][0]['posted_at']
+        assert published == '2026-03-15T10:00:00Z'
+        now = datetime(2026, 3, 18, 12, 0, tzinfo=timezone.utc)
+        assert format_posted_date(published, now) == '3 days ago'
 
     def test_none_posted_at_handled_gracefully(self):
         """None posted_at should not cause errors."""
@@ -305,9 +309,8 @@ class TestDateFormatting:
         config = {}
         result = generate_jobs_json(jobs, config)
 
-        # Should not crash, should have some default value
-        assert 'posted_at' in result['jobs'][0]
-        assert 'posted_display' in result['jobs'][0]
+        # Should not crash; an unparseable/missing date publishes as ""
+        assert result['jobs'][0]['posted_at'] == ''
 
 
 class TestEdgeCases:
@@ -440,7 +443,7 @@ class TestGenerateJobsJsonPayloadSplit:
         assert job['job_id'].startswith('job_')
 
     def test_build_full_descriptions_prefers_cleaned_html(self):
-        from update_jobs import build_full_descriptions
+        from ngj.outputs.jobs_json import build_full_descriptions
         from contracts import compute_job_id
 
         raw = self._job()
@@ -451,9 +454,40 @@ class TestGenerateJobsJsonPayloadSplit:
         assert '<p>' not in text
 
     def test_build_full_descriptions_falls_back_to_snippet(self):
-        from update_jobs import build_full_descriptions
+        from ngj.outputs.jobs_json import build_full_descriptions
         from contracts import compute_job_id
 
         raw = {**self._job(), 'description_html': ''}
 
         assert build_full_descriptions([raw])[compute_job_id(raw)] == 'short'
+
+
+class TestGenerateJobsJsonImmutabilityAndDeterminism:
+    """generate_jobs_json must not reorder its input and must be deterministic."""
+
+    def test_does_not_sort_callers_list_in_place(self):
+        jobs = [
+            {'company': 'Old', 'title': 'SWE', 'url': 'https://x/old', 'posted_at': '2026-01-01T00:00:00Z'},
+            {'company': 'New', 'title': 'SWE', 'url': 'https://x/new', 'posted_at': '2026-03-01T00:00:00Z'},
+        ]
+        before = [dict(job) for job in jobs]
+
+        result = generate_jobs_json(jobs, {})
+
+        assert jobs == before  # same order, same contents
+        assert [job['company'] for job in result['jobs']] == ['New', 'Old']
+
+    def test_equal_dates_tie_break_by_job_id(self):
+        from contracts import compute_job_id
+
+        same_day = '2026-03-01T00:00:00Z'
+        jobs = [
+            {'company': f'Co{i}', 'title': 'SWE', 'url': f'https://x/{i}', 'posted_at': same_day}
+            for i in range(6)
+        ]
+        forward = generate_jobs_json(jobs, {})['jobs']
+        backward = generate_jobs_json(list(reversed(jobs)), {})['jobs']
+
+        ids = [job['job_id'] for job in forward]
+        assert ids == sorted(compute_job_id(job) for job in jobs)
+        assert [job['job_id'] for job in backward] == ids

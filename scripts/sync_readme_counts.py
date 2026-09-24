@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync the README job-count tokens and "Last updated" stamp to match docs/jobs.json.
+"""Sync the README job-count tokens and "Last updated" stamp to match the generated jobs.json.
 
 README.md is a human-maintained document; the pieces the automated pipeline
 owns are:
@@ -10,11 +10,14 @@ owns are:
 
   2. The trailing "Last updated" line at the bottom of the file:
          *Last updated: YYYY-MM-DD HH:MM:SS UTC*
-     The timestamp is rewritten from `meta.generated_at` in docs/jobs.json so
+     The timestamp is rewritten from `meta.generated_at` in jobs.json so
      it advances on every scrape rather than rotting until someone edits it by
      hand. The surrounding line, prose, and tables are untouched.
 
-This is invoked from scripts/update_jobs.py after each scrape; it is also safe
+jobs.json is read from the pipeline output dir ($NGJ_OUTPUT_DIR, default
+site/public/jobs.json) unless an explicit path is passed.
+
+This is invoked by the scraper pipeline (ngj.pipeline) after each scrape; it is also safe
 to run by hand from the repo root::
 
     python scripts/sync_readme_counts.py
@@ -28,6 +31,8 @@ import re
 import sys
 from datetime import datetime, timezone
 from typing import Dict, Mapping, Optional
+
+from ngj.settings import resolve_output_dir
 
 # The marker regex. Strict: only ASCII digits between markers; id is
 # [a-z_], so "total" and category ids like "software_engineering" match.
@@ -44,7 +49,7 @@ LAST_UPDATED_RE = re.compile(
 
 
 def read_counts_from_jobs_json(jobs_path: pathlib.Path) -> Dict[str, int]:
-    """Return {"total": N, "<category_id>": N, ...} from docs/jobs.json."""
+    """Return {"total": N, "<category_id>": N, ...} from a jobs.json file."""
     with open(jobs_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     meta = data.get("meta", {}) or {}
@@ -126,15 +131,17 @@ def apply_counts_to_readme(readme_text: str, counts: Mapping[str, int]) -> str:
     return COUNT_TOKEN_RE.sub(repl, readme_text)
 
 
-def sync_readme_counts(repo_root: pathlib.Path) -> bool:
-    """Update README.md in place from docs/jobs.json. Returns True if changed.
+def sync_readme_counts(repo_root: pathlib.Path, jobs_path: Optional[pathlib.Path] = None) -> bool:
+    """Update README.md in place from jobs.json. Returns True if changed.
 
-    Rewrites both the COUNT-marker tokens and the trailing "Last updated" line.
-    A no-op `apply_*` call (no markers found, or already in sync) is safe.
+    ``jobs_path`` defaults to ``<output dir>/jobs.json`` (see
+    ngj.settings.resolve_output_dir). Rewrites both the COUNT-marker tokens and
+    the trailing "Last updated" line. A no-op `apply_*` call (no markers found,
+    or already in sync) is safe.
     """
     repo_root = pathlib.Path(repo_root)
     readme_path = repo_root / "README.md"
-    jobs_path = repo_root / "docs" / "jobs.json"
+    jobs_path = pathlib.Path(jobs_path) if jobs_path else resolve_output_dir(repo_root) / "jobs.json"
 
     if not readme_path.exists() or not jobs_path.exists():
         # First-run scenarios or missing artifacts shouldn't crash the scraper.

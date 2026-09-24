@@ -18,7 +18,8 @@ from unittest.mock import patch
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
-import update_jobs
+from ngj.outputs import market_history  # noqa: E402
+from ngj import taxonomy  # noqa: E402
 
 
 class TestSaveMarketHistoryStructure:
@@ -28,19 +29,9 @@ class TestSaveMarketHistoryStructure:
         """Create temporary directory for tests."""
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
-        # Temporarily replace the history path construction
-        self.original_join = os.path.join
-
-        def mock_join(*args):
-            if 'market-history.json' in args:
-                return self.history_path
-            return self.original_join(*args)
-
-        os.path.join = mock_join
 
     def teardown_method(self):
         """Clean up temporary directory."""
-        os.path.join = self.original_join
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
@@ -54,7 +45,7 @@ class TestSaveMarketHistoryStructure:
             }
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         assert os.path.exists(self.history_path)
         with open(self.history_path, encoding='utf-8') as f:
@@ -77,7 +68,7 @@ class TestSaveMarketHistoryStructure:
     def test_metadata_includes_date_range(self):
         """Meta section includes last_updated, total_snapshots, and date_range."""
         jobs = [{'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}}]
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -93,7 +84,7 @@ class TestSaveMarketHistoryStructure:
     def test_snapshot_date_format(self):
         """Snapshot date uses YYYY-MM-DD format."""
         jobs = [{'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -112,18 +103,9 @@ class TestCategoryAndTierCounting:
         """Create temporary directory for tests."""
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
-        self.original_join = os.path.join
-
-        def mock_join(*args):
-            if 'market-history.json' in args:
-                return self.history_path
-            return self.original_join(*args)
-
-        os.path.join = mock_join
 
     def teardown_method(self):
         """Clean up temporary directory."""
-        os.path.join = self.original_join
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
@@ -135,7 +117,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Stripe', 'category': {'id': 'data_ml'}, 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -160,7 +142,7 @@ class TestCategoryAndTierCounting:
             },
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -176,7 +158,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -215,7 +197,7 @@ class TestCategoryAndTierCounting:
             },
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -237,7 +219,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Unknown Startup', 'category': {'id': 'software_engineering'}, 'company_tier': {'tier': 'other'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -253,7 +235,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Google', 'company_tier': {'tier': 'faang_plus'}},  # no category data
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -269,7 +251,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Stripe', 'categories': 'swe', 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -279,9 +261,9 @@ class TestCategoryAndTierCounting:
 
     def test_iter_category_ids_ignores_non_dict_job(self):
         """Non-dict job payloads are skipped without raising AttributeError."""
-        assert list(update_jobs.iter_category_ids(None)) == []
-        assert list(update_jobs.iter_category_ids("not a job")) == []
-        assert list(update_jobs.iter_category_ids(['software_engineering'])) == []
+        assert list(taxonomy.iter_category_ids(None)) == []
+        assert list(taxonomy.iter_category_ids("not a job")) == []
+        assert list(taxonomy.iter_category_ids(['software_engineering'])) == []
 
     def test_missing_tier_defaults_to_other(self):
         """Jobs without tier default to 'other'."""
@@ -290,7 +272,7 @@ class TestCategoryAndTierCounting:
             {'company': 'Meta', 'categories': ['swe'], 'company_tier': {}},  # empty tier
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -306,18 +288,9 @@ class TestTopCompanies:
         """Create temporary directory for tests."""
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
-        self.original_join = os.path.join
-
-        def mock_join(*args):
-            if 'market-history.json' in args:
-                return self.history_path
-            return self.original_join(*args)
-
-        os.path.join = mock_join
 
     def teardown_method(self):
         """Clean up temporary directory."""
-        os.path.join = self.original_join
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
@@ -328,7 +301,7 @@ class TestTopCompanies:
             for i in range(15)
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -347,7 +320,7 @@ class TestTopCompanies:
             {'company': 'Stripe', 'categories': ['swe'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -367,7 +340,7 @@ class TestTopCompanies:
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -384,7 +357,7 @@ class TestTopCompanies:
             {'company': 'Stripe', 'categories': ['data'], 'company_tier': {'tier': 'unicorn'}},
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -401,18 +374,9 @@ class TestHistoryRetention:
         """Create temporary directory for tests."""
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
-        self.original_join = os.path.join
-
-        def mock_join(*args):
-            if 'market-history.json' in args:
-                return self.history_path
-            return self.original_join(*args)
-
-        os.path.join = mock_join
 
     def teardown_method(self):
         """Clean up temporary directory."""
-        os.path.join = self.original_join
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
@@ -452,7 +416,7 @@ class TestHistoryRetention:
             json.dump(old_history, f)
 
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -466,14 +430,14 @@ class TestHistoryRetention:
         """If today's snapshot exists, it is updated rather than duplicated."""
         # First call
         jobs_v1 = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs_v1)
+        market_history.save_market_history(jobs_v1, self.history_path)
 
         # Second call on same day with different data
         jobs_v2 = [
             {'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}},
             {'company': 'Meta', 'categories': ['ml'], 'company_tier': {'tier': 'faang_plus'}},
         ]
-        update_jobs.save_market_history(jobs_v2)
+        market_history.save_market_history(jobs_v2, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -529,7 +493,7 @@ class TestHistoryRetention:
             json.dump(old_history, f)
 
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -545,18 +509,9 @@ class TestFileHandling:
         """Create temporary directory for tests."""
         self.temp_dir = tempfile.mkdtemp()
         self.history_path = os.path.join(self.temp_dir, 'market-history.json')
-        self.original_join = os.path.join
-
-        def mock_join(*args):
-            if 'market-history.json' in args:
-                return self.history_path
-            return self.original_join(*args)
-
-        os.path.join = mock_join
 
     def teardown_method(self):
         """Clean up temporary directory."""
-        os.path.join = self.original_join
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
@@ -567,7 +522,7 @@ class TestFileHandling:
             shutil.rmtree(self.temp_dir)
 
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         assert os.path.exists(self.history_path)
 
@@ -578,8 +533,8 @@ class TestFileHandling:
             f.write(corrupt)
 
         jobs = [{'company': 'Google', 'categories': ['swe'], 'company_tier': {'tier': 'faang_plus'}}]
-        with pytest.raises(update_jobs.MarketHistoryError, match="market history"):
-            update_jobs.save_market_history(jobs)
+        with pytest.raises(market_history.MarketHistoryError, match="market history"):
+            market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             assert f.read() == corrupt
@@ -596,21 +551,21 @@ class TestFileHandling:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             f.write(raw)
 
-        with pytest.raises(update_jobs.MarketHistoryError):
-            update_jobs.save_market_history([])
+        with pytest.raises(market_history.MarketHistoryError):
+            market_history.save_market_history([], self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             assert f.read() == raw
 
     def test_missing_file_creates_new_history(self):
         assert not os.path.exists(self.history_path)
-        update_jobs.save_market_history([{'company': 'Google', 'categories': ['swe']}])
+        market_history.save_market_history([{'company': 'Google', 'categories': ['swe']}], self.history_path)
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
         assert len(data['snapshots']) == 1
 
     def test_write_is_atomic_and_leaves_no_temp_files(self):
-        update_jobs.save_market_history([{'company': 'Google', 'categories': ['swe']}])
+        market_history.save_market_history([{'company': 'Google', 'categories': ['swe']}], self.history_path)
         assert os.listdir(self.temp_dir) == ['market-history.json']
 
     def test_failed_write_keeps_previous_file(self):
@@ -619,8 +574,8 @@ class TestFileHandling:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             f.write(raw)
 
-        with patch('update_jobs.json.dump', side_effect=OSError("disk full")):
-            update_jobs.save_market_history([])
+        with patch('ngj.outputs.market_history.json.dump', side_effect=OSError("disk full")):
+            market_history.save_market_history([], self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             assert f.read() == raw
@@ -629,7 +584,7 @@ class TestFileHandling:
     def test_empty_jobs_list(self):
         """Handles empty jobs list gracefully."""
         jobs = []
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -648,7 +603,7 @@ class TestFileHandling:
             {'categories': ['swe'], 'company_tier': {'tier': 'other'}},  # no company
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -668,7 +623,7 @@ class TestFileHandling:
             for i in range(1000)
         ]
 
-        update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, self.history_path)
 
         with open(self.history_path, encoding='utf-8') as f:
             data = json.load(f)
@@ -684,21 +639,8 @@ class TestSaveMarketHistoryDeterminism:
 
     FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0, tzinfo=timezone.utc)
 
-    @staticmethod
-    def _fixed_datetime_class(fixed_now: datetime):
-        class _FixedDateTime(datetime):
-            @classmethod
-            def now(cls, tz=None):
-                if tz is None:
-                    return fixed_now.replace(tzinfo=None)
-                return fixed_now.astimezone(tz)
-
-        return _FixedDateTime
-
-    def test_retention_boundary_drops_day_91_keeps_day_90(self, tmp_path, monkeypatch):
+    def test_retention_boundary_drops_day_91_keeps_day_90(self, tmp_path):
         history_path = str(tmp_path / "market-history.json")
-        original_join = os.path.join
-        monkeypatch.setattr(update_jobs, "datetime", self._fixed_datetime_class(self.FIXED_NOW))
 
         day_91 = (self.FIXED_NOW - timedelta(days=91)).strftime("%Y-%m-%d")
         day_90 = (self.FIXED_NOW - timedelta(days=90)).strftime("%Y-%m-%d")
@@ -735,15 +677,11 @@ class TestSaveMarketHistoryDeterminism:
         with open(history_path, "w", encoding="utf-8") as f:
             json.dump(existing, f)
 
-        def patched_join(*args):
-            if args and args[-1] == "market-history.json":
-                return history_path
-            return original_join(*args)
-
-        with patch("update_jobs.os.path.join", side_effect=patched_join):
-            update_jobs.save_market_history(
-                [{"company": "Google", "categories": ["swe"], "company_tier": {"tier": "faang_plus"}}]
-            )
+        market_history.save_market_history(
+            [{"company": "Google", "categories": ["swe"], "company_tier": {"tier": "faang_plus"}}],
+            history_path,
+            now=self.FIXED_NOW,
+        )
 
         with open(history_path, "r", encoding="utf-8") as f:
             output = json.load(f)
@@ -752,10 +690,8 @@ class TestSaveMarketHistoryDeterminism:
         assert day_90 in dates
         assert self.FIXED_NOW.strftime("%Y-%m-%d") in dates
 
-    def test_snapshot_schema_and_aggregation_are_deterministic(self, tmp_path, monkeypatch):
+    def test_snapshot_schema_and_aggregation_are_deterministic(self, tmp_path):
         history_path = str(tmp_path / "market-history.json")
-        original_join = os.path.join
-        monkeypatch.setattr(update_jobs, "datetime", self._fixed_datetime_class(self.FIXED_NOW))
 
         jobs = [
             {"company": "Google", "categories": ["swe", "ml"], "company_tier": {"tier": "faang_plus"}},
@@ -763,13 +699,7 @@ class TestSaveMarketHistoryDeterminism:
             {"company": "Stripe", "categories": ["data"], "company_tier": {"tier": "unicorn"}},
         ]
 
-        def patched_join(*args):
-            if args and args[-1] == "market-history.json":
-                return history_path
-            return original_join(*args)
-
-        with patch("update_jobs.os.path.join", side_effect=patched_join):
-            update_jobs.save_market_history(jobs)
+        market_history.save_market_history(jobs, history_path, now=self.FIXED_NOW)
 
         with open(history_path, "r", encoding="utf-8") as f:
             output = json.load(f)

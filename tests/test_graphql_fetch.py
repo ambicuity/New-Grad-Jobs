@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Unit tests for reusable GraphQL ingestion in scripts/update_jobs.py."""
+"""Unit tests for reusable GraphQL ingestion (scripts/ngj/sources/graphql.py)."""
 
 import os
 import sys
@@ -7,11 +7,12 @@ from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import (  # noqa: E402
-    fetch_all_graphql_jobs_parallel,
-    fetch_graphql_jobs,
-    get_nested_value,
-)
+from pathlib import Path  # noqa: E402
+
+from ngj.models import KIND_CONFIG, KIND_NETWORK, KIND_PARSE, KIND_UNEXPECTED, SourceResult  # noqa: E402
+from ngj.settings import Settings  # noqa: E402
+from ngj.sources.graphql import fetch_all_graphql_jobs, fetch_graphql_jobs  # noqa: E402
+from ngj.util import get_nested_value  # noqa: E402
 
 
 def _make_company_config():
@@ -86,8 +87,9 @@ def test_fetch_graphql_jobs_maps_fields_and_defaults_location():
         ]
     )
 
-    with patch("update_jobs.limited_post", return_value=_make_mock_response(response_payload)):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response(response_payload)):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
 
     assert len(jobs) == 1
     job = jobs[0]
@@ -123,8 +125,9 @@ def test_fetch_graphql_jobs_paginates_with_cursor():
             return _make_mock_response(page_one)
         return _make_mock_response(page_two)
 
-    with patch("update_jobs.limited_post", side_effect=_side_effect):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", side_effect=_side_effect):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
 
     assert len(jobs) == 2
     first_variables = captured_payloads[0]["variables"]
@@ -141,8 +144,9 @@ def test_fetch_graphql_jobs_respects_max_jobs():
         end_cursor="cursor-1",
     )
 
-    with patch("update_jobs.limited_post", return_value=_make_mock_response(page_payload)) as mocked_post:
-        jobs = fetch_graphql_jobs(config, max_jobs=1)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response(page_payload)) as mocked_post:
+        result = fetch_graphql_jobs(config, max_jobs=1)
+    jobs = list(result.jobs)
 
     assert len(jobs) == 1
     assert mocked_post.call_count == 1
@@ -150,48 +154,83 @@ def test_fetch_graphql_jobs_respects_max_jobs():
 
 def test_fetch_graphql_jobs_returns_empty_on_graphql_errors():
     config = _make_company_config()
-    with patch("update_jobs.limited_post", return_value=_make_mock_response({"errors": [{"message": "boom"}]})):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response({"errors": [{"message": "boom"}]})):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
     assert jobs == []
+    assert [(e.company, e.source, e.kind) for e in result.errors] == [("Acme", "graphql", KIND_PARSE)]
 
 
 def test_fetch_graphql_jobs_handles_http_error():
     config = _make_company_config()
-    with patch("update_jobs.limited_post", return_value=_make_mock_response({}, status_code=500)):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response({}, status_code=500)):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
     assert jobs == []
+    assert [e.kind for e in result.errors] == [KIND_UNEXPECTED]
 
 
 def test_fetch_graphql_jobs_handles_invalid_json():
     config = _make_company_config()
-    with patch("update_jobs.limited_post", return_value=_make_mock_response({}, raise_json=True)):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response({}, raise_json=True)):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
     assert jobs == []
+    assert [e.kind for e in result.errors] == [KIND_PARSE]
 
 
 def test_fetch_graphql_jobs_returns_empty_when_data_path_missing():
     config = _make_company_config()
-    with patch("update_jobs.limited_post", return_value=_make_mock_response({"data": {}})):
-        jobs = fetch_graphql_jobs(config)
+    with patch("ngj.http.limited_post", return_value=_make_mock_response({"data": {}})):
+        result = fetch_graphql_jobs(config)
+    jobs = list(result.jobs)
     assert jobs == []
+    assert result.errors == ()
 
 
-def test_fetch_all_graphql_jobs_parallel_aggregates_and_skips_failures(monkeypatch):
+def test_fetch_graphql_jobs_reports_config_error_for_incomplete_source():
+    result = fetch_graphql_jobs({"name": "Broken"})
+    assert result.jobs == ()
+    assert [(e.company, e.kind) for e in result.errors] == [("Broken", KIND_CONFIG)]
+
+
+def test_fetch_graphql_jobs_reports_network_error():
+    import requests
+
+    config = _make_company_config()
+    with patch("ngj.http.limited_post", side_effect=requests.exceptions.ConnectionError("down")):
+        result = fetch_graphql_jobs(config)
+    assert result.jobs == ()
+    assert [e.kind for e in result.errors] == [KIND_NETWORK]
+
+
+def test_fetch_all_graphql_jobs_aggregates_and_records_failures(monkeypatch, tmp_path):
     sources = [
         {"name": "Acme"},
         {"name": "Beta"},
         {"name": "Gamma"},
     ]
+    calls = []
 
-    def fake_fetch(source_config, max_jobs=200):
+    def fake_fetch(source_config, max_jobs=200, timeout=6):
+        calls.append((source_config["name"], max_jobs, timeout))
         name = source_config["name"]
         if name == "Beta":
             raise RuntimeError("source failed")
-        return [{"company": name, "title": "Role", "location": "Remote", "url": f"https://{name}.com", "posted_at": "2026-01-01", "source": "GraphQL", "description": ""}]
+        job = {"company": name, "title": "Role", "location": "Remote", "url": f"https://{name}.com",
+               "posted_at": "2026-01-01", "source": "GraphQL", "description": ""}
+        return SourceResult(jobs=(job,), raw_count=1)
 
-    monkeypatch.setattr("update_jobs.fetch_graphql_jobs", fake_fetch)
+    monkeypatch.setattr("ngj.sources.graphql.fetch_graphql_jobs", fake_fetch)
+    settings = Settings(
+        repo_root=tmp_path, output_dir=tmp_path, history_path=Path(tmp_path) / "h.json",
+        graphql_max_jobs_per_source=10, graphql_timeout=17, graphql_min_workers=1, graphql_max_workers=2,
+    )
 
-    jobs = fetch_all_graphql_jobs_parallel(sources, max_jobs_per_source=10, max_workers=2)
-    companies = {job["company"] for job in jobs}
-    assert companies == {"Acme", "Gamma"}
-    assert len(jobs) == 2
+    result = fetch_all_graphql_jobs(sources, settings)
+
+    # Merged in config order, independent of completion order.
+    assert [job["company"] for job in result.jobs] == ["Acme", "Gamma"]
+    assert [(e.company, e.kind) for e in result.errors] == [("Beta", KIND_UNEXPECTED)]
+    # Settings values reach every per-source call.
+    assert sorted(calls) == [("Acme", 10, 17), ("Beta", 10, 17), ("Gamma", 10, 17)]
