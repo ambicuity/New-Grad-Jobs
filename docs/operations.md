@@ -110,8 +110,9 @@ reproduce it locally with `make run` + `check_integrity.py`.
 
 Usually the rebase onto `main` conflicted, or a branch rule rejected the bot push. The
 site was still deployed. The next run regenerates `README.md` from the new `main`, so a
-single failure needs no action. If it fails every run, check that the ruleset still lets
-`github-actions[bot]` push to `main`.
+single failure needs no action. If it fails every run with "permission denied" or a rule
+violation, check that the `PERSIST_DEPLOY_KEY` secret matches a write deploy key and that
+the deploy key is still a bypass actor on the `main` ruleset (see Repository settings).
 
 ### A source returns far fewer jobs
 
@@ -144,15 +145,21 @@ single failure needs no action. If it fails every run, check that the ruleset st
 - **Required status checks on `main`:** `lint`, `typecheck`, `test (3.11)`, `test (3.13)`,
   `site` (from `ci.yml`, so do not rename those jobs), plus `Run Pre-commit Hooks` from
   `pre-commit.yml`.
-- **Branch rules on `main`:** PRs required for contributors, no force pushes, no deletion,
-  squash merges. The maintainer and the `persist` job's `github-actions[bot]` push must be
-  able to bypass the PR requirement.
+- **Branch rules on `main`** (ruleset "Protect Main Branch"): required status checks above,
+  no force pushes, no deletion; PRs are squash-merged. Bypass actors: the admin/maintain/write
+  repository roles and the **deploy key** used by the `persist` job. The `github-actions` app
+  cannot be a bypass actor on a personal repository, which is why `persist` pushes over SSH
+  with a deploy key instead of `GITHUB_TOKEN`.
 - **Security:** private vulnerability reporting, secret scanning with push protection,
   Dependabot alerts. Dependabot opens grouped weekly PRs for Actions and pip
   (`.github/dependabot.yml`). Pre-commit hook revisions are updated by hand with
   `pre-commit autoupdate --freeze`.
-- **Secrets:** none are required to scrape or deploy. All sources are public endpoints,
-  and `GITHUB_TOKEN` covers deploy and persist. `CODECOV_TOKEN` is optional; coverage
-  upload is skipped without it.
+- **Secrets:** scraping and deploying need none (all sources are public endpoints;
+  `GITHUB_TOKEN` covers the Pages deploy). `PERSIST_DEPLOY_KEY` is the private half of the
+  write deploy key "update-jobs persist" that the `persist` job pushes README.md and
+  `data/market-history.json` with. To rotate it: `ssh-keygen -t ed25519 -N '' -f key`,
+  `gh repo deploy-key add key.pub --allow-write --title "update-jobs persist"`,
+  `gh secret set PERSIST_DEPLOY_KEY < key`, delete the old deploy key and both local files.
+  `CODECOV_TOKEN` is optional; coverage upload is skipped without it.
 - **Labels:** `bash .github/create-labels.sh` recreates the labels in
   [`.github/labels.md`](../.github/labels.md). The watchdog creates `scraper-stale` itself.

@@ -188,3 +188,16 @@ def test_step_does_not_use_autostash():
     # which is how conflict markers used to get committed.
     code = [ln for ln in _commit_step_script().splitlines() if not ln.lstrip().startswith("#")]
     assert not any("--autostash" in ln for ln in code)
+
+
+def test_persist_job_pushes_with_the_deploy_key_not_the_token():
+    """main requires status checks; only the deploy key is a ruleset bypass actor.
+
+    The GITHUB_TOKEN (github-actions app) cannot be a bypass actor on a personal
+    repository, so the persist job must check out (and therefore push) over SSH
+    with the write deploy key, and its token stays read-only.
+    """
+    job = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))["jobs"]["persist"]
+    assert job["permissions"] == {"contents": "read"}
+    checkout = next(s for s in job["steps"] if "actions/checkout@" in s.get("uses", ""))
+    assert checkout["with"]["ssh-key"] == "${{ secrets.PERSIST_DEPLOY_KEY }}"
