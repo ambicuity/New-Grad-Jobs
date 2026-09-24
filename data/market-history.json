@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-24T18:19:42.618996+00:00",
+    "last_updated": "2026-09-24T18:32:32.632913+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-26",
@@ -3613,23 +3613,23 @@
         "data_ml": 141,
         "frontend": 18,
         "backend": 16,
-        "hardware": 89,
-        "infrastructure_sre": 190,
         "data_engineering": 49,
+        "infrastructure_sre": 193,
         "mobile": 7,
-        "other": 546,
+        "other": 543,
         "product_management": 3,
-        "quant_finance": 10
+        "quant_finance": 10,
+        "hardware": 89
       },
       "tiers": {
-        "other": 995,
+        "other": 997,
         "unicorn": 504,
-        "faang_plus": 566
+        "faang_plus": 564
       },
       "top_companies": [
         {
           "company": "Raytheon",
-          "jobs": 187
+          "jobs": 188
         },
         {
           "company": "SpaceX",
@@ -3645,32 +3645,32 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 85
+          "jobs": 84
         },
         {
           "company": "Leidos",
-          "jobs": 77
+          "jobs": 81
         },
         {
           "company": "CACI",
           "jobs": 67
         },
         {
-          "company": "Booz Allen Hamilton",
+          "company": "Boeing",
           "jobs": 65
         },
         {
-          "company": "Boeing",
-          "jobs": 65
+          "company": "Booz Allen Hamilton",
+          "jobs": 64
         },
         {
           "company": "General Dynamics",
           "jobs": 64
         }
       ],
-      "unique_companies": 292,
-      "avg_jobs_per_company": 7.07,
-      "timestamp": "2026-09-24T18:19:42.618996+00:00"
+      "unique_companies": 293,
+      "avg_jobs_per_company": 7.05,
+      "timestamp": "2026-09-24T18:32:32.632913+00:00"
     }
   ]
 }

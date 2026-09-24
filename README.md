@@ -64,11 +64,11 @@ Experience an advanced career journey with us! 🚀
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->66<!-- /COUNT --> |
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->190<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->193<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->10<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->89<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->546<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->543<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -222,7 +222,7 @@ Experience an advanced career journey with us! 🚀
 | Figma | Early Career, Product Designer \(2027\) | San Francisco, CA • New York, NY | 1 day ago | [Apply](<https://boards.greenhouse.io/figma/jobs/6180053004?gh_jid=6180053004>) |
 | TikTok | US Ecosystem Analyst Graduate \(TikTok LIVE\) - 2026 Start | Los Angeles, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=f6b47ea37f6d8469>) |
 
-**[View all 190 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 193 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -287,7 +287,7 @@ Experience an advanced career journey with us! 🚀
 | Raytheon | Production Test Engineer, II | US-AL-HUNTSVILLE-7745 ~ 7745 Eagle Rd ~ EAGLE | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AL-HUNTSVILLE-7745--7745-Eagle-Rd--EAGLE/Production-Test-Engineer--II_01875055>) |
 | Boeing | Associate Electrical Test Engineer | USA - Huntsville, AL | Today | [Apply](<https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Electrical-Test-Engineer--Associate-_JR2026515396-1>) |
 
-**[View all 546 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 543 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -410,4 +410,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-24 18:19:42 UTC*
+*Last updated: 2026-09-24 18:32:32 UTC*
