@@ -59,12 +59,18 @@ describe('createShardLoader', () => {
     expect(f).toHaveBeenCalledWith('./descriptions/a.json', { cache: 'no-cache' });
   });
 
-  it('resolves {} on failure and retries on the next call', async () => {
+  it('rejects on failure (so the UI can offer a retry) and refetches on the next call', async () => {
     vi.spyOn(console, 'error').mockImplementation(() => {});
     const f = routeFetch({});
     const load = createShardLoader(f);
-    await expect(load('b')).resolves.toEqual({});
-    await load('b');
+    await expect(load('b')).rejects.toThrow('descriptions/b.json: HTTP 404');
+    await expect(load('b')).rejects.toThrow();
     expect(f).toHaveBeenCalledTimes(2);
+  });
+
+  it('rejects a shard that is not a JSON object', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const load = createShardLoader(routeFetch({ 'descriptions/c.json': () => ok(['nope']) }));
+    await expect(load('c')).rejects.toThrow(/not an object/);
   });
 });

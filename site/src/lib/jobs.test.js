@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  compTuple, dedupeIds, deriveRmt, deriveType, mapJob, normalizeJobsPayload,
+  compTuple, dedupeIds, deriveRmt, deriveType, mapJob, normalizeJobsPayload, searchHaystack,
 } from './jobs.js';
 import { CATEGORY_TYPE, TYPE_LABEL, TYPE_ORDER } from './taxonomy.js';
 
@@ -66,54 +66,72 @@ describe('compTuple', () => {
 });
 
 describe('mapJob', () => {
-  it('maps a complete record', () => {
+  it('maps a complete record, keyed by the stable job_id', () => {
     expect(mapJob(RAW, NOW)).toEqual({
-      id: 'palantir-fde-kitsap',
+      id: 'job_4e67aada0c997e69c1a7',
       co: 'Palantir',
       role: 'Forward Deployed Software Engineer - US Government',
       loc: 'Kitsap, WA',
       url: 'https://jobs.lever.co/palantir/a2e9',
       rmt: 'onsite',
       visa: true,
-      size: 'L',
-      stack: ['—'],
-      cohort: '26',
+      visaNote: null,
+      tier: 'unicorn',
       comp: [120, 180],
-      dl: '2026-12-23',
       type: 'SWE',
       posted: '1h',
       postedTs: Date.UTC(2026, 8, 24, 14, 50, 21),
-      level: 'entry',
       jobId: 'job_4e67aada0c997e69c1a7',
-      desc: 'Palantir is hiring for Forward Deployed Software Engineer - US Government in Kitsap, WA. Posted via Lever.',
+      desc: '',
+      closed: false,
+      hay: 'palantir forward deployed software engineer - us government kitsap, wa',
     });
+  });
+
+  it('never invents data: no deadline, stack, cohort, level or placeholder description', () => {
+    const j = mapJob(RAW, NOW);
+    for (const k of ['dl', 'stack', 'cohort', 'level', 'size']) expect(j).not.toHaveProperty(k);
+    expect(j.desc).toBe('');
   });
 
   it('survives a record with every field missing', () => {
     const j = mapJob({}, NOW);
     expect(j).toMatchObject({
-      id: '', co: '—', role: '—', loc: '—', url: '', rmt: 'onsite', visa: true, size: 'M',
-      comp: [null, null], type: 'OTHER', posted: '—', postedTs: 0, jobId: '',
-      dl: '2026-12-23',
-      desc: 'This company is hiring for this role. Posted via their careers page.',
+      id: '', co: '—', role: '—', loc: '—', url: '', rmt: 'onsite', visa: true, visaNote: null, tier: 'other',
+      comp: [null, null], type: 'OTHER', posted: '—', postedTs: 0, jobId: '', desc: '', closed: false,
     });
     expect(mapJob(undefined, NOW).co).toBe('—');
   });
 
-  it('marks jobs that rule out sponsorship as visa=false', () => {
-    expect(mapJob({ ...RAW, flags: { no_sponsorship: true } }, NOW).visa).toBe(false);
-    expect(mapJob({ ...RAW, flags: { us_citizenship_required: true } }, NOW).visa).toBe(false);
+  it('falls back to the slug id when there is no job_id', () => {
+    expect(mapJob({ ...RAW, job_id: undefined }, NOW).id).toBe('palantir-fde-kitsap');
   });
 
-  it('maps company tiers to sizes', () => {
-    expect(mapJob({ ...RAW, company_tier: { tier: 'faang_plus' } }, NOW).size).toBe('XL');
-    expect(mapJob({ ...RAW, company_tier: { tier: 'mystery' } }, NOW).size).toBe('M');
+  it('records which restriction the posting states (visa=false means "restriction stated")', () => {
+    expect(mapJob({ ...RAW, flags: { no_sponsorship: true } }, NOW)).toMatchObject({ visa: false, visaNote: 'no-sponsorship' });
+    expect(mapJob({ ...RAW, flags: { us_citizenship_required: true } }, NOW)).toMatchObject({ visa: false, visaNote: 'citizenship' });
+    expect(mapJob({ ...RAW, flags: { no_sponsorship: true, us_citizenship_required: true } }, NOW).visaNote).toBe('citizenship');
+  });
+
+  it('keeps the company tier as published (unknown tiers → other)', () => {
+    expect(mapJob({ ...RAW, company_tier: { tier: 'faang_plus' } }, NOW).tier).toBe('faang_plus');
+    expect(mapJob({ ...RAW, company_tier: { tier: 'mystery' } }, NOW).tier).toBe('other');
+  });
+
+  it('flags closed postings', () => {
+    expect(mapJob({ ...RAW, is_closed: true }, NOW).closed).toBe(true);
+    expect(mapJob({ ...RAW, is_closed: 'yes' }, NOW).closed).toBe(false);
+  });
+
+  it('only keeps http(s) application URLs', () => {
+    expect(mapJob({ ...RAW, url: 'javascript:alert(1)' }, NOW).url).toBe('');
+    expect(mapJob({ ...RAW, url: 'http://example.com/job' }, NOW).url).toBe('http://example.com/job');
   });
 
   it('keeps a real description (jobs.json fallback) but not a stub', () => {
     const long = 'x'.repeat(61);
     expect(mapJob({ ...RAW, description: long }, NOW).desc).toBe(long);
-    expect(mapJob({ ...RAW, description: 'short' }, NOW).desc).toMatch(/^Palantir is hiring/);
+    expect(mapJob({ ...RAW, description: 'short' }, NOW).desc).toBe('');
   });
 
   it('ignores a non-string job_id and stringifies numeric ids', () => {
@@ -126,6 +144,12 @@ describe('mapJob', () => {
     const j = mapJob({ ...RAW, posted_at: '2026-09-24T14:50:21.850000' }, NOW);
     expect(j.postedTs).toBe(Date.UTC(2026, 8, 24, 14, 50, 21, 850));
     expect(j.posted).toBe('1h');
+  });
+});
+
+describe('searchHaystack', () => {
+  it('is the lower-cased company, role and location', () => {
+    expect(searchHaystack({ co: 'ACME', role: 'SWE II', loc: 'NYC' })).toBe('acme swe ii nyc');
   });
 });
 
@@ -142,7 +166,7 @@ describe('normalizeJobsPayload', () => {
   it('maps jobs and returns meta', () => {
     const out = normalizeJobsPayload({ meta: { generated_at: 'x' }, jobs: [RAW, RAW] }, NOW);
     expect(out.meta).toEqual({ generated_at: 'x' });
-    expect(out.jobs.map((j) => j.id)).toEqual(['palantir-fde-kitsap', 'palantir-fde-kitsap#2']);
+    expect(out.jobs.map((j) => j.id)).toEqual(['job_4e67aada0c997e69c1a7', 'job_4e67aada0c997e69c1a7#2']);
   });
 
   it('defaults meta to {}', () => {

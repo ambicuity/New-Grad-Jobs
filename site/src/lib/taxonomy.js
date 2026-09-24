@@ -26,15 +26,10 @@ export const TYPE_LABEL = { SWE: 'swe', FE: 'frontend', BE: 'backend', MOBILE: '
 // Order of the ROLE filter chips.
 export const TYPE_ORDER = ['SWE', 'FE', 'BE', 'MOBILE', 'SEC', 'ML', 'DATA', 'INFRA', 'PM', 'QUANT', 'HW', 'OTHER'];
 
-export const SIZE_LABEL = { S: '<50', M: '50–500', L: '500–5k', XL: '5k+' };
-export const SIZE_ORDER = ['S', 'M', 'L', 'XL'];
+// company_tier.tier exactly as the scraper publishes it. The feed has no
+// headcount data, so the rail shows the tier itself rather than a size guess.
+export const TIER_ORDER = ['faang_plus', 'unicorn', 'other'];
+export const TIER_LABEL = { faang_plus: 'faang+', unicorn: 'unicorn', other: 'other' };
 
 export const RMT_LABEL = { remote: 'remote', hybrid: 'hybrid', onsite: 'onsite' };
 export const RMT_ORDER = ['remote', 'hybrid', 'onsite'];
-
-// company_tier.tier → company-size bucket.
-export const TIER_SIZE = {
-  faang_plus: 'XL',
-  unicorn: 'L',
-  other: 'M',
-};

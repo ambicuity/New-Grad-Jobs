@@ -4,11 +4,15 @@ import { DashboardView } from './DashboardView.jsx';
 /**
  * Hiring tab entry point. When jobs couldn't be fetched at all, say so (with a
  * retry) rather than rendering a dashboard of zeros that looks like "no jobs".
- * @param {{jobsState: import('../../data/jobs-source.js').JobsState}} props
+ * @param {{
+ *   jobsState: import('../../data/jobs-source.js').JobsState,
+ *   view: import('../../lib/url-state.js').ViewState,
+ *   updateView: Function,
+ * }} props
  */
-export function HiringTab({ jobsState }) {
+export function HiringTab({ jobsState, view, updateView }) {
   if (jobsState.error) return <JobsLoadError reason={jobsState.error} />;
-  return <DashboardView jobs={jobsState.jobs} />;
+  return <DashboardView jobs={jobsState.jobs} meta={jobsState.meta} view={view} updateView={updateView} />;
 }
 
 export function JobsLoadError({ reason }) {
@@ -23,7 +27,7 @@ export function JobsLoadError({ reason }) {
       </div>
       <div style={{ color: BBG.dim }}>This is usually a network hiccup or a deploy in progress.</div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 16 }}>
-        <button onClick={() => window.location.reload()} style={{
+        <button type="button" onClick={() => window.location.reload()} style={{
           background: BBG.acc, color: '#000', border: 'none', padding: '8px 14px', minHeight: 36,
           fontFamily: 'inherit', fontWeight: 700, letterSpacing: 0.5, cursor: 'pointer',
         }}>RETRY ↻</button>

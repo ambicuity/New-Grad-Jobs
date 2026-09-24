@@ -24,15 +24,15 @@ export function SponsoredBy() {
       aria-label="Sponsored by Tailr (opens in a new tab)"
       {...hoverProps}
       style={{
-        display: 'inline-flex', alignItems: 'center', gap: 6,
+        display: 'inline-flex', alignItems: 'center', gap: 6, minHeight: 24,
         textDecoration: 'none',
         color: hover ? BBG.ink : BBG.dim,
         letterSpacing: 0.5,
         transition: 'color 120ms ease',
       }}
     >
-      <span aria-hidden="true" style={{ fontSize: 8 }}>◆</span>
-      <span style={{ fontSize: 10 }}>SPONSORED BY</span>
+      <span aria-hidden="true" style={{ fontSize: 11 }}>◆</span>
+      <span style={{ fontSize: 11 }}>SPONSORED BY</span>
       <svg width="15" height="15" viewBox="0 0 64 64" aria-hidden="true" style={{ display: 'block' }}>
         <rect x="1" y="1" width="62" height="62" rx="15" fill="#1b1b1d"
           stroke="rgba(255,255,255,0.22)" strokeWidth="2" />
@@ -55,7 +55,7 @@ export function SponsorLink() {
       aria-label="Sponsor on Buy Me a Coffee (opens in a new tab)"
       {...hoverProps}
       style={{
-        display: 'inline-flex', alignItems: 'center', gap: 6,
+        display: 'inline-flex', alignItems: 'center', gap: 6, minHeight: 24,
         border: `1px solid ${BBG.acc}`,
         background: hover ? BBG.selBg : 'transparent',
         padding: '2px 8px',

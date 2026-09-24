@@ -1,56 +1,75 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { BBG } from '../lib/theme.js';
 import { nextSortKey, stepSelection } from '../lib/sort.js';
+import { isEditableTarget, shouldIgnoreShortcut } from '../lib/keys.js';
+
+const STEP = { ArrowDown: 1, j: 1, ArrowUp: -1, k: -1 };
 
 /**
  * Global keyboard shortcuts for the hiring view:
- *   /  focus search · ? help · Esc close help / blur input / clear filters
- *   j k ↑ ↓ move selection · s F3 save · ⏎ open application · F2 cycle sort
+ *   / focus search · ? or F1 help · Esc blur input / clear filters
+ *   j k ↑ ↓ move selection · Home End first/last · s F3 save
+ *   ⏎ open (application on desktop, detail on mobile) · F2 cycle sort
+ * Shortcuts stand aside while typing, while a button/link has focus, when a
+ * modifier is held, and while `enabled` is false (a dialog is open).
  */
-export function useDashboardKeys({
-  filtered, selected, selectedId, setSelectedId, saved, toggleSave,
-  sortKey, setSortKey, helpOpen, setHelpOpen, clearAll, searchRef, flash,
-}) {
+export function useDashboardKeys(opts) {
+  // Read the latest props through a ref so the window listener is attached once.
+  const ref = useRef(opts);
+  useEffect(() => { ref.current = opts; });
+
   useEffect(() => {
     const onKey = (e) => {
-      const tag = ((e.target && e.target.tagName) || '').toLowerCase();
-      const inInput = tag === 'input' || tag === 'textarea';
+      const o = ref.current;
+      if (!o.enabled) return;
       if (e.key === 'Escape') {
-        if (helpOpen) { setHelpOpen(false); return; }
-        if (inInput) { e.target.blur(); return; }
-        clearAll();
-        flash('filters cleared', BBG.dim);
+        if (e.ctrlKey || e.metaKey || e.altKey) return;
+        if (isEditableTarget(e.target)) { e.target.blur(); return; }
+        o.clearAll();
+        o.flash('filters cleared', BBG.dim);
         return;
       }
-      if (inInput) return;
-      if (e.key === '/') { e.preventDefault(); searchRef.current?.focus(); return; }
-      if (e.key === '?') { e.preventDefault(); setHelpOpen((v) => !v); return; }
-      if (e.key === 'ArrowDown' || e.key === 'j' || e.key === 'ArrowUp' || e.key === 'k') {
-        const delta = e.key === 'ArrowDown' || e.key === 'j' ? 1 : -1;
-        const next = stepSelection(filtered, selectedId, delta);
-        if (next !== selectedId) { e.preventDefault(); setSelectedId(next); }
-        return;
-      }
-      if ((e.key === 's' || e.key === 'F3') && selectedId != null) {
-        e.preventDefault();
-        toggleSave(selectedId);
-        flash(saved.has(selectedId) ? 'unsaved' : '★ saved', BBG.acc);
-        return;
-      }
-      if (e.key === 'Enter' && selected) {
-        if (selected.url) window.open(selected.url, '_blank', 'noopener');
-        flash(`opening ${selected.co.toLowerCase()} ↗`, BBG.acc);
-        return;
-      }
-      if (e.key === 'F2') {
-        e.preventDefault();
-        const next = nextSortKey(sortKey);
-        setSortKey(next);
-        flash(`sort: ${next}`, BBG.acc2);
-      }
+      if (shouldIgnoreShortcut(e)) return;
+      handleShortcut(e, o);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [filtered, selected, selectedId, setSelectedId, saved, toggleSave, sortKey, setSortKey,
-    helpOpen, setHelpOpen, clearAll, searchRef, flash]);
+  }, []);
+}
+
+function moveTo(e, o, id) {
+  e.preventDefault();
+  if (id != null && id !== o.selectedId) o.select(id);
+}
+
+function handleShortcut(e, o) {
+  const { filtered, selectedId } = o;
+  if (e.key === 'F1' || e.key === '?') { e.preventDefault(); o.setHelpOpen(true); return; }
+  if (e.key === '/') { e.preventDefault(); o.searchRef.current?.focus(); return; }
+  if (STEP[e.key] && filtered.length) {
+    const inList = filtered.some((j) => j.id === selectedId);
+    moveTo(e, o, inList ? stepSelection(filtered, selectedId, STEP[e.key]) : filtered[0].id);
+    return;
+  }
+  if ((e.key === 'Home' || e.key === 'End') && filtered.length) {
+    moveTo(e, o, (e.key === 'Home' ? filtered[0] : filtered[filtered.length - 1]).id);
+    return;
+  }
+  if ((e.key === 's' || e.key === 'F3') && selectedId != null) {
+    e.preventDefault();
+    o.toggleSave(selectedId);
+    o.flash(o.saved.has(selectedId) ? 'removed from saved' : '★ saved', BBG.acc);
+    return;
+  }
+  if (e.key === 'Enter' && selectedId != null) {
+    e.preventDefault();
+    o.openSelected();
+    return;
+  }
+  if (e.key === 'F2') {
+    e.preventDefault();
+    const next = nextSortKey(o.sortKey);
+    o.setSortKey(next);
+    o.flash(`sort: ${next}`, BBG.acc2);
+  }
 }

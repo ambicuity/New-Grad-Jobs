@@ -4,7 +4,10 @@ export const BBG = Object.freeze({
   panel: '#0a0a0a',
   panel2: '#101010',
   ink: '#e8e8e8',
-  dim: '#6e6e6e',
+  // Secondary text. #8a8a8a is 6.1:1 on black (the old #6e6e6e was 4.0:1 and
+  // failed WCAG AA); color.test.js guards every background it sits on.
+  dim: '#8a8a8a',
+  placeholder: '#8a8a8a',
   rule: '#1c1c1c',
   rule2: '#2a2a2a',
   acc: '#ff9d3d', // amber

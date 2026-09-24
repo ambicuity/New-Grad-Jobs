@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { extractRequirements } from './requirements.js';
+import { REQUIREMENTS_CACHE_SIZE, extractRequirements } from './requirements.js';
 
 describe('extractRequirements', () => {
   it('returns [] for empty input', () => {
@@ -46,5 +46,23 @@ describe('extractRequirements', () => {
 
   it('returns [] for prose without structure', () => {
     expect(extractRequirements('A friendly team building useful tools for everyone.')).toEqual([]);
+  });
+});
+
+describe('extractRequirements memoisation', () => {
+  const desc = (n) => `Requirements: - Proficiency in language number ${n} - Strong communication skills for ${n}`;
+
+  it('returns the cached result (same array) for a repeated description', () => {
+    const first = extractRequirements(desc(1));
+    expect(first).toHaveLength(2);
+    expect(extractRequirements(desc(1))).toBe(first);
+  });
+
+  it('keeps a bounded number of descriptions, evicting the oldest', () => {
+    const first = extractRequirements(desc('evict-me'));
+    for (let i = 0; i < REQUIREMENTS_CACHE_SIZE; i++) extractRequirements(desc(`fill-${i}`));
+    const again = extractRequirements(desc('evict-me'));
+    expect(again).toEqual(first);
+    expect(again).not.toBe(first);
   });
 });

@@ -1,15 +1,14 @@
 // Hiring-view filtering. All functions are pure and never mutate their input:
 // every "toggle" returns a new filters object with new Sets.
 
-import { daysLeft } from './time.js';
+import { searchHaystack } from './jobs.js';
 
 /**
  * @typedef {object} JobFilters
  * @property {Set<string>} type
  * @property {Set<string>} rmt
- * @property {boolean|null} visa     true = sponsored only, false = US-only, null = any.
- * @property {Set<string>} cohort
- * @property {Set<string>} size
+ * @property {boolean|null} visa     true = no restriction stated, false = restriction stated, null = any.
+ * @property {Set<string>} tier
  * @property {Set<string>} company
  */
 
@@ -20,10 +19,7 @@ import { daysLeft } from './time.js';
  * @returns {JobFilters}
  */
 export function EMPTY_FILTERS() {
-  return {
-    type: new Set(), rmt: new Set(), visa: null, cohort: new Set(['26']), size: new Set(),
-    company: new Set(),
-  };
+  return { type: new Set(), rmt: new Set(), visa: null, tier: new Set(), company: new Set() };
 }
 
 /** New Set with `val` added if absent, removed if present. */
@@ -44,17 +40,21 @@ export function toggleVisa(filters, val) {
   return { ...filters, visa: filters.visa === val ? null : val };
 }
 
-/** Number of user-set facets (cohort is a default, so it isn't counted). */
+/** Number of user-set facets. */
 export function activeFilterCount(filters) {
   return filters.type.size + filters.rmt.size + (filters.visa !== null ? 1 : 0)
-    + filters.size.size + filters.company.size;
+    + filters.tier.size + filters.company.size;
 }
 
-/** Case-insensitive search over company, role, location and stack. */
+/**
+ * Case-insensitive search over company, role and location: every
+ * whitespace-separated term must appear (in any order).
+ */
 export function matchesQuery(job, q) {
-  if (!q) return true;
-  const needle = q.toLowerCase();
-  return `${job.co} ${job.role} ${job.loc} ${job.stack.join(' ')}`.toLowerCase().includes(needle);
+  const terms = (q || '').toLowerCase().split(/\s+/).filter(Boolean);
+  if (!terms.length) return true;
+  const hay = job.hay || searchHaystack(job);
+  return terms.every((t) => hay.includes(t));
 }
 
 /**
@@ -70,8 +70,7 @@ export function filterJobsExceptCompany(jobs, { filters, q = '', saved = new Set
     if (filters.type.size && !filters.type.has(j.type)) return false;
     if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;
     if (filters.visa !== null && j.visa !== filters.visa) return false;
-    if (filters.cohort.size && !filters.cohort.has(j.cohort)) return false;
-    if (filters.size.size && !filters.size.has(j.size)) return false;
+    if (filters.tier.size && !filters.tier.has(j.tier)) return false;
     return matchesQuery(j, q);
   });
 }
@@ -86,31 +85,4 @@ export function companyCounts(jobs) {
   const m = new Map();
   jobs.forEach((j) => m.set(j.co, (m.get(j.co) || 0) + 1));
   return [...m.entries()].sort((a, b) => b[1] - a[1]);
-}
-
-/** Histogram of days-to-deadline for the DEADLINE DIST. widget. */
-export function deadlineBuckets(jobs, now = Date.now()) {
-  const b = { w1: 0, w2: 0, m1: 0, m3: 0, m3p: 0 };
-  jobs.forEach((j) => {
-    const d = daysLeft(j.dl, now);
-    if (d < 7) b.w1++;
-    else if (d < 14) b.w2++;
-    else if (d < 30) b.m1++;
-    else if (d < 90) b.m3++;
-    else b.m3p++;
-  });
-  return b;
-}
-
-/**
- * "NEW TODAY" stat. Kept byte-for-byte from the pre-Vite site for parity: it
- * matches single-digit hours, "1d" and "2d" (so "now" and 10-23h are missed).
- */
-export function newTodayCount(jobs) {
-  return jobs.filter((j) => /^\dh|^1d|^2d/.test(j.posted)).length;
-}
-
-/** Jobs whose (synthetic) deadline is under a week away. */
-export function closingSoonCount(jobs, now = Date.now()) {
-  return jobs.filter((j) => daysLeft(j.dl, now) < 7).length;
 }

@@ -33,14 +33,30 @@ function fromListItems(html) {
   return items.length >= 3 ? items.slice(0, MAX_ITEMS) : [];
 }
 
-/**
- * @param {string|null|undefined} desc
- * @returns {string[]} up to 8 requirement lines (empty when none found)
- */
-export function extractRequirements(desc) {
-  if (!desc) return [];
+function extractUncached(desc) {
   const text = stripTags(desc).replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
   const fromHeader = fromHeaderSection(text);
   if (fromHeader.length) return fromHeader;
   return fromListItems(desc);
+}
+
+// Descriptions run to tens of KB and the regex pass is not free, so keyboard
+// j/k back-and-forth reuses results. Bounded, oldest-first eviction (Map
+// iteration order is insertion order).
+export const REQUIREMENTS_CACHE_SIZE = 64;
+const cache = new Map();
+
+/**
+ * @param {string|null|undefined} desc
+ * @returns {string[]} up to 8 requirement lines (empty when none found).
+ *   Treat as read-only: repeated calls return the same cached array.
+ */
+export function extractRequirements(desc) {
+  if (!desc) return [];
+  const hit = cache.get(desc);
+  if (hit) return hit;
+  const items = extractUncached(desc);
+  if (cache.size >= REQUIREMENTS_CACHE_SIZE) cache.delete(cache.keys().next().value);
+  cache.set(desc, items);
+  return items;
 }
