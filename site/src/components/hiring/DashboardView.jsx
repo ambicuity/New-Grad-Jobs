@@ -10,7 +10,7 @@ import {
 } from '../../lib/filters.js';
 import { clickJobSort, sortJobs } from '../../lib/sort.js';
 import { computeStats } from '../../lib/stats.js';
-import { safeHttpUrl } from '../../lib/url.js';
+import { safeHttpUrl } from '../../lib/safe-url.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { useToast } from '../../hooks/useToast.js';
 import { useSavedJobs } from '../../hooks/useSavedJobs.js';

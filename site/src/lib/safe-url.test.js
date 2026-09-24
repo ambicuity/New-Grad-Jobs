@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { safeHttpUrl } from './url.js';
+import { safeHttpUrl } from './safe-url.js';
 
 describe('safeHttpUrl', () => {
   it.each([

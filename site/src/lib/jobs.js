@@ -3,7 +3,7 @@
 
 import { CATEGORY_TYPE, TIER_ORDER } from './taxonomy.js';
 import { ageString, parseTimestamp } from './time.js';
-import { safeHttpUrl } from './url.js';
+import { safeHttpUrl } from './safe-url.js';
 
 /**
  * A job as published in jobs-index.json (jobs.json adds `description`).

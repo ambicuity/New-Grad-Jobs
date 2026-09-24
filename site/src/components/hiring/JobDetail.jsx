@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 import { BBG } from '../../lib/theme.js';
 import { RMT_LABEL, TIER_LABEL, TYPE_LABEL } from '../../lib/taxonomy.js';
 import { fmtComp } from '../../lib/format.js';
-import { safeHttpUrl } from '../../lib/url.js';
+import { safeHttpUrl } from '../../lib/safe-url.js';
 import { extractRequirements } from '../../lib/requirements.js';
 import { similarJobs } from '../../lib/similar.js';
 import { useJobDescription } from '../../hooks/useJobDescription.js';
