@@ -5,7 +5,9 @@
 // Exposes on window: NGJOBS, TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
 //                    fmtComp, daysLeft, deadlineLabel, deadlineHot,
 //                    NGJOBS_READY (Promise that resolves once jobs are loaded),
-//                    useJobDescription (lazy full description for a job).
+//                    NGJOBS_ERROR (load-failure reason, or null),
+//                    useJobDescription (lazy full description for a job),
+//                    usePromiseSettled (re-render when a data promise settles).
 
 // Canonical job categories — the single source of truth shared with
 // scripts/update_jobs.py (CATEGORY_PATTERNS), docs/jobs.json (meta.categories),
@@ -201,17 +203,23 @@ function fetchJobsPayload(path) {
   });
 }
 
+// Set to a short human-readable reason when both payloads fail to load, so
+// the hiring view can render an explicit "couldn't load jobs" state instead
+// of a silent empty list. null means the load succeeded (even with 0 jobs).
+window.NGJOBS_ERROR = null;
+
 const NGJOBS_READY = fetchJobsPayload('jobs-index.json')
   .catch(err => {
     console.warn('[terminal] jobs-index.json unavailable, falling back to jobs.json:', err);
     return fetchJobsPayload('jobs.json');
   })
   .then(d => {
+    if (!d || !Array.isArray(d.jobs)) throw new Error('jobs payload has no "jobs" array');
     window.NGJOBS_META = d.meta || {};
     // Real jobs.json contains duplicate ids (same role on multiple sources).
     // Disambiguate by appending an index suffix when needed.
     const seen = new Map();
-    NGJOBS = (d.jobs || []).map(mapJob).map(j => {
+    NGJOBS = d.jobs.map(mapJob).map(j => {
       const n = (seen.get(j.id) || 0) + 1;
       seen.set(j.id, n);
       return n === 1 ? j : { ...j, id: `${j.id}#${n}` };
@@ -221,13 +229,40 @@ const NGJOBS_READY = fetchJobsPayload('jobs-index.json')
   })
   .catch(err => {
     console.error('[terminal] failed to load jobs.json:', err);
-    window.NGJOBS = [];
+    NGJOBS = [];
+    window.NGJOBS = NGJOBS;
     window.NGJOBS_META = {};
-    return [];
+    window.NGJOBS_ERROR = (err && err.message) || String(err);
+    return NGJOBS;
   });
+
+// Re-render once a data promise settles. The app mounts as soon as jobs are
+// in; slower sources (contributors + GitHub API) arrive later and views that
+// depend on them call this to swap their loading state for real content.
+// The data promises never reject (each catches and falls back), but treat a
+// rejection as settled anyway so a view can never get stuck loading.
+// Promises already seen to settle, so a remount (e.g. switching tabs back)
+// renders content immediately instead of flashing the loading state.
+const SETTLED_PROMISES = new WeakSet();
+
+function usePromiseSettled(promise) {
+  const isThenable = !!promise && typeof promise.then === 'function';
+  const [settled, setSettled] = React.useState(() => !isThenable || SETTLED_PROMISES.has(promise));
+  React.useEffect(() => {
+    if (!isThenable) { setSettled(true); return undefined; }
+    let live = true;
+    const done = () => {
+      SETTLED_PROMISES.add(promise);
+      if (live) setSettled(true);
+    };
+    promise.then(done, done);
+    return () => { live = false; };
+  }, [promise, isThenable]);
+  return settled;
+}
 
 Object.assign(window, {
   TYPE_LABEL, SIZE_LABEL, RMT_LABEL,
   fmtComp, daysLeft, deadlineLabel, deadlineHot,
-  NGJOBS_READY, useJobDescription,
+  NGJOBS_READY, useJobDescription, usePromiseSettled,
 });

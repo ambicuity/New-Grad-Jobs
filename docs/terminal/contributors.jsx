@@ -8,7 +8,27 @@ const CBG = {
   acc:'#ff9d3d', acc2:'#62a3ff', ok:'#5fd28a', hot:'#ff5050', warn:'#e8c443',
 };
 
+// Contributors tab entry point. The app mounts as soon as jobs load, so
+// contributors.json + the GitHub API enrichment may still be in flight; show a
+// loading line until NGCONTRIB_READY settles, then mount the real view (whose
+// initial state reads NGCONTRIB).
 function ContributorsView() {
+  const ready = usePromiseSettled(window.NGCONTRIB_READY);
+  if (!ready) {
+    return (
+      <div role="status" style={{
+        height: '100%', background: CBG.bg, padding: '24px',
+        fontFamily: '"JetBrains Mono", ui-monospace, monospace', fontSize: 12, letterSpacing: 0.6,
+      }}>
+        <span style={{ color: CBG.acc }}>CONTRIBUTORS</span>{' '}
+        <span style={{ color: CBG.dim }}>loading contributors.json + github stats …</span>
+      </div>
+    );
+  }
+  return <ContributorsBody />;
+}
+
+function ContributorsBody() {
   const [q, setQ] = useStateC('');
   const [filters, setFilters] = useStateC({
     role: new Set(),
@@ -17,7 +37,7 @@ function ContributorsView() {
   });
   const [sortKey, setSortKey] = useStateC('commits');
   const [sortDir, setSortDir] = useStateC(1);
-  const [selectedHandle, setSelectedHandle] = useStateC(NGCONTRIB[0].handle);
+  const [selectedHandle, setSelectedHandle] = useStateC(() => NGCONTRIB[0]?.handle ?? null);
   // Mobile reflow: the repo card + filters + leaderboard collapse into a drawer,
   // and tapping a contributor opens a full-screen detail (no 460px side panel).
   const isMobile = useIsMobile();

@@ -20,7 +20,11 @@ function NGApp() {
     }}>
       <TopBar tab={tab} setTab={setTab} />
       <div style={{ minHeight: 0, overflow: 'hidden' }}>
-        {tab === 'hiring' ? <DashboardDirection /> : <ContributorsView />}
+        {/* Per-tab boundary: a crash in one view (e.g. contributors) leaves the
+            top bar working so the user can switch back to the other tab. */}
+        <NGErrorBoundary key={tab} scope={tab}>
+          {tab === 'hiring' ? <DashboardDirection /> : <ContributorsView />}
+        </NGErrorBoundary>
       </div>
       <SiteFooter />
     </div>
@@ -29,9 +33,11 @@ function NGApp() {
 
 function TopBar({ tab, setTab }) {
   const isMobile = useIsMobile();
+  // Contributors data may still be loading when the app first paints.
+  const contribReady = usePromiseSettled(window.NGCONTRIB_READY);
   const TABS = [
-    { id: 'hiring',       label: 'HIRING',       sub: `${NGJOBS.length} open` },
-    { id: 'contributors', label: 'CONTRIBUTORS', sub: `${NGCONTRIB.length} devs` },
+    { id: 'hiring',       label: 'HIRING',       sub: window.NGJOBS_ERROR ? 'offline' : `${NGJOBS.length} open` },
+    { id: 'contributors', label: 'CONTRIBUTORS', sub: contribReady ? `${NGCONTRIB.length} devs` : '… devs' },
   ];
   return (
     <div style={{
@@ -228,4 +234,49 @@ function SponsorLink() {
   );
 }
 
+// Last line of defence against a blank page: any render error below this
+// boundary shows a terminal-styled notice with a reload button and links to
+// the README and the raw jobs.json feed, instead of React unmounting the tree.
+// Error boundaries still have to be class components in React 18.
+class NGErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+
+  componentDidCatch(error, info) {
+    console.error(`[terminal] render crash (${this.props.scope || 'app'}):`, error, info && info.componentStack);
+  }
+
+  render() {
+    if (!this.state.error) return this.props.children;
+    const REPO = 'https://github.com/ambicuity/New-Grad-Jobs';
+    const linkStyle = { color: '#ff9d3d', textDecoration: 'none', borderBottom: '1px dotted #ff9d3d' };
+    return (
+      <div role="alert" style={{
+        height: '100%', background: '#000', color: '#e8e8e8', padding: '32px 24px',
+        fontFamily: '"JetBrains Mono", ui-monospace, monospace', fontSize: 12, lineHeight: 1.7,
+      }}>
+        <div style={{ color: '#ff5050', fontWeight: 700, letterSpacing: 0.8 }}>ERR · SOMETHING BROKE</div>
+        <div style={{ color: '#6e6e6e', marginTop: 6 }}>
+          The {this.props.scope ? `${this.props.scope} view` : 'terminal'} hit an unexpected error. Reloading usually fixes it.
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 14, marginTop: 16 }}>
+          <button onClick={() => window.location.reload()} style={{
+            background: '#ff9d3d', color: '#000', border: 'none', padding: '8px 14px', minHeight: 36,
+            fontFamily: 'inherit', fontWeight: 700, letterSpacing: 0.5, cursor: 'pointer',
+          }}>RELOAD ↻</button>
+          <a href={`${REPO}#readme`} target="_blank" rel="noopener noreferrer" style={linkStyle}>README ↗</a>
+          <a href="jobs.json" style={linkStyle}>raw jobs.json</a>
+        </div>
+      </div>
+    );
+  }
+}
+
 window.NGApp = NGApp;
+window.NGErrorBoundary = NGErrorBoundary;

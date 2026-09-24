@@ -46,9 +46,13 @@
     .ng-boot .dim { color: #6e6e6e; }
   </style>
 
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <!-- Production React builds. `defer` keeps these from blocking first paint of
+       the boot line; deferred scripts still run in order before
+       DOMContentLoaded, which is when Babel standalone compiles and runs the
+       text/babel scripts below, so React/ReactDOM are defined by then. -->
+  <script defer src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+  <script defer src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+  <script defer src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
   <script>
     window.loadAnalytics = function loadAnalytics() {
@@ -65,31 +69,36 @@
 <body>
   <div id="root">
     <div class="ng-boot">
-      <div>NGJ <span class="dim">loading jobs-index.json + contributors.json …</span></div>
+      <div>NGJ <span class="dim">loading jobs-index.json …</span></div>
     </div>
   </div>
 
   <!-- Pure-JS helper for the LIVE chip, loadable in Node for unit testing. -->
-  <script src="terminal/live-stamp-format.js?v=23"></script>
+  <script src="terminal/live-stamp-format.js?v=24"></script>
 
   <!-- Cache-bust the bundle when its shape changes. Bump v= on data-shape edits. -->
   <!-- useIsMobile must load before the views that branch on it for responsive reflow. -->
-  <script type="text/babel" src="terminal/use-viewport.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/data.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/contributors-data.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/dashboard.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/contributors.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/live-stamp.jsx?v=23"></script>
-  <script type="text/babel" src="terminal/app.jsx?v=23"></script>
+  <script type="text/babel" src="terminal/use-viewport.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/data.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/contributors-data.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/dashboard.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/contributors.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/live-stamp.jsx?v=24"></script>
+  <script type="text/babel" src="terminal/app.jsx?v=24"></script>
 
   <script type="text/babel">
+    // Mount as soon as jobs are in. Contributors (contributors.json + GitHub
+    // API) keep loading in the background; that view shows its own loading
+    // state until NGCONTRIB_READY settles.
     (async () => {
       try {
-        await Promise.all([window.NGJOBS_READY, window.NGCONTRIB_READY]);
+        await window.NGJOBS_READY;
       } catch (err) {
         console.error('[terminal] data bootstrap failed:', err);
       }
-      ReactDOM.createRoot(document.getElementById('root')).render(<NGApp />);
+      ReactDOM.createRoot(document.getElementById('root')).render(
+        <NGErrorBoundary><NGApp /></NGErrorBoundary>
+      );
     })();
   </script>
 </body>

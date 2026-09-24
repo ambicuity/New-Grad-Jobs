@@ -18,15 +18,58 @@ const BBG = {
   warn:  '#e8c443',
 };
 
-function DashboardDirection() {
-  const [q, setQ] = useState2('');
-  const [filters, setFilters] = useState2({
+// The one place a filters object is built. Every facet the list filter reads
+// (including `company`) must be present, or `filters.<facet>.size` throws and
+// React unmounts the whole view — which is how Esc used to blank the page.
+function EMPTY_FILTERS() {
+  return {
     type: new Set(), rmt: new Set(), visa: null, cohort: new Set(['26']), size: new Set(),
     company: new Set(),
-  });
+  };
+}
+
+// Percentage of `part` in `whole`, or '—' when there is nothing to divide by.
+function pct(part, whole) {
+  return whole > 0 ? `${Math.round((100 * part) / whole)}%` : '—';
+}
+
+// Hiring tab entry point. When jobs couldn't be fetched at all, say so (with a
+// retry) rather than rendering a dashboard of zeros that looks like "no jobs".
+function DashboardDirection() {
+  if (window.NGJOBS_ERROR) return <JobsLoadError reason={window.NGJOBS_ERROR} />;
+  return <DashboardView />;
+}
+
+function JobsLoadError({ reason }) {
+  return (
+    <div role="alert" style={{
+      height: '100%', background: BBG.bg, color: BBG.ink, padding: '32px 24px',
+      fontFamily: '"JetBrains Mono", ui-monospace, monospace', fontSize: 12, lineHeight: 1.6,
+    }}>
+      <div style={{ color: BBG.hot, fontWeight: 700, letterSpacing: 0.8 }}>ERR · COULDN'T LOAD JOBS</div>
+      <div style={{ color: BBG.dim, marginTop: 6 }}>
+        jobs-index.json and jobs.json both failed to load{reason ? ` (${reason})` : ''}.
+      </div>
+      <div style={{ color: BBG.dim }}>This is usually a network hiccup or a deploy in progress.</div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 16 }}>
+        <button onClick={() => window.location.reload()} style={{
+          background: BBG.acc, color: '#000', border: 'none', padding: '8px 14px', minHeight: 36,
+          fontFamily: 'inherit', fontWeight: 700, letterSpacing: 0.5, cursor: 'pointer',
+        }}>RETRY ↻</button>
+        <a href="https://github.com/ambicuity/New-Grad-Jobs#readme" target="_blank" rel="noopener noreferrer" style={{
+          border: `1px solid ${BBG.rule2}`, color: BBG.ink, padding: '8px 14px', textDecoration: 'none',
+        }}>README ↗</a>
+      </div>
+    </div>
+  );
+}
+
+function DashboardView() {
+  const [q, setQ] = useState2('');
+  const [filters, setFilters] = useState2(EMPTY_FILTERS);
   const [sortKey, setSortKey] = useState2('posted');
   const [sortDir, setSortDir] = useState2(1);
-  const [selectedId, setSelectedId] = useState2(NGJOBS[5].id);
+  const [selectedId, setSelectedId] = useState2(() => NGJOBS[0]?.id ?? null);
   // Saved-job IDs are user-driven (press S, or click the ☆ in a row). The
   // previous seed (`['ant-mlr-26','crs-swe-26']`) was synthetic-mock cruft
   // and never matched any real id in `docs/jobs.json`, so toggling the
@@ -92,7 +135,9 @@ function DashboardDirection() {
     if (!filtered.find(j => j.id === selectedId) && filtered[0]) setSelectedId(filtered[0].id);
   }, [filtered, selectedId]);
 
-  const selected = NGJOBS.find(j => j.id === selectedId) || filtered[0];
+  // null when there are no jobs at all (or none match) — every consumer below
+  // must cope with that.
+  const selected = NGJOBS.find(j => j.id === selectedId) || filtered[0] || null;
 
   const toggleSave = (id) => setSaved(s => {
     const next = new Set(s); next.has(id) ? next.delete(id) : next.add(id); return next;
@@ -111,9 +156,10 @@ function DashboardDirection() {
       if (e.key === 'Escape') {
         if (helpOpen) { setHelpOpen(false); return; }
         if (inInput) { e.target.blur(); return; }
-        // clear filters + search
-        setFilters({ type:new Set(), rmt:new Set(), visa:null, cohort:new Set(['26']), size:new Set() });
+        // clear filters + search + saved-only view
+        setFilters(EMPTY_FILTERS());
         setQ('');
+        setSavedOnly(false);
         flashToast('filters cleared', BBG.dim);
         return;
       }
@@ -125,7 +171,7 @@ function DashboardDirection() {
         e.preventDefault(); setSelectedId(filtered[idx + 1].id);
       } else if ((e.key === 'ArrowUp' || e.key === 'k') && idx > 0) {
         e.preventDefault(); setSelectedId(filtered[idx - 1].id);
-      } else if (e.key === 's' || e.key === 'F3') {
+      } else if ((e.key === 's' || e.key === 'F3') && selectedId != null) {
         e.preventDefault();
         toggleSave(selectedId);
         flashToast(saved.has(selectedId) ? 'unsaved' : '★ saved', BBG.acc);
@@ -185,7 +231,7 @@ function DashboardDirection() {
         <Stat label="NEW TODAY" value={NGJOBS.filter(j => /^\dh|^1d|^2d/.test(j.posted)).length} delta="+5"   deltaC={BBG.ok} />
         <Stat label="CLOSING <7d" value={NGJOBS.filter(j => daysLeft(j.dl) < 7).length} delta="⚠" deltaC={BBG.hot} />
         <Stat label="MED COMP" value="$170k" delta="+2.1%" deltaC={BBG.ok} />
-        <Stat label="VISA✓"    value={`${Math.round(100*NGJOBS.filter(j=>j.visa).length/NGJOBS.length)}%`} delta="" deltaC={BBG.dim} />
+        <Stat label="VISA✓"    value={pct(NGJOBS.filter(j => j.visa).length, NGJOBS.length)} delta="" deltaC={BBG.dim} />
         {!isMobile && <div style={{ marginLeft: 'auto', color: BBG.dim, fontSize: 11 }}>HIRING · live job feed</div>}
       </div>
 
@@ -446,7 +492,7 @@ function DashboardDirection() {
 
         {/* ─ Right: detail card (desktop inline; on mobile it's a full-screen overlay below) ─ */}
         {!isMobile && (
-          <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => toggleSave(selected.id)} />
+          <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => selected && toggleSave(selected.id)} />
         )}
       </div>
 
@@ -471,7 +517,7 @@ function DashboardDirection() {
             }}>{selected.co} · {selected.role}</span>
           </div>
           <div style={{ flex: 1, overflow: 'auto', minHeight: 0 }}>
-            <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => toggleSave(selected.id)} />
+            <DashboardDetail job={selected} saved={saved.has(selected?.id)} onSave={() => selected && toggleSave(selected.id)} />
           </div>
         </div>
       )}
@@ -668,7 +714,7 @@ function extractRequirements(desc) {
 function DashboardDetail({ job, saved, onSave }) {
   // Hook runs before the early return so hook order stays stable.
   const desc = useJobDescription(job);
-  if (!job) return null;
+  if (!job) return <DetailEmpty />;
   const days = daysLeft(job.dl);
   const requirements = extractRequirements(desc);
   return (
@@ -761,6 +807,20 @@ function DashboardDetail({ job, saved, onSave }) {
           padding: '10px 14px', fontFamily: 'inherit', cursor: 'pointer',
         }}>REFER A FRIEND</button>
       </div>
+    </div>
+  );
+}
+
+// Right pane when nothing is selected: an empty feed, or filters that match
+// nothing. Keeps the 3-column layout intact instead of collapsing the column.
+function DetailEmpty() {
+  const hasJobs = NGJOBS.length > 0;
+  return (
+    <div style={{ padding: '18px 16px', color: BBG.dim, fontSize: 11.5, lineHeight: 1.6 }}>
+      <div style={{ color: BBG.acc, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>DETAIL</div>
+      {hasJobs
+        ? <div>No job selected. Clear filters with <span style={{ color: BBG.ink }}>Esc</span> or pick a row.</div>
+        : <div>No open roles in the feed right now. The scraper runs about every 30 minutes.</div>}
     </div>
   );
 }

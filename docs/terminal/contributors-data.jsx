@@ -146,14 +146,21 @@ function writeGhCache(data) {
   try { localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), data })); } catch {}
 }
 
+// A slow or hanging api.github.com must not keep the contributors view on its
+// loading state forever — give up and fall back to placeholders after this.
+const GH_TIMEOUT_MS = 6000;
+
 async function fetchGitHubMeta() {
   const cached = readGhCache();
   if (cached) return cached;
+  const ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+  const timer = ctrl ? setTimeout(() => ctrl.abort(), GH_TIMEOUT_MS) : null;
+  const opts = { headers: { Accept: 'application/vnd.github+json' }, signal: ctrl ? ctrl.signal : undefined };
   try {
     const [repoRes, contribRes, prsRes] = await Promise.all([
-      fetch(`${GH_API}/repos/${GH_REPO}`,                       { headers: { Accept: 'application/vnd.github+json' } }),
-      fetch(`${GH_API}/repos/${GH_REPO}/contributors?per_page=100`, { headers: { Accept: 'application/vnd.github+json' } }),
-      fetch(`${GH_API}/search/issues?q=repo:${GH_REPO}+type:pr+state:open&per_page=1`, { headers: { Accept: 'application/vnd.github+json' } }),
+      fetch(`${GH_API}/repos/${GH_REPO}`,                       opts),
+      fetch(`${GH_API}/repos/${GH_REPO}/contributors?per_page=100`, opts),
+      fetch(`${GH_API}/search/issues?q=repo:${GH_REPO}+type:pr+state:open&per_page=1`, opts),
     ]);
     if (!repoRes.ok || !contribRes.ok) {
       console.warn('[terminal] github api unavailable, falling back to placeholders');
@@ -171,13 +178,17 @@ async function fetchGitHubMeta() {
         prs_open: prs.total_count          ?? 0,
         license:  (repo.license && repo.license.spdx_id) || 'MIT',
       },
-      contribs: contribs.map(c => ({ login: c.login, contributions: c.contributions })),
+      contribs: (Array.isArray(contribs) ? contribs : [])
+        .filter(c => c && typeof c.login === 'string')
+        .map(c => ({ login: c.login, contributions: c.contributions })),
     };
     writeGhCache(data);
     return data;
   } catch (err) {
     console.warn('[terminal] github api fetch failed:', err.message);
     return null;
+  } finally {
+    if (timer) clearTimeout(timer);
   }
 }
 
