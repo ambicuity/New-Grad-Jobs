@@ -9,16 +9,19 @@ Tests cover the filter_jobs() function's handling of:
 - Deduplication
 """
 
-import sys
+import json
 import os
-from datetime import datetime, timedelta, timezone
-from typing import Any, Dict
+import sys
+from datetime import UTC, datetime, timedelta
+from typing import Any
 
+import pytest
 import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal
+from ngj.dedup import deduplicate_jobs  # noqa: E402
+from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
 
 
 def _make_job(
@@ -32,7 +35,7 @@ def _make_job(
 ):
     """Factory helper to create minimal valid job dicts for tests."""
     if posted_at is None:
-        posted_at = datetime.now(timezone.utc).isoformat()
+        posted_at = datetime.now(UTC).isoformat()
     return {
         "title": title,
         "company": company,
@@ -62,23 +65,20 @@ class TestFilterJobsDateRecency:
     """Filter by posting date."""
 
     def test_recent_job_passes(self):
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=2)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=2)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
 
     def test_old_job_filtered_out(self):
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=30)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
     def test_job_with_no_date_passes(self):
         """Jobs with missing dates should not crash the filter."""
         jobs = [_make_job(posted_at=None)]
-        try:
-            filter_jobs(jobs, _default_config())
-            # Depending on implementation, may pass or be excluded — just don't crash
-        except Exception as e:
-            assert False, f"filter_jobs raised an exception on None date: {e}"
+        # Depending on implementation, may pass or be excluded — just don't crash
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
 
 class TestFilterJobsKeywords:
@@ -355,15 +355,21 @@ class TestFilterJobsLocation:
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
-    def test_empty_location_filtered_out(self):
-        """Jobs with empty location should be filtered out."""
+    def test_empty_location_is_unknown_and_kept(self):
+        """An empty location is unknown, not foreign: the job is kept."""
         jobs = [_make_job(location="")]
         result = filter_jobs(jobs, _default_config())
-        assert len(result) == 0
+        assert len(result) == 1
 
-    def test_none_location_filtered_out(self):
-        """Jobs with None location should be filtered out."""
+    def test_none_location_is_unknown_and_kept(self):
+        """A missing (None) location is unknown, not foreign: the job is kept."""
         jobs = [_make_job(location=None)]
+        result = filter_jobs(jobs, _default_config())
+        assert len(result) == 1
+
+    def test_foreign_remote_location_filtered_out(self):
+        """'remote' no longer whitelists a foreign country."""
+        jobs = [_make_job(location="Remote - Germany")]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
@@ -458,7 +464,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
@@ -468,7 +474,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -478,7 +484,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer",  # No new grad signal
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -488,7 +494,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Junior Analyst",  # 'junior' is weak, 'analyst' not in track_signals
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -498,7 +504,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=30)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -508,7 +514,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="London, UK",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -556,7 +562,7 @@ class TestFilterJobsConfigVariations:
         """Custom max_age_days should be respected."""
         config = _default_config()
         config['filtering']['max_age_days'] = 30
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=20)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=20)).isoformat())]
         result = filter_jobs(jobs, config)
         assert len(result) == 1, "Job should pass with extended max_age_days"
 
@@ -574,21 +580,19 @@ class TestFilterJobsConfigVariations:
         result = filter_jobs(jobs, config)
         assert len(result) == 1, "Should work with 'filters' key"
 
-    def test_missing_filtering_key_uses_defaults(self):
-        """If 'filtering' key is missing entirely, should use default exclusion signals."""
-        config = {}
+    def test_missing_filtering_key_raises_keyerror(self):
+        """A config with no 'filtering'/'filters' block is invalid: new_grad_signals is required.
+
+        Pins current behavior explicitly instead of swallowing the error, so a
+        silent change (e.g. crashing differently, or quietly passing everything)
+        is caught.
+        """
         jobs = [
-            _make_job(title="New Grad Software Engineer"),  # Should pass
-            _make_job(title="Senior New Grad"),  # Should fail - 'senior' in defaults
+            _make_job(title="New Grad Software Engineer"),
+            _make_job(title="Senior New Grad"),
         ]
-        # This will likely fail since new_grad_signals is required, but let's test exclusion defaults
-        try:
-            result = filter_jobs(jobs, config)
-            # If it doesn't crash, verify senior is still excluded
-            assert all('senior' not in job['title'].lower() for job in result)
-        except (KeyError, AttributeError):
-            # Expected if config is incomplete
-            pass
+        with pytest.raises(KeyError, match="new_grad_signals"):
+            filter_jobs(jobs, {})
 
 
 class TestFilterJobsEdgeCases:
@@ -643,20 +647,14 @@ class TestFilterJobsEdgeCases:
     def test_unicode_in_title(self):
         """Unicode characters in title should not crash filter."""
         jobs = [_make_job(title="软件工程师 New Grad Software Engineer")]
-        try:
-            result = filter_jobs(jobs, _default_config())
-            # Should either pass or fail gracefully, not crash
-        except Exception as e:
-            assert False, f"Unicode in title caused crash: {e}"
+        # Should either pass or fail gracefully, not crash
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
     def test_very_long_title(self):
         """Very long title should not crash filter."""
         long_title = "A" * 5000 + " Software Engineer New Grad"
         jobs = [_make_job(title=long_title)]
-        try:
-            result = filter_jobs(jobs, _default_config())
-        except Exception as e:
-            assert False, f"Long title caused crash: {e}"
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
     def test_filter_order_exclusion_first(self):
         """Exclusion signals should be checked FIRST, before other filters.
@@ -665,7 +663,7 @@ class TestFilterJobsEdgeCases:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad 2025",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0, "Exclusion should happen first"
@@ -689,18 +687,18 @@ class TestGraduateCohortSignals:
     POSTED_AT = "2026-08-12T12:00:00"
     MAX_AGE_DAYS = 36500
 
-    def _live_config(self) -> Dict[str, Any]:
+    def _live_config(self) -> dict[str, Any]:
         """Load the shipped config with recency widened out of the way.
 
         Returns a copy — the caller must not mutate what the YAML load returned,
         since every test in this class reads the same file.
         """
         root = os.path.join(os.path.dirname(__file__), '..')
-        with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
             config = yaml.safe_load(f)
         return {**config, 'filtering': {**config['filtering'], 'max_age_days': self.MAX_AGE_DAYS}}
 
-    def _job(self, title: str, location: str = "San Jose, California, United States") -> Dict[str, Any]:
+    def _job(self, title: str, location: str = "San Jose, California, United States") -> dict[str, Any]:
         """Build a job fixture with a fixed posting date."""
         return _make_job(title=title, location=location, posted_at=self.POSTED_AT)
 
@@ -749,3 +747,89 @@ class TestGraduateCohortSignals:
         jobs = [self._job("Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer")]
         result = filter_jobs(jobs, self._live_config())
         assert len(result) == 0
+
+
+class TestExclusionSignalWordBoundaries:
+    """Exclusion signals match whole words, not substrings of other words.
+
+    Substring matching dropped legitimate entry-level titles: 'intern' killed
+    "Internal Tools"/"International", 'lead' killed "Leadership Development
+    Program", and 'manager' killed "Associate Product Manager". These tests run
+    against the shipped config.yml list so every intended exclusion is guarded.
+    """
+
+    @staticmethod
+    def _live_signals() -> list:
+        root = os.path.join(os.path.dirname(__file__), '..')
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
+            return yaml.safe_load(f)['filtering']['exclusion_signals']
+
+    @pytest.mark.parametrize("title", [
+        "Software Engineer, Internal Tools - New Grad",
+        "International Payments Software Engineer, New Grad",
+        "Leadership Development Program - Software Engineer 2026",
+        "Associate Product Manager, New Grad",
+        "Associate Technical Program Manager, University Grad",
+        "Rotational Program - Engineering Leadership Track",
+        "Computer Architecture Engineer, New Grad",
+        "Software Engineer, Principality Payments",
+        "Software Engineer I (Staffing Platform)",
+    ])
+    def test_non_senior_titles_not_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is False
+
+    @pytest.mark.parametrize("title", [
+        "Senior Software Engineer",
+        "Sr. Software Engineer",
+        "Sr Software Engineer",
+        "Staff Engineer",
+        "Principal Engineer",
+        "Lead Software Engineer",
+        "Tech Lead, Payments",
+        "Team Leads - Platform",
+        "Engineering Manager",
+        "Product Manager, Payments",
+        "Director of Engineering",
+        "VP of Engineering",
+        "Vice President, Engineering",
+        "Head of Platform",
+        "Software Architect",
+        "Solutions Architects",
+        "Distinguished Engineer",
+        "Engineering Fellow",
+        "Software Engineer (10+ years)",
+        "Backend Engineer, 5+ years experience",
+        "Software Engineer Intern",
+        "Software Engineering Internship",
+        "Summer Internships 2027 - SWE",
+        "Interns - Data Science 2027",
+        "Machine Learning Engineer Intern (AML-Ark-US) - 2027 Summer",
+        "Software Engineer - Intern/Co-op",
+        "Software Engineer (Internship)",
+    ])
+    def test_senior_and_intern_titles_still_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is True
+
+    def test_filter_jobs_keeps_internal_tools_new_grad(self):
+        jobs = [_make_job(title="Software Engineer, Internal Tools - New Grad")]
+        assert len(filter_jobs(jobs, _default_config())) == 1
+
+    def test_filter_jobs_keeps_leadership_development_program(self):
+        jobs = [_make_job(title="Software Engineer New Grad - Leadership Development Program")]
+        assert len(filter_jobs(jobs, _default_config())) == 1
+
+    def test_filter_jobs_still_drops_intern(self):
+        jobs = [_make_job(title="Software Engineer Intern, New Grad")]
+        assert len(filter_jobs(jobs, _default_config())) == 0
+
+    def test_published_titles_are_not_newly_excluded(self):
+        """Every title currently on the board must still clear the exclusion list."""
+        root = os.path.join(os.path.dirname(__file__), '..')
+        path = os.path.join(root, 'docs', 'jobs.json')
+        if not os.path.exists(path):
+            pytest.skip("docs/jobs.json not present")
+        with open(path, encoding='utf-8') as f:
+            titles = [job.get('title', '') for job in json.load(f).get('jobs', [])]
+        signals = self._live_signals()
+        newly_excluded = [t for t in titles if is_title_excluded(t, signals)]
+        assert newly_excluded == []

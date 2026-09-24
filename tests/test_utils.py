@@ -1,90 +1,59 @@
 #!/usr/bin/env python3
 '''
-Unit tests for utility functions in scripts/update_jobs.py.
-Tests cover importing get_job_key from update_jobs.py and its behavior in generating consistent keys for job deduplication.
+Unit tests for utility helpers (ngj.dedup.get_job_key, ngj.sources.google, ngj.util).
+Tests cover get_job_key and its behavior in generating consistent keys for job deduplication.
 
 '''
-import pytest
-import sys
-import os
-import math
 import json
-import requests
+import os
+import sys
 import urllib.parse
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
+
+import pytest
+import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import get_job_key, fetch_google_jobs, DEFAULT_GOOGLE_MAX_PAGES, _coerce_positive_int
+from ngj.dedup import get_job_key  # noqa: E402
+from ngj.settings import DEFAULT_GOOGLE_MAX_PAGES  # noqa: E402
+from ngj.sources.google import fetch_google_jobs  # noqa: E402
+from ngj.util import coerce_positive_int as _coerce_positive_int  # noqa: E402
 
-def test_get_job_key_handles_nan()->None:
-    """Test that get_job_key handles NaN values correctly."""
-    job_with_nan = {
-        'company': 'Tech Corp',
-        'title': float('nan'),  #simulating a pandas NaN, eq to a math.nan
-        'url': 'https://example.com'
-    }
-    nan_value = float('nan')
-    assert math.isnan(nan_value), "Test setup error: value is not NaN"
 
-    result = get_job_key(job_with_nan)
-    assert result == "tech corp||https://example.com"
-    assert "|" in result
-    assert "nan" not in result.lower()
+def test_get_job_key_handles_nan_and_inf() -> None:
+    """NaN/Inf fields (pandas/JobSpy) never leak into the key as 'nan'/'inf'."""
+    base = {'company': 'Tech Corp', 'title': 'Engineer', 'url': None, 'location': '', 'source': 'x'}
+    assert get_job_key({**base, 'title': float('nan')}) == get_job_key({**base, 'title': None})
+    assert get_job_key({**base, 'company': float('nan')}) == get_job_key({**base, 'company': ''})
+    assert get_job_key({**base, 'company': float('inf')}) == get_job_key({**base, 'company': ''})
 
-def test_get_job_key_handles_inf()->None:
-    """Test that get_job_key handles Inf values correctly."""
-    job_with_inf = {
-        'company': float('inf'),
-        'title': 'Engineer',
-        'url': 'https://example.com'
-    }
-    inf_value = float('inf')
-    assert math.isinf(inf_value), "Test setup error: value is not Inf"
 
-    result = get_job_key(job_with_inf)
-    assert result == "|engineer|https://example.com"
-    assert "inf" not in result.lower()
+def test_get_job_key_is_a_job_id() -> None:
+    key = get_job_key({'company': None, 'title': float('nan'), 'url': None})
+    assert key.startswith('job_') and len(key) == 24
 
-def test_get_job_key_all_missing()->None:
-    """Test when all fields are either None/NaN."""
-    job_empty = {
-        'company': None,
-        'title': float('nan'),
-        'url': None
-    }
-    result = get_job_key(job_empty)
-    assert result == "||", "Expected empty key for all missing values"
 
-def test_get_job_key_normalizes_strings()->None:
-    """Test that it strips whitespace and handles casing."""
-    job = {
-        'company': '  ACME CORP',
-        'title': 'DevOps Engineer',
-        'url': 'HTTP://LINK.COM'
-    }
-    result = get_job_key(job)
-    assert result == "acme corp|devops engineer|http://link.com"
+def test_get_job_key_normalizes_url_scheme_and_host_case() -> None:
+    a = {'company': '  ACME CORP', 'title': 'DevOps Engineer', 'url': 'HTTP://LINK.COM/Jobs/1'}
+    b = {'company': 'acme corp', 'title': 'devops engineer', 'url': 'http://link.com/Jobs/1/'}
+    assert get_job_key(a) == get_job_key(b)
 
-@pytest.mark.parametrize("job_input, expected_key", [
-    # Test case: Missing key
-    ({'title': 'SWE', 'url': 'http://a.com'}, '|swe|http://a.com'),
-    # Test case: Empty string value
-    ({'company': '', 'title': 'SWE', 'url': 'http://a.com'}, '|swe|http://a.com'),
-    # Test case: Unicode characters
-    ({'company': 'Stripe™', 'title': 'Ingénieur Logiciel', 'url': 'http://a.com'}, 'stripe™|ingénieur logiciel|http://a.com'),
-    # Test case: Integer value (should be converted to string)
-    ({'company': 'Company', 'title': 123, 'url': 'http://a.com'}, 'company|123|http://a.com'),
-    # Test case: float value (should be converted to string)
-    ({'company': 'Company', 'title': 123.45, 'url': 'http://a.com'}, 'company|123.45|http://a.com'),
+
+@pytest.mark.parametrize("job_input", [
+    {'title': 'SWE', 'url': 'http://a.com'},
+    {'company': '', 'title': 'SWE', 'url': 'http://a.com'},
+    {'company': 'Stripe™', 'title': 'Ingénieur Logiciel', 'url': 'http://a.com'},
+    {'company': 'Company', 'title': 123, 'url': 'http://a.com'},
+    {'company': 'Company', 'title': 123.45, 'url': 'http://a.com'},
 ])
-def test_get_job_key_edge_cases(job_input: dict, expected_key: str) -> None:
-    """Test get_job_key with various edge cases based on style guide recommendations."""
-    assert get_job_key(job_input) == expected_key
+def test_get_job_key_with_url_depends_only_on_source_and_url(job_input: dict) -> None:
+    assert get_job_key(job_input) == get_job_key({'url': 'http://a.com'})
+
 
 # ---------------------------------------------------------------------------
 
-# Testing for update_jobs.py - fetch_google_jobs function
+# Testing for ngj.sources.google - fetch_google_jobs function
 # Helper -
 def create_mock_google_html(jobs_array) -> str:
     """Build a minimal HTML snippet that satisfies the scraper's regex + find_jobs_array.
@@ -110,14 +79,14 @@ def test_fetch_google_jobs_success2() -> None:
     # Ensure this matches the scraper's expected script format EXACTLY
     mock_html = f"<script>AF_initDataCallback({{key: 'ds:1', hash: '1', data:{json.dumps([mock_jobs])}}});</script>"
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock()
         mock_response.status_code = 200
         mock_response.text = mock_html
         mock_get.return_value = mock_response
 
         # IMPORTANT: Check if the case sensitivity of the search term matters
-        results = fetch_google_jobs(["early software engineer"], max_pages=1)
+        results = list(fetch_google_jobs(["early software engineer"], max_pages=1).jobs)
         assert len(results) == 1
         assert results[0]['title'] == "early Software Engineer"
         assert results[0]['company'] == "Google"
@@ -128,59 +97,59 @@ def test_fetch_google_jobs_success2() -> None:
 
 def test_fetch_google_jobs_rate_limited() -> None:
     """Test that it handles rate limiting (403, 429) correctly."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock()
         mock_response.status_code = 429
         mock_get.return_value = mock_response
         mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
 
-        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0)
+        results = list(fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0).jobs)
         assert len(results) == 0
 
 def test_fetch_google_jobs_403_result() -> None:
     """Test that it handles rate limiting (403) correctly."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock()
         mock_response.status_code = 403
         mock_get.return_value = mock_response
         mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
 
-        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0)
+        results = list(fetch_google_jobs(["software engineer"], max_pages=1, max_retries=0).jobs)
         assert len(results) == 0
 
 def test_fetch_google_jobs_empty_results() -> None:
     """Test handling of no jobs found."""
     mock_html = "<html><body><script>AF_initDataCallback({key: 'ds:1', hash: '123', data:[None, None, [[]]]});</script></body></html>"
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock()
         mock_response.status_code = 200
         mock_response.text = mock_html
         mock_get.return_value = mock_response
 
-        results = fetch_google_jobs(["nonexistent job"], max_pages=1)
+        results = list(fetch_google_jobs(["nonexistent job"], max_pages=1).jobs)
         assert len(results) == 0
 
 def test_fetch_google_jobs_regex_failure() -> None:
     """Test behavior when regex fails to find the data script."""
     mock_html = "<html><body>Some random HTML without the script tag</body></html>"
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock(status_code=200, text=mock_html)
         mock_get.return_value = mock_response
 
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results) == 0 # Would want zero to not muddy results.
 
 def test_fetch_google_jobs_invalid_json() -> None:
     """Test handling of invalid JSON in the script tag."""
     mock_html = "<script>AF_initDataCallback({key: 'ds:1', hash: '1', data: {invalid json} });</script>"
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock(status_code=200, text=mock_html)
         mock_get.return_value = mock_response
 
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results) == 0 # Invalid would mean wrong area maybe, would not want it to go further
 
 # ---------------------------------------------------------------------------
@@ -195,14 +164,14 @@ def test_fetch_google_jobs_pagination() -> None:
     html2 = create_mock_google_html(page2_jobs)
     html3 = create_mock_google_html([])  # Empty → stops pagination
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.side_effect = [
             MagicMock(status_code=200, text=html1),
             MagicMock(status_code=200, text=html2),
             MagicMock(status_code=200, text=html3),
         ]
 
-        results = fetch_google_jobs(["software engineer"], max_pages=3)
+        results = list(fetch_google_jobs(["software engineer"], max_pages=3).jobs)
         assert len(results) == 2
         assert results[0]['title'] == "Title 1"
         assert results[1]['title'] == "Title 2"
@@ -216,12 +185,12 @@ def test_fetch_google_jobs_max_pages_respected() -> None:
         job = [[job_id, f"Title {job_id}", url, None, None, None, None, "Google", None, [["Loc"]], [None, "Desc"], None, [1679212800]]]
         return create_mock_google_html(job)
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.side_effect = [
             MagicMock(status_code=200, text=make_page("10001", "https://url1")),
             MagicMock(status_code=200, text=make_page("10002", "https://url2")),
         ]
-        results = fetch_google_jobs(["software engineer"], max_pages=2)
+        results = list(fetch_google_jobs(["software engineer"], max_pages=2).jobs)
         assert len(results) == 2
         assert mock_get.call_count == 2  # Must not request a 3rd page
 
@@ -242,7 +211,7 @@ def test_fetch_google_jobs_multiple_search_terms() -> None:
     html_empty = create_mock_google_html([])
     html2 = create_mock_google_html(term2_jobs)
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.side_effect = [
             MagicMock(status_code=200, text=html1),       # Term 1 Page 1
             MagicMock(status_code=200, text=html_empty),  # Term 1 Page 2 → stops
@@ -250,7 +219,7 @@ def test_fetch_google_jobs_multiple_search_terms() -> None:
             MagicMock(status_code=200, text=html_empty),  # Term 2 Page 2 → stops
         ]
 
-        results = fetch_google_jobs(["term1", "term2"], max_pages=2)
+        results = list(fetch_google_jobs(["term1", "term2"], max_pages=2).jobs)
         assert len(results) == 2  # url1 deduplicated; url2 unique
         assert results[0]['url'] == "https://url1"
         assert results[1]['url'] == "https://url2"
@@ -265,9 +234,9 @@ def test_fetch_google_jobs_multiple_locations() -> None:
     jobs = [["10001", "Title 1", "https://url1", None, None, None, None, "Google", None, [["New York, NY"], ["San Francisco, CA"]], [None, "Desc 1"], None, [1679212800]]]
     html = create_mock_google_html(jobs)
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['location'] == "New York, NY | San Francisco, CA"
 
 
@@ -279,9 +248,9 @@ def test_fetch_google_jobs_invalid_timestamp() -> None:
 
     html = create_mock_google_html([job_no_ts, job_empty_ts, job_str_ts])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results) == 3
         assert results[0]['posted_at'] == ""
         assert results[1]['posted_at'] == ""
@@ -296,9 +265,9 @@ def test_fetch_google_jobs_description_whitespace_normalization() -> None:
     job = ["10001", "Title 1", "https://url1", None, None, None, None, "Google", None, [["Loc"]], [None, raw_desc], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['description'] == "Line 1 Line 2 Extra Spaces"
 
 
@@ -319,9 +288,9 @@ def test_fetch_google_jobs_description_html_stripping() -> None:
     inner_json_escaped = inner_json.replace("<", r"\u003c").replace(">", r"\u003e")
     mock_html = f"AF_initDataCallback({{key: 'ds:1', hash: 'xyz', data:{inner_json_escaped}}});</script>"
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=mock_html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         # HTML tags stripped, whitespace collapsed
         assert results[0]['description'] == "Intro Bullet 1 Bullet 2 End"
 
@@ -332,9 +301,9 @@ def test_fetch_google_jobs_description_truncated() -> None:
     job = ["10001", "Title 1", "https://url1", None, None, None, None, "Google", None, [["Loc"]], [None, long_desc], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results[0]['description']) == 500
 
 
@@ -343,9 +312,9 @@ def test_fetch_google_jobs_link_fallback() -> None:
     job = ["98765", "Title 1", None, None, None, None, None, "Google", None, [["Loc"]], [None, "Desc"], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['url'] == "https://www.google.com/about/careers/applications/jobs/results/98765"
 
 
@@ -354,9 +323,9 @@ def test_fetch_google_jobs_subsidiary_company_name() -> None:
     job = ["10001", "ML Engineer", "https://url1", None, None, None, None, "DeepMind", None, [["London"]], [None, "Desc"], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['company'] == "DeepMind"
 
 
@@ -365,9 +334,9 @@ def test_fetch_google_jobs_missing_company_defaults_to_google() -> None:
     job = ["10001", "SWE", "https://url1", None, None, None, None, None, None, [["Loc"]], [None, "Desc"], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['company'] == "Google"
 
 
@@ -376,12 +345,12 @@ def test_fetch_google_jobs_missing_fields() -> None:
     job = ["10001", "Software Engineer", "https://url1"]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert len(results) == 1
         assert results[0]['company'] == "Google"   # Default when index 7 absent
-        assert results[0]['location'] == "Remote"  # Default when index 9 absent
+        assert results[0]['location'] == ''  # unknown when index 9 absent (not assumed Remote)
         assert results[0]['description'] == ""
         assert results[0]['posted_at'] == ""
 
@@ -391,9 +360,9 @@ def test_fetch_google_jobs_source_field() -> None:
     job = ["10001", "SWE", "https://url1", None, None, None, None, "Google", None, [["Loc"]], [None, "Desc"], None, [1679212800]]
     html = create_mock_google_html([job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
         assert results[0]['source'] == "Google Careers"
 
 
@@ -402,23 +371,23 @@ def test_fetch_google_jobs_source_field() -> None:
 
 def test_fetch_google_jobs_network_timeout() -> None:
     """Test that a Timeout exception on all retries returns an empty list."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.side_effect = requests.exceptions.Timeout
-        results = fetch_google_jobs(["term"], max_pages=1, max_retries=0)
+        results = list(fetch_google_jobs(["term"], max_pages=1, max_retries=0).jobs)
         assert results == []
 
 
 def test_fetch_google_jobs_network_request_exception() -> None:
     """Test that a generic RequestException on all retries returns an empty list."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.side_effect = requests.exceptions.RequestException("connection error")
-        results = fetch_google_jobs(["term"], max_pages=1, max_retries=0)
+        results = list(fetch_google_jobs(["term"], max_pages=1, max_retries=0).jobs)
         assert results == []
 
 
 def test_fetch_google_jobs_404_fail_fast() -> None:
     """Test that it fails fast on 404 (breaks retry loop)."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_response = MagicMock()
         mock_response.status_code = 404
         # Configure the mock response and the HTTPError with the response object
@@ -426,7 +395,7 @@ def test_fetch_google_jobs_404_fail_fast() -> None:
         mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
 
         # max_retries=2 means it could try 3 times, but it should stop after 1
-        results = fetch_google_jobs(["software engineer"], max_pages=1, max_retries=2)
+        results = list(fetch_google_jobs(["software engineer"], max_pages=1, max_retries=2).jobs)
         assert len(results) == 0
         assert mock_get.call_count == 1  # Should NOT retry on 404
 
@@ -440,9 +409,9 @@ def test_fetch_google_jobs_parsing_error() -> None:
 
     html = create_mock_google_html([valid_job, malformed_job])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
 
         # Should have 1 job (the valid one)
         assert len(results) == 1
@@ -470,9 +439,9 @@ def test_fetch_google_jobs_invalid_field_types() -> None:
     mock_jobs = [job_valid, job_none_title, job_int_title, job_int_link, job_int_company, job_empty_title]
     html = create_mock_google_html(mock_jobs)
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=html)
-        results = fetch_google_jobs(["term"], max_pages=1)
+        results = list(fetch_google_jobs(["term"], max_pages=1).jobs)
 
         # Expected:
         # - job_valid: OK
@@ -500,7 +469,7 @@ def test_fetch_google_jobs_url_shape() -> None:
     # We don't care about the content, just the URL generated.
     mock_html = create_mock_google_html([])
 
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         mock_get.return_value = MagicMock(status_code=200, text=mock_html)
 
         # We need to pass search_terms as a list
@@ -524,7 +493,7 @@ def test_fetch_google_jobs_url_shape() -> None:
 
 def test_fetch_google_jobs_hard_block_abort() -> None:
     """Regression test for ensuring 403/429 stops all subsequent search term requests."""
-    with patch('update_jobs.limited_get') as mock_get:
+    with patch('ngj.http.limited_get') as mock_get:
         # First request returns 429
         mock_response_429 = MagicMock(status_code=429)
         mock_response_429.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response_429)
@@ -533,7 +502,7 @@ def test_fetch_google_jobs_hard_block_abort() -> None:
         mock_get.side_effect = [mock_response_429, MagicMock(status_code=200, text="should not be called")]
 
         # Call with two search terms
-        results = fetch_google_jobs(["term1", "term2"], max_pages=1, max_retries=0)
+        results = list(fetch_google_jobs(["term1", "term2"], max_pages=1, max_retries=0).jobs)
 
         assert len(results) == 0
         # Should only have 1 call total (for term1), and then abort.
@@ -541,64 +510,15 @@ def test_fetch_google_jobs_hard_block_abort() -> None:
         assert "term1" in mock_get.call_args_list[0][0][0]
 
 @pytest.mark.parametrize("value", [0, -1, "0", "abc", True, 3.5])
-def test_coerce_google_max_pages_rejects_invalid_values(value, capsys):
+def test_coerce_google_max_pages_rejects_invalid_values(value, caplog):
     # This tests the underlying helper function with the Google-specific name
-    result = _coerce_positive_int(value, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES")
+    with caplog.at_level("WARNING"):
+        result = _coerce_positive_int(value, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES")
     assert result == DEFAULT_GOOGLE_MAX_PAGES
-    assert "Invalid apis.google.MAX_PAGES" in capsys.readouterr().out
+    assert "Invalid apis.google.MAX_PAGES" in caplog.text
 
 
-def test_coerce_google_max_pages_accepts_positive_string_value(capsys):
-    assert _coerce_positive_int("5", DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES") == 5
-    assert capsys.readouterr().out == ""
-
-
-def test_main_coerces_google_max_pages():
-    """Mock main() to verify it correctly calls _coerce_positive_int for Google."""
-    from update_jobs import main
-
-    # Mock config that main() loads
-    mock_config = {
-        'worker_pools': {},
-        'apis': {
-            'google': {
-                'enabled': True,
-                'search_terms': ['test'],
-                'MAX_PAGES': 'invalid'
-            },
-            'workday': {'enabled': False},
-            'greenhouse': {'companies': []},
-            'lever': {'companies': []}
-        },
-        'filtering': {}
-    }
-
-    with (
-        patch('update_jobs.load_config', return_value=mock_config),
-        patch('update_jobs.ThreadPoolExecutor'),
-        patch('update_jobs._coerce_positive_int', side_effect=_coerce_positive_int) as mock_coerce,
-        patch('update_jobs.print'), # Silence prints
-        patch('update_jobs.save_market_history'), # Prevent docs/ impact
-        patch('update_jobs.predict_hiring_trends'),
-        patch('update_jobs.generate_jobs_json'),
-        patch('update_jobs.write_site_artifacts'),  # Prevent docs/ writes
-        patch('update_jobs.generate_rss_feed'),
-        patch('update_jobs.generate_health_json'),
-        patch('update_jobs.check_job_url_health'),
-        patch('builtins.open', new_callable=MagicMock), # Prevent writing files
-        patch('os.makedirs'),
-    ):
-        # We need to catch SystemExit if main fails due to missing files (README etc)
-        # But we only care about the coercion call
-        try:
-            main()
-        except SystemExit as exc:
-            # main() can exit in this mocked flow; we only care that coercion was invoked.
-            assert exc.code in (None, 0, 1)
-
-    # Check if _coerce_positive_int was called for Google MAX_PAGES
-    # It might be called multiple times (for Workday too), so we check call args
-    google_call = next((call for call in mock_coerce.call_args_list if 'apis.google.MAX_PAGES' in call.args), None)
-    assert google_call is not None
-    assert google_call.args[0] == 'invalid'
-    assert google_call.args[1] == DEFAULT_GOOGLE_MAX_PAGES
+def test_coerce_google_max_pages_accepts_positive_string_value(caplog):
+    with caplog.at_level("WARNING"):
+        assert _coerce_positive_int("5", DEFAULT_GOOGLE_MAX_PAGES, "apis.google.MAX_PAGES") == 5
+    assert caplog.text == ""

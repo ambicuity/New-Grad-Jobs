@@ -1,173 +1,215 @@
 name: Update New Grad Jobs
 
+# Scrape → verify → build the site → deploy to GitHub Pages.
+#
+# Generated data (jobs.json, jobs-index.json, descriptions/, feed.xml,
+# health.json) is NOT committed: it is written to site/public/, baked into the
+# Vite build and shipped as the Pages artifact. Only the small persistent state
+# (README.md job tables/counts and data/market-history.json) is committed back.
+# This is the single deployer for the site: site-only changes on main trigger
+# it via the push paths below.
+
 on:
   # Every 30 minutes, offset from :00/:30 — GitHub's documented high-load
-  # window where scheduled runs are delayed or dropped. A run takes ~8-9 min,
-  # so the old */5 schedule could never be honoured (effective cadence was
-  # ~40 min) and just queued wasted triggers. scraper-watchdog.yml re-dispatches
-  # this workflow if data goes stale because a schedule stops firing.
+  # window where scheduled runs are delayed or dropped. scraper-watchdog.yml
+  # re-dispatches this workflow if data goes stale because a schedule stops
+  # firing.
   schedule:
     - cron: '7,37 * * * *'
 
-  # Allow manual trigger
   workflow_dispatch:
 
-  # Only run on push when scraper inputs/config change.
-  # This avoids self-trigger loops from workflow commits to generated docs files on main.
+  # Redeploy when scraper inputs or the site change. The bot's own commits
+  # (README.md, data/) are outside these paths and are pushed with
+  # GITHUB_TOKEN, which never triggers workflows, so there is no loop.
   push:
     branches: [main]
     paths:
-      - scripts/update_jobs.py
+      - scripts/**
       - config.yml
       - requirements.txt
+      - site/**
+      - .github/workflows/update-jobs.yml
 
 # One run at a time. Queue (don't cancel) so an in-flight scrape is never
-# killed minutes before it commits; GitHub keeps at most one pending run.
+# killed minutes before it deploys; GitHub keeps at most one pending run.
 concurrency:
   group: update-jobs
   cancel-in-progress: false
 
 permissions:
   contents: read
+
 jobs:
-  update-jobs:
+  scrape:
     runs-on: ubuntu-latest
-    # Normal runs take ~9 min; the 360-min default would let a hung fetch burn
-    # six runner-hours and block every queued run behind it.
+    # Normal runs take a few minutes; the 360-min default would let a hung
+    # fetch burn six runner-hours and block every queued run behind it.
     timeout-minutes: 25
     permissions:
-      contents: write
-
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # Shallow clone: the job only rebases its one commit onto main, and
-          # full history (~280 MB) made checkout take over a minute per run.
           fetch-depth: 1
+          # No token is left in .git/config while third-party scraper
+          # dependencies run; the persist job pushes with its own token.
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.txt
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+      - name: Install dependencies (hash-locked)
+        run: python -m pip install --require-hashes -r requirements.txt
 
       - name: Run job scraper
-        env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        # Writes site/public/{jobs.json,jobs-index.json,descriptions/,feed.xml,
+        # health.json}, README.md and data/market-history.json. Fails the run
+        # on write errors or a >40% collapse versus the live site.
+        run: python scripts/update_jobs.py
+
+      - name: Verify published artifacts
+        run: python scripts/check_integrity.py
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build site
+        working-directory: site
         run: |
-          cd scripts
-          python update_jobs.py
+          npm ci --no-audit --no-fund
+          npm run build
 
-      - name: Sanity check — verify job output is non-empty
-        run: |
-          JOB_COUNT=$(python -c "import json; data=json.load(open('docs/jobs.json')); print(data['meta']['total_jobs'])")
-          echo "Job count: $JOB_COUNT"
-          if [ "$JOB_COUNT" -eq 0 ]; then
-            echo "::error::Sanity check failed: jobs.json contains 0 jobs. Aborting commit."
-            exit 1
-          fi
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: site/dist
 
-      - name: Publish prediction generation summary
-        run: |
-          python - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          summary_path = os.environ["GITHUB_STEP_SUMMARY"]
-          status_path = Path("docs/predictions-status.json")
-          prediction_path = Path("docs/predictions.json")
-          run_url = f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
-          ref = os.environ.get("GITHUB_REF", "")
-
-          lines = [
-              "## Prediction artifact status",
-              f"- Workflow run: [View run]({run_url})",
-              f"- Ref: `{ref}`",
-              f"- `docs/predictions.json` present: `{prediction_path.exists()}`",
-          ]
-
-          if status_path.exists():
-              try:
-                  status = json.loads(status_path.read_text(encoding="utf-8"))
-                  state = status.get("state", "unknown")
-                  message = status.get("message", "")
-                  lines.append(f"- `docs/predictions-status.json` state: `{state}`")
-                  if message:
-                      lines.append(f"- Status message: {message}")
-              except Exception as exc:
-                  lines.append(f"- Failed to parse `docs/predictions-status.json`: `{exc}`")
-          else:
-              lines.append("- `docs/predictions-status.json` was not produced in this run.")
-
-          if ref != "refs/heads/main":
-              lines.append("- Non-main dispatch mode: commit/push is skipped by design.")
-              lines.append("- Prediction verification artifacts are uploaded for this run.")
-
-          with open(summary_path, "a", encoding="utf-8") as f:
-              f.write("\n".join(lines) + "\n")
-          PY
-
-      - name: Skip commit/push outside main
-        if: github.ref != 'refs/heads/main'
-        run: |
-          echo "artifact verification run; commit/push skipped by design."
-
-      - name: Upload prediction verification artifacts (non-main)
-        if: github.ref != 'refs/heads/main'
+      - name: Upload persistent state
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: prediction-verification-${{ github.run_id }}
-          if-no-files-found: warn
+          name: persistent-state
+          if-no-files-found: error
+          retention-days: 3
           path: |
-            docs/predictions-status.json
-            docs/predictions.json
-            docs/market-history.json
-            docs/jobs.json
-            docs/jobs-index.json
-            docs/health.json
+            README.md
+            data/market-history.json
+
+  deploy:
+    needs: scrape
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+
+  persist:
+    needs: scrape
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 1
+
+      - name: Download persistent state
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: persistent-state
+          path: .
 
       - name: Commit and push changes
-        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull-rebase BEFORE staging, using autostash because the scraper
-          # just modified the files in the working directory (making it dirty).
-          git config pull.rebase true
-          git pull origin main --autostash
+          # Everything this step publishes. Also the scope of the pre-push
+          # conflict-marker guard below.
+          PUBLISHED=(README.md data/market-history.json)
 
-          git add docs/jobs.json docs/jobs-index.json docs/descriptions docs/market-history.json docs/health.json docs/feed.xml README.md
-          if [ -f "docs/predictions.json" ]; then
-            git add docs/predictions.json
-          fi
-          if [ -f "docs/predictions-status.json" ]; then
-            git add docs/predictions-status.json
-          fi
+          # Commit FIRST, then rebase onto the latest main. `git pull
+          # --autostash` exits 0 even when re-applying the stash conflicts, so
+          # conflict markers used to be staged and pushed. A plain rebase of
+          # our commit stops with a non-zero exit instead.
+          git add "${PUBLISHED[@]}"
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
           git commit -m "🤖 Update job listings [skip ci]"
 
-          # Push-only retry loop (rebase already done above).
+          # Anything still dirty was never published; drop it so the rebase
+          # below does not refuse to run on a dirty tree.
+          if ! git diff --quiet; then
+            echo "::notice::Discarding unpublished working-tree changes: $(git diff --name-only | tr '\n' ' ')"
+            git reset --hard --quiet HEAD
+          fi
+
+          # Rebase our single commit onto origin/main. Generated files that
+          # conflict with upstream cannot be merged meaningfully, so abort and
+          # fail; the next scheduled run regenerates them from the new main.
+          sync_with_main() {
+            git fetch origin main || return 1
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Rebase onto origin/main conflicted; nothing pushed. The next scheduled run will regenerate from the new main."
+              return 1
+            fi
+          }
+
+          # Last line of defence: never push conflict markers or broken JSON.
+          verify_publishable() {
+            local rc=0
+            git grep -nE '^(<<<<<<<|>>>>>>>)( |$)' HEAD -- "${PUBLISHED[@]}" || rc=$?
+            if [ "$rc" -ne 1 ]; then
+              # 0 = markers found; >1 = git grep itself failed.
+              echo "::error::Conflict markers in files to publish (or git grep failed, rc=${rc}); refusing to push."
+              return 1
+            fi
+            if ! python3 -m json.tool data/market-history.json > /dev/null; then
+              echo "::error::data/market-history.json is not valid JSON; refusing to push."
+              return 1
+            fi
+          }
+
+          sync_with_main || exit 1
+          verify_publishable || exit 1
+
+          # Push-only retry loop for concurrent-write races.
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
               echo "✅ Push succeeded on attempt ${attempt}"
               exit 0
             fi
             echo "Push rejected on attempt ${attempt} (concurrent write race), retrying..."
-            # Another concurrent scraper may have pushed; fast-forward and retry.
-            git fetch origin main
-            git rebase origin/main
             sleep 5
+            # Another writer pushed; rebase onto it (failing loudly on conflict).
+            sync_with_main || exit 1
+            verify_publishable || exit 1
           done
           echo "::error::Failed to push updated job listings after 3 attempts."
           exit 1

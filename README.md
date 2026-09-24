@@ -1,12 +1,11 @@
 # 2026 New Grad Positions
 
 [![GitHub stars](https://img.shields.io/github/stars/ambicuity/New-Grad-Jobs?style=social)](https://github.com/ambicuity/New-Grad-Jobs/stargazers)
-[![Last Update](https://img.shields.io/badge/updated-every%205%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
-[![Jobs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.total_jobs&label=jobs&color=blue)](https://github.com/ambicuity/New-Grad-Jobs#available-positions)
-[![Company APIs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.configured_company_apis&suffix=%2B&label=company%20APIs&color=6f42c1)](https://ambicuity.github.io/New-Grad-Jobs/health.json)
-[![Sources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fambicuity.github.io%2FNew-Grad-Jobs%2Fhealth.json&query=%24.enabled_sources&label=sources&color=0a7f6f)](https://ambicuity.github.io/New-Grad-Jobs/health.json)
+[![Last Update](https://img.shields.io/badge/updated-every%2030%20min-success)](https://github.com/ambicuity/New-Grad-Jobs/actions)
+[![Jobs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fjobs.riteshrana.engineer%2Fhealth.json&query=%24.total_jobs&label=jobs&color=blue)](https://jobs.riteshrana.engineer/)
+[![Company APIs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fjobs.riteshrana.engineer%2Fhealth.json&query=%24.configured_company_apis&suffix=%2B&label=company%20APIs&color=6f42c1)](https://jobs.riteshrana.engineer/health.json)
+[![Sources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fjobs.riteshrana.engineer%2Fhealth.json&query=%24.enabled_sources&label=sources&color=0a7f6f)](https://jobs.riteshrana.engineer/health.json)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ambicuity/New-Grad-Jobs/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ambicuity/New-Grad-Jobs)
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates.
 
@@ -46,14 +45,14 @@ Experience an advanced career journey with us! 🚀
 ## Sponsored by [Tailr](https://www.tailr.uk)
 
 <a href="https://www.tailr.uk">
-  <img src="docs/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
+  <img src="site/public/assets/tailr-wordmark.png" alt="Tailr — tailor your résumé to each job" width="300">
 </a>
 
 **[Tailr](https://www.tailr.uk) rewrites your résumé for each job posting and shows you the ATS match score** — so you stop getting auto-filtered by the same generic résumé. Free 10/day, no card required. This project is proudly sponsored by Tailr.
 
 ---
 
-<!-- COUNTS:START - counts below are auto-synced from docs/jobs.json by scripts/sync_readme_counts.py -->
+<!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
 ## Browse <!-- COUNT:total -->1871<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
@@ -74,7 +73,7 @@ Experience an advanced career journey with us! 🚀
 
 ---
 
-<!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
+<!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
 > **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **1,871** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
@@ -302,55 +301,57 @@ This repository automatically scrapes new graduate job opportunities from variou
 
 - **Greenhouse**: 170 configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block, Jane Street, Point72).
 - **Ashby**: 72 configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
-- **Workday**: 92 configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants currently returns HTTP 422 due to per-tenant infrastructure variation — tracked in [`docs/Workday-Investigation.md`](docs/Workday-Investigation.md).
+- **Workday**: 92 configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants rejects the public jobs API (HTTP 422/400); per-company errors are reported in [`health.json`](https://jobs.riteshrana.engineer/health.json) — see [`docs/operations.md`](docs/operations.md#a-source-returns-far-fewer-jobs).
 - **Lever**: 7 active boards (Palantir, Spotify, Layup Parts, …) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
-- **JobSpy**: aggregation layer over Indeed and LinkedIn (gated by rate limits).
+- **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
 The complete authoritative source list lives in [`config.yml`](config.yml); the snapshot in [`docs/removed-companies.md`](docs/removed-companies.md) documents why entries were pruned or added.
 
 ### Key Features
 
-- **Terminal-aesthetic frontend (NGJ)** at [ambicuity.github.io/New-Grad-Jobs](https://ambicuity.github.io/New-Grad-Jobs/) — dense tabular layout rendered with JetBrains Mono, sortable by compensation / posted-date / deadline, filterable by role (12 categories: Software Engineering, Frontend, Backend, Mobile, Security, Data Science & ML, Data Engineering, Infrastructure & SRE, Product Management, Quantitative Finance, Hardware, Other), remote / hybrid / onsite, visa sponsorship, cohort, and company size. Hash-routed `#contributors` view shares the same chrome.
-- **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available — currently ~30 % of new-grad listings ship with a `$min–maxk` range. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
-- **Real "About the role"** copy from each posting is published in `docs/descriptions/*.json` (lazy-loaded) and rendered in the detail panel (92 % coverage across Greenhouse / Ashby / Lever).
+- **Terminal-aesthetic frontend (NGJ)** at [jobs.riteshrana.engineer](https://jobs.riteshrana.engineer/) — dense tabular layout rendered with JetBrains Mono, sortable by posted date / compensation / company, filterable by role (12 categories: Software Engineering, Frontend, Backend, Mobile, Security, Data Science & ML, Data Engineering, Infrastructure & SRE, Product Management, Quantitative Finance, Hardware, Other), remote / hybrid / onsite, stated visa or citizenship restrictions, and company tier. A contributors view shares the same chrome, and every open job has its own shareable page (`/job/<job_id>/`).
+- **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
+- **Real "About the role"** copy from each posting (Greenhouse / Ashby / Lever) is published in `descriptions/*.json` (lazy-loaded) and rendered in the detail panel.
 - **Real-time Updates**: Automatic refresh about every 30 minutes via `.github/workflows/update-jobs.yml`.
-- **Smart Filtering**: New-grad-signal detection + USA-only locality + 60-day recency.
+- **Smart Filtering**: new-grad signal detection + US / Canada / India locations + 60-day recency.
 - **Company Badges**: FAANG+ and unicorn companies highlighted.
 
 ### Filtering Criteria
 
-- **New Grad Signals**: new grad, entry-level, junior, associate, trainee, campus, early career
+- **New Grad Signals**: new grad, entry-level, junior, associate, campus, early career, graduate programs, entry levels ("Engineer I/II", L3/L4); titles at level III and above, senior, staff, lead, manager and intern roles are excluded
 - **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
 - **Recency**: Jobs posted within the last 60 days
-- **Location**: USA-based positions only
+- **Location**: United States, Canada and India (including remote roles there)
 
-### `docs/jobs.json` schema
+### `jobs.json` schema
 
-Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable for third-party use:
+The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](https://jobs.riteshrana.engineer/jobs.json) (also as an RSS feed, [`feed.xml`](https://jobs.riteshrana.engineer/feed.xml), and run telemetry in [`health.json`](https://jobs.riteshrana.engineer/health.json)). Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use.
+`meta` carries `schema_version` (currently `"1.1"`), `generated_at`, `total_jobs` and `categories`
+(every category with its `count`, zero counts included). Jobs are ordered by `posted_at` (newest first), ties by `job_id`.
 
 | Field | Type | Notes |
 |---|---|---|
-| `job_id` | string | stable content hash `job_<hex>` (company, title, url, location, source); keys the description shards |
-| `id` | string | de-duplicated `company-title-location` slug |
+| `job_id` | string | stable, unique `job_<20 hex>` hash of `source` + canonical posting URL (tracking params stripped; company/title/location when there is no URL); keys the description shards and the RSS guid |
+| `id` | string | same value as `job_id` (kept for backward compatibility; was a `company-title-location` slug before schema 1.1) |
 | `company` | string | |
 | `title` | string | |
 | `location` | string | |
 | `url` | string | direct link to the posting on the source ATS |
-| `posted_at` | ISO 8601 | |
-| `posted_display` | string | human-readable ("Today", "3 days ago") |
-| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (…)` |
+| `posted_at` | ISO 8601 | when the employer posted the role |
+| `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
+| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
 | `category` | object | `{id, name, emoji}` — one of the 12 categories |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
 | `is_closed` | bool | |
-| `comp` | object\|null | `{min, max, currency, source}` when extractable; null otherwise |
-| `description` | string | clean-text snippet (≤ 1200 chars) of the posting body, "" for Workday |
+| `comp` | object\|null | `{min, max, currency: "USD", source: "ashby"\|"posting"}` when extractable; null otherwise |
+| `description` | string | clean-text snippet (≤ 3000 chars) of the posting body, "" for Workday |
 
 The site itself loads two lighter artifacts generated alongside it:
 
-- `docs/jobs-index.json`: the same `meta` and jobs, minus `description`, minified. This is what the terminal UI fetches on page load.
-- `docs/descriptions/<0-f>.json`: `{job_id: full "About the role" text}`, sharded by the first hex digit of `job_id`. The UI fetches one shard the first time a job's detail pane opens.
+- [`jobs-index.json`](https://jobs.riteshrana.engineer/jobs-index.json): the same `meta` and jobs, minus `description`, minified. This is what the terminal UI fetches on page load.
+- `descriptions/<0-f>.json`: `{job_id: full "About the role" text}`, sharded by the first hex digit of `job_id`. The UI fetches one shard the first time a job's detail pane opens.
 
 ### Companies Monitored
 
@@ -365,7 +366,7 @@ The site itself loads two lighter artifacts generated alongside it:
 
 **Lever (7)**: DEUNA, Institute of Foundation Models, Layup Parts, Palantir, Spotify, Welo Global, zaimler
 
-**JobSpy**: Indeed, LinkedIn (rate-limited)
+**JobSpy**: Indeed (US, Canada, India)
 
 See [`docs/removed-companies.md`](docs/removed-companies.md) for the audit trail of pruned / re-routed entries.
 

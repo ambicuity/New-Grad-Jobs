@@ -1,5 +1,8 @@
 version: 2
 
+# pre-commit hook revisions are not a Dependabot ecosystem; refresh them with
+# `pre-commit autoupdate --freeze`.
+
 updates:
   # GitHub Actions ecosystem — grouped to reduce PR noise for the sole maintainer
   - package-ecosystem: "github-actions"
@@ -20,7 +23,7 @@ updates:
           - "minor"
           - "patch"
 
-  # Python pip ecosystem — grouped to cut from N PRs to 1 PR per week
+  # Python — pyproject.toml ranges + hash-locked requirements*.txt
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
@@ -38,9 +41,21 @@ updates:
         update-types:
           - "minor"
           - "patch"
-    # Ignore playwright minor/patch updates — frequent breaking changes
-    ignore:
-      - dependency-name: "playwright"
+
+  # Site (Vite app under site/)
+  - package-ecosystem: "npm"
+    directory: "/site"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "dependencies"
+      - "automated pr"
+    open-pull-requests-limit: 3
+    groups:
+      npm-minor-patch:
         update-types:
-          - "version-update:semver-minor"
-          - "version-update:semver-patch"
+          - "minor"
+          - "patch"

@@ -1,0 +1,39 @@
+{
+  "projectName": "New-Grad-Jobs",
+  "projectOwner": "ambicuity",
+  "contributors": [
+    {
+      "login": "ambicuity",
+      "name": "Ritesh Rana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44251619?v=4",
+      "profile": "https://github.com/ambicuity",
+      "contributions": [
+        "doc",
+        "design",
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "WarlenSilvaa7",
+      "name": "Warlen Silva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/153737436?v=4",
+      "profile": "https://github.com/WarlenSilvaa7",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rvac-bucky",
+      "name": "rvac-bucky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/263012179?v=4",
+      "profile": "https://github.com/rvac-bucky",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    }
+  ],
+  "generatedAt": "2026-07-18T16:30:00Z"
+}

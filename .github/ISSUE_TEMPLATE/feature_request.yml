@@ -29,7 +29,7 @@ body:
       label: "Proposed Solution"
       description: What do you propose? Be as specific as possible.
       placeholder: |
-        e.g. "Add a 'Days Ago' field computed from `posted_at` and displayed on each job card in docs/terminal/dashboard.jsx..."
+        e.g. "Add a 'Days Ago' field computed from `posted_at` and displayed on each job card in site/src/components/hiring/JobRow.jsx..."
     validations:
       required: true
 
@@ -44,12 +44,12 @@ body:
     attributes:
       label: "🏗️ Which area does this affect?"
       options:
-        - "🤖 Core scraper (scripts/update_jobs.py)"
+        - "🤖 Core scraper (scripts/ngj/, scripts/*.py)"
         - "⚙️ Configuration (config.yml)"
-        - "🌐 Frontend / website (docs/)"
+        - "🌐 Frontend / website (site/)"
         - "🔁 GitHub Actions / CI-CD (.github/workflows/)"
         - "🧪 Tests (tests/)"
-        - "📚 Documentation (*.md, docs/wiki/)"
+        - "📚 Documentation (*.md, docs/)"
         - "🏷️ Company data / classification"
         - "Other"
     validations:

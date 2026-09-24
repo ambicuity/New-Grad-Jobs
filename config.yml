@@ -36,7 +36,8 @@ filtering:
 
     # Year-based programs
     # Keep the in-flight cohort years current — 2027 reqs open ~18 months ahead,
-    # so they are live now. Mirrored in strong_new_grad_signals in update_jobs.py.
+    # so they are live now. Mirrored in strong_new_grad_signals below.
+    # Bare years match whole numbers only, never inside req ids ("JR-2026-0042").
     - "2024 start"
     - "2025 start"
     - "2026 start"
@@ -46,21 +47,12 @@ filtering:
     - "2027"
     - "class of"
 
-    # Level indicators (common at tech companies)
+    # Level phrases (whole words: "level 1" does not match "Level 10").
+    # Bare level tokens (I, II, L3, ...) live in level_signals below.
     - "level 1"
     - "level 2"
     - "level i"
     - "level ii"
-    - " I "
-    - " II "
-    - " L3"
-    - " L4"
-    - " E3"
-    - " E4"
-    - " SDE I"
-    - " SDE II"
-    - " SWE I"
-    - " SWE II"
 
     # Programs
     - "graduate program"
@@ -86,7 +78,45 @@ filtering:
     - "site reliability"
     - "sre"
 
-  # Track signals to look for in job titles/descriptions (case insensitive)
+  # Entry-level markers matched as standalone level TOKENS, not substrings:
+  # "Engineer I", "SDE II", "Engineer I/II", "(L3)", "Engineer-II," match;
+  # "Alvin I. Goodman", "I/O", "L2/L3" and "L3Harris" do not. (These used to
+  # be written " I " / " L3" in new_grad_signals; YAML-padded spaces were
+  # silently stripped, so " I " matched every standalone "I".) Never pad a
+  # signal with spaces — tests/test_title_signal_boundaries.py enforces it.
+  # Level III+ ("Engineer III", "Engineer 3", "Level 4", "L5") is always
+  # excluded; level II stays in scope.
+  level_signals:
+    - "I"
+    - "II"
+    - "L3"
+    - "L4"
+    - "E3"
+    - "E4"
+
+  # Phrases strong enough to pass WITHOUT a track signal (whole words/years).
+  # Generic role titles must never be added here. Defaults live in
+  # DEFAULT_STRONG_NEW_GRAD_SIGNALS in scripts/ngj/filters.py.
+  strong_new_grad_signals:
+    - "new grad"
+    - "new graduate"
+    - "graduate program"
+    - "campus"
+    - "university grad"
+    - "university graduate"
+    - "college grad"
+    - "college graduate"
+    - "early career"
+    - "2025 start"
+    - "2026 start"
+    - "2027 start"
+    - "2025"
+    - "2026"
+    - "2027"
+
+  # Track signals to look for in job titles (case insensitive, whole words
+  # plus inflections: "engineer" matches "Engineering", but "ai" no longer
+  # matches "Maintenance" and "ml" no longer matches "HTML")
   track_signals:
     - "software"
     - "engineer"
@@ -119,7 +149,7 @@ filtering:
   exclusion_signals:
     - "senior"
     - "sr."
-    - "sr "
+    - "sr"
     - "staff"
     - "principal"
     - "lead"
@@ -166,8 +196,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/calm/jobs"
       - name: "Carta"
         url: "https://boards-api.greenhouse.io/v1/boards/carta/jobs"
-      - name: "Cerebral"
-        url: "https://boards-api.greenhouse.io/v1/boards/cerebral/jobs"
       - name: "CharterUP"
         url: "https://boards-api.greenhouse.io/v1/boards/charterup/jobs"
       - name: "Checkr"
@@ -178,8 +206,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/circleci/jobs"
       - name: "Civic Nation"
         url: "https://boards-api.greenhouse.io/v1/boards/civicnation/jobs"
-      - name: "ClickHouse"
-        url: "https://boards-api.greenhouse.io/v1/boards/clickhouse/jobs"
       - name: "Cloudflare"
         url: "https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs"
       - name: "Cockroach Labs"
@@ -260,12 +286,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/lucidsoftware/jobs"
       - name: "Lyft"
         url: "https://boards-api.greenhouse.io/v1/boards/lyft/jobs"
-      - name: "Magic Leap"
-        url: "https://boards-api.greenhouse.io/v1/boards/magicleap/jobs"
-      - name: "Marqeta"
-        url: "https://boards-api.greenhouse.io/v1/boards/marqeta/jobs"
-      - name: "Materialize"
-        url: "https://boards-api.greenhouse.io/v1/boards/materialize/jobs"
       - name: "Maven Clinic"
         url: "https://boards-api.greenhouse.io/v1/boards/mavenclinic/jobs"
       - name: "Melio"
@@ -284,8 +304,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/nuro/jobs"
       - name: "Okta"
         url: "https://boards-api.greenhouse.io/v1/boards/okta/jobs"
-      - name: "Opendoor"
-        url: "https://boards-api.greenhouse.io/v1/boards/opendoor/jobs"
       - name: "Orca Security"
         url: "https://boards-api.greenhouse.io/v1/boards/orcasecurity/jobs"
       - name: "Oscar Health"
@@ -300,8 +318,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/planetscale/jobs"
       - name: "Poshmark"
         url: "https://boards-api.greenhouse.io/v1/boards/poshmark/jobs"
-      - name: "Postman"
-        url: "https://boards-api.greenhouse.io/v1/boards/postman/jobs"
       - name: "Precision Medicine Group"
         url: "https://boards-api.greenhouse.io/v1/boards/precisionmedicinegroup/jobs"
       - name: "Pulley"
@@ -360,8 +376,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/tailscale/jobs"
       - name: "Tanium"
         url: "https://boards-api.greenhouse.io/v1/boards/tanium/jobs"
-      - name: "Temporal"
-        url: "https://boards-api.greenhouse.io/v1/boards/temporal/jobs"
       - name: "Third Bridge"
         url: "https://boards-api.greenhouse.io/v1/boards/thirdbridge/jobs"
       - name: "Together AI"
@@ -370,8 +384,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/twilio/jobs"
       - name: "Twitch"
         url: "https://boards-api.greenhouse.io/v1/boards/twitch/jobs"
-      - name: "Unity Technologies"
-        url: "https://boards-api.greenhouse.io/v1/boards/unity3d/jobs"
       - name: "Upstart"
         url: "https://boards-api.greenhouse.io/v1/boards/upstart/jobs"
       - name: "Vercel"
@@ -391,64 +403,14 @@ apis:
 
       - name: "Anthropic"
         url: "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs"
-      - name: "Hugging Face"
-        url: "https://boards-api.greenhouse.io/v1/boards/huggingface/jobs"
-      - name: "Cohere"
-        url: "https://boards-api.greenhouse.io/v1/boards/cohere/jobs"
-      - name: "Adept AI"
-        url: "https://boards-api.greenhouse.io/v1/boards/adeptai/jobs"
-      - name: "Character AI"
-        url: "https://boards-api.greenhouse.io/v1/boards/characterai/jobs"
-      - name: "Jasper"
-        url: "https://boards-api.greenhouse.io/v1/boards/jasper/jobs"
       - name: "Brex"
         url: "https://boards-api.greenhouse.io/v1/boards/brex/jobs"
-      - name: "Ramp"
-        url: "https://boards-api.greenhouse.io/v1/boards/ramp/jobs"
-      - name: "Deel"
-        url: "https://boards-api.greenhouse.io/v1/boards/deel/jobs"
-      - name: "Rippling"
-        url: "https://boards-api.greenhouse.io/v1/boards/rippling/jobs"
-      - name: "Vanta"
-        url: "https://boards-api.greenhouse.io/v1/boards/vanta/jobs"
-      - name: "Pipe"
-        url: "https://boards-api.greenhouse.io/v1/boards/pipe/jobs"
-      - name: "Navan"
-        url: "https://boards-api.greenhouse.io/v1/boards/navan/jobs"
-      - name: "Retool"
-        url: "https://boards-api.greenhouse.io/v1/boards/retool/jobs"
-      - name: "Canva"
-        url: "https://boards-api.greenhouse.io/v1/boards/canva/jobs"
-      - name: "Miro"
-        url: "https://boards-api.greenhouse.io/v1/boards/miro/jobs"
-      - name: "Notion"
-        url: "https://boards-api.greenhouse.io/v1/boards/notion/jobs"
       - name: "Verkada"
         url: "https://boards-api.greenhouse.io/v1/boards/verkada/jobs"
       - name: "Fivetran"
         url: "https://boards-api.greenhouse.io/v1/boards/fivetran/jobs"
-      - name: "dbt Labs"
-        url: "https://boards-api.greenhouse.io/v1/boards/dbtlabs/jobs"
-      - name: "HashiCorp"
-        url: "https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs"
-      - name: "Confluent"
-        url: "https://boards-api.greenhouse.io/v1/boards/confluent/jobs"
-      - name: "Aurora"
-        url: "https://boards-api.greenhouse.io/v1/boards/aurora/jobs"
-      - name: "Zoox"
-        url: "https://boards-api.greenhouse.io/v1/boards/zoox/jobs"
-      - name: "Cruise"
-        url: "https://boards-api.greenhouse.io/v1/boards/cruise/jobs"
-      - name: "Niantic"
-        url: "https://boards-api.greenhouse.io/v1/boards/niantic/jobs"
       - name: "Coinbase"
         url: "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs"
-      - name: "Kraken"
-        url: "https://boards-api.greenhouse.io/v1/boards/kraken/jobs"
-      - name: "Alchemy"
-        url: "https://boards-api.greenhouse.io/v1/boards/alchemy/jobs"
-      - name: "Chainalysis"
-        url: "https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs"
       # 2026-08-12 sweep: boards sourced from the new-grad CSV export
       # (jobs.csv, 359 postings / 168 employers). Every endpoint below was
       # probed live on 2026-08-12 and returned a non-empty job list.
@@ -509,6 +471,10 @@ apis:
         url: "https://api.lever.co/v0/postings/weloglobal"
       - name: "zaimler"
         url: "https://api.lever.co/v0/postings/zaimler"
+      - name: "Zoox"
+        url: "https://api.lever.co/v0/postings/zoox"
+      - name: "Kraken"
+        url: "https://api.lever.co/v0/postings/kraken"
 
   ashby:
     # Ashby Posting API — modern ATS used by many AI labs and devtools companies.
@@ -519,8 +485,6 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/openai"
       - name: "Crusoe"
         url: "https://api.ashbyhq.com/posting-api/job-board/crusoe"
-      - name: "Mistral AI"
-        url: "https://api.ashbyhq.com/posting-api/job-board/mistral"
       - name: "Notion"
         url: "https://api.ashbyhq.com/posting-api/job-board/notion"
       - name: "Cohere"
@@ -594,48 +558,22 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/runway"
       - name: "Snowflake"
         url: "https://api.ashbyhq.com/posting-api/job-board/snowflake"
-      - name: "Statsig"
-        url: "https://api.ashbyhq.com/posting-api/job-board/statsig"
       - name: "Stytch"
         url: "https://api.ashbyhq.com/posting-api/job-board/stytch"
       - name: "Suno"
         url: "https://api.ashbyhq.com/posting-api/job-board/suno"
       - name: "Warp"
         url: "https://api.ashbyhq.com/posting-api/job-board/warp"
-      - name: "Anthropic"
-        url: "https://api.ashbyhq.com/posting-api/job-board/anthropic"
-      - name: "Hugging Face"
-        url: "https://api.ashbyhq.com/posting-api/job-board/huggingface"
-      - name: "Together AI"
-        url: "https://api.ashbyhq.com/posting-api/job-board/togetherai"
-      - name: "Groq"
-        url: "https://api.ashbyhq.com/posting-api/job-board/groq"
       - name: "Cerebras"
         url: "https://api.ashbyhq.com/posting-api/job-board/cerebras"
-      - name: "Databricks"
-        url: "https://api.ashbyhq.com/posting-api/job-board/databricks"
-      - name: "Scale AI"
-        url: "https://api.ashbyhq.com/posting-api/job-board/scaleai"
-      - name: "Weights & Biases"
-        url: "https://api.ashbyhq.com/posting-api/job-board/wandb"
-      - name: "Replicate"
-        url: "https://api.ashbyhq.com/posting-api/job-board/replicate"
       - name: "Vercel"
         url: "https://api.ashbyhq.com/posting-api/job-board/vercel"
-      - name: "Cal.com"
-        url: "https://api.ashbyhq.com/posting-api/job-board/calcom"
-      - name: "Tinybird"
-        url: "https://api.ashbyhq.com/posting-api/job-board/tinybird"
       - name: "Neon"
         url: "https://api.ashbyhq.com/posting-api/job-board/neon"
-      - name: "PlanetScale"
-        url: "https://api.ashbyhq.com/posting-api/job-board/planetscale"
       - name: "Axiom"
         url: "https://api.ashbyhq.com/posting-api/job-board/axiom"
       - name: "Mintlify"
         url: "https://api.ashbyhq.com/posting-api/job-board/mintlify"
-      - name: "Dub"
-        url: "https://api.ashbyhq.com/posting-api/job-board/dub"
       # Third-pass adds (2026-07-02): additional New Grad friendly Ashby boards
       - name: "Authorium"
         url: "https://api.ashbyhq.com/posting-api/job-board/authorium"
@@ -664,13 +602,34 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/truelogic"
       - name: "Vorticity"
         url: "https://api.ashbyhq.com/posting-api/job-board/vorticity"
+      - name: "ClickHouse"
+        url: "https://api.ashbyhq.com/posting-api/job-board/clickhouse"
+      - name: "Materialize"
+        url: "https://api.ashbyhq.com/posting-api/job-board/materialize"
+      - name: "Temporal"
+        url: "https://api.ashbyhq.com/posting-api/job-board/temporal"
+      - name: "Ramp"
+        url: "https://api.ashbyhq.com/posting-api/job-board/ramp"
+      - name: "Deel"
+        url: "https://api.ashbyhq.com/posting-api/job-board/deel"
+      - name: "Vanta"
+        url: "https://api.ashbyhq.com/posting-api/job-board/vanta"
+      - name: "Miro"
+        url: "https://api.ashbyhq.com/posting-api/job-board/miro"
+      - name: "Confluent"
+        url: "https://api.ashbyhq.com/posting-api/job-board/confluent"
+      - name: "Niantic"
+        url: "https://api.ashbyhq.com/posting-api/job-board/niantic"
+      - name: "Alchemy"
+        url: "https://api.ashbyhq.com/posting-api/job-board/alchemy"
 
   google:
-    # P5: Google Careers API deprecated (returns 404 since late 2024).
-    # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.
+    # Scrapes the public Google Careers results page (AF_initDataCallback
+    # payload; the old /api/v3/search JSON endpoint 404s). Verified working
+    # 2026-09-24. Left disabled pending a decision to add Google as a source.
     enabled: false
     max_pages: 3
-    # Google careers API - searches for new grad positions
+    # Search terms, one results-page crawl each (up to max_pages pages)
     search_terms:
       - "new graduate software engineer"
       - "entry level software engineer"
@@ -908,65 +867,24 @@ apis:
     results_wanted: 30  # Reduced from 50 for faster responses
     hours_old: 168
 
-  # Third-party job scraping APIs (configuration ready for future implementation)
-  scraper_apis:
-    # ScraperAPI - Handles proxy rotation, CAPTCHA solving, JS rendering
-    scraper_api:
-      enabled: false
-      api_key: "${SCRAPER_API_KEY}"  # Set via environment variable
-      endpoints:
-        - "indeed.com"
-        - "linkedin.com/jobs"
-        - "glassdoor.com"
-
-    # SerpApi - Google Jobs API alternative
-    serp_api:
-      enabled: false
-      api_key: "${SERP_API_KEY}"  # Set via environment variable
-      search_engine: "google_jobs"
-      location: "United States"
-
-    # Zyte (Scrapinghub) - Enterprise job scraping service
-    zyte:
-      enabled: false
-      api_key: "${ZYTE_API_KEY}"  # Set via environment variable
-      project_id: "${ZYTE_PROJECT_ID}"
-
-    # Bright Data - Proxy network and job scraper API
-    bright_data:
-      enabled: false
-      username: "${BRIGHT_DATA_USERNAME}"
-      password: "${BRIGHT_DATA_PASSWORD}"
-      endpoint: "brd-customer-hl_username-zone-jobs"
-
-    # ScrapingBee - General web scraping API with AI extraction
-    scraping_bee:
-      enabled: false
-      api_key: "${SCRAPING_BEE_API_KEY}"
-      render_js: true
-      premium_proxy: true
-
   # Workday integration configuration
   workday:
     enabled: true
+    # The CXS API rejects page sizes above 20 (HTTP 400).
     page_limit: 20
-    max_jobs_per_company: 200
-    timeout: 6
+    # Unique jobs kept per company across all keyword searches.
+    max_jobs_per_company: 1000
+    # Keyword searches are slower than the plain listing (p50 ~1.5s, tail > 6s).
+    timeout: 15
+    # Companies fetched concurrently (same-host tenants still run serially).
+    max_workers: 8
     companies:
-      - name: "Microsoft"
-        workday_url: "https://microsoft.wd10.myworkdayjobs.com/en-US/Microsoft"
-      - name: "TikTok"
-        workday_url: "https://bytedance.wd3.myworkdayjobs.com/TikTok"
-      - name: "Netflix"
-        workday_url: "https://netflix.wd5.myworkdayjobs.com/jobs"
       - name: "Adobe"
         workday_url: "https://adobe.wd5.myworkdayjobs.com/external_experienced"
       - name: "Cisco"
-        workday_url: "https://cisco.wd1.myworkdayjobs.com/Cisco_Careers"
-      - name: "Oracle"
-        workday_url: "https://oracle.wd1.myworkdayjobs.com/Careers"
+        workday_url: "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers"
       - name: "Salesforce"
-        workday_url: "https://salesforce.wd1.myworkdayjobs.com/Salesforce_Careers"
+        workday_url: "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site"
       - name: "PayPal"
         workday_url: "https://paypal.wd1.myworkdayjobs.com/jobs"
       - name: "Mastercard"
@@ -981,80 +899,42 @@ apis:
         workday_url: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
       - name: "Intel"
         workday_url: "https://intel.wd1.myworkdayjobs.com/External"
-      - name: "AMD"
-        workday_url: "https://amd.wd1.myworkdayjobs.com/AMD"
-      - name: "Qualcomm"
-        workday_url: "https://qualcomm.wd5.myworkdayjobs.com/External"
-      - name: "SAP"
-        workday_url: "https://sap.wd1.myworkdayjobs.com/SAPCareers"
-      - name: "VMware"
-        workday_url: "https://vmware.wd1.myworkdayjobs.com/VMware"
-      - name: "Dell"
-        workday_url: "https://dell.wd1.myworkdayjobs.com/External"
+      - name: "Broadcom"
+        workday_url: "https://broadcom.wd1.myworkdayjobs.com/External_Career"
       - name: "HP"
         workday_url: "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite"
-      - name: "Lenovo"
-        workday_url: "https://lenovo.wd3.myworkdayjobs.com/Lenovo_Jobs"
-      - name: "ServiceNow"
-        workday_url: "https://servicenow.wd1.myworkdayjobs.com/servicenow"
       - name: "Workday"
         workday_url: "https://workday.wd5.myworkdayjobs.com/Workday"
-      - name: "Intuit"
-        workday_url: "https://intuit.wd5.myworkdayjobs.com/Intuit_Careers"
       - name: "Autodesk"
         workday_url: "https://autodesk.wd1.myworkdayjobs.com/Ext"
-      - name: "Splunk"
-        workday_url: "https://splunk.wd1.myworkdayjobs.com/splunk"
 
       # --- Finance & Banking ---
-      - name: "JPMorgan"
-        workday_url: "https://jpmc.wd1.myworkdayjobs.com/JPMorgan_Careers"
-      - name: "Goldman Sachs"
-        workday_url: "https://goldmansachs.wd5.myworkdayjobs.com/GS_Careers"
-      - name: "Morgan Stanley"
-        workday_url: "https://morganstanley.wd5.myworkdayjobs.com/morganstanley"
       - name: "Bank of America"
-        workday_url: "https://bankofamerica.wd1.myworkdayjobs.com/BofACareers"
+        workday_url: "https://ghr.wd1.myworkdayjobs.com/Lateral-US"
       - name: "Citi"
         workday_url: "https://citi.wd5.myworkdayjobs.com/2"
       - name: "Capital One"
-        workday_url: "https://capitalone.wd1.myworkdayjobs.com/Capital_One"
-      - name: "American Express"
-        workday_url: "https://americanexpress.wd5.myworkdayjobs.com/americanexpress"
-      - name: "Charles Schwab"
-        workday_url: "https://schws.wd1.myworkdayjobs.com/careers"
+        workday_url: "https://capitalone.wd12.myworkdayjobs.com/Capital_One"
       - name: "Fidelity"
-        workday_url: "https://fil.wd1.myworkdayjobs.com/external"
+        workday_url: "https://fmr.wd1.myworkdayjobs.com/FidelityCareers"
 
       # --- Consulting & Professional Services ---
       - name: "Booz Allen Hamilton"
         workday_url: "https://bah.wd1.myworkdayjobs.com/BAH_Jobs"
-      - name: "Deloitte"
-        workday_url: "https://deloitte.wd1.myworkdayjobs.com/DeloitteCareers"
       - name: "PwC"
-        workday_url: "https://pwc.wd1.myworkdayjobs.com/Global_Experienced_Careers"
-      - name: "EY"
-        workday_url: "https://ey.wd1.myworkdayjobs.com/EYCareers"
+        workday_url: "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers"
       - name: "Accenture"
-        workday_url: "https://accenture.wd3.myworkdayjobs.com/AccentureCareers"
-      - name: "McKinsey"
-        workday_url: "https://mckinsey.wd3.myworkdayjobs.com/McKinsey_Externals"
-      - name: "BCG"
-        workday_url: "https://bcg.wd3.myworkdayjobs.com/BCGCareers"
+        workday_url: "https://accenture.wd103.myworkdayjobs.com/AccentureCareers"
 
       # --- Healthcare & Pharma ---
       - name: "Johnson & Johnson"
-        workday_url: "https://jnjc.wd5.myworkdayjobs.com/JNJC_External"
+        workday_url: "https://jj.wd5.myworkdayjobs.com/JJ"
       - name: "Pfizer"
         workday_url: "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers"
       - name: "Merck"
-        workday_url: "https://merck.wd5.myworkdayjobs.com/Search"
-      - name: "AbbVie"
-        workday_url: "https://abbvie.wd5.myworkdayjobs.com/abbvie_careers"
+        workday_url: "https://msd.wd5.myworkdayjobs.com/SearchJobs"
       - name: "Bristol Myers Squibb"
-        workday_url: "https://bms.wd1.myworkdayjobs.com/Careers"
-      - name: "UnitedHealth Group"
-        workday_url: "https://uhg.wd5.myworkdayjobs.com/uhg"
+        workday_url: "https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS"
       - name: "CVS Health"
         workday_url: "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers"
       - name: "Medtronic"
@@ -1064,49 +944,29 @@ apis:
       - name: "Target"
         workday_url: "https://target.wd5.myworkdayjobs.com/targetcareers"
       - name: "Walmart"
-        workday_url: "https://walmart.wd5.myworkdayjobs.com/WalmartExternal"
-      - name: "Starbucks"
-        workday_url: "https://starbucks.wd5.myworkdayjobs.com/starbucks"
-      - name: "PepsiCo"
-        workday_url: "https://pepsico.wd1.myworkdayjobs.com/pepsico"
+        workday_url: "https://walmart.wd504.myworkdayjobs.com/WalmartExternal"
       - name: "Procter & Gamble"
-        workday_url: "https://pg.wd1.myworkdayjobs.com/pg-careers"
+        workday_url: "https://pg.wd5.myworkdayjobs.com/1000"
 
       # --- Aerospace & Defense ---
-      - name: "Lockheed Martin"
-        workday_url: "https://lockheedmartin.wd5.myworkdayjobs.com/search"
       - name: "Northrop Grumman"
         workday_url: "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site"
       - name: "Raytheon"
-        workday_url: "https://rtx.wd1.myworkdayjobs.com/RTX"
+        workday_url: "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway"
       - name: "General Dynamics"
-        workday_url: "https://generaldynamics.wd1.myworkdayjobs.com/GD"
-      - name: "L3Harris"
-        workday_url: "https://l3harris.wd5.myworkdayjobs.com/search"
+        workday_url: "https://gdit.wd5.myworkdayjobs.com/External_Career_Site"
       - name: "Boeing"
         workday_url: "https://boeing.wd1.myworkdayjobs.com/external_careers"
-      - name: "Amazon"
-        workday_url: "https://amazon.wd5.myworkdayjobs.com/Amazon"
-      - name: "IBM"
-        workday_url: "https://ibm.wd5.myworkdayjobs.com/IBM_Careers"
       - name: "Samsung"
-        workday_url: "https://samsung.wd3.myworkdayjobs.com/Samsung_Careers"
+        workday_url: "https://sec.wd3.myworkdayjobs.com/Samsung_Careers"
       - name: "Sony"
-        workday_url: "https://sony.wd5.myworkdayjobs.com/SonyCareers"
-      - name: "Ford"
-        workday_url: "https://ford.wd5.myworkdayjobs.com/Ford_Careers"
+        workday_url: "https://sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers"
       - name: "General Motors"
-        workday_url: "https://generalmotors.wd1.myworkdayjobs.com/Careers"
-      - name: "Honeywell"
-        workday_url: "https://honeywell.wd5.myworkdayjobs.com/Careers"
+        workday_url: "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM"
       - name: "Leidos"
         workday_url: "https://leidos.wd5.myworkdayjobs.com/External"
       - name: "CACI"
-        workday_url: "https://caci.wd5.myworkdayjobs.com/CACI_External"
-      - name: "Peraton"
-        workday_url: "https://peraton.wd5.myworkdayjobs.com/Peraton_Careers"
-      - name: "SAIC"
-        workday_url: "https://saic.wd5.myworkdayjobs.com/SAIC_Careers"
+        workday_url: "https://caci.wd1.myworkdayjobs.com/External"
       # 2026-08-12 sweep: boards sourced from the new-grad CSV export
       # (jobs.csv, 359 postings / 168 employers). Every endpoint below was
       # probed live on 2026-08-12 and returned a non-empty job list.
@@ -1157,22 +1017,22 @@ apis:
       - name: "Waystar"
         workday_url: "https://waystar.wd1.myworkdayjobs.com/Waystar"
 
+    # One Workday searchText query per keyword, merged by job path. Replaces
+    # the unfiltered listing, which was capped at 200 jobs per company and so
+    # dropped most new-grad roles at large tenants (NVIDIA: 2 of ~30). Paging
+    # a keyword stops at the first page with no plausible new-grad title (see
+    # ngj.sources.workday). Avoid one-letter keywords such as "I": Workday
+    # full-text search matches them in almost every posting.
     search_filters:
       title_keywords:
         - "new grad"
+        - "graduate"
+        - "university"
+        - "early career"
         - "entry level"
-        - "associate"
         - "junior"
-        - "I"
-        - "II"
-
-# README generation settings
-readme:
-  title: "🎓 New Grad Jobs"
-  subtitle: "Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles"
-  table_headers:
-    - "Company"
-    - "Role"
-    - "Location"
-    - "Posted"
-    - "Apply"
+        - "associate"
+        - "campus"
+        - "2026"
+        - "2027"
+      max_jobs_per_keyword: 200

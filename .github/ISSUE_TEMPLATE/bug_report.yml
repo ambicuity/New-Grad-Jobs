@@ -10,11 +10,10 @@ body:
 
         Before submitting:
         1. Search [existing issues](https://github.com/ambicuity/New-Grad-Jobs/issues) to avoid duplicates
-        2. If it's a security vulnerability, email `contact@riteshrana.engineer` **do NOT open a public issue**
+        2. If it's a security vulnerability, report it privately via [Security → Report a vulnerability](https://github.com/ambicuity/New-Grad-Jobs/security/advisories/new) or email `contact@riteshrana.engineer` — **do NOT open a public issue**
 
         > [!IMPORTANT]
-        > If you plan to fix this bug yourself, **you must claim the issue first** by commenting
-        > `/assign`. PRs submitted without a prior assignment will be closed.
+        > If you plan to fix this bug yourself, say so in a comment so nobody duplicates the work.
 
   - type: dropdown
     id: type

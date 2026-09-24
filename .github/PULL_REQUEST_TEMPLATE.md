@@ -1,32 +1,20 @@
 <!--
-  PR TITLE — READ BEFORE TYPING (bot will auto-reject if wrong)
-  ─────────────────────────────────────────────────────────────
+  PR TITLE — Conventional Commits
+  ───────────────────────────────
   Format:  <type>(<scope>): <short summary, lowercase, no period>
 
-  Types:
-    feat     – new feature or company added
-    fix      – bug fix
-    docs     – documentation only
-    test     – tests only, no production code
-    chore    – maintenance (deps, CI, housekeeping)
-    refactor – code change that is neither fix nor feature
-    perf     – performance improvement
-
-  Scopes (optional but recommended):
-    scraper, config, filter, dedup, ci, docs, tests, frontend
+  Types:   feat, fix, docs, test, chore, refactor, perf, ci
+  Scopes (optional): scraper, config, filter, dedup, sources, outputs, site, ci, docs, tests
 
   ✅ feat(config): add Stripe to Greenhouse companies
-  ✅ fix(scraper): handle None date in normalize_date_string
-  ✅ fix(filter): handle Unicode characters in company names
-  ✅ test(dedup): add edge case for get_job_key with math.nan
-  ✅ chore(ci): pin trivy-action to v0.28.0
-  ✅ docs(contributing): clarify assignment workflow
+  ✅ fix(filter): keep "Software Engineer I/II" titles
+  ✅ test(dedup): cover cross-source match with missing location
+  ✅ docs(contributing): document the Ashby config shape
 
   ❌ Update config          ← no type, no description
-  ❌ Fixed the bug          ← no type, too vague
   ❌ feat: Added companies  ← capital letter, past tense
 
-  Shortcut: title the PR "@coderabbitai" and the bot renames it correctly.
+  PRs are squash-merged, so the PR title becomes the commit message.
 -->
 
 ## Linked Issue
@@ -35,26 +23,29 @@ Fixes #
 
 ## Summary
 
-<!-- What changed and why? One or two sentences max. -->
+<!-- What changed and why? One or two sentences. -->
 
 ## Changes Made
 
 <!-- Which files changed and why? Delete rows that don't apply. -->
 
-| File | What changed |
+| Area | What changed |
 |------|-------------|
-| `scripts/update_jobs.py` | |
 | `config.yml` | |
+| `scripts/` | |
+| `site/` | |
 | `tests/` | |
 | Other | |
 
 ## Testing
 
-<!-- How did you verify this locally before pushing? -->
+<!-- How did you verify this locally before pushing? Tick what applies. -->
 
-- [ ] `python -m py_compile scripts/update_jobs.py` — no errors
-- [ ] `make test` — all tests pass
-- [ ] `pre-commit run --all-files` — clean
+- [ ] `make test` passes (pytest, coverage floor 75%)
+- [ ] `make lint` is clean (ruff + pre-commit)
+- [ ] `python scripts/validate_config.py` passes (if `config.yml` changed)
+- [ ] `cd site && npm run lint && npm test && npm run build` passes (if `site/` changed)
+- [ ] I did **not** commit generated data (`site/public/jobs*.json`, `descriptions/`, `feed.xml`, `health.json`) or hand-edit README COUNT markers / the CATEGORY-LISTINGS block
 
 ## Notes for Reviewer
 
@@ -62,13 +53,15 @@ Fixes #
 
 ---
 
-> **📋 What is checked automatically by CI — you do not need to self-certify these:**
+> **What CI checks automatically — you do not need to self-certify these:**
 >
-> | Check | Enforced by |
-> |-------|-------------|
-> | Python syntax and lint (E9/F-class) + config validation | `ci.yml` (lint-and-validate job) |
-> | All unit tests pass with coverage | `ci.yml` (test job) |
-> | Pre-commit hooks (secrets, YAML, whitespace) | `pre-commit.yml` |
+> | Check | Workflow / job |
+> |-------|----------------|
+> | Ruff, actionlint, `config.yml` schema validation | `ci.yml` → `lint` |
+> | mypy | `ci.yml` → `typecheck` |
+> | pytest on Python 3.11 and 3.13, coverage floor | `ci.yml` → `test (3.11)`, `test (3.13)` |
+> | Site lint, vitest, Vite build, Playwright e2e + axe | `ci.yml` → `site` |
+> | Pre-commit hooks (whitespace, YAML/JSON, secrets) | `pre-commit.yml` |
 > | Static security analysis | `codeql.yml` |
-> | GitHub Pages site builds and deploys | `pages-deployment.yml` |
-> | Scheduled job-listing refresh | `update-jobs.yml` |
+>
+> The live site is deployed by `update-jobs.yml` after merge; PRs never deploy.

@@ -2,7 +2,7 @@
 """Tests for the publish-time URL safety gate (scripts/url_safety.py).
 
 The gate is the last guard before URLs are written into the public
-``docs/jobs.json`` artifact, so the emphasis here is on *not leaking* internal
+published ``jobs.json`` artifact, so the emphasis here is on *not leaking* internal
 targets while never rejecting a legitimate ATS link.
 """
 
@@ -27,6 +27,11 @@ from url_safety import filter_safe_jobs, is_safe_url
     'http://careers.example.com/job/123',
     'https://8x8.com/careers',            # digit-containing label must stay allowed
     'https://api.example.co.uk/v1/jobs',
+    'https://www.linkedin.com/jobs/view/4012345678',
+    'https://www.indeed.com/viewjob?jk=abc123',
+    'https://careers.google.com/jobs/results/123',
+    'http://8.8.8.8/',                    # public IPv4 literal
+    'http://[2606:4700:4700::1111]/',     # public IPv6 literal
 ])
 def test_public_urls_are_allowed(url):
     assert is_safe_url(url) is True
@@ -67,6 +72,28 @@ def test_unsafe_urls_are_blocked(url):
     'http://db.local/',
     'http://service.lan/',
     'http://x.test/',
+    # Legacy inet_aton forms that browsers/curl resolve to loopback.
+    'http://127.1/',
+    'http://0x7f.1/',
+    'http://0177.0.0.1/',
+    'http://0x7f.0.0.1/',
+    'http://0/',
+    # Non-global ranges that are neither "private" nor "reserved".
+    'http://100.64.0.1/',                  # CGNAT shared address space
+    'http://192.0.0.8/',                   # IETF protocol assignments
+    'http://198.18.0.1/',                  # benchmarking
+    'http://224.0.0.1/',                   # multicast
+    'http://255.255.255.255/',
+    # IPv6 forms.
+    'http://[::ffff:127.0.0.1]/',
+    'http://[::ffff:7f00:1]/',
+    'http://[fc00::1]/',
+    'http://[fe80::1]/',
+    'http://[::]/',
+    # Numeric-looking hosts that are not valid IPv4 (browsers reject them).
+    'http://999.1.1.1/',
+    'http://1.2.3.4.5/',
+    'http://foo.0x10/',
 ])
 def test_known_bypasses_are_blocked(url):
     assert is_safe_url(url) is False
@@ -107,7 +134,7 @@ def test_filter_blocks_job_when_any_url_field_is_unsafe():
 
 
 def test_filter_samples_are_capped():
-    jobs = [{'url': 'http://127.0.0.1/%d' % i} for i in range(25)]
+    jobs = [{'url': f'http://127.0.0.1/{i}'} for i in range(25)]
     _, blocked, samples = filter_safe_jobs(jobs)
     assert blocked == 25
     assert len(samples) == 10

@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
 """Unit tests for Workday API URL construction helper."""
 
+import logging
 import os
 import sys
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import build_workday_api_url, get_workday_csrf_token  # noqa: E402
+from ngj.settings import DEFAULT_HTTP_TIMEOUT  # noqa: E402
+from ngj.sources.workday import build_workday_api_url, get_workday_csrf_token  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _capture_info_logs(caplog):
+    """The scraper logs via `logging` (INFO and up); capture it for assertions."""
+    caplog.set_level(logging.INFO)
+
 
 
 def test_build_workday_api_url_uses_host_tenant_for_standard_urls():
@@ -90,13 +99,12 @@ class TestGetWorkdayCsrfToken:
 
     def test_returns_token_from_response_header(self):
         session = self._make_session(headers={"X-Calypso-CSRF-Token": "abc123"})
-        token = get_workday_csrf_token("boeing.wd1.myworkdayjobs.com", session)
+        token = get_workday_csrf_token("https://boeing.wd1.myworkdayjobs.com/external_careers", session)
         assert token == "abc123"
-        session.get.assert_called_once_with(
-            "https://boeing.wd1.myworkdayjobs.com/",
-            timeout=5,
-            allow_redirects=True,
-        )
+        # The token comes from the careers *site* page; the bare host root always answers 406.
+        assert session.get.call_args.args == ("https://boeing.wd1.myworkdayjobs.com/external_careers",)
+        assert session.get.call_args.kwargs["timeout"] == DEFAULT_HTTP_TIMEOUT
+        assert session.get.call_args.kwargs["allow_redirects"] is True
 
     def test_falls_back_to_cookie_when_header_absent(self):
         session = self._make_session(
@@ -111,12 +119,12 @@ class TestGetWorkdayCsrfToken:
         token = get_workday_csrf_token("acme.wd1.myworkdayjobs.com", session)
         assert token == ""
 
-    def test_graceful_degradation_on_network_error(self, capsys):
+    def test_graceful_degradation_on_network_error(self, caplog):
         session = self._make_session(raises=ConnectionError("network down"))
         token = get_workday_csrf_token("acme.wd1.myworkdayjobs.com", session)
         assert token == ""
-        captured = capsys.readouterr()
-        assert "Could not acquire Workday CSRF token" in captured.out
+        captured = caplog
+        assert "Could not acquire Workday CSRF token" in captured.text
 
     def test_header_takes_precedence_over_cookie(self):
         session = self._make_session(

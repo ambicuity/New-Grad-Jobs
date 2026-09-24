@@ -1,45 +1,52 @@
 [build-system]
 requires = ["setuptools>=70"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "new-grad-jobs"
-version = "0.1.0"
+version = "1.0.1"
 description = "Automated new grad job aggregator scraping Greenhouse, Lever, Google Careers, and more."
 requires-python = ">=3.11"
+# Single source of truth for runtime dependencies. Compatible ranges live here;
+# exact, hash-locked versions live in requirements.txt (regenerate with
+# `make lock` after editing this list).
 dependencies = [
-    "requests>=2.31.0",
-    "PyYAML>=6.0.1",
-    "python-dateutil>=2.8.2",
-    "python-jobspy>=1.1.16",
-    "playwright>=1.41.0",
+    "requests>=2.32,<3",
+    "PyYAML>=6.0.1,<7",
+    "python-dateutil>=2.9,<3",
+    "python-jobspy>=1.1.82,<2",
 ]
 
 [project.optional-dependencies]
+# Locked in requirements-dev.txt (`make lock`).
 dev = [
-    "pytest>=8.0",
+    "pytest>=8.0,<10",
     "pytest-cov>=5.0",
-    "flake8>=7.0",
-    "isort>=5.13",
-    "pre-commit>=3.7",
+    "ruff>=0.16,<0.17",  # keep in step with the ruff-pre-commit rev in .pre-commit-config.yaml
+    "mypy>=1.10",
+    "types-requests",
+    "types-PyYAML",
+    "types-python-dateutil",
+    "pre-commit>=4.0",
 ]
 
+[tool.setuptools]
+# Nothing to package yet: the scraper runs as scripts. This keeps
+# `pip install -e . --no-deps` working without setuptools auto-discovery
+# tripping over the flat repo layout.
+packages = []
+
+# --------------------------------------------------------------------------- #
+# pytest / coverage
+# --------------------------------------------------------------------------- #
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v --cov=scripts --cov-report=term-missing --cov-report=xml"
 python_files = "test_*.py"
 python_functions = "test_*"
-
-[tool.isort]
-profile = "black"
-line_length = 120
-known_first_party = ["scripts"]
-
-[tool.flake8]
-max-line-length = 120
-select = ["E9", "F63", "F7", "F82"]
-per-file-ignores = [
-    "test_*.py:F401",
+markers = [
+    "network: test is allowed to open real network connections (blocked by default in tests/conftest.py)",
+    "real_sleep: test needs the real time.sleep (patched to a no-op by default in tests/conftest.py)",
 ]
 
 [tool.coverage.run]
@@ -48,4 +55,30 @@ omit = ["tests/*", ".venv/*"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 0
+# pytest enforces this floor (codecov statuses stay informational).
+fail_under = 75
+
+# --------------------------------------------------------------------------- #
+# ruff (replaces flake8 + isort)
+# --------------------------------------------------------------------------- #
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = ["scripts", "tests", ".github/scripts"]
+extend-exclude = ["docs", "site"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["scripts", "ngj"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["scripts"]
+ignore_missing_imports = true
+check_untyped_defs = false
+# scripts/ modules are imported both as `quality` and `scripts.quality`
+# (try/except fallbacks); without this mypy refuses to run at all.
+explicit_package_bases = true
+warn_unused_configs = true

@@ -1,8 +1,11 @@
 # ADR-0002: GitHub Pages for Frontend Deployment
 
 **Date:** 2026-01-17
-**Status:** Accepted
+**Status:** Superseded by [ADR-0005](0005-vite-site-and-actions-deploy.md)
 **Deciders:** Ritesh Rana (maintainer)
+
+> [!NOTE]
+> **Superseded.** This records the original decision: a no-build static site served from `docs/` on `main`, with the data committed there by the scraper. In v1.0.1 the site became a Vite build under `site/`, deployed with `actions/deploy-pages`, and generated data stopped being committed. See [ADR-0005](0005-vite-site-and-actions-deploy.md). GitHub Pages remains the host. The text below is kept unchanged for history.
 
 ---
 

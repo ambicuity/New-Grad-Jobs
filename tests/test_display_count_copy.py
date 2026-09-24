@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 """Regression guards for displayed count copy drift in docs/README surfaces."""
 
-from pathlib import Path
 import re
-
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 COUNT_SURFACES = [
     ROOT / "README.md",
-    ROOT / "docs" / "index.html",
-    ROOT / "docs" / "contributors.html",
-    # The legacy vanilla-JS/CSS site was removed in the NGJ terminal redesign,
-    # so only README.md, docs/index.html, and docs/contributors.html remain as
-    # count surfaces. Missing paths are skipped below.
+    ROOT / "site" / "index.html",
+    ROOT / "site" / "public" / "contributors.html",
+    # The site moved to the Vite app in site/ (index.html + public/), so only
+    # README.md and those two HTML shells remain as static count surfaces.
+    # Missing paths are skipped below.
 ]
 
 

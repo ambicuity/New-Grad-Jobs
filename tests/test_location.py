@@ -8,12 +8,14 @@ Covers:
   - Edge cases: empty string, None-like values, Unicode, mixed case
 """
 
-import sys
 import os
+import sys
+
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import is_valid_location
+from ngj.filters import is_valid_location  # noqa: E402
 
 
 class TestValidLocationTruePositives:
@@ -104,14 +106,16 @@ class TestValidLocationFalsePositives:
 class TestValidLocationEdgeCases:
     """Edge cases."""
 
-    def test_empty_string(self):
-        assert is_valid_location("") is False
+    # An empty/None location is *unknown*, not foreign. Most sources that omit
+    # a location are US boards, so unknown passes rather than silently dropping.
+    def test_empty_string_is_unknown_and_passes(self):
+        assert is_valid_location("") is True
 
-    def test_none(self):
-        assert is_valid_location(None) is False
+    def test_none_is_unknown_and_passes(self):
+        assert is_valid_location(None) is True
 
-    def test_whitespace_only(self):
-        assert is_valid_location("   ") is False
+    def test_whitespace_only_is_unknown_and_passes(self):
+        assert is_valid_location("   ") is True
 
     def test_comma_separated_state_code(self):
         """'San Jose, CA' — 'ca' is 2 chars, should match via word boundary."""
@@ -130,3 +134,94 @@ class TestValidLocationEdgeCases:
 
     def test_mixed_case_state_abbreviation(self):
         assert is_valid_location("Indianapolis, iN") is True
+
+
+class TestRemoteLocationsRequireTargetCountry:
+    """'remote' used to pass anything, incl. "Remote - Germany" (audit: 42 jobs)."""
+
+    @pytest.mark.parametrize("location", [
+        "Remote",
+        "Remote - US",
+        "Remote - USA",
+        "Remote US",
+        "US Remote",
+        "Remote (United States)",
+        "United States | Remote",
+        "Remote-US-MA",
+        "Remote - US West",
+        "Remote from the US",
+        "Remote - North America",
+        "Remote, Americas",
+        "Remote Canada",
+        "Remote - Canada: Select locations",
+        "Ontario, Canada (Remote)",
+        "Remote - India",
+        "Remote, Global",
+        "All Remote Locations",
+        "San Francisco Bay Area or Remote",
+        "Remote, Canada; Remote, Israel; Remote, United Kingdom",
+        "Hybrid - San Francisco",
+        "In-Office",
+    ])
+    def test_target_or_unqualified_remote_passes(self, location):
+        assert is_valid_location(location) is True
+
+    @pytest.mark.parametrize("location", [
+        "Remote - Germany",
+        "Remote, UK",
+        "Remote - United Kingdom",
+        "Remote Poland",
+        "Remote - Poland",
+        "Remote - Brazil",
+        "Remote - Singapore",
+        "Remote Spain",
+        "Remote - Ireland",
+        "Remote - Colombia",
+        "Remote - Mexico",
+        "Remote, Australia",
+        "EMEA - Remote",
+        "Germany (Remote)",
+        "Madrid, Spain; Remote - Spain",
+        "Remote - Latin America",
+    ])
+    def test_foreign_remote_fails(self, location):
+        assert is_valid_location(location) is False
+
+
+class TestStateCodesAreTrailingTokens:
+    """2-letter state codes matched anywhere, so ISO country codes leaked in."""
+
+    @pytest.mark.parametrize("location", [
+        "Berlin, DE",
+        "Bogot\u00e1, CO",
+        "Milan, MI, Italy",
+        "Lagos, LA, Nigeria",
+        "Melbourne, Victoria, Australia",
+        "CZE - Brno Modrice DC",
+        "Warsaw, PL",
+    ])
+    def test_foreign_codes_rejected(self, location):
+        assert is_valid_location(location) is False
+
+    @pytest.mark.parametrize("location", [
+        "Austin, TX",
+        "Dublin, GA, US",
+        "Baton Rouge, LA, US",
+        "Detroit, MI",
+        "Boston, MA, US",
+        "Sunset, UT",
+        "Ruston, LA",
+        "Hawthorne, CA",
+        "Toronto, ON, CA",
+        "KA, IN",
+        "Remote, IN",
+        "New Mexico",
+        "Albuquerque, New Mexico, United States",
+        "USA.VA.Reston",
+        "AZ - Scottsdale",
+        "Washington, D.C.",
+        "United Sates, Remote",
+        "Humacao, Puerto Rico, United States of America",
+    ])
+    def test_us_and_target_codes_accepted(self, location):
+        assert is_valid_location(location) is True

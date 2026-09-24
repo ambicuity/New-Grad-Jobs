@@ -13,8 +13,8 @@ body:
         This template creates a **Good First Issue** — a small, guided task that helps new
         contributors learn the codebase and contribution workflow.
 
-        **Good First Issues are pre-approved by the maintainer.** A contributor can claim it
-        immediately by commenting `/assign`.
+        **Good First Issues are pre-approved by the maintainer.** Comment on the issue to say
+        you are working on it.
 
         ---
 
@@ -41,7 +41,7 @@ body:
         > **This issue does not require prior scraping or API experience.**
         >
         > - Basic Python and Git are sufficient
-        > - You must be assigned before starting — comment `/assign` to claim this issue
+        > - Comment on the issue before starting so nobody duplicates the work
         > - Read [CONTRIBUTING.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md)
         >   before opening a PR
 
@@ -64,16 +64,16 @@ body:
         > #### 📋 What makes a Good First Issue in this repo?
         >
         > **Often a good fit:**
-        > - Adding a missing company to `config.yml` (Greenhouse, Lever endpoint)
+        > - Adding a missing company to `config.yml` (Greenhouse, Lever, Ashby or Workday entry)
         > - Fixing a keyword in `categorize_job()` or `get_company_tier()`
         > - Correcting a typo or broken link in documentation
         > - Adding a test case for an existing, already-working function
-        > - Small CSS/HTML improvements to `docs/`
+        > - Small UI improvements to the site (`site/src/`)
         >
         > **Not a good fit for GFI:**
         > - Changes to `filter_jobs()`, `deduplicate_jobs()`, or date parsing
         > - New scraping source integrations (Workday, Google Careers)
-        > - Architectural changes to `update_jobs.py`
+        > - Architectural changes to the `scripts/ngj/` pipeline
         >
         > Those belong in **Beginner**, **Intermediate**, or **Advanced** issues.
 

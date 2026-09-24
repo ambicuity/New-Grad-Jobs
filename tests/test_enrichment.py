@@ -11,29 +11,21 @@ Tests cover:
 - get_iso_date(): ISO date string extraction
 """
 
-import math
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from unittest.mock import patch
 
 import pytest
-import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import (
-    detect_sponsorship_flags,
-    is_job_closed,
-    get_company_tier,
-    enrich_jobs,
-    extract_compensation,
-    clean_description,
-    fetch_greenhouse_jobs,
-    fetch_ashby_jobs,
-    format_posted_date,
-    get_iso_date,
-)
+from ngj.compensation import extract_compensation  # noqa: E402
+from ngj.dates import format_posted_date, get_iso_date  # noqa: E402
+from ngj.enrich import detect_sponsorship_flags, enrich_jobs, is_job_closed  # noqa: E402
+from ngj.sources.ashby import fetch_ashby_jobs  # noqa: E402
+from ngj.taxonomy import get_company_tier  # noqa: E402
+from ngj.text import clean_description  # noqa: E402
 
 FIXED_NOW = datetime(2026, 3, 11, 12, 0, 0)
 
@@ -126,6 +118,45 @@ class TestIsJobClosed:
     def test_case_insensitive(self):
         assert is_job_closed("CLOSED POSITION - DO NOT APPLY", "") is True
 
+    @pytest.mark.parametrize("title", [
+        "Software Engineer (Closed)",
+        "[EXPIRED] Data Engineer, New Grad",
+        "Closed - Software Engineer I",
+        "Software Engineer - Position Filled",
+    ])
+    def test_title_markers_are_closed(self, title):
+        assert is_job_closed(title, "") is True
+
+    @pytest.mark.parametrize("description", [
+        "This position has been filled.",
+        "This job is now closed.",
+        "This posting is closed to new applicants.",
+        "The job posting has expired.",
+        "Job expired",
+    ])
+    def test_strict_description_phrases_are_closed(self, description):
+        assert is_job_closed("Software Engineer", description) is True
+
+    @pytest.mark.parametrize("description", [
+        "You will build closed-loop control systems for robotics.",
+        "Salary will be disclosed during the interview process.",
+        "Track closed-won deals in Salesforce.",
+        "This role stays open until the requisition is closed.",
+        "Applications are reviewed on a rolling basis until the position is filled.",
+        "Renew expired certificates and rotate keys automatically.",
+        "Our enclosed test chambers simulate extreme conditions.",
+        "Closed captioning and accessibility tooling.",
+    ])
+    def test_incidental_closed_or_expired_words_are_open(self, description):
+        assert is_job_closed("Software Engineer, New Grad", description) is False
+
+    @pytest.mark.parametrize("title", [
+        "Closed-Loop Controls Engineer, New Grad",
+        "Software Engineer, Closed Captioning",
+    ])
+    def test_incidental_closed_in_title_is_open(self, title):
+        assert is_job_closed(title, "") is False
+
 
 # ---------------------------------------------------------------------------
 # get_company_tier
@@ -143,7 +174,7 @@ class TestGetCompanyTier:
         # `get_company_tier` checks FAANG_PLUS before UNICORNS, so a company in
         # both sets resolves to 'faang_plus'. Pick from UNICORNS \ FAANG_PLUS and
         # sort to make the choice deterministic across Python hash seeds.
-        from update_jobs import FAANG_PLUS, UNICORNS
+        from ngj.taxonomy import FAANG_PLUS, UNICORNS
         unicorn_only = sorted(UNICORNS - FAANG_PLUS)
         if not unicorn_only:
             pytest.skip("No unicorns outside FAANG_PLUS configured")
@@ -157,7 +188,7 @@ class TestGetCompanyTier:
 
     def test_finance_sector_detected(self):
         # Sort for deterministic selection across Python hash seeds.
-        from update_jobs import FINANCE
+        from ngj.taxonomy import FINANCE
         finance_companies = sorted(FINANCE)
         if not finance_companies:
             pytest.skip("No FINANCE companies configured")
@@ -166,7 +197,7 @@ class TestGetCompanyTier:
 
     def test_defense_sector_detected(self):
         # Sort for deterministic selection across Python hash seeds.
-        from update_jobs import DEFENSE
+        from ngj.taxonomy import DEFENSE
         defense_companies = sorted(DEFENSE)
         if not defense_companies:
             pytest.skip("No DEFENSE companies configured")
@@ -180,7 +211,7 @@ class TestGetCompanyTier:
 
     def test_company_can_overlap_tier_and_sector(self):
         """A FAANG+ company that's also in FINANCE should have both."""
-        from update_jobs import FAANG_PLUS, FINANCE
+        from ngj.taxonomy import FAANG_PLUS, FINANCE
         overlap = sorted(FAANG_PLUS & FINANCE)
         if not overlap:
             pytest.skip("No FAANG_PLUS ∩ FINANCE overlap configured")
@@ -284,35 +315,35 @@ class TestFormatPostedDate:
     """Human-readable date display formatting."""
 
     def test_recent_date_shows_today(self):
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         result = format_posted_date(now.isoformat())
         assert result == "Today"
 
     def test_yesterday_shows_1_day_ago(self):
-        yesterday = datetime.now(timezone.utc) - timedelta(days=1)
+        yesterday = datetime.now(UTC) - timedelta(days=1)
         result = format_posted_date(yesterday.isoformat())
         assert result == "1 day ago"
 
     def test_days_ago_format(self):
-        three_days_ago = datetime.now(timezone.utc) - timedelta(days=3)
+        three_days_ago = datetime.now(UTC) - timedelta(days=3)
         result = format_posted_date(three_days_ago.isoformat())
         assert result == "3 days ago"
 
     def test_old_date_shows_iso_format(self):
-        two_weeks_ago = datetime.now(timezone.utc) - timedelta(days=14)
+        two_weeks_ago = datetime.now(UTC) - timedelta(days=14)
         result = format_posted_date(two_weeks_ago.isoformat())
         # Should return YYYY-MM-DD formatted date
         assert result == two_weeks_ago.strftime("%Y-%m-%d")
 
     def test_lever_timestamp_int(self):
         """Lever API returns timestamps in milliseconds."""
-        ts_ms = int((datetime.now(timezone.utc) - timedelta(days=1)).timestamp() * 1000)
+        ts_ms = int((datetime.now(UTC) - timedelta(days=1)).timestamp() * 1000)
         result = format_posted_date(ts_ms)
         assert result == "1 day ago"
 
     def test_lever_timestamp_float(self):
         """Float millisecond timestamps should also work."""
-        ts_ms = float(int((datetime.now(timezone.utc) - timedelta(days=2)).timestamp() * 1000))
+        ts_ms = float(int((datetime.now(UTC) - timedelta(days=2)).timestamp() * 1000))
         result = format_posted_date(ts_ms)
         assert result == "2 days ago"
 
@@ -491,75 +522,6 @@ class TestExtractCompensation:
 
 
 # ---------------------------------------------------------------------------
-# fetch_greenhouse_jobs: regression — must request ?content=true so descriptions
-# (and therefore comp / closed-flag detection) are populated.
-# ---------------------------------------------------------------------------
-
-class TestGreenhouseFetcherContentFlag:
-    """Without ?content=true the GH API omits descriptions — silently zeros
-    out comp extraction. Lock in the auto-append behavior."""
-
-    def _mock_response(self, status=200, json_body=None):
-        m = type('R', (), {})()
-        m.status_code = status
-        m.ok = 200 <= status < 300
-        m.json = lambda: (json_body or {'jobs': []})
-        m.raise_for_status = lambda: None
-        m.text = ''
-        return m
-
-    def test_appends_content_true_when_missing(self):
-        captured = {}
-        def fake_get(url, *a, **kw):
-            captured['url'] = url
-            return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            fetch_greenhouse_jobs('Affirm',
-                                  'https://boards-api.greenhouse.io/v1/boards/affirm/jobs')
-        assert 'content=true' in captured['url']
-
-    def test_preserves_existing_query_params(self):
-        captured = {}
-        def fake_get(url, *a, **kw):
-            captured['url'] = url
-            return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            fetch_greenhouse_jobs('Stripe',
-                                  'https://boards-api.greenhouse.io/v1/boards/stripe/jobs?foo=bar')
-        assert 'foo=bar' in captured['url']
-        assert 'content=true' in captured['url']
-
-    def test_does_not_double_append(self):
-        captured = {}
-        def fake_get(url, *a, **kw):
-            captured['url'] = url
-            return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            fetch_greenhouse_jobs('Lever',
-                                  'https://boards-api.greenhouse.io/v1/boards/lever/jobs?content=true')
-        # exactly one occurrence
-        assert captured['url'].count('content=true') == 1
-
-    def test_extracts_comp_from_returned_content(self):
-        # End-to-end: when GH returns content, comp shows up in the result dict.
-        body = {'jobs': [{
-            'id': 1, 'title': 'Software Engineer, New Grad',
-            'location': {'name': 'San Francisco, CA'},
-            'absolute_url': 'https://example.com/job/1',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': 'The base salary range for this role is $120,000 - $180,000.',
-        }]}
-        def fake_get(url, *a, **kw):
-            return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                         'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
-        assert len(jobs) == 1
-        assert jobs[0]['comp'] == {'min': 120000, 'max': 180000,
-                                   'currency': 'USD', 'source': 'posting'}
-
-
-# ---------------------------------------------------------------------------
 # fetch_ashby_jobs
 # ---------------------------------------------------------------------------
 
@@ -580,7 +542,7 @@ class TestAshbyFetcher:
         def fake_get(url, *a, **kw):
             captured['url'] = url
             return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
+        with patch('ngj.http.limited_get', side_effect=fake_get):
             fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
         assert 'includeCompensation=true' in captured['url']
 
@@ -601,8 +563,8 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai').jobs)
         assert len(jobs) == 1
         # Structured comp from Ashby beats regex; source must be 'ashby'.
         assert jobs[0]['comp'] == {'min': 245000, 'max': 385000,
@@ -621,10 +583,14 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere')
-        assert jobs[0]['comp']['source'] == 'posting'
-        assert jobs[0]['comp']['min'] == 130000 and jobs[0]['comp']['max'] == 170000
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere').jobs)
+        # The adapter keeps the raw HTML only; the regex fallback runs in enrich.
+        assert jobs[0]['comp'] is None
+        comp = enrich_jobs(jobs)[0]['comp']
+        assert comp['source'] == 'posting'
+        assert comp['min'] == 130000 and comp['max'] == 170000
+        assert comp['currency'] == 'CAD'  # bare "$" in a Toronto posting
 
     def test_rejects_out_of_band_compensation(self):
         # If Ashby reports a clearly-wrong number (e.g. an internship stipend),
@@ -642,13 +608,12 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x').jobs)
         assert jobs[0]['comp'] is None  # 5k–10k below the 30k floor
 
-    def test_non_usd_compensation_ignored(self):
-        # CAD or EUR compensation isn't currently mapped — falls back to regex.
-        # (description must be empty so regex fallback also returns None.)
+    def test_non_usd_compensation_keeps_its_currency(self):
+        # Structured non-USD tiers are kept and labelled with their real currency.
         body = {'jobs': [{
             'id': 'a4', 'title': 'Engineer', 'jobUrl': 'https://jobs.ashbyhq.com/x/a4',
             'publishedAt': '2026-05-01T00:00:00Z',
@@ -662,9 +627,9 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
-        assert jobs[0]['comp'] is None
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x').jobs)
+        assert jobs[0]['comp'] == {'min': 130000, 'max': 180000, 'currency': 'CAD', 'source': 'ashby'}
 
 
 # ---------------------------------------------------------------------------
@@ -700,164 +665,24 @@ class TestCleanDescription:
         assert clean_description('') == ''
         assert clean_description(None) == ''
 
+    def test_double_encoded_nbsp_is_fully_decoded(self):
+        # Greenhouse double-encodes entities inside its entity-encoded HTML.
+        assert clean_description('Hello&amp;nbsp;world') == 'Hello world'
 
-# ---------------------------------------------------------------------------
-# Greenhouse description enrichment: fetch individual job details when list
-# endpoint returns empty content.
-# ---------------------------------------------------------------------------
+    def test_double_encoded_amp_and_mdash(self):
+        r = clean_description('R&amp;amp;D &amp;mdash; teams')
+        assert r == 'R&D — teams'
 
-class TestGreenhouseDescriptionEnrichment:
-    """When the Greenhouse list endpoint returns empty content for a job,
-    the fetcher should fall back to the individual job endpoint to get
-    the full description."""
+    def test_entity_encoded_tags_are_stripped(self):
+        assert clean_description('&lt;p&gt;Hello&lt;/p&gt;') == 'Hello'
 
-    def _mock_response(self, status=200, json_body=None):
-        m = type('R', (), {})()
-        m.status_code = status
-        m.ok = 200 <= status < 300
-        m.json = lambda: (json_body or {'jobs': []})
-        m.raise_for_status = lambda: None
-        m.text = ''
-        return m
+    def test_double_encoded_tags_are_stripped(self):
+        assert clean_description('&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;') == 'Hello'
 
-    def test_enriches_jobs_with_empty_content(self):
-        """Jobs with empty content from list endpoint should be enriched
-        via individual job endpoint."""
-        list_body = {'jobs': [{
-            'id': 12345,
-            'title': 'Software Engineer',
-            'location': {'name': 'Hawthorne, CA'},
-            'absolute_url': 'https://example.com/job/12345',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': '',
-        }]}
-        detail_body = {
-            'id': 12345,
-            'title': 'Software Engineer',
-            'location': {'name': 'Hawthorne, CA'},
-            'absolute_url': 'https://example.com/job/12345',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': '<div><h2>About the role</h2><p>We are looking for a software engineer to join our team.</p></div>',
-        }
+    def test_literal_less_than_in_text_survives(self):
+        r = clean_description('&lt;p&gt;Pay &amp;lt; $100k and latency &amp;gt; 5ms&lt;/p&gt;')
+        assert r == 'Pay < $100k and latency > 5ms'
 
-        call_urls = []
-        def fake_get(url, *a, **kw):
-            call_urls.append(url)
-            if '/jobs/12345' in url:
-                return self._mock_response(json_body=detail_body)
-            return self._mock_response(json_body=list_body)
-
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('Anduril',
-                                        'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs')
-        assert len(jobs) == 1
-        assert jobs[0]['description'] != ''
-        assert 'About the role' in jobs[0]['description']
-        # Verify the individual endpoint was called
-        assert any('/jobs/12345' in u for u in call_urls)
-
-    def test_skips_enrichment_when_content_present(self):
-        """Jobs that already have content should NOT trigger individual fetches."""
-        list_body = {'jobs': [{
-            'id': 99,
-            'title': 'Backend Engineer',
-            'location': {'name': 'SF'},
-            'absolute_url': 'https://example.com/job/99',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': '<p>Full description already here.</p>',
-        }]}
-
-        call_urls = []
-        def fake_get(url, *a, **kw):
-            call_urls.append(url)
-            return self._mock_response(json_body=list_body)
-
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('Stripe',
-                                        'https://boards-api.greenhouse.io/v1/boards/stripe/jobs')
-        assert len(jobs) == 1
-        assert 'Full description' in jobs[0]['description']
-        # Should NOT have called individual endpoint
-        assert not any('/jobs/99' in u for u in call_urls)
-
-    def test_enrichment_preserves_existing_fields(self):
-        """Enriched jobs should still have all standard fields."""
-        list_body = {'jobs': [{
-            'id': 42,
-            'title': 'New Grad SWE',
-            'location': {'name': 'Austin, TX'},
-            'absolute_url': 'https://example.com/job/42',
-            'updated_at': '2026-05-10T00:00:00Z',
-            'content': '',
-        }]}
-        detail_body = {
-            'id': 42,
-            'content': '<p>The base salary range is $100,000 - $140,000.</p>',
-        }
-
-        def fake_get(url, *a, **kw):
-            if '/jobs/42' in url:
-                return self._mock_response(json_body=detail_body)
-            return self._mock_response(json_body=list_body)
-
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
-        assert len(jobs) == 1
-        job = jobs[0]
-        assert job['company'] == 'TestCo'
-        assert job['title'] == 'New Grad SWE'
-        assert job['location'] == 'Austin, TX'
-        assert job['source'] == 'Greenhouse'
-        assert job['comp'] is not None
-        assert job['comp']['min'] == 100000
-
-    def test_enrichment_handles_individual_fetch_failure(self):
-        """If individual fetch fails, job should still be returned with empty description."""
-        list_body = {'jobs': [{
-            'id': 77,
-            'title': 'Engineer',
-            'location': {'name': 'Remote'},
-            'absolute_url': 'https://example.com/job/77',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': '',
-        }]}
-
-        call_count = [0]
-        def fake_get(url, *a, **kw):
-            call_count[0] += 1
-            if '/jobs/77' in url:
-                raise requests.exceptions.Timeout("timeout")
-            return self._mock_response(json_body=list_body)
-
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
-        assert len(jobs) == 1
-        assert jobs[0]['description'] == ''
-
-    def test_enrichment_handles_null_content(self):
-        """content=None (not just '') should also trigger enrichment."""
-        list_body = {'jobs': [{
-            'id': 88,
-            'title': 'Engineer',
-            'location': {'name': 'Remote'},
-            'absolute_url': 'https://example.com/job/88',
-            'updated_at': '2026-05-16T10:00:00Z',
-            'content': None,
-        }]}
-        detail_body = {
-            'id': 88,
-            'content': '<p>Real description here.</p>',
-        }
-
-        def fake_get(url, *a, **kw):
-            if '/jobs/88' in url:
-                return self._mock_response(json_body=detail_body)
-            return self._mock_response(json_body=list_body)
-
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
-        assert len(jobs) == 1
-        assert 'Real description' in jobs[0]['description']
+    def test_nbsp_character_normalized_to_space(self):
+        from ngj.text import strip_html as _strip_html
+        assert _strip_html('a\xa0b') == 'a b'

@@ -1,254 +1,212 @@
 #!/usr/bin/env python3
-"""Tests for job deduplication logic in scripts/update_jobs.py."""
+"""Tests for ngj.dedup: same-posting (canonical URL) and cross-source passes."""
 
+import logging
 import os
 import sys
-from typing import Dict, Any, List
+from typing import Any
+
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import deduplicate_jobs, get_job_key
+from contracts import compute_job_id  # noqa: E402
+from ngj.dedup import (  # noqa: E402
+    cross_source_key,
+    deduplicate_jobs,
+    deduplicate_jobs_with_stats,
+    get_job_key,
+    is_aggregator_source,
+    location_tokens,
+    locations_compatible,
+    normalize_company,
+)
 
 
-def _make_job(**kwargs) -> Dict[str, Any]:
-    """Helper to create minimal valid job dict"""
+@pytest.fixture(autouse=True)
+def _capture_info_logs(caplog):
+    caplog.set_level(logging.INFO)
+
+
+def _make_job(**kwargs) -> dict[str, Any]:
     defaults = {
         'company': 'Test Corp',
         'title': 'Engineer',
         'url': 'https://example.com/job',
+        'location': 'New York, NY',
         'posted_at': '2026-03-01',
+        'source': 'Greenhouse',
     }
     defaults.update(kwargs)
     return defaults
 
 
 class TestGetJobKey:
-    """Tests for the get_job_key() function"""
+    def test_key_equals_published_job_id(self):
+        job = _make_job()
+        assert get_job_key(job) == compute_job_id(job)
 
-    def test_basic_key_generation(self):
-        """Test basic key generation with string fields"""
-        job = _make_job(company='ACME Inc', title='Software Engineer', url='https://acme.com/job')
-        key = get_job_key(job)
-        assert key == "acme inc|software engineer|https://acme.com/job"
+    def test_tracking_params_do_not_change_key(self):
+        a = _make_job(url='https://boards.greenhouse.io/acme/jobs/1?gh_jid=1')
+        b = _make_job(url='https://boards.greenhouse.io/acme/jobs/1/?gh_jid=1&gh_src=li&utm_source=x')
+        assert get_job_key(a) == get_job_key(b)
 
-    def test_key_is_case_insensitive(self):
-        """Test that company and title are lowercased in key"""
-        job1 = _make_job(company='ACME', title='ENGINEER', url='https://example.com/job')
-        job2 = _make_job(company='acme', title='engineer', url='https://example.com/job')
-        assert get_job_key(job1) == get_job_key(job2)
-
-    def test_key_strips_whitespace(self):
-        """Test that whitespace is stripped"""
-        job1 = _make_job(company='  ACME  ', title='  Engineer  ', url='https://example.com/job')
-        job2 = _make_job(company='ACME', title='Engineer', url='https://example.com/job')
-        assert get_job_key(job1) == get_job_key(job2)
-
-    def test_key_with_none_values(self):
-        """Test key generation with None values"""
-        job = _make_job(company=None, title='Engineer', url=None)
-        key = get_job_key(job)
-        assert key == "|engineer|"
-
-    def test_key_with_missing_fields(self):
-        """Test key generation when fields are missing from dict"""
-        job = {'url': 'https://example.com/job'}  # Missing company and title
-        key = get_job_key(job)
-        assert key == "||https://example.com/job"
-
-    def test_key_with_nan_values(self):
-        """Test that NaN values are converted to empty strings"""
-        job = _make_job(company=float('nan'), title='Engineer', url='https://example.com/job')
-        key = get_job_key(job)
-        assert key == "|engineer|https://example.com/job"
-        assert 'nan' not in key.lower()
-
-    def test_key_with_inf_values(self):
-        """Test that Inf values are converted to empty strings"""
-        job = _make_job(company=float('inf'), title='Engineer', url='https://example.com/job')
-        key = get_job_key(job)
-        assert key == "|engineer|https://example.com/job"
-        assert 'inf' not in key.lower()
-
-    def test_key_with_numeric_values(self):
-        """Test key generation with numeric values (e.g., from malformed API responses)"""
-        job = _make_job(company=123, title=456, url=789)
-        key = get_job_key(job)
-        assert key == "123|456|789"
-
-    def test_key_with_unicode_characters(self):
-        """Test key generation preserves Unicode characters"""
-        job = _make_job(company='Société Générale', title='Ingénieur Logiciel', url='https://example.com/job')
-        key = get_job_key(job)
-        # Unicode should be preserved
-        assert 'société générale' in key
-        assert 'ingénieur logiciel' in key
-
-    def test_key_with_empty_strings(self):
-        """Test key generation with empty string values"""
-        job = _make_job(company='', title='', url='')
-        key = get_job_key(job)
-        assert key == "||"
+    @pytest.mark.parametrize('bad', [None, float('nan'), float('inf'), 123])
+    def test_key_tolerates_non_string_values(self, bad):
+        assert get_job_key(_make_job(company=bad, title=bad, url=bad)).startswith('job_')
 
 
-class TestDeduplicateJobs:
-    """Tests for the deduplicate_jobs() function"""
+class TestNormalization:
+    def test_company_suffixes_and_punctuation(self):
+        assert normalize_company('Databricks, Inc.') == normalize_company('databricks')
+        assert normalize_company('AT&T') == 'at and t'
+        assert normalize_company('Co') == 'co'  # a lone suffix word is kept
 
-    def test_deduplicate_no_duplicates(self):
-        """Test that unique jobs are preserved"""
+    def test_cross_source_key_requires_company_and_title(self):
+        assert cross_source_key(_make_job(company='')) is None
+        assert cross_source_key(_make_job(title=None)) is None
+        assert cross_source_key(_make_job(company='Société Générale')) == ('societe generale', 'engineer')
+
+    @pytest.mark.parametrize('a, b', [
+        ('Santa Clara, CA, US', 'US, California, Santa Clara'),
+        ('Toronto, Canada', 'Toronto, ON, CA'),
+        ('New York, NY, US', 'New York City, New York'),
+        ('Palo Alto, CA, US', '2 Locations'),
+        ('Remote, US', 'United States (Remote)'),
+        ('', 'London'),
+    ])
+    def test_locations_compatible_across_source_formats(self, a, b):
+        assert locations_compatible(a, b)
+
+    @pytest.mark.parametrize('a, b', [
+        ('New York, NY', 'London, UK'),
+        ('Seattle, WA', 'Austin, TX'),
+    ])
+    def test_different_cities_are_incompatible(self, a, b):
+        assert not locations_compatible(a, b)
+
+    def test_location_tokens_drop_noise(self):
+        assert location_tokens('US, California, Santa Clara') == {'santa', 'clara'}
+        assert location_tokens('Hybrid - 2 Locations') == frozenset()
+
+    @pytest.mark.parametrize('source, expected', [
+        ('JobSpy (Indeed)', True), ('JobSpy (Linkedin)', True), ('', True), (None, True),
+        ('Greenhouse', False), ('Ashby', False), ('Workday', False), ('Google Careers', False),
+    ])
+    def test_is_aggregator_source(self, source, expected):
+        assert is_aggregator_source(source) is expected
+
+
+class TestSamePostingPass:
+    def test_no_duplicates_kept_in_order(self):
         jobs = [
             _make_job(company='ACME', title='SWE', url='https://acme.com/swe'),
             _make_job(company='ACME', title='DevOps', url='https://acme.com/devops'),
             _make_job(company='TechCorp', title='SWE', url='https://tech.com/swe'),
         ]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 3
-        assert result == jobs
+        assert deduplicate_jobs(jobs) == jobs
 
-    def test_deduplicate_removes_exact_duplicates(self, capsys):
-        """Test that exact duplicate jobs are removed"""
+    def test_exact_duplicates_removed_and_logged(self, caplog):
         job = _make_job(company='ACME', title='SWE', url='https://acme.com/swe')
-        jobs = [job, job, job]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 1
-        assert result[0] == job
-        # Check that deduplication message is printed
-        captured = capsys.readouterr()
-        assert "Removed 2 duplicate jobs" in captured.out
+        result = deduplicate_jobs([job, job, job])
+        assert result == [job]
+        assert "Removed 2 duplicate jobs" in caplog.text
 
-    def test_deduplicate_case_insensitive_matching(self, capsys):
-        """Test that deduplication is case-insensitive for company/title"""
-        job1 = _make_job(company='ACME', title='SOFTWARE ENGINEER', url='https://acme.com/swe')
-        job2 = _make_job(company='acme', title='software engineer', url='https://acme.com/swe')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 1
-        assert result[0] == job1  # First occurrence is kept
+    def test_tracking_param_variants_are_one_posting(self, caplog):
+        a = _make_job(url='https://jobs.lever.co/acme/abc?lever-source=LinkedIn')
+        b = _make_job(url='https://jobs.lever.co/acme/abc/')
+        assert deduplicate_jobs([a, b]) == [a]
 
-    def test_deduplicate_preserves_order(self):
-        """Test that deduplication preserves the order of first occurrence"""
-        jobs = [
-            _make_job(company='Company1', title='Title1', url='https://example.com/1'),
-            _make_job(company='Company2', title='Title2', url='https://example.com/2'),
-            _make_job(company='Company1', title='Title1', url='https://example.com/1'),  # Duplicate of first
-            _make_job(company='Company3', title='Title3', url='https://example.com/3'),
-        ]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 3
-        assert result[0]['company'] == 'Company1'
-        assert result[1]['company'] == 'Company2'
-        assert result[2]['company'] == 'Company3'
+    def test_same_url_is_one_posting_even_if_title_changed(self):
+        """The URL identifies the posting; a retitled copy is the same job."""
+        a = _make_job(title='Software Engineer', url='https://acme.com/careers/1')
+        b = _make_job(title='Software Engineer I', url='https://acme.com/careers/1')
+        assert deduplicate_jobs([a, b]) == [a]
 
-    def test_deduplicate_handles_nan_values(self, capsys):
-        """Test that jobs with NaN are deduplicated correctly"""
-        job1 = _make_job(company='ACME', title=float('nan'), url='https://acme.com/job')
-        job2 = _make_job(company='ACME', title=float('nan'), url='https://acme.com/job')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 1
+    def test_different_urls_same_source_are_kept(self):
+        """Distinct requisitions routinely share company/title/location."""
+        a = _make_job(url='https://boards.greenhouse.io/anduril/jobs/1')
+        b = _make_job(url='https://boards.greenhouse.io/anduril/jobs/2')
+        assert deduplicate_jobs([a, b]) == [a, b]
 
-    def test_deduplicate_empty_list(self, capsys):
-        """Test deduplication with empty list"""
-        result = deduplicate_jobs([])
-        assert len(result) == 0
-        captured = capsys.readouterr()
-        assert "Removed" not in captured.out  # No message for 0 removals
+    def test_no_url_falls_back_to_company_title_location(self):
+        a = _make_job(url='', source='GraphQL')
+        b = _make_job(url=None, source='GraphQL', company=' test corp ')
+        c = _make_job(url=None, source='GraphQL', title='Other')
+        assert deduplicate_jobs([a, b, c]) == [a, c]
 
-    def test_deduplicate_single_job(self):
-        """Test deduplication with single job"""
-        job = _make_job(company='ACME', title='SWE', url='https://acme.com/swe')
-        result = deduplicate_jobs([job])
-        assert len(result) == 1
-        assert result[0] == job
+    def test_empty_and_single(self, caplog):
+        assert deduplicate_jobs([]) == []
+        job = _make_job()
+        assert deduplicate_jobs([job]) == [job]
+        assert "Removed" not in caplog.text
 
-    def test_deduplicate_url_field_critical(self):
-        """Test that URL is part of the deduplication key"""
-        # Same company and title, but different URLs should be kept separate
-        job1 = _make_job(company='ACME', title='SWE', url='https://acme.com/job1')
-        job2 = _make_job(company='ACME', title='SWE', url='https://acme.com/job2')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 2
+    def test_input_not_mutated(self):
+        jobs = [_make_job(), _make_job()]
+        snapshot = [dict(j) for j in jobs]
+        deduplicate_jobs(jobs)
+        assert jobs == snapshot
 
-    def test_deduplicate_company_field_critical(self):
-        """Test that company is part of the deduplication key"""
-        # Same title and URL, but different companies should be kept separate
-        job1 = _make_job(company='ACME', title='SWE', url='https://careers.example.com/swe')
-        job2 = _make_job(company='TechCorp', title='SWE', url='https://careers.example.com/swe')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 2
+    def test_large_list(self):
+        base = _make_job()
+        jobs = [base] * 500 + [_make_job(url=f'https://example.com/{i}', title=f'T{i}') for i in range(500)]
+        assert len(deduplicate_jobs(jobs)) == 501
 
-    def test_deduplicate_title_field_critical(self):
-        """Test that title is part of the deduplication key"""
-        # Same company and URL, but different titles should be kept separate
-        job1 = _make_job(company='ACME', title='Software Engineer', url='https://acme.com/careers')
-        job2 = _make_job(company='ACME', title='DevOps Engineer', url='https://acme.com/careers')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 2
 
-    def test_deduplicate_mixed_duplicates(self, capsys):
-        """Test deduplication with various duplicate patterns"""
-        jobs = [
-            _make_job(company='ACME', title='SWE', url='https://acme.com/1'),
-            _make_job(company='ACME', title='SWE', url='https://acme.com/1'),  # Exact duplicate
-            _make_job(company='ACME', title='SWE', url='https://acme.com/2'),  # Different URL
-            _make_job(company='ACME', title='SWE', url='https://acme.com/1'),  # Duplicate again
-            _make_job(company='TechCorp', title='SWE', url='https://acme.com/1'),  # Different company
-        ]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 3
-        captured = capsys.readouterr()
-        assert "Removed 2 duplicate jobs" in captured.out
+class TestCrossSourcePass:
+    def test_ats_beats_jobspy(self):
+        ats = _make_job(source='Greenhouse', url='https://boards.greenhouse.io/acme/jobs/1')
+        indeed = _make_job(source='JobSpy (Indeed)', url='https://www.indeed.com/viewjob?jk=1')
+        result, stats = deduplicate_jobs_with_stats([indeed, ats])
+        assert result == [ats]
+        assert stats.cross_source == 1 and stats.same_posting == 0
 
-    def test_deduplicate_whitespace_normalization(self, capsys):
-        """Test that whitespace differences don't affect deduplication"""
-        job1 = _make_job(company='  ACME  ', title='  SWE  ', url='https://acme.com/job')
-        job2 = _make_job(company='ACME', title='SWE', url='https://acme.com/job')
-        jobs = [job1, job2]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 1
-        captured = capsys.readouterr()
-        assert "Removed 1 duplicate jobs" in captured.out
+    def test_company_on_two_atss_keeps_the_richer_one(self):
+        gh = _make_job(company='Databricks', source='Greenhouse', url='https://databricks.com/job?gh_jid=1',
+                       description='')
+        ashby = _make_job(company='Databricks, Inc.', source='Ashby', url='https://jobs.ashbyhq.com/databricks/x',
+                          description='A real description', comp={'min': 1, 'max': 2})
+        assert deduplicate_jobs([gh, ashby]) == [ashby]
 
-    def test_deduplicate_preserves_job_data(self):
-        """Test that deduplication preserves all job fields"""
-        job = _make_job(
-            company='ACME',
-            title='SWE',
-            url='https://acme.com/job',
-            posted_at='2026-03-01',
-            salary='150k',
-            location='New York'
-        )
-        duplicate_job = {**job}  # Create an exact copy
-        jobs = [job, duplicate_job]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 1
-        # Verify all fields are preserved in the kept job
-        assert result[0]['company'] == 'ACME'
-        assert result[0]['title'] == 'SWE'
-        assert result[0]['salary'] == '150k'
-        assert result[0]['location'] == 'New York'
+    def test_equal_data_tie_goes_to_first_seen_source(self):
+        gh = _make_job(source='Greenhouse', url='https://a.com/1')
+        ashby = _make_job(source='Ashby', url='https://b.com/1')
+        assert deduplicate_jobs([gh, ashby]) == [gh]
+        assert deduplicate_jobs([ashby, gh]) == [ashby]
 
-    def test_deduplicate_large_list(self):
-        """Test deduplication with a large list to ensure no performance issues"""
-        # Create 1000 jobs with 500 duplicates
-        base_job = _make_job(company='ACME', title='SWE', url='https://acme.com/job')
-        jobs = [base_job] * 500
-        # Add 500 unique jobs
-        for i in range(500):
-            jobs.append(_make_job(company=f'Company{i}', title=f'Title{i}', url=f'https://example.com/{i}'))
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 501
+    def test_all_jobs_of_the_losing_source_are_dropped_winner_keeps_all(self):
+        gh = [_make_job(source='Greenhouse', url=f'https://gh.com/{i}', description='long text') for i in range(2)]
+        ashby = [_make_job(source='Ashby', url=f'https://ashby.com/{i}', description='') for i in range(2)]
+        result, stats = deduplicate_jobs_with_stats(ashby + gh)
+        assert result == gh
+        assert stats.cross_source == 2
 
-    def test_deduplicate_no_message_for_no_removals(self, capsys):
-        """Test that no deduplication message is printed when no duplicates are removed"""
-        jobs = [
-            _make_job(company='ACME', title='SWE', url='https://acme.com/1'),
-            _make_job(company='TechCorp', title='DevOps', url='https://tech.com/2'),
-        ]
-        result = deduplicate_jobs(jobs)
-        assert len(result) == 2
-        captured = capsys.readouterr()
-        assert "Removed" not in captured.out
+    def test_different_locations_are_not_merged(self):
+        gh = _make_job(source='Greenhouse', url='https://a.com/1', location='New York')
+        ashby = _make_job(source='Ashby', url='https://b.com/1', location='London')
+        assert len(deduplicate_jobs([gh, ashby])) == 2
+
+    def test_blank_company_never_merged(self):
+        a = _make_job(company='', source='Greenhouse', url='https://a.com/1')
+        b = _make_job(company='', source='JobSpy (Indeed)', url='https://b.com/1')
+        assert len(deduplicate_jobs([a, b])) == 2
+
+    def test_reformatted_location_from_indeed_is_merged_into_workday(self):
+        workday = _make_job(company='NVIDIA', title='Security Architect - New College Grad 2026',
+                            location='US, CA, Santa Clara', source='Workday', url='https://nvidia.wd5.myworkdayjobs.com/x')
+        indeed = _make_job(company='Nvidia', title='Security Architect, New College Grad 2026',
+                           location='Santa Clara, CA, US', source='JobSpy (Indeed)',
+                           url='https://www.indeed.com/viewjob?jk=9')
+        assert deduplicate_jobs([indeed, workday]) == [workday]
+
+    def test_loser_in_an_incompatible_city_is_kept(self):
+        gh = _make_job(source='Greenhouse', url='https://a.com/1', location='Seattle, WA')
+        indeed = [_make_job(source='JobSpy (Indeed)', url='https://www.indeed.com/viewjob?jk=1', location='Seattle, WA'),
+                  _make_job(source='JobSpy (Indeed)', url='https://www.indeed.com/viewjob?jk=2', location='Austin, TX')]
+        assert deduplicate_jobs([gh] + indeed) == [gh, indeed[1]]
+
+    def test_log_line_splits_counts(self, caplog):
+        job = _make_job()
+        indeed = _make_job(source='JobSpy (Indeed)', url='https://www.indeed.com/viewjob?jk=1')
+        deduplicate_jobs([job, job, indeed])
+        assert "Removed 2 duplicate jobs (1 same posting, 1 cross-source)" in caplog.text

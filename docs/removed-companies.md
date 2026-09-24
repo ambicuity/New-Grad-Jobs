@@ -176,7 +176,7 @@ endpoint as of 2026-05-16:
 
 Microsoft, Oracle, Salesforce, ServiceNow, JPMorgan, Goldman Sachs, Morgan
 Stanley, etc. are configured under Workday but currently fail with `HTTP 422`
-— see [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+— see [`docs/operations.md`](operations.md#a-source-returns-far-fewer-jobs).
 
 ## 2026-08-12 — CSV sourcing sweep (55 boards added)
 
@@ -259,7 +259,7 @@ cleanup concluded that most Lever boards had migrated away.
 ### Workday (23 added)
 
 All 23 answered the CXS jobs API with `HTTP 200` on 2026-08-12 — none are in the
-`HTTP 422` cohort described in [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+`HTTP 422` cohort described in [`docs/operations.md`](operations.md#a-source-returns-far-fewer-jobs).
 
 | Company | Careers site | Job count (probe) |
 |---|---|---|
@@ -315,11 +315,47 @@ for. Grouped by ATS, with the employer count per family:
 
 The largest single gap is ByteDance: 58 of the CSV's 359 postings, all on
 `joinbytedance.com`, which exposes no public board API. TikTok's Workday tenant
-(`bytedance.wd3.myworkdayjobs.com/TikTok`) is already configured and covers the
-TikTok-branded reqs only. ByteDance-branded reqs remain reachable only through
+(`bytedance.wd3.myworkdayjobs.com/TikTok`) has no public site (HTTP 401) and was
+removed on 2026-09-24 (see below). ByteDance- and TikTok-branded reqs remain reachable only through
 the JobSpy/Indeed layer, where `ByteDance new grad` and `TikTok new grad` are
 already configured search terms.
 
 Castleton Commodities International (`osv-cci.wd1.myworkdayjobs.com/CCICareers`)
 is a Workday tenant but answered `HTTP 422` on every tenant-path variant tried —
 same failure mode as the 422 cohort, so it was left out rather than added dead.
+
+## 2026-09-24 — Workday cleanup (`HTTP 422` / `401`)
+
+Every configured Workday entry was probed live. Workday answers `HTTP 422` with an
+empty body when the tenant or site id in `workday_url` does not exist on that `wdN`
+data centre, and `HTTP 401` when the tenant exists but has no public career site. 19
+entries were corrected to their real tenant/site (Cisco, Salesforce, Capital One, PwC,
+Accenture, Bank of America, Fidelity, Johnson & Johnson, Merck, Bristol Myers Squibb,
+Walmart, P&G, RTX/Raytheon, GDIT, Samsung, Sony, GM, CACI, and VMware → Broadcom).
+The 33 below were removed; several are still reachable through the JobSpy/Indeed layer.
+
+| Company | Reason |
+|---|---|
+| Microsoft, Netflix, Oracle, SAP, ServiceNow, Amazon, IBM, Ford, Lockheed Martin, L3Harris, Deloitte, EY, McKinsey, BCG, JPMorgan, Goldman Sachs, SAIC | not on public Workday (custom careers site or other ATS) |
+| AMD, Charles Schwab, PepsiCo, Peraton | moved to iCIMS |
+| Morgan Stanley, Starbucks, American Express | moved to Eightfold (Amex also Oracle) |
+| UnitedHealth Group | Taleo |
+| Honeywell | Oracle Recruiting |
+| Splunk | now part of Cisco (covered by the Cisco entry) |
+| TikTok, AbbVie, Intuit, Lenovo, Dell | tenant exists but no public site (`HTTP 401`) or no site id found |
+| Qualcomm | Workday site returns 0 jobs (moved off Workday) |
+
+## 2026-09-24 — Greenhouse and Ashby cleanup (`HTTP 404`)
+
+The board API returned `404` for 34 Greenhouse boards and 14 Ashby boards (verified
+with curl). Twelve of those companies had moved ATS and were re-added on their new
+board; the rest were removed.
+
+| Company | Old board | Action |
+|---|---|---|
+| ClickHouse, Materialize, Temporal, Ramp, Deel, Vanta, Miro, Confluent, Niantic, Alchemy | Greenhouse | moved to Ashby (re-added) |
+| Zoox, Kraken | Greenhouse | moved to Lever (re-added) |
+| Cohere, Notion | Greenhouse | already configured on Ashby; Greenhouse duplicate removed |
+| Cerebral, Magic Leap, Marqeta, Opendoor, Postman, Unity Technologies, Hugging Face, Adept AI, Character AI, Jasper, Rippling, Pipe, Navan, Retool, Canva, dbt Labs, HashiCorp, Aurora, Cruise, Chainalysis | Greenhouse | removed (board gone; no public Greenhouse/Ashby/Lever board found) |
+| Anthropic, Databricks | Ashby | removed (still configured on Greenhouse, which works) |
+| Cal.com, Dub, Groq, Hugging Face, Mistral AI, PlanetScale, Replicate, Scale AI, Statsig, Tinybird, Together AI, Weights & Biases | Ashby | removed (slug no longer exists) |
