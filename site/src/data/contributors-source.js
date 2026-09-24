@@ -1,21 +1,21 @@
-// Loads contributors.json and enriches it with GitHub API stats: one
-// unauthenticated /repos call (stars / forks / issues), /contributors (real
-// per-author commit counts) and a search for open PRs. Cached in localStorage
-// for an hour to stay polite under the 60 req/hr/IP limit.
+// Loads contributors.json and enriches it with GitHub API stats: /repos
+// (stars / forks / issues), /contributors (real per-author commit counts),
+// /languages (repo language bytes) and a search for open PRs. Cached in
+// localStorage for an hour to stay polite under the 60 req/hr/IP limit.
 
 import {
-  DEFAULT_REPO, REPO_SLUG, applyGhEnrichment, buildGhPayload, mapContributor,
+  DEFAULT_REPO, REPO_SLUG, applyGhEnrichment, buildGhPayload, isGhPayload, mapContributor,
 } from '../lib/contributors.js';
 
 export const CONTRIBUTORS_URL = './contributors.json';
-const GH_API = 'https://api.github.com';
-const GH_TTL_MS = 60 * 60 * 1000;
-const CACHE_KEY = 'ng-terminal:gh-v1';
+export const GH_API = 'https://api.github.com';
+export const GH_TTL_MS = 60 * 60 * 1000;
+const CACHE_KEY = 'ng-terminal:gh-v2';
 // A slow or hanging api.github.com must not keep the contributors view on its
-// loading state forever — give up and fall back to placeholders after this.
+// loading state forever — give up and show unknown ("—") stats after this.
 export const GH_TIMEOUT_MS = 6000;
 
-function storage() {
+export function storage() {
   try {
     return typeof localStorage !== 'undefined' ? localStorage : null;
   } catch {
@@ -23,48 +23,68 @@ function storage() {
   }
 }
 
-export function readGhCache(store = storage(), now = Date.now()) {
+/**
+ * Read a `{t, data}` localStorage entry younger than `ttlMs` whose data passes
+ * `isValid`. Anything missing, expired, malformed or of the wrong shape → null.
+ */
+export function readCacheEntry(key, isValid, { store = storage(), now = Date.now(), ttlMs = GH_TTL_MS } = {}) {
   try {
-    const raw = store && store.getItem(CACHE_KEY);
+    const raw = store && store.getItem(key);
     if (!raw) return null;
     const obj = JSON.parse(raw);
-    if (!obj || now - obj.t > GH_TTL_MS) return null;
-    return obj.data;
+    if (!obj || typeof obj !== 'object' || typeof obj.t !== 'number') return null;
+    if (now - obj.t > ttlMs || obj.t > now) return null;
+    return isValid(obj.data) ? obj.data : null;
   } catch {
     return null;
   }
 }
 
-export function writeGhCache(data, store = storage(), now = Date.now()) {
+export function writeCacheEntry(key, data, { store = storage(), now = Date.now() } = {}) {
   try {
-    if (store) store.setItem(CACHE_KEY, JSON.stringify({ t: now, data }));
+    if (store) store.setItem(key, JSON.stringify({ t: now, data }));
   } catch (err) {
-    console.warn('[terminal] could not cache github stats:', err && err.message);
+    console.warn('[terminal] could not cache github data:', err && err.message);
   }
 }
+
+export function readGhCache(store = storage(), now = Date.now()) {
+  return readCacheEntry(CACHE_KEY, isGhPayload, { store, now });
+}
+
+export function writeGhCache(data, store = storage(), now = Date.now()) {
+  writeCacheEntry(CACHE_KEY, data, { store, now });
+}
+
+export const GH_HEADERS = { Accept: 'application/vnd.github+json' };
 
 export async function fetchGitHubMeta(fetchImpl = fetch, timeoutMs = GH_TIMEOUT_MS) {
   const cached = readGhCache();
   if (cached) return cached;
   const ctrl = typeof AbortController === 'function' ? new AbortController() : null;
   const timer = ctrl ? setTimeout(() => ctrl.abort(), timeoutMs) : null;
-  const opts = { headers: { Accept: 'application/vnd.github+json' }, signal: ctrl ? ctrl.signal : undefined };
+  const opts = { headers: GH_HEADERS, signal: ctrl ? ctrl.signal : undefined };
+  const jsonIfOk = async (res) => (res.ok ? res.json() : null);
   try {
-    const [repoRes, contribRes, prsRes] = await Promise.all([
+    const [repoRes, contribRes, prsRes, langsRes] = await Promise.all([
       fetchImpl(`${GH_API}/repos/${REPO_SLUG}`, opts),
       fetchImpl(`${GH_API}/repos/${REPO_SLUG}/contributors?per_page=100`, opts),
       fetchImpl(`${GH_API}/search/issues?q=repo:${REPO_SLUG}+type:pr+state:open&per_page=1`, opts),
+      fetchImpl(`${GH_API}/repos/${REPO_SLUG}/languages`, opts),
     ]);
     if (!repoRes.ok || !contribRes.ok) {
-      console.warn('[terminal] github api unavailable, falling back to placeholders');
+      console.warn('[terminal] github api unavailable (HTTP %s/%s); repo stats unknown', repoRes.status, contribRes.status);
       return null;
     }
     const data = buildGhPayload(
       await repoRes.json(),
       await contribRes.json(),
-      prsRes.ok ? await prsRes.json() : null,
+      await jsonIfOk(prsRes),
+      await jsonIfOk(langsRes),
     );
-    writeGhCache(data);
+    // Only cache complete answers, so a rate-limited PR search or languages
+    // call is retried on the next visit instead of pinned for an hour.
+    if (prsRes.ok && langsRes.ok) writeGhCache(data);
     return data;
   } catch (err) {
     console.warn('[terminal] github api fetch failed:', err && err.message);
@@ -89,7 +109,7 @@ export async function loadContributors(fetchImpl = fetch) {
     const r = await fetchImpl(CONTRIBUTORS_URL, { cache: 'no-cache' });
     if (!r.ok) throw new Error(`contributors.json: HTTP ${r.status}`);
     const d = await r.json();
-    const list = ((d && d.contributors) || []).map(mapContributor);
+    const list = ((d && Array.isArray(d.contributors) && d.contributors) || []).map(mapContributor);
     const gh = await fetchGitHubMeta(fetchImpl);
     return applyGhEnrichment(list, DEFAULT_REPO, gh);
   } catch (err) {

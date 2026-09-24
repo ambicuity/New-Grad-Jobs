@@ -1,11 +1,11 @@
 // Contributors view — same Bloomberg-terminal chrome as Hiring.
 
-import { useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { BBG, FONT_STACK } from '../../lib/theme.js';
 import { toggleFacet } from '../../lib/filters.js';
 import { clickSort } from '../../lib/sort.js';
 import {
-  DEFAULT_REPO, EMPTY_CONTRIB_FILTERS, filterContributors, sortContributors, sparkValues,
+  DEFAULT_REPO, EMPTY_CONTRIB_FILTERS, facetOptions, filterContributors, sortContributors,
 } from '../../lib/contributors.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { usePromiseSettled } from '../../hooks/usePromiseSettled.js';
@@ -13,6 +13,7 @@ import { FKey, MobileOverlay } from '../ui.jsx';
 import { ContribRail } from './ContribRail.jsx';
 import { ContribTable } from './ContribTable.jsx';
 import { ContribDetail } from './ContribDetail.jsx';
+import { useContribKeys } from './useContribKeys.js';
 
 /**
  * Contributors tab entry point. The app mounts as soon as jobs load, so
@@ -52,6 +53,7 @@ function ContributorsBody({ contributors, repo }) {
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
   const searchRef = useRef(null);
 
+  const options = useMemo(() => facetOptions(contributors), [contributors]);
   const filtered = useMemo(
     () => sortContributors(filterContributors(contributors, filters, q), sort.key, sort.dir),
     [contributors, filters, q, sort],
@@ -62,10 +64,20 @@ function ContributorsBody({ contributors, repo }) {
     setSelectedHandle(filtered[0].handle);
   }
   const selected = contributors.find((c) => c.handle === selectedHandle) || filtered[0];
-  const spark = useMemo(() => sparkValues(selected?.handle), [selected]);
 
   const toggleSet = (key, val) => setFilters((f) => toggleFacet(f, key, val));
   const sortClick = (k) => setSort((s) => clickSort(s, k));
+  const clearAll = useCallback(() => {
+    setQ('');
+    setFilters(EMPTY_CONTRIB_FILTERS());
+  }, []);
+  const toggleSort = useCallback(
+    () => setSort((s) => ({ key: s.key === 'commits' ? 'handle' : 'commits', dir: 1 })),
+    [],
+  );
+  useContribKeys({
+    enabled: !isMobile, filtered, selected, setSelectedHandle, searchRef, clearAll, toggleSort,
+  });
   const select = (handle, openOnMobile) => {
     setSelectedHandle(handle);
     if (openOnMobile && isMobile) setMobileDetailOpen(true);
@@ -89,6 +101,7 @@ function ContributorsBody({ contributors, repo }) {
           open={drawerOpen}
           onToggleOpen={() => setDrawerOpen((o) => !o)}
           repo={repo}
+          options={options}
           filters={filters}
           onToggle={toggleSet}
           filtered={filtered}
@@ -98,6 +111,7 @@ function ContributorsBody({ contributors, repo }) {
         <ContribTable
           isMobile={isMobile}
           contributors={contributors}
+          repo={repo}
           filtered={filtered}
           searchRef={searchRef}
           q={q}
@@ -107,7 +121,7 @@ function ContributorsBody({ contributors, repo }) {
           selectedHandle={selectedHandle}
           onSelect={select}
         />
-        {!isMobile && <ContribDetail c={selected} contributors={contributors} spark={spark} />}
+        {!isMobile && <ContribDetail c={selected} contributors={contributors} />}
       </div>
 
       {isMobile && mobileDetailOpen && selected && (
@@ -116,7 +130,7 @@ function ContributorsBody({ contributors, repo }) {
           backLabel="Back to contributor list"
           onBack={() => setMobileDetailOpen(false)}
         >
-          <ContribDetail c={selected} contributors={contributors} spark={spark} />
+          <ContribDetail c={selected} contributors={contributors} />
         </MobileOverlay>
       )}
 
