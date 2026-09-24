@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { ngjSeo } from './scripts/seo/vite-plugin.mjs';
 
 // `base: './'` keeps every emitted URL relative, so the build works both at the
 // custom-domain root (jobs.riteshrana.engineer) and under a sub-path
@@ -7,7 +8,9 @@ import react from '@vitejs/plugin-react';
 // for the same reason (see src/data/*).
 export default defineConfig({
   base: './',
-  plugins: [react()],
+  // ngjSeo: build-time CSP meta + per-job pages, sitemap, robots, prerendered
+  // job list (reads public/ data, tolerates it being absent).
+  plugins: [react(), ngjSeo()],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
