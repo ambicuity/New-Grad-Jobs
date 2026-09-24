@@ -1,9 +1,13 @@
 name: Update New Grad Jobs
 
 on:
-  # Run every 5 minutes
+  # Every 30 minutes, offset from :00/:30 — GitHub's documented high-load
+  # window where scheduled runs are delayed or dropped. A run takes ~8-9 min,
+  # so the old */5 schedule could never be honoured (effective cadence was
+  # ~40 min) and just queued wasted triggers. scraper-watchdog.yml re-dispatches
+  # this workflow if data goes stale because a schedule stops firing.
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '7,37 * * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -17,16 +21,20 @@ on:
       - config.yml
       - requirements.txt
 
-# Prevent concurrent executions of the same workflow
+# One run at a time. Queue (don't cancel) so an in-flight scrape is never
+# killed minutes before it commits; GitHub keeps at most one pending run.
 concurrency:
   group: update-jobs
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
+    # Normal runs take ~9 min; the 360-min default would let a hung fetch burn
+    # six runner-hours and block every queued run behind it.
+    timeout-minutes: 25
     permissions:
       contents: write
 
@@ -35,7 +43,9 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          # Shallow clone: the job only rebases its one commit onto main, and
+          # full history (~280 MB) made checkout take over a minute per run.
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
@@ -120,6 +130,7 @@ jobs:
             docs/predictions.json
             docs/market-history.json
             docs/jobs.json
+            docs/jobs-index.json
             docs/health.json
 
       - name: Commit and push changes
@@ -133,7 +144,7 @@ jobs:
           git config pull.rebase true
           git pull origin main --autostash
 
-          git add docs/jobs.json docs/market-history.json docs/health.json docs/feed.xml README.md
+          git add docs/jobs.json docs/jobs-index.json docs/descriptions docs/market-history.json docs/health.json docs/feed.xml README.md
           if [ -f "docs/predictions.json" ]; then
             git add docs/predictions.json
           fi

@@ -12,7 +12,7 @@ First off — **thank you** for taking the time to contribute! 🎉
 
 New Grad Jobs is a fully automated job aggregator that helps new graduates find their first tech role. Every contribution — whether it's submitting a missing job, fixing a bug in the scraper, improving the frontend, or helping with docs — directly helps thousands of job seekers.
 
-> **Heads-up:** `README.md` is auto-generated every 5 minutes by GitHub Actions. **Never edit it manually** — your changes will be overwritten.
+> **Heads-up:** `README.md` is auto-generated about every 30 minutes by GitHub Actions. **Never edit it manually** — your changes will be overwritten.
 
 ---
 
@@ -502,7 +502,7 @@ New-Grad-Jobs/
 │   └── jobs.json               # Mirrored jobs data for Pages
 └── .github/
     ├── workflows/
-    │   └── update-jobs.yml     # Runs every 5 minutes
+    │   └── update-jobs.yml     # Runs about every 30 minutes
     └── ISSUE_TEMPLATE/         # Structured issue forms
 ```
 

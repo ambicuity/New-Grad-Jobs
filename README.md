@@ -10,7 +10,7 @@
 
 **Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates.
 
-Unlike manually curated lists, this repository pulls directly from configured company APIs and refreshes **every 5 minutes**, 24/7.
+Unlike manually curated lists, this repository pulls directly from configured company APIs and refreshes **about every 30 minutes**, 24/7.
 
 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose). See the [contribution guidelines](CONTRIBUTING.md) to get started.
 
@@ -76,7 +76,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed every 5 minutes. Browse and filter all **1,872** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **1,872** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -296,7 +296,7 @@ Experience an advanced career journey with us! 🚀
 
 ## About This Repository
 
-This repository automatically scrapes new graduate job opportunities from various company job boards **every 5 minutes** using multiple data sources and APIs.
+This repository automatically scrapes new graduate job opportunities from various company job boards **about every 30 minutes** using multiple data sources and APIs.
 
 ### Data Sources
 
@@ -313,8 +313,8 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 - **Terminal-aesthetic frontend (NGJ)** at [ambicuity.github.io/New-Grad-Jobs](https://ambicuity.github.io/New-Grad-Jobs/) — dense tabular layout rendered with JetBrains Mono, sortable by compensation / posted-date / deadline, filterable by role (12 categories: Software Engineering, Frontend, Backend, Mobile, Security, Data Science & ML, Data Engineering, Infrastructure & SRE, Product Management, Quantitative Finance, Hardware, Other), remote / hybrid / onsite, visa sponsorship, cohort, and company size. Hash-routed `#contributors` view shares the same chrome.
 - **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available — currently ~30 % of new-grad listings ship with a `$min–maxk` range. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
-- **Real "About the role"** copy from each posting is published in `docs/jobs.json` and rendered in the detail panel (92 % coverage across Greenhouse / Ashby / Lever).
-- **Real-time Updates**: Automatic refresh every 5 minutes via `.github/workflows/update-jobs.yml`.
+- **Real "About the role"** copy from each posting is published in `docs/descriptions/*.json` (lazy-loaded) and rendered in the detail panel (92 % coverage across Greenhouse / Ashby / Lever).
+- **Real-time Updates**: Automatic refresh about every 30 minutes via `.github/workflows/update-jobs.yml`.
 - **Smart Filtering**: New-grad-signal detection + USA-only locality + 60-day recency.
 - **Company Badges**: FAANG+ and unicorn companies highlighted.
 
@@ -331,6 +331,7 @@ Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable
 
 | Field | Type | Notes |
 |---|---|---|
+| `job_id` | string | stable content hash `job_<hex>` (company, title, url, location, source); keys the description shards |
 | `id` | string | de-duplicated `company-title-location` slug |
 | `company` | string | |
 | `title` | string | |
@@ -345,6 +346,11 @@ Each entry is consumed by the [NGJ frontend](docs/index.html) and is also stable
 | `is_closed` | bool | |
 | `comp` | object\|null | `{min, max, currency, source}` when extractable; null otherwise |
 | `description` | string | clean-text snippet (≤ 1200 chars) of the posting body, "" for Workday |
+
+The site itself loads two lighter artifacts generated alongside it:
+
+- `docs/jobs-index.json`: the same `meta` and jobs, minus `description`, minified. This is what the terminal UI fetches on page load.
+- `docs/descriptions/<0-f>.json`: `{job_id: full "About the role" text}`, sharded by the first hex digit of `job_id`. The UI fetches one shard the first time a job's detail pane opens.
 
 ### Companies Monitored
 

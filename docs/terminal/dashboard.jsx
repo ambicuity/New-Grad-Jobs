@@ -666,8 +666,11 @@ function extractRequirements(desc) {
 }
 
 function DashboardDetail({ job, saved, onSave }) {
+  // Hook runs before the early return so hook order stays stable.
+  const desc = useJobDescription(job);
   if (!job) return null;
   const days = daysLeft(job.dl);
+  const requirements = extractRequirements(desc);
   return (
     <div style={{ overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
       {/* Top card */}
@@ -701,7 +704,7 @@ function DashboardDetail({ job, saved, onSave }) {
         <div style={{
           color: BBG.ink, lineHeight: 1.55, fontSize: 11.5,
           maxHeight: 160, overflowY: 'auto', paddingRight: 8,
-        }}>{job.desc}</div>
+        }}>{desc}</div>
       </div>
 
       {/* Stack */}
@@ -721,9 +724,9 @@ function DashboardDetail({ job, saved, onSave }) {
       <div style={{ padding: '14px 16px', borderBottom: `1px solid ${BBG.rule2}` }}>
         <div style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.7, marginBottom: 6 }}>REQUIREMENTS</div>
         <div style={{ margin: 0, paddingLeft: 0, lineHeight: 1.7, color: BBG.ink, fontSize: 11.5 }}>
-          {job.desc && extractRequirements(job.desc).length > 0 ? (
+          {requirements.length > 0 ? (
             <ul style={{ margin: 0, paddingLeft: 16 }}>
-              {extractRequirements(job.desc).map((req, i) => (
+              {requirements.map((req, i) => (
                 <li key={i}>{req}</li>
               ))}
             </ul>

@@ -410,3 +410,50 @@ class TestEdgeCases:
         # Results should be identical regardless of config
         assert result_1['meta']['total_jobs'] == result_2['meta']['total_jobs']
         assert len(result_1['jobs']) == len(result_2['jobs'])
+
+
+class TestGenerateJobsJsonPayloadSplit:
+    """Heavy description fields live in lazily-loaded shards, not jobs.json."""
+
+    def _job(self):
+        return {
+            'id': 'x', 'company': 'Acme', 'title': 'SWE', 'location': 'NYC',
+            'url': 'https://acme.test/1', 'source': 'Greenhouse',
+            'posted_at': '2026-03-01', 'description': 'short',
+            'description_html': '<p>' + ('Long body. ' * 50) + '</p>',
+        }
+
+    def test_heavy_description_fields_are_not_published_in_jobs_json(self):
+        job = generate_jobs_json([self._job()], {})['jobs'][0]
+
+        assert 'description_html' not in job
+        assert 'full_description' not in job
+        assert job['description'] == 'short'
+
+    def test_each_job_carries_stable_job_id(self):
+        from contracts import compute_job_id
+
+        raw = self._job()
+        job = generate_jobs_json([dict(raw)], {})['jobs'][0]
+
+        assert job['job_id'] == compute_job_id(raw)
+        assert job['job_id'].startswith('job_')
+
+    def test_build_full_descriptions_prefers_cleaned_html(self):
+        from update_jobs import build_full_descriptions
+        from contracts import compute_job_id
+
+        raw = self._job()
+        texts = build_full_descriptions([raw])
+
+        text = texts[compute_job_id(raw)]
+        assert text.startswith('Long body.')
+        assert '<p>' not in text
+
+    def test_build_full_descriptions_falls_back_to_snippet(self):
+        from update_jobs import build_full_descriptions
+        from contracts import compute_job_id
+
+        raw = {**self._job(), 'description_html': ''}
+
+        assert build_full_descriptions([raw])[compute_job_id(raw)] == 'short'
