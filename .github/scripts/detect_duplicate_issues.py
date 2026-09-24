@@ -148,7 +148,7 @@ def build_comment(candidates: list[tuple[dict[str, Any], float]]) -> str:
         "🔁 **Possible duplicate detected**",
         "",
         "This issue looks similar to the following existing issue(s). "
-        "A maintainer will confirm — this is only a heads-up, nothing is closed automatically:",
+        + "A maintainer will confirm — this is only a heads-up, nothing is closed automatically:",
         "",
     ]
     for issue, score in candidates:
@@ -160,7 +160,7 @@ def build_comment(candidates: list[tuple[dict[str, Any], float]]) -> str:
     lines += [
         "",
         "If this is **not** a duplicate, please remove the "
-        f"`{DUPLICATE_LABEL}` label or leave a comment explaining the difference.",
+        + f"`{DUPLICATE_LABEL}` label or leave a comment explaining the difference.",
     ]
     return "\n".join(lines)
 
