@@ -71,7 +71,7 @@ class _InvalidNumericHost(ValueError):
     """Host looks like an IPv4 literal but does not parse as one."""
 
 
-def _coerce_ip(host: str) -> ipaddress._BaseAddress | None:
+def _coerce_ip(host: str) -> ipaddress.IPv4Address | ipaddress.IPv6Address | None:
     """Parse ``host`` as an IP address, including every legacy IPv4 encoding.
 
     ``urlparse`` leaves ``2130706433`` (decimal), ``0x7f000001`` (hex),
@@ -99,8 +99,8 @@ def _coerce_ip(host: str) -> ipaddress._BaseAddress | None:
     return ipaddress.IPv4Address(packed)
 
 
-def _is_public_ip(ip: ipaddress._BaseAddress) -> bool:
-    if ip.version == 6 and ip.ipv4_mapped is not None:
+def _is_public_ip(ip: ipaddress.IPv4Address | ipaddress.IPv6Address) -> bool:
+    if isinstance(ip, ipaddress.IPv6Address) and ip.ipv4_mapped is not None:
         ip = ip.ipv4_mapped
     return (
         ip.is_global
