@@ -176,7 +176,7 @@ endpoint as of 2026-05-16:
 
 Microsoft, Oracle, Salesforce, ServiceNow, JPMorgan, Goldman Sachs, Morgan
 Stanley, etc. are configured under Workday but currently fail with `HTTP 422`
-— see [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+— see [`docs/operations.md`](operations.md#a-source-returns-far-fewer-jobs).
 
 ## 2026-08-12 — CSV sourcing sweep (55 boards added)
 
@@ -259,7 +259,7 @@ cleanup concluded that most Lever boards had migrated away.
 ### Workday (23 added)
 
 All 23 answered the CXS jobs API with `HTTP 200` on 2026-08-12 — none are in the
-`HTTP 422` cohort described in [`docs/Workday-Investigation.md`](Workday-Investigation.md).
+`HTTP 422` cohort described in [`docs/operations.md`](operations.md#a-source-returns-far-fewer-jobs).
 
 | Company | Careers site | Job count (probe) |
 |---|---|---|
