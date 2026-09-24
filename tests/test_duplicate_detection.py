@@ -97,3 +97,119 @@ def test_build_comment_contains_marker_and_numbers():
 def test_empty_others_returns_no_candidates():
     target = {"number": 1, "title": "anything", "body": "text"}
     assert dd.find_duplicate_candidates(target, []) == []
+
+
+# --------------------------------------------------------------------------- #
+# Comment escaping (issue titles are attacker-controlled)
+# --------------------------------------------------------------------------- #
+def test_format_title_wraps_in_code_span_and_strips_backticks():
+    out = dd.format_title("@everyone `rm -rf` [click](https://evil.example)\n# heading")
+    assert out.startswith("`") and out.endswith("`")
+    assert out.count("`") == 2  # inner backticks removed; span cannot be closed early
+    assert "\n" not in out
+    assert "@everyone" in out  # kept, but inert inside the code span
+
+
+def test_format_title_handles_empty_and_long_titles():
+    assert dd.format_title(None) == "_(untitled)_"
+    assert dd.format_title("  `` ") == "_(untitled)_"
+    long = dd.format_title("x" * 500)
+    assert len(long) <= dd._MAX_TITLE_CHARS + 2
+    assert long.endswith("…`")
+
+
+def test_build_comment_escapes_mentions_and_markdown():
+    candidates = [({"number": 7, "title": "@maintainer **pwn** `x`", "state": "open"}, 0.9)]
+    body = dd.build_comment(candidates)
+    line = next(ln for ln in body.splitlines() if ln.startswith("- #7"))
+    assert "`@maintainer **pwn** x`" in line
+
+
+def test_build_comment_normalizes_unknown_state():
+    candidates = [({"number": 8, "title": "t", "state": "<b>weird</b>"}, 0.6)]
+    assert "<b>" not in dd.build_comment(candidates)
+
+
+# --------------------------------------------------------------------------- #
+# API glue with a stubbed transport
+# --------------------------------------------------------------------------- #
+def test_already_flagged_paginates_until_marker_found(monkeypatch):
+    requested = []
+
+    def fake_request(method, url, token, payload=None):
+        requested.append(url)
+        if "page=1" in url:
+            return [{"body": "unrelated"}] * dd._PER_PAGE
+        return [{"body": f"hi {dd.COMMENT_MARKER}"}]
+
+    monkeypatch.setattr(dd, "_request", fake_request)
+    assert dd._already_flagged("o/r", "t", 3) is True
+    assert any("page=2" in u for u in requested)
+
+
+def test_already_flagged_stops_on_short_page(monkeypatch):
+    calls = []
+
+    def fake_request(method, url, token, payload=None):
+        calls.append(url)
+        return [{"body": "nothing here"}]
+
+    monkeypatch.setattr(dd, "_request", fake_request)
+    assert dd._already_flagged("o/r", "t", 3) is False
+    assert len(calls) == 1
+
+
+def _set_env(monkeypatch, number="12"):
+    monkeypatch.setenv("GITHUB_TOKEN", "t")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "o/r")
+    monkeypatch.setenv("ISSUE_NUMBER", number)
+
+
+@pytest.mark.parametrize(
+    "exc",
+    [
+        dd.urllib.error.URLError("dns failure"),
+        dd.urllib.error.HTTPError("https://api.github.com", 502, "bad gateway", None, None),
+        TimeoutError("read timed out"),
+    ],
+)
+def test_main_swallows_network_errors(monkeypatch, capsys, exc):
+    _set_env(monkeypatch)
+
+    def boom(*args, **kwargs):
+        raise exc
+
+    monkeypatch.setattr(dd, "_request", boom)
+    assert dd.main() == 0
+    assert "GitHub API request failed" in capsys.readouterr().out
+
+
+def test_main_rejects_non_numeric_issue_number(monkeypatch, capsys):
+    _set_env(monkeypatch, number="abc")
+    assert dd.main() == 0
+    assert "Invalid numeric setting" in capsys.readouterr().out
+
+
+def test_main_posts_escaped_comment_for_duplicate(monkeypatch):
+    _set_env(monkeypatch)
+    target = {"number": 12, "title": "Add duplicate issue guardrail", "body": "detect duplicate issues"}
+    other = {"number": 5, "title": "Add duplicate issue guardrail @someone", "body": "detect duplicate issues"}
+    posts = []
+
+    def fake_request(method, url, token, payload=None):
+        if method == "POST":
+            posts.append((url, payload))
+            return {}
+        if url.endswith("/issues/12"):
+            return target
+        if "/issues?" in url:
+            return [target, other] if "page=1" in url else []
+        if "/comments" in url:
+            return []
+        return {}  # label lookup: already exists
+
+    monkeypatch.setattr(dd, "_request", fake_request)
+    assert dd.main() == 0
+    comment = next(p for u, p in posts if u.endswith("/comments"))["body"]
+    assert "`Add duplicate issue guardrail @someone`" in comment
+    assert any(u.endswith("/labels") for u, _ in posts)

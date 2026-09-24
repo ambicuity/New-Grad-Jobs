@@ -25,7 +25,7 @@ import sys
 import urllib.error
 import urllib.request
 from difflib import SequenceMatcher
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
 
 # Tunables (overridable via workflow env).
 DEFAULT_THRESHOLD = 0.55
@@ -51,7 +51,7 @@ _NONWORD_RE = re.compile(r"[^a-z0-9\s]+")
 _WS_RE = re.compile(r"\s+")
 
 
-def normalize_text(text: Optional[str]) -> str:
+def normalize_text(text: str | None) -> str:
     """Lowercase and strip URLs, code blocks, markdown, and punctuation."""
     if not text:
         return ""
@@ -62,7 +62,7 @@ def normalize_text(text: Optional[str]) -> str:
     return _WS_RE.sub(" ", text).strip()
 
 
-def tokenize(text: Optional[str]) -> frozenset:
+def tokenize(text: str | None) -> frozenset:
     """Return a set of meaningful tokens (length >= 3, minus stopwords)."""
     normalized = normalize_text(text)
     return frozenset(
@@ -95,11 +95,11 @@ def similarity_score(
 
 
 def find_duplicate_candidates(
-    target: Dict[str, Any],
-    others: List[Dict[str, Any]],
+    target: dict[str, Any],
+    others: list[dict[str, Any]],
     threshold: float = DEFAULT_THRESHOLD,
     max_candidates: int = DEFAULT_MAX_CANDIDATES,
-) -> List[Tuple[Dict[str, Any], float]]:
+) -> list[tuple[dict[str, Any], float]]:
     """Return ``[(issue, score), ...]`` above ``threshold``, best first.
 
     ``target``/``others`` are dicts with ``number``, ``title``, ``body`` keys.
@@ -109,7 +109,7 @@ def find_duplicate_candidates(
     target_body = target.get("body", "") or ""
     target_number = target.get("number")
 
-    scored: List[Tuple[Dict[str, Any], float]] = []
+    scored: list[tuple[dict[str, Any], float]] = []
     for other in others:
         if other.get("number") == target_number:
             continue
@@ -123,7 +123,25 @@ def find_duplicate_candidates(
     return scored[:max_candidates]
 
 
-def build_comment(candidates: List[Tuple[Dict[str, Any], float]]) -> str:
+_MAX_TITLE_CHARS = 200
+_CONTROL_WS_RE = re.compile(r"\s+")
+
+
+def format_title(title: str | None) -> str:
+    """Render an issue title inertly for the bot comment.
+
+    Titles are attacker-controlled. Wrapping them in a code span stops markdown,
+    links, and ``@mention`` / ``#ref`` notifications from being interpreted.
+    Backticks are stripped so the title cannot close the span early, and
+    newlines are collapsed so it cannot start a new markdown block.
+    """
+    cleaned = _CONTROL_WS_RE.sub(" ", (title or "").replace("`", "")).strip()
+    if len(cleaned) > _MAX_TITLE_CHARS:
+        cleaned = cleaned[: _MAX_TITLE_CHARS - 1].rstrip() + "…"
+    return f"`{cleaned}`" if cleaned else "_(untitled)_"
+
+
+def build_comment(candidates: list[tuple[dict[str, Any], float]]) -> str:
     """Render the maintainer-friendly comment body."""
     lines = [
         COMMENT_MARKER,
@@ -134,9 +152,9 @@ def build_comment(candidates: List[Tuple[Dict[str, Any], float]]) -> str:
         "",
     ]
     for issue, score in candidates:
-        state = issue.get("state", "open")
+        state = "closed" if issue.get("state") == "closed" else "open"
         lines.append(
-            f"- #{issue['number']} — {issue.get('title', '').strip()} "
+            f"- #{int(issue['number'])} — {format_title(issue.get('title'))} "
             f"_(similarity {int(round(score * 100))}%, {state})_"
         )
     lines += [
@@ -148,12 +166,15 @@ def build_comment(candidates: List[Tuple[Dict[str, Any], float]]) -> str:
 
 
 # --------------------------------------------------------------------------- #
-# GitHub API glue (only exercised in the workflow, not in unit tests)
+# GitHub API glue (only exercised in the workflow; tests stub ``_request``)
 # --------------------------------------------------------------------------- #
 _API_ROOT = "https://api.github.com"
+_PER_PAGE = 100
+_MAX_ISSUE_PAGES = 5
+_MAX_COMMENT_PAGES = 10
 
 
-def _request(method: str, url: str, token: str, payload: Optional[dict] = None) -> Any:
+def _request(method: str, url: str, token: str, payload: dict | None = None) -> Any:
     data = json.dumps(payload).encode() if payload is not None else None
     req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", f"Bearer {token}")
@@ -165,13 +186,13 @@ def _request(method: str, url: str, token: str, payload: Optional[dict] = None) 
     return json.loads(body) if body else None
 
 
-def _fetch_recent_issues(repo: str, token: str, lookback: int) -> List[Dict[str, Any]]:
-    issues: List[Dict[str, Any]] = []
+def _fetch_recent_issues(repo: str, token: str, lookback: int) -> list[dict[str, Any]]:
+    issues: list[dict[str, Any]] = []
     page = 1
-    while len(issues) < lookback and page <= 5:
+    while len(issues) < lookback and page <= _MAX_ISSUE_PAGES:
         url = (
             f"{_API_ROOT}/repos/{repo}/issues"
-            f"?state=all&per_page=100&page={page}&sort=created&direction=desc"
+            f"?state=all&per_page={_PER_PAGE}&page={page}&sort=created&direction=desc"
         )
         batch = _request("GET", url, token) or []
         if not batch:
@@ -203,10 +224,53 @@ def _ensure_label(repo: str, token: str) -> None:
 
 
 def _already_flagged(repo: str, token: str, number: int) -> bool:
-    comments = _request(
-        "GET", f"{_API_ROOT}/repos/{repo}/issues/{number}/comments?per_page=100", token
-    ) or []
-    return any(COMMENT_MARKER in (c.get("body") or "") for c in comments)
+    """True if any comment on the issue (across all pages) carries the marker."""
+    for page in range(1, _MAX_COMMENT_PAGES + 1):
+        url = f"{_API_ROOT}/repos/{repo}/issues/{number}/comments?per_page={_PER_PAGE}&page={page}"
+        comments = _request("GET", url, token) or []
+        if any(COMMENT_MARKER in (c.get("body") or "") for c in comments):
+            return True
+        if len(comments) < _PER_PAGE:
+            return False
+    # Very long thread: err on the side of not re-commenting.
+    return True
+
+
+def _annotate(repo: str, token: str, number: int, candidates: list[tuple[dict[str, Any], float]]) -> None:
+    _ensure_label(repo, token)
+    _request(
+        "POST",
+        f"{_API_ROOT}/repos/{repo}/issues/{number}/labels",
+        token,
+        {"labels": [DUPLICATE_LABEL]},
+    )
+    _request(
+        "POST",
+        f"{_API_ROOT}/repos/{repo}/issues/{number}/comments",
+        token,
+        {"body": build_comment(candidates)},
+    )
+
+
+def _run(repo: str, token: str, number: int, threshold: float, max_candidates: int, lookback: int) -> None:
+    target = _request("GET", f"{_API_ROOT}/repos/{repo}/issues/{number}", token)
+    if not target or "pull_request" in target:
+        print("Trigger is not an issue; skipping.")
+        return
+
+    others = _fetch_recent_issues(repo, token, lookback)
+    candidates = find_duplicate_candidates(target, others, threshold, max_candidates)
+    if not candidates:
+        print(f"No likely duplicates for issue #{number}.")
+        return
+
+    if _already_flagged(repo, token, number):
+        print(f"Issue #{number} already flagged; not re-commenting.")
+        return
+
+    _annotate(repo, token, number, candidates)
+    listed = ", ".join(f"#{i['number']}({int(round(s * 100))}%)" for i, s in candidates)
+    print(f"Flagged issue #{number} as possible duplicate of: {listed}")
 
 
 def main() -> int:
@@ -217,50 +281,22 @@ def main() -> int:
         print("Missing GITHUB_TOKEN / GITHUB_REPOSITORY / ISSUE_NUMBER; skipping.")
         return 0
 
-    threshold = float(os.environ.get("DUP_THRESHOLD", DEFAULT_THRESHOLD))
-    max_candidates = int(os.environ.get("DUP_MAX_CANDIDATES", DEFAULT_MAX_CANDIDATES))
-    lookback = int(os.environ.get("DUP_LOOKBACK", DEFAULT_LOOKBACK))
-    number = int(number_raw)
-
     try:
-        target = _request("GET", f"{_API_ROOT}/repos/{repo}/issues/{number}", token)
-    except urllib.error.HTTPError as exc:  # pragma: no cover - network guard
-        print(f"Could not fetch issue #{number}: {exc}")
-        return 0
-    if not target or "pull_request" in target:
-        print("Trigger is not an issue; skipping.")
-        return 0
-
-    others = _fetch_recent_issues(repo, token, lookback)
-    candidates = find_duplicate_candidates(target, others, threshold, max_candidates)
-    if not candidates:
-        print(f"No likely duplicates for issue #{number}.")
+        threshold = float(os.environ.get("DUP_THRESHOLD", DEFAULT_THRESHOLD))
+        max_candidates = int(os.environ.get("DUP_MAX_CANDIDATES", DEFAULT_MAX_CANDIDATES))
+        lookback = int(os.environ.get("DUP_LOOKBACK", DEFAULT_LOOKBACK))
+        number = int(number_raw)
+    except ValueError as exc:
+        print(f"Invalid numeric setting: {exc}; skipping.")
         return 0
 
-    if _already_flagged(repo, token, number):
-        print(f"Issue #{number} already flagged; not re-commenting.")
-        return 0
-
-    _ensure_label(repo, token)
+    # The guardrail is advisory: a GitHub API / network failure must never fail
+    # the workflow run. URLError covers HTTPError; TimeoutError covers read
+    # timeouts that urllib raises outside URLError.
     try:
-        _request(
-            "POST",
-            f"{_API_ROOT}/repos/{repo}/issues/{number}/labels",
-            token,
-            {"labels": [DUPLICATE_LABEL]},
-        )
-        _request(
-            "POST",
-            f"{_API_ROOT}/repos/{repo}/issues/{number}/comments",
-            token,
-            {"body": build_comment(candidates)},
-        )
-    except urllib.error.HTTPError as exc:  # pragma: no cover - network guard
-        print(f"Failed to annotate issue #{number}: {exc}")
-        return 0
-
-    listed = ", ".join(f"#{i['number']}({int(round(s * 100))}%)" for i, s in candidates)
-    print(f"Flagged issue #{number} as possible duplicate of: {listed}")
+        _run(repo, token, number, threshold, max_candidates, lookback)
+    except (urllib.error.URLError, TimeoutError) as exc:
+        print(f"GitHub API request failed for issue #{number}: {exc}")
     return 0
 
 
