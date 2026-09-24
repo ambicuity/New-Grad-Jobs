@@ -1,8 +1,9 @@
 // Maps the scraper's published job records (jobs-index.json / jobs.json, see
 // scripts/publish.py) to the row model the terminal views render.
 
-import { CATEGORY_TYPE, TIER_SIZE } from './taxonomy.js';
-import { addDays, ageString, parseTimestamp } from './time.js';
+import { CATEGORY_TYPE, TIER_ORDER } from './taxonomy.js';
+import { ageString, parseTimestamp } from './time.js';
+import { safeHttpUrl } from './url.js';
 
 /**
  * A job as published in jobs-index.json (jobs.json adds `description`).
@@ -20,30 +21,32 @@ import { addDays, ageString, parseTimestamp } from './time.js';
  * @property {{id?: string, name?: string}} [category]
  * @property {{tier?: string}} [company_tier]
  * @property {{no_sponsorship?: boolean, us_citizenship_required?: boolean}} [flags]
+ * @property {boolean} [is_closed]
  * @property {{min?: number, max?: number, currency?: string}|null} [comp]
  */
 
 /**
- * The row model rendered by the hiring view.
+ * The row model rendered by the hiring view. It carries only what the feed
+ * actually publishes — no synthetic deadlines, stacks, cohorts or blurbs.
  * @typedef {object} Job
- * @property {string} id              Unique within the loaded list (duplicates get `#n`).
+ * @property {string} id              Stable key: `job_id` when published (else the slug); unique within the list (repeats get `#n`).
  * @property {string} co              Company.
  * @property {string} role            Title.
  * @property {string} loc             Location.
- * @property {string} url             Application URL ('' when absent).
+ * @property {string} url             http(s) application URL, or '' (see safeHttpUrl).
  * @property {'remote'|'hybrid'|'onsite'} rmt
- * @property {boolean} visa           False when the posting rules out sponsorship.
- * @property {'S'|'M'|'L'|'XL'} size
- * @property {string[]} stack         Not in source data; ['—'].
- * @property {string} cohort          Always '26'.
- * @property {[number|null, number|null]} comp  Salary range in $k.
- * @property {string} dl              Synthetic deadline (posted + 90 days), YYYY-MM-DD.
+ * @property {boolean} visa           True when the posting states NO visa/citizenship restriction
+ *                                    (the feed can't tell whether a role actually sponsors).
+ * @property {'citizenship'|'no-sponsorship'|null} visaNote  Which restriction the posting states.
+ * @property {'faang_plus'|'unicorn'|'other'} tier  company_tier.tier as published.
+ * @property {[number|null, number|null]} comp  Posted salary range in $k.
  * @property {string} type            Short category code (SWE, ML, …).
  * @property {string} posted          Display age ("3h", "2d").
- * @property {number} postedTs        Epoch ms of posted_at (0 when unknown) — sort key.
- * @property {string} level
- * @property {string} jobId           `job_<hex>` or ''.
- * @property {string} desc            Description, or a one-line placeholder.
+ * @property {number} postedTs        Epoch ms of posted_at (0 when unknown).
+ * @property {string} jobId           `job_<hex>` or '' — keys the description shards.
+ * @property {string} desc            Full description when the payload carries one (jobs.json fallback), else ''.
+ * @property {boolean} closed         `is_closed` from the feed.
+ * @property {string} hay             Lower-cased search text (company, role, location).
  */
 
 /**
@@ -52,7 +55,6 @@ import { addDays, ageString, parseTimestamp } from './time.js';
  * @property {number} [total_jobs]
  */
 
-export const DEADLINE_WINDOW_DAYS = 90;
 const MIN_REAL_DESCRIPTION = 60;
 
 /** Canonical category id → short type code ('OTHER' when unknown). */
@@ -79,9 +81,15 @@ export function compTuple(j) {
   return [Math.round(c.min / 1000), Math.round(c.max / 1000)];
 }
 
-function placeholderDescription(j) {
-  const where = j.location ? ` in ${j.location}` : '';
-  return `${j.company || 'This company'} is hiring for ${j.title || 'this role'}${where}. Posted via ${j.source || 'their careers page'}.`;
+/** Lower-cased text the search box matches against, built once per job. */
+export function searchHaystack({ co, role, loc }) {
+  return `${co} ${role} ${loc}`.toLowerCase();
+}
+
+function visaNoteOf(flags) {
+  if (flags.us_citizenship_required === true) return 'citizenship';
+  if (flags.no_sponsorship === true) return 'no-sponsorship';
+  return null;
 }
 
 /**
@@ -91,37 +99,36 @@ function placeholderDescription(j) {
  */
 export function mapJob(j, now = Date.now()) {
   const raw = j || {};
-  const tier = (raw.company_tier && raw.company_tier.tier) || 'other';
-  const flags = raw.flags || {};
-  const noSponsorship = flags.no_sponsorship === true || flags.us_citizenship_required === true;
+  const tier = raw.company_tier && raw.company_tier.tier;
+  const visaNote = visaNoteOf(raw.flags || {});
   const ts = parseTimestamp(raw.posted_at);
-  return {
-    id: raw.id != null ? String(raw.id) : '',
+  const jobId = typeof raw.job_id === 'string' ? raw.job_id : '';
+  const base = {
+    id: jobId || (raw.id != null ? String(raw.id) : ''),
     co: raw.company || '—',
     role: raw.title || '—',
     loc: raw.location || '—',
-    url: raw.url || '',
+    url: safeHttpUrl(raw.url),
     rmt: deriveRmt(raw),
-    visa: !noSponsorship,
-    size: TIER_SIZE[tier] || 'M',
-    stack: ['—'],
-    cohort: '26',
+    visa: visaNote === null,
+    visaNote,
+    tier: TIER_ORDER.includes(tier) ? tier : 'other',
     comp: compTuple(raw),
-    dl: addDays(raw.posted_at, DEADLINE_WINDOW_DAYS, now),
     type: deriveType(raw),
     posted: ageString(raw.posted_at, now),
     postedTs: Number.isNaN(ts) ? 0 : ts,
-    level: 'entry',
-    jobId: typeof raw.job_id === 'string' ? raw.job_id : '',
+    jobId,
     desc: (typeof raw.description === 'string' && raw.description.length > MIN_REAL_DESCRIPTION)
       ? raw.description
-      : placeholderDescription(raw),
+      : '',
+    closed: raw.is_closed === true,
   };
+  return { ...base, hay: searchHaystack(base) };
 }
 
 /**
- * The feed contains duplicate slugs (same role on several sources). Suffix
- * repeats with `#n` so ids are unique React keys and selection targets.
+ * Ids can repeat (older payloads without job_id reuse slugs across sources).
+ * Suffix repeats with `#n` so ids are unique React keys and selection targets.
  * @param {Job[]} jobs
  * @returns {Job[]}
  */

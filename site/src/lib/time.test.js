@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  addDays, ageString, daysLeft, deadlineHot, deadlineLabel, formatAgo, parseTimestamp,
+  ageString, formatAgo, parseTimestamp,
 } from './time.js';
 
 const NOW = Date.parse('2026-09-24T16:00:00Z');
@@ -59,53 +59,6 @@ describe('ageString', () => {
 
   it('defaults now to the wall clock', () => {
     expect(ageString(new Date().toISOString())).toBe('now');
-  });
-});
-
-describe('addDays', () => {
-  it('adds whole days to a timestamp and returns YYYY-MM-DD', () => {
-    expect(addDays('2026-09-24T14:50:21Z', 90, NOW)).toBe('2026-12-23');
-  });
-
-  it('uses now when the timestamp is missing or invalid', () => {
-    expect(addDays(undefined, 1, NOW)).toBe('2026-09-25');
-    expect(addDays('nope', 0, NOW)).toBe('2026-09-24');
-  });
-});
-
-describe('daysLeft / deadlineLabel / deadlineHot', () => {
-  const dl = (days) => new Date(NOW + days * DAY).toISOString();
-
-  it('counts whole days to the deadline', () => {
-    expect(daysLeft('2026-09-30', NOW)).toBe(5); // 5.33 days, rounded
-    expect(daysLeft(dl(-3), NOW)).toBe(-3);
-  });
-
-  it('returns 999 when there is no (valid) deadline', () => {
-    expect(daysLeft('', NOW)).toBe(999);
-    expect(daysLeft(null, NOW)).toBe(999);
-    expect(daysLeft('bogus', NOW)).toBe(999);
-  });
-
-  it.each([
-    [-1, 'closed'],
-    [0, 'today'],
-    [5, '5d left'],
-    [15, '2w left'],
-    [65, '2mo left'],
-  ])('%i days → %s', (days, label) => {
-    expect(deadlineLabel(dl(days), NOW)).toBe(label);
-  });
-
-  it('is hot within two weeks', () => {
-    expect(deadlineHot(dl(14), NOW)).toBe(true);
-    expect(deadlineHot(dl(15), NOW)).toBe(false);
-  });
-
-  it('defaults now to the wall clock', () => {
-    expect(daysLeft(new Date(Date.now() + 2 * DAY).toISOString())).toBe(2);
-    expect(deadlineLabel(new Date(Date.now() + 2 * DAY).toISOString())).toBe('2d left');
-    expect(deadlineHot(new Date(Date.now() + 2 * DAY).toISOString())).toBe(true);
   });
 });
 

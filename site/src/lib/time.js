@@ -2,7 +2,6 @@
 // (defaulting to the wall clock) so it is deterministic under test.
 
 const HOUR_MS = 3600000;
-const DAY_MS = 86400000;
 
 // ISO date-time with no zone designator ("2026-09-24T14:50:21.85"). The
 // scraper writes UTC, so a bare timestamp is read as UTC rather than the
@@ -40,46 +39,6 @@ export function ageString(postedAt, now = Date.now()) {
   if (days < 7) return `${days}d`;
   if (days < 30) return `${Math.floor(days / 7)}w`;
   return `${Math.floor(days / 30)}mo`;
-}
-
-/**
- * `YYYY-MM-DD` that is `n` days after `isoString` (or after `now` if absent).
- * @param {string|null|undefined} isoString
- * @param {number} n
- * @param {number} [now]
- */
-export function addDays(isoString, n, now = Date.now()) {
-  const parsed = parseTimestamp(isoString);
-  const base = Number.isNaN(parsed) ? now : parsed;
-  return new Date(base + n * DAY_MS).toISOString().slice(0, 10);
-}
-
-/**
- * Whole days until a `YYYY-MM-DD` deadline (negative once passed; 999 when
- * there is no deadline).
- * @param {string|null|undefined} dl
- * @param {number} [now]
- */
-export function daysLeft(dl, now = Date.now()) {
-  if (!dl) return 999;
-  const t = parseTimestamp(dl);
-  if (Number.isNaN(t)) return 999;
-  return Math.round((t - now) / DAY_MS);
-}
-
-/** Human label for a deadline: "closed", "today", "5d left", "2w left", "3mo left". */
-export function deadlineLabel(dl, now = Date.now()) {
-  const d = daysLeft(dl, now);
-  if (d < 0) return 'closed';
-  if (d === 0) return 'today';
-  if (d < 7) return `${d}d left`;
-  if (d < 30) return `${Math.floor(d / 7)}w left`;
-  return `${Math.floor(d / 30)}mo left`;
-}
-
-/** True when a deadline is two weeks out or closer. */
-export function deadlineHot(dl, now = Date.now()) {
-  return daysLeft(dl, now) <= 14;
 }
 
 /**

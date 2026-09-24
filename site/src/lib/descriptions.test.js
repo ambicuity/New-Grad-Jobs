@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import {
-  DESCRIPTION_SHARD_KEYS, descriptionShard, descriptionShardUrl, lookupDescription,
+  DESCRIPTION_SHARD_KEYS, cleanDescription, descriptionShard, descriptionShardUrl, lookupDescription,
 } from './descriptions.js';
 
 const siteRoot = fileURLToPath(new URL('../../', import.meta.url));
@@ -65,5 +65,19 @@ describe('fixture shard contract', () => {
     for (const j of sample) {
       expect(lookupDescription(shards[descriptionShard(j.job_id)], j.job_id)).not.toBeNull();
     }
+  });
+});
+
+describe('cleanDescription', () => {
+  it('decodes the HTML entities scraped descriptions carry, as plain text', () => {
+    expect(cleanDescription('R&amp;D&nbsp;team &lt;b&gt; &quot;x&quot; it&#39;s &#x27;y&#x27; &#8212; z')).toBe('R&D team <b> "x" it\'s \'y\' — z');
+  });
+
+  it('decodes only once (no double-unescaping) and trims', () => {
+    expect(cleanDescription('  &amp;lt;  ')).toBe('&lt;');
+  });
+
+  it('leaves unknown or invalid entities alone', () => {
+    expect(cleanDescription('&bogus; &#xZZ; &#99999999;')).toBe('&bogus; &#xZZ; &#99999999;');
   });
 });

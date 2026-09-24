@@ -22,6 +22,26 @@ export function descriptionShardUrl(key) {
   return `./descriptions/${key}.json`;
 }
 
+const NAMED_ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+const ENTITY_RE = /&(?:#(\d{1,7})|#x([0-9a-f]{1,6})|([a-z]+));/gi;
+const MAX_CODE_POINT = 0x10ffff;
+
+function decodeEntity(match, dec, hex, name) {
+  if (name) return Object.hasOwn(NAMED_ENTITIES, name.toLowerCase()) ? NAMED_ENTITIES[name.toLowerCase()] : match;
+  const code = dec ? parseInt(dec, 10) : parseInt(hex, 16);
+  return code > 0 && code <= MAX_CODE_POINT ? String.fromCodePoint(code) : match;
+}
+
+/**
+ * Scraped descriptions are plain text that still carries HTML entities
+ * (`&amp;`, `&nbsp;`, `&#39;`). Decode them in a single pass for display as
+ * text (React escapes the result, so nothing here is ever parsed as HTML).
+ * @param {string} text
+ */
+export function cleanDescription(text) {
+  return text.replace(ENTITY_RE, decodeEntity).trim();
+}
+
 /**
  * Description text for `jobId` from a loaded shard, or null if absent.
  * @param {Record<string, unknown>|null|undefined} shard

@@ -1,24 +1,23 @@
 import { describe, expect, it } from 'vitest';
 import {
-  EMPTY_FILTERS, activeFilterCount, closingSoonCount, companyCounts, deadlineBuckets,
-  filterByCompany, filterJobsExceptCompany, matchesQuery, newTodayCount, toggleFacet, toggleInSet,
-  toggleVisa,
+  EMPTY_FILTERS, activeFilterCount, companyCounts, filterByCompany, filterJobsExceptCompany,
+  matchesQuery, toggleFacet, toggleInSet, toggleVisa,
 } from './filters.js';
+import { searchHaystack } from './jobs.js';
 
-const NOW = Date.parse('2026-09-24T00:00:00Z');
-const inDays = (d) => new Date(NOW + d * 86400000).toISOString().slice(0, 10);
-
-const job = (over) => ({
-  id: 'x', co: 'Acme', role: 'Software Engineer', loc: 'Austin, TX', stack: ['—'],
-  type: 'SWE', rmt: 'onsite', visa: true, cohort: '26', size: 'M', dl: inDays(60), posted: '3h',
-  ...over,
-});
+const job = (over) => {
+  const j = {
+    id: 'x', co: 'Acme', role: 'Software Engineer', loc: 'Austin, TX',
+    type: 'SWE', rmt: 'onsite', visa: true, tier: 'other', ...over,
+  };
+  return { ...j, hay: searchHaystack(j) };
+};
 
 const JOBS = [
   job({ id: 'a', co: 'Acme', type: 'SWE', rmt: 'remote' }),
-  job({ id: 'b', co: 'Beta', type: 'ML', visa: false, size: 'XL', loc: 'New York, NY' }),
+  job({ id: 'b', co: 'Beta', type: 'ML', visa: false, tier: 'faang_plus', loc: 'New York, NY' }),
   job({ id: 'c', co: 'Acme', type: 'ML', rmt: 'hybrid', role: 'ML Engineer' }),
-  job({ id: 'd', co: 'Gamma', type: 'DATA', cohort: '25' }),
+  job({ id: 'd', co: 'Gamma', type: 'DATA', tier: 'unicorn' }),
 ];
 const ids = (list) => list.map((j) => j.id);
 
@@ -28,8 +27,7 @@ describe('EMPTY_FILTERS', () => {
     const b = EMPTY_FILTERS();
     expect(a).not.toBe(b);
     expect(a.company).not.toBe(b.company);
-    expect(Object.keys(a).sort()).toEqual(['cohort', 'company', 'rmt', 'size', 'type', 'visa']);
-    expect([...a.cohort]).toEqual(['26']);
+    expect(Object.keys(a).sort()).toEqual(['company', 'rmt', 'tier', 'type', 'visa']);
     expect(a.visa).toBeNull();
   });
 });
@@ -60,40 +58,48 @@ describe('toggles are immutable', () => {
     expect(f.visa).toBeNull();
   });
 
-  it('activeFilterCount ignores the default cohort', () => {
+  it('activeFilterCount counts every user-set facet', () => {
     let f = EMPTY_FILTERS();
     expect(activeFilterCount(f)).toBe(0);
     f = toggleVisa(toggleFacet(toggleFacet(f, 'type', 'ML'), 'company', 'Acme'), false);
-    expect(activeFilterCount(f)).toBe(3);
+    f = toggleFacet(f, 'tier', 'unicorn');
+    expect(activeFilterCount(f)).toBe(4);
   });
 });
 
 describe('matchesQuery', () => {
-  it('matches company, role, location and stack case-insensitively', () => {
+  it('matches company, role and location case-insensitively', () => {
     expect(matchesQuery(JOBS[1], 'beta')).toBe(true);
     expect(matchesQuery(JOBS[2], 'ml eng')).toBe(true);
     expect(matchesQuery(JOBS[1], 'NEW YORK')).toBe(true);
     expect(matchesQuery(JOBS[0], 'zzz')).toBe(false);
     expect(matchesQuery(JOBS[0], '')).toBe(true);
+    expect(matchesQuery(JOBS[0], '   ')).toBe(true);
+  });
+
+  it('requires every whitespace-separated term, in any order', () => {
+    expect(matchesQuery(JOBS[2], 'engineer acme')).toBe(true);
+    expect(matchesQuery(JOBS[2], 'engineer beta')).toBe(false);
+  });
+
+  it('builds the haystack on the fly for rows without one', () => {
+    expect(matchesQuery({ co: 'Zed', role: 'R', loc: 'L' }, 'zed')).toBe(true);
   });
 });
 
 describe('filterJobsExceptCompany', () => {
   const run = (filters, extra = {}) => ids(filterJobsExceptCompany(JOBS, { filters, ...extra }));
 
-  it('applies the default cohort filter', () => {
-    expect(run(EMPTY_FILTERS())).toEqual(['a', 'b', 'c']);
+  it('shows everything with no filters', () => {
+    expect(run(EMPTY_FILTERS())).toEqual(['a', 'b', 'c', 'd']);
   });
 
-  it('filters by type, remote, visa and size', () => {
+  it('filters by type, remote, visa and tier', () => {
     expect(run(toggleFacet(EMPTY_FILTERS(), 'type', 'ML'))).toEqual(['b', 'c']);
     expect(run(toggleFacet(EMPTY_FILTERS(), 'rmt', 'hybrid'))).toEqual(['c']);
     expect(run(toggleVisa(EMPTY_FILTERS(), false))).toEqual(['b']);
-    expect(run(toggleFacet(EMPTY_FILTERS(), 'size', 'XL'))).toEqual(['b']);
-  });
-
-  it('shows every cohort when the cohort facet is cleared', () => {
-    expect(run(toggleFacet(EMPTY_FILTERS(), 'cohort', '26'))).toEqual(['a', 'b', 'c', 'd']);
+    expect(run(toggleVisa(EMPTY_FILTERS(), true))).toEqual(['a', 'c', 'd']);
+    expect(run(toggleFacet(EMPTY_FILTERS(), 'tier', 'faang_plus'))).toEqual(['b']);
   });
 
   it('applies the search query', () => {
@@ -102,11 +108,11 @@ describe('filterJobsExceptCompany', () => {
 
   it('restricts to saved jobs in saved-only mode', () => {
     expect(run(EMPTY_FILTERS(), { saved: new Set(['c']), savedOnly: true })).toEqual(['c']);
-    expect(run(EMPTY_FILTERS(), { saved: new Set(['c']), savedOnly: false })).toEqual(['a', 'b', 'c']);
+    expect(run(EMPTY_FILTERS(), { saved: new Set(['c']), savedOnly: false })).toEqual(['a', 'b', 'c', 'd']);
   });
 
   it('ignores the company facet (HIRING NOW stays switchable)', () => {
-    expect(run(toggleFacet(EMPTY_FILTERS(), 'company', 'Beta'))).toEqual(['a', 'b', 'c']);
+    expect(run(toggleFacet(EMPTY_FILTERS(), 'company', 'Beta'))).toEqual(['a', 'b', 'c', 'd']);
   });
 });
 
@@ -122,23 +128,5 @@ describe('company facet', () => {
   it('companyCounts orders companies by job count', () => {
     expect(companyCounts(JOBS)).toEqual([['Acme', 2], ['Beta', 1], ['Gamma', 1]]);
     expect(companyCounts([])).toEqual([]);
-  });
-});
-
-describe('stats helpers', () => {
-  it('deadlineBuckets histograms days-to-deadline', () => {
-    const list = [-2, 3, 10, 20, 45, 100, 200].map((d, i) => job({ id: String(i), dl: inDays(d) }));
-    expect(deadlineBuckets(list, NOW)).toEqual({ w1: 2, w2: 1, m1: 1, m3: 1, m3p: 2 });
-  });
-
-  it('newTodayCount keeps the legacy regex: single-digit hours, 1d and 2d', () => {
-    // Known quirk preserved from the pre-Vite site: 'now' and 10-23h are not counted.
-    const list = ['now', '3h', '23h', '1d', '2d', '3d', '1w', '2mo'].map((posted, i) => job({ id: String(i), posted }));
-    expect(newTodayCount(list)).toBe(3);
-  });
-
-  it('closingSoonCount counts deadlines under a week away', () => {
-    const list = [-1, 6, 7, 30].map((d, i) => job({ id: String(i), dl: inDays(d) }));
-    expect(closingSoonCount(list, NOW)).toBe(2);
   });
 });

@@ -1,28 +1,28 @@
 import { BBG } from '../../lib/theme.js';
-import { FKey, onActivateKey } from '../ui.jsx';
+import { FKey, MIN_TARGET } from '../ui.jsx';
+import { LiveStamp } from '../shell/LiveStamp.jsx';
 
 /** Bottom status line of the hiring view, incl. the SAVED-only toggle. */
-export function StatusBar({ isMobile, count, savedCount, savedOnly, onToggleSavedOnly }) {
+export function StatusBar({ isMobile, generatedAt, count, savedCount, savedOnly, onToggleSavedOnly }) {
   const title = savedOnly
-    ? 'showing only saved jobs — click to clear'
+    ? 'showing only saved jobs — click to show all'
     : (savedCount ? `show only your ${savedCount} saved job${savedCount === 1 ? '' : 's'}` : 'no saved jobs yet');
   return (
     <div style={{
-      borderTop: `1px solid ${BBG.rule2}`, padding: '5px 14px', background: BBG.panel,
-      display: 'flex', gap: 18, fontSize: 11, color: BBG.dim,
+      borderTop: `1px solid ${BBG.rule2}`, padding: '3px 14px', background: BBG.panel,
+      display: 'flex', alignItems: 'center', gap: 18, fontSize: 11, color: BBG.dim,
     }}>
-      <span>STATUS: <span style={{ color: BBG.ok }}>OK</span></span>
-      <span>QUERY: <span style={{ color: BBG.ink }}>{count}</span></span>
-      <span
-        role="button"
-        tabIndex={0}
+      {/* Derived from the feed's generated_at (same signal as the top bar). */}
+      <span>FEED: <LiveStamp generatedAt={generatedAt} /></span>
+      <span>SHOWN: <span style={{ color: BBG.ink }}>{count}</span></span>
+      <button
+        type="button"
         aria-pressed={savedOnly}
         title={title}
         onClick={onToggleSavedOnly}
-        onKeyDown={onActivateKey(onToggleSavedOnly)}
         style={{
-          cursor: 'pointer',
-          padding: '0 4px',
+          cursor: 'pointer', border: 'none', fontFamily: 'inherit', fontSize: 11,
+          padding: '0 6px', minHeight: MIN_TARGET,
           background: savedOnly ? BBG.acc : 'transparent',
           color: savedOnly ? '#000' : BBG.dim,
           fontWeight: savedOnly ? 700 : 400,
@@ -30,9 +30,10 @@ export function StatusBar({ isMobile, count, savedCount, savedOnly, onToggleSave
         }}
       >
         SAVED: <span style={{ color: savedOnly ? '#000' : BBG.acc, fontWeight: 700 }}>{savedCount}</span>
-      </span>
+        <span className="ngj-sr-only">{savedOnly ? ' (showing saved only)' : ' (show saved only)'}</span>
+      </button>
       {!isMobile && (
-        <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }}>
+        <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }} aria-hidden="true">
           <FKey n="/" l="SEARCH" />
           <FKey n="↑↓" l="NAV" />
           <FKey n="⏎" l="APPLY" />

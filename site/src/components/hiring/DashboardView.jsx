@@ -1,15 +1,19 @@
 // Hiring view — Bloomberg-terminal aesthetic: stats strip, filter rail, dense
-// job table and a detail pane. This component owns the view state; the pieces
-// it renders are presentational.
+// job list and a detail pane. The shareable view state (query, filters, sort,
+// selected job) lives in the URL and is owned by the App (see
+// useUrlViewState); this component derives everything else from it.
 
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
 import { BBG, FONT_STACK } from '../../lib/theme.js';
 import {
-  EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleInSet, toggleVisa,
+  EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleVisa,
 } from '../../lib/filters.js';
-import { clickSort, reconcileSelection, sortJobs } from '../../lib/sort.js';
+import { clickJobSort, sortJobs } from '../../lib/sort.js';
+import { computeStats } from '../../lib/stats.js';
+import { safeHttpUrl } from '../../lib/url.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { useToast } from '../../hooks/useToast.js';
+import { useSavedJobs } from '../../hooks/useSavedJobs.js';
 import { useDashboardKeys } from '../../hooks/useDashboardKeys.js';
 import { MobileOverlay } from '../ui.jsx';
 import { StatsStrip } from './StatsStrip.jsx';
@@ -20,73 +24,105 @@ import { HelpOverlay } from './HelpOverlay.jsx';
 import { StatusBar } from './StatusBar.jsx';
 import { Toast } from './Toast.jsx';
 
-/** @param {{jobs: import('../../lib/jobs.js').Job[]}} props */
-export function DashboardView({ jobs }) {
-  const [q, setQ] = useState('');
-  const [filters, setFilters] = useState(EMPTY_FILTERS);
-  const [sort, setSort] = useState({ key: 'posted', dir: 1 });
-  const [selectedId, setSelectedId] = useState(() => jobs[0]?.id ?? null);
-  // Saved-job ids are user-driven (press S, or click the ☆ in a row); start empty.
-  const [saved, setSaved] = useState(() => new Set());
-  const [savedOnly, setSavedOnly] = useState(false);
-  const [helpOpen, setHelpOpen] = useState(false);
-  // Mobile reflow: filters collapse into a drawer, and tapping a job opens a
-  // full-screen detail view (there's no room for the 460px side panel).
+// history.state marker on the entry pushed when a mobile detail opens, so
+// BACK can pop it (instead of stacking another entry).
+const DETAIL_STATE = { ngjDetail: true };
+
+/**
+ * @param {{
+ *   jobs: import('../../lib/jobs.js').Job[],
+ *   meta: import('../../lib/jobs.js').JobsMeta,
+ *   view: import('../../lib/url-state.js').ViewState,
+ *   updateView: (fn: Function, opts?: object) => void,
+ * }} props
+ */
+export function DashboardView({ jobs, meta, view, updateView }) {
+  const { q, filters, sort, savedOnly } = view;
   const isMobile = useIsMobile();
+  const [saved, toggleSave] = useSavedJobs();
+  const [helpOpen, setHelpOpen] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
   const [toast, flash] = useToast();
+  const [loadedAt] = useState(() => Date.now());
   const searchRef = useRef(null);
+  const listRef = useRef(null);
+
+  // Typing stays responsive: the input updates immediately, filtering the
+  // ~1.9k rows runs at lower priority on the deferred query.
+  const deferredQ = useDeferredValue(q);
+  const jobsById = useMemo(() => new Map(jobs.map((j) => [j.id, j])), [jobs]);
+  const stats = useMemo(() => computeStats(jobs, loadedAt), [jobs, loadedAt]);
 
   // Every facet except company — also feeds HIRING NOW so picking a company
   // doesn't collapse the company list.
   const preCompanyFiltered = useMemo(
-    () => filterJobsExceptCompany(jobs, { filters, q, saved, savedOnly }),
-    [jobs, filters, q, saved, savedOnly],
+    () => filterJobsExceptCompany(jobs, { filters, q: deferredQ, saved, savedOnly }),
+    [jobs, filters, deferredQ, saved, savedOnly],
   );
   const filtered = useMemo(
     () => sortJobs(filterByCompany(preCompanyFiltered, filters.company), sort.key, sort.dir),
     [preCompanyFiltered, filters.company, sort],
   );
+  const savedCount = useMemo(() => jobs.reduce((n, j) => n + (saved.has(j.id) ? 1 : 0), 0), [jobs, saved]);
 
-  // Keep the selection on a visible row (adjusting state during render is the
-  // React-recommended alternative to a sync effect).
-  const reconciledId = reconcileSelection(filtered, selectedId);
-  if (reconciledId !== selectedId) setSelectedId(reconciledId);
+  // Desktop: the URL's job (even if the current filters hide it — e.g. picked
+  // from SIMILAR ROLES), else the first visible row. Mobile: the URL's job is
+  // the open detail, nothing is selected otherwise.
+  const urlJob = view.job ? jobsById.get(view.job) || null : null;
+  const selected = isMobile ? urlJob : (urlJob || filtered[0] || null);
+  const selectedId = selected ? selected.id : null;
+  const detailOpen = isMobile && !!urlJob;
 
-  // null when there are no jobs at all (or none match) — consumers cope with that.
-  const selected = useMemo(
-    () => jobs.find((j) => j.id === reconciledId) || filtered[0] || null,
-    [jobs, filtered, reconciledId],
-  );
-
-  const toggleSet = useCallback((key, val) => setFilters((f) => toggleFacet(f, key, val)), []);
-  const setVisa = useCallback((val) => setFilters((f) => toggleVisa(f, val)), []);
-  const toggleSave = useCallback((id) => setSaved((s) => toggleInSet(s, id)), []);
-  const sortClick = useCallback((k) => setSort((s) => clickSort(s, k)), []);
-  const setSortKey = useCallback((key) => setSort((s) => ({ ...s, key })), []);
-  const clearAll = useCallback(() => {
-    setFilters(EMPTY_FILTERS());
-    setQ('');
-    setSavedOnly(false);
-  }, []);
+  const patch = useCallback((fn, opts) => updateView((v) => ({ ...v, ...fn(v) }), opts), [updateView]);
+  const select = useCallback((id) => patch(() => ({ job: id })), [patch]);
+  const openMobileDetail = useCallback((id) => patch(() => ({ job: id }), { push: true, state: DETAIL_STATE }), [patch]);
+  const closeMobileDetail = useCallback(() => {
+    if (window.history.state && window.history.state.ngjDetail) window.history.back();
+    else patch(() => ({ job: null }));
+  }, [patch]);
+  const toggleSet = useCallback((key, val) => patch((v) => ({ filters: toggleFacet(v.filters, key, val) })), [patch]);
+  const setVisa = useCallback((val) => patch((v) => ({ filters: toggleVisa(v.filters, val) })), [patch]);
+  const setQuery = useCallback((value) => patch(() => ({ q: value })), [patch]);
+  const sortClick = useCallback((k) => patch((v) => ({ sort: clickJobSort(v.sort, k) })), [patch]);
+  // F2 cycles keys, each in its natural direction (newest / highest / A→Z).
+  const setSortKey = useCallback((key) => patch(() => ({ sort: clickJobSort({ key: null, dir: 1 }, key) })), [patch]);
+  const clearAll = useCallback(() => patch(() => ({ filters: EMPTY_FILTERS(), q: '', savedOnly: false })), [patch]);
   const toggleSavedOnly = useCallback(() => {
-    if (saved.size === 0) { flash('no saved jobs', BBG.warn); return; }
-    setSavedOnly((v) => !v);
-  }, [saved, flash]);
-  const openMobileDetail = useCallback((id) => { setSelectedId(id); setMobileDetailOpen(true); }, []);
+    if (savedCount === 0 && !savedOnly) { flash('no saved jobs yet', BBG.warn); return; }
+    patch((v) => ({ savedOnly: !v.savedOnly }));
+  }, [savedCount, savedOnly, flash, patch]);
+  const openSelected = useCallback(() => {
+    if (!selected) return;
+    if (isMobile) { openMobileDetail(selected.id); return; }
+    const href = safeHttpUrl(selected.url);
+    if (!href) { flash('no application link for this job', BBG.warn); return; }
+    window.open(href, '_blank', 'noopener,noreferrer');
+    flash(`opening ${selected.co.toLowerCase()} ↗`, BBG.acc);
+  }, [selected, isMobile, openMobileDetail, flash]);
 
   useDashboardKeys({
-    filtered, selected, selectedId: reconciledId, setSelectedId, saved, toggleSave,
-    sortKey: sort.key, setSortKey, helpOpen, setHelpOpen, clearAll, searchRef, flash,
+    enabled: !helpOpen && !detailOpen,
+    filtered: isMobile ? [] : filtered,
+    selectedId,
+    select,
+    saved,
+    toggleSave,
+    sortKey: sort.key,
+    setSortKey,
+    setHelpOpen,
+    clearAll,
+    searchRef,
+    flash,
+    openSelected,
   });
 
   const detail = (
     <JobDetail
       job={selected}
       jobs={jobs}
-      saved={saved.has(selected?.id)}
+      saved={!!selected && saved.has(selected.id)}
       onSave={() => selected && toggleSave(selected.id)}
+      onSelectJob={isMobile ? (id) => patch(() => ({ job: id })) : select}
     />
   );
 
@@ -97,13 +133,14 @@ export function DashboardView({ jobs }) {
       fontFamily: FONT_STACK, fontSize: 12, lineHeight: 1.45,
       display: 'grid', gridTemplateRows: 'auto 1fr auto', overflow: 'hidden', position: 'relative',
     }}>
-      <StatsStrip jobs={jobs} isMobile={isMobile} />
+      <StatsStrip stats={stats} isMobile={isMobile} />
 
       <div style={{
-        display: isMobile ? 'block' : 'grid',
+        display: isMobile ? 'flex' : 'grid',
+        flexDirection: isMobile ? 'column' : undefined,
         gridTemplateColumns: isMobile ? undefined : '210px 1fr 460px',
         minHeight: 0,
-        overflowY: isMobile ? 'auto' : 'hidden',
+        overflow: 'hidden',
       }}>
         <FilterRail
           isMobile={isMobile}
@@ -112,20 +149,22 @@ export function DashboardView({ jobs }) {
           filters={filters}
           onToggle={toggleSet}
           onVisa={setVisa}
-          filtered={filtered}
+          jobs={jobs}
           preCompanyFiltered={preCompanyFiltered}
         />
         <JobList
           isMobile={isMobile}
           searchRef={searchRef}
+          listRef={listRef}
           q={q}
-          onQuery={setQ}
+          onQuery={setQuery}
+          isStale={q !== deferredQ}
           filtered={filtered}
           total={jobs.length}
           sort={sort}
           onSort={sortClick}
-          selectedId={reconciledId}
-          onSelect={setSelectedId}
+          selectedId={selectedId}
+          onSelect={select}
           onOpenMobile={openMobileDetail}
           saved={saved}
           onToggleSave={toggleSave}
@@ -133,11 +172,11 @@ export function DashboardView({ jobs }) {
         {!isMobile && detail}
       </div>
 
-      {isMobile && mobileDetailOpen && selected && (
+      {detailOpen && (
         <MobileOverlay
           title={`${selected.co} · ${selected.role}`}
           backLabel="Back to job list"
-          onBack={() => setMobileDetailOpen(false)}
+          onBack={closeMobileDetail}
         >
           {detail}
         </MobileOverlay>
@@ -148,8 +187,9 @@ export function DashboardView({ jobs }) {
 
       <StatusBar
         isMobile={isMobile}
+        generatedAt={meta && meta.generated_at}
         count={filtered.length}
-        savedCount={saved.size}
+        savedCount={savedCount}
         savedOnly={savedOnly}
         onToggleSavedOnly={toggleSavedOnly}
       />
