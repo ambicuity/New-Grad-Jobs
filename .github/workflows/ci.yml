@@ -60,38 +60,12 @@ jobs:
           tar -xzf "$RUNNER_TEMP/$tarball" -C "$RUNNER_TEMP" actionlint
           "$RUNNER_TEMP/actionlint" -color
 
+      # Schema-checks config.yml (required filtering keys, per-ATS company
+      # shape/URL pattern/uniqueness, numeric ranges, enabled flags) and the
+      # enabled-company threshold. Replaces the old inline structure check,
+      # which still required the removed `readme:` section.
       - name: Validate config
         run: python scripts/validate_config.py
-
-      - name: Validate config.yml structure
-        run: |
-          python - <<'EOF'
-          import yaml, sys
-          with open("config.yml") as f:
-              config = yaml.safe_load(f)
-          required_keys = ["filtering", "apis", "readme"]
-          for key in required_keys:
-              if key not in config:
-                  print(f"ERROR: Missing required top-level key in config.yml: '{key}'")
-                  sys.exit(1)
-          print("✅ config.yml is valid YAML with all required keys.")
-          # Read nested company lists directly so a missing or malformed
-          # apis.greenhouse.companies / apis.lever.companies schema fails loudly
-          # instead of silently reporting zero companies.
-          try:
-              apis = config["apis"]
-              greenhouse = apis["greenhouse"]["companies"]
-              lever = apis["lever"]["companies"]
-          except (KeyError, TypeError):
-              print("ERROR: Invalid nested API schema in config.yml "
-                    "(expected apis.greenhouse.companies and apis.lever.companies)")
-              sys.exit(1)
-          if not isinstance(greenhouse, list) or not isinstance(lever, list):
-              print("ERROR: apis.greenhouse.companies and apis.lever.companies must be lists")
-              sys.exit(1)
-          print(f"   Greenhouse companies: {len(greenhouse)}")
-          print(f"   Lever companies: {len(lever)}")
-          EOF
 
       - name: Check for duplicate API URLs in config.yml
         run: |
