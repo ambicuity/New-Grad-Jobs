@@ -144,8 +144,8 @@ After `make run`, restore the two files that a local scrape rewrites:
    site, commit `package-lock.json`.
 5. **Conventional commits** (`feat|fix|docs|test|chore|refactor|perf|ci: …`). PRs are
    squash-merged.
-6. **Required CI must pass:** `lint` (ruff, actionlint, validate_config), `test (3.11)`,
-   `test (3.13)`, `site` (eslint, vitest, build) and pre-commit. Do not rename these jobs:
+6. **Required CI must pass:** `lint` (ruff, actionlint, validate_config), `typecheck` (mypy),
+   `test (3.11)`, `test (3.13)`, `site` (eslint, vitest, build, Playwright e2e + axe) and pre-commit. Do not rename these jobs:
    they are required status checks.
 7. **Do not** edit `CHANGELOG.md` (the maintainer writes it), add secrets, loosen workflow
    `permissions`, or add a server, database or external scheduler.

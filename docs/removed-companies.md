@@ -315,11 +315,32 @@ for. Grouped by ATS, with the employer count per family:
 
 The largest single gap is ByteDance: 58 of the CSV's 359 postings, all on
 `joinbytedance.com`, which exposes no public board API. TikTok's Workday tenant
-(`bytedance.wd3.myworkdayjobs.com/TikTok`) is already configured and covers the
-TikTok-branded reqs only. ByteDance-branded reqs remain reachable only through
+(`bytedance.wd3.myworkdayjobs.com/TikTok`) has no public site (HTTP 401) and was
+removed on 2026-09-24 (see below). ByteDance- and TikTok-branded reqs remain reachable only through
 the JobSpy/Indeed layer, where `ByteDance new grad` and `TikTok new grad` are
 already configured search terms.
 
 Castleton Commodities International (`osv-cci.wd1.myworkdayjobs.com/CCICareers`)
 is a Workday tenant but answered `HTTP 422` on every tenant-path variant tried —
 same failure mode as the 422 cohort, so it was left out rather than added dead.
+
+## 2026-09-24 — Workday cleanup (`HTTP 422` / `401`)
+
+Every configured Workday entry was probed live. Workday answers `HTTP 422` with an
+empty body when the tenant or site id in `workday_url` does not exist on that `wdN`
+data centre, and `HTTP 401` when the tenant exists but has no public career site. 19
+entries were corrected to their real tenant/site (Cisco, Salesforce, Capital One, PwC,
+Accenture, Bank of America, Fidelity, Johnson & Johnson, Merck, Bristol Myers Squibb,
+Walmart, P&G, RTX/Raytheon, GDIT, Samsung, Sony, GM, CACI, and VMware → Broadcom).
+The 33 below were removed; several are still reachable through the JobSpy/Indeed layer.
+
+| Company | Reason |
+|---|---|
+| Microsoft, Netflix, Oracle, SAP, ServiceNow, Amazon, IBM, Ford, Lockheed Martin, L3Harris, Deloitte, EY, McKinsey, BCG, JPMorgan, Goldman Sachs, SAIC | not on public Workday (custom careers site or other ATS) |
+| AMD, Charles Schwab, PepsiCo, Peraton | moved to iCIMS |
+| Morgan Stanley, Starbucks, American Express | moved to Eightfold (Amex also Oracle) |
+| UnitedHealth Group | Taleo |
+| Honeywell | Oracle Recruiting |
+| Splunk | now part of Cisco (covered by the Cisco entry) |
+| TikTok, AbbVie, Intuit, Lenovo, Dell | tenant exists but no public site (`HTTP 401`) or no site id found |
+| Qualcomm | Workday site returns 0 jobs (moved off Workday) |

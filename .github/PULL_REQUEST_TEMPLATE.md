@@ -58,9 +58,9 @@ Fixes #
 > | Check | Workflow / job |
 > |-------|----------------|
 > | Ruff, actionlint, `config.yml` schema validation | `ci.yml` → `lint` |
-> | mypy (currently non-blocking) | `ci.yml` → `typecheck` |
+> | mypy | `ci.yml` → `typecheck` |
 > | pytest on Python 3.11 and 3.13, coverage floor | `ci.yml` → `test (3.11)`, `test (3.13)` |
-> | Site lint, vitest, Vite build | `ci.yml` → `site` |
+> | Site lint, vitest, Vite build, Playwright e2e + axe | `ci.yml` → `site` |
 > | Pre-commit hooks (whitespace, YAML/JSON, secrets) | `pre-commit.yml` |
 > | Static security analysis | `codeql.yml` |
 >

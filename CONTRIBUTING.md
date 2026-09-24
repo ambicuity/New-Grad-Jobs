@@ -250,11 +250,12 @@ Types: `feat`, `fix`, `docs`, `test`, `chore`, `refactor`, `perf`, `ci`. PRs are
 | Check | What it runs |
 |---|---|
 | `lint` | ruff, actionlint, `validate_config.py` |
+| `typecheck` | mypy over `scripts/` |
 | `test (3.11)`, `test (3.13)` | pytest with the coverage floor |
-| `site` | `npm ci`, eslint, vitest, `vite build` |
+| `site` | `npm ci`, eslint, vitest, `vite build`, Playwright e2e + axe |
 | `Run Pre-commit Hooks` | pre-commit on all files |
 
-`typecheck` (mypy) and CodeQL also run. mypy is non-blocking for now. Codecov upload
+CodeQL also runs. Codecov upload
 failures never block a merge. PRs do not deploy anything: the site is deployed by
 `update-jobs.yml` after merge.
 

@@ -141,9 +141,9 @@ single failure needs no action. If it fails every run, check that the ruleset st
 - **Pages:** Settings → Pages → Source = **GitHub Actions**. Custom domain
   `jobs.riteshrana.engineer`, taken from `site/public/CNAME` and served from the build.
 - **Environment `github-pages`:** deployments allowed from `main`.
-- **Required status checks on `main`:** `lint`, `test (3.11)`, `test (3.13)`, `site` (from
-  `ci.yml`, so do not rename those jobs), plus `Run Pre-commit Hooks` from `pre-commit.yml`.
-  `typecheck` runs but is non-blocking (`continue-on-error`) until mypy is clean.
+- **Required status checks on `main`:** `lint`, `typecheck`, `test (3.11)`, `test (3.13)`,
+  `site` (from `ci.yml`, so do not rename those jobs), plus `Run Pre-commit Hooks` from
+  `pre-commit.yml`.
 - **Branch rules on `main`:** PRs required for contributors, no force pushes, no deletion,
   squash merges. The maintainer and the `persist` job's `github-actions[bot]` push must be
   able to bypass the PR requirement.
