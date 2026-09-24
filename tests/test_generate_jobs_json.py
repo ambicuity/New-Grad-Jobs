@@ -11,7 +11,8 @@ from datetime import UTC, datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from ngj.outputs.jobs_json import generate_jobs_json  # noqa: E402
+from contracts import JOBS_SCHEMA_VERSION, compute_job_id, validate_jobs_json_contract  # noqa: E402
+from ngj.outputs.jobs_json import generate_jobs_json, resolve_first_seen  # noqa: E402
 from ngj.taxonomy import CATEGORY_PATTERNS  # noqa: E402
 
 
@@ -27,7 +28,10 @@ class TestGenerateJobsJsonStructure:
         assert 'jobs' in result
         assert result['meta']['total_jobs'] == 0
         assert result['jobs'] == []
-        assert result['meta']['categories'] == []
+        assert result['meta']['schema_version'] == JOBS_SCHEMA_VERSION
+        # Every category is listed, zero counts included (README markers/sections rely on it).
+        assert [c['id'] for c in result['meta']['categories']] == list(CATEGORY_PATTERNS)
+        assert all(c['count'] == 0 for c in result['meta']['categories'])
 
     def test_meta_includes_generated_timestamp(self):
         """Meta section should include ISO timestamp of generation."""
@@ -74,7 +78,8 @@ class TestGenerateJobsJsonStructure:
         result = generate_jobs_json(jobs, config)
 
         job = result['jobs'][0]
-        assert job['id'] == 'test-123'
+        # The legacy slug is replaced: id is kept for compatibility and equals job_id.
+        assert job['id'] == job['job_id'] == compute_job_id(jobs[0])
         assert job['company'] == 'TestCo'
         assert job['title'] == 'Software Engineer'
         assert job['location'] == 'San Francisco, CA'
@@ -96,7 +101,7 @@ class TestGenerateJobsJsonStructure:
         result = generate_jobs_json(jobs, config)
 
         job = result['jobs'][0]
-        assert job['id'] == ''
+        assert job['id'] == job['job_id']
         assert job['company'] == 'MinimalCo'
         assert job['title'] == ''
         assert job['location'] == ''
@@ -149,8 +154,8 @@ class TestCategoryCountCalculation:
         assert categories['data_ml'] == 1
         assert categories['hardware'] == 3
 
-    def test_zero_count_categories_excluded_from_metadata(self):
-        """Categories with zero jobs should not appear in metadata."""
+    def test_zero_count_categories_included_in_metadata(self):
+        """Categories with zero jobs are listed with count 0 (README COUNT markers need them)."""
         jobs = [
             {'company': 'A', 'category': {'id': 'software_engineering'}},
             {'company': 'B', 'category': {'id': 'data_ml'}},
@@ -158,13 +163,13 @@ class TestCategoryCountCalculation:
         config = {}
         result = generate_jobs_json(jobs, config)
 
-        category_ids = [cat['id'] for cat in result['meta']['categories']]
-        assert 'software_engineering' in category_ids
-        assert 'data_ml' in category_ids
-        # These should not appear (zero count)
-        assert 'hardware' not in category_ids
-        assert 'quant_finance' not in category_ids
-        assert 'product_management' not in category_ids
+        counts = {cat['id']: cat['count'] for cat in result['meta']['categories']}
+        assert counts['software_engineering'] == 1
+        assert counts['data_ml'] == 1
+        assert counts['hardware'] == 0
+        assert counts['quant_finance'] == 0
+        assert counts['product_management'] == 0
+        assert list(counts) == list(CATEGORY_PATTERNS)
 
     def test_category_metadata_includes_name_and_emoji(self):
         """Category metadata should include name and emoji from CATEGORY_PATTERNS."""
@@ -382,25 +387,26 @@ class TestEdgeCases:
         config = {}
         result = generate_jobs_json(jobs, config)
 
-        category_ids = {cat['id'] for cat in result['meta']['categories']}
-        assert category_ids == {
+        nonzero = {cat['id'] for cat in result['meta']['categories'] if cat['count']}
+        assert nonzero == {
             'software_engineering', 'data_ml', 'data_engineering',
             'infrastructure_sre', 'product_management', 'quant_finance',
             'hardware', 'other'
         }
 
-    def test_duplicate_jobs_not_deduplicated(self):
-        """generate_jobs_json should not deduplicate - that's done earlier."""
+    def test_duplicate_job_ids_are_dropped_as_a_safety_net(self, caplog):
+        """ngj.dedup should already have removed these; a repeat job_id is logged and dropped."""
         jobs = [
             {'company': 'A', 'title': 'Engineer', 'url': 'http://a.com/1'},
-            {'company': 'A', 'title': 'Engineer', 'url': 'http://a.com/1'},  # Exact duplicate
+            {'company': 'A', 'title': 'Engineer II', 'url': 'http://a.com/1?utm_source=x'},  # same posting
+            {'company': 'A', 'title': 'Engineer', 'url': 'http://a.com/2'},
         ]
-        config = {}
-        result = generate_jobs_json(jobs, config)
+        result = generate_jobs_json(jobs, {})
 
-        # Both should be present (deduplication happens in filter_jobs)
-        assert len(result['jobs']) == 2
+        assert sorted(j['url'] for j in result['jobs']) == ['http://a.com/1', 'http://a.com/2']
         assert result['meta']['total_jobs'] == 2
+        assert len({j['job_id'] for j in result['jobs']}) == 2
+        assert 'Duplicate job_id' in caplog.text
 
     def test_config_parameter_not_used(self):
         """Config parameter exists but is not currently used by the function."""
@@ -492,3 +498,49 @@ class TestGenerateJobsJsonImmutabilityAndDeterminism:
         ids = [job['job_id'] for job in forward]
         assert ids == sorted(compute_job_id(job) for job in jobs)
         assert [job['job_id'] for job in backward] == ids
+
+
+class TestFirstSeenCarryForward:
+    NOW = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
+
+    def _job(self, n, posted='2026-09-01T00:00:00Z'):
+        return {'company': 'A', 'title': f'T{n}', 'url': f'https://a.com/{n}', 'source': 'Greenhouse',
+                'posted_at': posted}
+
+    def test_bootstrap_without_previous_data_uses_posted_at(self):
+        result = generate_jobs_json([self._job(1)], now=self.NOW)
+        assert result['jobs'][0]['first_seen'] == '2026-09-01T00:00:00Z'
+
+    def test_bootstrap_without_posted_at_uses_now(self):
+        result = generate_jobs_json([self._job(1, posted=None)], now=self.NOW)
+        assert result['jobs'][0]['first_seen'].startswith('2026-09-24T12:00:00')
+
+    def test_known_job_carries_first_seen_forward(self):
+        job_id = compute_job_id(self._job(1))
+        result = generate_jobs_json([self._job(1)], previous_first_seen={job_id: '2026-08-01T00:00:00Z'},
+                                    now=self.NOW)
+        assert result['jobs'][0]['first_seen'] == '2026-08-01T00:00:00Z'
+
+    def test_new_job_after_bootstrap_is_first_seen_now(self):
+        previous = {compute_job_id(self._job(1)): '2026-08-01T00:00:00Z'}
+        result = generate_jobs_json([self._job(1), self._job(2)], previous_first_seen=previous, now=self.NOW)
+        by_url = {j['url']: j['first_seen'] for j in result['jobs']}
+        assert by_url['https://a.com/1'] == '2026-08-01T00:00:00Z'
+        assert by_url['https://a.com/2'].startswith('2026-09-24T12:00:00')
+
+    def test_resolve_first_seen_prefers_carried_value(self):
+        assert resolve_first_seen('job_x', {}, {'job_x': 'then'}, 'now') == 'then'
+
+
+def test_real_generated_output_passes_the_contract():
+    """The contract is checked against generate_jobs_json output, not a hand-built payload."""
+    jobs = [
+        {'company': 'Acme', 'title': 'SWE', 'url': 'https://acme.com/1', 'source': 'Greenhouse',
+         'posted_at': '2026-09-01', 'category': {'id': 'software_engineering'}, 'company_tier': {},
+         'flags': {}, 'is_closed': False},
+        {'company': 'Acme', 'title': 'SWE', 'url': 'https://acme.com/2', 'source': 'Greenhouse',
+         'posted_at': '2026-09-01', 'category': {'id': 'software_engineering'}, 'company_tier': {},
+         'flags': {}, 'is_closed': False},
+    ]
+    ok, errors = validate_jobs_json_contract(generate_jobs_json(jobs))
+    assert ok, errors

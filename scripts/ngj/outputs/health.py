@@ -1,94 +1,165 @@
-"""health.json: run status and count telemetry for monitoring/staleness checks."""
+"""health.json: run status and count telemetry for monitoring/staleness checks.
+
+Readers: scraper-watchdog.yml (``last_run``), the README badges
+(``total_jobs``, ``configured_company_apis``, ``enabled_sources``), the
+pipeline's partial-collapse guard (``total_jobs``, ``raw_source_counts``) and
+scripts/quality.py. ``source_counts`` is a deprecated alias of
+``raw_source_counts`` kept for one release.
+"""
 
 from __future__ import annotations
 
 import json
 import logging
 import time
+from collections import Counter
 from collections.abc import Mapping, Sequence
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from ngj.models import KIND_COOLDOWN, SourceResult
+from ngj.registry import configured_company_apis, source_registry
+
 logger = logging.getLogger(__name__)
+
+HEALTH_SCHEMA_VERSION = "1.1"
+
+# A source is "degraded" when more than this share of its configured units
+# (companies/boards/queries) failed.
+DEGRADED_FAILURE_RATIO = 0.25
+MAX_FAILED_COMPANIES_LISTED = 20
+
+REQUIRED_HEALTH_KEYS = frozenset({
+    "schema_version", "status", "last_run", "total_jobs", "raw_source_counts", "source_counts",
+    "zero_sources", "url_safety_blocked", "run_duration_seconds", "sources",
+    "configured_company_apis", "enabled_sources", "active_hiring_companies", "active_sources",
+})
+HEALTH_STATUSES = frozenset({"ok", "degraded", "failed"})
 
 
 def compute_display_metrics(
     jobs: Sequence[dict[str, Any]],
-    source_counts: Mapping[str, int],
+    raw_source_counts: Mapping[str, int],
     config: Mapping[str, Any],
 ) -> dict[str, int]:
     """Canonical count metrics used by the site and README surfaces."""
-    apis = config.get('apis', {})
-    gh_companies = len(apis.get('greenhouse', {}).get('companies', []))
-    lever_companies = len(apis.get('lever', {}).get('companies', []))
-    workday_cfg = apis.get('workday', {})
-    workday_companies = len(workday_cfg.get('companies', [])) if workday_cfg.get('enabled') else 0
-    graphql_cfg = apis.get('graphql', {})
-    graphql_sources = len(graphql_cfg.get('sources', [])) if graphql_cfg.get('enabled') else 0
-
-    enabled_sources = sum((
-        int(gh_companies > 0),
-        int(lever_companies > 0),
-        int(bool(workday_cfg.get('enabled')) and len(workday_cfg.get('companies', [])) > 0),
-        int(bool(apis.get('google', {}).get('enabled', True)) and len(apis.get('google', {}).get('search_terms', [])) > 0),
-        int(bool(apis.get('jobspy', {}).get('enabled', True))),
-        int(bool(graphql_cfg.get('enabled')) and len(graphql_cfg.get('sources', [])) > 0),
-    ))
-
+    registry = source_registry(config)
     active_hiring_companies = len({
-        job.get('company', '').strip()
-        for job in jobs
-        if isinstance(job.get('company'), str) and job.get('company').strip()
+        company.strip() for company in (job.get('company') for job in jobs)
+        if isinstance(company, str) and company.strip()
     })
-
     return {
-        'configured_company_apis': gh_companies + lever_companies + workday_companies + graphql_sources,
-        'enabled_sources': enabled_sources,
+        'configured_company_apis': configured_company_apis(registry),
+        'enabled_sources': len(registry),
         'active_hiring_companies': active_hiring_companies,
-        'active_sources': sum(1 for count in source_counts.values() if count > 0),
+        'active_sources': sum(1 for count in raw_source_counts.values() if count > 0),
+    }
+
+
+def summarize_source(name: str, result: SourceResult, configured_units: int | None) -> dict[str, Any]:
+    """Per-source health: counts, error summary, failure ratio and status."""
+    failed = sorted({error.company for error in result.errors if error.company})
+    in_cooldown = any(error.kind == KIND_COOLDOWN for error in result.errors)
+    if configured_units:
+        failure_ratio: float | None = round(min(1.0, len(failed) / configured_units), 3)
+    else:
+        failure_ratio = None
+    degraded = in_cooldown or (failure_ratio is not None and failure_ratio > DEGRADED_FAILURE_RATIO)
+    return {
+        'jobs': len(result.jobs),
+        'raw_count': result.raw_count,
+        'configured_units': configured_units,
+        'failure_ratio': failure_ratio,
+        'in_cooldown': in_cooldown,
+        'status': 'degraded' if degraded else 'ok',
+        'errors': {
+            'count': len(result.errors),
+            'by_kind': dict(sorted(Counter(error.kind for error in result.errors).items())),
+            'failed_companies': failed[:MAX_FAILED_COMPANIES_LISTED],
+            'failed_companies_total': len(failed),
+        },
     }
 
 
 def build_health(
     jobs: Sequence[dict[str, Any]],
-    source_counts: Mapping[str, int],
+    source_results: Mapping[str, SourceResult],
     start_time: float,
     config: Mapping[str, Any],
     url_blocked_count: int = 0,
+    now: datetime | None = None,
 ) -> dict[str, Any]:
     """Build the health payload.
 
     Status values:
-      - ok: every source returned jobs and total > 0
-      - degraded: at least one source returned 0 jobs, or the publish-time URL
-        safety gate blocked one or more jobs
       - failed: total job count is 0
+      - degraded: a source returned 0 jobs, a source is in 403 cooldown or had
+        more than 25% of its configured units fail, or the publish-time URL
+        safety gate blocked one or more jobs
+      - ok: otherwise
     """
+    registry = source_registry(config)
+    raw_source_counts = {name: len(result.jobs) for name, result in source_results.items()}
+    sources = {
+        name: summarize_source(name, result, registry[name].unit_count if name in registry else None)
+        for name, result in source_results.items()
+    }
     total_jobs = len(jobs)
-    zero_sources = [s for s, c in source_counts.items() if c == 0]
+    zero_sources = [name for name, count in raw_source_counts.items() if count == 0]
+    degraded_sources = [name for name, summary in sources.items() if summary['status'] == 'degraded']
     if total_jobs == 0:
         status = 'failed'
-    elif zero_sources or url_blocked_count:
+    elif zero_sources or degraded_sources or url_blocked_count:
         status = 'degraded'
     else:
         status = 'ok'
 
     return {
+        'schema_version': HEALTH_SCHEMA_VERSION,
         'status': status,
-        'last_run': datetime.now(UTC).isoformat().replace('+00:00', 'Z'),
+        'last_run': (now or datetime.now(UTC)).isoformat().replace('+00:00', 'Z'),
         'total_jobs': total_jobs,
-        'source_counts': dict(source_counts),
+        'raw_source_counts': raw_source_counts,
+        # Deprecated alias of raw_source_counts; remove after one release.
+        'source_counts': dict(raw_source_counts),
         'zero_sources': zero_sources,
+        'degraded_sources': degraded_sources,
         'url_safety_blocked': url_blocked_count,
         'run_duration_seconds': round(time.time() - start_time, 1),
-        **compute_display_metrics(jobs, source_counts, config),
+        'sources': sources,
+        **compute_display_metrics(jobs, raw_source_counts, config),
     }
+
+
+def validate_health(payload: Any) -> list[str]:
+    """Shape check for health.json (used by scripts/quality.py)."""
+    if not isinstance(payload, dict):
+        return ["health.json root must be an object"]
+    errors = [f"health.json missing key: {key}" for key in sorted(REQUIRED_HEALTH_KEYS - payload.keys())]
+    if payload.get('status') not in HEALTH_STATUSES:
+        errors.append(f"health.json status must be one of {sorted(HEALTH_STATUSES)}")
+    for key in ('total_jobs', 'url_safety_blocked', 'configured_company_apis', 'enabled_sources',
+                'active_hiring_companies', 'active_sources'):
+        value = payload.get(key)
+        if key in payload and (isinstance(value, bool) or not isinstance(value, int) or value < 0):
+            errors.append(f"health.json {key} must be a non-negative integer")
+    counts = payload.get('raw_source_counts')
+    if 'raw_source_counts' in payload and not (
+        isinstance(counts, dict) and all(isinstance(v, int) and not isinstance(v, bool) for v in counts.values())
+    ):
+        errors.append("health.json raw_source_counts must map source → integer")
+    last_run = payload.get('last_run')
+    try:
+        datetime.fromisoformat(str(last_run).replace('Z', '+00:00'))
+    except ValueError:
+        errors.append("health.json last_run must be an ISO 8601 timestamp")
+    return errors
 
 
 def generate_health_json(
     jobs: Sequence[dict[str, Any]],
-    source_counts: Mapping[str, int],
+    source_results: Mapping[str, SourceResult],
     start_time: float,
     config: Mapping[str, Any],
     output_dir: Path,
@@ -100,13 +171,13 @@ def generate_health_json(
     safety gate (scripts/url_safety.py), surfaced so monitoring can alert when
     unsafe links start appearing upstream.
     """
-    health = build_health(jobs, source_counts, start_time, config, url_blocked_count)
+    health = build_health(jobs, source_results, start_time, config, url_blocked_count)
     health_path = Path(output_dir) / "health.json"
     try:
         health_path.parent.mkdir(parents=True, exist_ok=True)
         health_path.write_text(json.dumps(health, indent=2) + '\n', encoding='utf-8')
     except OSError as exc:
-        logger.warning("⚠️  Failed to write health.json: %s", exc)
+        logger.error("❌ Failed to write health.json: %s", exc)
         return None
     logger.info("🩺 Health report: status=%s, total_jobs=%s", health['status'], health['total_jobs'])
     return health

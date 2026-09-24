@@ -327,17 +327,20 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 ### `docs/jobs.json` schema
 
-Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use:
+Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use.
+`meta` carries `schema_version` (currently `"1.1"`), `generated_at`, `total_jobs` and `categories`
+(every category with its `count`, zero counts included). Jobs are ordered by `posted_at` (newest first), ties by `job_id`.
 
 | Field | Type | Notes |
 |---|---|---|
-| `job_id` | string | stable content hash `job_<hex>` (company, title, url, location, source); keys the description shards |
-| `id` | string | de-duplicated `company-title-location` slug |
+| `job_id` | string | stable, unique `job_<20 hex>` hash of `source` + canonical posting URL (tracking params stripped; company/title/location when there is no URL); keys the description shards and the RSS guid |
+| `id` | string | same value as `job_id` (kept for backward compatibility; was a `company-title-location` slug before schema 1.1) |
 | `company` | string | |
 | `title` | string | |
 | `location` | string | |
 | `url` | string | direct link to the posting on the source ATS |
-| `posted_at` | ISO 8601 | |
+| `posted_at` | ISO 8601 | when the employer posted the role |
+| `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
 | `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (…)` |
 | `category` | object | `{id, name, emoji}` — one of the 12 categories |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |

@@ -189,10 +189,14 @@ def test_http_timeout_reaches_greenhouse_requests(tmp_path):
 
 def test_jobspy_workers_reach_fetcher(tmp_path):
     settings = _settings(tmp_path, jobspy_workers=3)
-    config = _config(jobspy={"enabled": False})
+    config = _config(jobspy={"enabled": True})
     with patch("ngj.pipeline.fetch_jobspy_jobs") as fetch:
         pipeline.plan_sources(config, settings)["jobspy"]()
-    fetch.assert_called_once_with({"enabled": False}, workers=3)
+    fetch.assert_called_once_with({"enabled": True}, workers=3)
+
+
+def test_disabled_jobspy_is_not_planned(tmp_path):
+    assert "jobspy" not in pipeline.plan_sources(_config(jobspy={"enabled": False}), _settings(tmp_path))
 
 
 def test_plan_sources_skips_empty_and_disabled_sources(tmp_path):

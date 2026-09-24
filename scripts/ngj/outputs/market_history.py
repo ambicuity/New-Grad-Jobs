@@ -100,11 +100,12 @@ def _write_atomic(path: Path, payload: dict[str, Any]) -> None:
     """Write via a sibling temp file + os.replace so a crash never truncates the file."""
     directory = os.path.dirname(os.path.abspath(path))
     os.makedirs(directory, exist_ok=True)
-    fd, tmp_path = tempfile.mkstemp(dir=directory, prefix='.market-history.', suffix='.tmp')
+    fd, tmp_name = tempfile.mkstemp(dir=directory, prefix='.market-history.', suffix='.tmp')
+    tmp_path: str | None = tmp_name
     try:
         with os.fdopen(fd, 'w', encoding='utf-8') as f:
             json.dump(payload, f, indent=2, ensure_ascii=False)
-        os.replace(tmp_path, path)
+        os.replace(tmp_name, path)
         tmp_path = None
     finally:
         if tmp_path and os.path.exists(tmp_path):
