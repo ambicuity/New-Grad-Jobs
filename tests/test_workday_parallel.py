@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Tests for the parallel (per-company) Workday fetch path."""
 
+import logging
+
+import pytest
 import os
 import sys
 import threading
@@ -9,8 +12,16 @@ from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-import update_jobs  # noqa: E402
-from update_jobs import DEFAULT_WORKDAY_MAX_WORKERS, fetch_workday_jobs  # noqa: E402
+import source_cooldown  # noqa: E402
+from ngj.settings import DEFAULT_WORKDAY_MAX_WORKERS  # noqa: E402
+from ngj.sources.workday import fetch_workday_jobs  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _capture_info_logs(caplog):
+    """The scraper logs via `logging` (INFO and up); capture it for assertions."""
+    caplog.set_level(logging.INFO)
+
 
 
 def _company(name: str, host: str, site: str = "Careers") -> dict[str, str]:
@@ -48,10 +59,10 @@ def _router(behaviour):
 
 
 def _no_cooldown():
-    return patch.object(update_jobs.SOURCE_COOLDOWN, "is_tripped", return_value=False)
+    return patch.object(source_cooldown.SOURCE_COOLDOWN, "is_tripped", return_value=False)
 
 
-def test_one_company_failing_does_not_drop_the_others(capsys):
+def test_one_company_failing_does_not_drop_the_others(caplog):
     companies = [
         _company("Broken", "broken.wd1.myworkdayjobs.com"),
         _company("Healthy", "healthy.wd1.myworkdayjobs.com"),
@@ -63,14 +74,14 @@ def test_one_company_failing_does_not_drop_the_others(capsys):
         return _response(_items("healthy"))
 
     with (
-        patch("update_jobs.limited_post", side_effect=_router(behaviour)),
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
+        patch("ngj.http.limited_post", side_effect=_router(behaviour)),
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
         _no_cooldown(),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=2)
+        jobs = list(fetch_workday_jobs(companies, max_workers=2).jobs)
 
     assert [job["company"] for job in jobs] == ["Healthy", "Healthy"]
-    assert "Error processing Broken" in capsys.readouterr().out
+    assert "Error processing Broken" in caplog.text
 
 
 def test_companies_are_fetched_concurrently():
@@ -87,11 +98,11 @@ def test_companies_are_fetched_concurrently():
         return _response(_items(host.split(".")[0]))
 
     with (
-        patch("update_jobs.limited_post", side_effect=_router(behaviour)),
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
+        patch("ngj.http.limited_post", side_effect=_router(behaviour)),
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
         _no_cooldown(),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=2)
+        jobs = list(fetch_workday_jobs(companies, max_workers=2).jobs)
 
     assert len(jobs) == 4
 
@@ -108,11 +119,11 @@ def test_results_keep_config_order_regardless_of_completion_order():
         return _response(_items(host.split(".")[0], count=1))
 
     with (
-        patch("update_jobs.limited_post", side_effect=_router(behaviour)),
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
+        patch("ngj.http.limited_post", side_effect=_router(behaviour)),
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
         _no_cooldown(),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=2)
+        jobs = list(fetch_workday_jobs(companies, max_workers=2).jobs)
 
     assert [job["company"] for job in jobs] == ["Slow", "Fast"]
 
@@ -140,11 +151,11 @@ def test_companies_sharing_a_host_are_fetched_serially():
         return _response(_items(request_host.split(".")[0], count=1))
 
     with (
-        patch("update_jobs.limited_post", side_effect=_router(behaviour)),
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
+        patch("ngj.http.limited_post", side_effect=_router(behaviour)),
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
         _no_cooldown(),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=4)
+        jobs = list(fetch_workday_jobs(companies, max_workers=4).jobs)
 
     assert in_flight["max_shared"] == 1
     assert [job["company"] for job in jobs] == ["Tenant A", "Tenant B", "Other"]
@@ -153,27 +164,27 @@ def test_companies_sharing_a_host_are_fetched_serially():
 def test_cooldown_tripped_company_is_skipped():
     companies = [_company("Skipped", "skipped.wd1.myworkdayjobs.com")]
     with (
-        patch("update_jobs.limited_post") as mock_post,
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
-        patch.object(update_jobs.SOURCE_COOLDOWN, "is_tripped", return_value=True),
+        patch("ngj.http.limited_post") as mock_post,
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
+        patch.object(source_cooldown.SOURCE_COOLDOWN, "is_tripped", return_value=True),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=2)
+        jobs = list(fetch_workday_jobs(companies, max_workers=2).jobs)
 
     assert jobs == []
     mock_post.assert_not_called()
 
 
-def test_invalid_max_workers_falls_back_to_default(capsys):
+def test_invalid_max_workers_falls_back_to_default(caplog):
     companies = [_company("Solo", "solo.wd1.myworkdayjobs.com")]
     with (
-        patch("update_jobs.limited_post", side_effect=_router(lambda host: _response(_items("solo", 1)))),
-        patch("update_jobs.get_workday_csrf_token", return_value="tok"),
+        patch("ngj.http.limited_post", side_effect=_router(lambda host: _response(_items("solo", 1)))),
+        patch("ngj.sources.workday.get_workday_csrf_token", return_value="tok"),
         _no_cooldown(),
     ):
-        jobs = fetch_workday_jobs(companies, max_workers=0)
+        jobs = list(fetch_workday_jobs(companies, max_workers=0).jobs)
 
     assert len(jobs) == 1
-    assert f"using default {DEFAULT_WORKDAY_MAX_WORKERS}" in capsys.readouterr().out
+    assert f"using default {DEFAULT_WORKDAY_MAX_WORKERS}" in caplog.text
 
 
 def test_default_max_workers_is_eight():

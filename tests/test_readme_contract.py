@@ -16,6 +16,9 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).parent.parent
 SCRAPER = ROOT / "scripts" / "update_jobs.py"
+PIPELINE = ROOT / "scripts" / "ngj" / "pipeline.py"
+# Every scraper source file: the thin entrypoint plus the ngj package.
+SCRAPER_FILES = [SCRAPER, *sorted((ROOT / "scripts" / "ngj").rglob("*.py"))]
 WORKFLOW = ROOT / ".github" / "workflows" / "update-jobs.yml"
 
 
@@ -24,7 +27,11 @@ WORKFLOW = ROOT / ".github" / "workflows" / "update-jobs.yml"
 # ---------------------------------------------------------------------------
 
 def _scraper_ast() -> ast.Module:
-    return ast.parse(SCRAPER.read_text(encoding="utf-8"))
+    """One module node holding the statements of every scraper source file."""
+    body = []
+    for path in SCRAPER_FILES:
+        body.extend(ast.parse(path.read_text(encoding="utf-8")).body)
+    return ast.Module(body=body, type_ignores=[])
 
 
 def test_scraper_does_not_define_generate_readme() -> None:
@@ -186,8 +193,8 @@ def test_sync_readme_counts_writes_through_marker_regex_only() -> None:
 
 
 def test_scraper_uses_sync_readme_counts() -> None:
-    """update_jobs.py must invoke sync_readme_counts (and nothing else for README)."""
-    source = SCRAPER.read_text(encoding="utf-8")
+    """The pipeline must invoke sync_readme_counts (and nothing else for README)."""
+    source = PIPELINE.read_text(encoding="utf-8")
     assert "sync_readme_counts" in source, (
         "update_jobs.py does not call sync_readme_counts — README counts will "
         "drift from docs/jobs.json. See scripts/sync_readme_counts.py."

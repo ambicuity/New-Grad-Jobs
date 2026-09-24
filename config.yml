@@ -666,11 +666,12 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/vorticity"
 
   google:
-    # P5: Google Careers API deprecated (returns 404 since late 2024).
-    # Disabled to avoid wasted HTTP calls. Re-enable when a replacement endpoint is found.
+    # Scrapes the public Google Careers results page (AF_initDataCallback
+    # payload; the old /api/v3/search JSON endpoint 404s). Verified working
+    # 2026-09-24. Left disabled pending a decision to add Google as a source.
     enabled: false
     max_pages: 3
-    # Google careers API - searches for new grad positions
+    # Search terms, one results-page crawl each (up to max_pages pages)
     search_terms:
       - "new graduate software engineer"
       - "entry level software engineer"
@@ -908,44 +909,6 @@ apis:
     results_wanted: 30  # Reduced from 50 for faster responses
     hours_old: 168
 
-  # Third-party job scraping APIs (configuration ready for future implementation)
-  scraper_apis:
-    # ScraperAPI - Handles proxy rotation, CAPTCHA solving, JS rendering
-    scraper_api:
-      enabled: false
-      api_key: "${SCRAPER_API_KEY}"  # Set via environment variable
-      endpoints:
-        - "indeed.com"
-        - "linkedin.com/jobs"
-        - "glassdoor.com"
-
-    # SerpApi - Google Jobs API alternative
-    serp_api:
-      enabled: false
-      api_key: "${SERP_API_KEY}"  # Set via environment variable
-      search_engine: "google_jobs"
-      location: "United States"
-
-    # Zyte (Scrapinghub) - Enterprise job scraping service
-    zyte:
-      enabled: false
-      api_key: "${ZYTE_API_KEY}"  # Set via environment variable
-      project_id: "${ZYTE_PROJECT_ID}"
-
-    # Bright Data - Proxy network and job scraper API
-    bright_data:
-      enabled: false
-      username: "${BRIGHT_DATA_USERNAME}"
-      password: "${BRIGHT_DATA_PASSWORD}"
-      endpoint: "brd-customer-hl_username-zone-jobs"
-
-    # ScrapingBee - General web scraping API with AI extraction
-    scraping_bee:
-      enabled: false
-      api_key: "${SCRAPING_BEE_API_KEY}"
-      render_js: true
-      premium_proxy: true
-
   # Workday integration configuration
   workday:
     enabled: true
@@ -1167,14 +1130,3 @@ apis:
         - "junior"
         - "I"
         - "II"
-
-# README generation settings
-readme:
-  title: "🎓 New Grad Jobs"
-  subtitle: "Automatically updated list of new graduate job opportunities in Software, Data, Network, and SRE roles"
-  table_headers:
-    - "Company"
-    - "Role"
-    - "Location"
-    - "Posted"
-    - "Apply"

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pipeline artifact integrity checker.
 
-Checks:
+Checks, in the pipeline output dir ($NGJ_OUTPUT_DIR, default site/public):
 - required artifacts exist and parse
 - contract/schema compatibility
 - count sanity across artifacts
@@ -11,18 +11,15 @@ Checks:
 from __future__ import annotations
 
 import json
-import sys
 from pathlib import Path
 
-try:
-    from quality import run_integrity_checks
-except ModuleNotFoundError:
-    from scripts.quality import run_integrity_checks
+from ngj.settings import resolve_output_dir
+from quality import run_integrity_checks
 
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
-    ok, report = run_integrity_checks(repo_root)
+    ok, report = run_integrity_checks(resolve_output_dir(repo_root))
     print(json.dumps(report, indent=2))
     return 0 if ok else 1
 

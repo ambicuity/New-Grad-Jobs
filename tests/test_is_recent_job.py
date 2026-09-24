@@ -15,7 +15,7 @@ from datetime import datetime, date, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import is_recent_job
+from ngj.dates import is_recent_job  # noqa: E402
 
 
 class TestIsRecentJobBasicBehavior:

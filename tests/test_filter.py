@@ -20,7 +20,8 @@ import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import filter_jobs, deduplicate_jobs, has_new_grad_signal, has_track_signal, is_title_excluded
+from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
+from ngj.dedup import deduplicate_jobs  # noqa: E402
 
 
 def _make_job(

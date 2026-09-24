@@ -1,6 +1,6 @@
 """Per-source 403 cooldown / circuit-breaker for HTTP fetchers.
 
-Extracted from ``update_jobs.py`` so it can be imported independently and
+Kept as a standalone module (used via ``ngj.http``) so it can be imported independently and
 tested in isolation without pulling in the full scraper module.
 
 Public API
@@ -12,8 +12,11 @@ Public API
 
 from __future__ import annotations
 
+import logging
 import threading
 from urllib.parse import urlparse
+
+logger = logging.getLogger(__name__)
 
 __all__ = ["SourceCooldownTracker", "SOURCE_COOLDOWN_THRESHOLD", "SOURCE_COOLDOWN"]
 
@@ -115,9 +118,9 @@ class SourceCooldownTracker:
             self._counts[key] = self._counts.get(key, 0) + 1
             if self._counts[key] >= self._threshold:
                 self._tripped.add(key)
-                print(
-                    f"  🚫 COOLDOWN TRIPPED: '{key}' has returned {self._threshold} "
-                    f"403 responses in this run — skipping for remainder of run"
+                logger.warning(
+                    "  🚫 COOLDOWN TRIPPED: '%s' has returned %s 403 responses in this run "
+                    "— skipping for remainder of run", key, self._threshold,
                 )
                 return False  # just tripped — not admitted
         return True  # admitted; count still below threshold
@@ -147,9 +150,9 @@ class SourceCooldownTracker:
             self._counts[key] = self._counts.get(key, 0) + 1
             if self._counts[key] >= self._threshold:
                 self._tripped.add(key)
-                print(
-                    f"  🚫 COOLDOWN TRIPPED: '{key}' has returned {self._threshold} "
-                    f"403 responses in this run — skipping for remainder of run"
+                logger.warning(
+                    "  🚫 COOLDOWN TRIPPED: '%s' has returned %s 403 responses in this run "
+                    "— skipping for remainder of run", key, self._threshold,
                 )
                 return True
         return False

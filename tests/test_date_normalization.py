@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for timezone-aware date normalization in scripts/update_jobs.py."""
+"""Tests for timezone-aware date normalization (scripts/ngj/dates.py)."""
 
 import os
 import sys
@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import (
+from ngj.dates import (  # noqa: E402
     extract_sort_date,
     format_posted_date,
     get_iso_date,
@@ -128,7 +128,7 @@ def test_normalize_date_string_preserves_unmatched_unicode_text():
 
 
 def test_is_recent_job_handles_utc_offset_string_by_normalizing_to_utc(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     old_instant_utc = FIXED_NOW_UTC - timedelta(days=7, hours=1)
     plus14 = timezone(timedelta(hours=14))
@@ -138,7 +138,7 @@ def test_is_recent_job_handles_utc_offset_string_by_normalizing_to_utc(monkeypat
 
 
 def test_is_recent_job_handles_timezone_aware_datetime_object(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     fresh_instant_utc = FIXED_NOW_UTC - timedelta(days=1)
     minus8 = timezone(timedelta(hours=-8))
@@ -148,7 +148,7 @@ def test_is_recent_job_handles_timezone_aware_datetime_object(monkeypatch):
 
 
 def test_is_recent_job_handles_unix_millis(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     recent_ms = int((FIXED_NOW_UTC - timedelta(days=1)).timestamp() * 1000)
     old_ms = int((FIXED_NOW_UTC - timedelta(days=8)).timestamp() * 1000)
@@ -158,14 +158,14 @@ def test_is_recent_job_handles_unix_millis(monkeypatch):
 
 
 def test_is_recent_job_handles_naive_datetime(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     naive_recent = (FIXED_NOW_UTC - timedelta(days=1)).replace(tzinfo=None)
     assert is_recent_job(naive_recent, 7) is True
 
 
 def test_is_recent_job_boundary_behavior_for_recent_window(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     just_inside = (FIXED_NOW_UTC - timedelta(days=7) + timedelta(minutes=1)).isoformat()
     just_outside = (FIXED_NOW_UTC - timedelta(days=7) - timedelta(minutes=1)).isoformat()
@@ -176,27 +176,27 @@ def test_is_recent_job_boundary_behavior_for_recent_window(monkeypatch):
 
 def test_format_posted_date_handles_posted_today_without_negative_day_drift(monkeypatch):
     just_after_midnight_utc = datetime(2026, 3, 4, 0, 30, 0, tzinfo=timezone.utc)
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(just_after_midnight_utc))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(just_after_midnight_utc))
 
     assert format_posted_date('Posted Today') == 'Today'
 
 
 def test_format_posted_date_normalizes_timezone_aware_strings(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     value = '2026-03-01T12:34:56+05:30'
     assert format_posted_date(value) == '3 days ago'
 
 
 def test_get_iso_date_normalizes_timezone_aware_strings_to_utc(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     value = '2026-03-01T12:34:56+05:30'
     assert get_iso_date(value) == '2026-03-01T07:04:56Z'
 
 
 def test_get_iso_date_handles_unix_millis_in_utc(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=timezone.utc).timestamp() * 1000)
     assert get_iso_date(recent_ms) == '2024-03-09T10:00:00Z'
@@ -215,7 +215,7 @@ def test_get_iso_date_keeps_milliseconds_only():
 
 
 def test_get_iso_date_output_round_trips_through_readers(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     published = get_iso_date('2026-03-02T12:00:00+00:00')
     assert published == '2026-03-02T12:00:00Z'
@@ -233,7 +233,7 @@ def test_get_iso_date_handles_none_nan_empty_and_malformed():
 
 
 def test_extract_sort_date_normalizes_unix_millis_and_offset_strings(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     recent_ms = int((FIXED_NOW_UTC - timedelta(days=2)).timestamp() * 1000)
     assert extract_sort_date({'posted_at': recent_ms}) == datetime(2026, 3, 2, 12, 0, 0)
@@ -241,7 +241,7 @@ def test_extract_sort_date_normalizes_unix_millis_and_offset_strings(monkeypatch
 
 
 def test_extract_sort_date_parses_human_readable_and_invalid_values(monkeypatch):
-    monkeypatch.setattr('update_jobs.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
+    monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
     assert extract_sort_date({'posted_at': 'Posted Today'}) == datetime(2026, 3, 4, 0, 0, 0)
     assert extract_sort_date({'posted_at': 'not-a-date'}) == datetime.min

@@ -14,7 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from update_jobs import CATEGORY_PATTERNS
+from ngj.taxonomy import CATEGORY_PATTERNS  # noqa: E402
 
 _REPO = os.path.join(os.path.dirname(__file__), "..")
 CANONICAL_IDS = set(CATEGORY_PATTERNS.keys())

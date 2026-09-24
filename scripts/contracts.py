@@ -5,17 +5,14 @@ from __future__ import annotations
 import hashlib
 import json
 from dataclasses import dataclass
-from datetime import datetime, timezone
 from typing import Any
 
 JOBS_SCHEMA_VERSION = "1.0"
-EVALUATIONS_SCHEMA_VERSION = "1.0"
-EVALUATION_PROMPT_VERSION = "option-b-v1"
 
 
 @dataclass(frozen=True)
 class JobPostingContract:
-    """Shape contract for docs/jobs.json job entries."""
+    """Shape contract for jobs.json job entries."""
 
     schema_version: str
     job_id: str
@@ -25,27 +22,11 @@ class JobPostingContract:
     location: str
     url: str
     posted_at: str
-    posted_display: str
     source: str
     category: dict[str, Any]
     company_tier: dict[str, Any]
     flags: dict[str, Any]
     is_closed: bool
-
-
-@dataclass(frozen=True)
-class EvaluationContract:
-    """Shape contract for docs/job-evaluations.json entries."""
-
-    schema_version: str
-    evaluation_id: str
-    job_id: str
-    score_overall: float
-    confidence: float
-    model: str
-    prompt_version: str
-    scored_at: str
-    input_hash: str
 
 
 def _normalize_text(value: Any) -> str:
@@ -71,18 +52,6 @@ def compute_job_id(job: dict[str, Any]) -> str:
     return f"job_{digest[:20]}"
 
 
-def compute_input_hash(payload: dict[str, Any]) -> str:
-    """Compute deterministic provenance hash for evaluation input payloads."""
-    canonical = json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
-    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
-
-
-def new_evaluation_id(job_id: str, scored_at: str | None = None) -> str:
-    ts = scored_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    raw = f"{job_id}|{ts}"
-    return f"eval_{hashlib.sha256(raw.encode('utf-8')).hexdigest()[:20]}"
-
-
 def validate_jobs_json_contract(data: dict[str, Any]) -> tuple[bool, list[str]]:
     errors: list[str] = []
     if not isinstance(data, dict):
@@ -105,7 +74,6 @@ def validate_jobs_json_contract(data: dict[str, Any]) -> tuple[bool, list[str]]:
         "location",
         "url",
         "posted_at",
-        "posted_display",
         "source",
         "category",
         "company_tier",
@@ -129,50 +97,5 @@ def validate_jobs_json_contract(data: dict[str, Any]) -> tuple[bool, list[str]]:
     if isinstance(meta, dict):
         if meta.get("schema_version") != JOBS_SCHEMA_VERSION:
             errors.append(f"meta.schema_version must be {JOBS_SCHEMA_VERSION}")
-
-    return len(errors) == 0, errors
-
-
-def validate_evaluations_contract(data: dict[str, Any]) -> tuple[bool, list[str]]:
-    errors: list[str] = []
-    if not isinstance(data, dict):
-        return False, ["evaluations artifact root must be an object"]
-
-    evaluations = data.get("evaluations")
-    if not isinstance(evaluations, list):
-        errors.append("evaluations must be a list")
-        return False, errors
-
-    required = {
-        "schema_version",
-        "evaluation_id",
-        "job_id",
-        "score_overall",
-        "confidence",
-        "model",
-        "prompt_version",
-        "scored_at",
-        "input_hash",
-    }
-
-    for idx, entry in enumerate(evaluations):
-        if not isinstance(entry, dict):
-            errors.append(f"evaluations[{idx}] must be an object")
-            continue
-        missing = sorted(required - set(entry.keys()))
-        if missing:
-            errors.append(f"evaluations[{idx}] missing keys: {', '.join(missing)}")
-            continue
-        if entry.get("schema_version") != EVALUATIONS_SCHEMA_VERSION:
-            errors.append(f"evaluations[{idx}].schema_version must be {EVALUATIONS_SCHEMA_VERSION}")
-        try:
-            score = float(entry.get("score_overall"))
-            confidence = float(entry.get("confidence"))
-            if score < 0 or score > 100:
-                errors.append(f"evaluations[{idx}].score_overall must be in [0, 100]")
-            if confidence < 0 or confidence > 1:
-                errors.append(f"evaluations[{idx}].confidence must be in [0, 1]")
-        except (TypeError, ValueError):
-            errors.append(f"evaluations[{idx}] score_overall/confidence must be numeric")
 
     return len(errors) == 0, errors

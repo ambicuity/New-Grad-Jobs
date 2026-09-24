@@ -74,7 +74,7 @@ Experience an advanced career journey with us! 🚀
 
 ---
 
-<!-- CATEGORY-LISTINGS:START - auto-generated from docs/jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
+<!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
 > **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **1,871** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 

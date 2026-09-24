@@ -25,7 +25,7 @@ import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import build_workday_api_url  # noqa: E402
+from ngj.sources.workday import build_workday_api_url  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 

@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 """Tests for job deduplication logic in scripts/update_jobs.py."""
 
+import logging
+
+import pytest
 import os
 import sys
-from typing import Dict, Any, List
+from typing import Dict, Any
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import deduplicate_jobs, get_job_key
+from ngj.dedup import deduplicate_jobs, get_job_key  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _capture_info_logs(caplog):
+    """The scraper logs via `logging` (INFO and up); capture it for assertions."""
+    caplog.set_level(logging.INFO)
+
 
 
 def _make_job(**kwargs) -> Dict[str, Any]:
@@ -104,7 +114,7 @@ class TestDeduplicateJobs:
         assert len(result) == 3
         assert result == jobs
 
-    def test_deduplicate_removes_exact_duplicates(self, capsys):
+    def test_deduplicate_removes_exact_duplicates(self, caplog):
         """Test that exact duplicate jobs are removed"""
         job = _make_job(company='ACME', title='SWE', url='https://acme.com/swe')
         jobs = [job, job, job]
@@ -112,10 +122,10 @@ class TestDeduplicateJobs:
         assert len(result) == 1
         assert result[0] == job
         # Check that deduplication message is printed
-        captured = capsys.readouterr()
-        assert "Removed 2 duplicate jobs" in captured.out
+        captured = caplog
+        assert "Removed 2 duplicate jobs" in captured.text
 
-    def test_deduplicate_case_insensitive_matching(self, capsys):
+    def test_deduplicate_case_insensitive_matching(self, caplog):
         """Test that deduplication is case-insensitive for company/title"""
         job1 = _make_job(company='ACME', title='SOFTWARE ENGINEER', url='https://acme.com/swe')
         job2 = _make_job(company='acme', title='software engineer', url='https://acme.com/swe')
@@ -138,7 +148,7 @@ class TestDeduplicateJobs:
         assert result[1]['company'] == 'Company2'
         assert result[2]['company'] == 'Company3'
 
-    def test_deduplicate_handles_nan_values(self, capsys):
+    def test_deduplicate_handles_nan_values(self, caplog):
         """Test that jobs with NaN are deduplicated correctly"""
         job1 = _make_job(company='ACME', title=float('nan'), url='https://acme.com/job')
         job2 = _make_job(company='ACME', title=float('nan'), url='https://acme.com/job')
@@ -146,12 +156,12 @@ class TestDeduplicateJobs:
         result = deduplicate_jobs(jobs)
         assert len(result) == 1
 
-    def test_deduplicate_empty_list(self, capsys):
+    def test_deduplicate_empty_list(self, caplog):
         """Test deduplication with empty list"""
         result = deduplicate_jobs([])
         assert len(result) == 0
-        captured = capsys.readouterr()
-        assert "Removed" not in captured.out  # No message for 0 removals
+        captured = caplog
+        assert "Removed" not in captured.text  # No message for 0 removals
 
     def test_deduplicate_single_job(self):
         """Test deduplication with single job"""
@@ -187,7 +197,7 @@ class TestDeduplicateJobs:
         result = deduplicate_jobs(jobs)
         assert len(result) == 2
 
-    def test_deduplicate_mixed_duplicates(self, capsys):
+    def test_deduplicate_mixed_duplicates(self, caplog):
         """Test deduplication with various duplicate patterns"""
         jobs = [
             _make_job(company='ACME', title='SWE', url='https://acme.com/1'),
@@ -198,18 +208,18 @@ class TestDeduplicateJobs:
         ]
         result = deduplicate_jobs(jobs)
         assert len(result) == 3
-        captured = capsys.readouterr()
-        assert "Removed 2 duplicate jobs" in captured.out
+        captured = caplog
+        assert "Removed 2 duplicate jobs" in captured.text
 
-    def test_deduplicate_whitespace_normalization(self, capsys):
+    def test_deduplicate_whitespace_normalization(self, caplog):
         """Test that whitespace differences don't affect deduplication"""
         job1 = _make_job(company='  ACME  ', title='  SWE  ', url='https://acme.com/job')
         job2 = _make_job(company='ACME', title='SWE', url='https://acme.com/job')
         jobs = [job1, job2]
         result = deduplicate_jobs(jobs)
         assert len(result) == 1
-        captured = capsys.readouterr()
-        assert "Removed 1 duplicate jobs" in captured.out
+        captured = caplog
+        assert "Removed 1 duplicate jobs" in captured.text
 
     def test_deduplicate_preserves_job_data(self):
         """Test that deduplication preserves all job fields"""
@@ -242,7 +252,7 @@ class TestDeduplicateJobs:
         result = deduplicate_jobs(jobs)
         assert len(result) == 501
 
-    def test_deduplicate_no_message_for_no_removals(self, capsys):
+    def test_deduplicate_no_message_for_no_removals(self, caplog):
         """Test that no deduplication message is printed when no duplicates are removed"""
         jobs = [
             _make_job(company='ACME', title='SWE', url='https://acme.com/1'),
@@ -250,5 +260,5 @@ class TestDeduplicateJobs:
         ]
         result = deduplicate_jobs(jobs)
         assert len(result) == 2
-        captured = capsys.readouterr()
-        assert "Removed" not in captured.out
+        captured = caplog
+        assert "Removed" not in captured.text

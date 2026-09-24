@@ -11,7 +11,6 @@ Tests cover:
 - get_iso_date(): ISO date string extraction
 """
 
-import math
 import os
 import sys
 from datetime import datetime, timedelta, timezone
@@ -22,18 +21,13 @@ import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import (
-    detect_sponsorship_flags,
-    is_job_closed,
-    get_company_tier,
-    enrich_jobs,
-    extract_compensation,
-    clean_description,
-    fetch_greenhouse_jobs,
-    fetch_ashby_jobs,
-    format_posted_date,
-    get_iso_date,
-)
+from ngj.enrich import detect_sponsorship_flags, is_job_closed, enrich_jobs  # noqa: E402
+from ngj.taxonomy import get_company_tier  # noqa: E402
+from ngj.compensation import extract_compensation  # noqa: E402
+from ngj.text import clean_description  # noqa: E402
+from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
+from ngj.sources.ashby import fetch_ashby_jobs  # noqa: E402
+from ngj.dates import format_posted_date, get_iso_date  # noqa: E402
 
 FIXED_NOW = datetime(2026, 3, 11, 12, 0, 0)
 
@@ -182,7 +176,7 @@ class TestGetCompanyTier:
         # `get_company_tier` checks FAANG_PLUS before UNICORNS, so a company in
         # both sets resolves to 'faang_plus'. Pick from UNICORNS \ FAANG_PLUS and
         # sort to make the choice deterministic across Python hash seeds.
-        from update_jobs import FAANG_PLUS, UNICORNS
+        from ngj.taxonomy import FAANG_PLUS, UNICORNS
         unicorn_only = sorted(UNICORNS - FAANG_PLUS)
         if not unicorn_only:
             pytest.skip("No unicorns outside FAANG_PLUS configured")
@@ -196,7 +190,7 @@ class TestGetCompanyTier:
 
     def test_finance_sector_detected(self):
         # Sort for deterministic selection across Python hash seeds.
-        from update_jobs import FINANCE
+        from ngj.taxonomy import FINANCE
         finance_companies = sorted(FINANCE)
         if not finance_companies:
             pytest.skip("No FINANCE companies configured")
@@ -205,7 +199,7 @@ class TestGetCompanyTier:
 
     def test_defense_sector_detected(self):
         # Sort for deterministic selection across Python hash seeds.
-        from update_jobs import DEFENSE
+        from ngj.taxonomy import DEFENSE
         defense_companies = sorted(DEFENSE)
         if not defense_companies:
             pytest.skip("No DEFENSE companies configured")
@@ -219,7 +213,7 @@ class TestGetCompanyTier:
 
     def test_company_can_overlap_tier_and_sector(self):
         """A FAANG+ company that's also in FINANCE should have both."""
-        from update_jobs import FAANG_PLUS, FINANCE
+        from ngj.taxonomy import FAANG_PLUS, FINANCE
         overlap = sorted(FAANG_PLUS & FINANCE)
         if not overlap:
             pytest.skip("No FAANG_PLUS ∩ FINANCE overlap configured")
@@ -552,7 +546,7 @@ class TestGreenhouseFetcherContentFlag:
         def fake_get(url, *a, **kw):
             captured['url'] = url
             return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
+        with patch('ngj.http.limited_get', side_effect=fake_get):
             fetch_greenhouse_jobs('Affirm',
                                   'https://boards-api.greenhouse.io/v1/boards/affirm/jobs')
         assert 'content=true' in captured['url']
@@ -562,7 +556,7 @@ class TestGreenhouseFetcherContentFlag:
         def fake_get(url, *a, **kw):
             captured['url'] = url
             return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
+        with patch('ngj.http.limited_get', side_effect=fake_get):
             fetch_greenhouse_jobs('Stripe',
                                   'https://boards-api.greenhouse.io/v1/boards/stripe/jobs?foo=bar')
         assert 'foo=bar' in captured['url']
@@ -573,7 +567,7 @@ class TestGreenhouseFetcherContentFlag:
         def fake_get(url, *a, **kw):
             captured['url'] = url
             return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
+        with patch('ngj.http.limited_get', side_effect=fake_get):
             fetch_greenhouse_jobs('Lever',
                                   'https://boards-api.greenhouse.io/v1/boards/lever/jobs?content=true')
         # exactly one occurrence
@@ -590,9 +584,9 @@ class TestGreenhouseFetcherContentFlag:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                         'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('TestCo',
+                                         'https://boards-api.greenhouse.io/v1/boards/testco/jobs').jobs)
         assert len(jobs) == 1
         assert jobs[0]['comp'] == {'min': 120000, 'max': 180000,
                                    'currency': 'USD', 'source': 'posting'}
@@ -619,7 +613,7 @@ class TestAshbyFetcher:
         def fake_get(url, *a, **kw):
             captured['url'] = url
             return self._mock_response(json_body={'jobs': []})
-        with patch('update_jobs.limited_get', side_effect=fake_get):
+        with patch('ngj.http.limited_get', side_effect=fake_get):
             fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
         assert 'includeCompensation=true' in captured['url']
 
@@ -640,8 +634,8 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('OpenAI', 'https://api.ashbyhq.com/posting-api/job-board/openai').jobs)
         assert len(jobs) == 1
         # Structured comp from Ashby beats regex; source must be 'ashby'.
         assert jobs[0]['comp'] == {'min': 245000, 'max': 385000,
@@ -660,8 +654,8 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('Cohere', 'https://api.ashbyhq.com/posting-api/job-board/cohere').jobs)
         assert jobs[0]['comp']['source'] == 'posting'
         assert jobs[0]['comp']['min'] == 130000 and jobs[0]['comp']['max'] == 170000
 
@@ -681,8 +675,8 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x').jobs)
         assert jobs[0]['comp'] is None  # 5k–10k below the 30k floor
 
     def test_non_usd_compensation_ignored(self):
@@ -701,8 +695,8 @@ class TestAshbyFetcher:
         }]}
         def fake_get(url, *a, **kw):
             return self._mock_response(json_body=body)
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_ashby_jobs('X', 'https://api.ashbyhq.com/posting-api/job-board/x').jobs)
         assert jobs[0]['comp'] is None
 
 
@@ -758,7 +752,7 @@ class TestCleanDescription:
         assert r == 'Pay < $100k and latency > 5ms'
 
     def test_nbsp_character_normalized_to_space(self):
-        from update_jobs import _strip_html
+        from ngj.text import strip_html as _strip_html
         assert _strip_html('a\xa0b') == 'a b'
 
 
@@ -808,9 +802,9 @@ class TestGreenhouseDescriptionEnrichment:
                 return self._mock_response(json_body=detail_body)
             return self._mock_response(json_body=list_body)
 
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('Anduril',
-                                        'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('Anduril',
+                                        'https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs').jobs)
         assert len(jobs) == 1
         assert jobs[0]['description'] != ''
         assert 'About the role' in jobs[0]['description']
@@ -833,9 +827,9 @@ class TestGreenhouseDescriptionEnrichment:
             call_urls.append(url)
             return self._mock_response(json_body=list_body)
 
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('Stripe',
-                                        'https://boards-api.greenhouse.io/v1/boards/stripe/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('Stripe',
+                                        'https://boards-api.greenhouse.io/v1/boards/stripe/jobs').jobs)
         assert len(jobs) == 1
         assert 'Full description' in jobs[0]['description']
         # Should NOT have called individual endpoint
@@ -861,9 +855,9 @@ class TestGreenhouseDescriptionEnrichment:
                 return self._mock_response(json_body=detail_body)
             return self._mock_response(json_body=list_body)
 
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs').jobs)
         assert len(jobs) == 1
         job = jobs[0]
         assert job['company'] == 'TestCo'
@@ -891,9 +885,9 @@ class TestGreenhouseDescriptionEnrichment:
                 raise requests.exceptions.Timeout("timeout")
             return self._mock_response(json_body=list_body)
 
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs').jobs)
         assert len(jobs) == 1
         assert jobs[0]['description'] == ''
 
@@ -917,8 +911,8 @@ class TestGreenhouseDescriptionEnrichment:
                 return self._mock_response(json_body=detail_body)
             return self._mock_response(json_body=list_body)
 
-        with patch('update_jobs.limited_get', side_effect=fake_get):
-            jobs = fetch_greenhouse_jobs('TestCo',
-                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs')
+        with patch('ngj.http.limited_get', side_effect=fake_get):
+            jobs = list(fetch_greenhouse_jobs('TestCo',
+                                        'https://boards-api.greenhouse.io/v1/boards/testco/jobs').jobs)
         assert len(jobs) == 1
         assert 'Real description' in jobs[0]['description']

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Unit tests for generate_health_json() in scripts/update_jobs.py.
+Unit tests for generate_health_json() in scripts/ngj/outputs/health.py.
 
 Covers:
   - Status determination: ok, degraded, failed
@@ -12,11 +12,10 @@ import os
 import json
 import time
 import tempfile
-from unittest.mock import patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from update_jobs import generate_health_json
+from ngj.outputs.health import generate_health_json  # noqa: E402
 
 
 class TestHealthJsonStatus:
@@ -36,11 +35,11 @@ class TestHealthJsonStatus:
     def _run_health(self, jobs, source_counts, tmpdir):
         """Helper to generate health.json in a temp directory and return the result."""
         health_path = os.path.join(tmpdir, 'health.json')
-        with patch('update_jobs.os.path.join', return_value=health_path):
-            with patch('update_jobs.os.makedirs'):
-                generate_health_json(jobs, source_counts, time.time() - 10, self.BASE_CONFIG)
+        returned = generate_health_json(jobs, source_counts, time.time() - 10, self.BASE_CONFIG, tmpdir)
         with open(health_path) as f:
-            return json.load(f)
+            written = json.load(f)
+        assert written == returned
+        return written
 
     def test_ok_status(self):
         """All sources returned jobs → status ok."""
