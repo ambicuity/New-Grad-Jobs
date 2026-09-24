@@ -14,6 +14,8 @@ import ast
 import pathlib
 import re
 
+import yaml
+
 ROOT = pathlib.Path(__file__).parent.parent
 SCRAPER = ROOT / "scripts" / "update_jobs.py"
 PIPELINE = ROOT / "scripts" / "ngj" / "pipeline.py"
@@ -134,37 +136,31 @@ def test_scraper_docstring_does_not_mention_readme() -> None:
 # Guard B: update-jobs.yml staging contract
 # ---------------------------------------------------------------------------
 
-def test_workflow_stages_docs_files() -> None:
-    """update-jobs.yml must stage the required docs/ artifacts."""
+def test_workflow_deploys_generated_artifacts_instead_of_committing() -> None:
+    """Generated data ships in the Pages artifact (site/dist), not in git."""
+    workflow = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))
+    jobs = workflow["jobs"]
+    scrape_uses = [s.get("uses", "") for s in jobs["scrape"]["steps"]]
+    assert any("upload-pages-artifact" in u for u in scrape_uses)
+    assert any("deploy-pages" in s.get("uses", "") for s in jobs["deploy"]["steps"])
     content = WORKFLOW.read_text(encoding="utf-8")
-    required = [
-        "docs/jobs.json",
-        "docs/market-history.json",
-        "docs/health.json",
-        "docs/feed.xml",
-    ]
-    missing = [f for f in required if f not in content]
-    assert not missing, (
-        "update-jobs.yml is missing required docs/ artifacts in git add: "
-        + ", ".join(missing)
-        + "  See issue #156."
-    )
+    for generated in ("jobs.json", "jobs-index.json", "feed.xml", "health.json"):
+        assert f"git add site/public/{generated}" not in content
+        assert f"docs/{generated}" not in content
 
 
-def test_workflow_stages_readme_for_count_sync() -> None:
-    """update-jobs.yml must stage README.md so count-token updates land in commits.
+def test_workflow_persists_readme_and_market_history() -> None:
+    """The persist job must commit README.md (count/table sync) and history.
 
-    README is hand-edited everywhere except inside the COUNT markers, which the
-    scraper rewrites via sync_readme_counts. Staging README is required for
-    those count refreshes to ship; the marker-bounded contract (enforced by
-    test_readme_sync.py and the sync_readme_counts source) is what makes this
-    safe.
+    README is hand-edited everywhere except inside the COUNT markers and the
+    CATEGORY-LISTINGS block, which the scraper rewrites; committing README is
+    required for those refreshes to ship.
     """
     content = WORKFLOW.read_text(encoding="utf-8")
-    assert re.search(r"git add\s+[^\n]*README\.md", content), (
-        "update-jobs.yml does not stage README.md — count refreshes will not "
-        "ship. Add 'README.md' to the 'git add' line."
+    assert re.search(r"PUBLISHED=\([^)]*README\.md[^)]*data/market-history\.json[^)]*\)", content), (
+        "update-jobs.yml persist job must publish README.md and data/market-history.json"
     )
+    assert 'git add "${PUBLISHED[@]}"' in content
 
 
 # ---------------------------------------------------------------------------

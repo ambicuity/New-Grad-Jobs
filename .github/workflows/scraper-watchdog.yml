@@ -25,6 +25,7 @@ env:
   # Scraper is scheduled every 30 min; 3 h tolerates normal cron delay.
   STALE_AFTER_MINUTES: '180'
   ISSUE_LABEL: scraper-stale
+  HEALTH_URL: https://jobs.riteshrana.engineer/health.json
 
 jobs:
   check:
@@ -42,10 +43,10 @@ jobs:
         id: age
         run: |
           set -euo pipefail
-          last_run=$(gh api "repos/${GH_REPO}/contents/docs/health.json?ref=main" \
-            -H 'Accept: application/vnd.github.raw' | jq -r '.last_run // empty')
+          # health.json is no longer committed; read what the site serves.
+          last_run=$(curl -fsSL --retry 3 --max-time 30 "${HEALTH_URL}" | jq -r '.last_run // empty')
           if [ -z "$last_run" ]; then
-            echo "::error::docs/health.json has no last_run timestamp"
+            echo "::error::${HEALTH_URL} has no last_run timestamp"
             exit 1
           fi
           age_min=$(( ( $(date -u +%s) - $(date -u -d "$last_run" +%s) ) / 60 ))
@@ -55,6 +56,8 @@ jobs:
 
       - name: Re-dispatch scraper when stale
         if: fromJSON(steps.age.outputs.age_min) > fromJSON(env.STALE_AFTER_MINUTES)
+        env:
+          AGE_MIN: ${{ steps.age.outputs.age_min }}
         run: |
           set -euo pipefail
           active=$(gh run list --workflow update-jobs.yml --json status \
@@ -63,11 +66,15 @@ jobs:
             echo "Scraper already queued or running; not dispatching another."
           else
             gh workflow run update-jobs.yml --ref main
-            echo "::warning::Data ${{ steps.age.outputs.age_min }} min old; dispatched update-jobs.yml"
+            echo "::warning::Data ${AGE_MIN} min old; dispatched update-jobs.yml"
           fi
 
       - name: Open stale-data issue
         if: fromJSON(steps.age.outputs.age_min) > fromJSON(env.STALE_AFTER_MINUTES)
+        env:
+          AGE_MIN: ${{ steps.age.outputs.age_min }}
+          LAST_RUN: ${{ steps.age.outputs.last_run }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           set -euo pipefail
           gh label create "$ISSUE_LABEL" --color d93f0b \
@@ -75,15 +82,17 @@ jobs:
           open=$(gh issue list --label "$ISSUE_LABEL" --state open --json number --jq 'length')
           if [ "$open" -eq 0 ]; then
             gh issue create --label "$ISSUE_LABEL" \
-              --title "Job data is stale: last scrape ${{ steps.age.outputs.last_run }}" \
-              --body "The watchdog found \`docs/health.json\` last updated **${{ steps.age.outputs.age_min }} minutes** ago (threshold ${STALE_AFTER_MINUTES}). It dispatched \`update-jobs.yml\`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. This issue closes automatically once data is fresh."
+              --title "Job data is stale: last scrape ${LAST_RUN}" \
+              --body "The watchdog found \`${HEALTH_URL}\` last updated **${AGE_MIN} minutes** ago (threshold ${STALE_AFTER_MINUTES}). It dispatched \`update-jobs.yml\`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: ${RUN_URL}. This issue closes automatically once data is fresh."
           fi
 
       - name: Close stale-data issue once fresh
         if: fromJSON(steps.age.outputs.age_min) <= fromJSON(env.STALE_AFTER_MINUTES)
+        env:
+          LAST_RUN: ${{ steps.age.outputs.last_run }}
         run: |
           set -euo pipefail
           numbers=$(gh issue list --label "$ISSUE_LABEL" --state open --json number --jq '.[].number' 2>/dev/null || true)
           for n in $numbers; do
-            gh issue close "$n" --comment "Data is fresh again (last scrape ${{ steps.age.outputs.last_run }})."
+            gh issue close "$n" --comment "Data is fresh again (last scrape ${LAST_RUN})."
           done
