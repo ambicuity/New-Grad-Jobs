@@ -492,14 +492,14 @@ New-Grad-Jobs/
 │       └── generate_readme()           # README table output
 ├── config.yml                  # Companies, filters, search configuration
 ├── jobs.json                   # Full jobs dataset (auto-generated)
-├── docs/                       # GitHub Pages frontend
-│   ├── index.html              # Entry point (loads terminal/*.jsx)
-│   ├── terminal/               # React UI (in-browser Babel, no build step)
-│   │   ├── app.jsx             # Root component / top bar
-│   │   ├── dashboard.jsx       # Jobs board view
-│   │   ├── contributors.jsx    # Contributors view
-│   │   └── data.jsx            # jobs.json loading + shaping
-│   └── jobs.json               # Mirrored jobs data for Pages
+├── site/                       # Job-board frontend (Vite + React 18)
+│   ├── index.html              # Vite entry
+│   ├── src/lib/                # Pure data logic (mapJob, filters, sort, time…) + Vitest tests
+│   ├── src/data/               # Fetchers: jobs-index.json, description shards, contributors
+│   ├── src/components/         # shell/ (top bar, footer), hiring/, contributors/
+│   ├── public/                 # Static files (favicon, CNAME, contributors.json); generated data lands here in CI
+│   └── test/fixtures/          # Tiny dataset for e2e (`npm run build:fixtures`)
+├── docs/                       # Docs + generated JSON
 └── .github/
     ├── workflows/
     │   └── update-jobs.yml     # Runs about every 30 minutes
@@ -581,7 +581,7 @@ Use the **[New Role issue template](https://github.com/ambicuity/New-Grad-Jobs/i
 ## 10. Code Style
 
 - **Python**: Follow [PEP 8](https://pep8.org/). Use type hints for all new functions.
-- **JavaScript / JSX** (`docs/terminal/*.jsx`): React 18 transpiled in-browser via Babel Standalone — no build step. Follow existing patterns.
+- **JavaScript / JSX** (`site/`): Vite + React 18, ES modules. `cd site && npm ci`, then `npm run fetch-data` (live data into `public/`), `npm run dev`, `npm test`, `npm run lint`, `npm run build`. Keep data logic in `src/lib/` as pure, unit-tested functions.
 - **YAML** (`config.yml`): Use 2-space indentation.
 - **Markdown**: Use ATX-style headers (`#`, `##`), not underline style.
 

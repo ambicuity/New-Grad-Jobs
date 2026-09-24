@@ -3,7 +3,7 @@
 
 The scraper's ``CATEGORY_PATTERNS`` (scripts/update_jobs.py) is the single
 source of truth. These tests fail if the README count markers or the terminal
-website (docs/terminal/*.jsx) drift away from it — the exact bug where
+website (site/src/lib/taxonomy.js) drift away from it — the exact bug where
 ``product_management`` and ``quant_finance`` existed in the data but were
 missing from the README and were silently folded into ``SWE`` on the site.
 """
@@ -36,10 +36,13 @@ def test_readme_has_a_count_marker_for_every_canonical_category():
     )
 
 
+TAXONOMY_PATH = ("site", "src", "lib", "taxonomy.js")
+
+
 def test_terminal_category_type_matches_canonical_ids():
-    data_jsx = _read("docs", "terminal", "data.jsx")
-    block = re.search(r"const CATEGORY_TYPE\s*=\s*\{(.*?)\}", data_jsx, re.DOTALL)
-    assert block, "CATEGORY_TYPE object not found in data.jsx"
+    taxonomy = _read(*TAXONOMY_PATH)
+    block = re.search(r"const CATEGORY_TYPE\s*=\s*\{(.*?)\}", taxonomy, re.DOTALL)
+    assert block, "CATEGORY_TYPE object not found in site/src/lib/taxonomy.js"
     keys = set(re.findall(r"(\w+):\s*'[A-Z]+'", block.group(1)))
     assert keys == CANONICAL_IDS, (
         f"Terminal CATEGORY_TYPE keys out of sync with CATEGORY_PATTERNS.\n"
@@ -49,16 +52,18 @@ def test_terminal_category_type_matches_canonical_ids():
 
 
 def test_terminal_type_codes_are_consistent_across_map_labels_and_chips():
-    data_jsx = _read("docs", "terminal", "data.jsx")
-    dashboard = _read("docs", "terminal", "dashboard.jsx")
+    taxonomy = _read(*TAXONOMY_PATH)
+    filter_rail = _read("site", "src", "components", "hiring", "FilterRail.jsx")
 
-    cat_block = re.search(r"const CATEGORY_TYPE\s*=\s*\{(.*?)\}", data_jsx, re.DOTALL).group(1)
+    cat_block = re.search(r"const CATEGORY_TYPE\s*=\s*\{(.*?)\}", taxonomy, re.DOTALL).group(1)
     code_values = set(re.findall(r":\s*'([A-Z]+)'", cat_block))
 
-    label_block = re.search(r"const TYPE_LABEL\s*=\s*\{(.*?)\}", data_jsx, re.DOTALL).group(1)
+    label_block = re.search(r"const TYPE_LABEL\s*=\s*\{(.*?)\}", taxonomy, re.DOTALL).group(1)
     label_codes = set(re.findall(r"(\w+)\s*:", label_block))
 
-    chip_block = re.search(r"\[((?:'[A-Z]+',?\s*)+)\]\.map\(t =>", dashboard).group(1)
+    # The ROLE filter chips render TYPE_ORDER.
+    assert "TYPE_ORDER.map(" in filter_rail, "ROLE chips no longer render TYPE_ORDER"
+    chip_block = re.search(r"const TYPE_ORDER\s*=\s*\[(.*?)\]", taxonomy, re.DOTALL).group(1)
     chip_codes = set(re.findall(r"'([A-Z]+)'", chip_block))
 
     assert code_values == label_codes, (
@@ -78,8 +83,8 @@ def test_specialty_categories_are_backed_by_the_scraper():
     for specialty in ("frontend", "backend", "mobile", "security"):
         assert specialty in CANONICAL_IDS, f"{specialty} missing from CATEGORY_PATTERNS"
 
-    dashboard = _read("docs", "terminal", "dashboard.jsx")
-    chip_block = re.search(r"\[((?:'[A-Z]+',?\s*)+)\]\.map\(t =>", dashboard).group(1)
+    taxonomy = _read(*TAXONOMY_PATH)
+    chip_block = re.search(r"const TYPE_ORDER\s*=\s*\[(.*?)\]", taxonomy, re.DOTALL).group(1)
     chip_codes = set(re.findall(r"'([A-Z]+)'", chip_block))
     for code in ("FE", "BE", "MOBILE", "SEC"):
         assert code in chip_codes, f"specialty filter chip {code!r} missing"
