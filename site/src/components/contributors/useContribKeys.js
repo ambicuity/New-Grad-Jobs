@@ -37,7 +37,7 @@ export function useContribKeys({ enabled, filtered, selected, setSelectedHandle,
         e.preventDefault();
         toggleSort();
       } else if ((e.key === 'g' || e.key === 'G') && selected && selected.profile) {
-        window.open(selected.profile, '_blank', 'noopener');
+        window.open(selected.profile, '_blank', 'noopener,noreferrer');
       }
     };
     window.addEventListener('keydown', onKey);
