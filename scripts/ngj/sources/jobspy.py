@@ -8,8 +8,9 @@ from __future__ import annotations
 
 import logging
 import time
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Any, Callable, Dict, List, Optional, Tuple
+from typing import Any
 
 from ngj.compensation import bounded_comp, extract_compensation
 from ngj.models import KIND_UNAVAILABLE, KIND_UNEXPECTED, SourceResult
@@ -22,14 +23,14 @@ SOURCE = "jobspy"
 _RETRY_DELAY = 0.3
 
 # Countries searched when config.yml lists none.
-DEFAULT_JOBSPY_COUNTRIES: Tuple[Dict[str, str], ...] = (
+DEFAULT_JOBSPY_COUNTRIES: tuple[dict[str, str], ...] = (
     {'code': 'USA', 'location': 'United States'},
     {'code': 'Canada', 'location': 'Canada'},
     {'code': 'India', 'location': 'India'},
 )
 
 
-def load_scrape_jobs() -> Optional[Callable[..., Any]]:
+def load_scrape_jobs() -> Callable[..., Any] | None:
     """Return ``jobspy.scrape_jobs`` or None when the library is not installed."""
     try:
         from jobspy import scrape_jobs
@@ -38,7 +39,7 @@ def load_scrape_jobs() -> Optional[Callable[..., Any]]:
     return scrape_jobs
 
 
-def _row_comp(row: Any, description: str) -> Optional[Dict[str, Any]]:
+def _row_comp(row: Any, description: str) -> dict[str, Any] | None:
     # JobSpy returns structured salary on Indeed/LinkedIn when the listing
     # exposes it; prefer that over regex extraction.
     structured_min = row.get('min_amount')
@@ -51,7 +52,7 @@ def _row_comp(row: Any, description: str) -> Optional[Dict[str, Any]]:
     return bounded_comp(smin, smax, 'jobspy') or extract_compensation(description)
 
 
-def _row_to_job(row: Any, site: str) -> Dict[str, Any]:
+def _row_to_job(row: Any, site: str) -> dict[str, Any]:
     description = row.get('description', '') or ''
     return {
         'company': row.get('company', 'Unknown'),
@@ -70,7 +71,7 @@ def _search_one(
     scrape_jobs: Callable[..., Any],
     site: str,
     search_term: str,
-    country: Dict[str, str],
+    country: dict[str, str],
     results_wanted: int,
     hours_old: int,
     max_retries: int,
@@ -101,7 +102,7 @@ def _search_one(
 
 
 def fetch_jobspy_jobs(
-    config_jobspy: Dict[str, Any],
+    config_jobspy: dict[str, Any],
     max_retries: int = 2,
     workers: int = DEFAULT_JOBSPY_WORKERS,
 ) -> SourceResult:
@@ -130,7 +131,7 @@ def fetch_jobspy_jobs(
     logger.info("   Countries: %s", ', '.join(c['code'] for c in countries))
     logger.info("   Using %s concurrent workers...", workers)
 
-    results: List[Optional[SourceResult]] = [None] * total
+    results: list[SourceResult | None] = [None] * total
     completed = 0
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {

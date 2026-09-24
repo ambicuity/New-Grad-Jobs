@@ -6,14 +6,14 @@ These tests validate that jobs are correctly classified into categories
 like Software Engineering, Data ML, Quant Finance, etc., based on title keywords.
 """
 
-import sys
 import os
+import sys
 
 # Ensure the scripts directory is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from ngj.taxonomy import categorize_job, get_company_tier, is_engineering_network_title  # noqa: E402
 from ngj.enrich import detect_sponsorship_flags  # noqa: E402
+from ngj.taxonomy import categorize_job, get_company_tier, is_engineering_network_title  # noqa: E402
 
 
 class TestCategorizeJob:

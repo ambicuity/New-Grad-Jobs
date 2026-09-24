@@ -17,7 +17,7 @@ verified by hand at the time they are added and logged in
 import os
 import sys
 from collections import Counter
-from typing import Any, Dict, List
+from typing import Any
 from urllib.parse import urlparse
 
 import pytest
@@ -37,16 +37,16 @@ SOURCE_CONTRACT = {
 }
 
 
-def _config() -> Dict[str, Any]:
-    with open(os.path.join(ROOT, 'config.yml'), 'r', encoding='utf-8') as f:
+def _config() -> dict[str, Any]:
+    with open(os.path.join(ROOT, 'config.yml'), encoding='utf-8') as f:
         return yaml.safe_load(f)
 
 
-def _companies(source: str) -> List[Dict[str, str]]:
+def _companies(source: str) -> list[dict[str, str]]:
     return _config()['apis'][source]['companies']
 
 
-def _endpoint(source: str, entry: Dict[str, str]) -> str:
+def _endpoint(source: str, entry: dict[str, str]) -> str:
     key = 'workday_url' if source == 'workday' else 'url'
     return entry[key]
 

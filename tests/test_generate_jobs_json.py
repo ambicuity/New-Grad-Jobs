@@ -7,7 +7,7 @@ job sorting, and all edge cases for the main JSON output function.
 
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -32,9 +32,9 @@ class TestGenerateJobsJsonStructure:
     def test_meta_includes_generated_timestamp(self):
         """Meta section should include ISO timestamp of generation."""
         config = {}
-        before = datetime.now(timezone.utc)
+        before = datetime.now(UTC)
         result = generate_jobs_json([], config)
-        after = datetime.now(timezone.utc)
+        after = datetime.now(UTC)
 
         generated_at = result['meta']['generated_at']
         assert isinstance(generated_at, str)
@@ -264,7 +264,7 @@ class TestJobSorting:
 
     def test_jobs_with_unix_timestamps_sorted_correctly(self):
         """Jobs with Unix timestamps (milliseconds) should sort correctly."""
-        base_time = datetime(2026, 3, 15, 0, 0, 0, tzinfo=timezone.utc)
+        base_time = datetime(2026, 3, 15, 0, 0, 0, tzinfo=UTC)
         jobs = [
             {'company': 'A', 'posted_at': int(base_time.timestamp() * 1000)},  # Now
             {'company': 'B', 'posted_at': int((base_time - timedelta(days=5)).timestamp() * 1000)},  # 5 days ago
@@ -292,7 +292,8 @@ class TestDateFormatting:
 
     def test_published_posted_at_formats_as_human_readable_age(self):
         """Consumers render ages from the published ISO posted_at."""
-        from datetime import datetime, timezone
+        from datetime import datetime
+
         from ngj.dates import format_posted_date
 
         jobs = [{'company': 'A', 'posted_at': '2026-03-15T10:00:00'}]
@@ -300,7 +301,7 @@ class TestDateFormatting:
 
         published = result['jobs'][0]['posted_at']
         assert published == '2026-03-15T10:00:00Z'
-        now = datetime(2026, 3, 18, 12, 0, tzinfo=timezone.utc)
+        now = datetime(2026, 3, 18, 12, 0, tzinfo=UTC)
         assert format_posted_date(published, now) == '3 days ago'
 
     def test_none_posted_at_handled_gracefully(self):
@@ -443,8 +444,8 @@ class TestGenerateJobsJsonPayloadSplit:
         assert job['job_id'].startswith('job_')
 
     def test_build_full_descriptions_prefers_cleaned_html(self):
-        from ngj.outputs.jobs_json import build_full_descriptions
         from contracts import compute_job_id
+        from ngj.outputs.jobs_json import build_full_descriptions
 
         raw = self._job()
         texts = build_full_descriptions([raw])
@@ -454,8 +455,8 @@ class TestGenerateJobsJsonPayloadSplit:
         assert '<p>' not in text
 
     def test_build_full_descriptions_falls_back_to_snippet(self):
-        from ngj.outputs.jobs_json import build_full_descriptions
         from contracts import compute_job_id
+        from ngj.outputs.jobs_json import build_full_descriptions
 
         raw = {**self._job(), 'description_html': ''}
 

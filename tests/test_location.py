@@ -8,8 +8,8 @@ Covers:
   - Edge cases: empty string, None-like values, Unicode, mixed case
 """
 
-import sys
 import os
+import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 

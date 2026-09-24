@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from collections.abc import Sequence
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Dict, Optional, Sequence
+from typing import Any
 from xml.sax.saxutils import escape as xml_escape
 
 from ngj.dates import extract_sort_date
@@ -26,7 +27,7 @@ def _safe(val: Any, default: str = "") -> str:
     return str(val)
 
 
-def _render_item(job: Dict[str, Any], now_str: str) -> str:
+def _render_item(job: dict[str, Any], now_str: str) -> str:
     company = _safe(job.get('company'), 'Unknown')
     title = _safe(job.get('title'), 'Unknown')
     url = _safe(job.get('url'))
@@ -45,13 +46,13 @@ def _render_item(job: Dict[str, Any], now_str: str) -> str:
 
 
 def render_rss_feed(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     max_items: int = DEFAULT_MAX_ITEMS,
-    now: Optional[datetime] = None,
+    now: datetime | None = None,
 ) -> str:
     """Render the feed XML for the ``max_items`` newest jobs (input not modified)."""
     newest = sorted(jobs, key=extract_sort_date, reverse=True)[:max_items]
-    now_str = (now or datetime.now(timezone.utc)).strftime(_RFC822)
+    now_str = (now or datetime.now(UTC)).strftime(_RFC822)
     items = "\n".join(_render_item(job, now_str) for job in newest)
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -69,10 +70,10 @@ def render_rss_feed(
 
 
 def generate_rss_feed(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     output_dir: Path,
     max_items: int = DEFAULT_MAX_ITEMS,
-) -> Optional[Path]:
+) -> Path | None:
     """Write ``output_dir/feed.xml``. Returns the path, or None if the write failed."""
     feed_path = Path(output_dir) / "feed.xml"
     rss_xml = render_rss_feed(jobs, max_items)

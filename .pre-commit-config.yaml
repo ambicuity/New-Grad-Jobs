@@ -4,13 +4,11 @@
 # Generated / scraped artifacts are skipped by every hook.
 exclude: |
   (?x)^(
-    jobs\.json|
-    docs/(jobs|jobs-index|market-history|predictions|predictions-status|job-evaluations|contributors|health)\.json|
-    docs/feed\.xml|
-    docs/descriptions/.*|
-    site/public/(jobs|jobs-index|health)\.json|
+    data/market-history\.json|
+    site/public/(jobs|jobs-index|health|contributors)\.json|
     site/public/feed\.xml|
-    site/public/descriptions/.*
+    site/public/descriptions/.*|
+    site/test/fixtures/.*
   )$
 
 repos:
@@ -18,9 +16,7 @@ repos:
     rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: trailing-whitespace
-        exclude: ^docs/index\.html$
       - id: end-of-file-fixer
-        exclude: ^docs/index\.html$
       - id: check-yaml
       - id: check-json
       - id: check-toml

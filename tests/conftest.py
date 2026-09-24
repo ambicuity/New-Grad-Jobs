@@ -7,11 +7,12 @@ This module provides common test infrastructure including:
 - Mock factories for common data structures
 - Shared constants and test data
 """
-import sys
 import os
+import sys
+from datetime import UTC, datetime, timedelta
+from typing import Any
+
 import pytest
-from typing import Dict, Any, List
-from datetime import datetime, timedelta, timezone
 
 # Add scripts directory to path for all tests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
@@ -22,7 +23,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 # ============================================================================
 
 @pytest.fixture
-def sample_job() -> Dict[str, Any]:
+def sample_job() -> dict[str, Any]:
     """Factory for creating a standard job dictionary for testing.
 
     Returns a job with all common fields populated with realistic test data.
@@ -33,14 +34,14 @@ def sample_job() -> Dict[str, Any]:
         'title': 'Software Engineer - New Grad',
         'location': 'San Francisco, CA',
         'url': 'https://example.com/jobs/123',
-        'posted_at': datetime.now(timezone.utc).isoformat(),
+        'posted_at': datetime.now(UTC).isoformat(),
         'description': 'Join our team as a new grad software engineer.',
         'source': 'Test Source'
     }
 
 
 @pytest.fixture
-def sample_config() -> Dict[str, Any]:
+def sample_config() -> dict[str, Any]:
     """Factory for creating a minimal valid config structure.
 
     Returns a config dict with essential fields for testing filter/fetch functions.
@@ -69,7 +70,7 @@ def sample_config() -> Dict[str, Any]:
 
 
 @pytest.fixture
-def greenhouse_company() -> Dict[str, str]:
+def greenhouse_company() -> dict[str, str]:
     """Factory for creating a Greenhouse company config entry."""
     return {
         'name': 'Example Corp',
@@ -78,7 +79,7 @@ def greenhouse_company() -> Dict[str, str]:
 
 
 @pytest.fixture
-def lever_company() -> Dict[str, str]:
+def lever_company() -> dict[str, str]:
     """Factory for creating a Lever company config entry."""
     return {
         'name': 'Example Startup',
@@ -154,7 +155,7 @@ def create_job(
     description: str = '',
     source: str = 'Test',
     **kwargs
-) -> Dict[str, Any]:
+) -> dict[str, Any]:
     """Helper to create a job dict with custom fields.
 
     Args:
@@ -175,7 +176,7 @@ def create_job(
         'title': title,
         'location': location,
         'url': url,
-        'posted_at': posted_at or datetime.now(timezone.utc).isoformat(),
+        'posted_at': posted_at or datetime.now(UTC).isoformat(),
         'description': description,
         'source': source
     }
@@ -183,7 +184,7 @@ def create_job(
     return job
 
 
-def create_jobs_batch(count: int, base_date: datetime = None) -> List[Dict[str, Any]]:
+def create_jobs_batch(count: int, base_date: datetime = None) -> list[dict[str, Any]]:
     """Helper to create a batch of jobs for bulk testing.
 
     Args:
@@ -194,7 +195,7 @@ def create_jobs_batch(count: int, base_date: datetime = None) -> List[Dict[str, 
         List of job dicts with varied dates
     """
     if base_date is None:
-        base_date = datetime.now(timezone.utc)
+        base_date = datetime.now(UTC)
 
     jobs = []
     for i in range(count):

@@ -6,7 +6,7 @@ Enrichment never mutates its inputs: each job comes back as a new dict.
 from __future__ import annotations
 
 import re
-from typing import Any, Dict, List
+from typing import Any
 
 from ngj.taxonomy import categorize_job, get_company_tier
 
@@ -58,7 +58,7 @@ def is_job_closed(title: str, description: str = '') -> bool:
     return bool(_CLOSED_PHRASE_RE.search(combined))
 
 
-def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, bool]:
+def detect_sponsorship_flags(title: str, description: str = '') -> dict[str, bool]:
     """Detect sponsorship and citizenship requirements"""
     combined = f"{title.lower()} {description.lower() if description else ''}"
 
@@ -68,7 +68,7 @@ def detect_sponsorship_flags(title: str, description: str = '') -> Dict[str, boo
     }
 
 
-def enrich_job(job: Dict[str, Any]) -> Dict[str, Any]:
+def enrich_job(job: dict[str, Any]) -> dict[str, Any]:
     """Return a copy of ``job`` with category, company_tier, flags, is_closed and id."""
     title = job.get('title', '')
     description = job.get('description', '')
@@ -83,6 +83,6 @@ def enrich_job(job: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def enrich_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def enrich_jobs(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Enrich every job (see :func:`enrich_job`); the input list and dicts are untouched."""
     return [enrich_job(job) for job in jobs]

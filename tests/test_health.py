@@ -7,11 +7,11 @@ Covers:
   - Output structure validation
 """
 
-import sys
-import os
 import json
-import time
+import os
+import sys
 import tempfile
+import time
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 

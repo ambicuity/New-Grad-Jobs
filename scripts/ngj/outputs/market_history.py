@@ -11,9 +11,10 @@ import logging
 import os
 import tempfile
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from collections.abc import Sequence
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence
+from typing import Any
 
 from ngj.taxonomy import iter_category_ids
 
@@ -27,7 +28,7 @@ class MarketHistoryError(RuntimeError):
     """The market history file exists but is unreadable or malformed."""
 
 
-def load_market_history(history_path: Path) -> List[Dict[str, Any]]:
+def load_market_history(history_path: Path) -> list[dict[str, Any]]:
     """Load existing snapshots; a missing file means an empty history.
 
     A file that exists but cannot be parsed or validated raises
@@ -37,7 +38,7 @@ def load_market_history(history_path: Path) -> List[Dict[str, Any]]:
     if not os.path.exists(history_path):
         return []
     try:
-        with open(history_path, 'r', encoding='utf-8') as f:
+        with open(history_path, encoding='utf-8') as f:
             history_data = json.load(f)
     except (OSError, ValueError) as e:
         raise MarketHistoryError(
@@ -57,7 +58,7 @@ def load_market_history(history_path: Path) -> List[Dict[str, Any]]:
     return snapshots
 
 
-def build_snapshot(jobs: Sequence[Dict[str, Any]], now: datetime) -> Dict[str, Any]:
+def build_snapshot(jobs: Sequence[dict[str, Any]], now: datetime) -> dict[str, Any]:
     """Aggregate today's counts by category, tier and company."""
     category_counts: Counter = Counter()
     tier_counts: Counter = Counter()
@@ -84,10 +85,10 @@ def build_snapshot(jobs: Sequence[Dict[str, Any]], now: datetime) -> Dict[str, A
 
 
 def merge_snapshot(
-    history: Sequence[Dict[str, Any]],
-    snapshot: Dict[str, Any],
+    history: Sequence[dict[str, Any]],
+    snapshot: dict[str, Any],
     now: datetime,
-) -> List[Dict[str, Any]]:
+) -> list[dict[str, Any]]:
     """Return a new history: today's snapshot replaced/added, 90-day window, sorted."""
     today = snapshot['date']
     merged = [entry for entry in history if entry['date'] != today] + [snapshot]
@@ -95,7 +96,7 @@ def merge_snapshot(
     return sorted((entry for entry in merged if entry['date'] >= cutoff_date), key=lambda x: x['date'])
 
 
-def _write_atomic(path: Path, payload: Dict[str, Any]) -> None:
+def _write_atomic(path: Path, payload: dict[str, Any]) -> None:
     """Write via a sibling temp file + os.replace so a crash never truncates the file."""
     directory = os.path.dirname(os.path.abspath(path))
     os.makedirs(directory, exist_ok=True)
@@ -111,16 +112,16 @@ def _write_atomic(path: Path, payload: Dict[str, Any]) -> None:
 
 
 def save_market_history(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     history_path: Path,
-    now: Optional[datetime] = None,
+    now: datetime | None = None,
 ) -> bool:
     """Add/replace today's snapshot in ``history_path``. Returns True when written.
 
     Raises MarketHistoryError when the existing file is corrupt (it is left
     untouched). A failed write is logged and returns False.
     """
-    now = now or datetime.now(timezone.utc)
+    now = now or datetime.now(UTC)
     snapshot = build_snapshot(jobs, now)
     existing = load_market_history(history_path)
     replaced = any(entry['date'] == snapshot['date'] for entry in existing)

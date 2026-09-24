@@ -6,7 +6,8 @@ returns structured compensation when the company opts in.
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 from ngj import http as ngj_http
 from ngj.compensation import bounded_comp, extract_compensation
@@ -23,7 +24,7 @@ def _with_compensation_flag(url: str) -> str:
     return url + ('&' if '?' in url else '?') + 'includeCompensation=true'
 
 
-def _structured_comp(raw: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+def _structured_comp(raw: dict[str, Any]) -> dict[str, Any] | None:
     """First USD per-year tier within the sanity bounds, if any."""
     ashby_comp = raw.get('compensation') or {}
     tiers = ashby_comp.get('compensationTiers') if isinstance(ashby_comp, dict) else None
@@ -42,13 +43,13 @@ def _structured_comp(raw: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     return None
 
 
-def _location(raw: Dict[str, Any]) -> str:
+def _location(raw: dict[str, Any]) -> str:
     addr = (raw.get('address') or {}).get('postalAddress') or {}
     parts = [addr.get(k) for k in ('addressLocality', 'addressRegion', 'addressCountry')]
     return ', '.join([p for p in parts if p]) or raw.get('location') or 'Remote'
 
 
-def _to_job(company_name: str, raw: Dict[str, Any]) -> Dict[str, Any]:
+def _to_job(company_name: str, raw: dict[str, Any]) -> dict[str, Any]:
     description = raw.get('descriptionHtml', '') or raw.get('descriptionPlain', '') or ''
     return {
         'company': company_name,
@@ -73,7 +74,7 @@ def fetch_ashby_jobs(
     """Fetch one company's Ashby job board."""
     url = _with_compensation_flag(url)
 
-    def parse(data: Any) -> Optional[SourceResult]:
+    def parse(data: Any) -> SourceResult | None:
         if not isinstance(data, dict) or 'jobs' not in data:
             return None
         raw_jobs = data.get('jobs', [])
@@ -84,7 +85,7 @@ def fetch_ashby_jobs(
     )
 
 
-def fetch_all_ashby_jobs(companies: Sequence[Dict[str, Any]], settings: Settings) -> SourceResult:
+def fetch_all_ashby_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch every configured Ashby board in parallel."""
     return ngj_http.fan_out(
         list(companies),

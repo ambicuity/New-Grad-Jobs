@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Regression guards for displayed count copy drift in docs/README surfaces."""
 
-from pathlib import Path
 import re
-
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 COUNT_SURFACES = [

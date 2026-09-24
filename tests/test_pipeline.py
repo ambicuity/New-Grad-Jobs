@@ -7,7 +7,7 @@ import logging
 import os
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -22,7 +22,7 @@ from ngj.models import KIND_PARSE, KIND_UNEXPECTED, SourceError, SourceResult  #
 from ngj.settings import Settings  # noqa: E402
 
 SCRIPTS = Path(__file__).resolve().parent.parent / "scripts"
-NOW_ISO = datetime.now(timezone.utc).isoformat()
+NOW_ISO = datetime.now(UTC).isoformat()
 
 
 def _job(company, title, url, location="New York, NY"):
@@ -177,10 +177,10 @@ def test_fan_out_merges_in_input_order_and_isolates_failures():
 def test_importing_the_package_has_no_side_effects():
     """No HTTP session, no JobSpy warning, no output at import time."""
     code = (
-        "import sys; sys.path.insert(0, %r)\n"
+        f"import sys; sys.path.insert(0, {str(SCRIPTS)!r})\n"
         "import ngj.pipeline, ngj.sources.jobspy, ngj.http\n"
         "assert ngj.http._session is None, 'session created at import'\n"
-    ) % str(SCRIPTS)
+    )
     proc = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, timeout=60)
     assert proc.returncode == 0, proc.stderr
     assert proc.stdout == ""

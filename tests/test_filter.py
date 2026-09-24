@@ -10,18 +10,18 @@ Tests cover the filter_jobs() function's handling of:
 """
 
 import json
-import sys
 import os
-from datetime import datetime, timedelta, timezone
-from typing import Any, Dict
+import sys
+from datetime import UTC, datetime, timedelta
+from typing import Any
 
 import pytest
 import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
 from ngj.dedup import deduplicate_jobs  # noqa: E402
+from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
 
 
 def _make_job(
@@ -35,7 +35,7 @@ def _make_job(
 ):
     """Factory helper to create minimal valid job dicts for tests."""
     if posted_at is None:
-        posted_at = datetime.now(timezone.utc).isoformat()
+        posted_at = datetime.now(UTC).isoformat()
     return {
         "title": title,
         "company": company,
@@ -65,23 +65,20 @@ class TestFilterJobsDateRecency:
     """Filter by posting date."""
 
     def test_recent_job_passes(self):
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=2)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=2)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
 
     def test_old_job_filtered_out(self):
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=30)).isoformat())]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
 
     def test_job_with_no_date_passes(self):
         """Jobs with missing dates should not crash the filter."""
         jobs = [_make_job(posted_at=None)]
-        try:
-            filter_jobs(jobs, _default_config())
-            # Depending on implementation, may pass or be excluded — just don't crash
-        except Exception as e:
-            assert False, f"filter_jobs raised an exception on None date: {e}"
+        # Depending on implementation, may pass or be excluded — just don't crash
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
 
 class TestFilterJobsKeywords:
@@ -461,7 +458,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 1
@@ -471,7 +468,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -481,7 +478,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer",  # No new grad signal
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -491,7 +488,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Junior Analyst",  # 'junior' is weak, 'analyst' not in track_signals
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -501,7 +498,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=30)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -511,7 +508,7 @@ class TestFilterJobsIntegration:
         jobs = [_make_job(
             title="Software Engineer, New Grad",
             location="London, UK",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0
@@ -559,7 +556,7 @@ class TestFilterJobsConfigVariations:
         """Custom max_age_days should be respected."""
         config = _default_config()
         config['filtering']['max_age_days'] = 30
-        jobs = [_make_job(posted_at=(datetime.now(timezone.utc) - timedelta(days=20)).isoformat())]
+        jobs = [_make_job(posted_at=(datetime.now(UTC) - timedelta(days=20)).isoformat())]
         result = filter_jobs(jobs, config)
         assert len(result) == 1, "Job should pass with extended max_age_days"
 
@@ -644,20 +641,14 @@ class TestFilterJobsEdgeCases:
     def test_unicode_in_title(self):
         """Unicode characters in title should not crash filter."""
         jobs = [_make_job(title="软件工程师 New Grad Software Engineer")]
-        try:
-            result = filter_jobs(jobs, _default_config())
-            # Should either pass or fail gracefully, not crash
-        except Exception as e:
-            assert False, f"Unicode in title caused crash: {e}"
+        # Should either pass or fail gracefully, not crash
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
     def test_very_long_title(self):
         """Very long title should not crash filter."""
         long_title = "A" * 5000 + " Software Engineer New Grad"
         jobs = [_make_job(title=long_title)]
-        try:
-            result = filter_jobs(jobs, _default_config())
-        except Exception as e:
-            assert False, f"Long title caused crash: {e}"
+        assert isinstance(filter_jobs(jobs, _default_config()), list)
 
     def test_filter_order_exclusion_first(self):
         """Exclusion signals should be checked FIRST, before other filters.
@@ -666,7 +657,7 @@ class TestFilterJobsEdgeCases:
         jobs = [_make_job(
             title="Senior Software Engineer, New Grad 2025",  # Has 'senior'
             location="San Francisco, CA",
-            posted_at=(datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            posted_at=(datetime.now(UTC) - timedelta(days=1)).isoformat()
         )]
         result = filter_jobs(jobs, _default_config())
         assert len(result) == 0, "Exclusion should happen first"
@@ -690,18 +681,18 @@ class TestGraduateCohortSignals:
     POSTED_AT = "2026-08-12T12:00:00"
     MAX_AGE_DAYS = 36500
 
-    def _live_config(self) -> Dict[str, Any]:
+    def _live_config(self) -> dict[str, Any]:
         """Load the shipped config with recency widened out of the way.
 
         Returns a copy — the caller must not mutate what the YAML load returned,
         since every test in this class reads the same file.
         """
         root = os.path.join(os.path.dirname(__file__), '..')
-        with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
             config = yaml.safe_load(f)
         return {**config, 'filtering': {**config['filtering'], 'max_age_days': self.MAX_AGE_DAYS}}
 
-    def _job(self, title: str, location: str = "San Jose, California, United States") -> Dict[str, Any]:
+    def _job(self, title: str, location: str = "San Jose, California, United States") -> dict[str, Any]:
         """Build a job fixture with a fixed posting date."""
         return _make_job(title=title, location=location, posted_at=self.POSTED_AT)
 
@@ -764,7 +755,7 @@ class TestExclusionSignalWordBoundaries:
     @staticmethod
     def _live_signals() -> list:
         root = os.path.join(os.path.dirname(__file__), '..')
-        with open(os.path.join(root, 'config.yml'), 'r', encoding='utf-8') as f:
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
             return yaml.safe_load(f)['filtering']['exclusion_signals']
 
     @pytest.mark.parametrize("title", [

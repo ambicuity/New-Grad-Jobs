@@ -71,58 +71,8 @@ extend-exclude = ["docs", "site"]
 select = ["E4", "E7", "E9", "F", "W", "I", "B", "UP"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["scripts"]
+known-first-party = ["scripts", "ngj"]
 
-# TEMPORARY BASELINE — remove this whole table in the post-refactor cleanup pass.
-# These are pre-existing findings in files that are being rewritten in parallel
-# (scripts/update_jobs.py -> scripts/ngj/, deleted scripts, and their tests).
-# Fixing them here would only create merge conflicts. Nearly all are
-# auto-fixable: run `ruff check --fix scripts tests .github/scripts`, fix the
-# few manual ones (B011/B007/E402/F841/UP031), then delete this table.
-# New files get the full rule set with no ignores.
-[tool.ruff.lint.per-file-ignores]
-".github/scripts/verify_new_urls.py" = ["I001"]
-"scripts/check_integrity.py" = ["F401"]
-"scripts/contracts.py" = ["UP017"]
-"scripts/evaluate_jobs.py" = ["UP017"]
-"scripts/fix_nan_only.py" = ["UP015"]
-"scripts/generate_companies.py" = ["B007", "UP006", "UP035", "UP045"]
-"scripts/quality.py" = ["UP017"]
-"scripts/sync_readme_counts.py" = ["UP006", "UP015", "UP017", "UP035", "UP045"]
-"scripts/sync_readme_jobs.py" = ["UP006", "UP035"]
-"scripts/update_jobs.py" = ["F401", "F541", "F841", "UP006", "UP015", "UP017", "UP035", "UP045"]
-"scripts/url_safety.py" = ["UP006", "UP035", "UP045"]
-"scripts/validate_config.py" = ["UP015"]
-"tests/conftest.py" = ["I001", "UP006", "UP017", "UP035"]
-"tests/test_categorize.py" = ["I001"]
-"tests/test_config_companies.py" = ["UP006", "UP015", "UP035"]
-"tests/test_date_normalization.py" = ["E402", "I001", "UP017"]
-"tests/test_deduplication.py" = ["F401", "I001", "UP006", "UP035"]
-"tests/test_display_count_copy.py" = ["I001"]
-"tests/test_enrichment.py" = ["F401", "I001", "UP017"]
-"tests/test_evaluate_jobs.py" = ["I001"]
-"tests/test_filter.py" = ["B011", "F841", "I001", "UP006", "UP015", "UP017", "UP035"]
-"tests/test_generate_companies.py" = ["I001"]
-"tests/test_generate_jobs_json.py" = ["I001", "UP017"]
-"tests/test_health.py" = ["I001"]
-"tests/test_http_status.py" = ["I001"]
-"tests/test_is_recent_job.py" = ["F401", "I001", "UP017"]
-"tests/test_location.py" = ["I001"]
-"tests/test_predict_hiring_trends.py" = ["I001", "UP015", "UP017"]
-"tests/test_readme_contract.py" = ["I001"]
-"tests/test_readme_sync.py" = ["F401", "I001", "UP017"]
-"tests/test_rss.py" = ["I001", "UP017"]
-"tests/test_save_market_history.py" = ["I001", "UP015", "UP017"]
-"tests/test_signal_detection.py" = ["I001"]
-"tests/test_source_cooldown.py" = ["I001"]
-"tests/test_url_safety.py" = ["UP031"]
-"tests/test_utils.py" = ["I001"]
-"tests/test_workday_422_logging.py" = ["I001"]
-"tests/test_workday_url_builder.py" = ["F401"]
-
-# --------------------------------------------------------------------------- #
-# mypy (non-strict; CI job is non-blocking until the scripts/ngj refactor lands)
-# --------------------------------------------------------------------------- #
 [tool.mypy]
 python_version = "3.11"
 files = ["scripts"]

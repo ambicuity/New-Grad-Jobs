@@ -17,12 +17,16 @@ from __future__ import annotations
 import logging
 import threading
 import time
+from collections.abc import Callable, Iterator, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
-from typing import Any, Callable, Dict, Iterator, List, Optional, Sequence, TypeVar
+from typing import Any, TypeVar
 from urllib.parse import urlparse
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 from ngj.models import (
     KIND_COOLDOWN,
     KIND_FORBIDDEN,
@@ -34,9 +38,7 @@ from ngj.models import (
     SourceError,
     SourceResult,
 )
-from requests.adapters import HTTPAdapter
 from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD
-from urllib3.util.retry import Retry
 
 logger = logging.getLogger(__name__)
 
@@ -94,7 +96,7 @@ def create_session() -> requests.Session:
     return session
 
 
-_session: Optional[requests.Session] = None
+_session: requests.Session | None = None
 _session_lock = threading.Lock()
 
 
@@ -115,14 +117,14 @@ class DomainConcurrencyLimiter:
     without explicit limits are left unthrottled.
     """
 
-    def __init__(self, limits: Dict[str, int]):
+    def __init__(self, limits: dict[str, int]):
         self._limits = {
             domain.lower(): limit
             for domain, limit in limits.items()
             if isinstance(limit, int) and limit > 0
         }
         self._lock = threading.Lock()
-        self._semaphores: Dict[str, threading.BoundedSemaphore] = {}
+        self._semaphores: dict[str, threading.BoundedSemaphore] = {}
 
     def _domain_for_url(self, url: str) -> str:
         return (urlparse(url).netloc or "").split(":")[0].lower()
@@ -181,7 +183,7 @@ def limited_post(url: str, **kwargs: Any) -> requests.Response:
 # 403 cooldown glue
 # ---------------------------------------------------------------------------
 
-def cooldown_skip(company: str, source: str, url: str) -> Optional[SourceResult]:
+def cooldown_skip(company: str, source: str, url: str) -> SourceResult | None:
     """Return a cooldown SourceResult when ``url``'s domain is tripped, else None."""
     if not SOURCE_COOLDOWN.is_tripped(url):
         return None
@@ -210,7 +212,7 @@ def fetch_json_with_retry(
     source: str,
     source_label: str,
     url: str,
-    parse: Callable[[Any], Optional[SourceResult]],
+    parse: Callable[[Any], SourceResult | None],
     *,
     timeout: int,
     max_retries: int = 2,
@@ -232,9 +234,9 @@ def fetch_json_with_retry(
         return skipped
 
     attempts = max_retries + 1
-    last_error: Optional[SourceError] = None
+    last_error: SourceError | None = None
 
-    def error(kind: str, message: str, status: Optional[int] = None) -> SourceError:
+    def error(kind: str, message: str, status: int | None = None) -> SourceError:
         return SourceError(company, source, kind, status, message)
 
     for attempt in range(attempts):
@@ -318,7 +320,7 @@ def fan_out(
         return SourceResult()
 
     logger.info("\n🚀 Starting PARALLEL %s fetch: %s %s with %s workers", label, total, noun, max_workers)
-    results: List[Optional[SourceResult]] = [None] * total
+    results: list[SourceResult | None] = [None] * total
     with ThreadPoolExecutor(max_workers=max(1, max_workers)) as executor:
         futures = {executor.submit(fetch_one, item): index for index, item in enumerate(items)}
         for future in as_completed(futures):

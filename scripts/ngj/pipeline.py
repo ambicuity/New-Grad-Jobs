@@ -9,10 +9,11 @@ from __future__ import annotations
 import logging
 import os
 import time
+from collections.abc import Callable, Mapping
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Callable, Dict, List, Mapping, Optional
+from typing import Any
 
 from ngj.dedup import deduplicate_jobs
 from ngj.enrich import enrich_jobs
@@ -50,10 +51,10 @@ class RunSummary:
     elapsed_seconds: float
 
 
-def plan_sources(config: Mapping[str, Any], settings: Settings) -> Dict[str, SourceFetcher]:
+def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, SourceFetcher]:
     """Map each enabled source name to a zero-arg fetcher bound to ``settings``."""
     apis = config.get('apis', {}) or {}
-    plan: Dict[str, SourceFetcher] = {}
+    plan: dict[str, SourceFetcher] = {}
 
     for name, fetch_all in (
         ('greenhouse', fetch_all_greenhouse_jobs),
@@ -90,9 +91,9 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> Dict[str, Sou
     return plan
 
 
-def fetch_all_sources(plan: Mapping[str, SourceFetcher], max_workers: int) -> Dict[str, SourceResult]:
+def fetch_all_sources(plan: Mapping[str, SourceFetcher], max_workers: int) -> dict[str, SourceResult]:
     """Run every planned source concurrently; a crashing source becomes an error result."""
-    results: Dict[str, SourceResult] = {}
+    results: dict[str, SourceResult] = {}
     with ThreadPoolExecutor(max_workers=max(1, max_workers)) as executor:
         futures = {name: executor.submit(fetcher) for name, fetcher in plan.items()}
         for name, future in futures.items():
@@ -146,7 +147,7 @@ def run(config: Mapping[str, Any], settings: Settings, *, sync_readme: bool = Tr
 
     logger.info("\n📡 Phase 1: Fetching jobs from all sources in parallel...")
     source_results = fetch_all_sources(plan_sources(config, settings), settings.orchestrator_workers)
-    all_jobs: List[Dict[str, Any]] = [job for result in source_results.values() for job in result.jobs]
+    all_jobs: list[dict[str, Any]] = [job for result in source_results.values() for job in result.jobs]
     source_counts = {name: len(result.jobs) for name, result in source_results.items()}
     logger.info("\n📊 Total jobs fetched: %s", len(all_jobs))
 
@@ -195,7 +196,7 @@ def run(config: Mapping[str, Any], settings: Settings, *, sync_readme: bool = Tr
     )
 
 
-def main(config_path: Optional[Path] = None) -> int:
+def main(config_path: Path | None = None) -> int:
     """CLI entrypoint: load config.yml + env, run the pipeline, report timing."""
     configure_logging()
     logger.info("🚀 Starting job aggregation (PARALLEL MODE)...")

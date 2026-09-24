@@ -22,7 +22,8 @@ from __future__ import annotations
 import ipaddress
 import re
 import socket
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from collections.abc import Sequence
+from typing import Any
 from urllib.parse import urlparse
 
 _BLOCKED_HOSTS = frozenset(
@@ -70,7 +71,7 @@ class _InvalidNumericHost(ValueError):
     """Host looks like an IPv4 literal but does not parse as one."""
 
 
-def _coerce_ip(host: str) -> Optional[ipaddress._BaseAddress]:
+def _coerce_ip(host: str) -> ipaddress._BaseAddress | None:
     """Parse ``host`` as an IP address, including every legacy IPv4 encoding.
 
     ``urlparse`` leaves ``2130706433`` (decimal), ``0x7f000001`` (hex),
@@ -158,8 +159,8 @@ def is_safe_url(url: object) -> bool:
     return True
 
 
-def _job_urls(job: Dict[str, Any]) -> List[str]:
-    urls: List[str] = []
+def _job_urls(job: dict[str, Any]) -> list[str]:
+    urls: list[str] = []
     for key in ("url", "apply_url", "job_url", "link", "absolute_url"):
         val = job.get(key)
         if isinstance(val, str) and val.strip():
@@ -168,17 +169,17 @@ def _job_urls(job: Dict[str, Any]) -> List[str]:
 
 
 def filter_safe_jobs(
-    jobs: Sequence[Dict[str, Any]],
-) -> Tuple[List[Dict[str, Any]], int, List[str]]:
+    jobs: Sequence[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], int, list[str]]:
     """Split jobs into a safe list.
 
     Returns ``(safe_jobs, blocked_count, blocked_samples)``. A job is blocked
     when it is not a dict, exposes no URL field, or exposes any URL that fails
     :func:`is_safe_url`.
     """
-    safe: List[Dict[str, Any]] = []
+    safe: list[dict[str, Any]] = []
     blocked_count = 0
-    blocked_samples: List[str] = []
+    blocked_samples: list[str] = []
     max_samples = 10
     for job in jobs:
         if not isinstance(job, dict):

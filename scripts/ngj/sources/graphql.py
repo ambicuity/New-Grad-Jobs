@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import logging
-from typing import Any, Dict, List, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 import requests
+
 from ngj import http as ngj_http
 from ngj.models import KIND_CONFIG, KIND_NETWORK, KIND_PARSE, KIND_UNEXPECTED, SourceError, SourceResult
 from ngj.settings import DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE, DEFAULT_GRAPHQL_TIMEOUT, Settings
@@ -17,11 +19,11 @@ logger = logging.getLogger(__name__)
 SOURCE = "graphql"
 
 
-def normalize_graphql_items(items: Any) -> List[Dict[str, Any]]:
+def normalize_graphql_items(items: Any) -> list[dict[str, Any]]:
     """Normalize GraphQL item arrays and unwrap edge/node shapes."""
     if not isinstance(items, list):
         return []
-    normalized: List[Dict[str, Any]] = []
+    normalized: list[dict[str, Any]] = []
     for item in items:
         if not isinstance(item, dict):
             continue
@@ -38,7 +40,7 @@ def graphql_value_as_string(value: Any) -> str:
     return str(value).strip()
 
 
-def _to_job(company_name: str, item: Dict[str, Any], field_mappings: Dict[str, str]) -> Dict[str, Any]:
+def _to_job(company_name: str, item: dict[str, Any], field_mappings: dict[str, str]) -> dict[str, Any]:
     def mapped(field: str) -> Any:
         return get_nested_value(item, field_mappings.get(field, ''))
 
@@ -54,7 +56,7 @@ def _to_job(company_name: str, item: Dict[str, Any], field_mappings: Dict[str, s
 
 
 def fetch_graphql_jobs(
-    source_config: Dict[str, Any],
+    source_config: dict[str, Any],
     max_jobs: int = DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE,
     timeout: int = DEFAULT_GRAPHQL_TIMEOUT,
 ) -> SourceResult:
@@ -75,8 +77,8 @@ def fetch_graphql_jobs(
         return SourceResult.failure(company_name, SOURCE, KIND_CONFIG, "variables/field_mappings must be objects")
 
     logger.info("Fetching jobs from %s (GraphQL)...", company_name)
-    jobs: List[Dict[str, Any]] = []
-    errors: List[SourceError] = []
+    jobs: list[dict[str, Any]] = []
+    errors: list[SourceError] = []
     raw_count = 0
     cursor: Any = None
     headers = {'Content-Type': 'application/json'}
@@ -139,7 +141,7 @@ def fetch_graphql_jobs(
     return SourceResult(jobs=tuple(jobs), errors=tuple(errors), raw_count=raw_count)
 
 
-def fetch_all_graphql_jobs(sources: Sequence[Dict[str, Any]], settings: Settings) -> SourceResult:
+def fetch_all_graphql_jobs(sources: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch all configured GraphQL sources in parallel."""
     workers = min(settings.graphql_max_workers, max(settings.graphql_min_workers, len(sources)))
     return ngj_http.fan_out(

@@ -2,11 +2,11 @@
 """Tests for job deduplication logic in scripts/update_jobs.py."""
 
 import logging
-
-import pytest
 import os
 import sys
-from typing import Dict, Any
+from typing import Any
+
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -20,7 +20,7 @@ def _capture_info_logs(caplog):
 
 
 
-def _make_job(**kwargs) -> Dict[str, Any]:
+def _make_job(**kwargs) -> dict[str, Any]:
     """Helper to create minimal valid job dict"""
     defaults = {
         'company': 'Test Corp',

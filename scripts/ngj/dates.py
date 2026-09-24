@@ -11,8 +11,8 @@ from __future__ import annotations
 import logging
 import math
 import re
-from datetime import date, datetime, timedelta, timezone
-from typing import Any, Dict, Optional
+from datetime import UTC, date, datetime, timedelta
+from typing import Any
 
 from dateutil import parser as date_parser
 from dateutil.relativedelta import relativedelta
@@ -52,7 +52,7 @@ def normalize_date_string(
     posted_at_lower = posted_at.lower().strip()
     reference = reference_date if reference_date is not None else now_utc
     if reference is None:
-        reference = datetime.now(timezone.utc)
+        reference = datetime.now(UTC)
     now = reference.replace(tzinfo=None)
 
     if 'today' in posted_at_lower:
@@ -93,18 +93,18 @@ def as_utc_naive(dt: datetime) -> datetime:
     """
     if dt.tzinfo is None:
         return dt
-    return dt.astimezone(timezone.utc).replace(tzinfo=None)
+    return dt.astimezone(UTC).replace(tzinfo=None)
 
 
-def parse_posted_at(posted_at: Any, now_utc: Optional[datetime] = None) -> datetime:
+def parse_posted_at(posted_at: Any, now_utc: datetime | None = None) -> datetime:
     """Parse any supported posted_at value to a UTC-naive datetime.
 
     Numbers are epoch milliseconds (Lever). Raises on unparseable input.
     """
     if isinstance(posted_at, (int, float)):
-        parsed = datetime.fromtimestamp(posted_at / 1000, tz=timezone.utc)
+        parsed = datetime.fromtimestamp(posted_at / 1000, tz=UTC)
     else:
-        now_utc = now_utc or datetime.now(timezone.utc)
+        now_utc = now_utc or datetime.now(UTC)
         parsed = date_parser.parse(normalize_date_string(posted_at, now_utc))
     return as_utc_naive(parsed)
 
@@ -117,7 +117,7 @@ def is_recent_job(posted_at: Any, max_age_days: int) -> bool:
         return False
 
     try:
-        now_utc = datetime.now(timezone.utc)
+        now_utc = datetime.now(UTC)
         if isinstance(posted_at, (datetime, date)):
             posted_date = posted_at
             if not isinstance(posted_date, datetime):
@@ -132,10 +132,10 @@ def is_recent_job(posted_at: Any, max_age_days: int) -> bool:
         return False
 
 
-def format_posted_date(posted_at: Any, now_utc: Optional[datetime] = None) -> str:
+def format_posted_date(posted_at: Any, now_utc: datetime | None = None) -> str:
     """Relative display string: "Today", "1 day ago", "N days ago", else YYYY-MM-DD."""
     try:
-        now_utc = now_utc or datetime.now(timezone.utc)
+        now_utc = now_utc or datetime.now(UTC)
         posted_date = parse_posted_at(posted_at, now_utc)
         diff = now_utc.replace(tzinfo=None) - posted_date
         if diff.days == 0:
@@ -169,7 +169,7 @@ def get_iso_date(posted_at: Any) -> str:
         return ""
 
 
-def extract_sort_date(job: Dict[str, Any]) -> datetime:
+def extract_sort_date(job: dict[str, Any]) -> datetime:
     """posted_at as a UTC-naive datetime for sorting; ``datetime.min`` if absent/bad."""
     posted_at = job.get('posted_at')
     if not posted_at:

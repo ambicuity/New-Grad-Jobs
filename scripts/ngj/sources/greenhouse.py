@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import logging
 import re
-from typing import Any, Dict, Optional, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 from ngj import http as ngj_http
 from ngj.compensation import extract_compensation
@@ -31,7 +32,7 @@ def fetch_greenhouse_job_detail(
     board_token: str,
     job_id: int,
     timeout: int = DEFAULT_HTTP_TIMEOUT,
-) -> Optional[Dict[str, Any]]:
+) -> dict[str, Any] | None:
     """Fetch one job from the individual-job endpoint (always has full content).
 
     Used when the list endpoint returned an empty description. Best effort:
@@ -48,7 +49,7 @@ def fetch_greenhouse_job_detail(
     return None
 
 
-def _to_job(company_name: str, raw: Dict[str, Any], description: str) -> Dict[str, Any]:
+def _to_job(company_name: str, raw: dict[str, Any], description: str) -> dict[str, Any]:
     return {
         'company': company_name,
         'title': raw.get('title', ''),
@@ -63,11 +64,11 @@ def _to_job(company_name: str, raw: Dict[str, Any], description: str) -> Dict[st
 
 
 def _fill_empty_description(
-    job: Dict[str, Any],
+    job: dict[str, Any],
     gh_id: Any,
-    board_token: Optional[str],
+    board_token: str | None,
     timeout: int,
-) -> Dict[str, Any]:
+) -> dict[str, Any]:
     if job['description_html'] or not gh_id or not board_token:
         return job
     detail = fetch_greenhouse_job_detail(board_token, gh_id, timeout=timeout)
@@ -93,17 +94,17 @@ def fetch_greenhouse_jobs(
     board_match = _BOARD_TOKEN_RE.search(url)
     board_token = board_match.group(1) if board_match else None
 
-    def parse(data: Any) -> Optional[SourceResult]:
+    def parse(data: Any) -> SourceResult | None:
         if not isinstance(data, dict) or 'jobs' not in data:
             return None
         raw_jobs = data.get('jobs', [])
         jobs = [_to_job(company_name, raw, raw.get('content', '') or '') for raw in raw_jobs]
-        empty = sum(1 for job, raw in zip(jobs, raw_jobs) if not job['description_html'] and raw.get('id'))
+        empty = sum(1 for job, raw in zip(jobs, raw_jobs, strict=True) if not job['description_html'] and raw.get('id'))
         if empty and board_token:
             logger.info("  📋 Enriching %s jobs with empty descriptions...", empty)
             jobs = [
                 _fill_empty_description(job, raw.get('id'), board_token, timeout)
-                for job, raw in zip(jobs, raw_jobs)
+                for job, raw in zip(jobs, raw_jobs, strict=True)
             ]
         return SourceResult(jobs=tuple(jobs), raw_count=len(raw_jobs))
 
@@ -112,7 +113,7 @@ def fetch_greenhouse_jobs(
     )
 
 
-def fetch_all_greenhouse_jobs(companies: Sequence[Dict[str, Any]], settings: Settings) -> SourceResult:
+def fetch_all_greenhouse_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch every configured Greenhouse board in parallel."""
     # One worker per 3 companies, clamped to the configured pool bounds.
     workers = min(settings.greenhouse_max_workers, max(settings.greenhouse_min_workers, len(companies) // 3))

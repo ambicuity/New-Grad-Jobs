@@ -11,8 +11,8 @@ Verifies that when limited_post returns a non-2xx response, fetch_workday_jobs:
 All network calls are mocked — no live requests.
 """
 
-import logging
 import json
+import logging
 import os
 import sys
 from typing import Any

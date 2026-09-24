@@ -5,8 +5,8 @@ These tests verify the new_grad_signal and track_signal detection functions,
 which are used to identify job titles containing relevant keywords.
 """
 
-import sys
 import os
+import sys
 
 # Ensure the scripts directory is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))

@@ -20,25 +20,23 @@ import threading
 from typing import Any
 from unittest.mock import MagicMock
 
-import requests
-
 import pytest
+import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from ngj import http as ngj_http  # noqa: E402 — module whose globals the adapters look up
+from ngj.http import DOMAIN_LIMITER  # noqa: E402
+from ngj.models import KIND_COOLDOWN, KIND_FORBIDDEN  # noqa: E402
+from ngj.sources import workday as workday_mod  # noqa: E402
+from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
+from ngj.sources.lever import fetch_lever_jobs  # noqa: E402
+from ngj.sources.workday import fetch_workday_jobs  # noqa: E402
 from source_cooldown import (  # noqa: E402
     SOURCE_COOLDOWN,
     SOURCE_COOLDOWN_THRESHOLD,
     SourceCooldownTracker,
 )
-from ngj.http import DOMAIN_LIMITER  # noqa: E402
-from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
-from ngj.sources.lever import fetch_lever_jobs  # noqa: E402
-from ngj.models import KIND_COOLDOWN, KIND_FORBIDDEN  # noqa: E402
-from ngj.sources import workday as workday_mod  # noqa: E402
-from ngj.sources.workday import fetch_workday_jobs  # noqa: E402
-
 
 # ---------------------------------------------------------------------------
 # Helpers

@@ -9,11 +9,13 @@ from __future__ import annotations
 
 import logging
 import os
+from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Mapping, Optional
+from typing import Any
 
 import yaml
+
 from ngj.util import coerce_positive_int
 
 logger = logging.getLogger(__name__)
@@ -90,7 +92,7 @@ class Settings:
         return self.output_dir / "jobs.json"
 
 
-def resolve_output_dir(repo_root: Path = REPO_ROOT, env: Optional[Mapping[str, str]] = None) -> Path:
+def resolve_output_dir(repo_root: Path = REPO_ROOT, env: Mapping[str, str] | None = None) -> Path:
     """Where generated public artifacts go: ``$NGJ_OUTPUT_DIR`` or ``<repo>/site/public``."""
     env = os.environ if env is None else env
     override = (env.get(OUTPUT_DIR_ENV) or "").strip()
@@ -99,9 +101,9 @@ def resolve_output_dir(repo_root: Path = REPO_ROOT, env: Optional[Mapping[str, s
     return Path(repo_root) / DEFAULT_OUTPUT_SUBDIR
 
 
-def load_config(path: Path = DEFAULT_CONFIG_PATH) -> Dict[str, Any]:
+def load_config(path: Path = DEFAULT_CONFIG_PATH) -> dict[str, Any]:
     """Load config.yml; raise a clear error when it is missing or not a mapping."""
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         config = yaml.safe_load(f)
     if not isinstance(config, dict):
         raise ValueError(f"{path} must contain a YAML mapping at the top level")
@@ -117,7 +119,7 @@ def _section(config: Mapping[str, Any], *keys: str) -> Mapping[str, Any]:
 
 def build_settings(
     config: Mapping[str, Any],
-    env: Optional[Mapping[str, str]] = None,
+    env: Mapping[str, str] | None = None,
     repo_root: Path = REPO_ROOT,
 ) -> Settings:
     """Build :class:`Settings` from a parsed config.yml mapping and the environment."""

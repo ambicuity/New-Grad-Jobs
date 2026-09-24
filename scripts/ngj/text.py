@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import html
 import re
-from typing import Optional
 
 # Only real tags (a letter, "/" or "!" right after "<") are stripped so literal
 # comparisons such as "< $100k" or "latency > 5ms" survive decoding.
@@ -38,7 +37,7 @@ def strip_html(text: str) -> str:
     return text.replace('\xa0', ' ')
 
 
-def clean_description(text: Optional[str], max_chars: int = DEFAULT_DESCRIPTION_CHARS) -> str:
+def clean_description(text: str | None, max_chars: int = DEFAULT_DESCRIPTION_CHARS) -> str:
     """Strip HTML, collapse whitespace, clip to ``max_chars`` on a word boundary."""
     if not text:
         return ''

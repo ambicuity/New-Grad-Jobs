@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 from ngj import http as ngj_http
 from ngj.compensation import extract_compensation
@@ -13,7 +14,7 @@ from ngj.text import clean_description
 SOURCE = "lever"
 
 
-def _to_job(company_name: str, raw: Dict[str, Any]) -> Dict[str, Any]:
+def _to_job(company_name: str, raw: dict[str, Any]) -> dict[str, Any]:
     description = raw.get('description', '') or raw.get('descriptionPlain', '') or ''
     return {
         'company': company_name,
@@ -36,7 +37,7 @@ def fetch_lever_jobs(
 ) -> SourceResult:
     """Fetch one company's Lever postings."""
 
-    def parse(data: Any) -> Optional[SourceResult]:
+    def parse(data: Any) -> SourceResult | None:
         if not isinstance(data, list):
             return None
         return SourceResult(jobs=tuple(_to_job(company_name, raw) for raw in data), raw_count=len(data))
@@ -46,7 +47,7 @@ def fetch_lever_jobs(
     )
 
 
-def fetch_all_lever_jobs(companies: Sequence[Dict[str, Any]], settings: Settings) -> SourceResult:
+def fetch_all_lever_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
     """Fetch every configured Lever company in parallel."""
     workers = min(settings.lever_max_workers, max(settings.lever_min_workers, len(companies)))
     return ngj_http.fan_out(

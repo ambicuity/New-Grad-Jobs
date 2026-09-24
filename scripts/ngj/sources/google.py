@@ -10,11 +10,13 @@ import json
 import logging
 import re
 import time
-from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Sequence
+from collections.abc import Sequence
+from datetime import UTC, datetime
+from typing import Any
 from urllib.parse import urlencode
 
 import requests
+
 from ngj import http as ngj_http
 from ngj.models import KIND_FORBIDDEN, KIND_HTTP, KIND_NETWORK, KIND_PARSE, SourceError, SourceResult
 from ngj.settings import DEFAULT_GOOGLE_MAX_PAGES, DEFAULT_HTTP_TIMEOUT
@@ -48,7 +50,7 @@ def _page_url(search_term: str, page: int) -> str:
     return f"{RESULTS_URL}?{params}&target_level=INTERN_AND_APPRENTICE&page={page}"
 
 
-def _find_jobs_array(obj: Any) -> Optional[list]:
+def _find_jobs_array(obj: Any) -> list | None:
     """Depth-first search for the list whose rows start with a numeric id string."""
     if isinstance(obj, list):
         if obj and isinstance(obj[0], list) and obj[0] and isinstance(obj[0][0], str) and obj[0][0].isdigit():
@@ -60,7 +62,7 @@ def _find_jobs_array(obj: Any) -> Optional[list]:
     return None
 
 
-def _parse_row(job: list) -> Optional[Dict[str, Any]]:
+def _parse_row(job: list) -> dict[str, Any] | None:
     job_id = job[_IDX_ID]
     title = job[_IDX_TITLE]
     link = job[_IDX_LINK]
@@ -82,7 +84,7 @@ def _parse_row(job: list) -> Optional[Dict[str, Any]]:
     if len(job) > _IDX_DATE and isinstance(job[_IDX_DATE], list) and job[_IDX_DATE]:
         ts = job[_IDX_DATE][0]
         if isinstance(ts, (int, float)):
-            posted_at = datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+            posted_at = datetime.fromtimestamp(ts, tz=UTC).isoformat()
 
     desc_html = ""
     if len(job) > _IDX_DESCRIPTION and isinstance(job[_IDX_DESCRIPTION], list) and len(job[_IDX_DESCRIPTION]) > 1:
@@ -100,9 +102,9 @@ def _parse_row(job: list) -> Optional[Dict[str, Any]]:
     }
 
 
-def _fetch_page(url: str, max_retries: int, timeout: int) -> tuple[str, Optional[SourceError], bool]:
+def _fetch_page(url: str, max_retries: int, timeout: int) -> tuple[str, SourceError | None, bool]:
     """Return (html, error, abort_all). ``abort_all`` is set on 403/429."""
-    error: Optional[SourceError] = None
+    error: SourceError | None = None
     for attempt in range(max_retries + 1):
         response = None
         try:
@@ -142,8 +144,8 @@ def fetch_google_jobs(
     fetch and returns what was collected so far, matching the scraper's
     historical behaviour.
     """
-    all_jobs: List[Dict[str, Any]] = []
-    errors: List[SourceError] = []
+    all_jobs: list[dict[str, Any]] = []
+    errors: list[SourceError] = []
     seen_urls: set[str] = set()
     raw_count = 0
 

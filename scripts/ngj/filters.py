@@ -7,13 +7,13 @@ from __future__ import annotations
 
 import re
 from functools import lru_cache
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
 
 from ngj.dates import is_recent_job
 from ngj.taxonomy import is_engineering_network_title
 
 # Used when config.yml has no filtering.exclusion_signals.
-DEFAULT_EXCLUSION_SIGNALS: Tuple[str, ...] = (
+DEFAULT_EXCLUSION_SIGNALS: tuple[str, ...] = (
     'senior', 'sr.', 'sr ', 'staff', 'principal', 'lead', 'manager',
     'director', 'vp', 'vice president', 'head of', 'architect',
     'distinguished', 'fellow', 'intern', 'internship',
@@ -24,7 +24,7 @@ DEFAULT_EXCLUSION_SIGNALS: Tuple[str, ...] = (
 # not bypass the track-signal requirement. Cohort years mirror
 # filtering.new_grad_signals in config.yml; move both forward together as each
 # hiring cycle opens.
-STRONG_NEW_GRAD_SIGNALS: Tuple[str, ...] = (
+STRONG_NEW_GRAD_SIGNALS: tuple[str, ...] = (
     "new grad", "new graduate", "graduate program", "campus", "university grad",
     "college grad", "early career", "2025 start", "2026 start", "2027 start",
     "2025", "2026", "2027",
@@ -98,7 +98,7 @@ LOCATION_TERM_PATTERN = re.compile(
 )
 
 
-def has_new_grad_signal(title: str, signals: List[str]) -> bool:
+def has_new_grad_signal(title: str, signals: list[str]) -> bool:
     """Check if job title contains new grad signals."""
     if not signals:
         return False
@@ -121,7 +121,7 @@ def has_new_grad_signal(title: str, signals: List[str]) -> bool:
 
 # Exclusion signals whose inflections must also exclude. Word-boundary matching
 # means "intern" alone no longer covers "internship"/"interns".
-_EXCLUSION_SUFFIXES: Dict[str, str] = {'intern': r'(?:s|ships?)?'}
+_EXCLUSION_SUFFIXES: dict[str, str] = {'intern': r'(?:s|ships?)?'}
 # Entry-level titles that contain an exclusion word but are not senior roles.
 # Removed from the title before exclusion signals are checked, so a real
 # seniority marker elsewhere ("Senior Associate Product Manager") still excludes.
@@ -132,7 +132,7 @@ _EXCLUSION_EXCEPTIONS_RE = re.compile(
 
 
 @lru_cache(maxsize=32)
-def _compile_exclusion_pattern(signals: Tuple[str, ...]) -> Optional[re.Pattern]:
+def _compile_exclusion_pattern(signals: tuple[str, ...]) -> re.Pattern | None:
     """Compile exclusion signals into one whole-word regex.
 
     Word boundaries are applied only on alphanumeric edges, so punctuation-led
@@ -158,7 +158,7 @@ def _compile_exclusion_pattern(signals: Tuple[str, ...]) -> Optional[re.Pattern]
     return re.compile('|'.join(parts), re.IGNORECASE)
 
 
-def is_title_excluded(title: str, exclusion_signals: List[str]) -> bool:
+def is_title_excluded(title: str, exclusion_signals: list[str]) -> bool:
     """Return True when the title carries a seniority/intern exclusion signal."""
     if not isinstance(title, str) or not title:
         return False
@@ -168,7 +168,7 @@ def is_title_excluded(title: str, exclusion_signals: List[str]) -> bool:
     return bool(pattern.search(_EXCLUSION_EXCEPTIONS_RE.sub(' ', title)))
 
 
-def has_track_signal(title: str, signals: List[str]) -> bool:
+def has_track_signal(title: str, signals: list[str]) -> bool:
     """Check if job title contains track signal keywords (e.g. 'software', 'data').
 
     For the ambiguous 'network' track, require an engineering-focused title so
@@ -212,14 +212,14 @@ def is_valid_location(location: str) -> bool:
     return bool(LOCATION_TERM_PATTERN.search(location_lower))
 
 
-def filter_jobs(jobs: List[Dict[str, Any]], config: Dict[str, Any]) -> List[Dict[str, Any]]:
+def filter_jobs(jobs: list[dict[str, Any]], config: dict[str, Any]) -> list[dict[str, Any]]:
     """Return the jobs that pass every inclusion rule (input list is not modified)."""
     filters = config.get('filtering', config.get('filters', {}))
     exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
     return [job for job in jobs if _passes_filters(job, filters, exclusion_signals)]
 
 
-def _passes_filters(job: Dict[str, Any], filters: Dict[str, Any], exclusion_signals: List[str]) -> bool:
+def _passes_filters(job: dict[str, Any], filters: dict[str, Any], exclusion_signals: list[str]) -> bool:
     title = job.get('title', '')
     title_lower = title.lower()
 

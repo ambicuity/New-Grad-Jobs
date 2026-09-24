@@ -8,8 +8,9 @@ checked against it by tests/test_category_taxonomy_sync.py.
 from __future__ import annotations
 
 import re
+from collections.abc import Iterator
 from functools import lru_cache
-from typing import Any, Dict, Iterator
+from typing import Any
 
 from ngj.util import get_nested_value
 
@@ -298,7 +299,7 @@ def is_engineering_network_title(title: str) -> bool:
     return isinstance(title, str) and bool(NETWORK_ENGINEERING_TITLE_PATTERN.search(title))
 
 
-def categorize_job(title: str, description: str = '') -> Dict[str, Any]:
+def categorize_job(title: str, description: str = '') -> dict[str, Any]:
     """Categorize a job based on its title and description"""
     title_lower = title.lower()
     desc_lower = description.lower() if description else ''
@@ -374,13 +375,13 @@ def _company_tier_parts(company_name: str) -> tuple:
     return tier + (sectors,)
 
 
-def get_company_tier(company_name: str) -> Dict[str, Any]:
+def get_company_tier(company_name: str) -> dict[str, Any]:
     """Company tier classification including sectors (a fresh dict per call)."""
     tier, emoji, label, sectors = _company_tier_parts(company_name)
     return {'tier': tier, 'emoji': emoji, 'label': label, 'sectors': list(sectors)}
 
 
-def iter_category_ids(job: Dict[str, Any]) -> Iterator[str]:
+def iter_category_ids(job: dict[str, Any]) -> Iterator[str]:
     """Yield normalized category IDs from enriched or legacy job category data."""
     if not isinstance(job, dict):
         return

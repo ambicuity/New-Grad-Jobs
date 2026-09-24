@@ -4,12 +4,12 @@ from __future__ import annotations
 
 import logging
 import math
-from typing import Any, Dict, List
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
 
-def get_job_key(job: Dict[str, Any]) -> str:
+def get_job_key(job: dict[str, Any]) -> str:
     """Generate unique key for job deduplication
 
     Handles non-string values (NaN, None, float) that may come from JobSpy/pandas.
@@ -31,7 +31,7 @@ def get_job_key(job: Dict[str, Any]) -> str:
     return f"{company}|{title}|{url}"
 
 
-def deduplicate_jobs(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def deduplicate_jobs(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Remove duplicate jobs based on company, title, and URL"""
     seen_keys = set()
     unique_jobs = []

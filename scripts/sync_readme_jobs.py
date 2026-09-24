@@ -29,7 +29,7 @@ import logging
 import pathlib
 import re
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any
 from urllib.parse import quote
 
 from ngj.dates import format_posted_date
@@ -129,16 +129,16 @@ def _apply_link(url: str) -> str:
     return f"[Apply](<{encoded}>)"
 
 
-def _company(job: Dict[str, Any]) -> str:
+def _company(job: dict[str, Any]) -> str:
     return _cell(job.get("company", "—"))
 
 
-def _sort_key(job: Dict[str, Any]):
+def _sort_key(job: dict[str, Any]):
     # Most-recent first: ISO posted_at sorts chronologically; blanks sort last.
     return job.get("posted_at") or ""
 
 
-def _recent_open_jobs(jobs: List[Dict[str, Any]], category_id: str, limit: int) -> List[Dict[str, Any]]:
+def _recent_open_jobs(jobs: list[dict[str, Any]], category_id: str, limit: int) -> list[dict[str, Any]]:
     in_cat = [
         j
         for j in jobs
@@ -148,7 +148,7 @@ def _recent_open_jobs(jobs: List[Dict[str, Any]], category_id: str, limit: int) 
     return in_cat[:limit]
 
 
-def _posted(job: Dict[str, Any], now: Optional[datetime]) -> str:
+def _posted(job: dict[str, Any], now: datetime | None) -> str:
     """Relative "Posted" text computed at render time ("Today", "3 days ago", date)."""
     posted_at = job.get("posted_at")
     if not posted_at:
@@ -156,7 +156,7 @@ def _posted(job: Dict[str, Any], now: Optional[datetime]) -> str:
     return format_posted_date(posted_at, now)
 
 
-def _render_table(rows: List[Dict[str, Any]], now: Optional[datetime] = None) -> str:
+def _render_table(rows: list[dict[str, Any]], now: datetime | None = None) -> str:
     lines = [
         "| Company | Role | Location | Posted | Apply |",
         "|---------|------|----------|--------|-------|",
@@ -171,7 +171,7 @@ def _render_table(rows: List[Dict[str, Any]], now: Optional[datetime] = None) ->
     return "\n".join(lines)
 
 
-def render_category_listings(data: Dict[str, Any], now: Optional[datetime] = None) -> str:
+def render_category_listings(data: dict[str, Any], now: datetime | None = None) -> str:
     """Return the full auto-generated block (markers included).
 
     ``now`` (UTC) anchors the relative "Posted" column; defaults to the current time.
@@ -185,7 +185,7 @@ def render_category_listings(data: Dict[str, Any], now: Optional[datetime] = Non
     order = {cid: i for i, cid in enumerate(PRESENTATION_ORDER)}
     categories = sorted(categories, key=lambda c: order.get(c.get("id"), len(order)))
 
-    parts: List[str] = [
+    parts: list[str] = [
         START_MARKER,
         "",
         f"> **Live listings** — the {TOP_N} most recently posted roles per "
@@ -225,7 +225,7 @@ def render_category_listings(data: Dict[str, Any], now: Optional[datetime] = Non
     return "\n".join(parts)
 
 
-def sync_readme_jobs(repo_root: pathlib.Path | str = ".", jobs_path: Optional[pathlib.Path] = None) -> bool:
+def sync_readme_jobs(repo_root: pathlib.Path | str = ".", jobs_path: pathlib.Path | None = None) -> bool:
     """Rewrite the category-listings block in README.md. Returns True if written.
 
     ``jobs_path`` defaults to ``<output dir>/jobs.json`` (see

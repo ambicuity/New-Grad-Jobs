@@ -3,7 +3,7 @@
 
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -15,8 +15,7 @@ from ngj.dates import (  # noqa: E402
     normalize_date_string,
 )
 
-
-FIXED_NOW_UTC = datetime(2026, 3, 4, 12, 0, 0, tzinfo=timezone.utc)
+FIXED_NOW_UTC = datetime(2026, 3, 4, 12, 0, 0, tzinfo=UTC)
 
 
 def test_is_recent_job_rejects_none_and_nan():
@@ -27,8 +26,6 @@ def test_is_recent_job_rejects_none_and_nan():
 def test_is_recent_job_empty_string_returns_false():
     assert is_recent_job('', 7) is False
 
-
-from datetime import date
 
 
 def test_normalize_date_string_jobspy_human_readable_variants():
@@ -44,7 +41,7 @@ def test_normalize_date_string_jobspy_human_readable_variants():
 
 
 def test_normalize_date_string_fixed_reference_date_relative_phrases():
-    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=UTC)
     assert normalize_date_string('today', ref) == '2024-06-15'
     assert normalize_date_string('yesterday', ref) == '2024-06-14'
     assert normalize_date_string('2 days ago', ref) == '2024-06-13'
@@ -52,20 +49,20 @@ def test_normalize_date_string_fixed_reference_date_relative_phrases():
 
 def test_normalize_date_string_reference_date_keyword():
     """The `reference_date` keyword (issue #49) resolves relative phrases."""
-    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=UTC)
     assert normalize_date_string('today', reference_date=ref) == '2024-06-15'
     assert normalize_date_string('3 days ago', reference_date=ref) == '2024-06-12'
 
 
 def test_normalize_date_string_now_utc_alias_still_works():
     """`now_utc` remains a backward-compatible alias for existing callers."""
-    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=UTC)
     assert normalize_date_string('yesterday', now_utc=ref) == '2024-06-14'
 
 
 def test_normalize_date_string_reference_date_takes_precedence_over_now_utc():
-    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=timezone.utc)
-    other = datetime(2020, 1, 1, 12, 0, 0, tzinfo=timezone.utc)
+    ref = datetime(2024, 6, 15, 12, 0, 0, tzinfo=UTC)
+    other = datetime(2020, 1, 1, 12, 0, 0, tzinfo=UTC)
     assert normalize_date_string('today', reference_date=ref, now_utc=other) == '2024-06-15'
 
 
@@ -175,7 +172,7 @@ def test_is_recent_job_boundary_behavior_for_recent_window(monkeypatch):
 
 
 def test_format_posted_date_handles_posted_today_without_negative_day_drift(monkeypatch):
-    just_after_midnight_utc = datetime(2026, 3, 4, 0, 30, 0, tzinfo=timezone.utc)
+    just_after_midnight_utc = datetime(2026, 3, 4, 0, 30, 0, tzinfo=UTC)
     monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(just_after_midnight_utc))
 
     assert format_posted_date('Posted Today') == 'Today'
@@ -198,7 +195,7 @@ def test_get_iso_date_normalizes_timezone_aware_strings_to_utc(monkeypatch):
 def test_get_iso_date_handles_unix_millis_in_utc(monkeypatch):
     monkeypatch.setattr('ngj.dates.datetime', _fixed_datetime_class(FIXED_NOW_UTC))
 
-    recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=timezone.utc).timestamp() * 1000)
+    recent_ms = int(datetime(2024, 3, 9, 10, 0, 0, tzinfo=UTC).timestamp() * 1000)
     assert get_iso_date(recent_ms) == '2024-03-09T10:00:00Z'
 
 

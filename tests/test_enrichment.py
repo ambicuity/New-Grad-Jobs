@@ -13,7 +13,7 @@ Tests cover:
 
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from unittest.mock import patch
 
 import pytest
@@ -21,13 +21,13 @@ import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
-from ngj.enrich import detect_sponsorship_flags, is_job_closed, enrich_jobs  # noqa: E402
-from ngj.taxonomy import get_company_tier  # noqa: E402
 from ngj.compensation import extract_compensation  # noqa: E402
-from ngj.text import clean_description  # noqa: E402
-from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
-from ngj.sources.ashby import fetch_ashby_jobs  # noqa: E402
 from ngj.dates import format_posted_date, get_iso_date  # noqa: E402
+from ngj.enrich import detect_sponsorship_flags, enrich_jobs, is_job_closed  # noqa: E402
+from ngj.sources.ashby import fetch_ashby_jobs  # noqa: E402
+from ngj.sources.greenhouse import fetch_greenhouse_jobs  # noqa: E402
+from ngj.taxonomy import get_company_tier  # noqa: E402
+from ngj.text import clean_description  # noqa: E402
 
 FIXED_NOW = datetime(2026, 3, 11, 12, 0, 0)
 
@@ -317,35 +317,35 @@ class TestFormatPostedDate:
     """Human-readable date display formatting."""
 
     def test_recent_date_shows_today(self):
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         result = format_posted_date(now.isoformat())
         assert result == "Today"
 
     def test_yesterday_shows_1_day_ago(self):
-        yesterday = datetime.now(timezone.utc) - timedelta(days=1)
+        yesterday = datetime.now(UTC) - timedelta(days=1)
         result = format_posted_date(yesterday.isoformat())
         assert result == "1 day ago"
 
     def test_days_ago_format(self):
-        three_days_ago = datetime.now(timezone.utc) - timedelta(days=3)
+        three_days_ago = datetime.now(UTC) - timedelta(days=3)
         result = format_posted_date(three_days_ago.isoformat())
         assert result == "3 days ago"
 
     def test_old_date_shows_iso_format(self):
-        two_weeks_ago = datetime.now(timezone.utc) - timedelta(days=14)
+        two_weeks_ago = datetime.now(UTC) - timedelta(days=14)
         result = format_posted_date(two_weeks_ago.isoformat())
         # Should return YYYY-MM-DD formatted date
         assert result == two_weeks_ago.strftime("%Y-%m-%d")
 
     def test_lever_timestamp_int(self):
         """Lever API returns timestamps in milliseconds."""
-        ts_ms = int((datetime.now(timezone.utc) - timedelta(days=1)).timestamp() * 1000)
+        ts_ms = int((datetime.now(UTC) - timedelta(days=1)).timestamp() * 1000)
         result = format_posted_date(ts_ms)
         assert result == "1 day ago"
 
     def test_lever_timestamp_float(self):
         """Float millisecond timestamps should also work."""
-        ts_ms = float(int((datetime.now(timezone.utc) - timedelta(days=2)).timestamp() * 1000))
+        ts_ms = float(int((datetime.now(UTC) - timedelta(days=2)).timestamp() * 1000))
         result = format_posted_date(ts_ms)
         assert result == "2 days ago"
 

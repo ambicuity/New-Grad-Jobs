@@ -11,8 +11,8 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from ngj.settings import DEFAULT_WORKDAY_PAGE_LIMIT  # noqa: E402
-from ngj.util import coerce_positive_int as _coerce_positive_int  # noqa: E402
 from ngj.sources.workday import fetch_workday_jobs  # noqa: E402
+from ngj.util import coerce_positive_int as _coerce_positive_int  # noqa: E402
 
 
 @pytest.fixture(autouse=True)

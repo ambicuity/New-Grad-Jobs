@@ -11,8 +11,8 @@ These tests act as a persistent regression guard so the contract cannot drift
 again without a test failure surfacing the violation.
 """
 import ast
-import re
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).parent.parent
 SCRAPER = ROOT / "scripts" / "update_jobs.py"

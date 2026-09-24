@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from typing import Any, Dict, Optional
+from typing import Any
 
 from ngj.text import strip_html
 
@@ -66,7 +66,7 @@ _COMP_BLOCKLIST = re.compile(
 )
 
 
-def bounded_comp(lo: Any, hi: Any, source: str) -> Optional[Dict[str, Any]]:
+def bounded_comp(lo: Any, hi: Any, source: str) -> dict[str, Any] | None:
     """Return a USD comp dict when ``COMP_MIN <= lo <= hi <= COMP_MAX``, else None."""
     if not lo or not hi:
         return None
@@ -76,7 +76,7 @@ def bounded_comp(lo: Any, hi: Any, source: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def extract_compensation(text: Optional[str]) -> Optional[Dict[str, Any]]:
+def extract_compensation(text: str | None) -> dict[str, Any] | None:
     """Find a USD salary range in a free-text job description.
 
     Returns {'min', 'max', 'currency': 'USD', 'source': 'posting'} with min/max

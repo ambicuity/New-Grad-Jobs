@@ -7,19 +7,19 @@ Tests the market history snapshot generation and persistence function that:
 - Handles file I/O with error recovery
 """
 
-import sys
-import os
 import json
-import tempfile
+import os
 import shutil
-from datetime import datetime, timedelta, timezone
+import sys
+import tempfile
+from datetime import UTC, datetime, timedelta
 from unittest.mock import patch
 
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
-from ngj.outputs import market_history  # noqa: E402
 from ngj import taxonomy  # noqa: E402
+from ngj.outputs import market_history  # noqa: E402
 
 
 class TestSaveMarketHistoryStructure:
@@ -383,11 +383,11 @@ class TestHistoryRetention:
     def test_keeps_only_90_days(self):
         """Snapshots older than 90 days are removed."""
         # Create old history with snapshots from 100 days ago
-        old_date = (datetime.now(timezone.utc) - timedelta(days=100)).strftime('%Y-%m-%d')
-        recent_date = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
+        old_date = (datetime.now(UTC) - timedelta(days=100)).strftime('%Y-%m-%d')
+        recent_date = (datetime.now(UTC) - timedelta(days=30)).strftime('%Y-%m-%d')
 
         old_history = {
-            'meta': {'last_updated': datetime.now(timezone.utc).isoformat(), 'total_snapshots': 2, 'date_range': {'start': old_date, 'end': recent_date}},
+            'meta': {'last_updated': datetime.now(UTC).isoformat(), 'total_snapshots': 2, 'date_range': {'start': old_date, 'end': recent_date}},
             'snapshots': [
                 {
                     'date': old_date,
@@ -397,7 +397,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 10,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now(timezone.utc).isoformat()
+                    'timestamp': datetime.now(UTC).isoformat()
                 },
                 {
                     'date': recent_date,
@@ -407,7 +407,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 20,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now(timezone.utc).isoformat()
+                    'timestamp': datetime.now(UTC).isoformat()
                 }
             ]
         }
@@ -449,12 +449,12 @@ class TestHistoryRetention:
     def test_snapshots_sorted_by_date(self):
         """Snapshots are sorted chronologically (oldest to newest)."""
         # Create history with unsorted dates
-        date1 = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
-        date2 = (datetime.now(timezone.utc) - timedelta(days=60)).strftime('%Y-%m-%d')
-        date3 = (datetime.now(timezone.utc) - timedelta(days=10)).strftime('%Y-%m-%d')
+        date1 = (datetime.now(UTC) - timedelta(days=30)).strftime('%Y-%m-%d')
+        date2 = (datetime.now(UTC) - timedelta(days=60)).strftime('%Y-%m-%d')
+        date3 = (datetime.now(UTC) - timedelta(days=10)).strftime('%Y-%m-%d')
 
         old_history = {
-            'meta': {'last_updated': datetime.now(timezone.utc).isoformat(), 'total_snapshots': 3, 'date_range': {'start': date2, 'end': date1}},
+            'meta': {'last_updated': datetime.now(UTC).isoformat(), 'total_snapshots': 3, 'date_range': {'start': date2, 'end': date1}},
             'snapshots': [
                 {
                     'date': date1,
@@ -464,7 +464,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 10,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now(timezone.utc).isoformat()
+                    'timestamp': datetime.now(UTC).isoformat()
                 },
                 {
                     'date': date2,
@@ -474,7 +474,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 15,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now(timezone.utc).isoformat()
+                    'timestamp': datetime.now(UTC).isoformat()
                 },
                 {
                     'date': date3,
@@ -484,7 +484,7 @@ class TestHistoryRetention:
                     'top_companies': [],
                     'unique_companies': 20,
                     'avg_jobs_per_company': 10,
-                    'timestamp': datetime.now(timezone.utc).isoformat()
+                    'timestamp': datetime.now(UTC).isoformat()
                 }
             ]
         }
@@ -637,7 +637,7 @@ class TestFileHandling:
 class TestSaveMarketHistoryDeterminism:
     """Deterministic tests for retention boundaries and snapshot contracts."""
 
-    FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0, tzinfo=timezone.utc)
+    FIXED_NOW = datetime(2026, 4, 3, 12, 0, 0, tzinfo=UTC)
 
     def test_retention_boundary_drops_day_91_keeps_day_90(self, tmp_path):
         history_path = str(tmp_path / "market-history.json")
@@ -683,7 +683,7 @@ class TestSaveMarketHistoryDeterminism:
             now=self.FIXED_NOW,
         )
 
-        with open(history_path, "r", encoding="utf-8") as f:
+        with open(history_path, encoding="utf-8") as f:
             output = json.load(f)
         dates = [snap["date"] for snap in output["snapshots"]]
         assert day_91 not in dates
@@ -701,7 +701,7 @@ class TestSaveMarketHistoryDeterminism:
 
         market_history.save_market_history(jobs, history_path, now=self.FIXED_NOW)
 
-        with open(history_path, "r", encoding="utf-8") as f:
+        with open(history_path, encoding="utf-8") as f:
             output = json.load(f)
         snapshot = output["snapshots"][0]
         assert set(snapshot.keys()) == {

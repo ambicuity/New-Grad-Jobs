@@ -5,18 +5,19 @@ from __future__ import annotations
 import json
 import logging
 import time
-from datetime import datetime, timezone
+from collections.abc import Mapping, Sequence
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Dict, Mapping, Optional, Sequence
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
 
 def compute_display_metrics(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     source_counts: Mapping[str, int],
     config: Mapping[str, Any],
-) -> Dict[str, int]:
+) -> dict[str, int]:
     """Canonical count metrics used by the site and README surfaces."""
     apis = config.get('apis', {})
     gh_companies = len(apis.get('greenhouse', {}).get('companies', []))
@@ -50,12 +51,12 @@ def compute_display_metrics(
 
 
 def build_health(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     source_counts: Mapping[str, int],
     start_time: float,
     config: Mapping[str, Any],
     url_blocked_count: int = 0,
-) -> Dict[str, Any]:
+) -> dict[str, Any]:
     """Build the health payload.
 
     Status values:
@@ -75,7 +76,7 @@ def build_health(
 
     return {
         'status': status,
-        'last_run': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+        'last_run': datetime.now(UTC).isoformat().replace('+00:00', 'Z'),
         'total_jobs': total_jobs,
         'source_counts': dict(source_counts),
         'zero_sources': zero_sources,
@@ -86,13 +87,13 @@ def build_health(
 
 
 def generate_health_json(
-    jobs: Sequence[Dict[str, Any]],
+    jobs: Sequence[dict[str, Any]],
     source_counts: Mapping[str, int],
     start_time: float,
     config: Mapping[str, Any],
     output_dir: Path,
     url_blocked_count: int = 0,
-) -> Optional[Dict[str, Any]]:
+) -> dict[str, Any] | None:
     """Write ``output_dir/health.json``; returns the payload, or None if the write failed.
 
     ``url_blocked_count`` is the number of jobs dropped by the publish-time URL

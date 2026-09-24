@@ -12,10 +12,9 @@ Generated data is no longer committed, so every test here uses fixtures.
 
 import json
 import pathlib
+from datetime import UTC, datetime, timedelta, timezone
 
 import pytest
-
-from datetime import datetime, timezone, timedelta
 
 from sync_readme_counts import (
     COUNT_TOKEN_RE,
@@ -194,7 +193,7 @@ def test_read_generated_at_parses_iso_with_microseconds_and_offset(tmp_path) -> 
         "jobs": [],
     }))
     ts = read_generated_at_from_jobs_json(jobs_path)
-    assert ts == datetime(2026, 5, 26, 19, 52, 33, 997303, tzinfo=timezone.utc)
+    assert ts == datetime(2026, 5, 26, 19, 52, 33, 997303, tzinfo=UTC)
 
 
 def test_read_generated_at_handles_z_suffix(tmp_path) -> None:
@@ -204,7 +203,7 @@ def test_read_generated_at_handles_z_suffix(tmp_path) -> None:
         "jobs": [],
     }))
     ts = read_generated_at_from_jobs_json(jobs_path)
-    assert ts == datetime(2026, 5, 26, 19, 52, 33, tzinfo=timezone.utc)
+    assert ts == datetime(2026, 5, 26, 19, 52, 33, tzinfo=UTC)
 
 
 def test_read_generated_at_returns_none_on_missing_or_invalid(tmp_path) -> None:
@@ -237,7 +236,7 @@ def test_apply_last_updated_rewrites_existing_line() -> None:
         "\n"
         "*Last updated: 2026-03-12 05:46:03 UTC*\n"
     )
-    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=timezone.utc)
+    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=UTC)
     out = apply_last_updated_to_readme(readme, ts)
     assert "2026-03-12 05:46:03" not in out
     assert "*Last updated: 2026-05-26 19:52:33 UTC*" in out
@@ -250,7 +249,7 @@ def test_apply_last_updated_is_noop_when_ts_none() -> None:
 
 def test_apply_last_updated_is_noop_when_line_absent() -> None:
     readme = "Some README without any last-updated line.\n"
-    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=timezone.utc)
+    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=UTC)
     assert apply_last_updated_to_readme(readme, ts) == readme
 
 
@@ -262,7 +261,7 @@ def test_apply_last_updated_only_rewrites_first_match() -> None:
         "Middle prose.\n"
         "*Last updated: 2026-01-01 00:00:00 UTC*\n"
     )
-    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=timezone.utc)
+    ts = datetime(2026, 5, 26, 19, 52, 33, tzinfo=UTC)
     out = apply_last_updated_to_readme(readme, ts)
     assert out.count("*Last updated: 2026-05-26 19:52:33 UTC*") == 1
     # Second line stays untouched.

@@ -9,11 +9,11 @@ Covers:
   - XML-unsafe characters are escaped
 """
 
-import sys
 import os
+import sys
 import tempfile
+from datetime import UTC, datetime, timedelta
 from xml.etree import ElementTree as ET
-from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
@@ -29,7 +29,7 @@ def _make_jobs(count=5):
             'company': f'Company {i}',
             'url': f'https://example.com/job/{i}',
             'location': 'San Francisco, CA',
-            'posted_at': (datetime.now(timezone.utc) - timedelta(days=i)).isoformat(),
+            'posted_at': (datetime.now(UTC) - timedelta(days=i)).isoformat(),
         })
     return jobs
 
@@ -104,7 +104,7 @@ class TestRssFeedGeneration:
                 'company': 'AT&T Corp',
                 'url': 'https://example.com/job/1',
                 'location': '"Quoted" Location',
-                'posted_at': datetime.now(timezone.utc).isoformat(),
+                'posted_at': datetime.now(UTC).isoformat(),
                 'posted_display': 'Today',
             }]
             # Should not raise XML parse error
@@ -125,7 +125,7 @@ class TestRssFeedGeneration:
                 'url': None,
                 'location': None,
                 'category': None,
-                'posted_at': datetime.now(timezone.utc).isoformat(),
+                'posted_at': datetime.now(UTC).isoformat(),
                 'posted_display': 'Today',
             }]
             # Must not raise; must produce valid XML with one item present.

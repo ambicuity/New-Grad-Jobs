@@ -3,7 +3,7 @@
 
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import pytest
 
@@ -249,7 +249,7 @@ def test_bare_urls_in_cells_are_not_autolinked():
 
 def test_posted_column_is_rendered_from_posted_at_at_sync_time():
     """No baked posted_display: ages are computed from posted_at when rendering."""
-    now = datetime(2026, 7, 12, 12, 0, tzinfo=timezone.utc)
+    now = datetime(2026, 7, 12, 12, 0, tzinfo=UTC)
     jobs = [
         _job("other", "Fresh", "2026-07-12T08:00:00Z"),
         _job("other", "Recent", "2026-07-09T08:00:00Z"),

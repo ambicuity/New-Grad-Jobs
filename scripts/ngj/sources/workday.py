@@ -6,11 +6,13 @@ import json
 import logging
 import re
 import time
+from collections.abc import Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from typing import Any
 from urllib.parse import urlparse
 
 import requests
+
 from ngj import http as ngj_http
 from ngj.models import KIND_CONFIG, KIND_FORBIDDEN, KIND_HTTP, KIND_UNEXPECTED, SourceResult
 from ngj.settings import (
@@ -113,8 +115,8 @@ def _extract_error_body(response: requests.Response) -> str:
 def _post_page(
     company_name: str,
     api_url: str,
-    payload: Dict[str, Any],
-    headers: Dict[str, str],
+    payload: dict[str, Any],
+    headers: dict[str, str],
     max_retries: int,
     timeout: int,
 ) -> requests.Response:
@@ -135,7 +137,7 @@ def _post_page(
     return response
 
 
-def _to_job(company_name: str, host: str, item: Dict[str, Any]) -> Dict[str, Any]:
+def _to_job(company_name: str, host: str, item: dict[str, Any]) -> dict[str, Any]:
     return {
         'company': company_name,
         'title': item.get('title', ''),
@@ -148,7 +150,7 @@ def _to_job(company_name: str, host: str, item: Dict[str, Any]) -> Dict[str, Any
 
 
 def _fetch_workday_company(
-    company: Dict[str, str],
+    company: dict[str, str],
     page_limit: int,
     max_total_limit: int,
     max_retries: int,
@@ -184,7 +186,7 @@ def _fetch_workday_company(
         if csrf_token:
             headers['X-Calypso-CSRF-Token'] = csrf_token
 
-        jobs: List[Dict[str, Any]] = []
+        jobs: list[dict[str, Any]] = []
         raw_count = 0
         offset = 0
 
@@ -254,7 +256,7 @@ def _fetch_workday_company(
         return SourceResult.failure(company_name, SOURCE, KIND_UNEXPECTED, f"{type(exc).__name__}: {exc}")
 
 
-def _workday_host_key(company: Dict[str, str]) -> str:
+def _workday_host_key(company: dict[str, str]) -> str:
     """Group key for companies whose requests must not interleave (same host)."""
     try:
         return urlparse(company.get('workday_url') or '').netloc.lower()
@@ -263,12 +265,12 @@ def _workday_host_key(company: Dict[str, str]) -> str:
 
 
 def fetch_workday_jobs(
-    companies: Sequence[Dict[str, str]],
-    page_limit: Optional[int] = None,
-    max_total_limit: Optional[int] = None,
+    companies: Sequence[dict[str, str]],
+    page_limit: int | None = None,
+    max_total_limit: int | None = None,
     max_retries: int = 2,
-    timeout: Optional[int] = None,
-    max_workers: Optional[int] = None,
+    timeout: int | None = None,
+    max_workers: int | None = None,
 ) -> SourceResult:
     """Fetch Workday companies in parallel.
 
@@ -286,17 +288,17 @@ def fetch_workday_jobs(
     timeout = coerce_positive_int(timeout, DEFAULT_WORKDAY_TIMEOUT, "timeout")
 
     # host -> [(config index, company)], preserving config order within a host.
-    host_groups: Dict[str, List[Tuple[int, Dict[str, str]]]] = {}
+    host_groups: dict[str, list[tuple[int, dict[str, str]]]] = {}
     for index, company in enumerate(companies):
         host_groups.setdefault(_workday_host_key(company), []).append((index, company))
 
-    def _fetch_group(group: List[Tuple[int, Dict[str, str]]]) -> List[Tuple[int, SourceResult]]:
+    def _fetch_group(group: list[tuple[int, dict[str, str]]]) -> list[tuple[int, SourceResult]]:
         return [
             (index, _fetch_workday_company(company, page_limit, max_total_limit, max_retries, timeout))
             for index, company in group
         ]
 
-    results: Dict[int, SourceResult] = {}
+    results: dict[int, SourceResult] = {}
     workers = max(1, min(max_workers, len(host_groups)))
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = [executor.submit(_fetch_group, group) for group in host_groups.values()]

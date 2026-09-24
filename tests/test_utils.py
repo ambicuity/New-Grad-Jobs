@@ -4,21 +4,23 @@ Unit tests for utility helpers (ngj.dedup.get_job_key, ngj.sources.google, ngj.u
 Tests cover get_job_key and its behavior in generating consistent keys for job deduplication.
 
 '''
-import pytest
-import sys
-import os
-import math
 import json
-import requests
+import math
+import os
+import sys
 import urllib.parse
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
+
+import pytest
+import requests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from ngj.dedup import get_job_key  # noqa: E402
-from ngj.sources.google import fetch_google_jobs  # noqa: E402
 from ngj.settings import DEFAULT_GOOGLE_MAX_PAGES  # noqa: E402
+from ngj.sources.google import fetch_google_jobs  # noqa: E402
 from ngj.util import coerce_positive_int as _coerce_positive_int  # noqa: E402
+
 
 def test_get_job_key_handles_nan()->None:
     """Test that get_job_key handles NaN values correctly."""

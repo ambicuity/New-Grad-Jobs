@@ -29,8 +29,8 @@ import json
 import pathlib
 import re
 import sys
-from datetime import datetime, timezone
-from typing import Dict, Mapping, Optional
+from collections.abc import Mapping
+from datetime import UTC, datetime
 
 from ngj.settings import resolve_output_dir
 
@@ -48,12 +48,12 @@ LAST_UPDATED_RE = re.compile(
 )
 
 
-def read_counts_from_jobs_json(jobs_path: pathlib.Path) -> Dict[str, int]:
+def read_counts_from_jobs_json(jobs_path: pathlib.Path) -> dict[str, int]:
     """Return {"total": N, "<category_id>": N, ...} from a jobs.json file."""
-    with open(jobs_path, "r", encoding="utf-8") as f:
+    with open(jobs_path, encoding="utf-8") as f:
         data = json.load(f)
     meta = data.get("meta", {}) or {}
-    counts: Dict[str, int] = {"total": int(meta.get("total_jobs", 0))}
+    counts: dict[str, int] = {"total": int(meta.get("total_jobs", 0))}
     for cat in meta.get("categories", []) or []:
         cid = cat.get("id")
         if cid:
@@ -61,9 +61,9 @@ def read_counts_from_jobs_json(jobs_path: pathlib.Path) -> Dict[str, int]:
     return counts
 
 
-def read_generated_at_from_jobs_json(jobs_path: pathlib.Path) -> Optional[datetime]:
+def read_generated_at_from_jobs_json(jobs_path: pathlib.Path) -> datetime | None:
     """Return the parsed `meta.generated_at` as a UTC datetime, or None if absent/invalid."""
-    with open(jobs_path, "r", encoding="utf-8") as f:
+    with open(jobs_path, encoding="utf-8") as f:
         data = json.load(f)
     raw = (data.get("meta") or {}).get("generated_at")
     if not raw or not isinstance(raw, str):
@@ -75,19 +75,19 @@ def read_generated_at_from_jobs_json(jobs_path: pathlib.Path) -> Optional[dateti
     except ValueError:
         return None
     if ts.tzinfo is None:
-        ts = ts.replace(tzinfo=timezone.utc)
-    return ts.astimezone(timezone.utc)
+        ts = ts.replace(tzinfo=UTC)
+    return ts.astimezone(UTC)
 
 
 def format_last_updated(ts: datetime) -> str:
     """Format a UTC datetime as the canonical README "Last updated" stamp."""
     if ts.tzinfo is None:
-        ts = ts.replace(tzinfo=timezone.utc)
-    ts = ts.astimezone(timezone.utc)
+        ts = ts.replace(tzinfo=UTC)
+    ts = ts.astimezone(UTC)
     return f"*Last updated: {ts.strftime('%Y-%m-%d %H:%M:%S')} UTC*"
 
 
-def apply_last_updated_to_readme(readme_text: str, ts: Optional[datetime]) -> str:
+def apply_last_updated_to_readme(readme_text: str, ts: datetime | None) -> str:
     """Rewrite the trailing "*Last updated: ... UTC*" line in README.
 
     No-op if:
@@ -131,7 +131,7 @@ def apply_counts_to_readme(readme_text: str, counts: Mapping[str, int]) -> str:
     return COUNT_TOKEN_RE.sub(repl, readme_text)
 
 
-def sync_readme_counts(repo_root: pathlib.Path, jobs_path: Optional[pathlib.Path] = None) -> bool:
+def sync_readme_counts(repo_root: pathlib.Path, jobs_path: pathlib.Path | None = None) -> bool:
     """Update README.md in place from jobs.json. Returns True if changed.
 
     ``jobs_path`` defaults to ``<output dir>/jobs.json`` (see

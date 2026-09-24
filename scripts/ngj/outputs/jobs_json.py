@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from collections.abc import Sequence
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Tuple
+from typing import Any
 
 from contracts import compute_job_id
 from ngj.dates import extract_sort_date, get_iso_date
@@ -19,7 +20,7 @@ logger = logging.getLogger(__name__)
 FULL_DESCRIPTION_CHARS = 50000
 
 
-def sort_jobs_newest_first(jobs: Sequence[Dict[str, Any]]) -> List[Tuple[str, Dict[str, Any]]]:
+def sort_jobs_newest_first(jobs: Sequence[dict[str, Any]]) -> list[tuple[str, dict[str, Any]]]:
     """Return (job_id, job) pairs newest first, ties broken by job_id (ascending).
 
     Deterministic for identical input; the input sequence is not modified.
@@ -29,7 +30,7 @@ def sort_jobs_newest_first(jobs: Sequence[Dict[str, Any]]) -> List[Tuple[str, Di
     return sorted(with_ids, key=lambda pair: extract_sort_date(pair[1]), reverse=True)
 
 
-def _category_counts(jobs: Sequence[Dict[str, Any]]) -> Dict[str, int]:
+def _category_counts(jobs: Sequence[dict[str, Any]]) -> dict[str, int]:
     counts = {category_id: 0 for category_id in CATEGORY_PATTERNS}
     for job in jobs:
         cat_id = job.get('category', {}).get('id', 'other')
@@ -37,7 +38,7 @@ def _category_counts(jobs: Sequence[Dict[str, Any]]) -> Dict[str, int]:
     return counts
 
 
-def _public_job(job_id: str, job: Dict[str, Any]) -> Dict[str, Any]:
+def _public_job(job_id: str, job: dict[str, Any]) -> dict[str, Any]:
     return {
         'job_id': job_id,
         'id': job.get('id', ''),
@@ -56,7 +57,7 @@ def _public_job(job_id: str, job: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def generate_jobs_json(jobs: Sequence[Dict[str, Any]], config: Dict[str, Any] | None = None) -> Dict[str, Any]:
+def generate_jobs_json(jobs: Sequence[dict[str, Any]], config: dict[str, Any] | None = None) -> dict[str, Any]:
     """Build the jobs.json payload. ``jobs`` is left untouched (no in-place sort).
 
     ``config`` is accepted for call-site compatibility and currently unused.
@@ -64,7 +65,7 @@ def generate_jobs_json(jobs: Sequence[Dict[str, Any]], config: Dict[str, Any] | 
     category_counts = _category_counts(jobs)
     return {
         'meta': {
-            'generated_at': datetime.now(timezone.utc).isoformat(),
+            'generated_at': datetime.now(UTC).isoformat(),
             'total_jobs': len(jobs),
             'categories': [
                 {
@@ -81,13 +82,13 @@ def generate_jobs_json(jobs: Sequence[Dict[str, Any]], config: Dict[str, Any] | 
     }
 
 
-def build_full_descriptions(jobs: Sequence[Dict[str, Any]]) -> Dict[str, str]:
+def build_full_descriptions(jobs: Sequence[dict[str, Any]]) -> dict[str, str]:
     """Map job_id → full cleaned "About the role" text for the description shards.
 
     Uses the raw ATS HTML when present, else the published snippet. Kept out of
     jobs.json so the site's first load stays small (see scripts/publish.py).
     """
-    texts: Dict[str, str] = {}
+    texts: dict[str, str] = {}
     for job in jobs:
         desc_html = job.get('description_html') or ''
         text = clean_description(desc_html, max_chars=FULL_DESCRIPTION_CHARS) if desc_html else (
@@ -97,7 +98,7 @@ def build_full_descriptions(jobs: Sequence[Dict[str, Any]]) -> Dict[str, str]:
     return texts
 
 
-def write_jobs_artifacts(output_dir: Path, jobs_json: Dict[str, Any], jobs: Sequence[Dict[str, Any]]) -> None:
+def write_jobs_artifacts(output_dir: Path, jobs_json: dict[str, Any], jobs: Sequence[dict[str, Any]]) -> None:
     """Write jobs.json, jobs-index.json and descriptions/<shard>.json into ``output_dir``."""
     write_site_artifacts(Path(output_dir), jobs_json, build_full_descriptions(jobs))
     logger.info(

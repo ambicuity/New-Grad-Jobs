@@ -134,7 +134,7 @@ def test_filter_blocks_job_when_any_url_field_is_unsafe():
 
 
 def test_filter_samples_are_capped():
-    jobs = [{'url': 'http://127.0.0.1/%d' % i} for i in range(25)]
+    jobs = [{'url': f'http://127.0.0.1/{i}'} for i in range(25)]
     _, blocked, samples = filter_safe_jobs(jobs)
     assert blocked == 25
     assert len(samples) == 10

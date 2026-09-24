@@ -8,8 +8,9 @@ the jobs rather than disappearing into log lines. Health reporting builds on
 
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import Any, Dict, Iterable, Optional, Tuple
+from typing import Any
 
 # SourceError.kind values. Kept as plain strings so they serialize directly
 # into health/report JSON.
@@ -36,7 +37,7 @@ class SourceError:
     company: str
     source: str
     kind: str
-    status: Optional[int]
+    status: int | None
     message: str
 
 
@@ -48,8 +49,8 @@ class SourceResult:
     any adapter-side dropping (e.g. JobSpy rows without an http URL).
     """
 
-    jobs: Tuple[Dict[str, Any], ...] = ()
-    errors: Tuple[SourceError, ...] = ()
+    jobs: tuple[dict[str, Any], ...] = ()
+    errors: tuple[SourceError, ...] = ()
     raw_count: int = 0
 
     @property
@@ -63,12 +64,12 @@ class SourceResult:
         source: str,
         kind: str,
         message: str,
-        status: Optional[int] = None,
-    ) -> "SourceResult":
+        status: int | None = None,
+    ) -> SourceResult:
         return cls(errors=(SourceError(company, source, kind, status, message),))
 
     @classmethod
-    def merge(cls, results: Iterable["SourceResult"]) -> "SourceResult":
+    def merge(cls, results: Iterable[SourceResult]) -> SourceResult:
         """Concatenate results in iteration order."""
         jobs: list = []
         errors: list = []
