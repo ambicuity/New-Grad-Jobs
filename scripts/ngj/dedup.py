@@ -26,6 +26,7 @@ location with no place-name words left is compatible with any other.
 from __future__ import annotations
 
 import logging
+import math
 import re
 import unicodedata
 from collections import defaultdict
@@ -83,7 +84,7 @@ class DedupStats:
 
 
 def _text(value: Any) -> str:
-    if value is None or (isinstance(value, float) and value != value):
+    if value is None or (isinstance(value, float) and math.isnan(value)):
         return ""
     folded = unicodedata.normalize("NFKD", str(value)).encode("ascii", "ignore").decode("ascii")
     return _NON_ALNUM.sub(" ", folded.lower().replace("&", " and ")).strip()

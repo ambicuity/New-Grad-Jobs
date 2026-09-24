@@ -66,3 +66,13 @@ describe('extractRequirements memoisation', () => {
     expect(again).not.toBe(first);
   });
 });
+
+describe('extractRequirements tag stripping', () => {
+  it('leaves no angle brackets when tags are nested to survive a single pass', () => {
+    const desc = '<ul>' + ['Python <scr<b>ipt>x</scr<b>ipt>', 'Go and Rust experience', 'Distributed systems basics']
+      .map((t) => `<li>${t}</li>`).join('') + '</ul>';
+    const items = extractRequirements(desc);
+    expect(items.length).toBeGreaterThan(0);
+    for (const item of items) expect(item).not.toMatch(/[<>]/);
+  });
+});

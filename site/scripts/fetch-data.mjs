@@ -5,7 +5,7 @@
 // These files are written by the scraper at CI time and are gitignored.
 
 import { mkdir, writeFile } from 'node:fs/promises';
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ORIGIN = (process.env.NGJ_DATA_ORIGIN || 'https://jobs.riteshrana.engineer').replace(/\/+$/, '');
@@ -18,7 +18,10 @@ async function download(rel) {
   const res = await fetch(`${ORIGIN}/${rel}`, { headers: { 'Cache-Control': 'no-cache' } });
   if (!res.ok) throw new Error(`${rel}: HTTP ${res.status}`);
   const body = Buffer.from(await res.arrayBuffer());
-  const dest = join(PUBLIC_DIR, rel);
+  // Only the fixed FILES allow-list is ever written, and never outside public/.
+  if (!FILES.includes(rel)) throw new Error(`${rel}: not an expected data file`);
+  const dest = resolve(join(PUBLIC_DIR, rel));
+  if (!dest.startsWith(resolve(PUBLIC_DIR) + sep)) throw new Error(`${rel}: escapes public/`);
   await mkdir(dirname(dest), { recursive: true });
   await writeFile(dest, body);
   return { rel, bytes: body.length };

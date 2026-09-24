@@ -11,7 +11,18 @@ const SECTION_END = /(?:ABOUT|WHAT YOU.{0,10}DO|RESPONSIBILITIES|NICE TO HAVE|PR
 const ITEM_SPLIT = /(?:^|\s)[•\-*]\s*|(?:^|\s)\d+\.\s*|(?:^|\s)[a-z]\)\s*/;
 const STOP_WORD = /^(?:and|or|the|a|an|is|are|was|were|be|been|being|have|has|had|do|does|did|will|would|could|should|may|might|can|shall)$/i;
 
-const stripTags = (s) => s.replace(/<[^>]*>/g, ' ');
+// Strip tags until nothing changes (a single pass leaves e.g. "<scr<b>ipt>" as
+// "<script>"), then drop any stray angle brackets. Output is rendered as React
+// text (escaped), so this is defence in depth, not the XSS boundary.
+const stripTags = (s) => {
+  let prev;
+  let out = s;
+  do {
+    prev = out;
+    out = out.replace(/<[^>]*>/g, ' ');
+  } while (out !== prev);
+  return out.replace(/[<>]/g, ' ');
+};
 const inRange = (s) => s.length > MIN_LEN && s.length < MAX_LEN;
 
 function fromHeaderSection(text) {
@@ -28,7 +39,7 @@ function fromListItems(html) {
   const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi);
   if (!liMatches || liMatches.length < 3) return [];
   const items = liMatches
-    .map((li) => li.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim())
+    .map((li) => stripTags(li).replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim())
     .filter(inRange);
   return items.length >= 3 ? items.slice(0, MAX_ITEMS) : [];
 }

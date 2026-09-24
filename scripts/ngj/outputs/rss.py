@@ -29,7 +29,7 @@ _RFC822 = '%a, %d %b %Y %H:%M:%S +0000'
 
 # Characters XML 1.0 forbids even when escaped (C0 controls except tab/LF/CR,
 # surrogates, U+FFFE/U+FFFF). Scraped titles occasionally carry them.
-_XML_ILLEGAL = re.compile('[\x00-\x08\x0b\x0c\x0e-\x1f\ud800-\udfff￾￿]')
+_XML_ILLEGAL = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\ud800-\udfff\ufffe\uffff]')
 
 
 def strip_xml_illegal(text: str) -> str:

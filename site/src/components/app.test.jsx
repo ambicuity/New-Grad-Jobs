@@ -63,7 +63,7 @@ function memoryStorage() {
   };
 }
 
-let shardResponse;
+let shardResponse = () => Promise.resolve({ ok: true, json: () => Promise.resolve(shard) });
 beforeEach(() => {
   window.history.replaceState(null, '', '/');
   resetShardCacheForTests();

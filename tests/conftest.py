@@ -255,9 +255,9 @@ def _block_network(request, monkeypatch):
     real_connect_ex = socket.socket.connect_ex
     af_unix = getattr(socket, "AF_UNIX", None)
 
-    def _deny(target: str) -> None:
+    def _deny(target: str) -> NetworkAccessBlocked:
         attempts.append(target)
-        raise NetworkAccessBlocked(
+        return NetworkAccessBlocked(
             f"Real network access to {target!r} is blocked in tests. "
             "Mock the HTTP call (e.g. patch requests.get/Session.post) "
             "or mark the test with @pytest.mark.network."
@@ -269,17 +269,17 @@ def _block_network(request, monkeypatch):
     def guarded_getaddrinfo(host, *args, **kwargs):
         if host is None or str(host) in _LOCAL_HOSTS:
             return real_getaddrinfo(host, *args, **kwargs)
-        _deny(str(host))
+        raise _deny(str(host))
 
     def guarded_connect(self, address):
         if _is_allowed(self, address):
             return real_connect(self, address)
-        _deny(_host_of(address))
+        raise _deny(_host_of(address))
 
     def guarded_connect_ex(self, address):
         if _is_allowed(self, address):
             return real_connect_ex(self, address)
-        _deny(_host_of(address))
+        raise _deny(_host_of(address))
 
     monkeypatch.setattr(socket, "getaddrinfo", guarded_getaddrinfo)
     monkeypatch.setattr(socket.socket, "connect", guarded_connect)

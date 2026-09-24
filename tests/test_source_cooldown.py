@@ -476,7 +476,6 @@ class TestGreenhouseCooldownIntegration:
     def test_403_records_cooldown(self, monkeypatch, caplog):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: self._403_response())
 
         result = fetch_greenhouse_jobs("Acme", GH_URL)
@@ -488,7 +487,6 @@ class TestGreenhouseCooldownIntegration:
     def test_403_logs_warning(self, monkeypatch, caplog):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: self._403_response())
 
         fetch_greenhouse_jobs("Acme", GH_URL)
@@ -500,7 +498,6 @@ class TestGreenhouseCooldownIntegration:
         """403 responses must not trigger the max_retries retry loop."""
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         call_count = 0
 
         def counting_get(url, **kw):
@@ -541,7 +538,6 @@ class TestGreenhouseCooldownIntegration:
         threshold = 3
         tracker = _fresh_tracker(threshold=threshold)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", threshold)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: self._403_response())
 
         companies = [f"Company{i}" for i in range(threshold + 2)]
@@ -556,7 +552,6 @@ class TestGreenhouseCooldownIntegration:
         """A 500 error must NOT increment the 403 counter."""
         tracker = _fresh_tracker(threshold=3)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 3)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
@@ -616,7 +611,6 @@ class TestLeverCooldownIntegration:
     def test_403_records_count(self, monkeypatch):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: self._403_response())
 
         fetch_lever_jobs("Acme", LEVER_URL)
@@ -643,7 +637,6 @@ class TestLeverCooldownIntegration:
     def test_403_does_not_retry(self, monkeypatch):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         call_count = 0
 
         def counting_get(url, **kw):
@@ -658,7 +651,6 @@ class TestLeverCooldownIntegration:
     def test_non_403_does_not_record(self, monkeypatch):
         tracker = _fresh_tracker(threshold=3)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 3)
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
@@ -713,7 +705,6 @@ class TestWorkdayCooldownIntegration:
         """A single 403 from Workday must not trigger a retry — call_count must be 1."""
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "token")
 
         call_count = 0
@@ -732,7 +723,6 @@ class TestWorkdayCooldownIntegration:
     def test_403_records_count(self, monkeypatch):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "token")
         monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(403))
 
@@ -744,7 +734,6 @@ class TestWorkdayCooldownIntegration:
     def test_403_logs_warning(self, monkeypatch, caplog):
         tracker = _fresh_tracker(threshold=5)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 5)
         monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "token")
         monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(403))
 
@@ -809,7 +798,6 @@ class TestWorkdayCooldownIntegration:
     def test_non_403_error_does_not_record(self, monkeypatch):
         tracker = _fresh_tracker(threshold=3)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", 3)
         monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "tok")
         monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(500))
 
@@ -833,7 +821,6 @@ class TestCooldownArchitecture:
     def test_adapters_share_the_module_singleton(self):
         """ngj.http (which every adapter goes through) uses the process-wide tracker."""
         assert ngj_http.SOURCE_COOLDOWN is SOURCE_COOLDOWN
-        assert ngj_http.SOURCE_COOLDOWN_THRESHOLD == SOURCE_COOLDOWN_THRESHOLD
         assert isinstance(SOURCE_COOLDOWN_THRESHOLD, int) and SOURCE_COOLDOWN_THRESHOLD >= 1
 
     def test_cooldown_tracker_does_not_inherit_from_domain_limiter(self):

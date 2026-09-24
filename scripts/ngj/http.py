@@ -39,7 +39,7 @@ from ngj.models import (
     SourceError,
     SourceResult,
 )
-from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD  # noqa: F401 (re-exported)
+from source_cooldown import SOURCE_COOLDOWN
 
 logger = logging.getLogger(__name__)
 
