@@ -3,8 +3,9 @@
 - a pooled ``requests.Session`` created lazily on first use (never at import)
 - :class:`DomainConcurrencyLimiter` capping parallel requests per domain
 - 403 cooldown glue around ``source_cooldown.SOURCE_COOLDOWN``
-- :func:`fetch_json_with_retry`, the one retry loop used by the JSON board
-  APIs (Greenhouse, Lever, Ashby)
+- :func:`create_session` with the single retry policy (:class:`CappedRetry`)
+- :func:`fetch_json_with_retry`, the shared fetch/parse/error mapping used by
+  the JSON board APIs (Greenhouse, Lever, Ashby)
 - :func:`fan_out`, the one thread-pool fan-out used by per-company sources
 
 Adapters call ``limited_get`` / ``limited_post`` through this module
@@ -16,7 +17,6 @@ from __future__ import annotations
 
 import logging
 import threading
-import time
 from collections.abc import Callable, Iterator, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
@@ -24,6 +24,7 @@ from typing import Any, TypeVar
 from urllib.parse import urlparse
 
 import requests
+import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -38,7 +39,7 @@ from ngj.models import (
     SourceError,
     SourceResult,
 )
-from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD
+from source_cooldown import SOURCE_COOLDOWN, SOURCE_COOLDOWN_THRESHOLD  # noqa: F401 (re-exported)
 
 logger = logging.getLogger(__name__)
 
@@ -46,38 +47,60 @@ T = TypeVar("T")
 
 USER_AGENT = "NewGradJobs-Aggregator/3.0"
 
-# HTTP status codes that should never be retried
-NON_RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({400, 401, 404, 405, 410, 451})
+# ---------------------------------------------------------------------------
+# Retry policy — the ONE retry layer for every GET in the scraper.
+# ---------------------------------------------------------------------------
+# urllib3 retries idempotent GETs on connect/read errors and on these statuses.
+# POSTs are never retried here (the Workday adapter gives its idempotent
+# search POST a single 5xx retry of its own). Callers must not wrap GET
+# requests in their own retry loops: before this was consolidated an adapter
+# Retry(total=3) stacked under 3-attempt manual loops sent up to 12 requests
+# per URL.
+RETRY_TOTAL = 3
+RETRY_BACKOFF_FACTOR = 0.5  # sleeps 0s, 1s, 2s between the 4 attempts (urllib3 2.x)
+RETRY_STATUS_FORCELIST: tuple[int, ...] = (429, 500, 502, 503, 504)
+RETRY_ALLOWED_METHODS: frozenset[str] = frozenset({"GET", "HEAD"})
+# A server-sent Retry-After is honoured but never trusted beyond this.
+MAX_RETRY_AFTER_SECONDS = 30.0
 
-# HTTP status codes that should be retried
-RETRYABLE_STATUS_CODES: frozenset[int] = frozenset({403, 408, 422, 429, 500, 502, 503, 504})
 
-# Seconds to wait before re-trying a failed board-API request.
-DEFAULT_RETRY_DELAY = 1.0
+class CappedRetry(Retry):
+    """urllib3 ``Retry`` that clamps ``Retry-After`` to :data:`MAX_RETRY_AFTER_SECONDS`.
+
+    ``Retry.new()`` rebuilds via ``type(self)``, so the clamp survives every
+    ``increment()``.
+    """
+
+    max_retry_after: float = MAX_RETRY_AFTER_SECONDS
+
+    def get_retry_after(self, response: Any) -> float | None:
+        retry_after = super().get_retry_after(response)
+        if retry_after is None:
+            return None
+        return max(0.0, min(float(retry_after), self.max_retry_after))
 
 
-def is_retryable_status(status_code: int) -> bool:
-    """Classify an HTTP status code as retryable or not."""
-    if status_code in RETRYABLE_STATUS_CODES:
-        return True
-    if status_code in NON_RETRYABLE_STATUS_CODES:
-        return False
-    return 500 <= status_code < 600
+def build_retry() -> CappedRetry:
+    """The shared retry policy (see module constants)."""
+    return CappedRetry(
+        total=RETRY_TOTAL,
+        backoff_factor=RETRY_BACKOFF_FACTOR,
+        status_forcelist=RETRY_STATUS_FORCELIST,
+        allowed_methods=RETRY_ALLOWED_METHODS,
+        respect_retry_after_header=True,
+        # Hand the final 429/5xx response back instead of raising RetryError,
+        # so callers can report the real status.
+        raise_on_status=False,
+    )
 
 
 def create_session() -> requests.Session:
-    """Create a pooled session with transport-level retries and keep-alive."""
+    """Create a pooled session with the single transport-level retry policy."""
     session = requests.Session()
-    retry_strategy = Retry(
-        total=3,
-        backoff_factor=0.3,  # 0.3s, 0.6s, 1.2s between transport retries
-        status_forcelist=[429, 500, 502, 503, 504],  # 422 is handled by source-specific logic.
-        allowed_methods=["GET", "POST"],
-    )
     # One pool per host; pool_maxsize covers the largest per-host worker pool
     # (Lever/Greenhouse fan-outs) so threads never wait on a free connection.
     adapter = HTTPAdapter(
-        max_retries=retry_strategy,
+        max_retries=build_retry(),
         pool_connections=1000,
         pool_maxsize=300,
         pool_block=False,
@@ -164,7 +187,10 @@ class DomainConcurrencyLimiter:
 
 
 # Cap Greenhouse API concurrency while leaving other domains unthrottled.
-DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": 10})
+# 25 (was 10) stops the Greenhouse worker pool from queueing on a handful of
+# slots — the per-survivor detail fan-out is latency-bound — while staying polite.
+GREENHOUSE_CONCURRENCY = 25
+DOMAIN_LIMITER = DomainConcurrencyLimiter({"greenhouse.io": GREENHOUSE_CONCURRENCY})
 
 
 def limited_get(url: str, **kwargs: Any) -> requests.Response:
@@ -184,28 +210,47 @@ def limited_post(url: str, **kwargs: Any) -> requests.Response:
 # ---------------------------------------------------------------------------
 
 def cooldown_skip(company: str, source: str, url: str) -> SourceResult | None:
-    """Return a cooldown SourceResult when ``url``'s domain is tripped, else None."""
-    if not SOURCE_COOLDOWN.is_tripped(url):
+    """Return a cooldown SourceResult when ``url``'s tenant/board (or provider) is tripped, else None."""
+    key = SOURCE_COOLDOWN.tripped_key(url)
+    if key is None:
         return None
-    key = SOURCE_COOLDOWN.domain_key(url)
-    logger.info("  ⏭️  %s: skipping — source '%s' in cooldown (403 threshold exceeded)", company, key)
+    logger.info("  ⏭️  %s: skipping — '%s' in cooldown (403 threshold exceeded)", company, key)
     return SourceResult.failure(company, source, KIND_COOLDOWN, f"skipped: '{key}' in 403 cooldown")
 
 
 def record_forbidden(company: str, source: str, url: str, label: str = "") -> SourceResult:
-    """Count a 403 toward the domain cooldown, log it, and return the error result."""
-    key = SOURCE_COOLDOWN.domain_key(url)
+    """Count a 403 toward the tenant/board and provider cooldowns, log it, and return the error result."""
+    key = SOURCE_COOLDOWN.cooldown_key(url)
     if SOURCE_COOLDOWN.try_admit(url):
         count = SOURCE_COOLDOWN.counts().get(key, 0)
-        logger.warning("  ⚠️  %s: %s403 Forbidden (%s/%s)", company, label, count, SOURCE_COOLDOWN_THRESHOLD)
+        logger.warning("  ⚠️  %s: %s403 Forbidden (%s/%s)", company, label, count, SOURCE_COOLDOWN.threshold)
     else:
-        logger.warning("  🚫 %s: %s403 Forbidden — cooldown now active for '%s'", company, label, key)
+        logger.warning(
+            "  🚫 %s: %s403 Forbidden — cooldown now active for '%s'",
+            company, label, SOURCE_COOLDOWN.tripped_key(url) or key,
+        )
     return SourceResult.failure(company, source, KIND_FORBIDDEN, "403 Forbidden", status=403)
 
 
 # ---------------------------------------------------------------------------
-# Shared fetch / retry loop for JSON board APIs
+# Shared fetch for JSON board APIs
 # ---------------------------------------------------------------------------
+
+def is_timeout_error(exc: BaseException) -> bool:
+    """True for a timeout, including read timeouts that exhausted the urllib3 retries.
+
+    requests maps an exhausted ``MaxRetryError(ReadTimeoutError)`` to a plain
+    ``ConnectionError``, so the reason has to be unwrapped.
+    """
+    if isinstance(exc, requests.exceptions.Timeout):
+        return True
+    reason = exc.args[0] if exc.args else None
+    reason = getattr(reason, "reason", reason)
+    # NewConnectionError subclasses ConnectTimeoutError in urllib3 2.x but is
+    # a refused/failed connection, not a timeout.
+    return isinstance(reason, urllib3.exceptions.TimeoutError) and not isinstance(
+        reason, urllib3.exceptions.NewConnectionError)
+
 
 def fetch_json_with_retry(
     company: str,
@@ -215,84 +260,62 @@ def fetch_json_with_retry(
     parse: Callable[[Any], SourceResult | None],
     *,
     timeout: int,
-    max_retries: int = 2,
-    retry_delay: float = DEFAULT_RETRY_DELAY,
 ) -> SourceResult:
-    """GET ``url`` and hand the decoded JSON to ``parse`` with retry semantics.
+    """GET ``url`` once and hand the decoded JSON to ``parse``.
 
-    - Domains in 403 cooldown are skipped without a request.
-    - HTTP 403 is counted toward the cooldown and never retried.
-    - Non-retryable statuses (see :func:`is_retryable_status`) stop immediately.
-    - Timeouts, retryable statuses, transport errors and exceptions raised by
-      ``parse`` are retried up to ``max_retries`` times.
-    - ``parse`` returning None means "unexpected payload shape" and is retried.
+    Transient failures (connect/read errors, 429, 5xx) are retried by the
+    session's urllib3 policy (:func:`build_retry`) — this function adds no
+    second retry layer. Everything that reaches it is final:
 
-    The final failure is returned as a :class:`SourceError` on the result.
+    - a URL whose tenant/board or provider is in 403 cooldown is skipped;
+    - HTTP 403 is counted toward the cooldown;
+    - any other non-2xx status becomes a ``KIND_HTTP`` error;
+    - bad JSON, ``parse`` returning None (unexpected shape) or ``parse``
+      raising are deterministic, so they are reported, never retried.
+
+    ``parse`` builds the whole result from one payload and returns it, so a
+    failure part-way through cannot leave partial or duplicated jobs behind.
     """
     skipped = cooldown_skip(company, source, url)
     if skipped is not None:
         return skipped
 
-    attempts = max_retries + 1
-    last_error: SourceError | None = None
+    def failure(kind: str, message: str, status: int | None = None) -> SourceResult:
+        return SourceResult(errors=(SourceError(company, source, kind, status, message),))
 
-    def error(kind: str, message: str, status: int | None = None) -> SourceError:
-        return SourceError(company, source, kind, status, message)
+    logger.info("Fetching jobs from %s (%s)...", company, source_label)
+    try:
+        response = limited_get(url, timeout=timeout)
+    except requests.exceptions.RequestException as exc:
+        if is_timeout_error(exc):
+            logger.error("  ❌ %s request timed out (timeout=%ss)", company, timeout)
+            return failure(KIND_TIMEOUT, f"timed out (timeout={timeout}s, after transport retries)")
+        logger.error("  ❌ Request error for %s: %s", company, exc)
+        return failure(KIND_NETWORK, str(exc))
 
-    for attempt in range(attempts):
-        try:
-            if attempt > 0:
-                logger.info("  🔄 Retry %s for %s...", attempt, company)
-                time.sleep(retry_delay)
+    if response.status_code == 403:
+        return record_forbidden(company, source, url)
+    if not response.ok:
+        logger.warning("  ⚠️  %s: HTTP %s", company, response.status_code)
+        return failure(KIND_HTTP, f"HTTP {response.status_code} for {url}", response.status_code)
 
-            logger.info("Fetching jobs from %s (%s)...", company, source_label)
-            response = limited_get(url, timeout=timeout)
+    try:
+        data = response.json()
+    except ValueError as exc:  # requests' JSONDecodeError is a ValueError
+        logger.warning("  ⚠️  %s: response is not JSON: %s", company, exc)
+        return failure(KIND_PARSE, f"invalid JSON: {exc}", response.status_code)
 
-            if response.status_code == 403:
-                return record_forbidden(company, source, url)
+    try:
+        result = parse(data)
+    except Exception as exc:  # malformed records: reported, not retried
+        logger.error("  ❌ Error parsing %s: %s", company, exc)
+        return failure(KIND_UNEXPECTED, f"{type(exc).__name__}: {exc}", response.status_code)
+    if result is None:
+        logger.warning("  ⚠️  %s: Unexpected API response format", company)
+        return failure(KIND_PARSE, "Unexpected API response format", response.status_code)
 
-            response.raise_for_status()
-            result = parse(response.json())
-            if result is None:
-                logger.warning("  ⚠️  %s: Unexpected API response format", company)
-                last_error = error(KIND_PARSE, "Unexpected API response format", response.status_code)
-                continue
-
-            logger.info("  ✓ Found %s jobs from %s", len(result.jobs), company)
-            return result
-
-        except requests.exceptions.Timeout:
-            last_error = error(KIND_TIMEOUT, f"timed out after {attempts} attempts (timeout={timeout}s)")
-            if attempt < max_retries:
-                logger.warning("  ⏱️  %s request timed out, retrying...", company)
-                continue
-            logger.error("  ❌ %s request timed out after %s attempts", company, attempts)
-        except requests.exceptions.HTTPError as exc:
-            status = exc.response.status_code if exc.response is not None else None
-            last_error = error(KIND_HTTP, str(exc), status)
-            if status is not None and not is_retryable_status(status):
-                logger.warning("  ⚠️  %s: HTTP %s (non-retryable)", company, status)
-                break
-            if attempt < max_retries:
-                logger.warning("  ⚠️  Request error for %s: %s, retrying...", company, exc)
-                continue
-            logger.error("  ❌ Request error for %s after %s attempts: %s", company, attempts, exc)
-        except requests.exceptions.RequestException as exc:
-            # requests' JSONDecodeError is a RequestException *and* a ValueError.
-            kind = KIND_PARSE if isinstance(exc, ValueError) else KIND_NETWORK
-            last_error = error(kind, str(exc))
-            if attempt < max_retries:
-                logger.warning("  ⚠️  Request error for %s: %s, retrying...", company, exc)
-                continue
-            logger.error("  ❌ Request error for %s after %s attempts: %s", company, attempts, exc)
-        except Exception as exc:  # parse() bugs / malformed records: retried, then reported
-            last_error = error(KIND_UNEXPECTED, f"{type(exc).__name__}: {exc}")
-            if attempt < max_retries:
-                logger.warning("  ⚠️  Error fetching from %s: %s, retrying...", company, exc)
-                continue
-            logger.error("  ❌ Error fetching from %s after %s attempts: %s", company, attempts, exc)
-
-    return SourceResult(errors=(last_error,)) if last_error else SourceResult()
+    logger.info("  ✓ Found %s jobs from %s", len(result.jobs), company)
+    return result
 
 
 # ---------------------------------------------------------------------------

@@ -10,10 +10,9 @@ from collections.abc import Sequence
 from typing import Any
 
 from ngj import http as ngj_http
-from ngj.compensation import bounded_comp, extract_compensation
+from ngj.compensation import bounded_comp
 from ngj.models import SourceResult
 from ngj.settings import DEFAULT_HTTP_TIMEOUT, Settings
-from ngj.text import clean_description
 
 SOURCE = "ashby"
 
@@ -25,7 +24,7 @@ def _with_compensation_flag(url: str) -> str:
 
 
 def _structured_comp(raw: dict[str, Any]) -> dict[str, Any] | None:
-    """First USD per-year tier within the sanity bounds, if any."""
+    """First per-year tier within its currency's sanity bounds, labelled with its real currency."""
     ashby_comp = raw.get('compensation') or {}
     tiers = ashby_comp.get('compensationTiers') if isinstance(ashby_comp, dict) else None
     if not isinstance(tiers, list):
@@ -34,8 +33,8 @@ def _structured_comp(raw: dict[str, Any]) -> dict[str, Any] | None:
         try:
             interval = (tier.get('interval') or '').lower()
             currency = (tier.get('currencyCode') or 'USD').upper()
-            if currency == 'USD' and 'year' in interval:
-                comp = bounded_comp(tier.get('minValue'), tier.get('maxValue'), 'ashby')
+            if 'year' in interval:
+                comp = bounded_comp(tier.get('minValue'), tier.get('maxValue'), 'ashby', currency=currency)
                 if comp:
                     return comp
         except (TypeError, ValueError, AttributeError):
@@ -46,43 +45,41 @@ def _structured_comp(raw: dict[str, Any]) -> dict[str, Any] | None:
 def _location(raw: dict[str, Any]) -> str:
     addr = (raw.get('address') or {}).get('postalAddress') or {}
     parts = [addr.get(k) for k in ('addressLocality', 'addressRegion', 'addressCountry')]
-    return ', '.join([p for p in parts if p]) or raw.get('location') or 'Remote'
+    return ', '.join([p for p in parts if p]) or raw.get('location') or ''
 
 
 def _to_job(company_name: str, raw: dict[str, Any]) -> dict[str, Any]:
-    description = raw.get('descriptionHtml', '') or raw.get('descriptionPlain', '') or ''
     return {
         'company': company_name,
-        'title': raw.get('title', ''),
+        'title': raw.get('title') or '',
         'location': _location(raw),
-        'url': raw.get('jobUrl', '') or raw.get('applyUrl', ''),
+        'url': raw.get('jobUrl') or raw.get('applyUrl') or '',
         'posted_at': raw.get('publishedAt'),
         'source': 'Ashby',
-        'description': clean_description(description),
-        'description_html': description,
-        # Prefer Ashby's structured compensation; fall back to description regex.
-        'comp': _structured_comp(raw) or extract_compensation(description),
+        # Raw only; cleaned text / regex comp / flags are derived in ngj.enrich
+        # after filtering. Structured comp is cheap and authoritative, so it
+        # is kept here and preferred over the regex fallback.
+        'description': '',
+        'description_html': raw.get('descriptionHtml') or raw.get('descriptionPlain') or '',
+        'comp': _structured_comp(raw),
     }
 
 
 def fetch_ashby_jobs(
     company_name: str,
     url: str,
-    max_retries: int = 2,
     timeout: int = DEFAULT_HTTP_TIMEOUT,
 ) -> SourceResult:
     """Fetch one company's Ashby job board."""
     url = _with_compensation_flag(url)
 
     def parse(data: Any) -> SourceResult | None:
-        if not isinstance(data, dict) or 'jobs' not in data:
+        if not isinstance(data, dict) or not isinstance(data.get('jobs'), list):
             return None
-        raw_jobs = data.get('jobs', [])
+        raw_jobs = data['jobs']
         return SourceResult(jobs=tuple(_to_job(company_name, raw) for raw in raw_jobs), raw_count=len(raw_jobs))
 
-    return ngj_http.fetch_json_with_retry(
-        company_name, SOURCE, 'Ashby', url, parse, timeout=timeout, max_retries=max_retries,
-    )
+    return ngj_http.fetch_json_with_retry(company_name, SOURCE, 'Ashby', url, parse, timeout=timeout)
 
 
 def fetch_all_ashby_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:

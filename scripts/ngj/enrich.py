@@ -1,4 +1,5 @@
-"""Per-job enrichment: category, company tier, sponsorship flags, closed marker.
+"""Per-job enrichment: description snippet, compensation, category, company tier,
+sponsorship flags, closed marker.
 
 Enrichment never mutates its inputs: each job comes back as a new dict.
 """
@@ -8,7 +9,9 @@ from __future__ import annotations
 import re
 from typing import Any
 
+from ngj.compensation import extract_compensation
 from ngj.taxonomy import categorize_job, get_company_tier
+from ngj.text import clean_description
 
 # Sponsorship/visa keywords
 NO_SPONSORSHIP_KEYWORDS = [
@@ -68,13 +71,28 @@ def detect_sponsorship_flags(title: str, description: str = '') -> dict[str, boo
     }
 
 
+def _text(value: Any) -> str:
+    return value if isinstance(value, str) else ''
+
+
 def enrich_job(job: dict[str, Any]) -> dict[str, Any]:
-    """Return a copy of ``job`` with category, company_tier, flags, is_closed and id."""
-    title = job.get('title', '')
-    description = job.get('description', '')
-    company = job.get('company', '')
+    """Return a copy of ``job`` with description, comp, category, company_tier, flags, is_closed and id.
+
+    Adapters keep only the raw ``description_html``; the cleaned
+    ``description`` snippet and regex ``comp`` are derived here, after
+    filtering, so the parsing cost is paid for published jobs only. A
+    structured ``comp`` supplied by the adapter (Ashby, JobSpy) wins over the
+    regex fallback.
+    """
+    title = _text(job.get('title'))
+    company = _text(job.get('company'))
+    raw = _text(job.get('description_html'))
+    description = clean_description(raw) if raw else _text(job.get('description'))
+    comp = job.get('comp') or extract_compensation(raw or description, _text(job.get('location')))
     return {
         **job,
+        'description': description,
+        'comp': comp,
         'category': categorize_job(title, description),
         'company_tier': get_company_tier(company),
         'flags': detect_sponsorship_flags(title, description),

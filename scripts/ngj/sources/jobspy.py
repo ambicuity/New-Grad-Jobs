@@ -7,15 +7,15 @@ and a missing install only matters when JobSpy is enabled.
 from __future__ import annotations
 
 import logging
+import math
 import time
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
-from ngj.compensation import bounded_comp, extract_compensation
+from ngj.compensation import bounded_comp, dollar_currency_for_location
 from ngj.models import KIND_UNAVAILABLE, KIND_UNEXPECTED, SourceResult
-from ngj.settings import DEFAULT_JOBSPY_WORKERS
-from ngj.text import clean_description
+from ngj.settings import DEFAULT_JOBSPY_WORKERS, jobspy_enabled
 
 logger = logging.getLogger(__name__)
 
@@ -39,31 +39,71 @@ def load_scrape_jobs() -> Callable[..., Any] | None:
     return scrape_jobs
 
 
-def _row_comp(row: Any, description: str) -> dict[str, Any] | None:
-    # JobSpy returns structured salary on Indeed/LinkedIn when the listing
-    # exposes it; prefer that over regex extraction.
-    structured_min = row.get('min_amount')
-    structured_max = row.get('max_amount')
+def is_missing(value: Any) -> bool:
+    """True for None and pandas' missing markers (float NaN, ``pd.NA``, ``pd.NaT``).
+
+    Needed because ``row.get('x', '') or ''`` keeps NaN — NaN is truthy.
+    """
+    if value is None:
+        return True
+    if isinstance(value, float):
+        return math.isnan(value)
+    return type(value).__name__ in ('NAType', 'NaTType')
+
+
+def normalize_row(row: Any) -> dict[str, Any]:
+    """Plain dict copy of a JobSpy row with every missing marker replaced by None."""
+    items = row.items() if hasattr(row, 'items') else dict(row).items()
+    return {key: (None if is_missing(value) else value) for key, value in items}
+
+
+def _text(value: Any) -> str:
+    """Normalised row value as stripped text ('' when missing)."""
+    return '' if value is None else str(value).strip()
+
+
+def _amount(value: Any) -> float | None:
     try:
-        smin = int(structured_min) if structured_min not in (None, '') else None
-        smax = int(structured_max) if structured_max not in (None, '') else None
+        amount = float(value)
     except (TypeError, ValueError):
-        smin = smax = None
-    return bounded_comp(smin, smax, 'jobspy') or extract_compensation(description)
+        return None
+    return None if math.isnan(amount) or amount <= 0 else amount
 
 
-def _row_to_job(row: Any, site: str) -> dict[str, Any]:
-    description = row.get('description', '') or ''
+def _row_comp(row: dict[str, Any]) -> dict[str, Any] | None:
+    """Structured salary from JobSpy's min/max/currency/interval columns, else None.
+
+    The regex fallback over the description runs later, in ngj.enrich, only
+    for jobs that survive filtering. A missing ``currency`` is inferred from
+    the location (a bare dollar amount abroad stays unlabelled), and the
+    ``interval`` (hourly/monthly/...) is annualised instead of being read as
+    a yearly figure.
+    """
+    smin, smax = _amount(row.get('min_amount')), _amount(row.get('max_amount'))
+    if smin is None or smax is None:
+        return None
+    currency = _text(row.get('currency')).upper() or dollar_currency_for_location(_text(row.get('location')))
+    interval = _text(row.get('interval')) or None
+    return bounded_comp(smin, smax, 'jobspy', currency=currency, interval=interval)
+
+
+def _row_to_job(row: Any, site: str) -> dict[str, Any] | None:
+    """Build a job from one JobSpy row; None when the row has no usable title."""
+    data = normalize_row(row)
+    title = _text(data.get('title'))
+    if not title or title.lower() in ('nan', 'none'):
+        return None
     return {
-        'company': row.get('company', 'Unknown'),
-        'title': row.get('title', ''),
-        'location': row.get('location', 'Remote'),
-        'url': row.get('job_url', ''),
-        'posted_at': row.get('date_posted', ''),
+        'company': _text(data.get('company')) or 'Unknown',
+        'title': title,
+        'location': _text(data.get('location')),
+        'url': _text(data.get('job_url')),
+        'posted_at': data.get('date_posted') or '',
         'source': f'JobSpy ({site.title()})',
-        'description': clean_description(description),
-        'description_html': description,
-        'comp': _row_comp(row, description),
+        # Raw only; cleaned text / regex comp / flags are derived in ngj.enrich after filtering.
+        'description': '',
+        'description_html': _text(data.get('description')),
+        'comp': _row_comp(data),
     }
 
 
@@ -91,9 +131,10 @@ def _search_one(
             )
             if jobs_df is None or jobs_df.empty:
                 return SourceResult()
-            jobs = [_row_to_job(row, site) for _, row in jobs_df.iterrows()]
-            kept = tuple(job for job in jobs if job['url'] and str(job['url']).startswith('http'))
-            return SourceResult(jobs=kept, raw_count=len(jobs))
+            raw_count = len(jobs_df)
+            jobs = (_row_to_job(row, site) for _, row in jobs_df.iterrows())
+            kept = tuple(job for job in jobs if job is not None and job['url'].startswith('http'))
+            return SourceResult(jobs=kept, raw_count=raw_count)
         except Exception as exc:
             last_error = str(exc)[:100]
             if attempt < max_retries:
@@ -107,7 +148,7 @@ def fetch_jobspy_jobs(
     workers: int = DEFAULT_JOBSPY_WORKERS,
 ) -> SourceResult:
     """Run every configured (site, search term, country) JobSpy search in parallel."""
-    if not config_jobspy.get('enabled', False):
+    if not jobspy_enabled(config_jobspy):
         logger.info("JobSpy is disabled in configuration, skipping...")
         return SourceResult()
 

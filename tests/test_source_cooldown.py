@@ -191,7 +191,7 @@ class TestSourceCooldownTrackerRecordAndTrip:
         tracker = _fresh_tracker(threshold=5)
         for _ in range(3):
             tracker.record_403(GH_URL)
-        key = SourceCooldownTracker.domain_key(GH_URL)
+        key = SourceCooldownTracker.cooldown_key(GH_URL)
         assert tracker.counts()[key] == 3
 
     def test_counts_not_incremented_after_trip(self):
@@ -199,7 +199,7 @@ class TestSourceCooldownTrackerRecordAndTrip:
         tracker.record_403(GH_URL)
         tracker.record_403(GH_URL)  # trips, count=2
         tracker.record_403(GH_URL)  # already tripped — count must NOT go to 3
-        key = SourceCooldownTracker.domain_key(GH_URL)
+        key = SourceCooldownTracker.cooldown_key(GH_URL)
         assert tracker.counts()[key] == 2
 
     def test_different_domains_tracked_independently(self):
@@ -210,12 +210,19 @@ class TestSourceCooldownTrackerRecordAndTrip:
         assert tracker.is_tripped(GH_URL)
         assert not tracker.is_tripped(LEVER_URL)
 
-    def test_subdomain_urls_aggregate_to_same_key(self):
+    def test_same_board_on_different_subdomains_aggregates(self):
         tracker = _fresh_tracker(threshold=2)
-        # Two different greenhouse subdomains — both map to greenhouse.io
+        # The acme board via two Greenhouse API hosts is one tenant.
         tracker.record_403("https://boards-api.greenhouse.io/v1/boards/acme/jobs")
-        tracker.record_403("https://api.greenhouse.io/v1/boards/beta/jobs")
+        tracker.record_403("https://api.greenhouse.io/v1/boards/acme/jobs/123")
         assert tracker.is_tripped(GH_URL)
+
+    def test_other_boards_on_the_same_provider_are_not_tripped(self):
+        tracker = _fresh_tracker(threshold=2)
+        tracker.record_403("https://boards-api.greenhouse.io/v1/boards/beta/jobs")
+        tracker.record_403("https://boards-api.greenhouse.io/v1/boards/beta/jobs")
+        assert tracker.is_tripped("https://boards-api.greenhouse.io/v1/boards/beta/jobs")
+        assert not tracker.is_tripped(GH_URL)
 
     def test_is_tripped_false_before_any_records(self):
         tracker = _fresh_tracker(threshold=3)
@@ -225,7 +232,7 @@ class TestSourceCooldownTrackerRecordAndTrip:
     def test_tripped_sources_contains_tripped_domain(self):
         tracker = _fresh_tracker(threshold=1)
         tracker.record_403(GH_URL)
-        assert tracker.tripped_sources() == {SourceCooldownTracker.domain_key(GH_URL)}
+        assert tracker.tripped_sources() == {SourceCooldownTracker.cooldown_key(GH_URL)}
 
     def test_tripped_sources_does_not_contain_untripped_domain(self):
         tracker = _fresh_tracker(threshold=5)
@@ -237,8 +244,8 @@ class TestSourceCooldownTrackerRecordAndTrip:
         tracker = _fresh_tracker(threshold=5)
         tracker.record_403(GH_URL)
         snapshot = tracker.counts()
-        snapshot["greenhouse.io"] = 999
-        assert tracker.counts()["greenhouse.io"] == 1
+        snapshot["greenhouse.io/acme"] = 999
+        assert tracker.counts()["greenhouse.io/acme"] == 1
 
     def test_tripped_sources_snapshot_is_independent_copy(self):
         tracker = _fresh_tracker(threshold=1)
@@ -377,10 +384,10 @@ class TestTryAdmitUnit:
         # Trip it
         for _ in range(threshold):
             tracker.try_admit(url)
-        count_after_trip = tracker.counts().get(tracker.domain_key(url), 0)
+        count_after_trip = tracker.counts().get(tracker.cooldown_key(url), 0)
         # Call again — must not increment
         tracker.try_admit(url)
-        assert tracker.counts().get(tracker.domain_key(url), 0) == count_after_trip, (
+        assert tracker.counts().get(tracker.cooldown_key(url), 0) == count_after_trip, (
             "try_admit() must not increment count when already tripped"
         )
 
@@ -474,7 +481,7 @@ class TestGreenhouseCooldownIntegration:
 
         result = fetch_greenhouse_jobs("Acme", GH_URL)
 
-        key = SourceCooldownTracker.domain_key(GH_URL)
+        key = SourceCooldownTracker.cooldown_key(GH_URL)
         assert tracker.counts().get(key, 0) == 1
         assert [(e.kind, e.status) for e in result.errors] == [(KIND_FORBIDDEN, 403)]
 
@@ -502,7 +509,7 @@ class TestGreenhouseCooldownIntegration:
             return self._403_response()
 
         monkeypatch.setattr(ngj_http, "limited_get", counting_get)
-        fetch_greenhouse_jobs("Acme", GH_URL, max_retries=2)
+        fetch_greenhouse_jobs("Acme", GH_URL)
         assert call_count == 1, "403 must be handled without retrying"
 
     def test_skips_when_cooldown_pre_tripped(self, monkeypatch, caplog):
@@ -553,9 +560,9 @@ class TestGreenhouseCooldownIntegration:
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
-            fetch_greenhouse_jobs("Acme", GH_URL, max_retries=0)
+            fetch_greenhouse_jobs("Acme", GH_URL)
 
-        key = SourceCooldownTracker.domain_key(GH_URL)
+        key = SourceCooldownTracker.cooldown_key(GH_URL)
         assert tracker.counts().get(key, 0) == 0
         assert not tracker.is_tripped(GH_URL)
 
@@ -569,9 +576,9 @@ class TestGreenhouseCooldownIntegration:
 
         monkeypatch.setattr(ngj_http, "limited_get", raise_timeout)
         for _ in range(5):
-            fetch_greenhouse_jobs("Acme", GH_URL, max_retries=0)
+            fetch_greenhouse_jobs("Acme", GH_URL)
 
-        key = SourceCooldownTracker.domain_key(GH_URL)
+        key = SourceCooldownTracker.cooldown_key(GH_URL)
         assert tracker.counts().get(key, 0) == 0
 
 
@@ -613,7 +620,7 @@ class TestLeverCooldownIntegration:
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: self._403_response())
 
         fetch_lever_jobs("Acme", LEVER_URL)
-        key = SourceCooldownTracker.domain_key(LEVER_URL)
+        key = SourceCooldownTracker.cooldown_key(LEVER_URL)
         assert tracker.counts().get(key, 0) == 1
 
     def test_skips_when_pre_tripped(self, monkeypatch):
@@ -645,7 +652,7 @@ class TestLeverCooldownIntegration:
             return self._403_response()
 
         monkeypatch.setattr(ngj_http, "limited_get", counting_get)
-        fetch_lever_jobs("Acme", LEVER_URL, max_retries=2)
+        fetch_lever_jobs("Acme", LEVER_URL)
         assert call_count == 1
 
     def test_non_403_does_not_record(self, monkeypatch):
@@ -655,9 +662,9 @@ class TestLeverCooldownIntegration:
         monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
-            fetch_lever_jobs("Acme", LEVER_URL, max_retries=0)
+            fetch_lever_jobs("Acme", LEVER_URL)
 
-        key = SourceCooldownTracker.domain_key(LEVER_URL)
+        key = SourceCooldownTracker.cooldown_key(LEVER_URL)
         assert tracker.counts().get(key, 0) == 0
 
 
@@ -731,7 +738,7 @@ class TestWorkdayCooldownIntegration:
 
         fetch_workday_jobs([self._company()])
         # domain key from the Workday API URL built internally will be myworkdayjobs.com
-        workday_key = SourceCooldownTracker.domain_key(WORKDAY_URL)
+        workday_key = SourceCooldownTracker.cooldown_key(WORKDAY_URL)
         assert tracker.counts().get(workday_key, 0) >= 1
 
     def test_403_logs_warning(self, monkeypatch, caplog):
@@ -765,11 +772,11 @@ class TestWorkdayCooldownIntegration:
         assert jobs == []
         assert call_count == 0
 
-    def test_403_trips_after_threshold_companies(self, monkeypatch, caplog):
+    def test_403s_from_other_tenants_do_not_disable_this_tenant(self, monkeypatch, caplog):
+        """Per-tenant keys: 403s from unrelated Workday tenants never trip another tenant."""
         threshold = 3
-        tracker = _fresh_tracker(threshold=threshold)
+        tracker = SourceCooldownTracker(threshold=threshold, provider_threshold=100)
         monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
-        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN_THRESHOLD", threshold)
         monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "tok")
         monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(403))
 
@@ -778,9 +785,26 @@ class TestWorkdayCooldownIntegration:
             for i in range(threshold + 1)
         ]
         fetch_workday_jobs(companies)
+        assert not tracker.is_tripped(WORKDAY_URL)
+        assert "COOLDOWN TRIPPED" not in caplog.text
+
+    def test_provider_breaker_trips_after_provider_threshold(self, monkeypatch, caplog):
+        tracker = SourceCooldownTracker(threshold=3, provider_threshold=4)
+        monkeypatch.setattr(ngj_http, "SOURCE_COOLDOWN", tracker)
+        monkeypatch.setattr(workday_mod, "get_workday_csrf_token", lambda host, session, timeout=None: "tok")
+        monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(403))
+
+        companies = [
+            {"name": f"Co{i}", "workday_url": f"https://co{i}.wd5.myworkdayjobs.com/Careers"}
+            for i in range(4)
+        ]
+        fetch_workday_jobs(companies)
         assert tracker.is_tripped(WORKDAY_URL)
-        out = caplog.text
-        assert "COOLDOWN TRIPPED" in out
+        assert tracker.tripped_key(WORKDAY_URL) == "myworkdayjobs.com"
+        assert "provider 'myworkdayjobs.com'" in caplog.text
+
+        result = fetch_workday_jobs([self._company()])
+        assert [e.kind for e in result.errors] == [KIND_COOLDOWN]
 
     def test_non_403_error_does_not_record(self, monkeypatch):
         tracker = _fresh_tracker(threshold=3)
@@ -790,7 +814,7 @@ class TestWorkdayCooldownIntegration:
         monkeypatch.setattr(ngj_http, "limited_post", lambda url, **kw: _make_response(500))
 
         for _ in range(5):
-            fetch_workday_jobs([self._company()], max_retries=0)
+            fetch_workday_jobs([self._company()])
 
         assert "myworkdayjobs.com" not in tracker.counts()
 

@@ -94,7 +94,7 @@ def _parse_row(job: list) -> dict[str, Any] | None:
     return {
         "company": company,
         "title": title,
-        "location": " | ".join(locations) if locations else "Remote",
+        "location": " | ".join(locations),
         "url": link,
         "posted_at": posted_at,
         "source": "Google Careers",
@@ -135,7 +135,7 @@ def _fetch_page(url: str, max_retries: int, timeout: int) -> tuple[str, SourceEr
 def fetch_google_jobs(
     search_terms: Sequence[str],
     max_pages: int = DEFAULT_GOOGLE_MAX_PAGES,
-    max_retries: int = 1,
+    max_retries: int = 0,  # GETs are already retried by the session (ngj.http.build_retry)
     timeout: int = DEFAULT_HTTP_TIMEOUT,
 ) -> SourceResult:
     """Scrape Google Careers result pages for each search term (deduplicated by URL).

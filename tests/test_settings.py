@@ -150,12 +150,17 @@ def test_workday_timeout_from_config_reaches_post_and_csrf_calls(tmp_path):
 def test_workday_max_jobs_per_company_from_settings_is_enforced(tmp_path):
     settings = _settings(tmp_path, workday_enabled=True, workday_max_jobs_per_company=3, workday_page_limit=2)
     config = _config(workday={"enabled": True, "companies": [WORKDAY_COMPANY]})
-    page = MagicMock(status_code=200, ok=True)
-    page.json.return_value = {"jobPostings": [
-        {"title": f"T{i}", "externalPath": f"/job/{i}", "postedOn": "Posted Today"} for i in range(2)
-    ]}
+    def page(url, json=None, **kwargs):
+        offset = json["offset"]
+        response = MagicMock(status_code=200, ok=True)
+        response.json.return_value = {"jobPostings": [
+            {"title": f"T{i}", "externalPath": f"/job/{i}", "postedOn": "Posted Today"}
+            for i in range(offset, offset + 2)
+        ]}
+        return response
+
     with (
-        patch("ngj.http.limited_post", return_value=page),
+        patch("ngj.http.limited_post", side_effect=page),
         patch("ngj.sources.workday.get_workday_csrf_token", return_value=""),
         patch("ngj.http.get_session", return_value=MagicMock()),
     ):
@@ -188,11 +193,19 @@ def test_http_timeout_reaches_greenhouse_requests(tmp_path):
 
 
 def test_jobspy_workers_reach_fetcher(tmp_path):
-    settings = _settings(tmp_path, jobspy_workers=3)
-    config = _config(jobspy={"enabled": False})
+    settings = _settings(tmp_path, jobspy_workers=3, jobspy_enabled=True)
+    config = _config(jobspy={"enabled": True})
     with patch("ngj.pipeline.fetch_jobspy_jobs") as fetch:
         pipeline.plan_sources(config, settings)["jobspy"]()
-    fetch.assert_called_once_with({"enabled": False}, workers=3)
+    fetch.assert_called_once_with({"enabled": True}, workers=3)
+
+
+def test_jobspy_is_planned_from_settings_only(tmp_path):
+    """Settings.jobspy_enabled is the single source of truth (default: disabled)."""
+    config = _config(jobspy={"sites": ["indeed"]})  # no `enabled` key
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert settings.jobspy_enabled is False
+    assert "jobspy" not in pipeline.plan_sources(config, settings)
 
 
 def test_plan_sources_skips_empty_and_disabled_sources(tmp_path):

@@ -95,7 +95,7 @@ def test_fetch_graphql_jobs_maps_fields_and_defaults_location():
     job = jobs[0]
     assert job["company"] == "Acme"
     assert job["title"] == "Software Engineer, New Grad"
-    assert job["location"] == "Remote"
+    assert job["location"] == ""  # unknown, not assumed Remote
     assert job["url"] == "https://careers.acme.com/jobs/1"
     assert job["posted_at"] == "2026-03-01T00:00:00Z"
     assert job["source"] == "GraphQL"

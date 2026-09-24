@@ -138,9 +138,10 @@ def test_company_tier_dicts_are_not_shared_between_jobs():
 # Shared HTTP helpers
 # ---------------------------------------------------------------------------
 
-def test_fetch_json_with_retry_retries_parse_errors_then_reports(monkeypatch):
-    monkeypatch.setattr(ngj_http, "limited_get", lambda url, **kw: MagicMock(status_code=200, json=lambda: {}))
-    monkeypatch.setattr(ngj_http.time, "sleep", lambda s: None)
+def test_fetch_json_with_retry_does_not_retry_deterministic_parse_errors(monkeypatch):
+    gets = []
+    monkeypatch.setattr(ngj_http, "limited_get",
+                        lambda url, **kw: gets.append(url) or MagicMock(status_code=200, ok=True, json=lambda: {}))
     calls = []
 
     def parse(data):
@@ -148,8 +149,9 @@ def test_fetch_json_with_retry_retries_parse_errors_then_reports(monkeypatch):
         raise KeyError("jobs")
 
     result = ngj_http.fetch_json_with_retry("Acme", "greenhouse", "Greenhouse", "https://example.com/x", parse,
-                                            timeout=5, max_retries=2)
-    assert len(calls) == 3
+                                            timeout=5)
+    assert len(calls) == 1
+    assert len(gets) == 1
     assert result.jobs == ()
     assert [(e.company, e.kind) for e in result.errors] == [("Acme", KIND_UNEXPECTED)]
 
