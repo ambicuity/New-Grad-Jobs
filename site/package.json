@@ -10,12 +10,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:fixtures": "vite build && node scripts/copy-fixtures.mjs",
+    "build:fixtures": "NGJ_SEO_DATA_DIR=test/fixtures vite build && node scripts/copy-fixtures.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
-    "fetch-data": "node scripts/fetch-data.mjs"
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "og-image": "node scripts/og-image.mjs"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.3.0",

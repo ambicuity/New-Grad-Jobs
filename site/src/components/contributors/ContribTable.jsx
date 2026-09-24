@@ -1,21 +1,20 @@
 // Center column of the contributors view: stats strip + search, table header, rows.
+// Every number shown is real (contributors.json + GitHub API) or "—".
 
 import { useMemo } from 'react';
-import { AREA_COLOR, BBG } from '../../lib/theme.js';
+import { BBG } from '../../lib/theme.js';
 import { fmtK, rowNumber } from '../../lib/format.js';
-import { activeThisWeek, contributorTotals, roleColor } from '../../lib/contributors.js';
+import { contributorTotals, roleColor } from '../../lib/contributors.js';
 import { SortHeader, Stat, ellipsis, onActivateKey } from '../ui.jsx';
-import { Avatar, PMBar } from './ContribBits.jsx';
+import { Avatar, TypeTags, fmtCommits } from './ContribBits.jsx';
 
-const GRID = '32px 130px 1fr 90px 70px 60px 110px 80px 70px';
-const recentColor = (last) => (/h$|^1d/.test(last) ? BBG.ok : BBG.ink);
+const GRID = '32px 170px 1fr 110px 90px';
 const dot = <span style={{ color: BBG.rule2 }}>·</span>;
 
 export function ContribTable({
-  isMobile, contributors, filtered, searchRef, q, onQuery, sort, onSort, selectedHandle, onSelect,
+  isMobile, contributors, repo, filtered, searchRef, q, onQuery, sort, onSort, selectedHandle, onSelect,
 }) {
   const totals = useMemo(() => contributorTotals(contributors), [contributors]);
-  const activeWeek = useMemo(() => activeThisWeek(contributors), [contributors]);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, borderRight: isMobile ? 'none' : `1px solid ${BBG.rule2}` }}>
       <div style={{
@@ -23,11 +22,14 @@ export function ContribTable({
         borderBottom: `1px solid ${BBG.rule2}`, alignItems: 'center',
         flexWrap: isMobile ? 'wrap' : 'nowrap',
       }}>
-        <Stat label="CONTRIBUTORS" value={contributors.length} delta="+3 7d" deltaC={BBG.ok} />
-        <Stat label="COMMITS" value={fmtK(totals.commits)} delta="+412 7d" deltaC={BBG.ok} />
-        <Stat label="PRS MERGED" value={fmtK(totals.prs)} delta="+98 7d" deltaC={BBG.ok} />
-        <Stat label="ACTIVE 7D" value={activeWeek} delta="" deltaC={BBG.dim} />
-        <Stat label="NET LOC" value={`+${fmtK(totals.add)} / -${fmtK(totals.del)}`} delta="" deltaC={BBG.dim} />
+        <Stat label="CONTRIBUTORS" value={contributors.length} />
+        <Stat
+          label="COMMITS"
+          value={totals.known ? fmtK(totals.commits) : '—'}
+          delta={totals.known ? `${totals.known} with stats` : ''}
+        />
+        <Stat label="OPEN PRS" value={fmtK(repo.prs_open)} />
+        <Stat label="STARS" value={fmtK(repo.stars)} />
         <div style={{
           marginLeft: isMobile ? 0 : 'auto', width: isMobile ? '100%' : 'auto',
           display: 'flex', gap: 8, alignItems: 'center',
@@ -38,7 +40,7 @@ export function ContribTable({
             value={q}
             onChange={(e) => onQuery(e.target.value)}
             aria-label="Search contributors"
-            placeholder="search @handle / name / area / region"
+            placeholder="search @handle / name / contribution"
             style={{
               background: 'transparent', border: `1px solid ${BBG.rule2}`, outline: 'none',
               color: BBG.ink, fontFamily: 'inherit', fontSize: 12, padding: '3px 8px',
@@ -56,13 +58,9 @@ export function ContribTable({
         }}>
           <span>#</span>
           <SortHeader k="handle" label="@HANDLE" cur={sort.key} dir={sort.dir} onClick={onSort} />
-          <span>NAME / AREAS</span>
-          <span>REGION</span>
+          <span>NAME / CONTRIBUTIONS</span>
+          <span>ROLE</span>
           <SortHeader k="commits" label="COMMITS" cur={sort.key} dir={sort.dir} onClick={onSort} />
-          <SortHeader k="prs" label="PRS" cur={sort.key} dir={sort.dir} onClick={onSort} />
-          <SortHeader k="add" label="+/-" cur={sort.key} dir={sort.dir} onClick={onSort} />
-          <SortHeader k="since" label="SINCE" cur={sort.key} dir={sort.dir} onClick={onSort} />
-          <SortHeader k="last" label="LAST" cur={sort.key} dir={sort.dir} onClick={onSort} />
         </div>
       )}
 
@@ -95,25 +93,11 @@ function ContribRow({ c, index, isSel, onSelect }) {
         <span style={{ color: isSel ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>@{c.handle}</span>
       </div>
       <div style={{ minWidth: 0 }}>
-        <div style={{ color: BBG.ink, ...ellipsis }}>
-          {c.name}
-          <span style={{ color: roleColor(c.role), marginLeft: 8, fontSize: 10, letterSpacing: 0.5 }}>{c.role.toUpperCase()}</span>
-        </div>
-        <div style={{ display: 'flex', gap: 4, flexWrap: 'nowrap', overflow: 'hidden' }}>
-          {c.areas.slice(0, 4).map((a) => (
-            <span key={a} style={{ fontSize: 9.5, color: AREA_COLOR[a] || BBG.dim }}>
-              <span style={{ display: 'inline-block', width: 5, height: 5, background: AREA_COLOR[a] || BBG.dim, marginRight: 2 }} />
-              {a}
-            </span>
-          ))}
-        </div>
+        <div style={{ color: BBG.ink, ...ellipsis }}>{c.name}</div>
+        <div style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}><TypeTags types={c.types} max={5} /></div>
       </div>
-      <span style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}>{c.region}</span>
-      <span style={{ color: BBG.acc, fontSize: 11.5 }}>{c.commits.toLocaleString()}</span>
-      <span style={{ color: BBG.ink, fontSize: 11.5 }}>{c.prs}</span>
-      <PMBar add={c.add} del={c.del} />
-      <span style={{ color: BBG.dim, fontSize: 11 }}>{c.since}</span>
-      <span style={{ color: recentColor(c.last), fontSize: 11 }}>{c.last}</span>
+      <span style={{ color: roleColor(c.role), fontSize: 10, letterSpacing: 0.5 }}>{c.role.toUpperCase()}</span>
+      <span style={{ color: BBG.acc, fontSize: 11.5 }}>{fmtCommits(c.commits)}</span>
     </div>
   );
 }
@@ -137,16 +121,9 @@ function ContribCard({ c, index, onOpen }) {
       </div>
       <div style={{ color: BBG.ink, fontSize: 12.5 }}>{c.name}</div>
       <div style={{ color: BBG.dim, fontSize: 11, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '2px 6px' }}>
-        <span>{c.region}</span>
+        <span style={{ color: BBG.acc }}>{fmtCommits(c.commits)} commits</span>
         {dot}
-        <span style={{ color: BBG.acc }}>{c.commits.toLocaleString()} commits</span>
-        {dot}
-        <span>{c.prs} prs</span>
-        {dot}
-        <span style={{ color: BBG.ok }}>+{fmtK(c.add)}</span>
-        <span style={{ color: BBG.hot }}>-{fmtK(c.del)}</span>
-        {dot}
-        <span style={{ color: recentColor(c.last) }}>{c.last}</span>
+        <TypeTags types={c.types} size={11} />
       </div>
     </div>
   );

@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import {
-  DEFAULT_REPO, EMPTY_CONTRIB_FILTERS, activeThisWeek, applyGhEnrichment, avatarMonogram,
-  buildGhPayload, contributorTotals, deriveAreas, deriveLangs, deriveRole, filterContributors,
-  handleFromProfile, lastScore, mapContributor, mapRecentCommits, rankIn, roleColor,
-  sortContributors, sparkValues,
+  DEFAULT_REPO, EMPTY_CONTRIB_FILTERS, applyGhEnrichment, avatarMonogram, buildGhPayload, commitRank,
+  contributorTotals, deriveRole, facetOptions, filterContributors, handleFromProfile, isGhPayload,
+  isRecentCommitRows, langColor, languageShares, mapContributor, mapRecentCommits, roleColor,
+  sortContributors, sponsorUrlFor,
 } from './contributors.js';
 import { toggleFacet } from './filters.js';
 import { BBG } from './theme.js';
 
 const OWNER_RAW = {
-  login: 'ambicuity', name: 'Ritesh Rana', avatar_url: 'https://a/1', profile: 'https://github.com/ambicuity',
+  login: 'ambicuity', name: 'Ritesh Rana', avatar_url: 'https://a.example/1', profile: 'https://github.com/ambicuity',
   contributions: ['doc', 'design', 'code', 'test'],
 };
 const DEV_RAW = { login: 'dev1', name: 'Dev One', profile: 'https://github.com/dev1', contributions: ['code'] };
@@ -21,142 +21,128 @@ describe('derive helpers', () => {
     expect(deriveRole('x', ['a'])).toBe('contributor');
   });
 
-  it('deriveAreas / deriveLangs dedupe and fall back', () => {
-    expect(deriveAreas(['code', 'bug', 'doc'])).toEqual(['core', 'ui']);
-    expect(deriveAreas(['unknown'])).toEqual(['core']);
-    expect(deriveLangs(['code', 'test'])).toEqual(['Python', 'TS']);
-    expect(deriveLangs([])).toEqual(['—']);
-  });
-
   it('handleFromProfile', () => {
     expect(handleFromProfile('https://github.com/someone?tab=repos')).toBe('someone');
     expect(handleFromProfile('https://example.com/me')).toBe('example.com/me');
     expect(handleFromProfile('')).toBe('—');
   });
+
+  it('sponsorUrlFor only knows FUNDING.yml handles', () => {
+    expect(sponsorUrlFor('ambicuity')).toBe('https://github.com/sponsors/ambicuity');
+    expect(sponsorUrlFor('dev1')).toBe('');
+  });
 });
 
 describe('mapContributor', () => {
-  it('maps the owner with boosted placeholder counts', () => {
-    const c = mapContributor(OWNER_RAW);
-    expect(c).toMatchObject({
-      handle: 'ambicuity', name: 'Ritesh Rana', role: 'maintainer', last: '1d',
-      commits: 40 * 4 * 8, prs: 8 * 4 * 8, add: 900 * 32, del: 320 * 32,
-      bio: 'doc · design · code · test', social: '@ambicuity', avatar: 'https://a/1',
+  it('maps only real fields; commits unknown until GitHub stats arrive', () => {
+    expect(mapContributor(OWNER_RAW)).toEqual({
+      handle: 'ambicuity', name: 'Ritesh Rana', profile: 'https://github.com/ambicuity', avatar: 'https://a.example/1',
+      role: 'maintainer', types: ['doc', 'design', 'code', 'test'], commits: null,
+      sponsorUrl: 'https://github.com/sponsors/ambicuity',
     });
   });
 
-  it('copes with missing fields', () => {
-    const c = mapContributor({ profile: 'https://github.com/ghost' });
-    expect(c).toMatchObject({ handle: 'ghost', name: '—', role: 'contributor', bio: '—', commits: 40, last: '—' });
+  it('copes with missing fields and drops unsafe URLs', () => {
+    const c = mapContributor({ profile: 'https://github.com/ghost', avatar_url: 'javascript:alert(1)', contributions: ['code', 'code', 3] });
+    expect(c).toMatchObject({ handle: 'ghost', name: '—', role: 'contributor', types: ['code'], avatar: '', sponsorUrl: '' });
+    expect(mapContributor({ login: 'x', profile: 'javascript:alert(1)' }).profile).toBe('');
     expect(mapContributor(null).handle).toBe('—');
   });
 });
 
-describe('applyGhEnrichment', () => {
+describe('GitHub enrichment', () => {
   const list = [mapContributor(DEV_RAW), mapContributor(OWNER_RAW)];
 
-  it('without GitHub data sorts by placeholder commits and keeps the repo', () => {
+  it('without GitHub data keeps commits unknown and the default repo', () => {
     const out = applyGhEnrichment(list, DEFAULT_REPO, null);
-    expect(out.contributors.map((c) => c.handle)).toEqual(['ambicuity', 'dev1']);
+    expect(out.contributors.every((c) => c.commits === null)).toBe(true);
     expect(out.repo).toBe(DEFAULT_REPO);
+    expect(DEFAULT_REPO.langs).toEqual([]);
+    expect(DEFAULT_REPO.stars).toBeNull();
   });
 
-  it('merges real commit counts (case-insensitive) without mutating input', () => {
-    const gh = { repo: { stars: 99 }, contribs: [{ login: 'DEV1', contributions: 500 }, { login: 'ambicuity', contributions: 1 }] };
+  it('applies real commit counts and sorts unknowns last', () => {
+    const gh = buildGhPayload({ stargazers_count: 5 }, [{ login: 'DEV1', contributions: 12 }], { total_count: 2 }, { Python: 90, JavaScript: 10 });
     const out = applyGhEnrichment(list, DEFAULT_REPO, gh);
-    expect(out.contributors[0]).toMatchObject({ handle: 'dev1', commits: 500, prs: 100, add: 12500, del: 4000 });
-    expect(out.contributors[1]).toMatchObject({ handle: 'ambicuity', commits: 1, prs: 1, add: 50, del: 20 });
-    expect(out.repo.stars).toBe(99);
-    expect(out.repo.name).toBe(DEFAULT_REPO.name);
-    expect(list[0].commits).toBe(40);
-    expect(DEFAULT_REPO.stars).toBe(0);
+    expect(out.contributors.map((c) => [c.handle, c.commits])).toEqual([['dev1', 12], ['ambicuity', null]]);
+    expect(out.repo).toMatchObject({ name: DEFAULT_REPO.name, stars: 5, prs_open: 2, langs: [['Python', 90], ['JavaScript', 10]] });
+    expect(list[0].commits).toBeNull(); // input not mutated
   });
 
-  it('leaves contributors without GitHub stats unchanged', () => {
-    const out = applyGhEnrichment(list, DEFAULT_REPO, { repo: {} });
-    expect(out.contributors.find((c) => c.handle === 'dev1').commits).toBe(40);
-  });
-});
-
-describe('buildGhPayload', () => {
-  it('normalises the three API responses', () => {
-    const out = buildGhPayload(
-      { stargazers_count: 10, forks_count: 2, subscribers_count: 3, open_issues_count: 4, license: { spdx_id: 'Apache-2.0' } },
-      [{ login: 'a', contributions: 5 }, { nope: true }, null],
-      { total_count: 7 },
-    );
-    expect(out).toEqual({
-      repo: { stars: 10, forks: 2, watchers: 3, issues: 4, prs_open: 7, license: 'Apache-2.0' },
-      contribs: [{ login: 'a', contributions: 5 }],
+  it('buildGhPayload tolerates garbage', () => {
+    expect(buildGhPayload(null, 'x', null, null)).toEqual({
+      repo: { stars: null, forks: null, issues: null, prs_open: null }, contribs: [],
     });
+    expect(buildGhPayload({ license: { spdx_id: 'MIT' } }, [{ login: 'a' }, null], null, null).repo.license).toBe('MIT');
   });
 
-  it('falls back to zeros / MIT', () => {
-    expect(buildGhPayload(null, 'x', null)).toEqual({
-      repo: { stars: 0, forks: 0, watchers: 0, issues: 0, prs_open: 0, license: 'MIT' },
-      contribs: [],
-    });
+  it('languageShares: top 4 + Other, one decimal', () => {
+    expect(languageShares({ A: 50, B: 20, C: 10, D: 10, E: 5, F: 5 }))
+      .toEqual([['A', 50], ['B', 20], ['C', 10], ['D', 10], ['Other', 10]]);
+    expect(languageShares({ Python: 592910, JavaScript: 3949, Makefile: 1809 }))
+      .toEqual([['Python', 99.0], ['JavaScript', 0.7], ['Makefile', 0.3]]);
+    expect(languageShares(null)).toEqual([]);
+    expect(languageShares([])).toEqual([]);
+    expect(languageShares({ A: 0, B: 'x' })).toEqual([]);
+  });
+
+  it('isGhPayload validates cached shape', () => {
+    expect(isGhPayload(buildGhPayload({}, [{ login: 'a', contributions: 1 }], null, { Py: 1 }))).toBe(true);
+    expect(isGhPayload({ repo: {}, contribs: [{ login: 1 }] })).toBe(false);
+    expect(isGhPayload({ repo: [], contribs: [] })).toBe(false);
+    expect(isGhPayload({ repo: { langs: 'x' }, contribs: [] })).toBe(false);
+    expect(isGhPayload(null)).toBe(false);
   });
 });
 
 describe('filter / sort / stats', () => {
   const people = [
-    { handle: 'zed', name: 'Zed', region: '—', bio: 'code', role: 'core', areas: ['core'], langs: ['Python'], commits: 5, prs: 1, add: 10, del: 1, last: '2d', since: '2025' },
-    { handle: 'amy', name: 'Amy', region: '—', bio: 'doc', role: 'maintainer', areas: ['ui'], langs: ['TS'], commits: 50, prs: 9, add: 100, del: 5, last: '3h', since: '2024' },
-    { handle: 'bob', name: 'Bob', region: '—', bio: 'test', role: 'contributor', areas: ['ci'], langs: ['Bash'], commits: 20, prs: 4, add: 50, del: 9, last: '—', since: '2026' },
+    { handle: 'zed', name: 'Zed', role: 'core', types: ['code', 'test'], commits: 5 },
+    { handle: 'amy', name: 'Amy', role: 'maintainer', types: ['doc'], commits: 50 },
+    { handle: 'bob', name: 'Bob', role: 'contributor', types: ['code'], commits: null },
   ];
   const handles = (l) => l.map((c) => c.handle);
 
-  it('filterContributors by role / area / lang / query', () => {
+  it('facetOptions derives chips from the data', () => {
+    expect(facetOptions(people)).toEqual({ roles: ['maintainer', 'core', 'contributor'], types: ['code', 'doc', 'test'] });
+    expect(facetOptions([])).toEqual({ roles: [], types: [] });
+  });
+
+  it('filterContributors by role / type / query', () => {
     const f = EMPTY_CONTRIB_FILTERS();
     expect(handles(filterContributors(people, f, ''))).toEqual(['zed', 'amy', 'bob']);
     expect(handles(filterContributors(people, toggleFacet(f, 'role', 'core'), ''))).toEqual(['zed']);
-    expect(handles(filterContributors(people, toggleFacet(f, 'area', 'ui'), ''))).toEqual(['amy']);
-    expect(handles(filterContributors(people, toggleFacet(f, 'lang', 'Bash'), ''))).toEqual(['bob']);
+    expect(handles(filterContributors(people, toggleFacet(f, 'type', 'code'), ''))).toEqual(['zed', 'bob']);
     expect(handles(filterContributors(people, f, 'AMY'))).toEqual(['amy']);
+    expect(handles(filterContributors(people, f, 'test'))).toEqual(['zed']);
   });
 
-  it('sortContributors by each key and direction', () => {
-    expect(handles(sortContributors(people, 'commits', 1))).toEqual(['amy', 'bob', 'zed']);
-    expect(handles(sortContributors(people, 'commits', -1))).toEqual(['zed', 'bob', 'amy']);
-    expect(handles(sortContributors(people, 'prs', 1))).toEqual(['amy', 'bob', 'zed']);
-    expect(handles(sortContributors(people, 'add', 1))).toEqual(['amy', 'bob', 'zed']);
+  it('sortContributors by commits (unknown last) and handle', () => {
+    expect(handles(sortContributors(people, 'commits', 1))).toEqual(['amy', 'zed', 'bob']);
+    expect(handles(sortContributors(people, 'commits', -1))).toEqual(['bob', 'zed', 'amy']);
     expect(handles(sortContributors(people, 'handle', 1))).toEqual(['amy', 'bob', 'zed']);
-    expect(handles(sortContributors(people, 'last', 1))).toEqual(['amy', 'zed', 'bob']);
-    expect(handles(sortContributors(people, 'since', 1))).toEqual(['amy', 'zed', 'bob']);
     expect(handles(sortContributors(people, 'nope', 1))).toEqual(['zed', 'amy', 'bob']);
   });
 
-  it('lastScore converts h/d to hours', () => {
-    expect(lastScore('5h')).toBe(5);
-    expect(lastScore('2d')).toBe(48);
-    expect(lastScore('—')).toBe(999);
-    expect(lastScore(undefined)).toBe(999);
+  it('contributorTotals / commitRank ignore unknown counts', () => {
+    expect(contributorTotals(people)).toEqual({ commits: 55, known: 2 });
+    expect(contributorTotals([])).toEqual({ commits: 0, known: 0 });
+    expect(commitRank(people, people[0])).toBe(2);
+    expect(commitRank(people, people[1])).toBe(1);
+    expect(commitRank(people, people[2])).toBeNull();
+    expect(commitRank(people, null)).toBeNull();
   });
 
-  it('contributorTotals / activeThisWeek / rankIn', () => {
-    expect(contributorTotals(people)).toEqual({ commits: 75, prs: 14, add: 160, del: 15 });
-    expect(contributorTotals([])).toEqual({ commits: 0, prs: 0, add: 0, del: 0 });
-    expect(activeThisWeek(people)).toBe(2);
-    expect(rankIn(people, 'commits', people[2])).toBe(2);
-  });
-
-  it('roleColor', () => {
+  it('roleColor / langColor', () => {
     expect(roleColor('maintainer')).toBe(BBG.acc);
     expect(roleColor('core')).toBe(BBG.acc2);
     expect(roleColor('contributor')).toBe(BBG.dim);
+    expect(langColor('Other')).toBe(BBG.dim);
+    expect(langColor('Brainfuck')).toBe(BBG.acc);
   });
 });
 
-describe('decorative helpers', () => {
-  it('sparkValues is deterministic, 26 points, floored at 0.05', () => {
-    const a = sparkValues('amy');
-    expect(a).toHaveLength(26);
-    expect(sparkValues('amy')).toEqual(a);
-    expect(Math.min(...a)).toBeGreaterThanOrEqual(0.05);
-    expect(sparkValues(undefined)).toEqual(sparkValues('a'));
-  });
-
+describe('avatars and commits', () => {
   it('avatarMonogram gives a stable hue and initials', () => {
     const m = avatarMonogram('ab-cd');
     expect(m.initials).toBe('AB');
@@ -166,15 +152,26 @@ describe('decorative helpers', () => {
     expect(avatarMonogram('')).toEqual({ hue: 0, initials: '' });
   });
 
-  it('mapRecentCommits keeps sha7, first message line and url', () => {
+  it('mapRecentCommits keeps sha7, first line, raw date and a safe url', () => {
     const rows = mapRecentCommits([
-      { sha: '0123456789', commit: { message: 'feat: x\n\nbody', author: { date: '2026-09-24T00:00:00Z' } }, html_url: 'u' },
+      { sha: '0123456789abcdef', commit: { message: 'feat: x\n\nbody', author: { date: '2026-09-24T00:00:00Z' } }, html_url: 'https://github.com/o/r/commit/0123456' },
+      { sha: 'abcdef0123', commit: { message: 'y' }, html_url: 'javascript:alert(1)' },
+      { sha: 'not-a-sha' },
       {},
-    ], () => '1d');
-    expect(rows).toEqual([
-      { sha: '0123456', msg: 'feat: x', ago: '1d', url: 'u' },
-      { sha: '', msg: '', ago: '1d', url: '' },
     ]);
-    expect(mapRecentCommits(null, () => '')).toEqual([]);
+    expect(rows).toEqual([
+      { sha: '0123456', msg: 'feat: x', date: '2026-09-24T00:00:00Z', url: 'https://github.com/o/r/commit/0123456' },
+      { sha: 'abcdef0', msg: 'y', date: '', url: 'https://github.com/ambicuity/New-Grad-Jobs/commit/abcdef0123' },
+    ]);
+    expect(mapRecentCommits(null)).toEqual([]);
+    expect(isRecentCommitRows(rows)).toBe(true);
+  });
+
+  it('isRecentCommitRows rejects malformed cache data', () => {
+    expect(isRecentCommitRows([])).toBe(true);
+    expect(isRecentCommitRows(null)).toBe(false);
+    expect(isRecentCommitRows([{ sha: 'zzz', msg: '', date: '', url: '' }])).toBe(false);
+    expect(isRecentCommitRows([{ sha: 'abcdef0', msg: 'm', date: '', url: 'javascript:alert(1)' }])).toBe(false);
+    expect(isRecentCommitRows([{ sha: 'abcdef0', msg: 1, date: '', url: '' }])).toBe(false);
   });
 });
