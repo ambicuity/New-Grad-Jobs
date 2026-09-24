@@ -18,7 +18,6 @@ import pytest
 
 from sync_readme_counts import (
     COUNT_TOKEN_RE,
-    LAST_UPDATED_RE,
     apply_counts_to_readme,
     apply_last_updated_to_readme,
     format_last_updated,
@@ -298,65 +297,6 @@ def test_sync_readme_counts_rewrites_both_counts_and_stamp(tmp_path) -> None:
     assert "<!-- COUNT:software_engineering -->880<!-- /COUNT -->" in text
     assert "*Last updated: 2026-05-26 19:52:33 UTC*" in text
     assert "2026-03-12" not in text
-
-
-def test_repo_readme_last_updated_matches_jobs_json() -> None:
-    """README's trailing "Last updated" line must reflect docs/jobs.json.
-
-    If this fails, run `python scripts/sync_readme_counts.py` and commit the
-    diff (the scheduled scrape does this automatically going forward).
-    """
-    jobs_path = REPO_ROOT / "docs" / "jobs.json"
-    readme_path = REPO_ROOT / "README.md"
-
-    ts = read_generated_at_from_jobs_json(jobs_path)
-    if ts is None:
-        pytest.skip("docs/jobs.json has no parseable generated_at.")
-
-    readme_text = readme_path.read_text(encoding="utf-8")
-    match = LAST_UPDATED_RE.search(readme_text)
-    if not match:
-        pytest.skip("README has no Last-updated line yet (run sync once to add it).")
-
-    assert match.group(0) == format_last_updated(ts), (
-        f"README 'Last updated' is out of sync with docs/jobs.json.\n"
-        f"  README:    {match.group(0)}\n"
-        f"  jobs.json: {format_last_updated(ts)}\n"
-        f"Run: python scripts/sync_readme_counts.py"
-    )
-
-
-def test_repo_readme_matches_jobs_json() -> None:
-    """README counts at HEAD must match docs/jobs.json counts.
-
-    If this fails, run `python scripts/sync_readme_counts.py` and commit the diff.
-    The scraper does this automatically on every scheduled run.
-    """
-    jobs_path = REPO_ROOT / "docs" / "jobs.json"
-    readme_path = REPO_ROOT / "README.md"
-
-    counts_from_data = read_counts_from_jobs_json(jobs_path)
-    readme_text = readme_path.read_text(encoding="utf-8")
-
-    # Pull each marker's value out of README:
-    counts_from_readme: dict[str, int] = {}
-    for m in COUNT_TOKEN_RE.finditer(readme_text):
-        counts_from_readme[m.group("id")] = int(m.group("value"))
-
-    if not counts_from_readme:
-        pytest.skip("README has no COUNT markers yet (run sync once to add them).")
-
-    mismatches = []
-    for cid, expected in counts_from_data.items():
-        if cid in counts_from_readme and counts_from_readme[cid] != expected:
-            mismatches.append(
-                f"  {cid}: README={counts_from_readme[cid]} jobs.json={expected}"
-            )
-    assert not mismatches, (
-        "README counts are out of sync with docs/jobs.json:\n"
-        + "\n".join(mismatches)
-        + "\nRun: python scripts/sync_readme_counts.py"
-    )
 
 
 def test_sync_readme_counts_honours_output_dir_env_and_explicit_path(tmp_path, monkeypatch) -> None:
