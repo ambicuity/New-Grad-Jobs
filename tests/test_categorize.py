@@ -9,6 +9,8 @@ like Software Engineering, Data ML, Quant Finance, etc., based on title keywords
 import os
 import sys
 
+import pytest
+
 # Ensure the scripts directory is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
@@ -365,3 +367,96 @@ def test_network_security_stays_infrastructure():
     # before the security keyword match).
     result = categorize_job("Network Security Engineer")
     assert result["id"] == "infrastructure_sre"
+
+
+class TestCategorizeTitleFirst:
+    """The title decides; the description is only a fallback (audit fix)."""
+
+    def test_tpm_in_swe_description_does_not_make_pm(self):
+        result = categorize_job(
+            "Software Engineer, New Grad",
+            "You will work closely with our TPM and product managers.",
+        )
+        assert result["id"] == "software_engineering"
+
+    def test_data_scientist_title_beats_swe_description(self):
+        result = categorize_job(
+            "Data Scientist II",
+            "Partner with a software engineer to ship models to our infrastructure.",
+        )
+        assert result["id"] == "data_ml"
+
+    def test_data_engineer_title_beats_infra_description(self):
+        result = categorize_job(
+            "Data Engineer, New Grad",
+            "Pairs with a full stack developer; our SRE team runs the infrastructure.",
+        )
+        assert result["id"] == "data_engineering"
+
+    def test_ml_title_beats_swe_description(self):
+        result = categorize_job(
+            "Machine Learning Engineer",
+            "Collaborate with every software engineer on the team.",
+        )
+        assert result["id"] == "data_ml"
+
+    def test_technical_program_manager_title_is_pm(self):
+        result = categorize_job("Technical Program Manager, Infrastructure")
+        assert result["id"] == "product_management"
+
+    def test_title_priority_order_is_preserved(self):
+        """Within the title, CATEGORY_PATTERNS order still decides ties."""
+        assert categorize_job("Frontend Software Engineer")["id"] == "frontend"
+        assert categorize_job("Software Engineer, Machine Learning")["id"] == "software_engineering"
+
+    def test_description_used_when_title_matches_nothing(self):
+        result = categorize_job("Associate", "Build deep learning models for ranking.")
+        assert result["id"] == "data_ml"
+
+    def test_description_never_selects_title_driven_category(self):
+        result = categorize_job("Associate", "Partner with the frontend team daily.")
+        assert result["id"] == "other"
+
+    def test_keywords_still_need_word_boundaries(self):
+        assert categorize_job("Etiquette Coach")["id"] == "other"  # 'etl' inside word
+
+
+class TestCompanyTierNormalization:
+    """Exact-string matching missed common name variants (audit fix)."""
+
+    @pytest.mark.parametrize("name, tier", [
+        ("Anduril Industries", "unicorn"),
+        ("Snap Inc.", "faang_plus"),
+        ("JPMorganChase", "faang_plus"),
+        ("JPMorgan Chase & Co.", "faang_plus"),
+        ("Amazon.com", "faang_plus"),
+        ("Amazon.com Services LLC", "other"),  # extra words: no fuzzy merge
+        ("Hewlett Packard Enterprise | HPE", "faang_plus"),
+        ("apple", "faang_plus"),
+        ("NVIDIA Corporation", "faang_plus"),
+        ("The Walt Disney Company", "faang_plus"),
+        ("Unity Technologies", "unicorn"),
+        ("Unity", "unicorn"),
+        ("Checkout.com", "unicorn"),
+    ])
+    def test_variants_resolve_to_tier(self, name, tier):
+        assert get_company_tier(name)["tier"] == tier
+
+    def test_sectors_follow_normalized_name(self):
+        assert "defense" in get_company_tier("Anduril Industries")["sectors"]
+        assert "finance" in get_company_tier("JPMorganChase")["sectors"]
+
+    @pytest.mark.parametrize("name", [
+        "Snapdragon Labs",  # prefix of Snap
+        "Metabase",  # prefix of Meta
+        "Applied Materials",  # starts like Apple
+        "Circle K",  # 'Circle' fintech vs convenience store
+        "Sierra Nevada Corporation",  # 'Sierra' unicorn
+        "Amazon Web Services",  # different entity string, no fuzzy merge
+        "",
+    ])
+    def test_no_false_merges(self, name):
+        assert get_company_tier(name)["tier"] == "other"
+
+    def test_non_string_company_is_other(self):
+        assert get_company_tier(None)["tier"] == "other"
