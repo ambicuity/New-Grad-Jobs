@@ -84,6 +84,7 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             max_workers=settings.workday_max_workers,
             search_keywords=settings.workday_search_keywords,
             max_jobs_per_keyword=settings.workday_max_jobs_per_keyword,
+            max_seconds_per_company=settings.workday_max_seconds_per_company,
             title_filter=build_title_prefilter(config.get('filtering') or config.get('filters')),
         )
 

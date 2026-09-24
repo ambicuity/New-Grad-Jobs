@@ -53,6 +53,9 @@ DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD = 200
 # Keyword queries run concurrently per tenant (tenants themselves run in parallel
 # up to apis.workday.max_workers), keeping per-host load to a few requests.
 DEFAULT_WORKDAY_KEYWORD_WORKERS = 3
+# Per-company time budget: a slow tenant (RBC: ~7s per search page) keeps the
+# pages fetched so far instead of becoming the long pole of the whole run.
+DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY = 45
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -98,6 +101,7 @@ class Settings:
     workday_max_workers: int = DEFAULT_WORKDAY_MAX_WORKERS
     workday_search_keywords: tuple[str, ...] = ()
     workday_max_jobs_per_keyword: int = DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD
+    workday_max_seconds_per_company: int = DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -193,6 +197,9 @@ def build_settings(
         workday_max_jobs_per_keyword=coerce_positive_int(
             workday_search.get("max_jobs_per_keyword"), DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD,
             "apis.workday.search_filters.max_jobs_per_keyword"),
+        workday_max_seconds_per_company=coerce_positive_int(
+            workday.get("max_seconds_per_company"), DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY,
+            "apis.workday.max_seconds_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),

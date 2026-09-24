@@ -203,6 +203,11 @@ class _Tenant:
     page_limit: int
     max_retries: int
     timeout: int
+    # time.monotonic() after which no new page is requested (None: no budget).
+    deadline: float | None = None
+
+    def out_of_time(self) -> bool:
+        return self.deadline is not None and time.monotonic() >= self.deadline
 
 
 @dataclass
@@ -213,6 +218,7 @@ class _QueryResult:
     raw_count: int = 0
     pages: int = 0
     error: SourceError | None = None
+    out_of_time: bool = False
 
 
 def _page_error(tenant: _Tenant, response: requests.Response) -> SourceError:
@@ -250,6 +256,9 @@ def _crawl_search(
     while result.raw_count < cap:
         if ngj_http.SOURCE_COOLDOWN.is_tripped(tenant.api_url):
             break  # a sibling query hit the 403 cooldown
+        if tenant.out_of_time():
+            result.out_of_time = True
+            break
         payload = {"appliedFacets": {}, "limit": tenant.page_limit, "offset": offset, "searchText": search_text}
         try:
             response = _post_page(tenant.company_name, tenant.api_url, payload, tenant.headers,
@@ -313,6 +322,7 @@ def _fetch_workday_company(
     max_jobs_per_keyword: int = DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD,
     title_filter: TitleFilter | None = None,
     keyword_workers: int = DEFAULT_WORKDAY_KEYWORD_WORKERS,
+    max_seconds: float | None = None,
 ) -> SourceResult:
     """Fetch one Workday company's jobs. Never raises: failures become SourceErrors."""
     company_name = company.get('name')
@@ -342,7 +352,8 @@ def _fetch_workday_company(
         csrf_token = get_workday_csrf_token(workday_url, ngj_http.get_session(), timeout=timeout)
         if csrf_token:
             headers['X-Calypso-CSRF-Token'] = csrf_token
-        tenant = _Tenant(company_name, host, api_url, headers, page_limit, max_retries, timeout)
+        deadline = time.monotonic() + max_seconds if max_seconds else None
+        tenant = _Tenant(company_name, host, api_url, headers, page_limit, max_retries, timeout, deadline)
 
         if search_keywords:
             queries = [(keyword, max_jobs_per_keyword) for keyword in search_keywords]
@@ -359,6 +370,10 @@ def _fetch_workday_company(
             logger.info("  ℹ️  %s: Reached safety limit of %s jobs. Truncating.", company_name, max_total_limit)
             jobs = jobs[:max_total_limit]
 
+        if any(q.out_of_time for q in results):
+            # Slow tenant: keep what the time budget allowed rather than hold up the run.
+            logger.info("  ⏱️  %s: %ss Workday time budget used up; keeping %s jobs",
+                        company_name, max_seconds, len(jobs))
         raw_count = sum(q.raw_count for q in results)
         errors = tuple(q.error for q in results if q.error is not None)[:1]
         if not errors:
@@ -413,6 +428,7 @@ def fetch_workday_jobs(
     max_jobs_per_keyword: int | None = None,
     title_filter: TitleFilter | None = None,
     keyword_workers: int | None = None,
+    max_seconds_per_company: float | None = None,
 ) -> SourceResult:
     """Fetch Workday companies in parallel.
 
@@ -446,7 +462,7 @@ def fetch_workday_jobs(
         return [
             (index, _fetch_workday_company(
                 company, page_limit, max_total_limit, max_retries, timeout,
-                keywords, max_jobs_per_keyword, title_filter, keyword_workers,
+                keywords, max_jobs_per_keyword, title_filter, keyword_workers, max_seconds_per_company,
             ))
             for index, company in group
         ]

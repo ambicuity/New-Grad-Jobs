@@ -167,6 +167,25 @@ def test_request_timeout_in_one_keyword_keeps_the_company_jobs():
     assert [e.kind for e in result.errors] == [KIND_TIMEOUT]
 
 
+def test_time_budget_keeps_collected_jobs_and_stops_paging(monkeypatch, caplog):
+    import logging
+
+    caplog.set_level(logging.INFO)
+    now = [0.0]
+    monkeypatch.setattr("ngj.sources.workday.time.monotonic", lambda: now[0])
+    tenant = FakeTenant({"new grad": [_item(f"/job/{i}") for i in range(100)]})
+
+    def slow_post(url, json=None, **kwargs):
+        now[0] += 100.0  # every page takes longer than the whole budget
+        return tenant(url, json=json, **kwargs)
+
+    result = _fetch(slow_post, search_keywords=["new grad"], max_seconds_per_company=45, keyword_workers=1)
+    assert tenant.pages_for("new grad") == [0]
+    assert len(result.jobs) == 20
+    assert result.errors == ()
+    assert "time budget" in caplog.text
+
+
 def test_server_error_page_is_retried_once_then_succeeds():
     responses = iter([_resp([], status=502, body={}), _resp([_item("/job/1")])])
     with (
