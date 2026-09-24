@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Guard that the job-category taxonomy stays in sync across every surface.
 
-The scraper's ``CATEGORY_PATTERNS`` (scripts/update_jobs.py) is the single
+The scraper's ``CATEGORY_PATTERNS`` (scripts/ngj/taxonomy.py) is the single
 source of truth. These tests fail if the README count markers or the terminal
 website (site/src/lib/taxonomy.js) drift away from it — the exact bug where
 ``product_management`` and ``quant_finance`` existed in the data but were

@@ -1,7 +1,7 @@
 """Job categories and company tiers.
 
 ``CATEGORY_PATTERNS`` is the single source of truth for category ids: the
-README COUNT markers and the terminal site (docs/terminal/data.jsx) are
+README COUNT markers and the site (site/src/lib/taxonomy.js) are
 checked against it by tests/test_category_taxonomy_sync.py.
 """
 

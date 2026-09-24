@@ -2,7 +2,7 @@
 """Tests for the publish-time URL safety gate (scripts/url_safety.py).
 
 The gate is the last guard before URLs are written into the public
-``docs/jobs.json`` artifact, so the emphasis here is on *not leaking* internal
+published ``jobs.json`` artifact, so the emphasis here is on *not leaking* internal
 targets while never rejecting a legitimate ATS link.
 """
 

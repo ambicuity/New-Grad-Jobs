@@ -37,7 +37,7 @@ def _scraper_ast() -> ast.Module:
 
 
 def test_scraper_does_not_define_generate_readme() -> None:
-    """generate_readme must not be defined or called in update_jobs.py."""
+    """generate_readme must not be defined or called anywhere in the scraper."""
     tree = _scraper_ast()
     # Check: no function definition
     defined = [
@@ -46,7 +46,7 @@ def test_scraper_does_not_define_generate_readme() -> None:
         if isinstance(node, ast.FunctionDef)
     ]
     assert "generate_readme" not in defined, (
-        "generate_readme is defined in update_jobs.py — README.md "
+        "generate_readme is defined in the scraper (scripts/ngj) — README.md "
         "generation was re-introduced.  See issue #156."
     )
     # Check: no call site (ast.Name or ast.Attribute)
@@ -60,7 +60,7 @@ def test_scraper_does_not_define_generate_readme() -> None:
     ]
     assert not called, (
         f"generate_readme is called at line(s) "
-        f"{[n.lineno for n in called]} in update_jobs.py — README.md "
+        f"{[n.lineno for n in called]} in the scraper (scripts/ngj) — README.md "
         "generation was re-introduced.  See issue #156."
     )
 
@@ -112,11 +112,11 @@ def _check_open_args(node: ast.Call, violations: list[str]) -> None:
 
 
 def test_scraper_does_not_open_readme() -> None:
-    """update_jobs.py must not open() a path containing 'README' (any form)."""
+    """The scraper must not open() a path containing 'README' (any form)."""
     tree = _scraper_ast()
     violations = _readme_open_violations(tree)
     assert not violations, (
-        "update_jobs.py opens a README path — README.md generation "
+        "The scraper opens a README path — README.md generation "
         "was re-introduced.  See issue #156.\n" + "\n".join(violations)
     )
 
@@ -192,6 +192,6 @@ def test_scraper_uses_sync_readme_counts() -> None:
     """The pipeline must invoke sync_readme_counts (and nothing else for README)."""
     source = PIPELINE.read_text(encoding="utf-8")
     assert "sync_readme_counts" in source, (
-        "update_jobs.py does not call sync_readme_counts — README counts will "
-        "drift from docs/jobs.json. See scripts/sync_readme_counts.py."
+        "The pipeline does not call sync_readme_counts — README counts will "
+        "drift from the published jobs.json. See scripts/sync_readme_counts.py."
     )

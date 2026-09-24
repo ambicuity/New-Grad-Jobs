@@ -1,5 +1,5 @@
 // Canonical job categories — the single source of truth shared with
-// scripts/update_jobs.py (CATEGORY_PATTERNS), jobs.json (meta.categories) and
+// scripts/ngj/taxonomy.py (CATEGORY_PATTERNS), jobs.json (meta.categories) and
 // the README. tests/test_category_taxonomy_sync.py parses this file, so keep
 // the object-literal shapes below (one `key: 'CODE'` pair per entry).
 
