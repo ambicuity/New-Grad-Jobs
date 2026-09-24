@@ -9,18 +9,15 @@ import { SAVED_STORAGE_KEY } from '../lib/saved.js';
 import { URL_WRITE_DELAY_MS } from '../hooks/useUrlViewState.js';
 import { applyGhEnrichment, DEFAULT_REPO, mapContributor } from '../lib/contributors.js';
 import { App } from './shell/App.jsx';
-import { resetShardCacheForTests } from '../data/descriptions-source.js';
 
 // The real module keeps one shard cache for the page's lifetime; give each
 // test a fresh one so its fetch mock applies.
+const shardCache = vi.hoisted(() => ({ reset: () => {} }));
 vi.mock('../data/descriptions-source.js', async (importOriginal) => {
   const real = await importOriginal();
   let loader = real.createShardLoader();
-  return {
-    ...real,
-    loadDescriptionShard: (k) => loader(k),
-    resetShardCacheForTests: () => { loader = real.createShardLoader(); },
-  };
+  shardCache.reset = () => { loader = real.createShardLoader(); };
+  return { ...real, loadDescriptionShard: (k) => loader(k) };
 });
 
 // Vitest runs from site/, and import.meta.url is not a file: URL under jsdom.
@@ -66,7 +63,7 @@ function memoryStorage() {
 let shardResponse = () => Promise.resolve({ ok: true, json: () => Promise.resolve(shard) });
 beforeEach(() => {
   window.history.replaceState(null, '', '/');
-  resetShardCacheForTests();
+  shardCache.reset();
   Object.defineProperty(window, 'localStorage', { configurable: true, value: memoryStorage() });
   mockMatchMedia(false);
   shardResponse = () => Promise.resolve({ ok: true, json: () => Promise.resolve(shard) });
