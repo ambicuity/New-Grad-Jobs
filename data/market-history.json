@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-25T01:26:42.859029+00:00",
+    "last_updated": "2026-09-25T05:06:52.544727+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-27",
@@ -3610,34 +3610,34 @@
     },
     {
       "date": "2026-09-25",
-      "total_jobs": 2061,
+      "total_jobs": 2070,
       "categories": {
-        "security": 68,
-        "software_engineering": 956,
-        "data_ml": 142,
-        "frontend": 16,
+        "security": 66,
+        "software_engineering": 950,
+        "data_ml": 143,
+        "frontend": 15,
         "backend": 16,
-        "hardware": 83,
-        "infrastructure_sre": 187,
-        "data_engineering": 51,
+        "data_engineering": 52,
+        "infrastructure_sre": 190,
         "mobile": 7,
-        "other": 523,
+        "other": 535,
         "product_management": 3,
-        "quant_finance": 9
+        "quant_finance": 8,
+        "hardware": 85
       },
       "tiers": {
-        "other": 967,
-        "unicorn": 512,
-        "faang_plus": 582
+        "other": 985,
+        "unicorn": 513,
+        "faang_plus": 572
       },
       "top_companies": [
         {
           "company": "Raytheon",
-          "jobs": 189
+          "jobs": 183
         },
         {
           "company": "SpaceX",
-          "jobs": 143
+          "jobs": 144
         },
         {
           "company": "Anduril Industries",
@@ -3645,26 +3645,26 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 106
+          "jobs": 102
         },
         {
           "company": "Accenture",
-          "jobs": 95
+          "jobs": 97
         },
         {
           "company": "Leidos",
-          "jobs": 80
+          "jobs": 78
         },
         {
           "company": "Boeing",
-          "jobs": 68
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 64
+          "jobs": 66
         },
         {
           "company": "General Dynamics",
+          "jobs": 65
+        },
+        {
+          "company": "Booz Allen Hamilton",
           "jobs": 64
         },
         {
@@ -3672,9 +3672,9 @@
           "jobs": 62
         }
       ],
-      "unique_companies": 295,
-      "avg_jobs_per_company": 6.99,
-      "timestamp": "2026-09-25T01:26:42.859029+00:00"
+      "unique_companies": 291,
+      "avg_jobs_per_company": 7.11,
+      "timestamp": "2026-09-25T05:06:52.544727+00:00"
     }
   ]
 }
