@@ -74,7 +74,7 @@ export function renderAboutPage(facts, { siteUrl }) {
 </head>
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › about</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › about</nav>
 <h1>How this board works</h1>
 <p>NGJ is a fully automated board of new grad and entry-level jobs in every field. A scraper in GitHub Actions pulls postings straight from company career-site APIs (Greenhouse, Lever, Ashby, Workday) and Indeed about every 30 minutes, keeps only the roles that pass the rules below, and publishes the result as static files. There is no server, no database and no account.</p>
 

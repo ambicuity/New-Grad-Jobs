@@ -42,11 +42,9 @@ html, body { width: ${WIDTH}px; height: ${HEIGHT}px; background: #000; overflow:
 body { font-family: JBM, monospace; color: #e8e8e8; padding: 56px 72px; position: relative; }
 body::before { content: ''; position: absolute; inset: 24px; border: 2px solid #2a2a2a; }
 .bar { display: flex; align-items: center; gap: 14px; font-size: 22px; color: #6e6e6e; letter-spacing: 1px; }
-.dot { width: 14px; height: 14px; border-radius: 50%; background: #5fd28a; }
 .live { color: #5fd28a; font-weight: 700; }
-.mark { margin-top: 56px; font-size: 150px; line-height: 1; font-weight: 700; color: #ff9d3d; letter-spacing: 6px; }
+.mark { margin-top: 56px; display: inline-block; font-size: 120px; line-height: 1; font-weight: 700; color: #000; background: #ff9d3d; letter-spacing: 8px; padding: 14px 34px 10px 42px; }
 .name { margin-top: 18px; font-size: 76px; line-height: 1; font-weight: 700; color: #e8e8e8; }
-.name .sep { color: #6e6e6e; font-weight: 400; padding-right: 20px; }
 .tag { margin-top: 40px; font-size: 30px; color: #e8e8e8; }
 .tag .dim { color: #6e6e6e; }
 .prompt { position: absolute; left: 72px; bottom: 60px; font-size: 26px; color: #6e6e6e; }
@@ -54,9 +52,9 @@ body::before { content: ''; position: absolute; inset: 24px; border: 2px solid #
 .cursor { display: inline-block; width: 16px; height: 30px; background: #ff9d3d; vertical-align: -5px; margin-left: 6px; }
 .url { position: absolute; right: 72px; bottom: 60px; font-size: 24px; color: #62a3ff; }
 </style></head><body>
-<div class="bar"><span class="dot"></span><span class="live">LIVE</span><span>· updated every ~30 min</span></div>
+<div class="bar"><span class="live">LIVE</span><span>· updated every ~30 min</span></div>
 <div class="mark">NGJ</div>
-<div class="name"><span class="sep">·</span>New Grad Jobs</div>
+<div class="name">New Grad Jobs</div>
 <div class="tag">new grad &amp; entry-level roles in every field <span class="dim">straight from company career APIs</span></div>
 <div class="prompt"><b>CMD&gt;</b> filter --new-grad<span class="cursor"></span></div>
 <div class="url">jobs.riteshrana.engineer</div>

@@ -23,6 +23,7 @@ export const JOB_PAGE_CSS = [
   '.crumb{font-size:12px;color:#8a8a8a;letter-spacing:.6px;margin-bottom:18px}',
   // Underlined: inside a text line a link must not be told apart by colour alone (WCAG 1.4.1).
   '.crumb a{color:#ff9d3d}',
+  '.crumb a.brand{display:inline-block;background:#ff9d3d;color:#000;font-weight:700;letter-spacing:1px;padding:1px 6px;text-decoration:none;font-size:11px}',
   'h1{font-size:22px;line-height:1.3;margin:0 0 6px;color:#fff}',
   '.co{color:#ff9d3d;font-weight:700;letter-spacing:.4px}',
   'dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:16px 0;padding:12px 14px;border:1px solid #2a2a2a;background:#0a0a0a;font-size:13px}',
@@ -132,7 +133,7 @@ ${closed ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical"
 ${posting && !closed ? `<script type="application/ld+json">${jsonForScript(posting)}</script>\n` : ''}</head>
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="../../">NGJ</a> › jobs › ${escapeHtml(job.company)}</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="../../" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › jobs › ${escapeHtml(job.company)}</nav>
 ${closed ? '<p class="notice" role="note">This role is marked CLOSED: the employer\'s page says applications are no longer accepted. It stays here so shared links still explain themselves. <a href="../../">See open roles instead.</a></p>\n' : ''}<h1>${escapeHtml(job.title)}</h1>
 <div class="co">${escapeHtml(job.company)}</div>
 <dl>

@@ -95,7 +95,7 @@ export function renderGuidePage(guide, { siteUrl, siblings = [] }) {
   return `${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, jsonLd })}
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › <a href="${root}guides/">guides</a> › ${escapeHtml(guide.title)}</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › <a href="${root}guides/">guides</a> › ${escapeHtml(guide.title)}</nav>
 <article class="desc">
 <h1>${escapeHtml(guide.title)}</h1>
 ${guide.updated ? `<p class="dim">Updated ${escapeHtml(guide.updated)}</p>` : ''}
@@ -124,7 +124,7 @@ export function renderGuidesIndex(guides, { siteUrl }) {
   return `${head({ title: 'New Grad Job Search Guides · NGJ', description, canonical, siteUrl, root, jsonLd: null })}
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › guides</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › guides</nav>
 <h1>New grad job search guides</h1>
 <p>${escapeHtml(description)}</p>
 <div class="list"><ul>
