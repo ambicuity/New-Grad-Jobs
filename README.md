@@ -7,7 +7,7 @@
 [![Sources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fjobs.riteshrana.engineer%2Fhealth.json&query=%24.enabled_sources&label=sources&color=0a7f6f)](https://jobs.riteshrana.engineer/health.json)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
 
-**Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates.
+**Fully automated** list of entry-level positions for 2025–2027 new graduates: software, data, engineering, finance, marketing, sales, healthcare and every other field, pulled straight from company career sites.
 
 Unlike manually curated lists, this repository pulls directly from configured company APIs and refreshes **about every 30 minutes**, 24/7.
 
@@ -57,18 +57,36 @@ Experience an advanced career journey with us! 🚀
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->951<!-- /COUNT --> |
-| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->14<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
-| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->67<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->151<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->200<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->9<!-- /COUNT --> |
-| [Hardware & Mechanical Engineering](#hardware--mechanical-engineering) | <!-- COUNT:hardware -->77<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->522<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->0<!-- /COUNT --> |
+| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->0<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->0<!-- /COUNT --> |
+| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->0<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->0<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->0<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->0<!-- /COUNT --> |
+| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->0<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->0<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->0<!-- /COUNT --> |
+| [Project Management](#project-management) | <!-- COUNT:project_management -->0<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->0<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->0<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->0<!-- /COUNT --> |
+| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->0<!-- /COUNT --> |
+| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->0<!-- /COUNT --> |
+| [Marketing](#marketing) | <!-- COUNT:marketing -->0<!-- /COUNT --> |
+| [Sales](#sales) | <!-- COUNT:sales -->0<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->0<!-- /COUNT --> |
+| [Consulting](#consulting) | <!-- COUNT:consulting -->0<!-- /COUNT --> |
+| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->0<!-- /COUNT --> |
+| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->0<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->0<!-- /COUNT --> |
+| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->0<!-- /COUNT --> |
+| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->0<!-- /COUNT --> |
+| [Education and Training](#education-and-training) | <!-- COUNT:education -->0<!-- /COUNT --> |
+| [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->0<!-- /COUNT --> |
+| [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->0<!-- /COUNT --> |
+| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->0<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->0<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -307,7 +325,7 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 ### Key Features
 
-- **Terminal-aesthetic frontend (NGJ)** at [jobs.riteshrana.engineer](https://jobs.riteshrana.engineer/) — dense tabular layout rendered with JetBrains Mono, sortable by posted date / compensation / company, filterable by role (12 categories: Software Engineering, Frontend, Backend, Mobile, Security, Data Science & ML, Data Engineering, Infrastructure & SRE, Product Management, Quantitative Finance, Hardware & Mechanical, Other), remote / hybrid / onsite, stated visa or citizenship restrictions, and company tier. A contributors view shares the same chrome, every open job has its own shareable page (`/job/<job_id>/`), and [`/jobs/`](https://jobs.riteshrana.engineer/jobs/) has static landing pages by role, company, city, country, remote, visa status and "new this week", all with live counts.
+- **Terminal-aesthetic frontend (NGJ)** at [jobs.riteshrana.engineer](https://jobs.riteshrana.engineer/) — dense tabular layout rendered with JetBrains Mono, sortable by posted date / compensation / company, filterable by role (30 categories, from Software Engineering, Data Science & ML and Hardware to Finance, Marketing, Sales, Healthcare, Legal and Supply Chain), remote / hybrid / onsite, stated visa or citizenship restrictions, and company tier. A contributors view shares the same chrome, every open job has its own shareable page (`/job/<job_id>/`), and [`/jobs/`](https://jobs.riteshrana.engineer/jobs/) has static landing pages by role, company, city, country, remote, visa status and "new this week", all with live counts.
 - **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
 - **Real "About the role"** copy from each posting (Greenhouse / Ashby / Lever) is published in `descriptions/*.json` (lazy-loaded) and rendered in the detail panel.
 - **Real-time Updates**: Automatic refresh about every 30 minutes via `.github/workflows/update-jobs.yml`.
@@ -317,7 +335,7 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 ### Filtering Criteria
 
 - **New Grad Signals**: new grad, entry-level, junior, associate, campus, early career, graduate programs, entry levels ("Engineer I/II", L3/L4); titles at level III and above, senior, staff, lead, manager, intern, co-op, student and summer-analyst roles are excluded
-- **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM, Quant, Hardware. A new-grad title in another profession (nursing, sales, banking, audit, legal, supply chain, …) is dropped unless it also names a tech track, so "Software Engineer, Healthcare" stays and "New Grad Registered Nurse" does not
+- **Track Focus**: every profession, from software, data and engineering to finance, marketing, sales, HR, legal, healthcare, education and the public sector. A title needs both a new-grad signal and a recognisable role word, so a bare "Associate" never passes
 - **Recency**: Jobs posted within the last 60 days
 - **Location**: United States, Canada and India (including remote roles there)
 
@@ -338,7 +356,7 @@ The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](
 | `posted_at` | ISO 8601 | when the employer posted the role |
 | `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
 | `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
-| `category` | object | `{id, name, emoji}` — one of the 12 categories |
+| `category` | object | `{id, name, emoji}` — one of the 30 categories (`CATEGORY_PATTERNS` in `scripts/ngj/taxonomy.py`) |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
 | `is_closed` | bool | |

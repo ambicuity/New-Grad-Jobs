@@ -6,7 +6,8 @@ Humans should read [CONTRIBUTING.md](CONTRIBUTING.md). Operators should read
 
 ## What this is
 
-New Grad Jobs is an automated board of entry-level tech jobs in the US, Canada and India.
+New Grad Jobs is an automated board of entry-level jobs in every field (software, data,
+engineering, finance, marketing, sales, healthcare, …) in the US, Canada and India.
 A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, Workday) plus JobSpy
 (Indeed) about every 30 minutes in GitHub Actions. It filters for new-grad roles and
 publishes static JSON/RSS. A Vite + React site at <https://jobs.riteshrana.engineer> is

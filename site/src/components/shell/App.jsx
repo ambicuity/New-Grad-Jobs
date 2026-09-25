@@ -58,7 +58,7 @@ export function App({ jobsState, contributorsPromise }) {
       display: 'grid', gridTemplateRows: 'auto 1fr auto', overflow: 'hidden',
     }}>
       <SkipLinks tab={tab} />
-      <h1 className="ngj-sr-only">New Grad Jobs — live board of new-grad and entry-level tech roles</h1>
+      <h1 className="ngj-sr-only">New Grad Jobs — live board of new-grad and entry-level roles in every field</h1>
       <TopBar tab={tab} setTab={setTab} jobsState={jobsState} contributorsPromise={contributorsPromise} />
       <main id={MAIN_ID} tabIndex={-1} style={{ minHeight: 0, overflow: 'hidden', outline: 'none' }}>
         <div id={TABPANEL_ID} role="tabpanel" aria-labelledby={`tab-${tab}`} style={{ height: '100%' }}>

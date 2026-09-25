@@ -92,11 +92,11 @@ function describePage(kind, name, entries, generatedAt) {
   const what = {
     category: `entry-level ${name} roles`,
     company: `new grad and entry-level roles at ${name}`,
-    location: `new grad tech roles in ${name}`,
-    country: `new grad tech roles in ${name}`,
-    remote: 'remote new grad tech roles',
-    visa: 'new grad tech roles whose posting states no visa sponsorship or citizenship restriction',
-    new: 'new grad tech roles added in the last 7 days',
+    location: `new grad roles in ${name}`,
+    country: `new grad roles in ${name}`,
+    remote: 'remote new grad roles',
+    visa: 'new grad roles whose posting states no visa sponsorship or citizenship restriction',
+    new: 'new grad roles added in the last 7 days',
   }[kind];
   const at = kind === 'company' ? '' : ` at ${companies} ${companies === 1 ? 'company' : 'companies'}`;
   const remoteNote = kind === 'remote' || remote === 0 ? '' : `, ${remote} remote`;
@@ -106,11 +106,11 @@ function describePage(kind, name, entries, generatedAt) {
 const TITLES = {
   category: (name, n) => [`New Grad ${name} Jobs (${n} open) · NGJ`, `New grad ${name} jobs`],
   company: (name, n) => [`New Grad Jobs at ${name} (${n} open) · NGJ`, `New grad jobs at ${name}`],
-  location: (name, n) => [`New Grad Tech Jobs in ${name} (${n} open) · NGJ`, `New grad tech jobs in ${name}`],
-  country: (name, n) => [`New Grad Tech Jobs in ${name} (${n} open) · NGJ`, `New grad tech jobs in ${name}`],
-  remote: (name, n) => [`Remote New Grad Tech Jobs (${n} open) · NGJ`, 'Remote new grad tech jobs'],
+  location: (name, n) => [`New Grad Jobs in ${name} (${n} open) · NGJ`, `New grad jobs in ${name}`],
+  country: (name, n) => [`New Grad Jobs in ${name} (${n} open) · NGJ`, `New grad jobs in ${name}`],
+  remote: (name, n) => [`Remote New Grad Jobs (${n} open) · NGJ`, 'Remote new grad jobs'],
   visa: (name, n) => [`New Grad Jobs With No Visa Restriction Stated (${n} open) · NGJ`, 'New grad jobs with no visa or citizenship restriction stated'],
-  new: (name, n) => [`New Grad Tech Jobs Added This Week (${n} open) · NGJ`, 'New grad tech jobs added this week'],
+  new: (name, n) => [`New Grad Jobs Added This Week (${n} open) · NGJ`, 'New grad jobs added this week'],
 };
 
 function makePage(kind, name, path, boardQuery, entries, generatedAt) {
@@ -370,7 +370,7 @@ export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs }
   const root = rootFrom(hub.path);
   const canonical = landingPageUrl(siteUrl, hub.path);
   const title = `Browse New Grad Jobs by Role, Company and City (${totalJobs} open) · NGJ`;
-  const description = `${totalJobs} new grad and entry-level tech roles, grouped by role, company, city and work setup. Every count is live from company career-site APIs, refreshed about every 30 minutes.${generatedAt ? ` Updated ${formatDate(generatedAt)}.` : ''}`;
+  const description = `${totalJobs} new grad and entry-level roles, grouped by role, company, city and work setup. Every count is live from company career-site APIs, refreshed about every 30 minutes.${generatedAt ? ` Updated ${formatDate(generatedAt)}.` : ''}`;
   const sections = HUB_SECTIONS.map(([key, label]) => {
     const pages = hub.pages.filter((p) => sectionOf(p) === key);
     if (!pages.length) return '';

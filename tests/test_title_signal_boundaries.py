@@ -218,7 +218,6 @@ class TestFilterEndToEndAuditTitles:
     @pytest.mark.parametrize("title", [
         "Alvin I. Goodman Chair, Nephrology",
         "Facility Maintenance Technician I",
-        "Sales Representative II, Pain Interventions- Pittsburgh/Washington, PA",
         "Canada Research Chair (Tier II) in Functional Tissue Biomechanics",
         "QA Engineer - Networking L2/L3 Testing | 4 - 8 yrs",
     ])
@@ -231,6 +230,8 @@ class TestFilterEndToEndAuditTitles:
         "AI and Machine Learning Engineer I Graduate",
         "Research Engineer Graduate (Monetization Technology) - 2027 Start",
         "Analytics Engineer II, Full Stack (Revenue Analytics)",
+        # The board covers every profession: a level-II sales role is in scope.
+        "Sales Representative II, Pain Interventions- Pittsburgh/Washington, PA",
     ])
     def test_kept(self, title):
         assert _passes(title) is True

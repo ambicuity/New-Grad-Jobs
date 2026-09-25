@@ -836,11 +836,8 @@ class TestExclusionSignalWordBoundaries:
 
 
 # ---------------------------------------------------------------------------
-# Precision: co-ops / students and non-tech roles must not reach the board
+# Precision: co-ops / students never reach the board; every profession is in scope
 # ---------------------------------------------------------------------------
-
-from ngj.filters import DEFAULT_NON_TECH_SIGNALS, has_non_tech_signal  # noqa: E402
-
 
 def _precision_config():
     """Production-shaped config: strong signals pass without a track signal."""
@@ -849,7 +846,7 @@ def _precision_config():
         strong_new_grad_signals=["new grad", "new graduate", "2027"],
         new_grad_signals=["new grad", "new graduate", "junior", "associate", "2027", "software engineer"],
         exclusion_signals=["senior", "intern", "co-op", "coop", "student", "summer analyst", "summer associate"],
-        track_signals=["software", "engineer", "developer", "data", "quantitative"],
+        track_signals=["software", "engineer", "developer", "data", "quantitative", "marketing", "nurse", "analyst"],
     )
     return config
 
@@ -875,78 +872,20 @@ class TestCoopAndStudentExclusion:
         assert len(filter_jobs(jobs, _precision_config())) == 1
 
 
-class TestNonTechSignal:
+class TestEveryProfessionIsInScope:
+    """The board covers every field: a new-grad signal plus any configured track word passes."""
+
     @pytest.mark.parametrize(
         "title",
         [
             "New Graduate Registered Nurse (RN) - Neuro Med/Surg",
-            "Oak Street Health New Graduate Nurse Practitioner Fellowship",
-            "Certified Dental Assistant Level I/II (New Grad and Experienced)",
-            "Emerging Sales Associate - August 2027",
-            "2027 | Americas | Dallas Metro Area | Legal | New Analyst",
-            "Banking, Investment Banking, Full Time Analyst, Houston - US 2027",
-            "Associate Specialist Supply Chain Management 2027",
-            "Dec 2026 Grads: Sales Development Representative",
-            "New Grad, CPA",
-            "Human Resources Associate, 2027 Start",
+            "Junior Marketing Analyst",
+            "Associate Data Analyst",
+            "Investment Banking Analyst - 2027 Start",
         ],
     )
-    def test_non_tech_titles_are_detected(self, title):
-        assert has_non_tech_signal(title, None) is True
-
-    @pytest.mark.parametrize(
-        "title",
-        [
-            "Software Engineer, New Grad",
-            "Data Scientist II",
-            "Quantitative Analyst - New Grad 2027",
-            "Maintenance Planner",  # "rn"/"ai" never match inside a word
-        ],
-    )
-    def test_tech_titles_are_not_detected(self, title):
-        assert has_non_tech_signal(title, None) is False
-
-    def test_none_means_the_builtin_defaults(self):
-        assert "nurse" in DEFAULT_NON_TECH_SIGNALS
-        assert has_non_tech_signal("New Grad Nurse", None) is True
-
-    def test_explicit_list_overrides_defaults(self):
-        assert has_non_tech_signal("New Grad Nurse", ["barista"]) is False
-        assert has_non_tech_signal("New Grad Barista", ["barista"]) is True
-
-    def test_non_string_title_is_false(self):
-        assert has_non_tech_signal(None, None) is False
-
-
-class TestNonTechGate:
-    @pytest.mark.parametrize(
-        "title",
-        [
-            "New Graduate Registered Nurse (RN) - Neuro Med/Surg",
-            "Emerging Sales Associate - August 2027",
-            "Banking, Investment Banking, Full Time Analyst, Houston - US 2027",
-            "Associate Logistics Planner 2027",
-        ],
-    )
-    def test_non_tech_title_without_track_signal_is_excluded(self, title):
-        assert filter_jobs([_make_job(title=title)], _precision_config()) == []
-
-    @pytest.mark.parametrize(
-        "title",
-        [
-            "Software Engineer, Healthcare - New Grad",
-            "Associate Data Scientist, Marketing",
-            "Marketing Systems Engineer, New Grad 2027",
-            "Quantitative Trading Analyst - New Grad 2027",
-        ],
-    )
-    def test_tech_role_in_a_non_tech_domain_is_kept(self, title):
+    def test_non_software_new_grad_titles_pass(self, title):
         assert len(filter_jobs([_make_job(title=title)], _precision_config())) == 1
 
-    def test_config_list_overrides_the_defaults(self):
-        config = _precision_config()
-        config["filtering"]["non_tech_signals"] = ["barista"]
-        nurse = _make_job(title="New Graduate Registered Nurse")
-        barista = _make_job(title="New Grad Barista")
-        kept = filter_jobs([nurse, barista], config)
-        assert [j["title"] for j in kept] == ["New Graduate Registered Nurse"]
+    def test_bare_new_grad_signal_without_a_role_word_is_still_rejected(self):
+        assert filter_jobs([_make_job(title="Associate")], _precision_config()) == []

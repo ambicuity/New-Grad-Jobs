@@ -14,17 +14,45 @@ export const CATEGORY_TYPE = {
   security: 'SEC',
   data_ml: 'ML',
   data_engineering: 'DATA',
+  data_analyst: 'ANALYST',
+  business_analyst: 'BIZ',
   infrastructure_sre: 'INFRA',
   product_management: 'PM',
+  project_management: 'PROJ',
   quant_finance: 'QUANT',
   hardware: 'HW',
+  engineering: 'ENG',
+  design: 'DESIGN',
+  marketing: 'MKT',
+  sales: 'SALES',
+  accounting_finance: 'FIN',
+  consulting: 'CONSULT',
+  human_resources: 'HR',
+  legal: 'LEGAL',
+  customer_support: 'SUPPORT',
+  supply_chain: 'SUPPLY',
+  healthcare: 'HEALTH',
+  education: 'EDU',
+  public_sector: 'GOV',
+  arts_entertainment: 'ARTS',
+  management: 'MGMT',
   other: 'OTHER',
 };
 
-export const TYPE_LABEL = { SWE: 'swe', FE: 'frontend', BE: 'backend', MOBILE: 'mobile', SEC: 'security', ML: 'ml', DATA: 'data', INFRA: 'infra', PM: 'product', QUANT: 'quant', HW: 'hardware', OTHER: 'other' };
+export const TYPE_LABEL = {
+  SWE: 'swe', FE: 'frontend', BE: 'backend', MOBILE: 'mobile', SEC: 'security', ML: 'ml', DATA: 'data eng',
+  ANALYST: 'data analyst', BIZ: 'business analyst', INFRA: 'infra', PM: 'product', PROJ: 'project', QUANT: 'quant',
+  HW: 'hardware', ENG: 'engineering', DESIGN: 'design', MKT: 'marketing', SALES: 'sales', FIN: 'finance',
+  CONSULT: 'consulting', HR: 'hr', LEGAL: 'legal', SUPPORT: 'support', SUPPLY: 'supply chain', HEALTH: 'healthcare',
+  EDU: 'education', GOV: 'government', ARTS: 'arts & media', MGMT: 'management', OTHER: 'other',
+};
 
-// Order of the ROLE filter chips.
-export const TYPE_ORDER = ['SWE', 'FE', 'BE', 'MOBILE', 'SEC', 'ML', 'DATA', 'INFRA', 'PM', 'QUANT', 'HW', 'OTHER'];
+// Order of the ROLE filter chips: tech tracks first, then business functions.
+export const TYPE_ORDER = [
+  'SWE', 'FE', 'BE', 'MOBILE', 'SEC', 'ML', 'DATA', 'ANALYST', 'INFRA', 'PM', 'PROJ', 'QUANT', 'HW', 'ENG',
+  'DESIGN', 'BIZ', 'MKT', 'SALES', 'FIN', 'CONSULT', 'HR', 'LEGAL', 'SUPPORT', 'SUPPLY', 'HEALTH', 'EDU', 'GOV',
+  'ARTS', 'MGMT', 'OTHER',
+];
 
 // company_tier.tier exactly as the scraper publishes it. The feed has no
 // headcount data, so the rail shows the tier itself rather than a size guess.

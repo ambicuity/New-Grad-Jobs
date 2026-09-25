@@ -21,13 +21,11 @@ from ngj.taxonomy import is_engineering_network_title
 __all__ = [
     'DEFAULT_EXCLUSION_SIGNALS',
     'DEFAULT_LEVEL_SIGNALS',
-    'DEFAULT_NON_TECH_SIGNALS',
     'DEFAULT_STRONG_NEW_GRAD_SIGNALS',
     'filter_jobs',
     'find_padded_signals',
     'has_excluded_level',
     'has_new_grad_signal',
-    'has_non_tech_signal',
     'has_strong_new_grad_signal',
     'has_track_signal',
     'is_title_excluded',
@@ -55,24 +53,6 @@ DEFAULT_STRONG_NEW_GRAD_SIGNALS: tuple[str, ...] = (
 # matched as standalone level tokens ("Engineer I", "SDE II", "(L3)").
 DEFAULT_LEVEL_SIGNALS: tuple[str, ...] = ('I', 'II', 'L3', 'L4', 'E3', 'E4')
 
-# Used when config.yml has no filtering.non_tech_signals. A title carrying one
-# of these is a non-tech role ("New Grad Registered Nurse", "Investment Banking
-# Analyst 2027") and is dropped *unless* it also carries a track signal, so
-# "Software Engineer, Healthcare" and "Data Scientist, Marketing" stay. Without
-# this gate a strong new-grad phrase alone let any profession onto the board.
-DEFAULT_NON_TECH_SIGNALS: tuple[str, ...] = (
-    'nurse', 'nursing', 'rn', 'nurse practitioner', 'physician', 'dental', 'pharmacy',
-    'pharmacist', 'pharmaceutical', 'clinical', 'therapist', 'therapy', 'medical',
-    'caregiver', 'sales', 'marketing', 'recruit', 'recruiter', 'recruitment',
-    'talent acquisition', 'human resources', 'hr', 'payroll', 'legal', 'counsel',
-    'counselor', 'attorney', 'paralegal', 'audit', 'auditor', 'accountant',
-    'accounting', 'cpa', 'tax', 'treasury', 'finance', 'banking', 'wealth',
-    'investment', 'actuarial', 'actuary', 'underwriter', 'underwriting', 'claims',
-    'supply chain', 'logistics', 'procurement', 'purchasing', 'warehouse',
-    'customer service', 'customer success', 'account executive', 'administrative',
-    'receptionist', 'cashier', 'retail', 'driver', 'welder', 'technician',
-    'real estate', 'geologist', 'chemist', 'biologist', 'packaging',
-)
 
 # --- Token matching ----------------------------------------------------------
 # Level tokens ("I", "II", "L3") sit after a separator and before the end, a
@@ -179,14 +159,6 @@ def has_strong_new_grad_signal(title: str, signals: list[str] | tuple[str, ...] 
     return _matches_any(title, DEFAULT_STRONG_NEW_GRAD_SIGNALS if signals is None else signals)
 
 
-def has_non_tech_signal(title: str, signals: list[str] | tuple[str, ...] | None) -> bool:
-    """Check for a non-tech profession word; ``None`` means the built-in defaults.
-
-    Whole words plus common inflections ("recruit" also matches "Recruiting").
-    """
-    return _matches_any(title, DEFAULT_NON_TECH_SIGNALS if signals is None else signals, _TRACK_SUFFIX)
-
-
 def has_excluded_level(title: str) -> bool:
     """True for level III+ titles ("Engineer III", "Engineer 3", "Level 4", "L5").
 
@@ -284,12 +256,10 @@ def _passes_filters(job: dict[str, Any], filters: dict[str, Any], exclusion_sign
         return False
 
     # Accept if: strong new-grad signal OR (new-grad signal AND track signal)
-    has_track = has_track_signal(title, filters['track_signals'])
-    if not (has_track or has_strong_new_grad_signal(title, filters.get('strong_new_grad_signals'))):
-        return False
-
-    # A strong signal alone must not admit another profession ("New Grad Nurse").
-    if not has_track and has_non_tech_signal(title, filters.get('non_tech_signals')):
+    if not (
+        has_strong_new_grad_signal(title, filters.get('strong_new_grad_signals'))
+        or has_track_signal(title, filters['track_signals'])
+    ):
         return False
 
     if not is_recent_job(job.get('posted_at', ''), filters['max_age_days']):

@@ -66,7 +66,7 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 )
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
-OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "non_tech_signals")
+OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals")
 ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "google", "jobspy", "workday", "graphql")
 
 

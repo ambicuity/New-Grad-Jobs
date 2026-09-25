@@ -73,7 +73,7 @@ class TestCategorizeJob:
 
     def test_data_analyst(self):
         result = categorize_job("Data Analyst, Business Intelligence")
-        assert result["id"] == "data_engineering"
+        assert result["id"] == "data_analyst"
 
     def test_sre_title(self):
         result = categorize_job("Site Reliability Engineer")
@@ -198,17 +198,17 @@ class TestCategorizeJob:
         )
         assert result["id"] == "other"
 
-    def test_business_analyst_network_operations_stays_other(self) -> None:
+    def test_business_analyst_network_operations_is_not_infrastructure(self) -> None:
         result = categorize_job("Business Analyst, Network Operations")
-        assert result["id"] == "other"
+        assert result["id"] == "business_analyst"
 
-    def test_manager_network_operations_stays_other(self) -> None:
+    def test_manager_network_operations_is_not_infrastructure(self) -> None:
         result = categorize_job("Manager, Network Operations")
-        assert result["id"] == "other"
+        assert result["id"] != "infrastructure_sre"
 
-    def test_noc_analyst_stays_other(self) -> None:
+    def test_noc_analyst_is_not_infrastructure(self) -> None:
         result = categorize_job("NOC Analyst")
-        assert result["id"] == "other"
+        assert result["id"] != "infrastructure_sre"
 
     def test_engineering_network_domain_role_stays_included(self) -> None:
         result = categorize_job("Software Engineer, Networking")
@@ -477,21 +477,29 @@ class TestTitleFallbackCategories:
             ("Junior Developer - KYC - Comp Tech", "software_engineering"),
             ("Associate WordPress Developer (Fresher)", "software_engineering"),
             ("Winter 2027: AI Developer (8 months)", "data_ml"),
-            ("Junior Consultant AI Strategy", "data_ml"),
-            ("Graduate Development Program - AI & Analytics Associate", "data_ml"),
-            ("Data Fulfillment Associate", "data_engineering"),
-            ("Manufacturing Development Engineer II", "hardware"),
-            ("Early Career Mechanical Design Engineer", "hardware"),
+            ("Junior Consultant AI Strategy", "consulting"),
+            ("Graduate Development Program - AI & Analytics Associate", "data_analyst"),
+            ("Data Fulfillment Associate", "supply_chain"),
+            ("Junior Marketing Coordinator", "marketing"),
+            ("New Grad Registered Nurse (RN)", "healthcare"),
+            ("Investment Banking Full Time Analyst 2027", "accounting_finance"),
+            ("Associate, Strategy Analyst - New Grad 2027", "business_analyst"),
+            ("Sales Development Representative (Dec 2026 Grads)", "sales"),
+            ("2027 Finance Leadership Development Program", "accounting_finance"),
+            ("2027 Leadership Development Program", "management"),
+            ("Junior Engineer - Various Disciplines", "engineering"),
+            ("Manufacturing Development Engineer II", "engineering"),
+            ("Early Career Mechanical Design Engineer", "engineering"),
             ("2026 Associate Electronics Engineer - Baltimore MD", "hardware"),
-            ("Quality Engineer (Associate or Experienced)", "hardware"),
-            ("Associate Test Engineer", "hardware"),
-            ("Industrial Engineer I (Onsite)", "hardware"),
-            ("Process Engineer II - New Product Development", "hardware"),
-            ("Guidance Navigation Control (GNC) Engineer - Level 2", "hardware"),
-            ("Associate Automation Engineer", "hardware"),
+            ("Quality Engineer (Associate or Experienced)", "engineering"),
+            ("Associate Test Engineer", "engineering"),
+            ("Industrial Engineer I (Onsite)", "engineering"),
+            ("Process Engineer II - New Product Development", "engineering"),
+            ("Guidance Navigation Control (GNC) Engineer - Level 2", "engineering"),
+            ("Associate Automation Engineer", "engineering"),
             ("Semiconductor Foundry Engineer I - Onsite", "hardware"),
-            ("IT Support Specialist I", "infrastructure_sre"),
-            ("Help Desk Analyst - Entry Level", "infrastructure_sre"),
+            ("IT Support Specialist I", "customer_support"),
+            ("Help Desk Analyst - Entry Level", "customer_support"),
             ("Cyber Analyst, New Grad", "security"),
         ],
     )
@@ -504,7 +512,7 @@ class TestTitleFallbackCategories:
 
     def test_fallback_is_title_only(self):
         # A description mentioning "mechanical" must not file an unrelated role under hardware.
-        result = categorize_job("Associate Consultant", "You will work with mechanical teams.")
+        result = categorize_job("Associate Coordinator", "You will work with mechanical teams.")
         assert result["id"] == "other"
 
     def test_title_fallback_outranks_description_match(self):
@@ -512,8 +520,9 @@ class TestTitleFallbackCategories:
         assert result["id"] == "software_engineering"
 
     def test_fallback_words_match_whole_words_only(self):
-        assert categorize_job("Maintenance Planner")["id"] == "other"  # "ai" inside a word
+        assert categorize_job("Maintenance Foreman")["id"] == "other"  # "ai" inside a word
         assert categorize_job("HTML Content Associate")["id"] == "other"  # "ml" inside a word
 
-    def test_hardware_display_name_covers_mechanical(self):
-        assert categorize_job("Mechanical Engineer I")["name"] == "Hardware & Mechanical Engineering"
+    def test_mechanical_roles_file_under_engineering_not_hardware(self):
+        assert categorize_job("Mechanical Engineer I")["name"] == "Engineering and Development"
+        assert categorize_job("Hardware Engineer I")["id"] == "hardware"
