@@ -53,29 +53,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2067<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2066<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->960<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->959<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->15<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->16<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->67<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->145<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->146<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->55<!-- /COUNT --> |
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->194<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->9<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->81<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->515<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->514<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,067** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,066** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -94,7 +94,7 @@ Experience an advanced career journey with us! 🚀
 | Gentex | Embedded Software Engineer | Ottawa, IL, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=41d30d9d1922fd03>) |
 | Mastercard | Software Engineer I-1 | Pune, India | Today | [Apply](<https://mastercard.wd1.myworkdayjobs.com/job/Pune-India/Software-Engineer-I-1_R-290795>) |
 
-**[View all 960 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 959 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -173,6 +173,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Citi | Machine learning and GEN AI Data Scientist | Gurugram Haryana India | Today | [Apply](<https://citi.wd5.myworkdayjobs.com/job/Gurugram-Haryana-India/Machine-learning-and-GEN-AI-Data-Scientist_26993429>) |
 | Accenture | Junior Applied AI Engineer \(all genders\) | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Kronberg-Campus-Kronberg-1/AI-Native-Software-Engineering--Junior-_R00345665>) |
 | Discord | Data Scientist - Client Platform | San Francisco Bay Area | Today | [Apply](<https://job-boards.greenhouse.io/discord/jobs/8840756002>) |
 | OpenAI | Machine Learning Engineer, Core Experimentation | Seattle, Washington, United States | Today | [Apply](<https://jobs.ashbyhq.com/openai/9d4d2727-27f3-4a63-857c-a96466130645>) |
@@ -182,9 +183,8 @@ Experience an advanced career journey with us! 🚀
 | Canadian Tire Corporation, Ltd. | New Graduate Program - 2027 Next Generation Talent Rotational Program, Technology Associate | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=2e3831e2f14b449b>) |
 | Atlassian | Machine Learning Engineer, 2027 Graduate U.S. | Seattle, WA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=7b621aab20463a47>) |
 | Sobeys | Machine Learning Engineer | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=5f2790003b73c337>) |
-| Priorities USA | Data Scientist | Remote, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=9b9cbcf5aae3fb6d>) |
 
-**[View all 145 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 146 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -286,7 +286,7 @@ Experience an advanced career journey with us! 🚀
 | Raytheon | Engineer I: Engine Design &amp; System Integration - Model Based Systems Engineering \(Hybrid\) | US-PR-AGUADILLA-110 ~ Rd 110 N Km 28.8 ~ RD110 | 1 day ago | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-PR-AGUADILLA-110--Rd-110-N-Km-288--RD110/Engineer-I--Engine-Design---System-Integration---Model-Based-Systems-Engineering--Hybrid-_01803685-1>) |
 | Raytheon | Industrial Engineer I \(Onsite\) | US-AZ-TUCSON-801 ~ 1151 E Hermans Rd ~ BLDG 801 \(External Site\) | 1 day ago | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-801--1151-E-Hermans-Rd--BLDG-801-External-Site/Industrial-Engineer-I--Onsite-_01871261>) |
 
-**[View all 515 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 514 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -409,4 +409,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-25 11:59:27 UTC*
+*Last updated: 2026-09-25 12:11:20 UTC*
