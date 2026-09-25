@@ -13,8 +13,16 @@ const MAX_COMPANIES = 50;
 
 const P = {
   tab: 'tab', q: 'q', type: 'role', rmt: 'remote', tier: 'tier', company: 'co',
-  visa: 'visa', sort: 'sort', job: 'job', saved: 'saved',
+  visa: 'visa', sort: 'sort', job: 'job', saved: 'saved', newHours: 'new',
 };
+// ?new=<hours>: roles first seen in the last N hours, for shareable "what's new" links. At most a week.
+const MAX_NEW_HOURS = 168;
+
+function readNewHours(value) {
+  if (!/^\d{1,3}$/.test(value || '')) return null;
+  const hours = Number(value);
+  return hours >= 1 && hours <= MAX_NEW_HOURS ? hours : null;
+}
 const VISA_PARAM = { none: true, restricted: false };
 
 /**
@@ -71,6 +79,7 @@ export function parseViewState(search, hash = '') {
       tier: readSet(params, P.tier, allowed(TIER_ORDER)),
       company: readSet(params, P.company, shortString, MAX_COMPANIES),
       visa: Object.hasOwn(VISA_PARAM, visa) ? VISA_PARAM[visa] : null,
+      newWithinHours: readNewHours(params.get(P.newHours)),
     },
     sort: readSort(params.get(P.sort)),
     job: shortString(job) ? job : null,
@@ -95,6 +104,7 @@ export function serializeViewState(view, baseSearch = '') {
   filters.tier.forEach((v) => params.append(P.tier, v));
   filters.company.forEach((v) => params.append(P.company, v));
   if (filters.visa !== null) params.set(P.visa, filters.visa ? 'none' : 'restricted');
+  if (filters.newWithinHours) params.set(P.newHours, String(filters.newWithinHours));
   if (sort.key !== DEFAULT_SORT.key || sort.dir !== DEFAULT_SORT.dir) {
     params.set(P.sort, `${sort.key}-${sort.dir > 0 ? 'asc' : 'desc'}`);
   }

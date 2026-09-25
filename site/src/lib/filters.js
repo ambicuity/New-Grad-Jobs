@@ -10,6 +10,7 @@ import { searchHaystack } from './jobs.js';
  * @property {boolean|null} visa     true = no restriction stated, false = restriction stated, null = any.
  * @property {Set<string>} tier
  * @property {Set<string>} company
+ * @property {number|null} newWithinHours  Only roles first seen in the last N hours (the ?new= link); null = any.
  */
 
 /**
@@ -19,7 +20,7 @@ import { searchHaystack } from './jobs.js';
  * @returns {JobFilters}
  */
 export function EMPTY_FILTERS() {
-  return { type: new Set(), rmt: new Set(), visa: null, tier: new Set(), company: new Set() };
+  return { type: new Set(), rmt: new Set(), visa: null, tier: new Set(), company: new Set(), newWithinHours: null };
 }
 
 /** New Set with `val` added if absent, removed if present. */
@@ -40,10 +41,22 @@ export function toggleVisa(filters, val) {
   return { ...filters, visa: filters.visa === val ? null : val };
 }
 
+/** Drops the new-roles window, keeping every other facet. */
+export function clearNewWindow(filters) {
+  return { ...filters, newWithinHours: null };
+}
+
 /** Number of user-set facets. */
 export function activeFilterCount(filters) {
   return filters.type.size + filters.rmt.size + (filters.visa !== null ? 1 : 0)
-    + filters.tier.size + filters.company.size;
+    + filters.tier.size + filters.company.size + (filters.newWithinHours ? 1 : 0);
+}
+
+const HOUR_MS = 3600e3;
+
+/** True when the role was first seen within `hours` of `now` (a role with no first-seen time never is). */
+function seenWithin(job, hours, now) {
+  return job.firstSeenTs !== null && job.firstSeenTs !== undefined && now - job.firstSeenTs <= hours * HOUR_MS;
 }
 
 /**
@@ -62,15 +75,17 @@ export function matchesQuery(job, q) {
  * company list doesn't collapse to the selected company — users can still
  * switch between companies after picking one.
  * @param {import('./jobs.js').Job[]} jobs
- * @param {{filters: JobFilters, q?: string, saved?: Set<string>, savedOnly?: boolean}} opts
+ * @param {{filters: JobFilters, q?: string, saved?: Set<string>, savedOnly?: boolean, now?: number}} opts
+ *   `now` anchors the new-roles window; the dashboard passes the feed's generation time.
  */
-export function filterJobsExceptCompany(jobs, { filters, q = '', saved = new Set(), savedOnly = false }) {
+export function filterJobsExceptCompany(jobs, { filters, q = '', saved = new Set(), savedOnly = false, now = Date.now() }) {
   return jobs.filter((j) => {
     if (savedOnly && !saved.has(j.id)) return false;
     if (filters.type.size && !filters.type.has(j.type)) return false;
     if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;
     if (filters.visa !== null && j.visa !== filters.visa) return false;
     if (filters.tier.size && !filters.tier.has(j.tier)) return false;
+    if (filters.newWithinHours && !seenWithin(j, filters.newWithinHours, now)) return false;
     return matchesQuery(j, q);
   });
 }

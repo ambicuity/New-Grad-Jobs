@@ -101,3 +101,18 @@ describe('sameView', () => {
     expect(sameView(defaultView(), view({ q: 'a' }))).toBe(false);
   });
 });
+
+describe('new-roles window (?new=<hours>)', () => {
+  it('parses whole hours from 1 to 168 and ignores anything else', () => {
+    expect(parseViewState('?new=24').filters.newWithinHours).toBe(24);
+    expect(parseViewState('?new=72&utm_source=newsletter').filters.newWithinHours).toBe(72);
+    for (const bad of ['?new=0', '?new=169', '?new=abc', '?new=24.5', '?new=', '?new=-1', '']) {
+      expect(parseViewState(bad).filters.newWithinHours).toBeNull();
+    }
+  });
+  it('round-trips and keeps utm tags', () => {
+    const v = parseViewState('?new=24&utm_source=newsletter&utm_campaign=weekly');
+    expect(serializeViewState(v, '?utm_source=newsletter&utm_campaign=weekly')).toBe('?utm_source=newsletter&utm_campaign=weekly&new=24');
+    expect(serializeViewState({ ...v, filters: { ...v.filters, newWithinHours: null } }, '?utm_source=newsletter')).toBe('?utm_source=newsletter');
+  });
+});
