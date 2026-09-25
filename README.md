@@ -53,29 +53,29 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2070<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2056<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->950<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->947<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->15<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->16<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
 | [Security Engineering](#security-engineering) | <!-- COUNT:security -->66<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->143<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->52<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->190<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->144<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->57<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->188<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->3<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->8<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->85<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->535<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->82<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->523<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,070** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,056** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -94,7 +94,7 @@ Experience an advanced career journey with us! 🚀
 | GE Aerospace | Systems Engineer – Product Integration | Grand Rapids MI US 1 | Today | [Apply](<https://geaerospace.wd5.myworkdayjobs.com/job/Grand-Rapids-MI-US-1/Systems-Engineer---Product-Integration_R5040581>) |
 | Northrop Grumman | Modeling &amp; Simulation Systems Engineer | United States-Florida-Melbourne | Today | [Apply](<https://ngc.wd1.myworkdayjobs.com/job/United-States-Florida-Melbourne/Modeling---Simulation-Systems-Engineer_R10253054>) |
 
-**[View all 950 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 947 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -174,6 +174,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | General Dynamics | Machine Learning Engineer - TS/SCI with Polygraph | USA VA McLean | Today | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-VA-McLean/Machine-Learning-Engineer---TS-SCI-with-Polygraph_RQ229011-1>) |
+| Accenture | Junior Applied AI Engineer \(all genders\) | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Kronberg-Campus-Kronberg-1/AI-Native-Software-Engineering--Junior-_R00345665>) |
 | Discord | Data Scientist - Client Platform | San Francisco Bay Area | Today | [Apply](<https://job-boards.greenhouse.io/discord/jobs/8840756002>) |
 | OpenAI | Machine Learning Engineer, Core Experimentation | Seattle, Washington, United States | Today | [Apply](<https://jobs.ashbyhq.com/openai/9d4d2727-27f3-4a63-857c-a96466130645>) |
 | Block | Data Scientist, Payments | Bay Area, CA, United States of America | Today | [Apply](<http://block.xyz/careers/jobs/5214784008?gh_jid=5214784008>) |
@@ -182,9 +183,8 @@ Experience an advanced career journey with us! 🚀
 | General Dynamics | Data Scientist-Mid | USA FL MacDill AFB | 1 day ago | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-FL-MacDill-AFB/Data-Scientist-Mid_RQ226747-1>) |
 | Canadian Tire Corporation, Ltd. | New Graduate Program - 2027 Next Generation Talent Rotational Program, Technology Associate | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=2e3831e2f14b449b>) |
 | General Dynamics | Data Scientist - TS/SCI with Polygraph | USA VA Chantilly | 1 day ago | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-VA-Chantilly/Data-Scientist---TS-SCI-with-Polygraph_RQ228729-1>) |
-| Boeing | Experienced AI-ML Engineer \(Artificial Intelligence\) | IND - Bangalore, India | 1 day ago | [Apply](<https://boeing.wd1.myworkdayjobs.com/job/IND---Bangalore-India/Experienced-AI-ML-Engineer--Artificial-Intelligence-_JR2026512934-1>) |
 
-**[View all 143 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 144 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -193,17 +193,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Raytheon | Associate Business Intelligence Analyst\(AI/ML,Generative AI &amp; Python,1-3 years,Bangalore\) | IN-KA-BENGALURU-NORTHGATE ~ Sy No 2/2 Venkatala Village ~ SY NO 2/2 VENKATALA VILLAGE, Yelahanka Hobli | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/IN-KA-BENGALURU-NORTHGATE--Sy-No-22-Venkatala-Village--SY-NO-22-VENKATALA-VILLAGE-Yelahanka-Hobli/Associate-Business-Intelligence-Analyst-AI-ML-Generative-AI---Python-1-3-years-Bangalore-_01876631>) |
+| Flex | Data Engineer-IT | India, Chennai | Today | [Apply](<https://flextronics.wd1.myworkdayjobs.com/job/India-Chennai/Associate-Consultant_WD224312>) |
 | AppLovin | ML Data Infrastructure Engineer | Palo Alto, CA | Today | [Apply](<https://boards.greenhouse.io/applovin/jobs/4716524006?gh_jid=4716524006>) |
 | Accenture | Risk Engineering Associate | KA, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=42fffa41e03f7914>) |
 | adMarketplace | Graduate Data Analyst | New York, NY, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ef947638ab6b849b>) |
 | Accenture | Data Engineer | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Hyderabad/Data-Engineer_ATCI-5765995-S2068087-1>) |
 | Accenture | Data Engineer | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Hyderabad/Data-Engineer_ATCI-5765994-S2068784-1>) |
-| CGI | Winter 2027: Data Analyst Co-op \(8 months\) | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=165d109612896caa>) |
-| RBC | 2027 CFO, Winter Data Engineer \(8 months\) | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=41b3c534dddbce2f>) |
-| EXL Service | AWS Data Engineer | KA, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=0eaef28e4efd7139>) |
-| The Walt Disney Company | Data Engineer | Orlando, FL, USA | 2 days ago | [Apply](<https://disney.wd5.myworkdayjobs.com/job/Orlando-FL-USA/Data-Engineer_10155062-1>) |
+| Summit Utilities | Data Engineer I | Fort Smith, AR, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=dc6d313ec97cbc60>) |
+| Summit Utilities | Data Engineer I | Little Rock, AR, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=9c9d37acb5530dec>) |
+| Summit Utilities | Data Engineer I | Denver, CO, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=a3c272c2e36093fb>) |
 
-**[View all 52 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 57 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -220,9 +220,9 @@ Experience an advanced career journey with us! 🚀
 | Hatch | Hydrotechnical Engineering Trainee | Niagara Falls, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=6546dda50a01f074>) |
 | General Motors | 2027 Winter Co-op Mechatronic Infrastructure Diagnostic Systems | Markham, Ontario, Canada | 1 day ago | [Apply](<https://generalmotors.wd5.myworkdayjobs.com/job/Markham-Ontario-Canada/XMLNAME-2027-Winter-Co-op-Mechatronic-Infrastructure-Diagnostic-Systems_JR-202618915>) |
 | CGI | Winter 2027 Co-op: Technical Development Consultant \(Master's Co-op\) | Halifax, NS, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=ab006f4f184b54e4>) |
-| WSP | Early Career Process Water/Plumbing Engineer | Atlanta, GA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=80924edea7ec74fc>) |
+| Equifax | Site Reliability Engineer - Intermediate | IND-Pune-Equifax Analytics-PEC | 1 day ago | [Apply](<https://equifax.wd5.myworkdayjobs.com/job/IND-Pune-Equifax-Analytics-PEC/Site-Reliability-Engineer---Intermediate_J00178309>) |
 
-**[View all 190 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 188 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -256,17 +256,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | CACI | Junior Mechanical Engineer | Crane, IN, US | Today | [Apply](<https://caci.wd1.myworkdayjobs.com/job/Crane-IN-US/Junior-Mechanical-Engineer_332634>) |
-| Unknown | Junior Computational Engineer / Mechanical Engineer \(Numerical Modeling\) | Fairfax, VA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=c2d3300c9c3d5e52>) |
 | Raytheon | Electrical Engineer I - Test | US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Electrical-Engineer-I---Test_01877621>) |
 | Raytheon | HWIL Electrical Engineer I | US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/HWIL-Electrical-Engineer-I_01874563>) |
 | Tetra Tech | Junior Electrical Engineer | Pickering, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=eb36419e5254eafa>) |
 | Rocket Lab USA | Mechanical Engineer I \(Future Grad 2027\) | Long Beach, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=3c5de1ae339a6fe1>) |
-| WSP | Early Career Electrical Engineer \(Mission Critical/Data Center\) | Herndon, VA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=a9cf988b0557bc7f>) |
 | Pond &amp; Company | Mechanical Engineer I - PDG | Peachtree Corners, GA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=dfa9a967daf03b73>) |
-| Communication Technology Services | System Performance Engineer I | Corona, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=061b3c9b62755ae4>) |
-| Mott MacDonald | Graduate Electrical Engineer - 2027 | Westwood, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=3525d5109c7020d3>) |
+| MITRE | Associate FPGA / ASIC Design Engineer - Summer 2027 | Bedford, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=932fb9796dff36e1>) |
+| Unknown | University of South Alabama Full-Time: Fall 2026 | Huntsville, AL, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=3210b6b85c29d542>) |
+| Graphcore Early Careers | Graduate Firmware Engineer | Austin, TX, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=8db23fccc69b3bed>) |
+| Johns Hopkins University Applied Physics Laboratory | 2027 Graduate - Software/Electrical/Computer Engineer - Advanced RF Capabilities | Laurel, MD, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=e8506f8a59d8c24f>) |
 
-**[View all 85 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 82 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -280,12 +280,12 @@ Experience an advanced career journey with us! 🚀
 | Raytheon | Industrial Engineer I \(Onsite\) | US-AZ-TUCSON-801 ~ 1151 E Hermans Rd ~ BLDG 801 \(External Site\) | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-AZ-TUCSON-801--1151-E-Hermans-Rd--BLDG-801-External-Site/Industrial-Engineer-I--Onsite-_01871261>) |
 | Raytheon | Electrical Engineering for Manufacturing Co-op \(Spring/Summer 2027\) | US-IA-BELLEVUE-186 ~ 1500 State St ~ STATE | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-IA-BELLEVUE-186--1500-State-St--STATE/Electrical-Engineering-for-Manufacturing-Co-op--Spring-Summer-2027-_01876808>) |
 | Leidos | Entry-Level Test Engineer | Huntsville, AL | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Entry-Level-Test-Engineer_R-00193086-1>) |
+| Merck | Associate Specialist, Data Visualization | IND - Maharashtra - Pune \(Wework\) | Today | [Apply](<https://msd.wd5.myworkdayjobs.com/job/IND---Maharashtra---Pune-Wework/Associate-Specialist--Data-Visualization_R414975-1>) |
 | Radiance Technologies | Junior Aerospace Engineer | Beavercreek, OH | Today | [Apply](<https://radiancetech.wd12.myworkdayjobs.com/job/Beavercreek-OH/Junior-Aerospace-Engineer_HR102430>) |
 | Capital One | Emerging Sales Associate - August 2027 | Plano, TX | Today | [Apply](<https://capitalone.wd12.myworkdayjobs.com/job/Plano-TX/Emerging-Sales-Associate---August-2027_R244419-1>) |
 | Accenture | Consulting Graduate Programme - January 2027 | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Lisbon/Consulting-Graduate-Programme---January-2027_R00359243>) |
-| Boeing | Associate Electrical Test Engineer | USA - Huntsville, AL | Today | [Apply](<https://boeing.wd1.myworkdayjobs.com/job/USA---Huntsville-AL/Electrical-Test-Engineer--Associate-_JR2026515396-1>) |
 
-**[View all 535 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 523 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -408,4 +408,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-25 05:06:52 UTC*
+*Last updated: 2026-09-25 06:35:14 UTC*
