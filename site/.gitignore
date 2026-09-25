@@ -6,6 +6,8 @@ coverage/
 public/jobs.json
 public/jobs-index.json
 public/jobs-extended.json
+public/corpus-index.json
+public/*.json.br
 public/descriptions/
 public/feed.xml
 public/feeds/

@@ -2,6 +2,8 @@
 title: The new grad hiring timeline
 description: When large employers, startups and government contractors open entry-level roles, and how to pace a search across the year.
 updated: 2026-09-25
+section: Getting started
+order: 4
 ---
 
 New grad hiring does not happen all at once. Different kinds of employers post at different times, and this board's own configuration reflects that: cohort years are kept two years ahead because large employers open next-year requisitions long before the start date.

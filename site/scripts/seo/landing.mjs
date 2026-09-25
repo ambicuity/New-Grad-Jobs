@@ -335,7 +335,7 @@ export function renderLandingPage(page, { siteUrl, generatedAt = null, siblings 
   return `${head({ title: page.title, description: truncate(page.description, META_DESCRIPTION_CHARS), canonical, siteUrl, root, jsonLd: itemList(page, siteUrl) })}
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › <a href="${root}${LANDING_ROOT}/">browse</a> › ${escapeHtml(page.name)}</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › <a href="${root}${LANDING_ROOT}/">browse</a> › ${escapeHtml(page.name)}</nav>
 <h1>${escapeHtml(page.h1)}</h1>
 <p>${escapeHtml(page.description)}</p>
 ${companiesLine}
@@ -391,7 +391,7 @@ export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs, 
   return `${head({ title, description: truncate(description, META_DESCRIPTION_CHARS), canonical, siteUrl, root, jsonLd: null })}
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › browse</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › browse</nav>
 <h1>Browse new grad jobs</h1>
 <p>${escapeHtml(description)}</p>
 <div class="actions">

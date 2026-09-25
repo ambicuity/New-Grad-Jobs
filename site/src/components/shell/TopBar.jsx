@@ -4,7 +4,16 @@ import { usePromiseSettled } from '../../hooks/usePromiseSettled.js';
 import { LiveStamp } from './LiveStamp.jsx';
 import { SponsoredBy, SponsorLink } from './Sponsor.jsx';
 
-const TAB_ORDER = ['hiring', 'contributors'];
+const TAB_ORDER = ['hiring', 'contributors', 'explore'];
+
+/** The NGJ badge: the one brand mark, used in the top bar, favicon, static pages and the social card. */
+export const BADGE_STYLE = Object.freeze({
+  background: BBG.acc, color: '#000', padding: '2px 6px', fontWeight: 700, fontSize: 11, letterSpacing: 1, lineHeight: 1.4,
+});
+
+function Badge() {
+  return <span aria-hidden="true" style={BADGE_STYLE}>NGJ</span>;
+}
 
 export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
   const isMobile = useIsMobile();
@@ -15,6 +24,8 @@ export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
   const tabs = [
     { id: 'hiring', label: 'HIRING', sub: jobsState.error ? 'offline' : `${openCount} open` },
     { id: 'contributors', label: 'CONTRIBUTORS', sub: contrib.settled ? `${devCount} devs` : '… devs' },
+    // Every posting the run saw, your own signals; the corpus loads only when opened.
+    { id: 'explore', label: 'EXPLORE', sub: 'all postings' },
   ];
 
   // WAI-ARIA tabs: arrow keys move between tabs (roving tabindex).
@@ -38,12 +49,12 @@ export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
       minHeight: 38,
       flexWrap: isMobile ? 'wrap' : 'nowrap',
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 14px', borderRight: `1px solid ${BBG.rule2}` }}>
-        <span aria-hidden="true" style={{
-          background: BBG.acc, color: '#000', padding: '2px 6px',
-          fontWeight: 700, fontSize: 11, letterSpacing: 1,
-        }}>NGJ</span>
-      </div>
+      <a href="./" aria-label="NGJ, New Grad Jobs, home" style={{
+        display: 'flex', alignItems: 'center', padding: '0 14px', borderRight: `1px solid ${BBG.rule2}`,
+        textDecoration: 'none', minHeight: isMobile ? 44 : 24, // WCAG 2.2 target size, comfortable on touch
+      }}>
+        <Badge />
+      </a>
 
       <div style={{ display: 'flex' }} role="tablist" aria-label="Views" onKeyDown={onTabKey}>
         {tabs.map((t) => {

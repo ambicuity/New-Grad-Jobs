@@ -212,7 +212,8 @@ test.describe('applied tracking and alerts', () => {
   test('the status bar RSS link follows the active filter', async ({ page }) => {
     await openBoard(page);
     const link = page.getByTestId('status-feed-link');
-    await expect(link).toHaveAttribute('href', './feed.xml');
+    // The generic feed lives in the footer; the status bar only shows a filter-specific slice.
+    await expect(link).toHaveCount(0);
 
     await chip(page, 'ROLE', 'ml').click();
     await expect(link).toHaveAttribute('href', './feeds/data-ml.xml');

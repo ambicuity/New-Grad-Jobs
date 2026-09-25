@@ -2,6 +2,8 @@
 title: An ATS-friendly résumé for new grad applications
 description: How Greenhouse, Lever, Ashby and Workday parse a résumé, and the formatting that survives the trip.
 updated: 2026-09-25
+section: Résumé and applications
+order: 1
 ---
 
 Almost every job on this board is hosted on one of four applicant tracking systems: Greenhouse, Lever, Ashby and Workday. They parse your résumé into fields before a person sees it, so the goal is a document that parses cleanly and reads well, in that order.

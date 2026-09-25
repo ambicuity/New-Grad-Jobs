@@ -2,6 +2,8 @@
 title: Visa sponsorship and citizenship flags
 description: How the board reads sponsorship and citizenship language, and what international students should check before applying.
 updated: 2026-09-25
+section: International students
+order: 1
 ---
 
 This board flags two things it can read from a posting's text. It does not guess anything it cannot read.

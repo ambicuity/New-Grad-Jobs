@@ -76,6 +76,7 @@ Supporting modules at `scripts/` top level: `contracts.py` (jobs.json schema 1.1
 | `jobs-index.json` | Same without `description`, minified. The site loads it on page load. |
 | `descriptions/<0-f>.json` | Full "About the role" text, sharded by the first hex digit of `job_id`. |
 | `jobs-extended.json` | The near-miss tier: postings that pass every hard rule but fail a soft one (`near_miss.reasons` ⊆ intern_or_coop, level_iii_plus, outside_target_countries, older_than_max_age), newest first, capped by `filtering.max_near_misses`, no descriptions. Fetched by the site only when a WIDEN SCOPE toggle is on. |
+| `corpus-index.json` | Every unique posting the run saw (about 54k), titles only, as compact rows `[company, title, location, source, posted_at, category, tier, url]` where tier is 0 curated / 1 near miss / 2 out. Powers the EXPLORE tab (`site/src/components/explore/`): include / exclude words, presets, tier toggles and a query, all client-side over `site/src/lib/signals.js`, a parity-tested port of the scraper's matcher, with the signal set in the URL (`?tab=explore&xi=…&xe=…&xt=…&xq=…`). ~1.2 MB as a Brotli sibling. Never loaded by default, no pages, not in the sitemap. |
 | `feed.xml` | RSS 2.0, ordered by `first_seen`, guid = `job_id`. |
 | `feeds/<slug>.xml` | The same feed sliced per category (`feeds/software-engineering.xml`, …) plus `feeds/remote.xml` and `feeds/no-visa-restriction.xml`, so readers and RSS-to-email services can subscribe to one slice. |
 | `health.json` | Status (`ok`/`degraded`/`failed`), per-source counts and errors, display metrics. Read by the watchdog, the README badges and the collapse guard. |
@@ -94,6 +95,10 @@ A Vite + React 18 single-page app ([ADR-0005](adr/0005-vite-site-and-actions-dep
   state, saved jobs, similar jobs. `taxonomy.js` mirrors `CATEGORY_PATTERNS`.
 - `src/components/` contains `shell/` (top bar, footer, sponsor, error boundary),
   `hiring/` (list, filters, detail, dashboard) and `contributors/`.
+- Data payloads get a Brotli-11 sibling at build (`scripts/seo/compress.mjs`, `<file>.json.br`,
+  round-trip verified). GitHub Pages only gzips, so the loaders fetch the sibling when the
+  browser has a native `DecompressionStream('brotli')` (Safari 18.4+; Chromium 153 does not)
+  and otherwise the plain `.json`, which the host serves gzipped.
 - `scripts/seo/vite-plugin.mjs` (build only) injects the CSP meta tag and generates
   `job/<job_id>/index.html` for every open job, with `JobPosting` JSON-LD (`validThrough`
   = posted + 60 days). `scripts/seo/landing.mjs` adds script-free landing pages under

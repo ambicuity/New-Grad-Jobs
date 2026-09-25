@@ -105,6 +105,29 @@ describe('parseViewState', () => {
   });
 });
 
+describe('explore state (?tab=explore)', () => {
+  it('round-trips include / exclude words, tiers and the query, bounded and validated', () => {
+    const v = view({ tab: 'explore', explore: { include: ['rust', 'c++'], exclude: ['senior'], tiers: new Set(['out']), roles: new Set(['data_ml']), sources: new Set(['Ashby']), countries: new Set(['CA']), posted: 7, q: 'berlin' } });
+    const out = serializeViewState(v);
+    const p = new URLSearchParams(out);
+    expect(p.get('tab')).toBe('explore');
+    expect(p.getAll('xi')).toEqual(['rust', 'c++']);
+    expect(p.getAll('xe')).toEqual(['senior']);
+    expect(p.getAll('xt')).toEqual(['out']);
+    expect(p.get('xq')).toBe('berlin');
+    expect(p.getAll('xr')).toEqual(['data_ml']);
+    expect(p.getAll('xs')).toEqual(['Ashby']);
+    expect(p.getAll('xc')).toEqual(['CA']);
+    expect(p.get('xp')).toBe('7');
+    expect(parseViewState(out)).toEqual(v);
+    expect(parseViewState('?tab=explore&xr=nope&xp=9&xc=DE').explore).toMatchObject({ roles: new Set(), posted: null, countries: new Set() });
+    const junk = parseViewState('?tab=explore&xi=rust&xi=rust&xi=&xt=nope&xt=curated');
+    expect(junk.explore.include).toEqual(['rust']);
+    expect([...junk.explore.tiers]).toEqual(['curated']);
+    expect(parseViewState('?tab=explore').explore).toEqual({ include: [], exclude: [], tiers: new Set(), roles: new Set(), sources: new Set(), countries: new Set(), posted: null, q: '' });
+  });
+});
+
 describe('sameView', () => {
   it('compares views by their serialized form', () => {
     expect(sameView(defaultView(), defaultView())).toBe(true);

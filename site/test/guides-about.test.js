@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { loadGuides, renderGuidePage, renderGuidesIndex } from '../scripts/seo/guides.mjs';
+import { SECTION_ORDER, groupGuides, loadGuides, renderGuidePage, renderGuidesIndex } from '../scripts/seo/guides.mjs';
 import { aboutFacts, renderAboutPage } from '../scripts/seo/about.mjs';
 import { generateSeo } from '../scripts/seo/generate.mjs';
 import { PRERENDER_MARKER } from '../scripts/seo/render.mjs';
@@ -13,7 +13,7 @@ import { escapeHtml } from '../scripts/seo/text.mjs';
 const SITE = 'https://jobs.example.test';
 const quiet = { log: () => {}, warn: () => {} };
 const ldBlocks = (html) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-const GUIDE = '---\ntitle: Reading a posting <carefully>\ndescription: Levels & signals\nupdated: 2026-09-25\n---\n# Reading a posting\n\nSome **bold** text and a [link](../../jobs/).\n\n## Levels\n\n- I and II\n';
+const GUIDE = '---\ntitle: Reading a posting <carefully>\ndescription: Levels & signals\nupdated: 2026-09-25\nsection: Understanding jobs\norder: 2\n---\n# Reading a posting\n\nSome **bold** text and a [link](../../jobs/).\n\n## Levels\n\n- I and II\n';
 
 describe('loadGuides', () => {
   let dir;
@@ -28,10 +28,16 @@ describe('loadGuides', () => {
     const warnings = [];
     const guides = await loadGuides(dir, { warn: (m) => warnings.push(m) });
     expect(guides.map((g) => g.slug)).toEqual(['reading-a-posting']);
-    expect(guides[0]).toMatchObject({ title: 'Reading a posting <carefully>', description: 'Levels & signals', updated: '2026-09-25' });
+    expect(guides[0]).toMatchObject({ title: 'Reading a posting <carefully>', description: 'Levels & signals', updated: '2026-09-25', section: 'Understanding jobs', order: 2 });
     expect(guides[0].headings).toEqual([{ level: 1, text: 'Reading a posting' }, { level: 2, text: 'Levels' }]);
     expect(warnings.join('\n')).toMatch(/no title/);
     expect(warnings.join('\n')).toMatch(/bad slug/);
+  });
+
+  it('defaults section to empty and order to last when front matter omits them', async () => {
+    await writeFile(join(dir, 'plain.md'), '---\ntitle: Plain\norder: x\n---\nbody\n');
+    const [g] = await loadGuides(dir, quiet);
+    expect(g).toMatchObject({ section: '', order: 999 });
   });
 
   it('returns nothing for a missing directory', async () => {
@@ -59,19 +65,45 @@ describe('guide rendering', () => {
     expect(html).toContain('Updated 2026-09-25');
   });
 
-  it('index lists every guide with its description', () => {
+  it('groups guides by section in SECTION_ORDER, ordered by order then title, unknown sections last', () => {
+    const g = (slug, section, order, title = slug) => ({ slug, title, section, order, description: '', updated: '', html: '', headings: [] });
+    const groups = groupGuides([
+      g('b', 'Offers', 2), g('a', 'Offers', 1), g('z', 'Getting started', 999, 'Zed'), g('y', 'Getting started', 999, 'Alpha'),
+      g('q', '', 999), g('w', 'Nope', 1),
+    ]);
+    expect(groups.map((s) => s.name)).toEqual(['Getting started', 'Offers', 'More']);
+    expect(groups[0].guides.map((x) => x.slug)).toEqual(['y', 'z']);
+    expect(groups[1].guides.map((x) => x.slug)).toEqual(['a', 'b']);
+    expect(groups[2].guides.map((x) => x.slug)).toEqual(['w', 'q']);
+    expect(groupGuides([])).toEqual([]);
+    expect(SECTION_ORDER[0]).toBe('Getting started');
+  });
+
+  it('a guide page lists only its own section when it has one', () => {
+    const inOffers = { ...guide, slug: 'offers-a', section: 'Offers', order: 1 };
+    const inOffers2 = { ...guide, slug: 'offers-b', title: 'Offers B', section: 'Offers', order: 2 };
+    const html = renderGuidePage(inOffers, { siteUrl: SITE, siblings: [inOffers, inOffers2, other] });
+    expect(html).toContain('MORE IN OFFERS');
+    expect(html).toContain('href="../../guides/offers-b/"');
+    expect(html).not.toContain('href="../../guides/visa-flags/"');
+  });
+
+  it('index lists every guide with its description under section headings', () => {
     const html = renderGuidesIndex([guide, other], { siteUrl: SITE });
     expect(html).toContain(`<link rel="canonical" href="${SITE}/guides/">`);
     expect(html).toContain('href="../guides/reading-a-posting/"');
     expect(html).toContain('Levels &amp; signals');
     expect(html).toContain('href="../guides/visa-flags/"');
+    expect(html).toContain('<h2>MORE</h2>');
+    const grouped = renderGuidesIndex([{ ...guide, section: 'Offers' }, other], { siteUrl: SITE });
+    expect(grouped.indexOf('<h2>OFFERS</h2>')).toBeLessThan(grouped.indexOf('<h2>MORE</h2>'));
   });
 });
 
 describe('aboutFacts / renderAboutPage', () => {
   const health = {
     status: 'ok', last_run: '2026-09-25T17:32:40Z', total_jobs: 2064, configured_company_apis: 272, enabled_sources: 5,
-    active_hiring_companies: 290, run_duration_seconds: 151.7, url_safety_blocked: 0, near_miss_jobs: 812,
+    active_hiring_companies: 290, run_duration_seconds: 151.7, url_safety_blocked: 0, near_miss_jobs: 812, corpus_jobs: 53733,
     source_counts: { greenhouse: 19805, workday: 16941 },
     sources: {
       greenhouse: { raw_count: 19805, configured_units: 136, status: 'ok', errors: { failed_companies: [] } },
@@ -83,7 +115,7 @@ describe('aboutFacts / renderAboutPage', () => {
     const facts = aboutFacts(health, { totalJobs: 1847, generatedAt: new Date('2026-09-25T17:32:40.261Z') });
     expect(facts).toMatchObject({
       totalJobs: '1,847', generatedAt: '2026-09-25T17:32:40Z', status: 'ok', configuredCompanyApis: '272',
-      activeHiringCompanies: '290', enabledSources: '5', runDurationSeconds: '151.7', urlSafetyBlocked: '0', nearMissJobs: '812',
+      activeHiringCompanies: '290', enabledSources: '5', runDurationSeconds: '151.7', urlSafetyBlocked: '0', nearMissJobs: '812', corpusJobs: '53,733',
     });
     expect(facts.rows.map((r) => [r.label, r.raw, r.configured, r.status, r.failed])).toEqual([
       ['Greenhouse', '19,805', '136', 'ok', []],

@@ -93,6 +93,18 @@ test.describe('guides and about', () => {
   });
 });
 
+test.describe('data compression', () => {
+  test('the board loads its index as Brotli when the browser decodes it, else as the gzip json', async ({ page }) => {
+    const urls = [];
+    page.on('response', (r) => { if (/jobs-index\.json(\.br)?$/.test(r.url()) && r.status() === 200) urls.push(r.url()); });
+    await openBoard(page);
+    const br = urls.some((u) => u.endsWith('.br'));
+    const json = urls.some((u) => u.endsWith('.json'));
+    expect(br || json).toBe(true);
+    if (br) expect(json).toBe(false); // no double download
+  });
+});
+
 test.describe('security policy and analytics', () => {
   test('the app ships a CSP meta and loads without violations', async ({ page }) => {
     await openBoard(page);

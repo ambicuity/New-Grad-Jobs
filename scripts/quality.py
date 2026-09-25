@@ -29,6 +29,7 @@ from xml.etree import ElementTree as ET
 
 from contracts import JOBS_SCHEMA_VERSION, REQUIRED_JOB_KEYS, validate_jobs_json_contract
 from ngj.filters import NEAR_MISS_REASONS
+from ngj.outputs.corpus import validate_corpus
 from ngj.outputs.health import validate_health
 from ngj.outputs.rss import feed_variants
 from publish import DESCRIPTION_SHARD_KEYS, description_shard
@@ -212,6 +213,22 @@ def check_extended(path: Path, curated_jobs: list[Any]) -> list[str]:
     return errors
 
 
+def check_corpus(path: Path, jobs: list[Any], extended_path: Path) -> list[str]:
+    """corpus-index.json: optional, but when present its tier counts must match the published tiers."""
+    if not path.exists():
+        return []
+    errors: list[str] = []
+    payload = _load_json(path, errors)
+    if payload is None:
+        return errors
+    near_total: int | None = None
+    if extended_path.exists():
+        extended = _load_json(extended_path, errors)
+        if isinstance(extended, dict) and isinstance(extended.get("jobs"), list):
+            near_total = len(extended["jobs"])
+    return errors + validate_corpus(payload, curated_total=len(jobs), near_miss_total=near_total)
+
+
 def check_feeds_dir(feeds_dir: Path, jobs: list[Any]) -> list[str]:
     """Every sliced feed under ``feeds/`` must pass the same checks as feed.xml, and the slices must exist."""
     errors: list[str] = []
@@ -264,6 +281,7 @@ def run_integrity_checks(artifacts_dir: Path) -> tuple[bool, dict[str, Any]]:
         errors.extend(check_feed(artifacts_dir / "feed.xml", jobs))
         errors.extend(check_feeds_dir(artifacts_dir / "feeds", jobs))
         errors.extend(check_extended(artifacts_dir / "jobs-extended.json", jobs))
+        errors.extend(check_corpus(artifacts_dir / "corpus-index.json", jobs, artifacts_dir / "jobs-extended.json"))
 
     if errors:
         report["status"] = "failed"

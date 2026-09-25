@@ -38,6 +38,7 @@ export function aboutFacts(health, { totalJobs, generatedAt }) {
     runDurationSeconds: num(h.run_duration_seconds),
     urlSafetyBlocked: num(h.url_safety_blocked),
     nearMissJobs: num(h.near_miss_jobs),
+    corpusJobs: num(h.corpus_jobs),
     rows,
   };
 }
@@ -73,7 +74,7 @@ export function renderAboutPage(facts, { siteUrl }) {
 </head>
 <body>
 <main>
-<nav class="crumb" aria-label="Breadcrumb"><a href="${root}">NGJ</a> › about</nav>
+<nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › about</nav>
 <h1>How this board works</h1>
 <p>NGJ is a fully automated board of new grad and entry-level jobs in every field. A scraper in GitHub Actions pulls postings straight from company career-site APIs (Greenhouse, Lever, Ashby, Workday) and Indeed about every 30 minutes, keeps only the roles that pass the rules below, and publishes the result as static files. There is no server, no database and no account.</p>
 
@@ -88,6 +89,7 @@ export function renderAboutPage(facts, { siteUrl }) {
 <dt>run duration</dt><dd>${facts.runDurationSeconds ? `${escapeHtml(facts.runDurationSeconds)} s` : '<span class="dim">not reported</span>'}</dd>
 <dt>links blocked by the URL gate</dt><dd>${cell(facts.urlSafetyBlocked)}</dd>
 <dt>near misses published</dt><dd>${cell(facts.nearMissJobs)}</dd>
+<dt>unique postings seen (EXPLORE)</dt><dd>${cell(facts.corpusJobs)}</dd>
 </dl>
 <p class="dim">Near misses are postings that pass every hard rule but fail a soft one (internship or co-op, level III+, outside US/CA/IN, 60–120 days old). They live in a separate file the board loads only when you widen the scope, and they are never counted above.</p>
 

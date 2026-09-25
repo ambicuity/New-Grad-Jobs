@@ -21,6 +21,7 @@ from ngj.enrich import enrich_jobs
 from ngj.filters import partition_jobs
 from ngj.log import annotate, configure_logging
 from ngj.models import KIND_UNEXPECTED, SourceResult
+from ngj.outputs.corpus import build_corpus_index, write_corpus_index
 from ngj.outputs.health import generate_health_json
 from ngj.outputs.jobs_json import generate_extended_json, generate_jobs_json, write_jobs_artifacts
 from ngj.outputs.market_history import MarketHistoryError, save_market_history
@@ -234,6 +235,7 @@ def _publish(
     sync_readme: bool,
     extended_json: dict[str, Any] | None = None,
     near_misses: Sequence[dict[str, Any]] = (),
+    corpus_json: dict[str, Any] | None = None,
 ) -> list[str]:
     """Write every artifact; return the failures (each artifact is attempted regardless)."""
     errors = _save_history(safe_jobs, settings)
@@ -245,11 +247,13 @@ def _publish(
         jobs_written = False
         errors.append(f"jobs.json/jobs-index.json/descriptions write failed: {exc}")
 
+    if corpus_json is not None and write_corpus_index(settings.output_dir, corpus_json) is None:
+        errors.append("corpus-index.json write failed")
     if generate_rss_feeds(jobs_json['jobs'], settings.output_dir, site_url=settings.site_url) is None:
         errors.append("feed.xml / feeds/*.xml write failed")
     health = generate_health_json(
         safe_jobs, source_results, start_time, config, settings.output_dir, url_blocked_count=url_blocked_count,
-        near_misses=near_misses,
+        near_misses=near_misses, corpus_total=corpus_json['meta']['total'] if corpus_json else None,
     )
     if health is None:
         errors.append("health.json write failed")
@@ -312,12 +316,15 @@ def run(
 
     jobs_json = generate_jobs_json(safe_jobs, dict(config), previous_first_seen=previous.first_seen)
     extended_json = generate_extended_json(safe_near, previous_first_seen=previous.first_seen)
+    # Every unique posting, titles only, tier-tagged: the data foundation under the two tiers.
+    corpus_json = build_corpus_index(unique_jobs, safe_jobs, safe_near)
     published_total = jobs_json['meta']['total_jobs']
     _enforce_collapse_guard(check_partial_collapse(previous, published_total, raw_source_counts),
                             previous, allow_drop)
 
     errors = _publish(safe_jobs, jobs_json, source_results, start_time, config, settings,
-                      url_blocked_count, sync_readme, extended_json=extended_json, near_misses=safe_near)
+                      url_blocked_count, sync_readme, extended_json=extended_json, near_misses=safe_near,
+                      corpus_json=corpus_json)
     return RunSummary(
         total_fetched=len(all_jobs),
         published_jobs=published_total,

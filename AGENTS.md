@@ -36,7 +36,8 @@ scripts/quality.py         cross-artifact integrity checks (run by scripts/check
 scripts/url_safety.py      publish-time URL gate (public http(s) only)
 scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
-site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
+site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data); tabs: hiring,
+                           contributors, explore (every posting the run saw, viewer-defined signals over corpus-index.json)
 site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs),
                            /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs), sitemap, robots, prerender
 site/content/guides/       evergreen guides (Markdown with front matter: title, description, updated)
@@ -116,8 +117,9 @@ After `make run`, restore the two files that a local scrape rewrites:
   retries, pooling, domain limits and the 403 cooldown apply.
 - **Site:** keep data logic in `site/src/lib/` as pure, unit-tested functions. Components
   use inline styles and the `useIsMobile` hook for responsiveness.
-- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description` and
-  `updated` front matter; the build renders it. Use only headings, paragraphs, lists,
+- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description`,
+  `updated`, `section` (one of `SECTION_ORDER` in `site/scripts/seo/guides.mjs`) and `order`
+  front matter; the build renders it and groups the index by section. Use only headings, paragraphs, lists,
   quotes, bold, italics, code and links (the renderer supports nothing else) and claim
   nothing you cannot back.
 
@@ -145,7 +147,7 @@ After `make run`, restore the two files that a local scrape rewrites:
 1. **Honesty.** Never show invented, estimated or placeholder numbers on the site or in the
    README. Every count and stat must come from the published data.
 2. **Never commit generated data:** `site/public/{jobs.json, jobs-index.json, descriptions/,
-   jobs-extended.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
+   jobs-extended.json, corpus-index.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
    `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
    `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the
