@@ -57,40 +57,40 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2089<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2877<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->948<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1047<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->14<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->66<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->147<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
-| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->0<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->202<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
-| [Project Management](#project-management) | <!-- COUNT:project_management -->0<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->9<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->79<!-- /COUNT --> |
-| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->0<!-- /COUNT --> |
-| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->0<!-- /COUNT --> |
-| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->0<!-- /COUNT --> |
-| [Marketing](#marketing) | <!-- COUNT:marketing -->0<!-- /COUNT --> |
-| [Sales](#sales) | <!-- COUNT:sales -->0<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->0<!-- /COUNT --> |
-| [Consulting](#consulting) | <!-- COUNT:consulting -->0<!-- /COUNT --> |
-| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->0<!-- /COUNT --> |
-| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->0<!-- /COUNT --> |
-| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->0<!-- /COUNT --> |
-| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->0<!-- /COUNT --> |
-| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->0<!-- /COUNT --> |
-| [Education and Training](#education-and-training) | <!-- COUNT:education -->0<!-- /COUNT --> |
-| [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->0<!-- /COUNT --> |
-| [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->0<!-- /COUNT --> |
-| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->0<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->524<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->90<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->36<!-- /COUNT --> |
+| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->8<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->189<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
+| [Project Management](#project-management) | <!-- COUNT:project_management -->19<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->16<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->78<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->307<!-- /COUNT --> |
+| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->23<!-- /COUNT --> |
+| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->83<!-- /COUNT --> |
+| [Marketing](#marketing) | <!-- COUNT:marketing -->21<!-- /COUNT --> |
+| [Sales](#sales) | <!-- COUNT:sales -->128<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->150<!-- /COUNT --> |
+| [Consulting](#consulting) | <!-- COUNT:consulting -->44<!-- /COUNT --> |
+| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->63<!-- /COUNT --> |
+| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->27<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->55<!-- /COUNT --> |
+| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->100<!-- /COUNT --> |
+| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->50<!-- /COUNT --> |
+| [Education and Training](#education-and-training) | <!-- COUNT:education -->6<!-- /COUNT --> |
+| [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->2<!-- /COUNT --> |
+| [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
+| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->78<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->70<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -435,4 +435,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-25 20:45:01 UTC*
+*Last updated: 2026-09-25 20:25:25 UTC*
