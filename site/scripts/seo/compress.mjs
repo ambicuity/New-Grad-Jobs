@@ -11,7 +11,7 @@ import { readFile, rm, writeFile } from 'node:fs/promises';
 import { brotliCompressSync, brotliDecompressSync, constants } from 'node:zlib';
 
 /** Data files worth a Brotli sibling (fetched by the app, large, JSON). */
-export const BROTLI_DATA_FILES = ['jobs-index.json', 'jobs-extended.json'];
+export const BROTLI_DATA_FILES = ['jobs-index.json', 'jobs-extended.json', 'corpus-index.json'];
 export const BROTLI_SUFFIX = '.br';
 
 /** Brotli-11 bytes for `buffer`, with the size hint set so the encoder picks its window well. */

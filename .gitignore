@@ -127,6 +127,7 @@ site/dist/
 site/public/jobs.json
 site/public/jobs-index.json
 site/public/jobs-extended.json
+site/public/corpus-index.json
 site/public/*.json.br
 site/public/descriptions/
 site/public/feed.xml

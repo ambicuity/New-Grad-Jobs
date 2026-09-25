@@ -91,6 +91,7 @@ def build_health(
     url_blocked_count: int = 0,
     now: datetime | None = None,
     near_misses: Sequence[dict[str, Any]] = (),
+    corpus_total: int | None = None,
 ) -> dict[str, Any]:
     """Build the health payload. ``near_misses`` are the jobs-extended.json entries (counted, not judged).
 
@@ -133,6 +134,8 @@ def build_health(
         **compute_display_metrics(jobs, raw_source_counts, config),
         'near_miss_jobs': len(near_misses),
         'near_miss_reasons': _near_miss_reason_counts(near_misses),
+        # Unique postings seen this run (corpus-index.json), before any rule.
+        'corpus_jobs': corpus_total,
     }
 
 
@@ -178,6 +181,7 @@ def generate_health_json(
     output_dir: Path,
     url_blocked_count: int = 0,
     near_misses: Sequence[dict[str, Any]] = (),
+    corpus_total: int | None = None,
 ) -> dict[str, Any] | None:
     """Write ``output_dir/health.json``; returns the payload, or None if the write failed.
 
@@ -185,7 +189,8 @@ def generate_health_json(
     safety gate (scripts/url_safety.py), surfaced so monitoring can alert when
     unsafe links start appearing upstream.
     """
-    health = build_health(jobs, source_results, start_time, config, url_blocked_count, near_misses=near_misses)
+    health = build_health(jobs, source_results, start_time, config, url_blocked_count, near_misses=near_misses,
+                          corpus_total=corpus_total)
     health_path = Path(output_dir) / "health.json"
     try:
         health_path.parent.mkdir(parents=True, exist_ok=True)

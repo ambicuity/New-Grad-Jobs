@@ -145,7 +145,7 @@ After `make run`, restore the two files that a local scrape rewrites:
 1. **Honesty.** Never show invented, estimated or placeholder numbers on the site or in the
    README. Every count and stat must come from the published data.
 2. **Never commit generated data:** `site/public/{jobs.json, jobs-index.json, descriptions/,
-   jobs-extended.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
+   jobs-extended.json, corpus-index.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
    `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
    `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the
