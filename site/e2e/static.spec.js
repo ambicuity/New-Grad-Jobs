@@ -74,6 +74,25 @@ test.describe('landing pages', () => {
   });
 });
 
+test.describe('guides and about', () => {
+  test('a guide renders as an article with Article JSON-LD and no scripts', async ({ page }) => {
+    const res = await page.goto('/guides/reading-a-new-grad-posting/');
+    expect(res.status()).toBe(200);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Reading a new grad job posting');
+    const blocks = page.locator('script[type="application/ld+json"]');
+    await expect(blocks).toHaveCount(1);
+    expect(JSON.parse(await blocks.textContent())['@type']).toBe('Article');
+    await expect(page.locator('script:not([type="application/ld+json"])')).toHaveCount(0);
+  });
+
+  test('the about page reports this run from health.json', async ({ page }) => {
+    await page.goto('/about/');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('How this board works');
+    await expect(page.locator('main')).toContainText(`open roles`);
+    await expect(page.locator('main')).toContainText(String(FIXTURE.total - 1));
+  });
+});
+
 test.describe('security policy and analytics', () => {
   test('the app ships a CSP meta and loads without violations', async ({ page }) => {
     await openBoard(page);

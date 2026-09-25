@@ -60,12 +60,18 @@ export function ngjSeo({
       const logger = config.logger;
       const log = { log: (m) => logger.info(m), warn: (m) => logger.warn(m) };
       const stats = await generateSeo({
-        publicDir: dataDir ? resolve(config.root, dataDir) : config.publicDir, distDir, siteUrl, log,
+        publicDir: dataDir ? resolve(config.root, dataDir) : config.publicDir,
+        distDir,
+        siteUrl,
+        // Guides live with the site source, not with the (swappable) data directory.
+        guidesDir: resolve(config.root, 'content', 'guides'),
+        log,
       });
       const skipped = Object.entries(stats.jsonLdSkipped).map(([k, v]) => `${k}: ${v}`).join(', ');
       logger.info(
         `[seo] ${stats.jobPages} job pages (${stats.jsonLd} with JobPosting JSON-LD${skipped ? `; skipped — ${skipped}` : ''}), `
-        + `${stats.landingPages} landing pages, ${stats.sitemapUrls} sitemap URLs, ${stats.prerendered} jobs prerendered into index.html`,
+        + `${stats.closedPages} closed-job pages, ${stats.landingPages} landing pages, ${stats.guidePages} guides, `
+        + `${stats.sitemapUrls} sitemap URLs, ${stats.prerendered} jobs prerendered into index.html`,
       );
     },
   };

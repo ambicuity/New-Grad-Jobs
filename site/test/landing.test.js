@@ -238,7 +238,7 @@ describe('generateSeo writes landing pages', () => {
     const sitemap = await readFile(join(distDir, 'sitemap.xml'), 'utf8');
     expect(sitemap).toContain(`<loc>${SITE}/jobs/software-engineering/</loc>`);
     expect(sitemap.match(/<url>/g)).toHaveLength(stats.sitemapUrls);
-    expect(stats.sitemapUrls).toBe(1 + stats.landingPages + stats.jobPages);
+    expect(stats.sitemapUrls).toBe(1 + stats.landingPages + 1 + stats.jobPages); // + about/
     const index = await readFile(join(distDir, 'index.html'), 'utf8');
     expect(index).toContain('href="./jobs/software-engineering/"');
   });

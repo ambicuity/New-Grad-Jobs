@@ -6,6 +6,8 @@ const LINKS = [
   { href: `${REPO_URL}/blob/main/README.md`, label: 'README', ext: true },
   { href: `${REPO_URL}/issues`, label: 'Issues', ext: true },
   { href: './jobs/', label: 'Browse', ext: false, title: 'Jobs by role, company, city and work setup' },
+  { href: './guides/', label: 'Guides', ext: false, title: 'New grad job search guides' },
+  { href: './about/', label: 'About', ext: false, title: 'How this board works: sources, rules, this run' },
   { href: './jobs.json', label: 'API', ext: false, title: 'Public JSON feed of all jobs' },
   { href: './feed.xml', label: 'RSS', ext: false },
   { href: `${REPO_URL}/actions/workflows/update-jobs.yml`, label: 'Status', ext: true, title: 'Scraper workflow runs' },

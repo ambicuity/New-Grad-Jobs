@@ -36,7 +36,9 @@ scripts/url_safety.py      publish-time URL gate (public http(s) only)
 scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
 site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
-site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs), sitemap, robots, prerender
+site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs),
+                           /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs), sitemap, robots, prerender
+site/content/guides/       evergreen guides (Markdown with front matter: title, description, updated)
 data/market-history.json   daily snapshots (committed by CI, 90-day retention)
 docs/                      architecture.md, operations.md, adr/, removed-companies.md
 ```
@@ -108,6 +110,10 @@ After `make run`, restore the two files that a local scrape rewrites:
   retries, pooling, domain limits and the 403 cooldown apply.
 - **Site:** keep data logic in `site/src/lib/` as pure, unit-tested functions. Components
   use inline styles and the `useIsMobile` hook for responsiveness.
+- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description` and
+  `updated` front matter; the build renders it. Use only headings, paragraphs, lists,
+  quotes, bold, italics, code and links (the renderer supports nothing else) and claim
+  nothing you cannot back.
 
 ### Where to add things
 

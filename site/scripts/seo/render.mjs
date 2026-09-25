@@ -38,6 +38,16 @@ export const JOB_PAGE_CSS = [
   '.subscribe{font-size:12px;color:#8a8a8a;margin:0 0 12px}',
   '.list ol,.list ul{margin:0;padding-left:22px}',
   '.list li{margin:0 0 8px;overflow-wrap:anywhere}',
+  '.notice{border:1px solid #ff9d3d;padding:10px 12px;margin:0 0 16px}',
+  'table{border-collapse:collapse;width:100%;font-size:12px}',
+  'th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #2a2a2a;vertical-align:top}',
+  'th{color:#8a8a8a;font-weight:600}',
+  '.desc h2,.desc h3{font-size:15px;color:#fff;letter-spacing:0;border-bottom:none;padding:0;margin:22px 0 8px;font-weight:600}',
+  '.desc h3{font-size:14px}',
+  '.desc ul,.desc ol{padding-left:22px;margin:0 0 12px}',
+  '.desc li{margin:0 0 6px}',
+  'blockquote{border-left:2px solid #ff9d3d;margin:0 0 12px;padding:0 0 0 12px;color:#8a8a8a}',
+  'code{background:#0a0a0a;border:1px solid #2a2a2a;padding:0 4px}',
   'footer{margin-top:32px;font-size:12px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:12px}',
 ].join('');
 
@@ -73,10 +83,12 @@ function formatComp(comp) {
 }
 
 /**
- * Full static page for one job.
- * @param {{job: object, description: string, posted: Date|null, posting: object|null, siteUrl: string}} args
+ * Full static page for one job. A closed job keeps its page (so shared links
+ * explain themselves instead of 404ing) but is noindex, carries no JobPosting
+ * JSON-LD and labels the employer link as closed.
+ * @param {{job: object, description: string, posted: Date|null, posting: object|null, siteUrl: string, generatedAt?: Date|null, closed?: boolean}} args
  */
-export function renderJobPage({ job, description, posted, posting, siteUrl }) {
+export function renderJobPage({ job, description, posted, posting, siteUrl, generatedAt = null, closed = false }) {
   const canonical = jobPageUrl(siteUrl, job.job_id);
   const applyUrl = safeHttpUrl(job.url);
   const paragraphs = toParagraphs(description);
@@ -93,6 +105,7 @@ export function renderJobPage({ job, description, posted, posting, siteUrl }) {
     ['category', category],
     ['salary', comp],
     ['source', job.source],
+    ['verified', generatedAt ? `confirmed open at the employer on ${formatDate(generatedAt)}` : ''],
   ].filter(([, v]) => typeof v === 'string' && v.trim());
 
   return `<!DOCTYPE html>
@@ -101,9 +114,9 @@ export function renderJobPage({ job, description, posted, posting, siteUrl }) {
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="${escapeHtml(JOB_PAGE_CSP)}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(title)}</title>
+<title>${escapeHtml(closed ? `[Closed] ${title}` : title)}</title>
 <meta name="description" content="${escapeHtml(metaDesc)}">
-<link rel="canonical" href="${escapeHtml(canonical)}">
+${closed ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical" href="${escapeHtml(canonical)}">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="New Grad Jobs RSS Feed" href="../../feed.xml">
 <meta property="og:type" content="website">
@@ -114,17 +127,17 @@ export function renderJobPage({ job, description, posted, posting, siteUrl }) {
 <meta property="og:image" content="${escapeHtml(`${siteUrl}/og-image.png`)}">
 <meta name="twitter:card" content="summary_large_image">
 <style>${JOB_PAGE_CSS}</style>
-${posting ? `<script type="application/ld+json">${jsonForScript(posting)}</script>\n` : ''}</head>
+${posting && !closed ? `<script type="application/ld+json">${jsonForScript(posting)}</script>\n` : ''}</head>
 <body>
 <main>
 <nav class="crumb" aria-label="Breadcrumb"><a href="../../">NGJ</a> › jobs › ${escapeHtml(job.company)}</nav>
-<h1>${escapeHtml(job.title)}</h1>
+${closed ? '<p class="notice" role="note">This role is marked CLOSED: the employer\'s page says applications are no longer accepted. It stays here so shared links still explain themselves. <a href="../../">See open roles instead.</a></p>\n' : ''}<h1>${escapeHtml(job.title)}</h1>
 <div class="co">${escapeHtml(job.company)}</div>
 <dl>
 ${rows.map(([k, v]) => `<dt>${k}</dt><dd>${escapeHtml(v)}</dd>`).join('\n')}
 </dl>
 <div class="actions">
-${applyUrl ? `<a class="btn primary" href="${escapeHtml(applyUrl)}" rel="nofollow noopener noreferrer" target="_blank">APPLY ON EMPLOYER SITE ↗</a>` : ''}
+${applyUrl ? `<a class="btn ${closed ? 'ghost' : 'primary'}" href="${escapeHtml(applyUrl)}" rel="nofollow noopener noreferrer" target="_blank">${closed ? 'VIEW CLOSED LISTING ↗' : 'APPLY ON EMPLOYER SITE ↗'}</a>` : ''}
 <a class="btn ghost" href="../../?job=${encodeURIComponent(job.job_id)}">OPEN IN JOB BOARD</a>
 </div>
 <h2>ABOUT THE ROLE</h2>
@@ -148,7 +161,7 @@ ${bodyHtml}
 export function renderPrerenderList(entries, totalJobs, browse = []) {
   if (!entries.length) return '';
   const browseLine = browse.length
-    ? `<p class="dim">Browse: <a href="./jobs/">all pages</a> · ${browse.map((b) => `<a href="./${escapeHtml(b.path)}">${escapeHtml(b.label)}</a> (${b.count})`).join(' · ')}</p>\n`
+    ? `<p class="dim">Browse: <a href="./jobs/">all pages</a> · ${browse.map((b) => `<a href="./${escapeHtml(b.path)}">${escapeHtml(b.label)}</a> (${b.count})`).join(' · ')} · <a href="./guides/">guides</a> · <a href="./about/">how it works</a></p>\n`
     : '';
   const items = entries.map(({ job, posted }) => (
     `<li><a href="./${jobPath(job.job_id)}">${escapeHtml(job.title)}</a>`

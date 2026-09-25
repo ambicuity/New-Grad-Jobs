@@ -374,7 +374,7 @@ const sectionOf = (page) => (['remote', 'visa', 'new'].includes(page.kind) ? 'fa
  * @param {{path: string, pages: object[]}} hub
  * @param {{siteUrl: string, generatedAt?: Date|null, totalJobs: number}} opts
  */
-export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs }) {
+export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs, guides = [] }) {
   const root = rootFrom(hub.path);
   const canonical = landingPageUrl(siteUrl, hub.path);
   const title = `Browse New Grad Jobs by Role, Company and City (${totalJobs} open) · NGJ`;
@@ -385,6 +385,9 @@ export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs }
     const items = pages.map((p) => `<li><a href="${root}${p.path}">${escapeHtml(p.name)}</a> <span class="dim">${p.entries.length} open</span></li>`);
     return `<h2>${escapeHtml(label.toUpperCase())}</h2>\n<div class="list"><ul>\n${items.join('\n')}\n</ul></div>`;
   }).filter(Boolean).join('\n');
+  const guideLinks = guides.length
+    ? `<h2>GUIDES</h2>\n<div class="list"><ul>\n${guides.map((g) => `<li><a href="${root}guides/${escapeHtml(g.slug)}/">${escapeHtml(g.title)}</a></li>`).join('\n')}\n</ul></div>`
+    : '';
   return `${head({ title, description: truncate(description, META_DESCRIPTION_CHARS), canonical, siteUrl, root, jsonLd: null })}
 <body>
 <main>
@@ -396,6 +399,9 @@ export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs }
 </div>
 ${subscribeLine({ kind: 'hub' }, root, siteUrl)}
 ${sections}
+${guideLinks}
+<h2>HOW IT WORKS</h2>
+<p><a href="${root}about/">Sources, filter rules and this run's numbers</a>.</p>
 <footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
 </footer>

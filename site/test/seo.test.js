@@ -287,8 +287,9 @@ describe('generateSeo', () => {
 
     const stats = await generateSeo({ publicDir, distDir, siteUrl: `${SITE}/`, prerenderLimit: 2, log: quiet });
     // Landing pages: hub + company (Acme, 3 roles) + remote (2) + new-this-week (3) = 4.
-    expect(stats).toMatchObject({ jobPages: 3, jsonLd: 2, jsonLdSkipped: { 'unresolvable location': 1 }, landingPages: 4, sitemapUrls: 8, prerendered: 2 });
-    expect((await readdir(join(distDir, 'job'))).sort()).toEqual(['job_a1b2c3', 'job_b00001', 'job_d00003']);
+    // + about/ in the sitemap; the closed job gets a noindex page that is not listed.
+    expect(stats).toMatchObject({ jobPages: 3, closedPages: 1, jsonLd: 2, jsonLdSkipped: { 'unresolvable location': 1 }, landingPages: 4, aboutPage: true, sitemapUrls: 9, prerendered: 2 });
+    expect((await readdir(join(distDir, 'job'))).sort()).toEqual(['job_a1b2c3', 'job_b00001', 'job_c00002', 'job_d00003']);
 
     const page = await readFile(join(distDir, 'job', 'job_a1b2c3', 'index.html'), 'utf8');
     expect(page).toContain('<p>From the shard &amp; more.</p>');
@@ -301,7 +302,8 @@ describe('generateSeo', () => {
     // Newest first: the remote job (09-22) precedes JOB (09-20).
     expect(index.indexOf('job_b00001')).toBeLessThan(index.indexOf('job_a1b2c3'));
     const sitemap = await readFile(join(distDir, 'sitemap.xml'), 'utf8');
-    expect(sitemap.match(/<url>/g)).toHaveLength(8);
+    expect(sitemap.match(/<url>/g)).toHaveLength(9);
+    expect(sitemap).not.toContain('job_c00002');
     expect(sitemap).toContain(`<loc>${SITE}/jobs/at/acme-corp/</loc>`);
     expect(sitemap).toContain(`<loc>${SITE}/</loc><lastmod>2026-09-24T00:00:00.000Z</lastmod>`);
     expect(existsSync(join(distDir, 'robots.txt'))).toBe(true);
@@ -318,7 +320,7 @@ describe('generateSeo', () => {
   it('succeeds with no data: robots + home-only sitemap, marker removed, warning logged', async () => {
     const warnings = [];
     const stats = await generateSeo({ publicDir, distDir, siteUrl: SITE, log: { log: () => {}, warn: (m) => warnings.push(m) } });
-    expect(stats).toMatchObject({ jobPages: 0, sitemapUrls: 1, prerendered: 0 });
+    expect(stats).toMatchObject({ jobPages: 0, sitemapUrls: 1, prerendered: 0, guidePages: 0 });
     expect(warnings.join('\n')).toMatch(/no job data/);
     expect(existsSync(join(distDir, 'job'))).toBe(false);
     expect(await readFile(join(distDir, 'index.html'), 'utf8')).toBe('<html><body><div id="root"></div></body></html>');
