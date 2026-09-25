@@ -61,6 +61,8 @@ export const JOB_PAGE_CSP = [
   "default-src 'none'",
   `style-src ${cspHash(JOB_PAGE_CSS)}`,
   "img-src 'self'",
+  // Same-origin fetches only (no scripts run, but Lighthouse reads robots.txt from the page context).
+  "connect-src 'self'",
   "base-uri 'none'",
   "form-action 'none'",
   "object-src 'none'",
