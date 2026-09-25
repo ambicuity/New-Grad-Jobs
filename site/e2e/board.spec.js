@@ -145,6 +145,33 @@ test.describe('facet filters', () => {
   });
 });
 
+test.describe('location facets', () => {
+  test('a metro row narrows to that city and is reflected in the URL', async ({ page }) => {
+    await openBoard(page);
+    const lexington = page.getByRole('group', { name: 'LOCATION · metros' }).getByRole('button', { name: 'Lexington, MA, 2 jobs' });
+
+    await lexington.click();
+
+    await expect(lexington).toHaveAttribute('aria-pressed', 'true');
+    await expectResults(page, 2);
+    await expectParams(page, { metro: ['Lexington, MA'] });
+    // The list is counted without the metro facet, so other metros stay clickable.
+    await expect(page.getByRole('group', { name: 'LOCATION · metros' }).getByRole('button', { name: 'Kitsap, WA, 2 jobs' })).toBeVisible();
+  });
+
+  test('COUNTRY chips narrow to Canada or India', async ({ page }) => {
+    await openBoard(page);
+
+    await chip(page, 'COUNTRY', 'canada').click();
+    await expectResults(page, 1);
+    await expectParams(page, { country: ['CA'] });
+
+    await chip(page, 'COUNTRY', 'canada').click();
+    await chip(page, 'COUNTRY', 'india').click();
+    await expectResults(page, 2);
+  });
+});
+
 test.describe('applied tracking and alerts', () => {
   test('the APPLIED button and the a key track the job in localStorage and mark the row', async ({ page }) => {
     await openBoard(page);

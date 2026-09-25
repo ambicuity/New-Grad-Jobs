@@ -1,23 +1,23 @@
 import { describe, expect, it } from 'vitest';
 import {
-  EMPTY_FILTERS, activeFilterCount, companyCounts, filterByCompany, filterJobsExceptCompany,
-  clearNewWindow, matchesQuery, toggleFacet, toggleInSet, toggleVisa,
+  EMPTY_FILTERS, activeFilterCount, companyCounts, countryCounts, filterByCompany, filterJobsExcept, filterJobsExceptCompany,
+  clearNewWindow, matchesQuery, metroCounts, toggleFacet, toggleInSet, toggleVisa,
 } from './filters.js';
 import { searchHaystack } from './jobs.js';
 
 const job = (over) => {
   const j = {
     id: 'x', co: 'Acme', role: 'Software Engineer', loc: 'Austin, TX',
-    type: 'SWE', rmt: 'onsite', visa: true, tier: 'other', ...over,
+    type: 'SWE', rmt: 'onsite', visa: true, tier: 'other', metro: 'Austin, TX', country: 'US', ...over,
   };
   return { ...j, hay: searchHaystack(j) };
 };
 
 const JOBS = [
   job({ id: 'a', co: 'Acme', type: 'SWE', rmt: 'remote' }),
-  job({ id: 'b', co: 'Beta', type: 'ML', visa: false, tier: 'faang_plus', loc: 'New York, NY' }),
+  job({ id: 'b', co: 'Beta', type: 'ML', visa: false, tier: 'faang_plus', loc: 'New York, NY', metro: 'New York, NY' }),
   job({ id: 'c', co: 'Acme', type: 'ML', rmt: 'hybrid', role: 'ML Engineer' }),
-  job({ id: 'd', co: 'Gamma', type: 'DATA', tier: 'unicorn' }),
+  job({ id: 'd', co: 'Gamma', type: 'DATA', tier: 'unicorn', loc: 'Toronto, ON', metro: 'Toronto, ON', country: 'CA' }),
 ];
 const ids = (list) => list.map((j) => j.id);
 
@@ -27,7 +27,7 @@ describe('EMPTY_FILTERS', () => {
     const b = EMPTY_FILTERS();
     expect(a).not.toBe(b);
     expect(a.company).not.toBe(b.company);
-    expect(Object.keys(a).sort()).toEqual(['company', 'newWithinHours', 'rmt', 'tier', 'type', 'visa']);
+    expect(Object.keys(a).sort()).toEqual(['company', 'country', 'metro', 'newWithinHours', 'rmt', 'tier', 'type', 'visa']);
     expect(a.visa).toBeNull();
   });
 });
@@ -113,6 +113,32 @@ describe('filterJobsExceptCompany', () => {
 
   it('ignores the company facet (HIRING NOW stays switchable)', () => {
     expect(run(toggleFacet(EMPTY_FILTERS(), 'company', 'Beta'))).toEqual(['a', 'b', 'c', 'd']);
+  });
+
+  it('filters by metro and country', () => {
+    expect(run(toggleFacet(EMPTY_FILTERS(), 'metro', 'Austin, TX'))).toEqual(['a', 'c']);
+    expect(run(toggleFacet(EMPTY_FILTERS(), 'country', 'CA'))).toEqual(['d']);
+    let both = toggleFacet(EMPTY_FILTERS(), 'metro', 'New York, NY');
+    both = toggleFacet(both, 'metro', 'Toronto, ON');
+    expect(run(both)).toEqual(['b', 'd']);
+  });
+});
+
+describe('location facets', () => {
+  it('filterJobsExcept can leave the metro/country facets out so their lists stay switchable', () => {
+    const f = toggleFacet(toggleFacet(EMPTY_FILTERS(), 'metro', 'Austin, TX'), 'type', 'ML');
+    expect(ids(filterJobsExcept(JOBS, { filters: f }, new Set(['company', 'metro', 'country'])))).toEqual(['b', 'c']);
+    expect(ids(filterJobsExcept(JOBS, { filters: f }))).toEqual(['c']);
+  });
+
+  it('metroCounts and countryCounts skip rows without a value and sort by count then name', () => {
+    expect(metroCounts([...JOBS, job({ id: 'e', metro: '' })])).toEqual([['Austin, TX', 2], ['New York, NY', 1], ['Toronto, ON', 1]]);
+    expect(countryCounts([...JOBS, job({ id: 'e', country: '' })])).toEqual([['US', 3], ['CA', 1]]);
+  });
+
+  it('activeFilterCount counts metro and country', () => {
+    const f = toggleFacet(toggleFacet(EMPTY_FILTERS(), 'metro', 'Austin, TX'), 'country', 'US');
+    expect(activeFilterCount(f)).toBe(2);
   });
 });
 

@@ -88,13 +88,13 @@ describe('buildLandingPages', () => {
     expect(locations.map((p) => p.path)).toEqual(['jobs/in/new-york-ny/', 'jobs/in/hawthorne-ca/']);
     expect(byPath['jobs/in/new-york-ny/'].entries).toHaveLength(5);
     expect(byPath['jobs/in/new-york-ny/'].name).toBe('New York, NY');
-    expect(byPath['jobs/in/new-york-ny/'].boardQuery).toBe('q=New+York');
+    expect(byPath['jobs/in/new-york-ny/'].boardQuery).toBe('metro=New+York%2C+NY');
   });
 
   it('makes country pages for Canada and India from parsed locations', () => {
     expect(byPath['jobs/in/canada/'].entries).toHaveLength(3);
     expect(byPath['jobs/in/india/'].entries).toHaveLength(2);
-    expect(byPath['jobs/in/canada/'].boardQuery).toBe('q=Canada');
+    expect(byPath['jobs/in/canada/'].boardQuery).toBe('country=CA');
     expect(pages.some((p) => p.path === 'jobs/in/united-states/')).toBe(false);
   });
 

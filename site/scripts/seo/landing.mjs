@@ -15,7 +15,7 @@
 import { CATEGORY_TYPE } from '../../src/lib/taxonomy.js';
 import { deriveRmt } from '../../src/lib/jobs.js';
 import { parsePostedAt } from './jobposting.mjs';
-import { COUNTRY_NAME, parseLocation, regionCode } from './location.mjs';
+import { COUNTRY_NAME, metroOf, parseLocation } from './location.mjs';
 import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, jobPageUrl, jobPath } from './render.mjs';
 import { MAIN_FEED, categoryFeedPath, feedlyUrl } from '../../src/lib/feeds.js';
 import { escapeHtml, jsonForScript, truncate } from './text.mjs';
@@ -66,16 +66,6 @@ function firstSeen(entry) {
 function isVisaUnrestricted(job) {
   const flags = job.flags;
   return Boolean(flags && typeof flags === 'object' && flags.no_sponsorship === false && flags.us_citizenship_required === false);
-}
-
-/** "New York, NY" for a job with a recognisable locality + US/CA region, else null. */
-export function metroOf(location) {
-  const { places } = parseLocation(location);
-  for (const place of places) {
-    const code = regionCode(place.region);
-    if (place.locality && code) return { locality: place.locality, code };
-  }
-  return null;
 }
 
 function countriesOf(location) {
@@ -184,7 +174,7 @@ function locationPages(entries, generatedAt, { minLocationJobs, maxLocations }) 
       const slug = slugify(name);
       if (!slug || used.has(slug)) return null;
       used.add(slug);
-      return makePage('location', name, `${LANDING_ROOT}/in/${slug}/`, boardQueryFor({ q: locality }), g.entries, generatedAt);
+      return makePage('location', name, `${LANDING_ROOT}/in/${slug}/`, boardQueryFor({ metro: name }), g.entries, generatedAt);
     })
     .filter(Boolean);
 }
@@ -194,7 +184,7 @@ function countryPages(entries, generatedAt, { minCountryJobs }) {
     const list = entries.filter((e) => countriesOf(e.job.location).has(code));
     if (list.length < minCountryJobs) return null;
     const name = COUNTRY_NAME[code];
-    return makePage('country', name, `${LANDING_ROOT}/in/${slugify(name)}/`, boardQueryFor({ q: name }), list, generatedAt);
+    return makePage('country', name, `${LANDING_ROOT}/in/${slugify(name)}/`, boardQueryFor({ country: code }), list, generatedAt);
   }).filter(Boolean);
 }
 

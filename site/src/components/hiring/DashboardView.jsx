@@ -6,7 +6,7 @@
 import { useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
 import { BBG, FONT_STACK } from '../../lib/theme.js';
 import {
-  clearNewWindow, EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleVisa,
+  clearNewWindow, EMPTY_FILTERS, filterByCompany, filterJobsExcept, filterJobsExceptCompany, toggleFacet, toggleVisa,
 } from '../../lib/filters.js';
 import { clickJobSort, sortJobs } from '../../lib/sort.js';
 import { computeStats } from '../../lib/stats.js';
@@ -30,6 +30,7 @@ import { Toast } from './Toast.jsx';
 // history.state marker on the entry pushed when a mobile detail opens, so
 // BACK can pop it (instead of stacking another entry).
 const DETAIL_STATE = { ngjDetail: true };
+const LOCATION_FACETS = new Set(['company', 'metro', 'country']);
 
 /**
  * @param {{
@@ -72,6 +73,11 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   const filtered = useMemo(
     () => sortJobs(filterByCompany(preCompanyFiltered, filters.company), sort.key, sort.dir),
     [preCompanyFiltered, filters.company, sort],
+  );
+  // The LOCATION list is counted without the location facets so its rows stay switchable.
+  const preLocationFiltered = useMemo(
+    () => filterJobsExcept(jobs, { filters, q: deferredQ, saved, savedOnly, now: feedNow }, LOCATION_FACETS),
+    [jobs, filters, deferredQ, saved, savedOnly, feedNow],
   );
   const savedCount = useMemo(() => jobs.reduce((n, j) => n + (saved.has(j.id) ? 1 : 0), 0), [jobs, saved]);
 
@@ -174,6 +180,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           onClearNew={clearNew}
           jobs={jobs}
           preCompanyFiltered={preCompanyFiltered}
+          preLocationFiltered={preLocationFiltered}
         />
         <JobList
           isMobile={isMobile}

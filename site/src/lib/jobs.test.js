@@ -72,6 +72,8 @@ describe('mapJob', () => {
       co: 'Palantir',
       role: 'Forward Deployed Software Engineer - US Government',
       loc: 'Kitsap, WA',
+      metro: 'Kitsap, WA',
+      country: 'US',
       url: 'https://jobs.lever.co/palantir/a2e9',
       rmt: 'onsite',
       visa: true,

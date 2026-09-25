@@ -98,6 +98,12 @@ describe('location parsing', () => {
     expect(parseLocation('New York, New York, United States').places[0]).toEqual({ locality: 'New York', region: 'New York', country: 'US' });
   });
 
+  it('reads an Indian state code followed by IN as India, not Indiana', () => {
+    expect(parseLocation('KA, IN').places[0].country).toBe('IN');
+    expect(parseLocation('Bengaluru, KA, IN').places[0]).toMatchObject({ locality: 'Bengaluru', country: 'IN' });
+    expect(parseLocation('Indianapolis, IN').places[0]).toEqual({ locality: 'Indianapolis', region: 'IN', country: 'US' });
+  });
+
   it('detects remote roles and their applicant countries', () => {
     expect(parseLocation('Remote - US')).toEqual({ remote: true, places: [], remoteCountries: ['US'] });
     expect(parseLocation('Remote, Canada; Remote, United Kingdom').remoteCountries).toEqual(['CA', 'GB']);
