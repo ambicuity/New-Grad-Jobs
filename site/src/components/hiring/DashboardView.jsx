@@ -6,7 +6,7 @@
 import { useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
 import { BBG, FONT_STACK } from '../../lib/theme.js';
 import {
-  EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleVisa,
+  clearNewWindow, EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleVisa,
 } from '../../lib/filters.js';
 import { clickJobSort, sortJobs } from '../../lib/sort.js';
 import { computeStats } from '../../lib/stats.js';
@@ -55,9 +55,15 @@ export function DashboardView({ jobs, meta, view, updateView }) {
 
   // Every facet except company — also feeds HIRING NOW so picking a company
   // doesn't collapse the company list.
+  // The ?new=<hours> window counts back from when the feed was generated, so a shared link shows
+  // the same roles whenever it is opened within the feed's refresh interval.
+  const feedNow = useMemo(() => {
+    const t = Date.parse((meta && meta.generated_at) || '');
+    return Number.isNaN(t) ? loadedAt : t;
+  }, [meta, loadedAt]);
   const preCompanyFiltered = useMemo(
-    () => filterJobsExceptCompany(jobs, { filters, q: deferredQ, saved, savedOnly }),
-    [jobs, filters, deferredQ, saved, savedOnly],
+    () => filterJobsExceptCompany(jobs, { filters, q: deferredQ, saved, savedOnly, now: feedNow }),
+    [jobs, filters, deferredQ, saved, savedOnly, feedNow],
   );
   const filtered = useMemo(
     () => sortJobs(filterByCompany(preCompanyFiltered, filters.company), sort.key, sort.dir),
@@ -82,6 +88,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   }, [patch]);
   const toggleSet = useCallback((key, val) => patch((v) => ({ filters: toggleFacet(v.filters, key, val) })), [patch]);
   const setVisa = useCallback((val) => patch((v) => ({ filters: toggleVisa(v.filters, val) })), [patch]);
+  const clearNew = useCallback(() => patch((v) => ({ filters: clearNewWindow(v.filters) })), [patch]);
   const setQuery = useCallback((value) => patch(() => ({ q: value })), [patch]);
   const sortClick = useCallback((k) => patch((v) => ({ sort: clickJobSort(v.sort, k) })), [patch]);
   // F2 cycles keys, each in its natural direction (newest / highest / A→Z).
@@ -149,6 +156,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           filters={filters}
           onToggle={toggleSet}
           onVisa={setVisa}
+          onClearNew={clearNew}
           jobs={jobs}
           preCompanyFiltered={preCompanyFiltered}
         />

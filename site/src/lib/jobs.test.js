@@ -81,6 +81,7 @@ describe('mapJob', () => {
       type: 'SWE',
       posted: '1h',
       postedTs: Date.UTC(2026, 8, 24, 14, 50, 21),
+      firstSeenTs: null,
       jobId: 'job_4e67aada0c997e69c1a7',
       desc: '',
       closed: false,
@@ -175,5 +176,13 @@ describe('normalizeJobsPayload', () => {
 
   it.each([null, {}, { jobs: 'nope' }, 'text'])('throws on a payload without a jobs array: %j', (p) => {
     expect(() => normalizeJobsPayload(p, NOW)).toThrow(/no "jobs" array/);
+  });
+});
+
+describe('mapJob firstSeenTs', () => {
+  it('reads first_seen as epoch ms, null when absent or invalid', () => {
+    expect(mapJob({ first_seen: '2026-09-25T12:00:00Z' }).firstSeenTs).toBe(Date.parse('2026-09-25T12:00:00Z'));
+    expect(mapJob({}).firstSeenTs).toBeNull();
+    expect(mapJob({ first_seen: 'nope' }).firstSeenTs).toBeNull();
   });
 });

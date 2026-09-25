@@ -9,7 +9,7 @@ import { activeFilterCount, companyCounts } from '../../lib/filters.js';
 import { Chip, ChipGroup, DrawerToggle, MIN_TARGET, sectionLabel } from '../ui.jsx';
 
 export function FilterRail({
-  isMobile, open, onToggleOpen, filters, onToggle, onVisa, jobs, preCompanyFiltered,
+  isMobile, open, onToggleOpen, filters, onToggle, onVisa, onClearNew, jobs, preCompanyFiltered,
 }) {
   // Tiers present in the feed (no empty buckets).
   const tiers = useMemo(() => {
@@ -34,6 +34,12 @@ export function FilterRail({
       )}
       {(!isMobile || open) && (
         <>
+          {/* Only reachable from a link (?new=<hours>): shown while active, one click clears it. */}
+          {filters.newWithinHours ? (
+            <ChipGroup title="ADDED">
+              <Chip on onClick={onClearNew} label={`added in last ${filters.newWithinHours}h ×`} />
+            </ChipGroup>
+          ) : null}
           <ChipGroup title="ROLE">
             {TYPE_ORDER.map((t) => (
               <Chip key={t} on={filters.type.has(t)} onClick={() => onToggle('type', t)} label={TYPE_LABEL[t]} />

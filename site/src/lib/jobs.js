@@ -102,6 +102,8 @@ export function mapJob(j, now = Date.now()) {
   const tier = raw.company_tier && raw.company_tier.tier;
   const visaNote = visaNoteOf(raw.flags || {});
   const ts = parseTimestamp(raw.posted_at);
+  // When the board first saw the role: what ?new=<hours> filters on.
+  const firstSeen = parseTimestamp(raw.first_seen);
   const jobId = typeof raw.job_id === 'string' ? raw.job_id : '';
   const base = {
     id: jobId || (raw.id != null ? String(raw.id) : ''),
@@ -117,6 +119,7 @@ export function mapJob(j, now = Date.now()) {
     type: deriveType(raw),
     posted: ageString(raw.posted_at, now),
     postedTs: Number.isNaN(ts) ? 0 : ts,
+    firstSeenTs: Number.isNaN(firstSeen) ? null : firstSeen,
     jobId,
     desc: (typeof raw.description === 'string' && raw.description.length > MIN_REAL_DESCRIPTION)
       ? raw.description

@@ -382,3 +382,25 @@ describe('contributors tab', () => {
     expect(params().get('tab')).toBe('contributors');
   });
 });
+
+describe('new-roles window (?new=<hours>)', () => {
+  // The fixture predates first_seen; stamp the first five jobs as seen an hour before the feed was generated.
+  const generated = Date.parse(rawJobs.meta.generated_at);
+  const stamped = {
+    ...rawJobs,
+    jobs: rawJobs.jobs.map((j, i) => ({ ...j, first_seen: new Date(generated - (i < 5 ? 1 : 48) * 3600e3).toISOString() })),
+  };
+  const recentState = { ...normalizeJobsPayload(stamped), error: null };
+
+  it('shows only roles first seen in the window, with a chip that clears it and keeps utm tags', async () => {
+    window.history.replaceState(null, '', '/?new=24&utm_source=newsletter');
+    renderApp(recentState);
+    expect(rows()).toHaveLength(5);
+    const chip = screen.getByRole('button', { name: /added in last 24h/ });
+    act(() => { fireEvent.click(chip); });
+    expect(rows()).toHaveLength(20);
+    await flushUrl();
+    expect(params().get('new')).toBeNull();
+    expect(params().get('utm_source')).toBe('newsletter');
+  });
+});

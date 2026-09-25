@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   EMPTY_FILTERS, activeFilterCount, companyCounts, filterByCompany, filterJobsExceptCompany,
-  matchesQuery, toggleFacet, toggleInSet, toggleVisa,
+  clearNewWindow, matchesQuery, toggleFacet, toggleInSet, toggleVisa,
 } from './filters.js';
 import { searchHaystack } from './jobs.js';
 
@@ -27,7 +27,7 @@ describe('EMPTY_FILTERS', () => {
     const b = EMPTY_FILTERS();
     expect(a).not.toBe(b);
     expect(a.company).not.toBe(b.company);
-    expect(Object.keys(a).sort()).toEqual(['company', 'rmt', 'tier', 'type', 'visa']);
+    expect(Object.keys(a).sort()).toEqual(['company', 'newWithinHours', 'rmt', 'tier', 'type', 'visa']);
     expect(a.visa).toBeNull();
   });
 });
@@ -128,5 +128,31 @@ describe('company facet', () => {
   it('companyCounts orders companies by job count', () => {
     expect(companyCounts(JOBS)).toEqual([['Acme', 2], ['Beta', 1], ['Gamma', 1]]);
     expect(companyCounts([])).toEqual([]);
+  });
+});
+
+describe('newWithinHours (?new=<hours>)', () => {
+  const NOW = Date.parse('2026-09-25T14:00:00Z');
+  const seen = (hoursAgo) => (hoursAgo === null ? null : NOW - hoursAgo * 3600e3);
+  const RECENT = [
+    job({ id: 'n1', firstSeenTs: seen(1) }),
+    job({ id: 'n2', firstSeenTs: seen(23.9) }),
+    job({ id: 'o1', firstSeenTs: seen(24.1) }),
+    job({ id: 'o2', firstSeenTs: null }),
+  ];
+  it('keeps only roles first seen within the window, measured from `now`', () => {
+    const filters = { ...EMPTY_FILTERS(), newWithinHours: 24 };
+    expect(ids(filterJobsExceptCompany(RECENT, { filters, now: NOW }))).toEqual(['n1', 'n2']);
+  });
+  it('is a no-op when unset', () => {
+    expect(ids(filterJobsExceptCompany(RECENT, { filters: EMPTY_FILTERS(), now: NOW }))).toEqual(['n1', 'n2', 'o1', 'o2']);
+  });
+  it('counts as an active filter and clears without touching the others', () => {
+    const filters = { ...toggleFacet(EMPTY_FILTERS(), 'type', 'SWE'), newWithinHours: 72 };
+    expect(activeFilterCount(filters)).toBe(2);
+    const cleared = clearNewWindow(filters);
+    expect(cleared.newWithinHours).toBeNull();
+    expect(cleared.type.has('SWE')).toBe(true);
+    expect(filters.newWithinHours).toBe(72);
   });
 });
