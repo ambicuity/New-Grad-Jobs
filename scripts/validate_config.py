@@ -53,6 +53,8 @@ HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
 # (the code has defaults); present keys must be integers in range.
 INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("filtering.max_age_days", 1, 365),
+    ("filtering.near_miss_max_age_days", 1, 365),
+    ("filtering.max_near_misses", 0, 100_000),
     ("filtering.min_expected_companies", 0, 100_000),
     ("apis.workday.page_limit", 1, 20),
     ("apis.workday.max_jobs_per_company", 1, 5_000),
@@ -66,7 +68,7 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 )
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
-OPTIONAL_FILTERING_LISTS = ("exclusion_signals",)
+OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "internship_signals")
 ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "google", "jobspy", "workday", "graphql")
 
 

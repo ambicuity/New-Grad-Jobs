@@ -149,11 +149,11 @@ def test_ids_are_unique_and_equal_job_id_in_published_output(settings):
 
 def test_feed_and_health_write_failures_are_reported(settings):
     with (
-        patch("ngj.pipeline.generate_rss_feed", return_value=None),
+        patch("ngj.pipeline.generate_rss_feeds", return_value=None),
         patch("ngj.pipeline.generate_health_json", return_value=None),
     ):
         summary = _run(settings, {"greenhouse": _result(1)})
-    assert summary.errors == ("feed.xml write failed", "health.json write failed")
+    assert summary.errors == ("feed.xml / feeds/*.xml write failed", "health.json write failed")
     assert "jobs.json" in _outputs(settings)  # the rest was still written
 
 

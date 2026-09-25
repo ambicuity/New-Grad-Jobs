@@ -8,6 +8,7 @@ import { fmtComp } from '../../lib/format.js';
 import { safeHttpUrl } from '../../lib/safe-url.js';
 import { extractRequirements } from '../../lib/requirements.js';
 import { similarJobs } from '../../lib/similar.js';
+import { nearMissNote } from '../../lib/near-miss.js';
 import { useJobDescription } from '../../hooks/useJobDescription.js';
 import { MIN_TARGET, Metric, ellipsis, sectionLabel } from '../ui.jsx';
 import { ClosedBadge } from './JobRow.jsx';
@@ -22,16 +23,26 @@ const VISA_DETAIL = {
 
 const postedDate = (ts) => (ts > 0 ? new Date(ts).toISOString().slice(0, 10) : 'date unknown');
 
+/** Header toggle buttons (SAVE / APPLIED / LINK): filled when on, outlined when off. */
+const toggleStyle = (on, color = BBG.acc) => ({
+  background: on ? color : 'transparent', color: on ? '#000' : BBG.ink,
+  border: `1px solid ${on ? color : BBG.rule2}`, padding: '2px 8px', minHeight: MIN_TARGET,
+  fontFamily: 'inherit', fontSize: 11, cursor: 'pointer', whiteSpace: 'nowrap',
+});
+
 /**
  * @param {{
  *   job: import('../../lib/jobs.js').Job|null,
  *   jobs: import('../../lib/jobs.js').Job[],
  *   saved: boolean,
  *   onSave: () => void,
+ *   applied?: boolean,
+ *   onApplied?: () => void,
+ *   onCopyLink?: () => void,
  *   onSelectJob: (id: string) => void,
  * }} props
  */
-export function JobDetail({ job, jobs, saved, onSave, onSelectJob }) {
+export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied, onCopyLink, onSelectJob }) {
   // Hooks run before the early return so hook order stays stable.
   const desc = useJobDescription(job);
   const requirements = useMemo(
@@ -53,11 +64,26 @@ export function JobDetail({ job, jobs, saved, onSave, onSelectJob }) {
           <div style={{ color: BBG.acc, fontSize: 11, letterSpacing: 0.7 }}>
             {job.co.toUpperCase()} · {TYPE_LABEL[job.type]} · {TIER_LABEL[job.tier]}
           </div>
-          <button type="button" onClick={onSave} aria-pressed={saved} aria-label={saved ? 'Saved — remove from saved jobs' : 'Save job'} style={{
-            background: saved ? BBG.acc : 'transparent', color: saved ? '#000' : BBG.ink,
-            border: `1px solid ${saved ? BBG.acc : BBG.rule2}`, padding: '2px 8px', minHeight: MIN_TARGET,
-            fontFamily: 'inherit', fontSize: 11, cursor: 'pointer',
-          }}>{saved ? '★ SAVED' : '☆ SAVE'}</button>
+          <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+            {onCopyLink && (
+              <button type="button" onClick={onCopyLink} aria-label="Copy link to this job" title="Copy a shareable link" style={toggleStyle(false)}>
+                ⧉ LINK
+              </button>
+            )}
+            {onApplied && (
+              <button
+                type="button"
+                onClick={onApplied}
+                aria-pressed={applied}
+                aria-label={applied ? 'Applied — unmark' : 'Mark as applied'}
+                title="Tracked in this browser only"
+                style={toggleStyle(applied, BBG.acc2)}
+              >{applied ? '✓ APPLIED' : '○ APPLIED'}</button>
+            )}
+            <button type="button" onClick={onSave} aria-pressed={saved} aria-label={saved ? 'Saved — remove from saved jobs' : 'Save job'} style={toggleStyle(saved)}>
+              {saved ? '★ SAVED' : '☆ SAVE'}
+            </button>
+          </div>
         </div>
         <h2 id="job-detail-title" style={{ fontSize: 17, fontWeight: 600, margin: '4px 0 0', color: BBG.ink, lineHeight: 1.25 }}>
           {job.closed && <ClosedBadge />}{job.role}
@@ -65,6 +91,9 @@ export function JobDetail({ job, jobs, saved, onSave, onSelectJob }) {
         <div style={{ color: BBG.dim, fontSize: 11.5, marginTop: 4 }}>
           {job.co} · {job.loc} · {RMT_LABEL[job.rmt]}
         </div>
+        {job.nearMiss.length > 0 && (
+          <div role="note" style={{ color: BBG.acc2, fontSize: 11.5, marginTop: 6 }}>{nearMissNote(job)}</div>
+        )}
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderBottom: `1px solid ${BBG.rule2}` }}>

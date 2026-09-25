@@ -6,14 +6,18 @@
 import { useCallback, useDeferredValue, useMemo, useRef, useState } from 'react';
 import { BBG, FONT_STACK } from '../../lib/theme.js';
 import {
-  clearNewWindow, EMPTY_FILTERS, filterByCompany, filterJobsExceptCompany, toggleFacet, toggleVisa,
+  clearNewWindow, EMPTY_FILTERS, filterByCompany, filterJobsExcept, filterJobsExceptCompany, toggleFacet, toggleVisa,
 } from '../../lib/filters.js';
 import { clickJobSort, sortJobs } from '../../lib/sort.js';
 import { computeStats } from '../../lib/stats.js';
 import { safeHttpUrl } from '../../lib/safe-url.js';
+import { feedPathFor } from '../../lib/feeds.js';
+import { APPLIED_STORAGE_KEY } from '../../lib/saved.js';
+import { copyText, jobShareUrl } from '../../lib/share.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { useToast } from '../../hooks/useToast.js';
 import { useSavedJobs } from '../../hooks/useSavedJobs.js';
+import { useExtendedJobs } from '../../hooks/useExtendedJobs.js';
 import { useDashboardKeys } from '../../hooks/useDashboardKeys.js';
 import { MobileOverlay } from '../ui.jsx';
 import { StatsStrip } from './StatsStrip.jsx';
@@ -27,6 +31,7 @@ import { Toast } from './Toast.jsx';
 // history.state marker on the entry pushed when a mobile detail opens, so
 // BACK can pop it (instead of stacking another entry).
 const DETAIL_STATE = { ngjDetail: true };
+const LOCATION_FACETS = new Set(['company', 'metro', 'country']);
 
 /**
  * @param {{
@@ -36,10 +41,17 @@ const DETAIL_STATE = { ngjDetail: true };
  *   updateView: (fn: Function, opts?: object) => void,
  * }} props
  */
-export function DashboardView({ jobs, meta, view, updateView }) {
+export function DashboardView({ jobs: curated, meta, view, updateView }) {
   const { q, filters, sort, savedOnly } = view;
+  // Near misses are fetched the first time a WIDEN SCOPE toggle is on and merged behind the curated rows.
+  const extended = useExtendedJobs(filters.include.size > 0);
+  const jobs = useMemo(
+    () => (filters.include.size && extended.jobs.length ? [...curated, ...extended.jobs] : curated),
+    [curated, extended.jobs, filters.include.size],
+  );
   const isMobile = useIsMobile();
   const [saved, toggleSave] = useSavedJobs();
+  const [applied, toggleApplied] = useSavedJobs(undefined, APPLIED_STORAGE_KEY);
   const [helpOpen, setHelpOpen] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [toast, flash] = useToast();
@@ -51,7 +63,8 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   // ~1.9k rows runs at lower priority on the deferred query.
   const deferredQ = useDeferredValue(q);
   const jobsById = useMemo(() => new Map(jobs.map((j) => [j.id, j])), [jobs]);
-  const stats = useMemo(() => computeStats(jobs, loadedAt), [jobs, loadedAt]);
+  // The headline strip always describes the curated set.
+  const stats = useMemo(() => computeStats(curated, loadedAt), [curated, loadedAt]);
 
   // Every facet except company — also feeds HIRING NOW so picking a company
   // doesn't collapse the company list.
@@ -68,6 +81,11 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   const filtered = useMemo(
     () => sortJobs(filterByCompany(preCompanyFiltered, filters.company), sort.key, sort.dir),
     [preCompanyFiltered, filters.company, sort],
+  );
+  // The LOCATION list is counted without the location facets so its rows stay switchable.
+  const preLocationFiltered = useMemo(
+    () => filterJobsExcept(jobs, { filters, q: deferredQ, saved, savedOnly, now: feedNow }, LOCATION_FACETS),
+    [jobs, filters, deferredQ, saved, savedOnly, feedNow],
   );
   const savedCount = useMemo(() => jobs.reduce((n, j) => n + (saved.has(j.id) ? 1 : 0), 0), [jobs, saved]);
 
@@ -98,6 +116,12 @@ export function DashboardView({ jobs, meta, view, updateView }) {
     if (savedCount === 0 && !savedOnly) { flash('no saved jobs yet', BBG.warn); return; }
     patch((v) => ({ savedOnly: !v.savedOnly }));
   }, [savedCount, savedOnly, flash, patch]);
+  const feedPath = useMemo(() => feedPathFor(filters), [filters]);
+  const copyLink = useCallback(async () => {
+    if (!selected) return;
+    const ok = await copyText(jobShareUrl(selected, window.location));
+    flash(ok ? '⧉ link copied' : 'could not copy — use the address bar', ok ? BBG.acc : BBG.warn);
+  }, [selected, flash]);
   const openSelected = useCallback(() => {
     if (!selected) return;
     if (isMobile) { openMobileDetail(selected.id); return; }
@@ -114,6 +138,8 @@ export function DashboardView({ jobs, meta, view, updateView }) {
     select,
     saved,
     toggleSave,
+    applied,
+    toggleApplied,
     sortKey: sort.key,
     setSortKey,
     setHelpOpen,
@@ -129,6 +155,9 @@ export function DashboardView({ jobs, meta, view, updateView }) {
       jobs={jobs}
       saved={!!selected && saved.has(selected.id)}
       onSave={() => selected && toggleSave(selected.id)}
+      applied={!!selected && applied.has(selected.id)}
+      onApplied={() => selected && toggleApplied(selected.id)}
+      onCopyLink={copyLink}
       onSelectJob={isMobile ? (id) => patch(() => ({ job: id })) : select}
     />
   );
@@ -159,6 +188,8 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           onClearNew={clearNew}
           jobs={jobs}
           preCompanyFiltered={preCompanyFiltered}
+          preLocationFiltered={preLocationFiltered}
+          extended={extended}
         />
         <JobList
           isMobile={isMobile}
@@ -176,6 +207,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           onOpenMobile={openMobileDetail}
           saved={saved}
           onToggleSave={toggleSave}
+          applied={applied}
         />
         {!isMobile && detail}
       </div>
@@ -200,6 +232,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
         savedCount={savedCount}
         savedOnly={savedOnly}
         onToggleSavedOnly={toggleSavedOnly}
+        feedPath={feedPath}
       />
     </div>
   );

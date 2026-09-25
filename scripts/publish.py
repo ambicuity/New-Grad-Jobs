@@ -60,6 +60,14 @@ def build_description_shards(descriptions: dict[str, str]) -> dict[str, dict[str
     return grouped
 
 
+EXTENDED_FILENAME = "jobs-extended.json"
+
+
+def write_extended_artifact(docs_dir: Path, payload: dict[str, Any]) -> None:
+    """Write jobs-extended.json (the near-miss tier), minified: the site fetches it only on demand."""
+    write_compact_json_artifact(Path(docs_dir) / EXTENDED_FILENAME, payload)
+
+
 def write_site_artifacts(
     docs_dir: Path,
     jobs_json: dict[str, Any],

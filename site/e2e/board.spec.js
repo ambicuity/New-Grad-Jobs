@@ -1,7 +1,7 @@
 // Desktop hiring board: list, search, facet filters, company filter, sorting.
 import { test, expect } from './support/test.js';
 import {
-  FIXTURE, chip, detailTitle, expectParams, expectResults, expectSelected, jobList, openBoard,
+  FIXTURE, appliedIds, chip, detailTitle, expectParams, expectResults, expectSelected, jobList, openBoard,
   searchBox, selectedOption,
 } from './support/app.js';
 
@@ -142,6 +142,84 @@ test.describe('facet filters', () => {
     await expectResults(page, FIXTURE.anduril.jobs);
     await expectParams(page, { co: [FIXTURE.anduril.name] });
     await expect(hiringNow.getByRole('button')).toHaveCount(companiesBefore);
+  });
+});
+
+test.describe('location facets', () => {
+  test('a metro row narrows to that city and is reflected in the URL', async ({ page }) => {
+    await openBoard(page);
+    const lexington = page.getByRole('group', { name: 'LOCATION · metros' }).getByRole('button', { name: 'Lexington, MA, 2 jobs' });
+
+    await lexington.click();
+
+    await expect(lexington).toHaveAttribute('aria-pressed', 'true');
+    await expectResults(page, 2);
+    await expectParams(page, { metro: ['Lexington, MA'] });
+    // The list is counted without the metro facet, so other metros stay clickable.
+    await expect(page.getByRole('group', { name: 'LOCATION · metros' }).getByRole('button', { name: 'Kitsap, WA, 2 jobs' })).toBeVisible();
+  });
+
+  test('COUNTRY chips narrow to Canada or India', async ({ page }) => {
+    await openBoard(page);
+
+    await chip(page, 'COUNTRY', 'canada').click();
+    await expectResults(page, 1);
+    await expectParams(page, { country: ['CA'] });
+
+    await chip(page, 'COUNTRY', 'canada').click();
+    await chip(page, 'COUNTRY', 'india').click();
+    await expectResults(page, 2);
+  });
+});
+
+test.describe('WIDEN SCOPE (near misses)', () => {
+  test('near misses are hidden by default and appear only for the toggled reasons', async ({ page }) => {
+    await openBoard(page);
+    await expectResults(page, FIXTURE.total);
+    const interns = chip(page, 'WIDEN SCOPE', 'internships & co-ops');
+
+    await interns.click();
+
+    // The intern (1 reason) appears; the co-op abroad (2 reasons) needs both toggles.
+    await expectResults(page, FIXTURE.total + 1, FIXTURE.total + 3);
+    await expectParams(page, { include: ['intern_or_coop'] });
+    await expect(page.getByRole('group', { name: 'WIDEN SCOPE' }).getByRole('button', { name: 'internships & co-ops (2)' })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('[role="option"][data-job-id="job_e001ffffffffffffffff"]')).toContainText('intern');
+
+    await chip(page, 'WIDEN SCOPE', 'outside US / CA / IN (1)').click();
+    await expectResults(page, FIXTURE.total + 2, FIXTURE.total + 3);
+
+    await page.keyboard.press('Escape');
+    await expectResults(page, FIXTURE.total);
+  });
+});
+
+test.describe('applied tracking and alerts', () => {
+  test('the APPLIED button and the a key track the job in localStorage and mark the row', async ({ page }) => {
+    await openBoard(page);
+
+    await page.getByRole('button', { name: 'Mark as applied' }).click();
+
+    await expect(page.getByRole('button', { name: 'Applied — unmark' })).toHaveAttribute('aria-pressed', 'true');
+    await expect.poll(() => appliedIds(page)).toEqual([FIXTURE.first]);
+    await expect(page.locator(`[role="option"][data-job-id="${FIXTURE.first}"]`)).toHaveAttribute('data-applied', 'true');
+
+    await jobList(page).focus();
+    await page.keyboard.press('a');
+    await expect.poll(() => appliedIds(page)).toEqual([]);
+  });
+
+  test('the status bar RSS link follows the active filter', async ({ page }) => {
+    await openBoard(page);
+    const link = page.getByTestId('status-feed-link');
+    await expect(link).toHaveAttribute('href', './feed.xml');
+
+    await chip(page, 'ROLE', 'ml').click();
+    await expect(link).toHaveAttribute('href', './feeds/data-ml.xml');
+
+    await chip(page, 'ROLE', 'ml').click();
+    await chip(page, 'REMOTE', 'remote').click();
+    await expect(link).toHaveAttribute('href', './feeds/remote.xml');
   });
 });
 

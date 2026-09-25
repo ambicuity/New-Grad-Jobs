@@ -57,7 +57,7 @@ body::before { content: ''; position: absolute; inset: 24px; border: 2px solid #
 <div class="bar"><span class="dot"></span><span class="live">LIVE</span><span>· updated every ~30 min</span></div>
 <div class="mark">NGJ</div>
 <div class="name"><span class="sep">·</span>New Grad Jobs</div>
-<div class="tag">entry-level tech roles <span class="dim">from 200+ company career APIs</span></div>
+<div class="tag">new grad &amp; entry-level roles in every field <span class="dim">straight from company career APIs</span></div>
 <div class="prompt"><b>CMD&gt;</b> filter --new-grad<span class="cursor"></span></div>
 <div class="url">jobs.riteshrana.engineer</div>
 </body></html>`;

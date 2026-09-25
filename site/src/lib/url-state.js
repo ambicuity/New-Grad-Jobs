@@ -5,15 +5,19 @@
 import { EMPTY_FILTERS } from './filters.js';
 import { DEFAULT_SORT, SORT_KEYS } from './sort.js';
 import { RMT_ORDER, TIER_ORDER, TYPE_ORDER } from './taxonomy.js';
+import { COUNTRY_CODES } from './location.js';
+import { NEAR_MISS_REASONS } from './near-miss.js';
 
 export const TAB_IDS = ['hiring', 'contributors'];
 const MAX_QUERY = 200;
 const MAX_VALUE = 200;
 const MAX_COMPANIES = 50;
+const MAX_METROS = 20;
 
 const P = {
   tab: 'tab', q: 'q', type: 'role', rmt: 'remote', tier: 'tier', company: 'co',
-  visa: 'visa', sort: 'sort', job: 'job', saved: 'saved', newHours: 'new',
+  visa: 'visa', sort: 'sort', job: 'job', saved: 'saved', newHours: 'new', metro: 'metro', country: 'country',
+  include: 'include',
 };
 // ?new=<hours>: roles first seen in the last N hours, for shareable "what's new" links. At most a week.
 const MAX_NEW_HOURS = 168;
@@ -78,6 +82,9 @@ export function parseViewState(search, hash = '') {
       rmt: readSet(params, P.rmt, allowed(RMT_ORDER)),
       tier: readSet(params, P.tier, allowed(TIER_ORDER)),
       company: readSet(params, P.company, shortString, MAX_COMPANIES),
+      metro: readSet(params, P.metro, shortString, MAX_METROS),
+      country: readSet(params, P.country, allowed(COUNTRY_CODES)),
+      include: readSet(params, P.include, allowed(NEAR_MISS_REASONS)),
       visa: Object.hasOwn(VISA_PARAM, visa) ? VISA_PARAM[visa] : null,
       newWithinHours: readNewHours(params.get(P.newHours)),
     },
@@ -103,6 +110,9 @@ export function serializeViewState(view, baseSearch = '') {
   filters.rmt.forEach((v) => params.append(P.rmt, v));
   filters.tier.forEach((v) => params.append(P.tier, v));
   filters.company.forEach((v) => params.append(P.company, v));
+  filters.metro.forEach((v) => params.append(P.metro, v));
+  filters.country.forEach((v) => params.append(P.country, v));
+  filters.include.forEach((v) => params.append(P.include, v));
   if (filters.visa !== null) params.set(P.visa, filters.visa ? 'none' : 'restricted');
   if (filters.newWithinHours) params.set(P.newHours, String(filters.newWithinHours));
   if (sort.key !== DEFAULT_SORT.key || sort.dir !== DEFAULT_SORT.dir) {

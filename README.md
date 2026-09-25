@@ -7,9 +7,13 @@
 [![Sources](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fjobs.riteshrana.engineer%2Fhealth.json&query=%24.enabled_sources&label=sources&color=0a7f6f)](https://jobs.riteshrana.engineer/health.json)
 [![codecov](https://codecov.io/github/ambicuity/New-Grad-Jobs/graph/badge.svg?token=1D0TO5UL1T)](https://codecov.io/github/ambicuity/New-Grad-Jobs)
 
-**Fully automated** list of entry-level tech positions for 2025 & 2026 new graduates.
+**Fully automated** list of entry-level positions for 2025–2027 new graduates: software, data, engineering, finance, marketing, sales, healthcare and every other field, pulled straight from company career sites.
 
 Unlike manually curated lists, this repository pulls directly from configured company APIs and refreshes **about every 30 minutes**, 24/7.
+
+[![NGJ — the live board](site/public/og-image.png)](https://jobs.riteshrana.engineer/)
+
+**[Open the live board →](https://jobs.riteshrana.engineer/)** · [Browse by role, company, city](https://jobs.riteshrana.engineer/jobs/) · [Guides](https://jobs.riteshrana.engineer/guides/) · [RSS alerts](https://jobs.riteshrana.engineer/feed.xml) · [How it works](https://jobs.riteshrana.engineer/about/)
 
 **Contribute** by submitting an [issue](https://github.com/ambicuity/New-Grad-Jobs/issues/new/choose). See the [contribution guidelines](CONTRIBUTING.md) to get started.
 
@@ -53,22 +57,40 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2089<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2877<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->951<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1047<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->14<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->67<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->151<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->200<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->9<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->91<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->531<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->90<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->141<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->36<!-- /COUNT --> |
+| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->8<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->189<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->4<!-- /COUNT --> |
+| [Project Management](#project-management) | <!-- COUNT:project_management -->19<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->16<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->78<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->307<!-- /COUNT --> |
+| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->23<!-- /COUNT --> |
+| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->83<!-- /COUNT --> |
+| [Marketing](#marketing) | <!-- COUNT:marketing -->21<!-- /COUNT --> |
+| [Sales](#sales) | <!-- COUNT:sales -->128<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->150<!-- /COUNT --> |
+| [Consulting](#consulting) | <!-- COUNT:consulting -->44<!-- /COUNT --> |
+| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->63<!-- /COUNT --> |
+| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->27<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->55<!-- /COUNT --> |
+| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->100<!-- /COUNT --> |
+| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->50<!-- /COUNT --> |
+| [Education and Training](#education-and-training) | <!-- COUNT:education -->6<!-- /COUNT --> |
+| [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->2<!-- /COUNT --> |
+| [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
+| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->78<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->70<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
@@ -296,10 +318,10 @@ This repository automatically scrapes new graduate job opportunities from variou
 
 ### Data Sources
 
-- **Greenhouse**: 170 configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block, Jane Street, Point72).
-- **Ashby**: 72 configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
-- **Workday**: 92 configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants rejects the public jobs API (HTTP 422/400); per-company errors are reported in [`health.json`](https://jobs.riteshrana.engineer/health.json) — see [`docs/operations.md`](docs/operations.md#a-source-returns-far-fewer-jobs).
-- **Lever**: 7 active boards (Palantir, Spotify, Layup Parts, …) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
+- **Greenhouse**: <!-- COUNT:boards_greenhouse -->164<!-- /COUNT --> configured boards (e.g. Stripe, Affirm, Lyft, Anduril, xAI, Block, Jane Street, Point72).
+- **Ashby**: <!-- COUNT:boards_ashby -->78<!-- /COUNT --> configured boards covering AI labs and modern devtools (OpenAI, Notion, Cursor, Mistral AI, Cohere, Perplexity, Linear, Snowflake, Plaid, ElevenLabs, …). Returns structured compensation when companies opt in.
+- **Workday**: <!-- COUNT:boards_workday -->59<!-- /COUNT --> configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants rejects the public jobs API (HTTP 422/400); per-company errors are reported in [`health.json`](https://jobs.riteshrana.engineer/health.json) — see [`docs/operations.md`](docs/operations.md#a-source-returns-far-fewer-jobs).
+- **Lever**: <!-- COUNT:boards_lever -->9<!-- /COUNT --> active boards (Palantir, Spotify, Layup Parts, …) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
 - **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
@@ -307,7 +329,7 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 ### Key Features
 
-- **Terminal-aesthetic frontend (NGJ)** at [jobs.riteshrana.engineer](https://jobs.riteshrana.engineer/) — dense tabular layout rendered with JetBrains Mono, sortable by posted date / compensation / company, filterable by role (12 categories: Software Engineering, Frontend, Backend, Mobile, Security, Data Science & ML, Data Engineering, Infrastructure & SRE, Product Management, Quantitative Finance, Hardware, Other), remote / hybrid / onsite, stated visa or citizenship restrictions, and company tier. A contributors view shares the same chrome, and every open job has its own shareable page (`/job/<job_id>/`).
+- **Terminal-aesthetic frontend (NGJ)** at [jobs.riteshrana.engineer](https://jobs.riteshrana.engineer/) — dense tabular layout rendered with JetBrains Mono, sortable by posted date / compensation / company, filterable by role (30 categories, from Software Engineering, Data Science & ML and Hardware to Finance, Marketing, Sales, Healthcare, Legal and Supply Chain), remote / hybrid / onsite, stated visa or citizenship restrictions, and company tier. A contributors view shares the same chrome, every open job has its own shareable page (`/job/<job_id>/`), and [`/jobs/`](https://jobs.riteshrana.engineer/jobs/) has static landing pages by role, company, city, country, remote, visa status and "new this week", all with live counts.
 - **Real compensation ranges** extracted from each posting where US pay-transparency laws make them available. Ashby's structured `compensationTiers` is preferred when present; otherwise regex-parses CA/NY/CO/WA disclosure text from the description body.
 - **Real "About the role"** copy from each posting (Greenhouse / Ashby / Lever) is published in `descriptions/*.json` (lazy-loaded) and rendered in the detail panel.
 - **Real-time Updates**: Automatic refresh about every 30 minutes via `.github/workflows/update-jobs.yml`.
@@ -316,14 +338,14 @@ The complete authoritative source list lives in [`config.yml`](config.yml); the 
 
 ### Filtering Criteria
 
-- **New Grad Signals**: new grad, entry-level, junior, associate, campus, early career, graduate programs, entry levels ("Engineer I/II", L3/L4); titles at level III and above, senior, staff, lead, manager and intern roles are excluded
-- **Track Focus**: Software, Data Science, ML, Network Engineering, SRE, DevOps, PM
+- **New Grad Signals**: new grad, entry-level, junior, associate, campus, early career, graduate programs, entry levels ("Engineer I/II", L3/L4); titles at level III and above, senior, staff, lead, manager, intern, co-op, student and summer-analyst roles are excluded
+- **Track Focus**: every profession, from software, data and engineering to finance, marketing, sales, HR, legal, healthcare, education and the public sector. A title needs both a new-grad signal and a recognisable role word, so a bare "Associate" never passes
 - **Recency**: Jobs posted within the last 60 days
 - **Location**: United States, Canada and India (including remote roles there)
 
 ### `jobs.json` schema
 
-The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](https://jobs.riteshrana.engineer/jobs.json) (also as an RSS feed, [`feed.xml`](https://jobs.riteshrana.engineer/feed.xml), and run telemetry in [`health.json`](https://jobs.riteshrana.engineer/health.json)). Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use.
+The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](https://jobs.riteshrana.engineer/jobs.json) (also as an RSS feed with per-category, remote and no-visa-restriction slices under [`feeds/`](https://jobs.riteshrana.engineer/feeds/software-engineering.xml), [`feed.xml`](https://jobs.riteshrana.engineer/feed.xml), and run telemetry in [`health.json`](https://jobs.riteshrana.engineer/health.json)). Each entry is consumed by the [NGJ frontend](site/) and is also stable for third-party use.
 `meta` carries `schema_version` (currently `"1.1"`), `generated_at`, `total_jobs` and `categories`
 (every category with its `count`, zero counts included). Jobs are ordered by `posted_at` (newest first), ties by `job_id`.
 
@@ -338,7 +360,7 @@ The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](
 | `posted_at` | ISO 8601 | when the employer posted the role |
 | `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
 | `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
-| `category` | object | `{id, name, emoji}` — one of the 12 categories |
+| `category` | object | `{id, name, emoji}` — one of the 30 categories (`CATEGORY_PATTERNS` in `scripts/ngj/taxonomy.py`) |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
 | `is_closed` | bool | |
@@ -349,19 +371,24 @@ The site itself loads two lighter artifacts generated alongside it:
 
 - [`jobs-index.json`](https://jobs.riteshrana.engineer/jobs-index.json): the same `meta` and jobs, minus `description`, minified. This is what the terminal UI fetches on page load.
 - `descriptions/<0-f>.json`: `{job_id: full "About the role" text}`, sharded by the first hex digit of `job_id`. The UI fetches one shard the first time a job's detail pane opens.
+- [`jobs-extended.json`](https://jobs.riteshrana.engineer/jobs-extended.json): the **near-miss tier**. Postings that pass every hard rule but fail a soft one (internship or co-op, level III+, outside US/CA/IN, posted 60–120 days ago) with `near_miss.reasons` attached, newest first, capped, without descriptions. The board fetches it only when a WIDEN SCOPE toggle is on and shows a row only when every one of its reasons is toggled on; every count elsewhere is the curated set.
 
 ### Companies Monitored
 
 <details>
-<summary>Click to expand the configured list (341 boards)</summary>
+<summary>Click to expand the configured list (<!-- COUNT:boards_total -->310<!-- /COUNT --> boards)</summary>
 
-**Greenhouse (170)**: Abnormal Security, Adept AI, Affirm, Airbnb, Airtable, Alchemy, Algolia, Allen Control Systems, Amplitude, Anduril Industries, Anthropic, AppLovin, ATOMS, Aurora, Block, Bot Auto, Brex, BridgeBio, Calm, Canva, Carta, Cerebral, Chainalysis, Character AI, CharterUP, Checkr, Chime, CircleCI, Civic Nation, Clarity Innovations, ClickHouse, Cloudflare, Cockroach Labs, Cohere, Coinbase, Confluent, Contentful, Cottingham & Butler, Coursera, Cribl, Cruise, Culture Amp, Databricks, Datadog, dbt Labs, Deel, Dialpad, Discord, Dropbox, DRW, Duolingo, Elastic, Epic Games, Extend, Faire, Fastly, Figma, Fireblocks, Fivetran, Flatiron Health, Flexport, Gemini, GitLab, Glean, Grafana Labs, Greenhouse, Gusto, HashiCorp, Honeycomb, Hugging Face, Huntress, Imply, Instacart, Instawork, Intercom, Jane Street, Jasper, Justworks, Khan Academy, Kraken, Lattice, LaunchDarkly, LinkedIn, Locus Robotics, Lucid, Lyft, Magic Leap, Marqeta, Materialize, Maven Clinic, Melio, Mercari, Mercury, Miro, Mixpanel, Mobiik, MongoDB, Navan, NetSage, New Relic, NewsBreak, Nextdoor, Niantic, Notion, Nuro, Okta, Opendoor, Orca Security, Orion Innovation, Oscar Health, PagerDuty, PathAI, Peloton, Pinterest, Pipe, PlanetScale, Point72, Poshmark, Postman, Precision Medicine Group, Pulley, Ramp, Recursion, Reddit, Remote, Retool, Riot Games, Ripple, Rippling, Robinhood, Roblox, Salesloft, Samsara, Scale AI, Scopely, Scout AI, SeatGeek, SingleStore, SIXGEN, SoFi, SpaceX, Squarespace, Stability AI, Starburst, StockX, Striim, Stripe, StubHub, Sumo Logic, Sweetgreen, Tailscale, Tanium, Temporal, Third Bridge, Together AI, Toloka, Twilio, Twitch, Unity Technologies, Upstart, Vanta, Vercel, Verkada, Waymo, Webflow, Wiz, xAI, Yugabyte, ZoomInfo, Zoox
+<!-- COMPANY-LISTINGS:START - auto-generated from config.yml by scripts/sync_readme_companies.py; do not edit by hand -->
 
-**Ashby (72)**: Airbyte, Anthropic, Anyscale, Ashby, Astronomer, Attio, Authorium, Axiom, Baseten, BJAK, Browserbase, Cal.com, Campfire, Cerebras, Cohere, Commure, Cradle Bio, Crusoe, Cursor, Databricks, David AI, Decagon, Docker, Dub, ElevenLabs, Groq, Hugging Face, LangChain, Linear, Lovable, Luma AI, Mintlify, Mistral AI, Modal, Neon, Netic, Notion, OpenAI, Perplexity, Pinecone, Plaid, PlanetScale, Poolside, Prefect, Qualified, Railway, Reka, Replicate, Runway, Scale AI, Scientech Research LLC, SentiLink, Sentry, Sierra, Snowflake, Statsig, Stytch, Sunday Robotics, Suno, Supabase, Tamarind Bio, Tinybird, Together AI, Top Hat, Truelogic, Turbopuffer, Vapi, Vercel, Vorticity, Warp, Weaviate, Weights & Biases
+**Greenhouse (164)**: Abnormal Security, Adyen, Affirm, Airbnb, Airtable, Akuna Capital, Algolia, Allen Control Systems, Amplitude, Anduril Industries, Anthropic, AppLovin, AQR Capital Management, Astranis, ATOMS, Betterment, Block, Bot Auto, Braze, Brex, BridgeBio, Calm, Carta, CharterUP, Checkr, Chime, CircleCI, Civic Nation, Clarity Innovations, Cloudflare, Cockroach Labs, Coinbase, Contentful, CoreWeave, Cottingham &amp; Butler, Coursera, Cribl, Culture Amp, Databricks, Datadog, Dialpad, DigitalOcean, Discord, Dropbox, DRW, Duolingo, Elastic, Epic Games, Extend, Faire, Fastly, Figma, Fireblocks, Fivetran, Flatiron Health, Flexport, Flow Traders, Gemini, GitLab, Glean, Grafana Labs, Greenhouse, Gusto, Honeycomb, Huntress, IMC Trading, Imply, Instacart, Instawork, Intercom, Iterable, Jamf, Jane Street, Justworks, Khan Academy, Klaviyo, Lattice, LaunchDarkly, LinkedIn, Locus Robotics, Lucid, Lyft, Maven Clinic, Melio, Mercari, Mercury, Mixpanel, Mobiik, MongoDB, Motional, Motive, NetSage, New Relic, NewsBreak, Nextdoor, Nuro, Okta, Old Mission Capital, Orca Security, Orion Innovation, Oscar Health, PagerDuty, PathAI, Peloton, Pinterest, Planet Labs, PlanetScale, Point72, Poshmark, Precision Medicine Group, Pulley, Pure Storage, Qualtrics, Recursion, Reddit, Redwood Materials, Remote, Riot Games, Ripple, Robinhood, Roblox, Rocket Lab, Salesloft, Samsara, Scale AI, Scopely, Scout AI, SeatGeek, SentinelOne, Sezzle, SingleStore, SIXGEN, Smartsheet, SoFi, SpaceX, Squarespace, Stability AI, Starburst, StockX, Striim, Stripe, StubHub, Sumo Logic, Sweetgreen, Tailscale, Tanium, Third Bridge, Toast, Together AI, Toloka, Twilio, Twitch, Upstart, Vercel, Verkada, Virtu Financial, Waymo, Webflow, Wiz, xAI, Yugabyte, Zipline, Zocdoc, ZoomInfo
 
-**Workday (92)**: AbbVie, Accenture, Adobe, ALS, Amazon, AMD, American Express, Asurion, Autodesk, Bank of America, BCG, Boeing, Booz Allen Hamilton, Bristol Myers Squibb, CACI, Capital One, Charles Schwab, Cisco, Citi, Clio, Copart, CVS Health, … (full list in [`config.yml`](config.yml))
+**Ashby (78)**: Abridge, Airbyte, Alchemy, Anyscale, Ashby, Astronomer, Attio, Authorium, Axiom, Baseten, BJAK, Browserbase, Campfire, Cerebras, ClickHouse, Cognition, Cohere, Commure, Confluent, Cradle Bio, Crusoe, Cursor, David AI, Decagon, Deel, Docker, ElevenLabs, Harvey, LangChain, Lightfield, Linear, Lovable, Luma AI, Materialize, Midjourney, Mintlify, Miro, Modal, N1, Neon, Netic, Niantic, Notion, OffDeal, OpenAI, Perplexity, Pinecone, Plaid, Poolside, Prefect, Qualified, Railway, Ramp, Reka, Replit, Runway, Scientech Research LLC, SentiLink, Sentry, Sierra, Snowflake, Stytch, Sunday Robotics, Suno, Supabase, Tamarind Bio, Temporal, Top Hat, Truelogic, Turbopuffer, Valon, Vanta, Vapi, Vercel, Vorticity, Warp, Weaviate, Zip
 
-**Lever (7)**: DEUNA, Institute of Foundation Models, Layup Parts, Palantir, Spotify, Welo Global, zaimler
+**Workday (59)**: Accenture, Adobe, ALS, Asurion, Autodesk, Bank of America, Boeing, Booz Allen Hamilton, Bristol Myers Squibb, Broadcom, CACI, Capital One, Cisco, Citi, Clio, Copart, CVS Health, DataRobot, Dematic, Equifax, Fidelity, Flex, GE Aerospace, General Dynamics, General Motors, HP, IFF, Intel, Johnson &amp; Johnson, KBR, Inc., KION Group, Leidos, Mastercard, Medtronic, Merck, Northrop Grumman, NVIDIA, PayPal, Pfizer, Philips, PPG, Procter &amp; Gamble, PwC, Radiance Technologies, Raytheon, RBC, Revvity, Salesforce, Samsung, Sony, Target, The Campbell's Company, The Home Depot, The Kendall Group, The Walt Disney Company, TransUnion, Walmart, Waystar, Workday
+
+**Lever (9)**: DEUNA, Institute of Foundation Models, Kraken, Layup Parts, Palantir, Spotify, Welo Global, zaimler, Zoox
+
+<!-- COMPANY-LISTINGS:END -->
 
 **JobSpy**: Indeed (US, Canada, India)
 
@@ -408,4 +435,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-25 20:45:01 UTC*
+*Last updated: 2026-09-25 20:25:25 UTC*

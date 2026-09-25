@@ -1,6 +1,6 @@
 // Contributors / GitHub data sources are covered in contributors-source.test.js.
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { loadJobs } from './jobs-source.js';
+import { loadExtendedJobs, loadJobs } from './jobs-source.js';
 import { createShardLoader } from './descriptions-source.js';
 
 const ok = (body) => Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(body) });
@@ -46,6 +46,22 @@ describe('loadJobs', () => {
     vi.spyOn(console, 'error').mockImplementation(() => {});
     const out = await loadJobs(routeFetch({ 'jobs-index.json': () => ok({ nope: 1 }) }));
     expect(out.error).toMatch(/no "jobs" array/);
+  });
+});
+
+describe('loadExtendedJobs', () => {
+  it('loads the near-miss tier with its reasons', async () => {
+    const f = routeFetch({ 'jobs-extended.json': () => ok({ meta: { tier: 'near_miss' }, jobs: [{ job_id: 'job_n1', near_miss: { reasons: ['intern_or_coop'] } }] }) });
+    const out = await loadExtendedJobs(f);
+    expect(out.error).toBeNull();
+    expect(out.meta.tier).toBe('near_miss');
+    expect(out.jobs[0].nearMiss).toEqual(['intern_or_coop']);
+    expect(f).toHaveBeenCalledWith('./jobs-extended.json', { cache: 'no-cache' });
+  });
+
+  it('resolves with no jobs and an error when the file is missing', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    expect(await loadExtendedJobs(routeFetch({}))).toEqual({ jobs: [], meta: {}, error: 'jobs-extended.json: HTTP 404' });
   });
 });
 

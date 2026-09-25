@@ -2,7 +2,27 @@
 
 This log tracks employer boards that have been dropped from the scraper so future
 contributors don't unknowingly re-add a dead endpoint. Each removal cites the
-source (`HTTP 404`, moved ATS, defunct) and the date.
+source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
+board audit are logged here too, so the reasoning survives.
+
+## 2026-09-25 — 38 boards added after a live probe (Greenhouse + Ashby)
+
+319 candidate slugs were probed against the public Greenhouse and Ashby APIs; a
+board was added only if it answered and had open roles whose titles carry an
+entry-level marker (new grad, graduate, junior, associate, I/II, analyst,
+coordinator, 2025-2027) and no senior/intern marker. Chosen to dilute the
+defense/aerospace share of the board with fintech, SaaS, trading, cloud,
+health and AI employers.
+
+**Greenhouse (28):** Sezzle (`sezzle`), AQR Capital Management (`aqr`), Astranis (`astranis`), IMC Trading (`imc`), Braze (`braze`), Pure Storage (`purestorage`), Old Mission Capital (`oldmissioncapital`), Motive (`gomotive`), SentinelOne (`sentinellabs`), Akuna Capital (`akunacapital`), DigitalOcean (`digitalocean98`), Toast (`toast`), Redwood Materials (`redwoodmaterials`), CoreWeave (`coreweave`), Adyen (`adyen`), Flow Traders (`flowtraders`), Planet Labs (`planetlabs`), Zipline (`flyzipline`), Klaviyo (`klaviyo`), Motional (`motional`), Jamf (`jamf`), Iterable (`iterable`), Zocdoc (`zocdoc`), Smartsheet (`smartsheet`), Betterment (`betterment`), Virtu Financial (`virtu`), Qualtrics (`qualtrics`), Rocket Lab (`rocketlab`)
+
+**Ashby (10):** Harvey (`harvey`), Cognition (`cognition`), Abridge (`abridge`), Replit (`replit`), Zip (`zip`), Valon (`valon`), Lightfield (`lightfield`), N1 (`n1`), OffDeal (`offdeal`), Midjourney (`midjourney`)
+
+Probed but not added (answered, but no entry-level titles open that day):
+Wayfair, Etsy, Grammarly, Asana, Snyk, Gong, Calendly, Loom, Zapier, Box,
+Coda, ClickUp, Netlify, Kong, Chainguard, Teleport, Drata, Wise, Remitly,
+Circle, Anchorage, Uniswap Labs, Hudson River Trading, Optiver, Citadel,
+Two Sigma, D. E. Shaw, Millennium, Bridgewater, Vanguard, Fidelity.
 
 ## 2026-05-16 — Greenhouse cleanup (`HTTP 404`)
 

@@ -4,6 +4,8 @@
 // is wrapped and a broken value reads as "nothing saved".
 
 export const SAVED_STORAGE_KEY = 'ngj:saved-jobs:v1';
+/** Jobs the viewer marked as applied; same shape and rules as saved jobs. */
+export const APPLIED_STORAGE_KEY = 'ngj:applied-jobs:v1';
 export const MAX_SAVED = 2000;
 const MAX_ID_LENGTH = 200;
 
@@ -32,12 +34,13 @@ export function serializeSavedIds(ids) {
 
 /**
  * @param {() => Storage|null|undefined} getStorage  Accessing window.localStorage can itself throw.
+ * @param {string} [key]  Storage key (saved jobs by default; APPLIED_STORAGE_KEY for applied).
  * @returns {Set<string>}
  */
-export function loadSavedIds(getStorage) {
+export function loadSavedIds(getStorage, key = SAVED_STORAGE_KEY) {
   try {
     const storage = getStorage();
-    return storage ? parseSavedIds(storage.getItem(SAVED_STORAGE_KEY)) : new Set();
+    return storage ? parseSavedIds(storage.getItem(key)) : new Set();
   } catch {
     return new Set();
   }
@@ -46,13 +49,14 @@ export function loadSavedIds(getStorage) {
 /**
  * @param {() => Storage|null|undefined} getStorage
  * @param {Set<string>} ids
+ * @param {string} [key]
  * @returns {boolean} false when the write could not be made (the UI keeps working in memory).
  */
-export function storeSavedIds(getStorage, ids) {
+export function storeSavedIds(getStorage, ids, key = SAVED_STORAGE_KEY) {
   try {
     const storage = getStorage();
     if (!storage) return false;
-    storage.setItem(SAVED_STORAGE_KEY, serializeSavedIds(ids));
+    storage.setItem(key, serializeSavedIds(ids));
     return true;
   } catch {
     return false;

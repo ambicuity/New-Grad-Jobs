@@ -9,6 +9,7 @@ const SHORTCUTS = [
   ['home / end', 'first / last job'],
   ['⏎', 'open application (desktop) · details (mobile)'],
   ['s / F3', 'save / unsave job'],
+  ['a', 'mark / unmark as applied'],
   ['F2', 'cycle sort: posted → comp → company'],
   ['? / F1', 'show this help'],
 ];

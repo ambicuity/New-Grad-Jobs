@@ -208,3 +208,90 @@ def test_xml_illegal_control_characters_are_stripped():
     item = _parse(xml).find('.//item')  # would raise on an illegal char
     assert item.find('title').text == 'Software Eng at Acme'
     assert 'NYC' in item.find('description').text
+
+
+# ---------------------------------------------------------------------------
+# Sliced feeds: feeds/<category>.xml, feeds/remote.xml, feeds/no-visa-restriction.xml
+# ---------------------------------------------------------------------------
+
+from ngj.outputs.rss import (  # noqa: E402
+    FEEDS_DIRNAME,
+    feed_slug,
+    feed_variants,
+    generate_rss_feeds,
+    is_remote_job,
+    is_visa_unrestricted,
+)
+from ngj.taxonomy import CATEGORY_PATTERNS  # noqa: E402
+
+
+def _sliced_jobs():
+    base = _make_jobs(4)
+    base[0].update(category={'id': 'software_engineering', 'name': 'Software Engineering'}, location='Remote - US',
+                   flags={'no_sponsorship': False, 'us_citizenship_required': False})
+    base[1].update(category={'id': 'marketing', 'name': 'Marketing'}, location='New York, NY (Hybrid remote)',
+                   flags={'no_sponsorship': True, 'us_citizenship_required': False})
+    base[2].update(category={'id': 'software_engineering', 'name': 'Software Engineering'}, title='Remote Engineer',
+                   location='Austin, TX', flags={'no_sponsorship': False, 'us_citizenship_required': True})
+    base[3].update(category={'id': 'other', 'name': 'Other'}, location='Chicago, IL', flags=None)
+    return base
+
+
+def test_feed_slug_mirrors_landing_page_slugs():
+    assert feed_slug('software_engineering') == 'software-engineering'
+    assert feed_slug('remote') == 'remote'
+
+
+def test_remote_rule_matches_the_site_facet():
+    assert is_remote_job({'location': 'Remote - US', 'title': 'SWE'}) is True
+    assert is_remote_job({'location': 'Austin, TX', 'title': 'Remote Engineer'}) is True
+    assert is_remote_job({'location': 'NYC (Hybrid remote)', 'title': 'SWE'}) is False
+    assert is_remote_job({'location': 'Austin, TX', 'title': 'SWE'}) is False
+    assert is_remote_job({}) is False
+
+
+def test_visa_rule_requires_both_flags_false():
+    assert is_visa_unrestricted({'flags': {'no_sponsorship': False, 'us_citizenship_required': False}}) is True
+    assert is_visa_unrestricted({'flags': {'no_sponsorship': True, 'us_citizenship_required': False}}) is False
+    assert is_visa_unrestricted({'flags': None}) is False
+    assert is_visa_unrestricted({}) is False
+
+
+def test_feed_variants_cover_every_category_plus_remote_and_visa():
+    variants = feed_variants(_sliced_jobs())
+    slugs = [v.slug for v in variants]
+    assert slugs[-2:] == ['remote', 'no-visa-restriction']
+    assert set(slugs[:-2]) == {feed_slug(c) for c in CATEGORY_PATTERNS if c != 'other'}
+    by_slug = {v.slug: v for v in variants}
+    assert len(by_slug['software-engineering'].jobs) == 2
+    assert len(by_slug['marketing'].jobs) == 1
+    assert len(by_slug['sales'].jobs) == 0  # empty slices still exist so subscriptions never 404
+    assert [j['title'] for j in by_slug['remote'].jobs] == [_sliced_jobs()[0]['title'], 'Remote Engineer']
+    assert len(by_slug['no-visa-restriction'].jobs) == 1
+    assert by_slug['remote'].filename == f'{FEEDS_DIRNAME}/remote.xml'
+
+
+def test_generate_rss_feeds_writes_main_and_every_slice(tmp_path):
+    paths = generate_rss_feeds(_sliced_jobs(), tmp_path, site_url='https://example.test')
+
+    assert paths is not None
+    assert paths[0] == tmp_path / 'feed.xml'
+    slices = sorted(p.name for p in (tmp_path / FEEDS_DIRNAME).iterdir())
+    assert 'software-engineering.xml' in slices and 'remote.xml' in slices and 'no-visa-restriction.xml' in slices
+    assert len(slices) == len(CATEGORY_PATTERNS) - 1 + 2
+
+    root = ET.parse(tmp_path / FEEDS_DIRNAME / 'software-engineering.xml').getroot()
+    channel = root.find('channel')
+    assert channel.find('title').text == 'New Grad Jobs · Software Engineering'
+    assert len(channel.findall('item')) == 2
+    atom = channel.find('{http://www.w3.org/2005/Atom}link')
+    assert atom.get('href') == 'https://example.test/feeds/software-engineering.xml'
+
+    main = ET.parse(tmp_path / 'feed.xml').getroot().find('channel')
+    assert 'every field' in main.find('description').text
+
+
+def test_generate_rss_feeds_reports_a_failed_slice(tmp_path, monkeypatch):
+    (tmp_path / FEEDS_DIRNAME).write_text('not a directory', encoding='utf-8')  # mkdir will fail
+    assert generate_rss_feeds(_sliced_jobs(), tmp_path) is None
+    assert (tmp_path / 'feed.xml').exists(), 'the main feed is still attempted'

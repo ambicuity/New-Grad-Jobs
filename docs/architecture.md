@@ -75,11 +75,13 @@ Supporting modules at `scripts/` top level: `contracts.py` (jobs.json schema 1.1
 | `jobs.json` | Public API: `meta` (`schema_version` 1.1, `generated_at`, `total_jobs`, `categories`) + jobs, newest first. `job_id = "job_" + sha256(source + canonical URL)[:20]`, and `id == job_id`. |
 | `jobs-index.json` | Same without `description`, minified. The site loads it on page load. |
 | `descriptions/<0-f>.json` | Full "About the role" text, sharded by the first hex digit of `job_id`. |
+| `jobs-extended.json` | The near-miss tier: postings that pass every hard rule but fail a soft one (`near_miss.reasons` ⊆ intern_or_coop, level_iii_plus, outside_target_countries, older_than_max_age), newest first, capped by `filtering.max_near_misses`, no descriptions. Fetched by the site only when a WIDEN SCOPE toggle is on. |
 | `feed.xml` | RSS 2.0, ordered by `first_seen`, guid = `job_id`. |
+| `feeds/<slug>.xml` | The same feed sliced per category (`feeds/software-engineering.xml`, …) plus `feeds/remote.xml` and `feeds/no-visa-restriction.xml`, so readers and RSS-to-email services can subscribe to one slice. |
 | `health.json` | Status (`ok`/`degraded`/`failed`), per-source counts and errors, display metrics. Read by the watchdog, the README badges and the collapse guard. |
 
 Persistent state that *is* committed by CI: `README.md` (COUNT markers, "Last updated",
-`CATEGORY-LISTINGS` block) and `data/market-history.json` (daily snapshots, 90-day
+`CATEGORY-LISTINGS` and `COMPANY-LISTINGS` blocks) and `data/market-history.json` (daily snapshots, 90-day
 retention).
 
 ## Site (`site/`)
@@ -93,8 +95,17 @@ A Vite + React 18 single-page app ([ADR-0005](adr/0005-vite-site-and-actions-dep
 - `src/components/` contains `shell/` (top bar, footer, sponsor, error boundary),
   `hiring/` (list, filters, detail, dashboard) and `contributors/`.
 - `scripts/seo/vite-plugin.mjs` (build only) injects the CSP meta tag and generates
-  `job/<job_id>/index.html` for every open job, with `JobPosting` JSON-LD. It also
-  generates `sitemap.xml` and `robots.txt`, and prerenders the newest jobs into
+  `job/<job_id>/index.html` for every open job, with `JobPosting` JSON-LD (`validThrough`
+  = posted + 60 days). `scripts/seo/landing.mjs` adds script-free landing pages under
+  `jobs/`: one per category, the top 30 companies (`jobs/at/<slug>/`), the top 20 metros
+  and Canada / India (`jobs/in/<slug>/`), plus `remote/`, `no-visa-restriction/`,
+  `new-this-week/` and a `jobs/` hub, each with live counts and `ItemList` JSON-LD.
+  `scripts/seo/guides.mjs` renders `site/content/guides/*.md` (front matter + a small
+  in-repo Markdown renderer, `markdown.mjs`) to `guides/<slug>/` with `Article` JSON-LD, and
+  `scripts/seo/about.mjs` writes `about/` from `health.json` (sources, rules, this run). Jobs
+  the scraper marked `is_closed` keep a `noindex` page with a CLOSED notice so shared links
+  still explain themselves; they are left out of the sitemap, the landing pages and JSON-LD.
+  It also generates `sitemap.xml` and `robots.txt`, and prerenders the newest jobs into
   `index.html` for crawlers. Missing data never fails the build.
 
 ## Delivery

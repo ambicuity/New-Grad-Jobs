@@ -14,7 +14,7 @@ const FIXTURES = join(ROOT, 'test', 'fixtures');
 const DIST = join(ROOT, 'dist');
 // Generated data that may have been copied from public/ (fetch-data) — removed
 // first so no live shard or feed leaks into a fixture run.
-const GENERATED = ['jobs.json', 'jobs-index.json', 'descriptions', 'feed.xml', 'health.json'];
+const GENERATED = ['jobs.json', 'jobs-index.json', 'jobs-extended.json', 'descriptions', 'feed.xml', 'feeds', 'health.json'];
 
 async function main() {
   if (!existsSync(DIST)) {

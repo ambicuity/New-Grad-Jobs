@@ -14,6 +14,8 @@ import { BBG } from '../../lib/theme.js';
 import { SortHeader } from '../ui.jsx';
 import { CARD_ESTIMATE, JOB_GRID_COLUMNS, JobCard, JobRow, ROW_HEIGHT } from './JobRow.jsx';
 
+const EMPTY_SET = new Set();
+
 const OVERSCAN = 8;
 export const JOB_LIST_ID = 'job-list';
 export const JOB_SEARCH_ID = 'job-search';
@@ -21,7 +23,7 @@ const optionId = (i) => `job-opt-${i}`;
 
 export function JobList({
   isMobile, searchRef, listRef, q, onQuery, isStale, filtered, total, sort, onSort,
-  selectedId, onSelect, onOpenMobile, saved, onToggleSave,
+  selectedId, onSelect, onOpenMobile, saved, onToggleSave, applied = EMPTY_SET,
 }) {
   const scrollRef = useRef(null);
   const setScrollRef = useCallback((node) => {
@@ -154,6 +156,7 @@ export function JobList({
                 optionId={optionId(vi.index)}
                 isSelected={j.id === selectedId}
                 isSaved={saved.has(j.id)}
+                isApplied={applied.has(j.id)}
                 onSelect={selectRow}
                 onToggleSave={onToggleSave}
                 style={place}

@@ -2,8 +2,9 @@ import { BBG } from '../../lib/theme.js';
 import { FKey, MIN_TARGET } from '../ui.jsx';
 import { LiveStamp } from '../shell/LiveStamp.jsx';
 
-/** Bottom status line of the hiring view, incl. the SAVED-only toggle. */
-export function StatusBar({ isMobile, generatedAt, count, savedCount, savedOnly, onToggleSavedOnly }) {
+/** Bottom status line of the hiring view, incl. the SAVED-only toggle and the RSS feed for the current view. */
+export function StatusBar({ isMobile, generatedAt, count, savedCount, savedOnly, onToggleSavedOnly, feedPath = 'feed.xml' }) {
+  const feedTitle = feedPath === 'feed.xml' ? 'RSS feed of every job' : `RSS feed for this filter (${feedPath})`;
   const title = savedOnly
     ? 'showing only saved jobs — click to show all'
     : (savedCount ? `show only your ${savedCount} saved job${savedCount === 1 ? '' : 's'}` : 'no saved jobs yet');
@@ -32,6 +33,14 @@ export function StatusBar({ isMobile, generatedAt, count, savedCount, savedOnly,
         SAVED: <span style={{ color: savedOnly ? '#000' : BBG.acc, fontWeight: 700 }}>{savedCount}</span>
         <span className="ngj-sr-only">{savedOnly ? ' (showing saved only)' : ' (show saved only)'}</span>
       </button>
+      <a
+        href={`./${feedPath}`}
+        title={feedTitle}
+        data-testid="status-feed-link"
+        style={{ color: BBG.dim, textDecoration: 'underline', minHeight: MIN_TARGET, display: 'inline-flex', alignItems: 'center' }}
+      >
+        RSS<span className="ngj-sr-only">: {feedTitle}</span>
+      </a>
       {!isMobile && (
         <span style={{ marginLeft: 'auto', display: 'flex', gap: 14 }} aria-hidden="true">
           <FKey n="/" l="SEARCH" />

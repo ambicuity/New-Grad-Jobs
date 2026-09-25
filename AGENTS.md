@@ -6,7 +6,8 @@ Humans should read [CONTRIBUTING.md](CONTRIBUTING.md). Operators should read
 
 ## What this is
 
-New Grad Jobs is an automated board of entry-level tech jobs in the US, Canada and India.
+New Grad Jobs is an automated board of entry-level jobs in every field (software, data,
+engineering, finance, marketing, sales, healthcare, …) in the US, Canada and India.
 A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, Workday) plus JobSpy
 (Indeed) about every 30 minutes in GitHub Actions. It filters for new-grad roles and
 publishes static JSON/RSS. A Vite + React site at <https://jobs.riteshrana.engineer> is
@@ -24,7 +25,8 @@ scripts/ngj/               the scraper package
   registry.py              which sources are enabled (shared by pipeline, health.json, validate_config)
   http.py                  shared requests session, per-domain concurrency limits, 403 cooldown hooks
   sources/                 one adapter per source; each returns a SourceResult
-  filters.py locations.py  inclusion gate: exclusions, level III+, new-grad/track signals, recency, US/CA/IN
+  filters.py locations.py  inclusion gate: hard rules (exclusions, new-grad/track signals) and soft rules
+                           (intern/co-op, level III+, recency, US/CA/IN) whose failures become near misses
   dedup.py                 same-posting (job_id) + cross-source dedup
   taxonomy.py enrich.py    CATEGORY_PATTERNS, company tiers, sponsorship/closed flags
   outputs/                 jobs_json, rss, health, market_history, previous (last published run)
@@ -32,10 +34,12 @@ scripts/contracts.py       jobs.json schema (1.1), canonical_url, compute_job_id
 scripts/publish.py         jobs-index.json + descriptions/<0-f>.json shards
 scripts/quality.py         cross-artifact integrity checks (run by scripts/check_integrity.py)
 scripts/url_safety.py      publish-time URL gate (public http(s) only)
-scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS block
+scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
 site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
-site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, sitemap, robots, prerender
+site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs),
+                           /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs), sitemap, robots, prerender
+site/content/guides/       evergreen guides (Markdown with front matter: title, description, updated)
 data/market-history.json   daily snapshots (committed by CI, 90-day retention)
 docs/                      architecture.md, operations.md, adr/, removed-companies.md
 ```
@@ -84,6 +88,11 @@ After `make run`, restore the two files that a local scrape rewrites:
 - **Identity:** `job_id = "job_" + sha256(source + canonical URL)[:20]`. Tracking params
   are stripped, and there is a company/title/location fallback when a job has no URL.
   `id == job_id`. `first_seen` carries forward from the previous published run.
+- **Near-miss tier:** `partition_jobs` splits postings into the curated set (jobs.json) and
+  near misses that fail only soft rules (`jobs-extended.json`, capped by
+  `filtering.max_near_misses`, each with `near_miss.reasons`). The site fetches that file only
+  when a WIDEN SCOPE toggle is on and shows a row only when every reason is toggled on. Counts
+  on the board, landing pages, feeds and README are always the curated set.
 - **Collapse guard:** refuses to publish if the total drops more than 40% versus the
   previous run, or if a source that had more than 100 jobs returns 0. Override with
   `NGJ_ALLOW_DROP=1`.
@@ -107,6 +116,10 @@ After `make run`, restore the two files that a local scrape rewrites:
   retries, pooling, domain limits and the 403 cooldown apply.
 - **Site:** keep data logic in `site/src/lib/` as pure, unit-tested functions. Components
   use inline styles and the `useIsMobile` hook for responsiveness.
+- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description` and
+  `updated` front matter; the build renders it. Use only headings, paragraphs, lists,
+  quotes, bold, italics, code and links (the renderer supports nothing else) and claim
+  nothing you cannot back.
 
 ### Where to add things
 
@@ -132,10 +145,11 @@ After `make run`, restore the two files that a local scrape rewrites:
 1. **Honesty.** Never show invented, estimated or placeholder numbers on the site or in the
    README. Every count and stat must come from the published data.
 2. **Never commit generated data:** `site/public/{jobs.json, jobs-index.json, descriptions/,
-   feed.xml, health.json}` are gitignored and exist only in the Pages deployment.
+   jobs-extended.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
-   `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` block, which the
-   scraper owns. Do not touch the sponsor blocks: the Zapply CTA copy is verbatim-locked,
+   `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
+   `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the
+   scraper owns (the latter, and the `boards_*` counts, come from `config.yml`). Do not touch the sponsor blocks: the Zapply CTA copy is verbatim-locked,
    and the root-level `apply-faster-banner.png` and `get-started-button.png` must stay
    where they are. Leave the Tailr block as is too.
 4. **Dependencies:** ranges live in `pyproject.toml`, and exact hash-locked versions in

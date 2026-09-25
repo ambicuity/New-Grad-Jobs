@@ -6,6 +6,7 @@ import { memo } from 'react';
 import { BBG } from '../../lib/theme.js';
 import { RMT_LABEL, TIER_LABEL, TYPE_LABEL } from '../../lib/taxonomy.js';
 import { fmtComp, rowNumber } from '../../lib/format.js';
+import { NEAR_MISS_INFO } from '../../lib/near-miss.js';
 import { MIN_TARGET, ellipsis } from '../ui.jsx';
 
 export const JOB_GRID_COLUMNS = '32px 120px 1fr 150px 100px 64px 28px';
@@ -18,15 +19,24 @@ const VISA_SHORT = { citizenship: 'us citizens only', 'no-sponsorship': 'no spon
 const sep = <span style={{ color: BBG.rule2, margin: '0 6px' }} aria-hidden="true">·</span>;
 
 /** Spoken summary of a job for its option / card button. */
-export function jobLabel(j, isSaved) {
+export function jobLabel(j, isSaved, isApplied = false) {
   return [
     j.co, j.role, j.loc,
     j.comp[0] != null ? fmtComp(j.comp) : null,
     j.posted !== '—' ? `posted ${j.posted} ago` : null,
     j.visaNote ? VISA_SHORT[j.visaNote] : null,
     j.closed ? 'closed' : null,
+    j.nearMiss && j.nearMiss.length ? `near miss: ${j.nearMiss.map((r) => NEAR_MISS_INFO[r].label).join(', ')}` : null,
     isSaved ? 'saved' : null,
+    isApplied ? 'applied' : null,
   ].filter(Boolean).join(', ');
+}
+
+/** Small marker for a job the viewer marked as applied (kept in localStorage). */
+export function AppliedMark() {
+  return (
+    <span aria-hidden="true" style={{ color: BBG.acc2, fontSize: 11, marginRight: 4 }} title="you marked this as applied">✓</span>
+  );
 }
 
 export function ClosedBadge() {
@@ -43,6 +53,7 @@ function MetaLine({ j }) {
     <>
       {TYPE_LABEL[j.type]}{sep}{RMT_LABEL[j.rmt]}{sep}{TIER_LABEL[j.tier]}
       {j.visaNote && <>{sep}<span style={{ color: BBG.warn }}>{VISA_SHORT[j.visaNote]}</span></>}
+      {j.nearMiss && j.nearMiss.map((r) => <span key={r}>{sep}<span style={{ color: BBG.acc2 }}>{NEAR_MISS_INFO[r].tag}</span></span>)}
     </>
   );
 }
@@ -83,7 +94,7 @@ function RowStar({ isSaved, onToggle }) {
 }
 
 export const JobRow = memo(function JobRow({
-  job: j, index, count, optionId, isSelected, isSaved, onSelect, onToggleSave, style,
+  job: j, index, count, optionId, isSelected, isSaved, isApplied = false, onSelect, onToggleSave, style,
 }) {
   return (
     <div
@@ -92,8 +103,9 @@ export const JobRow = memo(function JobRow({
       aria-selected={isSelected}
       aria-setsize={count}
       aria-posinset={index + 1}
-      aria-label={jobLabel(j, isSaved)}
+      aria-label={jobLabel(j, isSaved, isApplied)}
       data-job-id={j.id}
+      data-applied={isApplied || undefined}
       onClick={() => onSelect(j.id)}
       style={{
         ...style,
@@ -110,7 +122,7 @@ export const JobRow = memo(function JobRow({
       <span style={{ color: isSelected ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>{j.co}</span>
       <div style={{ minWidth: 0 }}>
         <div style={{ color: j.closed ? BBG.dim : BBG.ink, ...ellipsis }}>
-          {j.closed && <ClosedBadge />}{j.role}
+          {isApplied && <AppliedMark />}{j.closed && <ClosedBadge />}{j.role}
         </div>
         <div style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}><MetaLine j={j} /></div>
       </div>

@@ -95,7 +95,7 @@ def test_pipe_in_title_is_sanitized():
         [{"id": "other", "name": "Other", "emoji": "💼", "count": 1}],
     )
     block = render_category_listings(data)
-    row = [ln for ln in block.splitlines() if "Analyst" in ln][0]
+    row = [ln for ln in block.splitlines() if ln.startswith("|") and "Analyst" in ln][0]
     # exactly 5 columns => 6 pipe separators; the title's pipes were replaced
     assert row.count("|") == 6
     assert "Analyst / Ops / Team" in row

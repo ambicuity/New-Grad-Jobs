@@ -19,7 +19,7 @@ from ngj.enrich import enrich_jobs
 from ngj.models import SourceResult
 from ngj.outputs.health import generate_health_json
 from ngj.outputs.jobs_json import generate_jobs_json, write_jobs_artifacts
-from ngj.outputs.rss import generate_rss_feed
+from ngj.outputs.rss import generate_rss_feeds
 from ngj.settings import Settings
 from publish import description_shard
 from quality import run_integrity_checks
@@ -46,7 +46,7 @@ def artifacts(tmp_path):
     jobs = enrich_jobs(_raw_jobs())
     jobs_json = generate_jobs_json(jobs)
     write_jobs_artifacts(tmp_path, jobs_json, jobs)
-    generate_rss_feed(jobs_json["jobs"], tmp_path)
+    generate_rss_feeds(jobs_json["jobs"], tmp_path)
     generate_health_json(jobs, {"greenhouse": SourceResult(jobs=tuple(jobs[:2])),
                                 "workday": SourceResult(jobs=tuple(jobs[2:]))},
                          time.time(), {}, tmp_path)

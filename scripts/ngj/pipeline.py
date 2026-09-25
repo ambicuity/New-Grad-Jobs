@@ -9,7 +9,7 @@ from __future__ import annotations
 import logging
 import os
 import time
-from collections.abc import Callable, Mapping
+from collections.abc import Callable, Mapping, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from functools import partial
@@ -18,11 +18,11 @@ from typing import Any
 
 from ngj.dedup import deduplicate_jobs
 from ngj.enrich import enrich_jobs
-from ngj.filters import filter_jobs
+from ngj.filters import partition_jobs
 from ngj.log import annotate, configure_logging
 from ngj.models import KIND_UNEXPECTED, SourceResult
 from ngj.outputs.health import generate_health_json
-from ngj.outputs.jobs_json import generate_jobs_json, write_jobs_artifacts
+from ngj.outputs.jobs_json import generate_extended_json, generate_jobs_json, write_jobs_artifacts
 from ngj.outputs.market_history import MarketHistoryError, save_market_history
 from ngj.outputs.previous import (
     JsonFetcher,
@@ -31,7 +31,7 @@ from ngj.outputs.previous import (
     load_local_previous_run,
     load_previous_run,
 )
-from ngj.outputs.rss import generate_rss_feed
+from ngj.outputs.rss import generate_rss_feeds
 from ngj.registry import source_registry
 from ngj.settings import DEFAULT_CONFIG_PATH, Settings, build_settings, describe_settings, load_config
 from ngj.sources.ashby import fetch_all_ashby_jobs
@@ -184,20 +184,28 @@ def _enforce_collapse_guard(problems: list[str], previous: PreviousRun, allow_dr
 
 
 def _sync_readme(repo_root: Path, jobs_path: Path) -> list[str]:
-    """Refresh the two auto-managed README regions from the freshly written jobs.json.
+    """Refresh the auto-managed README regions after a scrape.
 
     README.md is hand-edited *except* the <!-- COUNT:<id> --> digits + "Last
-    updated" line (sync_readme_counts) and the <!-- CATEGORY-LISTINGS --> block
-    (sync_readme_jobs). Returns one message per failed sync (e.g. the
-    duplicate-marker ValueError); the caller fails the run on any.
+    updated" line (sync_readme_counts, from jobs.json), the
+    <!-- CATEGORY-LISTINGS --> block (sync_readme_jobs, from jobs.json) and the
+    boards_* COUNT markers + <!-- COMPANY-LISTINGS --> block
+    (sync_readme_companies, from config.yml). Returns one message per failed
+    sync (e.g. the duplicate-marker ValueError); the caller fails the run on any.
     """
+    from sync_readme_companies import sync_readme_companies
     from sync_readme_counts import sync_readme_counts
     from sync_readme_jobs import sync_readme_jobs
 
     errors: list[str] = []
-    for name, sync in (('count', sync_readme_counts), ('job-table', sync_readme_jobs)):
+    syncs = (
+        ('count', lambda: sync_readme_counts(repo_root, jobs_path=jobs_path)),
+        ('job-table', lambda: sync_readme_jobs(repo_root, jobs_path=jobs_path)),
+        ('companies', lambda: sync_readme_companies(repo_root)),
+    )
+    for name, sync in syncs:
         try:
-            sync(repo_root, jobs_path=jobs_path)
+            sync()
         except Exception as exc:
             errors.append(f"README {name} sync failed: {type(exc).__name__}: {exc}")
     return errors
@@ -224,21 +232,24 @@ def _publish(
     settings: Settings,
     url_blocked_count: int,
     sync_readme: bool,
+    extended_json: dict[str, Any] | None = None,
+    near_misses: Sequence[dict[str, Any]] = (),
 ) -> list[str]:
     """Write every artifact; return the failures (each artifact is attempted regardless)."""
     errors = _save_history(safe_jobs, settings)
 
     jobs_written = True
     try:
-        write_jobs_artifacts(settings.output_dir, jobs_json, safe_jobs)
+        write_jobs_artifacts(settings.output_dir, jobs_json, safe_jobs, extended_json)
     except (OSError, ValueError) as exc:
         jobs_written = False
         errors.append(f"jobs.json/jobs-index.json/descriptions write failed: {exc}")
 
-    if generate_rss_feed(jobs_json['jobs'], settings.output_dir, site_url=settings.site_url) is None:
-        errors.append("feed.xml write failed")
+    if generate_rss_feeds(jobs_json['jobs'], settings.output_dir, site_url=settings.site_url) is None:
+        errors.append("feed.xml / feeds/*.xml write failed")
     health = generate_health_json(
         safe_jobs, source_results, start_time, config, settings.output_dir, url_blocked_count=url_blocked_count,
+        near_misses=near_misses,
     )
     if health is None:
         errors.append("health.json write failed")
@@ -279,28 +290,34 @@ def run(
     logger.info("   Jobs after deduplication: %s", len(unique_jobs))
 
     logger.info("\n⚙️ Phase 3: Filtering and enriching jobs...")
-    filtered_jobs = filter_jobs(unique_jobs, dict(config))
-    logger.info("   Jobs after filtering: %s", len(filtered_jobs))
-    # Greenhouse is listed without descriptions; fetch them for survivors only.
+    filtered_jobs, near_misses = partition_jobs(unique_jobs, dict(config))
+    logger.info("   Jobs after filtering: %s (+ %s near misses)", len(filtered_jobs), len(near_misses))
+    # Greenhouse is listed without descriptions; fetch them for survivors only
+    # (near misses too, so their flags and closed state are read, not guessed).
     filtered_jobs = hydrate_greenhouse_descriptions(filtered_jobs, timeout=settings.http_timeout)
+    near_misses = hydrate_greenhouse_descriptions(near_misses, timeout=settings.http_timeout)
     enriched_jobs = sanitize_nan(enrich_jobs(filtered_jobs))
+    enriched_near = sanitize_nan(enrich_jobs(near_misses))
     logger.info("   Jobs enriched with categories and flags")
 
     # Publish-time URL safety gate: drop any job whose URL is not a public
     # http(s) link before anything is written. See scripts/url_safety.py.
     safe_jobs, url_blocked_count, url_blocked_samples = filter_safe_jobs(enriched_jobs)
+    safe_near, near_blocked, _ = filter_safe_jobs(enriched_near)
+    url_blocked_count += near_blocked
     if url_blocked_count:
         logger.warning("🛡️  URL safety: blocked %s job(s) with unsafe/missing URLs", url_blocked_count)
         for sample in url_blocked_samples:
             logger.warning("      • %s", sample)
 
     jobs_json = generate_jobs_json(safe_jobs, dict(config), previous_first_seen=previous.first_seen)
+    extended_json = generate_extended_json(safe_near, previous_first_seen=previous.first_seen)
     published_total = jobs_json['meta']['total_jobs']
     _enforce_collapse_guard(check_partial_collapse(previous, published_total, raw_source_counts),
                             previous, allow_drop)
 
     errors = _publish(safe_jobs, jobs_json, source_results, start_time, config, settings,
-                      url_blocked_count, sync_readme)
+                      url_blocked_count, sync_readme, extended_json=extended_json, near_misses=safe_near)
     return RunSummary(
         total_fetched=len(all_jobs),
         published_jobs=published_total,

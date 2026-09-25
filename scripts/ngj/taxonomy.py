@@ -173,7 +173,7 @@ CATEGORY_PATTERNS = {
     },
     'frontend': {
         'name': 'Frontend Engineering',
-        'emoji': '🎨',
+        'emoji': '🧩',
         'keywords': [
             'frontend', 'front-end', 'front end', 'ui engineer',
             'ui developer', 'web developer'
@@ -210,8 +210,8 @@ CATEGORY_PATTERNS = {
         'name': 'Data Engineering',
         'emoji': '📊',
         'keywords': [
-            'data engineer', 'data analyst', 'analytics engineer', 'bi developer',
-            'business intelligence', 'etl', 'data platform', 'data infrastructure'
+            'data engineer', 'analytics engineer', 'bi developer',
+            'etl', 'data platform', 'data infrastructure'
         ]
     },
     'infrastructure_sre': {
@@ -229,8 +229,8 @@ CATEGORY_PATTERNS = {
         'name': 'Product Management',
         'emoji': '📱',
         'keywords': [
-            'product manager', 'program manager', 'technical program manager',
-            'tpm', 'product owner', 'product lead'
+            'product manager', 'technical program manager',
+            'tpm', 'product owner', 'product lead', 'associate product manager'
         ]
     },
     'quant_finance': {
@@ -245,9 +245,186 @@ CATEGORY_PATTERNS = {
         'name': 'Hardware Engineering',
         'emoji': '🔧',
         'keywords': [
-            'hardware engineer', 'electrical engineer', 'mechanical engineer',
+            'hardware engineer', 'electrical engineer', 'electronics engineer',
             'embedded', 'firmware', 'asic', 'fpga', 'chip', 'silicon',
-            'rf engineer', 'antenna', 'circuit', 'pcb'
+            'rf engineer', 'antenna', 'circuit', 'pcb', 'semiconductor'
+        ]
+    },
+    # ---- Non-software disciplines and business functions. All TITLE_DRIVEN:
+    # words like "sales" or "finance" appear in almost every description.
+    'engineering': {
+        'name': 'Engineering and Development',
+        'emoji': '🛠️',
+        'keywords': [
+            'mechanical engineer', 'mechanical engineering', 'manufacturing engineer',
+            'manufacturing engineering', 'industrial engineer', 'industrial engineering',
+            'quality engineer', 'quality engineering', 'process engineer', 'process engineering',
+            'civil engineer', 'civil engineering', 'structural engineer', 'structural engineering',
+            'aerospace engineer', 'aerospace engineering', 'materials engineer', 'chemical engineer',
+            'chemical engineering', 'environmental engineer', 'controls engineer', 'automation engineer',
+            'test engineer', 'test engineering', 'design engineer', 'field engineer', 'project engineer',
+            'validation engineer', 'thermal engineer', 'propulsion', 'avionics', 'engineer in training',
+            'eit', 'geotechnical', 'hvac', 'plant engineer', 'nuclear engineer', 'biomedical engineer',
+            'optical engineer', 'robotics engineer', 'engineering technician', 'cad'
+        ]
+    },
+    'project_management': {
+        'name': 'Project Management',
+        'emoji': '📝',
+        'keywords': [
+            'project manager', 'program manager', 'project coordinator', 'program coordinator',
+            'project analyst', 'program analyst', 'scrum master', 'pmo', 'project management',
+            'project specialist', 'delivery manager'
+        ]
+    },
+    'data_analyst': {
+        'name': 'Data Analyst',
+        'emoji': '📈',
+        'keywords': [
+            'data analyst', 'data analytics', 'business intelligence', 'bi analyst',
+            'analytics analyst', 'reporting analyst', 'analytics associate', 'insights analyst',
+            'analytics specialist'
+        ]
+    },
+    'business_analyst': {
+        'name': 'Business Analyst',
+        'emoji': '📊',
+        'keywords': [
+            'business analyst', 'business analytics', 'business systems analyst', 'functional analyst',
+            'operations analyst', 'strategy analyst', 'process analyst', 'business operations',
+            'operations research'
+        ]
+    },
+    'design': {
+        'name': 'Creatives and Design',
+        'emoji': '🎨',
+        'keywords': [
+            'product designer', 'ux designer', 'ui designer', 'ux/ui', 'ui/ux', 'graphic designer',
+            'visual designer', 'ux researcher', 'user experience', 'motion designer', 'brand designer',
+            'creative', 'illustrator', 'copywriter', 'content designer', 'industrial designer',
+            'design associate', 'interaction designer', 'web designer'
+        ]
+    },
+    'marketing': {
+        'name': 'Marketing',
+        'emoji': '📢',
+        'keywords': [
+            'marketing', 'growth', 'seo', 'brand', 'communications', 'social media',
+            'public relations', 'demand generation', 'community associate', 'events coordinator',
+            'campaign', 'content strategist', 'content specialist', 'lifecycle'
+        ]
+    },
+    'sales': {
+        'name': 'Sales',
+        'emoji': '🛒',
+        'keywords': [
+            'sales', 'account executive', 'business development', 'sdr', 'bdr', 'sales development',
+            'partnerships', 'revenue', 'inside sales', 'account associate', 'account coordinator',
+            'go-to-market', 'gtm'
+        ]
+    },
+    'accounting_finance': {
+        'name': 'Accounting and Finance',
+        'emoji': '💰',
+        'keywords': [
+            'accountant', 'accounting', 'finance', 'financial analyst', 'financial', 'fp&a', 'audit',
+            'auditor', 'tax', 'treasury', 'investment banking', 'investment analyst', 'banking',
+            'wealth', 'credit analyst', 'risk analyst', 'actuarial', 'actuary', 'underwriter',
+            'underwriting', 'equity research', 'asset management', 'portfolio', 'billing', 'cpa',
+            'capital markets', 'private equity', 'corporate finance', 'bookkeeper', 'controller',
+            'financial planning'
+        ]
+    },
+    'consulting': {
+        'name': 'Consulting',
+        'emoji': '💼',
+        'keywords': ['consultant', 'consulting', 'advisory', 'advisor']
+    },
+    'human_resources': {
+        'name': 'Human Resources',
+        'emoji': '👥',
+        'keywords': [
+            'human resources', 'hr', 'recruiter', 'recruiting', 'recruitment', 'talent acquisition',
+            'people operations', 'people partner', 'talent', 'payroll', 'benefits', 'compensation analyst',
+            'learning and development', 'hrbp', 'people team', 'workforce'
+        ]
+    },
+    'legal': {
+        'name': 'Legal and Compliance',
+        'emoji': '⚖️',
+        'keywords': [
+            'legal', 'paralegal', 'attorney', 'counsel', 'compliance', 'regulatory', 'contracts',
+            'privacy', 'law clerk', 'litigation'
+        ]
+    },
+    'customer_support': {
+        'name': 'Customer Service and Support',
+        'emoji': '☎️',
+        'keywords': [
+            'customer service', 'customer support', 'customer success', 'support specialist',
+            'support engineer', 'technical support', 'help desk', 'service desk', 'desktop support',
+            'it support', 'support associate', 'customer experience', 'client services',
+            'client success', 'call center', 'implementation specialist', 'onboarding specialist',
+            'support analyst', 'customer care'
+        ]
+    },
+    'supply_chain': {
+        'name': 'Supply Chain',
+        'emoji': '🚚',
+        'keywords': [
+            'supply chain', 'logistics', 'procurement', 'purchasing', 'sourcing', 'materials planner',
+            'planner', 'inventory', 'warehouse', 'buyer', 'demand planning', 'fulfillment',
+            'distribution', 'transportation', 'operations coordinator', 'fleet'
+        ]
+    },
+    'healthcare': {
+        'name': 'Healthcare',
+        'emoji': '🩺',
+        'keywords': [
+            'nurse', 'nursing', 'rn', 'registered nurse', 'nurse practitioner', 'physician',
+            'clinical', 'clinician', 'pharmacist', 'pharmacy', 'medical assistant', 'medical',
+            'dental', 'therapist', 'physical therapy', 'occupational therapy', 'radiology',
+            'radiologic technologist', 'lab technician', 'phlebotomist', 'health', 'healthcare',
+            'patient', 'caregiver', 'cna', 'lpn', 'medical technologist', 'sonographer', 'dietitian',
+            'veterinary', 'behavioral health', 'social worker', 'paramedic', 'emt', 'surgical'
+        ]
+    },
+    'education': {
+        'name': 'Education and Training',
+        'emoji': '🎓',
+        'keywords': [
+            'teacher', 'teaching', 'tutor', 'instructor', 'educator', 'education', 'curriculum',
+            'training specialist', 'trainer', 'academic', 'lecturer', 'teaching assistant',
+            'instructional designer', 'learning designer', 'admissions'
+        ]
+    },
+    'public_sector': {
+        'name': 'Public Sector and Government',
+        'emoji': '🏛️',
+        'keywords': [
+            'government', 'public sector', 'policy analyst', 'policy', 'federal', 'civil service',
+            'public affairs', 'public administration', 'legislative', 'municipal', 'city of',
+            'foreign service', 'urban planner', 'public health', 'nonprofit', 'non-profit'
+        ]
+    },
+    'arts_entertainment': {
+        'name': 'Arts and Entertainment',
+        'emoji': '🎭',
+        'keywords': [
+            'artist', 'animator', 'video editor', 'producer', 'production assistant', 'photographer',
+            'videographer', 'musician', 'game designer', 'level designer', 'technical artist', 'vfx',
+            'sound designer', 'audio', 'journalist', 'editor', 'writer', 'broadcast', 'media',
+            'entertainment', 'esports', 'gameplay'
+        ]
+    },
+    'management': {
+        'name': 'Management and Executive',
+        'emoji': '🌟',
+        'keywords': [
+            'leadership development program', 'management trainee', 'management associate',
+            'rotational program', 'rotation program', 'general management', 'chief of staff',
+            'operations associate', 'business operations associate', 'management development program',
+            'future leaders', 'graduate scheme', 'executive assistant', 'leadership program'
         ]
     },
     'other': {
@@ -260,7 +437,59 @@ CATEGORY_PATTERNS = {
 # Categories matched against the job title only (not the description) to keep
 # fine-grained specialty buckets from being polluted by incidental mentions of
 # an adjacent stack in a long job description.
-TITLE_DRIVEN_CATEGORIES = frozenset({'security', 'mobile', 'frontend', 'backend'})
+TITLE_DRIVEN_CATEGORIES = frozenset({
+    'security', 'mobile', 'frontend', 'backend',
+    'engineering', 'project_management', 'data_analyst', 'business_analyst', 'design', 'marketing',
+    'sales', 'accounting_finance', 'consulting', 'human_resources', 'legal', 'customer_support',
+    'supply_chain', 'healthcare', 'education', 'public_sector', 'arts_entertainment', 'management',
+})
+
+# TITLE_FALLBACK_PATTERNS: generic words that classify a role only after every
+# exact CATEGORY_PATTERNS phrase has failed on the title. Matched on the TITLE
+# only, whole words, in this order (a category may appear once). Without them
+# "Associate Engineer Software", "Junior Developer" and "Manufacturing Engineer
+# II" all landed in 'other', which at one point held a quarter of the board.
+# The broad words at the end ("engineer", "analyst", "business") are last on
+# purpose: they only catch titles nothing more specific claimed.
+TITLE_FALLBACK_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ('security', ('cyber', 'security')),
+    ('data_ml', ('ai', 'artificial intelligence', 'ml', 'data science')),
+    ('data_analyst', ('analytics',)),
+    ('data_engineering', ('data',)),
+    ('infrastructure_sre', ('cloud', 'sysadmin', 'system administrator')),
+    ('software_engineering', (
+        'software', 'developer', 'programmer', 'computer science',
+        'computer scientist', 'sdet', 'qa', 'quality assurance', 'test automation',
+    )),
+    ('hardware', ('electrical', 'electronics', 'electronic', 'power electronics', 'photonics')),
+    ('engineering', (
+        'mechanical', 'manufacturing', 'industrial', 'controls', 'automation', 'aerospace',
+        'structural', 'materials', 'gnc', 'guidance navigation', 'thermal', 'tooling',
+        'composites', 'power engineer', 'civil',
+    )),
+    ('accounting_finance', ('finance', 'accounting', 'investment')),
+    ('sales', ('sales',)),
+    ('marketing', ('marketing',)),
+    ('human_resources', ('hr',)),
+    ('legal', ('legal',)),
+    ('healthcare', ('health', 'medical')),
+    ('supply_chain', ('logistics',)),
+    ('design', ('designer',)),
+    ('education', ('education',)),
+)
+
+# LAST_RESORT_PATTERNS: single generic words ("engineer", "analyst", "business")
+# consulted only after the description has also failed to place the role, so
+# a description that names the discipline still wins over the vaguest title.
+LAST_RESORT_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ('engineering', ('engineer', 'engineering')),
+    ('accounting_finance', ('risk',)),
+    ('human_resources', ('people',)),
+    ('supply_chain', ('operations',)),
+    ('design', ('design',)),
+    ('management', ('leadership', 'management')),
+    ('business_analyst', ('analyst', 'strategy', 'business')),
+)
 
 NETWORK_INFRASTRUCTURE_KEYWORDS = {
     'network engineer',
@@ -334,6 +563,21 @@ CATEGORY_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
 )
 
 
+def _phrase_regex(keywords: tuple[str, ...] | list[str]) -> re.Pattern[str]:
+    return re.compile(
+        r'\b(?:' + '|'.join(re.escape(kw) for kw in sorted(keywords, key=len, reverse=True)) + r')\b',
+        re.IGNORECASE,
+    )
+
+
+TITLE_FALLBACK_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
+    (category_id, _phrase_regex(keywords)) for category_id, keywords in TITLE_FALLBACK_PATTERNS
+)
+LAST_RESORT_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
+    (category_id, _phrase_regex(keywords)) for category_id, keywords in LAST_RESORT_PATTERNS
+)
+
+
 def _category(category_id: str) -> dict[str, Any]:
     info = CATEGORY_PATTERNS[category_id]
     return {'id': category_id, 'name': info['name'], 'emoji': info['emoji']}
@@ -348,6 +592,13 @@ def _first_match(text: str, *, skip_title_driven: bool) -> str | None:
     return None
 
 
+def _first_title_fallback(title: str, regexes: tuple[tuple[str, re.Pattern[str]], ...] = TITLE_FALLBACK_REGEXES) -> str | None:
+    for category_id, pattern in regexes:
+        if pattern.search(title):
+            return category_id
+    return None
+
+
 def categorize_job(title: str, description: str = '') -> dict[str, Any]:
     """Categorize a job, title first.
 
@@ -356,8 +607,11 @@ def categorize_job(title: str, description: str = '') -> dict[str, Any]:
     2. The first category (CATEGORY_PATTERNS order) whose keywords appear in
        the TITLE wins, so "Data Scientist II" is data_ml even when its
        description says "software engineer".
-    3. Only when the title matches nothing is the description consulted, and
+    3. Then the generic TITLE_FALLBACK_PATTERNS words on the title ("software",
+       "developer", "mechanical", ...).
+    4. Only when the title matches nothing is the description consulted, and
        never for the title-driven specialty buckets (frontend/backend/...).
+    5. Finally the LAST_RESORT_PATTERNS words ("engineer", "analyst", ...).
     """
     title = title if isinstance(title, str) else ''
     description = description if isinstance(description, str) else ''
@@ -368,8 +622,12 @@ def categorize_job(title: str, description: str = '') -> dict[str, Any]:
         return _category('infrastructure_sre')
 
     category_id = _first_match(title, skip_title_driven=False)
+    if category_id is None:
+        category_id = _first_title_fallback(title)
     if category_id is None and description:
         category_id = _first_match(description, skip_title_driven=True)
+    if category_id is None:
+        category_id = _first_title_fallback(title, LAST_RESORT_REGEXES)
     return _category(category_id or 'other')
 
 

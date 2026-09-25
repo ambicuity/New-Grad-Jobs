@@ -77,3 +77,9 @@ export async function expectSearch(page, search) {
 export async function savedIds(page) {
   return page.evaluate((key) => JSON.parse(window.localStorage.getItem(key) || '[]'), SAVED_KEY);
 }
+
+export const APPLIED_KEY = 'ngj:applied-jobs:v1';
+
+export async function appliedIds(page) {
+  return page.evaluate((key) => JSON.parse(window.localStorage.getItem(key) || '[]'), APPLIED_KEY);
+}

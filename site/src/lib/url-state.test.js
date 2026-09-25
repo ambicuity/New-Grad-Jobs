@@ -23,6 +23,9 @@ describe('serializeViewState', () => {
     filters = toggleFacet(filters, 'rmt', 'remote');
     filters = toggleFacet(filters, 'tier', 'unicorn');
     filters = toggleFacet(filters, 'company', 'AT&T, Inc.');
+    filters = toggleFacet(filters, 'metro', 'New York, NY');
+    filters = toggleFacet(filters, 'country', 'CA');
+    filters = toggleFacet(filters, 'include', 'intern_or_coop');
     filters = toggleVisa(filters, true);
     const out = serializeViewState(view({
       tab: 'contributors', q: 'data eng', filters, sort: { key: 'comp', dir: 1 }, job: 'job_abc', savedOnly: true,
@@ -35,6 +38,9 @@ describe('serializeViewState', () => {
     expect(p.getAll('remote')).toEqual(['remote']);
     expect(p.getAll('tier')).toEqual(['unicorn']);
     expect(p.getAll('co')).toEqual(['AT&T, Inc.']);
+    expect(p.getAll('metro')).toEqual(['New York, NY']);
+    expect(p.getAll('country')).toEqual(['CA']);
+    expect(p.getAll('include')).toEqual(['intern_or_coop']);
     expect(p.get('visa')).toBe('none');
     expect(p.get('sort')).toBe('comp-asc');
     expect(p.get('job')).toBe('job_abc');
@@ -58,6 +64,9 @@ describe('parseViewState', () => {
   it('round-trips a serialized view', () => {
     let filters = toggleFacet(EMPTY_FILTERS(), 'type', 'SWE');
     filters = toggleFacet(filters, 'company', 'Palantir');
+    filters = toggleFacet(filters, 'metro', 'Kitsap, WA');
+    filters = toggleFacet(filters, 'country', 'US');
+    filters = toggleFacet(filters, 'include', 'level_iii_plus');
     filters = toggleVisa(filters, false);
     const v = view({ q: 'kitsap', filters, sort: { key: 'co', dir: -1 }, job: 'job_1', savedOnly: true });
     expect(parseViewState(serializeViewState(v))).toEqual(v);
@@ -76,6 +85,7 @@ describe('parseViewState', () => {
     expect(v.filters.tier.size).toBe(0);
     expect(v.filters.company.size).toBe(0);
     expect(v.filters.visa).toBeNull();
+    expect(parseViewState('?include=intern_or_coop&include=nope').filters.include).toEqual(new Set(['intern_or_coop']));
     expect(v.sort).toEqual({ key: 'posted', dir: -1 });
     expect(v.tab).toBe('hiring');
     expect(v.job).toBeNull();

@@ -394,14 +394,24 @@ def build_title_prefilter(filtering: dict[str, Any] | None) -> TitleFilter | Non
     Used only to decide when to stop paging a keyword; the real inclusion gate
     is still ``ngj.filters.filter_jobs`` after deduplication.
     """
-    from ngj.filters import DEFAULT_EXCLUSION_SIGNALS, has_new_grad_signal, is_title_excluded
+    from ngj.filters import (
+        DEFAULT_EXCLUSION_SIGNALS,
+        DEFAULT_INTERNSHIP_SIGNALS,
+        has_new_grad_signal,
+        is_title_excluded,
+    )
 
     if not isinstance(filtering, dict):
         return None
     signals = filtering.get('new_grad_signals')
     if not signals:
         return None
-    exclusions = filtering.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
+    # Internships are treated as exclusions here on purpose: paging Workday for
+    # them would cost minutes per run, and near misses are a bonus, not a goal.
+    exclusions = (
+        list(filtering.get('exclusion_signals', DEFAULT_EXCLUSION_SIGNALS))
+        + list(filtering.get('internship_signals', DEFAULT_INTERNSHIP_SIGNALS))
+    )
 
     def passes(title: str) -> bool:
         return not is_title_excluded(title, exclusions) and has_new_grad_signal(title, signals)

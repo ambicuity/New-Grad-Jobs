@@ -21,7 +21,14 @@ import yaml
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from ngj.dedup import deduplicate_jobs  # noqa: E402
-from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
+from ngj.filters import (  # noqa: E402
+    filter_jobs,
+    has_new_grad_signal,
+    has_track_signal,
+    is_internship_title,
+    is_title_excluded,
+    partition_jobs,
+)
 
 
 def _make_job(
@@ -799,6 +806,11 @@ class TestExclusionSignalWordBoundaries:
         "Engineering Fellow",
         "Software Engineer (10+ years)",
         "Backend Engineer, 5+ years experience",
+    ])
+    def test_senior_titles_still_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is True
+
+    @pytest.mark.parametrize("title", [
         "Software Engineer Intern",
         "Software Engineering Internship",
         "Summer Internships 2027 - SWE",
@@ -807,8 +819,16 @@ class TestExclusionSignalWordBoundaries:
         "Software Engineer - Intern/Co-op",
         "Software Engineer (Internship)",
     ])
-    def test_senior_and_intern_titles_still_excluded(self, title):
-        assert is_title_excluded(title, self._live_signals()) is True
+    def test_intern_titles_are_near_misses_never_curated(self, title):
+        """Internships left the hard exclusion list: they are published as near misses instead."""
+        root = os.path.join(os.path.dirname(__file__), '..')
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
+            config = yaml.safe_load(f)
+        assert is_internship_title(title, config["filtering"]["internship_signals"]) is True
+        assert is_title_excluded(title, self._live_signals()) is False
+        curated, near = partition_jobs([_make_job(title=title)], config)
+        assert curated == []
+        assert [j["near_miss"]["reasons"] for j in near] == [["intern_or_coop"]]
 
     def test_filter_jobs_keeps_internal_tools_new_grad(self):
         jobs = [_make_job(title="Software Engineer, Internal Tools - New Grad")]
@@ -833,3 +853,59 @@ class TestExclusionSignalWordBoundaries:
         signals = self._live_signals()
         newly_excluded = [t for t in titles if is_title_excluded(t, signals)]
         assert newly_excluded == []
+
+
+# ---------------------------------------------------------------------------
+# Precision: co-ops / students never reach the board; every profession is in scope
+# ---------------------------------------------------------------------------
+
+def _precision_config():
+    """Production-shaped config: strong signals pass without a track signal."""
+    config = _default_config()
+    config["filtering"].update(
+        strong_new_grad_signals=["new grad", "new graduate", "2027"],
+        new_grad_signals=["new grad", "new graduate", "junior", "associate", "2027", "software engineer"],
+        exclusion_signals=["senior", "intern", "co-op", "coop", "student", "summer analyst", "summer associate"],
+        track_signals=["software", "engineer", "developer", "data", "quantitative", "marketing", "nurse", "analyst"],
+    )
+    return config
+
+
+class TestCoopAndStudentExclusion:
+    @pytest.mark.parametrize(
+        "title",
+        [
+            "Software Engineering Co-op (Fall/Spring 2027)",
+            "Mechanical Engineering Co-Op - Spring 2027",
+            "Winter 2027: AI Developer Coop (8 months)",
+            "College Co-Op Student - Distribution Engineering - Winter 2027",
+            "Registered Nursing Student Fall 2026",
+            "Functions - Internal Audit, Summer Analyst, Dallas - USA, 2027",
+            "2027 Capital Markets, Global Investment Banking Summer Associate",
+        ],
+    )
+    def test_program_titles_are_excluded(self, title):
+        assert filter_jobs([_make_job(title=title)], _precision_config()) == []
+
+    def test_new_grad_software_engineer_still_passes(self):
+        jobs = [_make_job(title="New Graduate Engineer, Software (Application Software)")]
+        assert len(filter_jobs(jobs, _precision_config())) == 1
+
+
+class TestEveryProfessionIsInScope:
+    """The board covers every field: a new-grad signal plus any configured track word passes."""
+
+    @pytest.mark.parametrize(
+        "title",
+        [
+            "New Graduate Registered Nurse (RN) - Neuro Med/Surg",
+            "Junior Marketing Analyst",
+            "Associate Data Analyst",
+            "Investment Banking Analyst - 2027 Start",
+        ],
+    )
+    def test_non_software_new_grad_titles_pass(self, title):
+        assert len(filter_jobs([_make_job(title=title)], _precision_config())) == 1
+
+    def test_bare_new_grad_signal_without_a_role_word_is_still_rejected(self):
+        assert filter_jobs([_make_job(title="Associate")], _precision_config()) == []
