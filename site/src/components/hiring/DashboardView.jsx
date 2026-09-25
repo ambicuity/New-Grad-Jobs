@@ -227,7 +227,6 @@ export function DashboardView({ jobs: curated, meta, view, updateView }) {
 
       <StatusBar
         isMobile={isMobile}
-        generatedAt={meta && meta.generated_at}
         count={filtered.length}
         savedCount={savedCount}
         savedOnly={savedOnly}

@@ -7,7 +7,8 @@ import { DEFAULT_SORT, SORT_KEYS } from './sort.js';
 import { RMT_ORDER, TIER_ORDER, TYPE_ORDER } from './taxonomy.js';
 import { COUNTRY_CODES } from './location.js';
 import { NEAR_MISS_REASONS } from './near-miss.js';
-import { MAX_SIGNAL_LENGTH, MAX_SIGNAL_WORDS, TIER_KEYS, cleanWords } from './explore.js';
+import { EMPTY_EXPLORE, MAX_SIGNAL_LENGTH, MAX_SIGNAL_WORDS, POSTED_DAYS, TIER_KEYS, cleanWords } from './explore.js';
+import { CATEGORY_TYPE } from './taxonomy.js';
 
 export const TAB_IDS = ['hiring', 'contributors', 'explore'];
 const MAX_QUERY = 200;
@@ -20,8 +21,9 @@ const P = {
   visa: 'visa', sort: 'sort', job: 'job', saved: 'saved', newHours: 'new', metro: 'metro', country: 'country',
   include: 'include',
   // EXPLORE tab: include words, exclude words, tiers, query.
-  xInclude: 'xi', xExclude: 'xe', xTier: 'xt', xQuery: 'xq',
+  xInclude: 'xi', xExclude: 'xe', xTier: 'xt', xQuery: 'xq', xRole: 'xr', xSource: 'xs', xCountry: 'xc', xPosted: 'xp',
 };
+const MAX_SOURCES = 10;
 // ?new=<hours>: roles first seen in the last N hours, for shareable "what's new" links. At most a week.
 const MAX_NEW_HOURS = 168;
 
@@ -40,13 +42,9 @@ const VISA_PARAM = { none: true, restricted: false };
  * @property {{key: string, dir: 1|-1}} sort
  * @property {string|null} job        Selected job id (the stable job_id).
  * @property {boolean} savedOnly
- * @property {{include: string[], exclude: string[], tiers: Set<string>, q: string}} explore  EXPLORE tab state.
+ * @property {ReturnType<typeof EMPTY_EXPLORE>} explore  EXPLORE tab state (lib/explore.js).
  */
-
-/** @returns {{include: string[], exclude: string[], tiers: Set<string>, q: string}} */
-export function EMPTY_EXPLORE() {
-  return { include: [], exclude: [], tiers: new Set(), q: '' };
-}
+export { EMPTY_EXPLORE };
 
 /** @returns {ViewState} */
 export function defaultView() {
@@ -104,6 +102,10 @@ export function parseViewState(search, hash = '') {
       include: cleanWords(params.getAll(P.xInclude).slice(0, MAX_SIGNAL_WORDS)),
       exclude: cleanWords(params.getAll(P.xExclude).slice(0, MAX_SIGNAL_WORDS)),
       tiers: readSet(params, P.xTier, allowed(TIER_KEYS)),
+      roles: readSet(params, P.xRole, (v) => Object.hasOwn(CATEGORY_TYPE, v)),
+      sources: readSet(params, P.xSource, shortString, MAX_SOURCES),
+      countries: readSet(params, P.xCountry, allowed(COUNTRY_CODES)),
+      posted: POSTED_DAYS.includes(Number(params.get(P.xPosted))) ? Number(params.get(P.xPosted)) : null,
       q: (params.get(P.xQuery) || '').slice(0, MAX_QUERY),
     },
   };
@@ -139,6 +141,10 @@ export function serializeViewState(view, baseSearch = '') {
   explore.include.forEach((w) => params.append(P.xInclude, w.slice(0, MAX_SIGNAL_LENGTH)));
   explore.exclude.forEach((w) => params.append(P.xExclude, w.slice(0, MAX_SIGNAL_LENGTH)));
   explore.tiers.forEach((t) => params.append(P.xTier, t));
+  explore.roles.forEach((t) => params.append(P.xRole, t));
+  explore.sources.forEach((t) => params.append(P.xSource, t));
+  explore.countries.forEach((t) => params.append(P.xCountry, t));
+  if (explore.posted) params.set(P.xPosted, String(explore.posted));
   if (explore.q) params.set(P.xQuery, explore.q);
   const out = params.toString();
   return out ? `?${out}` : '';

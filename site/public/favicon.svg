@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   NGJ favicon. Terminal-aesthetic monogram on the same palette as the
-  contributors view: bg #000, accent #ff9d3d, ok #5fd28a (LIVE dot).
+  contributors view: bg #000, accent #ff9d3d.
   Single SVG with no external font dependency — uses a hand-laid "NGJ"
   glyph drawn as polylines so it renders identically at 16, 32, 48, and
   256 px without any font-loading FOIT in the browser tab.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="10" fill="#0a0a0a"/>
-  <!-- LIVE dot (top-right), echoing the chip in the app header -->
-  <circle cx="51" cy="13" r="4" fill="#5fd28a"/>
   <!-- NGJ monogram in the brand amber -->
   <g fill="none" stroke="#ff9d3d" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter">
     <!-- N -->

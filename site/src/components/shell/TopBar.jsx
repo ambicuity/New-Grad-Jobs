@@ -6,6 +6,20 @@ import { SponsoredBy, SponsorLink } from './Sponsor.jsx';
 
 const TAB_ORDER = ['hiring', 'contributors', 'explore'];
 
+/** The NGJ monogram from public/favicon.svg, drawn inline so it never flashes. */
+function Monogram() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 64 64" width="22" height="22" style={{ display: 'block', flexShrink: 0 }}>
+      <rect width="64" height="64" rx="10" fill={BBG.acc} />
+      <g fill="none" stroke="#000" strokeWidth="6" strokeLinecap="square" strokeLinejoin="miter">
+        <polyline points="10,46 10,22 22,46 22,22" />
+        <polyline points="42,22 30,22 30,46 42,46 42,34 36,34" />
+        <polyline points="56,22 56,42 52,46 47,46 44,42" />
+      </g>
+    </svg>
+  );
+}
+
 export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
   const isMobile = useIsMobile();
   // Contributors data may still be loading when the app first paints.
@@ -40,12 +54,19 @@ export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
       minHeight: 38,
       flexWrap: isMobile ? 'wrap' : 'nowrap',
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 14px', borderRight: `1px solid ${BBG.rule2}` }}>
-        <span aria-hidden="true" style={{
-          background: BBG.acc, color: '#000', padding: '2px 6px',
-          fontWeight: 700, fontSize: 11, letterSpacing: 1,
-        }}>NGJ</span>
-      </div>
+      <a href="./" aria-label="NGJ, New Grad Jobs, home" style={{
+        display: 'flex', alignItems: 'center', gap: 8, padding: '0 14px', borderRight: `1px solid ${BBG.rule2}`,
+        textDecoration: 'none', color: BBG.ink,
+        minHeight: isMobile ? 44 : 24, // WCAG 2.2 target size, comfortable on touch
+      }}>
+        <Monogram />
+        {!isMobile && (
+          <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
+            <span style={{ color: BBG.acc, fontWeight: 700, fontSize: 12, letterSpacing: 1.2 }}>NGJ</span>
+            <span style={{ color: BBG.dim, fontSize: 10, letterSpacing: 0.6 }}>new grad jobs</span>
+          </span>
+        )}
+      </a>
 
       <div style={{ display: 'flex' }} role="tablist" aria-label="Views" onKeyDown={onTabKey}>
         {tabs.map((t) => {
