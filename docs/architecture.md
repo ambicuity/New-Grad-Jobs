@@ -76,6 +76,7 @@ Supporting modules at `scripts/` top level: `contracts.py` (jobs.json schema 1.1
 | `jobs-index.json` | Same without `description`, minified. The site loads it on page load. |
 | `descriptions/<0-f>.json` | Full "About the role" text, sharded by the first hex digit of `job_id`. |
 | `feed.xml` | RSS 2.0, ordered by `first_seen`, guid = `job_id`. |
+| `feeds/<slug>.xml` | The same feed sliced per category (`feeds/software-engineering.xml`, …) plus `feeds/remote.xml` and `feeds/no-visa-restriction.xml`, so readers and RSS-to-email services can subscribe to one slice. |
 | `health.json` | Status (`ok`/`degraded`/`failed`), per-source counts and errors, display metrics. Read by the watchdog, the README badges and the collapse guard. |
 
 Persistent state that *is* committed by CI: `README.md` (COUNT markers, "Last updated",

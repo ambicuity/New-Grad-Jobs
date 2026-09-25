@@ -8,7 +8,7 @@ const STEP = { ArrowDown: 1, j: 1, ArrowUp: -1, k: -1 };
 /**
  * Global keyboard shortcuts for the hiring view:
  *   / focus search · ? or F1 help · Esc blur input / clear filters
- *   j k ↑ ↓ move selection · Home End first/last · s F3 save
+ *   j k ↑ ↓ move selection · Home End first/last · s F3 save · a applied
  *   ⏎ open (application on desktop, detail on mobile) · F2 cycle sort
  * Shortcuts stand aside while typing, while a button/link has focus, when a
  * modifier is held, and while `enabled` is false (a dialog is open).
@@ -59,6 +59,12 @@ function handleShortcut(e, o) {
     e.preventDefault();
     o.toggleSave(selectedId);
     o.flash(o.saved.has(selectedId) ? 'removed from saved' : '★ saved', BBG.acc);
+    return;
+  }
+  if (e.key === 'a' && selectedId != null && o.toggleApplied) {
+    e.preventDefault();
+    o.toggleApplied(selectedId);
+    o.flash(o.applied && o.applied.has(selectedId) ? 'unmarked applied' : '✓ marked applied', BBG.acc);
     return;
   }
   if (e.key === 'Enter' && selectedId != null) {

@@ -35,6 +35,7 @@ export const JOB_PAGE_CSS = [
   '.desc p{margin:0 0 12px;overflow-wrap:anywhere}',
   '.dim{color:#8a8a8a}',
   '.browse{font-size:12px;line-height:2;margin:0 0 8px}',
+  '.subscribe{font-size:12px;color:#8a8a8a;margin:0 0 12px}',
   '.list ol,.list ul{margin:0;padding-left:22px}',
   '.list li{margin:0 0 8px;overflow-wrap:anywhere}',
   'footer{margin-top:32px;font-size:12px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:12px}',

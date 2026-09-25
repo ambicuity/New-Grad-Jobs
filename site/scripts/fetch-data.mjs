@@ -11,7 +11,8 @@ import { fileURLToPath } from 'node:url';
 const ORIGIN = (process.env.NGJ_DATA_ORIGIN || 'https://jobs.riteshrana.engineer').replace(/\/+$/, '');
 const PUBLIC_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'public');
 const SHARDS = '0123456789abcdef'.split('').map((k) => `descriptions/${k}.json`);
-const FILES = ['jobs-index.json', 'jobs.json', 'health.json', 'feed.xml', ...SHARDS];
+const FEED_SLICES = ['remote', 'no-visa-restriction'].map((slug) => `feeds/${slug}.xml`);
+const FILES = ['jobs-index.json', 'jobs.json', 'health.json', 'feed.xml', ...FEED_SLICES, ...SHARDS];
 const CONCURRENCY = 6;
 
 async function download(rel) {

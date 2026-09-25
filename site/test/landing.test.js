@@ -243,3 +243,23 @@ describe('generateSeo writes landing pages', () => {
     expect(index).toContain('href="./jobs/software-engineering/"');
   });
 });
+
+describe('subscribe links', () => {
+  it('category, remote and visa pages point at their own RSS slice; others at feed.xml', () => {
+    const entries = [
+      entry({ company: 'Acme', location: 'Remote - US' }),
+      entry({ company: 'Acme' }),
+      entry({ company: 'Acme' }),
+    ];
+    const { hub, pages } = buildLandingPages(entries, { generatedAt: GENERATED_AT, minCompanyJobs: 3 });
+    const render = (page) => renderLandingPage(page, { siteUrl: SITE, generatedAt: GENERATED_AT, siblings: pages });
+    const category = pages.find((p) => p.kind === 'category');
+    expect(category.categoryId).toBe('software_engineering');
+    expect(render(category)).toContain('href="../../feeds/software-engineering.xml"');
+    expect(render(category)).toContain(`https://feedly.com/i/subscription/feed/${encodeURIComponent(`${SITE}/feeds/software-engineering.xml`)}`);
+    expect(render(pages.find((p) => p.kind === 'remote'))).toContain('href="../../feeds/remote.xml"');
+    expect(render(pages.find((p) => p.kind === 'visa'))).toContain('href="../../feeds/no-visa-restriction.xml"');
+    expect(render(pages.find((p) => p.kind === 'company'))).toContain('href="../../../feed.xml"');
+    expect(renderLandingHub(hub, { siteUrl: SITE, generatedAt: GENERATED_AT, totalJobs: 3 })).toContain('href="../feed.xml"');
+  });
+});

@@ -11,6 +11,9 @@ import {
 import { clickJobSort, sortJobs } from '../../lib/sort.js';
 import { computeStats } from '../../lib/stats.js';
 import { safeHttpUrl } from '../../lib/safe-url.js';
+import { feedPathFor } from '../../lib/feeds.js';
+import { APPLIED_STORAGE_KEY } from '../../lib/saved.js';
+import { copyText, jobShareUrl } from '../../lib/share.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { useToast } from '../../hooks/useToast.js';
 import { useSavedJobs } from '../../hooks/useSavedJobs.js';
@@ -40,6 +43,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   const { q, filters, sort, savedOnly } = view;
   const isMobile = useIsMobile();
   const [saved, toggleSave] = useSavedJobs();
+  const [applied, toggleApplied] = useSavedJobs(undefined, APPLIED_STORAGE_KEY);
   const [helpOpen, setHelpOpen] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [toast, flash] = useToast();
@@ -98,6 +102,12 @@ export function DashboardView({ jobs, meta, view, updateView }) {
     if (savedCount === 0 && !savedOnly) { flash('no saved jobs yet', BBG.warn); return; }
     patch((v) => ({ savedOnly: !v.savedOnly }));
   }, [savedCount, savedOnly, flash, patch]);
+  const feedPath = useMemo(() => feedPathFor(filters), [filters]);
+  const copyLink = useCallback(async () => {
+    if (!selected) return;
+    const ok = await copyText(jobShareUrl(selected, window.location));
+    flash(ok ? '⧉ link copied' : 'could not copy — use the address bar', ok ? BBG.acc : BBG.warn);
+  }, [selected, flash]);
   const openSelected = useCallback(() => {
     if (!selected) return;
     if (isMobile) { openMobileDetail(selected.id); return; }
@@ -114,6 +124,8 @@ export function DashboardView({ jobs, meta, view, updateView }) {
     select,
     saved,
     toggleSave,
+    applied,
+    toggleApplied,
     sortKey: sort.key,
     setSortKey,
     setHelpOpen,
@@ -129,6 +141,9 @@ export function DashboardView({ jobs, meta, view, updateView }) {
       jobs={jobs}
       saved={!!selected && saved.has(selected.id)}
       onSave={() => selected && toggleSave(selected.id)}
+      applied={!!selected && applied.has(selected.id)}
+      onApplied={() => selected && toggleApplied(selected.id)}
+      onCopyLink={copyLink}
       onSelectJob={isMobile ? (id) => patch(() => ({ job: id })) : select}
     />
   );
@@ -176,6 +191,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           onOpenMobile={openMobileDetail}
           saved={saved}
           onToggleSave={toggleSave}
+          applied={applied}
         />
         {!isMobile && detail}
       </div>
@@ -200,6 +216,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
         savedCount={savedCount}
         savedOnly={savedOnly}
         onToggleSavedOnly={toggleSavedOnly}
+        feedPath={feedPath}
       />
     </div>
   );

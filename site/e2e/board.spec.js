@@ -1,7 +1,7 @@
 // Desktop hiring board: list, search, facet filters, company filter, sorting.
 import { test, expect } from './support/test.js';
 import {
-  FIXTURE, chip, detailTitle, expectParams, expectResults, expectSelected, jobList, openBoard,
+  FIXTURE, appliedIds, chip, detailTitle, expectParams, expectResults, expectSelected, jobList, openBoard,
   searchBox, selectedOption,
 } from './support/app.js';
 
@@ -142,6 +142,35 @@ test.describe('facet filters', () => {
     await expectResults(page, FIXTURE.anduril.jobs);
     await expectParams(page, { co: [FIXTURE.anduril.name] });
     await expect(hiringNow.getByRole('button')).toHaveCount(companiesBefore);
+  });
+});
+
+test.describe('applied tracking and alerts', () => {
+  test('the APPLIED button and the a key track the job in localStorage and mark the row', async ({ page }) => {
+    await openBoard(page);
+
+    await page.getByRole('button', { name: 'Mark as applied' }).click();
+
+    await expect(page.getByRole('button', { name: 'Applied — unmark' })).toHaveAttribute('aria-pressed', 'true');
+    await expect.poll(() => appliedIds(page)).toEqual([FIXTURE.first]);
+    await expect(page.locator(`[role="option"][data-job-id="${FIXTURE.first}"]`)).toHaveAttribute('data-applied', 'true');
+
+    await jobList(page).focus();
+    await page.keyboard.press('a');
+    await expect.poll(() => appliedIds(page)).toEqual([]);
+  });
+
+  test('the status bar RSS link follows the active filter', async ({ page }) => {
+    await openBoard(page);
+    const link = page.getByTestId('status-feed-link');
+    await expect(link).toHaveAttribute('href', './feed.xml');
+
+    await chip(page, 'ROLE', 'ml').click();
+    await expect(link).toHaveAttribute('href', './feeds/data-ml.xml');
+
+    await chip(page, 'ROLE', 'ml').click();
+    await chip(page, 'REMOTE', 'remote').click();
+    await expect(link).toHaveAttribute('href', './feeds/remote.xml');
   });
 });
 

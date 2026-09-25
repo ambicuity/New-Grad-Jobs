@@ -12,7 +12,7 @@ ngj.settings.resolve_output_dir) as a whole:
   snippet has full text in the shard its job_id maps to (publish.description_shard);
   no text in the wrong shard or for an unpublished job;
 - every published URL passes url_safety.is_safe_url;
-- feed.xml: well-formed RSS 2.0 (channel title/link/description, items with
+- feed.xml and feeds/<slug>.xml: well-formed RSS 2.0 (channel title/link/description, items with
   title/link/guid), item guids are published job_ids;
 - health.json: shape (ngj.outputs.health.validate_health) and its total_jobs
   matches jobs.json.
@@ -29,6 +29,7 @@ from xml.etree import ElementTree as ET
 
 from contracts import JOBS_SCHEMA_VERSION, validate_jobs_json_contract
 from ngj.outputs.health import validate_health
+from ngj.outputs.rss import feed_variants
 from publish import DESCRIPTION_SHARD_KEYS, description_shard
 from url_safety import is_safe_url
 
@@ -161,6 +162,16 @@ def check_feed(feed_path: Path, jobs: list[Any]) -> list[str]:
     return errors
 
 
+def check_feeds_dir(feeds_dir: Path, jobs: list[Any]) -> list[str]:
+    """Every sliced feed under ``feeds/`` must pass the same checks as feed.xml, and the slices must exist."""
+    errors: list[str] = []
+    expected = [feeds_dir / f"{variant.slug}.xml" for variant in feed_variants(jobs)]
+    for path in expected:
+        for error in check_feed(path, jobs):
+            errors.append(error.replace("feed.xml", f"feeds/{path.name}", 1))
+    return errors
+
+
 def check_health(health: Any, jobs: list[Any]) -> list[str]:
     errors = validate_health(health)
     if isinstance(health, dict):
@@ -201,6 +212,7 @@ def run_integrity_checks(artifacts_dir: Path) -> tuple[bool, dict[str, Any]]:
         errors.extend(check_description_shards(artifacts_dir / "descriptions", jobs))
         errors.extend(check_urls(jobs))
         errors.extend(check_feed(artifacts_dir / "feed.xml", jobs))
+        errors.extend(check_feeds_dir(artifacts_dir / "feeds", jobs))
 
     if errors:
         report["status"] = "failed"

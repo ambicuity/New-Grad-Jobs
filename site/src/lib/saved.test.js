@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import {
-  MAX_SAVED, SAVED_STORAGE_KEY, loadSavedIds, parseSavedIds, serializeSavedIds, storeSavedIds,
+  APPLIED_STORAGE_KEY, MAX_SAVED, SAVED_STORAGE_KEY, loadSavedIds, parseSavedIds, serializeSavedIds, storeSavedIds,
 } from './saved.js';
 
 describe('parseSavedIds', () => {
@@ -42,6 +42,15 @@ describe('storage wrappers', () => {
     expect(storeSavedIds(() => storage, new Set(['job_a']))).toBe(true);
     expect(storage.setItem).toHaveBeenCalledWith(SAVED_STORAGE_KEY, '["job_a"]');
     expect([...loadSavedIds(() => storage)]).toEqual(['job_a']);
+  });
+
+  it('keeps applied jobs under their own key', () => {
+    const storage = memory();
+    expect(storeSavedIds(() => storage, new Set(['job_a']), APPLIED_STORAGE_KEY)).toBe(true);
+    expect(storage.setItem).toHaveBeenCalledWith(APPLIED_STORAGE_KEY, '["job_a"]');
+    expect([...loadSavedIds(() => storage, APPLIED_STORAGE_KEY)]).toEqual(['job_a']);
+    expect(loadSavedIds(() => storage).size).toBe(0);
+    expect(APPLIED_STORAGE_KEY).not.toBe(SAVED_STORAGE_KEY);
   });
 
   it('never throws when storage is unavailable or broken', () => {

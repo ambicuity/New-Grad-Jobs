@@ -17,6 +17,7 @@ import { deriveRmt } from '../../src/lib/jobs.js';
 import { parsePostedAt } from './jobposting.mjs';
 import { COUNTRY_NAME, parseLocation, regionCode } from './location.mjs';
 import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, jobPageUrl, jobPath } from './render.mjs';
+import { MAIN_FEED, categoryFeedPath, feedlyUrl } from '../../src/lib/feeds.js';
 import { escapeHtml, jsonForScript, truncate } from './text.mjs';
 
 export const LANDING_ROOT = 'jobs';
@@ -134,7 +135,8 @@ function categoryPages(entries, generatedAt) {
   return [...groups].map(([id, { name, entries: list }]) => {
     const slug = slugify(id);
     if (!slug || RESERVED_SLUGS.has(slug)) return null;
-    return makePage('category', name, `${LANDING_ROOT}/${slug}/`, boardQueryFor({ role: CATEGORY_TYPE[id] }), list, generatedAt);
+    const page = makePage('category', name, `${LANDING_ROOT}/${slug}/`, boardQueryFor({ role: CATEGORY_TYPE[id] }), list, generatedAt);
+    return { ...page, categoryId: id };
   }).filter(Boolean);
 }
 
@@ -280,6 +282,21 @@ function jobListItems(entries, root) {
   )).join('\n');
 }
 
+/** RSS slice for a page: category / remote / visa pages have their own feed, the rest use feed.xml. */
+export function feedPathForPage(page) {
+  if (page.kind === 'category') return categoryFeedPath(page.categoryId);
+  if (page.kind === 'remote') return 'feeds/remote.xml';
+  if (page.kind === 'visa') return 'feeds/no-visa-restriction.xml';
+  return MAIN_FEED;
+}
+
+function subscribeLine(page, root, siteUrl) {
+  const path = feedPathForPage(page);
+  const absolute = `${siteUrl}/${path}`;
+  const scope = path === MAIN_FEED ? 'every new role' : 'new roles on this page';
+  return `<p class="subscribe">Get alerts for ${scope}: <a href="${root}${escapeHtml(path)}">RSS feed</a> · <a href="${escapeHtml(feedlyUrl(absolute))}" rel="nofollow noopener noreferrer">open in Feedly</a> · paste the feed URL into any RSS-to-email service (Blogtrottr, Feedrabbit, …) for email alerts.</p>`;
+}
+
 function browseNav(siblings, current, root) {
   const featured = siblings.filter((p) => p !== current && ['category', 'remote', 'visa', 'new'].includes(p.kind));
   const links = featured.map((p) => `<a href="${root}${p.path}">${escapeHtml(p.name)}</a> <span class="dim">${p.entries.length}</span>`);
@@ -336,6 +353,7 @@ ${honesty}
 <div class="actions">
 <a class="btn primary" href="${root}?${escapeHtml(page.boardQuery)}">OPEN IN JOB BOARD</a>
 </div>
+${subscribeLine(page, root, siteUrl)}
 ${browseNav(siblings, page, root)}
 <h2>OPEN ROLES${generatedAt ? ` · UPDATED ${formatDate(generatedAt)}` : ''}</h2>
 ${capNote}
@@ -386,6 +404,7 @@ export function renderLandingHub(hub, { siteUrl, generatedAt = null, totalJobs }
 <div class="actions">
 <a class="btn primary" href="${root}?">OPEN THE JOB BOARD</a>
 </div>
+${subscribeLine({ kind: 'hub' }, root, siteUrl)}
 ${sections}
 <footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>

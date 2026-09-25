@@ -31,7 +31,7 @@ from ngj.outputs.previous import (
     load_local_previous_run,
     load_previous_run,
 )
-from ngj.outputs.rss import generate_rss_feed
+from ngj.outputs.rss import generate_rss_feeds
 from ngj.registry import source_registry
 from ngj.settings import DEFAULT_CONFIG_PATH, Settings, build_settings, describe_settings, load_config
 from ngj.sources.ashby import fetch_all_ashby_jobs
@@ -243,8 +243,8 @@ def _publish(
         jobs_written = False
         errors.append(f"jobs.json/jobs-index.json/descriptions write failed: {exc}")
 
-    if generate_rss_feed(jobs_json['jobs'], settings.output_dir, site_url=settings.site_url) is None:
-        errors.append("feed.xml write failed")
+    if generate_rss_feeds(jobs_json['jobs'], settings.output_dir, site_url=settings.site_url) is None:
+        errors.append("feed.xml / feeds/*.xml write failed")
     health = generate_health_json(
         safe_jobs, source_results, start_time, config, settings.output_dir, url_blocked_count=url_blocked_count,
     )
