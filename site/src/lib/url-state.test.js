@@ -105,6 +105,24 @@ describe('parseViewState', () => {
   });
 });
 
+describe('explore state (?tab=explore)', () => {
+  it('round-trips include / exclude words, tiers and the query, bounded and validated', () => {
+    const v = view({ tab: 'explore', explore: { include: ['rust', 'c++'], exclude: ['senior'], tiers: new Set(['out']), q: 'berlin' } });
+    const out = serializeViewState(v);
+    const p = new URLSearchParams(out);
+    expect(p.get('tab')).toBe('explore');
+    expect(p.getAll('xi')).toEqual(['rust', 'c++']);
+    expect(p.getAll('xe')).toEqual(['senior']);
+    expect(p.getAll('xt')).toEqual(['out']);
+    expect(p.get('xq')).toBe('berlin');
+    expect(parseViewState(out)).toEqual(v);
+    const junk = parseViewState('?tab=explore&xi=rust&xi=rust&xi=&xt=nope&xt=curated');
+    expect(junk.explore.include).toEqual(['rust']);
+    expect([...junk.explore.tiers]).toEqual(['curated']);
+    expect(parseViewState('?tab=explore').explore).toEqual({ include: [], exclude: [], tiers: new Set(), q: '' });
+  });
+});
+
 describe('sameView', () => {
   it('compares views by their serialized form', () => {
     expect(sameView(defaultView(), defaultView())).toBe(true);

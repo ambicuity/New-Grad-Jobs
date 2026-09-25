@@ -36,7 +36,8 @@ scripts/quality.py         cross-artifact integrity checks (run by scripts/check
 scripts/url_safety.py      publish-time URL gate (public http(s) only)
 scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
-site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
+site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data); tabs: hiring,
+                           contributors, explore (every posting the run saw, viewer-defined signals over corpus-index.json)
 site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs),
                            /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs), sitemap, robots, prerender
 site/content/guides/       evergreen guides (Markdown with front matter: title, description, updated)

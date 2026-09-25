@@ -7,8 +7,9 @@ import { DEFAULT_SORT, SORT_KEYS } from './sort.js';
 import { RMT_ORDER, TIER_ORDER, TYPE_ORDER } from './taxonomy.js';
 import { COUNTRY_CODES } from './location.js';
 import { NEAR_MISS_REASONS } from './near-miss.js';
+import { MAX_SIGNAL_LENGTH, MAX_SIGNAL_WORDS, TIER_KEYS, cleanWords } from './explore.js';
 
-export const TAB_IDS = ['hiring', 'contributors'];
+export const TAB_IDS = ['hiring', 'contributors', 'explore'];
 const MAX_QUERY = 200;
 const MAX_VALUE = 200;
 const MAX_COMPANIES = 50;
@@ -18,6 +19,8 @@ const P = {
   tab: 'tab', q: 'q', type: 'role', rmt: 'remote', tier: 'tier', company: 'co',
   visa: 'visa', sort: 'sort', job: 'job', saved: 'saved', newHours: 'new', metro: 'metro', country: 'country',
   include: 'include',
+  // EXPLORE tab: include words, exclude words, tiers, query.
+  xInclude: 'xi', xExclude: 'xe', xTier: 'xt', xQuery: 'xq',
 };
 // ?new=<hours>: roles first seen in the last N hours, for shareable "what's new" links. At most a week.
 const MAX_NEW_HOURS = 168;
@@ -37,11 +40,17 @@ const VISA_PARAM = { none: true, restricted: false };
  * @property {{key: string, dir: 1|-1}} sort
  * @property {string|null} job        Selected job id (the stable job_id).
  * @property {boolean} savedOnly
+ * @property {{include: string[], exclude: string[], tiers: Set<string>, q: string}} explore  EXPLORE tab state.
  */
+
+/** @returns {{include: string[], exclude: string[], tiers: Set<string>, q: string}} */
+export function EMPTY_EXPLORE() {
+  return { include: [], exclude: [], tiers: new Set(), q: '' };
+}
 
 /** @returns {ViewState} */
 export function defaultView() {
-  return { tab: 'hiring', q: '', filters: EMPTY_FILTERS(), sort: { ...DEFAULT_SORT }, job: null, savedOnly: false };
+  return { tab: 'hiring', q: '', filters: EMPTY_FILTERS(), sort: { ...DEFAULT_SORT }, job: null, savedOnly: false, explore: EMPTY_EXPLORE() };
 }
 
 const shortString = (v) => typeof v === 'string' && v.length > 0 && v.length <= MAX_VALUE;
@@ -91,6 +100,12 @@ export function parseViewState(search, hash = '') {
     sort: readSort(params.get(P.sort)),
     job: shortString(job) ? job : null,
     savedOnly: params.get(P.saved) === '1',
+    explore: {
+      include: cleanWords(params.getAll(P.xInclude).slice(0, MAX_SIGNAL_WORDS)),
+      exclude: cleanWords(params.getAll(P.xExclude).slice(0, MAX_SIGNAL_WORDS)),
+      tiers: readSet(params, P.xTier, allowed(TIER_KEYS)),
+      q: (params.get(P.xQuery) || '').slice(0, MAX_QUERY),
+    },
   };
 }
 
@@ -120,6 +135,11 @@ export function serializeViewState(view, baseSearch = '') {
   }
   if (view.job) params.set(P.job, view.job);
   if (view.savedOnly) params.set(P.saved, '1');
+  const explore = view.explore || EMPTY_EXPLORE();
+  explore.include.forEach((w) => params.append(P.xInclude, w.slice(0, MAX_SIGNAL_LENGTH)));
+  explore.exclude.forEach((w) => params.append(P.xExclude, w.slice(0, MAX_SIGNAL_LENGTH)));
+  explore.tiers.forEach((t) => params.append(P.xTier, t));
+  if (explore.q) params.set(P.xQuery, explore.q);
   const out = params.toString();
   return out ? `?${out}` : '';
 }

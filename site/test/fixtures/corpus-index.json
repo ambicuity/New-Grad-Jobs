@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "schema_version": "corpus-1",
+  "generated_at": "2026-09-24T15:37:03Z",
+  "total": 10,
+  "tiers": {
+   "curated": 2,
+   "near_miss": 2,
+   "out": 6
+  },
+  "fields": [
+   "company",
+   "title",
+   "location",
+   "source",
+   "posted_at",
+   "category",
+   "tier",
+   "url"
+  ]
+ },
+ "rows": [
+  [
+   "Palantir",
+   "Forward Deployed Software Engineer - US Government",
+   "Kitsap, WA",
+   "Lever",
+   "2026-09-24",
+   "software_engineering",
+   0,
+   "https://jobs.lever.co/palantir/1"
+  ],
+  [
+   "Twilio",
+   "Machine Learning Engineer",
+   "Remote - Ireland",
+   "Greenhouse",
+   "2026-09-23",
+   "data_ml",
+   0,
+   "https://boards.greenhouse.io/twilio/1"
+  ],
+  [
+   "Palantir",
+   "Software Engineer Intern - Summer 2027",
+   "New York, NY",
+   "Lever",
+   "2026-09-24",
+   "software_engineering",
+   1,
+   "https://jobs.lever.co/palantir/intern-1"
+  ],
+  [
+   "Twilio",
+   "Software Engineer III",
+   "Denver, CO",
+   "Greenhouse",
+   "2026-09-23",
+   "software_engineering",
+   1,
+   "https://boards.greenhouse.io/twilio/3"
+  ],
+  [
+   "Anduril Industries",
+   "Senior Rust Engineer",
+   "Costa Mesa, CA",
+   "Greenhouse",
+   "2026-09-22",
+   "software_engineering",
+   2,
+   "https://boards.greenhouse.io/anduril/10"
+  ],
+  [
+   "Anduril Industries",
+   "Rust Engineer, Mission Autonomy",
+   "Costa Mesa, CA",
+   "Greenhouse",
+   "2026-09-21",
+   "software_engineering",
+   2,
+   "https://boards.greenhouse.io/anduril/11"
+  ],
+  [
+   "Ripple",
+   "Software Engineer II, Payments",
+   "San Francisco, CA",
+   "Greenhouse",
+   "2026-09-20",
+   "software_engineering",
+   2,
+   "https://boards.greenhouse.io/ripple/2"
+  ],
+  [
+   "xAI",
+   "Staff Software Engineer",
+   "Palo Alto, CA",
+   "Greenhouse",
+   "2026-09-19",
+   "software_engineering",
+   2,
+   "https://boards.greenhouse.io/xai/5"
+  ],
+  [
+   "Cisco",
+   "Trustworthy AI Lead",
+   "Bengaluru, KA, IN",
+   "Workday",
+   "2026-09-18",
+   "data_ml",
+   2,
+   "https://cisco.wd5.myworkdayjobs.com/x/1"
+  ],
+  [
+   "Bedrock Foundry",
+   "Go Developer",
+   "KL, IN",
+   "Ashby",
+   "",
+   "software_engineering",
+   2,
+   "https://jobs.ashbyhq.com/bedrock/1"
+  ]
+ ]
+}

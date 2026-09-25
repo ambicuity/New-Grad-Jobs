@@ -3,6 +3,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { brotliCompressSync } from 'node:zlib';
 import { brotliStreamSupported, fetchJsonPreferBrotli, loadExtendedJobs, loadJobs } from './jobs-source.js';
 import { createShardLoader } from './descriptions-source.js';
+import { loadCorpus } from './corpus-source.js';
 
 const ok = (body) => Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(body) });
 const fail = (status) => Promise.resolve({ ok: false, status, json: () => Promise.resolve({}) });
@@ -100,6 +101,23 @@ describe('Brotli data siblings', () => {
       ? Promise.resolve({ ok: true, status: 200, body: new Response(Buffer.from('not brotli at all')).body })
       : ok(payload)));
     expect((await fetchJsonPreferBrotli('./jobs-index.json', corrupt, true)).encoding).toBe('gzip');
+  });
+});
+
+describe('loadCorpus', () => {
+  const payload = { meta: { total: 1, fields: ['company', 'title', 'location', 'source', 'posted_at', 'category', 'tier', 'url'] },
+    rows: [['Acme', 'Rust Engineer', 'Austin, TX', 'Greenhouse', '2026-09-20', 'software_engineering', 2, 'https://a.test/1']] };
+
+  it('loads and parses the corpus rows', async () => {
+    const out = await loadCorpus(routeFetch({ 'corpus-index.json': () => ok(payload) }), false);
+    expect(out.error).toBeNull();
+    expect(out.encoding).toBe('gzip');
+    expect(out.rows[0]).toMatchObject({ co: 'Acme', title: 'Rust Engineer', tier: 'out' });
+  });
+
+  it('never rejects: a missing file resolves with an error and no rows', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    expect(await loadCorpus(routeFetch({}), false)).toEqual({ rows: [], meta: {}, error: 'corpus-index.json: HTTP 404', encoding: null });
   });
 });
 

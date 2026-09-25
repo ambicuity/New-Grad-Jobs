@@ -1,5 +1,5 @@
-// App shell — skip links, top bar with tabs, and the Hiring / Contributors
-// views. The view state (tab, search, filters, sort, selected job) lives in
+// App shell — skip links, top bar with tabs, and the Hiring / Contributors /
+// Explore views. The view state (tab, search, filters, sort, selected job) lives in
 // the URL via useUrlViewState, so switching tabs, reloading or sharing a link
 // keeps it.
 
@@ -13,6 +13,7 @@ import { SiteFooter } from './SiteFooter.jsx';
 import { HiringTab } from '../hiring/HiringTab.jsx';
 import { JOB_LIST_ID, JOB_SEARCH_ID } from '../hiring/JobList.jsx';
 import { ContributorsView } from '../contributors/ContributorsView.jsx';
+import { ExploreView } from '../explore/ExploreView.jsx';
 
 export const MAIN_ID = 'main';
 export const TABPANEL_ID = 'tabpanel';
@@ -65,9 +66,9 @@ export function App({ jobsState, contributorsPromise }) {
           {/* Per-tab boundary: a crash in one view (e.g. contributors) leaves the
               top bar working so the user can switch back to the other tab. */}
           <ErrorBoundary key={tab} scope={tab}>
-            {tab === 'hiring'
-              ? <HiringTab jobsState={jobsState} view={view} updateView={updateView} />
-              : <ContributorsView contributorsPromise={contributorsPromise} />}
+            {tab === 'hiring' && <HiringTab jobsState={jobsState} view={view} updateView={updateView} />}
+            {tab === 'contributors' && <ContributorsView contributorsPromise={contributorsPromise} />}
+            {tab === 'explore' && <ExploreView view={view} updateView={updateView} />}
           </ErrorBoundary>
         </div>
       </main>

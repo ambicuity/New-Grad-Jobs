@@ -38,6 +38,7 @@ export function aboutFacts(health, { totalJobs, generatedAt }) {
     runDurationSeconds: num(h.run_duration_seconds),
     urlSafetyBlocked: num(h.url_safety_blocked),
     nearMissJobs: num(h.near_miss_jobs),
+    corpusJobs: num(h.corpus_jobs),
     rows,
   };
 }
@@ -88,6 +89,7 @@ export function renderAboutPage(facts, { siteUrl }) {
 <dt>run duration</dt><dd>${facts.runDurationSeconds ? `${escapeHtml(facts.runDurationSeconds)} s` : '<span class="dim">not reported</span>'}</dd>
 <dt>links blocked by the URL gate</dt><dd>${cell(facts.urlSafetyBlocked)}</dd>
 <dt>near misses published</dt><dd>${cell(facts.nearMissJobs)}</dd>
+<dt>unique postings seen (EXPLORE)</dt><dd>${cell(facts.corpusJobs)}</dd>
 </dl>
 <p class="dim">Near misses are postings that pass every hard rule but fail a soft one (internship or co-op, level III+, outside US/CA/IN, 60–120 days old). They live in a separate file the board loads only when you widen the scope, and they are never counted above.</p>
 

@@ -4,7 +4,7 @@ import { usePromiseSettled } from '../../hooks/usePromiseSettled.js';
 import { LiveStamp } from './LiveStamp.jsx';
 import { SponsoredBy, SponsorLink } from './Sponsor.jsx';
 
-const TAB_ORDER = ['hiring', 'contributors'];
+const TAB_ORDER = ['hiring', 'contributors', 'explore'];
 
 export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
   const isMobile = useIsMobile();
@@ -15,6 +15,8 @@ export function TopBar({ tab, setTab, jobsState, contributorsPromise }) {
   const tabs = [
     { id: 'hiring', label: 'HIRING', sub: jobsState.error ? 'offline' : `${openCount} open` },
     { id: 'contributors', label: 'CONTRIBUTORS', sub: contrib.settled ? `${devCount} devs` : '… devs' },
+    // Every posting the run saw, your own signals; the corpus loads only when opened.
+    { id: 'explore', label: 'EXPLORE', sub: 'all postings' },
   ];
 
   // WAI-ARIA tabs: arrow keys move between tabs (roving tabindex).

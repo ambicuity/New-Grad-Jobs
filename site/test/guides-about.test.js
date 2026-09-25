@@ -71,7 +71,7 @@ describe('guide rendering', () => {
 describe('aboutFacts / renderAboutPage', () => {
   const health = {
     status: 'ok', last_run: '2026-09-25T17:32:40Z', total_jobs: 2064, configured_company_apis: 272, enabled_sources: 5,
-    active_hiring_companies: 290, run_duration_seconds: 151.7, url_safety_blocked: 0, near_miss_jobs: 812,
+    active_hiring_companies: 290, run_duration_seconds: 151.7, url_safety_blocked: 0, near_miss_jobs: 812, corpus_jobs: 53733,
     source_counts: { greenhouse: 19805, workday: 16941 },
     sources: {
       greenhouse: { raw_count: 19805, configured_units: 136, status: 'ok', errors: { failed_companies: [] } },
@@ -83,7 +83,7 @@ describe('aboutFacts / renderAboutPage', () => {
     const facts = aboutFacts(health, { totalJobs: 1847, generatedAt: new Date('2026-09-25T17:32:40.261Z') });
     expect(facts).toMatchObject({
       totalJobs: '1,847', generatedAt: '2026-09-25T17:32:40Z', status: 'ok', configuredCompanyApis: '272',
-      activeHiringCompanies: '290', enabledSources: '5', runDurationSeconds: '151.7', urlSafetyBlocked: '0', nearMissJobs: '812',
+      activeHiringCompanies: '290', enabledSources: '5', runDurationSeconds: '151.7', urlSafetyBlocked: '0', nearMissJobs: '812', corpusJobs: '53,733',
     });
     expect(facts.rows.map((r) => [r.label, r.raw, r.configured, r.status, r.failed])).toEqual([
       ['Greenhouse', '19,805', '136', 'ok', []],
