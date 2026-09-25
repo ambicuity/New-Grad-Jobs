@@ -8,6 +8,7 @@ import { cp, readdir, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { BROTLI_DATA_FILES, removeBrotliSibling, writeBrotliSibling } from './seo/compress.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const FIXTURES = join(ROOT, 'test', 'fixtures');
@@ -24,7 +25,12 @@ async function main() {
   await Promise.all(GENERATED.map((rel) => rm(join(DIST, rel), { recursive: true, force: true })));
   const entries = await readdir(FIXTURES);
   await Promise.all(entries.map((name) => cp(join(FIXTURES, name), join(DIST, name), { recursive: true, force: true })));
-  console.log(`Copied fixtures into dist/: ${entries.join(', ')}`);
+  // The build wrote .br siblings for the live data; regenerate them for the fixtures.
+  for (const name of BROTLI_DATA_FILES) {
+    await removeBrotliSibling(join(DIST, name));
+    await writeBrotliSibling(join(DIST, name));
+  }
+  console.log(`Copied fixtures into dist/: ${entries.join(', ')} (+ brotli siblings)`);
 }
 
 main();

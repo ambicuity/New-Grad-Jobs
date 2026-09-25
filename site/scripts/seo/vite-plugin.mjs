@@ -8,6 +8,7 @@
 
 import { resolve } from 'node:path';
 import { DEFAULT_SITE_URL, generateSeo } from './generate.mjs';
+import { writeBrotliSiblings } from './compress.mjs';
 
 /**
  * App CSP. Scripts: only our own bundle + GoatCounter's loader. Inline styles
@@ -67,6 +68,7 @@ export function ngjSeo({
         guidesDir: resolve(config.root, 'content', 'guides'),
         log,
       });
+      await writeBrotliSiblings(distDir, undefined, log);
       const skipped = Object.entries(stats.jsonLdSkipped).map(([k, v]) => `${k}: ${v}`).join(', ');
       logger.info(
         `[seo] ${stats.jobPages} job pages (${stats.jsonLd} with JobPosting JSON-LD${skipped ? `; skipped — ${skipped}` : ''}), `
