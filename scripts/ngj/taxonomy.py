@@ -242,7 +242,7 @@ CATEGORY_PATTERNS = {
         ]
     },
     'hardware': {
-        'name': 'Hardware Engineering',
+        'name': 'Hardware & Mechanical Engineering',
         'emoji': '🔧',
         'keywords': [
             'hardware engineer', 'electrical engineer', 'mechanical engineer',
@@ -261,6 +261,35 @@ CATEGORY_PATTERNS = {
 # fine-grained specialty buckets from being polluted by incidental mentions of
 # an adjacent stack in a long job description.
 TITLE_DRIVEN_CATEGORIES = frozenset({'security', 'mobile', 'frontend', 'backend'})
+
+# TITLE_FALLBACK_PATTERNS: generic words that classify a role only after every
+# exact CATEGORY_PATTERNS phrase has failed on the title. Matched on the TITLE
+# only, whole words, in this order (a category may appear once). Without them
+# "Associate Engineer Software", "Junior Developer" and "Manufacturing Engineer
+# II" all landed in 'other', which at one point held a quarter of the board.
+TITLE_FALLBACK_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ('security', ('cyber', 'security')),
+    ('data_ml', ('ai', 'artificial intelligence', 'ml', 'data science')),
+    ('data_engineering', ('data', 'analytics')),
+    ('infrastructure_sre', (
+        'it support', 'help desk', 'service desk', 'desktop support',
+        'it specialist', 'it analyst', 'system administrator', 'sysadmin', 'cloud',
+    )),
+    ('software_engineering', (
+        'software', 'developer', 'programmer', 'computer science',
+        'computer scientist', 'sdet', 'qa', 'quality assurance', 'test automation',
+    )),
+    ('hardware', (
+        'mechanical', 'electrical', 'electronics', 'electronic', 'manufacturing',
+        'industrial engineer', 'industrial engineering', 'quality engineer',
+        'quality engineering', 'test engineer', 'test engineering',
+        'process engineer', 'process engineering', 'controls', 'automation',
+        'design engineer', 'aerospace', 'avionics', 'structural', 'materials',
+        'semiconductor', 'gnc', 'guidance navigation', 'thermal', 'propulsion',
+        'optical', 'photonics', 'power engineer', 'power electronics',
+        'validation engineer', 'tooling', 'composites',
+    )),
+)
 
 NETWORK_INFRASTRUCTURE_KEYWORDS = {
     'network engineer',
@@ -334,6 +363,18 @@ CATEGORY_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
 )
 
 
+def _phrase_regex(keywords: tuple[str, ...] | list[str]) -> re.Pattern[str]:
+    return re.compile(
+        r'\b(?:' + '|'.join(re.escape(kw) for kw in sorted(keywords, key=len, reverse=True)) + r')\b',
+        re.IGNORECASE,
+    )
+
+
+TITLE_FALLBACK_REGEXES: tuple[tuple[str, re.Pattern[str]], ...] = tuple(
+    (category_id, _phrase_regex(keywords)) for category_id, keywords in TITLE_FALLBACK_PATTERNS
+)
+
+
 def _category(category_id: str) -> dict[str, Any]:
     info = CATEGORY_PATTERNS[category_id]
     return {'id': category_id, 'name': info['name'], 'emoji': info['emoji']}
@@ -348,6 +389,13 @@ def _first_match(text: str, *, skip_title_driven: bool) -> str | None:
     return None
 
 
+def _first_title_fallback(title: str) -> str | None:
+    for category_id, pattern in TITLE_FALLBACK_REGEXES:
+        if pattern.search(title):
+            return category_id
+    return None
+
+
 def categorize_job(title: str, description: str = '') -> dict[str, Any]:
     """Categorize a job, title first.
 
@@ -356,7 +404,9 @@ def categorize_job(title: str, description: str = '') -> dict[str, Any]:
     2. The first category (CATEGORY_PATTERNS order) whose keywords appear in
        the TITLE wins, so "Data Scientist II" is data_ml even when its
        description says "software engineer".
-    3. Only when the title matches nothing is the description consulted, and
+    3. Then the generic TITLE_FALLBACK_PATTERNS words on the title ("software",
+       "developer", "mechanical", ...).
+    4. Only when the title matches nothing is the description consulted, and
        never for the title-driven specialty buckets (frontend/backend/...).
     """
     title = title if isinstance(title, str) else ''
@@ -368,6 +418,8 @@ def categorize_job(title: str, description: str = '') -> dict[str, Any]:
         return _category('infrastructure_sre')
 
     category_id = _first_match(title, skip_title_driven=False)
+    if category_id is None:
+        category_id = _first_title_fallback(title)
     if category_id is None and description:
         category_id = _first_match(description, skip_title_driven=True)
     return _category(category_id or 'other')

@@ -79,7 +79,7 @@ Supporting modules at `scripts/` top level: `contracts.py` (jobs.json schema 1.1
 | `health.json` | Status (`ok`/`degraded`/`failed`), per-source counts and errors, display metrics. Read by the watchdog, the README badges and the collapse guard. |
 
 Persistent state that *is* committed by CI: `README.md` (COUNT markers, "Last updated",
-`CATEGORY-LISTINGS` block) and `data/market-history.json` (daily snapshots, 90-day
+`CATEGORY-LISTINGS` and `COMPANY-LISTINGS` blocks) and `data/market-history.json` (daily snapshots, 90-day
 retention).
 
 ## Site (`site/`)

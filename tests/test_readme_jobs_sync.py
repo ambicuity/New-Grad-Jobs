@@ -295,6 +295,6 @@ def test_zero_count_and_missing_categories_keep_their_section():
     headings = [ln[3:] for ln in block.splitlines() if ln.startswith("## ")]
     assert headings[0] == "Software Engineering"
     assert "Quantitative Finance" in headings  # zero count, present in meta
-    assert "Hardware Engineering" in headings  # absent from meta entirely
+    assert "Hardware & Mechanical Engineering" in headings  # absent from meta entirely
     assert len(headings) == len(PRESENTATION_ORDER)
     assert block.count("_No open roles right now — check the [live board]") == len(PRESENTATION_ORDER) - 1

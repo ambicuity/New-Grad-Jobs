@@ -184,20 +184,28 @@ def _enforce_collapse_guard(problems: list[str], previous: PreviousRun, allow_dr
 
 
 def _sync_readme(repo_root: Path, jobs_path: Path) -> list[str]:
-    """Refresh the two auto-managed README regions from the freshly written jobs.json.
+    """Refresh the auto-managed README regions after a scrape.
 
     README.md is hand-edited *except* the <!-- COUNT:<id> --> digits + "Last
-    updated" line (sync_readme_counts) and the <!-- CATEGORY-LISTINGS --> block
-    (sync_readme_jobs). Returns one message per failed sync (e.g. the
-    duplicate-marker ValueError); the caller fails the run on any.
+    updated" line (sync_readme_counts, from jobs.json), the
+    <!-- CATEGORY-LISTINGS --> block (sync_readme_jobs, from jobs.json) and the
+    boards_* COUNT markers + <!-- COMPANY-LISTINGS --> block
+    (sync_readme_companies, from config.yml). Returns one message per failed
+    sync (e.g. the duplicate-marker ValueError); the caller fails the run on any.
     """
+    from sync_readme_companies import sync_readme_companies
     from sync_readme_counts import sync_readme_counts
     from sync_readme_jobs import sync_readme_jobs
 
     errors: list[str] = []
-    for name, sync in (('count', sync_readme_counts), ('job-table', sync_readme_jobs)):
+    syncs = (
+        ('count', lambda: sync_readme_counts(repo_root, jobs_path=jobs_path)),
+        ('job-table', lambda: sync_readme_jobs(repo_root, jobs_path=jobs_path)),
+        ('companies', lambda: sync_readme_companies(repo_root)),
+    )
+    for name, sync in syncs:
         try:
-            sync(repo_root, jobs_path=jobs_path)
+            sync()
         except Exception as exc:
             errors.append(f"README {name} sync failed: {type(exc).__name__}: {exc}")
     return errors

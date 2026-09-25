@@ -460,3 +460,60 @@ class TestCompanyTierNormalization:
 
     def test_non_string_company_is_other(self):
         assert get_company_tier(None)["tier"] == "other"
+
+
+class TestTitleFallbackCategories:
+    """Generic title words classify a role only after every specific phrase fails.
+
+    A quarter of the live board sat in "Other" because titles such as
+    "Associate Engineer Software" or "Manufacturing Engineer II" contain no
+    exact category phrase. The fallbacks are matched on the title only.
+    """
+
+    @pytest.mark.parametrize(
+        ("title", "expected"),
+        [
+            ("2026 Associate Engineer Software Dulles VA", "software_engineering"),
+            ("Junior Developer - KYC - Comp Tech", "software_engineering"),
+            ("Associate WordPress Developer (Fresher)", "software_engineering"),
+            ("Winter 2027: AI Developer (8 months)", "data_ml"),
+            ("Junior Consultant AI Strategy", "data_ml"),
+            ("Graduate Development Program - AI & Analytics Associate", "data_ml"),
+            ("Data Fulfillment Associate", "data_engineering"),
+            ("Manufacturing Development Engineer II", "hardware"),
+            ("Early Career Mechanical Design Engineer", "hardware"),
+            ("2026 Associate Electronics Engineer - Baltimore MD", "hardware"),
+            ("Quality Engineer (Associate or Experienced)", "hardware"),
+            ("Associate Test Engineer", "hardware"),
+            ("Industrial Engineer I (Onsite)", "hardware"),
+            ("Process Engineer II - New Product Development", "hardware"),
+            ("Guidance Navigation Control (GNC) Engineer - Level 2", "hardware"),
+            ("Associate Automation Engineer", "hardware"),
+            ("Semiconductor Foundry Engineer I - Onsite", "hardware"),
+            ("IT Support Specialist I", "infrastructure_sre"),
+            ("Help Desk Analyst - Entry Level", "infrastructure_sre"),
+            ("Cyber Analyst, New Grad", "security"),
+        ],
+    )
+    def test_fallback_keyword_in_title(self, title, expected):
+        assert categorize_job(title)["id"] == expected
+
+    def test_specific_phrase_still_wins_over_fallback(self):
+        # "data scientist" is a real data_ml phrase; the "software" fallback must not steal it.
+        assert categorize_job("Software Data Scientist")["id"] == "data_ml"
+
+    def test_fallback_is_title_only(self):
+        # A description mentioning "mechanical" must not file an unrelated role under hardware.
+        result = categorize_job("Associate Consultant", "You will work with mechanical teams.")
+        assert result["id"] == "other"
+
+    def test_title_fallback_outranks_description_match(self):
+        result = categorize_job("Associate Engineer Software", "We use machine learning everywhere.")
+        assert result["id"] == "software_engineering"
+
+    def test_fallback_words_match_whole_words_only(self):
+        assert categorize_job("Maintenance Planner")["id"] == "other"  # "ai" inside a word
+        assert categorize_job("HTML Content Associate")["id"] == "other"  # "ml" inside a word
+
+    def test_hardware_display_name_covers_mechanical(self):
+        assert categorize_job("Mechanical Engineer I")["name"] == "Hardware & Mechanical Engineering"

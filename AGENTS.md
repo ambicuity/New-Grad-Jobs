@@ -32,7 +32,7 @@ scripts/contracts.py       jobs.json schema (1.1), canonical_url, compute_job_id
 scripts/publish.py         jobs-index.json + descriptions/<0-f>.json shards
 scripts/quality.py         cross-artifact integrity checks (run by scripts/check_integrity.py)
 scripts/url_safety.py      publish-time URL gate (public http(s) only)
-scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS block
+scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
 site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
 site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, sitemap, robots, prerender
@@ -134,8 +134,9 @@ After `make run`, restore the two files that a local scrape rewrites:
 2. **Never commit generated data:** `site/public/{jobs.json, jobs-index.json, descriptions/,
    feed.xml, health.json}` are gitignored and exist only in the Pages deployment.
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
-   `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` block, which the
-   scraper owns. Do not touch the sponsor blocks: the Zapply CTA copy is verbatim-locked,
+   `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
+   `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the
+   scraper owns (the latter, and the `boards_*` counts, come from `config.yml`). Do not touch the sponsor blocks: the Zapply CTA copy is verbatim-locked,
    and the root-level `apply-faster-banner.png` and `get-started-button.png` must stay
    where they are. Leave the Tailr block as is too.
 4. **Dependencies:** ranges live in `pyproject.toml`, and exact hash-locked versions in

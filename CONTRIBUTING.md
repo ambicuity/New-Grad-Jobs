@@ -57,7 +57,8 @@ config.yml ─▶ scripts/update_jobs.py (ngj package)
 - Generated data is **not committed**. The only files CI commits back are `README.md`
   (job counts and per-category tables) and `data/market-history.json`.
 - `README.md` is hand-edited *except* the `<!-- COUNT:* -->` markers, the "Last updated"
-  line and the `CATEGORY-LISTINGS` block, which the scraper rewrites.
+  line and the `CATEGORY-LISTINGS` / `COMPANY-LISTINGS` blocks, which the scraper rewrites
+  (board counts and the company list are derived from `config.yml`).
 
 For more detail see [docs/architecture.md](docs/architecture.md). Operations and
 troubleshooting are in [docs/operations.md](docs/operations.md), and past design decisions
@@ -289,7 +290,7 @@ The labels you will see most often (full list in [.github/labels.md](.github/lab
 
 - Commit generated data (`site/public/jobs*.json`, `descriptions/`, `feed.xml`,
   `health.json`) or the `README.md` / `data/market-history.json` changes from a local run.
-- Edit inside README's COUNT markers or `CATEGORY-LISTINGS` block, or change the sponsor
+- Edit inside README's COUNT markers or `CATEGORY-LISTINGS` / `COMPANY-LISTINGS` blocks, or change the sponsor
   blocks (their copy and images are contractual).
 - Show invented, estimated or placeholder numbers on the site or in the README.
 - Edit `CHANGELOG.md`. The maintainer writes it at release time.

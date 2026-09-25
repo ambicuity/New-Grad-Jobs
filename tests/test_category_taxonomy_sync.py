@@ -29,6 +29,8 @@ def test_readme_has_a_count_marker_for_every_canonical_category():
     readme = _read("README.md")
     marker_ids = set(re.findall(r"<!--\s*COUNT:([a-z_]+)\s*-->", readme))
     marker_ids.discard("total")
+    # boards_* markers are configured-board counts (sync_readme_companies), not categories.
+    marker_ids = {mid for mid in marker_ids if not mid.startswith("boards_")}
     assert marker_ids == CANONICAL_IDS, (
         f"README category markers out of sync with CATEGORY_PATTERNS.\n"
         f"  missing from README: {sorted(CANONICAL_IDS - marker_ids)}\n"

@@ -144,6 +144,84 @@ filtering:
     - "frontend"
     - "full stack"
     - "fullstack"
+    - "quantitative"
+    - "quant"
+
+  # Non-tech professions. A title with one of these is dropped UNLESS it also
+  # carries a track signal, so "Software Engineer, Healthcare" stays while
+  # "New Grad Registered Nurse" and "Investment Banking Analyst 2027" go.
+  # Whole words plus inflections ("recruit" also matches "Recruiting").
+  # Defaults live in DEFAULT_NON_TECH_SIGNALS in scripts/ngj/filters.py.
+  non_tech_signals:
+    # Healthcare
+    - "nurse"
+    - "nursing"
+    - "rn"
+    - "nurse practitioner"
+    - "physician"
+    - "dental"
+    - "pharmacy"
+    - "pharmacist"
+    - "pharmaceutical"
+    - "clinical"
+    - "therapist"
+    - "therapy"
+    - "medical"
+    - "caregiver"
+    # Go-to-market and people
+    - "sales"
+    - "marketing"
+    - "recruit"
+    - "recruiter"
+    - "recruitment"
+    - "talent acquisition"
+    - "human resources"
+    - "hr"
+    - "payroll"
+    - "customer service"
+    - "customer success"
+    - "account executive"
+    # Legal and finance
+    - "legal"
+    - "counsel"
+    - "counselor"
+    - "attorney"
+    - "paralegal"
+    - "audit"
+    - "auditor"
+    - "accountant"
+    - "accounting"
+    - "cpa"
+    - "tax"
+    - "treasury"
+    - "finance"
+    - "banking"
+    - "wealth"
+    - "investment"
+    - "actuarial"
+    - "actuary"
+    - "underwriter"
+    - "underwriting"
+    - "claims"
+    # Operations and trades
+    - "supply chain"
+    - "logistics"
+    - "procurement"
+    - "purchasing"
+    - "warehouse"
+    - "administrative"
+    - "receptionist"
+    - "cashier"
+    - "retail"
+    - "driver"
+    - "welder"
+    - "technician"
+    - "real estate"
+    # Sciences without a software/data track
+    - "geologist"
+    - "chemist"
+    - "biologist"
+    - "packaging"
 
   # Exclusion signals - jobs with these keywords are filtered OUT
   exclusion_signals:
@@ -168,6 +246,14 @@ filtering:
     - "5+ years"
     - "intern"
     - "internship"
+    # Co-ops, student placements and banking summer programs are internships
+    # by another name; a "2027" cohort year alone must not let them through.
+    - "co-op"
+    - "co op"
+    - "coop"
+    - "student"
+    - "summer analyst"
+    - "summer associate"
 apis:
   greenhouse:
     companies:
